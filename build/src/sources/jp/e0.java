@@ -6,15 +6,15 @@ import java.util.concurrent.atomic.AtomicInteger;
 public final class e0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e0 f32300a = new e0();
+    public static final e0 f32316a = new e0();
 
     /* renamed from: b  reason: collision with root package name */
-    private static AtomicInteger f32301b = new AtomicInteger(0);
+    private static AtomicInteger f32317b = new AtomicInteger(0);
 
     private e0() {
     }
 
     public final d0 a() {
-        return new d0((f32301b.getAndIncrement() * RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) + 268435456);
+        return new d0((f32317b.getAndIncrement() * RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) + 268435456);
     }
 }

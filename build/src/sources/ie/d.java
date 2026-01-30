@@ -9,55 +9,55 @@ import java.util.Set;
 public final class d {
 
     /* renamed from: f  reason: collision with root package name */
-    private int f28457f;
+    private int f28473f;
 
     /* renamed from: h  reason: collision with root package name */
-    private int f28459h;
+    private int f28475h;
 
     /* renamed from: o  reason: collision with root package name */
-    private float f28466o;
+    private float f28482o;
 
     /* renamed from: a  reason: collision with root package name */
-    private String f28452a = "";
+    private String f28468a = "";
 
     /* renamed from: b  reason: collision with root package name */
-    private String f28453b = "";
+    private String f28469b = "";
 
     /* renamed from: c  reason: collision with root package name */
-    private Set f28454c = Collections.EMPTY_SET;
+    private Set f28470c = Collections.EMPTY_SET;
 
     /* renamed from: d  reason: collision with root package name */
-    private String f28455d = "";
+    private String f28471d = "";
 
     /* renamed from: e  reason: collision with root package name */
-    private String f28456e = null;
+    private String f28472e = null;
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f28458g = false;
+    private boolean f28474g = false;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f28460i = false;
+    private boolean f28476i = false;
 
     /* renamed from: j  reason: collision with root package name */
-    private int f28461j = -1;
+    private int f28477j = -1;
 
     /* renamed from: k  reason: collision with root package name */
-    private int f28462k = -1;
+    private int f28478k = -1;
 
     /* renamed from: l  reason: collision with root package name */
-    private int f28463l = -1;
+    private int f28479l = -1;
 
     /* renamed from: m  reason: collision with root package name */
-    private int f28464m = -1;
+    private int f28480m = -1;
 
     /* renamed from: n  reason: collision with root package name */
-    private int f28465n = -1;
+    private int f28481n = -1;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f28467p = -1;
+    private int f28483p = -1;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f28468q = false;
+    private boolean f28484q = false;
 
     private static int B(int i10, String str, String str2, int i11) {
         if (!str.isEmpty() && i10 != -1) {
@@ -70,59 +70,59 @@ public final class d {
     }
 
     public d A(boolean z10) {
-        this.f28462k = z10 ? 1 : 0;
+        this.f28478k = z10 ? 1 : 0;
         return this;
     }
 
     public int a() {
-        if (this.f28460i) {
-            return this.f28459h;
+        if (this.f28476i) {
+            return this.f28475h;
         }
         throw new IllegalStateException("Background color not defined.");
     }
 
     public boolean b() {
-        return this.f28468q;
+        return this.f28484q;
     }
 
     public int c() {
-        if (this.f28458g) {
-            return this.f28457f;
+        if (this.f28474g) {
+            return this.f28473f;
         }
         throw new IllegalStateException("Font color not defined");
     }
 
     public String d() {
-        return this.f28456e;
+        return this.f28472e;
     }
 
     public float e() {
-        return this.f28466o;
+        return this.f28482o;
     }
 
     public int f() {
-        return this.f28465n;
+        return this.f28481n;
     }
 
     public int g() {
-        return this.f28467p;
+        return this.f28483p;
     }
 
     public int h(String str, String str2, Set set, String str3) {
-        if (this.f28452a.isEmpty() && this.f28453b.isEmpty() && this.f28454c.isEmpty() && this.f28455d.isEmpty()) {
+        if (this.f28468a.isEmpty() && this.f28469b.isEmpty() && this.f28470c.isEmpty() && this.f28471d.isEmpty()) {
             return TextUtils.isEmpty(str2) ? 1 : 0;
         }
-        int B = B(B(B(0, this.f28452a, str, 1073741824), this.f28453b, str2, 2), this.f28455d, str3, 4);
-        if (B == -1 || !set.containsAll(this.f28454c)) {
+        int B = B(B(B(0, this.f28468a, str, 1073741824), this.f28469b, str2, 2), this.f28471d, str3, 4);
+        if (B == -1 || !set.containsAll(this.f28470c)) {
             return 0;
         }
-        return B + (this.f28454c.size() * 4);
+        return B + (this.f28470c.size() * 4);
     }
 
     public int i() {
         int i10;
-        int i11 = this.f28463l;
-        if (i11 == -1 && this.f28464m == -1) {
+        int i11 = this.f28479l;
+        if (i11 == -1 && this.f28480m == -1) {
             return -1;
         }
         int i12 = 0;
@@ -131,53 +131,53 @@ public final class d {
         } else {
             i10 = 0;
         }
-        if (this.f28464m == 1) {
+        if (this.f28480m == 1) {
             i12 = 2;
         }
         return i10 | i12;
     }
 
     public boolean j() {
-        return this.f28460i;
+        return this.f28476i;
     }
 
     public boolean k() {
-        return this.f28458g;
+        return this.f28474g;
     }
 
     public boolean l() {
-        if (this.f28461j == 1) {
+        if (this.f28477j == 1) {
             return true;
         }
         return false;
     }
 
     public boolean m() {
-        if (this.f28462k == 1) {
+        if (this.f28478k == 1) {
             return true;
         }
         return false;
     }
 
     public d n(int i10) {
-        this.f28459h = i10;
-        this.f28460i = true;
+        this.f28475h = i10;
+        this.f28476i = true;
         return this;
     }
 
     public d o(boolean z10) {
-        this.f28463l = z10 ? 1 : 0;
+        this.f28479l = z10 ? 1 : 0;
         return this;
     }
 
     public d p(boolean z10) {
-        this.f28468q = z10;
+        this.f28484q = z10;
         return this;
     }
 
     public d q(int i10) {
-        this.f28457f = i10;
-        this.f28458g = true;
+        this.f28473f = i10;
+        this.f28474g = true;
         return this;
     }
 
@@ -188,43 +188,43 @@ public final class d {
         } else {
             e10 = ii.b.e(str);
         }
-        this.f28456e = e10;
+        this.f28472e = e10;
         return this;
     }
 
     public d s(float f10) {
-        this.f28466o = f10;
+        this.f28482o = f10;
         return this;
     }
 
     public d t(int i10) {
-        this.f28465n = i10;
+        this.f28481n = i10;
         return this;
     }
 
     public d u(boolean z10) {
-        this.f28464m = z10 ? 1 : 0;
+        this.f28480m = z10 ? 1 : 0;
         return this;
     }
 
     public d v(int i10) {
-        this.f28467p = i10;
+        this.f28483p = i10;
         return this;
     }
 
     public void w(String[] strArr) {
-        this.f28454c = new HashSet(Arrays.asList(strArr));
+        this.f28470c = new HashSet(Arrays.asList(strArr));
     }
 
     public void x(String str) {
-        this.f28452a = str;
+        this.f28468a = str;
     }
 
     public void y(String str) {
-        this.f28453b = str;
+        this.f28469b = str;
     }
 
     public void z(String str) {
-        this.f28455d = str;
+        this.f28471d = str;
     }
 }

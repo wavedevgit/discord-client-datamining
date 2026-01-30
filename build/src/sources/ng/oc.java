@@ -7,13 +7,13 @@ import java.util.Set;
 public abstract class oc implements Map, Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    private transient pc f41515d;
+    private transient pc f41531d;
 
     /* renamed from: e  reason: collision with root package name */
-    private transient pc f41516e;
+    private transient pc f41532e;
 
     /* renamed from: i  reason: collision with root package name */
-    private transient la f41517i;
+    private transient la f41533i;
 
     public static oc c(Object obj, Object obj2) {
         i7.a("optional-module-barcode", "com.google.android.gms.vision.barcode");
@@ -25,10 +25,10 @@ public abstract class oc implements Map, Serializable {
     @Override // java.util.Map
     /* renamed from: b */
     public final la values() {
-        la laVar = this.f41517i;
+        la laVar = this.f41533i;
         if (laVar == null) {
             la a10 = a();
-            this.f41517i = a10;
+            this.f41533i = a10;
             return a10;
         }
         return laVar;
@@ -70,10 +70,10 @@ public abstract class oc implements Map, Serializable {
     @Override // java.util.Map
     /* renamed from: f */
     public final pc entrySet() {
-        pc pcVar = this.f41515d;
+        pc pcVar = this.f41531d;
         if (pcVar == null) {
             pc d10 = d();
-            this.f41515d = d10;
+            this.f41531d = d10;
             return d10;
         }
         return pcVar;
@@ -106,10 +106,10 @@ public abstract class oc implements Map, Serializable {
 
     @Override // java.util.Map
     public final /* bridge */ /* synthetic */ Set keySet() {
-        pc pcVar = this.f41516e;
+        pc pcVar = this.f41532e;
         if (pcVar == null) {
             pc e10 = e();
-            this.f41516e = e10;
+            this.f41532e = e10;
             return e10;
         }
         return pcVar;

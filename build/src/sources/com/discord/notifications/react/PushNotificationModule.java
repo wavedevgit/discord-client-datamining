@@ -95,21 +95,21 @@ public final class PushNotificationModule extends ReactContextBaseJavaModule {
     public static final Unit registerEventListener$lambda$2(PushNotificationModule pushNotificationModule, String token) {
         Intrinsics.checkNotNullParameter(token, "token");
         pushNotificationModule.reactEvents.emitModuleEvent(pushNotificationModule.reactContext, new RegisterEvent(token));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit registerEventListener$lambda$3(PushNotificationModule pushNotificationModule, Map notification) {
         Intrinsics.checkNotNullParameter(notification, "notification");
         pushNotificationModule.reactEvents.emitModuleEvent(pushNotificationModule.reactContext, new NotificationEvent(notification));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit registerEventListener$lambda$4(PushNotificationModule pushNotificationModule, Map notification) {
         Intrinsics.checkNotNullParameter(notification, "notification");
         pushNotificationModule.reactEvents.emitModuleEvent(pushNotificationModule.reactContext, new LocalNotificationEvent(notification));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private final void updateAuthState() {

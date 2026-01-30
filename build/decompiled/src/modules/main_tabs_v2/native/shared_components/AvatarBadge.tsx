@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/main_tabs_v2/native/shared_components/AvatarBadge.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: AvatarBadge, environment: var1
-        _fun104966: for (var _fun104966_ip = 0;;) switch (_fun104966_ip) {
+        _fun105228: for (var _fun105228_ip = 0;;) switch (_fun105228_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.source;
@@ -65,8 +65,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var0.size;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun104966_ip = 65;
-                    continue _fun104966
+                    _fun105228_ip = 65;
+                    continue _fun105228
                 }
             case 30:
                 var1 = _closure1_slot0;
@@ -104,4 +104,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 4039, 4881, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 4045, 4887, 2]);

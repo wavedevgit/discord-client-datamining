@@ -16,46 +16,46 @@ import um.f;
 public final class h implements f.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private Map f50426a;
+    private Map f50442a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final CoroutineContext f50427b;
+    private final CoroutineContext f50443b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Function1 f50428c;
+    private final Function1 f50444c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final t.c f50429d;
+    private final t.c f50445d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final t f50430e;
+    private final t f50446e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final d f50431f;
+    private final d f50447f;
 
     /* renamed from: g  reason: collision with root package name */
-    private um.a f50432g;
+    private um.a f50448g;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public /* synthetic */ class a extends FunctionReferenceImpl implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Ref.ObjectRef f50433d;
+        final /* synthetic */ Ref.ObjectRef f50449d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ h f50434e;
+        final /* synthetic */ h f50450e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(Ref.ObjectRef objectRef, h hVar) {
             super(1, Intrinsics.Kotlin.class, "acceptChildOutput", "createChildNode$acceptChildOutput(Lkotlin/jvm/internal/Ref$ObjectRef;Lcom/squareup/workflow1/internal/SubtreeManager;Ljava/lang/Object;)Ljava/lang/Object;", 0);
-            this.f50433d = objectRef;
-            this.f50434e = hVar;
+            this.f50449d = objectRef;
+            this.f50450e = hVar;
         }
 
         @Override // kotlin.jvm.functions.Function1
         public final Object invoke(Object obj) {
-            return h.e(this.f50433d, this.f50434e, obj);
+            return h.e(this.f50449d, this.f50450e, obj);
         }
     }
 
@@ -63,13 +63,13 @@ public final class h implements f.a {
         Intrinsics.checkNotNullParameter(contextForChildren, "contextForChildren");
         Intrinsics.checkNotNullParameter(emitActionToParent, "emitActionToParent");
         Intrinsics.checkNotNullParameter(interceptor, "interceptor");
-        this.f50426a = map;
-        this.f50427b = contextForChildren;
-        this.f50428c = emitActionToParent;
-        this.f50429d = cVar;
-        this.f50430e = interceptor;
-        this.f50431f = dVar;
-        this.f50432g = new um.a();
+        this.f50442a = map;
+        this.f50443b = contextForChildren;
+        this.f50444c = emitActionToParent;
+        this.f50445d = cVar;
+        this.f50446e = interceptor;
+        this.f50447f = dVar;
+        this.f50448g = new um.a();
     }
 
     /* JADX WARN: Type inference failed for: r12v1, types: [T, um.i] */
@@ -77,13 +77,13 @@ public final class h implements f.a {
         tm.m mVar;
         k a10 = l.a(qVar, str);
         Ref.ObjectRef objectRef = new Ref.ObjectRef();
-        Map map = this.f50426a;
+        Map map = this.f50442a;
         if (map == null) {
             mVar = null;
         } else {
             mVar = (tm.m) map.get(a10);
         }
-        ?? iVar = new i(qVar, function1, new j(a10, qVar.b(), obj, mVar, this.f50427b, new a(objectRef, this), this.f50429d, this.f50430e, this.f50431f));
+        ?? iVar = new i(qVar, function1, new j(a10, qVar.b(), obj, mVar, this.f50443b, new a(objectRef, this), this.f50445d, this.f50446e, this.f50447f));
         objectRef.element = iVar;
         return iVar;
     }
@@ -98,7 +98,7 @@ public final class h implements f.a {
         } else {
             iVar = (i) t10;
         }
-        return hVar.f50428c.invoke(iVar.c(obj));
+        return hVar.f50444c.invoke(iVar.c(obj));
     }
 
     @Override // um.f.a
@@ -109,14 +109,14 @@ public final class h implements f.a {
         Intrinsics.checkNotNullParameter(child, "child");
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(handler, "handler");
-        eVar = this.f50432g.f50388b;
+        eVar = this.f50448g.f50404b;
         for (e.a b10 = eVar.b(); b10 != null; b10 = b10.a()) {
             if (((i) b10).h(child, key)) {
                 throw new IllegalArgumentException(("Expected keys to be unique for " + w.j(child) + ": key=\"" + key + '\"').toString());
             }
         }
-        um.a aVar = this.f50432g;
-        eVar2 = aVar.f50387a;
+        um.a aVar = this.f50448g;
+        eVar2 = aVar.f50403a;
         e.a b11 = eVar2.b();
         i iVar = null;
         e.a aVar2 = null;
@@ -142,7 +142,7 @@ public final class h implements f.a {
         if (iVar == null) {
             iVar = d(child, obj, key, handler);
         }
-        eVar3 = aVar.f50388b;
+        eVar3 = aVar.f50404b;
         eVar3.d(iVar);
         i iVar2 = iVar;
         iVar2.j(handler);
@@ -154,24 +154,24 @@ public final class h implements f.a {
         e eVar2;
         e eVar3;
         e eVar4;
-        um.a aVar = this.f50432g;
-        eVar = aVar.f50387a;
+        um.a aVar = this.f50448g;
+        eVar = aVar.f50403a;
         for (e.a b10 = eVar.b(); b10 != null; b10 = b10.a()) {
             j.e(((i) b10).g(), null, 1, null);
         }
-        eVar2 = aVar.f50387a;
-        eVar3 = aVar.f50388b;
-        aVar.f50387a = eVar3;
-        aVar.f50388b = eVar2;
-        eVar4 = aVar.f50388b;
+        eVar2 = aVar.f50403a;
+        eVar3 = aVar.f50404b;
+        aVar.f50403a = eVar3;
+        aVar.f50404b = eVar2;
+        eVar4 = aVar.f50404b;
         eVar4.a();
-        this.f50426a = null;
+        this.f50442a = null;
     }
 
     public final Map f() {
         e eVar;
         LinkedHashMap linkedHashMap = new LinkedHashMap();
-        eVar = this.f50432g.f50387a;
+        eVar = this.f50448g.f50403a;
         for (e.a b10 = eVar.b(); b10 != null; b10 = b10.a()) {
             i iVar = (i) b10;
             linkedHashMap.put(iVar.d(), iVar.g().n(iVar.f().b()));
@@ -182,7 +182,7 @@ public final class h implements f.a {
     public final void g(os.d selector) {
         e eVar;
         Intrinsics.checkNotNullParameter(selector, "selector");
-        eVar = this.f50432g.f50387a;
+        eVar = this.f50448g.f50403a;
         for (e.a b10 = eVar.b(); b10 != null; b10 = b10.a()) {
             ((i) b10).g().o(selector);
         }

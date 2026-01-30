@@ -987,6 +987,10 @@
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4dffffff</color>
     <color name="primary_text_disabled_material_light">#39000000</color>
+    <color name="progressbar_track_background_dark">#8a4e5058</color>
+    <color name="progressbar_track_background_darker">#3d6c6f7c</color>
+    <color name="progressbar_track_background_light">#3d80848e</color>
+    <color name="progressbar_track_background_midnight">#2e6c6f7c</color>
     <color name="red">#ffa12829</color>
     <color name="red_100">#fffef8f9</color>
     <color name="red_130">#fffef4f4</color>

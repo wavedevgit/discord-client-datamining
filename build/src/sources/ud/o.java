@@ -3,17 +3,17 @@ package ud;
 public final class o {
 
     /* renamed from: a  reason: collision with root package name */
-    public final String f50238a;
+    public final String f50254a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final String f50239b;
+    public final String f50255b;
 
     public o(String str, String str2) {
-        this.f50238a = str;
-        this.f50239b = str2;
+        this.f50254a = str;
+        this.f50255b = str2;
     }
 
     public String toString() {
-        return this.f50238a + ", " + this.f50239b;
+        return this.f50254a + ", " + this.f50255b;
     }
 }

@@ -62,7 +62,7 @@ final class FileModule$moveFile$1 extends k implements Function2<CoroutineScope,
                 hashMap2 = this.this$0.storageDirs;
                 Set keySet = hashMap2.keySet();
                 promise.reject("err", "Unknown storage directory '" + str2 + "'. Supported storage directories: " + keySet);
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
             File file = new File(str, this.$sourcePath);
             File file2 = new File(str, this.$destinationPath);
@@ -80,7 +80,7 @@ final class FileModule$moveFile$1 extends k implements Function2<CoroutineScope,
                     String str4 = this.$destinationPath;
                     promise2.reject("err", "Failed to move file from " + str3 + " to " + str4);
                 }
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
             throw new IllegalArgumentException("Parent file should not be null");
         }
@@ -89,6 +89,6 @@ final class FileModule$moveFile$1 extends k implements Function2<CoroutineScope,
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileModule$moveFile$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((FileModule$moveFile$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

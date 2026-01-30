@@ -36,7 +36,7 @@ public final class GuildEventInviteViewHolder extends MessagePartViewHolder {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit bind$lambda$4$lambda$3$lambda$0(GuildEventInviteViewHolder guildEventInviteViewHolder) {
         guildEventInviteViewHolder.onTapSpoiler.invoke(guildEventInviteViewHolder);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */

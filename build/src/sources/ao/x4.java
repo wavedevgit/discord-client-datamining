@@ -48,10 +48,10 @@ public abstract class x4 {
             hVar = null;
         }
         if (hVar == null) {
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         action.e(hVar.s(true));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     public static final void i(final g3.a renderProps, final n1.h renderState, final k.a context, final jo.k videoCaptureHelper, AutoClassifyWorker.b autoClassifyWorkerFactory) {
@@ -131,7 +131,7 @@ public abstract class x4 {
     public static final Unit k(k.a aVar, AutoClassifyWorker.c cVar, jo.k kVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         b4.U(aVar, new g3.b.c(((AutoClassifyWorker.c.a) cVar).a()), kVar);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -146,12 +146,12 @@ public abstract class x4 {
         }
         n1.h hVar3 = hVar2;
         if (hVar3 == null) {
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         action.e(hVar3.s(false));
         AutoClassifyWorker.a.C0238a c0238a = (AutoClassifyWorker.a.C0238a) aVar3;
         b4.Q(hVar3, aVar, aVar2, hVar.r(), c0238a.a(), kVar, new mn.v(null, null, null, 0, 15, null), false, c0238a.a().b(), 0, null, null, 3200, null);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -165,11 +165,11 @@ public abstract class x4 {
             hVar2 = null;
         }
         if (hVar2 == null) {
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         n1.h hVar3 = hVar2;
         action.e(new n1.a(hVar3.q(), hVar3.m(), hVar3.k(), hVar3.j(), b4.v(action, false), hVar3.f(), hVar.r().i2(), new mn.v(null, null, null, 0, 15, null), ((AutoClassifyWorker.a.b) aVar).a(), null, null, c.f5809d, 1536, null));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -183,10 +183,10 @@ public abstract class x4 {
             hVar2 = null;
         }
         if (hVar2 == null) {
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         n1.h hVar3 = hVar2;
         action.e(new n1.a(hVar3.q(), hVar3.m(), hVar3.k(), hVar3.j(), b4.v(action, false), hVar3.f(), hVar.r().i2(), new mn.v(null, null, null, 0, 15, null), ((AutoClassifyWorker.a.c) aVar).a(), null, null, c.f5810e, 1536, null));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 }

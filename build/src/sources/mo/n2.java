@@ -3,10 +3,10 @@ package mo;
 public final class n2 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final tq.h f39505a;
+    private final tq.h f39521a;
 
     public n2(tq.h hVar) {
-        this.f39505a = hVar;
+        this.f39521a = hVar;
     }
 
     public static n2 a(tq.h hVar) {
@@ -18,6 +18,6 @@ public final class n2 {
     }
 
     public com.withpersona.sdk2.inquiry.internal.a0 b(String str, String str2, qp.g gVar) {
-        return c(str, str2, gVar, (com.withpersona.sdk2.inquiry.internal.network.e) this.f39505a.get());
+        return c(str, str2, gVar, (com.withpersona.sdk2.inquiry.internal.network.e) this.f39521a.get());
     }
 }

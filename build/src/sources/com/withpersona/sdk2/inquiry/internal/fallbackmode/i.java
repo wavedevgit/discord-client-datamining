@@ -43,7 +43,7 @@ public final class i {
     public final l a() {
         NextStep c10 = c();
         if (c10 instanceof NextStep.Ui) {
-            return so.a.s((NextStep.Ui) c10, this.f19894d, this.f19893c, "fake_status", null, qp.g.f47596o.a());
+            return so.a.s((NextStep.Ui) c10, this.f19894d, this.f19893c, "fake_status", null, qp.g.f47612o.a());
         }
         if (c10 instanceof NextStep.GovernmentId) {
             return so.a.q((NextStep.GovernmentId) c10, this.f19894d, this.f19893c, null);

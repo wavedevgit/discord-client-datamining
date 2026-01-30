@@ -7,7 +7,7 @@ import lv.o;
 public final class b implements ku.b, o {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f37730a = new b();
+    public static final b f37746a = new b();
 
     private b() {
     }

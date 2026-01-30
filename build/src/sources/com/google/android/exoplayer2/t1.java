@@ -45,7 +45,7 @@ final class t1 extends com.google.android.exoplayer2.a {
         public Timeline.b k(int i10, Timeline.b bVar, boolean z10) {
             Timeline.b k10 = super.k(i10, bVar, z10);
             if (super.r(k10.f12996i, this.f13989r).g()) {
-                k10.w(bVar.f12994d, bVar.f12995e, bVar.f12996i, bVar.f12997o, bVar.f12998p, rd.c.f48249r, true);
+                k10.w(bVar.f12994d, bVar.f12995e, bVar.f12996i, bVar.f12997o, bVar.f12998p, rd.c.f48265r, true);
                 return k10;
             }
             k10.f12999q = true;

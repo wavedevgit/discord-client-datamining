@@ -11,7 +11,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = undefined;
     var2 = var2.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun8253: for (var _fun8253_ip = 0;;) switch (_fun8253_ip) {
+        _fun8254: for (var _fun8254_ip = 0;;) switch (_fun8254_ip) {
             case 0:
                 var4 = arg0;
                 var0 = new Array(0);
@@ -21,8 +21,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var3.bind(var4)(var2);
                 var2 = 46;
                 if (!(var2 === var3)) {
-                    _fun8253_ip = 47;
-                    continue _fun8253
+                    _fun8254_ip = 47;
+                    continue _fun8254
                 }
             case 33:
                 var3 = var0.push;
@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var4.replace;
                 var2 = _closure1_slot0;
                 var1 = function(arg0, arg1, arg2, arg3) { // Environment: var1
-                    _fun8254: for (var _fun8254_ip = 0;;) switch (_fun8254_ip) {
+                    _fun8255: for (var _fun8255_ip = 0;;) switch (_fun8255_ip) {
                         case 0:
                             var3 = arg0;
                             var2 = arg1;
@@ -41,19 +41,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var0 = var1.push;
                             var4 = arg2;
                             if (var4) {
-                                _fun8254_ip = 35;
-                                continue _fun8254
+                                _fun8255_ip = 35;
+                                continue _fun8255
                             }
                         case 27:
                             if (var2) {
-                                _fun8254_ip = 33;
-                                continue _fun8254
+                                _fun8255_ip = 33;
+                                continue _fun8255
                             }
                         case 30:
                             var2 = var3;
                         case 33:
-                            _fun8254_ip = 59;
-                            continue _fun8254;
+                            _fun8255_ip = 59;
+                            continue _fun8255;
                         case 35:
                             var5 = var6.replace;
                             var4 = _closure1_slot1;

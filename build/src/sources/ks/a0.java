@@ -7,19 +7,19 @@ import kotlin.coroutines.jvm.internal.CoroutineStackFrame;
 final class a0 implements Continuation, CoroutineStackFrame {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Continuation f36437d;
+    private final Continuation f36453d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final CoroutineContext f36438e;
+    private final CoroutineContext f36454e;
 
     public a0(Continuation continuation, CoroutineContext coroutineContext) {
-        this.f36437d = continuation;
-        this.f36438e = coroutineContext;
+        this.f36453d = continuation;
+        this.f36454e = coroutineContext;
     }
 
     @Override // kotlin.coroutines.jvm.internal.CoroutineStackFrame
     public CoroutineStackFrame getCallerFrame() {
-        Continuation continuation = this.f36437d;
+        Continuation continuation = this.f36453d;
         if (continuation instanceof CoroutineStackFrame) {
             return (CoroutineStackFrame) continuation;
         }
@@ -28,11 +28,11 @@ final class a0 implements Continuation, CoroutineStackFrame {
 
     @Override // kotlin.coroutines.Continuation
     public CoroutineContext getContext() {
-        return this.f36438e;
+        return this.f36454e;
     }
 
     @Override // kotlin.coroutines.Continuation
     public void resumeWith(Object obj) {
-        this.f36437d.resumeWith(obj);
+        this.f36453d.resumeWith(obj);
     }
 }

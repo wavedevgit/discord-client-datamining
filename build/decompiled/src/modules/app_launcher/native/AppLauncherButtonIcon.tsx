@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_launcher/native/AppLauncherButtonIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun90780: for (var _fun90780_ip = 0;;) switch (_fun90780_ip) {
+        _fun91017: for (var _fun91017_ip = 0;;) switch (_fun91017_ip) {
             case 0:
                 var2 = arg0;
                 var9 = var2.style;
@@ -71,8 +71,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.KeyboardTypes;
                 var4 = var4.APP_LAUNCHER;
                 if (!(var6 !== var4)) {
-                    _fun90780_ip = 171;
-                    continue _fun90780
+                    _fun91017_ip = 171;
+                    continue _fun91017
                 }
             case 117:
                 var7 = _closure1_slot4;
@@ -88,8 +88,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var8;
                 var8 = copyDataProperties(var14, var13);
                 var4 = var7.bind(var3)(var6, var4);
-                _fun90780_ip = 252;
-                continue _fun90780;
+                _fun91017_ip = 252;
+                continue _fun91017;
             case 171:
                 var7 = _closure1_slot4;
                 var6 = _closure1_slot0;
@@ -119,4 +119,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.AppLauncherButtonIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 3867, 1567, 9100, 7733, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 3873, 1567, 9104, 7736, 2]);

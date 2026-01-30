@@ -3,5 +3,5 @@ package x0;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final d f53118a = new d(0, new long[0], new Object[0]);
+    private static final d f53134a = new d(0, new long[0], new Object[0]);
 }

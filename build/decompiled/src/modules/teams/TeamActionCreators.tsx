@@ -22,13 +22,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot2 = var1;
     var1 = {};
     var3 = function() { // Original name: fetchTeams, environment: var3
-        _fun116932: for (var _fun116932_ip = 0;;) switch (_fun116932_ip) {
+        _fun117211: for (var _fun117211_ip = 0;;) switch (_fun117211_ip) {
             case 0:
                 var4 = arguments[0];
                 var2 = undefined;
                 if (!(var4 === var2)) {
-                    _fun116932_ip = 11;
-                    continue _fun116932
+                    _fun117211_ip = 11;
+                    continue _fun117211
                 }
             case 9:
                 var4 = false;

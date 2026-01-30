@@ -12,7 +12,7 @@ public final class Log {
     public static final Log INSTANCE = new Log();
 
     static {
-        a.f49593a.c(new LoggingTree());
+        a.f49609a.c(new LoggingTree());
     }
 
     private Log() {
@@ -49,7 +49,7 @@ public final class Log {
     public final void d(@NotNull String tag, @NotNull String message, Throwable th2) {
         Intrinsics.checkNotNullParameter(tag, "tag");
         Intrinsics.checkNotNullParameter(message, "message");
-        a.b bVar = a.f49593a;
+        a.b bVar = a.f49609a;
         bVar.f(tag);
         bVar.d(th2, message, new Object[0]);
     }
@@ -57,7 +57,7 @@ public final class Log {
     public final void e(@NotNull String tag, @NotNull String message, Throwable th2) {
         Intrinsics.checkNotNullParameter(tag, "tag");
         Intrinsics.checkNotNullParameter(message, "message");
-        a.b bVar = a.f49593a;
+        a.b bVar = a.f49609a;
         bVar.f(tag);
         bVar.e(th2, message, new Object[0]);
     }
@@ -65,7 +65,7 @@ public final class Log {
     public final void i(@NotNull String tag, @NotNull String message, Throwable th2) {
         Intrinsics.checkNotNullParameter(tag, "tag");
         Intrinsics.checkNotNullParameter(message, "message");
-        a.b bVar = a.f49593a;
+        a.b bVar = a.f49609a;
         bVar.f(tag);
         bVar.i(th2, message, new Object[0]);
     }
@@ -73,7 +73,7 @@ public final class Log {
     public final void w(@NotNull String tag, @NotNull String message, Throwable th2) {
         Intrinsics.checkNotNullParameter(tag, "tag");
         Intrinsics.checkNotNullParameter(message, "message");
-        a.b bVar = a.f49593a;
+        a.b bVar = a.f49609a;
         bVar.f(tag);
         bVar.w(th2, message, new Object[0]);
     }

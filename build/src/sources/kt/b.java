@@ -20,98 +20,98 @@ import java.util.concurrent.ConcurrentMap;
 public final class b {
 
     /* renamed from: l  reason: collision with root package name */
-    private static final Set f36556l;
+    private static final Set f36572l;
 
     /* renamed from: m  reason: collision with root package name */
-    private static final f f36557m;
+    private static final f f36573m;
 
     /* renamed from: n  reason: collision with root package name */
-    private static final u f36558n;
+    private static final u f36574n;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final u f36559o;
+    private static final u f36575o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final ConcurrentMap f36560p;
+    private static final ConcurrentMap f36576p;
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f36561a;
+    private final String f36577a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f36562b;
+    private final Map f36578b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f36563c;
+    private final Map f36579c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f36564d;
+    private final Map f36580d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Map f36565e;
+    private final Map f36581e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Map f36566f;
+    private final Map f36582f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Map f36567g;
+    private final Map f36583g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final Map f36568h;
+    private final Map f36584h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f36569i;
+    private final String f36585i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final Locale f36570j;
+    private final Locale f36586j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final MissingResourceException f36571k;
+    private final MissingResourceException f36587k;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f36572a;
+        static final /* synthetic */ int[] f36588a;
 
         /* renamed from: b  reason: collision with root package name */
-        static final /* synthetic */ int[] f36573b;
+        static final /* synthetic */ int[] f36589b;
 
         static {
             int[] iArr = new int[e.values().length];
-            f36573b = iArr;
+            f36589b = iArr;
             try {
                 iArr[e.FULL.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f36573b[e.LONG.ordinal()] = 2;
+                f36589b[e.LONG.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f36573b[e.MEDIUM.ordinal()] = 3;
+                f36589b[e.MEDIUM.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f36573b[e.SHORT.ordinal()] = 4;
+                f36589b[e.SHORT.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             int[] iArr2 = new int[v.values().length];
-            f36572a = iArr2;
+            f36588a = iArr2;
             try {
                 iArr2[v.WIDE.ordinal()] = 1;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f36572a[v.ABBREVIATED.ordinal()] = 2;
+                f36588a[v.ABBREVIATED.ordinal()] = 2;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f36572a[v.SHORT.ordinal()] = 3;
+                f36588a[v.SHORT.ordinal()] = 3;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                f36572a[v.NARROW.ordinal()] = 4;
+                f36588a[v.NARROW.ordinal()] = 4;
             } catch (NoSuchFieldError unused8) {
             }
         }
@@ -183,10 +183,10 @@ public final class b {
     private static class c implements f {
 
         /* renamed from: a  reason: collision with root package name */
-        private final f f36574a;
+        private final f f36590a;
 
         c(f fVar) {
-            this.f36574a = fVar;
+            this.f36590a = fVar;
         }
 
         private static String a(DateFormat dateFormat) {
@@ -197,7 +197,7 @@ public final class b {
         }
 
         private static int b(e eVar) {
-            int i10 = a.f36573b[eVar.ordinal()];
+            int i10 = a.f36589b[eVar.ordinal()];
             if (i10 != 1) {
                 if (i10 == 2) {
                     return 1;
@@ -215,7 +215,7 @@ public final class b {
 
         @Override // kt.f
         public String c(e eVar, Locale locale) {
-            f fVar = this.f36574a;
+            f fVar = this.f36590a;
             if (fVar == null) {
                 return a(DateFormat.getDateInstance(b(eVar), locale));
             }
@@ -225,7 +225,7 @@ public final class b {
         @Override // kt.f
         public String d(e eVar, Locale locale) {
             String d10;
-            f fVar = this.f36574a;
+            f fVar = this.f36590a;
             if (fVar == null) {
                 d10 = a(DateFormat.getTimeInstance(b(eVar), locale));
             } else if (fVar instanceof mt.c) {
@@ -238,11 +238,11 @@ public final class b {
 
         @Override // kt.f
         public String f(e eVar, e eVar2, Locale locale) {
-            f fVar = this.f36574a;
+            f fVar = this.f36590a;
             if (fVar == null) {
                 return a(DateFormat.getDateTimeInstance(b(eVar), b(eVar2), locale));
             }
-            return this.f36574a.f(eVar, eVar2, locale).replace("{1}", this.f36574a.c(eVar, locale)).replace("{0}", fVar.d(eVar2, locale));
+            return this.f36590a.f(eVar, eVar2, locale).replace("{1}", this.f36590a.c(eVar, locale)).replace("{0}", fVar.d(eVar2, locale));
         }
     }
 
@@ -318,7 +318,7 @@ public final class b {
         public String[] e(String str, Locale locale, v vVar, m mVar) {
             String[] weekdays;
             DateFormatSymbols dateFormatSymbols = DateFormatSymbols.getInstance(locale);
-            int i10 = a.f36572a[vVar.ordinal()];
+            int i10 = a.f36588a[vVar.ordinal()];
             if (i10 != 1) {
                 if (i10 != 2 && i10 != 3) {
                     if (i10 == 4) {
@@ -345,7 +345,7 @@ public final class b {
         @Override // kt.u
         public String[] g(String str, Locale locale, v vVar, m mVar, boolean z10) {
             DateFormatSymbols dateFormatSymbols = DateFormatSymbols.getInstance(locale);
-            int i10 = a.f36572a[vVar.ordinal()];
+            int i10 = a.f36588a[vVar.ordinal()];
             if (i10 != 1) {
                 if (i10 != 2 && i10 != 3) {
                     if (i10 == 4) {
@@ -400,30 +400,30 @@ public final class b {
         hashSet.add("ug");
         hashSet.add("ur");
         hashSet.add("yi");
-        f36556l = Collections.unmodifiableSet(hashSet);
+        f36572l = Collections.unmodifiableSet(hashSet);
         Iterator it = gt.d.c().g(f.class).iterator();
         if (it.hasNext()) {
             cVar = (f) it.next();
         } else {
             cVar = new pt.c();
         }
-        f36557m = new c(cVar);
-        f36558n = new d(null);
-        f36559o = new C0470b(null);
-        f36560p = new ConcurrentHashMap();
+        f36573m = new c(cVar);
+        f36574n = new d(null);
+        f36575o = new C0470b(null);
+        f36576p = new ConcurrentHashMap();
     }
 
     private b(String str, Locale locale, u uVar) {
         v[] values;
-        this.f36561a = uVar.toString();
+        this.f36577a = uVar.toString();
         int i10 = 0;
         Map unmodifiableMap = Collections.unmodifiableMap(i(str, locale, uVar, false));
-        this.f36562b = unmodifiableMap;
+        this.f36578b = unmodifiableMap;
         Map i11 = i(str, locale, uVar, true);
         if (i11 == null) {
-            this.f36563c = unmodifiableMap;
+            this.f36579c = unmodifiableMap;
         } else {
-            this.f36563c = Collections.unmodifiableMap(i11);
+            this.f36579c = Collections.unmodifiableMap(i11);
         }
         EnumMap enumMap = new EnumMap(v.class);
         v[] values2 = v.values();
@@ -445,7 +445,7 @@ public final class b {
             i12++;
             i10 = 0;
         }
-        this.f36564d = Collections.unmodifiableMap(enumMap);
+        this.f36580d = Collections.unmodifiableMap(enumMap);
         EnumMap enumMap3 = new EnumMap(v.class);
         v[] values4 = v.values();
         int length3 = values4.length;
@@ -464,12 +464,12 @@ public final class b {
             }
             enumMap3.put((EnumMap) vVar2, (v) enumMap4);
         }
-        this.f36565e = Collections.unmodifiableMap(enumMap3);
+        this.f36581e = Collections.unmodifiableMap(enumMap3);
         EnumMap enumMap5 = new EnumMap(v.class);
         for (v vVar3 : v.values()) {
             enumMap5.put((EnumMap) vVar3, (v) new s(uVar.a(str, locale, vVar3)));
         }
-        this.f36567g = Collections.unmodifiableMap(enumMap5);
+        this.f36583g = Collections.unmodifiableMap(enumMap5);
         EnumMap enumMap6 = new EnumMap(v.class);
         v[] values6 = v.values();
         int length5 = values6.length;
@@ -487,7 +487,7 @@ public final class b {
             }
             enumMap6.put((EnumMap) vVar4, (v) enumMap7);
         }
-        this.f36566f = Collections.unmodifiableMap(enumMap6);
+        this.f36582f = Collections.unmodifiableMap(enumMap6);
         HashMap hashMap = new HashMap();
         try {
             pt.e h10 = pt.e.h("calendar/names/" + str + "/" + str, locale);
@@ -498,10 +498,10 @@ public final class b {
         } catch (MissingResourceException e10) {
             e = e10;
         }
-        this.f36568h = Collections.unmodifiableMap(hashMap);
-        this.f36569i = str;
-        this.f36570j = locale;
-        this.f36571k = e;
+        this.f36584h = Collections.unmodifiableMap(hashMap);
+        this.f36585i = str;
+        this.f36586j = locale;
+        this.f36587k = e;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -526,10 +526,10 @@ public final class b {
                 sb2.append(country);
             }
             String sb3 = sb2.toString();
-            b bVar = (b) f36560p.get(sb3);
+            b bVar = (b) f36576p.get(sb3);
             if (bVar == null) {
                 if (locale.getLanguage().isEmpty() && str.equals("iso8601")) {
-                    uVar = f36559o;
+                    uVar = f36575o;
                 } else {
                     Iterator it = gt.d.c().g(u.class).iterator();
                     while (true) {
@@ -545,17 +545,17 @@ public final class b {
                         }
                     }
                     if (uVar == null) {
-                        u uVar3 = f36558n;
+                        u uVar3 = f36574n;
                         if (uVar3.h(str) && uVar3.b(locale)) {
                             uVar = uVar3;
                         }
                         if (uVar == null) {
-                            uVar = f36559o;
+                            uVar = f36575o;
                         }
                     }
                 }
                 b bVar2 = new b(str, locale, uVar);
-                b bVar3 = (b) f36560p.putIfAbsent(sb3, bVar2);
+                b bVar3 = (b) f36576p.putIfAbsent(sb3, bVar2);
                 if (bVar3 != null) {
                     return bVar3;
                 }
@@ -571,7 +571,7 @@ public final class b {
     }
 
     private String e(String str) {
-        if (this.f36568h.containsKey("useShortKeys") && "true".equals(this.f36568h.get("useShortKeys"))) {
+        if (this.f36584h.containsKey("useShortKeys") && "true".equals(this.f36584h.get("useShortKeys"))) {
             if (!str.equals("MONTH_OF_YEAR") && !str.equals("DAY_OF_WEEK") && !str.equals("QUARTER_OF_YEAR") && !str.equals("ERA")) {
                 if (str.equals("EVANGELIST")) {
                     return "EV";
@@ -640,29 +640,29 @@ public final class b {
 
     private s j(v vVar, m mVar, boolean z10) {
         if (z10) {
-            return (s) ((Map) this.f36563c.get(vVar)).get(mVar);
+            return (s) ((Map) this.f36579c.get(vVar)).get(mVar);
         }
-        return (s) ((Map) this.f36562b.get(vVar)).get(mVar);
+        return (s) ((Map) this.f36578b.get(vVar)).get(mVar);
     }
 
     public static boolean q(Locale locale) {
-        return f36556l.contains(locale.getLanguage());
+        return f36572l.contains(locale.getLanguage());
     }
 
     public static String r(e eVar, Locale locale) {
-        return f36557m.c(eVar, locale);
+        return f36573m.c(eVar, locale);
     }
 
     public static String s(e eVar, e eVar2, Locale locale) {
-        return f36557m.f(eVar, eVar2, locale);
+        return f36573m.f(eVar, eVar2, locale);
     }
 
     public static String t(e eVar, Locale locale) {
-        return f36557m.d(eVar, locale);
+        return f36573m.d(eVar, locale);
     }
 
     public static String u(e eVar, e eVar2, Locale locale) {
-        return mt.d.a(f36557m.f(eVar, eVar2, locale));
+        return mt.d.a(f36573m.f(eVar, eVar2, locale));
     }
 
     private static String v(String str, int i10, int i11) {
@@ -670,7 +670,7 @@ public final class b {
     }
 
     public s b(v vVar) {
-        return (s) this.f36567g.get(vVar);
+        return (s) this.f36583g.get(vVar);
     }
 
     public s g(v vVar, m mVar) {
@@ -678,11 +678,11 @@ public final class b {
     }
 
     public s h(v vVar, m mVar) {
-        return (s) ((Map) this.f36566f.get(vVar)).get(mVar);
+        return (s) ((Map) this.f36582f.get(vVar)).get(mVar);
     }
 
     public s k(v vVar, m mVar) {
-        return (s) ((Map) this.f36564d.get(vVar)).get(mVar);
+        return (s) ((Map) this.f36580d.get(vVar)).get(mVar);
     }
 
     public s l(v vVar, m mVar) {
@@ -690,12 +690,12 @@ public final class b {
     }
 
     public Map m() {
-        return this.f36568h;
+        return this.f36584h;
     }
 
     public s n(String str, Class cls, String... strArr) {
         String str2;
-        if (this.f36571k == null) {
+        if (this.f36587k == null) {
             Enum[] enumArr = (Enum[]) cls.getEnumConstants();
             int length = enumArr.length;
             String[] strArr2 = new String[length];
@@ -707,7 +707,7 @@ public final class b {
                     String f10 = f(e10, i12, strArr);
                     if (f10 != null) {
                         str2 = v(f10, i11, i10);
-                        if (this.f36568h.containsKey(str2)) {
+                        if (this.f36584h.containsKey(str2)) {
                             break;
                         }
                         i12++;
@@ -717,18 +717,18 @@ public final class b {
                     }
                 }
                 if (str2 == null) {
-                    if (this.f36568h.containsKey(str)) {
-                        strArr2[i11] = (String) this.f36568h.get(str);
+                    if (this.f36584h.containsKey(str)) {
+                        strArr2[i11] = (String) this.f36584h.get(str);
                     } else {
                         strArr2[i11] = enumArr[i11].name();
                     }
                 } else {
-                    strArr2[i11] = (String) this.f36568h.get(str2);
+                    strArr2[i11] = (String) this.f36584h.get(str2);
                 }
             }
             return new s(strArr2);
         }
-        throw new MissingResourceException(this.f36571k.getMessage(), this.f36571k.getClassName(), this.f36571k.getKey());
+        throw new MissingResourceException(this.f36587k.getMessage(), this.f36587k.getClassName(), this.f36587k.getKey());
     }
 
     public s o(jt.p pVar, String... strArr) {
@@ -736,10 +736,10 @@ public final class b {
     }
 
     public s p(v vVar, m mVar) {
-        return (s) ((Map) this.f36565e.get(vVar)).get(mVar);
+        return (s) ((Map) this.f36581e.get(vVar)).get(mVar);
     }
 
     public String toString() {
-        return this.f36561a + "(" + this.f36569i + "/" + this.f36570j + ")";
+        return this.f36577a + "(" + this.f36585i + "/" + this.f36586j + ")";
     }
 }

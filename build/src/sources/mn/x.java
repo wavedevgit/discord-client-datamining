@@ -6,32 +6,32 @@ public interface x {
     public static final class a implements x {
 
         /* renamed from: a  reason: collision with root package name */
-        private final boolean f39336a;
+        private final boolean f39352a;
 
         public a(boolean z10) {
-            this.f39336a = z10;
+            this.f39352a = z10;
         }
 
         public final boolean a() {
-            return this.f39336a;
+            return this.f39352a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            if ((obj instanceof a) && this.f39336a == ((a) obj).f39336a) {
+            if ((obj instanceof a) && this.f39352a == ((a) obj).f39352a) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return Boolean.hashCode(this.f39336a);
+            return Boolean.hashCode(this.f39352a);
         }
 
         public String toString() {
-            boolean z10 = this.f39336a;
+            boolean z10 = this.f39352a;
             return "Closed(wasRecordingInterrupted=" + z10 + ")";
         }
     }
@@ -40,7 +40,7 @@ public interface x {
     public static final class b implements x {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final b f39337a = new b();
+        public static final b f39353a = new b();
 
         private b() {
         }
@@ -50,7 +50,7 @@ public interface x {
     public static final class c implements x {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final c f39338a = new c();
+        public static final c f39354a = new c();
 
         private c() {
         }
@@ -60,7 +60,7 @@ public interface x {
     public static final class d implements x {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final d f39339a = new d();
+        public static final d f39355a = new d();
 
         private d() {
         }
@@ -70,7 +70,7 @@ public interface x {
     public static final class e implements x {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final e f39340a = new e();
+        public static final e f39356a = new e();
 
         private e() {
         }

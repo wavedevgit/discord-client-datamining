@@ -221,7 +221,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3.tooltipHeader = var7;
     var7 = function(arg0) { // Original name: tooltipDescription, environment: var1
-        _fun41667: for (var _fun41667_ip = 0;;) switch (_fun41667_ip) {
+        _fun41718: for (var _fun41718_ip = 0;;) switch (_fun41718_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var5 = _closure1_slot2;
@@ -237,14 +237,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var4)(var0);
                 var0 = arg0;
                 if (var0) {
-                    _fun41667_ip = 70;
-                    continue _fun41667
+                    _fun41718_ip = 70;
+                    continue _fun41718
                 }
             case 57:
                 var0 = var1.foTzbd;
                 var0 = var2.bind(var3)(var0);
-                _fun41667_ip = 81;
-                continue _fun41667;
+                _fun41718_ip = 81;
+                continue _fun41718;
             case 70:
                 var1 = var1.w4wmnb;
                 var0 = var2.bind(var3)(var1);
@@ -275,7 +275,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3.sectionHeader = var7;
     var7 = function(arg0) { // Original name: sectionDescription, environment: var1
-        _fun41669: for (var _fun41669_ip = 0;;) switch (_fun41669_ip) {
+        _fun41720: for (var _fun41720_ip = 0;;) switch (_fun41720_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var5 = _closure1_slot2;
@@ -291,14 +291,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var4)(var0);
                 var0 = arg0;
                 if (var0) {
-                    _fun41669_ip = 70;
-                    continue _fun41669
+                    _fun41720_ip = 70;
+                    continue _fun41720
                 }
             case 57:
                 var0 = var1.foTzbd;
                 var0 = var2.bind(var3)(var0);
-                _fun41669_ip = 81;
-                continue _fun41669;
+                _fun41720_ip = 81;
+                continue _fun41720;
             case 70:
                 var1 = var1.w4wmnb;
                 var0 = var2.bind(var3)(var1);
@@ -368,7 +368,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var7.tooltipHeader = var27;
     var27 = function(arg0) { // Original name: tooltipDescription, environment: var1
-        _fun41672: for (var _fun41672_ip = 0;;) switch (_fun41672_ip) {
+        _fun41723: for (var _fun41723_ip = 0;;) switch (_fun41723_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var5 = _closure1_slot2;
@@ -384,14 +384,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var4)(var0);
                 var0 = arg0;
                 if (var0) {
-                    _fun41672_ip = 70;
-                    continue _fun41672
+                    _fun41723_ip = 70;
+                    continue _fun41723
                 }
             case 57:
                 var0 = var1["4ufgdz"];
                 var0 = var2.bind(var3)(var0);
-                _fun41672_ip = 81;
-                continue _fun41672;
+                _fun41723_ip = 81;
+                continue _fun41723;
             case 70:
                 var1 = var1.aiAhnQ;
                 var0 = var2.bind(var3)(var1);
@@ -422,7 +422,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var7.sectionHeader = var27;
     var27 = function(arg0) { // Original name: sectionDescription, environment: var1
-        _fun41674: for (var _fun41674_ip = 0;;) switch (_fun41674_ip) {
+        _fun41725: for (var _fun41725_ip = 0;;) switch (_fun41725_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var5 = _closure1_slot2;
@@ -438,14 +438,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var4)(var0);
                 var0 = arg0;
                 if (var0) {
-                    _fun41674_ip = 70;
-                    continue _fun41674
+                    _fun41725_ip = 70;
+                    continue _fun41725
                 }
             case 57:
                 var0 = var1["4ufgdz"];
                 var0 = var2.bind(var3)(var0);
-                _fun41674_ip = 81;
-                continue _fun41674;
+                _fun41725_ip = 81;
+                continue _fun41725;
             case 70:
                 var1 = var1.aiAhnQ;
                 var0 = var2.bind(var3)(var1);
@@ -514,7 +514,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var7.tooltipHeader = var27;
     var27 = function(arg0) { // Original name: tooltipDescription, environment: var1
-        _fun41677: for (var _fun41677_ip = 0;;) switch (_fun41677_ip) {
+        _fun41728: for (var _fun41728_ip = 0;;) switch (_fun41728_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var5 = _closure1_slot2;
@@ -530,14 +530,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var4)(var0);
                 var0 = arg0;
                 if (var0) {
-                    _fun41677_ip = 70;
-                    continue _fun41677
+                    _fun41728_ip = 70;
+                    continue _fun41728
                 }
             case 57:
                 var0 = var1.mpHHfa;
                 var0 = var2.bind(var3)(var0);
-                _fun41677_ip = 81;
-                continue _fun41677;
+                _fun41728_ip = 81;
+                continue _fun41728;
             case 70:
                 var1 = var1.BkVb1X;
                 var0 = var2.bind(var3)(var1);
@@ -568,7 +568,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var7.sectionHeader = var27;
     var27 = function(arg0) { // Original name: sectionDescription, environment: var1
-        _fun41679: for (var _fun41679_ip = 0;;) switch (_fun41679_ip) {
+        _fun41730: for (var _fun41730_ip = 0;;) switch (_fun41730_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var5 = _closure1_slot2;
@@ -584,14 +584,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var4)(var0);
                 var0 = arg0;
                 if (var0) {
-                    _fun41679_ip = 70;
-                    continue _fun41679
+                    _fun41730_ip = 70;
+                    continue _fun41730
                 }
             case 57:
                 var0 = var1.mpHHfa;
                 var0 = var2.bind(var3)(var0);
-                _fun41679_ip = 81;
-                continue _fun41679;
+                _fun41730_ip = 81;
+                continue _fun41730;
             case 70:
                 var1 = var1.BkVb1X;
                 var0 = var2.bind(var3)(var1);
@@ -660,7 +660,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var7.tooltipHeader = var27;
     var27 = function(arg0) { // Original name: tooltipDescription, environment: var1
-        _fun41682: for (var _fun41682_ip = 0;;) switch (_fun41682_ip) {
+        _fun41733: for (var _fun41733_ip = 0;;) switch (_fun41733_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var5 = _closure1_slot2;
@@ -676,14 +676,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var4)(var0);
                 var0 = arg0;
                 if (var0) {
-                    _fun41682_ip = 70;
-                    continue _fun41682
+                    _fun41733_ip = 70;
+                    continue _fun41733
                 }
             case 57:
                 var0 = var1.TA8GFt;
                 var0 = var2.bind(var3)(var0);
-                _fun41682_ip = 81;
-                continue _fun41682;
+                _fun41733_ip = 81;
+                continue _fun41733;
             case 70:
                 var1 = var1.LVNgTD;
                 var0 = var2.bind(var3)(var1);
@@ -714,7 +714,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var7.sectionHeader = var27;
     var27 = function(arg0) { // Original name: sectionDescription, environment: var1
-        _fun41684: for (var _fun41684_ip = 0;;) switch (_fun41684_ip) {
+        _fun41735: for (var _fun41735_ip = 0;;) switch (_fun41735_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var5 = _closure1_slot2;
@@ -730,14 +730,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var4)(var0);
                 var0 = arg0;
                 if (var0) {
-                    _fun41684_ip = 70;
-                    continue _fun41684
+                    _fun41735_ip = 70;
+                    continue _fun41735
                 }
             case 57:
                 var0 = var1.TA8GFt;
                 var0 = var2.bind(var3)(var0);
-                _fun41684_ip = 81;
-                continue _fun41684;
+                _fun41735_ip = 81;
+                continue _fun41735;
             case 70:
                 var1 = var1.LVNgTD;
                 var0 = var2.bind(var3)(var1);
@@ -773,7 +773,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var7.tooltipHeader = var27;
     var27 = function(arg0) { // Original name: tooltipDescription, environment: var1
-        _fun41686: for (var _fun41686_ip = 0;;) switch (_fun41686_ip) {
+        _fun41737: for (var _fun41737_ip = 0;;) switch (_fun41737_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var5 = _closure1_slot2;
@@ -789,14 +789,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var4)(var0);
                 var0 = arg0;
                 if (var0) {
-                    _fun41686_ip = 70;
-                    continue _fun41686
+                    _fun41737_ip = 70;
+                    continue _fun41737
                 }
             case 57:
                 var0 = var1.sSJauZ;
                 var0 = var2.bind(var3)(var0);
-                _fun41686_ip = 81;
-                continue _fun41686;
+                _fun41737_ip = 81;
+                continue _fun41737;
             case 70:
                 var1 = var1.BLgIrk;
                 var0 = var2.bind(var3)(var1);
@@ -827,7 +827,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var7.sectionHeader = var27;
     var27 = function(arg0) { // Original name: sectionDescription, environment: var1
-        _fun41688: for (var _fun41688_ip = 0;;) switch (_fun41688_ip) {
+        _fun41739: for (var _fun41739_ip = 0;;) switch (_fun41739_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var5 = _closure1_slot2;
@@ -843,14 +843,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var4)(var0);
                 var0 = arg0;
                 if (var0) {
-                    _fun41688_ip = 70;
-                    continue _fun41688
+                    _fun41739_ip = 70;
+                    continue _fun41739
                 }
             case 57:
                 var0 = var1.sSJauZ;
                 var0 = var2.bind(var3)(var0);
-                _fun41688_ip = 81;
-                continue _fun41688;
+                _fun41739_ip = 81;
+                continue _fun41739;
             case 70:
                 var1 = var1.BLgIrk;
                 var0 = var2.bind(var3)(var1);
@@ -969,7 +969,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var7.tooltipHeader = var27;
     var27 = function(arg0) { // Original name: tooltipDescription, environment: var1
-        _fun41694: for (var _fun41694_ip = 0;;) switch (_fun41694_ip) {
+        _fun41745: for (var _fun41745_ip = 0;;) switch (_fun41745_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var5 = _closure1_slot2;
@@ -985,14 +985,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var4)(var0);
                 var0 = arg0;
                 if (var0) {
-                    _fun41694_ip = 70;
-                    continue _fun41694
+                    _fun41745_ip = 70;
+                    continue _fun41745
                 }
             case 57:
                 var0 = var1["85PtWu"];
                 var0 = var2.bind(var3)(var0);
-                _fun41694_ip = 81;
-                continue _fun41694;
+                _fun41745_ip = 81;
+                continue _fun41745;
             case 70:
                 var1 = var1.cqIdqZ;
                 var0 = var2.bind(var3)(var1);
@@ -1023,7 +1023,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var7.sectionHeader = var27;
     var27 = function(arg0) { // Original name: sectionDescription, environment: var1
-        _fun41696: for (var _fun41696_ip = 0;;) switch (_fun41696_ip) {
+        _fun41747: for (var _fun41747_ip = 0;;) switch (_fun41747_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var5 = _closure1_slot2;
@@ -1039,14 +1039,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var4)(var0);
                 var0 = arg0;
                 if (var0) {
-                    _fun41696_ip = 70;
-                    continue _fun41696
+                    _fun41747_ip = 70;
+                    continue _fun41747
                 }
             case 57:
                 var0 = var1["85PtWu"];
                 var0 = var2.bind(var3)(var0);
-                _fun41696_ip = 81;
-                continue _fun41696;
+                _fun41747_ip = 81;
+                continue _fun41747;
             case 70:
                 var1 = var1.cqIdqZ;
                 var0 = var2.bind(var3)(var1);
@@ -1157,14 +1157,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var25.header = var27;
     var27 = function(arg0) { // Original name: description, environment: var1
-        _fun41700: for (var _fun41700_ip = 0;;) switch (_fun41700_ip) {
+        _fun41751: for (var _fun41751_ip = 0;;) switch (_fun41751_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.email;
                 var0 = null;
                 if (!(var0 == var5)) {
-                    _fun41700_ip = 81;
-                    continue _fun41700
+                    _fun41751_ip = 81;
+                    continue _fun41751
                 }
             case 15:
                 var2 = _closure1_slot0;
@@ -1181,8 +1181,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3.bind(var4)(var0);
                 var0 = var0.Xyjnwn;
                 var0 = var1.bind(var2)(var0);
-                _fun41700_ip = 153;
-                continue _fun41700;
+                _fun41751_ip = 153;
+                continue _fun41751;
             case 81:
                 var3 = _closure1_slot0;
                 var7 = _closure1_slot2;
@@ -1211,7 +1211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var26 = var5.MAX_CONNECTIONS_REACHED;
     var25 = {};
     var27 = function(arg0) { // Original name: header, environment: var1
-        _fun41701: for (var _fun41701_ip = 0;;) switch (_fun41701_ip) {
+        _fun41752: for (var _fun41752_ip = 0;;) switch (_fun41752_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.isAdult;
@@ -1228,14 +1228,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var6[var1];
                 var1 = var4.bind(var5)(var1);
                 if (var0) {
-                    _fun41701_ip = 78;
-                    continue _fun41701
+                    _fun41752_ip = 78;
+                    continue _fun41752
                 }
             case 63:
                 var0 = var1.MzX4RP;
                 var0 = var2.bind(var3)(var0);
-                _fun41701_ip = 91;
-                continue _fun41701;
+                _fun41752_ip = 91;
+                continue _fun41752;
             case 78:
                 var1 = var1.bS5x94;
                 var0 = var2.bind(var3)(var1);
@@ -1245,7 +1245,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var25.header = var27;
     var27 = function(arg0) { // Original name: description, environment: var1
-        _fun41702: for (var _fun41702_ip = 0;;) switch (_fun41702_ip) {
+        _fun41753: for (var _fun41753_ip = 0;;) switch (_fun41753_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.isAdult;
@@ -1262,8 +1262,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var6[var1];
                 var1 = var2.bind(var5)(var1);
                 if (var0) {
-                    _fun41702_ip = 92;
-                    continue _fun41702
+                    _fun41753_ip = 92;
+                    continue _fun41753
                 }
             case 63:
                 var2 = var1["69F+eS"];
@@ -1271,8 +1271,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = 'https://support.discord.com/hc/articles/14155060633623';
                 var0.link = var5;
                 var0 = var3.bind(var4)(var2, var0);
-                _fun41702_ip = 119;
-                continue _fun41702;
+                _fun41753_ip = 119;
+                continue _fun41753;
             case 92:
                 var2 = var1.GKzqWi;
                 var1 = {};

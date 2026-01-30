@@ -48,21 +48,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var2.bind(var3)(var1);
         var1 = var2.useAnimatedStyle;
         var0 = function() { // Original name: s, environment: var0
-            _fun69866: for (var _fun69866_ip = 0;;) switch (_fun69866_ip) {
+            _fun69912: for (var _fun69912_ip = 0;;) switch (_fun69912_ip) {
                 case 0:
                     var0 = _closure2_slot0;
                     var1 = 'number';
                     var0 = typeof var0;
                     if (!(var1 !== var0)) {
-                        _fun69866_ip = 33;
-                        continue _fun69866
+                        _fun69912_ip = 33;
+                        continue _fun69912
                     }
                 case 18:
                     var1 = _closure2_slot0;
                     var0 = var1.get;
                     var1 = var0.bind(var1)();
-                    _fun69866_ip = 37;
-                    continue _fun69866;
+                    _fun69912_ip = 37;
+                    continue _fun69912;
                 case 33:
                     var1 = _closure2_slot0;
                 case 37:
@@ -282,7 +282,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/in_app_notifications/native/Notification.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Original name: Notification, environment: var1
-        _fun69867: for (var _fun69867_ip = 0;;) switch (_fun69867_ip) {
+        _fun69913: for (var _fun69913_ip = 0;;) switch (_fun69913_ip) {
             case 0:
                 var0 = arg0;
                 var11 = var0.icon;
@@ -302,8 +302,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var14 != var19;
                 var5 = null;
                 if (!var4) {
-                    _fun69867_ip = 232;
-                    continue _fun69867
+                    _fun69913_ip = 232;
+                    continue _fun69913
                 }
             case 79:
                 var7 = _closure1_slot8;
@@ -370,8 +370,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var14 != var18;
                 var17 = null;
                 if (!var19) {
-                    _fun69867_ip = 341;
-                    continue _fun69867
+                    _fun69913_ip = 341;
+                    continue _fun69913
                 }
             case 338:
                 var17 = var18;
@@ -403,8 +403,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = new Array(2);
                 var11[0] = var15;
                 if (!(var14 == var12)) {
-                    _fun69867_ip = 499;
-                    continue _fun69867
+                    _fun69913_ip = 495;
+                    continue _fun69913
                 }
             case 449:
                 var15 = _closure1_slot7;
@@ -420,7 +420,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var13.children = var16;
                 var12 = var15.bind(var3)(var14, var13);
-            case 499:
+            case 495:
                 var11[1] = var12;
                 var9.children = var11;
                 var9 = var7.bind(var3)(var10, var9);
@@ -435,7 +435,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.Notification = var3;
     var1 = function(arg0) { // Original name: NotificationPressable, environment: var1
-        _fun69868: for (var _fun69868_ip = 0;;) switch (_fun69868_ip) {
+        _fun69914: for (var _fun69914_ip = 0;;) switch (_fun69914_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.children;
@@ -464,8 +464,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = null;
                 var10 = var8 != var12;
                 if (!var10) {
-                    _fun69868_ip = 131;
-                    continue _fun69868
+                    _fun69914_ip = 131;
+                    continue _fun69914
                 }
             case 110:
                 var11 = _closure1_slot7;
@@ -484,4 +484,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.NotificationPressable = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 671, 5348, 3895, 3677, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 671, 5352, 3901, 3679, 2]);

@@ -26,22 +26,22 @@ import zb.i;
 public class m0 implements hc.d, ic.b, hc.c {
 
     /* renamed from: q  reason: collision with root package name */
-    private static final xb.c f27452q = xb.c.b("proto");
+    private static final xb.c f27468q = xb.c.b("proto");
 
     /* renamed from: d  reason: collision with root package name */
-    private final t0 f27453d;
+    private final t0 f27469d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final jc.a f27454e;
+    private final jc.a f27470e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final jc.a f27455i;
+    private final jc.a f27471i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final e f27456o;
+    private final e f27472o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Provider f27457p;
+    private final Provider f27473p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -54,14 +54,14 @@ public class m0 implements hc.d, ic.b, hc.c {
     public static class c {
 
         /* renamed from: a  reason: collision with root package name */
-        final String f27458a;
+        final String f27474a;
 
         /* renamed from: b  reason: collision with root package name */
-        final String f27459b;
+        final String f27475b;
 
         private c(String str, String str2) {
-            this.f27458a = str;
-            this.f27459b = str2;
+            this.f27474a = str;
+            this.f27475b = str2;
         }
     }
 
@@ -73,11 +73,11 @@ public class m0 implements hc.d, ic.b, hc.c {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public m0(jc.a aVar, jc.a aVar2, e eVar, t0 t0Var, Provider provider) {
-        this.f27453d = t0Var;
-        this.f27454e = aVar;
-        this.f27455i = aVar2;
-        this.f27456o = eVar;
-        this.f27457p = provider;
+        this.f27469d = t0Var;
+        this.f27470e = aVar;
+        this.f27471i = aVar2;
+        this.f27472o = eVar;
+        this.f27473p = provider;
     }
 
     public static /* synthetic */ Boolean A0(m0 m0Var, zb.o oVar, SQLiteDatabase sQLiteDatabase) {
@@ -113,10 +113,10 @@ public class m0 implements hc.d, ic.b, hc.c {
 
     public static /* synthetic */ List B(m0 m0Var, zb.o oVar, SQLiteDatabase sQLiteDatabase) {
         xb.e[] values;
-        List s22 = m0Var.s2(sQLiteDatabase, oVar, m0Var.f27456o.d());
+        List s22 = m0Var.s2(sQLiteDatabase, oVar, m0Var.f27472o.d());
         for (xb.e eVar : xb.e.values()) {
             if (eVar != oVar.d()) {
-                int d10 = m0Var.f27456o.d() - s22.size();
+                int d10 = m0Var.f27472o.d() - s22.size();
                 if (d10 <= 0) {
                     break;
                 }
@@ -211,7 +211,7 @@ public class m0 implements hc.d, ic.b, hc.c {
         m0Var.v2(c0133a, map);
         c0133a.e(m0Var.j2());
         c0133a.d(m0Var.f2());
-        c0133a.c((String) m0Var.f27457p.get());
+        c0133a.c((String) m0Var.f27473p.get());
         return c0133a.b();
     }
 
@@ -233,7 +233,7 @@ public class m0 implements hc.d, ic.b, hc.c {
             return -1L;
         }
         long Y1 = m0Var.Y1(sQLiteDatabase, oVar);
-        int e10 = m0Var.f27456o.e();
+        int e10 = m0Var.f27472o.e();
         byte[] a10 = iVar.e().a();
         if (a10.length <= e10) {
             z10 = true;
@@ -425,7 +425,7 @@ public class m0 implements hc.d, ic.b, hc.c {
     }
 
     private cc.b f2() {
-        return cc.b.b().b(cc.e.c().b(b2()).c(e.f27435a.f()).a()).a();
+        return cc.b.b().b(cc.e.c().b(b2()).c(e.f27451a.f()).a()).a();
     }
 
     private long h2() {
@@ -437,7 +437,7 @@ public class m0 implements hc.d, ic.b, hc.c {
     }
 
     private cc.f j2() {
-        final long a10 = this.f27454e.a();
+        final long a10 = this.f27470e.a();
         return (cc.f) p2(new b() { // from class: hc.c0
             @Override // hc.m0.b
             public final Object apply(Object obj) {
@@ -464,7 +464,7 @@ public class m0 implements hc.d, ic.b, hc.c {
     }
 
     private boolean q2() {
-        if (h2() * i2() >= this.f27456o.f()) {
+        if (h2() * i2() >= this.f27472o.f()) {
             return true;
         }
         return false;
@@ -477,7 +477,7 @@ public class m0 implements hc.d, ic.b, hc.c {
             if (map.containsKey(Long.valueOf(kVar.c()))) {
                 i.a l10 = kVar.b().l();
                 for (c cVar : (Set) map.get(Long.valueOf(kVar.c()))) {
-                    l10.c(cVar.f27458a, cVar.f27459b);
+                    l10.c(cVar.f27474a, cVar.f27475b);
                 }
                 listIterator.set(k.a(kVar.c(), kVar.d(), l10.d()));
             }
@@ -569,12 +569,12 @@ public class m0 implements hc.d, ic.b, hc.c {
     }
 
     private Object x2(d dVar, b bVar) {
-        long a10 = this.f27455i.a();
+        long a10 = this.f27471i.a();
         while (true) {
             try {
                 return dVar.a();
             } catch (SQLiteDatabaseLockedException e10) {
-                if (this.f27455i.a() >= this.f27456o.b() + a10) {
+                if (this.f27471i.a() >= this.f27472o.b() + a10) {
                     return bVar.apply(e10);
                 }
                 SystemClock.sleep(50L);
@@ -585,13 +585,13 @@ public class m0 implements hc.d, ic.b, hc.c {
     public static /* synthetic */ Object y1(m0 m0Var, SQLiteDatabase sQLiteDatabase) {
         m0Var.getClass();
         sQLiteDatabase.compileStatement("DELETE FROM log_event_dropped").execute();
-        sQLiteDatabase.compileStatement("UPDATE global_log_event_state SET last_metrics_upload_ms=" + m0Var.f27454e.a()).execute();
+        sQLiteDatabase.compileStatement("UPDATE global_log_event_state SET last_metrics_upload_ms=" + m0Var.f27470e.a()).execute();
         return null;
     }
 
     private static xb.c y2(String str) {
         if (str == null) {
-            return f27452q;
+            return f27468q;
         }
         return xb.c.b(str);
     }
@@ -691,7 +691,7 @@ public class m0 implements hc.d, ic.b, hc.c {
     }
 
     SQLiteDatabase c2() {
-        final t0 t0Var = this.f27453d;
+        final t0 t0Var = this.f27469d;
         Objects.requireNonNull(t0Var);
         return (SQLiteDatabase) x2(new d() { // from class: hc.e0
             @Override // hc.m0.d
@@ -708,7 +708,7 @@ public class m0 implements hc.d, ic.b, hc.c {
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f27453d.close();
+        this.f27469d.close();
     }
 
     @Override // hc.c
@@ -723,7 +723,7 @@ public class m0 implements hc.d, ic.b, hc.c {
 
     @Override // hc.d
     public int k() {
-        final long a10 = this.f27454e.a() - this.f27456o.c();
+        final long a10 = this.f27470e.a() - this.f27472o.c();
         return ((Integer) p2(new b() { // from class: hc.j0
             @Override // hc.m0.b
             public final Object apply(Object obj) {

@@ -11,7 +11,7 @@ import org.jetbrains.annotations.NotNull;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f31849a = new b();
+    public static final b f31865a = new b();
 
     private b() {
     }

@@ -5,10 +5,10 @@ import tq.h;
 public final class c implements tq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f48440a;
+    private final h f48456a;
 
     public c(h hVar) {
-        this.f48440a = hVar;
+        this.f48456a = hVar;
     }
 
     public static c a(h hVar) {
@@ -22,6 +22,6 @@ public final class c implements tq.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public b get() {
-        return c((np.e) this.f48440a.get());
+        return c((np.e) this.f48456a.get());
     }
 }

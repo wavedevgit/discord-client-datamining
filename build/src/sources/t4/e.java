@@ -5,7 +5,7 @@ import java.util.List;
 public final class e implements ku.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e f49219a = new e();
+    public static final e f49235a = new e();
 
     private e() {
     }

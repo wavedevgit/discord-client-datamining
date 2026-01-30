@@ -8,16 +8,16 @@ import kotlin.reflect.jvm.internal.impl.utils.SmartSet;
 public class f implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final SmartSet f35449d;
+    private final SmartSet f35465d;
 
     public f(SmartSet smartSet) {
-        this.f35449d = smartSet;
+        this.f35465d = smartSet;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         Unit b10;
-        b10 = OverridingUtilsKt.b(this.f35449d, obj);
+        b10 = OverridingUtilsKt.b(this.f35465d, obj);
         return b10;
     }
 }

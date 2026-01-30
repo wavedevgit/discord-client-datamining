@@ -36,7 +36,7 @@ final class MediaEngineModule$initializeEngine$1 extends kotlin.coroutines.jvm.i
         ReactEvents reactEvents;
         reactEvents = mediaEngineModule.reactEvents;
         reactEvents.emitModuleEvent(mediaEngineModule.getReactContext(), new NoInputCallbackEvent(z10));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -44,7 +44,7 @@ final class MediaEngineModule$initializeEngine$1 extends kotlin.coroutines.jvm.i
         ReactEvents reactEvents;
         reactEvents = mediaEngineModule.reactEvents;
         reactEvents.emitModuleEvent(mediaEngineModule.getReactContext(), new OnVoiceEvent(f10, i10));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -52,7 +52,7 @@ final class MediaEngineModule$initializeEngine$1 extends kotlin.coroutines.jvm.i
         ReactEvents reactEvents;
         reactEvents = mediaEngineModule.reactEvents;
         reactEvents.emitModuleEvent(mediaEngineModule.getReactContext(), new ActiveSinksChangeEvent(str, z10));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -60,7 +60,7 @@ final class MediaEngineModule$initializeEngine$1 extends kotlin.coroutines.jvm.i
         ReactEvents reactEvents;
         reactEvents = mediaEngineModule.reactEvents;
         reactEvents.emitModuleEvent(mediaEngineModule.getReactContext(), new DeviceChangedEvent(list, list2, list3));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -68,7 +68,7 @@ final class MediaEngineModule$initializeEngine$1 extends kotlin.coroutines.jvm.i
         ReactEvents reactEvents;
         reactEvents = mediaEngineModule.reactEvents;
         reactEvents.emitModuleEvent(mediaEngineModule.getReactContext(), new AudioInputInitializedEvent(d10, map));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -150,11 +150,11 @@ final class MediaEngineModule$initializeEngine$1 extends kotlin.coroutines.jvm.i
         ReactApplicationContext reactContext = this.this$0.getReactContext();
         activityEventListener = this.this$0.activityEventListener;
         reactContext.addActivityEventListener(activityEventListener);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$initializeEngine$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((MediaEngineModule$initializeEngine$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

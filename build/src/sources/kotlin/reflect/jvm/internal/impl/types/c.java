@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.types.AbstractTypeConstructor;
 public class c implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final AbstractTypeConstructor f35929d;
+    private final AbstractTypeConstructor f35945d;
 
     public c(AbstractTypeConstructor abstractTypeConstructor) {
-        this.f35929d = abstractTypeConstructor;
+        this.f35945d = abstractTypeConstructor;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         AbstractTypeConstructor.b t10;
-        t10 = AbstractTypeConstructor.t(this.f35929d);
+        t10 = AbstractTypeConstructor.t(this.f35945d);
         return t10;
     }
 }

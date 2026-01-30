@@ -5,31 +5,31 @@ package xk;
 abstract class c {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final c f53405d;
+    public static final c f53421d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final c f53406e;
+    public static final c f53422e;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final c f53407i;
+    public static final c f53423i;
 
     /* renamed from: o  reason: collision with root package name */
-    public static final c f53408o;
+    public static final c f53424o;
 
     /* renamed from: p  reason: collision with root package name */
-    public static final c f53409p;
+    public static final c f53425p;
 
     /* renamed from: q  reason: collision with root package name */
-    public static final c f53410q;
+    public static final c f53426q;
 
     /* renamed from: r  reason: collision with root package name */
-    public static final c f53411r;
+    public static final c f53427r;
 
     /* renamed from: s  reason: collision with root package name */
-    public static final c f53412s;
+    public static final c f53428s;
 
     /* renamed from: t  reason: collision with root package name */
-    private static final /* synthetic */ c[] f53413t;
+    private static final /* synthetic */ c[] f53429t;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     enum a extends c {
@@ -48,7 +48,7 @@ abstract class c {
 
     static {
         a aVar = new a("DATA_MASK_000", 0);
-        f53405d = aVar;
+        f53421d = aVar;
         c cVar = new c("DATA_MASK_001", 1) { // from class: xk.c.b
             @Override // xk.c
             boolean a(int i10, int i11) {
@@ -58,7 +58,7 @@ abstract class c {
                 return false;
             }
         };
-        f53406e = cVar;
+        f53422e = cVar;
         c cVar2 = new c("DATA_MASK_010", 2) { // from class: xk.c.c
             @Override // xk.c
             boolean a(int i10, int i11) {
@@ -68,7 +68,7 @@ abstract class c {
                 return false;
             }
         };
-        f53407i = cVar2;
+        f53423i = cVar2;
         c cVar3 = new c("DATA_MASK_011", 3) { // from class: xk.c.d
             @Override // xk.c
             boolean a(int i10, int i11) {
@@ -78,7 +78,7 @@ abstract class c {
                 return false;
             }
         };
-        f53408o = cVar3;
+        f53424o = cVar3;
         c cVar4 = new c("DATA_MASK_100", 4) { // from class: xk.c.e
             @Override // xk.c
             boolean a(int i10, int i11) {
@@ -88,7 +88,7 @@ abstract class c {
                 return false;
             }
         };
-        f53409p = cVar4;
+        f53425p = cVar4;
         c cVar5 = new c("DATA_MASK_101", 5) { // from class: xk.c.f
             @Override // xk.c
             boolean a(int i10, int i11) {
@@ -98,7 +98,7 @@ abstract class c {
                 return false;
             }
         };
-        f53410q = cVar5;
+        f53426q = cVar5;
         c cVar6 = new c("DATA_MASK_110", 6) { // from class: xk.c.g
             @Override // xk.c
             boolean a(int i10, int i11) {
@@ -108,7 +108,7 @@ abstract class c {
                 return false;
             }
         };
-        f53411r = cVar6;
+        f53427r = cVar6;
         c cVar7 = new c("DATA_MASK_111", 7) { // from class: xk.c.h
             @Override // xk.c
             boolean a(int i10, int i11) {
@@ -118,8 +118,8 @@ abstract class c {
                 return false;
             }
         };
-        f53412s = cVar7;
-        f53413t = new c[]{aVar, cVar, cVar2, cVar3, cVar4, cVar5, cVar6, cVar7};
+        f53428s = cVar7;
+        f53429t = new c[]{aVar, cVar, cVar2, cVar3, cVar4, cVar5, cVar6, cVar7};
     }
 
     private c(String str, int i10) {
@@ -130,7 +130,7 @@ abstract class c {
     }
 
     public static c[] values() {
-        return (c[]) f53413t.clone();
+        return (c[]) f53429t.clone();
     }
 
     abstract boolean a(int i10, int i11);

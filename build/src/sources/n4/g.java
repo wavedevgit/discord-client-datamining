@@ -8,24 +8,24 @@ import p4.u;
 public final class g extends c {
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f39742b;
+    private final int f39758b;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public g(o4.h tracker) {
         super(tracker);
         Intrinsics.checkNotNullParameter(tracker, "tracker");
-        this.f39742b = 7;
+        this.f39758b = 7;
     }
 
     @Override // n4.c
     public int b() {
-        return this.f39742b;
+        return this.f39758b;
     }
 
     @Override // n4.c
     public boolean c(u workSpec) {
         Intrinsics.checkNotNullParameter(workSpec, "workSpec");
-        n d10 = workSpec.f44919j.d();
+        n d10 = workSpec.f44935j.d();
         if (d10 != n.UNMETERED) {
             if (Build.VERSION.SDK_INT < 30 || d10 != n.TEMPORARILY_UNMETERED) {
                 return false;

@@ -6,16 +6,16 @@ import ts.b;
 public final class x implements b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final kotlin.reflect.g f49898a;
+    private final kotlin.reflect.g f49914a;
 
     public x(kotlin.reflect.g property) {
         Intrinsics.checkNotNullParameter(property, "property");
-        this.f49898a = property;
+        this.f49914a = property;
     }
 
     @Override // ts.b
     public Object a(Object obj) {
-        return this.f49898a.get(obj);
+        return this.f49914a.get(obj);
     }
 
     @Override // ts.b
@@ -25,9 +25,9 @@ public final class x implements b {
 
     @Override // vs.a
     public Object c(Object obj, Object obj2) {
-        Object obj3 = this.f49898a.get(obj);
+        Object obj3 = this.f49914a.get(obj);
         if (obj3 == null) {
-            this.f49898a.set(obj, obj2);
+            this.f49914a.set(obj, obj2);
             return null;
         } else if (Intrinsics.areEqual(obj3, obj2)) {
             return null;
@@ -38,6 +38,6 @@ public final class x implements b {
 
     @Override // vs.a
     public String getName() {
-        return this.f49898a.getName();
+        return this.f49914a.getName();
     }
 }

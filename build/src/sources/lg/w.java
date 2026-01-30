@@ -7,10 +7,10 @@ import java.util.Map;
 public abstract class w implements Closeable {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Map f37338d = new HashMap();
+    private static final Map f37354d = new HashMap();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void a() {
-        f37338d.clear();
+        f37354d.clear();
     }
 }

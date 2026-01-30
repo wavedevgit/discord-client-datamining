@@ -5,30 +5,30 @@ import ui.c;
 final class w2 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final w2 f41783a = new w2();
+    static final w2 f41799a = new w2();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41784b;
+    private static final ui.c f41800b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41785c;
+    private static final ui.c f41801c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41786d;
+    private static final ui.c f41802d;
 
     static {
         c.b a10 = ui.c.a("modelType");
         f fVar = new f();
         fVar.a(1);
-        f41784b = a10.b(fVar.b()).a();
+        f41800b = a10.b(fVar.b()).a();
         c.b a11 = ui.c.a("isSuccessful");
         f fVar2 = new f();
         fVar2.a(2);
-        f41785c = a11.b(fVar2.b()).a();
+        f41801c = a11.b(fVar2.b()).a();
         c.b a12 = ui.c.a("modelName");
         f fVar3 = new f();
         fVar3.a(3);
-        f41786d = a12.b(fVar3.b()).a();
+        f41802d = a12.b(fVar3.b()).a();
     }
 
     private w2() {

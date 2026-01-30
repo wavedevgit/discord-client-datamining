@@ -17,26 +17,26 @@ import okio.Timeout;
 public final class f0 implements BufferedSource {
 
     /* renamed from: d  reason: collision with root package name */
-    public final Source f31236d;
+    public final Source f31252d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final Buffer f31237e;
+    public final Buffer f31253e;
 
     /* renamed from: i  reason: collision with root package name */
-    public boolean f31238i;
+    public boolean f31254i;
 
     public f0(Source source) {
         Intrinsics.checkNotNullParameter(source, "source");
-        this.f31236d = source;
-        this.f31237e = new Buffer();
+        this.f31252d = source;
+        this.f31253e = new Buffer();
     }
 
     @Override // okio.BufferedSource
     public boolean B0(long j10) {
         if (j10 >= 0) {
-            if (!this.f31238i) {
-                while (this.f31237e.size() < j10) {
-                    if (this.f31236d.read(this.f31237e, 8192L) == -1) {
+            if (!this.f31254i) {
+                while (this.f31253e.size() < j10) {
+                    if (this.f31252d.read(this.f31253e, 8192L) == -1) {
                         return false;
                     }
                 }
@@ -54,44 +54,44 @@ public final class f0 implements BufferedSource {
 
     @Override // okio.BufferedSource
     public Buffer I() {
-        return this.f31237e;
+        return this.f31253e;
     }
 
     @Override // okio.BufferedSource
     public String I1(Charset charset) {
         Intrinsics.checkNotNullParameter(charset, "charset");
-        this.f31237e.y0(this.f31236d);
-        return this.f31237e.I1(charset);
+        this.f31253e.y0(this.f31252d);
+        return this.f31253e.I1(charset);
     }
 
     @Override // okio.BufferedSource
     public byte[] L0(long j10) {
         T0(j10);
-        return this.f31237e.L0(j10);
+        return this.f31253e.L0(j10);
     }
 
     @Override // okio.BufferedSource
     public ByteString L1() {
-        this.f31237e.y0(this.f31236d);
-        return this.f31237e.L1();
+        this.f31253e.y0(this.f31252d);
+        return this.f31253e.L1();
     }
 
     @Override // okio.BufferedSource
     public short N0() {
         T0(2L);
-        return this.f31237e.N0();
+        return this.f31253e.N0();
     }
 
     @Override // okio.BufferedSource
     public long O0() {
         T0(8L);
-        return this.f31237e.O0();
+        return this.f31253e.O0();
     }
 
     @Override // okio.BufferedSource
     public int Q1() {
         T0(4L);
-        return this.f31237e.Q1();
+        return this.f31253e.Q1();
     }
 
     @Override // okio.BufferedSource
@@ -104,8 +104,8 @@ public final class f0 implements BufferedSource {
 
     @Override // okio.BufferedSource
     public String T1() {
-        this.f31237e.y0(this.f31236d);
-        return this.f31237e.T1();
+        this.f31253e.y0(this.f31252d);
+        return this.f31253e.T1();
     }
 
     @Override // okio.BufferedSource
@@ -123,27 +123,27 @@ public final class f0 implements BufferedSource {
         Intrinsics.checkNotNullParameter(sink, "sink");
         try {
             T0(j10);
-            this.f31237e.a0(sink, j10);
+            this.f31253e.a0(sink, j10);
         } catch (EOFException e10) {
-            sink.y0(this.f31237e);
+            sink.y0(this.f31253e);
             throw e10;
         }
     }
 
     @Override // okio.BufferedSource
     public long b0(byte b10, long j10, long j11) {
-        if (!this.f31238i) {
+        if (!this.f31254i) {
             if (0 <= j10 && j10 <= j11) {
                 long j12 = j10;
                 while (j12 < j11) {
                     byte b11 = b10;
                     long j13 = j11;
-                    long b02 = this.f31237e.b0(b11, j12, j13);
+                    long b02 = this.f31253e.b0(b11, j12, j13);
                     if (b02 != -1) {
                         return b02;
                     }
-                    long size = this.f31237e.size();
-                    if (size >= j13 || this.f31236d.read(this.f31237e, 8192L) == -1) {
+                    long size = this.f31253e.size();
+                    if (size >= j13 || this.f31252d.read(this.f31253e, 8192L) == -1) {
                         break;
                     }
                     j12 = Math.max(j12, size);
@@ -160,7 +160,7 @@ public final class f0 implements BufferedSource {
     @Override // okio.BufferedSource
     public String b1(long j10) {
         T0(j10);
-        return this.f31237e.b1(j10);
+        return this.f31253e.b1(j10);
     }
 
     @Override // okio.BufferedSource
@@ -171,16 +171,16 @@ public final class f0 implements BufferedSource {
 
     @Override // okio.Source, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        if (!this.f31238i) {
-            this.f31238i = true;
-            this.f31236d.close();
-            this.f31237e.l();
+        if (!this.f31254i) {
+            this.f31254i = true;
+            this.f31252d.close();
+            this.f31253e.l();
         }
     }
 
     @Override // okio.BufferedSource
     public Buffer e() {
-        return this.f31237e;
+        return this.f31253e;
     }
 
     @Override // okio.BufferedSource
@@ -194,15 +194,15 @@ public final class f0 implements BufferedSource {
             }
             long b02 = b0((byte) 10, 0L, j11);
             if (b02 != -1) {
-                return ju.a.d(this.f31237e, b02);
+                return ju.a.d(this.f31253e, b02);
             }
-            if (j11 < LongCompanionObject.MAX_VALUE && B0(j11) && this.f31237e.E0(j11 - 1) == 13 && B0(j11 + 1) && this.f31237e.E0(j11) == 10) {
-                return ju.a.d(this.f31237e, j11);
+            if (j11 < LongCompanionObject.MAX_VALUE && B0(j11) && this.f31253e.E0(j11 - 1) == 13 && B0(j11 + 1) && this.f31253e.E0(j11) == 10) {
+                return ju.a.d(this.f31253e, j11);
             }
             Buffer buffer = new Buffer();
-            Buffer buffer2 = this.f31237e;
+            Buffer buffer2 = this.f31253e;
             buffer2.N(buffer, 0L, Math.min(32, buffer2.size()));
-            throw new EOFException("\\n not found: limit=" + Math.min(this.f31237e.size(), j10) + " content=" + buffer.L1().q() + (char) 8230);
+            throw new EOFException("\\n not found: limit=" + Math.min(this.f31253e.size(), j10) + " content=" + buffer.L1().q() + (char) 8230);
         }
         throw new IllegalArgumentException(("limit < 0: " + j10).toString());
     }
@@ -211,16 +211,16 @@ public final class f0 implements BufferedSource {
     public long e2(Sink sink) {
         Intrinsics.checkNotNullParameter(sink, "sink");
         long j10 = 0;
-        while (this.f31236d.read(this.f31237e, 8192L) != -1) {
-            long E = this.f31237e.E();
+        while (this.f31252d.read(this.f31253e, 8192L) != -1) {
+            long E = this.f31253e.E();
             if (E > 0) {
                 j10 += E;
-                sink.t0(this.f31237e, E);
+                sink.t0(this.f31253e, E);
             }
         }
-        if (this.f31237e.size() > 0) {
-            long size = j10 + this.f31237e.size();
-            Buffer buffer = this.f31237e;
+        if (this.f31253e.size() > 0) {
+            long size = j10 + this.f31253e.size();
+            Buffer buffer = this.f31253e;
             sink.t0(buffer, buffer.size());
             return size;
         }
@@ -230,21 +230,21 @@ public final class f0 implements BufferedSource {
     @Override // okio.BufferedSource
     public ByteString f1(long j10) {
         T0(j10);
-        return this.f31237e.f1(j10);
+        return this.f31253e.f1(j10);
     }
 
     public long h(ByteString bytes, long j10) {
         Intrinsics.checkNotNullParameter(bytes, "bytes");
-        if (this.f31238i) {
+        if (this.f31254i) {
             throw new IllegalStateException("closed");
         }
         while (true) {
-            long F0 = this.f31237e.F0(bytes, j10);
+            long F0 = this.f31253e.F0(bytes, j10);
             if (F0 != -1) {
                 return F0;
             }
-            long size = this.f31237e.size();
-            if (this.f31236d.read(this.f31237e, 8192L) == -1) {
+            long size = this.f31253e.size();
+            if (this.f31252d.read(this.f31253e, 8192L) == -1) {
                 return -1L;
             }
             j10 = Math.max(j10, (size - bytes.G()) + 1);
@@ -253,21 +253,21 @@ public final class f0 implements BufferedSource {
 
     @Override // java.nio.channels.Channel
     public boolean isOpen() {
-        return !this.f31238i;
+        return !this.f31254i;
     }
 
     public long l(ByteString targetBytes, long j10) {
         Intrinsics.checkNotNullParameter(targetBytes, "targetBytes");
-        if (this.f31238i) {
+        if (this.f31254i) {
             throw new IllegalStateException("closed");
         }
         while (true) {
-            long I0 = this.f31237e.I0(targetBytes, j10);
+            long I0 = this.f31253e.I0(targetBytes, j10);
             if (I0 != -1) {
                 return I0;
             }
-            long size = this.f31237e.size();
-            if (this.f31236d.read(this.f31237e, 8192L) == -1) {
+            long size = this.f31253e.size();
+            if (this.f31252d.read(this.f31253e, 8192L) == -1) {
                 return -1L;
             }
             j10 = Math.max(j10, size);
@@ -277,17 +277,17 @@ public final class f0 implements BufferedSource {
     @Override // okio.BufferedSource
     public int l1(a0 options) {
         Intrinsics.checkNotNullParameter(options, "options");
-        if (!this.f31238i) {
+        if (!this.f31254i) {
             do {
-                int e10 = ju.a.e(this.f31237e, options, true);
+                int e10 = ju.a.e(this.f31253e, options, true);
                 if (e10 != -2) {
                     if (e10 == -1) {
                         return -1;
                     }
-                    this.f31237e.skip(options.g()[e10].G());
+                    this.f31253e.skip(options.g()[e10].G());
                     return e10;
                 }
-            } while (this.f31236d.read(this.f31237e, 8192L) != -1);
+            } while (this.f31252d.read(this.f31253e, 8192L) != -1);
             return -1;
         }
         throw new IllegalStateException("closed");
@@ -322,7 +322,7 @@ public final class f0 implements BufferedSource {
             long r2 = (long) r1
             boolean r2 = r5.B0(r2)
             if (r2 == 0) goto L5a
-            okio.Buffer r2 = r5.f31237e
+            okio.Buffer r2 = r5.f31253e
             long r3 = (long) r0
             byte r2 = r2.E0(r3)
             r3 = 48
@@ -362,7 +362,7 @@ public final class f0 implements BufferedSource {
             r0.<init>(r1)
             throw r0
         L5a:
-            okio.Buffer r0 = r5.f31237e
+            okio.Buffer r0 = r5.f31253e
             long r0 = r0.m2()
             return r0
         */
@@ -371,13 +371,13 @@ public final class f0 implements BufferedSource {
 
     public boolean n(long j10, ByteString bytes, int i10, int i11) {
         Intrinsics.checkNotNullParameter(bytes, "bytes");
-        if (!this.f31238i) {
+        if (!this.f31254i) {
             if (j10 < 0 || i10 < 0 || i11 < 0 || bytes.G() - i10 < i11) {
                 return false;
             }
             for (int i12 = 0; i12 < i11; i12++) {
                 long j11 = i12 + j10;
-                if (!B0(1 + j11) || this.f31237e.E0(j11) != bytes.j(i10 + i12)) {
+                if (!B0(1 + j11) || this.f31253e.E0(j11) != bytes.j(i10 + i12)) {
                     return false;
                 }
             }
@@ -388,8 +388,8 @@ public final class f0 implements BufferedSource {
 
     @Override // okio.BufferedSource
     public byte[] n1() {
-        this.f31237e.y0(this.f31236d);
-        return this.f31237e.n1();
+        this.f31253e.y0(this.f31252d);
+        return this.f31253e.n1();
     }
 
     @Override // okio.BufferedSource
@@ -399,8 +399,8 @@ public final class f0 implements BufferedSource {
 
     @Override // okio.BufferedSource
     public boolean o1() {
-        if (!this.f31238i) {
-            if (this.f31237e.o1() && this.f31236d.read(this.f31237e, 8192L) == -1) {
+        if (!this.f31254i) {
+            if (this.f31253e.o1() && this.f31252d.read(this.f31253e, 8192L) == -1) {
                 return true;
             }
             return false;
@@ -423,11 +423,11 @@ public final class f0 implements BufferedSource {
     public long read(Buffer sink, long j10) {
         Intrinsics.checkNotNullParameter(sink, "sink");
         if (j10 >= 0) {
-            if (!this.f31238i) {
-                if (this.f31237e.size() == 0 && this.f31236d.read(this.f31237e, 8192L) == -1) {
+            if (!this.f31254i) {
+                if (this.f31253e.size() == 0 && this.f31252d.read(this.f31253e, 8192L) == -1) {
                     return -1L;
                 }
-                return this.f31237e.read(sink, Math.min(j10, this.f31237e.size()));
+                return this.f31253e.read(sink, Math.min(j10, this.f31253e.size()));
             }
             throw new IllegalStateException("closed");
         }
@@ -437,7 +437,7 @@ public final class f0 implements BufferedSource {
     @Override // okio.BufferedSource
     public byte readByte() {
         T0(1L);
-        return this.f31237e.readByte();
+        return this.f31253e.readByte();
     }
 
     @Override // okio.BufferedSource
@@ -445,11 +445,11 @@ public final class f0 implements BufferedSource {
         Intrinsics.checkNotNullParameter(sink, "sink");
         try {
             T0(sink.length);
-            this.f31237e.readFully(sink);
+            this.f31253e.readFully(sink);
         } catch (EOFException e10) {
             int i10 = 0;
-            while (this.f31237e.size() > 0) {
-                Buffer buffer = this.f31237e;
+            while (this.f31253e.size() > 0) {
+                Buffer buffer = this.f31253e;
                 int read = buffer.read(sink, i10, (int) buffer.size());
                 if (read != -1) {
                     i10 += read;
@@ -464,30 +464,30 @@ public final class f0 implements BufferedSource {
     @Override // okio.BufferedSource
     public int readInt() {
         T0(4L);
-        return this.f31237e.readInt();
+        return this.f31253e.readInt();
     }
 
     @Override // okio.BufferedSource
     public long readLong() {
         T0(8L);
-        return this.f31237e.readLong();
+        return this.f31253e.readLong();
     }
 
     @Override // okio.BufferedSource
     public short readShort() {
         T0(2L);
-        return this.f31237e.readShort();
+        return this.f31253e.readShort();
     }
 
     @Override // okio.BufferedSource
     public void skip(long j10) {
-        if (!this.f31238i) {
+        if (!this.f31254i) {
             while (j10 > 0) {
-                if (this.f31237e.size() == 0 && this.f31236d.read(this.f31237e, 8192L) == -1) {
+                if (this.f31253e.size() == 0 && this.f31252d.read(this.f31253e, 8192L) == -1) {
                     throw new EOFException();
                 }
-                long min = Math.min(j10, this.f31237e.size());
-                this.f31237e.skip(min);
+                long min = Math.min(j10, this.f31253e.size());
+                this.f31253e.skip(min);
                 j10 -= min;
             }
             return;
@@ -524,7 +524,7 @@ public final class f0 implements BufferedSource {
             long r6 = r4 + r0
             boolean r8 = r10.B0(r6)
             if (r8 == 0) goto L52
-            okio.Buffer r8 = r10.f31237e
+            okio.Buffer r8 = r10.f31253e
             byte r8 = r8.E0(r4)
             r9 = 48
             if (r8 < r9) goto L1e
@@ -558,7 +558,7 @@ public final class f0 implements BufferedSource {
             r0.<init>(r1)
             throw r0
         L52:
-            okio.Buffer r0 = r10.f31237e
+            okio.Buffer r0 = r10.f31253e
             long r0 = r0.t1()
             return r0
         */
@@ -567,11 +567,11 @@ public final class f0 implements BufferedSource {
 
     @Override // okio.Source
     public Timeout timeout() {
-        return this.f31236d.timeout();
+        return this.f31252d.timeout();
     }
 
     public String toString() {
-        return "buffer(" + this.f31236d + ')';
+        return "buffer(" + this.f31252d + ')';
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -582,8 +582,8 @@ public final class f0 implements BufferedSource {
         @Override // java.io.InputStream
         public int available() {
             f0 f0Var = f0.this;
-            if (!f0Var.f31238i) {
-                return (int) Math.min(f0Var.f31237e.size(), Integer.MAX_VALUE);
+            if (!f0Var.f31254i) {
+                return (int) Math.min(f0Var.f31253e.size(), Integer.MAX_VALUE);
             }
             throw new IOException("closed");
         }
@@ -596,14 +596,14 @@ public final class f0 implements BufferedSource {
         @Override // java.io.InputStream
         public int read() {
             f0 f0Var = f0.this;
-            if (!f0Var.f31238i) {
-                if (f0Var.f31237e.size() == 0) {
+            if (!f0Var.f31254i) {
+                if (f0Var.f31253e.size() == 0) {
                     f0 f0Var2 = f0.this;
-                    if (f0Var2.f31236d.read(f0Var2.f31237e, 8192L) == -1) {
+                    if (f0Var2.f31252d.read(f0Var2.f31253e, 8192L) == -1) {
                         return -1;
                     }
                 }
-                return f0.this.f31237e.readByte() & 255;
+                return f0.this.f31253e.readByte() & 255;
             }
             throw new IOException("closed");
         }
@@ -615,15 +615,15 @@ public final class f0 implements BufferedSource {
         @Override // java.io.InputStream
         public int read(byte[] data, int i10, int i11) {
             Intrinsics.checkNotNullParameter(data, "data");
-            if (!f0.this.f31238i) {
+            if (!f0.this.f31254i) {
                 okio.b.b(data.length, i10, i11);
-                if (f0.this.f31237e.size() == 0) {
+                if (f0.this.f31253e.size() == 0) {
                     f0 f0Var = f0.this;
-                    if (f0Var.f31236d.read(f0Var.f31237e, 8192L) == -1) {
+                    if (f0Var.f31252d.read(f0Var.f31253e, 8192L) == -1) {
                         return -1;
                     }
                 }
-                return f0.this.f31237e.read(data, i10, i11);
+                return f0.this.f31253e.read(data, i10, i11);
             }
             throw new IOException("closed");
         }
@@ -632,9 +632,9 @@ public final class f0 implements BufferedSource {
     @Override // java.nio.channels.ReadableByteChannel
     public int read(ByteBuffer sink) {
         Intrinsics.checkNotNullParameter(sink, "sink");
-        if (this.f31237e.size() == 0 && this.f31236d.read(this.f31237e, 8192L) == -1) {
+        if (this.f31253e.size() == 0 && this.f31252d.read(this.f31253e, 8192L) == -1) {
             return -1;
         }
-        return this.f31237e.read(sink);
+        return this.f31253e.read(sink);
     }
 }

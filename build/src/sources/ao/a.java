@@ -10,7 +10,7 @@ public abstract class a {
         Intrinsics.checkNotNullParameter(capturePage, "<this>");
         Intrinsics.checkNotNullParameter(idClass, "idClass");
         Intrinsics.checkNotNullParameter(side, "side");
-        if (idClass == io.e.f28656u && side == c4.e.f5836o) {
+        if (idClass == io.e.f28672u && side == c4.e.f5836o) {
             RemoteImage passportFrontPictograph = capturePage.getPassportFrontPictograph();
             if (passportFrontPictograph == null) {
                 return capturePage.getIdFrontPictograph();

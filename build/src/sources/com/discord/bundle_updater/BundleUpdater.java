@@ -830,7 +830,7 @@ public final class BundleUpdater {
             }
         });
         this.otaMetrics = new ArrayList();
-        this.otaCheckTimeMark = g.a.d(kotlin.time.g.f36288a.a());
+        this.otaCheckTimeMark = g.a.d(kotlin.time.g.f36304a.a());
     }
 
     private final OtaCheckAttempt attemptOtaUpdate() {
@@ -915,7 +915,7 @@ public final class BundleUpdater {
         Thread.sleep(i10 * 1000);
         try {
             bundleUpdater.otaMetrics.clear();
-            bundleUpdater.otaCheckTimeMark = g.a.d(kotlin.time.g.f36288a.a());
+            bundleUpdater.otaCheckTimeMark = g.a.d(kotlin.time.g.f36304a.a());
             bundleUpdater.totalBytesReceived = 0L;
             OtaCheckAttempt attemptOtaUpdate = bundleUpdater.attemptOtaUpdate();
             if (function0 != null) {
@@ -1400,7 +1400,7 @@ public final class BundleUpdater {
     }
 
     public final Cookie getBuildOverrideCookie() {
-        return Cookie.f44012j.c(BASE_OTA_URL, getBuildOverrideCookieHeader());
+        return Cookie.f44028j.c(BASE_OTA_URL, getBuildOverrideCookieHeader());
     }
 
     @NotNull

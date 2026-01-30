@@ -98,7 +98,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/referral_program/hooks/native/useReferralProgramCoachmark.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: useReferralProgramCoachmark, environment: var1
-        _fun103761: for (var _fun103761_ip = 0;;) switch (_fun103761_ip) {
+        _fun104017: for (var _fun104017_ip = 0;;) switch (_fun104017_ip) {
             case 0:
                 var1 = arg0;
                 var1 = var1.disabled;
@@ -122,8 +122,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.bind(var6)(var4);
                 var4 = var5.useIsEligibleSenderForReferralProgram;
                 if (var3) {
-                    _fun103761_ip = 102;
-                    continue _fun103761
+                    _fun104017_ip = 102;
+                    continue _fun104017
                 }
             case 99:
                 var3 = var1;
@@ -136,13 +136,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.bind(var6)(var3);
                 var3 = var4.useSelectedDismissibleContent;
                 if (!var5) {
-                    _fun103761_ip = 178;
-                    continue _fun103761
+                    _fun104017_ip = 178;
+                    continue _fun104017
                 }
             case 136:
                 if (var1) {
-                    _fun103761_ip = 178;
-                    continue _fun103761
+                    _fun104017_ip = 178;
+                    continue _fun104017
                 }
             case 139:
                 var5 = _closure1_slot0;
@@ -153,8 +153,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var1.REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK;
                 var1 = new Array(1);
                 var1[0] = var5;
-                _fun103761_ip = 182;
-                continue _fun103761;
+                _fun104017_ip = 182;
+                continue _fun104017;
             case 178:
                 var1 = new Array(0);
             case 182:
@@ -265,8 +265,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.bind(var4)(var0, var2);
                 var0 = null;
                 if (!var1) {
-                    _fun103761_ip = 302;
-                    continue _fun103761
+                    _fun104017_ip = 302;
+                    continue _fun104017
                 }
             case 293:
                 var1 = {};
@@ -278,4 +278,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useReferralProgramCoachmark = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 660, 1369, 33, 1297, 4660, 13508, 3171, 1358, 6608, 5915, 1234, 5880, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 660, 1369, 33, 1297, 4666, 13533, 3171, 1358, 6611, 5918, 1234, 5883, 2]);

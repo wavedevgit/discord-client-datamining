@@ -5,51 +5,51 @@ import ui.c;
 final class x6 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final x6 f43720a = new x6();
+    static final x6 f43736a = new x6();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43721b;
+    private static final ui.c f43737b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43722c;
+    private static final ui.c f43738c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f43723d;
+    private static final ui.c f43739d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f43724e;
+    private static final ui.c f43740e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final ui.c f43725f;
+    private static final ui.c f43741f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final ui.c f43726g;
+    private static final ui.c f43742g;
 
     static {
         c.b a10 = ui.c.a("detectorMode");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43721b = a10.b(s1Var.b()).a();
+        f43737b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("multipleObjectsEnabled");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43722c = a11.b(s1Var2.b()).a();
+        f43738c = a11.b(s1Var2.b()).a();
         c.b a12 = ui.c.a("classificationEnabled");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f43723d = a12.b(s1Var3.b()).a();
+        f43739d = a12.b(s1Var3.b()).a();
         c.b a13 = ui.c.a("maxPerObjectLabelCount");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f43724e = a13.b(s1Var4.b()).a();
+        f43740e = a13.b(s1Var4.b()).a();
         c.b a14 = ui.c.a("classificationConfidenceThreshold");
         s1 s1Var5 = new s1();
         s1Var5.a(5);
-        f43725f = a14.b(s1Var5.b()).a();
+        f43741f = a14.b(s1Var5.b()).a();
         c.b a15 = ui.c.a("customLocalModelOptions");
         s1 s1Var6 = new s1();
         s1Var6.a(6);
-        f43726g = a15.b(s1Var6.b()).a();
+        f43742g = a15.b(s1Var6.b()).a();
     }
 
     private x6() {

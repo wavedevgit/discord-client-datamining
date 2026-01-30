@@ -9,7 +9,7 @@ public class TextureBufferImpl implements VideoFrame.TextureBuffer {
     private final int height;
 
     /* renamed from: id  reason: collision with root package name */
-    private final int f44631id;
+    private final int f44647id;
     private final RefCountDelegate refCountDelegate;
     private final RefCountMonitor refCountMonitor;
     private final Handler toI420Handler;
@@ -76,7 +76,7 @@ public class TextureBufferImpl implements VideoFrame.TextureBuffer {
 
     @Override // org.webrtc.VideoFrame.TextureBuffer
     public int getTextureId() {
-        return this.f44631id;
+        return this.f44647id;
     }
 
     public Handler getToI420Handler() {
@@ -152,7 +152,7 @@ public class TextureBufferImpl implements VideoFrame.TextureBuffer {
         this.width = i12;
         this.height = i13;
         this.type = type;
-        this.f44631id = i14;
+        this.f44647id = i14;
         this.transformMatrix = matrix;
         this.toI420Handler = handler;
         this.yuvConverter = yuvConverter;
@@ -169,7 +169,7 @@ public class TextureBufferImpl implements VideoFrame.TextureBuffer {
         Matrix matrix2 = new Matrix(this.transformMatrix);
         matrix2.preConcat(matrix);
         retain();
-        return new TextureBufferImpl(i10, i11, i12, i13, this.type, this.f44631id, matrix2, this.toI420Handler, this.yuvConverter, new RefCountMonitor() { // from class: org.webrtc.TextureBufferImpl.2
+        return new TextureBufferImpl(i10, i11, i12, i13, this.type, this.f44647id, matrix2, this.toI420Handler, this.yuvConverter, new RefCountMonitor() { // from class: org.webrtc.TextureBufferImpl.2
             @Override // org.webrtc.TextureBufferImpl.RefCountMonitor
             public void onDestroy(TextureBufferImpl textureBufferImpl) {
                 TextureBufferImpl.this.release();

@@ -8,42 +8,42 @@ import java.util.Enumeration;
 public final class d extends InputStream {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Enumeration f49049d;
+    private final Enumeration f49065d;
 
     /* renamed from: e  reason: collision with root package name */
-    private InputStream f49050e;
+    private InputStream f49066e;
 
     public d(Enumeration enumeration) {
-        this.f49049d = enumeration;
+        this.f49065d = enumeration;
         a();
     }
 
     final void a() {
-        InputStream inputStream = this.f49050e;
+        InputStream inputStream = this.f49066e;
         if (inputStream != null) {
             inputStream.close();
         }
-        if (this.f49049d.hasMoreElements()) {
-            this.f49050e = new FileInputStream((File) this.f49049d.nextElement());
+        if (this.f49065d.hasMoreElements()) {
+            this.f49066e = new FileInputStream((File) this.f49065d.nextElement());
         } else {
-            this.f49050e = null;
+            this.f49066e = null;
         }
     }
 
     @Override // java.io.InputStream, java.io.Closeable, java.lang.AutoCloseable
     public final void close() {
         super.close();
-        InputStream inputStream = this.f49050e;
+        InputStream inputStream = this.f49066e;
         if (inputStream != null) {
             inputStream.close();
-            this.f49050e = null;
+            this.f49066e = null;
         }
     }
 
     @Override // java.io.InputStream
     public final int read() {
         while (true) {
-            InputStream inputStream = this.f49050e;
+            InputStream inputStream = this.f49066e;
             if (inputStream == null) {
                 return -1;
             }
@@ -57,7 +57,7 @@ public final class d extends InputStream {
 
     @Override // java.io.InputStream
     public final int read(byte[] bArr, int i10, int i11) {
-        if (this.f49050e == null) {
+        if (this.f49066e == null) {
             return -1;
         }
         bArr.getClass();
@@ -66,12 +66,12 @@ public final class d extends InputStream {
         }
         if (i11 != 0) {
             do {
-                int read = this.f49050e.read(bArr, i10, i11);
+                int read = this.f49066e.read(bArr, i10, i11);
                 if (read > 0) {
                     return read;
                 }
                 a();
-            } while (this.f49050e != null);
+            } while (this.f49066e != null);
             return -1;
         }
         return 0;

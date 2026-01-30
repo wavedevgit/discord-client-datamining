@@ -235,13 +235,13 @@ public final class k implements tc.k, z {
             this.f7384q = i10;
             return i10;
         }
-        yVar.f49502a = j10;
+        yVar.f49518a = j10;
         return 1;
     }
 
     private int B(tc.l lVar, y yVar) {
         int c10 = this.f7374g.c(lVar, yVar, this.f7375h);
-        if (c10 == 1 && yVar.f49502a == 0) {
+        if (c10 == 1 && yVar.f49518a == 0) {
             n();
         }
         return c10;
@@ -673,7 +673,7 @@ public final class k implements tc.k, z {
         } else if (j10 < 262144) {
             lVar.k((int) j10);
         } else {
-            yVar.f49502a = lVar.getPosition() + j10;
+            yVar.f49518a = lVar.getPosition() + j10;
             z10 = true;
             t(position);
             if (!z10 && this.f7376i != 2) {
@@ -785,7 +785,7 @@ public final class k implements tc.k, z {
             int r5 = r4.length
             if (r5 != 0) goto L13
             tc.z$a r1 = new tc.z$a
-            tc.a0 r2 = tc.a0.f49398c
+            tc.a0 r2 = tc.a0.f49414c
             r1.<init>(r2)
             return r1
         L13:
@@ -804,7 +804,7 @@ public final class k implements tc.k, z {
             int r6 = p(r4, r1)
             if (r6 != r5) goto L35
             tc.z$a r1 = new tc.z$a
-            tc.a0 r2 = tc.a0.f49398c
+            tc.a0 r2 = tc.a0.f49414c
             r1.<init>(r2)
             return r1
         L35:
@@ -876,11 +876,11 @@ public final class k implements tc.k, z {
         this.f7375h = new ArrayList();
         this.f7372e = new h0(16);
         this.f7373f = new ArrayDeque();
-        this.f7369b = new h0(d0.f40132a);
+        this.f7369b = new h0(d0.f40148a);
         this.f7370c = new h0(4);
         this.f7371d = new h0();
         this.f7381n = -1;
-        this.f7385r = tc.m.f49473l;
+        this.f7385r = tc.m.f49489l;
         this.f7386s = new a[0];
     }
 

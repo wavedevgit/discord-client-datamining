@@ -11,21 +11,21 @@ import okio.Timeout;
 public class p implements Source {
 
     /* renamed from: d  reason: collision with root package name */
-    private final InputStream f31289d;
+    private final InputStream f31305d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Timeout f31290e;
+    private final Timeout f31306e;
 
     public p(InputStream input, Timeout timeout) {
         Intrinsics.checkNotNullParameter(input, "input");
         Intrinsics.checkNotNullParameter(timeout, "timeout");
-        this.f31289d = input;
-        this.f31290e = timeout;
+        this.f31305d = input;
+        this.f31306e = timeout;
     }
 
     @Override // okio.Source, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f31289d.close();
+        this.f31305d.close();
     }
 
     @Override // okio.Source
@@ -37,18 +37,18 @@ public class p implements Source {
         }
         if (i10 >= 0) {
             try {
-                this.f31290e.f();
+                this.f31306e.f();
                 g0 y12 = sink.y1(1);
-                int read = this.f31289d.read(y12.f31249a, y12.f31251c, (int) Math.min(j10, 8192 - y12.f31251c));
+                int read = this.f31305d.read(y12.f31265a, y12.f31267c, (int) Math.min(j10, 8192 - y12.f31267c));
                 if (read == -1) {
-                    if (y12.f31250b == y12.f31251c) {
-                        sink.f44352d = y12.b();
+                    if (y12.f31266b == y12.f31267c) {
+                        sink.f44368d = y12.b();
                         h0.b(y12);
                         return -1L;
                     }
                     return -1L;
                 }
-                y12.f31251c += read;
+                y12.f31267c += read;
                 long j11 = read;
                 sink.Y0(sink.size() + j11);
                 return j11;
@@ -64,10 +64,10 @@ public class p implements Source {
 
     @Override // okio.Source
     public Timeout timeout() {
-        return this.f31290e;
+        return this.f31306e;
     }
 
     public String toString() {
-        return "source(" + this.f31289d + ')';
+        return "source(" + this.f31305d + ')';
     }
 }

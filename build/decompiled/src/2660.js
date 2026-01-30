@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun22108: for (var _fun22108_ip = 0;;) switch (_fun22108_ip) {
+    _fun22109: for (var _fun22109_ip = 0;;) switch (_fun22109_ip) {
         case 0:
             var1 = exports;
             var0 = global;
@@ -19,15 +19,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = require;
             var4 = var2.bind(var0)(var3);
             if (!var4) {
-                _fun22108_ip = 77;
-                continue _fun22108
+                _fun22109_ip = 77;
+                continue _fun22109
             }
         case 65:
             var2 = var4.__esModule;
             var3 = var4;
             if (var2) {
-                _fun22108_ip = 86;
-                continue _fun22108
+                _fun22109_ip = 86;
+                continue _fun22109
             }
         case 77:
             var2 = {};
@@ -36,7 +36,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         case 86:
             var2 = {};
             var4 = function(arg0, arg1) { // Original name: ordinalNumber, environment: var7
-                _fun22109: for (var _fun22109_ip = 0;;) switch (_fun22109_ip) {
+                _fun22110: for (var _fun22110_ip = 0;;) switch (_fun22110_ip) {
                     case 0:
                         var0 = global;
                         var2 = var0.Number;
@@ -47,28 +47,28 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = var1 % var0;
                         var0 = 20;
                         if (!(!(var2 > var0))) {
-                            _fun22109_ip = 39;
-                            continue _fun22109
+                            _fun22110_ip = 39;
+                            continue _fun22110
                         }
                     case 32:
                         var0 = 10;
                         if (!(var2 < var0)) {
-                            _fun22109_ip = 60;
-                            continue _fun22109
+                            _fun22110_ip = 60;
+                            continue _fun22110
                         }
                     case 39:
                         var0 = 10;
                         var2 = var2 % var0;
                         var0 = 1;
                         if (!(var0 !== var2)) {
-                            _fun22109_ip = 72;
-                            continue _fun22109
+                            _fun22110_ip = 72;
+                            continue _fun22110
                         }
                     case 53:
                         var0 = 2;
                         if (!(var0 !== var2)) {
-                            _fun22109_ip = 72;
-                            continue _fun22109
+                            _fun22110_ip = 72;
+                            continue _fun22110
                         }
                     case 60:
                         var0 = ':e';

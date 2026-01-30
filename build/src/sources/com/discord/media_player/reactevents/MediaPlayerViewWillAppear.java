@@ -34,7 +34,7 @@ public final class MediaPlayerViewWillAppear implements ReactEvent {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, l.a(o.f31103e, new Function0() { // from class: l7.b
+    private static final Lazy[] $childSerializers = {null, l.a(o.f31119e, new Function0() { // from class: l7.b
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;

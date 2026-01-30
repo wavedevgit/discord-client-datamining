@@ -66,7 +66,7 @@ public final class Tracks implements g {
 
         public a(qd.u0 u0Var, boolean z10, int[] iArr, boolean[] zArr) {
             boolean z11;
-            int i10 = u0Var.f47343d;
+            int i10 = u0Var.f47359d;
             this.f13029d = i10;
             boolean z12 = false;
             if (i10 == iArr.length && i10 == zArr.length) {
@@ -85,8 +85,8 @@ public final class Tracks implements g {
         }
 
         public static /* synthetic */ a a(Bundle bundle) {
-            qd.u0 u0Var = (qd.u0) qd.u0.f47342s.a((Bundle) ne.a.e(bundle.getBundle(f13024q)));
-            return new a(u0Var, bundle.getBoolean(f13027t, false), (int[]) ii.h.a(bundle.getIntArray(f13025r), new int[u0Var.f47343d]), (boolean[]) ii.h.a(bundle.getBooleanArray(f13026s), new boolean[u0Var.f47343d]));
+            qd.u0 u0Var = (qd.u0) qd.u0.f47358s.a((Bundle) ne.a.e(bundle.getBundle(f13024q)));
+            return new a(u0Var, bundle.getBoolean(f13027t, false), (int[]) ii.h.a(bundle.getIntArray(f13025r), new int[u0Var.f47359d]), (boolean[]) ii.h.a(bundle.getBooleanArray(f13026s), new boolean[u0Var.f47359d]));
         }
 
         public qd.u0 b() {
@@ -98,7 +98,7 @@ public final class Tracks implements g {
         }
 
         public int d() {
-            return this.f13030e.f47345i;
+            return this.f13030e.f47361i;
         }
 
         public boolean e() {

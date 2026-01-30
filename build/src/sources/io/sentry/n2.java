@@ -12,10 +12,10 @@ import java.util.Queue;
 public final class n2 implements IScope {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final n2 f30229b = new n2();
+    private static final n2 f30245b = new n2();
 
     /* renamed from: a  reason: collision with root package name */
-    private final io.sentry.util.r f30230a = new io.sentry.util.r(new r.a() { // from class: io.sentry.m2
+    private final io.sentry.util.r f30246a = new io.sentry.util.r(new r.a() { // from class: io.sentry.m2
         @Override // io.sentry.util.r.a
         public final Object a() {
             k7 empty;
@@ -28,7 +28,7 @@ public final class n2 implements IScope {
     }
 
     public static n2 V() {
-        return f30229b;
+        return f30245b;
     }
 
     @Override // io.sentry.IScope
@@ -74,7 +74,7 @@ public final class n2 implements IScope {
 
     @Override // io.sentry.IScope
     public io.sentry.protocol.x J() {
-        return io.sentry.protocol.x.f30470e;
+        return io.sentry.protocol.x.f30486e;
     }
 
     @Override // io.sentry.IScope
@@ -132,7 +132,7 @@ public final class n2 implements IScope {
 
     @Override // io.sentry.IScope
     public k7 b() {
-        return (k7) this.f30230a.a();
+        return (k7) this.f30246a.a();
     }
 
     @Override // io.sentry.IScope

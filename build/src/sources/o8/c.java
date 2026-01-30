@@ -6,15 +6,15 @@ import java.io.OutputStream;
 public class c extends FilterOutputStream {
 
     /* renamed from: d  reason: collision with root package name */
-    private long f42475d;
+    private long f42491d;
 
     public c(OutputStream outputStream) {
         super(outputStream);
-        this.f42475d = 0L;
+        this.f42491d = 0L;
     }
 
     public long a() {
-        return this.f42475d;
+        return this.f42491d;
     }
 
     @Override // java.io.FilterOutputStream, java.io.OutputStream, java.io.Closeable, java.lang.AutoCloseable
@@ -25,12 +25,12 @@ public class c extends FilterOutputStream {
     @Override // java.io.FilterOutputStream, java.io.OutputStream
     public void write(byte[] bArr, int i10, int i11) {
         ((FilterOutputStream) this).out.write(bArr, i10, i11);
-        this.f42475d += i11;
+        this.f42491d += i11;
     }
 
     @Override // java.io.FilterOutputStream, java.io.OutputStream
     public void write(int i10) {
         ((FilterOutputStream) this).out.write(i10);
-        this.f42475d++;
+        this.f42491d++;
     }
 }

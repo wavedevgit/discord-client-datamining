@@ -91,7 +91,7 @@ public class a implements mc.a {
 
         private void b(t.a aVar, r.b bVar, Timeline timeline) {
             if (bVar != null) {
-                if (timeline.f(bVar.f47284a) != -1) {
+                if (timeline.f(bVar.f47300a) != -1) {
                     aVar.f(bVar, timeline);
                     return;
                 }
@@ -131,11 +131,11 @@ public class a implements mc.a {
         }
 
         private static boolean i(r.b bVar, Object obj, boolean z10, int i10, int i11, int i12) {
-            if (!bVar.f47284a.equals(obj)) {
+            if (!bVar.f47300a.equals(obj)) {
                 return false;
             }
-            if (!z10 || bVar.f47285b != i10 || bVar.f47286c != i11) {
-                if (z10 || bVar.f47285b != -1 || bVar.f47288e != i12) {
+            if (!z10 || bVar.f47301b != i10 || bVar.f47302c != i11) {
+                if (z10 || bVar.f47301b != -1 || bVar.f47304e != i12) {
                     return false;
                 }
                 return true;
@@ -261,7 +261,7 @@ public class a implements mc.a {
             f10 = this.f13090o.f(bVar);
         }
         if (bVar != null && f10 != null) {
-            return V0(f10, f10.l(bVar.f47284a, this.f13088e).f12996i, bVar);
+            return V0(f10, f10.l(bVar.f47300a, this.f13088e).f12996i, bVar);
         }
         int Q = this.f13093r.Q();
         Timeline v10 = this.f13093r.v();
@@ -452,7 +452,7 @@ public class a implements mc.a {
         }
         long j10 = 0;
         if (bVar2 != null && bVar2.b()) {
-            if (z10 && this.f13093r.r() == bVar2.f47285b && this.f13093r.I() == bVar2.f47286c) {
+            if (z10 && this.f13093r.r() == bVar2.f47301b && this.f13093r.I() == bVar2.f47302c) {
                 j10 = this.f13093r.Z();
             }
         } else if (z10) {

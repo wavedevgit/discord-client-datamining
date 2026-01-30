@@ -52,13 +52,13 @@ public final class f implements ViewBinding {
     }
 
     public static f a(View view) {
-        int i10 = vp.e.f51827v;
+        int i10 = vp.e.f51843v;
         TextView textView = (TextView) e4.a.a(view, i10);
         if (textView != null) {
-            i10 = vp.e.f51829w;
+            i10 = vp.e.f51845w;
             TextInputLayout textInputLayout = (TextInputLayout) e4.a.a(view, i10);
             if (textInputLayout != null) {
-                i10 = vp.e.f51831x;
+                i10 = vp.e.f51847x;
                 TextInputEditText textInputEditText = (TextInputEditText) e4.a.a(view, i10);
                 if (textInputEditText != null) {
                     i10 = vp.e.E;
@@ -67,7 +67,7 @@ public final class f implements ViewBinding {
                         i10 = vp.e.Z;
                         TextInputLayout textInputLayout2 = (TextInputLayout) e4.a.a(view, i10);
                         if (textInputLayout2 != null) {
-                            i10 = vp.e.f51786a0;
+                            i10 = vp.e.f51802a0;
                             AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) e4.a.a(view, i10);
                             if (autoCompleteTextView != null) {
                                 i10 = vp.e.D0;
@@ -93,7 +93,7 @@ public final class f implements ViewBinding {
     }
 
     public static f d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(vp.f.f51842f, viewGroup, false);
+        View inflate = layoutInflater.inflate(vp.f.f51858f, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }

@@ -7,7 +7,7 @@ import kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf;
 public class q implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final q f35782d = new q();
+    public static final q f35798d = new q();
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {

@@ -10,14 +10,14 @@ import mo.g2;
 public final class c implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final FrameLayout f44606a;
+    private final FrameLayout f44622a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final FrameLayout f44607b;
+    public final FrameLayout f44623b;
 
     private c(FrameLayout frameLayout, FrameLayout frameLayout2) {
-        this.f44606a = frameLayout;
-        this.f44607b = frameLayout2;
+        this.f44622a = frameLayout;
+        this.f44623b = frameLayout2;
     }
 
     public static c a(View view) {
@@ -33,7 +33,7 @@ public final class c implements ViewBinding {
     }
 
     public static c d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(g2.f39436c, viewGroup, false);
+        View inflate = layoutInflater.inflate(g2.f39452c, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -43,6 +43,6 @@ public final class c implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public FrameLayout getRoot() {
-        return this.f44606a;
+        return this.f44622a;
     }
 }

@@ -7,7 +7,7 @@ import wu.a;
 public final class h implements ku.b, wu.a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final h f50575a = new h();
+    public static final h f50591a = new h();
 
     private h() {
     }
@@ -26,7 +26,7 @@ public final class h implements ku.b, wu.a {
         int size = c10.size();
         if (size != 0) {
             if (size != 1) {
-                return f50575a.b((Double) CollectionsKt.o0(c10), (Double) c10.get(1));
+                return f50591a.b((Double) CollectionsKt.o0(c10), (Double) c10.get(1));
             }
             Double d10 = (Double) CollectionsKt.o0(c10);
             if (d10 != null) {

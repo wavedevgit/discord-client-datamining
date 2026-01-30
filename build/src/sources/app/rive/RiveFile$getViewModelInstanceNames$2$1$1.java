@@ -58,6 +58,6 @@ final class RiveFile$getViewModelInstanceNames$2$1$1 extends k implements Functi
 
     @Override // kotlin.jvm.functions.Function1
     public final Object invoke(Continuation<? super List<String>> continuation) {
-        return ((RiveFile$getViewModelInstanceNames$2$1$1) create(continuation)).invokeSuspend(Unit.f33282a);
+        return ((RiveFile$getViewModelInstanceNames$2$1$1) create(continuation)).invokeSuspend(Unit.f33298a);
     }
 }

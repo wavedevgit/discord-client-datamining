@@ -24,16 +24,16 @@ import tm.o;
 public final class c implements tm.o<b> {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f51360e = new a(null);
+    public static final a f51376e = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private final ActivityResultLauncher f51361b;
+    private final ActivityResultLauncher f51377b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Context f51362c;
+    private final Context f51378c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final op.c f51363d;
+    private final op.c f51379d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -52,7 +52,7 @@ public final class c implements tm.o<b> {
         public static final class a extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final a f51364a = new a();
+            public static final a f51380a = new a();
 
             private a() {
                 super(null);
@@ -64,17 +64,17 @@ public final class c implements tm.o<b> {
         public static final class C0689b extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            private final String f51365a;
+            private final String f51381a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public C0689b(String absoluteFilePath) {
                 super(null);
                 Intrinsics.checkNotNullParameter(absoluteFilePath, "absoluteFilePath");
-                this.f51365a = absoluteFilePath;
+                this.f51381a = absoluteFilePath;
             }
 
             public final String a() {
-                return this.f51365a;
+                return this.f51381a;
             }
         }
 
@@ -91,7 +91,7 @@ public final class c implements tm.o<b> {
     static final class C0690c extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f51366d;
+        int f51382d;
 
         C0690c(Continuation continuation) {
             super(2, continuation);
@@ -105,7 +105,7 @@ public final class c implements tm.o<b> {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = or.b.f();
-            int i10 = this.f51366d;
+            int i10 = this.f51382d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -114,25 +114,25 @@ public final class c implements tm.o<b> {
                 }
             } else {
                 kotlin.c.b(obj);
-                this.f51366d = 1;
+                this.f51382d = 1;
                 if (gs.i0.a(500L, this) == f10) {
                     return f10;
                 }
             }
             Bitmap createBitmap = Bitmap.createBitmap(10, 10, Bitmap.Config.ARGB_8888);
-            FileOutputStream fileOutputStream = new FileOutputStream(c.this.f51363d.d("document_camera_photo.jpg"));
+            FileOutputStream fileOutputStream = new FileOutputStream(c.this.f51379d.d("document_camera_photo.jpg"));
             try {
                 createBitmap.compress(Bitmap.CompressFormat.JPEG, 80, fileOutputStream);
                 tr.c.a(fileOutputStream, null);
                 new uo.y().c(true);
-                return Unit.f33282a;
+                return Unit.f33298a;
             } finally {
             }
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((C0690c) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((C0690c) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -140,29 +140,29 @@ public final class c implements tm.o<b> {
     public static final class d implements Flow {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Flow f51368d;
+        final /* synthetic */ Flow f51384d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ c f51369e;
+        final /* synthetic */ c f51385e;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements FlowCollector {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ FlowCollector f51370d;
+            final /* synthetic */ FlowCollector f51386d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ c f51371e;
+            final /* synthetic */ c f51387e;
 
             /* renamed from: vn.c$d$a$a  reason: collision with other inner class name */
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
             public static final class C0691a extends kotlin.coroutines.jvm.internal.d {
 
                 /* renamed from: d  reason: collision with root package name */
-                /* synthetic */ Object f51372d;
+                /* synthetic */ Object f51388d;
 
                 /* renamed from: e  reason: collision with root package name */
-                int f51373e;
+                int f51389e;
 
                 public C0691a(Continuation continuation) {
                     super(continuation);
@@ -170,15 +170,15 @@ public final class c implements tm.o<b> {
 
                 @Override // kotlin.coroutines.jvm.internal.a
                 public final Object invokeSuspend(Object obj) {
-                    this.f51372d = obj;
-                    this.f51373e |= Integer.MIN_VALUE;
+                    this.f51388d = obj;
+                    this.f51389e |= Integer.MIN_VALUE;
                     return a.this.emit(null, this);
                 }
             }
 
             public a(FlowCollector flowCollector, c cVar) {
-                this.f51370d = flowCollector;
-                this.f51371e = cVar;
+                this.f51386d = flowCollector;
+                this.f51387e = cVar;
             }
 
             /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
@@ -195,20 +195,20 @@ public final class c implements tm.o<b> {
                     if (r0 == 0) goto L13
                     r0 = r7
                     vn.c$d$a$a r0 = (vn.c.d.a.C0691a) r0
-                    int r1 = r0.f51373e
+                    int r1 = r0.f51389e
                     r2 = -2147483648(0xffffffff80000000, float:-0.0)
                     r3 = r1 & r2
                     if (r3 == 0) goto L13
                     int r1 = r1 - r2
-                    r0.f51373e = r1
+                    r0.f51389e = r1
                     goto L18
                 L13:
                     vn.c$d$a$a r0 = new vn.c$d$a$a
                     r0.<init>(r7)
                 L18:
-                    java.lang.Object r7 = r0.f51372d
+                    java.lang.Object r7 = r0.f51388d
                     java.lang.Object r1 = or.b.f()
-                    int r2 = r0.f51373e
+                    int r2 = r0.f51389e
                     r3 = 1
                     if (r2 == 0) goto L31
                     if (r2 != r3) goto L29
@@ -221,15 +221,15 @@ public final class c implements tm.o<b> {
                     throw r6
                 L31:
                     kotlin.c.b(r7)
-                    kotlinx.coroutines.flow.FlowCollector r7 = r5.f51370d
+                    kotlinx.coroutines.flow.FlowCollector r7 = r5.f51386d
                     java.lang.Boolean r6 = (java.lang.Boolean) r6
                     boolean r6 = r6.booleanValue()
                     if (r6 == 0) goto L6e
-                    vn.c r6 = r5.f51371e
+                    vn.c r6 = r5.f51387e
                     op.c r6 = vn.c.b(r6)
                     java.lang.String r2 = "document_camera_photo.jpg"
                     java.io.File r6 = r6.d(r2)
-                    vn.c r2 = r5.f51371e
+                    vn.c r2 = r5.f51387e
                     op.c r2 = vn.c.b(r2)
                     java.lang.String r4 = "jpg"
                     java.io.File r2 = r2.c(r4)
@@ -242,17 +242,17 @@ public final class c implements tm.o<b> {
                     r6.<init>(r2)
                     goto L70
                 L6b:
-                    vn.c$b$a r6 = vn.c.b.a.f51364a
+                    vn.c$b$a r6 = vn.c.b.a.f51380a
                     goto L70
                 L6e:
-                    vn.c$b$a r6 = vn.c.b.a.f51364a
+                    vn.c$b$a r6 = vn.c.b.a.f51380a
                 L70:
-                    r0.f51373e = r3
+                    r0.f51389e = r3
                     java.lang.Object r6 = r7.emit(r6, r0)
                     if (r6 != r1) goto L79
                     return r1
                 L79:
-                    kotlin.Unit r6 = kotlin.Unit.f33282a
+                    kotlin.Unit r6 = kotlin.Unit.f33298a
                     return r6
                 */
                 throw new UnsupportedOperationException("Method not decompiled: vn.c.d.a.emit(java.lang.Object, kotlin.coroutines.Continuation):java.lang.Object");
@@ -260,17 +260,17 @@ public final class c implements tm.o<b> {
         }
 
         public d(Flow flow, c cVar) {
-            this.f51368d = flow;
-            this.f51369e = cVar;
+            this.f51384d = flow;
+            this.f51385e = cVar;
         }
 
         @Override // kotlinx.coroutines.flow.Flow
         public Object collect(FlowCollector flowCollector, Continuation continuation) {
-            Object collect = this.f51368d.collect(new a(flowCollector, this.f51369e), continuation);
+            Object collect = this.f51384d.collect(new a(flowCollector, this.f51385e), continuation);
             if (collect == or.b.f()) {
                 return collect;
             }
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
     }
 
@@ -278,9 +278,9 @@ public final class c implements tm.o<b> {
         Intrinsics.checkNotNullParameter(pictureLauncher, "pictureLauncher");
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(sdkFilesManager, "sdkFilesManager");
-        this.f51361b = pictureLauncher;
-        this.f51362c = context;
-        this.f51363d = sdkFilesManager;
+        this.f51377b = pictureLauncher;
+        this.f51378c = context;
+        this.f51379d = sdkFilesManager;
     }
 
     @Override // tm.o
@@ -292,18 +292,18 @@ public final class c implements tm.o<b> {
         Intrinsics.checkNotNullParameter(errorMessage, "errorMessage");
         try {
             if (up.b.b()) {
-                gs.i.d(gs.v0.f27191d, null, null, new C0690c(null), 3, null);
+                gs.i.d(gs.v0.f27207d, null, null, new C0690c(null), 3, null);
                 return true;
             }
-            Context context = this.f51362c;
+            Context context = this.f51378c;
             String packageName = context.getPackageName();
-            Uri uriForFile = FileProvider.getUriForFile(context, packageName + ".persona.provider", this.f51363d.d("document_camera_photo.jpg"));
-            ActivityResultLauncher activityResultLauncher = this.f51361b;
+            Uri uriForFile = FileProvider.getUriForFile(context, packageName + ".persona.provider", this.f51379d.d("document_camera_photo.jpg"));
+            ActivityResultLauncher activityResultLauncher = this.f51377b;
             Intrinsics.checkNotNull(uriForFile);
             activityResultLauncher.b(uriForFile);
             return true;
         } catch (IllegalArgumentException unused) {
-            Toast.makeText(this.f51362c, errorMessage, 0).show();
+            Toast.makeText(this.f51378c, errorMessage, 0).show();
             return false;
         }
     }

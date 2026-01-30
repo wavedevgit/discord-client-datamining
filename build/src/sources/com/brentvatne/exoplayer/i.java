@@ -180,11 +180,11 @@ public class i {
             if (d10 instanceof ld.i) {
                 ld.i iVar = (ld.i) d10;
                 if (iVar instanceof m) {
-                    str = ((m) iVar).f37154i;
+                    str = ((m) iVar).f37170i;
                 } else {
                     str = "";
                 }
-                String str2 = iVar.f37142d;
+                String str2 = iVar.f37158d;
                 WritableMap createMap = Arguments.createMap();
                 createMap.putString("identifier", str2);
                 createMap.putString("value", str);
@@ -192,8 +192,8 @@ public class i {
             } else if (d10 instanceof id.a) {
                 id.a aVar = (id.a) d10;
                 WritableMap createMap2 = Arguments.createMap();
-                createMap2.putString("identifier", aVar.f28437d);
-                createMap2.putString("value", aVar.f28438e);
+                createMap2.putString("identifier", aVar.f28453d);
+                createMap2.putString("value", aVar.f28454e);
                 createArray.pushMap(createMap2);
             }
         }

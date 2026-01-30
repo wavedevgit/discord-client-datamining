@@ -27,10 +27,10 @@ public class MaterialCardView extends CardView implements Checkable, n {
     private static final int[] f15721q = {16842912};
 
     /* renamed from: r  reason: collision with root package name */
-    private static final int[] f15722r = {yg.b.f54331a0};
+    private static final int[] f15722r = {yg.b.f54347a0};
 
     /* renamed from: s  reason: collision with root package name */
-    private static final int f15723s = j.f54512o;
+    private static final int f15723s = j.f54528o;
 
     /* renamed from: d  reason: collision with root package name */
     private final b f15724d;

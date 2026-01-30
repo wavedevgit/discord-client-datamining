@@ -5,16 +5,16 @@ import java.util.Arrays;
 public final class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final xb.c f55486a;
+    private final xb.c f55502a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final byte[] f55487b;
+    private final byte[] f55503b;
 
     public h(xb.c cVar, byte[] bArr) {
         if (cVar != null) {
             if (bArr != null) {
-                this.f55486a = cVar;
-                this.f55487b = bArr;
+                this.f55502a = cVar;
+                this.f55503b = bArr;
                 return;
             }
             throw new NullPointerException("bytes is null");
@@ -23,11 +23,11 @@ public final class h {
     }
 
     public byte[] a() {
-        return this.f55487b;
+        return this.f55503b;
     }
 
     public xb.c b() {
-        return this.f55486a;
+        return this.f55502a;
     }
 
     public boolean equals(Object obj) {
@@ -38,17 +38,17 @@ public final class h {
             return false;
         }
         h hVar = (h) obj;
-        if (!this.f55486a.equals(hVar.f55486a)) {
+        if (!this.f55502a.equals(hVar.f55502a)) {
             return false;
         }
-        return Arrays.equals(this.f55487b, hVar.f55487b);
+        return Arrays.equals(this.f55503b, hVar.f55503b);
     }
 
     public int hashCode() {
-        return ((this.f55486a.hashCode() ^ 1000003) * 1000003) ^ Arrays.hashCode(this.f55487b);
+        return ((this.f55502a.hashCode() ^ 1000003) * 1000003) ^ Arrays.hashCode(this.f55503b);
     }
 
     public String toString() {
-        return "EncodedPayload{encoding=" + this.f55486a + ", bytes=[...]}";
+        return "EncodedPayload{encoding=" + this.f55502a + ", bytes=[...]}";
     }
 }

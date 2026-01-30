@@ -39,27 +39,27 @@ public final class InstallReferrerModuleKt {
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 invoke((Throwable) obj);
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
 
             public final void invoke(Throwable th2) {
                 InstallReferrerClient installReferrerClient2 = InstallReferrerClient.this;
                 try {
-                    Result.a aVar = Result.f33279e;
+                    Result.a aVar = Result.f33295e;
                     installReferrerClient2.endConnection();
-                    Result.b(Unit.f33282a);
+                    Result.b(Unit.f33298a);
                 } catch (Throwable th3) {
-                    Result.a aVar2 = Result.f33279e;
+                    Result.a aVar2 = Result.f33295e;
                     Result.b(c.a(th3));
                 }
             }
         });
         try {
-            Result.a aVar = Result.f33279e;
+            Result.a aVar = Result.f33295e;
             installReferrerClient.startConnection(installReferrerStateListener);
-            b10 = Result.b(Unit.f33282a);
+            b10 = Result.b(Unit.f33298a);
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f33279e;
+            Result.a aVar2 = Result.f33295e;
             b10 = Result.b(c.a(th2));
         }
         Throwable e10 = Result.e(b10);

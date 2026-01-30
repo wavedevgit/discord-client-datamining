@@ -54,73 +54,73 @@ public class PropertyDescriptorImpl extends VariableDescriptorWithInitializerImp
     private FieldDescriptor M;
 
     /* renamed from: t  reason: collision with root package name */
-    private final Modality f33819t;
+    private final Modality f33835t;
 
     /* renamed from: u  reason: collision with root package name */
-    private DescriptorVisibility f33820u;
+    private DescriptorVisibility f33836u;
 
     /* renamed from: v  reason: collision with root package name */
-    private Collection f33821v;
+    private Collection f33837v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final PropertyDescriptor f33822w;
+    private final PropertyDescriptor f33838w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final CallableMemberDescriptor.Kind f33823x;
+    private final CallableMemberDescriptor.Kind f33839x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final boolean f33824y;
+    private final boolean f33840y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final boolean f33825z;
+    private final boolean f33841z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public class CopyConfiguration {
 
         /* renamed from: a  reason: collision with root package name */
-        private DeclarationDescriptor f33826a;
+        private DeclarationDescriptor f33842a;
 
         /* renamed from: b  reason: collision with root package name */
-        private Modality f33827b;
+        private Modality f33843b;
 
         /* renamed from: c  reason: collision with root package name */
-        private DescriptorVisibility f33828c;
+        private DescriptorVisibility f33844c;
 
         /* renamed from: f  reason: collision with root package name */
-        private CallableMemberDescriptor.Kind f33831f;
+        private CallableMemberDescriptor.Kind f33847f;
 
         /* renamed from: i  reason: collision with root package name */
-        private ReceiverParameterDescriptor f33834i;
+        private ReceiverParameterDescriptor f33850i;
 
         /* renamed from: k  reason: collision with root package name */
-        private Name f33836k;
+        private Name f33852k;
 
         /* renamed from: l  reason: collision with root package name */
-        private KotlinType f33837l;
+        private KotlinType f33853l;
 
         /* renamed from: d  reason: collision with root package name */
-        private PropertyDescriptor f33829d = null;
+        private PropertyDescriptor f33845d = null;
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f33830e = false;
+        private boolean f33846e = false;
 
         /* renamed from: g  reason: collision with root package name */
-        private TypeSubstitution f33832g = TypeSubstitution.EMPTY;
+        private TypeSubstitution f33848g = TypeSubstitution.EMPTY;
 
         /* renamed from: h  reason: collision with root package name */
-        private boolean f33833h = true;
+        private boolean f33849h = true;
 
         /* renamed from: j  reason: collision with root package name */
-        private List f33835j = null;
+        private List f33851j = null;
 
         public CopyConfiguration() {
-            this.f33826a = PropertyDescriptorImpl.this.getContainingDeclaration();
-            this.f33827b = PropertyDescriptorImpl.this.getModality();
-            this.f33828c = PropertyDescriptorImpl.this.getVisibility();
-            this.f33831f = PropertyDescriptorImpl.this.getKind();
-            this.f33834i = PropertyDescriptorImpl.this.F;
-            this.f33836k = PropertyDescriptorImpl.this.getName();
-            this.f33837l = PropertyDescriptorImpl.this.getType();
+            this.f33842a = PropertyDescriptorImpl.this.getContainingDeclaration();
+            this.f33843b = PropertyDescriptorImpl.this.getModality();
+            this.f33844c = PropertyDescriptorImpl.this.getVisibility();
+            this.f33847f = PropertyDescriptorImpl.this.getKind();
+            this.f33850i = PropertyDescriptorImpl.this.F;
+            this.f33852k = PropertyDescriptorImpl.this.getName();
+            this.f33853l = PropertyDescriptorImpl.this.getType();
         }
 
         private static /* synthetic */ void a(int i10) {
@@ -244,7 +244,7 @@ public class PropertyDescriptorImpl extends VariableDescriptorWithInitializerImp
         }
 
         PropertyGetterDescriptor n() {
-            PropertyDescriptor propertyDescriptor = this.f33829d;
+            PropertyDescriptor propertyDescriptor = this.f33845d;
             if (propertyDescriptor == null) {
                 return null;
             }
@@ -252,7 +252,7 @@ public class PropertyDescriptorImpl extends VariableDescriptorWithInitializerImp
         }
 
         PropertySetterDescriptor o() {
-            PropertyDescriptor propertyDescriptor = this.f33829d;
+            PropertyDescriptor propertyDescriptor = this.f33845d;
             if (propertyDescriptor == null) {
                 return null;
             }
@@ -261,7 +261,7 @@ public class PropertyDescriptorImpl extends VariableDescriptorWithInitializerImp
 
         @NotNull
         public CopyConfiguration setCopyOverrides(boolean z10) {
-            this.f33833h = z10;
+            this.f33849h = z10;
             return this;
         }
 
@@ -270,7 +270,7 @@ public class PropertyDescriptorImpl extends VariableDescriptorWithInitializerImp
             if (kind == null) {
                 a(10);
             }
-            this.f33831f = kind;
+            this.f33847f = kind;
             return this;
         }
 
@@ -279,13 +279,13 @@ public class PropertyDescriptorImpl extends VariableDescriptorWithInitializerImp
             if (modality == null) {
                 a(6);
             }
-            this.f33827b = modality;
+            this.f33843b = modality;
             return this;
         }
 
         @NotNull
         public CopyConfiguration setOriginal(CallableMemberDescriptor callableMemberDescriptor) {
-            this.f33829d = (PropertyDescriptor) callableMemberDescriptor;
+            this.f33845d = (PropertyDescriptor) callableMemberDescriptor;
             return this;
         }
 
@@ -294,7 +294,7 @@ public class PropertyDescriptorImpl extends VariableDescriptorWithInitializerImp
             if (declarationDescriptor == null) {
                 a(0);
             }
-            this.f33826a = declarationDescriptor;
+            this.f33842a = declarationDescriptor;
             return this;
         }
 
@@ -303,7 +303,7 @@ public class PropertyDescriptorImpl extends VariableDescriptorWithInitializerImp
             if (typeSubstitution == null) {
                 a(15);
             }
-            this.f33832g = typeSubstitution;
+            this.f33848g = typeSubstitution;
             return this;
         }
 
@@ -312,7 +312,7 @@ public class PropertyDescriptorImpl extends VariableDescriptorWithInitializerImp
             if (descriptorVisibility == null) {
                 a(8);
             }
-            this.f33828c = descriptorVisibility;
+            this.f33844c = descriptorVisibility;
             return this;
         }
     }
@@ -342,14 +342,14 @@ public class PropertyDescriptorImpl extends VariableDescriptorWithInitializerImp
         if (sourceElement == null) {
             a(6);
         }
-        this.f33821v = null;
+        this.f33837v = null;
         this.E = Collections.EMPTY_LIST;
-        this.f33819t = modality;
-        this.f33820u = descriptorVisibility;
-        this.f33822w = propertyDescriptor == null ? this : propertyDescriptor;
-        this.f33823x = kind;
-        this.f33824y = z11;
-        this.f33825z = z12;
+        this.f33835t = modality;
+        this.f33836u = descriptorVisibility;
+        this.f33838w = propertyDescriptor == null ? this : propertyDescriptor;
+        this.f33839x = kind;
+        this.f33840y = z11;
+        this.f33841z = z12;
         this.A = z13;
         this.B = z14;
         this.C = z15;
@@ -522,15 +522,15 @@ public class PropertyDescriptorImpl extends VariableDescriptorWithInitializerImp
         if (copyConfiguration == null) {
             a(29);
         }
-        PropertyDescriptorImpl c10 = c(copyConfiguration.f33826a, copyConfiguration.f33827b, copyConfiguration.f33828c, copyConfiguration.f33829d, copyConfiguration.f33831f, copyConfiguration.f33836k, e(copyConfiguration.f33830e, copyConfiguration.f33829d));
-        if (copyConfiguration.f33835j != null) {
-            list = copyConfiguration.f33835j;
+        PropertyDescriptorImpl c10 = c(copyConfiguration.f33842a, copyConfiguration.f33843b, copyConfiguration.f33844c, copyConfiguration.f33845d, copyConfiguration.f33847f, copyConfiguration.f33852k, e(copyConfiguration.f33846e, copyConfiguration.f33845d));
+        if (copyConfiguration.f33851j != null) {
+            list = copyConfiguration.f33851j;
         } else {
             list = getTypeParameters();
         }
         ArrayList arrayList = new ArrayList(list.size());
-        TypeSubstitutor substituteTypeParameters = DescriptorSubstitutor.substituteTypeParameters(list, copyConfiguration.f33832g, c10, arrayList);
-        KotlinType kotlinType2 = copyConfiguration.f33837l;
+        TypeSubstitutor substituteTypeParameters = DescriptorSubstitutor.substituteTypeParameters(list, copyConfiguration.f33848g, c10, arrayList);
+        KotlinType kotlinType2 = copyConfiguration.f33853l;
         KotlinType substitute = substituteTypeParameters.substitute(kotlinType2, Variance.OUT_VARIANCE);
         if (substitute == null) {
             return null;
@@ -539,7 +539,7 @@ public class PropertyDescriptorImpl extends VariableDescriptorWithInitializerImp
         if (substitute2 != null) {
             c10.setInType(substitute2);
         }
-        ReceiverParameterDescriptor receiverParameterDescriptor3 = copyConfiguration.f33834i;
+        ReceiverParameterDescriptor receiverParameterDescriptor3 = copyConfiguration.f33850i;
         if (receiverParameterDescriptor3 != null) {
             ReceiverParameterDescriptor substitute3 = receiverParameterDescriptor3.substitute(substituteTypeParameters);
             if (substitute3 == null) {
@@ -566,7 +566,7 @@ public class PropertyDescriptorImpl extends VariableDescriptorWithInitializerImp
         if (this.I == null) {
             propertyGetterDescriptorImpl = null;
         } else {
-            propertyGetterDescriptorImpl = new PropertyGetterDescriptorImpl(c10, this.I.getAnnotations(), copyConfiguration.f33827b, g(this.I.getVisibility(), copyConfiguration.f33831f), this.I.isDefault(), this.I.isExternal(), this.I.isInline(), copyConfiguration.f33831f, copyConfiguration.n(), SourceElement.NO_SOURCE);
+            propertyGetterDescriptorImpl = new PropertyGetterDescriptorImpl(c10, this.I.getAnnotations(), copyConfiguration.f33843b, g(this.I.getVisibility(), copyConfiguration.f33847f), this.I.isDefault(), this.I.isExternal(), this.I.isInline(), copyConfiguration.f33847f, copyConfiguration.n(), SourceElement.NO_SOURCE);
         }
         if (propertyGetterDescriptorImpl != null) {
             KotlinType returnType = this.I.getReturnType();
@@ -581,13 +581,13 @@ public class PropertyDescriptorImpl extends VariableDescriptorWithInitializerImp
         if (this.J == null) {
             propertySetterDescriptorImpl = null;
         } else {
-            propertySetterDescriptorImpl = new PropertySetterDescriptorImpl(c10, this.J.getAnnotations(), copyConfiguration.f33827b, g(this.J.getVisibility(), copyConfiguration.f33831f), this.J.isDefault(), this.J.isExternal(), this.J.isInline(), copyConfiguration.f33831f, copyConfiguration.o(), SourceElement.NO_SOURCE);
+            propertySetterDescriptorImpl = new PropertySetterDescriptorImpl(c10, this.J.getAnnotations(), copyConfiguration.f33843b, g(this.J.getVisibility(), copyConfiguration.f33847f), this.J.isDefault(), this.J.isExternal(), this.J.isInline(), copyConfiguration.f33847f, copyConfiguration.o(), SourceElement.NO_SOURCE);
         }
         if (propertySetterDescriptorImpl != null) {
             List<ValueParameterDescriptor> substitutedValueParameters = FunctionDescriptorImpl.getSubstitutedValueParameters(propertySetterDescriptorImpl, this.J.getValueParameters(), substituteTypeParameters, false, false, null);
             if (substitutedValueParameters == null) {
                 c10.setSetterProjectedOut(true);
-                substitutedValueParameters = Collections.singletonList(PropertySetterDescriptorImpl.createSetterParameter(propertySetterDescriptorImpl, DescriptorUtilsKt.getBuiltIns(copyConfiguration.f33826a).getNothingType(), this.J.getValueParameters().get(0).getAnnotations()));
+                substitutedValueParameters = Collections.singletonList(PropertySetterDescriptorImpl.createSetterParameter(propertySetterDescriptorImpl, DescriptorUtilsKt.getBuiltIns(copyConfiguration.f33842a).getNothingType(), this.J.getValueParameters().get(0).getAnnotations()));
             }
             if (substitutedValueParameters.size() == 1) {
                 propertySetterDescriptorImpl.setInitialSignatureDescriptor(f(substituteTypeParameters, this.J));
@@ -609,15 +609,15 @@ public class PropertyDescriptorImpl extends VariableDescriptorWithInitializerImp
             fieldDescriptorImpl2 = new FieldDescriptorImpl(fieldDescriptor2.getAnnotations(), c10);
         }
         c10.initialize(propertyGetterDescriptorImpl, propertySetterDescriptorImpl, fieldDescriptorImpl, fieldDescriptorImpl2);
-        if (copyConfiguration.f33833h) {
+        if (copyConfiguration.f33849h) {
             SmartSet create = SmartSet.create();
             for (PropertyDescriptor propertyDescriptor : getOverriddenDescriptors()) {
                 create.add(propertyDescriptor.substitute(substituteTypeParameters));
             }
             c10.setOverriddenDescriptors(create);
         }
-        if (isConst() && (function0 = this.f33860s) != null) {
-            c10.setCompileTimeInitializer(this.f33859r, function0);
+        if (isConst() && (function0 = this.f33876s) != null) {
+            c10.setCompileTimeInitializer(this.f33875r, function0);
         }
         return c10;
     }
@@ -670,7 +670,7 @@ public class PropertyDescriptorImpl extends VariableDescriptorWithInitializerImp
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.CallableMemberDescriptor
     @NotNull
     public CallableMemberDescriptor.Kind getKind() {
-        CallableMemberDescriptor.Kind kind = this.f33823x;
+        CallableMemberDescriptor.Kind kind = this.f33839x;
         if (kind == null) {
             a(39);
         }
@@ -680,7 +680,7 @@ public class PropertyDescriptorImpl extends VariableDescriptorWithInitializerImp
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.MemberDescriptor
     @NotNull
     public Modality getModality() {
-        Modality modality = this.f33819t;
+        Modality modality = this.f33835t;
         if (modality == null) {
             a(24);
         }
@@ -690,7 +690,7 @@ public class PropertyDescriptorImpl extends VariableDescriptorWithInitializerImp
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.VariableDescriptorImpl, kotlin.reflect.jvm.internal.impl.descriptors.CallableDescriptor
     @NotNull
     public Collection<? extends PropertyDescriptor> getOverriddenDescriptors() {
-        Collection<? extends PropertyDescriptor> collection = this.f33821v;
+        Collection<? extends PropertyDescriptor> collection = this.f33837v;
         if (collection == null) {
             collection = Collections.EMPTY_LIST;
         }
@@ -733,7 +733,7 @@ public class PropertyDescriptorImpl extends VariableDescriptorWithInitializerImp
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorWithVisibility
     @NotNull
     public DescriptorVisibility getVisibility() {
-        DescriptorVisibility descriptorVisibility = this.f33820u;
+        DescriptorVisibility descriptorVisibility = this.f33836u;
         if (descriptorVisibility == null) {
             a(25);
         }
@@ -751,7 +751,7 @@ public class PropertyDescriptorImpl extends VariableDescriptorWithInitializerImp
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.VariableDescriptorImpl, kotlin.reflect.jvm.internal.impl.descriptors.VariableDescriptor
     public boolean isConst() {
-        return this.f33825z;
+        return this.f33841z;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.VariableDescriptorWithAccessors
@@ -771,7 +771,7 @@ public class PropertyDescriptorImpl extends VariableDescriptorWithInitializerImp
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.VariableDescriptor
     public boolean isLateInit() {
-        return this.f33824y;
+        return this.f33840y;
     }
 
     public boolean isSetterProjectedOut() {
@@ -794,7 +794,7 @@ public class PropertyDescriptorImpl extends VariableDescriptorWithInitializerImp
         if (collection == null) {
             a(40);
         }
-        this.f33821v = collection;
+        this.f33837v = collection;
     }
 
     public void setSetterProjectedOut(boolean z10) {
@@ -822,7 +822,7 @@ public class PropertyDescriptorImpl extends VariableDescriptorWithInitializerImp
         if (descriptorVisibility == null) {
             a(20);
         }
-        this.f33820u = descriptorVisibility;
+        this.f33836u = descriptorVisibility;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.CallableMemberDescriptor
@@ -858,7 +858,7 @@ public class PropertyDescriptorImpl extends VariableDescriptorWithInitializerImp
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.VariableDescriptorImpl, kotlin.reflect.jvm.internal.impl.descriptors.impl.DeclarationDescriptorNonRootImpl, kotlin.reflect.jvm.internal.impl.descriptors.impl.DeclarationDescriptorImpl, kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptor
     @NotNull
     public PropertyDescriptor getOriginal() {
-        PropertyDescriptor propertyDescriptor = this.f33822w;
+        PropertyDescriptor propertyDescriptor = this.f33838w;
         PropertyDescriptor original = propertyDescriptor == this ? this : propertyDescriptor.getOriginal();
         if (original == null) {
             a(38);

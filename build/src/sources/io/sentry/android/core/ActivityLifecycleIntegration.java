@@ -36,68 +36,68 @@ public final class ActivityLifecycleIntegration implements io.sentry.k1, Closeab
     private final i B;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Application f28741d;
+    private final Application f28757d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final x0 f28742e;
+    private final x0 f28758e;
 
     /* renamed from: i  reason: collision with root package name */
-    private io.sentry.w0 f28743i;
+    private io.sentry.w0 f28759i;
 
     /* renamed from: o  reason: collision with root package name */
-    private SentryAndroidOptions f28744o;
+    private SentryAndroidOptions f28760o;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f28747r;
+    private boolean f28763r;
 
     /* renamed from: u  reason: collision with root package name */
-    private ISpan f28750u;
+    private ISpan f28766u;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f28745p = false;
+    private boolean f28761p = false;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f28746q = false;
+    private boolean f28762q = false;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f28748s = false;
+    private boolean f28764s = false;
 
     /* renamed from: t  reason: collision with root package name */
-    private io.sentry.f0 f28749t = null;
+    private io.sentry.f0 f28765t = null;
 
     /* renamed from: v  reason: collision with root package name */
-    private final WeakHashMap f28751v = new WeakHashMap();
+    private final WeakHashMap f28767v = new WeakHashMap();
 
     /* renamed from: w  reason: collision with root package name */
-    private final WeakHashMap f28752w = new WeakHashMap();
+    private final WeakHashMap f28768w = new WeakHashMap();
 
     /* renamed from: x  reason: collision with root package name */
-    private final WeakHashMap f28753x = new WeakHashMap();
+    private final WeakHashMap f28769x = new WeakHashMap();
 
     /* renamed from: y  reason: collision with root package name */
-    private j5 f28754y = new c7(new Date(0), 0);
+    private j5 f28770y = new c7(new Date(0), 0);
 
     /* renamed from: z  reason: collision with root package name */
-    private Future f28755z = null;
+    private Future f28771z = null;
     private final WeakHashMap A = new WeakHashMap();
     private final io.sentry.util.a C = new io.sentry.util.a();
     private boolean D = false;
     private final io.sentry.util.a E = new io.sentry.util.a();
 
     public ActivityLifecycleIntegration(Application application, x0 x0Var, i iVar) {
-        this.f28741d = (Application) io.sentry.util.y.c(application, "Application is required");
-        this.f28742e = (x0) io.sentry.util.y.c(x0Var, "BuildInfoProvider is required");
+        this.f28757d = (Application) io.sentry.util.y.c(application, "Application is required");
+        this.f28758e = (x0) io.sentry.util.y.c(x0Var, "BuildInfoProvider is required");
         this.B = (i) io.sentry.util.y.c(iVar, "ActivityFramesTracker is required");
         if (x0Var.d() >= 29) {
-            this.f28747r = true;
+            this.f28763r = true;
         }
     }
 
     private void A0() {
-        Future future = this.f28755z;
+        Future future = this.f28771z;
         if (future != null) {
             future.cancel(false);
-            this.f28755z = null;
+            this.f28771z = null;
         }
     }
 
@@ -113,15 +113,15 @@ public final class ActivityLifecycleIntegration implements io.sentry.k1, Closeab
     }
 
     private void C0() {
-        this.f28748s = false;
-        this.f28754y = new c7(new Date(0L), 0L);
-        this.f28753x.clear();
+        this.f28764s = false;
+        this.f28770y = new c7(new Date(0L), 0L);
+        this.f28769x.clear();
     }
 
     private void E0() {
-        j5 f10 = io.sentry.android.core.performance.h.q().m(this.f28744o).f();
-        if (this.f28745p && f10 != null) {
-            J0(this.f28750u, f10);
+        j5 f10 = io.sentry.android.core.performance.h.q().m(this.f28760o).f();
+        if (this.f28761p && f10 != null) {
+            J0(this.f28766u, f10);
         }
     }
 
@@ -136,7 +136,7 @@ public final class ActivityLifecycleIntegration implements io.sentry.k1, Closeab
             activityLifecycleIntegration.B.k(activity, e1Var.f());
             return;
         }
-        SentryAndroidOptions sentryAndroidOptions = activityLifecycleIntegration.f28744o;
+        SentryAndroidOptions sentryAndroidOptions = activityLifecycleIntegration.f28760o;
         if (sentryAndroidOptions != null) {
             sentryAndroidOptions.getLogger().c(SentryLevel.WARNING, "Unable to track activity frames as the Activity %s has been destroyed.", str);
         }
@@ -204,7 +204,7 @@ public final class ActivityLifecycleIntegration implements io.sentry.k1, Closeab
                 a10 = l8.OK;
             }
             e1Var.k(a10);
-            io.sentry.w0 w0Var = this.f28743i;
+            io.sentry.w0 w0Var = this.f28759i;
             if (w0Var != null) {
                 w0Var.o(new b4() { // from class: io.sentry.android.core.n
                     @Override // io.sentry.b4
@@ -230,7 +230,7 @@ public final class ActivityLifecycleIntegration implements io.sentry.k1, Closeab
         E0();
         io.sentry.a1 a10 = this.E.a();
         try {
-            SentryAndroidOptions sentryAndroidOptions = this.f28744o;
+            SentryAndroidOptions sentryAndroidOptions = this.f28760o;
             if (sentryAndroidOptions != null && iSpan2 != null) {
                 j5 now = sentryAndroidOptions.getDateProvider().now();
                 long millis = TimeUnit.NANOSECONDS.toMillis(now.d(iSpan2.t()));
@@ -289,18 +289,18 @@ public final class ActivityLifecycleIntegration implements io.sentry.k1, Closeab
         k8 k8Var;
         boolean z10;
         final WeakReference weakReference = new WeakReference(activity);
-        if (this.f28743i != null && !E1(activity)) {
-            if (!this.f28745p) {
+        if (this.f28759i != null && !E1(activity)) {
+            if (!this.f28761p) {
                 this.A.put(activity, a3.u());
-                if (this.f28744o.isEnableAutoTraceIdGeneration()) {
-                    io.sentry.util.j0.h(this.f28743i);
+                if (this.f28760o.isEnableAutoTraceIdGeneration()) {
+                    io.sentry.util.j0.h(this.f28759i);
                     return;
                 }
                 return;
             }
             b2();
             final String X0 = X0(activity);
-            io.sentry.android.core.performance.i m10 = io.sentry.android.core.performance.h.q().m(this.f28744o);
+            io.sentry.android.core.performance.i m10 = io.sentry.android.core.performance.h.q().m(this.f28760o);
             boolean z11 = false;
             s8 s8Var = null;
             if (e1.s() && m10.q()) {
@@ -317,15 +317,15 @@ public final class ActivityLifecycleIntegration implements io.sentry.k1, Closeab
                 j5Var = null;
             }
             v8 v8Var = new v8();
-            long deadlineTimeout = this.f28744o.getDeadlineTimeout();
+            long deadlineTimeout = this.f28760o.getDeadlineTimeout();
             if (deadlineTimeout <= 0) {
                 valueOf = null;
             } else {
                 valueOf = Long.valueOf(deadlineTimeout);
             }
             v8Var.s(valueOf);
-            if (this.f28744o.isEnableActivityLifecycleTracingAutoFinish()) {
-                v8Var.t(this.f28744o.getIdleTimeout());
+            if (this.f28760o.isEnableActivityLifecycleTracingAutoFinish()) {
+                v8Var.t(this.f28760o.getIdleTimeout());
                 v8Var.i(true);
             }
             v8Var.v(true);
@@ -335,13 +335,13 @@ public final class ActivityLifecycleIntegration implements io.sentry.k1, Closeab
                     ActivityLifecycleIntegration.F(ActivityLifecycleIntegration.this, weakReference, X0, e1Var2);
                 }
             });
-            if (!this.f28748s && j5Var != null && bool != null) {
+            if (!this.f28764s && j5Var != null && bool != null) {
                 s8 k10 = io.sentry.android.core.performance.h.q().k();
                 io.sentry.android.core.performance.h.q().y(null);
                 s8Var = k10;
                 j5Var2 = j5Var;
             } else {
-                j5Var2 = this.f28754y;
+                j5Var2 = this.f28770y;
             }
             v8Var.h(j5Var2);
             if (s8Var != null) {
@@ -349,13 +349,13 @@ public final class ActivityLifecycleIntegration implements io.sentry.k1, Closeab
             }
             v8Var.r(z11);
             W1(v8Var);
-            io.sentry.e1 z12 = this.f28743i.z(new t8(X0, io.sentry.protocol.g0.COMPONENT, "ui.load", s8Var), v8Var);
+            io.sentry.e1 z12 = this.f28759i.z(new t8(X0, io.sentry.protocol.g0.COMPONENT, "ui.load", s8Var), v8Var);
             k8 k8Var2 = new k8();
             W1(k8Var2);
-            if (!this.f28748s && j5Var != null && bool != null) {
+            if (!this.f28764s && j5Var != null && bool != null) {
                 e1Var = z12;
                 k8Var = k8Var2;
-                this.f28750u = e1Var.o(d1(bool.booleanValue()), Y0(bool.booleanValue()), j5Var, io.sentry.j1.SENTRY, k8Var2);
+                this.f28766u = e1Var.o(d1(bool.booleanValue()), Y0(bool.booleanValue()), j5Var, io.sentry.j1.SENTRY, k8Var2);
                 E0();
             } else {
                 e1Var = z12;
@@ -365,22 +365,22 @@ public final class ActivityLifecycleIntegration implements io.sentry.k1, Closeab
             io.sentry.j1 j1Var = io.sentry.j1.SENTRY;
             j5 j5Var3 = j5Var2;
             final ISpan o10 = e1Var.o("ui.load.initial_display", A1, j5Var3, j1Var, k8Var);
-            this.f28751v.put(activity, o10);
-            if (this.f28746q && this.f28749t != null && this.f28744o != null) {
+            this.f28767v.put(activity, o10);
+            if (this.f28762q && this.f28765t != null && this.f28760o != null) {
                 final ISpan o11 = e1Var.o("ui.load.full_display", y1(X0), j5Var3, j1Var, k8Var);
                 try {
-                    this.f28752w.put(activity, o11);
-                    this.f28755z = this.f28744o.getExecutorService().c(new Runnable() { // from class: io.sentry.android.core.q
+                    this.f28768w.put(activity, o11);
+                    this.f28771z = this.f28760o.getExecutorService().c(new Runnable() { // from class: io.sentry.android.core.q
                         @Override // java.lang.Runnable
                         public final void run() {
                             ActivityLifecycleIntegration.this.F0(o11, o10);
                         }
                     }, 25000L);
                 } catch (RejectedExecutionException e10) {
-                    this.f28744o.getLogger().b(SentryLevel.ERROR, "Failed to call the executor. Time to full display span will not be finished automatically. Did you call Sentry.close()?", e10);
+                    this.f28760o.getLogger().b(SentryLevel.ERROR, "Failed to call the executor. Time to full display span will not be finished automatically. Did you call Sentry.close()?", e10);
                 }
             }
-            this.f28743i.o(new b4() { // from class: io.sentry.android.core.r
+            this.f28759i.o(new b4() { // from class: io.sentry.android.core.r
                 @Override // io.sentry.b4
                 public final void a(IScope iScope) {
                     ActivityLifecycleIntegration.this.V(iScope, e1Var);
@@ -392,12 +392,12 @@ public final class ActivityLifecycleIntegration implements io.sentry.k1, Closeab
 
     private void b2() {
         for (Map.Entry entry : this.A.entrySet()) {
-            U0((io.sentry.e1) entry.getValue(), (ISpan) this.f28751v.get(entry.getKey()), (ISpan) this.f28752w.get(entry.getKey()));
+            U0((io.sentry.e1) entry.getValue(), (ISpan) this.f28767v.get(entry.getKey()), (ISpan) this.f28768w.get(entry.getKey()));
         }
     }
 
     private void c2(Activity activity, boolean z10) {
-        if (this.f28745p && z10) {
+        if (this.f28761p && z10) {
             U0((io.sentry.e1) this.A.get(activity), null, null);
         }
     }
@@ -415,7 +415,7 @@ public final class ActivityLifecycleIntegration implements io.sentry.k1, Closeab
             iScope.A(e1Var);
             return;
         }
-        SentryAndroidOptions sentryAndroidOptions = activityLifecycleIntegration.f28744o;
+        SentryAndroidOptions sentryAndroidOptions = activityLifecycleIntegration.f28760o;
         if (sentryAndroidOptions != null) {
             sentryAndroidOptions.getLogger().c(SentryLevel.DEBUG, "Transaction '%s' won't be bound to the Scope since there's one already in there.", e1Var.getName());
         }
@@ -455,8 +455,8 @@ public final class ActivityLifecycleIntegration implements io.sentry.k1, Closeab
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f28741d.unregisterActivityLifecycleCallbacks(this);
-        SentryAndroidOptions sentryAndroidOptions = this.f28744o;
+        this.f28757d.unregisterActivityLifecycleCallbacks(this);
+        SentryAndroidOptions sentryAndroidOptions = this.f28760o;
         if (sentryAndroidOptions != null) {
             sentryAndroidOptions.getLogger().c(SentryLevel.DEBUG, "ActivityLifecycleIntegration removed.", new Object[0]);
         }
@@ -471,13 +471,13 @@ public final class ActivityLifecycleIntegration implements io.sentry.k1, Closeab
         } else {
             sentryAndroidOptions = null;
         }
-        this.f28744o = (SentryAndroidOptions) io.sentry.util.y.c(sentryAndroidOptions, "SentryAndroidOptions is required");
-        this.f28743i = (io.sentry.w0) io.sentry.util.y.c(w0Var, "Scopes are required");
-        this.f28745p = B1(this.f28744o);
-        this.f28749t = this.f28744o.getFullyDisplayedReporter();
-        this.f28746q = this.f28744o.isEnableTimeToFullDisplayTracing();
-        this.f28741d.registerActivityLifecycleCallbacks(this);
-        this.f28744o.getLogger().c(SentryLevel.DEBUG, "ActivityLifecycleIntegration installed.", new Object[0]);
+        this.f28760o = (SentryAndroidOptions) io.sentry.util.y.c(sentryAndroidOptions, "SentryAndroidOptions is required");
+        this.f28759i = (io.sentry.w0) io.sentry.util.y.c(w0Var, "Scopes are required");
+        this.f28761p = B1(this.f28760o);
+        this.f28765t = this.f28760o.getFullyDisplayedReporter();
+        this.f28762q = this.f28760o.isEnableTimeToFullDisplayTracing();
+        this.f28757d.registerActivityLifecycleCallbacks(this);
+        this.f28760o.getLogger().c(SentryLevel.DEBUG, "ActivityLifecycleIntegration installed.", new Object[0]);
         io.sentry.util.p.a("ActivityLifecycle");
     }
 
@@ -485,14 +485,14 @@ public final class ActivityLifecycleIntegration implements io.sentry.k1, Closeab
     public void onActivityCreated(Activity activity, Bundle bundle) {
         io.sentry.f0 f0Var;
         SentryAndroidOptions sentryAndroidOptions;
-        if (!this.f28747r) {
+        if (!this.f28763r) {
             onActivityPreCreated(activity, bundle);
         }
         io.sentry.a1 a10 = this.C.a();
         try {
-            if (this.f28743i != null && (sentryAndroidOptions = this.f28744o) != null && sentryAndroidOptions.isEnableScreenTracking()) {
+            if (this.f28759i != null && (sentryAndroidOptions = this.f28760o) != null && sentryAndroidOptions.isEnableScreenTracking()) {
                 final String a11 = io.sentry.android.core.internal.util.k.a(activity);
-                this.f28743i.o(new b4() { // from class: io.sentry.android.core.j
+                this.f28759i.o(new b4() { // from class: io.sentry.android.core.j
                     @Override // io.sentry.b4
                     public final void a(IScope iScope) {
                         iScope.L(a11);
@@ -500,10 +500,10 @@ public final class ActivityLifecycleIntegration implements io.sentry.k1, Closeab
                 });
             }
             Y1(activity);
-            final ISpan iSpan = (ISpan) this.f28751v.get(activity);
-            final ISpan iSpan2 = (ISpan) this.f28752w.get(activity);
-            this.f28748s = true;
-            if (this.f28745p && iSpan != null && iSpan2 != null && (f0Var = this.f28749t) != null) {
+            final ISpan iSpan = (ISpan) this.f28767v.get(activity);
+            final ISpan iSpan2 = (ISpan) this.f28768w.get(activity);
+            this.f28764s = true;
+            if (this.f28761p && iSpan != null && iSpan2 != null && (f0Var = this.f28765t) != null) {
                 f0Var.b(new f0.a() { // from class: io.sentry.android.core.k
                 });
             }
@@ -526,20 +526,20 @@ public final class ActivityLifecycleIntegration implements io.sentry.k1, Closeab
     public void onActivityDestroyed(Activity activity) {
         io.sentry.a1 a10 = this.C.a();
         try {
-            io.sentry.android.core.performance.b bVar = (io.sentry.android.core.performance.b) this.f28753x.remove(activity);
+            io.sentry.android.core.performance.b bVar = (io.sentry.android.core.performance.b) this.f28769x.remove(activity);
             if (bVar != null) {
                 bVar.a();
             }
-            if (this.f28745p) {
-                R0(this.f28750u, l8.CANCELLED);
-                ISpan iSpan = (ISpan) this.f28751v.get(activity);
+            if (this.f28761p) {
+                R0(this.f28766u, l8.CANCELLED);
+                ISpan iSpan = (ISpan) this.f28767v.get(activity);
                 R0(iSpan, l8.DEADLINE_EXCEEDED);
-                F0((ISpan) this.f28752w.get(activity), iSpan);
+                F0((ISpan) this.f28768w.get(activity), iSpan);
                 A0();
                 c2(activity, true);
-                this.f28750u = null;
-                this.f28751v.remove(activity);
-                this.f28752w.remove(activity);
+                this.f28766u = null;
+                this.f28767v.remove(activity);
+                this.f28768w.remove(activity);
             }
             this.A.remove(activity);
             if (this.A.isEmpty() && !activity.isChangingConfigurations()) {
@@ -564,7 +564,7 @@ public final class ActivityLifecycleIntegration implements io.sentry.k1, Closeab
     public void onActivityPaused(Activity activity) {
         io.sentry.a1 a10 = this.C.a();
         try {
-            if (!this.f28747r) {
+            if (!this.f28763r) {
                 onActivityPrePaused(activity);
             }
             if (a10 != null) {
@@ -584,9 +584,9 @@ public final class ActivityLifecycleIntegration implements io.sentry.k1, Closeab
 
     @Override // android.app.Application.ActivityLifecycleCallbacks
     public void onActivityPostCreated(Activity activity, Bundle bundle) {
-        io.sentry.android.core.performance.b bVar = (io.sentry.android.core.performance.b) this.f28753x.get(activity);
+        io.sentry.android.core.performance.b bVar = (io.sentry.android.core.performance.b) this.f28769x.get(activity);
         if (bVar != null) {
-            ISpan iSpan = this.f28750u;
+            ISpan iSpan = this.f28766u;
             if (iSpan == null) {
                 iSpan = (ISpan) this.A.get(activity);
             }
@@ -600,9 +600,9 @@ public final class ActivityLifecycleIntegration implements io.sentry.k1, Closeab
 
     @Override // android.app.Application.ActivityLifecycleCallbacks
     public void onActivityPostStarted(Activity activity) {
-        io.sentry.android.core.performance.b bVar = (io.sentry.android.core.performance.b) this.f28753x.get(activity);
+        io.sentry.android.core.performance.b bVar = (io.sentry.android.core.performance.b) this.f28769x.get(activity);
         if (bVar != null) {
-            ISpan iSpan = this.f28750u;
+            ISpan iSpan = this.f28766u;
             if (iSpan == null) {
                 iSpan = (ISpan) this.A.get(activity);
             }
@@ -615,39 +615,39 @@ public final class ActivityLifecycleIntegration implements io.sentry.k1, Closeab
     public void onActivityPreCreated(Activity activity, Bundle bundle) {
         j5 a10;
         io.sentry.android.core.performance.b bVar = new io.sentry.android.core.performance.b(activity.getClass().getName());
-        this.f28753x.put(activity, bVar);
-        if (this.f28748s) {
+        this.f28769x.put(activity, bVar);
+        if (this.f28764s) {
             return;
         }
-        io.sentry.w0 w0Var = this.f28743i;
+        io.sentry.w0 w0Var = this.f28759i;
         if (w0Var != null) {
             a10 = w0Var.b().getDateProvider().now();
         } else {
             a10 = x.a();
         }
-        this.f28754y = a10;
+        this.f28770y = a10;
         bVar.g(a10);
     }
 
     @Override // android.app.Application.ActivityLifecycleCallbacks
     public void onActivityPrePaused(Activity activity) {
         j5 a10;
-        this.f28748s = true;
-        io.sentry.w0 w0Var = this.f28743i;
+        this.f28764s = true;
+        io.sentry.w0 w0Var = this.f28759i;
         if (w0Var != null) {
             a10 = w0Var.b().getDateProvider().now();
         } else {
             a10 = x.a();
         }
-        this.f28754y = a10;
+        this.f28770y = a10;
     }
 
     @Override // android.app.Application.ActivityLifecycleCallbacks
     public void onActivityPreStarted(Activity activity) {
         j5 a10;
-        io.sentry.android.core.performance.b bVar = (io.sentry.android.core.performance.b) this.f28753x.get(activity);
+        io.sentry.android.core.performance.b bVar = (io.sentry.android.core.performance.b) this.f28769x.get(activity);
         if (bVar != null) {
-            SentryAndroidOptions sentryAndroidOptions = this.f28744o;
+            SentryAndroidOptions sentryAndroidOptions = this.f28760o;
             if (sentryAndroidOptions != null) {
                 a10 = sentryAndroidOptions.getDateProvider().now();
             } else {
@@ -661,19 +661,19 @@ public final class ActivityLifecycleIntegration implements io.sentry.k1, Closeab
     public void onActivityResumed(Activity activity) {
         io.sentry.a1 a10 = this.C.a();
         try {
-            if (!this.f28747r) {
+            if (!this.f28763r) {
                 onActivityPostStarted(activity);
             }
-            if (this.f28745p) {
-                final ISpan iSpan = (ISpan) this.f28751v.get(activity);
-                final ISpan iSpan2 = (ISpan) this.f28752w.get(activity);
+            if (this.f28761p) {
+                final ISpan iSpan = (ISpan) this.f28767v.get(activity);
+                final ISpan iSpan2 = (ISpan) this.f28768w.get(activity);
                 if (activity.getWindow() != null) {
                     io.sentry.android.core.internal.util.r.d(activity, new Runnable() { // from class: io.sentry.android.core.l
                         @Override // java.lang.Runnable
                         public final void run() {
                             ActivityLifecycleIntegration.this.U1(iSpan2, iSpan);
                         }
-                    }, this.f28742e);
+                    }, this.f28758e);
                 } else {
                     new Handler(Looper.getMainLooper()).post(new Runnable() { // from class: io.sentry.android.core.m
                         @Override // java.lang.Runnable
@@ -706,11 +706,11 @@ public final class ActivityLifecycleIntegration implements io.sentry.k1, Closeab
     public void onActivityStarted(Activity activity) {
         io.sentry.a1 a10 = this.C.a();
         try {
-            if (!this.f28747r) {
+            if (!this.f28763r) {
                 onActivityPostCreated(activity, null);
                 onActivityPreStarted(activity);
             }
-            if (this.f28745p) {
+            if (this.f28761p) {
                 this.B.f(activity);
             }
             if (a10 != null) {

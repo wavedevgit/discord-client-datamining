@@ -7,16 +7,16 @@ import wg.g;
 final /* synthetic */ class b implements g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final /* synthetic */ Function1 f48419a;
+    private final /* synthetic */ Function1 f48435a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(Function1 function) {
         Intrinsics.checkNotNullParameter(function, "function");
-        this.f48419a = function;
+        this.f48435a = function;
     }
 
     @Override // wg.g
     public final /* synthetic */ void onSuccess(Object obj) {
-        this.f48419a.invoke(obj);
+        this.f48435a.invoke(obj);
     }
 }

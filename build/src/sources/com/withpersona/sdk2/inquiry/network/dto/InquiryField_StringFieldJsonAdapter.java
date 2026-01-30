@@ -75,7 +75,7 @@ public final class InquiryField_StringFieldJsonAdapter extends h {
         }
         Constructor<InquiryField.StringField> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = InquiryField.StringField.class.getDeclaredConstructor(String.class, String.class, Integer.TYPE, sm.c.f49081c);
+            constructor = InquiryField.StringField.class.getDeclaredConstructor(String.class, String.class, Integer.TYPE, sm.c.f49097c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

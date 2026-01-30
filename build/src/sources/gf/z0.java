@@ -10,12 +10,12 @@ import gf.c;
 public final class z0 extends hg.g {
 
     /* renamed from: b  reason: collision with root package name */
-    final /* synthetic */ c f26891b;
+    final /* synthetic */ c f26907b;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public z0(c cVar, Looper looper) {
         super(looper);
-        this.f26891b = cVar;
+        this.f26907b = cVar;
     }
 
     private static final void a(Message message) {
@@ -41,7 +41,7 @@ public final class z0 extends hg.g {
         com.google.android.gms.common.b bVar3;
         com.google.android.gms.common.b bVar4;
         boolean z10;
-        if (this.f26891b.N.get() != message.arg1) {
+        if (this.f26907b.N.get() != message.arg1) {
             if (b(message)) {
                 a(message);
                 return;
@@ -49,39 +49,39 @@ public final class z0 extends hg.g {
             return;
         }
         int i10 = message.what;
-        if ((i10 != 1 && i10 != 7 && ((i10 != 4 || this.f26891b.s()) && message.what != 5)) || this.f26891b.c()) {
+        if ((i10 != 1 && i10 != 7 && ((i10 != 4 || this.f26907b.s()) && message.what != 5)) || this.f26907b.c()) {
             int i11 = message.what;
             PendingIntent pendingIntent = null;
             if (i11 == 4) {
-                this.f26891b.K = new com.google.android.gms.common.b(message.arg2);
-                if (c.f0(this.f26891b)) {
-                    c cVar = this.f26891b;
+                this.f26907b.K = new com.google.android.gms.common.b(message.arg2);
+                if (c.f0(this.f26907b)) {
+                    c cVar = this.f26907b;
                     z10 = cVar.L;
                     if (!z10) {
                         cVar.g0(3, null);
                         return;
                     }
                 }
-                c cVar2 = this.f26891b;
+                c cVar2 = this.f26907b;
                 bVar3 = cVar2.K;
                 if (bVar3 != null) {
                     bVar4 = cVar2.K;
                 } else {
                     bVar4 = new com.google.android.gms.common.b(8);
                 }
-                this.f26891b.A.a(bVar4);
-                this.f26891b.K(bVar4);
+                this.f26907b.A.a(bVar4);
+                this.f26907b.K(bVar4);
                 return;
             } else if (i11 == 5) {
-                c cVar3 = this.f26891b;
+                c cVar3 = this.f26907b;
                 bVar = cVar3.K;
                 if (bVar != null) {
                     bVar2 = cVar3.K;
                 } else {
                     bVar2 = new com.google.android.gms.common.b(8);
                 }
-                this.f26891b.A.a(bVar2);
-                this.f26891b.K(bVar2);
+                this.f26907b.A.a(bVar2);
+                this.f26907b.K(bVar2);
                 return;
             } else if (i11 == 3) {
                 Object obj = message.obj;
@@ -89,21 +89,21 @@ public final class z0 extends hg.g {
                     pendingIntent = (PendingIntent) obj;
                 }
                 com.google.android.gms.common.b bVar5 = new com.google.android.gms.common.b(message.arg2, pendingIntent);
-                this.f26891b.A.a(bVar5);
-                this.f26891b.K(bVar5);
+                this.f26907b.A.a(bVar5);
+                this.f26907b.K(bVar5);
                 return;
             } else if (i11 == 6) {
-                this.f26891b.g0(5, null);
-                c cVar4 = this.f26891b;
+                this.f26907b.g0(5, null);
+                c cVar4 = this.f26907b;
                 aVar = cVar4.F;
                 if (aVar != null) {
                     aVar2 = cVar4.F;
                     aVar2.f(message.arg2);
                 }
-                this.f26891b.L(message.arg2);
-                c.e0(this.f26891b, 5, 1, null);
+                this.f26907b.L(message.arg2);
+                c.e0(this.f26907b, 5, 1, null);
                 return;
-            } else if (i11 == 2 && !this.f26891b.a()) {
+            } else if (i11 == 2 && !this.f26907b.a()) {
                 a(message);
                 return;
             } else if (b(message)) {

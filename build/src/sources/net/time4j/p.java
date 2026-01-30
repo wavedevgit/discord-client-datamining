@@ -9,32 +9,32 @@ public final class p extends a implements c0, kt.l, mt.e {
     private static final long serialVersionUID = 2055272540517425102L;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient Class f40777o;
+    private final transient Class f40793o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final transient Enum f40778p;
+    private final transient Enum f40794p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final transient Enum f40779q;
+    private final transient Enum f40795q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final transient int f40780r;
+    private final transient int f40796r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final transient char f40781s;
+    private final transient char f40797s;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p(String str, Class cls, Enum r32, Enum r42, int i10, char c10) {
         super(str);
-        this.f40777o = cls;
-        this.f40778p = r32;
-        this.f40779q = r42;
-        this.f40780r = i10;
-        this.f40781s = c10;
+        this.f40793o = cls;
+        this.f40794p = r32;
+        this.f40795q = r42;
+        this.f40796r = i10;
+        this.f40797s = c10;
     }
 
     private kt.s G(Locale locale, kt.v vVar, kt.m mVar) {
-        switch (this.f40780r) {
+        switch (this.f40796r) {
             case 101:
                 return kt.b.d(locale).l(vVar, mVar);
             case 102:
@@ -67,18 +67,18 @@ public final class p extends a implements c0, kt.l, mt.e {
     @Override // jt.p
     /* renamed from: H */
     public Enum e() {
-        return this.f40779q;
+        return this.f40795q;
     }
 
     @Override // jt.p
     /* renamed from: I */
     public Enum A() {
-        return this.f40778p;
+        return this.f40794p;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int J() {
-        return this.f40780r;
+        return this.f40796r;
     }
 
     public int K(Enum r12) {
@@ -106,13 +106,13 @@ public final class p extends a implements c0, kt.l, mt.e {
     /* renamed from: M */
     public Enum z(CharSequence charSequence, ParsePosition parsePosition, jt.d dVar) {
         int index = parsePosition.getIndex();
-        Locale locale = (Locale) dVar.b(kt.a.f36530c, Locale.ROOT);
-        kt.v vVar = (kt.v) dVar.b(kt.a.f36534g, kt.v.WIDE);
-        jt.c cVar = kt.a.f36535h;
+        Locale locale = (Locale) dVar.b(kt.a.f36546c, Locale.ROOT);
+        kt.v vVar = (kt.v) dVar.b(kt.a.f36550g, kt.v.WIDE);
+        jt.c cVar = kt.a.f36551h;
         kt.m mVar = kt.m.FORMAT;
         kt.m mVar2 = (kt.m) dVar.b(cVar, mVar);
         Enum c10 = G(locale, vVar, mVar2).c(charSequence, parsePosition, getType(), dVar);
-        if (c10 == null && ((Boolean) dVar.b(kt.a.f36538k, Boolean.TRUE)).booleanValue()) {
+        if (c10 == null && ((Boolean) dVar.b(kt.a.f36554k, Boolean.TRUE)).booleanValue()) {
             parsePosition.setErrorIndex(-1);
             parsePosition.setIndex(index);
             if (mVar2 == mVar) {
@@ -131,7 +131,7 @@ public final class p extends a implements c0, kt.l, mt.e {
 
     @Override // jt.e, jt.p
     public char d() {
-        return this.f40781s;
+        return this.f40797s;
     }
 
     @Override // mt.e
@@ -141,7 +141,7 @@ public final class p extends a implements c0, kt.l, mt.e {
 
     @Override // jt.p
     public Class getType() {
-        return this.f40777o;
+        return this.f40793o;
     }
 
     @Override // kt.l
@@ -158,7 +158,7 @@ public final class p extends a implements c0, kt.l, mt.e {
 
     @Override // kt.t
     public void u(jt.o oVar, Appendable appendable, jt.d dVar) {
-        appendable.append(G((Locale) dVar.b(kt.a.f36530c, Locale.ROOT), (kt.v) dVar.b(kt.a.f36534g, kt.v.WIDE), (kt.m) dVar.b(kt.a.f36535h, kt.m.FORMAT)).f((Enum) oVar.p(this)));
+        appendable.append(G((Locale) dVar.b(kt.a.f36546c, Locale.ROOT), (kt.v) dVar.b(kt.a.f36550g, kt.v.WIDE), (kt.m) dVar.b(kt.a.f36551h, kt.m.FORMAT)).f((Enum) oVar.p(this)));
     }
 
     @Override // jt.p

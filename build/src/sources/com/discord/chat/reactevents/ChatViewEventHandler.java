@@ -56,7 +56,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
             @Override // kotlin.jvm.functions.Function6
             public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3, Object obj4, Object obj5, Object obj6) {
                 m730invokeeTS4JUY(((MessageId) obj).m1093unboximpl(), ((ChannelId) obj2).m1067unboximpl(), (Integer) obj3, (MediaType) obj4, (String) obj5, (Integer) obj6);
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
 
             /* renamed from: invoke-eTS4JUY  reason: not valid java name */
@@ -79,7 +79,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
             @Override // kotlin.jvm.functions.Function2
             public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
                 m731invokepfaIj0E(((MessageId) obj).m1093unboximpl(), ((ChannelId) obj2).m1067unboximpl());
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
 
             /* renamed from: invoke-pfaIj0E  reason: not valid java name */
@@ -94,7 +94,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
             @Override // kotlin.jvm.functions.Function2
             public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
                 m729invokepfaIj0E(((MessageId) obj).m1093unboximpl(), ((ChannelId) obj2).m1067unboximpl());
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
 
             /* renamed from: invoke-pfaIj0E  reason: not valid java name */
@@ -112,7 +112,7 @@ public class ChatViewEventHandler implements ChatEventHandler {
         Intrinsics.checkNotNullParameter(event, "event");
         Intrinsics.checkNotNull(context, "null cannot be cast to non-null type com.facebook.react.bridge.ReactContext");
         reactEvents.emitEvent((ReactContext) context, ((Number) function0.invoke()).intValue(), event);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // com.discord.chat.presentation.events.ChatEventHandler

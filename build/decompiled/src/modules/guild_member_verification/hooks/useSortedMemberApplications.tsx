@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2[0] = var6;
         var2[1] = var5;
         var1 = function() { // Environment: var1
-            _fun105339: for (var _fun105339_ip = 0;;) switch (_fun105339_ip) {
+            _fun105601: for (var _fun105601_ip = 0;;) switch (_fun105601_ip) {
                 case 0:
                     var2 = _closure2_slot2;
                     var4 = _closure1_slot0;
@@ -81,13 +81,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.GuildJoinRequestSortOrders;
                     var0 = var0.TIMESTAMP_DESC;
                     if (!(var2 !== var0)) {
-                        _fun105339_ip = 54;
-                        continue _fun105339
+                        _fun105601_ip = 54;
+                        continue _fun105601
                     }
                 case 48:
                     var0 = _closure2_slot3;
-                    _fun105339_ip = 81;
-                    continue _fun105339;
+                    _fun105601_ip = 81;
+                    continue _fun105601;
                 case 54:
                     var6 = _closure2_slot3;
                     var2 = new Array(0);
@@ -106,4 +106,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useSortedMemberApplications = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 6485, 566, 3175, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 6488, 566, 3175, 2]);

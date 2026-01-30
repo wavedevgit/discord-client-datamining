@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var7)(var3);
     var _closure1_slot6 = var3;
     var3 = function(arg0) { // Original name: WarningBox, environment: var1
-        _fun56573: for (var _fun56573_ip = 0;;) switch (_fun56573_ip) {
+        _fun56617: for (var _fun56617_ip = 0;;) switch (_fun56617_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.canStartAuthorization;
@@ -70,8 +70,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = null;
                 var0 = null;
                 if (var2) {
-                    _fun56573_ip = 260;
-                    continue _fun56573
+                    _fun56617_ip = 260;
+                    continue _fun56617
                 }
             case 49:
                 var3 = _closure1_slot4;
@@ -95,8 +95,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var7.bind(var4)(var8);
                 var9 = var8.intl;
                 if (var1) {
-                    _fun56573_ip = 183;
-                    continue _fun56573
+                    _fun56617_ip = 183;
+                    continue _fun56617
                 }
             case 139:
                 var14 = var9.format;
@@ -108,8 +108,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var14.bind(var9)(var8, var1);
                 var5.children = var1;
                 var1 = var5;
-                _fun56573_ip = 254;
-                continue _fun56573;
+                _fun56617_ip = 254;
+                continue _fun56617;
             case 183:
                 var8 = var9.formatToPlainString;
                 var6 = var13[var6];
@@ -122,8 +122,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var10 == var11;
                 var10 = undefined;
                 if (var12) {
-                    _fun56573_ip = 236;
-                    continue _fun56573
+                    _fun56617_ip = 236;
+                    continue _fun56617
                 }
             case 231:
                 var10 = var11.name;
@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/slayer_storefront/native/SlayerStorefrontGiftPreview.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: SlayerStorefrontGiftPreview, environment: var1
-        _fun56574: for (var _fun56574_ip = 0;;) switch (_fun56574_ip) {
+        _fun56618: for (var _fun56618_ip = 0;;) switch (_fun56618_ip) {
             case 0:
                 var0 = arg0;
                 var10 = var0.sku;
@@ -161,8 +161,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var18 == var10;
                 var0 = null;
                 if (var1) {
-                    _fun56574_ip = 316;
-                    continue _fun56574
+                    _fun56618_ip = 316;
+                    continue _fun56618
                 }
             case 59:
                 var3 = _closure1_slot5;
@@ -208,8 +208,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var18 == var9;
                 var18 = undefined;
                 if (var19) {
-                    _fun56574_ip = 242;
-                    continue _fun56574
+                    _fun56618_ip = 242;
+                    continue _fun56618
                 }
             case 237:
                 var18 = var9.name;
@@ -236,4 +236,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 6849, 3895, 1234, 6851, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 6852, 3901, 1234, 6854, 2]);

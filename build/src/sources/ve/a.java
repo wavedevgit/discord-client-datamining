@@ -14,113 +14,113 @@ public final class a extends hf.a {
     public static final Parcelable.Creator<a> CREATOR = new k();
 
     /* renamed from: d  reason: collision with root package name */
-    private final e f51049d;
+    private final e f51065d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final b f51050e;
+    private final b f51066e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f51051i;
+    private final String f51067i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final boolean f51052o;
+    private final boolean f51068o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final int f51053p;
+    private final int f51069p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final d f51054q;
+    private final d f51070q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final c f51055r;
+    private final c f51071r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final boolean f51056s;
+    private final boolean f51072s;
 
     /* renamed from: ve.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class C0674a {
 
         /* renamed from: a  reason: collision with root package name */
-        private e f51057a;
+        private e f51073a;
 
         /* renamed from: b  reason: collision with root package name */
-        private b f51058b;
+        private b f51074b;
 
         /* renamed from: c  reason: collision with root package name */
-        private d f51059c;
+        private d f51075c;
 
         /* renamed from: d  reason: collision with root package name */
-        private c f51060d;
+        private c f51076d;
 
         /* renamed from: e  reason: collision with root package name */
-        private String f51061e;
+        private String f51077e;
 
         /* renamed from: f  reason: collision with root package name */
-        private boolean f51062f;
+        private boolean f51078f;
 
         /* renamed from: g  reason: collision with root package name */
-        private int f51063g;
+        private int f51079g;
 
         /* renamed from: h  reason: collision with root package name */
-        private boolean f51064h;
+        private boolean f51080h;
 
         public C0674a() {
             e.C0678a b10 = e.b();
             b10.b(false);
-            this.f51057a = b10.a();
+            this.f51073a = b10.a();
             b.C0675a b11 = b.b();
             b11.b(false);
-            this.f51058b = b11.a();
+            this.f51074b = b11.a();
             d.C0677a b12 = d.b();
             b12.d(false);
-            this.f51059c = b12.a();
+            this.f51075c = b12.a();
             c.C0676a b13 = c.b();
             b13.c(false);
-            this.f51060d = b13.a();
+            this.f51076d = b13.a();
         }
 
         public a a() {
-            return new a(this.f51057a, this.f51058b, this.f51061e, this.f51062f, this.f51063g, this.f51059c, this.f51060d, this.f51064h);
+            return new a(this.f51073a, this.f51074b, this.f51077e, this.f51078f, this.f51079g, this.f51075c, this.f51076d, this.f51080h);
         }
 
         public C0674a b(boolean z10) {
-            this.f51062f = z10;
+            this.f51078f = z10;
             return this;
         }
 
         public C0674a c(b bVar) {
-            this.f51058b = (b) gf.q.l(bVar);
+            this.f51074b = (b) gf.q.l(bVar);
             return this;
         }
 
         public C0674a d(c cVar) {
-            this.f51060d = (c) gf.q.l(cVar);
+            this.f51076d = (c) gf.q.l(cVar);
             return this;
         }
 
         public C0674a e(d dVar) {
-            this.f51059c = (d) gf.q.l(dVar);
+            this.f51075c = (d) gf.q.l(dVar);
             return this;
         }
 
         public C0674a f(e eVar) {
-            this.f51057a = (e) gf.q.l(eVar);
+            this.f51073a = (e) gf.q.l(eVar);
             return this;
         }
 
         public C0674a g(boolean z10) {
-            this.f51064h = z10;
+            this.f51080h = z10;
             return this;
         }
 
         public final C0674a h(String str) {
-            this.f51061e = str;
+            this.f51077e = str;
             return this;
         }
 
         public final C0674a i(int i10) {
-            this.f51063g = i10;
+            this.f51079g = i10;
             return this;
         }
     }
@@ -131,57 +131,57 @@ public final class a extends hf.a {
         public static final Parcelable.Creator<b> CREATOR = new o();
 
         /* renamed from: d  reason: collision with root package name */
-        private final boolean f51065d;
+        private final boolean f51081d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f51066e;
+        private final String f51082e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final String f51067i;
+        private final String f51083i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final boolean f51068o;
+        private final boolean f51084o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final String f51069p;
+        private final String f51085p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final List f51070q;
+        private final List f51086q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final boolean f51071r;
+        private final boolean f51087r;
 
         /* renamed from: ve.a$b$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
         public static final class C0675a {
 
             /* renamed from: a  reason: collision with root package name */
-            private boolean f51072a = false;
+            private boolean f51088a = false;
 
             /* renamed from: b  reason: collision with root package name */
-            private String f51073b = null;
+            private String f51089b = null;
 
             /* renamed from: c  reason: collision with root package name */
-            private String f51074c = null;
+            private String f51090c = null;
 
             /* renamed from: d  reason: collision with root package name */
-            private boolean f51075d = true;
+            private boolean f51091d = true;
 
             /* renamed from: e  reason: collision with root package name */
-            private String f51076e = null;
+            private String f51092e = null;
 
             /* renamed from: f  reason: collision with root package name */
-            private List f51077f = null;
+            private List f51093f = null;
 
             /* renamed from: g  reason: collision with root package name */
-            private boolean f51078g = false;
+            private boolean f51094g = false;
 
             public b a() {
-                return new b(this.f51072a, this.f51073b, this.f51074c, this.f51075d, this.f51076e, this.f51077f, this.f51078g);
+                return new b(this.f51088a, this.f51089b, this.f51090c, this.f51091d, this.f51092e, this.f51093f, this.f51094g);
             }
 
             public C0675a b(boolean z10) {
-                this.f51072a = z10;
+                this.f51088a = z10;
                 return this;
             }
         }
@@ -193,22 +193,22 @@ public final class a extends hf.a {
                 z13 = false;
             }
             gf.q.b(z13, "filterByAuthorizedAccounts and requestVerifiedPhoneNumber must not both be true; the Verified Phone Number feature only works in sign-ups.");
-            this.f51065d = z10;
+            this.f51081d = z10;
             if (z10) {
                 gf.q.m(str, "serverClientId must be provided if Google ID tokens are requested");
             }
-            this.f51066e = str;
-            this.f51067i = str2;
-            this.f51068o = z11;
+            this.f51082e = str;
+            this.f51083i = str2;
+            this.f51084o = z11;
             Parcelable.Creator<a> creator = a.CREATOR;
             ArrayList arrayList = null;
             if (list != null && !list.isEmpty()) {
                 arrayList = new ArrayList(list);
                 Collections.sort(arrayList);
             }
-            this.f51070q = arrayList;
-            this.f51069p = str3;
-            this.f51071r = z12;
+            this.f51086q = arrayList;
+            this.f51085p = str3;
+            this.f51087r = z12;
         }
 
         public static C0675a b() {
@@ -216,15 +216,15 @@ public final class a extends hf.a {
         }
 
         public boolean c() {
-            return this.f51068o;
+            return this.f51084o;
         }
 
         public List d() {
-            return this.f51070q;
+            return this.f51086q;
         }
 
         public String e() {
-            return this.f51069p;
+            return this.f51085p;
         }
 
         public boolean equals(Object obj) {
@@ -232,30 +232,30 @@ public final class a extends hf.a {
                 return false;
             }
             b bVar = (b) obj;
-            if (this.f51065d != bVar.f51065d || !gf.o.a(this.f51066e, bVar.f51066e) || !gf.o.a(this.f51067i, bVar.f51067i) || this.f51068o != bVar.f51068o || !gf.o.a(this.f51069p, bVar.f51069p) || !gf.o.a(this.f51070q, bVar.f51070q) || this.f51071r != bVar.f51071r) {
+            if (this.f51081d != bVar.f51081d || !gf.o.a(this.f51082e, bVar.f51082e) || !gf.o.a(this.f51083i, bVar.f51083i) || this.f51084o != bVar.f51084o || !gf.o.a(this.f51085p, bVar.f51085p) || !gf.o.a(this.f51086q, bVar.f51086q) || this.f51087r != bVar.f51087r) {
                 return false;
             }
             return true;
         }
 
         public String f() {
-            return this.f51067i;
+            return this.f51083i;
         }
 
         public String g() {
-            return this.f51066e;
+            return this.f51082e;
         }
 
         public int hashCode() {
-            return gf.o.b(Boolean.valueOf(this.f51065d), this.f51066e, this.f51067i, Boolean.valueOf(this.f51068o), this.f51069p, this.f51070q, Boolean.valueOf(this.f51071r));
+            return gf.o.b(Boolean.valueOf(this.f51081d), this.f51082e, this.f51083i, Boolean.valueOf(this.f51084o), this.f51085p, this.f51086q, Boolean.valueOf(this.f51087r));
         }
 
         public boolean i() {
-            return this.f51065d;
+            return this.f51081d;
         }
 
         public boolean j() {
-            return this.f51071r;
+            return this.f51087r;
         }
 
         @Override // android.os.Parcelable
@@ -278,32 +278,32 @@ public final class a extends hf.a {
         public static final Parcelable.Creator<c> CREATOR = new p();
 
         /* renamed from: d  reason: collision with root package name */
-        private final boolean f51079d;
+        private final boolean f51095d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f51080e;
+        private final String f51096e;
 
         /* renamed from: ve.a$c$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
         public static final class C0676a {
 
             /* renamed from: a  reason: collision with root package name */
-            private boolean f51081a = false;
+            private boolean f51097a = false;
 
             /* renamed from: b  reason: collision with root package name */
-            private String f51082b;
+            private String f51098b;
 
             public c a() {
-                return new c(this.f51081a, this.f51082b);
+                return new c(this.f51097a, this.f51098b);
             }
 
             public C0676a b(String str) {
-                this.f51082b = str;
+                this.f51098b = str;
                 return this;
             }
 
             public C0676a c(boolean z10) {
-                this.f51081a = z10;
+                this.f51097a = z10;
                 return this;
             }
         }
@@ -313,8 +313,8 @@ public final class a extends hf.a {
             if (z10) {
                 gf.q.l(str);
             }
-            this.f51079d = z10;
-            this.f51080e = str;
+            this.f51095d = z10;
+            this.f51096e = str;
         }
 
         public static C0676a b() {
@@ -322,11 +322,11 @@ public final class a extends hf.a {
         }
 
         public String c() {
-            return this.f51080e;
+            return this.f51096e;
         }
 
         public boolean d() {
-            return this.f51079d;
+            return this.f51095d;
         }
 
         public boolean equals(Object obj) {
@@ -337,14 +337,14 @@ public final class a extends hf.a {
                 return false;
             }
             c cVar = (c) obj;
-            if (this.f51079d == cVar.f51079d && gf.o.a(this.f51080e, cVar.f51080e)) {
+            if (this.f51095d == cVar.f51095d && gf.o.a(this.f51096e, cVar.f51096e)) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return gf.o.b(Boolean.valueOf(this.f51079d), this.f51080e);
+            return gf.o.b(Boolean.valueOf(this.f51095d), this.f51096e);
         }
 
         @Override // android.os.Parcelable
@@ -362,43 +362,43 @@ public final class a extends hf.a {
         public static final Parcelable.Creator<d> CREATOR = new q();
 
         /* renamed from: d  reason: collision with root package name */
-        private final boolean f51083d;
+        private final boolean f51099d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final byte[] f51084e;
+        private final byte[] f51100e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final String f51085i;
+        private final String f51101i;
 
         /* renamed from: ve.a$d$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
         public static final class C0677a {
 
             /* renamed from: a  reason: collision with root package name */
-            private boolean f51086a = false;
+            private boolean f51102a = false;
 
             /* renamed from: b  reason: collision with root package name */
-            private byte[] f51087b;
+            private byte[] f51103b;
 
             /* renamed from: c  reason: collision with root package name */
-            private String f51088c;
+            private String f51104c;
 
             public d a() {
-                return new d(this.f51086a, this.f51087b, this.f51088c);
+                return new d(this.f51102a, this.f51103b, this.f51104c);
             }
 
             public C0677a b(byte[] bArr) {
-                this.f51087b = bArr;
+                this.f51103b = bArr;
                 return this;
             }
 
             public C0677a c(String str) {
-                this.f51088c = str;
+                this.f51104c = str;
                 return this;
             }
 
             public C0677a d(boolean z10) {
-                this.f51086a = z10;
+                this.f51102a = z10;
                 return this;
             }
         }
@@ -409,9 +409,9 @@ public final class a extends hf.a {
                 gf.q.l(bArr);
                 gf.q.l(str);
             }
-            this.f51083d = z10;
-            this.f51084e = bArr;
-            this.f51085i = str;
+            this.f51099d = z10;
+            this.f51100e = bArr;
+            this.f51101i = str;
         }
 
         public static C0677a b() {
@@ -419,15 +419,15 @@ public final class a extends hf.a {
         }
 
         public byte[] c() {
-            return this.f51084e;
+            return this.f51100e;
         }
 
         public String d() {
-            return this.f51085i;
+            return this.f51101i;
         }
 
         public boolean e() {
-            return this.f51083d;
+            return this.f51099d;
         }
 
         public boolean equals(Object obj) {
@@ -438,14 +438,14 @@ public final class a extends hf.a {
                 return false;
             }
             d dVar = (d) obj;
-            if (this.f51083d == dVar.f51083d && Arrays.equals(this.f51084e, dVar.f51084e) && Objects.equals(this.f51085i, dVar.f51085i)) {
+            if (this.f51099d == dVar.f51099d && Arrays.equals(this.f51100e, dVar.f51100e) && Objects.equals(this.f51101i, dVar.f51101i)) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return (Objects.hash(Boolean.valueOf(this.f51083d), this.f51085i) * 31) + Arrays.hashCode(this.f51084e);
+            return (Objects.hash(Boolean.valueOf(this.f51099d), this.f51101i) * 31) + Arrays.hashCode(this.f51100e);
         }
 
         @Override // android.os.Parcelable
@@ -464,28 +464,28 @@ public final class a extends hf.a {
         public static final Parcelable.Creator<e> CREATOR = new r();
 
         /* renamed from: d  reason: collision with root package name */
-        private final boolean f51089d;
+        private final boolean f51105d;
 
         /* renamed from: ve.a$e$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
         public static final class C0678a {
 
             /* renamed from: a  reason: collision with root package name */
-            private boolean f51090a = false;
+            private boolean f51106a = false;
 
             public e a() {
-                return new e(this.f51090a);
+                return new e(this.f51106a);
             }
 
             public C0678a b(boolean z10) {
-                this.f51090a = z10;
+                this.f51106a = z10;
                 return this;
             }
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public e(boolean z10) {
-            this.f51089d = z10;
+            this.f51105d = z10;
         }
 
         public static C0678a b() {
@@ -493,18 +493,18 @@ public final class a extends hf.a {
         }
 
         public boolean c() {
-            return this.f51089d;
+            return this.f51105d;
         }
 
         public boolean equals(Object obj) {
-            if (!(obj instanceof e) || this.f51089d != ((e) obj).f51089d) {
+            if (!(obj instanceof e) || this.f51105d != ((e) obj).f51105d) {
                 return false;
             }
             return true;
         }
 
         public int hashCode() {
-            return gf.o.b(Boolean.valueOf(this.f51089d));
+            return gf.o.b(Boolean.valueOf(this.f51105d));
         }
 
         @Override // android.os.Parcelable
@@ -517,24 +517,24 @@ public final class a extends hf.a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(e eVar, b bVar, String str, boolean z10, int i10, d dVar, c cVar, boolean z11) {
-        this.f51049d = (e) gf.q.l(eVar);
-        this.f51050e = (b) gf.q.l(bVar);
-        this.f51051i = str;
-        this.f51052o = z10;
-        this.f51053p = i10;
+        this.f51065d = (e) gf.q.l(eVar);
+        this.f51066e = (b) gf.q.l(bVar);
+        this.f51067i = str;
+        this.f51068o = z10;
+        this.f51069p = i10;
         if (dVar == null) {
             d.C0677a b10 = d.b();
             b10.d(false);
             dVar = b10.a();
         }
-        this.f51054q = dVar;
+        this.f51070q = dVar;
         if (cVar == null) {
             c.C0676a b11 = c.b();
             b11.c(false);
             cVar = b11.a();
         }
-        this.f51055r = cVar;
-        this.f51056s = z11;
+        this.f51071r = cVar;
+        this.f51072s = z11;
     }
 
     public static C0674a b() {
@@ -548,10 +548,10 @@ public final class a extends hf.a {
         b10.f(aVar.f());
         b10.e(aVar.e());
         b10.d(aVar.d());
-        b10.b(aVar.f51052o);
-        b10.i(aVar.f51053p);
-        b10.g(aVar.f51056s);
-        String str = aVar.f51051i;
+        b10.b(aVar.f51068o);
+        b10.i(aVar.f51069p);
+        b10.g(aVar.f51072s);
+        String str = aVar.f51067i;
         if (str != null) {
             b10.h(str);
         }
@@ -559,15 +559,15 @@ public final class a extends hf.a {
     }
 
     public b c() {
-        return this.f51050e;
+        return this.f51066e;
     }
 
     public c d() {
-        return this.f51055r;
+        return this.f51071r;
     }
 
     public d e() {
-        return this.f51054q;
+        return this.f51070q;
     }
 
     public boolean equals(Object obj) {
@@ -575,26 +575,26 @@ public final class a extends hf.a {
             return false;
         }
         a aVar = (a) obj;
-        if (!gf.o.a(this.f51049d, aVar.f51049d) || !gf.o.a(this.f51050e, aVar.f51050e) || !gf.o.a(this.f51054q, aVar.f51054q) || !gf.o.a(this.f51055r, aVar.f51055r) || !gf.o.a(this.f51051i, aVar.f51051i) || this.f51052o != aVar.f51052o || this.f51053p != aVar.f51053p || this.f51056s != aVar.f51056s) {
+        if (!gf.o.a(this.f51065d, aVar.f51065d) || !gf.o.a(this.f51066e, aVar.f51066e) || !gf.o.a(this.f51070q, aVar.f51070q) || !gf.o.a(this.f51071r, aVar.f51071r) || !gf.o.a(this.f51067i, aVar.f51067i) || this.f51068o != aVar.f51068o || this.f51069p != aVar.f51069p || this.f51072s != aVar.f51072s) {
             return false;
         }
         return true;
     }
 
     public e f() {
-        return this.f51049d;
+        return this.f51065d;
     }
 
     public boolean g() {
-        return this.f51056s;
+        return this.f51072s;
     }
 
     public int hashCode() {
-        return gf.o.b(this.f51049d, this.f51050e, this.f51054q, this.f51055r, this.f51051i, Boolean.valueOf(this.f51052o), Integer.valueOf(this.f51053p), Boolean.valueOf(this.f51056s));
+        return gf.o.b(this.f51065d, this.f51066e, this.f51070q, this.f51071r, this.f51067i, Boolean.valueOf(this.f51068o), Integer.valueOf(this.f51069p), Boolean.valueOf(this.f51072s));
     }
 
     public boolean i() {
-        return this.f51052o;
+        return this.f51068o;
     }
 
     @Override // android.os.Parcelable
@@ -602,9 +602,9 @@ public final class a extends hf.a {
         int a10 = hf.c.a(parcel);
         hf.c.q(parcel, 1, f(), i10, false);
         hf.c.q(parcel, 2, c(), i10, false);
-        hf.c.s(parcel, 3, this.f51051i, false);
+        hf.c.s(parcel, 3, this.f51067i, false);
         hf.c.c(parcel, 4, i());
-        hf.c.l(parcel, 5, this.f51053p);
+        hf.c.l(parcel, 5, this.f51069p);
         hf.c.q(parcel, 6, e(), i10, false);
         hf.c.q(parcel, 7, d(), i10, false);
         hf.c.c(parcel, 8, g());

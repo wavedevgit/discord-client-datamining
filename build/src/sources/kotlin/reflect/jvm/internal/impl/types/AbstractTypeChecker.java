@@ -451,7 +451,7 @@ public final class AbstractTypeChecker {
         while (it.hasNext()) {
             runForkingPoint.fork(new b(typeCheckerState, typeSystemContext, (RigidTypeMarker) it.next(), rigidTypeMarker));
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     public static final boolean r(TypeCheckerState typeCheckerState, TypeSystemContext typeSystemContext, RigidTypeMarker rigidTypeMarker, RigidTypeMarker rigidTypeMarker2) {
@@ -637,10 +637,10 @@ public final class AbstractTypeChecker {
                     return typeCheckerState2.isErrorTypeEqualsToAnything();
                 }
                 if (effectiveVariance != typeVariance || (!abstractTypeChecker.s(typeSystemContext, type2, type, typeConstructor) && !abstractTypeChecker.s(typeSystemContext, type, type2, typeConstructor))) {
-                    i10 = typeCheckerState2.f35885h;
+                    i10 = typeCheckerState2.f35901h;
                     if (i10 <= 100) {
-                        i11 = typeCheckerState2.f35885h;
-                        typeCheckerState2.f35885h = i11 + 1;
+                        i11 = typeCheckerState2.f35901h;
+                        typeCheckerState2.f35901h = i11 + 1;
                         int i14 = WhenMappings.$EnumSwitchMapping$0[effectiveVariance.ordinal()];
                         if (i14 != 1) {
                             if (i14 != 2) {
@@ -657,8 +657,8 @@ public final class AbstractTypeChecker {
                         } else {
                             equalTypes = abstractTypeChecker.equalTypes(typeCheckerState2, type2, type);
                         }
-                        i12 = typeCheckerState2.f35885h;
-                        typeCheckerState2.f35885h = i12 - 1;
+                        i12 = typeCheckerState2.f35901h;
+                        typeCheckerState2.f35901h = i12 - 1;
                         if (!equalTypes) {
                             return false;
                         }

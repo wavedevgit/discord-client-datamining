@@ -460,7 +460,7 @@ public final class WebSocketModule extends NativeWebSocketModuleSpec {
             return;
         }
         try {
-            webSocket.a(ByteString.f44364p);
+            webSocket.a(ByteString.f44380p);
         } catch (Exception e10) {
             notifyWebSocketFailed(i10, e10.getMessage());
         }
@@ -524,7 +524,7 @@ public final class WebSocketModule extends NativeWebSocketModuleSpec {
             return;
         }
         try {
-            ByteString a10 = ByteString.f44363o.a(base64String);
+            ByteString a10 = ByteString.f44379o.a(base64String);
             if (a10 != null) {
                 webSocket.a(a10);
                 return;

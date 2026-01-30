@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_scheduled_events/native/components/GuildScheduledEventPrompts.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Original name: ScheduleEventPrompt, environment: var1
-        _fun65149: for (var _fun65149_ip = 0;;) switch (_fun65149_ip) {
+        _fun65193: for (var _fun65193_ip = 0;;) switch (_fun65193_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.guild;
@@ -104,8 +104,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.canCreateGuildEvent;
                 var0 = null;
                 if (!var1) {
-                    _fun65149_ip = 294;
-                    continue _fun65149
+                    _fun65193_ip = 294;
+                    continue _fun65193
                 }
             case 87:
                 var3 = _closure1_slot3;
@@ -172,7 +172,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ScheduleEventPrompt = var3;
     var1 = function(arg0) { // Original name: StartEventPrompt, environment: var1
-        _fun65151: for (var _fun65151_ip = 0;;) switch (_fun65151_ip) {
+        _fun65195: for (var _fun65195_ip = 0;;) switch (_fun65195_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.event;
@@ -197,8 +197,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.bind(var4)(var1);
                 var0 = null;
                 if (!var1) {
-                    _fun65151_ip = 393;
-                    continue _fun65151
+                    _fun65195_ip = 393;
+                    continue _fun65195
                 }
             case 110:
                 var3 = _closure1_slot3;
@@ -280,4 +280,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.StartEventPrompt = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 8049, 5335, 8055, 8137, 1234, 3091, 3004, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 8052, 5339, 8058, 8140, 1234, 3091, 3004, 2]);

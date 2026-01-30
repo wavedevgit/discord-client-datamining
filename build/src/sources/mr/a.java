@@ -10,15 +10,15 @@ public abstract class a {
     public static final class C0501a extends Thread {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Function0 f39573d;
+        final /* synthetic */ Function0 f39589d;
 
         C0501a(Function0 function0) {
-            this.f39573d = function0;
+            this.f39589d = function0;
         }
 
         @Override // java.lang.Thread, java.lang.Runnable
         public void run() {
-            this.f39573d.invoke();
+            this.f39589d.invoke();
         }
     }
 

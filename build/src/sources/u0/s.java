@@ -8,16 +8,16 @@ import kotlin.jvm.internal.Lambda;
 public abstract class s {
 
     /* renamed from: a  reason: collision with root package name */
-    public long[] f50022a;
+    public long[] f50038a;
 
     /* renamed from: b  reason: collision with root package name */
-    public Object[] f50023b;
+    public Object[] f50039b;
 
     /* renamed from: c  reason: collision with root package name */
-    public int f50024c;
+    public int f50040c;
 
     /* renamed from: d  reason: collision with root package name */
-    public int f50025d;
+    public int f50041d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static final class a extends Lambda implements Function1 {
@@ -93,12 +93,12 @@ public abstract class s {
             int r4 = r3 << 16
             r3 = r3 ^ r4
             r4 = r3 & 127(0x7f, float:1.78E-43)
-            int r5 = r0.f50024c
+            int r5 = r0.f50040c
             int r3 = r3 >>> 7
             r3 = r3 & r5
             r6 = r2
         L1c:
-            long[] r7 = r0.f50022a
+            long[] r7 = r0.f50038a
             int r8 = r3 >> 3
             r9 = r3 & 7
             int r9 = r9 << 3
@@ -132,7 +132,7 @@ public abstract class s {
             int r11 = r11 >> 3
             int r11 = r11 + r3
             r11 = r11 & r5
-            java.lang.Object[] r15 = r0.f50023b
+            java.lang.Object[] r15 = r0.f50039b
             r15 = r15[r11]
             boolean r15 = kotlin.jvm.internal.Intrinsics.areEqual(r15, r1)
             if (r15 == 0) goto L61
@@ -166,11 +166,11 @@ public abstract class s {
     }
 
     public final int b() {
-        return this.f50024c;
+        return this.f50040c;
     }
 
     public final int c() {
-        return this.f50025d;
+        return this.f50041d;
     }
 
     public final String d(CharSequence separator, CharSequence prefix, CharSequence postfix, int i10, CharSequence truncated, Function1 function1) {
@@ -181,8 +181,8 @@ public abstract class s {
         Intrinsics.checkNotNullParameter(truncated, "truncated");
         StringBuilder sb2 = new StringBuilder();
         sb2.append(prefix);
-        Object[] objArr = this.f50023b;
-        long[] jArr = this.f50022a;
+        Object[] objArr = this.f50039b;
+        long[] jArr = this.f50038a;
         int length = jArr.length - 2;
         if (length >= 0) {
             int i12 = 0;
@@ -244,8 +244,8 @@ public abstract class s {
         if (sVar.c() != c()) {
             return false;
         }
-        Object[] objArr = this.f50023b;
-        long[] jArr = this.f50022a;
+        Object[] objArr = this.f50039b;
+        long[] jArr = this.f50038a;
         int length = jArr.length - 2;
         if (length >= 0) {
             int i10 = 0;
@@ -274,9 +274,9 @@ public abstract class s {
 
     public int hashCode() {
         int i10;
-        int i11 = (this.f50024c * 31) + this.f50025d;
-        Object[] objArr = this.f50023b;
-        long[] jArr = this.f50022a;
+        int i11 = (this.f50040c * 31) + this.f50041d;
+        Object[] objArr = this.f50039b;
+        long[] jArr = this.f50038a;
         int length = jArr.length - 2;
         if (length >= 0) {
             int i12 = 0;
@@ -316,7 +316,7 @@ public abstract class s {
     }
 
     private s() {
-        this.f50022a = r.f50020a;
-        this.f50023b = v0.a.f50584c;
+        this.f50038a = r.f50036a;
+        this.f50039b = v0.a.f50600c;
     }
 }

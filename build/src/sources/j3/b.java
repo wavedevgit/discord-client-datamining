@@ -21,27 +21,27 @@ import u3.g;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f31842a;
+    private final Map f31858a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f31843b;
+    private final Map f31859b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f31844c;
+    private final Map f31860c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f31845d;
+    private final Map f31861d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final SavedStateRegistry.b f31846e;
+    private final SavedStateRegistry.b f31862e;
 
     public b(Map initialState) {
         Intrinsics.checkNotNullParameter(initialState, "initialState");
-        this.f31842a = o0.y(initialState);
-        this.f31843b = new LinkedHashMap();
-        this.f31844c = new LinkedHashMap();
-        this.f31845d = new LinkedHashMap();
-        this.f31846e = new SavedStateRegistry.b() { // from class: j3.a
+        this.f31858a = o0.y(initialState);
+        this.f31859b = new LinkedHashMap();
+        this.f31860c = new LinkedHashMap();
+        this.f31861d = new LinkedHashMap();
+        this.f31862e = new SavedStateRegistry.b() { // from class: j3.a
             @Override // androidx.savedstate.SavedStateRegistry.b
             public final Bundle a() {
                 Bundle j10;
@@ -54,13 +54,13 @@ public final class b {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Bundle j(b bVar) {
         Pair[] pairArr;
-        for (Map.Entry entry : o0.w(bVar.f31845d).entrySet()) {
+        for (Map.Entry entry : o0.w(bVar.f31861d).entrySet()) {
             bVar.k((String) entry.getKey(), ((MutableStateFlow) entry.getValue()).getValue());
         }
-        for (Map.Entry entry2 : o0.w(bVar.f31843b).entrySet()) {
+        for (Map.Entry entry2 : o0.w(bVar.f31859b).entrySet()) {
             bVar.k((String) entry2.getKey(), ((SavedStateRegistry.b) entry2.getValue()).a());
         }
-        Map map = bVar.f31842a;
+        Map map = bVar.f31858a;
         if (map.isEmpty()) {
             pairArr = new Pair[0];
         } else {
@@ -79,11 +79,11 @@ public final class b {
         Object value;
         Intrinsics.checkNotNullParameter(key, "key");
         try {
-            MutableStateFlow mutableStateFlow = (MutableStateFlow) this.f31845d.get(key);
+            MutableStateFlow mutableStateFlow = (MutableStateFlow) this.f31861d.get(key);
             if (mutableStateFlow != null && (value = mutableStateFlow.getValue()) != null) {
                 return value;
             }
-            return this.f31842a.get(key);
+            return this.f31858a.get(key);
         } catch (ClassCastException unused) {
             i(key);
             return null;
@@ -91,18 +91,18 @@ public final class b {
     }
 
     public final Map c() {
-        return this.f31845d;
+        return this.f31861d;
     }
 
     public final MutableStateFlow d(String key, Object obj) {
         Intrinsics.checkNotNullParameter(key, "key");
-        Map map = this.f31845d;
+        Map map = this.f31861d;
         Object obj2 = map.get(key);
         if (obj2 == null) {
-            if (!this.f31842a.containsKey(key)) {
-                this.f31842a.put(key, obj);
+            if (!this.f31858a.containsKey(key)) {
+                this.f31858a.put(key, obj);
             }
-            obj2 = l0.a(this.f31842a.get(key));
+            obj2 = l0.a(this.f31858a.get(key));
             map.put(key, obj2);
         }
         MutableStateFlow mutableStateFlow = (MutableStateFlow) obj2;
@@ -111,22 +111,22 @@ public final class b {
     }
 
     public final Map e() {
-        return this.f31842a;
+        return this.f31858a;
     }
 
     public final SavedStateRegistry.b f() {
-        return this.f31846e;
+        return this.f31862e;
     }
 
     public final j0 g(String key, Object obj) {
         Intrinsics.checkNotNullParameter(key, "key");
-        Map map = this.f31844c;
+        Map map = this.f31860c;
         Object obj2 = map.get(key);
         if (obj2 == null) {
-            if (!this.f31842a.containsKey(key)) {
-                this.f31842a.put(key, obj);
+            if (!this.f31858a.containsKey(key)) {
+                this.f31858a.put(key, obj);
             }
-            obj2 = l0.a(this.f31842a.get(key));
+            obj2 = l0.a(this.f31858a.get(key));
             map.put(key, obj2);
         }
         j0 a10 = js.g.a((MutableStateFlow) obj2);
@@ -135,25 +135,25 @@ public final class b {
     }
 
     public final Set h() {
-        return x0.l(this.f31842a.keySet(), this.f31843b.keySet());
+        return x0.l(this.f31858a.keySet(), this.f31859b.keySet());
     }
 
     public final Object i(String key) {
         Intrinsics.checkNotNullParameter(key, "key");
-        Object remove = this.f31842a.remove(key);
-        this.f31844c.remove(key);
-        this.f31845d.remove(key);
+        Object remove = this.f31858a.remove(key);
+        this.f31860c.remove(key);
+        this.f31861d.remove(key);
         return remove;
     }
 
     public final void k(String key, Object obj) {
         Intrinsics.checkNotNullParameter(key, "key");
-        this.f31842a.put(key, obj);
-        MutableStateFlow mutableStateFlow = (MutableStateFlow) this.f31844c.get(key);
+        this.f31858a.put(key, obj);
+        MutableStateFlow mutableStateFlow = (MutableStateFlow) this.f31860c.get(key);
         if (mutableStateFlow != null) {
             mutableStateFlow.setValue(obj);
         }
-        MutableStateFlow mutableStateFlow2 = (MutableStateFlow) this.f31845d.get(key);
+        MutableStateFlow mutableStateFlow2 = (MutableStateFlow) this.f31861d.get(key);
         if (mutableStateFlow2 != null) {
             mutableStateFlow2.setValue(obj);
         }

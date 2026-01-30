@@ -121,4 +121,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.CollectiblesProgressiveImage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 3677, 4050, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 3679, 4056, 2]);

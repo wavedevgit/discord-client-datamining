@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var3 = function(arg0) { // Original name: isSpammer, environment: var1
-        _fun40669: for (var _fun40669_ip = 0;;) switch (_fun40669_ip) {
+        _fun40720: for (var _fun40720_ip = 0;;) switch (_fun40720_ip) {
             case 0:
                 var3 = _closure1_slot2;
                 var1 = var3.getUser;
@@ -17,8 +17,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0 == var4;
                 var1 = undefined;
                 if (var3) {
-                    _fun40669_ip = 53;
-                    continue _fun40669
+                    _fun40720_ip = 53;
+                    continue _fun40720
                 }
             case 32:
                 var3 = var4.hasFlag;
@@ -28,8 +28,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 53:
                 var0 = var0 != var1;
                 if (!var0) {
-                    _fun40669_ip = 63;
-                    continue _fun40669
+                    _fun40720_ip = 63;
+                    continue _fun40720
                 }
             case 60:
                 var0 = var1;
@@ -66,14 +66,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/messages/isSpam.tsx';
     var4 = var5.bind(var6)(var4);
     var4 = function(arg0) { // Original name: isSpamSupported, environment: var1
-        _fun40670: for (var _fun40670_ip = 0;;) switch (_fun40670_ip) {
+        _fun40721: for (var _fun40721_ip = 0;;) switch (_fun40721_ip) {
             case 0:
                 var1 = arg0;
                 var0 = undefined;
                 var0 = var0 !== var1;
                 if (!var0) {
-                    _fun40670_ip = 34;
-                    continue _fun40670
+                    _fun40721_ip = 34;
+                    continue _fun40721
                 }
             case 12:
                 var2 = var1.type;
@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isSpamSupported = var4;
     var2.isSpammer = var3;
     var1 = function(arg0) { // Original name: isSpam, environment: var1
-        _fun40671: for (var _fun40671_ip = 0;;) switch (_fun40671_ip) {
+        _fun40722: for (var _fun40722_ip = 0;;) switch (_fun40722_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot5;
@@ -96,8 +96,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = undefined;
                 var0 = var2.bind(var4)(var0);
                 if (!var0) {
-                    _fun40671_ip = 65;
-                    continue _fun40671
+                    _fun40722_ip = 65;
+                    continue _fun40722
                 }
             case 31:
                 var2 = _closure1_slot0;
@@ -114,4 +114,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isSpam = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1613, 660, 4487, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1613, 660, 4493, 2]);

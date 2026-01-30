@@ -15,16 +15,16 @@ import sa.k;
 public final class g implements c {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f55417d = new a(null);
+    public static final a f55433d = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f55418a;
+    private final boolean f55434a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f55419b;
+    private final int f55435b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f55420c = "SimpleImageTranscoder";
+    private final String f55436c = "SimpleImageTranscoder";
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -54,20 +54,20 @@ public final class g implements c {
     }
 
     public g(boolean z10, int i10) {
-        this.f55418a = z10;
-        this.f55419b = i10;
+        this.f55434a = z10;
+        this.f55435b = i10;
     }
 
     private final int e(k kVar, RotationOptions rotationOptions, ResizeOptions resizeOptions) {
-        if (!this.f55418a) {
+        if (!this.f55434a) {
             return 1;
         }
-        return za.a.b(rotationOptions, resizeOptions, kVar, this.f55419b);
+        return za.a.b(rotationOptions, resizeOptions, kVar, this.f55435b);
     }
 
     @Override // za.c
     public String a() {
-        return this.f55420c;
+        return this.f55436c;
     }
 
     @Override // za.c
@@ -76,7 +76,7 @@ public final class g implements c {
         if (rotationOptions == null) {
             rotationOptions = RotationOptions.f11469c.a();
         }
-        if (this.f55418a && za.a.b(rotationOptions, resizeOptions, encodedImage, this.f55419b) > 1) {
+        if (this.f55434a && za.a.b(rotationOptions, resizeOptions, encodedImage, this.f55435b) > 1) {
             return true;
         }
         return false;
@@ -135,7 +135,7 @@ public final class g implements c {
             }
             try {
                 try {
-                    bitmap.compress(f55417d.b(cVar), num2.intValue(), outputStream);
+                    bitmap.compress(f55433d.b(cVar), num2.intValue(), outputStream);
                     int i10 = 1;
                     if (e10 > 1) {
                         i10 = 0;

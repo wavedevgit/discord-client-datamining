@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
-        _fun84225: for (var _fun84225_ip = 0;;) switch (_fun84225_ip) {
+        _fun84271: for (var _fun84271_ip = 0;;) switch (_fun84271_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 72: // try_end0
-                _fun84225_ip = 76;
-                continue _fun84225;
+                _fun84271_ip = 76;
+                continue _fun84271;
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
@@ -106,7 +106,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.PureComponent;
     var1 = function(arg0) { // Environment: var1
         var3 = function() { // Original name: UntouchableAlert, environment: var5
-            _fun84229: for (var _fun84229_ip = 0;;) switch (_fun84229_ip) {
+            _fun84275: for (var _fun84275_ip = 0;;) switch (_fun84275_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -120,16 +120,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot11;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun84229_ip = 69;
-                        continue _fun84229
+                        _fun84275_ip = 69;
+                        continue _fun84275
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun84229_ip = 105;
-                    continue _fun84229;
+                    _fun84275_ip = 105;
+                    continue _fun84275;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -154,14 +154,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = 'componentDidMount';
         var4.key = var0;
         var0 = function() { // Original name: value, environment: var5
-            _fun84230: for (var _fun84230_ip = 0;;) switch (_fun84230_ip) {
+            _fun84276: for (var _fun84276_ip = 0;;) switch (_fun84276_ip) {
                 case 0:
                     var1 = this;
                     var0 = var1.props;
                     var0 = var0.loading;
                     if (var0) {
-                        _fun84230_ip = 27;
-                        continue _fun84230
+                        _fun84276_ip = 27;
+                        continue _fun84276
                     }
                 case 17:
                     var0 = var1.closeAlert;
@@ -178,7 +178,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'componentDidUpdate';
         var4.key = var6;
         var6 = function(arg0) { // Original name: value, environment: var5
-            _fun84231: for (var _fun84231_ip = 0;;) switch (_fun84231_ip) {
+            _fun84277: for (var _fun84277_ip = 0;;) switch (_fun84277_ip) {
                 case 0:
                     var1 = this;
                     var0 = var1.props;
@@ -187,15 +187,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.loading;
                     var0 = var0 === var2;
                     if (var0) {
-                        _fun84231_ip = 33;
-                        continue _fun84231
+                        _fun84277_ip = 33;
+                        continue _fun84277
                     }
                 case 30:
                     var0 = var2;
                 case 33:
                     if (var0) {
-                        _fun84231_ip = 46;
-                        continue _fun84231
+                        _fun84277_ip = 46;
+                        continue _fun84277
                     }
                 case 36:
                     var0 = var1.closeAlert;
@@ -232,15 +232,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'render';
         var4.key = var6;
         var5 = function() { // Original name: value, environment: var5
-            _fun84234: for (var _fun84234_ip = 0;;) switch (_fun84234_ip) {
+            _fun84280: for (var _fun84280_ip = 0;;) switch (_fun84280_ip) {
                 case 0:
                     var0 = this;
                     var0 = var0.props;
                     var1 = var0.loading;
                     var0 = null;
                     if (!var1) {
-                        _fun84234_ip = 118;
-                        continue _fun84234
+                        _fun84280_ip = 118;
+                        continue _fun84280
                     }
                 case 19:
                     var4 = _closure1_slot9;

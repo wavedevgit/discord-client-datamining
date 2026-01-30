@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/parent_tools/native/FamilyCenterSettingsControls.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Original name: FamilyCenterSettingsControls, environment: var1
-        _fun81895: for (var _fun81895_ip = 0;;) switch (_fun81895_ip) {
+        _fun81941: for (var _fun81941_ip = 0;;) switch (_fun81941_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot2;
@@ -71,8 +71,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var17.length;
                 var0 = 0;
                 if (!(var0 !== var1)) {
-                    _fun81895_ip = 1023;
-                    continue _fun81895
+                    _fun81941_ip = 1023;
+                    continue _fun81941
                 }
             case 103:
                 var0 = function(arg0) { // Original name: handleSettingsClick, environment: var12
@@ -111,8 +111,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = {};
                 var9 = {};
                 if (var4) {
-                    _fun81895_ip = 615;
-                    continue _fun81895
+                    _fun81941_ip = 615;
+                    continue _fun81941
                 }
             case 175:
                 var9.gap = var14;
@@ -226,8 +226,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4[2] = var10;
                 var7.children = var4;
                 var4 = var7;
-                _fun81895_ip = 1005;
-                continue _fun81895;
+                _fun81941_ip = 1005;
+                continue _fun81941;
             case 615:
                 var10 = 16;
                 var9.gap = var10;
@@ -371,4 +371,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 4551, 660, 33, 6466, 6467, 1469, 4033, 3895, 1234, 1849, 4037, 4604, 3899, 5320, 4854, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 4557, 660, 33, 6469, 6470, 1469, 4039, 3901, 1234, 1849, 4043, 4610, 3905, 5324, 4860, 2]);

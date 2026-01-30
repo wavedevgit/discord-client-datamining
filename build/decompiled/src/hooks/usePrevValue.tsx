@@ -25,7 +25,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'hooks/usePrevValue.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: usePrevValue, environment: var1
-        _fun61802: for (var _fun61802_ip = 0;;) switch (_fun61802_ip) {
+        _fun61846: for (var _fun61846_ip = 0;;) switch (_fun61846_ip) {
             case 0:
                 var2 = arg0;
                 var4 = _closure1_slot0;
@@ -39,8 +39,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var1.current;
                 var3 = var4.bind(var5)(var2, var3);
                 if (var3) {
-                    _fun61802_ip = 69;
-                    continue _fun61802
+                    _fun61846_ip = 69;
+                    continue _fun61846
                 }
             case 52:
                 var3 = var1.current;

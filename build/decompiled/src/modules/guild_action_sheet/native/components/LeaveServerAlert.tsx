@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_action_sheet/native/components/LeaveServerAlert.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: _default, environment: var1
-        _fun96880: for (var _fun96880_ip = 0;;) switch (_fun96880_ip) {
+        _fun97134: for (var _fun97134_ip = 0;;) switch (_fun97134_ip) {
             case 0:
                 var0 = arg0;
                 var12 = var0.guild;
@@ -66,14 +66,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var11.bind(var2)(var5);
                 var5 = var5.t;
                 if (var4) {
-                    _fun96880_ip = 137;
-                    continue _fun96880
+                    _fun97134_ip = 137;
+                    continue _fun97134
                 }
             case 124:
                 var4 = var5.J2TBi3;
                 var4 = var6.bind(var8)(var4);
-                _fun96880_ip = 148;
-                continue _fun96880;
+                _fun97134_ip = 148;
+                continue _fun97134;
             case 137:
                 var5 = var5.Dv8gFT;
                 var4 = var6.bind(var8)(var5);
@@ -163,4 +163,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 33, 3980, 1234, 3980, 8112, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 33, 3986, 1234, 3986, 8115, 2]);

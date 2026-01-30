@@ -5,10 +5,10 @@ import okhttp3.Interceptor;
 public final class b implements Interceptor {
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f56107a;
+    private final boolean f56123a;
 
     public b(boolean z10) {
-        this.f56107a = z10;
+        this.f56123a = z10;
     }
 
     private final boolean a(int i10) {

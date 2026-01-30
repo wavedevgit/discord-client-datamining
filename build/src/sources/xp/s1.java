@@ -66,24 +66,24 @@ public abstract class s1 {
             Intrinsics.checkNotNullExpressionValue(inputLayout, "inputLayout");
             cq.a0.k(inputLayout, styles);
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements TextWatcher {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ InputNumberComponent f53706d;
+        final /* synthetic */ InputNumberComponent f53722d;
 
         public a(InputNumberComponent inputNumberComponent) {
-            this.f53706d = inputNumberComponent;
+            this.f53722d = inputNumberComponent;
         }
 
         @Override // android.text.TextWatcher
         public void afterTextChanged(Editable editable) {
             Double d10;
             String obj;
-            yp.i b10 = this.f53706d.b();
+            yp.i b10 = this.f53722d.b();
             if (editable != null && (obj = editable.toString()) != null) {
                 d10 = StringsKt.p(obj);
             } else {

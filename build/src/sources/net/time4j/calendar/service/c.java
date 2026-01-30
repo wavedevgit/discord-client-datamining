@@ -12,7 +12,7 @@ import net.time4j.f0;
 public class c implements s {
     @Override // jt.s
     public boolean a(p pVar) {
-        if (pVar == KoreanCalendar.f40408u) {
+        if (pVar == KoreanCalendar.f40424u) {
             return true;
         }
         return false;
@@ -33,7 +33,7 @@ public class c implements s {
 
     @Override // jt.s
     public q d(q qVar, Locale locale, jt.d dVar) {
-        p pVar = KoreanCalendar.f40408u;
+        p pVar = KoreanCalendar.f40424u;
         if (qVar.o(pVar)) {
             return qVar.C(f0.A, qVar.q(pVar) - 2333);
         }

@@ -399,7 +399,7 @@ public class PlayerControlView extends FrameLayout {
                 } else {
                     z10 = false;
                 }
-                if (w0.f40279a < 21) {
+                if (w0.f40295a < 21) {
                     z11 = z10;
                 } else if (!a12 && b.a(this.f14214p)) {
                     z11 = true;
@@ -425,7 +425,7 @@ public class PlayerControlView extends FrameLayout {
                     z12 = false;
                 }
                 z10 |= z12;
-                if (w0.f40279a < 21) {
+                if (w0.f40295a < 21) {
                     z13 = z10;
                 } else if (!a12 || !b.a(this.f14215q)) {
                     z13 = false;
@@ -711,7 +711,7 @@ public class PlayerControlView extends FrameLayout {
     }
 
     private static int z(TypedArray typedArray, int i10) {
-        return typedArray.getInt(n.f33178z, i10);
+        return typedArray.getInt(n.f33194z, i10);
     }
 
     public void A() {
@@ -995,7 +995,7 @@ public class PlayerControlView extends FrameLayout {
 
     public PlayerControlView(Context context, AttributeSet attributeSet, int i10, AttributeSet attributeSet2) {
         super(context, attributeSet, i10);
-        int i11 = l.f33129b;
+        int i11 = l.f33145b;
         this.W = 5000;
         this.f14196b0 = 0;
         this.f14195a0 = androidx.recyclerview.widget.h.DEFAULT_DRAG_ANIMATION_DURATION;
@@ -1006,10 +1006,10 @@ public class PlayerControlView extends FrameLayout {
         this.f14202f0 = true;
         this.f14203g0 = false;
         if (attributeSet2 != null) {
-            TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(attributeSet2, n.f33176x, i10, 0);
+            TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(attributeSet2, n.f33192x, i10, 0);
             try {
                 this.W = obtainStyledAttributes.getInt(n.F, this.W);
-                i11 = obtainStyledAttributes.getResourceId(n.f33177y, i11);
+                i11 = obtainStyledAttributes.getResourceId(n.f33193y, i11);
                 this.f14196b0 = z(obtainStyledAttributes, this.f14196b0);
                 this.f14197c0 = obtainStyledAttributes.getBoolean(n.D, this.f14197c0);
                 this.f14199d0 = obtainStyledAttributes.getBoolean(n.A, this.f14199d0);
@@ -1047,13 +1047,13 @@ public class PlayerControlView extends FrameLayout {
         };
         LayoutInflater.from(context).inflate(i11, this);
         setDescendantFocusability(262144);
-        j jVar = (j) findViewById(ke.j.f33118p);
-        View findViewById = findViewById(ke.j.f33119q);
+        j jVar = (j) findViewById(ke.j.f33134p);
+        View findViewById = findViewById(ke.j.f33135q);
         if (jVar != null) {
             this.f14223y = jVar;
         } else if (findViewById != null) {
             DefaultTimeBar defaultTimeBar = new DefaultTimeBar(context, null, 0, attributeSet2);
-            defaultTimeBar.setId(ke.j.f33118p);
+            defaultTimeBar.setId(ke.j.f33134p);
             defaultTimeBar.setLayoutParams(findViewById.getLayoutParams());
             ViewGroup viewGroup = (ViewGroup) findViewById.getParent();
             int indexOfChild = viewGroup.indexOfChild(findViewById);
@@ -1063,69 +1063,69 @@ public class PlayerControlView extends FrameLayout {
         } else {
             this.f14223y = null;
         }
-        this.f14221w = (TextView) findViewById(ke.j.f33109g);
-        this.f14222x = (TextView) findViewById(ke.j.f33116n);
+        this.f14221w = (TextView) findViewById(ke.j.f33125g);
+        this.f14222x = (TextView) findViewById(ke.j.f33132n);
         j jVar2 = this.f14223y;
         if (jVar2 != null) {
             jVar2.a(cVar);
         }
-        View findViewById2 = findViewById(ke.j.f33115m);
+        View findViewById2 = findViewById(ke.j.f33131m);
         this.f14214p = findViewById2;
         if (findViewById2 != null) {
             findViewById2.setOnClickListener(cVar);
         }
-        View findViewById3 = findViewById(ke.j.f33114l);
+        View findViewById3 = findViewById(ke.j.f33130l);
         this.f14215q = findViewById3;
         if (findViewById3 != null) {
             findViewById3.setOnClickListener(cVar);
         }
-        View findViewById4 = findViewById(ke.j.f33117o);
+        View findViewById4 = findViewById(ke.j.f33133o);
         this.f14205i = findViewById4;
         if (findViewById4 != null) {
             findViewById4.setOnClickListener(cVar);
         }
-        View findViewById5 = findViewById(ke.j.f33112j);
+        View findViewById5 = findViewById(ke.j.f33128j);
         this.f14212o = findViewById5;
         if (findViewById5 != null) {
             findViewById5.setOnClickListener(cVar);
         }
-        View findViewById6 = findViewById(ke.j.f33121s);
+        View findViewById6 = findViewById(ke.j.f33137s);
         this.f14217s = findViewById6;
         if (findViewById6 != null) {
             findViewById6.setOnClickListener(cVar);
         }
-        View findViewById7 = findViewById(ke.j.f33111i);
+        View findViewById7 = findViewById(ke.j.f33127i);
         this.f14216r = findViewById7;
         if (findViewById7 != null) {
             findViewById7.setOnClickListener(cVar);
         }
-        ImageView imageView = (ImageView) findViewById(ke.j.f33120r);
+        ImageView imageView = (ImageView) findViewById(ke.j.f33136r);
         this.f14218t = imageView;
         if (imageView != null) {
             imageView.setOnClickListener(cVar);
         }
-        ImageView imageView2 = (ImageView) findViewById(ke.j.f33122t);
+        ImageView imageView2 = (ImageView) findViewById(ke.j.f33138t);
         this.f14219u = imageView2;
         if (imageView2 != null) {
             imageView2.setOnClickListener(cVar);
         }
-        View findViewById8 = findViewById(ke.j.f33125w);
+        View findViewById8 = findViewById(ke.j.f33141w);
         this.f14220v = findViewById8;
         setShowVrButton(false);
         L(false, false, findViewById8);
         Resources resources = context.getResources();
-        this.N = resources.getInteger(ke.k.f33127b) / 100.0f;
-        this.O = resources.getInteger(ke.k.f33126a) / 100.0f;
-        this.F = w0.W(context, resources, ke.i.f33098b);
-        this.G = w0.W(context, resources, ke.i.f33099c);
-        this.H = w0.W(context, resources, ke.i.f33097a);
-        this.L = w0.W(context, resources, ke.i.f33101e);
-        this.M = w0.W(context, resources, ke.i.f33100d);
-        this.I = resources.getString(m.f33133c);
-        this.J = resources.getString(m.f33134d);
-        this.K = resources.getString(m.f33132b);
-        this.P = resources.getString(m.f33137g);
-        this.Q = resources.getString(m.f33136f);
+        this.N = resources.getInteger(ke.k.f33143b) / 100.0f;
+        this.O = resources.getInteger(ke.k.f33142a) / 100.0f;
+        this.F = w0.W(context, resources, ke.i.f33114b);
+        this.G = w0.W(context, resources, ke.i.f33115c);
+        this.H = w0.W(context, resources, ke.i.f33113a);
+        this.L = w0.W(context, resources, ke.i.f33117e);
+        this.M = w0.W(context, resources, ke.i.f33116d);
+        this.I = resources.getString(m.f33149c);
+        this.J = resources.getString(m.f33150d);
+        this.K = resources.getString(m.f33148b);
+        this.P = resources.getString(m.f33153g);
+        this.Q = resources.getString(m.f33152f);
         this.f14211n0 = -9223372036854775807L;
         this.f14213o0 = -9223372036854775807L;
     }

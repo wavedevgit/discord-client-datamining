@@ -9,21 +9,21 @@ import okio.Buffer;
 final class b implements h {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final MediaType f32846b = MediaType.e("application/json; charset=UTF-8");
+    private static final MediaType f32862b = MediaType.e("application/json; charset=UTF-8");
 
     /* renamed from: a  reason: collision with root package name */
-    private final com.squareup.moshi.h f32847a;
+    private final com.squareup.moshi.h f32863a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(com.squareup.moshi.h hVar) {
-        this.f32847a = hVar;
+        this.f32863a = hVar;
     }
 
     @Override // iv.h
     /* renamed from: b */
     public RequestBody a(Object obj) {
         Buffer buffer = new Buffer();
-        this.f32847a.toJson(t.D0(buffer), obj);
-        return RequestBody.create(f32846b, buffer.L1());
+        this.f32863a.toJson(t.D0(buffer), obj);
+        return RequestBody.create(f32862b, buffer.L1());
     }
 }

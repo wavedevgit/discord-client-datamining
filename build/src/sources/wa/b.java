@@ -16,25 +16,25 @@ import va.m;
 public abstract class b implements d {
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Class f52264f = b.class;
+    private static final Class f52280f = b.class;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final byte[] f52265g = {-1, -39};
+    private static final byte[] f52281g = {-1, -39};
 
     /* renamed from: a  reason: collision with root package name */
-    private final va.d f52266a;
+    private final va.d f52282a;
 
     /* renamed from: b  reason: collision with root package name */
-    private boolean f52267b;
+    private boolean f52283b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f52268c;
+    private boolean f52284c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final PreverificationHelper f52269d;
+    private final PreverificationHelper f52285d;
 
     /* renamed from: e  reason: collision with root package name */
-    final b2.d f52270e;
+    final b2.d f52286e;
 
     public b(va.d dVar, b2.d dVar2, f fVar) {
         PreverificationHelper preverificationHelper;
@@ -43,13 +43,13 @@ public abstract class b implements d {
         } else {
             preverificationHelper = null;
         }
-        this.f52269d = preverificationHelper;
-        this.f52266a = dVar;
+        this.f52285d = preverificationHelper;
+        this.f52282a = dVar;
         if (dVar instanceof m) {
-            this.f52267b = fVar.a();
-            this.f52268c = fVar.b();
+            this.f52283b = fVar.a();
+            this.f52284c = fVar.b();
         }
-        this.f52270e = dVar2;
+        this.f52286e = dVar2;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -133,7 +133,7 @@ public abstract class b implements d {
     @Override // wa.d
     public CloseableReference a(k kVar, Bitmap.Config config, Rect rect, ColorSpace colorSpace) {
         boolean z10;
-        BitmapFactory.Options e10 = e(kVar, config, this.f52267b);
+        BitmapFactory.Options e10 = e(kVar, config, this.f52283b);
         if (e10.inPreferredConfig != Bitmap.Config.ARGB_8888) {
             z10 = true;
         } else {
@@ -153,14 +153,14 @@ public abstract class b implements d {
     public CloseableReference b(k kVar, Bitmap.Config config, Rect rect, int i10, ColorSpace colorSpace) {
         boolean z10;
         boolean I0 = kVar.I0(i10);
-        BitmapFactory.Options e10 = e(kVar, config, this.f52267b);
+        BitmapFactory.Options e10 = e(kVar, config, this.f52283b);
         u8.b N = kVar.N();
         j.g(N);
         if (kVar.C0() > i10) {
             N = new u8.a(N, i10);
         }
         if (!I0) {
-            N = new u8.b(N, f52265g);
+            N = new u8.b(N, f52281g);
         }
         if (e10.inPreferredConfig != Bitmap.Config.ARGB_8888) {
             z10 = true;
@@ -207,7 +207,7 @@ public abstract class b implements d {
     public static final class a implements s8.c {
 
         /* renamed from: a  reason: collision with root package name */
-        private static final a f52271a = new a();
+        private static final a f52287a = new a();
 
         private a() {
         }

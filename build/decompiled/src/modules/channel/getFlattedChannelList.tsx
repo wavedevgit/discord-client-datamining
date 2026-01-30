@@ -23,15 +23,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/channel/getFlattedChannelList.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0, arg1) { // Original name: getFlattenedChannelList, environment: var1
-        _fun41426: for (var _fun41426_ip = 0;;) switch (_fun41426_ip) {
+        _fun41477: for (var _fun41477_ip = 0;;) switch (_fun41477_ip) {
             case 0:
                 var2 = arguments[2];
                 var1 = arg1;
                 var _closure2_slot0 = var1;
                 var4 = undefined;
                 if (!(var2 === var4)) {
-                    _fun41426_ip = 23;
-                    continue _fun41426
+                    _fun41477_ip = 23;
+                    continue _fun41477
                 }
             case 18:
                 var2 = function() { // Original name: l, environment: var0
@@ -48,15 +48,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.bind(var4)(var1);
                 var1 = var3.map;
                 var0 = function(arg0) { // Environment: var0
-                    _fun41428: for (var _fun41428_ip = 0;;) switch (_fun41428_ip) {
+                    _fun41479: for (var _fun41479_ip = 0;;) switch (_fun41479_ip) {
                         case 0:
                             var1 = arg0;
                             var0 = var1.channel;
                             var2 = var0.id;
                             var0 = 'null';
                             if (!(var0 !== var2)) {
-                                _fun41428_ip = 56;
-                                continue _fun41428
+                                _fun41479_ip = 56;
+                                continue _fun41479
                             }
                         case 21:
                             var0 = new Array(2);
@@ -66,8 +66,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var2.id;
                             var2 = var3[var2];
                             var0[1] = var2;
-                            _fun41428_ip = 77;
-                            continue _fun41428;
+                            _fun41479_ip = 77;
+                            continue _fun41479;
                         case 56:
                             var2 = _closure2_slot0;
                             var1 = var1.channel;

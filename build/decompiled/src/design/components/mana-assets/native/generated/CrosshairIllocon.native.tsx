@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/CrosshairIllocon.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: CrosshairIllocon, environment: var1
-        _fun52291: for (var _fun52291_ip = 0;;) switch (_fun52291_ip) {
+        _fun52336: for (var _fun52336_ip = 0;;) switch (_fun52336_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.size;
                 var3 = undefined;
                 if (!(var7 === var3)) {
-                    _fun52291_ip = 32;
-                    continue _fun52291
+                    _fun52336_ip = 32;
+                    continue _fun52336
                 }
             case 29:
                 var7 = 64;
@@ -73,4 +73,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.CrosshairIllocon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4660, 6034, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4666, 6037, 2]);

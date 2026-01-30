@@ -8,16 +8,16 @@ import com.squareup.moshi.t;
 public final class a extends h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f49077a;
+    private final h f49093a;
 
     public a(h hVar) {
-        this.f49077a = hVar;
+        this.f49093a = hVar;
     }
 
     @Override // com.squareup.moshi.h
     public Object fromJson(m mVar) {
         if (mVar.E() != m.c.NULL) {
-            return this.f49077a.fromJson(mVar);
+            return this.f49093a.fromJson(mVar);
         }
         throw new j("Unexpected null at " + mVar.q());
     }
@@ -25,13 +25,13 @@ public final class a extends h {
     @Override // com.squareup.moshi.h
     public void toJson(t tVar, Object obj) {
         if (obj != null) {
-            this.f49077a.toJson(tVar, obj);
+            this.f49093a.toJson(tVar, obj);
             return;
         }
         throw new j("Unexpected null at " + tVar.q());
     }
 
     public String toString() {
-        return this.f49077a + ".nonNull()";
+        return this.f49093a + ".nonNull()";
     }
 }

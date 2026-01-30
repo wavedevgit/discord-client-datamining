@@ -9,16 +9,16 @@ import org.jetbrains.annotations.NotNull;
 public final class ErrorTypeKind {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final /* synthetic */ ErrorTypeKind[] f35993i;
+    private static final /* synthetic */ ErrorTypeKind[] f36009i;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f35994o;
+    private static final /* synthetic */ EnumEntries f36010o;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f35995d;
+    private final String f36011d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f35996e;
+    private final boolean f36012e;
     public static final ErrorTypeKind UNRESOLVED_TYPE = new ErrorTypeKind("UNRESOLVED_TYPE", 0, "Unresolved type for %s", true);
     public static final ErrorTypeKind UNRESOLVED_TYPE_PARAMETER_TYPE = new ErrorTypeKind("UNRESOLVED_TYPE_PARAMETER_TYPE", 1, "Unresolved type parameter type", true);
     public static final ErrorTypeKind UNRESOLVED_CLASS_TYPE = new ErrorTypeKind("UNRESOLVED_CLASS_TYPE", 2, "Unresolved class %s", true);
@@ -105,13 +105,13 @@ public final class ErrorTypeKind {
 
     static {
         ErrorTypeKind[] a10 = a();
-        f35993i = a10;
-        f35994o = pr.a.a(a10);
+        f36009i = a10;
+        f36010o = pr.a.a(a10);
     }
 
     private ErrorTypeKind(String str, int i10, String str2, boolean z10) {
-        this.f35995d = str2;
-        this.f35996e = z10;
+        this.f36011d = str2;
+        this.f36012e = z10;
     }
 
     private static final /* synthetic */ ErrorTypeKind[] a() {
@@ -123,16 +123,16 @@ public final class ErrorTypeKind {
     }
 
     public static ErrorTypeKind[] values() {
-        return (ErrorTypeKind[]) f35993i.clone();
+        return (ErrorTypeKind[]) f36009i.clone();
     }
 
     @NotNull
     public final String getDebugMessage() {
-        return this.f35995d;
+        return this.f36011d;
     }
 
     public final boolean isUnresolved() {
-        return this.f35996e;
+        return this.f36012e;
     }
 
     /* synthetic */ ErrorTypeKind(String str, int i10, String str2, boolean z10, int i11, DefaultConstructorMarker defaultConstructorMarker) {

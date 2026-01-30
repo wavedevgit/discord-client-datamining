@@ -9,10 +9,10 @@ import androidx.appcompat.widget.v0;
 public abstract class l {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final int[] f16205a = {yg.b.f54351l};
+    private static final int[] f16205a = {yg.b.f54367l};
 
     /* renamed from: b  reason: collision with root package name */
-    private static final int[] f16206b = {yg.b.f54352m};
+    private static final int[] f16206b = {yg.b.f54368m};
 
     public static void a(Context context) {
         e(context, f16205a, "Theme.AppCompat");
@@ -20,11 +20,11 @@ public abstract class l {
 
     private static void b(Context context, AttributeSet attributeSet, int i10, int i11) {
         TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, yg.k.Z7, i10, i11);
-        boolean z10 = obtainStyledAttributes.getBoolean(yg.k.f54543b8, false);
+        boolean z10 = obtainStyledAttributes.getBoolean(yg.k.f54559b8, false);
         obtainStyledAttributes.recycle();
         if (z10) {
             TypedValue typedValue = new TypedValue();
-            if (!context.getTheme().resolveAttribute(yg.b.f54362w, typedValue, true) || (typedValue.type == 18 && typedValue.data == 0)) {
+            if (!context.getTheme().resolveAttribute(yg.b.f54378w, typedValue, true) || (typedValue.type == 18 && typedValue.data == 0)) {
                 c(context);
             }
         }
@@ -39,14 +39,14 @@ public abstract class l {
         boolean z10;
         TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, yg.k.Z7, i10, i11);
         boolean z11 = false;
-        if (!obtainStyledAttributes.getBoolean(yg.k.f54553c8, false)) {
+        if (!obtainStyledAttributes.getBoolean(yg.k.f54569c8, false)) {
             obtainStyledAttributes.recycle();
             return;
         }
         if (iArr2 != null && iArr2.length != 0) {
             z10 = f(context, attributeSet, iArr, i10, i11, iArr2);
         } else {
-            if (obtainStyledAttributes.getResourceId(yg.k.f54533a8, -1) != -1) {
+            if (obtainStyledAttributes.getResourceId(yg.k.f54549a8, -1) != -1) {
                 z11 = true;
             }
             z10 = z11;
@@ -78,7 +78,7 @@ public abstract class l {
     }
 
     public static boolean g(Context context) {
-        return lh.b.b(context, yg.b.f54361v, false);
+        return lh.b.b(context, yg.b.f54377v, false);
     }
 
     private static boolean h(Context context, int[] iArr) {

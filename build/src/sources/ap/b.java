@@ -56,25 +56,25 @@ public final class b implements ViewBinding {
 
     public static b a(View view) {
         View a10;
-        int i10 = m1.f55981a;
+        int i10 = m1.f55997a;
         FrameLayout frameLayout = (FrameLayout) e4.a.a(view, i10);
         if (frameLayout != null) {
-            i10 = m1.f55982b;
+            i10 = m1.f55998b;
             ConstraintLayout constraintLayout = (ConstraintLayout) e4.a.a(view, i10);
             if (constraintLayout != null) {
-                i10 = m1.f55983c;
+                i10 = m1.f55999c;
                 Flow flow = (Flow) e4.a.a(view, i10);
                 if (flow != null) {
-                    i10 = m1.f55984d;
+                    i10 = m1.f56000d;
                     TextView textView = (TextView) e4.a.a(view, i10);
                     if (textView != null) {
-                        i10 = m1.f55985e;
+                        i10 = m1.f56001e;
                         Button button = (Button) e4.a.a(view, i10);
                         if (button != null) {
-                            i10 = m1.f55986f;
+                            i10 = m1.f56002f;
                             Button button2 = (Button) e4.a.a(view, i10);
-                            if (button2 != null && (a10 = e4.a.a(view, (i10 = m1.f55987g))) != null) {
-                                i10 = m1.f55988h;
+                            if (button2 != null && (a10 = e4.a.a(view, (i10 = m1.f56003g))) != null) {
+                                i10 = m1.f56004h;
                                 TextView textView2 = (TextView) e4.a.a(view, i10);
                                 if (textView2 != null) {
                                     return new b((CoordinatorLayout) view, frameLayout, constraintLayout, flow, textView, button, button2, a10, textView2);
@@ -89,7 +89,7 @@ public final class b implements ViewBinding {
     }
 
     public static b c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(n1.f55992b, viewGroup, false);
+        View inflate = layoutInflater.inflate(n1.f56008b, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }

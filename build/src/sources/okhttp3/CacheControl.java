@@ -8,79 +8,79 @@ import kotlin.text.StringsKt;
 public final class CacheControl {
 
     /* renamed from: n  reason: collision with root package name */
-    public static final b f43988n = new b(null);
+    public static final b f44004n = new b(null);
 
     /* renamed from: o  reason: collision with root package name */
-    public static final CacheControl f43989o = new a().d().a();
+    public static final CacheControl f44005o = new a().d().a();
 
     /* renamed from: p  reason: collision with root package name */
-    public static final CacheControl f43990p = new a().f().c(Integer.MAX_VALUE, TimeUnit.SECONDS).a();
+    public static final CacheControl f44006p = new a().f().c(Integer.MAX_VALUE, TimeUnit.SECONDS).a();
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f43991a;
+    private final boolean f44007a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f43992b;
+    private final boolean f44008b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f43993c;
+    private final int f44009c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f43994d;
+    private final int f44010d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f43995e;
+    private final boolean f44011e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final boolean f43996f;
+    private final boolean f44012f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final boolean f43997g;
+    private final boolean f44013g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final int f43998h;
+    private final int f44014h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f43999i;
+    private final int f44015i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final boolean f44000j;
+    private final boolean f44016j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final boolean f44001k;
+    private final boolean f44017k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final boolean f44002l;
+    private final boolean f44018l;
 
     /* renamed from: m  reason: collision with root package name */
-    private String f44003m;
+    private String f44019m;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private boolean f44004a;
+        private boolean f44020a;
 
         /* renamed from: b  reason: collision with root package name */
-        private boolean f44005b;
+        private boolean f44021b;
 
         /* renamed from: c  reason: collision with root package name */
-        private int f44006c = -1;
+        private int f44022c = -1;
 
         /* renamed from: d  reason: collision with root package name */
-        private int f44007d = -1;
+        private int f44023d = -1;
 
         /* renamed from: e  reason: collision with root package name */
-        private int f44008e = -1;
+        private int f44024e = -1;
 
         /* renamed from: f  reason: collision with root package name */
-        private boolean f44009f;
+        private boolean f44025f;
 
         /* renamed from: g  reason: collision with root package name */
-        private boolean f44010g;
+        private boolean f44026g;
 
         /* renamed from: h  reason: collision with root package name */
-        private boolean f44011h;
+        private boolean f44027h;
 
         private final int b(long j10) {
             if (j10 > 2147483647L) {
@@ -90,30 +90,30 @@ public final class CacheControl {
         }
 
         public final CacheControl a() {
-            return new CacheControl(this.f44004a, this.f44005b, this.f44006c, -1, false, false, false, this.f44007d, this.f44008e, this.f44009f, this.f44010g, this.f44011h, null, null);
+            return new CacheControl(this.f44020a, this.f44021b, this.f44022c, -1, false, false, false, this.f44023d, this.f44024e, this.f44025f, this.f44026g, this.f44027h, null, null);
         }
 
         public final a c(int i10, TimeUnit timeUnit) {
             Intrinsics.checkNotNullParameter(timeUnit, "timeUnit");
             if (i10 >= 0) {
-                this.f44007d = b(timeUnit.toSeconds(i10));
+                this.f44023d = b(timeUnit.toSeconds(i10));
                 return this;
             }
             throw new IllegalArgumentException(("maxStale < 0: " + i10).toString());
         }
 
         public final a d() {
-            this.f44004a = true;
+            this.f44020a = true;
             return this;
         }
 
         public final a e() {
-            this.f44005b = true;
+            this.f44021b = true;
             return this;
         }
 
         public final a f() {
-            this.f44009f = true;
+            this.f44025f = true;
             return this;
         }
     }
@@ -159,87 +159,87 @@ public final class CacheControl {
     }
 
     public final boolean a() {
-        return this.f43995e;
+        return this.f44011e;
     }
 
     public final boolean b() {
-        return this.f43996f;
+        return this.f44012f;
     }
 
     public final int c() {
-        return this.f43993c;
+        return this.f44009c;
     }
 
     public final int d() {
-        return this.f43998h;
+        return this.f44014h;
     }
 
     public final int e() {
-        return this.f43999i;
+        return this.f44015i;
     }
 
     public final boolean f() {
-        return this.f43997g;
+        return this.f44013g;
     }
 
     public final boolean g() {
-        return this.f43991a;
+        return this.f44007a;
     }
 
     public final boolean h() {
-        return this.f43992b;
+        return this.f44008b;
     }
 
     public final boolean i() {
-        return this.f44000j;
+        return this.f44016j;
     }
 
     public String toString() {
-        String str = this.f44003m;
+        String str = this.f44019m;
         if (str == null) {
             StringBuilder sb2 = new StringBuilder();
-            if (this.f43991a) {
+            if (this.f44007a) {
                 sb2.append("no-cache, ");
             }
-            if (this.f43992b) {
+            if (this.f44008b) {
                 sb2.append("no-store, ");
             }
-            if (this.f43993c != -1) {
+            if (this.f44009c != -1) {
                 sb2.append("max-age=");
-                sb2.append(this.f43993c);
+                sb2.append(this.f44009c);
                 sb2.append(", ");
             }
-            if (this.f43994d != -1) {
+            if (this.f44010d != -1) {
                 sb2.append("s-maxage=");
-                sb2.append(this.f43994d);
+                sb2.append(this.f44010d);
                 sb2.append(", ");
             }
-            if (this.f43995e) {
+            if (this.f44011e) {
                 sb2.append("private, ");
             }
-            if (this.f43996f) {
+            if (this.f44012f) {
                 sb2.append("public, ");
             }
-            if (this.f43997g) {
+            if (this.f44013g) {
                 sb2.append("must-revalidate, ");
             }
-            if (this.f43998h != -1) {
+            if (this.f44014h != -1) {
                 sb2.append("max-stale=");
-                sb2.append(this.f43998h);
+                sb2.append(this.f44014h);
                 sb2.append(", ");
             }
-            if (this.f43999i != -1) {
+            if (this.f44015i != -1) {
                 sb2.append("min-fresh=");
-                sb2.append(this.f43999i);
+                sb2.append(this.f44015i);
                 sb2.append(", ");
             }
-            if (this.f44000j) {
+            if (this.f44016j) {
                 sb2.append("only-if-cached, ");
             }
-            if (this.f44001k) {
+            if (this.f44017k) {
                 sb2.append("no-transform, ");
             }
-            if (this.f44002l) {
+            if (this.f44018l) {
                 sb2.append("immutable, ");
             }
             if (sb2.length() == 0) {
@@ -248,25 +248,25 @@ public final class CacheControl {
             sb2.delete(sb2.length() - 2, sb2.length());
             String sb3 = sb2.toString();
             Intrinsics.checkNotNullExpressionValue(sb3, "StringBuilder().apply(builderAction).toString()");
-            this.f44003m = sb3;
+            this.f44019m = sb3;
             return sb3;
         }
         return str;
     }
 
     private CacheControl(boolean z10, boolean z11, int i10, int i11, boolean z12, boolean z13, boolean z14, int i12, int i13, boolean z15, boolean z16, boolean z17, String str) {
-        this.f43991a = z10;
-        this.f43992b = z11;
-        this.f43993c = i10;
-        this.f43994d = i11;
-        this.f43995e = z12;
-        this.f43996f = z13;
-        this.f43997g = z14;
-        this.f43998h = i12;
-        this.f43999i = i13;
-        this.f44000j = z15;
-        this.f44001k = z16;
-        this.f44002l = z17;
-        this.f44003m = str;
+        this.f44007a = z10;
+        this.f44008b = z11;
+        this.f44009c = i10;
+        this.f44010d = i11;
+        this.f44011e = z12;
+        this.f44012f = z13;
+        this.f44013g = z14;
+        this.f44014h = i12;
+        this.f44015i = i13;
+        this.f44016j = z15;
+        this.f44017k = z16;
+        this.f44018l = z17;
+        this.f44019m = str;
     }
 }

@@ -13,28 +13,28 @@ public final class a implements Metadata.b {
     public static final Parcelable.Creator<a> CREATOR = new C0415a();
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f31956d;
+    public final int f31972d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final String f31957e;
+    public final String f31973e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final String f31958i;
+    public final String f31974i;
 
     /* renamed from: o  reason: collision with root package name */
-    public final int f31959o;
+    public final int f31975o;
 
     /* renamed from: p  reason: collision with root package name */
-    public final int f31960p;
+    public final int f31976p;
 
     /* renamed from: q  reason: collision with root package name */
-    public final int f31961q;
+    public final int f31977q;
 
     /* renamed from: r  reason: collision with root package name */
-    public final int f31962r;
+    public final int f31978r;
 
     /* renamed from: s  reason: collision with root package name */
-    public final byte[] f31963s;
+    public final byte[] f31979s;
 
     /* renamed from: jd.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -56,19 +56,19 @@ public final class a implements Metadata.b {
     }
 
     public a(int i10, String str, String str2, int i11, int i12, int i13, int i14, byte[] bArr) {
-        this.f31956d = i10;
-        this.f31957e = str;
-        this.f31958i = str2;
-        this.f31959o = i11;
-        this.f31960p = i12;
-        this.f31961q = i13;
-        this.f31962r = i14;
-        this.f31963s = bArr;
+        this.f31972d = i10;
+        this.f31973e = str;
+        this.f31974i = str2;
+        this.f31975o = i11;
+        this.f31976p = i12;
+        this.f31977q = i13;
+        this.f31978r = i14;
+        this.f31979s = bArr;
     }
 
     public static a a(h0 h0Var) {
         int q10 = h0Var.q();
-        String F = h0Var.F(h0Var.q(), d.f28519a);
+        String F = h0Var.F(h0Var.q(), d.f28535a);
         String E = h0Var.E(h0Var.q());
         int q11 = h0Var.q();
         int q12 = h0Var.q();
@@ -82,7 +82,7 @@ public final class a implements Metadata.b {
 
     @Override // com.google.android.exoplayer2.metadata.Metadata.b
     public void d1(MediaMetadata.b bVar) {
-        bVar.I(this.f31963s, this.f31956d);
+        bVar.I(this.f31979s, this.f31972d);
     }
 
     @Override // android.os.Parcelable
@@ -96,7 +96,7 @@ public final class a implements Metadata.b {
         }
         if (obj != null && a.class == obj.getClass()) {
             a aVar = (a) obj;
-            if (this.f31956d == aVar.f31956d && this.f31957e.equals(aVar.f31957e) && this.f31958i.equals(aVar.f31958i) && this.f31959o == aVar.f31959o && this.f31960p == aVar.f31960p && this.f31961q == aVar.f31961q && this.f31962r == aVar.f31962r && Arrays.equals(this.f31963s, aVar.f31963s)) {
+            if (this.f31972d == aVar.f31972d && this.f31973e.equals(aVar.f31973e) && this.f31974i.equals(aVar.f31974i) && this.f31975o == aVar.f31975o && this.f31976p == aVar.f31976p && this.f31977q == aVar.f31977q && this.f31978r == aVar.f31978r && Arrays.equals(this.f31979s, aVar.f31979s)) {
                 return true;
             }
         }
@@ -104,33 +104,33 @@ public final class a implements Metadata.b {
     }
 
     public int hashCode() {
-        return ((((((((((((((527 + this.f31956d) * 31) + this.f31957e.hashCode()) * 31) + this.f31958i.hashCode()) * 31) + this.f31959o) * 31) + this.f31960p) * 31) + this.f31961q) * 31) + this.f31962r) * 31) + Arrays.hashCode(this.f31963s);
+        return ((((((((((((((527 + this.f31972d) * 31) + this.f31973e.hashCode()) * 31) + this.f31974i.hashCode()) * 31) + this.f31975o) * 31) + this.f31976p) * 31) + this.f31977q) * 31) + this.f31978r) * 31) + Arrays.hashCode(this.f31979s);
     }
 
     public String toString() {
-        return "Picture: mimeType=" + this.f31957e + ", description=" + this.f31958i;
+        return "Picture: mimeType=" + this.f31973e + ", description=" + this.f31974i;
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeInt(this.f31956d);
-        parcel.writeString(this.f31957e);
-        parcel.writeString(this.f31958i);
-        parcel.writeInt(this.f31959o);
-        parcel.writeInt(this.f31960p);
-        parcel.writeInt(this.f31961q);
-        parcel.writeInt(this.f31962r);
-        parcel.writeByteArray(this.f31963s);
+        parcel.writeInt(this.f31972d);
+        parcel.writeString(this.f31973e);
+        parcel.writeString(this.f31974i);
+        parcel.writeInt(this.f31975o);
+        parcel.writeInt(this.f31976p);
+        parcel.writeInt(this.f31977q);
+        parcel.writeInt(this.f31978r);
+        parcel.writeByteArray(this.f31979s);
     }
 
     a(Parcel parcel) {
-        this.f31956d = parcel.readInt();
-        this.f31957e = (String) w0.j(parcel.readString());
-        this.f31958i = (String) w0.j(parcel.readString());
-        this.f31959o = parcel.readInt();
-        this.f31960p = parcel.readInt();
-        this.f31961q = parcel.readInt();
-        this.f31962r = parcel.readInt();
-        this.f31963s = (byte[]) w0.j(parcel.createByteArray());
+        this.f31972d = parcel.readInt();
+        this.f31973e = (String) w0.j(parcel.readString());
+        this.f31974i = (String) w0.j(parcel.readString());
+        this.f31975o = parcel.readInt();
+        this.f31976p = parcel.readInt();
+        this.f31977q = parcel.readInt();
+        this.f31978r = parcel.readInt();
+        this.f31979s = (byte[]) w0.j(parcel.createByteArray());
     }
 }

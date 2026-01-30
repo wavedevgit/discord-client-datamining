@@ -65,7 +65,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var5;
         var0 = function() { // Environment: var0
-            _fun111515: for (var _fun111515_ip = 0;;) switch (_fun111515_ip) {
+            _fun111777: for (var _fun111777_ip = 0;;) switch (_fun111777_ip) {
                 case 0:
                     var3 = _closure1_slot2;
                     var1 = var3.getChannel;
@@ -75,15 +75,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = null;
                     var3 = var1 != var6;
                     if (!var3) {
-                        _fun111515_ip = 77;
-                        continue _fun111515
+                        _fun111777_ip = 77;
+                        continue _fun111777
                     }
                 case 35:
                     var4 = var6.isPrivate;
                     var4 = var4.bind(var6)();
                     if (var4) {
-                        _fun111515_ip = 74;
-                        continue _fun111515
+                        _fun111777_ip = 74;
+                        continue _fun111777
                     }
                 case 48:
                     var8 = _closure1_slot4;
@@ -97,8 +97,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.canConnect = var3;
                     var1 = var1 == var6;
                     if (var1) {
-                        _fun111515_ip = 132;
-                        continue _fun111515
+                        _fun111777_ip = 132;
+                        continue _fun111777
                     }
                 case 89:
                     var5 = _closure1_slot0;
@@ -121,4 +121,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1410, 3050, 3480, 483, 566, 4194, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1410, 3050, 3480, 483, 566, 4200, 2]);

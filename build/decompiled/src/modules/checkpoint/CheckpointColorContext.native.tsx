@@ -37,4 +37,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.CheckpointColorContext = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 9119, 9118, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 9123, 9122, 2]);

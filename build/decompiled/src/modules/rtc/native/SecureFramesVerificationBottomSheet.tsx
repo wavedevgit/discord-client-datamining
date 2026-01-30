@@ -141,7 +141,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/rtc/native/SecureFramesVerificationBottomSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: SecureFramesVerificationBottomSheet, environment: var1
-        _fun66765: for (var _fun66765_ip = 0;;) switch (_fun66765_ip) {
+        _fun66809: for (var _fun66809_ip = 0;;) switch (_fun66809_ip) {
             case 0:
                 var1 = arg0;
                 var23 = var1.title;
@@ -173,13 +173,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[0] = var14;
                 var2[1] = var1;
                 var1 = function() { // Environment: var0
-                    _fun66766: for (var _fun66766_ip = 0;;) switch (_fun66766_ip) {
+                    _fun66810: for (var _fun66810_ip = 0;;) switch (_fun66810_ip) {
                         case 0:
                             var2 = _closure2_slot1;
                             var1 = null;
                             if (!(var1 != var2)) {
-                                _fun66766_ip = 77;
-                                continue _fun66766
+                                _fun66810_ip = 77;
+                                continue _fun66810
                             }
                         case 13:
                             var3 = _closure2_slot1;
@@ -367,8 +367,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9.title = var16;
                 var15 = var15 != var14;
                 if (!var15) {
-                    _fun66765_ip = 844;
-                    continue _fun66765
+                    _fun66809_ip = 844;
+                    continue _fun66809
                 }
             case 807:
                 var18 = _closure1_slot8;
@@ -412,4 +412,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 8222, 33, 1297, 671, 8227, 3237, 4887, 5167, 5165, 4858, 1234, 3895, 4033, 4814, 8236, 8239, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 8225, 33, 1297, 671, 8230, 3237, 4893, 5173, 5171, 4864, 1234, 3901, 4039, 4820, 8239, 8242, 2]);

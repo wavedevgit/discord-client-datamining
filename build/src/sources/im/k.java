@@ -25,49 +25,49 @@ public final class k extends x0.b implements v, n {
     private g A;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ReactViewGroup f28611d;
+    private final ReactViewGroup f28627d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final View f28612e;
+    private final View f28628e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final ThemedReactContext f28613i;
+    private final ThemedReactContext f28629i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final l f28614o;
+    private final l f28630o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final int f28615p;
+    private final int f28631p;
 
     /* renamed from: q  reason: collision with root package name */
-    private double f28616q;
+    private double f28632q;
 
     /* renamed from: r  reason: collision with root package name */
-    private double f28617r;
+    private double f28633r;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f28618s;
+    private boolean f28634s;
 
     /* renamed from: t  reason: collision with root package name */
-    private boolean f28619t;
+    private boolean f28635t;
 
     /* renamed from: u  reason: collision with root package name */
-    private boolean f28620u;
+    private boolean f28636u;
 
     /* renamed from: v  reason: collision with root package name */
-    private int f28621v;
+    private int f28637v;
 
     /* renamed from: w  reason: collision with root package name */
-    private int f28622w;
+    private int f28638w;
 
     /* renamed from: x  reason: collision with root package name */
-    private HashSet f28623x;
+    private HashSet f28639x;
 
     /* renamed from: y  reason: collision with root package name */
-    private boolean f28624y;
+    private boolean f28640y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final ViewTreeObserver.OnGlobalFocusChangeListener f28625z;
+    private final ViewTreeObserver.OnGlobalFocusChangeListener f28641z;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public k(ReactViewGroup eventPropagationView, View view, ThemedReactContext themedReactContext, l config) {
@@ -75,20 +75,20 @@ public final class k extends x0.b implements v, n {
         Intrinsics.checkNotNullParameter(eventPropagationView, "eventPropagationView");
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(config, "config");
-        this.f28611d = eventPropagationView;
-        this.f28612e = view;
-        this.f28613i = themedReactContext;
-        this.f28614o = config;
-        this.f28615p = UIManagerHelper.getSurfaceId(eventPropagationView);
-        this.f28622w = -1;
-        this.f28623x = new HashSet();
+        this.f28627d = eventPropagationView;
+        this.f28628e = view;
+        this.f28629i = themedReactContext;
+        this.f28630o = config;
+        this.f28631p = UIManagerHelper.getSurfaceId(eventPropagationView);
+        this.f28638w = -1;
+        this.f28639x = new HashSet();
         ViewTreeObserver.OnGlobalFocusChangeListener onGlobalFocusChangeListener = new ViewTreeObserver.OnGlobalFocusChangeListener() { // from class: im.j
             @Override // android.view.ViewTreeObserver.OnGlobalFocusChangeListener
             public final void onGlobalFocusChanged(View view2, View view3) {
                 k.f(k.this, view2, view3);
             }
         };
-        this.f28625z = onGlobalFocusChangeListener;
+        this.f28641z = onGlobalFocusChangeListener;
         if ((config.a() & config.d()) == 0) {
             this.A = new g(view, eventPropagationView, themedReactContext);
             view.getViewTreeObserver().addOnGlobalFocusChangeListener(onGlobalFocusChangeListener);
@@ -100,17 +100,17 @@ public final class k extends x0.b implements v, n {
     /* JADX INFO: Access modifiers changed from: private */
     public static final void f(k kVar, View view, View view2) {
         if (view2 instanceof EditText) {
-            kVar.f28622w = ((EditText) view2).getId();
-            if (kVar.f28618s && view != null) {
-                ThemedReactContext themedReactContext = kVar.f28613i;
-                int id2 = kVar.f28611d.getId();
-                int i10 = kVar.f28615p;
-                int id3 = kVar.f28611d.getId();
+            kVar.f28638w = ((EditText) view2).getId();
+            if (kVar.f28634s && view != null) {
+                ThemedReactContext themedReactContext = kVar.f28629i;
+                int id2 = kVar.f28627d.getId();
+                int i10 = kVar.f28631p;
+                int id3 = kVar.f28627d.getId();
                 f.a aVar = em.f.f22941f;
-                fm.g.a(themedReactContext, id2, new em.f(i10, id3, aVar.d(), kVar.f28616q, 1.0d, 0, kVar.f28622w));
-                fm.g.a(kVar.f28613i, kVar.f28611d.getId(), new em.f(kVar.f28615p, kVar.f28611d.getId(), aVar.a(), kVar.f28616q, 1.0d, 0, kVar.f28622w));
-                fm.g.b(kVar.f28613i, "KeyboardController::keyboardWillShow", kVar.h(kVar.f28616q));
-                fm.g.b(kVar.f28613i, "KeyboardController::keyboardDidShow", kVar.h(kVar.f28616q));
+                fm.g.a(themedReactContext, id2, new em.f(i10, id3, aVar.d(), kVar.f28632q, 1.0d, 0, kVar.f28638w));
+                fm.g.a(kVar.f28629i, kVar.f28627d.getId(), new em.f(kVar.f28631p, kVar.f28627d.getId(), aVar.a(), kVar.f28632q, 1.0d, 0, kVar.f28638w));
+                fm.g.b(kVar.f28629i, "KeyboardController::keyboardWillShow", kVar.h(kVar.f28632q));
+                fm.g.b(kVar.f28629i, "KeyboardController::keyboardDidShow", kVar.h(kVar.f28632q));
             }
         }
     }
@@ -119,14 +119,14 @@ public final class k extends x0.b implements v, n {
         int i10;
         Insets f10;
         Insets f11;
-        WindowInsetsCompat G = h0.G(this.f28612e);
+        WindowInsetsCompat G = h0.G(this.f28628e);
         int i11 = 0;
         if (G != null && (f11 = G.f(WindowInsetsCompat.p.c())) != null) {
             i10 = f11.f3153d;
         } else {
             i10 = 0;
         }
-        if (!this.f28614o.c() && G != null && (f10 = G.f(WindowInsetsCompat.p.f())) != null) {
+        if (!this.f28630o.c() && G != null && (f10 = G.f(WindowInsetsCompat.p.f())) != null) {
             i11 = f10.f3153d;
         }
         return kotlin.ranges.d.b(fm.d.a(i10 - i11), 0.0d);
@@ -137,29 +137,29 @@ public final class k extends x0.b implements v, n {
         WritableMap createMap = Arguments.createMap();
         Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
         createMap.putDouble("height", d10);
-        createMap.putInt("duration", this.f28621v);
+        createMap.putInt("duration", this.f28637v);
         createMap.putDouble("timestamp", System.currentTimeMillis());
-        createMap.putInt("target", this.f28622w);
-        EditText b10 = nm.a.f41976a.b();
+        createMap.putInt("target", this.f28638w);
+        EditText b10 = nm.a.f41992a.b();
         if (b10 != null) {
             str = fm.c.f(b10);
         } else {
             str = null;
         }
         createMap.putString("type", str);
-        createMap.putString("appearance", fm.g.c(this.f28613i));
+        createMap.putString("appearance", fm.g.c(this.f28629i));
         return createMap;
     }
 
     private final boolean i() {
-        if (this.f28621v == -1) {
+        if (this.f28637v == -1) {
             return true;
         }
         return false;
     }
 
     private final boolean j() {
-        WindowInsetsCompat G = h0.G(this.f28612e);
+        WindowInsetsCompat G = h0.G(this.f28628e);
         if (G != null) {
             return G.u(WindowInsetsCompat.p.c());
         }
@@ -171,43 +171,43 @@ public final class k extends x0.b implements v, n {
         String str;
         double d10;
         double g10 = kVar.g();
-        kVar.f28618s = kVar.j();
-        kVar.f28617r = g10;
-        if (kVar.f28623x.contains(x0Var)) {
-            kVar.f28621v = 0;
-            kVar.f28623x.remove(x0Var);
+        kVar.f28634s = kVar.j();
+        kVar.f28633r = g10;
+        if (kVar.f28639x.contains(x0Var)) {
+            kVar.f28637v = 0;
+            kVar.f28639x.remove(x0Var);
             return;
         }
-        ThemedReactContext themedReactContext = kVar.f28613i;
-        if (!kVar.f28618s) {
+        ThemedReactContext themedReactContext = kVar.f28629i;
+        if (!kVar.f28634s) {
             str = "keyboardDidHide";
         } else {
             str = "keyboardDidShow";
         }
         fm.g.b(themedReactContext, "KeyboardController::" + str, kVar.h(g10));
-        ThemedReactContext themedReactContext2 = kVar.f28613i;
-        int id2 = kVar.f28611d.getId();
-        int i10 = kVar.f28615p;
-        int id3 = kVar.f28611d.getId();
+        ThemedReactContext themedReactContext2 = kVar.f28629i;
+        int id2 = kVar.f28627d.getId();
+        int i10 = kVar.f28631p;
+        int id3 = kVar.f28627d.getId();
         f.a.EnumC0297a a10 = em.f.f22941f.a();
-        if (!kVar.f28618s) {
+        if (!kVar.f28634s) {
             d10 = 0.0d;
         } else {
             d10 = 1.0d;
         }
-        fm.g.a(themedReactContext2, id2, new em.f(i10, id3, a10, g10, d10, kVar.f28621v, kVar.f28622w));
-        kVar.f28621v = 0;
+        fm.g.a(themedReactContext2, id2, new em.f(i10, id3, a10, g10, d10, kVar.f28637v, kVar.f28638w));
+        kVar.f28637v = 0;
     }
 
     private final void m(double d10) {
-        this.f28621v = 0;
-        fm.g.b(this.f28613i, "KeyboardController::keyboardWillShow", h(d10));
+        this.f28637v = 0;
+        fm.g.b(this.f28629i, "KeyboardController::keyboardWillShow", h(d10));
         f.a aVar = em.f.f22941f;
         for (f.a.EnumC0297a enumC0297a : CollectionsKt.o(aVar.d(), aVar.c(), aVar.a())) {
-            fm.g.a(this.f28613i, this.f28611d.getId(), new em.f(this.f28615p, this.f28611d.getId(), enumC0297a, d10, 1.0d, 0, this.f28622w));
+            fm.g.a(this.f28629i, this.f28627d.getId(), new em.f(this.f28631p, this.f28627d.getId(), enumC0297a, d10, 1.0d, 0, this.f28638w));
         }
-        fm.g.b(this.f28613i, "KeyboardController::keyboardDidShow", h(d10));
-        this.f28616q = d10;
+        fm.g.b(this.f28629i, "KeyboardController::keyboardDidShow", h(d10));
+        this.f28632q = d10;
     }
 
     public static /* synthetic */ void p(k kVar, Double d10, Boolean bool, int i10, Object obj) {
@@ -232,12 +232,12 @@ public final class k extends x0.b implements v, n {
         Intrinsics.checkNotNullParameter(insets, "insets");
         double g10 = g();
         boolean z14 = false;
-        if (this.f28618s && j()) {
+        if (this.f28634s && j()) {
             z10 = true;
         } else {
             z10 = false;
         }
-        if (!this.f28619t && !gm.a.f27022a.a()) {
+        if (!this.f28635t && !gm.a.f27038a.a()) {
             z11 = false;
         } else {
             z11 = true;
@@ -247,21 +247,21 @@ public final class k extends x0.b implements v, n {
         } else {
             z12 = false;
         }
-        if (this.f28616q == g10) {
+        if (this.f28632q == g10) {
             z14 = true;
         }
-        if (!z11 && !this.f28620u) {
-            jm.a aVar = jm.a.f32237a;
-            str2 = m.f28630a;
+        if (!z11 && !this.f28636u) {
+            jm.a aVar = jm.a.f32253a;
+            str2 = m.f28646a;
             jm.a.b(aVar, str2, "IME changed without animation – sending synthetic events", null, 4, null);
             o(Double.valueOf(g10), Boolean.valueOf(j()));
         }
         if (z12 && !z14) {
-            z13 = m.f28631b;
+            z13 = m.f28647b;
             if (!z13) {
-                jm.a aVar2 = jm.a.f32237a;
-                str = m.f28630a;
-                jm.a.b(aVar2, str, "onApplyWindowInsets: " + this.f28616q + " -> " + g10, null, 4, null);
+                jm.a aVar2 = jm.a.f32253a;
+                str = m.f28646a;
+                jm.a.b(aVar2, str, "onApplyWindowInsets: " + this.f28632q + " -> " + g10, null, 4, null);
                 g gVar = this.A;
                 if (gVar != null) {
                     gVar.l();
@@ -274,11 +274,11 @@ public final class k extends x0.b implements v, n {
 
     @Override // im.n
     public void b(boolean z10) {
-        this.f28624y = z10;
+        this.f28640y = z10;
     }
 
     public final void e() {
-        this.f28612e.getViewTreeObserver().removeOnGlobalFocusChangeListener(this.f28625z);
+        this.f28628e.getViewTreeObserver().removeOnGlobalFocusChangeListener(this.f28641z);
         g gVar = this.A;
         if (gVar != null) {
             gVar.f();
@@ -286,7 +286,7 @@ public final class k extends x0.b implements v, n {
     }
 
     public boolean k() {
-        return this.f28624y;
+        return this.f28640y;
     }
 
     public void n(boolean z10) {
@@ -309,11 +309,11 @@ public final class k extends x0.b implements v, n {
         } else {
             j10 = j();
         }
-        this.f28618s = j10;
-        this.f28617r = d12;
-        this.f28619t = false;
-        this.f28621v = 0;
-        ThemedReactContext themedReactContext = this.f28613i;
+        this.f28634s = j10;
+        this.f28633r = d12;
+        this.f28635t = false;
+        this.f28637v = 0;
+        ThemedReactContext themedReactContext = this.f28629i;
         if (!j10) {
             str = "keyboardDidHide";
         } else {
@@ -322,16 +322,16 @@ public final class k extends x0.b implements v, n {
         fm.g.b(themedReactContext, "KeyboardController::" + str, h(d12));
         f.a aVar = em.f.f22941f;
         for (f.a.EnumC0297a enumC0297a : CollectionsKt.o(aVar.c(), aVar.a())) {
-            ThemedReactContext themedReactContext2 = this.f28613i;
-            int id2 = this.f28611d.getId();
-            int i10 = this.f28615p;
-            int id3 = this.f28611d.getId();
-            if (!this.f28618s) {
+            ThemedReactContext themedReactContext2 = this.f28629i;
+            int id2 = this.f28627d.getId();
+            int i10 = this.f28631p;
+            int id3 = this.f28627d.getId();
+            if (!this.f28634s) {
                 d11 = 0.0d;
             } else {
                 d11 = 1.0d;
             }
-            fm.g.a(themedReactContext2, id2, new em.f(i10, id3, enumC0297a, d12, d11, this.f28621v, this.f28622w));
+            fm.g.a(themedReactContext2, id2, new em.f(i10, id3, enumC0297a, d12, d11, this.f28637v, this.f28638w));
         }
     }
 
@@ -340,9 +340,9 @@ public final class k extends x0.b implements v, n {
         Intrinsics.checkNotNullParameter(animation, "animation");
         super.onEnd(animation);
         if (fm.j.a(animation) && !k()) {
-            this.f28620u = false;
-            this.f28619t = false;
-            this.f28621v = (int) animation.a();
+            this.f28636u = false;
+            this.f28635t = false;
+            this.f28637v = (int) animation.a();
             Runnable runnable = new Runnable() { // from class: im.i
                 @Override // java.lang.Runnable
                 public final void run() {
@@ -350,7 +350,7 @@ public final class k extends x0.b implements v, n {
                 }
             };
             if (i()) {
-                this.f28612e.post(runnable);
+                this.f28628e.post(runnable);
             } else {
                 runnable.run();
             }
@@ -362,7 +362,7 @@ public final class k extends x0.b implements v, n {
         Intrinsics.checkNotNullParameter(animation, "animation");
         super.onPrepare(animation);
         if (fm.j.a(animation)) {
-            this.f28620u = true;
+            this.f28636u = true;
         }
     }
 
@@ -380,7 +380,7 @@ public final class k extends x0.b implements v, n {
             if (it.hasNext()) {
                 obj = it.next();
                 x0 x0Var = (x0) obj;
-                if (fm.j.a(x0Var) && !this.f28623x.contains(x0Var)) {
+                if (fm.j.a(x0Var) && !this.f28639x.contains(x0Var)) {
                     break;
                 }
             } else {
@@ -394,11 +394,11 @@ public final class k extends x0.b implements v, n {
             z10 = false;
         }
         if (!k() && !z10) {
-            Insets f10 = insets.f(this.f28614o.a());
+            Insets f10 = insets.f(this.f28630o.a());
             Intrinsics.checkNotNullExpressionValue(f10, "getInsets(...)");
-            Insets NONE = insets.f(this.f28614o.d());
+            Insets NONE = insets.f(this.f28630o.d());
             Intrinsics.checkNotNullExpressionValue(NONE, "getInsets(...)");
-            if (this.f28614o.c()) {
+            if (this.f28630o.c()) {
                 NONE = Insets.f3149e;
                 Intrinsics.checkNotNullExpressionValue(NONE, "NONE");
             }
@@ -408,28 +408,28 @@ public final class k extends x0.b implements v, n {
             double a10 = fm.d.a(f11);
             double d10 = 0.0d;
             try {
-                double abs = Math.abs(a10 / this.f28616q);
+                double abs = Math.abs(a10 / this.f28632q);
                 if (!Double.isNaN(abs)) {
                     if (!Double.isInfinite(abs)) {
                         d10 = abs;
                     }
                 }
             } catch (ArithmeticException e10) {
-                jm.a aVar = jm.a.f32237a;
-                str = m.f28630a;
+                jm.a aVar = jm.a.f32253a;
+                str = m.f28646a;
                 jm.a.e(aVar, str, "Caught arithmetic exception during `progress` calculation: " + e10, null, 4, null);
             }
             double d11 = d10;
-            jm.a aVar2 = jm.a.f32237a;
-            str2 = m.f28630a;
-            gm.a aVar3 = gm.a.f27022a;
-            jm.a.b(aVar2, str2, "DiffY: " + f11 + " " + a10 + " " + d11 + " " + aVar3.a() + " " + this.f28622w, null, 4, null);
+            jm.a aVar2 = jm.a.f32253a;
+            str2 = m.f28646a;
+            gm.a aVar3 = gm.a.f27038a;
+            jm.a.b(aVar2, str2, "DiffY: " + f11 + " " + a10 + " " + d11 + " " + aVar3.a() + " " + this.f28638w, null, 4, null);
             if (aVar3.a()) {
                 c10 = em.f.f22941f.b();
             } else {
                 c10 = em.f.f22941f.c();
             }
-            fm.g.a(this.f28613i, this.f28611d.getId(), new em.f(this.f28615p, this.f28611d.getId(), c10, a10, d11, this.f28621v, this.f28622w));
+            fm.g.a(this.f28629i, this.f28627d.getId(), new em.f(this.f28631p, this.f28627d.getId(), c10, a10, d11, this.f28637v, this.f28638w));
         }
         return insets;
     }
@@ -446,54 +446,54 @@ public final class k extends x0.b implements v, n {
             return bounds;
         }
         boolean z12 = false;
-        this.f28620u = false;
-        this.f28619t = true;
-        this.f28618s = j();
-        this.f28621v = (int) animation.a();
+        this.f28636u = false;
+        this.f28635t = true;
+        this.f28634s = j();
+        this.f28637v = (int) animation.a();
         double g10 = g();
-        if (this.f28618s) {
-            this.f28616q = g10;
+        if (this.f28634s) {
+            this.f28632q = g10;
         }
         g gVar = this.A;
         if (gVar != null) {
             gVar.l();
         }
-        if (g10 == 0.0d || this.f28617r == g10) {
+        if (g10 == 0.0d || this.f28633r == g10) {
             z10 = false;
         } else {
             z10 = true;
         }
-        if (this.f28618s && this.f28617r != 0.0d) {
+        if (this.f28634s && this.f28633r != 0.0d) {
             z12 = true;
         }
         if (z10 && z12) {
-            z11 = m.f28631b;
+            z11 = m.f28647b;
             if (z11) {
                 m(g10);
-                this.f28623x.add(animation);
+                this.f28639x.add(animation);
                 return bounds;
             }
         }
-        ThemedReactContext themedReactContext = this.f28613i;
-        if (!this.f28618s) {
+        ThemedReactContext themedReactContext = this.f28629i;
+        if (!this.f28634s) {
             str = "keyboardWillHide";
         } else {
             str = "keyboardWillShow";
         }
         fm.g.b(themedReactContext, "KeyboardController::" + str, h(g10));
-        jm.a aVar = jm.a.f32237a;
-        str2 = m.f28630a;
-        jm.a.b(aVar, str2, "HEIGHT:: " + g10 + " TAG:: " + this.f28622w, null, 4, null);
-        ThemedReactContext themedReactContext2 = this.f28613i;
-        int id2 = this.f28611d.getId();
+        jm.a aVar = jm.a.f32253a;
+        str2 = m.f28646a;
+        jm.a.b(aVar, str2, "HEIGHT:: " + g10 + " TAG:: " + this.f28638w, null, 4, null);
+        ThemedReactContext themedReactContext2 = this.f28629i;
+        int id2 = this.f28627d.getId();
         double d10 = 0.0d;
-        int i10 = this.f28615p;
-        int id3 = this.f28611d.getId();
+        int i10 = this.f28631p;
+        int id3 = this.f28627d.getId();
         f.a.EnumC0297a d11 = em.f.f22941f.d();
-        if (this.f28618s) {
+        if (this.f28634s) {
             d10 = 1.0d;
         }
-        fm.g.a(themedReactContext2, id2, new em.f(i10, id3, d11, g10, d10, this.f28621v, this.f28622w));
+        fm.g.a(themedReactContext2, id2, new em.f(i10, id3, d11, g10, d10, this.f28637v, this.f28638w));
         x0.a onStart = super.onStart(animation, bounds);
         Intrinsics.checkNotNullExpressionValue(onStart, "onStart(...)");
         return onStart;

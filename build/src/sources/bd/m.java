@@ -49,10 +49,10 @@ final class m {
         lVar.readFully(h0Var.e(), 0, 8);
         this.f7404c = h0Var.u() + 8;
         if (h0Var.q() != 1397048916) {
-            yVar.f49502a = 0L;
+            yVar.f49518a = 0L;
             return;
         }
-        yVar.f49502a = lVar.getPosition() - (this.f7404c - 12);
+        yVar.f49518a = lVar.getPosition() - (this.f7404c - 12);
         this.f7403b = 2;
     }
 
@@ -122,11 +122,11 @@ final class m {
             }
         }
         if (this.f7402a.isEmpty()) {
-            yVar.f49502a = 0L;
+            yVar.f49518a = 0L;
             return;
         }
         this.f7403b = 3;
-        yVar.f49502a = ((a) this.f7402a.get(0)).f7406b;
+        yVar.f49518a = ((a) this.f7402a.get(0)).f7406b;
     }
 
     private void e(tc.l lVar, List list) {
@@ -177,7 +177,7 @@ final class m {
                 if (i10 != 2) {
                     if (i10 == 3) {
                         e(lVar, list);
-                        yVar.f49502a = 0L;
+                        yVar.f49518a = 0L;
                     } else {
                         throw new IllegalStateException();
                     }
@@ -192,7 +192,7 @@ final class m {
             if (length != -1 && length >= 8) {
                 j10 = length - 8;
             }
-            yVar.f49502a = j10;
+            yVar.f49518a = j10;
             this.f7403b = 1;
         }
         return 1;

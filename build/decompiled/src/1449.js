@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun16747: for (var _fun16747_ip = 0;;) switch (_fun16747_ip) {
+    _fun16748: for (var _fun16748_ip = 0;;) switch (_fun16748_ip) {
         case 0:
             var3 = metroImportDefault;
             var2 = exports;
@@ -26,8 +26,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var5 = var7[var1];
             var5 = var3.bind(var0)(var5);
             if (var5) {
-                _fun16747_ip = 126;
-                continue _fun16747
+                _fun16748_ip = 126;
+                continue _fun16748
             }
         case 92:
             var9 = var4.Error;
@@ -51,12 +51,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var3 = var3.bind(var0)(var1);
             var1 = {};
             var7 = function() { // Original name: get eventEmitter, environment: var6
-                _fun16748: for (var _fun16748_ip = 0;;) switch (_fun16748_ip) {
+                _fun16749: for (var _fun16749_ip = 0;;) switch (_fun16749_ip) {
                     case 0:
                         var1 = _closure1_slot3;
                         if (var1) {
-                            _fun16748_ip = 60;
-                            continue _fun16748
+                            _fun16749_ip = 60;
+                            continue _fun16749
                         }
                     case 10:
                         var3 = _closure1_slot2;

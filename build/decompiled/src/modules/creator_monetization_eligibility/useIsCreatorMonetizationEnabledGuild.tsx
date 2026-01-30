@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var1 = function(arg0) { // Original name: isCreatorMonetizationEnabledGuild, environment: var3
-        _fun49571: for (var _fun49571_ip = 0;;) switch (_fun49571_ip) {
+        _fun49617: for (var _fun49617_ip = 0;;) switch (_fun49617_ip) {
             case 0:
                 var3 = arg0;
                 var4 = var3.features;
@@ -17,8 +17,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.bind(var4)(var0);
                 var0 = !var0;
                 if (!var0) {
-                    _fun49571_ip = 96;
-                    continue _fun49571
+                    _fun49617_ip = 96;
+                    continue _fun49617
                 }
             case 38:
                 var5 = var3.features;
@@ -27,8 +27,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.CREATOR_MONETIZABLE;
                 var1 = var4.bind(var5)(var1);
                 if (var1) {
-                    _fun49571_ip = 93;
-                    continue _fun49571
+                    _fun49617_ip = 93;
+                    continue _fun49617
                 }
             case 67:
                 var4 = var3.features;
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var4;
         var0 = function() { // Environment: var0
-            _fun49573: for (var _fun49573_ip = 0;;) switch (_fun49573_ip) {
+            _fun49619: for (var _fun49619_ip = 0;;) switch (_fun49619_ip) {
                 case 0:
                     var3 = _closure1_slot2;
                     var2 = var3.getGuild;
@@ -91,8 +91,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = null;
                     var0 = var0 != var3;
                     if (!var0) {
-                        _fun49573_ip = 44;
-                        continue _fun49573
+                        _fun49619_ip = 44;
+                        continue _fun49619
                     }
                 case 33:
                     var2 = _closure1_slot4;

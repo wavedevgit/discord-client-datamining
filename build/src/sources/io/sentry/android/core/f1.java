@@ -6,28 +6,28 @@ import java.lang.ref.WeakReference;
 public class f1 {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final f1 f28895b = new f1();
+    private static final f1 f28911b = new f1();
 
     /* renamed from: a  reason: collision with root package name */
-    private WeakReference f28896a;
+    private WeakReference f28912a;
 
     private f1() {
     }
 
     public static f1 c() {
-        return f28895b;
+        return f28911b;
     }
 
     public void a(Activity activity) {
-        WeakReference weakReference = this.f28896a;
+        WeakReference weakReference = this.f28912a;
         if (weakReference != null && weakReference.get() != activity) {
             return;
         }
-        this.f28896a = null;
+        this.f28912a = null;
     }
 
     public Activity b() {
-        WeakReference weakReference = this.f28896a;
+        WeakReference weakReference = this.f28912a;
         if (weakReference != null) {
             return (Activity) weakReference.get();
         }
@@ -35,10 +35,10 @@ public class f1 {
     }
 
     public void d(Activity activity) {
-        WeakReference weakReference = this.f28896a;
+        WeakReference weakReference = this.f28912a;
         if (weakReference != null && weakReference.get() == activity) {
             return;
         }
-        this.f28896a = new WeakReference(activity);
+        this.f28912a = new WeakReference(activity);
     }
 }

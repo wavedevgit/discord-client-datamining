@@ -14,28 +14,28 @@ import tm.t;
 public final class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private final tm.k f50458a;
+    private final tm.k f50474a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final d f50459b;
+    private final d f50475b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Object f50460c;
+    private Object f50476c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final v f50461d;
+    private final v f50477d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final j f50462e;
+    private final j f50478e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f50463d;
+        int f50479d;
 
         /* renamed from: e  reason: collision with root package name */
-        /* synthetic */ Object f50464e;
+        /* synthetic */ Object f50480e;
 
         a(Continuation continuation) {
             super(2, continuation);
@@ -44,7 +44,7 @@ public final class m {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             a aVar = new a(continuation);
-            aVar.f50464e = obj;
+            aVar.f50480e = obj;
             return aVar;
         }
 
@@ -56,16 +56,16 @@ public final class m {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             or.b.f();
-            if (this.f50463d == 0) {
+            if (this.f50479d == 0) {
                 kotlin.c.b(obj);
-                Object k10 = ((is.k) this.f50464e).k();
+                Object k10 = ((is.k) this.f50480e).k();
                 Throwable e10 = is.k.e(k10);
                 if (e10 == null) {
                     Object f10 = is.k.f(k10);
                     if (f10 != null) {
                         m mVar = m.this;
-                        if (!Intrinsics.areEqual(mVar.f50460c, f10)) {
-                            mVar.f50460c = f10;
+                        if (!Intrinsics.areEqual(mVar.f50476c, f10)) {
+                            mVar.f50476c = f10;
                             return null;
                         }
                         return null;
@@ -78,7 +78,7 @@ public final class m {
         }
 
         public final Object j(Object obj, Continuation continuation) {
-            return ((a) create(is.k.b(obj), continuation)).invokeSuspend(Unit.f33282a);
+            return ((a) create(is.k.b(obj), continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -86,10 +86,10 @@ public final class m {
     static final class b extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f50466d;
+        int f50482d;
 
         /* renamed from: e  reason: collision with root package name */
-        /* synthetic */ Object f50467e;
+        /* synthetic */ Object f50483e;
 
         b(Continuation continuation) {
             super(2, continuation);
@@ -98,16 +98,16 @@ public final class m {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             b bVar = new b(continuation);
-            bVar.f50467e = obj;
+            bVar.f50483e = obj;
             return bVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             or.b.f();
-            if (this.f50466d == 0) {
+            if (this.f50482d == 0) {
                 kotlin.c.b(obj);
-                return kotlin.coroutines.jvm.internal.b.a(Intrinsics.areEqual(this.f50467e, m.this.f50460c));
+                return kotlin.coroutines.jvm.internal.b.a(Intrinsics.areEqual(this.f50483e, m.this.f50476c));
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -115,7 +115,7 @@ public final class m {
         @Override // kotlin.jvm.functions.Function2
         /* renamed from: j */
         public final Object invoke(Object obj, Continuation continuation) {
-            return ((b) create(obj, continuation)).invokeSuspend(Unit.f33282a);
+            return ((b) create(obj, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -125,25 +125,25 @@ public final class m {
         Intrinsics.checkNotNullParameter(props, "props");
         Intrinsics.checkNotNullParameter(interceptor, "interceptor");
         tm.k b10 = protoWorkflow.b();
-        this.f50458a = b10;
+        this.f50474a = b10;
         d dVar = new d();
-        this.f50459b = dVar;
-        this.f50460c = props.getValue();
-        this.f50461d = js.g.E(js.g.n(props, new b(null)), scope);
-        this.f50462e = new j(l.b(b10, null, 1, null), b10, this.f50460c, mVar, scope.getCoroutineContext(), null, null, interceptor, dVar, 96, null);
+        this.f50475b = dVar;
+        this.f50476c = props.getValue();
+        this.f50477d = js.g.E(js.g.n(props, new b(null)), scope);
+        this.f50478e = new j(l.b(b10, null, 1, null), b10, this.f50476c, mVar, scope.getCoroutineContext(), null, null, interceptor, dVar, 96, null);
     }
 
     public final void e(CancellationException cancellationException) {
-        this.f50462e.d(cancellationException);
+        this.f50478e.d(cancellationException);
     }
 
     public final Object f(Continuation continuation) {
         os.e eVar = new os.e(continuation);
         try {
-            if (!this.f50461d.i()) {
-                eVar.a(this.f50461d.k(), new a(null));
+            if (!this.f50477d.i()) {
+                eVar.a(this.f50477d.k(), new a(null));
             }
-            this.f50462e.o(eVar);
+            this.f50478e.o(eVar);
         } catch (Throwable th2) {
             eVar.C(th2);
         }
@@ -155,6 +155,6 @@ public final class m {
     }
 
     public final tm.g g() {
-        return new tm.g(this.f50462e.l(this.f50458a, this.f50460c), this.f50462e.n(this.f50458a));
+        return new tm.g(this.f50478e.l(this.f50474a, this.f50476c), this.f50478e.n(this.f50474a));
     }
 }

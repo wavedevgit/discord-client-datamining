@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var0;
         var0 = function() { // Environment: var5
-            _fun91943: for (var _fun91943_ip = 0;;) switch (_fun91943_ip) {
+            _fun92180: for (var _fun92180_ip = 0;;) switch (_fun92180_ip) {
                 case 0:
                     var3 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -60,8 +60,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = _closure2_slot0;
                     var3 = null;
                     if (!(var3 != var4)) {
-                        _fun91943_ip = 67;
-                        continue _fun91943
+                        _fun92180_ip = 67;
+                        continue _fun92180
                     }
                 case 48:
                     var2 = _closure2_slot0;
@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var0.BottomSheet;
         var0 = {};
         var5 = function() { // Original name: onDismiss, environment: var5
-            _fun91944: for (var _fun91944_ip = 0;;) switch (_fun91944_ip) {
+            _fun92181: for (var _fun92181_ip = 0;;) switch (_fun92181_ip) {
                 case 0:
                     var2 = _closure2_slot0;
                     var0 = null;
@@ -91,8 +91,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = undefined;
                     var0 = undefined;
                     if (var2) {
-                        _fun91944_ip = 42;
-                        continue _fun91944
+                        _fun92181_ip = 42;
+                        continue _fun92181
                     }
                 case 20:
                     var2 = _closure2_slot0;
@@ -156,4 +156,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1369, 33, 3237, 4887, 11897, 11395, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1369, 33, 3237, 4893, 11919, 11417, 1234, 2]);

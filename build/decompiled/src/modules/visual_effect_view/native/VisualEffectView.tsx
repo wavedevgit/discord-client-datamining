@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
     var0 = function(arg0, arg1) { // Original name: getIOSBlurEffect, environment: var3
-        _fun37279: for (var _fun37279_ip = 0;;) switch (_fun37279_ip) {
+        _fun37330: for (var _fun37330_ip = 0;;) switch (_fun37330_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot0;
@@ -20,34 +20,34 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.bind(var0)(var1);
                 var0 = var0.MODERN_IOS_BLURS_EFFECTS_AVAILABLE;
                 if (!var0) {
-                    _fun37279_ip = 48;
-                    continue _fun37279
+                    _fun37330_ip = 48;
+                    continue _fun37330
                 }
             case 37:
                 var1 = 'default';
                 var0 = arg1;
                 if (!(var1 === var0)) {
-                    _fun37279_ip = 70;
-                    continue _fun37279
+                    _fun37330_ip = 70;
+                    continue _fun37330
                 }
             case 48:
                 var0 = 'UIBlurEffectStyleDark';
                 var1 = 'light';
                 if (!(var1 === var3)) {
-                    _fun37279_ip = 68;
-                    continue _fun37279
+                    _fun37330_ip = 68;
+                    continue _fun37330
                 }
             case 62:
                 var0 = 'UIBlurEffectStyleLight';
             case 68:
-                _fun37279_ip = 93;
-                continue _fun37279;
+                _fun37330_ip = 93;
+                continue _fun37330;
             case 70:
                 var1 = 'UIBlurEffectStyleSystemUltraThinMaterialDark';
                 var2 = 'light';
                 if (!(var2 === var3)) {
-                    _fun37279_ip = 90;
-                    continue _fun37279
+                    _fun37330_ip = 90;
+                    continue _fun37330
                 }
             case 84:
                 var1 = 'UIBlurEffectStyleSystemUltraThinMaterialLight';
@@ -59,21 +59,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot7 = var0;
     var0 = function(arg0, arg1) { // Original name: getAndroidBlurAmount, environment: var3
-        _fun37280: for (var _fun37280_ip = 0;;) switch (_fun37280_ip) {
+        _fun37331: for (var _fun37331_ip = 0;;) switch (_fun37331_ip) {
             case 0:
                 var0 = arg1;
                 var1 = null;
                 if (!(var1 == var0)) {
-                    _fun37280_ip = 36;
-                    continue _fun37280
+                    _fun37331_ip = 36;
+                    continue _fun37331
                 }
             case 9:
                 var1 = 1;
                 var3 = 'light';
                 var2 = arg0;
                 if (!(var3 === var2)) {
-                    _fun37280_ip = 33;
-                    continue _fun37280
+                    _fun37331_ip = 33;
+                    continue _fun37331
                 }
             case 23:
                 var1 = 0.85;
@@ -85,27 +85,27 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot8 = var0;
     var1 = function(arg0) { // Original name: isBlurDisabled, environment: var3
-        _fun37281: for (var _fun37281_ip = 0;;) switch (_fun37281_ip) {
+        _fun37332: for (var _fun37332_ip = 0;;) switch (_fun37332_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.android_softwareBlurDisabled;
                 var4 = var0.android_blurTargetViewNativeId;
                 var0 = _closure1_slot6;
                 if (!var0) {
-                    _fun37281_ip = 77;
-                    continue _fun37281
+                    _fun37332_ip = 77;
+                    continue _fun37332
                 }
             case 25:
                 var1 = null;
                 var1 = var1 == var4;
                 if (var1) {
-                    _fun37281_ip = 74;
-                    continue _fun37281
+                    _fun37332_ip = 74;
+                    continue _fun37332
                 }
             case 34:
                 if (!var3) {
-                    _fun37281_ip = 68;
-                    continue _fun37281
+                    _fun37332_ip = 68;
+                    continue _fun37332
                 }
             case 37:
                 var5 = _closure1_slot0;
@@ -162,7 +162,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot6 = var4;
     var4 = var7.forwardRef;
     var3 = function(arg0, arg1) { // Original name: VisualEffectView, environment: var3
-        _fun37282: for (var _fun37282_ip = 0;;) switch (_fun37282_ip) {
+        _fun37333: for (var _fun37333_ip = 0;;) switch (_fun37333_ip) {
             case 0:
                 var5 = arg0;
                 var7 = arg1;
@@ -170,16 +170,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var5.blurStyle;
                 var4 = undefined;
                 if (!(var20 === var4)) {
-                    _fun37282_ip = 28;
-                    continue _fun37282
+                    _fun37333_ip = 28;
+                    continue _fun37333
                 }
             case 24:
                 var20 = 'default';
             case 28:
                 var16 = var5.blurAmount;
                 if (!(var16 === var4)) {
-                    _fun37282_ip = 41;
-                    continue _fun37282
+                    _fun37333_ip = 41;
+                    continue _fun37333
                 }
             case 38:
                 var16 = 1;
@@ -189,8 +189,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var5.android_blurTargetViewNativeId;
                 var3 = var5.android_softwareBlurDisabled;
                 if (!(var3 === var4)) {
-                    _fun37282_ip = 71;
-                    continue _fun37282
+                    _fun37333_ip = 71;
+                    continue _fun37333
                 }
             case 69:
                 var3 = false;
@@ -251,8 +251,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = {};
                 var2 = 'default';
                 if (!(var2 === var22)) {
-                    _fun37282_ip = 301;
-                    continue _fun37282
+                    _fun37333_ip = 301;
+                    continue _fun37333
                 }
             case 298:
                 var6 = var19;
@@ -264,8 +264,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var12 != var15;
                 var0 = undefined;
                 if (!var8) {
-                    _fun37282_ip = 335;
-                    continue _fun37282
+                    _fun37333_ip = 335;
+                    continue _fun37333
                 }
             case 326:
                 var8 = {};
@@ -293,20 +293,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var8.LEGACY_ANDROID_BLUR_OVERLAY_ULTRA_THIN;
                 var8 = var14.bind(var15)(var8, var17);
                 if (!(var2 !== var20)) {
-                    _fun37282_ip = 454;
-                    continue _fun37282
+                    _fun37333_ip = 454;
+                    continue _fun37333
                 }
             case 437:
                 var2 = 'ultra-thin';
                 var15 = var8;
                 if (!(var2 !== var20)) {
-                    _fun37282_ip = 457;
-                    continue _fun37282
+                    _fun37333_ip = 457;
+                    continue _fun37333
                 }
             case 450:
                 var15 = undefined;
-                _fun37282_ip = 457;
-                continue _fun37282;
+                _fun37333_ip = 457;
+                continue _fun37333;
             case 454:
                 var15 = var0;
             case 457:
@@ -316,8 +316,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.android_blurTargetViewNativeId = var9;
                 var0 = var2.bind(var4)(var0);
                 if (var0) {
-                    _fun37282_ip = 698;
-                    continue _fun37282
+                    _fun37333_ip = 698;
+                    continue _fun37333
                 }
             case 484:
                 var0 = _closure1_slot6;
@@ -325,8 +325,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = _closure1_slot1;
                 var14 = _closure1_slot2;
                 if (var0) {
-                    _fun37282_ip = 590;
-                    continue _fun37282
+                    _fun37333_ip = 590;
+                    continue _fun37333
                 }
             case 503:
                 var0 = 5;
@@ -335,8 +335,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var0.ref = var7;
                 if (!(var12 == var18)) {
-                    _fun37282_ip = 535;
-                    continue _fun37282
+                    _fun37333_ip = 535;
+                    continue _fun37333
                 }
             case 525:
                 var19 = _closure1_slot7;
@@ -345,8 +345,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.blurEffectName = var18;
                 var18 = var16;
                 if (!(var12 != var13)) {
-                    _fun37282_ip = 552;
-                    continue _fun37282
+                    _fun37333_ip = 552;
+                    continue _fun37333
                 }
             case 549:
                 var18 = var13;
@@ -354,8 +354,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.blurAmount = var18;
                 var18 = var10;
                 if (!(var12 != var11)) {
-                    _fun37282_ip = 567;
-                    continue _fun37282
+                    _fun37333_ip = 567;
+                    continue _fun37333
                 }
             case 564:
                 var18 = var11;
@@ -365,8 +365,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var27 = var5;
                 var18 = copyDataProperties(var28, var27);
                 var0 = var8.bind(var4)(var2, var0);
-                _fun37282_ip = 696;
-                continue _fun37282;
+                _fun37333_ip = 696;
+                continue _fun37333;
             case 590:
                 var2 = 8;
                 var2 = var14[var2];
@@ -374,8 +374,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = {};
                 var2.ref = var7;
                 if (!(var12 == var13)) {
-                    _fun37282_ip = 622;
-                    continue _fun37282
+                    _fun37333_ip = 622;
+                    continue _fun37333
                 }
             case 612:
                 var14 = _closure1_slot8;
@@ -391,8 +391,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var13.bind(var14)(var15);
                 var2.blurTintIOSParityCompensationRgba = var13;
                 if (!(var12 != var11)) {
-                    _fun37282_ip = 670;
-                    continue _fun37282
+                    _fun37333_ip = 670;
+                    continue _fun37333
                 }
             case 667:
                 var10 = var11;
@@ -404,8 +404,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = copyDataProperties(var28, var27);
                 var0 = var8.bind(var4)(var3, var2);
             case 696:
-                _fun37282_ip = 737;
-                continue _fun37282;
+                _fun37333_ip = 737;
+                continue _fun37333;
             case 698:
                 var3 = _closure1_slot5;
                 var2 = _closure1_slot3;
@@ -431,4 +431,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.isBlurDisabled = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4027, 33, 478, 4028, 3110, 671, 4030, 3199, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4033, 33, 478, 4034, 3110, 671, 4036, 3199, 2]);

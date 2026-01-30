@@ -3,13 +3,13 @@ package io.sentry;
 public final class q2 implements a1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final q2 f30481d = new q2();
+    private static final q2 f30497d = new q2();
 
     private q2() {
     }
 
     public static q2 a() {
-        return f30481d;
+        return f30497d;
     }
 
     @Override // io.sentry.a1, java.lang.AutoCloseable

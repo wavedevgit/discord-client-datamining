@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/native/ActivitiesDebugOverlay.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Original name: ActivitiesDebugOverlay, environment: var1
-        _fun69402: for (var _fun69402_ip = 0;;) switch (_fun69402_ip) {
+        _fun69448: for (var _fun69448_ip = 0;;) switch (_fun69448_ip) {
             case 0:
                 var2 = _closure1_slot1;
                 var0 = _closure1_slot2;
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = '';
                 var10 = 'always-white';
                 if (!(var0 !== var2)) {
-                    _fun69402_ip = 256;
-                    continue _fun69402
+                    _fun69448_ip = 256;
+                    continue _fun69448
                 }
             case 71:
                 var1 = _closure1_slot0;
@@ -100,8 +100,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = 'nominal';
                 var10 = 'text-feedback-positive';
                 if (!(var0 !== var2)) {
-                    _fun69402_ip = 256;
-                    continue _fun69402
+                    _fun69448_ip = 256;
+                    continue _fun69448
                 }
             case 119:
                 var1 = _closure1_slot0;
@@ -113,8 +113,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = 'fair';
                 var10 = 'text-feedback-warning';
                 if (!(var0 !== var2)) {
-                    _fun69402_ip = 256;
-                    continue _fun69402
+                    _fun69448_ip = 256;
+                    continue _fun69448
                 }
             case 164:
                 var1 = _closure1_slot0;
@@ -127,8 +127,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = 'text-feedback-critical';
                 var10 = var0;
                 if (!(var1 !== var2)) {
-                    _fun69402_ip = 256;
-                    continue _fun69402
+                    _fun69448_ip = 256;
+                    continue _fun69448
                 }
             case 212:
                 var4 = _closure1_slot0;
@@ -140,8 +140,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = undefined;
                 var10 = undefined;
                 if (!(var1 === var2)) {
-                    _fun69402_ip = 256;
-                    continue _fun69402
+                    _fun69448_ip = 256;
+                    continue _fun69448
                 }
             case 249:
                 var9 = 'critical';
@@ -209,4 +209,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 3199, 671, 7906, 1568, 3895, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 3199, 671, 7909, 1568, 3901, 2]);

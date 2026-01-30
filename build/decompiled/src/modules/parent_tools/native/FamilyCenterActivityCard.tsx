@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var8;
     var0 = function() { // Original name: FamilyCenterActivityCardPrefaceText, environment: var5
-        _fun81802: for (var _fun81802_ip = 0;;) switch (_fun81802_ip) {
+        _fun81848: for (var _fun81848_ip = 0;;) switch (_fun81848_ip) {
             case 0:
                 var0 = _closure1_slot10;
                 var3 = undefined;
@@ -70,8 +70,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.style = var4;
                 var5 = null;
                 if (var12) {
-                    _fun81802_ip = 334;
-                    continue _fun81802
+                    _fun81848_ip = 334;
+                    continue _fun81848
                 }
             case 263:
                 var7 = _closure1_slot7;
@@ -112,14 +112,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = 1;
                 var9 = var13;
                 if (!(var15 > var14)) {
-                    _fun81802_ip = 420;
-                    continue _fun81802
+                    _fun81848_ip = 420;
+                    continue _fun81848
                 }
             case 411:
                 var9 = var13;
                 if (!var12) {
-                    _fun81802_ip = 420;
-                    continue _fun81802
+                    _fun81848_ip = 420;
+                    continue _fun81848
                 }
             case 417:
                 var9 = var10;
@@ -184,7 +184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot15 = var0;
     var0 = function() { // Original name: FamilyCenterHeaderSubText, environment: var5
-        _fun81804: for (var _fun81804_ip = 0;;) switch (_fun81804_ip) {
+        _fun81850: for (var _fun81850_ip = 0;;) switch (_fun81850_ip) {
             case 0:
                 var2 = _closure1_slot1;
                 var7 = _closure1_slot2;
@@ -211,8 +211,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var5.useActivityWindowTimeStamp;
                 var5 = var3.bind(var5)(var6);
                 if (!var2) {
-                    _fun81804_ip = 124;
-                    continue _fun81804
+                    _fun81850_ip = 124;
+                    continue _fun81850
                 }
             case 107:
                 var2 = var0.length;
@@ -220,8 +220,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2 > var0;
                 var0 = null;
                 if (var2) {
-                    _fun81804_ip = 177;
-                    continue _fun81804
+                    _fun81850_ip = 177;
+                    continue _fun81850
                 }
             case 124:
                 var3 = _closure1_slot7;
@@ -243,7 +243,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot16 = var0;
     var3 = function() { // Original name: FamilyCenterActivityCardHeader, environment: var5
-        _fun81805: for (var _fun81805_ip = 0;;) switch (_fun81805_ip) {
+        _fun81851: for (var _fun81851_ip = 0;;) switch (_fun81851_ip) {
             case 0:
                 var4 = _closure1_slot0;
                 var6 = _closure1_slot2;
@@ -265,20 +265,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var0.bind(var4)();
                 var0 = null;
                 if (!(var5 !== var8)) {
-                    _fun81805_ip = 155;
-                    continue _fun81805
+                    _fun81851_ip = 155;
+                    continue _fun81851
                 }
             case 83:
                 if (!var3) {
-                    _fun81805_ip = 98;
-                    continue _fun81805
+                    _fun81851_ip = 98;
+                    continue _fun81851
                 }
             case 86:
                 var3 = var1.length;
                 var1 = 1;
                 if (!(var1 === var3)) {
-                    _fun81805_ip = 136;
-                    continue _fun81805
+                    _fun81851_ip = 136;
+                    continue _fun81851
                 }
             case 98:
                 var4 = _closure1_slot7;
@@ -290,8 +290,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var4.bind(var5)(var7, var6);
                 var1.children = var6;
                 var1 = var4.bind(var5)(var3, var1);
-                _fun81805_ip = 152;
-                continue _fun81805;
+                _fun81851_ip = 152;
+                continue _fun81851;
             case 136:
                 var4 = _closure1_slot7;
                 var3 = _closure1_slot18;
@@ -305,7 +305,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot17 = var3;
     var1 = function() { // Original name: FamilyCenterActivityCardAccountSelect, environment: var5
-        _fun81806: for (var _fun81806_ip = 0;;) switch (_fun81806_ip) {
+        _fun81852: for (var _fun81852_ip = 0;;) switch (_fun81852_ip) {
             case 0:
                 var0 = _closure1_slot13;
                 var4 = undefined;
@@ -410,8 +410,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot3 = var0;
                 var0 = null;
                 if (!(var4 !== var12)) {
-                    _fun81806_ip = 377;
-                    continue _fun81806
+                    _fun81852_ip = 377;
+                    continue _fun81852
                 }
             case 177:
                 var3 = _closure1_slot7;
@@ -460,14 +460,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = _closure2_slot3;
                     var1.items = var7;
                     var7 = function(arg0) { // Original name: onItemSelect, environment: var7
-                        _fun81812: for (var _fun81812_ip = 0;;) switch (_fun81812_ip) {
+                        _fun81858: for (var _fun81858_ip = 0;;) switch (_fun81858_ip) {
                             case 0:
                                 var1 = arg0;
                                 var0 = null;
                                 var0 = var0 != var1;
                                 if (!var0) {
-                                    _fun81812_ip = 28;
-                                    continue _fun81812
+                                    _fun81858_ip = 28;
+                                    continue _fun81858
                                 }
                             case 12:
                                 var2 = _closure2_slot1;
@@ -475,8 +475,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var0 = var1 !== var2;
                             case 28:
                                 if (!var0) {
-                                    _fun81812_ip = 105;
-                                    continue _fun81812
+                                    _fun81858_ip = 105;
+                                    continue _fun81858
                                 }
                             case 31:
                                 var0 = _closure2_slot2;
@@ -744,7 +744,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot11 = var4;
     var9 = var10.memo;
     var4 = function(arg0) { // Environment: var5
-        _fun81814: for (var _fun81814_ip = 0;;) switch (_fun81814_ip) {
+        _fun81860: for (var _fun81860_ip = 0;;) switch (_fun81860_ip) {
             case 0:
                 var0 = arg0;
                 var12 = var0.user;
@@ -759,13 +759,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.bind(var3)(var0);
                 var0 = var0.AvatarSizes;
                 if (var13) {
-                    _fun81814_ip = 64;
-                    continue _fun81814
+                    _fun81860_ip = 64;
+                    continue _fun81860
                 }
             case 56:
                 var14 = var0.NORMAL;
-                _fun81814_ip = 70;
-                continue _fun81814;
+                _fun81860_ip = 70;
+                continue _fun81860;
             case 64:
                 var14 = var0.SMALL;
             case 70:
@@ -807,8 +807,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8[0] = var10;
                 var10 = undefined;
                 if (var13) {
-                    _fun81814_ip = 232;
-                    continue _fun81814
+                    _fun81860_ip = 232;
+                    continue _fun81860
                 }
             case 226:
                 var10 = var11.nonSelectorHeader;
@@ -992,7 +992,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'modules/parent_tools/native/FamilyCenterActivityCard.tsx';
     var6 = var7.bind(var8)(var6);
     var5 = function() { // Original name: FamilyCenterActivityCard, environment: var5
-        _fun81815: for (var _fun81815_ip = 0;;) switch (_fun81815_ip) {
+        _fun81861: for (var _fun81861_ip = 0;;) switch (_fun81861_ip) {
             case 0:
                 var0 = _closure1_slot14;
                 var3 = undefined;
@@ -1011,8 +1011,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.useHasActionForAnyDisplayType;
                 var15 = var1.bind(var2)();
                 if (!(var3 !== var0)) {
-                    _fun81815_ip = 463;
-                    continue _fun81815
+                    _fun81861_ip = 463;
+                    continue _fun81861
                 }
             case 78:
                 var1 = _closure1_slot0;
@@ -1063,7 +1063,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12.style = var17;
                 var22 = var20.map;
                 var17 = function(arg0, arg1) { // Environment: var18
-                    _fun81816: for (var _fun81816_ip = 0;;) switch (_fun81816_ip) {
+                    _fun81862: for (var _fun81862_ip = 0;;) switch (_fun81862_ip) {
                         case 0:
                             var2 = arg0;
                             var0 = var2[Symbol.iterator];
@@ -1074,15 +1074,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var1 === var4;
                             var6 = undefined;
                             if (var1) {
-                                _fun81816_ip = 27;
-                                continue _fun81816
+                                _fun81862_ip = 27;
+                                continue _fun81862
                             }
                         case 24:
                             var6 = var3;
                         case 27:
                             if (var1) {
-                                _fun81816_ip = 41;
-                                continue _fun81816
+                                _fun81862_ip = 41;
+                                continue _fun81862
                             }
                         case 30:
                             var2 = var2().value;
@@ -1090,8 +1090,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var2 === var4;
                         case 41:
                             if (var1) {
-                                _fun81816_ip = 47;
-                                continue _fun81816
+                                _fun81862_ip = 47;
+                                continue _fun81862
                             }
                         case 44:
                             var0.return();
@@ -1102,14 +1102,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = 0;
                             var5 = arg1;
                             if (!(var7 !== var5)) {
-                                _fun81816_ip = 84;
-                                continue _fun81816
+                                _fun81862_ip = 84;
+                                continue _fun81862
                             }
                         case 69:
                             var5 = _closure2_slot0;
                             var5 = var5.other;
-                            _fun81816_ip = 97;
-                            continue _fun81816;
+                            _fun81862_ip = 97;
+                            continue _fun81862;
                         case 84:
                             var7 = _closure2_slot0;
                             var5 = var7.first;
@@ -1149,8 +1149,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12[1] = var14;
                 var14 = null;
                 if (!var15) {
-                    _fun81815_ip = 383;
-                    continue _fun81815
+                    _fun81861_ip = 383;
+                    continue _fun81861
                 }
             case 336:
                 var17 = _closure1_slot7;
@@ -1160,7 +1160,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15.style = var19;
                 var19 = var20.map;
                 var18 = function(arg0) { // Environment: var18
-                    _fun81817: for (var _fun81817_ip = 0;;) switch (_fun81817_ip) {
+                    _fun81863: for (var _fun81863_ip = 0;;) switch (_fun81863_ip) {
                         case 0:
                             var2 = arg0;
                             var0 = var2[Symbol.iterator];
@@ -1171,15 +1171,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var1 === var4;
                             var6 = undefined;
                             if (var1) {
-                                _fun81817_ip = 27;
-                                continue _fun81817
+                                _fun81863_ip = 27;
+                                continue _fun81863
                             }
                         case 24:
                             var6 = var3;
                         case 27:
                             if (var1) {
-                                _fun81817_ip = 41;
-                                continue _fun81817
+                                _fun81863_ip = 41;
+                                continue _fun81863
                             }
                         case 30:
                             var2 = var2().value;
@@ -1187,8 +1187,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var2 === var4;
                         case 41:
                             if (var1) {
-                                _fun81817_ip = 47;
-                                continue _fun81817
+                                _fun81863_ip = 47;
+                                continue _fun81863
                             }
                         case 44:
                             var0.return();
@@ -1243,4 +1243,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.FamilyCenterActivityCardHeader = var3;
     var2.FamilyCenterActivityCardAccountSelect = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4551, 660, 33, 1297, 671, 6468, 6467, 4615, 10393, 1234, 1849, 4039, 10417, 3895, 6737, 4518, 10418, 1307, 7251, 4842, 5411, 5409, 10419, 10420, 10386, 3237, 3106, 3195, 5334, 795, 8402, 10421, 10422, 10423, 10426, 10432, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4557, 660, 33, 1297, 671, 6471, 6470, 4621, 10399, 1234, 1849, 4045, 10423, 3901, 6740, 4524, 10424, 1307, 7254, 4848, 5415, 5413, 10425, 10426, 10392, 3237, 3106, 3195, 5338, 795, 8405, 10427, 10428, 10429, 10432, 10438, 2]);

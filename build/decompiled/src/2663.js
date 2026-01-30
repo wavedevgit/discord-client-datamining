@@ -91,7 +91,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.almostXYears = var4;
     var _closure1_slot0 = var3;
     var2 = function(arg0, arg1, arg2) { // Original name: formatDistance, environment: var2
-        _fun22118: for (var _fun22118_ip = 0;;) switch (_fun22118_ip) {
+        _fun22119: for (var _fun22119_ip = 0;;) switch (_fun22119_ip) {
             case 0:
                 var3 = arg0;
                 var8 = arg1;
@@ -102,14 +102,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = typeof var2;
                 var4 = var2;
                 if (!(var5 !== var0)) {
-                    _fun22118_ip = 90;
-                    continue _fun22118
+                    _fun22119_ip = 90;
+                    continue _fun22119
                 }
             case 34:
                 var0 = 1;
                 if (!(var0 !== var8)) {
-                    _fun22118_ip = 81;
-                    continue _fun22118
+                    _fun22119_ip = 81;
+                    continue _fun22119
                 }
             case 41:
                 var7 = var2.other;
@@ -120,8 +120,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var5.bind(var0)(var8);
                 var0 = '{{count}}';
                 var0 = var6.bind(var7)(var0, var5);
-                _fun22118_ip = 87;
-                continue _fun22118;
+                _fun22119_ip = 87;
+                continue _fun22119;
             case 81:
                 var0 = var2.one;
             case 87:
@@ -130,45 +130,45 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = null;
                 var0 = var4;
                 if (!(var2 != var1)) {
-                    _fun22118_ip = 180;
-                    continue _fun22118
+                    _fun22119_ip = 180;
+                    continue _fun22119
                 }
             case 99:
                 var2 = var1.addSuffix;
                 var0 = var4;
                 if (!var2) {
-                    _fun22118_ip = 180;
-                    continue _fun22118
+                    _fun22119_ip = 180;
+                    continue _fun22119
                 }
             case 111:
                 var2 = var1.comparison;
                 if (!var2) {
-                    _fun22118_ip = 132;
-                    continue _fun22118
+                    _fun22119_ip = 132;
+                    continue _fun22119
                 }
             case 120:
                 var2 = var1.comparison;
                 var1 = 0;
                 if (!(!(var2 > var1))) {
-                    _fun22118_ip = 144;
-                    continue _fun22118
+                    _fun22119_ip = 144;
+                    continue _fun22119
                 }
             case 132:
                 var1 = 'ที่ผ่านมา';
                 var1 = var4 + var1;
-                _fun22118_ip = 177;
-                continue _fun22118;
+                _fun22119_ip = 177;
+                continue _fun22119;
             case 144:
                 var2 = 'halfAMinute';
                 if (!(var2 !== var3)) {
-                    _fun22118_ip = 164;
-                    continue _fun22118
+                    _fun22119_ip = 164;
+                    continue _fun22119
                 }
             case 152:
                 var2 = 'ใน ';
                 var2 = var2 + var4;
-                _fun22118_ip = 174;
-                continue _fun22118;
+                _fun22119_ip = 174;
+                continue _fun22119;
             case 164:
                 var3 = 'ใน';
                 var2 = var3 + var4;

@@ -12,10 +12,10 @@ public class a extends qr.a {
         @NotNull
 
         /* renamed from: a  reason: collision with root package name */
-        public static final C0602a f48465a = new C0602a();
+        public static final C0602a f48481a = new C0602a();
 
         /* renamed from: b  reason: collision with root package name */
-        public static final Integer f48466b;
+        public static final Integer f48482b;
 
         static {
             Integer num;
@@ -30,13 +30,13 @@ public class a extends qr.a {
                 if (num != null && num.intValue() > 0) {
                     num2 = num;
                 }
-                f48466b = num2;
+                f48482b = num2;
             }
             num = null;
             if (num != null) {
                 num2 = num;
             }
-            f48466b = num2;
+            f48482b = num2;
         }
 
         private C0602a() {
@@ -44,7 +44,7 @@ public class a extends qr.a {
     }
 
     private final boolean c(int i10) {
-        Integer num = C0602a.f48466b;
+        Integer num = C0602a.f48482b;
         if (num != null && num.intValue() < i10) {
             return false;
         }

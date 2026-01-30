@@ -7,12 +7,12 @@ final class l extends jt.e implements d1 {
     private static final long serialVersionUID = -4837430960549551204L;
 
     /* renamed from: d  reason: collision with root package name */
-    private final transient BigDecimal f40748d;
+    private final transient BigDecimal f40764d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public l(String str, BigDecimal bigDecimal) {
         super(str);
-        this.f40748d = bigDecimal;
+        this.f40764d = bigDecimal;
     }
 
     private Object readResolve() {
@@ -36,7 +36,7 @@ final class l extends jt.e implements d1 {
     @Override // jt.p
     /* renamed from: F */
     public BigDecimal e() {
-        return this.f40748d;
+        return this.f40764d;
     }
 
     @Override // jt.p

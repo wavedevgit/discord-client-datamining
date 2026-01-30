@@ -1,250 +1,373 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var2 = function() { // Original name: getCurrentScope, environment: var0
-        var3 = _closure1_slot0;
-        var4 = _closure1_slot1;
-        var0 = 0;
-        var0 = var4[var0];
-        var1 = undefined;
-        var2 = var3.bind(var1)(var0);
-        var0 = var2.getMainCarrier;
-        var2 = var0.bind(var2)();
-        var0 = 1;
-        var0 = var4[var0];
-        var1 = var3.bind(var1)(var0);
-        var0 = var1.getAsyncContextStrategy;
-        var1 = var0.bind(var1)(var2);
-        var0 = var1.getCurrentScope;
-        var0 = var0.bind(var1)();
-        return var0;
-    };
-    var _closure1_slot2 = var2;
-    var3 = global;
-    var6 = var3.Object;
-    var5 = var6.defineProperty;
-    var4 = {};
-    var3 = true;
-    var4.value = var3;
-    var3 = '__esModule';
-    var3 = var5.bind(var6)(var1, var3, var4);
-    var3 = function() { // Original name: getClient, environment: var0
-        var1 = _closure1_slot2;
-        var0 = undefined;
-        var1 = var1.bind(var0)();
-        var0 = var1.getClient;
-        var0 = var0.bind(var1)();
-        return var0;
-    };
-    var1.getClient = var3;
-    var1.getCurrentScope = var2;
-    var2 = function() { // Original name: getGlobalScope, environment: var0
-        var2 = _closure1_slot0;
-        var1 = _closure1_slot1;
-        var0 = 2;
-        var1 = var1[var0];
-        var0 = undefined;
-        var3 = var2.bind(var0)(var1);
-        var2 = var3.getGlobalSingleton;
-        var1 = 'globalScope';
-        var0 = function() { // Environment: var0
-            var2 = _closure1_slot0;
-            var1 = _closure1_slot1;
-            var0 = 3;
-            var1 = var1[var0];
-            var0 = undefined;
-            var0 = var2.bind(var0)(var1);
-            var0 = var0.Scope;
-            var1 = var0.prototype;
-            var1 = Object.create(var1, {
-                constructor: {
-                    value: var0
-                }
-            });
-            var4 = var1;
-            var0 = new var4[var0](var3);
-            var0 = var0 instanceof Object ? var0 : var1;
-            return var0;
-        };
-        var0 = var2.bind(var3)(var1, var0);
-        return var0;
-    };
-    var1.getGlobalScope = var2;
-    var2 = function() { // Original name: getIsolationScope, environment: var0
-        var3 = _closure1_slot0;
-        var4 = _closure1_slot1;
-        var0 = 0;
-        var0 = var4[var0];
-        var1 = undefined;
-        var2 = var3.bind(var1)(var0);
-        var0 = var2.getMainCarrier;
-        var2 = var0.bind(var2)();
-        var0 = 1;
-        var0 = var4[var0];
-        var1 = var3.bind(var1)(var0);
-        var0 = var1.getAsyncContextStrategy;
-        var1 = var0.bind(var1)(var2);
-        var0 = var1.getIsolationScope;
-        var0 = var0.bind(var1)();
-        return var0;
-    };
-    var1.getIsolationScope = var2;
-    var2 = function() { // Original name: withIsolationScope, environment: var0
-        _fun99553: for (var _fun99553_ip = 0;;) switch (_fun99553_ip) {
+    var2 = exports;
+    var3 = function(arg0) { // Original name: parseRetryAfterHeader, environment: var1
+        _fun99633: for (var _fun99633_ip = 0;;) switch (_fun99633_ip) {
             case 0:
-                var5 = undefined;
-                var6 = undefined;
-                var3 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var2 = 0;
-                var1 = var0[var2];
-                var4 = var3.bind(var5)(var1);
-                var1 = var4.getMainCarrier;
-                var4 = var1.bind(var4)();
-                var1 = 1;
-                var0 = var0[var1];
-                var3 = var3.bind(var5)(var0);
-                var0 = var3.getAsyncContextStrategy;
-                var4 = var0.bind(var3)(var4);
-                var5 = arguments.length;
+                var7 = arg0;
+                var3 = undefined;
+                var1 = undefined;
+                var2 = arguments.length;
+                var0 = 1;
+                if (!(var2 > var0)) {
+                    _fun99633_ip = 25;
+                    continue _fun99633
+                }
+            case 17:
+                var2 = arguments[var0];
+                if (!(var3 === var2)) {
+                    _fun99633_ip = 44;
+                    continue _fun99633
+                }
+            case 25:
+                var2 = global;
+                var4 = var2.Date;
+                var2 = var4.now;
+                var2 = var2.bind(var4)();
+                _fun99633_ip = 48;
+                continue _fun99633;
+            case 44:
+                var2 = arguments[var0];
+            case 48:
                 var0 = global;
-                var0 = var0.Array;
-                var3 = var0.prototype;
-                var3 = Object.create(var3, {
-                    constructor: {
-                        value: var0
-                    }
-                });
-                var10 = var3;
-                var9 = var5;
-                var0 = new var10[var0](var9, var8);
-                var0 = var0 instanceof Object ? var0 : var3;
-                var7 = var2 < var5;
-                var3 = 0;
-                if (!var7) {
-                    _fun99553_ip = 117;
-                    continue _fun99553
+                var5 = var0.parseInt;
+                var1 = var0.HermesInternal;
+                var1 = var1.concat;
+                var6 = '';
+                var4 = var1.bind(var6)(var7);
+                var1 = 10;
+                var4 = var5.bind(var3)(var4, var1);
+                var1 = var0.isNaN;
+                var1 = var1.bind(var3)(var4);
+                if (var1) {
+                    _fun99633_ip = 111;
+                    continue _fun99633
                 }
-            case 102:
-                var7 = arguments[var3];
-                var0[var3] = var7;
-                var3 = var3 + 1;
-                if (var3 < var5) {
-                    _fun99553_ip = 102;
-                    continue _fun99553
-                }
-            case 117:
-                var5 = var0.length;
-                var3 = 2;
-                if (!(var3 !== var5)) {
-                    _fun99553_ip = 146;
-                    continue _fun99553
-                }
-            case 129:
-                var5 = var4.withIsolationScope;
-                var3 = var0[var2];
-                var3 = var5.bind(var4)(var3);
-                return var3;
-            case 146:
-                var3 = var0[var2];
-                var2 = var0[var1];
+            case 99:
+                var1 = 1000;
+                var1 = var1 * var4;
+                return var1;
+            case 111:
+                var5 = var0.Date;
+                var4 = var5.parse;
+                var1 = var0.HermesInternal;
+                var1 = var1.concat;
+                var1 = var1.bind(var6)(var7);
+                var1 = var4.bind(var5)(var1);
+                var0 = var0.isNaN;
+                var3 = var0.bind(var3)(var1);
+                var0 = 60000;
                 if (var3) {
-                    _fun99553_ip = 170;
-                    continue _fun99553
+                    _fun99633_ip = 168;
+                    continue _fun99633
                 }
-            case 157:
-                var0 = var4.withIsolationScope;
-                var0 = var0.bind(var4)(var2);
-                _fun99553_ip = 182;
-                continue _fun99553;
-            case 170:
-                var1 = var4.withSetIsolationScope;
-                var0 = var1.bind(var4)(var3, var2);
-            case 182:
+            case 164:
+                var0 = var1 - var2;
+            case 168:
                 return var0;
         }
     };
-    var1.withIsolationScope = var2;
-    var0 = function() { // Original name: withScope, environment: var0
-        _fun99554: for (var _fun99554_ip = 0;;) switch (_fun99554_ip) {
+    var _closure1_slot1 = var3;
+    var4 = function(arg0, arg1) { // Original name: disabledUntil, environment: var1
+        _fun99634: for (var _fun99634_ip = 0;;) switch (_fun99634_ip) {
             case 0:
-                var5 = undefined;
-                var6 = undefined;
-                var3 = _closure1_slot0;
-                var0 = _closure1_slot1;
-                var2 = 0;
-                var1 = var0[var2];
-                var4 = var3.bind(var5)(var1);
-                var1 = var4.getMainCarrier;
-                var4 = var1.bind(var4)();
-                var1 = 1;
-                var0 = var0[var1];
-                var3 = var3.bind(var5)(var0);
-                var0 = var3.getAsyncContextStrategy;
-                var4 = var0.bind(var3)(var4);
-                var5 = arguments.length;
-                var0 = global;
-                var0 = var0.Array;
-                var3 = var0.prototype;
-                var3 = Object.create(var3, {
-                    constructor: {
-                        value: var0
-                    }
-                });
-                var10 = var3;
-                var9 = var5;
-                var0 = new var10[var0](var9, var8);
-                var0 = var0 instanceof Object ? var0 : var3;
-                var7 = var2 < var5;
-                var3 = 0;
-                if (!var7) {
-                    _fun99554_ip = 117;
-                    continue _fun99554
+                var1 = arg0;
+                var0 = arg1;
+                var0 = var1[var0];
+                if (var0) {
+                    _fun99634_ip = 19;
+                    continue _fun99634
                 }
-            case 102:
-                var7 = arguments[var3];
-                var0[var3] = var7;
-                var3 = var3 + 1;
-                if (var3 < var5) {
-                    _fun99554_ip = 102;
-                    continue _fun99554
+            case 13:
+                var0 = var1.all;
+            case 19:
+                if (var0) {
+                    _fun99634_ip = 24;
+                    continue _fun99634
                 }
-            case 117:
-                var5 = var0.length;
-                var3 = 2;
-                if (!(var3 !== var5)) {
-                    _fun99554_ip = 146;
-                    continue _fun99554
-                }
-            case 129:
-                var5 = var4.withScope;
-                var3 = var0[var2];
-                var3 = var5.bind(var4)(var3);
-                return var3;
-            case 146:
-                var3 = var0[var2];
-                var2 = var0[var1];
-                if (var3) {
-                    _fun99554_ip = 170;
-                    continue _fun99554
-                }
-            case 157:
-                var0 = var4.withScope;
-                var0 = var0.bind(var4)(var2);
-                _fun99554_ip = 182;
-                continue _fun99554;
-            case 170:
-                var1 = var4.withSetScope;
-                var0 = var1.bind(var4)(var3, var2);
-            case 182:
+            case 22:
+                var0 = 0;
+            case 24:
                 return var0;
         }
     };
-    var1.withScope = var0;
+    var _closure1_slot2 = var4;
+    var5 = arg6;
+    var0 = 0;
+    var6 = var5[var0];
+    var5 = arg1;
     var0 = undefined;
+    var5 = var5.bind(var0)(var6);
+    var _closure1_slot0 = var5;
+    var5 = global;
+    var8 = var5.Object;
+    var7 = var8.defineProperty;
+    var6 = {};
+    var5 = true;
+    var6.value = var5;
+    var5 = '__esModule';
+    var5 = var7.bind(var8)(var2, var5, var6);
+    var5 = 60000;
+    var2.DEFAULT_RETRY_AFTER = var5;
+    var2.disabledUntil = var4;
+    var4 = function(arg0, arg1) { // Original name: isRateLimited, environment: var1
+        _fun99635: for (var _fun99635_ip = 0;;) switch (_fun99635_ip) {
+            case 0:
+                var4 = undefined;
+                var2 = undefined;
+                var1 = arguments.length;
+                var0 = 2;
+                if (!(var1 > var0)) {
+                    _fun99635_ip = 22;
+                    continue _fun99635
+                }
+            case 14:
+                var1 = arguments[var0];
+                if (!(var4 === var1)) {
+                    _fun99635_ip = 41;
+                    continue _fun99635
+                }
+            case 22:
+                var1 = global;
+                var3 = var1.Date;
+                var1 = var3.now;
+                var1 = var1.bind(var3)();
+                _fun99635_ip = 45;
+                continue _fun99635;
+            case 41:
+                var1 = arguments[var0];
+            case 45:
+                var3 = _closure1_slot2;
+                var2 = arg0;
+                var0 = arg1;
+                var0 = var3.bind(var4)(var2, var0);
+                var0 = var0 > var1;
+                return var0;
+        }
+    };
+    var2.isRateLimited = var4;
+    var2.parseRetryAfterHeader = var3;
+    var1 = function(arg0, arg1) { // Original name: updateRateLimits, environment: var1
+        _fun99636: for (var _fun99636_ip = 0;;) switch (_fun99636_ip) {
+            case 0:
+                var1 = arg1;
+                var16 = undefined;
+                var5 = undefined;
+                var17 = undefined;
+                var0 = undefined;
+                var18 = undefined;
+                var19 = undefined;
+                var20 = undefined;
+                var21 = undefined;
+                var22 = undefined;
+                var3 = var1.statusCode;
+                var1 = var1.headers;
+                var2 = arguments.length;
+                var4 = 2;
+                if (!(var2 > var4)) {
+                    _fun99636_ip = 51;
+                    continue _fun99636
+                }
+            case 43:
+                var2 = arguments[var4];
+                if (!(var16 === var2)) {
+                    _fun99636_ip = 70;
+                    continue _fun99636
+                }
+            case 51:
+                var2 = global;
+                var6 = var2.Date;
+                var2 = var6.now;
+                var2 = var2.bind(var6)();
+                _fun99636_ip = 74;
+                continue _fun99636;
+            case 70:
+                var2 = arguments[var4];
+            case 74:
+                var17 = var2;
+                var15 = global;
+                var6 = var15.Object;
+                var5 = var6.assign;
+                var4 = {};
+                var2 = arg0;
+                var0 = var5.bind(var6)(var4, var2);
+                var2 = var1;
+                if (!var1) {
+                    _fun99636_ip = 113;
+                    continue _fun99636
+                }
+            case 107:
+                var2 = var1["x-sentry-rate-limits"];
+            case 113:
+                var5 = var1;
+                if (!var5) {
+                    _fun99636_ip = 125;
+                    continue _fun99636
+                }
+            case 119:
+                var5 = var1["retry-after"];
+            case 125:
+                if (var2) {
+                    _fun99636_ip = 205;
+                    continue _fun99636
+                }
+            case 128:
+                if (var5) {
+                    _fun99636_ip = 171;
+                    continue _fun99636
+                }
+            case 131:
+                var1 = 429;
+                if (!(var1 === var3)) {
+                    _fun99636_ip = 514;
+                    continue _fun99636
+                }
+            case 144:
+                var3 = var0;
+                var4 = var17;
+                var1 = 60000;
+                var1 = var4 + var1;
+                var3.all = var1;
+                _fun99636_ip = 514;
+                continue _fun99636;
+            case 171:
+                var3 = var0;
+                var4 = var17;
+                var1 = _closure1_slot1;
+                var1 = var1.bind(var16)(var5, var4);
+                var1 = var4 + var1;
+                var3.all = var1;
+                _fun99636_ip = 514;
+                continue _fun99636;
+            case 205:
+                var1 = var2.trim;
+                var3 = var1.bind(var2)();
+                var2 = var3.split;
+                var1 = ',';
+                var1 = var2.bind(var3)(var1);
+                var14 = var1;
+                var2 = var14[Symbol.iterator];
+                var14 = var2().next;
+                var13 = ';';
+                var12 = 'custom';
+                var11 = 'metric_bucket';
+                var10 = 1000;
+                var9 = ':';
+                var8 = 5;
+                var6 = 0;
+                var5 = 1;
+                var4 = 4;
+                var3 = 10;
+                var1 = 60;
+            case 279:
+                var24 = var14().value;
+                var23 = var2;
+                if (!(var23 !== var16)) {
+                    _fun99636_ip = 514;
+                    continue _fun99636
+                }
+            case 293: // try_start_1
+                var23 = var24.split;
+                var24 = var23.bind(var24)(var9, var8);
+                var23 = _closure1_slot0;
+                var23 = var23.bind(var16)(var24, var8);
+                var24 = var23[var6];
+                var18 = var23[var5];
+                var19 = var23[var4];
+                var23 = var15.parseInt;
+                var24 = var23.bind(var16)(var24, var3);
+                var20 = var24;
+                var23 = var15.isNaN;
+                var24 = var23.bind(var16)(var24);
+                var23 = var1;
+                if (var24) {
+                    _fun99636_ip = 361;
+                    continue _fun99636
+                }
+            case 358:
+                var23 = var20;
+            case 361:
+                var21 = var10 * var23;
+                var23 = var18;
+                if (var23) {
+                    _fun99636_ip = 392;
+                    continue _fun99636
+                }
+            case 371:
+                var24 = var0;
+                var25 = var17;
+                var23 = var21;
+                var23 = var25 + var23;
+                var24.all = var23;
+                _fun99636_ip = 502;
+                continue _fun99636;
+            case 392:
+                var24 = var18;
+                var23 = var24.split;
+                var25 = var23.bind(var24)(var13);
+                var23 = var25;
+                var24 = var23[Symbol.iterator];
+                var23 = var24().next;
+            case 411:
+                var27 = var23().value;
+                var25 = var24;
+                if (!(var25 !== var16)) {
+                    _fun99636_ip = 502;
+                    continue _fun99636
+                }
+            case 422: // try_start_0
+                var22 = var27;
+                var27 = var11 === var27;
+                var26 = var27;
+                if (!var27) {
+                    _fun99636_ip = 438;
+                    continue _fun99636
+                }
+            case 435:
+                var26 = var19;
+            case 438:
+                var25 = var26;
+                if (!var26) {
+                    _fun99636_ip = 470;
+                    continue _fun99636
+                }
+            case 444:
+                var27 = var19;
+                var26 = var27.split;
+                var27 = var26.bind(var27)(var13);
+                var26 = var27.includes;
+                var26 = var26.bind(var27)(var12);
+                var25 = !var26;
+            case 470:
+                if (var25) {
+                    _fun99636_ip = 493;
+                    continue _fun99636
+                }
+            case 473:
+                var27 = var0;
+                var26 = var22;
+                var28 = var17;
+                var25 = var21;
+                var25 = var28 + var25;
+                var27[var26] = var25;
+            case 493: // try_end0
+                _fun99636_ip = 411;
+                continue _fun99636;
+            case 495: // catch_target0
+                CatchBlockStart(arg_register = 23);
+                var24.return();
+                throw var23;
+            case 502: // try_end1
+                _fun99636_ip = 279;
+                continue _fun99636;
+            case 507: // catch_target1
+                CatchBlockStart(arg_register = 1);
+                var2.return();
+                throw var1;
+            case 514:
+                return var0;
+        }
+    };
+    var2.updateRateLimits = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12920, 12921, 12862, 12923]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57]);

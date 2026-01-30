@@ -18,28 +18,28 @@ import tm.o;
 public final class z4 implements tm.o<b> {
 
     /* renamed from: b  reason: collision with root package name */
-    private final ActivityResultLauncher f28162b;
+    private final ActivityResultLauncher f28178b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final jq.b f28163c;
+    private final jq.b f28179c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final com.squareup.moshi.w f28164d;
+    private final com.squareup.moshi.w f28180d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f28165e;
+    private final String f28181e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f28166f;
+    private final String f28182f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final String f28167g;
+    private final String f28183g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final String f28168h;
+    private final String f28184h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Map f28169i;
+    private final Map f28185i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface a {
@@ -53,7 +53,7 @@ public final class z4 implements tm.o<b> {
         public static final class a implements b {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final a f28170a = new a();
+            public static final a f28186a = new a();
 
             private a() {
             }
@@ -79,33 +79,33 @@ public final class z4 implements tm.o<b> {
         public static final class C0366b implements b {
 
             /* renamed from: a  reason: collision with root package name */
-            private final InternalErrorInfo f28171a;
+            private final InternalErrorInfo f28187a;
 
             public C0366b(InternalErrorInfo errorInfo) {
                 Intrinsics.checkNotNullParameter(errorInfo, "errorInfo");
-                this.f28171a = errorInfo;
+                this.f28187a = errorInfo;
             }
 
             public final InternalErrorInfo a() {
-                return this.f28171a;
+                return this.f28187a;
             }
 
             public boolean equals(Object obj) {
                 if (this == obj) {
                     return true;
                 }
-                if ((obj instanceof C0366b) && Intrinsics.areEqual(this.f28171a, ((C0366b) obj).f28171a)) {
+                if ((obj instanceof C0366b) && Intrinsics.areEqual(this.f28187a, ((C0366b) obj).f28187a)) {
                     return true;
                 }
                 return false;
             }
 
             public int hashCode() {
-                return this.f28171a.hashCode();
+                return this.f28187a.hashCode();
             }
 
             public String toString() {
-                InternalErrorInfo internalErrorInfo = this.f28171a;
+                InternalErrorInfo internalErrorInfo = this.f28187a;
                 return "Error(errorInfo=" + internalErrorInfo + ")";
             }
         }
@@ -115,53 +115,53 @@ public final class z4 implements tm.o<b> {
     static final class c extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f28172d;
+        int f28188d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f28173e;
+        private /* synthetic */ Object f28189e;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f28175d;
+            int f28191d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ z4 f28176e;
+            final /* synthetic */ z4 f28192e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ String f28177i;
+            final /* synthetic */ String f28193i;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             a(z4 z4Var, String str, Continuation continuation) {
                 super(2, continuation);
-                this.f28176e = z4Var;
-                this.f28177i = str;
+                this.f28192e = z4Var;
+                this.f28193i = str;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                return new a(this.f28176e, this.f28177i, continuation);
+                return new a(this.f28192e, this.f28193i, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 or.b.f();
-                if (this.f28175d == 0) {
+                if (this.f28191d == 0) {
                     kotlin.c.b(obj);
-                    ActivityResultLauncher activityResultLauncher = this.f28176e.f28162b;
+                    ActivityResultLauncher activityResultLauncher = this.f28192e.f28178b;
                     androidx.browser.customtabs.b a10 = new b.d().a();
                     Intrinsics.checkNotNullExpressionValue(a10, "build(...)");
-                    activityResultLauncher.b(new uo.a(a10, h1.a(this.f28176e.f28167g, this.f28177i, this.f28176e.f28168h)));
-                    return Unit.f33282a;
+                    activityResultLauncher.b(new uo.a(a10, h1.a(this.f28192e.f28183g, this.f28193i, this.f28192e.f28184h)));
+                    return Unit.f33298a;
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
             }
         }
 
@@ -172,7 +172,7 @@ public final class z4 implements tm.o<b> {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             c cVar = new c(continuation);
-            cVar.f28173e = obj;
+            cVar.f28189e = obj;
             return cVar;
         }
 
@@ -217,7 +217,7 @@ public final class z4 implements tm.o<b> {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((c) create(flowCollector, continuation)).invokeSuspend(Unit.f33282a);
+            return ((c) create(flowCollector, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -230,20 +230,20 @@ public final class z4 implements tm.o<b> {
         Intrinsics.checkNotNullParameter(url, "url");
         Intrinsics.checkNotNullParameter(componentName, "componentName");
         Intrinsics.checkNotNullParameter(componentParams, "componentParams");
-        this.f28162b = customTabsLauncher;
-        this.f28163c = uiService;
-        this.f28164d = moshi;
-        this.f28165e = sessionToken;
-        this.f28166f = inquiryId;
-        this.f28167g = url;
-        this.f28168h = componentName;
-        this.f28169i = componentParams;
+        this.f28178b = customTabsLauncher;
+        this.f28179c = uiService;
+        this.f28180d = moshi;
+        this.f28181e = sessionToken;
+        this.f28182f = inquiryId;
+        this.f28183g = url;
+        this.f28184h = componentName;
+        this.f28185i = componentParams;
     }
 
     @Override // tm.o
     public boolean a(tm.o otherWorker) {
         Intrinsics.checkNotNullParameter(otherWorker, "otherWorker");
-        if (o.b.a(this, otherWorker) && Intrinsics.areEqual(((z4) otherWorker).f28167g, this.f28167g)) {
+        if (o.b.a(this, otherWorker) && Intrinsics.areEqual(((z4) otherWorker).f28183g, this.f28183g)) {
             return true;
         }
         return false;

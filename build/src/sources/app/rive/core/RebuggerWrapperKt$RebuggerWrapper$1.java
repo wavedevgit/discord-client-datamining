@@ -25,7 +25,7 @@ final class RebuggerWrapperKt$RebuggerWrapper$1 extends Lambda implements Functi
     public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
         b.a(obj);
         invoke((a) null, ((Number) obj2).intValue());
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     public final void invoke(a aVar, int i10) {

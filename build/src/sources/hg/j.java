@@ -6,22 +6,22 @@ import java.util.NoSuchElementException;
 abstract class j implements Iterator {
 
     /* renamed from: d  reason: collision with root package name */
-    private Object f27514d;
+    private Object f27530d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f27515e = 2;
+    private int f27531e = 2;
 
     protected abstract Object a();
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final Object b() {
-        this.f27515e = 3;
+        this.f27531e = 3;
         return null;
     }
 
     @Override // java.util.Iterator
     public final boolean hasNext() {
-        int i10 = this.f27515e;
+        int i10 = this.f27531e;
         if (i10 != 4) {
             int i11 = i10 - 1;
             if (i10 != 0) {
@@ -29,10 +29,10 @@ abstract class j implements Iterator {
                     return true;
                 }
                 if (i11 != 2) {
-                    this.f27515e = 4;
-                    this.f27514d = a();
-                    if (this.f27515e != 3) {
-                        this.f27515e = 1;
+                    this.f27531e = 4;
+                    this.f27530d = a();
+                    if (this.f27531e != 3) {
+                        this.f27531e = 1;
                         return true;
                     }
                 }
@@ -46,9 +46,9 @@ abstract class j implements Iterator {
     @Override // java.util.Iterator
     public final Object next() {
         if (hasNext()) {
-            this.f27515e = 2;
-            Object obj = this.f27514d;
-            this.f27514d = null;
+            this.f27531e = 2;
+            Object obj = this.f27530d;
+            this.f27530d = null;
             return obj;
         }
         throw new NoSuchElementException();

@@ -5,14 +5,14 @@ import android.view.Choreographer;
 public final /* synthetic */ class o0 implements Choreographer.FrameCallback {
 
     /* renamed from: d  reason: collision with root package name */
-    public final /* synthetic */ RenderSynchronizer f44680d;
+    public final /* synthetic */ RenderSynchronizer f44696d;
 
     public /* synthetic */ o0(RenderSynchronizer renderSynchronizer) {
-        this.f44680d = renderSynchronizer;
+        this.f44696d = renderSynchronizer;
     }
 
     @Override // android.view.Choreographer.FrameCallback
     public final void doFrame(long j10) {
-        RenderSynchronizer.b(this.f44680d, j10);
+        RenderSynchronizer.b(this.f44696d, j10);
     }
 }

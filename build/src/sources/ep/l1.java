@@ -104,7 +104,7 @@ public final class l1 implements vm.k {
         }
 
         private a() {
-            k.a aVar = vm.k.f51267a;
+            k.a aVar = vm.k.f51283a;
             this.f23212a = new vm.z(Reflection.getOrCreateKotlinClass(x5.d.b.class), C0301a.f23213d, b.f23214d);
         }
     }
@@ -174,13 +174,13 @@ public final class l1 implements vm.k {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit h(x5.d.b bVar) {
         bVar.d().invoke();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit i(x5.d.b bVar) {
         bVar.e().invoke();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private final void j(StepStyles.SelfieStepStyle selfieStepStyle) {
@@ -194,18 +194,18 @@ public final class l1 implements vm.k {
         int parseColor = Color.parseColor("#022050");
         Context context = this.f23210b.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-        themeableLottieAnimationView.I(parseColor, jp.s.d(context, yg.b.f54352m, null, false, 6, null));
+        themeableLottieAnimationView.I(parseColor, jp.s.d(context, yg.b.f54368m, null, false, 6, null));
         ThemeableLottieAnimationView themeableLottieAnimationView2 = this.f23210b.f25468e;
         int parseColor2 = Color.parseColor("#AA85FF");
         Context context2 = this.f23210b.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context2, "getContext(...)");
-        themeableLottieAnimationView2.I(parseColor2, jp.s.d(context2, yg.b.f54353n, null, false, 6, null));
+        themeableLottieAnimationView2.I(parseColor2, jp.s.d(context2, yg.b.f54369n, null, false, 6, null));
         Context context3 = this.f23210b.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context3, "getContext(...)");
-        int d10 = jp.s.d(context3, yg.b.f54353n, null, false, 6, null);
+        int d10 = jp.s.d(context3, yg.b.f54369n, null, false, 6, null);
         Context context4 = this.f23210b.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context4, "getContext(...)");
-        this.f23210b.f25468e.I(Color.parseColor("#DBCCFF"), r1.c.c(d10, jp.s.d(context4, yg.b.f54354o, null, false, 6, null), 0.66f));
+        this.f23210b.f25468e.I(Color.parseColor("#DBCCFF"), r1.c.c(d10, jp.s.d(context4, yg.b.f54370o, null, false, 6, null), 0.66f));
     }
 
     @Override // vm.k

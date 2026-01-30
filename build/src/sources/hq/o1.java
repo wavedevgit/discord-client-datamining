@@ -24,21 +24,21 @@ import kotlin.jvm.internal.Intrinsics;
 public final class o1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ViewGroup f27901a;
+    private final ViewGroup f27917a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Lazy f27902b;
+    private final Lazy f27918b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f27903c;
+    private boolean f27919c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Function2 f27904d;
+    private Function2 f27920d;
 
     public o1(ViewGroup contentView) {
         Intrinsics.checkNotNullParameter(contentView, "contentView");
-        this.f27901a = contentView;
-        this.f27902b = ir.l.b(new Function0() { // from class: hq.i1
+        this.f27917a = contentView;
+        this.f27918b = ir.l.b(new Function0() { // from class: hq.i1
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 iq.b j10;
@@ -51,61 +51,61 @@ public final class o1 {
     private final void g(ESignature.ESignatureComponentStyle eSignatureComponentStyle) {
         TextBasedComponentStyle dialogTitleStyle = eSignatureComponentStyle.getDialogTitleStyle();
         if (dialogTitleStyle != null) {
-            TextView signatureLabel = i().f31069j;
+            TextView signatureLabel = i().f31085j;
             Intrinsics.checkNotNullExpressionValue(signatureLabel, "signatureLabel");
             cq.f0.n(signatureLabel, dialogTitleStyle, null, 2, null);
         }
         TextBasedComponentStyle dialogTextStyle = eSignatureComponentStyle.getDialogTextStyle();
         if (dialogTextStyle != null) {
-            TextView signatureDescription = i().f31068i;
+            TextView signatureDescription = i().f31084i;
             Intrinsics.checkNotNullExpressionValue(signatureDescription, "signatureDescription");
             cq.f0.n(signatureDescription, dialogTextStyle, null, 2, null);
         }
         Integer baseBackgroundColorValue = eSignatureComponentStyle.getInputTextStyle().getBaseBackgroundColorValue();
         if (baseBackgroundColorValue != null) {
-            i().f31067h.setCardBackgroundColor(baseBackgroundColorValue.intValue());
+            i().f31083h.setCardBackgroundColor(baseBackgroundColorValue.intValue());
         }
         Double borderRadiusValue = eSignatureComponentStyle.getInputTextStyle().getBorderRadiusValue();
         if (borderRadiusValue != null) {
-            i().f31067h.setRadius((float) Math.ceil(jp.h.a(borderRadiusValue.doubleValue())));
+            i().f31083h.setRadius((float) Math.ceil(jp.h.a(borderRadiusValue.doubleValue())));
         }
         Double borderWidthValue = eSignatureComponentStyle.getInputTextStyle().getBorderWidthValue();
         if (borderWidthValue != null) {
-            i().f31067h.setStrokeWidth((int) Math.ceil(jp.h.a(borderWidthValue.doubleValue())));
+            i().f31083h.setStrokeWidth((int) Math.ceil(jp.h.a(borderWidthValue.doubleValue())));
         }
         Integer baseBorderColorValue = eSignatureComponentStyle.getInputTextStyle().getBaseBorderColorValue();
         if (baseBorderColorValue != null) {
-            i().f31067h.setStrokeColor(baseBorderColorValue.intValue());
+            i().f31083h.setStrokeColor(baseBorderColorValue.intValue());
         }
         ButtonSubmitComponentStyle submitButtonStyle = eSignatureComponentStyle.getSubmitButtonStyle();
         if (submitButtonStyle != null) {
-            Button saveButton = i().f31065f;
+            Button saveButton = i().f31081f;
             Intrinsics.checkNotNullExpressionValue(saveButton, "saveButton");
             cq.e.f(saveButton, submitButtonStyle, false, false, 6, null);
         }
         ButtonCancelComponentStyle clearSignatureButtonStyle = eSignatureComponentStyle.getClearSignatureButtonStyle();
         if (clearSignatureButtonStyle != null) {
-            Button clearButton = i().f31062c;
+            Button clearButton = i().f31078c;
             Intrinsics.checkNotNullExpressionValue(clearButton, "clearButton");
             cq.e.f(clearButton, clearSignatureButtonStyle, false, false, 6, null);
         }
     }
 
     private final iq.b i() {
-        return (iq.b) this.f27902b.getValue();
+        return (iq.b) this.f27918b.getValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final iq.b j(o1 o1Var) {
-        return iq.b.c(LayoutInflater.from(o1Var.f27901a.getContext()), o1Var.f27901a, true);
+        return iq.b.c(LayoutInflater.from(o1Var.f27917a.getContext()), o1Var.f27917a, true);
     }
 
     private final void k(StepStyles.UiStepStyle uiStepStyle, vm.a0 a0Var) {
-        if (this.f27903c) {
+        if (this.f27919c) {
             return;
         }
-        this.f27903c = true;
-        final BottomSheetBehavior q02 = BottomSheetBehavior.q0(i().f31061b);
+        this.f27919c = true;
+        final BottomSheetBehavior q02 = BottomSheetBehavior.q0(i().f31077b);
         Intrinsics.checkNotNullExpressionValue(q02, "from(...)");
         Function0 function0 = new Function0() { // from class: hq.k1
             @Override // kotlin.jvm.functions.Function0
@@ -115,42 +115,42 @@ public final class o1 {
                 return l10;
             }
         };
-        FrameLayout bottomSheet = i().f31061b;
+        FrameLayout bottomSheet = i().f31077b;
         Intrinsics.checkNotNullExpressionValue(bottomSheet, "bottomSheet");
-        tp.b.b(q02, function0, bottomSheet, i().f31070k, i().f31066g);
+        tp.b.b(q02, function0, bottomSheet, i().f31086k, i().f31082g);
         q02.L0(false);
-        i().f31063d.setOnClickListener(new View.OnClickListener() { // from class: hq.l1
+        i().f31079d.setOnClickListener(new View.OnClickListener() { // from class: hq.l1
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 o1.m(BottomSheetBehavior.this, view);
             }
         });
-        i().f31062c.setOnClickListener(new View.OnClickListener() { // from class: hq.m1
+        i().f31078c.setOnClickListener(new View.OnClickListener() { // from class: hq.m1
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 o1.n(o1.this, view);
             }
         });
-        i().f31065f.setOnClickListener(new View.OnClickListener() { // from class: hq.n1
+        i().f31081f.setOnClickListener(new View.OnClickListener() { // from class: hq.n1
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 o1.o(o1.this, q02, view);
             }
         });
-        ConstraintLayout signatureSheet = i().f31070k;
+        ConstraintLayout signatureSheet = i().f31086k;
         Intrinsics.checkNotNullExpressionValue(signatureSheet, "signatureSheet");
         cq.c.c(signatureSheet, uiStepStyle, null, new Rect(0, (int) jp.h.a(12.0d), 0, 0), 2, null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit l(o1 o1Var) {
-        Function2 function2 = o1Var.f27904d;
+        Function2 function2 = o1Var.f27920d;
         if (function2 != null) {
             function2.invoke(Boolean.TRUE, null);
         }
-        o1Var.f27904d = null;
-        o1Var.i().f31067h.f();
-        return Unit.f33282a;
+        o1Var.f27920d = null;
+        o1Var.i().f31083h.f();
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -160,31 +160,31 @@ public final class o1 {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void n(o1 o1Var, View view) {
-        o1Var.i().f31067h.f();
+        o1Var.i().f31083h.f();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void o(o1 o1Var, BottomSheetBehavior bottomSheetBehavior, View view) {
-        Function2 function2 = o1Var.f27904d;
+        Function2 function2 = o1Var.f27920d;
         if (function2 != null) {
-            function2.invoke(Boolean.FALSE, o1Var.i().f31067h.i());
+            function2.invoke(Boolean.FALSE, o1Var.i().f31083h.i());
         }
-        o1Var.f27904d = null;
+        o1Var.f27920d = null;
         bottomSheetBehavior.Y0(5);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void q(o1 o1Var) {
-        BottomSheetBehavior q02 = BottomSheetBehavior.q0(o1Var.i().f31061b);
+        BottomSheetBehavior q02 = BottomSheetBehavior.q0(o1Var.i().f31077b);
         Intrinsics.checkNotNullExpressionValue(q02, "from(...)");
         q02.Y0(3);
     }
 
     public final boolean h() {
-        if (!this.f27902b.isInitialized()) {
+        if (!this.f27918b.isInitialized()) {
             return false;
         }
-        BottomSheetBehavior q02 = BottomSheetBehavior.q0(i().f31061b);
+        BottomSheetBehavior q02 = BottomSheetBehavior.q0(i().f31077b);
         Intrinsics.checkNotNullExpressionValue(q02, "from(...)");
         if (q02.w0() == 5) {
             return false;
@@ -200,9 +200,9 @@ public final class o1 {
         Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
         Intrinsics.checkNotNullParameter(onComplete, "onComplete");
         k(uiStepStyle, viewEnvironment);
-        this.f27904d = onComplete;
-        i().f31067h.f();
-        TextView textView = i().f31069j;
+        this.f27920d = onComplete;
+        i().f31083h.f();
+        TextView textView = i().f31085j;
         ESignature.Attributes attributes = config.getAttributes();
         if (attributes != null) {
             str = attributes.getDialogTitle();
@@ -210,7 +210,7 @@ public final class o1 {
             str = null;
         }
         textView.setText(str);
-        TextView textView2 = i().f31068i;
+        TextView textView2 = i().f31084i;
         ESignature.Attributes attributes2 = config.getAttributes();
         textView2.setText((attributes2 == null || (r4 = attributes2.getDialogText()) == null) ? "" : "");
         ESignature.ESignatureComponentStyle styles = config.getStyles();

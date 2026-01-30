@@ -18,23 +18,23 @@ public abstract class p {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f36131a;
+        public static final /* synthetic */ int[] f36147a;
 
         static {
             int[] iArr = new int[m.values().length];
             try {
-                iArr[m.f36122e.ordinal()] = 1;
+                iArr[m.f36138e.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[m.f36121d.ordinal()] = 2;
+                iArr[m.f36137d.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[m.f36123i.ordinal()] = 3;
+                iArr[m.f36139i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f36131a = iArr;
+            f36147a = iArr;
         }
     }
 
@@ -43,7 +43,7 @@ public abstract class p {
     public /* synthetic */ class b extends FunctionReferenceImpl implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f36132d = new b();
+        public static final b f36148d = new b();
 
         b() {
             super(1, Class.class, "getComponentType", "getComponentType()Ljava/lang/Class;", 0);
@@ -85,7 +85,7 @@ public abstract class p {
                         if (a10 == null) {
                             i10 = -1;
                         } else {
-                            i10 = a.f36131a[a10.ordinal()];
+                            i10 = a.f36147a[a10.ordinal()];
                         }
                         if (i10 != -1 && i10 != 1) {
                             if (i10 != 2 && i10 != 3) {
@@ -156,11 +156,11 @@ public abstract class p {
     private static final Type g(KTypeProjection kTypeProjection) {
         m d10 = kTypeProjection.d();
         if (d10 == null) {
-            return q.f36133i.a();
+            return q.f36149i.a();
         }
         KType c10 = kTypeProjection.c();
         Intrinsics.checkNotNull(c10);
-        int i10 = a.f36131a[d10.ordinal()];
+        int i10 = a.f36147a[d10.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
@@ -178,7 +178,7 @@ public abstract class p {
         if (type instanceof Class) {
             Class cls = (Class) type;
             if (cls.isArray()) {
-                Sequence q10 = kotlin.sequences.k.q(type, b.f36132d);
+                Sequence q10 = kotlin.sequences.k.q(type, b.f36148d);
                 return ((Class) kotlin.sequences.k.Q(q10)).getName() + StringsKt.F("[]", kotlin.sequences.k.C(q10));
             }
             String name = cls.getName();

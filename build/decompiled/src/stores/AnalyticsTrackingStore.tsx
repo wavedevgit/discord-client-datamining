@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var0.bind(var1)();
         var1 = var2.then;
         var0 = function(arg0) { // Environment: var0
-            _fun39577: for (var _fun39577_ip = 0;;) switch (_fun39577_ip) {
+            _fun39628: for (var _fun39628_ip = 0;;) switch (_fun39628_ip) {
                 case 0:
                     var2 = arg0;
                     var0 = {};
@@ -142,8 +142,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var1 == var2;
                     var1 = undefined;
                     if (var3) {
-                        _fun39577_ip = 22;
-                        continue _fun39577
+                        _fun39628_ip = 22;
+                        continue _fun39628
                     }
                 case 16:
                     var1 = var2.uuid;
@@ -181,4 +181,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1216, 660, 481, 806, 4271, 795, 794, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1216, 660, 481, 806, 4277, 795, 794, 2]);

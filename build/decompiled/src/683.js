@@ -5,13 +5,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function(arg0) { // Original name: isStrictComparable, environment: var0
-        _fun8240: for (var _fun8240_ip = 0;;) switch (_fun8240_ip) {
+        _fun8241: for (var _fun8241_ip = 0;;) switch (_fun8241_ip) {
             case 0:
                 var3 = arg0;
                 var0 = var3 == var3;
                 if (!var0) {
-                    _fun8240_ip = 42;
-                    continue _fun8240
+                    _fun8241_ip = 42;
+                    continue _fun8241
                 }
             case 10:
                 var4 = _closure1_slot0;

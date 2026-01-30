@@ -89,46 +89,46 @@ import xp.q5;
 public final class f3 implements vm.k {
 
     /* renamed from: m  reason: collision with root package name */
-    public static final a f27741m = new a(null);
+    public static final a f27757m = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private final iq.a f27742b;
+    private final iq.a f27758b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f27743c;
+    private final Map f27759c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f27744d;
+    private final Map f27760d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final bq.k f27745e;
+    private final bq.k f27761e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final o1 f27746f;
+    private final o1 f27762f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final e1 f27747g;
+    private final e1 f27763g;
 
     /* renamed from: h  reason: collision with root package name */
-    private Function0 f27748h;
+    private Function0 f27764h;
 
     /* renamed from: i  reason: collision with root package name */
-    private Function0 f27749i;
+    private Function0 f27765i;
 
     /* renamed from: j  reason: collision with root package name */
-    private Function2 f27750j;
+    private Function2 f27766j;
 
     /* renamed from: k  reason: collision with root package name */
-    private Function1 f27751k;
+    private Function1 f27767k;
 
     /* renamed from: l  reason: collision with root package name */
-    private Function1 f27752l;
+    private Function1 f27768l;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements vm.c0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final /* synthetic */ vm.f f27753a;
+        private final /* synthetic */ vm.f f27769a;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: hq.f3$a$a  reason: collision with other inner class name */
@@ -147,7 +147,7 @@ public final class f3 implements vm.k {
             @Override // kotlin.jvm.functions.Function2
             public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
                 a((v4.d.a) obj, (vm.a0) obj2);
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
         }
 
@@ -180,16 +180,16 @@ public final class f3 implements vm.k {
             Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
             Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
             Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-            return this.f27753a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+            return this.f27769a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
         }
 
         @Override // vm.c0
         public KClass getType() {
-            return this.f27753a.getType();
+            return this.f27769a.getType();
         }
 
         private a() {
-            this.f27753a = new vm.f(Reflection.getOrCreateKotlinClass(v4.d.a.class), new Function4() { // from class: hq.e3
+            this.f27769a = new vm.f(Reflection.getOrCreateKotlinClass(v4.d.a.class), new Function4() { // from class: hq.e3
                 @Override // kotlin.jvm.functions.Function4
                 public final Object invoke(Object obj, Object obj2, Object obj3, Object obj4) {
                     View c10;
@@ -204,16 +204,16 @@ public final class f3 implements vm.k {
     public static final class b extends BottomSheetBehavior.g {
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ BottomSheetBehavior f27755b;
+        final /* synthetic */ BottomSheetBehavior f27771b;
 
         b(BottomSheetBehavior bottomSheetBehavior) {
-            this.f27755b = bottomSheetBehavior;
+            this.f27771b = bottomSheetBehavior;
         }
 
         @Override // com.google.android.material.bottomsheet.BottomSheetBehavior.g
         public void b(View bottomSheet, float f10) {
             Intrinsics.checkNotNullParameter(bottomSheet, "bottomSheet");
-            f3.this.f27742b.f31057j.setPadding(f3.this.f27742b.f31057j.getPaddingLeft(), f3.this.f27742b.f31057j.getPaddingTop(), f3.this.f27742b.f31057j.getPaddingRight(), this.f27755b.v0() + ((int) (f10 * (f3.this.f27742b.f31055h.getHeight() - this.f27755b.v0()))));
+            f3.this.f27758b.f31073j.setPadding(f3.this.f27758b.f31073j.getPaddingLeft(), f3.this.f27758b.f31073j.getPaddingTop(), f3.this.f27758b.f31073j.getPaddingRight(), this.f27771b.v0() + ((int) (f10 * (f3.this.f27758b.f31071h.getHeight() - this.f27771b.v0()))));
         }
 
         @Override // com.google.android.material.bottomsheet.BottomSheetBehavior.g
@@ -226,7 +226,7 @@ public final class f3 implements vm.k {
     public static final class c implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final c f27756d = new c();
+        public static final c f27772d = new c();
 
         @Override // kotlin.jvm.functions.Function1
         /* renamed from: a */
@@ -240,17 +240,17 @@ public final class f3 implements vm.k {
         Map i10;
         Intrinsics.checkNotNullParameter(binding, "binding");
         Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
-        this.f27742b = binding;
+        this.f27758b = binding;
         CoordinatorLayout root = binding.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
-        this.f27745e = new bq.k(root);
+        this.f27761e = new bq.k(root);
         CoordinatorLayout root2 = binding.getRoot();
         Intrinsics.checkNotNullExpressionValue(root2, "getRoot(...)");
-        this.f27746f = new o1(root2);
+        this.f27762f = new o1(root2);
         CoordinatorLayout root3 = binding.getRoot();
         Intrinsics.checkNotNullExpressionValue(root3, "getRoot(...)");
-        this.f27747g = new e1(root3);
-        this.f27748h = new Function0() { // from class: hq.r1
+        this.f27763g = new e1(root3);
+        this.f27764h = new Function0() { // from class: hq.r1
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit Y;
@@ -258,7 +258,7 @@ public final class f3 implements vm.k {
                 return Y;
             }
         };
-        this.f27749i = new Function0() { // from class: hq.c2
+        this.f27765i = new Function0() { // from class: hq.c2
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit W;
@@ -266,7 +266,7 @@ public final class f3 implements vm.k {
                 return W;
             }
         };
-        this.f27750j = new Function2() { // from class: hq.n2
+        this.f27766j = new Function2() { // from class: hq.n2
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(Object obj, Object obj2) {
                 Unit X;
@@ -274,7 +274,7 @@ public final class f3 implements vm.k {
                 return X;
             }
         };
-        this.f27751k = new Function1() { // from class: hq.x2
+        this.f27767k = new Function1() { // from class: hq.x2
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit V;
@@ -282,7 +282,7 @@ public final class f3 implements vm.k {
                 return V;
             }
         };
-        this.f27752l = new Function1() { // from class: hq.y2
+        this.f27768l = new Function1() { // from class: hq.y2
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit Z;
@@ -291,44 +291,44 @@ public final class f3 implements vm.k {
             }
         };
         Context context = binding.getRoot().getContext();
-        vp.m mVar = vp.m.f51891a;
+        vp.m mVar = vp.m.f51907a;
         Intrinsics.checkNotNull(context);
         List f10 = initialRendering.f();
         List d10 = initialRendering.d();
         final vp.h h10 = vp.m.h(mVar, context, new vp.g(f10, d10 == null ? CollectionsKt.l() : d10, initialRendering.t()), initialRendering.u(), false, false, 16, null);
         Integer c10 = initialRendering.c();
         if (c10 != null) {
-            binding.f31058k.setBackgroundColor(c10.intValue());
+            binding.f31074k.setBackgroundColor(c10.intValue());
         }
         Drawable a10 = initialRendering.a(context);
         if (a10 != null) {
-            binding.f31058k.setBackground(a10);
-            binding.f31050c.setBackgroundColor(0);
+            binding.f31074k.setBackground(a10);
+            binding.f31066c.setBackgroundColor(0);
         }
         Integer h11 = initialRendering.h();
         if (h11 != null) {
-            binding.f31056i.setControlsColor(h11.intValue());
+            binding.f31072i.setControlsColor(h11.intValue());
         }
         List d11 = initialRendering.d();
-        this.f27744d = (d11 == null || (i10 = com.withpersona.sdk2.inquiry.steps.ui.components.f.j(d11)) == null) ? kotlin.collections.o0.i() : i10;
+        this.f27760d = (d11 == null || (i10 = com.withpersona.sdk2.inquiry.steps.ui.components.f.j(d11)) == null) ? kotlin.collections.o0.i() : i10;
         Set<Map.Entry> entrySet = h10.c().a().entrySet();
         LinkedHashMap linkedHashMap = new LinkedHashMap(kotlin.ranges.d.d(kotlin.collections.o0.e(CollectionsKt.w(entrySet, 10)), 16));
         for (Map.Entry entry : entrySet) {
             Pair a11 = ir.v.a(entry.getKey(), ((vp.a) entry.getValue()).d());
             linkedHashMap.put(a11.c(), a11.d());
         }
-        this.f27743c = linkedHashMap;
-        this.f27742b.f31059l.addView(h10.a());
+        this.f27759c = linkedHashMap;
+        this.f27758b.f31075l.addView(h10.a());
         if (initialRendering.s() == StyleElements.PositionType.CENTER) {
             ConstraintSet constraintSet = new ConstraintSet();
-            constraintSet.f(this.f27742b.f31049b);
-            constraintSet.g(this.f27742b.f31059l.getId(), 4, this.f27742b.f31049b.getId(), 4);
-            constraintSet.c(this.f27742b.f31049b);
+            constraintSet.f(this.f27758b.f31065b);
+            constraintSet.g(this.f27758b.f31075l.getId(), 4, this.f27758b.f31065b.getId(), 4);
+            constraintSet.c(this.f27758b.f31065b);
         }
         if (h10.b() != null) {
             T(h10, initialRendering.f());
         }
-        CoordinatorLayout root4 = this.f27742b.getRoot();
+        CoordinatorLayout root4 = this.f27758b.getRoot();
         Intrinsics.checkNotNullExpressionValue(root4, "getRoot(...)");
         tp.f.g(root4, new Function1() { // from class: hq.z2
             @Override // kotlin.jvm.functions.Function1
@@ -354,7 +354,7 @@ public final class f3 implements vm.k {
     /* JADX INFO: Access modifiers changed from: private */
     public static final void C0(f3 f3Var, k5 k5Var, View view, View view2) {
         boolean z10;
-        Function2 function2 = f3Var.f27750j;
+        Function2 function2 = f3Var.f27766j;
         if (view.getVisibility() == 0) {
             z10 = true;
         } else {
@@ -373,7 +373,7 @@ public final class f3 implements vm.k {
                 return E0;
             }
         });
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -383,7 +383,7 @@ public final class f3 implements vm.k {
         bVar.f().c(it);
         bVar.o().c(CollectionsKt.l());
         bVar.r().c("");
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -396,7 +396,7 @@ public final class f3 implements vm.k {
                 return G0;
             }
         });
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -405,17 +405,17 @@ public final class f3 implements vm.k {
         com.withpersona.sdk2.inquiry.steps.ui.components.b bVar = (com.withpersona.sdk2.inquiry.steps.ui.components.b) k5Var;
         bVar.o().c(it);
         bVar.r().c("");
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private static final void H0(final f3 f3Var, xp.c2 c2Var, final Function1 function1) {
         if (c2Var == null) {
             return;
         }
-        f3Var.f27742b.f31056i.getBackButton().setEnabled(false);
-        f3Var.f27742b.f31056i.setImportantForAccessibility(4);
-        f3Var.f27742b.f31059l.setImportantForAccessibility(4);
-        f3Var.f27745e.u(c2Var, new Function1() { // from class: hq.w2
+        f3Var.f27758b.f31072i.getBackButton().setEnabled(false);
+        f3Var.f27758b.f31072i.setImportantForAccessibility(4);
+        f3Var.f27758b.f31075l.setImportantForAccessibility(4);
+        f3Var.f27761e.u(c2Var, new Function1() { // from class: hq.w2
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit I0;
@@ -428,13 +428,13 @@ public final class f3 implements vm.k {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit I0(f3 f3Var, Function1 function1, List selectedItems) {
         Intrinsics.checkNotNullParameter(selectedItems, "selectedItems");
-        f3Var.f27742b.f31056i.getBackButton().setEnabled(true);
-        f3Var.f27742b.f31056i.setImportantForAccessibility(1);
-        f3Var.f27742b.f31059l.setImportantForAccessibility(1);
+        f3Var.f27758b.f31072i.getBackButton().setEnabled(true);
+        f3Var.f27758b.f31072i.setImportantForAccessibility(1);
+        f3Var.f27758b.f31075l.setImportantForAccessibility(1);
         if (!selectedItems.isEmpty()) {
             function1.invoke(selectedItems);
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -447,24 +447,24 @@ public final class f3 implements vm.k {
                 return K0;
             }
         });
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit K0(k5 k5Var, List it) {
         Intrinsics.checkNotNullParameter(it, "it");
         ((InputPhoneNumberComponent) k5Var).g().c(it);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private static final void L0(final f3 f3Var, xp.c2 c2Var, final Function1 function1) {
         if (c2Var == null) {
             return;
         }
-        f3Var.f27742b.f31056i.getBackButton().setEnabled(false);
-        f3Var.f27742b.f31056i.setImportantForAccessibility(4);
-        f3Var.f27742b.f31059l.setImportantForAccessibility(4);
-        f3Var.f27745e.u(c2Var, new Function1() { // from class: hq.v2
+        f3Var.f27758b.f31072i.getBackButton().setEnabled(false);
+        f3Var.f27758b.f31072i.setImportantForAccessibility(4);
+        f3Var.f27758b.f31075l.setImportantForAccessibility(4);
+        f3Var.f27761e.u(c2Var, new Function1() { // from class: hq.v2
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit M0;
@@ -477,21 +477,21 @@ public final class f3 implements vm.k {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit M0(f3 f3Var, Function1 function1, List selectedItems) {
         Intrinsics.checkNotNullParameter(selectedItems, "selectedItems");
-        f3Var.f27742b.f31056i.getBackButton().setEnabled(true);
-        f3Var.f27742b.f31056i.setImportantForAccessibility(1);
-        f3Var.f27742b.f31059l.setImportantForAccessibility(1);
+        f3Var.f27758b.f31072i.getBackButton().setEnabled(true);
+        f3Var.f27758b.f31072i.setImportantForAccessibility(1);
+        f3Var.f27758b.f31075l.setImportantForAccessibility(1);
         if (!selectedItems.isEmpty()) {
             function1.invoke(selectedItems);
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void N0(final f3 f3Var, final k5 k5Var, ESignature eSignature, v4.d.a aVar, vm.a0 a0Var, View view) {
-        f3Var.f27742b.f31056i.getBackButton().setEnabled(false);
-        f3Var.f27742b.f31056i.setImportantForAccessibility(4);
-        f3Var.f27742b.f31059l.setImportantForAccessibility(4);
-        f3Var.f27746f.p((ESignatureComponent) k5Var, eSignature, aVar.t(), a0Var, new Function2() { // from class: hq.s2
+        f3Var.f27758b.f31072i.getBackButton().setEnabled(false);
+        f3Var.f27758b.f31072i.setImportantForAccessibility(4);
+        f3Var.f27758b.f31075l.setImportantForAccessibility(4);
+        f3Var.f27762f.p((ESignatureComponent) k5Var, eSignature, aVar.t(), a0Var, new Function2() { // from class: hq.s2
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(Object obj, Object obj2) {
                 Unit O0;
@@ -515,42 +515,42 @@ public final class f3 implements vm.k {
         int i13 = g10.f3152c;
         View b10 = hVar.b();
         if (b10 == null) {
-            f3Var.f27742b.f31057j.setPadding(i12, i11, i13, max);
+            f3Var.f27758b.f31073j.setPadding(i12, i11, i13, max);
         } else {
-            ShadowedNestedScrollView nestedScroll = f3Var.f27742b.f31057j;
+            ShadowedNestedScrollView nestedScroll = f3Var.f27758b.f31073j;
             Intrinsics.checkNotNullExpressionValue(nestedScroll, "nestedScroll");
             nestedScroll.setPadding(i12, i11, i13, nestedScroll.getPaddingBottom());
             b10.setPadding(i12, b10.getPaddingTop(), i13, max);
         }
-        MaterialDivider footerDivider = f3Var.f27742b.f31051d;
+        MaterialDivider footerDivider = f3Var.f27758b.f31067d;
         Intrinsics.checkNotNullExpressionValue(footerDivider, "footerDivider");
         ViewGroup.LayoutParams layoutParams = footerDivider.getLayoutParams();
         if (layoutParams != null) {
             ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) layoutParams;
             marginLayoutParams.bottomMargin = g10.f3153d;
             footerDivider.setLayoutParams(marginLayoutParams);
-            CoordinatorLayout footerSheetCoordinatorLayout = f3Var.f27742b.f31053f;
+            CoordinatorLayout footerSheetCoordinatorLayout = f3Var.f27758b.f31069f;
             Intrinsics.checkNotNullExpressionValue(footerSheetCoordinatorLayout, "footerSheetCoordinatorLayout");
             footerSheetCoordinatorLayout.setPadding(i12, footerSheetCoordinatorLayout.getPaddingTop(), i13, max);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.MarginLayoutParams");
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit O0(f3 f3Var, k5 k5Var, boolean z10, Bitmap bitmap) {
-        f3Var.f27742b.f31056i.getBackButton().setEnabled(true);
-        f3Var.f27742b.f31056i.setImportantForAccessibility(1);
-        f3Var.f27742b.f31059l.setImportantForAccessibility(1);
+        f3Var.f27758b.f31072i.getBackButton().setEnabled(true);
+        f3Var.f27758b.f31072i.setImportantForAccessibility(1);
+        f3Var.f27758b.f31075l.setImportantForAccessibility(1);
         if (!z10) {
             ((ESignatureComponent) k5Var).a().c(bitmap);
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void P0(f3 f3Var, k5 k5Var, View view) {
-        f3Var.f27751k.invoke(k5Var);
+        f3Var.f27767k.invoke(k5Var);
     }
 
     private final void Q(View view, Map map, k5 k5Var, boolean z10) {
@@ -559,11 +559,11 @@ public final class f3 implements vm.k {
     }
 
     private static final void Q0(final f3 f3Var, final TextInputLayout textInputLayout, xp.c2 c2Var, final xp.a4 a4Var) {
-        f3Var.f27742b.f31056i.getBackButton().setEnabled(false);
+        f3Var.f27758b.f31072i.getBackButton().setEnabled(false);
         textInputLayout.setEnabled(false);
-        f3Var.f27742b.f31056i.setImportantForAccessibility(4);
-        f3Var.f27742b.f31059l.setImportantForAccessibility(4);
-        f3Var.f27745e.u(c2Var, new Function1() { // from class: hq.q2
+        f3Var.f27758b.f31072i.setImportantForAccessibility(4);
+        f3Var.f27758b.f31075l.setImportantForAccessibility(4);
+        f3Var.f27761e.u(c2Var, new Function1() { // from class: hq.q2
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit R0;
@@ -596,13 +596,13 @@ public final class f3 implements vm.k {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit R0(f3 f3Var, TextInputLayout textInputLayout, xp.a4 a4Var, List selectedItems) {
         Intrinsics.checkNotNullParameter(selectedItems, "selectedItems");
-        f3Var.f27742b.f31056i.getBackButton().setEnabled(true);
+        f3Var.f27758b.f31072i.getBackButton().setEnabled(true);
         textInputLayout.setEnabled(true);
         textInputLayout.requestLayout();
-        f3Var.f27742b.f31056i.setImportantForAccessibility(1);
-        f3Var.f27742b.f31059l.setImportantForAccessibility(1);
+        f3Var.f27758b.f31072i.setImportantForAccessibility(1);
+        f3Var.f27758b.f31075l.setImportantForAccessibility(1);
         a4Var.a().c(selectedItems);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private final void S(View view, Map map, k5 k5Var) {
@@ -659,10 +659,10 @@ public final class f3 implements vm.k {
                     return U0;
                 }
             }).b();
-            vp.h e10 = this.f27747g.e();
+            vp.h e10 = this.f27763g.e();
             if (e10 != null && (c10 = e10.c()) != null && (a10 = c10.a()) != null) {
                 for (Map.Entry entry : a10.entrySet()) {
-                    q0(aVar, ((vp.a) entry.getValue()).c(), ((vp.a) entry.getValue()).d(), map, map2, a0Var, this.f27744d);
+                    q0(aVar, ((vp.a) entry.getValue()).c(), ((vp.a) entry.getValue()).d(), map, map2, a0Var, this.f27760d);
                 }
                 for (Pair pair : b10) {
                     final Function1 function1 = (Function1) pair.d();
@@ -698,7 +698,7 @@ public final class f3 implements vm.k {
         if (c10 != null) {
             e0(hVar, c10.intValue(), yVar);
         } else {
-            this.f27742b.f31050c.addView(hVar.b());
+            this.f27758b.f31066c.addView(hVar.b());
         }
     }
 
@@ -706,7 +706,7 @@ public final class f3 implements vm.k {
     public static final Unit T0(v4.d.a aVar, xp.t4 t4Var, k5 it) {
         Intrinsics.checkNotNullParameter(it, "it");
         aVar.o().invoke(t4Var, it);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private final Map U(List list) {
@@ -729,14 +729,14 @@ public final class f3 implements vm.k {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit U0(f3 f3Var, k5 it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        f3Var.f27747g.f();
-        return Unit.f33282a;
+        f3Var.f27763g.f();
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit V(GovernmentIdNfcScanComponent governmentIdNfcScanComponent) {
         Intrinsics.checkNotNullParameter(governmentIdNfcScanComponent, "<unused var>");
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -746,24 +746,24 @@ public final class f3 implements vm.k {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit W() {
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit X(k5 k5Var, boolean z10) {
         Intrinsics.checkNotNullParameter(k5Var, "<unused var>");
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit Y() {
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit Z(q5 it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private final void a0(Map map, Map map2, List list) {
@@ -802,7 +802,7 @@ public final class f3 implements vm.k {
                     map2.put(inputTextAreaComponent.getName(), n0(inputTextAreaComponent.b().b()));
                 } else if (a10 instanceof InputPhoneNumberComponent) {
                     InputPhoneNumberComponent inputPhoneNumberComponent = (InputPhoneNumberComponent) a10;
-                    String h10 = yp.d.f54919a.h((xp.b4) CollectionsKt.o0(inputPhoneNumberComponent.g().b()));
+                    String h10 = yp.d.f54935a.h((xp.b4) CollectionsKt.o0(inputPhoneNumberComponent.g().b()));
                     map2.put(inputPhoneNumberComponent.getName(), n0(h10 + " " + inputPhoneNumberComponent.b().b()));
                 } else if (a10 instanceof InputConfirmationCodeComponent) {
                     InputConfirmationCodeComponent inputConfirmationCodeComponent = (InputConfirmationCodeComponent) a10;
@@ -838,7 +838,7 @@ public final class f3 implements vm.k {
                 } else if (a10 instanceof l5) {
                     ArrayList arrayList2 = new ArrayList();
                     for (k5 k5Var : ((l5) a10).getChildren()) {
-                        View view = (View) this.f27743c.get(k5Var.getName());
+                        View view = (View) this.f27759c.get(k5Var.getName());
                         if (view == null) {
                             aVar = null;
                         } else {
@@ -908,7 +908,7 @@ public final class f3 implements vm.k {
     public static final void c0(ClickableStackComponent clickableStackComponent, f3 f3Var, ConstraintLayout constraintLayout, View view) {
         boolean z10 = true;
         clickableStackComponent.f(true);
-        Function2 function2 = f3Var.f27750j;
+        Function2 function2 = f3Var.f27766j;
         if (constraintLayout.getVisibility() != 0) {
             z10 = false;
         }
@@ -923,7 +923,7 @@ public final class f3 implements vm.k {
                 arrayList.add(obj2);
             }
         }
-        xp.t4 d10 = this.f27747g.d();
+        xp.t4 d10 = this.f27763g.d();
         if (d10 != null) {
             Iterator it = arrayList.iterator();
             while (true) {
@@ -939,10 +939,10 @@ public final class f3 implements vm.k {
             }
             xp.t4 t4Var = (xp.t4) obj;
             if (t4Var != null && !t4Var.Y0()) {
-                this.f27747g.f();
+                this.f27763g.f();
             }
         }
-        if (this.f27747g.d() == null) {
+        if (this.f27763g.d() == null) {
             Iterator it2 = arrayList.iterator();
             while (true) {
                 if (!it2.hasNext()) {
@@ -951,12 +951,12 @@ public final class f3 implements vm.k {
                 xp.t4 t4Var2 = (xp.t4) it2.next();
                 if (!t4Var2.W1()) {
                     t4Var2.y1(true);
-                    this.f27747g.g(t4Var2, a0Var);
+                    this.f27763g.g(t4Var2, a0Var);
                     break;
                 }
             }
         }
-        xp.t4 d11 = this.f27747g.d();
+        xp.t4 d11 = this.f27763g.d();
         if (d11 != null) {
             S0(aVar, a0Var, d11, map, map2);
         }
@@ -969,8 +969,8 @@ public final class f3 implements vm.k {
         LayerDrawable layerDrawable;
         Drawable drawable2;
         GradientDrawable gradientDrawable;
-        this.f27742b.f31051d.setVisibility(0);
-        this.f27742b.f31053f.setVisibility(0);
+        this.f27758b.f31067d.setVisibility(0);
+        this.f27758b.f31069f.setVisibility(0);
         View b10 = hVar.b();
         String str = null;
         if (b10 != null) {
@@ -988,14 +988,14 @@ public final class f3 implements vm.k {
         } else {
             i11 = 0;
         }
-        Drawable background = this.f27742b.f31055h.getBackground();
+        Drawable background = this.f27758b.f31071h.getBackground();
         if (background instanceof LayerDrawable) {
             layerDrawable = (LayerDrawable) background;
         } else {
             layerDrawable = null;
         }
         if (layerDrawable != null) {
-            drawable2 = layerDrawable.findDrawableByLayerId(f1.f27727k);
+            drawable2 = layerDrawable.findDrawableByLayerId(f1.f27743k);
         } else {
             drawable2 = null;
         }
@@ -1007,26 +1007,26 @@ public final class f3 implements vm.k {
         if (gradientDrawable != null) {
             gradientDrawable.setColor(i11);
         }
-        this.f27742b.f31052e.addView(hVar.b());
+        this.f27758b.f31068e.addView(hVar.b());
         k5 k5Var = (k5) CollectionsKt.q0(yVar.getChildren(), i10);
         if (k5Var != null) {
             str = k5Var.getName();
         }
-        final View view = (View) this.f27743c.get(str);
-        final BottomSheetBehavior q02 = BottomSheetBehavior.q0(this.f27742b.f31055h);
+        final View view = (View) this.f27759c.get(str);
+        final BottomSheetBehavior q02 = BottomSheetBehavior.q0(this.f27758b.f31071h);
         Intrinsics.checkNotNullExpressionValue(q02, "from(...)");
-        this.f27742b.f31057j.setVerticalFadingEdgeEnabled(false);
+        this.f27758b.f31073j.setVerticalFadingEdgeEnabled(false);
         if (view != null) {
-            this.f27742b.f31054g.setVisibility(0);
-            this.f27742b.f31052e.addOnLayoutChangeListener(new View.OnLayoutChangeListener() { // from class: hq.l2
+            this.f27758b.f31070g.setVisibility(0);
+            this.f27758b.f31068e.addOnLayoutChangeListener(new View.OnLayoutChangeListener() { // from class: hq.l2
                 @Override // android.view.View.OnLayoutChangeListener
                 public final void onLayoutChange(View view2, int i12, int i13, int i14, int i15, int i16, int i17, int i18, int i19) {
                     f3.f0(f3.this, view, q02, view2, i12, i13, i14, i15, i16, i17, i18, i19);
                 }
             });
         } else {
-            this.f27742b.f31054g.setVisibility(4);
-            this.f27742b.f31052e.addOnLayoutChangeListener(new View.OnLayoutChangeListener() { // from class: hq.m2
+            this.f27758b.f31070g.setVisibility(4);
+            this.f27758b.f31068e.addOnLayoutChangeListener(new View.OnLayoutChangeListener() { // from class: hq.m2
                 @Override // android.view.View.OnLayoutChangeListener
                 public final void onLayoutChange(View view2, int i12, int i13, int i14, int i15, int i16, int i17, int i18, int i19) {
                     f3.g0(f3.this, q02, view2, i12, i13, i14, i15, i16, i17, i18, i19);
@@ -1038,58 +1038,58 @@ public final class f3 implements vm.k {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void f0(f3 f3Var, View view, BottomSheetBehavior bottomSheetBehavior, View view2, int i10, int i11, int i12, int i13, int i14, int i15, int i16, int i17) {
-        int bottom = f3Var.f27742b.f31052e.getBottom();
+        int bottom = f3Var.f27758b.f31068e.getBottom();
         Rect rect = new Rect();
         view.getDrawingRect(rect);
-        f3Var.f27742b.f31055h.offsetDescendantRectToMyCoords(view, rect);
+        f3Var.f27758b.f31071h.offsetDescendantRectToMyCoords(view, rect);
         int v02 = bottomSheetBehavior.v0();
         bottomSheetBehavior.T0(rect.top);
         if (v02 != bottomSheetBehavior.v0()) {
-            ShadowedNestedScrollView shadowedNestedScrollView = f3Var.f27742b.f31057j;
-            shadowedNestedScrollView.setPadding(shadowedNestedScrollView.getPaddingLeft(), f3Var.f27742b.f31057j.getPaddingTop(), f3Var.f27742b.f31057j.getPaddingRight(), bottomSheetBehavior.v0());
+            ShadowedNestedScrollView shadowedNestedScrollView = f3Var.f27758b.f31073j;
+            shadowedNestedScrollView.setPadding(shadowedNestedScrollView.getPaddingLeft(), f3Var.f27758b.f31073j.getPaddingTop(), f3Var.f27758b.f31073j.getPaddingRight(), bottomSheetBehavior.v0());
         }
         bottomSheetBehavior.R0(bottom);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void g0(f3 f3Var, BottomSheetBehavior bottomSheetBehavior, View view, int i10, int i11, int i12, int i13, int i14, int i15, int i16, int i17) {
-        int bottom = f3Var.f27742b.f31052e.getBottom();
+        int bottom = f3Var.f27758b.f31068e.getBottom();
         bottomSheetBehavior.T0(bottom);
         bottomSheetBehavior.R0(bottom);
-        ShadowedNestedScrollView shadowedNestedScrollView = f3Var.f27742b.f31057j;
-        shadowedNestedScrollView.setPadding(shadowedNestedScrollView.getPaddingLeft(), f3Var.f27742b.f31057j.getPaddingTop(), f3Var.f27742b.f31057j.getPaddingRight(), bottom);
+        ShadowedNestedScrollView shadowedNestedScrollView = f3Var.f27758b.f31073j;
+        shadowedNestedScrollView.setPadding(shadowedNestedScrollView.getPaddingLeft(), f3Var.f27758b.f31073j.getPaddingTop(), f3Var.f27758b.f31073j.getPaddingRight(), bottom);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit i0(f3 f3Var, v4.d.a aVar) {
-        if (!f3Var.f27745e.m() && !f3Var.f27746f.h()) {
+        if (!f3Var.f27761e.m() && !f3Var.f27762f.h()) {
             if (aVar.j().b()) {
                 aVar.k().invoke();
             } else {
                 aVar.l().invoke();
             }
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit j0(v4.d.a aVar) {
         aVar.l().invoke();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit k0(v4.d.a aVar, f3 f3Var, List list, k5 tappedComponent, boolean z10) {
         Intrinsics.checkNotNullParameter(tappedComponent, "tappedComponent");
         aVar.m().invoke(tappedComponent, Boolean.valueOf(z10), f3Var.U(list));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit l0(v4.d.a aVar, f3 f3Var, List list, q5 it) {
         Intrinsics.checkNotNullParameter(it, "it");
         aVar.r().invoke(it, f3Var.U(list));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private final ComponentParam.c m0(Number number) {
@@ -1174,7 +1174,7 @@ public final class f3 implements vm.k {
                 buttonWithLoadingIndicator3.setIsLoading(aVar.u() && ((q5) k5Var).E0());
             }
             Q(view, map, k5Var, aVar.u());
-            Unit unit = Unit.f33282a;
+            Unit unit = Unit.f33298a;
         } else if (k5Var instanceof InputTextComponent) {
             Intrinsics.checkNotNull(view, "null cannot be cast to non-null type com.google.android.material.textfield.TextInputLayout");
             TextInputLayout textInputLayout = (TextInputLayout) view;
@@ -1183,7 +1183,7 @@ public final class f3 implements vm.k {
             UiComponentError.UiInputComponentError uiInputComponentError = obj instanceof UiComponentError.UiInputComponentError ? (UiComponentError.UiInputComponentError) obj : null;
             fq.d.d(textInputLayout, uiInputComponentError != null ? uiInputComponentError.getMessage() : null, inputTextComponent.f());
             Q(view, map, k5Var, aVar.u());
-            Unit unit2 = Unit.f33282a;
+            Unit unit2 = Unit.f33298a;
         } else if (k5Var instanceof InputTextAreaComponent) {
             Intrinsics.checkNotNull(view, "null cannot be cast to non-null type com.google.android.material.textfield.TextInputLayout");
             TextInputLayout textInputLayout2 = (TextInputLayout) view;
@@ -1192,7 +1192,7 @@ public final class f3 implements vm.k {
             UiComponentError.UiInputComponentError uiInputComponentError2 = obj2 instanceof UiComponentError.UiInputComponentError ? (UiComponentError.UiInputComponentError) obj2 : null;
             fq.d.d(textInputLayout2, uiInputComponentError2 != null ? uiInputComponentError2.getMessage() : null, inputTextAreaComponent.f());
             Q(view, map, k5Var, aVar.u());
-            Unit unit3 = Unit.f33282a;
+            Unit unit3 = Unit.f33298a;
         } else if (k5Var instanceof InputConfirmationCodeComponent) {
             ((InputConfirmationCodeComponent) k5Var).f().c(new Function0() { // from class: hq.g2
                 @Override // kotlin.jvm.functions.Function0
@@ -1203,7 +1203,7 @@ public final class f3 implements vm.k {
                 }
             });
             Q(view, map, k5Var, aVar.u());
-            Unit unit4 = Unit.f33282a;
+            Unit unit4 = Unit.f33298a;
         } else if (k5Var instanceof InputAddressComponent) {
             Object tag = view.getTag();
             Intrinsics.checkNotNull(tag, "null cannot be cast to non-null type com.withpersona.sdk2.inquiry.steps.ui.databinding.Pi2UiAddressFieldBinding");
@@ -1216,7 +1216,7 @@ public final class f3 implements vm.k {
             Object obj4 = map5.get(inputAddressComponent.getName());
             UiComponentError.UiInputAddressComponentError uiInputAddressComponentError = obj4 instanceof UiComponentError.UiInputAddressComponentError ? (UiComponentError.UiInputAddressComponentError) obj4 : null;
             inputAddressComponent.g().c(inputAddressComponent.w());
-            Unit unit5 = Unit.f33282a;
+            Unit unit5 = Unit.f33298a;
             inputAddressComponent.i().c(inputAddressComponent.y());
             inputAddressComponent.a().c(inputAddressComponent.r());
             inputAddressComponent.c().c(inputAddressComponent.z());
@@ -1285,7 +1285,7 @@ public final class f3 implements vm.k {
             TextInputLayout addressPostalCode = dVar.f6626l;
             Intrinsics.checkNotNullExpressionValue(addressPostalCode, "addressPostalCode");
             fq.d.d(addressPostalCode, uiInputAddressComponentError != null ? uiInputAddressComponentError.getMessage().get("postal_code") : null, errorTextStyle);
-            Unit unit6 = Unit.f33282a;
+            Unit unit6 = Unit.f33298a;
         } else {
             boolean z10 = true;
             if (!(k5Var instanceof com.withpersona.sdk2.inquiry.steps.ui.components.e) && !(k5Var instanceof com.withpersona.sdk2.inquiry.steps.ui.components.d)) {
@@ -1306,16 +1306,16 @@ public final class f3 implements vm.k {
                         radioGroupError.setText("");
                     }
                     Q(view, map, k5Var, aVar.u());
-                    View findViewById = view.findViewById(vp.e.f51808l0);
+                    View findViewById = view.findViewById(vp.e.f51824l0);
                     Intrinsics.checkNotNullExpressionValue(findViewById, "findViewById(...)");
                     for (View view3 : androidx.core.view.n0.a((ViewGroup) findViewById)) {
                         R(view3, map, k5Var, aVar.u());
                     }
-                    Unit unit7 = Unit.f33282a;
+                    Unit unit7 = Unit.f33298a;
                     return;
                 } else if (k5Var instanceof l5) {
                     for (k5 k5Var2 : ((l5) k5Var).getChildren()) {
-                        View view4 = (View) this.f27743c.get(k5Var2.getName());
+                        View view4 = (View) this.f27759c.get(k5Var2.getName());
                         if (view4 != null) {
                             Map map6 = map5;
                             q0(aVar, k5Var2, view4, map, map6, a0Var, map3);
@@ -1329,7 +1329,7 @@ public final class f3 implements vm.k {
                         b0(aVar, (ClickableStackComponent) k5Var, (ConstraintLayout) view);
                     }
                     Q(view, map, k5Var, aVar.u());
-                    Unit unit8 = Unit.f33282a;
+                    Unit unit8 = Unit.f33298a;
                     return;
                 } else if (k5Var instanceof xp.h) {
                     view.setOnClickListener(new View.OnClickListener() { // from class: hq.k2
@@ -1343,7 +1343,7 @@ public final class f3 implements vm.k {
                         buttonWithLoadingIndicator4.setIsLoading((aVar.u() && ((xp.h) k5Var).E0()) ? false : false);
                     }
                     Q(view, map, k5Var, aVar.u());
-                    Unit unit9 = Unit.f33282a;
+                    Unit unit9 = Unit.f33298a;
                     return;
                 } else if (k5Var instanceof InputDateComponent) {
                     Object tag3 = view.getTag();
@@ -1374,7 +1374,7 @@ public final class f3 implements vm.k {
                     View year = fVar.f6644h;
                     Intrinsics.checkNotNullExpressionValue(year, "year");
                     R(year, map, k5Var, aVar.u());
-                    Unit unit10 = Unit.f33282a;
+                    Unit unit10 = Unit.f33298a;
                     return;
                 } else if (k5Var instanceof com.withpersona.sdk2.inquiry.steps.ui.components.b) {
                     Object tag4 = view.getTag();
@@ -1400,7 +1400,7 @@ public final class f3 implements vm.k {
                         }
                     }, message2 != null ? message2.get("idb_country") : null, message2 != null ? message2.get("idb_type") : null, message2 != null ? message2.get("idb_value") : null);
                     Q(view, map, k5Var, aVar.u());
-                    Unit unit11 = Unit.f33282a;
+                    Unit unit11 = Unit.f33298a;
                     return;
                 } else if (k5Var instanceof InputMaskedTextComponent) {
                     InputMaskedTextComponent inputMaskedTextComponent = (InputMaskedTextComponent) k5Var;
@@ -1412,7 +1412,7 @@ public final class f3 implements vm.k {
                     InputTextBasedComponentStyle f10 = inputMaskedTextComponent.f();
                     fq.d.d(textInputLayout4, message3, f10 != null ? f10.getErrorTextStyle() : null);
                     Q(view, map, k5Var, aVar.u());
-                    Unit unit12 = Unit.f33282a;
+                    Unit unit12 = Unit.f33298a;
                     return;
                 } else if (k5Var instanceof InputPhoneNumberComponent) {
                     Object tag5 = view.getTag();
@@ -1433,7 +1433,7 @@ public final class f3 implements vm.k {
                         }
                     });
                     Q(view, map, k5Var, aVar.u());
-                    Unit unit13 = Unit.f33282a;
+                    Unit unit13 = Unit.f33298a;
                     return;
                 } else if (k5Var instanceof InputNumberComponent) {
                     InputNumberComponent inputNumberComponent = (InputNumberComponent) k5Var;
@@ -1446,7 +1446,7 @@ public final class f3 implements vm.k {
                     InputNumber inputNumber = obj11 instanceof InputNumber ? (InputNumber) obj11 : null;
                     fq.d.d(textInputLayout5, message4, (inputNumber == null || (styles = inputNumber.getStyles()) == null) ? null : styles.getErrorTextStyle());
                     Q(view, map, k5Var, aVar.u());
-                    Unit unit14 = Unit.f33282a;
+                    Unit unit14 = Unit.f33298a;
                     return;
                 } else if (k5Var instanceof InputCurrencyComponent) {
                     InputCurrencyComponent inputCurrencyComponent = (InputCurrencyComponent) k5Var;
@@ -1455,7 +1455,7 @@ public final class f3 implements vm.k {
                     Intrinsics.checkNotNull(view, "null cannot be cast to non-null type com.google.android.material.textfield.TextInputLayout");
                     fq.d.d((TextInputLayout) view, uiInputComponentError8 != null ? uiInputComponentError8.getMessage() : null, inputCurrencyComponent.f());
                     Q(view, map, k5Var, aVar.u());
-                    Unit unit15 = Unit.f33282a;
+                    Unit unit15 = Unit.f33298a;
                     return;
                 } else if (k5Var instanceof InputCheckboxComponent) {
                     Object tag6 = view.getTag();
@@ -1471,7 +1471,7 @@ public final class f3 implements vm.k {
                         iVar.f6656d.setVisibility(8);
                     }
                     Q(view, map, k5Var, aVar.u());
-                    Unit unit16 = Unit.f33282a;
+                    Unit unit16 = Unit.f33298a;
                     return;
                 } else if (k5Var instanceof InputCheckboxGroupComponent) {
                     Object tag7 = view.getTag();
@@ -1487,12 +1487,12 @@ public final class f3 implements vm.k {
                         jVar.f6660c.setVisibility(8);
                     }
                     Q(view, map, k5Var, aVar.u());
-                    View findViewById2 = view.findViewById(vp.e.f51819r);
+                    View findViewById2 = view.findViewById(vp.e.f51835r);
                     Intrinsics.checkNotNullExpressionValue(findViewById2, "findViewById(...)");
                     for (View view5 : androidx.core.view.n0.a((ViewGroup) findViewById2)) {
                         R(view5, map, k5Var, aVar.u());
                     }
-                    Unit unit17 = Unit.f33282a;
+                    Unit unit17 = Unit.f33298a;
                     return;
                 } else if (k5Var instanceof ESignatureComponent) {
                     Object tag8 = view.getTag();
@@ -1561,7 +1561,7 @@ public final class f3 implements vm.k {
                     View signatureContainer = vVar.f6703f;
                     Intrinsics.checkNotNullExpressionValue(signatureContainer, "signatureContainer");
                     R(signatureContainer, map, k5Var, aVar.u());
-                    Unit unit18 = Unit.f33282a;
+                    Unit unit18 = Unit.f33298a;
                     return;
                 } else if (k5Var instanceof GovernmentIdNfcScanComponent) {
                     Object tag17 = view.getTag();
@@ -1598,10 +1598,10 @@ public final class f3 implements vm.k {
                             d0Var.b().f6641e.setVisibility(0);
                             d0Var.e().f6641e.setText(uiGovernmentIdNfcScanComponentError.getMessage().get(GovernmentIdNfcScan.expirationDateName));
                             d0Var.e().f6641e.setVisibility(0);
-                            Unit unit19 = Unit.f33282a;
+                            Unit unit19 = Unit.f33298a;
                             return;
                         } else {
-                            Unit unit20 = Unit.f33282a;
+                            Unit unit20 = Unit.f33298a;
                             return;
                         }
                     }
@@ -1610,7 +1610,7 @@ public final class f3 implements vm.k {
                     throw new ir.p();
                 } else {
                     Q(view, map, k5Var, aVar.u());
-                    Unit unit21 = Unit.f33282a;
+                    Unit unit21 = Unit.f33298a;
                     return;
                 }
             }
@@ -1633,7 +1633,7 @@ public final class f3 implements vm.k {
                         f3.A0(f3.this, textInputLayout6, c2Var, a4Var, view6);
                     }
                 });
-                Unit unit22 = Unit.f33282a;
+                Unit unit22 = Unit.f33298a;
             }
             EditText editText2 = textInputLayout6.getEditText();
             if (editText2 != null) {
@@ -1645,7 +1645,7 @@ public final class f3 implements vm.k {
                         return B0;
                     }
                 }, 30, null));
-                Unit unit23 = Unit.f33282a;
+                Unit unit23 = Unit.f33298a;
             }
             Object obj17 = map5.get(k5Var.getName());
             UiComponentError.UiInputComponentError uiInputComponentError12 = obj17 instanceof UiComponentError.UiInputComponentError ? (UiComponentError.UiInputComponentError) obj17 : null;
@@ -1653,19 +1653,19 @@ public final class f3 implements vm.k {
             InputSelectBoxComponentStyle styles6 = c2Var.getStyles();
             fq.d.d(textInputLayout6, message5, styles6 != null ? styles6.getErrorTextStyle() : null);
             Q(view, map, k5Var, aVar.u());
-            Unit unit24 = Unit.f33282a;
+            Unit unit24 = Unit.f33298a;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void r0(f3 f3Var, View view) {
-        f3Var.f27748h.invoke();
+        f3Var.f27764h.invoke();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void s0(f3 f3Var, k5 k5Var, View view, View view2) {
         boolean z10;
-        Function2 function2 = f3Var.f27750j;
+        Function2 function2 = f3Var.f27766j;
         if (view.getVisibility() == 0) {
             z10 = true;
         } else {
@@ -1677,7 +1677,7 @@ public final class f3 implements vm.k {
     /* JADX INFO: Access modifiers changed from: private */
     public static final void t0(f3 f3Var, k5 k5Var, View view, View view2) {
         boolean z10;
-        Function2 function2 = f3Var.f27750j;
+        Function2 function2 = f3Var.f27766j;
         if (view.getVisibility() == 0) {
             z10 = true;
         } else {
@@ -1688,21 +1688,21 @@ public final class f3 implements vm.k {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void u0(f3 f3Var, View view) {
-        f3Var.f27749i.invoke();
+        f3Var.f27765i.invoke();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void v0(f3 f3Var, k5 k5Var, View view) {
-        f3Var.f27752l.invoke(k5Var);
+        f3Var.f27768l.invoke(k5Var);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit w0(View view, v4.d.a aVar, f3 f3Var) {
         boolean z10;
-        if (zp.a.f56054a.b(view)) {
-            c5 c5Var = (c5) yp.f.a(aVar.f(), Reflection.getOrCreateKotlinClass(c5.class), c.f27756d);
+        if (zp.a.f56070a.b(view)) {
+            c5 c5Var = (c5) yp.f.a(aVar.f(), Reflection.getOrCreateKotlinClass(c5.class), c.f27772d);
             if (c5Var != null) {
-                Function2 function2 = f3Var.f27750j;
+                Function2 function2 = f3Var.f27766j;
                 if (view.getVisibility() == 0) {
                     z10 = true;
                 } else {
@@ -1711,7 +1711,7 @@ public final class f3 implements vm.k {
                 function2.invoke(c5Var, Boolean.valueOf(z10));
             }
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private static final void x0(final MaterialAutoCompleteTextView materialAutoCompleteTextView, wp.a aVar, final List list, final aq.d dVar, final v4.d.a aVar2, final k5 k5Var, final List list2) {
@@ -1751,10 +1751,10 @@ public final class f3 implements vm.k {
         vp.a aVar;
         Intrinsics.checkNotNullParameter(rendering, "rendering");
         Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
-        Context context = this.f27742b.getRoot().getContext();
+        Context context = this.f27758b.getRoot().getContext();
         final ArrayList<vp.a> arrayList = new ArrayList();
         for (k5 k5Var : rendering.f()) {
-            View view = (View) this.f27743c.get(k5Var.getName());
+            View view = (View) this.f27759c.get(k5Var.getName());
             if (view == null) {
                 aVar = null;
             } else {
@@ -1780,7 +1780,7 @@ public final class f3 implements vm.k {
         }
         sp.c.a(viewEnvironment, d10);
         for (vp.a aVar2 : arrayList) {
-            q0(rendering, aVar2.a(), aVar2.b(), p02, linkedHashMap, viewEnvironment, this.f27744d);
+            q0(rendering, aVar2.a(), aVar2.b(), p02, linkedHashMap, viewEnvironment, this.f27760d);
         }
         rp.a j10 = rendering.j();
         Function0 function0 = new Function0() { // from class: hq.a3
@@ -1799,17 +1799,17 @@ public final class f3 implements vm.k {
                 return j02;
             }
         };
-        Pi2NavigationBar navigationBar = this.f27742b.f31056i;
+        Pi2NavigationBar navigationBar = this.f27758b.f31072i;
         Intrinsics.checkNotNullExpressionValue(navigationBar, "navigationBar");
-        CoordinatorLayout root = this.f27742b.getRoot();
+        CoordinatorLayout root = this.f27758b.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
         rp.e.b(j10, function0, function02, navigationBar, root);
-        CoordinatorLayout root2 = this.f27742b.getRoot();
+        CoordinatorLayout root2 = this.f27758b.getRoot();
         Intrinsics.checkNotNullExpressionValue(root2, "getRoot(...)");
         jp.z.b(root2, rendering.g(), rendering.p(), null, 0, 0, 56, null);
-        this.f27748h = rendering.n();
-        this.f27749i = rendering.l();
-        this.f27750j = new Function2() { // from class: hq.c3
+        this.f27764h = rendering.n();
+        this.f27765i = rendering.l();
+        this.f27766j = new Function2() { // from class: hq.c3
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(Object obj2, Object obj3) {
                 Unit k02;
@@ -1817,8 +1817,8 @@ public final class f3 implements vm.k {
                 return k02;
             }
         };
-        this.f27751k = rendering.i();
-        this.f27752l = new Function1() { // from class: hq.d3
+        this.f27767k = rendering.i();
+        this.f27768l = new Function1() { // from class: hq.d3
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj2) {
                 Unit l02;
@@ -1832,13 +1832,13 @@ public final class f3 implements vm.k {
                 xp.h a10 = b10.a();
                 if (!(a10 instanceof xp.a) && !(a10 instanceof c5)) {
                     if (a10 instanceof xp.i) {
-                        this.f27749i.invoke();
+                        this.f27765i.invoke();
                     } else if (a10 instanceof xp.o) {
-                        this.f27748h.invoke();
+                        this.f27764h.invoke();
                     }
                 } else {
-                    Function2 function2 = this.f27750j;
-                    View view2 = (View) this.f27743c.get(a10.getName());
+                    Function2 function2 = this.f27766j;
+                    View view2 = (View) this.f27759c.get(a10.getName());
                     boolean z10 = false;
                     if (view2 != null && view2.getVisibility() == 0) {
                         z10 = true;
@@ -1846,7 +1846,7 @@ public final class f3 implements vm.k {
                     function2.invoke(a10, Boolean.valueOf(z10));
                 }
             } else if (b10.b() != null) {
-                View view3 = (View) this.f27743c.get(b10.a().getName());
+                View view3 = (View) this.f27759c.get(b10.a().getName());
                 if (view3 instanceof ButtonWithLoadingIndicator) {
                     ((ButtonWithLoadingIndicator) view3).setText(b10.b());
                 } else if (view3 instanceof MaterialButton) {

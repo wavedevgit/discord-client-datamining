@@ -92,7 +92,7 @@ public final class v2 implements kotlin.reflect.l, x0 {
                         throw new x2("Non-class callable descriptor must be deserialized: " + containingDeclaration);
                     }
                 }
-                accept = containingDeclaration.accept(new j(w0Var), Unit.f33282a);
+                accept = containingDeclaration.accept(new j(w0Var), Unit.f33298a);
             } else {
                 throw new x2("Unknown type parameter container: " + containingDeclaration);
             }
@@ -190,13 +190,13 @@ public final class v2 implements kotlin.reflect.l, x0 {
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
-                    return kotlin.reflect.m.f36123i;
+                    return kotlin.reflect.m.f36139i;
                 }
                 throw new ir.p();
             }
-            return kotlin.reflect.m.f36122e;
+            return kotlin.reflect.m.f36138e;
         }
-        return kotlin.reflect.m.f36121d;
+        return kotlin.reflect.m.f36137d;
     }
 
     public int hashCode() {

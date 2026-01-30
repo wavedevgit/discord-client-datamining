@@ -226,7 +226,7 @@ public abstract class Asset<H> implements AutoCloseable {
             @Override // kotlin.jvm.functions.Function0
             public /* bridge */ /* synthetic */ Object invoke() {
                 m17invoke();
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
 
             /* renamed from: invoke  reason: collision with other method in class */

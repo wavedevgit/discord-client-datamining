@@ -10,7 +10,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.hasOwnProperty;
     var _closure1_slot2 = var1;
     var1 = function(arg0) { // Original name: hashHas, environment: var0
-        _fun8288: for (var _fun8288_ip = 0;;) switch (_fun8288_ip) {
+        _fun8289: for (var _fun8289_ip = 0;;) switch (_fun8289_ip) {
             case 0:
                 var3 = arg0;
                 var0 = this;
@@ -22,15 +22,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = undefined;
                 var4 = var5.bind(var2)(var4);
                 if (var4) {
-                    _fun8288_ip = 55;
-                    continue _fun8288
+                    _fun8289_ip = 55;
+                    continue _fun8289
                 }
             case 38:
                 var4 = _closure1_slot2;
                 var0 = var4.call;
                 var0 = var0.bind(var4)(var1, var3);
-                _fun8288_ip = 63;
-                continue _fun8288;
+                _fun8289_ip = 63;
+                continue _fun8289;
             case 55:
                 var1 = var1[var3];
                 var0 = var2 !== var1;

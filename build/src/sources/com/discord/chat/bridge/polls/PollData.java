@@ -53,7 +53,7 @@ public final class PollData {
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, null, l.a(o.f31103e, new Function0() { // from class: n6.c
+    private static final Lazy[] $childSerializers = {null, null, l.a(o.f31119e, new Function0() { // from class: n6.c
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;

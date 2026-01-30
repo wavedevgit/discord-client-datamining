@@ -264,7 +264,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot13 = var4;
     var4 = function(arg0) { // Original name: HubEmailConnectionGuildSelectFooter, environment: var3
-        _fun80323: for (var _fun80323_ip = 0;;) switch (_fun80323_ip) {
+        _fun80369: for (var _fun80369_ip = 0;;) switch (_fun80369_ip) {
             case 0:
                 var0 = arg0;
                 var13 = var0.errors;
@@ -320,8 +320,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = null;
                 var7 = var11 != var13;
                 if (!var7) {
-                    _fun80323_ip = 301;
-                    continue _fun80323
+                    _fun80369_ip = 301;
+                    continue _fun80369
                 }
             case 231:
                 var10 = _closure1_slot9;
@@ -337,8 +337,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var11 == var13;
                 var11 = undefined;
                 if (var12) {
-                    _fun80323_ip = 291;
-                    continue _fun80323
+                    _fun80369_ip = 291;
+                    continue _fun80369
                 }
             case 281:
                 var12 = var13.getAnyErrorMessage;
@@ -522,13 +522,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var0 = undefined;
             var4 = function*() { // Environment: var4
                 var0 = function*() { // Original name: ?anon_0_, environment: var0
-                    _fun80332: for (var _fun80332_ip = 0;;) switch (_fun80332_ip) {
+                    _fun80378: for (var _fun80378_ip = 0;;) switch (_fun80378_ip) {
                         case 0:
                             StartGenerator();
                             ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                             if (var1) {
-                                _fun80332_ip = 255;
-                                continue _fun80332
+                                _fun80378_ip = 255;
+                                continue _fun80378
                             }
                         case 10:
                             var3 = _closure2_slot5;
@@ -554,8 +554,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         case 88:
                             ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 5);
                             if (var5) {
-                                _fun80332_ip = 149;
-                                continue _fun80332
+                                _fun80378_ip = 149;
+                                continue _fun80378
                             }
                         case 94:
                             var7 = _closure2_slot4;
@@ -571,8 +571,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3.guildId = var8;
                             var3 = var6.bind(var7)(var5, var3);
                         case 147: // try_end0
-                            _fun80332_ip = 226;
-                            continue _fun80332;
+                            _fun80378_ip = 226;
+                            continue _fun80378;
                         case 149: // try_end1
                             var5 = _closure2_slot7;
                             var3 = false;
@@ -659,4 +659,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.HubEmailConnectionGuildSelectRow = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 27, 10168, 660, 33, 1297, 671, 4638, 5335, 7353, 1598, 3895, 1234, 1568, 4829, 4832, 1469, 5279, 6970, 10189, 3309, 10184, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 27, 10174, 660, 33, 1297, 671, 4644, 5339, 7356, 1598, 3901, 1234, 1568, 4835, 4838, 1469, 5283, 6973, 10195, 3309, 10190, 2]);

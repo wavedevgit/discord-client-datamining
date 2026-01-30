@@ -1,69 +1,80 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var5 = require;
     var2 = exports;
-    var1 = global;
-    var5 = var1.Object;
-    var4 = var5.defineProperty;
+    var6 = dependencyMap;
+    var _closure1_slot0 = var5;
+    var _closure1_slot1 = var6;
+    var0 = global;
+    var7 = var0.Object;
+    var4 = var7.defineProperty;
     var3 = {};
-    var1 = true;
-    var3.value = var1;
-    var1 = '__esModule';
-    var1 = var4.bind(var5)(var2, var1, var3);
-    var1 = {};
-    var3 = 'function handlerOffsetDirection_Pnpm_handleroffsetDirectionTs1(handlerOffset,fixedDirection){if(fixedDirection==="negative")return-1;if(fixedDirection==="positive")return 1;if(handlerOffset.value===0)return-1;return Math.sign(handlerOffset.value);}';
-    var1.code = var3;
-    var _closure1_slot0 = var1;
-    var1 = function() { // Environment: var0
-        var0 = function(arg0, arg1) { // Original name: handlerOffsetDirection, environment: var0
-            _fun74761: for (var _fun74761_ip = 0;;) switch (_fun74761_ip) {
-                case 0:
-                    var3 = arg0;
-                    var5 = arg1;
-                    var2 = -1;
-                    var1 = 'negative';
-                    var0 = var2;
-                    if (!(var1 !== var5)) {
-                        _fun74761_ip = 75;
-                        continue _fun74761
-                    }
-                case 23:
-                    var1 = 1;
-                    var4 = 'positive';
-                    if (!(var4 !== var5)) {
-                        _fun74761_ip = 72;
-                        continue _fun74761
-                    }
-                case 34:
-                    var5 = var3.value;
-                    var4 = 0;
-                    if (!(var4 !== var5)) {
-                        _fun74761_ip = 69;
-                        continue _fun74761
-                    }
-                case 45:
-                    var4 = global;
-                    var5 = var4.Math;
-                    var4 = var5.sign;
-                    var3 = var3.value;
-                    var2 = var4.bind(var5)(var3);
-                case 69:
-                    var1 = var2;
-                case 72:
-                    var0 = var1;
-                case 75:
-                    return var0;
-            }
-        };
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var4 = var6[var0];
+    var3 = metroImportDefault;
+    var0 = undefined;
+    var4 = var3.bind(var0)(var4);
+    var3 = 1;
+    var3 = var6[var3];
+    var3 = var5.bind(var0)(var3);
+    var3 = var3.jsx;
+    var _closure1_slot2 = var3;
+    var3 = var4.forwardRef;
+    var1 = function(arg0, arg1) { // Environment: var1
+        var5 = _closure1_slot0;
+        var6 = _closure1_slot1;
+        var1 = 2;
+        var1 = var6[var1];
+        var3 = undefined;
+        var4 = var5.bind(var3)(var1);
+        var2 = var4.useInitProps;
+        var1 = arg0;
+        var8 = var2.bind(var4)(var1);
+        var1 = var8.dataLength;
+        var2 = 3;
+        var2 = var6[var2];
+        var4 = var5.bind(var3)(var2);
+        var2 = var4.useCommonVariables;
+        var7 = var2.bind(var4)(var8);
+        var2 = 4;
+        var2 = var6[var2];
+        var4 = var5.bind(var3)(var2);
+        var2 = var4.usePropsErrorBoundary;
+        var9 = global;
+        var11 = var9.Object;
+        var10 = var11.assign;
+        var9 = {};
+        var9.dataLength = var1;
         var1 = {};
-        var0.__closure = var1;
-        var1 = 4382236906699.0;
-        var0.__workletHash = var1;
-        var1 = _closure1_slot0;
-        var0.__initData = var1;
+        var1 = var10.bind(var11)(var1, var8, var9);
+        var1 = var2.bind(var4)(var1);
+        var2 = _closure1_slot2;
+        var0 = 5;
+        var0 = var6[var0];
+        var0 = var5.bind(var3)(var0);
+        var1 = var0.GlobalStateProvider;
+        var0 = {};
+        var4 = {};
+        var4.props = var8;
+        var4.common = var7;
+        var0.value = var4;
+        var4 = 6;
+        var4 = var6[var4];
+        var4 = var5.bind(var3)(var4);
+        var5 = var4.CarouselLayout;
+        var4 = {};
+        var6 = arg1;
+        var4.ref = var6;
+        var4 = var2.bind(var3)(var5, var4);
+        var0.children = var4;
+        var0 = var2.bind(var3)(var1, var0);
         return var0;
     };
-    var0 = undefined;
-    var1 = var1.bind(var0)();
-    var2.handlerOffsetDirection = var1;
+    var1 = var3.bind(var4)(var1);
+    var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 9397, 9400, 9404, 9405, 9406]);

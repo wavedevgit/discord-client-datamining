@@ -3,50 +3,50 @@ package pg;
 public final class ke {
 
     /* renamed from: a  reason: collision with root package name */
-    private mi f45519a;
+    private mi f45535a;
 
     /* renamed from: b  reason: collision with root package name */
-    private je f45520b;
+    private je f45536b;
 
     /* renamed from: c  reason: collision with root package name */
-    private he f45521c;
+    private he f45537c;
 
     /* renamed from: d  reason: collision with root package name */
-    private rh f45522d;
+    private rh f45538d;
 
     /* renamed from: e  reason: collision with root package name */
-    private oh f45523e;
+    private oh f45539e;
 
     /* renamed from: f  reason: collision with root package name */
-    private y3 f45524f;
+    private y3 f45540f;
 
     public final ke d(y3 y3Var) {
-        this.f45524f = y3Var;
+        this.f45540f = y3Var;
         return this;
     }
 
     public final ke e(he heVar) {
-        this.f45521c = heVar;
+        this.f45537c = heVar;
         return this;
     }
 
     public final ke f(je jeVar) {
-        this.f45520b = jeVar;
+        this.f45536b = jeVar;
         return this;
     }
 
     public final ke g(oh ohVar) {
-        this.f45523e = ohVar;
+        this.f45539e = ohVar;
         return this;
     }
 
     public final ke h(rh rhVar) {
-        this.f45522d = rhVar;
+        this.f45538d = rhVar;
         return this;
     }
 
     public final ke i(mi miVar) {
-        this.f45519a = miVar;
+        this.f45535a = miVar;
         return this;
     }
 

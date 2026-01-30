@@ -5,43 +5,43 @@ import java.util.ArrayDeque;
 public abstract class h implements d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Thread f47086a;
+    private final Thread f47102a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Object f47087b = new Object();
+    private final Object f47103b = new Object();
 
     /* renamed from: c  reason: collision with root package name */
-    private final ArrayDeque f47088c = new ArrayDeque();
+    private final ArrayDeque f47104c = new ArrayDeque();
 
     /* renamed from: d  reason: collision with root package name */
-    private final ArrayDeque f47089d = new ArrayDeque();
+    private final ArrayDeque f47105d = new ArrayDeque();
 
     /* renamed from: e  reason: collision with root package name */
-    private final f[] f47090e;
+    private final f[] f47106e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final g[] f47091f;
+    private final g[] f47107f;
 
     /* renamed from: g  reason: collision with root package name */
-    private int f47092g;
+    private int f47108g;
 
     /* renamed from: h  reason: collision with root package name */
-    private int f47093h;
+    private int f47109h;
 
     /* renamed from: i  reason: collision with root package name */
-    private f f47094i;
+    private f f47110i;
 
     /* renamed from: j  reason: collision with root package name */
-    private e f47095j;
+    private e f47111j;
 
     /* renamed from: k  reason: collision with root package name */
-    private boolean f47096k;
+    private boolean f47112k;
 
     /* renamed from: l  reason: collision with root package name */
-    private boolean f47097l;
+    private boolean f47113l;
 
     /* renamed from: m  reason: collision with root package name */
-    private int f47098m;
+    private int f47114m;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a extends Thread {
@@ -57,23 +57,23 @@ public abstract class h implements d {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public h(f[] fVarArr, g[] gVarArr) {
-        this.f47090e = fVarArr;
-        this.f47092g = fVarArr.length;
-        for (int i10 = 0; i10 < this.f47092g; i10++) {
-            this.f47090e[i10] = g();
+        this.f47106e = fVarArr;
+        this.f47108g = fVarArr.length;
+        for (int i10 = 0; i10 < this.f47108g; i10++) {
+            this.f47106e[i10] = g();
         }
-        this.f47091f = gVarArr;
-        this.f47093h = gVarArr.length;
-        for (int i11 = 0; i11 < this.f47093h; i11++) {
-            this.f47091f[i11] = h();
+        this.f47107f = gVarArr;
+        this.f47109h = gVarArr.length;
+        for (int i11 = 0; i11 < this.f47109h; i11++) {
+            this.f47107f[i11] = h();
         }
         a aVar = new a("ExoPlayer:SimpleDecoder");
-        this.f47086a = aVar;
+        this.f47102a = aVar;
         aVar.start();
     }
 
     private boolean f() {
-        if (!this.f47088c.isEmpty() && this.f47093h > 0) {
+        if (!this.f47104c.isEmpty() && this.f47109h > 0) {
             return true;
         }
         return false;
@@ -81,23 +81,23 @@ public abstract class h implements d {
 
     private boolean k() {
         e i10;
-        synchronized (this.f47087b) {
-            while (!this.f47097l && !f()) {
+        synchronized (this.f47103b) {
+            while (!this.f47113l && !f()) {
                 try {
-                    this.f47087b.wait();
+                    this.f47103b.wait();
                 } finally {
                 }
             }
-            if (this.f47097l) {
+            if (this.f47113l) {
                 return false;
             }
-            f fVar = (f) this.f47088c.removeFirst();
-            g[] gVarArr = this.f47091f;
-            int i11 = this.f47093h - 1;
-            this.f47093h = i11;
+            f fVar = (f) this.f47104c.removeFirst();
+            g[] gVarArr = this.f47107f;
+            int i11 = this.f47109h - 1;
+            this.f47109h = i11;
             g gVar = gVarArr[i11];
-            boolean z10 = this.f47096k;
-            this.f47096k = false;
+            boolean z10 = this.f47112k;
+            this.f47112k = false;
             if (fVar.o()) {
                 gVar.g(4);
             } else {
@@ -115,23 +115,23 @@ public abstract class h implements d {
                     i10 = i(e11);
                 }
                 if (i10 != null) {
-                    synchronized (this.f47087b) {
-                        this.f47095j = i10;
+                    synchronized (this.f47103b) {
+                        this.f47111j = i10;
                     }
                     return false;
                 }
             }
-            synchronized (this.f47087b) {
+            synchronized (this.f47103b) {
                 try {
-                    if (this.f47096k) {
+                    if (this.f47112k) {
                         gVar.t();
                     } else if (gVar.l()) {
-                        this.f47098m++;
+                        this.f47114m++;
                         gVar.t();
                     } else {
-                        gVar.f47085i = this.f47098m;
-                        this.f47098m = 0;
-                        this.f47089d.addLast(gVar);
+                        gVar.f47101i = this.f47114m;
+                        this.f47114m = 0;
+                        this.f47105d.addLast(gVar);
                     }
                     q(fVar);
                 } finally {
@@ -143,12 +143,12 @@ public abstract class h implements d {
 
     private void n() {
         if (f()) {
-            this.f47087b.notify();
+            this.f47103b.notify();
         }
     }
 
     private void o() {
-        e eVar = this.f47095j;
+        e eVar = this.f47111j;
         if (eVar == null) {
             return;
         }
@@ -157,17 +157,17 @@ public abstract class h implements d {
 
     private void q(f fVar) {
         fVar.h();
-        f[] fVarArr = this.f47090e;
-        int i10 = this.f47092g;
-        this.f47092g = i10 + 1;
+        f[] fVarArr = this.f47106e;
+        int i10 = this.f47108g;
+        this.f47108g = i10 + 1;
         fVarArr[i10] = fVar;
     }
 
     private void s(g gVar) {
         gVar.h();
-        g[] gVarArr = this.f47091f;
-        int i10 = this.f47093h;
-        this.f47093h = i10 + 1;
+        g[] gVarArr = this.f47107f;
+        int i10 = this.f47109h;
+        this.f47109h = i10 + 1;
         gVarArr[i10] = gVar;
     }
 
@@ -183,20 +183,20 @@ public abstract class h implements d {
 
     @Override // qc.d
     public final void flush() {
-        synchronized (this.f47087b) {
+        synchronized (this.f47103b) {
             try {
-                this.f47096k = true;
-                this.f47098m = 0;
-                f fVar = this.f47094i;
+                this.f47112k = true;
+                this.f47114m = 0;
+                f fVar = this.f47110i;
                 if (fVar != null) {
                     q(fVar);
-                    this.f47094i = null;
+                    this.f47110i = null;
                 }
-                while (!this.f47088c.isEmpty()) {
-                    q((f) this.f47088c.removeFirst());
+                while (!this.f47104c.isEmpty()) {
+                    q((f) this.f47104c.removeFirst());
                 }
-                while (!this.f47089d.isEmpty()) {
-                    ((g) this.f47089d.removeFirst()).t();
+                while (!this.f47105d.isEmpty()) {
+                    ((g) this.f47105d.removeFirst()).t();
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -217,24 +217,24 @@ public abstract class h implements d {
     public final f d() {
         boolean z10;
         f fVar;
-        synchronized (this.f47087b) {
+        synchronized (this.f47103b) {
             o();
-            if (this.f47094i == null) {
+            if (this.f47110i == null) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             ne.a.g(z10);
-            int i10 = this.f47092g;
+            int i10 = this.f47108g;
             if (i10 == 0) {
                 fVar = null;
             } else {
-                f[] fVarArr = this.f47090e;
+                f[] fVarArr = this.f47106e;
                 int i11 = i10 - 1;
-                this.f47092g = i11;
+                this.f47108g = i11;
                 fVar = fVarArr[i11];
             }
-            this.f47094i = fVar;
+            this.f47110i = fVar;
         }
         return fVar;
     }
@@ -242,13 +242,13 @@ public abstract class h implements d {
     @Override // qc.d
     /* renamed from: m */
     public final g b() {
-        synchronized (this.f47087b) {
+        synchronized (this.f47103b) {
             try {
                 o();
-                if (this.f47089d.isEmpty()) {
+                if (this.f47105d.isEmpty()) {
                     return null;
                 }
-                return (g) this.f47089d.removeFirst();
+                return (g) this.f47105d.removeFirst();
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -259,23 +259,23 @@ public abstract class h implements d {
     /* renamed from: p */
     public final void c(f fVar) {
         boolean z10;
-        synchronized (this.f47087b) {
+        synchronized (this.f47103b) {
             o();
-            if (fVar == this.f47094i) {
+            if (fVar == this.f47110i) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             ne.a.a(z10);
-            this.f47088c.addLast(fVar);
+            this.f47104c.addLast(fVar);
             n();
-            this.f47094i = null;
+            this.f47110i = null;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void r(g gVar) {
-        synchronized (this.f47087b) {
+        synchronized (this.f47103b) {
             s(gVar);
             n();
         }
@@ -283,12 +283,12 @@ public abstract class h implements d {
 
     @Override // qc.d
     public void release() {
-        synchronized (this.f47087b) {
-            this.f47097l = true;
-            this.f47087b.notify();
+        synchronized (this.f47103b) {
+            this.f47113l = true;
+            this.f47103b.notify();
         }
         try {
-            this.f47086a.join();
+            this.f47102a.join();
         } catch (InterruptedException unused) {
             Thread.currentThread().interrupt();
         }
@@ -297,13 +297,13 @@ public abstract class h implements d {
     /* JADX INFO: Access modifiers changed from: protected */
     public final void u(int i10) {
         boolean z10;
-        if (this.f47092g == this.f47090e.length) {
+        if (this.f47108g == this.f47106e.length) {
             z10 = true;
         } else {
             z10 = false;
         }
         ne.a.g(z10);
-        for (f fVar : this.f47090e) {
+        for (f fVar : this.f47106e) {
             fVar.u(i10);
         }
     }

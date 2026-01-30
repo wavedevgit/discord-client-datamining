@@ -9,7 +9,7 @@ import kotlin.reflect.jvm.internal.impl.name.StandardClassIds;
 final class a implements StdlibClassFinder {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f35396a = new a();
+    public static final a f35412a = new a();
 
     private a() {
     }

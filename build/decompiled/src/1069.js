@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
     var0 = function(arg0, arg1) { // Original name: createUserFeedbackEnvelope, environment: var0
-        _fun10952: for (var _fun10952_ip = 0;;) switch (_fun10952_ip) {
+        _fun10953: for (var _fun10953_ip = 0;;) switch (_fun10953_ip) {
             case 0:
                 var0 = arg0;
                 var2 = arg1;
@@ -46,15 +46,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = undefined;
                 var3 = undefined;
                 if (var7) {
-                    _fun10952_ip = 110;
-                    continue _fun10952
+                    _fun10953_ip = 110;
+                    continue _fun10953
                 }
             case 104:
                 var3 = var9.sdk;
             case 110:
                 if (!var3) {
-                    _fun10952_ip = 157;
-                    continue _fun10952
+                    _fun10953_ip = 157;
+                    continue _fun10953
                 }
             case 113:
                 var7 = {};
@@ -71,16 +71,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = !var1;
                 var1 = !var7;
                 if (var7) {
-                    _fun10952_ip = 172;
-                    continue _fun10952
+                    _fun10953_ip = 172;
+                    continue _fun10953
                 }
             case 166:
                 var7 = !var10;
                 var1 = !var7;
             case 172:
                 if (!var1) {
-                    _fun10952_ip = 218;
-                    continue _fun10952
+                    _fun10953_ip = 218;
+                    continue _fun10953
                 }
             case 175:
                 var7 = {};

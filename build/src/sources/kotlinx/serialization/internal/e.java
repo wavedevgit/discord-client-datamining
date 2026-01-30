@@ -10,7 +10,7 @@ import kotlinx.serialization.encoding.CompositeEncoder;
 public final class e extends f2 implements KSerializer {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final e f36386c = new e();
+    public static final e f36402c = new e();
 
     private e() {
         super(ys.a.F(FloatCompanionObject.INSTANCE));

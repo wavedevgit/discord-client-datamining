@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/checkpoint/native/components/CheckpointUpsellBottomSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: CheckopintUpsellBottomSheet, environment: var1
-        _fun110186: for (var _fun110186_ip = 0;;) switch (_fun110186_ip) {
+        _fun110448: for (var _fun110448_ip = 0;;) switch (_fun110448_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.markAsDismissed;
@@ -192,7 +192,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var5.Button;
                 var5 = {};
                 var11 = function() { // Original name: onPress, environment: var11
-                    _fun110188: for (var _fun110188_ip = 0;;) switch (_fun110188_ip) {
+                    _fun110450: for (var _fun110450_ip = 0;;) switch (_fun110450_ip) {
                         case 0:
                             var3 = _closure1_slot1;
                             var2 = _closure1_slot2;
@@ -205,8 +205,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = _closure2_slot0;
                             var3 = null;
                             if (!(var3 != var4)) {
-                                _fun110188_ip = 67;
-                                continue _fun110188
+                                _fun110450_ip = 67;
+                                continue _fun110450
                             }
                         case 48:
                             var3 = _closure2_slot0;
@@ -239,8 +239,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var8.LIGHT;
                 var8 = 'primary-overlay';
                 if (!(var10 === var9)) {
-                    _fun110186_ip = 474;
-                    continue _fun110186
+                    _fun110448_ip = 474;
+                    continue _fun110448
                 }
             case 470:
                 var8 = 'secondary';
@@ -255,4 +255,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 1369, 483, 33, 1297, 671, 3205, 4887, 11135, 11136, 3895, 1234, 2267, 4037, 3237, 11126, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 1369, 483, 33, 1297, 671, 3205, 4893, 11141, 11142, 3901, 1234, 2267, 4043, 3237, 11132, 2]);

@@ -12,25 +12,25 @@ import android.os.Handler;
 public final class m implements SurfaceTexture.OnFrameAvailableListener, Runnable {
 
     /* renamed from: r  reason: collision with root package name */
-    private static final int[] f40213r = {12352, 4, 12324, 8, 12323, 8, 12322, 8, 12321, 8, 12325, 0, 12327, 12344, 12339, 4, 12344};
+    private static final int[] f40229r = {12352, 4, 12324, 8, 12323, 8, 12322, 8, 12321, 8, 12325, 0, 12327, 12344, 12339, 4, 12344};
 
     /* renamed from: d  reason: collision with root package name */
-    private final Handler f40214d;
+    private final Handler f40230d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int[] f40215e;
+    private final int[] f40231e;
 
     /* renamed from: i  reason: collision with root package name */
-    private EGLDisplay f40216i;
+    private EGLDisplay f40232i;
 
     /* renamed from: o  reason: collision with root package name */
-    private EGLContext f40217o;
+    private EGLContext f40233o;
 
     /* renamed from: p  reason: collision with root package name */
-    private EGLSurface f40218p;
+    private EGLSurface f40234p;
 
     /* renamed from: q  reason: collision with root package name */
-    private SurfaceTexture f40219q;
+    private SurfaceTexture f40235q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface a {
@@ -44,7 +44,7 @@ public final class m implements SurfaceTexture.OnFrameAvailableListener, Runnabl
         boolean z10 = true;
         EGLConfig[] eGLConfigArr = new EGLConfig[1];
         int[] iArr = new int[1];
-        boolean eglChooseConfig = EGL14.eglChooseConfig(eGLDisplay, f40213r, 0, eGLConfigArr, 0, 1, iArr, 0);
+        boolean eglChooseConfig = EGL14.eglChooseConfig(eGLDisplay, f40229r, 0, eGLConfigArr, 0, 1, iArr, 0);
         if (!eglChooseConfig || iArr[0] <= 0 || eGLConfigArr[0] == null) {
             z10 = false;
         }
@@ -98,69 +98,69 @@ public final class m implements SurfaceTexture.OnFrameAvailableListener, Runnabl
     }
 
     public SurfaceTexture g() {
-        return (SurfaceTexture) ne.a.e(this.f40219q);
+        return (SurfaceTexture) ne.a.e(this.f40235q);
     }
 
     public void h(int i10) {
         EGLDisplay f10 = f();
-        this.f40216i = f10;
+        this.f40232i = f10;
         EGLConfig a10 = a(f10);
-        EGLContext b10 = b(this.f40216i, a10, i10);
-        this.f40217o = b10;
-        this.f40218p = c(this.f40216i, a10, b10, i10);
-        e(this.f40215e);
-        SurfaceTexture surfaceTexture = new SurfaceTexture(this.f40215e[0]);
-        this.f40219q = surfaceTexture;
+        EGLContext b10 = b(this.f40232i, a10, i10);
+        this.f40233o = b10;
+        this.f40234p = c(this.f40232i, a10, b10, i10);
+        e(this.f40231e);
+        SurfaceTexture surfaceTexture = new SurfaceTexture(this.f40231e[0]);
+        this.f40235q = surfaceTexture;
         surfaceTexture.setOnFrameAvailableListener(this);
     }
 
     /* JADX WARN: Type inference failed for: r1v0, types: [android.opengl.EGLContext, android.graphics.SurfaceTexture, android.opengl.EGLSurface, android.opengl.EGLDisplay] */
     public void i() {
-        this.f40214d.removeCallbacks(this);
+        this.f40230d.removeCallbacks(this);
         try {
-            SurfaceTexture surfaceTexture = this.f40219q;
+            SurfaceTexture surfaceTexture = this.f40235q;
             if (surfaceTexture != null) {
                 surfaceTexture.release();
-                GLES20.glDeleteTextures(1, this.f40215e, 0);
+                GLES20.glDeleteTextures(1, this.f40231e, 0);
             }
         } finally {
-            EGLDisplay eGLDisplay = this.f40216i;
+            EGLDisplay eGLDisplay = this.f40232i;
             if (eGLDisplay != null && !eGLDisplay.equals(EGL14.EGL_NO_DISPLAY)) {
-                EGLDisplay eGLDisplay2 = this.f40216i;
+                EGLDisplay eGLDisplay2 = this.f40232i;
                 EGLSurface eGLSurface = EGL14.EGL_NO_SURFACE;
                 EGL14.eglMakeCurrent(eGLDisplay2, eGLSurface, eGLSurface, EGL14.EGL_NO_CONTEXT);
             }
-            EGLSurface eGLSurface2 = this.f40218p;
+            EGLSurface eGLSurface2 = this.f40234p;
             if (eGLSurface2 != null && !eGLSurface2.equals(EGL14.EGL_NO_SURFACE)) {
-                EGL14.eglDestroySurface(this.f40216i, this.f40218p);
+                EGL14.eglDestroySurface(this.f40232i, this.f40234p);
             }
-            EGLContext eGLContext = this.f40217o;
+            EGLContext eGLContext = this.f40233o;
             if (eGLContext != null) {
-                EGL14.eglDestroyContext(this.f40216i, eGLContext);
+                EGL14.eglDestroyContext(this.f40232i, eGLContext);
             }
-            if (w0.f40279a >= 19) {
+            if (w0.f40295a >= 19) {
                 EGL14.eglReleaseThread();
             }
-            EGLDisplay eGLDisplay3 = this.f40216i;
+            EGLDisplay eGLDisplay3 = this.f40232i;
             if (eGLDisplay3 != null && !eGLDisplay3.equals(EGL14.EGL_NO_DISPLAY)) {
-                EGL14.eglTerminate(this.f40216i);
+                EGL14.eglTerminate(this.f40232i);
             }
-            this.f40216i = null;
-            this.f40217o = null;
-            this.f40218p = null;
-            this.f40219q = null;
+            this.f40232i = null;
+            this.f40233o = null;
+            this.f40234p = null;
+            this.f40235q = null;
         }
     }
 
     @Override // android.graphics.SurfaceTexture.OnFrameAvailableListener
     public void onFrameAvailable(SurfaceTexture surfaceTexture) {
-        this.f40214d.post(this);
+        this.f40230d.post(this);
     }
 
     @Override // java.lang.Runnable
     public void run() {
         d();
-        SurfaceTexture surfaceTexture = this.f40219q;
+        SurfaceTexture surfaceTexture = this.f40235q;
         if (surfaceTexture != null) {
             try {
                 surfaceTexture.updateTexImage();
@@ -170,8 +170,8 @@ public final class m implements SurfaceTexture.OnFrameAvailableListener, Runnabl
     }
 
     public m(Handler handler, a aVar) {
-        this.f40214d = handler;
-        this.f40215e = new int[1];
+        this.f40230d = handler;
+        this.f40231e = new int[1];
     }
 
     private void d() {

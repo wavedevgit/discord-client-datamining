@@ -51,7 +51,7 @@ final class RememberCommandQueueKt$rememberCommandQueueOrNull$1 extends k implem
             c.b(obj);
             CommandQueue commandQueue = this.$commandQueue;
             if (commandQueue == null) {
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
             Lifecycle lifecycle = this.$lifecycleOwner.getLifecycle();
             FrameTicker composeFrameTicker = FrameTickerKt.getComposeFrameTicker();
@@ -60,11 +60,11 @@ final class RememberCommandQueueKt$rememberCommandQueueOrNull$1 extends k implem
                 return f10;
             }
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(@NotNull CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((RememberCommandQueueKt$rememberCommandQueueOrNull$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((RememberCommandQueueKt$rememberCommandQueueOrNull$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

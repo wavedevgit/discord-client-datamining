@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/checkpoint/native/components/CheckpointMusicButton.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Original name: CheckpointMusicButton, environment: var1
-        _fun87064: for (var _fun87064_ip = 0;;) switch (_fun87064_ip) {
+        _fun87110: for (var _fun87110_ip = 0;;) switch (_fun87110_ip) {
             case 0:
                 var2 = _closure1_slot9;
                 var3 = undefined;
@@ -104,14 +104,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = _closure1_slot1;
                 var9 = _closure1_slot2;
                 if (var8) {
-                    _fun87064_ip = 145;
-                    continue _fun87064
+                    _fun87110_ip = 145;
+                    continue _fun87110
                 }
             case 136:
                 var2 = 10;
                 var2 = var9[var2];
-                _fun87064_ip = 152;
-                continue _fun87064;
+                _fun87110_ip = 152;
+                continue _fun87110;
             case 145:
                 var7 = 9;
                 var2 = var9[var7];
@@ -142,21 +142,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var4.addEventListener;
                     var2 = 'change';
                     var1 = function(arg0) { // Environment: var0
-                        _fun87067: for (var _fun87067_ip = 0;;) switch (_fun87067_ip) {
+                        _fun87113: for (var _fun87113_ip = 0;;) switch (_fun87113_ip) {
                             case 0:
                                 var1 = 'active';
                                 var0 = arg0;
                                 if (!(var1 === var0)) {
-                                    _fun87067_ip = 35;
-                                    continue _fun87067
+                                    _fun87113_ip = 35;
+                                    continue _fun87113
                                 }
                             case 11:
                                 var0 = _closure2_slot1;
                                 var1 = var0.current;
                                 var0 = var1.play;
                                 var0 = var0.bind(var1)();
-                                _fun87067_ip = 57;
-                                continue _fun87067;
+                                _fun87113_ip = 57;
+                                continue _fun87113;
                             case 35:
                                 var0 = _closure2_slot1;
                                 var1 = var0.current;
@@ -187,15 +187,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = new Array(1);
                 var2[0] = var8;
                 var1 = function() { // Environment: var1
-                    _fun87069: for (var _fun87069_ip = 0;;) switch (_fun87069_ip) {
+                    _fun87115: for (var _fun87115_ip = 0;;) switch (_fun87115_ip) {
                         case 0:
                             var1 = _closure2_slot1;
                             var1 = var1.current;
                             var2 = _closure2_slot0;
                             var0 = 1;
                             if (!var2) {
-                                _fun87069_ip = 24;
-                                continue _fun87069
+                                _fun87115_ip = 24;
+                                continue _fun87115
                             }
                         case 22:
                             var0 = 0;
@@ -240,4 +240,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 11128, 33, 1297, 671, 11130, 3110, 566, 9140, 8455, 8363, 11192, 5279, 11129, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 11134, 33, 1297, 671, 11136, 3110, 566, 9141, 8458, 8366, 11198, 5283, 11135, 1234, 2]);

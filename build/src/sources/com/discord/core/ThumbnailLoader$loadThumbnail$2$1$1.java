@@ -148,6 +148,6 @@ final class ThumbnailLoader$loadThumbnail$2$1$1 extends k implements Function2<C
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Bitmap> continuation) {
-        return ((ThumbnailLoader$loadThumbnail$2$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((ThumbnailLoader$loadThumbnail$2$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

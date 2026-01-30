@@ -6,30 +6,30 @@ import ui.c;
 final class q7 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final q7 f43447a = new q7();
+    static final q7 f43463a = new q7();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43448b;
+    private static final ui.c f43464b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43449c;
+    private static final ui.c f43465c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f43450d;
+    private static final ui.c f43466d;
 
     static {
         c.b a10 = ui.c.a(StackTraceHelper.NAME_KEY);
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43448b = a10.b(s1Var.b()).a();
+        f43464b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("stages");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43449c = a11.b(s1Var2.b()).a();
+        f43465c = a11.b(s1Var2.b()).a();
         c.b a12 = ui.c.a("runMiniBenchmark");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f43450d = a12.b(s1Var3.b()).a();
+        f43466d = a12.b(s1Var3.b()).a();
     }
 
     private q7() {

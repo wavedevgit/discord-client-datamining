@@ -5,13 +5,13 @@ import java.net.Authenticator;
 final class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final m f30758a = new m();
+    private static final m f30774a = new m();
 
     private m() {
     }
 
     public static m a() {
-        return f30758a;
+        return f30774a;
     }
 
     public void b(Authenticator authenticator) {

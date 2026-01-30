@@ -13,7 +13,7 @@ public final class z0 implements KSerializer {
     public static final z0 f6922a = new z0();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f6923b = new g2("kotlin.Long", e.g.f56089a);
+    private static final SerialDescriptor f6923b = new g2("kotlin.Long", e.g.f56105a);
 
     private z0() {
     }

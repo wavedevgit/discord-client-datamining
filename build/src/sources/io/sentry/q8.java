@@ -7,37 +7,37 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class q8 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final io.sentry.protocol.x f30511d;
+    private final io.sentry.protocol.x f30527d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f30512e;
+    private final String f30528e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f30513i;
+    private final String f30529i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f30514o;
+    private final String f30530o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final String f30515p;
+    private final String f30531p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final String f30516q;
+    private final String f30532q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final String f30517r;
+    private final String f30533r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final String f30518s;
+    private final String f30534s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final String f30519t;
+    private final String f30535t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final io.sentry.protocol.x f30520u;
+    private final io.sentry.protocol.x f30536u;
 
     /* renamed from: v  reason: collision with root package name */
-    private Map f30521v;
+    private Map f30537v;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -202,50 +202,50 @@ public final class q8 implements w1 {
     }
 
     public String a() {
-        return this.f30518s;
+        return this.f30534s;
     }
 
     public String b() {
-        return this.f30517r;
+        return this.f30533r;
     }
 
     public void c(Map map) {
-        this.f30521v = map;
+        this.f30537v = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        f3Var.e("trace_id").j(iLogger, this.f30511d);
-        f3Var.e("public_key").f(this.f30512e);
-        if (this.f30513i != null) {
-            f3Var.e("release").f(this.f30513i);
+        f3Var.e("trace_id").j(iLogger, this.f30527d);
+        f3Var.e("public_key").f(this.f30528e);
+        if (this.f30529i != null) {
+            f3Var.e("release").f(this.f30529i);
         }
-        if (this.f30514o != null) {
-            f3Var.e("environment").f(this.f30514o);
+        if (this.f30530o != null) {
+            f3Var.e("environment").f(this.f30530o);
         }
-        if (this.f30515p != null) {
-            f3Var.e("user_id").f(this.f30515p);
+        if (this.f30531p != null) {
+            f3Var.e("user_id").f(this.f30531p);
         }
-        if (this.f30516q != null) {
-            f3Var.e("transaction").f(this.f30516q);
+        if (this.f30532q != null) {
+            f3Var.e("transaction").f(this.f30532q);
         }
-        if (this.f30517r != null) {
-            f3Var.e("sample_rate").f(this.f30517r);
+        if (this.f30533r != null) {
+            f3Var.e("sample_rate").f(this.f30533r);
         }
-        if (this.f30518s != null) {
-            f3Var.e("sample_rand").f(this.f30518s);
+        if (this.f30534s != null) {
+            f3Var.e("sample_rand").f(this.f30534s);
         }
-        if (this.f30519t != null) {
-            f3Var.e("sampled").f(this.f30519t);
+        if (this.f30535t != null) {
+            f3Var.e("sampled").f(this.f30535t);
         }
-        if (this.f30520u != null) {
-            f3Var.e("replay_id").j(iLogger, this.f30520u);
+        if (this.f30536u != null) {
+            f3Var.e("replay_id").j(iLogger, this.f30536u);
         }
-        Map map = this.f30521v;
+        Map map = this.f30537v;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f30521v.get(str);
+                Object obj = this.f30537v.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -259,15 +259,15 @@ public final class q8 implements w1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public q8(io.sentry.protocol.x xVar, String str, String str2, String str3, String str4, String str5, String str6, String str7, io.sentry.protocol.x xVar2, String str8) {
-        this.f30511d = xVar;
-        this.f30512e = str;
-        this.f30513i = str2;
-        this.f30514o = str3;
-        this.f30515p = str4;
-        this.f30516q = str5;
-        this.f30517r = str6;
-        this.f30519t = str7;
-        this.f30520u = xVar2;
-        this.f30518s = str8;
+        this.f30527d = xVar;
+        this.f30528e = str;
+        this.f30529i = str2;
+        this.f30530o = str3;
+        this.f30531p = str4;
+        this.f30532q = str5;
+        this.f30533r = str6;
+        this.f30535t = str7;
+        this.f30536u = xVar2;
+        this.f30534s = str8;
     }
 }

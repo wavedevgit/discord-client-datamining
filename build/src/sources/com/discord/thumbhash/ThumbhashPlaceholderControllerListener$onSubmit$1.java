@@ -74,7 +74,7 @@ final class ThumbhashPlaceholderControllerListener$onSubmit$1 extends k implemen
         }
         Bitmap bitmap = (Bitmap) obj;
         if (!i.i(coroutineScope)) {
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         Intrinsics.checkNotNull(bitmap);
         simpleDraweeView = this.this$0.draweeView;
@@ -83,11 +83,11 @@ final class ThumbhashPlaceholderControllerListener$onSubmit$1 extends k implemen
         BitmapDrawable bitmapDrawable = new BitmapDrawable(resources, bitmap);
         simpleDraweeView2 = this.this$0.draweeView;
         ((GenericDraweeHierarchy) simpleDraweeView2.getHierarchy()).z(bitmapDrawable);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ThumbhashPlaceholderControllerListener$onSubmit$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((ThumbhashPlaceholderControllerListener$onSubmit$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

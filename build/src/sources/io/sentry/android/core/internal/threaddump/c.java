@@ -23,60 +23,60 @@ import java.util.regex.Pattern;
 public class c {
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Pattern f28987f = Pattern.compile("\"(.*)\" (.*) ?prio=(\\d+)\\s+tid=(\\d+)\\s*(.*)");
+    private static final Pattern f29003f = Pattern.compile("\"(.*)\" (.*) ?prio=(\\d+)\\s+tid=(\\d+)\\s*(.*)");
 
     /* renamed from: g  reason: collision with root package name */
-    private static final Pattern f28988g = Pattern.compile("\"(.*)\" (.*) ?sysTid=(\\d+)");
+    private static final Pattern f29004g = Pattern.compile("\"(.*)\" (.*) ?sysTid=(\\d+)");
 
     /* renamed from: h  reason: collision with root package name */
-    private static final Pattern f28989h = Pattern.compile(" *(?:native: )?#(\\d+) \\S+ ([0-9a-fA-F]+)\\s+((.*?)(?:\\s+\\(deleted\\))?(?:\\s+\\(offset (.*?)\\))?)(?:\\s+\\((?:\\?\\?\\?|(.*?)(?:\\+(\\d+))?)\\))?(?:\\s+\\(BuildId: (.*?)\\))?");
+    private static final Pattern f29005h = Pattern.compile(" *(?:native: )?#(\\d+) \\S+ ([0-9a-fA-F]+)\\s+((.*?)(?:\\s+\\(deleted\\))?(?:\\s+\\(offset (.*?)\\))?)(?:\\s+\\((?:\\?\\?\\?|(.*?)(?:\\+(\\d+))?)\\))?(?:\\s+\\(BuildId: (.*?)\\))?");
 
     /* renamed from: i  reason: collision with root package name */
-    private static final Pattern f28990i = Pattern.compile(" *at (?:(.+)\\.)?([^.]+)\\.([^.]+)\\((.*):([\\d-]+)\\)");
+    private static final Pattern f29006i = Pattern.compile(" *at (?:(.+)\\.)?([^.]+)\\.([^.]+)\\((.*):([\\d-]+)\\)");
 
     /* renamed from: j  reason: collision with root package name */
-    private static final Pattern f28991j = Pattern.compile(" *at (?:(.+)\\.)?([^.]+)\\.([^.]+)\\(Native method\\)");
+    private static final Pattern f29007j = Pattern.compile(" *at (?:(.+)\\.)?([^.]+)\\.([^.]+)\\(Native method\\)");
 
     /* renamed from: k  reason: collision with root package name */
-    private static final Pattern f28992k = Pattern.compile(" *- locked \\<([0x0-9a-fA-F]{1,16})\\> \\(a (?:(.+)\\.)?([^.]+)\\)");
+    private static final Pattern f29008k = Pattern.compile(" *- locked \\<([0x0-9a-fA-F]{1,16})\\> \\(a (?:(.+)\\.)?([^.]+)\\)");
 
     /* renamed from: l  reason: collision with root package name */
-    private static final Pattern f28993l = Pattern.compile(" *- sleeping on \\<([0x0-9a-fA-F]{1,16})\\> \\(a (?:(.+)\\.)?([^.]+)\\)");
+    private static final Pattern f29009l = Pattern.compile(" *- sleeping on \\<([0x0-9a-fA-F]{1,16})\\> \\(a (?:(.+)\\.)?([^.]+)\\)");
 
     /* renamed from: m  reason: collision with root package name */
-    private static final Pattern f28994m = Pattern.compile(" *- waiting on \\<([0x0-9a-fA-F]{1,16})\\> \\(a (?:(.+)\\.)?([^.]+)\\)");
+    private static final Pattern f29010m = Pattern.compile(" *- waiting on \\<([0x0-9a-fA-F]{1,16})\\> \\(a (?:(.+)\\.)?([^.]+)\\)");
 
     /* renamed from: n  reason: collision with root package name */
-    private static final Pattern f28995n = Pattern.compile(" *- waiting to lock \\<([0x0-9a-fA-F]{1,16})\\> \\(a (?:(.+)\\.)?([^.]+)\\)");
+    private static final Pattern f29011n = Pattern.compile(" *- waiting to lock \\<([0x0-9a-fA-F]{1,16})\\> \\(a (?:(.+)\\.)?([^.]+)\\)");
 
     /* renamed from: o  reason: collision with root package name */
-    private static final Pattern f28996o = Pattern.compile(" *- waiting to lock \\<([0x0-9a-fA-F]{1,16})\\> \\(a (?:(.+)\\.)?([^.]+)\\)(?: held by thread (\\d+))");
+    private static final Pattern f29012o = Pattern.compile(" *- waiting to lock \\<([0x0-9a-fA-F]{1,16})\\> \\(a (?:(.+)\\.)?([^.]+)\\)(?: held by thread (\\d+))");
 
     /* renamed from: p  reason: collision with root package name */
-    private static final Pattern f28997p = Pattern.compile(" *- waiting to lock an unknown object");
+    private static final Pattern f29013p = Pattern.compile(" *- waiting to lock an unknown object");
 
     /* renamed from: q  reason: collision with root package name */
-    private static final Pattern f28998q = Pattern.compile("\\s+");
+    private static final Pattern f29014q = Pattern.compile("\\s+");
 
     /* renamed from: a  reason: collision with root package name */
-    private final k7 f28999a;
+    private final k7 f29015a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f29000b;
+    private final boolean f29016b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final o7 f29001c;
+    private final o7 f29017c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f29002d = new HashMap();
+    private final Map f29018d = new HashMap();
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f29003e = new ArrayList();
+    private final List f29019e = new ArrayList();
 
     public c(k7 k7Var, boolean z10) {
-        this.f28999a = k7Var;
-        this.f29000b = z10;
-        this.f29001c = new o7(k7Var);
+        this.f29015a = k7Var;
+        this.f29016b = z10;
+        this.f29017c = new o7(k7Var);
     }
 
     private static String a(String str) {
@@ -140,16 +140,16 @@ public class c {
         Matcher matcher;
         String a10;
         ArrayList arrayList = new ArrayList();
-        Matcher matcher2 = f28989h.matcher("");
-        Matcher matcher3 = f28990i.matcher("");
-        Matcher matcher4 = f28991j.matcher("");
-        Matcher matcher5 = f28992k.matcher("");
-        Matcher matcher6 = f28994m.matcher("");
-        Matcher matcher7 = f28993l.matcher("");
-        Matcher matcher8 = f28996o.matcher("");
-        Matcher matcher9 = f28995n.matcher("");
-        Matcher matcher10 = f28997p.matcher("");
-        Matcher matcher11 = f28998q.matcher("");
+        Matcher matcher2 = f29005h.matcher("");
+        Matcher matcher3 = f29006i.matcher("");
+        Matcher matcher4 = f29007j.matcher("");
+        Matcher matcher5 = f29008k.matcher("");
+        Matcher matcher6 = f29010m.matcher("");
+        Matcher matcher7 = f29009l.matcher("");
+        Matcher matcher8 = f29012o.matcher("");
+        Matcher matcher9 = f29011n.matcher("");
+        Matcher matcher10 = f29013p.matcher("");
+        Matcher matcher11 = f29014q.matcher("");
         SentryStackFrame sentryStackFrame = null;
         while (true) {
             if (!bVar.a()) {
@@ -157,10 +157,10 @@ public class c {
             }
             a b10 = bVar.b();
             if (b10 == null) {
-                this.f28999a.getLogger().c(SentryLevel.WARNING, "Internal error while parsing thread dump.", new Object[0]);
+                this.f29015a.getLogger().c(SentryLevel.WARNING, "Internal error while parsing thread dump.", new Object[0]);
                 break;
             }
-            String str = b10.f28982b;
+            String str = b10.f28998b;
             Matcher matcher12 = matcher11;
             if (h(matcher3, str)) {
                 sentryStackFrame = new SentryStackFrame();
@@ -169,7 +169,7 @@ public class c {
                 sentryStackFrame.C(matcher3.group(3));
                 sentryStackFrame.B(matcher3.group(4));
                 sentryStackFrame.F(g(matcher3, 5, null));
-                sentryStackFrame.D(this.f29001c.b(format));
+                sentryStackFrame.D(this.f29017c.b(format));
                 arrayList.add(sentryStackFrame);
                 matcher = matcher3;
             } else if (h(matcher2, str)) {
@@ -186,14 +186,14 @@ public class c {
                     a10 = a(group);
                 }
                 if (a10 != null) {
-                    if (!this.f29002d.containsKey(a10)) {
+                    if (!this.f29018d.containsKey(a10)) {
                         DebugImage debugImage = new DebugImage();
                         debugImage.setDebugId(a10);
                         matcher = matcher3;
                         debugImage.setType("elf");
                         debugImage.setCodeFile(matcher2.group(4));
                         debugImage.setCodeId(group);
-                        this.f29002d.put(a10, debugImage);
+                        this.f29018d.put(a10, debugImage);
                     } else {
                         matcher = matcher3;
                     }
@@ -212,7 +212,7 @@ public class c {
                     String format2 = String.format("%s.%s", matcher4.group(1), matcher4.group(2));
                     sentryStackFrame.H(format2);
                     sentryStackFrame.C(matcher4.group(3));
-                    sentryStackFrame.D(this.f29001c.b(format2));
+                    sentryStackFrame.D(this.f29017c.b(format2));
                     sentryStackFrame.I(Boolean.TRUE);
                     arrayList.add(sentryStackFrame);
                 } else if (h(matcher5, str)) {
@@ -298,21 +298,21 @@ public class c {
 
     private c0 k(b bVar) {
         c0 c0Var = new c0();
-        Matcher matcher = f28987f.matcher("");
-        Matcher matcher2 = f28988g.matcher("");
+        Matcher matcher = f29003f.matcher("");
+        Matcher matcher2 = f29004g.matcher("");
         if (!bVar.a()) {
             return null;
         }
         a b10 = bVar.b();
         boolean z10 = false;
         if (b10 == null) {
-            this.f28999a.getLogger().c(SentryLevel.WARNING, "Internal error while parsing thread dump.", new Object[0]);
+            this.f29015a.getLogger().c(SentryLevel.WARNING, "Internal error while parsing thread dump.", new Object[0]);
             return null;
         }
-        if (h(matcher, b10.f28982b)) {
+        if (h(matcher, b10.f28998b)) {
             Long e10 = e(matcher, 4, null);
             if (e10 == null) {
-                this.f28999a.getLogger().c(SentryLevel.DEBUG, "No thread id in the dump, skipping thread.", new Object[0]);
+                this.f29015a.getLogger().c(SentryLevel.DEBUG, "No thread id in the dump, skipping thread.", new Object[0]);
                 return null;
             }
             c0Var.u(e10);
@@ -325,10 +325,10 @@ public class c {
                     c0Var.z(group);
                 }
             }
-        } else if (h(matcher2, b10.f28982b)) {
+        } else if (h(matcher2, b10.f28998b)) {
             Long e11 = e(matcher2, 3, null);
             if (e11 == null) {
-                this.f28999a.getLogger().c(SentryLevel.DEBUG, "No thread id in the dump, skipping thread.", new Object[0]);
+                this.f29015a.getLogger().c(SentryLevel.DEBUG, "No thread id in the dump, skipping thread.", new Object[0]);
                 return null;
             }
             c0Var.u(e11);
@@ -339,7 +339,7 @@ public class c {
             boolean equals = m10.equals("main");
             c0Var.v(Boolean.valueOf(equals));
             c0Var.q(Boolean.valueOf(equals));
-            if (equals && !this.f29000b) {
+            if (equals && !this.f29016b) {
                 z10 = true;
             }
             c0Var.r(Boolean.valueOf(z10));
@@ -349,28 +349,28 @@ public class c {
     }
 
     public List c() {
-        return new ArrayList(this.f29002d.values());
+        return new ArrayList(this.f29018d.values());
     }
 
     public List f() {
-        return this.f29003e;
+        return this.f29019e;
     }
 
     public void i(b bVar) {
-        Matcher matcher = f28987f.matcher("");
-        Matcher matcher2 = f28988g.matcher("");
+        Matcher matcher = f29003f.matcher("");
+        Matcher matcher2 = f29004g.matcher("");
         while (bVar.a()) {
             a b10 = bVar.b();
             if (b10 == null) {
-                this.f28999a.getLogger().c(SentryLevel.WARNING, "Internal error while parsing thread dump.", new Object[0]);
+                this.f29015a.getLogger().c(SentryLevel.WARNING, "Internal error while parsing thread dump.", new Object[0]);
                 return;
             }
-            String str = b10.f28982b;
+            String str = b10.f28998b;
             if (h(matcher, str) || h(matcher2, str)) {
                 bVar.d();
                 c0 k10 = k(bVar);
                 if (k10 != null) {
-                    this.f29003e.add(k10);
+                    this.f29019e.add(k10);
                 }
             }
         }

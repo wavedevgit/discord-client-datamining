@@ -10,22 +10,22 @@ public final class b implements Metadata.b {
     public static final Parcelable.Creator<b> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f33072d;
+    public final int f33088d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final String f33073e;
+    public final String f33089e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final String f33074i;
+    public final String f33090i;
 
     /* renamed from: o  reason: collision with root package name */
-    public final String f33075o;
+    public final String f33091o;
 
     /* renamed from: p  reason: collision with root package name */
-    public final boolean f33076p;
+    public final boolean f33092p;
 
     /* renamed from: q  reason: collision with root package name */
-    public final int f33077q;
+    public final int f33093q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements Parcelable.Creator {
@@ -47,12 +47,12 @@ public final class b implements Metadata.b {
 
     public b(int i10, String str, String str2, String str3, boolean z10, int i11) {
         ne.a.a(i11 == -1 || i11 > 0);
-        this.f33072d = i10;
-        this.f33073e = str;
-        this.f33074i = str2;
-        this.f33075o = str3;
-        this.f33076p = z10;
-        this.f33077q = i11;
+        this.f33088d = i10;
+        this.f33089e = str;
+        this.f33090i = str2;
+        this.f33091o = str3;
+        this.f33092p = z10;
+        this.f33093q = i11;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -80,11 +80,11 @@ public final class b implements Metadata.b {
 
     @Override // com.google.android.exoplayer2.metadata.Metadata.b
     public void d1(MediaMetadata.b bVar) {
-        String str = this.f33074i;
+        String str = this.f33090i;
         if (str != null) {
             bVar.k0(str);
         }
-        String str2 = this.f33073e;
+        String str2 = this.f33089e;
         if (str2 != null) {
             bVar.Z(str2);
         }
@@ -101,7 +101,7 @@ public final class b implements Metadata.b {
         }
         if (obj != null && b.class == obj.getClass()) {
             b bVar = (b) obj;
-            if (this.f33072d == bVar.f33072d && w0.c(this.f33073e, bVar.f33073e) && w0.c(this.f33074i, bVar.f33074i) && w0.c(this.f33075o, bVar.f33075o) && this.f33076p == bVar.f33076p && this.f33077q == bVar.f33077q) {
+            if (this.f33088d == bVar.f33088d && w0.c(this.f33089e, bVar.f33089e) && w0.c(this.f33090i, bVar.f33090i) && w0.c(this.f33091o, bVar.f33091o) && this.f33092p == bVar.f33092p && this.f33093q == bVar.f33093q) {
                 return true;
             }
         }
@@ -111,8 +111,8 @@ public final class b implements Metadata.b {
     public int hashCode() {
         int i10;
         int i11;
-        int i12 = (527 + this.f33072d) * 31;
-        String str = this.f33073e;
+        int i12 = (527 + this.f33088d) * 31;
+        String str = this.f33089e;
         int i13 = 0;
         if (str != null) {
             i10 = str.hashCode();
@@ -120,40 +120,40 @@ public final class b implements Metadata.b {
             i10 = 0;
         }
         int i14 = (i12 + i10) * 31;
-        String str2 = this.f33074i;
+        String str2 = this.f33090i;
         if (str2 != null) {
             i11 = str2.hashCode();
         } else {
             i11 = 0;
         }
         int i15 = (i14 + i11) * 31;
-        String str3 = this.f33075o;
+        String str3 = this.f33091o;
         if (str3 != null) {
             i13 = str3.hashCode();
         }
-        return ((((i15 + i13) * 31) + (this.f33076p ? 1 : 0)) * 31) + this.f33077q;
+        return ((((i15 + i13) * 31) + (this.f33092p ? 1 : 0)) * 31) + this.f33093q;
     }
 
     public String toString() {
-        return "IcyHeaders: name=\"" + this.f33074i + "\", genre=\"" + this.f33073e + "\", bitrate=" + this.f33072d + ", metadataInterval=" + this.f33077q;
+        return "IcyHeaders: name=\"" + this.f33090i + "\", genre=\"" + this.f33089e + "\", bitrate=" + this.f33088d + ", metadataInterval=" + this.f33093q;
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeInt(this.f33072d);
-        parcel.writeString(this.f33073e);
-        parcel.writeString(this.f33074i);
-        parcel.writeString(this.f33075o);
-        w0.q1(parcel, this.f33076p);
-        parcel.writeInt(this.f33077q);
+        parcel.writeInt(this.f33088d);
+        parcel.writeString(this.f33089e);
+        parcel.writeString(this.f33090i);
+        parcel.writeString(this.f33091o);
+        w0.q1(parcel, this.f33092p);
+        parcel.writeInt(this.f33093q);
     }
 
     b(Parcel parcel) {
-        this.f33072d = parcel.readInt();
-        this.f33073e = parcel.readString();
-        this.f33074i = parcel.readString();
-        this.f33075o = parcel.readString();
-        this.f33076p = w0.U0(parcel);
-        this.f33077q = parcel.readInt();
+        this.f33088d = parcel.readInt();
+        this.f33089e = parcel.readString();
+        this.f33090i = parcel.readString();
+        this.f33091o = parcel.readString();
+        this.f33092p = w0.U0(parcel);
+        this.f33093q = parcel.readInt();
     }
 }

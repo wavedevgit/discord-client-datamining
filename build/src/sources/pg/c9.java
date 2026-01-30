@@ -5,7 +5,7 @@ import ui.c;
 final class c9 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final c9 f45183a = new c9();
+    static final c9 f45199a = new c9();
 
     static {
         c.b a10 = ui.c.a("textEnhancementParam");

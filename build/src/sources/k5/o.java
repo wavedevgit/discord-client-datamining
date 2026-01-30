@@ -6,27 +6,27 @@ import java.io.File;
 final class o {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final o f33027a = new o();
+    public static final o f33043a = new o();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final File f33028b = new File("/proc/self/fd");
+    private static final File f33044b = new File("/proc/self/fd");
 
     /* renamed from: c  reason: collision with root package name */
-    private static int f33029c = 30;
+    private static int f33045c = 30;
 
     /* renamed from: d  reason: collision with root package name */
-    private static long f33030d = SystemClock.uptimeMillis();
+    private static long f33046d = SystemClock.uptimeMillis();
 
     /* renamed from: e  reason: collision with root package name */
-    private static boolean f33031e = true;
+    private static boolean f33047e = true;
 
     private o() {
     }
 
     private final boolean a() {
-        int i10 = f33029c;
-        f33029c = i10 + 1;
-        if (i10 < 30 && SystemClock.uptimeMillis() <= f33030d + 30000) {
+        int i10 = f33045c;
+        f33045c = i10 + 1;
+        if (i10 < 30 && SystemClock.uptimeMillis() <= f33046d + 30000) {
             return false;
         }
         return true;
@@ -36,9 +36,9 @@ final class o {
         try {
             if (a()) {
                 boolean z10 = false;
-                f33029c = 0;
-                f33030d = SystemClock.uptimeMillis();
-                String[] list = f33028b.list();
+                f33045c = 0;
+                f33046d = SystemClock.uptimeMillis();
+                String[] list = f33044b.list();
                 if (list == null) {
                     list = new String[0];
                 }
@@ -46,7 +46,7 @@ final class o {
                 if (length < 800) {
                     z10 = true;
                 }
-                f33031e = z10;
+                f33047e = z10;
                 if (!z10 && tVar != null && tVar.m() <= 5) {
                     tVar.a("FileDescriptorCounter", 5, "Unable to allocate more hardware bitmaps. Number of used file descriptors: " + length, null);
                 }
@@ -54,6 +54,6 @@ final class o {
         } catch (Throwable th2) {
             throw th2;
         }
-        return f33031e;
+        return f33047e;
     }
 }

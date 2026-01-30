@@ -6,14 +6,14 @@ import androidx.activity.result.ActivityResultLauncher;
 public final class n {
 
     /* renamed from: a  reason: collision with root package name */
-    private final tq.h f55989a;
+    private final tq.h f56005a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final tq.h f55990b;
+    private final tq.h f56006b;
 
     public n(tq.h hVar, tq.h hVar2) {
-        this.f55989a = hVar;
-        this.f55990b = hVar2;
+        this.f56005a = hVar;
+        this.f56006b = hVar2;
     }
 
     public static n a(tq.h hVar, tq.h hVar2) {
@@ -25,6 +25,6 @@ public final class n {
     }
 
     public m b() {
-        return c((ActivityResultLauncher) this.f55989a.get(), (Context) this.f55990b.get());
+        return c((ActivityResultLauncher) this.f56005a.get(), (Context) this.f56006b.get());
     }
 }

@@ -44,14 +44,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/calls/useHideSelfVideo.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: useHideSelfVideo, environment: var1
-        _fun68517: for (var _fun68517_ip = 0;;) switch (_fun68517_ip) {
+        _fun68562: for (var _fun68562_ip = 0;;) switch (_fun68562_ip) {
             case 0:
                 var5 = arg0;
                 var2 = arguments[1];
                 var8 = undefined;
                 if (!(var2 === var8)) {
-                    _fun68517_ip = 27;
-                    continue _fun68517
+                    _fun68562_ip = 27;
+                    continue _fun68562
                 }
             case 14:
                 var0 = _closure1_slot6;
@@ -111,15 +111,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = null;
                 var3 = var3 == var5;
                 if (var3) {
-                    _fun68517_ip = 192;
-                    continue _fun68517
+                    _fun68562_ip = 192;
+                    continue _fun68562
                 }
             case 188:
                 var3 = var5 === var4;
             case 192:
                 if (!var3) {
-                    _fun68517_ip = 198;
-                    continue _fun68517
+                    _fun68562_ip = 198;
+                    continue _fun68562
                 }
             case 195:
                 var3 = var0;
@@ -128,18 +128,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0[0] = var3;
                 var0[1] = var2;
                 var1 = function(arg0) { // Environment: var1
-                    _fun68521: for (var _fun68521_ip = 0;;) switch (_fun68521_ip) {
+                    _fun68566: for (var _fun68566_ip = 0;;) switch (_fun68566_ip) {
                         case 0:
                             var1 = _closure1_slot5;
                             var2 = arg0;
                             if (var2) {
-                                _fun68521_ip = 21;
-                                continue _fun68521
+                                _fun68566_ip = 21;
+                                continue _fun68566
                             }
                         case 13:
                             var5 = var1.MANUAL_ENABLED;
-                            _fun68521_ip = 27;
-                            continue _fun68521;
+                            _fun68566_ip = 27;
+                            continue _fun68566;
                         case 21:
                             var5 = var1.DISABLED;
                         case 27:
@@ -162,4 +162,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1216, 3435, 660, 3469, 566, 8167, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1216, 3435, 660, 3469, 566, 8170, 2]);

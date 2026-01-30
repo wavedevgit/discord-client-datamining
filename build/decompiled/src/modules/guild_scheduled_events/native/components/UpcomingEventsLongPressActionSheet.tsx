@@ -64,7 +64,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_scheduled_events/native/components/UpcomingEventsLongPressActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: UpcomingEventsLongPressActionSheet, environment: var1
-        _fun90265: for (var _fun90265_ip = 0;;) switch (_fun90265_ip) {
+        _fun90502: for (var _fun90502_ip = 0;;) switch (_fun90502_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.guildId;
@@ -212,14 +212,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = {};
                 var18 = _closure1_slot2;
                 if (var12) {
-                    _fun90265_ip = 518;
-                    continue _fun90265
+                    _fun90502_ip = 518;
+                    continue _fun90502
                 }
             case 509:
                 var11 = 18;
                 var11 = var18[var11];
-                _fun90265_ip = 525;
-                continue _fun90265;
+                _fun90502_ip = 525;
+                continue _fun90502;
             case 518:
                 var16 = 17;
                 var11 = var18[var16];
@@ -245,14 +245,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var16.bind(var3)(var13);
                 var13 = var13.t;
                 if (var12) {
-                    _fun90265_ip = 631;
-                    continue _fun90265
+                    _fun90502_ip = 631;
+                    continue _fun90502
                 }
             case 618:
                 var12 = var13.ONG3Yz;
                 var12 = var14.bind(var15)(var12);
-                _fun90265_ip = 644;
-                continue _fun90265;
+                _fun90502_ip = 644;
+                continue _fun90502;
             case 631:
                 var13 = var13.COiLo0;
                 var12 = var14.bind(var15)(var13);
@@ -294,4 +294,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1410, 4260, 4261, 33, 1297, 566, 5164, 5167, 7353, 1234, 5335, 4039, 10415, 4531, 3237, 11689, 11690, 4654, 4651, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1410, 4266, 4267, 33, 1297, 566, 5170, 5173, 7356, 1234, 5339, 4045, 10421, 4537, 3237, 11711, 11712, 4660, 4657, 2]);

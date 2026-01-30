@@ -49,11 +49,11 @@ final class MediaEngineModule$connectionInstanceExecuteSecureFramesTransition$1 
             }
         }
         this.this$0.getMediaEngine().connectionInstanceExecuteSecureFramesTransition$media_engine_release((int) this.$connectionId, (int) this.$transitionId);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$connectionInstanceExecuteSecureFramesTransition$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((MediaEngineModule$connectionInstanceExecuteSecureFramesTransition$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

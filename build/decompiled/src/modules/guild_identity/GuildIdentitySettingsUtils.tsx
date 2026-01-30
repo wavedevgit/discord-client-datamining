@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_identity/GuildIdentitySettingsUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0, arg1) { // Original name: setNewPendingGuildIdentityBio, environment: var1
-        _fun80642: for (var _fun80642_ip = 0;;) switch (_fun80642_ip) {
+        _fun80688: for (var _fun80688_ip = 0;;) switch (_fun80688_ip) {
             case 0:
                 var4 = arg0;
                 var2 = _closure1_slot0;
@@ -35,8 +35,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = arg1;
                 var1 = undefined;
                 if (!(var4 !== var5)) {
-                    _fun80642_ip = 45;
-                    continue _fun80642
+                    _fun80688_ip = 45;
+                    continue _fun80688
                 }
             case 42:
                 var1 = var4;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setNewPendingGuildIdentityBio = var3;
     var3 = function(arg0, arg1) { // Original name: setNewPendingGuildIdentityPronouns, environment: var1
-        _fun80643: for (var _fun80643_ip = 0;;) switch (_fun80643_ip) {
+        _fun80689: for (var _fun80689_ip = 0;;) switch (_fun80689_ip) {
             case 0:
                 var4 = arg0;
                 var2 = _closure1_slot0;
@@ -60,8 +60,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = arg1;
                 var1 = undefined;
                 if (!(var4 !== var5)) {
-                    _fun80643_ip = 45;
-                    continue _fun80643
+                    _fun80689_ip = 45;
+                    continue _fun80689
                 }
             case 42:
                 var1 = var4;
@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setNewPendingGuildIdentityPronouns = var3;
     var3 = function(arg0, arg1) { // Original name: setNewPendingNickname, environment: var1
-        _fun80644: for (var _fun80644_ip = 0;;) switch (_fun80644_ip) {
+        _fun80690: for (var _fun80690_ip = 0;;) switch (_fun80690_ip) {
             case 0:
                 var4 = arg0;
                 var6 = arg1;
@@ -85,21 +85,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.setPendingNickname;
                 var1 = undefined;
                 if (!(var4 !== var6)) {
-                    _fun80644_ip = 61;
-                    continue _fun80644
+                    _fun80690_ip = 61;
+                    continue _fun80690
                 }
             case 42:
                 var5 = '';
                 if (!(var5 === var4)) {
-                    _fun80644_ip = 58;
-                    continue _fun80644
+                    _fun80690_ip = 58;
+                    continue _fun80690
                 }
             case 50:
                 var5 = null;
                 var1 = undefined;
                 if (!(var5 !== var6)) {
-                    _fun80644_ip = 61;
-                    continue _fun80644
+                    _fun80690_ip = 61;
+                    continue _fun80690
                 }
             case 58:
                 var1 = var4;
@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setNewPendingNickname = var3;
     var3 = function(arg0, arg1) { // Original name: setNewPendingGuildIdentityThemeColors, environment: var1
-        _fun80645: for (var _fun80645_ip = 0;;) switch (_fun80645_ip) {
+        _fun80691: for (var _fun80691_ip = 0;;) switch (_fun80691_ip) {
             case 0:
                 var4 = arg0;
                 var5 = null;
@@ -118,8 +118,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = undefined;
                 var1 = undefined;
                 if (var2) {
-                    _fun80645_ip = 22;
-                    continue _fun80645
+                    _fun80691_ip = 22;
+                    continue _fun80691
                 }
             case 16:
                 var2 = 0;
@@ -127,15 +127,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 22:
                 var1 = var5 == var1;
                 if (var1) {
-                    _fun80645_ip = 49;
-                    continue _fun80645
+                    _fun80691_ip = 49;
+                    continue _fun80691
                 }
             case 29:
                 var3 = var5 == var4;
                 var2 = undefined;
                 if (var3) {
-                    _fun80645_ip = 45;
-                    continue _fun80645
+                    _fun80691_ip = 45;
+                    continue _fun80691
                 }
             case 38:
                 var3 = 1;
@@ -150,16 +150,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.bind(var0)(var2);
                 var2 = var3.setPendingThemeColors;
                 if (!var1) {
-                    _fun80645_ip = 92;
-                    continue _fun80645
+                    _fun80691_ip = 92;
+                    continue _fun80691
                 }
             case 80:
                 var1 = arg1;
                 var5 = var5 == var1;
                 var1 = undefined;
                 if (var5) {
-                    _fun80645_ip = 95;
-                    continue _fun80645
+                    _fun80691_ip = 95;
+                    continue _fun80691
                 }
             case 92:
                 var1 = var4;
@@ -170,21 +170,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setNewPendingGuildIdentityThemeColors = var3;
     var1 = function(arg0, arg1) { // Original name: canResetThemeColors, environment: var1
-        _fun80646: for (var _fun80646_ip = 0;;) switch (_fun80646_ip) {
+        _fun80692: for (var _fun80692_ip = 0;;) switch (_fun80692_ip) {
             case 0:
                 var4 = arg0;
                 var2 = undefined;
                 if (!(var2 !== var4)) {
-                    _fun80646_ip = 55;
-                    continue _fun80646
+                    _fun80692_ip = 55;
+                    continue _fun80692
                 }
             case 9:
                 var1 = null;
                 var3 = var1 == var4;
                 var0 = undefined;
                 if (var3) {
-                    _fun80646_ip = 26;
-                    continue _fun80646
+                    _fun80692_ip = 26;
+                    continue _fun80692
                 }
             case 20:
                 var3 = 0;
@@ -192,15 +192,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 26:
                 var0 = var1 != var0;
                 if (!var0) {
-                    _fun80646_ip = 53;
-                    continue _fun80646
+                    _fun80692_ip = 53;
+                    continue _fun80692
                 }
             case 33:
                 var3 = var1 == var4;
                 var2 = undefined;
                 if (var3) {
-                    _fun80646_ip = 49;
-                    continue _fun80646
+                    _fun80692_ip = 49;
+                    continue _fun80692
                 }
             case 42:
                 var3 = 1;
@@ -208,8 +208,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 49:
                 var0 = var1 != var2;
             case 53:
-                _fun80646_ip = 64;
-                continue _fun80646;
+                _fun80692_ip = 64;
+                continue _fun80692;
             case 55:
                 var2 = null;
                 var1 = arg1;
@@ -220,4 +220,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.canResetThemeColors = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5680, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5683, 2]);

@@ -8,29 +8,29 @@ public final class fe extends hf.a {
     public static final Parcelable.Creator<fe> CREATOR = new ge();
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f43038d;
+    private final int f43054d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f43039e;
+    private final List f43055e;
 
     public fe(int i10, List list) {
-        this.f43038d = i10;
-        this.f43039e = list;
+        this.f43054d = i10;
+        this.f43055e = list;
     }
 
     public final int b() {
-        return this.f43038d;
+        return this.f43054d;
     }
 
     public final List c() {
-        return this.f43039e;
+        return this.f43055e;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
         int a10 = hf.c.a(parcel);
-        hf.c.l(parcel, 1, this.f43038d);
-        hf.c.w(parcel, 2, this.f43039e, false);
+        hf.c.l(parcel, 1, this.f43054d);
+        hf.c.w(parcel, 2, this.f43055e, false);
         hf.c.b(parcel, a10);
     }
 }

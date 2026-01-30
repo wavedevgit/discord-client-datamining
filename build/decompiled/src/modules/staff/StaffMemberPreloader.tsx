@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/staff/StaffMemberPreloader.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Original name: preloadStaffMembers, environment: var1
-        _fun114568: for (var _fun114568_ip = 0;;) switch (_fun114568_ip) {
+        _fun114847: for (var _fun114847_ip = 0;;) switch (_fun114847_ip) {
             case 0:
                 var2 = _closure1_slot3;
                 var1 = var2.getCurrentUser;
@@ -44,16 +44,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = null;
                 var1 = var3 != var4;
                 if (!var1) {
-                    _fun114568_ip = 35;
-                    continue _fun114568
+                    _fun114847_ip = 35;
+                    continue _fun114847
                 }
             case 25:
                 var2 = var4.isStaff;
                 var1 = var2.bind(var4)();
             case 35:
                 if (!var1) {
-                    _fun114568_ip = 60;
-                    continue _fun114568
+                    _fun114847_ip = 60;
+                    continue _fun114847
                 }
             case 38:
                 var5 = _closure1_slot2;
@@ -63,8 +63,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3 != var2;
             case 60:
                 if (!var1) {
-                    _fun114568_ip = 110;
-                    continue _fun114568
+                    _fun114847_ip = 110;
+                    continue _fun114847
                 }
             case 63:
                 var3 = _closure1_slot0;
@@ -87,4 +87,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.preloadStaffMembers = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 1613, 14633, 4635, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 1613, 14662, 4641, 2]);

@@ -10,13 +10,13 @@ public interface DCDChatManagerInterface<T extends View> extends ViewManagerWith
 
     void scrollToBottom(T t10, boolean z10);
 
-    void setAdjustContentOffsetWithBounds(T t10, boolean z10);
+    void setAdjustContentOffsetWithBounds(T t10, Boolean bool);
 
-    void setAlwaysRespectKeyboard(T t10, boolean z10);
+    void setAlwaysRespectKeyboard(T t10, Boolean bool);
 
-    void setAnimateEmoji(T t10, boolean z10);
+    void setAnimateEmoji(T t10, Boolean bool);
 
-    void setHACK_fixModalInteraction(T t10, boolean z10);
+    void setHACK_fixModalInteraction(T t10, Boolean bool);
 
     void setInverted(T t10, boolean z10);
 

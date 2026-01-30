@@ -5,31 +5,31 @@ import android.view.MotionEvent;
 public class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private float f48455a;
+    private float f48471a;
 
     /* renamed from: b  reason: collision with root package name */
-    private float f48456b;
+    private float f48472b;
 
     /* renamed from: c  reason: collision with root package name */
-    private float f48457c;
+    private float f48473c;
 
     /* renamed from: d  reason: collision with root package name */
-    private float f48458d;
+    private float f48474d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f48459e = -1;
+    private int f48475e = -1;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f48460f = -1;
+    private int f48476f = -1;
 
     /* renamed from: g  reason: collision with root package name */
-    private float f48461g;
+    private float f48477g;
 
     /* renamed from: h  reason: collision with root package name */
-    private boolean f48462h;
+    private boolean f48478h;
 
     /* renamed from: i  reason: collision with root package name */
-    private a f48463i;
+    private a f48479i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface a {
@@ -41,7 +41,7 @@ public class h {
     }
 
     public h(a aVar) {
-        this.f48463i = aVar;
+        this.f48479i = aVar;
     }
 
     private float a(float f10, float f11, float f12, float f13, float f14, float f15, float f16, float f17) {
@@ -50,17 +50,17 @@ public class h {
 
     private float b(float f10, float f11) {
         float f12 = (f11 % 360.0f) - (f10 % 360.0f);
-        this.f48461g = f12;
+        this.f48477g = f12;
         if (f12 < -180.0f) {
-            this.f48461g = f12 + 360.0f;
+            this.f48477g = f12 + 360.0f;
         } else if (f12 > 180.0f) {
-            this.f48461g = f12 - 360.0f;
+            this.f48477g = f12 - 360.0f;
         }
-        return this.f48461g;
+        return this.f48477g;
     }
 
     public float c() {
-        return this.f48461g;
+        return this.f48477g;
     }
 
     public boolean d(MotionEvent motionEvent) {
@@ -71,46 +71,46 @@ public class h {
                 if (actionMasked != 2) {
                     if (actionMasked != 5) {
                         if (actionMasked == 6) {
-                            this.f48460f = -1;
+                            this.f48476f = -1;
                         }
                     } else {
-                        this.f48455a = motionEvent.getX();
-                        this.f48456b = motionEvent.getY();
-                        this.f48460f = motionEvent.findPointerIndex(motionEvent.getPointerId(motionEvent.getActionIndex()));
-                        this.f48461g = 0.0f;
-                        this.f48462h = true;
+                        this.f48471a = motionEvent.getX();
+                        this.f48472b = motionEvent.getY();
+                        this.f48476f = motionEvent.findPointerIndex(motionEvent.getPointerId(motionEvent.getActionIndex()));
+                        this.f48477g = 0.0f;
+                        this.f48478h = true;
                     }
-                } else if (this.f48459e != -1 && this.f48460f != -1 && motionEvent.getPointerCount() > this.f48460f) {
-                    float x10 = motionEvent.getX(this.f48459e);
-                    float y10 = motionEvent.getY(this.f48459e);
-                    float x11 = motionEvent.getX(this.f48460f);
-                    float y11 = motionEvent.getY(this.f48460f);
-                    if (this.f48462h) {
-                        this.f48461g = 0.0f;
-                        this.f48462h = false;
+                } else if (this.f48475e != -1 && this.f48476f != -1 && motionEvent.getPointerCount() > this.f48476f) {
+                    float x10 = motionEvent.getX(this.f48475e);
+                    float y10 = motionEvent.getY(this.f48475e);
+                    float x11 = motionEvent.getX(this.f48476f);
+                    float y11 = motionEvent.getY(this.f48476f);
+                    if (this.f48478h) {
+                        this.f48477g = 0.0f;
+                        this.f48478h = false;
                         hVar = this;
                     } else {
-                        a(this.f48455a, this.f48456b, this.f48457c, this.f48458d, x11, y11, x10, y10);
+                        a(this.f48471a, this.f48472b, this.f48473c, this.f48474d, x11, y11, x10, y10);
                         hVar = this;
                     }
-                    a aVar = hVar.f48463i;
+                    a aVar = hVar.f48479i;
                     if (aVar != null) {
                         aVar.a(this);
                     }
-                    hVar.f48455a = x11;
-                    hVar.f48456b = y11;
-                    hVar.f48457c = x10;
-                    hVar.f48458d = y10;
+                    hVar.f48471a = x11;
+                    hVar.f48472b = y11;
+                    hVar.f48473c = x10;
+                    hVar.f48474d = y10;
                 }
             } else {
-                this.f48459e = -1;
+                this.f48475e = -1;
             }
         } else {
-            this.f48457c = motionEvent.getX();
-            this.f48458d = motionEvent.getY();
-            this.f48459e = motionEvent.findPointerIndex(motionEvent.getPointerId(0));
-            this.f48461g = 0.0f;
-            this.f48462h = true;
+            this.f48473c = motionEvent.getX();
+            this.f48474d = motionEvent.getY();
+            this.f48475e = motionEvent.findPointerIndex(motionEvent.getPointerId(0));
+            this.f48477g = 0.0f;
+            this.f48478h = true;
         }
         return true;
     }

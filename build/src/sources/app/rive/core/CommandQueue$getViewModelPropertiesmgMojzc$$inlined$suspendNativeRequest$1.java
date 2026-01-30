@@ -81,7 +81,7 @@ public final class CommandQueue$getViewModelPropertiesmgMojzc$$inlined$suspendNa
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj2) {
                 invoke((Throwable) obj2);
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
 
             public final void invoke(Throwable th2) {
@@ -105,6 +105,6 @@ public final class CommandQueue$getViewModelPropertiesmgMojzc$$inlined$suspendNa
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(@NotNull CoroutineScope coroutineScope, Continuation<? super List<? extends ViewModel.Property>> continuation) {
-        return ((CommandQueue$getViewModelPropertiesmgMojzc$$inlined$suspendNativeRequest$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((CommandQueue$getViewModelPropertiesmgMojzc$$inlined$suspendNativeRequest$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

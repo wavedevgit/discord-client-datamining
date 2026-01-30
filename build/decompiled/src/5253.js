@@ -1,0 +1,41 @@
+// null
+module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var3 = require;
+    var2 = exports;
+    var4 = dependencyMap;
+    var _closure1_slot0 = var3;
+    var _closure1_slot1 = var4;
+    var5 = global;
+    var9 = var5.Object;
+    var7 = var9.defineProperty;
+    var6 = {};
+    var8 = true;
+    var6.value = var8;
+    var0 = '__esModule';
+    var0 = var7.bind(var9)(var2, var0, var6);
+    var0 = undefined;
+    var2.useClipboard = var0;
+    var7 = var5.Object;
+    var6 = var7.defineProperty;
+    var5 = {};
+    var5.enumerable = var8;
+    var1 = function() { // Original name: get, environment: var1
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 0;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.useClipboard;
+        return var0;
+    };
+    var5.get = var1;
+    var1 = 'useClipboard';
+    var1 = var6.bind(var7)(var2, var1, var5);
+    var1 = 1;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.Clipboard;
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5254, 5255]);

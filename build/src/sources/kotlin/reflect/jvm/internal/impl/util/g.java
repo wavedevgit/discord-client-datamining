@@ -9,7 +9,7 @@ import kotlin.reflect.jvm.internal.impl.util.ReturnsCheck;
 public class g implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final g f36088d = new g();
+    public static final g f36104d = new g();
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {

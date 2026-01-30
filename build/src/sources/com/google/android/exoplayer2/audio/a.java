@@ -44,7 +44,7 @@ public final class a {
     public static final class C0163a {
         private static final u a() {
             u.a i10 = new u.a().i(8, 7);
-            int i11 = w0.f40279a;
+            int i11 = w0.f40295a;
             if (i11 >= 31) {
                 i10.i(26, 27);
             }
@@ -79,7 +79,7 @@ public final class a {
             while (q10.hasNext()) {
                 Integer num = (Integer) q10.next();
                 int intValue = num.intValue();
-                if (w0.f40279a >= 34 || intValue != 30) {
+                if (w0.f40295a >= 34 || intValue != 30) {
                     if (AudioTrack.isDirectPlaybackSupported(new AudioFormat.Builder().setChannelMask(12).setEncoding(intValue).setSampleRate(48000).build(), f13217a)) {
                         j10.a(num);
                     }
@@ -111,8 +111,8 @@ public final class a {
     }
 
     private static boolean b() {
-        if (w0.f40279a >= 17) {
-            String str = w0.f40281c;
+        if (w0.f40295a >= 17) {
+            String str = w0.f40297c;
             if ("Amazon".equals(str) || "Xiaomi".equals(str)) {
                 return true;
             }
@@ -127,7 +127,7 @@ public final class a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static a d(Context context, Intent intent) {
-        int i10 = w0.f40279a;
+        int i10 = w0.f40295a;
         if (i10 >= 23 && C0163a.b(context)) {
             return f13212c;
         }
@@ -154,7 +154,7 @@ public final class a {
     }
 
     private static int e(int i10) {
-        int i11 = w0.f40279a;
+        int i11 = w0.f40295a;
         if (i11 <= 28) {
             if (i10 == 7) {
                 i10 = 8;
@@ -162,7 +162,7 @@ public final class a {
                 i10 = 6;
             }
         }
-        if (i11 <= 26 && "fugu".equals(w0.f40280b) && i10 == 1) {
+        if (i11 <= 26 && "fugu".equals(w0.f40296b) && i10 == 1) {
             i10 = 2;
         }
         return w0.H(i10);
@@ -177,7 +177,7 @@ public final class a {
     }
 
     private static int h(int i10, int i11) {
-        if (w0.f40279a >= 29) {
+        if (w0.f40295a >= 29) {
             return b.b(i10, i11);
         }
         return ((Integer) ne.a.e((Integer) f13214e.getOrDefault(Integer.valueOf(i10), 0))).intValue();

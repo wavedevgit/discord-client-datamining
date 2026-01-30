@@ -5,25 +5,25 @@ import java.util.Comparator;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Object f51988a = new s("provider");
+    private static final Object f52004a = new s("provider");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Object f51989b = new s("provider");
+    private static final Object f52005b = new s("provider");
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Object f51990c = new s("compositionLocalMap");
+    private static final Object f52006c = new s("compositionLocalMap");
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Object f51991d = new s("providerValues");
+    private static final Object f52007d = new s("providerValues");
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Object f51992e = new s("providers");
+    private static final Object f52008e = new s("providers");
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Object f51993f = new s("reference");
+    private static final Object f52009f = new s("reference");
 
     /* renamed from: g  reason: collision with root package name */
-    private static final Comparator f51994g = new Comparator() { // from class: w0.b
+    private static final Comparator f52010g = new Comparator() { // from class: w0.b
         @Override // java.util.Comparator
         public final int compare(Object obj, Object obj2) {
             int b10;

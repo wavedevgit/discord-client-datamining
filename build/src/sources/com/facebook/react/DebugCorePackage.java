@@ -22,7 +22,7 @@ import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class DebugCorePackage extends BaseReactPackage implements ViewManagerOnDemandReactPackage {
     @NotNull
-    private final Lazy viewManagersMap$delegate = ir.l.a(ir.o.f31104i, new Function0() { // from class: com.facebook.react.b
+    private final Lazy viewManagersMap$delegate = ir.l.a(ir.o.f31120i, new Function0() { // from class: com.facebook.react.b
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             Map viewManagersMap_delegate$lambda$1;

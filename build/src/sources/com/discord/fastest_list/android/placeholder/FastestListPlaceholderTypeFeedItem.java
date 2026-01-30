@@ -40,7 +40,7 @@ public final class FastestListPlaceholderTypeFeedItem extends FastestListPlaceho
         }
 
         private final float getRandomWidthRatio(float f10, float f11) {
-            return f10 + (c.f33372d.c() * (f11 - f10));
+            return f10 + (c.f33388d.c() * (f11 - f10));
         }
 
         static /* synthetic */ float getRandomWidthRatio$default(Companion companion, float f10, float f11, int i10, Object obj) {

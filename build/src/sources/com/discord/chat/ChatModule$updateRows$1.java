@@ -73,7 +73,7 @@ final class ChatModule$updateRows$1 extends k implements Function2<ChatListManag
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(ChatListManager chatListManager, Continuation<? super Unit> continuation) {
-        return ((ChatModule$updateRows$1) create(chatListManager, continuation)).invokeSuspend(Unit.f33282a);
+        return ((ChatModule$updateRows$1) create(chatListManager, continuation)).invokeSuspend(Unit.f33298a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -172,7 +172,7 @@ final class ChatModule$updateRows$1 extends k implements Function2<ChatListManag
             TTIMetrics.record$default(TTIMetrics.INSTANCE, "ChatModule.updateRows() Finish", 0L, null, false, 14, null);
             ChatModule.Companion companion3 = ChatModule.Companion;
             ChatModule.previousRowUpdateTag = this.$tag;
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }

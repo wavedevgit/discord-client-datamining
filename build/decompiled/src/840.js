@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
     var2 = function(arg0) { // Original name: getAsyncContextStrategy, environment: var0
-        _fun8877: for (var _fun8877_ip = 0;;) switch (_fun8877_ip) {
+        _fun8878: for (var _fun8878_ip = 0;;) switch (_fun8878_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot1;
@@ -28,8 +28,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var2.bind(var4)(var1);
                 var2 = var1.acs;
                 if (var2) {
-                    _fun8877_ip = 79;
-                    continue _fun8877
+                    _fun8878_ip = 79;
+                    continue _fun8878
                 }
             case 47:
                 var2 = _closure1_slot0;
@@ -39,8 +39,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var2.bind(var3)(var0);
                 var0 = var2.getStackAsyncContextStrategy;
                 var0 = var0.bind(var2)();
-                _fun8877_ip = 85;
-                continue _fun8877;
+                _fun8878_ip = 85;
+                continue _fun8878;
             case 79:
                 var0 = var1.acs;
             case 85:

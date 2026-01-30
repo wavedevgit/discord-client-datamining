@@ -3,9 +3,9 @@ package lh;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private static boolean f37369a;
+    private static boolean f37385a;
 
     public static boolean a() {
-        return f37369a;
+        return f37385a;
     }
 }

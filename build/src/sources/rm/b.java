@@ -15,40 +15,40 @@ import java.util.Set;
 public final class b implements h.e {
 
     /* renamed from: a  reason: collision with root package name */
-    final Class f48350a;
+    final Class f48366a;
 
     /* renamed from: b  reason: collision with root package name */
-    final String f48351b;
+    final String f48367b;
 
     /* renamed from: c  reason: collision with root package name */
-    final List f48352c;
+    final List f48368c;
 
     /* renamed from: d  reason: collision with root package name */
-    final List f48353d;
+    final List f48369d;
 
     /* renamed from: e  reason: collision with root package name */
-    final h f48354e;
+    final h f48370e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public class a extends h {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Object f48355a;
+        final /* synthetic */ Object f48371a;
 
         a(Object obj) {
-            this.f48355a = obj;
+            this.f48371a = obj;
         }
 
         @Override // com.squareup.moshi.h
         public Object fromJson(m mVar) {
             mVar.P();
-            return this.f48355a;
+            return this.f48371a;
         }
 
         @Override // com.squareup.moshi.h
         public void toJson(t tVar, Object obj) {
-            throw new IllegalArgumentException("Expected one of " + b.this.f48353d + " but found " + obj + ", a " + obj.getClass() + ". Register this subtype.");
+            throw new IllegalArgumentException("Expected one of " + b.this.f48369d + " but found " + obj + ", a " + obj.getClass() + ". Register this subtype.");
         }
     }
 
@@ -58,51 +58,51 @@ public final class b implements h.e {
     public static final class C0589b extends h {
 
         /* renamed from: a  reason: collision with root package name */
-        final String f48357a;
+        final String f48373a;
 
         /* renamed from: b  reason: collision with root package name */
-        final List f48358b;
+        final List f48374b;
 
         /* renamed from: c  reason: collision with root package name */
-        final List f48359c;
+        final List f48375c;
 
         /* renamed from: d  reason: collision with root package name */
-        final List f48360d;
+        final List f48376d;
 
         /* renamed from: e  reason: collision with root package name */
-        final h f48361e;
+        final h f48377e;
 
         /* renamed from: f  reason: collision with root package name */
-        final m.b f48362f;
+        final m.b f48378f;
 
         /* renamed from: g  reason: collision with root package name */
-        final m.b f48363g;
+        final m.b f48379g;
 
         C0589b(String str, List list, List list2, List list3, h hVar) {
-            this.f48357a = str;
-            this.f48358b = list;
-            this.f48359c = list2;
-            this.f48360d = list3;
-            this.f48361e = hVar;
-            this.f48362f = m.b.a(str);
-            this.f48363g = m.b.a((String[]) list.toArray(new String[0]));
+            this.f48373a = str;
+            this.f48374b = list;
+            this.f48375c = list2;
+            this.f48376d = list3;
+            this.f48377e = hVar;
+            this.f48378f = m.b.a(str);
+            this.f48379g = m.b.a((String[]) list.toArray(new String[0]));
         }
 
         private int a(m mVar) {
             mVar.r();
             while (mVar.hasNext()) {
-                if (mVar.A0(this.f48362f) == -1) {
+                if (mVar.A0(this.f48378f) == -1) {
                     mVar.E0();
                     mVar.P();
                 } else {
-                    int C0 = mVar.C0(this.f48363g);
-                    if (C0 == -1 && this.f48361e == null) {
-                        throw new j("Expected one of " + this.f48358b + " for key '" + this.f48357a + "' but found '" + mVar.e1() + "'. Register a subtype for this label.");
+                    int C0 = mVar.C0(this.f48379g);
+                    if (C0 == -1 && this.f48377e == null) {
+                        throw new j("Expected one of " + this.f48374b + " for key '" + this.f48373a + "' but found '" + mVar.e1() + "'. Register a subtype for this label.");
                     }
                     return C0;
                 }
             }
-            throw new j("Missing label for " + this.f48357a);
+            throw new j("Missing label for " + this.f48373a);
         }
 
         @Override // com.squareup.moshi.h
@@ -113,9 +113,9 @@ public final class b implements h.e {
                 int a10 = a(F);
                 F.close();
                 if (a10 == -1) {
-                    return this.f48361e.fromJson(mVar);
+                    return this.f48377e.fromJson(mVar);
                 }
-                return ((h) this.f48360d.get(a10)).fromJson(mVar);
+                return ((h) this.f48376d.get(a10)).fromJson(mVar);
             } catch (Throwable th2) {
                 F.close();
                 throw th2;
@@ -125,18 +125,18 @@ public final class b implements h.e {
         @Override // com.squareup.moshi.h
         public void toJson(t tVar, Object obj) {
             h hVar;
-            int indexOf = this.f48359c.indexOf(obj.getClass());
+            int indexOf = this.f48375c.indexOf(obj.getClass());
             if (indexOf == -1) {
-                hVar = this.f48361e;
+                hVar = this.f48377e;
                 if (hVar == null) {
-                    throw new IllegalArgumentException("Expected one of " + this.f48359c + " but found " + obj + ", a " + obj.getClass() + ". Register this subtype.");
+                    throw new IllegalArgumentException("Expected one of " + this.f48375c + " but found " + obj + ", a " + obj.getClass() + ". Register this subtype.");
                 }
             } else {
-                hVar = (h) this.f48360d.get(indexOf);
+                hVar = (h) this.f48376d.get(indexOf);
             }
             tVar.l();
-            if (hVar != this.f48361e) {
-                tVar.A0(this.f48357a).x1((String) this.f48358b.get(indexOf));
+            if (hVar != this.f48377e) {
+                tVar.A0(this.f48373a).x1((String) this.f48374b.get(indexOf));
             }
             int h10 = tVar.h();
             hVar.toJson(tVar, obj);
@@ -145,16 +145,16 @@ public final class b implements h.e {
         }
 
         public String toString() {
-            return "PolymorphicJsonAdapter(" + this.f48357a + ")";
+            return "PolymorphicJsonAdapter(" + this.f48373a + ")";
         }
     }
 
     b(Class cls, String str, List list, List list2, h hVar) {
-        this.f48350a = cls;
-        this.f48351b = str;
-        this.f48352c = list;
-        this.f48353d = list2;
-        this.f48354e = hVar;
+        this.f48366a = cls;
+        this.f48367b = str;
+        this.f48368c = list;
+        this.f48369d = list2;
+        this.f48370e = hVar;
     }
 
     private h a(Object obj) {
@@ -178,30 +178,30 @@ public final class b implements h.e {
 
     @Override // com.squareup.moshi.h.e
     public h create(Type type, Set set, w wVar) {
-        if (a0.g(type) == this.f48350a && set.isEmpty()) {
-            ArrayList arrayList = new ArrayList(this.f48353d.size());
-            int size = this.f48353d.size();
+        if (a0.g(type) == this.f48366a && set.isEmpty()) {
+            ArrayList arrayList = new ArrayList(this.f48369d.size());
+            int size = this.f48369d.size();
             for (int i10 = 0; i10 < size; i10++) {
-                arrayList.add(wVar.d((Type) this.f48353d.get(i10)));
+                arrayList.add(wVar.d((Type) this.f48369d.get(i10)));
             }
-            return new C0589b(this.f48351b, this.f48352c, this.f48353d, arrayList, this.f48354e).nullSafe();
+            return new C0589b(this.f48367b, this.f48368c, this.f48369d, arrayList, this.f48370e).nullSafe();
         }
         return null;
     }
 
     public b d(h hVar) {
-        return new b(this.f48350a, this.f48351b, this.f48352c, this.f48353d, hVar);
+        return new b(this.f48366a, this.f48367b, this.f48368c, this.f48369d, hVar);
     }
 
     public b e(Class cls, String str) {
         if (cls != null) {
             if (str != null) {
-                if (!this.f48352c.contains(str)) {
-                    ArrayList arrayList = new ArrayList(this.f48352c);
+                if (!this.f48368c.contains(str)) {
+                    ArrayList arrayList = new ArrayList(this.f48368c);
                     arrayList.add(str);
-                    ArrayList arrayList2 = new ArrayList(this.f48353d);
+                    ArrayList arrayList2 = new ArrayList(this.f48369d);
                     arrayList2.add(cls);
-                    return new b(this.f48350a, this.f48351b, arrayList, arrayList2, this.f48354e);
+                    return new b(this.f48366a, this.f48367b, arrayList, arrayList2, this.f48370e);
                 }
                 throw new IllegalArgumentException("Labels must be unique.");
             }

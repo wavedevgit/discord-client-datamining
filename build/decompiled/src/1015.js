@@ -12,7 +12,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var2.bind(var0)(var1);
     var2 = var1.prototype;
     var1 = function(arg0, arg1) { // Environment: var1
-        _fun10375: for (var _fun10375_ip = 0;;) switch (_fun10375_ip) {
+        _fun10376: for (var _fun10376_ip = 0;;) switch (_fun10376_ip) {
             case 0:
                 var5 = this;
                 var0 = undefined;
@@ -20,8 +20,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = arguments.length;
                 var4 = var5;
                 if (!var2) {
-                    _fun10375_ip = 34;
-                    continue _fun10375
+                    _fun10376_ip = 34;
+                    continue _fun10376
                 }
             case 16:
                 var3 = var5.then;

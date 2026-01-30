@@ -16,16 +16,16 @@ import rc.b0;
 public final class h0 implements j0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final DataSource.Factory f48199a;
+    private final DataSource.Factory f48215a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f48200b;
+    private final String f48216b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f48201c;
+    private final boolean f48217c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f48202d;
+    private final Map f48218d;
 
     public h0(String str, boolean z10, DataSource.Factory factory) {
         boolean z11;
@@ -35,10 +35,10 @@ public final class h0 implements j0 {
             z11 = true;
         }
         ne.a.a(z11);
-        this.f48199a = factory;
-        this.f48200b = str;
-        this.f48201c = z10;
-        this.f48202d = new HashMap();
+        this.f48215a = factory;
+        this.f48216b = str;
+        this.f48217c = z10;
+        this.f48218d = new HashMap();
     }
 
     private static byte[] c(DataSource.Factory factory, String str, byte[] bArr, Map map) {
@@ -83,15 +83,15 @@ public final class h0 implements j0 {
     public byte[] a(UUID uuid, b0.a aVar) {
         String str;
         String b10 = aVar.b();
-        if (this.f48201c || TextUtils.isEmpty(b10)) {
-            b10 = this.f48200b;
+        if (this.f48217c || TextUtils.isEmpty(b10)) {
+            b10 = this.f48216b;
         }
         if (!TextUtils.isEmpty(b10)) {
             HashMap hashMap = new HashMap();
-            UUID uuid2 = lc.d.f37057e;
+            UUID uuid2 = lc.d.f37073e;
             if (uuid2.equals(uuid)) {
                 str = "text/xml";
-            } else if (lc.d.f37055c.equals(uuid)) {
+            } else if (lc.d.f37071c.equals(uuid)) {
                 str = "application/json";
             } else {
                 str = "application/octet-stream";
@@ -100,10 +100,10 @@ public final class h0 implements j0 {
             if (uuid2.equals(uuid)) {
                 hashMap.put("SOAPAction", "http://schemas.microsoft.com/DRM/2007/03/protocols/AcquireLicense");
             }
-            synchronized (this.f48202d) {
-                hashMap.putAll(this.f48202d);
+            synchronized (this.f48218d) {
+                hashMap.putAll(this.f48218d);
             }
-            return c(this.f48199a, b10, aVar.a(), hashMap);
+            return c(this.f48215a, b10, aVar.a(), hashMap);
         }
         a.b bVar = new a.b();
         Uri uri = Uri.EMPTY;
@@ -112,14 +112,14 @@ public final class h0 implements j0 {
 
     @Override // rc.j0
     public byte[] b(UUID uuid, b0.d dVar) {
-        return c(this.f48199a, dVar.b() + "&signedRequest=" + w0.E(dVar.a()), null, Collections.EMPTY_MAP);
+        return c(this.f48215a, dVar.b() + "&signedRequest=" + w0.E(dVar.a()), null, Collections.EMPTY_MAP);
     }
 
     public void e(String str, String str2) {
         ne.a.e(str);
         ne.a.e(str2);
-        synchronized (this.f48202d) {
-            this.f48202d.put(str, str2);
+        synchronized (this.f48218d) {
+            this.f48218d.put(str, str2);
         }
     }
 }

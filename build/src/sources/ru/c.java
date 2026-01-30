@@ -12,14 +12,14 @@ import kotlin.jvm.internal.SpreadBuilder;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f48647a;
+    public static final c f48663a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Map f48648b;
+    private static final Map f48664b;
 
     static {
         c cVar = new c();
-        f48647a = cVar;
+        f48663a = cVar;
         Boolean bool = Boolean.TRUE;
         SpreadBuilder spreadBuilder = new SpreadBuilder(2);
         spreadBuilder.add(bool);
@@ -75,7 +75,7 @@ public final class c {
         spreadBuilder5.add(bool2);
         spreadBuilder5.add(CollectionsKt.l());
         spreadBuilder5.add(new tu.b(CollectionsKt.l()));
-        f48648b = o0.m(a10, a11, a12, a13, a14, a15, a16, a17, a18, a19, a20, a21, a22, a23, a24, a25, a26, a27, a28, a29, a30, a31, a32, a33, v.a(valueOf2, CollectionsKt.o(spreadBuilder5.toArray(new Object[spreadBuilder5.size()]))), v.a("0.0", CollectionsKt.o("0.0", valueOf2, 0, bool2)));
+        f48664b = o0.m(a10, a11, a12, a13, a14, a15, a16, a17, a18, a19, a20, a21, a22, a23, a24, a25, a26, a27, a28, a29, a30, a31, a32, a33, v.a(valueOf2, CollectionsKt.o(spreadBuilder5.toArray(new Object[spreadBuilder5.size()]))), v.a("0.0", CollectionsKt.o("0.0", valueOf2, 0, bool2)));
     }
 
     private c() {
@@ -130,6 +130,6 @@ public final class c {
     }
 
     public final List a(Object obj) {
-        return (List) f48648b.get(obj);
+        return (List) f48664b.get(obj);
     }
 }

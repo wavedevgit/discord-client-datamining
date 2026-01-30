@@ -11,10 +11,10 @@ public class LazyStringArrayList extends AbstractList<String> implements RandomA
     public static final LazyStringList EMPTY = new LazyStringArrayList().getUnmodifiableView();
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f35238d;
+    private final List f35254d;
 
     public LazyStringArrayList() {
-        this.f35238d = new ArrayList();
+        this.f35254d = new ArrayList();
     }
 
     private static ByteString b(Object obj) {
@@ -44,23 +44,23 @@ public class LazyStringArrayList extends AbstractList<String> implements RandomA
 
     @Override // java.util.AbstractList, java.util.AbstractCollection, java.util.Collection, java.util.List
     public void clear() {
-        this.f35238d.clear();
+        this.f35254d.clear();
         ((AbstractList) this).modCount++;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.LazyStringList
     public ByteString getByteString(int i10) {
-        Object obj = this.f35238d.get(i10);
+        Object obj = this.f35254d.get(i10);
         ByteString b10 = b(obj);
         if (b10 != obj) {
-            this.f35238d.set(i10, b10);
+            this.f35254d.set(i10, b10);
         }
         return b10;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.LazyStringList
     public List<?> getUnderlyingElements() {
-        return Collections.unmodifiableList(this.f35238d);
+        return Collections.unmodifiableList(this.f35254d);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.LazyStringList
@@ -70,12 +70,12 @@ public class LazyStringArrayList extends AbstractList<String> implements RandomA
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
     public int size() {
-        return this.f35238d.size();
+        return this.f35254d.size();
     }
 
     @Override // java.util.AbstractList, java.util.List
     public void add(int i10, String str) {
-        this.f35238d.add(i10, str);
+        this.f35254d.add(i10, str);
         ((AbstractList) this).modCount++;
     }
 
@@ -84,14 +84,14 @@ public class LazyStringArrayList extends AbstractList<String> implements RandomA
         if (collection instanceof LazyStringList) {
             collection = ((LazyStringList) collection).getUnderlyingElements();
         }
-        boolean addAll = this.f35238d.addAll(i10, collection);
+        boolean addAll = this.f35254d.addAll(i10, collection);
         ((AbstractList) this).modCount++;
         return addAll;
     }
 
     @Override // java.util.AbstractList, java.util.List
     public String get(int i10) {
-        Object obj = this.f35238d.get(i10);
+        Object obj = this.f35254d.get(i10);
         if (obj instanceof String) {
             return (String) obj;
         }
@@ -99,38 +99,38 @@ public class LazyStringArrayList extends AbstractList<String> implements RandomA
             ByteString byteString = (ByteString) obj;
             String stringUtf8 = byteString.toStringUtf8();
             if (byteString.isValidUtf8()) {
-                this.f35238d.set(i10, stringUtf8);
+                this.f35254d.set(i10, stringUtf8);
             }
             return stringUtf8;
         }
         byte[] bArr = (byte[]) obj;
         String stringUtf82 = Internal.toStringUtf8(bArr);
         if (Internal.isValidUtf8(bArr)) {
-            this.f35238d.set(i10, stringUtf82);
+            this.f35254d.set(i10, stringUtf82);
         }
         return stringUtf82;
     }
 
     @Override // java.util.AbstractList, java.util.List
     public String remove(int i10) {
-        Object remove = this.f35238d.remove(i10);
+        Object remove = this.f35254d.remove(i10);
         ((AbstractList) this).modCount++;
         return c(remove);
     }
 
     @Override // java.util.AbstractList, java.util.List
     public String set(int i10, String str) {
-        return c(this.f35238d.set(i10, str));
+        return c(this.f35254d.set(i10, str));
     }
 
     public LazyStringArrayList(LazyStringList lazyStringList) {
-        this.f35238d = new ArrayList(lazyStringList.size());
+        this.f35254d = new ArrayList(lazyStringList.size());
         addAll(lazyStringList);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.protobuf.LazyStringList
     public void add(ByteString byteString) {
-        this.f35238d.add(byteString);
+        this.f35254d.add(byteString);
         ((AbstractList) this).modCount++;
     }
 }

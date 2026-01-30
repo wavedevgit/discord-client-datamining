@@ -1,70 +1,45 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var2 = global;
-    var5 = var2.Object;
+    var0 = global;
+    var5 = var0.Object;
     var4 = var5.defineProperty;
     var3 = {};
-    var2 = true;
-    var3.value = var2;
-    var2 = '__esModule';
-    var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = function(arg0) { // Original name: getAsyncContextStrategy, environment: var0
-        _fun99470: for (var _fun99470_ip = 0;;) switch (_fun99470_ip) {
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var5)(var1, var0, var3);
+    var0 = ['fatal', 'error', 'warning', 'log', 'info', 'debug'];
+    var _closure1_slot0 = var0;
+    var2 = function(arg0) { // Original name: severityLevelFromString, environment: var2
+        _fun99586: for (var _fun99586_ip = 0;;) switch (_fun99586_ip) {
             case 0:
-                var2 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var1 = 0;
-                var1 = var3[var1];
-                var3 = undefined;
-                var4 = var2.bind(var3)(var1);
-                var2 = var4.getSentryCarrier;
-                var1 = arg0;
-                var1 = var2.bind(var4)(var1);
-                var2 = var1.acs;
-                if (var2) {
-                    _fun99470_ip = 79;
-                    continue _fun99470
+                var2 = arg0;
+                var0 = 'warning';
+                var1 = 'warn';
+                if (!(var1 !== var2)) {
+                    _fun99586_ip = 45;
+                    continue _fun99586
                 }
-            case 47:
-                var2 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var0 = 1;
-                var0 = var4[var0];
-                var2 = var2.bind(var3)(var0);
-                var0 = var2.getStackAsyncContextStrategy;
-                var0 = var0.bind(var2)();
-                _fun99470_ip = 85;
-                continue _fun99470;
-            case 79:
-                var0 = var1.acs;
-            case 85:
+            case 15:
+                var3 = _closure1_slot0;
+                var1 = var3.includes;
+                var3 = var1.bind(var3)(var2);
+                var1 = 'log';
+                if (!var3) {
+                    _fun99586_ip = 42;
+                    continue _fun99586
+                }
+            case 39:
+                var1 = var2;
+            case 42:
+                var0 = var1;
+            case 45:
                 return var0;
         }
     };
-    var1.getAsyncContextStrategy = var2;
-    var0 = function(arg0) { // Original name: setAsyncContextStrategy, environment: var0
-        var2 = _closure1_slot0;
-        var4 = _closure1_slot1;
-        var1 = 0;
-        var3 = var4[var1];
-        var0 = undefined;
-        var5 = var2.bind(var0)(var3);
-        var3 = var5.getMainCarrier;
-        var3 = var3.bind(var5)();
-        var1 = var4[var1];
-        var2 = var2.bind(var0)(var1);
-        var1 = var2.getSentryCarrier;
-        var2 = var1.bind(var2)(var3);
-        var1 = arg0;
-        var2.acs = var1;
-        return var0;
-    };
-    var1.setAsyncContextStrategy = var0;
+    var1.severityLevelFromString = var2;
+    var1.validSeverityLevels = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12920, 12922]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

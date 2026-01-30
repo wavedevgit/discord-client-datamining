@@ -357,7 +357,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var5.VIRTUAL_CURRENCY_MOBILE_ONBOARDING;
         var0.groupName = var5;
         var4 = function(arg0) { // Original name: children, environment: var4
-            _fun87247: for (var _fun87247_ip = 0;;) switch (_fun87247_ip) {
+            _fun87293: for (var _fun87293_ip = 0;;) switch (_fun87293_ip) {
                 case 0:
                     var1 = arg0;
                     var2 = var1.visibleContent;
@@ -372,8 +372,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var1.DismissibleContent;
                     var1 = var1.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL;
                     if (!(var2 !== var1)) {
-                        _fun87247_ip = 66;
-                        continue _fun87247
+                        _fun87293_ip = 66;
+                        continue _fun87293
                     }
                 case 62:
                     var1 = null;
@@ -469,7 +469,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/virtual_currency/native/BalanceWidgetMenu.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function(arg0) { // Original name: BalanceWidgetMenuWrapper, environment: var3
-        _fun87249: for (var _fun87249_ip = 0;;) switch (_fun87249_ip) {
+        _fun87295: for (var _fun87295_ip = 0;;) switch (_fun87295_ip) {
             case 0:
                 var6 = arg0;
                 var7 = _closure1_slot0;
@@ -493,25 +493,25 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.bind(var2)(var0);
                 var1 = null;
                 if (!(var1 != var3)) {
-                    _fun87249_ip = 140;
-                    continue _fun87249
+                    _fun87295_ip = 140;
+                    continue _fun87295
                 }
             case 97:
                 var2 = _closure1_slot10;
                 var1 = 0;
                 if (!(!(var3 > var1))) {
-                    _fun87249_ip = 116;
-                    continue _fun87249
+                    _fun87295_ip = 116;
+                    continue _fun87295
                 }
             case 107:
                 if (var0) {
-                    _fun87249_ip = 116;
-                    continue _fun87249
+                    _fun87295_ip = 116;
+                    continue _fun87295
                 }
             case 110:
                 var1 = _closure1_slot13;
-                _fun87249_ip = 120;
-                continue _fun87249;
+                _fun87295_ip = 120;
+                continue _fun87295;
             case 116:
                 var1 = _closure1_slot15;
             case 120:
@@ -520,8 +520,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6;
                 var3 = copyDataProperties(var10, var9);
                 var0 = var2.bind(var4)(var1, var0);
-                _fun87249_ip = 232;
-                continue _fun87249;
+                _fun87295_ip = 232;
+                continue _fun87295;
             case 140:
                 var3 = _closure1_slot10;
                 var2 = _closure1_slot12;
@@ -554,4 +554,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.OrbsOnboardingMenuDismissibleContent = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 3242, 1369, 5184, 33, 4858, 1234, 3895, 5915, 1358, 795, 9933, 11219, 9953, 3237, 9500, 1307, 5536, 4554, 9492, 3171, 4055, 1297, 671, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 3242, 1369, 5190, 33, 4864, 1234, 3901, 5918, 1358, 795, 9938, 11225, 9959, 3237, 9505, 1307, 5540, 4560, 9497, 3171, 4061, 1297, 671, 2]);

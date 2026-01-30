@@ -11,13 +11,13 @@ import org.jetbrains.annotations.NotNull;
 public abstract class d extends io.sentry.rrweb.b {
 
     /* renamed from: i  reason: collision with root package name */
-    private b f30639i;
+    private b f30655i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
         public boolean a(d dVar, String str, e3 e3Var, ILogger iLogger) {
             if (str.equals("source")) {
-                dVar.f30639i = (b) y.c((b) e3Var.G0(iLogger, new b.a()), "");
+                dVar.f30655i = (b) y.c((b) e3Var.G0(iLogger, new b.a()), "");
                 return true;
             }
             return false;
@@ -62,12 +62,12 @@ public abstract class d extends io.sentry.rrweb.b {
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class c {
         public void a(d dVar, f3 f3Var, ILogger iLogger) {
-            f3Var.e("source").j(iLogger, dVar.f30639i);
+            f3Var.e("source").j(iLogger, dVar.f30655i);
         }
     }
 
     public d(b bVar) {
         super(io.sentry.rrweb.c.IncrementalSnapshot);
-        this.f30639i = bVar;
+        this.f30655i = bVar;
     }
 }

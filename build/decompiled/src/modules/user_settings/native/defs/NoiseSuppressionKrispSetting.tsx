@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var8.VOICE;
     var1.parent = var8;
     var8 = function() { // Original name: useNoiseSuppressionKrispSettingValue, environment: var7
-        _fun84296: for (var _fun84296_ip = 0;;) switch (_fun84296_ip) {
+        _fun84342: for (var _fun84342_ip = 0;;) switch (_fun84342_ip) {
             case 0:
                 var5 = _closure1_slot0;
                 var6 = _closure1_slot1;
@@ -87,23 +87,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3.bind(var4)(var1);
                 var1 = var1.NoiseSuppressionOpt;
                 if (var2) {
-                    _fun84296_ip = 140;
-                    continue _fun84296
+                    _fun84342_ip = 140;
+                    continue _fun84342
                 }
             case 121:
                 if (var0) {
-                    _fun84296_ip = 132;
-                    continue _fun84296
+                    _fun84342_ip = 132;
+                    continue _fun84342
                 }
             case 124:
                 var0 = var1.NONE;
-                _fun84296_ip = 138;
-                continue _fun84296;
+                _fun84342_ip = 138;
+                continue _fun84342;
             case 132:
                 var0 = var1.STANDARD;
             case 138:
-                _fun84296_ip = 146;
-                continue _fun84296;
+                _fun84342_ip = 146;
+                continue _fun84342;
             case 140:
                 var0 = var1.KRISP;
             case 146:
@@ -234,4 +234,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3435, 6965, 566, 10748, 1234, 8939, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3435, 6968, 566, 10754, 1234, 8943, 2]);

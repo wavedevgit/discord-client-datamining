@@ -28,14 +28,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/AccessibilityView/useAccessibilityViewIsModalToggle.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: useAccessibilityViewIsModalToggle, environment: var1
-        _fun37241: for (var _fun37241_ip = 0;;) switch (_fun37241_ip) {
+        _fun37292: for (var _fun37292_ip = 0;;) switch (_fun37292_ip) {
             case 0:
                 var2 = arg0;
                 var6 = var2.accessibilityViewIsModal;
                 var0 = undefined;
                 if (!(var6 === var0)) {
-                    _fun37241_ip = 19;
-                    continue _fun37241
+                    _fun37292_ip = 19;
+                    continue _fun37292
                 }
             case 17:
                 var6 = false;
@@ -54,28 +54,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3[0] = var6;
                 var3[1] = var2;
                 var2 = function() { // Environment: var1
-                    _fun37242: for (var _fun37242_ip = 0;;) switch (_fun37242_ip) {
+                    _fun37293: for (var _fun37293_ip = 0;;) switch (_fun37293_ip) {
                         case 0:
                             var1 = arguments[0];
                             var0 = undefined;
                             if (!(var1 === var0)) {
-                                _fun37242_ip = 16;
-                                continue _fun37242
+                                _fun37293_ip = 16;
+                                continue _fun37293
                             }
                         case 9:
                             var1 = _closure2_slot0;
                         case 16:
                             if (var1) {
-                                _fun37242_ip = 96;
-                                continue _fun37242
+                                _fun37293_ip = 96;
+                                continue _fun37293
                             }
                         case 22:
                             var1 = _closure2_slot2;
                             var5 = var1.current;
                             var1 = null;
                             if (!(var1 != var5)) {
-                                _fun37242_ip = 181;
-                                continue _fun37242
+                                _fun37293_ip = 181;
+                                continue _fun37293
                             }
                         case 40:
                             var1 = _closure2_slot2;
@@ -89,22 +89,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = new Array(1);
                             var1[0] = var5;
                             var1 = var3.bind(var4)(var1);
-                            _fun37242_ip = 181;
-                            continue _fun37242;
+                            _fun37293_ip = 181;
+                            continue _fun37293;
                         case 96:
                             var3 = _closure2_slot1;
                             var1 = null;
                             if (!(var1 != var3)) {
-                                _fun37242_ip = 183;
-                                continue _fun37242
+                                _fun37293_ip = 183;
+                                continue _fun37293
                             }
                         case 106:
                             var1 = _closure2_slot2;
                             var3 = var1.current;
                             var1 = _closure2_slot1;
                             if (!(var3 !== var1)) {
-                                _fun37242_ip = 181;
-                                continue _fun37242
+                                _fun37293_ip = 181;
+                                continue _fun37293
                             }
                         case 123:
                             var1 = _closure2_slot2;
@@ -161,4 +161,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4021, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4027, 2]);

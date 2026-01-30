@@ -11,7 +11,7 @@ public final class e {
     public static final e f7888a = new e();
 
     /* renamed from: b  reason: collision with root package name */
-    public static final ByteString f7889b = ByteString.f44363o.g("PRI * HTTP/2.0\r\n\r\nSM\r\n\r\n");
+    public static final ByteString f7889b = ByteString.f44379o.g("PRI * HTTP/2.0\r\n\r\nSM\r\n\r\n");
 
     /* renamed from: c  reason: collision with root package name */
     private static final String[] f7890c = {"DATA", "HEADERS", "PRIORITY", "RST_STREAM", "SETTINGS", "PUSH_PROMISE", "PING", "GOAWAY", "WINDOW_UPDATE", "CONTINUATION"};

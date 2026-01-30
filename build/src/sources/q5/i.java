@@ -3,10 +3,10 @@ package q5;
 public class i {
 
     /* renamed from: a  reason: collision with root package name */
-    Object f47012a;
+    Object f47028a;
 
     /* renamed from: b  reason: collision with root package name */
-    Object f47013b;
+    Object f47029b;
 
     private static boolean a(Object obj, Object obj2) {
         if (obj != obj2) {
@@ -19,8 +19,8 @@ public class i {
     }
 
     public void b(Object obj, Object obj2) {
-        this.f47012a = obj;
-        this.f47013b = obj2;
+        this.f47028a = obj;
+        this.f47029b = obj2;
     }
 
     public boolean equals(Object obj) {
@@ -28,7 +28,7 @@ public class i {
             return false;
         }
         b2.c cVar = (b2.c) obj;
-        if (!a(cVar.f7147a, this.f47012a) || !a(cVar.f7148b, this.f47013b)) {
+        if (!a(cVar.f7147a, this.f47028a) || !a(cVar.f7148b, this.f47029b)) {
             return false;
         }
         return true;
@@ -36,14 +36,14 @@ public class i {
 
     public int hashCode() {
         int hashCode;
-        Object obj = this.f47012a;
+        Object obj = this.f47028a;
         int i10 = 0;
         if (obj == null) {
             hashCode = 0;
         } else {
             hashCode = obj.hashCode();
         }
-        Object obj2 = this.f47013b;
+        Object obj2 = this.f47029b;
         if (obj2 != null) {
             i10 = obj2.hashCode();
         }
@@ -51,6 +51,6 @@ public class i {
     }
 
     public String toString() {
-        return "Pair{" + this.f47012a + " " + this.f47013b + "}";
+        return "Pair{" + this.f47028a + " " + this.f47029b + "}";
     }
 }

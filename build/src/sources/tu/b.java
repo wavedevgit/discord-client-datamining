@@ -5,24 +5,24 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f49941a;
+    private final Object f49957a;
 
     public b(Object obj) {
-        this.f49941a = obj;
+        this.f49957a = obj;
     }
 
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
-        if ((obj instanceof b) && Intrinsics.areEqual(this.f49941a, ((b) obj).f49941a)) {
+        if ((obj instanceof b) && Intrinsics.areEqual(this.f49957a, ((b) obj).f49957a)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        Object obj = this.f49941a;
+        Object obj = this.f49957a;
         if (obj == null) {
             return 0;
         }
@@ -30,7 +30,7 @@ public final class b {
     }
 
     public String toString() {
-        Object obj = this.f49941a;
+        Object obj = this.f49957a;
         return "SingleNestedValue(value=" + obj + ")";
     }
 }

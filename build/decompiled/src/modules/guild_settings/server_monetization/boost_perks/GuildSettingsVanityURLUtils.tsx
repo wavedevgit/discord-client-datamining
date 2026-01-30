@@ -29,49 +29,49 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_settings/server_monetization/boost_perks/GuildSettingsVanityURLUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Original name: getErrorMessageFromErrorCode, environment: var1
-        _fun114964: for (var _fun114964_ip = 0;;) switch (_fun114964_ip) {
+        _fun115243: for (var _fun115243_ip = 0;;) switch (_fun115243_ip) {
             case 0:
                 var2 = arg0;
                 var1 = _closure1_slot2;
                 var1 = var1.UNKNOWN_CHANNEL;
                 if (!(var1 !== var2)) {
-                    _fun114964_ip = 471;
-                    continue _fun114964
+                    _fun115243_ip = 471;
+                    continue _fun115243
                 }
             case 23:
                 var1 = _closure1_slot2;
                 var1 = var1.INVALID_PERMISSIONS;
                 if (!(var1 !== var2)) {
-                    _fun114964_ip = 410;
-                    continue _fun114964
+                    _fun115243_ip = 410;
+                    continue _fun115243
                 }
             case 40:
                 var1 = _closure1_slot2;
                 var1 = var1.INVALID_ACCESS;
                 if (!(var1 !== var2)) {
-                    _fun114964_ip = 349;
-                    continue _fun114964
+                    _fun115243_ip = 349;
+                    continue _fun115243
                 }
             case 57:
                 var1 = _closure1_slot2;
                 var1 = var1.VANITY_URL_REQUIRED_FOR_PUBLISHED_GUILDS;
                 if (!(var1 !== var2)) {
-                    _fun114964_ip = 288;
-                    continue _fun114964
+                    _fun115243_ip = 288;
+                    continue _fun115243
                 }
             case 74:
                 var1 = _closure1_slot2;
                 var1 = var1.VANITY_URL_EMPLOYEE_ONLY_GUILD_DISABLED;
                 if (!(var1 !== var2)) {
-                    _fun114964_ip = 227;
-                    continue _fun114964
+                    _fun115243_ip = 227;
+                    continue _fun115243
                 }
             case 91:
                 var1 = _closure1_slot2;
                 var1 = var1.VANITY_URL_REQUIREMENTS_NOT_MET;
                 if (!(var1 !== var2)) {
-                    _fun114964_ip = 166;
-                    continue _fun114964
+                    _fun115243_ip = 166;
+                    continue _fun115243
                 }
             case 105:
                 var5 = _closure1_slot0;
@@ -182,7 +182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getErrorMessageFromErrorCode = var3;
     var1 = function(arg0) { // Original name: canSeeVanityUrlSettings, environment: var1
-        _fun114965: for (var _fun114965_ip = 0;;) switch (_fun114965_ip) {
+        _fun115244: for (var _fun115244_ip = 0;;) switch (_fun115244_ip) {
             case 0:
                 var2 = arg0;
                 var4 = var2.features;
@@ -191,8 +191,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.VANITY_URL;
                 var0 = var3.bind(var4)(var0);
                 if (var0) {
-                    _fun114965_ip = 79;
-                    continue _fun114965
+                    _fun115244_ip = 79;
+                    continue _fun115244
                 }
             case 35:
                 var4 = var2.features;
@@ -201,8 +201,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.GUILD_WEB_PAGE_VANITY_URL;
                 var1 = var3.bind(var4)(var1);
                 if (!var1) {
-                    _fun114965_ip = 76;
-                    continue _fun114965
+                    _fun115244_ip = 76;
+                    continue _fun115244
                 }
             case 64:
                 var3 = var2.vanityURLCode;

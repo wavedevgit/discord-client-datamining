@@ -71,7 +71,7 @@ public class a2 implements SerialDescriptor, l {
         this.f6766f = new List[i12];
         this.f6768h = new boolean[i12];
         this.f6769i = kotlin.collections.o0.i();
-        ir.o oVar = ir.o.f31103e;
+        ir.o oVar = ir.o.f31119e;
         this.f6770j = ir.l.a(oVar, new Function0() { // from class: at.x1
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
@@ -233,7 +233,7 @@ public class a2 implements SerialDescriptor, l {
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public zs.k getKind() {
-        return l.a.f56102a;
+        return l.a.f56118a;
     }
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor

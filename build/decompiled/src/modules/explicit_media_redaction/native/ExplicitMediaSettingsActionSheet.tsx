@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/explicit_media_redaction/native/ExplicitMediaSettingsActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: ExplicitMediaSettingsActionSheet, environment: var1
-        _fun81182: for (var _fun81182_ip = 0;;) switch (_fun81182_ip) {
+        _fun81228: for (var _fun81228_ip = 0;;) switch (_fun81228_ip) {
             case 0:
                 var0 = arg0;
                 var16 = var0.title;
@@ -77,7 +77,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new Array(1);
                 var1[0] = var12;
                 var0 = function(arg0) { // Environment: var10
-                    _fun81183: for (var _fun81183_ip = 0;;) switch (_fun81183_ip) {
+                    _fun81229: for (var _fun81229_ip = 0;;) switch (_fun81229_ip) {
                         case 0:
                             var1 = arg0;
                             var _closure3_slot0 = var1;
@@ -93,8 +93,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var1.bind(var2)(var0);
                             var0 = null;
                             if (!(var0 != var1)) {
-                                _fun81183_ip = 83;
-                                continue _fun81183
+                                _fun81229_ip = 83;
+                                continue _fun81229
                             }
                         case 39:
                             var0 = var1.onPress;
@@ -145,8 +145,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = {};
                 var15 = null;
                 if (!(var15 == var13)) {
-                    _fun81182_ip = 233;
-                    continue _fun81182
+                    _fun81228_ip = 233;
+                    continue _fun81228
                 }
             case 201:
                 var15 = _closure1_slot0;
@@ -192,4 +192,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3237, 4887, 5167, 5379, 1311, 5378, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3237, 4893, 5173, 5383, 1311, 5382, 2]);

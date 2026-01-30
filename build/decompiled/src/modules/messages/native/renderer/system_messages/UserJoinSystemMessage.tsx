@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/UserJoinSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: createUserJoinSystemMessage, environment: var1
-        _fun55341: for (var _fun55341_ip = 0;;) switch (_fun55341_ip) {
+        _fun55386: for (var _fun55386_ip = 0;;) switch (_fun55386_ip) {
             case 0:
                 var3 = arg0;
                 var11 = var3.message;
@@ -70,8 +70,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var13 == var8;
                 var7 = undefined;
                 if (var0) {
-                    _fun55341_ip = 150;
-                    continue _fun55341
+                    _fun55386_ip = 150;
+                    continue _fun55386
                 }
             case 140:
                 var0 = var8.getGuildId;
@@ -80,15 +80,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var13 != var7;
                 var5 = undefined;
                 if (!var0) {
-                    _fun55341_ip = 327;
-                    continue _fun55341
+                    _fun55386_ip = 327;
+                    continue _fun55386
                 }
             case 162:
                 var0 = var13 != var8;
                 var5 = undefined;
                 if (!var0) {
-                    _fun55341_ip = 327;
-                    continue _fun55341
+                    _fun55386_ip = 327;
+                    continue _fun55386
                 }
             case 174:
                 var4 = _closure1_slot4;
@@ -96,8 +96,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.bind(var4)(var7);
                 var6 = var13 != var0;
                 if (!var6) {
-                    _fun55341_ip = 218;
-                    continue _fun55341
+                    _fun55386_ip = 218;
+                    continue _fun55386
                 }
             case 195:
                 var4 = var0.systemChannelFlags;
@@ -120,8 +120,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var23[var0](var22, var21, var20, var19, var18);
                 var5 = undefined;
                 if (!var0) {
-                    _fun55341_ip = 327;
-                    continue _fun55341
+                    _fun55386_ip = 327;
+                    continue _fun55386
                 }
             case 268:
                 var7 = _closure1_slot0;
@@ -164,8 +164,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = 'username';
                 var12 = null;
                 if (!(var18 === var15)) {
-                    _fun55341_ip = 442;
-                    continue _fun55341
+                    _fun55386_ip = 442;
+                    continue _fun55386
                 }
             case 439:
                 var12 = var14;
@@ -173,8 +173,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10.linkColor = var12;
                 var12 = null;
                 if (!var17) {
-                    _fun55341_ip = 455;
-                    continue _fun55341
+                    _fun55386_ip = 455;
+                    continue _fun55386
                 }
             case 452:
                 var12 = var16;
@@ -183,8 +183,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = 'dot';
                 var12 = var12 === var15;
                 if (!var12) {
-                    _fun55341_ip = 475;
-                    continue _fun55341
+                    _fun55386_ip = 475;
+                    continue _fun55386
                 }
             case 471:
                 var12 = var13 != var14;
@@ -222,4 +222,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createUserJoinSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1410, 660, 6634, 6647, 6654, 6657, 6660, 6635, 1234, 6636, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1410, 660, 6637, 6650, 6657, 6660, 6663, 6638, 1234, 6639, 2]);

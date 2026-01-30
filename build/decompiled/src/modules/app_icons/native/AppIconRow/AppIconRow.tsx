@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_icons/native/AppIconRow/AppIconRow.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: AppIconRow, environment: var1
-        _fun85298: for (var _fun85298_ip = 0;;) switch (_fun85298_ip) {
+        _fun85344: for (var _fun85344_ip = 0;;) switch (_fun85344_ip) {
             case 0:
                 var3 = arg0;
                 var1 = var3.icon;
@@ -167,13 +167,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.PremiumAppIconIds;
                 var3 = var3.PIRATE;
                 if (!(var4 !== var3)) {
-                    _fun85298_ip = 130;
-                    continue _fun85298
+                    _fun85344_ip = 130;
+                    continue _fun85344
                 }
             case 123:
                 var3 = var1.name;
-                _fun85298_ip = 188;
-                continue _fun85298;
+                _fun85344_ip = 188;
+                continue _fun85344;
             case 130:
                 var14 = _closure1_slot6;
                 var16 = _closure1_slot1;
@@ -204,26 +204,26 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.PremiumAppIconIds;
                 var2 = var2.BRAND_INVERTED;
                 if (!(var4 === var2)) {
-                    _fun85298_ip = 260;
-                    continue _fun85298
+                    _fun85344_ip = 260;
+                    continue _fun85344
                 }
             case 249:
                 if (var0) {
-                    _fun85298_ip = 260;
-                    continue _fun85298
+                    _fun85344_ip = 260;
+                    continue _fun85344
                 }
             case 252:
                 var0 = null;
                 if (!var10) {
-                    _fun85298_ip = 448;
-                    continue _fun85298
+                    _fun85344_ip = 448;
+                    continue _fun85344
                 }
             case 260:
                 var1 = var1.isHidden;
                 var0 = null;
                 if (var1) {
-                    _fun85298_ip = 448;
-                    continue _fun85298
+                    _fun85344_ip = 448;
+                    continue _fun85344
                 }
             case 274:
                 var3 = _closure1_slot5;
@@ -264,19 +264,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = 'radio';
                 var1.accessibilityRole = var11;
                 if (var10) {
-                    _fun85298_ip = 393;
-                    continue _fun85298
+                    _fun85344_ip = 393;
+                    continue _fun85344
                 }
             case 385:
                 if (!var9) {
-                    _fun85298_ip = 393;
-                    continue _fun85298
+                    _fun85344_ip = 393;
+                    continue _fun85344
                 }
             case 388:
                 var6 = null;
                 if (!var8) {
-                    _fun85298_ip = 436;
-                    continue _fun85298
+                    _fun85344_ip = 436;
+                    continue _fun85344
                 }
             case 393:
                 var9 = _closure1_slot5;
@@ -298,4 +298,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 33, 1234, 1297, 671, 7594, 22, 4854, 10953, 5380, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 33, 1234, 1297, 671, 7597, 22, 4860, 10959, 5384, 2]);

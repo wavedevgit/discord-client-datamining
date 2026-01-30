@@ -8,104 +8,104 @@ import kotlin.jvm.internal.Intrinsics;
 public final class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final c0 f32808a;
+    private final c0 f32824a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f32809b;
+    private final boolean f32825b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f32810c;
+    private final String f32826c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final long f32811d;
+    private final long f32827d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final long f32812e;
+    private final long f32828e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final long f32813f;
+    private final long f32829f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final int f32814g;
+    private final int f32830g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final long f32815h;
+    private final long f32831h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f32816i;
+    private final int f32832i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final int f32817j;
+    private final int f32833j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final Long f32818k;
+    private final Long f32834k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final Long f32819l;
+    private final Long f32835l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final Long f32820m;
+    private final Long f32836m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final Integer f32821n;
+    private final Integer f32837n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Integer f32822o;
+    private final Integer f32838o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Integer f32823p;
+    private final Integer f32839p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final List f32824q;
+    private final List f32840q;
 
     public i(c0 canonicalPath, boolean z10, String comment, long j10, long j11, long j12, int i10, long j13, int i11, int i12, Long l10, Long l11, Long l12, Integer num, Integer num2, Integer num3) {
         Intrinsics.checkNotNullParameter(canonicalPath, "canonicalPath");
         Intrinsics.checkNotNullParameter(comment, "comment");
-        this.f32808a = canonicalPath;
-        this.f32809b = z10;
-        this.f32810c = comment;
-        this.f32811d = j10;
-        this.f32812e = j11;
-        this.f32813f = j12;
-        this.f32814g = i10;
-        this.f32815h = j13;
-        this.f32816i = i11;
-        this.f32817j = i12;
-        this.f32818k = l10;
-        this.f32819l = l11;
-        this.f32820m = l12;
-        this.f32821n = num;
-        this.f32822o = num2;
-        this.f32823p = num3;
-        this.f32824q = new ArrayList();
+        this.f32824a = canonicalPath;
+        this.f32825b = z10;
+        this.f32826c = comment;
+        this.f32827d = j10;
+        this.f32828e = j11;
+        this.f32829f = j12;
+        this.f32830g = i10;
+        this.f32831h = j13;
+        this.f32832i = i11;
+        this.f32833j = i12;
+        this.f32834k = l10;
+        this.f32835l = l11;
+        this.f32836m = l12;
+        this.f32837n = num;
+        this.f32838o = num2;
+        this.f32839p = num3;
+        this.f32840q = new ArrayList();
     }
 
     public final i a(Integer num, Integer num2, Integer num3) {
-        return new i(this.f32808a, this.f32809b, this.f32810c, this.f32811d, this.f32812e, this.f32813f, this.f32814g, this.f32815h, this.f32816i, this.f32817j, this.f32818k, this.f32819l, this.f32820m, num, num2, num3);
+        return new i(this.f32824a, this.f32825b, this.f32826c, this.f32827d, this.f32828e, this.f32829f, this.f32830g, this.f32831h, this.f32832i, this.f32833j, this.f32834k, this.f32835l, this.f32836m, num, num2, num3);
     }
 
     public final c0 b() {
-        return this.f32808a;
+        return this.f32824a;
     }
 
     public final List c() {
-        return this.f32824q;
+        return this.f32840q;
     }
 
     public final long d() {
-        return this.f32812e;
+        return this.f32828e;
     }
 
     public final int e() {
-        return this.f32814g;
+        return this.f32830g;
     }
 
     public final Long f() {
-        Long l10 = this.f32820m;
+        Long l10 = this.f32836m;
         if (l10 != null) {
             return Long.valueOf(j.d(l10.longValue()));
         }
-        Integer num = this.f32823p;
+        Integer num = this.f32839p;
         if (num != null) {
             return Long.valueOf(num.intValue() * 1000);
         }
@@ -113,11 +113,11 @@ public final class i {
     }
 
     public final Long g() {
-        Long l10 = this.f32819l;
+        Long l10 = this.f32835l;
         if (l10 != null) {
             return Long.valueOf(j.d(l10.longValue()));
         }
-        Integer num = this.f32822o;
+        Integer num = this.f32838o;
         if (num != null) {
             return Long.valueOf(num.intValue() * 1000);
         }
@@ -125,31 +125,31 @@ public final class i {
     }
 
     public final Long h() {
-        Long l10 = this.f32818k;
+        Long l10 = this.f32834k;
         if (l10 != null) {
             return Long.valueOf(j.d(l10.longValue()));
         }
-        Integer num = this.f32821n;
+        Integer num = this.f32837n;
         if (num != null) {
             return Long.valueOf(num.intValue() * 1000);
         }
-        int i10 = this.f32817j;
+        int i10 = this.f32833j;
         if (i10 != -1) {
-            return j.c(this.f32816i, i10);
+            return j.c(this.f32832i, i10);
         }
         return null;
     }
 
     public final long i() {
-        return this.f32815h;
+        return this.f32831h;
     }
 
     public final long j() {
-        return this.f32813f;
+        return this.f32829f;
     }
 
     public final boolean k() {
-        return this.f32809b;
+        return this.f32825b;
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

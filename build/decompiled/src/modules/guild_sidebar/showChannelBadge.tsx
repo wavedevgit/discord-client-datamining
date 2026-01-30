@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'modules/guild_sidebar/showChannelBadge.tsx';
     var1 = var3.bind(var4)(var1);
     var1 = function(arg0) { // Original name: showChannelBadge, environment: var1
-        _fun103006: for (var _fun103006_ip = 0;;) switch (_fun103006_ip) {
+        _fun103262: for (var _fun103262_ip = 0;;) switch (_fun103262_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.mentionsCount;
@@ -30,43 +30,43 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var0 = var2 != var6;
                 if (!var0) {
-                    _fun103006_ip = 42;
-                    continue _fun103006
+                    _fun103262_ip = 42;
+                    continue _fun103262
                 }
             case 36:
                 var5 = 0;
                 var0 = var6 > var5;
             case 42:
                 if (var0) {
-                    _fun103006_ip = 48;
-                    continue _fun103006
+                    _fun103262_ip = 48;
+                    continue _fun103262
                 }
             case 45:
                 var0 = var1;
             case 48:
                 if (var0) {
-                    _fun103006_ip = 80;
-                    continue _fun103006
+                    _fun103262_ip = 80;
+                    continue _fun103262
                 }
             case 51:
                 var1 = var2 != var4;
                 if (!var1) {
-                    _fun103006_ip = 61;
-                    continue _fun103006
+                    _fun103262_ip = 61;
+                    continue _fun103262
                 }
             case 58:
                 var1 = !var4;
             case 61:
                 if (!var1) {
-                    _fun103006_ip = 68;
-                    continue _fun103006
+                    _fun103262_ip = 68;
+                    continue _fun103262
                 }
             case 64:
                 var1 = var2 != var3;
             case 68:
                 if (!var1) {
-                    _fun103006_ip = 77;
-                    continue _fun103006
+                    _fun103262_ip = 77;
+                    continue _fun103262
                 }
             case 71:
                 var2 = 0;

@@ -1,48 +1,27 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = function(arg0) { // Environment: var0
-        _fun94753: for (var _fun94753_ip = 0;;) switch (_fun94753_ip) {
+    var1 = function(arg0, arg1, arg2) { // Environment: var0
+        _fun94953: for (var _fun94953_ip = 0;;) switch (_fun94953_ip) {
             case 0:
-                var11 = arg0;
-                var1 = this;
-                if (var11) {
-                    _fun94753_ip = 11;
-                    continue _fun94753
+                var2 = arg0;
+                var0 = this;
+                var1 = global;
+                var1 = var1.Array;
+                var1 = var2 instanceof var1;
+                var4 = var2;
+                if (var1) {
+                    _fun94953_ip = 35;
+                    continue _fun94953
                 }
-            case 9:
-                var11 = {};
-            case 11:
-                var9 = var1.sequenceLevels;
-                var0 = false;
-                var5 = 0;
-                var3 = false;
-                var2 = false;
-                for (var6 in var9)
-                    case 33: {
-                        var12 = var3;
-                        var2 = var12;
-                        case 48: var14 = var6;
-                        var13 = var11[var14];
-                        var3 = true;
-                        if (var13) {
-                            _fun94753_ip = 33;
-                            continue _fun94753
-                        }
-                        case 60: var13 = var1.sequenceLevels;
-                        var13[var14] = var5;
-                        var3 = var12;
-                        _fun94753_ip = 33;
-                        continue _fun94753;
-                    }
-            case 75:
-                if (var2) {
-                    _fun94753_ip = 84;
-                    continue _fun94753
-                }
-            case 78:
-                var1.nextExpectedAction = var0;
-            case 84:
-                var0 = undefined;
+            case 24:
+                var1 = new Array(1);
+                var1[0] = var2;
+                var4 = var1;
+            case 35:
+                var3 = var0.bindMultiple;
+                var2 = arg1;
+                var1 = arg2;
+                var1 = var3.bind(var0)(var4, var2, var1);
                 return var0;
         }
     };

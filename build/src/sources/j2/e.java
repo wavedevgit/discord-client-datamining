@@ -9,10 +9,10 @@ import kotlin.text.StringsKt;
 public abstract class e extends m {
 
     /* renamed from: p  reason: collision with root package name */
-    public static final a f31839p = new a(null);
+    public static final a f31855p = new a(null);
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f31840o;
+    private final String f31856o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -24,7 +24,7 @@ public abstract class e extends m {
             Intrinsics.checkNotNullParameter(type, "type");
             try {
                 if (StringsKt.P(type, "androidx.credentials.TYPE_GET_PUBLIC_KEY_CREDENTIAL_DOM_EXCEPTION", false, 2, null)) {
-                    return d.f31837r.a(type, str);
+                    return d.f31853r.a(type, str);
                 }
                 throw new k2.b();
             } catch (k2.b unused) {
@@ -40,7 +40,7 @@ public abstract class e extends m {
     public e(String type, CharSequence charSequence) {
         super(type, charSequence);
         Intrinsics.checkNotNullParameter(type, "type");
-        this.f31840o = type;
+        this.f31856o = type;
         if (a().length() > 0) {
             return;
         }
@@ -48,6 +48,6 @@ public abstract class e extends m {
     }
 
     public String a() {
-        return this.f31840o;
+        return this.f31856o;
     }
 }

@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.useValue = var8;
     var8 = function(arg0) { // Original name: onFriendRequestsMutualFriendsSettingValueChange, environment: var7
-        _fun82264: for (var _fun82264_ip = 0;;) switch (_fun82264_ip) {
+        _fun82310: for (var _fun82310_ip = 0;;) switch (_fun82310_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot2;
@@ -109,8 +109,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var5.bind(var0)(var1);
                 var1 = arg0;
                 if (var1) {
-                    _fun82264_ip = 119;
-                    continue _fun82264
+                    _fun82310_ip = 119;
+                    continue _fun82310
                 }
             case 88:
                 var8 = var6.removeFlags;
@@ -118,8 +118,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var1.MUTUAL_FRIENDS;
                 var1 = var1.NO_RELATION;
                 var1 = var8.bind(var6)(var7, var5, var1);
-                _fun82264_ip = 141;
-                continue _fun82264;
+                _fun82310_ip = 141;
+                continue _fun82310;
             case 119:
                 var5 = var6.addFlag;
                 var4 = _closure1_slot4;
@@ -152,4 +152,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 6965, 660, 10325, 1348, 7185, 1384, 8939, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 6968, 660, 10331, 1348, 7188, 1384, 8943, 1234, 2]);

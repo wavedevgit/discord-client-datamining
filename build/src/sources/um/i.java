@@ -10,46 +10,46 @@ import um.e;
 public final class i implements e.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final q f50435a;
+    private final q f50451a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Function1 f50436b;
+    private Function1 f50452b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final j f50437c;
+    private final j f50453c;
 
     /* renamed from: d  reason: collision with root package name */
-    private i f50438d;
+    private i f50454d;
 
     public i(q workflow, Function1 handler, j workflowNode) {
         Intrinsics.checkNotNullParameter(workflow, "workflow");
         Intrinsics.checkNotNullParameter(handler, "handler");
         Intrinsics.checkNotNullParameter(workflowNode, "workflowNode");
-        this.f50435a = workflow;
-        this.f50436b = handler;
-        this.f50437c = workflowNode;
+        this.f50451a = workflow;
+        this.f50452b = handler;
+        this.f50453c = workflowNode;
     }
 
     public final r c(Object obj) {
-        return (r) this.f50436b.invoke(obj);
+        return (r) this.f50452b.invoke(obj);
     }
 
     public final k d() {
-        return this.f50437c.g();
+        return this.f50453c.g();
     }
 
     @Override // um.e.a
     /* renamed from: e */
     public i a() {
-        return this.f50438d;
+        return this.f50454d;
     }
 
     public final q f() {
-        return this.f50435a;
+        return this.f50451a;
     }
 
     public final j g() {
-        return this.f50437c;
+        return this.f50453c;
     }
 
     public final boolean h(q otherWorkflow, String key) {
@@ -60,17 +60,17 @@ public final class i implements e.a {
 
     public final Object i(tm.k workflow, Object obj) {
         Intrinsics.checkNotNullParameter(workflow, "workflow");
-        return this.f50437c.l(workflow, obj);
+        return this.f50453c.l(workflow, obj);
     }
 
     public final void j(Function1 newHandler) {
         Intrinsics.checkNotNullParameter(newHandler, "newHandler");
-        this.f50436b = (Function1) TypeIntrinsics.beforeCheckcastToFunctionOfArity(newHandler, 1);
+        this.f50452b = (Function1) TypeIntrinsics.beforeCheckcastToFunctionOfArity(newHandler, 1);
     }
 
     @Override // um.e.a
     /* renamed from: k */
     public void b(i iVar) {
-        this.f50438d = iVar;
+        this.f50454d = iVar;
     }
 }

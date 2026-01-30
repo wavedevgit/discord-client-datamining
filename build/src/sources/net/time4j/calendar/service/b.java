@@ -13,16 +13,16 @@ import kt.v;
 public final class b implements u {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String[] f40531a = new String[0];
+    private static final String[] f40547a = new String[0];
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Set f40532b;
+    private static final Set f40548b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Set f40533c;
+    private static final Set f40549c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Set f40534d;
+    private static final Set f40550d;
 
     static {
         String[] split = pt.e.h("calendar/names/generic/generic", Locale.ROOT).f("languages").split(" ");
@@ -30,7 +30,7 @@ public final class b implements u {
         Collections.addAll(hashSet, split);
         hashSet.add("");
         Set<String> unmodifiableSet = Collections.unmodifiableSet(hashSet);
-        f40533c = unmodifiableSet;
+        f40549c = unmodifiableSet;
         HashSet hashSet2 = new HashSet();
         for (String str : unmodifiableSet) {
             if (str.isEmpty()) {
@@ -39,7 +39,7 @@ public final class b implements u {
                 hashSet2.add(new Locale(str));
             }
         }
-        f40534d = Collections.unmodifiableSet(hashSet2);
+        f40550d = Collections.unmodifiableSet(hashSet2);
         HashSet hashSet3 = new HashSet();
         hashSet3.add("buddhist");
         hashSet3.add("chinese");
@@ -57,7 +57,7 @@ public final class b implements u {
         hashSet3.add("persian");
         hashSet3.add("roc");
         hashSet3.add("vietnam");
-        f40532b = Collections.unmodifiableSet(hashSet3);
+        f40548b = Collections.unmodifiableSet(hashSet3);
     }
 
     private static int c(String str) {
@@ -80,7 +80,7 @@ public final class b implements u {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static pt.e f(String str, Locale locale) {
         String str2 = "calendar/names/" + str + "/" + str;
-        if (!f40533c.contains(pt.d.a(locale))) {
+        if (!f40549c.contains(pt.d.a(locale))) {
             locale = Locale.ROOT;
         }
         return pt.e.h(str2, locale);
@@ -211,7 +211,7 @@ public final class b implements u {
                 return new String[]{str2};
             }
         }
-        return f40531a;
+        return f40547a;
     }
 
     @Override // kt.u
@@ -221,7 +221,7 @@ public final class b implements u {
 
     @Override // kt.u
     public String[] e(String str, Locale locale, v vVar, m mVar) {
-        return f40531a;
+        return f40547a;
     }
 
     @Override // kt.u
@@ -271,17 +271,17 @@ public final class b implements u {
 
     @Override // kt.u
     public boolean h(String str) {
-        return f40532b.contains(str);
+        return f40548b.contains(str);
     }
 
     @Override // kt.u
     public String[] j(String str, Locale locale, v vVar, m mVar) {
-        return f40531a;
+        return f40547a;
     }
 
     @Override // kt.u
     public String[] k(String str, Locale locale, v vVar, m mVar) {
-        return f40531a;
+        return f40547a;
     }
 
     public String toString() {

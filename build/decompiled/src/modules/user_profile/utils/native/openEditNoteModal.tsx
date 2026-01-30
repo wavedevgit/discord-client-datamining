@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/utils/native/openEditNoteModal.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: openEditNoteModal, environment: var1
-        _fun92226: for (var _fun92226_ip = 0;;) switch (_fun92226_ip) {
+        _fun92463: for (var _fun92463_ip = 0;;) switch (_fun92463_ip) {
             case 0:
                 var3 = _closure1_slot1;
                 var6 = _closure1_slot2;
@@ -48,8 +48,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var2)();
                 var2 = undefined;
                 if (!var1) {
-                    _fun92226_ip = 105;
-                    continue _fun92226
+                    _fun92463_ip = 105;
+                    continue _fun92463
                 }
             case 91:
                 var1 = {};
@@ -68,4 +68,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4518, 11951, 1307, 478, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4524, 11973, 1307, 478, 2]);

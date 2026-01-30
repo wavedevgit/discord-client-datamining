@@ -69,7 +69,7 @@ public class HiddenActivity extends Activity {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((ve.b) obj);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
     }
 
@@ -101,7 +101,7 @@ public class HiddenActivity extends Activity {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((g) obj);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
     }
 
@@ -134,7 +134,7 @@ public class HiddenActivity extends Activity {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((PendingIntent) obj);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
     }
 
@@ -166,7 +166,7 @@ public class HiddenActivity extends Activity {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((PendingIntent) obj);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
     }
 
@@ -206,7 +206,7 @@ public class HiddenActivity extends Activity {
     public static final void n(HiddenActivity hiddenActivity, Exception e10) {
         String str;
         Intrinsics.checkNotNullParameter(e10, "e");
-        if ((e10 instanceof ef.b) && m2.a.f37787b.d().contains(Integer.valueOf(((ef.b) e10).b()))) {
+        if ((e10 instanceof ef.b) && m2.a.f37803b.d().contains(Integer.valueOf(((ef.b) e10).b()))) {
             str = "GET_INTERRUPTED";
         } else {
             str = "GET_NO_CREDENTIALS";
@@ -252,7 +252,7 @@ public class HiddenActivity extends Activity {
     public static final void q(HiddenActivity hiddenActivity, Exception e10) {
         String str;
         Intrinsics.checkNotNullParameter(e10, "e");
-        if ((e10 instanceof ef.b) && m2.a.f37787b.d().contains(Integer.valueOf(((ef.b) e10).b()))) {
+        if ((e10 instanceof ef.b) && m2.a.f37803b.d().contains(Integer.valueOf(((ef.b) e10).b()))) {
             str = "CREATE_INTERRUPTED";
         } else {
             str = "CREATE_UNKNOWN";
@@ -298,7 +298,7 @@ public class HiddenActivity extends Activity {
     public static final void t(HiddenActivity hiddenActivity, Exception e10) {
         String str;
         Intrinsics.checkNotNullParameter(e10, "e");
-        if ((e10 instanceof ef.b) && m2.a.f37787b.d().contains(Integer.valueOf(((ef.b) e10).b()))) {
+        if ((e10 instanceof ef.b) && m2.a.f37803b.d().contains(Integer.valueOf(((ef.b) e10).b()))) {
             str = "CREATE_INTERRUPTED";
         } else {
             str = "CREATE_UNKNOWN";
@@ -344,7 +344,7 @@ public class HiddenActivity extends Activity {
     public static final void w(HiddenActivity hiddenActivity, Exception e10) {
         String str;
         Intrinsics.checkNotNullParameter(e10, "e");
-        if ((e10 instanceof ef.b) && m2.a.f37787b.d().contains(Integer.valueOf(((ef.b) e10).b()))) {
+        if ((e10 instanceof ef.b) && m2.a.f37803b.d().contains(Integer.valueOf(((ef.b) e10).b()))) {
             str = "GET_INTERRUPTED";
         } else {
             str = "GET_NO_CREDENTIALS";
@@ -362,7 +362,7 @@ public class HiddenActivity extends Activity {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void y(ResultReceiver resultReceiver, String str, String str2) {
-        m2.a.f37787b.e(resultReceiver, str, str2);
+        m2.a.f37803b.e(resultReceiver, str, str2);
         finish();
     }
 
@@ -371,7 +371,7 @@ public class HiddenActivity extends Activity {
         super.onActivityResult(i10, i11, intent);
         ResultReceiver resultReceiver = this.f3506d;
         if (resultReceiver != null) {
-            m2.a.f37787b.f(resultReceiver, i10, i11, intent);
+            m2.a.f37803b.f(resultReceiver, i10, i11, intent);
         }
         this.f3507e = false;
         finish();

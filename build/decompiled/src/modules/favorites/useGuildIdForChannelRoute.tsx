@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/favorites/useGuildIdForChannelRoute.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Original name: useGuildIdForChannelRoute, environment: var1
-        _fun35342: for (var _fun35342_ip = 0;;) switch (_fun35342_ip) {
+        _fun35393: for (var _fun35393_ip = 0;;) switch (_fun35393_ip) {
             case 0:
                 var2 = arg0;
                 var4 = _closure1_slot0;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3.bind(var4)(var1, var0);
                 var1 = null;
                 if (!(var1 == var0)) {
-                    _fun35342_ip = 74;
-                    continue _fun35342
+                    _fun35393_ip = 74;
+                    continue _fun35393
                 }
             case 64:
                 var1 = var2.getGuildId;
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var1 = function(arg0) { // Original name: getGuildIdForGenericRedirect, environment: var1
-        _fun35344: for (var _fun35344_ip = 0;;) switch (_fun35344_ip) {
+        _fun35395: for (var _fun35395_ip = 0;;) switch (_fun35395_ip) {
             case 0:
                 var2 = arg0;
                 var3 = _closure1_slot2;
@@ -78,8 +78,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0.bind(var3)();
                 var0 = _closure1_slot4;
                 if (!(var3 === var0)) {
-                    _fun35344_ip = 106;
-                    continue _fun35344
+                    _fun35395_ip = 106;
+                    continue _fun35395
                 }
             case 28:
                 var4 = _closure1_slot3;
@@ -87,15 +87,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.id;
                 var0 = var3.bind(var4)(var0);
                 if (var0) {
-                    _fun35344_ip = 100;
-                    continue _fun35344
+                    _fun35395_ip = 100;
+                    continue _fun35395
                 }
             case 51:
                 var0 = var2.isThread;
                 var0 = var0.bind(var2)();
                 if (!var0) {
-                    _fun35344_ip = 88;
-                    continue _fun35344
+                    _fun35395_ip = 88;
+                    continue _fun35395
                 }
             case 64:
                 var4 = _closure1_slot3;
@@ -103,19 +103,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.parent_id;
                 var0 = var3.bind(var4)(var0);
                 if (var0) {
-                    _fun35344_ip = 100;
-                    continue _fun35344
+                    _fun35395_ip = 100;
+                    continue _fun35395
                 }
             case 88:
                 var0 = var2.getGuildId;
                 var0 = var0.bind(var2)();
-                _fun35344_ip = 104;
-                continue _fun35344;
+                _fun35395_ip = 104;
+                continue _fun35395;
             case 100:
                 var0 = _closure1_slot4;
             case 104:
-                _fun35344_ip = 116;
-                continue _fun35344;
+                _fun35395_ip = 116;
+                continue _fun35395;
             case 106:
                 var1 = var2.getGuildId;
                 var0 = var1.bind(var2)();

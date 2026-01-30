@@ -67,30 +67,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var7.bind(var6)(var1);
         var1 = var2.useAnimatedStyle;
         var0 = function() { // Original name: c, environment: var0
-            _fun91373: for (var _fun91373_ip = 0;;) switch (_fun91373_ip) {
+            _fun91610: for (var _fun91610_ip = 0;;) switch (_fun91610_ip) {
                 case 0:
                     var0 = _closure2_slot0;
                     if (var0) {
-                        _fun91373_ip = 23;
-                        continue _fun91373
+                        _fun91610_ip = 23;
+                        continue _fun91610
                     }
                 case 10:
                     var0 = {};
                     var2 = 0;
                     var0.opacity = var2;
-                    _fun91373_ip = 243;
-                    continue _fun91373;
+                    _fun91610_ip = 243;
+                    continue _fun91610;
                 case 23:
                     var2 = _closure2_slot1;
                     if (!var2) {
-                        _fun91373_ip = 221;
-                        continue _fun91373
+                        _fun91610_ip = 221;
+                        continue _fun91610
                     }
                 case 33:
                     var1 = _closure2_slot2;
                     if (var1) {
-                        _fun91373_ip = 221;
-                        continue _fun91373
+                        _fun91610_ip = 221;
+                        continue _fun91610
                     }
                 case 43:
                     var1 = {};
@@ -128,8 +128,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = -1;
                     var2 = var4.bind(var5)(var3, var2);
                     var1.opacity = var2;
-                    _fun91373_ip = 240;
-                    continue _fun91373;
+                    _fun91610_ip = 240;
+                    continue _fun91610;
                 case 221:
                     var2 = {};
                     var3 = 0.7;
@@ -175,4 +175,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1298, 4840, 566, 3677, 4050, 4837, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1298, 4846, 566, 3679, 4056, 4843, 2]);

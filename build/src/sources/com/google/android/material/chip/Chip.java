@@ -46,7 +46,7 @@ import yg.k;
 import zg.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class Chip extends f implements a.InterfaceC0179a, n, Checkable {
-    private static final int H = j.f54513p;
+    private static final int H = j.f54529p;
     private static final Rect I = new Rect();
     private static final int[] J = {16842913};
     private static final int[] K = {16842911};
@@ -186,7 +186,7 @@ public class Chip extends f implements a.InterfaceC0179a, n, Checkable {
                 } else {
                     CharSequence text = Chip.this.getText();
                     Context context = Chip.this.getContext();
-                    int i11 = i.f54485k;
+                    int i11 = i.f54501k;
                     if (!TextUtils.isEmpty(text)) {
                         str = text;
                     }
@@ -211,7 +211,7 @@ public class Chip extends f implements a.InterfaceC0179a, n, Checkable {
     }
 
     public Chip(Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, yg.b.f54340f);
+        this(context, attributeSet, yg.b.f54356f);
     }
 
     private void A() {
@@ -365,8 +365,8 @@ public class Chip extends f implements a.InterfaceC0179a, n, Checkable {
     }
 
     private void o(Context context, AttributeSet attributeSet, int i10) {
-        TypedArray i11 = l.i(context, attributeSet, k.f54744x0, i10, H, new int[0]);
-        this.f15846y = i11.getBoolean(k.f54556d1, false);
+        TypedArray i11 = l.i(context, attributeSet, k.f54760x0, i10, H, new int[0]);
+        this.f15846y = i11.getBoolean(k.f54572d1, false);
         this.A = (int) Math.ceil(i11.getDimension(k.R0, (float) Math.ceil(o.d(getContext(), 48))));
         i11.recycle();
     }
@@ -419,7 +419,7 @@ public class Chip extends f implements a.InterfaceC0179a, n, Checkable {
     }
 
     private void y() {
-        if (mh.b.f39065a) {
+        if (mh.b.f39081a) {
             z();
             return;
         }
@@ -1664,13 +1664,13 @@ public class Chip extends f implements a.InterfaceC0179a, n, Checkable {
             r6.setChipDrawable(r7)
             float r1 = androidx.core.view.h0.u(r6)
             r7.W(r1)
-            int[] r2 = yg.k.f54744x0
+            int[] r2 = yg.k.f54760x0
             r1 = 0
             int[] r5 = new int[r1]
             r1 = r8
             r3 = r9
             android.content.res.TypedArray r8 = com.google.android.material.internal.l.i(r0, r1, r2, r3, r4, r5)
-            int r9 = yg.k.f54606i1
+            int r9 = yg.k.f54622i1
             boolean r9 = r8.hasValue(r9)
             r8.recycle()
             com.google.android.material.chip.Chip$c r8 = new com.google.android.material.chip.Chip$c

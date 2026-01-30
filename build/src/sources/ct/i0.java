@@ -63,7 +63,7 @@ public abstract class i0 {
 
     private static final void c(Map map, SerialDescriptor serialDescriptor, String str, int i10) {
         String str2;
-        if (Intrinsics.areEqual(serialDescriptor.getKind(), k.b.f56101a)) {
+        if (Intrinsics.areEqual(serialDescriptor.getKind(), k.b.f56117a)) {
             str2 = "enum value";
         } else {
             str2 = "property";
@@ -76,7 +76,7 @@ public abstract class i0 {
     }
 
     private static final boolean d(Json json, SerialDescriptor serialDescriptor) {
-        if (json.e().h() && Intrinsics.areEqual(serialDescriptor.getKind(), k.b.f56101a)) {
+        if (json.e().h() && Intrinsics.areEqual(serialDescriptor.getKind(), k.b.f56117a)) {
             return true;
         }
         return false;
@@ -158,7 +158,7 @@ public abstract class i0 {
     public static final bt.u m(SerialDescriptor serialDescriptor, Json json) {
         Intrinsics.checkNotNullParameter(serialDescriptor, "<this>");
         Intrinsics.checkNotNullParameter(json, "json");
-        if (Intrinsics.areEqual(serialDescriptor.getKind(), l.a.f56102a)) {
+        if (Intrinsics.areEqual(serialDescriptor.getKind(), l.a.f56118a)) {
             json.e().l();
         }
         return null;

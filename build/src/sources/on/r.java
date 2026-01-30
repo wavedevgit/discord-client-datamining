@@ -18,40 +18,40 @@ import kotlinx.coroutines.CoroutineScope;
 public final class r {
 
     /* renamed from: k  reason: collision with root package name */
-    public static final a f44580k = new a(null);
+    public static final a f44596k = new a(null);
 
     /* renamed from: l  reason: collision with root package name */
-    private static final boolean f44581l = true;
+    private static final boolean f44597l = true;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f44582a;
+    private final Context f44598a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final l f44583b;
+    private final l f44599b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f44584c;
+    private final int f44600c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f44585d;
+    private final int f44601d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f44586e;
+    private final boolean f44602e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Function0 f44587f;
+    private Function0 f44603f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Surface f44588g;
+    private final Surface f44604g;
 
     /* renamed from: h  reason: collision with root package name */
-    private File f44589h;
+    private File f44605h;
 
     /* renamed from: i  reason: collision with root package name */
-    private MediaRecorder f44590i;
+    private MediaRecorder f44606i;
 
     /* renamed from: j  reason: collision with root package name */
-    private boolean f44591j;
+    private boolean f44607j;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -68,7 +68,7 @@ public final class r {
     public static final class b extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f44592d;
+        int f44608d;
 
         b(Continuation continuation) {
             super(2, continuation);
@@ -82,23 +82,23 @@ public final class r {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             or.b.f();
-            if (this.f44592d == 0) {
+            if (this.f44608d == 0) {
                 kotlin.c.b(obj);
                 try {
-                    r.this.f44590i.start();
+                    r.this.f44606i.start();
                 } catch (IllegalStateException unused) {
-                    r.this.f44590i.reset();
+                    r.this.f44606i.reset();
                     r.this.k(false);
-                    r.this.f44590i.start();
+                    r.this.f44606i.start();
                 }
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -107,7 +107,7 @@ public final class r {
     public static final class c extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f44594d;
+        int f44610d;
 
         c(Continuation continuation) {
             super(2, continuation);
@@ -122,18 +122,18 @@ public final class r {
         public final Object invokeSuspend(Object obj) {
             File file;
             or.b.f();
-            if (this.f44594d == 0) {
+            if (this.f44610d == 0) {
                 kotlin.c.b(obj);
                 try {
-                    r.this.f44590i.stop();
-                    file = r.this.f44589h;
+                    r.this.f44606i.stop();
+                    file = r.this.f44605h;
                 } catch (RuntimeException unused) {
-                    r.this.f44589h.delete();
+                    r.this.f44605h.delete();
                     file = null;
                 }
-                r.this.f44590i.release();
+                r.this.f44606i.release();
                 r rVar = r.this;
-                rVar.f44590i = rVar.j();
+                rVar.f44606i = rVar.j();
                 r.this.k(false);
                 return file;
             }
@@ -142,7 +142,7 @@ public final class r {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -150,23 +150,23 @@ public final class r {
         Surface surface;
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(cameraChoice, "cameraChoice");
-        this.f44582a = context;
-        this.f44583b = cameraChoice;
-        this.f44584c = i10;
-        this.f44585d = i11;
-        this.f44586e = z10;
-        if (f44581l) {
+        this.f44598a = context;
+        this.f44599b = cameraChoice;
+        this.f44600c = i10;
+        this.f44601d = i11;
+        this.f44602e = z10;
+        if (f44597l) {
             surface = MediaCodec.createPersistentInputSurface();
         } else {
             surface = null;
         }
-        this.f44588g = surface;
-        this.f44589h = i();
-        this.f44590i = j();
+        this.f44604g = surface;
+        this.f44605h = i();
+        this.f44606i = j();
     }
 
     private final int g() {
-        int width = this.f44583b.f().getWidth() * this.f44583b.f().getHeight();
+        int width = this.f44599b.f().getWidth() * this.f44599b.f().getHeight();
         if (width <= 172800) {
             return 400000;
         }
@@ -186,7 +186,7 @@ public final class r {
     }
 
     private final File i() {
-        File cacheDir = this.f44582a.getCacheDir();
+        File cacheDir = this.f44598a.getCacheDir();
         long currentTimeMillis = System.currentTimeMillis();
         return new File(cacheDir, "video_recording_" + currentTimeMillis + ".mp4");
     }
@@ -195,7 +195,7 @@ public final class r {
     public final MediaRecorder j() {
         if (Build.VERSION.SDK_INT >= 31) {
             q.a();
-            return p.a(this.f44582a);
+            return p.a(this.f44598a);
         }
         return new MediaRecorder();
     }
@@ -203,7 +203,7 @@ public final class r {
     /* JADX INFO: Access modifiers changed from: private */
     public final void k(boolean z10) {
         if (!z10) {
-            this.f44589h = i();
+            this.f44605h = i();
         }
         m(z10);
     }
@@ -211,36 +211,36 @@ public final class r {
     private final void m(boolean z10) {
         boolean z11;
         Function0 function0;
-        if (jp.f.f(this.f44582a) && this.f44586e) {
+        if (jp.f.f(this.f44598a) && this.f44602e) {
             z11 = true;
         } else {
             z11 = false;
         }
-        this.f44590i.setVideoSource(2);
+        this.f44606i.setVideoSource(2);
         if (z11) {
-            this.f44590i.setAudioSource(1);
+            this.f44606i.setAudioSource(1);
         }
-        this.f44590i.setOutputFormat(2);
-        this.f44590i.setVideoFrameRate(this.f44584c);
-        this.f44590i.setVideoSize(this.f44583b.f().getWidth(), this.f44583b.f().getHeight());
-        this.f44590i.setVideoEncoder(2);
-        this.f44590i.setVideoEncodingBitRate(g());
+        this.f44606i.setOutputFormat(2);
+        this.f44606i.setVideoFrameRate(this.f44600c);
+        this.f44606i.setVideoSize(this.f44599b.f().getWidth(), this.f44599b.f().getHeight());
+        this.f44606i.setVideoEncoder(2);
+        this.f44606i.setVideoEncodingBitRate(g());
         if (z11) {
             mn.c a10 = mn.d.a();
             if (a10 != null) {
-                this.f44590i.setAudioSamplingRate(a10.a());
-                this.f44590i.setAudioChannels(1);
+                this.f44606i.setAudioSamplingRate(a10.a());
+                this.f44606i.setAudioChannels(1);
             }
-            this.f44590i.setAudioEncoder(3);
+            this.f44606i.setAudioEncoder(3);
         }
-        this.f44590i.setOrientationHint(this.f44585d);
-        boolean z12 = f44581l;
+        this.f44606i.setOrientationHint(this.f44601d);
+        boolean z12 = f44597l;
         if (z12) {
-            this.f44590i.setInputSurface(h());
+            this.f44606i.setInputSurface(h());
         }
-        this.f44590i.setOutputFile(this.f44589h.getAbsolutePath());
-        this.f44590i.prepare();
-        if (!z12 && !z10 && (function0 = this.f44587f) != null) {
+        this.f44606i.setOutputFile(this.f44605h.getAbsolutePath());
+        this.f44606i.prepare();
+        if (!z12 && !z10 && (function0 = this.f44603f) != null) {
             function0.invoke();
         }
     }
@@ -251,19 +251,19 @@ public final class r {
         } catch (RuntimeException unused) {
         }
         try {
-            this.f44590i.stop();
+            this.f44606i.stop();
         } catch (RuntimeException unused2) {
         } catch (Throwable th2) {
-            this.f44589h.delete();
+            this.f44605h.delete();
             throw th2;
         }
-        this.f44589h.delete();
+        this.f44605h.delete();
     }
 
     public final Surface h() {
-        Surface surface = this.f44588g;
+        Surface surface = this.f44604g;
         if (surface == null) {
-            Surface surface2 = this.f44590i.getSurface();
+            Surface surface2 = this.f44606i.getSurface();
             Intrinsics.checkNotNullExpressionValue(surface2, "getSurface(...)");
             return surface2;
         }
@@ -271,15 +271,15 @@ public final class r {
     }
 
     public final void l() {
-        if (this.f44591j) {
+        if (this.f44607j) {
             return;
         }
-        this.f44591j = true;
+        this.f44607j = true;
         k(true);
     }
 
     public final void n(Function0 function0) {
-        this.f44587f = function0;
+        this.f44603f = function0;
     }
 
     public final Object o(Continuation continuation) {
@@ -287,7 +287,7 @@ public final class r {
         if (g10 == or.b.f()) {
             return g10;
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     public final Object p(Continuation continuation) {

@@ -18,7 +18,7 @@ public abstract class a5 {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f53501a;
+        public static final /* synthetic */ int[] f53517a;
 
         static {
             int[] iArr = new int[StyleElements.PositionType.values().length];
@@ -30,7 +30,7 @@ public abstract class a5 {
                 iArr[StyleElements.PositionType.END.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
-            f53501a = iArr;
+            f53517a = iArr;
         }
     }
 
@@ -186,7 +186,7 @@ public abstract class a5 {
             if (positionType == null) {
                 i13 = -1;
             } else {
-                i13 = a.f53501a[positionType.ordinal()];
+                i13 = a.f53517a[positionType.ordinal()];
             }
             if (i13 != 1) {
                 if (i13 != 2) {
@@ -325,7 +325,7 @@ public abstract class a5 {
             if (positionType == null) {
                 i11 = -1;
             } else {
-                i11 = a.f53501a[positionType.ordinal()];
+                i11 = a.f53517a[positionType.ordinal()];
             }
             if (i11 != 1) {
                 if (i11 != 2) {

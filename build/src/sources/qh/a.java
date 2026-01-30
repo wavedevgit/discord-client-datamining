@@ -9,7 +9,7 @@ public class a extends u2.a {
     public static final Parcelable.Creator<a> CREATOR = new C0569a();
 
     /* renamed from: i  reason: collision with root package name */
-    public final SimpleArrayMap f47395i;
+    public final SimpleArrayMap f47411i;
 
     /* renamed from: qh.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -41,19 +41,19 @@ public class a extends u2.a {
     }
 
     public String toString() {
-        return "ExtendableSavedState{" + Integer.toHexString(System.identityHashCode(this)) + " states=" + this.f47395i + "}";
+        return "ExtendableSavedState{" + Integer.toHexString(System.identityHashCode(this)) + " states=" + this.f47411i + "}";
     }
 
     @Override // u2.a, android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
         super.writeToParcel(parcel, i10);
-        int size = this.f47395i.size();
+        int size = this.f47411i.size();
         parcel.writeInt(size);
         String[] strArr = new String[size];
         Bundle[] bundleArr = new Bundle[size];
         for (int i11 = 0; i11 < size; i11++) {
-            strArr[i11] = (String) this.f47395i.f(i11);
-            bundleArr[i11] = (Bundle) this.f47395i.j(i11);
+            strArr[i11] = (String) this.f47411i.f(i11);
+            bundleArr[i11] = (Bundle) this.f47411i.j(i11);
         }
         parcel.writeStringArray(strArr);
         parcel.writeTypedArray(bundleArr, 0);
@@ -61,7 +61,7 @@ public class a extends u2.a {
 
     public a(Parcelable parcelable) {
         super(parcelable);
-        this.f47395i = new SimpleArrayMap();
+        this.f47411i = new SimpleArrayMap();
     }
 
     private a(Parcel parcel, ClassLoader classLoader) {
@@ -71,9 +71,9 @@ public class a extends u2.a {
         parcel.readStringArray(strArr);
         Bundle[] bundleArr = new Bundle[readInt];
         parcel.readTypedArray(bundleArr, Bundle.CREATOR);
-        this.f47395i = new SimpleArrayMap(readInt);
+        this.f47411i = new SimpleArrayMap(readInt);
         for (int i10 = 0; i10 < readInt; i10++) {
-            this.f47395i.put(strArr[i10], bundleArr[i10]);
+            this.f47411i.put(strArr[i10], bundleArr[i10]);
         }
     }
 }

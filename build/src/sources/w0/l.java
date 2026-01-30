@@ -8,24 +8,24 @@ import kotlinx.coroutines.CoroutineScope;
 public final class l implements gs.z {
 
     /* renamed from: d  reason: collision with root package name */
-    private final CoroutineContext f52007d;
+    private final CoroutineContext f52023d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Function2 f52008e;
+    private final Function2 f52024e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final CoroutineScope f52009i;
+    private final CoroutineScope f52025i;
 
     public l(CoroutineContext coroutineContext, Function2 function2) {
         CoroutineContext coroutineContext2;
-        this.f52007d = coroutineContext;
-        this.f52008e = function2;
-        if (coroutineContext.l(z0.a.f55212d) != null) {
+        this.f52023d = coroutineContext;
+        this.f52024e = function2;
+        if (coroutineContext.l(z0.a.f55228d) != null) {
             coroutineContext2 = this;
         } else {
-            coroutineContext2 = kotlin.coroutines.e.f33356d;
+            coroutineContext2 = kotlin.coroutines.e.f33372d;
         }
-        this.f52009i = kotlinx.coroutines.i.a(coroutineContext.U0(coroutineContext2));
+        this.f52025i = kotlinx.coroutines.i.a(coroutineContext.U0(coroutineContext2));
     }
 
     @Override // kotlin.coroutines.CoroutineContext
@@ -35,8 +35,8 @@ public final class l implements gs.z {
 
     @Override // gs.z
     public void R0(CoroutineContext coroutineContext, Throwable th2) {
-        android.support.v4.media.session.b.a(coroutineContext.l(z0.a.f55212d));
-        gs.z zVar = (gs.z) this.f52007d.l(gs.z.f27197f);
+        android.support.v4.media.session.b.a(coroutineContext.l(z0.a.f55228d));
+        gs.z zVar = (gs.z) this.f52023d.l(gs.z.f27213f);
         if (zVar != null) {
             zVar.R0(coroutineContext, th2);
             return;
@@ -51,7 +51,7 @@ public final class l implements gs.z {
 
     @Override // kotlin.coroutines.CoroutineContext.Element
     public CoroutineContext.b getKey() {
-        return gs.z.f27197f;
+        return gs.z.f27213f;
     }
 
     @Override // kotlin.coroutines.CoroutineContext.Element, kotlin.coroutines.CoroutineContext

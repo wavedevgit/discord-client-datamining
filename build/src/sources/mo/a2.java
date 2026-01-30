@@ -6,7 +6,7 @@ import kotlin.collections.CollectionsKt;
 public final class a2 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a2 f39362a = new a2();
+    public static final a2 f39378a = new a2();
 
     private a2() {
     }

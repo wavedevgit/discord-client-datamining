@@ -32,19 +32,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/account/handleDisableAccount.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Original name: handleDisableAccount, environment: var1
-        _fun81130: for (var _fun81130_ip = 0;;) switch (_fun81130_ip) {
+        _fun81176: for (var _fun81176_ip = 0;;) switch (_fun81176_ip) {
             case 0:
                 var2 = arguments[0];
                 var0 = undefined;
                 if (!(var2 === var0)) {
-                    _fun81130_ip = 13;
-                    continue _fun81130
+                    _fun81176_ip = 13;
+                    continue _fun81176
                 }
             case 11:
                 var2 = false;
             case 13:
                 var3 = function() { // Original name: hasOwnedGuilds, environment: var1
-                    _fun81131: for (var _fun81131_ip = 0;;) switch (_fun81131_ip) {
+                    _fun81177: for (var _fun81177_ip = 0;;) switch (_fun81177_ip) {
                         case 0:
                             var3 = _closure1_slot4;
                             var0 = var3.getCurrentUser;
@@ -53,8 +53,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = null;
                             var0 = var0 != var3;
                             if (!var0) {
-                                _fun81131_ip = 63;
-                                continue _fun81131
+                                _fun81177_ip = 63;
+                                continue _fun81177
                             }
                         case 31:
                             var3 = _closure1_slot3;
@@ -76,13 +76,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var3 = var3.bind(var0)();
                 if (var3) {
-                    _fun81130_ip = 87;
-                    continue _fun81130
+                    _fun81176_ip = 87;
+                    continue _fun81176
                 }
             case 27:
                 if (var2) {
-                    _fun81130_ip = 43;
-                    continue _fun81130
+                    _fun81176_ip = 43;
+                    continue _fun81176
                 }
             case 30:
                 var2 = function() { // Original name: getDisableAlertProps, environment: var1
@@ -134,8 +134,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     return var0;
                 };
                 var2 = var2.bind(var0)();
-                _fun81130_ip = 54;
-                continue _fun81130;
+                _fun81176_ip = 54;
+                continue _fun81176;
             case 43:
                 var1 = function() { // Original name: getDeleteAlertProps, environment: var1
                     var6 = _closure1_slot0;
@@ -193,8 +193,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4[var1];
                 var1 = var3.bind(var0)(var1);
                 var1 = var1.bind(var0)(var2);
-                _fun81130_ip = 230;
-                continue _fun81130;
+                _fun81176_ip = 230;
+                continue _fun81176;
             case 87:
                 var7 = _closure1_slot0;
                 var3 = _closure1_slot2;
@@ -232,4 +232,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 1613, 1234, 5679, 10297, 3956, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 1613, 1234, 5682, 10303, 3962, 2]);

@@ -61,7 +61,7 @@ final class SecurityKeyManagerModule$registerPasskey$1 extends k implements Func
                     CoroutineScope coroutineScope = (CoroutineScope) this.L$0;
                     String str = this.$requestJson;
                     securityKeyManagerModule = this.this$0;
-                    Result.a aVar = Result.f33279e;
+                    Result.a aVar = Result.f33295e;
                     String jSONObject = new JSONObject(new JSONTokener(str)).getJSONObject("publicKey").toString();
                     Intrinsics.checkNotNullExpressionValue(jSONObject, "toString(...)");
                     g2.f fVar = new g2.f(jSONObject, null, false, null, false, 30, null);
@@ -87,9 +87,9 @@ final class SecurityKeyManagerModule$registerPasskey$1 extends k implements Func
             } catch (h2.e e10) {
                 r12.reject(e10);
             }
-            b10 = Result.b(Unit.f33282a);
+            b10 = Result.b(Unit.f33298a);
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f33279e;
+            Result.a aVar2 = Result.f33295e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         SecurityKeyManagerModule securityKeyManagerModule2 = this.this$0;
@@ -101,11 +101,11 @@ final class SecurityKeyManagerModule$registerPasskey$1 extends k implements Func
                 throw e11;
             }
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((SecurityKeyManagerModule$registerPasskey$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((SecurityKeyManagerModule$registerPasskey$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

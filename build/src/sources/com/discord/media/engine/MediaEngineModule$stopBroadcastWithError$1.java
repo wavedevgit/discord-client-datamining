@@ -56,11 +56,11 @@ final class MediaEngineModule$stopBroadcastWithError$1 extends kotlin.coroutines
             String str = this.$errorMessage;
             mediaEngineModule2.getMediaEngine().connectionInstanceStopBroadcastWithError$media_engine_release(num.intValue(), (int) d10, str);
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$stopBroadcastWithError$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((MediaEngineModule$stopBroadcastWithError$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

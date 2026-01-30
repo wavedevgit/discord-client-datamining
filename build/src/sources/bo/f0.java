@@ -107,7 +107,7 @@ public final class f0 implements vm.k {
         }
 
         private a() {
-            k.a aVar = vm.k.f51267a;
+            k.a aVar = vm.k.f51283a;
             this.f7566a = new vm.z(Reflection.getOrCreateKotlinClass(f5.a.class), C0118a.f7567d, b.f7568d);
         }
     }
@@ -188,22 +188,22 @@ public final class f0 implements vm.k {
         Intrinsics.checkNotNullParameter(selectedItems, "selectedItems");
         b4 b4Var = (b4) CollectionsKt.firstOrNull(selectedItems);
         if (b4Var == null) {
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         function1.invoke(b4Var);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit n(f5.a aVar) {
         aVar.g().invoke();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit o(f5.a aVar) {
         aVar.h().invoke();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */

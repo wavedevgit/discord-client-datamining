@@ -10,28 +10,28 @@ import ne.w0;
 public final class a implements Metadata.b {
 
     /* renamed from: d  reason: collision with root package name */
-    public final String f28437d;
+    public final String f28453d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final String f28438e;
+    public final String f28454e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final long f28439i;
+    public final long f28455i;
 
     /* renamed from: o  reason: collision with root package name */
-    public final long f28440o;
+    public final long f28456o;
 
     /* renamed from: p  reason: collision with root package name */
-    public final byte[] f28441p;
+    public final byte[] f28457p;
 
     /* renamed from: q  reason: collision with root package name */
-    private int f28442q;
+    private int f28458q;
 
     /* renamed from: r  reason: collision with root package name */
-    private static final Format f28435r = new Format.b().g0("application/id3").G();
+    private static final Format f28451r = new Format.b().g0("application/id3").G();
 
     /* renamed from: s  reason: collision with root package name */
-    private static final Format f28436s = new Format.b().g0("application/x-scte35").G();
+    private static final Format f28452s = new Format.b().g0("application/x-scte35").G();
     public static final Parcelable.Creator<a> CREATOR = new C0373a();
 
     /* renamed from: id.a$a  reason: collision with other inner class name */
@@ -54,16 +54,16 @@ public final class a implements Metadata.b {
     }
 
     public a(String str, String str2, long j10, long j11, byte[] bArr) {
-        this.f28437d = str;
-        this.f28438e = str2;
-        this.f28439i = j10;
-        this.f28440o = j11;
-        this.f28441p = bArr;
+        this.f28453d = str;
+        this.f28454e = str2;
+        this.f28455i = j10;
+        this.f28456o = j11;
+        this.f28457p = bArr;
     }
 
     @Override // com.google.android.exoplayer2.metadata.Metadata.b
     public Format F() {
-        String str = this.f28437d;
+        String str = this.f28453d;
         str.getClass();
         char c10 = 65535;
         switch (str.hashCode()) {
@@ -88,10 +88,10 @@ public final class a implements Metadata.b {
         }
         switch (c10) {
             case 0:
-                return f28436s;
+                return f28452s;
             case 1:
             case 2:
-                return f28435r;
+                return f28451r;
             default:
                 return null;
         }
@@ -108,7 +108,7 @@ public final class a implements Metadata.b {
         }
         if (obj != null && a.class == obj.getClass()) {
             a aVar = (a) obj;
-            if (this.f28439i == aVar.f28439i && this.f28440o == aVar.f28440o && w0.c(this.f28437d, aVar.f28437d) && w0.c(this.f28438e, aVar.f28438e) && Arrays.equals(this.f28441p, aVar.f28441p)) {
+            if (this.f28455i == aVar.f28455i && this.f28456o == aVar.f28456o && w0.c(this.f28453d, aVar.f28453d) && w0.c(this.f28454e, aVar.f28454e) && Arrays.equals(this.f28457p, aVar.f28457p)) {
                 return true;
             }
         }
@@ -117,8 +117,8 @@ public final class a implements Metadata.b {
 
     public int hashCode() {
         int i10;
-        if (this.f28442q == 0) {
-            String str = this.f28437d;
+        if (this.f28458q == 0) {
+            String str = this.f28453d;
             int i11 = 0;
             if (str != null) {
                 i10 = str.hashCode();
@@ -126,43 +126,43 @@ public final class a implements Metadata.b {
                 i10 = 0;
             }
             int i12 = (527 + i10) * 31;
-            String str2 = this.f28438e;
+            String str2 = this.f28454e;
             if (str2 != null) {
                 i11 = str2.hashCode();
             }
-            long j10 = this.f28439i;
-            long j11 = this.f28440o;
-            this.f28442q = ((((((i12 + i11) * 31) + ((int) (j10 ^ (j10 >>> 32)))) * 31) + ((int) (j11 ^ (j11 >>> 32)))) * 31) + Arrays.hashCode(this.f28441p);
+            long j10 = this.f28455i;
+            long j11 = this.f28456o;
+            this.f28458q = ((((((i12 + i11) * 31) + ((int) (j10 ^ (j10 >>> 32)))) * 31) + ((int) (j11 ^ (j11 >>> 32)))) * 31) + Arrays.hashCode(this.f28457p);
         }
-        return this.f28442q;
+        return this.f28458q;
     }
 
     @Override // com.google.android.exoplayer2.metadata.Metadata.b
     public byte[] j2() {
         if (F() != null) {
-            return this.f28441p;
+            return this.f28457p;
         }
         return null;
     }
 
     public String toString() {
-        return "EMSG: scheme=" + this.f28437d + ", id=" + this.f28440o + ", durationMs=" + this.f28439i + ", value=" + this.f28438e;
+        return "EMSG: scheme=" + this.f28453d + ", id=" + this.f28456o + ", durationMs=" + this.f28455i + ", value=" + this.f28454e;
     }
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeString(this.f28437d);
-        parcel.writeString(this.f28438e);
-        parcel.writeLong(this.f28439i);
-        parcel.writeLong(this.f28440o);
-        parcel.writeByteArray(this.f28441p);
+        parcel.writeString(this.f28453d);
+        parcel.writeString(this.f28454e);
+        parcel.writeLong(this.f28455i);
+        parcel.writeLong(this.f28456o);
+        parcel.writeByteArray(this.f28457p);
     }
 
     a(Parcel parcel) {
-        this.f28437d = (String) w0.j(parcel.readString());
-        this.f28438e = (String) w0.j(parcel.readString());
-        this.f28439i = parcel.readLong();
-        this.f28440o = parcel.readLong();
-        this.f28441p = (byte[]) w0.j(parcel.createByteArray());
+        this.f28453d = (String) w0.j(parcel.readString());
+        this.f28454e = (String) w0.j(parcel.readString());
+        this.f28455i = parcel.readLong();
+        this.f28456o = parcel.readLong();
+        this.f28457p = (byte[]) w0.j(parcel.createByteArray());
     }
 }

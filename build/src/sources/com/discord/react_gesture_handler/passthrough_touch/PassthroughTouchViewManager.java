@@ -49,7 +49,7 @@ public final class PassthroughTouchViewManager extends ViewGroupManager<Passthro
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit createViewInstance$lambda$1$lambda$0(PassthroughTouchViewManager passthroughTouchViewManager, ThemedReactContext themedReactContext, PassthroughTouchViewGroup passthroughTouchViewGroup) {
         passthroughTouchViewManager.reactEvents.emitEvent(themedReactContext, passthroughTouchViewGroup, new OnTouchDownData());
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // com.facebook.react.uimanager.BaseViewManager, com.facebook.react.uimanager.ViewManager

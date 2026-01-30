@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/nameplates/hooks/useFetchNameplate.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: useFetchNameplate, environment: var1
-        _fun79829: for (var _fun79829_ip = 0;;) switch (_fun79829_ip) {
+        _fun79875: for (var _fun79875_ip = 0;;) switch (_fun79875_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var0 = _closure1_slot1;
@@ -39,8 +39,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2 == var4;
                 var8 = undefined;
                 if (var0) {
-                    _fun79829_ip = 76;
-                    continue _fun79829
+                    _fun79875_ip = 76;
+                    continue _fun79875
                 }
             case 61:
                 var0 = var4.items;
@@ -56,8 +56,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.NAMEPLATE;
                 var5 = undefined;
                 if (!(var8 === var0)) {
-                    _fun79829_ip = 124;
-                    continue _fun79829
+                    _fun79875_ip = 124;
+                    continue _fun79875
                 }
             case 114:
                 var0 = var4.items;
@@ -69,8 +69,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2 != var5;
                 var2 = undefined;
                 if (!var4) {
-                    _fun79829_ip = 176;
-                    continue _fun79829
+                    _fun79875_ip = 176;
+                    continue _fun79875
                 }
             case 145:
                 var4 = _closure1_slot0;
@@ -88,4 +88,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useFetchNameplate = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6840, 3452, 1634, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6843, 3452, 1634, 2]);

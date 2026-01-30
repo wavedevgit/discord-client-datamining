@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/useMaybeAddNewYearsMarketingEasterEggNote.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: useMaybeAddNewYearsMarketingEasterEggNote, environment: var1
-        _fun73927: for (var _fun73927_ip = 0;;) switch (_fun73927_ip) {
+        _fun73971: for (var _fun73971_ip = 0;;) switch (_fun73971_ip) {
             case 0:
                 var5 = arg0;
                 var2 = _closure1_slot0;
@@ -40,15 +40,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.enabled;
                 var0 = var5;
                 if (!var2) {
-                    _fun73927_ip = 145;
-                    continue _fun73927
+                    _fun73971_ip = 145;
+                    continue _fun73971
                 }
             case 67:
                 var2 = ':fireworks:';
                 var0 = var5;
                 if (!(var2 === var0)) {
-                    _fun73927_ip = 145;
-                    continue _fun73927
+                    _fun73971_ip = 145;
+                    continue _fun73971
                 }
             case 80:
                 var2 = _closure1_slot0;
@@ -71,4 +71,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [9273, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [9278, 1234, 2]);

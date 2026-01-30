@@ -9,7 +9,7 @@ import kotlinx.coroutines.flow.Flow;
 public abstract /* synthetic */ class q {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Function1 f32595a = new Function1() { // from class: js.o
+    private static final Function1 f32611a = new Function1() { // from class: js.o
         @Override // kotlin.jvm.functions.Function1
         public final Object invoke(Object obj) {
             Object d10;
@@ -19,7 +19,7 @@ public abstract /* synthetic */ class q {
     };
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Function2 f32596b = new Function2() { // from class: js.p
+    private static final Function2 f32612b = new Function2() { // from class: js.p
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(Object obj, Object obj2) {
             boolean c10;
@@ -37,13 +37,13 @@ public abstract /* synthetic */ class q {
         if (flow instanceof j0) {
             return flow;
         }
-        return f(flow, f32595a, f32596b);
+        return f(flow, f32611a, f32612b);
     }
 
     private static final Flow f(Flow flow, Function1 function1, Function2 function2) {
         if (flow instanceof f) {
             f fVar = (f) flow;
-            if (fVar.f32499e == function1 && fVar.f32500i == function2) {
+            if (fVar.f32515e == function1 && fVar.f32516i == function2) {
                 return flow;
             }
         }

@@ -5495,6 +5495,60 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7.category = var9;
     var14 = var8.DARK;
     var13 = {
+        'raw': 'BRAND_500',
+        'opacity': 1
+    };
+    var7[var14] = var13;
+    var14 = var8.LIGHT;
+    var13 = {
+        'raw': 'BRAND_500',
+        'opacity': 1
+    };
+    var7[var14] = var13;
+    var14 = var8.MIDNIGHT;
+    var13 = {
+        'raw': 'BRAND_500',
+        'opacity': 1
+    };
+    var7[var14] = var13;
+    var14 = var8.DARKER;
+    var13 = {
+        'raw': 'BRAND_500',
+        'opacity': 1
+    };
+    var7[var14] = var13;
+    var6.PROGRESSBAR_INDICATOR_BACKGROUND = var7;
+    var7 = {};
+    var7.category = var9;
+    var14 = var8.DARK;
+    var13 = {
+        'raw': 'PRIMARY_500',
+        'opacity': 0.54
+    };
+    var7[var14] = var13;
+    var14 = var8.LIGHT;
+    var13 = {
+        'raw': 'PRIMARY_400',
+        'opacity': 0.24
+    };
+    var7[var14] = var13;
+    var14 = var8.MIDNIGHT;
+    var13 = {
+        'raw': 'PLUM_11',
+        'opacity': 0.18
+    };
+    var7[var14] = var13;
+    var14 = var8.DARKER;
+    var13 = {
+        'raw': 'PLUM_11',
+        'opacity': 0.24
+    };
+    var7[var14] = var13;
+    var6.PROGRESSBAR_TRACK_BACKGROUND = var7;
+    var7 = {};
+    var7.category = var9;
+    var14 = var8.DARK;
+    var13 = {
         'raw': 'PRIMARY_360',
         'opacity': 1
     };

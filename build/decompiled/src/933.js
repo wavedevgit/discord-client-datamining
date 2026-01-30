@@ -15,59 +15,6 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
     var2 = function(arg0) { // Original name: isJsonRpcNotification, environment: var0
-        _fun9719: for (var _fun9719_ip = 0;;) switch (_fun9719_ip) {
-            case 0:
-                var2 = arg0;
-                var1 = 'object';
-                var0 = typeof var2;
-                var0 = var1 === var0;
-                if (!var0) {
-                    _fun9719_ip = 23;
-                    continue _fun9719
-                }
-            case 17:
-                var1 = null;
-                var0 = var1 !== var2;
-            case 23:
-                if (!var0) {
-                    _fun9719_ip = 34;
-                    continue _fun9719
-                }
-            case 26:
-                var1 = 'jsonrpc';
-                var0 = var1 in var2;
-            case 34:
-                if (!var0) {
-                    _fun9719_ip = 53;
-                    continue _fun9719
-                }
-            case 37:
-                var3 = var2.jsonrpc;
-                var1 = '2.0';
-                var0 = var1 === var3;
-            case 53:
-                if (!var0) {
-                    _fun9719_ip = 64;
-                    continue _fun9719
-                }
-            case 56:
-                var1 = 'method';
-                var0 = var1 in var2;
-            case 64:
-                if (!var0) {
-                    _fun9719_ip = 78;
-                    continue _fun9719
-                }
-            case 67:
-                var1 = 'id';
-                var1 = var1 in var2;
-                var0 = !var1;
-            case 78:
-                return var0;
-        }
-    };
-    var1.isJsonRpcNotification = var2;
-    var2 = function(arg0) { // Original name: isJsonRpcRequest, environment: var0
         _fun9720: for (var _fun9720_ip = 0;;) switch (_fun9720_ip) {
             case 0:
                 var2 = arg0;
@@ -108,8 +55,61 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var1 in var2;
             case 64:
                 if (!var0) {
-                    _fun9720_ip = 75;
+                    _fun9720_ip = 78;
                     continue _fun9720
+                }
+            case 67:
+                var1 = 'id';
+                var1 = var1 in var2;
+                var0 = !var1;
+            case 78:
+                return var0;
+        }
+    };
+    var1.isJsonRpcNotification = var2;
+    var2 = function(arg0) { // Original name: isJsonRpcRequest, environment: var0
+        _fun9721: for (var _fun9721_ip = 0;;) switch (_fun9721_ip) {
+            case 0:
+                var2 = arg0;
+                var1 = 'object';
+                var0 = typeof var2;
+                var0 = var1 === var0;
+                if (!var0) {
+                    _fun9721_ip = 23;
+                    continue _fun9721
+                }
+            case 17:
+                var1 = null;
+                var0 = var1 !== var2;
+            case 23:
+                if (!var0) {
+                    _fun9721_ip = 34;
+                    continue _fun9721
+                }
+            case 26:
+                var1 = 'jsonrpc';
+                var0 = var1 in var2;
+            case 34:
+                if (!var0) {
+                    _fun9721_ip = 53;
+                    continue _fun9721
+                }
+            case 37:
+                var3 = var2.jsonrpc;
+                var1 = '2.0';
+                var0 = var1 === var3;
+            case 53:
+                if (!var0) {
+                    _fun9721_ip = 64;
+                    continue _fun9721
+                }
+            case 56:
+                var1 = 'method';
+                var0 = var1 in var2;
+            case 64:
+                if (!var0) {
+                    _fun9721_ip = 75;
+                    continue _fun9721
                 }
             case 67:
                 var1 = 'id';
@@ -120,31 +120,31 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.isJsonRpcRequest = var2;
     var2 = function(arg0) { // Original name: isJsonRpcResponse, environment: var0
-        _fun9721: for (var _fun9721_ip = 0;;) switch (_fun9721_ip) {
+        _fun9722: for (var _fun9722_ip = 0;;) switch (_fun9722_ip) {
             case 0:
                 var3 = arg0;
                 var1 = 'object';
                 var0 = typeof var3;
                 var0 = var1 === var0;
                 if (!var0) {
-                    _fun9721_ip = 23;
-                    continue _fun9721
+                    _fun9722_ip = 23;
+                    continue _fun9722
                 }
             case 17:
                 var1 = null;
                 var0 = var1 !== var3;
             case 23:
                 if (!var0) {
-                    _fun9721_ip = 34;
-                    continue _fun9721
+                    _fun9722_ip = 34;
+                    continue _fun9722
                 }
             case 26:
                 var1 = 'jsonrpc';
                 var0 = var1 in var3;
             case 34:
                 if (!var0) {
-                    _fun9721_ip = 53;
-                    continue _fun9721
+                    _fun9722_ip = 53;
+                    continue _fun9722
                 }
             case 37:
                 var2 = var3.jsonrpc;
@@ -152,23 +152,23 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var1 === var2;
             case 53:
                 if (!var0) {
-                    _fun9721_ip = 64;
-                    continue _fun9721
+                    _fun9722_ip = 64;
+                    continue _fun9722
                 }
             case 56:
                 var1 = 'id';
                 var0 = var1 in var3;
             case 64:
                 if (!var0) {
-                    _fun9721_ip = 89;
-                    continue _fun9721
+                    _fun9722_ip = 89;
+                    continue _fun9722
                 }
             case 67:
                 var1 = 'result';
                 var1 = var1 in var3;
                 if (var1) {
-                    _fun9721_ip = 86;
-                    continue _fun9721
+                    _fun9722_ip = 86;
+                    continue _fun9722
                 }
             case 78:
                 var2 = 'error';
@@ -181,14 +181,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.isJsonRpcResponse = var2;
     var2 = function(arg0) { // Original name: isValidContentItem, environment: var0
-        _fun9722: for (var _fun9722_ip = 0;;) switch (_fun9722_ip) {
+        _fun9723: for (var _fun9723_ip = 0;;) switch (_fun9723_ip) {
             case 0:
                 var1 = arg0;
                 var0 = null;
                 var0 = var0 != var1;
                 if (!var0) {
-                    _fun9722_ip = 23;
-                    continue _fun9722
+                    _fun9723_ip = 23;
+                    continue _fun9723
                 }
             case 12:
                 var2 = 'object';
@@ -200,55 +200,55 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.isValidContentItem = var2;
     var0 = function(arg0) { // Original name: validateMcpServerInstance, environment: var0
-        _fun9723: for (var _fun9723_ip = 0;;) switch (_fun9723_ip) {
+        _fun9724: for (var _fun9724_ip = 0;;) switch (_fun9724_ip) {
             case 0:
                 var2 = arg0;
                 var1 = 'object';
                 var0 = typeof var2;
                 var0 = var1 === var0;
                 if (!var0) {
-                    _fun9723_ip = 23;
-                    continue _fun9723
+                    _fun9724_ip = 23;
+                    continue _fun9724
                 }
             case 17:
                 var1 = null;
                 var0 = var1 !== var2;
             case 23:
                 if (!var0) {
-                    _fun9723_ip = 34;
-                    continue _fun9723
+                    _fun9724_ip = 34;
+                    continue _fun9724
                 }
             case 26:
                 var1 = 'resource';
                 var0 = var1 in var2;
             case 34:
                 if (!var0) {
-                    _fun9723_ip = 45;
-                    continue _fun9723
+                    _fun9724_ip = 45;
+                    continue _fun9724
                 }
             case 37:
                 var1 = 'tool';
                 var0 = var1 in var2;
             case 45:
                 if (!var0) {
-                    _fun9723_ip = 56;
-                    continue _fun9723
+                    _fun9724_ip = 56;
+                    continue _fun9724
                 }
             case 48:
                 var1 = 'prompt';
                 var0 = var1 in var2;
             case 56:
                 if (!var0) {
-                    _fun9723_ip = 67;
-                    continue _fun9723
+                    _fun9724_ip = 67;
+                    continue _fun9724
                 }
             case 59:
                 var1 = 'connect';
                 var0 = var1 in var2;
             case 67:
                 if (var0) {
-                    _fun9723_ip = 149;
-                    continue _fun9723
+                    _fun9724_ip = 149;
+                    continue _fun9724
                 }
             case 70:
                 var3 = _closure1_slot0;
@@ -260,8 +260,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var1.DEBUG_BUILD;
                 var0 = false;
                 if (!var3) {
-                    _fun9723_ip = 149;
-                    continue _fun9723
+                    _fun9724_ip = 149;
+                    continue _fun9724
                 }
             case 105:
                 var3 = _closure1_slot0;

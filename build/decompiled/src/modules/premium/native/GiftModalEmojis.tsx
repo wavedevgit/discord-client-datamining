@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/native/GiftModalEmojis.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: _default, environment: var1
-        _fun56570: for (var _fun56570_ip = 0;;) switch (_fun56570_ip) {
+        _fun56614: for (var _fun56614_ip = 0;;) switch (_fun56614_ip) {
             case 0:
                 var1 = arg0;
                 var4 = var1.emojiName;
@@ -93,8 +93,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.randomizeSizing;
                 var3 = undefined;
                 if (!(var1 === var3)) {
-                    _fun56570_ip = 29;
-                    continue _fun56570
+                    _fun56614_ip = 29;
+                    continue _fun56614
                 }
             case 27:
                 var1 = false;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot5;
                 var1 = var2.map;
                 var0 = function(arg0, arg1) { // Environment: var0
-                    _fun56571: for (var _fun56571_ip = 0;;) switch (_fun56571_ip) {
+                    _fun56615: for (var _fun56615_ip = 0;;) switch (_fun56615_ip) {
                         case 0:
                             var3 = _closure1_slot2;
                             var4 = undefined;
@@ -161,8 +161,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var9 = {};
                             var11 = _closure2_slot1;
                             if (!var11) {
-                                _fun56571_ip = 240;
-                                continue _fun56571
+                                _fun56615_ip = 240;
+                                continue _fun56615
                             }
                         case 196:
                             var12 = var0.Math;
@@ -203,4 +203,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 3067, 5727, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 3067, 5730, 2]);

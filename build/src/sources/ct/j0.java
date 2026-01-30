@@ -54,7 +54,7 @@ public final class j0 {
             Object obj = this.f21358a[i11];
             if (obj instanceof SerialDescriptor) {
                 SerialDescriptor serialDescriptor = (SerialDescriptor) obj;
-                if (Intrinsics.areEqual(serialDescriptor.getKind(), l.b.f56103a)) {
+                if (Intrinsics.areEqual(serialDescriptor.getKind(), l.b.f56119a)) {
                     if (this.f21359b[i11] != -1) {
                         sb2.append("[");
                         sb2.append(this.f21359b[i11]);

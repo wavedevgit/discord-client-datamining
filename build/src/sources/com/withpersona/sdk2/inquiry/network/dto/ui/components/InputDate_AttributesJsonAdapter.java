@@ -126,7 +126,7 @@ public final class InputDate_AttributesJsonAdapter extends h {
         String str12 = str;
         Constructor<InputDate.Attributes> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = InputDate.Attributes.class.getDeclaredConstructor(String.class, String.class, String.class, String.class, String.class, List.class, JsonLogicBoolean.class, JsonLogicBoolean.class, Integer.TYPE, c.f49081c);
+            constructor = InputDate.Attributes.class.getDeclaredConstructor(String.class, String.class, String.class, String.class, String.class, List.class, JsonLogicBoolean.class, JsonLogicBoolean.class, Integer.TYPE, c.f49097c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

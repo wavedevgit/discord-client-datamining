@@ -6,30 +6,30 @@ import java.util.Map;
 abstract class r {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f48328a;
+    private static final Map f48344a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Map f48329b;
+    private static final Map f48345b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Map f48330c;
+    private static final Map f48346c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Map f48331d;
+    private static final Map f48347d;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        final boolean f48332a;
+        final boolean f48348a;
 
         /* renamed from: b  reason: collision with root package name */
-        final int f48333b;
+        final int f48349b;
 
         private a(boolean z10, int i10) {
-            this.f48332a = z10;
-            this.f48333b = i10;
+            this.f48348a = z10;
+            this.f48349b = i10;
         }
 
         static a a(int i10) {
@@ -43,7 +43,7 @@ abstract class r {
 
     static {
         HashMap hashMap = new HashMap();
-        f48328a = hashMap;
+        f48344a = hashMap;
         hashMap.put("00", a.a(18));
         hashMap.put("01", a.a(14));
         hashMap.put("02", a.a(14));
@@ -60,10 +60,10 @@ abstract class r {
         hashMap.put("30", a.b(8));
         hashMap.put("37", a.b(8));
         for (int i10 = 90; i10 <= 99; i10++) {
-            f48328a.put(String.valueOf(i10), a.b(30));
+            f48344a.put(String.valueOf(i10), a.b(30));
         }
         HashMap hashMap2 = new HashMap();
-        f48329b = hashMap2;
+        f48345b = hashMap2;
         hashMap2.put("235", a.b(28));
         hashMap2.put("240", a.b(30));
         hashMap2.put("241", a.b(30));
@@ -100,20 +100,20 @@ abstract class r {
         hashMap2.put("713", a.b(20));
         hashMap2.put("714", a.b(20));
         hashMap2.put("715", a.b(20));
-        f48330c = new HashMap();
+        f48346c = new HashMap();
         for (int i11 = 310; i11 <= 316; i11++) {
-            f48330c.put(String.valueOf(i11), a.a(6));
+            f48346c.put(String.valueOf(i11), a.a(6));
         }
         for (int i12 = 320; i12 <= 337; i12++) {
-            f48330c.put(String.valueOf(i12), a.a(6));
+            f48346c.put(String.valueOf(i12), a.a(6));
         }
         for (int i13 = 340; i13 <= 357; i13++) {
-            f48330c.put(String.valueOf(i13), a.a(6));
+            f48346c.put(String.valueOf(i13), a.a(6));
         }
         for (int i14 = 360; i14 <= 369; i14++) {
-            f48330c.put(String.valueOf(i14), a.a(6));
+            f48346c.put(String.valueOf(i14), a.a(6));
         }
-        Map map = f48330c;
+        Map map = f48346c;
         map.put("390", a.b(15));
         map.put("391", a.b(18));
         map.put("392", a.b(15));
@@ -123,7 +123,7 @@ abstract class r {
         map.put("703", a.b(30));
         map.put("723", a.b(30));
         HashMap hashMap3 = new HashMap();
-        f48331d = hashMap3;
+        f48347d = hashMap3;
         hashMap3.put("4300", a.b(35));
         hashMap3.put("4301", a.b(35));
         hashMap3.put("4302", a.b(70));
@@ -201,34 +201,34 @@ abstract class r {
             return null;
         }
         if (str.length() >= 2) {
-            a aVar = (a) f48328a.get(str.substring(0, 2));
+            a aVar = (a) f48344a.get(str.substring(0, 2));
             if (aVar != null) {
-                if (aVar.f48332a) {
-                    return c(2, aVar.f48333b, str);
+                if (aVar.f48348a) {
+                    return c(2, aVar.f48349b, str);
                 }
-                return b(2, aVar.f48333b, str);
+                return b(2, aVar.f48349b, str);
             } else if (str.length() >= 3) {
                 String substring = str.substring(0, 3);
-                a aVar2 = (a) f48329b.get(substring);
+                a aVar2 = (a) f48345b.get(substring);
                 if (aVar2 != null) {
-                    if (aVar2.f48332a) {
-                        return c(3, aVar2.f48333b, str);
+                    if (aVar2.f48348a) {
+                        return c(3, aVar2.f48349b, str);
                     }
-                    return b(3, aVar2.f48333b, str);
+                    return b(3, aVar2.f48349b, str);
                 } else if (str.length() >= 4) {
-                    a aVar3 = (a) f48330c.get(substring);
+                    a aVar3 = (a) f48346c.get(substring);
                     if (aVar3 != null) {
-                        if (aVar3.f48332a) {
-                            return c(4, aVar3.f48333b, str);
+                        if (aVar3.f48348a) {
+                            return c(4, aVar3.f48349b, str);
                         }
-                        return b(4, aVar3.f48333b, str);
+                        return b(4, aVar3.f48349b, str);
                     }
-                    a aVar4 = (a) f48331d.get(str.substring(0, 4));
+                    a aVar4 = (a) f48347d.get(str.substring(0, 4));
                     if (aVar4 != null) {
-                        if (aVar4.f48332a) {
-                            return c(4, aVar4.f48333b, str);
+                        if (aVar4.f48348a) {
+                            return c(4, aVar4.f48349b, str);
                         }
-                        return b(4, aVar4.f48333b, str);
+                        return b(4, aVar4.f48349b, str);
                     }
                     throw ck.k.a();
                 } else {

@@ -6,10 +6,10 @@ import java.util.Objects;
 public final class c2 extends k1 {
 
     /* renamed from: o  reason: collision with root package name */
-    final transient Object[] f38119o;
+    final transient Object[] f38135o;
 
     private c2(Object obj, Object[] objArr, int i10) {
-        this.f38119o = objArr;
+        this.f38135o = objArr;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -24,17 +24,17 @@ public final class c2 extends k1 {
 
     @Override // mg.k1
     final d1 a() {
-        return new b2(this.f38119o, 1, 1);
+        return new b2(this.f38135o, 1, 1);
     }
 
     @Override // mg.k1
     final l1 d() {
-        return new z1(this, this.f38119o, 0, 1);
+        return new z1(this, this.f38135o, 0, 1);
     }
 
     @Override // mg.k1
     final l1 e() {
-        return new a2(this, new b2(this.f38119o, 0, 1));
+        return new a2(this, new b2(this.f38135o, 0, 1));
     }
 
     /* JADX WARN: Removed duplicated region for block: B:10:0x001c A[RETURN] */
@@ -53,7 +53,7 @@ public final class c2 extends k1 {
             r4 = r0
             goto L19
         L5:
-            java.lang.Object[] r1 = r3.f38119o
+            java.lang.Object[] r1 = r3.f38135o
             r2 = 0
             r2 = r1[r2]
             java.util.Objects.requireNonNull(r2)

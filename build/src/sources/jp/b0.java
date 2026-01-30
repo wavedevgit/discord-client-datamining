@@ -7,16 +7,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b0 extends RecyclerView.ViewHolder {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ViewBinding f32279d;
+    private final ViewBinding f32295d;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public b0(ViewBinding binding) {
         super(binding.getRoot());
         Intrinsics.checkNotNullParameter(binding, "binding");
-        this.f32279d = binding;
+        this.f32295d = binding;
     }
 
     public final ViewBinding getBinding() {
-        return this.f32279d;
+        return this.f32295d;
     }
 }

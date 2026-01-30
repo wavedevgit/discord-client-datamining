@@ -13,7 +13,7 @@ public final class g0 implements Map, Serializable, KMappedMarker {
     @NotNull
 
     /* renamed from: d  reason: collision with root package name */
-    public static final g0 f33325d = new g0();
+    public static final g0 f33341d = new g0();
 
     private g0() {
     }
@@ -30,7 +30,7 @@ public final class g0 implements Map, Serializable, KMappedMarker {
     }
 
     public Set c() {
-        return h0.f33328d;
+        return h0.f33344d;
     }
 
     @Override // java.util.Map
@@ -52,7 +52,7 @@ public final class g0 implements Map, Serializable, KMappedMarker {
     }
 
     public Set d() {
-        return h0.f33328d;
+        return h0.f33344d;
     }
 
     public int e() {
@@ -73,7 +73,7 @@ public final class g0 implements Map, Serializable, KMappedMarker {
     }
 
     public Collection f() {
-        return f0.f33324d;
+        return f0.f33340d;
     }
 
     @Override // java.util.Map

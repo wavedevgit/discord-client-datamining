@@ -3,14 +3,14 @@ package jp;
 public final class w implements tq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final v f32388a;
+    private final v f32404a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final tq.h f32389b;
+    private final tq.h f32405b;
 
     public w(v vVar, tq.h hVar) {
-        this.f32388a = vVar;
-        this.f32389b = hVar;
+        this.f32404a = vVar;
+        this.f32405b = hVar;
     }
 
     public static w a(v vVar, tq.h hVar) {
@@ -24,6 +24,6 @@ public final class w implements tq.d {
     @Override // javax.inject.Provider
     /* renamed from: c */
     public i get() {
-        return b(this.f32388a, (q) this.f32389b.get());
+        return b(this.f32404a, (q) this.f32405b.get());
     }
 }

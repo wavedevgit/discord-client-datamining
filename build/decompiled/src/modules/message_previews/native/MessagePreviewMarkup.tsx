@@ -94,7 +94,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot6 = var5;
     var1 = function(arg0) { // Original name: getOrParseMessagePreviewMarkupAST, environment: var4
-        _fun69895: for (var _fun69895_ip = 0;;) switch (_fun69895_ip) {
+        _fun69941: for (var _fun69941_ip = 0;;) switch (_fun69941_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.content;
@@ -109,8 +109,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.bind(var1)(var4);
                 var1 = null;
                 if (!(var1 == var0)) {
-                    _fun69895_ip = 202;
-                    continue _fun69895
+                    _fun69941_ip = 202;
+                    continue _fun69941
                 }
             case 69:
                 var3 = _closure1_slot6;
@@ -126,8 +126,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3.bind(var4)(var1);
                 var3 = undefined;
                 if (var1) {
-                    _fun69895_ip = 162;
-                    continue _fun69895
+                    _fun69941_ip = 162;
+                    continue _fun69941
                 }
             case 123:
                 var10 = var4.split;
@@ -141,8 +141,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var9;
             case 162:
                 if (!var1) {
-                    _fun69895_ip = 168;
-                    continue _fun69895
+                    _fun69941_ip = 168;
+                    continue _fun69941
                 }
             case 165:
                 var3 = var4;
@@ -197,7 +197,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.renderASTToReact = var6;
     var2.getMessagePreviewASTParser = var5;
     var4 = function(arg0) { // Original name: renderMessagePreviewMarkup, environment: var4
-        _fun69896: for (var _fun69896_ip = 0;;) switch (_fun69896_ip) {
+        _fun69942: for (var _fun69942_ip = 0;;) switch (_fun69942_ip) {
             case 0:
                 var3 = arg0;
                 var11 = var3.content;
@@ -207,8 +207,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var3.layout;
                 var2 = undefined;
                 if (!(var6 === var2)) {
-                    _fun69896_ip = 71;
-                    continue _fun69896
+                    _fun69942_ip = 71;
+                    continue _fun69942
                 }
             case 36:
                 var5 = _closure1_slot0;
@@ -223,16 +223,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var3.postProcessor;
                 var13 = var3.disableAnimatedEmoji;
                 if (!(var13 === var2)) {
-                    _fun69896_ip = 94;
-                    continue _fun69896
+                    _fun69942_ip = 94;
+                    continue _fun69942
                 }
             case 92:
                 var13 = true;
             case 94:
                 var4 = var3.fontScale;
                 if (!(var4 === var2)) {
-                    _fun69896_ip = 107;
-                    continue _fun69896
+                    _fun69942_ip = 107;
+                    continue _fun69942
                 }
             case 104:
                 var4 = 1;
@@ -240,8 +240,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3.maxFontSizeMultiplier;
                 var7 = '';
                 if (!(var7 !== var11)) {
-                    _fun69896_ip = 344;
-                    continue _fun69896
+                    _fun69942_ip = 344;
+                    continue _fun69942
                 }
             case 124:
                 var7 = {
@@ -284,8 +284,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var0 = var0 != var1;
                 if (!var0) {
-                    _fun69896_ip = 253;
-                    continue _fun69896
+                    _fun69942_ip = 253;
+                    continue _fun69942
                 }
             case 250:
                 var0 = var1;
@@ -320,4 +320,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.messagePreviewASTCache = var3;
     var2.getOrParseMessagePreviewMarkupAST = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4738, 4739, 8742, 3105, 4737, 8745, 3945, 1386, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4744, 4745, 8746, 3105, 4743, 8749, 3951, 1386, 2]);

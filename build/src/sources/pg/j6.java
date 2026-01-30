@@ -5,7 +5,7 @@ import ui.c;
 final class j6 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final j6 f45339a = new j6();
+    static final j6 f45355a = new j6();
 
     static {
         c.b a10 = ui.c.a("callingSource");

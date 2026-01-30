@@ -6,10 +6,10 @@ import java.util.HashMap;
 public final class d implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    public final e[] f31565a;
+    public final e[] f31581a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final boolean f31566b;
+    public final boolean f31582b;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*
@@ -31,8 +31,8 @@ public final class d implements e {
     }
 
     public d(e[] eVarArr, boolean z10) {
-        this.f31565a = eVarArr;
-        this.f31566b = z10;
+        this.f31581a = eVarArr;
+        this.f31582b = z10;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:12:0x0026, code lost:
@@ -54,13 +54,13 @@ public final class d implements e {
             r7 = this;
             int r0 = r9.length()
             r1 = 1
-            boolean r2 = r7.f31566b
+            boolean r2 = r7.f31582b
             if (r2 == 0) goto Le
-            int r3 = r8.f31605c
+            int r3 = r8.f31621c
             int r3 = r3 + r1
-            r8.f31605c = r3
+            r8.f31621c = r3
         Le:
-            j$.time.format.e[] r3 = r7.f31565a     // Catch: java.lang.Throwable -> L27
+            j$.time.format.e[] r3 = r7.f31581a     // Catch: java.lang.Throwable -> L27
             int r4 = r3.length     // Catch: java.lang.Throwable -> L27
             r5 = 0
         L12:
@@ -71,9 +71,9 @@ public final class d implements e {
             r9.setLength(r0)     // Catch: java.lang.Throwable -> L27
             if (r2 == 0) goto L2f
         L21:
-            int r9 = r8.f31605c
+            int r9 = r8.f31621c
             int r9 = r9 - r1
-            r8.f31605c = r9
+            r8.f31621c = r9
             return r1
         L27:
             r9 = move-exception
@@ -88,9 +88,9 @@ public final class d implements e {
             return r1
         L30:
             if (r2 == 0) goto L37
-            int r0 = r8.f31605c
+            int r0 = r8.f31621c
             int r0 = r0 - r1
-            r8.f31605c = r0
+            r8.f31621c = r0
         L37:
             throw r9
         */
@@ -99,31 +99,31 @@ public final class d implements e {
 
     @Override // j$.time.format.e
     public final int t(o oVar, CharSequence charSequence, int i10) {
-        boolean z10 = this.f31566b;
-        e[] eVarArr = this.f31565a;
+        boolean z10 = this.f31582b;
+        e[] eVarArr = this.f31581a;
         int i11 = 0;
         if (z10) {
-            ArrayList arrayList = oVar.f31598d;
+            ArrayList arrayList = oVar.f31614d;
             u c10 = oVar.c();
             c10.getClass();
             u uVar = new u();
-            ((HashMap) uVar.f31609a).putAll(c10.f31609a);
-            uVar.f31610b = c10.f31610b;
-            uVar.f31611c = c10.f31611c;
-            uVar.f31612d = c10.f31612d;
+            ((HashMap) uVar.f31625a).putAll(c10.f31625a);
+            uVar.f31626b = c10.f31626b;
+            uVar.f31627c = c10.f31627c;
+            uVar.f31628d = c10.f31628d;
             arrayList.add(uVar);
             int length = eVarArr.length;
             int i12 = i10;
             while (i11 < length) {
                 i12 = eVarArr[i11].t(oVar, charSequence, i12);
                 if (i12 < 0) {
-                    ArrayList arrayList2 = oVar.f31598d;
+                    ArrayList arrayList2 = oVar.f31614d;
                     arrayList2.remove(arrayList2.size() - 1);
                     return i10;
                 }
                 i11++;
             }
-            ArrayList arrayList3 = oVar.f31598d;
+            ArrayList arrayList3 = oVar.f31614d;
             arrayList3.remove(arrayList3.size() - 2);
             return i12;
         }
@@ -140,9 +140,9 @@ public final class d implements e {
 
     public final String toString() {
         StringBuilder sb2 = new StringBuilder();
-        e[] eVarArr = this.f31565a;
+        e[] eVarArr = this.f31581a;
         if (eVarArr != null) {
-            boolean z10 = this.f31566b;
+            boolean z10 = this.f31582b;
             sb2.append(z10 ? "[" : "(");
             for (e eVar : eVarArr) {
                 sb2.append(eVar);

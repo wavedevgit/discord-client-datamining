@@ -7,28 +7,28 @@ import o8.j;
 public class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f26570a;
+    private final c f26586a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f26571b;
+    private final int f26587b;
 
     /* renamed from: c  reason: collision with root package name */
-    private String f26572c;
+    private String f26588c;
 
     /* renamed from: d  reason: collision with root package name */
-    private CloseableReference f26573d;
+    private CloseableReference f26589d;
 
     /* renamed from: e  reason: collision with root package name */
-    private List f26574e;
+    private List f26590e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public e(f fVar) {
-        this.f26570a = (c) j.g(fVar.e());
-        this.f26571b = fVar.d();
-        this.f26573d = fVar.f();
-        this.f26574e = fVar.c();
+        this.f26586a = (c) j.g(fVar.e());
+        this.f26587b = fVar.d();
+        this.f26589d = fVar.f();
+        this.f26590e = fVar.c();
         fVar.b();
-        this.f26572c = fVar.g();
+        this.f26588c = fVar.g();
     }
 
     public static e b(c cVar) {
@@ -40,10 +40,10 @@ public class e {
     }
 
     public synchronized void a() {
-        CloseableReference.N(this.f26573d);
-        this.f26573d = null;
-        CloseableReference.V(this.f26574e);
-        this.f26574e = null;
+        CloseableReference.N(this.f26589d);
+        this.f26589d = null;
+        CloseableReference.V(this.f26590e);
+        this.f26590e = null;
     }
 
     public ab.a c() {
@@ -51,15 +51,15 @@ public class e {
     }
 
     public c d() {
-        return this.f26570a;
+        return this.f26586a;
     }
 
     public String e() {
-        return this.f26572c;
+        return this.f26588c;
     }
 
     private e(c cVar) {
-        this.f26570a = (c) j.g(cVar);
-        this.f26571b = 0;
+        this.f26586a = (c) j.g(cVar);
+        this.f26587b = 0;
     }
 }

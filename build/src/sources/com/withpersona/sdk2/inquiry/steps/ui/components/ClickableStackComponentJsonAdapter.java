@@ -127,7 +127,7 @@ public final class ClickableStackComponentJsonAdapter extends h {
         }
         Constructor constructor = this.f20571g;
         if (constructor == null) {
-            constructor = ClickableStackComponent.class.getDeclaredConstructor(String.class, List.class, JsonLogicBoolean.class, JsonLogicBoolean.class, ClickableStack.ClickableStackComponentStyle.class, Boolean.TYPE, Integer.TYPE, sm.c.f49081c);
+            constructor = ClickableStackComponent.class.getDeclaredConstructor(String.class, List.class, JsonLogicBoolean.class, JsonLogicBoolean.class, ClickableStack.ClickableStackComponentStyle.class, Boolean.TYPE, Integer.TYPE, sm.c.f49097c);
             this.f20571g = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

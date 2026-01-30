@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/game_server/hooks/useGameServerGetExpiringEntitlements.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: useGameServerGetExpiringEntitlements, environment: var1
-        _fun102729: for (var _fun102729_ip = 0;;) switch (_fun102729_ip) {
+        _fun102983: for (var _fun102983_ip = 0;;) switch (_fun102983_ip) {
             case 0:
                 var1 = arg0;
                 var _closure2_slot0 = var1;
@@ -60,8 +60,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = null;
                 var5 = var5 == var1;
                 if (var5) {
-                    _fun102729_ip = 92;
-                    continue _fun102729
+                    _fun102983_ip = 92;
+                    continue _fun102983
                 }
             case 86:
                 var4 = var1.entitlements;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new Array(1);
                 var1[0] = var4;
                 var0 = function() { // Environment: var0
-                    _fun102731: for (var _fun102731_ip = 0;;) switch (_fun102731_ip) {
+                    _fun102985: for (var _fun102985_ip = 0;;) switch (_fun102985_ip) {
                         case 0:
                             var0 = global;
                             var2 = var0.Object;
@@ -80,16 +80,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = undefined;
                             var0 = undefined;
                             if (var6) {
-                                _fun102731_ip = 43;
-                                continue _fun102731
+                                _fun102985_ip = 43;
+                                continue _fun102985
                             }
                         case 33:
                             var5 = _closure2_slot1;
                             var0 = var5.entitlements;
                         case 43:
                             if (!(var4 == var0)) {
-                                _fun102731_ip = 49;
-                                continue _fun102731
+                                _fun102985_ip = 49;
+                                continue _fun102985
                             }
                         case 47:
                             var0 = {};
@@ -98,8 +98,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var2.length;
                             var0 = 0;
                             if (!(var0 !== var1)) {
-                                _fun102731_ip = 101;
-                                continue _fun102731
+                                _fun102985_ip = 101;
+                                continue _fun102985
                             }
                         case 65:
                             var1 = _closure1_slot0;
@@ -109,8 +109,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var1.bind(var3)(var0);
                             var0 = var1.getExpiringGuildEntitlements;
                             var0 = var0.bind(var1)(var2);
-                            _fun102731_ip = 105;
-                            continue _fun102731;
+                            _fun102985_ip = 105;
+                            continue _fun102985;
                         case 101:
                             var0 = new Array(0);
                         case 105:
@@ -123,4 +123,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 6672, 566, 13337, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 6675, 566, 13362, 2]);

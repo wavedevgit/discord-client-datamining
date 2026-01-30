@@ -55,21 +55,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var5;
         var0 = function() { // Environment: var0
-            _fun110604: for (var _fun110604_ip = 0;;) switch (_fun110604_ip) {
+            _fun110866: for (var _fun110866_ip = 0;;) switch (_fun110866_ip) {
                 case 0:
                     var3 = _closure1_slot4;
                     var2 = var3.getChannelId;
                     var6 = var2.bind(var3)();
                     var2 = null;
                     if (!(var2 != var6)) {
-                        _fun110604_ip = 188;
-                        continue _fun110604
+                        _fun110866_ip = 188;
+                        continue _fun110866
                     }
                 case 28:
                     var3 = _closure2_slot0;
                     if (var3) {
-                        _fun110604_ip = 188;
-                        continue _fun110604
+                        _fun110866_ip = 188;
+                        continue _fun110866
                     }
                 case 41:
                     var4 = _closure1_slot2;
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = 0;
                     var3 = var4 > var3;
                     if (var3) {
-                        _fun110604_ip = 140;
-                        continue _fun110604
+                        _fun110866_ip = 140;
+                        continue _fun110866
                     }
                 case 87:
                     var5 = _closure1_slot2;
@@ -146,4 +146,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3902, 1216, 3477, 566, 14194, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3908, 1216, 3477, 566, 14220, 2]);

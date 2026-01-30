@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
     var1 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: getSoundmojiFromMessage, environment: var3
-        _fun43993: for (var _fun43993_ip = 0;;) switch (_fun43993_ip) {
+        _fun44044: for (var _fun44044_ip = 0;;) switch (_fun44044_ip) {
             case 0:
                 var8 = arg1;
                 var7 = arg2;
@@ -31,8 +31,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4.bind(var5)(var1, var0);
                 var0 = var0.enabled;
                 if (!var0) {
-                    _fun43993_ip = 139;
-                    continue _fun43993
+                    _fun44044_ip = 139;
+                    continue _fun44044
                 }
             case 81:
                 var1 = _closure1_slot3;
@@ -47,18 +47,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.bind(var3)(var0, var1, var8);
                 var5 = null;
                 if (!(var5 != var7)) {
-                    _fun43993_ip = 136;
-                    continue _fun43993
+                    _fun44044_ip = 136;
+                    continue _fun44044
                 }
             case 132:
                 if (!(var5 == var8)) {
-                    _fun43993_ip = 155;
-                    continue _fun43993
+                    _fun44044_ip = 155;
+                    continue _fun44044
                 }
             case 136:
                 if (var4) {
-                    _fun43993_ip = 141;
-                    continue _fun43993
+                    _fun44044_ip = 141;
+                    continue _fun44044
                 }
             case 139:
                 return var3;
@@ -66,8 +66,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var5 != var0;
                 var1 = undefined;
                 if (!var6) {
-                    _fun43993_ip = 153;
-                    continue _fun43993
+                    _fun44044_ip = 153;
+                    continue _fun44044
                 }
             case 150:
                 var1 = var0;
@@ -86,13 +86,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var9;
                 var1 = var15[var6](var14, var13, var12, var11, var10);
                 if (!var4) {
-                    _fun43993_ip = 244;
-                    continue _fun43993
+                    _fun44044_ip = 244;
+                    continue _fun44044
                 }
             case 196:
                 if (!(var5 == var1)) {
-                    _fun43993_ip = 244;
-                    continue _fun43993
+                    _fun44044_ip = 244;
+                    continue _fun44044
                 }
             case 200:
                 var6 = _closure1_slot4;
@@ -101,8 +101,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5 == var4;
                 var3 = undefined;
                 if (var5) {
-                    _fun43993_ip = 230;
-                    continue _fun43993
+                    _fun44044_ip = 230;
+                    continue _fun44044
                 }
             case 225:
                 var3 = var4.state;
@@ -110,8 +110,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot5;
                 var2 = var2.SENT;
                 if (!(var3 === var2)) {
-                    _fun43993_ip = 246;
-                    continue _fun43993
+                    _fun44044_ip = 246;
+                    continue _fun44044
                 }
             case 244:
                 return var1;
@@ -149,7 +149,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/premium/sounds/soundmoji/utils/getSoundmojiASTFromString.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function(arg0, arg1) { // Original name: getSoundmojiASTFromString, environment: var3
-        _fun43994: for (var _fun43994_ip = 0;;) switch (_fun43994_ip) {
+        _fun44045: for (var _fun44045_ip = 0;;) switch (_fun44045_ip) {
             case 0:
                 var1 = arg0;
                 var6 = arg1;
@@ -168,23 +168,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var17[var9](var16, var15, var14, var13, var12, var11);
                 var9 = null;
                 if (!(var9 != var10)) {
-                    _fun43994_ip = 270;
-                    continue _fun43994
+                    _fun44045_ip = 270;
+                    continue _fun44045
                 }
             case 68:
                 var5 = var9 == var10;
                 var0 = undefined;
                 if (var5) {
-                    _fun43994_ip = 82;
-                    continue _fun43994
+                    _fun44045_ip = 82;
+                    continue _fun44045
                 }
             case 77:
                 var0 = var10.name;
             case 82:
                 var5 = var3;
                 if (!(var9 != var0)) {
-                    _fun43994_ip = 92;
-                    continue _fun43994
+                    _fun44045_ip = 92;
+                    continue _fun44045
                 }
             case 89:
                 var5 = var0;
@@ -202,8 +202,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var9 == var10;
                 var5 = undefined;
                 if (var6) {
-                    _fun43994_ip = 148;
-                    continue _fun43994
+                    _fun44045_ip = 148;
+                    continue _fun44045
                 }
             case 142:
                 var5 = var10.emojiId;
@@ -212,8 +212,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var9 == var10;
                 var5 = undefined;
                 if (var6) {
-                    _fun43994_ip = 168;
-                    continue _fun43994
+                    _fun44045_ip = 168;
+                    continue _fun44045
                 }
             case 162:
                 var5 = var10.emojiName;
@@ -222,8 +222,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var9 == var10;
                 var5 = undefined;
                 if (var6) {
-                    _fun43994_ip = 188;
-                    continue _fun43994
+                    _fun44045_ip = 188;
+                    continue _fun44045
                 }
             case 182:
                 var5 = var10.emojiId;
@@ -231,8 +231,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var9 != var5;
                 var5 = undefined;
                 if (!var6) {
-                    _fun43994_ip = 263;
-                    continue _fun43994
+                    _fun44045_ip = 263;
+                    continue _fun44045
                 }
             case 197:
                 var7 = _closure1_slot0;
@@ -249,8 +249,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var9 == var10;
                 var9 = undefined;
                 if (var11) {
-                    _fun43994_ip = 252;
-                    continue _fun43994
+                    _fun44045_ip = 252;
+                    continue _fun44045
                 }
             case 246:
                 var9 = var10.emojiId;
@@ -279,4 +279,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.soundmojiRawFormatRegex = var3;
     var2.getSoundmojiFromMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3910, 4207, 660, 4752, 4753, 4754, 4756, 1417, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3916, 4213, 660, 4758, 4759, 4760, 4762, 1417, 2]);

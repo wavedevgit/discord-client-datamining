@@ -15,43 +15,43 @@ import mg.zh;
 final class p implements l {
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f50324a;
+    private boolean f50340a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Context f50325b;
+    private final Context f50341b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final mg.i f50326c;
+    private final mg.i f50342c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final nk f50327d;
+    private final nk f50343d;
 
     /* renamed from: e  reason: collision with root package name */
-    private mg.k f50328e;
+    private mg.k f50344e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public p(Context context, rj.b bVar, nk nkVar) {
         mg.i iVar = new mg.i();
-        this.f50326c = iVar;
-        this.f50325b = context;
-        iVar.f38255d = bVar.a();
-        this.f50327d = nkVar;
+        this.f50342c = iVar;
+        this.f50341b = context;
+        iVar.f38271d = bVar.a();
+        this.f50343d = nkVar;
     }
 
     @Override // uj.l
     public final boolean a() {
-        if (this.f50328e == null) {
+        if (this.f50344e == null) {
             try {
-                mg.k d02 = mg.m.e(DynamiteModule.d(this.f50325b, DynamiteModule.f14870b, "com.google.android.gms.vision.dynamite").c("com.google.android.gms.vision.barcode.ChimeraNativeBarcodeDetectorCreator")).d0(sf.b.S0(this.f50325b), this.f50326c);
-                this.f50328e = d02;
-                if (d02 == null && !this.f50324a) {
+                mg.k d02 = mg.m.e(DynamiteModule.d(this.f50341b, DynamiteModule.f14870b, "com.google.android.gms.vision.dynamite").c("com.google.android.gms.vision.barcode.ChimeraNativeBarcodeDetectorCreator")).d0(sf.b.S0(this.f50341b), this.f50342c);
+                this.f50344e = d02;
+                if (d02 == null && !this.f50340a) {
                     Log.d("LegacyBarcodeScanner", "Request optional module download.");
-                    pj.l.c(this.f50325b, "barcode");
-                    this.f50324a = true;
-                    b.e(this.f50327d, xe.OPTIONAL_MODULE_NOT_AVAILABLE);
+                    pj.l.c(this.f50341b, "barcode");
+                    this.f50340a = true;
+                    b.e(this.f50343d, xe.OPTIONAL_MODULE_NOT_AVAILABLE);
                     throw new lj.a("Waiting for the barcode module to be downloaded. Please wait.", 14);
                 }
-                b.e(this.f50327d, xe.NO_ERROR);
+                b.e(this.f50343d, xe.NO_ERROR);
                 return false;
             } catch (RemoteException e10) {
                 throw new lj.a("Failed to create legacy barcode detector.", 13, e10);
@@ -65,10 +65,10 @@ final class p implements l {
     @Override // uj.l
     public final List c(vj.a aVar) {
         zh[] U0;
-        if (this.f50328e == null) {
+        if (this.f50344e == null) {
             a();
         }
-        mg.k kVar = this.f50328e;
+        mg.k kVar = this.f50344e;
         if (kVar != null) {
             mg.k kVar2 = (mg.k) q.l(kVar);
             mg.o oVar = new mg.o(aVar.l(), aVar.h(), 0, 0L, wj.b.a(aVar.k()));
@@ -84,7 +84,7 @@ final class p implements l {
                             }
                         } else {
                             Image.Plane[] planeArr = (Image.Plane[]) q.l(aVar.j());
-                            oVar.f38513d = planeArr[0].getRowStride();
+                            oVar.f38529d = planeArr[0].getRowStride();
                             U0 = kVar2.T0(sf.b.S0(planeArr[0].getBuffer()), oVar);
                         }
                     } else {
@@ -107,14 +107,14 @@ final class p implements l {
 
     @Override // uj.l
     public final void zzb() {
-        mg.k kVar = this.f50328e;
+        mg.k kVar = this.f50344e;
         if (kVar != null) {
             try {
                 kVar.S0();
             } catch (RemoteException e10) {
                 Log.e("LegacyBarcodeScanner", "Failed to release legacy barcode detector.", e10);
             }
-            this.f50328e = null;
+            this.f50344e = null;
         }
     }
 }

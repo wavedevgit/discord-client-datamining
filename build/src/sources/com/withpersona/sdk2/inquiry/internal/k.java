@@ -83,15 +83,15 @@ public final class k implements vm.k {
         }
 
         private a() {
-            k.a aVar = vm.k.f51267a;
-            this.f19944a = new vm.m(Reflection.getOrCreateKotlinClass(n.d.b.class), g2.f39439f, C0244a.f19945d);
+            k.a aVar = vm.k.f51283a;
+            this.f19944a = new vm.m(Reflection.getOrCreateKotlinClass(n.d.b.class), g2.f39455f, C0244a.f19945d);
         }
     }
 
     public k(View view) {
         Intrinsics.checkNotNullParameter(view, "view");
         this.f19940b = view;
-        View findViewById = view.findViewById(f2.f39399a);
+        View findViewById = view.findViewById(f2.f39415a);
         Intrinsics.checkNotNullExpressionValue(findViewById, "findViewById(...)");
         LottieAnimationView lottieAnimationView = (LottieAnimationView) findViewById;
         this.f19941c = lottieAnimationView;
@@ -104,7 +104,7 @@ public final class k implements vm.k {
             lottieAnimationView.v();
             return;
         }
-        lottieAnimationView.l(new q5.e("**"), l5.a0.f36847b, new y5.e() { // from class: mo.x
+        lottieAnimationView.l(new q5.e("**"), l5.a0.f36863b, new y5.e() { // from class: mo.x
             @Override // y5.e
             public final Object a(y5.b bVar) {
                 Integer g10;
@@ -112,7 +112,7 @@ public final class k implements vm.k {
                 return g10;
             }
         });
-        lottieAnimationView.l(new q5.e("**"), l5.a0.f36846a, new y5.e() { // from class: mo.y
+        lottieAnimationView.l(new q5.e("**"), l5.a0.f36862a, new y5.e() { // from class: mo.y
             @Override // y5.e
             public final Object a(y5.b bVar) {
                 Integer h10;
@@ -126,7 +126,7 @@ public final class k implements vm.k {
     public static final Integer g(k kVar, y5.b bVar) {
         Context context = kVar.f19940b.getContext();
         Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-        return Integer.valueOf(j(kVar, context, yg.b.f54352m, null, false, 6, null));
+        return Integer.valueOf(j(kVar, context, yg.b.f54368m, null, false, 6, null));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -166,7 +166,7 @@ public final class k implements vm.k {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit m(n.d.b bVar) {
         bVar.a().invoke();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -188,7 +188,7 @@ public final class k implements vm.k {
         Intrinsics.checkNotNullParameter(rendering, "rendering");
         Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
         if (rendering.c() && this.f19942d == null) {
-            k(h2.f39447a);
+            k(h2.f39463a);
             this.f19941c.setScaleX(0.5f);
             this.f19941c.setScaleY(0.5f);
         }
@@ -227,7 +227,7 @@ public final class k implements vm.k {
                 Integer fillColorValue = b11.getFillColorValue();
                 if (fillColorValue != null) {
                     final int intValue = fillColorValue.intValue();
-                    kVar.f19941c.l(new q5.e("**"), l5.a0.f36846a, new y5.e() { // from class: mo.u
+                    kVar.f19941c.l(new q5.e("**"), l5.a0.f36862a, new y5.e() { // from class: mo.u
                         @Override // y5.e
                         public final Object a(y5.b bVar) {
                             Integer n10;
@@ -239,7 +239,7 @@ public final class k implements vm.k {
                 Integer strokeColorValue = b11.getStrokeColorValue();
                 if (strokeColorValue != null) {
                     final int intValue2 = strokeColorValue.intValue();
-                    kVar.f19941c.l(new q5.e("**"), l5.a0.f36847b, new y5.e() { // from class: mo.v
+                    kVar.f19941c.l(new q5.e("**"), l5.a0.f36863b, new y5.e() { // from class: mo.v
                         @Override // y5.e
                         public final Object a(y5.b bVar) {
                             Integer o10;

@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var4 = dependencyMap;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
-        _fun55543: for (var _fun55543_ip = 0;;) switch (_fun55543_ip) {
+        _fun55588: for (var _fun55588_ip = 0;;) switch (_fun55588_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -26,8 +26,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun55543_ip = 74;
-                continue _fun55543;
+                _fun55588_ip = 74;
+                continue _fun55588;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
         var4 = function(arg0) { // Original name: AppliedGuildBoostRecord, environment: var1
-            _fun55547: for (var _fun55547_ip = 0;;) switch (_fun55547_ip) {
+            _fun55592: for (var _fun55592_ip = 0;;) switch (_fun55592_ip) {
                 case 0:
                     var2 = arg0;
                     var4 = this;
@@ -92,14 +92,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot5;
                     var0 = var0.bind(var3)();
                     if (var0) {
-                        _fun55547_ip = 65;
-                        continue _fun55547
+                        _fun55592_ip = 65;
+                        continue _fun55592
                     }
                 case 52:
                     var0 = var9.apply;
                     var0 = var0.bind(var9)(var4, var3);
-                    _fun55547_ip = 103;
-                    continue _fun55547;
+                    _fun55592_ip = 103;
+                    continue _fun55592;
                 case 65:
                     var6 = global;
                     var8 = var6.Reflect;
@@ -125,8 +125,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = null;
                     var3 = var1 != var3;
                     if (!var3) {
-                        _fun55547_ip = 186;
-                        continue _fun55547
+                        _fun55592_ip = 186;
+                        continue _fun55592
                     }
                 case 180:
                     var1 = var2.endsAt;
@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'createFromServer';
         var0.key = var5;
         var1 = function(arg0) { // Original name: value, environment: var1
-            _fun55548: for (var _fun55548_ip = 0;;) switch (_fun55548_ip) {
+            _fun55593: for (var _fun55593_ip = 0;;) switch (_fun55593_ip) {
                 case 0:
                     var3 = arg0;
                     var2 = _closure2_slot0;
@@ -157,13 +157,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var3.user;
                     var6 = null;
                     if (!(var6 == var1)) {
-                        _fun55548_ip = 49;
-                        continue _fun55548
+                        _fun55593_ip = 49;
+                        continue _fun55593
                     }
                 case 41:
                     var1 = var3.user_id;
-                    _fun55548_ip = 59;
-                    continue _fun55548;
+                    _fun55593_ip = 59;
+                    continue _fun55593;
                 case 49:
                     var4 = var3.user;
                     var1 = var4.id;
@@ -177,16 +177,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var6 != var1;
                     var1 = null;
                     if (!var4) {
-                        _fun55548_ip = 148;
-                        continue _fun55548
+                        _fun55593_ip = 148;
+                        continue _fun55593
                     }
                 case 98:
                     var5 = var3.ends_at;
                     var4 = '';
                     var1 = null;
                     if (!(var4 !== var5)) {
-                        _fun55548_ip = 148;
-                        continue _fun55548
+                        _fun55593_ip = 148;
+                        continue _fun55593
                     }
                 case 114:
                     var4 = global;

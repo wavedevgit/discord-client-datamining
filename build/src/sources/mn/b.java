@@ -5,22 +5,22 @@ import kotlin.Result;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f39167a;
+    private final Object f39183a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f39168b;
+    private final boolean f39184b;
 
     public b(Object obj, boolean z10) {
-        this.f39167a = obj;
-        this.f39168b = z10;
+        this.f39183a = obj;
+        this.f39184b = z10;
     }
 
     public final Object a() {
-        return this.f39167a;
+        return this.f39183a;
     }
 
     public final boolean b() {
-        return this.f39168b;
+        return this.f39184b;
     }
 
     public boolean equals(Object obj) {
@@ -31,19 +31,19 @@ public final class b {
             return false;
         }
         b bVar = (b) obj;
-        if (Result.d(this.f39167a, bVar.f39167a) && this.f39168b == bVar.f39168b) {
+        if (Result.d(this.f39183a, bVar.f39183a) && this.f39184b == bVar.f39184b) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (Result.f(this.f39167a) * 31) + Boolean.hashCode(this.f39168b);
+        return (Result.f(this.f39183a) * 31) + Boolean.hashCode(this.f39184b);
     }
 
     public String toString() {
-        String i10 = Result.i(this.f39167a);
-        boolean z10 = this.f39168b;
+        String i10 = Result.i(this.f39183a);
+        boolean z10 = this.f39184b;
         return "AnalyzerResult(result=" + i10 + ", isActiveAnalyzer=" + z10 + ")";
     }
 }

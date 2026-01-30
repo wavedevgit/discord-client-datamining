@@ -11,42 +11,42 @@ public abstract class k2 {
     private static final class a extends CameraDevice.StateCallback {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f46415a = new ArrayList();
+        private final List f46431a = new ArrayList();
 
         a(List list) {
             Iterator it = list.iterator();
             while (it.hasNext()) {
                 CameraDevice.StateCallback stateCallback = (CameraDevice.StateCallback) it.next();
                 if (!(stateCallback instanceof b)) {
-                    this.f46415a.add(stateCallback);
+                    this.f46431a.add(stateCallback);
                 }
             }
         }
 
         @Override // android.hardware.camera2.CameraDevice.StateCallback
         public void onClosed(CameraDevice cameraDevice) {
-            for (CameraDevice.StateCallback stateCallback : this.f46415a) {
+            for (CameraDevice.StateCallback stateCallback : this.f46431a) {
                 stateCallback.onClosed(cameraDevice);
             }
         }
 
         @Override // android.hardware.camera2.CameraDevice.StateCallback
         public void onDisconnected(CameraDevice cameraDevice) {
-            for (CameraDevice.StateCallback stateCallback : this.f46415a) {
+            for (CameraDevice.StateCallback stateCallback : this.f46431a) {
                 stateCallback.onDisconnected(cameraDevice);
             }
         }
 
         @Override // android.hardware.camera2.CameraDevice.StateCallback
         public void onError(CameraDevice cameraDevice, int i10) {
-            for (CameraDevice.StateCallback stateCallback : this.f46415a) {
+            for (CameraDevice.StateCallback stateCallback : this.f46431a) {
                 stateCallback.onError(cameraDevice, i10);
             }
         }
 
         @Override // android.hardware.camera2.CameraDevice.StateCallback
         public void onOpened(CameraDevice cameraDevice) {
-            for (CameraDevice.StateCallback stateCallback : this.f46415a) {
+            for (CameraDevice.StateCallback stateCallback : this.f46431a) {
                 stateCallback.onOpened(cameraDevice);
             }
         }

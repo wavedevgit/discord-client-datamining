@@ -8,14 +8,14 @@ import java.nio.ByteBuffer;
 public class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final IncorrectJpegMetadataQuirk f27211a;
+    private final IncorrectJpegMetadataQuirk f27227a;
 
     public d(d2 d2Var) {
-        this.f27211a = (IncorrectJpegMetadataQuirk) d2Var.b(IncorrectJpegMetadataQuirk.class);
+        this.f27227a = (IncorrectJpegMetadataQuirk) d2Var.b(IncorrectJpegMetadataQuirk.class);
     }
 
     public byte[] a(n nVar) {
-        IncorrectJpegMetadataQuirk incorrectJpegMetadataQuirk = this.f27211a;
+        IncorrectJpegMetadataQuirk incorrectJpegMetadataQuirk = this.f27227a;
         if (incorrectJpegMetadataQuirk == null) {
             ByteBuffer e10 = nVar.c1()[0].e();
             byte[] bArr = new byte[e10.capacity()];

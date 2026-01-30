@@ -15,7 +15,7 @@ public final class d implements Sink {
 
     @Override // okio.Sink
     public Timeout timeout() {
-        return Timeout.f44369e;
+        return Timeout.f44385e;
     }
 
     @Override // okio.Sink, java.io.Closeable, java.lang.AutoCloseable

@@ -15,14 +15,14 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f47820a = new c(null);
+    public static final c f47836a = new c(null);
 
     /* renamed from: r2.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class C0576a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final C0577a f47821a = new C0577a(null);
+        public static final C0577a f47837a = new C0577a(null);
 
         /* renamed from: r2.a$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -33,7 +33,7 @@ public abstract class a {
 
             public final m a(Intent intent) {
                 Intrinsics.checkNotNullParameter(intent, "intent");
-                m.a aVar = m.f27325i;
+                m.a aVar = m.f27341i;
                 Bundle bundleExtra = intent.getBundleExtra("android.service.credentials.extra.GET_CREDENTIAL_EXCEPTION");
                 if (bundleExtra == null) {
                     return null;
@@ -60,7 +60,7 @@ public abstract class a {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final C0578a f47822a = new C0578a(null);
+        public static final C0578a f47838a = new C0578a(null);
 
         /* renamed from: r2.a$b$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -106,17 +106,17 @@ public abstract class a {
         public final m a(Intent intent) {
             Intrinsics.checkNotNullParameter(intent, "intent");
             if (Build.VERSION.SDK_INT >= 34) {
-                return b.f47822a.a(intent);
+                return b.f47838a.a(intent);
             }
-            return C0576a.f47821a.a(intent);
+            return C0576a.f47837a.a(intent);
         }
 
         public final d0 b(Intent intent) {
             Intrinsics.checkNotNullParameter(intent, "intent");
             if (Build.VERSION.SDK_INT >= 34) {
-                return b.f47822a.b(intent);
+                return b.f47838a.b(intent);
             }
-            return C0576a.f47821a.b(intent);
+            return C0576a.f47837a.b(intent);
         }
 
         private c() {

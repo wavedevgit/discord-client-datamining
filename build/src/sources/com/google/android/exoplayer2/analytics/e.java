@@ -682,7 +682,7 @@ public final class e implements AnalyticsListener, d.a {
         }
         ne.a.e(eventTime);
         if (!z10 && (bVar = eventTime.f13046d) != null && bVar.b()) {
-            long i11 = eventTime.f13044b.l(eventTime.f13046d.f47284a, this.f13155f).i(eventTime.f13046d.f47285b);
+            long i11 = eventTime.f13044b.l(eventTime.f13046d.f47300a, this.f13155f).i(eventTime.f13046d.f47301b);
             if (i11 == Long.MIN_VALUE) {
                 i11 = this.f13155f.f12997o;
             }
@@ -690,7 +690,7 @@ public final class e implements AnalyticsListener, d.a {
             Timeline timeline = eventTime.f13044b;
             int i12 = eventTime.f13045c;
             r.b bVar2 = eventTime.f13046d;
-            AnalyticsListener.EventTime eventTime2 = new AnalyticsListener.EventTime(j10, timeline, i12, new r.b(bVar2.f47284a, bVar2.f47287d, bVar2.f47285b), w0.p1(i11 + this.f13155f.q()), eventTime.f13044b, eventTime.f13049g, eventTime.f13050h, eventTime.f13051i, eventTime.f13052j);
+            AnalyticsListener.EventTime eventTime2 = new AnalyticsListener.EventTime(j10, timeline, i12, new r.b(bVar2.f47300a, bVar2.f47303d, bVar2.f47301b), w0.p1(i11 + this.f13155f.q()), eventTime.f13044b, eventTime.f13049g, eventTime.f13050h, eventTime.f13051i, eventTime.f13052j);
             z10 = this.f13150a.e(eventTime2, str);
             eventTime = eventTime2;
         }

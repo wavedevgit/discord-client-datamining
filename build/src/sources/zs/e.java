@@ -8,7 +8,7 @@ public abstract class e extends k {
     public static final class a extends e {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final a f56083a = new a();
+        public static final a f56099a = new a();
 
         private a() {
             super(null);
@@ -19,7 +19,7 @@ public abstract class e extends k {
     public static final class b extends e {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final b f56084a = new b();
+        public static final b f56100a = new b();
 
         private b() {
             super(null);
@@ -30,7 +30,7 @@ public abstract class e extends k {
     public static final class c extends e {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final c f56085a = new c();
+        public static final c f56101a = new c();
 
         private c() {
             super(null);
@@ -41,7 +41,7 @@ public abstract class e extends k {
     public static final class d extends e {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final d f56086a = new d();
+        public static final d f56102a = new d();
 
         private d() {
             super(null);
@@ -53,7 +53,7 @@ public abstract class e extends k {
     public static final class C0796e extends e {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final C0796e f56087a = new C0796e();
+        public static final C0796e f56103a = new C0796e();
 
         private C0796e() {
             super(null);
@@ -64,7 +64,7 @@ public abstract class e extends k {
     public static final class f extends e {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final f f56088a = new f();
+        public static final f f56104a = new f();
 
         private f() {
             super(null);
@@ -75,7 +75,7 @@ public abstract class e extends k {
     public static final class g extends e {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final g f56089a = new g();
+        public static final g f56105a = new g();
 
         private g() {
             super(null);
@@ -86,7 +86,7 @@ public abstract class e extends k {
     public static final class h extends e {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final h f56090a = new h();
+        public static final h f56106a = new h();
 
         private h() {
             super(null);
@@ -97,7 +97,7 @@ public abstract class e extends k {
     public static final class i extends e {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final i f56091a = new i();
+        public static final i f56107a = new i();
 
         private i() {
             super(null);

@@ -57,7 +57,7 @@ final class MediaManagerModule$getVideoMetadata$1 extends k implements Function2
             Uri uri = this.$inputUri;
             Promise promise = this.$promise;
             try {
-                Result.a aVar = Result.f33279e;
+                Result.a aVar = Result.f33295e;
                 mediaResolver = mediaManagerModule.mediaResolver;
                 Map<String, Object> handleVideoMetadata = mediaResolver.handleVideoMetadata(uri);
                 WritableMap createMap = Arguments.createMap();
@@ -77,9 +77,9 @@ final class MediaManagerModule$getVideoMetadata$1 extends k implements Function2
                     }
                 }
                 promise.resolve(createMap);
-                b10 = Result.b(Unit.f33282a);
+                b10 = Result.b(Unit.f33298a);
             } catch (Throwable th2) {
-                Result.a aVar2 = Result.f33279e;
+                Result.a aVar2 = Result.f33295e;
                 b10 = Result.b(c.a(th2));
             }
             Promise promise2 = this.$promise;
@@ -87,13 +87,13 @@ final class MediaManagerModule$getVideoMetadata$1 extends k implements Function2
             if (e10 != null) {
                 promise2.reject(e10);
             }
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaManagerModule$getVideoMetadata$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((MediaManagerModule$getVideoMetadata$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

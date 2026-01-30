@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Modal/native/ModalScreen.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: ModalScreen, environment: var1
-        _fun52884: for (var _fun52884_ip = 0;;) switch (_fun52884_ip) {
+        _fun52929: for (var _fun52929_ip = 0;;) switch (_fun52929_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.backgroundColor;
@@ -79,8 +79,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = {};
                 var10 = null;
                 if (!(var10 == var8)) {
-                    _fun52884_ip = 97;
-                    continue _fun52884
+                    _fun52929_ip = 97;
+                    continue _fun52929
                 }
             case 87:
                 var9 = var9.container;
@@ -102,4 +102,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ModalScreen = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 4849, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 4855, 2]);

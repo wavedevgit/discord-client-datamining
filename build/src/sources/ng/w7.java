@@ -5,58 +5,58 @@ import kotlin.jvm.internal.LongCompanionObject;
 public final class w7 {
 
     /* renamed from: a  reason: collision with root package name */
-    private Long f41808a;
+    private Long f41824a;
 
     /* renamed from: b  reason: collision with root package name */
-    private x7 f41809b;
+    private x7 f41825b;
 
     /* renamed from: c  reason: collision with root package name */
-    private r7 f41810c;
+    private r7 f41826c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Integer f41811d;
+    private Integer f41827d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Integer f41812e;
+    private Integer f41828e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Integer f41813f;
+    private Integer f41829f;
 
     /* renamed from: g  reason: collision with root package name */
-    private Integer f41814g;
+    private Integer f41830g;
 
     public final w7 b(Long l10) {
-        this.f41808a = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
+        this.f41824a = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
         return this;
     }
 
     public final w7 c(Integer num) {
-        this.f41811d = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
+        this.f41827d = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
         return this;
     }
 
     public final w7 d(r7 r7Var) {
-        this.f41810c = r7Var;
+        this.f41826c = r7Var;
         return this;
     }
 
     public final w7 e(Integer num) {
-        this.f41813f = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
+        this.f41829f = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
         return this;
     }
 
     public final w7 f(x7 x7Var) {
-        this.f41809b = x7Var;
+        this.f41825b = x7Var;
         return this;
     }
 
     public final w7 g(Integer num) {
-        this.f41812e = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
+        this.f41828e = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
         return this;
     }
 
     public final w7 h(Integer num) {
-        this.f41814g = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
+        this.f41830g = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
         return this;
     }
 

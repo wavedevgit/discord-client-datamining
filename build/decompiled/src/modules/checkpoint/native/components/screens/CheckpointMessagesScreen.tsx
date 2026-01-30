@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/checkpoint/native/components/screens/CheckpointMessagesScreen.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Original name: CheckpointMessagesScreen, environment: var1
-        _fun86480: for (var _fun86480_ip = 0;;) switch (_fun86480_ip) {
+        _fun86526: for (var _fun86526_ip = 0;;) switch (_fun86526_ip) {
             case 0:
                 var0 = _closure1_slot9;
                 var3 = undefined;
@@ -122,8 +122,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.bind(var4)(var1, var0);
                 var0 = var0.messages;
                 if (!(var3 === var0)) {
-                    _fun86480_ip = 106;
-                    continue _fun86480
+                    _fun86526_ip = 106;
+                    continue _fun86526
                 }
             case 75:
                 var1 = {
@@ -189,8 +189,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = {};
                 var9 = 'column';
                 if (!var13) {
-                    _fun86480_ip = 348;
-                    continue _fun86480
+                    _fun86526_ip = 348;
+                    continue _fun86526
                 }
             case 344:
                 var9 = 'row';
@@ -207,8 +207,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = {};
                 var12 = '50%';
                 if (!var13) {
-                    _fun86480_ip = 401;
-                    continue _fun86480
+                    _fun86526_ip = 401;
+                    continue _fun86526
                 }
             case 395:
                 var12 = '100%';
@@ -299,8 +299,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var17 = null;
                 if (!(var17 == var24)) {
-                    _fun86480_ip = 823;
-                    continue _fun86480
+                    _fun86526_ip = 823;
+                    continue _fun86526
                 }
             case 748:
                 var20 = _closure1_slot0;
@@ -332,8 +332,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var17.monthHook = var25;
                 var17 = var20.bind(var21)(var18, var17);
-                _fun86480_ip = 903;
-                continue _fun86480;
+                _fun86526_ip = 903;
+                continue _fun86526;
             case 823:
                 var20 = _closure1_slot0;
                 var18 = _closure1_slot2;
@@ -398,4 +398,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 11128, 9119, 33, 1297, 671, 566, 11130, 3110, 6806, 1234, 5319, 11132, 11135, 11147, 4794, 11137, 2267, 11148, 11151, 11144, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 11134, 9123, 33, 1297, 671, 566, 11136, 3110, 6809, 1234, 5323, 11138, 11141, 11153, 4800, 11143, 2267, 11154, 11157, 11150, 2]);

@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/self_mod/inappropriate_conversation/hooks/useInappropriateConversationSafetyToolsWarningForChannel.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: useInappropriateConversationSafetyToolsWarningForChannel, environment: var1
-        _fun71899: for (var _fun71899_ip = 0;;) switch (_fun71899_ip) {
+        _fun71945: for (var _fun71945_ip = 0;;) switch (_fun71945_ip) {
             case 0:
                 var6 = _closure1_slot0;
                 var7 = _closure1_slot1;
@@ -47,13 +47,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = arg0;
                 var5 = var6.bind(var7)(var5);
                 if (!var4) {
-                    _fun71899_ip = 129;
-                    continue _fun71899
+                    _fun71945_ip = 129;
+                    continue _fun71945
                 }
             case 100:
                 if (!var3) {
-                    _fun71899_ip = 129;
-                    continue _fun71899
+                    _fun71945_ip = 129;
+                    continue _fun71945
                 }
             case 103:
                 var4 = var5.filter;
@@ -67,23 +67,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var4.bind(var5)(var3);
                 var4 = var3.length;
                 if (!(var1 === var4)) {
-                    _fun71899_ip = 131;
-                    continue _fun71899
+                    _fun71945_ip = 131;
+                    continue _fun71945
                 }
             case 129:
                 return var2;
             case 131:
                 var2 = var3.sort;
                 var0 = function(arg0, arg1) { // Environment: var0
-                    _fun71901: for (var _fun71901_ip = 0;;) switch (_fun71901_ip) {
+                    _fun71947: for (var _fun71947_ip = 0;;) switch (_fun71947_ip) {
                         case 0:
                             var1 = arg0;
                             var0 = arg1;
                             var3 = var1.type;
                             var2 = var0.type;
                             if (!(!(var3 > var2))) {
-                                _fun71901_ip = 45;
-                                continue _fun71901
+                                _fun71947_ip = 45;
+                                continue _fun71947
                             }
                         case 20:
                             var1 = var1.dismiss_timestamp;
@@ -91,8 +91,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var1 < var0;
                             var0 = -1;
                             if (!var1) {
-                                _fun71901_ip = 48;
-                                continue _fun71901
+                                _fun71947_ip = 48;
+                                continue _fun71947
                             }
                         case 45:
                             var0 = 1;
@@ -107,4 +107,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useInappropriateConversationSafetyToolsWarningForChannel = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [8950, 8951, 8953, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [8954, 8955, 8957, 2]);

@@ -8,33 +8,33 @@ import org.jetbrains.annotations.NotNull;
 public final class PossiblyInnerType {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ClassifierDescriptorWithTypeParameters f33600a;
+    private final ClassifierDescriptorWithTypeParameters f33616a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f33601b;
+    private final List f33617b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final PossiblyInnerType f33602c;
+    private final PossiblyInnerType f33618c;
 
     public PossiblyInnerType(@NotNull ClassifierDescriptorWithTypeParameters classifierDescriptor, @NotNull List<? extends TypeProjection> arguments, PossiblyInnerType possiblyInnerType) {
         Intrinsics.checkNotNullParameter(classifierDescriptor, "classifierDescriptor");
         Intrinsics.checkNotNullParameter(arguments, "arguments");
-        this.f33600a = classifierDescriptor;
-        this.f33601b = arguments;
-        this.f33602c = possiblyInnerType;
+        this.f33616a = classifierDescriptor;
+        this.f33617b = arguments;
+        this.f33618c = possiblyInnerType;
     }
 
     @NotNull
     public final List<TypeProjection> getArguments() {
-        return this.f33601b;
+        return this.f33617b;
     }
 
     @NotNull
     public final ClassifierDescriptorWithTypeParameters getClassifierDescriptor() {
-        return this.f33600a;
+        return this.f33616a;
     }
 
     public final PossiblyInnerType getOuterType() {
-        return this.f33602c;
+        return this.f33618c;
     }
 }

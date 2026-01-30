@@ -199,9 +199,9 @@ public final class i<S> extends q {
             String string;
             super.onInitializeAccessibilityNodeInfo(view, accessibilityNodeInfoCompat);
             if (i.this.f15926w.getVisibility() == 0) {
-                string = i.this.getString(yg.i.f54495u);
+                string = i.this.getString(yg.i.f54511u);
             } else {
-                string = i.this.getString(yg.i.f54493s);
+                string = i.this.getString(yg.i.f54509s);
             }
             accessibilityNodeInfoCompat.I0(string);
         }
@@ -294,17 +294,17 @@ public final class i<S> extends q {
     }
 
     private void E(View view, o oVar) {
-        MaterialButton materialButton = (MaterialButton) view.findViewById(yg.f.f54440t);
+        MaterialButton materialButton = (MaterialButton) view.findViewById(yg.f.f54456t);
         materialButton.setTag(A);
         h0.n0(materialButton, new h());
-        View findViewById = view.findViewById(yg.f.f54442v);
+        View findViewById = view.findViewById(yg.f.f54458v);
         this.f15923t = findViewById;
         findViewById.setTag(f15914y);
-        View findViewById2 = view.findViewById(yg.f.f54441u);
+        View findViewById2 = view.findViewById(yg.f.f54457u);
         this.f15924u = findViewById2;
         findViewById2.setTag(f15915z);
         this.f15925v = view.findViewById(yg.f.C);
-        this.f15926w = view.findViewById(yg.f.f54444x);
+        this.f15926w = view.findViewById(yg.f.f54460x);
         Q(l.DAY);
         materialButton.setText(this.f15918o.k());
         this.f15922s.addOnScrollListener(new C0181i(oVar, materialButton));
@@ -449,15 +449,15 @@ public final class i<S> extends q {
         LayoutInflater cloneInContext = layoutInflater.cloneInContext(contextThemeWrapper);
         com.google.android.material.datepicker.m m10 = this.f15917i.m();
         if (com.google.android.material.datepicker.k.J(contextThemeWrapper)) {
-            i10 = yg.h.f54469r;
+            i10 = yg.h.f54485r;
             i11 = 1;
         } else {
-            i10 = yg.h.f54467p;
+            i10 = yg.h.f54483p;
             i11 = 0;
         }
         View inflate = cloneInContext.inflate(i10, viewGroup, false);
         inflate.setMinimumHeight(L(requireContext()));
-        GridView gridView = (GridView) inflate.findViewById(yg.f.f54445y);
+        GridView gridView = (GridView) inflate.findViewById(yg.f.f54461y);
         h0.n0(gridView, new c());
         int i12 = this.f15917i.i();
         if (i12 > 0) {
@@ -473,7 +473,7 @@ public final class i<S> extends q {
         this.f15922s.setTag(f15913x);
         o oVar = new o(contextThemeWrapper, null, this.f15917i, null, new e());
         this.f15922s.setAdapter(oVar);
-        int integer = contextThemeWrapper.getResources().getInteger(yg.g.f54451e);
+        int integer = contextThemeWrapper.getResources().getInteger(yg.g.f54467e);
         RecyclerView recyclerView = (RecyclerView) inflate.findViewById(yg.f.C);
         this.f15921r = recyclerView;
         if (recyclerView != null) {
@@ -482,7 +482,7 @@ public final class i<S> extends q {
             this.f15921r.setAdapter(new u(this));
             this.f15921r.addItemDecoration(F());
         }
-        if (inflate.findViewById(yg.f.f54440t) != null) {
+        if (inflate.findViewById(yg.f.f54456t) != null) {
             E(inflate, oVar);
         }
         if (!com.google.android.material.datepicker.k.J(contextThemeWrapper)) {

@@ -67,9 +67,9 @@ public class FabTransformationSheetBehavior extends FabTransformationBehavior {
     protected FabTransformationBehavior.b d0(Context context, boolean z10) {
         int i10;
         if (z10) {
-            i10 = a.f54329d;
+            i10 = a.f54345d;
         } else {
-            i10 = a.f54328c;
+            i10 = a.f54344c;
         }
         FabTransformationBehavior.b bVar = new FabTransformationBehavior.b();
         bVar.f16663a = g.c(context, i10);

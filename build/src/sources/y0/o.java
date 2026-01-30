@@ -3,5 +3,5 @@ package y0;
 public abstract class o implements n {
 
     /* renamed from: d  reason: collision with root package name */
-    private final x0.a f53886d = new x0.a(0);
+    private final x0.a f53902d = new x0.a(0);
 }

@@ -61,7 +61,7 @@ public final class EmbeddedActivityInviteView extends ConstraintLayout {
     public static final Unit setSubtitleText_2dg2Uz0$lambda$8$lambda$7(Function2 function2, String str, LinkContentNode node) {
         Intrinsics.checkNotNullParameter(node, "node");
         function2.invoke(MessageId.m1084boximpl(str), node);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     public final void setAvatarUris(@NotNull List<String> avatarUris) {

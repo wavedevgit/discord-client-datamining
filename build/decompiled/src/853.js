@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
     var0 = function(arg0) { // Original name: hasSpansEnabled, environment: var0
-        _fun8998: for (var _fun8998_ip = 0;;) switch (_fun8998_ip) {
+        _fun8999: for (var _fun8999_ip = 0;;) switch (_fun8999_ip) {
             case 0:
                 var2 = arg0;
                 var0 = global;
@@ -23,22 +23,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = 'boolean';
                 var1 = typeof var1;
                 if (!(var3 === var1)) {
-                    _fun8998_ip = 35;
-                    continue _fun8998
+                    _fun8999_ip = 35;
+                    continue _fun8999
                 }
             case 22:
                 var0 = var0.__SENTRY_TRACING__;
                 if (var0) {
-                    _fun8998_ip = 35;
-                    continue _fun8998
+                    _fun8999_ip = 35;
+                    continue _fun8999
                 }
             case 31:
                 var0 = false;
                 return var0;
             case 35:
                 if (var2) {
-                    _fun8998_ip = 94;
-                    continue _fun8998
+                    _fun8999_ip = 94;
+                    continue _fun8999
                 }
             case 38:
                 var3 = _closure1_slot0;
@@ -52,8 +52,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = null;
                 var1 = var1 == var3;
                 if (var1) {
-                    _fun8998_ip = 91;
-                    continue _fun8998
+                    _fun8999_ip = 91;
+                    continue _fun8999
                 }
             case 81:
                 var1 = var3.getOptions;
@@ -63,16 +63,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 94:
                 var0 = !var2;
                 if (var0) {
-                    _fun8998_ip = 127;
-                    continue _fun8998
+                    _fun8999_ip = 127;
+                    continue _fun8999
                 }
             case 100:
                 var3 = var2.tracesSampleRate;
                 var1 = null;
                 var1 = var1 == var3;
                 if (!var1) {
-                    _fun8998_ip = 124;
-                    continue _fun8998
+                    _fun8999_ip = 124;
+                    continue _fun8999
                 }
             case 115:
                 var2 = var2.tracesSampler;

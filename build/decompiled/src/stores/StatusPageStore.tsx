@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
-        _fun96498: for (var _fun96498_ip = 0;;) switch (_fun96498_ip) {
+        _fun96752: for (var _fun96752_ip = 0;;) switch (_fun96752_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 72: // try_end0
-                _fun96498_ip = 76;
-                continue _fun96498;
+                _fun96752_ip = 76;
+                continue _fun96752;
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
@@ -86,7 +86,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
         var3 = function() { // Original name: MaintenanceStore, environment: var5
-            _fun96502: for (var _fun96502_ip = 0;;) switch (_fun96502_ip) {
+            _fun96756: for (var _fun96756_ip = 0;;) switch (_fun96756_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -100,16 +100,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot10;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun96502_ip = 69;
-                        continue _fun96502
+                        _fun96756_ip = 69;
+                        continue _fun96756
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun96502_ip = 105;
-                    continue _fun96502;
+                    _fun96756_ip = 105;
+                    continue _fun96756;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -163,15 +163,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'getScheduledMaintenance';
         var4.key = var6;
         var5 = function() { // Original name: value, environment: var5
-            _fun96505: for (var _fun96505_ip = 0;;) switch (_fun96505_ip) {
+            _fun96759: for (var _fun96759_ip = 0;;) switch (_fun96759_ip) {
                 case 0:
                     var0 = _closure1_slot8;
                     var4 = null;
                     var2 = var4 != var0;
                     var0 = null;
                     if (!var2) {
-                        _fun96505_ip = 41;
-                        continue _fun96505
+                        _fun96759_ip = 41;
+                        continue _fun96759
                     }
                 case 18:
                     var2 = _closure1_slot8;
@@ -179,8 +179,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure1_slot9;
                     var0 = null;
                     if (!(var3 !== var2)) {
-                        _fun96505_ip = 41;
-                        continue _fun96505
+                        _fun96759_ip = 41;
+                        continue _fun96759
                     }
                 case 37:
                     var0 = _closure1_slot8;
@@ -224,13 +224,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.STATUS_PAGE_SCHEDULED_MAINTENANCE = var8;
     var3 = function() { // Original name: handleScheduledMaintenanceAck, environment: var3
-        _fun96509: for (var _fun96509_ip = 0;;) switch (_fun96509_ip) {
+        _fun96763: for (var _fun96763_ip = 0;;) switch (_fun96763_ip) {
             case 0:
                 var2 = _closure1_slot8;
                 var0 = null;
                 if (!(var0 != var2)) {
-                    _fun96509_ip = 77;
-                    continue _fun96509
+                    _fun96763_ip = 77;
+                    continue _fun96763
                 }
             case 13:
                 var0 = _closure1_slot8;

@@ -17,10 +17,10 @@ public abstract class h implements n {
     public static final h WEEK_OF_WEEK_BASED_YEAR;
 
     /* renamed from: a  reason: collision with root package name */
-    public static final int[] f31637a;
+    public static final int[] f31653a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final /* synthetic */ h[] f31638b;
+    public static final /* synthetic */ h[] f31654b;
 
     @Override // j$.time.temporal.n
     public final boolean isDateBased() {
@@ -29,11 +29,11 @@ public abstract class h implements n {
 
     public static boolean I(TemporalAccessor temporalAccessor) {
         Objects.requireNonNull(temporalAccessor, "temporal");
-        Object obj = (j$.time.chrono.j) temporalAccessor.a(o.f31646b);
+        Object obj = (j$.time.chrono.j) temporalAccessor.a(o.f31662b);
         if (obj == null) {
-            obj = j$.time.chrono.k.f31542a;
+            obj = j$.time.chrono.k.f31558a;
         }
-        return ((j$.time.chrono.a) obj).equals(j$.time.chrono.k.f31542a);
+        return ((j$.time.chrono.a) obj).equals(j$.time.chrono.k.f31558a);
     }
 
     public static h valueOf(String str) {
@@ -41,7 +41,7 @@ public abstract class h implements n {
     }
 
     public static h[] values() {
-        return (h[]) f31638b.clone();
+        return (h[]) f31654b.clone();
     }
 
     static {
@@ -64,7 +64,7 @@ public abstract class h implements n {
                 long m10 = temporalAccessor.m(h.QUARTER_OF_YEAR);
                 if (m10 == 1) {
                     long m11 = temporalAccessor.m(a.YEAR);
-                    j$.time.chrono.k kVar = j$.time.chrono.k.f31542a;
+                    j$.time.chrono.k kVar = j$.time.chrono.k.f31558a;
                     return j$.time.chrono.k.w(m11) ? r.e(1L, 91L) : r.e(1L, 90L);
                 } else if (m10 == 2) {
                     return r.e(1L, 91L);
@@ -85,8 +85,8 @@ public abstract class h implements n {
                 int g11 = temporalAccessor.g(a.MONTH_OF_YEAR);
                 long m10 = temporalAccessor.m(a.YEAR);
                 int i10 = (g11 - 1) / 3;
-                j$.time.chrono.k kVar = j$.time.chrono.k.f31542a;
-                return g10 - h.f31637a[i10 + (j$.time.chrono.k.w(m10) ? 4 : 0)];
+                j$.time.chrono.k kVar = j$.time.chrono.k.f31558a;
+                return g10 - h.f31653a[i10 + (j$.time.chrono.k.w(m10) ? 4 : 0)];
             }
 
             @Override // j$.time.temporal.n
@@ -108,7 +108,7 @@ public abstract class h implements n {
                 if (l10 == null || l11 == null) {
                     return null;
                 }
-                int a10 = aVar.f31633b.a(l10.longValue(), aVar);
+                int a10 = aVar.f31649b.a(l10.longValue(), aVar);
                 long longValue = ((Long) map.get(h.DAY_OF_QUARTER)).longValue();
                 if (h.I(uVar)) {
                     if (vVar == v.LENIENT) {
@@ -239,7 +239,7 @@ public abstract class h implements n {
                         longValue2 = j11 + j10;
                         b10 = of2.G(Math.subtractExact(longValue, j10)).b(longValue2, aVar);
                     } else {
-                        int a11 = aVar.f31633b.a(l11.longValue(), aVar);
+                        int a11 = aVar.f31649b.a(l11.longValue(), aVar);
                         if (longValue < 1 || longValue > 52) {
                             if (vVar == v.STRICT) {
                                 h.H(of2).b(longValue, this);
@@ -266,7 +266,7 @@ public abstract class h implements n {
         h hVar4 = new h() { // from class: j$.time.temporal.g
             @Override // j$.time.temporal.n
             public final r x() {
-                return a.YEAR.f31633b;
+                return a.YEAR.f31649b;
             }
 
             @Override // j$.time.temporal.n
@@ -289,7 +289,7 @@ public abstract class h implements n {
                 if (!r(kVar)) {
                     throw new DateTimeException("Unsupported field: WeekBasedYear");
                 }
-                int a10 = a.YEAR.f31633b.a(j10, h.WEEK_BASED_YEAR);
+                int a10 = a.YEAR.f31649b.a(j10, h.WEEK_BASED_YEAR);
                 LocalDate t10 = LocalDate.t(kVar);
                 int g10 = t10.g(a.DAY_OF_WEEK);
                 int E = h.E(t10);
@@ -305,8 +305,8 @@ public abstract class h implements n {
             }
         };
         WEEK_BASED_YEAR = hVar4;
-        f31638b = new h[]{hVar, hVar2, hVar3, hVar4};
-        f31637a = new int[]{0, 90, 181, 273, 0, 91, 182, 274};
+        f31654b = new h[]{hVar, hVar2, hVar3, hVar4};
+        f31653a = new int[]{0, 90, 181, 273, 0, 91, 182, 274};
     }
 
     public r t(TemporalAccessor temporalAccessor) {
@@ -342,9 +342,9 @@ public abstract class h implements n {
             return 1;
         }
         if (localDate.x() != 180) {
-            localDate = LocalDate.C(localDate.f31505a, 180);
+            localDate = LocalDate.C(localDate.f31521a, 180);
         }
-        return (int) H(localDate.H(-1L)).f31655d;
+        return (int) H(localDate.H(-1L)).f31671d;
     }
 
     public static int F(LocalDate localDate) {

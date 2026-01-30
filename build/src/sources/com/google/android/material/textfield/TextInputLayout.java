@@ -45,7 +45,7 @@ import java.util.Iterator;
 import java.util.LinkedHashSet;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class TextInputLayout extends LinearLayout implements ViewTreeObserver.OnGlobalLayoutListener {
-    private static final int N0 = yg.j.f54507j;
+    private static final int N0 = yg.j.f54523j;
     private static final int[][] O0 = {new int[]{16842919}, new int[0]};
     private int A;
     private int A0;
@@ -431,13 +431,13 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     public TextInputLayout(@NonNull Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, yg.b.f54345h0);
+        this(context, attributeSet, yg.b.f54361h0);
     }
 
     private androidx.transition.e A() {
         androidx.transition.e eVar = new androidx.transition.e();
         eVar.l0(jh.g.f(getContext(), yg.b.K, 87));
-        eVar.n0(jh.g.g(getContext(), yg.b.Q, zg.a.f55658a));
+        eVar.n0(jh.g.g(getContext(), yg.b.Q, zg.a.f55674a));
         return eVar;
     }
 
@@ -500,7 +500,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         float f10;
         float dimensionPixelOffset;
         ColorStateList colorStateList;
-        float dimensionPixelOffset2 = getResources().getDimensionPixelOffset(yg.d.f54381c0);
+        float dimensionPixelOffset2 = getResources().getDimensionPixelOffset(yg.d.f54397c0);
         if (z10) {
             f10 = dimensionPixelOffset2;
         } else {
@@ -510,7 +510,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         if (editText instanceof MaterialAutoCompleteTextView) {
             dimensionPixelOffset = ((MaterialAutoCompleteTextView) editText).getPopupElevation();
         } else {
-            dimensionPixelOffset = getResources().getDimensionPixelOffset(yg.d.f54401r);
+            dimensionPixelOffset = getResources().getDimensionPixelOffset(yg.d.f54417r);
         }
         int dimensionPixelOffset3 = getResources().getDimensionPixelOffset(yg.d.W);
         oh.k m10 = oh.k.a().B(f10).G(f10).s(dimensionPixelOffset2).w(dimensionPixelOffset2).m();
@@ -555,7 +555,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     }
 
     private static Drawable K(Context context, oh.g gVar, int i10, int[][] iArr) {
-        int c10 = eh.a.c(context, yg.b.f54354o, "TextInputLayout");
+        int c10 = eh.a.c(context, yg.b.f54370o, "TextInputLayout");
         oh.g gVar2 = new oh.g(gVar.D());
         int j10 = eh.a.j(i10, c10, 0.1f);
         gVar2.X(new ColorStateList(iArr, new int[]{j10, 0}));
@@ -700,7 +700,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     private Drawable getEditTextBoxBackground() {
         EditText editText = this.f16441o;
         if ((editText instanceof AutoCompleteTextView) && !q.a(editText)) {
-            int d10 = eh.a.d(this.f16441o, yg.b.f54346i);
+            int d10 = eh.a.d(this.f16441o, yg.b.f54362i);
             int i10 = this.f16426c0;
             if (i10 == 2) {
                 return K(getContext(), this.Q, d10, O0);
@@ -771,7 +771,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
                 h0.F0(editText, h0.E(editText), getResources().getDimensionPixelSize(yg.d.B), h0.D(this.f16441o), getResources().getDimensionPixelSize(yg.d.A));
             } else if (lh.c.g(getContext())) {
                 EditText editText2 = this.f16441o;
-                h0.F0(editText2, h0.E(editText2), getResources().getDimensionPixelSize(yg.d.f54409z), h0.D(this.f16441o), getResources().getDimensionPixelSize(yg.d.f54408y));
+                h0.F0(editText2, h0.E(editText2), getResources().getDimensionPixelSize(yg.d.f54425z), h0.D(this.f16441o), getResources().getDimensionPixelSize(yg.d.f54424y));
             }
         }
     }
@@ -779,9 +779,9 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     private static void k0(Context context, TextView textView, int i10, int i11, boolean z10) {
         int i12;
         if (z10) {
-            i12 = yg.i.f54477c;
+            i12 = yg.i.f54493c;
         } else {
-            i12 = yg.i.f54476b;
+            i12 = yg.i.f54492b;
         }
         textView.setContentDescription(context.getString(i12, Integer.valueOf(i10), Integer.valueOf(i11)));
     }
@@ -831,7 +831,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         ColorStateList colorStateList;
         ColorStateList colorStateList2 = this.L;
         if (colorStateList2 == null) {
-            colorStateList2 = eh.a.g(getContext(), yg.b.f54344h);
+            colorStateList2 = eh.a.g(getContext(), yg.b.f54360h);
         }
         EditText editText = this.f16441o;
         if (editText != null && editText.getTextCursorDrawable() != null) {
@@ -900,7 +900,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
     private int q() {
         int i10 = this.f16435i0;
         if (this.f16426c0 == 1) {
-            return eh.a.i(eh.a.e(this, yg.b.f54354o, 0), this.f16435i0);
+            return eh.a.i(eh.a.e(this, yg.b.f54370o, 0), this.f16435i0);
         }
         return i10;
     }
@@ -1283,8 +1283,8 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
             }
         } catch (Exception unused) {
         }
-        androidx.core.widget.j.s(textView, yg.j.f54499b);
-        textView.setTextColor(androidx.core.content.a.c(getContext(), yg.c.f54366a));
+        androidx.core.widget.j.s(textView, yg.j.f54515b);
+        textView.setTextColor(androidx.core.content.a.c(getContext(), yg.c.f54382a));
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -1685,7 +1685,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
             if (z11 != this.f16459x) {
                 l0();
             }
-            this.f16463z.setText(a2.a.c().j(getContext().getString(yg.i.f54478d, Integer.valueOf(a10), Integer.valueOf(this.f16457w))));
+            this.f16463z.setText(a2.a.c().j(getContext().getString(yg.i.f54494d, Integer.valueOf(a10), Integer.valueOf(this.f16457w))));
         }
         if (this.f16441o != null && z11 != this.f16459x) {
             t0(false);
@@ -1701,7 +1701,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         if (this.J0 == null) {
             ValueAnimator valueAnimator = new ValueAnimator();
             this.J0 = valueAnimator;
-            valueAnimator.setInterpolator(jh.g.g(getContext(), yg.b.P, zg.a.f55659b));
+            valueAnimator.setInterpolator(jh.g.g(getContext(), yg.b.P, zg.a.f55675b));
             this.J0.setDuration(jh.g.f(getContext(), yg.b.I, 167));
             this.J0.addUpdateListener(new c());
         }
@@ -2012,7 +2012,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
                 }
                 this.f16463z.setMaxLines(1);
                 this.f16453u.e(this.f16463z, 2);
-                androidx.core.view.m.d((ViewGroup.MarginLayoutParams) this.f16463z.getLayoutParams(), getResources().getDimensionPixelOffset(yg.d.f54391h0));
+                androidx.core.view.m.d((ViewGroup.MarginLayoutParams) this.f16463z.getLayoutParams(), getResources().getDimensionPixelOffset(yg.d.f54407h0));
                 l0();
                 i0();
             } else {

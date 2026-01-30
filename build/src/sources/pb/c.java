@@ -11,10 +11,10 @@ import java.util.ArrayList;
 public class c implements h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f45009a;
+    private final Context f45025a;
 
     public c(Context context) {
-        this.f45009a = context;
+        this.f45025a = context;
     }
 
     @Override // pb.h
@@ -24,7 +24,7 @@ public class c implements h {
             return false;
         }
         p.b("SoLoader", "Checking /data/app missing libraries.");
-        File file = new File(this.f45009a.getApplicationInfo().nativeLibraryDir);
+        File file = new File(this.f45025a.getApplicationInfo().nativeLibraryDir);
         if (!file.exists()) {
             p.b("SoLoader", "Native library directory " + file + " does not exist, exiting /data/app recovery.");
             return false;

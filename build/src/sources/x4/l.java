@@ -5,16 +5,16 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public final class l {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f53176c = new a(null);
+    public static final a f53192c = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    public static final l f53177d = new l(false, 0);
+    public static final l f53193d = new l(false, 0);
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f53178a;
+    private final boolean f53194a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f53179b;
+    private final int f53195b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -27,15 +27,15 @@ public final class l {
     }
 
     public l(boolean z10, int i10) {
-        this.f53178a = z10;
-        this.f53179b = i10;
+        this.f53194a = z10;
+        this.f53195b = i10;
     }
 
     public final int a() {
-        return this.f53179b;
+        return this.f53195b;
     }
 
     public final boolean b() {
-        return this.f53178a;
+        return this.f53194a;
     }
 }

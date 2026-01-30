@@ -5,7 +5,7 @@ import ui.c;
 final class l8 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final l8 f38425a = new l8();
+    static final l8 f38441a = new l8();
 
     static {
         c.b a10 = ui.c.a("options");

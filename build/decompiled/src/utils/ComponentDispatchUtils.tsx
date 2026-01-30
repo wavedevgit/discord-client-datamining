@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8.warn = var9;
     var1.logger = var8;
     var6 = function(arg0, arg1, arg2) { // Original name: reportDevtoolsEvent, environment: var6
-        _fun13514: for (var _fun13514_ip = 0;;) switch (_fun13514_ip) {
+        _fun13515: for (var _fun13515_ip = 0;;) switch (_fun13515_ip) {
             case 0:
                 var5 = arg0;
                 var _closure2_slot0 = var5;
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var4 = var5;
                 if (!(var2 != var1)) {
-                    _fun13514_ip = 61;
-                    continue _fun13514
+                    _fun13515_ip = 61;
+                    continue _fun13515
                 }
             case 58:
                 var4 = var1;

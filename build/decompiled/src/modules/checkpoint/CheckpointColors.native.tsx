@@ -556,4 +556,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.CHECKPOINT_SLIDE_COLORS = var3;
     var2.CHECKPOINT_PERSONA_COLORS = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [9119, 671, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [9123, 671, 2]);

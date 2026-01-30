@@ -13,12 +13,12 @@ public abstract class e {
         Object b10;
         int i10;
         try {
-            Result.a aVar = Result.f33279e;
+            Result.a aVar = Result.f33295e;
             String property = System.getProperty("kotlinx.serialization.json.pool.size");
             Intrinsics.checkNotNullExpressionValue(property, "getProperty(...)");
             b10 = Result.b(StringsKt.toIntOrNull(property));
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f33279e;
+            Result.a aVar2 = Result.f33295e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         if (Result.g(b10)) {

@@ -8,40 +8,40 @@ public abstract class r {
     public static final gq.d a(InternalErrorInfo internalErrorInfo) {
         Intrinsics.checkNotNullParameter(internalErrorInfo, "<this>");
         if (internalErrorInfo instanceof InternalErrorInfo.CameraErrorInfo) {
-            return gq.d.f27088o;
+            return gq.d.f27104o;
         }
         if (internalErrorInfo instanceof InternalErrorInfo.IntegrationErrorInfo) {
-            return gq.d.f27089p;
+            return gq.d.f27105p;
         }
         if (internalErrorInfo instanceof InternalErrorInfo.NetworkErrorInfo) {
             ErrorResponse.Error responseError = ((InternalErrorInfo.NetworkErrorInfo) internalErrorInfo).getResponseError();
             if (responseError instanceof ErrorResponse.Error.RateLimitExceededError) {
-                return gq.d.f27091r;
+                return gq.d.f27107r;
             }
             if (responseError instanceof ErrorResponse.Error.UnauthenticatedError) {
-                return gq.d.f27090q;
+                return gq.d.f27106q;
             }
             if (!(responseError instanceof ErrorResponse.Error.FieldNotFoundError) && !(responseError instanceof ErrorResponse.Error.InactiveTemplateError) && !(responseError instanceof ErrorResponse.Error.InconsistentTransitionError) && !(responseError instanceof ErrorResponse.Error.TransitionFromTerminalStateError) && !(responseError instanceof ErrorResponse.Error.InvalidConfigError) && !(responseError instanceof ErrorResponse.Error.UnknownError) && !(responseError instanceof ErrorResponse.Error.InvalidFieldValueError) && responseError != null) {
                 throw new ir.p();
             }
-            return gq.d.f27085d;
+            return gq.d.f27101d;
         } else if (internalErrorInfo instanceof InternalErrorInfo.PermissionErrorInfo) {
-            return gq.d.f27086e;
+            return gq.d.f27102e;
         } else {
             if (internalErrorInfo instanceof InternalErrorInfo.ConfigurationErrorInfo) {
-                return gq.d.f27087i;
+                return gq.d.f27103i;
             }
             if (internalErrorInfo instanceof InternalErrorInfo.NoDiskSpaceErrorInfo) {
-                return gq.d.f27093t;
+                return gq.d.f27109t;
             }
             if (internalErrorInfo instanceof InternalErrorInfo.WebRtcIntegrationErrorInfo) {
-                return gq.d.f27094u;
+                return gq.d.f27110u;
             }
             if (internalErrorInfo instanceof InternalErrorInfo.InvalidOneTimeLinkCode) {
-                return gq.d.f27095v;
+                return gq.d.f27111v;
             }
             if (internalErrorInfo instanceof InternalErrorInfo.UnknownErrorInfo) {
-                return gq.d.f27092s;
+                return gq.d.f27108s;
             }
             throw new ir.p();
         }

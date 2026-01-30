@@ -1,164 +1,267 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
-    var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var4.bind(var5)(var2, var0, var3);
-    var0 = {};
-    var3 = 'function omitZero_Pnpm_computeOffsetIfDataChangedTs1(a,b){if(a===0)return 0;return b;}';
-    var0.code = var3;
+    var3 = dependencyMap;
+    var0 = require;
     var _closure1_slot0 = var0;
-    var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1) { // Original name: omitZero, environment: var0
-            _fun74764: for (var _fun74764_ip = 0;;) switch (_fun74764_ip) {
-                case 0:
-                    var1 = arg1;
-                    var2 = arg0;
-                    var0 = 0;
-                    if (!(var0 !== var2)) {
-                        _fun74764_ip = 15;
-                        continue _fun74764
-                    }
-                case 12:
-                    var0 = var1;
-                case 15:
-                    return var0;
-            }
-        };
-        var1 = {};
-        var0.__closure = var1;
-        var1 = 6139220182928.0;
-        var0.__workletHash = var1;
-        var1 = _closure1_slot0;
-        var0.__initData = var1;
-        return var0;
-    };
-    var0 = undefined;
-    var3 = var3.bind(var0)();
     var _closure1_slot1 = var3;
+    var0 = global;
+    var6 = var0.Object;
+    var5 = var6.defineProperty;
     var4 = {};
-    var5 = 'function computeOffsetIfDataChanged_Pnpm_computeOffsetIfDataChangedTs2(params){const{omitZero}=this.__closure;const{direction:direction,handlerOffset:_handlerOffset,size:size,previousLength:previousLength,currentLength:currentLength}=params;let handlerOffset=_handlerOffset;let positionIndex;let round;const isPositive=direction<0;if(isPositive){positionIndex=Math.abs(handlerOffset)/size;round=Number.parseInt(String(omitZero(previousLength,positionIndex/previousLength)));}else{positionIndex=(Math.abs(handlerOffset)-size)/size;round=Number.parseInt(String(omitZero(previousLength,positionIndex/previousLength)))+1;}const prevOffset=omitZero(previousLength,positionIndex%previousLength);const prevIndex=isPositive?prevOffset:previousLength-prevOffset-1;const changedLength=round*(currentLength-previousLength);const changedOffset=changedLength*size;if(prevIndex>currentLength-1&&currentLength<previousLength){if(isPositive)handlerOffset=(currentLength-1)*size*direction;else handlerOffset=(currentLength-1)*size*-1;}else{handlerOffset+=changedOffset*direction;}return handlerOffset;}';
-    var4.code = var5;
-    var _closure1_slot2 = var4;
-    var1 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: computeOffsetIfDataChanged, environment: var0
-            _fun74766: for (var _fun74766_ip = 0;;) switch (_fun74766_ip) {
-                case 0:
-                    var1 = arg0;
-                    var3 = var1.direction;
-                    var6 = var1.handlerOffset;
-                    var4 = var1.size;
-                    var0 = var1.previousLength;
-                    var5 = var1.currentLength;
-                    var1 = 0;
-                    var1 = var3 < var1;
-                    var8 = global;
-                    var7 = var8.Math;
-                    var2 = var7.abs;
-                    var9 = var2.bind(var7)(var6);
-                    if (var1) {
-                        _fun74766_ip = 124;
-                        continue _fun74766
-                    }
-                case 60:
-                    var2 = var9 - var4;
-                    var2 = var2 / var4;
-                    var11 = var8.Number;
-                    var10 = var11.parseInt;
-                    var13 = var8.String;
-                    var14 = _closure1_slot1;
-                    var7 = var2 / var0;
-                    var12 = undefined;
-                    var7 = var14.bind(var12)(var0, var7);
-                    var7 = var13.bind(var12)(var7);
-                    var10 = var10.bind(var11)(var7);
-                    var7 = 1;
-                    var7 = var10 + var7;
-                    _fun74766_ip = 178;
-                    continue _fun74766;
-                case 124:
-                    var9 = var9 / var4;
-                    var11 = var8.Number;
-                    var10 = var11.parseInt;
-                    var13 = var8.String;
-                    var14 = _closure1_slot1;
-                    var8 = var9 / var0;
-                    var12 = undefined;
-                    var8 = var14.bind(var12)(var0, var8);
-                    var8 = var13.bind(var12)(var8);
-                    var7 = var10.bind(var11)(var8);
-                    var2 = var9;
-                case 178:
-                    var9 = _closure1_slot1;
-                    var8 = var2 % var0;
-                    var2 = undefined;
-                    var2 = var9.bind(var2)(var0, var8);
-                    var9 = var2;
-                    if (var1) {
-                        _fun74766_ip = 214;
-                        continue _fun74766
-                    }
-                case 203:
-                    var8 = var0 - var2;
-                    var2 = 1;
-                    var9 = var8 - var2;
-                case 214:
-                    var2 = 1;
-                    var8 = var5 - var2;
-                    if (!(var9 > var8)) {
-                        _fun74766_ip = 229;
-                        continue _fun74766
-                    }
-                case 225:
-                    if (!(!(var5 < var0))) {
-                        _fun74766_ip = 251;
-                        continue _fun74766
-                    }
-                case 229:
-                    var0 = var5 - var0;
-                    var0 = var7 * var0;
-                    var0 = var0 * var4;
-                    var0 = var0 * var3;
-                    var0 = var6 + var0;
-                    _fun74766_ip = 281;
-                    continue _fun74766;
-                case 251:
-                    var2 = var5 - var2;
-                    var2 = var2 * var4;
-                    if (var1) {
-                        _fun74766_ip = 274;
-                        continue _fun74766
-                    }
-                case 262:
-                    var1 = -1;
-                    var1 = var2 * var1;
-                    _fun74766_ip = 278;
-                    continue _fun74766;
-                case 274:
-                    var1 = var2 * var3;
-                case 278:
-                    var0 = var1;
-                case 281:
+    var0 = true;
+    var4.value = var0;
+    var0 = '__esModule';
+    var0 = var5.bind(var6)(var2, var0, var4);
+    var0 = 0;
+    var4 = var3[var0];
+    var3 = metroImportDefault;
+    var0 = undefined;
+    var3 = var3.bind(var0)(var4);
+    var _closure1_slot2 = var3;
+    var1 = function(arg0) { // Original name: useInitProps, environment: var1
+        _fun74785: for (var _fun74785_ip = 0;;) switch (_fun74785_ip) {
+            case 0:
+                var4 = arg0;
+                var0 = var4.defaultIndex;
+                var17 = 0;
+                var3 = undefined;
+                var19 = 0;
+                if (!(var3 !== var0)) {
+                    _fun74785_ip = 24;
+                    continue _fun74785
+                }
+            case 21:
+                var19 = var0;
+            case 24:
+                var15 = var4.data;
+                if (!(var3 === var15)) {
+                    _fun74785_ip = 37;
+                    continue _fun74785
+                }
+            case 33:
+                var15 = new Array(0);
+            case 37:
+                var _closure2_slot0 = var15;
+                var0 = var4.loop;
+                var13 = var3 === var0;
+                if (var13) {
+                    _fun74785_ip = 57;
+                    continue _fun74785
+                }
+            case 54:
+                var13 = var0;
+            case 57:
+                var _closure2_slot1 = var13;
+                var0 = var4.autoPlayInterval;
+                var16 = 1000;
+                if (!(var3 !== var0)) {
+                    _fun74785_ip = 80;
+                    continue _fun74785
+                }
+            case 77:
+                var16 = var0;
+            case 80:
+                var0 = var4.scrollAnimationDuration;
+                var10 = 500;
+                if (!(var3 !== var0)) {
+                    _fun74785_ip = 99;
+                    continue _fun74785
+                }
+            case 96:
+                var10 = var0;
+            case 99:
+                var9 = var4.style;
+                if (!(var3 === var9)) {
+                    _fun74785_ip = 110;
+                    continue _fun74785
+                }
+            case 108:
+                var9 = {};
+            case 110:
+                var0 = var4.autoFillData;
+                var18 = var3 === var0;
+                if (var18) {
+                    _fun74785_ip = 126;
+                    continue _fun74785
+                }
+            case 123:
+                var18 = var0;
+            case 126:
+                var _closure2_slot2 = var18;
+                var0 = var4.enabled;
+                var12 = var3 === var0;
+                if (var12) {
+                    _fun74785_ip = 145;
+                    continue _fun74785
+                }
+            case 142:
+                var12 = var0;
+            case 145:
+                var0 = var4.pagingEnabled;
+                var8 = var3 === var0;
+                if (var8) {
+                    _fun74785_ip = 161;
+                    continue _fun74785
+                }
+            case 158:
+                var8 = var0;
+            case 161:
+                var0 = var4.overscrollEnabled;
+                var6 = var3 === var0;
+                if (var6) {
+                    _fun74785_ip = 177;
+                    continue _fun74785
+                }
+            case 174:
+                var6 = var0;
+            case 177:
+                var7 = var4.snapEnabled;
+                if (!(var3 === var7)) {
+                    _fun74785_ip = 208;
+                    continue _fun74785
+                }
+            case 187:
+                var1 = var4.enableSnap;
+                var0 = null;
+                var0 = var0 == var1;
+                if (var0) {
+                    _fun74785_ip = 205;
+                    continue _fun74785
+                }
+            case 202:
+                var0 = var1;
+            case 205:
+                var7 = var0;
+            case 208:
+                var11 = var4.width;
+                var14 = var4.height;
+                var1 = global;
+                var5 = var1.Math;
+                var0 = var5.round;
+                if (var11) {
+                    _fun74785_ip = 236;
+                    continue _fun74785
+                }
+            case 234:
+                var11 = 0;
+            case 236:
+                var5 = var0.bind(var5)(var11);
+                var11 = var1.Math;
+                var0 = var11.round;
+                if (var14) {
+                    _fun74785_ip = 257;
+                    continue _fun74785
+                }
+            case 255:
+                var14 = 0;
+            case 257:
+                var0 = var0.bind(var11)(var14);
+                var14 = var1.Math;
+                var11 = var14.max;
+                var11 = var11.bind(var14)(var16, var17);
+                var17 = _closure1_slot2;
+                var16 = var17.useMemo;
+                var14 = new Array(3);
+                var14[0] = var15;
+                var14[1] = var13;
+                var14[2] = var18;
+                var2 = function() { // Environment: var2
+                    var2 = _closure1_slot0;
+                    var1 = _closure1_slot1;
+                    var0 = 1;
+                    var1 = var1[var0];
+                    var0 = undefined;
+                    var2 = var2.bind(var0)(var1);
+                    var1 = var2.computedFillDataWithAutoFillData;
+                    var0 = {};
+                    var4 = _closure2_slot1;
+                    var0.loop = var4;
+                    var4 = _closure2_slot2;
+                    var0.autoFillData = var4;
+                    var4 = _closure2_slot0;
+                    var0.data = var4;
+                    var3 = _closure2_slot0;
+                    var3 = var3.length;
+                    var0.dataLength = var3;
+                    var0 = var1.bind(var2)(var0);
                     return var0;
-            }
-        };
-        var2 = {};
-        var3 = _closure1_slot1;
-        var2.omitZero = var3;
-        var0.__closure = var2;
-        var2 = 15766064123809.0;
-        var0.__workletHash = var2;
-        var1 = _closure1_slot2;
-        var0.__initData = var1;
-        return var0;
+                };
+                var17 = var16.bind(var17)(var2, var14);
+                var16 = var17.length;
+                var14 = var15.length;
+                var20 = var4.mode;
+                var2 = 'vertical-stack';
+                var2 = var2 !== var20;
+                if (!var2) {
+                    _fun74785_ip = 363;
+                    continue _fun74785
+                }
+            case 348:
+                var21 = var4.mode;
+                var20 = 'horizontal-stack';
+                var2 = var20 !== var21;
+            case 363:
+                if (var2) {
+                    _fun74785_ip = 429;
+                    continue _fun74785
+                }
+            case 366:
+                var2 = var4.modeConfig;
+                if (var2) {
+                    _fun74785_ip = 383;
+                    continue _fun74785
+                }
+            case 375:
+                var2 = {};
+                var4.modeConfig = var2;
+            case 383:
+                var2 = var4.modeConfig;
+                var21 = var4.modeConfig;
+                var20 = null;
+                var22 = var20 == var21;
+                var3 = undefined;
+                if (var22) {
+                    _fun74785_ip = 412;
+                    continue _fun74785
+                }
+            case 406:
+                var3 = var21.showLength;
+            case 412:
+                if (!(var20 == var3)) {
+                    _fun74785_ip = 423;
+                    continue _fun74785
+                }
+            case 416:
+                var20 = 1;
+                var3 = var16 - var20;
+            case 423:
+                var2.showLength = var3;
+            case 429:
+                var3 = var1.Object;
+                var2 = var3.assign;
+                var1 = {};
+                var1.defaultIndex = var19;
+                var1.autoFillData = var18;
+                var1.data = var17;
+                var1.dataLength = var16;
+                var1.rawData = var15;
+                var1.rawDataLength = var14;
+                var1.loop = var13;
+                var1.enabled = var12;
+                var1.autoPlayInterval = var11;
+                var1.scrollAnimationDuration = var10;
+                var1.style = var9;
+                var1.pagingEnabled = var8;
+                var1.snapEnabled = var7;
+                var1.overscrollEnabled = var6;
+                var1.width = var5;
+                var1.height = var0;
+                var0 = {};
+                var0 = var2.bind(var3)(var0, var4, var1);
+                return var0;
+        }
     };
-    var1 = var1.bind(var0)();
-    var2.omitZero = var3;
-    var2.computeOffsetIfDataChanged = var1;
+    var2.useInitProps = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 9398]);

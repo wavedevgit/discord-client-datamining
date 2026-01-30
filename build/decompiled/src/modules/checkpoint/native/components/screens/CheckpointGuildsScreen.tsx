@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
     var0 = function(arg0) { // Original name: GuildContainer, environment: var1
-        _fun86872: for (var _fun86872_ip = 0;;) switch (_fun86872_ip) {
+        _fun86918: for (var _fun86918_ip = 0;;) switch (_fun86918_ip) {
             case 0:
                 var2 = arg0;
                 var0 = var2.guild;
@@ -202,8 +202,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5[4] = var8;
                 var6 = var6 === var7;
                 if (!var6) {
-                    _fun86872_ip = 1221;
-                    continue _fun86872
+                    _fun86918_ip = 1221;
+                    continue _fun86918
                 }
             case 728:
                 var9 = _closure1_slot10;
@@ -279,8 +279,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21 = var21.TimeUnits;
                 var21 = var21.HOURS;
                 if (!(var22 !== var21)) {
-                    _fun86872_ip = 1079;
-                    continue _fun86872
+                    _fun86918_ip = 1079;
+                    continue _fun86918
                 }
             case 1026:
                 var24 = _closure1_slot0;
@@ -294,8 +294,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21 = var25.bind(var4)(var21);
                 var21 = var21.RmVTph;
                 var21 = var22.bind(var24)(var21);
-                _fun86872_ip = 1138;
-                continue _fun86872;
+                _fun86918_ip = 1138;
+                continue _fun86918;
             case 1079:
                 var24 = _closure1_slot0;
                 var22 = _closure1_slot2;
@@ -494,7 +494,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/checkpoint/native/components/screens/CheckpointGuildsScreen.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Original name: CheckpointGuildsScreen, environment: var1
-        _fun86874: for (var _fun86874_ip = 0;;) switch (_fun86874_ip) {
+        _fun86920: for (var _fun86920_ip = 0;;) switch (_fun86920_ip) {
             case 0:
                 var0 = _closure1_slot11;
                 var3 = undefined;
@@ -517,8 +517,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.bind(var4)(var1, var0);
                 var0 = var0.guilds;
                 if (!(var3 === var0)) {
-                    _fun86874_ip = 89;
-                    continue _fun86874
+                    _fun86920_ip = 89;
+                    continue _fun86920
                 }
             case 75:
                 var1 = {};
@@ -725,4 +725,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1410, 11128, 9119, 660, 33, 1297, 671, 566, 11130, 3110, 11132, 5315, 11137, 1234, 2267, 11144, 6806, 3895, 7353, 3486, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1410, 11134, 9123, 660, 33, 1297, 671, 566, 11136, 3110, 11138, 5319, 11143, 1234, 2267, 11150, 6809, 3901, 7356, 3488, 2]);

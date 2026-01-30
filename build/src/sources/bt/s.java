@@ -19,7 +19,7 @@ public final class s implements KSerializer {
     public static final s f7830a = new s();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f7831b = zs.j.b("kotlinx.serialization.json.JsonLiteral", e.i.f56091a);
+    private static final SerialDescriptor f7831b = zs.j.b("kotlinx.serialization.json.JsonLiteral", e.i.f56107a);
 
     private s() {
     }
@@ -53,7 +53,7 @@ public final class s implements KSerializer {
             }
             ir.b0 h10 = e0.h(value.b());
             if (h10 != null) {
-                encoder.l(ys.a.y(ir.b0.f31075e).getDescriptor()).m(h10.h());
+                encoder.l(ys.a.y(ir.b0.f31091e).getDescriptor()).m(h10.h());
                 return;
             }
             Double p10 = StringsKt.p(value.b());

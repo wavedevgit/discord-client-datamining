@@ -9,7 +9,7 @@ import sa.o;
 public class g implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f47048a;
+    private final b f47064a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private static class a implements b {
@@ -40,7 +40,7 @@ public class g implements e {
 
     @Override // qa.e
     public int a(int i10) {
-        List a10 = this.f47048a.a();
+        List a10 = this.f47064a.a();
         if (a10 != null && !a10.isEmpty()) {
             for (int i11 = 0; i11 < a10.size(); i11++) {
                 if (((Integer) a10.get(i11)).intValue() > i10) {
@@ -55,7 +55,7 @@ public class g implements e {
     @Override // qa.e
     public o b(int i10) {
         boolean z10;
-        if (i10 >= this.f47048a.b()) {
+        if (i10 >= this.f47064a.b()) {
             z10 = true;
         } else {
             z10 = false;
@@ -69,6 +69,6 @@ public class g implements e {
     }
 
     public g(b bVar) {
-        this.f47048a = (b) j.g(bVar);
+        this.f47064a = (b) j.g(bVar);
     }
 }

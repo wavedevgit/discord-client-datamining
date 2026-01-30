@@ -7,9 +7,9 @@ import kotlin.collections.o0;
 public abstract class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f44432a = o0.m(v.a("linear", new hm.c()), v.a("ios", new hm.b()));
+    private static final Map f44448a = o0.m(v.a("linear", new hm.c()), v.a("ios", new hm.b()));
 
     public static final Map a() {
-        return f44432a;
+        return f44448a;
     }
 }

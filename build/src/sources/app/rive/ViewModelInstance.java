@@ -196,7 +196,7 @@ public final class ViewModelInstance implements AutoCloseable {
                             if (r9 != r1) goto L5e
                             return r1
                         L5e:
-                            kotlin.Unit r9 = kotlin.Unit.f33282a
+                            kotlin.Unit r9 = kotlin.Unit.f33298a
                             return r9
                         */
                         throw new UnsupportedOperationException("Method not decompiled: app.rive.ViewModelInstance$getPropertyFlow$lambda$2$$inlined$filter$1.AnonymousClass2.emit(java.lang.Object, kotlin.coroutines.Continuation):java.lang.Object");
@@ -209,7 +209,7 @@ public final class ViewModelInstance implements AutoCloseable {
                     if (collect == b.f()) {
                         return collect;
                     }
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
             };
             flow = g.l(new Flow() { // from class: app.rive.ViewModelInstance$getPropertyFlow$lambda$2$$inlined$map$1
@@ -295,7 +295,7 @@ public final class ViewModelInstance implements AutoCloseable {
                             if (r5 != r1) goto L45
                             return r1
                         L45:
-                            kotlin.Unit r5 = kotlin.Unit.f33282a
+                            kotlin.Unit r5 = kotlin.Unit.f33298a
                             return r5
                         */
                         throw new UnsupportedOperationException("Method not decompiled: app.rive.ViewModelInstance$getPropertyFlow$lambda$2$$inlined$map$1.AnonymousClass2.emit(java.lang.Object, kotlin.coroutines.Continuation):java.lang.Object");
@@ -308,7 +308,7 @@ public final class ViewModelInstance implements AutoCloseable {
                     if (collect == b.f()) {
                         return collect;
                     }
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
             });
             map.put(str, flow);
@@ -318,7 +318,7 @@ public final class ViewModelInstance implements AutoCloseable {
 
     private final <T> void setProperty(String str, T t10, Function3 function3) {
         function3.invoke(ViewModelInstanceHandle.m197boximpl(this.instanceHandle), str, t10);
-        this._dirtyFlow.b(Unit.f33282a);
+        this._dirtyFlow.b(Unit.f33298a);
     }
 
     @Override // java.lang.AutoCloseable
@@ -475,7 +475,7 @@ public final class ViewModelInstance implements AutoCloseable {
                             if (r9 != r1) goto L5e
                             return r1
                         L5e:
-                            kotlin.Unit r9 = kotlin.Unit.f33282a
+                            kotlin.Unit r9 = kotlin.Unit.f33298a
                             return r9
                         */
                         throw new UnsupportedOperationException("Method not decompiled: app.rive.ViewModelInstance$getTriggerFlow$lambda$5$$inlined$filter$1.AnonymousClass2.emit(java.lang.Object, kotlin.coroutines.Continuation):java.lang.Object");
@@ -488,7 +488,7 @@ public final class ViewModelInstance implements AutoCloseable {
                     if (collect == b.f()) {
                         return collect;
                     }
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
             };
             flow = g.b(new Flow() { // from class: app.rive.ViewModelInstance$getTriggerFlow$lambda$5$$inlined$map$1
@@ -568,13 +568,13 @@ public final class ViewModelInstance implements AutoCloseable {
                             kotlin.c.b(r6)
                             kotlinx.coroutines.flow.FlowCollector r6 = r4.$this_unsafeFlow
                             app.rive.core.CommandQueue$PropertyUpdate r5 = (app.rive.core.CommandQueue.PropertyUpdate) r5
-                            kotlin.Unit r5 = kotlin.Unit.f33282a
+                            kotlin.Unit r5 = kotlin.Unit.f33298a
                             r0.label = r3
                             java.lang.Object r5 = r6.emit(r5, r0)
                             if (r5 != r1) goto L43
                             return r1
                         L43:
-                            kotlin.Unit r5 = kotlin.Unit.f33282a
+                            kotlin.Unit r5 = kotlin.Unit.f33298a
                             return r5
                         */
                         throw new UnsupportedOperationException("Method not decompiled: app.rive.ViewModelInstance$getTriggerFlow$lambda$5$$inlined$map$1.AnonymousClass2.emit(java.lang.Object, kotlin.coroutines.Continuation):java.lang.Object");
@@ -587,9 +587,9 @@ public final class ViewModelInstance implements AutoCloseable {
                     if (collect == b.f()) {
                         return collect;
                     }
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
-            }, 32, a.f31126e);
+            }, 32, a.f31142e);
             map.put(propertyPath, flow);
         }
         return flow;
@@ -636,7 +636,7 @@ public final class ViewModelInstance implements AutoCloseable {
             @Override // kotlin.jvm.functions.Function0
             public /* bridge */ /* synthetic */ Object invoke() {
                 m47invoke();
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
 
             /* renamed from: invoke  reason: collision with other method in class */
@@ -660,7 +660,7 @@ public final class ViewModelInstance implements AutoCloseable {
                 CommandQueue.this.m124deleteViewModelInstancemBajs_U(j10);
             }
         });
-        MutableSharedFlow a10 = c0.a(1, 1, a.f31126e);
+        MutableSharedFlow a10 = c0.a(1, 1, a.f31142e);
         this._dirtyFlow = a10;
         this.dirtyFlow = a10;
         this.numberFlows = new LinkedHashMap();

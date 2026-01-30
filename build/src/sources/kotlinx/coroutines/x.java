@@ -7,10 +7,10 @@ import kotlin.jvm.functions.Function1;
 public final class x extends z0 {
 
     /* renamed from: p  reason: collision with root package name */
-    private final Function1 f36362p;
+    private final Function1 f36378p;
 
     public x(Function1 function1) {
-        this.f36362p = function1;
+        this.f36378p = function1;
     }
 
     @Override // gs.z0
@@ -20,6 +20,6 @@ public final class x extends z0 {
 
     @Override // gs.z0
     public void w(Throwable th2) {
-        this.f36362p.invoke(th2);
+        this.f36378p.invoke(th2);
     }
 }

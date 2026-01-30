@@ -34,35 +34,35 @@ import zo.l1;
 public final class j {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f32253a;
+    private final Context f32269a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final z.a f32254b;
+    private final z.a f32270b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final g.a f32255c;
+    private final g.a f32271c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final rp.b f32256d;
+    private final rp.b f32272d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f32257d;
+        int f32273d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ n1.e f32258e;
+        final /* synthetic */ n1.e f32274e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ k.a f32259i;
+        final /* synthetic */ k.a f32275i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(n1.e eVar, k.a aVar, Continuation continuation) {
             super(2, continuation);
-            this.f32258e = eVar;
-            this.f32259i = aVar;
+            this.f32274e = eVar;
+            this.f32275i = aVar;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -76,22 +76,22 @@ public final class j {
             }
             n1.e eVar2 = eVar;
             if (eVar2 == null) {
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
             cVar.e(n1.e.p(eVar2, null, null, null, null, 0, null, null, null, 0L, true, 511, null));
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new a(this.f32258e, this.f32259i, continuation);
+            return new a(this.f32274e, this.f32275i, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             tm.r c10;
             Object f10 = or.b.f();
-            int i10 = this.f32257d;
+            int i10 = this.f32273d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -100,13 +100,13 @@ public final class j {
                 }
             } else {
                 kotlin.c.b(obj);
-                long r10 = this.f32258e.r();
-                this.f32257d = 1;
+                long r10 = this.f32274e.r();
+                this.f32273d = 1;
                 if (i0.a(r10, this) == f10) {
                     return f10;
                 }
             }
-            tm.h c11 = this.f32259i.c();
+            tm.h c11 = this.f32275i.c();
             c10 = b0.c(null, new Function1() { // from class: jo.i
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj2) {
@@ -116,12 +116,12 @@ public final class j {
                 }
             }, 1, null);
             c11.d(c10);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -130,17 +130,17 @@ public final class j {
         Intrinsics.checkNotNullParameter(cameraXControllerFactory, "cameraXControllerFactory");
         Intrinsics.checkNotNullParameter(camera2ManagerFactoryFactory, "camera2ManagerFactoryFactory");
         Intrinsics.checkNotNullParameter(navigationStateManager, "navigationStateManager");
-        this.f32253a = applicationContext;
-        this.f32254b = cameraXControllerFactory;
-        this.f32255c = camera2ManagerFactoryFactory;
-        this.f32256d = navigationStateManager;
+        this.f32269a = applicationContext;
+        this.f32270b = cameraXControllerFactory;
+        this.f32271c = camera2ManagerFactoryFactory;
+        this.f32272d = navigationStateManager;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit j(List list, v vVar) {
         Intrinsics.checkNotNullParameter(list, "<unused var>");
         Intrinsics.checkNotNullParameter(vVar, "<unused var>");
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -156,26 +156,26 @@ public final class j {
             }
         }, 1, null);
         c11.d(c10);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit l(r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
         action.d(g3.b.C0090b.f6101a);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit m(k.a aVar) {
         b4.L(aVar, null);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit n(Throwable it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -200,18 +200,18 @@ public final class j {
             dVar = dVar2;
         }
         b4.Q(eVar, aVar, aVar2, new d0.c(e10, dVar, eVar.q().x1(), d0.a.f5846e), eVar.q(), kVar, cameraProperties, false, null, 0, null, null, 3840, null);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit p() {
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit q(j jVar, k.a aVar, g3.a aVar2) {
-        b4.N(jVar.f32253a, aVar, aVar2, true);
-        return Unit.f33282a;
+        b4.N(jVar.f32269a, aVar, aVar2, true);
+        return Unit.f33298a;
     }
 
     public final Object i(final g3.a renderProps, final n1.e renderState, final k.a context, final k videoCaptureHelper) {
@@ -237,7 +237,7 @@ public final class j {
         String n10 = renderProps.t().n();
         f5.b.a aVar2 = f5.b.a.f5965d;
         io.e d10 = renderState.q().d();
-        return new zm.d(l1.c(m1.g(renderProps, E, n10, aVar2, c10.c(), d10, eVar2, this.f32256d.b(), new Function2() { // from class: jo.a
+        return new zm.d(l1.c(m1.g(renderProps, E, n10, aVar2, c10.c(), d10, eVar2, this.f32272d.b(), new Function2() { // from class: jo.a
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(Object obj, Object obj2) {
                 Unit j10;
@@ -258,14 +258,14 @@ public final class j {
                 m10 = j.m(k.a.this);
                 return m10;
             }
-        }, false, CollectionsKt.l(), renderState, renderState.j(), this.f32254b, this.f32255c, null, new Function1() { // from class: jo.d
+        }, false, CollectionsKt.l(), renderState, renderState.j(), this.f32270b, this.f32271c, null, new Function1() { // from class: jo.d
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit n11;
                 n11 = j.n((Throwable) obj);
                 return n11;
             }
-        }, b4.x(context), sn.a.f49091e, false, true, renderState.s(), new Function2() { // from class: jo.e
+        }, b4.x(context), sn.a.f49107e, false, true, renderState.s(), new Function2() { // from class: jo.e
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(Object obj, Object obj2) {
                 Unit o10;

@@ -5,41 +5,41 @@ import android.media.MediaFormat;
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private MediaFormat f27590a;
+    private MediaFormat f27606a;
 
     /* renamed from: b  reason: collision with root package name */
-    private MediaFormat f27591b;
+    private MediaFormat f27607b;
 
     /* renamed from: c  reason: collision with root package name */
-    private String f27592c;
+    private String f27608c;
 
     /* renamed from: d  reason: collision with root package name */
-    private String f27593d;
+    private String f27609d;
 
     /* renamed from: e  reason: collision with root package name */
-    private long f27594e = -1;
+    private long f27610e = -1;
 
     public long a() {
-        return this.f27594e;
+        return this.f27610e;
     }
 
     public void b(String str) {
-        this.f27592c = str;
+        this.f27608c = str;
     }
 
     public void c(long j10) {
-        this.f27594e = j10;
+        this.f27610e = j10;
     }
 
     public void d(String str) {
-        this.f27593d = str;
+        this.f27609d = str;
     }
 
     public void e(MediaFormat mediaFormat) {
-        this.f27590a = mediaFormat;
+        this.f27606a = mediaFormat;
     }
 
     public void f(MediaFormat mediaFormat) {
-        this.f27591b = mediaFormat;
+        this.f27607b = mediaFormat;
     }
 }

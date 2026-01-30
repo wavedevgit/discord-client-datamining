@@ -385,7 +385,7 @@ public abstract class i implements ds.h {
                 Intrinsics.checkNotNullParameter(args, "args");
                 d(args);
                 ((Field) b()).set(this.f22381g, kotlin.collections.i.U(args));
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
         }
 
@@ -402,7 +402,7 @@ public abstract class i implements ds.h {
                 Intrinsics.checkNotNullParameter(args, "args");
                 d(args);
                 ((Field) b()).set(null, kotlin.collections.i.w0(args));
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
         }
 
@@ -456,7 +456,7 @@ public abstract class i implements ds.h {
                 obj = null;
             }
             field.set(obj, kotlin.collections.i.w0(args));
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         @Override // ds.i
@@ -733,7 +733,7 @@ public abstract class i implements ds.h {
             Intrinsics.checkNotNullParameter(args, "args");
             Object invoke = ((Method) b()).invoke(obj, Arrays.copyOf(args, args.length));
             if (this.f22382f) {
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
             return invoke;
         }

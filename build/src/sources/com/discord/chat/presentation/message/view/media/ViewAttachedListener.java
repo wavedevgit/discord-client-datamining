@@ -37,7 +37,7 @@ public final class ViewAttachedListener implements View.OnAttachStateChangeListe
         this.view = view;
         this.viewAttached = viewAttached;
         this.viewScrolling = viewScrolling;
-        this.isAttachedDelay = view.getResources().getInteger(g.f54450d);
+        this.isAttachedDelay = view.getResources().getInteger(g.f54466d);
         this.isAttachedRunnable = new Runnable() { // from class: a7.a
             @Override // java.lang.Runnable
             public final void run() {
@@ -56,7 +56,7 @@ public final class ViewAttachedListener implements View.OnAttachStateChangeListe
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit _init_$lambda$0(boolean z10) {
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private final ViewScrollStateListener getScrollStateListener() {

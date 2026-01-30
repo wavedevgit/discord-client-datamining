@@ -5,21 +5,21 @@ import android.content.Context;
 public final class fk implements mj {
 
     /* renamed from: a  reason: collision with root package name */
-    private bj.b f45235a;
+    private bj.b f45251a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final bj.b f45236b;
+    private final bj.b f45252b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final oj f45237c;
+    private final oj f45253c;
 
     public fk(Context context, oj ojVar) {
-        this.f45237c = ojVar;
+        this.f45253c = ojVar;
         com.google.android.datatransport.cct.a aVar = com.google.android.datatransport.cct.a.f12637g;
         zb.t.f(context);
         final xb.i g10 = zb.t.c().g(aVar);
         if (aVar.a().contains(xb.c.b("json"))) {
-            this.f45235a = new qi.w(new bj.b() { // from class: pg.ck
+            this.f45251a = new qi.w(new bj.b() { // from class: pg.ck
                 @Override // bj.b
                 public final Object get() {
                     return xb.i.this.a("FIREBASE_ML_SDK", byte[].class, xb.c.b("json"), new xb.g() { // from class: pg.ek
@@ -31,7 +31,7 @@ public final class fk implements mj {
                 }
             });
         }
-        this.f45236b = new qi.w(new bj.b() { // from class: pg.dk
+        this.f45252b = new qi.w(new bj.b() { // from class: pg.dk
             @Override // bj.b
             public final Object get() {
                 return xb.i.this.a("FIREBASE_ML_SDK", byte[].class, xb.c.b("proto"), new xb.g() { // from class: pg.bk
@@ -54,14 +54,14 @@ public final class fk implements mj {
 
     @Override // pg.mj
     public final void a(lj ljVar) {
-        if (this.f45237c.a() == 0) {
-            bj.b bVar = this.f45235a;
+        if (this.f45253c.a() == 0) {
+            bj.b bVar = this.f45251a;
             if (bVar != null) {
-                ((xb.h) bVar.get()).a(b(this.f45237c, ljVar));
+                ((xb.h) bVar.get()).a(b(this.f45253c, ljVar));
                 return;
             }
             return;
         }
-        ((xb.h) this.f45236b.get()).a(b(this.f45237c, ljVar));
+        ((xb.h) this.f45252b.get()).a(b(this.f45253c, ljVar));
     }
 }

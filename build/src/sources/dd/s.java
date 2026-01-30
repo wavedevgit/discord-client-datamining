@@ -108,9 +108,9 @@ public final class s implements m {
     private int h(ne.g0 g0Var) {
         int b10 = g0Var.b();
         a.b e10 = nc.a.e(g0Var, true);
-        this.f22060u = e10.f40012c;
-        this.f22057r = e10.f40010a;
-        this.f22059t = e10.f40011b;
+        this.f22060u = e10.f40028c;
+        this.f22057r = e10.f40026a;
+        this.f22059t = e10.f40027b;
         return b10 - g0Var.b();
     }
 
@@ -240,7 +240,7 @@ public final class s implements m {
                     if (i10 != 2) {
                         if (i10 == 3) {
                             int min = Math.min(h0Var.a(), this.f22048i - this.f22047h);
-                            h0Var.l(this.f22042c.f40188a, this.f22047h, min);
+                            h0Var.l(this.f22042c.f40204a, this.f22047h, min);
                             int i11 = this.f22047h + min;
                             this.f22047h = i11;
                             if (i11 == this.f22048i) {

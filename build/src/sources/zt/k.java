@@ -8,16 +8,16 @@ import kotlin.text.StringsKt;
 public final class k {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f56129d = new a(null);
+    public static final a f56145d = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    public final tt.j f56130a;
+    public final tt.j f56146a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f56131b;
+    public final int f56147b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final String f56132c;
+    public final String f56148c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -83,22 +83,22 @@ public final class k {
     public k(tt.j protocol, int i10, String message) {
         Intrinsics.checkNotNullParameter(protocol, "protocol");
         Intrinsics.checkNotNullParameter(message, "message");
-        this.f56130a = protocol;
-        this.f56131b = i10;
-        this.f56132c = message;
+        this.f56146a = protocol;
+        this.f56147b = i10;
+        this.f56148c = message;
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder();
-        if (this.f56130a == tt.j.HTTP_1_0) {
+        if (this.f56146a == tt.j.HTTP_1_0) {
             sb2.append("HTTP/1.0");
         } else {
             sb2.append("HTTP/1.1");
         }
         sb2.append(' ');
-        sb2.append(this.f56131b);
+        sb2.append(this.f56147b);
         sb2.append(' ');
-        sb2.append(this.f56132c);
+        sb2.append(this.f56148c);
         String sb3 = sb2.toString();
         Intrinsics.checkNotNullExpressionValue(sb3, "StringBuilder().apply(builderAction).toString()");
         return sb3;

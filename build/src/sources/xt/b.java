@@ -33,7 +33,7 @@ public abstract class b {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void c(a aVar, d dVar, String str) {
-        Logger a10 = e.f53824h.a();
+        Logger a10 = e.f53840h.a();
         StringBuilder sb2 = new StringBuilder();
         sb2.append(dVar.f());
         sb2.append(' ');

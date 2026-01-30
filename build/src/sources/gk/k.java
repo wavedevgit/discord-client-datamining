@@ -3,7 +3,7 @@ package gk;
 public abstract class k {
 
     /* renamed from: a  reason: collision with root package name */
-    private static k f27006a = new f();
+    private static k f27022a = new f();
 
     /* JADX INFO: Access modifiers changed from: protected */
     /* JADX WARN: Removed duplicated region for block: B:18:0x0035  */
@@ -123,7 +123,7 @@ public abstract class k {
     }
 
     public static k b() {
-        return f27006a;
+        return f27022a;
     }
 
     public abstract b c(b bVar, int i10, int i11, float f10, float f11, float f12, float f13, float f14, float f15, float f16, float f17, float f18, float f19, float f20, float f21, float f22, float f23, float f24, float f25);

@@ -5,7 +5,7 @@ import ui.c;
 final class ra implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ra f45678a = new ra();
+    static final ra f45694a = new ra();
 
     static {
         c.b a10 = ui.c.a("confidence");

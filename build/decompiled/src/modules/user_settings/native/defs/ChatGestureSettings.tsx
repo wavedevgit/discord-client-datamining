@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var7;
     var3 = function() { // Original name: useSwipeToReplySettingValue, environment: var1
-        _fun71839: for (var _fun71839_ip = 0;;) switch (_fun71839_ip) {
+        _fun71885: for (var _fun71885_ip = 0;;) switch (_fun71885_ip) {
             case 0:
                 var5 = _closure1_slot0;
                 var2 = _closure1_slot2;
@@ -26,8 +26,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.SwipeRightToLeftMode;
                 var2 = var2.SWIPE_RIGHT_TO_LEFT_UNSET;
                 if (!(var0 === var2)) {
-                    _fun71839_ip = 98;
-                    continue _fun71839
+                    _fun71885_ip = 98;
+                    continue _fun71885
                 }
             case 69:
                 var2 = _closure1_slot0;
@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var4;
     var2.useSwipeToReplySettingValue = var3;
     var1 = function() { // Original name: getSwipeToReplySettingValue, environment: var1
-        _fun71844: for (var _fun71844_ip = 0;;) switch (_fun71844_ip) {
+        _fun71890: for (var _fun71890_ip = 0;;) switch (_fun71890_ip) {
             case 0:
                 var5 = _closure1_slot0;
                 var2 = _closure1_slot2;
@@ -223,8 +223,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.SwipeRightToLeftMode;
                 var2 = var2.SWIPE_RIGHT_TO_LEFT_UNSET;
                 if (!(var0 === var2)) {
-                    _fun71844_ip = 98;
-                    continue _fun71844
+                    _fun71890_ip = 98;
+                    continue _fun71890
                 }
             case 69:
                 var2 = _closure1_slot0;
@@ -239,4 +239,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getSwipeToReplySettingValue = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6965, 660, 1311, 1234, 795, 1348, 8939, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6968, 660, 1311, 1234, 795, 1348, 8943, 2]);

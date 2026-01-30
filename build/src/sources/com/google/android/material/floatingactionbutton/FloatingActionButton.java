@@ -31,7 +31,7 @@ import yg.j;
 import zg.g;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class FloatingActionButton extends p implements hh.a, n, CoordinatorLayout.b {
-    private static final int C = j.f54505h;
+    private static final int C = j.f54521h;
     private final hh.b A;
     private com.google.android.material.floatingactionbutton.b B;
 
@@ -138,7 +138,7 @@ public class FloatingActionButton extends p implements hh.a, n, CoordinatorLayou
     }
 
     public FloatingActionButton(@NonNull Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, yg.b.f54360u);
+        this(context, attributeSet, yg.b.f54376u);
     }
 
     private com.google.android.material.floatingactionbutton.b e() {
@@ -153,9 +153,9 @@ public class FloatingActionButton extends p implements hh.a, n, CoordinatorLayou
         Resources resources = getResources();
         if (i10 != -1) {
             if (i10 != 1) {
-                return resources.getDimensionPixelSize(d.f54382d);
+                return resources.getDimensionPixelSize(d.f54398d);
             }
-            return resources.getDimensionPixelSize(d.f54380c);
+            return resources.getDimensionPixelSize(d.f54396c);
         } else if (Math.max(resources.getConfiguration().screenWidthDp, resources.getConfiguration().screenHeightDp) < 470) {
             return g(1);
         } else {
@@ -362,7 +362,7 @@ public class FloatingActionButton extends p implements hh.a, n, CoordinatorLayou
         }
         qh.a aVar = (qh.a) parcelable;
         super.onRestoreInstanceState(aVar.a());
-        this.A.d((Bundle) e.g((Bundle) aVar.f47395i.get("expandableWidgetHelper")));
+        this.A.d((Bundle) e.g((Bundle) aVar.f47411i.get("expandableWidgetHelper")));
     }
 
     @Override // android.view.View
@@ -372,7 +372,7 @@ public class FloatingActionButton extends p implements hh.a, n, CoordinatorLayou
             onSaveInstanceState = new Bundle();
         }
         qh.a aVar = new qh.a(onSaveInstanceState);
-        aVar.f47395i.put("expandableWidgetHelper", this.A.e());
+        aVar.f47411i.put("expandableWidgetHelper", this.A.e());
         return aVar;
     }
 
@@ -732,8 +732,8 @@ public class FloatingActionButton extends p implements hh.a, n, CoordinatorLayou
 
         public BaseBehavior(Context context, AttributeSet attributeSet) {
             super(context, attributeSet);
-            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, yg.k.f54577f2);
-            this.f16025e = obtainStyledAttributes.getBoolean(yg.k.f54587g2, true);
+            TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, yg.k.f54593f2);
+            this.f16025e = obtainStyledAttributes.getBoolean(yg.k.f54603g2, true);
             obtainStyledAttributes.recycle();
         }
     }
@@ -771,7 +771,7 @@ public class FloatingActionButton extends p implements hh.a, n, CoordinatorLayou
             r5 = 0
             android.graphics.PorterDuff$Mode r13 = com.google.android.material.internal.o.i(r13, r5)
             r10.f16011i = r13
-            int r13 = yg.k.f54547c2
+            int r13 = yg.k.f54563c2
             android.content.res.ColorStateList r13 = lh.c.a(r0, r12, r13)
             r10.f16014q = r13
             int r13 = yg.k.X1
@@ -788,22 +788,22 @@ public class FloatingActionButton extends p implements hh.a, n, CoordinatorLayou
             float r13 = r12.getDimension(r13, r2)
             int r5 = yg.k.Z1
             float r5 = r12.getDimension(r5, r2)
-            int r6 = yg.k.f54537b2
+            int r6 = yg.k.f54553b2
             float r2 = r12.getDimension(r6, r2)
-            int r6 = yg.k.f54567e2
+            int r6 = yg.k.f54583e2
             boolean r6 = r12.getBoolean(r6, r11)
             r10.f16020w = r6
             android.content.res.Resources r6 = r10.getResources()
             int r7 = yg.d.X
             int r6 = r6.getDimensionPixelSize(r7)
-            int r7 = yg.k.f54527a2
+            int r7 = yg.k.f54543a2
             int r7 = r12.getDimensionPixelSize(r7, r11)
             r10.setMaxImageSize(r7)
-            int r7 = yg.k.f54557d2
+            int r7 = yg.k.f54573d2
             zg.g r7 = zg.g.b(r0, r12, r7)
             int r8 = yg.k.Y1
             zg.g r8 = zg.g.b(r0, r12, r8)
-            oh.c r9 = oh.k.f43863m
+            oh.c r9 = oh.k.f43879m
             oh.k$b r0 = oh.k.g(r0, r1, r3, r4, r9)
             oh.k r0 = r0.m()
             int r4 = yg.k.V1

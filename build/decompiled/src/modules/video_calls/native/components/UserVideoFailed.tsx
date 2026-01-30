@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/video_calls/native/components/UserVideoFailed.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: UserVideoFailed, environment: var1
-        _fun111680: for (var _fun111680_ip = 0;;) switch (_fun111680_ip) {
+        _fun111942: for (var _fun111942_ip = 0;;) switch (_fun111942_ip) {
             case 0:
                 var3 = arg0;
                 var0 = var3.userId;
@@ -127,8 +127,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = {};
                 var4 = !var4;
                 if (!var4) {
-                    _fun111680_ip = 225;
-                    continue _fun111680
+                    _fun111942_ip = 225;
+                    continue _fun111942
                 }
             case 177:
                 var13 = _closure1_slot5;
@@ -201,8 +201,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.style = var10;
                 var8 = !var8;
                 if (!var8) {
-                    _fun111680_ip = 580;
-                    continue _fun111680
+                    _fun111942_ip = 580;
+                    continue _fun111942
                 }
             case 473:
                 var11 = _closure1_slot5;
@@ -298,4 +298,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 660, 33, 1297, 671, 7965, 7970, 3895, 1234, 4037, 7995, 3590, 8167, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 660, 33, 1297, 671, 7968, 7973, 3901, 1234, 4043, 7998, 3592, 8170, 2]);

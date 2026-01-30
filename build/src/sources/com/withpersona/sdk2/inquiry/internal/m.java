@@ -121,7 +121,7 @@ public final class m extends androidx.lifecycle.a {
                 if (inquiryActivityEvent instanceof InquiryActivityEvent.CancelInquiry) {
                     this.f20029d.f(true);
                 }
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
         }
 
@@ -157,7 +157,7 @@ public final class m extends androidx.lifecycle.a {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -211,12 +211,12 @@ public final class m extends androidx.lifecycle.a {
                     return f10;
                 }
             }
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -274,12 +274,12 @@ public final class m extends androidx.lifecycle.a {
                         return f10;
                     }
                 }
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
             }
         }
 
@@ -300,7 +300,7 @@ public final class m extends androidx.lifecycle.a {
             if (this.f20033d == 0) {
                 kotlin.c.b(obj);
                 gs.i.d(o0.a(m.this), null, null, new a(m.this, (n.b) this.f20034e, null), 3, null);
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
@@ -308,7 +308,7 @@ public final class m extends androidx.lifecycle.a {
         @Override // kotlin.jvm.functions.Function2
         /* renamed from: j */
         public final Object invoke(n.b bVar, Continuation continuation) {
-            return ((d) create(bVar, continuation)).invokeSuspend(Unit.f33282a);
+            return ((d) create(bVar, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -378,7 +378,7 @@ public final class m extends androidx.lifecycle.a {
         } else {
             mutableStateFlow = mutableStateFlow2;
         }
-        return vm.a.a(nVar, a10, mutableStateFlow, e10, a2.f39362a.a(), new d(null));
+        return vm.a.a(nVar, a10, mutableStateFlow, e10, a2.f39378a.a(), new d(null));
     }
 
     public final void D(boolean z10) {

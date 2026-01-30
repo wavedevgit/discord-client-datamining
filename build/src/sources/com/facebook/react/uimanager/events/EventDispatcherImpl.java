@@ -113,7 +113,7 @@ public final class EventDispatcherImpl implements EventDispatcher, LifecycleEven
                         eventDispatcherImpl.clearEventsToDispatch();
                         eventDispatcherImpl.eventCookieToLastEventIdx.clear();
                     }
-                    Unit unit = Unit.f33282a;
+                    Unit unit = Unit.f33298a;
                 }
                 Iterator it = EventDispatcherImpl.this.postEventDispatchListeners.iterator();
                 Intrinsics.checkNotNullExpressionValue(it, "iterator(...)");
@@ -308,7 +308,7 @@ public final class EventDispatcherImpl implements EventDispatcher, LifecycleEven
                         }
                     }
                 }
-                Unit unit = Unit.f33282a;
+                Unit unit = Unit.f33298a;
             }
             this.eventStaging.clear();
         }
@@ -349,7 +349,7 @@ public final class EventDispatcherImpl implements EventDispatcher, LifecycleEven
             synchronized (this.eventsStagingLock) {
                 this.eventStaging.add(event);
                 qb.a.l(0L, event.getEventName(), event.getUniqueID());
-                Unit unit = Unit.f33282a;
+                Unit unit = Unit.f33298a;
             }
             maybePostFrameCallbackFromNonUI();
             return;

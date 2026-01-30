@@ -7,14 +7,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var1;
     var _closure1_slot1 = var3;
     var5 = function() { // Original name: isEligible, environment: var0
-        _fun113725: for (var _fun113725_ip = 0;;) switch (_fun113725_ip) {
+        _fun113989: for (var _fun113989_ip = 0;;) switch (_fun113989_ip) {
             case 0:
                 var0 = _closure1_slot4;
                 var3 = undefined;
                 var0 = var0.bind(var3)();
                 if (!var0) {
-                    _fun113725_ip = 79;
-                    continue _fun113725
+                    _fun113989_ip = 79;
+                    continue _fun113989
                 }
             case 16:
                 var2 = _closure1_slot0;
@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot2 = var5;
     var4 = function() { // Original name: useIsEligible, environment: var0
-        _fun113726: for (var _fun113726_ip = 0;;) switch (_fun113726_ip) {
+        _fun113990: for (var _fun113990_ip = 0;;) switch (_fun113990_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -59,8 +59,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot4;
                 var0 = var0.bind(var2)();
                 if (!var0) {
-                    _fun113726_ip = 82;
-                    continue _fun113726
+                    _fun113990_ip = 82;
+                    continue _fun113990
                 }
             case 79:
                 var0 = var1;
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot3 = var4;
     var1 = function() { // Original name: isHolidayHappening, environment: var0
-        _fun113727: for (var _fun113727_ip = 0;;) switch (_fun113727_ip) {
+        _fun113991: for (var _fun113991_ip = 0;;) switch (_fun113991_ip) {
             case 0:
                 var0 = global;
                 var1 = var0.Date;
@@ -85,8 +85,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.startTimeMs;
                 var0 = var2 >= var0;
                 if (!var0) {
-                    _fun113727_ip = 81;
-                    continue _fun113727
+                    _fun113991_ip = 81;
+                    continue _fun113991
                 }
             case 54:
                 var3 = _closure1_slot0;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.subscribe = var6;
     var1.isEligible = var5;
     var5 = function() { // Original name: useHolidaySoundpack, environment: var0
-        _fun113729: for (var _fun113729_ip = 0;;) switch (_fun113729_ip) {
+        _fun113993: for (var _fun113993_ip = 0;;) switch (_fun113993_ip) {
             case 0:
                 var0 = _closure1_slot3;
                 var4 = undefined;
@@ -136,8 +136,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = null;
                 var0 = null;
                 if (!var1) {
-                    _fun113729_ip = 135;
-                    continue _fun113729
+                    _fun113993_ip = 135;
+                    continue _fun113993
                 }
             case 20:
                 var6 = _closure1_slot0;
@@ -148,8 +148,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.soundpack;
                 var0 = null;
                 if (!var1) {
-                    _fun113729_ip = 135;
-                    continue _fun113729
+                    _fun113993_ip = 135;
+                    continue _fun113993
                 }
             case 50:
                 var6 = _closure1_slot0;
@@ -160,8 +160,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3 != var1;
                 var0 = null;
                 if (!var1) {
-                    _fun113729_ip = 135;
-                    continue _fun113729
+                    _fun113993_ip = 135;
+                    continue _fun113993
                 }
             case 82:
                 var1 = {};
@@ -183,15 +183,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.useHolidaySoundpack = var5;
     var1.useIsEligible = var4;
     var4 = function() { // Original name: getAppSpinnerSources, environment: var0
-        _fun113730: for (var _fun113730_ip = 0;;) switch (_fun113730_ip) {
+        _fun113994: for (var _fun113994_ip = 0;;) switch (_fun113994_ip) {
             case 0:
                 var0 = _closure1_slot4;
                 var3 = undefined;
                 var2 = var0.bind(var3)();
                 var0 = null;
                 if (!var2) {
-                    _fun113730_ip = 43;
-                    continue _fun113730
+                    _fun113994_ip = 43;
+                    continue _fun113994
                 }
             case 18:
                 var2 = _closure1_slot0;
@@ -206,7 +206,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.getAppSpinnerSources = var4;
     var4 = function() { // Original name: getLoadingTips, environment: var0
-        _fun113731: for (var _fun113731_ip = 0;;) switch (_fun113731_ip) {
+        _fun113995: for (var _fun113995_ip = 0;;) switch (_fun113995_ip) {
             case 0:
                 var0 = _closure1_slot4;
                 var4 = undefined;
@@ -214,8 +214,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = null;
                 var0 = null;
                 if (!var1) {
-                    _fun113731_ip = 84;
-                    continue _fun113731
+                    _fun113995_ip = 84;
+                    continue _fun113995
                 }
             case 20:
                 var6 = _closure1_slot0;
@@ -227,8 +227,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3 == var1;
                 var1 = undefined;
                 if (var3) {
-                    _fun113731_ip = 81;
-                    continue _fun113731
+                    _fun113995_ip = 81;
+                    continue _fun113995
                 }
             case 54:
                 var3 = _closure1_slot0;
@@ -245,15 +245,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.getLoadingTips = var4;
     var0 = function() { // Original name: getHolidaySoundpack, environment: var0
-        _fun113732: for (var _fun113732_ip = 0;;) switch (_fun113732_ip) {
+        _fun113996: for (var _fun113996_ip = 0;;) switch (_fun113996_ip) {
             case 0:
                 var0 = _closure1_slot2;
                 var3 = undefined;
                 var2 = var0.bind(var3)();
                 var0 = null;
                 if (!var2) {
-                    _fun113732_ip = 71;
-                    continue _fun113732
+                    _fun113996_ip = 71;
+                    continue _fun113996
                 }
             case 18:
                 var6 = _closure1_slot0;
@@ -264,8 +264,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.soundpack;
                 var0 = null;
                 if (!var2) {
-                    _fun113732_ip = 71;
-                    continue _fun113732
+                    _fun113996_ip = 71;
+                    continue _fun113996
                 }
             case 48:
                 var2 = _closure1_slot0;
@@ -288,4 +288,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [14533, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [14560, 2]);

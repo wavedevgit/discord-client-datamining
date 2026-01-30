@@ -101,11 +101,11 @@ public final class ChatListViewFactoryKt$fillAccessories$1 extends kotlin.corout
                 return f10;
             }
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ChatListViewFactoryKt$fillAccessories$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((ChatListViewFactoryKt$fillAccessories$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

@@ -39,7 +39,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot3 = var5;
     var0 = function(arg0) { // Original name: progressFromServer, environment: var1
-        _fun46565: for (var _fun46565_ip = 0;;) switch (_fun46565_ip) {
+        _fun46616: for (var _fun46616_ip = 0;;) switch (_fun46616_ip) {
             case 0:
                 var0 = {};
                 var1 = global;
@@ -56,8 +56,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = null;
                 var2 = 0;
                 if (!var1) {
-                    _fun46565_ip = 187;
-                    continue _fun46565
+                    _fun46616_ip = 187;
+                    continue _fun46616
                 }
             case 56:
                 var10 = var9[var2];
@@ -78,8 +78,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var3 == var13;
                 var11 = null;
                 if (var12) {
-                    _fun46565_ip = 166;
-                    continue _fun46565
+                    _fun46616_ip = 166;
+                    continue _fun46616
                 }
             case 137:
                 var12 = {};
@@ -94,8 +94,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2 + 1;
                 var1 = var9.length;
                 if (var2 < var1) {
-                    _fun46565_ip = 56;
-                    continue _fun46565
+                    _fun46616_ip = 56;
+                    continue _fun46616
                 }
             case 187:
                 return var0;
@@ -103,7 +103,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot4 = var0;
     var4 = function(arg0) { // Original name: questUserStatusFromServer, environment: var1
-        _fun46566: for (var _fun46566_ip = 0;;) switch (_fun46566_ip) {
+        _fun46617: for (var _fun46617_ip = 0;;) switch (_fun46617_ip) {
             case 0:
                 var1 = arg0;
                 var0 = {};
@@ -121,8 +121,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var4 = var2 != var3;
                 if (!var4) {
-                    _fun46566_ip = 79;
-                    continue _fun46566
+                    _fun46617_ip = 79;
+                    continue _fun46617
                 }
             case 76:
                 var2 = var3;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot5 = var4;
     var0 = function(arg0) { // Original name: getSimpleRewardFromServer, environment: var1
-        _fun46567: for (var _fun46567_ip = 0;;) switch (_fun46567_ip) {
+        _fun46618: for (var _fun46618_ip = 0;;) switch (_fun46618_ip) {
             case 0:
                 var2 = arg0;
                 var1 = var2.type;
@@ -157,8 +157,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.QuestRewardTypes;
                 var0 = var0.VIRTUAL_CURRENCY;
                 if (!(var1 !== var0)) {
-                    _fun46567_ip = 126;
-                    continue _fun46567
+                    _fun46618_ip = 126;
+                    continue _fun46618
                 }
             case 49:
                 var0 = {};
@@ -176,8 +176,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.assetVideo = var1;
                 var1 = var2.collectible_product;
                 var0.collectibleProduct = var1;
-                _fun46567_ip = 193;
-                continue _fun46567;
+                _fun46618_ip = 193;
+                continue _fun46618;
             case 126:
                 var1 = {};
                 var3 = var2.sku_id;
@@ -279,7 +279,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot7 = var0;
     var3 = function(arg0) { // Original name: questsRewardCodeFromServer, environment: var1
-        _fun46569: for (var _fun46569_ip = 0;;) switch (_fun46569_ip) {
+        _fun46620: for (var _fun46620_ip = 0;;) switch (_fun46620_ip) {
             case 0:
                 var1 = arg0;
                 var0 = {};
@@ -297,8 +297,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = null;
                 var3 = var1 != var2;
                 if (!var3) {
-                    _fun46569_ip = 75;
-                    continue _fun46569
+                    _fun46620_ip = 75;
+                    continue _fun46620
                 }
             case 72:
                 var1 = var2;
@@ -309,7 +309,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot8 = var3;
     var0 = function(arg0) { // Original name: _questsTenantMetadataFromServer, environment: var1
-        _fun46570: for (var _fun46570_ip = 0;;) switch (_fun46570_ip) {
+        _fun46621: for (var _fun46621_ip = 0;;) switch (_fun46621_ip) {
             case 0:
                 var1 = arg0;
                 var0 = null;
@@ -317,15 +317,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = undefined;
                 var2 = undefined;
                 if (var3) {
-                    _fun46570_ip = 22;
-                    continue _fun46570
+                    _fun46621_ip = 22;
+                    continue _fun46621
                 }
             case 16:
                 var2 = var1.quest_rewards;
             case 22:
                 if (!(var0 != var2)) {
-                    _fun46570_ip = 214;
-                    continue _fun46570
+                    _fun46621_ip = 214;
+                    continue _fun46621
                 }
             case 29:
                 var4 = var1.quest_rewards;
@@ -339,8 +339,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.QuestRewardTypes;
                 var1 = var1.IN_GAME;
                 if (!(var1 !== var2)) {
-                    _fun46570_ip = 181;
-                    continue _fun46570
+                    _fun46621_ip = 181;
+                    continue _fun46621
                 }
             case 85:
                 var3 = _closure1_slot0;
@@ -350,8 +350,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.QuestRewardTypes;
                 var1 = var1.REWARD_CODE;
                 if (!(var1 !== var2)) {
-                    _fun46570_ip = 120;
-                    continue _fun46570
+                    _fun46621_ip = 120;
+                    continue _fun46621
                 }
             case 118:
                 return var7;
@@ -445,7 +445,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = 'modules/quests/utils/QuestServerUtils.tsx';
     var6 = var7.bind(var8)(var6);
     var6 = function(arg0) { // Original name: isQuestWithKnownConfigVersion, environment: var1
-        _fun46574: for (var _fun46574_ip = 0;;) switch (_fun46574_ip) {
+        _fun46625: for (var _fun46625_ip = 0;;) switch (_fun46625_ip) {
             case 0:
                 var0 = arg0;
             case 3: // try_start_0
@@ -481,7 +481,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.questConfigFromServer = var5;
     var2.questUserStatusFromServer = var4;
     var4 = function(arg0) { // Original name: questWithUserStatusFromServer, environment: var1
-        _fun46576: for (var _fun46576_ip = 0;;) switch (_fun46576_ip) {
+        _fun46627: for (var _fun46627_ip = 0;;) switch (_fun46627_ip) {
             case 0:
                 var1 = arg0;
                 var0 = {};
@@ -498,8 +498,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var4 = var2 == var4;
                 if (var4) {
-                    _fun46576_ip = 78;
-                    continue _fun46576
+                    _fun46627_ip = 78;
+                    continue _fun46627
                 }
             case 63:
                 var4 = _closure1_slot5;
@@ -528,7 +528,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.excludedQuestFromServer = var4;
     var4 = function(arg0) { // Original name: getClaimedQuestWithUserStatusFromServer, environment: var1
-        _fun46578: for (var _fun46578_ip = 0;;) switch (_fun46578_ip) {
+        _fun46629: for (var _fun46629_ip = 0;;) switch (_fun46629_ip) {
             case 0:
                 var2 = arg0;
                 var0 = {};
@@ -543,8 +543,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = null;
                 var5 = var1 == var5;
                 if (var5) {
-                    _fun46578_ip = 67;
-                    continue _fun46578
+                    _fun46629_ip = 67;
+                    continue _fun46629
                 }
             case 52:
                 var3 = _closure1_slot5;
@@ -573,14 +573,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.questsEntitlementsFromServer = var3;
     var1 = function(arg0) { // Original name: questHomeTakeoverConfigFromServer, environment: var1
-        _fun46580: for (var _fun46580_ip = 0;;) switch (_fun46580_ip) {
+        _fun46631: for (var _fun46631_ip = 0;;) switch (_fun46631_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.version;
                 var1 = 1;
                 if (!(var1 === var2)) {
-                    _fun46580_ip = 482;
-                    continue _fun46580
+                    _fun46631_ip = 482;
+                    continue _fun46631
                 }
             case 19:
                 var2 = _closure1_slot0;
@@ -594,8 +594,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.placements;
                 var1 = var2 in var1;
                 if (var1) {
-                    _fun46580_ip = 73;
-                    continue _fun46580
+                    _fun46631_ip = 73;
+                    continue _fun46631
                 }
             case 69:
                 var1 = null;
@@ -611,8 +611,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1[var0];
                 var0 = null;
                 if (!(var0 != var2)) {
-                    _fun46580_ip = 480;
-                    continue _fun46580
+                    _fun46631_ip = 480;
+                    continue _fun46631
                 }
             case 121:
                 var1 = {};
@@ -656,8 +656,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.expiresAt = var4;
                 var4 = var2.asset_hero_video;
                 if (!(var0 != var4)) {
-                    _fun46580_ip = 370;
-                    continue _fun46580
+                    _fun46631_ip = 370;
+                    continue _fun46631
                 }
             case 347:
                 var4 = _closure1_slot11;
@@ -667,8 +667,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 370:
                 var3 = var2.quest_home_entrypoint;
                 if (!(var0 != var3)) {
-                    _fun46580_ip = 478;
-                    continue _fun46580
+                    _fun46631_ip = 478;
+                    continue _fun46631
                 }
             case 380:
                 var3 = var2.quest_home_entrypoint;
@@ -697,4 +697,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.questHomeTakeoverConfigFromServer = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 3418, 5198, 5193, 5186, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 3418, 5204, 5199, 5192, 2]);

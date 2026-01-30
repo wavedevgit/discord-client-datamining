@@ -89,7 +89,7 @@ public final class Embed implements SpoilerableData {
     }
 
     static {
-        o oVar = o.f31103e;
+        o oVar = o.f31119e;
         $childSerializers = new Lazy[]{l.a(oVar, new Function0() { // from class: com.discord.chat.bridge.embed.a
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {

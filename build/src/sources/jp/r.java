@@ -6,11 +6,11 @@ public final class r implements tq.d {
     private static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final r f32375a = new r();
+        static final r f32391a = new r();
     }
 
     public static r a() {
-        return a.f32375a;
+        return a.f32391a;
     }
 
     public static q c() {

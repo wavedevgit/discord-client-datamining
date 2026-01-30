@@ -8,11 +8,11 @@ public final class j1 implements tq.d {
     private static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final j1 f55933a = new j1();
+        static final j1 f55949a = new j1();
     }
 
     public static j1 a() {
-        return a.f55933a;
+        return a.f55949a;
     }
 
     public static Set c() {

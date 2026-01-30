@@ -25,7 +25,7 @@ public final class JsonLogicBooleanKt {
 
     public static final e jsonLogicEngine_delegate$lambda$0() {
         e.a aVar = new e.a();
-        i iVar = i.f28308a;
+        i iVar = i.f28324a;
         return aVar.d(iVar.b()).b(iVar.a()).e();
     }
 }

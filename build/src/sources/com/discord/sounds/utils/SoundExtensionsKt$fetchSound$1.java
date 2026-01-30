@@ -73,12 +73,12 @@ public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2
                 return f10;
             }
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((SoundExtensionsKt$fetchSound$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((SoundExtensionsKt$fetchSound$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -126,14 +126,14 @@ public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2
                 if (this.label == 0) {
                     c.b(obj);
                     this.$soundManager.prepare(this.$key, this.$usage, null, ((DownloadState.Completed) this.$downloadState).getFile().getAbsolutePath(), this.$soundResIdPrepared);
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-                return ((C01471) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+                return ((C01471) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
             }
         }
 
@@ -163,14 +163,14 @@ public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2
                 if (this.label == 0) {
                     c.b(obj);
                     Log.INSTANCE.w(SoundManager.Companion.getLogTag(), "Failed to download sound.", this.$e);
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-                return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+                return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
             }
         }
 
@@ -196,14 +196,14 @@ public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2
                 b.f();
                 if (this.label == 0) {
                     c.b(obj);
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-                return ((AnonymousClass3) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+                return ((AnonymousClass3) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
             }
         }
 
@@ -304,7 +304,7 @@ public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2
                 if (r0 != r3) goto L7c
                 goto L90
             L7c:
-                kotlin.Unit r0 = kotlin.Unit.f33282a
+                kotlin.Unit r0 = kotlin.Unit.f33298a
                 return r0
             L7f:
                 gs.c1 r0 = gs.m0.c()
@@ -316,7 +316,7 @@ public final class SoundExtensionsKt$fetchSound$1 extends k implements Function2
             L90:
                 return r3
             L91:
-                kotlin.Unit r0 = kotlin.Unit.f33282a
+                kotlin.Unit r0 = kotlin.Unit.f33298a
                 return r0
             */
             throw new UnsupportedOperationException("Method not decompiled: com.discord.sounds.utils.SoundExtensionsKt$fetchSound$1.AnonymousClass1.emit(com.discord.file_downloader.DownloadState, kotlin.coroutines.Continuation):java.lang.Object");

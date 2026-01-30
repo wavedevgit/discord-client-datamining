@@ -20,7 +20,7 @@ public /* synthetic */ class EmbedViewHolder$bind$3 extends FunctionReferenceImp
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
         m721invokentcYbpo(((MessageId) obj).m1093unboximpl(), (LinkContentNode) obj2);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* renamed from: invoke-ntcYbpo  reason: not valid java name */

@@ -21,7 +21,7 @@ import xp.l5;
 public abstract class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private static ar.e f54934a;
+    private static ar.e f54950a;
 
     public static final k5 a(List list, KClass type, Function1 predicate) {
         k5 a10;
@@ -61,10 +61,10 @@ public abstract class f {
     }
 
     private static final ar.e c(Context context) {
-        ar.e eVar = f54934a;
+        ar.e eVar = f54950a;
         if (eVar == null) {
             ar.e b10 = ar.e.b(context);
-            f54934a = b10;
+            f54950a = b10;
             Intrinsics.checkNotNullExpressionValue(b10, "also(...)");
             return b10;
         }

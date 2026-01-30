@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/directory_channels/useCanManageGuildDirectoryEntry.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Original name: useCanManageGuildDirectoryEntry, environment: var1
-        _fun71180: for (var _fun71180_ip = 0;;) switch (_fun71180_ip) {
+        _fun71226: for (var _fun71226_ip = 0;;) switch (_fun71226_ip) {
             case 0:
                 var1 = arg0;
                 var _closure2_slot0 = var1;
@@ -115,16 +115,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.isEntryAdmin = var1;
                 var3 = var1;
                 if (var1) {
-                    _fun71180_ip = 201;
-                    continue _fun71180
+                    _fun71226_ip = 201;
+                    continue _fun71226
                 }
             case 198:
                 var3 = var2;
             case 201:
                 var0.canEdit = var3;
                 if (var1) {
-                    _fun71180_ip = 212;
-                    continue _fun71180
+                    _fun71226_ip = 212;
+                    continue _fun71226
                 }
             case 209:
                 var1 = var2;

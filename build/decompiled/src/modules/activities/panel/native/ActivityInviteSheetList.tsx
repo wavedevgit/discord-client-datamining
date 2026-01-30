@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var5.PressableOpacity;
         var5 = {};
         var9 = function() { // Original name: onPress, environment: var9
-            _fun110820: for (var _fun110820_ip = 0;;) switch (_fun110820_ip) {
+            _fun111082: for (var _fun111082_ip = 0;;) switch (_fun111082_ip) {
                 case 0:
                     var4 = _closure1_slot1;
                     var3 = _closure1_slot2;
@@ -89,8 +89,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var1.bind(var2)();
                     var1 = null;
                     if (!(var1 != var4)) {
-                        _fun110820_ip = 114;
-                        continue _fun110820
+                        _fun111082_ip = 114;
+                        continue _fun111082
                     }
                 case 67:
                     var3 = var4.navigate;
@@ -357,4 +357,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 33, 1297, 4638, 671, 8313, 1234, 8351, 4858, 3237, 3873, 3895, 14221, 4849, 4889, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 33, 1297, 4644, 671, 8316, 1234, 8354, 4864, 3237, 3879, 3901, 14247, 4855, 4895, 2]);

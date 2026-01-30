@@ -46,7 +46,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var4;
         var0 = function() { // Environment: var0
-            _fun111072: for (var _fun111072_ip = 0;;) switch (_fun111072_ip) {
+            _fun111334: for (var _fun111334_ip = 0;;) switch (_fun111334_ip) {
                 case 0:
                     var3 = _closure1_slot3;
                     var1 = var3.getChannel;
@@ -55,8 +55,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = null;
                     var1 = var0 != var3;
                     if (!var1) {
-                        _fun111072_ip = 142;
-                        continue _fun111072
+                        _fun111334_ip = 142;
+                        continue _fun111334
                     }
                 case 33:
                     var1 = var3.isPrivate;
@@ -64,8 +64,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = _closure1_slot0;
                     var5 = _closure1_slot1;
                     if (var1) {
-                        _fun111072_ip = 98;
-                        continue _fun111072
+                        _fun111334_ip = 98;
+                        continue _fun111334
                     }
                 case 54:
                     var1 = 4;
@@ -78,8 +78,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = var8.VOICE_CHANNEL;
                     var1.source = var8;
                     var1 = var4.bind(var7)(var3, var1);
-                    _fun111072_ip = 139;
-                    continue _fun111072;
+                    _fun111334_ip = 139;
+                    continue _fun111334;
                 case 98:
                     var4 = 3;
                     var5 = var5[var4];
@@ -101,4 +101,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useInviteMembersCallback = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1372, 660, 3872, 8287, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1372, 660, 3878, 8290, 2]);

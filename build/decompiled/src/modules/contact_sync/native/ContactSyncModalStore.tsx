@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.ContactSyncModes = var4;
     var2.useContactSyncModalStore = var3;
     var3 = function(arg0) { // Original name: initialize, environment: var1
-        _fun80403: for (var _fun80403_ip = 0;;) switch (_fun80403_ip) {
+        _fun80449: for (var _fun80449_ip = 0;;) switch (_fun80449_ip) {
             case 0:
                 var0 = arg0;
                 var _closure2_slot0 = var0;
@@ -104,8 +104,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = undefined;
                 var4 = undefined;
                 if (var6) {
-                    _fun80403_ip = 55;
-                    continue _fun80403
+                    _fun80449_ip = 55;
+                    continue _fun80449
                 }
             case 50:
                 var4 = var5.name;
@@ -117,8 +117,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var3 == var4;
                 var3 = undefined;
                 if (var5) {
-                    _fun80403_ip = 87;
-                    continue _fun80403
+                    _fun80449_ip = 87;
+                    continue _fun80449
                 }
             case 81:
                 var3 = var4.phone;
@@ -353,15 +353,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setPhoneToken = var3;
     var3 = function(arg0) { // Original name: setName, environment: var1
-        _fun80424: for (var _fun80424_ip = 0;;) switch (_fun80424_ip) {
+        _fun80470: for (var _fun80470_ip = 0;;) switch (_fun80470_ip) {
             case 0:
                 var2 = arguments[1];
                 var0 = arg0;
                 var _closure2_slot0 = var0;
                 var0 = undefined;
                 if (!(var2 === var0)) {
-                    _fun80424_ip = 20;
-                    continue _fun80424
+                    _fun80470_ip = 20;
+                    continue _fun80470
                 }
             case 18:
                 var2 = false;
@@ -461,7 +461,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setError = var3;
     var3 = function() { // Original name: useIsOnboarding, environment: var1
-        _fun80433: for (var _fun80433_ip = 0;;) switch (_fun80433_ip) {
+        _fun80479: for (var _fun80479_ip = 0;;) switch (_fun80479_ip) {
             case 0:
                 var2 = _closure1_slot7;
                 var0 = undefined;
@@ -471,8 +471,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.ONBOARDING;
                 var0 = var2 === var0;
                 if (var0) {
-                    _fun80433_ip = 49;
-                    continue _fun80433
+                    _fun80479_ip = 49;
+                    continue _fun80479
                 }
             case 35:
                 var1 = _closure1_slot6;
@@ -484,7 +484,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsOnboarding = var3;
     var1 = function() { // Original name: getIsOnboarding, environment: var1
-        _fun80434: for (var _fun80434_ip = 0;;) switch (_fun80434_ip) {
+        _fun80480: for (var _fun80480_ip = 0;;) switch (_fun80480_ip) {
             case 0:
                 var2 = _closure1_slot7;
                 var0 = var2.getState;
@@ -494,8 +494,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.ONBOARDING;
                 var0 = var2 === var0;
                 if (var0) {
-                    _fun80434_ip = 53;
-                    continue _fun80434
+                    _fun80480_ip = 53;
+                    continue _fun80480
                 }
             case 39:
                 var1 = _closure1_slot6;
@@ -507,4 +507,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getIsOnboarding = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4476, 1613, 10206, 660, 629, 802, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4482, 1613, 10212, 660, 629, 802, 2]);

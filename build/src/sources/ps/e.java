@@ -17,10 +17,10 @@ import ps.e;
 public class e extends i implements Mutex {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f46164i = AtomicReferenceFieldUpdater.newUpdater(e.class, Object.class, "owner$volatile");
+    private static final /* synthetic */ AtomicReferenceFieldUpdater f46180i = AtomicReferenceFieldUpdater.newUpdater(e.class, Object.class, "owner$volatile");
 
     /* renamed from: h  reason: collision with root package name */
-    private final Function3 f46165h;
+    private final Function3 f46181h;
     private volatile /* synthetic */ Object owner$volatile;
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -28,69 +28,69 @@ public class e extends i implements Mutex {
     public final class a implements CancellableContinuation, w1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public final kotlinx.coroutines.e f46166d;
+        public final kotlinx.coroutines.e f46182d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final Object f46167e;
+        public final Object f46183e;
 
         public a(kotlinx.coroutines.e eVar, Object obj) {
-            this.f46166d = eVar;
-            this.f46167e = obj;
+            this.f46182d = eVar;
+            this.f46183e = obj;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final Unit j(e eVar, a aVar, Throwable th2) {
-            eVar.c(aVar.f46167e);
-            return Unit.f33282a;
+            eVar.c(aVar.f46183e);
+            return Unit.f33298a;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final Unit m(e eVar, a aVar, Throwable th2, Unit unit, CoroutineContext coroutineContext) {
-            e.w().set(eVar, aVar.f46167e);
-            eVar.c(aVar.f46167e);
-            return Unit.f33282a;
+            e.w().set(eVar, aVar.f46183e);
+            eVar.c(aVar.f46183e);
+            return Unit.f33298a;
         }
 
         @Override // kotlinx.coroutines.CancellableContinuation
         public boolean a() {
-            return this.f46166d.a();
+            return this.f46182d.a();
         }
 
         @Override // kotlinx.coroutines.CancellableContinuation
         public void c(Function1 function1) {
-            this.f46166d.c(function1);
+            this.f46182d.c(function1);
         }
 
         @Override // kotlinx.coroutines.CancellableContinuation
         public Object d(Throwable th2) {
-            return this.f46166d.d(th2);
+            return this.f46182d.d(th2);
         }
 
         @Override // gs.w1
         public void e(b0 b0Var, int i10) {
-            this.f46166d.e(b0Var, i10);
+            this.f46182d.e(b0Var, i10);
         }
 
         @Override // kotlinx.coroutines.CancellableContinuation
         public void f(CoroutineDispatcher coroutineDispatcher, Throwable th2) {
-            this.f46166d.f(coroutineDispatcher, th2);
+            this.f46182d.f(coroutineDispatcher, th2);
         }
 
         @Override // kotlinx.coroutines.CancellableContinuation
         public boolean g(Throwable th2) {
-            return this.f46166d.g(th2);
+            return this.f46182d.g(th2);
         }
 
         @Override // kotlin.coroutines.Continuation
         public CoroutineContext getContext() {
-            return this.f46166d.getContext();
+            return this.f46182d.getContext();
         }
 
         @Override // kotlinx.coroutines.CancellableContinuation
         /* renamed from: i */
         public void p(Unit unit, Function3 function3) {
-            e.w().set(e.this, this.f46167e);
-            kotlinx.coroutines.e eVar = this.f46166d;
+            e.w().set(e.this, this.f46183e);
+            kotlinx.coroutines.e eVar = this.f46182d;
             final e eVar2 = e.this;
             eVar.R(unit, new Function1() { // from class: ps.d
                 @Override // kotlin.jvm.functions.Function1
@@ -104,20 +104,20 @@ public class e extends i implements Mutex {
 
         @Override // kotlinx.coroutines.CancellableContinuation
         public boolean isCompleted() {
-            return this.f46166d.isCompleted();
+            return this.f46182d.isCompleted();
         }
 
         @Override // kotlinx.coroutines.CancellableContinuation
         /* renamed from: k */
         public void q(CoroutineDispatcher coroutineDispatcher, Unit unit) {
-            this.f46166d.q(coroutineDispatcher, unit);
+            this.f46182d.q(coroutineDispatcher, unit);
         }
 
         @Override // kotlinx.coroutines.CancellableContinuation
         /* renamed from: l */
         public Object t(Unit unit, Object obj, Function3 function3) {
             final e eVar = e.this;
-            Object t10 = this.f46166d.t(unit, obj, new Function3() { // from class: ps.c
+            Object t10 = this.f46182d.t(unit, obj, new Function3() { // from class: ps.c
                 @Override // kotlin.jvm.functions.Function3
                 public final Object invoke(Object obj2, Object obj3, Object obj4) {
                     Unit m10;
@@ -126,19 +126,19 @@ public class e extends i implements Mutex {
                 }
             });
             if (t10 != null) {
-                e.w().set(e.this, this.f46167e);
+                e.w().set(e.this, this.f46183e);
             }
             return t10;
         }
 
         @Override // kotlin.coroutines.Continuation
         public void resumeWith(Object obj) {
-            this.f46166d.resumeWith(obj);
+            this.f46182d.resumeWith(obj);
         }
 
         @Override // kotlinx.coroutines.CancellableContinuation
         public void w(Object obj) {
-            this.f46166d.w(obj);
+            this.f46182d.w(obj);
         }
     }
 
@@ -146,12 +146,12 @@ public class e extends i implements Mutex {
         super(1, z10 ? 1 : 0);
         e0 e0Var;
         if (!z10) {
-            e0Var = f.f46169a;
+            e0Var = f.f46185a;
         } else {
             e0Var = null;
         }
         this.owner$volatile = e0Var;
-        this.f46165h = new Function3() { // from class: ps.a
+        this.f46181h = new Function3() { // from class: ps.a
             @Override // kotlin.jvm.functions.Function3
             public final Object invoke(Object obj, Object obj2, Object obj3) {
                 Function3 C;
@@ -163,13 +163,13 @@ public class e extends i implements Mutex {
 
     static /* synthetic */ Object A(e eVar, Object obj, Continuation continuation) {
         if (eVar.E(obj)) {
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         Object B = eVar.B(obj, continuation);
         if (B == or.b.f()) {
             return B;
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private final Object B(Object obj, Continuation continuation) {
@@ -183,7 +183,7 @@ public class e extends i implements Mutex {
             if (B == or.b.f()) {
                 return B;
             }
-            return Unit.f33282a;
+            return Unit.f33298a;
         } catch (Throwable th2) {
             b10.P();
             throw th2;
@@ -205,7 +205,7 @@ public class e extends i implements Mutex {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit D(e eVar, Object obj, Throwable th2, Object obj2, CoroutineContext coroutineContext) {
         eVar.c(obj);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private final int F(Object obj) {
@@ -221,19 +221,19 @@ public class e extends i implements Mutex {
                 return 1;
             }
         }
-        f46164i.set(this, obj);
+        f46180i.set(this, obj);
         return 0;
     }
 
     public static final /* synthetic */ AtomicReferenceFieldUpdater w() {
-        return f46164i;
+        return f46180i;
     }
 
     private final int y(Object obj) {
         e0 e0Var;
         while (z()) {
-            Object obj2 = f46164i.get(this);
-            e0Var = f.f46169a;
+            Object obj2 = f46180i.get(this);
+            e0Var = f.f46185a;
             if (obj2 != e0Var) {
                 if (obj2 == obj) {
                     return 1;
@@ -268,12 +268,12 @@ public class e extends i implements Mutex {
         e0 e0Var;
         e0 e0Var2;
         while (z()) {
-            Object obj2 = f46164i.get(this);
-            e0Var = f.f46169a;
+            Object obj2 = f46180i.get(this);
+            e0Var = f.f46185a;
             if (obj2 != e0Var) {
                 if (obj2 == obj || obj == null) {
-                    AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f46164i;
-                    e0Var2 = f.f46169a;
+                    AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f46180i;
+                    e0Var2 = f.f46185a;
                     if (androidx.concurrent.futures.b.a(atomicReferenceFieldUpdater, this, obj2, e0Var2)) {
                         release();
                         return;
@@ -287,7 +287,7 @@ public class e extends i implements Mutex {
     }
 
     public String toString() {
-        return "Mutex@" + gs.e0.b(this) + "[isLocked=" + z() + ",owner=" + f46164i.get(this) + ']';
+        return "Mutex@" + gs.e0.b(this) + "[isLocked=" + z() + ",owner=" + f46180i.get(this) + ']';
     }
 
     public boolean z() {

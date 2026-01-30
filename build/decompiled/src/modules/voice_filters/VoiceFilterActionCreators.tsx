@@ -40,13 +40,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setVoiceFilterLoopback = var3;
     var3 = function(arg0) { // Original name: requestVoiceFilterSwitch, environment: var1
-        _fun94841: for (var _fun94841_ip = 0;;) switch (_fun94841_ip) {
+        _fun95088: for (var _fun95088_ip = 0;;) switch (_fun95088_ip) {
             case 0:
                 var3 = arguments[1];
                 var2 = undefined;
                 if (!(var3 === var2)) {
-                    _fun94841_ip = 11;
-                    continue _fun94841
+                    _fun95088_ip = 11;
+                    continue _fun95088
                 }
             case 9:
                 var3 = null;

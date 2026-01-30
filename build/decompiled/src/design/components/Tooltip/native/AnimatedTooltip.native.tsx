@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.jsx;
     var _closure1_slot6 = var3;
     var3 = function(arg0, arg1) { // Original name: renderTooltipItem, environment: var1
-        _fun57284: for (var _fun57284_ip = 0;;) switch (_fun57284_ip) {
+        _fun57328: for (var _fun57328_ip = 0;;) switch (_fun57328_ip) {
             case 0:
                 var8 = arg0;
                 var3 = _closure1_slot6;
@@ -61,8 +61,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = null;
                 var6 = var4 != var8;
                 if (!var6) {
-                    _fun57284_ip = 136;
-                    continue _fun57284
+                    _fun57328_ip = 136;
+                    continue _fun57328
                 }
             case 88:
                 var7 = _closure1_slot6;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Tooltip/native/AnimatedTooltip.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: AnimatedTooltip, environment: var1
-        _fun57285: for (var _fun57285_ip = 0;;) switch (_fun57285_ip) {
+        _fun57329: for (var _fun57329_ip = 0;;) switch (_fun57329_ip) {
             case 0:
                 var4 = arg0;
                 var11 = var4.visible;
@@ -152,8 +152,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.useReducedMotion = var6;
                 var6 = undefined;
                 if (!var8) {
-                    _fun57285_ip = 223;
-                    continue _fun57285
+                    _fun57329_ip = 223;
+                    continue _fun57329
                 }
             case 220:
                 var6 = var7;
@@ -169,4 +169,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.AnimatedTooltip = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 3677, 6979, 3124, 6981, 4886, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 3679, 6982, 3124, 6984, 4892, 2]);

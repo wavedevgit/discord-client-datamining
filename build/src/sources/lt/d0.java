@@ -15,69 +15,69 @@ import lt.g0;
 public final class d0 implements h {
 
     /* renamed from: r  reason: collision with root package name */
-    private static final ConcurrentMap f37561r = new ConcurrentHashMap();
+    private static final ConcurrentMap f37577r = new ConcurrentHashMap();
 
     /* renamed from: s  reason: collision with root package name */
-    private static final ConcurrentMap f37562s = new ConcurrentHashMap();
+    private static final ConcurrentMap f37578s = new ConcurrentHashMap();
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f37563d;
+    private final boolean f37579d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final h f37564e;
+    private final h f37580e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Set f37565i;
+    private final Set f37581i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final kt.g f37566o;
+    private final kt.g f37582o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Locale f37567p;
+    private final Locale f37583p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final int f37568q;
+    private final int f37584q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final g0 f37569a;
+        private final g0 f37585a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final g0 f37570b;
+        private final g0 f37586b;
 
         a(g0 g0Var, g0 g0Var2) {
-            this.f37569a = g0Var;
-            this.f37570b = g0Var2;
+            this.f37585a = g0Var;
+            this.f37586b = g0Var2;
         }
 
         void a(CharSequence charSequence, int i10, List list, List list2, int[] iArr) {
-            String f10 = this.f37569a.f(charSequence, i10);
+            String f10 = this.f37585a.f(charSequence, i10);
             int length = f10.length();
             iArr[0] = i10 + length;
-            String f11 = this.f37570b.f(charSequence, i10);
+            String f11 = this.f37586b.f(charSequence, i10);
             int length2 = f11.length();
             iArr[1] = i10 + length2;
             if (length2 > length) {
-                list2.addAll(this.f37570b.b(f11));
+                list2.addAll(this.f37586b.b(f11));
             } else if (length2 < length) {
-                list.addAll(this.f37569a.b(f10));
+                list.addAll(this.f37585a.b(f10));
             } else if (length > 0) {
-                list.addAll(this.f37569a.b(f10));
-                list2.addAll(this.f37570b.b(f11));
+                list.addAll(this.f37585a.b(f10));
+                list2.addAll(this.f37586b.b(f11));
             }
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d0(boolean z10) {
-        this.f37563d = z10;
-        this.f37564e = new n(z10);
-        this.f37565i = null;
-        this.f37566o = kt.g.SMART;
-        this.f37567p = Locale.ROOT;
-        this.f37568q = 0;
+        this.f37579d = z10;
+        this.f37580e = new n(z10);
+        this.f37581i = null;
+        this.f37582o = kt.g.SMART;
+        this.f37583p = Locale.ROOT;
+        this.f37584q = 0;
     }
 
     private g0 b(Locale locale, boolean z10) {
@@ -113,7 +113,7 @@ public final class d0 implements h {
         StringBuilder sb2 = new StringBuilder();
         for (int i12 = i10; i12 < i11; i12++) {
             char charAt = charSequence.charAt(i12);
-            if (!Character.isLetter(charAt) && (this.f37563d || i12 <= i10 || Character.isDigit(charAt))) {
+            if (!Character.isLetter(charAt) && (this.f37579d || i12 <= i10 || Character.isDigit(charAt))) {
                 break;
             }
             sb2.append(charAt);
@@ -123,11 +123,11 @@ public final class d0 implements h {
 
     private net.time4j.tz.d i(boolean z10) {
         if (z10) {
-            if (this.f37563d) {
+            if (this.f37579d) {
                 return net.time4j.tz.d.SHORT_DAYLIGHT_TIME;
             }
             return net.time4j.tz.d.LONG_DAYLIGHT_TIME;
-        } else if (this.f37563d) {
+        } else if (this.f37579d) {
             return net.time4j.tz.d.SHORT_STANDARD_TIME;
         } else {
             return net.time4j.tz.d.LONG_STANDARD_TIME;
@@ -146,7 +146,7 @@ public final class d0 implements h {
                 break;
             }
             String a10 = ((net.time4j.tz.k) it.next()).a();
-            Set set = this.f37565i;
+            Set set = this.f37581i;
             int indexOf = a10.indexOf(126);
             if (indexOf < 0) {
                 str = "DEFAULT";
@@ -214,7 +214,7 @@ public final class d0 implements h {
 
     @Override // lt.h
     public h a(c cVar, jt.d dVar, int i10) {
-        return new d0(this.f37563d, this.f37564e, this.f37565i, (kt.g) dVar.b(kt.a.f36533f, kt.g.SMART), (Locale) dVar.b(kt.a.f36530c, Locale.ROOT), ((Integer) dVar.b(kt.a.f36546s, 0)).intValue());
+        return new d0(this.f37579d, this.f37580e, this.f37581i, (kt.g) dVar.b(kt.a.f36549f, kt.g.SMART), (Locale) dVar.b(kt.a.f36546c, Locale.ROOT), ((Integer) dVar.b(kt.a.f36562s, 0)).intValue());
     }
 
     @Override // lt.h
@@ -224,15 +224,15 @@ public final class d0 implements h {
         if (oVar.l()) {
             net.time4j.tz.k v10 = oVar.v();
             if (v10 instanceof net.time4j.tz.p) {
-                return this.f37564e.d(oVar, appendable, dVar, set, z10);
+                return this.f37580e.d(oVar, appendable, dVar, set, z10);
             }
             if (oVar instanceof gt.f) {
                 net.time4j.tz.l N = net.time4j.tz.l.N(v10);
                 net.time4j.tz.d i11 = i(N.I((gt.f) gt.f.class.cast(oVar)));
                 if (z10) {
-                    locale = this.f37567p;
+                    locale = this.f37583p;
                 } else {
-                    locale = (Locale) dVar.b(kt.a.f36530c, Locale.ROOT);
+                    locale = (Locale) dVar.b(kt.a.f36546c, Locale.ROOT);
                 }
                 String w10 = N.w(i11, locale);
                 if (appendable instanceof CharSequence) {
@@ -279,9 +279,9 @@ public final class d0 implements h {
         }
         if (obj instanceof d0) {
             d0 d0Var = (d0) obj;
-            if (this.f37563d == d0Var.f37563d) {
-                Set set = this.f37565i;
-                Set set2 = d0Var.f37565i;
+            if (this.f37579d == d0Var.f37579d) {
+                Set set = this.f37581i;
+                Set set2 = d0Var.f37581i;
                 if (set != null ? set.equals(set2) : set2 == null) {
                     return true;
                 }
@@ -302,33 +302,33 @@ public final class d0 implements h {
 
     public int hashCode() {
         int hashCode;
-        Set set = this.f37565i;
+        Set set = this.f37581i;
         if (set == null) {
             hashCode = 0;
         } else {
             hashCode = set.hashCode();
         }
-        return hashCode + (this.f37563d ? 1 : 0);
+        return hashCode + (this.f37579d ? 1 : 0);
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder(64);
         sb2.append(d0.class.getName());
         sb2.append("[abbreviated=");
-        sb2.append(this.f37563d);
+        sb2.append(this.f37579d);
         sb2.append(", preferredZones=");
-        sb2.append(this.f37565i);
+        sb2.append(this.f37581i);
         sb2.append(']');
         return sb2.toString();
     }
 
     private d0(boolean z10, h hVar, Set set, kt.g gVar, Locale locale, int i10) {
-        this.f37563d = z10;
-        this.f37564e = hVar;
-        this.f37565i = set;
-        this.f37566o = gVar;
-        this.f37567p = locale;
-        this.f37568q = i10;
+        this.f37579d = z10;
+        this.f37580e = hVar;
+        this.f37581i = set;
+        this.f37582o = gVar;
+        this.f37583p = locale;
+        this.f37584q = i10;
     }
 
     @Override // lt.h

@@ -1,1195 +1,300 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = require;
-    var2 = exports;
-    var5 = dependencyMap;
-    var _closure1_slot0 = var4;
-    var _closure1_slot1 = var5;
-    var0 = 0;
-    var1 = var5[var0];
-    var0 = undefined;
-    var1 = var4.bind(var0)(var1);
-    var _closure1_slot2 = var1;
-    var1 = 1;
-    var1 = var5[var1];
-    var1 = var4.bind(var0)(var1);
-    var _closure1_slot3 = var1;
-    var1 = 2;
-    var1 = var5[var1];
-    var1 = var4.bind(var0)(var1);
-    var _closure1_slot4 = var1;
-    var1 = 3;
-    var1 = var5[var1];
-    var1 = var4.bind(var0)(var1);
-    var _closure1_slot5 = var1;
-    var1 = 4;
-    var1 = var5[var1];
-    var1 = var4.bind(var0)(var1);
-    var _closure1_slot6 = var1;
-    var1 = global;
-    var6 = var1.Object;
-    var5 = var6.defineProperty;
-    var4 = {};
-    var1 = true;
-    var4.value = var1;
-    var1 = '__esModule';
-    var1 = var5.bind(var6)(var2, var1, var4);
-    var1 = function() { // Environment: var3
-        var3 = function() { // Original name: ScopeClass, environment: var4
-            var2 = this;
-            var4 = _closure1_slot5;
-            var3 = _closure2_slot0;
-            var0 = undefined;
-            var3 = var4.bind(var0)(var2, var3);
-            var3 = false;
-            var2._notifyingListeners = var3;
-            var3 = new Array(0);
-            var2._scopeListeners = var3;
-            var3 = new Array(0);
-            var2._eventProcessors = var3;
-            var3 = new Array(0);
-            var2._breadcrumbs = var3;
-            var3 = new Array(0);
-            var2._attachments = var3;
-            var3 = {};
-            var2._user = var3;
-            var3 = {};
-            var2._tags = var3;
-            var3 = {};
-            var2._extra = var3;
-            var3 = {};
-            var2._contexts = var3;
-            var3 = {};
-            var2._sdkProcessingMetadata = var3;
-            var3 = _closure1_slot0;
-            var4 = _closure1_slot1;
-            var1 = 5;
-            var1 = var4[var1];
-            var3 = var3.bind(var0)(var1);
-            var1 = var3.generatePropagationContext;
-            var1 = var1.bind(var3)();
-            var2._propagationContext = var1;
-            return var0;
-        };
-        var _closure2_slot0 = var3;
-        var2 = _closure1_slot6;
-        var0 = {};
-        var1 = 'clone';
-        var0.key = var1;
-        var1 = function() { // Original name: clone, environment: var4
-            var5 = this;
-            var0 = _closure2_slot0;
-            var1 = var0.prototype;
-            var1 = Object.create(var1, {
-                constructor: {
-                    value: var0
+    var1 = exports;
+    var2 = require;
+    var _closure1_slot0 = var2;
+    var2 = dependencyMap;
+    var _closure1_slot1 = var2;
+    var2 = function(arg0) { // Original name: extractTraceparentData, environment: var0
+        _fun99594: for (var _fun99594_ip = 0;;) switch (_fun99594_ip) {
+            case 0:
+                var2 = arg0;
+                if (!var2) {
+                    _fun99594_ip = 27;
+                    continue _fun99594
                 }
-            });
-            var12 = var1;
-            var0 = new var12[var0](var11);
-            var0 = var0 instanceof Object ? var0 : var1;
-            var4 = _closure1_slot4;
-            var2 = var5._breadcrumbs;
-            var6 = undefined;
-            var2 = var4.bind(var6)(var2);
-            var0._breadcrumbs = var2;
-            var2 = global;
-            var9 = var2.Object;
-            var8 = var9.assign;
-            var7 = var5._tags;
-            var3 = {};
-            var3 = var8.bind(var9)(var3, var7);
-            var0._tags = var3;
-            var9 = var2.Object;
-            var8 = var9.assign;
-            var7 = var5._extra;
-            var3 = {};
-            var3 = var8.bind(var9)(var3, var7);
-            var0._extra = var3;
-            var9 = var2.Object;
-            var8 = var9.assign;
-            var7 = var5._contexts;
-            var3 = {};
-            var3 = var8.bind(var9)(var3, var7);
-            var0._contexts = var3;
-            var3 = var5._user;
-            var0._user = var3;
-            var3 = var5._level;
-            var0._level = var3;
-            var3 = var5._session;
-            var0._session = var3;
-            var3 = var5._transactionName;
-            var0._transactionName = var3;
-            var3 = var5._fingerprint;
-            var0._fingerprint = var3;
-            var3 = var5._eventProcessors;
-            var3 = var4.bind(var6)(var3);
-            var0._eventProcessors = var3;
-            var3 = var5._requestSession;
-            var0._requestSession = var3;
-            var3 = var5._attachments;
-            var3 = var4.bind(var6)(var3);
-            var0._attachments = var3;
-            var8 = var2.Object;
-            var7 = var8.assign;
-            var4 = var5._sdkProcessingMetadata;
-            var3 = {};
-            var3 = var7.bind(var8)(var3, var4);
-            var0._sdkProcessingMetadata = var3;
-            var7 = var2.Object;
-            var4 = var7.assign;
-            var3 = var5._propagationContext;
-            var2 = {};
-            var2 = var4.bind(var7)(var2, var3);
-            var0._propagationContext = var2;
-            var2 = var5._client;
-            var0._client = var2;
-            var2 = var5._lastEventId;
-            var0._lastEventId = var2;
-            var4 = _closure1_slot0;
-            var7 = _closure1_slot1;
-            var1 = 6;
-            var2 = var7[var1];
-            var3 = var4.bind(var6)(var2);
-            var2 = var3._setSpanForScope;
-            var1 = var7[var1];
-            var4 = var4.bind(var6)(var1);
-            var1 = var4._getSpanForScope;
-            var1 = var1.bind(var4)(var5);
-            var1 = var2.bind(var3)(var0, var1);
-            return var0;
-        };
-        var0.value = var1;
-        var1 = new Array(36);
-        var1[0] = var0;
-        var0 = {};
-        var5 = 'setClient';
-        var0.key = var5;
-        var5 = function(arg0) { // Original name: setClient, environment: var4
-            var1 = arg0;
-            var0 = this;
-            var0._client = var1;
-            var0 = undefined;
-            return var0;
-        };
-        var0.value = var5;
-        var1[1] = var0;
-        var0 = {};
-        var5 = 'setLastEventId';
-        var0.key = var5;
-        var5 = function(arg0) { // Original name: setLastEventId, environment: var4
-            var1 = arg0;
-            var0 = this;
-            var0._lastEventId = var1;
-            var0 = undefined;
-            return var0;
-        };
-        var0.value = var5;
-        var1[2] = var0;
-        var0 = {};
-        var5 = 'getClient';
-        var0.key = var5;
-        var5 = function() { // Original name: getClient, environment: var4
-            var0 = this;
-            var0 = var0._client;
-            return var0;
-        };
-        var0.value = var5;
-        var1[3] = var0;
-        var0 = {};
-        var5 = 'lastEventId';
-        var0.key = var5;
-        var5 = function() { // Original name: lastEventId, environment: var4
-            var0 = this;
-            var0 = var0._lastEventId;
-            return var0;
-        };
-        var0.value = var5;
-        var1[4] = var0;
-        var0 = {};
-        var5 = 'addScopeListener';
-        var0.key = var5;
-        var5 = function(arg0) { // Original name: addScopeListener, environment: var4
-            var0 = this;
-            var2 = var0._scopeListeners;
-            var1 = var2.push;
-            var0 = arg0;
-            var0 = var1.bind(var2)(var0);
-            var0 = undefined;
-            return var0;
-        };
-        var0.value = var5;
-        var1[5] = var0;
-        var0 = {};
-        var5 = 'addEventProcessor';
-        var0.key = var5;
-        var5 = function(arg0) { // Original name: addEventProcessor, environment: var4
-            var0 = this;
-            var3 = var0._eventProcessors;
-            var2 = var3.push;
-            var1 = arg0;
-            var1 = var2.bind(var3)(var1);
-            return var0;
-        };
-        var0.value = var5;
-        var1[6] = var0;
-        var0 = {};
-        var5 = 'setUser';
-        var0.key = var5;
-        var5 = function(arg0) { // Original name: setUser, environment: var4
-            _fun99504: for (var _fun99504_ip = 0;;) switch (_fun99504_ip) {
-                case 0:
-                    var5 = arg0;
-                    var0 = this;
-                    var1 = var5;
-                    if (var1) {
-                        _fun99504_ip = 37;
-                        continue _fun99504
-                    }
-                case 12:
-                    var2 = {};
-                    var3 = undefined;
-                    var2.email = var3;
-                    var2.id = var3;
-                    var2.ip_address = var3;
-                    var2.username = var3;
-                    var1 = var2;
-                case 37:
-                    var0._user = var1;
-                    var1 = var0._session;
-                    if (!var1) {
-                        _fun99504_ip = 101;
-                        continue _fun99504
-                    }
-                case 52:
-                    var3 = _closure1_slot0;
-                    var2 = _closure1_slot1;
-                    var1 = 7;
-                    var2 = var2[var1];
-                    var1 = undefined;
-                    var4 = var3.bind(var1)(var2);
-                    var3 = var4.updateSession;
-                    var2 = var0._session;
-                    var1 = {};
-                    var1.user = var5;
-                    var1 = var3.bind(var4)(var2, var1);
-                case 101:
-                    var1 = var0._notifyScopeListeners;
-                    var1 = var1.bind(var0)();
-                    return var0;
-            }
-        };
-        var0.value = var5;
-        var1[7] = var0;
-        var0 = {};
-        var5 = 'getUser';
-        var0.key = var5;
-        var5 = function() { // Original name: getUser, environment: var4
-            var0 = this;
-            var0 = var0._user;
-            return var0;
-        };
-        var0.value = var5;
-        var1[8] = var0;
-        var0 = {};
-        var5 = 'getRequestSession';
-        var0.key = var5;
-        var5 = function() { // Original name: getRequestSession, environment: var4
-            var0 = this;
-            var0 = var0._requestSession;
-            return var0;
-        };
-        var0.value = var5;
-        var1[9] = var0;
-        var0 = {};
-        var5 = 'setRequestSession';
-        var0.key = var5;
-        var5 = function(arg0) { // Original name: setRequestSession, environment: var4
-            var0 = this;
-            var1 = arg0;
-            var0._requestSession = var1;
-            return var0;
-        };
-        var0.value = var5;
-        var1[10] = var0;
-        var0 = {};
-        var5 = 'setTags';
-        var0.key = var5;
-        var5 = function(arg0) { // Original name: setTags, environment: var4
-            var0 = this;
-            var1 = global;
-            var5 = var1.Object;
-            var4 = var5.assign;
-            var3 = var0._tags;
-            var2 = {};
-            var1 = arg0;
-            var1 = var4.bind(var5)(var2, var3, var1);
-            var0._tags = var1;
-            var1 = var0._notifyScopeListeners;
-            var1 = var1.bind(var0)();
-            return var0;
-        };
-        var0.value = var5;
-        var1[11] = var0;
-        var0 = {};
-        var5 = 'setTag';
-        var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: setTag, environment: var4
-            var0 = this;
-            var1 = global;
-            var5 = var1.Object;
-            var4 = var5.assign;
-            var3 = var0._tags;
-            var8 = _closure1_slot3;
-            var7 = undefined;
-            var6 = {};
-            var2 = arg0;
-            var1 = arg1;
-            var2 = var8.bind(var7)(var6, var2, var1);
-            var1 = {};
-            var1 = var4.bind(var5)(var1, var3, var2);
-            var0._tags = var1;
-            var1 = var0._notifyScopeListeners;
-            var1 = var1.bind(var0)();
-            return var0;
-        };
-        var0.value = var5;
-        var1[12] = var0;
-        var0 = {};
-        var5 = 'setExtras';
-        var0.key = var5;
-        var5 = function(arg0) { // Original name: setExtras, environment: var4
-            var0 = this;
-            var1 = global;
-            var5 = var1.Object;
-            var4 = var5.assign;
-            var3 = var0._extra;
-            var2 = {};
-            var1 = arg0;
-            var1 = var4.bind(var5)(var2, var3, var1);
-            var0._extra = var1;
-            var1 = var0._notifyScopeListeners;
-            var1 = var1.bind(var0)();
-            return var0;
-        };
-        var0.value = var5;
-        var1[13] = var0;
-        var0 = {};
-        var5 = 'setExtra';
-        var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: setExtra, environment: var4
-            var0 = this;
-            var1 = global;
-            var5 = var1.Object;
-            var4 = var5.assign;
-            var3 = var0._extra;
-            var8 = _closure1_slot3;
-            var7 = undefined;
-            var6 = {};
-            var2 = arg0;
-            var1 = arg1;
-            var2 = var8.bind(var7)(var6, var2, var1);
-            var1 = {};
-            var1 = var4.bind(var5)(var1, var3, var2);
-            var0._extra = var1;
-            var1 = var0._notifyScopeListeners;
-            var1 = var1.bind(var0)();
-            return var0;
-        };
-        var0.value = var5;
-        var1[14] = var0;
-        var0 = {};
-        var5 = 'setFingerprint';
-        var0.key = var5;
-        var5 = function(arg0) { // Original name: setFingerprint, environment: var4
-            var0 = this;
-            var1 = arg0;
-            var0._fingerprint = var1;
-            var1 = var0._notifyScopeListeners;
-            var1 = var1.bind(var0)();
-            return var0;
-        };
-        var0.value = var5;
-        var1[15] = var0;
-        var0 = {};
-        var5 = 'setLevel';
-        var0.key = var5;
-        var5 = function(arg0) { // Original name: setLevel, environment: var4
-            var0 = this;
-            var1 = arg0;
-            var0._level = var1;
-            var1 = var0._notifyScopeListeners;
-            var1 = var1.bind(var0)();
-            return var0;
-        };
-        var0.value = var5;
-        var1[16] = var0;
-        var0 = {};
-        var5 = 'setTransactionName';
-        var0.key = var5;
-        var5 = function(arg0) { // Original name: setTransactionName, environment: var4
-            var0 = this;
-            var1 = arg0;
-            var0._transactionName = var1;
-            var1 = var0._notifyScopeListeners;
-            var1 = var1.bind(var0)();
-            return var0;
-        };
-        var0.value = var5;
-        var1[17] = var0;
-        var0 = {};
-        var5 = 'setContext';
-        var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: setContext, environment: var4
-            _fun99515: for (var _fun99515_ip = 0;;) switch (_fun99515_ip) {
-                case 0:
-                    var2 = arg0;
-                    var3 = arg1;
-                    var0 = this;
-                    var1 = null;
-                    if (!(var1 !== var3)) {
-                        _fun99515_ip = 27;
-                        continue _fun99515
-                    }
-                case 15:
-                    var1 = var0._contexts;
-                    var1[var2] = var3;
-                    _fun99515_ip = 37;
-                    continue _fun99515;
-                case 27:
-                    var1 = var0._contexts;
-                    var1 = delete var1[var2];
-                case 37:
-                    var1 = var0._notifyScopeListeners;
-                    var1 = var1.bind(var0)();
-                    return var0;
-            }
-        };
-        var0.value = var5;
-        var1[18] = var0;
-        var0 = {};
-        var5 = 'setSession';
-        var0.key = var5;
-        var5 = function(arg0) { // Original name: setSession, environment: var4
-            _fun99516: for (var _fun99516_ip = 0;;) switch (_fun99516_ip) {
-                case 0:
-                    var1 = arg0;
-                    var0 = this;
-                    if (var1) {
-                        _fun99516_ip = 16;
-                        continue _fun99516
-                    }
-                case 9:
-                    var2 = delete var0._session;
-                    _fun99516_ip = 22;
-                    continue _fun99516;
-                case 16:
-                    var0._session = var1;
-                case 22:
-                    var1 = var0._notifyScopeListeners;
-                    var1 = var1.bind(var0)();
-                    return var0;
-            }
-        };
-        var0.value = var5;
-        var1[19] = var0;
-        var0 = {};
-        var5 = 'getSession';
-        var0.key = var5;
-        var5 = function() { // Original name: getSession, environment: var4
-            var0 = this;
-            var0 = var0._session;
-            return var0;
-        };
-        var0.value = var5;
-        var1[20] = var0;
-        var0 = {};
-        var5 = 'update';
-        var0.key = var5;
-        var5 = function(arg0) { // Original name: update, environment: var4
-            _fun99518: for (var _fun99518_ip = 0;;) switch (_fun99518_ip) {
-                case 0:
-                    var4 = arg0;
-                    var0 = this;
-                    if (var4) {
-                        _fun99518_ip = 11;
-                        continue _fun99518
-                    }
-                case 9:
-                    return var0;
-                case 11:
-                    var2 = 'function';
-                    var1 = typeof var4;
-                    var5 = var4;
-                    if (!(var2 === var1)) {
-                        _fun99518_ip = 32;
-                        continue _fun99518
-                    }
-                case 25:
-                    var1 = undefined;
-                    var5 = var4.bind(var1)(var0);
-                case 32:
-                    var2 = _closure1_slot7;
-                    var2 = var5 instanceof var2;
-                    if (var2) {
-                        _fun99518_ip = 111;
-                        continue _fun99518
-                    }
-                case 46:
-                    var6 = _closure1_slot0;
-                    var3 = _closure1_slot1;
-                    var2 = 5;
-                    var3 = var3[var2];
-                    var2 = undefined;
-                    var3 = var6.bind(var2)(var3);
-                    var2 = var3.isPlainObject;
-                    var2 = var2.bind(var3)(var5);
-                    if (var2) {
-                        _fun99518_ip = 88;
-                        continue _fun99518
-                    }
-                case 82:
-                    var3 = new Array(0);
-                    _fun99518_ip = 109;
-                    continue _fun99518;
-                case 88:
-                    var2 = new Array(2);
-                    var2[0] = var4;
-                    var4 = var4.requestSession;
-                    var2[1] = var4;
-                    var3 = var2;
-                case 109:
-                    _fun99518_ip = 146;
-                    continue _fun99518;
-                case 111:
-                    var2 = var5.getScopeData;
-                    var4 = var2.bind(var5)();
-                    var2 = new Array(2);
-                    var2[0] = var4;
-                    var4 = var5.getRequestSession;
-                    var4 = var4.bind(var5)();
-                    var2[1] = var4;
-                    var3 = var2;
-                case 146:
-                    var2 = _closure1_slot2;
-                    var6 = undefined;
-                    var1 = 2;
-                    var3 = var2.bind(var6)(var3, var1);
-                    var1 = 0;
-                    var2 = var3[var1];
-                    var1 = 1;
-                    var1 = var3[var1];
-                    if (var2) {
-                        _fun99518_ip = 179;
-                        continue _fun99518
-                    }
-                case 177:
-                    var2 = {};
-                case 179:
-                    var13 = var2.tags;
-                    var12 = var2.extra;
-                    var5 = var2.user;
-                    var11 = var2.contexts;
-                    var4 = var2.level;
-                    var3 = var2.fingerprint;
-                    if (!(var6 === var3)) {
-                        _fun99518_ip = 222;
-                        continue _fun99518
-                    }
-                case 218:
-                    var3 = new Array(0);
-                case 222:
-                    var2 = var2.propagationContext;
-                    var7 = global;
-                    var10 = var7.Object;
-                    var9 = var10.assign;
-                    var8 = var0._tags;
-                    var6 = {};
-                    var6 = var9.bind(var10)(var6, var8, var13);
-                    var0._tags = var6;
-                    var10 = var7.Object;
-                    var9 = var10.assign;
-                    var8 = var0._extra;
-                    var6 = {};
-                    var6 = var9.bind(var10)(var6, var8, var12);
-                    var0._extra = var6;
-                    var10 = var7.Object;
-                    var9 = var10.assign;
-                    var8 = var0._contexts;
-                    var6 = {};
-                    var6 = var9.bind(var10)(var6, var8, var11);
-                    var0._contexts = var6;
-                    var6 = var5;
-                    if (!var6) {
-                        _fun99518_ip = 353;
-                        continue _fun99518
-                    }
-                case 332:
-                    var8 = var7.Object;
-                    var7 = var8.keys;
-                    var7 = var7.bind(var8)(var5);
-                    var6 = var7.length;
-                case 353:
-                    if (!var6) {
-                        _fun99518_ip = 362;
-                        continue _fun99518
-                    }
-                case 356:
-                    var0._user = var5;
-                case 362:
-                    if (!var4) {
-                        _fun99518_ip = 371;
-                        continue _fun99518
-                    }
-                case 365:
-                    var0._level = var4;
-                case 371:
-                    var4 = var3.length;
-                    if (!var4) {
-                        _fun99518_ip = 385;
-                        continue _fun99518
-                    }
-                case 379:
-                    var0._fingerprint = var3;
-                case 385:
-                    if (!var2) {
-                        _fun99518_ip = 394;
-                        continue _fun99518
-                    }
-                case 388:
-                    var0._propagationContext = var2;
-                case 394:
-                    if (!var1) {
-                        _fun99518_ip = 403;
-                        continue _fun99518
-                    }
-                case 397:
-                    var0._requestSession = var1;
-                case 403:
-                    return var0;
-            }
-        };
-        var0.value = var5;
-        var1[21] = var0;
-        var0 = {};
-        var5 = 'clear';
-        var0.key = var5;
-        var5 = function() { // Original name: clear, environment: var4
-            var0 = this;
-            var1 = new Array(0);
-            var0._breadcrumbs = var1;
-            var1 = {};
-            var0._tags = var1;
-            var1 = {};
-            var0._extra = var1;
-            var1 = {};
-            var0._user = var1;
-            var1 = {};
-            var0._contexts = var1;
-            var3 = undefined;
-            var0._level = var3;
-            var0._transactionName = var3;
-            var0._fingerprint = var3;
-            var0._requestSession = var3;
-            var0._session = var3;
-            var2 = _closure1_slot0;
-            var4 = _closure1_slot1;
-            var1 = 6;
-            var1 = var4[var1];
-            var5 = var2.bind(var3)(var1);
-            var1 = var5._setSpanForScope;
-            var1 = var1.bind(var5)(var0, var3);
-            var1 = new Array(0);
-            var0._attachments = var1;
-            var1 = 5;
-            var1 = var4[var1];
-            var2 = var2.bind(var3)(var1);
-            var1 = var2.generatePropagationContext;
-            var1 = var1.bind(var2)();
-            var0._propagationContext = var1;
-            var1 = var0._notifyScopeListeners;
-            var1 = var1.bind(var0)();
-            return var0;
-        };
-        var0.value = var5;
-        var1[22] = var0;
-        var0 = {};
-        var5 = 'addBreadcrumb';
-        var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: addBreadcrumb, environment: var4
-            _fun99520: for (var _fun99520_ip = 0;;) switch (_fun99520_ip) {
-                case 0:
-                    var1 = arg1;
-                    var0 = this;
-                    var2 = 100;
-                    var4 = 'number';
-                    var3 = typeof var1;
-                    if (!(var4 === var3)) {
-                        _fun99520_ip = 23;
-                        continue _fun99520
-                    }
-                case 20:
-                    var2 = var1;
-                case 23:
-                    var1 = 0;
-                    if (!(!(var2 <= var1))) {
-                        _fun99520_ip = 155;
-                        continue _fun99520
-                    }
-                case 32:
-                    var1 = global;
-                    var5 = var1.Object;
-                    var4 = var5.assign;
-                    var3 = {};
-                    var7 = _closure1_slot0;
-                    var6 = _closure1_slot1;
-                    var1 = 5;
-                    var6 = var6[var1];
-                    var1 = undefined;
-                    var6 = var7.bind(var1)(var6);
-                    var1 = var6.dateTimestampInSeconds;
-                    var1 = var1.bind(var6)();
-                    var3.timestamp = var1;
-                    var1 = arg0;
-                    var3 = var4.bind(var5)(var3, var1);
-                    var4 = var0._breadcrumbs;
-                    var1 = var4.push;
-                    var1 = var1.bind(var4)(var3);
-                    var3 = var4.length;
-                    var1 = var4;
-                    if (!(var3 > var2)) {
-                        _fun99520_ip = 137;
-                        continue _fun99520
-                    }
-                case 124:
-                    var3 = var4.slice;
-                    var2 = -var2;
-                    var1 = var3.bind(var4)(var2);
-                case 137:
-                    var0._breadcrumbs = var1;
-                    var1 = var0._notifyScopeListeners;
-                    var1 = var1.bind(var0)();
-                    return var0;
-                case 155:
-                    return var0;
-            }
-        };
-        var0.value = var5;
-        var1[23] = var0;
-        var0 = {};
-        var5 = 'getLastBreadcrumb';
-        var0.key = var5;
-        var5 = function() { // Original name: getLastBreadcrumb, environment: var4
-            var0 = this;
-            var1 = var0._breadcrumbs;
-            var0 = var0._breadcrumbs;
-            var2 = var0.length;
-            var0 = 1;
-            var0 = var2 - var0;
-            var0 = var1[var0];
-            return var0;
-        };
-        var0.value = var5;
-        var1[24] = var0;
-        var0 = {};
-        var5 = 'clearBreadcrumbs';
-        var0.key = var5;
-        var5 = function() { // Original name: clearBreadcrumbs, environment: var4
-            var0 = this;
-            var1 = new Array(0);
-            var0._breadcrumbs = var1;
-            var1 = var0._notifyScopeListeners;
-            var1 = var1.bind(var0)();
-            return var0;
-        };
-        var0.value = var5;
-        var1[25] = var0;
-        var0 = {};
-        var5 = 'addAttachment';
-        var0.key = var5;
-        var5 = function(arg0) { // Original name: addAttachment, environment: var4
-            var0 = this;
-            var3 = var0._attachments;
-            var2 = var3.push;
-            var1 = arg0;
-            var1 = var2.bind(var3)(var1);
-            return var0;
-        };
-        var0.value = var5;
-        var1[26] = var0;
-        var0 = {};
-        var5 = 'clearAttachments';
-        var0.key = var5;
-        var5 = function() { // Original name: clearAttachments, environment: var4
-            var0 = this;
-            var1 = new Array(0);
-            var0._attachments = var1;
-            return var0;
-        };
-        var0.value = var5;
-        var1[27] = var0;
-        var0 = {};
-        var5 = 'getScopeData';
-        var0.key = var5;
-        var5 = function() { // Original name: getScopeData, environment: var4
-            _fun99525: for (var _fun99525_ip = 0;;) switch (_fun99525_ip) {
-                case 0:
-                    var3 = this;
-                    var0 = {};
-                    var1 = var3._breadcrumbs;
-                    var0.breadcrumbs = var1;
-                    var1 = var3._attachments;
-                    var0.attachments = var1;
-                    var1 = var3._contexts;
-                    var0.contexts = var1;
-                    var1 = var3._tags;
-                    var0.tags = var1;
-                    var1 = var3._extra;
-                    var0.extra = var1;
-                    var1 = var3._user;
-                    var0.user = var1;
-                    var1 = var3._level;
-                    var0.level = var1;
-                    var1 = var3._fingerprint;
-                    if (var1) {
-                        _fun99525_ip = 94;
-                        continue _fun99525
-                    }
-                case 90:
-                    var1 = new Array(0);
-                case 94:
-                    var0.fingerprint = var1;
-                    var1 = var3._eventProcessors;
-                    var0.eventProcessors = var1;
-                    var1 = var3._propagationContext;
-                    var0.propagationContext = var1;
-                    var1 = var3._sdkProcessingMetadata;
-                    var0.sdkProcessingMetadata = var1;
-                    var1 = var3._transactionName;
-                    var0.transactionName = var1;
-                    var4 = _closure1_slot0;
-                    var2 = _closure1_slot1;
-                    var1 = 6;
-                    var2 = var2[var1];
-                    var1 = undefined;
-                    var2 = var4.bind(var1)(var2);
-                    var1 = var2._getSpanForScope;
-                    var1 = var1.bind(var2)(var3);
-                    var0.span = var1;
-                    return var0;
-            }
-        };
-        var0.value = var5;
-        var1[28] = var0;
-        var0 = {};
-        var5 = 'setSDKProcessingMetadata';
-        var0.key = var5;
-        var5 = function(arg0) { // Original name: setSDKProcessingMetadata, environment: var4
-            var0 = this;
-            var1 = global;
-            var5 = var1.Object;
-            var4 = var5.assign;
-            var3 = var0._sdkProcessingMetadata;
-            var2 = {};
-            var1 = arg0;
-            var1 = var4.bind(var5)(var2, var3, var1);
-            var0._sdkProcessingMetadata = var1;
-            return var0;
-        };
-        var0.value = var5;
-        var1[29] = var0;
-        var0 = {};
-        var5 = 'setPropagationContext';
-        var0.key = var5;
-        var5 = function(arg0) { // Original name: setPropagationContext, environment: var4
-            var0 = this;
-            var1 = arg0;
-            var0._propagationContext = var1;
-            return var0;
-        };
-        var0.value = var5;
-        var1[30] = var0;
-        var0 = {};
-        var5 = 'getPropagationContext';
-        var0.key = var5;
-        var5 = function() { // Original name: getPropagationContext, environment: var4
-            var0 = this;
-            var0 = var0._propagationContext;
-            return var0;
-        };
-        var0.value = var5;
-        var1[31] = var0;
-        var0 = {};
-        var5 = 'captureException';
-        var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: captureException, environment: var4
-            _fun99529: for (var _fun99529_ip = 0;;) switch (_fun99529_ip) {
-                case 0:
-                    var5 = arg0;
-                    var9 = arg1;
-                    var4 = this;
-                    if (!var9) {
-                        _fun99529_ip = 21;
-                        continue _fun99529
-                    }
-                case 12:
-                    var0 = var9.event_id;
-                    if (var0) {
-                        _fun99529_ip = 58;
-                        continue _fun99529
-                    }
-                case 21:
-                    var2 = _closure1_slot0;
-                    var1 = _closure1_slot1;
-                    var0 = 5;
-                    var1 = var1[var0];
-                    var0 = undefined;
-                    var1 = var2.bind(var0)(var1);
-                    var0 = var1.uuid4;
-                    var0 = var0.bind(var1)();
-                    _fun99529_ip = 64;
-                    continue _fun99529;
-                case 58:
-                    var0 = var9.event_id;
-                case 64:
-                    var1 = var4._client;
-                    if (var1) {
-                        _fun99529_ip = 122;
-                        continue _fun99529
-                    }
-                case 73:
-                    var3 = _closure1_slot0;
-                    var2 = _closure1_slot1;
-                    var1 = 5;
-                    var2 = var2[var1];
-                    var1 = undefined;
-                    var1 = var3.bind(var1)(var2);
-                    var3 = var1.logger;
-                    var2 = var3.warn;
-                    var1 = 'No client configured on scope - will not capture exception!';
-                    var1 = var2.bind(var3)(var1);
-                    return var0;
-                case 122:
-                    var6 = global;
-                    var3 = var6.Error;
-                    var1 = var3.prototype;
-                    var2 = Object.create(var1, {
-                        constructor: {
-                            value: var3
-                        }
-                    });
-                    var13 = 'Sentry syntheticException';
-                    var14 = var2;
-                    var1 = new var14[var3](var13, var12);
-                    var1 = var1 instanceof Object ? var1 : var2;
-                    var3 = var4._client;
-                    var2 = var3.captureException;
-                    var8 = var6.Object;
-                    var7 = var8.assign;
-                    var6 = {};
-                    var6.originalException = var5;
-                    var6.syntheticException = var1;
-                    var1 = {};
-                    var1.event_id = var0;
-                    var1 = var7.bind(var8)(var6, var9, var1);
-                    var1 = var2.bind(var3)(var5, var1, var4);
-                    return var0;
-            }
-        };
-        var0.value = var5;
-        var1[32] = var0;
-        var0 = {};
-        var5 = 'captureMessage';
-        var0.key = var5;
-        var5 = function(arg0, arg1, arg2) { // Original name: captureMessage, environment: var4
-            _fun99530: for (var _fun99530_ip = 0;;) switch (_fun99530_ip) {
-                case 0:
-                    var6 = arg0;
-                    var9 = arg2;
-                    var5 = this;
-                    if (!var9) {
-                        _fun99530_ip = 21;
-                        continue _fun99530
-                    }
-                case 12:
-                    var0 = var9.event_id;
-                    if (var0) {
-                        _fun99530_ip = 58;
-                        continue _fun99530
-                    }
-                case 21:
-                    var2 = _closure1_slot0;
-                    var1 = _closure1_slot1;
-                    var0 = 5;
-                    var1 = var1[var0];
-                    var0 = undefined;
-                    var1 = var2.bind(var0)(var1);
-                    var0 = var1.uuid4;
-                    var0 = var0.bind(var1)();
-                    _fun99530_ip = 64;
-                    continue _fun99530;
-                case 58:
-                    var0 = var9.event_id;
-                case 64:
-                    var1 = var5._client;
-                    if (var1) {
-                        _fun99530_ip = 122;
-                        continue _fun99530
-                    }
-                case 73:
-                    var3 = _closure1_slot0;
-                    var2 = _closure1_slot1;
-                    var1 = 5;
-                    var2 = var2[var1];
-                    var1 = undefined;
-                    var1 = var3.bind(var1)(var2);
-                    var3 = var1.logger;
-                    var2 = var3.warn;
-                    var1 = 'No client configured on scope - will not capture message!';
-                    var1 = var2.bind(var3)(var1);
-                    return var0;
-                case 122:
-                    var2 = global;
-                    var1 = var2.Error;
-                    var3 = var1.prototype;
-                    var3 = Object.create(var3, {
-                        constructor: {
-                            value: var1
-                        }
-                    });
-                    var15 = var3;
-                    var14 = var6;
-                    var1 = new var15[var1](var14, var13);
-                    var1 = var1 instanceof Object ? var1 : var3;
-                    var4 = var5._client;
-                    var3 = var4.captureMessage;
-                    var8 = var2.Object;
-                    var7 = var8.assign;
-                    var2 = {};
-                    var2.originalException = var6;
-                    var2.syntheticException = var1;
-                    var1 = {};
-                    var1.event_id = var0;
-                    var12 = var7.bind(var8)(var2, var9, var1);
-                    var13 = arg1;
-                    var15 = var4;
-                    var14 = var6;
-                    var11 = var5;
-                    var1 = var15[var3](var14, var13, var12, var11, var10);
-                    return var0;
-            }
-        };
-        var0.value = var5;
-        var1[33] = var0;
-        var0 = {};
-        var5 = 'captureEvent';
-        var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: captureEvent, environment: var4
-            _fun99531: for (var _fun99531_ip = 0;;) switch (_fun99531_ip) {
-                case 0:
-                    var8 = arg1;
-                    var5 = this;
-                    if (!var8) {
-                        _fun99531_ip = 18;
-                        continue _fun99531
-                    }
-                case 9:
-                    var0 = var8.event_id;
-                    if (var0) {
-                        _fun99531_ip = 55;
-                        continue _fun99531
-                    }
-                case 18:
-                    var2 = _closure1_slot0;
-                    var1 = _closure1_slot1;
-                    var0 = 5;
-                    var1 = var1[var0];
-                    var0 = undefined;
-                    var1 = var2.bind(var0)(var1);
-                    var0 = var1.uuid4;
-                    var0 = var0.bind(var1)();
-                    _fun99531_ip = 61;
-                    continue _fun99531;
-                case 55:
-                    var0 = var8.event_id;
-                case 61:
-                    var1 = var5._client;
-                    if (var1) {
-                        _fun99531_ip = 119;
-                        continue _fun99531
-                    }
-                case 70:
-                    var3 = _closure1_slot0;
-                    var2 = _closure1_slot1;
-                    var1 = 5;
-                    var2 = var2[var1];
-                    var1 = undefined;
-                    var1 = var3.bind(var1)(var2);
-                    var3 = var1.logger;
-                    var2 = var3.warn;
-                    var1 = 'No client configured on scope - will not capture event!';
-                    var1 = var2.bind(var3)(var1);
-                    _fun99531_ip = 170;
-                    continue _fun99531;
-                case 119:
-                    var4 = var5._client;
-                    var3 = var4.captureEvent;
-                    var1 = global;
-                    var7 = var1.Object;
-                    var6 = var7.assign;
-                    var2 = {};
-                    var2.event_id = var0;
-                    var1 = {};
-                    var2 = var6.bind(var7)(var1, var8, var2);
-                    var1 = arg0;
-                    var1 = var3.bind(var4)(var1, var2, var5);
-                case 170:
-                    return var0;
-            }
-        };
-        var0.value = var5;
-        var1[34] = var0;
-        var0 = {};
-        var5 = '_notifyScopeListeners';
-        var0.key = var5;
-        var4 = function() { // Original name: _notifyScopeListeners, environment: var4
-            _fun99532: for (var _fun99532_ip = 0;;) switch (_fun99532_ip) {
-                case 0:
-                    var1 = this;
-                    var _closure3_slot0 = var1;
-                    var2 = var1._notifyingListeners;
-                    if (var2) {
-                        _fun99532_ip = 57;
-                        continue _fun99532
-                    }
-                case 18:
-                    var2 = true;
-                    var1._notifyingListeners = var2;
-                    var3 = var1._scopeListeners;
-                    var2 = var3.forEach;
-                    var0 = function(arg0) { // Environment: var0
-                        var2 = _closure3_slot0;
-                        var1 = arg0;
-                        var0 = undefined;
-                        var1 = var1.bind(var0)(var2);
-                        return var0;
-                    };
-                    var0 = var2.bind(var3)(var0);
-                    var0 = false;
-                    var1._notifyingListeners = var0;
-                case 57:
-                    var0 = undefined;
-                    return var0;
-            }
-        };
-        var0.value = var4;
-        var1[35] = var0;
-        var0 = undefined;
-        var0 = var2.bind(var0)(var3, var1);
-        return var0;
+            case 6:
+                var1 = var2.match;
+                var0 = _closure1_slot2;
+                var2 = var1.bind(var2)(var0);
+                if (var2) {
+                    _fun99594_ip = 31;
+                    continue _fun99594
+                }
+            case 27:
+                var0 = undefined;
+                return var0;
+            case 31:
+                var0 = 3;
+                var4 = var2[var0];
+                var3 = '1';
+                var1 = true;
+                if (!(var3 !== var4)) {
+                    _fun99594_ip = 68;
+                    continue _fun99594
+                }
+            case 50:
+                var3 = var2[var0];
+                var1 = undefined;
+                var0 = '0';
+                if (!(var0 === var3)) {
+                    _fun99594_ip = 68;
+                    continue _fun99594
+                }
+            case 66:
+                var1 = false;
+            case 68:
+                var0 = {};
+                var3 = 1;
+                var3 = var2[var3];
+                var0.traceId = var3;
+                var0.parentSampled = var1;
+                var1 = 2;
+                var1 = var2[var1];
+                var0.parentSpanId = var1;
+                return var0;
+        }
     };
-    var1 = var1.bind(var0)();
-    var _closure1_slot7 = var1;
-    var2.Scope = var1;
+    var _closure1_slot3 = var2;
+    var3 = global;
+    var7 = var3.Object;
+    var6 = var7.defineProperty;
+    var5 = {};
+    var4 = true;
+    var5.value = var4;
+    var4 = '__esModule';
+    var4 = var6.bind(var7)(var1, var4, var5);
+    var5 = var3.RegExp;
+    var3 = var5.prototype;
+    var4 = Object.create(var3, {
+        constructor: {
+            value: var5
+        }
+    });
+    var10 = '^[ \\t]*([0-9a-f]{32})?-?([0-9a-f]{16})?-?([01])?[ \\t]*$';
+    var11 = var4;
+    var3 = new var11[var5](var10, var9);
+    var3 = var3 instanceof Object ? var3 : var4;
+    var _closure1_slot2 = var3;
+    var1.TRACEPARENT_REGEXP = var3;
+    var1.extractTraceparentData = var2;
+    var2 = function() { // Original name: generateSentryTraceHeader, environment: var0
+        _fun99595: for (var _fun99595_ip = 0;;) switch (_fun99595_ip) {
+            case 0:
+                var0 = undefined;
+                var3 = undefined;
+                var2 = arguments.length;
+                var1 = 0;
+                if (!(var2 > var1)) {
+                    _fun99595_ip = 21;
+                    continue _fun99595
+                }
+            case 13:
+                var2 = arguments[var1];
+                if (!(var0 === var2)) {
+                    _fun99595_ip = 56;
+                    continue _fun99595
+                }
+            case 21:
+                var4 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var2 = 1;
+                var2 = var5[var2];
+                var4 = var4.bind(var0)(var2);
+                var2 = var4.uuid4;
+                var5 = var2.bind(var4)();
+                _fun99595_ip = 60;
+                continue _fun99595;
+            case 56:
+                var5 = arguments[var1];
+            case 60:
+                var2 = arguments.length;
+                var1 = 1;
+                if (!(var2 > var1)) {
+                    _fun99595_ip = 78;
+                    continue _fun99595
+                }
+            case 70:
+                var2 = arguments[var1];
+                if (!(var0 === var2)) {
+                    _fun99595_ip = 124;
+                    continue _fun99595
+                }
+            case 78:
+                var4 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var2 = var2[var1];
+                var4 = var4.bind(var0)(var2);
+                var2 = var4.uuid4;
+                var6 = var2.bind(var4)();
+                var4 = var6.substring;
+                var2 = 16;
+                var4 = var4.bind(var6)(var2);
+                _fun99595_ip = 128;
+                continue _fun99595;
+            case 124:
+                var4 = arguments[var1];
+            case 128:
+                var1 = arguments.length;
+                var2 = 2;
+                var6 = var1 > var2;
+                var1 = undefined;
+                if (!var6) {
+                    _fun99595_ip = 147;
+                    continue _fun99595
+                }
+            case 143:
+                var1 = arguments[var2];
+            case 147:
+                var3 = '';
+                var2 = var3;
+                if (!(var0 !== var1)) {
+                    _fun99595_ip = 174;
+                    continue _fun99595
+                }
+            case 158:
+                var0 = '-0';
+                if (!var1) {
+                    _fun99595_ip = 171;
+                    continue _fun99595
+                }
+            case 167:
+                var0 = '-1';
+            case 171:
+                var2 = var0;
+            case 174:
+                var0 = global;
+                var0 = var0.HermesInternal;
+                var1 = var0.concat;
+                var9 = '-';
+                var11 = var3;
+                var10 = var5;
+                var8 = var4;
+                var7 = var2;
+                var0 = var11[var1](var10, var9, var8, var7, var6);
+                return var0;
+        }
+    };
+    var1.generateSentryTraceHeader = var2;
+    var0 = function(arg0, arg1) { // Original name: propagationContextFromHeaders, environment: var0
+        _fun99596: for (var _fun99596_ip = 0;;) switch (_fun99596_ip) {
+            case 0:
+                var1 = _closure1_slot3;
+                var6 = undefined;
+                var0 = arg0;
+                var0 = var1.bind(var6)(var0);
+                var2 = _closure1_slot0;
+                var3 = _closure1_slot1;
+                var1 = 0;
+                var1 = var3[var1];
+                var3 = var2.bind(var6)(var1);
+                var2 = var3.baggageHeaderToDynamicSamplingContext;
+                var1 = arg1;
+                var2 = var2.bind(var3)(var1);
+                var1 = var0;
+                if (var1) {
+                    _fun99596_ip = 58;
+                    continue _fun99596
+                }
+            case 56:
+                var1 = {};
+            case 58:
+                var7 = var1.traceId;
+                var5 = var1.parentSpanId;
+                var3 = var1.parentSampled;
+                if (var0) {
+                    _fun99596_ip = 176;
+                    continue _fun99596
+                }
+            case 79:
+                var0 = {};
+                var1 = var7;
+                if (var7) {
+                    _fun99596_ip = 117;
+                    continue _fun99596
+                }
+            case 87:
+                var9 = _closure1_slot0;
+                var10 = _closure1_slot1;
+                var8 = 1;
+                var8 = var10[var8];
+                var9 = var9.bind(var6)(var8);
+                var8 = var9.uuid4;
+                var1 = var8.bind(var9)();
+            case 117:
+                var0.traceId = var1;
+                var8 = _closure1_slot0;
+                var9 = _closure1_slot1;
+                var1 = 1;
+                var1 = var9[var1];
+                var8 = var8.bind(var6)(var1);
+                var1 = var8.uuid4;
+                var9 = var1.bind(var8)();
+                var8 = var9.substring;
+                var1 = 16;
+                var1 = var8.bind(var9)(var1);
+                var0.spanId = var1;
+                _fun99596_ip = 335;
+                continue _fun99596;
+            case 176:
+                var1 = {};
+                if (var7) {
+                    _fun99596_ip = 211;
+                    continue _fun99596
+                }
+            case 181:
+                var9 = _closure1_slot0;
+                var10 = _closure1_slot1;
+                var8 = 1;
+                var8 = var10[var8];
+                var9 = var9.bind(var6)(var8);
+                var8 = var9.uuid4;
+                var7 = var8.bind(var9)();
+            case 211:
+                var1.traceId = var7;
+                if (var5) {
+                    _fun99596_ip = 263;
+                    continue _fun99596
+                }
+            case 219:
+                var8 = _closure1_slot0;
+                var9 = _closure1_slot1;
+                var7 = 1;
+                var7 = var9[var7];
+                var8 = var8.bind(var6)(var7);
+                var7 = var8.uuid4;
+                var9 = var7.bind(var8)();
+                var8 = var9.substring;
+                var7 = 16;
+                var5 = var8.bind(var9)(var7);
+            case 263:
+                var1.parentSpanId = var5;
+                var5 = _closure1_slot0;
+                var7 = _closure1_slot1;
+                var4 = 1;
+                var4 = var7[var4];
+                var5 = var5.bind(var6)(var4);
+                var4 = var5.uuid4;
+                var6 = var4.bind(var5)();
+                var5 = var6.substring;
+                var4 = 16;
+                var4 = var5.bind(var6)(var4);
+                var1.spanId = var4;
+                var1.sampled = var3;
+                if (var2) {
+                    _fun99596_ip = 327;
+                    continue _fun99596
+                }
+            case 325:
+                var2 = {};
+            case 327:
+                var1.dsc = var2;
+                var0 = var1;
+            case 335:
+                return var0;
+        }
+    };
+    var1.propagationContextFromHeaders = var0;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 77, 65, 6, 7, 12862, 12924, 12925]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12924, 12912]);

@@ -3,17 +3,17 @@ package k0;
 final class a extends d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final l0.f f32884a;
+    private final l0.f f32900a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final l0.f f32885b;
+    private final l0.f f32901b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(l0.f fVar, l0.f fVar2) {
         if (fVar != null) {
-            this.f32884a = fVar;
+            this.f32900a = fVar;
             if (fVar2 != null) {
-                this.f32885b = fVar2;
+                this.f32901b = fVar2;
                 return;
             }
             throw new NullPointerException("Null secondaryOutConfig");
@@ -23,12 +23,12 @@ final class a extends d {
 
     @Override // k0.d
     public l0.f a() {
-        return this.f32884a;
+        return this.f32900a;
     }
 
     @Override // k0.d
     public l0.f b() {
-        return this.f32885b;
+        return this.f32901b;
     }
 
     public boolean equals(Object obj) {
@@ -37,7 +37,7 @@ final class a extends d {
         }
         if (obj instanceof d) {
             d dVar = (d) obj;
-            if (this.f32884a.equals(dVar.a()) && this.f32885b.equals(dVar.b())) {
+            if (this.f32900a.equals(dVar.a()) && this.f32901b.equals(dVar.b())) {
                 return true;
             }
         }
@@ -45,10 +45,10 @@ final class a extends d {
     }
 
     public int hashCode() {
-        return ((this.f32884a.hashCode() ^ 1000003) * 1000003) ^ this.f32885b.hashCode();
+        return ((this.f32900a.hashCode() ^ 1000003) * 1000003) ^ this.f32901b.hashCode();
     }
 
     public String toString() {
-        return "DualOutConfig{primaryOutConfig=" + this.f32884a + ", secondaryOutConfig=" + this.f32885b + "}";
+        return "DualOutConfig{primaryOutConfig=" + this.f32900a + ", secondaryOutConfig=" + this.f32901b + "}";
     }
 }

@@ -13,24 +13,24 @@ public final class a implements Parcelable {
     public static final Parcelable.Creator<a> CREATOR;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f51336e = new a("UPLOAD", 0, "upload");
+    public static final a f51352e = new a("UPLOAD", 0, "upload");
 
     /* renamed from: i  reason: collision with root package name */
-    public static final a f51337i = new a("MANUAL", 1, "manual");
+    public static final a f51353i = new a("MANUAL", 1, "manual");
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ a[] f51338o;
+    private static final /* synthetic */ a[] f51354o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f51339p;
+    private static final /* synthetic */ EnumEntries f51355p;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f51340d;
+    private final String f51356d;
 
     static {
         a[] a10 = a();
-        f51338o = a10;
-        f51339p = pr.a.a(a10);
+        f51354o = a10;
+        f51355p = pr.a.a(a10);
         CREATOR = new Parcelable.Creator() { // from class: vn.a.a
             @Override // android.os.Parcelable.Creator
             /* renamed from: a */
@@ -48,11 +48,11 @@ public final class a implements Parcelable {
     }
 
     private a(String str, int i10, String str2) {
-        this.f51340d = str2;
+        this.f51356d = str2;
     }
 
     private static final /* synthetic */ a[] a() {
-        return new a[]{f51336e, f51337i};
+        return new a[]{f51352e, f51353i};
     }
 
     public static a valueOf(String str) {
@@ -60,11 +60,11 @@ public final class a implements Parcelable {
     }
 
     public static a[] values() {
-        return (a[]) f51338o.clone();
+        return (a[]) f51354o.clone();
     }
 
     public final String d() {
-        return this.f51340d;
+        return this.f51356d;
     }
 
     @Override // android.os.Parcelable

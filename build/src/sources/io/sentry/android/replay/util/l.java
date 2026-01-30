@@ -9,7 +9,7 @@ import org.jetbrains.annotations.NotNull;
 public final class l {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final l f29667a = new l();
+    public static final l f29683a = new l();
 
     /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
     /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
@@ -51,7 +51,7 @@ public final class l {
     public static final /* synthetic */ class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f29668a;
+        public static final /* synthetic */ int[] f29684a;
 
         static {
             int[] iArr = new int[a.values().length];
@@ -63,7 +63,7 @@ public final class l {
                 iArr[a.SOC_MANUFACTURER.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
-            f29668a = iArr;
+            f29684a = iArr;
         }
     }
 
@@ -82,7 +82,7 @@ public final class l {
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(defaultValue, "defaultValue");
         if (Build.VERSION.SDK_INT >= 31) {
-            int i10 = b.f29668a[key.ordinal()];
+            int i10 = b.f29684a[key.ordinal()];
             if (i10 == 1) {
                 str = Build.SOC_MODEL;
             } else if (i10 == 2) {

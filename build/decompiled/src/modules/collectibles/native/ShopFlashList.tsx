@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/collectibles/native/ShopFlashList.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: _default, environment: var1
-        _fun88487: for (var _fun88487_ip = 0;;) switch (_fun88487_ip) {
+        _fun88724: for (var _fun88724_ip = 0;;) switch (_fun88724_ip) {
             case 0:
                 var0 = arg0;
                 var10 = var0.data;
@@ -127,8 +127,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var8 = var8 != var5;
                 if (!var8) {
-                    _fun88487_ip = 90;
-                    continue _fun88487
+                    _fun88724_ip = 90;
+                    continue _fun88724
                 }
             case 84:
                 var9 = 0;
@@ -186,4 +186,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 11421, 5711, 1234, 11422, 7318, 7319, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 11443, 5714, 1234, 11444, 7321, 7322, 2]);

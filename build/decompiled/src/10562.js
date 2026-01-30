@@ -9,12 +9,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.registerAsset;
     var1 = {
         '__packager_asset': true,
-        'httpServerLocation': '/assets/images/native/premium/logos',
-        'width': 45.5,
-        'height': 8.5,
+        'httpServerLocation': '/assets/images/native/premium/guild_boosting',
+        'width': 177.5,
+        'height': 112,
         'scales': null,
-        'hash': '8d16389f341b45c184ca21d1deb5fd2e',
-        'name': 'img_logo_discord',
+        'hash': 'd63f711157bc9a870f14f2f22d76c3fb',
+        'name': 'guild_subscription_no_guilds_dark',
         'type': 'png'
     };
     var4 = [2, 3];

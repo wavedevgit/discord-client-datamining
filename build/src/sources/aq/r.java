@@ -26,7 +26,7 @@ public final class r implements ViewBinding {
 
     public static r a(View view) {
         TextInputLayout textInputLayout = (TextInputLayout) view;
-        int i10 = vp.e.f51836z0;
+        int i10 = vp.e.f51852z0;
         AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) e4.a.a(view, i10);
         if (autoCompleteTextView != null) {
             return new r(textInputLayout, textInputLayout, autoCompleteTextView);
@@ -39,7 +39,7 @@ public final class r implements ViewBinding {
     }
 
     public static r d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(vp.f.f51855s, viewGroup, false);
+        View inflate = layoutInflater.inflate(vp.f.f51871s, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }

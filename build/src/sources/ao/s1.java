@@ -105,7 +105,7 @@ public final class s1 implements vm.k {
         }
 
         private a() {
-            k.a aVar = vm.k.f51267a;
+            k.a aVar = vm.k.f51283a;
             this.f6465a = new vm.z(Reflection.getOrCreateKotlinClass(f5.f.class), C0095a.f6466d, b.f6467d);
         }
     }
@@ -144,7 +144,7 @@ public final class s1 implements vm.k {
             binding.f25414f.setAnimation(f10.intValue());
             binding.f25414f.v();
         } else {
-            binding.f25414f.l(new q5.e("scanner", "**"), l5.a0.f36846a, new y5.e() { // from class: ao.r1
+            binding.f25414f.l(new q5.e("scanner", "**"), l5.a0.f36862a, new y5.e() { // from class: ao.r1
                 @Override // y5.e
                 public final Object a(y5.b bVar) {
                     return s1.c(s1.this, binding, bVar);
@@ -252,13 +252,13 @@ public final class s1 implements vm.k {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit i(f5.f fVar) {
         fVar.d().invoke();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit j(f5.f fVar) {
         fVar.e().invoke();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // vm.k

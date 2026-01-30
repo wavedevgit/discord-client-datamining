@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/gifting/native/views/GiftingRewardPreviewAvatar.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: GiftingRewardPreviewAvatar, environment: var1
-        _fun75191: for (var _fun75191_ip = 0;;) switch (_fun75191_ip) {
+        _fun75235: for (var _fun75235_ip = 0;;) switch (_fun75235_ip) {
             case 0:
                 var4 = arg0;
                 var5 = _closure1_slot0;
@@ -78,8 +78,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1 != var2;
                 var6 = undefined;
                 if (!var1) {
-                    _fun75191_ip = 132;
-                    continue _fun75191
+                    _fun75235_ip = 132;
+                    continue _fun75235
                 }
             case 116:
                 var1 = {};
@@ -108,4 +108,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1298, 1613, 33, 566, 5409, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1298, 1613, 33, 566, 5413, 2]);

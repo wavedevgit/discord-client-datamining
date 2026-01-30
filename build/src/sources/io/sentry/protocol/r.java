@@ -19,19 +19,19 @@ import java.util.concurrent.CopyOnWriteArraySet;
 public final class r implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f30453d;
+    private String f30469d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f30454e;
+    private String f30470e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Set f30455i;
+    private Set f30471i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Set f30456o;
+    private Set f30472o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Map f30457p;
+    private Map f30473p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -109,8 +109,8 @@ public final class r implements w1 {
             if (str != null) {
                 if (str2 != null) {
                     r rVar = new r(str, str2);
-                    rVar.f30455i = new CopyOnWriteArraySet(arrayList);
-                    rVar.f30456o = new CopyOnWriteArraySet(arrayList2);
+                    rVar.f30471i = new CopyOnWriteArraySet(arrayList);
+                    rVar.f30472o = new CopyOnWriteArraySet(arrayList2);
                     rVar.j(hashMap);
                     return rVar;
                 }
@@ -125,8 +125,8 @@ public final class r implements w1 {
     }
 
     public r(String str, String str2) {
-        this.f30453d = (String) io.sentry.util.y.c(str, "name is required.");
-        this.f30454e = (String) io.sentry.util.y.c(str2, "version is required.");
+        this.f30469d = (String) io.sentry.util.y.c(str, "name is required.");
+        this.f30470e = (String) io.sentry.util.y.c(str2, "version is required.");
     }
 
     public static r l(r rVar, String str, String str2) {
@@ -149,7 +149,7 @@ public final class r implements w1 {
     }
 
     public Set e() {
-        Set set = this.f30456o;
+        Set set = this.f30472o;
         if (set != null) {
             return set;
         }
@@ -162,7 +162,7 @@ public final class r implements w1 {
         }
         if (obj != null && r.class == obj.getClass()) {
             r rVar = (r) obj;
-            if (this.f30453d.equals(rVar.f30453d) && this.f30454e.equals(rVar.f30454e)) {
+            if (this.f30469d.equals(rVar.f30469d) && this.f30470e.equals(rVar.f30470e)) {
                 return true;
             }
         }
@@ -170,11 +170,11 @@ public final class r implements w1 {
     }
 
     public String f() {
-        return this.f30453d;
+        return this.f30469d;
     }
 
     public Set g() {
-        Set set = this.f30455i;
+        Set set = this.f30471i;
         if (set != null) {
             return set;
         }
@@ -182,30 +182,30 @@ public final class r implements w1 {
     }
 
     public String h() {
-        return this.f30454e;
+        return this.f30470e;
     }
 
     public int hashCode() {
-        return io.sentry.util.y.b(this.f30453d, this.f30454e);
+        return io.sentry.util.y.b(this.f30469d, this.f30470e);
     }
 
     public void i(String str) {
-        this.f30453d = (String) io.sentry.util.y.c(str, "name is required.");
+        this.f30469d = (String) io.sentry.util.y.c(str, "name is required.");
     }
 
     public void j(Map map) {
-        this.f30457p = map;
+        this.f30473p = map;
     }
 
     public void k(String str) {
-        this.f30454e = (String) io.sentry.util.y.c(str, "version is required.");
+        this.f30470e = (String) io.sentry.util.y.c(str, "version is required.");
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        f3Var.e(StackTraceHelper.NAME_KEY).f(this.f30453d);
-        f3Var.e("version").f(this.f30454e);
+        f3Var.e(StackTraceHelper.NAME_KEY).f(this.f30469d);
+        f3Var.e("version").f(this.f30470e);
         Set g10 = g();
         Set e10 = e();
         if (!g10.isEmpty()) {
@@ -214,10 +214,10 @@ public final class r implements w1 {
         if (!e10.isEmpty()) {
             f3Var.e("integrations").j(iLogger, e10);
         }
-        Map map = this.f30457p;
+        Map map = this.f30473p;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f30457p.get(str));
+                f3Var.e(str).j(iLogger, this.f30473p.get(str));
             }
         }
         f3Var.y();

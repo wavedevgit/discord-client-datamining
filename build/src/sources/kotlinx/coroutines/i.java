@@ -11,7 +11,7 @@ import kotlin.jvm.functions.Function2;
 public abstract class i {
     public static final CoroutineScope a(CoroutineContext coroutineContext) {
         CompletableJob b10;
-        if (coroutineContext.l(Job.f36291j) == null) {
+        if (coroutineContext.l(Job.f36307j) == null) {
             b10 = a0.b(null, 1, null);
             coroutineContext = coroutineContext.U0(b10);
         }
@@ -27,7 +27,7 @@ public abstract class i {
     }
 
     public static final void d(CoroutineScope coroutineScope, CancellationException cancellationException) {
-        Job job = (Job) coroutineScope.getCoroutineContext().l(Job.f36291j);
+        Job job = (Job) coroutineScope.getCoroutineContext().l(Job.f36307j);
         if (job != null) {
             job.h(cancellationException);
             return;
@@ -63,7 +63,7 @@ public abstract class i {
     }
 
     public static final boolean i(CoroutineScope coroutineScope) {
-        Job job = (Job) coroutineScope.getCoroutineContext().l(Job.f36291j);
+        Job job = (Job) coroutineScope.getCoroutineContext().l(Job.f36307j);
         if (job != null) {
             return job.a();
         }

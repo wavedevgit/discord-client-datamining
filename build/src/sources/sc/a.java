@@ -30,40 +30,40 @@ import okhttp3.ResponseBody;
 public class a extends f implements g {
 
     /* renamed from: e  reason: collision with root package name */
-    private final Call.Factory f48893e;
+    private final Call.Factory f48909e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final g.C0174g f48894f;
+    private final g.C0174g f48910f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final String f48895g;
+    private final String f48911g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final CacheControl f48896h;
+    private final CacheControl f48912h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final g.C0174g f48897i;
+    private final g.C0174g f48913i;
 
     /* renamed from: j  reason: collision with root package name */
-    private n f48898j;
+    private n f48914j;
 
     /* renamed from: k  reason: collision with root package name */
-    private com.google.android.exoplayer2.upstream.a f48899k;
+    private com.google.android.exoplayer2.upstream.a f48915k;
 
     /* renamed from: l  reason: collision with root package name */
-    private Response f48900l;
+    private Response f48916l;
 
     /* renamed from: m  reason: collision with root package name */
-    private InputStream f48901m;
+    private InputStream f48917m;
 
     /* renamed from: n  reason: collision with root package name */
-    private boolean f48902n;
+    private boolean f48918n;
 
     /* renamed from: o  reason: collision with root package name */
-    private long f48903o;
+    private long f48919o;
 
     /* renamed from: p  reason: collision with root package name */
-    private long f48904p;
+    private long f48920p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: sc.a$a  reason: collision with other inner class name */
@@ -71,20 +71,20 @@ public class a extends f implements g {
     public class C0625a implements tt.b {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ SettableFuture f48905d;
+        final /* synthetic */ SettableFuture f48921d;
 
         C0625a(SettableFuture settableFuture) {
-            this.f48905d = settableFuture;
+            this.f48921d = settableFuture;
         }
 
         @Override // tt.b
         public void onFailure(Call call, IOException iOException) {
-            this.f48905d.y(iOException);
+            this.f48921d.y(iOException);
         }
 
         @Override // tt.b
         public void onResponse(Call call, Response response) {
-            this.f48905d.x(response);
+            this.f48921d.x(response);
         }
     }
 
@@ -97,12 +97,12 @@ public class a extends f implements g {
     }
 
     private void s() {
-        Response response = this.f48900l;
+        Response response = this.f48916l;
         if (response != null) {
             ((ResponseBody) ne.a.e(response.x())).close();
-            this.f48900l = null;
+            this.f48916l = null;
         }
-        this.f48901m = null;
+        this.f48917m = null;
     }
 
     private Response t(Call call) {
@@ -124,16 +124,16 @@ public class a extends f implements g {
         HttpUrl m10 = HttpUrl.m(aVar.f14346a.toString());
         if (m10 != null) {
             Request.Builder m11 = new Request.Builder().m(m10);
-            CacheControl cacheControl = this.f48896h;
+            CacheControl cacheControl = this.f48912h;
             if (cacheControl != null) {
                 m11.c(cacheControl);
             }
             HashMap hashMap = new HashMap();
-            g.C0174g c0174g = this.f48897i;
+            g.C0174g c0174g = this.f48913i;
             if (c0174g != null) {
                 hashMap.putAll(c0174g.b());
             }
-            hashMap.putAll(this.f48894f.b());
+            hashMap.putAll(this.f48910f.b());
             hashMap.putAll(aVar.f14350e);
             for (Map.Entry entry : hashMap.entrySet()) {
                 m11.e((String) entry.getKey(), (String) entry.getValue());
@@ -142,7 +142,7 @@ public class a extends f implements g {
             if (a10 != null) {
                 m11.a("Range", a10);
             }
-            String str = this.f48895g;
+            String str = this.f48911g;
             if (str != null) {
                 m11.a("User-Agent", str);
             }
@@ -154,7 +154,7 @@ public class a extends f implements g {
             if (bArr != null) {
                 requestBody = RequestBody.create((MediaType) null, bArr);
             } else if (aVar.f14348c == 2) {
-                requestBody = RequestBody.create((MediaType) null, w0.f40284f);
+                requestBody = RequestBody.create((MediaType) null, w0.f40300f);
             }
             m11.g(aVar.b(), requestBody);
             return m11.b();
@@ -166,19 +166,19 @@ public class a extends f implements g {
         if (i11 == 0) {
             return 0;
         }
-        long j10 = this.f48903o;
+        long j10 = this.f48919o;
         if (j10 != -1) {
-            long j11 = j10 - this.f48904p;
+            long j11 = j10 - this.f48920p;
             if (j11 == 0) {
                 return -1;
             }
             i11 = (int) Math.min(i11, j11);
         }
-        int read = ((InputStream) w0.j(this.f48901m)).read(bArr, i10, i11);
+        int read = ((InputStream) w0.j(this.f48917m)).read(bArr, i10, i11);
         if (read == -1) {
             return -1;
         }
-        this.f48904p += read;
+        this.f48920p += read;
         o(read);
         return read;
     }
@@ -188,7 +188,7 @@ public class a extends f implements g {
             byte[] bArr = new byte[RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT];
             while (j10 > 0) {
                 try {
-                    int read = ((InputStream) w0.j(this.f48901m)).read(bArr, 0, (int) Math.min(j10, (long) RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT));
+                    int read = ((InputStream) w0.j(this.f48917m)).read(bArr, 0, (int) Math.min(j10, (long) RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT));
                     if (!Thread.currentThread().isInterrupted()) {
                         if (read != -1) {
                             j10 -= read;
@@ -214,22 +214,22 @@ public class a extends f implements g {
         String str;
         byte[] bArr;
         m mVar;
-        this.f48899k = aVar;
+        this.f48915k = aVar;
         long j10 = 0;
-        this.f48904p = 0L;
-        this.f48903o = 0L;
+        this.f48920p = 0L;
+        this.f48919o = 0L;
         q(aVar);
         try {
-            Response t10 = t(this.f48893e.a(u(aVar)));
-            this.f48900l = t10;
+            Response t10 = t(this.f48909e.a(u(aVar)));
+            this.f48916l = t10;
             ResponseBody responseBody = (ResponseBody) ne.a.e(t10.x());
-            this.f48901m = responseBody.byteStream();
+            this.f48917m = responseBody.byteStream();
             int L = t10.L();
             long j11 = -1;
             if (!t10.isSuccessful()) {
                 if (L == 416) {
                     if (aVar.f14352g == t.c(t10.E0().c("Content-Range"))) {
-                        this.f48902n = true;
+                        this.f48918n = true;
                         r(aVar);
                         long j12 = aVar.f14353h;
                         if (j12 == -1) {
@@ -239,9 +239,9 @@ public class a extends f implements g {
                     }
                 }
                 try {
-                    bArr = w0.i1((InputStream) ne.a.e(this.f48901m));
+                    bArr = w0.i1((InputStream) ne.a.e(this.f48917m));
                 } catch (IOException unused) {
-                    bArr = w0.f40284f;
+                    bArr = w0.f40300f;
                 }
                 byte[] bArr2 = bArr;
                 Map i10 = t10.E0().i();
@@ -259,7 +259,7 @@ public class a extends f implements g {
             } else {
                 str = "";
             }
-            n nVar = this.f48898j;
+            n nVar = this.f48914j;
             if (nVar != null && !nVar.apply(str)) {
                 s();
                 throw new g.e(str, aVar);
@@ -272,19 +272,19 @@ public class a extends f implements g {
             }
             long j14 = aVar.f14353h;
             if (j14 != -1) {
-                this.f48903o = j14;
+                this.f48919o = j14;
             } else {
                 long contentLength = responseBody.contentLength();
                 if (contentLength != -1) {
                     j11 = contentLength - j10;
                 }
-                this.f48903o = j11;
+                this.f48919o = j11;
             }
-            this.f48902n = true;
+            this.f48918n = true;
             r(aVar);
             try {
                 w(j10, aVar);
-                return this.f48903o;
+                return this.f48919o;
             } catch (g.d e10) {
                 s();
                 throw e10;
@@ -296,8 +296,8 @@ public class a extends f implements g {
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public void close() {
-        if (this.f48902n) {
-            this.f48902n = false;
+        if (this.f48918n) {
+            this.f48918n = false;
             p();
             s();
         }
@@ -305,7 +305,7 @@ public class a extends f implements g {
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public Map d() {
-        Response response = this.f48900l;
+        Response response = this.f48916l;
         if (response == null) {
             return Collections.EMPTY_MAP;
         }
@@ -314,7 +314,7 @@ public class a extends f implements g {
 
     @Override // com.google.android.exoplayer2.upstream.DataSource
     public Uri m() {
-        Response response = this.f48900l;
+        Response response = this.f48916l;
         if (response == null) {
             return null;
         }
@@ -326,17 +326,17 @@ public class a extends f implements g {
         try {
             return v(bArr, i10, i11);
         } catch (IOException e10) {
-            throw g.d.c(e10, (com.google.android.exoplayer2.upstream.a) w0.j(this.f48899k), 2);
+            throw g.d.c(e10, (com.google.android.exoplayer2.upstream.a) w0.j(this.f48915k), 2);
         }
     }
 
     private a(Call.Factory factory, String str, CacheControl cacheControl, g.C0174g c0174g, n nVar) {
         super(true);
-        this.f48893e = (Call.Factory) ne.a.e(factory);
-        this.f48895g = str;
-        this.f48896h = cacheControl;
-        this.f48897i = c0174g;
-        this.f48898j = nVar;
-        this.f48894f = new g.C0174g();
+        this.f48909e = (Call.Factory) ne.a.e(factory);
+        this.f48911g = str;
+        this.f48912h = cacheControl;
+        this.f48913i = c0174g;
+        this.f48914j = nVar;
+        this.f48910f = new g.C0174g();
     }
 }

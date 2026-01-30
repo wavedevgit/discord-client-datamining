@@ -5,7 +5,7 @@ import ui.c;
 final class m7 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final m7 f38466a = new m7();
+    static final m7 f38482a = new m7();
 
     static {
         c.b a10 = ui.c.a("initialImageUriCount");

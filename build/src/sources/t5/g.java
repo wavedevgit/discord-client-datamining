@@ -31,7 +31,7 @@ public class g extends b {
     @Override // t5.b, n5.e
     public void e(RectF rectF, Matrix matrix, boolean z10) {
         super.e(rectF, matrix, z10);
-        this.D.e(rectF, this.f49241o, z10);
+        this.D.e(rectF, this.f49257o, z10);
     }
 
     @Override // t5.b

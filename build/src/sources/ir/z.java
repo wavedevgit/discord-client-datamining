@@ -7,10 +7,10 @@ public final class z implements Comparable {
     @NotNull
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f31123e = new a(null);
+    public static final a f31139e = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f31124d;
+    private final int f31140d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -23,7 +23,7 @@ public final class z implements Comparable {
     }
 
     private /* synthetic */ z(int i10) {
-        this.f31124d = i10;
+        this.f31140d = i10;
     }
 
     public static final /* synthetic */ z a(int i10) {
@@ -51,19 +51,19 @@ public final class z implements Comparable {
     }
 
     public boolean equals(Object obj) {
-        return e(this.f31124d, obj);
+        return e(this.f31140d, obj);
     }
 
     public final /* synthetic */ int h() {
-        return this.f31124d;
+        return this.f31140d;
     }
 
     public int hashCode() {
-        return f(this.f31124d);
+        return f(this.f31140d);
     }
 
     public String toString() {
-        return g(this.f31124d);
+        return g(this.f31140d);
     }
 
     public static int d(int i10) {

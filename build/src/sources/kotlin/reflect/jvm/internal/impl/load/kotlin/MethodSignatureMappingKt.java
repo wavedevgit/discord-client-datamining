@@ -165,6 +165,6 @@ public final class MethodSignatureMappingKt {
     @NotNull
     public static final JvmType mapToJvmType(@NotNull KotlinType kotlinType) {
         Intrinsics.checkNotNullParameter(kotlinType, "<this>");
-        return (JvmType) DescriptorBasedTypeSignatureMappingKt.mapType$default(kotlinType, JvmTypeFactoryImpl.f34512a, TypeMappingMode.DEFAULT, TypeMappingConfigurationImpl.INSTANCE, null, null, 32, null);
+        return (JvmType) DescriptorBasedTypeSignatureMappingKt.mapType$default(kotlinType, JvmTypeFactoryImpl.f34528a, TypeMappingMode.DEFAULT, TypeMappingConfigurationImpl.INSTANCE, null, null, 32, null);
     }
 }

@@ -25,102 +25,102 @@ import com.facebook.imagepipeline.producers.w0;
 public class x {
 
     /* renamed from: a  reason: collision with root package name */
-    protected ContentResolver f39981a;
+    protected ContentResolver f39997a;
 
     /* renamed from: b  reason: collision with root package name */
-    protected Resources f39982b;
+    protected Resources f39998b;
 
     /* renamed from: c  reason: collision with root package name */
-    protected AssetManager f39983c;
+    protected AssetManager f39999c;
 
     /* renamed from: d  reason: collision with root package name */
-    protected final r8.a f39984d;
+    protected final r8.a f40000d;
 
     /* renamed from: e  reason: collision with root package name */
-    protected final qa.c f39985e;
+    protected final qa.c f40001e;
 
     /* renamed from: f  reason: collision with root package name */
-    protected final qa.e f39986f;
+    protected final qa.e f40002f;
 
     /* renamed from: g  reason: collision with root package name */
-    protected final DownsampleMode f39987g;
+    protected final DownsampleMode f40003g;
 
     /* renamed from: h  reason: collision with root package name */
-    protected final boolean f39988h;
+    protected final boolean f40004h;
 
     /* renamed from: i  reason: collision with root package name */
-    protected final boolean f39989i;
+    protected final boolean f40005i;
 
     /* renamed from: j  reason: collision with root package name */
-    protected final n f39990j;
+    protected final n f40006j;
 
     /* renamed from: k  reason: collision with root package name */
-    protected final r8.i f39991k;
+    protected final r8.i f40007k;
 
     /* renamed from: l  reason: collision with root package name */
-    protected final Supplier f39992l;
+    protected final Supplier f40008l;
 
     /* renamed from: m  reason: collision with root package name */
-    protected final la.w f39993m;
+    protected final la.w f40009m;
 
     /* renamed from: n  reason: collision with root package name */
-    protected final la.w f39994n;
+    protected final la.w f40010n;
 
     /* renamed from: o  reason: collision with root package name */
-    protected final la.k f39995o;
+    protected final la.k f40011o;
 
     /* renamed from: p  reason: collision with root package name */
-    protected final la.d f39996p;
+    protected final la.d f40012p;
 
     /* renamed from: q  reason: collision with root package name */
-    protected final la.d f39997q;
+    protected final la.d f40013q;
 
     /* renamed from: r  reason: collision with root package name */
-    protected final PlatformBitmapFactory f39998r;
+    protected final PlatformBitmapFactory f40014r;
 
     /* renamed from: s  reason: collision with root package name */
-    protected final int f39999s;
+    protected final int f40015s;
 
     /* renamed from: t  reason: collision with root package name */
-    protected final int f40000t;
+    protected final int f40016t;
 
     /* renamed from: u  reason: collision with root package name */
-    protected boolean f40001u;
+    protected boolean f40017u;
 
     /* renamed from: v  reason: collision with root package name */
-    protected final a f40002v;
+    protected final a f40018v;
 
     /* renamed from: w  reason: collision with root package name */
-    protected final int f40003w;
+    protected final int f40019w;
 
     /* renamed from: x  reason: collision with root package name */
-    protected final boolean f40004x;
+    protected final boolean f40020x;
 
     public x(Context context, r8.a aVar, qa.c cVar, qa.e eVar, DownsampleMode downsampleMode, boolean z10, boolean z11, n nVar, r8.i iVar, la.w wVar, la.w wVar2, Supplier supplier, la.k kVar, PlatformBitmapFactory platformBitmapFactory, int i10, int i11, boolean z12, int i12, a aVar2, boolean z13, int i13) {
-        this.f39981a = context.getApplicationContext().getContentResolver();
-        this.f39982b = context.getApplicationContext().getResources();
-        this.f39983c = context.getApplicationContext().getAssets();
-        this.f39984d = aVar;
-        this.f39985e = cVar;
-        this.f39986f = eVar;
-        this.f39987g = downsampleMode;
-        this.f39988h = z10;
-        this.f39989i = z11;
-        this.f39990j = nVar;
-        this.f39991k = iVar;
-        this.f39994n = wVar;
-        this.f39993m = wVar2;
-        this.f39992l = supplier;
-        this.f39995o = kVar;
-        this.f39998r = platformBitmapFactory;
-        this.f39996p = new la.d(i13);
-        this.f39997q = new la.d(i13);
-        this.f39999s = i10;
-        this.f40000t = i11;
-        this.f40001u = z12;
-        this.f40003w = i12;
-        this.f40002v = aVar2;
-        this.f40004x = z13;
+        this.f39997a = context.getApplicationContext().getContentResolver();
+        this.f39998b = context.getApplicationContext().getResources();
+        this.f39999c = context.getApplicationContext().getAssets();
+        this.f40000d = aVar;
+        this.f40001e = cVar;
+        this.f40002f = eVar;
+        this.f40003g = downsampleMode;
+        this.f40004h = z10;
+        this.f40005i = z11;
+        this.f40006j = nVar;
+        this.f40007k = iVar;
+        this.f40010n = wVar;
+        this.f40009m = wVar2;
+        this.f40008l = supplier;
+        this.f40011o = kVar;
+        this.f40014r = platformBitmapFactory;
+        this.f40012p = new la.d(i13);
+        this.f40013q = new la.d(i13);
+        this.f40015s = i10;
+        this.f40016t = i11;
+        this.f40017u = z12;
+        this.f40019w = i12;
+        this.f40018v = aVar2;
+        this.f40020x = z13;
     }
 
     public static com.facebook.imagepipeline.producers.a a(w0 w0Var) {
@@ -132,19 +132,19 @@ public class x {
     }
 
     public t0 A(w0 w0Var) {
-        return new t0(this.f39994n, this.f39995o, w0Var);
+        return new t0(this.f40010n, this.f40011o, w0Var);
     }
 
     public u0 B(w0 w0Var) {
-        return new u0(w0Var, this.f39998r, this.f39990j.e());
+        return new u0(w0Var, this.f40014r, this.f40006j.e());
     }
 
     public a1 C() {
-        return new a1(this.f39990j.f(), this.f39991k, this.f39981a);
+        return new a1(this.f40006j.f(), this.f40007k, this.f39997a);
     }
 
     public c1 D(w0 w0Var, boolean z10, za.d dVar) {
-        return new c1(this.f39990j.e(), this.f39991k, w0Var, z10, dVar);
+        return new c1(this.f40006j.e(), this.f40007k, w0Var, z10, dVar);
     }
 
     public f1 E(w0 w0Var) {
@@ -152,7 +152,7 @@ public class x {
     }
 
     public j1 F(w0 w0Var) {
-        return new j1(5, this.f39990j.a(), w0Var);
+        return new j1(5, this.f40006j.a(), w0Var);
     }
 
     public l1 G(m1[] m1VarArr) {
@@ -164,94 +164,94 @@ public class x {
     }
 
     public com.facebook.imagepipeline.producers.g c(w0 w0Var) {
-        return new com.facebook.imagepipeline.producers.g(this.f39994n, this.f39995o, w0Var);
+        return new com.facebook.imagepipeline.producers.g(this.f40010n, this.f40011o, w0Var);
     }
 
     public com.facebook.imagepipeline.producers.h d(w0 w0Var) {
-        return new com.facebook.imagepipeline.producers.h(this.f39995o, w0Var);
+        return new com.facebook.imagepipeline.producers.h(this.f40011o, w0Var);
     }
 
     public com.facebook.imagepipeline.producers.i e(w0 w0Var) {
-        return new com.facebook.imagepipeline.producers.i(this.f39994n, this.f39995o, w0Var);
+        return new com.facebook.imagepipeline.producers.i(this.f40010n, this.f40011o, w0Var);
     }
 
     public com.facebook.imagepipeline.producers.j f(w0 w0Var) {
-        return new com.facebook.imagepipeline.producers.j(w0Var, this.f39999s, this.f40000t, this.f40001u);
+        return new com.facebook.imagepipeline.producers.j(w0Var, this.f40015s, this.f40016t, this.f40017u);
     }
 
     public com.facebook.imagepipeline.producers.k g(w0 w0Var) {
-        return new com.facebook.imagepipeline.producers.k(this.f39993m, this.f39992l, this.f39995o, this.f39996p, this.f39997q, w0Var);
+        return new com.facebook.imagepipeline.producers.k(this.f40009m, this.f40008l, this.f40011o, this.f40012p, this.f40013q, w0Var);
     }
 
     public com.facebook.imagepipeline.producers.n i() {
-        return new com.facebook.imagepipeline.producers.n(this.f39991k);
+        return new com.facebook.imagepipeline.producers.n(this.f40007k);
     }
 
     public com.facebook.imagepipeline.producers.o j(w0 w0Var) {
-        return new com.facebook.imagepipeline.producers.o(this.f39984d, this.f39990j.d(), this.f39985e, this.f39986f, this.f39987g, this.f39988h, this.f39989i, w0Var, this.f40003w, this.f40002v, null, o8.m.f42484b);
+        return new com.facebook.imagepipeline.producers.o(this.f40000d, this.f40006j.d(), this.f40001e, this.f40002f, this.f40003g, this.f40004h, this.f40005i, w0Var, this.f40019w, this.f40018v, null, o8.m.f42500b);
     }
 
     public com.facebook.imagepipeline.producers.r k(w0 w0Var) {
-        return new com.facebook.imagepipeline.producers.r(w0Var, this.f39990j.c());
+        return new com.facebook.imagepipeline.producers.r(w0Var, this.f40006j.c());
     }
 
     public com.facebook.imagepipeline.producers.u l(w0 w0Var) {
-        return new com.facebook.imagepipeline.producers.u(this.f39992l, this.f39995o, w0Var);
+        return new com.facebook.imagepipeline.producers.u(this.f40008l, this.f40011o, w0Var);
     }
 
     public com.facebook.imagepipeline.producers.v m(w0 w0Var) {
-        return new com.facebook.imagepipeline.producers.v(this.f39992l, this.f39995o, w0Var);
+        return new com.facebook.imagepipeline.producers.v(this.f40008l, this.f40011o, w0Var);
     }
 
     public com.facebook.imagepipeline.producers.x n(w0 w0Var) {
-        return new com.facebook.imagepipeline.producers.x(this.f39995o, this.f40004x, w0Var);
+        return new com.facebook.imagepipeline.producers.x(this.f40011o, this.f40020x, w0Var);
     }
 
     public w0 o(w0 w0Var) {
-        return new com.facebook.imagepipeline.producers.y(this.f39993m, this.f39995o, w0Var);
+        return new com.facebook.imagepipeline.producers.y(this.f40009m, this.f40011o, w0Var);
     }
 
     public com.facebook.imagepipeline.producers.z p(w0 w0Var) {
-        return new com.facebook.imagepipeline.producers.z(this.f39992l, this.f39995o, this.f39996p, this.f39997q, w0Var);
+        return new com.facebook.imagepipeline.producers.z(this.f40008l, this.f40011o, this.f40012p, this.f40013q, w0Var);
     }
 
     public com.facebook.imagepipeline.producers.f0 q() {
-        return new com.facebook.imagepipeline.producers.f0(this.f39990j.f(), this.f39991k, this.f39983c);
+        return new com.facebook.imagepipeline.producers.f0(this.f40006j.f(), this.f40007k, this.f39999c);
     }
 
     public com.facebook.imagepipeline.producers.g0 r() {
-        return new com.facebook.imagepipeline.producers.g0(this.f39990j.f(), this.f39991k, this.f39981a);
+        return new com.facebook.imagepipeline.producers.g0(this.f40006j.f(), this.f40007k, this.f39997a);
     }
 
     public com.facebook.imagepipeline.producers.h0 s() {
-        return new com.facebook.imagepipeline.producers.h0(this.f39990j.f(), this.f39991k, this.f39981a);
+        return new com.facebook.imagepipeline.producers.h0(this.f40006j.f(), this.f40007k, this.f39997a);
     }
 
     public LocalExifThumbnailProducer t() {
-        return new LocalExifThumbnailProducer(this.f39990j.g(), this.f39991k, this.f39981a);
+        return new LocalExifThumbnailProducer(this.f40006j.g(), this.f40007k, this.f39997a);
     }
 
     public com.facebook.imagepipeline.producers.k0 u() {
-        return new com.facebook.imagepipeline.producers.k0(this.f39990j.f(), this.f39991k);
+        return new com.facebook.imagepipeline.producers.k0(this.f40006j.f(), this.f40007k);
     }
 
     public com.facebook.imagepipeline.producers.l0 v() {
-        return new com.facebook.imagepipeline.producers.l0(this.f39990j.f(), this.f39991k, this.f39982b);
+        return new com.facebook.imagepipeline.producers.l0(this.f40006j.f(), this.f40007k, this.f39998b);
     }
 
     public com.facebook.imagepipeline.producers.m0 w() {
-        return new com.facebook.imagepipeline.producers.m0(this.f39990j.e(), this.f39981a);
+        return new com.facebook.imagepipeline.producers.m0(this.f40006j.e(), this.f39997a);
     }
 
     public com.facebook.imagepipeline.producers.n0 x() {
-        return new com.facebook.imagepipeline.producers.n0(this.f39990j.f(), this.f39981a);
+        return new com.facebook.imagepipeline.producers.n0(this.f40006j.f(), this.f39997a);
     }
 
     public w0 y(NetworkFetcher networkFetcher) {
-        return new com.facebook.imagepipeline.producers.q0(this.f39991k, this.f39984d, networkFetcher);
+        return new com.facebook.imagepipeline.producers.q0(this.f40007k, this.f40000d, networkFetcher);
     }
 
     public r0 z(w0 w0Var) {
-        return new r0(this.f39992l, this.f39995o, this.f39991k, this.f39984d, w0Var);
+        return new r0(this.f40008l, this.f40011o, this.f40007k, this.f40000d, w0Var);
     }
 }

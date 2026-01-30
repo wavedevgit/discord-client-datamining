@@ -8,7 +8,7 @@ import org.webrtc.PeerConnection;
 public final class l {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final l f50792a = new l();
+    public static final l f50808a = new l();
 
     private l() {
     }
@@ -26,7 +26,7 @@ public final class l {
         sparseIntArray.put(262144, 2);
         sparseIntArray.put(524288, 2);
         sparseIntArray.put(1048576, 2);
-        l lVar = f50792a;
+        l lVar = f50808a;
         return new z(lVar.c(), lVar.b(), sparseIntArray);
     }
 

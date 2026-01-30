@@ -5,13 +5,13 @@ import java.util.List;
 public final class c2 implements h {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c2 f29769a = new c2();
+    private static final c2 f29785a = new c2();
 
     private c2() {
     }
 
     public static c2 g() {
-        return f29769a;
+        return f29785a;
     }
 
     @Override // io.sentry.h

@@ -1,12 +1,12 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = function(arg0, arg1) { // Original name: invariant, environment: var0
-        _fun13511: for (var _fun13511_ip = 0;;) switch (_fun13511_ip) {
+        _fun13512: for (var _fun13512_ip = 0;;) switch (_fun13512_ip) {
             case 0:
                 var0 = arg0;
                 if (var0) {
-                    _fun13511_ip = 42;
-                    continue _fun13511
+                    _fun13512_ip = 42;
+                    continue _fun13512
                 }
             case 6:
                 var0 = global;

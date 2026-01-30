@@ -3,22 +3,22 @@ package og;
 public final class ga {
 
     /* renamed from: a  reason: collision with root package name */
-    private final hc f43070a;
+    private final hc f43086a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final da f43071b;
+    private final da f43087b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ba f43072c;
+    private final ba f43088c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final wa f43073d;
+    private final wa f43089d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final za f43074e;
+    private final za f43090e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final s2 f43075f;
+    private final s2 f43091f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ ga(ea eaVar, fa faVar) {
@@ -28,41 +28,41 @@ public final class ga {
         wa waVar;
         za zaVar;
         s2 s2Var;
-        hcVar = eaVar.f42996a;
-        this.f43070a = hcVar;
-        daVar = eaVar.f42997b;
-        this.f43071b = daVar;
-        baVar = eaVar.f42998c;
-        this.f43072c = baVar;
-        waVar = eaVar.f42999d;
-        this.f43073d = waVar;
-        zaVar = eaVar.f43000e;
-        this.f43074e = zaVar;
-        s2Var = eaVar.f43001f;
-        this.f43075f = s2Var;
+        hcVar = eaVar.f43012a;
+        this.f43086a = hcVar;
+        daVar = eaVar.f43013b;
+        this.f43087b = daVar;
+        baVar = eaVar.f43014c;
+        this.f43088c = baVar;
+        waVar = eaVar.f43015d;
+        this.f43089d = waVar;
+        zaVar = eaVar.f43016e;
+        this.f43090e = zaVar;
+        s2Var = eaVar.f43017f;
+        this.f43091f = s2Var;
     }
 
     public final s2 a() {
-        return this.f43075f;
+        return this.f43091f;
     }
 
     public final ba b() {
-        return this.f43072c;
+        return this.f43088c;
     }
 
     public final da c() {
-        return this.f43071b;
+        return this.f43087b;
     }
 
     public final wa d() {
-        return this.f43073d;
+        return this.f43089d;
     }
 
     public final za e() {
-        return this.f43074e;
+        return this.f43090e;
     }
 
     public final hc f() {
-        return this.f43070a;
+        return this.f43086a;
     }
 }

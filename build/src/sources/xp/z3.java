@@ -8,26 +8,26 @@ import kotlin.jvm.internal.Intrinsics;
 public final class z3 implements TextWatcher {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f53788d;
+    private final String f53804d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f53789e;
+    private boolean f53805e;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f53790i;
+    private boolean f53806i;
 
     public z3(String mask) {
         Intrinsics.checkNotNullParameter(mask, "mask");
-        this.f53788d = mask;
+        this.f53804d = mask;
     }
 
     @Override // android.text.TextWatcher
     public void afterTextChanged(Editable editable) {
         Intrinsics.checkNotNullParameter(editable, "editable");
-        if (!this.f53789e && !this.f53790i) {
-            this.f53789e = true;
-            o1.f(editable, this.f53788d);
-            this.f53789e = false;
+        if (!this.f53805e && !this.f53806i) {
+            this.f53805e = true;
+            o1.f(editable, this.f53804d);
+            this.f53805e = false;
         }
     }
 
@@ -40,7 +40,7 @@ public final class z3 implements TextWatcher {
         } else {
             z10 = false;
         }
-        this.f53790i = z10;
+        this.f53806i = z10;
     }
 
     @Override // android.text.TextWatcher

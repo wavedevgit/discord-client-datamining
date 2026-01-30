@@ -85,7 +85,7 @@ public final class MessageState {
         @Override // kotlinx.serialization.KSerializer, xs.o, kotlinx.serialization.DeserializationStrategy
         @NotNull
         public SerialDescriptor getDescriptor() {
-            return j.b("MessageState", e.i.f56091a);
+            return j.b("MessageState", e.i.f56107a);
         }
 
         @Override // kotlinx.serialization.DeserializationStrategy

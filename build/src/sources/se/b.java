@@ -10,31 +10,31 @@ import java.util.Set;
 public final class b extends d {
 
     /* renamed from: h  reason: collision with root package name */
-    private static List f48987h = new ArrayList();
+    private static List f49003h = new ArrayList();
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f48988e;
+    private boolean f49004e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Set f48989f;
+    private Set f49005f;
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f48990g;
+    private boolean f49006g;
 
     public b(zzbv zzbvVar) {
         super(zzbvVar);
-        this.f48989f = new HashSet();
+        this.f49005f = new HashSet();
     }
 
     public static void c() {
         synchronized (b.class) {
             try {
-                List<Runnable> list = f48987h;
+                List<Runnable> list = f49003h;
                 if (list != null) {
                     for (Runnable runnable : list) {
                         runnable.run();
                     }
-                    f48987h = null;
+                    f49003h = null;
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -43,7 +43,7 @@ public final class b extends d {
     }
 
     public void b(boolean z10) {
-        this.f48990g = z10;
+        this.f49006g = z10;
     }
 
     public final void d() {
@@ -53,6 +53,6 @@ public final class b extends d {
             b(zzq.zzc());
         }
         zzq.zzf();
-        this.f48988e = true;
+        this.f49004e = true;
     }
 }

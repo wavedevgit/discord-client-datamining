@@ -213,7 +213,7 @@ public final class RNGestureHandlerModule extends NativeRNGestureHandlerModuleSp
                     throw th2;
                 }
             }
-            Unit unit = Unit.f33282a;
+            Unit unit = Unit.f33298a;
         }
         super.invalidate();
     }

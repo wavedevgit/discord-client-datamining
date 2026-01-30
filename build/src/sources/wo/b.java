@@ -27,13 +27,13 @@ import zm.j;
 public final class b extends j {
 
     /* renamed from: q  reason: collision with root package name */
-    public static final a f52728q = new a(null);
+    public static final a f52744q = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements c0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final /* synthetic */ vm.f f52729a;
+        private final /* synthetic */ vm.f f52745a;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: wo.b$a$a  reason: collision with other inner class name */
@@ -52,7 +52,7 @@ public final class b extends j {
             @Override // kotlin.jvm.functions.Function2
             public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
                 a((zm.f) obj, (a0) obj2);
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
         }
 
@@ -66,7 +66,7 @@ public final class b extends j {
             Intrinsics.checkNotNullParameter(initialEnv, "initialEnv");
             Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
             b bVar = new b(contextForNewView, null, 0, 0, 14, null);
-            bVar.setId(g.f52737b);
+            bVar.setId(g.f52753b);
             bVar.setLayoutParams(new ViewGroup.LayoutParams(-1, -1));
             g0.a(bVar, initialRendering, initialEnv, new C0721a(bVar));
             return bVar;
@@ -78,16 +78,16 @@ public final class b extends j {
             Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
             Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
             Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-            return this.f52729a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+            return this.f52745a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
         }
 
         @Override // vm.c0
         public KClass getType() {
-            return this.f52729a.getType();
+            return this.f52745a.getType();
         }
 
         private a() {
-            this.f52729a = new vm.f(Reflection.getOrCreateKotlinClass(c.class), new Function4() { // from class: wo.a
+            this.f52745a = new vm.f(Reflection.getOrCreateKotlinClass(c.class), new Function4() { // from class: wo.a
                 @Override // kotlin.jvm.functions.Function4
                 public final Object invoke(Object obj, Object obj2, Object obj3, Object obj4) {
                     View c10;
@@ -113,7 +113,7 @@ public final class b extends j {
         while (true) {
             if (it.hasNext()) {
                 obj = it.next();
-                if (((View) obj).getTag(g.f52736a) instanceof Integer) {
+                if (((View) obj).getTag(g.f52752a) instanceof Integer) {
                     break;
                 }
             } else {
@@ -123,7 +123,7 @@ public final class b extends j {
         }
         View view2 = (View) obj;
         if (view2 != null) {
-            obj2 = view2.getTag(g.f52736a);
+            obj2 = view2.getTag(g.f52752a);
         } else {
             obj2 = null;
         }

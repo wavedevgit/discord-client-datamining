@@ -261,7 +261,7 @@ public class Rpc {
                 if (f14761i == null) {
                     Intent intent2 = new Intent();
                     intent2.setPackage("com.google.example.invalidpackage");
-                    f14761i = PendingIntent.getBroadcast(context, 0, intent2, gg.a.f26892a);
+                    f14761i = PendingIntent.getBroadcast(context, 0, intent2, gg.a.f26908a);
                 }
                 intent.putExtra("app", f14761i);
             } catch (Throwable th2) {

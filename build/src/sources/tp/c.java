@@ -6,10 +6,10 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f49780a = new a(null);
+    public static final a f49796a = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final HashMap f49781b = new HashMap();
+    private static final HashMap f49797b = new HashMap();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -18,7 +18,7 @@ public abstract class c {
         }
 
         public final HashMap a() {
-            return c.f49781b;
+            return c.f49797b;
         }
 
         private a() {

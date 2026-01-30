@@ -114,7 +114,7 @@ public final class CredentialProviderPlayServicesImpl implements m {
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             m8invoke();
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         /* renamed from: invoke  reason: collision with other method in class */
@@ -160,7 +160,7 @@ public final class CredentialProviderPlayServicesImpl implements m {
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             m9invoke();
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         /* renamed from: invoke  reason: collision with other method in class */
@@ -202,7 +202,7 @@ public final class CredentialProviderPlayServicesImpl implements m {
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             m10invoke();
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         /* renamed from: invoke  reason: collision with other method in class */
@@ -242,7 +242,7 @@ public final class CredentialProviderPlayServicesImpl implements m {
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             m11invoke();
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         /* renamed from: invoke  reason: collision with other method in class */
@@ -323,7 +323,7 @@ public final class CredentialProviderPlayServicesImpl implements m {
             return;
         }
         if (request instanceof g2.f) {
-            o2.b.f42312l.a(context).u((g2.f) request, callback, executor, cancellationSignal);
+            o2.b.f42328l.a(context).u((g2.f) request, callback, executor, cancellationSignal);
             return;
         }
         throw new UnsupportedOperationException("Create Credential request is unsupported, not password or publickeycredential");

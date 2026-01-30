@@ -5,10 +5,10 @@ import kotlinx.coroutines.flow.MutableSharedFlow;
 public final class g0 implements tq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final tq.h f39216a;
+    private final tq.h f39232a;
 
     public g0(tq.h hVar) {
-        this.f39216a = hVar;
+        this.f39232a = hVar;
     }
 
     public static g0 a(tq.h hVar) {
@@ -22,6 +22,6 @@ public final class g0 implements tq.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public f0 get() {
-        return c((MutableSharedFlow) this.f39216a.get());
+        return c((MutableSharedFlow) this.f39232a.get());
     }
 }

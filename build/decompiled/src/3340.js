@@ -1,22 +1,22 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = function(arg0) { // Original name: isPrimitive, environment: var0
-        _fun28902: for (var _fun28902_ip = 0;;) switch (_fun28902_ip) {
+        _fun28903: for (var _fun28903_ip = 0;;) switch (_fun28903_ip) {
             case 0:
                 var1 = arg0;
                 var0 = null;
                 var0 = var0 === var1;
                 if (var0) {
-                    _fun28902_ip = 37;
-                    continue _fun28902
+                    _fun28903_ip = 37;
+                    continue _fun28903
                 }
             case 12:
                 var3 = typeof var1;
                 var1 = 'function';
                 var1 = var1 !== var3;
                 if (!var1) {
-                    _fun28902_ip = 34;
-                    continue _fun28902
+                    _fun28903_ip = 34;
+                    continue _fun28903
                 }
             case 26:
                 var2 = 'object';

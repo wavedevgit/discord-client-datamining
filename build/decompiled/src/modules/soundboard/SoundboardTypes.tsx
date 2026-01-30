@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.AnalyticsChangeType = var7;
     var2.AnalyticsSoundSource = var6;
     var6 = function(arg0, arg1) { // Original name: soundboardSoundFromAPI, environment: var5
-        _fun44009: for (var _fun44009_ip = 0;;) switch (_fun44009_ip) {
+        _fun44060: for (var _fun44060_ip = 0;;) switch (_fun44060_ip) {
             case 0:
                 var8 = arg0;
                 var7 = var8.sound_id;
@@ -147,8 +147,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0[var3] = var4;
                 var2 = var2 == var1;
                 if (var2) {
-                    _fun44009_ip = 137;
-                    continue _fun44009
+                    _fun44060_ip = 137;
+                    continue _fun44060
                 }
             case 134:
                 var2 = var1;

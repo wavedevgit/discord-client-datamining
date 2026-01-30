@@ -104,7 +104,7 @@ public final class t2 implements KSerializer {
         zs.a.b(buildClassSerialDescriptor, "first", t2Var.f6883a.getDescriptor(), null, false, 12, null);
         zs.a.b(buildClassSerialDescriptor, "second", t2Var.f6884b.getDescriptor(), null, false, 12, null);
         zs.a.b(buildClassSerialDescriptor, "third", t2Var.f6885c.getDescriptor(), null, false, 12, null);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

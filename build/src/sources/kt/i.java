@@ -6,7 +6,7 @@ import java.util.Locale;
 public interface i {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final i f36587a = new a();
+    public static final i f36603a = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static class a implements i {
@@ -37,7 +37,7 @@ public interface i {
 
         @Override // kt.i
         public j d(Locale locale) {
-            return j.f36588d;
+            return j.f36604d;
         }
 
         @Override // kt.i

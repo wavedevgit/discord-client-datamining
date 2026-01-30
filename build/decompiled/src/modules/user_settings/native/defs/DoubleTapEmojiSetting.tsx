@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var5;
     var8 = function() { // Original name: useDoubleTapDisabled, environment: var7
-        _fun88843: for (var _fun88843_ip = 0;;) switch (_fun88843_ip) {
+        _fun89080: for (var _fun89080_ip = 0;;) switch (_fun89080_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot2;
@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = new Array(1);
                 var2[0] = var0;
                 var0 = function() { // Environment: var0
-                    _fun88844: for (var _fun88844_ip = 0;;) switch (_fun88844_ip) {
+                    _fun89081: for (var _fun89081_ip = 0;;) switch (_fun89081_ip) {
                         case 0:
                             var0 = _closure1_slot4;
                             var0 = var0.settings;
@@ -31,15 +31,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var1 == var2;
                             var0 = undefined;
                             if (var3) {
-                                _fun88844_ip = 36;
-                                continue _fun88844
+                                _fun89081_ip = 36;
+                                continue _fun89081
                             }
                         case 30:
                             var0 = var2.defaultReactionEmoji;
                         case 36:
                             if (!(var1 == var0)) {
-                                _fun88844_ip = 42;
-                                continue _fun88844
+                                _fun89081_ip = 42;
+                                continue _fun89081
                             }
                         case 40:
                             var0 = {};
@@ -52,16 +52,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var3 = var0 == var2;
                 if (var3) {
-                    _fun88843_ip = 78;
-                    continue _fun88843
+                    _fun89080_ip = 78;
+                    continue _fun89080
                 }
             case 73:
                 var1 = var2.value;
             case 78:
                 var0 = var0 != var1;
                 if (!var0) {
-                    _fun88843_ip = 88;
-                    continue _fun88843
+                    _fun89080_ip = 88;
+                    continue _fun89080
                 }
             case 85:
                 var0 = var1;
@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var10 = var10.CHAT;
     var1.parent = var10;
     var10 = function() { // Original name: useDoubleTapEmojiSettingTrailing, environment: var7
-        _fun88846: for (var _fun88846_ip = 0;;) switch (_fun88846_ip) {
+        _fun89083: for (var _fun89083_ip = 0;;) switch (_fun89083_ip) {
             case 0:
                 var0 = _closure1_slot8;
                 var4 = undefined;
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = new Array(1);
                 var3[0] = var0;
                 var0 = function() { // Environment: var0
-                    _fun88847: for (var _fun88847_ip = 0;;) switch (_fun88847_ip) {
+                    _fun89084: for (var _fun89084_ip = 0;;) switch (_fun89084_ip) {
                         case 0:
                             var0 = _closure1_slot4;
                             var0 = var0.settings;
@@ -174,15 +174,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var1 == var2;
                             var0 = undefined;
                             if (var3) {
-                                _fun88847_ip = 36;
-                                continue _fun88847
+                                _fun89084_ip = 36;
+                                continue _fun89084
                             }
                         case 30:
                             var0 = var2.defaultReactionEmoji;
                         case 36:
                             if (!(var1 == var0)) {
-                                _fun88847_ip = 42;
-                                continue _fun88847
+                                _fun89084_ip = 42;
+                                continue _fun89084
                             }
                         case 40:
                             var0 = {};
@@ -198,19 +198,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.bind(var2)(var3);
                 var0 = null;
                 if (!(var0 != var7)) {
-                    _fun88846_ip = 271;
-                    continue _fun88846
+                    _fun89083_ip = 271;
+                    continue _fun89083
                 }
             case 98:
                 var2 = var7.id;
                 if (!(var0 == var2)) {
-                    _fun88846_ip = 114;
-                    continue _fun88846
+                    _fun89083_ip = 114;
+                    continue _fun89083
                 }
             case 107:
                 var6 = var7.url;
-                _fun88846_ip = 170;
-                continue _fun88846;
+                _fun89083_ip = 170;
+                continue _fun89083;
             case 114:
                 var3 = _closure1_slot1;
                 var8 = _closure1_slot2;
@@ -244,8 +244,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var0 == var6;
                 var6 = '';
                 if (!var8) {
-                    _fun88846_ip = 241;
-                    continue _fun88846
+                    _fun89083_ip = 241;
+                    continue _fun89083
                 }
             case 236:
                 var6 = var7.surrogates;
@@ -277,14 +277,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = _closure1_slot3;
         var5 = function*(arg0) { // Environment: var4
             var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                _fun88850: for (var _fun88850_ip = 0;;) switch (_fun88850_ip) {
+                _fun89087: for (var _fun89087_ip = 0;;) switch (_fun89087_ip) {
                     case 0:
                         StartGenerator();
                         var6 = arg0;
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun88850_ip = 246;
-                            continue _fun88850
+                            _fun89087_ip = 246;
+                            continue _fun89087
                         }
                     case 13:
                         var11 = _closure1_slot1;
@@ -332,8 +332,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 196:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 4);
                         if (var4) {
-                            _fun88850_ip = 243;
-                            continue _fun88850
+                            _fun89087_ip = 243;
+                            continue _fun89087
                         }
                     case 202:
                         var4 = _closure1_slot0;
@@ -375,7 +375,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.onPress = var10;
     var1.withArrow = var9;
     var9 = function() { // Original name: useDescription, environment: var7
-        _fun88852: for (var _fun88852_ip = 0;;) switch (_fun88852_ip) {
+        _fun89089: for (var _fun89089_ip = 0;;) switch (_fun89089_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var4 = _closure1_slot2;
@@ -388,7 +388,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = new Array(1);
                 var2[0] = var0;
                 var0 = function() { // Environment: var0
-                    _fun88853: for (var _fun88853_ip = 0;;) switch (_fun88853_ip) {
+                    _fun89090: for (var _fun89090_ip = 0;;) switch (_fun89090_ip) {
                         case 0:
                             var0 = _closure1_slot4;
                             var0 = var0.settings;
@@ -397,15 +397,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var1 == var2;
                             var0 = undefined;
                             if (var3) {
-                                _fun88853_ip = 36;
-                                continue _fun88853
+                                _fun89090_ip = 36;
+                                continue _fun89090
                             }
                         case 30:
                             var0 = var2.defaultReactionEmoji;
                         case 36:
                             if (!(var1 == var0)) {
-                                _fun88853_ip = 42;
-                                continue _fun88853
+                                _fun89090_ip = 42;
+                                continue _fun89090
                             }
                         case 40:
                             var0 = {};
@@ -422,8 +422,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var2 = var0 == var1;
                 if (var2) {
-                    _fun88852_ip = 118;
-                    continue _fun88852
+                    _fun89089_ip = 118;
+                    continue _fun89089
                 }
             case 90:
                 var3 = var1.name;
@@ -455,4 +455,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 1310, 6965, 660, 1616, 33, 1297, 671, 566, 6959, 1417, 5727, 6949, 795, 5536, 1348, 6968, 8939, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 1310, 6968, 660, 1616, 33, 1297, 671, 566, 6962, 1417, 5730, 6952, 795, 5540, 1348, 6971, 8943, 1234, 2]);

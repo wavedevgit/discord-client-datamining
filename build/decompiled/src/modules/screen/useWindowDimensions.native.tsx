@@ -41,34 +41,34 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/screen/useWindowDimensions.native.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function() { // Original name: useWindowDimensions, environment: var1
-        _fun16917: for (var _fun16917_ip = 0;;) switch (_fun16917_ip) {
+        _fun16918: for (var _fun16918_ip = 0;;) switch (_fun16918_ip) {
             case 0:
                 var0 = arguments[0];
                 var2 = undefined;
                 if (!(var0 === var2)) {
-                    _fun16917_ip = 16;
-                    continue _fun16917
+                    _fun16918_ip = 16;
+                    continue _fun16918
                 }
             case 9:
                 var0 = _closure1_slot1;
             case 16:
                 var0 = var0.ignoreKeyboard;
                 if (!(var0 === var2)) {
-                    _fun16917_ip = 28;
-                    continue _fun16917
+                    _fun16918_ip = 28;
+                    continue _fun16918
                 }
             case 26:
                 var0 = false;
             case 28:
                 var1 = _closure1_slot0;
                 if (var0) {
-                    _fun16917_ip = 44;
-                    continue _fun16917
+                    _fun16918_ip = 44;
+                    continue _fun16918
                 }
             case 38:
                 var0 = _closure1_slot2;
-                _fun16917_ip = 48;
-                continue _fun16917;
+                _fun16918_ip = 48;
+                continue _fun16918;
             case 44:
                 var0 = _closure1_slot3;
             case 48:
@@ -78,21 +78,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var1 = function() { // Original name: getWindowDimensions, environment: var1
-        _fun16918: for (var _fun16918_ip = 0;;) switch (_fun16918_ip) {
+        _fun16919: for (var _fun16919_ip = 0;;) switch (_fun16919_ip) {
             case 0:
                 var0 = arguments[0];
                 var1 = undefined;
                 if (!(var0 === var1)) {
-                    _fun16918_ip = 16;
-                    continue _fun16918
+                    _fun16919_ip = 16;
+                    continue _fun16919
                 }
             case 9:
                 var0 = _closure1_slot1;
             case 16:
                 var0 = var0.ignoreKeyboard;
                 if (!(var0 === var1)) {
-                    _fun16918_ip = 28;
-                    continue _fun16918
+                    _fun16919_ip = 28;
+                    continue _fun16919
                 }
             case 26:
                 var0 = false;
@@ -101,13 +101,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.getState;
                 var1 = var1.bind(var2)();
                 if (var0) {
-                    _fun16918_ip = 56;
-                    continue _fun16918
+                    _fun16919_ip = 56;
+                    continue _fun16919
                 }
             case 48:
                 var0 = var1.windowDimensions;
-                _fun16918_ip = 62;
-                continue _fun16918;
+                _fun16919_ip = 62;
+                continue _fun16919;
             case 56:
                 var0 = var1.windowDimensionsIgnoringKeyboard;
             case 62:

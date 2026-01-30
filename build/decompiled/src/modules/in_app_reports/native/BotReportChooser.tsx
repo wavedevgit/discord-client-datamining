@@ -184,13 +184,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = var8.bind(var3)(var7, var6);
         var0.subLabel = var6;
         var4 = function() { // Original name: onPress, environment: var4
-            _fun92269: for (var _fun92269_ip = 0;;) switch (_fun92269_ip) {
+            _fun92506: for (var _fun92506_ip = 0;;) switch (_fun92506_ip) {
                 case 0:
                     var1 = _closure2_slot6;
                     var0 = null;
                     if (!(var0 != var1)) {
-                        _fun92269_ip = 138;
-                        continue _fun92269
+                        _fun92506_ip = 138;
+                        continue _fun92506
                     }
                 case 16:
                     var5 = _closure1_slot1;
@@ -337,4 +337,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.BOT_REPORT_CHOOSER_KEY = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3413, 33, 5164, 3895, 1234, 7692, 3237, 6451, 566, 5301, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3413, 33, 5170, 3901, 1234, 7695, 3237, 6454, 566, 5305, 2]);

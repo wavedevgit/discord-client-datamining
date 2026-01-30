@@ -12,29 +12,29 @@ public enum j implements jt.i {
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f40681a;
+        static final /* synthetic */ int[] f40697a;
 
         static {
             int[] iArr = new int[j.values().length];
-            f40681a = iArr;
+            f40697a = iArr;
             try {
                 iArr[j.BC.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f40681a[j.AD.ordinal()] = 2;
+                f40697a[j.AD.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f40681a[j.HISPANIC.ordinal()] = 3;
+                f40697a[j.HISPANIC.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f40681a[j.BYZANTINE.ordinal()] = 4;
+                f40697a[j.BYZANTINE.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f40681a[j.AB_URBE_CONDITA.ordinal()] = 5;
+                f40697a[j.AB_URBE_CONDITA.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
         }
@@ -42,7 +42,7 @@ public enum j implements jt.i {
 
     public int a(int i10) {
         try {
-            int i11 = a.f40681a[ordinal()];
+            int i11 = a.f40697a[ordinal()];
             if (i11 != 1) {
                 if (i11 != 2) {
                     if (i11 != 3) {
@@ -68,7 +68,7 @@ public enum j implements jt.i {
     public int d(j jVar, int i10) {
         int a10 = jVar.a(i10);
         try {
-            int i11 = a.f40681a[ordinal()];
+            int i11 = a.f40697a[ordinal()];
             if (i11 != 1) {
                 if (i11 != 2) {
                     if (i11 != 3) {

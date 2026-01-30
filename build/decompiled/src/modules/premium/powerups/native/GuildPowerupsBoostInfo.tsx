@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/powerups/native/GuildPowerupsBoostInfo.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: GuildPowerupsBoostInfo, environment: var1
-        _fun102710: for (var _fun102710_ip = 0;;) switch (_fun102710_ip) {
+        _fun102964: for (var _fun102964_ip = 0;;) switch (_fun102964_ip) {
             case 0:
                 var0 = arg0;
                 var11 = var0.count;
@@ -96,8 +96,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = _closure1_slot4;
                 var9 = var9.AVAILABLE;
                 if (!(var10 !== var9)) {
-                    _fun102710_ip = 145;
-                    continue _fun102710
+                    _fun102964_ip = 145;
+                    continue _fun102964
                 }
             case 112:
                 var12 = _closure1_slot1;
@@ -107,8 +107,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var12.bind(var3)(var9);
                 var9 = var9.colors;
                 var9 = var9.TEXT_MUTED;
-                _fun102710_ip = 176;
-                continue _fun102710;
+                _fun102964_ip = 176;
+                continue _fun102964;
             case 145:
                 var13 = _closure1_slot1;
                 var14 = _closure1_slot2;
@@ -136,8 +136,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var13.AVAILABLE;
                 var13 = 'text-subtle';
                 if (!(var10 === var14)) {
-                    _fun102710_ip = 261;
-                    continue _fun102710
+                    _fun102964_ip = 261;
+                    continue _fun102964
                 }
             case 255:
                 var13 = 'text-strong';
@@ -175,4 +175,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 6675, 33, 1297, 671, 7638, 3895, 13346, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 6678, 33, 1297, 671, 7641, 3901, 13371, 2]);

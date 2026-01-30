@@ -14,58 +14,58 @@ import okio.ByteString;
 public final class MultipartBody extends RequestBody {
 
     /* renamed from: f  reason: collision with root package name */
-    public static final a f44076f = new a(null);
+    public static final a f44092f = new a(null);
 
     /* renamed from: g  reason: collision with root package name */
-    public static final MediaType f44077g;
+    public static final MediaType f44093g;
 
     /* renamed from: h  reason: collision with root package name */
-    public static final MediaType f44078h;
+    public static final MediaType f44094h;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final MediaType f44079i;
+    public static final MediaType f44095i;
 
     /* renamed from: j  reason: collision with root package name */
-    public static final MediaType f44080j;
+    public static final MediaType f44096j;
 
     /* renamed from: k  reason: collision with root package name */
-    public static final MediaType f44081k;
+    public static final MediaType f44097k;
 
     /* renamed from: l  reason: collision with root package name */
-    private static final byte[] f44082l;
+    private static final byte[] f44098l;
 
     /* renamed from: m  reason: collision with root package name */
-    private static final byte[] f44083m;
+    private static final byte[] f44099m;
 
     /* renamed from: n  reason: collision with root package name */
-    private static final byte[] f44084n;
+    private static final byte[] f44100n;
 
     /* renamed from: a  reason: collision with root package name */
-    private final ByteString f44085a;
+    private final ByteString f44101a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final MediaType f44086b;
+    private final MediaType f44102b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final List f44087c;
+    private final List f44103c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final MediaType f44088d;
+    private final MediaType f44104d;
 
     /* renamed from: e  reason: collision with root package name */
-    private long f44089e;
+    private long f44105e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Builder {
 
         /* renamed from: a  reason: collision with root package name */
-        private final ByteString f44090a;
+        private final ByteString f44106a;
 
         /* renamed from: b  reason: collision with root package name */
-        private MediaType f44091b;
+        private MediaType f44107b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final List f44092c;
+        private final List f44108c;
 
         public Builder() {
             this(null, 1, null);
@@ -74,25 +74,25 @@ public final class MultipartBody extends RequestBody {
         public final Builder a(String name, String value) {
             Intrinsics.checkNotNullParameter(name, "name");
             Intrinsics.checkNotNullParameter(value, "value");
-            c(b.f44093c.b(name, value));
+            c(b.f44109c.b(name, value));
             return this;
         }
 
         public final Builder b(Headers headers, RequestBody body) {
             Intrinsics.checkNotNullParameter(body, "body");
-            c(b.f44093c.a(headers, body));
+            c(b.f44109c.a(headers, body));
             return this;
         }
 
         public final Builder c(b part) {
             Intrinsics.checkNotNullParameter(part, "part");
-            this.f44092c.add(part);
+            this.f44108c.add(part);
             return this;
         }
 
         public final MultipartBody d() {
-            if (!this.f44092c.isEmpty()) {
-                return new MultipartBody(this.f44090a, this.f44091b, ut.e.V(this.f44092c));
+            if (!this.f44108c.isEmpty()) {
+                return new MultipartBody(this.f44106a, this.f44107b, ut.e.V(this.f44108c));
             }
             throw new IllegalStateException("Multipart body must have at least one part.");
         }
@@ -100,7 +100,7 @@ public final class MultipartBody extends RequestBody {
         public final Builder e(MediaType type) {
             Intrinsics.checkNotNullParameter(type, "type");
             if (Intrinsics.areEqual(type.h(), "multipart")) {
-                this.f44091b = type;
+                this.f44107b = type;
                 return this;
             }
             throw new IllegalArgumentException(("multipart != " + type).toString());
@@ -108,9 +108,9 @@ public final class MultipartBody extends RequestBody {
 
         public Builder(String boundary) {
             Intrinsics.checkNotNullParameter(boundary, "boundary");
-            this.f44090a = ByteString.f44363o.g(boundary);
-            this.f44091b = MultipartBody.f44077g;
-            this.f44092c = new ArrayList();
+            this.f44106a = ByteString.f44379o.g(boundary);
+            this.f44107b = MultipartBody.f44093g;
+            this.f44108c = new ArrayList();
         }
 
         /* JADX WARN: Illegal instructions before constructor call */
@@ -169,13 +169,13 @@ public final class MultipartBody extends RequestBody {
     public static final class b {
 
         /* renamed from: c  reason: collision with root package name */
-        public static final a f44093c = new a(null);
+        public static final a f44109c = new a(null);
 
         /* renamed from: a  reason: collision with root package name */
-        private final Headers f44094a;
+        private final Headers f44110a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final RequestBody f44095b;
+        private final RequestBody f44111b;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class a {
@@ -217,7 +217,7 @@ public final class MultipartBody extends RequestBody {
                 Intrinsics.checkNotNullParameter(body, "body");
                 StringBuilder sb2 = new StringBuilder();
                 sb2.append("form-data; name=");
-                a aVar = MultipartBody.f44076f;
+                a aVar = MultipartBody.f44092f;
                 aVar.a(sb2, name);
                 if (str != null) {
                     sb2.append("; filename=");
@@ -237,41 +237,41 @@ public final class MultipartBody extends RequestBody {
         }
 
         public final RequestBody a() {
-            return this.f44095b;
+            return this.f44111b;
         }
 
         public final Headers b() {
-            return this.f44094a;
+            return this.f44110a;
         }
 
         private b(Headers headers, RequestBody requestBody) {
-            this.f44094a = headers;
-            this.f44095b = requestBody;
+            this.f44110a = headers;
+            this.f44111b = requestBody;
         }
     }
 
     static {
-        MediaType.a aVar = MediaType.f44069e;
-        f44077g = aVar.b("multipart/mixed");
-        f44078h = aVar.b("multipart/alternative");
-        f44079i = aVar.b("multipart/digest");
-        f44080j = aVar.b("multipart/parallel");
-        f44081k = aVar.b("multipart/form-data");
-        f44082l = new byte[]{58, 32};
-        f44083m = new byte[]{13, 10};
-        f44084n = new byte[]{45, 45};
+        MediaType.a aVar = MediaType.f44085e;
+        f44093g = aVar.b("multipart/mixed");
+        f44094h = aVar.b("multipart/alternative");
+        f44095i = aVar.b("multipart/digest");
+        f44096j = aVar.b("multipart/parallel");
+        f44097k = aVar.b("multipart/form-data");
+        f44098l = new byte[]{58, 32};
+        f44099m = new byte[]{13, 10};
+        f44100n = new byte[]{45, 45};
     }
 
     public MultipartBody(ByteString boundaryByteString, MediaType type, List parts) {
         Intrinsics.checkNotNullParameter(boundaryByteString, "boundaryByteString");
         Intrinsics.checkNotNullParameter(type, "type");
         Intrinsics.checkNotNullParameter(parts, "parts");
-        this.f44085a = boundaryByteString;
-        this.f44086b = type;
-        this.f44087c = parts;
-        MediaType.a aVar = MediaType.f44069e;
-        this.f44088d = aVar.b(type + "; boundary=" + a());
-        this.f44089e = -1L;
+        this.f44101a = boundaryByteString;
+        this.f44102b = type;
+        this.f44103c = parts;
+        MediaType.a aVar = MediaType.f44085e;
+        this.f44104d = aVar.b(type + "; boundary=" + a());
+        this.f44105e = -1L;
     }
 
     /* JADX WARN: Multi-variable type inference failed */
@@ -283,35 +283,35 @@ public final class MultipartBody extends RequestBody {
         } else {
             buffer = 0;
         }
-        int size = this.f44087c.size();
+        int size = this.f44103c.size();
         long j10 = 0;
         for (int i10 = 0; i10 < size; i10++) {
-            b bVar = (b) this.f44087c.get(i10);
+            b bVar = (b) this.f44103c.get(i10);
             Headers b10 = bVar.b();
             RequestBody a10 = bVar.a();
             Intrinsics.checkNotNull(bufferedSink);
-            bufferedSink.write(f44084n);
-            bufferedSink.a2(this.f44085a);
-            bufferedSink.write(f44083m);
+            bufferedSink.write(f44100n);
+            bufferedSink.a2(this.f44101a);
+            bufferedSink.write(f44099m);
             if (b10 != null) {
                 int size2 = b10.size();
                 for (int i11 = 0; i11 < size2; i11++) {
-                    bufferedSink.n0(b10.e(i11)).write(f44082l).n0(b10.j(i11)).write(f44083m);
+                    bufferedSink.n0(b10.e(i11)).write(f44098l).n0(b10.j(i11)).write(f44099m);
                 }
             }
             MediaType contentType = a10.contentType();
             if (contentType != null) {
-                bufferedSink.n0("Content-Type: ").n0(contentType.toString()).write(f44083m);
+                bufferedSink.n0("Content-Type: ").n0(contentType.toString()).write(f44099m);
             }
             long contentLength = a10.contentLength();
             if (contentLength != -1) {
-                bufferedSink.n0("Content-Length: ").V0(contentLength).write(f44083m);
+                bufferedSink.n0("Content-Length: ").V0(contentLength).write(f44099m);
             } else if (z10) {
                 Intrinsics.checkNotNull(buffer);
                 buffer.l();
                 return -1L;
             }
-            byte[] bArr = f44083m;
+            byte[] bArr = f44099m;
             bufferedSink.write(bArr);
             if (z10) {
                 j10 += contentLength;
@@ -321,11 +321,11 @@ public final class MultipartBody extends RequestBody {
             bufferedSink.write(bArr);
         }
         Intrinsics.checkNotNull(bufferedSink);
-        byte[] bArr2 = f44084n;
+        byte[] bArr2 = f44100n;
         bufferedSink.write(bArr2);
-        bufferedSink.a2(this.f44085a);
+        bufferedSink.a2(this.f44101a);
         bufferedSink.write(bArr2);
-        bufferedSink.write(f44083m);
+        bufferedSink.write(f44099m);
         if (z10) {
             Intrinsics.checkNotNull(buffer);
             long size3 = j10 + buffer.size();
@@ -336,19 +336,19 @@ public final class MultipartBody extends RequestBody {
     }
 
     public final String a() {
-        return this.f44085a.M();
+        return this.f44101a.M();
     }
 
     public final List b() {
-        return this.f44087c;
+        return this.f44103c;
     }
 
     @Override // okhttp3.RequestBody
     public long contentLength() {
-        long j10 = this.f44089e;
+        long j10 = this.f44105e;
         if (j10 == -1) {
             long c10 = c(null, true);
-            this.f44089e = c10;
+            this.f44105e = c10;
             return c10;
         }
         return j10;
@@ -356,7 +356,7 @@ public final class MultipartBody extends RequestBody {
 
     @Override // okhttp3.RequestBody
     public MediaType contentType() {
-        return this.f44088d;
+        return this.f44104d;
     }
 
     @Override // okhttp3.RequestBody

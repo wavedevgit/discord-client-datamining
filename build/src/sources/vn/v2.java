@@ -23,16 +23,16 @@ import vn.v2;
 public final class v2 implements tm.o<c> {
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f51662b;
+    private final String f51678b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Context f51663c;
+    private final Context f51679c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final op.c f51664d;
+    private final op.c f51680d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Function0 f51665e;
+    private final Function0 f51681e;
 
     /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
     /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
@@ -40,28 +40,28 @@ public final class v2 implements tm.o<c> {
     public static final class a {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f51666d = new a("FileNotFound", 0);
+        public static final a f51682d = new a("FileNotFound", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final a f51667e = new a("PermissionDenied", 1);
+        public static final a f51683e = new a("PermissionDenied", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        private static final /* synthetic */ a[] f51668i;
+        private static final /* synthetic */ a[] f51684i;
 
         /* renamed from: o  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f51669o;
+        private static final /* synthetic */ EnumEntries f51685o;
 
         static {
             a[] a10 = a();
-            f51668i = a10;
-            f51669o = pr.a.a(a10);
+            f51684i = a10;
+            f51685o = pr.a.a(a10);
         }
 
         private a(String str, int i10) {
         }
 
         private static final /* synthetic */ a[] a() {
-            return new a[]{f51666d, f51667e};
+            return new a[]{f51682d, f51683e};
         }
 
         public static a valueOf(String str) {
@@ -69,7 +69,7 @@ public final class v2 implements tm.o<c> {
         }
 
         public static a[] values() {
-            return (a[]) f51668i.clone();
+            return (a[]) f51684i.clone();
         }
     }
 
@@ -77,42 +77,42 @@ public final class v2 implements tm.o<c> {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final ActivityResultLauncher f51670a;
+        private final ActivityResultLauncher f51686a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final ActivityResultLauncher f51671b;
+        private final ActivityResultLauncher f51687b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Context f51672c;
+        private final Context f51688c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final op.c f51673d;
+        private final op.c f51689d;
 
         public b(ActivityResultLauncher openDocumentLauncher, ActivityResultLauncher selectFromPhotoLibraryLauncher, Context context, op.c sdkFilesManager) {
             Intrinsics.checkNotNullParameter(openDocumentLauncher, "openDocumentLauncher");
             Intrinsics.checkNotNullParameter(selectFromPhotoLibraryLauncher, "selectFromPhotoLibraryLauncher");
             Intrinsics.checkNotNullParameter(context, "context");
             Intrinsics.checkNotNullParameter(sdkFilesManager, "sdkFilesManager");
-            this.f51670a = openDocumentLauncher;
-            this.f51671b = selectFromPhotoLibraryLauncher;
-            this.f51672c = context;
-            this.f51673d = sdkFilesManager;
+            this.f51686a = openDocumentLauncher;
+            this.f51687b = selectFromPhotoLibraryLauncher;
+            this.f51688c = context;
+            this.f51689d = sdkFilesManager;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final Unit d(b bVar) {
-            bVar.f51670a.b(new String[]{"image/*", "application/pdf"});
-            return Unit.f33282a;
+            bVar.f51686a.b(new String[]{"image/*", "application/pdf"});
+            return Unit.f33298a;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final Unit f(b bVar) {
-            bVar.f51671b.b(d.g.b(e.d.f888a, 0, false, null, 14, null));
-            return Unit.f33282a;
+            bVar.f51687b.b(d.g.b(e.d.f888a, 0, false, null, 14, null));
+            return Unit.f33298a;
         }
 
         public final v2 c() {
-            return new v2("DocumentPicker", this.f51672c, this.f51673d, new Function0() { // from class: vn.w2
+            return new v2("DocumentPicker", this.f51688c, this.f51689d, new Function0() { // from class: vn.w2
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Unit d10;
@@ -123,7 +123,7 @@ public final class v2 implements tm.o<c> {
         }
 
         public final v2 e() {
-            return new v2("PhotoLibraryPicker", this.f51672c, this.f51673d, new Function0() { // from class: vn.x2
+            return new v2("PhotoLibraryPicker", this.f51688c, this.f51689d, new Function0() { // from class: vn.x2
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
                     Unit f10;
@@ -141,7 +141,7 @@ public final class v2 implements tm.o<c> {
         public static final class a extends c {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final a f51674a = new a();
+            public static final a f51690a = new a();
 
             private a() {
                 super(null);
@@ -152,22 +152,22 @@ public final class v2 implements tm.o<c> {
         public static final class b extends c {
 
             /* renamed from: a  reason: collision with root package name */
-            private final List f51675a;
+            private final List f51691a;
 
             /* renamed from: b  reason: collision with root package name */
-            private final a f51676b;
+            private final a f51692b;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public b(List absoluteFilePaths, a reason) {
                 super(null);
                 Intrinsics.checkNotNullParameter(absoluteFilePaths, "absoluteFilePaths");
                 Intrinsics.checkNotNullParameter(reason, "reason");
-                this.f51675a = absoluteFilePaths;
-                this.f51676b = reason;
+                this.f51691a = absoluteFilePaths;
+                this.f51692b = reason;
             }
 
             public final List a() {
-                return this.f51675a;
+                return this.f51691a;
             }
 
             public boolean equals(Object obj) {
@@ -178,19 +178,19 @@ public final class v2 implements tm.o<c> {
                     return false;
                 }
                 b bVar = (b) obj;
-                if (Intrinsics.areEqual(this.f51675a, bVar.f51675a) && this.f51676b == bVar.f51676b) {
+                if (Intrinsics.areEqual(this.f51691a, bVar.f51691a) && this.f51692b == bVar.f51692b) {
                     return true;
                 }
                 return false;
             }
 
             public int hashCode() {
-                return (this.f51675a.hashCode() * 31) + this.f51676b.hashCode();
+                return (this.f51691a.hashCode() * 31) + this.f51692b.hashCode();
             }
 
             public String toString() {
-                List list = this.f51675a;
-                a aVar = this.f51676b;
+                List list = this.f51691a;
+                a aVar = this.f51692b;
                 return "Failure(absoluteFilePaths=" + list + ", reason=" + aVar + ")";
             }
         }
@@ -200,35 +200,35 @@ public final class v2 implements tm.o<c> {
         public static final class C0700c extends c {
 
             /* renamed from: a  reason: collision with root package name */
-            private final List f51677a;
+            private final List f51693a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public C0700c(List absoluteFilePaths) {
                 super(null);
                 Intrinsics.checkNotNullParameter(absoluteFilePaths, "absoluteFilePaths");
-                this.f51677a = absoluteFilePaths;
+                this.f51693a = absoluteFilePaths;
             }
 
             public final List a() {
-                return this.f51677a;
+                return this.f51693a;
             }
 
             public boolean equals(Object obj) {
                 if (this == obj) {
                     return true;
                 }
-                if ((obj instanceof C0700c) && Intrinsics.areEqual(this.f51677a, ((C0700c) obj).f51677a)) {
+                if ((obj instanceof C0700c) && Intrinsics.areEqual(this.f51693a, ((C0700c) obj).f51693a)) {
                     return true;
                 }
                 return false;
             }
 
             public int hashCode() {
-                return this.f51677a.hashCode();
+                return this.f51693a.hashCode();
             }
 
             public String toString() {
-                List list = this.f51677a;
+                List list = this.f51693a;
                 return "Success(absoluteFilePaths=" + list + ")";
             }
         }
@@ -245,46 +245,46 @@ public final class v2 implements tm.o<c> {
     static final class d extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f51678d;
+        int f51694d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f51679e;
+        private /* synthetic */ Object f51695e;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f51681d;
+            int f51697d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ v2 f51682e;
+            final /* synthetic */ v2 f51698e;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             a(v2 v2Var, Continuation continuation) {
                 super(2, continuation);
-                this.f51682e = v2Var;
+                this.f51698e = v2Var;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                return new a(this.f51682e, continuation);
+                return new a(this.f51698e, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 or.b.f();
-                if (this.f51681d == 0) {
+                if (this.f51697d == 0) {
                     kotlin.c.b(obj);
-                    this.f51682e.f51665e.invoke();
-                    return Unit.f33282a;
+                    this.f51698e.f51681e.invoke();
+                    return Unit.f33298a;
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
             }
         }
 
@@ -293,24 +293,24 @@ public final class v2 implements tm.o<c> {
         public static final class b implements FlowCollector {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ v2 f51683d;
+            final /* synthetic */ v2 f51699d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ FlowCollector f51684e;
+            final /* synthetic */ FlowCollector f51700e;
 
             b(v2 v2Var, FlowCollector flowCollector) {
-                this.f51683d = v2Var;
-                this.f51684e = flowCollector;
+                this.f51699d = v2Var;
+                this.f51700e = flowCollector;
             }
 
             @Override // kotlinx.coroutines.flow.FlowCollector
             /* renamed from: a */
             public final Object emit(List list, Continuation continuation) {
-                Object d10 = this.f51683d.d(this.f51684e, list, continuation);
+                Object d10 = this.f51699d.d(this.f51700e, list, continuation);
                 if (d10 == or.b.f()) {
                     return d10;
                 }
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
         }
 
@@ -319,7 +319,7 @@ public final class v2 implements tm.o<c> {
         public static final class c extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f51685d;
+            int f51701d;
 
             c(Continuation continuation) {
                 super(2, continuation);
@@ -333,7 +333,7 @@ public final class v2 implements tm.o<c> {
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 Object f10 = or.b.f();
-                int i10 = this.f51685d;
+                int i10 = this.f51701d;
                 if (i10 != 0) {
                     if (i10 == 1) {
                         kotlin.c.b(obj);
@@ -343,7 +343,7 @@ public final class v2 implements tm.o<c> {
                 }
                 kotlin.c.b(obj);
                 uo.t tVar = new uo.t();
-                this.f51685d = 1;
+                this.f51701d = 1;
                 Object u10 = js.g.u(tVar, this);
                 if (u10 == f10) {
                     return f10;
@@ -353,7 +353,7 @@ public final class v2 implements tm.o<c> {
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+                return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
             }
         }
 
@@ -364,7 +364,7 @@ public final class v2 implements tm.o<c> {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             d dVar = new d(continuation);
-            dVar.f51679e = obj;
+            dVar.f51695e = obj;
             return dVar;
         }
 
@@ -386,7 +386,7 @@ public final class v2 implements tm.o<c> {
             /*
                 r10 = this;
                 java.lang.Object r0 = or.b.f()
-                int r1 = r10.f51678d
+                int r1 = r10.f51694d
                 r2 = 4
                 r3 = 3
                 r4 = 2
@@ -405,7 +405,7 @@ public final class v2 implements tm.o<c> {
                 kotlin.c.b(r11)
                 goto L93
             L22:
-                java.lang.Object r1 = r10.f51679e
+                java.lang.Object r1 = r10.f51695e
                 kotlinx.coroutines.flow.FlowCollector r1 = (kotlinx.coroutines.flow.FlowCollector) r1
                 kotlin.c.b(r11)
                 goto L7c
@@ -413,18 +413,18 @@ public final class v2 implements tm.o<c> {
                 kotlin.c.b(r11)
                 goto L63
             L2e:
-                java.lang.Object r1 = r10.f51679e
+                java.lang.Object r1 = r10.f51695e
                 kotlinx.coroutines.flow.FlowCollector r1 = (kotlinx.coroutines.flow.FlowCollector) r1
                 kotlin.c.b(r11)
                 goto L52
             L36:
                 kotlin.c.b(r11)
-                java.lang.Object r11 = r10.f51679e
+                java.lang.Object r11 = r10.f51695e
                 kotlinx.coroutines.flow.FlowCollector r11 = (kotlinx.coroutines.flow.FlowCollector) r11
                 vn.v2$d$c r1 = new vn.v2$d$c
                 r1.<init>(r6)
-                r10.f51679e = r11
-                r10.f51678d = r5
+                r10.f51695e = r11
+                r10.f51694d = r5
                 r7 = 100
                 java.lang.Object r1 = gs.t1.d(r7, r1, r10)
                 if (r1 != r0) goto L4f
@@ -437,21 +437,21 @@ public final class v2 implements tm.o<c> {
                 java.util.List r11 = (java.util.List) r11
                 if (r11 == 0) goto L66
                 vn.v2 r2 = vn.v2.this
-                r10.f51679e = r6
-                r10.f51678d = r4
+                r10.f51695e = r6
+                r10.f51694d = r4
                 java.lang.Object r11 = vn.v2.c(r2, r1, r11, r10)
                 if (r11 != r0) goto L63
                 goto L92
             L63:
-                kotlin.Unit r11 = kotlin.Unit.f33282a
+                kotlin.Unit r11 = kotlin.Unit.f33298a
                 return r11
             L66:
                 gs.c1 r11 = gs.m0.c()
                 vn.v2$d$a r4 = new vn.v2$d$a
                 vn.v2 r5 = vn.v2.this
                 r4.<init>(r5, r6)
-                r10.f51679e = r1
-                r10.f51678d = r3
+                r10.f51695e = r1
+                r10.f51694d = r3
                 java.lang.Object r11 = gs.g.g(r11, r4, r10)
                 if (r11 != r0) goto L7c
                 goto L92
@@ -461,8 +461,8 @@ public final class v2 implements tm.o<c> {
                 vn.v2$d$b r3 = new vn.v2$d$b
                 vn.v2 r4 = vn.v2.this
                 r3.<init>(r4, r1)
-                r10.f51679e = r6
-                r10.f51678d = r2
+                r10.f51695e = r6
+                r10.f51694d = r2
                 java.lang.Object r11 = r11.collect(r3, r10)
                 if (r11 != r0) goto L93
             L92:
@@ -477,7 +477,7 @@ public final class v2 implements tm.o<c> {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((d) create(flowCollector, continuation)).invokeSuspend(Unit.f33282a);
+            return ((d) create(flowCollector, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -486,10 +486,10 @@ public final class v2 implements tm.o<c> {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(sdkFilesManager, "sdkFilesManager");
         Intrinsics.checkNotNullParameter(launchPicker, "launchPicker");
-        this.f51662b = key;
-        this.f51663c = context;
-        this.f51664d = sdkFilesManager;
-        this.f51665e = launchPicker;
+        this.f51678b = key;
+        this.f51679c = context;
+        this.f51680d = sdkFilesManager;
+        this.f51681e = launchPicker;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -503,17 +503,17 @@ public final class v2 implements tm.o<c> {
         /*
             r10 = this;
             android.webkit.MimeTypeMap r0 = android.webkit.MimeTypeMap.getSingleton()
-            android.content.Context r1 = r10.f51663c
+            android.content.Context r1 = r10.f51679c
             android.content.ContentResolver r1 = r1.getContentResolver()
             boolean r2 = r12.isEmpty()
             if (r2 == 0) goto L20
-            vn.v2$c$a r12 = vn.v2.c.a.f51674a
+            vn.v2$c$a r12 = vn.v2.c.a.f51690a
             java.lang.Object r11 = r11.emit(r12, r13)
             java.lang.Object r12 = or.b.f()
             if (r11 != r12) goto L1d
             return r11
         L1d:
-            kotlin.Unit r11 = kotlin.Unit.f33282a
+            kotlin.Unit r11 = kotlin.Unit.f33298a
             return r11
         L20:
             java.lang.Iterable r12 = (java.lang.Iterable) r12
@@ -529,7 +529,7 @@ public final class v2 implements tm.o<c> {
             android.net.Uri r5 = (android.net.Uri) r5
             java.lang.String r6 = r1.getType(r5)     // Catch: java.lang.SecurityException -> L7b java.io.FileNotFoundException -> L7f
             java.lang.String r6 = r0.getExtensionFromMimeType(r6)     // Catch: java.lang.SecurityException -> L7b java.io.FileNotFoundException -> L7f
-            op.c r7 = r10.f51664d     // Catch: java.lang.SecurityException -> L7b java.io.FileNotFoundException -> L7f
+            op.c r7 = r10.f51680d     // Catch: java.lang.SecurityException -> L7b java.io.FileNotFoundException -> L7f
             if (r6 != 0) goto L47
             java.lang.String r6 = "jpg"
         L47:
@@ -566,12 +566,12 @@ public final class v2 implements tm.o<c> {
             r4.<init>()     // Catch: java.lang.SecurityException -> L7b java.io.FileNotFoundException -> L7f
             throw r4     // Catch: java.lang.SecurityException -> L7b java.io.FileNotFoundException -> L7f
         L7b:
-            vn.v2$a r4 = vn.v2.a.f51667e
+            vn.v2$a r4 = vn.v2.a.f51683e
         L7d:
             r5 = r3
             goto L82
         L7f:
-            vn.v2$a r4 = vn.v2.a.f51666d
+            vn.v2$a r4 = vn.v2.a.f51682d
             goto L7d
         L82:
             if (r5 == 0) goto L2d
@@ -593,7 +593,7 @@ public final class v2 implements tm.o<c> {
             if (r11 != r12) goto Laa
             return r11
         Laa:
-            kotlin.Unit r11 = kotlin.Unit.f33282a
+            kotlin.Unit r11 = kotlin.Unit.f33298a
             return r11
         */
         throw new UnsupportedOperationException("Method not decompiled: vn.v2.d(kotlinx.coroutines.flow.FlowCollector, java.util.List, kotlin.coroutines.Continuation):java.lang.Object");
@@ -602,7 +602,7 @@ public final class v2 implements tm.o<c> {
     @Override // tm.o
     public boolean a(tm.o otherWorker) {
         Intrinsics.checkNotNullParameter(otherWorker, "otherWorker");
-        if ((otherWorker instanceof v2) && Intrinsics.areEqual(this.f51662b, ((v2) otherWorker).f51662b)) {
+        if ((otherWorker instanceof v2) && Intrinsics.areEqual(this.f51678b, ((v2) otherWorker).f51678b)) {
             return true;
         }
         return false;

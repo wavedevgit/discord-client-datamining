@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_scheduled_events/native/components/EditGuildEventModalNavbar.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: EditGuildEventModalNavbar, environment: var1
-        _fun65265: for (var _fun65265_ip = 0;;) switch (_fun65265_ip) {
+        _fun65309: for (var _fun65309_ip = 0;;) switch (_fun65309_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.screen;
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.EditGuildEventScreens;
                 var0 = var0.CHANNEL_SELECTOR;
                 if (!(var0 !== var2)) {
-                    _fun65265_ip = 192;
-                    continue _fun65265
+                    _fun65309_ip = 192;
+                    continue _fun65309
                 }
             case 67:
                 var1 = _closure1_slot0;
@@ -98,8 +98,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.EditGuildEventScreens;
                 var0 = var0.DETAILS;
                 if (!(var0 !== var2)) {
-                    _fun65265_ip = 180;
-                    continue _fun65265
+                    _fun65309_ip = 180;
+                    continue _fun65309
                 }
             case 100:
                 var1 = _closure1_slot0;
@@ -109,8 +109,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.EditGuildEventScreens;
                 var0 = var0.PREVIEW;
                 if (!(var0 !== var2)) {
-                    _fun65265_ip = 168;
-                    continue _fun65265
+                    _fun65309_ip = 168;
+                    continue _fun65309
                 }
             case 133:
                 var1 = _closure1_slot0;
@@ -121,16 +121,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.assertNever;
                 var0 = var0.bind(var1)(var2);
                 var2 = undefined;
-                _fun65265_ip = 202;
-                continue _fun65265;
+                _fun65309_ip = 202;
+                continue _fun65309;
             case 168:
                 var2 = [3, 3];
-                _fun65265_ip = 202;
-                continue _fun65265;
+                _fun65309_ip = 202;
+                continue _fun65309;
             case 180:
                 var2 = [2, 3];
-                _fun65265_ip = 202;
-                continue _fun65265;
+                _fun65309_ip = 202;
+                continue _fun65309;
             case 192:
                 var2 = [1, 3];
             case 202:
@@ -225,4 +225,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 8061, 1304, 4690, 3895, 1234, 5279, 5280, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 8064, 1304, 4696, 3901, 1234, 5283, 5284, 2]);

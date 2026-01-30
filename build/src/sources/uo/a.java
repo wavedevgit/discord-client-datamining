@@ -5,23 +5,23 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final androidx.browser.customtabs.b f50496a;
+    private final androidx.browser.customtabs.b f50512a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f50497b;
+    private final String f50513b;
 
     public a(androidx.browser.customtabs.b intent, String url) {
         Intrinsics.checkNotNullParameter(intent, "intent");
         Intrinsics.checkNotNullParameter(url, "url");
-        this.f50496a = intent;
-        this.f50497b = url;
+        this.f50512a = intent;
+        this.f50513b = url;
     }
 
     public final androidx.browser.customtabs.b a() {
-        return this.f50496a;
+        return this.f50512a;
     }
 
     public final String b() {
-        return this.f50497b;
+        return this.f50513b;
     }
 }

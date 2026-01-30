@@ -6,15 +6,15 @@ import kotlin.Lazy;
 public final class g implements Lazy, Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Object f31091d;
+    private final Object f31107d;
 
     public g(Object obj) {
-        this.f31091d = obj;
+        this.f31107d = obj;
     }
 
     @Override // kotlin.Lazy
     public Object getValue() {
-        return this.f31091d;
+        return this.f31107d;
     }
 
     @Override // kotlin.Lazy

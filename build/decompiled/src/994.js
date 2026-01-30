@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun10178: for (var _fun10178_ip = 0;;) switch (_fun10178_ip) {
+    _fun10179: for (var _fun10179_ip = 0;;) switch (_fun10179_ip) {
         case 0:
             var8 = require;
             var2 = exports;
@@ -25,7 +25,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var1 = {};
             var6 = {};
             var10 = function(arg0) { // Original name: parseErrorStack, environment: var4
-                _fun10179: for (var _fun10179_ip = 0;;) switch (_fun10179_ip) {
+                _fun10180: for (var _fun10180_ip = 0;;) switch (_fun10180_ip) {
                     case 0:
                         var3 = arg0;
                         var2 = _closure1_slot0;
@@ -36,21 +36,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = var2.bind(var0)(var1);
                         var1 = var2.default;
                         if (!var1) {
-                            _fun10179_ip = 52;
-                            continue _fun10179
+                            _fun10180_ip = 52;
+                            continue _fun10180
                         }
                     case 36:
                         var1 = var2.default;
                         var4 = 'function';
                         var1 = typeof var1;
                         if (!(var4 !== var1)) {
-                            _fun10179_ip = 59;
-                            continue _fun10179
+                            _fun10180_ip = 59;
+                            continue _fun10180
                         }
                     case 52:
                         var0 = var2.bind(var0)(var3);
-                        _fun10179_ip = 69;
-                        continue _fun10179;
+                        _fun10180_ip = 69;
+                        continue _fun10180;
                     case 59:
                         var1 = var2.default;
                         var0 = var1.bind(var2)(var3);
@@ -60,7 +60,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var6.parseErrorStack = var10;
             var10 = function(arg0, arg1) { // Original name: symbolicateStackTrace, environment: var4
-                _fun10180: for (var _fun10180_ip = 0;;) switch (_fun10180_ip) {
+                _fun10181: for (var _fun10181_ip = 0;;) switch (_fun10181_ip) {
                     case 0:
                         var4 = arg0;
                         var3 = arg1;
@@ -72,21 +72,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = var2.bind(var0)(var1);
                         var1 = var2.default;
                         if (!var1) {
-                            _fun10180_ip = 55;
-                            continue _fun10180
+                            _fun10181_ip = 55;
+                            continue _fun10181
                         }
                     case 39:
                         var1 = var2.default;
                         var5 = 'function';
                         var1 = typeof var1;
                         if (!(var5 !== var1)) {
-                            _fun10180_ip = 63;
-                            continue _fun10180
+                            _fun10181_ip = 63;
+                            continue _fun10181
                         }
                     case 55:
                         var0 = var2.bind(var0)(var4, var3);
-                        _fun10180_ip = 74;
-                        continue _fun10180;
+                        _fun10181_ip = 74;
+                        continue _fun10181;
                     case 63:
                         var1 = var2.default;
                         var0 = var1.bind(var2)(var4, var3);
@@ -96,7 +96,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             };
             var6.symbolicateStackTrace = var10;
             var10 = function() { // Original name: getDevServer, environment: var4
-                _fun10181: for (var _fun10181_ip = 0;;) switch (_fun10181_ip) {
+                _fun10182: for (var _fun10182_ip = 0;;) switch (_fun10182_ip) {
                     case 0:
                         var2 = _closure1_slot0;
                         var1 = _closure1_slot1;
@@ -106,21 +106,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2 = var2.bind(var0)(var1);
                         var1 = var2.default;
                         if (!var1) {
-                            _fun10181_ip = 49;
-                            continue _fun10181
+                            _fun10182_ip = 49;
+                            continue _fun10182
                         }
                     case 33:
                         var1 = var2.default;
                         var3 = 'function';
                         var1 = typeof var1;
                         if (!(var3 !== var1)) {
-                            _fun10181_ip = 55;
-                            continue _fun10181
+                            _fun10182_ip = 55;
+                            continue _fun10182
                         }
                     case 49:
                         var0 = var2.bind(var0)();
-                        _fun10181_ip = 64;
-                        continue _fun10181;
+                        _fun10182_ip = 64;
+                        continue _fun10182;
                     case 55:
                         var1 = var2.default;
                         var0 = var1.bind(var2)();
@@ -155,14 +155,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var9 = null;
             var7 = undefined;
             if (!(var9 !== var8)) {
-                _fun10178_ip = 182;
-                continue _fun10178
+                _fun10179_ip = 182;
+                continue _fun10179
             }
         case 170:
             var7 = undefined;
             if (!(var7 !== var8)) {
-                _fun10178_ip = 182;
-                continue _fun10178
+                _fun10179_ip = 182;
+                continue _fun10179
             }
         case 176:
             var7 = var8.reactNativeVersion;

@@ -7,17 +7,17 @@ import android.os.RemoteException;
 public final class i extends ai.j {
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ wg.k f55685e;
+    final /* synthetic */ wg.k f55701e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ l f55686i;
+    final /* synthetic */ l f55702i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public i(l lVar, wg.k kVar, wg.k kVar2) {
         super(kVar);
-        this.f55686i = lVar;
-        this.f55685e = kVar2;
+        this.f55702i = lVar;
+        this.f55701e = kVar2;
     }
 
     /* JADX WARN: Type inference failed for: r0v3, types: [android.os.IInterface, ai.f] */
@@ -28,18 +28,18 @@ public final class i extends ai.j {
         String str2;
         String str3;
         try {
-            ?? e10 = this.f55686i.f55692a.e();
-            str2 = this.f55686i.f55693b;
+            ?? e10 = this.f55702i.f55708a.e();
+            str2 = this.f55702i.f55709b;
             Bundle a10 = m.a();
-            l lVar = this.f55686i;
-            wg.k kVar = this.f55685e;
-            str3 = lVar.f55693b;
+            l lVar = this.f55702i;
+            wg.k kVar = this.f55701e;
+            str3 = lVar.f55709b;
             e10.O0(str2, a10, new k(lVar, kVar, str3));
         } catch (RemoteException e11) {
-            iVar = l.f55691c;
-            str = this.f55686i.f55693b;
+            iVar = l.f55707c;
+            str = this.f55702i.f55709b;
             iVar.c(e11, "error requesting in-app review for %s", str);
-            this.f55685e.d(new RuntimeException(e11));
+            this.f55701e.d(new RuntimeException(e11));
         }
     }
 }

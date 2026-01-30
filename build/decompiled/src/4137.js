@@ -8,52 +8,70 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = global;
     var5 = var0.Object;
     var4 = var5.defineProperty;
-    var2 = {};
+    var3 = {};
     var0 = true;
-    var2.value = var0;
+    var3.value = var0;
     var0 = '__esModule';
-    var0 = var4.bind(var5)(var1, var0, var2);
+    var0 = var4.bind(var5)(var1, var0, var3);
     var0 = {};
-    var2 = function(arg0) { // Original name: isGifFile, environment: var3
-        _fun37914: for (var _fun37914_ip = 0;;) switch (_fun37914_ip) {
+    var3 = function(arg0) { // Original name: isHeicFile, environment: var2
+        _fun37926: for (var _fun37926_ip = 0;;) switch (_fun37926_ip) {
             case 0:
-                var7 = arg0;
-                var1 = !var7;
-                var0 = !var1;
-                if (var1) {
-                    _fun37914_ip = 67;
-                    continue _fun37914
+                var2 = arg0;
+                var0 = var2;
+                var5 = undefined;
+                var1 = undefined;
+                if (var2) {
+                    _fun37926_ip = 17;
+                    continue _fun37926
                 }
-            case 12:
-                var3 = _closure1_slot3;
-                var2 = var3.includes;
-                var8 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var6 = 0;
-                var5 = var4[var6];
-                var4 = undefined;
-                var5 = var8.bind(var4)(var5);
-                var4 = var5.getStringFromDataView;
-                var1 = _closure1_slot2;
-                var1 = var4.bind(var5)(var7, var6, var1);
-                var0 = var2.bind(var3)(var1);
-            case 67:
+            case 13:
+                var2 = false;
+                return var2;
+            case 17: // try_start_0
+                var3 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var4 = 0;
+                var2 = var2[var4];
+                var3 = var3.bind(var5)(var2);
+                var2 = var3.parseBox;
+                var2 = var2.bind(var3)(var0, var4);
+                var1 = var2;
+                var0 = var2;
+                if (!var2) {
+                    _fun37926_ip = 97;
+                    continue _fun37926
+                }
+            case 60:
+                var3 = ['heic', 'heix', 'hevc', 'hevx', 'heim', 'heis', 'hevm', 'hevs', 'mif1'];
+                var2 = var3.indexOf;
+                var1 = var1.majorBrand;
+                var2 = var2.bind(var3)(var1);
+                var1 = -1;
+                var0 = var1 !== var2;
+            case 97: // try_end0
+                return var0;
+            case 99: // catch_target0
+                CatchBlockStart(arg_register = 0);
+                var0 = false;
                 return var0;
         }
     };
-    var0.isGifFile = var2;
-    var2 = function() { // Original name: findOffsets, environment: var3
-        var0 = {};
-        var1 = 0;
-        var0.gifHeaderOffset = var1;
+    var0.isHeicFile = var3;
+    var2 = function(arg0) { // Original name: findHeicOffsets, environment: var2
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 0;
+        var1 = var1[var0];
+        var0 = undefined;
+        var2 = var2.bind(var0)(var1);
+        var1 = var2.findOffsets;
+        var0 = arg0;
+        var0 = var1.bind(var2)(var0);
         return var0;
     };
-    var0.findOffsets = var2;
-    var2 = 6;
-    var _closure1_slot2 = var2;
-    var2 = ['GIF87a', 'GIF89a'];
-    var _closure1_slot3 = var2;
+    var0.findHeicOffsets = var2;
     var1.default = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4123]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4138]);

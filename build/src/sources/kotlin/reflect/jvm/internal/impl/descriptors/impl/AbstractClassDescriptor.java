@@ -30,16 +30,16 @@ import org.jetbrains.annotations.NotNull;
 public abstract class AbstractClassDescriptor extends ModuleAwareClassDescriptor {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Name f33670d;
+    private final Name f33686d;
 
     /* renamed from: e  reason: collision with root package name */
-    protected final NotNullLazyValue f33671e;
+    protected final NotNullLazyValue f33687e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final NotNullLazyValue f33672i;
+    private final NotNullLazyValue f33688i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final NotNullLazyValue f33673o;
+    private final NotNullLazyValue f33689o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -57,7 +57,7 @@ public abstract class AbstractClassDescriptor extends ModuleAwareClassDescriptor
             public SimpleType invoke(KotlinTypeRefiner kotlinTypeRefiner) {
                 ClassifierDescriptor refineDescriptor = kotlinTypeRefiner.refineDescriptor(AbstractClassDescriptor.this);
                 if (refineDescriptor == null) {
-                    return (SimpleType) AbstractClassDescriptor.this.f33671e.invoke();
+                    return (SimpleType) AbstractClassDescriptor.this.f33687e.invoke();
                 }
                 if (refineDescriptor instanceof TypeAliasDescriptor) {
                     return KotlinTypeFactory.computeExpandedType((TypeAliasDescriptor) refineDescriptor, TypeUtils.getDefaultTypeProjections(refineDescriptor.getTypeConstructor().getParameters()));
@@ -111,10 +111,10 @@ public abstract class AbstractClassDescriptor extends ModuleAwareClassDescriptor
         if (name == null) {
             a(1);
         }
-        this.f33670d = name;
-        this.f33671e = storageManager.createLazyValue(new a());
-        this.f33672i = storageManager.createLazyValue(new b());
-        this.f33673o = storageManager.createLazyValue(new c());
+        this.f33686d = name;
+        this.f33687e = storageManager.createLazyValue(new a());
+        this.f33688i = storageManager.createLazyValue(new b());
+        this.f33689o = storageManager.createLazyValue(new c());
     }
 
     private static /* synthetic */ void a(int i10) {
@@ -232,7 +232,7 @@ public abstract class AbstractClassDescriptor extends ModuleAwareClassDescriptor
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptor
     @NotNull
     public SimpleType getDefaultType() {
-        SimpleType simpleType = (SimpleType) this.f33671e.invoke();
+        SimpleType simpleType = (SimpleType) this.f33687e.invoke();
         if (simpleType == null) {
             a(20);
         }
@@ -261,7 +261,7 @@ public abstract class AbstractClassDescriptor extends ModuleAwareClassDescriptor
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.Named
     @NotNull
     public Name getName() {
-        Name name = this.f33670d;
+        Name name = this.f33686d;
         if (name == null) {
             a(2);
         }
@@ -277,7 +277,7 @@ public abstract class AbstractClassDescriptor extends ModuleAwareClassDescriptor
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     @NotNull
     public ReceiverParameterDescriptor getThisAsReceiverParameter() {
-        ReceiverParameterDescriptor receiverParameterDescriptor = (ReceiverParameterDescriptor) this.f33673o.invoke();
+        ReceiverParameterDescriptor receiverParameterDescriptor = (ReceiverParameterDescriptor) this.f33689o.invoke();
         if (receiverParameterDescriptor == null) {
             a(5);
         }
@@ -287,7 +287,7 @@ public abstract class AbstractClassDescriptor extends ModuleAwareClassDescriptor
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor
     @NotNull
     public MemberScope getUnsubstitutedInnerClassesScope() {
-        MemberScope memberScope = (MemberScope) this.f33672i.invoke();
+        MemberScope memberScope = (MemberScope) this.f33688i.invoke();
         if (memberScope == null) {
             a(4);
         }

@@ -103,7 +103,7 @@ public final class LinearAnimationInstance extends NativeObject implements Playa
     public final void apply() {
         synchronized (this.lock) {
             cppApply(getCppPointer(), this.mix);
-            Unit unit = Unit.f33282a;
+            Unit unit = Unit.f33298a;
         }
     }
 
@@ -189,7 +189,7 @@ public final class LinearAnimationInstance extends NativeObject implements Playa
         Intrinsics.checkNotNullParameter(direction, "direction");
         synchronized (this.lock) {
             cppSetDirection(getCppPointer(), direction.getValue());
-            Unit unit = Unit.f33282a;
+            Unit unit = Unit.f33298a;
         }
     }
 
@@ -197,7 +197,7 @@ public final class LinearAnimationInstance extends NativeObject implements Playa
         Intrinsics.checkNotNullParameter(loop, "loop");
         synchronized (this.lock) {
             cppSetLoop(getCppPointer(), loop.ordinal());
-            Unit unit = Unit.f33282a;
+            Unit unit = Unit.f33298a;
         }
     }
 
@@ -208,7 +208,7 @@ public final class LinearAnimationInstance extends NativeObject implements Playa
     public final void time(float f10) {
         synchronized (this.lock) {
             cppSetTime(getCppPointer(), f10);
-            Unit unit = Unit.f33282a;
+            Unit unit = Unit.f33298a;
         }
     }
 
@@ -223,7 +223,7 @@ public final class LinearAnimationInstance extends NativeObject implements Playa
     public final boolean apply(float f10) {
         synchronized (this.lock) {
             cppApply(getCppPointer(), this.mix);
-            Unit unit = Unit.f33282a;
+            Unit unit = Unit.f33298a;
         }
         int i10 = WhenMappings.$EnumSwitchMapping$0[advanceAndGetResult(f10).ordinal()];
         if (i10 == 1 || i10 == 2 || i10 == 3) {

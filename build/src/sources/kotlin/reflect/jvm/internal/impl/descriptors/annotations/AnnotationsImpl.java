@@ -10,11 +10,11 @@ import org.jetbrains.annotations.NotNull;
 public final class AnnotationsImpl implements Annotations {
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f33629d;
+    private final List f33645d;
 
     public AnnotationsImpl(@NotNull List<? extends AnnotationDescriptor> annotations) {
         Intrinsics.checkNotNullParameter(annotations, "annotations");
-        this.f33629d = annotations;
+        this.f33645d = annotations;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotations
@@ -30,17 +30,17 @@ public final class AnnotationsImpl implements Annotations {
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotations
     public boolean isEmpty() {
-        return this.f33629d.isEmpty();
+        return this.f33645d.isEmpty();
     }
 
     @Override // java.lang.Iterable
     @NotNull
     public Iterator<AnnotationDescriptor> iterator() {
-        return this.f33629d.iterator();
+        return this.f33645d.iterator();
     }
 
     @NotNull
     public String toString() {
-        return this.f33629d.toString();
+        return this.f33645d.toString();
     }
 }

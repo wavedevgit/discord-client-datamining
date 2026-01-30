@@ -7,16 +7,16 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class c0 implements l {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b0 f49866a;
+    private final b0 f49882a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f49867b;
+    private final int f49883b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Integer f49868c;
+    private final Integer f49884c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f49869d;
+    private final int f49885d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     /* synthetic */ class a extends FunctionReferenceImpl implements Function1 {
@@ -33,11 +33,11 @@ public abstract class c0 implements l {
 
     public c0(b0 field, int i10, Integer num) {
         Intrinsics.checkNotNullParameter(field, "field");
-        this.f49866a = field;
-        this.f49867b = i10;
-        this.f49868c = num;
+        this.f49882a = field;
+        this.f49883b = i10;
+        this.f49884c = num;
         int e10 = field.e();
-        this.f49869d = e10;
+        this.f49885d = e10;
         if (i10 >= 0) {
             if (e10 >= i10) {
                 if (num == null || num.intValue() > i10) {
@@ -52,8 +52,8 @@ public abstract class c0 implements l {
 
     @Override // ts.l
     public us.e a() {
-        us.j jVar = new us.j(new a(this.f49866a.b()), this.f49867b);
-        Integer num = this.f49868c;
+        us.j jVar = new us.j(new a(this.f49882a.b()), this.f49883b);
+        Integer num = this.f49884c;
         if (num != null) {
             return new us.h(jVar, num.intValue());
         }
@@ -62,11 +62,11 @@ public abstract class c0 implements l {
 
     @Override // ts.l
     public vs.q b() {
-        return vs.p.e(Integer.valueOf(this.f49867b), Integer.valueOf(this.f49869d), this.f49868c, this.f49866a.b(), this.f49866a.getName(), false, 32, null);
+        return vs.p.e(Integer.valueOf(this.f49883b), Integer.valueOf(this.f49885d), this.f49884c, this.f49882a.b(), this.f49882a.getName(), false, 32, null);
     }
 
     @Override // ts.l
     public /* bridge */ /* synthetic */ n c() {
-        return this.f49866a;
+        return this.f49882a;
     }
 }

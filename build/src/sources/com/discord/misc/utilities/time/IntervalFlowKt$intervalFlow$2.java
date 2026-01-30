@@ -90,7 +90,7 @@ final class IntervalFlowKt$intervalFlow$2 extends k implements Function2<FlowCol
             if (r8 != r0) goto L3f
             goto L58
         L3f:
-            kotlin.Unit r8 = kotlin.Unit.f33282a
+            kotlin.Unit r8 = kotlin.Unit.f33298a
             r7.L$0 = r1
             r7.label = r3
             java.lang.Object r8 = r1.emit(r8, r7)
@@ -110,6 +110,6 @@ final class IntervalFlowKt$intervalFlow$2 extends k implements Function2<FlowCol
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(FlowCollector flowCollector, Continuation<? super Unit> continuation) {
-        return ((IntervalFlowKt$intervalFlow$2) create(flowCollector, continuation)).invokeSuspend(Unit.f33282a);
+        return ((IntervalFlowKt$intervalFlow$2) create(flowCollector, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

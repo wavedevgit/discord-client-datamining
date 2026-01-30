@@ -16,10 +16,10 @@ public abstract class i2 {
     public /* synthetic */ class a {
 
         /* renamed from: a */
-        public static final /* synthetic */ int[] f53585a;
+        public static final /* synthetic */ int[] f53601a;
 
         /* renamed from: b */
-        public static final /* synthetic */ int[] f53586b;
+        public static final /* synthetic */ int[] f53602b;
 
         static {
             int[] iArr = new int[InputText.InputType.values().length];
@@ -35,7 +35,7 @@ public abstract class i2 {
                 iArr[InputText.InputType.NUMBER_PAD.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f53585a = iArr;
+            f53601a = iArr;
             int[] iArr2 = new int[InputText.AutofillHint.values().length];
             try {
                 iArr2[InputText.AutofillHint.NAME.ordinal()] = 1;
@@ -77,7 +77,7 @@ public abstract class i2 {
                 iArr2[InputText.AutofillHint.POSTAL_CODE.ordinal()] = 10;
             } catch (NoSuchFieldError unused13) {
             }
-            f53586b = iArr2;
+            f53602b = iArr2;
         }
     }
 
@@ -142,11 +142,11 @@ public abstract class i2 {
             Intrinsics.checkNotNullExpressionValue(inputLayout, "inputLayout");
             cq.a0.k(inputLayout, styles);
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private static final int e(InputText.InputType inputType) {
-        int i10 = a.f53585a[inputType.ordinal()];
+        int i10 = a.f53601a[inputType.ordinal()];
         if (i10 == 1) {
             return 1;
         }
@@ -160,7 +160,7 @@ public abstract class i2 {
     }
 
     private static final String f(InputText.AutofillHint autofillHint) {
-        switch (a.f53586b[autofillHint.ordinal()]) {
+        switch (a.f53602b[autofillHint.ordinal()]) {
             case 1:
                 return "personName";
             case 2:

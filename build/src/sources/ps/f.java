@@ -6,10 +6,10 @@ import ls.e0;
 public abstract class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final e0 f46169a = new e0("NO_OWNER");
+    private static final e0 f46185a = new e0("NO_OWNER");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final e0 f46170b = new e0("ALREADY_LOCKED_BY_OWNER");
+    private static final e0 f46186b = new e0("ALREADY_LOCKED_BY_OWNER");
 
     public static final Mutex a(boolean z10) {
         return new e(z10);

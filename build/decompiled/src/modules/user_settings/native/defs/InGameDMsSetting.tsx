@@ -117,7 +117,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.useOptions = var8;
     var8 = function() { // Original name: useInGameDMsSettingValue, environment: var7
-        _fun88839: for (var _fun88839_ip = 0;;) switch (_fun88839_ip) {
+        _fun89076: for (var _fun89076_ip = 0;;) switch (_fun89076_ip) {
             case 0:
                 var5 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -134,8 +134,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.SlayerSDKReceiveInGameDMs;
                 var2 = var2.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET;
                 if (!(var0 === var2)) {
-                    _fun88839_ip = 98;
-                    continue _fun88839
+                    _fun89076_ip = 98;
+                    continue _fun89076
                 }
             case 69:
                 var2 = _closure1_slot0;
@@ -194,4 +194,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 6965, 1348, 1311, 1234, 8939, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 6968, 1348, 1311, 1234, 8943, 2]);

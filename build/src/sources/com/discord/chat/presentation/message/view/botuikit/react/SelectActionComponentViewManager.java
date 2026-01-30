@@ -71,13 +71,13 @@ public final class SelectActionComponentViewManager extends SimpleViewManager<Se
     public static final Unit createSelectComponentContext$lambda$1(Function0 function0, String str) {
         Intrinsics.checkNotNullParameter(str, "<unused var>");
         function0.invoke();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setModel$lambda$0(SelectActionComponentViewManager selectActionComponentViewManager, SelectComponentView selectComponentView) {
         selectActionComponentViewManager.reactEvents.emitEvent(selectComponentView, new OnSelectComponentTapEvent());
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // com.facebook.react.uimanager.BaseViewManager, com.facebook.react.uimanager.ViewManager

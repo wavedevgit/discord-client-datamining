@@ -10,7 +10,7 @@ public final class h0 implements Parcelable {
     public static final Parcelable.Creator<h0> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f39218d;
+    private final String f39234d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -30,11 +30,11 @@ public final class h0 implements Parcelable {
 
     public h0(String textOnImage) {
         Intrinsics.checkNotNullParameter(textOnImage, "textOnImage");
-        this.f39218d = textOnImage;
+        this.f39234d = textOnImage;
     }
 
     public final String a() {
-        return this.f39218d;
+        return this.f39234d;
     }
 
     @Override // android.os.Parcelable
@@ -46,24 +46,24 @@ public final class h0 implements Parcelable {
         if (this == obj) {
             return true;
         }
-        if ((obj instanceof h0) && Intrinsics.areEqual(this.f39218d, ((h0) obj).f39218d)) {
+        if ((obj instanceof h0) && Intrinsics.areEqual(this.f39234d, ((h0) obj).f39234d)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f39218d.hashCode();
+        return this.f39234d.hashCode();
     }
 
     public String toString() {
-        String str = this.f39218d;
+        String str = this.f39234d;
         return "ImageIdMetadata(textOnImage=" + str + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f39218d);
+        dest.writeString(this.f39234d);
     }
 }

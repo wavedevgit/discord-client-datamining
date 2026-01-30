@@ -47,11 +47,11 @@ final class MediaEngineModule$setOutputDevice$1 extends kotlin.coroutines.jvm.in
             }
         }
         this.this$0.getMediaEngine().setOutputDevice$media_engine_release((int) this.$deviceIndex);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$setOutputDevice$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((MediaEngineModule$setOutputDevice$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

@@ -25,7 +25,7 @@ public final class o implements ViewBinding {
     }
 
     public static o a(View view) {
-        int i10 = vp.e.f51835z;
+        int i10 = vp.e.f51851z;
         TextInputEditText textInputEditText = (TextInputEditText) e4.a.a(view, i10);
         if (textInputEditText != null) {
             TextInputLayout textInputLayout = (TextInputLayout) view;
@@ -39,7 +39,7 @@ public final class o implements ViewBinding {
     }
 
     public static o d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(vp.f.f51851o, viewGroup, false);
+        View inflate = layoutInflater.inflate(vp.f.f51867o, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }

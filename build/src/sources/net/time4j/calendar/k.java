@@ -13,10 +13,10 @@ public enum k implements jt.i {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final transient jt.p f40462d = new b();
+    private final transient jt.p f40478d = new b();
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient jt.p f40463e = new e();
+    private final transient jt.p f40479e = new e();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private static class b extends kt.d implements t {
@@ -51,12 +51,12 @@ public enum k implements jt.i {
         @Override // kt.t
         /* renamed from: H */
         public k z(CharSequence charSequence, ParsePosition parsePosition, jt.d dVar) {
-            Locale locale = (Locale) dVar.b(kt.a.f36530c, Locale.ROOT);
-            boolean booleanValue = ((Boolean) dVar.b(kt.a.f36536i, Boolean.TRUE)).booleanValue();
-            boolean booleanValue2 = ((Boolean) dVar.b(kt.a.f36537j, Boolean.FALSE)).booleanValue();
+            Locale locale = (Locale) dVar.b(kt.a.f36546c, Locale.ROOT);
+            boolean booleanValue = ((Boolean) dVar.b(kt.a.f36552i, Boolean.TRUE)).booleanValue();
+            boolean booleanValue2 = ((Boolean) dVar.b(kt.a.f36553j, Boolean.FALSE)).booleanValue();
             int index = parsePosition.getIndex();
             k kVar = k.DANGI;
-            String d10 = kVar.d(locale, (v) dVar.b(kt.a.f36534g, v.WIDE));
+            String d10 = kVar.d(locale, (v) dVar.b(kt.a.f36550g, v.WIDE));
             int max = Math.max(Math.min(d10.length() + index, charSequence.length()), index);
             if (max > index) {
                 String charSequence2 = charSequence.subSequence(index, max).toString();
@@ -76,7 +76,7 @@ public enum k implements jt.i {
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // jt.e
         public z c(x xVar) {
-            if (!xVar.E(f0.f40573z)) {
+            if (!xVar.E(f0.f40589z)) {
                 return null;
             }
             return new c();
@@ -94,7 +94,7 @@ public enum k implements jt.i {
 
         @Override // kt.t
         public void u(jt.o oVar, Appendable appendable, jt.d dVar) {
-            appendable.append(k.DANGI.d((Locale) dVar.b(kt.a.f36530c, Locale.ROOT), (v) dVar.b(kt.a.f36534g, v.WIDE)));
+            appendable.append(k.DANGI.d((Locale) dVar.b(kt.a.f36546c, Locale.ROOT), (v) dVar.b(kt.a.f36550g, v.WIDE)));
         }
 
         @Override // jt.p
@@ -167,7 +167,7 @@ public enum k implements jt.i {
         }
 
         private int d(jt.q qVar) {
-            return ((f0) qVar.p(f0.f40573z)).f() + 2333;
+            return ((f0) qVar.p(f0.f40589z)).f() + 2333;
         }
 
         @Override // jt.z
@@ -220,8 +220,8 @@ public enum k implements jt.i {
             if (num != null) {
                 if (l(qVar, num)) {
                     int d10 = d(qVar);
-                    net.time4j.e eVar = f0.f40573z;
-                    return qVar.E(eVar, (f0) ((f0) qVar.p(eVar)).K(num.intValue() - d10, net.time4j.f.f40551o));
+                    net.time4j.e eVar = f0.f40589z;
+                    return qVar.E(eVar, (f0) ((f0) qVar.p(eVar)).K(num.intValue() - d10, net.time4j.f.f40567o));
                 }
                 throw new IllegalArgumentException("Invalid year of era: " + num);
             }
@@ -262,7 +262,7 @@ public enum k implements jt.i {
         /* JADX INFO: Access modifiers changed from: protected */
         @Override // jt.e
         public z c(x xVar) {
-            if (!xVar.E(f0.f40573z)) {
+            if (!xVar.E(f0.f40589z)) {
                 return null;
             }
             return new d();
@@ -293,7 +293,7 @@ public enum k implements jt.i {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public jt.p a() {
-        return this.f40462d;
+        return this.f40478d;
     }
 
     public String d(Locale locale, v vVar) {
@@ -302,6 +302,6 @@ public enum k implements jt.i {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public jt.p e() {
-        return this.f40463e;
+        return this.f40479e;
     }
 }

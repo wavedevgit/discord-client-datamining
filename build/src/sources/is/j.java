@@ -8,24 +8,24 @@ public abstract class j {
             if (i10 != -1) {
                 if (i10 != 0) {
                     if (i10 != Integer.MAX_VALUE) {
-                        if (aVar == a.f31125d) {
+                        if (aVar == a.f31141d) {
                             return new e(i10, function1);
                         }
                         return new r(i10, aVar, function1);
                     }
                     return new e(Integer.MAX_VALUE, function1);
-                } else if (aVar == a.f31125d) {
+                } else if (aVar == a.f31141d) {
                     return new e(0, function1);
                 } else {
                     return new r(1, aVar, function1);
                 }
-            } else if (aVar == a.f31125d) {
-                return new r(1, a.f31126e, function1);
+            } else if (aVar == a.f31141d) {
+                return new r(1, a.f31142e, function1);
             } else {
                 throw new IllegalArgumentException("CONFLATED capacity cannot be used with non-default onBufferOverflow");
             }
-        } else if (aVar == a.f31125d) {
-            return new e(g.f31185g.a(), function1);
+        } else if (aVar == a.f31141d) {
+            return new e(g.f31201g.a(), function1);
         } else {
             return new r(1, aVar, function1);
         }
@@ -36,7 +36,7 @@ public abstract class j {
             i10 = 0;
         }
         if ((i11 & 2) != 0) {
-            aVar = a.f31125d;
+            aVar = a.f31141d;
         }
         if ((i11 & 4) != 0) {
             function1 = null;

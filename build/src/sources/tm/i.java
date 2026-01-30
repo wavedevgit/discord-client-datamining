@@ -12,13 +12,13 @@ import okio.ByteString;
 public final class i {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f49706c = new a(null);
+    public static final a f49722c = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Function0 f49707a;
+    private final Function0 f49723a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Lazy f49708b;
+    private final Lazy f49724b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -28,18 +28,18 @@ public final class i {
         static final class C0645a extends Lambda implements Function0 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ ByteString f49709d;
+            final /* synthetic */ ByteString f49725d;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             C0645a(ByteString byteString) {
                 super(0);
-                this.f49709d = byteString;
+                this.f49725d = byteString;
             }
 
             @Override // kotlin.jvm.functions.Function0
             /* renamed from: a */
             public final ByteString invoke() {
-                return this.f49709d;
+                return this.f49725d;
             }
         }
 
@@ -47,19 +47,19 @@ public final class i {
         static final class b extends Lambda implements Function0 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ Function1 f49710d;
+            final /* synthetic */ Function1 f49726d;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             b(Function1 function1) {
                 super(0);
-                this.f49710d = function1;
+                this.f49726d = function1;
             }
 
             @Override // kotlin.jvm.functions.Function0
             /* renamed from: a */
             public final ByteString invoke() {
                 Buffer buffer = new Buffer();
-                this.f49710d.invoke(buffer);
+                this.f49726d.invoke(buffer);
                 return buffer.L1();
             }
         }
@@ -96,7 +96,7 @@ public final class i {
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
         public final ByteString invoke() {
-            return (ByteString) i.this.f49707a.invoke();
+            return (ByteString) i.this.f49723a.invoke();
         }
     }
 
@@ -105,7 +105,7 @@ public final class i {
     }
 
     public final ByteString b() {
-        return (ByteString) this.f49708b.getValue();
+        return (ByteString) this.f49724b.getValue();
     }
 
     public boolean equals(Object obj) {
@@ -130,7 +130,7 @@ public final class i {
     }
 
     private i(Function0 function0) {
-        this.f49707a = function0;
-        this.f49708b = ir.l.b(new b());
+        this.f49723a = function0;
+        this.f49724b = ir.l.b(new b());
     }
 }

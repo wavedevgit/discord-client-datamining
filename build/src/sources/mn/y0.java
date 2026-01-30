@@ -7,7 +7,7 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class y0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Bitmap f39343a;
+    private final Bitmap f39359a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends y0 {
@@ -41,10 +41,10 @@ public abstract class y0 {
     }
 
     public final Bitmap a() {
-        return this.f39343a;
+        return this.f39359a;
     }
 
     private y0(Bitmap bitmap) {
-        this.f39343a = bitmap;
+        this.f39359a = bitmap;
     }
 }

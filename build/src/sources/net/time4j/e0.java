@@ -22,7 +22,7 @@ final class e0 extends jt.f implements u, Serializable {
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // jt.f
     public jt.m0 b(jt.x xVar) {
-        if (xVar.E(f0.f40572y)) {
+        if (xVar.E(f0.f40588y)) {
             return new f.j(this.unit, this.policy);
         }
         return null;

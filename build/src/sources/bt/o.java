@@ -20,7 +20,7 @@ public final class o implements KSerializer {
     public static final o f7824a = new o();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f7825b = zs.j.d("kotlinx.serialization.json.JsonElement", d.b.f56082a, new SerialDescriptor[0], new Function1() { // from class: bt.i
+    private static final SerialDescriptor f7825b = zs.j.d("kotlinx.serialization.json.JsonElement", d.b.f56098a, new SerialDescriptor[0], new Function1() { // from class: bt.i
         @Override // kotlin.jvm.functions.Function1
         public final Object invoke(Object obj) {
             Unit g10;
@@ -75,7 +75,7 @@ public final class o implements KSerializer {
                 return l10;
             }
         }), null, false, 12, null);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */

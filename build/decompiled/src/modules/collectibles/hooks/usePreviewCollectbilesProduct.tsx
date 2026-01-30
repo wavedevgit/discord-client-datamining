@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2[3] = var6;
         var2[4] = var5;
         var1 = function() { // Environment: var1
-            _fun75309: for (var _fun75309_ip = 0;;) switch (_fun75309_ip) {
+            _fun75353: for (var _fun75353_ip = 0;;) switch (_fun75353_ip) {
                 case 0:
                     var1 = _closure2_slot0;
                     var4 = var1.type;
@@ -87,21 +87,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var2.CollectiblesItemType;
                     var2 = var2.BUNDLE;
                     if (!(var4 === var2)) {
-                        _fun75309_ip = 74;
-                        continue _fun75309
+                        _fun75353_ip = 74;
+                        continue _fun75353
                     }
                 case 53:
                     var2 = _closure2_slot2;
                     var5 = null;
                     if (!(var5 != var2)) {
-                        _fun75309_ip = 74;
-                        continue _fun75309
+                        _fun75353_ip = 74;
+                        continue _fun75353
                     }
                 case 63:
                     var2 = _closure2_slot3;
                     if (!(var5 == var2)) {
-                        _fun75309_ip = 247;
-                        continue _fun75309
+                        _fun75353_ip = 247;
+                        continue _fun75353
                     }
                 case 74:
                     var6 = _closure1_slot2;
@@ -114,22 +114,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure1_slot4;
                     var2 = var2.bind(var3)(var6);
                     if (var2) {
-                        _fun75309_ip = 214;
-                        continue _fun75309
+                        _fun75353_ip = 214;
+                        continue _fun75353
                     }
                 case 115:
                     var2 = _closure1_slot6;
                     var2 = var2.bind(var3)(var6);
                     if (var2) {
-                        _fun75309_ip = 178;
-                        continue _fun75309
+                        _fun75353_ip = 178;
+                        continue _fun75353
                     }
                 case 127:
                     var2 = _closure1_slot5;
                     var2 = var2.bind(var3)(var6);
                     if (!var2) {
-                        _fun75309_ip = 346;
-                        continue _fun75309
+                        _fun75353_ip = 346;
+                        continue _fun75353
                     }
                 case 142:
                     var4 = _closure1_slot0;
@@ -139,8 +139,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var4.bind(var3)(var2);
                     var2 = var4.setNewPendingNameplate;
                     var2 = var2.bind(var4)(var6);
-                    _fun75309_ip = 346;
-                    continue _fun75309;
+                    _fun75353_ip = 346;
+                    continue _fun75353;
                 case 178:
                     var4 = _closure1_slot0;
                     var7 = _closure1_slot1;
@@ -149,8 +149,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var4.bind(var3)(var2);
                     var2 = var4.setNewPendingProfileEffect;
                     var2 = var2.bind(var4)(var6);
-                    _fun75309_ip = 346;
-                    continue _fun75309;
+                    _fun75353_ip = 346;
+                    continue _fun75353;
                 case 214:
                     var4 = _closure1_slot0;
                     var7 = _closure1_slot1;
@@ -159,8 +159,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var4.bind(var3)(var2);
                     var2 = var4.setNewPendingAvatarDecoration;
                     var2 = var2.bind(var4)(var6);
-                    _fun75309_ip = 346;
-                    continue _fun75309;
+                    _fun75353_ip = 346;
+                    continue _fun75353;
                 case 247:
                     var6 = _closure1_slot0;
                     var2 = _closure1_slot1;
@@ -177,8 +177,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var6.bind(var7)(var2);
                     var2 = _closure2_slot4;
                     if (!(var5 != var2)) {
-                        _fun75309_ip = 346;
-                        continue _fun75309
+                        _fun75353_ip = 346;
+                        continue _fun75353
                     }
                 case 314:
                     var2 = _closure1_slot0;
@@ -190,12 +190,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var1.bind(var2)(var0);
                 case 346:
                     var0 = function() { // Environment: var0
-                        _fun75310: for (var _fun75310_ip = 0;;) switch (_fun75310_ip) {
+                        _fun75354: for (var _fun75354_ip = 0;;) switch (_fun75354_ip) {
                             case 0:
                                 var0 = _closure2_slot1;
                                 if (!var0) {
-                                    _fun75310_ip = 86;
-                                    continue _fun75310
+                                    _fun75354_ip = 86;
+                                    continue _fun75354
                                 }
                             case 10:
                                 var1 = _closure1_slot0;
@@ -227,4 +227,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.usePreviewCollectibleProduct = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 4558, 4560, 4561, 6841, 3452, 5542, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 4564, 4566, 4567, 6844, 3452, 5546, 2]);

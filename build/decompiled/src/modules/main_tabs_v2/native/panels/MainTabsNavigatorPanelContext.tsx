@@ -50,4 +50,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.MainTabsChannelScreenStackContext = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4917, 5211, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4923, 5217, 2]);

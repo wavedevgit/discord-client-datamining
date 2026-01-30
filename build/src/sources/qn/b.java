@@ -7,49 +7,49 @@ import kotlin.enums.EnumEntries;
 public final class b {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final b f47521d = new b("FaceNotCentered", 0);
+    public static final b f47537d = new b("FaceNotCentered", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final b f47522e = new b("FaceTooClose", 1);
+    public static final b f47538e = new b("FaceTooClose", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final b f47523i = new b("FaceTooFar", 2);
+    public static final b f47539i = new b("FaceTooFar", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    public static final b f47524o = new b("MultipleFaces", 3);
+    public static final b f47540o = new b("MultipleFaces", 3);
 
     /* renamed from: p  reason: collision with root package name */
-    public static final b f47525p = new b("IncompleteFace", 4);
+    public static final b f47541p = new b("IncompleteFace", 4);
 
     /* renamed from: q  reason: collision with root package name */
-    public static final b f47526q = new b("FaceNotFound", 5);
+    public static final b f47542q = new b("FaceNotFound", 5);
 
     /* renamed from: r  reason: collision with root package name */
-    public static final b f47527r = new b("IncorrectPose", 6);
+    public static final b f47543r = new b("IncorrectPose", 6);
 
     /* renamed from: s  reason: collision with root package name */
-    public static final b f47528s = new b("FaceDetectionUnsupported", 7);
+    public static final b f47544s = new b("FaceDetectionUnsupported", 7);
 
     /* renamed from: t  reason: collision with root package name */
-    public static final b f47529t = new b("Other", 8);
+    public static final b f47545t = new b("Other", 8);
 
     /* renamed from: u  reason: collision with root package name */
-    private static final /* synthetic */ b[] f47530u;
+    private static final /* synthetic */ b[] f47546u;
 
     /* renamed from: v  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f47531v;
+    private static final /* synthetic */ EnumEntries f47547v;
 
     static {
         b[] a10 = a();
-        f47530u = a10;
-        f47531v = pr.a.a(a10);
+        f47546u = a10;
+        f47547v = pr.a.a(a10);
     }
 
     private b(String str, int i10) {
     }
 
     private static final /* synthetic */ b[] a() {
-        return new b[]{f47521d, f47522e, f47523i, f47524o, f47525p, f47526q, f47527r, f47528s, f47529t};
+        return new b[]{f47537d, f47538e, f47539i, f47540o, f47541p, f47542q, f47543r, f47544s, f47545t};
     }
 
     public static b valueOf(String str) {
@@ -57,6 +57,6 @@ public final class b {
     }
 
     public static b[] values() {
-        return (b[]) f47530u.clone();
+        return (b[]) f47546u.clone();
     }
 }

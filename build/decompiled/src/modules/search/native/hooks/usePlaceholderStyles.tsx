@@ -85,21 +85,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var7.bind(var6)(var1);
         var1 = var2.useAnimatedStyle;
         var0 = function() { // Original name: A, environment: var0
-            _fun105753: for (var _fun105753_ip = 0;;) switch (_fun105753_ip) {
+            _fun106015: for (var _fun106015_ip = 0;;) switch (_fun106015_ip) {
                 case 0:
                     var0 = _closure2_slot1;
                     var1 = {};
                     var3 = _closure2_slot0;
                     if (var0) {
-                        _fun105753_ip = 290;
-                        continue _fun105753
+                        _fun106015_ip = 290;
+                        continue _fun106015
                     }
                 case 19:
                     var15 = _closure1_slot0;
                     var16 = _closure1_slot2;
                     if (var3) {
-                        _fun105753_ip = 82;
-                        continue _fun105753
+                        _fun106015_ip = 82;
+                        continue _fun106015
                     }
                 case 33:
                     var2 = 5;
@@ -114,8 +114,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var4.bind(var5)(var0, var2);
                     var1.opacity = var0;
                     var0 = var1;
-                    _fun105753_ip = 288;
-                    continue _fun105753;
+                    _fun106015_ip = 288;
+                    continue _fun106015;
                 case 82:
                     var2 = 4;
                     var4 = var16[var2];
@@ -163,13 +163,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.opacity = var2;
                     var0 = var1;
                 case 288:
-                    _fun105753_ip = 305;
-                    continue _fun105753;
+                    _fun106015_ip = 305;
+                    continue _fun106015;
                 case 290:
                     var2 = 0;
                     if (!var3) {
-                        _fun105753_ip = 298;
-                        continue _fun105753
+                        _fun106015_ip = 298;
+                        continue _fun106015
                     }
                 case 295:
                     var2 = 1;
@@ -213,4 +213,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.usePlaceholderAnimatedStyle = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1298, 8857, 1464, 566, 3677, 4050, 4840, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1298, 8861, 1464, 566, 3679, 4056, 4846, 2]);

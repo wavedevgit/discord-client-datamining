@@ -8,40 +8,40 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public final class e {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f55328e;
+    public static final a f55344e;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final e[] f55329i;
+    private static final e[] f55345i;
 
     /* renamed from: o  reason: collision with root package name */
-    public static final e f55330o = new e("UNKNOWN", 0, -1);
+    public static final e f55346o = new e("UNKNOWN", 0, -1);
 
     /* renamed from: p  reason: collision with root package name */
-    public static final e f55331p = new e("REQUESTED", 1, 0);
+    public static final e f55347p = new e("REQUESTED", 1, 0);
 
     /* renamed from: q  reason: collision with root package name */
-    public static final e f55332q = new e("INTERMEDIATE_AVAILABLE", 2, 2);
+    public static final e f55348q = new e("INTERMEDIATE_AVAILABLE", 2, 2);
 
     /* renamed from: r  reason: collision with root package name */
-    public static final e f55333r = new e("SUCCESS", 3, 3);
+    public static final e f55349r = new e("SUCCESS", 3, 3);
 
     /* renamed from: s  reason: collision with root package name */
-    public static final e f55334s = new e("ERROR", 4, 5);
+    public static final e f55350s = new e("ERROR", 4, 5);
 
     /* renamed from: t  reason: collision with root package name */
-    public static final e f55335t = new e("EMPTY_EVENT", 5, 7);
+    public static final e f55351t = new e("EMPTY_EVENT", 5, 7);
 
     /* renamed from: u  reason: collision with root package name */
-    public static final e f55336u = new e("RELEASED", 6, 8);
+    public static final e f55352u = new e("RELEASED", 6, 8);
 
     /* renamed from: v  reason: collision with root package name */
-    private static final /* synthetic */ e[] f55337v;
+    private static final /* synthetic */ e[] f55353v;
 
     /* renamed from: w  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f55338w;
+    private static final /* synthetic */ EnumEntries f55354w;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f55339d;
+    private final int f55355d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -57,48 +57,48 @@ public final class e {
     public /* synthetic */ class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f55340a;
+        public static final /* synthetic */ int[] f55356a;
 
         static {
             int[] iArr = new int[e.values().length];
             try {
-                iArr[e.f55331p.ordinal()] = 1;
+                iArr[e.f55347p.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[e.f55333r.ordinal()] = 2;
+                iArr[e.f55349r.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[e.f55332q.ordinal()] = 3;
+                iArr[e.f55348q.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                iArr[e.f55334s.ordinal()] = 4;
+                iArr[e.f55350s.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                iArr[e.f55336u.ordinal()] = 5;
+                iArr[e.f55352u.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
-            f55340a = iArr;
+            f55356a = iArr;
         }
     }
 
     static {
         e[] a10 = a();
-        f55337v = a10;
-        f55338w = pr.a.a(a10);
-        f55328e = new a(null);
-        f55329i = values();
+        f55353v = a10;
+        f55354w = pr.a.a(a10);
+        f55344e = new a(null);
+        f55345i = values();
     }
 
     private e(String str, int i10, int i11) {
-        this.f55339d = i11;
+        this.f55355d = i11;
     }
 
     private static final /* synthetic */ e[] a() {
-        return new e[]{f55330o, f55331p, f55332q, f55333r, f55334s, f55335t, f55336u};
+        return new e[]{f55346o, f55347p, f55348q, f55349r, f55350s, f55351t, f55352u};
     }
 
     public static e valueOf(String str) {
@@ -106,12 +106,12 @@ public final class e {
     }
 
     public static e[] values() {
-        return (e[]) f55337v.clone();
+        return (e[]) f55353v.clone();
     }
 
     @Override // java.lang.Enum
     public String toString() {
-        int i10 = b.f55340a[ordinal()];
+        int i10 = b.f55356a[ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {

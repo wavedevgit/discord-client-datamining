@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var3;
     var3 = function() { // Environment: var1
         var0 = function(arg0, arg1, arg2) { // Original name: inBoundingBox, environment: var0
-            _fun105438: for (var _fun105438_ip = 0;;) switch (_fun105438_ip) {
+            _fun105700: for (var _fun105700_ip = 0;;) switch (_fun105700_ip) {
                 case 0:
                     var2 = arg1;
                     var4 = arg2;
@@ -43,16 +43,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = null;
                     var0 = var0 != var3;
                     if (!var0) {
-                        _fun105438_ip = 110;
-                        continue _fun105438
+                        _fun105700_ip = 110;
+                        continue _fun105700
                     }
                 case 30:
                     var5 = var2.left;
                     var1 = var3.absoluteX;
                     var1 = var5 < var1;
                     if (!var1) {
-                        _fun105438_ip = 63;
-                        continue _fun105438
+                        _fun105700_ip = 63;
+                        continue _fun105700
                     }
                 case 48:
                     var6 = var3.absoluteX;
@@ -60,8 +60,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var6 < var5;
                 case 63:
                     if (!var1) {
-                        _fun105438_ip = 85;
-                        continue _fun105438
+                        _fun105700_ip = 85;
+                        continue _fun105700
                     }
                 case 66:
                     var6 = var2.top;
@@ -70,8 +70,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var6 < var5;
                 case 85:
                     if (!var1) {
-                        _fun105438_ip = 107;
-                        continue _fun105438
+                        _fun105700_ip = 107;
+                        continue _fun105700
                     }
                 case 88:
                     var3 = var3.absoluteY;
@@ -105,7 +105,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/search/native/components/layout/autocomplete/useSearchSuggestionsGesture.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: useSearchSuggestionsGesture, environment: var1
-        _fun105439: for (var _fun105439_ip = 0;;) switch (_fun105439_ip) {
+        _fun105701: for (var _fun105701_ip = 0;;) switch (_fun105701_ip) {
             case 0:
                 var11 = arg0;
                 var _closure2_slot0 = var11;
@@ -130,13 +130,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(1);
                 var4[0] = var7;
                 var2 = function(arg0, arg1) { // Environment: var0
-                    _fun105440: for (var _fun105440_ip = 0;;) switch (_fun105440_ip) {
+                    _fun105702: for (var _fun105702_ip = 0;;) switch (_fun105702_ip) {
                         case 0:
                             var1 = arg0;
                             var0 = arg1;
                             if (!(var1 !== var0)) {
-                                _fun105440_ip = 29;
-                                continue _fun105440
+                                _fun105702_ip = 29;
+                                continue _fun105702
                             }
                         case 10:
                             var2 = _closure2_slot1;
@@ -177,8 +177,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var2.bind(var5)();
                 var2 = 0;
                 if (!var5) {
-                    _fun105439_ip = 200;
-                    continue _fun105439
+                    _fun105701_ip = 200;
+                    continue _fun105701
                 }
             case 197:
                 var2 = var4;
@@ -205,7 +205,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var1.bind(var2)(var0);
                     var1 = var2.onTouchesDown;
                     var0 = function(arg0, arg1) { // Original name: e, environment: var0
-                        _fun105443: for (var _fun105443_ip = 0;;) switch (_fun105443_ip) {
+                        _fun105705: for (var _fun105705_ip = 0;;) switch (_fun105705_ip) {
                             case 0:
                                 var1 = arg1;
                                 var0 = var1.fail;
@@ -216,8 +216,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1 = null;
                                 var1 = var1 == var6;
                                 if (var1) {
-                                    _fun105443_ip = 61;
-                                    continue _fun105443
+                                    _fun105705_ip = 61;
+                                    continue _fun105705
                                 }
                             case 38:
                                 var5 = _closure1_slot6;
@@ -227,8 +227,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1 = var5.bind(var3)(var2, var6, var4);
                             case 61:
                                 if (var1) {
-                                    _fun105443_ip = 80;
-                                    continue _fun105443
+                                    _fun105705_ip = 80;
+                                    continue _fun105705
                                 }
                             case 64:
                                 var2 = _closure2_slot1;
@@ -309,4 +309,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useSearchSuggestionsGesture = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 8921, 3677, 1568, 478, 4917, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 8925, 3679, 1568, 478, 4923, 2]);

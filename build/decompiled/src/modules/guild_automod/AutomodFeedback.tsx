@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.RaidAlertType = var5;
     var2.RaidResolutionType = var4;
     var3 = function(arg0) { // Original name: getMostImportantRaidResolutionType, environment: var3
-        _fun40711: for (var _fun40711_ip = 0;;) switch (_fun40711_ip) {
+        _fun40762: for (var _fun40762_ip = 0;;) switch (_fun40762_ip) {
             case 0:
                 var3 = arg0;
                 var2 = var3.includes;
@@ -108,8 +108,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.LEGITIMATE_ACTIVITY;
                 var0 = var2.bind(var3)(var0);
                 if (var0) {
-                    _fun40711_ip = 107;
-                    continue _fun40711
+                    _fun40762_ip = 107;
+                    continue _fun40762
                 }
             case 29:
                 var2 = var3.includes;
@@ -117,8 +117,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.DM_SPAM;
                 var0 = var2.bind(var3)(var0);
                 if (var0) {
-                    _fun40711_ip = 95;
-                    continue _fun40711
+                    _fun40762_ip = 95;
+                    continue _fun40762
                 }
             case 52:
                 var2 = var3.includes;
@@ -127,24 +127,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.bind(var3)(var0);
                 var2 = _closure1_slot3;
                 if (var0) {
-                    _fun40711_ip = 87;
-                    continue _fun40711
+                    _fun40762_ip = 87;
+                    continue _fun40762
                 }
             case 79:
                 var0 = var2.OTHER;
-                _fun40711_ip = 93;
-                continue _fun40711;
+                _fun40762_ip = 93;
+                continue _fun40762;
             case 87:
                 var0 = var2.JOIN_RAID;
             case 93:
-                _fun40711_ip = 105;
-                continue _fun40711;
+                _fun40762_ip = 105;
+                continue _fun40762;
             case 95:
                 var2 = _closure1_slot3;
                 var0 = var2.DM_SPAM;
             case 105:
-                _fun40711_ip = 117;
-                continue _fun40711;
+                _fun40762_ip = 117;
+                continue _fun40762;
             case 107:
                 var1 = _closure1_slot3;
                 var0 = var1.LEGITIMATE_ACTIVITY;

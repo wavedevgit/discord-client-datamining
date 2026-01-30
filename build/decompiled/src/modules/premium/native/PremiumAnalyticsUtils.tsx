@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var8;
     var0 = function(arg0) { // Original name: getBaseAnalyticsFields, environment: var1
-        _fun57979: for (var _fun57979_ip = 0;;) switch (_fun57979_ip) {
+        _fun58023: for (var _fun58023_ip = 0;;) switch (_fun58023_ip) {
             case 0:
                 var2 = arg0;
                 var0 = {};
@@ -18,8 +18,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = undefined;
                 var4 = undefined;
                 if (var5) {
-                    _fun57979_ip = 23;
-                    continue _fun57979
+                    _fun58023_ip = 23;
+                    continue _fun58023
                 }
             case 18:
                 var4 = var2.id;
@@ -28,8 +28,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var3 == var2;
                 var4 = undefined;
                 if (var5) {
-                    _fun57979_ip = 42;
-                    continue _fun57979
+                    _fun58023_ip = 42;
+                    continue _fun58023
                 }
             case 37:
                 var4 = var2.type;
@@ -38,8 +38,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var3 != var2;
                 var4 = undefined;
                 if (!var5) {
-                    _fun57979_ip = 107;
-                    continue _fun57979
+                    _fun58023_ip = 107;
+                    continue _fun58023
                 }
             case 56:
                 var6 = _closure1_slot0;
@@ -52,8 +52,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var3 == var6;
                 var5 = undefined;
                 if (var7) {
-                    _fun57979_ip = 104;
-                    continue _fun57979
+                    _fun58023_ip = 104;
+                    continue _fun58023
                 }
             case 99:
                 var5 = var6.id;
@@ -64,8 +64,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var3 == var2;
                 var4 = undefined;
                 if (var5) {
-                    _fun57979_ip = 127;
-                    continue _fun57979
+                    _fun58023_ip = 127;
+                    continue _fun58023
                 }
             case 121:
                 var4 = var2.paymentGatewayPlanId;
@@ -74,8 +74,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3 == var2;
                 var1 = undefined;
                 if (var3) {
-                    _fun57979_ip = 146;
-                    continue _fun57979
+                    _fun58023_ip = 146;
+                    continue _fun58023
                 }
             case 141:
                 var1 = var2.status;
@@ -168,15 +168,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.bind(var8)(var6);
     var2.PaymentFlowStep = var5;
     var5 = function(arg0) { // Original name: getBasePurchaseFlowAnalyticsFields, environment: var1
-        _fun57980: for (var _fun57980_ip = 0;;) switch (_fun57980_ip) {
+        _fun58024: for (var _fun58024_ip = 0;;) switch (_fun58024_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.analyticsLoadId;
                 var4 = var0.isGift;
                 var1 = undefined;
                 if (!(var4 === var1)) {
-                    _fun57980_ip = 23;
-                    continue _fun57980
+                    _fun58024_ip = 23;
+                    continue _fun58024
                 }
             case 21:
                 var4 = false;
@@ -200,8 +200,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3 == var2;
                 var1 = undefined;
                 if (var3) {
-                    _fun57980_ip = 113;
-                    continue _fun57980
+                    _fun58024_ip = 113;
+                    continue _fun58024
                 }
             case 108:
                 var1 = var2.section;

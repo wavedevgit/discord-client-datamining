@@ -17,19 +17,19 @@ import zs.k;
 public final class g extends at.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final KClass f53799a;
+    private final KClass f53815a;
 
     /* renamed from: b  reason: collision with root package name */
-    private List f53800b;
+    private List f53816b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Lazy f53801c;
+    private final Lazy f53817c;
 
     public g(KClass baseClass) {
         Intrinsics.checkNotNullParameter(baseClass, "baseClass");
-        this.f53799a = baseClass;
-        this.f53800b = CollectionsKt.l();
-        this.f53801c = ir.l.a(ir.o.f31103e, new Function0() { // from class: xs.e
+        this.f53815a = baseClass;
+        this.f53816b = CollectionsKt.l();
+        this.f53817c = ir.l.a(ir.o.f31119e, new Function0() { // from class: xs.e
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 SerialDescriptor h10;
@@ -41,7 +41,7 @@ public final class g extends at.b {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final SerialDescriptor h(final g gVar) {
-        return zs.b.c(zs.j.d("kotlinx.serialization.Polymorphic", d.a.f56081a, new SerialDescriptor[0], new Function1() { // from class: xs.f
+        return zs.b.c(zs.j.d("kotlinx.serialization.Polymorphic", d.a.f56097a, new SerialDescriptor[0], new Function1() { // from class: xs.f
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit i10;
@@ -55,19 +55,19 @@ public final class g extends at.b {
     public static final Unit i(g gVar, zs.a buildSerialDescriptor) {
         Intrinsics.checkNotNullParameter(buildSerialDescriptor, "$this$buildSerialDescriptor");
         zs.a.b(buildSerialDescriptor, "type", ys.a.J(StringCompanionObject.INSTANCE).getDescriptor(), null, false, 12, null);
-        zs.a.b(buildSerialDescriptor, "value", zs.j.e("kotlinx.serialization.Polymorphic<" + gVar.e().getSimpleName() + '>', k.a.f56100a, new SerialDescriptor[0], null, 8, null), null, false, 12, null);
-        buildSerialDescriptor.h(gVar.f53800b);
-        return Unit.f33282a;
+        zs.a.b(buildSerialDescriptor, "value", zs.j.e("kotlinx.serialization.Polymorphic<" + gVar.e().getSimpleName() + '>', k.a.f56116a, new SerialDescriptor[0], null, 8, null), null, false, 12, null);
+        buildSerialDescriptor.h(gVar.f53816b);
+        return Unit.f33298a;
     }
 
     @Override // at.b
     public KClass e() {
-        return this.f53799a;
+        return this.f53815a;
     }
 
     @Override // kotlinx.serialization.KSerializer, xs.o, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
-        return (SerialDescriptor) this.f53801c.getValue();
+        return (SerialDescriptor) this.f53817c.getValue();
     }
 
     public String toString() {
@@ -79,6 +79,6 @@ public final class g extends at.b {
         this(baseClass);
         Intrinsics.checkNotNullParameter(baseClass, "baseClass");
         Intrinsics.checkNotNullParameter(classAnnotations, "classAnnotations");
-        this.f53800b = kotlin.collections.i.e(classAnnotations);
+        this.f53816b = kotlin.collections.i.e(classAnnotations);
     }
 }

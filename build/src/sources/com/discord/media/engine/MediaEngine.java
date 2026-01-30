@@ -440,7 +440,7 @@ public final class MediaEngine {
     public static final Unit setBroadcastThumbnailParams$lambda$54$lambda$53(MediaEngine mediaEngine, Function1 function1, Bitmap bitmap) {
         Intrinsics.checkNotNullParameter(bitmap, "bitmap");
         gs.i.d(mediaEngine.coroutineScope, null, null, new MediaEngine$setBroadcastThumbnailParams$1$1$1(bitmap, function1, null), 3, null);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -470,7 +470,7 @@ public final class MediaEngine {
         Function2<? super String, ? super Boolean, Unit> function2 = this.activeSinksChangeCallback;
         if (function2 != null) {
             function2.invoke(streamId, Boolean.valueOf(z10));
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -479,7 +479,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "configureConnectionRetries");
         if (connection != null) {
             connection.configureConnectionRetries(i11, i12, i13);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -494,7 +494,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "destroyUser");
         if (connection != null) {
             connection.destroyUser(userId);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -503,7 +503,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "executeSecureFramesTransition");
         if (connection != null) {
             connection.executeSecureFramesTransition(i11);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -512,7 +512,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "fastUdpReconnect");
         if (connection != null) {
             connection.fastUdpReconnect();
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -527,7 +527,7 @@ public final class MediaEngine {
                     MediaEngine.connectionInstanceGetEncryptionModes$lambda$55(Function1.this, strArr);
                 }
             });
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -542,7 +542,7 @@ public final class MediaEngine {
                     MediaEngine.connectionInstanceGetFilteredStats$lambda$57(Function1.this, str);
                 }
             });
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -557,7 +557,7 @@ public final class MediaEngine {
                     MediaEngine.connectionInstanceGetMLSKeyPackageB64$lambda$59(Function1.this, str);
                 }
             });
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -573,7 +573,7 @@ public final class MediaEngine {
                     MediaEngine.connectionInstanceGetMLSPairwiseFingerprintB64$lambda$63(Function1.this, str);
                 }
             });
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -588,7 +588,7 @@ public final class MediaEngine {
                     MediaEngine.connectionInstanceGetStats$lambda$56(Function1.this, str);
                 }
             });
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -598,7 +598,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "mergeUsers");
         if (connection != null) {
             connection.mergeUsers(usersJSON);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -614,7 +614,7 @@ public final class MediaEngine {
                     MediaEngine.connectionInstancePrepareMLSCommitTransitionB64$lambda$61(Function3.this, z10, i12, str);
                 }
             });
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -625,7 +625,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "prepareSecureFramesEpoch");
         if (connection != null) {
             connection.prepareSecureFramesEpoch(epoch, i11, groupId);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -640,7 +640,7 @@ public final class MediaEngine {
                     Function0.this.invoke();
                 }
             });
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -656,7 +656,7 @@ public final class MediaEngine {
                     MediaEngine.connectionInstanceProcessMLSProposalsB64$lambda$60(Function1.this, str);
                 }
             });
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -672,7 +672,7 @@ public final class MediaEngine {
                     MediaEngine.connectionInstanceProcessMLSWelcomeB64$lambda$62(Function3.this, z10, i12, str);
                 }
             });
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -682,7 +682,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "setLocalMute");
         if (connection != null) {
             connection.setLocalMute(userId, z10);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -692,7 +692,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "setLocalPan");
         if (connection != null) {
             connection.setLocalPan(userId, f10, f11);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -702,7 +702,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "setLocalVolume");
         if (connection != null) {
             connection.setLocalVolume(userId, f10);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -711,7 +711,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "setMinimumOutputDelay");
         if (connection != null) {
             connection.setMinimumOutputDelay(i11);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -720,7 +720,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "setNoInputThreshold");
         if (connection != null) {
             connection.setNoInputThreshold(f10);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -735,7 +735,7 @@ public final class MediaEngine {
                     MediaEngine.connectionInstanceSetOnFirstFrameCallback$lambda$48(Function3.this, str, j10, str2);
                 }
             });
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -750,7 +750,7 @@ public final class MediaEngine {
                     MediaEngine.connectionInstanceSetOnMLSFailureCallback$lambda$50(Function2.this, str, str2);
                 }
             });
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -765,7 +765,7 @@ public final class MediaEngine {
                     MediaEngine.connectionInstanceSetOnPingCallback$lambda$46(Function4.this, i11, str, i12, i13);
                 }
             });
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -780,7 +780,7 @@ public final class MediaEngine {
                     MediaEngine.connectionInstanceSetOnPingTimeoutCallback$lambda$47(Function4.this, str, i11, i12, i13);
                 }
             });
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -795,7 +795,7 @@ public final class MediaEngine {
                     MediaEngine.connectionInstanceSetOnSpeakingCallback$lambda$45(Function3.this, str, i11, f10);
                 }
             });
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -810,7 +810,7 @@ public final class MediaEngine {
                     MediaEngine.connectionInstanceSetOnVideoCallback$lambda$49(Function4.this, str, j10, str2, str3);
                 }
             });
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -819,7 +819,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "setPTTActive");
         if (connection != null) {
             connection.setPTTActive(z10, z11, z12);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -828,7 +828,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "setPingInterval");
         if (connection != null) {
             connection.setPingInterval(i11);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -843,7 +843,7 @@ public final class MediaEngine {
                     MediaEngine.connectionInstanceSetSecureFramesStateUpdateCallback$lambda$51(Function1.this, str);
                 }
             });
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -852,7 +852,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "setSelfDeafen");
         if (connection != null) {
             connection.setSelfDeafen(z10);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -861,7 +861,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "setSelfMute");
         if (connection != null) {
             connection.setSelfMute(z10);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -871,7 +871,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "setTransportOptions");
         if (connection != null) {
             connection.setTransportOptions(optionsJSON);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -880,7 +880,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "setVideoBroadcast");
         if (connection != null) {
             connection.setVideoBroadcast(z10);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -918,7 +918,7 @@ public final class MediaEngine {
         NativeConnection connection = getConnection(i10, "updateMLSExternalSenderB64");
         if (connection != null) {
             connection.updateMLSExternalSenderB64(externalSender);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -946,7 +946,7 @@ public final class MediaEngine {
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
                     m921invoke();
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
@@ -1129,7 +1129,7 @@ public final class MediaEngine {
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
                     m922invoke();
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
@@ -1151,7 +1151,7 @@ public final class MediaEngine {
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
                     m923invoke();
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
@@ -1188,7 +1188,7 @@ public final class MediaEngine {
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
                     m924invoke();
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
@@ -1209,7 +1209,7 @@ public final class MediaEngine {
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
                     m925invoke();
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
@@ -1230,7 +1230,7 @@ public final class MediaEngine {
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
                     m926invoke();
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
@@ -1251,7 +1251,7 @@ public final class MediaEngine {
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
                     m927invoke();
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
@@ -1272,7 +1272,7 @@ public final class MediaEngine {
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
                     m929invoke();
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
@@ -1293,7 +1293,7 @@ public final class MediaEngine {
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
                     m930invoke();
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
@@ -1315,7 +1315,7 @@ public final class MediaEngine {
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
                     m931invoke();
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
@@ -1337,7 +1337,7 @@ public final class MediaEngine {
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
                     m932invoke();
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
@@ -1358,7 +1358,7 @@ public final class MediaEngine {
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
                     m933invoke();
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
@@ -1379,7 +1379,7 @@ public final class MediaEngine {
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
                     m935invoke();
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
@@ -1405,7 +1405,7 @@ public final class MediaEngine {
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
                     m936invoke();
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
@@ -1427,7 +1427,7 @@ public final class MediaEngine {
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
                     m937invoke();
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
@@ -1454,7 +1454,7 @@ public final class MediaEngine {
             @Override // kotlin.jvm.functions.Function0
             public /* bridge */ /* synthetic */ Object invoke() {
                 m939invoke();
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
 
             /* renamed from: invoke  reason: collision with other method in class */
@@ -1512,7 +1512,7 @@ public final class MediaEngine {
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
                     m928invoke();
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
@@ -1534,7 +1534,7 @@ public final class MediaEngine {
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
                     m934invoke();
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */
@@ -1555,7 +1555,7 @@ public final class MediaEngine {
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
                     m938invoke();
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */

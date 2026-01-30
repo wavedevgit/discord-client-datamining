@@ -3,5 +3,5 @@ package yo;
 public abstract class n {
 
     /* renamed from: a  reason: collision with root package name */
-    public static int f54889a = 2131427398;
+    public static int f54905a = 2131427398;
 }

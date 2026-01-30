@@ -14,13 +14,13 @@ import okio.ByteString;
 public final class m {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f49719c = new a(null);
+    public static final a f49735c = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Lazy f49720a;
+    private final Lazy f49736a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Lazy f49721b;
+    private final Lazy f49737b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -31,24 +31,24 @@ public final class m {
         public static final class C0646a extends Lambda implements Function0 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ BufferedSource f49722d;
+            final /* synthetic */ BufferedSource f49738d;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             C0646a(BufferedSource bufferedSource) {
                 super(0);
-                this.f49722d = bufferedSource;
+                this.f49738d = bufferedSource;
             }
 
             @Override // kotlin.jvm.functions.Function0
             /* renamed from: a */
             public final Map invoke() {
-                int readInt = this.f49722d.readInt();
-                BufferedSource bufferedSource = this.f49722d;
+                int readInt = this.f49738d.readInt();
+                BufferedSource bufferedSource = this.f49738d;
                 Map d10 = o0.d(readInt);
                 int i10 = 0;
                 while (i10 < readInt) {
                     i10++;
-                    d10.put(um.k.f50455c.a(j.a(bufferedSource)), m.f49719c.a(j.a(bufferedSource)));
+                    d10.put(um.k.f50471c.a(j.a(bufferedSource)), m.f49735c.a(j.a(bufferedSource)));
                 }
                 return o0.b(d10);
             }
@@ -61,7 +61,7 @@ public final class m {
         public final m a(ByteString bytes) {
             Intrinsics.checkNotNullParameter(bytes, "bytes");
             Buffer a22 = new Buffer().a2(bytes);
-            return new m(i.f49706c.b(j.a(a22)), new C0646a(a22));
+            return new m(i.f49722c.b(j.a(a22)), new C0646a(a22));
         }
 
         private a() {
@@ -72,18 +72,18 @@ public final class m {
     static final class b extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ i f49723d;
+        final /* synthetic */ i f49739d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(i iVar) {
             super(0);
-            this.f49723d = iVar;
+            this.f49739d = iVar;
         }
 
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
         public final i invoke() {
-            i iVar = this.f49723d;
+            i iVar = this.f49739d;
             if (iVar == null || iVar.b().G() == 0) {
                 return null;
             }
@@ -93,17 +93,17 @@ public final class m {
 
     public m(i iVar, Function0 childTreeSnapshots) {
         Intrinsics.checkNotNullParameter(childTreeSnapshots, "childTreeSnapshots");
-        ir.o oVar = ir.o.f31104i;
-        this.f49720a = ir.l.a(oVar, new b(iVar));
-        this.f49721b = ir.l.a(oVar, childTreeSnapshots);
+        ir.o oVar = ir.o.f31120i;
+        this.f49736a = ir.l.a(oVar, new b(iVar));
+        this.f49737b = ir.l.a(oVar, childTreeSnapshots);
     }
 
     public final Map a() {
-        return (Map) this.f49721b.getValue();
+        return (Map) this.f49737b.getValue();
     }
 
     public final i b() {
-        return (i) this.f49720a.getValue();
+        return (i) this.f49736a.getValue();
     }
 
     /* JADX WARN: Removed duplicated region for block: B:29:0x0060 A[SYNTHETIC] */
@@ -126,7 +126,7 @@ public final class m {
             okio.ByteString r1 = r1.b()
         L12:
             if (r1 != 0) goto L16
-            okio.ByteString r1 = okio.ByteString.f44364p
+            okio.ByteString r1 = okio.ByteString.f44380p
         L16:
             tm.j.c(r0, r1)
             java.util.Map r1 = r7.a()

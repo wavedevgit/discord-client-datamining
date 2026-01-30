@@ -9,13 +9,13 @@ import org.jetbrains.annotations.NotNull;
 public abstract class ValueParameterCountCheck implements Check {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f36077a;
+    private final String f36093a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class AtLeast extends ValueParameterCountCheck {
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f36078b;
+        private final int f36094b;
 
         /* JADX WARN: Illegal instructions before constructor call */
         /*
@@ -43,7 +43,7 @@ public abstract class ValueParameterCountCheck implements Check {
                 java.lang.String r0 = r0.toString()
                 r1 = 0
                 r2.<init>(r0, r1)
-                r2.f36078b = r3
+                r2.f36094b = r3
                 return
             */
             throw new UnsupportedOperationException("Method not decompiled: kotlin.reflect.jvm.internal.impl.util.ValueParameterCountCheck.AtLeast.<init>(int):void");
@@ -52,7 +52,7 @@ public abstract class ValueParameterCountCheck implements Check {
         @Override // kotlin.reflect.jvm.internal.impl.util.Check
         public boolean check(@NotNull FunctionDescriptor functionDescriptor) {
             Intrinsics.checkNotNullParameter(functionDescriptor, "functionDescriptor");
-            if (functionDescriptor.getValueParameters().size() >= this.f36078b) {
+            if (functionDescriptor.getValueParameters().size() >= this.f36094b) {
                 return true;
             }
             return false;
@@ -63,17 +63,17 @@ public abstract class ValueParameterCountCheck implements Check {
     public static final class Equals extends ValueParameterCountCheck {
 
         /* renamed from: b  reason: collision with root package name */
-        private final int f36079b;
+        private final int f36095b;
 
         public Equals(int i10) {
             super("must have exactly " + i10 + " value parameters", null);
-            this.f36079b = i10;
+            this.f36095b = i10;
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.util.Check
         public boolean check(@NotNull FunctionDescriptor functionDescriptor) {
             Intrinsics.checkNotNullParameter(functionDescriptor, "functionDescriptor");
-            if (functionDescriptor.getValueParameters().size() == this.f36079b) {
+            if (functionDescriptor.getValueParameters().size() == this.f36095b) {
                 return true;
             }
             return false;
@@ -122,7 +122,7 @@ public abstract class ValueParameterCountCheck implements Check {
     @Override // kotlin.reflect.jvm.internal.impl.util.Check
     @NotNull
     public String getDescription() {
-        return this.f36077a;
+        return this.f36093a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.util.Check
@@ -131,6 +131,6 @@ public abstract class ValueParameterCountCheck implements Check {
     }
 
     private ValueParameterCountCheck(String str) {
-        this.f36077a = str;
+        this.f36093a = str;
     }
 }

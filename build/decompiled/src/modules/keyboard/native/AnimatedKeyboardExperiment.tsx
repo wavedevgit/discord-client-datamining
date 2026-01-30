@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.AnimatedKeyboardExperiment = var3;
     var1 = function() { // Original name: isAnimatedAndroidKeyboard, environment: var1
-        _fun89385: for (var _fun89385_ip = 0;;) switch (_fun89385_ip) {
+        _fun89622: for (var _fun89622_ip = 0;;) switch (_fun89622_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -61,8 +61,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = !var0;
                 var0 = !var2;
                 if (var2) {
-                    _fun89385_ip = 48;
-                    continue _fun89385
+                    _fun89622_ip = 48;
+                    continue _fun89622
                 }
             case 44:
                 var0 = _closure1_slot2;

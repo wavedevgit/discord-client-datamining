@@ -4,13 +4,13 @@ package ls;
 public final class y {
 
     /* renamed from: a  reason: collision with root package name */
-    public final p f37488a;
+    public final p f37504a;
 
     public y(p pVar) {
-        this.f37488a = pVar;
+        this.f37504a = pVar;
     }
 
     public String toString() {
-        return "Removed[" + this.f37488a + ']';
+        return "Removed[" + this.f37504a + ']';
     }
 }

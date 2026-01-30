@@ -13,7 +13,7 @@ public final class JsonNull extends JsonPrimitive {
     public static final JsonNull INSTANCE = new JsonNull();
 
     /* renamed from: d  reason: collision with root package name */
-    private static final String f36416d = "null";
+    private static final String f36432d = "null";
 
     private JsonNull() {
         super(null);
@@ -21,7 +21,7 @@ public final class JsonNull extends JsonPrimitive {
 
     @Override // kotlinx.serialization.json.JsonPrimitive
     public String b() {
-        return f36416d;
+        return f36432d;
     }
 
     @Override // kotlinx.serialization.json.JsonPrimitive

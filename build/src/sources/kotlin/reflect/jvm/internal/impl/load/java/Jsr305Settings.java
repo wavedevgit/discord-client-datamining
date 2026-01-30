@@ -16,40 +16,40 @@ import org.jetbrains.annotations.NotNull;
 public final class Jsr305Settings {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ReportLevel f33999a;
+    private final ReportLevel f34015a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ReportLevel f34000b;
+    private final ReportLevel f34016b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f34001c;
+    private final Map f34017c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Lazy f34002d;
+    private final Lazy f34018d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f34003e;
+    private final boolean f34019e;
 
     public Jsr305Settings(@NotNull ReportLevel globalLevel, ReportLevel reportLevel, @NotNull Map<FqName, ? extends ReportLevel> userDefinedLevelForSpecificAnnotation) {
         Intrinsics.checkNotNullParameter(globalLevel, "globalLevel");
         Intrinsics.checkNotNullParameter(userDefinedLevelForSpecificAnnotation, "userDefinedLevelForSpecificAnnotation");
-        this.f33999a = globalLevel;
-        this.f34000b = reportLevel;
-        this.f34001c = userDefinedLevelForSpecificAnnotation;
-        this.f34002d = l.b(new g(this));
+        this.f34015a = globalLevel;
+        this.f34016b = reportLevel;
+        this.f34017c = userDefinedLevelForSpecificAnnotation;
+        this.f34018d = l.b(new g(this));
         ReportLevel reportLevel2 = ReportLevel.IGNORE;
-        this.f34003e = globalLevel == reportLevel2 && reportLevel == reportLevel2 && userDefinedLevelForSpecificAnnotation.isEmpty();
+        this.f34019e = globalLevel == reportLevel2 && reportLevel == reportLevel2 && userDefinedLevelForSpecificAnnotation.isEmpty();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final String[] b(Jsr305Settings jsr305Settings) {
         List c10 = CollectionsKt.c();
-        c10.add(jsr305Settings.f33999a.getDescription());
-        ReportLevel reportLevel = jsr305Settings.f34000b;
+        c10.add(jsr305Settings.f34015a.getDescription());
+        ReportLevel reportLevel = jsr305Settings.f34016b;
         if (reportLevel != null) {
             c10.add("under-migration:" + reportLevel.getDescription());
         }
-        for (Map.Entry entry : jsr305Settings.f34001c.entrySet()) {
+        for (Map.Entry entry : jsr305Settings.f34017c.entrySet()) {
             c10.add('@' + entry.getKey() + ':' + ((ReportLevel) entry.getValue()).getDescription());
         }
         return (String[]) CollectionsKt.a(c10).toArray(new String[0]);
@@ -61,38 +61,38 @@ public final class Jsr305Settings {
         }
         if (obj instanceof Jsr305Settings) {
             Jsr305Settings jsr305Settings = (Jsr305Settings) obj;
-            return this.f33999a == jsr305Settings.f33999a && this.f34000b == jsr305Settings.f34000b && Intrinsics.areEqual(this.f34001c, jsr305Settings.f34001c);
+            return this.f34015a == jsr305Settings.f34015a && this.f34016b == jsr305Settings.f34016b && Intrinsics.areEqual(this.f34017c, jsr305Settings.f34017c);
         }
         return false;
     }
 
     @NotNull
     public final ReportLevel getGlobalLevel() {
-        return this.f33999a;
+        return this.f34015a;
     }
 
     public final ReportLevel getMigrationLevel() {
-        return this.f34000b;
+        return this.f34016b;
     }
 
     @NotNull
     public final Map<FqName, ReportLevel> getUserDefinedLevelForSpecificAnnotation() {
-        return this.f34001c;
+        return this.f34017c;
     }
 
     public int hashCode() {
-        int hashCode = this.f33999a.hashCode() * 31;
-        ReportLevel reportLevel = this.f34000b;
-        return ((hashCode + (reportLevel == null ? 0 : reportLevel.hashCode())) * 31) + this.f34001c.hashCode();
+        int hashCode = this.f34015a.hashCode() * 31;
+        ReportLevel reportLevel = this.f34016b;
+        return ((hashCode + (reportLevel == null ? 0 : reportLevel.hashCode())) * 31) + this.f34017c.hashCode();
     }
 
     public final boolean isDisabled() {
-        return this.f34003e;
+        return this.f34019e;
     }
 
     @NotNull
     public String toString() {
-        return "Jsr305Settings(globalLevel=" + this.f33999a + ", migrationLevel=" + this.f34000b + ", userDefinedLevelForSpecificAnnotation=" + this.f34001c + ')';
+        return "Jsr305Settings(globalLevel=" + this.f34015a + ", migrationLevel=" + this.f34016b + ", userDefinedLevelForSpecificAnnotation=" + this.f34017c + ')';
     }
 
     public /* synthetic */ Jsr305Settings(ReportLevel reportLevel, ReportLevel reportLevel2, Map map, int i10, DefaultConstructorMarker defaultConstructorMarker) {

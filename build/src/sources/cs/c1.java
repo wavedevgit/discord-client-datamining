@@ -399,7 +399,7 @@ public abstract class c1 implements ClassBasedDeclarationContainer {
         Class<?> jClass = getJClass();
         ArrayList arrayList = new ArrayList();
         g(arrayList, y(desc, false).a(), true);
-        Unit unit = Unit.f33282a;
+        Unit unit = Unit.f33298a;
         return A(jClass, arrayList);
     }
 
@@ -564,7 +564,7 @@ public abstract class c1 implements ClassBasedDeclarationContainer {
             if (r5 != 0) goto L4e
             boolean r4 = r9.d(r4)
             if (r4 == 0) goto L4e
-            kotlin.Unit r4 = kotlin.Unit.f33282a
+            kotlin.Unit r4 = kotlin.Unit.f33298a
             java.lang.Object r3 = r3.accept(r0, r4)
             cs.a0 r3 = (cs.a0) r3
             goto L4f

@@ -11,10 +11,10 @@ import zs.e;
 public final class g implements KSerializer {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final g f52757a = new g();
+    public static final g f52773a = new g();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f52758b = zs.j.b("kotlinx.datetime.LocalTime", e.i.f56091a);
+    private static final SerialDescriptor f52774b = zs.j.b("kotlinx.datetime.LocalTime", e.i.f56107a);
 
     private g() {
     }
@@ -36,6 +36,6 @@ public final class g implements KSerializer {
 
     @Override // kotlinx.serialization.KSerializer, xs.o, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
-        return f52758b;
+        return f52774b;
     }
 }

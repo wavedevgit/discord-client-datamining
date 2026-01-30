@@ -13,7 +13,7 @@ import tu.d;
 public final class c implements ku.a, f, tu.d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f39578a = new c();
+    public static final c f39594a = new c();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     /* synthetic */ class a extends FunctionReferenceImpl implements Function2 {
@@ -41,7 +41,7 @@ public final class c implements ku.a, f, tu.d {
         }
         ArrayList arrayList = new ArrayList();
         for (Object obj : b10) {
-            if (f39578a.i(hVar, obj, bVar.a(), bVar.c())) {
+            if (f39594a.i(hVar, obj, bVar.a(), bVar.c())) {
                 arrayList.add(obj);
             }
         }

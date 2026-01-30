@@ -5,23 +5,23 @@ import ui.c;
 final class e5 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final e5 f41061a = new e5();
+    static final e5 f41077a = new e5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41062b;
+    private static final ui.c f41078b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41063c;
+    private static final ui.c f41079c;
 
     static {
         c.b a10 = ui.c.a("detectorOptions");
         f fVar = new f();
         fVar.a(1);
-        f41062b = a10.b(fVar.b()).a();
+        f41078b = a10.b(fVar.b()).a();
         c.b a11 = ui.c.a("errorCode");
         f fVar2 = new f();
         fVar2.a(2);
-        f41063c = a11.b(fVar2.b()).a();
+        f41079c = a11.b(fVar2.b()).a();
     }
 
     private e5() {

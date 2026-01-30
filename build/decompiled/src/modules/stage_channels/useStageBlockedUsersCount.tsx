@@ -42,15 +42,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var5;
         var0 = function() { // Environment: var0
-            _fun52927: for (var _fun52927_ip = 0;;) switch (_fun52927_ip) {
+            _fun52972: for (var _fun52972_ip = 0;;) switch (_fun52972_ip) {
                 case 0:
                     var1 = _closure2_slot0;
                     var0 = null;
                     var1 = var0 != var1;
                     var0 = 0;
                     if (!var1) {
-                        _fun52927_ip = 75;
-                        continue _fun52927
+                        _fun52972_ip = 75;
+                        continue _fun52972
                     }
                 case 18:
                     var4 = _closure1_slot2;
@@ -89,15 +89,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var5;
         var0 = function() { // Environment: var0
-            _fun52929: for (var _fun52929_ip = 0;;) switch (_fun52929_ip) {
+            _fun52974: for (var _fun52974_ip = 0;;) switch (_fun52974_ip) {
                 case 0:
                     var1 = _closure2_slot0;
                     var0 = null;
                     var1 = var0 != var1;
                     var0 = 0;
                     if (!var1) {
-                        _fun52929_ip = 75;
-                        continue _fun52929
+                        _fun52974_ip = 75;
+                        continue _fun52974
                     }
                 case 18:
                     var4 = _closure1_slot2;
@@ -121,7 +121,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useStageIgnoredUsersCount = var3;
     var3 = function(arg0) { // Original name: getStageBlockedUsersCount, environment: var1
-        _fun52930: for (var _fun52930_ip = 0;;) switch (_fun52930_ip) {
+        _fun52975: for (var _fun52975_ip = 0;;) switch (_fun52975_ip) {
             case 0:
                 var3 = _closure1_slot2;
                 var2 = var3.getParticipantCount;
@@ -139,8 +139,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0 != var1;
                 var0 = 0;
                 if (!var2) {
-                    _fun52930_ip = 70;
-                    continue _fun52930
+                    _fun52975_ip = 70;
+                    continue _fun52975
                 }
             case 67:
                 var0 = var1;
@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getStageBlockedUsersCount = var3;
     var3 = function(arg0) { // Original name: getStageIgnoredUsersCount, environment: var1
-        _fun52931: for (var _fun52931_ip = 0;;) switch (_fun52931_ip) {
+        _fun52976: for (var _fun52976_ip = 0;;) switch (_fun52976_ip) {
             case 0:
                 var3 = _closure1_slot2;
                 var2 = var3.getParticipantCount;
@@ -168,8 +168,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0 != var1;
                 var0 = 0;
                 if (!var2) {
-                    _fun52931_ip = 70;
-                    continue _fun52931
+                    _fun52976_ip = 70;
+                    continue _fun52976
                 }
             case 67:
                 var0 = var1;
@@ -247,4 +247,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useStageIgnoredUsers = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4203, 566, 5620, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4209, 566, 5623, 2]);

@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/UserSettingsProtoUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0, arg1) { // Original name: getProtoFieldClass, environment: var1
-        _fun15556: for (var _fun15556_ip = 0;;) switch (_fun15556_ip) {
+        _fun15557: for (var _fun15557_ip = 0;;) switch (_fun15557_ip) {
             case 0:
                 var4 = arg1;
                 var _closure2_slot0 = var4;
@@ -39,8 +39,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var2)(var0);
                 var0 = null;
                 if (!(var0 != var1)) {
-                    _fun15556_ip = 50;
-                    continue _fun15556
+                    _fun15557_ip = 50;
+                    continue _fun15557
                 }
             case 39:
                 var0 = var1.T;
@@ -62,21 +62,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getProtoFieldClass = var3;
     var1 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: createModifiedProto, environment: var1
-        _fun15558: for (var _fun15558_ip = 0;;) switch (_fun15558_ip) {
+        _fun15559: for (var _fun15559_ip = 0;;) switch (_fun15559_ip) {
             case 0:
                 var4 = arg0;
                 var6 = arg2;
                 var2 = arg3;
                 var0 = null;
                 if (!(var0 == var4)) {
-                    _fun15558_ip = 26;
-                    continue _fun15558
+                    _fun15559_ip = 26;
+                    continue _fun15559
                 }
             case 15:
                 var1 = var6.create;
                 var3 = var1.bind(var6)();
-                _fun15558_ip = 79;
-                continue _fun15558;
+                _fun15559_ip = 79;
+                continue _fun15559;
             case 26:
                 var5 = var6.fromBinary;
                 var1 = var6.toBinary;
@@ -95,8 +95,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.bind(var1)(var3);
                 var1 = false;
                 if (!(var1 !== var4)) {
-                    _fun15558_ip = 113;
-                    continue _fun15558
+                    _fun15559_ip = 113;
+                    continue _fun15559
                 }
             case 95:
                 var1 = var2.create;

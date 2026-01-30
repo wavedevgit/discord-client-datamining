@@ -6,32 +6,32 @@ import com.google.android.gms.common.util.k;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static Context f45112a;
+    private static Context f45128a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static Boolean f45113b;
+    private static Boolean f45129b;
 
     public static synchronized boolean a(Context context) {
         Boolean bool;
         synchronized (a.class) {
             Context applicationContext = context.getApplicationContext();
-            Context context2 = f45112a;
-            if (context2 != null && (bool = f45113b) != null && context2 == applicationContext) {
+            Context context2 = f45128a;
+            if (context2 != null && (bool = f45129b) != null && context2 == applicationContext) {
                 return bool.booleanValue();
             }
-            f45113b = null;
+            f45129b = null;
             if (k.e()) {
-                f45113b = Boolean.valueOf(applicationContext.getPackageManager().isInstantApp());
+                f45129b = Boolean.valueOf(applicationContext.getPackageManager().isInstantApp());
             } else {
                 try {
                     context.getClassLoader().loadClass("com.google.android.instantapps.supervisor.InstantAppsRuntime");
-                    f45113b = Boolean.TRUE;
+                    f45129b = Boolean.TRUE;
                 } catch (ClassNotFoundException unused) {
-                    f45113b = Boolean.FALSE;
+                    f45129b = Boolean.FALSE;
                 }
             }
-            f45112a = applicationContext;
-            return f45113b.booleanValue();
+            f45128a = applicationContext;
+            return f45129b.booleanValue();
         }
     }
 }

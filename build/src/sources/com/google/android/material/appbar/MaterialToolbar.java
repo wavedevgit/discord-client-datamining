@@ -40,7 +40,7 @@ public class MaterialToolbar extends Toolbar {
     private Boolean f15514m0;
 
     public MaterialToolbar(@NonNull Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, yg.b.f54349j0);
+        this(context, attributeSet, yg.b.f54365j0);
     }
 
     private Pair S(TextView textView, TextView textView2) {

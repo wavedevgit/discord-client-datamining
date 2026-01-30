@@ -8,39 +8,39 @@ import q.m0;
 public final class d extends m0.k {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f46270a;
+    private final String f46286a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Class f46271b;
+    private final Class f46287b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final a0.i2 f46272c;
+    private final a0.i2 f46288c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final a0.x2 f46273d;
+    private final a0.x2 f46289d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Size f46274e;
+    private final Size f46290e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final a0.m2 f46275f;
+    private final a0.m2 f46291f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final List f46276g;
+    private final List f46292g;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d(String str, Class cls, a0.i2 i2Var, a0.x2 x2Var, Size size, a0.m2 m2Var, List list) {
         if (str != null) {
-            this.f46270a = str;
+            this.f46286a = str;
             if (cls != null) {
-                this.f46271b = cls;
+                this.f46287b = cls;
                 if (i2Var != null) {
-                    this.f46272c = i2Var;
+                    this.f46288c = i2Var;
                     if (x2Var != null) {
-                        this.f46273d = x2Var;
-                        this.f46274e = size;
-                        this.f46275f = m2Var;
-                        this.f46276g = list;
+                        this.f46289d = x2Var;
+                        this.f46290e = size;
+                        this.f46291f = m2Var;
+                        this.f46292g = list;
                         return;
                     }
                     throw new NullPointerException("Null useCaseConfig");
@@ -55,19 +55,19 @@ public final class d extends m0.k {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // q.m0.k
     public List c() {
-        return this.f46276g;
+        return this.f46292g;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // q.m0.k
     public a0.i2 d() {
-        return this.f46272c;
+        return this.f46288c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // q.m0.k
     public a0.m2 e() {
-        return this.f46275f;
+        return this.f46291f;
     }
 
     public boolean equals(Object obj) {
@@ -79,7 +79,7 @@ public final class d extends m0.k {
         }
         if (obj instanceof m0.k) {
             m0.k kVar = (m0.k) obj;
-            if (this.f46270a.equals(kVar.h()) && this.f46271b.equals(kVar.i()) && this.f46272c.equals(kVar.d()) && this.f46273d.equals(kVar.g()) && ((size = this.f46274e) != null ? size.equals(kVar.f()) : kVar.f() == null) && ((m2Var = this.f46275f) != null ? m2Var.equals(kVar.e()) : kVar.e() == null) && ((list = this.f46276g) != null ? list.equals(kVar.c()) : kVar.c() == null)) {
+            if (this.f46286a.equals(kVar.h()) && this.f46287b.equals(kVar.i()) && this.f46288c.equals(kVar.d()) && this.f46289d.equals(kVar.g()) && ((size = this.f46290e) != null ? size.equals(kVar.f()) : kVar.f() == null) && ((m2Var = this.f46291f) != null ? m2Var.equals(kVar.e()) : kVar.e() == null) && ((list = this.f46292g) != null ? list.equals(kVar.c()) : kVar.c() == null)) {
                 return true;
             }
         }
@@ -89,26 +89,26 @@ public final class d extends m0.k {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // q.m0.k
     public Size f() {
-        return this.f46274e;
+        return this.f46290e;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // q.m0.k
     public a0.x2 g() {
-        return this.f46273d;
+        return this.f46289d;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // q.m0.k
     public String h() {
-        return this.f46270a;
+        return this.f46286a;
     }
 
     public int hashCode() {
         int hashCode;
         int hashCode2;
-        int hashCode3 = (((((((this.f46270a.hashCode() ^ 1000003) * 1000003) ^ this.f46271b.hashCode()) * 1000003) ^ this.f46272c.hashCode()) * 1000003) ^ this.f46273d.hashCode()) * 1000003;
-        Size size = this.f46274e;
+        int hashCode3 = (((((((this.f46286a.hashCode() ^ 1000003) * 1000003) ^ this.f46287b.hashCode()) * 1000003) ^ this.f46288c.hashCode()) * 1000003) ^ this.f46289d.hashCode()) * 1000003;
+        Size size = this.f46290e;
         int i10 = 0;
         if (size == null) {
             hashCode = 0;
@@ -116,14 +116,14 @@ public final class d extends m0.k {
             hashCode = size.hashCode();
         }
         int i11 = (hashCode3 ^ hashCode) * 1000003;
-        a0.m2 m2Var = this.f46275f;
+        a0.m2 m2Var = this.f46291f;
         if (m2Var == null) {
             hashCode2 = 0;
         } else {
             hashCode2 = m2Var.hashCode();
         }
         int i12 = (i11 ^ hashCode2) * 1000003;
-        List list = this.f46276g;
+        List list = this.f46292g;
         if (list != null) {
             i10 = list.hashCode();
         }
@@ -133,10 +133,10 @@ public final class d extends m0.k {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // q.m0.k
     public Class i() {
-        return this.f46271b;
+        return this.f46287b;
     }
 
     public String toString() {
-        return "UseCaseInfo{useCaseId=" + this.f46270a + ", useCaseType=" + this.f46271b + ", sessionConfig=" + this.f46272c + ", useCaseConfig=" + this.f46273d + ", surfaceResolution=" + this.f46274e + ", streamSpec=" + this.f46275f + ", captureTypes=" + this.f46276g + "}";
+        return "UseCaseInfo{useCaseId=" + this.f46286a + ", useCaseType=" + this.f46287b + ", sessionConfig=" + this.f46288c + ", useCaseConfig=" + this.f46289d + ", surfaceResolution=" + this.f46290e + ", streamSpec=" + this.f46291f + ", captureTypes=" + this.f46292g + "}";
     }
 }

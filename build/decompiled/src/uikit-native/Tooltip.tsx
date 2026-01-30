@@ -127,7 +127,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = 'uikit-native/Tooltip.tsx';
     var5 = var6.bind(var7)(var5);
     var4 = function(arg0) { // Original name: Tooltip, environment: var4
-        _fun68764: for (var _fun68764_ip = 0;;) switch (_fun68764_ip) {
+        _fun68809: for (var _fun68809_ip = 0;;) switch (_fun68809_ip) {
             case 0:
                 var1 = arg0;
                 var4 = var1.style;
@@ -140,24 +140,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var1.arrowWidth;
                 var3 = undefined;
                 if (!(var15 === var3)) {
-                    _fun68764_ip = 58;
-                    continue _fun68764
+                    _fun68809_ip = 58;
+                    continue _fun68809
                 }
             case 55:
                 var15 = 16;
             case 58:
                 var13 = var1.arrowHeight;
                 if (!(var13 === var3)) {
-                    _fun68764_ip = 71;
-                    continue _fun68764
+                    _fun68809_ip = 71;
+                    continue _fun68809
                 }
             case 68:
                 var13 = 8;
             case 71:
                 var8 = var1.arrowOffset;
                 if (!(var8 === var3)) {
-                    _fun68764_ip = 85;
-                    continue _fun68764
+                    _fun68809_ip = 85;
+                    continue _fun68809
                 }
             case 83:
                 var8 = 0;
@@ -165,8 +165,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot0 = var8;
                 var11 = var1.arrowPosition;
                 if (!(var11 === var3)) {
-                    _fun68764_ip = 112;
-                    continue _fun68764
+                    _fun68809_ip = 112;
+                    continue _fun68809
                 }
             case 99:
                 var2 = _closure1_slot7;
@@ -175,8 +175,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot1 = var11;
                 var7 = var1.arrowDirection;
                 if (!(var7 === var3)) {
-                    _fun68764_ip = 139;
-                    continue _fun68764
+                    _fun68809_ip = 139;
+                    continue _fun68809
                 }
             case 126:
                 var2 = _closure1_slot6;
@@ -191,28 +191,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[0] = var11;
                 var1[1] = var8;
                 var0 = function() { // Environment: var0
-                    _fun68765: for (var _fun68765_ip = 0;;) switch (_fun68765_ip) {
+                    _fun68810: for (var _fun68810_ip = 0;;) switch (_fun68810_ip) {
                         case 0:
                             var3 = _closure2_slot1;
                             var2 = _closure1_slot7;
                             var2 = var2.LEFT;
                             if (!(var2 !== var3)) {
-                                _fun68765_ip = 127;
-                                continue _fun68765
+                                _fun68810_ip = 127;
+                                continue _fun68810
                             }
                         case 24:
                             var2 = _closure1_slot7;
                             var2 = var2.CENTER;
                             if (!(var2 !== var3)) {
-                                _fun68765_ip = 114;
-                                continue _fun68765
+                                _fun68810_ip = 114;
+                                continue _fun68810
                             }
                         case 38:
                             var2 = _closure1_slot7;
                             var2 = var2.RIGHT;
                             if (!(var2 !== var3)) {
-                                _fun68765_ip = 91;
-                                continue _fun68765
+                                _fun68810_ip = 91;
+                                continue _fun68810
                             }
                         case 52:
                             var3 = _closure1_slot0;
@@ -255,8 +255,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.UP;
                 var5 = var7 === var4;
                 if (!var5) {
-                    _fun68764_ip = 295;
-                    continue _fun68764
+                    _fun68809_ip = 295;
+                    continue _fun68809
                 }
             case 221:
                 var12 = _closure1_slot4;
@@ -293,8 +293,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var17 != var22;
                 var18 = null;
                 if (!var14) {
-                    _fun68764_ip = 409;
-                    continue _fun68764
+                    _fun68809_ip = 409;
+                    continue _fun68809
                 }
             case 350:
                 var20 = _closure1_slot4;
@@ -317,8 +317,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18 = var17 != var21;
                 var17 = null;
                 if (!var18) {
-                    _fun68764_ip = 489;
-                    continue _fun68764
+                    _fun68809_ip = 489;
+                    continue _fun68809
                 }
             case 426:
                 var20 = _closure1_slot4;
@@ -346,8 +346,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.DOWN;
                 var5 = var7 === var5;
                 if (!var5) {
-                    _fun68764_ip = 602;
-                    continue _fun68764
+                    _fun68809_ip = 602;
+                    continue _fun68809
                 }
             case 528:
                 var8 = _closure1_slot4;
@@ -379,4 +379,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.TooltipArrowDirections = var3;
     var2.TooltipArrowPositions = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 671, 1304, 4832, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 671, 1304, 4838, 2]);

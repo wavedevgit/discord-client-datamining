@@ -12,16 +12,16 @@ import org.jetbrains.annotations.NotNull;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public interface Annotations extends Iterable<AnnotationDescriptor>, KMappedMarker {
     @NotNull
-    public static final Companion Companion = Companion.f33627a;
+    public static final Companion Companion = Companion.f33643a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ Companion f33627a = new Companion();
+        static final /* synthetic */ Companion f33643a = new Companion();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final Annotations f33628b = new Annotations() { // from class: kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotations$Companion$EMPTY$1
+        private static final Annotations f33644b = new Annotations() { // from class: kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotations$Companion$EMPTY$1
             public Void findAnnotation(FqName fqName) {
                 Intrinsics.checkNotNullParameter(fqName, "fqName");
                 return null;
@@ -60,14 +60,14 @@ public interface Annotations extends Iterable<AnnotationDescriptor>, KMappedMark
         public final Annotations create(@NotNull List<? extends AnnotationDescriptor> annotations) {
             Intrinsics.checkNotNullParameter(annotations, "annotations");
             if (annotations.isEmpty()) {
-                return f33628b;
+                return f33644b;
             }
             return new AnnotationsImpl(annotations);
         }
 
         @NotNull
         public final Annotations getEMPTY() {
-            return f33628b;
+            return f33644b;
         }
     }
 

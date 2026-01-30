@@ -10,26 +10,26 @@ import okio.Timeout;
 public final class b0 implements Sink {
 
     /* renamed from: d  reason: collision with root package name */
-    private final OutputStream f31210d;
+    private final OutputStream f31226d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Timeout f31211e;
+    private final Timeout f31227e;
 
     public b0(OutputStream out, Timeout timeout) {
         Intrinsics.checkNotNullParameter(out, "out");
         Intrinsics.checkNotNullParameter(timeout, "timeout");
-        this.f31210d = out;
-        this.f31211e = timeout;
+        this.f31226d = out;
+        this.f31227e = timeout;
     }
 
     @Override // okio.Sink, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f31210d.close();
+        this.f31226d.close();
     }
 
     @Override // okio.Sink, java.io.Flushable
     public void flush() {
-        this.f31210d.flush();
+        this.f31226d.flush();
     }
 
     @Override // okio.Sink
@@ -37,17 +37,17 @@ public final class b0 implements Sink {
         Intrinsics.checkNotNullParameter(source, "source");
         okio.b.b(source.size(), 0L, j10);
         while (j10 > 0) {
-            this.f31211e.f();
-            g0 g0Var = source.f44352d;
+            this.f31227e.f();
+            g0 g0Var = source.f44368d;
             Intrinsics.checkNotNull(g0Var);
-            int min = (int) Math.min(j10, g0Var.f31251c - g0Var.f31250b);
-            this.f31210d.write(g0Var.f31249a, g0Var.f31250b, min);
-            g0Var.f31250b += min;
+            int min = (int) Math.min(j10, g0Var.f31267c - g0Var.f31266b);
+            this.f31226d.write(g0Var.f31265a, g0Var.f31266b, min);
+            g0Var.f31266b += min;
             long j11 = min;
             j10 -= j11;
             source.Y0(source.size() - j11);
-            if (g0Var.f31250b == g0Var.f31251c) {
-                source.f44352d = g0Var.b();
+            if (g0Var.f31266b == g0Var.f31267c) {
+                source.f44368d = g0Var.b();
                 h0.b(g0Var);
             }
         }
@@ -55,10 +55,10 @@ public final class b0 implements Sink {
 
     @Override // okio.Sink
     public Timeout timeout() {
-        return this.f31211e;
+        return this.f31227e;
     }
 
     public String toString() {
-        return "sink(" + this.f31210d + ')';
+        return "sink(" + this.f31226d + ')';
     }
 }

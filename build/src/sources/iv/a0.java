@@ -23,43 +23,43 @@ import okhttp3.OkHttpClient;
 public final class a0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConcurrentHashMap f31294a = new ConcurrentHashMap();
+    private final ConcurrentHashMap f31310a = new ConcurrentHashMap();
 
     /* renamed from: b  reason: collision with root package name */
-    final Call.Factory f31295b;
+    final Call.Factory f31311b;
 
     /* renamed from: c  reason: collision with root package name */
-    final HttpUrl f31296c;
+    final HttpUrl f31312c;
 
     /* renamed from: d  reason: collision with root package name */
-    final List f31297d;
+    final List f31313d;
 
     /* renamed from: e  reason: collision with root package name */
-    final int f31298e;
+    final int f31314e;
 
     /* renamed from: f  reason: collision with root package name */
-    final List f31299f;
+    final List f31315f;
 
     /* renamed from: g  reason: collision with root package name */
-    final int f31300g;
+    final int f31316g;
 
     /* renamed from: h  reason: collision with root package name */
-    final Executor f31301h;
+    final Executor f31317h;
 
     /* renamed from: i  reason: collision with root package name */
-    final boolean f31302i;
+    final boolean f31318i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     class a implements InvocationHandler {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Object[] f31303a = new Object[0];
+        private final Object[] f31319a = new Object[0];
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ Class f31304b;
+        final /* synthetic */ Class f31320b;
 
         a(Class cls) {
-            this.f31304b = cls;
+            this.f31320b = cls;
         }
 
         @Override // java.lang.reflect.InvocationHandler
@@ -68,25 +68,25 @@ public final class a0 {
                 return method.invoke(this, objArr);
             }
             if (objArr == null) {
-                objArr = this.f31303a;
+                objArr = this.f31319a;
             }
-            w wVar = v.f31441b;
+            w wVar = v.f31457b;
             if (wVar.c(method)) {
-                return wVar.b(method, this.f31304b, obj, objArr);
+                return wVar.b(method, this.f31320b, obj, objArr);
             }
-            return a0.this.c(this.f31304b, method).a(obj, objArr);
+            return a0.this.c(this.f31320b, method).a(obj, objArr);
         }
     }
 
     a0(Call.Factory factory, HttpUrl httpUrl, List list, int i10, List list2, int i11, Executor executor, boolean z10) {
-        this.f31295b = factory;
-        this.f31296c = httpUrl;
-        this.f31297d = list;
-        this.f31298e = i10;
-        this.f31299f = list2;
-        this.f31300g = i11;
-        this.f31301h = executor;
-        this.f31302i = z10;
+        this.f31311b = factory;
+        this.f31312c = httpUrl;
+        this.f31313d = list;
+        this.f31314e = i10;
+        this.f31315f = list2;
+        this.f31316g = i11;
+        this.f31317h = executor;
+        this.f31318i = z10;
     }
 
     private void k(Class cls) {
@@ -107,8 +107,8 @@ public final class a0 {
                 }
                 Collections.addAll(arrayDeque, cls2.getInterfaces());
             }
-            if (this.f31302i) {
-                w wVar = v.f31441b;
+            if (this.f31318i) {
+                w wVar = v.f31457b;
                 for (Method method : cls.getDeclaredMethods()) {
                     if (!wVar.c(method) && !Modifier.isStatic(method.getModifiers()) && !method.isSynthetic()) {
                         c(cls, method);
@@ -132,7 +132,7 @@ public final class a0 {
 
     b0 c(Class cls, Method method) {
         while (true) {
-            Object obj = this.f31294a.get(method);
+            Object obj = this.f31310a.get(method);
             if (obj instanceof b0) {
                 return (b0) obj;
             }
@@ -140,10 +140,10 @@ public final class a0 {
                 Object obj2 = new Object();
                 synchronized (obj2) {
                     try {
-                        obj = this.f31294a.putIfAbsent(method, obj2);
+                        obj = this.f31310a.putIfAbsent(method, obj2);
                         if (obj == null) {
                             b0 b10 = b0.b(this, cls, method);
-                            this.f31294a.put(method, b10);
+                            this.f31310a.put(method, b10);
                             return b10;
                         }
                     } finally {
@@ -152,7 +152,7 @@ public final class a0 {
             }
             synchronized (obj) {
                 try {
-                    Object obj3 = this.f31294a.get(method);
+                    Object obj3 = this.f31310a.get(method);
                     if (obj3 != null) {
                         return (b0) obj3;
                     }
@@ -169,10 +169,10 @@ public final class a0 {
     public e e(e.a aVar, Type type, Annotation[] annotationArr) {
         Objects.requireNonNull(type, "returnType == null");
         Objects.requireNonNull(annotationArr, "annotations == null");
-        int indexOf = this.f31299f.indexOf(aVar) + 1;
-        int size = this.f31299f.size();
+        int indexOf = this.f31315f.indexOf(aVar) + 1;
+        int size = this.f31315f.size();
         for (int i10 = indexOf; i10 < size; i10++) {
-            e a10 = ((e.a) this.f31299f.get(i10)).a(type, annotationArr, this);
+            e a10 = ((e.a) this.f31315f.get(i10)).a(type, annotationArr, this);
             if (a10 != null) {
                 return a10;
             }
@@ -184,15 +184,15 @@ public final class a0 {
             sb2.append("  Skipped:");
             for (int i11 = 0; i11 < indexOf; i11++) {
                 sb2.append("\n   * ");
-                sb2.append(((e.a) this.f31299f.get(i11)).getClass().getName());
+                sb2.append(((e.a) this.f31315f.get(i11)).getClass().getName());
             }
             sb2.append('\n');
         }
         sb2.append("  Tried:");
-        int size2 = this.f31299f.size();
+        int size2 = this.f31315f.size();
         while (indexOf < size2) {
             sb2.append("\n   * ");
-            sb2.append(((e.a) this.f31299f.get(indexOf)).getClass().getName());
+            sb2.append(((e.a) this.f31315f.get(indexOf)).getClass().getName());
             indexOf++;
         }
         throw new IllegalArgumentException(sb2.toString());
@@ -202,10 +202,10 @@ public final class a0 {
         Objects.requireNonNull(type, "type == null");
         Objects.requireNonNull(annotationArr, "parameterAnnotations == null");
         Objects.requireNonNull(annotationArr2, "methodAnnotations == null");
-        int indexOf = this.f31297d.indexOf(aVar) + 1;
-        int size = this.f31297d.size();
+        int indexOf = this.f31313d.indexOf(aVar) + 1;
+        int size = this.f31313d.size();
         for (int i10 = indexOf; i10 < size; i10++) {
-            h c10 = ((h.a) this.f31297d.get(i10)).c(type, annotationArr, annotationArr2, this);
+            h c10 = ((h.a) this.f31313d.get(i10)).c(type, annotationArr, annotationArr2, this);
             if (c10 != null) {
                 return c10;
             }
@@ -217,15 +217,15 @@ public final class a0 {
             sb2.append("  Skipped:");
             for (int i11 = 0; i11 < indexOf; i11++) {
                 sb2.append("\n   * ");
-                sb2.append(((h.a) this.f31297d.get(i11)).getClass().getName());
+                sb2.append(((h.a) this.f31313d.get(i11)).getClass().getName());
             }
             sb2.append('\n');
         }
         sb2.append("  Tried:");
-        int size2 = this.f31297d.size();
+        int size2 = this.f31313d.size();
         while (indexOf < size2) {
             sb2.append("\n   * ");
-            sb2.append(((h.a) this.f31297d.get(indexOf)).getClass().getName());
+            sb2.append(((h.a) this.f31313d.get(indexOf)).getClass().getName());
             indexOf++;
         }
         throw new IllegalArgumentException(sb2.toString());
@@ -234,10 +234,10 @@ public final class a0 {
     public h g(h.a aVar, Type type, Annotation[] annotationArr) {
         Objects.requireNonNull(type, "type == null");
         Objects.requireNonNull(annotationArr, "annotations == null");
-        int indexOf = this.f31297d.indexOf(aVar) + 1;
-        int size = this.f31297d.size();
+        int indexOf = this.f31313d.indexOf(aVar) + 1;
+        int size = this.f31313d.size();
         for (int i10 = indexOf; i10 < size; i10++) {
-            h d10 = ((h.a) this.f31297d.get(i10)).d(type, annotationArr, this);
+            h d10 = ((h.a) this.f31313d.get(i10)).d(type, annotationArr, this);
             if (d10 != null) {
                 return d10;
             }
@@ -249,15 +249,15 @@ public final class a0 {
             sb2.append("  Skipped:");
             for (int i11 = 0; i11 < indexOf; i11++) {
                 sb2.append("\n   * ");
-                sb2.append(((h.a) this.f31297d.get(i11)).getClass().getName());
+                sb2.append(((h.a) this.f31313d.get(i11)).getClass().getName());
             }
             sb2.append('\n');
         }
         sb2.append("  Tried:");
-        int size2 = this.f31297d.size();
+        int size2 = this.f31313d.size();
         while (indexOf < size2) {
             sb2.append("\n   * ");
-            sb2.append(((h.a) this.f31297d.get(indexOf)).getClass().getName());
+            sb2.append(((h.a) this.f31313d.get(indexOf)).getClass().getName());
             indexOf++;
         }
         throw new IllegalArgumentException(sb2.toString());
@@ -274,42 +274,42 @@ public final class a0 {
     public h j(Type type, Annotation[] annotationArr) {
         Objects.requireNonNull(type, "type == null");
         Objects.requireNonNull(annotationArr, "annotations == null");
-        int size = this.f31297d.size();
+        int size = this.f31313d.size();
         for (int i10 = 0; i10 < size; i10++) {
-            h e10 = ((h.a) this.f31297d.get(i10)).e(type, annotationArr, this);
+            h e10 = ((h.a) this.f31313d.get(i10)).e(type, annotationArr, this);
             if (e10 != null) {
                 return e10;
             }
         }
-        return b.d.f31315a;
+        return b.d.f31331a;
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private Call.Factory f31306a;
+        private Call.Factory f31322a;
 
         /* renamed from: b  reason: collision with root package name */
-        private HttpUrl f31307b;
+        private HttpUrl f31323b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final List f31308c = new ArrayList();
+        private final List f31324c = new ArrayList();
 
         /* renamed from: d  reason: collision with root package name */
-        private final List f31309d = new ArrayList();
+        private final List f31325d = new ArrayList();
 
         /* renamed from: e  reason: collision with root package name */
-        private Executor f31310e;
+        private Executor f31326e;
 
         /* renamed from: f  reason: collision with root package name */
-        private boolean f31311f;
+        private boolean f31327f;
 
         public b() {
         }
 
         public b a(h.a aVar) {
-            List list = this.f31308c;
+            List list = this.f31324c;
             Objects.requireNonNull(aVar, "factory == null");
             list.add(aVar);
             return this;
@@ -324,42 +324,42 @@ public final class a0 {
             Objects.requireNonNull(httpUrl, "baseUrl == null");
             List n10 = httpUrl.n();
             if ("".equals(n10.get(n10.size() - 1))) {
-                this.f31307b = httpUrl;
+                this.f31323b = httpUrl;
                 return this;
             }
             throw new IllegalArgumentException("baseUrl must end in /: " + httpUrl);
         }
 
         public a0 d() {
-            if (this.f31307b != null) {
-                Call.Factory factory = this.f31306a;
+            if (this.f31323b != null) {
+                Call.Factory factory = this.f31322a;
                 if (factory == null) {
                     factory = new OkHttpClient();
                 }
                 Call.Factory factory2 = factory;
-                Executor executor = this.f31310e;
+                Executor executor = this.f31326e;
                 if (executor == null) {
-                    executor = v.f31440a;
+                    executor = v.f31456a;
                 }
                 Executor executor2 = executor;
-                c cVar = v.f31442c;
-                ArrayList arrayList = new ArrayList(this.f31309d);
+                c cVar = v.f31458c;
+                ArrayList arrayList = new ArrayList(this.f31325d);
                 List a10 = cVar.a(executor2);
                 arrayList.addAll(a10);
                 List b10 = cVar.b();
                 int size = b10.size();
-                ArrayList arrayList2 = new ArrayList(this.f31308c.size() + 1 + size);
+                ArrayList arrayList2 = new ArrayList(this.f31324c.size() + 1 + size);
                 arrayList2.add(new iv.b());
-                arrayList2.addAll(this.f31308c);
+                arrayList2.addAll(this.f31324c);
                 arrayList2.addAll(b10);
-                return new a0(factory2, this.f31307b, Collections.unmodifiableList(arrayList2), size, Collections.unmodifiableList(arrayList), a10.size(), executor2, this.f31311f);
+                return new a0(factory2, this.f31323b, Collections.unmodifiableList(arrayList2), size, Collections.unmodifiableList(arrayList), a10.size(), executor2, this.f31327f);
             }
             throw new IllegalStateException("Base URL required.");
         }
 
         public b e(Call.Factory factory) {
             Objects.requireNonNull(factory, "factory == null");
-            this.f31306a = factory;
+            this.f31322a = factory;
             return this;
         }
 
@@ -369,18 +369,18 @@ public final class a0 {
         }
 
         b(a0 a0Var) {
-            this.f31306a = a0Var.f31295b;
-            this.f31307b = a0Var.f31296c;
-            int size = a0Var.f31297d.size() - a0Var.f31298e;
+            this.f31322a = a0Var.f31311b;
+            this.f31323b = a0Var.f31312c;
+            int size = a0Var.f31313d.size() - a0Var.f31314e;
             for (int i10 = 1; i10 < size; i10++) {
-                this.f31308c.add((h.a) a0Var.f31297d.get(i10));
+                this.f31324c.add((h.a) a0Var.f31313d.get(i10));
             }
-            int size2 = a0Var.f31299f.size() - a0Var.f31300g;
+            int size2 = a0Var.f31315f.size() - a0Var.f31316g;
             for (int i11 = 0; i11 < size2; i11++) {
-                this.f31309d.add((e.a) a0Var.f31299f.get(i11));
+                this.f31325d.add((e.a) a0Var.f31315f.get(i11));
             }
-            this.f31310e = a0Var.f31301h;
-            this.f31311f = a0Var.f31302i;
+            this.f31326e = a0Var.f31317h;
+            this.f31327f = a0Var.f31318i;
         }
     }
 }

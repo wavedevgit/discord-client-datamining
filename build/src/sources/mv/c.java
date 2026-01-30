@@ -10,10 +10,10 @@ import qs.e;
 public final class c implements ku.b, o {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f39592a = new c();
+    public static final c f39608a = new c();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final b f39593b = new b();
+    private static final b f39609b = new b();
 
     private c() {
     }
@@ -21,10 +21,10 @@ public final class c implements ku.b, o {
     private final Integer a(List list) {
         Object b10;
         try {
-            Result.a aVar = Result.f33279e;
+            Result.a aVar = Result.f33295e;
             b10 = Result.b(Integer.valueOf(((e) CollectionsKt.o0(list)).compareTo((e) CollectionsKt.z0(list))));
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f33279e;
+            Result.a aVar2 = Result.f33295e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         if (Result.h(b10)) {
@@ -46,11 +46,11 @@ public final class c implements ku.b, o {
     private final List b(List list) {
         Object b10;
         try {
-            Result.a aVar = Result.f33279e;
+            Result.a aVar = Result.f33295e;
             Object obj = list.get(2);
             Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type kotlin.String");
             a valueOf = a.valueOf((String) obj);
-            b bVar = f39593b;
+            b bVar = f39609b;
             Object obj2 = list.get(0);
             Intrinsics.checkNotNull(obj2, "null cannot be cast to non-null type kotlin.String");
             e a10 = bVar.a((String) obj2, valueOf);
@@ -58,7 +58,7 @@ public final class c implements ku.b, o {
             Intrinsics.checkNotNull(obj3, "null cannot be cast to non-null type kotlin.String");
             b10 = Result.b(CollectionsKt.o(a10, bVar.a((String) obj3, valueOf)));
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f33279e;
+            Result.a aVar2 = Result.f33295e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         if (Result.g(b10)) {

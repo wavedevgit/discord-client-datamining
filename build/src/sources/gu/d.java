@@ -18,7 +18,7 @@ import kotlin.text.StringsKt;
 public final class d implements HostnameVerifier {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final d f27207a = new d();
+    public static final d f27223a = new d();
 
     private d() {
     }
@@ -97,7 +97,7 @@ public final class d implements HostnameVerifier {
             return false;
         }
         for (String str2 : c10) {
-            if (f27207a.f(b10, str2)) {
+            if (f27223a.f(b10, str2)) {
                 return true;
             }
         }

@@ -7,166 +7,166 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final k f55367a;
+    private final k f55383a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f55368b;
+    private final List f55384b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f55369c;
+    private boolean f55385c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Long f55370d;
+    private Long f55386d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Long f55371e;
+    private Long f55387e;
 
     /* renamed from: f  reason: collision with root package name */
-    private String f55372f;
+    private String f55388f;
 
     /* renamed from: g  reason: collision with root package name */
-    private String f55373g;
+    private String f55389g;
 
     /* renamed from: h  reason: collision with root package name */
-    private String[] f55374h;
+    private String[] f55390h;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f55375i;
+    private String f55391i;
 
     /* renamed from: j  reason: collision with root package name */
-    private String f55376j;
+    private String f55392j;
 
     /* renamed from: k  reason: collision with root package name */
-    private String f55377k;
+    private String f55393k;
 
     /* renamed from: l  reason: collision with root package name */
-    private String f55378l;
+    private String f55394l;
 
     /* renamed from: m  reason: collision with root package name */
-    private Long f55379m;
+    private Long f55395m;
 
     /* renamed from: n  reason: collision with root package name */
-    private String f55380n;
+    private String f55396n;
 
     /* renamed from: o  reason: collision with root package name */
-    private String f55381o;
+    private String f55397o;
 
     /* renamed from: p  reason: collision with root package name */
-    private String f55382p;
+    private String f55398p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Integer f55383q;
+    private Integer f55399q;
 
     /* renamed from: r  reason: collision with root package name */
-    private Integer f55384r;
+    private Integer f55400r;
 
     public h(k infra) {
         Intrinsics.checkNotNullParameter(infra, "infra");
-        this.f55367a = infra;
-        this.f55368b = new ArrayList();
+        this.f55383a = infra;
+        this.f55384b = new ArrayList();
     }
 
     public final String a() {
-        return this.f55372f;
+        return this.f55388f;
     }
 
     public final String b() {
-        return this.f55376j;
+        return this.f55392j;
     }
 
     public final String[] c() {
-        return this.f55374h;
+        return this.f55390h;
     }
 
     public final String d() {
-        return this.f55375i;
+        return this.f55391i;
     }
 
     public final Integer e() {
-        return this.f55384r;
+        return this.f55400r;
     }
 
     public final Long f() {
-        return this.f55370d;
+        return this.f55386d;
     }
 
     public final Integer g() {
-        return this.f55383q;
+        return this.f55399q;
     }
 
     public final String h() {
-        return this.f55381o;
+        return this.f55397o;
     }
 
     public final String i() {
-        return this.f55382p;
+        return this.f55398p;
     }
 
     public final k j() {
-        return this.f55367a;
+        return this.f55383a;
     }
 
     public final List k() {
-        return this.f55368b;
+        return this.f55384b;
     }
 
     public final Long l() {
-        return this.f55379m;
+        return this.f55395m;
     }
 
     public final boolean m() {
-        return this.f55369c;
+        return this.f55385c;
     }
 
     public final Long n() {
-        return this.f55371e;
+        return this.f55387e;
     }
 
     public final String o() {
-        return this.f55373g;
+        return this.f55389g;
     }
 
     public final String p() {
-        return this.f55380n;
+        return this.f55396n;
     }
 
     public final String q() {
-        return this.f55378l;
+        return this.f55394l;
     }
 
     public final String r() {
-        return this.f55377k;
+        return this.f55393k;
     }
 
     public final void s() {
-        this.f55368b.clear();
-        this.f55369c = false;
-        this.f55370d = null;
-        this.f55371e = null;
-        this.f55372f = null;
-        this.f55373g = null;
-        this.f55374h = null;
-        this.f55375i = null;
-        this.f55376j = null;
-        this.f55377k = null;
-        this.f55378l = null;
-        this.f55379m = null;
-        this.f55380n = null;
-        this.f55381o = null;
-        this.f55382p = null;
-        this.f55383q = null;
-        this.f55384r = null;
+        this.f55384b.clear();
+        this.f55385c = false;
+        this.f55386d = null;
+        this.f55387e = null;
+        this.f55388f = null;
+        this.f55389g = null;
+        this.f55390h = null;
+        this.f55391i = null;
+        this.f55392j = null;
+        this.f55393k = null;
+        this.f55394l = null;
+        this.f55395m = null;
+        this.f55396n = null;
+        this.f55397o = null;
+        this.f55398p = null;
+        this.f55399q = null;
+        this.f55400r = null;
     }
 
     public final void t(Long l10) {
-        this.f55370d = l10;
+        this.f55386d = l10;
     }
 
     public final void u(boolean z10) {
-        this.f55369c = z10;
+        this.f55385c = z10;
     }
 
     public final void v(Long l10) {
-        this.f55371e = l10;
+        this.f55387e = l10;
     }
 }

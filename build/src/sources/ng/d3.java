@@ -5,30 +5,30 @@ import ui.c;
 final class d3 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final d3 f41033a = new d3();
+    static final d3 f41049a = new d3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41034b;
+    private static final ui.c f41050b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41035c;
+    private static final ui.c f41051c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41036d;
+    private static final ui.c f41052d;
 
     static {
         c.b a10 = ui.c.a("options");
         f fVar = new f();
         fVar.a(1);
-        f41034b = a10.b(fVar.b()).a();
+        f41050b = a10.b(fVar.b()).a();
         c.b a11 = ui.c.a("eventType");
         f fVar2 = new f();
         fVar2.a(2);
-        f41035c = a11.b(fVar2.b()).a();
+        f41051c = a11.b(fVar2.b()).a();
         c.b a12 = ui.c.a("errorCode");
         f fVar3 = new f();
         fVar3.a(3);
-        f41036d = a12.b(fVar3.b()).a();
+        f41052d = a12.b(fVar3.b()).a();
     }
 
     private d3() {

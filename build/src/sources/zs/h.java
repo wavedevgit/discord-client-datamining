@@ -11,29 +11,29 @@ public abstract class h {
     public static final class a implements Iterator, KMappedMarker {
 
         /* renamed from: d  reason: collision with root package name */
-        private int f56094d;
+        private int f56110d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ SerialDescriptor f56095e;
+        final /* synthetic */ SerialDescriptor f56111e;
 
         a(SerialDescriptor serialDescriptor) {
-            this.f56095e = serialDescriptor;
-            this.f56094d = serialDescriptor.d();
+            this.f56111e = serialDescriptor;
+            this.f56110d = serialDescriptor.d();
         }
 
         @Override // java.util.Iterator
         /* renamed from: a */
         public SerialDescriptor next() {
-            SerialDescriptor serialDescriptor = this.f56095e;
+            SerialDescriptor serialDescriptor = this.f56111e;
             int d10 = serialDescriptor.d();
-            int i10 = this.f56094d;
-            this.f56094d = i10 - 1;
+            int i10 = this.f56110d;
+            this.f56110d = i10 - 1;
             return serialDescriptor.g(d10 - i10);
         }
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            if (this.f56094d > 0) {
+            if (this.f56110d > 0) {
                 return true;
             }
             return false;
@@ -49,29 +49,29 @@ public abstract class h {
     public static final class b implements Iterator, KMappedMarker {
 
         /* renamed from: d  reason: collision with root package name */
-        private int f56096d;
+        private int f56112d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ SerialDescriptor f56097e;
+        final /* synthetic */ SerialDescriptor f56113e;
 
         b(SerialDescriptor serialDescriptor) {
-            this.f56097e = serialDescriptor;
-            this.f56096d = serialDescriptor.d();
+            this.f56113e = serialDescriptor;
+            this.f56112d = serialDescriptor.d();
         }
 
         @Override // java.util.Iterator
         /* renamed from: a */
         public String next() {
-            SerialDescriptor serialDescriptor = this.f56097e;
+            SerialDescriptor serialDescriptor = this.f56113e;
             int d10 = serialDescriptor.d();
-            int i10 = this.f56096d;
-            this.f56096d = i10 - 1;
+            int i10 = this.f56112d;
+            this.f56112d = i10 - 1;
             return serialDescriptor.e(d10 - i10);
         }
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            if (this.f56096d > 0) {
+            if (this.f56112d > 0) {
                 return true;
             }
             return false;
@@ -87,15 +87,15 @@ public abstract class h {
     public static final class c implements Iterable, KMappedMarker {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ SerialDescriptor f56098d;
+        final /* synthetic */ SerialDescriptor f56114d;
 
         public c(SerialDescriptor serialDescriptor) {
-            this.f56098d = serialDescriptor;
+            this.f56114d = serialDescriptor;
         }
 
         @Override // java.lang.Iterable
         public Iterator iterator() {
-            return new a(this.f56098d);
+            return new a(this.f56114d);
         }
     }
 
@@ -103,15 +103,15 @@ public abstract class h {
     public static final class d implements Iterable, KMappedMarker {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ SerialDescriptor f56099d;
+        final /* synthetic */ SerialDescriptor f56115d;
 
         public d(SerialDescriptor serialDescriptor) {
-            this.f56099d = serialDescriptor;
+            this.f56115d = serialDescriptor;
         }
 
         @Override // java.lang.Iterable
         public Iterator iterator() {
-            return new b(this.f56099d);
+            return new b(this.f56115d);
         }
     }
 

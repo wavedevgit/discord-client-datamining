@@ -87,7 +87,7 @@ public final class NextStep_Selfie_AssetConfig_PromptPageJsonAdapter extends h {
         RemoteImage remoteImage12 = remoteImage;
         Constructor<NextStep.Selfie.AssetConfig.PromptPage> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.Selfie.AssetConfig.PromptPage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, Integer.TYPE, sm.c.f49081c);
+            constructor = NextStep.Selfie.AssetConfig.PromptPage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, Integer.TYPE, sm.c.f49097c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

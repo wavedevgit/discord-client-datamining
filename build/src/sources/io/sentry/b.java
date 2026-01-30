@@ -5,28 +5,28 @@ import java.util.concurrent.Callable;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private byte[] f29742a;
+    private byte[] f29758a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final w1 f29743b;
+    private final w1 f29759b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Callable f29744c;
+    private final Callable f29760c;
 
     /* renamed from: d  reason: collision with root package name */
-    private String f29745d;
+    private String f29761d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f29746e;
+    private final String f29762e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f29747f;
+    private final String f29763f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final boolean f29748g;
+    private final boolean f29764g;
 
     /* renamed from: h  reason: collision with root package name */
-    private String f29749h;
+    private String f29765h;
 
     public b(byte[] bArr, String str, String str2, boolean z10) {
         this(bArr, str, str2, "event.attachment", z10);
@@ -45,65 +45,65 @@ public final class b {
     }
 
     public String d() {
-        return this.f29749h;
+        return this.f29765h;
     }
 
     public Callable e() {
-        return this.f29744c;
+        return this.f29760c;
     }
 
     public byte[] f() {
-        return this.f29742a;
+        return this.f29758a;
     }
 
     public String g() {
-        return this.f29747f;
+        return this.f29763f;
     }
 
     public String h() {
-        return this.f29746e;
+        return this.f29762e;
     }
 
     public String i() {
-        return this.f29745d;
+        return this.f29761d;
     }
 
     public w1 j() {
-        return this.f29743b;
+        return this.f29759b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean k() {
-        return this.f29748g;
+        return this.f29764g;
     }
 
     public b(byte[] bArr, String str, String str2, String str3, boolean z10) {
-        this.f29742a = bArr;
-        this.f29743b = null;
-        this.f29744c = null;
-        this.f29746e = str;
-        this.f29747f = str2;
-        this.f29749h = str3;
-        this.f29748g = z10;
+        this.f29758a = bArr;
+        this.f29759b = null;
+        this.f29760c = null;
+        this.f29762e = str;
+        this.f29763f = str2;
+        this.f29765h = str3;
+        this.f29764g = z10;
     }
 
     public b(w1 w1Var, String str, String str2, String str3, boolean z10) {
-        this.f29742a = null;
-        this.f29743b = w1Var;
-        this.f29744c = null;
-        this.f29746e = str;
-        this.f29747f = str2;
-        this.f29749h = str3;
-        this.f29748g = z10;
+        this.f29758a = null;
+        this.f29759b = w1Var;
+        this.f29760c = null;
+        this.f29762e = str;
+        this.f29763f = str2;
+        this.f29765h = str3;
+        this.f29764g = z10;
     }
 
     public b(Callable callable, String str, String str2, String str3, boolean z10) {
-        this.f29742a = null;
-        this.f29743b = null;
-        this.f29744c = callable;
-        this.f29746e = str;
-        this.f29747f = str2;
-        this.f29749h = str3;
-        this.f29748g = z10;
+        this.f29758a = null;
+        this.f29759b = null;
+        this.f29760c = callable;
+        this.f29762e = str;
+        this.f29763f = str2;
+        this.f29765h = str3;
+        this.f29764g = z10;
     }
 }

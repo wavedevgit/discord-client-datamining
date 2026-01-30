@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/chat/native/useChatWidth.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Original name: useChatWidth, environment: var1
-        _fun77057: for (var _fun77057_ip = 0;;) switch (_fun77057_ip) {
+        _fun77101: for (var _fun77101_ip = 0;;) switch (_fun77101_ip) {
             case 0:
                 var5 = arg0;
                 var3 = _closure1_slot1;
@@ -48,20 +48,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.bind(var2)();
                 var0 = null;
                 if (!(var0 != var5)) {
-                    _fun77057_ip = 97;
-                    continue _fun77057
+                    _fun77101_ip = 97;
+                    continue _fun77101
                 }
             case 90:
                 var0 = var3;
                 if (!(var1 === var5)) {
-                    _fun77057_ip = 110;
-                    continue _fun77057
+                    _fun77101_ip = 110;
+                    continue _fun77101
                 }
             case 97:
                 var1 = var3;
                 if (!var4) {
-                    _fun77057_ip = 107;
-                    continue _fun77057
+                    _fun77101_ip = 107;
+                    continue _fun77101
                 }
             case 103:
                 var1 = var3 - var2;
@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var1 = function(arg0) { // Original name: getChatWidth, environment: var1
-        _fun77058: for (var _fun77058_ip = 0;;) switch (_fun77058_ip) {
+        _fun77102: for (var _fun77102_ip = 0;;) switch (_fun77102_ip) {
             case 0:
                 var6 = arg0;
                 var3 = _closure1_slot0;
@@ -93,20 +93,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0.width;
                 var0 = null;
                 if (!(var0 != var6)) {
-                    _fun77058_ip = 83;
-                    continue _fun77058
+                    _fun77102_ip = 83;
+                    continue _fun77102
                 }
             case 76:
                 var0 = var3;
                 if (!(var1 === var6)) {
-                    _fun77058_ip = 126;
-                    continue _fun77058
+                    _fun77102_ip = 126;
+                    continue _fun77102
                 }
             case 83:
                 var1 = var3;
                 if (!var4) {
-                    _fun77058_ip = 123;
-                    continue _fun77058
+                    _fun77102_ip = 123;
+                    continue _fun77102
                 }
             case 89:
                 var4 = _closure1_slot0;
@@ -125,4 +125,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getChatWidth = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3875, 3877, 9762, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3881, 3883, 9767, 2]);

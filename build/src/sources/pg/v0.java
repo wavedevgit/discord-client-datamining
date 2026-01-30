@@ -8,35 +8,35 @@ import java.util.ListIterator;
 final class v0 extends AbstractSequentialList implements Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    final List f45773d;
+    final List f45789d;
 
     /* renamed from: e  reason: collision with root package name */
-    final uj f45774e;
+    final uj f45790e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public v0(List list, uj ujVar) {
         list.getClass();
-        this.f45773d = list;
-        this.f45774e = ujVar;
+        this.f45789d = list;
+        this.f45790e = ujVar;
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
     public final boolean isEmpty() {
-        return this.f45773d.isEmpty();
+        return this.f45789d.isEmpty();
     }
 
     @Override // java.util.AbstractSequentialList, java.util.AbstractList, java.util.List
     public final ListIterator listIterator(int i10) {
-        return new u0(this, this.f45773d.listIterator(i10));
+        return new u0(this, this.f45789d.listIterator(i10));
     }
 
     @Override // java.util.AbstractList
     protected final void removeRange(int i10, int i11) {
-        this.f45773d.subList(i10, i11).clear();
+        this.f45789d.subList(i10, i11).clear();
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
     public final int size() {
-        return this.f45773d.size();
+        return this.f45789d.size();
     }
 }

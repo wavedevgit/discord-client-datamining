@@ -91,17 +91,17 @@ public abstract class e {
     }
 
     static float f(Context context) {
-        return context.getResources().getDimension(yg.d.f54398o);
+        return context.getResources().getDimension(yg.d.f54414o);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static float g(Context context) {
-        return context.getResources().getDimension(yg.d.f54399p);
+        return context.getResources().getDimension(yg.d.f54415p);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static float h(Context context) {
-        return context.getResources().getDimension(yg.d.f54400q);
+        return context.getResources().getDimension(yg.d.f54416q);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

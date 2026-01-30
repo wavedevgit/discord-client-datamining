@@ -14,25 +14,25 @@ import kotlinx.coroutines.flow.FlowCollector;
 public final class v extends kotlin.coroutines.jvm.internal.d implements FlowCollector, CoroutineStackFrame {
 
     /* renamed from: d  reason: collision with root package name */
-    public final FlowCollector f36520d;
+    public final FlowCollector f36536d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final CoroutineContext f36521e;
+    public final CoroutineContext f36537e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final int f36522i;
+    public final int f36538i;
 
     /* renamed from: o  reason: collision with root package name */
-    private CoroutineContext f36523o;
+    private CoroutineContext f36539o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Continuation f36524p;
+    private Continuation f36540p;
 
     public v(FlowCollector flowCollector, CoroutineContext coroutineContext) {
-        super(r.f36514d, kotlin.coroutines.e.f33356d);
-        this.f36520d = flowCollector;
-        this.f36521e = coroutineContext;
-        this.f36522i = ((Number) coroutineContext.A1(0, new Function2() { // from class: ks.u
+        super(r.f36530d, kotlin.coroutines.e.f33372d);
+        this.f36536d = flowCollector;
+        this.f36537e = coroutineContext;
+        this.f36538i = ((Number) coroutineContext.A1(0, new Function2() { // from class: ks.u
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(Object obj, Object obj2) {
                 int l10;
@@ -57,25 +57,25 @@ public final class v extends kotlin.coroutines.jvm.internal.d implements FlowCol
     private final Object m(Continuation continuation, Object obj) {
         CoroutineContext context = continuation.getContext();
         kotlinx.coroutines.z.k(context);
-        CoroutineContext coroutineContext = this.f36523o;
+        CoroutineContext coroutineContext = this.f36539o;
         if (coroutineContext != context) {
             k(context, coroutineContext, obj);
-            this.f36523o = context;
+            this.f36539o = context;
         }
-        this.f36524p = continuation;
+        this.f36540p = continuation;
         Function3 a10 = w.a();
-        FlowCollector flowCollector = this.f36520d;
+        FlowCollector flowCollector = this.f36536d;
         Intrinsics.checkNotNull(flowCollector, "null cannot be cast to non-null type kotlinx.coroutines.flow.FlowCollector<kotlin.Any?>");
         Intrinsics.checkNotNull(this, "null cannot be cast to non-null type kotlin.coroutines.Continuation<kotlin.Unit>");
         Object invoke = a10.invoke(flowCollector, obj, this);
         if (!Intrinsics.areEqual(invoke, or.b.f())) {
-            this.f36524p = null;
+            this.f36540p = null;
         }
         return invoke;
     }
 
     private final void n(m mVar, Object obj) {
-        throw new IllegalStateException(StringsKt.j("\n            Flow exception transparency is violated:\n                Previous 'emit' call has thrown exception " + mVar.f36508e + ", but then emission attempt of value '" + obj + "' has been detected.\n                Emissions from 'catch' blocks are prohibited in order to avoid unspecified behaviour, 'Flow.catch' operator can be used instead.\n                For a more detailed explanation, please refer to Flow documentation.\n            ").toString());
+        throw new IllegalStateException(StringsKt.j("\n            Flow exception transparency is violated:\n                Previous 'emit' call has thrown exception " + mVar.f36524e + ", but then emission attempt of value '" + obj + "' has been detected.\n                Emissions from 'catch' blocks are prohibited in order to avoid unspecified behaviour, 'Flow.catch' operator can be used instead.\n                For a more detailed explanation, please refer to Flow documentation.\n            ").toString());
     }
 
     @Override // kotlinx.coroutines.flow.FlowCollector
@@ -88,16 +88,16 @@ public final class v extends kotlin.coroutines.jvm.internal.d implements FlowCol
             if (m10 == or.b.f()) {
                 return m10;
             }
-            return Unit.f33282a;
+            return Unit.f33298a;
         } catch (Throwable th2) {
-            this.f36523o = new m(th2, continuation.getContext());
+            this.f36539o = new m(th2, continuation.getContext());
             throw th2;
         }
     }
 
     @Override // kotlin.coroutines.jvm.internal.a, kotlin.coroutines.jvm.internal.CoroutineStackFrame
     public CoroutineStackFrame getCallerFrame() {
-        Continuation continuation = this.f36524p;
+        Continuation continuation = this.f36540p;
         if (continuation instanceof CoroutineStackFrame) {
             return (CoroutineStackFrame) continuation;
         }
@@ -106,9 +106,9 @@ public final class v extends kotlin.coroutines.jvm.internal.d implements FlowCol
 
     @Override // kotlin.coroutines.jvm.internal.d, kotlin.coroutines.Continuation
     public CoroutineContext getContext() {
-        CoroutineContext coroutineContext = this.f36523o;
+        CoroutineContext coroutineContext = this.f36539o;
         if (coroutineContext == null) {
-            return kotlin.coroutines.e.f33356d;
+            return kotlin.coroutines.e.f33372d;
         }
         return coroutineContext;
     }
@@ -122,9 +122,9 @@ public final class v extends kotlin.coroutines.jvm.internal.d implements FlowCol
     protected Object invokeSuspend(Object obj) {
         Throwable e10 = Result.e(obj);
         if (e10 != null) {
-            this.f36523o = new m(e10, getContext());
+            this.f36539o = new m(e10, getContext());
         }
-        Continuation continuation = this.f36524p;
+        Continuation continuation = this.f36540p;
         if (continuation != null) {
             continuation.resumeWith(obj);
         }

@@ -13,21 +13,21 @@ import org.jetbrains.annotations.NotNull;
 public final class PredefinedEnhancementInfoKt {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final JavaTypeQualifiers f34346a = new JavaTypeQualifiers(NullabilityQualifier.NULLABLE, null, false, false, 8, null);
+    private static final JavaTypeQualifiers f34362a = new JavaTypeQualifiers(NullabilityQualifier.NULLABLE, null, false, false, 8, null);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final JavaTypeQualifiers f34347b;
+    private static final JavaTypeQualifiers f34363b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final JavaTypeQualifiers f34348c;
+    private static final JavaTypeQualifiers f34364c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Map f34349d;
+    private static final Map f34365d;
 
     static {
         NullabilityQualifier nullabilityQualifier = NullabilityQualifier.NOT_NULL;
-        f34347b = new JavaTypeQualifiers(nullabilityQualifier, null, false, false, 8, null);
-        f34348c = new JavaTypeQualifiers(nullabilityQualifier, null, true, false, 8, null);
+        f34363b = new JavaTypeQualifiers(nullabilityQualifier, null, false, false, 8, null);
+        f34364c = new JavaTypeQualifiers(nullabilityQualifier, null, true, false, 8, null);
         SignatureBuildingComponents signatureBuildingComponents = SignatureBuildingComponents.INSTANCE;
         String javaLang = signatureBuildingComponents.javaLang("Object");
         String javaFunction = signatureBuildingComponents.javaFunction("Predicate");
@@ -90,377 +90,377 @@ public final class PredefinedEnhancementInfoKt {
         SignatureEnhancementBuilder.ClassEnhancementBuilder.function$default(new SignatureEnhancementBuilder.ClassEnhancementBuilder(signatureEnhancementBuilder, javaFunction2), "apply", null, new o0(javaLang), 2, null);
         SignatureEnhancementBuilder.ClassEnhancementBuilder.function$default(new SignatureEnhancementBuilder.ClassEnhancementBuilder(signatureEnhancementBuilder, javaFunction4), "apply", null, new p0(javaLang), 2, null);
         SignatureEnhancementBuilder.ClassEnhancementBuilder.function$default(new SignatureEnhancementBuilder.ClassEnhancementBuilder(signatureEnhancementBuilder, signatureBuildingComponents.javaFunction("Supplier")), "get", null, new q0(javaLang), 2, null);
-        f34349d = signatureEnhancementBuilder.b();
+        f34365d = signatureEnhancementBuilder.b();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit A(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        JavaTypeQualifiers javaTypeQualifiers = f34347b;
+        JavaTypeQualifiers javaTypeQualifiers = f34363b;
         function.parameter(str, javaTypeQualifiers);
         function.parameter(str, javaTypeQualifiers);
-        function.returns(str, f34346a);
-        return Unit.f33282a;
+        function.returns(str, f34362a);
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit B(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        JavaTypeQualifiers javaTypeQualifiers = f34347b;
+        JavaTypeQualifiers javaTypeQualifiers = f34363b;
         function.parameter(str, javaTypeQualifiers);
         function.parameter(str, javaTypeQualifiers);
-        function.returns(str, f34346a);
-        return Unit.f33282a;
+        function.returns(str, f34362a);
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit C(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        function.returns(str, f34347b, f34348c);
-        return Unit.f33282a;
+        function.returns(str, f34363b, f34364c);
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit D(String str, String str2, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        JavaTypeQualifiers javaTypeQualifiers = f34348c;
+        JavaTypeQualifiers javaTypeQualifiers = f34364c;
         function.parameter(str, javaTypeQualifiers);
-        function.returns(str2, f34347b, javaTypeQualifiers);
-        return Unit.f33282a;
+        function.returns(str2, f34363b, javaTypeQualifiers);
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit E(String str, String str2, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        function.parameter(str, f34346a);
-        function.returns(str2, f34347b, f34348c);
-        return Unit.f33282a;
+        function.parameter(str, f34362a);
+        function.returns(str2, f34363b, f34364c);
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit F(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        function.returns(str, f34348c);
-        return Unit.f33282a;
+        function.returns(str, f34364c);
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit G(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        function.parameter(str, f34347b, f34348c);
-        return Unit.f33282a;
+        function.parameter(str, f34363b, f34364c);
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit H(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        function.returns(str, f34346a);
-        return Unit.f33282a;
+        function.returns(str, f34362a);
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit I(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        function.parameter(str, f34347b);
+        function.parameter(str, f34363b);
         function.returns(JvmPrimitiveType.BOOLEAN);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit J(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        JavaTypeQualifiers javaTypeQualifiers = f34347b;
+        JavaTypeQualifiers javaTypeQualifiers = f34363b;
         function.parameter(str, javaTypeQualifiers);
         function.parameter(str, javaTypeQualifiers);
         function.returns(JvmPrimitiveType.BOOLEAN);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit K(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        function.parameter(str, f34347b);
-        return Unit.f33282a;
+        function.parameter(str, f34363b);
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit L(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        JavaTypeQualifiers javaTypeQualifiers = f34347b;
+        JavaTypeQualifiers javaTypeQualifiers = f34363b;
         function.parameter(str, javaTypeQualifiers);
         function.parameter(str, javaTypeQualifiers);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit M(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        JavaTypeQualifiers javaTypeQualifiers = f34347b;
+        JavaTypeQualifiers javaTypeQualifiers = f34363b;
         function.parameter(str, javaTypeQualifiers);
         function.returns(str, javaTypeQualifiers);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit N(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        JavaTypeQualifiers javaTypeQualifiers = f34347b;
+        JavaTypeQualifiers javaTypeQualifiers = f34363b;
         function.parameter(str, javaTypeQualifiers);
         function.parameter(str, javaTypeQualifiers);
         function.returns(str, javaTypeQualifiers);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit O(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        function.returns(str, f34347b);
-        return Unit.f33282a;
+        function.returns(str, f34363b);
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit P(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        JavaTypeQualifiers javaTypeQualifiers = f34347b;
+        JavaTypeQualifiers javaTypeQualifiers = f34363b;
         function.parameter(str, javaTypeQualifiers, javaTypeQualifiers);
         function.returns(JvmPrimitiveType.BOOLEAN);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit Q(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        JavaTypeQualifiers javaTypeQualifiers = f34347b;
+        JavaTypeQualifiers javaTypeQualifiers = f34363b;
         function.returns(str, javaTypeQualifiers, javaTypeQualifiers);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit R(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        JavaTypeQualifiers javaTypeQualifiers = f34347b;
+        JavaTypeQualifiers javaTypeQualifiers = f34363b;
         function.returns(str, javaTypeQualifiers, javaTypeQualifiers);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit a(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        JavaTypeQualifiers javaTypeQualifiers = f34347b;
+        JavaTypeQualifiers javaTypeQualifiers = f34363b;
         function.parameter(str, javaTypeQualifiers, javaTypeQualifiers);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit b(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        function.parameter(str, f34347b);
-        return Unit.f33282a;
+        function.parameter(str, f34363b);
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit c(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        function.returns(str, f34347b);
-        return Unit.f33282a;
+        function.returns(str, f34363b);
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit d(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        function.returns(str, f34347b);
-        return Unit.f33282a;
+        function.returns(str, f34363b);
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit e(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        JavaTypeQualifiers javaTypeQualifiers = f34347b;
+        JavaTypeQualifiers javaTypeQualifiers = f34363b;
         function.parameter(str, javaTypeQualifiers, javaTypeQualifiers);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit f(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        function.parameter(str, f34347b);
-        return Unit.f33282a;
+        function.parameter(str, f34363b);
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit g(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        function.parameter(str, f34347b);
-        return Unit.f33282a;
+        function.parameter(str, f34363b);
+        return Unit.f33298a;
     }
 
     @NotNull
     public static final Map<String, PredefinedFunctionEnhancementInfo> getPREDEFINED_FUNCTION_ENHANCEMENT_INFO_BY_SIGNATURE() {
-        return f34349d;
+        return f34365d;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit h(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        function.parameter(str, f34347b);
-        return Unit.f33282a;
+        function.parameter(str, f34363b);
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit i(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        function.returns(str, f34347b);
-        return Unit.f33282a;
+        function.returns(str, f34363b);
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit j(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        function.returns(str, f34347b);
-        return Unit.f33282a;
+        function.returns(str, f34363b);
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit k(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        function.parameter(str, f34347b);
-        return Unit.f33282a;
+        function.parameter(str, f34363b);
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit l(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        function.parameter(str, f34347b);
-        return Unit.f33282a;
+        function.parameter(str, f34363b);
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit m(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        function.returns(str, f34347b);
-        return Unit.f33282a;
+        function.returns(str, f34363b);
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit n(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        function.returns(str, f34347b);
-        return Unit.f33282a;
+        function.returns(str, f34363b);
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit o(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        function.returns(str, f34347b);
-        return Unit.f33282a;
+        function.returns(str, f34363b);
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit p(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        function.returns(str, f34347b);
-        return Unit.f33282a;
+        function.returns(str, f34363b);
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit q(SignatureBuildingComponents signatureBuildingComponents, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
         String javaUtil = signatureBuildingComponents.javaUtil("Spliterator");
-        JavaTypeQualifiers javaTypeQualifiers = f34347b;
+        JavaTypeQualifiers javaTypeQualifiers = f34363b;
         function.returns(javaUtil, javaTypeQualifiers, javaTypeQualifiers);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit r(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        JavaTypeQualifiers javaTypeQualifiers = f34347b;
+        JavaTypeQualifiers javaTypeQualifiers = f34363b;
         function.parameter(str, javaTypeQualifiers, javaTypeQualifiers, javaTypeQualifiers);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit s(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        JavaTypeQualifiers javaTypeQualifiers = f34347b;
+        JavaTypeQualifiers javaTypeQualifiers = f34363b;
         function.parameter(str, javaTypeQualifiers);
         function.parameter(str, javaTypeQualifiers);
-        function.returns(str, f34346a);
-        return Unit.f33282a;
+        function.returns(str, f34362a);
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit t(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        JavaTypeQualifiers javaTypeQualifiers = f34347b;
+        JavaTypeQualifiers javaTypeQualifiers = f34363b;
         function.parameter(str, javaTypeQualifiers);
         function.parameter(str, javaTypeQualifiers);
-        function.returns(str, f34346a);
-        return Unit.f33282a;
+        function.returns(str, f34362a);
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit u(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        JavaTypeQualifiers javaTypeQualifiers = f34347b;
+        JavaTypeQualifiers javaTypeQualifiers = f34363b;
         function.parameter(str, javaTypeQualifiers);
         function.parameter(str, javaTypeQualifiers);
         function.parameter(str, javaTypeQualifiers);
         function.returns(JvmPrimitiveType.BOOLEAN);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit v(String str, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        JavaTypeQualifiers javaTypeQualifiers = f34347b;
+        JavaTypeQualifiers javaTypeQualifiers = f34363b;
         function.parameter(str, javaTypeQualifiers, javaTypeQualifiers, javaTypeQualifiers, javaTypeQualifiers);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit w(String str, String str2, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        JavaTypeQualifiers javaTypeQualifiers = f34347b;
+        JavaTypeQualifiers javaTypeQualifiers = f34363b;
         function.parameter(str, javaTypeQualifiers);
-        JavaTypeQualifiers javaTypeQualifiers2 = f34346a;
+        JavaTypeQualifiers javaTypeQualifiers2 = f34362a;
         function.parameter(str2, javaTypeQualifiers, javaTypeQualifiers, javaTypeQualifiers2, javaTypeQualifiers2);
         function.returns(str, javaTypeQualifiers2);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit x(String str, String str2, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        JavaTypeQualifiers javaTypeQualifiers = f34347b;
+        JavaTypeQualifiers javaTypeQualifiers = f34363b;
         function.parameter(str, javaTypeQualifiers);
         function.parameter(str2, javaTypeQualifiers, javaTypeQualifiers, javaTypeQualifiers);
         function.returns(str, javaTypeQualifiers);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit y(String str, String str2, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        JavaTypeQualifiers javaTypeQualifiers = f34347b;
+        JavaTypeQualifiers javaTypeQualifiers = f34363b;
         function.parameter(str, javaTypeQualifiers);
-        JavaTypeQualifiers javaTypeQualifiers2 = f34348c;
-        JavaTypeQualifiers javaTypeQualifiers3 = f34346a;
+        JavaTypeQualifiers javaTypeQualifiers2 = f34364c;
+        JavaTypeQualifiers javaTypeQualifiers3 = f34362a;
         function.parameter(str2, javaTypeQualifiers, javaTypeQualifiers, javaTypeQualifiers2, javaTypeQualifiers3);
         function.returns(str, javaTypeQualifiers3);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit z(String str, String str2, SignatureEnhancementBuilder.ClassEnhancementBuilder.FunctionEnhancementBuilder function) {
         Intrinsics.checkNotNullParameter(function, "$this$function");
-        JavaTypeQualifiers javaTypeQualifiers = f34347b;
+        JavaTypeQualifiers javaTypeQualifiers = f34363b;
         function.parameter(str, javaTypeQualifiers);
-        JavaTypeQualifiers javaTypeQualifiers2 = f34348c;
+        JavaTypeQualifiers javaTypeQualifiers2 = f34364c;
         function.parameter(str, javaTypeQualifiers2);
-        JavaTypeQualifiers javaTypeQualifiers3 = f34346a;
+        JavaTypeQualifiers javaTypeQualifiers3 = f34362a;
         function.parameter(str2, javaTypeQualifiers, javaTypeQualifiers2, javaTypeQualifiers2, javaTypeQualifiers3);
         function.returns(str, javaTypeQualifiers3);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 }

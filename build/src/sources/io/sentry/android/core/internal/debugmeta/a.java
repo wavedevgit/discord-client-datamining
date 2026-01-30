@@ -15,20 +15,20 @@ import java.util.Properties;
 public final class a implements io.sentry.internal.debugmeta.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f28949a;
+    private final Context f28965a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ILogger f28950b;
+    private final ILogger f28966b;
 
     public a(Context context, ILogger iLogger) {
-        this.f28949a = e1.g(context);
-        this.f28950b = iLogger;
+        this.f28965a = e1.g(context);
+        this.f28966b = iLogger;
     }
 
     @Override // io.sentry.internal.debugmeta.a
     public List a() {
         try {
-            BufferedInputStream bufferedInputStream = new BufferedInputStream(this.f28949a.getAssets().open(d.f30801a));
+            BufferedInputStream bufferedInputStream = new BufferedInputStream(this.f28965a.getAssets().open(d.f30817a));
             try {
                 Properties properties = new Properties();
                 properties.load(bufferedInputStream);
@@ -44,13 +44,13 @@ public final class a implements io.sentry.internal.debugmeta.a {
                 throw th2;
             }
         } catch (FileNotFoundException unused) {
-            this.f28950b.c(SentryLevel.INFO, "%s file was not found.", d.f30801a);
+            this.f28966b.c(SentryLevel.INFO, "%s file was not found.", d.f30817a);
             return null;
         } catch (IOException e10) {
-            this.f28950b.b(SentryLevel.ERROR, "Error getting Proguard UUIDs.", e10);
+            this.f28966b.b(SentryLevel.ERROR, "Error getting Proguard UUIDs.", e10);
             return null;
         } catch (RuntimeException e11) {
-            this.f28950b.a(SentryLevel.ERROR, e11, "%s file is malformed.", d.f30801a);
+            this.f28966b.a(SentryLevel.ERROR, e11, "%s file is malformed.", d.f30817a);
             return null;
         }
     }

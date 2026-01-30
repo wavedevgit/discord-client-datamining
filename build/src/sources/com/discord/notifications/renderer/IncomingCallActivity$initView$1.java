@@ -49,7 +49,7 @@ public final class IncomingCallActivity$initView$1 extends k implements Function
             String stringExtra = this.this$0.getIntent().getStringExtra(NotificationRenderer.CHANNEL_NAME);
             View contentView = ActivityExtensionsKt.getContentView(this.this$0);
             if (contentView == null) {
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
             contentView.setBackgroundColor(ThemeManagerKt.getTheme().getControlPrimaryBackgroundDefault());
             ViewBackgroundUtilsKt.setBackgroundDrawableRes(contentView, R.drawable.incoming_call_gradient);
@@ -76,13 +76,13 @@ public final class IncomingCallActivity$initView$1 extends k implements Function
             if (Build.VERSION.SDK_INT >= 33) {
                 this.this$0.configureActions();
             }
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((IncomingCallActivity$initView$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((IncomingCallActivity$initView$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

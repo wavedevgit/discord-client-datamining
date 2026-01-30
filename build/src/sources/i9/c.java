@@ -9,26 +9,26 @@ import java.util.List;
 public class c implements ControllerListener {
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f28403d = new ArrayList(2);
+    private final List f28419d = new ArrayList(2);
 
     private synchronized void c(String str, Throwable th2) {
         Log.e("FdingControllerListener", str, th2);
     }
 
     public synchronized void a(ControllerListener controllerListener) {
-        this.f28403d.add(controllerListener);
+        this.f28419d.add(controllerListener);
     }
 
     public synchronized void b() {
-        this.f28403d.clear();
+        this.f28419d.clear();
     }
 
     @Override // com.facebook.drawee.controller.ControllerListener
     public synchronized void onFailure(String str, Throwable th2) {
-        int size = this.f28403d.size();
+        int size = this.f28419d.size();
         for (int i10 = 0; i10 < size; i10++) {
             try {
-                ControllerListener controllerListener = (ControllerListener) this.f28403d.get(i10);
+                ControllerListener controllerListener = (ControllerListener) this.f28419d.get(i10);
                 if (controllerListener != null) {
                     controllerListener.onFailure(str, th2);
                 }
@@ -40,10 +40,10 @@ public class c implements ControllerListener {
 
     @Override // com.facebook.drawee.controller.ControllerListener
     public synchronized void onFinalImageSet(String str, Object obj, Animatable animatable) {
-        int size = this.f28403d.size();
+        int size = this.f28419d.size();
         for (int i10 = 0; i10 < size; i10++) {
             try {
-                ControllerListener controllerListener = (ControllerListener) this.f28403d.get(i10);
+                ControllerListener controllerListener = (ControllerListener) this.f28419d.get(i10);
                 if (controllerListener != null) {
                     controllerListener.onFinalImageSet(str, obj, animatable);
                 }
@@ -55,10 +55,10 @@ public class c implements ControllerListener {
 
     @Override // com.facebook.drawee.controller.ControllerListener
     public void onIntermediateImageFailed(String str, Throwable th2) {
-        int size = this.f28403d.size();
+        int size = this.f28419d.size();
         for (int i10 = 0; i10 < size; i10++) {
             try {
-                ControllerListener controllerListener = (ControllerListener) this.f28403d.get(i10);
+                ControllerListener controllerListener = (ControllerListener) this.f28419d.get(i10);
                 if (controllerListener != null) {
                     controllerListener.onIntermediateImageFailed(str, th2);
                 }
@@ -70,10 +70,10 @@ public class c implements ControllerListener {
 
     @Override // com.facebook.drawee.controller.ControllerListener
     public void onIntermediateImageSet(String str, Object obj) {
-        int size = this.f28403d.size();
+        int size = this.f28419d.size();
         for (int i10 = 0; i10 < size; i10++) {
             try {
-                ControllerListener controllerListener = (ControllerListener) this.f28403d.get(i10);
+                ControllerListener controllerListener = (ControllerListener) this.f28419d.get(i10);
                 if (controllerListener != null) {
                     controllerListener.onIntermediateImageSet(str, obj);
                 }
@@ -85,10 +85,10 @@ public class c implements ControllerListener {
 
     @Override // com.facebook.drawee.controller.ControllerListener
     public synchronized void onRelease(String str) {
-        int size = this.f28403d.size();
+        int size = this.f28419d.size();
         for (int i10 = 0; i10 < size; i10++) {
             try {
-                ControllerListener controllerListener = (ControllerListener) this.f28403d.get(i10);
+                ControllerListener controllerListener = (ControllerListener) this.f28419d.get(i10);
                 if (controllerListener != null) {
                     controllerListener.onRelease(str);
                 }
@@ -100,10 +100,10 @@ public class c implements ControllerListener {
 
     @Override // com.facebook.drawee.controller.ControllerListener
     public synchronized void onSubmit(String str, Object obj) {
-        int size = this.f28403d.size();
+        int size = this.f28419d.size();
         for (int i10 = 0; i10 < size; i10++) {
             try {
-                ControllerListener controllerListener = (ControllerListener) this.f28403d.get(i10);
+                ControllerListener controllerListener = (ControllerListener) this.f28419d.get(i10);
                 if (controllerListener != null) {
                     controllerListener.onSubmit(str, obj);
                 }

@@ -13,112 +13,99 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var2;
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function(arg0, arg1) { // Original name: applySdkMetadata, environment: var0
-        _fun99914: for (var _fun99914_ip = 0;;) switch (_fun99914_ip) {
+    var0 = function(arg0, arg1) { // Original name: handleCallbackErrors, environment: var0
+        _fun99885: for (var _fun99885_ip = 0;;) switch (_fun99885_ip) {
             case 0:
-                var2 = arg0;
-                var8 = arg1;
-                var0 = undefined;
-                var5 = undefined;
-                var3 = arguments.length;
-                var1 = 2;
-                if (!(var3 > var1)) {
-                    _fun99914_ip = 30;
-                    continue _fun99914
+                var2 = undefined;
+                var8 = undefined;
+                var5 = arg0;
+                var3 = arg1;
+                var4 = undefined;
+                var1 = undefined;
+                var6 = arguments.length;
+                var7 = 2;
+                if (!(var6 > var7)) {
+                    _fun99885_ip = 34;
+                    continue _fun99885
                 }
-            case 22:
-                var3 = arguments[var1];
-                if (!(var0 === var3)) {
-                    _fun99914_ip = 40;
-                    continue _fun99914
+            case 26:
+                var6 = arguments[var7];
+                if (!(var2 === var6)) {
+                    _fun99885_ip = 43;
+                    continue _fun99885
                 }
-            case 30:
-                var6 = new Array(1);
-                var6[0] = var8;
-                _fun99914_ip = 44;
-                continue _fun99914;
-            case 40:
-                var6 = arguments[var1];
-            case 44:
-                var1 = arguments.length;
-                var3 = 3;
-                var7 = var1 > var3;
-                var9 = 'npm';
-                var1 = var9;
-                if (!var7) {
-                    _fun99914_ip = 81;
-                    continue _fun99914
-                }
-            case 66:
-                var7 = arguments[var3];
-                var1 = var9;
-                if (!(var0 !== var7)) {
-                    _fun99914_ip = 81;
-                    continue _fun99914
-                }
-            case 77:
-                var1 = arguments[var3];
-            case 81:
-                var _closure2_slot0 = var1;
-                var1 = var2._metadata;
-                if (var1) {
-                    _fun99914_ip = 96;
-                    continue _fun99914
-                }
-            case 94:
-                var1 = {};
-            case 96:
-                var3 = var1.sdk;
-                if (var3) {
-                    _fun99914_ip = 196;
-                    continue _fun99914
-                }
-            case 105:
-                var3 = {};
-                var5 = global;
-                var5 = var5.HermesInternal;
-                var7 = var5.concat;
-                var5 = 'sentry.javascript.';
-                var5 = var7.bind(var5)(var8);
-                var3.name = var5;
-                var5 = var6.map;
-                var4 = function(arg0) { // Environment: var4
-                    var0 = {};
-                    var5 = _closure2_slot0;
-                    var1 = global;
-                    var1 = var1.HermesInternal;
-                    var4 = var1.concat;
-                    var3 = '';
-                    var2 = ':@sentry/';
-                    var1 = arg0;
-                    var1 = var4.bind(var3)(var5, var2, var1);
-                    var0.name = var1;
-                    var3 = _closure1_slot0;
-                    var2 = _closure1_slot1;
-                    var1 = 0;
-                    var2 = var2[var1];
-                    var1 = undefined;
-                    var1 = var3.bind(var1)(var2);
-                    var1 = var1.SDK_VERSION;
-                    var0.version = var1;
+            case 34:
+                var6 = function() { // Environment: var0
+                    var0 = undefined;
                     return var0;
                 };
-                var4 = var5.bind(var6)(var4);
-                var3.packages = var4;
-                var5 = _closure1_slot0;
-                var6 = _closure1_slot1;
-                var4 = 0;
-                var4 = var6[var4];
-                var4 = var5.bind(var0)(var4);
-                var4 = var4.SDK_VERSION;
-                var3.version = var4;
-                var1.sdk = var3;
-            case 196:
-                var2._metadata = var1;
+                _fun99885_ip = 47;
+                continue _fun99885;
+            case 43:
+                var6 = arguments[var7];
+            case 47:
+                var1 = var6;
+            case 50: // try_start_0
+                var4 = var5.bind(var2)();
+            case 54: // try_end0
+                var6 = var4;
+                var5 = var3;
+                var4 = var1;
+                var0 = function(arg0, arg1, arg2) { // Original name: maybeHandlePromiseRejection, environment: var0
+                    _fun99887: for (var _fun99887_ip = 0;;) switch (_fun99887_ip) {
+                        case 0:
+                            var3 = arg0;
+                            var2 = arg2;
+                            var1 = arg1;
+                            var _closure3_slot0 = var1;
+                            var _closure3_slot1 = var2;
+                            var5 = _closure1_slot0;
+                            var4 = _closure1_slot1;
+                            var1 = 0;
+                            var4 = var4[var1];
+                            var1 = undefined;
+                            var5 = var5.bind(var1)(var4);
+                            var4 = var5.isThenable;
+                            var4 = var4.bind(var5)(var3);
+                            if (var4) {
+                                _fun99887_ip = 63;
+                                continue _fun99887
+                            }
+                        case 57:
+                            var1 = var2.bind(var1)();
+                            return var3;
+                        case 63:
+                            var2 = var3.then;
+                            var1 = function(arg0) { // Environment: var0
+                                var1 = _closure3_slot1;
+                                var0 = undefined;
+                                var0 = var1.bind(var0)();
+                                var0 = arg0;
+                                return var0;
+                            };
+                            var0 = function(arg0) { // Environment: var0
+                                var0 = arg0;
+                                var3 = _closure3_slot0;
+                                var2 = undefined;
+                                var3 = var3.bind(var2)(var0);
+                                var1 = _closure3_slot1;
+                                var1 = var1.bind(var2)();
+                                throw var0;
+                            };
+                            var0 = var2.bind(var3)(var1, var0);
+                            return var0;
+                    }
+                };
+                var0 = var0.bind(var2)(var6, var5, var4);
                 return var0;
+            case 79: // catch_target0
+                CatchBlockStart(arg_register = 0);
+                var3 = var3.bind(var2)(var0);
+                var1 = var1.bind(var2)();
+                throw var0;
         }
     };
-    var1.applySdkMetadata = var0;
+    var1.handleCallbackErrors = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12862]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12887]);

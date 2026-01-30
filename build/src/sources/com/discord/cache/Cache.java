@@ -103,7 +103,7 @@ public final class Cache {
         cache.getSharedPrefs().getString("hydrate", null);
         cache.sharedPrefsLoaded = true;
         TTIMetrics.record$default(tTIMetrics, "CacheStorage Init End", 0L, null, false, 14, null);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private final SharedPreferences getFastCacheSharedPrefs() {

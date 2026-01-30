@@ -10,16 +10,16 @@ import tm.r;
 public final class f implements tm.a, tm.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f50419a;
+    private final a f50435a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final b f50420b;
+    private final b f50436b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final w f50421c;
+    private final w f50437c;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f50422d;
+    private boolean f50438d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface a {
@@ -35,13 +35,13 @@ public final class f implements tm.a, tm.h {
         Intrinsics.checkNotNullParameter(renderer, "renderer");
         Intrinsics.checkNotNullParameter(sideEffectRunner, "sideEffectRunner");
         Intrinsics.checkNotNullParameter(eventActionsChannel, "eventActionsChannel");
-        this.f50419a = renderer;
-        this.f50420b = sideEffectRunner;
-        this.f50421c = eventActionsChannel;
+        this.f50435a = renderer;
+        this.f50436b = sideEffectRunner;
+        this.f50437c = eventActionsChannel;
     }
 
     private final void e() {
-        if (!this.f50422d) {
+        if (!this.f50438d) {
             return;
         }
         throw new IllegalStateException("RenderContext cannot be used after render method returns.");
@@ -52,7 +52,7 @@ public final class f implements tm.a, tm.h {
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(sideEffect, "sideEffect");
         e();
-        this.f50420b.a(key, sideEffect);
+        this.f50436b.a(key, sideEffect);
     }
 
     @Override // tm.a
@@ -61,20 +61,20 @@ public final class f implements tm.a, tm.h {
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(handler, "handler");
         e();
-        return this.f50419a.a(child, obj, key, handler);
+        return this.f50435a.a(child, obj, key, handler);
     }
 
     public final void f() {
         e();
-        this.f50422d = true;
+        this.f50438d = true;
     }
 
     @Override // tm.h
     /* renamed from: g */
     public void d(r value) {
         Intrinsics.checkNotNullParameter(value, "value");
-        if (this.f50422d) {
-            this.f50421c.offer(value);
+        if (this.f50438d) {
+            this.f50437c.offer(value);
             return;
         }
         throw new UnsupportedOperationException(Intrinsics.stringPlus("Expected sink to not be sent to until after the render pass. Received action: ", value));

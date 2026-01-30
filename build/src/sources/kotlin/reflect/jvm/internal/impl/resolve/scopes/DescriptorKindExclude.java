@@ -11,11 +11,11 @@ public abstract class DescriptorKindExclude {
         public static final NonExtensions INSTANCE = new NonExtensions();
 
         /* renamed from: a  reason: collision with root package name */
-        private static final int f35471a;
+        private static final int f35487a;
 
         static {
             DescriptorKindFilter.Companion companion = DescriptorKindFilter.Companion;
-            f35471a = (~(companion.getVARIABLES_MASK() | companion.getFUNCTIONS_MASK())) & companion.getALL_KINDS_MASK();
+            f35487a = (~(companion.getVARIABLES_MASK() | companion.getFUNCTIONS_MASK())) & companion.getALL_KINDS_MASK();
         }
 
         private NonExtensions() {
@@ -23,7 +23,7 @@ public abstract class DescriptorKindExclude {
 
         @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.DescriptorKindExclude
         public int getFullyExcludedDescriptorKinds() {
-            return f35471a;
+            return f35487a;
         }
     }
 

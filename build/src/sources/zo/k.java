@@ -26,37 +26,37 @@ import zo.k;
 public final class k implements vm.b {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f55934d;
+    private final String f55950d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f55935e;
+    private final String f55951e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f55936i;
+    private final String f55952i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final StepStyle f55937o;
+    private final StepStyle f55953o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Function0 f55938p;
+    private final Function0 f55954p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final String f55939q;
+    private final String f55955q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final Function0 f55940r;
+    private final Function0 f55956r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final vm.c0 f55941s;
+    private final vm.c0 f55957s;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements View.OnAttachStateChangeListener {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ BottomSheetBehavior f55942d;
+        final /* synthetic */ BottomSheetBehavior f55958d;
 
         a(BottomSheetBehavior bottomSheetBehavior) {
-            this.f55942d = bottomSheetBehavior;
+            this.f55958d = bottomSheetBehavior;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -67,7 +67,7 @@ public final class k implements vm.b {
         @Override // android.view.View.OnAttachStateChangeListener
         public void onViewAttachedToWindow(View view) {
             Intrinsics.checkNotNullParameter(view, "view");
-            final BottomSheetBehavior bottomSheetBehavior = this.f55942d;
+            final BottomSheetBehavior bottomSheetBehavior = this.f55958d;
             view.postDelayed(new Runnable() { // from class: zo.j
                 @Override // java.lang.Runnable
                 public final void run() {
@@ -86,7 +86,7 @@ public final class k implements vm.b {
     /* synthetic */ class b extends FunctionReferenceImpl implements Function3 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f55943d = new b();
+        public static final b f55959d = new b();
 
         b() {
             super(3, ap.b.class, "inflate", "inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lcom/withpersona/sdk2/inquiry/permissions/databinding/Pi2RequestPermissionRationaleBinding;", 0);
@@ -110,15 +110,15 @@ public final class k implements vm.b {
         Intrinsics.checkNotNullParameter(onPositiveButtonClick, "onPositiveButtonClick");
         Intrinsics.checkNotNullParameter(negativeButtonText, "negativeButtonText");
         Intrinsics.checkNotNullParameter(onNegativeButtonClick, "onNegativeButtonClick");
-        this.f55934d = titleText;
-        this.f55935e = messageText;
-        this.f55936i = positiveButtonText;
-        this.f55937o = stepStyle;
-        this.f55938p = onPositiveButtonClick;
-        this.f55939q = negativeButtonText;
-        this.f55940r = onNegativeButtonClick;
-        k.a aVar = vm.k.f51267a;
-        this.f55941s = new vm.z(Reflection.getOrCreateKotlinClass(k.class), b.f55943d, new Function1() { // from class: zo.a
+        this.f55950d = titleText;
+        this.f55951e = messageText;
+        this.f55952i = positiveButtonText;
+        this.f55953o = stepStyle;
+        this.f55954p = onPositiveButtonClick;
+        this.f55955q = negativeButtonText;
+        this.f55956r = onNegativeButtonClick;
+        k.a aVar = vm.k.f51283a;
+        this.f55957s = new vm.z(Reflection.getOrCreateKotlinClass(k.class), b.f55959d, new Function1() { // from class: zo.a
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 vm.k u10;
@@ -189,21 +189,21 @@ public final class k implements vm.b {
                 k.o(BottomSheetBehavior.this, view);
             }
         });
-        StepStyle stepStyle = this.f55937o;
+        StepStyle stepStyle = this.f55953o;
         if (stepStyle != null && (backgroundColorValue = stepStyle.getBackgroundColorValue()) != null) {
             d10 = backgroundColorValue.intValue();
         } else {
             Context context = bVar.getRoot().getContext();
             Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
-            d10 = jp.s.d(context, yg.b.f54354o, null, false, 6, null);
+            d10 = jp.s.d(context, yg.b.f54370o, null, false, 6, null);
         }
-        bVar.getRoot().setTag(wo.g.f52736a, Integer.valueOf(d10));
+        bVar.getRoot().setTag(wo.g.f52752a, Integer.valueOf(d10));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit m(k kVar) {
-        kVar.f55940r.invoke();
-        return Unit.f33282a;
+        kVar.f55956r.invoke();
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -212,24 +212,24 @@ public final class k implements vm.b {
     }
 
     private final void p(final ap.b bVar, final k kVar, vm.a0 a0Var) {
-        if (this.f55934d.length() > 0) {
+        if (this.f55950d.length() > 0) {
             TextView title = bVar.f6584i;
             Intrinsics.checkNotNullExpressionValue(title, "title");
-            yp.f.d(title, this.f55934d);
+            yp.f.d(title, this.f55950d);
         } else {
             bVar.f6584i.setVisibility(8);
         }
         TextView message = bVar.f6580e;
         Intrinsics.checkNotNullExpressionValue(message, "message");
-        yp.f.d(message, this.f55935e);
-        bVar.f6582g.setText(kVar.f55936i);
+        yp.f.d(message, this.f55951e);
+        bVar.f6582g.setText(kVar.f55952i);
         bVar.f6582g.setOnClickListener(new View.OnClickListener() { // from class: zo.c
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 k.r(k.this, view);
             }
         });
-        bVar.f6581f.setText(kVar.f55939q);
+        bVar.f6581f.setText(kVar.f55955q);
         bVar.f6581f.setOnClickListener(new View.OnClickListener() { // from class: zo.d
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
@@ -284,24 +284,24 @@ public final class k implements vm.b {
                 throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
             }
         }
-        kVar.k(kVar.f55937o, bVar, z10);
-        return Unit.f33282a;
+        kVar.k(kVar.f55953o, bVar, z10);
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void r(k kVar, View view) {
-        kVar.f55938p.invoke();
+        kVar.f55954p.invoke();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void s(k kVar, View view) {
-        kVar.f55940r.invoke();
+        kVar.f55956r.invoke();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit t(k kVar) {
-        kVar.f55940r.invoke();
-        return Unit.f33282a;
+        kVar.f55956r.invoke();
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -326,7 +326,7 @@ public final class k implements vm.b {
 
     @Override // vm.b
     public vm.c0 a() {
-        return this.f55941s;
+        return this.f55957s;
     }
 
     /* JADX INFO: Access modifiers changed from: private */

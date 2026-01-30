@@ -47,7 +47,7 @@ public final class c extends Event {
         createMap3.putDouble("x", this.f22931a.e());
         createMap3.putDouble("y", this.f22931a.f());
         createMap3.putInt(ViewProps.POSITION, this.f22931a.d());
-        Unit unit = Unit.f33282a;
+        Unit unit = Unit.f33298a;
         createMap2.putMap(ViewProps.START, createMap3);
         WritableMap createMap4 = Arguments.createMap();
         createMap4.putDouble("x", this.f22931a.b());

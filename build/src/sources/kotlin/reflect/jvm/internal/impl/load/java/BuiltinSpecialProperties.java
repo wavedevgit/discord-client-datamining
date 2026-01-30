@@ -27,19 +27,19 @@ public final class BuiltinSpecialProperties {
     public static final BuiltinSpecialProperties INSTANCE = new BuiltinSpecialProperties();
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f33961a;
+    private static final Map f33977a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Map f33962b;
+    private static final Map f33978b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Set f33963c;
+    private static final Set f33979c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Set f33964d;
+    private static final Set f33980d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Set f33965e;
+    private static final Set f33981e;
 
     static {
         FqName b10;
@@ -77,7 +77,7 @@ public final class BuiltinSpecialProperties {
         Pair a27 = v.a(a16, Name.identifier("length"));
         a17 = BuiltinSpecialPropertiesKt.a(StandardNames.FqNames.atomicArray, "size");
         Map m10 = o0.m(a18, a19, a20, a21, a22, a23, a24, a25, a26, a27, v.a(a17, Name.identifier("length")));
-        f33961a = m10;
+        f33977a = m10;
         Set<Map.Entry> entrySet = m10.entrySet();
         ArrayList<Pair> arrayList = new ArrayList(CollectionsKt.w(entrySet, 10));
         for (Map.Entry entry : entrySet) {
@@ -97,23 +97,23 @@ public final class BuiltinSpecialProperties {
         for (Map.Entry entry2 : linkedHashMap.entrySet()) {
             linkedHashMap2.put(entry2.getKey(), CollectionsKt.e0((Iterable) entry2.getValue()));
         }
-        f33962b = linkedHashMap2;
-        Map map = f33961a;
+        f33978b = linkedHashMap2;
+        Map map = f33977a;
         LinkedHashSet linkedHashSet = new LinkedHashSet();
         for (Map.Entry entry3 : map.entrySet()) {
             ClassId mapKotlinToJava = JavaToKotlinClassMap.INSTANCE.mapKotlinToJava(((FqName) entry3.getKey()).parent().toUnsafe());
             Intrinsics.checkNotNull(mapKotlinToJava);
             linkedHashSet.add(mapKotlinToJava.asSingleFqName().child((Name) entry3.getValue()));
         }
-        f33963c = linkedHashSet;
-        Set keySet = f33961a.keySet();
-        f33964d = keySet;
+        f33979c = linkedHashSet;
+        Set keySet = f33977a.keySet();
+        f33980d = keySet;
         Set<FqName> set = keySet;
         ArrayList arrayList2 = new ArrayList(CollectionsKt.w(set, 10));
         for (FqName fqName2 : set) {
             arrayList2.add(fqName2.shortName());
         }
-        f33965e = CollectionsKt.l1(arrayList2);
+        f33981e = CollectionsKt.l1(arrayList2);
     }
 
     private BuiltinSpecialProperties() {
@@ -121,13 +121,13 @@ public final class BuiltinSpecialProperties {
 
     @NotNull
     public final Map<FqName, Name> getPROPERTY_FQ_NAME_TO_JVM_GETTER_NAME_MAP() {
-        return f33961a;
+        return f33977a;
     }
 
     @NotNull
     public final List<Name> getPropertyNameCandidatesBySpecialGetterName(@NotNull Name name1) {
         Intrinsics.checkNotNullParameter(name1, "name1");
-        List<Name> list = (List) f33962b.get(name1);
+        List<Name> list = (List) f33978b.get(name1);
         if (list == null) {
             return CollectionsKt.l();
         }
@@ -136,11 +136,11 @@ public final class BuiltinSpecialProperties {
 
     @NotNull
     public final Set<FqName> getSPECIAL_FQ_NAMES() {
-        return f33964d;
+        return f33980d;
     }
 
     @NotNull
     public final Set<Name> getSPECIAL_SHORT_NAMES() {
-        return f33965e;
+        return f33981e;
     }
 }

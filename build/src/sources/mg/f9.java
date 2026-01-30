@@ -5,7 +5,7 @@ import ui.c;
 final class f9 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final f9 f38186a = new f9();
+    static final f9 f38202a = new f9();
 
     static {
         c.b a10 = ui.c.a("totalGroups");

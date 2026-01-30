@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var9.ACCOUNT;
     var1.parent = var9;
     var9 = function() { // Original name: onAccountEnable2FASettingPress, environment: var7
-        _fun80967: for (var _fun80967_ip = 0;;) switch (_fun80967_ip) {
+        _fun81013: for (var _fun81013_ip = 0;;) switch (_fun81013_ip) {
             case 0:
                 var2 = _closure1_slot3;
                 var0 = var2.getCurrentUser;
@@ -60,20 +60,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = undefined;
                 var2 = undefined;
                 if (var5) {
-                    _fun80967_ip = 35;
-                    continue _fun80967
+                    _fun81013_ip = 35;
+                    continue _fun81013
                 }
             case 29:
                 var2 = var4.verified;
             case 35:
                 if (!(var3 != var2)) {
-                    _fun80967_ip = 45;
-                    continue _fun80967
+                    _fun81013_ip = 45;
+                    continue _fun81013
                 }
             case 39:
                 if (var2) {
-                    _fun80967_ip = 183;
-                    continue _fun80967
+                    _fun81013_ip = 183;
+                    continue _fun81013
                 }
             case 45:
                 var3 = _closure1_slot1;
@@ -106,8 +106,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var6.bind(var7)(var5);
                 var2.body = var5;
                 var2 = var3.bind(var4)(var2);
-                _fun80967_ip = 213;
-                continue _fun80967;
+                _fun81013_ip = 213;
+                continue _fun81013;
             case 183:
                 var2 = _closure1_slot1;
                 var3 = _closure1_slot2;
@@ -144,4 +144,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1613, 6965, 10078, 10282, 3956, 1234, 8939, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1613, 6968, 10084, 10288, 3962, 1234, 8943, 2]);

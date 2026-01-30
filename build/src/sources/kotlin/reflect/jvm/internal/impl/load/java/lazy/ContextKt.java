@@ -34,7 +34,7 @@ public final class ContextKt {
     public static final LazyJavaResolverContext childForClassOrPackage(@NotNull LazyJavaResolverContext lazyJavaResolverContext, @NotNull ClassOrPackageFragmentDescriptor containingDeclaration, JavaTypeParameterListOwner javaTypeParameterListOwner, int i10) {
         Intrinsics.checkNotNullParameter(lazyJavaResolverContext, "<this>");
         Intrinsics.checkNotNullParameter(containingDeclaration, "containingDeclaration");
-        return c(lazyJavaResolverContext, containingDeclaration, javaTypeParameterListOwner, i10, l.a(o.f31104i, new a(lazyJavaResolverContext, containingDeclaration)));
+        return c(lazyJavaResolverContext, containingDeclaration, javaTypeParameterListOwner, i10, l.a(o.f31120i, new a(lazyJavaResolverContext, containingDeclaration)));
     }
 
     public static /* synthetic */ LazyJavaResolverContext childForClassOrPackage$default(LazyJavaResolverContext lazyJavaResolverContext, ClassOrPackageFragmentDescriptor classOrPackageFragmentDescriptor, JavaTypeParameterListOwner javaTypeParameterListOwner, int i10, int i11, Object obj) {
@@ -75,7 +75,7 @@ public final class ContextKt {
         if (additionalAnnotations.isEmpty()) {
             return lazyJavaResolverContext;
         }
-        return new LazyJavaResolverContext(lazyJavaResolverContext.getComponents(), lazyJavaResolverContext.getTypeParameterResolver(), l.a(o.f31104i, new b(lazyJavaResolverContext, additionalAnnotations)));
+        return new LazyJavaResolverContext(lazyJavaResolverContext.getComponents(), lazyJavaResolverContext.getTypeParameterResolver(), l.a(o.f31120i, new b(lazyJavaResolverContext, additionalAnnotations)));
     }
 
     /* JADX INFO: Access modifiers changed from: private */

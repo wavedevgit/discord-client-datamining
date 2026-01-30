@@ -53,7 +53,7 @@ public final class MessageFrameFeedHeaderView extends ConstraintLayout {
         @NotNull
         public static final Companion Companion = new Companion(null);
         @NotNull
-        private static final Lazy[] $childSerializers = {null, null, ir.l.a(ir.o.f31103e, new Function0() { // from class: com.discord.chat.presentation.message.r0
+        private static final Lazy[] $childSerializers = {null, null, ir.l.a(ir.o.f31119e, new Function0() { // from class: com.discord.chat.presentation.message.r0
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 KSerializer _childSerializers$_anonymous_;

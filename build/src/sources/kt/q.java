@@ -3,16 +3,16 @@ package kt;
 final class q implements jt.c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f36626a;
+    private final String f36642a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Class f36627b;
+    private final Class f36643b;
 
     private q(String str, Class cls) {
         if (str != null) {
             if (cls != null) {
-                this.f36626a = str;
-                this.f36627b = cls;
+                this.f36642a = str;
+                this.f36643b = cls;
                 return;
             }
             throw new NullPointerException("Missing type of attribute.");
@@ -31,7 +31,7 @@ final class q implements jt.c {
         }
         if (obj instanceof q) {
             q qVar = (q) obj;
-            if (this.f36626a.equals(qVar.f36626a) && this.f36627b.equals(qVar.f36627b)) {
+            if (this.f36642a.equals(qVar.f36642a) && this.f36643b.equals(qVar.f36643b)) {
                 return true;
             }
         }
@@ -39,20 +39,20 @@ final class q implements jt.c {
     }
 
     public int hashCode() {
-        return this.f36626a.hashCode();
+        return this.f36642a.hashCode();
     }
 
     @Override // jt.c
     public String name() {
-        return this.f36626a;
+        return this.f36642a;
     }
 
     public String toString() {
-        return this.f36627b.getName() + "@" + this.f36626a;
+        return this.f36643b.getName() + "@" + this.f36642a;
     }
 
     @Override // jt.c
     public Class type() {
-        return this.f36627b;
+        return this.f36643b;
     }
 }

@@ -13,7 +13,7 @@ public final class e3 implements KSerializer {
     public static final e3 f6800a = new e3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f6801b = new g2("kotlin.uuid.Uuid", e.i.f56091a);
+    private static final SerialDescriptor f6801b = new g2("kotlin.uuid.Uuid", e.i.f56107a);
 
     private e3() {
     }

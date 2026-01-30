@@ -11,7 +11,7 @@ public abstract class b {
         Intrinsics.checkNotNullParameter(function2, "<this>");
         Intrinsics.checkNotNullParameter(completion, "completion");
         Continuation c10 = or.b.c(or.b.a(function2, obj, completion));
-        Result.a aVar = Result.f33279e;
-        c10.resumeWith(Result.b(Unit.f33282a));
+        Result.a aVar = Result.f33295e;
+        c10.resumeWith(Result.b(Unit.f33298a));
     }
 }

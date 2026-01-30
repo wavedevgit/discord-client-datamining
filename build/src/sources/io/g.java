@@ -6,30 +6,30 @@ import mn.v;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final tq.h f28688a;
+    private final tq.h f28704a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final tq.h f28689b;
+    private final tq.h f28705b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final tq.h f28690c;
+    private final tq.h f28706c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final tq.h f28691d;
+    private final tq.h f28707d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final tq.h f28692e;
+    private final tq.h f28708e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final tq.h f28693f;
+    private final tq.h f28709f;
 
     public g(tq.h hVar, tq.h hVar2, tq.h hVar3, tq.h hVar4, tq.h hVar5, tq.h hVar6) {
-        this.f28688a = hVar;
-        this.f28689b = hVar2;
-        this.f28690c = hVar3;
-        this.f28691d = hVar4;
-        this.f28692e = hVar5;
-        this.f28693f = hVar6;
+        this.f28704a = hVar;
+        this.f28705b = hVar2;
+        this.f28706c = hVar3;
+        this.f28707d = hVar4;
+        this.f28708e = hVar5;
+        this.f28709f = hVar6;
     }
 
     public static g a(tq.h hVar, tq.h hVar2, tq.h hVar3, tq.h hVar4, tq.h hVar5, tq.h hVar6) {
@@ -41,6 +41,6 @@ public final class g {
     }
 
     public f b(String str, String str2, String str3, String str4, c cVar, String str5, v vVar) {
-        return c((Context) this.f28688a.get(), str, str2, str3, str4, (com.withpersona.sdk2.inquiry.governmentid.network.a) this.f28689b.get(), cVar, (kp.a) this.f28690c.get(), (zn.a) this.f28691d.get(), (pp.a) this.f28692e.get(), str5, vVar, (rn.a) this.f28693f.get());
+        return c((Context) this.f28704a.get(), str, str2, str3, str4, (com.withpersona.sdk2.inquiry.governmentid.network.a) this.f28705b.get(), cVar, (kp.a) this.f28706c.get(), (zn.a) this.f28707d.get(), (pp.a) this.f28708e.get(), str5, vVar, (rn.a) this.f28709f.get());
     }
 }

@@ -71,7 +71,7 @@ abstract class d {
             bArr = new byte[i10];
             lVar.n(bArr, 0, i10);
         } else {
-            bArr = w0.f40284f;
+            bArr = w0.f40300f;
         }
         byte[] bArr2 = bArr;
         lVar.k((int) (lVar.g() - lVar.getPosition()));

@@ -87,7 +87,7 @@ public final class InputRadioGroupJsonAdapter extends h {
         }
         Constructor<InputRadioGroup> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = InputRadioGroup.class.getDeclaredConstructor(String.class, InputRadioGroup.Attributes.class, InputRadioGroup.InputRadioGroupComponentStyle.class, Integer.TYPE, c.f49081c);
+            constructor = InputRadioGroup.class.getDeclaredConstructor(String.class, InputRadioGroup.Attributes.class, InputRadioGroup.InputRadioGroupComponentStyle.class, Integer.TYPE, c.f49097c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

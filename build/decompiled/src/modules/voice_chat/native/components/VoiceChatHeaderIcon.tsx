@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
     var0 = function(arg0) { // Original name: VoiceChatCallScreenHeaderIconInner, environment: var1
-        _fun67946: for (var _fun67946_ip = 0;;) switch (_fun67946_ip) {
+        _fun67991: for (var _fun67991_ip = 0;;) switch (_fun67991_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.children;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.source = var10;
                 var10 = null;
                 if (!(var10 == var8)) {
-                    _fun67946_ip = 133;
-                    continue _fun67946
+                    _fun67991_ip = 133;
+                    continue _fun67991
                 }
             case 107:
                 var10 = _closure1_slot1;
@@ -156,7 +156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/voice_chat/native/components/VoiceChatHeaderIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Original name: VoiceChatHeaderIcon, environment: var1
-        _fun67947: for (var _fun67947_ip = 0;;) switch (_fun67947_ip) {
+        _fun67992: for (var _fun67992_ip = 0;;) switch (_fun67992_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.accessibilityLabel;
@@ -186,8 +186,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = new Array(2);
                 var6[0] = var8;
                 if (!var7) {
-                    _fun67947_ip = 122;
-                    continue _fun67947
+                    _fun67992_ip = 122;
+                    continue _fun67992
                 }
             case 116:
                 var7 = var11.disabledOpacity;
@@ -277,4 +277,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.VoiceChatCallScreenHeaderIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3901, 660, 33, 1297, 671, 4659, 566, 8387, 22, 3118, 4858, 4039, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3907, 660, 33, 1297, 671, 4665, 566, 8390, 22, 3118, 4864, 4045, 2]);

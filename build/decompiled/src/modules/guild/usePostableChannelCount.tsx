@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild/usePostableChannelCount.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: useSendMessageChannelCount, environment: var1
-        _fun107460: for (var _fun107460_ip = 0;;) switch (_fun107460_ip) {
+        _fun107722: for (var _fun107722_ip = 0;;) switch (_fun107722_ip) {
             case 0:
                 var0 = arg0;
                 var _closure2_slot0 = var0;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = new Array(1);
                 var2[0] = var0;
                 var0 = function() { // Environment: var1
-                    _fun107461: for (var _fun107461_ip = 0;;) switch (_fun107461_ip) {
+                    _fun107723: for (var _fun107723_ip = 0;;) switch (_fun107723_ip) {
                         case 0:
                             var3 = _closure1_slot3;
                             var2 = var3.getChannels;
@@ -69,8 +69,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var1[var0];
                             var1 = null;
                             if (!(var1 == var0)) {
-                                _fun107461_ip = 43;
-                                continue _fun107461
+                                _fun107723_ip = 43;
+                                continue _fun107723
                             }
                         case 39:
                             var0 = new Array(0);
@@ -82,8 +82,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.length;
                 var0 = 0;
                 if (!(var0 !== var2)) {
-                    _fun107460_ip = 106;
-                    continue _fun107460
+                    _fun107722_ip = 106;
+                    continue _fun107722
                 }
             case 84:
                 var2 = var3.filter;

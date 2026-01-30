@@ -8,7 +8,7 @@ import okhttp3.Request;
 public final class i {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final i f56126a = new i();
+    public static final i f56142a = new i();
 
     private i() {
     }
@@ -26,7 +26,7 @@ public final class i {
         StringBuilder sb2 = new StringBuilder();
         sb2.append(request.j());
         sb2.append(' ');
-        i iVar = f56126a;
+        i iVar = f56142a;
         if (iVar.b(request, proxyType)) {
             sb2.append(request.n());
         } else {

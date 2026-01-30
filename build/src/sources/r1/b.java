@@ -10,125 +10,125 @@ abstract class b {
     static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f47791a;
+        static final /* synthetic */ int[] f47807a;
 
         static {
             int[] iArr = new int[r1.a.values().length];
-            f47791a = iArr;
+            f47807a = iArr;
             try {
                 iArr[r1.a.CLEAR.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f47791a[r1.a.SRC.ordinal()] = 2;
+                f47807a[r1.a.SRC.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f47791a[r1.a.DST.ordinal()] = 3;
+                f47807a[r1.a.DST.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f47791a[r1.a.SRC_OVER.ordinal()] = 4;
+                f47807a[r1.a.SRC_OVER.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f47791a[r1.a.DST_OVER.ordinal()] = 5;
+                f47807a[r1.a.DST_OVER.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f47791a[r1.a.SRC_IN.ordinal()] = 6;
+                f47807a[r1.a.SRC_IN.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f47791a[r1.a.DST_IN.ordinal()] = 7;
+                f47807a[r1.a.DST_IN.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                f47791a[r1.a.SRC_OUT.ordinal()] = 8;
+                f47807a[r1.a.SRC_OUT.ordinal()] = 8;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                f47791a[r1.a.DST_OUT.ordinal()] = 9;
+                f47807a[r1.a.DST_OUT.ordinal()] = 9;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                f47791a[r1.a.SRC_ATOP.ordinal()] = 10;
+                f47807a[r1.a.SRC_ATOP.ordinal()] = 10;
             } catch (NoSuchFieldError unused10) {
             }
             try {
-                f47791a[r1.a.DST_ATOP.ordinal()] = 11;
+                f47807a[r1.a.DST_ATOP.ordinal()] = 11;
             } catch (NoSuchFieldError unused11) {
             }
             try {
-                f47791a[r1.a.XOR.ordinal()] = 12;
+                f47807a[r1.a.XOR.ordinal()] = 12;
             } catch (NoSuchFieldError unused12) {
             }
             try {
-                f47791a[r1.a.PLUS.ordinal()] = 13;
+                f47807a[r1.a.PLUS.ordinal()] = 13;
             } catch (NoSuchFieldError unused13) {
             }
             try {
-                f47791a[r1.a.MODULATE.ordinal()] = 14;
+                f47807a[r1.a.MODULATE.ordinal()] = 14;
             } catch (NoSuchFieldError unused14) {
             }
             try {
-                f47791a[r1.a.SCREEN.ordinal()] = 15;
+                f47807a[r1.a.SCREEN.ordinal()] = 15;
             } catch (NoSuchFieldError unused15) {
             }
             try {
-                f47791a[r1.a.OVERLAY.ordinal()] = 16;
+                f47807a[r1.a.OVERLAY.ordinal()] = 16;
             } catch (NoSuchFieldError unused16) {
             }
             try {
-                f47791a[r1.a.DARKEN.ordinal()] = 17;
+                f47807a[r1.a.DARKEN.ordinal()] = 17;
             } catch (NoSuchFieldError unused17) {
             }
             try {
-                f47791a[r1.a.LIGHTEN.ordinal()] = 18;
+                f47807a[r1.a.LIGHTEN.ordinal()] = 18;
             } catch (NoSuchFieldError unused18) {
             }
             try {
-                f47791a[r1.a.COLOR_DODGE.ordinal()] = 19;
+                f47807a[r1.a.COLOR_DODGE.ordinal()] = 19;
             } catch (NoSuchFieldError unused19) {
             }
             try {
-                f47791a[r1.a.COLOR_BURN.ordinal()] = 20;
+                f47807a[r1.a.COLOR_BURN.ordinal()] = 20;
             } catch (NoSuchFieldError unused20) {
             }
             try {
-                f47791a[r1.a.HARD_LIGHT.ordinal()] = 21;
+                f47807a[r1.a.HARD_LIGHT.ordinal()] = 21;
             } catch (NoSuchFieldError unused21) {
             }
             try {
-                f47791a[r1.a.SOFT_LIGHT.ordinal()] = 22;
+                f47807a[r1.a.SOFT_LIGHT.ordinal()] = 22;
             } catch (NoSuchFieldError unused22) {
             }
             try {
-                f47791a[r1.a.DIFFERENCE.ordinal()] = 23;
+                f47807a[r1.a.DIFFERENCE.ordinal()] = 23;
             } catch (NoSuchFieldError unused23) {
             }
             try {
-                f47791a[r1.a.EXCLUSION.ordinal()] = 24;
+                f47807a[r1.a.EXCLUSION.ordinal()] = 24;
             } catch (NoSuchFieldError unused24) {
             }
             try {
-                f47791a[r1.a.MULTIPLY.ordinal()] = 25;
+                f47807a[r1.a.MULTIPLY.ordinal()] = 25;
             } catch (NoSuchFieldError unused25) {
             }
             try {
-                f47791a[r1.a.HUE.ordinal()] = 26;
+                f47807a[r1.a.HUE.ordinal()] = 26;
             } catch (NoSuchFieldError unused26) {
             }
             try {
-                f47791a[r1.a.SATURATION.ordinal()] = 27;
+                f47807a[r1.a.SATURATION.ordinal()] = 27;
             } catch (NoSuchFieldError unused27) {
             }
             try {
-                f47791a[r1.a.COLOR.ordinal()] = 28;
+                f47807a[r1.a.COLOR.ordinal()] = 28;
             } catch (NoSuchFieldError unused28) {
             }
             try {
-                f47791a[r1.a.LUMINOSITY.ordinal()] = 29;
+                f47807a[r1.a.LUMINOSITY.ordinal()] = 29;
             } catch (NoSuchFieldError unused29) {
             }
         }
@@ -139,7 +139,7 @@ abstract class b {
     static class C0575b {
         /* JADX INFO: Access modifiers changed from: package-private */
         public static Object a(r1.a aVar) {
-            switch (a.f47791a[aVar.ordinal()]) {
+            switch (a.f47807a[aVar.ordinal()]) {
                 case 1:
                     return BlendMode.CLEAR;
                 case 2:
@@ -209,7 +209,7 @@ abstract class b {
         if (aVar == null) {
             return null;
         }
-        switch (a.f47791a[aVar.ordinal()]) {
+        switch (a.f47807a[aVar.ordinal()]) {
             case 1:
                 return PorterDuff.Mode.CLEAR;
             case 2:

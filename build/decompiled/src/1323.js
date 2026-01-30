@@ -31,17 +31,17 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.ignoreUnknownFields = var4;
     var _closure1_slot2 = var3;
     var3 = function(arg0) { // Original name: jsonReadOptions, environment: var1
-        _fun14880: for (var _fun14880_ip = 0;;) switch (_fun14880_ip) {
+        _fun14881: for (var _fun14881_ip = 0;;) switch (_fun14881_ip) {
             case 0:
                 var4 = arg0;
                 if (var4) {
-                    _fun14880_ip = 15;
-                    continue _fun14880
+                    _fun14881_ip = 15;
+                    continue _fun14881
                 }
             case 6:
                 var0 = _closure1_slot2;
-                _fun14880_ip = 60;
-                continue _fun14880;
+                _fun14881_ip = 60;
+                continue _fun14881;
             case 15:
                 var1 = global;
                 var3 = var1.Object;
@@ -58,17 +58,17 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.jsonReadOptions = var3;
     var3 = function(arg0) { // Original name: jsonWriteOptions, environment: var1
-        _fun14881: for (var _fun14881_ip = 0;;) switch (_fun14881_ip) {
+        _fun14882: for (var _fun14882_ip = 0;;) switch (_fun14882_ip) {
             case 0:
                 var4 = arg0;
                 if (var4) {
-                    _fun14881_ip = 15;
-                    continue _fun14881
+                    _fun14882_ip = 15;
+                    continue _fun14882
                 }
             case 6:
                 var0 = _closure1_slot1;
-                _fun14881_ip = 60;
-                continue _fun14881;
+                _fun14882_ip = 60;
+                continue _fun14882;
             case 15:
                 var1 = global;
                 var3 = var1.Object;
@@ -85,7 +85,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2.jsonWriteOptions = var3;
     var1 = function(arg0, arg1) { // Original name: mergeJsonOptions, environment: var1
-        _fun14882: for (var _fun14882_ip = 0;;) switch (_fun14882_ip) {
+        _fun14883: for (var _fun14883_ip = 0;;) switch (_fun14883_ip) {
             case 0:
                 var9 = arg0;
                 var8 = arg1;
@@ -105,20 +105,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = undefined;
                 var2 = undefined;
                 if (var10) {
-                    _fun14882_ip = 79;
-                    continue _fun14882
+                    _fun14883_ip = 79;
+                    continue _fun14883
                 }
             case 73:
                 var2 = var9.typeRegistry;
             case 79:
                 if (!(var7 !== var2)) {
-                    _fun14882_ip = 87;
-                    continue _fun14882
+                    _fun14883_ip = 87;
+                    continue _fun14883
                 }
             case 83:
                 if (!(var6 === var2)) {
-                    _fun14882_ip = 91;
-                    continue _fun14882
+                    _fun14883_ip = 91;
+                    continue _fun14883
                 }
             case 87:
                 var2 = new Array(0);
@@ -128,20 +128,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var9 = var7 == var8;
                 var1 = undefined;
                 if (var9) {
-                    _fun14882_ip = 115;
-                    continue _fun14882
+                    _fun14883_ip = 115;
+                    continue _fun14883
                 }
             case 109:
                 var1 = var8.typeRegistry;
             case 115:
                 if (!(var7 !== var1)) {
-                    _fun14882_ip = 123;
-                    continue _fun14882
+                    _fun14883_ip = 123;
+                    continue _fun14883
                 }
             case 119:
                 if (!(var6 === var1)) {
-                    _fun14882_ip = 127;
-                    continue _fun14882
+                    _fun14883_ip = 127;
+                    continue _fun14883
                 }
             case 123:
                 var1 = new Array(0);

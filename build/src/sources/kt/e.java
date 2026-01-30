@@ -8,18 +8,18 @@ public enum e implements jt.y {
     
 
     /* renamed from: q  reason: collision with root package name */
-    private static e[] f36580q = values();
+    private static e[] f36596q = values();
 
     /* renamed from: d  reason: collision with root package name */
-    private final transient int f36582d;
+    private final transient int f36598d;
 
     e(int i10) {
-        this.f36582d = i10;
+        this.f36598d = i10;
     }
 
     public static e d(int i10) {
         e[] eVarArr;
-        for (e eVar : f36580q) {
+        for (e eVar : f36596q) {
             if (eVar.a() == i10) {
                 return eVar;
             }
@@ -29,6 +29,6 @@ public enum e implements jt.y {
 
     @Override // jt.y
     public int a() {
-        return this.f36582d;
+        return this.f36598d;
     }
 }

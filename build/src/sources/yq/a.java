@@ -19,7 +19,7 @@ import kotlinx.coroutines.CoroutineScope;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f54951a = new a();
+    public static final a f54967a = new a();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: yq.a$a  reason: collision with other inner class name */
@@ -27,7 +27,7 @@ public final class a {
     public static final class C0767a extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final C0767a f54952d = new C0767a();
+        public static final C0767a f54968d = new C0767a();
 
         C0767a() {
             super(1);
@@ -41,7 +41,7 @@ public final class a {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((Compression) obj);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
     }
 
@@ -50,49 +50,49 @@ public final class a {
     public static final class b extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        private CoroutineScope f54953d;
+        private CoroutineScope f54969d;
 
         /* renamed from: e  reason: collision with root package name */
-        int f54954e;
+        int f54970e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Function1 f54955i;
+        final /* synthetic */ Function1 f54971i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ Context f54956o;
+        final /* synthetic */ Context f54972o;
 
         /* renamed from: p  reason: collision with root package name */
-        final /* synthetic */ Uri f54957p;
+        final /* synthetic */ Uri f54973p;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(Function1 function1, Context context, Uri uri, Continuation continuation) {
             super(2, continuation);
-            this.f54955i = function1;
-            this.f54956o = context;
-            this.f54957p = uri;
+            this.f54971i = function1;
+            this.f54972o = context;
+            this.f54973p = uri;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation completion) {
             Intrinsics.checkParameterIsNotNull(completion, "completion");
-            b bVar = new b(this.f54955i, this.f54956o, this.f54957p, completion);
-            bVar.f54953d = (CoroutineScope) obj;
+            b bVar = new b(this.f54971i, this.f54972o, this.f54973p, completion);
+            bVar.f54969d = (CoroutineScope) obj;
             return bVar;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(Object obj, Object obj2) {
-            return ((b) create(obj, (Continuation) obj2)).invokeSuspend(Unit.f33282a);
+            return ((b) create(obj, (Continuation) obj2)).invokeSuspend(Unit.f33298a);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             or.b.f();
-            if (this.f54954e == 0) {
+            if (this.f54970e == 0) {
                 kotlin.c.b(obj);
                 Compression compression = new Compression();
-                this.f54955i.invoke(compression);
-                File d10 = c.d(this.f54956o, this.f54957p);
+                this.f54971i.invoke(compression);
+                File d10 = c.d(this.f54972o, this.f54973p);
                 for (zq.a aVar : compression.b()) {
                     while (!aVar.isSatisfied(d10)) {
                         d10 = aVar.satisfy(d10);
@@ -113,7 +113,7 @@ public final class a {
         }
         CoroutineContext coroutineContext2 = coroutineContext;
         if ((i10 & 8) != 0) {
-            function1 = C0767a.f54952d;
+            function1 = C0767a.f54968d;
         }
         return aVar.a(context, uri, coroutineContext2, function1, continuation);
     }

@@ -3,7 +3,7 @@ package ng;
 public final class jc {
 
     /* renamed from: a  reason: collision with root package name */
-    private static jc f41353a;
+    private static jc f41369a;
 
     private jc() {
     }
@@ -12,10 +12,10 @@ public final class jc {
         jc jcVar;
         synchronized (jc.class) {
             try {
-                if (f41353a == null) {
-                    f41353a = new jc();
+                if (f41369a == null) {
+                    f41369a = new jc();
                 }
-                jcVar = f41353a;
+                jcVar = f41369a;
             } catch (Throwable th2) {
                 throw th2;
             }

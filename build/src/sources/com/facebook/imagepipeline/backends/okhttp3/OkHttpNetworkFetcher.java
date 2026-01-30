@@ -165,7 +165,7 @@ public class OkHttpNetworkFetcher extends d {
                     } catch (Exception e10) {
                         okHttpNetworkFetcher.a(call, e10, callback);
                     }
-                    Unit unit = Unit.f33282a;
+                    Unit unit = Unit.f33298a;
                     tr.c.a(x10, null);
                 } finally {
                 }

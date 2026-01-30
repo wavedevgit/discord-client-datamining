@@ -1,373 +1,403 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var5 = require;
     var2 = exports;
-    var3 = function(arg0) { // Original name: parseRetryAfterHeader, environment: var1
-        _fun58777: for (var _fun58777_ip = 0;;) switch (_fun58777_ip) {
-            case 0:
-                var7 = arg0;
-                var3 = undefined;
-                var1 = undefined;
-                var2 = arguments.length;
-                var0 = 1;
-                if (!(var2 > var0)) {
-                    _fun58777_ip = 25;
-                    continue _fun58777
-                }
-            case 17:
-                var2 = arguments[var0];
-                if (!(var3 === var2)) {
-                    _fun58777_ip = 44;
-                    continue _fun58777
-                }
-            case 25:
-                var2 = global;
-                var4 = var2.Date;
-                var2 = var4.now;
-                var2 = var2.bind(var4)();
-                _fun58777_ip = 48;
-                continue _fun58777;
-            case 44:
-                var2 = arguments[var0];
-            case 48:
-                var0 = global;
-                var5 = var0.parseInt;
-                var1 = var0.HermesInternal;
-                var1 = var1.concat;
-                var6 = '';
-                var4 = var1.bind(var6)(var7);
-                var1 = 10;
-                var4 = var5.bind(var3)(var4, var1);
-                var1 = var0.isNaN;
-                var1 = var1.bind(var3)(var4);
-                if (var1) {
-                    _fun58777_ip = 111;
-                    continue _fun58777
-                }
-            case 99:
-                var1 = 1000;
-                var1 = var1 * var4;
-                return var1;
-            case 111:
-                var5 = var0.Date;
-                var4 = var5.parse;
-                var1 = var0.HermesInternal;
-                var1 = var1.concat;
-                var1 = var1.bind(var6)(var7);
-                var1 = var4.bind(var5)(var1);
-                var0 = var0.isNaN;
-                var3 = var0.bind(var3)(var1);
-                var0 = 60000;
-                if (var3) {
-                    _fun58777_ip = 168;
-                    continue _fun58777
-                }
-            case 164:
-                var0 = var1 - var2;
-            case 168:
-                return var0;
-        }
-    };
-    var _closure1_slot1 = var3;
-    var4 = function(arg0, arg1) { // Original name: disabledUntil, environment: var1
-        _fun58778: for (var _fun58778_ip = 0;;) switch (_fun58778_ip) {
-            case 0:
-                var1 = arg0;
-                var0 = arg1;
-                var0 = var1[var0];
-                if (var0) {
-                    _fun58778_ip = 19;
-                    continue _fun58778
-                }
-            case 13:
-                var0 = var1.all;
-            case 19:
-                if (var0) {
-                    _fun58778_ip = 24;
-                    continue _fun58778
-                }
-            case 22:
-                var0 = 0;
-            case 24:
-                return var0;
-        }
-    };
-    var _closure1_slot2 = var4;
-    var5 = arg6;
-    var0 = 0;
-    var6 = var5[var0];
-    var5 = arg1;
-    var0 = undefined;
-    var5 = var5.bind(var0)(var6);
+    var4 = dependencyMap;
     var _closure1_slot0 = var5;
-    var5 = global;
-    var8 = var5.Object;
-    var7 = var8.defineProperty;
-    var6 = {};
-    var5 = true;
-    var6.value = var5;
-    var5 = '__esModule';
-    var5 = var7.bind(var8)(var2, var5, var6);
-    var5 = 60000;
-    var2.DEFAULT_RETRY_AFTER = var5;
-    var2.disabledUntil = var4;
-    var4 = function(arg0, arg1) { // Original name: isRateLimited, environment: var1
-        _fun58779: for (var _fun58779_ip = 0;;) switch (_fun58779_ip) {
+    var _closure1_slot1 = var4;
+    var1 = function(arg0) { // Original name: parseBaggageHeader, environment: var3
+        _fun58786: for (var _fun58786_ip = 0;;) switch (_fun58786_ip) {
             case 0:
-                var4 = undefined;
-                var2 = undefined;
-                var1 = arguments.length;
-                var0 = 2;
-                if (!(var1 > var0)) {
-                    _fun58779_ip = 22;
-                    continue _fun58779
+                var4 = arg0;
+                if (!var4) {
+                    _fun58786_ip = 66;
+                    continue _fun58786
                 }
-            case 14:
-                var1 = arguments[var0];
-                if (!(var4 === var1)) {
-                    _fun58779_ip = 41;
-                    continue _fun58779
-                }
-            case 22:
-                var1 = global;
-                var3 = var1.Date;
-                var1 = var3.now;
-                var1 = var1.bind(var3)();
-                _fun58779_ip = 45;
-                continue _fun58779;
-            case 41:
-                var1 = arguments[var0];
-            case 45:
-                var3 = _closure1_slot2;
-                var2 = arg0;
-                var0 = arg1;
-                var0 = var3.bind(var4)(var2, var0);
-                var0 = var0 > var1;
-                return var0;
-        }
-    };
-    var2.isRateLimited = var4;
-    var2.parseRetryAfterHeader = var3;
-    var1 = function(arg0, arg1) { // Original name: updateRateLimits, environment: var1
-        _fun58780: for (var _fun58780_ip = 0;;) switch (_fun58780_ip) {
-            case 0:
-                var1 = arg1;
-                var16 = undefined;
-                var5 = undefined;
-                var17 = undefined;
-                var0 = undefined;
-                var18 = undefined;
-                var19 = undefined;
-                var20 = undefined;
-                var21 = undefined;
-                var22 = undefined;
-                var3 = var1.statusCode;
-                var1 = var1.headers;
-                var2 = arguments.length;
-                var4 = 2;
-                if (!(var2 > var4)) {
-                    _fun58780_ip = 51;
-                    continue _fun58780
-                }
-            case 43:
-                var2 = arguments[var4];
-                if (!(var16 === var2)) {
-                    _fun58780_ip = 70;
-                    continue _fun58780
-                }
-            case 51:
-                var2 = global;
-                var6 = var2.Date;
-                var2 = var6.now;
-                var2 = var2.bind(var6)();
-                _fun58780_ip = 74;
-                continue _fun58780;
-            case 70:
-                var2 = arguments[var4];
-            case 74:
-                var17 = var2;
-                var15 = global;
-                var6 = var15.Object;
-                var5 = var6.assign;
-                var4 = {};
-                var2 = arg0;
-                var0 = var5.bind(var6)(var4, var2);
-                var2 = var1;
-                if (!var1) {
-                    _fun58780_ip = 113;
-                    continue _fun58780
-                }
-            case 107:
-                var2 = var1["x-sentry-rate-limits"];
-            case 113:
-                var5 = var1;
-                if (!var5) {
-                    _fun58780_ip = 125;
-                    continue _fun58780
-                }
-            case 119:
-                var5 = var1["retry-after"];
-            case 125:
+            case 6:
+                var3 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var1 = 1;
+                var2 = var2[var1];
+                var1 = undefined;
+                var3 = var3.bind(var1)(var2);
+                var2 = var3.isString;
+                var2 = var2.bind(var3)(var4);
                 if (var2) {
-                    _fun58780_ip = 205;
-                    continue _fun58780
+                    _fun58786_ip = 70;
+                    continue _fun58786
                 }
-            case 128:
-                if (var5) {
-                    _fun58780_ip = 171;
-                    continue _fun58780
+            case 45:
+                var2 = global;
+                var3 = var2.Array;
+                var2 = var3.isArray;
+                var2 = var2.bind(var3)(var4);
+                if (var2) {
+                    _fun58786_ip = 70;
+                    continue _fun58786
                 }
-            case 131:
-                var1 = 429;
-                if (!(var1 === var3)) {
-                    _fun58780_ip = 514;
-                    continue _fun58780
+            case 66:
+                var2 = undefined;
+                return var2;
+            case 70:
+                var2 = global;
+                var3 = var2.Array;
+                var2 = var3.isArray;
+                var2 = var2.bind(var3)(var4);
+                if (var2) {
+                    _fun58786_ip = 102;
+                    continue _fun58786
                 }
-            case 144:
-                var3 = var0;
-                var4 = var17;
-                var1 = 60000;
-                var1 = var4 + var1;
-                var3.all = var1;
-                _fun58780_ip = 514;
-                continue _fun58780;
-            case 171:
-                var3 = var0;
-                var4 = var17;
-                var1 = _closure1_slot1;
-                var1 = var1.bind(var16)(var5, var4);
-                var1 = var4 + var1;
-                var3.all = var1;
-                _fun58780_ip = 514;
-                continue _fun58780;
-            case 205:
-                var1 = var2.trim;
-                var3 = var1.bind(var2)();
-                var2 = var3.split;
-                var1 = ',';
-                var1 = var2.bind(var3)(var1);
-                var14 = var1;
-                var2 = var14[Symbol.iterator];
-                var14 = var2().next;
-                var13 = ';';
-                var12 = 'custom';
-                var11 = 'metric_bucket';
-                var10 = 1000;
-                var9 = ':';
-                var8 = 5;
-                var6 = 0;
-                var5 = 1;
-                var4 = 4;
-                var3 = 10;
-                var1 = 60;
-            case 279:
-                var24 = var14().value;
-                var23 = var2;
-                if (!(var23 !== var16)) {
-                    _fun58780_ip = 514;
-                    continue _fun58780
-                }
-            case 293: // try_start_1
-                var23 = var24.split;
-                var24 = var23.bind(var24)(var9, var8);
-                var23 = _closure1_slot0;
-                var23 = var23.bind(var16)(var24, var8);
-                var24 = var23[var6];
-                var18 = var23[var5];
-                var19 = var23[var4];
-                var23 = var15.parseInt;
-                var24 = var23.bind(var16)(var24, var3);
-                var20 = var24;
-                var23 = var15.isNaN;
-                var24 = var23.bind(var16)(var24);
-                var23 = var1;
-                if (var24) {
-                    _fun58780_ip = 361;
-                    continue _fun58780
-                }
-            case 358:
-                var23 = var20;
-            case 361:
-                var21 = var10 * var23;
-                var23 = var18;
-                if (var23) {
-                    _fun58780_ip = 392;
-                    continue _fun58780
-                }
-            case 371:
-                var24 = var0;
-                var25 = var17;
-                var23 = var21;
-                var23 = var25 + var23;
-                var24.all = var23;
-                _fun58780_ip = 502;
-                continue _fun58780;
-            case 392:
-                var24 = var18;
-                var23 = var24.split;
-                var25 = var23.bind(var24)(var13);
-                var23 = var25;
-                var24 = var23[Symbol.iterator];
-                var23 = var24().next;
-            case 411:
-                var27 = var23().value;
-                var25 = var24;
-                if (!(var25 !== var16)) {
-                    _fun58780_ip = 502;
-                    continue _fun58780
-                }
-            case 422: // try_start_0
-                var22 = var27;
-                var27 = var11 === var27;
-                var26 = var27;
-                if (!var27) {
-                    _fun58780_ip = 438;
-                    continue _fun58780
-                }
-            case 435:
-                var26 = var19;
-            case 438:
-                var25 = var26;
-                if (!var26) {
-                    _fun58780_ip = 470;
-                    continue _fun58780
-                }
-            case 444:
-                var27 = var19;
-                var26 = var27.split;
-                var27 = var26.bind(var27)(var13);
-                var26 = var27.includes;
-                var26 = var26.bind(var27)(var12);
-                var25 = !var26;
-            case 470:
-                if (var25) {
-                    _fun58780_ip = 493;
-                    continue _fun58780
-                }
-            case 473:
-                var27 = var0;
-                var26 = var22;
-                var28 = var17;
-                var25 = var21;
-                var25 = var28 + var25;
-                var27[var26] = var25;
-            case 493: // try_end0
-                _fun58780_ip = 411;
-                continue _fun58780;
-            case 495: // catch_target0
-                CatchBlockStart(arg_register = 23);
-                var24.return();
-                throw var23;
-            case 502: // try_end1
-                _fun58780_ip = 279;
-                continue _fun58780;
-            case 507: // catch_target1
-                CatchBlockStart(arg_register = 1);
-                var2.return();
-                throw var1;
-            case 514:
+            case 91:
+                var0 = _closure1_slot5;
+                var0 = var0.bind(var1)(var4);
+                _fun58786_ip = 123;
+                continue _fun58786;
+            case 102:
+                var3 = var4.reduce;
+                var2 = function(arg0, arg1) { // Environment: var1
+                    var0 = arg0;
+                    var _closure3_slot0 = var0;
+                    var4 = _closure1_slot5;
+                    var3 = undefined;
+                    var2 = arg1;
+                    var4 = var4.bind(var3)(var2);
+                    var2 = global;
+                    var3 = var2.Object;
+                    var2 = var3.entries;
+                    var3 = var2.bind(var3)(var4);
+                    var2 = var3.forEach;
+                    var1 = function(arg0) { // Environment: var1
+                        var3 = _closure1_slot2;
+                        var0 = undefined;
+                        var2 = arg0;
+                        var1 = 2;
+                        var2 = var3.bind(var0)(var2, var1);
+                        var1 = 0;
+                        var3 = var2[var1];
+                        var1 = 1;
+                        var2 = var2[var1];
+                        var1 = _closure3_slot0;
+                        var1[var3] = var2;
+                        return var0;
+                    };
+                    var1 = var2.bind(var3)(var1);
+                    return var0;
+                };
+                var1 = {};
+                var0 = var3.bind(var4)(var2, var1);
+            case 123:
                 return var0;
         }
     };
-    var2.updateRateLimits = var1;
+    var _closure1_slot4 = var1;
+    var0 = function(arg0) { // Original name: baggageHeaderToObject, environment: var3
+        var3 = arg0;
+        var2 = var3.split;
+        var1 = ',';
+        var3 = var2.bind(var3)(var1);
+        var2 = var3.map;
+        var1 = function(arg0) { // Environment: var0
+            var2 = arg0;
+            var1 = var2.split;
+            var0 = '=';
+            var2 = var1.bind(var2)(var0);
+            var1 = var2.map;
+            var0 = function(arg0) { // Environment: var0
+                var1 = arg0;
+                var0 = global;
+                var2 = var0.decodeURIComponent;
+                var0 = var1.trim;
+                var1 = var0.bind(var1)();
+                var0 = undefined;
+                var0 = var2.bind(var0)(var1);
+                return var0;
+            };
+            var0 = var1.bind(var2)(var0);
+            return var0;
+        };
+        var3 = var2.bind(var3)(var1);
+        var2 = var3.reduce;
+        var1 = function(arg0, arg1) { // Environment: var0
+            _fun58792: for (var _fun58792_ip = 0;;) switch (_fun58792_ip) {
+                case 0:
+                    var0 = arg0;
+                    var4 = _closure1_slot2;
+                    var3 = undefined;
+                    var2 = arg1;
+                    var1 = 2;
+                    var3 = var4.bind(var3)(var2, var1);
+                    var1 = 0;
+                    var2 = var3[var1];
+                    var1 = 1;
+                    var1 = var3[var1];
+                    var3 = var2;
+                    if (!var3) {
+                        _fun58792_ip = 46;
+                        continue _fun58792
+                    }
+                case 43:
+                    var3 = var1;
+                case 46:
+                    if (!var3) {
+                        _fun58792_ip = 53;
+                        continue _fun58792
+                    }
+                case 49:
+                    var0[var2] = var1;
+                case 53:
+                    return var0;
+            }
+        };
+        var0 = {};
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
+    };
+    var _closure1_slot5 = var0;
+    var0 = 0;
+    var4 = var4[var0];
+    var0 = undefined;
+    var4 = var5.bind(var0)(var4);
+    var _closure1_slot2 = var4;
+    var4 = global;
+    var7 = var4.Object;
+    var6 = var7.defineProperty;
+    var5 = {};
+    var4 = true;
+    var5.value = var4;
+    var4 = '__esModule';
+    var4 = var6.bind(var7)(var2, var4, var5);
+    var4 = /^sentry-/;
+    var _closure1_slot3 = var4;
+    var5 = 'baggage';
+    var2.BAGGAGE_HEADER_NAME = var5;
+    var5 = 8192;
+    var2.MAX_BAGGAGE_STRING_LENGTH = var5;
+    var5 = 'sentry-';
+    var2.SENTRY_BAGGAGE_KEY_PREFIX = var5;
+    var2.SENTRY_BAGGAGE_KEY_PREFIX_REGEX = var4;
+    var4 = function(arg0) { // Original name: baggageHeaderToDynamicSamplingContext, environment: var3
+        _fun58793: for (var _fun58793_ip = 0;;) switch (_fun58793_ip) {
+            case 0:
+                var2 = _closure1_slot4;
+                var0 = undefined;
+                var1 = arg0;
+                var4 = var2.bind(var0)(var1);
+                if (var4) {
+                    _fun58793_ip = 22;
+                    continue _fun58793
+                }
+            case 20:
+                return var0;
+            case 22:
+                var2 = global;
+                var3 = var2.Object;
+                var1 = var3.entries;
+                var5 = var1.bind(var3)(var4);
+                var4 = var5.reduce;
+                var3 = function(arg0, arg1) { // Environment: var1
+                    _fun58794: for (var _fun58794_ip = 0;;) switch (_fun58794_ip) {
+                        case 0:
+                            var0 = arg0;
+                            var5 = _closure1_slot2;
+                            var4 = undefined;
+                            var3 = arg1;
+                            var2 = 2;
+                            var3 = var5.bind(var4)(var3, var2);
+                            var2 = 0;
+                            var4 = var3[var2];
+                            var2 = 1;
+                            var2 = var3[var2];
+                            var3 = var4.match;
+                            var1 = _closure1_slot3;
+                            var1 = var3.bind(var4)(var1);
+                            if (!var1) {
+                                _fun58794_ip = 72;
+                                continue _fun58794
+                            }
+                        case 55:
+                            var3 = var4.slice;
+                            var1 = 7;
+                            var1 = var3.bind(var4)(var1);
+                            var0[var1] = var2;
+                        case 72:
+                            return var0;
+                    }
+                };
+                var1 = {};
+                var1 = var4.bind(var5)(var3, var1);
+                var3 = var2.Object;
+                var2 = var3.keys;
+                var2 = var2.bind(var3)(var1);
+                var3 = var2.length;
+                var2 = 0;
+                var2 = var3 > var2;
+                var0 = undefined;
+                if (!var2) {
+                    _fun58793_ip = 97;
+                    continue _fun58793
+                }
+            case 94:
+                var0 = var1;
+            case 97:
+                return var0;
+        }
+    };
+    var2.baggageHeaderToDynamicSamplingContext = var4;
+    var3 = function(arg0) { // Original name: dynamicSamplingContextToSentryBaggageHeader, environment: var3
+        _fun58795: for (var _fun58795_ip = 0;;) switch (_fun58795_ip) {
+            case 0:
+                var3 = arg0;
+                if (var3) {
+                    _fun58795_ip = 12;
+                    continue _fun58795
+                }
+            case 8:
+                var1 = undefined;
+                return var1;
+            case 12:
+                var1 = global;
+                var2 = var1.Object;
+                var1 = var2.entries;
+                var4 = var1.bind(var2)(var3);
+                var3 = var4.reduce;
+                var2 = function(arg0, arg1) { // Environment: var0
+                    _fun58798: for (var _fun58798_ip = 0;;) switch (_fun58798_ip) {
+                        case 0:
+                            var0 = arg0;
+                            var4 = _closure1_slot2;
+                            var3 = undefined;
+                            var2 = arg1;
+                            var1 = 2;
+                            var2 = var4.bind(var3)(var2, var1);
+                            var1 = 0;
+                            var5 = var2[var1];
+                            var1 = 1;
+                            var2 = var2[var1];
+                            if (!var2) {
+                                _fun58798_ip = 73;
+                                continue _fun58798
+                            }
+                        case 40:
+                            var1 = global;
+                            var1 = var1.HermesInternal;
+                            var4 = var1.concat;
+                            var3 = '';
+                            var1 = 'sentry-';
+                            var1 = var4.bind(var3)(var1, var5);
+                            var0[var1] = var2;
+                        case 73:
+                            return var0;
+                    }
+                };
+                var1 = {};
+                var2 = var3.bind(var4)(var2, var1);
+                var1 = function(arg0) { // Original name: objectToBaggageHeader, environment: var0
+                    _fun58796: for (var _fun58796_ip = 0;;) switch (_fun58796_ip) {
+                        case 0:
+                            var2 = arg0;
+                            var0 = global;
+                            var3 = var0.Object;
+                            var1 = var3.keys;
+                            var1 = var1.bind(var3)(var2);
+                            var3 = var1.length;
+                            var1 = 0;
+                            if (!(var1 !== var3)) {
+                                _fun58796_ip = 74;
+                                continue _fun58796
+                            }
+                        case 32:
+                            var1 = var0.Object;
+                            var0 = var1.entries;
+                            var3 = var0.bind(var1)(var2);
+                            var2 = var3.reduce;
+                            var1 = function(arg0, arg1, arg2) { // Environment: var0
+                                _fun58797: for (var _fun58797_ip = 0;;) switch (_fun58797_ip) {
+                                    case 0:
+                                        var1 = arg0;
+                                        var2 = _closure1_slot2;
+                                        var5 = undefined;
+                                        var0 = arg1;
+                                        var7 = 2;
+                                        var2 = var2.bind(var5)(var0, var7);
+                                        var6 = 0;
+                                        var9 = var2[var6];
+                                        var0 = 1;
+                                        var8 = var2[var0];
+                                        var2 = global;
+                                        var0 = var2.encodeURIComponent;
+                                        var12 = var0.bind(var5)(var9);
+                                        var0 = var2.encodeURIComponent;
+                                        var10 = var0.bind(var5)(var8);
+                                        var0 = var2.HermesInternal;
+                                        var4 = var0.concat;
+                                        var11 = '';
+                                        var0 = '=';
+                                        var10 = var4.bind(var11)(var12, var0, var10);
+                                        var4 = arg2;
+                                        var0 = var10;
+                                        if (!(var6 !== var4)) {
+                                            _fun58797_ip = 119;
+                                            continue _fun58797
+                                        }
+                                    case 97:
+                                        var4 = var2.HermesInternal;
+                                        var6 = var4.concat;
+                                        var4 = ',';
+                                        var0 = var6.bind(var11)(var1, var4, var10);
+                                    case 119:
+                                        var6 = var0.length;
+                                        var4 = 8192;
+                                        if (!(var6 > var4)) {
+                                            _fun58797_ip = 241;
+                                            continue _fun58797
+                                        }
+                                    case 134:
+                                        var6 = _closure1_slot0;
+                                        var4 = _closure1_slot1;
+                                        var4 = var4[var7];
+                                        var4 = var6.bind(var5)(var4);
+                                        var4 = var4.DEBUG_BUILD;
+                                        var0 = var1;
+                                        if (!var4) {
+                                            _fun58797_ip = 241;
+                                            continue _fun58797
+                                        }
+                                    case 163:
+                                        var4 = _closure1_slot0;
+                                        var6 = _closure1_slot1;
+                                        var3 = 3;
+                                        var3 = var6[var3];
+                                        var3 = var4.bind(var5)(var3);
+                                        var4 = var3.logger;
+                                        var3 = var4.warn;
+                                        var2 = var2.HermesInternal;
+                                        var7 = var2.concat;
+                                        var17 = 'Not adding key: ';
+                                        var15 = ' with val: ';
+                                        var13 = ' to baggage header due to exceeding baggage size limits.';
+                                        var16 = var9;
+                                        var14 = var8;
+                                        var2 = var17[var7](var16, var15, var14, var13, var12);
+                                        var2 = var3.bind(var4)(var2);
+                                        var0 = var1;
+                                    case 241:
+                                        return var0;
+                                }
+                            };
+                            var0 = '';
+                            var0 = var2.bind(var3)(var1, var0);
+                            return var0;
+                        case 74:
+                            var0 = undefined;
+                            return var0;
+                    }
+                };
+                var0 = undefined;
+                var0 = var1.bind(var0)(var2);
+                return var0;
+        }
+    };
+    var2.dynamicSamplingContextToSentryBaggageHeader = var3;
+    var2.parseBaggageHeader = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 7129, 7137, 7136]);

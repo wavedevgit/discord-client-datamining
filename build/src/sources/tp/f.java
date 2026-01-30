@@ -13,10 +13,10 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class f {
 
     /* renamed from: a */
-    private static final boolean f49788a;
+    private static final boolean f49804a;
 
     /* renamed from: b */
-    private static final boolean f49789b;
+    private static final boolean f49805b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements View.OnAttachStateChangeListener {
@@ -43,8 +43,8 @@ public abstract class f {
         } else {
             z10 = false;
         }
-        f49788a = z10;
-        f49789b = true;
+        f49804a = z10;
+        f49805b = true;
     }
 
     public static final void c(final View view, final boolean z10, final boolean z11, final boolean z12, final boolean z13) {
@@ -99,11 +99,11 @@ public abstract class f {
             max = view.getPaddingBottom();
         }
         view.setPadding(i12, i11, i13, max);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     public static final boolean f() {
-        return f49788a;
+        return f49804a;
     }
 
     public static final void g(View view, final Function1 cb2) {

@@ -79,12 +79,12 @@ public abstract class m1 {
             FileOutputStream fileOutputStream = new FileOutputStream(c10);
             a10.compress(Bitmap.CompressFormat.JPEG, 80, fileOutputStream);
             tr.c.a(fileOutputStream, null);
-            Result.a aVar = Result.f33279e;
+            Result.a aVar = Result.f33295e;
             String absolutePath = c10.getAbsolutePath();
             Intrinsics.checkNotNullExpressionValue(absolutePath, "getAbsolutePath(...)");
             return Result.b(new a1.c(absolutePath, a1.a.f23007e, d(y0Var), currentTimeMillis));
         } catch (IOException e10) {
-            Result.a aVar2 = Result.f33279e;
+            Result.a aVar2 = Result.f33295e;
             return Result.b(kotlin.c.a(e10));
         }
     }

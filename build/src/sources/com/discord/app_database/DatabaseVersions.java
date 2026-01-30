@@ -54,7 +54,7 @@ public final class DatabaseVersions {
     }
 
     static {
-        o oVar = o.f31103e;
+        o oVar = o.f31119e;
         $childSerializers = new Lazy[]{l.a(oVar, new Function0() { // from class: com.discord.app_database.b
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {

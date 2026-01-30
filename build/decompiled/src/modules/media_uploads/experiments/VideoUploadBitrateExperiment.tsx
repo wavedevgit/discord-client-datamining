@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/media_uploads/experiments/VideoUploadBitrateExperiment.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Original name: getVideoUploadBitrateConfig, environment: var1
-        _fun37464: for (var _fun37464_ip = 0;;) switch (_fun37464_ip) {
+        _fun37515: for (var _fun37515_ip = 0;;) switch (_fun37515_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.location;
@@ -74,16 +74,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.isInHoldout;
                 var1 = {};
                 if (var2) {
-                    _fun37464_ip = 98;
-                    continue _fun37464
+                    _fun37515_ip = 98;
+                    continue _fun37515
                 }
             case 77:
                 var2 = _closure1_slot3;
                 var0 = var2.getConfig;
                 var1.location = var3;
                 var0 = var0.bind(var2)(var1);
-                _fun37464_ip = 109;
-                continue _fun37464;
+                _fun37515_ip = 109;
+                continue _fun37515;
             case 98:
                 var2 = 1;
                 var1.bitrateMultiplier = var2;
@@ -94,15 +94,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getVideoUploadBitrateConfig = var3;
     var1 = function(arg0) { // Original name: shouldApplyBitrateExperiment, environment: var1
-        _fun37465: for (var _fun37465_ip = 0;;) switch (_fun37465_ip) {
+        _fun37516: for (var _fun37516_ip = 0;;) switch (_fun37516_ip) {
             case 0:
                 var2 = arg0;
                 var0 = _closure1_slot2;
                 var0 = var0.MEDIUM;
                 var0 = var2 === var0;
                 if (var0) {
-                    _fun37465_ip = 37;
-                    continue _fun37465
+                    _fun37516_ip = 37;
+                    continue _fun37516
                 }
             case 23:
                 var1 = _closure1_slot2;

@@ -12,16 +12,16 @@ import java.nio.FloatBuffer;
 public abstract class t {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final int[] f40270a = {12352, 4, 12324, 8, 12323, 8, 12322, 8, 12321, 8, 12325, 0, 12326, 0, 12344};
+    public static final int[] f40286a = {12352, 4, 12324, 8, 12323, 8, 12322, 8, 12321, 8, 12325, 0, 12326, 0, 12344};
 
     /* renamed from: b  reason: collision with root package name */
-    public static final int[] f40271b = {12352, 4, 12324, 10, 12323, 10, 12322, 10, 12321, 2, 12325, 0, 12326, 0, 12344};
+    public static final int[] f40287b = {12352, 4, 12324, 10, 12323, 10, 12322, 10, 12321, 2, 12325, 0, 12326, 0, 12344};
 
     /* renamed from: c  reason: collision with root package name */
-    private static final int[] f40272c = {12445, 13120, 12344, 12344};
+    private static final int[] f40288c = {12445, 13120, 12344, 12344};
 
     /* renamed from: d  reason: collision with root package name */
-    private static final int[] f40273d = {12344};
+    private static final int[] f40289d = {12344};
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a extends Exception {
@@ -95,11 +95,11 @@ public abstract class t {
 
     public static boolean h(Context context) {
         String eglQueryString;
-        int i10 = w0.f40279a;
+        int i10 = w0.f40295a;
         if (i10 < 24) {
             return false;
         }
-        if (i10 < 26 && ("samsung".equals(w0.f40281c) || "XT1650".equals(w0.f40282d))) {
+        if (i10 < 26 && ("samsung".equals(w0.f40297c) || "XT1650".equals(w0.f40298d))) {
             return false;
         }
         if ((i10 < 26 && !context.getPackageManager().hasSystemFeature("android.hardware.vr.high_performance")) || (eglQueryString = EGL14.eglQueryString(EGL14.eglGetDisplay(0), 12373)) == null || !eglQueryString.contains("EGL_EXT_protected_content")) {
@@ -110,7 +110,7 @@ public abstract class t {
 
     public static boolean i() {
         String eglQueryString;
-        if (w0.f40279a < 17 || (eglQueryString = EGL14.eglQueryString(EGL14.eglGetDisplay(0), 12373)) == null || !eglQueryString.contains("EGL_KHR_surfaceless_context")) {
+        if (w0.f40295a < 17 || (eglQueryString = EGL14.eglQueryString(EGL14.eglGetDisplay(0), 12373)) == null || !eglQueryString.contains("EGL_KHR_surfaceless_context")) {
             return false;
         }
         return true;

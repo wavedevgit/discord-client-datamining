@@ -114,7 +114,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/native/ActivitiesPrivateChannelCallTooltip.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: ActivitiesPrivateChannelCallTooltip, environment: var1
-        _fun91830: for (var _fun91830_ip = 0;;) switch (_fun91830_ip) {
+        _fun92067: for (var _fun92067_ip = 0;;) switch (_fun92067_ip) {
             case 0:
                 var0 = arg0;
                 var12 = var0.onClosePress;
@@ -137,8 +137,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4.bind(var5)(var2, var0);
                 var6 = 4;
                 if (!var0) {
-                    _fun91830_ip = 78;
-                    continue _fun91830
+                    _fun92067_ip = 78;
+                    continue _fun92067
                 }
             case 76:
                 var6 = 0;
@@ -306,4 +306,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 3416, 33, 671, 566, 3677, 4050, 8577, 1234, 4829, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 3416, 33, 671, 566, 3679, 4056, 8580, 1234, 4835, 2]);

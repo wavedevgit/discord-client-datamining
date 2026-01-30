@@ -8,31 +8,31 @@ import java.util.concurrent.Callable;
 public final class m6 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f30194d;
+    private final String f30210d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Integer f30195e;
+    private final Integer f30211e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f30196i;
+    private final String f30212i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f30197o;
+    private final String f30213o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final v6 f30198p;
+    private final v6 f30214p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final int f30199q;
+    private final int f30215q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final Callable f30200r;
+    private final Callable f30216r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final String f30201s;
+    private final String f30217s;
 
     /* renamed from: t  reason: collision with root package name */
-    private Map f30202t;
+    private Map f30218t;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -144,18 +144,18 @@ public final class m6 implements w1 {
     }
 
     public m6(v6 v6Var, int i10, String str, String str2, String str3, String str4, Integer num) {
-        this.f30198p = (v6) io.sentry.util.y.c(v6Var, "type is required");
-        this.f30194d = str;
-        this.f30199q = i10;
-        this.f30196i = str2;
-        this.f30200r = null;
-        this.f30201s = str3;
-        this.f30197o = str4;
-        this.f30195e = num;
+        this.f30214p = (v6) io.sentry.util.y.c(v6Var, "type is required");
+        this.f30210d = str;
+        this.f30215q = i10;
+        this.f30212i = str2;
+        this.f30216r = null;
+        this.f30217s = str3;
+        this.f30213o = str4;
+        this.f30211e = num;
     }
 
     public int a() {
-        Callable callable = this.f30200r;
+        Callable callable = this.f30216r;
         if (callable != null) {
             try {
                 return ((Integer) callable.call()).intValue();
@@ -163,41 +163,41 @@ public final class m6 implements w1 {
                 return -1;
             }
         }
-        return this.f30199q;
+        return this.f30215q;
     }
 
     public v6 b() {
-        return this.f30198p;
+        return this.f30214p;
     }
 
     public void c(Map map) {
-        this.f30202t = map;
+        this.f30218t = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        if (this.f30194d != null) {
-            f3Var.e("content_type").f(this.f30194d);
+        if (this.f30210d != null) {
+            f3Var.e("content_type").f(this.f30210d);
         }
-        if (this.f30196i != null) {
-            f3Var.e("filename").f(this.f30196i);
+        if (this.f30212i != null) {
+            f3Var.e("filename").f(this.f30212i);
         }
-        f3Var.e("type").j(iLogger, this.f30198p);
-        if (this.f30201s != null) {
-            f3Var.e("attachment_type").f(this.f30201s);
+        f3Var.e("type").j(iLogger, this.f30214p);
+        if (this.f30217s != null) {
+            f3Var.e("attachment_type").f(this.f30217s);
         }
-        if (this.f30197o != null) {
-            f3Var.e("platform").f(this.f30197o);
+        if (this.f30213o != null) {
+            f3Var.e("platform").f(this.f30213o);
         }
-        if (this.f30195e != null) {
-            f3Var.e("item_count").i(this.f30195e);
+        if (this.f30211e != null) {
+            f3Var.e("item_count").i(this.f30211e);
         }
         f3Var.e("length").b(a());
-        Map map = this.f30202t;
+        Map map = this.f30218t;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f30202t.get(str);
+                Object obj = this.f30218t.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -212,14 +212,14 @@ public final class m6 implements w1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public m6(v6 v6Var, Callable callable, String str, String str2, String str3, String str4, Integer num) {
-        this.f30198p = (v6) io.sentry.util.y.c(v6Var, "type is required");
-        this.f30194d = str;
-        this.f30199q = -1;
-        this.f30196i = str2;
-        this.f30200r = callable;
-        this.f30201s = str3;
-        this.f30197o = str4;
-        this.f30195e = num;
+        this.f30214p = (v6) io.sentry.util.y.c(v6Var, "type is required");
+        this.f30210d = str;
+        this.f30215q = -1;
+        this.f30212i = str2;
+        this.f30216r = callable;
+        this.f30217s = str3;
+        this.f30213o = str4;
+        this.f30211e = num;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

@@ -5,7 +5,7 @@ import ui.c;
 final class v7 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final v7 f45780a = new v7();
+    static final v7 f45796a = new v7();
 
     static {
         c.b a10 = ui.c.a("latencyMs");

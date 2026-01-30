@@ -46,14 +46,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.RouteParam = var4;
     var2.isPseudoGuildId = var3;
     var3 = function(arg0) { // Original name: isValidGuildId, environment: var1
-        _fun27847: for (var _fun27847_ip = 0;;) switch (_fun27847_ip) {
+        _fun27848: for (var _fun27848_ip = 0;;) switch (_fun27848_ip) {
             case 0:
                 var4 = arg0;
                 var0 = null;
                 var0 = var0 != var4;
                 if (!var0) {
-                    _fun27847_ip = 58;
-                    continue _fun27847
+                    _fun27848_ip = 58;
+                    continue _fun27848
                 }
             case 12:
                 var3 = _closure1_slot3;
@@ -62,8 +62,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = !var1;
                 var1 = !var3;
                 if (!var3) {
-                    _fun27847_ip = 55;
-                    continue _fun27847
+                    _fun27848_ip = 55;
+                    continue _fun27848
                 }
             case 35:
                 var3 = _closure1_slot2;
@@ -79,14 +79,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isValidGuildId = var3;
     var1 = function(arg0) { // Original name: isValidChannelId, environment: var1
-        _fun27848: for (var _fun27848_ip = 0;;) switch (_fun27848_ip) {
+        _fun27849: for (var _fun27849_ip = 0;;) switch (_fun27849_ip) {
             case 0:
                 var4 = arg0;
                 var0 = null;
                 var0 = var0 == var4;
                 if (var0) {
-                    _fun27848_ip = 58;
-                    continue _fun27848
+                    _fun27849_ip = 58;
+                    continue _fun27849
                 }
             case 12:
                 var3 = _closure1_slot2;
@@ -95,8 +95,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = !var1;
                 var1 = !var3;
                 if (!var3) {
-                    _fun27848_ip = 55;
-                    continue _fun27848
+                    _fun27849_ip = 55;
+                    continue _fun27849
                 }
             case 38:
                 var3 = _closure1_slot1;

@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/chat/native/ChatChangesetUpdateTracker.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Original name: getAndIncrementChangesetIdForChat, environment: var1
-        _fun73347: for (var _fun73347_ip = 0;;) switch (_fun73347_ip) {
+        _fun73391: for (var _fun73391_ip = 0;;) switch (_fun73391_ip) {
             case 0:
                 var3 = arg0;
                 var2 = _closure1_slot0;
@@ -41,8 +41,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2 != var0;
                 var2 = 0;
                 if (!var4) {
-                    _fun73347_ip = 34;
-                    continue _fun73347
+                    _fun73391_ip = 34;
+                    continue _fun73391
                 }
             case 31:
                 var2 = var0;
@@ -57,15 +57,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getAndIncrementChangesetIdForChat = var3;
     var1 = function(arg0) { // Original name: getChangesetIdForChat, environment: var1
-        _fun73348: for (var _fun73348_ip = 0;;) switch (_fun73348_ip) {
+        _fun73392: for (var _fun73392_ip = 0;;) switch (_fun73392_ip) {
             case 0:
                 var5 = arg0;
                 var3 = null;
                 var2 = var3 == var5;
                 var0 = 0;
                 if (var2) {
-                    _fun73348_ip = 46;
-                    continue _fun73348
+                    _fun73392_ip = 46;
+                    continue _fun73392
                 }
             case 14:
                 var4 = _closure1_slot0;
@@ -74,8 +74,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3 != var2;
                 var1 = 0;
                 if (!var3) {
-                    _fun73348_ip = 43;
-                    continue _fun73348
+                    _fun73392_ip = 43;
+                    continue _fun73392
                 }
             case 40:
                 var1 = var2;

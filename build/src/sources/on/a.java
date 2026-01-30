@@ -23,22 +23,22 @@ import on.e;
 public final class a implements mn.i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final g f44433a;
+    private final g f44449a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final CoroutineScope f44434b;
+    private final CoroutineScope f44450b;
 
     /* renamed from: c  reason: collision with root package name */
-    private on.e f44435c;
+    private on.e f44451c;
 
     /* renamed from: d  reason: collision with root package name */
-    private MutableStateFlow f44436d;
+    private MutableStateFlow f44452d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f44437e;
+    private boolean f44453e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Job f44438f;
+    private Job f44454f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: on.a$a  reason: collision with other inner class name */
@@ -46,13 +46,13 @@ public final class a implements mn.i {
     public static final class C0542a extends kotlin.coroutines.jvm.internal.k implements Function3 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f44439d;
+        int f44455d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f44440e;
+        private /* synthetic */ Object f44456e;
 
         /* renamed from: i  reason: collision with root package name */
-        /* synthetic */ Object f44441i;
+        /* synthetic */ Object f44457i;
 
         C0542a(Continuation continuation) {
             super(3, continuation);
@@ -62,34 +62,34 @@ public final class a implements mn.i {
         public final Object invokeSuspend(Object obj) {
             e.d dVar;
             Object f10 = or.b.f();
-            int i10 = this.f44439d;
+            int i10 = this.f44455d;
             if (i10 != 0) {
                 if (i10 == 1) {
-                    dVar = (e.d) this.f44440e;
+                    dVar = (e.d) this.f44456e;
                     kotlin.c.b(obj);
                 } else {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
             } else {
                 kotlin.c.b(obj);
-                e.d dVar2 = (e.d) this.f44441i;
-                this.f44440e = dVar2;
-                this.f44439d = 1;
-                if (((FlowCollector) this.f44440e).emit(dVar2, this) == f10) {
+                e.d dVar2 = (e.d) this.f44457i;
+                this.f44456e = dVar2;
+                this.f44455d = 1;
+                if (((FlowCollector) this.f44456e).emit(dVar2, this) == f10) {
                     return f10;
                 }
                 dVar = dVar2;
             }
-            return kotlin.coroutines.jvm.internal.b.a(!Intrinsics.areEqual(dVar, e.d.b.f44489a));
+            return kotlin.coroutines.jvm.internal.b.a(!Intrinsics.areEqual(dVar, e.d.b.f44505a));
         }
 
         @Override // kotlin.jvm.functions.Function3
         /* renamed from: j */
         public final Object invoke(FlowCollector flowCollector, e.d dVar, Continuation continuation) {
             C0542a c0542a = new C0542a(continuation);
-            c0542a.f44440e = flowCollector;
-            c0542a.f44441i = dVar;
-            return c0542a.invokeSuspend(Unit.f33282a);
+            c0542a.f44456e = flowCollector;
+            c0542a.f44457i = dVar;
+            return c0542a.invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -98,7 +98,7 @@ public final class a implements mn.i {
     public static final class b extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f44442d;
+        int f44458d;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: on.a$b$a  reason: collision with other inner class name */
@@ -106,37 +106,37 @@ public final class a implements mn.i {
         public static final class C0543a implements FlowCollector {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ a f44444d;
+            final /* synthetic */ a f44460d;
 
             C0543a(a aVar) {
-                this.f44444d = aVar;
+                this.f44460d = aVar;
             }
 
             @Override // kotlinx.coroutines.flow.FlowCollector
             /* renamed from: a */
             public final Object emit(e.d dVar, Continuation continuation) {
-                if (!Intrinsics.areEqual(dVar, e.d.a.f44488a)) {
-                    if (Intrinsics.areEqual(dVar, e.d.C0545d.f44491a)) {
-                        this.f44444d.f44436d.setValue(x.e.f39340a);
-                    } else if (Intrinsics.areEqual(dVar, e.d.b.f44489a)) {
-                        this.f44444d.f44436d.setValue(new x.a(this.f44444d.f44437e));
-                        a aVar = this.f44444d;
-                        aVar.f44435c = aVar.f44433a.a();
-                        this.f44444d.f44437e = false;
+                if (!Intrinsics.areEqual(dVar, e.d.a.f44504a)) {
+                    if (Intrinsics.areEqual(dVar, e.d.C0545d.f44507a)) {
+                        this.f44460d.f44452d.setValue(x.e.f39356a);
+                    } else if (Intrinsics.areEqual(dVar, e.d.b.f44505a)) {
+                        this.f44460d.f44452d.setValue(new x.a(this.f44460d.f44453e));
+                        a aVar = this.f44460d;
+                        aVar.f44451c = aVar.f44449a.a();
+                        this.f44460d.f44453e = false;
                     } else if (dVar instanceof e.d.c) {
                         e.c a10 = ((e.d.c) dVar).a();
                         if (a10 instanceof e.c.a) {
-                            if (this.f44444d.f44433a.b()) {
-                                Job job = this.f44444d.f44438f;
+                            if (this.f44460d.f44449a.b()) {
+                                Job job = this.f44460d.f44454f;
                                 if (job != null) {
                                     Job.a.a(job, null, 1, null);
                                 }
-                                this.f44444d.u();
+                                this.f44460d.u();
                             } else {
-                                this.f44444d.f44436d.setValue(x.b.f39337a);
+                                this.f44460d.f44452d.setValue(x.b.f39353a);
                             }
                         } else if (a10 instanceof e.c.b) {
-                            this.f44444d.f44436d.setValue(x.c.f39338a);
+                            this.f44460d.f44452d.setValue(x.c.f39354a);
                         } else {
                             throw new ir.p();
                         }
@@ -144,7 +144,7 @@ public final class a implements mn.i {
                         throw new ir.p();
                     }
                 }
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
         }
 
@@ -160,7 +160,7 @@ public final class a implements mn.i {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = or.b.f();
-            int i10 = this.f44442d;
+            int i10 = this.f44458d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -170,19 +170,19 @@ public final class a implements mn.i {
             } else {
                 kotlin.c.b(obj);
                 a aVar = a.this;
-                Flow e10 = js.g.e(aVar.t(aVar.f44435c.K()));
+                Flow e10 = js.g.e(aVar.t(aVar.f44451c.K()));
                 C0543a c0543a = new C0543a(a.this);
-                this.f44442d = 1;
+                this.f44458d = 1;
                 if (e10.collect(c0543a, this) == f10) {
                     return f10;
                 }
             }
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -191,7 +191,7 @@ public final class a implements mn.i {
     public static final class c extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f44445d;
+        int f44461d;
 
         c(Continuation continuation) {
             super(2, continuation);
@@ -205,18 +205,18 @@ public final class a implements mn.i {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             or.b.f();
-            if (this.f44445d == 0) {
+            if (this.f44461d == 0) {
                 kotlin.c.b(obj);
-                a.this.f44436d.setValue(x.c.f39338a);
+                a.this.f44452d.setValue(x.c.f39354a);
                 a.this.d();
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -225,13 +225,13 @@ public final class a implements mn.i {
     public static final class d extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f44447d;
+        Object f44463d;
 
         /* renamed from: e  reason: collision with root package name */
-        /* synthetic */ Object f44448e;
+        /* synthetic */ Object f44464e;
 
         /* renamed from: o  reason: collision with root package name */
-        int f44450o;
+        int f44466o;
 
         d(Continuation continuation) {
             super(continuation);
@@ -239,8 +239,8 @@ public final class a implements mn.i {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f44448e = obj;
-            this.f44450o |= Integer.MIN_VALUE;
+            this.f44464e = obj;
+            this.f44466o |= Integer.MIN_VALUE;
             Object g10 = a.this.g(this);
             if (g10 == or.b.f()) {
                 return g10;
@@ -254,10 +254,10 @@ public final class a implements mn.i {
     public static final class e extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        /* synthetic */ Object f44451d;
+        /* synthetic */ Object f44467d;
 
         /* renamed from: i  reason: collision with root package name */
-        int f44453i;
+        int f44469i;
 
         e(Continuation continuation) {
             super(continuation);
@@ -265,8 +265,8 @@ public final class a implements mn.i {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f44451d = obj;
-            this.f44453i |= Integer.MIN_VALUE;
+            this.f44467d = obj;
+            this.f44469i |= Integer.MIN_VALUE;
             Object i10 = a.this.i(this);
             if (i10 == or.b.f()) {
                 return i10;
@@ -280,10 +280,10 @@ public final class a implements mn.i {
     public static final class f extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        /* synthetic */ Object f44454d;
+        /* synthetic */ Object f44470d;
 
         /* renamed from: i  reason: collision with root package name */
-        int f44456i;
+        int f44472i;
 
         f(Continuation continuation) {
             super(continuation);
@@ -291,8 +291,8 @@ public final class a implements mn.i {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f44454d = obj;
-            this.f44456i |= Integer.MIN_VALUE;
+            this.f44470d = obj;
+            this.f44472i |= Integer.MIN_VALUE;
             Object j10 = a.this.j(this);
             if (j10 == or.b.f()) {
                 return j10;
@@ -303,10 +303,10 @@ public final class a implements mn.i {
 
     public a(g camera2ManagerFactory) {
         Intrinsics.checkNotNullParameter(camera2ManagerFactory, "camera2ManagerFactory");
-        this.f44433a = camera2ManagerFactory;
-        this.f44434b = kotlinx.coroutines.i.a(m0.a().U0(j1.b(null, 1, null)));
-        this.f44435c = camera2ManagerFactory.a();
-        this.f44436d = l0.a(x.c.f39338a);
+        this.f44449a = camera2ManagerFactory;
+        this.f44450b = kotlinx.coroutines.i.a(m0.a().U0(j1.b(null, 1, null)));
+        this.f44451c = camera2ManagerFactory.a();
+        this.f44452d = l0.a(x.c.f39354a);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -316,49 +316,49 @@ public final class a implements mn.i {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void u() {
-        this.f44435c = this.f44433a.a();
-        gs.i.d(this.f44434b, m0.c(), null, new c(null), 2, null);
+        this.f44451c = this.f44449a.a();
+        gs.i.d(this.f44450b, m0.c(), null, new c(null), 2, null);
     }
 
     @Override // mn.i
     public void a(boolean z10) {
-        this.f44435c.G(z10);
+        this.f44451c.G(z10);
     }
 
     @Override // mn.i
     public v b() {
-        return this.f44435c.I();
+        return this.f44451c.I();
     }
 
     @Override // mn.i
     public j0 c() {
-        return this.f44436d;
+        return this.f44452d;
     }
 
     @Override // mn.i
     public void d() {
         Job d10;
-        if (!Intrinsics.areEqual(this.f44436d.getValue(), x.c.f39338a) && !(this.f44436d.getValue() instanceof x.a)) {
+        if (!Intrinsics.areEqual(this.f44452d.getValue(), x.c.f39354a) && !(this.f44452d.getValue() instanceof x.a)) {
             return;
         }
-        Job job = this.f44438f;
+        Job job = this.f44454f;
         if (job != null) {
             Job.a.a(job, null, 1, null);
         }
-        this.f44436d.setValue(x.d.f39339a);
-        d10 = gs.i.d(this.f44434b, null, null, new b(null), 3, null);
-        this.f44438f = d10;
-        this.f44435c.T();
+        this.f44452d.setValue(x.d.f39355a);
+        d10 = gs.i.d(this.f44450b, null, null, new b(null), 3, null);
+        this.f44454f = d10;
+        this.f44451c.T();
     }
 
     @Override // mn.i
     public View e() {
-        return this.f44435c.J();
+        return this.f44451c.J();
     }
 
     @Override // mn.i
     public void f() {
-        this.f44435c.H();
+        this.f44451c.H();
     }
 
     /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
@@ -378,24 +378,24 @@ public final class a implements mn.i {
             if (r0 == 0) goto L13
             r0 = r5
             on.a$d r0 = (on.a.d) r0
-            int r1 = r0.f44450o
+            int r1 = r0.f44466o
             r2 = -2147483648(0xffffffff80000000, float:-0.0)
             r3 = r1 & r2
             if (r3 == 0) goto L13
             int r1 = r1 - r2
-            r0.f44450o = r1
+            r0.f44466o = r1
             goto L18
         L13:
             on.a$d r0 = new on.a$d
             r0.<init>(r5)
         L18:
-            java.lang.Object r5 = r0.f44448e
+            java.lang.Object r5 = r0.f44464e
             java.lang.Object r1 = or.b.f()
-            int r2 = r0.f44450o
+            int r2 = r0.f44466o
             r3 = 1
             if (r2 == 0) goto L3b
             if (r2 != r3) goto L33
-            java.lang.Object r0 = r0.f44447d
+            java.lang.Object r0 = r0.f44463d
             on.a r0 = (on.a) r0
             kotlin.c.b(r5)
             kotlin.Result r5 = (kotlin.Result) r5
@@ -408,20 +408,20 @@ public final class a implements mn.i {
             throw r5
         L3b:
             kotlin.c.b(r5)
-            kotlinx.coroutines.flow.MutableStateFlow r5 = r4.f44436d
+            kotlinx.coroutines.flow.MutableStateFlow r5 = r4.f44452d
             java.lang.Object r5 = r5.getValue()
-            mn.x$e r2 = mn.x.e.f39340a
+            mn.x$e r2 = mn.x.e.f39356a
             boolean r5 = kotlin.jvm.internal.Intrinsics.areEqual(r5, r2)
             if (r5 != 0) goto L58
-            kotlin.Result$a r5 = kotlin.Result.f33279e
+            kotlin.Result$a r5 = kotlin.Result.f33295e
             r5 = 0
             java.lang.Boolean r5 = kotlin.coroutines.jvm.internal.b.a(r5)
             java.lang.Object r5 = kotlin.Result.b(r5)
             return r5
         L58:
-            on.e r5 = r4.f44435c
-            r0.f44447d = r4
-            r0.f44450o = r3
+            on.e r5 = r4.f44451c
+            r0.f44463d = r4
+            r0.f44466o = r3
             java.lang.Object r5 = r5.W(r0)
             if (r5 != r1) goto L65
             return r1
@@ -438,7 +438,7 @@ public final class a implements mn.i {
             java.lang.Boolean r2 = kotlin.coroutines.jvm.internal.b.a(r3)
             boolean r1 = kotlin.jvm.internal.Intrinsics.areEqual(r1, r2)
             if (r1 == 0) goto L7b
-            r0.f44437e = r3
+            r0.f44453e = r3
         L7b:
             return r5
         */
@@ -447,7 +447,7 @@ public final class a implements mn.i {
 
     @Override // mn.i
     public void h(boolean z10) {
-        this.f44435c.S(z10);
+        this.f44451c.S(z10);
     }
 
     /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
@@ -464,20 +464,20 @@ public final class a implements mn.i {
             if (r0 == 0) goto L13
             r0 = r5
             on.a$e r0 = (on.a.e) r0
-            int r1 = r0.f44453i
+            int r1 = r0.f44469i
             r2 = -2147483648(0xffffffff80000000, float:-0.0)
             r3 = r1 & r2
             if (r3 == 0) goto L13
             int r1 = r1 - r2
-            r0.f44453i = r1
+            r0.f44469i = r1
             goto L18
         L13:
             on.a$e r0 = new on.a$e
             r0.<init>(r5)
         L18:
-            java.lang.Object r5 = r0.f44451d
+            java.lang.Object r5 = r0.f44467d
             java.lang.Object r1 = or.b.f()
-            int r2 = r0.f44453i
+            int r2 = r0.f44469i
             r3 = 1
             if (r2 == 0) goto L37
             if (r2 != r3) goto L2f
@@ -493,9 +493,9 @@ public final class a implements mn.i {
         L37:
             kotlin.c.b(r5)
             r5 = 0
-            r4.f44437e = r5
-            on.e r5 = r4.f44435c
-            r0.f44453i = r3
+            r4.f44453e = r5
+            on.e r5 = r4.f44451c
+            r0.f44469i = r3
             java.lang.Object r5 = r5.X(r0)
             if (r5 != r1) goto L48
             return r1
@@ -519,20 +519,20 @@ public final class a implements mn.i {
             if (r0 == 0) goto L13
             r0 = r5
             on.a$f r0 = (on.a.f) r0
-            int r1 = r0.f44456i
+            int r1 = r0.f44472i
             r2 = -2147483648(0xffffffff80000000, float:-0.0)
             r3 = r1 & r2
             if (r3 == 0) goto L13
             int r1 = r1 - r2
-            r0.f44456i = r1
+            r0.f44472i = r1
             goto L18
         L13:
             on.a$f r0 = new on.a$f
             r0.<init>(r5)
         L18:
-            java.lang.Object r5 = r0.f44454d
+            java.lang.Object r5 = r0.f44470d
             java.lang.Object r1 = or.b.f()
-            int r2 = r0.f44456i
+            int r2 = r0.f44472i
             r3 = 1
             if (r2 == 0) goto L37
             if (r2 != r3) goto L2f
@@ -547,8 +547,8 @@ public final class a implements mn.i {
             throw r5
         L37:
             kotlin.c.b(r5)
-            on.e r5 = r4.f44435c
-            r0.f44456i = r3
+            on.e r5 = r4.f44451c
+            r0.f44472i = r3
             java.lang.Object r5 = r5.Q(r0)
             if (r5 != r1) goto L45
             return r1

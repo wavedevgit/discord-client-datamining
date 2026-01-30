@@ -10,19 +10,19 @@ import xi.h;
 public class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f53360a;
+    private final Map f53376a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f53361b;
+    private final Map f53377b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ui.d f53362c;
+    private final ui.d f53378c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements vi.b {
 
         /* renamed from: d  reason: collision with root package name */
-        private static final ui.d f53363d = new ui.d() { // from class: xi.g
+        private static final ui.d f53379d = new ui.d() { // from class: xi.g
             @Override // ui.d
             public final void a(Object obj, Object obj2) {
                 h.a.b(obj, (ui.e) obj2);
@@ -30,20 +30,20 @@ public class h {
         };
 
         /* renamed from: a  reason: collision with root package name */
-        private final Map f53364a = new HashMap();
+        private final Map f53380a = new HashMap();
 
         /* renamed from: b  reason: collision with root package name */
-        private final Map f53365b = new HashMap();
+        private final Map f53381b = new HashMap();
 
         /* renamed from: c  reason: collision with root package name */
-        private ui.d f53366c = f53363d;
+        private ui.d f53382c = f53379d;
 
         public static /* synthetic */ void b(Object obj, ui.e eVar) {
             throw new ui.b("Couldn't find encoder for type " + obj.getClass().getCanonicalName());
         }
 
         public h c() {
-            return new h(new HashMap(this.f53364a), new HashMap(this.f53365b), this.f53366c);
+            return new h(new HashMap(this.f53380a), new HashMap(this.f53381b), this.f53382c);
         }
 
         public a d(vi.a aVar) {
@@ -54,16 +54,16 @@ public class h {
         @Override // vi.b
         /* renamed from: e */
         public a a(Class cls, ui.d dVar) {
-            this.f53364a.put(cls, dVar);
-            this.f53365b.remove(cls);
+            this.f53380a.put(cls, dVar);
+            this.f53381b.remove(cls);
             return this;
         }
     }
 
     h(Map map, Map map2, ui.d dVar) {
-        this.f53360a = map;
-        this.f53361b = map2;
-        this.f53362c = dVar;
+        this.f53376a = map;
+        this.f53377b = map2;
+        this.f53378c = dVar;
     }
 
     public static a a() {
@@ -71,7 +71,7 @@ public class h {
     }
 
     public void b(Object obj, OutputStream outputStream) {
-        new f(outputStream, this.f53360a, this.f53361b, this.f53362c).q(obj);
+        new f(outputStream, this.f53376a, this.f53377b, this.f53378c).q(obj);
     }
 
     public byte[] c(Object obj) {

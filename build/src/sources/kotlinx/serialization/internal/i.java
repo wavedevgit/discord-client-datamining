@@ -11,10 +11,10 @@ import kotlinx.serialization.encoding.CompositeEncoder;
 public final class i extends f2 implements KSerializer {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final i f36390c = new i();
+    public static final i f36406c = new i();
 
     private i() {
-        super(ys.a.w(x.f31118e));
+        super(ys.a.w(x.f31134e));
     }
 
     @Override // at.a

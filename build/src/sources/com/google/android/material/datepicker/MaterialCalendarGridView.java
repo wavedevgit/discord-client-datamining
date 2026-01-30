@@ -118,8 +118,8 @@ public final class MaterialCalendarGridView extends GridView {
         super(context, attributeSet, i10);
         this.f15877d = t.i();
         if (k.J(getContext())) {
-            setNextFocusLeftId(yg.f.f54421a);
-            setNextFocusRightId(yg.f.f54424d);
+            setNextFocusLeftId(yg.f.f54437a);
+            setNextFocusRightId(yg.f.f54440d);
         }
         this.f15878e = k.L(getContext());
         h0.n0(this, new a());

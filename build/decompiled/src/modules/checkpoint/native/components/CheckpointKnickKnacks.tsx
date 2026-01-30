@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/checkpoint/native/components/CheckpointKnickKnacks.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: CheckpointKnickKnacks, environment: var1
-        _fun86476: for (var _fun86476_ip = 0;;) switch (_fun86476_ip) {
+        _fun86522: for (var _fun86522_ip = 0;;) switch (_fun86522_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.slide;
@@ -125,8 +125,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.bind(var1)();
                 var0 = null;
                 if (var1) {
-                    _fun86476_ip = 258;
-                    continue _fun86476
+                    _fun86522_ip = 258;
+                    continue _fun86522
                 }
             case 168:
                 var3 = _closure1_slot4;
@@ -156,4 +156,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1298, 9119, 33, 1297, 11130, 3110, 566, 478, 3118, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1298, 9123, 33, 1297, 11136, 3110, 566, 478, 3118, 2]);

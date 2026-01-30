@@ -15,79 +15,79 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class m3 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private io.sentry.protocol.d f30169d;
+    private io.sentry.protocol.d f30185d;
 
     /* renamed from: e  reason: collision with root package name */
-    private io.sentry.protocol.x f30170e;
+    private io.sentry.protocol.x f30186e;
 
     /* renamed from: i  reason: collision with root package name */
-    private io.sentry.protocol.x f30171i;
+    private io.sentry.protocol.x f30187i;
 
     /* renamed from: o  reason: collision with root package name */
-    private io.sentry.protocol.r f30172o;
+    private io.sentry.protocol.r f30188o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Map f30173p;
+    private final Map f30189p;
 
     /* renamed from: q  reason: collision with root package name */
-    private String f30174q;
+    private String f30190q;
 
     /* renamed from: r  reason: collision with root package name */
-    private String f30175r;
+    private String f30191r;
 
     /* renamed from: s  reason: collision with root package name */
-    private String f30176s;
+    private String f30192s;
 
     /* renamed from: t  reason: collision with root package name */
-    private String f30177t;
+    private String f30193t;
 
     /* renamed from: u  reason: collision with root package name */
-    private double f30178u;
+    private double f30194u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final File f30179v;
+    private final File f30195v;
 
     /* renamed from: w  reason: collision with root package name */
-    private String f30180w;
+    private String f30196w;
 
     /* renamed from: x  reason: collision with root package name */
-    private io.sentry.protocol.profiling.a f30181x;
+    private io.sentry.protocol.profiling.a f30197x;
 
     /* renamed from: y  reason: collision with root package name */
-    private Map f30182y;
+    private Map f30198y;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final io.sentry.protocol.x f30183a;
+        private final io.sentry.protocol.x f30199a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final io.sentry.protocol.x f30184b;
+        private final io.sentry.protocol.x f30200b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final Map f30185c;
+        private final Map f30201c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final File f30186d;
+        private final File f30202d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final double f30187e;
+        private final double f30203e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final String f30188f;
+        private final String f30204f;
 
         public a(io.sentry.protocol.x xVar, io.sentry.protocol.x xVar2, Map map, File file, j5 j5Var, String str) {
-            this.f30183a = xVar;
-            this.f30184b = xVar2;
-            this.f30185c = new ConcurrentHashMap(map);
-            this.f30186d = file;
-            this.f30187e = k.m(j5Var.h());
-            this.f30188f = str;
+            this.f30199a = xVar;
+            this.f30200b = xVar2;
+            this.f30201c = new ConcurrentHashMap(map);
+            this.f30202d = file;
+            this.f30203e = k.m(j5Var.h());
+            this.f30204f = str;
         }
 
         public m3 a(k7 k7Var) {
-            return new m3(this.f30183a, this.f30184b, this.f30186d, this.f30185c, Double.valueOf(this.f30187e), this.f30188f, k7Var);
+            return new m3(this.f30199a, this.f30200b, this.f30202d, this.f30201c, Double.valueOf(this.f30203e), this.f30204f, k7Var);
         }
     }
 
@@ -183,7 +183,7 @@ public final class m3 implements w1 {
                         if (dVar == null) {
                             break;
                         } else {
-                            m3Var.f30169d = dVar;
+                            m3Var.f30185d = dVar;
                             break;
                         }
                     case 1:
@@ -191,7 +191,7 @@ public final class m3 implements w1 {
                         if (u12 == null) {
                             break;
                         } else {
-                            m3Var.f30173p.putAll(u12);
+                            m3Var.f30189p.putAll(u12);
                             break;
                         }
                     case 2:
@@ -199,7 +199,7 @@ public final class m3 implements w1 {
                         if (aVar == null) {
                             break;
                         } else {
-                            m3Var.f30181x = aVar;
+                            m3Var.f30197x = aVar;
                             break;
                         }
                     case 3:
@@ -207,7 +207,7 @@ public final class m3 implements w1 {
                         if (r12 == null) {
                             break;
                         } else {
-                            m3Var.f30176s = r12;
+                            m3Var.f30192s = r12;
                             break;
                         }
                     case 4:
@@ -215,7 +215,7 @@ public final class m3 implements w1 {
                         if (k02 == null) {
                             break;
                         } else {
-                            m3Var.f30178u = k02.doubleValue();
+                            m3Var.f30194u = k02.doubleValue();
                             break;
                         }
                     case 5:
@@ -223,7 +223,7 @@ public final class m3 implements w1 {
                         if (xVar == null) {
                             break;
                         } else {
-                            m3Var.f30170e = xVar;
+                            m3Var.f30186e = xVar;
                             break;
                         }
                     case 6:
@@ -231,7 +231,7 @@ public final class m3 implements w1 {
                         if (r13 == null) {
                             break;
                         } else {
-                            m3Var.f30177t = r13;
+                            m3Var.f30193t = r13;
                             break;
                         }
                     case 7:
@@ -239,7 +239,7 @@ public final class m3 implements w1 {
                         if (r14 == null) {
                             break;
                         } else {
-                            m3Var.f30175r = r14;
+                            m3Var.f30191r = r14;
                             break;
                         }
                     case '\b':
@@ -247,7 +247,7 @@ public final class m3 implements w1 {
                         if (rVar == null) {
                             break;
                         } else {
-                            m3Var.f30172o = rVar;
+                            m3Var.f30188o = rVar;
                             break;
                         }
                     case '\t':
@@ -255,7 +255,7 @@ public final class m3 implements w1 {
                         if (r15 == null) {
                             break;
                         } else {
-                            m3Var.f30174q = r15;
+                            m3Var.f30190q = r15;
                             break;
                         }
                     case '\n':
@@ -263,7 +263,7 @@ public final class m3 implements w1 {
                         if (r16 == null) {
                             break;
                         } else {
-                            m3Var.f30180w = r16;
+                            m3Var.f30196w = r16;
                             break;
                         }
                     case 11:
@@ -271,7 +271,7 @@ public final class m3 implements w1 {
                         if (xVar2 == null) {
                             break;
                         } else {
-                            m3Var.f30171i = xVar2;
+                            m3Var.f30187i = xVar2;
                             break;
                         }
                     default:
@@ -296,7 +296,7 @@ public final class m3 implements w1 {
     public m3() {
         /*
             r8 = this;
-            io.sentry.protocol.x r1 = io.sentry.protocol.x.f30470e
+            io.sentry.protocol.x r1 = io.sentry.protocol.x.f30486e
             java.io.File r3 = new java.io.File
             java.lang.String r0 = "dummy"
             r3.<init>(r0)
@@ -326,99 +326,99 @@ public final class m3 implements w1 {
             return false;
         }
         m3 m3Var = (m3) obj;
-        if (Objects.equals(this.f30169d, m3Var.f30169d) && Objects.equals(this.f30170e, m3Var.f30170e) && Objects.equals(this.f30171i, m3Var.f30171i) && Objects.equals(this.f30172o, m3Var.f30172o) && Objects.equals(this.f30173p, m3Var.f30173p) && Objects.equals(this.f30174q, m3Var.f30174q) && Objects.equals(this.f30175r, m3Var.f30175r) && Objects.equals(this.f30176s, m3Var.f30176s) && Objects.equals(this.f30177t, m3Var.f30177t) && Objects.equals(this.f30180w, m3Var.f30180w) && Objects.equals(this.f30182y, m3Var.f30182y) && Objects.equals(this.f30181x, m3Var.f30181x)) {
+        if (Objects.equals(this.f30185d, m3Var.f30185d) && Objects.equals(this.f30186e, m3Var.f30186e) && Objects.equals(this.f30187i, m3Var.f30187i) && Objects.equals(this.f30188o, m3Var.f30188o) && Objects.equals(this.f30189p, m3Var.f30189p) && Objects.equals(this.f30190q, m3Var.f30190q) && Objects.equals(this.f30191r, m3Var.f30191r) && Objects.equals(this.f30192s, m3Var.f30192s) && Objects.equals(this.f30193t, m3Var.f30193t) && Objects.equals(this.f30196w, m3Var.f30196w) && Objects.equals(this.f30198y, m3Var.f30198y) && Objects.equals(this.f30197x, m3Var.f30197x)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return Objects.hash(this.f30169d, this.f30170e, this.f30171i, this.f30172o, this.f30173p, this.f30174q, this.f30175r, this.f30176s, this.f30177t, this.f30180w, this.f30181x, this.f30182y);
+        return Objects.hash(this.f30185d, this.f30186e, this.f30187i, this.f30188o, this.f30189p, this.f30190q, this.f30191r, this.f30192s, this.f30193t, this.f30196w, this.f30197x, this.f30198y);
     }
 
     public io.sentry.protocol.x n() {
-        return this.f30171i;
+        return this.f30187i;
     }
 
     public io.sentry.protocol.d o() {
-        return this.f30169d;
+        return this.f30185d;
     }
 
     public String p() {
-        return this.f30174q;
+        return this.f30190q;
     }
 
     public File q() {
-        return this.f30179v;
+        return this.f30195v;
     }
 
     public void r(io.sentry.protocol.d dVar) {
-        this.f30169d = dVar;
+        this.f30185d = dVar;
     }
 
     public void s(String str) {
-        this.f30180w = str;
+        this.f30196w = str;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        if (this.f30169d != null) {
-            f3Var.e("debug_meta").j(iLogger, this.f30169d);
+        if (this.f30185d != null) {
+            f3Var.e("debug_meta").j(iLogger, this.f30185d);
         }
-        f3Var.e("profiler_id").j(iLogger, this.f30170e);
-        f3Var.e("chunk_id").j(iLogger, this.f30171i);
-        if (this.f30172o != null) {
-            f3Var.e("client_sdk").j(iLogger, this.f30172o);
+        f3Var.e("profiler_id").j(iLogger, this.f30186e);
+        f3Var.e("chunk_id").j(iLogger, this.f30187i);
+        if (this.f30188o != null) {
+            f3Var.e("client_sdk").j(iLogger, this.f30188o);
         }
-        if (!this.f30173p.isEmpty()) {
+        if (!this.f30189p.isEmpty()) {
             String a10 = f3Var.a();
             f3Var.h("");
-            f3Var.e("measurements").j(iLogger, this.f30173p);
+            f3Var.e("measurements").j(iLogger, this.f30189p);
             f3Var.h(a10);
         }
-        f3Var.e("platform").j(iLogger, this.f30174q);
-        f3Var.e("release").j(iLogger, this.f30175r);
-        if (this.f30176s != null) {
-            f3Var.e("environment").j(iLogger, this.f30176s);
+        f3Var.e("platform").j(iLogger, this.f30190q);
+        f3Var.e("release").j(iLogger, this.f30191r);
+        if (this.f30192s != null) {
+            f3Var.e("environment").j(iLogger, this.f30192s);
         }
-        f3Var.e("version").j(iLogger, this.f30177t);
-        if (this.f30180w != null) {
-            f3Var.e("sampled_profile").j(iLogger, this.f30180w);
+        f3Var.e("version").j(iLogger, this.f30193t);
+        if (this.f30196w != null) {
+            f3Var.e("sampled_profile").j(iLogger, this.f30196w);
         }
-        f3Var.e("timestamp").j(iLogger, m(Double.valueOf(this.f30178u)));
-        if (this.f30181x != null) {
-            f3Var.e("profile").j(iLogger, this.f30181x);
+        f3Var.e("timestamp").j(iLogger, m(Double.valueOf(this.f30194u)));
+        if (this.f30197x != null) {
+            f3Var.e("profile").j(iLogger, this.f30197x);
         }
-        Map map = this.f30182y;
+        Map map = this.f30198y;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f30182y.get(str));
+                f3Var.e(str).j(iLogger, this.f30198y.get(str));
             }
         }
         f3Var.y();
     }
 
     public void t(io.sentry.protocol.profiling.a aVar) {
-        this.f30181x = aVar;
+        this.f30197x = aVar;
     }
 
     public void u(Map map) {
-        this.f30182y = map;
+        this.f30198y = map;
     }
 
     public m3(io.sentry.protocol.x xVar, io.sentry.protocol.x xVar2, File file, Map map, Double d10, String str, k7 k7Var) {
-        this.f30180w = null;
-        this.f30170e = xVar;
-        this.f30171i = xVar2;
-        this.f30179v = file;
-        this.f30173p = map;
-        this.f30169d = null;
-        this.f30172o = k7Var.getSdkVersion();
-        this.f30175r = k7Var.getRelease() != null ? k7Var.getRelease() : "";
-        this.f30176s = k7Var.getEnvironment();
-        this.f30174q = str;
-        this.f30177t = "2";
-        this.f30178u = d10.doubleValue();
+        this.f30196w = null;
+        this.f30186e = xVar;
+        this.f30187i = xVar2;
+        this.f30195v = file;
+        this.f30189p = map;
+        this.f30185d = null;
+        this.f30188o = k7Var.getSdkVersion();
+        this.f30191r = k7Var.getRelease() != null ? k7Var.getRelease() : "";
+        this.f30192s = k7Var.getEnvironment();
+        this.f30190q = str;
+        this.f30193t = "2";
+        this.f30194u = d10.doubleValue();
     }
 }

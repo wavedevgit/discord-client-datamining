@@ -7,51 +7,51 @@ public final class n6 extends hf.a {
     public static final Parcelable.Creator<n6> CREATOR = new xj();
 
     /* renamed from: d  reason: collision with root package name */
-    public int f38485d;
+    public int f38501d;
 
     /* renamed from: e  reason: collision with root package name */
-    public int f38486e;
+    public int f38502e;
 
     /* renamed from: i  reason: collision with root package name */
-    public int f38487i;
+    public int f38503i;
 
     /* renamed from: o  reason: collision with root package name */
-    public int f38488o;
+    public int f38504o;
 
     /* renamed from: p  reason: collision with root package name */
-    public int f38489p;
+    public int f38505p;
 
     /* renamed from: q  reason: collision with root package name */
-    public int f38490q;
+    public int f38506q;
 
     /* renamed from: r  reason: collision with root package name */
-    public boolean f38491r;
+    public boolean f38507r;
 
     /* renamed from: s  reason: collision with root package name */
-    public String f38492s;
+    public String f38508s;
 
     public n6(int i10, int i11, int i12, int i13, int i14, int i15, boolean z10, String str) {
-        this.f38485d = i10;
-        this.f38486e = i11;
-        this.f38487i = i12;
-        this.f38488o = i13;
-        this.f38489p = i14;
-        this.f38490q = i15;
-        this.f38491r = z10;
-        this.f38492s = str;
+        this.f38501d = i10;
+        this.f38502e = i11;
+        this.f38503i = i12;
+        this.f38504o = i13;
+        this.f38505p = i14;
+        this.f38506q = i15;
+        this.f38507r = z10;
+        this.f38508s = str;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
         int a10 = hf.c.a(parcel);
-        hf.c.l(parcel, 2, this.f38485d);
-        hf.c.l(parcel, 3, this.f38486e);
-        hf.c.l(parcel, 4, this.f38487i);
-        hf.c.l(parcel, 5, this.f38488o);
-        hf.c.l(parcel, 6, this.f38489p);
-        hf.c.l(parcel, 7, this.f38490q);
-        hf.c.c(parcel, 8, this.f38491r);
-        hf.c.s(parcel, 9, this.f38492s, false);
+        hf.c.l(parcel, 2, this.f38501d);
+        hf.c.l(parcel, 3, this.f38502e);
+        hf.c.l(parcel, 4, this.f38503i);
+        hf.c.l(parcel, 5, this.f38504o);
+        hf.c.l(parcel, 6, this.f38505p);
+        hf.c.l(parcel, 7, this.f38506q);
+        hf.c.c(parcel, 8, this.f38507r);
+        hf.c.s(parcel, 9, this.f38508s, false);
         hf.c.b(parcel, a10);
     }
 }

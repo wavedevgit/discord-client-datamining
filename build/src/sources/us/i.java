@@ -6,10 +6,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class i implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Function1 f50550a;
+    private final Function1 f50566a;
 
     public i(Function1 string) {
         Intrinsics.checkNotNullParameter(string, "string");
-        this.f50550a = string;
+        this.f50566a = string;
     }
 }

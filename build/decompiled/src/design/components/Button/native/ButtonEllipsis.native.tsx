@@ -158,44 +158,44 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var3);
     var6 = var7.createStyles;
     var3 = function(arg0, arg1, arg2) { // Environment: var1
-        _fun37409: for (var _fun37409_ip = 0;;) switch (_fun37409_ip) {
+        _fun37460: for (var _fun37460_ip = 0;;) switch (_fun37460_ip) {
             case 0:
                 var1 = arg0;
                 var0 = 'lg';
                 if (!(var0 !== var1)) {
-                    _fun37409_ip = 56;
-                    continue _fun37409
+                    _fun37460_ip = 56;
+                    continue _fun37460
                 }
             case 11:
                 var0 = 'md';
                 if (!(var0 !== var1)) {
-                    _fun37409_ip = 48;
-                    continue _fun37409
+                    _fun37460_ip = 48;
+                    continue _fun37460
                 }
             case 19:
                 var0 = 'sm';
                 if (!(var0 !== var1)) {
-                    _fun37409_ip = 48;
-                    continue _fun37409
+                    _fun37460_ip = 48;
+                    continue _fun37460
                 }
             case 27:
                 var3 = 4;
                 var0 = 'xs';
                 var2 = undefined;
                 if (!(var0 === var1)) {
-                    _fun37409_ip = 62;
-                    continue _fun37409
+                    _fun37460_ip = 62;
+                    continue _fun37460
                 }
             case 40:
                 var2 = 5;
                 var3 = 3;
-                _fun37409_ip = 62;
-                continue _fun37409;
+                _fun37460_ip = 62;
+                continue _fun37460;
             case 48:
                 var2 = 6;
                 var3 = 4;
-                _fun37409_ip = 62;
-                continue _fun37409;
+                _fun37460_ip = 62;
+                continue _fun37460;
             case 56:
                 var2 = 8;
                 var3 = 4;
@@ -217,8 +217,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = arg1;
                 var2 = 0;
                 if (!(var5 !== var4)) {
-                    _fun37409_ip = 128;
-                    continue _fun37409
+                    _fun37460_ip = 128;
+                    continue _fun37460
                 }
             case 125:
                 var2 = var3;
@@ -355,4 +355,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.Ellipsis = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3677, 1297, 671, 4050, 4042, 4056, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3679, 1297, 671, 4056, 4048, 4062, 2]);

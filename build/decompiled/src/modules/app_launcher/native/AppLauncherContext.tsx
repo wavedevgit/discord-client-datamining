@@ -14,12 +14,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var2.useRef;
         var0 = {};
         var4 = function() { // Original name: getApplicationCommandManager, environment: var3
-            _fun61704: for (var _fun61704_ip = 0;;) switch (_fun61704_ip) {
+            _fun61748: for (var _fun61748_ip = 0;;) switch (_fun61748_ip) {
                 case 0:
                     var0 = _closure2_slot0;
                     if (var0) {
-                        _fun61704_ip = 46;
-                        continue _fun61704
+                        _fun61748_ip = 46;
+                        continue _fun61748
                     }
                 case 10:
                     var0 = global;
@@ -42,12 +42,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var0.getApplicationCommandManager = var4;
         var4 = function() { // Original name: openCustomKeyboard, environment: var3
-            _fun61705: for (var _fun61705_ip = 0;;) switch (_fun61705_ip) {
+            _fun61749: for (var _fun61749_ip = 0;;) switch (_fun61749_ip) {
                 case 0:
                     var0 = _closure2_slot0;
                     if (var0) {
-                        _fun61705_ip = 46;
-                        continue _fun61705
+                        _fun61749_ip = 46;
+                        continue _fun61749
                     }
                 case 10:
                     var0 = global;
@@ -70,12 +70,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var0.openCustomKeyboard = var4;
         var3 = function() { // Original name: closeCustomKeyboard, environment: var3
-            _fun61706: for (var _fun61706_ip = 0;;) switch (_fun61706_ip) {
+            _fun61750: for (var _fun61750_ip = 0;;) switch (_fun61750_ip) {
                 case 0:
                     var0 = _closure2_slot0;
                     if (var0) {
-                        _fun61706_ip = 46;
-                        continue _fun61706
+                        _fun61750_ip = 46;
+                        continue _fun61750
                     }
                 case 10:
                     var0 = global;
@@ -165,7 +165,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.AppLauncherContext = var4;
     var2.useAppLauncherChatInputRefDummy = var3;
     var3 = function() { // Original name: useRequiredAppLauncherContext, environment: var1
-        _fun61707: for (var _fun61707_ip = 0;;) switch (_fun61707_ip) {
+        _fun61751: for (var _fun61751_ip = 0;;) switch (_fun61751_ip) {
             case 0:
                 var2 = _closure1_slot2;
                 var1 = var2.useContext;
@@ -173,8 +173,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.bind(var2)(var0);
                 var1 = null;
                 if (!(var1 != var0)) {
-                    _fun61707_ip = 30;
-                    continue _fun61707
+                    _fun61751_ip = 30;
+                    continue _fun61751
                 }
             case 28:
                 return var0;
@@ -196,7 +196,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useRequiredAppLauncherContext = var3;
     var1 = function() { // Original name: useAppLauncherContext, environment: var1
-        _fun61708: for (var _fun61708_ip = 0;;) switch (_fun61708_ip) {
+        _fun61752: for (var _fun61752_ip = 0;;) switch (_fun61752_ip) {
             case 0:
                 var4 = _closure1_slot2;
                 var3 = var4.useRef;
@@ -277,8 +277,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var3)(var1);
                 var2 = null;
                 if (!(var2 != var1)) {
-                    _fun61708_ip = 269;
-                    continue _fun61708
+                    _fun61752_ip = 269;
+                    continue _fun61752
                 }
             case 266:
                 var0 = var1;
@@ -288,4 +288,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useAppLauncherContext = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3677, 7694, 7695, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3679, 7697, 7698, 2]);

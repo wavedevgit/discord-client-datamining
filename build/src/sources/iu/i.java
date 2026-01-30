@@ -11,36 +11,36 @@ import okio.Source;
 public abstract class i extends h {
 
     /* renamed from: e  reason: collision with root package name */
-    private final h f31265e;
+    private final h f31281e;
 
     public i(h delegate) {
         Intrinsics.checkNotNullParameter(delegate, "delegate");
-        this.f31265e = delegate;
+        this.f31281e = delegate;
     }
 
     @Override // iu.h
     public Sink b(c0 file, boolean z10) {
         Intrinsics.checkNotNullParameter(file, "file");
-        return this.f31265e.b(r(file, "appendingSink", "file"), z10);
+        return this.f31281e.b(r(file, "appendingSink", "file"), z10);
     }
 
     @Override // iu.h
     public void c(c0 source, c0 target) {
         Intrinsics.checkNotNullParameter(source, "source");
         Intrinsics.checkNotNullParameter(target, "target");
-        this.f31265e.c(r(source, "atomicMove", "source"), r(target, "atomicMove", "target"));
+        this.f31281e.c(r(source, "atomicMove", "source"), r(target, "atomicMove", "target"));
     }
 
     @Override // iu.h
     public void g(c0 dir, boolean z10) {
         Intrinsics.checkNotNullParameter(dir, "dir");
-        this.f31265e.g(r(dir, "createDirectory", "dir"), z10);
+        this.f31281e.g(r(dir, "createDirectory", "dir"), z10);
     }
 
     @Override // iu.h
     public void i(c0 path, boolean z10) {
         Intrinsics.checkNotNullParameter(path, "path");
-        this.f31265e.i(r(path, "delete", "path"), z10);
+        this.f31281e.i(r(path, "delete", "path"), z10);
     }
 
     @Override // iu.h
@@ -48,7 +48,7 @@ public abstract class i extends h {
         Intrinsics.checkNotNullParameter(dir, "dir");
         c0 r10 = r(dir, "list", "dir");
         ArrayList arrayList = new ArrayList();
-        for (c0 c0Var : this.f31265e.k(r10)) {
+        for (c0 c0Var : this.f31281e.k(r10)) {
             arrayList.add(s(c0Var, "list"));
         }
         CollectionsKt.z(arrayList);
@@ -58,7 +58,7 @@ public abstract class i extends h {
     @Override // iu.h
     public g m(c0 path) {
         Intrinsics.checkNotNullParameter(path, "path");
-        g m10 = this.f31265e.m(r(path, "metadataOrNull", "path"));
+        g m10 = this.f31281e.m(r(path, "metadataOrNull", "path"));
         if (m10 == null) {
             return null;
         }
@@ -71,19 +71,19 @@ public abstract class i extends h {
     @Override // iu.h
     public f n(c0 file) {
         Intrinsics.checkNotNullParameter(file, "file");
-        return this.f31265e.n(r(file, "openReadOnly", "file"));
+        return this.f31281e.n(r(file, "openReadOnly", "file"));
     }
 
     @Override // iu.h
     public Sink p(c0 file, boolean z10) {
         Intrinsics.checkNotNullParameter(file, "file");
-        return this.f31265e.p(r(file, "sink", "file"), z10);
+        return this.f31281e.p(r(file, "sink", "file"), z10);
     }
 
     @Override // iu.h
     public Source q(c0 file) {
         Intrinsics.checkNotNullParameter(file, "file");
-        return this.f31265e.q(r(file, "source", "file"));
+        return this.f31281e.q(r(file, "source", "file"));
     }
 
     public c0 r(c0 path, String functionName, String parameterName) {
@@ -100,6 +100,6 @@ public abstract class i extends h {
     }
 
     public String toString() {
-        return Reflection.getOrCreateKotlinClass(getClass()).getSimpleName() + '(' + this.f31265e + ')';
+        return Reflection.getOrCreateKotlinClass(getClass()).getSimpleName() + '(' + this.f31281e + ')';
     }
 }

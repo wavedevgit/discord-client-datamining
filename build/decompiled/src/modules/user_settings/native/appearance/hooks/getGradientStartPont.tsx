@@ -16,27 +16,27 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var0;
     var3 = function() { // Environment: var1
         var0 = function(arg0, arg1, arg2) { // Original name: getHorizontalOrVerticalStartPoint, environment: var0
-            _fun84478: for (var _fun84478_ip = 0;;) switch (_fun84478_ip) {
+            _fun84524: for (var _fun84524_ip = 0;;) switch (_fun84524_ip) {
                 case 0:
                     var4 = arg0;
                     var0 = arg1;
                     var2 = arg2;
                     var1 = 0;
                     if (!(var1 !== var4)) {
-                        _fun84478_ip = 99;
-                        continue _fun84478
+                        _fun84524_ip = 99;
+                        continue _fun84524
                     }
                 case 15:
                     var3 = 90;
                     if (!(var3 !== var4)) {
-                        _fun84478_ip = 73;
-                        continue _fun84478
+                        _fun84524_ip = 73;
+                        continue _fun84524
                     }
                 case 22:
                     var3 = 180;
                     if (!(var3 !== var4)) {
-                        _fun84478_ip = 52;
-                        continue _fun84478
+                        _fun84524_ip = 52;
+                        continue _fun84524
                     }
                 case 29:
                     var3 = 2;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot2 = var3;
     var3 = function() { // Environment: var1
         var0 = function(arg0, arg1, arg2) { // Original name: getStartCornerToIntersect, environment: var0
-            _fun84480: for (var _fun84480_ip = 0;;) switch (_fun84480_ip) {
+            _fun84526: for (var _fun84526_ip = 0;;) switch (_fun84526_ip) {
                 case 0:
                     var1 = arg0;
                     var0 = arg1;
@@ -95,36 +95,36 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var0 / var2;
                     var0 = 90;
                     if (!(!(var1 < var0))) {
-                        _fun84480_ip = 98;
-                        continue _fun84480
+                        _fun84526_ip = 98;
+                        continue _fun84526
                     }
                 case 27:
                     var0 = 180;
                     if (!(!(var1 < var0))) {
-                        _fun84480_ip = 78;
-                        continue _fun84480
+                        _fun84526_ip = 78;
+                        continue _fun84526
                     }
                 case 34:
                     var0 = 270;
                     if (!(!(var1 < var0))) {
-                        _fun84480_ip = 61;
-                        continue _fun84480
+                        _fun84526_ip = 61;
+                        continue _fun84526
                     }
                 case 44:
                     var0 = new Array(2);
                     var1 = -var3;
                     var0[0] = var1;
                     var0[1] = var2;
-                    _fun84480_ip = 76;
-                    continue _fun84480;
+                    _fun84526_ip = 76;
+                    continue _fun84526;
                 case 61:
                     var1 = new Array(2);
                     var1[0] = var3;
                     var1[1] = var2;
                     var0 = var1;
                 case 76:
-                    _fun84480_ip = 96;
-                    continue _fun84480;
+                    _fun84526_ip = 96;
+                    continue _fun84526;
                 case 78:
                     var1 = new Array(2);
                     var1[0] = var3;
@@ -132,8 +132,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1[1] = var4;
                     var0 = var1;
                 case 96:
-                    _fun84480_ip = 119;
-                    continue _fun84480;
+                    _fun84526_ip = 119;
+                    continue _fun84526;
                 case 98:
                     var1 = new Array(2);
                     var3 = -var3;
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'function getGradientStartPoint_getGradientStartPontTsx3(angle,width,height){const{getHorizontalOrVerticalStartPoint,getStartCornerToIntersect}=this.__closure;angle=angle%360;if(angle<0){angle+=360;}if(angle%90===0){return getHorizontalOrVerticalStartPoint(angle,width,height);}const slope=Math.tan(angle*Math.PI/180);const perpendicularSlope=-1/slope;const startCorner=getStartCornerToIntersect(angle,width,height);const b=startCorner[1]-perpendicularSlope*startCorner[0];const startX=b/(slope-perpendicularSlope);const startY=slope*startX;return[startX,startY];}';
     var3.code = var4;
     var1 = function(arg0, arg1, arg2) { // Original name: t, environment: var1
-        _fun84481: for (var _fun84481_ip = 0;;) switch (_fun84481_ip) {
+        _fun84527: for (var _fun84527_ip = 0;;) switch (_fun84527_ip) {
             case 0:
                 var4 = arg1;
                 var3 = arg2;
@@ -169,8 +169,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = 0;
                 var2 = var0;
                 if (!(var2 < var7)) {
-                    _fun84481_ip = 32;
-                    continue _fun84481
+                    _fun84527_ip = 32;
+                    continue _fun84527
                 }
             case 28:
                 var2 = var0 + var1;
@@ -178,8 +178,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = 90;
                 var0 = var2 % var0;
                 if (!(var0 !== var7)) {
-                    _fun84481_ip = 156;
-                    continue _fun84481
+                    _fun84527_ip = 156;
+                    continue _fun84527
                 }
             case 43:
                 var0 = global;

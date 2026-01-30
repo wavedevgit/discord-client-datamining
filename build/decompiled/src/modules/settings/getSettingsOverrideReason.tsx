@@ -7,21 +7,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var3 = function(arg0) { // Original name: getSettingsOverrideReason, environment: var1
-        _fun84708: for (var _fun84708_ip = 0;;) switch (_fun84708_ip) {
+        _fun84754: for (var _fun84754_ip = 0;;) switch (_fun84754_ip) {
             case 0:
                 var2 = arg0;
                 var1 = _closure1_slot3;
                 var1 = var1.REDUCED_MOTION;
                 if (!(var1 !== var2)) {
-                    _fun84708_ip = 99;
-                    continue _fun84708
+                    _fun84754_ip = 99;
+                    continue _fun84754
                 }
             case 20:
                 var1 = _closure1_slot3;
                 var1 = var1.REDUCED_MOTION_STICKERS;
                 if (!(var1 !== var2)) {
-                    _fun84708_ip = 38;
-                    continue _fun84708
+                    _fun84754_ip = 38;
+                    continue _fun84754
                 }
             case 34:
                 var1 = undefined;

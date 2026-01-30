@@ -95,7 +95,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'getState';
         var0.key = var5;
         var5 = function(arg0) { // Original name: value, environment: var4
-            _fun105012: for (var _fun105012_ip = 0;;) switch (_fun105012_ip) {
+            _fun105274: for (var _fun105274_ip = 0;;) switch (_fun105274_ip) {
                 case 0:
                     var0 = this;
                     var1 = global;
@@ -109,8 +109,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = null;
                     var1 = var1 === var3;
                     if (var1) {
-                        _fun105012_ip = 69;
-                        continue _fun105012
+                        _fun105274_ip = 69;
+                        continue _fun105274
                     }
                 case 49:
                     var3 = var0._state;
@@ -119,8 +119,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var3 < var2;
                 case 69:
                     if (!var1) {
-                        _fun105012_ip = 96;
-                        continue _fun105012
+                        _fun105274_ip = 96;
+                        continue _fun105274
                     }
                 case 72:
                     var1 = {};
@@ -140,14 +140,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'progressState';
         var0.key = var5;
         var5 = function(arg0) { // Original name: value, environment: var4
-            _fun105013: for (var _fun105013_ip = 0;;) switch (_fun105013_ip) {
+            _fun105275: for (var _fun105275_ip = 0;;) switch (_fun105275_ip) {
                 case 0:
                     var2 = arg0;
                     var1 = null;
                     var0 = var1 == var2;
                     if (var0) {
-                        _fun105013_ip = 44;
-                        continue _fun105013
+                        _fun105275_ip = 44;
+                        continue _fun105275
                     }
                 case 12:
                     var0 = {};
@@ -171,7 +171,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'handlePress';
         var0.key = var5;
         var4 = function(arg0) { // Original name: value, environment: var4
-            _fun105014: for (var _fun105014_ip = 0;;) switch (_fun105014_ip) {
+            _fun105276: for (var _fun105276_ip = 0;;) switch (_fun105276_ip) {
                 case 0:
                     var0 = arg0;
                     var3 = this;
@@ -184,8 +184,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = undefined;
                     var4 = undefined;
                     if (var5) {
-                        _fun105014_ip = 52;
-                        continue _fun105014
+                        _fun105276_ip = 52;
+                        continue _fun105276
                     }
                 case 42:
                     var5 = var6.call;
@@ -194,8 +194,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var1 != var4;
                     var1 = undefined;
                     if (!var5) {
-                        _fun105014_ip = 64;
-                        continue _fun105014
+                        _fun105276_ip = 64;
+                        continue _fun105276
                     }
                 case 61:
                     var1 = var4;
@@ -226,20 +226,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = _closure1_slot3;
         var3 = undefined;
         var0 = function() { // Environment: var1
-            _fun105016: for (var _fun105016_ip = 0;;) switch (_fun105016_ip) {
+            _fun105278: for (var _fun105278_ip = 0;;) switch (_fun105278_ip) {
                 case 0:
                     var2 = _closure1_slot7;
                     var0 = _closure2_slot0;
                     var3 = 'function';
                     var0 = typeof var0;
                     if (!(var3 !== var0)) {
-                        _fun105016_ip = 31;
-                        continue _fun105016
+                        _fun105278_ip = 31;
+                        continue _fun105278
                     }
                 case 25:
                     var0 = _closure2_slot0;
-                    _fun105016_ip = 41;
-                    continue _fun105016;
+                    _fun105278_ip = 41;
+                    continue _fun105278;
                 case 31:
                     var3 = _closure2_slot0;
                     var1 = undefined;
@@ -267,7 +267,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var _closure2_slot1 = var0;
         var2 = _closure1_slot4;
         var1 = function() { // Environment: var1
-            _fun105017: for (var _fun105017_ip = 0;;) switch (_fun105017_ip) {
+            _fun105279: for (var _fun105279_ip = 0;;) switch (_fun105279_ip) {
                 case 0:
                     var2 = _closure2_slot1;
                     var1 = var2.setTapSequenceHandlers;
@@ -275,13 +275,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = 'function';
                     var0 = typeof var0;
                     if (!(var4 !== var0)) {
-                        _fun105017_ip = 36;
-                        continue _fun105017
+                        _fun105279_ip = 36;
+                        continue _fun105279
                     }
                 case 30:
                     var0 = _closure2_slot0;
-                    _fun105017_ip = 46;
-                    continue _fun105017;
+                    _fun105279_ip = 46;
+                    continue _fun105279;
                 case 36:
                     var4 = _closure2_slot0;
                     var3 = undefined;

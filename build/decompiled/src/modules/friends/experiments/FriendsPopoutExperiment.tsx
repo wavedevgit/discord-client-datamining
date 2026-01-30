@@ -79,13 +79,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useFriendsPopoutExperiment = var3;
     var1 = function(arg0) { // Original name: getFriendsPopoutEnabled, environment: var1
-        _fun95723: for (var _fun95723_ip = 0;;) switch (_fun95723_ip) {
+        _fun95971: for (var _fun95971_ip = 0;;) switch (_fun95971_ip) {
             case 0:
                 var4 = arguments[1];
                 var0 = undefined;
                 if (!(var4 === var0)) {
-                    _fun95723_ip = 11;
-                    continue _fun95723
+                    _fun95971_ip = 11;
+                    continue _fun95971
                 }
             case 9:
                 var4 = false;

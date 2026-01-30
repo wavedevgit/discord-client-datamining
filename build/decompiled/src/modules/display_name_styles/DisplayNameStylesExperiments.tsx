@@ -72,7 +72,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsDisplayNameStylesMobileEnabled = var3;
     var1 = function(arg0) { // Original name: isDisplayNameStylesMobileChatEnabled, environment: var1
-        _fun36462: for (var _fun36462_ip = 0;;) switch (_fun36462_ip) {
+        _fun36513: for (var _fun36513_ip = 0;;) switch (_fun36513_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.location;
@@ -83,8 +83,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.bind(var3)(var0);
                 var0 = var2.enabled;
                 if (!var0) {
-                    _fun36462_ip = 60;
-                    continue _fun36462
+                    _fun36513_ip = 60;
+                    continue _fun36513
                 }
             case 40:
                 var2 = var2.surfaces;

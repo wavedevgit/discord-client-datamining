@@ -58,7 +58,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0.gestureState = var3;
         var0.maxX = var2;
         var2 = function(arg0) { // Original name: setPanelX, environment: var1
-            _fun101073: for (var _fun101073_ip = 0;;) switch (_fun101073_ip) {
+            _fun101327: for (var _fun101327_ip = 0;;) switch (_fun101327_ip) {
                 case 0:
                     var1 = _closure2_slot1;
                     var0 = undefined;
@@ -69,15 +69,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = 'open';
                     var1 = arg0;
                     if (!(var5 !== var1)) {
-                        _fun101073_ip = 56;
-                        continue _fun101073
+                        _fun101327_ip = 56;
+                        continue _fun101327
                     }
                 case 42:
                     var5 = var4.set;
                     var1 = 0;
                     var1 = var5.bind(var4)(var1);
-                    _fun101073_ip = 66;
-                    continue _fun101073;
+                    _fun101327_ip = 66;
+                    continue _fun101327;
                 case 56:
                     var1 = var4.set;
                     var1 = var1.bind(var4)(var2);
@@ -128,4 +128,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 797, 3677, 3035, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 797, 3679, 3035, 2]);

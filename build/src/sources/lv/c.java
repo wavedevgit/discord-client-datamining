@@ -6,28 +6,28 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c extends k {
 
     /* renamed from: e  reason: collision with root package name */
-    private final j f37731e;
+    private final j f37747e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f37732i;
+    private final int f37748i;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public c(j replaceData, int i10) {
         super(null);
         Intrinsics.checkNotNullParameter(replaceData, "replaceData");
-        this.f37731e = replaceData;
-        this.f37732i = i10;
+        this.f37747e = replaceData;
+        this.f37748i = i10;
     }
 
     public j a() {
-        return this.f37731e;
+        return this.f37747e;
     }
 
     @Override // kotlin.jvm.functions.Function0
     /* renamed from: b */
     public String invoke() {
         String b10;
-        b10 = l.b(a().c(), a().b(), a().a(), this.f37732i);
+        b10 = l.b(a().c(), a().b(), a().a(), this.f37748i);
         return b10;
     }
 }

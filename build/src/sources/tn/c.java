@@ -14,7 +14,7 @@ import kotlinx.coroutines.flow.Flow;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Lazy f49768a = l.b(new Function0() { // from class: tn.b
+    private static final Lazy f49784a = l.b(new Function0() { // from class: tn.b
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             BroadcastReceiver e10;
@@ -34,7 +34,7 @@ public abstract class c {
     }
 
     private static final BroadcastReceiver c() {
-        return (BroadcastReceiver) f49768a.getValue();
+        return (BroadcastReceiver) f49784a.getValue();
     }
 
     public static final void d(Context context) {
@@ -45,7 +45,7 @@ public abstract class c {
             return;
         }
         IntentFilter intentFilter = new IntentFilter();
-        for (String str : a.f49766a.a()) {
+        for (String str : a.f49782a.a()) {
             intentFilter.addAction(str);
         }
         if (Build.VERSION.SDK_INT >= 33) {

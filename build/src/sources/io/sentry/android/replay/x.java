@@ -7,7 +7,7 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class x {
     public static final Window a(View view) {
         Intrinsics.checkNotNullParameter(view, "<this>");
-        w wVar = w.f29736a;
+        w wVar = w.f29752a;
         View rootView = view.getRootView();
         Intrinsics.checkNotNullExpressionValue(rootView, "getRootView(...)");
         return wVar.d(rootView);

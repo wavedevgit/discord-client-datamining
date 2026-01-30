@@ -10,22 +10,22 @@ import pe.d;
 final class m extends GestureDetector.SimpleOnGestureListener implements View.OnTouchListener, d.a {
 
     /* renamed from: i  reason: collision with root package name */
-    private final a f45108i;
+    private final a f45124i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final float f45109o;
+    private final float f45125o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final GestureDetector f45110p;
+    private final GestureDetector f45126p;
 
     /* renamed from: d  reason: collision with root package name */
-    private final PointF f45106d = new PointF();
+    private final PointF f45122d = new PointF();
 
     /* renamed from: e  reason: collision with root package name */
-    private final PointF f45107e = new PointF();
+    private final PointF f45123e = new PointF();
 
     /* renamed from: q  reason: collision with root package name */
-    private volatile float f45111q = 3.1415927f;
+    private volatile float f45127q = 3.1415927f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface a {
@@ -35,48 +35,48 @@ final class m extends GestureDetector.SimpleOnGestureListener implements View.On
     }
 
     public m(Context context, a aVar, float f10) {
-        this.f45108i = aVar;
-        this.f45109o = f10;
-        this.f45110p = new GestureDetector(context, this);
+        this.f45124i = aVar;
+        this.f45125o = f10;
+        this.f45126p = new GestureDetector(context, this);
     }
 
     @Override // pe.d.a
     public void a(float[] fArr, float f10) {
-        this.f45111q = -f10;
+        this.f45127q = -f10;
     }
 
     @Override // android.view.GestureDetector.SimpleOnGestureListener, android.view.GestureDetector.OnGestureListener
     public boolean onDown(MotionEvent motionEvent) {
-        this.f45106d.set(motionEvent.getX(), motionEvent.getY());
+        this.f45122d.set(motionEvent.getX(), motionEvent.getY());
         return true;
     }
 
     @Override // android.view.GestureDetector.SimpleOnGestureListener, android.view.GestureDetector.OnGestureListener
     public boolean onScroll(MotionEvent motionEvent, MotionEvent motionEvent2, float f10, float f11) {
-        float x10 = (motionEvent2.getX() - this.f45106d.x) / this.f45109o;
+        float x10 = (motionEvent2.getX() - this.f45122d.x) / this.f45125o;
         float y10 = motionEvent2.getY();
-        PointF pointF = this.f45106d;
-        float f12 = (y10 - pointF.y) / this.f45109o;
+        PointF pointF = this.f45122d;
+        float f12 = (y10 - pointF.y) / this.f45125o;
         pointF.set(motionEvent2.getX(), motionEvent2.getY());
-        double d10 = this.f45111q;
+        double d10 = this.f45127q;
         float cos = (float) Math.cos(d10);
         float sin = (float) Math.sin(d10);
-        PointF pointF2 = this.f45107e;
+        PointF pointF2 = this.f45123e;
         pointF2.x -= (cos * x10) - (sin * f12);
         float f13 = pointF2.y + (sin * x10) + (cos * f12);
         pointF2.y = f13;
         pointF2.y = Math.max(-45.0f, Math.min(45.0f, f13));
-        this.f45108i.b(this.f45107e);
+        this.f45124i.b(this.f45123e);
         return true;
     }
 
     @Override // android.view.GestureDetector.SimpleOnGestureListener, android.view.GestureDetector.OnGestureListener
     public boolean onSingleTapUp(MotionEvent motionEvent) {
-        return this.f45108i.onSingleTapUp(motionEvent);
+        return this.f45124i.onSingleTapUp(motionEvent);
     }
 
     @Override // android.view.View.OnTouchListener
     public boolean onTouch(View view, MotionEvent motionEvent) {
-        return this.f45110p.onTouchEvent(motionEvent);
+        return this.f45126p.onTouchEvent(motionEvent);
     }
 }

@@ -155,7 +155,7 @@ public final class d {
             if (i10 != -1) {
                 j10 = Math.max(j10, TimeUnit.SECONDS.toMillis(i10));
             }
-            return j10 + (this.f24385i - this.f24384h) + (w.f33047a.a() - this.f24385i);
+            return j10 + (this.f24385i - this.f24384h) + (w.f33063a.a() - this.f24385i);
         }
 
         private final long c() {

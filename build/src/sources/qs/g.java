@@ -9,14 +9,14 @@ import qs.c;
 public abstract class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final long f47642a = LocalDate.MIN.toEpochDay();
+    private static final long f47658a = LocalDate.MIN.toEpochDay();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final long f47643b = LocalDate.MAX.toEpochDay();
+    private static final long f47659b = LocalDate.MAX.toEpochDay();
 
     private static final LocalDate a(long j10) {
-        long j11 = f47642a;
-        if (j10 <= f47643b && j11 <= j10) {
+        long j11 = f47658a;
+        if (j10 <= f47659b && j11 <= j10) {
             LocalDate ofEpochDay = LocalDate.ofEpochDay(j10);
             Intrinsics.checkNotNullExpressionValue(ofEpochDay, "ofEpochDay(...)");
             return ofEpochDay;

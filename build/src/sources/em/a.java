@@ -50,7 +50,7 @@ public final class a extends Event {
         createMap2.putDouble("height", this.f22921a.c());
         createMap2.putDouble("absoluteX", this.f22921a.a());
         createMap2.putDouble("absoluteY", this.f22921a.b());
-        Unit unit = Unit.f33282a;
+        Unit unit = Unit.f33298a;
         createMap.putMap("layout", createMap2);
         return createMap;
     }

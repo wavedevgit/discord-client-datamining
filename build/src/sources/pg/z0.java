@@ -6,22 +6,22 @@ import java.util.Map;
 abstract class z0 extends m1 {
 
     /* renamed from: d  reason: collision with root package name */
-    final Map f45951d;
+    final Map f45967d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public z0(Map map) {
         map.getClass();
-        this.f45951d = map;
+        this.f45967d = map;
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final boolean contains(Object obj) {
-        return this.f45951d.containsKey(obj);
+        return this.f45967d.containsKey(obj);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final boolean isEmpty() {
-        return this.f45951d.isEmpty();
+        return this.f45967d.isEmpty();
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
@@ -29,6 +29,6 @@ abstract class z0 extends m1 {
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final int size() {
-        return this.f45951d.size();
+        return this.f45967d.size();
     }
 }

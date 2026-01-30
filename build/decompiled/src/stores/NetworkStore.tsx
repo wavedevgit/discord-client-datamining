@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
-        _fun31947: for (var _fun31947_ip = 0;;) switch (_fun31947_ip) {
+        _fun31952: for (var _fun31952_ip = 0;;) switch (_fun31952_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun31947_ip = 74;
-                continue _fun31947;
+                _fun31952_ip = 74;
+                continue _fun31952;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -48,28 +48,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot13 = var0;
     var0 = function(arg0) { // Original name: handleConnectionInfoChange, environment: var3
-        _fun31950: for (var _fun31950_ip = 0;;) switch (_fun31950_ip) {
+        _fun31955: for (var _fun31955_ip = 0;;) switch (_fun31955_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.type;
                 var3 = null;
                 if (!(var3 == var0)) {
-                    _fun31950_ip = 29;
-                    continue _fun31950
+                    _fun31955_ip = 29;
+                    continue _fun31955
                 }
             case 14:
                 var0 = _closure1_slot7;
                 var2 = var0.UNKNOWN;
-                _fun31950_ip = 34;
-                continue _fun31950;
+                _fun31955_ip = 34;
+                continue _fun31955;
             case 29:
                 var2 = var1.type;
             case 34:
                 _closure1_slot9 = var2;
                 var2 = var1.effectiveSpeed;
                 if (!(var3 == var2)) {
-                    _fun31950_ip = 61;
-                    continue _fun31950
+                    _fun31955_ip = 61;
+                    continue _fun31955
                 }
             case 51:
                 var3 = _closure1_slot8;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
         var3 = function() { // Original name: NetworkStoreClass, environment: var5
-            _fun31952: for (var _fun31952_ip = 0;;) switch (_fun31952_ip) {
+            _fun31957: for (var _fun31957_ip = 0;;) switch (_fun31957_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -148,16 +148,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot13;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun31952_ip = 69;
-                        continue _fun31952
+                        _fun31957_ip = 69;
+                        continue _fun31957
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun31952_ip = 105;
-                    continue _fun31952;
+                    _fun31957_ip = 105;
+                    continue _fun31957;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;

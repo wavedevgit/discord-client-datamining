@@ -147,7 +147,7 @@ public final class TelemetryRingSqliteStore {
             db2.beginTransaction();
             try {
                 TelemetryRingSqliteStore.Companion.createSchema(db2, this.capacity);
-                Unit unit = Unit.f33282a;
+                Unit unit = Unit.f33298a;
                 db2.setTransactionSuccessful();
             } finally {
                 db2.endTransaction();
@@ -585,7 +585,7 @@ public final class TelemetryRingSqliteStore {
             if (query.getInt(0) != this.capacity) {
                 resetSchema(sQLiteDatabase);
             }
-            Unit unit = Unit.f33282a;
+            Unit unit = Unit.f33298a;
             tr.c.a(query, null);
         } finally {
         }
@@ -648,7 +648,7 @@ public final class TelemetryRingSqliteStore {
             } finally {
             }
         }
-        Unit unit = Unit.f33282a;
+        Unit unit = Unit.f33298a;
         tr.c.a(query, null);
     }
 
@@ -665,7 +665,7 @@ public final class TelemetryRingSqliteStore {
             this.totalBytes = readMeta.getTotalBytes();
             this.nextSeq = readMeta.getNextSeq();
             loadSlots(writableDatabase);
-            Unit unit = Unit.f33282a;
+            Unit unit = Unit.f33298a;
             writableDatabase.setTransactionSuccessful();
         } finally {
             writableDatabase.endTransaction();
@@ -730,13 +730,13 @@ public final class TelemetryRingSqliteStore {
         if (!entries.isEmpty()) {
             SQLiteDatabase writableDatabase = this.dbHelper.getWritableDatabase();
             try {
-                Result.a aVar = Result.f33279e;
+                Result.a aVar = Result.f33295e;
                 Intrinsics.checkNotNull(writableDatabase);
                 writableDatabase.beginTransaction();
                 compileStatement = writableDatabase.compileStatement("UPDATE telemetry_ring_slots SET seq=?, channel_mask=?, payload_json=?, payload_size=? WHERE slot_id=?");
                 compileStatement2 = writableDatabase.compileStatement("UPDATE telemetry_ring_slots SET seq=0, channel_mask=0, payload_json=NULL, payload_size=0 WHERE slot_id=?");
             } catch (Throwable th2) {
-                Result.a aVar2 = Result.f33279e;
+                Result.a aVar2 = Result.f33295e;
                 b10 = Result.b(kotlin.c.a(th2));
             }
             try {
@@ -745,13 +745,13 @@ public final class TelemetryRingSqliteStore {
                     Intrinsics.checkNotNull(compileStatement2);
                     appendEntry(compileStatement, compileStatement2, entryPayload);
                 }
-                Unit unit = Unit.f33282a;
+                Unit unit = Unit.f33298a;
                 tr.c.a(compileStatement2, null);
                 tr.c.a(compileStatement, null);
                 updateMeta(writableDatabase);
                 writableDatabase.setTransactionSuccessful();
                 writableDatabase.endTransaction();
-                b10 = Result.b(Unit.f33282a);
+                b10 = Result.b(Unit.f33298a);
                 Throwable e10 = Result.e(b10);
                 if (e10 == null) {
                     return;
@@ -759,9 +759,9 @@ public final class TelemetryRingSqliteStore {
                 Log.INSTANCE.w(TAG, "TelemetryRing append rolled back; reloading in-memory state", e10);
                 try {
                     loadState();
-                    b11 = Result.b(Unit.f33282a);
+                    b11 = Result.b(Unit.f33298a);
                 } catch (Throwable th3) {
-                    Result.a aVar3 = Result.f33279e;
+                    Result.a aVar3 = Result.f33295e;
                     b11 = Result.b(kotlin.c.a(th3));
                 }
                 Throwable e11 = Result.e(b11);
@@ -785,7 +785,7 @@ public final class TelemetryRingSqliteStore {
         Object b11;
         SQLiteDatabase writableDatabase = this.dbHelper.getWritableDatabase();
         try {
-            Result.a aVar = Result.f33279e;
+            Result.a aVar = Result.f33295e;
             Intrinsics.checkNotNull(writableDatabase);
             writableDatabase.beginTransaction();
             writableDatabase.execSQL("UPDATE telemetry_ring_slots SET seq=0, channel_mask=0, payload_json=NULL, payload_size=0");
@@ -797,12 +797,12 @@ public final class TelemetryRingSqliteStore {
             kotlin.collections.i.y(this.slotSeq, 0L, 0, 0, 6, null);
             kotlin.collections.i.x(this.slotSize, 0, 0, 0, 6, null);
             updateMeta(writableDatabase);
-            Unit unit = Unit.f33282a;
+            Unit unit = Unit.f33298a;
             writableDatabase.setTransactionSuccessful();
             writableDatabase.endTransaction();
-            b10 = Result.b(Unit.f33282a);
+            b10 = Result.b(Unit.f33298a);
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f33279e;
+            Result.a aVar2 = Result.f33295e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         Throwable e10 = Result.e(b10);
@@ -810,9 +810,9 @@ public final class TelemetryRingSqliteStore {
             Log.INSTANCE.w(TAG, "TelemetryRing clear failed; reloading in-memory state", e10);
             try {
                 loadState();
-                b11 = Result.b(Unit.f33282a);
+                b11 = Result.b(Unit.f33298a);
             } catch (Throwable th3) {
-                Result.a aVar3 = Result.f33279e;
+                Result.a aVar3 = Result.f33295e;
                 b11 = Result.b(kotlin.c.a(th3));
             }
             Throwable e11 = Result.e(b11);
@@ -907,7 +907,7 @@ public final class TelemetryRingSqliteStore {
             arrayList = arrayList2;
             j12 = j16;
             j13 = j15;
-            Unit unit = Unit.f33282a;
+            Unit unit = Unit.f33298a;
             tr.c.a(query, null);
             if (arrayList.isEmpty()) {
                 List l11 = CollectionsKt.l();

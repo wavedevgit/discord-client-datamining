@@ -66,7 +66,7 @@ public final class ContactSyncSerializerKt {
                     return serializeHasContactPermissionsResult$lambda$0;
                 }
             }, null, 4, null));
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
@@ -90,7 +90,7 @@ public final class ContactSyncSerializerKt {
         Intrinsics.checkNotNullParameter(callback, "callback");
         try {
             Map<String, ContactSyncBlobEntry> contactsMap = ContactSyncProvider.INSTANCE.getContactsMap(reactContext);
-            Json.a aVar = Json.f36394d;
+            Json.a aVar = Json.f36410d;
             aVar.a();
             String c10 = aVar.c(new u0(n2.f6848a, ContactSyncBlobEntry.Companion.serializer()), contactsMap);
             Collection<ContactSyncBlobEntry> values = contactsMap.values();

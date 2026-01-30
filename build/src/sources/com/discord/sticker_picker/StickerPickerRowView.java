@@ -187,13 +187,13 @@ public final class StickerPickerRowView extends LinearLayout {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onLongPressSticker$lambda$1(String it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onPressSticker$lambda$0(String it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     public final void clean() {

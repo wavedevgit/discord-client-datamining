@@ -17,21 +17,21 @@ import org.jetbrains.annotations.NotNull;
 public final class JavaDescriptorResolver {
 
     /* renamed from: a  reason: collision with root package name */
-    private final LazyJavaPackageFragmentProvider f35451a;
+    private final LazyJavaPackageFragmentProvider f35467a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final JavaResolverCache f35452b;
+    private final JavaResolverCache f35468b;
 
     public JavaDescriptorResolver(@NotNull LazyJavaPackageFragmentProvider packageFragmentProvider, @NotNull JavaResolverCache javaResolverCache) {
         Intrinsics.checkNotNullParameter(packageFragmentProvider, "packageFragmentProvider");
         Intrinsics.checkNotNullParameter(javaResolverCache, "javaResolverCache");
-        this.f35451a = packageFragmentProvider;
-        this.f35452b = javaResolverCache;
+        this.f35467a = packageFragmentProvider;
+        this.f35468b = javaResolverCache;
     }
 
     @NotNull
     public final LazyJavaPackageFragmentProvider getPackageFragmentProvider() {
-        return this.f35451a;
+        return this.f35467a;
     }
 
     public final ClassDescriptor resolveClass(@NotNull JavaClass javaClass) {
@@ -41,7 +41,7 @@ public final class JavaDescriptorResolver {
         Intrinsics.checkNotNullParameter(javaClass, "javaClass");
         FqName fqName = javaClass.getFqName();
         if (fqName != null && javaClass.getLightClassOriginKind() == LightClassOriginKind.SOURCE) {
-            return this.f35452b.getClassResolvedFromSource(fqName);
+            return this.f35468b.getClassResolvedFromSource(fqName);
         }
         JavaClass outerClass = javaClass.getOuterClass();
         if (outerClass != null) {
@@ -60,7 +60,7 @@ public final class JavaDescriptorResolver {
                 return null;
             }
             return (ClassDescriptor) classifierDescriptor;
-        } else if (fqName == null || (lazyJavaPackageFragment = (LazyJavaPackageFragment) CollectionsKt.firstOrNull(this.f35451a.getPackageFragments(fqName.parent()))) == null) {
+        } else if (fqName == null || (lazyJavaPackageFragment = (LazyJavaPackageFragment) CollectionsKt.firstOrNull(this.f35467a.getPackageFragments(fqName.parent()))) == null) {
             return null;
         } else {
             return lazyJavaPackageFragment.findClassifierByJavaClass$descriptors_jvm(javaClass);

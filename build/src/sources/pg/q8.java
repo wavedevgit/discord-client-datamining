@@ -5,7 +5,7 @@ import ui.c;
 final class q8 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final q8 f45659a = new q8();
+    static final q8 f45675a = new q8();
 
     static {
         c.b a10 = ui.c.a("totalStrokeCount");

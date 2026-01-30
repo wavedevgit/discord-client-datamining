@@ -17,10 +17,10 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = false;
     var _closure1_slot2 = var2;
     var0 = function() { // Original name: registerSpanErrorInstrumentation, environment: var0
-        _fun8709: for (var _fun8709_ip = 0;;) switch (_fun8709_ip) {
+        _fun8710: for (var _fun8710_ip = 0;;) switch (_fun8710_ip) {
             case 0:
                 var2 = function() { // Original name: errorCallback, environment: var0
-                    _fun8710: for (var _fun8710_ip = 0;;) switch (_fun8710_ip) {
+                    _fun8711: for (var _fun8711_ip = 0;;) switch (_fun8711_ip) {
                         case 0:
                             var2 = _closure1_slot0;
                             var0 = _closure1_slot1;
@@ -32,8 +32,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var5 = var1.bind(var2)();
                             var3 = var5;
                             if (!var3) {
-                                _fun8710_ip = 68;
-                                continue _fun8710
+                                _fun8711_ip = 68;
+                                continue _fun8711
                             }
                         case 40:
                             var2 = _closure1_slot0;
@@ -44,8 +44,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var3 = var1.bind(var2)(var5);
                         case 68:
                             if (!var3) {
-                                _fun8710_ip = 229;
-                                continue _fun8710
+                                _fun8711_ip = 229;
+                                continue _fun8711
                             }
                         case 74:
                             var2 = _closure1_slot0;
@@ -55,8 +55,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var1 = var2.bind(var0)(var1);
                             var1 = var1.DEBUG_BUILD;
                             if (!var1) {
-                                _fun8710_ip = 176;
-                                continue _fun8710
+                                _fun8711_ip = 176;
+                                continue _fun8711
                             }
                         case 103:
                             var2 = _closure1_slot0;
@@ -93,8 +93,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 };
                 var1 = _closure1_slot2;
                 if (var1) {
-                    _fun8709_ip = 91;
-                    continue _fun8709
+                    _fun8710_ip = 91;
+                    continue _fun8710
                 }
             case 17:
                 var1 = 'sentry_tracingErrorCallback';

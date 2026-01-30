@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
-        _fun37012: for (var _fun37012_ip = 0;;) switch (_fun37012_ip) {
+        _fun37063: for (var _fun37063_ip = 0;;) switch (_fun37063_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun37012_ip = 74;
-                continue _fun37012;
+                _fun37063_ip = 74;
+                continue _fun37063;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -96,7 +96,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.DeviceSettingsStore;
     var1 = function(arg0) { // Environment: var1
         var3 = function() { // Original name: NativePermissionStore, environment: var5
-            _fun37016: for (var _fun37016_ip = 0;;) switch (_fun37016_ip) {
+            _fun37067: for (var _fun37067_ip = 0;;) switch (_fun37067_ip) {
                 case 0:
                     var4 = this;
                     var0 = _closure1_slot2;
@@ -126,14 +126,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot10;
                     var0 = var0.bind(var3)();
                     if (var0) {
-                        _fun37016_ip = 108;
-                        continue _fun37016
+                        _fun37067_ip = 108;
+                        continue _fun37067
                     }
                 case 95:
                     var0 = var8.apply;
                     var0 = var0.bind(var8)(var4, var9);
-                    _fun37016_ip = 142;
-                    continue _fun37016;
+                    _fun37067_ip = 142;
+                    continue _fun37067;
                 case 108:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -158,13 +158,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = 'initialize';
         var4.key = var0;
         var0 = function(arg0) { // Original name: value, environment: var5
-            _fun37018: for (var _fun37018_ip = 0;;) switch (_fun37018_ip) {
+            _fun37069: for (var _fun37069_ip = 0;;) switch (_fun37069_ip) {
                 case 0:
                     var1 = arg0;
                     var0 = null;
                     if (!(var0 == var1)) {
-                        _fun37018_ip = 16;
-                        continue _fun37018
+                        _fun37069_ip = 16;
+                        continue _fun37069
                     }
                 case 9:
                     var1 = _closure1_slot9;
@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'hasPermission';
         var4.key = var6;
         var6 = function(arg0) { // Original name: value, environment: var5
-            _fun37020: for (var _fun37020_ip = 0;;) switch (_fun37020_ip) {
+            _fun37071: for (var _fun37071_ip = 0;;) switch (_fun37071_ip) {
                 case 0:
                     var0 = _closure1_slot9;
                     var2 = var0.permissionStates;
@@ -199,8 +199,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = null;
                     var0 = var0 != var2;
                     if (!var0) {
-                        _fun37020_ip = 43;
-                        continue _fun37020
+                        _fun37071_ip = 43;
+                        continue _fun37071
                     }
                 case 29:
                     var1 = _closure1_slot7;
@@ -216,7 +216,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'handleSetNativePermission';
         var4.key = var6;
         var5 = function(arg0) { // Original name: value, environment: var5
-            _fun37021: for (var _fun37021_ip = 0;;) switch (_fun37021_ip) {
+            _fun37072: for (var _fun37072_ip = 0;;) switch (_fun37072_ip) {
                 case 0:
                     var0 = arg0;
                     var6 = var0.state;
@@ -226,8 +226,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var0[var7];
                     var0[var7] = var6;
                     if (!(var4 !== var6)) {
-                        _fun37021_ip = 115;
-                        continue _fun37021
+                        _fun37072_ip = 115;
+                        continue _fun37072
                     }
                 case 39:
                     var2 = _closure1_slot0;
@@ -244,8 +244,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0.action = var6;
                     var6 = null;
                     if (!(var6 == var4)) {
-                        _fun37021_ip = 102;
-                        continue _fun37021
+                        _fun37072_ip = 102;
+                        continue _fun37072
                     }
                 case 92:
                     var5 = _closure1_slot7;
@@ -276,4 +276,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 3967, 660, 806, 795, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 3973, 660, 806, 795, 566, 2]);

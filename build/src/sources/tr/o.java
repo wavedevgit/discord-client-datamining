@@ -11,16 +11,16 @@ import kotlin.sequences.Sequence;
 public final class o implements Sequence {
 
     /* renamed from: a  reason: collision with root package name */
-    private final BufferedReader f49851a;
+    private final BufferedReader f49867a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Iterator, KMappedMarker {
 
         /* renamed from: d  reason: collision with root package name */
-        private String f49852d;
+        private String f49868d;
 
         /* renamed from: e  reason: collision with root package name */
-        private boolean f49853e;
+        private boolean f49869e;
 
         a() {
         }
@@ -29,8 +29,8 @@ public final class o implements Sequence {
         /* renamed from: a */
         public String next() {
             if (hasNext()) {
-                String str = this.f49852d;
-                this.f49852d = null;
+                String str = this.f49868d;
+                this.f49868d = null;
                 Intrinsics.checkNotNull(str);
                 return str;
             }
@@ -39,14 +39,14 @@ public final class o implements Sequence {
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            if (this.f49852d == null && !this.f49853e) {
-                String readLine = o.this.f49851a.readLine();
-                this.f49852d = readLine;
+            if (this.f49868d == null && !this.f49869e) {
+                String readLine = o.this.f49867a.readLine();
+                this.f49868d = readLine;
                 if (readLine == null) {
-                    this.f49853e = true;
+                    this.f49869e = true;
                 }
             }
-            if (this.f49852d != null) {
+            if (this.f49868d != null) {
                 return true;
             }
             return false;
@@ -60,7 +60,7 @@ public final class o implements Sequence {
 
     public o(BufferedReader reader) {
         Intrinsics.checkNotNullParameter(reader, "reader");
-        this.f49851a = reader;
+        this.f49867a = reader;
     }
 
     @Override // kotlin.sequences.Sequence

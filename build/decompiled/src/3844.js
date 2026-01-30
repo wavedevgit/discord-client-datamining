@@ -2,21 +2,40 @@
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
     var0 = global;
-    var4 = var0.Object;
-    var3 = var4.defineProperty;
-    var1 = {};
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
     var0 = true;
-    var1.value = var0;
+    var3.value = var0;
     var0 = '__esModule';
-    var0 = var3.bind(var4)(var2, var0, var1);
-    var1 = {};
+    var0 = var4.bind(var5)(var2, var0, var3);
     var3 = dependencyMap;
     var0 = 0;
     var4 = var3[var0];
-    var3 = metroImportDefault;
+    var3 = require;
     var0 = undefined;
     var3 = var3.bind(var0)(var4);
-    var1.oklab = var3;
-    var2.default = var1;
+    var3 = var3.useCallback;
+    var _closure1_slot0 = var3;
+    var1 = function(arg0, arg1) { // Original name: useWorkletCallback, environment: var1
+        _fun34835: for (var _fun34835_ip = 0;;) switch (_fun34835_ip) {
+            case 0:
+                var3 = arg1;
+                var2 = _closure1_slot0;
+                var0 = null;
+                if (!(var0 == var3)) {
+                    _fun34835_ip = 20;
+                    continue _fun34835
+                }
+            case 16:
+                var3 = new Array(0);
+            case 20:
+                var1 = undefined;
+                var0 = arg0;
+                var0 = var2.bind(var1)(var0, var3);
+                return var0;
+        }
+    };
+    var2.useWorkletCallback = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3845]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31]);

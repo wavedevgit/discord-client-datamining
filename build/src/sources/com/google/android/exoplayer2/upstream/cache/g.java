@@ -72,7 +72,7 @@ public final class g {
     }
 
     public g(int i10, String str) {
-        this(i10, str, me.f.f38037c);
+        this(i10, str, me.f.f38053c);
     }
 
     public void a(j jVar) {
@@ -93,12 +93,12 @@ public final class g {
     public j d(long j10, long j11) {
         j j12 = j.j(this.f14434b, j10);
         j jVar = (j) this.f14435c.floor(j12);
-        if (jVar != null && jVar.f38030e + jVar.f38031i > j10) {
+        if (jVar != null && jVar.f38046e + jVar.f38047i > j10) {
             return jVar;
         }
         j jVar2 = (j) this.f14435c.ceiling(j12);
         if (jVar2 != null) {
-            long j13 = jVar2.f38030e - j10;
+            long j13 = jVar2.f38046e - j10;
             if (j11 == -1) {
                 j11 = j13;
             } else {
@@ -158,7 +158,7 @@ public final class g {
 
     public boolean j(me.c cVar) {
         if (this.f14435c.remove(cVar)) {
-            File file = cVar.f38033p;
+            File file = cVar.f38049p;
             if (file != null) {
                 file.delete();
                 return true;
@@ -171,10 +171,10 @@ public final class g {
     public j k(j jVar, long j10, boolean z10) {
         long j11;
         ne.a.g(this.f14435c.remove(jVar));
-        File file = (File) ne.a.e(jVar.f38033p);
+        File file = (File) ne.a.e(jVar.f38049p);
         if (z10) {
             j11 = j10;
-            File k10 = j.k((File) ne.a.e(file.getParentFile()), this.f14433a, jVar.f38030e, j11);
+            File k10 = j.k((File) ne.a.e(file.getParentFile()), this.f14433a, jVar.f38046e, j11);
             if (file.renameTo(k10)) {
                 file = k10;
             } else {

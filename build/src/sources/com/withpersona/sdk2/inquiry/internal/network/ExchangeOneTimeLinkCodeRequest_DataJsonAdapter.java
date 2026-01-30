@@ -81,7 +81,7 @@ public final class ExchangeOneTimeLinkCodeRequest_DataJsonAdapter extends com.sq
         }
         Constructor constructor = this.f20187d;
         if (constructor == null) {
-            constructor = ExchangeOneTimeLinkCodeRequest.Data.class.getDeclaredConstructor(ExchangeOneTimeLinkCodeRequest.Attributes.class, String.class, Integer.TYPE, sm.c.f49081c);
+            constructor = ExchangeOneTimeLinkCodeRequest.Data.class.getDeclaredConstructor(ExchangeOneTimeLinkCodeRequest.Attributes.class, String.class, Integer.TYPE, sm.c.f49097c);
             this.f20187d = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

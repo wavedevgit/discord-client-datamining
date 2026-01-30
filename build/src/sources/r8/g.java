@@ -6,44 +6,44 @@ import java.io.InputStream;
 public class g extends InputStream {
 
     /* renamed from: d  reason: collision with root package name */
-    private final InputStream f48060d;
+    private final InputStream f48076d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final byte[] f48061e;
+    private final byte[] f48077e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final s8.c f48062i;
+    private final s8.c f48078i;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f48063o = 0;
+    private int f48079o = 0;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f48064p = 0;
+    private int f48080p = 0;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f48065q = false;
+    private boolean f48081q = false;
 
     public g(InputStream inputStream, byte[] bArr, s8.c cVar) {
-        this.f48060d = (InputStream) o8.j.g(inputStream);
-        this.f48061e = (byte[]) o8.j.g(bArr);
-        this.f48062i = (s8.c) o8.j.g(cVar);
+        this.f48076d = (InputStream) o8.j.g(inputStream);
+        this.f48077e = (byte[]) o8.j.g(bArr);
+        this.f48078i = (s8.c) o8.j.g(cVar);
     }
 
     private boolean a() {
-        if (this.f48064p < this.f48063o) {
+        if (this.f48080p < this.f48079o) {
             return true;
         }
-        int read = this.f48060d.read(this.f48061e);
+        int read = this.f48076d.read(this.f48077e);
         if (read <= 0) {
             return false;
         }
-        this.f48063o = read;
-        this.f48064p = 0;
+        this.f48079o = read;
+        this.f48080p = 0;
         return true;
     }
 
     private void h() {
-        if (!this.f48065q) {
+        if (!this.f48081q) {
             return;
         }
         throw new IOException("stream already closed");
@@ -52,27 +52,27 @@ public class g extends InputStream {
     @Override // java.io.InputStream
     public int available() {
         boolean z10;
-        if (this.f48064p <= this.f48063o) {
+        if (this.f48080p <= this.f48079o) {
             z10 = true;
         } else {
             z10 = false;
         }
         o8.j.i(z10);
         h();
-        return (this.f48063o - this.f48064p) + this.f48060d.available();
+        return (this.f48079o - this.f48080p) + this.f48076d.available();
     }
 
     @Override // java.io.InputStream, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        if (!this.f48065q) {
-            this.f48065q = true;
-            this.f48062i.release(this.f48061e);
+        if (!this.f48081q) {
+            this.f48081q = true;
+            this.f48078i.release(this.f48077e);
             super.close();
         }
     }
 
     protected void finalize() {
-        if (!this.f48065q) {
+        if (!this.f48081q) {
             p8.a.m("PooledByteInputStream", "Finalized without closing");
             close();
         }
@@ -81,12 +81,12 @@ public class g extends InputStream {
 
     @Override // java.io.InputStream
     public int read() {
-        o8.j.i(this.f48064p <= this.f48063o);
+        o8.j.i(this.f48080p <= this.f48079o);
         h();
         if (a()) {
-            byte[] bArr = this.f48061e;
-            int i10 = this.f48064p;
-            this.f48064p = i10 + 1;
+            byte[] bArr = this.f48077e;
+            int i10 = this.f48080p;
+            this.f48080p = i10 + 1;
             return bArr[i10] & 255;
         }
         return -1;
@@ -95,32 +95,32 @@ public class g extends InputStream {
     @Override // java.io.InputStream
     public long skip(long j10) {
         boolean z10;
-        if (this.f48064p <= this.f48063o) {
+        if (this.f48080p <= this.f48079o) {
             z10 = true;
         } else {
             z10 = false;
         }
         o8.j.i(z10);
         h();
-        int i10 = this.f48063o;
-        int i11 = this.f48064p;
+        int i10 = this.f48079o;
+        int i11 = this.f48080p;
         long j11 = i10 - i11;
         if (j11 >= j10) {
-            this.f48064p = (int) (i11 + j10);
+            this.f48080p = (int) (i11 + j10);
             return j10;
         }
-        this.f48064p = i10;
-        return j11 + this.f48060d.skip(j10 - j11);
+        this.f48080p = i10;
+        return j11 + this.f48076d.skip(j10 - j11);
     }
 
     @Override // java.io.InputStream
     public int read(byte[] bArr, int i10, int i11) {
-        o8.j.i(this.f48064p <= this.f48063o);
+        o8.j.i(this.f48080p <= this.f48079o);
         h();
         if (a()) {
-            int min = Math.min(this.f48063o - this.f48064p, i11);
-            System.arraycopy(this.f48061e, this.f48064p, bArr, i10, min);
-            this.f48064p += min;
+            int min = Math.min(this.f48079o - this.f48080p, i11);
+            System.arraycopy(this.f48077e, this.f48080p, bArr, i10, min);
+            this.f48080p += min;
             return min;
         }
         return -1;

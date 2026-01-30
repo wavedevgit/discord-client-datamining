@@ -5,31 +5,31 @@ import kotlin.jvm.internal.Intrinsics;
 public final class w {
 
     /* renamed from: a  reason: collision with root package name */
-    private final x.i f39324a;
+    private final x.i f39340a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final x.n0 f39325b;
+    private final x.n0 f39341b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final v f39326c;
+    private final v f39342c;
 
     public w(x.i camera, x.n0 n0Var, v cameraProperties) {
         Intrinsics.checkNotNullParameter(camera, "camera");
         Intrinsics.checkNotNullParameter(cameraProperties, "cameraProperties");
-        this.f39324a = camera;
-        this.f39325b = n0Var;
-        this.f39326c = cameraProperties;
+        this.f39340a = camera;
+        this.f39341b = n0Var;
+        this.f39342c = cameraProperties;
     }
 
     public final x.i a() {
-        return this.f39324a;
+        return this.f39340a;
     }
 
     public final v b() {
-        return this.f39326c;
+        return this.f39342c;
     }
 
     public final x.n0 c() {
-        return this.f39325b;
+        return this.f39341b;
     }
 }

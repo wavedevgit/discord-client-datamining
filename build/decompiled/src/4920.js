@@ -1,192 +1,150 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var2 = function(arg0) { // Original name: findHandler, environment: var0
-        var2 = _closure1_slot2;
-        var1 = var2.get;
-        var0 = arg0;
-        var0 = var1.bind(var2)(var0);
-        return var0;
-    };
-    var _closure1_slot5 = var2;
-    var3 = global;
-    var7 = var3.Object;
+    var4 = require;
+    var2 = exports;
+    var3 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var3;
+    var0 = global;
+    var7 = var0.Object;
     var6 = var7.defineProperty;
     var5 = {};
-    var4 = true;
-    var5.value = var4;
-    var4 = '__esModule';
-    var4 = var6.bind(var7)(var1, var4, var5);
-    var4 = var3.Map;
-    var5 = var4.prototype;
-    var5 = Object.create(var5, {
-        constructor: {
-            value: var4
-        }
-    });
-    var11 = var5;
-    var4 = new var11[var4](var10);
-    var4 = var4 instanceof Object ? var4 : var5;
-    var _closure1_slot2 = var4;
-    var4 = var3.Map;
-    var5 = var4.prototype;
-    var5 = Object.create(var5, {
-        constructor: {
-            value: var4
-        }
-    });
-    var11 = var5;
-    var4 = new var11[var4](var10);
-    var4 = var4 instanceof Object ? var4 : var5;
-    var _closure1_slot3 = var4;
-    var3 = var3.Map;
-    var4 = var3.prototype;
-    var4 = Object.create(var4, {
-        constructor: {
-            value: var3
-        }
-    });
-    var11 = var4;
-    var3 = new var11[var3](var10);
-    var3 = var3 instanceof Object ? var3 : var4;
-    var _closure1_slot4 = var3;
-    var3 = {};
-    var1.handlerIDToTag = var3;
-    var3 = function(arg0, arg1, arg2) { // Original name: registerHandler, environment: var0
-        _fun44583: for (var _fun44583_ip = 0;;) switch (_fun44583_ip) {
-            case 0:
-                var4 = arg0;
-                var3 = arg2;
-                var5 = _closure1_slot2;
-                var2 = var5.set;
-                var0 = arg1;
-                var0 = var2.bind(var5)(var4, var0);
-                var5 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var0 = 0;
-                var2 = var2[var0];
-                var0 = undefined;
-                var5 = var5.bind(var0)(var2);
-                var2 = var5.isTestEnv;
-                var2 = var2.bind(var5)();
-                if (!var2) {
-                    _fun44583_ip = 64;
-                    continue _fun44583
-                }
-            case 61:
-                var2 = var3;
-            case 64:
-                if (!var2) {
-                    _fun44583_ip = 82;
-                    continue _fun44583
-                }
-            case 67:
-                var2 = _closure1_slot4;
-                var1 = var2.set;
-                var1 = var1.bind(var2)(var3, var4);
-            case 82:
-                return var0;
-        }
-    };
-    var1.registerHandler = var3;
-    var3 = function(arg0, arg1) { // Original name: registerOldGestureHandler, environment: var0
-        var3 = _closure1_slot3;
-        var2 = var3.set;
-        var1 = arg0;
-        var0 = arg1;
-        var0 = var2.bind(var3)(var1, var0);
-        var0 = undefined;
-        return var0;
-    };
-    var1.registerOldGestureHandler = var3;
-    var3 = function(arg0) { // Original name: unregisterOldGestureHandler, environment: var0
-        var2 = _closure1_slot3;
-        var1 = var2.delete;
-        var0 = arg0;
-        var0 = var1.bind(var2)(var0);
-        var0 = undefined;
-        return var0;
-    };
-    var1.unregisterOldGestureHandler = var3;
-    var3 = function(arg0, arg1) { // Original name: unregisterHandler, environment: var0
-        _fun44586: for (var _fun44586_ip = 0;;) switch (_fun44586_ip) {
-            case 0:
-                var3 = arg1;
-                var4 = _closure1_slot2;
-                var2 = var4.delete;
-                var0 = arg0;
-                var0 = var2.bind(var4)(var0);
-                var4 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var0 = 0;
-                var2 = var2[var0];
-                var0 = undefined;
-                var4 = var4.bind(var0)(var2);
-                var2 = var4.isTestEnv;
-                var2 = var2.bind(var4)();
-                if (!var2) {
-                    _fun44586_ip = 60;
-                    continue _fun44586
-                }
-            case 57:
-                var2 = var3;
-            case 60:
-                if (!var2) {
-                    _fun44586_ip = 77;
-                    continue _fun44586
-                }
-            case 63:
-                var2 = _closure1_slot4;
-                var1 = var2.delete;
-                var1 = var1.bind(var2)(var3);
-            case 77:
-                return var0;
-        }
-    };
-    var1.unregisterHandler = var3;
-    var1.findHandler = var2;
-    var2 = function(arg0) { // Original name: findOldGestureHandler, environment: var0
-        var2 = _closure1_slot3;
-        var1 = var2.get;
-        var0 = arg0;
-        var0 = var1.bind(var2)(var0);
-        return var0;
-    };
-    var1.findOldGestureHandler = var2;
-    var0 = function(arg0) { // Original name: findHandlerByTestID, environment: var0
-        _fun44588: for (var _fun44588_ip = 0;;) switch (_fun44588_ip) {
-            case 0:
-                var3 = _closure1_slot4;
-                var2 = var3.get;
-                var0 = arg0;
-                var4 = var2.bind(var3)(var0);
-                var3 = null;
-                var2 = undefined;
-                var0 = null;
-                if (!(var2 !== var4)) {
-                    _fun44588_ip = 51;
-                    continue _fun44588
-                }
-            case 30:
-                var1 = _closure1_slot5;
-                var1 = var1.bind(var2)(var4);
-                var2 = var3 != var1;
-                var0 = null;
-                if (!var2) {
-                    _fun44588_ip = 51;
-                    continue _fun44588
-                }
-            case 48:
-                var0 = var1;
-            case 51:
-                return var0;
-        }
-    };
-    var1.findHandlerByTestID = var0;
+    var0 = true;
+    var5.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var5);
+    var0 = 0;
+    var3 = var3[var0];
     var0 = undefined;
+    var3 = var4.bind(var0)(var3);
+    var4 = var3.useCallback;
+    var _closure1_slot2 = var4;
+    var3 = var3.useEffect;
+    var _closure1_slot3 = var3;
+    var1 = function(arg0, arg1, arg2, arg3) { // Original name: useScrollableSetter, environment: var1
+        _fun44607: for (var _fun44607_ip = 0;;) switch (_fun44607_ip) {
+            case 0:
+                var14 = arg0;
+                var13 = arg1;
+                var9 = arg2;
+                var12 = arg3;
+                var0 = undefined;
+                var4 = undefined;
+                var _closure2_slot0 = var14;
+                var _closure2_slot1 = var13;
+                var _closure2_slot2 = var9;
+                var _closure2_slot3 = var12;
+                var2 = arguments.length;
+                var3 = 4;
+                if (!(var2 > var3)) {
+                    _fun44607_ip = 52;
+                    continue _fun44607
+                }
+            case 44:
+                var2 = arguments[var3];
+                if (!(var0 === var2)) {
+                    _fun44607_ip = 61;
+                    continue _fun44607
+                }
+            case 52:
+                var2 = _closure1_slot3;
+                _fun44607_ip = 65;
+                continue _fun44607;
+            case 61:
+                var2 = arguments[var3];
+            case 65:
+                var5 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var4 = 1;
+                var4 = var6[var4];
+                var5 = var5.bind(var0)(var4);
+                var4 = var5.useBottomSheetInternal;
+                var4 = var4.bind(var5)();
+                var11 = var4.animatedScrollableType;
+                var _closure2_slot4 = var11;
+                var10 = var4.animatedScrollableContentOffsetY;
+                var _closure2_slot5 = var10;
+                var7 = var4.isContentHeightFixed;
+                var _closure2_slot6 = var7;
+                var8 = var4.isScrollableRefreshable;
+                var _closure2_slot7 = var8;
+                var6 = var4.setScrollableRef;
+                var _closure2_slot8 = var6;
+                var5 = var4.removeScrollableRef;
+                var _closure2_slot9 = var5;
+                var4 = _closure1_slot2;
+                var3 = new Array(10);
+                var3[0] = var14;
+                var3[1] = var13;
+                var3[2] = var12;
+                var3[3] = var11;
+                var3[4] = var10;
+                var3[5] = var9;
+                var3[6] = var8;
+                var3[7] = var7;
+                var3[8] = var6;
+                var3[9] = var5;
+                var1 = function() { // Environment: var1
+                    _fun44608: for (var _fun44608_ip = 0;;) switch (_fun44608_ip) {
+                        case 0:
+                            var1 = _closure2_slot5;
+                            var0 = _closure2_slot2;
+                            var0 = var0.value;
+                            var1.value = var0;
+                            var1 = _closure2_slot4;
+                            var0 = _closure2_slot1;
+                            var1.value = var0;
+                            var1 = _closure2_slot7;
+                            var0 = _closure2_slot3;
+                            var1.value = var0;
+                            var1 = _closure2_slot6;
+                            var0 = false;
+                            var1.value = var0;
+                            var1 = _closure1_slot0;
+                            var2 = _closure1_slot1;
+                            var0 = 2;
+                            var0 = var2[var0];
+                            var2 = undefined;
+                            var4 = var1.bind(var2)(var0);
+                            var1 = var4.findNodeHandle;
+                            var0 = _closure2_slot0;
+                            var0 = var0.current;
+                            var4 = var1.bind(var4)(var0);
+                            if (var4) {
+                                _fun44608_ip = 136;
+                                continue _fun44608
+                            }
+                        case 110:
+                            var0 = global;
+                            var5 = var0.console;
+                            var1 = var5.warn;
+                            var0 = "Couldn't find the scrollable node handle id!";
+                            var0 = var1.bind(var5)(var0);
+                            _fun44608_ip = 160;
+                            continue _fun44608;
+                        case 136:
+                            var1 = _closure2_slot8;
+                            var0 = {};
+                            var0.id = var4;
+                            var3 = _closure2_slot0;
+                            var0.node = var3;
+                            var0 = var1.bind(var2)(var0);
+                        case 160:
+                            var0 = function() { // Environment: var0
+                                var2 = _closure2_slot9;
+                                var1 = _closure2_slot0;
+                                var0 = undefined;
+                                var1 = var2.bind(var0)(var1);
+                                return var0;
+                            };
+                            return var0;
+                    }
+                };
+                var1 = var4.bind(var0)(var1, var3);
+                var1 = var2.bind(var0)(var1);
+                return var0;
+        }
+    };
+    var2.useScrollableSetter = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4921]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4903, 4912]);

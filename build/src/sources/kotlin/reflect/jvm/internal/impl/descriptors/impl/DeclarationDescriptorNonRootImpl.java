@@ -12,10 +12,10 @@ import org.jetbrains.annotations.NotNull;
 public abstract class DeclarationDescriptorNonRootImpl extends DeclarationDescriptorImpl implements DeclarationDescriptorNonRoot {
 
     /* renamed from: i  reason: collision with root package name */
-    private final DeclarationDescriptor f33711i;
+    private final DeclarationDescriptor f33727i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final SourceElement f33712o;
+    private final SourceElement f33728o;
 
     /* JADX INFO: Access modifiers changed from: protected */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -33,8 +33,8 @@ public abstract class DeclarationDescriptorNonRootImpl extends DeclarationDescri
         if (sourceElement == null) {
             a(3);
         }
-        this.f33711i = declarationDescriptor;
-        this.f33712o = sourceElement;
+        this.f33727i = declarationDescriptor;
+        this.f33728o = sourceElement;
     }
 
     private static /* synthetic */ void a(int i10) {
@@ -80,7 +80,7 @@ public abstract class DeclarationDescriptorNonRootImpl extends DeclarationDescri
 
     @NotNull
     public DeclarationDescriptor getContainingDeclaration() {
-        DeclarationDescriptor declarationDescriptor = this.f33711i;
+        DeclarationDescriptor declarationDescriptor = this.f33727i;
         if (declarationDescriptor == null) {
             a(5);
         }
@@ -90,7 +90,7 @@ public abstract class DeclarationDescriptorNonRootImpl extends DeclarationDescri
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorWithSource
     @NotNull
     public SourceElement getSource() {
-        SourceElement sourceElement = this.f33712o;
+        SourceElement sourceElement = this.f33728o;
         if (sourceElement == null) {
             a(6);
         }

@@ -115,7 +115,7 @@ public final class NextStep_Ui_ConfigJsonAdapter extends h {
         List list5 = list;
         Constructor<NextStep.Ui.Config> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.Ui.Config.class.getDeclaredConstructor(List.class, Boolean.class, Boolean.class, Boolean.class, NextStep.Ui.Localizations.class, List.class, Integer.TYPE, sm.c.f49081c);
+            constructor = NextStep.Ui.Config.class.getDeclaredConstructor(List.class, Boolean.class, Boolean.class, Boolean.class, NextStep.Ui.Localizations.class, List.class, Integer.TYPE, sm.c.f49097c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

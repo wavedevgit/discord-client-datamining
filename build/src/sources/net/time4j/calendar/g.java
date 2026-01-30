@@ -9,7 +9,7 @@ import net.time4j.b0;
 class g implements t, Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    static final g f40454d = new g();
+    static final g f40470d = new g();
     private static final long serialVersionUID = -5874268477318061153L;
 
     g() {
@@ -75,20 +75,20 @@ class g implements t, Serializable {
     }
 
     protected Object readResolve() {
-        return f40454d;
+        return f40470d;
     }
 
     @Override // kt.t
     public void u(jt.o oVar, Appendable appendable, jt.d dVar) {
         kt.s l10;
-        Locale locale = (Locale) dVar.b(kt.a.f36530c, Locale.ROOT);
+        Locale locale = (Locale) dVar.b(kt.a.f36546c, Locale.ROOT);
         h hVar = (h) oVar.p(this);
-        if (dVar.a(mt.a.f39574k)) {
-            appendable.append(hVar.d(locale, (kt.j) dVar.b(kt.a.f36539l, kt.j.f36588d), dVar));
+        if (dVar.a(mt.a.f39590k)) {
+            appendable.append(hVar.d(locale, (kt.j) dVar.b(kt.a.f36555l, kt.j.f36604d), dVar));
             return;
         }
-        v vVar = (v) dVar.b(kt.a.f36534g, v.WIDE);
-        kt.m mVar = (kt.m) dVar.b(kt.a.f36535h, kt.m.FORMAT);
+        v vVar = (v) dVar.b(kt.a.f36550g, v.WIDE);
+        kt.m mVar = (kt.m) dVar.b(kt.a.f36551h, kt.m.FORMAT);
         if (hVar.e()) {
             l10 = kt.b.c("chinese", locale).g(vVar, mVar);
         } else {

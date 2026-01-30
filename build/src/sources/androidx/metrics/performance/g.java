@@ -46,10 +46,10 @@ public final class g {
         public final b b(View view) {
             Intrinsics.checkNotNullParameter(view, "view");
             View c10 = c(view);
-            Object tag = c10.getTag(o3.g.f42382b);
+            Object tag = c10.getTag(o3.g.f42398b);
             if (tag == null) {
                 tag = new b();
-                c10.setTag(o3.g.f42382b, tag);
+                c10.setTag(o3.g.f42398b, tag);
             }
             return (b) tag;
         }
@@ -123,7 +123,7 @@ public final class g {
         synchronized (this.f4632b) {
             int size = this.f4632b.size() - 1;
             if (-1 >= size) {
-                Unit unit = Unit.f33282a;
+                Unit unit = Unit.f33298a;
             } else {
                 android.support.v4.media.session.b.a(this.f4632b.get(size));
                 throw null;
@@ -137,7 +137,7 @@ public final class g {
             frameStates.clear();
             a(j10, j11, frameStates, this.f4631a);
             a(j10, j11, frameStates, this.f4632b);
-            Unit unit = Unit.f33282a;
+            Unit unit = Unit.f33298a;
         }
     }
 

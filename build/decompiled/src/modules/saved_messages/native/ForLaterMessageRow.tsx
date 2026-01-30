@@ -137,13 +137,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             'horizontalOffset': 0
         };
         var7 = function(arg0) { // Original name: modifyRow, environment: var7
-            _fun75901: for (var _fun75901_ip = 0;;) switch (_fun75901_ip) {
+            _fun75945: for (var _fun75945_ip = 0;;) switch (_fun75945_ip) {
                 case 0:
                     var2 = _closure2_slot0;
                     var1 = null;
                     if (!(var1 != var2)) {
-                        _fun75901_ip = 125;
-                        continue _fun75901
+                        _fun75945_ip = 125;
+                        continue _fun75945
                     }
                 case 13:
                     var1 = {};
@@ -164,8 +164,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var2.bind(var3)();
                     var2 = '';
                     if (!var3) {
-                        _fun75901_ip = 96;
-                        continue _fun75901
+                        _fun75945_ip = 96;
+                        continue _fun75945
                     }
                 case 90:
                     var2 = '...';
@@ -190,4 +190,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ForLaterMessageRow = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3205, 1297, 671, 1348, 6474, 8756, 478, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3205, 1297, 671, 1348, 6477, 8760, 478, 2]);

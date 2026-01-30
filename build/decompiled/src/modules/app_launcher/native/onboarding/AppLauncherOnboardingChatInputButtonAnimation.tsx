@@ -357,4 +357,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.AppLauncherOnboardingChatInputButtonAnimation = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 33, 1297, 4041, 671, 4050, 4837, 566, 8853, 11730, 3677, 6557, 11736, 11737, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 33, 1297, 4047, 671, 4056, 4843, 566, 8857, 11752, 3679, 6560, 11758, 11759, 2]);

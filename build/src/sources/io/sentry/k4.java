@@ -7,28 +7,28 @@ import java.util.concurrent.RejectedExecutionException;
 public final class k4 implements w0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final IScope f30091a;
+    private final IScope f30107a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final IScope f30092b;
+    private final IScope f30108b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final IScope f30093c;
+    private final IScope f30109c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final k4 f30094d;
+    private final k4 f30110d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f30095e;
+    private final String f30111e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final h f30096f;
+    private final h f30112f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final g f30097g;
+    private final g f30113g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final io.sentry.logger.a f30098h;
+    private final io.sentry.logger.a f30114h;
 
     public k4(IScope iScope, IScope iScope2, IScope iScope3, String str) {
         this(iScope, iScope2, iScope3, null, str);
@@ -52,7 +52,7 @@ public final class k4 implements w0 {
     }
 
     private io.sentry.protocol.x P(SentryEvent sentryEvent, Hint hint, b4 b4Var) {
-        io.sentry.protocol.x xVar = io.sentry.protocol.x.f30470e;
+        io.sentry.protocol.x xVar = io.sentry.protocol.x.f30486e;
         if (!isEnabled()) {
             b().getLogger().c(SentryLevel.WARNING, "Instance is disabled and this 'captureEvent' call is a no-op.", new Object[0]);
             return xVar;
@@ -75,7 +75,7 @@ public final class k4 implements w0 {
     }
 
     private io.sentry.protocol.x Q(Throwable th2, Hint hint, b4 b4Var) {
-        io.sentry.protocol.x xVar = io.sentry.protocol.x.f30470e;
+        io.sentry.protocol.x xVar = io.sentry.protocol.x.f30486e;
         if (!isEnabled()) {
             b().getLogger().c(SentryLevel.WARNING, "Instance is disabled and this 'captureException' call is a no-op.", new Object[0]);
         } else if (th2 == null) {
@@ -96,7 +96,7 @@ public final class k4 implements w0 {
     }
 
     private io.sentry.protocol.x R(String str, SentryLevel sentryLevel, b4 b4Var) {
-        io.sentry.protocol.x xVar = io.sentry.protocol.x.f30470e;
+        io.sentry.protocol.x xVar = io.sentry.protocol.x.f30486e;
         if (!isEnabled()) {
             b().getLogger().c(SentryLevel.WARNING, "Instance is disabled and this 'captureMessage' call is a no-op.", new Object[0]);
         } else if (str == null) {
@@ -142,11 +142,11 @@ public final class k4 implements w0 {
             if (a11.e().booleanValue() && b().isContinuousProfilingEnabled()) {
                 o3 profileLifecycle = b().getProfileLifecycle();
                 o3 o3Var = o3.TRACE;
-                if (profileLifecycle == o3Var && t8Var.j().equals(io.sentry.protocol.x.f30470e)) {
+                if (profileLifecycle == o3Var && t8Var.j().equals(io.sentry.protocol.x.f30486e)) {
                     b().getContinuousProfiler().d(o3Var, b().getInternalTracesSampler());
                 }
             }
-            a10 = m10.a(t8Var, this, v8Var, this.f30096f);
+            a10 = m10.a(t8Var, this, v8Var, this.f30112f);
             if (a11.e().booleanValue() && a11.b().booleanValue()) {
                 f1 transactionProfiler = b().getTransactionProfiler();
                 if (!transactionProfiler.isRunning()) {
@@ -191,7 +191,7 @@ public final class k4 implements w0 {
 
     @Override // io.sentry.w0
     public IScope B() {
-        return this.f30091a;
+        return this.f30107a;
     }
 
     @Override // io.sentry.w0
@@ -226,7 +226,7 @@ public final class k4 implements w0 {
     public io.sentry.protocol.x G(io.sentry.protocol.d0 d0Var, q8 q8Var, Hint hint, q3 q3Var) {
         io.sentry.protocol.d0 d0Var2;
         io.sentry.util.y.c(d0Var, "transaction is required");
-        io.sentry.protocol.x xVar = io.sentry.protocol.x.f30470e;
+        io.sentry.protocol.x xVar = io.sentry.protocol.x.f30486e;
         if (!isEnabled()) {
             b().getLogger().c(SentryLevel.WARNING, "Instance is disabled and this 'captureTransaction' call is a no-op.", new Object[0]);
         } else if (!d0Var.s0()) {
@@ -267,11 +267,11 @@ public final class k4 implements w0 {
 
     @Override // io.sentry.w0
     public w0 H(String str) {
-        return new k4(this.f30091a.clone(), this.f30092b.clone(), this.f30093c, this, str);
+        return new k4(this.f30107a.clone(), this.f30108b.clone(), this.f30109c, this, str);
     }
 
     public w0 T(String str) {
-        return new k4(this.f30091a.clone(), this.f30092b, this.f30093c, this, str);
+        return new k4(this.f30107a.clone(), this.f30108b, this.f30109c, this, str);
     }
 
     public y0 U() {
@@ -279,7 +279,7 @@ public final class k4 implements w0 {
     }
 
     public IScope V() {
-        return this.f30097g;
+        return this.f30113g;
     }
 
     @Override // io.sentry.w0
@@ -295,7 +295,7 @@ public final class k4 implements w0 {
 
     @Override // io.sentry.w0
     public k7 b() {
-        return this.f30097g.b();
+        return this.f30113g.b();
     }
 
     @Override // io.sentry.w0
@@ -439,7 +439,7 @@ public final class k4 implements w0 {
     @Override // io.sentry.w0
     public io.sentry.protocol.x m(l5 l5Var, Hint hint) {
         io.sentry.util.y.c(l5Var, "SentryEnvelope is required.");
-        io.sentry.protocol.x xVar = io.sentry.protocol.x.f30470e;
+        io.sentry.protocol.x xVar = io.sentry.protocol.x.f30486e;
         if (!isEnabled()) {
             b().getLogger().c(SentryLevel.WARNING, "Instance is disabled and this 'captureEnvelope' call is a no-op.", new Object[0]);
         } else {
@@ -484,7 +484,7 @@ public final class k4 implements w0 {
             return;
         }
         try {
-            b4Var.a(this.f30097g.V(d4Var));
+            b4Var.a(this.f30113g.V(d4Var));
         } catch (Throwable th2) {
             b().getLogger().b(SentryLevel.ERROR, "Error in the 'configureScope' callback.", th2);
         }
@@ -492,7 +492,7 @@ public final class k4 implements w0 {
 
     @Override // io.sentry.w0
     public io.sentry.protocol.x s(l7 l7Var, Hint hint) {
-        io.sentry.protocol.x xVar = io.sentry.protocol.x.f30470e;
+        io.sentry.protocol.x xVar = io.sentry.protocol.x.f30486e;
         if (!isEnabled()) {
             b().getLogger().c(SentryLevel.WARNING, "Instance is disabled and this 'captureReplay' call is a no-op.", new Object[0]);
         } else {
@@ -507,7 +507,7 @@ public final class k4 implements w0 {
 
     @Override // io.sentry.w0
     public IScope t() {
-        return this.f30093c;
+        return this.f30109c;
     }
 
     @Override // io.sentry.w0
@@ -518,7 +518,7 @@ public final class k4 implements w0 {
     @Override // io.sentry.w0
     public io.sentry.protocol.x v(m3 m3Var) {
         io.sentry.util.y.c(m3Var, "profilingContinuousData is required");
-        io.sentry.protocol.x xVar = io.sentry.protocol.x.f30470e;
+        io.sentry.protocol.x xVar = io.sentry.protocol.x.f30486e;
         if (!isEnabled()) {
             b().getLogger().c(SentryLevel.WARNING, "Instance is disabled and this 'captureTransaction' call is a no-op.", new Object[0]);
         } else {
@@ -544,16 +544,16 @@ public final class k4 implements w0 {
     }
 
     private k4(IScope iScope, IScope iScope2, IScope iScope3, k4 k4Var, String str) {
-        this.f30097g = new g(iScope3, iScope2, iScope);
-        this.f30091a = iScope;
-        this.f30092b = iScope2;
-        this.f30093c = iScope3;
-        this.f30094d = k4Var;
-        this.f30095e = str;
+        this.f30113g = new g(iScope3, iScope2, iScope);
+        this.f30107a = iScope;
+        this.f30108b = iScope2;
+        this.f30109c = iScope3;
+        this.f30110d = k4Var;
+        this.f30111e = str;
         k7 b10 = b();
         Y(b10);
-        this.f30096f = b10.getCompositePerformanceCollector();
-        this.f30098h = new io.sentry.logger.c(this);
+        this.f30112f = b10.getCompositePerformanceCollector();
+        this.f30114h = new io.sentry.logger.c(this);
     }
 
     @Override // io.sentry.w0

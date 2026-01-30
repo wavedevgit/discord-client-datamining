@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/connections/two_way_link/TwoWayLinkLanding.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: TwoWayLinkLanding, environment: var1
-        _fun47438: for (var _fun47438_ip = 0;;) switch (_fun47438_ip) {
+        _fun47485: for (var _fun47485_ip = 0;;) switch (_fun47485_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.platformType;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new Array(1);
                 var1[0] = var0;
                 var0 = function() { // Environment: var15
-                    _fun47439: for (var _fun47439_ip = 0;;) switch (_fun47439_ip) {
+                    _fun47486: for (var _fun47486_ip = 0;;) switch (_fun47486_ip) {
                         case 0:
                             var3 = _closure1_slot5;
                             var2 = var3.getAccount;
@@ -109,8 +109,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var1 == var0;
                             var1 = undefined;
                             if (var2) {
-                                _fun47439_ip = 43;
-                                continue _fun47439
+                                _fun47486_ip = 43;
+                                continue _fun47486
                             }
                         case 37:
                             var1 = var0.twoWayLink;
@@ -143,8 +143,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = null;
                 var20 = var8 != var21;
                 if (!var20) {
-                    _fun47438_ip = 232;
-                    continue _fun47438
+                    _fun47485_ip = 232;
+                    continue _fun47485
                 }
             case 229:
                 var20 = var21;
@@ -163,24 +163,26 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var11.Text;
                 var11 = {
                     'variant': 'heading-xl/bold',
-                    'color': 'mobile-text-heading-primary'
+                    'color': 'mobile-text-heading-primary',
+                    'style': null,
+                    'accessibilityRole': 'header'
                 };
                 var21 = var10.title;
                 var11.style = var21;
                 var21 = var23;
                 if (!var24) {
-                    _fun47438_ip = 322;
-                    continue _fun47438
+                    _fun47485_ip = 324;
+                    continue _fun47485
                 }
-            case 312:
+            case 314:
                 var21 = var23;
                 if (!(var8 != var22)) {
-                    _fun47438_ip = 322;
-                    continue _fun47438
+                    _fun47485_ip = 324;
+                    continue _fun47485
                 }
-            case 319:
+            case 321:
                 var21 = var22;
-            case 322:
+            case 324:
                 var11.children = var21;
                 var11 = var14.bind(var3)(var13, var11);
                 var9[1] = var11;
@@ -262,10 +264,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var8 != var18;
                 var8 = null;
                 if (!var9) {
-                    _fun47438_ip = 591;
-                    continue _fun47438
+                    _fun47485_ip = 593;
+                    continue _fun47485
                 }
-            case 471:
+            case 473:
                 var13 = _closure1_slot6;
                 var15 = _closure1_slot0;
                 var19 = _closure1_slot1;
@@ -293,7 +295,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var16.bind(var17)(var15, var14);
                 var9.children = var14;
                 var8 = var13.bind(var3)(var11, var9);
-            case 591:
+            case 593:
                 var7[1] = var8;
                 var4.children = var7;
                 var6 = var2.bind(var3)(var6, var4);
@@ -354,4 +356,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.TwoWayLinkLanding = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4476, 33, 1297, 5288, 566, 3895, 4854, 5289, 1234, 4690, 4033, 4037, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4482, 33, 1297, 5292, 566, 3901, 4860, 5293, 1234, 4696, 4039, 4043, 2]);

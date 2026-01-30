@@ -5,7 +5,7 @@ import ui.c;
 final class e9 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final e9 f38172a = new e9();
+    static final e9 f38188a = new e9();
 
     static {
         c.b a10 = ui.c.a("totalStrokeCount");

@@ -11,7 +11,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         '__packager_asset': true,
         'httpServerLocation': '/assets/modules/premium/premium_group',
         'scales': null,
-        'hash': 'f57f6ba674567f0fd4c776a5108d3ca3',
+        'hash': 'd75f3adeac20f619fb8bcdc76163d117',
         'name': 'PremiumGroup.compiled.messages',
         'type': 'jsona'
     };

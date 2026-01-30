@@ -116,7 +116,7 @@ class c extends b {
     com.google.android.material.floatingactionbutton.a f0(int i10, ColorStateList colorStateList) {
         Context context = this.f16066w.getContext();
         com.google.android.material.floatingactionbutton.a aVar = new com.google.android.material.floatingactionbutton.a((k) e.g(this.f16044a));
-        aVar.e(androidx.core.content.a.c(context, yg.c.f54370e), androidx.core.content.a.c(context, yg.c.f54369d), androidx.core.content.a.c(context, yg.c.f54367b), androidx.core.content.a.c(context, yg.c.f54368c));
+        aVar.e(androidx.core.content.a.c(context, yg.c.f54386e), androidx.core.content.a.c(context, yg.c.f54385d), androidx.core.content.a.c(context, yg.c.f54383b), androidx.core.content.a.c(context, yg.c.f54384c));
         aVar.d(i10);
         aVar.c(colorStateList);
         return aVar;

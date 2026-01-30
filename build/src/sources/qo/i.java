@@ -8,32 +8,32 @@ import kotlin.jvm.internal.Intrinsics;
 public final class i implements zn.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final FallbackMode f47554a;
+    private final FallbackMode f47570a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final qo.a f47555b;
+    private final qo.a f47571b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final mo.f f47556c;
+    private final mo.f f47572c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final w f47557d;
+    private final w f47573d;
 
     /* renamed from: e  reason: collision with root package name */
-    private com.withpersona.sdk2.inquiry.internal.fallbackmode.i f47558e;
+    private com.withpersona.sdk2.inquiry.internal.fallbackmode.i f47574e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f47559d;
+        Object f47575d;
 
         /* renamed from: e  reason: collision with root package name */
-        /* synthetic */ Object f47560e;
+        /* synthetic */ Object f47576e;
 
         /* renamed from: o  reason: collision with root package name */
-        int f47562o;
+        int f47578o;
 
         a(Continuation continuation) {
             super(continuation);
@@ -41,8 +41,8 @@ public final class i implements zn.a {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f47560e = obj;
-            this.f47562o |= Integer.MIN_VALUE;
+            this.f47576e = obj;
+            this.f47578o |= Integer.MIN_VALUE;
             return i.this.c(null, this);
         }
     }
@@ -52,19 +52,19 @@ public final class i implements zn.a {
     public static final class b extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f47563d;
+        Object f47579d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f47564e;
+        Object f47580e;
 
         /* renamed from: i  reason: collision with root package name */
-        Object f47565i;
+        Object f47581i;
 
         /* renamed from: o  reason: collision with root package name */
-        /* synthetic */ Object f47566o;
+        /* synthetic */ Object f47582o;
 
         /* renamed from: q  reason: collision with root package name */
-        int f47568q;
+        int f47584q;
 
         b(Continuation continuation) {
             super(continuation);
@@ -72,8 +72,8 @@ public final class i implements zn.a {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f47566o = obj;
-            this.f47568q |= Integer.MIN_VALUE;
+            this.f47582o = obj;
+            this.f47584q |= Integer.MIN_VALUE;
             return i.this.a(null, null, this);
         }
     }
@@ -83,19 +83,19 @@ public final class i implements zn.a {
     public static final class c extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f47569d;
+        Object f47585d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f47570e;
+        Object f47586e;
 
         /* renamed from: i  reason: collision with root package name */
-        Object f47571i;
+        Object f47587i;
 
         /* renamed from: o  reason: collision with root package name */
-        /* synthetic */ Object f47572o;
+        /* synthetic */ Object f47588o;
 
         /* renamed from: q  reason: collision with root package name */
-        int f47574q;
+        int f47590q;
 
         c(Continuation continuation) {
             super(continuation);
@@ -103,8 +103,8 @@ public final class i implements zn.a {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f47572o = obj;
-            this.f47574q |= Integer.MIN_VALUE;
+            this.f47588o = obj;
+            this.f47590q |= Integer.MIN_VALUE;
             return i.this.f(null, null, this);
         }
     }
@@ -114,10 +114,10 @@ public final class i implements zn.a {
         Intrinsics.checkNotNullParameter(apiController, "apiController");
         Intrinsics.checkNotNullParameter(environment, "environment");
         Intrinsics.checkNotNullParameter(moshi, "moshi");
-        this.f47554a = fallbackMode;
-        this.f47555b = apiController;
-        this.f47556c = environment;
-        this.f47557d = moshi;
+        this.f47570a = fallbackMode;
+        this.f47571b = apiController;
+        this.f47572c = environment;
+        this.f47573d = moshi;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:22:0x007f, code lost:
@@ -168,24 +168,24 @@ public final class i implements zn.a {
             if (r0 == 0) goto L13
             r0 = r9
             qo.i$a r0 = (qo.i.a) r0
-            int r1 = r0.f47562o
+            int r1 = r0.f47578o
             r2 = -2147483648(0xffffffff80000000, float:-0.0)
             r3 = r1 & r2
             if (r3 == 0) goto L13
             int r1 = r1 - r2
-            r0.f47562o = r1
+            r0.f47578o = r1
             goto L18
         L13:
             qo.i$a r0 = new qo.i$a
             r0.<init>(r9)
         L18:
-            java.lang.Object r9 = r0.f47560e
+            java.lang.Object r9 = r0.f47576e
             java.lang.Object r1 = or.b.f()
-            int r2 = r0.f47562o
+            int r2 = r0.f47578o
             r3 = 1
             if (r2 == 0) goto L3b
             if (r2 != r3) goto L33
-            java.lang.Object r8 = r0.f47559d
+            java.lang.Object r8 = r0.f47575d
             qo.i r8 = (qo.i) r8
             kotlin.c.b(r9)
             kotlin.Result r9 = (kotlin.Result) r9
@@ -198,9 +198,9 @@ public final class i implements zn.a {
             throw r8
         L3b:
             kotlin.c.b(r9)
-            qo.a r9 = r7.f47555b
-            r0.f47559d = r7
-            r0.f47562o = r3
+            qo.a r9 = r7.f47571b
+            r0.f47575d = r7
+            r0.f47578o = r3
             java.lang.Object r9 = r9.a(r8, r0)
             if (r9 != r1) goto L4b
             return r1
@@ -211,7 +211,7 @@ public final class i implements zn.a {
             if (r0 == 0) goto L57
             r0 = r9
             com.withpersona.sdk2.inquiry.internal.fallbackmode.i r0 = (com.withpersona.sdk2.inquiry.internal.fallbackmode.i) r0
-            r8.f47558e = r0
+            r8.f47574e = r0
         L57:
             java.lang.Throwable r8 = kotlin.Result.e(r9)
             if (r8 == 0) goto L6b
@@ -232,11 +232,11 @@ public final class i implements zn.a {
     }
 
     public final com.withpersona.sdk2.inquiry.internal.fallbackmode.i d() {
-        return this.f47558e;
+        return this.f47574e;
     }
 
     public FallbackMode e() {
-        return this.f47554a;
+        return this.f47570a;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:24:0x00ad, code lost:

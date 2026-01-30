@@ -75,7 +75,7 @@ public final class InquiryField_IntegerFieldJsonAdapter extends h {
         }
         Constructor<InquiryField.IntegerField> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = InquiryField.IntegerField.class.getDeclaredConstructor(Integer.class, String.class, Integer.TYPE, sm.c.f49081c);
+            constructor = InquiryField.IntegerField.class.getDeclaredConstructor(Integer.class, String.class, Integer.TYPE, sm.c.f49097c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

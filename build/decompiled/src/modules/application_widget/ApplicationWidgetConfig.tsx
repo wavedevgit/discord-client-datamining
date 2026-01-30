@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = function() { // Environment: var1
         var3 = _closure1_slot3;
         var2 = function(arg0) { // Original name: ApplicationWidgetConfig, environment: var4
-            _fun93359: for (var _fun93359_ip = 0;;) switch (_fun93359_ip) {
+            _fun93602: for (var _fun93602_ip = 0;;) switch (_fun93602_ip) {
                 case 0:
                     var1 = arg0;
                     var2 = this;
@@ -81,8 +81,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var3 != var5;
                     var3 = undefined;
                     if (!var5) {
-                        _fun93359_ip = 134;
-                        continue _fun93359
+                        _fun93602_ip = 134;
+                        continue _fun93602
                     }
                 case 119:
                     var5 = _closure1_slot4;
@@ -110,15 +110,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = 'isEligibleForEditProfileUpsell';
         var0.key = var1;
         var1 = function() { // Original name: value, environment: var4
-            _fun93360: for (var _fun93360_ip = 0;;) switch (_fun93360_ip) {
+            _fun93603: for (var _fun93603_ip = 0;;) switch (_fun93603_ip) {
                 case 0:
                     var1 = this;
                     var0 = var1.editProfileLinkedDc;
                     var2 = null;
                     var0 = var2 != var0;
                     if (!var0) {
-                        _fun93360_ip = 28;
-                        continue _fun93360
+                        _fun93603_ip = 28;
+                        continue _fun93603
                     }
                 case 18:
                     var1 = var1.editProfileUnlinkedDc;

@@ -12,13 +12,13 @@ public final class y implements k5, l5 {
     public static final Parcelable.Creator<y> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f53769d;
+    private final String f53785d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f53770e;
+    private final List f53786e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Integer f53771i;
+    private final Integer f53787i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -51,20 +51,20 @@ public final class y implements k5, l5 {
     public y(String name, List children, Integer num) {
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(children, "children");
-        this.f53769d = name;
-        this.f53770e = children;
-        this.f53771i = num;
+        this.f53785d = name;
+        this.f53786e = children;
+        this.f53787i = num;
     }
 
     public static /* synthetic */ y b(y yVar, String str, List list, Integer num, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            str = yVar.f53769d;
+            str = yVar.f53785d;
         }
         if ((i10 & 2) != 0) {
-            list = yVar.f53770e;
+            list = yVar.f53786e;
         }
         if ((i10 & 4) != 0) {
-            num = yVar.f53771i;
+            num = yVar.f53787i;
         }
         return yVar.a(str, list, num);
     }
@@ -82,7 +82,7 @@ public final class y implements k5, l5 {
     }
 
     public final Integer c() {
-        return this.f53771i;
+        return this.f53787i;
     }
 
     @Override // android.os.Parcelable
@@ -98,7 +98,7 @@ public final class y implements k5, l5 {
             return false;
         }
         y yVar = (y) obj;
-        if (Intrinsics.areEqual(this.f53769d, yVar.f53769d) && Intrinsics.areEqual(this.f53770e, yVar.f53770e) && Intrinsics.areEqual(this.f53771i, yVar.f53771i)) {
+        if (Intrinsics.areEqual(this.f53785d, yVar.f53785d) && Intrinsics.areEqual(this.f53786e, yVar.f53786e) && Intrinsics.areEqual(this.f53787i, yVar.f53787i)) {
             return true;
         }
         return false;
@@ -106,18 +106,18 @@ public final class y implements k5, l5 {
 
     @Override // xp.l5
     public List getChildren() {
-        return this.f53770e;
+        return this.f53786e;
     }
 
     @Override // xp.k5
     public String getName() {
-        return this.f53769d;
+        return this.f53785d;
     }
 
     public int hashCode() {
         int hashCode;
-        int hashCode2 = ((this.f53769d.hashCode() * 31) + this.f53770e.hashCode()) * 31;
-        Integer num = this.f53771i;
+        int hashCode2 = ((this.f53785d.hashCode() * 31) + this.f53786e.hashCode()) * 31;
+        Integer num = this.f53787i;
         if (num == null) {
             hashCode = 0;
         } else {
@@ -127,22 +127,22 @@ public final class y implements k5, l5 {
     }
 
     public String toString() {
-        String str = this.f53769d;
-        List list = this.f53770e;
-        Integer num = this.f53771i;
+        String str = this.f53785d;
+        List list = this.f53786e;
+        Integer num = this.f53787i;
         return "FooterComponent(name=" + str + ", children=" + list + ", firstBelowTheFoldChildIndex=" + num + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f53769d);
-        List<Parcelable> list = this.f53770e;
+        dest.writeString(this.f53785d);
+        List<Parcelable> list = this.f53786e;
         dest.writeInt(list.size());
         for (Parcelable parcelable : list) {
             dest.writeParcelable(parcelable, i10);
         }
-        Integer num = this.f53771i;
+        Integer num = this.f53787i;
         if (num == null) {
             dest.writeInt(0);
             return;

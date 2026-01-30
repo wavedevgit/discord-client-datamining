@@ -5,14 +5,14 @@ import android.content.Context;
 public final class o implements tq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final l f39506a;
+    private final l f39522a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final tq.h f39507b;
+    private final tq.h f39523b;
 
     public o(l lVar, tq.h hVar) {
-        this.f39506a = lVar;
-        this.f39507b = hVar;
+        this.f39522a = lVar;
+        this.f39523b = hVar;
     }
 
     public static o a(l lVar, tq.h hVar) {
@@ -26,6 +26,6 @@ public final class o implements tq.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public v4.h get() {
-        return c(this.f39506a, (Context) this.f39507b.get());
+        return c(this.f39522a, (Context) this.f39523b.get());
     }
 }

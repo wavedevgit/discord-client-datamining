@@ -1,360 +1,179 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun34771: for (var _fun34771_ip = 0;;) switch (_fun34771_ip) {
-        case 0:
-            var3 = require;
-            var2 = exports;
-            var5 = dependencyMap;
-            var _closure1_slot0 = var3;
-            var _closure1_slot1 = var5;
-            var0 = function(arg0) { // Original name: getWebScrollableElement, environment: var4
-                _fun34772: for (var _fun34772_ip = 0;;) switch (_fun34772_ip) {
-                    case 0:
-                        var0 = arg0;
-                        var2 = null;
-                        var3 = var2 == var0;
-                        var1 = undefined;
-                        if (var3) {
-                            _fun34772_ip = 24;
-                            continue _fun34772
-                        }
-                    case 14:
-                        var3 = var0.getScrollableNode;
-                        var1 = var3.bind(var0)();
-                    case 24:
-                        if (!(var2 != var1)) {
-                            _fun34772_ip = 31;
-                            continue _fun34772
-                        }
-                    case 28:
-                        var0 = var1;
-                    case 31:
-                        return var0;
-                }
-            };
-            var _closure1_slot8 = var0;
-            var0 = global;
-            var7 = var0.Object;
-            var6 = var7.defineProperty;
-            var1 = {};
-            var0 = true;
-            var1.value = var0;
-            var0 = '__esModule';
-            var0 = var6.bind(var7)(var2, var0, var1);
-            var0 = 0;
-            var1 = var5[var0];
-            var0 = undefined;
-            var1 = var3.bind(var0)(var1);
-            var6 = var1.useCallback;
-            var _closure1_slot2 = var6;
-            var6 = var1.useEffect;
-            var _closure1_slot3 = var6;
-            var1 = var1.useRef;
-            var _closure1_slot4 = var1;
-            var1 = 1;
-            var1 = var5[var1];
-            var3 = var3.bind(var0)(var1);
-            var1 = var3.isWeb;
-            var1 = var1.bind(var3)();
-            if (var1) {
-                _fun34771_ip = 132;
-                continue _fun34771
+    var1 = exports;
+    var2 = require;
+    var _closure1_slot0 = var2;
+    var2 = dependencyMap;
+    var _closure1_slot1 = var2;
+    var2 = global;
+    var5 = var2.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var2 = true;
+    var3.value = var2;
+    var2 = '__esModule';
+    var2 = var4.bind(var5)(var1, var2, var3);
+    var2 = {};
+    var3 = 'function pnpm_useComposedEventHandlerTs1(event){const{workletsMap}=this.__closure;if(workletsMap[event.eventName]){workletsMap[event.eventName].forEach(function(worklet){return worklet(event);});}}';
+    var2.code = var3;
+    var _closure1_slot2 = var2;
+    var0 = function(arg0) { // Original name: useComposedEventHandler, environment: var0
+        var4 = arg0;
+        var10 = {};
+        var _closure2_slot0 = var10;
+        var0 = global;
+        var2 = var0.Set;
+        var3 = var2.prototype;
+        var3 = Object.create(var3, {
+            constructor: {
+                value: var2
             }
-        case 125:
-            var1 = function(arg0, arg1) { // Original name: useScrollViewOffsetNative, environment: var4
-                _fun34778: for (var _fun34778_ip = 0;;) switch (_fun34778_ip) {
-                    case 0:
-                        var6 = arg0;
-                        var5 = arg1;
-                        var _closure2_slot0 = var6;
-                        var3 = _closure1_slot0;
-                        var4 = _closure1_slot1;
-                        var0 = 2;
-                        var0 = var4[var0];
-                        var4 = undefined;
-                        var7 = var3.bind(var4)(var0);
-                        var3 = var7.useSharedValue;
-                        var0 = 0;
-                        var0 = var3.bind(var7)(var0);
-                        var3 = _closure1_slot4;
-                        var7 = null;
-                        if (!(var7 != var5)) {
-                            _fun34778_ip = 63;
-                            continue _fun34778
-                        }
-                    case 60:
-                        var0 = var5;
-                    case 63:
-                        var0 = var3.bind(var4)(var0);
-                        var0 = var0.current;
-                        var _closure2_slot1 = var0;
-                        var5 = _closure1_slot0;
-                        var7 = _closure1_slot1;
-                        var3 = 4;
-                        var3 = var7[var3];
-                        var8 = var5.bind(var4)(var3);
-                        var7 = var8.useEvent;
-                        var5 = function(arg0) { // Original name: pnpm_useScrollViewOffsetTs2, environment: var1
-                            _fun34779: for (var _fun34779_ip = 0;;) switch (_fun34779_ip) {
-                                case 0:
-                                    var2 = arg0;
-                                    var1 = _closure2_slot1;
-                                    var0 = var2.contentOffset;
-                                    var3 = var0.x;
-                                    var0 = 0;
-                                    if (!(var0 !== var3)) {
-                                        _fun34779_ip = 40;
-                                        continue _fun34779
-                                    }
-                                case 27:
-                                    var0 = var2.contentOffset;
-                                    var0 = var0.x;
-                                    _fun34779_ip = 51;
-                                    continue _fun34779;
-                                case 40:
-                                    var2 = var2.contentOffset;
-                                    var0 = var2.y;
-                                case 51:
-                                    var1.value = var0;
-                                    var0 = undefined;
-                                    return var0;
-                            }
-                        };
-                        var3 = {};
-                        var3.offset = var0;
-                        var5.__closure = var3;
-                        var3 = 17316000082767.0;
-                        var5.__workletHash = var3;
-                        var3 = _closure1_slot6;
-                        var5.__initData = var3;
-                        var3 = _closure1_slot7;
-                        var5 = var7.bind(var8)(var5, var3);
-                        var _closure2_slot2 = var5;
-                        var3 = _closure1_slot3;
-                        var2 = new Array(2);
-                        var2[0] = var6;
-                        var2[1] = var5;
-                        var1 = function() { // Environment: var1
-                            _fun34780: for (var _fun34780_ip = 0;;) switch (_fun34780_ip) {
-                                case 0:
-                                    var1 = _closure2_slot0;
-                                    if (var1) {
-                                        _fun34780_ip = 14;
-                                        continue _fun34780
-                                    }
-                                case 10:
-                                    var1 = undefined;
-                                    return var1;
-                                case 14:
-                                    var2 = _closure2_slot0;
-                                    var1 = var2.observe;
-                                    var0 = function(arg0) { // Environment: var0
-                                        _fun34781: for (var _fun34781_ip = 0;;) switch (_fun34781_ip) {
-                                            case 0:
-                                                var3 = arg0;
-                                                var _closure4_slot0 = var3;
-                                                if (var3) {
-                                                    _fun34781_ip = 61;
-                                                    continue _fun34781
-                                                }
-                                            case 12:
-                                                var4 = _closure1_slot0;
-                                                var2 = _closure1_slot1;
-                                                var1 = 3;
-                                                var2 = var2[var1];
-                                                var1 = undefined;
-                                                var2 = var4.bind(var1)(var2);
-                                                var5 = var2.logger;
-                                                var4 = var5.warn;
-                                                var2 = 'animatedRef is not initialized in useScrollViewOffset. Make sure to pass the animated ref to the scrollable component to get scroll offset updates.';
-                                                var2 = var4.bind(var5)(var2);
-                                                return var1;
-                                            case 61:
-                                                var1 = _closure2_slot2;
-                                                var2 = var1.workletEventHandler;
-                                                var1 = var2.registerForEvents;
-                                                var1 = var1.bind(var2)(var3);
-                                                var0 = function() { // Environment: var0
-                                                    var0 = _closure2_slot2;
-                                                    var2 = var0.workletEventHandler;
-                                                    var1 = var2.unregisterFromEvents;
-                                                    var0 = _closure4_slot0;
-                                                    var0 = var1.bind(var2)(var0);
-                                                    var0 = undefined;
-                                                    return var0;
-                                                };
-                                                return var0;
-                                        }
-                                    };
-                                    var0 = var1.bind(var2)(var0);
-                                    return var0;
-                            }
-                        };
-                        var1 = var3.bind(var4)(var1, var2);
-                        return var0;
-                }
-            };
-            _fun34771_ip = 137;
-            continue _fun34771;
-        case 132:
-            var1 = function(arg0, arg1) { // Original name: useScrollViewOffsetWeb, environment: var4
-                _fun34773: for (var _fun34773_ip = 0;;) switch (_fun34773_ip) {
-                    case 0:
-                        var6 = arg0;
-                        var5 = arg1;
-                        var _closure2_slot0 = var6;
-                        var3 = _closure1_slot0;
-                        var4 = _closure1_slot1;
-                        var0 = 2;
-                        var0 = var4[var0];
-                        var4 = undefined;
-                        var7 = var3.bind(var4)(var0);
-                        var3 = var7.useSharedValue;
-                        var0 = 0;
-                        var0 = var3.bind(var7)(var0);
-                        var3 = _closure1_slot4;
-                        var7 = null;
-                        if (!(var7 != var5)) {
-                            _fun34773_ip = 63;
-                            continue _fun34773
-                        }
-                    case 60:
-                        var0 = var5;
-                    case 63:
-                        var0 = var3.bind(var4)(var0);
-                        var0 = var0.current;
-                        var _closure2_slot1 = var0;
-                        var7 = _closure1_slot2;
-                        var5 = function() { // Original name: pnpm_useScrollViewOffsetTs1, environment: var1
-                            _fun34774: for (var _fun34774_ip = 0;;) switch (_fun34774_ip) {
-                                case 0:
-                                    var1 = _closure2_slot0;
-                                    if (!var1) {
-                                        _fun34774_ip = 69;
-                                        continue _fun34774
-                                    }
-                                case 10:
-                                    var3 = _closure1_slot8;
-                                    var1 = _closure2_slot0;
-                                    var2 = var1.current;
-                                    var1 = undefined;
-                                    var2 = var3.bind(var1)(var2);
-                                    var1 = _closure2_slot1;
-                                    var3 = var2.scrollLeft;
-                                    var0 = 0;
-                                    if (!(var0 !== var3)) {
-                                        _fun34774_ip = 57;
-                                        continue _fun34774
-                                    }
-                                case 49:
-                                    var0 = var2.scrollLeft;
-                                    _fun34774_ip = 63;
-                                    continue _fun34774;
-                                case 57:
-                                    var0 = var2.scrollTop;
-                                case 63:
-                                    var1.value = var0;
-                                case 69:
-                                    var0 = undefined;
-                                    return var0;
-                            }
-                        };
-                        var3 = {};
-                        var3.animatedRef = var6;
-                        var8 = _closure1_slot8;
-                        var3.getWebScrollableElement = var8;
-                        var3.offset = var0;
-                        var5.__closure = var3;
-                        var3 = 2244034762234.0;
-                        var5.__workletHash = var3;
-                        var3 = _closure1_slot5;
-                        var5.__initData = var3;
-                        var3 = new Array(2);
-                        var3[0] = var6;
-                        var3[1] = var0;
-                        var5 = var7.bind(var4)(var5, var3);
-                        var _closure2_slot2 = var5;
-                        var3 = _closure1_slot3;
-                        var2 = new Array(2);
-                        var2[0] = var6;
-                        var2[1] = var5;
-                        var1 = function() { // Environment: var1
-                            _fun34775: for (var _fun34775_ip = 0;;) switch (_fun34775_ip) {
-                                case 0:
-                                    var1 = _closure2_slot0;
-                                    if (var1) {
-                                        _fun34775_ip = 14;
-                                        continue _fun34775
-                                    }
-                                case 10:
-                                    var1 = undefined;
-                                    return var1;
-                                case 14:
-                                    var2 = _closure2_slot0;
-                                    var1 = var2.observe;
-                                    var0 = function(arg0) { // Environment: var0
-                                        _fun34776: for (var _fun34776_ip = 0;;) switch (_fun34776_ip) {
-                                            case 0:
-                                                var2 = arg0;
-                                                if (var2) {
-                                                    _fun34776_ip = 57;
-                                                    continue _fun34776
-                                                }
-                                            case 11:
-                                                var4 = _closure1_slot0;
-                                                var3 = _closure1_slot1;
-                                                var2 = 3;
-                                                var3 = var3[var2];
-                                                var2 = undefined;
-                                                var3 = var4.bind(var2)(var3);
-                                                var5 = var3.logger;
-                                                var4 = var5.warn;
-                                                var3 = 'animatedRef is not initialized in useScrollViewOffset. Make sure to pass the animated ref to the scrollable component to get scroll offset updates.';
-                                                var3 = var4.bind(var5)(var3);
-                                                return var2;
-                                            case 57:
-                                                var4 = _closure1_slot8;
-                                                var2 = _closure2_slot0;
-                                                var3 = var2.current;
-                                                var2 = undefined;
-                                                var4 = var4.bind(var2)(var3);
-                                                var _closure4_slot0 = var4;
-                                                var3 = var4.addEventListener;
-                                                var2 = _closure2_slot2;
-                                                var1 = 'scroll';
-                                                var1 = var3.bind(var4)(var1, var2);
-                                                var0 = function() { // Environment: var0
-                                                    var3 = _closure4_slot0;
-                                                    var2 = var3.removeEventListener;
-                                                    var1 = _closure2_slot2;
-                                                    var0 = 'scroll';
-                                                    var0 = var2.bind(var3)(var0, var1);
-                                                    var0 = undefined;
-                                                    return var0;
-                                                };
-                                                return var0;
-                                        }
-                                    };
-                                    var0 = var1.bind(var2)(var0);
-                                    return var0;
-                            }
-                        };
-                        var1 = var3.bind(var4)(var1, var2);
-                        return var0;
-                }
-            };
-        case 137:
-            var3 = {};
-            var5 = 'function pnpm_useScrollViewOffsetTs1(){const{animatedRef,getWebScrollableElement,offset}=this.__closure;if(animatedRef){const element=getWebScrollableElement(animatedRef.current);offset.value=element.scrollLeft===0?element.scrollTop:element.scrollLeft;}}';
-            var3.code = var5;
-            var _closure1_slot5 = var3;
-            var3 = {};
-            var5 = 'function pnpm_useScrollViewOffsetTs2(event){const{offset}=this.__closure;offset.value=event.contentOffset.x===0?event.contentOffset.y:event.contentOffset.x;}';
-            var3.code = var5;
-            var _closure1_slot6 = var3;
-            var3 = ['onScroll', 'onScrollBeginDrag', 'onScrollEndDrag', 'onMomentumScrollBegin', 'onMomentumScrollEnd'];
-            var _closure1_slot7 = var3;
-            var2.useScrollViewOffset = var1;
+        });
+        var14 = var3;
+        var2 = new var14[var2](var13);
+        var6 = var2 instanceof Object ? var2 : var3;
+        var _closure2_slot1 = var6;
+        var8 = {};
+        var _closure2_slot2 = var8;
+        var3 = var4.filter;
+        var2 = function(arg0) { // Environment: var1
+            var1 = null;
+            var0 = arg0;
+            var0 = var1 !== var0;
             return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3681, 3826, 3682, 3821]);
+        };
+        var4 = var3.bind(var4)(var2);
+        var3 = var4.forEach;
+        var2 = function(arg0) { // Environment: var1
+            _fun34789: for (var _fun34789_ip = 0;;) switch (_fun34789_ip) {
+                case 0:
+                    var0 = arg0;
+                    var2 = var0.workletEventHandler;
+                    var _closure3_slot0 = var2;
+                    var4 = _closure1_slot0;
+                    var3 = _closure1_slot1;
+                    var0 = 0;
+                    var3 = var3[var0];
+                    var0 = undefined;
+                    var3 = var4.bind(var0)(var3);
+                    var3 = var3.WorkletEventHandler;
+                    var3 = var2 instanceof var3;
+                    if (!var3) {
+                        _fun34789_ip = 73;
+                        continue _fun34789
+                    }
+                case 52:
+                    var3 = var2.eventNames;
+                    var2 = var3.forEach;
+                    var1 = function(arg0) { // Environment: var1
+                        _fun34790: for (var _fun34790_ip = 0;;) switch (_fun34790_ip) {
+                            case 0:
+                                var3 = arg0;
+                                var2 = _closure2_slot1;
+                                var0 = var2.add;
+                                var0 = var0.bind(var2)(var3);
+                                var0 = _closure2_slot2;
+                                var4 = var0[var3];
+                                var2 = _closure2_slot2;
+                                if (var4) {
+                                    _fun34790_ip = 62;
+                                    continue _fun34790
+                                }
+                            case 38:
+                                var4 = _closure3_slot0;
+                                var5 = var4.worklet;
+                                var4 = new Array(1);
+                                var4[0] = var5;
+                                var2[var3] = var4;
+                                _fun34790_ip = 86;
+                                continue _fun34790;
+                            case 62:
+                                var5 = var2[var3];
+                                var4 = var5.push;
+                                var2 = _closure3_slot0;
+                                var2 = var2.worklet;
+                                var2 = var4.bind(var5)(var2);
+                            case 86:
+                                var2 = _closure2_slot2;
+                                var2 = var2[var3];
+                                var5 = var2.length;
+                                var2 = global;
+                                var2 = var2.HermesInternal;
+                                var4 = var2.concat;
+                                var2 = '';
+                                var2 = var4.bind(var2)(var5);
+                                var2 = var3 + var2;
+                                var1 = _closure2_slot0;
+                                var0 = _closure3_slot0;
+                                var0 = var0.worklet;
+                                var1[var2] = var0;
+                                var0 = undefined;
+                                return var0;
+                        }
+                    };
+                    var1 = var2.bind(var3)(var1);
+                case 73:
+                    return var0;
+            }
+        };
+        var2 = var3.bind(var4)(var2);
+        var7 = _closure1_slot0;
+        var9 = _closure1_slot1;
+        var2 = 1;
+        var2 = var9[var2];
+        var3 = undefined;
+        var4 = var7.bind(var3)(var2);
+        var2 = var4.useHandler;
+        var2 = var2.bind(var4)(var10);
+        var4 = var2.doDependenciesDiffer;
+        var2 = 2;
+        var2 = var9[var2];
+        var3 = var7.bind(var3)(var2);
+        var2 = var3.useEvent;
+        var1 = function(arg0) { // Original name: pnpm_useComposedEventHandlerTs1, environment: var1
+            _fun34791: for (var _fun34791_ip = 0;;) switch (_fun34791_ip) {
+                case 0:
+                    var1 = arg0;
+                    var _closure3_slot0 = var1;
+                    var4 = _closure2_slot2;
+                    var3 = var1.eventName;
+                    var3 = var4[var3];
+                    if (!var3) {
+                        _fun34791_ip = 58;
+                        continue _fun34791
+                    }
+                case 29:
+                    var2 = _closure2_slot2;
+                    var1 = var1.eventName;
+                    var2 = var2[var1];
+                    var1 = var2.forEach;
+                    var0 = function(arg0) { // Environment: var0
+                        var2 = _closure3_slot0;
+                        var1 = arg0;
+                        var0 = undefined;
+                        var0 = var1.bind(var0)(var2);
+                        return var0;
+                    };
+                    var0 = var1.bind(var2)(var0);
+                case 58:
+                    var0 = undefined;
+                    return var0;
+            }
+        };
+        var7 = {};
+        var7.workletsMap = var8;
+        var1.__closure = var7;
+        var7 = 14960316830945.0;
+        var1.__workletHash = var7;
+        var5 = _closure1_slot2;
+        var1.__initData = var5;
+        var5 = var0.Array;
+        var0 = var5.from;
+        var0 = var0.bind(var5)(var6);
+        var0 = var2.bind(var3)(var1, var0, var4);
+        return var0;
+    };
+    var1.useComposedEventHandler = var0;
+    var0 = undefined;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3785, 3825, 3827]);

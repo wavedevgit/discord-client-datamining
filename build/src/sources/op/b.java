@@ -6,10 +6,10 @@ import tq.g;
 public final class b implements d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f44610a;
+    private final a f44626a;
 
     public b(a aVar) {
-        this.f44610a = aVar;
+        this.f44626a = aVar;
     }
 
     public static b a(a aVar) {
@@ -23,6 +23,6 @@ public final class b implements d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public c get() {
-        return c(this.f44610a);
+        return c(this.f44626a);
     }
 }

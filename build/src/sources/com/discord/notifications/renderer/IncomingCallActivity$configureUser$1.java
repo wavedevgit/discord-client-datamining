@@ -90,7 +90,7 @@ public final class IncomingCallActivity$configureUser$1 extends k implements Fun
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Bitmap> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -153,11 +153,11 @@ public final class IncomingCallActivity$configureUser$1 extends k implements Fun
             }
         }
         ((ImageView) this.this$0.findViewById(R.id.imageView)).setImageBitmap((Bitmap) ((List) obj).get(0));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((IncomingCallActivity$configureUser$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((IncomingCallActivity$configureUser$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

@@ -32,7 +32,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.bind(var0)(var2);
     var _closure1_slot3 = var2;
     var2 = function(arg0) { // Original name: baseIsNative, environment: var1
-        _fun8275: for (var _fun8275_ip = 0;;) switch (_fun8275_ip) {
+        _fun8276: for (var _fun8276_ip = 0;;) switch (_fun8276_ip) {
             case 0:
                 var5 = arg0;
                 var2 = _closure1_slot0;
@@ -44,8 +44,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var0.bind(var4)(var5);
                 var0 = !var0;
                 if (var0) {
-                    _fun8275_ip = 63;
-                    continue _fun8275
+                    _fun8276_ip = 63;
+                    continue _fun8276
                 }
             case 38:
                 var3 = _closure1_slot0;
@@ -57,8 +57,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 63:
                 var0 = !var0;
                 if (!var0) {
-                    _fun8275_ip = 142;
-                    continue _fun8275
+                    _fun8276_ip = 142;
+                    continue _fun8276
                 }
             case 69:
                 var3 = _closure1_slot0;
@@ -68,13 +68,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var3.bind(var4)(var2);
                 var2 = var2.bind(var4)(var5);
                 if (var2) {
-                    _fun8275_ip = 103;
-                    continue _fun8275
+                    _fun8276_ip = 103;
+                    continue _fun8276
                 }
             case 97:
                 var3 = _closure1_slot2;
-                _fun8275_ip = 107;
-                continue _fun8275;
+                _fun8276_ip = 107;
+                continue _fun8276;
             case 103:
                 var3 = _closure1_slot3;
             case 107:

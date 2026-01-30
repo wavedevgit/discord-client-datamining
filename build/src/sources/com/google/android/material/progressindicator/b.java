@@ -31,7 +31,7 @@ public abstract class b {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public b(Context context, AttributeSet attributeSet, int i10, int i11) {
-        int dimensionPixelSize = context.getResources().getDimensionPixelSize(yg.d.f54379b0);
+        int dimensionPixelSize = context.getResources().getDimensionPixelSize(yg.d.f54395b0);
         TypedArray i12 = l.i(context, attributeSet, k.G, i10, i11, new int[0]);
         this.f16251a = lh.c.c(context, i12, k.P, dimensionPixelSize);
         this.f16252b = Math.min(lh.c.c(context, i12, k.O, 0), this.f16251a / 2);
@@ -45,7 +45,7 @@ public abstract class b {
 
     private void c(Context context, TypedArray typedArray) {
         if (!typedArray.hasValue(k.I)) {
-            this.f16253c = new int[]{eh.a.b(context, yg.b.f54351l, -1)};
+            this.f16253c = new int[]{eh.a.b(context, yg.b.f54367l, -1)};
         } else if (typedArray.peekValue(k.I).type != 1) {
             this.f16253c = new int[]{typedArray.getColor(k.I, -1)};
         } else {

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
-        _fun89655: for (var _fun89655_ip = 0;;) switch (_fun89655_ip) {
+        _fun89892: for (var _fun89892_ip = 0;;) switch (_fun89892_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 72: // try_end0
-                _fun89655_ip = 76;
-                continue _fun89655;
+                _fun89892_ip = 76;
+                continue _fun89892;
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
@@ -113,7 +113,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var3.Store;
     var3 = function(arg0) { // Environment: var4
         var3 = function() { // Original name: DoubleTapChatInputBannerStore, environment: var5
-            _fun89661: for (var _fun89661_ip = 0;;) switch (_fun89661_ip) {
+            _fun89898: for (var _fun89898_ip = 0;;) switch (_fun89898_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -127,16 +127,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot12;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun89661_ip = 69;
-                        continue _fun89661
+                        _fun89898_ip = 69;
+                        continue _fun89898
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun89661_ip = 105;
-                    continue _fun89661;
+                    _fun89898_ip = 105;
+                    continue _fun89898;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -198,21 +198,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.SHOW_DOUBLE_TAP_TO_REACT_BANNER = var1;
     var3.HIDE_DOUBLE_TAP_TO_REACT_BANNER = var9;
     var9 = function(arg0) { // Original name: handleAutoHideBanner, environment: var4
-        _fun89665: for (var _fun89665_ip = 0;;) switch (_fun89665_ip) {
+        _fun89902: for (var _fun89902_ip = 0;;) switch (_fun89902_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.channelId;
                 var1 = _closure1_slot8;
                 var0 = false;
                 if (!(var0 !== var1)) {
-                    _fun89665_ip = 82;
-                    continue _fun89665
+                    _fun89902_ip = 82;
+                    continue _fun89902
                 }
             case 21:
                 var1 = _closure1_slot9;
                 if (!(var1 !== var3)) {
-                    _fun89665_ip = 82;
-                    continue _fun89665
+                    _fun89902_ip = 82;
+                    continue _fun89902
                 }
             case 29:
                 var4 = _closure1_slot0;
@@ -260,4 +260,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.handleShowBanner = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 1369, 6959, 566, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 1369, 6962, 566, 806, 2]);

@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3 instanceof Object ? var3 : var6;
     var _closure1_slot4 = var3;
     var3 = function(arg0, arg1, arg2) { // Original name: emitAPLSentryErrorOnFailure, environment: var1
-        _fun58155: for (var _fun58155_ip = 0;;) switch (_fun58155_ip) {
+        _fun58199: for (var _fun58199_ip = 0;;) switch (_fun58199_ip) {
             case 0:
                 var8 = arg0;
                 var4 = var8[Symbol.iterator];
@@ -48,8 +48,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5 === var0;
                 var7 = undefined;
                 if (var5) {
-                    _fun58155_ip = 27;
-                    continue _fun58155
+                    _fun58199_ip = 27;
+                    continue _fun58199
                 }
             case 24:
                 var7 = var10;
@@ -57,8 +57,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var7;
                 var7 = undefined;
                 if (var5) {
-                    _fun58155_ip = 60;
-                    continue _fun58155
+                    _fun58199_ip = 60;
+                    continue _fun58199
                 }
             case 35:
                 var10 = var8().value;
@@ -67,8 +67,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = undefined;
                 var5 = var8;
                 if (var8) {
-                    _fun58155_ip = 60;
-                    continue _fun58155
+                    _fun58199_ip = 60;
+                    continue _fun58199
                 }
             case 54:
                 var7 = var10;
@@ -76,8 +76,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 60:
                 var3 = var7;
                 if (var5) {
-                    _fun58155_ip = 69;
-                    continue _fun58155
+                    _fun58199_ip = 69;
+                    continue _fun58199
                 }
             case 66:
                 var4.return();
@@ -130,8 +130,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3.extra = var9;
                 var3 = var7.bind(var8)(var5, var4, var3);
             case 249: // try_end0
-                _fun58155_ip = 330;
-                continue _fun58155;
+                _fun58199_ip = 330;
+                continue _fun58199;
             case 251: // catch_target0
                 CatchBlockStart(arg_register = 3);
                 var4 = _closure1_slot0;
@@ -373,4 +373,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.goToStandaloneGuildBoostCheckoutFromMobileApp = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3, 3423, 7096, 3103, 670, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 3, 3423, 7099, 3103, 670, 2]);

@@ -6,15 +6,15 @@ import kotlinx.coroutines.CoroutineDispatcher;
 public final class j0 extends Exception {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Throwable f27158d;
+    private final Throwable f27174d;
 
     public j0(Throwable th2, CoroutineDispatcher coroutineDispatcher, CoroutineContext coroutineContext) {
         super("Coroutine dispatcher " + coroutineDispatcher + " threw an exception, context = " + coroutineContext, th2);
-        this.f27158d = th2;
+        this.f27174d = th2;
     }
 
     @Override // java.lang.Throwable
     public Throwable getCause() {
-        return this.f27158d;
+        return this.f27174d;
     }
 }

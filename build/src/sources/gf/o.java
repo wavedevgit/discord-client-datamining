@@ -10,31 +10,31 @@ public abstract class o {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f26853a;
+        private final List f26869a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Object f26854b;
+        private final Object f26870b;
 
         /* synthetic */ a(Object obj, w0 w0Var) {
             q.l(obj);
-            this.f26854b = obj;
-            this.f26853a = new ArrayList();
+            this.f26870b = obj;
+            this.f26869a = new ArrayList();
         }
 
         public a a(String str, Object obj) {
             q.l(str);
             String valueOf = String.valueOf(obj);
-            this.f26853a.add(str + "=" + valueOf);
+            this.f26869a.add(str + "=" + valueOf);
             return this;
         }
 
         public String toString() {
             StringBuilder sb2 = new StringBuilder(100);
-            sb2.append(this.f26854b.getClass().getSimpleName());
+            sb2.append(this.f26870b.getClass().getSimpleName());
             sb2.append('{');
-            int size = this.f26853a.size();
+            int size = this.f26869a.size();
             for (int i10 = 0; i10 < size; i10++) {
-                sb2.append((String) this.f26853a.get(i10));
+                sb2.append((String) this.f26869a.get(i10));
                 if (i10 < size - 1) {
                     sb2.append(", ");
                 }

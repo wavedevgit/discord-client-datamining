@@ -7,14 +7,14 @@ import org.json.JSONObject;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 abstract class a {
     public static byte[] a(byte[] bArr) {
-        if (w0.f40279a >= 27) {
+        if (w0.f40295a >= 27) {
             return bArr;
         }
         return w0.s0(c(w0.E(bArr)));
     }
 
     public static byte[] b(byte[] bArr) {
-        if (w0.f40279a >= 27) {
+        if (w0.f40295a >= 27) {
             return bArr;
         }
         try {

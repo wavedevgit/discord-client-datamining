@@ -22,33 +22,33 @@ import kotlin.text.StringsKt;
 public abstract class t {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final List f50490a = CollectionsKt.o("com.noshufou.android.su", "com.noshufou.android.su.elite", "eu.chainfire.supersu", "com.koushikdutta.superuser", "com.thirdparty.superuser", "com.yellowes.su", "com.topjohnwu.magisk", "com.kingroot.kinguser", "com.kingo.root", "com.smedialink.oneclickroot", "com.zhiqupk.root.global", "com.alephzain.framaroot");
+    private static final List f50506a = CollectionsKt.o("com.noshufou.android.su", "com.noshufou.android.su.elite", "eu.chainfire.supersu", "com.koushikdutta.superuser", "com.thirdparty.superuser", "com.yellowes.su", "com.topjohnwu.magisk", "com.kingroot.kinguser", "com.kingo.root", "com.smedialink.oneclickroot", "com.zhiqupk.root.global", "com.alephzain.framaroot");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final List f50491b = CollectionsKt.o("com.koushikdutta.rommanager", "com.koushikdutta.rommanager.license", "com.dimonvideo.luckypatcher", "com.chelpus.lackypatch", "com.ramdroid.appquarantine", "com.ramdroid.appquarantinepro", "com.android.vending.billing.InAppBillingService.COIN", "com.android.vending.billing.InAppBillingService.LUCK", "com.chelpus.luckypatcher", "com.blackmartalpha", "org.blackmart.market", "com.allinone.free", "com.repodroid.app", "org.creeplays.hack", "com.baseappfull.fwd", "com.zmapp", "com.dv.marketmod.installer", "org.mobilism.android", "com.android.wp.net.log", "com.android.camera.update", "cc.madkite.freedom", "com.solohsu.android.edxp.manager", "org.meowcat.edxposed.manager", "com.xmodgame", "com.cih.game_cih", "com.charles.lpoqasert", "catch_.me_.if_.you_.can_");
+    private static final List f50507b = CollectionsKt.o("com.koushikdutta.rommanager", "com.koushikdutta.rommanager.license", "com.dimonvideo.luckypatcher", "com.chelpus.lackypatch", "com.ramdroid.appquarantine", "com.ramdroid.appquarantinepro", "com.android.vending.billing.InAppBillingService.COIN", "com.android.vending.billing.InAppBillingService.LUCK", "com.chelpus.luckypatcher", "com.blackmartalpha", "org.blackmart.market", "com.allinone.free", "com.repodroid.app", "org.creeplays.hack", "com.baseappfull.fwd", "com.zmapp", "com.dv.marketmod.installer", "org.mobilism.android", "com.android.wp.net.log", "com.android.camera.update", "cc.madkite.freedom", "com.solohsu.android.edxp.manager", "org.meowcat.edxposed.manager", "com.xmodgame", "com.cih.game_cih", "com.charles.lpoqasert", "catch_.me_.if_.you_.can_");
 
     /* renamed from: c  reason: collision with root package name */
-    private static final List f50492c = CollectionsKt.o("com.devadvance.rootcloak", "com.devadvance.rootcloakplus", "de.robv.android.xposed.installer", "com.saurik.substrate", "com.zachspong.temprootremovejb", "com.amphoras.hidemyroot", "com.amphoras.hidemyrootadfree", "com.formyhm.hiderootPremium", "com.formyhm.hideroot");
+    private static final List f50508c = CollectionsKt.o("com.devadvance.rootcloak", "com.devadvance.rootcloakplus", "de.robv.android.xposed.installer", "com.saurik.substrate", "com.zachspong.temprootremovejb", "com.amphoras.hidemyroot", "com.amphoras.hidemyrootadfree", "com.formyhm.hiderootPremium", "com.formyhm.hideroot");
 
     /* renamed from: d  reason: collision with root package name */
-    private static final List f50493d = CollectionsKt.o("/data/local/", "/data/local/bin/", "/data/local/xbin/", "/sbin/", "/su/bin/", "/system/bin/", "/system/bin/.ext/", "/system/bin/failsafe/", "/system/sd/xbin/", "/system/usr/we-need-root/", "/system/xbin/", "/cache/", "/data/", "/dev/");
+    private static final List f50509d = CollectionsKt.o("/data/local/", "/data/local/bin/", "/data/local/xbin/", "/sbin/", "/su/bin/", "/system/bin/", "/system/bin/.ext/", "/system/bin/failsafe/", "/system/sd/xbin/", "/system/usr/we-need-root/", "/system/xbin/", "/cache/", "/data/", "/dev/");
 
     /* renamed from: e  reason: collision with root package name */
-    private static final List f50494e = CollectionsKt.o("/system", "/system/bin", "/system/sbin", "/system/xbin", "/vendor/bin", "/sbin", "/etc");
+    private static final List f50510e = CollectionsKt.o("/system", "/system/bin", "/system/sbin", "/system/xbin", "/vendor/bin", "/sbin", "/etc");
 
     /* renamed from: f  reason: collision with root package name */
-    private static Boolean f50495f;
+    private static Boolean f50511f;
 
     private static final boolean a(Context context) {
-        return i(context, f50491b);
+        return i(context, f50507b);
     }
 
     private static final boolean b(Context context) {
-        return i(context, f50490a);
+        return i(context, f50506a);
     }
 
     private static final boolean c(String str) {
-        for (String str2 : f50493d) {
+        for (String str2 : f50509d) {
             if (new File(str2, str).exists()) {
                 return true;
             }
@@ -138,7 +138,7 @@ public abstract class t {
             } else {
                 continue;
             }
-            for (String str4 : f50494e) {
+            for (String str4 : f50510e) {
                 if (StringsKt.A(str, str4, true)) {
                     int length = str2.length() - 1;
                     int i11 = 0;
@@ -243,7 +243,7 @@ public abstract class t {
         /*
             java.lang.String r0 = "<this>"
             kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r2, r0)
-            java.lang.Boolean r0 = un.t.f50495f
+            java.lang.Boolean r0 = un.t.f50511f
             if (r0 == 0) goto Le
             boolean r2 = r0.booleanValue()
             return r2
@@ -274,7 +274,7 @@ public abstract class t {
             r0 = 1
         L4a:
             java.lang.Boolean r2 = java.lang.Boolean.valueOf(r0)
-            un.t.f50495f = r2
+            un.t.f50511f = r2
             return r0
         */
         throw new UnsupportedOperationException("Method not decompiled: un.t.j(android.content.Context):boolean");

@@ -144,15 +144,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/share/native/ShareAttachments.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: ShareAttachments, environment: var1
-        _fun96798: for (var _fun96798_ip = 0;;) switch (_fun96798_ip) {
+        _fun97052: for (var _fun97052_ip = 0;;) switch (_fun97052_ip) {
             case 0:
                 var0 = arg0;
                 var11 = var0.attachments;
                 var18 = var0.isRevamp;
                 var4 = undefined;
                 if (!(var18 === var4)) {
-                    _fun96798_ip = 25;
-                    continue _fun96798
+                    _fun97052_ip = 25;
+                    continue _fun97052
                 }
             case 23:
                 var18 = false;
@@ -187,7 +187,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var5.bind(var4)(var6);
                 var7 = var12.useAnimatedStyle;
                 var6 = function() { // Original name: y, environment: var9
-                    _fun96799: for (var _fun96799_ip = 0;;) switch (_fun96799_ip) {
+                    _fun97053: for (var _fun97053_ip = 0;;) switch (_fun97053_ip) {
                         case 0:
                             var0 = {};
                             var4 = _closure1_slot0;
@@ -204,8 +204,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var6 = var2 <= var5;
                             var2 = 1;
                             if (!var6) {
-                                _fun96799_ip = 62;
-                                continue _fun96799
+                                _fun97053_ip = 62;
+                                continue _fun97053
                             }
                         case 60:
                             var2 = 0;
@@ -235,7 +235,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var5.bind(var4)(var6);
                 var7 = var12.useAnimatedStyle;
                 var6 = function() { // Original name: S, environment: var9
-                    _fun96800: for (var _fun96800_ip = 0;;) switch (_fun96800_ip) {
+                    _fun97054: for (var _fun97054_ip = 0;;) switch (_fun97054_ip) {
                         case 0:
                             var0 = {};
                             var4 = _closure1_slot0;
@@ -258,8 +258,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var5 >= var2;
                             var2 = 1;
                             if (!var5) {
-                                _fun96800_ip = 90;
-                                continue _fun96800
+                                _fun97054_ip = 90;
+                                continue _fun97054
                             }
                         case 88:
                             var2 = 0;
@@ -370,8 +370,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var11.length;
                 var0 = null;
                 if (!(var2 !== var1)) {
-                    _fun96798_ip = 954;
-                    continue _fun96798
+                    _fun97052_ip = 954;
+                    continue _fun97052
                 }
             case 519:
                 var3 = _closure1_slot6;
@@ -379,8 +379,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var5 = undefined;
                 if (!var18) {
-                    _fun96798_ip = 540;
-                    continue _fun96798
+                    _fun97052_ip = 540;
+                    continue _fun97052
                 }
             case 534:
                 var5 = var17.containerRevamp;
@@ -451,8 +451,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15[0] = var16;
                 var16 = undefined;
                 if (!var18) {
-                    _fun96798_ip = 800;
-                    continue _fun96798
+                    _fun97052_ip = 800;
+                    continue _fun97052
                 }
             case 794:
                 var16 = var17.attachmentPreviewContentContainerRevamp;
@@ -543,4 +543,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 3677, 4051, 4840, 1297, 671, 4050, 3199, 1234, 8776, 3966, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 3679, 4057, 4846, 1297, 671, 4056, 3199, 1234, 8780, 3972, 2]);

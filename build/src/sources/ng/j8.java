@@ -5,20 +5,20 @@ import java.util.Arrays;
 abstract class j8 extends k9 {
 
     /* renamed from: a  reason: collision with root package name */
-    Object[] f41331a = new Object[4];
+    Object[] f41347a = new Object[4];
 
     /* renamed from: b  reason: collision with root package name */
-    int f41332b = 0;
+    int f41348b = 0;
 
     /* renamed from: c  reason: collision with root package name */
-    boolean f41333c;
+    boolean f41349c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public j8(int i10) {
     }
 
     private final void b(int i10) {
-        Object[] objArr = this.f41331a;
+        Object[] objArr = this.f41347a;
         int length = objArr.length;
         if (length < i10) {
             int i11 = length + (length >> 1) + 1;
@@ -29,20 +29,20 @@ abstract class j8 extends k9 {
             if (i11 < 0) {
                 i11 = Integer.MAX_VALUE;
             }
-            this.f41331a = Arrays.copyOf(objArr, i11);
-            this.f41333c = false;
-        } else if (this.f41333c) {
-            this.f41331a = (Object[]) objArr.clone();
-            this.f41333c = false;
+            this.f41347a = Arrays.copyOf(objArr, i11);
+            this.f41349c = false;
+        } else if (this.f41349c) {
+            this.f41347a = (Object[]) objArr.clone();
+            this.f41349c = false;
         }
     }
 
     public final j8 a(Object obj) {
         obj.getClass();
-        b(this.f41332b + 1);
-        Object[] objArr = this.f41331a;
-        int i10 = this.f41332b;
-        this.f41332b = i10 + 1;
+        b(this.f41348b + 1);
+        Object[] objArr = this.f41347a;
+        int i10 = this.f41348b;
+        this.f41348b = i10 + 1;
         objArr[i10] = obj;
         return this;
     }

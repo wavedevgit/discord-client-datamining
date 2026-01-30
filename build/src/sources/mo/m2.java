@@ -5,10 +5,10 @@ import android.content.Context;
 public final class m2 implements tq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final tq.h f39501a;
+    private final tq.h f39517a;
 
     public m2(tq.h hVar) {
-        this.f39501a = hVar;
+        this.f39517a = hVar;
     }
 
     public static m2 a(tq.h hVar) {
@@ -22,6 +22,6 @@ public final class m2 implements tq.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public l2 get() {
-        return c((Context) this.f39501a.get());
+        return c((Context) this.f39517a.get());
     }
 }

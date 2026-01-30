@@ -6,31 +6,31 @@ import kotlin.jvm.internal.Intrinsics;
 public final class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final i f51865a;
+    private final i f51881a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final View f51866b;
+    private final View f51882b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final View f51867c;
+    private final View f51883c;
 
     public h(i viewBindings, View contentView, View view) {
         Intrinsics.checkNotNullParameter(viewBindings, "viewBindings");
         Intrinsics.checkNotNullParameter(contentView, "contentView");
-        this.f51865a = viewBindings;
-        this.f51866b = contentView;
-        this.f51867c = view;
+        this.f51881a = viewBindings;
+        this.f51882b = contentView;
+        this.f51883c = view;
     }
 
     public final View a() {
-        return this.f51866b;
+        return this.f51882b;
     }
 
     public final View b() {
-        return this.f51867c;
+        return this.f51883c;
     }
 
     public final i c() {
-        return this.f51865a;
+        return this.f51881a;
     }
 }

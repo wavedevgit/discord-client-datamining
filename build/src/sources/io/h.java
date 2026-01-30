@@ -6,10 +6,10 @@ import mn.v;
 public final class h implements f.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final g f28694a;
+    private final g f28710a;
 
     h(g gVar) {
-        this.f28694a = gVar;
+        this.f28710a = gVar;
     }
 
     public static tq.h b(g gVar) {
@@ -18,6 +18,6 @@ public final class h implements f.a {
 
     @Override // io.f.a
     public f a(String str, String str2, String str3, String str4, c cVar, String str5, v vVar) {
-        return this.f28694a.b(str, str2, str4, str3, cVar, str5, vVar);
+        return this.f28710a.b(str, str2, str4, str3, cVar, str5, vVar);
     }
 }

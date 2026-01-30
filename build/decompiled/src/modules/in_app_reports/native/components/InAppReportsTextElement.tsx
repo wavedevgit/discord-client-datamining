@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/in_app_reports/native/components/InAppReportsTextElement.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: TextElement, environment: var1
-        _fun53766: for (var _fun53766_ip = 0;;) switch (_fun53766_ip) {
+        _fun53811: for (var _fun53811_ip = 0;;) switch (_fun53811_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.element;
@@ -84,20 +84,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = null;
                 var0 = null;
                 if (!var1) {
-                    _fun53766_ip = 303;
-                    continue _fun53766
+                    _fun53811_ip = 303;
+                    continue _fun53811
                 }
             case 97:
                 if (!(var7 == var15)) {
-                    _fun53766_ip = 113;
-                    continue _fun53766
+                    _fun53811_ip = 113;
+                    continue _fun53811
                 }
             case 101:
                 var2 = var7 == var13;
                 var1 = null;
                 if (var2) {
-                    _fun53766_ip = 300;
-                    continue _fun53766
+                    _fun53811_ip = 300;
+                    continue _fun53811
                 }
             case 113:
                 var4 = _closure1_slot6;
@@ -107,8 +107,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2.style = var6;
                 var9 = var7 != var15;
                 if (!var9) {
-                    _fun53766_ip = 203;
-                    continue _fun53766
+                    _fun53811_ip = 203;
+                    continue _fun53811
                 }
             case 139:
                 var14 = _closure1_slot5;
@@ -132,8 +132,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6[0] = var9;
                 var7 = var7 != var13;
                 if (!var7) {
-                    _fun53766_ip = 286;
-                    continue _fun53766
+                    _fun53811_ip = 286;
+                    continue _fun53811
                 }
             case 218:
                 var10 = _closure1_slot5;
@@ -164,4 +164,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 3892, 3895, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 3898, 3901, 2]);

@@ -1,7 +1,7 @@
 // modules/checkpoint/native/components/CheckpointEmphasis.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun86495: for (var _fun86495_ip = 0;;) switch (_fun86495_ip) {
+    _fun86541: for (var _fun86541_ip = 0;;) switch (_fun86541_ip) {
         case 0:
             var4 = require;
             var2 = exports;
@@ -53,8 +53,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var11 = var10.bind(var11)();
             var10 = 'translateY(6px)';
             if (!var11) {
-                _fun86495_ip = 195;
-                continue _fun86495
+                _fun86541_ip = 195;
+                continue _fun86541
             }
         case 189:
             var10 = 'translateY(2px)';
@@ -75,8 +75,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var10 = var9.bind(var10)();
             var9 = 'none';
             if (!var10) {
-                _fun86495_ip = 270;
-                continue _fun86495
+                _fun86541_ip = 270;
+                continue _fun86541
             }
         case 264:
             var9 = 'translateY(2px)';
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = 'modules/checkpoint/native/components/CheckpointEmphasis.tsx';
             var3 = var4.bind(var5)(var3);
             var1 = function(arg0) { // Original name: CheckpointEmphasis, environment: var1
-                _fun86496: for (var _fun86496_ip = 0;;) switch (_fun86496_ip) {
+                _fun86542: for (var _fun86542_ip = 0;;) switch (_fun86542_ip) {
                     case 0:
                         var0 = arg0;
                         var8 = var0.children;
@@ -126,8 +126,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4[1] = var7;
                         var7 = undefined;
                         if (var11) {
-                            _fun86496_ip = 148;
-                            continue _fun86496
+                            _fun86542_ip = 148;
+                            continue _fun86542
                         }
                     case 135:
                         var10 = {};
@@ -156,8 +156,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var9[0] = var10;
                         var10 = undefined;
                         if (var11) {
-                            _fun86496_ip = 239;
-                            continue _fun86496
+                            _fun86542_ip = 239;
+                            continue _fun86542
                         }
                     case 226:
                         var11 = {};
@@ -178,4 +178,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.default = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 479, 671, 11130, 3110, 3895, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 479, 671, 11136, 3110, 3901, 2]);

@@ -8,16 +8,16 @@ import kotlin.reflect.jvm.internal.impl.load.java.structure.JavaTypeParameter;
 public class e implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final LazyJavaTypeParameterResolver f34295d;
+    private final LazyJavaTypeParameterResolver f34311d;
 
     public e(LazyJavaTypeParameterResolver lazyJavaTypeParameterResolver) {
-        this.f34295d = lazyJavaTypeParameterResolver;
+        this.f34311d = lazyJavaTypeParameterResolver;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         LazyJavaTypeParameterDescriptor b10;
-        b10 = LazyJavaTypeParameterResolver.b(this.f34295d, (JavaTypeParameter) obj);
+        b10 = LazyJavaTypeParameterResolver.b(this.f34311d, (JavaTypeParameter) obj);
         return b10;
     }
 }

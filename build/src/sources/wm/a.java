@@ -9,40 +9,40 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a implements u3.f, LifecycleOwner {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f52681d;
+    private final String f52697d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final /* synthetic */ LifecycleOwner f52682e;
+    private final /* synthetic */ LifecycleOwner f52698e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final SavedStateRegistryController f52683i;
+    private final SavedStateRegistryController f52699i;
 
     public a(String key, LifecycleOwner lifecycleOwner) {
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(lifecycleOwner, "lifecycleOwner");
-        this.f52681d = key;
-        this.f52682e = lifecycleOwner;
+        this.f52697d = key;
+        this.f52698e = lifecycleOwner;
         SavedStateRegistryController a10 = SavedStateRegistryController.a(this);
         Intrinsics.checkNotNullExpressionValue(a10, "create(this)");
-        this.f52683i = a10;
+        this.f52699i = a10;
     }
 
     public final SavedStateRegistryController a() {
-        return this.f52683i;
+        return this.f52699i;
     }
 
     public final String b() {
-        return this.f52681d;
+        return this.f52697d;
     }
 
     @Override // androidx.lifecycle.LifecycleOwner
     public Lifecycle getLifecycle() {
-        return this.f52682e.getLifecycle();
+        return this.f52698e.getLifecycle();
     }
 
     @Override // u3.f
     public SavedStateRegistry getSavedStateRegistry() {
-        SavedStateRegistry b10 = this.f52683i.b();
+        SavedStateRegistry b10 = this.f52699i.b();
         Intrinsics.checkNotNullExpressionValue(b10, "controller.savedStateRegistry");
         return b10;
     }

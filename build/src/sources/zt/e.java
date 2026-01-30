@@ -16,15 +16,15 @@ import okio.ByteString;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ByteString f56111a;
+    private static final ByteString f56127a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ByteString f56112b;
+    private static final ByteString f56128b;
 
     static {
-        ByteString.a aVar = ByteString.f44363o;
-        f56111a = aVar.g("\"\\");
-        f56112b = aVar.g("\t ,=");
+        ByteString.a aVar = ByteString.f44379o;
+        f56127a = aVar.g("\"\\");
+        f56128b = aVar.g("\t ,=");
     }
 
     public static final List a(Headers headers, String headerName) {
@@ -173,7 +173,7 @@ public abstract class e {
         if (buffer.readByte() == 34) {
             Buffer buffer2 = new Buffer();
             while (true) {
-                long c02 = buffer.c0(f56111a);
+                long c02 = buffer.c0(f56127a);
                 if (c02 == -1) {
                     return null;
                 }
@@ -195,7 +195,7 @@ public abstract class e {
     }
 
     private static final String e(Buffer buffer) {
-        long c02 = buffer.c0(f56112b);
+        long c02 = buffer.c0(f56128b);
         if (c02 == -1) {
             c02 = buffer.size();
         }
@@ -209,8 +209,8 @@ public abstract class e {
         Intrinsics.checkNotNullParameter(cookieJar, "<this>");
         Intrinsics.checkNotNullParameter(url, "url");
         Intrinsics.checkNotNullParameter(headers, "headers");
-        if (cookieJar != CookieJar.f44036b) {
-            List e10 = Cookie.f44012j.e(url, headers);
+        if (cookieJar != CookieJar.f44052b) {
+            List e10 = Cookie.f44028j.e(url, headers);
             if (e10.isEmpty()) {
                 return;
             }

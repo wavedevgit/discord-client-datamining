@@ -5,16 +5,16 @@ import kotlin.jvm.internal.LongCompanionObject;
 public class g implements n0 {
 
     /* renamed from: d  reason: collision with root package name */
-    protected final n0[] f47144d;
+    protected final n0[] f47160d;
 
     public g(n0[] n0VarArr) {
-        this.f47144d = n0VarArr;
+        this.f47160d = n0VarArr;
     }
 
     @Override // qd.n0
     public final long b() {
         long j10 = Long.MAX_VALUE;
-        for (n0 n0Var : this.f47144d) {
+        for (n0 n0Var : this.f47160d) {
             long b10 = n0Var.b();
             if (b10 != Long.MIN_VALUE) {
                 j10 = Math.min(j10, b10);
@@ -28,7 +28,7 @@ public class g implements n0 {
 
     @Override // qd.n0
     public boolean d() {
-        for (n0 n0Var : this.f47144d) {
+        for (n0 n0Var : this.f47160d) {
             if (n0Var.d()) {
                 return true;
             }
@@ -48,7 +48,7 @@ public class g implements n0 {
                 return z12;
             }
             z10 = false;
-            for (n0 n0Var : this.f47144d) {
+            for (n0 n0Var : this.f47160d) {
                 long b11 = n0Var.b();
                 if (b11 != Long.MIN_VALUE && b11 <= j10) {
                     z11 = true;
@@ -67,7 +67,7 @@ public class g implements n0 {
     @Override // qd.n0
     public final long g() {
         long j10 = Long.MAX_VALUE;
-        for (n0 n0Var : this.f47144d) {
+        for (n0 n0Var : this.f47160d) {
             long g10 = n0Var.g();
             if (g10 != Long.MIN_VALUE) {
                 j10 = Math.min(j10, g10);
@@ -81,7 +81,7 @@ public class g implements n0 {
 
     @Override // qd.n0
     public final void h(long j10) {
-        for (n0 n0Var : this.f47144d) {
+        for (n0 n0Var : this.f47160d) {
             n0Var.h(j10);
         }
     }

@@ -6,14 +6,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var7 = dependencyMap;
     var4 = function(arg0) { // Original name: isRestrictedFromShowingGuildPurchaseEntryPoints, environment: var1
-        _fun24496: for (var _fun24496_ip = 0;;) switch (_fun24496_ip) {
+        _fun24497: for (var _fun24497_ip = 0;;) switch (_fun24497_ip) {
             case 0:
                 var3 = arg0;
                 var0 = null;
                 var0 = var0 != var3;
                 if (!var0) {
-                    _fun24496_ip = 35;
-                    continue _fun24496
+                    _fun24497_ip = 35;
+                    continue _fun24497
                 }
             case 12:
                 var2 = var3.includes;
@@ -26,14 +26,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot5 = var4;
     var3 = function(arg0) { // Original name: isRestrictedFromUpdatingCreatorMonetizationSettings, environment: var1
-        _fun24497: for (var _fun24497_ip = 0;;) switch (_fun24497_ip) {
+        _fun24498: for (var _fun24498_ip = 0;;) switch (_fun24498_ip) {
             case 0:
                 var3 = arg0;
                 var0 = null;
                 var0 = var0 != var3;
                 if (!var0) {
-                    _fun24497_ip = 35;
-                    continue _fun24497
+                    _fun24498_ip = 35;
+                    continue _fun24498
                 }
             case 12:
                 var2 = var3.includes;
@@ -84,67 +84,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.isRestrictedFromShowingGuildPurchaseEntryPoints = var4;
     var4 = function(arg0) { // Original name: shouldHideGuildPurchaseEntryPoints, environment: var1
-        _fun24498: for (var _fun24498_ip = 0;;) switch (_fun24498_ip) {
-            case 0:
-                var6 = arg0;
-                var0 = null;
-                if (!(var0 != var6)) {
-                    _fun24498_ip = 126;
-                    continue _fun24498
-                }
-            case 9:
-                var3 = _closure1_slot0;
-                var2 = var3.getMonetizationRestrictionsFetchState;
-                var5 = var2.bind(var3)(var6);
-                var2 = var3.getMonetizationRestrictions;
-                var3 = var2.bind(var3)(var6);
-                var4 = _closure1_slot2;
-                var2 = var4.getGuild;
-                var4 = var2.bind(var4)(var6);
-                var2 = _closure1_slot1;
-                var2 = var2.FETCHED;
-                if (!(var5 !== var2)) {
-                    _fun24498_ip = 113;
-                    continue _fun24498
-                }
-            case 66:
-                var5 = var0 == var4;
-                var2 = undefined;
-                if (var5) {
-                    _fun24498_ip = 101;
-                    continue _fun24498
-                }
-            case 75:
-                var6 = var4.features;
-                var5 = var6.has;
-                var4 = _closure1_slot4;
-                var4 = var4.CREATOR_MONETIZABLE_RESTRICTED;
-                var2 = var5.bind(var6)(var4);
-            case 101:
-                var0 = var0 == var2;
-                if (var0) {
-                    _fun24498_ip = 111;
-                    continue _fun24498
-                }
-            case 108:
-                var0 = var2;
-            case 111:
-                _fun24498_ip = 124;
-                continue _fun24498;
-            case 113:
-                var2 = _closure1_slot5;
-                var1 = undefined;
-                var0 = var2.bind(var1)(var3);
-            case 124:
-                return var0;
-            case 126:
-                var0 = false;
-                return var0;
-        }
-    };
-    var2.shouldHideGuildPurchaseEntryPoints = var4;
-    var2.isRestrictedFromUpdatingCreatorMonetizationSettings = var3;
-    var3 = function(arg0) { // Original name: shouldRestrictUpdatingCreatorMonetizationSettings, environment: var1
         _fun24499: for (var _fun24499_ip = 0;;) switch (_fun24499_ip) {
             case 0:
                 var6 = arg0;
@@ -193,6 +132,67 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _fun24499_ip = 124;
                 continue _fun24499;
             case 113:
+                var2 = _closure1_slot5;
+                var1 = undefined;
+                var0 = var2.bind(var1)(var3);
+            case 124:
+                return var0;
+            case 126:
+                var0 = false;
+                return var0;
+        }
+    };
+    var2.shouldHideGuildPurchaseEntryPoints = var4;
+    var2.isRestrictedFromUpdatingCreatorMonetizationSettings = var3;
+    var3 = function(arg0) { // Original name: shouldRestrictUpdatingCreatorMonetizationSettings, environment: var1
+        _fun24500: for (var _fun24500_ip = 0;;) switch (_fun24500_ip) {
+            case 0:
+                var6 = arg0;
+                var0 = null;
+                if (!(var0 != var6)) {
+                    _fun24500_ip = 126;
+                    continue _fun24500
+                }
+            case 9:
+                var3 = _closure1_slot0;
+                var2 = var3.getMonetizationRestrictionsFetchState;
+                var5 = var2.bind(var3)(var6);
+                var2 = var3.getMonetizationRestrictions;
+                var3 = var2.bind(var3)(var6);
+                var4 = _closure1_slot2;
+                var2 = var4.getGuild;
+                var4 = var2.bind(var4)(var6);
+                var2 = _closure1_slot1;
+                var2 = var2.FETCHED;
+                if (!(var5 !== var2)) {
+                    _fun24500_ip = 113;
+                    continue _fun24500
+                }
+            case 66:
+                var5 = var0 == var4;
+                var2 = undefined;
+                if (var5) {
+                    _fun24500_ip = 101;
+                    continue _fun24500
+                }
+            case 75:
+                var6 = var4.features;
+                var5 = var6.has;
+                var4 = _closure1_slot4;
+                var4 = var4.CREATOR_MONETIZABLE_RESTRICTED;
+                var2 = var5.bind(var6)(var4);
+            case 101:
+                var0 = var0 == var2;
+                if (var0) {
+                    _fun24500_ip = 111;
+                    continue _fun24500
+                }
+            case 108:
+                var0 = var2;
+            case 111:
+                _fun24500_ip = 124;
+                continue _fun24500;
+            case 113:
                 var2 = _closure1_slot6;
                 var1 = undefined;
                 var0 = var2.bind(var1)(var3);
@@ -205,14 +205,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.shouldRestrictUpdatingCreatorMonetizationSettings = var3;
     var1 = function(arg0) { // Original name: isRestrictedFromMonetizationReapplication, environment: var1
-        _fun24500: for (var _fun24500_ip = 0;;) switch (_fun24500_ip) {
+        _fun24501: for (var _fun24501_ip = 0;;) switch (_fun24501_ip) {
             case 0:
                 var3 = arg0;
                 var0 = null;
                 var0 = var0 != var3;
                 if (!var0) {
-                    _fun24500_ip = 35;
-                    continue _fun24500
+                    _fun24501_ip = 35;
+                    continue _fun24501
                 }
             case 12:
                 var2 = var3.includes;

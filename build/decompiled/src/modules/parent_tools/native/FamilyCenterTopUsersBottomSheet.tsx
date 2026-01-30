@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
     var0 = function(arg0) { // Original name: UserRow, environment: var1
-        _fun81857: for (var _fun81857_ip = 0;;) switch (_fun81857_ip) {
+        _fun81903: for (var _fun81903_ip = 0;;) switch (_fun81903_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.userActivity;
@@ -19,8 +19,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var2.bind(var3)(var0);
                 var0 = null;
                 if (!(var0 != var8)) {
-                    _fun81857_ip = 219;
-                    continue _fun81857
+                    _fun81903_ip = 219;
+                    continue _fun81903
                 }
             case 42:
                 var10 = _closure1_slot0;
@@ -176,4 +176,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1613, 33, 1297, 4615, 4854, 3195, 5409, 5164, 3895, 1234, 1849, 5320, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1613, 33, 1297, 4621, 4860, 3195, 5413, 5170, 3901, 1234, 1849, 5324, 2]);

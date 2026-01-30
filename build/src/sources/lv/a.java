@@ -8,10 +8,10 @@ import kotlin.text.StringsKt;
 public final class a extends k {
 
     /* renamed from: i  reason: collision with root package name */
-    public static final C0485a f37728i = new C0485a(null);
+    public static final C0485a f37744i = new C0485a(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private final j f37729e;
+    private final j f37745e;
 
     /* renamed from: lv.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -28,11 +28,11 @@ public final class a extends k {
     public a(j replaceData) {
         super(null);
         Intrinsics.checkNotNullParameter(replaceData, "replaceData");
-        this.f37729e = replaceData;
+        this.f37745e = replaceData;
     }
 
     public j a() {
-        return this.f37729e;
+        return this.f37745e;
     }
 
     @Override // kotlin.jvm.functions.Function0

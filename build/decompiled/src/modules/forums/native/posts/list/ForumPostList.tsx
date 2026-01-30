@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/forums/native/posts/list/ForumPostList.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: ForumPostList, environment: var1
-        _fun89982: for (var _fun89982_ip = 0;;) switch (_fun89982_ip) {
+        _fun90219: for (var _fun90219_ip = 0;;) switch (_fun90219_ip) {
             case 0:
                 var0 = arg0;
                 var21 = var0.messageContent;
@@ -114,16 +114,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.style = var6;
                 var6 = var15;
                 if (var15) {
-                    _fun89982_ip = 201;
-                    continue _fun89982
+                    _fun90219_ip = 201;
+                    continue _fun90219
                 }
             case 192:
                 var7 = var28.length;
                 var6 = var24 !== var7;
             case 201:
                 if (!var6) {
-                    _fun89982_ip = 351;
-                    continue _fun89982
+                    _fun90219_ip = 351;
+                    continue _fun90219
                 }
             case 207:
                 var14 = _closure1_slot7;
@@ -133,8 +133,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7.style = var23;
                 var23 = var15;
                 if (!var23) {
-                    _fun89982_ip = 264;
-                    continue _fun89982
+                    _fun90219_ip = 264;
+                    continue _fun90219
                 }
             case 232:
                 var26 = _closure1_slot6;
@@ -151,8 +151,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var23 = var28.length;
                 var23 = var24 !== var23;
                 if (!var23) {
-                    _fun89982_ip = 337;
-                    continue _fun89982
+                    _fun90219_ip = 337;
+                    continue _fun90219
                 }
             case 284:
                 var26 = _closure1_slot6;
@@ -214,4 +214,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1379, 33, 1297, 8859, 11617, 11627, 11639, 11642, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1379, 33, 1297, 8863, 11639, 11649, 11661, 11664, 2]);

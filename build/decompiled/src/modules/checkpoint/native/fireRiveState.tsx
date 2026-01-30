@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/checkpoint/native/fireRiveState.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: fireRiveState, environment: var1
-        _fun86493: for (var _fun86493_ip = 0;;) switch (_fun86493_ip) {
+        _fun86539: for (var _fun86539_ip = 0;;) switch (_fun86539_ip) {
             case 0:
                 var4 = arg0;
                 var2 = _closure1_slot0;
@@ -34,14 +34,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.isIOS;
                 var1 = var1.bind(var2)();
                 if (!var1) {
-                    _fun86493_ip = 68;
-                    continue _fun86493
+                    _fun86539_ip = 68;
+                    continue _fun86539
                 }
             case 40:
                 var1 = null;
                 if (!(var1 != var4)) {
-                    _fun86493_ip = 68;
-                    continue _fun86493
+                    _fun86539_ip = 68;
+                    continue _fun86539
                 }
             case 46:
                 var3 = var4.fireState;

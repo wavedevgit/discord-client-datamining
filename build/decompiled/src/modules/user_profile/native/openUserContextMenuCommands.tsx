@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/native/openUserContextMenuCommands.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: openUserContextMenuCommands, environment: var1
-        _fun92272: for (var _fun92272_ip = 0;;) switch (_fun92272_ip) {
+        _fun92509: for (var _fun92509_ip = 0;;) switch (_fun92509_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.userId;
@@ -60,8 +60,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var9[var3];
                 var3 = var8.bind(var0)(var3);
                 if (var2) {
-                    _fun92272_ip = 269;
-                    continue _fun92272
+                    _fun92509_ip = 269;
+                    continue _fun92509
                 }
             case 152:
                 var12 = var3.openLazy;
@@ -105,8 +105,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = var11;
                 var14 = var10;
                 var2 = var17[var12](var16, var15, var14, var13, var12);
-                _fun92272_ip = 363;
-                continue _fun92272;
+                _fun92509_ip = 363;
+                continue _fun92509;
             case 269:
                 var2 = var3.hideActionSheet;
                 var2 = var2.bind(var3)();
@@ -149,4 +149,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6932, 9572, 3237, 3872, 1636, 9573, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6935, 9577, 3237, 3878, 1636, 9578, 1307, 2]);

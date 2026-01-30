@@ -29,22 +29,22 @@ public final class PrimitiveType {
     public static final PrimitiveType SHORT;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ PrimitiveType[] f33424p;
+    private static final /* synthetic */ PrimitiveType[] f33440p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f33425q;
+    private static final /* synthetic */ EnumEntries f33441q;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Name f33426d;
+    private final Name f33442d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Name f33427e;
+    private final Name f33443e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Lazy f33428i;
+    private final Lazy f33444i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Lazy f33429o;
+    private final Lazy f33445o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -72,8 +72,8 @@ public final class PrimitiveType {
         PrimitiveType primitiveType7 = new PrimitiveType("DOUBLE", 7, "Double");
         DOUBLE = primitiveType7;
         PrimitiveType[] a10 = a();
-        f33424p = a10;
-        f33425q = pr.a.a(a10);
+        f33440p = a10;
+        f33441q = pr.a.a(a10);
         Companion = new Companion(null);
         NUMBER_TYPES = x0.i(primitiveType, primitiveType2, primitiveType3, primitiveType4, primitiveType5, primitiveType6, primitiveType7);
     }
@@ -81,13 +81,13 @@ public final class PrimitiveType {
     private PrimitiveType(String str, int i10, String str2) {
         Name identifier = Name.identifier(str2);
         Intrinsics.checkNotNullExpressionValue(identifier, "identifier(...)");
-        this.f33426d = identifier;
+        this.f33442d = identifier;
         Name identifier2 = Name.identifier(str2 + "Array");
         Intrinsics.checkNotNullExpressionValue(identifier2, "identifier(...)");
-        this.f33427e = identifier2;
-        o oVar = o.f31103e;
-        this.f33428i = l.a(oVar, new c(this));
-        this.f33429o = l.a(oVar, new d(this));
+        this.f33443e = identifier2;
+        o oVar = o.f31119e;
+        this.f33444i = l.a(oVar, new c(this));
+        this.f33445o = l.a(oVar, new d(this));
     }
 
     private static final /* synthetic */ PrimitiveType[] a() {
@@ -96,12 +96,12 @@ public final class PrimitiveType {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final FqName f(PrimitiveType primitiveType) {
-        return StandardNames.BUILT_INS_PACKAGE_FQ_NAME.child(primitiveType.f33427e);
+        return StandardNames.BUILT_INS_PACKAGE_FQ_NAME.child(primitiveType.f33443e);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final FqName g(PrimitiveType primitiveType) {
-        return StandardNames.BUILT_INS_PACKAGE_FQ_NAME.child(primitiveType.f33426d);
+        return StandardNames.BUILT_INS_PACKAGE_FQ_NAME.child(primitiveType.f33442d);
     }
 
     public static PrimitiveType valueOf(String str) {
@@ -109,26 +109,26 @@ public final class PrimitiveType {
     }
 
     public static PrimitiveType[] values() {
-        return (PrimitiveType[]) f33424p.clone();
+        return (PrimitiveType[]) f33440p.clone();
     }
 
     @NotNull
     public final FqName getArrayTypeFqName() {
-        return (FqName) this.f33429o.getValue();
+        return (FqName) this.f33445o.getValue();
     }
 
     @NotNull
     public final Name getArrayTypeName() {
-        return this.f33427e;
+        return this.f33443e;
     }
 
     @NotNull
     public final FqName getTypeFqName() {
-        return (FqName) this.f33428i.getValue();
+        return (FqName) this.f33444i.getValue();
     }
 
     @NotNull
     public final Name getTypeName() {
-        return this.f33426d;
+        return this.f33442d;
     }
 }

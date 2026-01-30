@@ -94,7 +94,7 @@ class ClockFaceView extends d implements ClockHandView.b {
         @Override // androidx.core.view.a
         public void onInitializeAccessibilityNodeInfo(View view, AccessibilityNodeInfoCompat accessibilityNodeInfoCompat) {
             super.onInitializeAccessibilityNodeInfo(view, accessibilityNodeInfoCompat);
-            int intValue = ((Integer) view.getTag(yg.f.f54438r)).intValue();
+            int intValue = ((Integer) view.getTag(yg.f.f54454r)).intValue();
             if (intValue > 0) {
                 accessibilityNodeInfoCompat.d1((View) ClockFaceView.this.f16596s.get(intValue - 1));
             }
@@ -188,14 +188,14 @@ class ClockFaceView extends d implements ClockHandView.b {
                 this.f16596s.remove(i11);
             } else {
                 if (textView == null) {
-                    textView = (TextView) from.inflate(h.f54458g, (ViewGroup) this, false);
+                    textView = (TextView) from.inflate(h.f54474g, (ViewGroup) this, false);
                     this.f16596s.put(i11, textView);
                     addView(textView);
                 }
                 textView.setText(this.A[i11]);
-                textView.setTag(yg.f.f54438r, Integer.valueOf(i11));
+                textView.setTag(yg.f.f54454r, Integer.valueOf(i11));
                 int i12 = (i11 / 12) + 1;
-                textView.setTag(yg.f.f54433m, Integer.valueOf(i12));
+                textView.setTag(yg.f.f54449m, Integer.valueOf(i12));
                 if (i12 > 1) {
                     z10 = true;
                 }
@@ -269,19 +269,19 @@ class ClockFaceView extends d implements ClockHandView.b {
         this.f16595r = new Rect();
         this.f16596s = new SparseArray();
         this.f16599v = new float[]{0.0f, 0.9f, 1.0f};
-        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, k.f54691r1, i10, j.f54523z);
+        TypedArray obtainStyledAttributes = context.obtainStyledAttributes(attributeSet, k.f54707r1, i10, j.f54539z);
         Resources resources = getResources();
-        ColorStateList a10 = lh.c.a(context, obtainStyledAttributes, k.f54709t1);
+        ColorStateList a10 = lh.c.a(context, obtainStyledAttributes, k.f54725t1);
         this.C = a10;
-        LayoutInflater.from(context).inflate(h.f54459h, (ViewGroup) this, true);
-        ClockHandView clockHandView = (ClockHandView) findViewById(yg.f.f54432l);
+        LayoutInflater.from(context).inflate(h.f54475h, (ViewGroup) this, true);
+        ClockHandView clockHandView = (ClockHandView) findViewById(yg.f.f54448l);
         this.f16592o = clockHandView;
-        this.f16600w = resources.getDimensionPixelSize(yg.d.f54403t);
+        this.f16600w = resources.getDimensionPixelSize(yg.d.f54419t);
         int colorForState = a10.getColorForState(new int[]{16842913}, a10.getDefaultColor());
         this.f16598u = new int[]{colorForState, colorForState, a10.getDefaultColor()};
         clockHandView.b(this);
-        int defaultColor = g.a.a(context, yg.c.f54371f).getDefaultColor();
-        ColorStateList a11 = lh.c.a(context, obtainStyledAttributes, k.f54700s1);
+        int defaultColor = g.a.a(context, yg.c.f54387f).getDefaultColor();
+        ColorStateList a11 = lh.c.a(context, obtainStyledAttributes, k.f54716s1);
         setBackgroundColor(a11 != null ? a11.getDefaultColor() : defaultColor);
         getViewTreeObserver().addOnPreDrawListener(new a());
         setFocusable(true);
@@ -292,6 +292,6 @@ class ClockFaceView extends d implements ClockHandView.b {
         x(strArr, 0);
         this.f16601x = resources.getDimensionPixelSize(yg.d.I);
         this.f16602y = resources.getDimensionPixelSize(yg.d.J);
-        this.f16603z = resources.getDimensionPixelSize(yg.d.f54405v);
+        this.f16603z = resources.getDimensionPixelSize(yg.d.f54421v);
     }
 }

@@ -11,11 +11,11 @@ public enum y0 implements jt.n, jt.v {
     
 
     /* renamed from: s  reason: collision with root package name */
-    private static final y0[] f40934s = values();
+    private static final y0[] f40950s = values();
 
     public static y0 h(int i10) {
         if (i10 >= 1 && i10 <= 7) {
-            return f40934s[i10 - 1];
+            return f40950s[i10 - 1];
         }
         throw new IllegalArgumentException("Out of range: " + i10);
     }

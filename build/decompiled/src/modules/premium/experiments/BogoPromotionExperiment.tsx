@@ -45,13 +45,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/premium/experiments/BogoPromotionExperiment.tsx';
     var4 = var5.bind(var6)(var4);
     var4 = function() { // Original name: _default, environment: var1
-        _fun57967: for (var _fun57967_ip = 0;;) switch (_fun57967_ip) {
+        _fun58011: for (var _fun58011_ip = 0;;) switch (_fun58011_ip) {
             case 0:
                 var4 = arguments[0];
                 var0 = undefined;
                 if (!(var4 === var0)) {
-                    _fun57967_ip = 11;
-                    continue _fun57967
+                    _fun58011_ip = 11;
+                    continue _fun58011
                 }
             case 9:
                 var4 = false;
@@ -70,13 +70,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var4;
     var2.BogoPromotionExperiment = var3;
     var1 = function() { // Environment: var1
-        _fun57968: for (var _fun57968_ip = 0;;) switch (_fun57968_ip) {
+        _fun58012: for (var _fun58012_ip = 0;;) switch (_fun58012_ip) {
             case 0:
                 var4 = arguments[0];
                 var0 = undefined;
                 if (!(var4 === var0)) {
-                    _fun57968_ip = 11;
-                    continue _fun57968
+                    _fun58012_ip = 11;
+                    continue _fun58012
                 }
             case 9:
                 var4 = false;

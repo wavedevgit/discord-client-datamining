@@ -14,10 +14,10 @@ import kotlin.coroutines.CoroutineContext;
 public final class t extends s implements k {
 
     /* renamed from: o  reason: collision with root package name */
-    private final Executor f36357o;
+    private final Executor f36373o;
 
     public t(Executor executor) {
-        this.f36357o = executor;
+        this.f36373o = executor;
         ls.a.a(f2());
     }
 
@@ -60,7 +60,7 @@ public final class t extends s implements k {
         if (scheduledFuture != null) {
             return new n(scheduledFuture);
         }
-        return j.f36340t.D0(j11, runnable2, coroutineContext2);
+        return j.f36356t.D0(j11, runnable2, coroutineContext2);
     }
 
     @Override // kotlinx.coroutines.CoroutineDispatcher
@@ -96,7 +96,7 @@ public final class t extends s implements k {
         if (scheduledFuture != null) {
             gs.l.c(cancellableContinuation, new c(scheduledFuture));
         } else {
-            j.f36340t.F(j11, cancellableContinuation);
+            j.f36356t.F(j11, cancellableContinuation);
         }
     }
 
@@ -123,7 +123,7 @@ public final class t extends s implements k {
 
     @Override // kotlinx.coroutines.s
     public Executor f2() {
-        return this.f36357o;
+        return this.f36373o;
     }
 
     public int hashCode() {

@@ -8,7 +8,7 @@ import org.jetbrains.annotations.NotNull;
 public final class e implements d {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final e f27621d = new e();
+    public static final e f27637d = new e();
     @NotNull
     public static final Parcelable.Creator<e> CREATOR = new a();
 
@@ -19,7 +19,7 @@ public final class e implements d {
         public final e createFromParcel(Parcel parcel) {
             Intrinsics.checkNotNullParameter(parcel, "parcel");
             parcel.readInt();
-            return e.f27621d;
+            return e.f27637d;
         }
 
         @Override // android.os.Parcelable.Creator

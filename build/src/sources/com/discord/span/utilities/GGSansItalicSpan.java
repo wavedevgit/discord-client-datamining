@@ -43,13 +43,13 @@ public final class GGSansItalicSpan extends StyleSpan {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit updateDrawState$lambda$0(GGSansItalicSpan gGSansItalicSpan, TextPaint textPaint) {
         super.updateDrawState(textPaint);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit updateMeasureState$lambda$1(GGSansItalicSpan gGSansItalicSpan, TextPaint textPaint) {
         super.updateMeasureState(textPaint);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // android.text.style.StyleSpan, android.text.style.CharacterStyle

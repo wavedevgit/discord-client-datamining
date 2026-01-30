@@ -5,58 +5,58 @@ import ui.c;
 final class m5 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final m5 f43275a = new m5();
+    static final m5 f43291a = new m5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43276b;
+    private static final ui.c f43292b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43277c;
+    private static final ui.c f43293c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f43278d;
+    private static final ui.c f43294d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f43279e;
+    private static final ui.c f43295e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final ui.c f43280f;
+    private static final ui.c f43296f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final ui.c f43281g;
+    private static final ui.c f43297g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final ui.c f43282h;
+    private static final ui.c f43298h;
 
     static {
         c.b a10 = ui.c.a("renderer");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43276b = a10.b(s1Var.b()).a();
+        f43292b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("vendor");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43277c = a11.b(s1Var2.b()).a();
+        f43293c = a11.b(s1Var2.b()).a();
         c.b a12 = ui.c.a("version");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f43278d = a12.b(s1Var3.b()).a();
+        f43294d = a12.b(s1Var3.b()).a();
         c.b a13 = ui.c.a("maxImages");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f43279e = a13.b(s1Var4.b()).a();
+        f43295e = a13.b(s1Var4.b()).a();
         c.b a14 = ui.c.a("maxSsbo");
         s1 s1Var5 = new s1();
         s1Var5.a(5);
-        f43280f = a14.b(s1Var5.b()).a();
+        f43296f = a14.b(s1Var5.b()).a();
         c.b a15 = ui.c.a("workGroupSizes");
         s1 s1Var6 = new s1();
         s1Var6.a(6);
-        f43281g = a15.b(s1Var6.b()).a();
+        f43297g = a15.b(s1Var6.b()).a();
         c.b a16 = ui.c.a("errorCode");
         s1 s1Var7 = new s1();
         s1Var7.a(7);
-        f43282h = a16.b(s1Var7.b()).a();
+        f43298h = a16.b(s1Var7.b()).a();
     }
 
     private m5() {

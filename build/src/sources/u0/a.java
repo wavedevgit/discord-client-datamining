@@ -12,13 +12,13 @@ import java.util.Set;
 public class a extends SimpleArrayMap implements Map {
 
     /* renamed from: o  reason: collision with root package name */
-    C0659a f49979o;
+    C0659a f49995o;
 
     /* renamed from: p  reason: collision with root package name */
-    c f49980p;
+    c f49996p;
 
     /* renamed from: q  reason: collision with root package name */
-    e f49981q;
+    e f49997q;
 
     /* renamed from: u0.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -58,24 +58,24 @@ public class a extends SimpleArrayMap implements Map {
     final class d implements Iterator, Map.Entry {
 
         /* renamed from: d  reason: collision with root package name */
-        int f49985d;
+        int f50001d;
 
         /* renamed from: e  reason: collision with root package name */
-        int f49986e = -1;
+        int f50002e = -1;
 
         /* renamed from: i  reason: collision with root package name */
-        boolean f49987i;
+        boolean f50003i;
 
         d() {
-            this.f49985d = a.this.size() - 1;
+            this.f50001d = a.this.size() - 1;
         }
 
         @Override // java.util.Iterator
         /* renamed from: a */
         public Map.Entry next() {
             if (hasNext()) {
-                this.f49986e++;
-                this.f49987i = true;
+                this.f50002e++;
+                this.f50003i = true;
                 return this;
             }
             throw new NoSuchElementException();
@@ -83,12 +83,12 @@ public class a extends SimpleArrayMap implements Map {
 
         @Override // java.util.Map.Entry
         public boolean equals(Object obj) {
-            if (this.f49987i) {
+            if (this.f50003i) {
                 if (!(obj instanceof Map.Entry)) {
                     return false;
                 }
                 Map.Entry entry = (Map.Entry) obj;
-                if (!v0.a.c(entry.getKey(), a.this.f(this.f49986e)) || !v0.a.c(entry.getValue(), a.this.j(this.f49986e))) {
+                if (!v0.a.c(entry.getKey(), a.this.f(this.f50002e)) || !v0.a.c(entry.getValue(), a.this.j(this.f50002e))) {
                     return false;
                 }
                 return true;
@@ -98,23 +98,23 @@ public class a extends SimpleArrayMap implements Map {
 
         @Override // java.util.Map.Entry
         public Object getKey() {
-            if (this.f49987i) {
-                return a.this.f(this.f49986e);
+            if (this.f50003i) {
+                return a.this.f(this.f50002e);
             }
             throw new IllegalStateException("This container does not support retaining Map.Entry objects");
         }
 
         @Override // java.util.Map.Entry
         public Object getValue() {
-            if (this.f49987i) {
-                return a.this.j(this.f49986e);
+            if (this.f50003i) {
+                return a.this.j(this.f50002e);
             }
             throw new IllegalStateException("This container does not support retaining Map.Entry objects");
         }
 
         @Override // java.util.Iterator
         public boolean hasNext() {
-            if (this.f49986e < this.f49985d) {
+            if (this.f50002e < this.f50001d) {
                 return true;
             }
             return false;
@@ -123,9 +123,9 @@ public class a extends SimpleArrayMap implements Map {
         @Override // java.util.Map.Entry
         public int hashCode() {
             int hashCode;
-            if (this.f49987i) {
-                Object f10 = a.this.f(this.f49986e);
-                Object j10 = a.this.j(this.f49986e);
+            if (this.f50003i) {
+                Object f10 = a.this.f(this.f50002e);
+                Object j10 = a.this.j(this.f50002e);
                 int i10 = 0;
                 if (f10 == null) {
                     hashCode = 0;
@@ -142,11 +142,11 @@ public class a extends SimpleArrayMap implements Map {
 
         @Override // java.util.Iterator
         public void remove() {
-            if (this.f49987i) {
-                a.this.h(this.f49986e);
-                this.f49986e--;
-                this.f49985d--;
-                this.f49987i = false;
+            if (this.f50003i) {
+                a.this.h(this.f50002e);
+                this.f50002e--;
+                this.f50001d--;
+                this.f50003i = false;
                 return;
             }
             throw new IllegalStateException();
@@ -154,8 +154,8 @@ public class a extends SimpleArrayMap implements Map {
 
         @Override // java.util.Map.Entry
         public Object setValue(Object obj) {
-            if (this.f49987i) {
-                return a.this.i(this.f49986e, obj);
+            if (this.f50003i) {
+                return a.this.i(this.f50002e, obj);
             }
             throw new IllegalStateException("This container does not support retaining Map.Entry objects");
         }
@@ -215,10 +215,10 @@ public class a extends SimpleArrayMap implements Map {
 
     @Override // java.util.Map
     public Set entrySet() {
-        C0659a c0659a = this.f49979o;
+        C0659a c0659a = this.f49995o;
         if (c0659a == null) {
             C0659a c0659a2 = new C0659a();
-            this.f49979o = c0659a2;
+            this.f49995o = c0659a2;
             return c0659a2;
         }
         return c0659a;
@@ -240,10 +240,10 @@ public class a extends SimpleArrayMap implements Map {
 
     @Override // java.util.Map
     public Set keySet() {
-        c cVar = this.f49980p;
+        c cVar = this.f49996p;
         if (cVar == null) {
             c cVar2 = new c();
-            this.f49980p = cVar2;
+            this.f49996p = cVar2;
             return cVar2;
         }
         return cVar;
@@ -288,10 +288,10 @@ public class a extends SimpleArrayMap implements Map {
 
     @Override // java.util.Map
     public Collection values() {
-        e eVar = this.f49981q;
+        e eVar = this.f49997q;
         if (eVar == null) {
             e eVar2 = new e();
-            this.f49981q = eVar2;
+            this.f49997q = eVar2;
             return eVar2;
         }
         return eVar;

@@ -80,7 +80,7 @@ public final class ClickableStack_AttributesJsonAdapter extends h {
         }
         Constructor<ClickableStack.Attributes> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = ClickableStack.Attributes.class.getDeclaredConstructor(List.class, JsonLogicBoolean.class, JsonLogicBoolean.class, Integer.TYPE, c.f49081c);
+            constructor = ClickableStack.Attributes.class.getDeclaredConstructor(List.class, JsonLogicBoolean.class, JsonLogicBoolean.class, Integer.TYPE, c.f49097c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

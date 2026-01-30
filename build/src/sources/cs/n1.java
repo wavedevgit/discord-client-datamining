@@ -34,7 +34,7 @@ public final class n1 extends g2 implements kotlin.reflect.h {
         @Override // kotlin.jvm.functions.Function3
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3) {
             Q(obj, obj2, obj3);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
     }
 
@@ -44,7 +44,7 @@ public final class n1 extends g2 implements kotlin.reflect.h {
         Intrinsics.checkNotNullParameter(container, "container");
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(signature, "signature");
-        this.B = ir.l.a(ir.o.f31103e, new m1(this));
+        this.B = ir.l.a(ir.o.f31119e, new m1(this));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -67,6 +67,6 @@ public final class n1 extends g2 implements kotlin.reflect.h {
         super(container, descriptor);
         Intrinsics.checkNotNullParameter(container, "container");
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        this.B = ir.l.a(ir.o.f31103e, new m1(this));
+        this.B = ir.l.a(ir.o.f31119e, new m1(this));
     }
 }

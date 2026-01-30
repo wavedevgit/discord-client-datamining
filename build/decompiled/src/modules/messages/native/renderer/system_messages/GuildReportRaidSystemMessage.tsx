@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/GuildReportRaidSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: createGuildReportRaidSystemMessage, environment: var1
-        _fun55720: for (var _fun55720_ip = 0;;) switch (_fun55720_ip) {
+        _fun55765: for (var _fun55765_ip = 0;;) switch (_fun55765_ip) {
             case 0:
                 var7 = arg0;
                 var14 = var7.message;
@@ -56,8 +56,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var4 == var12;
                 var0 = undefined;
                 if (var9) {
-                    _fun55720_ip = 100;
-                    continue _fun55720
+                    _fun55765_ip = 100;
+                    continue _fun55765
                 }
             case 95:
                 var0 = var12.guild_id;
@@ -97,8 +97,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = 'username';
                 var9 = null;
                 if (!(var6 === var11)) {
-                    _fun55720_ip = 263;
-                    continue _fun55720
+                    _fun55765_ip = 263;
+                    continue _fun55765
                 }
             case 260:
                 var9 = var10;
@@ -107,8 +107,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.roleColor = var10;
                 var9 = null;
                 if (!var16) {
-                    _fun55720_ip = 281;
-                    continue _fun55720
+                    _fun55765_ip = 281;
+                    continue _fun55765
                 }
             case 278:
                 var9 = var15;
@@ -117,8 +117,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = 'dot';
                 var9 = var9 === var11;
                 if (!var9) {
-                    _fun55720_ip = 301;
-                    continue _fun55720
+                    _fun55765_ip = 301;
+                    continue _fun55765
                 }
             case 297:
                 var9 = var4 != var10;
@@ -132,8 +132,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var4 == var0;
                 var1 = undefined;
                 if (var9) {
-                    _fun55720_ip = 342;
-                    continue _fun55720
+                    _fun55765_ip = 342;
+                    continue _fun55765
                 }
             case 337:
                 var1 = var0.name;
@@ -141,8 +141,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var4 != var1;
                 var0 = '';
                 if (!var9) {
-                    _fun55720_ip = 356;
-                    continue _fun55720
+                    _fun55765_ip = 356;
+                    continue _fun55765
                 }
             case 353:
                 var0 = var1;
@@ -192,8 +192,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var4 != var3;
                 var4 = null;
                 if (!var5) {
-                    _fun55720_ip = 556;
-                    continue _fun55720
+                    _fun55765_ip = 556;
+                    continue _fun55765
                 }
             case 553:
                 var4 = var3;
@@ -227,4 +227,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createGuildReportRaidSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1410, 6626, 6634, 6707, 6635, 6708, 6636, 1234, 1418, 1417, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1410, 6629, 6637, 6710, 6638, 6711, 6639, 1234, 1418, 1417, 2]);

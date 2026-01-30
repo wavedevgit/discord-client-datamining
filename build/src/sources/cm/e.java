@@ -94,7 +94,7 @@ public final class e {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -210,7 +210,7 @@ public final class e {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 

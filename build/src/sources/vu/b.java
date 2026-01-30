@@ -8,13 +8,13 @@ import lu.c;
 public final class b implements ku.b, lu.c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f51959a = new b();
+    public static final b f51975a = new b();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static final class a extends Lambda implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f51960d = new a();
+        public static final a f51976d = new a();
 
         a() {
             super(2);
@@ -56,7 +56,7 @@ public final class b implements ku.b, lu.c {
 
     @Override // ku.b
     public Object f(Object obj, Object obj2) {
-        return Boolean.valueOf(b(pv.a.c(obj), a.f51960d));
+        return Boolean.valueOf(b(pv.a.c(obj), a.f51976d));
     }
 
     @Override // lu.b

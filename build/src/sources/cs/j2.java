@@ -123,7 +123,7 @@ public abstract class j2 extends a0 implements KProperty {
         private final z2.a f21173r = z2.c(new k2(this));
 
         /* renamed from: s  reason: collision with root package name */
-        private final Lazy f21174s = ir.l.a(ir.o.f31103e, new l2(this));
+        private final Lazy f21174s = ir.l.a(ir.o.f31119e, new l2(this));
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final ds.h M(c cVar) {
@@ -185,7 +185,7 @@ public abstract class j2 extends a0 implements KProperty {
         private final z2.a f21176r = z2.c(new m2(this));
 
         /* renamed from: s  reason: collision with root package name */
-        private final Lazy f21177s = ir.l.a(ir.o.f31103e, new n2(this));
+        private final Lazy f21177s = ir.l.a(ir.o.f31119e, new n2(this));
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final ds.h M(d dVar) {
@@ -244,7 +244,7 @@ public abstract class j2 extends a0 implements KProperty {
         this.f21167s = str;
         this.f21168t = str2;
         this.f21169u = obj;
-        this.f21170v = ir.l.a(ir.o.f31103e, new h2(this));
+        this.f21170v = ir.l.a(ir.o.f31119e, new h2(this));
         z2.a b10 = z2.b(propertyDescriptor, new i2(this));
         Intrinsics.checkNotNullExpressionValue(b10, "lazySoft(...)");
         this.f21171w = b10;

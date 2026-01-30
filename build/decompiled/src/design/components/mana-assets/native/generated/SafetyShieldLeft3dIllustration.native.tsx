@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/SafetyShieldLeft3dIllustration.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: SafetyShieldLeft3dIllustration, environment: var1
-        _fun52645: for (var _fun52645_ip = 0;;) switch (_fun52645_ip) {
+        _fun52690: for (var _fun52690_ip = 0;;) switch (_fun52690_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,16 +37,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.width;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun52645_ip = 35;
-                    continue _fun52645
+                    _fun52690_ip = 35;
+                    continue _fun52690
                 }
             case 29:
                 var9 = 288;
             case 35:
                 var7 = var0.height;
                 if (!(var7 === var3)) {
-                    _fun52645_ip = 47;
-                    continue _fun52645
+                    _fun52690_ip = 47;
+                    continue _fun52690
                 }
             case 44:
                 var7 = 192;
@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.SafetyShieldLeft3dIllustration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4660, 6270, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4666, 6273, 2]);

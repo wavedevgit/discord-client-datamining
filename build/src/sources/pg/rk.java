@@ -8,7 +8,7 @@ import java.util.Objects;
 public final class rk {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f45697a = ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE;
+    private final String f45713a = ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE;
 
     private rk(String str) {
     }
@@ -32,7 +32,7 @@ public final class rk {
             if (it.hasNext()) {
                 sb2.append(c(it.next()));
                 while (it.hasNext()) {
-                    sb2.append((CharSequence) this.f45697a);
+                    sb2.append((CharSequence) this.f45713a);
                     sb2.append(c(it.next()));
                 }
             }

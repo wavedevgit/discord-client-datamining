@@ -11,7 +11,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         '__packager_asset': true,
         'httpServerLocation': '/assets/design/intl',
         'scales': null,
-        'hash': '09b7739eecf47f95fb84702e2d34d8f9',
+        'hash': 'e38315b3fce97e38532f328162ca21fe',
         'name': 'Mana.compiled.messages',
         'type': 'jsona'
     };

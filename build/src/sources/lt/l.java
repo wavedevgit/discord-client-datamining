@@ -10,81 +10,81 @@ import net.time4j.i0;
 public abstract class l {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final char f37619a;
+    private static final char f37635a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c f37620b;
+    private static final c f37636b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final c f37621c;
+    private static final c f37637c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final jt.n f37622d;
+    private static final jt.n f37638d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final jt.n f37623e;
+    private static final jt.n f37639e;
 
     /* renamed from: f  reason: collision with root package name */
-    public static final lt.c f37624f;
+    public static final lt.c f37640f;
 
     /* renamed from: g  reason: collision with root package name */
-    public static final lt.c f37625g;
+    public static final lt.c f37641g;
 
     /* renamed from: h  reason: collision with root package name */
-    public static final lt.c f37626h;
+    public static final lt.c f37642h;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final lt.c f37627i;
+    public static final lt.c f37643i;
 
     /* renamed from: j  reason: collision with root package name */
-    public static final lt.c f37628j;
+    public static final lt.c f37644j;
 
     /* renamed from: k  reason: collision with root package name */
-    public static final lt.c f37629k;
+    public static final lt.c f37645k;
 
     /* renamed from: l  reason: collision with root package name */
-    public static final lt.c f37630l;
+    public static final lt.c f37646l;
 
     /* renamed from: m  reason: collision with root package name */
-    public static final lt.c f37631m;
+    public static final lt.c f37647m;
 
     /* renamed from: n  reason: collision with root package name */
-    public static final lt.c f37632n;
+    public static final lt.c f37648n;
 
     /* renamed from: o  reason: collision with root package name */
-    public static final lt.c f37633o;
+    public static final lt.c f37649o;
 
     /* renamed from: p  reason: collision with root package name */
-    public static final lt.c f37634p;
+    public static final lt.c f37650p;
 
     /* renamed from: q  reason: collision with root package name */
-    public static final lt.c f37635q;
+    public static final lt.c f37651q;
 
     /* renamed from: r  reason: collision with root package name */
-    public static final lt.c f37636r;
+    public static final lt.c f37652r;
 
     /* renamed from: s  reason: collision with root package name */
-    public static final lt.c f37637s;
+    public static final lt.c f37653s;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static class a implements e {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ boolean f37638a;
+        final /* synthetic */ boolean f37654a;
 
         a(boolean z10) {
-            this.f37638a = z10;
+            this.f37654a = z10;
         }
 
         @Override // lt.e
         /* renamed from: a */
         public Object b(net.time4j.f0 f0Var, Appendable appendable, jt.d dVar, jt.t tVar) {
             lt.c cVar;
-            if (this.f37638a) {
-                cVar = l.f37625g;
+            if (this.f37654a) {
+                cVar = l.f37641g;
             } else {
-                cVar = l.f37624f;
+                cVar = l.f37640f;
             }
             cVar.J(f0Var, appendable, dVar);
             return null;
@@ -96,10 +96,10 @@ public abstract class l {
     public static class b implements lt.d {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ boolean f37639a;
+        final /* synthetic */ boolean f37655a;
 
         b(boolean z10) {
-            this.f37639a = z10;
+            this.f37655a = z10;
         }
 
         @Override // lt.d
@@ -114,10 +114,10 @@ public abstract class l {
                 if (charAt != '-') {
                     if (charAt != '/' && charAt != 'T') {
                         if (charAt == 'W') {
-                            if (this.f37639a) {
-                                return (net.time4j.f0) l.f37629k.E(charSequence, sVar);
+                            if (this.f37655a) {
+                                return (net.time4j.f0) l.f37645k.E(charSequence, sVar);
                             }
-                            return (net.time4j.f0) l.f37628j.E(charSequence, sVar);
+                            return (net.time4j.f0) l.f37644j.E(charSequence, sVar);
                         }
                     } else {
                         i10 = i12 - f10;
@@ -127,11 +127,11 @@ public abstract class l {
                     i11++;
                 }
             }
-            if (this.f37639a) {
+            if (this.f37655a) {
                 if (i11 == 1) {
-                    return (net.time4j.f0) l.f37627i.E(charSequence, sVar);
+                    return (net.time4j.f0) l.f37643i.E(charSequence, sVar);
                 }
-                return (net.time4j.f0) l.f37625g.E(charSequence, sVar);
+                return (net.time4j.f0) l.f37641g.E(charSequence, sVar);
             }
             int i13 = i10 - 4;
             char charAt2 = charSequence.charAt(f10);
@@ -139,9 +139,9 @@ public abstract class l {
                 i13 = i10 - 6;
             }
             if (i13 == 3) {
-                return (net.time4j.f0) l.f37626h.E(charSequence, sVar);
+                return (net.time4j.f0) l.f37642h.E(charSequence, sVar);
             }
-            return (net.time4j.f0) l.f37624f.E(charSequence, sVar);
+            return (net.time4j.f0) l.f37640f.E(charSequence, sVar);
         }
     }
 
@@ -150,23 +150,23 @@ public abstract class l {
     public static class c implements jt.n {
 
         /* renamed from: d  reason: collision with root package name */
-        private final jt.p f37640d;
+        private final jt.p f37656d;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public class a implements jt.n {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ c f37641d;
+            final /* synthetic */ c f37657d;
 
             a(c cVar) {
-                this.f37641d = cVar;
+                this.f37657d = cVar;
             }
 
             @Override // jt.n
             /* renamed from: a */
             public boolean test(jt.o oVar) {
-                if (!c.this.test(oVar) && !this.f37641d.test(oVar)) {
+                if (!c.this.test(oVar) && !this.f37657d.test(oVar)) {
                     return false;
                 }
                 return true;
@@ -174,7 +174,7 @@ public abstract class l {
         }
 
         c(jt.p pVar) {
-            this.f37640d = pVar;
+            this.f37656d = pVar;
         }
 
         jt.n a(c cVar) {
@@ -184,7 +184,7 @@ public abstract class l {
         @Override // jt.n
         /* renamed from: b */
         public boolean test(jt.o oVar) {
-            if (oVar.q(this.f37640d) > 0) {
+            if (oVar.q(this.f37656d) > 0) {
                 return true;
             }
             return false;
@@ -217,45 +217,45 @@ public abstract class l {
         } else {
             c10 = ',';
         }
-        f37619a = c10;
+        f37635a = c10;
         c cVar = new c(net.time4j.g0.J);
-        f37620b = cVar;
+        f37636b = cVar;
         c cVar2 = new c(net.time4j.g0.N);
-        f37621c = cVar2;
-        f37622d = cVar.a(cVar2);
-        f37623e = new d(null);
-        f37624f = b(false);
-        f37625g = b(true);
-        f37626h = h(false);
-        f37627i = h(true);
-        f37628j = m(false);
-        f37629k = m(true);
-        f37630l = c(false);
-        f37631m = c(true);
-        f37632n = k(false);
-        f37633o = k(true);
-        f37634p = l(false);
-        f37635q = l(true);
-        f37636r = g(false);
-        f37637s = g(true);
+        f37637c = cVar2;
+        f37638d = cVar.a(cVar2);
+        f37639e = new d(null);
+        f37640f = b(false);
+        f37641g = b(true);
+        f37642h = h(false);
+        f37643i = h(true);
+        f37644j = m(false);
+        f37645k = m(true);
+        f37646l = c(false);
+        f37647m = c(true);
+        f37648n = k(false);
+        f37649o = k(true);
+        f37650p = l(false);
+        f37651q = l(true);
+        f37652r = g(false);
+        f37653s = g(true);
     }
 
     private static void a(c.d dVar, boolean z10) {
-        dVar.b0(kt.a.f36539l, kt.j.f36588d);
-        dVar.Z(kt.a.f36540m, '0');
+        dVar.b0(kt.a.f36555l, kt.j.f36604d);
+        dVar.Z(kt.a.f36556m, '0');
         dVar.g(net.time4j.g0.G, 2);
         dVar.X();
         if (z10) {
             dVar.l(':');
         }
         dVar.g(net.time4j.g0.H, 2);
-        dVar.Y(f37622d);
+        dVar.Y(f37638d);
         if (z10) {
             dVar.l(':');
         }
         dVar.g(net.time4j.g0.J, 2);
-        dVar.Y(f37621c);
-        if (f37619a == ',') {
+        dVar.Y(f37637c);
+        if (f37635a == ',') {
             dVar.m(',', '.');
         } else {
             dVar.m('.', ',');
@@ -267,7 +267,7 @@ public abstract class l {
     }
 
     private static lt.c b(boolean z10) {
-        c.d k10 = lt.c.N(net.time4j.f0.class, Locale.ROOT).b0(kt.a.f36539l, kt.j.f36588d).Z(kt.a.f36540m, '0').k(net.time4j.f0.A, 4, 9, x.SHOW_WHEN_BIG_NUMBER);
+        c.d k10 = lt.c.N(net.time4j.f0.class, Locale.ROOT).b0(kt.a.f36555l, kt.j.f36604d).Z(kt.a.f36556m, '0').k(net.time4j.f0.A, 4, 9, x.SHOW_WHEN_BIG_NUMBER);
         if (z10) {
             k10.l('-');
         }
@@ -280,7 +280,7 @@ public abstract class l {
 
     private static lt.c c(boolean z10) {
         c.d N = lt.c.N(net.time4j.f0.class, Locale.ROOT);
-        N.d(net.time4j.f0.f40573z, e(z10), d(z10));
+        N.d(net.time4j.f0.f40589z, e(z10), d(z10));
         return N.F().T(kt.g.STRICT);
     }
 
@@ -294,7 +294,7 @@ public abstract class l {
 
     private static lt.c f(kt.e eVar, boolean z10) {
         c.d N = lt.c.N(net.time4j.a0.class, Locale.ROOT);
-        N.d(net.time4j.f0.f40573z, e(z10), d(z10));
+        N.d(net.time4j.f0.f40589z, e(z10), d(z10));
         N.l('T');
         a(N, z10);
         N.C(eVar, z10, Collections.singletonList("Z"));
@@ -304,11 +304,11 @@ public abstract class l {
     private static lt.c g(boolean z10) {
         c.d N = lt.c.N(net.time4j.a0.class, Locale.ROOT);
         N.d(net.time4j.a0.T().M(), f(kt.e.MEDIUM, z10), f(kt.e.SHORT, z10));
-        return N.F().T(kt.g.STRICT).V(net.time4j.tz.p.f40908v);
+        return N.F().T(kt.g.STRICT).V(net.time4j.tz.p.f40924v);
     }
 
     private static lt.c h(boolean z10) {
-        c.d k10 = lt.c.N(net.time4j.f0.class, Locale.ROOT).b0(kt.a.f36539l, kt.j.f36588d).Z(kt.a.f36540m, '0').k(net.time4j.f0.A, 4, 9, x.SHOW_WHEN_BIG_NUMBER);
+        c.d k10 = lt.c.N(net.time4j.f0.class, Locale.ROOT).b0(kt.a.f36555l, kt.j.f36604d).Z(kt.a.f36556m, '0').k(net.time4j.f0.A, 4, 9, x.SHOW_WHEN_BIG_NUMBER);
         if (z10) {
             k10.l('-');
         }
@@ -342,9 +342,9 @@ public abstract class l {
                 if (charAt != '/' && charAt != 'T') {
                     if (charAt == 'W') {
                         if (i11 > 0) {
-                            return (net.time4j.f0) f37629k.E(charSequence, sVar);
+                            return (net.time4j.f0) f37645k.E(charSequence, sVar);
                         }
-                        return (net.time4j.f0) f37628j.E(charSequence, sVar);
+                        return (net.time4j.f0) f37644j.E(charSequence, sVar);
                     }
                 } else {
                     i10 = i12 - f10;
@@ -361,38 +361,38 @@ public abstract class l {
                 i13 = i10 - 6;
             }
             if (i13 == 3) {
-                return (net.time4j.f0) f37626h.E(charSequence, sVar);
+                return (net.time4j.f0) f37642h.E(charSequence, sVar);
             }
-            return (net.time4j.f0) f37624f.E(charSequence, sVar);
+            return (net.time4j.f0) f37640f.E(charSequence, sVar);
         } else if (i11 == 1) {
-            return (net.time4j.f0) f37627i.E(charSequence, sVar);
+            return (net.time4j.f0) f37643i.E(charSequence, sVar);
         } else {
-            return (net.time4j.f0) f37625g.E(charSequence, sVar);
+            return (net.time4j.f0) f37641g.E(charSequence, sVar);
         }
     }
 
     private static lt.c k(boolean z10) {
         c.d N = lt.c.N(net.time4j.g0.class, Locale.ROOT);
-        N.W(f37623e, 1);
+        N.W(f37639e, 1);
         a(N, z10);
         return N.F().T(kt.g.STRICT);
     }
 
     private static lt.c l(boolean z10) {
         c.d N = lt.c.N(i0.class, Locale.ROOT);
-        N.d(net.time4j.f0.f40573z, e(z10), d(z10));
+        N.d(net.time4j.f0.f40589z, e(z10), d(z10));
         N.l('T');
         a(N, z10);
         return N.F().T(kt.g.STRICT);
     }
 
     private static lt.c m(boolean z10) {
-        c.d k10 = lt.c.N(net.time4j.f0.class, Locale.ROOT).b0(kt.a.f36539l, kt.j.f36588d).Z(kt.a.f36540m, '0').k(net.time4j.f0.B, 4, 9, x.SHOW_WHEN_BIG_NUMBER);
+        c.d k10 = lt.c.N(net.time4j.f0.class, Locale.ROOT).b0(kt.a.f36555l, kt.j.f36604d).Z(kt.a.f36556m, '0').k(net.time4j.f0.B, 4, 9, x.SHOW_WHEN_BIG_NUMBER);
         if (z10) {
             k10.l('-');
         }
         k10.l('W');
-        k10.g(a1.f40342x.n(), 2);
+        k10.g(a1.f40358x.n(), 2);
         if (z10) {
             k10.l('-');
         }

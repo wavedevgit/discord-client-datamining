@@ -7,10 +7,10 @@ import io.sentry.SentryLevel;
 public final class x0 {
 
     /* renamed from: a  reason: collision with root package name */
-    final ILogger f29300a;
+    final ILogger f29316a;
 
     public x0(ILogger iLogger) {
-        this.f29300a = (ILogger) io.sentry.util.y.c(iLogger, "The ILogger object is required.");
+        this.f29316a = (ILogger) io.sentry.util.y.c(iLogger, "The ILogger object is required.");
     }
 
     public String a() {
@@ -59,7 +59,7 @@ public final class x0 {
             z10 = true;
             return Boolean.valueOf(z10);
         } catch (Throwable th2) {
-            this.f29300a.b(SentryLevel.ERROR, "Error checking whether application is running in an emulator.", th2);
+            this.f29316a.b(SentryLevel.ERROR, "Error checking whether application is running in an emulator.", th2);
             return null;
         }
     }

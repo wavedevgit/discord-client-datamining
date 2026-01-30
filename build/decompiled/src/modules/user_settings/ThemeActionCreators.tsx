@@ -50,15 +50,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.setSystemTheme = var3;
     var3 = function() { // Original name: setSystemThemeIfNeeded, environment: var1
-        _fun27915: for (var _fun27915_ip = 0;;) switch (_fun27915_ip) {
+        _fun27916: for (var _fun27916_ip = 0;;) switch (_fun27916_ip) {
             case 0:
                 var1 = _closure1_slot2;
                 var2 = var1.useSystemTheme;
                 var1 = _closure1_slot3;
                 var1 = var1.OFF;
                 if (!(var2 !== var1)) {
-                    _fun27915_ip = 62;
-                    continue _fun27915
+                    _fun27916_ip = 62;
+                    continue _fun27916
                 }
             case 27:
                 var2 = _closure1_slot4;

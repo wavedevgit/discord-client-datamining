@@ -5,37 +5,37 @@ import ui.c;
 final class p2 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final p2 f41526a = new p2();
+    static final p2 f41542a = new p2();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41527b;
+    private static final ui.c f41543b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41528c;
+    private static final ui.c f41544c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41529d;
+    private static final ui.c f41545d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f41530e;
+    private static final ui.c f41546e;
 
     static {
         c.b a10 = ui.c.a("callingSource");
         f fVar = new f();
         fVar.a(1);
-        f41527b = a10.b(fVar.b()).a();
+        f41543b = a10.b(fVar.b()).a();
         c.b a11 = ui.c.a("supportedFormats");
         f fVar2 = new f();
         fVar2.a(2);
-        f41528c = a11.b(fVar2.b()).a();
+        f41544c = a11.b(fVar2.b()).a();
         c.b a12 = ui.c.a("durationMs");
         f fVar3 = new f();
         fVar3.a(3);
-        f41529d = a12.b(fVar3.b()).a();
+        f41545d = a12.b(fVar3.b()).a();
         c.b a13 = ui.c.a("errorCode");
         f fVar4 = new f();
         fVar4.a(4);
-        f41530e = a13.b(fVar4.b()).a();
+        f41546e = a13.b(fVar4.b()).a();
     }
 
     private p2() {

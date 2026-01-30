@@ -5,15 +5,15 @@ import com.google.android.gms.tasks.Task;
 final class b0 implements Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ Task f52585d;
+    final /* synthetic */ Task f52601d;
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ c0 f52586e;
+    final /* synthetic */ c0 f52602e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b0(c0 c0Var, Task task) {
-        this.f52586e = c0Var;
-        this.f52585d = task;
+        this.f52602e = c0Var;
+        this.f52601d = task;
     }
 
     @Override // java.lang.Runnable
@@ -21,14 +21,14 @@ final class b0 implements Runnable {
         Object obj;
         f fVar;
         f fVar2;
-        obj = this.f52586e.f52588b;
+        obj = this.f52602e.f52604b;
         synchronized (obj) {
             try {
-                c0 c0Var = this.f52586e;
-                fVar = c0Var.f52589c;
+                c0 c0Var = this.f52602e;
+                fVar = c0Var.f52605c;
                 if (fVar != null) {
-                    fVar2 = c0Var.f52589c;
-                    fVar2.onFailure((Exception) gf.q.l(this.f52585d.k()));
+                    fVar2 = c0Var.f52605c;
+                    fVar2.onFailure((Exception) gf.q.l(this.f52601d.k()));
                 }
             } catch (Throwable th2) {
                 throw th2;

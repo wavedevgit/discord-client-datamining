@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/CandyIllocon.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: CandyIllocon, environment: var1
-        _fun52228: for (var _fun52228_ip = 0;;) switch (_fun52228_ip) {
+        _fun52273: for (var _fun52273_ip = 0;;) switch (_fun52273_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0.size;
                 var3 = undefined;
                 if (!(var7 === var3)) {
-                    _fun52228_ip = 32;
-                    continue _fun52228
+                    _fun52273_ip = 32;
+                    continue _fun52273
                 }
             case 29:
                 var7 = 64;
@@ -73,4 +73,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.CandyIllocon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4660, 5992, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4666, 5995, 2]);

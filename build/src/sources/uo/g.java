@@ -6,32 +6,32 @@ import kotlin.jvm.internal.Intrinsics;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ActivityResultLauncher f50511a;
+    private final ActivityResultLauncher f50527a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ActivityResultLauncher f50512b;
+    private final ActivityResultLauncher f50528b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ActivityResultLauncher f50513c;
+    private final ActivityResultLauncher f50529c;
 
     public g(ActivityResultLauncher pictureLaunchResultLauncher, ActivityResultLauncher openDocumentsResultLauncher, ActivityResultLauncher selectFromPhotoLibraryLauncher) {
         Intrinsics.checkNotNullParameter(pictureLaunchResultLauncher, "pictureLaunchResultLauncher");
         Intrinsics.checkNotNullParameter(openDocumentsResultLauncher, "openDocumentsResultLauncher");
         Intrinsics.checkNotNullParameter(selectFromPhotoLibraryLauncher, "selectFromPhotoLibraryLauncher");
-        this.f50511a = pictureLaunchResultLauncher;
-        this.f50512b = openDocumentsResultLauncher;
-        this.f50513c = selectFromPhotoLibraryLauncher;
+        this.f50527a = pictureLaunchResultLauncher;
+        this.f50528b = openDocumentsResultLauncher;
+        this.f50529c = selectFromPhotoLibraryLauncher;
     }
 
     public final ActivityResultLauncher a() {
-        return this.f50512b;
+        return this.f50528b;
     }
 
     public final ActivityResultLauncher b() {
-        return this.f50513c;
+        return this.f50529c;
     }
 
     public final ActivityResultLauncher c() {
-        return this.f50511a;
+        return this.f50527a;
     }
 }

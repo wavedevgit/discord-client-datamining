@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var4 + var1;
     var4 = var7.memo;
     var3 = function(arg0) { // Original name: MessagesNewMessageWidget, environment: var3
-        _fun102157: for (var _fun102157_ip = 0;;) switch (_fun102157_ip) {
+        _fun102411: for (var _fun102411_ip = 0;;) switch (_fun102411_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.state;
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = _closure1_slot3;
                 var7 = var8.useCallback;
                 var2 = function() { // Environment: var0
-                    _fun102158: for (var _fun102158_ip = 0;;) switch (_fun102158_ip) {
+                    _fun102412: for (var _fun102412_ip = 0;;) switch (_fun102412_ip) {
                         case 0:
                             var2 = _closure1_slot0;
                             var1 = _closure1_slot2;
@@ -84,8 +84,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var3 == var2;
                             var4 = var2;
                             if (var1) {
-                                _fun102158_ip = 59;
-                                continue _fun102158
+                                _fun102412_ip = 59;
+                                continue _fun102412
                             }
                         case 47:
                             var2 = var2.current;
@@ -93,8 +93,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = var2;
                         case 59:
                             if (var1) {
-                                _fun102158_ip = 109;
-                                continue _fun102158
+                                _fun102412_ip = 109;
+                                continue _fun102412
                             }
                         case 62:
                             var3 = var4.navigate;
@@ -152,8 +152,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.positionBottom = var2;
                 var2 = undefined;
                 if (!var3) {
-                    _fun102157_ip = 279;
-                    continue _fun102157
+                    _fun102411_ip = 279;
+                    continue _fun102411
                 }
             case 275:
                 var2 = _closure1_slot5;
@@ -163,8 +163,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = _closure1_slot0;
                 var6 = _closure1_slot2;
                 if (var0) {
-                    _fun102157_ip = 337;
-                    continue _fun102157
+                    _fun102411_ip = 337;
+                    continue _fun102411
                 }
             case 299:
                 var0 = 11;
@@ -176,8 +176,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = var8;
                 var2 = copyDataProperties(var17, var16);
                 var0 = var3.bind(var4)(var1, var0);
-                _fun102157_ip = 445;
-                continue _fun102157;
+                _fun102411_ip = 445;
+                continue _fun102411;
             case 337:
                 var1 = 10;
                 var1 = var6[var1];
@@ -200,8 +200,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[var6] = var8;
                 var6 = undefined;
                 if (!var7) {
-                    _fun102157_ip = 430;
-                    continue _fun102157
+                    _fun102411_ip = 430;
+                    continue _fun102411
                 }
             case 427:
                 var6 = var5;
@@ -223,4 +223,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.MESSAGES_NEW_MESSAGE_WIDGET_HEIGHT = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 13121, 33, 671, 5181, 12150, 3873, 13270, 1234, 13271, 6985, 6992, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 13146, 33, 671, 5187, 12173, 3879, 13295, 1234, 13296, 6988, 6995, 2]);

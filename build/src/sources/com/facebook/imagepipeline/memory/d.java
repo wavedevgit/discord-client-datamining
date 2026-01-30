@@ -35,13 +35,13 @@ public class d {
 
         @Override // com.facebook.imagepipeline.memory.a
         com.facebook.imagepipeline.memory.b x(int i10) {
-            return new h(p(i10), this.f11633c.f50848g, 0);
+            return new h(p(i10), this.f11633c.f50864g, 0);
         }
     }
 
     public d(r8.d dVar, z zVar) {
         boolean z10;
-        if (zVar.f50848g > 0) {
+        if (zVar.f50864g > 0) {
             z10 = true;
         } else {
             z10 = false;

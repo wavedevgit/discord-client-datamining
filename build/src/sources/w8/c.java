@@ -7,7 +7,7 @@ import java.security.NoSuchAlgorithmException;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    static final byte[] f52242a = {48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 97, 98, 99, 100, 101, 102};
+    static final byte[] f52258a = {48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 97, 98, 99, 100, 101, 102};
 
     public static String a(byte[] bArr) {
         try {

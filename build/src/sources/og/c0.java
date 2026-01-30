@@ -7,26 +7,26 @@ import java.util.Map;
 final class c0 extends AbstractSet {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ f0 f42771d;
+    final /* synthetic */ f0 f42787d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c0(f0 f0Var) {
-        this.f42771d = f0Var;
+        this.f42787d = f0Var;
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final void clear() {
-        this.f42771d.clear();
+        this.f42787d.clear();
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final boolean contains(Object obj) {
-        return this.f42771d.containsKey(obj);
+        return this.f42787d.containsKey(obj);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
     public final Iterator iterator() {
-        f0 f0Var = this.f42771d;
+        f0 f0Var = this.f42787d;
         Map n10 = f0Var.n();
         if (n10 != null) {
             return n10.keySet().iterator();
@@ -38,10 +38,10 @@ final class c0 extends AbstractSet {
     public final boolean remove(Object obj) {
         Object z10;
         Object obj2;
-        Map n10 = this.f42771d.n();
+        Map n10 = this.f42787d.n();
         if (n10 == null) {
-            z10 = this.f42771d.z(obj);
-            obj2 = f0.f43002u;
+            z10 = this.f42787d.z(obj);
+            obj2 = f0.f43018u;
             if (z10 == obj2) {
                 return false;
             }
@@ -52,6 +52,6 @@ final class c0 extends AbstractSet {
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final int size() {
-        return this.f42771d.size();
+        return this.f42787d.size();
     }
 }

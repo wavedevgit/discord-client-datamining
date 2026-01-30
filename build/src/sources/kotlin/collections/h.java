@@ -11,15 +11,15 @@ import kotlin.jvm.internal.markers.KMappedMarker;
 public final class h implements Collection, KMappedMarker {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Object[] f33326d;
+    private final Object[] f33342d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f33327e;
+    private final boolean f33343e;
 
     public h(Object[] values, boolean z10) {
         Intrinsics.checkNotNullParameter(values, "values");
-        this.f33326d = values;
-        this.f33327e = z10;
+        this.f33342d = values;
+        this.f33343e = z10;
     }
 
     @Override // java.util.Collection
@@ -33,7 +33,7 @@ public final class h implements Collection, KMappedMarker {
     }
 
     public int b() {
-        return this.f33326d.length;
+        return this.f33342d.length;
     }
 
     @Override // java.util.Collection
@@ -43,7 +43,7 @@ public final class h implements Collection, KMappedMarker {
 
     @Override // java.util.Collection
     public boolean contains(Object obj) {
-        return n.N(this.f33326d, obj);
+        return n.N(this.f33342d, obj);
     }
 
     @Override // java.util.Collection
@@ -63,7 +63,7 @@ public final class h implements Collection, KMappedMarker {
 
     @Override // java.util.Collection
     public boolean isEmpty() {
-        if (this.f33326d.length == 0) {
+        if (this.f33342d.length == 0) {
             return true;
         }
         return false;
@@ -71,7 +71,7 @@ public final class h implements Collection, KMappedMarker {
 
     @Override // java.util.Collection, java.lang.Iterable
     public Iterator iterator() {
-        return ArrayIteratorKt.iterator(this.f33326d);
+        return ArrayIteratorKt.iterator(this.f33342d);
     }
 
     @Override // java.util.Collection
@@ -102,6 +102,6 @@ public final class h implements Collection, KMappedMarker {
 
     @Override // java.util.Collection
     public final Object[] toArray() {
-        return s.b(this.f33326d, this.f33327e);
+        return s.b(this.f33342d, this.f33343e);
     }
 }

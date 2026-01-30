@@ -15,7 +15,7 @@ public abstract class f extends a {
     /* JADX INFO: Access modifiers changed from: package-private */
     public f(r8.d dVar, z zVar, a0 a0Var) {
         super(dVar, zVar, a0Var);
-        SparseIntArray sparseIntArray = (SparseIntArray) j.g(zVar.f50844c);
+        SparseIntArray sparseIntArray = (SparseIntArray) j.g(zVar.f50860c);
         this.f11652k = new int[sparseIntArray.size()];
         int i10 = 0;
         while (true) {

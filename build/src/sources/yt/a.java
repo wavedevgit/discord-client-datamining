@@ -7,7 +7,7 @@ import okhttp3.Response;
 public final class a implements Interceptor {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f54960a = new a();
+    public static final a f54976a = new a();
 
     private a() {
     }

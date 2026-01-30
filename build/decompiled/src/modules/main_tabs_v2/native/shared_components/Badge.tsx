@@ -57,30 +57,30 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot2 = var4;
     var4 = var7.memo;
     var3 = function(arg0) { // Original name: Badge, environment: var3
-        _fun70884: for (var _fun70884_ip = 0;;) switch (_fun70884_ip) {
+        _fun70930: for (var _fun70930_ip = 0;;) switch (_fun70930_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.size;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun70884_ip = 17;
-                    continue _fun70884
+                    _fun70930_ip = 17;
+                    continue _fun70930
                 }
             case 14:
                 var9 = 12;
             case 17:
                 var1 = var0.maskSize;
                 if (!(var1 === var3)) {
-                    _fun70884_ip = 30;
-                    continue _fun70884
+                    _fun70930_ip = 30;
+                    continue _fun70930
                 }
             case 27:
                 var1 = 4;
             case 30:
                 var7 = var0.classic;
                 if (!(var7 === var3)) {
-                    _fun70884_ip = 42;
-                    continue _fun70884
+                    _fun70930_ip = 42;
+                    continue _fun70930
                 }
             case 40:
                 var7 = false;
@@ -97,8 +97,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1 != var4;
                 var11 = undefined;
                 if (!var1) {
-                    _fun70884_ip = 117;
-                    continue _fun70884
+                    _fun70930_ip = 117;
+                    continue _fun70930
                 }
             case 92:
                 var1 = {};
@@ -120,13 +120,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.style = var4;
                 var4 = {};
                 if (var7) {
-                    _fun70884_ip = 166;
-                    continue _fun70884
+                    _fun70930_ip = 166;
+                    continue _fun70930
                 }
             case 158:
                 var7 = var5.badge;
-                _fun70884_ip = 172;
-                continue _fun70884;
+                _fun70930_ip = 172;
+                continue _fun70930;
             case 166:
                 var7 = var5.badgeClassic;
             case 172:

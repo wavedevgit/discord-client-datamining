@@ -10,21 +10,21 @@ import java.util.Set;
 public abstract class a implements e {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final Set f48857i = new HashSet(Arrays.asList("encoded_size", "encoded_width", "encoded_height", "uri_source", "image_format", "bitmap_config", "is_rounded", "non_fatal_decode_error", "original_url", "modified_url", "image_color_space"));
+    private static final Set f48873i = new HashSet(Arrays.asList("encoded_size", "encoded_width", "encoded_height", "uri_source", "image_format", "bitmap_config", "is_rounded", "non_fatal_decode_error", "original_url", "modified_url", "image_color_space"));
 
     /* renamed from: d  reason: collision with root package name */
-    private Map f48858d = new HashMap();
+    private Map f48874d = new HashMap();
 
     /* renamed from: e  reason: collision with root package name */
-    private ImageInfo f48859e;
+    private ImageInfo f48875e;
 
     @Override // y9.a
     public void A0(Map map) {
         if (map != null) {
-            for (String str : f48857i) {
+            for (String str : f48873i) {
                 Object obj = map.get(str);
                 if (obj != null) {
-                    this.f48858d.put(str, obj);
+                    this.f48874d.put(str, obj);
                 }
             }
         }
@@ -32,19 +32,19 @@ public abstract class a implements e {
 
     @Override // y9.a
     public void B(String str, Object obj) {
-        if (f48857i.contains(str)) {
-            this.f48858d.put(str, obj);
+        if (f48873i.contains(str)) {
+            this.f48874d.put(str, obj);
         }
     }
 
     @Override // sa.e
     public o J1() {
-        return n.f48889d;
+        return n.f48905d;
     }
 
     @Override // sa.l, y9.a
     public Map getExtras() {
-        return this.f48858d;
+        return this.f48874d;
     }
 
     @Override // sa.e
@@ -54,9 +54,9 @@ public abstract class a implements e {
 
     @Override // sa.e
     public ImageInfo z() {
-        if (this.f48859e == null) {
-            this.f48859e = new m(getWidth(), getHeight(), t(), J1(), getExtras());
+        if (this.f48875e == null) {
+            this.f48875e = new m(getWidth(), getHeight(), t(), J1(), getExtras());
         }
-        return this.f48859e;
+        return this.f48875e;
     }
 }

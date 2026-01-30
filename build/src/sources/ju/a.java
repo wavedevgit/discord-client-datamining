@@ -9,37 +9,37 @@ import okio.Buffer;
 public abstract class a {
 
     /* renamed from: a */
-    private static final byte[] f32788a = m0.a("0123456789abcdef");
+    private static final byte[] f32804a = m0.a("0123456789abcdef");
 
     public static final Buffer.a a(Buffer buffer, Buffer.a unsafeCursor) {
         Intrinsics.checkNotNullParameter(buffer, "<this>");
         Intrinsics.checkNotNullParameter(unsafeCursor, "unsafeCursor");
         Buffer.a g10 = okio.b.g(unsafeCursor);
-        if (g10.f44354d == null) {
-            g10.f44354d = buffer;
-            g10.f44355e = true;
+        if (g10.f44370d == null) {
+            g10.f44370d = buffer;
+            g10.f44371e = true;
             return g10;
         }
         throw new IllegalStateException("already attached to a buffer");
     }
 
     public static final byte[] b() {
-        return f32788a;
+        return f32804a;
     }
 
     public static final boolean c(g0 segment, int i10, byte[] bytes, int i11, int i12) {
         Intrinsics.checkNotNullParameter(segment, "segment");
         Intrinsics.checkNotNullParameter(bytes, "bytes");
-        int i13 = segment.f31251c;
-        byte[] bArr = segment.f31249a;
+        int i13 = segment.f31267c;
+        byte[] bArr = segment.f31265a;
         while (i11 < i12) {
             if (i10 == i13) {
-                segment = segment.f31254f;
+                segment = segment.f31270f;
                 Intrinsics.checkNotNull(segment);
-                byte[] bArr2 = segment.f31249a;
+                byte[] bArr2 = segment.f31265a;
                 bArr = bArr2;
-                i10 = segment.f31250b;
-                i13 = segment.f31251c;
+                i10 = segment.f31266b;
+                i13 = segment.f31267c;
             }
             if (bArr[i10] != bytes[i11]) {
                 return false;
@@ -74,16 +74,16 @@ public abstract class a {
         int i13;
         Intrinsics.checkNotNullParameter(buffer, "<this>");
         Intrinsics.checkNotNullParameter(options, "options");
-        g0 g0Var2 = buffer.f44352d;
+        g0 g0Var2 = buffer.f44368d;
         if (g0Var2 == null) {
             if (z10) {
                 return -2;
             }
             return -1;
         }
-        byte[] bArr = g0Var2.f31249a;
-        int i14 = g0Var2.f31250b;
-        int i15 = g0Var2.f31251c;
+        byte[] bArr = g0Var2.f31265a;
+        int i14 = g0Var2.f31266b;
+        int i15 = g0Var2.f31267c;
         int[] h10 = options.h();
         g0 g0Var3 = g0Var2;
         int i16 = -1;
@@ -113,11 +113,11 @@ public abstract class a {
                     }
                     if (i23 == i15) {
                         Intrinsics.checkNotNull(g0Var3);
-                        g0 g0Var4 = g0Var3.f31254f;
+                        g0 g0Var4 = g0Var3.f31270f;
                         Intrinsics.checkNotNull(g0Var4);
-                        i13 = g0Var4.f31250b;
-                        byte[] bArr2 = g0Var4.f31249a;
-                        i12 = g0Var4.f31251c;
+                        i13 = g0Var4.f31266b;
+                        byte[] bArr2 = g0Var4.f31265a;
+                        i12 = g0Var4.f31267c;
                         if (g0Var4 == g0Var2) {
                             if (!z11) {
                                 break loop0;
@@ -153,11 +153,11 @@ public abstract class a {
                     if (i25 == h10[i20]) {
                         i11 = h10[i20 + i19];
                         if (i10 == i15) {
-                            g0Var3 = g0Var3.f31254f;
+                            g0Var3 = g0Var3.f31270f;
                             Intrinsics.checkNotNull(g0Var3);
-                            i10 = g0Var3.f31250b;
-                            bArr = g0Var3.f31249a;
-                            i15 = g0Var3.f31251c;
+                            i10 = g0Var3.f31266b;
+                            bArr = g0Var3.f31265a;
+                            i15 = g0Var3.f31267c;
                             if (g0Var3 == g0Var2) {
                                 g0Var3 = null;
                             }

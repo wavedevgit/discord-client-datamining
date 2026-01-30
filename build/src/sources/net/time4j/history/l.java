@@ -19,45 +19,45 @@ final class l extends ot.c implements mt.a {
     private final d history;
 
     /* renamed from: q  reason: collision with root package name */
-    private final transient int f40684q;
+    private final transient int f40700q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private static class a implements z {
 
         /* renamed from: d  reason: collision with root package name */
-        private final int f40685d;
+        private final int f40701d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final d f40686e;
+        private final d f40702e;
 
         a(int i10, d dVar) {
-            this.f40685d = i10;
-            this.f40686e = dVar;
+            this.f40701d = i10;
+            this.f40702e = dVar;
         }
 
         /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
         private h b(q qVar, int i10) {
             nt.a aVar;
-            h e10 = this.f40686e.e((f0) qVar.p(f0.f40573z));
+            h e10 = this.f40702e.e((f0) qVar.p(f0.f40589z));
             nt.a aVar2 = nt.a.DUAL_DATING;
-            o v10 = this.f40686e.v();
-            int i11 = this.f40685d;
+            o v10 = this.f40702e.v();
+            int i11 = this.f40701d;
             switch (i11) {
                 case 2:
                     break;
                 case 3:
-                    return this.f40686e.a(h.i(e10.e(), e10.g(), i10, e10.d()));
+                    return this.f40702e.a(h.i(e10.e(), e10.g(), i10, e10.d()));
                 case 4:
                     return h.i(e10.e(), e10.g(), e10.f(), i10);
                 case 5:
-                    int h10 = e10.h(this.f40686e.v());
-                    h m10 = this.f40686e.m(e10.e(), h10);
-                    int u10 = this.f40686e.u(e10.e(), h10);
+                    int h10 = e10.h(this.f40702e.v());
+                    h m10 = this.f40702e.m(e10.e(), h10);
+                    int u10 = this.f40702e.u(e10.e(), h10);
                     if (i10 == 1) {
                         return m10;
                     }
                     if (i10 > 1 && i10 <= u10) {
-                        return this.f40686e.e((f0) this.f40686e.d(m10).R(jt.h.e(i10 - 1)));
+                        return this.f40702e.e((f0) this.f40702e.d(m10).R(jt.h.e(i10 - 1)));
                     }
                     throw new IllegalArgumentException("Out of range: " + i10);
                 case 6:
@@ -76,11 +76,11 @@ final class l extends ot.c implements mt.a {
                     if (g10 != 0) {
                         i12 = g10;
                     }
-                    return this.f40686e.a(h.j(e10.e(), i13 + i12, e10.f(), e10.d(), aVar2, v10));
+                    return this.f40702e.a(h.j(e10.e(), i13 + i12, e10.f(), e10.d(), aVar2, v10));
                 default:
-                    throw new UnsupportedOperationException("Unknown element index: " + this.f40685d);
+                    throw new UnsupportedOperationException("Unknown element index: " + this.f40701d);
             }
-            return this.f40686e.a(h.j(e10.e(), i10, e10.f(), e10.d(), aVar2, v10));
+            return this.f40702e.a(h.j(e10.e(), i10, e10.f(), e10.d(), aVar2, v10));
         }
 
         @Override // jt.z
@@ -103,15 +103,15 @@ final class l extends ot.c implements mt.a {
             int i11;
             int d10;
             try {
-                h e10 = this.f40686e.e((f0) qVar.p(f0.f40573z));
+                h e10 = this.f40702e.e((f0) qVar.p(f0.f40589z));
                 int i12 = 8;
                 int i13 = 999984973;
-                switch (this.f40685d) {
+                switch (this.f40701d) {
                     case 2:
                     case 6:
                     case 7:
                     case 8:
-                        d dVar = this.f40686e;
+                        d dVar = this.f40702e;
                         if (dVar != d.D) {
                             if (dVar == d.C) {
                                 if (e10.e() == j.BC) {
@@ -134,7 +134,7 @@ final class l extends ot.c implements mt.a {
                                 i13 = i10;
                             }
                         }
-                        if (this.f40685d == 8) {
+                        if (this.f40701d == 8) {
                             i13 = ((i13 - 1) / 100) + 1;
                         }
                         return Integer.valueOf(i13);
@@ -146,34 +146,34 @@ final class l extends ot.c implements mt.a {
                         i11 = i12;
                         break;
                     case 4:
-                        i11 = this.f40686e.k(e10).d(e10);
+                        i11 = this.f40702e.k(e10).d(e10);
                         b10 = b(qVar, i11);
                         break;
                     case 5:
-                        int u10 = this.f40686e.u(e10.e(), e10.h(this.f40686e.v()));
+                        int u10 = this.f40702e.u(e10.e(), e10.h(this.f40702e.v()));
                         if (u10 != -1) {
                             return Integer.valueOf(u10);
                         }
                         throw new r("Length of historic year undefined.");
                     default:
-                        throw new UnsupportedOperationException("Unknown element index: " + this.f40685d);
+                        throw new UnsupportedOperationException("Unknown element index: " + this.f40701d);
                 }
-                if (this.f40686e.B(b10)) {
+                if (this.f40702e.B(b10)) {
                     return Integer.valueOf(i11);
                 }
-                List p10 = this.f40686e.p();
+                List p10 = this.f40702e.p();
                 int size = p10.size() - 1;
                 while (true) {
                     if (size >= 0) {
                         f fVar = (f) p10.get(size);
-                        if (e10.compareTo(fVar.f40661c) < 0) {
-                            b10 = fVar.f40662d;
+                        if (e10.compareTo(fVar.f40677c) < 0) {
+                            b10 = fVar.f40678d;
                         } else {
                             size--;
                         }
                     }
                 }
-                if (this.f40685d == 3) {
+                if (this.f40701d == 3) {
                     d10 = b10.f();
                 } else {
                     d10 = b10.d();
@@ -189,28 +189,28 @@ final class l extends ot.c implements mt.a {
         public Integer p(q qVar) {
             int d10;
             try {
-                h e10 = this.f40686e.e((f0) qVar.p(f0.f40573z));
-                int i10 = this.f40685d;
+                h e10 = this.f40702e.e((f0) qVar.p(f0.f40589z));
+                int i10 = this.f40701d;
                 if (i10 != 2 && i10 != 6 && i10 != 7 && i10 != 8) {
                     h b10 = b(qVar, 1);
-                    if (this.f40686e.B(b10)) {
+                    if (this.f40702e.B(b10)) {
                         return 1;
                     }
-                    if (this.f40685d != 5) {
-                        List p10 = this.f40686e.p();
+                    if (this.f40701d != 5) {
+                        List p10 = this.f40702e.p();
                         int size = p10.size() - 1;
                         while (true) {
                             if (size < 0) {
                                 break;
                             }
                             f fVar = (f) p10.get(size);
-                            if (e10.compareTo(fVar.f40661c) >= 0) {
-                                b10 = fVar.f40661c;
+                            if (e10.compareTo(fVar.f40677c) >= 0) {
+                                b10 = fVar.f40677c;
                                 break;
                             }
                             size--;
                         }
-                        if (this.f40685d == 3) {
+                        if (this.f40701d == 3) {
                             d10 = b10.f();
                         } else {
                             d10 = b10.d();
@@ -233,9 +233,9 @@ final class l extends ot.c implements mt.a {
         public Integer x(q qVar) {
             int g10;
             try {
-                f0 f0Var = (f0) qVar.p(f0.f40573z);
-                h e10 = this.f40686e.e(f0Var);
-                switch (this.f40685d) {
+                f0 f0Var = (f0) qVar.p(f0.f40589z);
+                h e10 = this.f40702e.e(f0Var);
+                switch (this.f40701d) {
                     case 2:
                         g10 = e10.g();
                         break;
@@ -246,17 +246,17 @@ final class l extends ot.c implements mt.a {
                         g10 = e10.d();
                         break;
                     case 5:
-                        g10 = (int) ((f0Var.j() - this.f40686e.d(this.f40686e.m(e10.e(), e10.h(this.f40686e.v()))).j()) + 1);
+                        g10 = (int) ((f0Var.j() - this.f40702e.d(this.f40702e.m(e10.e(), e10.h(this.f40702e.v()))).j()) + 1);
                         break;
                     case 6:
                     case 7:
-                        g10 = e10.h(this.f40686e.v());
+                        g10 = e10.h(this.f40702e.v());
                         break;
                     case 8:
                         g10 = ((e10.g() - 1) / 100) + 1;
                         break;
                     default:
-                        throw new UnsupportedOperationException("Unknown element index: " + this.f40685d);
+                        throw new UnsupportedOperationException("Unknown element index: " + this.f40701d);
                 }
                 return Integer.valueOf(g10);
             } catch (IllegalArgumentException e11) {
@@ -271,7 +271,7 @@ final class l extends ot.c implements mt.a {
                 return false;
             }
             try {
-                return this.f40686e.B(b(qVar, num.intValue()));
+                return this.f40702e.B(b(qVar, num.intValue()));
             } catch (IllegalArgumentException unused) {
                 return false;
             }
@@ -281,7 +281,7 @@ final class l extends ot.c implements mt.a {
         /* renamed from: m */
         public q w(q qVar, Integer num, boolean z10) {
             if (num != null) {
-                return qVar.E(f0.f40573z, this.f40686e.d(b(qVar, num.intValue())));
+                return qVar.E(f0.f40589z, this.f40702e.d(b(qVar, num.intValue())));
             }
             throw new IllegalArgumentException("Missing historic element value.");
         }
@@ -291,7 +291,7 @@ final class l extends ot.c implements mt.a {
     public l(char c10, int i10, int i11, d dVar, int i12) {
         super(O(i12), c10, i10, i11);
         this.history = dVar;
-        this.f40684q = i12;
+        this.f40700q = i12;
     }
 
     private void H(String str, int i10) {
@@ -338,7 +338,7 @@ final class l extends ot.c implements mt.a {
     }
 
     private s K(jt.d dVar, kt.m mVar) {
-        return kt.b.d((Locale) dVar.b(kt.a.f36530c, Locale.ROOT)).l((v) dVar.b(kt.a.f36534g, v.WIDE), mVar);
+        return kt.b.d((Locale) dVar.b(kt.a.f36546c, Locale.ROOT)).l((v) dVar.b(kt.a.f36550g, v.WIDE), mVar);
     }
 
     private static String L(String str, int i10, char c10) {
@@ -362,7 +362,7 @@ final class l extends ot.c implements mt.a {
         int i12 = 0;
         long j10 = 0;
         if (jVar.p()) {
-            if (jVar == kt.j.f36588d && charSequence.charAt(i10) == '-') {
+            if (jVar == kt.j.f36604d && charSequence.charAt(i10) == '-') {
                 i11 = i10 + 1;
                 z10 = true;
             } else {
@@ -474,8 +474,8 @@ final class l extends ot.c implements mt.a {
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // jt.e
     public z c(x xVar) {
-        if (xVar.E(f0.f40573z)) {
-            return new a(this.f40684q, this.history);
+        if (xVar.E(f0.f40589z)) {
+            return new a(this.f40700q, this.history);
         }
         return null;
     }
@@ -489,7 +489,7 @@ final class l extends ot.c implements mt.a {
     public void o(jt.o oVar, Appendable appendable, jt.d dVar, kt.j jVar, char c10, int i10, int i11) {
         h hVar;
         int h10;
-        if (this.f40684q == 5) {
+        if (this.f40700q == 5) {
             appendable.append(String.valueOf(oVar.p(this.history.h())));
             return;
         }
@@ -498,7 +498,7 @@ final class l extends ot.c implements mt.a {
         } else {
             hVar = (h) oVar.p(this.history.f());
         }
-        int i12 = this.f40684q;
+        int i12 = this.f40700q;
         if (i12 != 2) {
             if (i12 != 3) {
                 if (i12 == 4) {
@@ -507,10 +507,10 @@ final class l extends ot.c implements mt.a {
                 }
                 throw new r("Not printable as text: " + name());
             }
-            int intValue = ((Integer) dVar.b(mt.a.f39574k, 0)).intValue();
+            int intValue = ((Integer) dVar.b(mt.a.f39590k, 0)).intValue();
             int f10 = hVar.f();
             if (intValue == 0) {
-                appendable.append(K(dVar, (kt.m) dVar.b(kt.a.f36535h, kt.m.FORMAT)).f(b0.f(f10)));
+                appendable.append(K(dVar, (kt.m) dVar.b(kt.a.f36551h, kt.m.FORMAT)).f(b0.f(f10)));
                 return;
             }
             String t10 = jVar.t(f10);
@@ -523,7 +523,7 @@ final class l extends ot.c implements mt.a {
         o v10 = this.history.v();
         int g10 = hVar.g();
         String str = null;
-        if (!o.f40697d.equals(v10) && (h10 = hVar.h(v10)) != g10) {
+        if (!o.f40713d.equals(v10) && (h10 = hVar.h(v10)) != g10) {
             jt.c cVar = d.A;
             nt.a aVar = nt.a.DUAL_DATING;
             if (dVar.b(cVar, aVar) == aVar) {
@@ -563,15 +563,15 @@ final class l extends ot.c implements mt.a {
     public Integer t(CharSequence charSequence, ParsePosition parsePosition, jt.d dVar, q qVar) {
         char c10;
         kt.g gVar;
-        int i10 = this.f40684q;
+        int i10 = this.f40700q;
         if (i10 == 3) {
             int index = parsePosition.getIndex();
-            if (((Integer) dVar.b(mt.a.f39574k, 0)).intValue() == 0) {
-                jt.c cVar = kt.a.f36535h;
+            if (((Integer) dVar.b(mt.a.f39590k, 0)).intValue() == 0) {
+                jt.c cVar = kt.a.f36551h;
                 kt.m mVar = kt.m.FORMAT;
                 kt.m mVar2 = (kt.m) dVar.b(cVar, mVar);
                 b0 b0Var = (b0) K(dVar, mVar2).c(charSequence, parsePosition, b0.class, dVar);
-                if (b0Var == null && ((Boolean) dVar.b(kt.a.f36538k, Boolean.TRUE)).booleanValue()) {
+                if (b0Var == null && ((Boolean) dVar.b(kt.a.f36554k, Boolean.TRUE)).booleanValue()) {
                     parsePosition.setErrorIndex(-1);
                     parsePosition.setIndex(index);
                     if (mVar2 == mVar) {
@@ -587,8 +587,8 @@ final class l extends ot.c implements mt.a {
         } else if (i10 == 6 || i10 == 7 || i10 == 8) {
             throw new r("Not parseable as text element: " + name());
         }
-        kt.j jVar = (kt.j) dVar.b(kt.a.f36539l, kt.j.f36588d);
-        jt.c cVar2 = kt.a.f36540m;
+        kt.j jVar = (kt.j) dVar.b(kt.a.f36555l, kt.j.f36604d);
+        jt.c cVar2 = kt.a.f36556m;
         if (dVar.a(cVar2)) {
             c10 = ((Character) dVar.c(cVar2)).charValue();
         } else if (jVar.p()) {
@@ -600,14 +600,14 @@ final class l extends ot.c implements mt.a {
         if (jVar.p()) {
             gVar = kt.g.SMART;
         } else {
-            gVar = (kt.g) dVar.b(kt.a.f36533f, kt.g.SMART);
+            gVar = (kt.g) dVar.b(kt.a.f36549f, kt.g.SMART);
         }
         kt.g gVar2 = gVar;
         int index2 = parsePosition.getIndex();
         int N = N(jVar, c11, charSequence, index2, parsePosition, gVar2);
         int index3 = parsePosition.getIndex();
         int i11 = 2;
-        if (this.f40684q == 2 && index3 > index2 && !o.f40697d.equals(this.history.v()) && index3 < charSequence.length() && charSequence.charAt(index3) == '/') {
+        if (this.f40700q == 2 && index3 > index2 && !o.f40713d.equals(this.history.v()) && index3 < charSequence.length() && charSequence.charAt(index3) == '/') {
             jt.c cVar3 = d.A;
             nt.a aVar = nt.a.DUAL_DATING;
             if (dVar.b(cVar3, aVar) == aVar) {
@@ -617,19 +617,19 @@ final class l extends ot.c implements mt.a {
                 if (index4 == i12) {
                     parsePosition.setIndex(index3);
                 } else {
-                    if (this.history.v().f(j.AD, N) != n.f40694s) {
+                    if (this.history.v().f(j.AD, N) != n.f40710s) {
                         i11 = 1;
                     }
                     int J = J(N, N2, i11);
                     if (jVar.p() && J != Integer.MAX_VALUE) {
                         if (qVar != null) {
-                            qVar.C(ot.c.f44773p, N);
+                            qVar.C(ot.c.f44789p, N);
                         }
                         index3 = index4;
                         N = J;
                     } else if (Math.abs(N2 - N) <= i11) {
                         if (qVar != null) {
-                            qVar.C(ot.c.f44773p, N);
+                            qVar.C(ot.c.f44789p, N);
                         }
                         N = N2;
                         index3 = index4;
@@ -649,8 +649,8 @@ final class l extends ot.c implements mt.a {
     @Override // kt.t
     public void u(jt.o oVar, Appendable appendable, jt.d dVar) {
         char c10;
-        kt.j jVar = (kt.j) dVar.b(kt.a.f36539l, kt.j.f36588d);
-        jt.c cVar = kt.a.f36540m;
+        kt.j jVar = (kt.j) dVar.b(kt.a.f36555l, kt.j.f36604d);
+        jt.c cVar = kt.a.f36556m;
         if (dVar.a(cVar)) {
             c10 = ((Character) dVar.c(cVar)).charValue();
         } else if (jVar.p()) {

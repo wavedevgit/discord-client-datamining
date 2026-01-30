@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.CUSTOM_EMOJI_REGEX = var3;
     var3 = function(arg0) { // Original name: getSystemMessageEmoji, environment: var1
-        _fun55746: for (var _fun55746_ip = 0;;) switch (_fun55746_ip) {
+        _fun55791: for (var _fun55791_ip = 0;;) switch (_fun55791_ip) {
             case 0:
                 var3 = _closure1_slot4;
                 var2 = var3.exec;
@@ -45,8 +45,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0 == var4;
                 var3 = undefined;
                 if (var2) {
-                    _fun55746_ip = 39;
-                    continue _fun55746
+                    _fun55791_ip = 39;
+                    continue _fun55791
                 }
             case 32:
                 var2 = 3;
@@ -55,8 +55,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0 == var3;
                 var0 = null;
                 if (var2) {
-                    _fun55746_ip = 63;
-                    continue _fun55746
+                    _fun55791_ip = 63;
+                    continue _fun55791
                 }
             case 48:
                 var2 = _closure1_slot3;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = new Array(1);
         var3[0] = var2;
         var2 = function() { // Environment: var0
-            _fun55748: for (var _fun55748_ip = 0;;) switch (_fun55748_ip) {
+            _fun55793: for (var _fun55793_ip = 0;;) switch (_fun55793_ip) {
                 case 0:
                     var2 = _closure1_slot4;
                     var1 = var2.exec;
@@ -85,8 +85,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var0 == var2;
                     var0 = undefined;
                     if (var1) {
-                        _fun55748_ip = 43;
-                        continue _fun55748
+                        _fun55793_ip = 43;
+                        continue _fun55793
                     }
                 case 36:
                     var1 = 3;
@@ -108,14 +108,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var4;
         var0 = function() { // Environment: var0
-            _fun55749: for (var _fun55749_ip = 0;;) switch (_fun55749_ip) {
+            _fun55794: for (var _fun55794_ip = 0;;) switch (_fun55794_ip) {
                 case 0:
                     var2 = _closure2_slot1;
                     var0 = null;
                     var2 = var0 == var2;
                     if (var2) {
-                        _fun55749_ip = 38;
-                        continue _fun55749
+                        _fun55794_ip = 38;
+                        continue _fun55794
                     }
                 case 16:
                     var3 = _closure1_slot3;
@@ -131,4 +131,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useSystemMessageEmoji = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4693, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4699, 566, 2]);

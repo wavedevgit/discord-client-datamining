@@ -30,28 +30,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/game_console/coercePlatformTypeToConsoleType.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Original name: coercePlatformTypeToConsoleType, environment: var1
-        _fun67981: for (var _fun67981_ip = 0;;) switch (_fun67981_ip) {
+        _fun68026: for (var _fun68026_ip = 0;;) switch (_fun68026_ip) {
             case 0:
                 var2 = arg0;
                 var1 = _closure1_slot1;
                 var1 = var1.XBOX;
                 if (!(var1 !== var2)) {
-                    _fun67981_ip = 64;
-                    continue _fun67981
+                    _fun68026_ip = 64;
+                    continue _fun68026
                 }
             case 20:
                 var1 = _closure1_slot1;
                 var1 = var1.PLAYSTATION;
                 if (!(var1 !== var2)) {
-                    _fun67981_ip = 52;
-                    continue _fun67981
+                    _fun68026_ip = 52;
+                    continue _fun68026
                 }
             case 34:
                 var1 = _closure1_slot1;
                 var1 = var1.PLAYSTATION_STAGING;
                 if (!(var1 !== var2)) {
-                    _fun67981_ip = 52;
-                    continue _fun67981
+                    _fun68026_ip = 52;
+                    continue _fun68026
                 }
             case 48:
                 var1 = null;
@@ -68,22 +68,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.coercePlatformTypeToConsoleType = var3;
     var1 = function(arg0, arg1) { // Original name: coerceConsoleTypeToPlatformType, environment: var1
-        _fun67982: for (var _fun67982_ip = 0;;) switch (_fun67982_ip) {
+        _fun68027: for (var _fun68027_ip = 0;;) switch (_fun68027_ip) {
             case 0:
                 var3 = arg0;
                 var4 = arg1;
                 var1 = _closure1_slot0;
                 var1 = var1.XBOX;
                 if (!(var1 !== var3)) {
-                    _fun67982_ip = 109;
-                    continue _fun67982
+                    _fun68027_ip = 109;
+                    continue _fun68027
                 }
             case 25:
                 var1 = _closure1_slot0;
                 var1 = var1.PLAYSTATION;
                 if (!(var1 !== var3)) {
-                    _fun67982_ip = 43;
-                    continue _fun67982
+                    _fun68027_ip = 43;
+                    continue _fun68027
                 }
             case 39:
                 var1 = null;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 43:
                 var3 = var4.some;
                 var1 = function(arg0) { // Environment: var2
-                    _fun67983: for (var _fun67983_ip = 0;;) switch (_fun67983_ip) {
+                    _fun68028: for (var _fun68028_ip = 0;;) switch (_fun68028_ip) {
                         case 0:
                             var0 = arg0;
                             var2 = var0.type;
@@ -100,8 +100,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var0.PLAYSTATION_STAGING;
                             var0 = var2 === var0;
                             if (!var0) {
-                                _fun67983_ip = 37;
-                                continue _fun67983
+                                _fun68028_ip = 37;
+                                continue _fun68028
                             }
                         case 34:
                             var0 = var1;
@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3.bind(var4)(var1);
                 var3 = var4.some;
                 var2 = function(arg0) { // Environment: var2
-                    _fun67984: for (var _fun67984_ip = 0;;) switch (_fun67984_ip) {
+                    _fun68029: for (var _fun68029_ip = 0;;) switch (_fun68029_ip) {
                         case 0:
                             var0 = arg0;
                             var2 = var0.type;
@@ -121,8 +121,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var0.PLAYSTATION;
                             var0 = var2 === var0;
                             if (!var0) {
-                                _fun67984_ip = 37;
-                                continue _fun67984
+                                _fun68029_ip = 37;
+                                continue _fun68029
                             }
                         case 34:
                             var0 = var1;
@@ -132,19 +132,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var2 = var3.bind(var4)(var2);
                 if (var2) {
-                    _fun67982_ip = 97;
-                    continue _fun67982
+                    _fun68027_ip = 97;
+                    continue _fun68027
                 }
             case 82:
                 if (!var1) {
-                    _fun67982_ip = 97;
-                    continue _fun67982
+                    _fun68027_ip = 97;
+                    continue _fun68027
                 }
             case 85:
                 var1 = _closure1_slot1;
                 var1 = var1.PLAYSTATION_STAGING;
-                _fun67982_ip = 107;
-                continue _fun67982;
+                _fun68027_ip = 107;
+                continue _fun68027;
             case 97:
                 var2 = _closure1_slot1;
                 var1 = var2.PLAYSTATION;
@@ -158,4 +158,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.coerceConsoleTypeToPlatformType = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5296, 660, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5300, 660, 2]);

@@ -65,7 +65,7 @@ public final class u1 extends c1 {
             super();
             this.f21259d = z2.c(new p1(u1.this));
             this.f21260e = z2.c(new q1(this));
-            ir.o oVar = ir.o.f31103e;
+            ir.o oVar = ir.o.f31119e;
             this.f21261f = ir.l.a(oVar, new r1(this, u1.this));
             this.f21262g = ir.l.a(oVar, new s1(this));
             this.f21263h = z2.c(new t1(u1.this, this));
@@ -168,7 +168,7 @@ public final class u1 extends c1 {
     public u1(Class jClass) {
         Intrinsics.checkNotNullParameter(jClass, "jClass");
         this.f21256o = jClass;
-        this.f21257p = ir.l.a(ir.o.f31103e, new o1(this));
+        this.f21257p = ir.l.a(ir.o.f31119e, new o1(this));
     }
 
     /* JADX INFO: Access modifiers changed from: private */

@@ -159,7 +159,7 @@ final class RiveUIKt$RiveUI$7 extends k implements Function2<CoroutineScope, Con
                 r10.m125drawPOUf8go(r11, r13, r15, r16, r17, r18)
                 goto L48
             L93:
-                kotlin.Unit r1 = kotlin.Unit.f33282a
+                kotlin.Unit r1 = kotlin.Unit.f33298a
                 return r1
             */
             throw new UnsupportedOperationException("Method not decompiled: app.rive.RiveUIKt$RiveUI$7.AnonymousClass2.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -167,7 +167,7 @@ final class RiveUIKt$RiveUI$7 extends k implements Function2<CoroutineScope, Con
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(@NotNull CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -213,7 +213,7 @@ final class RiveUIKt$RiveUI$7 extends k implements Function2<CoroutineScope, Con
                         return "Surface is null, skipping drawing";
                     }
                 });
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
             Lifecycle lifecycle = this.$lifecycleOwner.getLifecycle();
             Lifecycle.State state = Lifecycle.State.f4396p;
@@ -223,11 +223,11 @@ final class RiveUIKt$RiveUI$7 extends k implements Function2<CoroutineScope, Con
                 return f10;
             }
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(@NotNull CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((RiveUIKt$RiveUI$7) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((RiveUIKt$RiveUI$7) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

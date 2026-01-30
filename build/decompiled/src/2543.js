@@ -36,7 +36,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.nextWeek = var4;
     var _closure1_slot1 = var3;
     var2 = function(arg0, arg1) { // Original name: formatRelative, environment: var2
-        _fun21807: for (var _fun21807_ip = 0;;) switch (_fun21807_ip) {
+        _fun21808: for (var _fun21808_ip = 0;;) switch (_fun21808_ip) {
             case 0:
                 var1 = _closure1_slot1;
                 var0 = arg0;
@@ -45,8 +45,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = typeof var3;
                 var0 = var3;
                 if (!(var2 === var1)) {
-                    _fun21807_ip = 38;
-                    continue _fun21807
+                    _fun21808_ip = 38;
+                    continue _fun21808
                 }
             case 28:
                 var2 = undefined;

@@ -59,20 +59,20 @@ public class HorizontalProgressWheelView extends View {
     }
 
     private void a() {
-        this.f20973v = androidx.core.content.a.c(getContext(), nq.a.f42072l);
-        this.f20968q = getContext().getResources().getDimensionPixelSize(b.f42082j);
-        this.f20969r = getContext().getResources().getDimensionPixelSize(b.f42078f);
-        this.f20970s = getContext().getResources().getDimensionPixelSize(b.f42080h);
+        this.f20973v = androidx.core.content.a.c(getContext(), nq.a.f42088l);
+        this.f20968q = getContext().getResources().getDimensionPixelSize(b.f42098j);
+        this.f20969r = getContext().getResources().getDimensionPixelSize(b.f42094f);
+        this.f20970s = getContext().getResources().getDimensionPixelSize(b.f42096h);
         Paint paint = new Paint(1);
         this.f20966o = paint;
         paint.setStyle(Paint.Style.STROKE);
         this.f20966o.setStrokeWidth(this.f20968q);
-        this.f20966o.setColor(getResources().getColor(nq.a.f42067g));
+        this.f20966o.setColor(getResources().getColor(nq.a.f42083g));
         Paint paint2 = new Paint(this.f20966o);
         this.f20967p = paint2;
         paint2.setColor(this.f20973v);
         this.f20967p.setStrokeCap(Paint.Cap.ROUND);
-        this.f20967p.setStrokeWidth(getContext().getResources().getDimensionPixelSize(b.f42083k));
+        this.f20967p.setStrokeWidth(getContext().getResources().getDimensionPixelSize(b.f42099k));
     }
 
     private void b(MotionEvent motionEvent, float f10) {

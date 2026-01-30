@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.truncateMentions = var6;
     var6 = function(arg0) { // Original name: fetchRecentMentions, environment: var3
-        _fun103467: for (var _fun103467_ip = 0;;) switch (_fun103467_ip) {
+        _fun103723: for (var _fun103723_ip = 0;;) switch (_fun103723_ip) {
             case 0:
                 var1 = arg0;
                 var10 = var1.before;
@@ -88,32 +88,32 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var1.limit;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun103467_ip = 33;
-                    continue _fun103467
+                    _fun103723_ip = 33;
+                    continue _fun103723
                 }
             case 26:
                 var9 = _closure1_slot4;
             case 33:
                 var8 = var1.guildId;
                 if (!(var8 === var3)) {
-                    _fun103467_ip = 44;
-                    continue _fun103467
+                    _fun103723_ip = 44;
+                    continue _fun103723
                 }
             case 42:
                 var8 = null;
             case 44:
                 var7 = var1.roles;
                 if (!(var7 === var3)) {
-                    _fun103467_ip = 56;
-                    continue _fun103467
+                    _fun103723_ip = 56;
+                    continue _fun103723
                 }
             case 54:
                 var7 = true;
             case 56:
                 var6 = var1.everyone;
                 if (!(var6 === var3)) {
-                    _fun103467_ip = 68;
-                    continue _fun103467
+                    _fun103723_ip = 68;
+                    continue _fun103723
                 }
             case 66:
                 var6 = true;

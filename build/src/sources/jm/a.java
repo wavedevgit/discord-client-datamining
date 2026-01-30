@@ -7,13 +7,13 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f32237a = new a();
+    public static final a f32253a = new a();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final boolean f32238b = true;
+    private static final boolean f32254b = true;
 
     /* renamed from: c  reason: collision with root package name */
-    private static ReactApplicationContext f32239c;
+    private static ReactApplicationContext f32255c;
 
     private a() {
     }
@@ -34,9 +34,9 @@ public final class a {
 
     public final void a(String str, String message, Throwable th2) {
         Intrinsics.checkNotNullParameter(message, "message");
-        if (f32238b) {
+        if (f32254b) {
             Log.i(str, message, th2);
-            ReactApplicationContext reactApplicationContext = f32239c;
+            ReactApplicationContext reactApplicationContext = f32255c;
             if (reactApplicationContext != null) {
                 String str2 = (th2 == null || (str2 = th2.toString()) == null) ? "" : "";
                 reactApplicationContext.emitDeviceEvent("KeyboardStateDebugging", message + ", " + str2);
@@ -45,14 +45,14 @@ public final class a {
     }
 
     public final void c(ReactApplicationContext reactApplicationContext) {
-        f32239c = reactApplicationContext;
+        f32255c = reactApplicationContext;
     }
 
     public final void d(String str, String message, Throwable th2) {
         Intrinsics.checkNotNullParameter(message, "message");
-        if (f32238b) {
+        if (f32254b) {
             Log.w(str, message, th2);
-            ReactApplicationContext reactApplicationContext = f32239c;
+            ReactApplicationContext reactApplicationContext = f32255c;
             if (reactApplicationContext != null) {
                 String str2 = (th2 == null || (str2 = th2.toString()) == null) ? "" : "";
                 reactApplicationContext.emitDeviceEvent("KeyboardStateDebugging", message + ", " + str2);

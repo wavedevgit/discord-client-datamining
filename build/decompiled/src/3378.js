@@ -17,19 +17,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = silentSetPrototypeOf(var4, var3);
     var _closure1_slot2 = var1;
     var1 = function(arg0) { // Original name: isPropertyDescriptor, environment: var0
-        _fun28982: for (var _fun28982_ip = 0;;) switch (_fun28982_ip) {
+        _fun28983: for (var _fun28983_ip = 0;;) switch (_fun28983_ip) {
             case 0:
                 var6 = arg0;
                 if (!var6) {
-                    _fun28982_ip = 266;
-                    continue _fun28982
+                    _fun28983_ip = 266;
+                    continue _fun28983
                 }
             case 9:
                 var1 = 'object';
                 var0 = typeof var6;
                 if (!(var1 === var0)) {
-                    _fun28982_ip = 266;
-                    continue _fun28982
+                    _fun28983_ip = 266;
+                    continue _fun28983
                 }
             case 23:
                 var8 = var6;
@@ -44,14 +44,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var1 = var11.bind(var2)(var1);
                         var1 = var1.bind(var2)(var6, var10);
                         if (!var1) {
-                            _fun28982_ip = 41;
-                            continue _fun28982
+                            _fun28983_ip = 41;
+                            continue _fun28983
                         }
                         case 79: var1 = _closure1_slot2;
                         var1 = var1[var10];
                         if (var1) {
-                            _fun28982_ip = 41;
-                            continue _fun28982
+                            _fun28983_ip = 41;
+                            continue _fun28983
                         }
                         case 90: var1 = false;
                         return var1;
@@ -64,8 +64,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = '[[Value]]';
                 var3 = var3.bind(var2)(var6, var1);
                 if (var3) {
-                    _fun28982_ip = 151;
-                    continue _fun28982
+                    _fun28983_ip = 151;
+                    continue _fun28983
                 }
             case 124:
                 var4 = _closure1_slot0;
@@ -82,8 +82,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = '[[Get]]';
                 var1 = var4.bind(var2)(var6, var1);
                 if (var1) {
-                    _fun28982_ip = 208;
-                    continue _fun28982
+                    _fun28983_ip = 208;
+                    continue _fun28983
                 }
             case 181:
                 var5 = _closure1_slot0;
@@ -94,13 +94,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var5.bind(var2)(var6, var4);
             case 208:
                 if (!var3) {
-                    _fun28982_ip = 214;
-                    continue _fun28982
+                    _fun28983_ip = 214;
+                    continue _fun28983
                 }
             case 211:
                 if (var1) {
-                    _fun28982_ip = 218;
-                    continue _fun28982
+                    _fun28983_ip = 218;
+                    continue _fun28983
                 }
             case 214:
                 var1 = true;

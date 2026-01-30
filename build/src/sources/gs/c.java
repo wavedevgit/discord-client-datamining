@@ -13,10 +13,10 @@ import kotlinx.coroutines.CancellableContinuation;
 public final class c {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final /* synthetic */ AtomicIntegerFieldUpdater f27136b = AtomicIntegerFieldUpdater.newUpdater(c.class, "notCompletedCount$volatile");
+    private static final /* synthetic */ AtomicIntegerFieldUpdater f27152b = AtomicIntegerFieldUpdater.newUpdater(c.class, "notCompletedCount$volatile");
 
     /* renamed from: a  reason: collision with root package name */
-    private final g0[] f27137a;
+    private final g0[] f27153a;
     private volatile /* synthetic */ int notCompletedCount$volatile;
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -24,25 +24,25 @@ public final class c {
     public final class a extends z0 {
 
         /* renamed from: s  reason: collision with root package name */
-        private static final /* synthetic */ AtomicReferenceFieldUpdater f27138s = AtomicReferenceFieldUpdater.newUpdater(a.class, Object.class, "_disposer$volatile");
+        private static final /* synthetic */ AtomicReferenceFieldUpdater f27154s = AtomicReferenceFieldUpdater.newUpdater(a.class, Object.class, "_disposer$volatile");
         private volatile /* synthetic */ Object _disposer$volatile;
 
         /* renamed from: p  reason: collision with root package name */
-        private final CancellableContinuation f27139p;
+        private final CancellableContinuation f27155p;
 
         /* renamed from: q  reason: collision with root package name */
-        public n0 f27140q;
+        public n0 f27156q;
 
         public a(CancellableContinuation cancellableContinuation) {
-            this.f27139p = cancellableContinuation;
+            this.f27155p = cancellableContinuation;
         }
 
         public final void B(b bVar) {
-            f27138s.set(this, bVar);
+            f27154s.set(this, bVar);
         }
 
         public final void C(n0 n0Var) {
-            this.f27140q = n0Var;
+            this.f27156q = n0Var;
         }
 
         @Override // gs.z0
@@ -53,17 +53,17 @@ public final class c {
         @Override // gs.z0
         public void w(Throwable th2) {
             if (th2 != null) {
-                Object d10 = this.f27139p.d(th2);
+                Object d10 = this.f27155p.d(th2);
                 if (d10 != null) {
-                    this.f27139p.w(d10);
+                    this.f27155p.w(d10);
                     b y10 = y();
                     if (y10 != null) {
                         y10.a();
                     }
                 }
             } else if (c.b().decrementAndGet(c.this) == 0) {
-                CancellableContinuation cancellableContinuation = this.f27139p;
-                g0[] g0VarArr = c.this.f27137a;
+                CancellableContinuation cancellableContinuation = this.f27155p;
+                g0[] g0VarArr = c.this.f27153a;
                 ArrayList arrayList = new ArrayList(g0VarArr.length);
                 for (g0 g0Var : g0VarArr) {
                     arrayList.add(g0Var.B());
@@ -73,11 +73,11 @@ public final class c {
         }
 
         public final b y() {
-            return (b) f27138s.get(this);
+            return (b) f27154s.get(this);
         }
 
         public final n0 z() {
-            n0 n0Var = this.f27140q;
+            n0 n0Var = this.f27156q;
             if (n0Var != null) {
                 return n0Var;
             }
@@ -91,14 +91,14 @@ public final class c {
     public final class b implements kotlinx.coroutines.d {
 
         /* renamed from: d  reason: collision with root package name */
-        private final a[] f27142d;
+        private final a[] f27158d;
 
         public b(a[] aVarArr) {
-            this.f27142d = aVarArr;
+            this.f27158d = aVarArr;
         }
 
         public final void a() {
-            for (a aVar : this.f27142d) {
+            for (a aVar : this.f27158d) {
                 aVar.z().dispose();
             }
         }
@@ -109,32 +109,32 @@ public final class c {
         }
 
         public String toString() {
-            return "DisposeHandlersOnCancel[" + this.f27142d + ']';
+            return "DisposeHandlersOnCancel[" + this.f27158d + ']';
         }
     }
 
     public c(g0[] g0VarArr) {
-        this.f27137a = g0VarArr;
+        this.f27153a = g0VarArr;
         this.notCompletedCount$volatile = g0VarArr.length;
     }
 
     public static final /* synthetic */ AtomicIntegerFieldUpdater b() {
-        return f27136b;
+        return f27152b;
     }
 
     public final Object c(Continuation continuation) {
         n0 o10;
         kotlinx.coroutines.e eVar = new kotlinx.coroutines.e(or.b.c(continuation), 1);
         eVar.H();
-        int length = this.f27137a.length;
+        int length = this.f27153a.length;
         a[] aVarArr = new a[length];
         for (int i10 = 0; i10 < length; i10++) {
-            g0 g0Var = this.f27137a[i10];
+            g0 g0Var = this.f27153a[i10];
             g0Var.start();
             a aVar = new a(eVar);
             o10 = kotlinx.coroutines.a0.o(g0Var, false, aVar, 1, null);
             aVar.C(o10);
-            Unit unit = Unit.f33282a;
+            Unit unit = Unit.f33298a;
             aVarArr[i10] = aVar;
         }
         b bVar = new b(aVarArr);

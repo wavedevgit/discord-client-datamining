@@ -23,7 +23,7 @@ public final class a implements ViewBinding {
     }
 
     public static a b(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(n1.f55991a, viewGroup, false);
+        View inflate = layoutInflater.inflate(n1.f56007a, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }

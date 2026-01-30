@@ -11,7 +11,6 @@ import com.facebook.react.module.annotations.ReactModule;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.ViewGroupManager;
 import com.facebook.react.uimanager.ViewProps;
-import com.facebook.react.uimanager.annotations.ReactProp;
 import com.facebook.react.viewmanagers.DCDChatManagerDelegate;
 import com.facebook.react.viewmanagers.DCDChatManagerInterface;
 import java.util.Map;
@@ -21,7 +20,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import org.jetbrains.annotations.NotNull;
 @ReactModule(name = ChatViewManager.NAME)
-@Metadata(d1 = {"\u0000\\\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010%\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0007\b\u0007\u0018\u0000 ,2\b\u0012\u0004\u0012\u00020\u00020\u00012\b\u0012\u0004\u0012\u00020\u00020\u0003:\u0001,B\u0007¢\u0006\u0004\b\u0004\u0010\u0005J$\u0010\u000b\u001a\u001e\u0012\f\u0012\n \b*\u0004\u0018\u00010\u00020\u0002\u0012\f\u0012\n \b*\u0004\u0018\u00010\u00000\u00000\u0007H\u0014J\b\u0010\f\u001a\u00020\rH\u0016J\u0010\u0010\u000e\u001a\u00020\u00022\u0006\u0010\u000f\u001a\u00020\u0010H\u0014J\u0014\u0010\u0011\u001a\u000e\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u00130\u0012H\u0016J\u0018\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00022\u0006\u0010\u0017\u001a\u00020\u0018H\u0017J\u0018\u0010\u0019\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00022\u0006\u0010\u001a\u001a\u00020\u0018H\u0017J\u0018\u0010\u001b\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00022\u0006\u0010\u001a\u001a\u00020\u0018H\u0017J\u0018\u0010\u001c\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00022\u0006\u0010\u001a\u001a\u00020\u0018H\u0017J\u0018\u0010\u001d\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00022\u0006\u0010\u001a\u001a\u00020\u0018H\u0017J\u001a\u0010\u001e\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00022\b\u0010\u001a\u001a\u0004\u0018\u00010\rH\u0017J\u001a\u0010\u001f\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00022\b\u0010\u001a\u001a\u0004\u0018\u00010\rH\u0017J\"\u0010 \u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00022\u0006\u0010!\u001a\u00020\r2\b\u0010\"\u001a\u0004\u0018\u00010#H\u0016J0\u0010$\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00022\u0006\u0010%\u001a\u00020&2\u0006\u0010'\u001a\u00020\u00182\u0006\u0010(\u001a\u00020\u00182\u0006\u0010)\u001a\u00020&H\u0016J\u0018\u0010*\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00022\u0006\u0010'\u001a\u00020\u0018H\u0016J(\u0010+\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00022\u0006\u0010%\u001a\u00020&2\u0006\u0010'\u001a\u00020\u00182\u0006\u0010(\u001a\u00020\u0018H\u0016R*\u0010\u0006\u001a\u001e\u0012\f\u0012\n \b*\u0004\u0018\u00010\u00020\u0002\u0012\f\u0012\n \b*\u0004\u0018\u00010\u00000\u00000\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006-"}, d2 = {"Lcom/discord/chat/presentation/root/ChatViewManager;", "Lcom/facebook/react/uimanager/ViewGroupManager;", "Lcom/discord/chat/presentation/root/ChatView;", "Lcom/facebook/react/viewmanagers/DCDChatManagerInterface;", "<init>", "()V", "delegate", "Lcom/facebook/react/viewmanagers/DCDChatManagerDelegate;", "kotlin.jvm.PlatformType", "reactEvents", "Lcom/discord/reactevents/ReactEvents;", "getDelegate", "getName", "", "createViewInstance", "reactContext", "Lcom/facebook/react/uimanager/ThemedReactContext;", "getExportedCustomDirectEventTypeConstants", "", "", "setInverted", "", "view", "inverted", "", "setAnimateEmoji", "value", "setHACK_fixModalInteraction", "setAdjustContentOffsetWithBounds", "setAlwaysRespectKeyboard", "setRoleStyle", "setKeyboardBackgroundRgba", "receiveCommand", "commandId", "args", "Lcom/facebook/react/bridge/ReadableArray;", ChatViewManager.COMMAND_SCROLL_TO, "index", "", "animated", "highlight", ViewProps.POSITION, ChatViewManager.COMMAND_SCROLL_TO_BOTTOM, ChatViewManager.COMMAND_SCROLL_INTO_VIEW, "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+@Metadata(d1 = {"\u0000\\\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010%\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0007\b\u0007\u0018\u0000 -2\b\u0012\u0004\u0012\u00020\u00020\u00012\b\u0012\u0004\u0012\u00020\u00020\u0003:\u0001-B\u0007¢\u0006\u0004\b\u0004\u0010\u0005J$\u0010\u000b\u001a\u001e\u0012\f\u0012\n \b*\u0004\u0018\u00010\u00020\u0002\u0012\f\u0012\n \b*\u0004\u0018\u00010\u00000\u00000\u0007H\u0014J\b\u0010\f\u001a\u00020\rH\u0016J\u0010\u0010\u000e\u001a\u00020\u00022\u0006\u0010\u000f\u001a\u00020\u0010H\u0014J\u0014\u0010\u0011\u001a\u000e\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u00130\u0012H\u0016J\u0018\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00022\u0006\u0010\u0017\u001a\u00020\u0018H\u0016J\u001f\u0010\u0019\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00022\b\u0010\u001a\u001a\u0004\u0018\u00010\u0018H\u0016¢\u0006\u0002\u0010\u001bJ\u001f\u0010\u001c\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00022\b\u0010\u001a\u001a\u0004\u0018\u00010\u0018H\u0016¢\u0006\u0002\u0010\u001bJ\u001f\u0010\u001d\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00022\b\u0010\u001a\u001a\u0004\u0018\u00010\u0018H\u0016¢\u0006\u0002\u0010\u001bJ\u001f\u0010\u001e\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00022\b\u0010\u001a\u001a\u0004\u0018\u00010\u0018H\u0016¢\u0006\u0002\u0010\u001bJ\u001a\u0010\u001f\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00022\b\u0010\u001a\u001a\u0004\u0018\u00010\rH\u0016J\u001a\u0010 \u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00022\b\u0010\u001a\u001a\u0004\u0018\u00010\rH\u0016J\"\u0010!\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00022\u0006\u0010\"\u001a\u00020\r2\b\u0010#\u001a\u0004\u0018\u00010$H\u0016J0\u0010%\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00022\u0006\u0010&\u001a\u00020'2\u0006\u0010(\u001a\u00020\u00182\u0006\u0010)\u001a\u00020\u00182\u0006\u0010*\u001a\u00020'H\u0016J\u0018\u0010+\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00022\u0006\u0010(\u001a\u00020\u0018H\u0016J(\u0010,\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00022\u0006\u0010&\u001a\u00020'2\u0006\u0010(\u001a\u00020\u00182\u0006\u0010)\u001a\u00020\u0018H\u0016R*\u0010\u0006\u001a\u001e\u0012\f\u0012\n \b*\u0004\u0018\u00010\u00020\u0002\u0012\f\u0012\n \b*\u0004\u0018\u00010\u00000\u00000\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006."}, d2 = {"Lcom/discord/chat/presentation/root/ChatViewManager;", "Lcom/facebook/react/uimanager/ViewGroupManager;", "Lcom/discord/chat/presentation/root/ChatView;", "Lcom/facebook/react/viewmanagers/DCDChatManagerInterface;", "<init>", "()V", "delegate", "Lcom/facebook/react/viewmanagers/DCDChatManagerDelegate;", "kotlin.jvm.PlatformType", "reactEvents", "Lcom/discord/reactevents/ReactEvents;", "getDelegate", "getName", "", "createViewInstance", "reactContext", "Lcom/facebook/react/uimanager/ThemedReactContext;", "getExportedCustomDirectEventTypeConstants", "", "", "setInverted", "", "view", "inverted", "", "setAnimateEmoji", "value", "(Lcom/discord/chat/presentation/root/ChatView;Ljava/lang/Boolean;)V", "setHACK_fixModalInteraction", "setAdjustContentOffsetWithBounds", "setAlwaysRespectKeyboard", "setRoleStyle", "setKeyboardBackgroundRgba", "receiveCommand", "commandId", "args", "Lcom/facebook/react/bridge/ReadableArray;", ChatViewManager.COMMAND_SCROLL_TO, "index", "", "animated", "highlight", ViewProps.POSITION, ChatViewManager.COMMAND_SCROLL_TO_BOTTOM, ChatViewManager.COMMAND_SCROLL_INTO_VIEW, "Companion", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
 public final class ChatViewManager extends ViewGroupManager<ChatView> implements DCDChatManagerInterface<ChatView> {
     @NotNull
@@ -69,37 +68,31 @@ public final class ChatViewManager extends ViewGroupManager<ChatView> implements
     }
 
     @Override // com.facebook.react.viewmanagers.DCDChatManagerInterface
-    @ReactProp(name = "adjustContentOffsetWithBounds")
-    public void setAdjustContentOffsetWithBounds(@NotNull ChatView view, boolean z10) {
+    public void setAdjustContentOffsetWithBounds(@NotNull ChatView view, Boolean bool) {
         Intrinsics.checkNotNullParameter(view, "view");
     }
 
     @Override // com.facebook.react.viewmanagers.DCDChatManagerInterface
-    @ReactProp(name = "alwaysRespectKeyboard")
-    public void setAlwaysRespectKeyboard(@NotNull ChatView view, boolean z10) {
+    public void setAlwaysRespectKeyboard(@NotNull ChatView view, Boolean bool) {
         Intrinsics.checkNotNullParameter(view, "view");
     }
 
     @Override // com.facebook.react.viewmanagers.DCDChatManagerInterface
-    @ReactProp(name = "animateEmoji")
-    public void setAnimateEmoji(@NotNull ChatView view, boolean z10) {
+    public void setAnimateEmoji(@NotNull ChatView view, Boolean bool) {
         Intrinsics.checkNotNullParameter(view, "view");
     }
 
     @Override // com.facebook.react.viewmanagers.DCDChatManagerInterface
-    @ReactProp(name = "HACK_fixModalInteraction")
-    public void setHACK_fixModalInteraction(@NotNull ChatView view, boolean z10) {
+    public void setHACK_fixModalInteraction(@NotNull ChatView view, Boolean bool) {
         Intrinsics.checkNotNullParameter(view, "view");
     }
 
     @Override // com.facebook.react.viewmanagers.DCDChatManagerInterface
-    @ReactProp(name = "keyboardBackgroundRgba")
     public void setKeyboardBackgroundRgba(@NotNull ChatView view, String str) {
         Intrinsics.checkNotNullParameter(view, "view");
     }
 
     @Override // com.facebook.react.viewmanagers.DCDChatManagerInterface
-    @ReactProp(name = "roleStyle")
     public void setRoleStyle(@NotNull ChatView view, String str) {
         Intrinsics.checkNotNullParameter(view, "view");
     }
@@ -170,7 +163,6 @@ public final class ChatViewManager extends ViewGroupManager<ChatView> implements
     }
 
     @Override // com.facebook.react.viewmanagers.DCDChatManagerInterface
-    @ReactProp(name = "inverted")
     public void setInverted(@NotNull ChatView view, boolean z10) {
         Intrinsics.checkNotNullParameter(view, "view");
         view.setInverted(z10);

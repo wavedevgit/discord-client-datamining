@@ -5,7 +5,7 @@ import ui.c;
 final class oc implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final oc f38536a = new oc();
+    static final oc f38552a = new oc();
 
     static {
         c.b a10 = ui.c.a("result");

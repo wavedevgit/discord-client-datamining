@@ -7,29 +7,29 @@ import java.util.Map;
 final class f implements Iterator {
 
     /* renamed from: d  reason: collision with root package name */
-    Map.Entry f45219d;
+    Map.Entry f45235d;
 
     /* renamed from: e  reason: collision with root package name */
-    final /* synthetic */ Iterator f45220e;
+    final /* synthetic */ Iterator f45236e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ g f45221i;
+    final /* synthetic */ g f45237i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f(g gVar, Iterator it) {
-        this.f45220e = it;
-        this.f45221i = gVar;
+        this.f45236e = it;
+        this.f45237i = gVar;
     }
 
     @Override // java.util.Iterator
     public final boolean hasNext() {
-        return this.f45220e.hasNext();
+        return this.f45236e.hasNext();
     }
 
     @Override // java.util.Iterator
     public final Object next() {
-        Map.Entry entry = (Map.Entry) this.f45220e.next();
-        this.f45219d = entry;
+        Map.Entry entry = (Map.Entry) this.f45236e.next();
+        this.f45235d = entry;
         return entry.getKey();
     }
 
@@ -37,18 +37,18 @@ final class f implements Iterator {
     public final void remove() {
         boolean z10;
         int i10;
-        if (this.f45219d != null) {
+        if (this.f45235d != null) {
             z10 = true;
         } else {
             z10 = false;
         }
         el.d(z10, "no calls to next() since the last call to remove()");
-        Collection collection = (Collection) this.f45219d.getValue();
-        this.f45220e.remove();
-        m mVar = this.f45221i.f45238e;
-        i10 = mVar.f45567o;
-        mVar.f45567o = i10 - collection.size();
+        Collection collection = (Collection) this.f45235d.getValue();
+        this.f45236e.remove();
+        m mVar = this.f45237i.f45254e;
+        i10 = mVar.f45583o;
+        mVar.f45583o = i10 - collection.size();
         collection.clear();
-        this.f45219d = null;
+        this.f45235d = null;
     }
 }

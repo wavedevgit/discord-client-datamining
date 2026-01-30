@@ -62,7 +62,7 @@ public final class UserSearchTransformedUser {
         @Override // kotlinx.serialization.KSerializer, xs.o, kotlinx.serialization.DeserializationStrategy
         @NotNull
         public SerialDescriptor getDescriptor() {
-            return j.b("UserSearchTransformedUser", e.i.f56091a);
+            return j.b("UserSearchTransformedUser", e.i.f56107a);
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:16:0x0071, code lost:

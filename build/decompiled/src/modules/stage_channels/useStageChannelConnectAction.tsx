@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/stage_channels/useStageChannelConnectAction.tsx';
     var4 = var5.bind(var6)(var4);
     var4 = function(arg0) { // Original name: useStageChannelConnectAction, environment: var1
-        _fun65144: for (var _fun65144_ip = 0;;) switch (_fun65144_ip) {
+        _fun65188: for (var _fun65188_ip = 0;;) switch (_fun65188_ip) {
             case 0:
                 var5 = arg0;
                 var3 = _closure1_slot0;
@@ -50,19 +50,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3.bind(var4)(var5, var0);
                 var0 = var0.moderator;
                 if (var2) {
-                    _fun65144_ip = 76;
-                    continue _fun65144
+                    _fun65188_ip = 76;
+                    continue _fun65188
                 }
             case 61:
                 if (!var0) {
-                    _fun65144_ip = 76;
-                    continue _fun65144
+                    _fun65188_ip = 76;
+                    continue _fun65188
                 }
             case 64:
                 var0 = _closure1_slot2;
                 var0 = var0.START_EVENT;
-                _fun65144_ip = 86;
-                continue _fun65144;
+                _fun65188_ip = 86;
+                continue _fun65188;
             case 76:
                 var1 = _closure1_slot2;
                 var0 = var1.NORMAL;
@@ -94,4 +94,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useStageChannelStartEvent = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5872, 8048, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5875, 8051, 2]);

@@ -246,7 +246,7 @@ public abstract class g0 {
             if (l0Var != null) {
                 sentryAndroidOptions.setContinuousProfiler(l0Var);
                 io.sentry.protocol.x f10 = l0Var.f();
-                if (l0Var.isRunning() && !f10.equals(io.sentry.protocol.x.f30470e)) {
+                if (l0Var.isRunning() && !f10.equals(io.sentry.protocol.x.f30486e)) {
                     hVar.f(f10.toString());
                     return;
                 }

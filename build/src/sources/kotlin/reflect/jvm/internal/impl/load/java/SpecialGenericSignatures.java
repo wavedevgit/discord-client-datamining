@@ -27,43 +27,43 @@ public class SpecialGenericSignatures {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private static final List f34039a;
+    private static final List f34055a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final List f34040b;
+    private static final List f34056b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final List f34041c;
+    private static final List f34057c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Map f34042d;
+    private static final Map f34058d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Map f34043e;
+    private static final Map f34059e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Set f34044f;
+    private static final Set f34060f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final Set f34045g;
+    private static final Set f34061g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final Companion.NameAndSignature f34046h;
+    private static final Companion.NameAndSignature f34062h;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final Map f34047i;
+    private static final Map f34063i;
 
     /* renamed from: j  reason: collision with root package name */
-    private static final Map f34048j;
+    private static final Map f34064j;
 
     /* renamed from: k  reason: collision with root package name */
-    private static final Set f34049k;
+    private static final Set f34065k;
 
     /* renamed from: l  reason: collision with root package name */
-    private static final Set f34050l;
+    private static final Set f34066l;
 
     /* renamed from: m  reason: collision with root package name */
-    private static final Map f34051m;
+    private static final Map f34067m;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -72,45 +72,45 @@ public class SpecialGenericSignatures {
         public static final class NameAndSignature {
 
             /* renamed from: a  reason: collision with root package name */
-            private final String f34052a;
+            private final String f34068a;
 
             /* renamed from: b  reason: collision with root package name */
-            private final Name f34053b;
+            private final Name f34069b;
 
             /* renamed from: c  reason: collision with root package name */
-            private final String f34054c;
+            private final String f34070c;
 
             /* renamed from: d  reason: collision with root package name */
-            private final String f34055d;
+            private final String f34071d;
 
             /* renamed from: e  reason: collision with root package name */
-            private final String f34056e;
+            private final String f34072e;
 
             public NameAndSignature(@NotNull String classInternalName, @NotNull Name name, @NotNull String parameters, @NotNull String returnType) {
                 Intrinsics.checkNotNullParameter(classInternalName, "classInternalName");
                 Intrinsics.checkNotNullParameter(name, "name");
                 Intrinsics.checkNotNullParameter(parameters, "parameters");
                 Intrinsics.checkNotNullParameter(returnType, "returnType");
-                this.f34052a = classInternalName;
-                this.f34053b = name;
-                this.f34054c = parameters;
-                this.f34055d = returnType;
+                this.f34068a = classInternalName;
+                this.f34069b = name;
+                this.f34070c = parameters;
+                this.f34071d = returnType;
                 SignatureBuildingComponents signatureBuildingComponents = SignatureBuildingComponents.INSTANCE;
-                this.f34056e = signatureBuildingComponents.signature(classInternalName, name + '(' + parameters + ')' + returnType);
+                this.f34072e = signatureBuildingComponents.signature(classInternalName, name + '(' + parameters + ')' + returnType);
             }
 
             public static /* synthetic */ NameAndSignature copy$default(NameAndSignature nameAndSignature, String str, Name name, String str2, String str3, int i10, Object obj) {
                 if ((i10 & 1) != 0) {
-                    str = nameAndSignature.f34052a;
+                    str = nameAndSignature.f34068a;
                 }
                 if ((i10 & 2) != 0) {
-                    name = nameAndSignature.f34053b;
+                    name = nameAndSignature.f34069b;
                 }
                 if ((i10 & 4) != 0) {
-                    str2 = nameAndSignature.f34054c;
+                    str2 = nameAndSignature.f34070c;
                 }
                 if ((i10 & 8) != 0) {
-                    str3 = nameAndSignature.f34055d;
+                    str3 = nameAndSignature.f34071d;
                 }
                 return nameAndSignature.copy(str, name, str2, str3);
             }
@@ -130,28 +130,28 @@ public class SpecialGenericSignatures {
                 }
                 if (obj instanceof NameAndSignature) {
                     NameAndSignature nameAndSignature = (NameAndSignature) obj;
-                    return Intrinsics.areEqual(this.f34052a, nameAndSignature.f34052a) && Intrinsics.areEqual(this.f34053b, nameAndSignature.f34053b) && Intrinsics.areEqual(this.f34054c, nameAndSignature.f34054c) && Intrinsics.areEqual(this.f34055d, nameAndSignature.f34055d);
+                    return Intrinsics.areEqual(this.f34068a, nameAndSignature.f34068a) && Intrinsics.areEqual(this.f34069b, nameAndSignature.f34069b) && Intrinsics.areEqual(this.f34070c, nameAndSignature.f34070c) && Intrinsics.areEqual(this.f34071d, nameAndSignature.f34071d);
                 }
                 return false;
             }
 
             @NotNull
             public final Name getName() {
-                return this.f34053b;
+                return this.f34069b;
             }
 
             @NotNull
             public final String getSignature() {
-                return this.f34056e;
+                return this.f34072e;
             }
 
             public int hashCode() {
-                return (((((this.f34052a.hashCode() * 31) + this.f34053b.hashCode()) * 31) + this.f34054c.hashCode()) * 31) + this.f34055d.hashCode();
+                return (((((this.f34068a.hashCode() * 31) + this.f34069b.hashCode()) * 31) + this.f34070c.hashCode()) * 31) + this.f34071d.hashCode();
             }
 
             @NotNull
             public String toString() {
-                return "NameAndSignature(classInternalName=" + this.f34052a + ", name=" + this.f34053b + ", parameters=" + this.f34054c + ", returnType=" + this.f34055d + ')';
+                return "NameAndSignature(classInternalName=" + this.f34068a + ", name=" + this.f34069b + ", parameters=" + this.f34070c + ", returnType=" + this.f34071d + ')';
             }
         }
 
@@ -173,42 +173,42 @@ public class SpecialGenericSignatures {
 
         @NotNull
         public final List<String> getERASED_COLLECTION_PARAMETER_SIGNATURES() {
-            return SpecialGenericSignatures.f34040b;
+            return SpecialGenericSignatures.f34056b;
         }
 
         @NotNull
         public final Set<Name> getERASED_VALUE_PARAMETERS_SHORT_NAMES() {
-            return SpecialGenericSignatures.f34044f;
+            return SpecialGenericSignatures.f34060f;
         }
 
         @NotNull
         public final Set<String> getERASED_VALUE_PARAMETERS_SIGNATURES() {
-            return SpecialGenericSignatures.f34045g;
+            return SpecialGenericSignatures.f34061g;
         }
 
         @NotNull
         public final Map<Name, Name> getJVM_SHORT_NAME_TO_BUILTIN_SHORT_NAMES_MAP() {
-            return SpecialGenericSignatures.f34051m;
+            return SpecialGenericSignatures.f34067m;
         }
 
         @NotNull
         public final Set<Name> getORIGINAL_SHORT_NAMES() {
-            return SpecialGenericSignatures.f34050l;
+            return SpecialGenericSignatures.f34066l;
         }
 
         @NotNull
         public final NameAndSignature getREMOVE_AT_NAME_AND_SIGNATURE() {
-            return SpecialGenericSignatures.f34046h;
+            return SpecialGenericSignatures.f34062h;
         }
 
         @NotNull
         public final Map<String, TypeSafeBarrierDescription> getSIGNATURE_TO_DEFAULT_VALUES_MAP() {
-            return SpecialGenericSignatures.f34043e;
+            return SpecialGenericSignatures.f34059e;
         }
 
         @NotNull
         public final Map<String, Name> getSIGNATURE_TO_JVM_REPRESENTATION_NAME() {
-            return SpecialGenericSignatures.f34048j;
+            return SpecialGenericSignatures.f34064j;
         }
 
         public final boolean getSameAsRenamedInJvmBuiltin(@NotNull Name name) {
@@ -238,29 +238,29 @@ public class SpecialGenericSignatures {
     public static final class SpecialSignatureInfo {
 
         /* renamed from: i  reason: collision with root package name */
-        private static final /* synthetic */ SpecialSignatureInfo[] f34057i;
+        private static final /* synthetic */ SpecialSignatureInfo[] f34073i;
 
         /* renamed from: o  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f34058o;
+        private static final /* synthetic */ EnumEntries f34074o;
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f34059d;
+        private final String f34075d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final boolean f34060e;
+        private final boolean f34076e;
         public static final SpecialSignatureInfo ONE_COLLECTION_PARAMETER = new SpecialSignatureInfo("ONE_COLLECTION_PARAMETER", 0, "Ljava/util/Collection<+Ljava/lang/Object;>;", false);
         public static final SpecialSignatureInfo OBJECT_PARAMETER_NON_GENERIC = new SpecialSignatureInfo("OBJECT_PARAMETER_NON_GENERIC", 1, null, true);
         public static final SpecialSignatureInfo OBJECT_PARAMETER_GENERIC = new SpecialSignatureInfo("OBJECT_PARAMETER_GENERIC", 2, "Ljava/lang/Object;", true);
 
         static {
             SpecialSignatureInfo[] a10 = a();
-            f34057i = a10;
-            f34058o = pr.a.a(a10);
+            f34073i = a10;
+            f34074o = pr.a.a(a10);
         }
 
         private SpecialSignatureInfo(String str, int i10, String str2, boolean z10) {
-            this.f34059d = str2;
-            this.f34060e = z10;
+            this.f34075d = str2;
+            this.f34076e = z10;
         }
 
         private static final /* synthetic */ SpecialSignatureInfo[] a() {
@@ -272,7 +272,7 @@ public class SpecialGenericSignatures {
         }
 
         public static SpecialSignatureInfo[] values() {
-            return (SpecialSignatureInfo[]) f34057i.clone();
+            return (SpecialSignatureInfo[]) f34073i.clone();
         }
     }
 
@@ -282,13 +282,13 @@ public class SpecialGenericSignatures {
     public static final class TypeSafeBarrierDescription {
 
         /* renamed from: e  reason: collision with root package name */
-        private static final /* synthetic */ TypeSafeBarrierDescription[] f34061e;
+        private static final /* synthetic */ TypeSafeBarrierDescription[] f34077e;
 
         /* renamed from: i  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f34062i;
+        private static final /* synthetic */ EnumEntries f34078i;
 
         /* renamed from: d  reason: collision with root package name */
-        private final Object f34063d;
+        private final Object f34079d;
         public static final TypeSafeBarrierDescription NULL = new TypeSafeBarrierDescription("NULL", 0, null);
         public static final TypeSafeBarrierDescription INDEX = new TypeSafeBarrierDescription("INDEX", 1, -1);
         public static final TypeSafeBarrierDescription FALSE = new TypeSafeBarrierDescription("FALSE", 2, Boolean.FALSE);
@@ -303,8 +303,8 @@ public class SpecialGenericSignatures {
 
         static {
             TypeSafeBarrierDescription[] a10 = a();
-            f34061e = a10;
-            f34062i = pr.a.a(a10);
+            f34077e = a10;
+            f34078i = pr.a.a(a10);
         }
 
         public /* synthetic */ TypeSafeBarrierDescription(String str, int i10, Object obj, DefaultConstructorMarker defaultConstructorMarker) {
@@ -320,11 +320,11 @@ public class SpecialGenericSignatures {
         }
 
         public static TypeSafeBarrierDescription[] values() {
-            return (TypeSafeBarrierDescription[]) f34061e.clone();
+            return (TypeSafeBarrierDescription[]) f34077e.clone();
         }
 
         private TypeSafeBarrierDescription(String str, int i10, Object obj) {
-            this.f34063d = obj;
+            this.f34079d = obj;
         }
     }
 
@@ -337,19 +337,19 @@ public class SpecialGenericSignatures {
             Intrinsics.checkNotNullExpressionValue(desc, "getDesc(...)");
             arrayList.add(companion.a("java/util/Collection", str, "Ljava/util/Collection;", desc));
         }
-        f34039a = arrayList;
+        f34055a = arrayList;
         ArrayList<Companion.NameAndSignature> arrayList2 = arrayList;
         ArrayList arrayList3 = new ArrayList(CollectionsKt.w(arrayList2, 10));
         for (Companion.NameAndSignature nameAndSignature : arrayList2) {
             arrayList3.add(nameAndSignature.getSignature());
         }
-        f34040b = arrayList3;
-        List<Companion.NameAndSignature> list = f34039a;
+        f34056b = arrayList3;
+        List<Companion.NameAndSignature> list = f34055a;
         ArrayList arrayList4 = new ArrayList(CollectionsKt.w(list, 10));
         for (Companion.NameAndSignature nameAndSignature2 : list) {
             arrayList4.add(nameAndSignature2.getName().asString());
         }
-        f34041c = arrayList4;
+        f34057c = arrayList4;
         SignatureBuildingComponents signatureBuildingComponents = SignatureBuildingComponents.INSTANCE;
         Companion companion2 = Companion;
         String javaUtil = signatureBuildingComponents.javaUtil("Collection");
@@ -391,29 +391,29 @@ public class SpecialGenericSignatures {
         String desc8 = jvmPrimitiveType2.getDesc();
         Intrinsics.checkNotNullExpressionValue(desc8, "getDesc(...)");
         Map m10 = o0.m(a11, a12, a13, a14, a15, a16, a18, a19, a21, v.a(companion2.a(javaUtil7, "lastIndexOf", "Ljava/lang/Object;", desc8), typeSafeBarrierDescription3));
-        f34042d = m10;
+        f34058d = m10;
         LinkedHashMap linkedHashMap = new LinkedHashMap(o0.e(m10.size()));
         for (Map.Entry entry : m10.entrySet()) {
             linkedHashMap.put(((Companion.NameAndSignature) entry.getKey()).getSignature(), entry.getValue());
         }
-        f34043e = linkedHashMap;
-        Set<Companion.NameAndSignature> l10 = x0.l(f34042d.keySet(), f34039a);
+        f34059e = linkedHashMap;
+        Set<Companion.NameAndSignature> l10 = x0.l(f34058d.keySet(), f34055a);
         ArrayList arrayList5 = new ArrayList(CollectionsKt.w(l10, 10));
         for (Companion.NameAndSignature nameAndSignature3 : l10) {
             arrayList5.add(nameAndSignature3.getName());
         }
-        f34044f = CollectionsKt.l1(arrayList5);
+        f34060f = CollectionsKt.l1(arrayList5);
         ArrayList arrayList6 = new ArrayList(CollectionsKt.w(l10, 10));
         for (Companion.NameAndSignature nameAndSignature4 : l10) {
             arrayList6.add(nameAndSignature4.getSignature());
         }
-        f34045g = CollectionsKt.l1(arrayList6);
+        f34061g = CollectionsKt.l1(arrayList6);
         Companion companion3 = Companion;
         JvmPrimitiveType jvmPrimitiveType3 = JvmPrimitiveType.INT;
         String desc9 = jvmPrimitiveType3.getDesc();
         Intrinsics.checkNotNullExpressionValue(desc9, "getDesc(...)");
         Companion.NameAndSignature a22 = companion3.a("java/util/List", "removeAt", desc9, "Ljava/lang/Object;");
-        f34046h = a22;
+        f34062h = a22;
         SignatureBuildingComponents signatureBuildingComponents2 = SignatureBuildingComponents.INSTANCE;
         String javaLang = signatureBuildingComponents2.javaLang("Number");
         String desc10 = JvmPrimitiveType.BYTE.getDesc();
@@ -446,24 +446,24 @@ public class SpecialGenericSignatures {
         String desc17 = JvmPrimitiveType.CHAR.getDesc();
         Intrinsics.checkNotNullExpressionValue(desc17, "getDesc(...)");
         Map m11 = o0.m(a23, a24, a25, a26, a27, a28, a29, v.a(companion3.a(javaLang7, "get", desc16, desc17), Name.identifier("charAt")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicInteger"), "load", "", "I"), Name.identifier("get")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicInteger"), "store", "I", "V"), Name.identifier("set")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicInteger"), "exchange", "I", "I"), Name.identifier("getAndSet")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicInteger"), "fetchAndAdd", "I", "I"), Name.identifier("getAndAdd")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicInteger"), "addAndFetch", "I", "I"), Name.identifier("addAndGet")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicLong"), "load", "", "J"), Name.identifier("get")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicLong"), "store", "J", "V"), Name.identifier("set")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicLong"), "exchange", "J", "J"), Name.identifier("getAndSet")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicLong"), "fetchAndAdd", "J", "J"), Name.identifier("getAndAdd")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicLong"), "addAndFetch", "J", "J"), Name.identifier("addAndGet")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicBoolean"), "load", "", "Z"), Name.identifier("get")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicBoolean"), "store", "Z", "V"), Name.identifier("set")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicBoolean"), "exchange", "Z", "Z"), Name.identifier("getAndSet")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicReference"), "load", "", "Ljava/lang/Object;"), Name.identifier("get")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicReference"), "store", "Ljava/lang/Object;", "V"), Name.identifier("set")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicReference"), "exchange", "Ljava/lang/Object;", "Ljava/lang/Object;"), Name.identifier("getAndSet")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicIntegerArray"), "loadAt", "I", "I"), Name.identifier("get")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicIntegerArray"), "storeAt", "II", "V"), Name.identifier("set")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicIntegerArray"), "exchangeAt", "II", "I"), Name.identifier("getAndSet")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicIntegerArray"), "compareAndSetAt", "III", "Z"), Name.identifier("compareAndSet")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicIntegerArray"), "fetchAndAddAt", "II", "I"), Name.identifier("getAndAdd")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicIntegerArray"), "addAndFetchAt", "II", "I"), Name.identifier("addAndGet")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicLongArray"), "loadAt", "I", "J"), Name.identifier("get")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicLongArray"), "storeAt", "IJ", "V"), Name.identifier("set")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicLongArray"), "exchangeAt", "IJ", "J"), Name.identifier("getAndSet")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicLongArray"), "compareAndSetAt", "IJJ", "Z"), Name.identifier("compareAndSet")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicLongArray"), "fetchAndAddAt", "IJ", "J"), Name.identifier("getAndAdd")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicLongArray"), "addAndFetchAt", "IJ", "J"), Name.identifier("addAndGet")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicReferenceArray"), "loadAt", "I", "Ljava/lang/Object;"), Name.identifier("get")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicReferenceArray"), "storeAt", "ILjava/lang/Object;", "V"), Name.identifier("set")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicReferenceArray"), "exchangeAt", "ILjava/lang/Object;", "Ljava/lang/Object;"), Name.identifier("getAndSet")), v.a(companion3.a(signatureBuildingComponents2.javaUtilConcurrentAtomic("AtomicReferenceArray"), "compareAndSetAt", "ILjava/lang/Object;Ljava/lang/Object;", "Z"), Name.identifier("compareAndSet")));
-        f34047i = m11;
+        f34063i = m11;
         LinkedHashMap linkedHashMap2 = new LinkedHashMap(o0.e(m11.size()));
         for (Map.Entry entry2 : m11.entrySet()) {
             linkedHashMap2.put(((Companion.NameAndSignature) entry2.getKey()).getSignature(), entry2.getValue());
         }
-        f34048j = linkedHashMap2;
-        Map map = f34047i;
+        f34064j = linkedHashMap2;
+        Map map = f34063i;
         LinkedHashSet linkedHashSet = new LinkedHashSet();
         for (Map.Entry entry3 : map.entrySet()) {
             linkedHashSet.add(Companion.NameAndSignature.copy$default((Companion.NameAndSignature) entry3.getKey(), null, (Name) entry3.getValue(), null, null, 13, null).getSignature());
         }
-        f34049k = linkedHashSet;
+        f34065k = linkedHashSet;
         HashSet hashSet = new HashSet();
-        for (Companion.NameAndSignature nameAndSignature5 : f34047i.keySet()) {
+        for (Companion.NameAndSignature nameAndSignature5 : f34063i.keySet()) {
             hashSet.add(nameAndSignature5.getName());
         }
-        f34050l = hashSet;
-        Set<Map.Entry> entrySet = f34047i.entrySet();
+        f34066l = hashSet;
+        Set<Map.Entry> entrySet = f34063i.entrySet();
         ArrayList<Pair> arrayList7 = new ArrayList(CollectionsKt.w(entrySet, 10));
         for (Map.Entry entry4 : entrySet) {
             arrayList7.add(new Pair(((Companion.NameAndSignature) entry4.getKey()).getName(), entry4.getValue()));
@@ -472,6 +472,6 @@ public class SpecialGenericSignatures {
         for (Pair pair : arrayList7) {
             linkedHashMap3.put((Name) pair.d(), (Name) pair.c());
         }
-        f34051m = linkedHashMap3;
+        f34067m = linkedHashMap3;
     }
 }

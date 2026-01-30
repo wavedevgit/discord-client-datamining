@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
     var1 = function(arg0, arg1, arg2, arg3) { // Original name: _INTERNAL_insertToFlagBuffer, environment: var3
-        _fun9673: for (var _fun9673_ip = 0;;) switch (_fun9673_ip) {
+        _fun9674: for (var _fun9674_ip = 0;;) switch (_fun9674_ip) {
             case 0:
                 var2 = arg0;
                 var5 = arg1;
@@ -16,14 +16,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = 'boolean';
                 var1 = typeof var3;
                 if (!(var6 === var1)) {
-                    _fun9673_ip = 219;
-                    continue _fun9673
+                    _fun9674_ip = 219;
+                    continue _fun9674
                 }
             case 32:
                 var1 = var2.length;
                 if (!(!(var1 > var4))) {
-                    _fun9673_ip = 125;
-                    continue _fun9673
+                    _fun9674_ip = 125;
+                    continue _fun9674
                 }
             case 41:
                 var1 = var2.findIndex;
@@ -37,8 +37,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = var1.bind(var2)(var0);
                 var0 = -1;
                 if (!(var0 !== var6)) {
-                    _fun9673_ip = 82;
-                    continue _fun9673
+                    _fun9674_ip = 82;
+                    continue _fun9674
                 }
             case 67:
                 var1 = var2.splice;
@@ -47,8 +47,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 82:
                 var0 = var2.length;
                 if (!(var0 === var4)) {
-                    _fun9673_ip = 101;
-                    continue _fun9673
+                    _fun9674_ip = 101;
+                    continue _fun9674
                 }
             case 91:
                 var0 = var2.shift;
@@ -59,8 +59,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0.flag = var5;
                 var0.result = var3;
                 var0 = var1.bind(var2)(var0);
-                _fun9673_ip = 219;
-                continue _fun9673;
+                _fun9674_ip = 219;
+                continue _fun9674;
             case 125:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -70,8 +70,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var3.bind(var2)(var1);
                 var1 = var1.DEBUG_BUILD;
                 if (!var1) {
-                    _fun9673_ip = 219;
-                    continue _fun9673
+                    _fun9674_ip = 219;
+                    continue _fun9674
                 }
             case 159:
                 var1 = _closure1_slot0;
@@ -112,7 +112,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4 = 10;
     var2._INTERNAL_MAX_FLAGS_PER_SPAN = var4;
     var4 = function(arg0, arg1) { // Original name: _INTERNAL_addFeatureFlagToActiveSpan, environment: var3
-        _fun9675: for (var _fun9675_ip = 0;;) switch (_fun9675_ip) {
+        _fun9676: for (var _fun9676_ip = 0;;) switch (_fun9676_ip) {
             case 0:
                 var7 = arg0;
                 var4 = arg1;
@@ -124,15 +124,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = 10;
                 var8 = var5;
                 if (!var3) {
-                    _fun9675_ip = 44;
-                    continue _fun9675
+                    _fun9676_ip = 44;
+                    continue _fun9676
                 }
             case 29:
                 var3 = arguments[var1];
                 var8 = var5;
                 if (!(var0 !== var3)) {
-                    _fun9675_ip = 44;
-                    continue _fun9675
+                    _fun9676_ip = 44;
+                    continue _fun9676
                 }
             case 40:
                 var8 = arguments[var1];
@@ -140,8 +140,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = 'boolean';
                 var1 = typeof var4;
                 if (!(var2 === var1)) {
-                    _fun9675_ip = 268;
-                    continue _fun9675
+                    _fun9676_ip = 268;
+                    continue _fun9676
                 }
             case 58:
                 var3 = _closure1_slot0;
@@ -152,8 +152,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var3.getActiveSpan;
                 var3 = var2.bind(var3)();
                 if (!var3) {
-                    _fun9675_ip = 268;
-                    continue _fun9675
+                    _fun9676_ip = 268;
+                    continue _fun9676
                 }
             case 97:
                 var2 = _closure1_slot0;
@@ -171,8 +171,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var2.bind(var6)(var5, var7);
                 var2 = var2 in var10;
                 if (var2) {
-                    _fun9675_ip = 239;
-                    continue _fun9675
+                    _fun9676_ip = 239;
+                    continue _fun9676
                 }
             case 166:
                 var9 = var1.Object;
@@ -189,8 +189,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var9.bind(var10)(var2);
                 var2 = var2.length;
                 if (!(var2 < var8)) {
-                    _fun9675_ip = 268;
-                    continue _fun9675
+                    _fun9676_ip = 268;
+                    continue _fun9676
                 }
             case 208:
                 var8 = var3.setAttribute;
@@ -198,8 +198,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var2.concat;
                 var2 = var2.bind(var6)(var5, var7);
                 var2 = var8.bind(var3)(var2, var4);
-                _fun9675_ip = 268;
-                continue _fun9675;
+                _fun9676_ip = 268;
+                continue _fun9676;
             case 239:
                 var2 = var3.setAttribute;
                 var1 = var1.HermesInternal;
@@ -212,7 +212,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2._INTERNAL_addFeatureFlagToActiveSpan = var4;
     var4 = function(arg0) { // Original name: _INTERNAL_copyFlagsFromScopeToEvent, environment: var3
-        _fun9677: for (var _fun9677_ip = 0;;) switch (_fun9677_ip) {
+        _fun9678: for (var _fun9678_ip = 0;;) switch (_fun9678_ip) {
             case 0:
                 var0 = arg0;
                 var2 = _closure1_slot0;
@@ -228,26 +228,26 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var1.contexts;
                 var1 = var1.flags;
                 if (var1) {
-                    _fun9677_ip = 68;
-                    continue _fun9677
+                    _fun9678_ip = 68;
+                    continue _fun9678
                 }
             case 62:
                 var4 = new Array(0);
-                _fun9677_ip = 73;
-                continue _fun9677;
+                _fun9678_ip = 73;
+                continue _fun9678;
             case 68:
                 var4 = var1.values;
             case 73:
                 var1 = var4.length;
                 if (!var1) {
-                    _fun9677_ip = 126;
-                    continue _fun9677
+                    _fun9678_ip = 126;
+                    continue _fun9678
                 }
             case 81:
                 var1 = var0.contexts;
                 if (!(var5 === var1)) {
-                    _fun9677_ip = 99;
-                    continue _fun9677
+                    _fun9678_ip = 99;
+                    continue _fun9678
                 }
             case 91:
                 var1 = {};
@@ -265,7 +265,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var2._INTERNAL_copyFlagsFromScopeToEvent = var4;
     var3 = function(arg0, arg1) { // Original name: _INTERNAL_insertFlagToScope, environment: var3
-        _fun9678: for (var _fun9678_ip = 0;;) switch (_fun9678_ip) {
+        _fun9679: for (var _fun9679_ip = 0;;) switch (_fun9679_ip) {
             case 0:
                 var0 = undefined;
                 var2 = undefined;
@@ -275,15 +275,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = 100;
                 var5 = var4;
                 if (!var3) {
-                    _fun9678_ip = 38;
-                    continue _fun9678
+                    _fun9679_ip = 38;
+                    continue _fun9679
                 }
             case 23:
                 var3 = arguments[var1];
                 var5 = var4;
                 if (!(var0 !== var3)) {
-                    _fun9678_ip = 38;
-                    continue _fun9678
+                    _fun9679_ip = 38;
+                    continue _fun9679
                 }
             case 34:
                 var5 = arguments[var1];
@@ -300,8 +300,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var1.contexts;
                 var3 = var1.flags;
                 if (var3) {
-                    _fun9678_ip = 111;
-                    continue _fun9678
+                    _fun9679_ip = 111;
+                    continue _fun9679
                 }
             case 95:
                 var3 = {};

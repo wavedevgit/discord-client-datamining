@@ -5,10 +5,10 @@ import androidx.activity.result.ActivityResultLauncher;
 public final class m implements tq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final g f50515a;
+    private final g f50531a;
 
     public m(g gVar) {
-        this.f50515a = gVar;
+        this.f50531a = gVar;
     }
 
     public static m a(g gVar) {
@@ -22,6 +22,6 @@ public final class m implements tq.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public ActivityResultLauncher get() {
-        return c(this.f50515a);
+        return c(this.f50531a);
     }
 }

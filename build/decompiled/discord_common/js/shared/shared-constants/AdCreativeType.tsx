@@ -16,8 +16,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var0 = 'QUEST';
     var1[var3] = var0;
     var3 = 2;
-    var1.TAKEOVER = var3;
-    var0 = 'TAKEOVER';
+    var1.QUEST_HOME_HEROES = var3;
+    var0 = 'QUEST_HOME_HEROES';
     var1[var3] = var0;
     var3 = dependencyMap;
     var0 = 0;

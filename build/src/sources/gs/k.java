@@ -3,5 +3,5 @@ package gs;
 public abstract class k {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final ls.e0 f27159a = new ls.e0("RESUME_TOKEN");
+    public static final ls.e0 f27175a = new ls.e0("RESUME_TOKEN");
 }

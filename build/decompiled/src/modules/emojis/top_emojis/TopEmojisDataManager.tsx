@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
-        _fun113290: for (var _fun113290_ip = 0;;) switch (_fun113290_ip) {
+        _fun113554: for (var _fun113554_ip = 0;;) switch (_fun113554_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 72: // try_end0
-                _fun113290_ip = 76;
-                continue _fun113290;
+                _fun113554_ip = 76;
+                continue _fun113554;
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
         var3 = function(arg0) { // Original name: TopEmojisDataManager, environment: var0
-            _fun113294: for (var _fun113294_ip = 0;;) switch (_fun113294_ip) {
+            _fun113558: for (var _fun113558_ip = 0;;) switch (_fun113558_ip) {
                 case 0:
                     var3 = this;
                     var11 = 0;
@@ -110,14 +110,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot9;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun113294_ip = 84;
-                        continue _fun113294
+                        _fun113558_ip = 84;
+                        continue _fun113558
                     }
                 case 71:
                     var0 = var7.apply;
                     var0 = var0.bind(var7)(var3, var8);
-                    _fun113294_ip = 118;
-                    continue _fun113294;
+                    _fun113558_ip = 118;
+                    continue _fun113558;
                 case 84:
                     var5 = global;
                     var6 = var5.Reflect;
@@ -145,7 +145,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'handleInteraction';
         var4.key = var5;
         var0 = function(arg0) { // Original name: value, environment: var0
-            _fun113295: for (var _fun113295_ip = 0;;) switch (_fun113295_ip) {
+            _fun113559: for (var _fun113559_ip = 0;;) switch (_fun113559_ip) {
                 case 0:
                     var0 = arg0;
                     var3 = var0.interaction;
@@ -156,8 +156,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var2.includes;
                     var1 = var1.bind(var2)(var3);
                     if (!var1) {
-                        _fun113295_ip = 90;
-                        continue _fun113295
+                        _fun113559_ip = 90;
+                        continue _fun113559
                     }
                 case 43:
                     var2 = _closure1_slot7;
@@ -200,4 +200,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 3172, 1616, 6953, 4256, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 3172, 1616, 6956, 4262, 2]);

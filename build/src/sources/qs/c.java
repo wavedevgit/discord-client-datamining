@@ -14,40 +14,40 @@ public abstract class c {
     public static final a Companion = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private static final e f47614a;
+    private static final e f47630a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final e f47615b;
+    private static final e f47631b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final e f47616c;
+    private static final e f47632c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final e f47617d;
+    private static final e f47633d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final e f47618e;
+    private static final e f47634e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final e f47619f;
+    private static final e f47635f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final C0574c f47620g;
+    private static final C0574c f47636g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final C0574c f47621h;
+    private static final C0574c f47637h;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final d f47622i;
+    private static final d f47638i;
 
     /* renamed from: j  reason: collision with root package name */
-    private static final d f47623j;
+    private static final d f47639j;
 
     /* renamed from: k  reason: collision with root package name */
-    private static final d f47624k;
+    private static final d f47640k;
 
     /* renamed from: l  reason: collision with root package name */
-    private static final d f47625l;
+    private static final d f47641l;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -56,12 +56,12 @@ public abstract class c {
         }
 
         public final C0574c a() {
-            return c.f47620g;
+            return c.f47636g;
         }
 
         @NotNull
         public final KSerializer serializer() {
-            return ws.b.f52746a;
+            return ws.b.f52762a;
         }
 
         private a() {
@@ -83,7 +83,7 @@ public abstract class c {
 
             @NotNull
             public final KSerializer serializer() {
-                return ws.a.f52743a;
+                return ws.a.f52759a;
             }
 
             private a() {
@@ -109,7 +109,7 @@ public abstract class c {
         public static final a Companion = new a(null);
 
         /* renamed from: m  reason: collision with root package name */
-        private final int f47626m;
+        private final int f47642m;
 
         /* renamed from: qs.c$c$a */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -120,7 +120,7 @@ public abstract class c {
 
             @NotNull
             public final KSerializer serializer() {
-                return ws.d.f52749a;
+                return ws.d.f52765a;
             }
 
             private a() {
@@ -129,7 +129,7 @@ public abstract class c {
 
         public C0574c(int i10) {
             super(null);
-            this.f47626m = i10;
+            this.f47642m = i10;
             if (i10 > 0) {
                 return;
             }
@@ -137,16 +137,16 @@ public abstract class c {
         }
 
         public final int d() {
-            return this.f47626m;
+            return this.f47642m;
         }
 
         public C0574c e(int i10) {
-            return new C0574c(ss.b.b(this.f47626m, i10));
+            return new C0574c(ss.b.b(this.f47642m, i10));
         }
 
         public boolean equals(Object obj) {
             if (this != obj) {
-                if (!(obj instanceof C0574c) || this.f47626m != ((C0574c) obj).f47626m) {
+                if (!(obj instanceof C0574c) || this.f47642m != ((C0574c) obj).f47642m) {
                     return false;
                 }
                 return true;
@@ -155,11 +155,11 @@ public abstract class c {
         }
 
         public int hashCode() {
-            return this.f47626m ^ 65536;
+            return this.f47642m ^ 65536;
         }
 
         public String toString() {
-            int i10 = this.f47626m;
+            int i10 = this.f47642m;
             if (i10 % 7 == 0) {
                 return b(i10 / 7, "WEEK");
             }
@@ -176,7 +176,7 @@ public abstract class c {
         public static final a Companion = new a(null);
 
         /* renamed from: m  reason: collision with root package name */
-        private final int f47627m;
+        private final int f47643m;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class a {
@@ -186,7 +186,7 @@ public abstract class c {
 
             @NotNull
             public final KSerializer serializer() {
-                return ws.h.f52759a;
+                return ws.h.f52775a;
             }
 
             private a() {
@@ -195,7 +195,7 @@ public abstract class c {
 
         public d(int i10) {
             super(null);
-            this.f47627m = i10;
+            this.f47643m = i10;
             if (i10 > 0) {
                 return;
             }
@@ -203,16 +203,16 @@ public abstract class c {
         }
 
         public final int d() {
-            return this.f47627m;
+            return this.f47643m;
         }
 
         public d e(int i10) {
-            return new d(ss.b.b(this.f47627m, i10));
+            return new d(ss.b.b(this.f47643m, i10));
         }
 
         public boolean equals(Object obj) {
             if (this != obj) {
-                if (!(obj instanceof d) || this.f47627m != ((d) obj).f47627m) {
+                if (!(obj instanceof d) || this.f47643m != ((d) obj).f47643m) {
                     return false;
                 }
                 return true;
@@ -221,11 +221,11 @@ public abstract class c {
         }
 
         public int hashCode() {
-            return this.f47627m ^ 131072;
+            return this.f47643m ^ 131072;
         }
 
         public String toString() {
-            int i10 = this.f47627m;
+            int i10 = this.f47643m;
             if (i10 % 1200 == 0) {
                 return b(i10 / 1200, "CENTURY");
             }
@@ -248,13 +248,13 @@ public abstract class c {
         public static final a Companion = new a(null);
 
         /* renamed from: m  reason: collision with root package name */
-        private final long f47628m;
+        private final long f47644m;
 
         /* renamed from: n  reason: collision with root package name */
-        private final String f47629n;
+        private final String f47645n;
 
         /* renamed from: o  reason: collision with root package name */
-        private final long f47630o;
+        private final long f47646o;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         public static final class a {
@@ -264,7 +264,7 @@ public abstract class c {
 
             @NotNull
             public final KSerializer serializer() {
-                return ws.i.f52763a;
+                return ws.i.f52779a;
             }
 
             private a() {
@@ -273,37 +273,37 @@ public abstract class c {
 
         public e(long j10) {
             super(null);
-            this.f47628m = j10;
+            this.f47644m = j10;
             if (j10 > 0) {
                 if (j10 % 3600000000000L == 0) {
-                    this.f47629n = "HOUR";
-                    this.f47630o = j10 / 3600000000000L;
+                    this.f47645n = "HOUR";
+                    this.f47646o = j10 / 3600000000000L;
                     return;
                 } else if (j10 % 60000000000L == 0) {
-                    this.f47629n = "MINUTE";
-                    this.f47630o = j10 / 60000000000L;
+                    this.f47645n = "MINUTE";
+                    this.f47646o = j10 / 60000000000L;
                     return;
                 } else {
                     long j11 = 1000000000;
                     if (j10 % j11 == 0) {
-                        this.f47629n = "SECOND";
-                        this.f47630o = j10 / j11;
+                        this.f47645n = "SECOND";
+                        this.f47646o = j10 / j11;
                         return;
                     }
                     long j12 = 1000000;
                     if (j10 % j12 == 0) {
-                        this.f47629n = "MILLISECOND";
-                        this.f47630o = j10 / j12;
+                        this.f47645n = "MILLISECOND";
+                        this.f47646o = j10 / j12;
                         return;
                     }
                     long j13 = 1000;
                     if (j10 % j13 == 0) {
-                        this.f47629n = "MICROSECOND";
-                        this.f47630o = j10 / j13;
+                        this.f47645n = "MICROSECOND";
+                        this.f47646o = j10 / j13;
                         return;
                     }
-                    this.f47629n = "NANOSECOND";
-                    this.f47630o = j10;
+                    this.f47645n = "NANOSECOND";
+                    this.f47646o = j10;
                     return;
                 }
             }
@@ -311,16 +311,16 @@ public abstract class c {
         }
 
         public final long d() {
-            return this.f47628m;
+            return this.f47644m;
         }
 
         public e e(int i10) {
-            return new e(ss.b.c(this.f47628m, i10));
+            return new e(ss.b.c(this.f47644m, i10));
         }
 
         public boolean equals(Object obj) {
             if (this != obj) {
-                if (!(obj instanceof e) || this.f47628m != ((e) obj).f47628m) {
+                if (!(obj instanceof e) || this.f47644m != ((e) obj).f47644m) {
                     return false;
                 }
                 return true;
@@ -329,36 +329,36 @@ public abstract class c {
         }
 
         public int hashCode() {
-            long j10 = this.f47628m;
+            long j10 = this.f47644m;
             return ((int) (j10 >> 32)) ^ ((int) j10);
         }
 
         public String toString() {
-            return c(this.f47630o, this.f47629n);
+            return c(this.f47646o, this.f47645n);
         }
     }
 
     static {
         e eVar = new e(1L);
-        f47614a = eVar;
+        f47630a = eVar;
         e e10 = eVar.e(1000);
-        f47615b = e10;
+        f47631b = e10;
         e e11 = e10.e(1000);
-        f47616c = e11;
+        f47632c = e11;
         e e12 = e11.e(1000);
-        f47617d = e12;
+        f47633d = e12;
         e e13 = e12.e(60);
-        f47618e = e13;
-        f47619f = e13.e(60);
+        f47634e = e13;
+        f47635f = e13.e(60);
         C0574c c0574c = new C0574c(1);
-        f47620g = c0574c;
-        f47621h = c0574c.e(7);
+        f47636g = c0574c;
+        f47637h = c0574c.e(7);
         d dVar = new d(1);
-        f47622i = dVar;
-        f47623j = dVar.e(3);
+        f47638i = dVar;
+        f47639j = dVar.e(3);
         d e14 = dVar.e(12);
-        f47624k = e14;
-        f47625l = e14.e(100);
+        f47640k = e14;
+        f47641l = e14.e(100);
     }
 
     public /* synthetic */ c(DefaultConstructorMarker defaultConstructorMarker) {

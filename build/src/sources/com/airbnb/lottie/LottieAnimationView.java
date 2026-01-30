@@ -244,7 +244,7 @@ public class LottieAnimationView extends androidx.appcompat.widget.m {
         this.f8832u = true;
         this.f8833v = new HashSet();
         this.f8834w = new HashSet();
-        s(null, e0.f36891a);
+        s(null, e0.f36907a);
     }
 
     private void C() {
@@ -330,60 +330,60 @@ public class LottieAnimationView extends androidx.appcompat.widget.m {
     private void s(AttributeSet attributeSet, int i10) {
         String string;
         boolean z10 = false;
-        TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(attributeSet, f0.f36894a, i10, 0);
-        this.f8832u = obtainStyledAttributes.getBoolean(f0.f36897d, true);
-        boolean hasValue = obtainStyledAttributes.hasValue(f0.f36909p);
-        boolean hasValue2 = obtainStyledAttributes.hasValue(f0.f36904k);
-        boolean hasValue3 = obtainStyledAttributes.hasValue(f0.f36914u);
+        TypedArray obtainStyledAttributes = getContext().obtainStyledAttributes(attributeSet, f0.f36910a, i10, 0);
+        this.f8832u = obtainStyledAttributes.getBoolean(f0.f36913d, true);
+        boolean hasValue = obtainStyledAttributes.hasValue(f0.f36925p);
+        boolean hasValue2 = obtainStyledAttributes.hasValue(f0.f36920k);
+        boolean hasValue3 = obtainStyledAttributes.hasValue(f0.f36930u);
         if (hasValue && hasValue2) {
             throw new IllegalArgumentException("lottie_rawRes and lottie_fileName cannot be used at the same time. Please use only one at once.");
         }
         if (hasValue) {
-            int resourceId = obtainStyledAttributes.getResourceId(f0.f36909p, 0);
+            int resourceId = obtainStyledAttributes.getResourceId(f0.f36925p, 0);
             if (resourceId != 0) {
                 setAnimation(resourceId);
             }
         } else if (hasValue2) {
-            String string2 = obtainStyledAttributes.getString(f0.f36904k);
+            String string2 = obtainStyledAttributes.getString(f0.f36920k);
             if (string2 != null) {
                 setAnimation(string2);
             }
-        } else if (hasValue3 && (string = obtainStyledAttributes.getString(f0.f36914u)) != null) {
+        } else if (hasValue3 && (string = obtainStyledAttributes.getString(f0.f36930u)) != null) {
             setAnimationFromUrl(string);
         }
-        setFallbackResource(obtainStyledAttributes.getResourceId(f0.f36903j, 0));
-        if (obtainStyledAttributes.getBoolean(f0.f36896c, false)) {
+        setFallbackResource(obtainStyledAttributes.getResourceId(f0.f36919j, 0));
+        if (obtainStyledAttributes.getBoolean(f0.f36912c, false)) {
             this.f8831t = true;
         }
-        if (obtainStyledAttributes.getBoolean(f0.f36907n, false)) {
+        if (obtainStyledAttributes.getBoolean(f0.f36923n, false)) {
             this.f8827p.P0(-1);
         }
-        if (obtainStyledAttributes.hasValue(f0.f36912s)) {
-            setRepeatMode(obtainStyledAttributes.getInt(f0.f36912s, 1));
+        if (obtainStyledAttributes.hasValue(f0.f36928s)) {
+            setRepeatMode(obtainStyledAttributes.getInt(f0.f36928s, 1));
         }
-        if (obtainStyledAttributes.hasValue(f0.f36911r)) {
-            setRepeatCount(obtainStyledAttributes.getInt(f0.f36911r, -1));
+        if (obtainStyledAttributes.hasValue(f0.f36927r)) {
+            setRepeatCount(obtainStyledAttributes.getInt(f0.f36927r, -1));
         }
-        if (obtainStyledAttributes.hasValue(f0.f36913t)) {
-            setSpeed(obtainStyledAttributes.getFloat(f0.f36913t, 1.0f));
+        if (obtainStyledAttributes.hasValue(f0.f36929t)) {
+            setSpeed(obtainStyledAttributes.getFloat(f0.f36929t, 1.0f));
         }
-        if (obtainStyledAttributes.hasValue(f0.f36899f)) {
-            setClipToCompositionBounds(obtainStyledAttributes.getBoolean(f0.f36899f, true));
+        if (obtainStyledAttributes.hasValue(f0.f36915f)) {
+            setClipToCompositionBounds(obtainStyledAttributes.getBoolean(f0.f36915f, true));
         }
-        if (obtainStyledAttributes.hasValue(f0.f36898e)) {
-            setClipTextToBoundingBox(obtainStyledAttributes.getBoolean(f0.f36898e, false));
+        if (obtainStyledAttributes.hasValue(f0.f36914e)) {
+            setClipTextToBoundingBox(obtainStyledAttributes.getBoolean(f0.f36914e, false));
         }
-        if (obtainStyledAttributes.hasValue(f0.f36901h)) {
-            setDefaultFontFileExtension(obtainStyledAttributes.getString(f0.f36901h));
+        if (obtainStyledAttributes.hasValue(f0.f36917h)) {
+            setDefaultFontFileExtension(obtainStyledAttributes.getString(f0.f36917h));
         }
-        setImageAssetsFolder(obtainStyledAttributes.getString(f0.f36906m));
-        E(obtainStyledAttributes.getFloat(f0.f36908o, 0.0f), obtainStyledAttributes.hasValue(f0.f36908o));
-        p(obtainStyledAttributes.getBoolean(f0.f36902i, false));
-        if (obtainStyledAttributes.hasValue(f0.f36900g)) {
-            k(new q5.e("**"), a0.K, new y5.c(new h0(g.a.a(getContext(), obtainStyledAttributes.getResourceId(f0.f36900g, -1)).getDefaultColor())));
+        setImageAssetsFolder(obtainStyledAttributes.getString(f0.f36922m));
+        E(obtainStyledAttributes.getFloat(f0.f36924o, 0.0f), obtainStyledAttributes.hasValue(f0.f36924o));
+        p(obtainStyledAttributes.getBoolean(f0.f36918i, false));
+        if (obtainStyledAttributes.hasValue(f0.f36916g)) {
+            k(new q5.e("**"), a0.K, new y5.c(new h0(g.a.a(getContext(), obtainStyledAttributes.getResourceId(f0.f36916g, -1)).getDefaultColor())));
         }
-        if (obtainStyledAttributes.hasValue(f0.f36910q)) {
-            int i11 = f0.f36910q;
+        if (obtainStyledAttributes.hasValue(f0.f36926q)) {
+            int i11 = f0.f36926q;
             g0 g0Var = g0.AUTOMATIC;
             int i12 = obtainStyledAttributes.getInt(i11, g0Var.ordinal());
             if (i12 >= g0.values().length) {
@@ -391,8 +391,8 @@ public class LottieAnimationView extends androidx.appcompat.widget.m {
             }
             setRenderMode(g0.values()[i12]);
         }
-        if (obtainStyledAttributes.hasValue(f0.f36895b)) {
-            int i13 = f0.f36895b;
+        if (obtainStyledAttributes.hasValue(f0.f36911b)) {
+            int i13 = f0.f36911b;
             l5.a aVar = l5.a.AUTOMATIC;
             int i14 = obtainStyledAttributes.getInt(i13, aVar.ordinal());
             if (i14 >= g0.values().length) {
@@ -400,9 +400,9 @@ public class LottieAnimationView extends androidx.appcompat.widget.m {
             }
             setAsyncUpdates(l5.a.values()[i14]);
         }
-        setIgnoreDisabledSystemAnimations(obtainStyledAttributes.getBoolean(f0.f36905l, false));
-        if (obtainStyledAttributes.hasValue(f0.f36915v)) {
-            setUseCompositionFrameRate(obtainStyledAttributes.getBoolean(f0.f36915v, false));
+        setIgnoreDisabledSystemAnimations(obtainStyledAttributes.getBoolean(f0.f36921l, false));
+        if (obtainStyledAttributes.hasValue(f0.f36931v)) {
+            setUseCompositionFrameRate(obtainStyledAttributes.getBoolean(f0.f36931v, false));
         }
         obtainStyledAttributes.recycle();
         n nVar = this.f8827p;
@@ -672,7 +672,7 @@ public class LottieAnimationView extends androidx.appcompat.widget.m {
     }
 
     public void setComposition(@NonNull l5.i iVar) {
-        if (l5.e.f36881a) {
+        if (l5.e.f36897a) {
             String str = f8821y;
             Log.v(str, "Set Composition \n" + iVar);
         }
@@ -889,6 +889,6 @@ public class LottieAnimationView extends androidx.appcompat.widget.m {
         this.f8832u = true;
         this.f8833v = new HashSet();
         this.f8834w = new HashSet();
-        s(attributeSet, e0.f36891a);
+        s(attributeSet, e0.f36907a);
     }
 }

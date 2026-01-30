@@ -1,7 +1,7 @@
 // modules/checkpoint/native/components/screens/emoji/EmojiCube.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun86506: for (var _fun86506_ip = 0;;) switch (_fun86506_ip) {
+    _fun86552: for (var _fun86552_ip = 0;;) switch (_fun86552_ip) {
         case 0:
             var4 = require;
             var16 = metroImportDefault;
@@ -11,14 +11,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot1 = var16;
             var _closure1_slot2 = var5;
             var6 = function(arg0, arg1) { // Original name: transformMatrix, environment: var1
-                _fun86507: for (var _fun86507_ip = 0;;) switch (_fun86507_ip) {
+                _fun86553: for (var _fun86553_ip = 0;;) switch (_fun86553_ip) {
                     case 0:
                         var0 = arg1;
                         var6 = var0.rotation;
                         var4 = undefined;
                         if (!(var6 === var4)) {
-                            _fun86507_ip = 29;
-                            continue _fun86507
+                            _fun86553_ip = 29;
+                            continue _fun86553
                         }
                     case 15:
                         var6 = {
@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 29:
                         var9 = var0.translation;
                         if (!(var9 === var4)) {
-                            _fun86507_ip = 53;
-                            continue _fun86507
+                            _fun86553_ip = 53;
+                            continue _fun86553
                         }
                     case 39:
                         var9 = {
@@ -41,8 +41,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 53:
                         var3 = var0.skew;
                         if (!(var3 === var4)) {
-                            _fun86507_ip = 77;
-                            continue _fun86507
+                            _fun86553_ip = 77;
+                            continue _fun86553
                         }
                     case 63:
                         var3 = {
@@ -291,8 +291,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var19 = var20.isIOS;
             var19 = var19.bind(var20)();
             if (!var19) {
-                _fun86506_ip = 779;
-                continue _fun86506
+                _fun86552_ip = 779;
+                continue _fun86552
             }
         case 776:
             var17 = var18;
@@ -304,8 +304,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var18 = var17.bind(var18)();
             var17 = undefined;
             if (!var18) {
-                _fun86506_ip = 818;
-                continue _fun86506
+                _fun86552_ip = 818;
+                continue _fun86552
             }
         case 808:
             var17 = 229.99999999999997;
@@ -337,8 +337,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var15 = var16.isIOS;
             var15 = var15.bind(var16)();
             if (!var15) {
-                _fun86506_ip = 934;
-                continue _fun86506
+                _fun86552_ip = 934;
+                continue _fun86552
             }
         case 931:
             var10 = var14;
@@ -355,8 +355,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var12 = var13.isIOS;
             var12 = var12.bind(var13)();
             if (!var12) {
-                _fun86506_ip = 985;
-                continue _fun86506
+                _fun86552_ip = 985;
+                continue _fun86552
             }
         case 982:
             var9 = var11;
@@ -375,7 +375,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = 'modules/checkpoint/native/components/screens/emoji/EmojiCube.tsx';
             var3 = var4.bind(var5)(var3);
             var1 = function(arg0) { // Original name: EmojiCube, environment: var1
-                _fun86508: for (var _fun86508_ip = 0;;) switch (_fun86508_ip) {
+                _fun86554: for (var _fun86554_ip = 0;;) switch (_fun86554_ip) {
                     case 0:
                         var0 = arg0;
                         var9 = var0.emoji;
@@ -405,8 +405,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var1 != var2;
                         var1 = undefined;
                         if (!var2) {
-                            _fun86508_ip = 169;
-                            continue _fun86508
+                            _fun86554_ip = 169;
+                            continue _fun86554
                         }
                     case 103:
                         var5 = _closure1_slot1;
@@ -420,8 +420,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2.id = var10;
                         var8 = !var8;
                         if (!var8) {
-                            _fun86508_ip = 152;
-                            continue _fun86508
+                            _fun86554_ip = 152;
+                            continue _fun86554
                         }
                     case 146:
                         var8 = var9.animated;
@@ -460,13 +460,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = var1.bind(var3)();
                         var1 = var1.windowDimensions;
                         if (var2) {
-                            _fun86508_ip = 305;
-                            continue _fun86508
+                            _fun86554_ip = 305;
+                            continue _fun86554
                         }
                     case 298:
                         var2 = var1.width;
-                        _fun86508_ip = 310;
-                        continue _fun86508;
+                        _fun86554_ip = 310;
+                        continue _fun86554;
                     case 305:
                         var2 = var1.height;
                     case 310:
@@ -496,7 +496,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var6[2] = var5;
                         var5 = var6.map;
                         var4 = function(arg0, arg1) { // Environment: var4
-                            _fun86510: for (var _fun86510_ip = 0;;) switch (_fun86510_ip) {
+                            _fun86556: for (var _fun86556_ip = 0;;) switch (_fun86556_ip) {
                                 case 0:
                                     var4 = _closure1_slot7;
                                     var1 = _closure1_slot1;
@@ -529,8 +529,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     var6 = var5 == var6;
                                     var5 = '';
                                     if (!var6) {
-                                        _fun86510_ip = 139;
-                                        continue _fun86510
+                                        _fun86556_ip = 139;
+                                        continue _fun86556
                                     }
                                 case 130:
                                     var6 = _closure2_slot0;
@@ -553,4 +553,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.default = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 1465, 33, 11156, 1297, 671, 479, 566, 1417, 11130, 3110, 5319, 5727, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 1465, 33, 11162, 1297, 671, 479, 566, 1417, 11136, 3110, 5323, 5730, 2]);

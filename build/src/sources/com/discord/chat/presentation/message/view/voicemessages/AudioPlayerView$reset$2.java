@@ -50,12 +50,12 @@ public final class AudioPlayerView$reset$2 extends kotlin.coroutines.jvm.interna
                     return f10;
                 }
             }
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -100,11 +100,11 @@ public final class AudioPlayerView$reset$2 extends kotlin.coroutines.jvm.interna
         audioPlayerViewState2 = audioPlayerView2.state;
         audioPlayerView2.configureAudioProgressView(audioPlayerViewState2);
         this.this$0.getBinding().wave.reset();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((AudioPlayerView$reset$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((AudioPlayerView$reset$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/channel/native/components/CreateChannelTypeDescription.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: CreateChannelTypeDescription, environment: var1
-        _fun65538: for (var _fun65538_ip = 0;;) switch (_fun65538_ip) {
+        _fun65582: for (var _fun65582_ip = 0;;) switch (_fun65582_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.guildId;
@@ -70,8 +70,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var3 = var0 != var1;
                 if (!var3) {
-                    _fun65538_ip = 145;
-                    continue _fun65538
+                    _fun65582_ip = 145;
+                    continue _fun65582
                 }
             case 97:
                 var11 = _closure1_slot0;
@@ -87,15 +87,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 145:
                 var1 = !var7;
                 if (var7) {
-                    _fun65538_ip = 154;
-                    continue _fun65538
+                    _fun65582_ip = 154;
+                    continue _fun65582
                 }
             case 151:
                 var1 = !var3;
             case 154:
                 if (!var1) {
-                    _fun65538_ip = 171;
-                    continue _fun65538
+                    _fun65582_ip = 171;
+                    continue _fun65582
                 }
             case 157:
                 var3 = _closure1_slot5;
@@ -116,8 +116,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var6.bind(var7)(var2, var3);
                 var0 = null;
                 if (!var1) {
-                    _fun65538_ip = 326;
-                    continue _fun65538
+                    _fun65582_ip = 326;
+                    continue _fun65582
                 }
             case 210:
                 var3 = _closure1_slot6;
@@ -153,4 +153,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 7338, 660, 33, 7343, 7342, 3895, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 7341, 660, 33, 7346, 7345, 3901, 1234, 2]);

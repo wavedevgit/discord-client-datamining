@@ -11,14 +11,14 @@ public final class x {
     public static final x SHORT_STANDALONE;
 
     /* renamed from: a  reason: collision with root package name */
-    public static final /* synthetic */ x[] f31619a;
+    public static final /* synthetic */ x[] f31635a;
 
     public static x valueOf(String str) {
         return (x) Enum.valueOf(x.class, str);
     }
 
     public static x[] values() {
-        return (x[]) f31619a.clone();
+        return (x[]) f31635a.clone();
     }
 
     /* JADX WARN: Type inference failed for: r0v0, types: [j$.time.format.x, java.lang.Enum] */
@@ -40,6 +40,6 @@ public final class x {
         NARROW = r42;
         ?? r52 = new Enum("NARROW_STANDALONE", 5);
         NARROW_STANDALONE = r52;
-        f31619a = new x[]{r02, r12, r22, r32, r42, r52};
+        f31635a = new x[]{r02, r12, r22, r32, r42, r52};
     }
 }

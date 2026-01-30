@@ -6,13 +6,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
     var2 = function(arg0) { // Original name: unwrapScopeFromWeakRef, environment: var0
-        _fun8733: for (var _fun8733_ip = 0;;) switch (_fun8733_ip) {
+        _fun8734: for (var _fun8734_ip = 0;;) switch (_fun8734_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1;
                 if (var1) {
-                    _fun8733_ip = 13;
-                    continue _fun8733
+                    _fun8734_ip = 13;
+                    continue _fun8734
                 }
             case 9:
                 var1 = undefined;
@@ -22,16 +22,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = 'object';
                 var1 = typeof var1;
                 if (!(var2 === var1)) {
-                    _fun8733_ip = 61;
-                    continue _fun8733
+                    _fun8734_ip = 61;
+                    continue _fun8734
                 }
             case 27:
                 var2 = var0;
                 var1 = 'deref';
                 var1 = var1 in var2;
                 if (!var1) {
-                    _fun8733_ip = 61;
-                    continue _fun8733
+                    _fun8734_ip = 61;
+                    continue _fun8734
                 }
             case 41:
                 var1 = var0;
@@ -39,8 +39,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = 'function';
                 var1 = typeof var1;
                 if (!(var2 !== var1)) {
-                    _fun8733_ip = 66;
-                    continue _fun8733
+                    _fun8734_ip = 66;
+                    continue _fun8734
                 }
             case 61:
                 var1 = var0;
@@ -81,12 +81,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.getCapturedScopesOnSpan = var2;
     var0 = function(arg0, arg1, arg2) { // Original name: setCapturedScopesOnSpan, environment: var0
-        _fun8735: for (var _fun8735_ip = 0;;) switch (_fun8735_ip) {
+        _fun8736: for (var _fun8736_ip = 0;;) switch (_fun8736_ip) {
             case 0:
                 var4 = arg0;
                 if (!var4) {
-                    _fun8735_ip = 165;
-                    continue _fun8735
+                    _fun8736_ip = 165;
+                    continue _fun8736
                 }
             case 9:
                 var2 = _closure1_slot0;
@@ -110,12 +110,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var10 = 'function';
                 var9 = typeof var9;
                 if (!(var10 !== var9)) {
-                    _fun8735_ip = 92;
-                    continue _fun8735
+                    _fun8736_ip = 92;
+                    continue _fun8736
                 }
             case 90: // try_end0
-                _fun8735_ip = 122;
-                continue _fun8735;
+                _fun8736_ip = 122;
+                continue _fun8736;
             case 92: // try_start_1
                 var10 = var6;
                 var14 = var5;
@@ -129,8 +129,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = new var15[var10](var14, var13);
                 var6 = var6 instanceof Object ? var6 : var9;
             case 118: // try_end1
-                _fun8735_ip = 125;
-                continue _fun8735;
+                _fun8736_ip = 125;
+                continue _fun8736;
             case 120: // catch_target0 // catch_target1
                 CatchBlockStart(arg_register = 9);
             case 122:

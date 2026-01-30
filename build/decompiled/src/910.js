@@ -38,14 +38,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var4.forEachEnvelopeItem;
                 var2 = arg0;
                 var1 = function(arg0, arg1) { // Environment: var1
-                    _fun9541: for (var _fun9541_ip = 0;;) switch (_fun9541_ip) {
+                    _fun9542: for (var _fun9542_ip = 0;;) switch (_fun9542_ip) {
                         case 0:
                             var2 = arg0;
                             var1 = 'event';
                             var0 = arg1;
                             if (!(var1 === var0)) {
-                                _fun9541_ip = 90;
-                                continue _fun9541
+                                _fun9542_ip = 90;
+                                continue _fun9542
                             }
                         case 14:
                             var0 = global;
@@ -55,16 +55,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var4 = undefined;
                             var1 = undefined;
                             if (!var0) {
-                                _fun9541_ip = 46;
-                                continue _fun9541
+                                _fun9542_ip = 46;
+                                continue _fun9542
                             }
                         case 39:
                             var0 = 1;
                             var1 = var2[var0];
                         case 46:
                             if (!var1) {
-                                _fun9541_ip = 90;
-                                continue _fun9541
+                                _fun9542_ip = 90;
+                                continue _fun9542
                             }
                         case 49:
                             var3 = _closure1_slot0;
@@ -88,13 +88,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var2 = var3.on;
             var1 = 'applyFrameMetadata';
             var0 = function(arg0) { // Environment: var0
-                _fun9542: for (var _fun9542_ip = 0;;) switch (_fun9542_ip) {
+                _fun9543: for (var _fun9543_ip = 0;;) switch (_fun9543_ip) {
                     case 0:
                         var3 = arg0;
                         var0 = var3.type;
                         if (var0) {
-                            _fun9542_ip = 71;
-                            continue _fun9542
+                            _fun9543_ip = 71;
+                            continue _fun9543
                         }
                     case 11:
                         var1 = _closure3_slot0;

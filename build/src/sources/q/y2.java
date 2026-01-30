@@ -33,58 +33,58 @@ import q.r4;
 public final class y2 implements z2 {
 
     /* renamed from: a  reason: collision with root package name */
-    final Object f46696a;
+    final Object f46712a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f46697b;
+    private final List f46713b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final d f46698c;
+    private final d f46714c;
 
     /* renamed from: d  reason: collision with root package name */
-    g4.a f46699d;
+    g4.a f46715d;
 
     /* renamed from: e  reason: collision with root package name */
-    g4 f46700e;
+    g4 f46716e;
 
     /* renamed from: f  reason: collision with root package name */
-    a0.i2 f46701f;
+    a0.i2 f46717f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Map f46702g;
+    private final Map f46718g;
 
     /* renamed from: h  reason: collision with root package name */
-    List f46703h;
+    List f46719h;
 
     /* renamed from: i  reason: collision with root package name */
-    c f46704i;
+    c f46720i;
 
     /* renamed from: j  reason: collision with root package name */
-    ListenableFuture f46705j;
+    ListenableFuture f46721j;
 
     /* renamed from: k  reason: collision with root package name */
-    c.a f46706k;
+    c.a f46722k;
 
     /* renamed from: l  reason: collision with root package name */
-    private Map f46707l;
+    private Map f46723l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final u.w f46708m;
+    private final u.w f46724m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final u.a0 f46709n;
+    private final u.a0 f46725n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final u.t f46710o;
+    private final u.t f46726o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final s.f f46711p;
+    private final s.f f46727p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final u.z f46712q;
+    private final u.z f46728q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final boolean f46713r;
+    private final boolean f46729r;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -94,16 +94,16 @@ public final class y2 implements z2 {
 
         @Override // android.hardware.camera2.CameraCaptureSession.CaptureCallback
         public void onCaptureCompleted(CameraCaptureSession cameraCaptureSession, CaptureRequest captureRequest, TotalCaptureResult totalCaptureResult) {
-            synchronized (y2.this.f46696a) {
+            synchronized (y2.this.f46712a) {
                 try {
-                    a0.i2 i2Var = y2.this.f46701f;
+                    a0.i2 i2Var = y2.this.f46717f;
                     if (i2Var == null) {
                         return;
                     }
                     a0.p0 j10 = i2Var.j();
                     x.y0.a("CaptureSession", "Submit FLASH_MODE_OFF request");
                     y2 y2Var = y2.this;
-                    y2Var.a(Collections.singletonList(y2Var.f46709n.a(j10)));
+                    y2Var.a(Collections.singletonList(y2Var.f46725n.a(j10)));
                 } catch (Throwable th2) {
                     throw th2;
                 }
@@ -132,14 +132,14 @@ public final class y2 implements z2 {
 
         @Override // q.g4.c
         public void r(g4 g4Var) {
-            synchronized (y2.this.f46696a) {
+            synchronized (y2.this.f46712a) {
                 try {
-                    switch (y2.this.f46704i.ordinal()) {
+                    switch (y2.this.f46720i.ordinal()) {
                         case 0:
                         case 1:
                         case 2:
                         case 4:
-                            throw new IllegalStateException("onConfigureFailed() should not be possible in state: " + y2.this.f46704i);
+                            throw new IllegalStateException("onConfigureFailed() should not be possible in state: " + y2.this.f46720i);
                         case 3:
                         case 5:
                         case 6:
@@ -149,7 +149,7 @@ public final class y2 implements z2 {
                             x.y0.a("CaptureSession", "ConfigureFailed callback after change to RELEASED state");
                             break;
                     }
-                    x.y0.c("CaptureSession", "CameraCaptureSession.onConfigureFailed() " + y2.this.f46704i);
+                    x.y0.c("CaptureSession", "CameraCaptureSession.onConfigureFailed() " + y2.this.f46720i);
                 } catch (Throwable th2) {
                     throw th2;
                 }
@@ -158,32 +158,32 @@ public final class y2 implements z2 {
 
         @Override // q.g4.c
         public void s(g4 g4Var) {
-            synchronized (y2.this.f46696a) {
+            synchronized (y2.this.f46712a) {
                 try {
-                    switch (y2.this.f46704i.ordinal()) {
+                    switch (y2.this.f46720i.ordinal()) {
                         case 0:
                         case 1:
                         case 2:
                         case 4:
                         case 7:
-                            throw new IllegalStateException("onConfigured() should not be possible in state: " + y2.this.f46704i);
+                            throw new IllegalStateException("onConfigured() should not be possible in state: " + y2.this.f46720i);
                         case 3:
                             y2 y2Var = y2.this;
-                            y2Var.f46704i = c.OPENED;
-                            y2Var.f46700e = g4Var;
+                            y2Var.f46720i = c.OPENED;
+                            y2Var.f46716e = g4Var;
                             x.y0.a("CaptureSession", "Attempting to send capture request onConfigured");
                             y2 y2Var2 = y2.this;
-                            y2Var2.x(y2Var2.f46701f);
+                            y2Var2.x(y2Var2.f46717f);
                             y2.this.w();
                             break;
                         case 5:
-                            y2.this.f46700e = g4Var;
+                            y2.this.f46716e = g4Var;
                             break;
                         case 6:
                             g4Var.close();
                             break;
                     }
-                    x.y0.a("CaptureSession", "CameraCaptureSession.onConfigured() mState=" + y2.this.f46704i);
+                    x.y0.a("CaptureSession", "CameraCaptureSession.onConfigured() mState=" + y2.this.f46720i);
                 } catch (Throwable th2) {
                     throw th2;
                 }
@@ -192,12 +192,12 @@ public final class y2 implements z2 {
 
         @Override // q.g4.c
         public void t(g4 g4Var) {
-            synchronized (y2.this.f46696a) {
+            synchronized (y2.this.f46712a) {
                 try {
-                    if (y2.this.f46704i.ordinal() != 0) {
-                        x.y0.a("CaptureSession", "CameraCaptureSession.onReady() " + y2.this.f46704i);
+                    if (y2.this.f46720i.ordinal() != 0) {
+                        x.y0.a("CaptureSession", "CameraCaptureSession.onReady() " + y2.this.f46720i);
                     } else {
-                        throw new IllegalStateException("onReady() should not be possible in state: " + y2.this.f46704i);
+                        throw new IllegalStateException("onReady() should not be possible in state: " + y2.this.f46720i);
                     }
                 } catch (Throwable th2) {
                     throw th2;
@@ -207,13 +207,13 @@ public final class y2 implements z2 {
 
         @Override // q.g4.c
         public void u(g4 g4Var) {
-            synchronized (y2.this.f46696a) {
+            synchronized (y2.this.f46712a) {
                 try {
-                    if (y2.this.f46704i != c.UNINITIALIZED) {
+                    if (y2.this.f46720i != c.UNINITIALIZED) {
                         x.y0.a("CaptureSession", "onSessionFinished()");
                         y2.this.r();
                     } else {
-                        throw new IllegalStateException("onSessionFinished() should not be possible in state: " + y2.this.f46704i);
+                        throw new IllegalStateException("onSessionFinished() should not be possible in state: " + y2.this.f46720i);
                     }
                 } catch (Throwable th2) {
                     throw th2;
@@ -228,36 +228,36 @@ public final class y2 implements z2 {
     }
 
     public static /* synthetic */ void j(y2 y2Var) {
-        synchronized (y2Var.f46696a) {
-            if (y2Var.f46697b.isEmpty()) {
+        synchronized (y2Var.f46712a) {
+            if (y2Var.f46713b.isEmpty()) {
                 return;
             }
-            y2Var.v(y2Var.f46697b);
-            y2Var.f46697b.clear();
+            y2Var.v(y2Var.f46713b);
+            y2Var.f46713b.clear();
         }
     }
 
     public static /* synthetic */ Object k(y2 y2Var, c.a aVar) {
         boolean z10;
         String str;
-        synchronized (y2Var.f46696a) {
-            if (y2Var.f46706k == null) {
+        synchronized (y2Var.f46712a) {
+            if (y2Var.f46722k == null) {
                 z10 = true;
             } else {
                 z10 = false;
             }
             b2.e.j(z10, "Release completer expected to be null");
-            y2Var.f46706k = aVar;
+            y2Var.f46722k = aVar;
             str = "Release[session=" + y2Var + "]";
         }
         return str;
     }
 
     public static /* synthetic */ void m(y2 y2Var, CameraCaptureSession cameraCaptureSession, int i10, boolean z10) {
-        synchronized (y2Var.f46696a) {
+        synchronized (y2Var.f46712a) {
             try {
-                if (y2Var.f46704i == c.OPENED) {
-                    y2Var.x(y2Var.f46701f);
+                if (y2Var.f46720i == c.OPENED) {
+                    y2Var.x(y2Var.f46717f);
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -342,7 +342,7 @@ public final class y2 implements z2 {
                 jVar.a(surface2);
             }
         }
-        if (Build.VERSION.SDK_INT >= 33 && (d10 = this.f46711p.d()) != null) {
+        if (Build.VERSION.SDK_INT >= 33 && (d10 = this.f46727p.d()) != null) {
             x.z b10 = fVar.b();
             Long a10 = s.c.a(b10, d10);
             if (a10 == null) {
@@ -399,60 +399,60 @@ public final class y2 implements z2 {
     /* JADX INFO: Access modifiers changed from: private */
     public ListenableFuture y(List list, a0.i2 i2Var, CameraDevice cameraDevice) {
         s.j jVar;
-        synchronized (this.f46696a) {
+        synchronized (this.f46712a) {
             try {
-                int ordinal = this.f46704i.ordinal();
+                int ordinal = this.f46720i.ordinal();
                 if (ordinal != 0 && ordinal != 1) {
                     if (ordinal != 2) {
                         if (ordinal != 4) {
-                            return d0.n.n(new CancellationException("openCaptureSession() not execute in state: " + this.f46704i));
+                            return d0.n.n(new CancellationException("openCaptureSession() not execute in state: " + this.f46720i));
                         }
                     } else {
-                        this.f46702g.clear();
+                        this.f46718g.clear();
                         for (int i10 = 0; i10 < list.size(); i10++) {
-                            this.f46702g.put((a0.w0) this.f46703h.get(i10), (Surface) list.get(i10));
+                            this.f46718g.put((a0.w0) this.f46719h.get(i10), (Surface) list.get(i10));
                         }
-                        this.f46704i = c.OPENING;
+                        this.f46720i = c.OPENING;
                         x.y0.a("CaptureSession", "Opening capture session.");
-                        g4.c w10 = r4.w(this.f46698c, new r4.a(i2Var.k()));
+                        g4.c w10 = r4.w(this.f46714c, new r4.a(i2Var.k()));
                         p.a aVar = new p.a(i2Var.f());
                         p0.a j10 = p0.a.j(i2Var.j());
                         Map hashMap = new HashMap();
-                        if (this.f46713r && Build.VERSION.SDK_INT >= 35) {
-                            hashMap = q(u(i2Var.h()), this.f46702g);
+                        if (this.f46729r && Build.VERSION.SDK_INT >= 35) {
+                            hashMap = q(u(i2Var.h()), this.f46718g);
                         }
                         ArrayList arrayList = new ArrayList();
                         String a02 = aVar.a0(null);
                         for (i2.f fVar : i2Var.h()) {
-                            if (this.f46713r && Build.VERSION.SDK_INT >= 35) {
+                            if (this.f46729r && Build.VERSION.SDK_INT >= 35) {
                                 jVar = (s.j) hashMap.get(fVar);
                             } else {
                                 jVar = null;
                             }
                             if (jVar == null) {
-                                jVar = s(fVar, this.f46702g, a02);
-                                if (this.f46707l.containsKey(fVar.f())) {
-                                    jVar.h(((Long) this.f46707l.get(fVar.f())).longValue());
+                                jVar = s(fVar, this.f46718g, a02);
+                                if (this.f46723l.containsKey(fVar.f())) {
+                                    jVar.h(((Long) this.f46723l.get(fVar.f())).longValue());
                                 }
                             }
                             arrayList.add(jVar);
                         }
-                        s.p l10 = this.f46699d.l(i2Var.l(), t(arrayList), w10);
+                        s.p l10 = this.f46715d.l(i2Var.l(), t(arrayList), w10);
                         if (i2Var.o() == 5 && i2Var.g() != null) {
                             l10.f(s.i.b(i2Var.g()));
                         }
                         try {
-                            CaptureRequest f10 = d2.f(j10.h(), cameraDevice, this.f46712q);
+                            CaptureRequest f10 = d2.f(j10.h(), cameraDevice, this.f46728q);
                             if (f10 != null) {
                                 l10.g(f10);
                             }
-                            return this.f46699d.i(cameraDevice, l10, this.f46703h);
+                            return this.f46715d.i(cameraDevice, l10, this.f46719h);
                         } catch (CameraAccessException e10) {
                             return d0.n.n(e10);
                         }
                     }
                 }
-                return d0.n.n(new IllegalStateException("openCaptureSession() should not be possible in state: " + this.f46704i));
+                return d0.n.n(new IllegalStateException("openCaptureSession() should not be possible in state: " + this.f46720i));
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -461,18 +461,18 @@ public final class y2 implements z2 {
 
     @Override // q.z2
     public void a(List list) {
-        synchronized (this.f46696a) {
+        synchronized (this.f46712a) {
             try {
-                switch (this.f46704i.ordinal()) {
+                switch (this.f46720i.ordinal()) {
                     case 0:
-                        throw new IllegalStateException("issueCaptureRequests() should not be possible in state: " + this.f46704i);
+                        throw new IllegalStateException("issueCaptureRequests() should not be possible in state: " + this.f46720i);
                     case 1:
                     case 2:
                     case 3:
-                        this.f46697b.addAll(list);
+                        this.f46713b.addAll(list);
                         break;
                     case 4:
-                        this.f46697b.addAll(list);
+                        this.f46713b.addAll(list);
                         w();
                         break;
                     case 5:
@@ -488,9 +488,9 @@ public final class y2 implements z2 {
     @Override // q.z2
     public boolean b() {
         boolean z10;
-        synchronized (this.f46696a) {
+        synchronized (this.f46712a) {
             try {
-                c cVar = this.f46704i;
+                c cVar = this.f46720i;
                 if (cVar != c.OPENED && cVar != c.OPENING) {
                     z10 = false;
                 }
@@ -503,16 +503,16 @@ public final class y2 implements z2 {
 
     @Override // q.z2
     public ListenableFuture c(final a0.i2 i2Var, final CameraDevice cameraDevice, g4.a aVar) {
-        synchronized (this.f46696a) {
+        synchronized (this.f46712a) {
             try {
-                if (this.f46704i.ordinal() != 1) {
-                    x.y0.c("CaptureSession", "Open not allowed in state: " + this.f46704i);
-                    return d0.n.n(new IllegalStateException("open() should not allow the state: " + this.f46704i));
+                if (this.f46720i.ordinal() != 1) {
+                    x.y0.c("CaptureSession", "Open not allowed in state: " + this.f46720i);
+                    return d0.n.n(new IllegalStateException("open() should not allow the state: " + this.f46720i));
                 }
-                this.f46704i = c.GET_SURFACE;
+                this.f46720i = c.GET_SURFACE;
                 ArrayList arrayList = new ArrayList(i2Var.n());
-                this.f46703h = arrayList;
-                this.f46699d = aVar;
+                this.f46719h = arrayList;
+                this.f46715d = aVar;
                 d0.d f10 = d0.d.b(aVar.b(arrayList, 5000L)).f(new d0.a() { // from class: q.w2
                     @Override // d0.a
                     public final ListenableFuture apply(Object obj) {
@@ -520,8 +520,8 @@ public final class y2 implements z2 {
                         y10 = y2.this.y((List) obj, i2Var, cameraDevice);
                         return y10;
                     }
-                }, this.f46699d.a());
-                d0.n.j(f10, new a(), this.f46699d.a());
+                }, this.f46715d.a());
+                d0.n.j(f10, new a(), this.f46715d.a());
                 return d0.n.s(f10);
             } catch (Throwable th2) {
                 throw th2;
@@ -531,29 +531,29 @@ public final class y2 implements z2 {
 
     @Override // q.z2
     public void close() {
-        synchronized (this.f46696a) {
+        synchronized (this.f46712a) {
             try {
-                int ordinal = this.f46704i.ordinal();
+                int ordinal = this.f46720i.ordinal();
                 if (ordinal != 0) {
                     if (ordinal != 1) {
                         if (ordinal != 2) {
                             if (ordinal == 3 || ordinal == 4) {
-                                g4.a aVar = this.f46699d;
-                                b2.e.h(aVar, "The Opener shouldn't null in state:" + this.f46704i);
-                                this.f46699d.stop();
-                                this.f46704i = c.CLOSED;
-                                this.f46710o.g();
-                                this.f46701f = null;
+                                g4.a aVar = this.f46715d;
+                                b2.e.h(aVar, "The Opener shouldn't null in state:" + this.f46720i);
+                                this.f46715d.stop();
+                                this.f46720i = c.CLOSED;
+                                this.f46726o.g();
+                                this.f46717f = null;
                             }
                         } else {
-                            g4.a aVar2 = this.f46699d;
-                            b2.e.h(aVar2, "The Opener shouldn't null in state:" + this.f46704i);
-                            this.f46699d.stop();
+                            g4.a aVar2 = this.f46715d;
+                            b2.e.h(aVar2, "The Opener shouldn't null in state:" + this.f46720i);
+                            this.f46715d.stop();
                         }
                     }
-                    this.f46704i = c.RELEASED;
+                    this.f46720i = c.RELEASED;
                 } else {
-                    throw new IllegalStateException("close() should not be possible in state: " + this.f46704i);
+                    throw new IllegalStateException("close() should not be possible in state: " + this.f46720i);
                 }
             } finally {
             }
@@ -563,11 +563,11 @@ public final class y2 implements z2 {
     @Override // q.z2
     public void d() {
         ArrayList<a0.p0> arrayList;
-        synchronized (this.f46696a) {
+        synchronized (this.f46712a) {
             try {
-                if (!this.f46697b.isEmpty()) {
-                    arrayList = new ArrayList(this.f46697b);
-                    this.f46697b.clear();
+                if (!this.f46713b.isEmpty()) {
+                    arrayList = new ArrayList(this.f46713b);
+                    this.f46713b.clear();
                 } else {
                     arrayList = null;
                 }
@@ -586,27 +586,27 @@ public final class y2 implements z2 {
 
     @Override // q.z2
     public void e(a0.i2 i2Var) {
-        synchronized (this.f46696a) {
+        synchronized (this.f46712a) {
             try {
-                switch (this.f46704i.ordinal()) {
+                switch (this.f46720i.ordinal()) {
                     case 0:
-                        throw new IllegalStateException("setSessionConfig() should not be possible in state: " + this.f46704i);
+                        throw new IllegalStateException("setSessionConfig() should not be possible in state: " + this.f46720i);
                     case 1:
                     case 2:
                     case 3:
-                        this.f46701f = i2Var;
+                        this.f46717f = i2Var;
                         break;
                     case 4:
-                        this.f46701f = i2Var;
+                        this.f46717f = i2Var;
                         if (i2Var == null) {
                             return;
                         }
-                        if (!this.f46702g.keySet().containsAll(i2Var.n())) {
+                        if (!this.f46718g.keySet().containsAll(i2Var.n())) {
                             x.y0.c("CaptureSession", "Does not have the proper configured lists");
                             return;
                         }
                         x.y0.a("CaptureSession", "Attempting to submit CaptureRequest after setting");
-                        x(this.f46701f);
+                        x(this.f46717f);
                         break;
                     case 5:
                     case 6:
@@ -628,9 +628,9 @@ public final class y2 implements z2 {
     public com.google.common.util.concurrent.ListenableFuture f(boolean r4) {
         /*
             r3 = this;
-            java.lang.Object r0 = r3.f46696a
+            java.lang.Object r0 = r3.f46712a
             monitor-enter(r0)
-            q.y2$c r1 = r3.f46704i     // Catch: java.lang.Throwable -> L18
+            q.y2$c r1 = r3.f46720i     // Catch: java.lang.Throwable -> L18
             int r1 = r1.ordinal()     // Catch: java.lang.Throwable -> L18
             switch(r1) {
                 case 0: goto L90;
@@ -645,7 +645,7 @@ public final class y2 implements z2 {
         Lc:
             goto L89
         Le:
-            q.g4 r1 = r3.f46700e     // Catch: java.lang.Throwable -> L18
+            q.g4 r1 = r3.f46716e     // Catch: java.lang.Throwable -> L18
             if (r1 == 0) goto L28
             if (r4 == 0) goto L23
             r1.f()     // Catch: java.lang.Throwable -> L18 android.hardware.camera2.CameraAccessException -> L1b
@@ -659,53 +659,53 @@ public final class y2 implements z2 {
             java.lang.String r2 = "Unable to abort captures."
             x.y0.d(r1, r2, r4)     // Catch: java.lang.Throwable -> L18
         L23:
-            q.g4 r4 = r3.f46700e     // Catch: java.lang.Throwable -> L18
+            q.g4 r4 = r3.f46716e     // Catch: java.lang.Throwable -> L18
             r4.close()     // Catch: java.lang.Throwable -> L18
         L28:
             q.y2$c r4 = q.y2.c.RELEASING     // Catch: java.lang.Throwable -> L18
-            r3.f46704i = r4     // Catch: java.lang.Throwable -> L18
-            u.t r4 = r3.f46710o     // Catch: java.lang.Throwable -> L18
+            r3.f46720i = r4     // Catch: java.lang.Throwable -> L18
+            u.t r4 = r3.f46726o     // Catch: java.lang.Throwable -> L18
             r4.g()     // Catch: java.lang.Throwable -> L18
-            q.g4$a r4 = r3.f46699d     // Catch: java.lang.Throwable -> L18
+            q.g4$a r4 = r3.f46715d     // Catch: java.lang.Throwable -> L18
             java.lang.StringBuilder r1 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> L18
             r1.<init>()     // Catch: java.lang.Throwable -> L18
             java.lang.String r2 = "The Opener shouldn't null in state:"
             r1.append(r2)     // Catch: java.lang.Throwable -> L18
-            q.y2$c r2 = r3.f46704i     // Catch: java.lang.Throwable -> L18
+            q.y2$c r2 = r3.f46720i     // Catch: java.lang.Throwable -> L18
             r1.append(r2)     // Catch: java.lang.Throwable -> L18
             java.lang.String r1 = r1.toString()     // Catch: java.lang.Throwable -> L18
             b2.e.h(r4, r1)     // Catch: java.lang.Throwable -> L18
-            q.g4$a r4 = r3.f46699d     // Catch: java.lang.Throwable -> L18
+            q.g4$a r4 = r3.f46715d     // Catch: java.lang.Throwable -> L18
             boolean r4 = r4.stop()     // Catch: java.lang.Throwable -> L18
             if (r4 == 0) goto L55
             r3.r()     // Catch: java.lang.Throwable -> L18
             goto L89
         L55:
-            com.google.common.util.concurrent.ListenableFuture r4 = r3.f46705j     // Catch: java.lang.Throwable -> L18
+            com.google.common.util.concurrent.ListenableFuture r4 = r3.f46721j     // Catch: java.lang.Throwable -> L18
             if (r4 != 0) goto L64
             q.v2 r4 = new q.v2     // Catch: java.lang.Throwable -> L18
             r4.<init>()     // Catch: java.lang.Throwable -> L18
             com.google.common.util.concurrent.ListenableFuture r4 = androidx.concurrent.futures.c.a(r4)     // Catch: java.lang.Throwable -> L18
-            r3.f46705j = r4     // Catch: java.lang.Throwable -> L18
+            r3.f46721j = r4     // Catch: java.lang.Throwable -> L18
         L64:
-            com.google.common.util.concurrent.ListenableFuture r4 = r3.f46705j     // Catch: java.lang.Throwable -> L18
+            com.google.common.util.concurrent.ListenableFuture r4 = r3.f46721j     // Catch: java.lang.Throwable -> L18
             monitor-exit(r0)     // Catch: java.lang.Throwable -> L18
             return r4
         L68:
-            q.g4$a r4 = r3.f46699d     // Catch: java.lang.Throwable -> L18
+            q.g4$a r4 = r3.f46715d     // Catch: java.lang.Throwable -> L18
             java.lang.StringBuilder r1 = new java.lang.StringBuilder     // Catch: java.lang.Throwable -> L18
             r1.<init>()     // Catch: java.lang.Throwable -> L18
             java.lang.String r2 = "The Opener shouldn't null in state:"
             r1.append(r2)     // Catch: java.lang.Throwable -> L18
-            q.y2$c r2 = r3.f46704i     // Catch: java.lang.Throwable -> L18
+            q.y2$c r2 = r3.f46720i     // Catch: java.lang.Throwable -> L18
             r1.append(r2)     // Catch: java.lang.Throwable -> L18
             java.lang.String r1 = r1.toString()     // Catch: java.lang.Throwable -> L18
             b2.e.h(r4, r1)     // Catch: java.lang.Throwable -> L18
-            q.g4$a r4 = r3.f46699d     // Catch: java.lang.Throwable -> L18
+            q.g4$a r4 = r3.f46715d     // Catch: java.lang.Throwable -> L18
             r4.stop()     // Catch: java.lang.Throwable -> L18
         L85:
             q.y2$c r4 = q.y2.c.RELEASED     // Catch: java.lang.Throwable -> L18
-            r3.f46704i = r4     // Catch: java.lang.Throwable -> L18
+            r3.f46720i = r4     // Catch: java.lang.Throwable -> L18
         L89:
             monitor-exit(r0)     // Catch: java.lang.Throwable -> L18
             r4 = 0
@@ -717,7 +717,7 @@ public final class y2 implements z2 {
             r1.<init>()     // Catch: java.lang.Throwable -> L18
             java.lang.String r2 = "release() should not be possible in state: "
             r1.append(r2)     // Catch: java.lang.Throwable -> L18
-            q.y2$c r2 = r3.f46704i     // Catch: java.lang.Throwable -> L18
+            q.y2$c r2 = r3.f46720i     // Catch: java.lang.Throwable -> L18
             r1.append(r2)     // Catch: java.lang.Throwable -> L18
             java.lang.String r1 = r1.toString()     // Catch: java.lang.Throwable -> L18
             r4.<init>(r1)     // Catch: java.lang.Throwable -> L18
@@ -732,8 +732,8 @@ public final class y2 implements z2 {
     @Override // q.z2
     public List g() {
         List unmodifiableList;
-        synchronized (this.f46696a) {
-            unmodifiableList = Collections.unmodifiableList(this.f46697b);
+        synchronized (this.f46712a) {
+            unmodifiableList = Collections.unmodifiableList(this.f46713b);
         }
         return unmodifiableList;
     }
@@ -741,32 +741,32 @@ public final class y2 implements z2 {
     @Override // q.z2
     public a0.i2 h() {
         a0.i2 i2Var;
-        synchronized (this.f46696a) {
-            i2Var = this.f46701f;
+        synchronized (this.f46712a) {
+            i2Var = this.f46717f;
         }
         return i2Var;
     }
 
     @Override // q.z2
     public void i(Map map) {
-        synchronized (this.f46696a) {
-            this.f46707l = map;
+        synchronized (this.f46712a) {
+            this.f46723l = map;
         }
     }
 
     void r() {
-        c cVar = this.f46704i;
+        c cVar = this.f46720i;
         c cVar2 = c.RELEASED;
         if (cVar == cVar2) {
             x.y0.a("CaptureSession", "Skipping finishClose due to being state RELEASED.");
             return;
         }
-        this.f46704i = cVar2;
-        this.f46700e = null;
-        c.a aVar = this.f46706k;
+        this.f46720i = cVar2;
+        this.f46716e = null;
+        c.a aVar = this.f46722k;
         if (aVar != null) {
             aVar.c(null);
-            this.f46706k = null;
+            this.f46722k = null;
         }
     }
 
@@ -774,9 +774,9 @@ public final class y2 implements z2 {
         i2 i2Var;
         ArrayList arrayList;
         boolean z10;
-        synchronized (this.f46696a) {
+        synchronized (this.f46712a) {
             try {
-                if (this.f46704i != c.OPENED) {
+                if (this.f46720i != c.OPENED) {
                     x.y0.a("CaptureSession", "Skipping issueBurstCaptureRequest due to session closed");
                     return -1;
                 } else if (list.isEmpty()) {
@@ -797,7 +797,7 @@ public final class y2 implements z2 {
                                 while (true) {
                                     if (it2.hasNext()) {
                                         a0.w0 w0Var = (a0.w0) it2.next();
-                                        if (!this.f46702g.containsKey(w0Var)) {
+                                        if (!this.f46718g.containsKey(w0Var)) {
                                             x.y0.a("CaptureSession", "Skipping capture request with invalid surface: " + w0Var);
                                             break;
                                         }
@@ -809,12 +809,12 @@ public final class y2 implements z2 {
                                         if (p0Var.k() == 5 && p0Var.d() != null) {
                                             j10.n(p0Var.d());
                                         }
-                                        a0.i2 i2Var2 = this.f46701f;
+                                        a0.i2 i2Var2 = this.f46717f;
                                         if (i2Var2 != null) {
                                             j10.e(i2Var2.j().g());
                                         }
                                         j10.e(p0Var.g());
-                                        CaptureRequest e10 = d2.e(j10.h(), this.f46700e.g(), this.f46702g, false, this.f46712q);
+                                        CaptureRequest e10 = d2.e(j10.h(), this.f46716e.g(), this.f46718g, false, this.f46728q);
                                         if (e10 == null) {
                                             x.y0.a("CaptureSession", "Skipping issuing request without surface.");
                                             return -1;
@@ -834,8 +834,8 @@ public final class y2 implements z2 {
                         Thread.dumpStack();
                     }
                     if (!arrayList.isEmpty()) {
-                        if (this.f46708m.a(arrayList, z10)) {
-                            this.f46700e.m();
+                        if (this.f46724m.a(arrayList, z10)) {
+                            this.f46716e.m();
                             i2Var.c(new i2.a() { // from class: q.u2
                                 @Override // q.i2.a
                                 public final void a(CameraCaptureSession cameraCaptureSession, int i10, boolean z11) {
@@ -843,10 +843,10 @@ public final class y2 implements z2 {
                                 }
                             });
                         }
-                        if (this.f46709n.b(arrayList, z10)) {
+                        if (this.f46725n.b(arrayList, z10)) {
                             i2Var.a((CaptureRequest) arrayList.get(arrayList.size() - 1), Collections.singletonList(new b()));
                         }
-                        return this.f46700e.j(arrayList, i2Var);
+                        return this.f46716e.j(arrayList, i2Var);
                     }
                     x.y0.a("CaptureSession", "Skipping issuing burst request due to no valid request elements");
                     return -1;
@@ -858,7 +858,7 @@ public final class y2 implements z2 {
     }
 
     void w() {
-        this.f46710o.e().a(new Runnable() { // from class: q.x2
+        this.f46726o.e().a(new Runnable() { // from class: q.x2
             @Override // java.lang.Runnable
             public final void run() {
                 y2.j(y2.this);
@@ -867,7 +867,7 @@ public final class y2 implements z2 {
     }
 
     int x(a0.i2 i2Var) {
-        synchronized (this.f46696a) {
+        synchronized (this.f46712a) {
             try {
             } catch (Throwable th2) {
                 throw th2;
@@ -875,7 +875,7 @@ public final class y2 implements z2 {
             if (i2Var == null) {
                 x.y0.a("CaptureSession", "Skipping issueRepeatingCaptureRequests for no configuration case.");
                 return -1;
-            } else if (this.f46704i != c.OPENED) {
+            } else if (this.f46720i != c.OPENED) {
                 x.y0.a("CaptureSession", "Skipping issueRepeatingCaptureRequests due to session closed");
                 return -1;
             } else {
@@ -883,7 +883,7 @@ public final class y2 implements z2 {
                 if (j10.i().isEmpty()) {
                     x.y0.a("CaptureSession", "Skipping issueRepeatingCaptureRequests for no surface.");
                     try {
-                        this.f46700e.m();
+                        this.f46716e.m();
                     } catch (CameraAccessException e10) {
                         x.y0.c("CaptureSession", "Unable to access camera: " + e10.getMessage());
                         Thread.dumpStack();
@@ -892,12 +892,12 @@ public final class y2 implements z2 {
                 }
                 try {
                     x.y0.a("CaptureSession", "Issuing request for session.");
-                    CaptureRequest e11 = d2.e(j10, this.f46700e.g(), this.f46702g, true, this.f46712q);
+                    CaptureRequest e11 = d2.e(j10, this.f46716e.g(), this.f46718g, true, this.f46728q);
                     if (e11 == null) {
                         x.y0.a("CaptureSession", "Skipping issuing empty request for session.");
                         return -1;
                     }
-                    return this.f46700e.h(e11, this.f46710o.d(o(j10.c(), new CameraCaptureSession.CaptureCallback[0])));
+                    return this.f46716e.h(e11, this.f46726o.d(o(j10.c(), new CameraCaptureSession.CaptureCallback[0])));
                 } catch (CameraAccessException e12) {
                     x.y0.c("CaptureSession", "Unable to access camera: " + e12.getMessage());
                     Thread.dumpStack();
@@ -918,20 +918,20 @@ public final class y2 implements z2 {
     }
 
     y2(s.f fVar, a0.d2 d2Var, boolean z10) {
-        this.f46696a = new Object();
-        this.f46697b = new ArrayList();
-        this.f46702g = new HashMap();
-        this.f46703h = Collections.EMPTY_LIST;
-        this.f46704i = c.UNINITIALIZED;
-        this.f46707l = new HashMap();
-        this.f46708m = new u.w();
-        this.f46709n = new u.a0();
-        this.f46704i = c.INITIALIZED;
-        this.f46711p = fVar;
-        this.f46698c = new d();
-        this.f46710o = new u.t(d2Var.a(CaptureNoResponseQuirk.class));
-        this.f46712q = new u.z(d2Var);
-        this.f46713r = z10;
+        this.f46712a = new Object();
+        this.f46713b = new ArrayList();
+        this.f46718g = new HashMap();
+        this.f46719h = Collections.EMPTY_LIST;
+        this.f46720i = c.UNINITIALIZED;
+        this.f46723l = new HashMap();
+        this.f46724m = new u.w();
+        this.f46725n = new u.a0();
+        this.f46720i = c.INITIALIZED;
+        this.f46727p = fVar;
+        this.f46714c = new d();
+        this.f46726o = new u.t(d2Var.a(CaptureNoResponseQuirk.class));
+        this.f46728q = new u.z(d2Var);
+        this.f46729r = z10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -942,12 +942,12 @@ public final class y2 implements z2 {
 
         @Override // d0.c
         public void onFailure(Throwable th2) {
-            synchronized (y2.this.f46696a) {
+            synchronized (y2.this.f46712a) {
                 try {
-                    y2.this.f46699d.stop();
-                    int ordinal = y2.this.f46704i.ordinal();
+                    y2.this.f46715d.stop();
+                    int ordinal = y2.this.f46720i.ordinal();
                     if ((ordinal == 3 || ordinal == 5 || ordinal == 6) && !(th2 instanceof CancellationException)) {
-                        x.y0.m("CaptureSession", "Opening session with fail " + y2.this.f46704i, th2);
+                        x.y0.m("CaptureSession", "Opening session with fail " + y2.this.f46720i, th2);
                         y2.this.r();
                     }
                 } finally {

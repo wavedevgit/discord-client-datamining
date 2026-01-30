@@ -220,7 +220,7 @@ public final class f implements Closeable {
             Intrinsics.checkNotNullParameter(sink, "sink");
             o(socket);
             if (this.f7908a) {
-                str = ut.e.f50564i + ' ' + peerName;
+                str = ut.e.f50580i + ' ' + peerName;
             } else {
                 str = "MockWebServer " + peerName;
             }
@@ -439,7 +439,7 @@ public final class f implements Closeable {
             this.f7943e.f7904w.a(this.f7944f, this.f7945g);
             synchronized (this.f7943e) {
                 this.f7943e.M.remove(Integer.valueOf(this.f7944f));
-                Unit unit = Unit.f33282a;
+                Unit unit = Unit.f33298a;
             }
             return -1L;
         }
@@ -680,7 +680,7 @@ public final class f implements Closeable {
             java.lang.Integer r5 = java.lang.Integer.valueOf(r1)     // Catch: java.lang.Throwable -> L43
             r4.put(r5, r0)     // Catch: java.lang.Throwable -> L43
         L56:
-            kotlin.Unit r4 = kotlin.Unit.f33282a     // Catch: java.lang.Throwable -> L43
+            kotlin.Unit r4 = kotlin.Unit.f33298a     // Catch: java.lang.Throwable -> L43
             monitor-exit(r9)     // Catch: java.lang.Throwable -> L61
             if (r10 != 0) goto L64
             bu.j r10 = r2.K     // Catch: java.lang.Throwable -> L61
@@ -736,7 +736,7 @@ public final class f implements Closeable {
             z10 = true;
         }
         if ((i10 & 2) != 0) {
-            eVar = xt.e.f53825i;
+            eVar = xt.e.f53841i;
         }
         fVar.u2(z10, eVar);
     }
@@ -774,7 +774,7 @@ public final class f implements Closeable {
         Object[] objArr;
         Intrinsics.checkNotNullParameter(connectionCode, "connectionCode");
         Intrinsics.checkNotNullParameter(streamCode, "streamCode");
-        if (ut.e.f50563h && Thread.holdsLock(this)) {
+        if (ut.e.f50579h && Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
         try {
@@ -789,7 +789,7 @@ public final class f implements Closeable {
                 } else {
                     objArr = null;
                 }
-                Unit unit = Unit.f33282a;
+                Unit unit = Unit.f33298a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -934,7 +934,7 @@ public final class f implements Closeable {
             }
             this.f7907z = j11 + 1;
             this.C = System.nanoTime() + 1000000000;
-            Unit unit = Unit.f33282a;
+            Unit unit = Unit.f33298a;
             xt.d dVar = this.f7901t;
             dVar.i(new i(this.f7896o + " ping", true, this), 0L);
         }
@@ -960,8 +960,8 @@ public final class f implements Closeable {
                 this.f7899r = true;
                 int i10 = this.f7897p;
                 intRef.element = i10;
-                Unit unit = Unit.f33282a;
-                this.K.B(i10, statusCode, ut.e.f50556a);
+                Unit unit = Unit.f33298a;
+                this.K.B(i10, statusCode, ut.e.f50572a);
             }
         }
     }
@@ -1000,7 +1000,7 @@ public final class f implements Closeable {
         r2 = java.lang.Math.min((int) java.lang.Math.min(r12, r6 - r4), r8.K.F());
         r6 = r2;
         r8.H += r6;
-        r4 = kotlin.Unit.f33282a;
+        r4 = kotlin.Unit.f33298a;
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -1052,7 +1052,7 @@ public final class f implements Closeable {
             long r6 = (long) r2     // Catch: java.lang.Throwable -> L2f
             long r4 = r4 + r6
             r8.H = r4     // Catch: java.lang.Throwable -> L2f
-            kotlin.Unit r4 = kotlin.Unit.f33282a     // Catch: java.lang.Throwable -> L2f
+            kotlin.Unit r4 = kotlin.Unit.f33298a     // Catch: java.lang.Throwable -> L2f
             monitor-exit(r8)
             long r12 = r12 - r6
             bu.j r4 = r8.K
@@ -1252,7 +1252,7 @@ public final class f implements Closeable {
                     i12.i(new b(fVar.X0() + '[' + i10 + "] onStream", true, fVar, iVar), 0L);
                     return;
                 }
-                Unit unit = Unit.f33282a;
+                Unit unit = Unit.f33298a;
                 B1.x(ut.e.Q(headerBlock), z10);
             }
         }
@@ -1265,7 +1265,7 @@ public final class f implements Closeable {
                     fVar.I = fVar.U1() + j10;
                     Intrinsics.checkNotNull(fVar, "null cannot be cast to non-null type java.lang.Object");
                     fVar.notifyAll();
-                    Unit unit = Unit.f33282a;
+                    Unit unit = Unit.f33298a;
                 }
                 return;
             }
@@ -1273,7 +1273,7 @@ public final class f implements Closeable {
             if (B1 != null) {
                 synchronized (B1) {
                     B1.a(j10);
-                    Unit unit2 = Unit.f33282a;
+                    Unit unit2 = Unit.f33298a;
                 }
             }
         }
@@ -1297,7 +1297,7 @@ public final class f implements Closeable {
             synchronized (fVar) {
                 array = fVar.E1().values().toArray(new bu.i[0]);
                 fVar.f7899r = true;
-                Unit unit = Unit.f33282a;
+                Unit unit = Unit.f33298a;
             }
             for (bu.i iVar : (bu.i[]) array) {
                 if (iVar.j() > i10 && iVar.t()) {
@@ -1330,7 +1330,7 @@ public final class f implements Closeable {
             }
             B1.w(source, i11);
             if (z10) {
-                B1.x(ut.e.f50557b, true);
+                B1.x(ut.e.f50573b, true);
             }
         }
 
@@ -1353,7 +1353,7 @@ public final class f implements Closeable {
                             Intrinsics.checkNotNull(fVar, "null cannot be cast to non-null type java.lang.Object");
                             fVar.notifyAll();
                         }
-                        Unit unit = Unit.f33282a;
+                        Unit unit = Unit.f33298a;
                     }
                 } catch (Throwable th2) {
                     throw th2;
@@ -1364,7 +1364,7 @@ public final class f implements Closeable {
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             l();
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         @Override // bu.h.c
@@ -1409,25 +1409,25 @@ public final class f implements Closeable {
                         iVarArr = (bu.i[]) fVar.E1().values().toArray(new bu.i[0]);
                         fVar.s2((m) objectRef.element);
                         fVar.f7903v.i(new a(fVar.X0() + " onSettings", true, fVar, objectRef), 0L);
-                        Unit unit = Unit.f33282a;
+                        Unit unit = Unit.f33298a;
                     }
                     iVarArr = null;
                     fVar.s2((m) objectRef.element);
                     fVar.f7903v.i(new a(fVar.X0() + " onSettings", true, fVar, objectRef), 0L);
-                    Unit unit2 = Unit.f33282a;
+                    Unit unit2 = Unit.f33298a;
                 }
                 try {
                     fVar.W1().a((m) objectRef.element);
                 } catch (IOException e10) {
                     fVar.R0(e10);
                 }
-                Unit unit3 = Unit.f33282a;
+                Unit unit3 = Unit.f33298a;
             }
             if (iVarArr != null) {
                 for (bu.i iVar : iVarArr) {
                     synchronized (iVar) {
                         iVar.a(c10);
-                        Unit unit4 = Unit.f33282a;
+                        Unit unit4 = Unit.f33298a;
                     }
                 }
             }

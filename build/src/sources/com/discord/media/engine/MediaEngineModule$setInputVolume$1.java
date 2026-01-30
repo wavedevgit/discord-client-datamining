@@ -47,11 +47,11 @@ final class MediaEngineModule$setInputVolume$1 extends kotlin.coroutines.jvm.int
             }
         }
         this.this$0.getMediaEngine().setInputVolume$media_engine_release((float) this.$volume);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$setInputVolume$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((MediaEngineModule$setInputVolume$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

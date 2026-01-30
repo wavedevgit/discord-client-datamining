@@ -7,31 +7,31 @@ import kotlin.enums.EnumEntries;
 public final class t {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final t f32270d = new t("Connecting", 0);
+    public static final t f32286d = new t("Connecting", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final t f32271e = new t("Connected", 1);
+    public static final t f32287e = new t("Connected", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final t f32272i = new t("Disconnected", 2);
+    public static final t f32288i = new t("Disconnected", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ t[] f32273o;
+    private static final /* synthetic */ t[] f32289o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f32274p;
+    private static final /* synthetic */ EnumEntries f32290p;
 
     static {
         t[] a10 = a();
-        f32273o = a10;
-        f32274p = pr.a.a(a10);
+        f32289o = a10;
+        f32290p = pr.a.a(a10);
     }
 
     private t(String str, int i10) {
     }
 
     private static final /* synthetic */ t[] a() {
-        return new t[]{f32270d, f32271e, f32272i};
+        return new t[]{f32286d, f32287e, f32288i};
     }
 
     public static t valueOf(String str) {
@@ -39,6 +39,6 @@ public final class t {
     }
 
     public static t[] values() {
-        return (t[]) f32273o.clone();
+        return (t[]) f32289o.clone();
     }
 }

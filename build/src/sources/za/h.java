@@ -3,14 +3,14 @@ package za;
 public class h implements d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f55421a;
+    private final int f55437a;
 
     public h(int i10) {
-        this.f55421a = i10;
+        this.f55437a = i10;
     }
 
     @Override // za.d
     public c createImageTranscoder(fa.c cVar, boolean z10) {
-        return new g(z10, this.f55421a);
+        return new g(z10, this.f55437a);
     }
 }

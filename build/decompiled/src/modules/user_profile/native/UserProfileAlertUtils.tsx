@@ -272,4 +272,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.confirmThreadRemove = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 8959, 1307, 3982, 8960, 8961, 8968, 8969, 8970, 8971, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 8963, 1307, 3988, 8964, 8965, 8972, 8973, 8974, 8975, 2]);

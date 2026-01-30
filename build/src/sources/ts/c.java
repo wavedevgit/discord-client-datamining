@@ -7,46 +7,46 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c implements s {
 
     /* renamed from: a  reason: collision with root package name */
-    private final o f49864a;
+    private final o f49880a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f49865b;
+    private final List f49881b;
 
     public c(o mainFormat, List formats) {
         Intrinsics.checkNotNullParameter(mainFormat, "mainFormat");
         Intrinsics.checkNotNullParameter(formats, "formats");
-        this.f49864a = mainFormat;
-        this.f49865b = formats;
+        this.f49880a = mainFormat;
+        this.f49881b = formats;
     }
 
     @Override // ts.o
     public us.e a() {
-        return this.f49864a.a();
+        return this.f49880a.a();
     }
 
     @Override // ts.o
     public vs.q b() {
         List l10 = CollectionsKt.l();
         List c10 = CollectionsKt.c();
-        c10.add(this.f49864a.b());
-        for (o oVar : this.f49865b) {
+        c10.add(this.f49880a.b());
+        for (o oVar : this.f49881b) {
             c10.add(oVar.b());
         }
         return new vs.q(l10, CollectionsKt.a(c10));
     }
 
     public final List c() {
-        return this.f49865b;
+        return this.f49881b;
     }
 
     public final o d() {
-        return this.f49864a;
+        return this.f49880a;
     }
 
     public boolean equals(Object obj) {
         if (obj instanceof c) {
             c cVar = (c) obj;
-            if (Intrinsics.areEqual(this.f49864a, cVar.f49864a) && Intrinsics.areEqual(this.f49865b, cVar.f49865b)) {
+            if (Intrinsics.areEqual(this.f49880a, cVar.f49880a) && Intrinsics.areEqual(this.f49881b, cVar.f49881b)) {
                 return true;
             }
             return false;
@@ -55,10 +55,10 @@ public final class c implements s {
     }
 
     public int hashCode() {
-        return (this.f49864a.hashCode() * 31) + this.f49865b.hashCode();
+        return (this.f49880a.hashCode() * 31) + this.f49881b.hashCode();
     }
 
     public String toString() {
-        return "AlternativesParsing(" + this.f49865b + ')';
+        return "AlternativesParsing(" + this.f49881b + ')';
     }
 }

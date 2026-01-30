@@ -264,11 +264,11 @@ public final class w {
     }
 
     public h c(Class cls) {
-        return e(cls, sm.c.f49079a);
+        return e(cls, sm.c.f49095a);
     }
 
     public h d(Type type) {
-        return e(type, sm.c.f49079a);
+        return e(type, sm.c.f49095a);
     }
 
     public h e(Type type, Set set) {

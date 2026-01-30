@@ -14,14 +14,14 @@ public final class y implements KSerializer {
     public static final y f6909a = new y();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f6910b = new g2("kotlin.time.Duration", e.i.f56091a);
+    private static final SerialDescriptor f6910b = new g2("kotlin.time.Duration", e.i.f56107a);
 
     private y() {
     }
 
     public long a(Decoder decoder) {
         Intrinsics.checkNotNullParameter(decoder, "decoder");
-        return Duration.f36281e.d(decoder.z());
+        return Duration.f36297e.d(decoder.z());
     }
 
     public void b(Encoder encoder, long j10) {

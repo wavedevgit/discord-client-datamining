@@ -5,11 +5,11 @@ import ls.e0;
 public abstract class t {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e0 f36517a = new e0("NULL");
+    public static final e0 f36533a = new e0("NULL");
 
     /* renamed from: b  reason: collision with root package name */
-    public static final e0 f36518b = new e0("UNINITIALIZED");
+    public static final e0 f36534b = new e0("UNINITIALIZED");
 
     /* renamed from: c  reason: collision with root package name */
-    public static final e0 f36519c = new e0("DONE");
+    public static final e0 f36535c = new e0("DONE");
 }

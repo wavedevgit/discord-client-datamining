@@ -60,7 +60,7 @@ public final class WorkflowViewStub extends View {
                 unit = null;
             } else {
                 parent.addView(newView, indexOfChild, layoutParams);
-                unit = Unit.f33282a;
+                unit = Unit.f33298a;
             }
             if (unit == null) {
                 parent.addView(newView, indexOfChild);
@@ -70,7 +70,7 @@ public final class WorkflowViewStub extends View {
         @Override // kotlin.jvm.functions.Function2
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
             a((ViewGroup) obj, (View) obj2);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
     }
 
@@ -102,7 +102,7 @@ public final class WorkflowViewStub extends View {
     public static final void d(View view, Function0 doStart) {
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(doStart, "doStart");
-        d.a.e(d.f52691n, view, null, 2, null);
+        d.a.e(d.f52707n, view, null, 2, null);
         doStart.invoke();
     }
 
@@ -123,12 +123,12 @@ public final class WorkflowViewStub extends View {
             ViewGroup viewGroup2 = viewGroup;
             if (viewGroup2 != null) {
                 View view2 = this.f19044d;
-                if (view2 != this && (c10 = d.f52691n.c(view2)) != null) {
+                if (view2 != this && (c10 = d.f52707n.c(view2)) != null) {
                     c10.d();
                 }
                 Context context = viewGroup2.getContext();
                 Intrinsics.checkNotNullExpressionValue(context, "parent.context");
-                View c11 = f0.c((e0) viewEnvironment.a(e0.f51221a), rendering, viewEnvironment, context, viewGroup2, new h0() { // from class: vm.l0
+                View c11 = f0.c((e0) viewEnvironment.a(e0.f51237a), rendering, viewEnvironment, context, viewGroup2, new h0() { // from class: vm.l0
                     @Override // vm.h0
                     public final void a(View view3, Function0 function0) {
                         WorkflowViewStub.d(view3, function0);

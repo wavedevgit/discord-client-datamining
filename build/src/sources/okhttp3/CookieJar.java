@@ -7,16 +7,16 @@ import kotlin.jvm.internal.Intrinsics;
 public interface CookieJar {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f44035a = a.f44037a;
+    public static final a f44051a = a.f44053a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final CookieJar f44036b = new a.C0536a();
+    public static final CookieJar f44052b = new a.C0536a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ a f44037a = new a();
+        static final /* synthetic */ a f44053a = new a();
 
         /* renamed from: okhttp3.CookieJar$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */

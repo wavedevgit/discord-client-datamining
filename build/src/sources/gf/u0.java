@@ -6,11 +6,11 @@ import android.os.Parcel;
 final class u0 implements l {
 
     /* renamed from: c  reason: collision with root package name */
-    private final IBinder f26882c;
+    private final IBinder f26898c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public u0(IBinder iBinder) {
-        this.f26882c = iBinder;
+        this.f26898c = iBinder;
     }
 
     @Override // gf.l
@@ -32,7 +32,7 @@ final class u0 implements l {
             } else {
                 obtain.writeInt(0);
             }
-            this.f26882c.transact(46, obtain, obtain2, 0);
+            this.f26898c.transact(46, obtain, obtain2, 0);
             obtain2.readException();
             obtain2.recycle();
             obtain.recycle();
@@ -45,6 +45,6 @@ final class u0 implements l {
 
     @Override // android.os.IInterface
     public final IBinder asBinder() {
-        return this.f26882c;
+        return this.f26898c;
     }
 }

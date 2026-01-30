@@ -20,29 +20,29 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var2.bind(var0)();
     var _closure1_slot2 = var2;
     var2 = function(arg0) { // Original name: isDateObject, environment: var1
-        _fun28913: for (var _fun28913_ip = 0;;) switch (_fun28913_ip) {
+        _fun28914: for (var _fun28914_ip = 0;;) switch (_fun28914_ip) {
             case 0:
                 var4 = arg0;
                 var1 = 'object';
                 var0 = typeof var4;
                 var0 = var1 === var0;
                 if (!var0) {
-                    _fun28913_ip = 23;
-                    continue _fun28913
+                    _fun28914_ip = 23;
+                    continue _fun28914
                 }
             case 17:
                 var1 = null;
                 var0 = var1 !== var4;
             case 23:
                 if (!var0) {
-                    _fun28913_ip = 88;
-                    continue _fun28913
+                    _fun28914_ip = 88;
+                    continue _fun28914
                 }
             case 26:
                 var1 = _closure1_slot2;
                 if (var1) {
-                    _fun28913_ip = 57;
-                    continue _fun28913
+                    _fun28914_ip = 57;
+                    continue _fun28914
                 }
             case 36:
                 var2 = _closure1_slot1;
@@ -50,8 +50,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var2.bind(var1)(var4);
                 var1 = '[object Date]';
                 var1 = var1 === var2;
-                _fun28913_ip = 85;
-                continue _fun28913;
+                _fun28914_ip = 85;
+                continue _fun28914;
             case 57:
                 var2 = var4;
             case 60: // try_start_0
@@ -61,8 +61,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var4.bind(var2)(var3);
             case 74: // try_end0
                 var2 = true;
-                _fun28913_ip = 82;
-                continue _fun28913;
+                _fun28914_ip = 82;
+                continue _fun28914;
             case 78: // catch_target0
                 CatchBlockStart(arg_register = 3);
                 var2 = false;

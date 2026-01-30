@@ -9,33 +9,33 @@ import net.time4j.h0;
 public final class j implements h {
 
     /* renamed from: d  reason: collision with root package name */
-    private final h f37610d;
+    private final h f37626d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final jt.p f37611e;
+    private final jt.p f37627e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f37612i;
+    private final int f37628i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final int f37613o;
+    private final int f37629o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final boolean f37614p;
+    private final boolean f37630p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final char f37615q;
+    private final char f37631q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final kt.g f37616r;
+    private final kt.g f37632r;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public j(jt.p pVar, int i10, int i11, boolean z10) {
-        this.f37611e = pVar;
-        this.f37612i = i10;
-        this.f37613o = i11;
-        this.f37614p = !z10 && i10 == i11;
-        this.f37610d = z10 ? new m(kt.a.f36542o) : null;
+        this.f37627e = pVar;
+        this.f37628i = i10;
+        this.f37629o = i11;
+        this.f37630p = !z10 && i10 == i11;
+        this.f37626d = z10 ? new m(kt.a.f36558o) : null;
         if (pVar == null) {
             throw new NullPointerException("Missing element.");
         }
@@ -46,8 +46,8 @@ public final class j implements h {
         } else if (i10 > 9) {
             throw new IllegalArgumentException("Min digits out of range: " + i10);
         } else if (i11 <= 9) {
-            this.f37615q = '0';
-            this.f37616r = kt.g.SMART;
+            this.f37631q = '0';
+            this.f37632r = kt.g.SMART;
         } else {
             throw new IllegalArgumentException("Max digits out of range: " + i11);
         }
@@ -59,7 +59,7 @@ public final class j implements h {
     }
 
     private boolean c() {
-        if (this.f37610d != null) {
+        if (this.f37626d != null) {
             return true;
         }
         return false;
@@ -71,7 +71,7 @@ public final class j implements h {
 
     @Override // lt.h
     public h a(c cVar, jt.d dVar, int i10) {
-        return new j(this.f37610d, this.f37611e, this.f37612i, this.f37613o, this.f37614p, ((Character) dVar.b(kt.a.f36540m, '0')).charValue(), (kt.g) dVar.b(kt.a.f36533f, kt.g.SMART));
+        return new j(this.f37626d, this.f37627e, this.f37628i, this.f37629o, this.f37630p, ((Character) dVar.b(kt.a.f36556m, '0')).charValue(), (kt.g) dVar.b(kt.a.f36549f, kt.g.SMART));
     }
 
     @Override // lt.h
@@ -82,9 +82,9 @@ public final class j implements h {
         Set set2;
         int i11;
         int i12;
-        BigDecimal h10 = h((Number) oVar.p(this.f37611e));
-        BigDecimal h11 = h((Number) oVar.t(this.f37611e));
-        BigDecimal h12 = h((Number) oVar.i(this.f37611e));
+        BigDecimal h10 = h((Number) oVar.p(this.f37627e));
+        BigDecimal h11 = h((Number) oVar.t(this.f37627e));
+        BigDecimal h12 = h((Number) oVar.i(this.f37627e));
         if (h10.compareTo(h12) > 0) {
             h10 = h12;
         }
@@ -98,11 +98,11 @@ public final class j implements h {
         }
         BigDecimal bigDecimal2 = bigDecimal;
         if (z10) {
-            charValue = this.f37615q;
+            charValue = this.f37631q;
             dVar2 = dVar;
         } else {
             dVar2 = dVar;
-            charValue = ((Character) dVar2.b(kt.a.f36540m, '0')).charValue();
+            charValue = ((Character) dVar2.b(kt.a.f36556m, '0')).charValue();
         }
         char c10 = charValue;
         if (appendable instanceof CharSequence) {
@@ -112,15 +112,15 @@ public final class j implements h {
         }
         int i13 = 0;
         if (bigDecimal2.scale() == 0) {
-            if (this.f37612i > 0) {
+            if (this.f37628i > 0) {
                 if (c()) {
-                    this.f37610d.d(oVar, appendable, dVar2, set, z10);
+                    this.f37626d.d(oVar, appendable, dVar2, set, z10);
                     i11 = 1;
                 } else {
                     i11 = 0;
                 }
                 while (true) {
-                    i12 = this.f37612i;
+                    i12 = this.f37628i;
                     if (i13 >= i12) {
                         break;
                     }
@@ -133,12 +133,12 @@ public final class j implements h {
         } else {
             if (c()) {
                 set2 = set;
-                this.f37610d.d(oVar, appendable, dVar, set2, z10);
+                this.f37626d.d(oVar, appendable, dVar, set2, z10);
                 i13 = 1;
             } else {
                 set2 = set;
             }
-            String plainString = bigDecimal2.setScale(Math.min(Math.max(bigDecimal2.scale(), this.f37612i), this.f37613o), roundingMode).toPlainString();
+            String plainString = bigDecimal2.setScale(Math.min(Math.max(bigDecimal2.scale(), this.f37628i), this.f37629o), roundingMode).toPlainString();
             int i14 = c10 - '0';
             int length = plainString.length();
             for (int i15 = 2; i15 < length; i15++) {
@@ -147,7 +147,7 @@ public final class j implements h {
             }
         }
         if (i10 != -1 && i13 > 1 && set2 != null) {
-            set2.add(new g(this.f37611e, i10 + 1, i10 + i13));
+            set2.add(new g(this.f37627e, i10 + 1, i10 + i13));
         }
         return i13;
     }
@@ -173,7 +173,7 @@ public final class j implements h {
         }
         if (obj instanceof j) {
             j jVar = (j) obj;
-            if (this.f37611e.equals(jVar.f37611e) && this.f37612i == jVar.f37612i && this.f37613o == jVar.f37613o && c() == jVar.c()) {
+            if (this.f37627e.equals(jVar.f37627e) && this.f37628i == jVar.f37628i && this.f37629o == jVar.f37629o && c() == jVar.c()) {
                 return true;
             }
         }
@@ -187,19 +187,19 @@ public final class j implements h {
 
     @Override // lt.h
     public h g(jt.p pVar) {
-        if (this.f37611e == pVar) {
+        if (this.f37627e == pVar) {
             return this;
         }
-        return new j(pVar, this.f37612i, this.f37613o, c());
+        return new j(pVar, this.f37628i, this.f37629o, c());
     }
 
     @Override // lt.h
     public jt.p getElement() {
-        return this.f37611e;
+        return this.f37627e;
     }
 
     public int hashCode() {
-        return (this.f37611e.hashCode() * 7) + ((this.f37612i + (this.f37613o * 10)) * 31);
+        return (this.f37627e.hashCode() * 7) + ((this.f37628i + (this.f37629o * 10)) * 31);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -208,32 +208,32 @@ public final class j implements h {
         if (!qVar2.o(kVar)) {
             return qVar;
         }
-        int b10 = b((BigDecimal) qVar2.p(kVar), ((Integer) qVar.t(this.f37611e)).intValue(), ((Integer) qVar.i(this.f37611e)).intValue());
+        int b10 = b((BigDecimal) qVar2.p(kVar), ((Integer) qVar.t(this.f37627e)).intValue(), ((Integer) qVar.i(this.f37627e)).intValue());
         qVar2.E(kVar, null);
-        qVar2.C(this.f37611e, b10);
-        return qVar.C(this.f37611e, b10);
+        qVar2.C(this.f37627e, b10);
+        return qVar.C(this.f37627e, b10);
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder(64);
         sb2.append(j.class.getName());
         sb2.append("[element=");
-        sb2.append(this.f37611e.name());
+        sb2.append(this.f37627e.name());
         sb2.append(", min-digits=");
-        sb2.append(this.f37612i);
+        sb2.append(this.f37628i);
         sb2.append(", max-digits=");
-        sb2.append(this.f37613o);
+        sb2.append(this.f37629o);
         sb2.append(']');
         return sb2.toString();
     }
 
     private j(h hVar, jt.p pVar, int i10, int i11, boolean z10, char c10, kt.g gVar) {
-        this.f37610d = hVar;
-        this.f37611e = pVar;
-        this.f37612i = i10;
-        this.f37613o = i11;
-        this.f37614p = z10;
-        this.f37615q = c10;
-        this.f37616r = gVar;
+        this.f37626d = hVar;
+        this.f37627e = pVar;
+        this.f37628i = i10;
+        this.f37629o = i11;
+        this.f37630p = z10;
+        this.f37631q = c10;
+        this.f37632r = gVar;
     }
 }

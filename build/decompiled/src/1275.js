@@ -111,7 +111,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = 'getDateTimeFormatter';
         var0.key = var1;
         var1 = function() { // Original name: getDateTimeFormatter, environment: var4
-            _fun13740: for (var _fun13740_ip = 0;;) switch (_fun13740_ip) {
+            _fun13741: for (var _fun13741_ip = 0;;) switch (_fun13741_ip) {
                 case 0:
                     var4 = this;
                     var2 = undefined;
@@ -131,16 +131,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = 0;
                     var5 = var0 < var1;
                     if (!var5) {
-                        _fun13740_ip = 63;
-                        continue _fun13740
+                        _fun13741_ip = 63;
+                        continue _fun13741
                     }
                 case 48:
                     var5 = arguments[var0];
                     var3[var0] = var5;
                     var0 = var0 + 1;
                     if (var0 < var1) {
-                        _fun13740_ip = 48;
-                        continue _fun13740
+                        _fun13741_ip = 48;
+                        continue _fun13741
                     }
                 case 63:
                     var2 = var4._getCached;
@@ -168,7 +168,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'getDurationFormatter';
         var0.key = var5;
         var5 = function() { // Original name: getDurationFormatter, environment: var4
-            _fun13742: for (var _fun13742_ip = 0;;) switch (_fun13742_ip) {
+            _fun13743: for (var _fun13743_ip = 0;;) switch (_fun13743_ip) {
                 case 0:
                     var4 = this;
                     var2 = undefined;
@@ -188,16 +188,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = 0;
                     var5 = var0 < var1;
                     if (!var5) {
-                        _fun13742_ip = 63;
-                        continue _fun13742
+                        _fun13743_ip = 63;
+                        continue _fun13743
                     }
                 case 48:
                     var5 = arguments[var0];
                     var3[var0] = var5;
                     var0 = var0 + 1;
                     if (var0 < var1) {
-                        _fun13742_ip = 48;
-                        continue _fun13742
+                        _fun13743_ip = 48;
+                        continue _fun13743
                     }
                 case 63:
                     var2 = var4._getCached;
@@ -224,7 +224,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'getListFormatter';
         var0.key = var5;
         var5 = function() { // Original name: getListFormatter, environment: var4
-            _fun13744: for (var _fun13744_ip = 0;;) switch (_fun13744_ip) {
+            _fun13745: for (var _fun13745_ip = 0;;) switch (_fun13745_ip) {
                 case 0:
                     var4 = this;
                     var2 = undefined;
@@ -244,16 +244,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = 0;
                     var5 = var0 < var1;
                     if (!var5) {
-                        _fun13744_ip = 63;
-                        continue _fun13744
+                        _fun13745_ip = 63;
+                        continue _fun13745
                     }
                 case 48:
                     var5 = arguments[var0];
                     var3[var0] = var5;
                     var0 = var0 + 1;
                     if (var0 < var1) {
-                        _fun13744_ip = 48;
-                        continue _fun13744
+                        _fun13745_ip = 48;
+                        continue _fun13745
                     }
                 case 63:
                     var2 = var4._getCached;
@@ -280,7 +280,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'getNumberFormatter';
         var0.key = var5;
         var5 = function() { // Original name: getNumberFormatter, environment: var4
-            _fun13746: for (var _fun13746_ip = 0;;) switch (_fun13746_ip) {
+            _fun13747: for (var _fun13747_ip = 0;;) switch (_fun13747_ip) {
                 case 0:
                     var4 = this;
                     var2 = undefined;
@@ -300,16 +300,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = 0;
                     var5 = var0 < var1;
                     if (!var5) {
-                        _fun13746_ip = 63;
-                        continue _fun13746
+                        _fun13747_ip = 63;
+                        continue _fun13747
                     }
                 case 48:
                     var5 = arguments[var0];
                     var3[var0] = var5;
                     var0 = var0 + 1;
                     if (var0 < var1) {
-                        _fun13746_ip = 48;
-                        continue _fun13746
+                        _fun13747_ip = 48;
+                        continue _fun13747
                     }
                 case 63:
                     var2 = var4._getCached;
@@ -336,7 +336,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'getPluralRules';
         var0.key = var5;
         var5 = function() { // Original name: getPluralRules, environment: var4
-            _fun13748: for (var _fun13748_ip = 0;;) switch (_fun13748_ip) {
+            _fun13749: for (var _fun13749_ip = 0;;) switch (_fun13749_ip) {
                 case 0:
                     var4 = this;
                     var2 = undefined;
@@ -356,16 +356,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = 0;
                     var5 = var0 < var1;
                     if (!var5) {
-                        _fun13748_ip = 63;
-                        continue _fun13748
+                        _fun13749_ip = 63;
+                        continue _fun13749
                     }
                 case 48:
                     var5 = arguments[var0];
                     var3[var0] = var5;
                     var0 = var0 + 1;
                     if (var0 < var1) {
-                        _fun13748_ip = 48;
-                        continue _fun13748
+                        _fun13749_ip = 48;
+                        continue _fun13749
                     }
                 case 63:
                     var2 = var4._getCached;
@@ -392,7 +392,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = 'getRelativeTimeFormatter';
         var0.key = var5;
         var5 = function() { // Original name: getRelativeTimeFormatter, environment: var4
-            _fun13750: for (var _fun13750_ip = 0;;) switch (_fun13750_ip) {
+            _fun13751: for (var _fun13751_ip = 0;;) switch (_fun13751_ip) {
                 case 0:
                     var4 = this;
                     var2 = undefined;
@@ -412,16 +412,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = 0;
                     var5 = var0 < var1;
                     if (!var5) {
-                        _fun13750_ip = 63;
-                        continue _fun13750
+                        _fun13751_ip = 63;
+                        continue _fun13751
                     }
                 case 48:
                     var5 = arguments[var0];
                     var3[var0] = var5;
                     var0 = var0 + 1;
                     if (var0 < var1) {
-                        _fun13750_ip = 48;
-                        continue _fun13750
+                        _fun13751_ip = 48;
+                        continue _fun13751
                     }
                 case 63:
                     var2 = var4._getCached;
@@ -448,7 +448,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = '_getCached';
         var0.key = var5;
         var5 = function(arg0, arg1, arg2) { // Original name: _getCached, environment: var4
-            _fun13752: for (var _fun13752_ip = 0;;) switch (_fun13752_ip) {
+            _fun13753: for (var _fun13753_ip = 0;;) switch (_fun13753_ip) {
                 case 0:
                     var4 = arg0;
                     var5 = arg1;
@@ -458,8 +458,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var4.get;
                     var0 = var0.bind(var4)(var3);
                     if (var0) {
-                        _fun13752_ip = 56;
-                        continue _fun13752
+                        _fun13753_ip = 56;
+                        continue _fun13753
                     }
                 case 33:
                     var2 = arg2;
@@ -478,7 +478,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = '_getKey';
         var0.key = var5;
         var4 = function() { // Original name: _getKey, environment: var4
-            _fun13753: for (var _fun13753_ip = 0;;) switch (_fun13753_ip) {
+            _fun13754: for (var _fun13754_ip = 0;;) switch (_fun13754_ip) {
                 case 0:
                     var4 = undefined;
                     var3 = arguments.length;
@@ -497,16 +497,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = 0;
                     var5 = var1 < var3;
                     if (!var5) {
-                        _fun13753_ip = 60;
-                        continue _fun13753
+                        _fun13754_ip = 60;
+                        continue _fun13754
                     }
                 case 45:
                     var5 = arguments[var1];
                     var2[var1] = var5;
                     var1 = var1 + 1;
                     if (var1 < var3) {
-                        _fun13753_ip = 45;
-                        continue _fun13753
+                        _fun13754_ip = 45;
+                        continue _fun13754
                     }
                 case 60:
                     var1 = var0.JSON;

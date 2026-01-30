@@ -1,32 +1,55 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var3 = global;
-    var6 = var3.Object;
-    var5 = var6.defineProperty;
-    var4 = {};
-    var2 = true;
-    var4.value = var2;
-    var2 = '__esModule';
-    var2 = var5.bind(var6)(var1, var2, var4);
-    var2 = function() { // Original name: print, environment: var0
-        var0 = undefined;
-        return var0;
-    };
-    var4 = var3.Object;
-    var3 = var4.freeze;
-    var3 = var3.bind(var4)(var2);
-    var1.print = var2;
-    var0 = function(arg0) { // Original name: enableLogging, environment: var0
-        var0 = global;
-        var2 = var0.console;
-        var1 = var2.warn;
-        var0 = '[BottomSheet] could not enable logging on production!';
-        var0 = var1.bind(var2)(var0);
-        var0 = undefined;
-        return var0;
-    };
-    var1.enableLogging = var0;
+    var4 = require;
+    var2 = exports;
+    var3 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var3;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var5 = {};
+    var0 = true;
+    var5.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var5);
+    var0 = 0;
+    var3 = var3[var0];
     var0 = undefined;
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.useContext;
+    var _closure1_slot2 = var3;
+    var1 = function(arg0) { // Original name: useBottomSheetModalInternal, environment: var1
+        _fun44585: for (var _fun44585_ip = 0;;) switch (_fun44585_ip) {
+            case 0:
+                var2 = _closure1_slot2;
+                var3 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var0 = 1;
+                var0 = var1[var0];
+                var1 = undefined;
+                var0 = var3.bind(var1)(var0);
+                var0 = var0.BottomSheetModalInternalContext;
+                var0 = var2.bind(var1)(var0);
+                var2 = true;
+                var1 = arg0;
+                if (!(var2 !== var1)) {
+                    _fun44585_ip = 55;
+                    continue _fun44585
+                }
+            case 49:
+                var1 = null;
+                if (!(var1 !== var0)) {
+                    _fun44585_ip = 57;
+                    continue _fun44585
+                }
+            case 55:
+                return var0;
+            case 57:
+                var0 = "'BottomSheetModalInternalContext' cannot be null!";
+                throw var0;
+        }
+    };
+    var2.useBottomSheetModalInternal = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4906]);

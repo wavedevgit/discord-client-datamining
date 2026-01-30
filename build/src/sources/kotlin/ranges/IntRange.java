@@ -10,10 +10,10 @@ public final class IntRange extends kotlin.ranges.a implements zr.a {
     @NotNull
 
     /* renamed from: p  reason: collision with root package name */
-    public static final a f33374p = new a(null);
+    public static final a f33390p = new a(null);
 
     /* renamed from: q  reason: collision with root package name */
-    private static final IntRange f33375q = new IntRange(1, 0);
+    private static final IntRange f33391q = new IntRange(1, 0);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -22,7 +22,7 @@ public final class IntRange extends kotlin.ranges.a implements zr.a {
         }
 
         public final IntRange a() {
-            return IntRange.f33375q;
+            return IntRange.f33391q;
         }
 
         private a() {

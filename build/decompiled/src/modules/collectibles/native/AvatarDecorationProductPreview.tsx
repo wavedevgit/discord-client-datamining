@@ -75,11 +75,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.profilePreview = var8;
     var8 = {
         'position': 'absolute',
-        'bottom': 0,
+        'bottom': 2,
         'right': 0,
         'borderRadius': null,
         'backgroundColor': null,
-        'borderWidth': 1
+        'borderWidth': 1,
+        'borderColor': null,
+        'width': '70%',
+        'padding': 12
     };
     var11 = var5[var9];
     var11 = var10.bind(var0)(var11);
@@ -96,18 +99,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = var11.colors;
     var11 = var11.BORDER_SUBTLE;
     var8.borderColor = var11;
-    var11 = var5[var9];
-    var11 = var10.bind(var0)(var11);
-    var11 = var11.shadows;
-    var14 = var11.SHADOW_HIGH;
-    var15 = var8;
-    var11 = copyDataProperties(var15, var14);
-    var12 = '70%';
-    var11 = 'width';
-    var8[var11] = var12;
-    var12 = 12;
-    var11 = 'padding';
-    var8[var11] = var12;
     var3.chat = var8;
     var8 = {
         'flexDirection': 'row',
@@ -163,7 +154,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/collectibles/native/AvatarDecorationProductPreview.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Original name: _default, environment: var1
-        _fun87563: for (var _fun87563_ip = 0;;) switch (_fun87563_ip) {
+        _fun87799: for (var _fun87799_ip = 0;;) switch (_fun87799_ip) {
             case 0:
                 var0 = _closure1_slot7;
                 var3 = undefined;
@@ -199,8 +190,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var11 == var8;
                 var0 = undefined;
                 if (var4) {
-                    _fun87563_ip = 133;
-                    continue _fun87563
+                    _fun87799_ip = 133;
+                    continue _fun87799
                 }
             case 127:
                 var0 = var8.skuId;
@@ -246,13 +237,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot5;
                 var1 = _closure1_slot3;
                 if (!var0) {
-                    _fun87563_ip = 229;
-                    continue _fun87563
+                    _fun87799_ip = 229;
+                    continue _fun87799
                 }
             case 222:
                 if (!(var11 == var8)) {
-                    _fun87563_ip = 981;
-                    continue _fun87563
+                    _fun87799_ip = 981;
+                    continue _fun87799
                 }
             case 229:
                 var0 = {};
@@ -275,8 +266,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = var11 == var13;
                 var14 = undefined;
                 if (var16) {
-                    _fun87563_ip = 317;
-                    continue _fun87563
+                    _fun87799_ip = 317;
+                    continue _fun87799
                 }
             case 312:
                 var14 = var13.name;
@@ -439,8 +430,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.children = var9;
                 var4 = var7.bind(var3)(var6, var4);
                 var0.children = var4;
-                _fun87563_ip = 1181;
-                continue _fun87563;
+                _fun87799_ip = 1181;
+                continue _fun87799;
             case 981:
                 var4 = {};
                 var5 = var5.fullSizePreview;
@@ -462,8 +453,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var11 == var13;
                 var11 = undefined;
                 if (var14) {
-                    _fun87563_ip = 1070;
-                    continue _fun87563
+                    _fun87799_ip = 1070;
+                    continue _fun87799
                 }
             case 1065:
                 var11 = var13.name;
@@ -501,4 +492,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 5540, 33, 1297, 671, 9437, 566, 5535, 11269, 4884, 3091, 1234, 5409, 6917, 5692, 11270, 3895, 10805, 4039, 7637, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 5544, 33, 1297, 671, 9442, 566, 5539, 11291, 4890, 3091, 1234, 5413, 6920, 5695, 11292, 3901, 10811, 4045, 7640, 2]);

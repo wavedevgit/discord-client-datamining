@@ -12,10 +12,10 @@ public enum h {
     
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f44336e = new a(null);
+    public static final a f44352e = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f44343d;
+    private final String f44359d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -59,10 +59,10 @@ public enum h {
     }
 
     h(String str) {
-        this.f44343d = str;
+        this.f44359d = str;
     }
 
     public final String d() {
-        return this.f44343d;
+        return this.f44359d;
     }
 }

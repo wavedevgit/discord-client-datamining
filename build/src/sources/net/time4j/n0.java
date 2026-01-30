@@ -8,11 +8,11 @@ public enum n0 implements jt.n, jt.v {
     
 
     /* renamed from: p  reason: collision with root package name */
-    private static final n0[] f40770p = values();
+    private static final n0[] f40786p = values();
 
     public static n0 f(int i10) {
         if (i10 >= 1 && i10 <= 4) {
-            return f40770p[i10 - 1];
+            return f40786p[i10 - 1];
         }
         throw new IllegalArgumentException("Out of range: " + i10);
     }

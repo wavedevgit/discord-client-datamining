@@ -91,7 +91,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.almostXYears = var4;
     var _closure1_slot0 = var3;
     var2 = function(arg0, arg1, arg2) { // Original name: formatDistance, environment: var2
-        _fun21900: for (var _fun21900_ip = 0;;) switch (_fun21900_ip) {
+        _fun21901: for (var _fun21901_ip = 0;;) switch (_fun21901_ip) {
             case 0:
                 var7 = arg1;
                 var1 = arg2;
@@ -102,14 +102,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = typeof var2;
                 var3 = var2;
                 if (!(var4 !== var0)) {
-                    _fun21900_ip = 90;
-                    continue _fun21900
+                    _fun21901_ip = 90;
+                    continue _fun21901
                 }
             case 34:
                 var0 = 1;
                 if (!(var0 !== var7)) {
-                    _fun21900_ip = 81;
-                    continue _fun21900
+                    _fun21901_ip = 81;
+                    continue _fun21901
                 }
             case 41:
                 var6 = var2.other;
@@ -120,8 +120,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var4.bind(var0)(var7);
                 var0 = '{{count}}';
                 var0 = var5.bind(var6)(var0, var4);
-                _fun21900_ip = 87;
-                continue _fun21900;
+                _fun21901_ip = 87;
+                continue _fun21901;
             case 81:
                 var0 = var2.one;
             case 87:
@@ -130,34 +130,34 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = null;
                 var0 = var3;
                 if (!(var2 != var1)) {
-                    _fun21900_ip = 157;
-                    continue _fun21900
+                    _fun21901_ip = 157;
+                    continue _fun21901
                 }
             case 99:
                 var2 = var1.addSuffix;
                 var0 = var3;
                 if (!var2) {
-                    _fun21900_ip = 157;
-                    continue _fun21900
+                    _fun21901_ip = 157;
+                    continue _fun21901
                 }
             case 111:
                 var2 = var1.comparison;
                 if (!var2) {
-                    _fun21900_ip = 132;
-                    continue _fun21900
+                    _fun21901_ip = 132;
+                    continue _fun21901
                 }
             case 120:
                 var2 = var1.comparison;
                 var1 = 0;
                 if (!(!(var2 > var1))) {
-                    _fun21900_ip = 144;
-                    continue _fun21900
+                    _fun21901_ip = 144;
+                    continue _fun21901
                 }
             case 132:
                 var1 = 'il y a ';
                 var1 = var1 + var3;
-                _fun21900_ip = 154;
-                continue _fun21900;
+                _fun21901_ip = 154;
+                continue _fun21901;
             case 144:
                 var2 = 'dans ';
                 var1 = var2 + var3;

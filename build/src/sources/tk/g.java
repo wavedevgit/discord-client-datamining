@@ -5,25 +5,25 @@ import java.util.Formatter;
 class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f49631a;
+    private final c f49647a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final d[] f49632b;
+    private final d[] f49648b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g(c cVar) {
-        this.f49631a = new c(cVar);
-        this.f49632b = new d[(cVar.e() - cVar.g()) + 1];
+        this.f49647a = new c(cVar);
+        this.f49648b = new d[(cVar.e() - cVar.g()) + 1];
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final c a() {
-        return this.f49631a;
+        return this.f49647a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final d b(int i10) {
-        return this.f49632b[e(i10)];
+        return this.f49648b[e(i10)];
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -36,11 +36,11 @@ class g {
         }
         for (int i11 = 1; i11 < 5; i11++) {
             int e10 = e(i10) - i11;
-            if (e10 >= 0 && (dVar2 = this.f49632b[e10]) != null) {
+            if (e10 >= 0 && (dVar2 = this.f49648b[e10]) != null) {
                 return dVar2;
             }
             int e11 = e(i10) + i11;
-            d[] dVarArr = this.f49632b;
+            d[] dVarArr = this.f49648b;
             if (e11 < dVarArr.length && (dVar = dVarArr[e11]) != null) {
                 return dVar;
             }
@@ -50,17 +50,17 @@ class g {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final d[] d() {
-        return this.f49632b;
+        return this.f49648b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final int e(int i10) {
-        return i10 - this.f49631a.g();
+        return i10 - this.f49647a.g();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final void f(int i10, d dVar) {
-        this.f49632b[e(i10)] = dVar;
+        this.f49648b[e(i10)] = dVar;
     }
 
     public String toString() {
@@ -68,7 +68,7 @@ class g {
         Formatter formatter = new Formatter();
         try {
             int i10 = 0;
-            for (d dVar : this.f49632b) {
+            for (d dVar : this.f49648b) {
                 if (dVar == null) {
                     formatter.format("%3d:    |   %n", Integer.valueOf(i10));
                     i10++;

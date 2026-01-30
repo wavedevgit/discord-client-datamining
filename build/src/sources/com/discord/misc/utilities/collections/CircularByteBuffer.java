@@ -241,7 +241,7 @@ public final class CircularByteBuffer {
             byte[] bytes = line.getBytes(CHARSET);
             Intrinsics.checkNotNullExpressionValue(bytes, "getBytes(...)");
             addLineBytes(bytes);
-            Unit unit = Unit.f33282a;
+            Unit unit = Unit.f33298a;
         }
     }
 
@@ -255,7 +255,7 @@ public final class CircularByteBuffer {
                     sb2.append(readLine(((Number) pair.a()).intValue(), ((Number) pair.b()).intValue()));
                     sb2.append('\n');
                 }
-                Unit unit = Unit.f33282a;
+                Unit unit = Unit.f33298a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -269,7 +269,7 @@ public final class CircularByteBuffer {
             this.size = 0;
             this.isEmpty = true;
             this.lines.clear();
-            Unit unit = Unit.f33282a;
+            Unit unit = Unit.f33298a;
         }
     }
 

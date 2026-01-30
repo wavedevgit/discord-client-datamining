@@ -177,7 +177,7 @@ public class a extends g implements Drawable.Callback, j.b {
         setState(iArr);
         l2(iArr);
         this.R0 = true;
-        if (b.f39065a) {
+        if (b.f39081a) {
             V0.setTint(-1);
         }
     }
@@ -199,7 +199,7 @@ public class a extends g implements Drawable.Callback, j.b {
             float f11 = rectF.top;
             canvas.translate(f10, f11);
             this.Y.setBounds(0, 0, (int) this.f15872v0.width(), (int) this.f15872v0.height());
-            if (b.f39065a) {
+            if (b.f39081a) {
                 this.Z.setBounds(this.Y.getBounds());
                 this.Z.jumpToCurrentState();
                 this.Z.draw(canvas);
@@ -532,8 +532,8 @@ public class a extends g implements Drawable.Callback, j.b {
     }
 
     private void u1(AttributeSet attributeSet, int i10, int i11) {
-        TypedArray i12 = l.i(this.f15868r0, attributeSet, k.f54744x0, i10, i11, new int[0]);
-        this.T0 = i12.hasValue(k.f54606i1);
+        TypedArray i12 = l.i(this.f15868r0, attributeSet, k.f54760x0, i10, i11, new int[0]);
+        this.T0 = i12.hasValue(k.f54622i1);
         b2(lh.c.a(this.f15868r0, i12, k.V0));
         F1(lh.c.a(this.f15868r0, i12, k.I0));
         T1(i12.getDimension(k.Q0, 0.0f));
@@ -542,10 +542,10 @@ public class a extends g implements Drawable.Callback, j.b {
         }
         X1(lh.c.a(this.f15868r0, i12, k.T0));
         Z1(i12.getDimension(k.U0, 0.0f));
-        y2(lh.c.a(this.f15868r0, i12, k.f54596h1));
+        y2(lh.c.a(this.f15868r0, i12, k.f54612h1));
         D2(i12.getText(k.C0));
-        d f10 = lh.c.f(this.f15868r0, i12, k.f54753y0);
-        f10.l(i12.getDimension(k.f54762z0, f10.j()));
+        d f10 = lh.c.f(this.f15868r0, i12, k.f54769y0);
+        f10.l(i12.getDimension(k.f54778z0, f10.j()));
         E2(f10);
         int i13 = i12.getInt(k.A0, 0);
         if (i13 != 1) {
@@ -568,12 +568,12 @@ public class a extends g implements Drawable.Callback, j.b {
             P1(lh.c.a(this.f15868r0, i12, k.O0));
         }
         N1(i12.getDimension(k.N0, -1.0f));
-        o2(i12.getBoolean(k.f54546c1, false));
+        o2(i12.getBoolean(k.f54562c1, false));
         if (attributeSet != null && attributeSet.getAttributeValue("http://schemas.android.com/apk/res-auto", "closeIconEnabled") != null && attributeSet.getAttributeValue("http://schemas.android.com/apk/res-auto", "closeIconVisible") == null) {
             o2(i12.getBoolean(k.X0, false));
         }
         c2(lh.c.d(this.f15868r0, i12, k.W0));
-        m2(lh.c.a(this.f15868r0, i12, k.f54536b1));
+        m2(lh.c.a(this.f15868r0, i12, k.f54552b1));
         h2(i12.getDimension(k.Z0, 0.0f));
         x1(i12.getBoolean(k.D0, false));
         E1(i12.getBoolean(k.H0, false));
@@ -584,14 +584,14 @@ public class a extends g implements Drawable.Callback, j.b {
         if (i12.hasValue(k.G0)) {
             B1(lh.c.a(this.f15868r0, i12, k.G0));
         }
-        B2(zg.g.b(this.f15868r0, i12, k.f54616j1));
-        r2(zg.g.b(this.f15868r0, i12, k.f54566e1));
+        B2(zg.g.b(this.f15868r0, i12, k.f54632j1));
+        r2(zg.g.b(this.f15868r0, i12, k.f54582e1));
         V1(i12.getDimension(k.S0, 0.0f));
-        v2(i12.getDimension(k.f54586g1, 0.0f));
-        t2(i12.getDimension(k.f54576f1, 0.0f));
-        J2(i12.getDimension(k.f54636l1, 0.0f));
-        G2(i12.getDimension(k.f54626k1, 0.0f));
-        j2(i12.getDimension(k.f54526a1, 0.0f));
+        v2(i12.getDimension(k.f54602g1, 0.0f));
+        t2(i12.getDimension(k.f54592f1, 0.0f));
+        J2(i12.getDimension(k.f54652l1, 0.0f));
+        G2(i12.getDimension(k.f54642k1, 0.0f));
+        j2(i12.getDimension(k.f54542a1, 0.0f));
         e2(i12.getDimension(k.Y0, 0.0f));
         J1(i12.getDimension(k.K0, 0.0f));
         x2(i12.getDimensionPixelSize(k.B0, Integer.MAX_VALUE));
@@ -740,7 +740,7 @@ public class a extends g implements Drawable.Callback, j.b {
             System.arraycopy(iArr2, 0, iArr3, iArr.length, iArr2.length);
             z14 |= this.Y.setState(iArr3);
         }
-        if (b.f39065a && s1(this.Z)) {
+        if (b.f39081a && s1(this.Z)) {
             z14 |= this.Z.setState(iArr2);
         }
         if (z14) {
@@ -1190,7 +1190,7 @@ public class a extends g implements Drawable.Callback, j.b {
                 drawable2 = null;
             }
             this.Y = drawable2;
-            if (b.f39065a) {
+            if (b.f39081a) {
                 S2();
             }
             float q03 = q0();

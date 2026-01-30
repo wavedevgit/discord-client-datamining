@@ -1,127 +1,52 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = metroImportAll;
-    var2 = exports;
-    var5 = dependencyMap;
-    var0 = require;
-    var _closure1_slot0 = var0;
-    var _closure1_slot1 = var4;
-    var _closure1_slot2 = var5;
-    var6 = global;
-    var8 = var6.Object;
-    var7 = var8.defineProperty;
-    var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var7.bind(var8)(var2, var0, var3);
-    var10 = var6.Object;
-    var9 = var10.assign;
-    var3 = 0;
-    var7 = var5[var3];
-    var0 = undefined;
-    var7 = var4.bind(var0)(var7);
-    var8 = var7.default;
-    var7 = {};
-    var7 = var9.bind(var10)(var7, var8);
-    var _closure1_slot3 = var7;
-    var7 = var6.Object;
-    var6 = var7.assign;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var5 = var3.default;
-    var4 = {};
-    var3 = function(arg0, arg1) { // Original name: setColor, environment: var1
-        var2 = _closure1_slot0;
-        var1 = _closure1_slot2;
-        var0 = 1;
-        var1 = var1[var0];
-        var0 = undefined;
-        var1 = var2.bind(var0)(var1);
-        var4 = var1.default;
-        var3 = var4.setColor;
-        var2 = arg0;
-        var1 = arg1;
-        var1 = var3.bind(var4)(var2, var1);
-        return var0;
-    };
-    var4.setColor = var3;
-    var3 = function(arg0) { // Original name: setTranslucent, environment: var1
-        var2 = _closure1_slot0;
-        var1 = _closure1_slot2;
-        var0 = 1;
-        var1 = var1[var0];
-        var0 = undefined;
-        var1 = var2.bind(var0)(var1);
-        var3 = var1.default;
-        var2 = var3.setTranslucent;
-        var1 = arg0;
-        var1 = var2.bind(var3)(var1);
-        return var0;
-    };
-    var4.setTranslucent = var3;
-    var3 = function(arg0) { // Original name: setStyle, environment: var1
-        var2 = _closure1_slot0;
-        var1 = _closure1_slot2;
-        var0 = 1;
-        var1 = var1[var0];
-        var0 = undefined;
-        var1 = var2.bind(var0)(var1);
-        var3 = var1.default;
-        var2 = var3.setStyle;
-        var1 = arg0;
-        var1 = var2.bind(var3)(var1);
-        return var0;
-    };
-    var4.setStyle = var3;
-    var3 = function(arg0) { // Original name: setHidden, environment: var1
-        var2 = _closure1_slot0;
-        var1 = _closure1_slot2;
-        var0 = 1;
-        var1 = var1[var0];
-        var0 = undefined;
-        var1 = var2.bind(var0)(var1);
-        var3 = var1.default;
-        var2 = var3.setHidden;
-        var1 = arg0;
-        var1 = var2.bind(var3)(var1);
-        return var0;
-    };
-    var4.setHidden = var3;
-    var3 = {};
-    var3 = var6.bind(var7)(var3, var5, var4);
-    var _closure1_slot4 = var3;
-    var3 = function() { // Original name: applyMonkeyPatch, environment: var1
-        var0 = global;
-        var4 = var0.Object;
-        var3 = var4.assign;
-        var5 = _closure1_slot1;
-        var2 = _closure1_slot2;
-        var0 = 0;
-        var2 = var2[var0];
-        var0 = undefined;
-        var2 = var5.bind(var0)(var2);
-        var2 = var2.default;
-        var1 = _closure1_slot4;
-        var1 = var3.bind(var4)(var2, var1);
-        return var0;
-    };
-    var2.applyMonkeyPatch = var3;
-    var1 = function() { // Original name: revertMonkeyPatch, environment: var1
-        var0 = global;
-        var4 = var0.Object;
-        var3 = var4.assign;
-        var5 = _closure1_slot1;
-        var2 = _closure1_slot2;
-        var0 = 0;
-        var2 = var2[var0];
-        var0 = undefined;
-        var2 = var5.bind(var0)(var2);
-        var2 = var2.default;
-        var1 = _closure1_slot3;
-        var1 = var3.bind(var4)(var2, var1);
-        return var0;
-    };
-    var2.revertMonkeyPatch = var1;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [296, 8485]);
+    _fun68248: for (var _fun68248_ip = 0;;) switch (_fun68248_ip) {
+        case 0:
+            var10 = exports;
+            var5 = require;
+            var1 = var10;
+            var4 = dependencyMap;
+            var0 = undefined;
+            var2 = undefined;
+            var3 = global;
+            var9 = var3.Object;
+            var8 = var9.defineProperty;
+            var7 = {};
+            var6 = true;
+            var7.value = var6;
+            var6 = '__esModule';
+            var6 = var8.bind(var9)(var10, var6, var7);
+            var2 = null;
+        case 50: // try_start_0
+            var7 = var5;
+            var8 = var4;
+            var6 = 0;
+            var6 = var8[var6];
+            var2 = var7.bind(var0)(var6);
+        case 67: // try_end0
+            _fun68248_ip = 112;
+            continue _fun68248;
+        case 69: // catch_target0
+            CatchBlockStart(arg_register = 6);
+        case 71: // try_start_1
+            var6 = var4;
+            var4 = 1;
+            var4 = var6[var4];
+            var2 = var5.bind(var0)(var4);
+        case 86: // try_end1
+            _fun68248_ip = 112;
+            continue _fun68248;
+        case 88: // catch_target1
+            CatchBlockStart(arg_register = 4);
+            var5 = var3.console;
+            var4 = var5.warn;
+            var3 = 'Failed to load REACore from both paths';
+            var3 = var4.bind(var5)(var3);
+        case 112:
+            var3 = var2.registerEventHandler;
+            var2 = var2.unregisterEventHandler;
+            var1.registerEventHandler = var3;
+            var1.unregisterEventHandler = var2;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3724, null]);

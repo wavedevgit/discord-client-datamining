@@ -1,31 +1,117 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = require;
-    var6 = dependencyMap;
-    var4 = 0;
-    var1 = var6[var4];
+    var0 = require;
+    var _closure1_slot0 = var0;
+    var0 = dependencyMap;
+    var _closure1_slot1 = var0;
+    var2 = {};
+    var4 = function() { // Original name: get ColorPropType, environment: var1
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 0;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        return var0;
+    };
     var0 = undefined;
-    var3 = var5.bind(var0)(var1);
-    var2 = var3.shape;
-    var1 = {};
-    var7 = var6[var4];
-    var7 = var5.bind(var0)(var7);
-    var7 = var7.number;
-    var1.top = var7;
-    var7 = var6[var4];
-    var7 = var5.bind(var0)(var7);
-    var7 = var7.number;
-    var1.left = var7;
-    var7 = var6[var4];
-    var7 = var5.bind(var0)(var7);
-    var7 = var7.number;
-    var1.bottom = var7;
-    var4 = var6[var4];
-    var4 = var5.bind(var0)(var4);
-    var4 = var4.number;
-    var1.right = var4;
-    var2 = var2.bind(var3)(var1);
-    var1 = module;
+    var3 = 'ColorPropType';
+    Object.defineProperty(var2, var3, {
+        get: var4,
+        set: var0,
+        enumerable: true
+    });
+    var4 = function() { // Original name: get EdgeInsetsPropType, environment: var1
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 1;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        return var0;
+    };
+    var3 = 'EdgeInsetsPropType';
+    Object.defineProperty(var2, var3, {
+        get: var4,
+        set: var0,
+        enumerable: true
+    });
+    var4 = function() { // Original name: get ImagePropTypes, environment: var1
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 2;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        return var0;
+    };
+    var3 = 'ImagePropTypes';
+    Object.defineProperty(var2, var3, {
+        get: var4,
+        set: var0,
+        enumerable: true
+    });
+    var4 = function() { // Original name: get PointPropType, environment: var1
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 3;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        return var0;
+    };
+    var3 = 'PointPropType';
+    Object.defineProperty(var2, var3, {
+        get: var4,
+        set: var0,
+        enumerable: true
+    });
+    var4 = function() { // Original name: get TextInputPropTypes, environment: var1
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 4;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        return var0;
+    };
+    var3 = 'TextInputPropTypes';
+    Object.defineProperty(var2, var3, {
+        get: var4,
+        set: var0,
+        enumerable: true
+    });
+    var4 = function() { // Original name: get TextPropTypes, environment: var1
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 5;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        return var0;
+    };
+    var3 = 'TextPropTypes';
+    Object.defineProperty(var2, var3, {
+        get: var4,
+        set: var0,
+        enumerable: true
+    });
+    var3 = function() { // Original name: get ViewPropTypes, environment: var1
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 6;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        return var0;
+    };
+    var1 = 'ViewPropTypes';
+    Object.defineProperty(var2, var1, {
+        get: var3,
+        set: var0,
+        enumerable: true
+    });
+    var1 = arg4;
     var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3179]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7667, 7669, 7670, 7680, 7681, 7682, 7671]);

@@ -80,7 +80,7 @@ public final class Kotlin {
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class FunctionNode<RC> extends Node.Parent<RC> {
         public static final Companion Companion = new Companion(null);
-        private static final Pattern PATTERN_KOTLIN_FUNC = new Regex("^(fun)( *<.*>)?( \\w+)( *\\(.*?\\))", m.f36270s).l();
+        private static final Pattern PATTERN_KOTLIN_FUNC = new Regex("^(fun)( *<.*>)?( \\w+)( *\\(.*?\\))", m.f36286s).l();
 
         @Metadata(bv = {1, 0, 3}, d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J8\u0010\u0005\u001a\u001a\u0012\u0004\u0012\u0002H\u0007\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u00070\b\u0012\u0004\u0012\u0002H\t0\u0006\"\u0004\b\u0001\u0010\u0007\"\u0004\b\u0002\u0010\t2\f\u0010\n\u001a\b\u0012\u0004\u0012\u0002H\u00070\u000bR\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\f"}, d2 = {"Lcom/discord/simpleast/code/Kotlin$FunctionNode$Companion;", "", "()V", "PATTERN_KOTLIN_FUNC", "Ljava/util/regex/Pattern;", "createFunctionRule", "Lcom/discord/simpleast/core/parser/Rule;", "RC", "Lcom/discord/simpleast/core/node/Node;", "S", "codeStyleProviders", "Lcom/discord/simpleast/code/CodeStyleProviders;", "simpleast-core_release"}, k = 1, mv = {1, 4, 0})
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */

@@ -3,14 +3,14 @@ package ig;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final com.google.android.gms.common.d f28506a;
+    public static final com.google.android.gms.common.d f28522a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final com.google.android.gms.common.d[] f28507b;
+    public static final com.google.android.gms.common.d[] f28523b;
 
     static {
         com.google.android.gms.common.d dVar = new com.google.android.gms.common.d("MEDIA_PERFORMANCE_CLASS", 1L);
-        f28506a = dVar;
-        f28507b = new com.google.android.gms.common.d[]{dVar};
+        f28522a = dVar;
+        f28523b = new com.google.android.gms.common.d[]{dVar};
     }
 }

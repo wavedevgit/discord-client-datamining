@@ -3,12 +3,12 @@ package th;
 public final class q implements t {
 
     /* renamed from: a  reason: collision with root package name */
-    private t f49570a;
+    private t f49586a;
 
     public static void b(t tVar, t tVar2) {
         q qVar = (q) tVar;
-        if (qVar.f49570a == null) {
-            qVar.f49570a = tVar2;
+        if (qVar.f49586a == null) {
+            qVar.f49586a = tVar2;
             return;
         }
         throw new IllegalStateException();
@@ -16,7 +16,7 @@ public final class q implements t {
 
     @Override // th.w
     public final Object a() {
-        t tVar = this.f49570a;
+        t tVar = this.f49586a;
         if (tVar != null) {
             return tVar.a();
         }

@@ -299,7 +299,7 @@ public final class ForegroundServiceManager {
                 return handleCreateOrUpdateService$lambda$6$lambda$5;
             }
         });
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -309,7 +309,7 @@ public final class ForegroundServiceManager {
         ForegroundServiceManager foregroundServiceManager = INSTANCE;
         log.w$foreground_service_release("Unable to start service", foregroundServiceManager.telemetryData(ViewProps.START, "start_failed", "create_or_update", type, Boolean.valueOf(result.getAllowed()), result.getReason()), e10);
         foregroundServiceManager.onCreateOrUpdateServiceFailed();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -318,7 +318,7 @@ public final class ForegroundServiceManager {
         ForegroundServiceManager foregroundServiceManager = INSTANCE;
         Log.w$foreground_service_release$default(log, "Couldn't start ForegroundService", foregroundServiceManager.telemetryData(ViewProps.START, "permission_rejected", "create_or_update", type, Boolean.valueOf(result.getAllowed()), result.getReason()), null, 4, null);
         foregroundServiceManager.onCreateOrUpdateServiceFailed();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private final void handleDestroyService(ForegroundServiceOperation.Destroy destroy) {
@@ -417,7 +417,7 @@ public final class ForegroundServiceManager {
             return null;
         }
         genericAction.onNotificationAction(context, false);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     public final synchronized boolean isRunning$foreground_service_release() {

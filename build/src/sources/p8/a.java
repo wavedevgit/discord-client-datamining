@@ -3,11 +3,11 @@ package p8;
 public abstract class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private static c f44982a = b.a();
+    private static c f44998a = b.a();
 
     public static void A(Class cls, String str, Object obj, Object obj2) {
-        if (f44982a.isLoggable(2)) {
-            f44982a.v(r(cls), q(str, obj, obj2));
+        if (f44998a.isLoggable(2)) {
+            f44998a.v(r(cls), q(str, obj, obj2));
         }
     }
 
@@ -18,38 +18,38 @@ public abstract class a {
     }
 
     public static void C(Class cls, String str, Object obj, Object obj2, Object obj3, Object obj4) {
-        if (f44982a.isLoggable(2)) {
-            f44982a.v(r(cls), q(str, obj, obj2, obj3, obj4));
+        if (f44998a.isLoggable(2)) {
+            f44998a.v(r(cls), q(str, obj, obj2, obj3, obj4));
         }
     }
 
     public static void D(Class cls, String str, Object... objArr) {
-        if (f44982a.isLoggable(2)) {
-            f44982a.v(r(cls), q(str, objArr));
+        if (f44998a.isLoggable(2)) {
+            f44998a.v(r(cls), q(str, objArr));
         }
     }
 
     public static void E(String str, String str2, Object... objArr) {
-        if (f44982a.isLoggable(2)) {
-            f44982a.v(str, q(str2, objArr));
+        if (f44998a.isLoggable(2)) {
+            f44998a.v(str, q(str2, objArr));
         }
     }
 
     public static void F(Class cls, String str) {
-        if (f44982a.isLoggable(5)) {
-            f44982a.w(r(cls), str);
+        if (f44998a.isLoggable(5)) {
+            f44998a.w(r(cls), str);
         }
     }
 
     public static void G(Class cls, String str, Throwable th2) {
-        if (f44982a.isLoggable(5)) {
-            f44982a.w(r(cls), str, th2);
+        if (f44998a.isLoggable(5)) {
+            f44998a.w(r(cls), str, th2);
         }
     }
 
     public static void H(Class cls, String str, Object... objArr) {
-        if (f44982a.isLoggable(5)) {
-            f44982a.w(r(cls), q(str, objArr));
+        if (f44998a.isLoggable(5)) {
+            f44998a.w(r(cls), q(str, objArr));
         }
     }
 
@@ -60,134 +60,134 @@ public abstract class a {
     }
 
     public static void J(String str, String str2) {
-        if (f44982a.isLoggable(5)) {
-            f44982a.w(str, str2);
+        if (f44998a.isLoggable(5)) {
+            f44998a.w(str, str2);
         }
     }
 
     public static void K(String str, String str2, Throwable th2) {
-        if (f44982a.isLoggable(5)) {
-            f44982a.w(str, str2, th2);
+        if (f44998a.isLoggable(5)) {
+            f44998a.w(str, str2, th2);
         }
     }
 
     public static void L(String str, String str2, Object... objArr) {
-        if (f44982a.isLoggable(5)) {
-            f44982a.w(str, q(str2, objArr));
+        if (f44998a.isLoggable(5)) {
+            f44998a.w(str, q(str2, objArr));
         }
     }
 
     public static void M(String str, Throwable th2, String str2, Object... objArr) {
-        if (f44982a.isLoggable(5)) {
-            f44982a.w(str, q(str2, objArr), th2);
+        if (f44998a.isLoggable(5)) {
+            f44998a.w(str, q(str2, objArr), th2);
         }
     }
 
     public static void N(Class cls, String str, Throwable th2) {
-        if (f44982a.isLoggable(6)) {
-            f44982a.wtf(r(cls), str, th2);
+        if (f44998a.isLoggable(6)) {
+            f44998a.wtf(r(cls), str, th2);
         }
     }
 
     public static void O(String str, String str2, Object... objArr) {
-        if (f44982a.isLoggable(6)) {
-            f44982a.wtf(str, q(str2, objArr));
+        if (f44998a.isLoggable(6)) {
+            f44998a.wtf(str, q(str2, objArr));
         }
     }
 
     public static void a(Class cls, String str, Object obj) {
-        if (f44982a.isLoggable(3)) {
-            f44982a.d(r(cls), q(str, obj));
+        if (f44998a.isLoggable(3)) {
+            f44998a.d(r(cls), q(str, obj));
         }
     }
 
     public static void b(String str, String str2) {
-        if (f44982a.isLoggable(3)) {
-            f44982a.d(str, str2);
+        if (f44998a.isLoggable(3)) {
+            f44998a.d(str, str2);
         }
     }
 
     public static void c(String str, String str2, Object obj) {
-        if (f44982a.isLoggable(3)) {
-            f44982a.d(str, q(str2, obj));
+        if (f44998a.isLoggable(3)) {
+            f44998a.d(str, q(str2, obj));
         }
     }
 
     public static void d(String str, String str2, Object obj, Object obj2) {
-        if (f44982a.isLoggable(3)) {
-            f44982a.d(str, q(str2, obj, obj2));
+        if (f44998a.isLoggable(3)) {
+            f44998a.d(str, q(str2, obj, obj2));
         }
     }
 
     public static void e(String str, String str2, Object obj, Object obj2, Object obj3) {
-        if (f44982a.isLoggable(3)) {
-            f44982a.d(str, q(str2, obj, obj2, obj3));
+        if (f44998a.isLoggable(3)) {
+            f44998a.d(str, q(str2, obj, obj2, obj3));
         }
     }
 
     public static void f(String str, String str2, Object obj, Object obj2, Object obj3, Object obj4) {
-        if (f44982a.isLoggable(3)) {
-            f44982a.d(str, q(str2, obj, obj2, obj3, obj4));
+        if (f44998a.isLoggable(3)) {
+            f44998a.d(str, q(str2, obj, obj2, obj3, obj4));
         }
     }
 
     public static void g(String str, String str2, Throwable th2) {
-        if (f44982a.isLoggable(3)) {
-            f44982a.d(str, str2, th2);
+        if (f44998a.isLoggable(3)) {
+            f44998a.d(str, str2, th2);
         }
     }
 
     public static void h(String str, String str2, Object... objArr) {
-        if (f44982a.isLoggable(3)) {
+        if (f44998a.isLoggable(3)) {
             b(str, q(str2, objArr));
         }
     }
 
     public static void i(Class cls, String str) {
-        if (f44982a.isLoggable(6)) {
-            f44982a.e(r(cls), str);
+        if (f44998a.isLoggable(6)) {
+            f44998a.e(r(cls), str);
         }
     }
 
     public static void j(Class cls, String str, Throwable th2) {
-        if (f44982a.isLoggable(6)) {
-            f44982a.e(r(cls), str, th2);
+        if (f44998a.isLoggable(6)) {
+            f44998a.e(r(cls), str, th2);
         }
     }
 
     public static void k(Class cls, String str, Object... objArr) {
-        if (f44982a.isLoggable(6)) {
-            f44982a.e(r(cls), q(str, objArr));
+        if (f44998a.isLoggable(6)) {
+            f44998a.e(r(cls), q(str, objArr));
         }
     }
 
     public static void l(Class cls, Throwable th2, String str, Object... objArr) {
-        if (f44982a.isLoggable(6)) {
-            f44982a.e(r(cls), q(str, objArr), th2);
+        if (f44998a.isLoggable(6)) {
+            f44998a.e(r(cls), q(str, objArr), th2);
         }
     }
 
     public static void m(String str, String str2) {
-        if (f44982a.isLoggable(6)) {
-            f44982a.e(str, str2);
+        if (f44998a.isLoggable(6)) {
+            f44998a.e(str, str2);
         }
     }
 
     public static void n(String str, String str2, Throwable th2) {
-        if (f44982a.isLoggable(6)) {
-            f44982a.e(str, str2, th2);
+        if (f44998a.isLoggable(6)) {
+            f44998a.e(str, str2, th2);
         }
     }
 
     public static void o(String str, String str2, Object... objArr) {
-        if (f44982a.isLoggable(6)) {
-            f44982a.e(str, q(str2, objArr));
+        if (f44998a.isLoggable(6)) {
+            f44998a.e(str, q(str2, objArr));
         }
     }
 
     public static void p(String str, Throwable th2, String str2, Object... objArr) {
-        if (f44982a.isLoggable(6)) {
-            f44982a.e(str, q(str2, objArr), th2);
+        if (f44998a.isLoggable(6)) {
+            f44998a.e(str, q(str2, objArr), th2);
         }
     }
 
@@ -200,50 +200,50 @@ public abstract class a {
     }
 
     public static void s(String str, String str2) {
-        if (f44982a.isLoggable(4)) {
-            f44982a.i(str, str2);
+        if (f44998a.isLoggable(4)) {
+            f44998a.i(str, str2);
         }
     }
 
     public static void t(String str, String str2, Object obj, Object obj2) {
-        if (f44982a.isLoggable(4)) {
-            f44982a.i(str, q(str2, obj, obj2));
+        if (f44998a.isLoggable(4)) {
+            f44998a.i(str, q(str2, obj, obj2));
         }
     }
 
     public static void u(String str, String str2, Object obj, Object obj2, Object obj3) {
-        if (f44982a.isLoggable(4)) {
-            f44982a.i(str, q(str2, obj, obj2, obj3));
+        if (f44998a.isLoggable(4)) {
+            f44998a.i(str, q(str2, obj, obj2, obj3));
         }
     }
 
     public static void v(String str, String str2, Object... objArr) {
-        if (f44982a.isLoggable(4)) {
-            f44982a.i(str, q(str2, objArr));
+        if (f44998a.isLoggable(4)) {
+            f44998a.i(str, q(str2, objArr));
         }
     }
 
     public static boolean w(int i10) {
-        return f44982a.isLoggable(i10);
+        return f44998a.isLoggable(i10);
     }
 
     public static void x(c cVar) {
         if (cVar != null) {
-            f44982a = cVar;
+            f44998a = cVar;
             return;
         }
         throw new IllegalArgumentException();
     }
 
     public static void y(Class cls, String str) {
-        if (f44982a.isLoggable(2)) {
-            f44982a.v(r(cls), str);
+        if (f44998a.isLoggable(2)) {
+            f44998a.v(r(cls), str);
         }
     }
 
     public static void z(Class cls, String str, Object obj) {
-        if (f44982a.isLoggable(2)) {
-            f44982a.v(r(cls), q(str, obj));
+        if (f44998a.isLoggable(2)) {
+            f44998a.v(r(cls), q(str, obj));
         }
     }
 }

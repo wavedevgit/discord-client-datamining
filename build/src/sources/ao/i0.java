@@ -46,7 +46,7 @@ public final class i0 implements vm.c0 {
         @Override // kotlin.jvm.functions.Function2
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
             a((f5.b) obj, (vm.a0) obj2);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
     }
 
@@ -76,7 +76,7 @@ public final class i0 implements vm.c0 {
         public void a() {
             PreviewView previewView = this.f6138a.f25325y;
             Intrinsics.checkNotNullExpressionValue(previewView, "previewView");
-            this.f6140c.f(previewView, t.a.f39291e, this.f6141d, true, this.f6139b.x());
+            this.f6140c.f(previewView, t.a.f39307e, this.f6141d, true, this.f6139b.x());
         }
     }
 
@@ -107,7 +107,7 @@ public final class i0 implements vm.c0 {
             context2 = context;
         }
         fo.b c10 = fo.b.c(LayoutInflater.from(context2).cloneInContext(context));
-        if (initialRendering.G() != sn.a.f49091e && initialRendering.G() != sn.a.f49090d) {
+        if (initialRendering.G() != sn.a.f49107e && initialRendering.G() != sn.a.f49106d) {
             z.a h10 = initialRendering.h();
             PreviewView previewView = c10.f25325y;
             Intrinsics.checkNotNullExpressionValue(previewView, "previewView");
@@ -116,7 +116,7 @@ public final class i0 implements vm.c0 {
         } else {
             Context applicationContext = context.getApplicationContext();
             Intrinsics.checkNotNullExpressionValue(applicationContext, "getApplicationContext(...)");
-            on.m b10 = on.j.b(applicationContext, on.n.f44574e);
+            on.m b10 = on.j.b(applicationContext, on.n.f44590e);
             if (b10 == null) {
                 initialRendering.x().invoke(new mn.s0());
                 Camera2PreviewView camera2Preview = c10.f25303c;

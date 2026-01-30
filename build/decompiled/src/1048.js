@@ -18,7 +18,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot2 = var2;
     var1.LCPThresholds = var2;
     var0 = function(arg0) { // Original name: onLCP, environment: var0
-        _fun10790: for (var _fun10790_ip = 0;;) switch (_fun10790_ip) {
+        _fun10791: for (var _fun10791_ip = 0;;) switch (_fun10791_ip) {
             case 0:
                 var0 = undefined;
                 var4 = undefined;
@@ -27,19 +27,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = arguments.length;
                 var3 = 1;
                 if (!(var2 > var3)) {
-                    _fun10790_ip = 31;
-                    continue _fun10790
+                    _fun10791_ip = 31;
+                    continue _fun10791
                 }
             case 23:
                 var2 = arguments[var3];
                 if (!(var0 === var2)) {
-                    _fun10790_ip = 35;
-                    continue _fun10790
+                    _fun10791_ip = 35;
+                    continue _fun10791
                 }
             case 31:
                 var2 = {};
-                _fun10790_ip = 39;
-                continue _fun10790;
+                _fun10791_ip = 39;
+                continue _fun10791;
             case 35:
                 var2 = arguments[var3];
             case 39:
@@ -51,7 +51,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var3.bind(var0)(var2);
                 var2 = var3.whenActivated;
                 var1 = function() { // Environment: var1
-                    _fun10791: for (var _fun10791_ip = 0;;) switch (_fun10791_ip) {
+                    _fun10792: for (var _fun10792_ip = 0;;) switch (_fun10792_ip) {
                         case 0:
                             var0 = undefined;
                             var6 = undefined;
@@ -82,7 +82,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var3 = var9.bind(var10)(var8, var3);
                             var _closure3_slot3 = var3;
                             var8 = function(arg0) { // Original name: handleEntries, environment: var2
-                                _fun10792: for (var _fun10792_ip = 0;;) switch (_fun10792_ip) {
+                                _fun10793: for (var _fun10793_ip = 0;;) switch (_fun10793_ip) {
                                     case 0:
                                         var4 = arg0;
                                         var0 = undefined;
@@ -91,8 +91,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var2 = var1.reportAllChanges;
                                         var1 = var4;
                                         if (var2) {
-                                            _fun10792_ip = 42;
-                                            continue _fun10792
+                                            _fun10793_ip = 42;
+                                            continue _fun10793
                                         }
                                     case 26:
                                         var3 = var4.slice;
@@ -109,8 +109,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var9 = var7().value;
                                         var10 = var2;
                                         if (!(var10 !== var0)) {
-                                            _fun10792_ip = 214;
-                                            continue _fun10792
+                                            _fun10793_ip = 214;
+                                            continue _fun10793
                                         }
                                     case 75: // try_start_0
                                         var8 = var9;
@@ -121,8 +121,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var9 = _closure3_slot1;
                                         var9 = var9.firstHiddenTime;
                                         if (!(var10 < var9)) {
-                                            _fun10792_ip = 202;
-                                            continue _fun10792
+                                            _fun10793_ip = 202;
+                                            continue _fun10793
                                         }
                                     case 113:
                                         var10 = _closure3_slot2;
@@ -145,8 +145,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                         var9 = _closure3_slot0;
                                         var9 = var9.bind(var0)();
                                     case 202: // try_end0
-                                        _fun10792_ip = 61;
-                                        continue _fun10792;
+                                        _fun10793_ip = 61;
+                                        continue _fun10793;
                                     case 207: // catch_target0
                                         CatchBlockStart(arg_register = 1);
                                         var2.return();
@@ -164,8 +164,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var3 = var4.bind(var7)(var3, var8);
                             var _closure3_slot5 = var3;
                             if (!var3) {
-                                _fun10791_ip = 358;
-                                continue _fun10791
+                                _fun10792_ip = 358;
+                                continue _fun10792
                             }
                         case 178:
                             var3 = _closure1_slot0;
@@ -203,13 +203,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var1 = var3.bind(var4)(var1);
                             var _closure3_slot6 = var1;
                             var1 = function(arg0) { // Original name: stopListeningWrapper, environment: var2
-                                _fun10794: for (var _fun10794_ip = 0;;) switch (_fun10794_ip) {
+                                _fun10795: for (var _fun10795_ip = 0;;) switch (_fun10795_ip) {
                                     case 0:
                                         var1 = arg0;
                                         var0 = var1.isTrusted;
                                         if (!var0) {
-                                            _fun10794_ip = 98;
-                                            continue _fun10794
+                                            _fun10795_ip = 98;
+                                            continue _fun10795
                                         }
                                     case 12:
                                         var4 = _closure1_slot0;
@@ -247,8 +247,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var11 = var4().value;
                             var7 = var2;
                             if (!(var7 !== var0)) {
-                                _fun10791_ip = 358;
-                                continue _fun10791
+                                _fun10792_ip = 358;
+                                continue _fun10792
                             }
                         case 309: // try_start_0
                             var8 = _closure1_slot0;
@@ -261,8 +261,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var7.capture = var1;
                             var7 = var9.bind(var10)(var11, var8, var7);
                         case 349: // try_end0
-                            _fun10791_ip = 298;
-                            continue _fun10791;
+                            _fun10792_ip = 298;
+                            continue _fun10792;
                         case 351: // catch_target0
                             CatchBlockStart(arg_register = 1);
                             var2.return();

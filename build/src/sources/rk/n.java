@@ -3,22 +3,22 @@ package rk;
 final class n extends q {
 
     /* renamed from: b  reason: collision with root package name */
-    private final char f48321b;
+    private final char f48337b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public n(int i10, char c10) {
         super(i10);
-        this.f48321b = c10;
+        this.f48337b = c10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public char b() {
-        return this.f48321b;
+        return this.f48337b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean c() {
-        if (this.f48321b == '$') {
+        if (this.f48337b == '$') {
             return true;
         }
         return false;

@@ -397,7 +397,7 @@ public final class Attachment implements SpoilerableData {
         Integer num;
         Integer num2 = null;
         try {
-            Result.a aVar = Result.f33279e;
+            Result.a aVar = Result.f33295e;
             String value = new UrlQuerySanitizer(this.url).getValue(str);
             if (value != null) {
                 num = StringsKt.toIntOrNull(value);
@@ -406,7 +406,7 @@ public final class Attachment implements SpoilerableData {
             }
             b10 = Result.b(num);
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f33279e;
+            Result.a aVar2 = Result.f33295e;
             b10 = Result.b(c.a(th2));
         }
         if (!Result.g(b10)) {

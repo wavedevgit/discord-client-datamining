@@ -3,13 +3,13 @@ package s5;
 public class a {
 
     /* renamed from: a  reason: collision with root package name */
-    final r5.b f48704a;
+    final r5.b f48720a;
 
     public a(r5.b bVar) {
-        this.f48704a = bVar;
+        this.f48720a = bVar;
     }
 
     public r5.b a() {
-        return this.f48704a;
+        return this.f48720a;
     }
 }

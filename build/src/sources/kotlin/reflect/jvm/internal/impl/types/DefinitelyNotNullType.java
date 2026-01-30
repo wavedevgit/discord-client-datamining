@@ -16,10 +16,10 @@ public final class DefinitelyNotNullType extends DelegatingSimpleType implements
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private final SimpleType f35832e;
+    private final SimpleType f35848e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean f35833i;
+    private final boolean f35849i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -92,12 +92,12 @@ public final class DefinitelyNotNullType extends DelegatingSimpleType implements
 
     @Override // kotlin.reflect.jvm.internal.impl.types.DelegatingSimpleType
     protected SimpleType getDelegate() {
-        return this.f35832e;
+        return this.f35848e;
     }
 
     @NotNull
     public final SimpleType getOriginal() {
-        return this.f35832e;
+        return this.f35848e;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.DelegatingSimpleType, kotlin.reflect.jvm.internal.impl.types.KotlinType
@@ -117,7 +117,7 @@ public final class DefinitelyNotNullType extends DelegatingSimpleType implements
     @NotNull
     public KotlinType substitutionResult(@NotNull KotlinType replacement) {
         Intrinsics.checkNotNullParameter(replacement, "replacement");
-        return SpecialTypesKt.makeDefinitelyNotNullOrNotNull(replacement.unwrap(), this.f35833i);
+        return SpecialTypesKt.makeDefinitelyNotNullOrNotNull(replacement.unwrap(), this.f35849i);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.SimpleType
@@ -127,8 +127,8 @@ public final class DefinitelyNotNullType extends DelegatingSimpleType implements
     }
 
     private DefinitelyNotNullType(SimpleType simpleType, boolean z10) {
-        this.f35832e = simpleType;
-        this.f35833i = z10;
+        this.f35848e = simpleType;
+        this.f35849i = z10;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.UnwrappedType
@@ -141,13 +141,13 @@ public final class DefinitelyNotNullType extends DelegatingSimpleType implements
     @NotNull
     public SimpleType replaceAttributes(@NotNull TypeAttributes newAttributes) {
         Intrinsics.checkNotNullParameter(newAttributes, "newAttributes");
-        return new DefinitelyNotNullType(getDelegate().replaceAttributes(newAttributes), this.f35833i);
+        return new DefinitelyNotNullType(getDelegate().replaceAttributes(newAttributes), this.f35849i);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.DelegatingSimpleType
     @NotNull
     public DefinitelyNotNullType replaceDelegate(@NotNull SimpleType delegate) {
         Intrinsics.checkNotNullParameter(delegate, "delegate");
-        return new DefinitelyNotNullType(delegate, this.f35833i);
+        return new DefinitelyNotNullType(delegate, this.f35849i);
     }
 }

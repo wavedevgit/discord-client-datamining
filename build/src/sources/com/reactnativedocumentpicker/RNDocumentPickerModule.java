@@ -184,12 +184,12 @@ public final class RNDocumentPickerModule extends NativeDocumentPickerSpec imple
                 }
             }
             this.f18567p.resolve((ReadableArray) obj);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -246,12 +246,12 @@ public final class RNDocumentPickerModule extends NativeDocumentPickerSpec imple
             } catch (Exception e10) {
                 RNDocumentPickerModule.this.promiseWrapper.b(e10);
             }
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((d) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((d) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -311,14 +311,14 @@ public final class RNDocumentPickerModule extends NativeDocumentPickerSpec imple
                 } catch (Exception e10) {
                     this.f18574o.reject(e10);
                 }
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 

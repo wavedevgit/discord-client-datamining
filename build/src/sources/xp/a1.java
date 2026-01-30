@@ -26,7 +26,7 @@ public abstract class a1 {
     public static final class a implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f53496d = new a();
+        public static final a f53512d = new a();
 
         @Override // kotlin.jvm.functions.Function1
         /* renamed from: a */
@@ -99,7 +99,7 @@ public abstract class a1 {
         Context context;
         Intrinsics.checkNotNullParameter(newText, "newText");
         vm.t b10 = inputConfirmationCodeComponent.b();
-        zp.a aVar = zp.a.f56054a;
+        zp.a aVar = zp.a.f56070a;
         ConstraintLayout root = cVar.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
         b10.c(aVar.a(root));
@@ -123,21 +123,21 @@ public abstract class a1 {
                 editText5.clearFocus();
             }
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit h(EditText editText) {
         editText.requestFocus();
         editText.setSelection(editText.length());
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit i(aq.c cVar, InputConfirmationCode inputConfirmationCode) {
         ConstraintLayout root = cVar.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
-        Sequence<TextInputLayout> F = kotlin.sequences.k.F(androidx.core.view.n0.a(root), a.f53496d);
+        Sequence<TextInputLayout> F = kotlin.sequences.k.F(androidx.core.view.n0.a(root), a.f53512d);
         Intrinsics.checkNotNull(F, "null cannot be cast to non-null type kotlin.sequences.Sequence<R of kotlin.sequences.SequencesKt___SequencesKt.filterIsInstance>");
         for (TextInputLayout textInputLayout : F) {
             InputTextBasedComponentStyle styles = inputConfirmationCode.getStyles();
@@ -145,7 +145,7 @@ public abstract class a1 {
                 cq.a0.k(textInputLayout, styles);
             }
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private static final void j(String str, List list) {

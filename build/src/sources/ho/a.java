@@ -23,16 +23,16 @@ import tm.o;
 public final class a implements o<ho.d> {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final C0353a f27599e = new C0353a(null);
+    public static final C0353a f27615e = new C0353a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private final Context f27600b;
+    private final Context f27616b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final f0 f27601c;
+    private final f0 f27617c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final c4.e f27602d;
+    private final c4.e f27618d;
 
     /* renamed from: ho.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -55,23 +55,23 @@ public final class a implements o<ho.d> {
     public static final class c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final ho.d f27603a;
+        private final ho.d f27619a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final long f27604b;
+        private final long f27620b;
 
         public c(ho.d hint, long j10) {
             Intrinsics.checkNotNullParameter(hint, "hint");
-            this.f27603a = hint;
-            this.f27604b = j10;
+            this.f27619a = hint;
+            this.f27620b = j10;
         }
 
         public final ho.d a() {
-            return this.f27603a;
+            return this.f27619a;
         }
 
         public final long b() {
-            return this.f27604b;
+            return this.f27620b;
         }
 
         public boolean equals(Object obj) {
@@ -82,19 +82,19 @@ public final class a implements o<ho.d> {
                 return false;
             }
             c cVar = (c) obj;
-            if (Intrinsics.areEqual(this.f27603a, cVar.f27603a) && this.f27604b == cVar.f27604b) {
+            if (Intrinsics.areEqual(this.f27619a, cVar.f27619a) && this.f27620b == cVar.f27620b) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return (this.f27603a.hashCode() * 31) + Long.hashCode(this.f27604b);
+            return (this.f27619a.hashCode() * 31) + Long.hashCode(this.f27620b);
         }
 
         public String toString() {
-            ho.d dVar = this.f27603a;
-            long j10 = this.f27604b;
+            ho.d dVar = this.f27619a;
+            long j10 = this.f27620b;
             return "HintEvent(hint=" + dVar + ", minDurationMs=" + j10 + ")";
         }
     }
@@ -103,13 +103,13 @@ public final class a implements o<ho.d> {
     static final class d extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f27605d;
+        int f27621d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f27606e;
+        private /* synthetic */ Object f27622e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Flow f27607i;
+        final /* synthetic */ Flow f27623i;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: ho.a$d$a  reason: collision with other inner class name */
@@ -117,7 +117,7 @@ public final class a implements o<ho.d> {
         public static final class C0354a implements FlowCollector {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ FlowCollector f27608d;
+            final /* synthetic */ FlowCollector f27624d;
 
             /* JADX INFO: Access modifiers changed from: package-private */
             /* renamed from: ho.a$d$a$a  reason: collision with other inner class name */
@@ -125,13 +125,13 @@ public final class a implements o<ho.d> {
             public static final class C0355a extends kotlin.coroutines.jvm.internal.d {
 
                 /* renamed from: d  reason: collision with root package name */
-                Object f27609d;
+                Object f27625d;
 
                 /* renamed from: e  reason: collision with root package name */
-                /* synthetic */ Object f27610e;
+                /* synthetic */ Object f27626e;
 
                 /* renamed from: o  reason: collision with root package name */
-                int f27612o;
+                int f27628o;
 
                 C0355a(Continuation continuation) {
                     super(continuation);
@@ -139,14 +139,14 @@ public final class a implements o<ho.d> {
 
                 @Override // kotlin.coroutines.jvm.internal.a
                 public final Object invokeSuspend(Object obj) {
-                    this.f27610e = obj;
-                    this.f27612o |= Integer.MIN_VALUE;
+                    this.f27626e = obj;
+                    this.f27628o |= Integer.MIN_VALUE;
                     return C0354a.this.emit(null, this);
                 }
             }
 
             C0354a(FlowCollector flowCollector) {
-                this.f27608d = flowCollector;
+                this.f27624d = flowCollector;
             }
 
             /* JADX WARN: Code restructure failed: missing block: B:21:0x0052, code lost:
@@ -175,20 +175,20 @@ public final class a implements o<ho.d> {
                     if (r0 == 0) goto L13
                     r0 = r9
                     ho.a$d$a$a r0 = (ho.a.d.C0354a.C0355a) r0
-                    int r1 = r0.f27612o
+                    int r1 = r0.f27628o
                     r2 = -2147483648(0xffffffff80000000, float:-0.0)
                     r3 = r1 & r2
                     if (r3 == 0) goto L13
                     int r1 = r1 - r2
-                    r0.f27612o = r1
+                    r0.f27628o = r1
                     goto L18
                 L13:
                     ho.a$d$a$a r0 = new ho.a$d$a$a
                     r0.<init>(r9)
                 L18:
-                    java.lang.Object r9 = r0.f27610e
+                    java.lang.Object r9 = r0.f27626e
                     java.lang.Object r1 = or.b.f()
-                    int r2 = r0.f27612o
+                    int r2 = r0.f27628o
                     r3 = 0
                     r4 = 2
                     r5 = 1
@@ -203,21 +203,21 @@ public final class a implements o<ho.d> {
                     r8.<init>(r9)
                     throw r8
                 L35:
-                    java.lang.Object r8 = r0.f27609d
+                    java.lang.Object r8 = r0.f27625d
                     ho.a$c r8 = (ho.a.c) r8
                     kotlin.c.b(r9)
                     goto L55
                 L3d:
                     kotlin.c.b(r9)
-                    kotlinx.coroutines.flow.FlowCollector r9 = r7.f27608d
+                    kotlinx.coroutines.flow.FlowCollector r9 = r7.f27624d
                     if (r8 == 0) goto L49
                     ho.d r2 = r8.a()
                     goto L4a
                 L49:
                     r2 = r3
                 L4a:
-                    r0.f27609d = r8
-                    r0.f27612o = r5
+                    r0.f27625d = r8
+                    r0.f27628o = r5
                     java.lang.Object r9 = r9.emit(r2, r0)
                     if (r9 != r1) goto L55
                     goto L6e
@@ -230,14 +230,14 @@ public final class a implements o<ho.d> {
                 L5e:
                     r5 = 33
                     long r8 = kotlin.ranges.d.e(r8, r5)
-                    r0.f27609d = r3
-                    r0.f27612o = r4
+                    r0.f27625d = r3
+                    r0.f27628o = r4
                     java.lang.Object r8 = gs.i0.a(r8, r0)
                     if (r8 != r1) goto L6f
                 L6e:
                     return r1
                 L6f:
-                    kotlin.Unit r8 = kotlin.Unit.f33282a
+                    kotlin.Unit r8 = kotlin.Unit.f33298a
                     return r8
                 */
                 throw new UnsupportedOperationException("Method not decompiled: ho.a.d.C0354a.emit(ho.a$c, kotlin.coroutines.Continuation):java.lang.Object");
@@ -247,20 +247,20 @@ public final class a implements o<ho.d> {
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         d(Flow flow, Continuation continuation) {
             super(2, continuation);
-            this.f27607i = flow;
+            this.f27623i = flow;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            d dVar = new d(this.f27607i, continuation);
-            dVar.f27606e = obj;
+            d dVar = new d(this.f27623i, continuation);
+            dVar.f27622e = obj;
             return dVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = or.b.f();
-            int i10 = this.f27605d;
+            int i10 = this.f27621d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -269,19 +269,19 @@ public final class a implements o<ho.d> {
                 }
             } else {
                 kotlin.c.b(obj);
-                Flow j10 = g.j(this.f27607i);
-                C0354a c0354a = new C0354a((FlowCollector) this.f27606e);
-                this.f27605d = 1;
+                Flow j10 = g.j(this.f27623i);
+                C0354a c0354a = new C0354a((FlowCollector) this.f27622e);
+                this.f27621d = 1;
                 if (j10.collect(c0354a, this) == f10) {
                     return f10;
                 }
             }
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((d) create(flowCollector, continuation)).invokeSuspend(Unit.f33282a);
+            return ((d) create(flowCollector, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -289,10 +289,10 @@ public final class a implements o<ho.d> {
     static final class e extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f27613d;
+        int f27629d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f27614e;
+        private /* synthetic */ Object f27630e;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: ho.a$e$a  reason: collision with other inner class name */
@@ -300,21 +300,21 @@ public final class a implements o<ho.d> {
         public static final class C0356a implements FlowCollector {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ FlowCollector f27616d;
+            final /* synthetic */ FlowCollector f27632d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ a f27617e;
+            final /* synthetic */ a f27633e;
 
             C0356a(FlowCollector flowCollector, a aVar) {
-                this.f27616d = flowCollector;
-                this.f27617e = aVar;
+                this.f27632d = flowCollector;
+                this.f27633e = aVar;
             }
 
             @Override // kotlinx.coroutines.flow.FlowCollector
             public final Object emit(Object obj, Continuation continuation) {
                 Object j10 = ((Result) obj).j();
-                FlowCollector flowCollector = this.f27616d;
-                a aVar = this.f27617e;
+                FlowCollector flowCollector = this.f27632d;
+                a aVar = this.f27633e;
                 if (Result.e(j10) == null) {
                     Object emit = flowCollector.emit(aVar.d((t0) j10), continuation);
                     if (emit == or.b.f()) {
@@ -326,7 +326,7 @@ public final class a implements o<ho.d> {
                         return emit2;
                     }
                 }
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
         }
 
@@ -337,14 +337,14 @@ public final class a implements o<ho.d> {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             e eVar = new e(continuation);
-            eVar.f27614e = obj;
+            eVar.f27630e = obj;
             return eVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = or.b.f();
-            int i10 = this.f27613d;
+            int i10 = this.f27629d;
             if (i10 != 0) {
                 if (i10 != 1) {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
@@ -352,9 +352,9 @@ public final class a implements o<ho.d> {
                 kotlin.c.b(obj);
             } else {
                 kotlin.c.b(obj);
-                f0 f0Var = a.this.f27601c;
-                C0356a c0356a = new C0356a((FlowCollector) this.f27614e, a.this);
-                this.f27613d = 1;
+                f0 f0Var = a.this.f27617c;
+                C0356a c0356a = new C0356a((FlowCollector) this.f27630e, a.this);
+                this.f27629d = 1;
                 if (f0Var.collect(c0356a, this) == f10) {
                     return f10;
                 }
@@ -364,7 +364,7 @@ public final class a implements o<ho.d> {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((e) create(flowCollector, continuation)).invokeSuspend(Unit.f33282a);
+            return ((e) create(flowCollector, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -372,16 +372,16 @@ public final class a implements o<ho.d> {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(governmentIdFeed, "governmentIdFeed");
         Intrinsics.checkNotNullParameter(side, "side");
-        this.f27600b = context;
-        this.f27601c = governmentIdFeed;
-        this.f27602d = side;
+        this.f27616b = context;
+        this.f27617c = governmentIdFeed;
+        this.f27618d = side;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final c d(t0 t0Var) {
         boolean z10;
         if (t0Var instanceof t0.b) {
-            return new c(ho.e.f27621d, 1000L);
+            return new c(ho.e.f27637d, 1000L);
         }
         i0 a10 = t0Var.a();
         if (a10 != null) {
@@ -395,7 +395,7 @@ public final class a implements o<ho.d> {
                 z11 = false;
             }
             if ((a10.b() < 0.34d && !z11) || (a10.b() < 0.45d && z10)) {
-                return new c(f.f27622d, 1000L);
+                return new c(f.f27638d, 1000L);
             }
             return null;
         }
@@ -405,7 +405,7 @@ public final class a implements o<ho.d> {
     @Override // tm.o
     public boolean a(o otherWorker) {
         Intrinsics.checkNotNullParameter(otherWorker, "otherWorker");
-        if ((otherWorker instanceof a) && ((a) otherWorker).f27602d == this.f27602d) {
+        if ((otherWorker instanceof a) && ((a) otherWorker).f27618d == this.f27618d) {
             return true;
         }
         return false;
@@ -419,14 +419,14 @@ public final class a implements o<ho.d> {
             return false;
         }
         a aVar = (a) obj;
-        if (Intrinsics.areEqual(this.f27600b, aVar.f27600b) && Intrinsics.areEqual(this.f27601c, aVar.f27601c) && this.f27602d == aVar.f27602d) {
+        if (Intrinsics.areEqual(this.f27616b, aVar.f27616b) && Intrinsics.areEqual(this.f27617c, aVar.f27617c) && this.f27618d == aVar.f27618d) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (((this.f27600b.hashCode() * 31) + this.f27601c.hashCode()) * 31) + this.f27602d.hashCode();
+        return (((this.f27616b.hashCode() * 31) + this.f27617c.hashCode()) * 31) + this.f27618d.hashCode();
     }
 
     @Override // tm.o
@@ -435,9 +435,9 @@ public final class a implements o<ho.d> {
     }
 
     public String toString() {
-        Context context = this.f27600b;
-        f0 f0Var = this.f27601c;
-        c4.e eVar = this.f27602d;
+        Context context = this.f27616b;
+        f0 f0Var = this.f27617c;
+        c4.e eVar = this.f27618d;
         return "GovernmentIdHintWorker(context=" + context + ", governmentIdFeed=" + f0Var + ", side=" + eVar + ")";
     }
 }

@@ -20,20 +20,20 @@ import okio.Buffer;
 public abstract class e0 {
 
     /* renamed from: a  reason: collision with root package name */
-    static final Type[] f31319a = new Type[0];
+    static final Type[] f31335a = new Type[0];
 
     /* renamed from: b  reason: collision with root package name */
-    private static boolean f31320b = true;
+    private static boolean f31336b = true;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a implements GenericArrayType {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Type f31321d;
+        private final Type f31337d;
 
         a(Type type) {
-            this.f31321d = type;
+            this.f31337d = type;
         }
 
         public boolean equals(Object obj) {
@@ -45,15 +45,15 @@ public abstract class e0 {
 
         @Override // java.lang.reflect.GenericArrayType
         public Type getGenericComponentType() {
-            return this.f31321d;
+            return this.f31337d;
         }
 
         public int hashCode() {
-            return this.f31321d.hashCode();
+            return this.f31337d.hashCode();
         }
 
         public String toString() {
-            return e0.u(this.f31321d) + "[]";
+            return e0.u(this.f31337d) + "[]";
         }
     }
 
@@ -62,13 +62,13 @@ public abstract class e0 {
     public static final class b implements ParameterizedType {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Type f31322d;
+        private final Type f31338d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Type f31323e;
+        private final Type f31339e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final Type[] f31324i;
+        private final Type[] f31340i;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public b(Type type, Type type2, Type... typeArr) {
@@ -87,9 +87,9 @@ public abstract class e0 {
                 Objects.requireNonNull(type3, "typeArgument == null");
                 e0.b(type3);
             }
-            this.f31322d = type;
-            this.f31323e = type2;
-            this.f31324i = (Type[]) typeArr.clone();
+            this.f31338d = type;
+            this.f31339e = type2;
+            this.f31340i = (Type[]) typeArr.clone();
         }
 
         public boolean equals(Object obj) {
@@ -101,23 +101,23 @@ public abstract class e0 {
 
         @Override // java.lang.reflect.ParameterizedType
         public Type[] getActualTypeArguments() {
-            return (Type[]) this.f31324i.clone();
+            return (Type[]) this.f31340i.clone();
         }
 
         @Override // java.lang.reflect.ParameterizedType
         public Type getOwnerType() {
-            return this.f31322d;
+            return this.f31338d;
         }
 
         @Override // java.lang.reflect.ParameterizedType
         public Type getRawType() {
-            return this.f31323e;
+            return this.f31339e;
         }
 
         public int hashCode() {
             int i10;
-            int hashCode = Arrays.hashCode(this.f31324i) ^ this.f31323e.hashCode();
-            Type type = this.f31322d;
+            int hashCode = Arrays.hashCode(this.f31340i) ^ this.f31339e.hashCode();
+            Type type = this.f31338d;
             if (type != null) {
                 i10 = type.hashCode();
             } else {
@@ -127,17 +127,17 @@ public abstract class e0 {
         }
 
         public String toString() {
-            Type[] typeArr = this.f31324i;
+            Type[] typeArr = this.f31340i;
             if (typeArr.length == 0) {
-                return e0.u(this.f31323e);
+                return e0.u(this.f31339e);
             }
             StringBuilder sb2 = new StringBuilder((typeArr.length + 1) * 30);
-            sb2.append(e0.u(this.f31323e));
+            sb2.append(e0.u(this.f31339e));
             sb2.append("<");
-            sb2.append(e0.u(this.f31324i[0]));
-            for (int i10 = 1; i10 < this.f31324i.length; i10++) {
+            sb2.append(e0.u(this.f31340i[0]));
+            for (int i10 = 1; i10 < this.f31340i.length; i10++) {
                 sb2.append(", ");
-                sb2.append(e0.u(this.f31324i[i10]));
+                sb2.append(e0.u(this.f31340i[i10]));
             }
             sb2.append(">");
             return sb2.toString();
@@ -149,10 +149,10 @@ public abstract class e0 {
     public static final class c implements WildcardType {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Type f31325d;
+        private final Type f31341d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final Type f31326e;
+        private final Type f31342e;
 
         c(Type[] typeArr, Type[] typeArr2) {
             if (typeArr2.length <= 1) {
@@ -161,16 +161,16 @@ public abstract class e0 {
                         typeArr2[0].getClass();
                         e0.b(typeArr2[0]);
                         if (typeArr[0] == Object.class) {
-                            this.f31326e = typeArr2[0];
-                            this.f31325d = Object.class;
+                            this.f31342e = typeArr2[0];
+                            this.f31341d = Object.class;
                             return;
                         }
                         throw new IllegalArgumentException();
                     }
                     typeArr[0].getClass();
                     e0.b(typeArr[0]);
-                    this.f31326e = null;
-                    this.f31325d = typeArr[0];
+                    this.f31342e = null;
+                    this.f31341d = typeArr[0];
                     return;
                 }
                 throw new IllegalArgumentException();
@@ -187,33 +187,33 @@ public abstract class e0 {
 
         @Override // java.lang.reflect.WildcardType
         public Type[] getLowerBounds() {
-            Type type = this.f31326e;
-            return type != null ? new Type[]{type} : e0.f31319a;
+            Type type = this.f31342e;
+            return type != null ? new Type[]{type} : e0.f31335a;
         }
 
         @Override // java.lang.reflect.WildcardType
         public Type[] getUpperBounds() {
-            return new Type[]{this.f31325d};
+            return new Type[]{this.f31341d};
         }
 
         public int hashCode() {
             int i10;
-            Type type = this.f31326e;
+            Type type = this.f31342e;
             if (type != null) {
                 i10 = type.hashCode() + 31;
             } else {
                 i10 = 1;
             }
-            return i10 ^ (this.f31325d.hashCode() + 31);
+            return i10 ^ (this.f31341d.hashCode() + 31);
         }
 
         public String toString() {
-            if (this.f31326e != null) {
-                return "? super " + e0.u(this.f31326e);
-            } else if (this.f31325d == Object.class) {
+            if (this.f31342e != null) {
+                return "? super " + e0.u(this.f31342e);
+            } else if (this.f31341d == Object.class) {
                 return "?";
             } else {
-                return "? extends " + e0.u(this.f31325d);
+                return "? extends " + e0.u(this.f31341d);
             }
         }
     }
@@ -429,7 +429,7 @@ public abstract class e0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean m(Type type) {
-        if (!f31320b || type != Unit.class) {
+        if (!f31336b || type != Unit.class) {
             return false;
         }
         return true;
@@ -448,13 +448,13 @@ public abstract class e0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static RuntimeException p(Method method, int i10, String str, Object... objArr) {
-        String a10 = v.f31441b.a(method, i10);
+        String a10 = v.f31457b.a(method, i10);
         return n(method, str + " (" + a10 + ")", objArr);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static RuntimeException q(Method method, Throwable th2, int i10, String str, Object... objArr) {
-        String a10 = v.f31441b.a(method, i10);
+        String a10 = v.f31457b.a(method, i10);
         return o(method, th2, str + " (" + a10 + ")", objArr);
     }
 
@@ -574,7 +574,7 @@ public abstract class e0 {
             iv.e0$c r9 = new iv.e0$c
             java.lang.reflect.Type[] r10 = new java.lang.reflect.Type[r1]
             r10[r2] = r8
-            java.lang.reflect.Type[] r8 = iv.e0.f31319a
+            java.lang.reflect.Type[] r8 = iv.e0.f31335a
             r9.<init>(r10, r8)
             return r9
         Lca:

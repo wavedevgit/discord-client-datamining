@@ -1,103 +1,116 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = require;
-    var6 = metroImportDefault;
     var2 = exports;
-    var5 = dependencyMap;
-    var _closure1_slot0 = var4;
-    var _closure1_slot1 = var5;
     var0 = global;
-    var8 = var0.Object;
-    var7 = var8.defineProperty;
-    var3 = {};
-    var0 = true;
-    var3.value = var0;
+    var6 = var0.Object;
+    var5 = var6.defineProperty;
+    var4 = {};
+    var3 = true;
+    var4.value = var3;
     var0 = '__esModule';
-    var0 = var7.bind(var8)(var2, var0, var3);
+    var0 = var5.bind(var6)(var2, var0, var4);
+    var4 = dependencyMap;
     var0 = 0;
-    var3 = var5[var0];
+    var5 = var4[var0];
+    var4 = require;
     var0 = undefined;
-    var3 = var6.bind(var0)(var3);
-    var _closure1_slot2 = var3;
-    var3 = 1;
-    var3 = var5[var3];
-    var3 = var6.bind(var0)(var3);
-    var _closure1_slot3 = var3;
-    var3 = 2;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var3 = var3.jsx;
-    var _closure1_slot4 = var3;
-    var1 = function(arg0) { // Original name: DelayedFreeze, environment: var1
-        _fun37151: for (var _fun37151_ip = 0;;) switch (_fun37151_ip) {
+    var4 = var4.bind(var0)(var5);
+    var5 = var4.Platform;
+    var4 = var4.UIManager;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var3;
+    var4 = false;
+    var _closure1_slot2 = var4;
+    var2.isNativePlatformSupported = var3;
+    var3 = function() { // Original name: enableScreens, environment: var1
+        _fun37177: for (var _fun37177_ip = 0;;) switch (_fun37177_ip) {
             case 0:
-                var0 = arg0;
-                var5 = var0.freeze;
-                var _closure2_slot0 = var5;
-                var4 = var0.children;
-                var8 = _closure1_slot3;
-                var3 = var8.useState;
-                var2 = false;
-                var7 = var3.bind(var8)(var2);
-                var6 = _closure1_slot2;
+                var0 = undefined;
                 var3 = undefined;
-                var2 = 2;
-                var7 = var6.bind(var3)(var7, var2);
+                var1 = arguments.length;
                 var2 = 0;
-                var6 = var7[var2];
-                var2 = 1;
-                var2 = var7[var2];
-                var _closure2_slot1 = var2;
-                var7 = var8.useEffect;
-                var2 = new Array(1);
-                var2[0] = var5;
-                var1 = function() { // Environment: var1
-                    var1 = global;
-                    var3 = var1.setImmediate;
-                    var2 = undefined;
-                    var1 = function() { // Environment: var0
-                        var2 = _closure2_slot1;
-                        var1 = _closure2_slot0;
-                        var0 = undefined;
-                        var1 = var2.bind(var0)(var1);
-                        return var0;
-                    };
-                    var1 = var3.bind(var2)(var1);
-                    var _closure3_slot0 = var1;
-                    var0 = function() { // Environment: var0
-                        var0 = global;
-                        var2 = var0.clearImmediate;
-                        var1 = _closure3_slot0;
-                        var0 = undefined;
-                        var1 = var2.bind(var0)(var1);
-                        return var0;
-                    };
-                    return var0;
-                };
-                var1 = var7.bind(var8)(var1, var2);
-                var2 = _closure1_slot4;
-                var1 = _closure1_slot0;
-                var7 = _closure1_slot1;
-                var0 = 3;
-                var0 = var7[var0];
-                var0 = var1.bind(var3)(var0);
-                var1 = var0.Freeze;
-                var0 = {};
-                var7 = !var5;
-                var5 = !var7;
-                if (var7) {
-                    _fun37151_ip = 139;
-                    continue _fun37151
+                var4 = var1 > var2;
+                if (!var4) {
+                    _fun37177_ip = 24;
+                    continue _fun37177
                 }
-            case 136:
-                var5 = var6;
-            case 139:
-                var0.freeze = var5;
-                var0.children = var4;
-                var0 = var2.bind(var3)(var1, var0);
+            case 16:
+                var1 = arguments[var2];
+                var4 = var0 !== var1;
+            case 24:
+                var1 = !var4;
+                if (!var4) {
+                    _fun37177_ip = 34;
+                    continue _fun37177
+                }
+            case 30:
+                var1 = arguments[var2];
+            case 34:
+                _closure1_slot1 = var1;
+                if (!var1) {
+                    _fun37177_ip = 68;
+                    continue _fun37177
+                }
+            case 44:
+                var4 = _closure1_slot0;
+                var3 = var4.getViewManagerConfig;
+                var2 = 'RNSScreen';
+                var2 = var3.bind(var4)(var2);
+                var1 = !var2;
+            case 68:
+                if (!var1) {
+                    _fun37177_ip = 95;
+                    continue _fun37177
+                }
+            case 71:
+                var1 = global;
+                var3 = var1.console;
+                var2 = var3.error;
+                var1 = "Screen native module hasn't been linked. Please check the react-native-screens README for more details";
+                var1 = var2.bind(var3)(var1);
+            case 95:
                 return var0;
         }
     };
-    var2.default = var1;
+    var2.enableScreens = var3;
+    var3 = function() { // Original name: enableFreeze, environment: var1
+        _fun37178: for (var _fun37178_ip = 0;;) switch (_fun37178_ip) {
+            case 0:
+                var0 = undefined;
+                var3 = undefined;
+                var2 = arguments.length;
+                var1 = 0;
+                var4 = var2 > var1;
+                if (!var4) {
+                    _fun37178_ip = 24;
+                    continue _fun37178
+                }
+            case 16:
+                var2 = arguments[var1];
+                var4 = var0 !== var2;
+            case 24:
+                var2 = !var4;
+                if (!var4) {
+                    _fun37178_ip = 34;
+                    continue _fun37178
+                }
+            case 30:
+                var2 = arguments[var1];
+            case 34:
+                _closure1_slot2 = var2;
+                return var0;
+        }
+    };
+    var2.enableFreeze = var3;
+    var3 = function() { // Original name: screensEnabled, environment: var1
+        var0 = _closure1_slot1;
+        return var0;
+    };
+    var2.screensEnabled = var3;
+    var1 = function() { // Original name: freezeEnabled, environment: var1
+        var0 = _closure1_slot2;
+        return var0;
+    };
+    var2.freezeEnabled = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 33, 3994]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27]);

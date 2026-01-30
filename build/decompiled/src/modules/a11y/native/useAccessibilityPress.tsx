@@ -50,15 +50,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = function() { // Environment: var0
             var0 = {};
             var1 = function(arg0) { // Original name: onAccessibilityAction, environment: var1
-                _fun65613: for (var _fun65613_ip = 0;;) switch (_fun65613_ip) {
+                _fun65657: for (var _fun65657_ip = 0;;) switch (_fun65657_ip) {
                     case 0:
                         var0 = arg0;
                         var0 = var0.nativeEvent;
                         var1 = var0.actionName;
                         var0 = 'activate';
                         if (!(var0 === var1)) {
-                            _fun65613_ip = 39;
-                            continue _fun65613
+                            _fun65657_ip = 39;
+                            continue _fun65657
                         }
                     case 23:
                         var1 = _closure2_slot2;

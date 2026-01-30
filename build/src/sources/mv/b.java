@@ -8,7 +8,7 @@ import qs.e;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f39590a = new a(null);
+    public static final a f39606a = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -25,7 +25,7 @@ public final class b {
     public /* synthetic */ class C0503b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f39591a;
+        public static final /* synthetic */ int[] f39607a;
 
         static {
             int[] iArr = new int[mv.a.values().length];
@@ -57,12 +57,12 @@ public final class b {
                 iArr[mv.a.YEAR.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
-            f39591a = iArr;
+            f39607a = iArr;
         }
     }
 
     private final String b(mv.a aVar) {
-        switch (C0503b.f39591a[aVar.ordinal()]) {
+        switch (C0503b.f39607a[aVar.ordinal()]) {
             case 1:
                 return "";
             case 2:
@@ -83,7 +83,7 @@ public final class b {
     }
 
     private final int c(mv.a aVar) {
-        switch (C0503b.f39591a[aVar.ordinal()]) {
+        switch (C0503b.f39607a[aVar.ordinal()]) {
             case 1:
                 return 24;
             case 2:

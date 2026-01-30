@@ -26,6 +26,6 @@ public abstract class j {
     public static final BufferedSink d(BufferedSink bufferedSink, String str) {
         Intrinsics.checkNotNullParameter(bufferedSink, "<this>");
         Intrinsics.checkNotNullParameter(str, "str");
-        return c(bufferedSink, ByteString.f44363o.g(str));
+        return c(bufferedSink, ByteString.f44379o.g(str));
     }
 }

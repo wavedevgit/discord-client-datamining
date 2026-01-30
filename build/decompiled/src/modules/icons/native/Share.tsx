@@ -1,7 +1,7 @@
 // modules/icons/native/Share.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun67348: for (var _fun67348_ip = 0;;) switch (_fun67348_ip) {
+    _fun67393: for (var _fun67393_ip = 0;;) switch (_fun67393_ip) {
         case 0:
             var4 = require;
             var6 = metroImportDefault;
@@ -22,15 +22,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var1 = var3.isIOS;
             var1 = var1.bind(var3)();
             if (var1) {
-                _fun67348_ip = 84;
-                continue _fun67348
+                _fun67393_ip = 84;
+                continue _fun67393
             }
         case 70:
             var1 = 2;
             var1 = var5[var1];
             var1 = var6.bind(var0)(var1);
-            _fun67348_ip = 96;
-            continue _fun67348;
+            _fun67393_ip = 96;
+            continue _fun67393;
         case 84:
             var3 = 1;
             var3 = var5[var3];
@@ -45,4 +45,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.default = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [478, 8318, 8319, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [478, 8321, 8322, 2]);

@@ -43,7 +43,7 @@ public class g2 extends j2 implements kotlin.reflect.k {
         Intrinsics.checkNotNullParameter(container, "container");
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(signature, "signature");
-        ir.o oVar = ir.o.f31103e;
+        ir.o oVar = ir.o.f31119e;
         this.f21140z = ir.l.a(oVar, new e2(this));
         this.A = ir.l.a(oVar, new f2(this));
     }
@@ -83,7 +83,7 @@ public class g2 extends j2 implements kotlin.reflect.k {
         super(container, descriptor);
         Intrinsics.checkNotNullParameter(container, "container");
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        ir.o oVar = ir.o.f31103e;
+        ir.o oVar = ir.o.f31119e;
         this.f21140z = ir.l.a(oVar, new e2(this));
         this.A = ir.l.a(oVar, new f2(this));
     }

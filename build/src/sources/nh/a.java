@@ -14,40 +14,40 @@ import r1.c;
 public class a {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final int[] f41925i = new int[3];
+    private static final int[] f41941i = new int[3];
 
     /* renamed from: j  reason: collision with root package name */
-    private static final float[] f41926j = {0.0f, 0.5f, 1.0f};
+    private static final float[] f41942j = {0.0f, 0.5f, 1.0f};
 
     /* renamed from: k  reason: collision with root package name */
-    private static final int[] f41927k = new int[4];
+    private static final int[] f41943k = new int[4];
 
     /* renamed from: l  reason: collision with root package name */
-    private static final float[] f41928l = {0.0f, 0.0f, 0.5f, 1.0f};
+    private static final float[] f41944l = {0.0f, 0.0f, 0.5f, 1.0f};
 
     /* renamed from: a  reason: collision with root package name */
-    private final Paint f41929a;
+    private final Paint f41945a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Paint f41930b;
+    private final Paint f41946b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Paint f41931c;
+    private final Paint f41947c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f41932d;
+    private int f41948d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f41933e;
+    private int f41949e;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f41934f;
+    private int f41950f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final Path f41935g;
+    private final Path f41951g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final Paint f41936h;
+    private final Paint f41952h;
 
     public a() {
         this(-16777216);
@@ -61,13 +61,13 @@ public class a {
         } else {
             z10 = false;
         }
-        Path path = this.f41935g;
+        Path path = this.f41951g;
         if (z10) {
-            int[] iArr = f41927k;
+            int[] iArr = f41943k;
             iArr[0] = 0;
-            iArr[1] = this.f41934f;
-            iArr[2] = this.f41933e;
-            iArr[3] = this.f41932d;
+            iArr[1] = this.f41950f;
+            iArr[2] = this.f41949e;
+            iArr[3] = this.f41948d;
             f12 = f10;
         } else {
             path.rewind();
@@ -77,69 +77,69 @@ public class a {
             path.close();
             float f13 = -i10;
             rectF.inset(f13, f13);
-            int[] iArr2 = f41927k;
+            int[] iArr2 = f41943k;
             iArr2[0] = 0;
-            iArr2[1] = this.f41932d;
-            iArr2[2] = this.f41933e;
-            iArr2[3] = this.f41934f;
+            iArr2[1] = this.f41948d;
+            iArr2[2] = this.f41949e;
+            iArr2[3] = this.f41950f;
         }
         float width = rectF.width() / 2.0f;
         if (width <= 0.0f) {
             return;
         }
         float f14 = 1.0f - (i10 / width);
-        float[] fArr = f41928l;
+        float[] fArr = f41944l;
         fArr[1] = f14;
         fArr[2] = ((1.0f - f14) / 2.0f) + f14;
-        this.f41930b.setShader(new RadialGradient(rectF.centerX(), rectF.centerY(), width, f41927k, fArr, Shader.TileMode.CLAMP));
+        this.f41946b.setShader(new RadialGradient(rectF.centerX(), rectF.centerY(), width, f41943k, fArr, Shader.TileMode.CLAMP));
         canvas.save();
         canvas.concat(matrix);
         canvas.scale(1.0f, rectF.height() / rectF.width());
         if (!z10) {
             canvas.clipPath(path, Region.Op.DIFFERENCE);
-            canvas.drawPath(path, this.f41936h);
+            canvas.drawPath(path, this.f41952h);
         }
-        canvas.drawArc(rectF, f12, f11, true, this.f41930b);
+        canvas.drawArc(rectF, f12, f11, true, this.f41946b);
         canvas.restore();
     }
 
     public void b(Canvas canvas, Matrix matrix, RectF rectF, int i10) {
         rectF.bottom += i10;
         rectF.offset(0.0f, -i10);
-        int[] iArr = f41925i;
-        iArr[0] = this.f41934f;
-        iArr[1] = this.f41933e;
-        iArr[2] = this.f41932d;
-        Paint paint = this.f41931c;
+        int[] iArr = f41941i;
+        iArr[0] = this.f41950f;
+        iArr[1] = this.f41949e;
+        iArr[2] = this.f41948d;
+        Paint paint = this.f41947c;
         float f10 = rectF.left;
-        paint.setShader(new LinearGradient(f10, rectF.top, f10, rectF.bottom, iArr, f41926j, Shader.TileMode.CLAMP));
+        paint.setShader(new LinearGradient(f10, rectF.top, f10, rectF.bottom, iArr, f41942j, Shader.TileMode.CLAMP));
         canvas.save();
         canvas.concat(matrix);
-        canvas.drawRect(rectF, this.f41931c);
+        canvas.drawRect(rectF, this.f41947c);
         canvas.restore();
     }
 
     public Paint c() {
-        return this.f41929a;
+        return this.f41945a;
     }
 
     public void d(int i10) {
-        this.f41932d = c.l(i10, 68);
-        this.f41933e = c.l(i10, 20);
-        this.f41934f = c.l(i10, 0);
-        this.f41929a.setColor(this.f41932d);
+        this.f41948d = c.l(i10, 68);
+        this.f41949e = c.l(i10, 20);
+        this.f41950f = c.l(i10, 0);
+        this.f41945a.setColor(this.f41948d);
     }
 
     public a(int i10) {
-        this.f41935g = new Path();
+        this.f41951g = new Path();
         Paint paint = new Paint();
-        this.f41936h = paint;
-        this.f41929a = new Paint();
+        this.f41952h = paint;
+        this.f41945a = new Paint();
         d(i10);
         paint.setColor(0);
         Paint paint2 = new Paint(4);
-        this.f41930b = paint2;
+        this.f41946b = paint2;
         paint2.setStyle(Paint.Style.FILL);
-        this.f41931c = new Paint(paint2);
+        this.f41947c = new Paint(paint2);
     }
 }

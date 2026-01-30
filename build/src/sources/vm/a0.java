@@ -9,16 +9,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f51206a;
+    private final Map f51222a;
 
     public a0(Map map) {
         Intrinsics.checkNotNullParameter(map, "map");
-        this.f51206a = map;
+        this.f51222a = map;
     }
 
     public final Object a(b0 key) {
         Intrinsics.checkNotNullParameter(key, "key");
-        Object obj = this.f51206a.get(key);
+        Object obj = this.f51222a.get(key);
         if (obj == null) {
             obj = null;
         }
@@ -29,12 +29,12 @@ public final class a0 {
     }
 
     public final Map b() {
-        return this.f51206a;
+        return this.f51222a;
     }
 
     public final a0 c(Pair pair) {
         Intrinsics.checkNotNullParameter(pair, "pair");
-        return new a0(o0.r(this.f51206a, pair));
+        return new a0(o0.r(this.f51222a, pair));
     }
 
     public boolean equals(Object obj) {
@@ -51,11 +51,11 @@ public final class a0 {
     }
 
     public int hashCode() {
-        return this.f51206a.hashCode();
+        return this.f51222a.hashCode();
     }
 
     public String toString() {
-        return "ViewEnvironment(" + this.f51206a + ')';
+        return "ViewEnvironment(" + this.f51222a + ')';
     }
 
     public /* synthetic */ a0(Map map, int i10, DefaultConstructorMarker defaultConstructorMarker) {

@@ -14,38 +14,38 @@ import x.j;
 final class c implements z4.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final r.a0 f46251a;
+    private final r.a0 f46267a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Range f46252b;
+    private final Range f46268b;
 
     /* renamed from: d  reason: collision with root package name */
-    private c.a f46254d;
+    private c.a f46270d;
 
     /* renamed from: f  reason: collision with root package name */
-    private boolean f46256f;
+    private boolean f46272f;
 
     /* renamed from: c  reason: collision with root package name */
-    private float f46253c = 1.0f;
+    private float f46269c = 1.0f;
 
     /* renamed from: e  reason: collision with root package name */
-    private float f46255e = 1.0f;
+    private float f46271e = 1.0f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c(r.a0 a0Var) {
         CameraCharacteristics.Key key;
-        this.f46256f = false;
-        this.f46251a = a0Var;
+        this.f46272f = false;
+        this.f46267a = a0Var;
         key = CameraCharacteristics.CONTROL_ZOOM_RATIO_RANGE;
-        this.f46252b = (Range) a0Var.a(key);
-        this.f46256f = a0Var.d();
+        this.f46268b = (Range) a0Var.a(key);
+        this.f46272f = a0Var.d();
     }
 
     @Override // q.z4.b
     public void a(TotalCaptureResult totalCaptureResult) {
         CaptureRequest.Key key;
         Float f10;
-        if (this.f46254d != null) {
+        if (this.f46270d != null) {
             CaptureRequest request = totalCaptureResult.getRequest();
             if (request != null) {
                 key = CaptureRequest.CONTROL_ZOOM_RATIO;
@@ -54,9 +54,9 @@ final class c implements z4.b {
                 f10 = null;
             }
             if (f10 != null) {
-                if (this.f46255e == f10.floatValue()) {
-                    this.f46254d.c(null);
-                    this.f46254d = null;
+                if (this.f46271e == f10.floatValue()) {
+                    this.f46270d.c(null);
+                    this.f46270d = null;
                 }
             }
         }
@@ -64,37 +64,37 @@ final class c implements z4.b {
 
     @Override // q.z4.b
     public float b() {
-        return ((Float) this.f46252b.getLower()).floatValue();
+        return ((Float) this.f46268b.getLower()).floatValue();
     }
 
     @Override // q.z4.b
     public void c() {
-        this.f46253c = 1.0f;
-        c.a aVar = this.f46254d;
+        this.f46269c = 1.0f;
+        c.a aVar = this.f46270d;
         if (aVar != null) {
             aVar.f(new j.a("Camera is not active."));
-            this.f46254d = null;
+            this.f46270d = null;
         }
     }
 
     @Override // q.z4.b
     public float d() {
-        return ((Float) this.f46252b.getUpper()).floatValue();
+        return ((Float) this.f46268b.getUpper()).floatValue();
     }
 
     @Override // q.z4.b
     public Rect e() {
-        return (Rect) b2.e.g((Rect) this.f46251a.a(CameraCharacteristics.SENSOR_INFO_ACTIVE_ARRAY_SIZE));
+        return (Rect) b2.e.g((Rect) this.f46267a.a(CameraCharacteristics.SENSOR_INFO_ACTIVE_ARRAY_SIZE));
     }
 
     @Override // q.z4.b
     public void f(a.C0551a c0551a) {
         CaptureRequest.Key key;
         key = CaptureRequest.CONTROL_ZOOM_RATIO;
-        Float valueOf = Float.valueOf(this.f46253c);
+        Float valueOf = Float.valueOf(this.f46269c);
         r0.c cVar = r0.c.REQUIRED;
         c0551a.g(key, valueOf, cVar);
-        if (this.f46256f) {
+        if (this.f46272f) {
             s.b.a(c0551a, cVar);
         }
     }

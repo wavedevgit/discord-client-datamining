@@ -7,27 +7,27 @@ import kotlin.jvm.internal.Intrinsics;
 public final class q {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f51927a;
+    private final List f51943a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f51928b;
+    private final List f51944b;
 
     public q(List operations, List followedBy) {
         Intrinsics.checkNotNullParameter(operations, "operations");
         Intrinsics.checkNotNullParameter(followedBy, "followedBy");
-        this.f51927a = operations;
-        this.f51928b = followedBy;
+        this.f51943a = operations;
+        this.f51944b = followedBy;
     }
 
     public final List a() {
-        return this.f51928b;
+        return this.f51944b;
     }
 
     public final List b() {
-        return this.f51927a;
+        return this.f51943a;
     }
 
     public String toString() {
-        return CollectionsKt.x0(this.f51927a, ", ", null, null, 0, null, null, 62, null) + '(' + CollectionsKt.x0(this.f51928b, ";", null, null, 0, null, null, 62, null) + ')';
+        return CollectionsKt.x0(this.f51943a, ", ", null, null, 0, null, null, 62, null) + '(' + CollectionsKt.x0(this.f51944b, ";", null, null, 0, null, null, 62, null) + ')';
     }
 }

@@ -9,35 +9,35 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var14;
     var _closure1_slot2 = var6;
     var0 = function(arg0) { // Original name: getIcon, environment: var3
-        _fun52893: for (var _fun52893_ip = 0;;) switch (_fun52893_ip) {
+        _fun52938: for (var _fun52938_ip = 0;;) switch (_fun52938_ip) {
             case 0:
                 var1 = arg0;
                 var0 = _closure1_slot7;
                 var0 = var0.WARNING;
                 if (!(var0 !== var1)) {
-                    _fun52893_ip = 291;
-                    continue _fun52893
+                    _fun52938_ip = 291;
+                    continue _fun52938
                 }
             case 23:
                 var0 = _closure1_slot7;
                 var0 = var0.INFO;
                 if (!(var0 !== var1)) {
-                    _fun52893_ip = 218;
-                    continue _fun52893
+                    _fun52938_ip = 218;
+                    continue _fun52938
                 }
             case 40:
                 var0 = _closure1_slot7;
                 var0 = var0.ERROR;
                 if (!(var0 !== var1)) {
-                    _fun52893_ip = 145;
-                    continue _fun52893
+                    _fun52938_ip = 145;
+                    continue _fun52938
                 }
             case 54:
                 var0 = _closure1_slot7;
                 var0 = var0.SUCCESS;
                 if (!(var0 !== var1)) {
-                    _fun52893_ip = 72;
-                    continue _fun52893
+                    _fun52938_ip = 72;
+                    continue _fun52938
                 }
             case 68:
                 var0 = undefined;
@@ -122,36 +122,36 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot8 = var0;
     var0 = function(arg0, arg1) { // Original name: useContainerStyle, environment: var3
-        _fun52894: for (var _fun52894_ip = 0;;) switch (_fun52894_ip) {
+        _fun52939: for (var _fun52939_ip = 0;;) switch (_fun52939_ip) {
             case 0:
                 var2 = arg0;
                 var0 = arg1;
                 var3 = _closure1_slot7;
                 var3 = var3.WARNING;
                 if (!(var3 !== var2)) {
-                    _fun52894_ip = 93;
-                    continue _fun52894
+                    _fun52939_ip = 93;
+                    continue _fun52939
                 }
             case 23:
                 var3 = _closure1_slot7;
                 var3 = var3.INFO;
                 if (!(var3 !== var2)) {
-                    _fun52894_ip = 85;
-                    continue _fun52894
+                    _fun52939_ip = 85;
+                    continue _fun52939
                 }
             case 37:
                 var3 = _closure1_slot7;
                 var3 = var3.ERROR;
                 if (!(var3 !== var2)) {
-                    _fun52894_ip = 77;
-                    continue _fun52894
+                    _fun52939_ip = 77;
+                    continue _fun52939
                 }
             case 51:
                 var1 = _closure1_slot7;
                 var1 = var1.SUCCESS;
                 if (!(var1 !== var2)) {
-                    _fun52894_ip = 69;
-                    continue _fun52894
+                    _fun52939_ip = 69;
+                    continue _fun52939
                 }
             case 65:
                 var1 = undefined;
@@ -327,7 +327,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'uikit-native/HelpMessage.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function(arg0) { // Original name: HelpMessage, environment: var3
-        _fun52895: for (var _fun52895_ip = 0;;) switch (_fun52895_ip) {
+        _fun52940: for (var _fun52940_ip = 0;;) switch (_fun52940_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.children;
@@ -335,16 +335,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.textVariant;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun52895_ip = 30;
-                    continue _fun52895
+                    _fun52940_ip = 30;
+                    continue _fun52940
                 }
             case 26:
                 var9 = 'text-sm/medium';
             case 30:
                 var10 = var0.textColor;
                 if (!(var10 === var3)) {
-                    _fun52895_ip = 46;
-                    continue _fun52895
+                    _fun52940_ip = 46;
+                    continue _fun52940
                 }
             case 40:
                 var10 = 'text-default';
@@ -388,4 +388,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.HelpMessageTypes = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 668, 5348, 3225, 5330, 3230, 5289, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 668, 5352, 3225, 5334, 3230, 5293, 2]);

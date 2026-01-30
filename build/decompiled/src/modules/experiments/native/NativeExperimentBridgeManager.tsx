@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
-        _fun117817: for (var _fun117817_ip = 0;;) switch (_fun117817_ip) {
+        _fun118096: for (var _fun118096_ip = 0;;) switch (_fun118096_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 72: // try_end0
-                _fun117817_ip = 76;
-                continue _fun117817;
+                _fun118096_ip = 76;
+                continue _fun118096;
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
@@ -48,23 +48,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot8 = var0;
     var0 = function() { // Original name: updateIOSExperiments, environment: var1
-        _fun117820: for (var _fun117820_ip = 0;;) switch (_fun117820_ip) {
+        _fun118099: for (var _fun118099_ip = 0;;) switch (_fun118099_ip) {
             case 0:
                 var1 = _closure1_slot7;
                 var4 = var1.NSUserDefaultsBridge;
                 var1 = null;
                 var2 = var1 == var4;
                 if (var2) {
-                    _fun117820_ip = 32;
-                    continue _fun117820
+                    _fun118099_ip = 32;
+                    continue _fun118099
                 }
             case 22:
                 var3 = var4.setShouldClearChannelNotificationsOnPushAck;
                 var2 = var1 == var3;
             case 32:
                 if (var2) {
-                    _fun117820_ip = 91;
-                    continue _fun117820
+                    _fun118099_ip = 91;
+                    continue _fun118099
                 }
             case 35:
                 var3 = var4.setShouldClearChannelNotificationsOnPushAck;
@@ -84,8 +84,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot7;
                 var2 = var2.NSUserDefaultsBridge;
                 if (!(var1 != var2)) {
-                    _fun117820_ip = 163;
-                    continue _fun117820
+                    _fun118099_ip = 163;
+                    continue _fun118099
                 }
             case 105:
                 var1 = var2.setShouldEnableAnimatedReactionUpdates;
@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
         var2 = function(arg0) { // Original name: NativeExperimentBridgeManager, environment: var0
-            _fun117823: for (var _fun117823_ip = 0;;) switch (_fun117823_ip) {
+            _fun118102: for (var _fun118102_ip = 0;;) switch (_fun118102_ip) {
                 case 0:
                     var3 = this;
                     var12 = 0;
@@ -171,14 +171,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot8;
                     var0 = var0.bind(var4)();
                     if (var0) {
-                        _fun117823_ip = 84;
-                        continue _fun117823
+                        _fun118102_ip = 84;
+                        continue _fun118102
                     }
                 case 71:
                     var0 = var8.apply;
                     var0 = var0.bind(var8)(var3, var9);
-                    _fun117823_ip = 118;
-                    continue _fun117823;
+                    _fun118102_ip = 118;
+                    continue _fun118102;
                 case 84:
                     var5 = global;
                     var7 = var5.Reflect;
@@ -197,8 +197,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var3.isIOS;
                     var1 = var1.bind(var3)();
                     if (var1) {
-                        _fun117823_ip = 204;
-                        continue _fun117823
+                        _fun118102_ip = 204;
+                        continue _fun118102
                     }
                 case 157:
                     var3 = _closure1_slot0;
@@ -208,21 +208,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var3.isAndroid;
                     var1 = var1.bind(var3)();
                     if (var1) {
-                        _fun117823_ip = 198;
-                        continue _fun117823
+                        _fun118102_ip = 198;
+                        continue _fun118102
                     }
                 case 187:
                     var1 = function() { // Environment: var1
                         var0 = undefined;
                         return var0;
                     };
-                    _fun117823_ip = 202;
-                    continue _fun117823;
+                    _fun118102_ip = 202;
+                    continue _fun118102;
                 case 198:
                     var1 = _closure1_slot10;
                 case 202:
-                    _fun117823_ip = 208;
-                    continue _fun117823;
+                    _fun118102_ip = 208;
+                    continue _fun118102;
                 case 204:
                     var1 = _closure1_slot9;
                 case 208:
@@ -261,4 +261,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7, 6, 15, 17, 18, 27, 14967, 14968, 478, 4256, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7, 6, 15, 17, 18, 27, 14996, 14997, 478, 4262, 2]);

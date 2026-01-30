@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/channel/useVoiceChannelStartTime.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: useStartTime, environment: var1
-        _fun102980: for (var _fun102980_ip = 0;;) switch (_fun102980_ip) {
+        _fun103236: for (var _fun103236_ip = 0;;) switch (_fun103236_ip) {
             case 0:
                 var7 = arg0;
                 var _closure2_slot0 = var7;
@@ -81,8 +81,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var5.isIOS;
                 var5 = var4.bind(var5)();
                 if (var5) {
-                    _fun102980_ip = 166;
-                    continue _fun102980
+                    _fun103236_ip = 166;
+                    continue _fun103236
                 }
             case 139:
                 var8 = _closure1_slot0;
@@ -93,8 +93,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var4.bind(var8)();
             case 166:
                 if (!var5) {
-                    _fun102980_ip = 172;
-                    continue _fun102980
+                    _fun103236_ip = 172;
+                    continue _fun103236
                 }
             case 169:
                 var5 = !var3;
@@ -114,27 +114,27 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[2] = var6;
                 var2[3] = var5;
                 var1 = function() { // Environment: var1
-                    _fun102982: for (var _fun102982_ip = 0;;) switch (_fun102982_ip) {
+                    _fun103238: for (var _fun103238_ip = 0;;) switch (_fun103238_ip) {
                         case 0:
                             var1 = _closure2_slot1;
                             if (var1) {
-                                _fun102982_ip = 17;
-                                continue _fun102982
+                                _fun103238_ip = 17;
+                                continue _fun103238
                             }
                         case 10:
                             var2 = _closure2_slot3;
                             var1 = !var2;
                         case 17:
                             if (var1) {
-                                _fun102982_ip = 24;
-                                continue _fun102982
+                                _fun103238_ip = 24;
+                                continue _fun103238
                             }
                         case 20:
                             var1 = _closure2_slot2;
                         case 24:
                             if (var1) {
-                                _fun102982_ip = 72;
-                                continue _fun102982
+                                _fun103238_ip = 72;
+                                continue _fun103238
                             }
                         case 27:
                             var3 = _closure1_slot0;
@@ -158,4 +158,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useStartTime = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 12436, 660, 566, 12437, 479, 13409, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 12460, 660, 566, 12461, 479, 13434, 2]);

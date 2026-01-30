@@ -8,7 +8,7 @@ import r3.u;
 public final class t {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final t f47951a = new t();
+    public static final t f47967a = new t();
 
     private t() {
     }

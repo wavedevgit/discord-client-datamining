@@ -101,7 +101,7 @@ public final class MediaManagerModule extends ReactContextBaseJavaModule {
                 WritableMap createMap2 = Arguments.createMap();
                 createMap2.putInt("width", i10);
                 createMap2.putInt("height", i11);
-                Unit unit = Unit.f33282a;
+                Unit unit = Unit.f33298a;
                 createMap.putMap("current", createMap2);
                 createArray.pushMap(createMap);
                 return createArray;
@@ -123,7 +123,7 @@ public final class MediaManagerModule extends ReactContextBaseJavaModule {
         WritableMap createMap5 = Arguments.createMap();
         createMap5.putInt("width", i10);
         createMap5.putInt("height", i11);
-        Unit unit2 = Unit.f33282a;
+        Unit unit2 = Unit.f33298a;
         createMap4.putMap("current", createMap5);
         WritableMap createMap6 = Arguments.createMap();
         createMap6.putInt("width", videoCapabilities.getWidthAlignment());
@@ -330,7 +330,7 @@ public final class MediaManagerModule extends ReactContextBaseJavaModule {
         String uri2 = uri.toString();
         Intrinsics.checkNotNullExpressionValue(uri2, "toString(...)");
         reactEvents.emitModuleEvent(reactApplicationContext, new CompressionProgressEvent(uri2, i10));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @ReactMethod

@@ -33,13 +33,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/chat_input/native/getChatInputPositionStyle.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Original name: getChatInputPositionStyle, environment: var1
-        _fun90006: for (var _fun90006_ip = 0;;) switch (_fun90006_ip) {
+        _fun90243: for (var _fun90243_ip = 0;;) switch (_fun90243_ip) {
             case 0:
                 var1 = arguments[0];
                 var0 = undefined;
                 if (!(var1 === var0)) {
-                    _fun90006_ip = 21;
-                    continue _fun90006
+                    _fun90243_ip = 21;
+                    continue _fun90243
                 }
             case 9:
                 var2 = {};
@@ -56,13 +56,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var4.isIOS;
                 var3 = var3.bind(var4)();
                 if (!var3) {
-                    _fun90006_ip = 72;
-                    continue _fun90006
+                    _fun90243_ip = 72;
+                    continue _fun90243
                 }
             case 63:
                 if (var2) {
-                    _fun90006_ip = 72;
-                    continue _fun90006
+                    _fun90243_ip = 72;
+                    continue _fun90243
                 }
             case 66:
                 var1 = _closure1_slot2;

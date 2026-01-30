@@ -6,10 +6,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f50535a;
+    private final List f50551a;
 
     public a(List formatters) {
         Intrinsics.checkNotNullParameter(formatters, "formatters");
-        this.f50535a = formatters;
+        this.f50551a = formatters;
     }
 }

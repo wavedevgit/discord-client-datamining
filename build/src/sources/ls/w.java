@@ -7,13 +7,13 @@ import kotlinx.coroutines.CoroutineDispatcher;
 public final class w extends CoroutineDispatcher implements kotlinx.coroutines.k {
 
     /* renamed from: i  reason: collision with root package name */
-    private final /* synthetic */ kotlinx.coroutines.k f37485i;
+    private final /* synthetic */ kotlinx.coroutines.k f37501i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final CoroutineDispatcher f37486o;
+    private final CoroutineDispatcher f37502o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final String f37487p;
+    private final String f37503p;
 
     public w(CoroutineDispatcher coroutineDispatcher, String str) {
         kotlinx.coroutines.k kVar;
@@ -22,38 +22,38 @@ public final class w extends CoroutineDispatcher implements kotlinx.coroutines.k
         } else {
             kVar = null;
         }
-        this.f37485i = kVar == null ? gs.f0.a() : kVar;
-        this.f37486o = coroutineDispatcher;
-        this.f37487p = str;
+        this.f37501i = kVar == null ? gs.f0.a() : kVar;
+        this.f37502o = coroutineDispatcher;
+        this.f37503p = str;
     }
 
     @Override // kotlinx.coroutines.k
     public gs.n0 D0(long j10, Runnable runnable, CoroutineContext coroutineContext) {
-        return this.f37485i.D0(j10, runnable, coroutineContext);
+        return this.f37501i.D0(j10, runnable, coroutineContext);
     }
 
     @Override // kotlinx.coroutines.CoroutineDispatcher
     public void E1(CoroutineContext coroutineContext, Runnable runnable) {
-        this.f37486o.E1(coroutineContext, runnable);
+        this.f37502o.E1(coroutineContext, runnable);
     }
 
     @Override // kotlinx.coroutines.k
     public void F(long j10, CancellableContinuation cancellableContinuation) {
-        this.f37485i.F(j10, cancellableContinuation);
+        this.f37501i.F(j10, cancellableContinuation);
     }
 
     @Override // kotlinx.coroutines.CoroutineDispatcher
     public void U1(CoroutineContext coroutineContext, Runnable runnable) {
-        this.f37486o.U1(coroutineContext, runnable);
+        this.f37502o.U1(coroutineContext, runnable);
     }
 
     @Override // kotlinx.coroutines.CoroutineDispatcher
     public boolean W1(CoroutineContext coroutineContext) {
-        return this.f37486o.W1(coroutineContext);
+        return this.f37502o.W1(coroutineContext);
     }
 
     @Override // kotlinx.coroutines.CoroutineDispatcher
     public String toString() {
-        return this.f37487p;
+        return this.f37503p;
     }
 }

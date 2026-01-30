@@ -16,16 +16,16 @@ public final class a extends l {
     private static final long serialVersionUID = -5264909488983076587L;
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient q[] f40863e;
+    private final transient q[] f40879e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient boolean f40864i;
+    private final transient boolean f40880i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient List f40865o;
+    private final transient List f40881o;
 
     /* renamed from: p  reason: collision with root package name */
-    private transient int f40866p = 0;
+    private transient int f40882p = 0;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(List list, boolean z10, boolean z11) {
@@ -39,15 +39,15 @@ public final class a extends l {
                     z12 = true;
                 }
             }
-            this.f40864i = z12;
+            this.f40880i = z12;
             if (z10) {
                 Arrays.sort(qVarArr);
             }
             if (z11) {
                 k(qVarArr, list);
             }
-            this.f40863e = qVarArr;
-            this.f40865o = o(qVarArr, 0L, l.f(1));
+            this.f40879e = qVarArr;
+            this.f40881o = o(qVarArr, 0L, l.f(1));
             return;
         }
         throw new IllegalArgumentException("Missing timezone transitions.");
@@ -136,21 +136,21 @@ public final class a extends l {
 
     @Override // net.time4j.tz.m
     public boolean b() {
-        return this.f40864i;
+        return this.f40880i;
     }
 
     @Override // net.time4j.tz.m
     public p c() {
-        return p.t(this.f40863e[0].h());
+        return p.t(this.f40879e[0].h());
     }
 
     @Override // net.time4j.tz.m
     public q d(gt.f fVar) {
-        int r10 = r(fVar.r(), this.f40863e);
+        int r10 = r(fVar.r(), this.f40879e);
         if (r10 == 0) {
             return null;
         }
-        return this.f40863e[r10 - 1];
+        return this.f40879e[r10 - 1];
     }
 
     @Override // net.time4j.tz.m
@@ -163,16 +163,16 @@ public final class a extends l {
             return true;
         }
         if (obj instanceof a) {
-            return Arrays.equals(this.f40863e, ((a) obj).f40863e);
+            return Arrays.equals(this.f40879e, ((a) obj).f40879e);
         }
         return false;
     }
 
     public int hashCode() {
-        int i10 = this.f40866p;
+        int i10 = this.f40882p;
         if (i10 == 0) {
-            int hashCode = Arrays.hashCode(this.f40863e);
-            this.f40866p = hashCode;
+            int hashCode = Arrays.hashCode(this.f40879e);
+            this.f40882p = hashCode;
             return hashCode;
         }
         return i10;
@@ -180,12 +180,12 @@ public final class a extends l {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean l(a aVar, int i10, int i11) {
-        int min = Math.min(i10, this.f40863e.length);
-        if (min != Math.min(i11, aVar.f40863e.length)) {
+        int min = Math.min(i10, this.f40879e.length);
+        if (min != Math.min(i11, aVar.f40879e.length)) {
             return false;
         }
         for (int i12 = 0; i12 < min; i12++) {
-            if (!this.f40863e[i12].equals(aVar.f40863e[i12])) {
+            if (!this.f40879e[i12].equals(aVar.f40879e[i12])) {
                 return false;
             }
         }
@@ -195,8 +195,8 @@ public final class a extends l {
     /* JADX INFO: Access modifiers changed from: package-private */
     public q m(gt.a aVar, gt.g gVar, j jVar) {
         long j10 = l.j(aVar, gVar);
-        int s10 = s(j10, this.f40863e);
-        q[] qVarArr = this.f40863e;
+        int s10 = s(j10, this.f40879e);
+        q[] qVarArr = this.f40879e;
         if (s10 == qVarArr.length) {
             if (jVar == null) {
                 return null;
@@ -212,15 +212,15 @@ public final class a extends l {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public q n() {
-        q[] qVarArr = this.f40863e;
+        q[] qVarArr = this.f40879e;
         return qVarArr[qVarArr.length - 1];
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public List p(gt.a aVar, gt.g gVar, j jVar) {
         long j10 = l.j(aVar, gVar);
-        int s10 = s(j10, this.f40863e);
-        q[] qVarArr = this.f40863e;
+        int s10 = s(j10, this.f40879e);
+        q[] qVarArr = this.f40879e;
         if (s10 == qVarArr.length) {
             if (jVar == null) {
                 return l.h(qVarArr[qVarArr.length - 1].k());
@@ -240,22 +240,22 @@ public final class a extends l {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int q(int i10) {
-        int min = Math.min(i10, this.f40863e.length);
+        int min = Math.min(i10, this.f40879e.length);
         q[] qVarArr = new q[min];
-        System.arraycopy(this.f40863e, 0, qVarArr, 0, min);
+        System.arraycopy(this.f40879e, 0, qVarArr, 0, min);
         return Arrays.hashCode(qVarArr);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void t(int i10, ObjectOutput objectOutput) {
-        SPX.z(this.f40863e, i10, objectOutput);
+        SPX.z(this.f40879e, i10, objectOutput);
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder(32);
         sb2.append(a.class.getName());
         sb2.append("[transition-count=");
-        sb2.append(this.f40863e.length);
+        sb2.append(this.f40879e.length);
         sb2.append(",hash=");
         sb2.append(hashCode());
         sb2.append(']');
@@ -264,6 +264,6 @@ public final class a extends l {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void u(ObjectOutput objectOutput) {
-        t(this.f40863e.length, objectOutput);
+        t(this.f40879e.length, objectOutput);
     }
 }

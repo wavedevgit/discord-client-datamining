@@ -9,11 +9,11 @@ import zd.b;
 public final class a extends zd.f {
 
     /* renamed from: o  reason: collision with root package name */
-    private final h0 f28446o;
+    private final h0 f28462o;
 
     public a() {
         super("Mp4WebvttDecoder");
-        this.f28446o = new h0();
+        this.f28462o = new h0();
     }
 
     private static zd.b B(h0 h0Var, int i10) {
@@ -47,15 +47,15 @@ public final class a extends zd.f {
 
     @Override // zd.f
     protected zd.g z(byte[] bArr, int i10, boolean z10) {
-        this.f28446o.S(bArr, i10);
+        this.f28462o.S(bArr, i10);
         ArrayList arrayList = new ArrayList();
-        while (this.f28446o.a() > 0) {
-            if (this.f28446o.a() >= 8) {
-                int q10 = this.f28446o.q();
-                if (this.f28446o.q() == 1987343459) {
-                    arrayList.add(B(this.f28446o, q10 - 8));
+        while (this.f28462o.a() > 0) {
+            if (this.f28462o.a() >= 8) {
+                int q10 = this.f28462o.q();
+                if (this.f28462o.q() == 1987343459) {
+                    arrayList.add(B(this.f28462o, q10 - 8));
                 } else {
-                    this.f28446o.V(q10 - 8);
+                    this.f28462o.V(q10 - 8);
                 }
             } else {
                 throw new zd.i("Incomplete Mp4Webvtt Top Level box header found.");

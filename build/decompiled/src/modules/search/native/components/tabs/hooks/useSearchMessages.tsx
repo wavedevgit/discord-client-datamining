@@ -70,4 +70,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useSearchMessages = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4184, 8921, 8923, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4190, 8925, 8927, 566, 2]);

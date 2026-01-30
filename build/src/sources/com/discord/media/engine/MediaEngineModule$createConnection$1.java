@@ -58,11 +58,11 @@ public final class MediaEngineModule$createConnection$1 extends kotlin.coroutine
             }
         }
         this.this$0.getMediaEngine().createVoiceConnection(this.$connectionId, this.$userId, NativeMapExtensionsKt.toJsonString(this.$connectionOptions), this.$callback);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$createConnection$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((MediaEngineModule$createConnection$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

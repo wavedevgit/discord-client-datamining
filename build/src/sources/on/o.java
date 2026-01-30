@@ -5,22 +5,22 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public final class o {
 
     /* renamed from: a  reason: collision with root package name */
-    private final long f44578a;
+    private final long f44594a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f44579b;
+    private final boolean f44595b;
 
     public o(long j10, boolean z10) {
-        this.f44578a = j10;
-        this.f44579b = z10;
+        this.f44594a = j10;
+        this.f44595b = z10;
     }
 
     public final long a() {
-        return this.f44578a;
+        return this.f44594a;
     }
 
     public final boolean b() {
-        return this.f44579b;
+        return this.f44595b;
     }
 
     public boolean equals(Object obj) {
@@ -31,19 +31,19 @@ public final class o {
             return false;
         }
         o oVar = (o) obj;
-        if (this.f44578a == oVar.f44578a && this.f44579b == oVar.f44579b) {
+        if (this.f44594a == oVar.f44594a && this.f44595b == oVar.f44595b) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (Long.hashCode(this.f44578a) * 31) + Boolean.hashCode(this.f44579b);
+        return (Long.hashCode(this.f44594a) * 31) + Boolean.hashCode(this.f44595b);
     }
 
     public String toString() {
-        long j10 = this.f44578a;
-        boolean z10 = this.f44579b;
+        long j10 = this.f44594a;
+        boolean z10 = this.f44595b;
         return "ExtraCameraOptions(dynamicRange=" + j10 + ", previewStabilization=" + z10 + ")";
     }
 

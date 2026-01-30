@@ -7,20 +7,20 @@ import kotlin.reflect.jvm.internal.impl.descriptors.ClassConstructorDescriptor;
 public class i implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final TypeAliasConstructorDescriptorImpl f33869d;
+    private final TypeAliasConstructorDescriptorImpl f33885d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ClassConstructorDescriptor f33870e;
+    private final ClassConstructorDescriptor f33886e;
 
     public i(TypeAliasConstructorDescriptorImpl typeAliasConstructorDescriptorImpl, ClassConstructorDescriptor classConstructorDescriptor) {
-        this.f33869d = typeAliasConstructorDescriptorImpl;
-        this.f33870e = classConstructorDescriptor;
+        this.f33885d = typeAliasConstructorDescriptorImpl;
+        this.f33886e = classConstructorDescriptor;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         TypeAliasConstructorDescriptorImpl k10;
-        k10 = TypeAliasConstructorDescriptorImpl.k(this.f33869d, this.f33870e);
+        k10 = TypeAliasConstructorDescriptorImpl.k(this.f33885d, this.f33886e);
         return k10;
     }
 }

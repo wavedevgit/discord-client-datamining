@@ -7,21 +7,21 @@ public final class ud extends hf.a {
     public static final Parcelable.Creator<ud> CREATOR = new e();
 
     /* renamed from: d  reason: collision with root package name */
-    public int f38702d;
+    public int f38718d;
 
     /* renamed from: e  reason: collision with root package name */
-    public String f38703e;
+    public String f38719e;
 
     public ud(int i10, String str) {
-        this.f38702d = i10;
-        this.f38703e = str;
+        this.f38718d = i10;
+        this.f38719e = str;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
         int a10 = hf.c.a(parcel);
-        hf.c.l(parcel, 2, this.f38702d);
-        hf.c.s(parcel, 3, this.f38703e, false);
+        hf.c.l(parcel, 2, this.f38718d);
+        hf.c.s(parcel, 3, this.f38719e, false);
         hf.c.b(parcel, a10);
     }
 }

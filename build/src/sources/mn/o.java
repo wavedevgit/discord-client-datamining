@@ -3,14 +3,14 @@ package mn;
 public final class o implements tq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final n f39245a;
+    private final n f39261a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final tq.h f39246b;
+    private final tq.h f39262b;
 
     public o(n nVar, tq.h hVar) {
-        this.f39245a = nVar;
-        this.f39246b = hVar;
+        this.f39261a = nVar;
+        this.f39262b = hVar;
     }
 
     public static rn.a a(n nVar, sq.a aVar) {
@@ -24,6 +24,6 @@ public final class o implements tq.d {
     @Override // javax.inject.Provider
     /* renamed from: c */
     public rn.a get() {
-        return a(this.f39245a, tq.c.b(this.f39246b));
+        return a(this.f39261a, tq.c.b(this.f39262b));
     }
 }

@@ -116,27 +116,27 @@ public abstract class a {
     }
 
     public static final KSerializer b() {
-        return kotlinx.serialization.internal.a.f36382c;
+        return kotlinx.serialization.internal.a.f36398c;
     }
 
     public static final KSerializer c() {
-        return b.f36383c;
+        return b.f36399c;
     }
 
     public static final KSerializer d() {
-        return c.f36384c;
+        return c.f36400c;
     }
 
     public static final KSerializer e() {
-        return d.f36385c;
+        return d.f36401c;
     }
 
     public static final KSerializer f() {
-        return e.f36386c;
+        return e.f36402c;
     }
 
     public static final KSerializer g() {
-        return f.f36387c;
+        return f.f36403c;
     }
 
     public static final KSerializer h(KSerializer elementSerializer) {
@@ -145,7 +145,7 @@ public abstract class a {
     }
 
     public static final KSerializer i() {
-        return g.f36388c;
+        return g.f36404c;
     }
 
     public static final KSerializer j(KSerializer keySerializer, KSerializer valueSerializer) {
@@ -176,7 +176,7 @@ public abstract class a {
     }
 
     public static final KSerializer o() {
-        return kotlinx.serialization.internal.h.f36389c;
+        return kotlinx.serialization.internal.h.f36405c;
     }
 
     public static final KSerializer p(KSerializer aSerializer, KSerializer bSerializer, KSerializer cSerializer) {
@@ -187,19 +187,19 @@ public abstract class a {
     }
 
     public static final KSerializer q() {
-        return i.f36390c;
+        return i.f36406c;
     }
 
     public static final KSerializer r() {
-        return kotlinx.serialization.internal.j.f36391c;
+        return kotlinx.serialization.internal.j.f36407c;
     }
 
     public static final KSerializer s() {
-        return k.f36392c;
+        return k.f36408c;
     }
 
     public static final KSerializer t() {
-        return l.f36393c;
+        return l.f36409c;
     }
 
     public static final KSerializer u(KSerializer kSerializer) {

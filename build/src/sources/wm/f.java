@@ -22,19 +22,19 @@ import u3.j;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private Map f52695a;
+    private Map f52711a;
 
     /* renamed from: b  reason: collision with root package name */
-    private u3.f f52696b;
+    private u3.f f52712b;
 
     /* renamed from: c  reason: collision with root package name */
-    private String f52697c;
+    private String f52713c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f52698d = new LinkedHashMap();
+    private final Map f52714d = new LinkedHashMap();
 
     /* renamed from: e  reason: collision with root package name */
-    private final a f52699e = new a();
+    private final a f52715e = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m {
@@ -49,10 +49,10 @@ public final class f {
                 if (!f.this.i()) {
                     source.getLifecycle().d(this);
                     f fVar = f.this;
-                    u3.f fVar2 = fVar.f52696b;
+                    u3.f fVar2 = fVar.f52712b;
                     Intrinsics.checkNotNull(fVar2);
                     SavedStateRegistry savedStateRegistry = fVar2.getSavedStateRegistry();
-                    String str = f.this.f52697c;
+                    String str = f.this.f52713c;
                     Intrinsics.checkNotNull(str);
                     fVar.k(savedStateRegistry.a(str));
                     return;
@@ -65,7 +65,7 @@ public final class f {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final boolean i() {
-        if (this.f52695a != null) {
+        if (this.f52711a != null) {
             return true;
         }
         return false;
@@ -74,11 +74,11 @@ public final class f {
     /* JADX INFO: Access modifiers changed from: private */
     public final void k(Bundle bundle) {
         Set<String> keySet;
-        if (this.f52695a == null) {
-            this.f52695a = new LinkedHashMap();
+        if (this.f52711a == null) {
+            this.f52711a = new LinkedHashMap();
             if (bundle != null && (keySet = bundle.keySet()) != null) {
                 for (String str : keySet) {
-                    Map map = this.f52695a;
+                    Map map = this.f52711a;
                     Intrinsics.checkNotNull(map);
                     Bundle bundle2 = bundle.getBundle(str);
                     Intrinsics.checkNotNull(bundle2);
@@ -86,7 +86,7 @@ public final class f {
                     map.put(a10.c(), a10.d());
                 }
             }
-            for (wm.a aVar : this.f52698d.values()) {
+            for (wm.a aVar : this.f52714d.values()) {
                 if (aVar.getLifecycle().b() == Lifecycle.State.f4393e) {
                     l(aVar);
                 }
@@ -97,7 +97,7 @@ public final class f {
     }
 
     private final void l(wm.a aVar) {
-        Map map = this.f52695a;
+        Map map = this.f52711a;
         if (map == null) {
             return;
         }
@@ -105,7 +105,7 @@ public final class f {
     }
 
     private final void n(wm.a aVar) {
-        Map map = this.f52695a;
+        Map map = this.f52711a;
         if (map == null) {
             return;
         }
@@ -118,9 +118,9 @@ public final class f {
     /* JADX INFO: Access modifiers changed from: private */
     public final Bundle o() {
         Bundle bundle = new Bundle();
-        Map map = this.f52695a;
+        Map map = this.f52711a;
         if (map != null) {
-            for (wm.a aVar : this.f52698d.values()) {
+            for (wm.a aVar : this.f52714d.values()) {
                 n(aVar);
             }
             for (Map.Entry entry : map.entrySet()) {
@@ -134,8 +134,8 @@ public final class f {
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(parentOwner, "parentOwner");
         g();
-        this.f52696b = parentOwner;
-        this.f52697c = key;
+        this.f52712b = parentOwner;
+        this.f52713c = key;
         if (i()) {
             return;
         }
@@ -152,7 +152,7 @@ public final class f {
                     return o10;
                 }
             });
-            lifecycle.a(this.f52699e);
+            lifecycle.a(this.f52715e);
         } catch (IllegalArgumentException e10) {
             throw new IllegalArgumentException("Error registering SavedStateProvider: key \"" + key + "\" is already in use on parent SavedStateRegistryOwner " + parentOwner + ".\nThis is most easily remedied by giving your container Screen rendering a unique Compatible.compatibilityKey, perhaps by wrapping it with Named.", e10);
         }
@@ -161,18 +161,18 @@ public final class f {
     public final void g() {
         Lifecycle lifecycle;
         SavedStateRegistry savedStateRegistry;
-        u3.f fVar = this.f52696b;
+        u3.f fVar = this.f52712b;
         if (fVar != null && (savedStateRegistry = fVar.getSavedStateRegistry()) != null) {
-            String str = this.f52697c;
+            String str = this.f52713c;
             Intrinsics.checkNotNull(str);
             savedStateRegistry.e(str);
         }
-        u3.f fVar2 = this.f52696b;
+        u3.f fVar2 = this.f52712b;
         if (fVar2 != null && (lifecycle = fVar2.getLifecycle()) != null) {
-            lifecycle.d(this.f52699e);
+            lifecycle.d(this.f52715e);
         }
-        this.f52696b = null;
-        this.f52697c = null;
+        this.f52712b = null;
+        this.f52713c = null;
     }
 
     public final void h(View view, String key) {
@@ -181,7 +181,7 @@ public final class f {
         LifecycleOwner a10 = r0.a(view);
         if (a10 != null) {
             wm.a aVar = new wm.a(key, a10);
-            if (((wm.a) this.f52698d.put(key, aVar)) == null) {
+            if (((wm.a) this.f52714d.put(key, aVar)) == null) {
                 u3.f a11 = j.a(view);
                 if (a11 == null) {
                     j.b(view, aVar);
@@ -198,10 +198,10 @@ public final class f {
     public final void j(Collection keysToKeep) {
         Intrinsics.checkNotNullParameter(keysToKeep, "keysToKeep");
         Collection collection = keysToKeep;
-        for (String str : x0.j(this.f52698d.keySet(), collection)) {
-            this.f52698d.remove(str);
+        for (String str : x0.j(this.f52714d.keySet(), collection)) {
+            this.f52714d.remove(str);
         }
-        Map map = this.f52695a;
+        Map map = this.f52711a;
         if (map == null) {
             return;
         }
@@ -211,12 +211,12 @@ public final class f {
     public final void m(String key) {
         Unit unit;
         Intrinsics.checkNotNullParameter(key, "key");
-        wm.a aVar = (wm.a) this.f52698d.remove(key);
+        wm.a aVar = (wm.a) this.f52714d.remove(key);
         if (aVar == null) {
             unit = null;
         } else {
             n(aVar);
-            unit = Unit.f33282a;
+            unit = Unit.f33298a;
         }
         if (unit != null) {
             return;

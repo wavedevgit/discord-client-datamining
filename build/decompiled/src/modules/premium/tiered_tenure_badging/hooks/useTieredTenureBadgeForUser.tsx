@@ -40,15 +40,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var4;
         var0 = function() { // Environment: var0
-            _fun59360: for (var _fun59360_ip = 0;;) switch (_fun59360_ip) {
+            _fun59404: for (var _fun59404_ip = 0;;) switch (_fun59404_ip) {
                 case 0:
                     var2 = _closure2_slot0;
                     var5 = null;
                     var2 = var5 != var2;
                     var3 = null;
                     if (!var2) {
-                        _fun59360_ip = 42;
-                        continue _fun59360
+                        _fun59404_ip = 42;
+                        continue _fun59404
                     }
                 case 20:
                     var4 = _closure1_slot2;
@@ -59,8 +59,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var5 == var3;
                     var2 = undefined;
                     if (var0) {
-                        _fun59360_ip = 57;
-                        continue _fun59360
+                        _fun59404_ip = 57;
+                        continue _fun59404
                     }
                 case 51:
                     var2 = var3.premiumSince;
@@ -68,22 +68,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var5 == var3;
                     var0 = null;
                     if (var6) {
-                        _fun59360_ip = 119;
-                        continue _fun59360
+                        _fun59404_ip = 119;
+                        continue _fun59404
                     }
                 case 66:
                     var2 = var5 == var2;
                     var0 = null;
                     if (var2) {
-                        _fun59360_ip = 119;
-                        continue _fun59360
+                        _fun59404_ip = 119;
+                        continue _fun59404
                     }
                 case 75:
                     var2 = var5 == var3;
                     var4 = undefined;
                     if (var2) {
-                        _fun59360_ip = 97;
-                        continue _fun59360
+                        _fun59404_ip = 97;
+                        continue _fun59404
                     }
                 case 84:
                     var3 = var3.badges;
@@ -91,13 +91,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var3;
                 case 97:
                     if (var2) {
-                        _fun59360_ip = 115;
-                        continue _fun59360
+                        _fun59404_ip = 115;
+                        continue _fun59404
                     }
                 case 100:
                     var3 = var4.forEach;
                     var2 = function(arg0) { // Environment: var1
-                        _fun59361: for (var _fun59361_ip = 0;;) switch (_fun59361_ip) {
+                        _fun59405: for (var _fun59405_ip = 0;;) switch (_fun59405_ip) {
                             case 0:
                                 var2 = _closure1_slot0;
                                 var1 = _closure1_slot1;
@@ -111,8 +111,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var2 = var2.bind(var3)(var1);
                                 var1 = null;
                                 if (!(var1 != var2)) {
-                                    _fun59361_ip = 57;
-                                    continue _fun59361
+                                    _fun59405_ip = 57;
+                                    continue _fun59405
                                 }
                             case 50:
                                 var _closure3_slot0 = var2;
@@ -132,4 +132,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useTieredTenureBadgeForUser = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4616, 566, 7282, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4622, 566, 7285, 2]);

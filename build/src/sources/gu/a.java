@@ -13,10 +13,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a extends c {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final C0346a f27203c = new C0346a(null);
+    public static final C0346a f27219c = new C0346a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private final e f27204b;
+    private final e f27220b;
 
     /* renamed from: gu.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -31,7 +31,7 @@ public final class a extends c {
 
     public a(e trustRootIndex) {
         Intrinsics.checkNotNullParameter(trustRootIndex, "trustRootIndex");
-        this.f27204b = trustRootIndex;
+        this.f27220b = trustRootIndex;
     }
 
     private final boolean b(X509Certificate x509Certificate, X509Certificate x509Certificate2) {
@@ -60,7 +60,7 @@ public final class a extends c {
             Object obj = arrayList.get(arrayList.size() - 1);
             Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type java.security.cert.X509Certificate");
             X509Certificate x509Certificate = (X509Certificate) obj;
-            X509Certificate a10 = this.f27204b.a(x509Certificate);
+            X509Certificate a10 = this.f27220b.a(x509Certificate);
             if (a10 != null) {
                 if (arrayList.size() > 1 || !Intrinsics.areEqual(x509Certificate, a10)) {
                     arrayList.add(a10);
@@ -95,13 +95,13 @@ public final class a extends c {
         if (obj == this) {
             return true;
         }
-        if ((obj instanceof a) && Intrinsics.areEqual(((a) obj).f27204b, this.f27204b)) {
+        if ((obj instanceof a) && Intrinsics.areEqual(((a) obj).f27220b, this.f27220b)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f27204b.hashCode();
+        return this.f27220b.hashCode();
     }
 }

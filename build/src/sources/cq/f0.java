@@ -162,7 +162,7 @@ public abstract class f0 {
         Intrinsics.checkNotNullParameter(it, "it");
         textView.setTypeface(it);
         function1.invoke(it);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     public static final void i(final TextView textView, String str, final StyleElements.FontWeight fontWeight, Function1 onRemoteFontDownloaded) {
@@ -204,14 +204,14 @@ public abstract class f0 {
             if (Build.VERSION.SDK_INT >= 29) {
                 e(textView, fontWeight);
             }
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
 
     public static final Unit l(Typeface it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     public static final void m(TextView textView, TextViewStyle styles, Set excludedStyleElements) {

@@ -5,28 +5,28 @@ import java.util.List;
 public class e implements m {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f48032a;
+    private final List f48048a;
 
     public e(List list) {
-        this.f48032a = list;
+        this.f48048a = list;
     }
 
     @Override // r5.m
     public o5.a a() {
-        if (((y5.a) this.f48032a.get(0)).i()) {
-            return new o5.k(this.f48032a);
+        if (((y5.a) this.f48048a.get(0)).i()) {
+            return new o5.k(this.f48048a);
         }
-        return new o5.j(this.f48032a);
+        return new o5.j(this.f48048a);
     }
 
     @Override // r5.m
     public List b() {
-        return this.f48032a;
+        return this.f48048a;
     }
 
     @Override // r5.m
     public boolean isStatic() {
-        if (this.f48032a.size() != 1 || !((y5.a) this.f48032a.get(0)).i()) {
+        if (this.f48048a.size() != 1 || !((y5.a) this.f48048a.get(0)).i()) {
             return false;
         }
         return true;

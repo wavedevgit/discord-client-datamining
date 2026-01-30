@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var7;
     var _closure1_slot2 = var6;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
-        _fun64424: for (var _fun64424_ip = 0;;) switch (_fun64424_ip) {
+        _fun64468: for (var _fun64468_ip = 0;;) switch (_fun64468_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -30,8 +30,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun64424_ip = 74;
-                continue _fun64424;
+                _fun64468_ip = 74;
+                continue _fun64468;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var7.bind(var0)(var4);
     var1 = function(arg0) { // Environment: var1
         var3 = function() { // Original name: WindowVisibilityVideoManager, environment: var5
-            _fun64428: for (var _fun64428_ip = 0;;) switch (_fun64428_ip) {
+            _fun64472: for (var _fun64472_ip = 0;;) switch (_fun64472_ip) {
                 case 0:
                     var5 = this;
                     var0 = _closure1_slot3;
@@ -101,14 +101,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot9;
                     var0 = var0.bind(var3)();
                     if (var0) {
-                        _fun64428_ip = 64;
-                        continue _fun64428
+                        _fun64472_ip = 64;
+                        continue _fun64472
                     }
                 case 51:
                     var0 = var10.apply;
                     var0 = var0.bind(var10)(var5, var3);
-                    _fun64428_ip = 102;
-                    continue _fun64428;
+                    _fun64472_ip = 102;
+                    continue _fun64472;
                 case 64:
                     var6 = global;
                     var9 = var6.Reflect;
@@ -169,7 +169,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var5 * var6;
                     var0.HIDDEN_WINDOW_DISABLE_VIDEO_DURATION_MS = var5;
                     var1 = function() { // Environment: var1
-                        _fun64429: for (var _fun64429_ip = 0;;) switch (_fun64429_ip) {
+                        _fun64473: for (var _fun64473_ip = 0;;) switch (_fun64473_ip) {
                             case 0:
                                 var0 = _closure3_slot0;
                                 var4 = var0.discordVisible;
@@ -181,8 +181,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1 = var5.bind(var0)(var1);
                                 var1 = var1.bind(var0)();
                                 if (!(var4 !== var1)) {
-                                    _fun64429_ip = 176;
-                                    continue _fun64429
+                                    _fun64473_ip = 176;
+                                    continue _fun64473
                                 }
                             case 49:
                                 var1 = _closure3_slot0;
@@ -201,8 +201,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var3 = _closure3_slot0;
                                 var2 = var3.disableVideoTimer;
                                 if (var1) {
-                                    _fun64429_ip = 153;
-                                    continue _fun64429
+                                    _fun64473_ip = 153;
+                                    continue _fun64473
                                 }
                             case 127:
                                 var5 = var2.start;
@@ -216,8 +216,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                     return var0;
                                 };
                                 var1 = var5.bind(var2)(var4, var1);
-                                _fun64429_ip = 176;
-                                continue _fun64429;
+                                _fun64473_ip = 176;
+                                continue _fun64473;
                             case 153:
                                 var1 = var2.stop;
                                 var1 = var1.bind(var2)();
@@ -282,15 +282,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'setIncomingVideoEnabled';
         var4.key = var6;
         var5 = function(arg0) { // Original name: value, environment: var5
-            _fun64433: for (var _fun64433_ip = 0;;) switch (_fun64433_ip) {
+            _fun64477: for (var _fun64477_ip = 0;;) switch (_fun64477_ip) {
                 case 0:
                     var1 = arg0;
                     var3 = this;
                     var0 = var3.incomingVideoEnabled;
                     var3.incomingVideoEnabled = var1;
                     if (!(var0 !== var1)) {
-                        _fun64433_ip = 121;
-                        continue _fun64433
+                        _fun64477_ip = 121;
+                        continue _fun64477
                     }
                 case 22:
                     var4 = var3.logger;
@@ -340,4 +340,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.WindowVisibilityEvent = var3;
     var2.WindowVisibilityVideoManager = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 3587, 3, 667, 7993, 806, 7994, 3664, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 3589, 3, 667, 7996, 806, 7997, 3666, 2]);

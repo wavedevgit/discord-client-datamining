@@ -45,7 +45,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot5 = var3;
     var3 = function(arg0) { // Original name: IgnoredUserRow, environment: var1
-        _fun81120: for (var _fun81120_ip = 0;;) switch (_fun81120_ip) {
+        _fun81166: for (var _fun81166_ip = 0;;) switch (_fun81166_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.userRecord;
@@ -90,14 +90,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = null;
                 var5 = var6 != var8;
                 if (!var5) {
-                    _fun81120_ip = 187;
-                    continue _fun81120
+                    _fun81166_ip = 187;
+                    continue _fun81166
                 }
             case 169:
                 var9 = var8.globalName;
                 if (!(var6 == var9)) {
-                    _fun81120_ip = 184;
-                    continue _fun81120
+                    _fun81166_ip = 184;
+                    continue _fun81166
                 }
             case 179:
                 var9 = var8.username;
@@ -108,8 +108,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6 == var8;
                 var5 = undefined;
                 if (var9) {
-                    _fun81120_ip = 208;
-                    continue _fun81120
+                    _fun81166_ip = 208;
+                    continue _fun81166
                 }
             case 202:
                 var5 = var8.globalName;
@@ -117,15 +117,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6 != var5;
                 var5 = undefined;
                 if (!var9) {
-                    _fun81120_ip = 234;
-                    continue _fun81120
+                    _fun81166_ip = 234;
+                    continue _fun81166
                 }
             case 217:
                 var9 = var6 == var8;
                 var6 = undefined;
                 if (var9) {
-                    _fun81120_ip = 231;
-                    continue _fun81120
+                    _fun81166_ip = 231;
+                    continue _fun81166
                 }
             case 226:
                 var6 = var8.username;
@@ -153,15 +153,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5[0] = var6;
                 var0.accessibilityActions = var5;
                 var5 = function(arg0) { // Original name: onAccessibilityAction, environment: var7
-                    _fun81121: for (var _fun81121_ip = 0;;) switch (_fun81121_ip) {
+                    _fun81167: for (var _fun81167_ip = 0;;) switch (_fun81167_ip) {
                         case 0:
                             var0 = arg0;
                             var0 = var0.nativeEvent;
                             var1 = var0.actionName;
                             var0 = 'unignore';
                             if (!(var0 !== var1)) {
-                                _fun81121_ip = 29;
-                                continue _fun81121
+                                _fun81167_ip = 29;
+                                continue _fun81167
                             }
                         case 25:
                             var0 = undefined;
@@ -235,7 +235,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/content_and_social/IgnoredUserRow.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: ConnectedIgnoredUserRow, environment: var1
-        _fun81124: for (var _fun81124_ip = 0;;) switch (_fun81124_ip) {
+        _fun81170: for (var _fun81170_ip = 0;;) switch (_fun81170_ip) {
             case 0:
                 var1 = arg0;
                 var1 = var1.userId;
@@ -261,8 +261,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var2 = var0 == var5;
                 if (var2) {
-                    _fun81124_ip = 99;
-                    continue _fun81124
+                    _fun81170_ip = 99;
+                    continue _fun81170
                 }
             case 78:
                 var3 = _closure1_slot4;
@@ -276,4 +276,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1613, 33, 7979, 5684, 4854, 5409, 1234, 7310, 4037, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1613, 33, 7982, 5687, 4860, 5413, 1234, 7313, 4043, 566, 2]);

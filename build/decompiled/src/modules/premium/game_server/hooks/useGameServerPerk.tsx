@@ -77,7 +77,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = var4.bind(var3)(var2);
         var2 = var2.bind(var3)();
         var5 = var2.gameName;
+        var _closure2_slot3 = var5;
         var4 = var2.gameName2;
+        var _closure2_slot4 = var4;
         var3 = _closure1_slot3;
         var2 = var3.useMemo;
         var1 = new Array(4);
@@ -86,22 +88,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[2] = var5;
         var1[3] = var4;
         var0 = function() { // Environment: var0
-            _fun77978: for (var _fun77978_ip = 0;;) switch (_fun77978_ip) {
+            _fun78022: for (var _fun78022_ip = 0;;) switch (_fun78022_ip) {
                 case 0:
                     var1 = _closure2_slot1;
                     var2 = null;
                     var0 = null;
                     if (!var1) {
-                        _fun77978_ip = 221;
-                        continue _fun77978
+                        _fun78022_ip = 242;
+                        continue _fun78022
                     }
                 case 17:
                     var1 = _closure2_slot2;
                     var1 = var2 != var1;
                     var0 = null;
                     if (!var1) {
-                        _fun77978_ip = 221;
-                        continue _fun77978
+                        _fun78022_ip = 242;
+                        continue _fun78022
                     }
                 case 33:
                     var1 = {};
@@ -124,12 +126,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1.title = var10;
                     var8 = var5[var8];
                     var8 = var9.bind(var4)(var8);
-                    var9 = var8.intl;
-                    var8 = var9.string;
+                    var10 = var8.intl;
+                    var9 = var10.format;
                     var7 = var5[var7];
                     var7 = var3.bind(var4)(var7);
-                    var7 = var7.EGkJAG;
-                    var7 = var8.bind(var9)(var7);
+                    var8 = var7["+UqyGU"];
+                    var7 = {};
+                    var11 = _closure2_slot3;
+                    var7.gameName = var11;
+                    var11 = _closure2_slot4;
+                    var7.gameName2 = var11;
+                    var7 = var9.bind(var10)(var8, var7);
                     var1.description = var7;
                     var6 = _closure2_slot2;
                     var1.cost = var6;
@@ -146,7 +153,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var3.bind(var4)(var2);
                     var1.staticImageUrl = var2;
                     var0 = var1;
-                case 221:
+                case 242:
                     return var0;
             }
         };
@@ -155,4 +162,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 6672, 6675, 9866, 5600, 566, 9868, 1234, 2203, 9869, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 6675, 6678, 9871, 5603, 566, 9873, 1234, 2203, 9874, 2]);

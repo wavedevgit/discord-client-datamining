@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11 = var14.bind(var15)(var11);
         var2.title = var11;
         var11 = function(arg0) { // Original name: headerLeft, environment: var3
-            _fun57371: for (var _fun57371_ip = 0;;) switch (_fun57371_ip) {
+            _fun57415: for (var _fun57415_ip = 0;;) switch (_fun57415_ip) {
                 case 0:
                     var3 = arg0;
                     var0 = var3.canGoBack;
@@ -174,16 +174,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = undefined;
                     var5 = var4.bind(var2)(var1);
                     if (var0) {
-                        _fun57371_ip = 62;
-                        continue _fun57371
+                        _fun57415_ip = 62;
+                        continue _fun57415
                     }
                 case 37:
                     var1 = var5.getHeaderCloseButton;
                     var0 = _closure2_slot1;
                     var0 = var1.bind(var5)(var0);
                     var0 = var0.bind(var2)(var3);
-                    _fun57371_ip = 85;
-                    continue _fun57371;
+                    _fun57415_ip = 85;
+                    continue _fun57415;
                 case 62:
                     var4 = var5.getHeaderBackButton;
                     var1 = _closure2_slot2;
@@ -292,7 +292,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'components_native/premium/PremiumModal.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: PremiumModal, environment: var1
-        _fun57374: for (var _fun57374_ip = 0;;) switch (_fun57374_ip) {
+        _fun57418: for (var _fun57418_ip = 0;;) switch (_fun57418_ip) {
             case 0:
                 var0 = arg0;
                 var16 = var0.applicationId;
@@ -321,8 +321,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var1.analyticsLocations;
                 var1 = null;
                 if (!(var1 == var7)) {
-                    _fun57374_ip = 148;
-                    continue _fun57374
+                    _fun57418_ip = 148;
+                    continue _fun57418
                 }
             case 138:
                 var1 = _closure1_slot3;
@@ -371,4 +371,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'PREMIUM_KEY';
     var2.PREMIUM_KEY = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 33, 1234, 4661, 7005, 10511, 10527, 10517, 10567, 5684, 5744, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 33, 1234, 4667, 7008, 10517, 10533, 10523, 10573, 5687, 5747, 2]);

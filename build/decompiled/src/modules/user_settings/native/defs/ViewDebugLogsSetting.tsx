@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot7 = var0;
     var0 = function() { // Original name: ViewDebugLogsActionSheet, environment: var8
-        _fun85518: for (var _fun85518_ip = 0;;) switch (_fun85518_ip) {
+        _fun85564: for (var _fun85564_ip = 0;;) switch (_fun85564_ip) {
             case 0:
                 var3 = _closure1_slot4;
                 var9 = _closure1_slot0;
@@ -195,8 +195,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var8.bind(var9)();
                 var8 = null;
                 if (!var9) {
-                    _fun85518_ip = 564;
-                    continue _fun85518
+                    _fun85564_ip = 564;
+                    continue _fun85564
                 }
             case 437:
                 var11 = _closure1_slot4;
@@ -338,4 +338,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 3237, 7692, 4518, 9062, 5164, 5167, 1234, 10991, 10993, 3233, 10996, 478, 9103, 10997, 8939, 10998, 1348, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 3237, 7695, 4524, 9066, 5170, 5173, 1234, 10997, 10999, 3233, 11002, 478, 9107, 11003, 8943, 11004, 1348, 2]);

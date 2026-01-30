@@ -11,15 +11,15 @@ public final class c extends o {
     class a extends j {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ int f40436a;
+        final /* synthetic */ int f40452a;
 
         a(int i10) {
-            this.f40436a = i10;
+            this.f40452a = i10;
         }
 
         @Override // net.time4j.calendar.j
         public int d() {
-            return (((this.f40436a - 1) * 60) + c.this.getNumber()) - 1;
+            return (((this.f40452a - 1) * 60) + c.this.getNumber()) - 1;
         }
     }
 

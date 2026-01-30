@@ -1,164 +1,99 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun37436: for (var _fun37436_ip = 0;;) switch (_fun37436_ip) {
+    _fun37453: for (var _fun37453_ip = 0;;) switch (_fun37453_ip) {
         case 0:
-            var10 = require;
+            var5 = require;
             var2 = exports;
-            var9 = dependencyMap;
+            var7 = dependencyMap;
             var0 = global;
-            var5 = var0.Object;
-            var4 = var5.defineProperty;
-            var3 = {};
-            var0 = true;
-            var3.value = var0;
+            var6 = var0.Object;
+            var4 = var6.defineProperty;
+            var1 = {};
+            var8 = true;
+            var1.value = var8;
             var0 = '__esModule';
-            var0 = var4.bind(var5)(var2, var0, var3);
-            var0 = 0;
-            var3 = var9[var0];
+            var0 = var4.bind(var6)(var2, var0, var1);
+            var1 = {};
+            var6 = 'RNLinearGradient';
+            var1.uiViewClassName = var6;
+            var4 = {};
+            var9 = {};
+            var11 = 0;
+            var10 = var7[var11];
             var0 = undefined;
-            var3 = var10.bind(var0)(var3);
-            var3 = var3.NativeModules;
-            var _closure1_slot0 = var3;
-            var8 = 1;
-            var3 = {
-                'mediaType': 'photo',
-                'videoQuality': 'high',
-                'quality': 1,
-                'maxWidth': 0,
-                'maxHeight': 0,
-                'includeBase64': false,
-                'cameraType': 'back',
-                'selectionLimit': 1,
-                'saveToPhotos': false,
-                'durationLimit': 0,
-                'includeExtra': false
-            };
-            var _closure1_slot1 = var3;
-            var3 = var9[var8];
-            var6 = var10.bind(var0)(var3);
-            for (var3 in var6)
-                case 104: {
-                    case 113: var12 = var3;
-                    var11 = var9[var8];
-                    var11 = var10.bind(var0)(var11);
-                    var11 = var11[var12];
-                    var2[var12] = var11;
-                    _fun37436_ip = 104;
-                    continue _fun37436;
-                }
-        case 135:
-            var3 = function(arg0, arg1) { // Original name: launchCamera, environment: var1
-                var1 = arg0;
-                var _closure2_slot0 = var1;
-                var1 = arg1;
-                var _closure2_slot1 = var1;
-                var1 = global;
-                var2 = var1.Promise;
-                var1 = var2.prototype;
-                var1 = Object.create(var1, {
-                    constructor: {
-                        value: var2
-                    }
-                });
-                var3 = function(arg0) { // Environment: var0
-                    var1 = arg0;
-                    var _closure3_slot0 = var1;
-                    var2 = _closure1_slot0;
-                    var3 = var2.ImagePickerManager;
-                    var2 = var3.launchCamera;
-                    var4 = global;
-                    var7 = var4.Object;
-                    var6 = var7.assign;
-                    var5 = _closure1_slot1;
-                    var4 = _closure2_slot0;
-                    var1 = {};
-                    var1 = var6.bind(var7)(var1, var5, var4);
-                    var0 = function(arg0) { // Environment: var0
-                        _fun37439: for (var _fun37439_ip = 0;;) switch (_fun37439_ip) {
-                            case 0:
-                                var2 = arg0;
-                                var1 = _closure2_slot1;
-                                if (!var1) {
-                                    _fun37439_ip = 24;
-                                    continue _fun37439
-                                }
-                            case 13:
-                                var1 = _closure2_slot1;
-                                var0 = undefined;
-                                var0 = var1.bind(var0)(var2);
-                            case 24:
-                                var1 = _closure3_slot0;
-                                var0 = undefined;
-                                var1 = var1.bind(var0)(var2);
-                                return var0;
-                        }
-                    };
-                    var0 = var2.bind(var3)(var1, var0);
-                    var0 = undefined;
-                    return var0;
-                };
-                var4 = var1;
-                var0 = new var4[var2](var3, var2);
-                var0 = var0 instanceof Object ? var0 : var1;
+            var13 = var5.bind(var0)(var10);
+            var10 = 'default';
+            var14 = var10 in var13;
+            var12 = var13;
+            if (!var14) {
+                _fun37453_ip = 92;
+                continue _fun37453
+            }
+        case 87:
+            var12 = var13.default;
+        case 92:
+            var9.diff = var12;
+            var4.startPoint = var9;
+            var9 = {};
+            var12 = var7[var11];
+            var13 = var5.bind(var0)(var12);
+            var14 = var10 in var13;
+            var12 = var13;
+            if (!var14) {
+                _fun37453_ip = 128;
+                continue _fun37453
+            }
+        case 123:
+            var12 = var13.default;
+        case 128:
+            var9.diff = var12;
+            var4.endPoint = var9;
+            var9 = {};
+            var12 = 1;
+            var12 = var7[var12];
+            var13 = var5.bind(var0)(var12);
+            var14 = var10 in var13;
+            var12 = var13;
+            if (!var14) {
+                _fun37453_ip = 167;
+                continue _fun37453
+            }
+        case 162:
+            var12 = var13.default;
+        case 167:
+            var9.process = var12;
+            var4.colors = var9;
+            var4.locations = var8;
+            var4.useAngle = var8;
+            var9 = {};
+            var11 = var7[var11];
+            var11 = var5.bind(var0)(var11);
+            var12 = var10 in var11;
+            var10 = var11;
+            if (!var12) {
+                _fun37453_ip = 212;
+                continue _fun37453
+            }
+        case 207:
+            var10 = var11.default;
+        case 212:
+            var9.diff = var10;
+            var4.angleCenter = var9;
+            var4.angle = var8;
+            var4.borderRadii = var8;
+            var1.validAttributes = var4;
+            var _closure1_slot0 = var1;
+            var4 = 2;
+            var4 = var7[var4];
+            var5 = var5.bind(var0)(var4);
+            var4 = var5.get;
+            var3 = function() { // Environment: var3
+                var0 = _closure1_slot0;
                 return var0;
             };
-            var2.launchCamera = var3;
-            var1 = function(arg0, arg1) { // Original name: launchImageLibrary, environment: var1
-                var1 = arg0;
-                var _closure2_slot0 = var1;
-                var1 = arg1;
-                var _closure2_slot1 = var1;
-                var1 = global;
-                var2 = var1.Promise;
-                var1 = var2.prototype;
-                var1 = Object.create(var1, {
-                    constructor: {
-                        value: var2
-                    }
-                });
-                var3 = function(arg0) { // Environment: var0
-                    var1 = arg0;
-                    var _closure3_slot0 = var1;
-                    var2 = _closure1_slot0;
-                    var3 = var2.ImagePickerManager;
-                    var2 = var3.launchImageLibrary;
-                    var4 = global;
-                    var7 = var4.Object;
-                    var6 = var7.assign;
-                    var5 = _closure1_slot1;
-                    var4 = _closure2_slot0;
-                    var1 = {};
-                    var1 = var6.bind(var7)(var1, var5, var4);
-                    var0 = function(arg0) { // Environment: var0
-                        _fun37442: for (var _fun37442_ip = 0;;) switch (_fun37442_ip) {
-                            case 0:
-                                var2 = arg0;
-                                var1 = _closure2_slot1;
-                                if (!var1) {
-                                    _fun37442_ip = 24;
-                                    continue _fun37442
-                                }
-                            case 13:
-                                var1 = _closure2_slot1;
-                                var0 = undefined;
-                                var0 = var1.bind(var0)(var2);
-                            case 24:
-                                var1 = _closure3_slot0;
-                                var0 = undefined;
-                                var1 = var1.bind(var0)(var2);
-                                return var0;
-                        }
-                    };
-                    var0 = var2.bind(var3)(var1, var0);
-                    var0 = undefined;
-                    return var0;
-                };
-                var4 = var1;
-                var0 = new var4[var2](var3, var2);
-                var0 = var0 instanceof Object ? var0 : var1;
-                return var0;
-            };
-            var2.launchImageLibrary = var1;
+            var3 = var4.bind(var5)(var6, var3);
+            var2.default = var3;
+            var2.__INTERNAL_VIEW_CONFIG = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 4061]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [87, 89, 42]);

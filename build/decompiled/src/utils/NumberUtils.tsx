@@ -22,13 +22,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'utils/NumberUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Original name: shortenAndLocalizeNumber, environment: var1
-        _fun17818: for (var _fun17818_ip = 0;;) switch (_fun17818_ip) {
+        _fun17819: for (var _fun17819_ip = 0;;) switch (_fun17819_ip) {
             case 0:
                 var4 = arg0;
                 var0 = 1000000;
                 if (!(!(var4 < var0))) {
-                    _fun17818_ip = 99;
-                    continue _fun17818
+                    _fun17819_ip = 99;
+                    continue _fun17819
                 }
             case 13:
                 var2 = var4 / var0;
@@ -72,19 +72,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.shortenAndLocalizeNumber = var3;
     var3 = function(arg0, arg1) { // Original name: humanizeValue, environment: var1
-        _fun17819: for (var _fun17819_ip = 0;;) switch (_fun17819_ip) {
+        _fun17820: for (var _fun17820_ip = 0;;) switch (_fun17820_ip) {
             case 0:
                 var6 = arg0;
                 var4 = 1000;
                 if (!(!(var6 < var4))) {
-                    _fun17819_ip = 280;
-                    continue _fun17819
+                    _fun17820_ip = 280;
+                    continue _fun17820
                 }
             case 16:
                 var7 = 1000000;
                 if (!(!(var6 < var7))) {
-                    _fun17819_ip = 189;
-                    continue _fun17819
+                    _fun17820_ip = 189;
+                    continue _fun17820
                 }
             case 29:
                 var0 = global;
@@ -176,14 +176,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.humanizeValue = var3;
     var3 = function(arg0) { // Original name: parseInteger, environment: var1
-        _fun17820: for (var _fun17820_ip = 0;;) switch (_fun17820_ip) {
+        _fun17821: for (var _fun17821_ip = 0;;) switch (_fun17821_ip) {
             case 0:
                 var4 = arg0;
                 var0 = arguments[1];
                 var3 = undefined;
                 if (!(var0 === var3)) {
-                    _fun17820_ip = 20;
-                    continue _fun17820
+                    _fun17821_ip = 20;
+                    continue _fun17821
                 }
             case 12:
                 var1 = global;
@@ -191,8 +191,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 20:
                 var1 = null;
                 if (!(var1 != var4)) {
-                    _fun17820_ip = 64;
-                    continue _fun17820
+                    _fun17821_ip = 64;
+                    continue _fun17821
                 }
             case 26:
                 var2 = global;
@@ -202,8 +202,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.isNaN;
                 var2 = var2.bind(var3)(var1);
                 if (!var2) {
-                    _fun17820_ip = 62;
-                    continue _fun17820
+                    _fun17821_ip = 62;
+                    continue _fun17821
                 }
             case 59:
                 var1 = var0;
@@ -215,13 +215,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.parseInteger = var3;
     var1 = function(arg0, arg1) { // Original name: formatPercent, environment: var1
-        _fun17821: for (var _fun17821_ip = 0;;) switch (_fun17821_ip) {
+        _fun17822: for (var _fun17822_ip = 0;;) switch (_fun17822_ip) {
             case 0:
                 var0 = arguments[2];
                 var1 = undefined;
                 if (!(var0 === var1)) {
-                    _fun17821_ip = 11;
-                    continue _fun17821
+                    _fun17822_ip = 11;
+                    continue _fun17822
                 }
             case 9:
                 var0 = {};

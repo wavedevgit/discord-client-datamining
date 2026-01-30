@@ -13,44 +13,44 @@ import org.jetbrains.annotations.NotNull;
 public final class JavaDefaultQualifiersKt {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final List f33975a;
+    private static final List f33991a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final List f33976b;
+    private static final List f33992b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Map f33977c;
+    private static final Map f33993c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Map f33978d;
+    private static final Map f33994d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Map f33979e;
+    private static final Map f33995e;
 
     static {
         AnnotationQualifierApplicabilityType annotationQualifierApplicabilityType = AnnotationQualifierApplicabilityType.FIELD;
         AnnotationQualifierApplicabilityType annotationQualifierApplicabilityType2 = AnnotationQualifierApplicabilityType.METHOD_RETURN_TYPE;
         AnnotationQualifierApplicabilityType annotationQualifierApplicabilityType3 = AnnotationQualifierApplicabilityType.VALUE_PARAMETER;
         List o10 = CollectionsKt.o(annotationQualifierApplicabilityType, annotationQualifierApplicabilityType2, annotationQualifierApplicabilityType3, AnnotationQualifierApplicabilityType.TYPE_PARAMETER_BOUNDS, AnnotationQualifierApplicabilityType.TYPE_USE);
-        f33975a = o10;
+        f33991a = o10;
         List e10 = CollectionsKt.e(annotationQualifierApplicabilityType3);
-        f33976b = e10;
+        f33992b = e10;
         FqName jspecify_old_null_marked_annotation_fq_name = JvmAnnotationNamesKt.getJSPECIFY_OLD_NULL_MARKED_ANNOTATION_FQ_NAME();
         NullabilityQualifier nullabilityQualifier = NullabilityQualifier.NOT_NULL;
         Map m10 = o0.m(v.a(jspecify_old_null_marked_annotation_fq_name, new JavaDefaultQualifiers(new NullabilityQualifierWithMigrationStatus(nullabilityQualifier, false, 2, null), o10, false)), v.a(JvmAnnotationNamesKt.getJSPECIFY_NULL_MARKED_ANNOTATION_FQ_NAME(), new JavaDefaultQualifiers(new NullabilityQualifierWithMigrationStatus(nullabilityQualifier, false, 2, null), o10, false)), v.a(JvmAnnotationNamesKt.getJSPECIFY_NULL_UNMARKED_ANNOTATION_FQ_NAME(), new JavaDefaultQualifiers(new NullabilityQualifierWithMigrationStatus(NullabilityQualifier.FORCE_FLEXIBILITY, false, 2, null), o10, false, 4, null)));
-        f33977c = m10;
+        f33993c = m10;
         Map m11 = o0.m(v.a(JvmAnnotationNamesKt.getJAVAX_PARAMETERS_ARE_NONNULL_BY_DEFAULT_ANNOTATION_FQ_NAME(), new JavaDefaultQualifiers(new NullabilityQualifierWithMigrationStatus(nullabilityQualifier, false, 2, null), e10, false, 4, null)), v.a(JvmAnnotationNamesKt.getJAVAX_PARAMETERS_ARE_NULLABLE_BY_DEFAULT_ANNOTATION_FQ_NAME(), new JavaDefaultQualifiers(new NullabilityQualifierWithMigrationStatus(NullabilityQualifier.NULLABLE, false, 2, null), e10, false, 4, null)));
-        f33978d = m11;
-        f33979e = o0.q(m10, m11);
+        f33994d = m11;
+        f33995e = o0.q(m10, m11);
     }
 
     @NotNull
     public static final Map<FqName, JavaDefaultQualifiers> getBUILT_IN_TYPE_QUALIFIER_DEFAULT_ANNOTATIONS() {
-        return f33979e;
+        return f33995e;
     }
 
     @NotNull
     public static final Map<FqName, JavaDefaultQualifiers> getJSPECIFY_DEFAULT_ANNOTATIONS() {
-        return f33977c;
+        return f33993c;
     }
 }

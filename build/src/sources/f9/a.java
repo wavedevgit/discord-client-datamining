@@ -23,7 +23,7 @@ public class a implements i {
     private final b f24840b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final j f24841c = new j(k.f55395i);
+    private final j f24841c = new j(k.f55411i);
 
     /* renamed from: d  reason: collision with root package name */
     private g9.a f24842d;
@@ -75,7 +75,7 @@ public class a implements i {
         List list;
         jVar.H(eVar);
         if (this.f24846h && (list = this.f24845g) != null && !list.isEmpty()) {
-            if (eVar == e.f55333r) {
+            if (eVar == e.f55349r) {
                 d();
             }
             jVar.S();

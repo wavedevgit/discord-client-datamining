@@ -112,7 +112,7 @@ public final class CommandQueue {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke(((Number) obj).longValue());
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         public final void invoke(long j10) {
@@ -238,7 +238,7 @@ public final class CommandQueue {
                 EGLContext EGL_NO_CONTEXT = EGL14.EGL_NO_CONTEXT;
                 Intrinsics.checkNotNullExpressionValue(EGL_NO_CONTEXT, "EGL_NO_CONTEXT");
                 this.context = EGL_NO_CONTEXT;
-                a aVar = a.f31126e;
+                a aVar = a.f31142e;
                 MutableSharedFlow a10 = c0.a(0, 32, aVar);
                 this._settledFlow = a10;
                 this.settledFlow = a10;
@@ -470,7 +470,7 @@ public final class CommandQueue {
         mutableSharedFlow.b(new PropertyUpdate(j11, str, t10, null));
         CancellableContinuation remove = this.pendingContinuations.remove(Long.valueOf(j10));
         if (remove != null) {
-            Result.a aVar = Result.f33279e;
+            Result.a aVar = Result.f33295e;
             Intrinsics.checkNotNull(t10, "null cannot be cast to non-null type kotlin.Any");
             remove.resumeWith(Result.b(t10));
         }
@@ -508,7 +508,7 @@ public final class CommandQueue {
         if (a10 == b.f()) {
             return a10;
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* renamed from: bindViewModelInstance-ei-yHz8  reason: not valid java name */
@@ -772,7 +772,7 @@ public final class CommandQueue {
             cancellableContinuation = null;
         }
         if (cancellableContinuation != null) {
-            Result.a aVar = Result.f33279e;
+            Result.a aVar = Result.f33295e;
             cancellableContinuation.resumeWith(Result.b(c.a(new RuntimeException("Artboard error: " + error))));
         }
     }
@@ -817,7 +817,7 @@ public final class CommandQueue {
             cancellableContinuation = null;
         }
         if (cancellableContinuation != null) {
-            Result.a aVar = Result.f33279e;
+            Result.a aVar = Result.f33295e;
             cancellableContinuation.resumeWith(Result.b(c.a(new RuntimeException("Failed to decode audio: " + error))));
         }
     }
@@ -867,7 +867,7 @@ public final class CommandQueue {
             cancellableContinuation = null;
         }
         if (cancellableContinuation != null) {
-            Result.a aVar = Result.f33279e;
+            Result.a aVar = Result.f33295e;
             cancellableContinuation.resumeWith(Result.b(c.a(new RuntimeException("File error: " + error))));
         }
     }
@@ -911,7 +911,7 @@ public final class CommandQueue {
             cancellableContinuation = null;
         }
         if (cancellableContinuation != null) {
-            Result.a aVar = Result.f33279e;
+            Result.a aVar = Result.f33295e;
             cancellableContinuation.resumeWith(Result.b(c.a(new RuntimeException("Failed to decode font: " + error))));
         }
     }
@@ -941,7 +941,7 @@ public final class CommandQueue {
             cancellableContinuation = null;
         }
         if (cancellableContinuation != null) {
-            Result.a aVar = Result.f33279e;
+            Result.a aVar = Result.f33295e;
             cancellableContinuation.resumeWith(Result.b(c.a(new RuntimeException("Failed to decode image: " + error))));
         }
     }
@@ -963,7 +963,7 @@ public final class CommandQueue {
             cancellableContinuation = null;
         }
         if (cancellableContinuation != null) {
-            Result.a aVar = Result.f33279e;
+            Result.a aVar = Result.f33295e;
             cancellableContinuation.resumeWith(Result.b(c.a(new RuntimeException("State machine error: " + error))));
         }
     }
@@ -998,7 +998,7 @@ public final class CommandQueue {
     @Keep
     public final void onTriggerPropertyUpdated(long j10, long j11, @NotNull String propertyName) {
         Intrinsics.checkNotNullParameter(propertyName, "propertyName");
-        m107onPropertyUpdatedUrmHyfM(j10, j11, propertyName, Unit.f33282a, this._triggerPropertyFlow);
+        m107onPropertyUpdatedUrmHyfM(j10, j11, propertyName, Unit.f33298a, this._triggerPropertyFlow);
     }
 
     @Keep
@@ -1012,7 +1012,7 @@ public final class CommandQueue {
             cancellableContinuation = null;
         }
         if (cancellableContinuation != null) {
-            Result.a aVar = Result.f33279e;
+            Result.a aVar = Result.f33295e;
             cancellableContinuation.resumeWith(Result.b(c.a(new RuntimeException("View model instance error: " + error))));
         }
     }
@@ -1204,7 +1204,7 @@ public final class CommandQueue {
             @Override // kotlin.jvm.functions.Function0
             public /* bridge */ /* synthetic */ Object invoke() {
                 m156invoke();
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
 
             /* renamed from: invoke  reason: collision with other method in class */

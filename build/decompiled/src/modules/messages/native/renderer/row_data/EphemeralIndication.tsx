@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/row_data/EphemeralIndication.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: createEphemeralIndication, environment: var1
-        _fun56073: for (var _fun56073_ip = 0;;) switch (_fun56073_ip) {
+        _fun56118: for (var _fun56118_ip = 0;;) switch (_fun56118_ip) {
             case 0:
                 var12 = arg0;
                 var1 = var12.hasFlag;
@@ -44,8 +44,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.bind(var12)(var0);
                 var5 = undefined;
                 if (var0) {
-                    _fun56073_ip = 34;
-                    continue _fun56073
+                    _fun56118_ip = 34;
+                    continue _fun56118
                 }
             case 32:
                 return var5;
@@ -55,15 +55,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var0 == var3;
                 var1 = undefined;
                 if (var4) {
-                    _fun56073_ip = 57;
-                    continue _fun56073
+                    _fun56118_ip = 57;
+                    continue _fun56118
                 }
             case 51:
                 var1 = var3.ephemerality_reason;
             case 57:
                 if (!(var0 == var1)) {
-                    _fun56073_ip = 381;
-                    continue _fun56073
+                    _fun56118_ip = 381;
+                    continue _fun56118
                 }
             case 64:
                 var1 = {};
@@ -113,8 +113,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var12.id;
                 var3 = var6.bind(var7)(var3);
                 if (!(var0 != var3)) {
-                    _fun56073_ip = 379;
-                    continue _fun56073
+                    _fun56118_ip = 379;
+                    continue _fun56118
                 }
             case 279:
                 var6 = _closure1_slot1;
@@ -150,8 +150,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var0 == var4;
                 var0 = undefined;
                 if (var6) {
-                    _fun56073_ip = 428;
-                    continue _fun56073
+                    _fun56118_ip = 428;
+                    continue _fun56118
                 }
             case 422:
                 var0 = var4.ephemerality_reason;
@@ -202,4 +202,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createEphemeralIndication = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6480, 660, 6773, 1234, 1675, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6483, 660, 6776, 1234, 1675, 2]);

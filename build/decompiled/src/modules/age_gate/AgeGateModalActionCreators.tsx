@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openAgeGateModal = var3;
     var3 = function(arg0) { // Original name: closeAgeGateModal, environment: var1
-        _fun40958: for (var _fun40958_ip = 0;;) switch (_fun40958_ip) {
+        _fun41009: for (var _fun41009_ip = 0;;) switch (_fun41009_ip) {
             case 0:
                 var6 = arg0;
                 var2 = _closure1_slot1;
@@ -92,8 +92,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var1 = var2.bind(var3)(var1);
                 if (!(var0 !== var6)) {
-                    _fun40958_ip = 111;
-                    continue _fun40958
+                    _fun41009_ip = 111;
+                    continue _fun41009
                 }
             case 50:
                 var2 = _closure1_slot1;
@@ -221,4 +221,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.closeFailedAgeGate = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1219, 660, 795, 806, 4514, 1220, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1219, 660, 795, 806, 4520, 1220, 2]);

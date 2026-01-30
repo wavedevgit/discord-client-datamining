@@ -97,13 +97,13 @@ public final class z0 {
         }
         for (w0 w0Var = this.f14577h; w0Var != null; w0Var = w0Var.j()) {
             if (w0Var.f14526b.equals(obj)) {
-                return w0Var.f14530f.f14541a.f47287d;
+                return w0Var.f14530f.f14541a.f47303d;
             }
         }
         for (w0 w0Var2 = this.f14577h; w0Var2 != null; w0Var2 = w0Var2.j()) {
             int f11 = timeline.f(w0Var2.f14526b);
             if (f11 != -1 && timeline.j(f11, this.f14570a).f12996i == i10) {
-                return w0Var2.f14530f.f14541a.f47287d;
+                return w0Var2.f14530f.f14541a.f47303d;
             }
         }
         long j10 = this.f14574e;
@@ -159,13 +159,13 @@ public final class z0 {
         Object obj;
         long j11;
         x0 x0Var = w0Var.f14530f;
-        int h10 = timeline.h(timeline.f(x0Var.f14541a.f47284a), this.f14570a, this.f14571b, this.f14575f, this.f14576g);
+        int h10 = timeline.h(timeline.f(x0Var.f14541a.f47300a), this.f14570a, this.f14571b, this.f14575f, this.f14576g);
         if (h10 == -1) {
             return null;
         }
         int i10 = timeline.k(h10, this.f14570a, true).f12996i;
         Object e10 = ne.a.e(this.f14570a.f12995e);
-        long j12 = x0Var.f14541a.f47287d;
+        long j12 = x0Var.f14541a.f47303d;
         long j13 = 0;
         if (timeline.r(i10, this.f14571b).f13019z == h10) {
             Pair o10 = timeline.o(this.f14571b, this.f14570a, i10, -9223372036854775807L, Math.max(0L, j10));
@@ -176,7 +176,7 @@ public final class z0 {
             long longValue = ((Long) o10.second).longValue();
             w0 j14 = w0Var.j();
             if (j14 != null && j14.f14526b.equals(obj2)) {
-                j12 = j14.f14530f.f14541a.f47287d;
+                j12 = j14.f14530f.f14541a.f47303d;
             } else {
                 j12 = this.f14574e;
                 this.f14574e = 1 + j12;
@@ -190,7 +190,7 @@ public final class z0 {
         }
         r.b D = D(timeline, obj, j11, j12, this.f14571b, this.f14570a);
         if (j13 != -9223372036854775807L && x0Var.f14543c != -9223372036854775807L) {
-            boolean u10 = u(x0Var.f14541a.f47284a, timeline);
+            boolean u10 = u(x0Var.f14541a.f47300a, timeline);
             if (D.b() && u10) {
                 j13 = x0Var.f14543c;
             } else if (u10) {
@@ -213,16 +213,16 @@ public final class z0 {
         boolean z10;
         x0 x0Var = w0Var.f14530f;
         r.b bVar = x0Var.f14541a;
-        timeline.l(bVar.f47284a, this.f14570a);
+        timeline.l(bVar.f47300a, this.f14570a);
         if (bVar.b()) {
-            int i10 = bVar.f47285b;
+            int i10 = bVar.f47301b;
             int d10 = this.f14570a.d(i10);
             if (d10 == -1) {
                 return null;
             }
-            int o10 = this.f14570a.o(i10, bVar.f47286c);
+            int o10 = this.f14570a.o(i10, bVar.f47302c);
             if (o10 < d10) {
-                return n(timeline, bVar.f47284a, i10, o10, x0Var.f14543c, bVar.f47287d);
+                return n(timeline, bVar.f47300a, i10, o10, x0Var.f14543c, bVar.f47303d);
             }
             long j11 = x0Var.f14543c;
             if (j11 == -9223372036854775807L) {
@@ -234,42 +234,42 @@ public final class z0 {
                 }
                 j11 = ((Long) o11.second).longValue();
             }
-            return o(timeline, bVar.f47284a, Math.max(p(timeline, bVar.f47284a, bVar.f47285b), j11), x0Var.f14543c, bVar.f47287d);
+            return o(timeline, bVar.f47300a, Math.max(p(timeline, bVar.f47300a, bVar.f47301b), j11), x0Var.f14543c, bVar.f47303d);
         }
-        int i11 = bVar.f47288e;
+        int i11 = bVar.f47304e;
         if (i11 != -1 && this.f14570a.t(i11)) {
             return i(timeline, w0Var, j10);
         }
-        int n10 = this.f14570a.n(bVar.f47288e);
-        if (this.f14570a.u(bVar.f47288e) && this.f14570a.k(bVar.f47288e, n10) == 3) {
+        int n10 = this.f14570a.n(bVar.f47304e);
+        if (this.f14570a.u(bVar.f47304e) && this.f14570a.k(bVar.f47304e, n10) == 3) {
             z10 = true;
         } else {
             z10 = false;
         }
-        if (n10 != this.f14570a.d(bVar.f47288e) && !z10) {
-            return n(timeline, bVar.f47284a, bVar.f47288e, n10, x0Var.f14545e, bVar.f47287d);
+        if (n10 != this.f14570a.d(bVar.f47304e) && !z10) {
+            return n(timeline, bVar.f47300a, bVar.f47304e, n10, x0Var.f14545e, bVar.f47303d);
         }
-        return o(timeline, bVar.f47284a, p(timeline, bVar.f47284a, bVar.f47288e), x0Var.f14545e, bVar.f47287d);
+        return o(timeline, bVar.f47300a, p(timeline, bVar.f47300a, bVar.f47304e), x0Var.f14545e, bVar.f47303d);
     }
 
     private x0 m(Timeline timeline, r.b bVar, long j10, long j11) {
-        timeline.l(bVar.f47284a, this.f14570a);
+        timeline.l(bVar.f47300a, this.f14570a);
         if (bVar.b()) {
-            return n(timeline, bVar.f47284a, bVar.f47285b, bVar.f47286c, j10, bVar.f47287d);
+            return n(timeline, bVar.f47300a, bVar.f47301b, bVar.f47302c, j10, bVar.f47303d);
         }
-        return o(timeline, bVar.f47284a, j11, j10, bVar.f47287d);
+        return o(timeline, bVar.f47300a, j11, j10, bVar.f47303d);
     }
 
     private x0 n(Timeline timeline, Object obj, int i10, int i11, long j10, long j11) {
         long j12;
         r.b bVar = new r.b(obj, i10, i11, j11);
-        long e10 = timeline.l(bVar.f47284a, this.f14570a).e(bVar.f47285b, bVar.f47286c);
+        long e10 = timeline.l(bVar.f47300a, this.f14570a).e(bVar.f47301b, bVar.f47302c);
         if (i11 == this.f14570a.n(i10)) {
             j12 = this.f14570a.j();
         } else {
             j12 = 0;
         }
-        boolean u10 = this.f14570a.u(bVar.f47285b);
+        boolean u10 = this.f14570a.u(bVar.f47301b);
         if (e10 != -9223372036854775807L && j12 >= e10) {
             j12 = Math.max(0L, e10 - 1);
         }
@@ -374,14 +374,14 @@ public final class z0 {
     }
 
     private boolean v(r.b bVar) {
-        if (!bVar.b() && bVar.f47288e == -1) {
+        if (!bVar.b() && bVar.f47304e == -1) {
             return true;
         }
         return false;
     }
 
     private boolean w(Timeline timeline, r.b bVar, boolean z10) {
-        int f10 = timeline.f(bVar.f47284a);
+        int f10 = timeline.f(bVar.f47300a);
         if (!timeline.r(timeline.j(f10, this.f14570a).f12996i, this.f14571b).f13013t && timeline.v(f10, this.f14570a, this.f14571b, this.f14575f, this.f14576g) && z10) {
             return true;
         }
@@ -392,8 +392,8 @@ public final class z0 {
         if (!v(bVar)) {
             return false;
         }
-        int i10 = timeline.l(bVar.f47284a, this.f14570a).f12996i;
-        if (timeline.r(i10, this.f14571b).A != timeline.f(bVar.f47284a)) {
+        int i10 = timeline.l(bVar.f47300a, this.f14570a).f12996i;
+        if (timeline.r(i10, this.f14571b).A != timeline.f(bVar.f47300a)) {
             return false;
         }
         return true;
@@ -563,7 +563,7 @@ public final class z0 {
             this.f14579j = null;
             w0 w0Var2 = this.f14577h;
             this.f14581l = w0Var2.f14526b;
-            this.f14582m = w0Var2.f14530f.f14541a.f47287d;
+            this.f14582m = w0Var2.f14530f.f14541a.f47303d;
         }
         this.f14577h = this.f14577h.j();
         A();
@@ -590,7 +590,7 @@ public final class z0 {
         }
         w0 w0Var = (w0) ne.a.i(this.f14577h);
         this.f14581l = w0Var.f14526b;
-        this.f14582m = w0Var.f14530f.f14541a.f47287d;
+        this.f14582m = w0Var.f14530f.f14541a.f47303d;
         while (w0Var != null) {
             w0Var.t();
             w0Var = w0Var.j();
@@ -664,14 +664,14 @@ public final class z0 {
             boolean r13 = r15.x(r1, r3)
             boolean r14 = r15.w(r1, r3, r12)
             qd.r$b r4 = r2.f14541a
-            java.lang.Object r4 = r4.f47284a
+            java.lang.Object r4 = r4.f47300a
             com.google.android.exoplayer2.Timeline$b r5 = r15.f14570a
             r1.l(r4, r5)
             boolean r1 = r3.b()
             r4 = -9223372036854775807(0x8000000000000001, double:-4.9E-324)
             r6 = -1
             if (r1 != 0) goto L33
-            int r1 = r3.f47288e
+            int r1 = r3.f47304e
             if (r1 != r6) goto L2c
             goto L33
         L2c:
@@ -684,8 +684,8 @@ public final class z0 {
             boolean r1 = r3.b()
             if (r1 == 0) goto L46
             com.google.android.exoplayer2.Timeline$b r1 = r15.f14570a
-            int r4 = r3.f47285b
-            int r5 = r3.f47286c
+            int r4 = r3.f47301b
+            int r5 = r3.f47302c
             long r4 = r1.e(r4, r5)
         L44:
             r9 = r4
@@ -708,13 +708,13 @@ public final class z0 {
             boolean r1 = r3.b()
             if (r1 == 0) goto L6a
             com.google.android.exoplayer2.Timeline$b r1 = r15.f14570a
-            int r4 = r3.f47285b
+            int r4 = r3.f47301b
             boolean r1 = r1.u(r4)
         L68:
             r11 = r1
             goto L7a
         L6a:
-            int r1 = r3.f47288e
+            int r1 = r3.f47304e
             if (r1 == r6) goto L78
             com.google.android.exoplayer2.Timeline$b r4 = r15.f14570a
             boolean r1 = r4.u(r1)

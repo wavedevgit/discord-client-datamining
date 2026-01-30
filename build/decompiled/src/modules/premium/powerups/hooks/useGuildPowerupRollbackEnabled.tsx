@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/powerups/hooks/useGuildPowerupRollbackEnabled.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0, arg1, arg2) { // Original name: useGuildPowerupRollbackEnabled, environment: var1
-        _fun102667: for (var _fun102667_ip = 0;;) switch (_fun102667_ip) {
+        _fun102921: for (var _fun102921_ip = 0;;) switch (_fun102921_ip) {
             case 0:
                 var4 = _closure1_slot0;
                 var5 = _closure1_slot1;
@@ -42,8 +42,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.VANITY_URL_POWERUP_SKU_ID;
                 var0 = var2 === var0;
                 if (!var0) {
-                    _fun102667_ip = 79;
-                    continue _fun102667
+                    _fun102921_ip = 79;
+                    continue _fun102921
                 }
             case 76:
                 var0 = var1;
@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var1 = function(arg0, arg1, arg2) { // Original name: isGuildPowerupRollbackEnabled, environment: var1
-        _fun102668: for (var _fun102668_ip = 0;;) switch (_fun102668_ip) {
+        _fun102922: for (var _fun102922_ip = 0;;) switch (_fun102922_ip) {
             case 0:
                 var0 = arg1;
                 var2 = var0.skuId;
@@ -66,8 +66,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.VANITY_URL_POWERUP_SKU_ID;
                 var0 = var2 === var0;
                 if (!var0) {
-                    _fun102668_ip = 84;
-                    continue _fun102668
+                    _fun102922_ip = 84;
+                    continue _fun102922
                 }
             case 47:
                 var2 = _closure1_slot0;
@@ -85,4 +85,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isGuildPowerupRollbackEnabled = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [13339, 6598, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [13364, 6601, 2]);

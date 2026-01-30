@@ -15,7 +15,7 @@ import kotlinx.serialization.KSerializer;
 public abstract class v {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final k2 f53808a = at.m.a(new Function1() { // from class: xs.p
+    private static final k2 f53824a = at.m.a(new Function1() { // from class: xs.p
         @Override // kotlin.jvm.functions.Function1
         public final Object invoke(Object obj) {
             KSerializer k10;
@@ -25,7 +25,7 @@ public abstract class v {
     });
 
     /* renamed from: b  reason: collision with root package name */
-    private static final k2 f53809b = at.m.a(new Function1() { // from class: xs.q
+    private static final k2 f53825b = at.m.a(new Function1() { // from class: xs.q
         @Override // kotlin.jvm.functions.Function1
         public final Object invoke(Object obj) {
             KSerializer l10;
@@ -35,7 +35,7 @@ public abstract class v {
     });
 
     /* renamed from: c  reason: collision with root package name */
-    private static final s1 f53810c = at.m.b(new Function2() { // from class: xs.r
+    private static final s1 f53826c = at.m.b(new Function2() { // from class: xs.r
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(Object obj, Object obj2) {
             KSerializer g10;
@@ -45,7 +45,7 @@ public abstract class v {
     });
 
     /* renamed from: d  reason: collision with root package name */
-    private static final s1 f53811d = at.m.b(new Function2() { // from class: xs.s
+    private static final s1 f53827d = at.m.b(new Function2() { // from class: xs.s
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(Object obj, Object obj2) {
             KSerializer i10;
@@ -135,21 +135,21 @@ public abstract class v {
     public static final KSerializer m(KClass clazz, boolean z10) {
         Intrinsics.checkNotNullParameter(clazz, "clazz");
         if (!z10) {
-            KSerializer a10 = f53808a.a(clazz);
+            KSerializer a10 = f53824a.a(clazz);
             if (a10 != null) {
                 return a10;
             }
             return null;
         }
-        return f53809b.a(clazz);
+        return f53825b.a(clazz);
     }
 
     public static final Object n(KClass clazz, List types, boolean z10) {
         Intrinsics.checkNotNullParameter(clazz, "clazz");
         Intrinsics.checkNotNullParameter(types, "types");
         if (!z10) {
-            return f53810c.a(clazz, types);
+            return f53826c.a(clazz, types);
         }
-        return f53811d.a(clazz, types);
+        return f53827d.a(clazz, types);
     }
 }

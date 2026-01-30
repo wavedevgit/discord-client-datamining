@@ -6,17 +6,17 @@ import kotlin.coroutines.CoroutineContext;
 final class r implements Continuation {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final r f36514d = new r();
+    public static final r f36530d = new r();
 
     /* renamed from: e  reason: collision with root package name */
-    private static final CoroutineContext f36515e = kotlin.coroutines.e.f33356d;
+    private static final CoroutineContext f36531e = kotlin.coroutines.e.f33372d;
 
     private r() {
     }
 
     @Override // kotlin.coroutines.Continuation
     public CoroutineContext getContext() {
-        return f36515e;
+        return f36531e;
     }
 
     @Override // kotlin.coroutines.Continuation

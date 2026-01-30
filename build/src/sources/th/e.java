@@ -13,26 +13,26 @@ import java.util.Set;
 public final class e {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final k0 f49546c = new k0("SplitInstallInfoProvider");
+    private static final k0 f49562c = new k0("SplitInstallInfoProvider");
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f49547a;
+    private final Context f49563a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f49548b;
+    private final String f49564b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public e(Context context) {
-        this.f49547a = context;
-        this.f49548b = context.getPackageName();
+        this.f49563a = context;
+        this.f49564b = context.getPackageName();
     }
 
     public final Set a() {
         PackageInfo packageInfo;
         try {
-            packageInfo = this.f49547a.getPackageManager().getPackageInfo(this.f49548b, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+            packageInfo = this.f49563a.getPackageManager().getPackageInfo(this.f49564b, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
         } catch (PackageManager.NameNotFoundException unused) {
-            f49546c.b("App is not found in PackageManager", new Object[0]);
+            f49562c.b("App is not found in PackageManager", new Object[0]);
             packageInfo = null;
         }
         if (packageInfo != null && packageInfo.applicationInfo != null) {
@@ -46,15 +46,15 @@ public final class e {
                     hashSet2.remove("");
                     hashSet2.remove("base");
                 } else {
-                    f49546c.a("App has no fused modules.", new Object[0]);
+                    f49562c.a("App has no fused modules.", new Object[0]);
                 }
             }
             String[] strArr = packageInfo.splitNames;
             if (strArr != null) {
-                f49546c.a("Adding splits from package manager: %s", Arrays.toString(strArr));
+                f49562c.a("Adding splits from package manager: %s", Arrays.toString(strArr));
                 Collections.addAll(hashSet2, strArr);
             } else {
-                f49546c.a("No splits are found or app cannot be found in package manager.", new Object[0]);
+                f49562c.a("No splits are found or app cannot be found in package manager.", new Object[0]);
             }
             d.a();
             for (String str : hashSet2) {

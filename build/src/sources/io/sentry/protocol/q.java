@@ -11,19 +11,19 @@ import java.util.Map;
 public final class q implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f30448d;
+    private String f30464d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Integer f30449e;
+    private Integer f30465e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Integer f30450i;
+    private Integer f30466i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Integer f30451o;
+    private Integer f30467o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Map f30452p;
+    private Map f30468p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -65,16 +65,16 @@ public final class q implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        qVar.f30448d = e3Var.r1();
+                        qVar.f30464d = e3Var.r1();
                         break;
                     case 1:
-                        qVar.f30451o = e3Var.j1();
+                        qVar.f30467o = e3Var.j1();
                         break;
                     case 2:
-                        qVar.f30449e = e3Var.j1();
+                        qVar.f30465e = e3Var.j1();
                         break;
                     case 3:
-                        qVar.f30450i = e3Var.j1();
+                        qVar.f30466i = e3Var.j1();
                         break;
                     default:
                         if (hashMap == null) {
@@ -91,28 +91,28 @@ public final class q implements w1 {
     }
 
     public void e(Map map) {
-        this.f30452p = map;
+        this.f30468p = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        if (this.f30448d != null) {
-            f3Var.e("sdk_name").f(this.f30448d);
+        if (this.f30464d != null) {
+            f3Var.e("sdk_name").f(this.f30464d);
         }
-        if (this.f30449e != null) {
-            f3Var.e("version_major").i(this.f30449e);
+        if (this.f30465e != null) {
+            f3Var.e("version_major").i(this.f30465e);
         }
-        if (this.f30450i != null) {
-            f3Var.e("version_minor").i(this.f30450i);
+        if (this.f30466i != null) {
+            f3Var.e("version_minor").i(this.f30466i);
         }
-        if (this.f30451o != null) {
-            f3Var.e("version_patchlevel").i(this.f30451o);
+        if (this.f30467o != null) {
+            f3Var.e("version_patchlevel").i(this.f30467o);
         }
-        Map map = this.f30452p;
+        Map map = this.f30468p;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f30452p.get(str));
+                f3Var.e(str).j(iLogger, this.f30468p.get(str));
             }
         }
         f3Var.y();

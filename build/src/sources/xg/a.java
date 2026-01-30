@@ -8,92 +8,92 @@ import kotlin.jvm.internal.Intrinsics;
 public final class a extends a0 {
 
     /* renamed from: k  reason: collision with root package name */
-    public static final b f53322k = new b(null);
+    public static final b f53338k = new b(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f53323d;
+    private final String f53339d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f53324e;
+    private final String f53340e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f53325f;
+    private final String f53341f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final String f53326g;
+    private final String f53342g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final String f53327h;
+    private final String f53343h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Uri f53328i;
+    private final Uri f53344i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final String f53329j;
+    private final String f53345j;
 
     /* renamed from: xg.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class C0736a {
 
         /* renamed from: a  reason: collision with root package name */
-        private String f53330a = "";
+        private String f53346a = "";
 
         /* renamed from: b  reason: collision with root package name */
-        private String f53331b = "";
+        private String f53347b = "";
 
         /* renamed from: c  reason: collision with root package name */
-        private String f53332c;
+        private String f53348c;
 
         /* renamed from: d  reason: collision with root package name */
-        private String f53333d;
+        private String f53349d;
 
         /* renamed from: e  reason: collision with root package name */
-        private String f53334e;
+        private String f53350e;
 
         /* renamed from: f  reason: collision with root package name */
-        private Uri f53335f;
+        private Uri f53351f;
 
         /* renamed from: g  reason: collision with root package name */
-        private String f53336g;
+        private String f53352g;
 
         public final a a() {
-            return new a(this.f53330a, this.f53331b, this.f53332c, this.f53333d, this.f53334e, this.f53335f, this.f53336g);
+            return new a(this.f53346a, this.f53347b, this.f53348c, this.f53349d, this.f53350e, this.f53351f, this.f53352g);
         }
 
         public final C0736a b(String str) {
-            this.f53332c = str;
+            this.f53348c = str;
             return this;
         }
 
         public final C0736a c(String str) {
-            this.f53333d = str;
+            this.f53349d = str;
             return this;
         }
 
         public final C0736a d(String str) {
-            this.f53334e = str;
+            this.f53350e = str;
             return this;
         }
 
         public final C0736a e(String id2) {
             Intrinsics.checkNotNullParameter(id2, "id");
-            this.f53330a = id2;
+            this.f53346a = id2;
             return this;
         }
 
         public final C0736a f(String idToken) {
             Intrinsics.checkNotNullParameter(idToken, "idToken");
-            this.f53331b = idToken;
+            this.f53347b = idToken;
             return this;
         }
 
         public final C0736a g(String str) {
-            this.f53336g = str;
+            this.f53352g = str;
             return this;
         }
 
         public final C0736a h(Uri uri) {
-            this.f53335f = uri;
+            this.f53351f = uri;
             return this;
         }
     }
@@ -136,13 +136,13 @@ public final class a extends a0 {
             r0.putParcelable(r1, r8)
             java.lang.String r1 = "com.google.android.libraries.identity.googleid.TYPE_GOOGLE_ID_TOKEN_CREDENTIAL"
             r2.<init>(r1, r0)
-            r2.f53323d = r3
-            r2.f53324e = r4
-            r2.f53325f = r5
-            r2.f53326g = r6
-            r2.f53327h = r7
-            r2.f53328i = r8
-            r2.f53329j = r9
+            r2.f53339d = r3
+            r2.f53340e = r4
+            r2.f53341f = r5
+            r2.f53342g = r6
+            r2.f53343h = r7
+            r2.f53344i = r8
+            r2.f53345j = r9
             int r3 = r3.length()
             if (r3 <= 0) goto L60
             int r3 = r4.length()

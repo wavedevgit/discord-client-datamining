@@ -7,14 +7,14 @@ import io.sentry.i2;
 public final class l {
 
     /* renamed from: a  reason: collision with root package name */
-    private final x0 f29047a;
+    private final x0 f29063a;
 
     public l() {
         this(new x0(i2.e()));
     }
 
     public void a(ContentProvider contentProvider) {
-        int d10 = this.f29047a.d();
+        int d10 = this.f29063a.d();
         if (d10 >= 26 && d10 <= 28) {
             String callingPackage = contentProvider.getCallingPackage();
             String packageName = contentProvider.getContext().getPackageName();
@@ -25,6 +25,6 @@ public final class l {
     }
 
     public l(x0 x0Var) {
-        this.f29047a = x0Var;
+        this.f29063a = x0Var;
     }
 }

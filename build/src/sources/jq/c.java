@@ -13,10 +13,10 @@ public final class c implements f {
     public static final Parcelable.Creator<c> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f32407d;
+    private final String f32423d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Map f32408e;
+    private final Map f32424e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -43,16 +43,16 @@ public final class c implements f {
     public c(String stepName, Map componentParams) {
         Intrinsics.checkNotNullParameter(stepName, "stepName");
         Intrinsics.checkNotNullParameter(componentParams, "componentParams");
-        this.f32407d = stepName;
-        this.f32408e = componentParams;
+        this.f32423d = stepName;
+        this.f32424e = componentParams;
     }
 
     public final Map a() {
-        return this.f32408e;
+        return this.f32424e;
     }
 
     public String b() {
-        return this.f32407d;
+        return this.f32423d;
     }
 
     @Override // android.os.Parcelable
@@ -68,27 +68,27 @@ public final class c implements f {
             return false;
         }
         c cVar = (c) obj;
-        if (Intrinsics.areEqual(this.f32407d, cVar.f32407d) && Intrinsics.areEqual(this.f32408e, cVar.f32408e)) {
+        if (Intrinsics.areEqual(this.f32423d, cVar.f32423d) && Intrinsics.areEqual(this.f32424e, cVar.f32424e)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (this.f32407d.hashCode() * 31) + this.f32408e.hashCode();
+        return (this.f32423d.hashCode() * 31) + this.f32424e.hashCode();
     }
 
     public String toString() {
-        String str = this.f32407d;
-        Map map = this.f32408e;
+        String str = this.f32423d;
+        Map map = this.f32424e;
         return "UiStepData(stepName=" + str + ", componentParams=" + map + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f32407d);
-        Map map = this.f32408e;
+        dest.writeString(this.f32423d);
+        Map map = this.f32424e;
         dest.writeInt(map.size());
         for (Map.Entry entry : map.entrySet()) {
             dest.writeString((String) entry.getKey());

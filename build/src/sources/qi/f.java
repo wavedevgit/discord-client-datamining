@@ -16,16 +16,16 @@ import java.util.List;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f47428a;
+    private final Object f47444a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final c f47429b;
+    private final c f47445b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     private static class b implements c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Class f47430a;
+        private final Class f47446a;
 
         private Bundle b(Context context) {
             try {
@@ -34,9 +34,9 @@ public final class f {
                     Log.w("ComponentDiscovery", "Context has no PackageManager.");
                     return null;
                 }
-                ServiceInfo serviceInfo = packageManager.getServiceInfo(new ComponentName(context, this.f47430a), IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+                ServiceInfo serviceInfo = packageManager.getServiceInfo(new ComponentName(context, this.f47446a), IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
                 if (serviceInfo == null) {
-                    Log.w("ComponentDiscovery", this.f47430a + " has no service info.");
+                    Log.w("ComponentDiscovery", this.f47446a + " has no service info.");
                     return null;
                 }
                 return serviceInfo.metaData;
@@ -64,7 +64,7 @@ public final class f {
         }
 
         private b(Class cls) {
-            this.f47430a = cls;
+            this.f47446a = cls;
         }
     }
 
@@ -74,8 +74,8 @@ public final class f {
     }
 
     f(Object obj, c cVar) {
-        this.f47428a = obj;
-        this.f47429b = cVar;
+        this.f47444a = obj;
+        this.f47445b = cVar;
     }
 
     public static f c(Context context, Class cls) {
@@ -106,7 +106,7 @@ public final class f {
 
     public List b() {
         ArrayList arrayList = new ArrayList();
-        for (final String str : this.f47429b.a(this.f47428a)) {
+        for (final String str : this.f47445b.a(this.f47444a)) {
             arrayList.add(new bj.b() { // from class: qi.e
                 @Override // bj.b
                 public final Object get() {

@@ -74,7 +74,7 @@ public abstract class r0 {
         });
         InputCheckbox.InputCheckboxComponentStyle styles = config.getStyles();
         if (styles != null && (textColorHighlight = styles.getTextColorHighlight()) != null && (base = textColorHighlight.getBase()) != null && (base2 = base.getBase()) != null && (value = base2.getValue()) != null) {
-            binding.f6654b.setButtonTintList(new ColorStateList(new int[][]{new int[]{-16842910}, new int[]{-16842912}, new int[]{16842912}}, new int[]{r1.c.l(jp.s.d(a10, yg.b.f54350k, null, false, 6, null), (int) (q1.j.h(a10.getResources(), yg.d.f54407x) * ((float) SetSpanOperation.SPAN_MAX_PRIORITY))), jp.s.d(a10, yg.b.f54350k, null, false, 6, null), value.intValue()}));
+            binding.f6654b.setButtonTintList(new ColorStateList(new int[][]{new int[]{-16842910}, new int[]{-16842912}, new int[]{16842912}}, new int[]{r1.c.l(jp.s.d(a10, yg.b.f54366k, null, false, 6, null), (int) (q1.j.h(a10.getResources(), yg.d.f54423x) * ((float) SetSpanOperation.SPAN_MAX_PRIORITY))), jp.s.d(a10, yg.b.f54366k, null, false, 6, null), value.intValue()}));
         }
         uiComponentHelper.d(new Function0() { // from class: xp.q0
             @Override // kotlin.jvm.functions.Function0
@@ -151,7 +151,7 @@ public abstract class r0 {
                 }
             }
             checkboxLabel2.setLayoutParams(layoutParams2);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         throw new NullPointerException("null cannot be cast to non-null type androidx.constraintlayout.widget.ConstraintLayout.LayoutParams");
     }

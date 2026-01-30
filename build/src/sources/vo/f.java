@@ -5,10 +5,10 @@ import tq.h;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f51775a;
+    private final h f51791a;
 
     public f(h hVar) {
-        this.f51775a = hVar;
+        this.f51791a = hVar;
     }
 
     public static f a(h hVar) {
@@ -20,6 +20,6 @@ public final class f {
     }
 
     public e b(String str) {
-        return c((b) this.f51775a.get(), str);
+        return c((b) this.f51791a.get(), str);
     }
 }

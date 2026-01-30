@@ -5,7 +5,7 @@ import ui.c;
 final class ca implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ca f38130a = new ca();
+    static final ca f38146a = new ca();
 
     static {
         c.b a10 = ui.c.a("inferenceCommonLogEvent");

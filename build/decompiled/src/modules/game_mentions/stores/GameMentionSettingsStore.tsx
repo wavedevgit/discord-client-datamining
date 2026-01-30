@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
-        _fun36475: for (var _fun36475_ip = 0;;) switch (_fun36475_ip) {
+        _fun36526: for (var _fun36526_ip = 0;;) switch (_fun36526_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun36475_ip = 74;
-                continue _fun36475;
+                _fun36526_ip = 74;
+                continue _fun36526;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -84,7 +84,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
         var3 = function() { // Original name: GameMentionSettingsStore, environment: var0
-            _fun36479: for (var _fun36479_ip = 0;;) switch (_fun36479_ip) {
+            _fun36530: for (var _fun36530_ip = 0;;) switch (_fun36530_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -98,16 +98,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot8;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun36479_ip = 69;
-                        continue _fun36479
+                        _fun36530_ip = 69;
+                        continue _fun36530
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun36479_ip = 105;
-                    continue _fun36479;
+                    _fun36530_ip = 105;
+                    continue _fun36530;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -159,7 +159,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.REPLACE_GAME_MENTION_SETTINGS = var8;
     var8 = function() { // Original name: handleConnectionOpen, environment: var3
-        _fun36482: for (var _fun36482_ip = 0;;) switch (_fun36482_ip) {
+        _fun36533: for (var _fun36533_ip = 0;;) switch (_fun36533_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -175,8 +175,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.bind(var4)(var2);
                 var2 = var2.enabled;
                 if (!var2) {
-                    _fun36482_ip = 92;
-                    continue _fun36482
+                    _fun36533_ip = 92;
+                    continue _fun36533
                 }
             case 62:
                 var2 = _closure1_slot0;
@@ -216,4 +216,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 3945, 3946, 566, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 3951, 3952, 566, 806, 2]);

@@ -71,7 +71,7 @@ final class RiveUIKt$RiveUI$9 extends k implements Function2<f, Continuation<? s
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(@NotNull a aVar, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(aVar, continuation)).invokeSuspend(Unit.f33282a);
+            return ((AnonymousClass1) create(aVar, continuation)).invokeSuspend(Unit.f33298a);
         }
 
         /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
@@ -121,7 +121,7 @@ final class RiveUIKt$RiveUI$9 extends k implements Function2<f, Continuation<? s
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(@NotNull f fVar, Continuation<? super Unit> continuation) {
-        return ((RiveUIKt$RiveUI$9) create(fVar, continuation)).invokeSuspend(Unit.f33282a);
+        return ((RiveUIKt$RiveUI$9) create(fVar, continuation)).invokeSuspend(Unit.f33298a);
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -142,6 +142,6 @@ final class RiveUIKt$RiveUI$9 extends k implements Function2<f, Continuation<? s
                 return f10;
             }
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 }

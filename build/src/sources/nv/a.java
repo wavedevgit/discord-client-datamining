@@ -13,11 +13,11 @@ import kotlin.jvm.internal.markers.KMappedMarker;
 public final class a implements List, Comparable, KMappedMarker {
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f42208d;
+    private final List f42224d;
 
     public a(List items) {
         Intrinsics.checkNotNullParameter(items, "items");
-        this.f42208d = items;
+        this.f42224d = items;
     }
 
     @Override // java.util.List
@@ -37,54 +37,54 @@ public final class a implements List, Comparable, KMappedMarker {
 
     @Override // java.util.List, java.util.Collection
     public boolean contains(Object obj) {
-        return this.f42208d.contains(obj);
+        return this.f42224d.contains(obj);
     }
 
     @Override // java.util.List, java.util.Collection
     public boolean containsAll(Collection elements) {
         Intrinsics.checkNotNullParameter(elements, "elements");
-        return this.f42208d.containsAll(elements);
+        return this.f42224d.containsAll(elements);
     }
 
     @Override // java.lang.Comparable
     /* renamed from: d */
     public int compareTo(List other) {
         Intrinsics.checkNotNullParameter(other, "other");
-        return lr.a.d(this.f42208d.toString(), other.toString());
+        return lr.a.d(this.f42224d.toString(), other.toString());
     }
 
     public int e() {
-        return this.f42208d.size();
+        return this.f42224d.size();
     }
 
     @Override // java.util.List
     public Object get(int i10) {
-        return this.f42208d.get(i10);
+        return this.f42224d.get(i10);
     }
 
     @Override // java.util.List
     public int indexOf(Object obj) {
-        return this.f42208d.indexOf(obj);
+        return this.f42224d.indexOf(obj);
     }
 
     @Override // java.util.List, java.util.Collection
     public boolean isEmpty() {
-        return this.f42208d.isEmpty();
+        return this.f42224d.isEmpty();
     }
 
     @Override // java.util.List, java.util.Collection, java.lang.Iterable
     public Iterator iterator() {
-        return this.f42208d.iterator();
+        return this.f42224d.iterator();
     }
 
     @Override // java.util.List
     public int lastIndexOf(Object obj) {
-        return this.f42208d.lastIndexOf(obj);
+        return this.f42224d.lastIndexOf(obj);
     }
 
     @Override // java.util.List
     public ListIterator listIterator() {
-        return this.f42208d.listIterator();
+        return this.f42224d.listIterator();
     }
 
     @Override // java.util.List
@@ -124,7 +124,7 @@ public final class a implements List, Comparable, KMappedMarker {
 
     @Override // java.util.List
     public List subList(int i10, int i11) {
-        return this.f42208d.subList(i10, i11);
+        return this.f42224d.subList(i10, i11);
     }
 
     @Override // java.util.List, java.util.Collection
@@ -144,7 +144,7 @@ public final class a implements List, Comparable, KMappedMarker {
 
     @Override // java.util.List
     public ListIterator listIterator(int i10) {
-        return this.f42208d.listIterator(i10);
+        return this.f42224d.listIterator(i10);
     }
 
     @Override // java.util.List, java.util.Collection

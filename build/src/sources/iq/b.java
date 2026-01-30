@@ -17,79 +17,79 @@ import hq.g1;
 public final class b implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final FrameLayout f31060a;
+    private final FrameLayout f31076a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final FrameLayout f31061b;
+    public final FrameLayout f31077b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final Button f31062c;
+    public final Button f31078c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final ImageView f31063d;
+    public final ImageView f31079d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final Flow f31064e;
+    public final Flow f31080e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final Button f31065f;
+    public final Button f31081f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final View f31066g;
+    public final View f31082g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final SignatureView f31067h;
+    public final SignatureView f31083h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final TextView f31068i;
+    public final TextView f31084i;
 
     /* renamed from: j  reason: collision with root package name */
-    public final TextView f31069j;
+    public final TextView f31085j;
 
     /* renamed from: k  reason: collision with root package name */
-    public final ConstraintLayout f31070k;
+    public final ConstraintLayout f31086k;
 
     private b(FrameLayout frameLayout, FrameLayout frameLayout2, Button button, ImageView imageView, Flow flow, Button button2, View view, SignatureView signatureView, TextView textView, TextView textView2, ConstraintLayout constraintLayout) {
-        this.f31060a = frameLayout;
-        this.f31061b = frameLayout2;
-        this.f31062c = button;
-        this.f31063d = imageView;
-        this.f31064e = flow;
-        this.f31065f = button2;
-        this.f31066g = view;
-        this.f31067h = signatureView;
-        this.f31068i = textView;
-        this.f31069j = textView2;
-        this.f31070k = constraintLayout;
+        this.f31076a = frameLayout;
+        this.f31077b = frameLayout2;
+        this.f31078c = button;
+        this.f31079d = imageView;
+        this.f31080e = flow;
+        this.f31081f = button2;
+        this.f31082g = view;
+        this.f31083h = signatureView;
+        this.f31084i = textView;
+        this.f31085j = textView2;
+        this.f31086k = constraintLayout;
     }
 
     public static b a(View view) {
         View a10;
-        int i10 = f1.f27717a;
+        int i10 = f1.f27733a;
         FrameLayout frameLayout = (FrameLayout) e4.a.a(view, i10);
         if (frameLayout != null) {
-            i10 = f1.f27718b;
+            i10 = f1.f27734b;
             Button button = (Button) e4.a.a(view, i10);
             if (button != null) {
-                i10 = f1.f27719c;
+                i10 = f1.f27735c;
                 ImageView imageView = (ImageView) e4.a.a(view, i10);
                 if (imageView != null) {
-                    i10 = f1.f27721e;
+                    i10 = f1.f27737e;
                     Flow flow = (Flow) e4.a.a(view, i10);
                     if (flow != null) {
-                        i10 = f1.f27732p;
+                        i10 = f1.f27748p;
                         Button button2 = (Button) e4.a.a(view, i10);
-                        if (button2 != null && (a10 = e4.a.a(view, (i10 = f1.f27733q))) != null) {
-                            i10 = f1.f27734r;
+                        if (button2 != null && (a10 = e4.a.a(view, (i10 = f1.f27749q))) != null) {
+                            i10 = f1.f27750r;
                             SignatureView signatureView = (SignatureView) e4.a.a(view, i10);
                             if (signatureView != null) {
-                                i10 = f1.f27735s;
+                                i10 = f1.f27751s;
                                 TextView textView = (TextView) e4.a.a(view, i10);
                                 if (textView != null) {
-                                    i10 = f1.f27736t;
+                                    i10 = f1.f27752t;
                                     TextView textView2 = (TextView) e4.a.a(view, i10);
                                     if (textView2 != null) {
-                                        i10 = f1.f27737u;
+                                        i10 = f1.f27753u;
                                         ConstraintLayout constraintLayout = (ConstraintLayout) e4.a.a(view, i10);
                                         if (constraintLayout != null) {
                                             return new b((FrameLayout) view, frameLayout, button, imageView, flow, button2, a10, signatureView, textView, textView2, constraintLayout);
@@ -106,7 +106,7 @@ public final class b implements ViewBinding {
     }
 
     public static b c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(g1.f27767b, viewGroup, false);
+        View inflate = layoutInflater.inflate(g1.f27783b, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -116,6 +116,6 @@ public final class b implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public FrameLayout getRoot() {
-        return this.f31060a;
+        return this.f31076a;
     }
 }

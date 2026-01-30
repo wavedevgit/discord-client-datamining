@@ -1,6 +1,6 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun23833: for (var _fun23833_ip = 0;;) switch (_fun23833_ip) {
+    _fun23834: for (var _fun23834_ip = 0;;) switch (_fun23834_ip) {
         case 0:
             var4 = require;
             var1 = exports;
@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var0 = '__esModule';
             var0 = var6.bind(var7)(var1, var0, var5);
             var0 = function(arg0) { // Original name: setDefaultOptions, environment: var3
-                _fun23834: for (var _fun23834_ip = 0;;) switch (_fun23834_ip) {
+                _fun23835: for (var _fun23835_ip = 0;;) switch (_fun23835_ip) {
                     case 0:
                         var10 = arg0;
                         var0 = undefined;
@@ -44,13 +44,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var12 = var14.call;
                                 var12 = var12.bind(var14)(var11, var13);
                                 if (!var12) {
-                                    _fun23834_ip = 72;
-                                    continue _fun23834
+                                    _fun23835_ip = 72;
+                                    continue _fun23835
                                 }
                                 case 115: var12 = var11[var13];
                                 var2[var13] = var12;
-                                _fun23834_ip = 72;
-                                continue _fun23834;
+                                _fun23835_ip = 72;
+                                continue _fun23835;
                             }
                     case 125:
                         var7 = var10;
@@ -63,21 +63,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var12 = var13.call;
                                 var12 = var12.bind(var13)(var10, var11);
                                 if (!var12) {
-                                    _fun23834_ip = 136;
-                                    continue _fun23834
+                                    _fun23835_ip = 136;
+                                    continue _fun23835
                                 }
                                 case 179: var12 = var10[var11];
                                 if (!(var0 !== var12)) {
-                                    _fun23834_ip = 197;
-                                    continue _fun23834
+                                    _fun23835_ip = 197;
+                                    continue _fun23835
                                 }
                                 case 187: var12 = var10[var11];
                                 var2[var11] = var12;
-                                _fun23834_ip = 136;
-                                continue _fun23834;
+                                _fun23835_ip = 136;
+                                continue _fun23835;
                                 case 197: var11 = delete var2[var11];
-                                _fun23834_ip = 136;
-                                continue _fun23834;
+                                _fun23835_ip = 136;
+                                continue _fun23835;
                             }
                     case 203:
                         var3 = _closure1_slot0;
@@ -95,15 +95,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             var0 = undefined;
             var5 = var4.bind(var0)(var2);
             if (!var5) {
-                _fun23833_ip = 90;
-                continue _fun23833
+                _fun23834_ip = 90;
+                continue _fun23834
             }
         case 78:
             var4 = var5.__esModule;
             var2 = var5;
             if (var4) {
-                _fun23833_ip = 99;
-                continue _fun23833
+                _fun23834_ip = 99;
+                continue _fun23834
             }
         case 90:
             var4 = {};

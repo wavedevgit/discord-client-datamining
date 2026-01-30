@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
     var4 = function(arg0) { // Original name: hasNotSetUpChannelOptIn, environment: var1
-        _fun77440: for (var _fun77440_ip = 0;;) switch (_fun77440_ip) {
+        _fun77484: for (var _fun77484_ip = 0;;) switch (_fun77484_ip) {
             case 0:
                 var5 = arg0;
                 var2 = _closure1_slot0;
@@ -27,8 +27,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var3 == var4;
                 var2 = undefined;
                 if (var7) {
-                    _fun77440_ip = 70;
-                    continue _fun77440
+                    _fun77484_ip = 70;
+                    continue _fun77484
                 }
             case 65:
                 var2 = var4.flags;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = 0;
                 var7 = 0;
                 if (!var4) {
-                    _fun77440_ip = 84;
-                    continue _fun77440
+                    _fun77484_ip = 84;
+                    continue _fun77484
                 }
             case 81:
                 var7 = var2;
@@ -59,15 +59,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1 > var3;
                 var0 = !var0;
                 if (!var0) {
-                    _fun77440_ip = 159;
-                    continue _fun77440
+                    _fun77484_ip = 159;
+                    continue _fun77484
                 }
             case 156:
                 var0 = !var2;
             case 159:
                 if (!var0) {
-                    _fun77440_ip = 165;
-                    continue _fun77440
+                    _fun77484_ip = 165;
+                    continue _fun77484
                 }
             case 162:
                 var0 = !var1;
@@ -77,22 +77,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot10 = var4;
     var3 = function(arg0) { // Original name: optIntoAllChannelsForExistingMember, environment: var1
-        _fun77441: for (var _fun77441_ip = 0;;) switch (_fun77441_ip) {
+        _fun77485: for (var _fun77485_ip = 0;;) switch (_fun77485_ip) {
             case 0:
                 var4 = arg0;
                 var1 = arguments[1];
                 var0 = undefined;
                 if (!(var1 === var0)) {
-                    _fun77441_ip = 16;
-                    continue _fun77441
+                    _fun77485_ip = 16;
+                    continue _fun77485
                 }
             case 14:
                 var1 = {};
             case 16:
                 var5 = var1.include;
                 if (!(var5 === var0)) {
-                    _fun77441_ip = 54;
-                    continue _fun77441
+                    _fun77485_ip = 54;
+                    continue _fun77485
                 }
             case 26:
                 var3 = global;
@@ -109,8 +109,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 54:
                 var1 = var1.exclude;
                 if (!(var1 === var0)) {
-                    _fun77441_ip = 92;
-                    continue _fun77441
+                    _fun77485_ip = 92;
+                    continue _fun77485
                 }
             case 64:
                 var3 = global;
@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = arraySpread(var11, var10, var9);
                 var6 = var7.filter;
                 var3 = function(arg0) { // Environment: var2
-                    _fun77442: for (var _fun77442_ip = 0;;) switch (_fun77442_ip) {
+                    _fun77486: for (var _fun77486_ip = 0;;) switch (_fun77486_ip) {
                         case 0:
                             var0 = arg0;
                             var1 = var0.channel;
@@ -150,8 +150,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var0.bind(var1)();
                             var0 = !var0;
                             if (!var0) {
-                                _fun77442_ip = 49;
-                                continue _fun77442
+                                _fun77486_ip = 49;
+                                continue _fun77486
                             }
                         case 24:
                             var3 = _closure2_slot0;
@@ -249,15 +249,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var5 = var6.bind(var7)(var5);
     var2.hasNotSetUpChannelOptIn = var4;
     var4 = function(arg0) { // Original name: toggleShowAllChannels, environment: var1
-        _fun77445: for (var _fun77445_ip = 0;;) switch (_fun77445_ip) {
+        _fun77489: for (var _fun77489_ip = 0;;) switch (_fun77489_ip) {
             case 0:
                 var2 = arg0;
                 var3 = _closure1_slot10;
                 var0 = undefined;
                 var3 = var3.bind(var0)(var2);
                 if (var3) {
-                    _fun77445_ip = 80;
-                    continue _fun77445
+                    _fun77489_ip = 80;
+                    continue _fun77489
                 }
             case 20:
                 var5 = _closure1_slot0;
@@ -273,8 +273,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var5.setGuildOptIn;
                 var3 = !var3;
                 var3 = var4.bind(var5)(var2, var3);
-                _fun77445_ip = 89;
-                continue _fun77445;
+                _fun77489_ip = 89;
+                continue _fun77489;
             case 80:
                 var1 = _closure1_slot11;
                 var1 = var1.bind(var0)(var2);
@@ -285,14 +285,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.toggleShowAllChannels = var4;
     var2.optIntoAllChannelsForExistingMember = var3;
     var1 = function(arg0) { // Original name: hasClearedGuildOnboardingNotice, environment: var1
-        _fun77446: for (var _fun77446_ip = 0;;) switch (_fun77446_ip) {
+        _fun77490: for (var _fun77490_ip = 0;;) switch (_fun77490_ip) {
             case 0:
                 var8 = arg0;
                 var5 = arguments[1];
                 var6 = undefined;
                 if (!(var5 === var6)) {
-                    _fun77446_ip = 19;
-                    continue _fun77446
+                    _fun77490_ip = 19;
+                    continue _fun77490
                 }
             case 12:
                 var5 = _closure1_slot3;
@@ -300,8 +300,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var0 = var2 != var8;
                 if (!var0) {
-                    _fun77446_ip = 156;
-                    continue _fun77446
+                    _fun77490_ip = 156;
+                    continue _fun77490
                 }
             case 31:
                 var4 = _closure1_slot0;
@@ -315,8 +315,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var2 == var7;
                 var5 = undefined;
                 if (var9) {
-                    _fun77446_ip = 106;
-                    continue _fun77446
+                    _fun77490_ip = 106;
+                    continue _fun77490
                 }
             case 81:
                 var7 = var7.guilds;
@@ -324,8 +324,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var2 == var7;
                 var5 = undefined;
                 if (var8) {
-                    _fun77446_ip = 106;
-                    continue _fun77446
+                    _fun77490_ip = 106;
+                    continue _fun77490
                 }
             case 100:
                 var5 = var7.guildOnboardingProgress;
@@ -333,8 +333,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var2 != var5;
                 var2 = 0;
                 if (!var7) {
-                    _fun77446_ip = 118;
-                    continue _fun77446
+                    _fun77490_ip = 118;
+                    continue _fun77490
                 }
             case 115:
                 var2 = var5;
@@ -353,4 +353,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.hasClearedGuildOnboardingNotice = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1310, 1662, 1672, 4260, 3038, 4536, 1384, 4650, 4647, 1311, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1310, 1662, 1672, 4266, 3038, 4542, 1384, 4656, 4653, 1311, 2]);

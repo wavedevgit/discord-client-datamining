@@ -12,25 +12,25 @@ import org.jetbrains.annotations.NotNull;
 public abstract class TypeRegistry<K, V> {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConcurrentHashMap f36075a = new ConcurrentHashMap();
+    private final ConcurrentHashMap f36091a = new ConcurrentHashMap();
 
     /* renamed from: b  reason: collision with root package name */
-    private final AtomicInteger f36076b = new AtomicInteger(0);
+    private final AtomicInteger f36092b = new AtomicInteger(0);
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final int b(TypeRegistry typeRegistry, String it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return typeRegistry.f36076b.getAndIncrement();
+        return typeRegistry.f36092b.getAndIncrement();
     }
 
     @NotNull
     public final Map<String, Integer> allValuesThreadUnsafeForRendering() {
-        return this.f36075a;
+        return this.f36091a;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final Collection c() {
-        Collection<V> values = this.f36075a.values();
+        Collection<V> values = this.f36091a.values();
         Intrinsics.checkNotNullExpressionValue(values, "<get-values>(...)");
         return values;
     }
@@ -52,6 +52,6 @@ public abstract class TypeRegistry<K, V> {
 
     public final int getId(@NotNull String keyQualifiedName) {
         Intrinsics.checkNotNullParameter(keyQualifiedName, "keyQualifiedName");
-        return customComputeIfAbsent(this.f36075a, keyQualifiedName, new i(this));
+        return customComputeIfAbsent(this.f36091a, keyQualifiedName, new i(this));
     }
 }

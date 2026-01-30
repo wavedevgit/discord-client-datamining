@@ -50,6 +50,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8.PLAYSTATION = var4;
     var0 = 'PLAYSTATION';
     var8[var4] = var0;
+    var4 = 4;
+    var8.QUEST = var4;
+    var0 = 'QUEST';
+    var8[var4] = var0;
     var7 = {};
     var0 = 'Context Menu';
     var7.CONTEXT_MENU = var0;
@@ -109,15 +113,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.VoicePlatforms = var8;
     var2.CallMenuEntrypoint = var7;
     var7 = function(arg0) { // Original name: isStreamParticipant, environment: var6
-        _fun31078: for (var _fun31078_ip = 0;;) switch (_fun31078_ip) {
+        _fun31079: for (var _fun31079_ip = 0;;) switch (_fun31079_ip) {
             case 0:
                 var3 = arg0;
                 var4 = null;
                 var0 = var4 == var3;
                 var5 = undefined;
                 if (var0) {
-                    _fun31078_ip = 19;
-                    continue _fun31078
+                    _fun31079_ip = 19;
+                    continue _fun31079
                 }
             case 14:
                 var5 = var3.type;
@@ -126,15 +130,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.STREAM;
                 var0 = var5 === var0;
                 if (var0) {
-                    _fun31078_ip = 67;
-                    continue _fun31078
+                    _fun31079_ip = 67;
+                    continue _fun31079
                 }
             case 39:
                 var4 = var4 == var3;
                 var2 = undefined;
                 if (var4) {
-                    _fun31078_ip = 53;
-                    continue _fun31078
+                    _fun31079_ip = 53;
+                    continue _fun31079
                 }
             case 48:
                 var2 = var3.type;
@@ -148,15 +152,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isStreamParticipant = var7;
     var7 = function(arg0) { // Original name: isUserParticipant, environment: var6
-        _fun31079: for (var _fun31079_ip = 0;;) switch (_fun31079_ip) {
+        _fun31080: for (var _fun31080_ip = 0;;) switch (_fun31080_ip) {
             case 0:
                 var0 = arg0;
                 var1 = null;
                 var2 = var1 == var0;
                 var1 = undefined;
                 if (var2) {
-                    _fun31079_ip = 19;
-                    continue _fun31079
+                    _fun31080_ip = 19;
+                    continue _fun31080
                 }
             case 14:
                 var1 = var0.type;
@@ -169,15 +173,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isUserParticipant = var7;
     var6 = function(arg0) { // Original name: isActivityParticipant, environment: var6
-        _fun31080: for (var _fun31080_ip = 0;;) switch (_fun31080_ip) {
+        _fun31081: for (var _fun31081_ip = 0;;) switch (_fun31081_ip) {
             case 0:
                 var0 = arg0;
                 var1 = null;
                 var2 = var1 == var0;
                 var1 = undefined;
                 if (var2) {
-                    _fun31080_ip = 19;
-                    continue _fun31080
+                    _fun31081_ip = 19;
+                    continue _fun31081
                 }
             case 14:
                 var1 = var0.type;

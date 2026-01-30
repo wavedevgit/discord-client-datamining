@@ -1155,7 +1155,7 @@ public final class MediaPlayer {
 
     public static final Unit analyticsListener$lambda$2(MediaPlayFinishedAnalytics it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     public final void configureDefaultAudioTrackOverride(DefaultTrackSelector defaultTrackSelector) {
@@ -1402,7 +1402,7 @@ public final class MediaPlayer {
 
     public static final Unit eventListener$lambda$0(Event it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private final boolean findAndConfigureAudioRenderer(DefaultTrackSelector defaultTrackSelector, MappingTrackSelector.MappedTrackInfo mappedTrackInfo, int i10) {
@@ -1411,8 +1411,8 @@ public final class MediaPlayer {
         }
         w0 f10 = mappedTrackInfo.f(i10);
         Intrinsics.checkNotNullExpressionValue(f10, "getTrackGroups(...)");
-        int i11 = f10.f47359d;
-        if (i11 > 1 && i11 != 0 && f10.b(0).f47343d != 0) {
+        int i11 = f10.f47375d;
+        if (i11 > 1 && i11 != 0 && f10.b(0).f47359d != 0) {
             DefaultTrackSelector.d.a E = defaultTrackSelector.E();
             Intrinsics.checkNotNullExpressionValue(E, "buildUponParameters(...)");
             E.s0(false);
@@ -1447,7 +1447,7 @@ public final class MediaPlayer {
     }
 
     public static final Unit volumeListener$lambda$1(float f10) {
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     public final float bufferedPercentage() {

@@ -5,51 +5,51 @@ import ui.c;
 final class g3 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final g3 f41223a = new g3();
+    static final g3 f41239a = new g3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41224b;
+    private static final ui.c f41240b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41225c;
+    private static final ui.c f41241c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41226d;
+    private static final ui.c f41242d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f41227e;
+    private static final ui.c f41243e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final ui.c f41228f;
+    private static final ui.c f41244f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final ui.c f41229g;
+    private static final ui.c f41245g;
 
     static {
         c.b a10 = ui.c.a("mode");
         f fVar = new f();
         fVar.a(1);
-        f41224b = a10.b(fVar.b()).a();
+        f41240b = a10.b(fVar.b()).a();
         c.b a11 = ui.c.a("landmark");
         f fVar2 = new f();
         fVar2.a(2);
-        f41225c = a11.b(fVar2.b()).a();
+        f41241c = a11.b(fVar2.b()).a();
         c.b a12 = ui.c.a("classification");
         f fVar3 = new f();
         fVar3.a(3);
-        f41226d = a12.b(fVar3.b()).a();
+        f41242d = a12.b(fVar3.b()).a();
         c.b a13 = ui.c.a("prominentFaceOnly");
         f fVar4 = new f();
         fVar4.a(4);
-        f41227e = a13.b(fVar4.b()).a();
+        f41243e = a13.b(fVar4.b()).a();
         c.b a14 = ui.c.a("tracking");
         f fVar5 = new f();
         fVar5.a(5);
-        f41228f = a14.b(fVar5.b()).a();
+        f41244f = a14.b(fVar5.b()).a();
         c.b a15 = ui.c.a("minFaceSize");
         f fVar6 = new f();
         fVar6.a(6);
-        f41229g = a15.b(fVar6.b()).a();
+        f41245g = a15.b(fVar6.b()).a();
     }
 
     private g3() {

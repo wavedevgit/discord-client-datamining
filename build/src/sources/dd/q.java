@@ -250,7 +250,7 @@ public final class q implements m {
         System.arraycopy(uVar2.f22076d, 0, bArr, uVar.f22077e, uVar2.f22077e);
         System.arraycopy(uVar3.f22076d, 0, bArr, uVar.f22077e + uVar2.f22077e, uVar3.f22077e);
         d0.a h10 = ne.d0.h(uVar2.f22076d, 3, uVar2.f22077e);
-        return new Format.b().U(str).g0("video/hevc").K(ne.f.c(h10.f40136a, h10.f40137b, h10.f40138c, h10.f40139d, h10.f40143h, h10.f40144i)).n0(h10.f40146k).S(h10.f40147l).c0(h10.f40148m).V(Collections.singletonList(bArr)).G();
+        return new Format.b().U(str).g0("video/hevc").K(ne.f.c(h10.f40152a, h10.f40153b, h10.f40154c, h10.f40155d, h10.f40159h, h10.f40160i)).n0(h10.f40162k).S(h10.f40163l).c0(h10.f40164m).V(Collections.singletonList(bArr)).G();
     }
 
     private void j(long j10, int i10, int i11, long j11) {

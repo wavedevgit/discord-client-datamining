@@ -6,17 +6,17 @@ import java.util.Set;
 abstract class o implements e1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private transient Set f45604d;
+    private transient Set f45620d;
 
     /* renamed from: e  reason: collision with root package name */
-    private transient Map f45605e;
+    private transient Map f45621e;
 
     @Override // pg.e1
     public final Map c() {
-        Map map = this.f45605e;
+        Map map = this.f45621e;
         if (map == null) {
             Map e10 = e();
-            this.f45605e = e10;
+            this.f45621e = e10;
             return e10;
         }
         return map;
@@ -24,10 +24,10 @@ abstract class o implements e1 {
 
     @Override // pg.e1
     public final Set d() {
-        Set set = this.f45604d;
+        Set set = this.f45620d;
         if (set == null) {
             Set f10 = f();
-            this.f45604d = f10;
+            this.f45620d = f10;
             return f10;
         }
         return set;

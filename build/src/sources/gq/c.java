@@ -11,7 +11,7 @@ public final class c implements Parcelable {
     public static final Parcelable.Creator<c> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final File f27084d;
+    private final File f27100d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -31,11 +31,11 @@ public final class c implements Parcelable {
 
     public c(File data) {
         Intrinsics.checkNotNullParameter(data, "data");
-        this.f27084d = data;
+        this.f27100d = data;
     }
 
     public final File a() {
-        return this.f27084d;
+        return this.f27100d;
     }
 
     @Override // android.os.Parcelable
@@ -47,24 +47,24 @@ public final class c implements Parcelable {
         if (this == obj) {
             return true;
         }
-        if ((obj instanceof c) && Intrinsics.areEqual(this.f27084d, ((c) obj).f27084d)) {
+        if ((obj instanceof c) && Intrinsics.areEqual(this.f27100d, ((c) obj).f27100d)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f27084d.hashCode();
+        return this.f27100d.hashCode();
     }
 
     public String toString() {
-        File file = this.f27084d;
+        File file = this.f27100d;
         return "DocumentFile(data=" + file + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeSerializable(this.f27084d);
+        dest.writeSerializable(this.f27100d);
     }
 }

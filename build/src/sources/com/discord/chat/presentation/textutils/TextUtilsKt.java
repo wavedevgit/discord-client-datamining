@@ -551,7 +551,7 @@ public final class TextUtilsKt {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33282a;
+                unit = Unit.f33298a;
                 return unit;
             }
         } : function0;
@@ -594,25 +594,25 @@ public final class TextUtilsKt {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$0(LinkContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$1(LinkContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$10(InlineCodeContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$11(EmojiContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -624,38 +624,38 @@ public final class TextUtilsKt {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$14(SoundmojiContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$2(String str, String str2, String str3) {
         Intrinsics.checkNotNullParameter(str, "<unused var>");
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$3(String str, String str2, String str3, String str4) {
         Intrinsics.checkNotNullParameter(str, "<unused var>");
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$4(String str) {
         Intrinsics.checkNotNullParameter(str, "<unused var>");
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$5(String str, String str2) {
         Intrinsics.checkNotNullParameter(str, "<unused var>");
         Intrinsics.checkNotNullParameter(str2, "<unused var>");
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$6(String str, String str2, String str3, String str4) {
         Intrinsics.checkNotNullParameter(str2, "<unused var>");
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -668,7 +668,7 @@ public final class TextUtilsKt {
     public static final Unit toSpannable$lambda$67$lambda$19(RenderContext renderContext, ContentNode contentNode, View it) {
         Intrinsics.checkNotNullParameter(it, "it");
         renderContext.getOnTapInlineCode().invoke(contentNode);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -685,7 +685,7 @@ public final class TextUtilsKt {
     public static final Unit toSpannable$lambda$67$lambda$22(RenderContext renderContext, ContentNode contentNode, View it) {
         Intrinsics.checkNotNullParameter(it, "it");
         renderContext.getOnTapLink().invoke(contentNode);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -714,7 +714,7 @@ public final class TextUtilsKt {
             str3 = parsedUserId.toString();
         }
         onTapMention.invoke(str, valueOf, str2, str3);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -730,7 +730,7 @@ public final class TextUtilsKt {
         Intrinsics.checkNotNullParameter(it, "it");
         ChannelMentionContentNode channelMentionContentNode = (ChannelMentionContentNode) contentNode;
         renderContext.getOnTapChannel().invoke(channelMentionContentNode.getChannelId(), channelMentionContentNode.getGuildId(), channelMentionContentNode.getMessageId());
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -745,7 +745,7 @@ public final class TextUtilsKt {
     public static final Unit toSpannable$lambda$67$lambda$33(RenderContext renderContext, ContentNode contentNode, View it) {
         Intrinsics.checkNotNullParameter(it, "it");
         renderContext.getOnTapAttachmentLink().invoke(((AttachmentLinkContentNode) contentNode).getAttachmentUrl());
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -753,7 +753,7 @@ public final class TextUtilsKt {
         Intrinsics.checkNotNullParameter(it, "it");
         StaticChannelMentionContentNode staticChannelMentionContentNode = (StaticChannelMentionContentNode) contentNode;
         renderContext.getOnTapChannel().invoke(staticChannelMentionContentNode.getId().getId(), String.valueOf(staticChannelMentionContentNode.m379getGuildIdqOKuAAo()), String.valueOf(staticChannelMentionContentNode.getItemId()));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -767,7 +767,7 @@ public final class TextUtilsKt {
     public static final Unit toSpannable$lambda$67$lambda$38(RenderContext renderContext, ContentNode contentNode, View it) {
         Intrinsics.checkNotNullParameter(it, "it");
         renderContext.getOnTapCommand().invoke(contentNode);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -775,7 +775,7 @@ public final class TextUtilsKt {
         Intrinsics.checkNotNullParameter(it, "it");
         SpoilerManager.INSTANCE.m423markRevealedV2PEE7g(str);
         renderContext.getOnTapSpoiler().invoke();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -788,7 +788,7 @@ public final class TextUtilsKt {
         if (obj != null) {
             draweeSpanStringBuilder.setSpan(obj, length, draweeSpanStringBuilder.length(), 13107233);
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -796,21 +796,21 @@ public final class TextUtilsKt {
         Intrinsics.checkNotNullParameter(changeTextSizeSp, "$this$changeTextSizeSp");
         Intrinsics.checkNotNullParameter(updatedRc, "updatedRc");
         appendToExistingBuilder(((HeadingContentNode) contentNode).getContent(), updatedRc, draweeSpanStringBuilder);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$67$lambda$60(RenderContext renderContext, ContentNode contentNode, View it) {
         Intrinsics.checkNotNullParameter(it, "it");
         renderContext.getOnTapTimestamp().invoke(((TimestampContentNode) contentNode).getFull());
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$67$lambda$63(RenderContext renderContext, ContentNode contentNode, View it) {
         Intrinsics.checkNotNullParameter(it, "it");
         renderContext.getOnTapSoundmoji().invoke(contentNode);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -850,32 +850,32 @@ public final class TextUtilsKt {
         }
         draweeSpanStringBuilder2.append((CharSequence) str);
         draweeSpanStringBuilder2.append("  ");
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$67$lambda$66$lambda$65$lambda$64(RenderContext renderContext, GenericDraweeHierarchyBuilder renderEmojiInto) {
         Intrinsics.checkNotNullParameter(renderEmojiInto, "$this$renderEmojiInto");
         EmojiRendererKt.handleEmojiSpoiler(renderEmojiInto, renderContext, true);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$7(CommandMentionContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$8(CommandMentionContentNode it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit toSpannable$lambda$9(String it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:171:0x04fa  */

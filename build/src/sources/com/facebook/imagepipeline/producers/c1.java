@@ -252,7 +252,7 @@ public class c1 implements w0 {
 
     private static boolean g(RotationOptions rotationOptions, sa.k kVar) {
         if (rotationOptions.i() && !rotationOptions.f()) {
-            return za.e.f55411b.contains(Integer.valueOf(kVar.a1()));
+            return za.e.f55427b.contains(Integer.valueOf(kVar.a1()));
         }
         kVar.y1(0);
         return false;

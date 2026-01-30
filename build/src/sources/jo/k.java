@@ -17,7 +17,7 @@ public final class k {
     public final boolean c(g3.a renderProps) {
         Intrinsics.checkNotNullParameter(renderProps, "renderProps");
         sn.a e10 = e(renderProps);
-        if (e10 != sn.a.f49090d && e10 != sn.a.f49091e) {
+        if (e10 != sn.a.f49106d && e10 != sn.a.f49107e) {
             return false;
         }
         return true;
@@ -32,23 +32,23 @@ public final class k {
         VideoCaptureConfig v10 = renderProps.v();
         List c10 = v10.c();
         if (!v10.e()) {
-            return sn.a.f49092i;
+            return sn.a.f49108i;
         }
-        if (CollectionsKt.firstOrNull(v10.c()) == sn.a.f49090d && !lq.c.d()) {
+        if (CollectionsKt.firstOrNull(v10.c()) == sn.a.f49106d && !lq.c.d()) {
             List c11 = v10.c();
-            sn.a aVar = sn.a.f49091e;
+            sn.a aVar = sn.a.f49107e;
             if (c11.contains(aVar)) {
                 return aVar;
             }
-            return sn.a.f49092i;
+            return sn.a.f49108i;
         }
-        sn.a aVar2 = sn.a.f49091e;
+        sn.a aVar2 = sn.a.f49107e;
         if (c10.contains(aVar2)) {
             return aVar2;
         }
         sn.a aVar3 = (sn.a) CollectionsKt.firstOrNull(c10);
         if (aVar3 == null) {
-            return sn.a.f49092i;
+            return sn.a.f49108i;
         }
         return aVar3;
     }
@@ -56,7 +56,7 @@ public final class k {
     public final boolean f(g3.a renderProps) {
         Intrinsics.checkNotNullParameter(renderProps, "renderProps");
         List c10 = renderProps.v().c();
-        if (renderProps.v().e() && CollectionsKt.firstOrNull(c10) == sn.a.f49090d && !lq.c.d()) {
+        if (renderProps.v().e() && CollectionsKt.firstOrNull(c10) == sn.a.f49106d && !lq.c.d()) {
             return false;
         }
         return true;

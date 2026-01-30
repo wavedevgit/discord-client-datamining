@@ -25,7 +25,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var2 instanceof Object ? var2 : var3;
     var _closure1_slot2 = var2;
     var0 = function(arg0) { // Original name: enableSyncToNative, environment: var0
-        _fun12864: for (var _fun12864_ip = 0;;) switch (_fun12864_ip) {
+        _fun12865: for (var _fun12865_ip = 0;;) switch (_fun12865_ip) {
             case 0:
                 var4 = arg0;
                 var _closure2_slot0 = var4;
@@ -33,8 +33,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var3.has;
                 var2 = var2.bind(var3)(var4);
                 if (var2) {
-                    _fun12864_ip = 309;
-                    continue _fun12864
+                    _fun12865_ip = 309;
+                    continue _fun12865
                 }
             case 32:
                 var5 = _closure1_slot2;
@@ -226,7 +226,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = arg0;
                     var _closure3_slot0 = var1;
                     var0 = function(arg0, arg1) { // Environment: var0
-                        _fun12878: for (var _fun12878_ip = 0;;) switch (_fun12878_ip) {
+                        _fun12879: for (var _fun12879_ip = 0;;) switch (_fun12879_ip) {
                             case 0:
                                 var6 = arg0;
                                 var0 = global;
@@ -239,8 +239,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var0 = {};
                                 var4 = var6.level;
                                 if (var4) {
-                                    _fun12878_ip = 77;
-                                    continue _fun12878
+                                    _fun12879_ip = 77;
+                                    continue _fun12879
                                 }
                             case 46:
                                 var8 = _closure1_slot0;
@@ -256,8 +256,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var4 = undefined;
                                 var5 = undefined;
                                 if (!var7) {
-                                    _fun12878_ip = 133;
-                                    continue _fun12878
+                                    _fun12879_ip = 133;
+                                    continue _fun12879
                                 }
                             case 94:
                                 var8 = _closure1_slot0;
@@ -281,8 +281,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var2 = _closure1_slot0;
                                 var5 = _closure1_slot1;
                                 if (var3) {
-                                    _fun12878_ip = 232;
-                                    continue _fun12878
+                                    _fun12879_ip = 232;
+                                    continue _fun12879
                                 }
                             case 196:
                                 var1 = 4;
@@ -292,8 +292,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var6 = var7.warn;
                                 var1 = '[ScopeSync] Last created breadcrumb is undefined. Skipping sync to native.';
                                 var1 = var6.bind(var7)(var1);
-                                _fun12878_ip = 261;
-                                continue _fun12878;
+                                _fun12879_ip = 261;
+                                continue _fun12879;
                             case 232:
                                 var1 = 1;
                                 var1 = var5[var1];

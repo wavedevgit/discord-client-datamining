@@ -39,7 +39,7 @@ public final class ViewModelInstanceKt {
         }
         boolean z12 = z10 | z11;
         Object d10 = aVar.d();
-        if (z12 || d10 == a.f51985a.a()) {
+        if (z12 || d10 == a.f52001a.a()) {
             d10 = ViewModelInstance.Companion.fromFile(file, source);
             aVar.c(d10);
         }

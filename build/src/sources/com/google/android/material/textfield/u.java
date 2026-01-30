@@ -175,13 +175,13 @@ public final class u {
         Context context = textInputLayout.getContext();
         this.f16545g = context;
         this.f16546h = textInputLayout;
-        this.f16551m = context.getResources().getDimensionPixelSize(yg.d.f54390h);
+        this.f16551m = context.getResources().getDimensionPixelSize(yg.d.f54406h);
         this.f16539a = jh.g.f(context, yg.b.M, 217);
         this.f16540b = jh.g.f(context, yg.b.I, 167);
         this.f16541c = jh.g.f(context, yg.b.M, 167);
-        this.f16542d = jh.g.g(context, yg.b.O, zg.a.f55661d);
+        this.f16542d = jh.g.g(context, yg.b.O, zg.a.f55677d);
         int i10 = yg.b.O;
-        TimeInterpolator timeInterpolator = zg.a.f55658a;
+        TimeInterpolator timeInterpolator = zg.a.f55674a;
         this.f16543e = jh.g.g(context, i10, timeInterpolator);
         this.f16544f = jh.g.g(context, yg.b.Q, timeInterpolator);
     }

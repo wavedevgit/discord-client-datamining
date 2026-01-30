@@ -105,7 +105,7 @@ public final class NestedScrollOnTouchListener implements View.OnTouchListener {
     public static final Unit onSupplementalMotionEventReceived$lambda$2(NestedScrollOnTouchListener nestedScrollOnTouchListener, View view, MotionEvent event) {
         Intrinsics.checkNotNullParameter(event, "event");
         nestedScrollOnTouchListener.viewTouchTracker.handleTouch$react_gesture_handler_release(view, event, true);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -115,7 +115,7 @@ public final class NestedScrollOnTouchListener implements View.OnTouchListener {
         if (function2 != null) {
             function2.invoke(view, nestedScrollOnTouchListener.onSupplementalMotionEventReceived);
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -125,7 +125,7 @@ public final class NestedScrollOnTouchListener implements View.OnTouchListener {
         if (function2 != null) {
             function2.invoke(view, nestedScrollOnTouchListener.onSupplementalMotionEventReceived);
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // android.view.View.OnTouchListener

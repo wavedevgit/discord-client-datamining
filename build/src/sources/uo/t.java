@@ -10,13 +10,13 @@ import kotlinx.coroutines.flow.MutableSharedFlow;
 public final class t implements js.a0 {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f50522e = new a(null);
+    public static final a f50538e = new a(null);
 
     /* renamed from: i  reason: collision with root package name */
-    private static final MutableSharedFlow f50523i = js.c0.b(0, 1, is.a.f31126e, 1, null);
+    private static final MutableSharedFlow f50539i = js.c0.b(0, 1, is.a.f31142e, 1, null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final /* synthetic */ MutableSharedFlow f50524d = f50523i;
+    private final /* synthetic */ MutableSharedFlow f50540d = f50539i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -30,11 +30,11 @@ public final class t implements js.a0 {
 
     public final boolean c(List uri) {
         Intrinsics.checkNotNullParameter(uri, "uri");
-        return f50523i.b(uri);
+        return f50539i.b(uri);
     }
 
     @Override // js.a0, kotlinx.coroutines.flow.Flow
     public Object collect(FlowCollector flowCollector, Continuation continuation) {
-        return this.f50524d.collect(flowCollector, continuation);
+        return this.f50540d.collect(flowCollector, continuation);
     }
 }

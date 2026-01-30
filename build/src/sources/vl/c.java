@@ -11,40 +11,40 @@ import kotlin.ranges.d;
 public final class c extends vl.a {
 
     /* renamed from: k  reason: collision with root package name */
-    public static final a f51186k = new a(null);
+    public static final a f51202k = new a(null);
 
     /* renamed from: l  reason: collision with root package name */
-    private static final String f51187l;
+    private static final String f51203l;
 
     /* renamed from: m  reason: collision with root package name */
-    private static final ZoomLogger f51188m;
+    private static final ZoomLogger f51204m;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ZoomEngine f51189b;
+    private final ZoomEngine f51205b;
 
     /* renamed from: c  reason: collision with root package name */
-    private float f51190c;
+    private float f51206c;
 
     /* renamed from: d  reason: collision with root package name */
-    private float f51191d;
+    private float f51207d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f51192e;
+    private int f51208e;
 
     /* renamed from: f  reason: collision with root package name */
-    private float f51193f;
+    private float f51209f;
 
     /* renamed from: g  reason: collision with root package name */
-    private int f51194g;
+    private int f51210g;
 
     /* renamed from: h  reason: collision with root package name */
-    private OverZoomRangeProvider f51195h;
+    private OverZoomRangeProvider f51211h;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f51196i;
+    private boolean f51212i;
 
     /* renamed from: j  reason: collision with root package name */
-    private boolean f51197j;
+    private boolean f51213j;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -58,10 +58,10 @@ public final class c extends vl.a {
 
     static {
         String TAG = c.class.getSimpleName();
-        f51187l = TAG;
+        f51203l = TAG;
         ZoomLogger.a aVar = ZoomLogger.f18306b;
         Intrinsics.checkNotNullExpressionValue(TAG, "TAG");
-        f51188m = aVar.a(TAG);
+        f51204m = aVar.a(TAG);
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -69,12 +69,12 @@ public final class c extends vl.a {
         super(provider);
         Intrinsics.checkNotNullParameter(engine, "engine");
         Intrinsics.checkNotNullParameter(provider, "provider");
-        this.f51189b = engine;
-        this.f51191d = 0.8f;
-        this.f51193f = 2.5f;
-        this.f51195h = OverZoomRangeProvider.f18273b;
-        this.f51196i = true;
-        this.f51197j = true;
+        this.f51205b = engine;
+        this.f51207d = 0.8f;
+        this.f51209f = 2.5f;
+        this.f51211h = OverZoomRangeProvider.f18273b;
+        this.f51212i = true;
+        this.f51213j = true;
     }
 
     public final float b(float f10, boolean z10) {
@@ -85,8 +85,8 @@ public final class c extends vl.a {
             f11 += c();
         }
         if (f11 < i10) {
-            int i11 = this.f51194g;
-            if (i11 != this.f51192e) {
+            int i11 = this.f51210g;
+            if (i11 != this.f51208e) {
                 if (i11 == 0) {
                     i10 = f11;
                 } else {
@@ -100,85 +100,85 @@ public final class c extends vl.a {
     }
 
     public final float c() {
-        float a10 = this.f51195h.a(this.f51189b, true);
+        float a10 = this.f51211h.a(this.f51205b, true);
         if (a10 < 0.0f) {
-            f51188m.g("Received negative maxOverZoomIn value, coercing to 0");
+            f51204m.g("Received negative maxOverZoomIn value, coercing to 0");
             return d.c(a10, 0.0f);
         }
         return a10;
     }
 
     public final float d() {
-        float a10 = this.f51195h.a(this.f51189b, false);
+        float a10 = this.f51211h.a(this.f51205b, false);
         if (a10 < 0.0f) {
-            f51188m.g("Received negative maxOverZoomOut value, coercing to 0");
+            f51204m.g("Received negative maxOverZoomOut value, coercing to 0");
             return d.c(a10, 0.0f);
         }
         return a10;
     }
 
     public final float e() {
-        return this.f51193f;
+        return this.f51209f;
     }
 
     public final float f() {
-        int i10 = this.f51194g;
+        int i10 = this.f51210g;
         if (i10 != 0) {
             if (i10 == 1) {
-                return this.f51193f;
+                return this.f51209f;
             }
-            throw new IllegalArgumentException(Intrinsics.stringPlus("Unknown ZoomType ", Integer.valueOf(this.f51194g)));
+            throw new IllegalArgumentException(Intrinsics.stringPlus("Unknown ZoomType ", Integer.valueOf(this.f51210g)));
         }
-        return u(this.f51193f);
+        return u(this.f51209f);
     }
 
     public final int g() {
-        return this.f51194g;
+        return this.f51210g;
     }
 
     public final float h() {
-        return this.f51191d;
+        return this.f51207d;
     }
 
     public final float i() {
-        int i10 = this.f51192e;
+        int i10 = this.f51208e;
         if (i10 != 0) {
             if (i10 == 1) {
-                return this.f51191d;
+                return this.f51207d;
             }
-            throw new IllegalArgumentException(Intrinsics.stringPlus("Unknown ZoomType ", Integer.valueOf(this.f51192e)));
+            throw new IllegalArgumentException(Intrinsics.stringPlus("Unknown ZoomType ", Integer.valueOf(this.f51208e)));
         }
-        return u(this.f51191d);
+        return u(this.f51207d);
     }
 
     public final int j() {
-        return this.f51192e;
+        return this.f51208e;
     }
 
     public final float k() {
-        return this.f51190c;
+        return this.f51206c;
     }
 
     public boolean l() {
-        return this.f51196i;
+        return this.f51212i;
     }
 
     public boolean m() {
-        return this.f51197j;
+        return this.f51213j;
     }
 
     public final float n(float f10) {
-        return f10 / this.f51190c;
+        return f10 / this.f51206c;
     }
 
     public void o(boolean z10) {
-        this.f51196i = z10;
+        this.f51212i = z10;
     }
 
     public final void p(float f10, int i10) {
         if (f10 >= 0.0f) {
-            this.f51193f = f10;
-            this.f51194g = i10;
+            this.f51209f = f10;
+            this.f51210g = i10;
             return;
         }
         throw new IllegalArgumentException("Max zoom should be >= 0.");
@@ -186,27 +186,27 @@ public final class c extends vl.a {
 
     public final void q(float f10, int i10) {
         if (f10 >= 0.0f) {
-            this.f51191d = f10;
-            this.f51192e = i10;
+            this.f51207d = f10;
+            this.f51208e = i10;
             return;
         }
         throw new IllegalArgumentException("Min zoom should be >= 0");
     }
 
     public void r(boolean z10) {
-        this.f51197j = z10;
+        this.f51213j = z10;
     }
 
     public final void s(OverZoomRangeProvider overZoomRangeProvider) {
         Intrinsics.checkNotNullParameter(overZoomRangeProvider, "<set-?>");
-        this.f51195h = overZoomRangeProvider;
+        this.f51211h = overZoomRangeProvider;
     }
 
     public final void t(float f10) {
-        this.f51190c = f10;
+        this.f51206c = f10;
     }
 
     public final float u(float f10) {
-        return f10 * this.f51190c;
+        return f10 * this.f51206c;
     }
 }

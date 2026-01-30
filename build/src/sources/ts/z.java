@@ -7,19 +7,19 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class z implements l {
 
     /* renamed from: a  reason: collision with root package name */
-    private final n f49904a;
+    private final n f49920a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Integer f49905b;
+    private final Integer f49921b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Integer f49906c;
+    private final Integer f49922c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Integer f49907d;
+    private final Integer f49923d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Integer f49908e;
+    private final Integer f49924e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     /* synthetic */ class a extends FunctionReferenceImpl implements Function1 {
@@ -36,11 +36,11 @@ public abstract class z implements l {
 
     public z(n field, Integer num, Integer num2, Integer num3, Integer num4) {
         Intrinsics.checkNotNullParameter(field, "field");
-        this.f49904a = field;
-        this.f49905b = num;
-        this.f49906c = num2;
-        this.f49907d = num3;
-        this.f49908e = num4;
+        this.f49920a = field;
+        this.f49921b = num;
+        this.f49922c = num2;
+        this.f49923d = num3;
+        this.f49924e = num4;
         if (num != null && num.intValue() < 0) {
             throw new IllegalArgumentException(("The minimum number of digits (" + num + ") is negative").toString());
         } else if (num2 != null && num != null && num2.intValue() < num.intValue()) {
@@ -51,15 +51,15 @@ public abstract class z implements l {
     @Override // ts.l
     public us.e a() {
         int i10;
-        a aVar = new a(this.f49904a.b());
-        Integer num = this.f49905b;
+        a aVar = new a(this.f49920a.b());
+        Integer num = this.f49921b;
         if (num != null) {
             i10 = num.intValue();
         } else {
             i10 = 0;
         }
-        us.g gVar = new us.g(aVar, i10, this.f49908e);
-        Integer num2 = this.f49907d;
+        us.g gVar = new us.g(aVar, i10, this.f49924e);
+        Integer num2 = this.f49923d;
         if (num2 != null) {
             return new us.h(gVar, num2.intValue());
         }
@@ -68,11 +68,11 @@ public abstract class z implements l {
 
     @Override // ts.l
     public vs.q b() {
-        return vs.p.a(this.f49905b, this.f49906c, this.f49907d, this.f49904a.b(), this.f49904a.getName(), this.f49908e);
+        return vs.p.a(this.f49921b, this.f49922c, this.f49923d, this.f49920a.b(), this.f49920a.getName(), this.f49924e);
     }
 
     @Override // ts.l
     public final n c() {
-        return this.f49904a;
+        return this.f49920a;
     }
 }

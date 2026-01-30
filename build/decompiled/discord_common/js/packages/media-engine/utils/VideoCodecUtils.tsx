@@ -44,10 +44,46 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = '../discord_common/js/packages/media-engine/utils/VideoCodecUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Original name: getExperimentCodecs, environment: var1
-        _fun32486: for (var _fun32486_ip = 0;;) switch (_fun32486_ip) {
+        _fun32491: for (var _fun32491_ip = 0;;) switch (_fun32491_ip) {
             case 0:
                 var7 = arg0;
                 var0 = new Array(0);
+                var2 = var7.has;
+                var1 = _closure1_slot3;
+                var1 = var1.SIGNAL_AV1_DECODE;
+                var1 = var2.bind(var7)(var1);
+                if (var1) {
+                    _fun32491_ip = 82;
+                    continue _fun32491
+                }
+            case 33:
+                var2 = var7.has;
+                var1 = _closure1_slot3;
+                var1 = var1.SIGNAL_AV1;
+                var1 = var2.bind(var7)(var1);
+                if (!var1) {
+                    _fun32491_ip = 106;
+                    continue _fun32491
+                }
+            case 56:
+                var2 = var0.push;
+                var1 = {
+                    'name': 'AV1',
+                    'encode': true,
+                    'decode': true
+                };
+                var1 = var2.bind(var0)(var1);
+                _fun32491_ip = 106;
+                continue _fun32491;
+            case 82:
+                var2 = var0.push;
+                var1 = {
+                    'name': 'AV1',
+                    'encode': false,
+                    'decode': true
+                };
+                var1 = var2.bind(var0)(var1);
+            case 106:
                 var2 = var0.push;
                 var1 = {};
                 var3 = 'H265';
@@ -58,129 +94,129 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = typeof var3;
                 var3 = var4 === var3;
                 if (var3) {
-                    _fun32486_ip = 97;
-                    continue _fun32486
+                    _fun32491_ip = 196;
+                    continue _fun32491
                 }
-            case 43:
+            case 142:
                 var4 = var6.window;
-                var8 = null;
-                var10 = var8 == var4;
-                var5 = undefined;
-                if (var10) {
-                    _fun32486_ip = 87;
-                    continue _fun32486
+                var9 = null;
+                var11 = var9 == var4;
+                var8 = undefined;
+                if (var11) {
+                    _fun32491_ip = 186;
+                    continue _fun32491
                 }
-            case 60:
+            case 159:
                 var4 = var4.DiscordNative;
-                var8 = var8 == var4;
-                var5 = undefined;
-                if (var8) {
-                    _fun32486_ip = 87;
-                    continue _fun32486
+                var9 = var9 == var4;
+                var8 = undefined;
+                if (var9) {
+                    _fun32491_ip = 186;
+                    continue _fun32491
                 }
-            case 75:
+            case 174:
                 var4 = var4.process;
-                var5 = var4.platform;
-            case 87:
+                var8 = var4.platform;
+            case 186:
                 var4 = 'darwin';
-                var3 = var4 !== var5;
-            case 97:
+                var3 = var4 !== var8;
+            case 196:
                 if (var3) {
-                    _fun32486_ip = 246;
-                    continue _fun32486
+                    _fun32491_ip = 342;
+                    continue _fun32491
                 }
-            case 103:
+            case 202:
                 var4 = var6.window;
                 var11 = null;
-                var8 = var11 == var4;
+                var9 = var11 == var4;
                 var12 = undefined;
-                var5 = undefined;
-                if (var8) {
-                    _fun32486_ip = 149;
-                    continue _fun32486
+                var8 = undefined;
+                if (var9) {
+                    _fun32491_ip = 248;
+                    continue _fun32491
                 }
-            case 122:
+            case 221:
                 var4 = var4.DiscordNative;
-                var8 = var11 == var4;
-                var5 = undefined;
-                if (var8) {
-                    _fun32486_ip = 149;
-                    continue _fun32486
+                var9 = var11 == var4;
+                var8 = undefined;
+                if (var9) {
+                    _fun32491_ip = 248;
+                    continue _fun32491
                 }
-            case 137:
+            case 236:
                 var4 = var4.os;
-                var5 = var4.arch;
-            case 149:
+                var8 = var4.arch;
+            case 248:
                 var4 = 'arm64';
-                var4 = var4 === var5;
+                var4 = var4 === var8;
                 if (!var4) {
-                    _fun32486_ip = 243;
-                    continue _fun32486
+                    _fun32491_ip = 339;
+                    continue _fun32491
                 }
-            case 162:
+            case 261:
                 var9 = _closure1_slot0;
                 var10 = _closure1_slot1;
                 var8 = 1;
                 var8 = var10[var8];
-                var9 = var9.bind(var12)(var8);
-                var8 = var9.satisfies;
-                var10 = var6.window;
-                var13 = var11 == var10;
-                var6 = undefined;
+                var10 = var9.bind(var12)(var8);
+                var9 = var10.satisfies;
+                var6 = var6.window;
+                var13 = var11 == var6;
+                var8 = undefined;
                 if (var13) {
-                    _fun32486_ip = 233;
-                    continue _fun32486
+                    _fun32491_ip = 329;
+                    continue _fun32491
                 }
-            case 206:
-                var10 = var10.DiscordNative;
-                var11 = var11 == var10;
-                var6 = undefined;
+            case 302:
+                var6 = var6.DiscordNative;
+                var11 = var11 == var6;
+                var8 = undefined;
                 if (var11) {
-                    _fun32486_ip = 233;
-                    continue _fun32486
+                    _fun32491_ip = 329;
+                    continue _fun32491
                 }
-            case 221:
-                var10 = var10.os;
-                var6 = var10.release;
-            case 233:
-                var5 = _closure1_slot2;
-                var4 = var8.bind(var9)(var6, var5);
-            case 243:
+            case 317:
+                var6 = var6.os;
+                var8 = var6.release;
+            case 329:
+                var6 = _closure1_slot2;
+                var4 = var9.bind(var10)(var8, var6);
+            case 339:
                 var3 = var4;
-            case 246:
+            case 342:
                 var1.encode = var3;
                 var4 = null;
                 var3 = var4 != var7;
                 if (!var3) {
-                    _fun32486_ip = 283;
-                    continue _fun32486
+                    _fun32491_ip = 376;
+                    continue _fun32491
                 }
-            case 260:
-                var6 = var7.has;
-                var5 = _closure1_slot3;
-                var5 = var5.H265_HARDWARE_ONLY;
-                var3 = var6.bind(var7)(var5);
-            case 283:
+            case 356:
+                var8 = var7.has;
+                var6 = _closure1_slot3;
+                var6 = var6.H265_HARDWARE_ONLY;
+                var3 = var8.bind(var7)(var6);
+            case 376:
                 var3 = !var3;
                 if (var3) {
-                    _fun32486_ip = 324;
-                    continue _fun32486
+                    _fun32491_ip = 414;
+                    continue _fun32491
                 }
-            case 289:
-                var5 = var4 == var7;
+            case 382:
+                var6 = var4 == var7;
                 var4 = undefined;
-                if (var5) {
-                    _fun32486_ip = 321;
-                    continue _fun32486
+                if (var6) {
+                    _fun32491_ip = 411;
+                    continue _fun32491
                 }
-            case 298:
+            case 391:
                 var6 = var7.has;
                 var5 = _closure1_slot3;
                 var5 = var5.H265_HARDWARE_DECODE_AVAILABLE;
                 var4 = var6.bind(var7)(var5);
-            case 321:
+            case 411:
                 var3 = var4;
-            case 324:
+            case 414:
                 var1.decode = var3;
                 var1 = var2.bind(var0)(var1);
                 return var0;
@@ -195,7 +231,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var2.bind(var3)(var1);
         var2 = var3.map;
         var1 = function(arg0) { // Environment: var0
-            _fun32491: for (var _fun32491_ip = 0;;) switch (_fun32491_ip) {
+            _fun32496: for (var _fun32496_ip = 0;;) switch (_fun32496_ip) {
                 case 0:
                     var1 = arg0;
                     var0 = {};
@@ -203,8 +239,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = 'AV1';
                     var4 = 'AV1X';
                     if (!(var4 !== var3)) {
-                        _fun32491_ip = 28;
-                        continue _fun32491
+                        _fun32496_ip = 28;
+                        continue _fun32496
                     }
                 case 25:
                     var2 = var3;
@@ -229,7 +265,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure3_slot1 = var0;
             var2 = var3.forEach;
             var1 = function(arg0) { // Environment: var1
-                _fun32489: for (var _fun32489_ip = 0;;) switch (_fun32489_ip) {
+                _fun32494: for (var _fun32494_ip = 0;;) switch (_fun32494_ip) {
                     case 0:
                         var4 = arg0;
                         var _closure4_slot0 = var4;
@@ -246,8 +282,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3 = var2.bind(var3)(var1);
                         var1 = null;
                         if (!(var1 != var3)) {
-                            _fun32489_ip = 102;
-                            continue _fun32489
+                            _fun32494_ip = 102;
+                            continue _fun32494
                         }
                     case 37:
                         var2 = _closure3_slot1;
@@ -257,8 +293,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0.name = var5;
                         var5 = var3.encode;
                         if (!var5) {
-                            _fun32489_ip = 72;
-                            continue _fun32489
+                            _fun32494_ip = 72;
+                            continue _fun32494
                         }
                     case 66:
                         var5 = var4.encode;
@@ -266,8 +302,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0.encode = var5;
                         var3 = var3.decode;
                         if (!var3) {
-                            _fun32489_ip = 92;
-                            continue _fun32489
+                            _fun32494_ip = 92;
+                            continue _fun32494
                         }
                     case 86:
                         var3 = var4.decode;
@@ -289,14 +325,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.filterVideoCodecs = var3;
     var1 = function(arg0) { // Original name: codecNameToPayloadName, environment: var1
-        _fun32492: for (var _fun32492_ip = 0;;) switch (_fun32492_ip) {
+        _fun32497: for (var _fun32497_ip = 0;;) switch (_fun32497_ip) {
             case 0:
                 var1 = arg0;
                 var0 = 'AV1X';
                 var2 = 'AV1';
                 if (!(var2 !== var1)) {
-                    _fun32492_ip = 20;
-                    continue _fun32492
+                    _fun32497_ip = 20;
+                    continue _fun32497
                 }
             case 17:
                 var0 = var1;
@@ -306,4 +342,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.codecNameToPayloadName = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3469, 3639, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3469, 3641, 2]);

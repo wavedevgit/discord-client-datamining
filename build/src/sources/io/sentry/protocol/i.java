@@ -11,16 +11,16 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class i implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f30363d;
+    private String f30379d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f30364e;
+    private String f30380e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f30365i;
+    private String f30381i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Map f30366o;
+    private Map f30382o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -56,13 +56,13 @@ public final class i implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        iVar.f30365i = e3Var.r1();
+                        iVar.f30381i = e3Var.r1();
                         break;
                     case 1:
-                        iVar.f30363d = e3Var.r1();
+                        iVar.f30379d = e3Var.r1();
                         break;
                     case 2:
-                        iVar.f30364e = e3Var.r1();
+                        iVar.f30380e = e3Var.r1();
                         break;
                     default:
                         if (concurrentHashMap == null) {
@@ -79,37 +79,37 @@ public final class i implements w1 {
     }
 
     public void d(String str) {
-        this.f30363d = str;
+        this.f30379d = str;
     }
 
     public void e(String str) {
-        this.f30364e = str;
+        this.f30380e = str;
     }
 
     public void f(String str) {
-        this.f30365i = str;
+        this.f30381i = str;
     }
 
     public void g(Map map) {
-        this.f30366o = map;
+        this.f30382o = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        if (this.f30363d != null) {
-            f3Var.e("city").f(this.f30363d);
+        if (this.f30379d != null) {
+            f3Var.e("city").f(this.f30379d);
         }
-        if (this.f30364e != null) {
-            f3Var.e("country_code").f(this.f30364e);
+        if (this.f30380e != null) {
+            f3Var.e("country_code").f(this.f30380e);
         }
-        if (this.f30365i != null) {
-            f3Var.e("region").f(this.f30365i);
+        if (this.f30381i != null) {
+            f3Var.e("region").f(this.f30381i);
         }
-        Map map = this.f30366o;
+        Map map = this.f30382o;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f30366o.get(str);
+                Object obj = this.f30382o.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }

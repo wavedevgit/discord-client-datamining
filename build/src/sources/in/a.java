@@ -6,24 +6,24 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public abstract class a implements ChildrenDrawingOrderStrategy {
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f28638a;
+    private boolean f28654a;
 
     public a(boolean z10) {
-        this.f28638a = z10;
+        this.f28654a = z10;
     }
 
     public boolean b() {
-        return this.f28638a;
+        return this.f28654a;
     }
 
     @Override // com.swmansion.rnscreens.stack.views.ChildrenDrawingOrderStrategy
     public void disable() {
-        this.f28638a = false;
+        this.f28654a = false;
     }
 
     @Override // com.swmansion.rnscreens.stack.views.ChildrenDrawingOrderStrategy
     public void enable() {
-        this.f28638a = true;
+        this.f28654a = true;
     }
 
     public /* synthetic */ a(boolean z10, int i10, DefaultConstructorMarker defaultConstructorMarker) {

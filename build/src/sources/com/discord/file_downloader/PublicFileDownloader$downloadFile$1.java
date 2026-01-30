@@ -39,13 +39,13 @@ public final class PublicFileDownloader$downloadFile$1 extends k implements Func
     public static final Unit invokeSuspend$lambda$0(Ref.LongRef longRef, ProducerScope producerScope, DownloadManager downloadManager, String str) {
         PublicFileDownloader.onDownloadListeners.remove(Long.valueOf(longRef.element));
         PublicFileDownloader.INSTANCE.onFileDownloaded(producerScope, downloadManager, longRef.element, str);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit invokeSuspend$lambda$1(Ref.LongRef longRef) {
         PublicFileDownloader.onDownloadListeners.remove(Long.valueOf(longRef.element));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -85,6 +85,6 @@ public final class PublicFileDownloader$downloadFile$1 extends k implements Func
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(ProducerScope producerScope, Continuation<? super Unit> continuation) {
-        return ((PublicFileDownloader$downloadFile$1) create(producerScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((PublicFileDownloader$downloadFile$1) create(producerScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = new Array(1);
         var2[0] = var5;
         var1 = function() { // Environment: var1
-            _fun88741: for (var _fun88741_ip = 0;;) switch (_fun88741_ip) {
+            _fun88978: for (var _fun88978_ip = 0;;) switch (_fun88978_ip) {
                 case 0:
                     var2 = _closure1_slot4;
                     var1 = var2.getFlattenedGuildIds;
@@ -80,16 +80,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = _closure2_slot0;
                     var1 = var3.bind(var4)(var1);
                     if (!var1) {
-                        _fun88741_ip = 53;
-                        continue _fun88741
+                        _fun88978_ip = 53;
+                        continue _fun88978
                     }
                 case 47:
                     var3 = null;
                     var1 = var3 != var2;
                 case 53:
                     if (!var1) {
-                        _fun88741_ip = 74;
-                        continue _fun88741
+                        _fun88978_ip = 74;
+                        continue _fun88978
                     }
                 case 56:
                     var4 = _closure1_slot6;
@@ -99,8 +99,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var4 === var3;
                 case 74:
                     if (!var1) {
-                        _fun88741_ip = 88;
-                        continue _fun88741
+                        _fun88978_ip = 88;
+                        continue _fun88978
                     }
                 case 77:
                     var1 = _closure1_slot8;
@@ -152,4 +152,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.GUILD_SPECIFIC_SETTINGS = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4333, 10084, 11469, 6965, 3237, 11470, 1307, 8939, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4339, 10090, 11491, 6968, 3237, 11492, 1307, 8943, 2]);

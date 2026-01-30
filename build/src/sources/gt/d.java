@@ -15,18 +15,18 @@ import java.util.ServiceLoader;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final boolean f27200a;
+    private static final boolean f27216a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final d f27201b;
+    private static final d f27217b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final boolean f27202c;
+    private static final boolean f27218c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private static class a extends d {
         a() {
-            if (!d.f27200a) {
+            if (!d.f27216a) {
                 return;
             }
             throw new IllegalStateException("The module time4j-android is not active. Check your configuration.");
@@ -34,7 +34,7 @@ public abstract class d {
 
         @Override // gt.d
         public InputStream e(URI uri, boolean z10) {
-            if (uri != null && !d.f27202c) {
+            if (uri != null && !d.f27218c) {
                 try {
                     URL url = uri.toURL();
                     if (z10) {
@@ -97,31 +97,31 @@ public abstract class d {
     static {
         boolean z10;
         boolean equalsIgnoreCase = "Dalvik".equalsIgnoreCase(System.getProperty("java.vm.name"));
-        f27200a = equalsIgnoreCase;
+        f27216a = equalsIgnoreCase;
         if (!equalsIgnoreCase && Boolean.getBoolean("net.time4j.base.useClassloaderOnly")) {
             z10 = true;
         } else {
             z10 = false;
         }
-        f27202c = z10;
+        f27218c = z10;
         String property = System.getProperty("net.time4j.base.ResourceLoader");
         if (property == null) {
-            f27201b = new a();
+            f27217b = new a();
             return;
         }
         try {
-            f27201b = (d) Class.forName(property).newInstance();
+            f27217b = (d) Class.forName(property).newInstance();
         } catch (Exception e10) {
             throw new AssertionError("Wrong configuration of external resource loader: " + e10.getMessage());
         }
     }
 
     public static d c() {
-        return f27201b;
+        return f27217b;
     }
 
     public final InputStream d(Class cls, String str, boolean z10) {
-        if (!f27200a) {
+        if (!f27216a) {
             URL resource = cls.getClassLoader().getResource(str);
             if (resource != null) {
                 if (z10) {

@@ -3,7 +3,7 @@ package net.time4j;
 final class r0 extends jt.e implements v0 {
 
     /* renamed from: d  reason: collision with root package name */
-    static final r0 f40793d = new r0();
+    static final r0 f40809d = new r0();
     private static final long serialVersionUID = -3712256393866098916L;
 
     private r0() {
@@ -11,7 +11,7 @@ final class r0 extends jt.e implements v0 {
     }
 
     private Object readResolve() {
-        return f40793d;
+        return f40809d;
     }
 
     @Override // jt.p
@@ -33,7 +33,7 @@ final class r0 extends jt.e implements v0 {
     @Override // jt.p
     /* renamed from: G */
     public g0 A() {
-        return g0.f40604x;
+        return g0.f40620x;
     }
 
     @Override // jt.p

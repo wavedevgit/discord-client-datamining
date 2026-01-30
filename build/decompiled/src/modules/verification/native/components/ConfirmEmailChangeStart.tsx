@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/verification/native/components/ConfirmEmailChangeStart.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Original name: ConfirmEmailChangeStart, environment: var1
-        _fun60379: for (var _fun60379_ip = 0;;) switch (_fun60379_ip) {
+        _fun60423: for (var _fun60423_ip = 0;;) switch (_fun60423_ip) {
             case 0:
                 var0 = _closure1_slot12;
                 var4 = undefined;
@@ -137,13 +137,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot3;
                 var0 = function*() { // Environment: var11
                     var0 = function*() { // Original name: ?anon_0_, environment: var0
-                        _fun60382: for (var _fun60382_ip = 0;;) switch (_fun60382_ip) {
+                        _fun60426: for (var _fun60426_ip = 0;;) switch (_fun60426_ip) {
                             case 0:
                                 StartGenerator();
                                 ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                 if (var1) {
-                                    _fun60382_ip = 279;
-                                    continue _fun60382
+                                    _fun60426_ip = 279;
+                                    continue _fun60426
                                 }
                             case 10:
                                 var4 = undefined;
@@ -165,8 +165,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             case 65:
                                 ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 5);
                                 if (var5) {
-                                    _fun60382_ip = 122;
-                                    continue _fun60382
+                                    _fun60426_ip = 122;
+                                    continue _fun60426
                                 }
                             case 71:
                                 var7 = _closure2_slot1;
@@ -180,8 +180,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var3 = var3.CONFIRM_EMAIL_CHANGE_CODE;
                                 var3 = var5.bind(var7)(var3);
                             case 117: // try_end0
-                                _fun60382_ip = 250;
-                                continue _fun60382;
+                                _fun60426_ip = 250;
+                                continue _fun60426;
                             case 122: // try_end1
                                 var5 = _closure2_slot2;
                                 var3 = false;
@@ -209,8 +209,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var6 = var5;
                                 var3 = null;
                                 if (!(var3 != var5)) {
-                                    _fun60382_ip = 250;
-                                    continue _fun60382
+                                    _fun60426_ip = 250;
+                                    continue _fun60426
                                 }
                             case 203:
                                 var3 = _closure1_slot1;
@@ -247,8 +247,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var2.bind(var3)(var1, var0);
                 var0 = null;
                 if (!(var0 != var6)) {
-                    _fun60379_ip = 643;
-                    continue _fun60379
+                    _fun60423_ip = 643;
+                    continue _fun60423
                 }
             case 181:
                 var18 = _closure1_slot0;
@@ -384,4 +384,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 27, 1613, 33, 1297, 1469, 566, 7434, 670, 3311, 3107, 1234, 4853, 7432, 3895, 4829, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 57, 31, 27, 1613, 33, 1297, 1469, 566, 7437, 670, 3311, 3107, 1234, 4859, 7435, 3901, 4835, 2]);

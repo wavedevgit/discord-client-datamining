@@ -3,7 +3,7 @@ package w0;
 final class y implements a0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final y f52023a = new y();
+    public static final y f52039a = new y();
 
     private y() {
     }

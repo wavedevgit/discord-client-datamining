@@ -396,11 +396,11 @@ public class g implements ActivityEventListener {
 
     private void A(Activity activity, int i10) {
         try {
-            View findViewById = activity.findViewById(nq.d.f42097l);
+            View findViewById = activity.findViewById(nq.d.f42113l);
             if (findViewById != null) {
                 l0(findViewById, i10);
             }
-            View findViewById2 = activity.findViewById(nq.d.f42098m);
+            View findViewById2 = activity.findViewById(nq.d.f42114m);
             if (findViewById2 != null) {
                 l0(findViewById2, i10);
             }
@@ -431,9 +431,9 @@ public class g implements ActivityEventListener {
         }
         try {
             try {
-                C(activity, nq.d.f42099n, nq.d.f42089d, nq.d.f42102q, parseColor, i10);
-                C(activity, nq.d.f42100o, nq.d.f42090e, nq.d.f42103r, parseColor, i10);
-                C(activity, nq.d.f42101p, nq.d.f42091f, nq.d.f42104s, parseColor, i10);
+                C(activity, nq.d.f42115n, nq.d.f42105d, nq.d.f42118q, parseColor, i10);
+                C(activity, nq.d.f42116o, nq.d.f42106e, nq.d.f42119r, parseColor, i10);
+                C(activity, nq.d.f42117p, nq.d.f42107f, nq.d.f42120s, parseColor, i10);
                 x(activity, parseColor, i10);
                 if (i10 != -1) {
                     A(activity, i10);
@@ -1276,7 +1276,7 @@ public class g implements ActivityEventListener {
         int i12;
         int i13;
         try {
-            View findViewById = activity.findViewById(nq.d.f42092g);
+            View findViewById = activity.findViewById(nq.d.f42108g);
             if (findViewById != null && (findViewById instanceof ViewGroup)) {
                 ViewGroup viewGroup = (ViewGroup) findViewById;
                 for (int i14 = 0; i14 < viewGroup.getChildCount(); i14++) {
@@ -1314,7 +1314,7 @@ public class g implements ActivityEventListener {
     public void y(Activity activity, String str) {
         try {
             Resources resources = activity.getResources();
-            View findViewById = activity.findViewById(nq.d.f42111z);
+            View findViewById = activity.findViewById(nq.d.f42127z);
             if (findViewById == null) {
                 Log.w("ImageCropPicker", "Could not find wrapper_controls view");
             } else if (findViewById instanceof ViewGroup) {

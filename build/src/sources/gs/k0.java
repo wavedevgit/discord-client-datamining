@@ -16,9 +16,9 @@ public abstract class k0 {
         } else {
             z10 = false;
         }
-        if (!z10 && (h10 instanceof ls.i) && b(i10) == b(mVar.f36343i)) {
+        if (!z10 && (h10 instanceof ls.i) && b(i10) == b(mVar.f36359i)) {
             ls.i iVar = (ls.i) h10;
-            CoroutineDispatcher coroutineDispatcher = iVar.f37444o;
+            CoroutineDispatcher coroutineDispatcher = iVar.f37460o;
             CoroutineContext context = iVar.getContext();
             if (ls.j.d(coroutineDispatcher, context)) {
                 ls.j.c(coroutineDispatcher, context, mVar);
@@ -51,28 +51,28 @@ public abstract class k0 {
         Object l10 = mVar.l();
         Throwable i10 = mVar.i(l10);
         if (i10 != null) {
-            Result.a aVar = Result.f33279e;
+            Result.a aVar = Result.f33295e;
             j10 = kotlin.c.a(i10);
         } else {
-            Result.a aVar2 = Result.f33279e;
+            Result.a aVar2 = Result.f33295e;
             j10 = mVar.j(l10);
         }
         Object b10 = Result.b(j10);
         if (z10) {
             Intrinsics.checkNotNull(continuation, "null cannot be cast to non-null type kotlinx.coroutines.internal.DispatchedContinuation<T of kotlinx.coroutines.DispatchedTaskKt.resume>");
             ls.i iVar = (ls.i) continuation;
-            Continuation continuation2 = iVar.f37445p;
-            Object obj = iVar.f37447r;
+            Continuation continuation2 = iVar.f37461p;
+            Object obj = iVar.f37463r;
             CoroutineContext context = continuation2.getContext();
             Object i11 = ls.l0.i(context, obj);
-            if (i11 != ls.l0.f37459a) {
+            if (i11 != ls.l0.f37475a) {
                 u1Var = x.m(continuation2, context, i11);
             } else {
                 u1Var = null;
             }
             try {
-                iVar.f37445p.resumeWith(b10);
-                Unit unit = Unit.f33282a;
+                iVar.f37461p.resumeWith(b10);
+                Unit unit = Unit.f33298a;
                 if (u1Var != null && !u1Var.Z0()) {
                     return;
                 }
@@ -89,7 +89,7 @@ public abstract class k0 {
     }
 
     private static final void e(kotlinx.coroutines.m mVar) {
-        p0 b10 = l1.f27161a.b();
+        p0 b10 = l1.f27177a.b();
         if (b10.r2()) {
             b10.j2(mVar);
             return;

@@ -7,35 +7,35 @@ import java.util.Set;
 public class t implements s {
 
     /* renamed from: e  reason: collision with root package name */
-    private static volatile u f55500e;
+    private static volatile u f55516e;
 
     /* renamed from: a  reason: collision with root package name */
-    private final jc.a f55501a;
+    private final jc.a f55517a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final jc.a f55502b;
+    private final jc.a f55518b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final fc.e f55503c;
+    private final fc.e f55519c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final gc.r f55504d;
+    private final gc.r f55520d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public t(jc.a aVar, jc.a aVar2, fc.e eVar, gc.r rVar, gc.v vVar) {
-        this.f55501a = aVar;
-        this.f55502b = aVar2;
-        this.f55503c = eVar;
-        this.f55504d = rVar;
+        this.f55517a = aVar;
+        this.f55518b = aVar2;
+        this.f55519c = eVar;
+        this.f55520d = rVar;
         vVar.c();
     }
 
     private i b(n nVar) {
-        return i.a().i(this.f55501a.a()).k(this.f55502b.a()).j(nVar.g()).h(new h(nVar.b(), nVar.d())).g(nVar.c().a()).d();
+        return i.a().i(this.f55517a.a()).k(this.f55518b.a()).j(nVar.g()).h(new h(nVar.b(), nVar.d())).g(nVar.c().a()).d();
     }
 
     public static t c() {
-        u uVar = f55500e;
+        u uVar = f55516e;
         if (uVar != null) {
             return uVar.h();
         }
@@ -50,11 +50,11 @@ public class t implements s {
     }
 
     public static void f(Context context) {
-        if (f55500e == null) {
+        if (f55516e == null) {
             synchronized (t.class) {
                 try {
-                    if (f55500e == null) {
-                        f55500e = e.l().a(context).build();
+                    if (f55516e == null) {
+                        f55516e = e.l().a(context).build();
                     }
                 } catch (Throwable th2) {
                     throw th2;
@@ -65,11 +65,11 @@ public class t implements s {
 
     @Override // zb.s
     public void a(n nVar, xb.j jVar) {
-        this.f55503c.a(nVar.f().f(nVar.c().c()), b(nVar), jVar);
+        this.f55519c.a(nVar.f().f(nVar.c().c()), b(nVar), jVar);
     }
 
     public gc.r e() {
-        return this.f55504d;
+        return this.f55520d;
     }
 
     public xb.i g(f fVar) {

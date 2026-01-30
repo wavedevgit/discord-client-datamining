@@ -39,15 +39,15 @@ public abstract class h extends k1.b {
             this.Z0 = ((ConstraintWidgetContainer) K()).K1();
         }
         b.a aVar = this.Y0;
-        aVar.f36713a = bVar;
-        aVar.f36714b = bVar2;
-        aVar.f36715c = i10;
-        aVar.f36716d = i11;
+        aVar.f36729a = bVar;
+        aVar.f36730b = bVar2;
+        aVar.f36731c = i10;
+        aVar.f36732d = i11;
         this.Z0.b(constraintWidget, aVar);
-        constraintWidget.l1(this.Y0.f36717e);
-        constraintWidget.M0(this.Y0.f36718f);
-        constraintWidget.L0(this.Y0.f36720h);
-        constraintWidget.B0(this.Y0.f36719g);
+        constraintWidget.l1(this.Y0.f36733e);
+        constraintWidget.M0(this.Y0.f36734f);
+        constraintWidget.L0(this.Y0.f36736h);
+        constraintWidget.B0(this.Y0.f36735g);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -76,14 +76,14 @@ public abstract class h extends k1.b {
                         u11 = ConstraintWidget.b.WRAP_CONTENT;
                     }
                     b.a aVar = this.Y0;
-                    aVar.f36713a = u10;
-                    aVar.f36714b = u11;
-                    aVar.f36715c = constraintWidget2.W();
-                    this.Y0.f36716d = constraintWidget2.x();
+                    aVar.f36729a = u10;
+                    aVar.f36730b = u11;
+                    aVar.f36731c = constraintWidget2.W();
+                    this.Y0.f36732d = constraintWidget2.x();
                     interfaceC0474b.b(constraintWidget2, this.Y0);
-                    constraintWidget2.l1(this.Y0.f36717e);
-                    constraintWidget2.M0(this.Y0.f36718f);
-                    constraintWidget2.B0(this.Y0.f36719g);
+                    constraintWidget2.l1(this.Y0.f36733e);
+                    constraintWidget2.M0(this.Y0.f36734f);
+                    constraintWidget2.B0(this.Y0.f36735g);
                 }
             }
         }

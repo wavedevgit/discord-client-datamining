@@ -8,28 +8,28 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public final class n {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f55400e;
+    public static final a f55416e;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final n[] f55401i;
+    private static final n[] f55417i;
 
     /* renamed from: o  reason: collision with root package name */
-    public static final n f55402o = new n("UNKNOWN", 0, -1);
+    public static final n f55418o = new n("UNKNOWN", 0, -1);
 
     /* renamed from: p  reason: collision with root package name */
-    public static final n f55403p = new n("VISIBLE", 1, 1);
+    public static final n f55419p = new n("VISIBLE", 1, 1);
 
     /* renamed from: q  reason: collision with root package name */
-    public static final n f55404q = new n("INVISIBLE", 2, 2);
+    public static final n f55420q = new n("INVISIBLE", 2, 2);
 
     /* renamed from: r  reason: collision with root package name */
-    private static final /* synthetic */ n[] f55405r;
+    private static final /* synthetic */ n[] f55421r;
 
     /* renamed from: s  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f55406s;
+    private static final /* synthetic */ EnumEntries f55422s;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f55407d;
+    private final int f55423d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -43,18 +43,18 @@ public final class n {
 
     static {
         n[] a10 = a();
-        f55405r = a10;
-        f55406s = pr.a.a(a10);
-        f55400e = new a(null);
-        f55401i = values();
+        f55421r = a10;
+        f55422s = pr.a.a(a10);
+        f55416e = new a(null);
+        f55417i = values();
     }
 
     private n(String str, int i10, int i11) {
-        this.f55407d = i11;
+        this.f55423d = i11;
     }
 
     private static final /* synthetic */ n[] a() {
-        return new n[]{f55402o, f55403p, f55404q};
+        return new n[]{f55418o, f55419p, f55420q};
     }
 
     public static n valueOf(String str) {
@@ -62,6 +62,6 @@ public final class n {
     }
 
     public static n[] values() {
-        return (n[]) f55405r.clone();
+        return (n[]) f55421r.clone();
     }
 }

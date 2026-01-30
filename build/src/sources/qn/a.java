@@ -10,7 +10,7 @@ public final class a implements Parcelable {
     public static final Parcelable.Creator<a> CREATOR = new C0570a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final Float[] f47520d;
+    private final Float[] f47536d;
 
     /* renamed from: qn.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -36,23 +36,23 @@ public final class a implements Parcelable {
 
     public a(Float[] averageBrightness3x3) {
         Intrinsics.checkNotNullParameter(averageBrightness3x3, "averageBrightness3x3");
-        this.f47520d = averageBrightness3x3;
+        this.f47536d = averageBrightness3x3;
     }
 
     public final float a() {
-        return ((this.f47520d[7].floatValue() * 2.0f) + ((this.f47520d[6].floatValue() + this.f47520d[8].floatValue()) * 0.5f)) / 3;
+        return ((this.f47536d[7].floatValue() * 2.0f) + ((this.f47536d[6].floatValue() + this.f47536d[8].floatValue()) * 0.5f)) / 3;
     }
 
     public final float b() {
-        return ((this.f47520d[3].floatValue() * 2.0f) + ((this.f47520d[0].floatValue() + this.f47520d[6].floatValue()) * 0.5f)) / 3;
+        return ((this.f47536d[3].floatValue() * 2.0f) + ((this.f47536d[0].floatValue() + this.f47536d[6].floatValue()) * 0.5f)) / 3;
     }
 
     public final float c() {
-        return ((this.f47520d[5].floatValue() * 2.0f) + ((this.f47520d[2].floatValue() + this.f47520d[8].floatValue()) * 0.5f)) / 3;
+        return ((this.f47536d[5].floatValue() * 2.0f) + ((this.f47536d[2].floatValue() + this.f47536d[8].floatValue()) * 0.5f)) / 3;
     }
 
     public final float d() {
-        return ((this.f47520d[1].floatValue() * 2.0f) + ((this.f47520d[0].floatValue() + this.f47520d[2].floatValue()) * 0.5f)) / 3;
+        return ((this.f47536d[1].floatValue() * 2.0f) + ((this.f47536d[0].floatValue() + this.f47536d[2].floatValue()) * 0.5f)) / 3;
     }
 
     @Override // android.os.Parcelable
@@ -63,7 +63,7 @@ public final class a implements Parcelable {
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        Float[] fArr = this.f47520d;
+        Float[] fArr = this.f47536d;
         int length = fArr.length;
         dest.writeInt(length);
         for (int i11 = 0; i11 != length; i11++) {

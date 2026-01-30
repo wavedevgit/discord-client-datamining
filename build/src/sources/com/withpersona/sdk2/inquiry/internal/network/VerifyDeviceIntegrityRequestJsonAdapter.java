@@ -57,7 +57,7 @@ public final class VerifyDeviceIntegrityRequestJsonAdapter extends com.squareup.
         }
         Constructor constructor = this.f20239c;
         if (constructor == null) {
-            constructor = VerifyDeviceIntegrityRequest.class.getDeclaredConstructor(VerifyDeviceIntegrityRequest.Meta.class, Integer.TYPE, sm.c.f49081c);
+            constructor = VerifyDeviceIntegrityRequest.class.getDeclaredConstructor(VerifyDeviceIntegrityRequest.Meta.class, Integer.TYPE, sm.c.f49097c);
             this.f20239c = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

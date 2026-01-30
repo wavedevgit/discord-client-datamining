@@ -12,19 +12,19 @@ import java.util.Set;
 public final class o implements h {
 
     /* renamed from: d  reason: collision with root package name */
-    private final jt.p f37665d;
+    private final jt.p f37681d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Map f37666e;
+    private final Map f37682e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f37667i;
+    private final int f37683i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final boolean f37668o;
+    private final boolean f37684o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Locale f37669p;
+    private final Locale f37685p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public o(jt.p pVar, Map map) {
@@ -40,11 +40,11 @@ public final class o implements h {
             hashMap = new HashMap(map.size());
         }
         hashMap.putAll(map);
-        this.f37665d = pVar;
-        this.f37666e = Collections.unmodifiableMap(hashMap);
-        this.f37667i = 0;
-        this.f37668o = true;
-        this.f37669p = Locale.getDefault();
+        this.f37681d = pVar;
+        this.f37682e = Collections.unmodifiableMap(hashMap);
+        this.f37683i = 0;
+        this.f37684o = true;
+        this.f37685p = Locale.getDefault();
     }
 
     private static Map b(Class cls) {
@@ -52,7 +52,7 @@ public final class o implements h {
     }
 
     private String c(Object obj) {
-        String str = (String) this.f37666e.get(obj);
+        String str = (String) this.f37682e.get(obj);
         if (str == null) {
             return obj.toString();
         }
@@ -60,14 +60,14 @@ public final class o implements h {
     }
 
     private int h(jt.o oVar, Appendable appendable) {
-        String c10 = c(oVar.p(this.f37665d));
+        String c10 = c(oVar.p(this.f37681d));
         appendable.append(c10);
         return c10.length();
     }
 
     @Override // lt.h
     public h a(c cVar, jt.d dVar, int i10) {
-        return new o(this.f37665d, this.f37666e, ((Integer) dVar.b(kt.a.f36546s, 0)).intValue(), ((Boolean) dVar.b(kt.a.f36536i, Boolean.TRUE)).booleanValue(), (Locale) dVar.b(kt.a.f36530c, Locale.getDefault()));
+        return new o(this.f37681d, this.f37682e, ((Integer) dVar.b(kt.a.f36562s, 0)).intValue(), ((Boolean) dVar.b(kt.a.f36552i, Boolean.TRUE)).booleanValue(), (Locale) dVar.b(kt.a.f36546c, Locale.getDefault()));
     }
 
     @Override // lt.h
@@ -77,7 +77,7 @@ public final class o implements h {
             int length = charSequence.length();
             int h10 = h(oVar, appendable);
             if (set != null) {
-                set.add(new g(this.f37665d, length, charSequence.length()));
+                set.add(new g(this.f37681d, length, charSequence.length()));
             }
             return h10;
         }
@@ -92,30 +92,30 @@ public final class o implements h {
         int f10 = sVar.f();
         int length = charSequence.length();
         if (z10) {
-            intValue = this.f37667i;
+            intValue = this.f37683i;
         } else {
-            intValue = ((Integer) dVar.b(kt.a.f36546s, 0)).intValue();
+            intValue = ((Integer) dVar.b(kt.a.f36562s, 0)).intValue();
         }
         if (intValue > 0) {
             length -= intValue;
         }
         if (f10 >= length) {
-            sVar.k(f10, "Missing chars for: " + this.f37665d.name());
+            sVar.k(f10, "Missing chars for: " + this.f37681d.name());
             sVar.n();
             return;
         }
         if (z10) {
-            booleanValue = this.f37668o;
+            booleanValue = this.f37684o;
         } else {
-            booleanValue = ((Boolean) dVar.b(kt.a.f36536i, Boolean.TRUE)).booleanValue();
+            booleanValue = ((Boolean) dVar.b(kt.a.f36552i, Boolean.TRUE)).booleanValue();
         }
         if (z10) {
-            locale = this.f37669p;
+            locale = this.f37685p;
         } else {
-            locale = (Locale) dVar.b(kt.a.f36530c, Locale.getDefault());
+            locale = (Locale) dVar.b(kt.a.f36546c, Locale.getDefault());
         }
         int i10 = length - f10;
-        for (Object obj : this.f37666e.keySet()) {
+        for (Object obj : this.f37682e.keySet()) {
             String c10 = c(obj);
             if (booleanValue) {
                 String upperCase = c10.toUpperCase(locale);
@@ -123,7 +123,7 @@ public final class o implements h {
                 if (length2 <= i10) {
                     int i11 = length2 + f10;
                     if (upperCase.equals(charSequence.subSequence(f10, i11).toString().toUpperCase(locale))) {
-                        tVar.I(this.f37665d, obj);
+                        tVar.I(this.f37681d, obj);
                         sVar.l(i11);
                         return;
                     }
@@ -135,7 +135,7 @@ public final class o implements h {
                 if (length3 <= i10) {
                     int i12 = length3 + f10;
                     if (c10.equals(charSequence.subSequence(f10, i12).toString())) {
-                        tVar.I(this.f37665d, obj);
+                        tVar.I(this.f37681d, obj);
                         sVar.l(i12);
                         return;
                     }
@@ -144,7 +144,7 @@ public final class o implements h {
                 }
             }
         }
-        sVar.k(f10, "Element value could not be parsed: " + this.f37665d.name());
+        sVar.k(f10, "Element value could not be parsed: " + this.f37681d.name());
     }
 
     public boolean equals(Object obj) {
@@ -153,7 +153,7 @@ public final class o implements h {
         }
         if (obj instanceof o) {
             o oVar = (o) obj;
-            if (this.f37665d.equals(oVar.f37665d) && this.f37666e.equals(oVar.f37666e)) {
+            if (this.f37681d.equals(oVar.f37681d) && this.f37682e.equals(oVar.f37682e)) {
                 return true;
             }
         }
@@ -167,37 +167,37 @@ public final class o implements h {
 
     @Override // lt.h
     public h g(jt.p pVar) {
-        if (this.f37665d == pVar) {
+        if (this.f37681d == pVar) {
             return this;
         }
-        return new o(pVar, this.f37666e);
+        return new o(pVar, this.f37682e);
     }
 
     @Override // lt.h
     public jt.p getElement() {
-        return this.f37665d;
+        return this.f37681d;
     }
 
     public int hashCode() {
-        return (this.f37665d.hashCode() * 7) + (this.f37666e.hashCode() * 31);
+        return (this.f37681d.hashCode() * 7) + (this.f37682e.hashCode() * 31);
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder((int) IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING);
         sb2.append(o.class.getName());
         sb2.append("[element=");
-        sb2.append(this.f37665d.name());
+        sb2.append(this.f37681d.name());
         sb2.append(", resources=");
-        sb2.append(this.f37666e);
+        sb2.append(this.f37682e);
         sb2.append(']');
         return sb2.toString();
     }
 
     private o(jt.p pVar, Map map, int i10, boolean z10, Locale locale) {
-        this.f37665d = pVar;
-        this.f37666e = map;
-        this.f37667i = i10;
-        this.f37668o = z10;
-        this.f37669p = locale;
+        this.f37681d = pVar;
+        this.f37682e = map;
+        this.f37683i = i10;
+        this.f37684o = z10;
+        this.f37685p = locale;
     }
 }

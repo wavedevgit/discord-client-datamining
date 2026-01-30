@@ -12,13 +12,13 @@ import java.util.Map;
 public final class c implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f30445d;
+    private String f30461d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f30446e;
+    private int f30462e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Map f30447i;
+    private Map f30463i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -32,9 +32,9 @@ public final class c implements w1 {
                 String l02 = e3Var.l0();
                 l02.getClass();
                 if (l02.equals("priority")) {
-                    cVar.f30446e = e3Var.nextInt();
+                    cVar.f30462e = e3Var.nextInt();
                 } else if (l02.equals(StackTraceHelper.NAME_KEY)) {
-                    cVar.f30445d = e3Var.r1();
+                    cVar.f30461d = e3Var.r1();
                 } else {
                     if (hashMap == null) {
                         hashMap = new HashMap();
@@ -49,20 +49,20 @@ public final class c implements w1 {
     }
 
     public void c(Map map) {
-        this.f30447i = map;
+        this.f30463i = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        if (this.f30445d != null) {
-            f3Var.e(StackTraceHelper.NAME_KEY).j(iLogger, this.f30445d);
+        if (this.f30461d != null) {
+            f3Var.e(StackTraceHelper.NAME_KEY).j(iLogger, this.f30461d);
         }
-        f3Var.e("priority").j(iLogger, Integer.valueOf(this.f30446e));
-        Map map = this.f30447i;
+        f3Var.e("priority").j(iLogger, Integer.valueOf(this.f30462e));
+        Map map = this.f30463i;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f30447i.get(str));
+                f3Var.e(str).j(iLogger, this.f30463i.get(str));
             }
         }
         f3Var.y();

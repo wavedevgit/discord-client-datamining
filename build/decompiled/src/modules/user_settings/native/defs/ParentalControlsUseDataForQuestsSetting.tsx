@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var9 = var9.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS;
     var1.parent = var9;
     var9 = function() { // Original name: useDataToSupportQuestsSettingValue, environment: var8
-        _fun88922: for (var _fun88922_ip = 0;;) switch (_fun88922_ip) {
+        _fun89159: for (var _fun89159_ip = 0;;) switch (_fun89159_ip) {
             case 0:
                 var2 = _closure1_slot3;
                 var1 = var2.getSelectedTeenId;
@@ -85,8 +85,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = null;
                 var4 = var4 != var3;
                 if (!var4) {
-                    _fun88922_ip = 63;
-                    continue _fun88922
+                    _fun89159_ip = 63;
+                    continue _fun89159
                 }
             case 60:
                 var0 = var3;
@@ -98,7 +98,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.useValue = var9;
     var8 = function(arg0) { // Original name: onDataToSupportQuestsSettingValueChange, environment: var8
-        _fun88923: for (var _fun88923_ip = 0;;) switch (_fun88923_ip) {
+        _fun89160: for (var _fun89160_ip = 0;;) switch (_fun89160_ip) {
             case 0:
                 var2 = _closure1_slot3;
                 var1 = var2.getSelectedTeenId;
@@ -115,8 +115,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var2 != var1;
                 var2 = undefined;
                 if (!var5) {
-                    _fun88923_ip = 65;
-                    continue _fun88923
+                    _fun89160_ip = 65;
+                    continue _fun89160
                 }
             case 62:
                 var2 = var1;
@@ -138,4 +138,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4550, 6965, 10326, 1234, 1849, 8939, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4556, 6968, 10332, 1234, 1849, 8943, 2]);

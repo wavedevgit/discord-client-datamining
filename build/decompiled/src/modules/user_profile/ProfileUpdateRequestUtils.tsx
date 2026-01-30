@@ -22,15 +22,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/ProfileUpdateRequestUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Original name: getProfileChangesForUpdateRequest, environment: var1
-        _fun56769: for (var _fun56769_ip = 0;;) switch (_fun56769_ip) {
+        _fun56813: for (var _fun56813_ip = 0;;) switch (_fun56813_ip) {
             case 0:
                 var1 = arg0;
                 var0 = {};
                 var2 = var1.pendingBanner;
                 var3 = undefined;
                 if (!(var3 !== var2)) {
-                    _fun56769_ip = 29;
-                    continue _fun56769
+                    _fun56813_ip = 29;
+                    continue _fun56813
                 }
             case 17:
                 var2 = var1.pendingBanner;
@@ -39,8 +39,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var1.pendingBio;
                 var2 = null;
                 if (!(var2 != var4)) {
-                    _fun56769_ip = 53;
-                    continue _fun56769
+                    _fun56813_ip = 53;
+                    continue _fun56813
                 }
             case 41:
                 var4 = var1.pendingBio;
@@ -48,8 +48,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 53:
                 var4 = var1.pendingPronouns;
                 if (!(var2 != var4)) {
-                    _fun56769_ip = 75;
-                    continue _fun56769
+                    _fun56813_ip = 75;
+                    continue _fun56813
                 }
             case 63:
                 var4 = var1.pendingPronouns;
@@ -57,8 +57,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 75:
                 var4 = var1.pendingAccentColor;
                 if (!(var3 !== var4)) {
-                    _fun56769_ip = 97;
-                    continue _fun56769
+                    _fun56813_ip = 97;
+                    continue _fun56813
                 }
             case 85:
                 var4 = var1.pendingAccentColor;
@@ -66,8 +66,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 97:
                 var4 = var1.pendingThemeColors;
                 if (!(var3 !== var4)) {
-                    _fun56769_ip = 119;
-                    continue _fun56769
+                    _fun56813_ip = 119;
+                    continue _fun56813
                 }
             case 107:
                 var4 = var1.pendingThemeColors;
@@ -75,14 +75,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 119:
                 var4 = var1.pendingProfileEffect;
                 if (!(var3 !== var4)) {
-                    _fun56769_ip = 202;
-                    continue _fun56769
+                    _fun56813_ip = 202;
+                    continue _fun56813
                 }
             case 129:
                 var4 = var0.collectibles_sku_ids;
                 if (!(var2 == var4)) {
-                    _fun56769_ip = 143;
-                    continue _fun56769
+                    _fun56813_ip = 143;
+                    continue _fun56813
                 }
             case 139:
                 var4 = new Array(0);
@@ -92,15 +92,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var2 == var4;
                 var3 = undefined;
                 if (var5) {
-                    _fun56769_ip = 170;
-                    continue _fun56769
+                    _fun56813_ip = 170;
+                    continue _fun56813
                 }
             case 164:
                 var3 = var4.skuId;
             case 170:
                 if (!(var2 != var3)) {
-                    _fun56769_ip = 202;
-                    continue _fun56769
+                    _fun56813_ip = 202;
+                    continue _fun56813
                 }
             case 174:
                 var3 = var0.collectibles_sku_ids;
@@ -114,15 +114,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getProfileChangesForUpdateRequest = var3;
     var3 = function(arg0) { // Original name: getAccountUpdateForUpdateRequest, environment: var1
-        _fun56770: for (var _fun56770_ip = 0;;) switch (_fun56770_ip) {
+        _fun56814: for (var _fun56814_ip = 0;;) switch (_fun56814_ip) {
             case 0:
                 var1 = arg0;
                 var0 = {};
                 var2 = var1.pendingGlobalName;
                 var3 = undefined;
                 if (!(var3 !== var2)) {
-                    _fun56770_ip = 29;
-                    continue _fun56770
+                    _fun56814_ip = 29;
+                    continue _fun56814
                 }
             case 17:
                 var2 = var1.pendingGlobalName;
@@ -130,8 +130,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 29:
                 var2 = var1.pendingNameplate;
                 if (!(var3 !== var2)) {
-                    _fun56770_ip = 51;
-                    continue _fun56770
+                    _fun56814_ip = 51;
+                    continue _fun56814
                 }
             case 39:
                 var2 = var1.pendingNameplate;
@@ -139,15 +139,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 51:
                 var2 = var1.pendingAvatar;
                 if (!(var3 !== var2)) {
-                    _fun56770_ip = 167;
-                    continue _fun56770
+                    _fun56814_ip = 167;
+                    continue _fun56814
                 }
             case 61:
                 var4 = var1.pendingAvatar;
                 var2 = null;
                 if (!(var2 !== var4)) {
-                    _fun56770_ip = 161;
-                    continue _fun56770
+                    _fun56814_ip = 161;
+                    continue _fun56814
                 }
             case 73:
                 var6 = var4.assetOrigin;
@@ -159,29 +159,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.AssetOriginTypes;
                 var5 = var5.ARCHIVED_ASSET;
                 if (!(var6 !== var5)) {
-                    _fun56770_ip = 142;
-                    continue _fun56770
+                    _fun56814_ip = 142;
+                    continue _fun56814
                 }
             case 117:
                 var5 = var4.imageUri;
                 var0.avatar = var5;
                 var5 = var4.description;
                 var0.avatarDescription = var5;
-                _fun56770_ip = 167;
-                continue _fun56770;
+                _fun56814_ip = 167;
+                continue _fun56814;
             case 142:
                 var4 = var4.originalAsset;
                 var4 = var4.id;
                 var0.avatarId = var4;
-                _fun56770_ip = 167;
-                continue _fun56770;
+                _fun56814_ip = 167;
+                continue _fun56814;
             case 161:
                 var0.avatar = var2;
             case 167:
                 var2 = var1.pendingAvatarDecoration;
                 if (!(var3 !== var2)) {
-                    _fun56770_ip = 189;
-                    continue _fun56770
+                    _fun56814_ip = 189;
+                    continue _fun56814
                 }
             case 177:
                 var2 = var1.pendingAvatarDecoration;
@@ -189,8 +189,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 189:
                 var2 = var1.pendingDisplayNameStyles;
                 if (!(var3 !== var2)) {
-                    _fun56770_ip = 211;
-                    continue _fun56770
+                    _fun56814_ip = 211;
+                    continue _fun56814
                 }
             case 199:
                 var1 = var1.pendingDisplayNameStyles;
@@ -201,22 +201,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getAccountUpdateForUpdateRequest = var3;
     var3 = function(arg0) { // Original name: getGuildMemberChangesForUpdateRequest, environment: var1
-        _fun56771: for (var _fun56771_ip = 0;;) switch (_fun56771_ip) {
+        _fun56815: for (var _fun56815_ip = 0;;) switch (_fun56815_ip) {
             case 0:
                 var1 = arg0;
                 var0 = {};
                 var2 = var1.pendingAvatar;
                 var3 = undefined;
                 if (!(var3 !== var2)) {
-                    _fun56771_ip = 123;
-                    continue _fun56771
+                    _fun56815_ip = 123;
+                    continue _fun56815
                 }
             case 17:
                 var4 = var1.pendingAvatar;
                 var2 = null;
                 if (!(var2 !== var4)) {
-                    _fun56771_ip = 117;
-                    continue _fun56771
+                    _fun56815_ip = 117;
+                    continue _fun56815
                 }
             case 29:
                 var6 = var4.assetOrigin;
@@ -228,29 +228,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.AssetOriginTypes;
                 var5 = var5.ARCHIVED_ASSET;
                 if (!(var6 !== var5)) {
-                    _fun56771_ip = 98;
-                    continue _fun56771
+                    _fun56815_ip = 98;
+                    continue _fun56815
                 }
             case 73:
                 var5 = var4.imageUri;
                 var0.avatar = var5;
                 var5 = var4.description;
                 var0.avatarDescription = var5;
-                _fun56771_ip = 123;
-                continue _fun56771;
+                _fun56815_ip = 123;
+                continue _fun56815;
             case 98:
                 var4 = var4.originalAsset;
                 var4 = var4.id;
                 var0.avatarId = var4;
-                _fun56771_ip = 123;
-                continue _fun56771;
+                _fun56815_ip = 123;
+                continue _fun56815;
             case 117:
                 var0.avatar = var2;
             case 123:
                 var2 = var1.pendingNickname;
                 if (!(var3 !== var2)) {
-                    _fun56771_ip = 161;
-                    continue _fun56771
+                    _fun56815_ip = 161;
+                    continue _fun56815
                 }
             case 133:
                 var4 = var1.pendingNickname;
@@ -258,8 +258,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var2 != var4;
                 var2 = '';
                 if (!var5) {
-                    _fun56771_ip = 155;
-                    continue _fun56771
+                    _fun56815_ip = 155;
+                    continue _fun56815
                 }
             case 152:
                 var2 = var4;
@@ -268,8 +268,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 161:
                 var2 = var1.pendingAvatarDecoration;
                 if (!(var3 !== var2)) {
-                    _fun56771_ip = 183;
-                    continue _fun56771
+                    _fun56815_ip = 183;
+                    continue _fun56815
                 }
             case 171:
                 var2 = var1.pendingAvatarDecoration;
@@ -277,8 +277,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 183:
                 var2 = var1.pendingNameplate;
                 if (!(var3 !== var2)) {
-                    _fun56771_ip = 205;
-                    continue _fun56771
+                    _fun56815_ip = 205;
+                    continue _fun56815
                 }
             case 193:
                 var2 = var1.pendingNameplate;
@@ -286,8 +286,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 205:
                 var2 = var1.pendingDisplayNameStyles;
                 if (!(var3 !== var2)) {
-                    _fun56771_ip = 227;
-                    continue _fun56771
+                    _fun56815_ip = 227;
+                    continue _fun56815
                 }
             case 215:
                 var1 = var1.pendingDisplayNameStyles;
@@ -298,15 +298,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getGuildMemberChangesForUpdateRequest = var3;
     var1 = function(arg0) { // Original name: getPrimaryGuildChangesForUpdateRequest, environment: var1
-        _fun56772: for (var _fun56772_ip = 0;;) switch (_fun56772_ip) {
+        _fun56816: for (var _fun56816_ip = 0;;) switch (_fun56816_ip) {
             case 0:
                 var1 = arg0;
                 var0 = {};
                 var3 = var1.pendingPrimaryGuildId;
                 var2 = undefined;
                 if (!(var2 !== var3)) {
-                    _fun56772_ip = 29;
-                    continue _fun56772
+                    _fun56816_ip = 29;
+                    continue _fun56816
                 }
             case 17:
                 var1 = var1.pendingPrimaryGuildId;
@@ -317,4 +317,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getPrimaryGuildChangesForUpdateRequest = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5682, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5685, 2]);

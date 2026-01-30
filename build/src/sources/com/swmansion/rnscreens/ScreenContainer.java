@@ -152,7 +152,7 @@ public class ScreenContainer extends ViewGroup {
                 FragmentManager childFragmentManager = fragmentWrapper.a().getChildFragmentManager();
                 Intrinsics.checkNotNullExpressionValue(childFragmentManager, "getChildFragmentManager(...)");
                 setFragmentManager(childFragmentManager);
-                unit = Unit.f33282a;
+                unit = Unit.f33298a;
             } else {
                 unit = null;
             }

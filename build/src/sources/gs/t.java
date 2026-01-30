@@ -7,8 +7,8 @@ import kotlinx.coroutines.CancellableContinuation;
 public abstract class t {
     public static final Object a(Object obj, Continuation continuation) {
         if (obj instanceof r) {
-            Result.a aVar = Result.f33279e;
-            return Result.b(kotlin.c.a(((r) obj).f27178a));
+            Result.a aVar = Result.f33295e;
+            return Result.b(kotlin.c.a(((r) obj).f27194a));
         }
         return Result.b(obj);
     }

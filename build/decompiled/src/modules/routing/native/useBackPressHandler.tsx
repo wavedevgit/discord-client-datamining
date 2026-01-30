@@ -44,15 +44,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/routing/native/useBackPressHandler.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function(arg0) { // Original name: useBackPressHandler, environment: var3
-        _fun37299: for (var _fun37299_ip = 0;;) switch (_fun37299_ip) {
+        _fun37350: for (var _fun37350_ip = 0;;) switch (_fun37350_ip) {
             case 0:
                 var3 = arg0;
                 var5 = arguments[1];
                 var _closure2_slot0 = var3;
                 var0 = undefined;
                 if (!(var5 === var0)) {
-                    _fun37299_ip = 20;
-                    continue _fun37299
+                    _fun37350_ip = 20;
+                    continue _fun37350
                 }
             case 18:
                 var5 = true;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = new Array(1);
                 var2[0] = var5;
                 var1 = function() { // Environment: var1
-                    _fun37301: for (var _fun37301_ip = 0;;) switch (_fun37301_ip) {
+                    _fun37352: for (var _fun37352_ip = 0;;) switch (_fun37352_ip) {
                         case 0:
                             var4 = _closure1_slot0;
                             var3 = _closure1_slot1;
@@ -87,14 +87,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var4.isIOS;
                             var3 = var3.bind(var4)();
                             if (var3) {
-                                _fun37301_ip = 88;
-                                continue _fun37301
+                                _fun37352_ip = 88;
+                                continue _fun37352
                             }
                         case 40:
                             var3 = _closure2_slot1;
                             if (!var3) {
-                                _fun37301_ip = 88;
-                                continue _fun37301
+                                _fun37352_ip = 88;
+                                continue _fun37352
                             }
                         case 50:
                             var5 = _closure1_slot3;

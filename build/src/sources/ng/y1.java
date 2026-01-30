@@ -5,44 +5,44 @@ import ui.c;
 final class y1 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final y1 f41874a = new y1();
+    static final y1 f41890a = new y1();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41875b;
+    private static final ui.c f41891b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41876c;
+    private static final ui.c f41892c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41877d;
+    private static final ui.c f41893d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f41878e;
+    private static final ui.c f41894e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final ui.c f41879f;
+    private static final ui.c f41895f;
 
     static {
         c.b a10 = ui.c.a("inferenceCommonLogEvent");
         f fVar = new f();
         fVar.a(1);
-        f41875b = a10.b(fVar.b()).a();
+        f41891b = a10.b(fVar.b()).a();
         c.b a11 = ui.c.a("options");
         f fVar2 = new f();
         fVar2.a(2);
-        f41876c = a11.b(fVar2.b()).a();
+        f41892c = a11.b(fVar2.b()).a();
         c.b a12 = ui.c.a("modelInitializationMs");
         f fVar3 = new f();
         fVar3.a(3);
-        f41877d = a12.b(fVar3.b()).a();
+        f41893d = a12.b(fVar3.b()).a();
         c.b a13 = ui.c.a("confidenceThreshold");
         f fVar4 = new f();
         fVar4.a(4);
-        f41878e = a13.b(fVar4.b()).a();
+        f41894e = a13.b(fVar4.b()).a();
         c.b a14 = ui.c.a("imageInfo");
         f fVar5 = new f();
         fVar5.a(5);
-        f41879f = a14.b(fVar5.b()).a();
+        f41895f = a14.b(fVar5.b()).a();
     }
 
     private y1() {

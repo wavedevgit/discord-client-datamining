@@ -229,7 +229,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot12 = var0;
     var0 = function(arg0) { // Original name: InlineCheckbox, environment: var1
-        _fun88375: for (var _fun88375_ip = 0;;) switch (_fun88375_ip) {
+        _fun88611: for (var _fun88611_ip = 0;;) switch (_fun88611_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.label;
@@ -238,20 +238,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.startChecked;
                 var3 = undefined;
                 if (!(var1 === var3)) {
-                    _fun88375_ip = 33;
-                    continue _fun88375
+                    _fun88611_ip = 33;
+                    continue _fun88611
                 }
             case 31:
                 var1 = false;
             case 33:
                 var0 = function() { // Environment: var0
-                    _fun88376: for (var _fun88376_ip = 0;;) switch (_fun88376_ip) {
+                    _fun88612: for (var _fun88612_ip = 0;;) switch (_fun88612_ip) {
                         case 0:
                             var4 = arguments[0];
                             var5 = undefined;
                             if (!(var4 === var5)) {
-                                _fun88376_ip = 13;
-                                continue _fun88376
+                                _fun88612_ip = 13;
+                                continue _fun88612
                             }
                         case 11:
                             var4 = true;
@@ -563,13 +563,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var7)(var3);
     var _closure1_slot9 = var3;
     var3 = function() { // Original name: useSwitchState, environment: var1
-        _fun88381: for (var _fun88381_ip = 0;;) switch (_fun88381_ip) {
+        _fun88617: for (var _fun88617_ip = 0;;) switch (_fun88617_ip) {
             case 0:
                 var4 = arguments[0];
                 var5 = undefined;
                 if (!(var4 === var5)) {
-                    _fun88381_ip = 13;
-                    continue _fun88381
+                    _fun88617_ip = 13;
+                    continue _fun88617
                 }
             case 11:
                 var4 = true;
@@ -663,4 +663,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 660, 33, 1297, 671, 3895, 5379, 5378, 5320, 5373, 5396, 8728, 4854, 11404, 8430, 4819, 4033, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 660, 33, 1297, 671, 3901, 5383, 5382, 5324, 5377, 5400, 8732, 4860, 11426, 8433, 4825, 4039, 2]);

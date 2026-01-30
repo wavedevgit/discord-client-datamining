@@ -78,15 +78,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = '../discord_common/js/packages/design/components/Rive/native/generated/GameServerHostingRive.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: GameServerHostingRive, environment: var1
-        _fun27441: for (var _fun27441_ip = 0;;) switch (_fun27441_ip) {
+        _fun27442: for (var _fun27442_ip = 0;;) switch (_fun27442_ip) {
             case 0:
                 var2 = arg0;
                 var0 = var2.artboard;
                 var8 = 'Game_Server_Hosting_Main';
                 var3 = undefined;
                 if (!(var3 !== var0)) {
-                    _fun27441_ip = 22;
-                    continue _fun27441
+                    _fun27442_ip = 22;
+                    continue _fun27442
                 }
             case 19:
                 var8 = var0;
@@ -95,8 +95,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.defaultViewModelInstance;
                 var6 = 'Instance';
                 if (!(var3 !== var0)) {
-                    _fun27441_ip = 47;
-                    continue _fun27441
+                    _fun27442_ip = 47;
+                    continue _fun27442
                 }
             case 44:
                 var6 = var0;

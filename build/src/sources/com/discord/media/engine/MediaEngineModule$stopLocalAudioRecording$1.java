@@ -29,7 +29,7 @@ final class MediaEngineModule$stopLocalAudioRecording$1 extends kotlin.coroutine
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit invokeSuspend$lambda$0(Callback callback, String str, int i10) {
         callback.invoke(Uri.fromFile(new File(str)).toString(), Integer.valueOf(i10));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -67,11 +67,11 @@ final class MediaEngineModule$stopLocalAudioRecording$1 extends kotlin.coroutine
                 return invokeSuspend$lambda$0;
             }
         });
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$stopLocalAudioRecording$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((MediaEngineModule$stopLocalAudioRecording$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

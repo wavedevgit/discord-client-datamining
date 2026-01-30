@@ -7,7 +7,7 @@ import kotlin.jvm.functions.Function0;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Lazy f37424a = l.b(new Function0() { // from class: lq.b
+    private static final Lazy f37440a = l.b(new Function0() { // from class: lq.b
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             boolean e10;
@@ -34,7 +34,7 @@ public abstract class c {
     }
 
     public static final boolean d() {
-        return ((Boolean) f37424a.getValue()).booleanValue();
+        return ((Boolean) f37440a.getValue()).booleanValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */

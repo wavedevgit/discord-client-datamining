@@ -11,7 +11,7 @@ import x.n0;
 public abstract class e1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private int f55090a = new h0.a().a();
+    private int f55106a = new h0.a().a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     interface a {
@@ -88,9 +88,9 @@ public abstract class e1 {
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean f() {
         b0.p.a();
-        int i10 = this.f55090a;
+        int i10 = this.f55106a;
         if (i10 > 0) {
-            this.f55090a = i10 - 1;
+            this.f55106a = i10 - 1;
             return true;
         }
         return false;

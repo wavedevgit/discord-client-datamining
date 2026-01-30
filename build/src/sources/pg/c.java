@@ -8,21 +8,21 @@ import java.util.Set;
 final class c extends y0 {
 
     /* renamed from: d  reason: collision with root package name */
-    final /* synthetic */ e f45160d;
+    final /* synthetic */ e f45176d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c(e eVar) {
-        this.f45160d = eVar;
+        this.f45176d = eVar;
     }
 
     @Override // pg.y0
     final Map b() {
-        return this.f45160d;
+        return this.f45176d;
     }
 
     @Override // pg.y0, java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final boolean contains(Object obj) {
-        Set entrySet = this.f45160d.f45200i.entrySet();
+        Set entrySet = this.f45176d.f45216i.entrySet();
         entrySet.getClass();
         try {
             return entrySet.contains(obj);
@@ -33,7 +33,7 @@ final class c extends y0 {
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.Set
     public final Iterator iterator() {
-        return new d(this.f45160d);
+        return new d(this.f45176d);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
@@ -43,8 +43,8 @@ final class c extends y0 {
         }
         Map.Entry entry = (Map.Entry) obj;
         Objects.requireNonNull(entry);
-        e eVar = this.f45160d;
-        m.n(eVar.f45201o, entry.getKey());
+        e eVar = this.f45176d;
+        m.n(eVar.f45217o, entry.getKey());
         return true;
     }
 }

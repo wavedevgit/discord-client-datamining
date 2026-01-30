@@ -14,58 +14,58 @@ public abstract class c1 {
     public static final class a extends kotlin.coroutines.jvm.internal.j implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f33301d;
+        Object f33317d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f33302e;
+        Object f33318e;
 
         /* renamed from: i  reason: collision with root package name */
-        int f33303i;
+        int f33319i;
 
         /* renamed from: o  reason: collision with root package name */
-        int f33304o;
+        int f33320o;
 
         /* renamed from: p  reason: collision with root package name */
-        private /* synthetic */ Object f33305p;
+        private /* synthetic */ Object f33321p;
 
         /* renamed from: q  reason: collision with root package name */
-        final /* synthetic */ int f33306q;
+        final /* synthetic */ int f33322q;
 
         /* renamed from: r  reason: collision with root package name */
-        final /* synthetic */ int f33307r;
+        final /* synthetic */ int f33323r;
 
         /* renamed from: s  reason: collision with root package name */
-        final /* synthetic */ Iterator f33308s;
+        final /* synthetic */ Iterator f33324s;
 
         /* renamed from: t  reason: collision with root package name */
-        final /* synthetic */ boolean f33309t;
+        final /* synthetic */ boolean f33325t;
 
         /* renamed from: u  reason: collision with root package name */
-        final /* synthetic */ boolean f33310u;
+        final /* synthetic */ boolean f33326u;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(int i10, int i11, Iterator it, boolean z10, boolean z11, Continuation continuation) {
             super(2, continuation);
-            this.f33306q = i10;
-            this.f33307r = i11;
-            this.f33308s = it;
-            this.f33309t = z10;
-            this.f33310u = z11;
+            this.f33322q = i10;
+            this.f33323r = i11;
+            this.f33324s = it;
+            this.f33325t = z10;
+            this.f33326u = z11;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            a aVar = new a(this.f33306q, this.f33307r, this.f33308s, this.f33309t, this.f33310u, continuation);
-            aVar.f33305p = obj;
+            a aVar = new a(this.f33322q, this.f33323r, this.f33324s, this.f33325t, this.f33326u, continuation);
+            aVar.f33321p = obj;
             return aVar;
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:27:0x0094, code lost:
-            r10.f33305p = r4;
-            r10.f33301d = r3;
-            r10.f33302e = r2;
-            r10.f33303i = r1;
-            r10.f33304o = 1;
+            r10.f33321p = r4;
+            r10.f33317d = r3;
+            r10.f33318e = r2;
+            r10.f33319i = r1;
+            r10.f33320o = 1;
          */
         /* JADX WARN: Code restructure failed: missing block: B:28:0x00a2, code lost:
             if (r4.b(r3, r10) != r0) goto L55;
@@ -107,7 +107,7 @@ public abstract class c1 {
         @Override // kotlin.jvm.functions.Function2
         /* renamed from: j */
         public final Object invoke(kotlin.sequences.j jVar, Continuation continuation) {
-            return ((a) create(jVar, continuation)).invokeSuspend(Unit.f33282a);
+            return ((a) create(jVar, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -115,31 +115,31 @@ public abstract class c1 {
     public static final class b implements Sequence {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Sequence f33311a;
+        final /* synthetic */ Sequence f33327a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ int f33312b;
+        final /* synthetic */ int f33328b;
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ int f33313c;
+        final /* synthetic */ int f33329c;
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ boolean f33314d;
+        final /* synthetic */ boolean f33330d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ boolean f33315e;
+        final /* synthetic */ boolean f33331e;
 
         public b(Sequence sequence, int i10, int i11, boolean z10, boolean z11) {
-            this.f33311a = sequence;
-            this.f33312b = i10;
-            this.f33313c = i11;
-            this.f33314d = z10;
-            this.f33315e = z11;
+            this.f33327a = sequence;
+            this.f33328b = i10;
+            this.f33329c = i11;
+            this.f33330d = z10;
+            this.f33331e = z11;
         }
 
         @Override // kotlin.sequences.Sequence
         public Iterator iterator() {
-            return c1.b(this.f33311a.iterator(), this.f33312b, this.f33313c, this.f33314d, this.f33315e);
+            return c1.b(this.f33327a.iterator(), this.f33328b, this.f33329c, this.f33330d, this.f33331e);
         }
     }
 
@@ -159,7 +159,7 @@ public abstract class c1 {
     public static final Iterator b(Iterator iterator, int i10, int i11, boolean z10, boolean z11) {
         Intrinsics.checkNotNullParameter(iterator, "iterator");
         if (!iterator.hasNext()) {
-            return e0.f33323d;
+            return e0.f33339d;
         }
         return kotlin.sequences.k.a(new a(i10, i11, iterator, z11, z10, null));
     }

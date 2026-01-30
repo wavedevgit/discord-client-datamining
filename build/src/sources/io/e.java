@@ -31,49 +31,49 @@ public final class e {
     private static final /* synthetic */ EnumEntries O;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f28647d;
+    public static final a f28663d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Map f28648e;
+    private static final Map f28664e;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final e f28649i;
+    public static final e f28665i;
 
     /* renamed from: o  reason: collision with root package name */
-    public static final e f28650o;
+    public static final e f28666o;
 
     /* renamed from: p  reason: collision with root package name */
-    public static final e f28651p;
+    public static final e f28667p;
 
     /* renamed from: q  reason: collision with root package name */
-    public static final e f28652q;
+    public static final e f28668q;
 
     /* renamed from: r  reason: collision with root package name */
-    public static final e f28653r;
+    public static final e f28669r;
 
     /* renamed from: s  reason: collision with root package name */
-    public static final e f28654s;
+    public static final e f28670s;
 
     /* renamed from: t  reason: collision with root package name */
-    public static final e f28655t;
+    public static final e f28671t;
 
     /* renamed from: u  reason: collision with root package name */
-    public static final e f28656u;
+    public static final e f28672u;
 
     /* renamed from: v  reason: collision with root package name */
-    public static final e f28657v;
+    public static final e f28673v;
 
     /* renamed from: w  reason: collision with root package name */
-    public static final e f28658w;
+    public static final e f28674w;
 
     /* renamed from: x  reason: collision with root package name */
-    public static final e f28659x;
+    public static final e f28675x;
 
     /* renamed from: y  reason: collision with root package name */
-    public static final e f28660y;
+    public static final e f28676y;
 
     /* renamed from: z  reason: collision with root package name */
-    public static final e f28661z;
+    public static final e f28677z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -83,7 +83,7 @@ public final class e {
 
         public final e a(String abbr) {
             Intrinsics.checkNotNullParameter(abbr, "abbr");
-            e eVar = (e) e.f28648e.get(abbr);
+            e eVar = (e) e.f28664e.get(abbr);
             if (eVar == null) {
                 return e.M;
             }
@@ -98,60 +98,60 @@ public final class e {
     public /* synthetic */ class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f28662a;
+        public static final /* synthetic */ int[] f28678a;
 
         static {
             int[] iArr = new int[e.values().length];
             try {
-                iArr[e.f28649i.ordinal()] = 1;
+                iArr[e.f28665i.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[e.f28650o.ordinal()] = 2;
+                iArr[e.f28666o.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[e.f28651p.ordinal()] = 3;
+                iArr[e.f28667p.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                iArr[e.f28652q.ordinal()] = 4;
+                iArr[e.f28668q.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                iArr[e.f28653r.ordinal()] = 5;
+                iArr[e.f28669r.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                iArr[e.f28654s.ordinal()] = 6;
+                iArr[e.f28670s.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                iArr[e.f28655t.ordinal()] = 7;
+                iArr[e.f28671t.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
             try {
-                iArr[e.f28656u.ordinal()] = 8;
+                iArr[e.f28672u.ordinal()] = 8;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                iArr[e.f28657v.ordinal()] = 9;
+                iArr[e.f28673v.ordinal()] = 9;
             } catch (NoSuchFieldError unused9) {
             }
             try {
-                iArr[e.f28658w.ordinal()] = 10;
+                iArr[e.f28674w.ordinal()] = 10;
             } catch (NoSuchFieldError unused10) {
             }
             try {
-                iArr[e.f28659x.ordinal()] = 11;
+                iArr[e.f28675x.ordinal()] = 11;
             } catch (NoSuchFieldError unused11) {
             }
             try {
-                iArr[e.f28660y.ordinal()] = 12;
+                iArr[e.f28676y.ordinal()] = 12;
             } catch (NoSuchFieldError unused12) {
             }
             try {
-                iArr[e.f28661z.ordinal()] = 13;
+                iArr[e.f28677z.ordinal()] = 13;
             } catch (NoSuchFieldError unused13) {
             }
             try {
@@ -206,37 +206,37 @@ public final class e {
                 iArr[e.M.ordinal()] = 26;
             } catch (NoSuchFieldError unused26) {
             }
-            f28662a = iArr;
+            f28678a = iArr;
         }
     }
 
     static {
         e eVar = new e("DriverLicense", 0);
-        f28649i = eVar;
+        f28665i = eVar;
         e eVar2 = new e("StateID", 1);
-        f28650o = eVar2;
+        f28666o = eVar2;
         e eVar3 = new e("Keypass", 2);
-        f28651p = eVar3;
+        f28667p = eVar3;
         e eVar4 = new e("MilitaryID", 3);
-        f28652q = eVar4;
+        f28668q = eVar4;
         e eVar5 = new e("MyNumberCard", 4);
-        f28653r = eVar5;
+        f28669r = eVar5;
         e eVar6 = new e("NRIC", 5);
-        f28654s = eVar6;
+        f28670s = eVar6;
         e eVar7 = new e("OFWID", 6);
-        f28655t = eVar7;
+        f28671t = eVar7;
         e eVar8 = new e("Passport", 7);
-        f28656u = eVar8;
+        f28672u = eVar8;
         e eVar9 = new e("PermanentResidentCard", 8);
-        f28657v = eVar9;
+        f28673v = eVar9;
         e eVar10 = new e("ResidencyPermit", 9);
-        f28658w = eVar10;
+        f28674w = eVar10;
         e eVar11 = new e("StudentPermit", 10);
-        f28659x = eVar11;
+        f28675x = eVar11;
         e eVar12 = new e("SocialSecurityID", 11);
-        f28660y = eVar12;
+        f28676y = eVar12;
         e eVar13 = new e("UMID", 12);
-        f28661z = eVar13;
+        f28677z = eVar13;
         e eVar14 = new e("VoterID", 13);
         A = eVar14;
         e eVar15 = new e("PassportCard", 14);
@@ -265,15 +265,15 @@ public final class e {
         e[] a10 = a();
         N = a10;
         O = pr.a.a(a10);
-        f28647d = new a(null);
-        f28648e = o0.m(v.a("dl", eVar), v.a(StackTraceHelper.ID_KEY, eVar2), v.a("keyp", eVar3), v.a("mid", eVar4), v.a("myn", eVar5), v.a("nric", eVar6), v.a("ofw", eVar7), v.a("pp", eVar8), v.a("pr", eVar9), v.a("rp", eVar10), v.a("sp", eVar11), v.a("sss", eVar12), v.a("umid", eVar13), v.a("vid", eVar14), v.a("ppc", eVar15), v.a("pid", eVar16), v.a("visa", eVar17), v.a("wp", eVar18), v.a("cct", eVar19), v.a("cid", eVar20), v.a("foid", eVar21), v.a("hic", eVar22), v.a("ltpass", eVar23), v.a("nbi", eVar24), v.a("pan", eVar25));
+        f28663d = new a(null);
+        f28664e = o0.m(v.a("dl", eVar), v.a(StackTraceHelper.ID_KEY, eVar2), v.a("keyp", eVar3), v.a("mid", eVar4), v.a("myn", eVar5), v.a("nric", eVar6), v.a("ofw", eVar7), v.a("pp", eVar8), v.a("pr", eVar9), v.a("rp", eVar10), v.a("sp", eVar11), v.a("sss", eVar12), v.a("umid", eVar13), v.a("vid", eVar14), v.a("ppc", eVar15), v.a("pid", eVar16), v.a("visa", eVar17), v.a("wp", eVar18), v.a("cct", eVar19), v.a("cid", eVar20), v.a("foid", eVar21), v.a("hic", eVar22), v.a("ltpass", eVar23), v.a("nbi", eVar24), v.a("pan", eVar25));
     }
 
     private e(String str, int i10) {
     }
 
     private static final /* synthetic */ e[] a() {
-        return new e[]{f28649i, f28650o, f28651p, f28652q, f28653r, f28654s, f28655t, f28656u, f28657v, f28658w, f28659x, f28660y, f28661z, A, B, C, D, E, F, G, H, I, J, K, L, M};
+        return new e[]{f28665i, f28666o, f28667p, f28668q, f28669r, f28670s, f28671t, f28672u, f28673v, f28674w, f28675x, f28676y, f28677z, A, B, C, D, E, F, G, H, I, J, K, L, M};
     }
 
     public static e valueOf(String str) {
@@ -285,7 +285,7 @@ public final class e {
     }
 
     public final g4 e() {
-        switch (b.f28662a[ordinal()]) {
+        switch (b.f28678a[ordinal()]) {
             case 1:
                 return g4.f6120e;
             case 2:

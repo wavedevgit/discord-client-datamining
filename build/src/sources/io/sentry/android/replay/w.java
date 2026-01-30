@@ -13,22 +13,22 @@ import kotlin.jvm.internal.Lambda;
 public final class w {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final w f29736a = new w();
+    public static final w f29752a = new w();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Lazy f29737b;
+    private static final Lazy f29753b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Lazy f29738c;
+    private static final Lazy f29754c;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final int f29739d;
+    public static final int f29755d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static final class a extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f29740d = new a();
+        public static final a f29756d = new a();
 
         a() {
             super(0);
@@ -50,7 +50,7 @@ public final class w {
     static final class b extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f29741d = new b();
+        public static final b f29757d = new b();
 
         b() {
             super(0);
@@ -59,7 +59,7 @@ public final class w {
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
         public final Field invoke() {
-            Class b10 = w.f29736a.b();
+            Class b10 = w.f29752a.b();
             if (b10 == null) {
                 return null;
             }
@@ -75,10 +75,10 @@ public final class w {
     }
 
     static {
-        ir.o oVar = ir.o.f31104i;
-        f29737b = ir.l.a(oVar, a.f29740d);
-        f29738c = ir.l.a(oVar, b.f29741d);
-        f29739d = 8;
+        ir.o oVar = ir.o.f31120i;
+        f29753b = ir.l.a(oVar, a.f29756d);
+        f29754c = ir.l.a(oVar, b.f29757d);
+        f29755d = 8;
     }
 
     private w() {
@@ -86,18 +86,18 @@ public final class w {
 
     /* JADX INFO: Access modifiers changed from: private */
     public final Class b() {
-        return (Class) f29737b.getValue();
+        return (Class) f29753b.getValue();
     }
 
     private final Field c() {
-        return (Field) f29738c.getValue();
+        return (Field) f29754c.getValue();
     }
 
     public final Window d(View maybeDecorView) {
         Field c10;
         Intrinsics.checkNotNullParameter(maybeDecorView, "maybeDecorView");
         Class b10 = b();
-        if (b10 == null || !b10.isInstance(maybeDecorView) || (c10 = f29736a.c()) == null) {
+        if (b10 == null || !b10.isInstance(maybeDecorView) || (c10 = f29752a.c()) == null) {
             return null;
         }
         Object obj = c10.get(maybeDecorView);

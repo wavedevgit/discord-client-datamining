@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
     var1 = function(arg0) { // Original name: GiftBackgroundSelect, environment: var3
-        _fun75113: for (var _fun75113_ip = 0;;) switch (_fun75113_ip) {
+        _fun75157: for (var _fun75157_ip = 0;;) switch (_fun75157_ip) {
             case 0:
                 var0 = arg0;
                 var15 = var0.giftStyle;
@@ -19,8 +19,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var0.withConsistentHeight;
                 var3 = undefined;
                 if (!(var14 === var3)) {
-                    _fun75113_ip = 39;
-                    continue _fun75113
+                    _fun75157_ip = 39;
+                    continue _fun75157
                 }
             case 37:
                 var14 = true;
@@ -89,7 +89,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var20.bind(var3)(var0);
                 var1 = var2.useAnimatedStyle;
                 var0 = function() { // Original name: k, environment: var9
-                    _fun75115: for (var _fun75115_ip = 0;;) switch (_fun75115_ip) {
+                    _fun75159: for (var _fun75159_ip = 0;;) switch (_fun75159_ip) {
                         case 0:
                             var0 = {};
                             var2 = _closure1_slot0;
@@ -104,8 +104,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var1.bind(var2)();
                             var2 = 0;
                             if (!var1) {
-                                _fun75115_ip = 56;
-                                continue _fun75115
+                                _fun75159_ip = 56;
+                                continue _fun75159
                             }
                         case 53:
                             var2 = 1;
@@ -160,13 +160,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = _closure1_slot8;
                 var5 = {};
                 var14 = function(arg0) { // Original name: onContentSizeChange, environment: var9
-                    _fun75116: for (var _fun75116_ip = 0;;) switch (_fun75116_ip) {
+                    _fun75160: for (var _fun75160_ip = 0;;) switch (_fun75160_ip) {
                         case 0:
                             var2 = _closure2_slot2;
                             var1 = null;
                             if (!(var1 == var2)) {
-                                _fun75116_ip = 27;
-                                continue _fun75116
+                                _fun75160_ip = 27;
+                                continue _fun75160
                             }
                         case 13:
                             var2 = _closure2_slot3;
@@ -185,15 +185,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = null;
                 var15 = var15 != var16;
                 if (!var15) {
-                    _fun75113_ip = 467;
-                    continue _fun75113
+                    _fun75157_ip = 467;
+                    continue _fun75157
                 }
             case 463:
                 var15 = var16 < var18;
             case 467:
                 if (!var15) {
-                    _fun75113_ip = 479;
-                    continue _fun75113
+                    _fun75157_ip = 479;
+                    continue _fun75157
                 }
             case 470:
                 var16 = {};
@@ -212,8 +212,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5.showsHorizontalScrollIndicator = var10;
                 var8 = !var8;
                 if (!var8) {
-                    _fun75113_ip = 545;
-                    continue _fun75113
+                    _fun75157_ip = 545;
+                    continue _fun75157
                 }
             case 528:
                 var10 = var11.map;
@@ -345,4 +345,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.GiftBackgroundSelect = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 3677, 1297, 671, 9363, 9364, 1464, 4050, 4840, 9442, 9461, 9361, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 3679, 1297, 671, 9368, 9369, 1464, 4056, 4846, 9447, 9466, 9366, 2]);

@@ -9,33 +9,33 @@ import ne.s0;
 public final class c extends gd.e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h0 f40088a = new h0();
+    private final h0 f40104a = new h0();
 
     /* renamed from: b  reason: collision with root package name */
-    private final g0 f40089b = new g0();
+    private final g0 f40105b = new g0();
 
     /* renamed from: c  reason: collision with root package name */
-    private s0 f40090c;
+    private s0 f40106c;
 
     @Override // gd.e
     protected Metadata b(gd.c cVar, ByteBuffer byteBuffer) {
         Metadata.b eVar;
-        s0 s0Var = this.f40090c;
-        if (s0Var == null || cVar.f26653t != s0Var.e()) {
-            s0 s0Var2 = new s0(cVar.f47078p);
-            this.f40090c = s0Var2;
-            s0Var2.a(cVar.f47078p - cVar.f26653t);
+        s0 s0Var = this.f40106c;
+        if (s0Var == null || cVar.f26669t != s0Var.e()) {
+            s0 s0Var2 = new s0(cVar.f47094p);
+            this.f40106c = s0Var2;
+            s0Var2.a(cVar.f47094p - cVar.f26669t);
         }
         byte[] array = byteBuffer.array();
         int limit = byteBuffer.limit();
-        this.f40088a.S(array, limit);
-        this.f40089b.o(array, limit);
-        this.f40089b.r(39);
-        long h10 = (this.f40089b.h(1) << 32) | this.f40089b.h(32);
-        this.f40089b.r(20);
-        int h11 = this.f40089b.h(12);
-        int h12 = this.f40089b.h(8);
-        this.f40088a.V(14);
+        this.f40104a.S(array, limit);
+        this.f40105b.o(array, limit);
+        this.f40105b.r(39);
+        long h10 = (this.f40105b.h(1) << 32) | this.f40105b.h(32);
+        this.f40105b.r(20);
+        int h11 = this.f40105b.h(12);
+        int h12 = this.f40105b.h(8);
+        this.f40104a.V(14);
         if (h12 != 0) {
             if (h12 != 255) {
                 if (h12 != 4) {
@@ -43,16 +43,16 @@ public final class c extends gd.e {
                         if (h12 != 6) {
                             eVar = null;
                         } else {
-                            eVar = g.a(this.f40088a, h10, this.f40090c);
+                            eVar = g.a(this.f40104a, h10, this.f40106c);
                         }
                     } else {
-                        eVar = d.a(this.f40088a, h10, this.f40090c);
+                        eVar = d.a(this.f40104a, h10, this.f40106c);
                     }
                 } else {
-                    eVar = f.a(this.f40088a);
+                    eVar = f.a(this.f40104a);
                 }
             } else {
-                eVar = a.a(this.f40088a, h11, h10);
+                eVar = a.a(this.f40104a, h11, h10);
             }
         } else {
             eVar = new e();

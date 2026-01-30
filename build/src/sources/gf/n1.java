@@ -11,38 +11,38 @@ import java.util.concurrent.Executor;
 public final class n1 extends h {
 
     /* renamed from: g */
-    private final HashMap f26845g = new HashMap();
+    private final HashMap f26861g = new HashMap();
 
     /* renamed from: h */
-    private final Context f26846h;
+    private final Context f26862h;
 
     /* renamed from: i */
-    private volatile Handler f26847i;
+    private volatile Handler f26863i;
 
     /* renamed from: j */
-    private final l1 f26848j;
+    private final l1 f26864j;
 
     /* renamed from: k */
-    private final nf.a f26849k;
+    private final nf.a f26865k;
 
     /* renamed from: l */
-    private final long f26850l;
+    private final long f26866l;
 
     /* renamed from: m */
-    private final long f26851m;
+    private final long f26867m;
 
     /* renamed from: n */
-    private volatile Executor f26852n;
+    private volatile Executor f26868n;
 
     public n1(Context context, Looper looper, Executor executor) {
         l1 l1Var = new l1(this, null);
-        this.f26848j = l1Var;
-        this.f26846h = context.getApplicationContext();
-        this.f26847i = new hg.g(looper, l1Var);
-        this.f26849k = nf.a.b();
-        this.f26850l = 5000L;
-        this.f26851m = LogThrottleSingleton.RATE_LIMIT_FIVE_MINUTES;
-        this.f26852n = executor;
+        this.f26864j = l1Var;
+        this.f26862h = context.getApplicationContext();
+        this.f26863i = new hg.g(looper, l1Var);
+        this.f26865k = nf.a.b();
+        this.f26866l = 5000L;
+        this.f26867m = LogThrottleSingleton.RATE_LIMIT_FIVE_MINUTES;
+        this.f26868n = executor;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -50,19 +50,19 @@ public final class n1 extends h {
     public final com.google.android.gms.common.b c(j1 j1Var, ServiceConnection serviceConnection, String str, Executor executor) {
         com.google.android.gms.common.b bVar;
         q.m(serviceConnection, "ServiceConnection must not be null");
-        synchronized (this.f26845g) {
+        synchronized (this.f26861g) {
             try {
-                k1 k1Var = (k1) this.f26845g.get(j1Var);
+                k1 k1Var = (k1) this.f26861g.get(j1Var);
                 if (executor == null) {
-                    executor = this.f26852n;
+                    executor = this.f26868n;
                 }
                 if (k1Var == null) {
                     k1Var = new k1(this, j1Var);
                     k1Var.e(serviceConnection, serviceConnection, str);
                     bVar = k1.d(k1Var, str, executor);
-                    this.f26845g.put(j1Var, k1Var);
+                    this.f26861g.put(j1Var, k1Var);
                 } else {
-                    this.f26847i.removeMessages(0, j1Var);
+                    this.f26863i.removeMessages(0, j1Var);
                     if (!k1Var.h(serviceConnection)) {
                         k1Var.e(serviceConnection, serviceConnection, str);
                         int a10 = k1Var.a();
@@ -94,14 +94,14 @@ public final class n1 extends h {
     @Override // gf.h
     protected final void d(j1 j1Var, ServiceConnection serviceConnection, String str) {
         q.m(serviceConnection, "ServiceConnection must not be null");
-        synchronized (this.f26845g) {
+        synchronized (this.f26861g) {
             try {
-                k1 k1Var = (k1) this.f26845g.get(j1Var);
+                k1 k1Var = (k1) this.f26861g.get(j1Var);
                 if (k1Var != null) {
                     if (k1Var.h(serviceConnection)) {
                         k1Var.f(serviceConnection, str);
                         if (k1Var.i()) {
-                            this.f26847i.sendMessageDelayed(this.f26847i.obtainMessage(0, j1Var), this.f26850l);
+                            this.f26863i.sendMessageDelayed(this.f26863i.obtainMessage(0, j1Var), this.f26866l);
                         }
                     } else {
                         String obj = j1Var.toString();

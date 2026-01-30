@@ -33,7 +33,7 @@ public final class n extends com.google.android.exoplayer2.f implements Handler.
     private long Q;
 
     public n(m mVar, Looper looper) {
-        this(mVar, looper, j.f55629a);
+        this(mVar, looper, j.f55645a);
     }
 
     private void a0() {
@@ -49,7 +49,7 @@ public final class n extends com.google.android.exoplayer2.f implements Handler.
             }
             return this.L.e(a10 - 1);
         }
-        return this.L.f47084e;
+        return this.L.f47100e;
     }
 
     private long c0() {
@@ -257,7 +257,7 @@ public final class n extends com.google.android.exoplayer2.f implements Handler.
                                 this.F = true;
                             }
                         }
-                    } else if (lVar.f47084e <= j10) {
+                    } else if (lVar.f47100e <= j10) {
                         l lVar2 = this.L;
                         if (lVar2 != null) {
                             lVar2.t();
@@ -297,9 +297,9 @@ public final class n extends com.google.android.exoplayer2.f implements Handler.
                                     this.E = true;
                                     this.G = false;
                                 } else {
-                                    Format format = this.D.f37110b;
+                                    Format format = this.D.f37126b;
                                     if (format != null) {
-                                        kVar.f55630t = format.A;
+                                        kVar.f55646t = format.A;
                                         kVar.v();
                                         this.G &= !kVar.q();
                                     } else {

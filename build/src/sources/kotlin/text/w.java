@@ -207,7 +207,7 @@ public class w extends StringsKt__StringNumberConversionsKt {
 
     public static String w(char[] cArr, int i10, int i11) {
         Intrinsics.checkNotNullParameter(cArr, "<this>");
-        kotlin.collections.d.f33316d.a(i10, i11, cArr.length);
+        kotlin.collections.d.f33332d.a(i10, i11, cArr.length);
         return new String(cArr, i10, i11 - i10);
     }
 

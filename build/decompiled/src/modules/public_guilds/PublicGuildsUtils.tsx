@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/public_guilds/PublicGuildsUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Original name: isPublicSystemMessage, environment: var1
-        _fun55711: for (var _fun55711_ip = 0;;) switch (_fun55711_ip) {
+        _fun55756: for (var _fun55756_ip = 0;;) switch (_fun55756_ip) {
             case 0:
                 var3 = arg0;
                 var4 = _closure1_slot1;
@@ -49,8 +49,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4.bind(var1)(var0);
                 var0 = var0.bind(var1)(var3);
                 if (!var0) {
-                    _fun55711_ip = 55;
-                    continue _fun55711
+                    _fun55756_ip = 55;
+                    continue _fun55756
                 }
             case 36:
                 var1 = var3.messageReference;
@@ -59,16 +59,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4 === var1;
             case 55:
                 if (var0) {
-                    _fun55711_ip = 95;
-                    continue _fun55711
+                    _fun55756_ip = 95;
+                    continue _fun55756
                 }
             case 58:
                 var4 = var3.author;
                 var1 = null;
                 var1 = var1 != var4;
                 if (!var1) {
-                    _fun55711_ip = 92;
-                    continue _fun55711
+                    _fun55756_ip = 92;
+                    continue _fun55756
                 }
             case 73:
                 var3 = var3.author;
@@ -124,4 +124,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.trackEnableCommunityFlow = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6710, 660, 6711, 6712, 795, 4259, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6713, 660, 6714, 6715, 795, 4265, 2]);

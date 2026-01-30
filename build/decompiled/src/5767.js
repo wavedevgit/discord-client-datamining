@@ -1,101 +1,95 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun51031: for (var _fun51031_ip = 0;;) switch (_fun51031_ip) {
-        case 0:
-            var7 = require;
-            var12 = exports;
-            var8 = dependencyMap;
-            var5 = var7;
-            var2 = var12;
-            var4 = var8;
-            var0 = undefined;
-            var3 = undefined;
-            var6 = ['children'];
-            var _closure1_slot0 = var6;
-            var6 = global;
-            var11 = var6.Object;
-            var10 = var11.defineProperty;
-            var9 = {};
-            var6 = true;
-            var9.value = var6;
-            var6 = '__esModule';
-            var6 = var10.bind(var11)(var12, var6, var9);
-            var6 = 0;
-            var9 = var8[var6];
-            var6 = metroImportDefault;
-            var6 = var6.bind(var0)(var9);
-            var _closure1_slot2 = var6;
-            var6 = 1;
-            var9 = var8[var6];
-            var6 = metroImportAll;
-            var6 = var6.bind(var0)(var9);
-            var6 = 2;
-            var6 = var8[var6];
-            var6 = var7.bind(var0)(var6);
-            var3 = var6.UIManager;
-            var6 = 3;
-            var6 = var8[var6];
-            var6 = var7.bind(var0)(var6);
-            var6 = var6.jsx;
-            var _closure1_slot3 = var6;
-        case 142: // try_start_0
-            var6 = var4;
-            var4 = 4;
-            var4 = var6[var4];
-            var4 = var5.bind(var0)(var4);
-            var4 = var4.default;
-            var _closure1_slot1 = var4;
-        case 166: // try_end0
-            _fun51031_ip = 170;
-            continue _fun51031;
-        case 168: // catch_target0
-            CatchBlockStart(arg_register = 4);
-        case 170:
-            var5 = var3;
-            var4 = var5.getViewManagerConfig;
-            var3 = 'RNCMaskedView';
-            var4 = var4.bind(var5)(var3);
-            var3 = null;
-            var3 = var3 != var4;
-            var _closure1_slot4 = var3;
-            var1 = function(arg0) { // Original name: MaskedView, environment: var1
-                _fun51032: for (var _fun51032_ip = 0;;) switch (_fun51032_ip) {
-                    case 0:
-                        var5 = arg0;
-                        var1 = var5.children;
-                        var3 = _closure1_slot2;
-                        var0 = _closure1_slot0;
-                        var4 = undefined;
-                        var8 = var3.bind(var4)(var5, var0);
-                        var3 = _closure1_slot4;
-                        var0 = var1;
-                        if (!var3) {
-                            _fun51032_ip = 89;
-                            continue _fun51032
-                        }
-                    case 37:
-                        var3 = _closure1_slot1;
-                        var0 = var1;
-                        if (!var3) {
-                            _fun51032_ip = 89;
-                            continue _fun51032
-                        }
-                    case 47:
-                        var3 = _closure1_slot3;
-                        var2 = _closure1_slot1;
-                        var5 = global;
-                        var7 = var5.Object;
-                        var6 = var7.assign;
-                        var5 = {};
-                        var5.children = var1;
-                        var1 = {};
-                        var1 = var6.bind(var7)(var1, var8, var5);
-                        var0 = var3.bind(var4)(var2, var1);
-                    case 89:
-                        return var0;
-                }
-            };
-            var2.default = var1;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 31, 27, 33, null]);
+    var4 = require;
+    var2 = exports;
+    var8 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var8;
+    var0 = ['style'];
+    var _closure1_slot2 = var0;
+    var7 = global;
+    var6 = var7.Object;
+    var5 = var6.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var5.bind(var6)(var2, var0, var3);
+    var0 = 0;
+    var5 = var8[var0];
+    var3 = metroImportDefault;
+    var0 = undefined;
+    var3 = var3.bind(var0)(var5);
+    var _closure1_slot3 = var3;
+    var6 = 1;
+    var5 = var8[var6];
+    var3 = metroImportAll;
+    var3 = var3.bind(var0)(var5);
+    var3 = 2;
+    var3 = var8[var3];
+    var3 = var4.bind(var0)(var3);
+    var5 = var3.Animated;
+    var _closure1_slot4 = var5;
+    var5 = var3.Platform;
+    var5 = var3.StyleSheet;
+    var3 = 3;
+    var3 = var8[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.jsx;
+    var _closure1_slot5 = var3;
+    var4 = var5.create;
+    var3 = {};
+    var9 = var7.Object;
+    var8 = var9.assign;
+    var7 = {};
+    var7.flex = var6;
+    var6 = {};
+    var10 = 4;
+    var6.elevation = var10;
+    var6 = var8.bind(var9)(var7, var6);
+    var3.container = var6;
+    var3 = var4.bind(var5)(var3);
+    var _closure1_slot6 = var3;
+    var1 = function(arg0) { // Original name: HeaderBackground, environment: var1
+        var2 = arg0;
+        var8 = var2.style;
+        var1 = _closure1_slot3;
+        var0 = _closure1_slot2;
+        var3 = undefined;
+        var6 = var1.bind(var3)(var2, var0);
+        var1 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var0 = 4;
+        var0 = var2[var0];
+        var1 = var1.bind(var3)(var0);
+        var0 = var1.useTheme;
+        var0 = var0.bind(var1)();
+        var10 = var0.colors;
+        var2 = _closure1_slot5;
+        var0 = _closure1_slot4;
+        var1 = var0.View;
+        var0 = global;
+        var5 = var0.Object;
+        var4 = var5.assign;
+        var0 = {};
+        var7 = _closure1_slot6;
+        var9 = var7.container;
+        var7 = new Array(3);
+        var7[0] = var9;
+        var9 = {};
+        var11 = var10.card;
+        var9.backgroundColor = var11;
+        var11 = var10.border;
+        var9.borderBottomColor = var11;
+        var10 = var10.border;
+        var9.shadowColor = var10;
+        var7[1] = var9;
+        var7[2] = var8;
+        var0.style = var7;
+        var0 = var4.bind(var5)(var0, var6);
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
+    };
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 31, 27, 33, 1470]);

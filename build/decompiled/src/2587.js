@@ -20,44 +20,6 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'other': 'P'
     };
     var4 = function(arg0) { // Original name: lastWeek, environment: var2
-        _fun21917: for (var _fun21917_ip = 0;;) switch (_fun21917_ip) {
-            case 0:
-                var1 = arg0;
-                var0 = var1.getUTCDay;
-                var1 = var0.bind(var1)();
-                var0 = 0;
-                if (!(var0 !== var1)) {
-                    _fun21917_ip = 57;
-                    continue _fun21917
-                }
-            case 19:
-                var0 = 3;
-                if (!(var0 !== var1)) {
-                    _fun21917_ip = 49;
-                    continue _fun21917
-                }
-            case 26:
-                var0 = 6;
-                if (!(var0 !== var1)) {
-                    _fun21917_ip = 41;
-                    continue _fun21917
-                }
-            case 33:
-                var0 = "'prošli' EEEE 'u' p";
-                return var0;
-            case 41:
-                var0 = "'prošlu subotu u' p";
-                return var0;
-            case 49:
-                var0 = "'prošlu srijedu u' p";
-                return var0;
-            case 57:
-                var0 = "'prošlu nedjelju u' p";
-                return var0;
-        }
-    };
-    var3.lastWeek = var4;
-    var4 = function(arg0) { // Original name: nextWeek, environment: var2
         _fun21918: for (var _fun21918_ip = 0;;) switch (_fun21918_ip) {
             case 0:
                 var1 = arg0;
@@ -84,6 +46,44 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = "'prošli' EEEE 'u' p";
                 return var0;
             case 41:
+                var0 = "'prošlu subotu u' p";
+                return var0;
+            case 49:
+                var0 = "'prošlu srijedu u' p";
+                return var0;
+            case 57:
+                var0 = "'prošlu nedjelju u' p";
+                return var0;
+        }
+    };
+    var3.lastWeek = var4;
+    var4 = function(arg0) { // Original name: nextWeek, environment: var2
+        _fun21919: for (var _fun21919_ip = 0;;) switch (_fun21919_ip) {
+            case 0:
+                var1 = arg0;
+                var0 = var1.getUTCDay;
+                var1 = var0.bind(var1)();
+                var0 = 0;
+                if (!(var0 !== var1)) {
+                    _fun21919_ip = 57;
+                    continue _fun21919
+                }
+            case 19:
+                var0 = 3;
+                if (!(var0 !== var1)) {
+                    _fun21919_ip = 49;
+                    continue _fun21919
+                }
+            case 26:
+                var0 = 6;
+                if (!(var0 !== var1)) {
+                    _fun21919_ip = 41;
+                    continue _fun21919
+                }
+            case 33:
+                var0 = "'prošli' EEEE 'u' p";
+                return var0;
+            case 41:
                 var0 = "'iduću subotu u' p";
                 return var0;
             case 49:
@@ -97,7 +97,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.nextWeek = var4;
     var _closure1_slot0 = var3;
     var2 = function(arg0, arg1, arg2, arg3) { // Original name: formatRelative, environment: var2
-        _fun21919: for (var _fun21919_ip = 0;;) switch (_fun21919_ip) {
+        _fun21920: for (var _fun21920_ip = 0;;) switch (_fun21920_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var0 = arg0;
@@ -106,8 +106,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = typeof var3;
                 var0 = var3;
                 if (!(var2 === var1)) {
-                    _fun21919_ip = 38;
-                    continue _fun21919
+                    _fun21920_ip = 38;
+                    continue _fun21920
                 }
             case 28:
                 var2 = undefined;

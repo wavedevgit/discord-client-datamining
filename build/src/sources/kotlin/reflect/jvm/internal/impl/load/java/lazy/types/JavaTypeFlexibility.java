@@ -7,18 +7,18 @@ import kotlin.enums.EnumEntries;
 public final class JavaTypeFlexibility {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ JavaTypeFlexibility[] f34302d;
+    private static final /* synthetic */ JavaTypeFlexibility[] f34318d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f34303e;
+    private static final /* synthetic */ EnumEntries f34319e;
     public static final JavaTypeFlexibility INFLEXIBLE = new JavaTypeFlexibility("INFLEXIBLE", 0);
     public static final JavaTypeFlexibility FLEXIBLE_UPPER_BOUND = new JavaTypeFlexibility("FLEXIBLE_UPPER_BOUND", 1);
     public static final JavaTypeFlexibility FLEXIBLE_LOWER_BOUND = new JavaTypeFlexibility("FLEXIBLE_LOWER_BOUND", 2);
 
     static {
         JavaTypeFlexibility[] a10 = a();
-        f34302d = a10;
-        f34303e = pr.a.a(a10);
+        f34318d = a10;
+        f34319e = pr.a.a(a10);
     }
 
     private JavaTypeFlexibility(String str, int i10) {
@@ -33,6 +33,6 @@ public final class JavaTypeFlexibility {
     }
 
     public static JavaTypeFlexibility[] values() {
-        return (JavaTypeFlexibility[]) f34302d.clone();
+        return (JavaTypeFlexibility[]) f34318d.clone();
     }
 }

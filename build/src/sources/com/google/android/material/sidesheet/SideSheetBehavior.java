@@ -36,8 +36,8 @@ import yg.i;
 import yg.j;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class SideSheetBehavior<V extends View> extends CoordinatorLayout.c implements jh.b {
-    private static final int K = i.f54497w;
-    private static final int L = j.f54509l;
+    private static final int K = i.f54513w;
+    private static final int L = j.f54525l;
     private int A;
     private int B;
     private WeakReference C;

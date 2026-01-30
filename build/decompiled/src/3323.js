@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function() { // Original name: getPolyfill, environment: var0
-        _fun28863: for (var _fun28863_ip = 0;;) switch (_fun28863_ip) {
+        _fun28864: for (var _fun28864_ip = 0;;) switch (_fun28864_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot1;
@@ -20,8 +20,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = 'function';
                 var2 = typeof var2;
                 if (!(var4 !== var2)) {
-                    _fun28863_ip = 75;
-                    continue _fun28863
+                    _fun28864_ip = 75;
+                    continue _fun28864
                 }
             case 53:
                 var2 = _closure1_slot0;
@@ -29,8 +29,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = 1;
                 var0 = var4[var0];
                 var0 = var2.bind(var3)(var0);
-                _fun28863_ip = 87;
-                continue _fun28863;
+                _fun28864_ip = 87;
+                continue _fun28864;
             case 75:
                 var1 = var1.Promise;
                 var0 = var1.allSettled;

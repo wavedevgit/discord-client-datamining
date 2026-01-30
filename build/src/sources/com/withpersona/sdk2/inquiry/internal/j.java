@@ -134,7 +134,7 @@ public final class j extends Fragment {
                         str = null;
                     }
                     bundle.putString("SESSION_TOKEN_KEY", str);
-                    Unit unit = Unit.f33282a;
+                    Unit unit = Unit.f33298a;
                     androidx.fragment.app.v.a(jVar, p10, bundle);
                 } else if (bVar instanceof n.b.d) {
                     n.b.d dVar = (n.b.d) bVar;
@@ -146,7 +146,7 @@ public final class j extends Fragment {
                     if (aVar.b()) {
                         this.f19913d.J(aVar);
                     } else {
-                        e.a aVar2 = no.e.f42021i;
+                        e.a aVar2 = no.e.f42037i;
                         FragmentManager childFragmentManager = this.f19913d.getChildFragmentManager();
                         Intrinsics.checkNotNullExpressionValue(childFragmentManager, "getChildFragmentManager(...)");
                         aVar2.a(childFragmentManager, this.f19913d.getTheme(), aVar);
@@ -163,12 +163,12 @@ public final class j extends Fragment {
                     bundle2.putString("PERSONA_ACTIVITY_RESULT", "INQUIRY_ERROR");
                     bundle2.putString("ERROR_DEBUG_MESSAGE_KEY", cVar.b());
                     bundle2.putParcelable("ERROR_CODE_KEY", cVar.c());
-                    Unit unit2 = Unit.f33282a;
+                    Unit unit2 = Unit.f33298a;
                     androidx.fragment.app.v.a(jVar3, p11, bundle2);
                 } else {
                     throw new ir.p();
                 }
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
         }
 
@@ -206,7 +206,7 @@ public final class j extends Fragment {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -288,7 +288,7 @@ public final class j extends Fragment {
 
             public final Object a(boolean z10, Continuation continuation) {
                 this.f19923d.D(true, this.f19924e);
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
 
             @Override // kotlinx.coroutines.flow.FlowCollector
@@ -327,12 +327,12 @@ public final class j extends Fragment {
                     return f10;
                 }
             }
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -597,7 +597,7 @@ public final class j extends Fragment {
 
     public j() {
         e eVar = new e(this);
-        ir.o oVar = ir.o.f31104i;
+        ir.o oVar = ir.o.f31120i;
         Lazy a10 = ir.l.a(oVar, new f(eVar));
         this.f19905e = p0.b(this, Reflection.getOrCreateKotlinClass(com.withpersona.sdk2.inquiry.internal.m.class), new g(a10), new h(null, a10), new i(this, a10));
         Lazy a11 = ir.l.a(oVar, new k(new C0243j(this)));
@@ -705,7 +705,7 @@ public final class j extends Fragment {
         i0 i0Var = new i0(requireContext2, null, 2, null);
         Lifecycle lifecycle = getLifecycle();
         Intrinsics.checkNotNullExpressionValue(lifecycle, "<get-lifecycle>(...)");
-        i0.b(i0Var, lifecycle, G().C(H()), null, new vm.a0(o0.m(ir.v.a(e0.f51221a, G().E()), ir.v.a(sp.b.f49136b, b10.f()))), 4, null);
+        i0.b(i0Var, lifecycle, G().C(H()), null, new vm.a0(o0.m(ir.v.a(e0.f51237a, G().E()), ir.v.a(sp.b.f49152b, b10.f()))), 4, null);
         oo.d dVar2 = this.f19907o;
         if (dVar2 == null) {
             Intrinsics.throwUninitializedPropertyAccessException("binding");
@@ -757,8 +757,8 @@ public final class j extends Fragment {
             Bundle bundle = new Bundle();
             bundle.putString("PERSONA_ACTIVITY_RESULT", "INQUIRY_ERROR");
             bundle.putString("ERROR_DEBUG_MESSAGE_KEY", "Invalid session token.");
-            bundle.putParcelable("ERROR_CODE_KEY", gq.d.f27090q);
-            Unit unit = Unit.f33282a;
+            bundle.putParcelable("ERROR_CODE_KEY", gq.d.f27106q);
+            Unit unit = Unit.f33298a;
             androidx.fragment.app.v.a(this, p10, bundle);
             getParentFragmentManager().d1();
             return false;
@@ -800,7 +800,7 @@ public final class j extends Fragment {
             }
             bundle.putString("SESSION_TOKEN_KEY", str);
         }
-        Unit unit = Unit.f33282a;
+        Unit unit = Unit.f33298a;
         androidx.fragment.app.v.a(this, p10, bundle);
     }
 
@@ -930,8 +930,8 @@ public final class j extends Fragment {
                 Bundle bundle2 = new Bundle();
                 bundle2.putString("PERSONA_ACTIVITY_RESULT", "INQUIRY_ERROR");
                 bundle2.putString("ERROR_DEBUG_MESSAGE_KEY", "A fatal exception occurred.");
-                bundle2.putParcelable("ERROR_CODE_KEY", gq.d.f27096w);
-                Unit unit = Unit.f33282a;
+                bundle2.putParcelable("ERROR_CODE_KEY", gq.d.f27112w);
+                Unit unit = Unit.f33298a;
                 androidx.fragment.app.v.a(this, p10, bundle2);
                 return;
             }

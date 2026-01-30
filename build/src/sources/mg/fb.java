@@ -5,7 +5,7 @@ import ui.c;
 final class fb implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final fb f38188a = new fb();
+    static final fb f38204a = new fb();
 
     static {
         c.b a10 = ui.c.a("confidence");

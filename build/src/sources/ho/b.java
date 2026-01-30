@@ -8,14 +8,14 @@ import tq.h;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f27618a;
+    private final h f27634a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f27619b;
+    private final h f27635b;
 
     public b(h hVar, h hVar2) {
-        this.f27618a = hVar;
-        this.f27619b = hVar2;
+        this.f27634a = hVar;
+        this.f27635b = hVar2;
     }
 
     public static b a(h hVar, h hVar2) {
@@ -27,6 +27,6 @@ public final class b {
     }
 
     public a b(c4.e eVar) {
-        return c((Context) this.f27618a.get(), (f0) this.f27619b.get(), eVar);
+        return c((Context) this.f27634a.get(), (f0) this.f27635b.get(), eVar);
     }
 }

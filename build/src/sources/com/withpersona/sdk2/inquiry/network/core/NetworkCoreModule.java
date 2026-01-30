@@ -79,28 +79,28 @@ public final class NetworkCoreModule {
             if (localizedMessage != null) {
                 str = localizedMessage;
             }
-            return g10.m(str).b(ResponseBody.Companion.a(wVar.c(ErrorResponse.class).toJson(ErrorResponse.Companion.create(e10.getLocalizedMessage())), MediaType.f44069e.b("application/json"))).c();
+            return g10.m(str).b(ResponseBody.Companion.a(wVar.c(ErrorResponse.class).toJson(ErrorResponse.Companion.create(e10.getLocalizedMessage())), MediaType.f44085e.b("application/json"))).c();
         } catch (SocketTimeoutException e11) {
             Response.a g11 = new Response.a().r(chain.h()).p(j.HTTP_2).g(0);
             String localizedMessage2 = e11.getLocalizedMessage();
             if (localizedMessage2 != null) {
                 str = localizedMessage2;
             }
-            return g11.m(str).b(ResponseBody.Companion.a(wVar.c(ErrorResponse.class).toJson(ErrorResponse.Companion.create(e11.getLocalizedMessage())), MediaType.f44069e.b("application/json"))).c();
+            return g11.m(str).b(ResponseBody.Companion.a(wVar.c(ErrorResponse.class).toJson(ErrorResponse.Companion.create(e11.getLocalizedMessage())), MediaType.f44085e.b("application/json"))).c();
         } catch (UnknownHostException e12) {
             Response.a g12 = new Response.a().r(chain.h()).p(j.HTTP_2).g(0);
             String localizedMessage3 = e12.getLocalizedMessage();
             if (localizedMessage3 != null) {
                 str = localizedMessage3;
             }
-            return g12.m(str).b(ResponseBody.Companion.a(wVar.c(ErrorResponse.class).toJson(ErrorResponse.Companion.create(e12.getLocalizedMessage())), MediaType.f44069e.b("application/json"))).c();
+            return g12.m(str).b(ResponseBody.Companion.a(wVar.c(ErrorResponse.class).toJson(ErrorResponse.Companion.create(e12.getLocalizedMessage())), MediaType.f44085e.b("application/json"))).c();
         } catch (IOException e13) {
             Response.a g13 = new Response.a().r(chain.h()).p(j.HTTP_2).g(0);
             String localizedMessage4 = e13.getLocalizedMessage();
             if (localizedMessage4 != null) {
                 str = localizedMessage4;
             }
-            return g13.m(str).b(ResponseBody.Companion.a(wVar.c(ErrorResponse.class).toJson(ErrorResponse.Companion.create(e13.getLocalizedMessage())), MediaType.f44069e.b("application/json"))).c();
+            return g13.m(str).b(ResponseBody.Companion.a(wVar.c(ErrorResponse.class).toJson(ErrorResponse.Companion.create(e13.getLocalizedMessage())), MediaType.f44085e.b("application/json"))).c();
         }
     }
 

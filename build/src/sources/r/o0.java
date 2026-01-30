@@ -41,7 +41,7 @@ public class o0 extends r0 {
 
     @Override // r.r0, r.n0.b
     public void a(Executor executor, CameraManager.AvailabilityCallback availabilityCallback) {
-        this.f47756a.registerAvailabilityCallback(executor, availabilityCallback);
+        this.f47772a.registerAvailabilityCallback(executor, availabilityCallback);
     }
 
     @Override // r.r0, r.n0.b
@@ -59,7 +59,7 @@ public class o0 extends r0 {
     @Override // r.r0, r.n0.b
     public void d(String str, Executor executor, CameraDevice.StateCallback stateCallback) {
         try {
-            this.f47756a.openCamera(str, executor, stateCallback);
+            this.f47772a.openCamera(str, executor, stateCallback);
         } catch (CameraAccessException e10) {
             throw f.e(e10);
         } catch (IllegalArgumentException e11) {
@@ -75,6 +75,6 @@ public class o0 extends r0 {
 
     @Override // r.r0, r.n0.b
     public void f(CameraManager.AvailabilityCallback availabilityCallback) {
-        this.f47756a.unregisterAvailabilityCallback(availabilityCallback);
+        this.f47772a.unregisterAvailabilityCallback(availabilityCallback);
     }
 }

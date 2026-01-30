@@ -16,7 +16,7 @@ public class a extends hf.a {
     public static final Parcelable.Creator<a> CREATOR = new d();
 
     /* renamed from: p  reason: collision with root package name */
-    private static final Comparator f38043p = new Comparator() { // from class: mf.c
+    private static final Comparator f38059p = new Comparator() { // from class: mf.c
         @Override // java.util.Comparator
         public final int compare(Object obj, Object obj2) {
             com.google.android.gms.common.d dVar = (com.google.android.gms.common.d) obj;
@@ -30,23 +30,23 @@ public class a extends hf.a {
     };
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f38044d;
+    private final List f38060d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f38045e;
+    private final boolean f38061e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f38046i;
+    private final String f38062i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f38047o;
+    private final String f38063o;
 
     public a(List list, boolean z10, String str, String str2) {
         q.l(list);
-        this.f38044d = list;
-        this.f38045e = z10;
-        this.f38046i = str;
-        this.f38047o = str2;
+        this.f38060d = list;
+        this.f38061e = z10;
+        this.f38062i = str;
+        this.f38063o = str2;
     }
 
     public static a b(lf.f fVar) {
@@ -55,7 +55,7 @@ public class a extends hf.a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static a d(List list, boolean z10) {
-        TreeSet treeSet = new TreeSet(f38043p);
+        TreeSet treeSet = new TreeSet(f38059p);
         Iterator it = list.iterator();
         while (it.hasNext()) {
             Collections.addAll(treeSet, ((ef.f) it.next()).a());
@@ -64,7 +64,7 @@ public class a extends hf.a {
     }
 
     public List c() {
-        return this.f38044d;
+        return this.f38060d;
     }
 
     public final boolean equals(Object obj) {
@@ -72,23 +72,23 @@ public class a extends hf.a {
             return false;
         }
         a aVar = (a) obj;
-        if (this.f38045e != aVar.f38045e || !gf.o.a(this.f38044d, aVar.f38044d) || !gf.o.a(this.f38046i, aVar.f38046i) || !gf.o.a(this.f38047o, aVar.f38047o)) {
+        if (this.f38061e != aVar.f38061e || !gf.o.a(this.f38060d, aVar.f38060d) || !gf.o.a(this.f38062i, aVar.f38062i) || !gf.o.a(this.f38063o, aVar.f38063o)) {
             return false;
         }
         return true;
     }
 
     public final int hashCode() {
-        return gf.o.b(Boolean.valueOf(this.f38045e), this.f38044d, this.f38046i, this.f38047o);
+        return gf.o.b(Boolean.valueOf(this.f38061e), this.f38060d, this.f38062i, this.f38063o);
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
         int a10 = hf.c.a(parcel);
         hf.c.w(parcel, 1, c(), false);
-        hf.c.c(parcel, 2, this.f38045e);
-        hf.c.s(parcel, 3, this.f38046i, false);
-        hf.c.s(parcel, 4, this.f38047o, false);
+        hf.c.c(parcel, 2, this.f38061e);
+        hf.c.s(parcel, 3, this.f38062i, false);
+        hf.c.s(parcel, 4, this.f38063o, false);
         hf.c.b(parcel, a10);
     }
 }

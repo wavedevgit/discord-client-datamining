@@ -114,7 +114,7 @@ public final class g {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit i(g gVar) {
         gVar.g(false);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -138,7 +138,7 @@ public final class g {
         if (layoutParams != null) {
             layoutParams.height = g10.f3153d;
             bottomInset.setLayoutParams(layoutParams);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
     }
@@ -156,7 +156,7 @@ public final class g {
         FrameLayout root = cVar.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
         vm.e.c(root, null);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     public final void l(StepStyles.GovernmentIdStepStyle governmentIdStepStyle, h viewModel, NextStep.GovernmentId.AssetConfig.CapturePage capturePage) {

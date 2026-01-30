@@ -190,18 +190,18 @@ public class b implements w {
         for (u uVar : uVarArr) {
             this.f5590o.e();
             try {
-                u i10 = this.f5590o.H().i(uVar.f44910a);
+                u i10 = this.f5590o.H().i(uVar.f44926a);
                 if (i10 == null) {
-                    m.e().k(f5586q, "Skipping scheduling " + uVar.f44910a + " because it's no longer in the DB");
+                    m.e().k(f5586q, "Skipping scheduling " + uVar.f44926a + " because it's no longer in the DB");
                     this.f5590o.A();
-                } else if (i10.f44911b != x.ENQUEUED) {
-                    m.e().k(f5586q, "Skipping scheduling " + uVar.f44910a + " because it is no longer enqueued");
+                } else if (i10.f44927b != x.ENQUEUED) {
+                    m.e().k(f5586q, "Skipping scheduling " + uVar.f44926a + " because it is no longer enqueued");
                     this.f5590o.A();
                 } else {
                     p4.m a10 = p4.x.a(uVar);
                     i a11 = this.f5590o.E().a(a10);
                     if (a11 != null) {
-                        e10 = a11.f44885c;
+                        e10 = a11.f44901c;
                     } else {
                         e10 = hVar.e(this.f5591p.i(), this.f5591p.g());
                     }
@@ -221,15 +221,15 @@ public class b implements w {
         JobInfo a10 = this.f5589i.a(uVar, i10);
         m e10 = m.e();
         String str = f5586q;
-        e10.a(str, "Scheduling work ID " + uVar.f44910a + "Job ID " + i10);
+        e10.a(str, "Scheduling work ID " + uVar.f44926a + "Job ID " + i10);
         int i11 = 0;
         try {
             if (this.f5588e.schedule(a10) == 0) {
                 m e11 = m.e();
-                e11.k(str, "Unable to schedule work ID " + uVar.f44910a);
-                if (uVar.f44926q && uVar.f44927r == r.RUN_AS_NON_EXPEDITED_WORK_REQUEST) {
-                    uVar.f44926q = false;
-                    m.e().a(str, String.format("Scheduling a non-expedited job (work ID %s)", uVar.f44910a));
+                e11.k(str, "Unable to schedule work ID " + uVar.f44926a);
+                if (uVar.f44942q && uVar.f44943r == r.RUN_AS_NON_EXPEDITED_WORK_REQUEST) {
+                    uVar.f44942q = false;
+                    m.e().a(str, String.format("Scheduling a non-expedited job (work ID %s)", uVar.f44926a));
                     j(uVar, i10);
                 }
             }

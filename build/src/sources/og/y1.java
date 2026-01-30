@@ -12,42 +12,42 @@ import ui.c;
 final class y1 implements ui.e {
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Charset f43749f = Charset.forName("UTF-8");
+    private static final Charset f43765f = Charset.forName("UTF-8");
 
     /* renamed from: g  reason: collision with root package name */
-    private static final ui.c f43750g;
+    private static final ui.c f43766g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final ui.c f43751h;
+    private static final ui.c f43767h;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final ui.d f43752i;
+    private static final ui.d f43768i;
 
     /* renamed from: a  reason: collision with root package name */
-    private OutputStream f43753a;
+    private OutputStream f43769a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Map f43754b;
+    private final Map f43770b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f43755c;
+    private final Map f43771c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ui.d f43756d;
+    private final ui.d f43772d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final d2 f43757e = new d2(this);
+    private final d2 f43773e = new d2(this);
 
     static {
         c.b a10 = ui.c.a("key");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43750g = a10.b(s1Var.b()).a();
+        f43766g = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("value");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43751h = a11.b(s1Var2.b()).a();
-        f43752i = new ui.d() { // from class: og.x1
+        f43767h = a11.b(s1Var2.b()).a();
+        f43768i = new ui.d() { // from class: og.x1
             @Override // ui.d
             public final void a(Object obj, Object obj2) {
                 y1.j((Map.Entry) obj, (ui.e) obj2);
@@ -57,16 +57,16 @@ final class y1 implements ui.e {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public y1(OutputStream outputStream, Map map, Map map2, ui.d dVar) {
-        this.f43753a = outputStream;
-        this.f43754b = map;
-        this.f43755c = map2;
-        this.f43756d = dVar;
+        this.f43769a = outputStream;
+        this.f43770b = map;
+        this.f43771c = map2;
+        this.f43772d = dVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static /* synthetic */ void j(Map.Entry entry, ui.e eVar) {
-        eVar.b(f43750g, entry.getKey());
-        eVar.b(f43751h, entry.getValue());
+        eVar.b(f43766g, entry.getKey());
+        eVar.b(f43767h, entry.getValue());
     }
 
     private static int k(ui.c cVar) {
@@ -80,10 +80,10 @@ final class y1 implements ui.e {
     private final long l(ui.d dVar, Object obj) {
         t1 t1Var = new t1();
         try {
-            OutputStream outputStream = this.f43753a;
-            this.f43753a = t1Var;
+            OutputStream outputStream = this.f43769a;
+            this.f43769a = t1Var;
             dVar.a(obj, this);
-            this.f43753a = outputStream;
+            this.f43769a = outputStream;
             long a10 = t1Var.a();
             t1Var.close();
             return a10;
@@ -120,8 +120,8 @@ final class y1 implements ui.e {
     }
 
     private final y1 o(ui.f fVar, ui.c cVar, Object obj, boolean z10) {
-        this.f43757e.b(cVar, z10);
-        fVar.a(obj, this.f43757e);
+        this.f43773e.b(cVar, z10);
+        fVar.a(obj, this.f43773e);
         return this;
     }
 
@@ -131,18 +131,18 @@ final class y1 implements ui.e {
 
     private final void q(int i10) {
         while ((i10 & (-128)) != 0) {
-            this.f43753a.write((i10 & 127) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+            this.f43769a.write((i10 & 127) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
             i10 >>>= 7;
         }
-        this.f43753a.write(i10 & 127);
+        this.f43769a.write(i10 & 127);
     }
 
     private final void r(long j10) {
         while (((-128) & j10) != 0) {
-            this.f43753a.write((((int) j10) & 127) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
+            this.f43769a.write((((int) j10) & 127) | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT);
             j10 >>>= 7;
         }
-        this.f43753a.write(((int) j10) & 127);
+        this.f43769a.write(((int) j10) & 127);
     }
 
     final ui.e a(ui.c cVar, double d10, boolean z10) {
@@ -150,7 +150,7 @@ final class y1 implements ui.e {
             return this;
         }
         q((k(cVar) << 3) | 1);
-        this.f43753a.write(p(8).putDouble(d10).array());
+        this.f43769a.write(p(8).putDouble(d10).array());
         return this;
     }
 
@@ -165,7 +165,7 @@ final class y1 implements ui.e {
             return this;
         }
         q((k(cVar) << 3) | 5);
-        this.f43753a.write(p(4).putFloat(f10).array());
+        this.f43769a.write(p(4).putFloat(f10).array());
         return this;
     }
 
@@ -188,9 +188,9 @@ final class y1 implements ui.e {
                 CharSequence charSequence = (CharSequence) obj;
                 if (!z10 || charSequence.length() != 0) {
                     q((k(cVar) << 3) | 2);
-                    byte[] bytes = charSequence.toString().getBytes(f43749f);
+                    byte[] bytes = charSequence.toString().getBytes(f43765f);
                     q(bytes.length);
-                    this.f43753a.write(bytes);
+                    this.f43769a.write(bytes);
                     return this;
                 }
             } else if (obj instanceof Collection) {
@@ -199,7 +199,7 @@ final class y1 implements ui.e {
                 }
             } else if (obj instanceof Map) {
                 for (Map.Entry entry : ((Map) obj).entrySet()) {
-                    n(f43752i, cVar, entry, false);
+                    n(f43768i, cVar, entry, false);
                 }
             } else if (obj instanceof Double) {
                 a(cVar, ((Double) obj).doubleValue(), z10);
@@ -218,16 +218,16 @@ final class y1 implements ui.e {
                 if (!z10 || bArr.length != 0) {
                     q((k(cVar) << 3) | 2);
                     q(bArr.length);
-                    this.f43753a.write(bArr);
+                    this.f43769a.write(bArr);
                     return this;
                 }
             } else {
-                ui.d dVar = (ui.d) this.f43754b.get(obj.getClass());
+                ui.d dVar = (ui.d) this.f43770b.get(obj.getClass());
                 if (dVar != null) {
                     n(dVar, cVar, obj, z10);
                     return this;
                 }
-                ui.f fVar = (ui.f) this.f43755c.get(obj.getClass());
+                ui.f fVar = (ui.f) this.f43771c.get(obj.getClass());
                 if (fVar != null) {
                     o(fVar, cVar, obj, z10);
                     return this;
@@ -238,7 +238,7 @@ final class y1 implements ui.e {
                     g(cVar, ((Enum) obj).ordinal(), true);
                     return this;
                 } else {
-                    n(this.f43756d, cVar, obj, z10);
+                    n(this.f43772d, cVar, obj, z10);
                     return this;
                 }
             }
@@ -256,7 +256,7 @@ final class y1 implements ui.e {
                 if (ordinal != 1) {
                     if (ordinal == 2) {
                         q((m10.zza() << 3) | 5);
-                        this.f43753a.write(p(4).putInt(i10).array());
+                        this.f43769a.write(p(4).putInt(i10).array());
                         return this;
                     }
                 } else {
@@ -282,7 +282,7 @@ final class y1 implements ui.e {
                 if (ordinal != 1) {
                     if (ordinal == 2) {
                         q((m10.zza() << 3) | 1);
-                        this.f43753a.write(p(8).putLong(j10).array());
+                        this.f43769a.write(p(8).putLong(j10).array());
                         return this;
                     }
                 } else {
@@ -304,7 +304,7 @@ final class y1 implements ui.e {
         if (obj == null) {
             return this;
         }
-        ui.d dVar = (ui.d) this.f43754b.get(obj.getClass());
+        ui.d dVar = (ui.d) this.f43770b.get(obj.getClass());
         if (dVar != null) {
             dVar.a(obj, this);
             return this;

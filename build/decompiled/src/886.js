@@ -11,7 +11,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.value = var5;
     var0 = var3.bind(var4)(var1, var2, var0);
     var0 = function(arg0) { // Original name: addUserAgentToTransportHeaders, environment: var0
-        _fun9377: for (var _fun9377_ip = 0;;) switch (_fun9377_ip) {
+        _fun9378: for (var _fun9378_ip = 0;;) switch (_fun9378_ip) {
             case 0:
                 var2 = arg0;
                 var3 = var2._metadata;
@@ -20,8 +20,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = undefined;
                 var1 = undefined;
                 if (var4) {
-                    _fun9377_ip = 28;
-                    continue _fun9377
+                    _fun9378_ip = 28;
+                    continue _fun9378
                 }
             case 22:
                 var1 = var3.sdk;
@@ -29,36 +29,36 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var7 != var1;
                 var11 = undefined;
                 if (!var3) {
-                    _fun9377_ip = 124;
-                    continue _fun9377
+                    _fun9378_ip = 124;
+                    continue _fun9378
                 }
             case 37:
                 var3 = var1.name;
                 var11 = undefined;
                 if (!var3) {
-                    _fun9377_ip = 124;
-                    continue _fun9377
+                    _fun9378_ip = 124;
+                    continue _fun9378
                 }
             case 47:
                 var3 = var7 != var1;
                 var11 = undefined;
                 if (!var3) {
-                    _fun9377_ip = 124;
-                    continue _fun9377
+                    _fun9378_ip = 124;
+                    continue _fun9378
                 }
             case 56:
                 var3 = var1.version;
                 var11 = undefined;
                 if (!var3) {
-                    _fun9377_ip = 124;
-                    continue _fun9377
+                    _fun9378_ip = 124;
+                    continue _fun9378
                 }
             case 67:
                 var3 = var7 == var1;
                 var6 = undefined;
                 if (var3) {
-                    _fun9377_ip = 81;
-                    continue _fun9377
+                    _fun9378_ip = 81;
+                    continue _fun9378
                 }
             case 76:
                 var6 = var1.name;
@@ -66,8 +66,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var7 == var1;
                 var5 = undefined;
                 if (var3) {
-                    _fun9377_ip = 96;
-                    continue _fun9377
+                    _fun9378_ip = 96;
+                    continue _fun9378
                 }
             case 90:
                 var5 = var1.version;
@@ -88,8 +88,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var9 = var10.assign;
                 var8 = var11;
                 if (!var8) {
-                    _fun9377_ip = 172;
-                    continue _fun9377
+                    _fun9378_ip = 172;
+                    continue _fun9378
                 }
             case 162:
                 var1 = {};
@@ -100,8 +100,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var11 = var7 == var1;
                 var7 = undefined;
                 if (var11) {
-                    _fun9377_ip = 193;
-                    continue _fun9377
+                    _fun9378_ip = 193;
+                    continue _fun9378
                 }
             case 187:
                 var7 = var1.headers;

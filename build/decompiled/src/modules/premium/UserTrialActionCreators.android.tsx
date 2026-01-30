@@ -34,13 +34,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = undefined;
         var0 = function*() { // Environment: var0
             var0 = function*() { // Original name: ?anon_0_, environment: var0
-                _fun58941: for (var _fun58941_ip = 0;;) switch (_fun58941_ip) {
+                _fun58985: for (var _fun58985_ip = 0;;) switch (_fun58985_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun58941_ip = 216;
-                            continue _fun58941
+                            _fun58985_ip = 216;
+                            continue _fun58985
                         }
                     case 10: // try_start_0
                         var3 = _closure1_slot0;
@@ -70,8 +70,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 103:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
                         if (var3) {
-                            _fun58941_ip = 161;
-                            continue _fun58941
+                            _fun58985_ip = 161;
+                            continue _fun58985
                         }
                     case 109:
                         var5 = var1.body;
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2.userTrialOffer = var5;
                         var2 = var3.bind(var4)(var2);
                     case 159: // try_end0
-                        _fun58941_ip = 211;
-                        continue _fun58941;
+                        _fun58985_ip = 211;
+                        continue _fun58985;
                     case 161:
                         return var1;
                     case 164: // catch_target0
@@ -125,21 +125,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = undefined;
         var0 = function*() { // Environment: var0
             var0 = function*() { // Original name: ?anon_0_, environment: var0
-                _fun58944: for (var _fun58944_ip = 0;;) switch (_fun58944_ip) {
+                _fun58988: for (var _fun58988_ip = 0;;) switch (_fun58988_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun58944_ip = 266;
-                            continue _fun58944
+                            _fun58988_ip = 266;
+                            continue _fun58988
                         }
                     case 10:
                         var1 = _closure2_slot0;
                         var2 = var1.expires_at;
                         var1 = null;
                         if (!(var1 == var2)) {
-                            _fun58944_ip = 261;
-                            continue _fun58944
+                            _fun58988_ip = 261;
+                            continue _fun58988
                         }
                     case 32: // try_start_0
                         var3 = _closure1_slot0;
@@ -171,8 +171,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 134:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
                         if (var3) {
-                            _fun58944_ip = 192;
-                            continue _fun58944
+                            _fun58988_ip = 192;
+                            continue _fun58988
                         }
                     case 140:
                         var5 = var1.body;
@@ -188,8 +188,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2.userTrialOffer = var5;
                         var2 = var3.bind(var4)(var2);
                     case 190: // try_end0
-                        _fun58944_ip = 261;
-                        continue _fun58944;
+                        _fun58988_ip = 261;
+                        continue _fun58988;
                     case 192:
                         return var1;
                     case 195: // catch_target0
@@ -197,8 +197,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var1.status;
                         var1 = 404;
                         if (!(var1 === var2)) {
-                            _fun58944_ip = 261;
-                            continue _fun58944
+                            _fun58988_ip = 261;
+                            continue _fun58988
                         }
                     case 212:
                         var3 = _closure1_slot1;

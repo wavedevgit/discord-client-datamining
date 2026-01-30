@@ -56,14 +56,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/avatar/native/AddAvatarModalActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0, arg1, arg2) { // Original name: handlePressNext, environment: var1
-        _fun114204: for (var _fun114204_ip = 0;;) switch (_fun114204_ip) {
+        _fun114483: for (var _fun114483_ip = 0;;) switch (_fun114483_ip) {
             case 0:
                 var5 = arg0;
                 var1 = arg2;
                 var0 = null;
                 if (!(var0 != var5)) {
-                    _fun114204_ip = 147;
-                    continue _fun114204
+                    _fun114483_ip = 147;
+                    continue _fun114483
                 }
             case 15:
                 var7 = _closure1_slot1;
@@ -98,16 +98,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.bind(var4)(var2);
             case 147:
                 if (!(var0 == var1)) {
-                    _fun114204_ip = 169;
-                    continue _fun114204
+                    _fun114483_ip = 169;
+                    continue _fun114483
                 }
             case 151:
                 var3 = _closure1_slot5;
                 var2 = undefined;
                 var0 = false;
                 var0 = var3.bind(var2)(var0);
-                _fun114204_ip = 175;
-                continue _fun114204;
+                _fun114483_ip = 175;
+                continue _fun114483;
             case 169:
                 var0 = undefined;
                 var0 = var1.bind(var0)();
@@ -183,7 +183,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = var6.bind(var7)(var5);
         var1.confirmText = var5;
         var4 = function() { // Original name: onConfirm, environment: var4
-            _fun114206: for (var _fun114206_ip = 0;;) switch (_fun114206_ip) {
+            _fun114485: for (var _fun114485_ip = 0;;) switch (_fun114485_ip) {
                 case 0:
                     var3 = _closure1_slot0;
                     var1 = _closure1_slot2;
@@ -196,15 +196,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var1.bind(var3)(var4);
                     var3 = _closure2_slot0;
                     if (!(var4 == var3)) {
-                        _fun114206_ip = 62;
-                        continue _fun114206
+                        _fun114485_ip = 62;
+                        continue _fun114485
                     }
                 case 49:
                     var3 = _closure1_slot5;
                     var2 = true;
                     var2 = var3.bind(var0)(var2);
-                    _fun114206_ip = 73;
-                    continue _fun114206;
+                    _fun114485_ip = 73;
+                    continue _fun114485;
                 case 62:
                     var2 = _closure2_slot0;
                     var1 = true;
@@ -243,4 +243,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openAddAvatarModal = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [14587, 660, 795, 5679, 3956, 1234, 4518, 14588, 1307, 10204, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [14616, 660, 795, 5682, 3962, 1234, 4524, 14617, 1307, 10210, 2]);

@@ -16,26 +16,26 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var1;
     var1 = function() { // Environment: var0
         var0 = function(arg0, arg1) { // Original name: lerpVarWidthThumbnailScrollBounds, environment: var0
-            _fun70367: for (var _fun70367_ip = 0;;) switch (_fun70367_ip) {
+            _fun70413: for (var _fun70413_ip = 0;;) switch (_fun70413_ip) {
                 case 0:
                     var2 = arg0;
                     var1 = arg1;
                     var3 = var2.length;
                     var0 = 0;
                     if (!(var0 !== var3)) {
-                        _fun70367_ip = 156;
-                        continue _fun70367
+                        _fun70413_ip = 156;
+                        continue _fun70413
                     }
                 case 20:
                     if (!(!(var1 < var0))) {
-                        _fun70367_ip = 154;
-                        continue _fun70367
+                        _fun70413_ip = 154;
+                        continue _fun70413
                     }
                 case 27:
                     var3 = var2.length;
                     if (!(var1 >= var3)) {
-                        _fun70367_ip = 41;
-                        continue _fun70367
+                        _fun70413_ip = 41;
+                        continue _fun70413
                     }
                 case 36:
                     var1 = var2.length;
@@ -47,8 +47,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var1 - var6;
                     var1 = var2.length;
                     if (!(!(var6 >= var1))) {
-                        _fun70367_ip = 130;
-                        continue _fun70367
+                        _fun70413_ip = 130;
+                        continue _fun70413
                     }
                 case 73:
                     var1 = var2[var6];
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var7 = var1 - var5;
                     var1 = var3;
                     if (!(var6 < var7)) {
-                        _fun70367_ip = 116;
-                        continue _fun70367
+                        _fun70413_ip = 116;
+                        continue _fun70413
                     }
                 case 102:
                     var5 = var6 + var5;

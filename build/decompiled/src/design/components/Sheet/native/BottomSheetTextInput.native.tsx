@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = var0.TextInput;
         var0 = {};
         var7 = function(arg0) { // Original name: ref, environment: var7
-            _fun47958: for (var _fun47958_ip = 0;;) switch (_fun47958_ip) {
+            _fun48005: for (var _fun48005_ip = 0;;) switch (_fun48005_ip) {
                 case 0:
                     var2 = arg0;
                     var1 = _closure2_slot1;
@@ -90,21 +90,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = 'function';
                     var1 = typeof var1;
                     if (!(var3 !== var1)) {
-                        _fun47958_ip = 53;
-                        continue _fun47958
+                        _fun48005_ip = 53;
+                        continue _fun48005
                     }
                 case 31:
                     var3 = _closure2_slot0;
                     var1 = null;
                     if (!(var1 != var3)) {
-                        _fun47958_ip = 64;
-                        continue _fun47958
+                        _fun48005_ip = 64;
+                        continue _fun48005
                     }
                 case 41:
                     var1 = _closure2_slot0;
                     var1.current = var2;
-                    _fun47958_ip = 64;
-                    continue _fun47958;
+                    _fun48005_ip = 64;
+                    continue _fun48005;
                 case 53:
                     var1 = _closure2_slot0;
                     var0 = undefined;
@@ -124,4 +124,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.BottomSheetTextInput = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 5357, 5355, 4832, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 5361, 5359, 4838, 2]);

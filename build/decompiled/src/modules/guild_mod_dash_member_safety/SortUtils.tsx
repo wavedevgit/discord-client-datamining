@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_mod_dash_member_safety/SortUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0, arg1) { // Original name: getSortValueForMember, environment: var1
-        _fun40348: for (var _fun40348_ip = 0;;) switch (_fun40348_ip) {
+        _fun40399: for (var _fun40399_ip = 0;;) switch (_fun40399_ip) {
             case 0:
                 var1 = arg0;
                 var4 = arg1;
@@ -41,8 +41,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.OrderBy;
                 var5 = var5.ORDER_BY_GUILD_JOINED_AT_ASC;
                 if (!(var5 !== var4)) {
-                    _fun40348_ip = 230;
-                    continue _fun40348
+                    _fun40399_ip = 230;
+                    continue _fun40399
                 }
             case 78:
                 var7 = _closure1_slot0;
@@ -52,8 +52,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.OrderBy;
                 var5 = var5.ORDER_BY_GUILD_JOINED_AT_DESC;
                 if (!(var5 !== var4)) {
-                    _fun40348_ip = 225;
-                    continue _fun40348
+                    _fun40399_ip = 225;
+                    continue _fun40399
                 }
             case 111:
                 var7 = _closure1_slot0;
@@ -63,8 +63,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.OrderBy;
                 var5 = var5.ORDER_BY_USER_ID_ASC;
                 if (!(var5 !== var4)) {
-                    _fun40348_ip = 205;
-                    continue _fun40348
+                    _fun40399_ip = 205;
+                    continue _fun40399
                 }
             case 144:
                 var5 = _closure1_slot0;
@@ -74,8 +74,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.OrderBy;
                 var2 = var2.ORDER_BY_USER_ID_DESC;
                 if (!(var2 !== var4)) {
-                    _fun40348_ip = 182;
-                    continue _fun40348
+                    _fun40399_ip = 182;
+                    continue _fun40399
                 }
             case 177:
                 var2 = -var0;
@@ -102,4 +102,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getSortValueForMember = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4347, 4346, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4353, 4352, 2]);

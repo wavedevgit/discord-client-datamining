@@ -247,7 +247,7 @@ public final class PreparedLayoutTextViewManager extends BaseViewManager<Prepare
                 view.setTag(i10, accessibilityLinks);
                 ReactTextViewAccessibilityDelegate.Companion.resetDelegate(view, view.isFocusable(), view.getImportantForAccessibility());
             }
-            Unit unit = Unit.f33282a;
+            Unit unit = Unit.f33298a;
             ur.a.a(systraceSection, null);
         } finally {
         }

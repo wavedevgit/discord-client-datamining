@@ -107,20 +107,20 @@ public final class k extends FrameLayout implements SubtitleView.a {
     }
 
     private static String d(ke.b bVar) {
-        int i10 = bVar.f33088d;
+        int i10 = bVar.f33104d;
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
                     if (i10 != 4) {
                         return "unset";
                     }
-                    return w0.D("-0.05em -0.05em 0.15em %s", com.google.android.exoplayer2.ui.b.b(bVar.f33089e));
+                    return w0.D("-0.05em -0.05em 0.15em %s", com.google.android.exoplayer2.ui.b.b(bVar.f33105e));
                 }
-                return w0.D("0.06em 0.08em 0.15em %s", com.google.android.exoplayer2.ui.b.b(bVar.f33089e));
+                return w0.D("0.06em 0.08em 0.15em %s", com.google.android.exoplayer2.ui.b.b(bVar.f33105e));
             }
-            return w0.D("0.1em 0.12em 0.15em %s", com.google.android.exoplayer2.ui.b.b(bVar.f33089e));
+            return w0.D("0.1em 0.12em 0.15em %s", com.google.android.exoplayer2.ui.b.b(bVar.f33105e));
         }
-        return w0.D("1px 1px 0 %1$s, 1px -1px 0 %1$s, -1px 1px 0 %1$s, -1px -1px 0 %1$s", com.google.android.exoplayer2.ui.b.b(bVar.f33089e));
+        return w0.D("1px 1px 0 %1$s, 1px -1px 0 %1$s, -1px 1px 0 %1$s, -1px -1px 0 %1$s", com.google.android.exoplayer2.ui.b.b(bVar.f33105e));
     }
 
     private String e(int i10, float f10) {
@@ -200,7 +200,7 @@ public final class k extends FrameLayout implements SubtitleView.a {
         ArrayList arrayList2 = new ArrayList();
         for (int i11 = 0; i11 < list.size(); i11++) {
             zd.b bVar2 = (zd.b) list.get(i11);
-            if (bVar2.f55590o != null) {
+            if (bVar2.f55606o != null) {
                 arrayList.add(bVar2);
             } else {
                 arrayList2.add(bVar2);
@@ -229,7 +229,7 @@ public final class k extends FrameLayout implements SubtitleView.a {
     public k(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         this.f14315i = Collections.EMPTY_LIST;
-        this.f14316o = ke.b.f33084g;
+        this.f14316o = ke.b.f33100g;
         this.f14317p = 0.0533f;
         this.f14318q = 0;
         this.f14319r = 0.08f;

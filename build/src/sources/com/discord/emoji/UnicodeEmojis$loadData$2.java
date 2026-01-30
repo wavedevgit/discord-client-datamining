@@ -57,6 +57,6 @@ public final class UnicodeEmojis$loadData$2 extends kotlin.coroutines.jvm.intern
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super UnicodeEmojis.EmojiCategories> continuation) {
-        return ((UnicodeEmojis$loadData$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((UnicodeEmojis$loadData$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

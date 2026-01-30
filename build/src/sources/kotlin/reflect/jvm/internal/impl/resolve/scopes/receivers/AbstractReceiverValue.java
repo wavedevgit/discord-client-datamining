@@ -6,17 +6,17 @@ import org.jetbrains.annotations.NotNull;
 public abstract class AbstractReceiverValue implements ReceiverValue {
 
     /* renamed from: a  reason: collision with root package name */
-    protected final KotlinType f35520a;
+    protected final KotlinType f35536a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ReceiverValue f35521b;
+    private final ReceiverValue f35537b;
 
     public AbstractReceiverValue(@NotNull KotlinType kotlinType, ReceiverValue receiverValue) {
         if (kotlinType == null) {
             a(0);
         }
-        this.f35520a = kotlinType;
-        this.f35521b = receiverValue == null ? this : receiverValue;
+        this.f35536a = kotlinType;
+        this.f35537b = receiverValue == null ? this : receiverValue;
     }
 
     private static /* synthetic */ void a(int i10) {
@@ -47,7 +47,7 @@ public abstract class AbstractReceiverValue implements ReceiverValue {
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.receivers.ReceiverValue
     @NotNull
     public KotlinType getType() {
-        KotlinType kotlinType = this.f35520a;
+        KotlinType kotlinType = this.f35536a;
         if (kotlinType == null) {
             a(1);
         }

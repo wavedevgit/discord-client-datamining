@@ -342,19 +342,19 @@ public final class EmojiPickerScroller {
                 return scrollListenerDebounced$lambda$2$lambda$1;
             }
         });
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit scrollListenerDebounced$lambda$2$lambda$1(Function2 function2, EmojiPickerScroller emojiPickerScroller, int i10) {
         function2.invoke(emojiPickerScroller.recyclerView, Integer.valueOf(i10));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit scrollListenerDebounced$lambda$3(Function2 function2, EmojiPickerScroller emojiPickerScroller, boolean z10) {
         function2.invoke(emojiPickerScroller.computeScrollEvent(emojiPickerScroller.recyclerView), Boolean.valueOf(z10));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -362,13 +362,13 @@ public final class EmojiPickerScroller {
         Intrinsics.checkNotNullParameter(recyclerView, "<unused var>");
         emojiPickerScroller.onScrollVelocityChanged(f10);
         function0.invoke();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit scrollToItemAtIndex$lambda$8(EmojiPickerScroller emojiPickerScroller) {
         emojiPickerScroller.scrollVelocityTrackingPaused = false;
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -386,7 +386,7 @@ public final class EmojiPickerScroller {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit scrollViewLayoutChanged$lambda$5$lambda$4(Function2 function2, EmojiPickerScroller emojiPickerScroller, int i10) {
         function2.invoke(emojiPickerScroller.recyclerView, Integer.valueOf(i10));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     public final void bind() {
@@ -410,7 +410,7 @@ public final class EmojiPickerScroller {
                 this.scrollVelocityTrackingPaused = true;
                 this.emojiPickerViewAdapter.setScrollingFast(true);
                 this.emojiPickerLayoutManager.scrollToPositionWithOffset(itemPositionAtIndex, height);
-                Unit unit = Unit.f33282a;
+                Unit unit = Unit.f33298a;
                 ViewMeasureExtensionsKt.measureAndLayout(this.recyclerView);
             }
             this.scrollJumpingToPosition = true;

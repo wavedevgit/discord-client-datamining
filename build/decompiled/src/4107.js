@@ -1,153 +1,367 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = require;
-    var1 = exports;
-    var6 = dependencyMap;
-    var0 = 0;
-    var2 = var6[var0];
+    var2 = exports;
+    var0 = require;
+    var _closure1_slot0 = var0;
+    var0 = dependencyMap;
+    var _closure1_slot1 = var0;
+    var0 = global;
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var5)(var2, var0, var3);
     var0 = undefined;
-    var3 = var5.bind(var0)(var2);
-    var2 = 1;
-    var2 = var6[var2];
-    var2 = var5.bind(var0)(var2);
-    var _closure1_slot0 = var2;
-    var2 = global;
-    var7 = var2.Object;
-    var6 = var7.defineProperty;
-    var5 = {};
-    var2 = true;
-    var5.value = var2;
-    var2 = '__esModule';
-    var2 = var6.bind(var7)(var1, var2, var5);
-    var1.CompressedTypes = var0;
-    var2 = function() { // Original name: CompressedTypes, environment: var4
-        var3 = _closure1_slot0;
-        var2 = _closure1_slot1;
-        var0 = undefined;
-        var1 = this;
-        var1 = var3.bind(var0)(var1, var2);
+    var2.isAVIF = var0;
+    var2.isBMP = var0;
+    var2.isBPG = var0;
+    var2.isCR2 = var0;
+    var2.isEXR = var0;
+    var2.isGIF = var0;
+    var2.isHEIC = var0;
+    var2.isICO = var0;
+    var2.isJPEG = var0;
+    var2.isPBM = var0;
+    var2.isPGM = var0;
+    var2.isPNG = var0;
+    var2.isPPM = var0;
+    var2.isPSD = var0;
+    var2.isWEBP = var0;
+    var3 = function(arg0) { // Original name: isAVIF, environment: var1
+        _fun37734: for (var _fun37734_ip = 0;;) switch (_fun37734_ip) {
+            case 0:
+                var4 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var5 = 0;
+                var0 = var6[var5];
+                var3 = undefined;
+                var0 = var4.bind(var3)(var0);
+                var2 = var0.getFileChunk;
+                var0 = arg0;
+                var2 = var2.bind(var3)(var0);
+                var0 = 1;
+                var0 = var6[var0];
+                var0 = var4.bind(var3)(var0);
+                var6 = var0.FileTypes;
+                var4 = var6.checkByFileType;
+                var0 = 'avif';
+                var0 = var4.bind(var6)(var2, var0);
+                var4 = !var0;
+                var0 = !var4;
+                if (var4) {
+                    _fun37734_ip = 111;
+                    continue _fun37734
+                }
+            case 83:
+                var4 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var1 = var1[var5];
+                var1 = var4.bind(var3)(var1);
+                var1 = var1.isAvifStringIncluded;
+                var0 = var1.bind(var3)(var2);
+            case 111:
+                return var0;
+        }
+    };
+    var2.isAVIF = var3;
+    var3 = function(arg0) { // Original name: isBMP, environment: var1
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'bmp';
+        var0 = var1.bind(var2)(var3, var0);
         return var0;
     };
-    var _closure1_slot1 = var2;
-    var2 = var3.bind(var0)(var2);
-    var1.CompressedTypes = var2;
-    var1 = {
-        'extension': '7z',
-        'mimeType': 'application/x-7z-compressed',
-        'description': '7-Zip compressed file'
+    var2.isBMP = var3;
+    var3 = function(arg0) { // Original name: isBPG, environment: var1
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'bpg';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
     };
-    var4 = {};
-    var3 = [55, 122, 188, 175, 39, 28];
-    var4.sequence = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var1.signatures = var3;
-    var2._7Z = var1;
-    var1 = {
-        'extension': 'lzh',
-        'mimeType': 'application/x-lzh-compressed',
-        'description': 'Compressed file using Lempel-Ziv and Haruyasu (LZH) compression algorithm'
+    var2.isBPG = var3;
+    var3 = function(arg0) { // Original name: isCR2, environment: var1
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'cr2';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
     };
-    var4 = {};
-    var3 = [45, 104, 108, 48, 45];
-    var4.sequence = var3;
-    var3 = 'Lempel Ziv Huffman archive file Method 0 (No compression)';
-    var4.description = var3;
-    var3 = ['lha'];
-    var4.compatibleExtensions = var3;
-    var3 = new Array(2);
-    var3[0] = var4;
-    var4 = {};
-    var5 = [45, 104, 108, 53, 45];
-    var4.sequence = var5;
-    var5 = 'Lempel Ziv Huffman archive file Method 5 (8KiB sliding window)';
-    var4.description = var5;
-    var5 = ['lha'];
-    var4.compatibleExtensions = var5;
-    var3[1] = var4;
-    var1.signatures = var3;
-    var2.LZH = var1;
-    var1 = {
-        'extension': 'rar',
-        'mimeType': 'application/x-rar-compressed',
-        'description': 'Roshal ARchive compressed archive file'
+    var2.isCR2 = var3;
+    var3 = function(arg0) { // Original name: isEXR, environment: var1
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'exr';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
     };
-    var4 = {};
-    var3 = [82, 97, 114, 33, 26, 7, 0];
-    var4.sequence = var3;
-    var3 = 'Compressed archive v5.00 onwards';
-    var4.description = var3;
-    var3 = new Array(2);
-    var3[0] = var4;
-    var4 = {};
-    var5 = [82, 97, 114, 33, 26, 7, 1, 0];
-    var4.sequence = var5;
-    var5 = 'Compressed archive v1.50 onwards';
-    var4.description = var5;
-    var3[1] = var4;
-    var1.signatures = var3;
-    var2.RAR = var1;
-    var1 = {
-        'extension': 'zip',
-        'mimeType': 'application/zip',
-        'description': 'Compressed archive file'
+    var2.isEXR = var3;
+    var3 = function(arg0) { // Original name: isGIF, environment: var1
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'gif';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
     };
-    var4 = {
-        'sequence': null,
-        'offset': 29152,
-        'description': 'WinZip compressed archive'
+    var2.isGIF = var3;
+    var3 = function(arg0) { // Original name: isHEIC, environment: var1
+        _fun37740: for (var _fun37740_ip = 0;;) switch (_fun37740_ip) {
+            case 0:
+                var4 = _closure1_slot0;
+                var6 = _closure1_slot1;
+                var5 = 0;
+                var0 = var6[var5];
+                var3 = undefined;
+                var0 = var4.bind(var3)(var0);
+                var2 = var0.getFileChunk;
+                var0 = arg0;
+                var2 = var2.bind(var3)(var0);
+                var0 = 1;
+                var0 = var6[var0];
+                var0 = var4.bind(var3)(var0);
+                var6 = var0.FileTypes;
+                var4 = var6.checkByFileType;
+                var0 = 'avif';
+                var0 = var4.bind(var6)(var2, var0);
+                var4 = !var0;
+                var0 = !var4;
+                if (var4) {
+                    _fun37740_ip = 111;
+                    continue _fun37740
+                }
+            case 83:
+                var4 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var1 = var1[var5];
+                var1 = var4.bind(var3)(var1);
+                var1 = var1.isHeicSignatureIncluded;
+                var0 = var1.bind(var3)(var2);
+            case 111:
+                return var0;
+        }
     };
-    var3 = [87, 105, 110, 90, 105, 112];
-    var4.sequence = var3;
-    var3 = new Array(7);
-    var3[0] = var4;
-    var4 = {};
-    var5 = [80, 75, 3, 4, 20, 0, 1, 0, 99, 0, 0, 0, 0, 0];
-    var4.sequence = var5;
-    var5 = 'ZLock Pro encrypted ZIP';
-    var4.description = var5;
-    var3[1] = var4;
-    var4 = {
-        'sequence': null,
-        'offset': 30,
-        'description': 'PKLITE compressed ZIP archive (see also PKZIP)'
+    var2.isHEIC = var3;
+    var3 = function(arg0) { // Original name: isICO, environment: var1
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'ico';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
     };
-    var5 = [80, 75, 76, 73, 84, 69];
-    var4.sequence = var5;
-    var3[2] = var4;
-    var4 = {
-        'sequence': null,
-        'offset': 526,
-        'description': 'PKSFX self-extracting executable compressed file (see also PKZIP)'
+    var2.isICO = var3;
+    var3 = function(arg0) { // Original name: isJPEG, environment: var1
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'jpeg';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
     };
-    var5 = [80, 75, 83, 112, 88];
-    var4.sequence = var5;
-    var3[3] = var4;
-    var4 = {};
-    var5 = [80, 75, 3, 4];
-    var4.sequence = var5;
-    var5 = 'PKZIP archive file - zip file format and multiple formats based on it';
-    var4.description = var5;
-    var5 = ['aar', 'apk', 'docx', 'epub', 'ipa', 'jar', 'kmz', 'maff', 'msix', 'odp', 'ods', 'odt', 'pk3', 'pk4', 'pptx', 'usdz', 'vsdx', 'xlsx', 'xpi'];
-    var4.compatibleExtensions = var5;
-    var3[4] = var4;
-    var4 = {};
-    var5 = [80, 75, 5, 6];
-    var4.sequence = var5;
-    var5 = 'PKZIP empty archive file - zip file format and multiple formats based on it';
-    var4.description = var5;
-    var5 = ['aar', 'apk', 'docx', 'epub', 'ipa', 'jar', 'kmz', 'maff', 'msix', 'odp', 'ods', 'odt', 'pk3', 'pk4', 'pptx', 'usdz', 'vsdx', 'xlsx', 'xpi'];
-    var4.compatibleExtensions = var5;
-    var3[5] = var4;
-    var4 = {};
-    var5 = [80, 75, 7, 8];
-    var4.sequence = var5;
-    var5 = 'PKZIP multivolume archive file - zip file format and multiple formats based on it';
-    var4.description = var5;
-    var5 = ['aar', 'apk', 'docx', 'epub', 'ipa', 'jar', 'kmz', 'maff', 'msix', 'odp', 'ods', 'odt', 'pk3', 'pk4', 'pptx', 'usdz', 'vsdx', 'xlsx', 'xpi'];
-    var4.compatibleExtensions = var5;
-    var3[6] = var4;
-    var1.signatures = var3;
-    var2.ZIP = var1;
+    var2.isJPEG = var3;
+    var3 = function(arg0) { // Original name: isPBM, environment: var1
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'pbm';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
+    };
+    var2.isPBM = var3;
+    var3 = function(arg0) { // Original name: isPGM, environment: var1
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'pgm';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
+    };
+    var2.isPGM = var3;
+    var3 = function(arg0) { // Original name: isPNG, environment: var1
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'png';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
+    };
+    var2.isPNG = var3;
+    var3 = function(arg0) { // Original name: isPPM, environment: var1
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'ppm';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
+    };
+    var2.isPPM = var3;
+    var3 = function(arg0) { // Original name: isPSD, environment: var1
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'psd';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
+    };
+    var2.isPSD = var3;
+    var1 = function(arg0) { // Original name: isWEBP, environment: var1
+        var2 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 0;
+        var0 = var4[var0];
+        var1 = undefined;
+        var0 = var2.bind(var1)(var0);
+        var3 = var0.getFileChunk;
+        var0 = arg0;
+        var3 = var3.bind(var1)(var0);
+        var0 = 1;
+        var0 = var4[var0];
+        var0 = var2.bind(var1)(var0);
+        var2 = var0.FileTypes;
+        var1 = var2.checkByFileType;
+        var0 = 'webp';
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
+    };
+    var2.isWEBP = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7, 6]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4101, 4102]);

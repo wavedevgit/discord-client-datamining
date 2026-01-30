@@ -62,7 +62,7 @@ public final class SpotlightView extends View {
             });
             spotlightView.f(findViewById.getLeft(), findViewById.getTop(), findViewById.getRight(), findViewById.getBottom());
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */

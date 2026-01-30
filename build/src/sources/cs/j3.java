@@ -626,18 +626,18 @@ public abstract class j3 {
     public static final KVisibility r(DescriptorVisibility descriptorVisibility) {
         Intrinsics.checkNotNullParameter(descriptorVisibility, "<this>");
         if (Intrinsics.areEqual(descriptorVisibility, DescriptorVisibilities.PUBLIC)) {
-            return KVisibility.f33391d;
+            return KVisibility.f33407d;
         }
         if (Intrinsics.areEqual(descriptorVisibility, DescriptorVisibilities.PROTECTED)) {
-            return KVisibility.f33392e;
+            return KVisibility.f33408e;
         }
         if (Intrinsics.areEqual(descriptorVisibility, DescriptorVisibilities.INTERNAL)) {
-            return KVisibility.f33393i;
+            return KVisibility.f33409i;
         }
         if (!Intrinsics.areEqual(descriptorVisibility, DescriptorVisibilities.PRIVATE) && !Intrinsics.areEqual(descriptorVisibility, DescriptorVisibilities.PRIVATE_TO_THIS)) {
             return null;
         }
-        return KVisibility.f33394o;
+        return KVisibility.f33410o;
     }
 
     private static final Object s(ConstantValue constantValue, ClassLoader classLoader) {

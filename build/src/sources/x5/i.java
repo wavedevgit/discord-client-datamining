@@ -9,7 +9,7 @@ import s5.o;
 public abstract class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final PointF f53242a = new PointF();
+    private static final PointF f53258a = new PointF();
 
     public static PointF a(PointF pointF, PointF pointF2) {
         return new PointF(pointF.x + pointF2.x, pointF.y + pointF2.y);
@@ -59,14 +59,14 @@ public abstract class i {
         path.reset();
         PointF b10 = oVar.b();
         path.moveTo(b10.x, b10.y);
-        f53242a.set(b10.x, b10.y);
+        f53258a.set(b10.x, b10.y);
         int i10 = 0;
         while (i10 < oVar.a().size()) {
             q5.a aVar = (q5.a) oVar.a().get(i10);
             PointF a10 = aVar.a();
             PointF b11 = aVar.b();
             PointF c10 = aVar.c();
-            PointF pointF = f53242a;
+            PointF pointF = f53258a;
             if (a10.equals(pointF) && b11.equals(c10)) {
                 path.lineTo(c10.x, c10.y);
                 path2 = path;

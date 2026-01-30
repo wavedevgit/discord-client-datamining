@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/connections/two_way_link/playstation/PlayStationLinkDiscordConsent.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: PlayStationLinkDiscordConsent, environment: var1
-        _fun51368: for (var _fun51368_ip = 0;;) switch (_fun51368_ip) {
+        _fun51414: for (var _fun51414_ip = 0;;) switch (_fun51414_ip) {
             case 0:
                 var1 = arg0;
                 var10 = var1.callbackCode;
@@ -95,8 +95,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot4;
                 var0 = var0.PLAYSTATION_STAGING;
                 if (!(var11 !== var0)) {
-                    _fun51368_ip = 162;
-                    continue _fun51368
+                    _fun51414_ip = 162;
+                    continue _fun51414
                 }
             case 128:
                 var1 = _closure1_slot0;
@@ -106,8 +106,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.bind(var3)(var0);
                 var0 = var0.ConsoleOAuthApplications;
                 var8 = var0.PLAYSTATION_APPLICATION_ID;
-                _fun51368_ip = 194;
-                continue _fun51368;
+                _fun51414_ip = 194;
+                continue _fun51414;
             case 162:
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -120,8 +120,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot4;
                 var0 = var0.PLAYSTATION_STAGING;
                 if (!(var11 !== var0)) {
-                    _fun51368_ip = 242;
-                    continue _fun51368
+                    _fun51414_ip = 242;
+                    continue _fun51414
                 }
             case 208:
                 var1 = _closure1_slot0;
@@ -131,8 +131,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.bind(var3)(var0);
                 var0 = var0.ConsoleAuthorizationRedirectURIs;
                 var4 = var0.PLAYSTATION;
-                _fun51368_ip = 274;
-                continue _fun51368;
+                _fun51414_ip = 274;
+                continue _fun51414;
             case 242:
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -165,4 +165,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.PlayStationLinkDiscordConsent = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5816, 660, 5296, 33, 1469, 5731, 5822, 5297, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5819, 660, 5300, 33, 1469, 5734, 5825, 5301, 2]);

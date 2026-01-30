@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.ClipsExperiment = var4;
     var2.ClipsPremiumEarlyAccessExperiment = var3;
     var3 = function() { // Original name: areClipsAvailable, environment: var1
-        _fun30801: for (var _fun30801_ip = 0;;) switch (_fun30801_ip) {
+        _fun30802: for (var _fun30802_ip = 0;;) switch (_fun30802_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -158,8 +158,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot2;
                 var0 = var1.bind(var5)(var0);
                 if (var0) {
-                    _fun30801_ip = 41;
-                    continue _fun30801
+                    _fun30802_ip = 41;
+                    continue _fun30802
                 }
             case 37:
                 var0 = false;
@@ -196,15 +196,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4.bind(var5)(var3, var1);
                 var1 = var1.enableViewerClipping;
                 if (var0) {
-                    _fun30801_ip = 176;
-                    continue _fun30801
+                    _fun30802_ip = 176;
+                    continue _fun30802
                 }
             case 173:
                 var0 = var2;
             case 176:
                 if (var0) {
-                    _fun30801_ip = 182;
-                    continue _fun30801
+                    _fun30802_ip = 182;
+                    continue _fun30802
                 }
             case 179:
                 var0 = var1;
@@ -214,7 +214,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.areClipsAvailable = var3;
     var3 = function() { // Original name: useIsClipsAvailable, environment: var1
-        _fun30802: for (var _fun30802_ip = 0;;) switch (_fun30802_ip) {
+        _fun30803: for (var _fun30803_ip = 0;;) switch (_fun30803_ip) {
             case 0:
                 var6 = _closure1_slot0;
                 var8 = _closure1_slot1;
@@ -253,22 +253,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var5.bind(var6)(var4, var2);
                 var2 = var2.enableViewerClipping;
                 if (var0) {
-                    _fun30802_ip = 161;
-                    continue _fun30802
+                    _fun30803_ip = 161;
+                    continue _fun30803
                 }
             case 158:
                 var0 = var3;
             case 161:
                 if (var0) {
-                    _fun30802_ip = 167;
-                    continue _fun30802
+                    _fun30803_ip = 167;
+                    continue _fun30803
                 }
             case 164:
                 var0 = var2;
             case 167:
                 if (!var0) {
-                    _fun30802_ip = 173;
-                    continue _fun30802
+                    _fun30803_ip = 173;
+                    continue _fun30803
                 }
             case 170:
                 var0 = var1;
@@ -277,48 +277,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var2.useIsClipsAvailable = var3;
-    var3 = function(arg0) { // Environment: var1
-        _fun30803: for (var _fun30803_ip = 0;;) switch (_fun30803_ip) {
-            case 0:
-                var0 = arg0;
-                var5 = var0.autoTrackExposure;
-                var2 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var0 = 3;
-                var0 = var3[var0];
-                var3 = undefined;
-                var2 = var2.bind(var3)(var0);
-                var0 = _closure1_slot2;
-                var0 = var2.bind(var3)(var0);
-                var4 = _closure1_slot5;
-                var3 = var4.useExperiment;
-                var2 = {};
-                var1 = 'useShouldSeeClipsPremiumEarlyAccessGoLiveRoadblock';
-                var2.location = var1;
-                var1 = {};
-                if (!var5) {
-                    _fun30803_ip = 73;
-                    continue _fun30803
-                }
-            case 70:
-                var5 = var0;
-            case 73:
-                var1.autoTrackExposure = var5;
-                var1 = var3.bind(var4)(var2, var1);
-                var1 = var1.enablePremiumEarlyAccessGoLiveRoadblock;
-                var2 = !var0;
-                var0 = !var2;
-                if (var2) {
-                    _fun30803_ip = 102;
-                    continue _fun30803
-                }
-            case 99:
-                var0 = var1;
-            case 102:
-                return var0;
-        }
-    };
-    var2.useShouldSeeClipsPremiumEarlyAccessGoLiveRoadblock = var3;
     var3 = function(arg0) { // Environment: var1
         _fun30804: for (var _fun30804_ip = 0;;) switch (_fun30804_ip) {
             case 0:
@@ -347,12 +305,54 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 73:
                 var1.autoTrackExposure = var5;
                 var1 = var3.bind(var4)(var2, var1);
-                var1 = var1.enablePremiumEarlyAccessAnnouncementCoachmark;
+                var1 = var1.enablePremiumEarlyAccessGoLiveRoadblock;
                 var2 = !var0;
                 var0 = !var2;
                 if (var2) {
                     _fun30804_ip = 102;
                     continue _fun30804
+                }
+            case 99:
+                var0 = var1;
+            case 102:
+                return var0;
+        }
+    };
+    var2.useShouldSeeClipsPremiumEarlyAccessGoLiveRoadblock = var3;
+    var3 = function(arg0) { // Environment: var1
+        _fun30805: for (var _fun30805_ip = 0;;) switch (_fun30805_ip) {
+            case 0:
+                var0 = arg0;
+                var5 = var0.autoTrackExposure;
+                var2 = _closure1_slot0;
+                var3 = _closure1_slot1;
+                var0 = 3;
+                var0 = var3[var0];
+                var3 = undefined;
+                var2 = var2.bind(var3)(var0);
+                var0 = _closure1_slot2;
+                var0 = var2.bind(var3)(var0);
+                var4 = _closure1_slot5;
+                var3 = var4.useExperiment;
+                var2 = {};
+                var1 = 'useShouldSeeClipsPremiumEarlyAccessGoLiveRoadblock';
+                var2.location = var1;
+                var1 = {};
+                if (!var5) {
+                    _fun30805_ip = 73;
+                    continue _fun30805
+                }
+            case 70:
+                var5 = var0;
+            case 73:
+                var1.autoTrackExposure = var5;
+                var1 = var3.bind(var4)(var2, var1);
+                var1 = var1.enablePremiumEarlyAccessAnnouncementCoachmark;
+                var2 = !var0;
+                var0 = !var2;
+                if (var2) {
+                    _fun30805_ip = 102;
+                    continue _fun30805
                 }
             case 99:
                 var0 = var1;

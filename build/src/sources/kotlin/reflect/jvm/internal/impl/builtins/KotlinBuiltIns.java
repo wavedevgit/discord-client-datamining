@@ -51,22 +51,22 @@ public abstract class KotlinBuiltIns {
     public static final Name BUILTINS_MODULE_NAME = Name.special("<built-ins module>");
 
     /* renamed from: a  reason: collision with root package name */
-    private ModuleDescriptorImpl f33410a;
+    private ModuleDescriptorImpl f33426a;
 
     /* renamed from: b  reason: collision with root package name */
-    private NotNullLazyValue f33411b;
+    private NotNullLazyValue f33427b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final NotNullLazyValue f33412c;
+    private final NotNullLazyValue f33428c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final NotNullLazyValue f33413d;
+    private final NotNullLazyValue f33429d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final MemoizedFunctionToNotNull f33414e;
+    private final MemoizedFunctionToNotNull f33430e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final StorageManager f33415f;
+    private final StorageManager f33431f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -127,20 +127,20 @@ public abstract class KotlinBuiltIns {
     class d implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ ModuleDescriptorImpl f33419d;
+        final /* synthetic */ ModuleDescriptorImpl f33435d;
 
         d(ModuleDescriptorImpl moduleDescriptorImpl) {
-            this.f33419d = moduleDescriptorImpl;
+            this.f33435d = moduleDescriptorImpl;
         }
 
         @Override // kotlin.jvm.functions.Function0
         /* renamed from: a */
         public Void invoke() {
-            if (KotlinBuiltIns.this.f33410a == null) {
-                KotlinBuiltIns.this.f33410a = this.f33419d;
+            if (KotlinBuiltIns.this.f33426a == null) {
+                KotlinBuiltIns.this.f33426a = this.f33435d;
                 return null;
             }
-            throw new AssertionError("Built-ins module is already set: " + KotlinBuiltIns.this.f33410a + " (attempting to reset to " + this.f33419d + ")");
+            throw new AssertionError("Built-ins module is already set: " + KotlinBuiltIns.this.f33426a + " (attempting to reset to " + this.f33435d + ")");
         }
     }
 
@@ -149,13 +149,13 @@ public abstract class KotlinBuiltIns {
     public static class e {
 
         /* renamed from: a  reason: collision with root package name */
-        public final Map f33421a;
+        public final Map f33437a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final Map f33422b;
+        public final Map f33438b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final Map f33423c;
+        public final Map f33439c;
 
         /* synthetic */ e(Map map, Map map2, Map map3, a aVar) {
             this(map, map2, map3);
@@ -185,9 +185,9 @@ public abstract class KotlinBuiltIns {
             if (map3 == null) {
                 a(2);
             }
-            this.f33421a = map;
-            this.f33422b = map2;
-            this.f33423c = map3;
+            this.f33437a = map;
+            this.f33438b = map2;
+            this.f33439c = map3;
         }
     }
 
@@ -196,10 +196,10 @@ public abstract class KotlinBuiltIns {
         if (storageManager == null) {
             a(0);
         }
-        this.f33415f = storageManager;
-        this.f33413d = storageManager.createLazyValue(new a());
-        this.f33412c = storageManager.createLazyValue(new b());
-        this.f33414e = storageManager.createMemoizedFunction(new c());
+        this.f33431f = storageManager;
+        this.f33429d = storageManager.createLazyValue(new a());
+        this.f33428c = storageManager.createLazyValue(new b());
+        this.f33430e = storageManager.createMemoizedFunction(new c());
     }
 
     /* JADX WARN: Removed duplicated region for block: B:131:0x023c  */
@@ -369,7 +369,7 @@ public abstract class KotlinBuiltIns {
         if (str == null) {
             a(14);
         }
-        ClassDescriptor classDescriptor = (ClassDescriptor) this.f33414e.invoke(Name.identifier(str));
+        ClassDescriptor classDescriptor = (ClassDescriptor) this.f33430e.invoke(Name.identifier(str));
         if (classDescriptor == null) {
             a(15);
         }
@@ -690,10 +690,10 @@ public abstract class KotlinBuiltIns {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public void f(boolean z10) {
-        ModuleDescriptorImpl moduleDescriptorImpl = new ModuleDescriptorImpl(BUILTINS_MODULE_NAME, this.f33415f, this, null);
-        this.f33410a = moduleDescriptorImpl;
-        moduleDescriptorImpl.initialize(BuiltInsLoader.Companion.getInstance().createPackageFragmentProvider(this.f33415f, this.f33410a, getClassDescriptorFactories(), k(), g(), z10));
-        ModuleDescriptorImpl moduleDescriptorImpl2 = this.f33410a;
+        ModuleDescriptorImpl moduleDescriptorImpl = new ModuleDescriptorImpl(BUILTINS_MODULE_NAME, this.f33431f, this, null);
+        this.f33426a = moduleDescriptorImpl;
+        moduleDescriptorImpl.initialize(BuiltInsLoader.Companion.getInstance().createPackageFragmentProvider(this.f33431f, this.f33426a, getClassDescriptorFactories(), k(), g(), z10));
+        ModuleDescriptorImpl moduleDescriptorImpl2 = this.f33426a;
         moduleDescriptorImpl2.setDependencies(moduleDescriptorImpl2);
     }
 
@@ -748,7 +748,7 @@ public abstract class KotlinBuiltIns {
             return kotlinType.getArguments().get(0).getType();
         }
         KotlinType makeNotNullable = TypeUtils.makeNotNullable(kotlinType);
-        KotlinType kotlinType2 = (KotlinType) ((e) this.f33412c.invoke()).f33423c.get(makeNotNullable);
+        KotlinType kotlinType2 = (KotlinType) ((e) this.f33428c.invoke()).f33439c.get(makeNotNullable);
         if (kotlinType2 != null) {
             return kotlinType2;
         }
@@ -800,10 +800,10 @@ public abstract class KotlinBuiltIns {
 
     @NotNull
     public ModuleDescriptorImpl getBuiltInsModule() {
-        if (this.f33410a == null) {
-            this.f33410a = (ModuleDescriptorImpl) this.f33411b.invoke();
+        if (this.f33426a == null) {
+            this.f33426a = (ModuleDescriptorImpl) this.f33427b.invoke();
         }
-        ModuleDescriptorImpl moduleDescriptorImpl = this.f33410a;
+        ModuleDescriptorImpl moduleDescriptorImpl = this.f33426a;
         if (moduleDescriptorImpl == null) {
             a(7);
         }
@@ -839,7 +839,7 @@ public abstract class KotlinBuiltIns {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public Iterable getClassDescriptorFactories() {
-        List singletonList = Collections.singletonList(new BuiltInFictitiousFunctionClassFactory(this.f33415f, getBuiltInsModule()));
+        List singletonList = Collections.singletonList(new BuiltInFictitiousFunctionClassFactory(this.f33431f, getBuiltInsModule()));
         if (singletonList == null) {
             a(5);
         }
@@ -970,7 +970,7 @@ public abstract class KotlinBuiltIns {
         if (primitiveType == null) {
             a(73);
         }
-        SimpleType simpleType = (SimpleType) ((e) this.f33412c.invoke()).f33421a.get(primitiveType);
+        SimpleType simpleType = (SimpleType) ((e) this.f33428c.invoke()).f33437a.get(primitiveType);
         if (simpleType == null) {
             a(74);
         }
@@ -1045,7 +1045,7 @@ public abstract class KotlinBuiltIns {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public StorageManager m() {
-        StorageManager storageManager = this.f33415f;
+        StorageManager storageManager = this.f33431f;
         if (storageManager == null) {
             a(6);
         }
@@ -1056,7 +1056,7 @@ public abstract class KotlinBuiltIns {
         if (moduleDescriptorImpl == null) {
             a(1);
         }
-        this.f33415f.compute(new d(moduleDescriptorImpl));
+        this.f33431f.compute(new d(moduleDescriptorImpl));
     }
 
     public static boolean isArrayOrPrimitiveArray(@NotNull KotlinType kotlinType) {

@@ -5,30 +5,30 @@ import java.util.Objects;
 public final class i implements e {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final String[] f31579c = {"+HH", "+HHmm", "+HH:mm", "+HHMM", "+HH:MM", "+HHMMss", "+HH:MM:ss", "+HHMMSS", "+HH:MM:SS"};
+    public static final String[] f31595c = {"+HH", "+HHmm", "+HH:mm", "+HHMM", "+HH:MM", "+HHMMss", "+HH:MM:ss", "+HHMMSS", "+HH:MM:SS"};
 
     /* renamed from: d  reason: collision with root package name */
-    public static final i f31580d = new i("+HH:MM:ss", "Z");
+    public static final i f31596d = new i("+HH:MM:ss", "Z");
 
     /* renamed from: e  reason: collision with root package name */
-    public static final i f31581e = new i("+HH:MM:ss", "0");
+    public static final i f31597e = new i("+HH:MM:ss", "0");
 
     /* renamed from: a  reason: collision with root package name */
-    public final String f31582a;
+    public final String f31598a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f31583b;
+    public final int f31599b;
 
     public i(String str, String str2) {
         Objects.requireNonNull(str, "pattern");
         Objects.requireNonNull(str2, "noOffsetText");
         int i10 = 0;
         while (true) {
-            String[] strArr = f31579c;
+            String[] strArr = f31595c;
             if (i10 < strArr.length) {
                 if (strArr[i10].equals(str)) {
-                    this.f31583b = i10;
-                    this.f31582a = str2;
+                    this.f31599b = i10;
+                    this.f31598a = str2;
                     return;
                 }
                 i10++;
@@ -45,7 +45,7 @@ public final class i implements e {
             return false;
         }
         int intExact = Math.toIntExact(a10.longValue());
-        String str = this.f31582a;
+        String str = this.f31598a;
         if (intExact == 0) {
             sb2.append(str);
             return true;
@@ -57,7 +57,7 @@ public final class i implements e {
         sb2.append(intExact < 0 ? "-" : "+");
         sb2.append((char) ((abs / 10) + 48));
         sb2.append((char) ((abs % 10) + 48));
-        int i10 = this.f31583b;
+        int i10 = this.f31599b;
         if (i10 >= 3 || (i10 >= 1 && abs2 > 0)) {
             int i11 = i10 % 2;
             sb2.append(i11 == 0 ? ":" : "");
@@ -81,7 +81,7 @@ public final class i implements e {
     @Override // j$.time.format.e
     public final int t(o oVar, CharSequence charSequence, int i10) {
         int length = charSequence.length();
-        int length2 = this.f31582a.length();
+        int length2 = this.f31598a.length();
         if (length2 == 0) {
             if (i10 == length) {
                 return oVar.f(j$.time.temporal.a.OFFSET_SECONDS, 0L, i10, i10);
@@ -89,7 +89,7 @@ public final class i implements e {
         } else if (i10 == length) {
             return ~i10;
         } else {
-            if (oVar.g(charSequence, i10, this.f31582a, 0, length2)) {
+            if (oVar.g(charSequence, i10, this.f31598a, 0, length2)) {
                 return oVar.f(j$.time.temporal.a.OFFSET_SECONDS, 0L, i10, i10 + length2);
             }
         }
@@ -99,7 +99,7 @@ public final class i implements e {
             int[] iArr = new int[4];
             iArr[0] = i10 + 1;
             if (!a(iArr, 1, charSequence, true)) {
-                if (!a(iArr, 2, charSequence, this.f31583b >= 3) && !a(iArr, 3, charSequence, false)) {
+                if (!a(iArr, 2, charSequence, this.f31599b >= 3) && !a(iArr, 3, charSequence, false)) {
                     return oVar.f(j$.time.temporal.a.OFFSET_SECONDS, ((iArr[2] * 60) + (iArr[1] * 3600) + iArr[3]) * i11, i10, iArr[0]);
                 }
             }
@@ -108,7 +108,7 @@ public final class i implements e {
     }
 
     public final boolean a(int[] iArr, int i10, CharSequence charSequence, boolean z10) {
-        int i11 = this.f31583b;
+        int i11 = this.f31599b;
         if ((i11 + 3) / 2 < i10) {
             return false;
         }
@@ -138,7 +138,7 @@ public final class i implements e {
     }
 
     public final String toString() {
-        String replace = this.f31582a.replace("'", "''");
-        return "Offset(" + f31579c[this.f31583b] + ",'" + replace + "')";
+        String replace = this.f31598a.replace("'", "''");
+        return "Offset(" + f31595c[this.f31599b] + ",'" + replace + "')";
     }
 }

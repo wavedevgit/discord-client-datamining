@@ -10,7 +10,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var3.bind(var4)(var1, var0, var2);
     var0 = function(arg0) { // Original name: createIntegration, environment: var0
-        _fun12946: for (var _fun12946_ip = 0;;) switch (_fun12946_ip) {
+        _fun12947: for (var _fun12947_ip = 0;;) switch (_fun12947_ip) {
             case 0:
                 var4 = undefined;
                 var3 = undefined;
@@ -20,22 +20,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = arguments.length;
                 var2 = 1;
                 if (!(var1 > var2)) {
-                    _fun12946_ip = 31;
-                    continue _fun12946
+                    _fun12947_ip = 31;
+                    continue _fun12947
                 }
             case 23:
                 var1 = arguments[var2];
                 if (!(var4 === var1)) {
-                    _fun12946_ip = 40;
-                    continue _fun12946
+                    _fun12947_ip = 40;
+                    continue _fun12947
                 }
             case 31:
                 var1 = function() { // Environment: var1
                     var0 = undefined;
                     return var0;
                 };
-                _fun12946_ip = 44;
-                continue _fun12946;
+                _fun12947_ip = 44;
+                continue _fun12947;
             case 40:
                 var1 = arguments[var2];
             case 44:

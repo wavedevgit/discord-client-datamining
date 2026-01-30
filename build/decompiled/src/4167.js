@@ -1,244 +1,585 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var0 = require;
-    var _closure1_slot0 = var0;
-    var0 = metroImportDefault;
-    var _closure1_slot1 = var0;
-    var0 = dependencyMap;
-    var _closure1_slot2 = var0;
-    var0 = function(arg0) { // Original name: getOrientationDescription, environment: var4
-        _fun38243: for (var _fun38243_ip = 0;;) switch (_fun38243_ip) {
+    var5 = metroImportDefault;
+    var2 = exports;
+    var1 = dependencyMap;
+    var _closure1_slot0 = var5;
+    var _closure1_slot1 = var1;
+    var0 = function(arg0, arg1) { // Original name: fraction, environment: var3
+        _fun38219: for (var _fun38219_ip = 0;;) switch (_fun38219_ip) {
             case 0:
-                var7 = arg0;
+                var4 = arg1;
+                var0 = _closure1_slot4;
+                var3 = undefined;
+                var1 = var0.bind(var3)(var4);
+                var0 = var4;
+                if (!var1) {
+                    _fun38219_ip = 45;
+                    continue _fun38219
+                }
+            case 23:
+                var2 = var4.split;
+                var1 = '/';
+                var2 = var2.bind(var4)(var1);
+                var1 = arg0;
+                var0 = var1.bind(var3)(var2);
+            case 45:
+                return var0;
+        }
+    };
+    var _closure1_slot3 = var0;
+    var0 = function(arg0) { // Original name: isFraction, environment: var3
+        var2 = /^-?\d+\\/ - ? \d + $ / ;
+        var1 = var2.test;
+        var0 = arg0;
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var _closure1_slot4 = var0;
+    var4 = function(arg0) { // Original name: calculateGPSValue, environment: var3
+        _fun38221: for (var _fun38221_ip = 0;;) switch (_fun38221_ip) {
+            case 0:
+                var0 = arg0;
+                var2 = var0.split;
+                var1 = ',';
+                var3 = var2.bind(var0)(var1);
+                var2 = _closure1_slot2;
+                var4 = undefined;
+                var1 = 2;
+                var1 = var2.bind(var4)(var3, var1);
+                var2 = 0;
+                var3 = var1[var2];
+                var7 = 1;
+                var6 = var1[var7];
+                if (!(var4 !== var3)) {
+                    _fun38221_ip = 160;
+                    continue _fun38221
+                }
+            case 52:
+                if (!(var4 !== var6)) {
+                    _fun38221_ip = 160;
+                    continue _fun38221
+                }
+            case 56:
+                var1 = global;
+                var2 = var1.parseFloat;
+                var3 = var2.bind(var4)(var3);
+                var2 = var1.parseFloat;
+                var4 = var2.bind(var4)(var6);
+                var5 = var6.charAt;
+                var2 = var6.length;
+                var2 = var2 - var7;
+                var2 = var5.bind(var6)(var2);
+                var6 = var1.Number;
+                var5 = var6.isNaN;
+                var5 = var5.bind(var6)(var3);
+                if (var5) {
+                    _fun38221_ip = 160;
+                    continue _fun38221
+                }
+            case 120:
+                var5 = var1.Number;
+                var1 = var5.isNaN;
+                var1 = var1.bind(var5)(var4);
+                if (var1) {
+                    _fun38221_ip = 160;
+                    continue _fun38221
+                }
+            case 140:
+                var1 = 60;
+                var1 = var4 / var1;
+                var1 = var3 + var1;
+                var1 = '' + var1;
+                var1 = var1 + var2;
+                return var1;
+            case 160:
+                return var0;
+        }
+    };
+    var0 = global;
+    var8 = var0.Object;
+    var7 = var8.defineProperty;
+    var6 = {};
+    var0 = true;
+    var6.value = var0;
+    var0 = '__esModule';
+    var0 = var7.bind(var8)(var2, var0, var6);
+    var0 = 0;
+    var1 = var1[var0];
+    var0 = undefined;
+    var1 = var5.bind(var0)(var1);
+    var _closure1_slot2 = var1;
+    var1 = {};
+    var5 = function(arg0) { // Original name: tiffOrientation, environment: var3
+        _fun38222: for (var _fun38222_ip = 0;;) switch (_fun38222_ip) {
+            case 0:
+                var8 = arg0;
                 var0 = 'Horizontal (normal)';
-                var1 = 0;
-                if (!(var1 !== var7)) {
-                    _fun38243_ip = 99;
-                    continue _fun38243
+                var1 = '1';
+                if (!(var1 !== var8)) {
+                    _fun38222_ip = 158;
+                    continue _fun38222
                 }
-            case 15:
-                var1 = 'Rotate 270 CW';
-                var2 = 1;
-                if (!(var2 !== var7)) {
-                    _fun38243_ip = 96;
-                    continue _fun38243
+            case 22:
+                var1 = 'Mirror horizontal';
+                var2 = '2';
+                if (!(var2 !== var8)) {
+                    _fun38222_ip = 155;
+                    continue _fun38222
                 }
-            case 28:
+            case 38:
                 var2 = 'Rotate 180';
-                var3 = 2;
-                if (!(var3 !== var7)) {
-                    _fun38243_ip = 93;
-                    continue _fun38243
-                }
-            case 41:
-                var3 = 'Rotate 90 CW';
-                var4 = 3;
-                if (!(var4 !== var7)) {
-                    _fun38243_ip = 90;
-                    continue _fun38243
+                var3 = '3';
+                if (!(var3 !== var8)) {
+                    _fun38222_ip = 152;
+                    continue _fun38222
                 }
             case 54:
-                var4 = 'Upwards';
-                var5 = 4;
-                if (!(var5 !== var7)) {
-                    _fun38243_ip = 87;
-                    continue _fun38243
+                var3 = 'Mirror vertical';
+                var4 = '4';
+                if (!(var4 !== var8)) {
+                    _fun38222_ip = 149;
+                    continue _fun38222
                 }
-            case 67:
-                var5 = 'Unknown';
-                var6 = 5;
-                if (!(var6 === var7)) {
-                    _fun38243_ip = 84;
-                    continue _fun38243
+            case 70:
+                var4 = 'Mirror horizontal and rotate 270 CW';
+                var5 = '5';
+                if (!(var5 !== var8)) {
+                    _fun38222_ip = 146;
+                    continue _fun38222
                 }
-            case 78:
-                var5 = 'Downwards';
-            case 84:
-                var4 = var5;
-            case 87:
-                var3 = var4;
-            case 90:
-                var2 = var3;
-            case 93:
-                var1 = var2;
-            case 96:
-                var0 = var1;
-            case 99:
-                return var0;
-        }
-    };
-    var _closure1_slot5 = var0;
-    var0 = function(arg0) { // Original name: getRollAngleDescription, environment: var4
-        var1 = -0.5;
-        var0 = arg0;
-        var0 = var1 * var0;
-        var0 = '' + var0;
-        return var0;
-    };
-    var _closure1_slot6 = var0;
-    var0 = function(arg0) { // Original name: getPitchAngleDescription, environment: var4
-        var1 = -0.5;
-        var0 = arg0;
-        var0 = var1 * var0;
-        var0 = '' + var0;
-        return var0;
-    };
-    var _closure1_slot7 = var0;
-    var0 = global;
-    var5 = var0.Object;
-    var3 = var5.defineProperty;
-    var2 = {};
-    var0 = true;
-    var2.value = var0;
-    var0 = '__esModule';
-    var0 = var3.bind(var5)(var1, var0, var2);
-    var3 = {};
-    var0 = 78420;
-    var3.K3_III = var0;
-    var _closure1_slot3 = var3;
-    var2 = {
-        'CAMERA_ORIENTATION': 1,
-        'ROLL_ANGLE': 3,
-        'PITCH_ANGLE': 5
-    };
-    var _closure1_slot4 = var2;
-    var0 = {};
-    var4 = function(arg0, arg1, arg2, arg3) { // Original name: read, environment: var4
-        _fun38246: for (var _fun38246_ip = 0;;) switch (_fun38246_ip) {
-            case 0:
-                var10 = arg0;
-                var1 = arg1;
-                var0 = arg2;
-                var4 = _closure1_slot1;
-                var3 = _closure1_slot2;
-                var13 = 0;
-                var2 = var3[var13];
-                var8 = undefined;
-                var5 = var4.bind(var8)(var2);
-                var4 = var5.getByteOrder;
-                var7 = var1 + var0;
-                var2 = 8;
-                var2 = var7 + var2;
-                var11 = var4.bind(var5)(var10, var2);
-                var2 = var1 + var0;
-                var1 = _closure1_slot0;
-                var0 = 1;
-                var0 = var3[var0];
-                var7 = var1.bind(var8)(var0);
-                var5 = var7.readIfd;
-                var0 = 2;
-                var0 = var3[var0];
-                var0 = var1.bind(var8)(var0);
-                var22 = var0.IFD_TYPE_PENTAX;
-                var0 = 10;
-                var20 = var2 + var0;
-                var18 = arg3;
-                var17 = true;
-                var24 = var7;
-                var23 = var10;
-                var21 = var2;
-                var19 = var11;
-                var5 = var24[var5](var23, var22, var21, var20, var19, var18, var17, var16);
-                var1 = var5.PentaxModelID;
-                if (!var1) {
-                    _fun38246_ip = 162;
-                    continue _fun38246
+            case 86:
+                var5 = 'Rotate 90 CW';
+                var6 = '6';
+                if (!(var6 !== var8)) {
+                    _fun38222_ip = 143;
+                    continue _fun38222
                 }
+            case 102:
+                var6 = 'Mirror horizontal and rotate 90 CW';
+                var7 = '7';
+                if (!(var7 !== var8)) {
+                    _fun38222_ip = 140;
+                    continue _fun38222
+                }
+            case 118:
+                var7 = 'Rotate 270 CW';
+                var9 = '8';
+                if (!(var9 !== var8)) {
+                    _fun38222_ip = 137;
+                    continue _fun38222
+                }
+            case 134:
+                var7 = var8;
             case 137:
-                var0 = var5.PentaxModelID;
-                var3 = var0.value;
-                var0 = _closure1_slot3;
-                var0 = var0.K3_III;
-                var1 = var3 === var0;
-            case 162:
-                if (!var1) {
-                    _fun38246_ip = 171;
-                    continue _fun38246
-                }
-            case 165:
-                var1 = var5.LevelInfo;
-            case 171:
-                var0 = var5;
-                if (!var1) {
-                    _fun38246_ip = 459;
-                    continue _fun38246
-                }
-            case 180:
-                var3 = _closure1_slot0;
-                var4 = _closure1_slot2;
-                var1 = 3;
-                var1 = var4[var1];
-                var4 = var3.bind(var8)(var1);
-                var3 = var4.objectAssign;
-                var1 = var5.LevelInfo;
-                var1 = var1.__offset;
-                var14 = var2 + var1;
-                var2 = {};
-                var1 = 7;
-                var7 = var14 + var1;
-                var1 = var10.byteLength;
-                if (!(!(var7 > var1))) {
-                    _fun38246_ip = 442;
-                    continue _fun38246
-                }
-            case 244:
-                var9 = var10.getInt8;
-                var7 = _closure1_slot4;
-                var1 = var7.CAMERA_ORIENTATION;
-                var1 = var14 + var1;
-                var12 = var9.bind(var10)(var1);
-                var1 = {};
-                var1.value = var12;
-                var9 = _closure1_slot5;
-                var9 = var9.bind(var8)(var12);
-                var1.description = var9;
-                var2.CameraOrientation = var1;
-                var16 = var10.getInt16;
-                var1 = var7.ROLL_ANGLE;
-                var15 = var14 + var1;
-                var12 = _closure1_slot1;
-                var1 = _closure1_slot2;
-                var9 = var1[var13];
-                var9 = var12.bind(var8)(var9);
-                var9 = var9.LITTLE_ENDIAN;
-                var9 = var11 === var9;
-                var16 = var16.bind(var10)(var15, var9);
-                var9 = {};
-                var9.value = var16;
-                var15 = _closure1_slot6;
-                var15 = var15.bind(var8)(var16);
-                var9.description = var15;
-                var2.RollAngle = var9;
-                var9 = var10.getInt16;
-                var7 = var7.PITCH_ANGLE;
-                var7 = var14 + var7;
-                var1 = var1[var13];
-                var1 = var12.bind(var8)(var1);
-                var1 = var1.LITTLE_ENDIAN;
-                var1 = var11 === var1;
-                var7 = var9.bind(var10)(var7, var1);
-                var1 = {};
-                var1.value = var7;
-                var6 = _closure1_slot7;
-                var6 = var6.bind(var8)(var7);
-                var1.description = var6;
-                var2.PitchAngle = var1;
-            case 442:
-                var1 = {};
-                var1 = var3.bind(var4)(var1, var5, var2);
-                var2 = delete var1.LevelInfo;
+                var6 = var7;
+            case 140:
+                var5 = var6;
+            case 143:
+                var4 = var5;
+            case 146:
+                var3 = var4;
+            case 149:
+                var2 = var3;
+            case 152:
+                var1 = var2;
+            case 155:
                 var0 = var1;
-            case 459:
+            case 158:
                 return var0;
         }
     };
-    var0.read = var4;
-    var4 = 10;
-    var0.PENTAX_IFD_OFFSET = var4;
-    var0.MODEL_ID = var3;
-    var0.LIK3III = var2;
-    var1.default = var0;
-    var0 = undefined;
+    var1['tiff:Orientation'] = var5;
+    var5 = function(arg0) { // Original name: tiffResolutionUnit, environment: var3
+        var1 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var0 = 1;
+        var0 = var2[var0];
+        var5 = undefined;
+        var2 = var1.bind(var5)(var0);
+        var1 = var2.ResolutionUnit;
+        var0 = global;
+        var4 = var0.parseInt;
+        var3 = arg0;
+        var0 = 10;
+        var0 = var4.bind(var5)(var3, var0);
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var1['tiff:ResolutionUnit'] = var5;
+    var5 = function(arg0) { // Original name: tiffXResolution, environment: var3
+        var3 = _closure1_slot3;
+        var1 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var0 = 1;
+        var0 = var2[var0];
+        var2 = undefined;
+        var0 = var1.bind(var2)(var0);
+        var1 = var0.XResolution;
+        var0 = arg0;
+        var0 = var3.bind(var2)(var1, var0);
+        return var0;
+    };
+    var1['tiff:XResolution'] = var5;
+    var5 = function(arg0) { // Original name: tiffYResolution, environment: var3
+        var3 = _closure1_slot3;
+        var1 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var0 = 1;
+        var0 = var2[var0];
+        var2 = undefined;
+        var0 = var1.bind(var2)(var0);
+        var1 = var0.YResolution;
+        var0 = arg0;
+        var0 = var3.bind(var2)(var1, var0);
+        return var0;
+    };
+    var1['tiff:YResolution'] = var5;
+    var5 = function(arg0) { // Original name: exifApertureValue, environment: var3
+        var3 = _closure1_slot3;
+        var1 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var0 = 1;
+        var0 = var2[var0];
+        var2 = undefined;
+        var0 = var1.bind(var2)(var0);
+        var1 = var0.ApertureValue;
+        var0 = arg0;
+        var0 = var3.bind(var2)(var1, var0);
+        return var0;
+    };
+    var1['exif:ApertureValue'] = var5;
+    var1['exif:GPSLatitude'] = var4;
+    var1['exif:GPSLongitude'] = var4;
+    var4 = function(arg0) { // Original name: exifFNumber, environment: var3
+        var3 = _closure1_slot3;
+        var1 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var0 = 1;
+        var0 = var2[var0];
+        var2 = undefined;
+        var0 = var1.bind(var2)(var0);
+        var1 = var0.FNumber;
+        var0 = arg0;
+        var0 = var3.bind(var2)(var1, var0);
+        return var0;
+    };
+    var1['exif:FNumber'] = var4;
+    var4 = function(arg0) { // Original name: exifFocalLength, environment: var3
+        var3 = _closure1_slot3;
+        var1 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var0 = 1;
+        var0 = var2[var0];
+        var2 = undefined;
+        var0 = var1.bind(var2)(var0);
+        var1 = var0.FocalLength;
+        var0 = arg0;
+        var0 = var3.bind(var2)(var1, var0);
+        return var0;
+    };
+    var1['exif:FocalLength'] = var4;
+    var4 = function(arg0) { // Original name: exifFocalPlaneResolutionUnit, environment: var3
+        var1 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var0 = 1;
+        var0 = var2[var0];
+        var5 = undefined;
+        var2 = var1.bind(var5)(var0);
+        var1 = var2.FocalPlaneResolutionUnit;
+        var0 = global;
+        var4 = var0.parseInt;
+        var3 = arg0;
+        var0 = 10;
+        var0 = var4.bind(var5)(var3, var0);
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var1['exif:FocalPlaneResolutionUnit'] = var4;
+    var4 = function(arg0) { // Original name: exifColorSpace, environment: var3
+        _fun38230: for (var _fun38230_ip = 0;;) switch (_fun38230_ip) {
+            case 0:
+                var7 = arg0;
+                var1 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var0 = 1;
+                var0 = var2[var0];
+                var6 = undefined;
+                var2 = var1.bind(var6)(var0);
+                var1 = var2.ColorSpace;
+                var3 = var7.substring;
+                var0 = 0;
+                var4 = 2;
+                var3 = var3.bind(var7)(var0, var4);
+                var0 = '0x';
+                if (!(var0 !== var3)) {
+                    _fun38230_ip = 80;
+                    continue _fun38230
+                }
+            case 61:
+                var0 = global;
+                var3 = var0.parseInt;
+                var0 = 10;
+                var0 = var3.bind(var6)(var7, var0);
+                _fun38230_ip = 108;
+                continue _fun38230;
+            case 80:
+                var3 = global;
+                var5 = var3.parseInt;
+                var3 = var7.substring;
+                var4 = var3.bind(var7)(var4);
+                var3 = 16;
+                var0 = var5.bind(var6)(var4, var3);
+            case 108:
+                var0 = var1.bind(var2)(var0);
+                return var0;
+        }
+    };
+    var1['exif:ColorSpace'] = var4;
+    var4 = function(arg0, arg1) { // Original name: exifComponentsConfiguration, environment: var3
+        _fun38231: for (var _fun38231_ip = 0;;) switch (_fun38231_ip) {
+            case 0:
+                var2 = arg1;
+                var1 = /^\d, \d, \d, \d$/;
+                var0 = var1.test;
+                var0 = var0.bind(var1)(var2);
+                if (var0) {
+                    _fun38231_ip = 32;
+                    continue _fun38231
+                }
+            case 30:
+                return var2;
+            case 32:
+                var1 = var2.split;
+                var0 = ', ';
+                var2 = var1.bind(var2)(var0);
+                var1 = var2.map;
+                var0 = function(arg0) { // Environment: var0
+                    var2 = arg0;
+                    var1 = var2.charCodeAt;
+                    var0 = 0;
+                    var0 = var1.bind(var2)(var0);
+                    return var0;
+                };
+                var2 = var1.bind(var2)(var0);
+                var3 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var0 = 1;
+                var1 = var1[var0];
+                var0 = undefined;
+                var1 = var3.bind(var0)(var1);
+                var0 = var1.ComponentsConfiguration;
+                var0 = var0.bind(var1)(var2);
+                return var0;
+        }
+    };
+    var1['exif:ComponentsConfiguration'] = var4;
+    var4 = function(arg0) { // Original name: exifContrast, environment: var3
+        var1 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var0 = 1;
+        var0 = var2[var0];
+        var5 = undefined;
+        var2 = var1.bind(var5)(var0);
+        var1 = var2.Contrast;
+        var0 = global;
+        var4 = var0.parseInt;
+        var3 = arg0;
+        var0 = 10;
+        var0 = var4.bind(var5)(var3, var0);
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var1['exif:Contrast'] = var4;
+    var4 = function(arg0) { // Original name: exifCustomRendered, environment: var3
+        var1 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var0 = 1;
+        var0 = var2[var0];
+        var5 = undefined;
+        var2 = var1.bind(var5)(var0);
+        var1 = var2.CustomRendered;
+        var0 = global;
+        var4 = var0.parseInt;
+        var3 = arg0;
+        var0 = 10;
+        var0 = var4.bind(var5)(var3, var0);
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var1['exif:CustomRendered'] = var4;
+    var4 = function(arg0) { // Original name: exifExposureMode, environment: var3
+        var1 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var0 = 1;
+        var0 = var2[var0];
+        var5 = undefined;
+        var2 = var1.bind(var5)(var0);
+        var1 = var2.ExposureMode;
+        var0 = global;
+        var4 = var0.parseInt;
+        var3 = arg0;
+        var0 = 10;
+        var0 = var4.bind(var5)(var3, var0);
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var1['exif:ExposureMode'] = var4;
+    var4 = function(arg0) { // Original name: exifExposureProgram, environment: var3
+        var1 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var0 = 1;
+        var0 = var2[var0];
+        var5 = undefined;
+        var2 = var1.bind(var5)(var0);
+        var1 = var2.ExposureProgram;
+        var0 = global;
+        var4 = var0.parseInt;
+        var3 = arg0;
+        var0 = 10;
+        var0 = var4.bind(var5)(var3, var0);
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var1['exif:ExposureProgram'] = var4;
+    var4 = function(arg0) { // Original name: exifExposureTime, environment: var3
+        _fun38237: for (var _fun38237_ip = 0;;) switch (_fun38237_ip) {
+            case 0:
+                var5 = arg0;
+                var0 = _closure1_slot4;
+                var3 = undefined;
+                var2 = var0.bind(var3)(var5);
+                var0 = var5;
+                if (!var2) {
+                    _fun38237_ip = 85;
+                    continue _fun38237
+                }
+            case 23:
+                var2 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var1 = 1;
+                var1 = var4[var1];
+                var3 = var2.bind(var3)(var1);
+                var2 = var3.ExposureTime;
+                var4 = var5.split;
+                var1 = '/';
+                var5 = var4.bind(var5)(var1);
+                var4 = var5.map;
+                var1 = function(arg0) { // Environment: var1
+                    var0 = global;
+                    var3 = var0.parseInt;
+                    var2 = undefined;
+                    var1 = arg0;
+                    var0 = 10;
+                    var0 = var3.bind(var2)(var1, var0);
+                    return var0;
+                };
+                var1 = var4.bind(var5)(var1);
+                var0 = var2.bind(var3)(var1);
+            case 85:
+                return var0;
+        }
+    };
+    var1['exif:ExposureTime'] = var4;
+    var4 = function(arg0) { // Original name: exifMeteringMode, environment: var3
+        var1 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var0 = 1;
+        var0 = var2[var0];
+        var5 = undefined;
+        var2 = var1.bind(var5)(var0);
+        var1 = var2.MeteringMode;
+        var0 = global;
+        var4 = var0.parseInt;
+        var3 = arg0;
+        var0 = 10;
+        var0 = var4.bind(var5)(var3, var0);
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var1['exif:MeteringMode'] = var4;
+    var4 = function(arg0) { // Original name: exifSaturation, environment: var3
+        var1 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var0 = 1;
+        var0 = var2[var0];
+        var5 = undefined;
+        var2 = var1.bind(var5)(var0);
+        var1 = var2.Saturation;
+        var0 = global;
+        var4 = var0.parseInt;
+        var3 = arg0;
+        var0 = 10;
+        var0 = var4.bind(var5)(var3, var0);
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var1['exif:Saturation'] = var4;
+    var4 = function(arg0) { // Original name: exifSceneCaptureType, environment: var3
+        var1 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var0 = 1;
+        var0 = var2[var0];
+        var5 = undefined;
+        var2 = var1.bind(var5)(var0);
+        var1 = var2.SceneCaptureType;
+        var0 = global;
+        var4 = var0.parseInt;
+        var3 = arg0;
+        var0 = 10;
+        var0 = var4.bind(var5)(var3, var0);
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var1['exif:SceneCaptureType'] = var4;
+    var4 = function(arg0) { // Original name: exifSharpness, environment: var3
+        var1 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var0 = 1;
+        var0 = var2[var0];
+        var5 = undefined;
+        var2 = var1.bind(var5)(var0);
+        var1 = var2.Sharpness;
+        var0 = global;
+        var4 = var0.parseInt;
+        var3 = arg0;
+        var0 = 10;
+        var0 = var4.bind(var5)(var3, var0);
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var1['exif:Sharpness'] = var4;
+    var4 = function(arg0) { // Original name: exifShutterSpeedValue, environment: var3
+        var3 = _closure1_slot3;
+        var1 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var0 = 1;
+        var0 = var2[var0];
+        var2 = undefined;
+        var0 = var1.bind(var2)(var0);
+        var1 = var0.ShutterSpeedValue;
+        var0 = arg0;
+        var0 = var3.bind(var2)(var1, var0);
+        return var0;
+    };
+    var1['exif:ShutterSpeedValue'] = var4;
+    var3 = function(arg0) { // Original name: exifWhiteBalance, environment: var3
+        var1 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var0 = 1;
+        var0 = var2[var0];
+        var5 = undefined;
+        var2 = var1.bind(var5)(var0);
+        var1 = var2.WhiteBalance;
+        var0 = global;
+        var4 = var0.parseInt;
+        var3 = arg0;
+        var0 = 10;
+        var0 = var4.bind(var5)(var3, var0);
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var1['exif:WhiteBalance'] = var3;
+    var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4128, 4143, 4144, 4123]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 4152]);

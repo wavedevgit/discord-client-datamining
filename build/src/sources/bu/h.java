@@ -296,7 +296,7 @@ public final class h implements Closeable {
                 int i13 = i10 - 8;
                 bu.b a10 = bu.b.f7842e.a(readInt2);
                 if (a10 != null) {
-                    ByteString byteString = ByteString.f44364p;
+                    ByteString byteString = ByteString.f44380p;
                     if (i13 > 0) {
                         byteString = this.f7966d.f1(i13);
                     }

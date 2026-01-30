@@ -147,7 +147,7 @@ final class RiveUIKt$RiveUI$5 extends k implements Function2<CoroutineScope, Con
                             if (r9 != r1) goto L4c
                             return r1
                         L4c:
-                            kotlin.Unit r9 = kotlin.Unit.f33282a
+                            kotlin.Unit r9 = kotlin.Unit.f33298a
                             return r9
                         */
                         throw new UnsupportedOperationException("Method not decompiled: app.rive.RiveUIKt$RiveUI$5$invokeSuspend$$inlined$filter$1.AnonymousClass2.emit(java.lang.Object, kotlin.coroutines.Continuation):java.lang.Object");
@@ -160,7 +160,7 @@ final class RiveUIKt$RiveUI$5 extends k implements Function2<CoroutineScope, Con
                     if (collect == b.f()) {
                         return collect;
                     }
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
             };
             final long j11 = this.$stateMachineHandle;
@@ -188,7 +188,7 @@ final class RiveUIKt$RiveUI$5 extends k implements Function2<CoroutineScope, Con
                         }
                     });
                     RiveUIKt.RiveUI$lambda$4(qVar, true);
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
             };
             this.label = 1;
@@ -196,11 +196,11 @@ final class RiveUIKt$RiveUI$5 extends k implements Function2<CoroutineScope, Con
                 return f10;
             }
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(@NotNull CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((RiveUIKt$RiveUI$5) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((RiveUIKt$RiveUI$5) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

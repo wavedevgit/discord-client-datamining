@@ -5,7 +5,7 @@ import ui.c;
 final class ea implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ea f45217a = new ea();
+    static final ea f45233a = new ea();
 
     static {
         c.b a10 = ui.c.a("identifiedLanguages");

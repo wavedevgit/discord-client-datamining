@@ -14,10 +14,10 @@ public final class FunctionClassKind {
     public static final Companion Companion;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ FunctionClassKind[] f33477d;
+    private static final /* synthetic */ FunctionClassKind[] f33493d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f33478e;
+    private static final /* synthetic */ EnumEntries f33494e;
     public static final FunctionClassKind Function = new FunctionClassKind("Function", 0);
     public static final FunctionClassKind SuspendFunction = new FunctionClassKind("SuspendFunction", 1);
     public static final FunctionClassKind KFunction = new FunctionClassKind("KFunction", 2);
@@ -54,8 +54,8 @@ public final class FunctionClassKind {
 
     static {
         FunctionClassKind[] a10 = a();
-        f33477d = a10;
-        f33478e = a.a(a10);
+        f33493d = a10;
+        f33494e = a.a(a10);
         Companion = new Companion(null);
     }
 
@@ -71,6 +71,6 @@ public final class FunctionClassKind {
     }
 
     public static FunctionClassKind[] values() {
-        return (FunctionClassKind[]) f33477d.clone();
+        return (FunctionClassKind[]) f33493d.clone();
     }
 }

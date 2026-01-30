@@ -13,7 +13,7 @@ import yg.j;
 public class MaterialRadioButton extends q {
 
     /* renamed from: r  reason: collision with root package name */
-    private static final int f16305r = j.f54516s;
+    private static final int f16305r = j.f54532s;
 
     /* renamed from: s  reason: collision with root package name */
     private static final int[][] f16306s = {new int[]{16842910, 16842912}, new int[]{16842910, -16842912}, new int[]{-16842910, 16842912}, new int[]{-16842910, -16842912}};
@@ -30,9 +30,9 @@ public class MaterialRadioButton extends q {
 
     private ColorStateList getMaterialThemeColorsTintList() {
         if (this.f16307p == null) {
-            int d10 = a.d(this, b.f54344h);
-            int d11 = a.d(this, b.f54350k);
-            int d12 = a.d(this, b.f54354o);
+            int d10 = a.d(this, b.f54360h);
+            int d11 = a.d(this, b.f54366k);
+            int d12 = a.d(this, b.f54370o);
             int[][] iArr = f16306s;
             int[] iArr2 = new int[iArr.length];
             iArr2[0] = a.j(d12, d10, 1.0f);
@@ -73,20 +73,20 @@ public class MaterialRadioButton extends q {
             android.content.Context r7 = rh.a.c(r7, r8, r9, r4)
             r6.<init>(r7, r8, r9)
             android.content.Context r0 = r6.getContext()
-            int[] r2 = yg.k.f54639l4
+            int[] r2 = yg.k.f54655l4
             r7 = 0
             int[] r5 = new int[r7]
             r1 = r8
             r3 = r9
             android.content.res.TypedArray r8 = com.google.android.material.internal.l.i(r0, r1, r2, r3, r4, r5)
-            int r9 = yg.k.f54649m4
+            int r9 = yg.k.f54665m4
             boolean r9 = r8.hasValue(r9)
             if (r9 == 0) goto L29
-            int r9 = yg.k.f54649m4
+            int r9 = yg.k.f54665m4
             android.content.res.ColorStateList r9 = lh.c.a(r0, r8, r9)
             androidx.core.widget.d.d(r6, r9)
         L29:
-            int r9 = yg.k.f54658n4
+            int r9 = yg.k.f54674n4
             boolean r7 = r8.getBoolean(r9, r7)
             r6.f16308q = r7
             r8.recycle()

@@ -9,7 +9,7 @@ import ku.b;
 public final class j implements b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final j f31499a = new j();
+    public static final j f31515a = new j();
 
     private j() {
     }

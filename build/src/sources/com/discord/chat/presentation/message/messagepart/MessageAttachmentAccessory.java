@@ -52,7 +52,7 @@ public abstract class MessageAttachmentAccessory extends MessageAccessory {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit getUploadItemProps$lambda$0(Function2 function2, UploadContext uploadContext) {
         function2.invoke(uploadContext.getUploaderId(), uploadContext.getUploadItemId());
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @NotNull

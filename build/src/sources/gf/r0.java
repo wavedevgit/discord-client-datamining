@@ -6,36 +6,36 @@ import android.os.Bundle;
 abstract class r0 extends a1 {
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f26870d;
+    public final int f26886d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final Bundle f26871e;
+    public final Bundle f26887e;
 
     /* renamed from: f  reason: collision with root package name */
-    final /* synthetic */ c f26872f;
+    final /* synthetic */ c f26888f;
 
     /* JADX INFO: Access modifiers changed from: protected */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public r0(c cVar, int i10, Bundle bundle) {
         super(cVar, Boolean.TRUE);
-        this.f26872f = cVar;
-        this.f26870d = i10;
-        this.f26871e = bundle;
+        this.f26888f = cVar;
+        this.f26886d = i10;
+        this.f26887e = bundle;
     }
 
     @Override // gf.a1
     protected final /* bridge */ /* synthetic */ void a(Object obj) {
         Boolean bool = (Boolean) obj;
         PendingIntent pendingIntent = null;
-        if (this.f26870d != 0) {
-            this.f26872f.g0(1, null);
-            Bundle bundle = this.f26871e;
+        if (this.f26886d != 0) {
+            this.f26888f.g0(1, null);
+            Bundle bundle = this.f26887e;
             if (bundle != null) {
                 pendingIntent = (PendingIntent) bundle.getParcelable("pendingIntent");
             }
-            f(new com.google.android.gms.common.b(this.f26870d, pendingIntent));
+            f(new com.google.android.gms.common.b(this.f26886d, pendingIntent));
         } else if (!g()) {
-            this.f26872f.g0(1, null);
+            this.f26888f.g0(1, null);
             f(new com.google.android.gms.common.b(8, null));
         }
     }

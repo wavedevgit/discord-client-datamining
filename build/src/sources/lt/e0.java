@@ -9,22 +9,22 @@ import java.util.Set;
 public final class e0 implements h {
 
     /* renamed from: q  reason: collision with root package name */
-    static final e0 f37571q = new e0();
+    static final e0 f37587q = new e0();
 
     /* renamed from: d  reason: collision with root package name */
-    private final kt.e f37572d;
+    private final kt.e f37588d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f37573e;
+    private final boolean f37589e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final List f37574i;
+    private final List f37590i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final boolean f37575o;
+    private final boolean f37591o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final kt.g f37576p;
+    private final kt.g f37592p;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public e0(kt.e eVar, boolean z10, List list) {
@@ -36,11 +36,11 @@ public final class e0 implements h {
                         throw new IllegalArgumentException("Zero offset must not be white-space-only.");
                     }
                 }
-                this.f37572d = eVar;
-                this.f37573e = z10;
-                this.f37574i = Collections.unmodifiableList(arrayList);
-                this.f37575o = true;
-                this.f37576p = kt.g.SMART;
+                this.f37588d = eVar;
+                this.f37589e = z10;
+                this.f37590i = Collections.unmodifiableList(arrayList);
+                this.f37591o = true;
+                this.f37592p = kt.g.SMART;
                 return;
             }
             throw new IllegalArgumentException("Missing zero offsets.");
@@ -49,7 +49,7 @@ public final class e0 implements h {
     }
 
     private static net.time4j.tz.p b(jt.o oVar, jt.d dVar) {
-        jt.c cVar = kt.a.f36531d;
+        jt.c cVar = kt.a.f36547d;
         if (dVar.a(cVar)) {
             net.time4j.tz.k kVar = (net.time4j.tz.k) dVar.c(cVar);
             if (kVar instanceof net.time4j.tz.p) {
@@ -85,7 +85,7 @@ public final class e0 implements h {
 
     @Override // lt.h
     public h a(c cVar, jt.d dVar, int i10) {
-        return new e0(this.f37572d, this.f37573e, this.f37574i, ((Boolean) dVar.b(kt.a.f36536i, Boolean.TRUE)).booleanValue(), (kt.g) dVar.b(kt.a.f36533f, kt.g.SMART));
+        return new e0(this.f37588d, this.f37589e, this.f37590i, ((Boolean) dVar.b(kt.a.f36552i, Boolean.TRUE)).booleanValue(), (kt.g) dVar.b(kt.a.f36549f, kt.g.SMART));
     }
 
     @Override // lt.h
@@ -118,7 +118,7 @@ public final class e0 implements h {
         int l10 = B.l();
         int k10 = B.k();
         if ((l10 | k10) == 0) {
-            String str = (String) this.f37574i.get(0);
+            String str = (String) this.f37590i.get(0);
             appendable.append(str);
             i12 = str.length();
         } else {
@@ -141,10 +141,10 @@ public final class e0 implements h {
             String valueOf = String.valueOf(i13);
             appendable.append(valueOf);
             int length = valueOf.length() + i11;
-            kt.e eVar = this.f37572d;
+            kt.e eVar = this.f37588d;
             kt.e eVar2 = kt.e.SHORT;
             if (eVar != eVar2 || i14 != 0) {
-                if (this.f37573e) {
+                if (this.f37589e) {
                     appendable.append(':');
                     length++;
                 }
@@ -155,9 +155,9 @@ public final class e0 implements h {
                 String valueOf2 = String.valueOf(i14);
                 appendable.append(valueOf2);
                 length += valueOf2.length();
-                kt.e eVar3 = this.f37572d;
+                kt.e eVar3 = this.f37588d;
                 if (eVar3 != eVar2 && eVar3 != kt.e.MEDIUM && (eVar3 == kt.e.FULL || (i15 | k10) != 0)) {
-                    if (this.f37573e) {
+                    if (this.f37589e) {
                         appendable.append(':');
                         length++;
                     }
@@ -216,7 +216,7 @@ public final class e0 implements h {
         }
         if (obj instanceof e0) {
             e0 e0Var = (e0) obj;
-            if (this.f37572d == e0Var.f37572d && this.f37573e == e0Var.f37573e && this.f37574i.equals(e0Var.f37574i)) {
+            if (this.f37588d == e0Var.f37588d && this.f37589e == e0Var.f37589e && this.f37590i.equals(e0Var.f37590i)) {
                 return true;
             }
         }
@@ -234,36 +234,36 @@ public final class e0 implements h {
     }
 
     public int hashCode() {
-        return (this.f37572d.hashCode() * 7) + (this.f37574i.hashCode() * 31) + (this.f37573e ? 1 : 0);
+        return (this.f37588d.hashCode() * 7) + (this.f37590i.hashCode() * 31) + (this.f37589e ? 1 : 0);
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder(64);
         sb2.append(e0.class.getName());
         sb2.append("[precision=");
-        sb2.append(this.f37572d);
+        sb2.append(this.f37588d);
         sb2.append(", extended=");
-        sb2.append(this.f37573e);
+        sb2.append(this.f37589e);
         sb2.append(", zero-offsets=");
-        sb2.append(this.f37574i);
+        sb2.append(this.f37590i);
         sb2.append(']');
         return sb2.toString();
     }
 
     private e0() {
-        this.f37572d = kt.e.LONG;
-        this.f37573e = true;
-        this.f37574i = Collections.EMPTY_LIST;
-        this.f37575o = true;
-        this.f37576p = kt.g.SMART;
+        this.f37588d = kt.e.LONG;
+        this.f37589e = true;
+        this.f37590i = Collections.EMPTY_LIST;
+        this.f37591o = true;
+        this.f37592p = kt.g.SMART;
     }
 
     private e0(kt.e eVar, boolean z10, List list, boolean z11, kt.g gVar) {
-        this.f37572d = eVar;
-        this.f37573e = z10;
-        this.f37574i = list;
-        this.f37575o = z11;
-        this.f37576p = gVar;
+        this.f37588d = eVar;
+        this.f37589e = z10;
+        this.f37590i = list;
+        this.f37591o = z11;
+        this.f37592p = gVar;
     }
 
     @Override // lt.h

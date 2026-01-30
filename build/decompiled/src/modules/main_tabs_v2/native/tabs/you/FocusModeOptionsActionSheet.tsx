@@ -182,7 +182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/main_tabs_v2/native/tabs/you/FocusModeOptionsActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: FocusModeOptionsActionSheet, environment: var1
-        _fun103416: for (var _fun103416_ip = 0;;) switch (_fun103416_ip) {
+        _fun103672: for (var _fun103672_ip = 0;;) switch (_fun103672_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.onSelect;
@@ -221,8 +221,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = null;
                 var10 = null;
                 if (!var7) {
-                    _fun103416_ip = 360;
-                    continue _fun103416
+                    _fun103672_ip = 360;
+                    continue _fun103672
                 }
             case 161:
                 var12 = _closure1_slot2;
@@ -328,4 +328,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 667, 1234, 8679, 5164, 5320, 4854, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 667, 1234, 8683, 5170, 5324, 4860, 2]);

@@ -8,7 +8,7 @@ import lv.o;
 public final class a implements b, o {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f50534a = new a();
+    public static final a f50550a = new a();
 
     private a() {
     }

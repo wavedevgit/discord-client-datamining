@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'modules/messages/countContentTypes.tsx';
     var1 = var3.bind(var4)(var1);
     var1 = function(arg0) { // Original name: countContentTypes, environment: var1
-        _fun77797: for (var _fun77797_ip = 0;;) switch (_fun77797_ip) {
+        _fun77841: for (var _fun77841_ip = 0;;) switch (_fun77841_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.content;
@@ -28,8 +28,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = '';
                 var1 = 0;
                 if (!(var2 !== var3)) {
-                    _fun77797_ip = 23;
-                    continue _fun77797
+                    _fun77841_ip = 23;
+                    continue _fun77841
                 }
             case 20:
                 var1 = 1;
@@ -38,8 +38,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = null;
                 var2 = var1;
                 if (!(var3 != var4)) {
-                    _fun77797_ip = 41;
-                    continue _fun77797
+                    _fun77841_ip = 41;
+                    continue _fun77841
                 }
             case 38:
                 var2 = var1 + 1;
@@ -48,8 +48,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.length;
                 var4 = var1 > var5;
                 if (var4) {
-                    _fun77797_ip = 74;
-                    continue _fun77797
+                    _fun77841_ip = 74;
+                    continue _fun77841
                 }
             case 59:
                 var1 = var0.stickerItems;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 74:
                 var1 = var2;
                 if (!var4) {
-                    _fun77797_ip = 83;
-                    continue _fun77797
+                    _fun77841_ip = 83;
+                    continue _fun77841
                 }
             case 80:
                 var1 = var2 + 1;
@@ -68,8 +68,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2.length;
                 var2 = var1;
                 if (!(var4 > var5)) {
-                    _fun77797_ip = 104;
-                    continue _fun77797
+                    _fun77841_ip = 104;
+                    continue _fun77841
                 }
             case 101:
                 var2 = var1 + 1;
@@ -78,8 +78,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var1.length;
                 var1 = var2;
                 if (!(var4 > var5)) {
-                    _fun77797_ip = 125;
-                    continue _fun77797
+                    _fun77841_ip = 125;
+                    continue _fun77841
                 }
             case 122:
                 var1 = var2 + 1;
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.poll;
                 var0 = var1;
                 if (!(var3 != var2)) {
-                    _fun77797_ip = 141;
-                    continue _fun77797
+                    _fun77841_ip = 141;
+                    continue _fun77841
                 }
             case 138:
                 var0 = var1 + 1;

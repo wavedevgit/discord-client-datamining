@@ -7,16 +7,16 @@ import kotlin.jvm.internal.LongCompanionObject;
 public final class s0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private long f40266a;
+    private long f40282a;
 
     /* renamed from: b  reason: collision with root package name */
-    private long f40267b;
+    private long f40283b;
 
     /* renamed from: c  reason: collision with root package name */
-    private long f40268c;
+    private long f40284c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ThreadLocal f40269d = new ThreadLocal();
+    private final ThreadLocal f40285d = new ThreadLocal();
 
     public s0(long j10) {
         h(j10);
@@ -40,15 +40,15 @@ public final class s0 {
         }
         try {
             if (!f()) {
-                long j11 = this.f40266a;
+                long j11 = this.f40282a;
                 if (j11 == 9223372036854775806L) {
-                    j11 = ((Long) a.e((Long) this.f40269d.get())).longValue();
+                    j11 = ((Long) a.e((Long) this.f40285d.get())).longValue();
                 }
-                this.f40267b = j11 - j10;
+                this.f40283b = j11 - j10;
                 notifyAll();
             }
-            this.f40268c = j10;
-            return j10 + this.f40267b;
+            this.f40284c = j10;
+            return j10 + this.f40283b;
         } catch (Throwable th2) {
             throw th2;
         }
@@ -59,7 +59,7 @@ public final class s0 {
             return -9223372036854775807L;
         }
         try {
-            long j11 = this.f40268c;
+            long j11 = this.f40284c;
             if (j11 != -9223372036854775807L) {
                 long j12 = j(j11);
                 long j13 = (4294967296L + j12) / 8589934592L;
@@ -77,16 +77,16 @@ public final class s0 {
 
     public synchronized long c() {
         long j10;
-        j10 = this.f40266a;
+        j10 = this.f40282a;
         return (j10 == LongCompanionObject.MAX_VALUE || j10 == 9223372036854775806L) ? -9223372036854775807L : -9223372036854775807L;
     }
 
     public synchronized long d() {
         long c10;
         try {
-            long j10 = this.f40268c;
+            long j10 = this.f40284c;
             if (j10 != -9223372036854775807L) {
-                c10 = j10 + this.f40267b;
+                c10 = j10 + this.f40283b;
             } else {
                 c10 = c();
             }
@@ -97,12 +97,12 @@ public final class s0 {
     }
 
     public synchronized long e() {
-        return this.f40267b;
+        return this.f40283b;
     }
 
     public synchronized boolean f() {
         boolean z10;
-        if (this.f40267b != -9223372036854775807L) {
+        if (this.f40283b != -9223372036854775807L) {
             z10 = true;
         } else {
             z10 = false;
@@ -112,21 +112,21 @@ public final class s0 {
 
     public synchronized void h(long j10) {
         long j11;
-        this.f40266a = j10;
+        this.f40282a = j10;
         if (j10 == LongCompanionObject.MAX_VALUE) {
             j11 = 0;
         } else {
             j11 = -9223372036854775807L;
         }
-        this.f40267b = j11;
-        this.f40268c = -9223372036854775807L;
+        this.f40283b = j11;
+        this.f40284c = -9223372036854775807L;
     }
 
     public synchronized void i(boolean z10, long j10, long j11) {
         boolean z11;
         boolean z12;
         try {
-            if (this.f40266a == 9223372036854775806L) {
+            if (this.f40282a == 9223372036854775806L) {
                 z11 = true;
             } else {
                 z11 = false;
@@ -136,7 +136,7 @@ public final class s0 {
                 return;
             }
             if (z10) {
-                this.f40269d.set(Long.valueOf(j10));
+                this.f40285d.set(Long.valueOf(j10));
             } else {
                 long j12 = 0;
                 long j13 = j11;

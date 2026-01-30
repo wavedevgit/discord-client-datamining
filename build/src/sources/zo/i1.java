@@ -7,7 +7,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public abstract class i1 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f55931a = new a(null);
+    public static final a f55947a = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -16,7 +16,7 @@ public abstract class i1 {
         }
 
         public final Set a() {
-            return kotlin.collections.x0.i(wo.b.f52728q, BackStackContainer.f19049i);
+            return kotlin.collections.x0.i(wo.b.f52744q, BackStackContainer.f19049i);
         }
 
         private a() {
@@ -24,6 +24,6 @@ public abstract class i1 {
     }
 
     public static final Set a() {
-        return f55931a.a();
+        return f55947a.a();
     }
 }

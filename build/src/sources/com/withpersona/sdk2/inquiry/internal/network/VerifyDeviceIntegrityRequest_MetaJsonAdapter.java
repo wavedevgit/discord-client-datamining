@@ -63,7 +63,7 @@ public final class VerifyDeviceIntegrityRequest_MetaJsonAdapter extends com.squa
         }
         Constructor constructor = this.f20242c;
         if (constructor == null) {
-            constructor = VerifyDeviceIntegrityRequest.Meta.class.getDeclaredConstructor(String.class, String.class, Integer.TYPE, sm.c.f49081c);
+            constructor = VerifyDeviceIntegrityRequest.Meta.class.getDeclaredConstructor(String.class, String.class, Integer.TYPE, sm.c.f49097c);
             this.f20242c = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

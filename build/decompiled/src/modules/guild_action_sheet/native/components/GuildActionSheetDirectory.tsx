@@ -61,15 +61,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_action_sheet/native/components/GuildActionSheetDirectory.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: _default, environment: var1
-        _fun96902: for (var _fun96902_ip = 0;;) switch (_fun96902_ip) {
+        _fun97156: for (var _fun97156_ip = 0;;) switch (_fun97156_ip) {
             case 0:
                 var0 = arg0;
                 var13 = var0.guild;
                 var4 = var0.expanded;
                 var3 = undefined;
                 if (!(var4 === var3)) {
-                    _fun96902_ip = 22;
-                    continue _fun96902
+                    _fun97156_ip = 22;
+                    continue _fun97156
                 }
             case 20:
                 var4 = false;
@@ -146,4 +146,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 1568, 4887, 4889, 12575, 12568, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 1568, 4893, 4895, 12600, 12593, 2]);

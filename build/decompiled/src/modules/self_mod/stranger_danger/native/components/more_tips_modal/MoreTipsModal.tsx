@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
     var0 = function(arg0) { // Original name: MoreTipsModalScreen, environment: var1
-        _fun89470: for (var _fun89470_ip = 0;;) switch (_fun89470_ip) {
+        _fun89707: for (var _fun89707_ip = 0;;) switch (_fun89707_ip) {
             case 0:
                 var0 = arg0;
                 var13 = var0.channelId;
@@ -56,8 +56,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = null;
                 var16 = var15 != var21;
                 if (!var16) {
-                    _fun89470_ip = 220;
-                    continue _fun89470
+                    _fun89707_ip = 220;
+                    continue _fun89707
                 }
             case 190:
                 var19 = _closure1_slot8;
@@ -374,7 +374,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2[2] = var11;
         var2[3] = var10;
         var0 = function() { // Environment: var0
-            _fun89479: for (var _fun89479_ip = 0;;) switch (_fun89479_ip) {
+            _fun89716: for (var _fun89716_ip = 0;;) switch (_fun89716_ip) {
                 case 0:
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot2;
@@ -397,8 +397,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = var6 == var8;
                     var6 = undefined;
                     if (var8) {
-                        _fun89479_ip = 96;
-                        continue _fun89479
+                        _fun89716_ip = 96;
+                        continue _fun89716
                     }
                 case 87:
                     var7 = _closure2_slot3;
@@ -442,4 +442,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 8954, 660, 33, 1297, 671, 9023, 3895, 1234, 11575, 5279, 4518, 5280, 4039, 1568, 632, 8998, 4218, 4223, 5744, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 8958, 660, 33, 1297, 671, 9027, 3901, 1234, 11597, 5283, 4524, 5284, 4045, 1568, 632, 9002, 4224, 4229, 5747, 2]);

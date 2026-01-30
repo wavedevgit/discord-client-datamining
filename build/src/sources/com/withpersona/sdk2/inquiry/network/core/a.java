@@ -178,7 +178,7 @@ public final class a {
                 Collection values = n10.values();
                 String str = (String) CollectionsKt.B0(StringsKt.split$default(c10, new String[]{" "}, false, 0, 6, null));
                 if (str == null) {
-                    bVar.f(NetworkUtilsKt.SUBSYSTEM, vo.a.f51745i, "Auth token is null.");
+                    bVar.f(NetworkUtilsKt.SUBSYSTEM, vo.a.f51761i, "Auth token is null.");
                     return null;
                 }
                 String optString = new JSONObject(new String(Base64.decode((String) StringsKt.split$default(str, new String[]{"."}, false, 0, 6, null).get(1), 0), Charsets.UTF_8)).optString("sub");
@@ -186,13 +186,13 @@ public final class a {
                     String valueOf = String.valueOf(j10 / 1000);
                     return new C0256a(a(CollectionsKt.x0(CollectionsKt.o(optString, valueOf, StringsKt.J(c(c11).toString(), "\\/", "/", false, 4, null)), ":", null, null, 0, null, null, 62, null)), valueOf, a(CollectionsKt.x0(CollectionsKt.o(CollectionsKt.x0(values, "", null, null, 0, null, null, 62, null), valueOf, StringsKt.J(c(c11).toString(), "\\/", "/", false, 4, null)), ":", null, null, 0, null, null, 62, null)), CollectionsKt.x0(keySet, ", ", null, null, 0, null, null, 62, null));
                 }
-                bVar.f(NetworkUtilsKt.SUBSYSTEM, vo.a.f51745i, "Session token is null.");
+                bVar.f(NetworkUtilsKt.SUBSYSTEM, vo.a.f51761i, "Session token is null.");
                 return null;
             }
-            bVar.f(NetworkUtilsKt.SUBSYSTEM, vo.a.f51745i, "User agent is null.");
+            bVar.f(NetworkUtilsKt.SUBSYSTEM, vo.a.f51761i, "User agent is null.");
             return null;
         } catch (Exception e10) {
-            vo.a aVar = vo.a.f51745i;
+            vo.a aVar = vo.a.f51761i;
             String message = e10.getMessage();
             bVar.f(NetworkUtilsKt.SUBSYSTEM, aVar, "An unexpected error occurred: " + message + ".");
             return null;

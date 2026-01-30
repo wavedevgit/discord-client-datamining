@@ -3,13 +3,13 @@ package na;
 public abstract class u {
 
     /* renamed from: a  reason: collision with root package name */
-    private static boolean f39974a = true;
+    private static boolean f39990a = true;
 
     public static boolean a() {
-        return f39974a;
+        return f39990a;
     }
 
     public static void b(boolean z10) {
-        f39974a = z10;
+        f39990a = z10;
     }
 }

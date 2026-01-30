@@ -5,33 +5,33 @@ import ck.g;
 final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final gk.b f33231a;
+    private final gk.b f33247a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final gk.b f33232b;
+    private final gk.b f33248b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final e f33233c;
+    private final e f33249c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public a(gk.b bVar) {
         int i10 = bVar.i();
         if (i10 >= 8 && i10 <= 144 && (i10 & 1) == 0) {
-            this.f33233c = j(bVar);
+            this.f33249c = j(bVar);
             gk.b a10 = a(bVar);
-            this.f33231a = a10;
-            this.f33232b = new gk.b(a10.l(), a10.i());
+            this.f33247a = a10;
+            this.f33248b = new gk.b(a10.l(), a10.i());
             return;
         }
         throw g.a();
     }
 
     private gk.b a(gk.b bVar) {
-        int f10 = this.f33233c.f();
-        int e10 = this.f33233c.e();
+        int f10 = this.f33249c.f();
+        int e10 = this.f33249c.e();
         if (bVar.i() == f10) {
-            int c10 = this.f33233c.c();
-            int b10 = this.f33233c.b();
+            int c10 = this.f33249c.c();
+            int b10 = this.f33249c.b();
             int i10 = f10 / c10;
             int i11 = e10 / b10;
             gk.b bVar2 = new gk.b(i11 * b10, i10 * c10);
@@ -203,8 +203,8 @@ final class a {
         if (i10 >= i12) {
             i10 -= i12;
         }
-        this.f33232b.q(i11, i10);
-        return this.f33231a.e(i11, i10);
+        this.f33248b.q(i11, i10);
+        return this.f33247a.e(i11, i10);
     }
 
     private int i(int i10, int i11, int i12, int i13) {
@@ -249,14 +249,14 @@ final class a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public e b() {
-        return this.f33233c;
+        return this.f33249c;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public byte[] c() {
-        byte[] bArr = new byte[this.f33233c.g()];
-        int i10 = this.f33231a.i();
-        int l10 = this.f33231a.l();
+        byte[] bArr = new byte[this.f33249c.g()];
+        int i10 = this.f33247a.i();
+        int l10 = this.f33247a.l();
         int i11 = 0;
         boolean z10 = false;
         int i12 = 0;
@@ -293,7 +293,7 @@ final class a {
                     z13 = true;
                 } else {
                     while (true) {
-                        if (i13 < i10 && i11 >= 0 && !this.f33232b.e(i11, i13)) {
+                        if (i13 < i10 && i11 >= 0 && !this.f33248b.e(i11, i13)) {
                             bArr[i12] = (byte) i(i13, i11, i10, l10);
                             i12++;
                         }
@@ -308,7 +308,7 @@ final class a {
                     int i17 = i13 - 1;
                     int i18 = i11 + 5;
                     while (true) {
-                        if (i17 >= 0 && i18 < l10 && !this.f33232b.e(i18, i17)) {
+                        if (i17 >= 0 && i18 < l10 && !this.f33248b.e(i18, i17)) {
                             bArr[i12] = (byte) i(i17, i18, i10, l10);
                             i12++;
                         }
@@ -328,7 +328,7 @@ final class a {
                 break;
             }
         }
-        if (i12 == this.f33233c.g()) {
+        if (i12 == this.f33249c.g()) {
             return bArr;
         }
         throw g.a();

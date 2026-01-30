@@ -76,4 +76,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.GuildPremiumRoleSubscribeButton = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 9241, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 9246, 1234, 2]);

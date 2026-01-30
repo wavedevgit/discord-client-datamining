@@ -42,7 +42,7 @@ public class IdentityCredentialApiHiddenActivity extends Activity {
         super.onActivityResult(i10, i11, intent);
         ResultReceiver resultReceiver = this.f3517d;
         if (resultReceiver != null) {
-            m2.a.f37787b.f(resultReceiver, i10, i11, intent);
+            m2.a.f37803b.f(resultReceiver, i10, i11, intent);
         }
         this.f3518e = false;
         finish();
@@ -63,12 +63,12 @@ public class IdentityCredentialApiHiddenActivity extends Activity {
         }
         PendingIntent pendingIntent = (PendingIntent) getIntent().getParcelableExtra("EXTRA_GET_CREDENTIAL_INTENT");
         if (pendingIntent != null) {
-            startIntentSenderForResult(pendingIntent.getIntentSender(), m2.a.f37787b.b(), null, 0, 0, 0, null);
+            startIntentSenderForResult(pendingIntent.getIntentSender(), m2.a.f37803b.b(), null, 0, 0, 0, null);
             return;
         }
         ResultReceiver resultReceiver2 = this.f3517d;
         if (resultReceiver2 != null) {
-            m2.a.f37787b.e(resultReceiver2, "GET_UNKNOWN", "Internal error");
+            m2.a.f37803b.e(resultReceiver2, "GET_UNKNOWN", "Internal error");
         }
         finish();
     }

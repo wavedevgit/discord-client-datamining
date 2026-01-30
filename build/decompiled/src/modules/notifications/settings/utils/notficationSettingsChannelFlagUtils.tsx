@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2[1] = var9;
         var2[2] = var5;
         var1 = function() { // Environment: var1
-            _fun69774: for (var _fun69774_ip = 0;;) switch (_fun69774_ip) {
+            _fun69820: for (var _fun69820_ip = 0;;) switch (_fun69820_ip) {
                 case 0:
                     var4 = _closure1_slot4;
                     var3 = var4.getChannel;
@@ -155,8 +155,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var8 = var3.bind(var4)(var2);
                     var2 = null;
                     if (!(var2 != var8)) {
-                        _fun69774_ip = 58;
-                        continue _fun69774
+                        _fun69820_ip = 58;
+                        continue _fun69820
                     }
                 case 36:
                     var4 = _closure2_slot1;
@@ -164,8 +164,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var8.id;
                     var2 = var3.bind(var4)(var2);
                     if (var2) {
-                        _fun69774_ip = 168;
-                        continue _fun69774
+                        _fun69820_ip = 168;
+                        continue _fun69820
                     }
                 case 58:
                     var6 = _closure1_slot0;
@@ -190,8 +190,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var2.bind(var3)(var0);
                     var0 = ['guild'];
                     var0[1] = var2;
-                    _fun69774_ip = 265;
-                    continue _fun69774;
+                    _fun69820_ip = 265;
+                    continue _fun69820;
                 case 168:
                     var6 = _closure1_slot0;
                     var7 = _closure1_slot2;
@@ -237,7 +237,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useChannelPresetInheritance = var3;
     var3 = function(arg0, arg1, arg2) { // Original name: updateChannelPreset, environment: var1
-        _fun69775: for (var _fun69775_ip = 0;;) switch (_fun69775_ip) {
+        _fun69821: for (var _fun69821_ip = 0;;) switch (_fun69821_ip) {
             case 0:
                 var6 = arg0;
                 var5 = arg1;
@@ -254,8 +254,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.Presets;
                 var2 = var2.ALL_MESSAGES;
                 if (!(var3 !== var2)) {
-                    _fun69775_ip = 401;
-                    continue _fun69775
+                    _fun69821_ip = 401;
+                    continue _fun69821
                 }
             case 69:
                 var4 = _closure1_slot0;
@@ -265,8 +265,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.Presets;
                 var2 = var2.MENTIONS;
                 if (!(var3 !== var2)) {
-                    _fun69775_ip = 271;
-                    continue _fun69775
+                    _fun69821_ip = 271;
+                    continue _fun69821
                 }
             case 105:
                 var4 = _closure1_slot0;
@@ -276,8 +276,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.Presets;
                 var2 = var2.NOTHING;
                 if (!(var3 === var2)) {
-                    _fun69775_ip = 526;
-                    continue _fun69775
+                    _fun69821_ip = 526;
+                    continue _fun69821
                 }
             case 141:
                 var3 = _closure1_slot1;
@@ -309,8 +309,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var5;
                 var14 = var3;
                 var2 = var17[var4](var16, var15, var14, var13, var12);
-                _fun69775_ip = 526;
-                continue _fun69775;
+                _fun69821_ip = 526;
+                continue _fun69821;
             case 271:
                 var3 = _closure1_slot1;
                 var9 = _closure1_slot2;
@@ -341,8 +341,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var5;
                 var14 = var3;
                 var2 = var17[var4](var16, var15, var14, var13, var12);
-                _fun69775_ip = 526;
-                continue _fun69775;
+                _fun69821_ip = 526;
+                continue _fun69821;
             case 401:
                 var3 = _closure1_slot1;
                 var8 = _closure1_slot2;
@@ -416,7 +416,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.updateChannelToGuildDefault = var3;
     var3 = function(arg0, arg1, arg2) { // Original name: updateChannelUnreadSetting, environment: var1
-        _fun69777: for (var _fun69777_ip = 0;;) switch (_fun69777_ip) {
+        _fun69823: for (var _fun69823_ip = 0;;) switch (_fun69823_ip) {
             case 0:
                 var6 = arg0;
                 var5 = arg1;
@@ -440,14 +440,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = _closure1_slot7;
                 var7 = var7.ALL_MESSAGES;
                 if (!(var8 !== var7)) {
-                    _fun69777_ip = 106;
-                    continue _fun69777
+                    _fun69823_ip = 106;
+                    continue _fun69823
                 }
             case 94:
                 var7 = _closure1_slot8;
                 var7 = var7.UNREADS_ONLY_MENTIONS;
-                _fun69777_ip = 116;
-                continue _fun69777;
+                _fun69823_ip = 116;
+                continue _fun69823;
             case 106:
                 var12 = _closure1_slot8;
                 var7 = var12.UNREADS_ALL_MESSAGES;
@@ -498,4 +498,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.updateChannelNotificationSetting = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 1372, 4260, 660, 4261, 665, 632, 4263, 8703, 4654, 8706, 4651, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 1372, 4266, 660, 4267, 665, 632, 4269, 8707, 4660, 8710, 4657, 2]);

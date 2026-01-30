@@ -197,15 +197,15 @@ public abstract class f implements v1, w1 {
                 }
                 return -3;
             }
-            long j10 = fVar.f47078p + this.f13516u;
-            fVar.f47078p = j10;
+            long j10 = fVar.f47094p + this.f13516u;
+            fVar.f47094p = j10;
             this.f13518w = Math.max(this.f13518w, j10);
             return c10;
         }
         if (c10 == -5) {
-            Format format = (Format) ne.a.e(xVar.f37110b);
+            Format format = (Format) ne.a.e(xVar.f37126b);
             if (format.A != LongCompanionObject.MAX_VALUE) {
-                xVar.f37110b = format.b().k0(format.A + this.f13516u).G();
+                xVar.f37126b = format.b().k0(format.A + this.f13516u).G();
             }
         }
         return c10;

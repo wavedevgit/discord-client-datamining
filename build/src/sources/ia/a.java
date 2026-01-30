@@ -12,70 +12,70 @@ import ga.e;
 public class a implements ga.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ja.a f28404a;
+    private final ja.a f28420a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final e f28405b;
+    private final e f28421b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ga.c f28406c;
+    private final ga.c f28422c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Rect f28407d;
+    private final Rect f28423d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int[] f28408e;
+    private final int[] f28424e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int[] f28409f;
+    private final int[] f28425f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final int f28410g;
+    private final int f28426g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final ga.b[] f28411h;
+    private final ga.b[] f28427h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Rect f28412i = new Rect();
+    private final Rect f28428i = new Rect();
 
     /* renamed from: j  reason: collision with root package name */
-    private final Rect f28413j = new Rect();
+    private final Rect f28429j = new Rect();
 
     /* renamed from: k  reason: collision with root package name */
-    private final boolean f28414k;
+    private final boolean f28430k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final Paint f28415l;
+    private final Paint f28431l;
 
     /* renamed from: m  reason: collision with root package name */
-    private Bitmap f28416m;
+    private Bitmap f28432m;
 
     public a(ja.a aVar, e eVar, Rect rect, boolean z10) {
-        this.f28404a = aVar;
-        this.f28405b = eVar;
+        this.f28420a = aVar;
+        this.f28421b = eVar;
         ga.c d10 = eVar.d();
-        this.f28406c = d10;
+        this.f28422c = d10;
         int[] x10 = d10.x();
-        this.f28408e = x10;
+        this.f28424e = x10;
         aVar.a(x10);
-        this.f28410g = aVar.c(x10);
-        this.f28409f = aVar.b(x10);
-        this.f28407d = m(d10, rect);
-        this.f28414k = z10;
-        this.f28411h = new ga.b[d10.a()];
-        for (int i10 = 0; i10 < this.f28406c.a(); i10++) {
-            this.f28411h[i10] = this.f28406c.c(i10);
+        this.f28426g = aVar.c(x10);
+        this.f28425f = aVar.b(x10);
+        this.f28423d = m(d10, rect);
+        this.f28430k = z10;
+        this.f28427h = new ga.b[d10.a()];
+        for (int i10 = 0; i10 < this.f28422c.a(); i10++) {
+            this.f28427h[i10] = this.f28422c.c(i10);
         }
         Paint paint = new Paint();
-        this.f28415l = paint;
+        this.f28431l = paint;
         paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.CLEAR));
     }
 
     private synchronized void l() {
-        Bitmap bitmap = this.f28416m;
+        Bitmap bitmap = this.f28432m;
         if (bitmap != null) {
             bitmap.recycle();
-            this.f28416m = null;
+            this.f28432m = null;
         }
     }
 
@@ -87,31 +87,31 @@ public class a implements ga.a {
     }
 
     private void n(Canvas canvas, float f10, float f11, ga.b bVar) {
-        if (bVar.f26562g == b.EnumC0338b.DISPOSE_TO_BACKGROUND) {
-            int ceil = (int) Math.ceil(bVar.f26557b * f10);
-            int ceil2 = (int) Math.ceil(bVar.f26558c * f11);
-            canvas.drawRect(new Rect(ceil, ceil2, ((int) Math.ceil(bVar.f26559d * f10)) + ceil, ((int) Math.ceil(bVar.f26560e * f11)) + ceil2), this.f28415l);
+        if (bVar.f26578g == b.EnumC0338b.DISPOSE_TO_BACKGROUND) {
+            int ceil = (int) Math.ceil(bVar.f26573b * f10);
+            int ceil2 = (int) Math.ceil(bVar.f26574c * f11);
+            canvas.drawRect(new Rect(ceil, ceil2, ((int) Math.ceil(bVar.f26575d * f10)) + ceil, ((int) Math.ceil(bVar.f26576e * f11)) + ceil2), this.f28431l);
         }
     }
 
     private synchronized Bitmap o(int i10, int i11) {
         try {
-            Bitmap bitmap = this.f28416m;
+            Bitmap bitmap = this.f28432m;
             if (bitmap != null) {
                 if (bitmap.getWidth() >= i10) {
-                    if (this.f28416m.getHeight() < i11) {
+                    if (this.f28432m.getHeight() < i11) {
                     }
                 }
                 l();
             }
-            if (this.f28416m == null) {
-                this.f28416m = Bitmap.createBitmap(i10, i11, Bitmap.Config.ARGB_8888);
+            if (this.f28432m == null) {
+                this.f28432m = Bitmap.createBitmap(i10, i11, Bitmap.Config.ARGB_8888);
             }
-            this.f28416m.eraseColor(0);
+            this.f28432m.eraseColor(0);
         } catch (Throwable th2) {
             throw th2;
         }
-        return this.f28416m;
+        return this.f28432m;
     }
 
     private void p(Canvas canvas, ga.d dVar) {
@@ -119,7 +119,7 @@ public class a implements ga.a {
         int height;
         int b10;
         int c10;
-        if (this.f28414k) {
+        if (this.f28430k) {
             float max = Math.max(dVar.getWidth() / Math.min(dVar.getWidth(), canvas.getWidth()), dVar.getHeight() / Math.min(dVar.getHeight(), canvas.getHeight()));
             width = (int) (dVar.getWidth() / max);
             height = (int) (dVar.getHeight() / max);
@@ -133,36 +133,36 @@ public class a implements ga.a {
         }
         synchronized (this) {
             Bitmap o10 = o(width, height);
-            this.f28416m = o10;
+            this.f28432m = o10;
             dVar.a(width, height, o10);
             canvas.save();
             canvas.translate(b10, c10);
-            canvas.drawBitmap(this.f28416m, 0.0f, 0.0f, (Paint) null);
+            canvas.drawBitmap(this.f28432m, 0.0f, 0.0f, (Paint) null);
             canvas.restore();
         }
     }
 
     private void q(Canvas canvas, ga.d dVar) {
-        double width = this.f28407d.width() / this.f28406c.getWidth();
-        double height = this.f28407d.height() / this.f28406c.getHeight();
+        double width = this.f28423d.width() / this.f28422c.getWidth();
+        double height = this.f28423d.height() / this.f28422c.getHeight();
         int round = (int) Math.round(dVar.getWidth() * width);
         int round2 = (int) Math.round(dVar.getHeight() * height);
         int b10 = (int) (dVar.b() * width);
         int c10 = (int) (dVar.c() * height);
         synchronized (this) {
             try {
-                int width2 = this.f28407d.width();
-                int height2 = this.f28407d.height();
+                int width2 = this.f28423d.width();
+                int height2 = this.f28423d.height();
                 o(width2, height2);
-                Bitmap bitmap = this.f28416m;
+                Bitmap bitmap = this.f28432m;
                 if (bitmap != null) {
                     dVar.a(round, round2, bitmap);
                 }
-                this.f28412i.set(0, 0, width2, height2);
-                this.f28413j.set(b10, c10, width2 + b10, height2 + c10);
-                Bitmap bitmap2 = this.f28416m;
+                this.f28428i.set(0, 0, width2, height2);
+                this.f28429j.set(b10, c10, width2 + b10, height2 + c10);
+                Bitmap bitmap2 = this.f28432m;
                 if (bitmap2 != null) {
-                    canvas.drawBitmap(bitmap2, this.f28412i, this.f28413j, (Paint) null);
+                    canvas.drawBitmap(bitmap2, this.f28428i, this.f28429j, (Paint) null);
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -171,9 +171,9 @@ public class a implements ga.a {
     }
 
     private void r(Canvas canvas, ga.d dVar, ga.b bVar, ga.b bVar2) {
-        Rect rect = this.f28407d;
-        if (rect != null && rect.width() > 0 && this.f28407d.height() > 0) {
-            float width = canvas.getWidth() / this.f28407d.width();
+        Rect rect = this.f28423d;
+        if (rect != null && rect.width() > 0 && this.f28423d.height() > 0) {
+            float width = canvas.getWidth() / this.f28423d.width();
             if (bVar2 != null) {
                 n(canvas, width, width, bVar2);
             }
@@ -183,8 +183,8 @@ public class a implements ga.a {
             int b10 = (int) (dVar.b() * width);
             int c10 = (int) (dVar.c() * width);
             Rect rect3 = new Rect(b10, c10, ((int) (width2 * width)) + b10, ((int) (height * width)) + c10);
-            if (bVar.f26561f == b.a.NO_BLEND) {
-                canvas.drawRect(rect3, this.f28415l);
+            if (bVar.f26577f == b.a.NO_BLEND) {
+                canvas.drawRect(rect3, this.f28431l);
             }
             synchronized (this) {
                 Bitmap o10 = o(width2, height);
@@ -199,8 +199,8 @@ public class a implements ga.a {
         float f11;
         float f12;
         float f13;
-        int width = this.f28406c.getWidth();
-        int height = this.f28406c.getHeight();
+        int width = this.f28422c.getWidth();
+        int height = this.f28422c.getHeight();
         float f14 = width;
         float f15 = height;
         int width2 = dVar.getWidth();
@@ -233,8 +233,8 @@ public class a implements ga.a {
         if (bVar2 != null) {
             n(canvas, f12, f13, bVar2);
         }
-        if (bVar.f26561f == b.a.NO_BLEND) {
-            canvas.drawRect(rect2, this.f28415l);
+        if (bVar.f26577f == b.a.NO_BLEND) {
+            canvas.drawRect(rect2, this.f28431l);
         }
         synchronized (this) {
             Bitmap o10 = o(width2, height2);
@@ -245,30 +245,30 @@ public class a implements ga.a {
 
     @Override // ga.a
     public int a() {
-        return this.f28406c.a();
+        return this.f28422c.a();
     }
 
     @Override // ga.a
     public int b() {
-        return this.f28406c.b();
+        return this.f28422c.b();
     }
 
     @Override // ga.a
     public ga.b c(int i10) {
-        return this.f28411h[i10];
+        return this.f28427h[i10];
     }
 
     @Override // ga.a
     public int d() {
-        return this.f28410g;
+        return this.f28426g;
     }
 
     @Override // ga.a
     public void e(int i10, Canvas canvas) {
-        ga.d w10 = this.f28406c.w(i10);
+        ga.d w10 = this.f28422c.w(i10);
         try {
             if (w10.getWidth() > 0 && w10.getHeight() > 0) {
-                if (this.f28406c.u()) {
+                if (this.f28422c.u()) {
                     q(canvas, w10);
                 } else {
                     p(canvas, w10);
@@ -282,45 +282,45 @@ public class a implements ga.a {
 
     @Override // ga.a
     public ga.a f(Rect rect) {
-        if (m(this.f28406c, rect).equals(this.f28407d)) {
+        if (m(this.f28422c, rect).equals(this.f28423d)) {
             return this;
         }
-        return new a(this.f28404a, this.f28405b, rect, this.f28414k);
+        return new a(this.f28420a, this.f28421b, rect, this.f28430k);
     }
 
     @Override // ga.a
     public int g(int i10) {
-        return this.f28408e[i10];
+        return this.f28424e[i10];
     }
 
     @Override // ga.a
     public int getHeight() {
-        return this.f28406c.getHeight();
+        return this.f28422c.getHeight();
     }
 
     @Override // ga.a
     public int getWidth() {
-        return this.f28406c.getWidth();
+        return this.f28422c.getWidth();
     }
 
     @Override // ga.a
     public int h() {
-        return this.f28407d.height();
+        return this.f28423d.height();
     }
 
     @Override // ga.a
     public void i(int i10, Canvas canvas) {
         ga.b c10;
-        ga.d w10 = this.f28406c.w(i10);
-        ga.b c11 = this.f28406c.c(i10);
+        ga.d w10 = this.f28422c.w(i10);
+        ga.b c11 = this.f28422c.c(i10);
         if (i10 == 0) {
             c10 = null;
         } else {
-            c10 = this.f28406c.c(i10 - 1);
+            c10 = this.f28422c.c(i10 - 1);
         }
         try {
             if (w10.getWidth() > 0 && w10.getHeight() > 0) {
-                if (this.f28406c.u()) {
+                if (this.f28422c.u()) {
                     s(canvas, w10, c11, c10);
                 } else {
                     r(canvas, w10, c11, c10);
@@ -334,11 +334,11 @@ public class a implements ga.a {
 
     @Override // ga.a
     public int j() {
-        return this.f28407d.width();
+        return this.f28423d.width();
     }
 
     @Override // ga.a
     public e k() {
-        return this.f28405b;
+        return this.f28421b;
     }
 }

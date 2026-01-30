@@ -14,10 +14,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c extends JSPointerDispatcher {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f46118b = new a(null);
+    public static final a f46134b = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Lazy f46119a;
+    private final Lazy f46135a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -33,7 +33,7 @@ public final class c extends JSPointerDispatcher {
     public c(ViewGroup viewGroup) {
         super(viewGroup);
         Intrinsics.checkNotNullParameter(viewGroup, "viewGroup");
-        this.f46119a = l.b(new Function0() { // from class: pm.b
+        this.f46135a = l.b(new Function0() { // from class: pm.b
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Method g10;
@@ -44,7 +44,7 @@ public final class c extends JSPointerDispatcher {
     }
 
     private final Method e() {
-        return (Method) this.f46119a.getValue();
+        return (Method) this.f46135a.getValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */

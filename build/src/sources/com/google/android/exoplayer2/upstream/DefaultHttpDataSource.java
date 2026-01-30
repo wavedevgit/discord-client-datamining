@@ -366,7 +366,7 @@ public class DefaultHttpDataSource extends le.f implements g {
 
     private static void x(HttpURLConnection httpURLConnection, long j10) {
         int i10;
-        if (httpURLConnection != null && (i10 = w0.f40279a) >= 19 && i10 <= 20) {
+        if (httpURLConnection != null && (i10 = w0.f40295a) >= 19 && i10 <= 20) {
             try {
                 InputStream inputStream = httpURLConnection.getInputStream();
                 if (j10 == -1) {
@@ -491,10 +491,10 @@ public class DefaultHttpDataSource extends le.f implements g {
                 if (errorStream != null) {
                     bArr = w0.i1(errorStream);
                 } else {
-                    bArr = w0.f40284f;
+                    bArr = w0.f40300f;
                 }
             } catch (IOException unused) {
-                bArr = w0.f40284f;
+                bArr = w0.f40300f;
             }
             byte[] bArr2 = bArr;
             s();

@@ -18,13 +18,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.LogBox;
     var _closure1_slot0 = var3;
     var1 = function(arg0) { // Original name: ignoreRequireCycleLogs, environment: var1
-        _fun12823: for (var _fun12823_ip = 0;;) switch (_fun12823_ip) {
+        _fun12824: for (var _fun12824_ip = 0;;) switch (_fun12824_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1;
                 if (!var0) {
-                    _fun12823_ip = 21;
-                    continue _fun12823
+                    _fun12824_ip = 21;
+                    continue _fun12824
                 }
             case 9:
                 var3 = var1.major;
@@ -32,8 +32,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var2 === var3;
             case 21:
                 if (!var0) {
-                    _fun12823_ip = 37;
-                    continue _fun12823
+                    _fun12824_ip = 37;
+                    continue _fun12824
                 }
             case 24:
                 var2 = var1.minor;
@@ -41,8 +41,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var2 < var1;
             case 37:
                 if (!var0) {
-                    _fun12823_ip = 68;
-                    continue _fun12823
+                    _fun12824_ip = 68;
+                    continue _fun12824
                 }
             case 40:
                 var2 = _closure1_slot0;

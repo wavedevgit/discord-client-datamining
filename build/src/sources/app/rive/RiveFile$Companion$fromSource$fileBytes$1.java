@@ -56,6 +56,6 @@ public final class RiveFile$Companion$fromSource$fileBytes$1 extends k implement
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(@NotNull CoroutineScope coroutineScope, Continuation<? super byte[]> continuation) {
-        return ((RiveFile$Companion$fromSource$fileBytes$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((RiveFile$Companion$fromSource$fileBytes$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

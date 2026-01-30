@@ -44,7 +44,7 @@ public final class SelfMeasuredViewManager extends ViewGroupManager<SelfMeasured
     @Override // com.facebook.react.uimanager.ViewManager
     public /* bridge */ /* synthetic */ Object updateState(View view, ReactStylesDiffMap reactStylesDiffMap, StateWrapper stateWrapper) {
         updateState((SelfMeasuredView) view, reactStylesDiffMap, stateWrapper);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

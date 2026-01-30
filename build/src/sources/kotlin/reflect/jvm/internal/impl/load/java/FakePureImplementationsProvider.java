@@ -19,16 +19,16 @@ public final class FakePureImplementationsProvider {
     public static final FakePureImplementationsProvider INSTANCE;
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f33967a;
+    private static final Map f33983a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Map f33968b;
+    private static final Map f33984b;
 
     static {
         FakePureImplementationsProvider fakePureImplementationsProvider = new FakePureImplementationsProvider();
         INSTANCE = fakePureImplementationsProvider;
         LinkedHashMap linkedHashMap = new LinkedHashMap();
-        f33967a = linkedHashMap;
+        f33983a = linkedHashMap;
         StandardClassIds standardClassIds = StandardClassIds.INSTANCE;
         fakePureImplementationsProvider.b(standardClassIds.getMutableList(), fakePureImplementationsProvider.a("java.util.ArrayList", "java.util.LinkedList"));
         fakePureImplementationsProvider.b(standardClassIds.getMutableSet(), fakePureImplementationsProvider.a("java.util.HashSet", "java.util.TreeSet", "java.util.LinkedHashSet"));
@@ -40,7 +40,7 @@ public final class FakePureImplementationsProvider {
         for (Map.Entry entry : linkedHashMap.entrySet()) {
             arrayList.add(v.a(((ClassId) entry.getKey()).asSingleFqName(), ((ClassId) entry.getValue()).asSingleFqName()));
         }
-        f33968b = o0.u(arrayList);
+        f33984b = o0.u(arrayList);
     }
 
     private FakePureImplementationsProvider() {
@@ -55,7 +55,7 @@ public final class FakePureImplementationsProvider {
     }
 
     private final void b(ClassId classId, List list) {
-        Map map = f33967a;
+        Map map = f33983a;
         for (Object obj : list) {
             ClassId classId2 = (ClassId) obj;
             map.put(obj, classId);
@@ -64,6 +64,6 @@ public final class FakePureImplementationsProvider {
 
     public final FqName getPurelyImplementedInterface(@NotNull FqName classFqName) {
         Intrinsics.checkNotNullParameter(classFqName, "classFqName");
-        return (FqName) f33968b.get(classFqName);
+        return (FqName) f33984b.get(classFqName);
     }
 }

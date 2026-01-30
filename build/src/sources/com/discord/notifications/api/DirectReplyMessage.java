@@ -151,7 +151,7 @@ public final class DirectReplyMessage {
     public static final Unit json$lambda$0(JsonBuilder Json) {
         Intrinsics.checkNotNullParameter(Json, "$this$Json");
         Json.c(true);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     public static final /* synthetic */ void write$Self$notification_api_release(DirectReplyMessage directReplyMessage, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {

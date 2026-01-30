@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/powerups/native/GuildPowerupsDeactivateAlert.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: GuildPowerupsDeactivateAlert, environment: var1
-        _fun102851: for (var _fun102851_ip = 0;;) switch (_fun102851_ip) {
+        _fun103106: for (var _fun103106_ip = 0;;) switch (_fun103106_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.guildId;
@@ -175,8 +175,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = null;
                 var7 = var8 != var20;
                 if (!var7) {
-                    _fun102851_ip = 499;
-                    continue _fun102851
+                    _fun103106_ip = 499;
+                    continue _fun103106
                 }
             case 434:
                 var14 = _closure1_slot4;
@@ -277,8 +277,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7[0] = var10;
                 var8 = var8 != var12;
                 if (!var8) {
-                    _fun102851_ip = 881;
-                    continue _fun102851
+                    _fun103106_ip = 881;
+                    continue _fun103106
                 }
             case 819:
                 var11 = _closure1_slot4;
@@ -307,4 +307,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 1297, 671, 13377, 13378, 13379, 3980, 5348, 1234, 1881, 3980, 3895, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 1297, 671, 13402, 13403, 13404, 3986, 5352, 1234, 1881, 3986, 3901, 2]);

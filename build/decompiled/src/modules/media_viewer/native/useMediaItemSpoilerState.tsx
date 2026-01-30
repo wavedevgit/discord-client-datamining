@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/media_viewer/native/useMediaItemSpoilerState.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: useMediaItemSpoilerState, environment: var1
-        _fun72953: for (var _fun72953_ip = 0;;) switch (_fun72953_ip) {
+        _fun72980: for (var _fun72980_ip = 0;;) switch (_fun72980_ip) {
             case 0:
                 var0 = arg0;
                 var _closure2_slot0 = var0;
@@ -77,8 +77,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.bind(var5)(var3);
                 var3 = var6.useSharedValue;
                 if (!var0) {
-                    _fun72953_ip = 126;
-                    continue _fun72953
+                    _fun72980_ip = 126;
+                    continue _fun72980
                 }
             case 123:
                 var8 = var9;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3[0] = var0;
                 var3[1] = var6;
                 var0 = function() { // Environment: var1
-                    _fun72955: for (var _fun72955_ip = 0;;) switch (_fun72955_ip) {
+                    _fun72982: for (var _fun72982_ip = 0;;) switch (_fun72982_ip) {
                         case 0:
                             var3 = _closure2_slot3;
                             var2 = var3.set;
@@ -105,8 +105,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = _closure2_slot1;
                             var6 = 0;
                             if (!var4) {
-                                _fun72955_ip = 54;
-                                continue _fun72955
+                                _fun72982_ip = 54;
+                                continue _fun72982
                             }
                         case 51:
                             var6 = 1;
@@ -190,4 +190,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useMediaItemSpoilerState = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 8798, 3677, 4050, 4840, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 8802, 3679, 4056, 4846, 2]);

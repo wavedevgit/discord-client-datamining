@@ -40,4 +40,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var1.accessibilityPreferencesSharedValue;
     var2.accessibilityPreferencesSharedValue = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12626, 2, 4835]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12651, 2, 4841]);

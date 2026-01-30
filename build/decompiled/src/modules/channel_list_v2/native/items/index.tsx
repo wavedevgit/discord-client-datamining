@@ -46,4 +46,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = var3.bind(var0)(var1);
     var2.RedesignVoiceUserSummary = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 13291, 13292, 13307]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 13316, 13317, 13332]);

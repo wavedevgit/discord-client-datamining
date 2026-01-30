@@ -16,24 +16,24 @@ import zs.k;
 public final class b implements KSerializer {
 
     /* renamed from: a  reason: collision with root package name */
-    private final KClass f53792a;
+    private final KClass f53808a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final KSerializer f53793b;
+    private final KSerializer f53809b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final List f53794c;
+    private final List f53810c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final SerialDescriptor f53795d;
+    private final SerialDescriptor f53811d;
 
     public b(KClass serializableClass, KSerializer kSerializer, KSerializer[] typeArgumentsSerializers) {
         Intrinsics.checkNotNullParameter(serializableClass, "serializableClass");
         Intrinsics.checkNotNullParameter(typeArgumentsSerializers, "typeArgumentsSerializers");
-        this.f53792a = serializableClass;
-        this.f53793b = kSerializer;
-        this.f53794c = kotlin.collections.i.e(typeArgumentsSerializers);
-        this.f53795d = zs.b.c(zs.j.d("kotlinx.serialization.ContextualSerializer", k.a.f56100a, new SerialDescriptor[0], new Function1() { // from class: xs.a
+        this.f53808a = serializableClass;
+        this.f53809b = kSerializer;
+        this.f53810c = kotlin.collections.i.e(typeArgumentsSerializers);
+        this.f53811d = zs.b.c(zs.j.d("kotlinx.serialization.ContextualSerializer", k.a.f56116a, new SerialDescriptor[0], new Function1() { // from class: xs.a
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit b10;
@@ -48,7 +48,7 @@ public final class b implements KSerializer {
         List list;
         SerialDescriptor descriptor;
         Intrinsics.checkNotNullParameter(buildSerialDescriptor, "$this$buildSerialDescriptor");
-        KSerializer kSerializer = bVar.f53793b;
+        KSerializer kSerializer = bVar.f53809b;
         if (kSerializer != null && (descriptor = kSerializer.getDescriptor()) != null) {
             list = descriptor.getAnnotations();
         } else {
@@ -58,17 +58,17 @@ public final class b implements KSerializer {
             list = CollectionsKt.l();
         }
         buildSerialDescriptor.h(list);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private final KSerializer c(dt.b bVar) {
-        KSerializer b10 = bVar.b(this.f53792a, this.f53794c);
+        KSerializer b10 = bVar.b(this.f53808a, this.f53810c);
         if (b10 == null) {
-            KSerializer kSerializer = this.f53793b;
+            KSerializer kSerializer = this.f53809b;
             if (kSerializer != null) {
                 return kSerializer;
             }
-            u1.f(this.f53792a);
+            u1.f(this.f53808a);
             throw new ir.h();
         }
         return b10;
@@ -82,7 +82,7 @@ public final class b implements KSerializer {
 
     @Override // kotlinx.serialization.KSerializer, xs.o, kotlinx.serialization.DeserializationStrategy
     public SerialDescriptor getDescriptor() {
-        return this.f53795d;
+        return this.f53811d;
     }
 
     @Override // xs.o

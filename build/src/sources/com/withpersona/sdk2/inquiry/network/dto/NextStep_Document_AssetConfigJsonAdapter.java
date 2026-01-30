@@ -72,7 +72,7 @@ public final class NextStep_Document_AssetConfigJsonAdapter extends h {
         }
         Constructor<NextStep.Document.AssetConfig> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.Document.AssetConfig.class.getDeclaredConstructor(NextStep.Document.AssetConfig.PromptPage.class, NextStep.Document.AssetConfig.PendingPage.class, Integer.TYPE, sm.c.f49081c);
+            constructor = NextStep.Document.AssetConfig.class.getDeclaredConstructor(NextStep.Document.AssetConfig.PromptPage.class, NextStep.Document.AssetConfig.PendingPage.class, Integer.TYPE, sm.c.f49097c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

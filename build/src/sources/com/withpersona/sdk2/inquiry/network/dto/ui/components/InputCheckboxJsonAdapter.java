@@ -87,7 +87,7 @@ public final class InputCheckboxJsonAdapter extends h {
         }
         Constructor<InputCheckbox> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = InputCheckbox.class.getDeclaredConstructor(String.class, InputCheckbox.Attributes.class, InputCheckbox.InputCheckboxComponentStyle.class, Integer.TYPE, c.f49081c);
+            constructor = InputCheckbox.class.getDeclaredConstructor(String.class, InputCheckbox.Attributes.class, InputCheckbox.InputCheckboxComponentStyle.class, Integer.TYPE, c.f49097c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

@@ -20,7 +20,7 @@ public /* synthetic */ class MessageAccessoriesAdapter$onBindViewHolder$53 exten
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
         m513invokepfaIj0E(((MessageId) obj).m1093unboximpl(), ((ChannelId) obj2).m1067unboximpl());
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* renamed from: invoke-pfaIj0E  reason: not valid java name */

@@ -23,8 +23,8 @@ public final class R {
         public static int mushroom_background = 0x7f0604a5;
         public static int pastel_background = 0x7f0604c5;
         public static int pirate_background = 0x7f060534;
-        public static int sunset_background = 0x7f0605d8;
-        public static int y2k_background = 0x7f06061d;
+        public static int sunset_background = 0x7f0605dc;
+        public static int y2k_background = 0x7f060621;
 
         private color() {
         }

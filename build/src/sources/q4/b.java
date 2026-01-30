@@ -9,32 +9,32 @@ import k4.q;
 public abstract class b implements Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    private final androidx.work.impl.q f46910d = new androidx.work.impl.q();
+    private final androidx.work.impl.q f46926d = new androidx.work.impl.q();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public class a extends b {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ p0 f46911e;
+        final /* synthetic */ p0 f46927e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ UUID f46912i;
+        final /* synthetic */ UUID f46928i;
 
         a(p0 p0Var, UUID uuid) {
-            this.f46911e = p0Var;
-            this.f46912i = uuid;
+            this.f46927e = p0Var;
+            this.f46928i = uuid;
         }
 
         @Override // q4.b
         void g() {
-            WorkDatabase p10 = this.f46911e.p();
+            WorkDatabase p10 = this.f46927e.p();
             p10.e();
             try {
-                a(this.f46911e, this.f46912i.toString());
+                a(this.f46927e, this.f46928i.toString());
                 p10.A();
                 p10.i();
-                f(this.f46911e);
+                f(this.f46927e);
             } catch (Throwable th2) {
                 p10.i();
                 throw th2;
@@ -47,32 +47,32 @@ public abstract class b implements Runnable {
     class C0562b extends b {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ p0 f46913e;
+        final /* synthetic */ p0 f46929e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ String f46914i;
+        final /* synthetic */ String f46930i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ boolean f46915o;
+        final /* synthetic */ boolean f46931o;
 
         C0562b(p0 p0Var, String str, boolean z10) {
-            this.f46913e = p0Var;
-            this.f46914i = str;
-            this.f46915o = z10;
+            this.f46929e = p0Var;
+            this.f46930i = str;
+            this.f46931o = z10;
         }
 
         @Override // q4.b
         void g() {
-            WorkDatabase p10 = this.f46913e.p();
+            WorkDatabase p10 = this.f46929e.p();
             p10.e();
             try {
-                for (String str : p10.H().g(this.f46914i)) {
-                    a(this.f46913e, str);
+                for (String str : p10.H().g(this.f46930i)) {
+                    a(this.f46929e, str);
                 }
                 p10.A();
                 p10.i();
-                if (this.f46915o) {
-                    f(this.f46913e);
+                if (this.f46931o) {
+                    f(this.f46929e);
                 }
             } catch (Throwable th2) {
                 p10.i();
@@ -113,7 +113,7 @@ public abstract class b implements Runnable {
     }
 
     public k4.q d() {
-        return this.f46910d;
+        return this.f46926d;
     }
 
     void f(p0 p0Var) {
@@ -126,9 +126,9 @@ public abstract class b implements Runnable {
     public void run() {
         try {
             g();
-            this.f46910d.a(k4.q.f32985a);
+            this.f46926d.a(k4.q.f33001a);
         } catch (Throwable th2) {
-            this.f46910d.a(new q.b.a(th2));
+            this.f46926d.a(new q.b.a(th2));
         }
     }
 }

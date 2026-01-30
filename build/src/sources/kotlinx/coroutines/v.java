@@ -5,9 +5,9 @@ import gs.w0;
 final class v {
 
     /* renamed from: a  reason: collision with root package name */
-    public final w0 f36359a;
+    public final w0 f36375a;
 
     public v(w0 w0Var) {
-        this.f36359a = w0Var;
+        this.f36375a = w0Var;
     }
 }

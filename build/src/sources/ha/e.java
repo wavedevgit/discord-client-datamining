@@ -16,29 +16,29 @@ import sa.n;
 public class e implements d {
 
     /* renamed from: e  reason: collision with root package name */
-    static c f27401e = g("com.facebook.animated.gif.GifImage");
+    static c f27417e = g("com.facebook.animated.gif.GifImage");
 
     /* renamed from: f  reason: collision with root package name */
-    static c f27402f = g("com.facebook.animated.webp.WebPImage");
+    static c f27418f = g("com.facebook.animated.webp.WebPImage");
 
     /* renamed from: a  reason: collision with root package name */
-    private final ia.b f27403a;
+    private final ia.b f27419a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final PlatformBitmapFactory f27404b;
+    private final PlatformBitmapFactory f27420b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f27405c;
+    private final boolean f27421c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f27406d;
+    private final boolean f27422d;
 
     public e(ia.b bVar, PlatformBitmapFactory platformBitmapFactory, boolean z10) {
         this(bVar, platformBitmapFactory, z10, true);
     }
 
     private CloseableReference c(int i10, int i11, Bitmap.Config config) {
-        CloseableReference d10 = this.f27404b.d(i10, i11, config);
+        CloseableReference d10 = this.f27420b.d(i10, i11, config);
         ((Bitmap) d10.D0()).eraseColor(0);
         ((Bitmap) d10.D0()).setHasAlpha(true);
         return d10;
@@ -46,14 +46,14 @@ public class e implements d {
 
     private CloseableReference d(ga.c cVar, Bitmap.Config config, int i10) {
         CloseableReference c10 = c(cVar.getWidth(), cVar.getHeight(), config);
-        new ia.d(this.f27403a.a(ga.e.b(cVar), null), this.f27405c, new a()).h(i10, (Bitmap) c10.D0());
+        new ia.d(this.f27419a.a(ga.e.b(cVar), null), this.f27421c, new a()).h(i10, (Bitmap) c10.D0());
         return c10;
     }
 
     private List e(ga.c cVar, Bitmap.Config config) {
-        ga.a a10 = this.f27403a.a(ga.e.b(cVar), null);
+        ga.a a10 = this.f27419a.a(ga.e.b(cVar), null);
         ArrayList arrayList = new ArrayList(a10.a());
-        ia.d dVar = new ia.d(a10, this.f27405c, new b(arrayList));
+        ia.d dVar = new ia.d(a10, this.f27421c, new b(arrayList));
         for (int i10 = 0; i10 < a10.a(); i10++) {
             CloseableReference c10 = c(a10.getWidth(), a10.getHeight(), config);
             dVar.h(i10, (Bitmap) c10.D0());
@@ -74,7 +74,7 @@ public class e implements d {
                 i10 = 0;
             }
             if (imageDecodeOptions.f11452g) {
-                f j02 = f.j0(d(cVar, config, i10), n.f48889d, 0);
+                f j02 = f.j0(d(cVar, config, i10), n.f48905d, 0);
                 CloseableReference.N(null);
                 CloseableReference.V(null);
                 return j02;
@@ -97,7 +97,7 @@ public class e implements d {
                 if (imageDecodeOptions.f11448c && closeableReference == null) {
                     closeableReference = d(cVar, config, i10);
                 }
-                sa.c cVar2 = new sa.c(ga.e.f(cVar).k(closeableReference).j(i10).i(list).h(null).l(str).a(), this.f27406d);
+                sa.c cVar2 = new sa.c(ga.e.f(cVar).k(closeableReference).j(i10).i(list).h(null).l(str).a(), this.f27422d);
                 CloseableReference.N(closeableReference);
                 CloseableReference.V(list);
                 return cVar2;
@@ -125,15 +125,15 @@ public class e implements d {
     @Override // ha.d
     public sa.e a(k kVar, ImageDecodeOptions imageDecodeOptions, Bitmap.Config config) {
         ga.c e10;
-        if (f27401e != null) {
+        if (f27417e != null) {
             CloseableReference x10 = kVar.x();
             j.g(x10);
             try {
                 h hVar = (h) x10.D0();
                 if (hVar.p() != null) {
-                    e10 = f27401e.d(hVar.p(), imageDecodeOptions);
+                    e10 = f27417e.d(hVar.p(), imageDecodeOptions);
                 } else {
-                    e10 = f27401e.e(hVar.C(), hVar.size(), imageDecodeOptions);
+                    e10 = f27417e.e(hVar.C(), hVar.size(), imageDecodeOptions);
                 }
                 sa.e f10 = f(kVar.D0(), imageDecodeOptions, e10, config);
                 CloseableReference.N(x10);
@@ -149,15 +149,15 @@ public class e implements d {
     @Override // ha.d
     public sa.e b(k kVar, ImageDecodeOptions imageDecodeOptions, Bitmap.Config config) {
         ga.c e10;
-        if (f27402f != null) {
+        if (f27418f != null) {
             CloseableReference x10 = kVar.x();
             j.g(x10);
             try {
                 h hVar = (h) x10.D0();
                 if (hVar.p() != null) {
-                    e10 = f27402f.d(hVar.p(), imageDecodeOptions);
+                    e10 = f27418f.d(hVar.p(), imageDecodeOptions);
                 } else {
-                    e10 = f27402f.e(hVar.C(), hVar.size(), imageDecodeOptions);
+                    e10 = f27418f.e(hVar.C(), hVar.size(), imageDecodeOptions);
                 }
                 sa.e f10 = f(kVar.D0(), imageDecodeOptions, e10, config);
                 CloseableReference.N(x10);
@@ -171,10 +171,10 @@ public class e implements d {
     }
 
     public e(ia.b bVar, PlatformBitmapFactory platformBitmapFactory, boolean z10, boolean z11) {
-        this.f27403a = bVar;
-        this.f27404b = platformBitmapFactory;
-        this.f27405c = z10;
-        this.f27406d = z11;
+        this.f27419a = bVar;
+        this.f27420b = platformBitmapFactory;
+        this.f27421c = z10;
+        this.f27422d = z11;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -198,15 +198,15 @@ public class e implements d {
     public class b implements d.b {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ List f27408a;
+        final /* synthetic */ List f27424a;
 
         b(List list) {
-            this.f27408a = list;
+            this.f27424a = list;
         }
 
         @Override // ia.d.b
         public CloseableReference b(int i10) {
-            return CloseableReference.E((CloseableReference) this.f27408a.get(i10));
+            return CloseableReference.E((CloseableReference) this.f27424a.get(i10));
         }
 
         @Override // ia.d.b

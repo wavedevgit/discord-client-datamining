@@ -1,15 +1,15 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = function(arg0) { // Original name: isPropertyKey, environment: var0
-        _fun28972: for (var _fun28972_ip = 0;;) switch (_fun28972_ip) {
+        _fun28973: for (var _fun28973_ip = 0;;) switch (_fun28973_ip) {
             case 0:
                 var0 = arg0;
                 var2 = typeof var0;
                 var0 = 'string';
                 var0 = var0 === var2;
                 if (var0) {
-                    _fun28972_ip = 25;
-                    continue _fun28972
+                    _fun28973_ip = 25;
+                    continue _fun28973
                 }
             case 17:
                 var1 = 'symbol';

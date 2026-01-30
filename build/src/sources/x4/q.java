@@ -8,37 +8,37 @@ import x4.r;
 public final class q extends r {
 
     /* renamed from: d  reason: collision with root package name */
-    private final c0 f53191d;
+    private final c0 f53207d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final iu.h f53192e;
+    private final iu.h f53208e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final String f53193i;
+    private final String f53209i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final Closeable f53194o;
+    private final Closeable f53210o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final r.a f53195p;
+    private final r.a f53211p;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f53196q;
+    private boolean f53212q;
 
     /* renamed from: r  reason: collision with root package name */
-    private BufferedSource f53197r;
+    private BufferedSource f53213r;
 
     public q(c0 c0Var, iu.h hVar, String str, Closeable closeable, r.a aVar) {
         super(null);
-        this.f53191d = c0Var;
-        this.f53192e = hVar;
-        this.f53193i = str;
-        this.f53194o = closeable;
-        this.f53195p = aVar;
+        this.f53207d = c0Var;
+        this.f53208e = hVar;
+        this.f53209i = str;
+        this.f53210o = closeable;
+        this.f53211p = aVar;
     }
 
     private final void l() {
-        if (!this.f53196q) {
+        if (!this.f53212q) {
             return;
         }
         throw new IllegalStateException("closed");
@@ -46,18 +46,18 @@ public final class q extends r {
 
     @Override // x4.r
     public r.a a() {
-        return this.f53195p;
+        return this.f53211p;
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public synchronized void close() {
         try {
-            this.f53196q = true;
-            BufferedSource bufferedSource = this.f53197r;
+            this.f53212q = true;
+            BufferedSource bufferedSource = this.f53213r;
             if (bufferedSource != null) {
                 k5.k.d(bufferedSource);
             }
-            Closeable closeable = this.f53194o;
+            Closeable closeable = this.f53210o;
             if (closeable != null) {
                 k5.k.d(closeable);
             }
@@ -69,20 +69,20 @@ public final class q extends r {
     @Override // x4.r
     public synchronized BufferedSource h() {
         l();
-        BufferedSource bufferedSource = this.f53197r;
+        BufferedSource bufferedSource = this.f53213r;
         if (bufferedSource != null) {
             return bufferedSource;
         }
-        BufferedSource d10 = iu.x.d(x().q(this.f53191d));
-        this.f53197r = d10;
+        BufferedSource d10 = iu.x.d(x().q(this.f53207d));
+        this.f53213r = d10;
         return d10;
     }
 
     public final String n() {
-        return this.f53193i;
+        return this.f53209i;
     }
 
     public iu.h x() {
-        return this.f53192e;
+        return this.f53208e;
     }
 }

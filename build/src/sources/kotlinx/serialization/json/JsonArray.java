@@ -23,7 +23,7 @@ public final class JsonArray extends JsonElement implements List<JsonElement>, K
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f36398d;
+    private final List f36414d;
 
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¨\u0006\u0007"}, d2 = {"Lkotlinx/serialization/json/JsonArray$Companion;", "", "<init>", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/json/JsonArray;", "kotlinx-serialization-json"}, k = 1, mv = {2, 0, 0}, xi = 48)
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -45,7 +45,7 @@ public final class JsonArray extends JsonElement implements List<JsonElement>, K
     public JsonArray(List content) {
         super(null);
         Intrinsics.checkNotNullParameter(content, "content");
-        this.f36398d = content;
+        this.f36414d = content;
     }
 
     @Override // java.util.List
@@ -60,13 +60,13 @@ public final class JsonArray extends JsonElement implements List<JsonElement>, K
 
     public boolean b(JsonElement element) {
         Intrinsics.checkNotNullParameter(element, "element");
-        return this.f36398d.contains(element);
+        return this.f36414d.contains(element);
     }
 
     @Override // java.util.List
     /* renamed from: c */
     public JsonElement get(int i10) {
-        return (JsonElement) this.f36398d.get(i10);
+        return (JsonElement) this.f36414d.get(i10);
     }
 
     @Override // java.util.List, java.util.Collection
@@ -85,31 +85,31 @@ public final class JsonArray extends JsonElement implements List<JsonElement>, K
     @Override // java.util.List, java.util.Collection
     public boolean containsAll(Collection elements) {
         Intrinsics.checkNotNullParameter(elements, "elements");
-        return this.f36398d.containsAll(elements);
+        return this.f36414d.containsAll(elements);
     }
 
     public int d() {
-        return this.f36398d.size();
+        return this.f36414d.size();
     }
 
     public int e(JsonElement element) {
         Intrinsics.checkNotNullParameter(element, "element");
-        return this.f36398d.indexOf(element);
+        return this.f36414d.indexOf(element);
     }
 
     @Override // java.util.List, java.util.Collection
     public boolean equals(Object obj) {
-        return Intrinsics.areEqual(this.f36398d, obj);
+        return Intrinsics.areEqual(this.f36414d, obj);
     }
 
     public int f(JsonElement element) {
         Intrinsics.checkNotNullParameter(element, "element");
-        return this.f36398d.lastIndexOf(element);
+        return this.f36414d.lastIndexOf(element);
     }
 
     @Override // java.util.List, java.util.Collection
     public int hashCode() {
-        return this.f36398d.hashCode();
+        return this.f36414d.hashCode();
     }
 
     @Override // java.util.List
@@ -122,12 +122,12 @@ public final class JsonArray extends JsonElement implements List<JsonElement>, K
 
     @Override // java.util.List, java.util.Collection
     public boolean isEmpty() {
-        return this.f36398d.isEmpty();
+        return this.f36414d.isEmpty();
     }
 
     @Override // java.util.List, java.util.Collection, java.lang.Iterable
     public Iterator iterator() {
-        return this.f36398d.iterator();
+        return this.f36414d.iterator();
     }
 
     @Override // java.util.List
@@ -140,7 +140,7 @@ public final class JsonArray extends JsonElement implements List<JsonElement>, K
 
     @Override // java.util.List
     public ListIterator<JsonElement> listIterator() {
-        return this.f36398d.listIterator();
+        return this.f36414d.listIterator();
     }
 
     @Override // java.util.List
@@ -180,7 +180,7 @@ public final class JsonArray extends JsonElement implements List<JsonElement>, K
 
     @Override // java.util.List
     public List<JsonElement> subList(int i10, int i11) {
-        return this.f36398d.subList(i10, i11);
+        return this.f36414d.subList(i10, i11);
     }
 
     @Override // java.util.List, java.util.Collection
@@ -189,7 +189,7 @@ public final class JsonArray extends JsonElement implements List<JsonElement>, K
     }
 
     public String toString() {
-        return CollectionsKt.x0(this.f36398d, ",", "[", "]", 0, null, null, 56, null);
+        return CollectionsKt.x0(this.f36414d, ",", "[", "]", 0, null, null, 56, null);
     }
 
     @Override // java.util.List, java.util.Collection
@@ -204,7 +204,7 @@ public final class JsonArray extends JsonElement implements List<JsonElement>, K
 
     @Override // java.util.List
     public ListIterator<JsonElement> listIterator(int i10) {
-        return this.f36398d.listIterator(i10);
+        return this.f36414d.listIterator(i10);
     }
 
     @Override // java.util.List, java.util.Collection

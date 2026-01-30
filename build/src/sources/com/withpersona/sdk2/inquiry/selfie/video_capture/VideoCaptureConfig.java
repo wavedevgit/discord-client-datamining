@@ -51,7 +51,7 @@ public final class VideoCaptureConfig {
         boolean z11;
         boolean z12 = false;
         boolean z13 = true;
-        if (this.f20412b.contains(NextStep.Selfie.CaptureFileType.Video) && CollectionsKt.firstOrNull(this.f20413c) == a.f49090d) {
+        if (this.f20412b.contains(NextStep.Selfie.CaptureFileType.Video) && CollectionsKt.firstOrNull(this.f20413c) == a.f49106d) {
             z10 = true;
         } else {
             z10 = false;
@@ -63,10 +63,10 @@ public final class VideoCaptureConfig {
         }
         if (z10 && !z11) {
             List list = this.f20413c;
-            a aVar = a.f49091e;
+            a aVar = a.f49107e;
             if (list.contains(aVar)) {
                 if (f.e(context)) {
-                    Result.a aVar2 = Result.f33279e;
+                    Result.a aVar2 = Result.f33295e;
                     return Result.b(c.a(new RuntimeException()));
                 }
                 return Result.b(aVar);
@@ -76,15 +76,15 @@ public final class VideoCaptureConfig {
                 for (NextStep.Selfie.CaptureFileType captureFileType : list2) {
                     if (captureFileType != NextStep.Selfie.CaptureFileType.Video && captureFileType != NextStep.Selfie.CaptureFileType.Unknown) {
                         if (f.e(context)) {
-                            Result.a aVar3 = Result.f33279e;
+                            Result.a aVar3 = Result.f33295e;
                             return Result.b(c.a(new RuntimeException()));
                         }
-                        Result.a aVar4 = Result.f33279e;
-                        return Result.b(a.f49092i);
+                        Result.a aVar4 = Result.f33295e;
+                        return Result.b(a.f49108i);
                     }
                 }
             }
-            Result.a aVar5 = Result.f33279e;
+            Result.a aVar5 = Result.f33295e;
             return Result.b(c.a(new RuntimeException()));
         }
         if (bool2 != null) {
@@ -92,7 +92,7 @@ public final class VideoCaptureConfig {
         }
         if (z13) {
             List list3 = this.f20413c;
-            a aVar6 = a.f49091e;
+            a aVar6 = a.f49107e;
             if (list3.contains(aVar6)) {
                 return Result.b(aVar6);
             }
@@ -101,13 +101,13 @@ public final class VideoCaptureConfig {
             z12 = bool.booleanValue();
         }
         if (z12) {
-            Result.a aVar7 = Result.f33279e;
-            return Result.b(a.f49092i);
+            Result.a aVar7 = Result.f33295e;
+            return Result.b(a.f49108i);
         }
-        Result.a aVar8 = Result.f33279e;
+        Result.a aVar8 = Result.f33295e;
         a aVar9 = (a) CollectionsKt.firstOrNull(this.f20413c);
         if (aVar9 == null) {
-            aVar9 = a.f49092i;
+            aVar9 = a.f49108i;
         }
         return Result.b(aVar9);
     }
@@ -135,14 +135,14 @@ public final class VideoCaptureConfig {
         boolean z10;
         Intrinsics.checkNotNullParameter(applicationContext, "applicationContext");
         if (!this.f20412b.contains(NextStep.Selfie.CaptureFileType.Video)) {
-            Result.a aVar = Result.f33279e;
+            Result.a aVar = Result.f33295e;
             return Result.b(Boolean.FALSE);
         }
         Object f10 = f(bool, bool2, applicationContext);
         Throwable e10 = Result.e(f10);
         if (e10 == null) {
             a aVar2 = (a) f10;
-            if (aVar2 != a.f49090d && aVar2 != a.f49091e) {
+            if (aVar2 != a.f49106d && aVar2 != a.f49107e) {
                 z10 = false;
             } else {
                 z10 = true;
@@ -168,8 +168,8 @@ public final class VideoCaptureConfig {
         if (this.f20412b.contains(NextStep.Selfie.CaptureFileType.Video)) {
             return e(bool, bool2, applicationContext);
         }
-        Result.a aVar = Result.f33279e;
-        return Result.b(a.f49092i);
+        Result.a aVar = Result.f33295e;
+        return Result.b(a.f49108i);
     }
 
     public int hashCode() {

@@ -5,7 +5,7 @@ import ui.c;
 final class hb implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final hb f38242a = new hb();
+    static final hb f38258a = new hb();
 
     static {
         c.b a10 = ui.c.a("userSelectedArea");

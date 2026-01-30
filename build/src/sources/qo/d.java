@@ -3,10 +3,10 @@ package qo;
 public final class d implements tq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f47543a;
+    private final c f47559a;
 
     public d(c cVar) {
-        this.f47543a = cVar;
+        this.f47559a = cVar;
     }
 
     public static d a(c cVar) {
@@ -20,6 +20,6 @@ public final class d implements tq.d {
     @Override // javax.inject.Provider
     /* renamed from: c */
     public mo.f get() {
-        return b(this.f47543a);
+        return b(this.f47559a);
     }
 }

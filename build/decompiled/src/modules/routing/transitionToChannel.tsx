@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
     var4 = function(arg0, arg1) { // Original name: transitionToChannel, environment: var1
-        _fun35335: for (var _fun35335_ip = 0;;) switch (_fun35335_ip) {
+        _fun35386: for (var _fun35386_ip = 0;;) switch (_fun35386_ip) {
             case 0:
                 var5 = arg1;
                 var3 = _closure1_slot3;
@@ -18,8 +18,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.bind(var3)(var0);
                 var2 = null;
                 if (!(var2 != var0)) {
-                    _fun35335_ip = 233;
-                    continue _fun35335
+                    _fun35386_ip = 233;
+                    continue _fun35386
                 }
             case 32:
                 var6 = _closure1_slot0;
@@ -55,23 +55,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var8.bind(var9)(var7, var6);
                 var2 = var2 != var5;
                 if (!var2) {
-                    _fun35335_ip = 180;
-                    continue _fun35335
+                    _fun35386_ip = 180;
+                    continue _fun35386
                 }
             case 174:
                 var2 = var5.openTextInVoiceIfVoiceChannel;
             case 180:
                 if (!var2) {
-                    _fun35335_ip = 193;
-                    continue _fun35335
+                    _fun35386_ip = 193;
+                    continue _fun35386
                 }
             case 183:
                 var5 = var0.isGuildVocal;
                 var2 = var5.bind(var0)();
             case 193:
                 if (!var2) {
-                    _fun35335_ip = 233;
-                    continue _fun35335
+                    _fun35386_ip = 233;
+                    continue _fun35386
                 }
             case 196:
                 var2 = _closure1_slot1;
@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.transitionToThread = var4;
     var2.transitionToThreadMessage = var3;
     var3 = function(arg0, arg1, arg2, arg3) { // Original name: tryTransitionToThreadMessage, environment: var1
-        _fun35338: for (var _fun35338_ip = 0;;) switch (_fun35338_ip) {
+        _fun35389: for (var _fun35389_ip = 0;;) switch (_fun35389_ip) {
             case 0:
                 var4 = arg3;
                 var3 = _closure1_slot3;
@@ -199,16 +199,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var2.bind(var3)(var1);
                 var1 = null;
                 if (!(var1 == var3)) {
-                    _fun35338_ip = 46;
-                    continue _fun35338
+                    _fun35389_ip = 46;
+                    continue _fun35389
                 }
             case 29:
                 var5 = _closure1_slot5;
                 var2 = undefined;
                 var1 = arg0;
                 var1 = var5.bind(var2)(var1, var4);
-                _fun35338_ip = 62;
-                continue _fun35338;
+                _fun35389_ip = 62;
+                continue _fun35389;
             case 46:
                 var2 = _closure1_slot6;
                 var1 = undefined;
@@ -221,7 +221,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.tryTransitionToThreadMessage = var3;
     var3 = function(arg0, arg1, arg2) { // Original name: transitionToMessage, environment: var1
-        _fun35339: for (var _fun35339_ip = 0;;) switch (_fun35339_ip) {
+        _fun35390: for (var _fun35390_ip = 0;;) switch (_fun35390_ip) {
             case 0:
                 var3 = _closure1_slot3;
                 var2 = var3.getChannel;
@@ -229,8 +229,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.bind(var3)(var0);
                 var2 = null;
                 if (!(var2 != var0)) {
-                    _fun35339_ip = 127;
-                    continue _fun35339
+                    _fun35390_ip = 127;
+                    continue _fun35390
                 }
             case 26:
                 var4 = _closure1_slot0;
@@ -287,4 +287,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.transitionToStaticChannelRoute = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 660, 3898, 3899, 1220, 7838, 44, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 660, 3904, 3905, 1220, 7841, 44, 2]);

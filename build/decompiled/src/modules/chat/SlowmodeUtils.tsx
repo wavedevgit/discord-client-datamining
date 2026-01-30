@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
     var0 = function(arg0, arg1, arg2) { // Original name: canBypassSlowmodeHelper, environment: var1
-        _fun54143: for (var _fun54143_ip = 0;;) switch (_fun54143_ip) {
+        _fun54188: for (var _fun54188_ip = 0;;) switch (_fun54188_ip) {
             case 0:
                 var4 = arg0;
                 var6 = arg1;
@@ -19,8 +19,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.BYPASS_SLOWMODE;
                 var0 = var2.bind(var3)(var0, var4);
                 if (var0) {
-                    _fun54143_ip = 243;
-                    continue _fun54143
+                    _fun54188_ip = 243;
+                    continue _fun54188
                 }
             case 40:
                 var5 = _closure1_slot1;
@@ -38,22 +38,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var5.bind(var7)(var2);
                 var2 = var2.enabled;
                 if (var2) {
-                    _fun54143_ip = 239;
-                    continue _fun54143
+                    _fun54188_ip = 239;
+                    continue _fun54188
                 }
             case 105:
                 var2 = _closure1_slot4;
                 var2 = var2.SendMessage;
                 if (!(var2 !== var6)) {
-                    _fun54143_ip = 190;
-                    continue _fun54143
+                    _fun54188_ip = 190;
+                    continue _fun54188
                 }
             case 119:
                 var2 = _closure1_slot4;
                 var2 = var2.CreateThread;
                 if (!(var2 !== var6)) {
-                    _fun54143_ip = 166;
-                    continue _fun54143
+                    _fun54188_ip = 166;
+                    continue _fun54188
                 }
             case 133:
                 var5 = _closure1_slot0;
@@ -76,8 +76,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.MANAGE_CHANNELS;
                 var0 = var2.bind(var3)(var0, var4);
                 if (var0) {
-                    _fun54143_ip = 237;
-                    continue _fun54143
+                    _fun54188_ip = 237;
+                    continue _fun54188
                 }
             case 215:
                 var2 = var3.can;
@@ -163,4 +163,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useCanBypassSlowmode = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3050, 6493, 660, 6495, 1304, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3050, 6496, 660, 6498, 1304, 566, 2]);

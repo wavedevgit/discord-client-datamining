@@ -33,22 +33,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/voice/UserSettingsVoice.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: UserSettingsVoiceForm, environment: var1
-        _fun67867: for (var _fun67867_ip = 0;;) switch (_fun67867_ip) {
+        _fun67912: for (var _fun67912_ip = 0;;) switch (_fun67912_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.disableForm;
                 var4 = undefined;
                 if (!(var0 === var4)) {
-                    _fun67867_ip = 17;
-                    continue _fun67867
+                    _fun67912_ip = 17;
+                    continue _fun67912
                 }
             case 15:
                 var0 = false;
             case 17:
                 var3 = _closure1_slot3;
                 if (var0) {
-                    _fun67867_ip = 91;
-                    continue _fun67867
+                    _fun67912_ip = 91;
+                    continue _fun67912
                 }
             case 27:
                 var2 = _closure1_slot0;
@@ -66,8 +66,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var3.bind(var4)(var6, var5);
                 var0.children = var5;
                 var0 = var3.bind(var4)(var2, var0);
-                _fun67867_ip = 119;
-                continue _fun67867;
+                _fun67912_ip = 119;
+                continue _fun67912;
             case 91:
                 var2 = _closure1_slot1;
                 var5 = _closure1_slot2;
@@ -82,4 +82,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 8423, 5335, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 8426, 5339, 2]);

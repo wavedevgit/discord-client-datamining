@@ -96,7 +96,7 @@ public final class TextureViewEglRenderer extends EglRenderer implements Texture
                     this.rotatedFrameHeight = videoFrame.getRotatedHeight();
                     this.frameRotation = videoFrame.getRotation();
                 }
-                Unit unit = Unit.f33282a;
+                Unit unit = Unit.f33298a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -112,7 +112,7 @@ public final class TextureViewEglRenderer extends EglRenderer implements Texture
                 this.rotatedFrameWidth = 0;
                 this.rotatedFrameHeight = 0;
                 this.frameRotation = 0;
-                Unit unit = Unit.f33282a;
+                Unit unit = Unit.f33298a;
             }
             init();
             setErrorCallback(this);
@@ -159,7 +159,7 @@ public final class TextureViewEglRenderer extends EglRenderer implements Texture
                 @Override // kotlin.jvm.functions.Function0
                 public /* bridge */ /* synthetic */ Object invoke() {
                     m940invoke();
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
 
                 /* renamed from: invoke  reason: collision with other method in class */

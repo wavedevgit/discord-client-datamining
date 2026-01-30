@@ -358,7 +358,7 @@ public final class AudioPlayerManager {
             mediaPlayerState = event;
             function1.invoke(event);
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @NotNull

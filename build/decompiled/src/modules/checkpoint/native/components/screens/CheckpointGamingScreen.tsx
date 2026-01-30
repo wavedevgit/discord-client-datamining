@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var11;
     var _closure1_slot2 = var6;
     var1 = function(arg0) { // Original name: CheckpointGame, environment: var3
-        _fun86946: for (var _fun86946_ip = 0;;) switch (_fun86946_ip) {
+        _fun86992: for (var _fun86992_ip = 0;;) switch (_fun86992_ip) {
             case 0:
                 var1 = arg0;
                 var21 = var1.index;
@@ -42,8 +42,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.bind(var5)(var2, var1);
                 var8 = null;
                 if (!(var8 == var4)) {
-                    _fun86946_ip = 164;
-                    continue _fun86946
+                    _fun86992_ip = 164;
+                    continue _fun86992
                 }
             case 114:
                 var2 = _closure1_slot1;
@@ -55,16 +55,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var1.id = var9;
                 if (!(var8 != var7)) {
-                    _fun86946_ip = 153;
-                    continue _fun86946
+                    _fun86992_ip = 153;
+                    continue _fun86992
                 }
             case 150:
                 var6 = var7;
             case 153:
                 var1.icon = var6;
                 var14 = var2.bind(var5)(var1);
-                _fun86946_ip = 195;
-                continue _fun86946;
+                _fun86992_ip = 195;
+                continue _fun86992;
             case 164:
                 var2 = _closure1_slot1;
                 var5 = _closure1_slot2;
@@ -146,8 +146,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = new Array(3);
                 var7[0] = var9;
                 if (!(var8 == var14)) {
-                    _fun86946_ip = 582;
-                    continue _fun86946
+                    _fun86992_ip = 582;
+                    continue _fun86992
                 }
             case 442:
                 var11 = _closure1_slot11;
@@ -181,8 +181,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var19.bind(var3)(var17, var13);
                 var8.children = var13;
                 var8 = var11.bind(var3)(var9, var8);
-                _fun86946_ip = 680;
-                continue _fun86946;
+                _fun86992_ip = 680;
+                continue _fun86992;
             case 582:
                 var13 = _closure1_slot11;
                 var11 = _closure1_slot1;
@@ -458,7 +458,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/checkpoint/native/components/screens/CheckpointGamingScreen.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function() { // Original name: CheckpointGamingScreen, environment: var3
-        _fun86949: for (var _fun86949_ip = 0;;) switch (_fun86949_ip) {
+        _fun86995: for (var _fun86995_ip = 0;;) switch (_fun86995_ip) {
             case 0:
                 var0 = _closure1_slot13;
                 var3 = undefined;
@@ -481,8 +481,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.bind(var4)(var1, var0);
                 var0 = var0.applications;
                 if (!(var3 === var0)) {
-                    _fun86949_ip = 96;
-                    continue _fun86949
+                    _fun86995_ip = 96;
+                    continue _fun86995
                 }
             case 75:
                 var1 = {};
@@ -680,4 +680,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.CheckpointGame = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 4627, 11128, 9119, 483, 33, 1297, 671, 566, 1417, 11130, 3110, 4660, 7803, 3895, 11137, 1234, 2267, 11132, 5284, 11144, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 4633, 11134, 9123, 483, 33, 1297, 671, 566, 1417, 11136, 3110, 4666, 7806, 3901, 11143, 1234, 2267, 11138, 5288, 11150, 2]);

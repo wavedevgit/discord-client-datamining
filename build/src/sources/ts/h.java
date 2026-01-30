@@ -8,16 +8,16 @@ import kotlin.jvm.internal.Intrinsics;
 public class h implements o {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f49876a;
+    private final List f49892a;
 
     public h(List formats) {
         Intrinsics.checkNotNullParameter(formats, "formats");
-        this.f49876a = formats;
+        this.f49892a = formats;
     }
 
     @Override // ts.o
     public us.e a() {
-        List<s> list = this.f49876a;
+        List<s> list = this.f49892a;
         ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
         for (s sVar : list) {
             arrayList.add(sVar.a());
@@ -30,7 +30,7 @@ public class h implements o {
 
     @Override // ts.o
     public vs.q b() {
-        List<s> list = this.f49876a;
+        List<s> list = this.f49892a;
         ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
         for (s sVar : list) {
             arrayList.add(sVar.b());
@@ -39,21 +39,21 @@ public class h implements o {
     }
 
     public final List c() {
-        return this.f49876a;
+        return this.f49892a;
     }
 
     public boolean equals(Object obj) {
-        if ((obj instanceof h) && Intrinsics.areEqual(this.f49876a, ((h) obj).f49876a)) {
+        if ((obj instanceof h) && Intrinsics.areEqual(this.f49892a, ((h) obj).f49892a)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f49876a.hashCode();
+        return this.f49892a.hashCode();
     }
 
     public String toString() {
-        return "ConcatenatedFormatStructure(" + CollectionsKt.x0(this.f49876a, ", ", null, null, 0, null, null, 62, null) + ')';
+        return "ConcatenatedFormatStructure(" + CollectionsKt.x0(this.f49892a, ", ", null, null, 0, null, null, 62, null) + ')';
     }
 }

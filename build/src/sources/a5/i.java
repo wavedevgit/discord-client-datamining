@@ -28,6 +28,6 @@ public final class i implements h {
 
     @Override // a5.h
     public Object a(Continuation continuation) {
-        return new l(u.h(c0.a.d(c0.f31213e, this.f397a, false, 1, null), null, null, null, 14, null), MimeTypeMap.getSingleton().getMimeTypeFromExtension(tr.j.s(this.f397a)), x4.h.f53168i);
+        return new l(u.h(c0.a.d(c0.f31229e, this.f397a, false, 1, null), null, null, null, 14, null), MimeTypeMap.getSingleton().getMimeTypeFromExtension(tr.j.s(this.f397a)), x4.h.f53184i);
     }
 }

@@ -5,27 +5,27 @@ import kotlin.coroutines.Continuation;
 public final class d0 extends ks.d {
 
     /* renamed from: a  reason: collision with root package name */
-    public long f32490a = -1;
+    public long f32506a = -1;
 
     /* renamed from: b  reason: collision with root package name */
-    public Continuation f32491b;
+    public Continuation f32507b;
 
     @Override // ks.d
     /* renamed from: c */
     public boolean a(b0 b0Var) {
-        if (this.f32490a >= 0) {
+        if (this.f32506a >= 0) {
             return false;
         }
-        this.f32490a = b0Var.X();
+        this.f32506a = b0Var.X();
         return true;
     }
 
     @Override // ks.d
     /* renamed from: d */
     public Continuation[] b(b0 b0Var) {
-        long j10 = this.f32490a;
-        this.f32490a = -1L;
-        this.f32491b = null;
+        long j10 = this.f32506a;
+        this.f32506a = -1L;
+        this.f32507b = null;
         return b0Var.W(j10);
     }
 }

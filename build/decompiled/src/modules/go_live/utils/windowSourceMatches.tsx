@@ -25,14 +25,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/go_live/utils/windowSourceMatches.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0, arg1) { // Original name: windowSourceMatches, environment: var1
-        _fun32926: for (var _fun32926_ip = 0;;) switch (_fun32926_ip) {
+        _fun32931: for (var _fun32931_ip = 0;;) switch (_fun32931_ip) {
             case 0:
                 var3 = arg0;
                 var2 = arg1;
                 var0 = null;
                 if (!(var0 != var2)) {
-                    _fun32926_ip = 74;
-                    continue _fun32926
+                    _fun32931_ip = 74;
+                    continue _fun32931
                 }
             case 12:
                 var1 = var3.split;
@@ -49,8 +49,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = 'window';
                 var0 = var0 === var3;
                 if (!var0) {
-                    _fun32926_ip = 72;
-                    continue _fun32926
+                    _fun32931_ip = 72;
+                    continue _fun32931
                 }
             case 68:
                 var0 = var1 === var2;

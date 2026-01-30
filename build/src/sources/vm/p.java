@@ -12,7 +12,7 @@ public final class p implements Parcelable {
     public static final a CREATOR = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final tm.m f51279d;
+    private final tm.m f51295d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -24,11 +24,11 @@ public final class p implements Parcelable {
         /* renamed from: a */
         public p createFromParcel(Parcel parcel) {
             Intrinsics.checkNotNullParameter(parcel, "parcel");
-            ByteString.a aVar = ByteString.f44363o;
+            ByteString.a aVar = ByteString.f44379o;
             byte[] createByteArray = parcel.createByteArray();
             Intrinsics.checkNotNull(createByteArray);
             Intrinsics.checkNotNullExpressionValue(createByteArray, "parcel.createByteArray()!!");
-            return new p(tm.m.f49719c.a(ByteString.a.j(aVar, createByteArray, 0, 0, 3, null)));
+            return new p(tm.m.f49735c.a(ByteString.a.j(aVar, createByteArray, 0, 0, 3, null)));
         }
 
         @Override // android.os.Parcelable.Creator
@@ -43,11 +43,11 @@ public final class p implements Parcelable {
 
     public p(tm.m snapshot) {
         Intrinsics.checkNotNullParameter(snapshot, "snapshot");
-        this.f51279d = snapshot;
+        this.f51295d = snapshot;
     }
 
     public final tm.m a() {
-        return this.f51279d;
+        return this.f51295d;
     }
 
     @Override // android.os.Parcelable
@@ -58,6 +58,6 @@ public final class p implements Parcelable {
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeByteArray(this.f51279d.c().L());
+        dest.writeByteArray(this.f51295d.c().L());
     }
 }

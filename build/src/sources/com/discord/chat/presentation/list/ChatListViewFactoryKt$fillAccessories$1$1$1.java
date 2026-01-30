@@ -41,14 +41,14 @@ final class ChatListViewFactoryKt$fillAccessories$1$1$1 extends kotlin.coroutine
             or.b.f();
             if (this.label == 0) {
                 kotlin.c.b(obj);
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -88,11 +88,11 @@ final class ChatListViewFactoryKt$fillAccessories$1$1$1 extends kotlin.coroutine
                 return f10;
             }
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((ChatListViewFactoryKt$fillAccessories$1$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((ChatListViewFactoryKt$fillAccessories$1$1$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

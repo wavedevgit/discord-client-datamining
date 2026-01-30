@@ -29,28 +29,28 @@ import ut.e;
 public final class PublicSuffixDatabase {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f44344e = new a(null);
+    public static final a f44360e = new a(null);
 
     /* renamed from: f  reason: collision with root package name */
-    private static final byte[] f44345f = {42};
+    private static final byte[] f44361f = {42};
 
     /* renamed from: g  reason: collision with root package name */
-    private static final List f44346g = CollectionsKt.e("*");
+    private static final List f44362g = CollectionsKt.e("*");
 
     /* renamed from: h  reason: collision with root package name */
-    private static final PublicSuffixDatabase f44347h = new PublicSuffixDatabase();
+    private static final PublicSuffixDatabase f44363h = new PublicSuffixDatabase();
 
     /* renamed from: a  reason: collision with root package name */
-    private final AtomicBoolean f44348a = new AtomicBoolean(false);
+    private final AtomicBoolean f44364a = new AtomicBoolean(false);
 
     /* renamed from: b  reason: collision with root package name */
-    private final CountDownLatch f44349b = new CountDownLatch(1);
+    private final CountDownLatch f44365b = new CountDownLatch(1);
 
     /* renamed from: c  reason: collision with root package name */
-    private byte[] f44350c;
+    private byte[] f44366c;
 
     /* renamed from: d  reason: collision with root package name */
-    private byte[] f44351d;
+    private byte[] f44367d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -137,7 +137,7 @@ public final class PublicSuffixDatabase {
         }
 
         public final PublicSuffixDatabase c() {
-            return PublicSuffixDatabase.f44347h;
+            return PublicSuffixDatabase.f44363h;
         }
 
         private a() {
@@ -150,16 +150,16 @@ public final class PublicSuffixDatabase {
         String str3;
         List l10;
         List l11;
-        if (!this.f44348a.get() && this.f44348a.compareAndSet(false, true)) {
+        if (!this.f44364a.get() && this.f44364a.compareAndSet(false, true)) {
             e();
         } else {
             try {
-                this.f44349b.await();
+                this.f44365b.await();
             } catch (InterruptedException unused) {
                 Thread.currentThread().interrupt();
             }
         }
-        if (this.f44350c != null) {
+        if (this.f44366c != null) {
             int size = list.size();
             byte[][] bArr = new byte[size];
             for (int i10 = 0; i10 < size; i10++) {
@@ -173,8 +173,8 @@ public final class PublicSuffixDatabase {
             while (true) {
                 str = null;
                 if (i11 < size) {
-                    a aVar = f44344e;
-                    byte[] bArr2 = this.f44350c;
+                    a aVar = f44360e;
+                    byte[] bArr2 = this.f44366c;
                     if (bArr2 == null) {
                         Intrinsics.throwUninitializedPropertyAccessException("publicSuffixListBytes");
                         bArr2 = null;
@@ -193,9 +193,9 @@ public final class PublicSuffixDatabase {
                 byte[][] bArr3 = (byte[][]) bArr.clone();
                 int length = bArr3.length - 1;
                 for (int i12 = 0; i12 < length; i12++) {
-                    bArr3[i12] = f44345f;
-                    a aVar2 = f44344e;
-                    byte[] bArr4 = this.f44350c;
+                    bArr3[i12] = f44361f;
+                    a aVar2 = f44360e;
+                    byte[] bArr4 = this.f44366c;
                     if (bArr4 == null) {
                         Intrinsics.throwUninitializedPropertyAccessException("publicSuffixListBytes");
                         bArr4 = null;
@@ -215,8 +215,8 @@ public final class PublicSuffixDatabase {
                     if (i14 >= i13) {
                         break;
                     }
-                    a aVar3 = f44344e;
-                    byte[] bArr5 = this.f44351d;
+                    a aVar3 = f44360e;
+                    byte[] bArr5 = this.f44367d;
                     if (bArr5 == null) {
                         Intrinsics.throwUninitializedPropertyAccessException("publicSuffixExceptionListBytes");
                         bArr5 = null;
@@ -232,7 +232,7 @@ public final class PublicSuffixDatabase {
             if (str != null) {
                 return StringsKt.L0('!' + str, new char[]{'.'}, false, 0, 6, null);
             } else if (str2 == null && str3 == null) {
-                return f44346g;
+                return f44362g;
             } else {
                 if (str2 == null || (l10 = StringsKt.L0(str2, new char[]{'.'}, false, 0, 6, null)) == null) {
                     l10 = CollectionsKt.l();
@@ -260,19 +260,19 @@ public final class PublicSuffixDatabase {
                 BufferedSource d10 = x.d(new m(x.k(resourceAsStream)));
                 objectRef.element = d10.L0(d10.readInt());
                 objectRef2.element = d10.L0(d10.readInt());
-                Unit unit = Unit.f33282a;
+                Unit unit = Unit.f33298a;
                 c.a(d10, null);
                 synchronized (this) {
                     T t10 = objectRef.element;
                     Intrinsics.checkNotNull(t10);
-                    this.f44350c = (byte[]) t10;
+                    this.f44366c = (byte[]) t10;
                     T t11 = objectRef2.element;
                     Intrinsics.checkNotNull(t11);
-                    this.f44351d = (byte[]) t11;
+                    this.f44367d = (byte[]) t11;
                 }
             }
         } finally {
-            this.f44349b.countDown();
+            this.f44365b.countDown();
         }
     }
 

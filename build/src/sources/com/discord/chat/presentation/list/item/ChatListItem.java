@@ -40,7 +40,7 @@ public abstract class ChatListItem {
 
     private ChatListItem(String str) {
         this.f9725id = str;
-        this.recyclerItemId$delegate = l.a(o.f31104i, new Function0() { // from class: u6.a
+        this.recyclerItemId$delegate = l.a(o.f31120i, new Function0() { // from class: u6.a
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 long recyclerItemId_delegate$lambda$0;

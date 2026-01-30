@@ -1,62 +1,103 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var0 = module;
-    var _closure1_slot0 = var0;
-    var1 = function(arg0) { // Original name: _getPrototypeOf, environment: var2
-        _fun45451: for (var _fun45451_ip = 0;;) switch (_fun45451_ip) {
+    var2 = require;
+    var _closure1_slot0 = var2;
+    var2 = dependencyMap;
+    var _closure1_slot1 = var2;
+    var2 = function(arg0, arg1) { // Original name: _defineProperties, environment: var1
+        _fun45487: for (var _fun45487_ip = 0;;) switch (_fun45487_ip) {
             case 0:
-                var2 = _closure1_slot0;
-                var3 = global;
-                var1 = var3.Object;
-                var1 = var1.setPrototypeOf;
-                if (var1) {
-                    _fun45451_ip = 33;
-                    continue _fun45451
+                var10 = arg0;
+                var9 = arg1;
+                var0 = var9.length;
+                var8 = 0;
+                var1 = var8 < var0;
+                var7 = global;
+                var0 = undefined;
+                var5 = true;
+                var4 = 'value';
+                var2 = 0;
+                if (!var1) {
+                    _fun45487_ip = 131;
+                    continue _fun45487
                 }
-            case 24:
-                var1 = function(arg0) { // Environment: var1
-                    _fun45452: for (var _fun45452_ip = 0;;) switch (_fun45452_ip) {
-                        case 0:
-                            var3 = arg0;
-                            var0 = var3.__proto__;
-                            if (var0) {
-                                _fun45452_ip = 31;
-                                continue _fun45452
-                            }
-                        case 12:
-                            var1 = global;
-                            var2 = var1.Object;
-                            var1 = var2.getPrototypeOf;
-                            var0 = var1.bind(var2)(var3);
-                        case 31:
-                            return var0;
-                    }
-                };
-                _fun45451_ip = 54;
-                continue _fun45451;
-            case 33:
-                var3 = var3.Object;
-                var4 = var3.getPrototypeOf;
-                var3 = var4.bind;
-                var1 = var3.bind(var4)();
-            case 54:
-                _closure1_slot1 = var1;
-                var2.exports = var1;
-                var1 = _closure1_slot0;
-                var3 = var1.exports;
-                var2 = true;
-                var3.__esModule = var2;
-                var2 = var1.exports;
-                var1 = var1.exports;
-                var2.default = var1;
-                var2 = _closure1_slot1;
-                var1 = undefined;
-                var0 = arg0;
-                var0 = var2.bind(var1)(var0);
+            case 35:
+                var13 = var9[var2];
+                var1 = var13.enumerable;
+                if (var1) {
+                    _fun45487_ip = 49;
+                    continue _fun45487
+                }
+            case 47:
+                var1 = false;
+            case 49:
+                var13.enumerable = var1;
+                var13.configurable = var5;
+                var1 = var4 in var13;
+                if (!var1) {
+                    _fun45487_ip = 74;
+                    continue _fun45487
+                }
+            case 68:
+                var13.writable = var5;
+            case 74:
+                var12 = var7.Object;
+                var11 = var12.defineProperty;
+                var14 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var1 = var1[var8];
+                var14 = var14.bind(var0)(var1);
+                var1 = var13.key;
+                var1 = var14.bind(var0)(var1);
+                var1 = var11.bind(var12)(var10, var1, var13);
+                var2 = var2 + 1;
+                var1 = var9.length;
+                if (var2 < var1) {
+                    _fun45487_ip = 35;
+                    continue _fun45487
+                }
+            case 131:
                 return var0;
         }
     };
-    var _closure1_slot1 = var1;
+    var _closure1_slot2 = var2;
+    var1 = function(arg0, arg1, arg2) { // Original name: _createClass, environment: var1
+        _fun45488: for (var _fun45488_ip = 0;;) switch (_fun45488_ip) {
+            case 0:
+                var0 = arg0;
+                var5 = arg1;
+                var3 = arg2;
+                if (!var5) {
+                    _fun45488_ip = 32;
+                    continue _fun45488
+                }
+            case 12:
+                var4 = _closure1_slot2;
+                var2 = var0.prototype;
+                var1 = undefined;
+                var1 = var4.bind(var1)(var2, var5);
+            case 32:
+                if (!var3) {
+                    _fun45488_ip = 50;
+                    continue _fun45488
+                }
+            case 35:
+                var2 = _closure1_slot2;
+                var1 = undefined;
+                var1 = var2.bind(var1)(var0, var3);
+            case 50:
+                var1 = global;
+                var4 = var1.Object;
+                var3 = var4.defineProperty;
+                var2 = {};
+                var1 = false;
+                var2.writable = var1;
+                var1 = 'prototype';
+                var1 = var3.bind(var4)(var0, var1, var2);
+                return var0;
+        }
+    };
     var0.exports = var1;
     var2 = var0.exports;
     var1 = true;
@@ -66,4 +107,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.default = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5066]);

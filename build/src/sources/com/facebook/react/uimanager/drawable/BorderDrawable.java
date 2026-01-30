@@ -656,27 +656,27 @@ public final class BorderDrawable extends Drawable {
             Path path6 = this.innerClipPathForBorderRadius;
             if (path6 != null) {
                 path6.reset();
-                Unit unit = Unit.f33282a;
+                Unit unit = Unit.f33298a;
             }
             Path path7 = this.outerClipPathForBorderRadius;
             if (path7 != null) {
                 path7.reset();
-                Unit unit2 = Unit.f33282a;
+                Unit unit2 = Unit.f33298a;
             }
             RectF rectF5 = this.innerClipTempRectForBorderRadius;
             if (rectF5 != null) {
                 rectF5.set(getBounds());
-                Unit unit3 = Unit.f33282a;
+                Unit unit3 = Unit.f33298a;
             }
             RectF rectF6 = this.outerClipTempRectForBorderRadius;
             if (rectF6 != null) {
                 rectF6.set(getBounds());
-                Unit unit4 = Unit.f33282a;
+                Unit unit4 = Unit.f33298a;
             }
             RectF rectF7 = this.tempRectForCenterDrawPath;
             if (rectF7 != null) {
                 rectF7.set(getBounds());
-                Unit unit5 = Unit.f33282a;
+                Unit unit5 = Unit.f33298a;
             }
             RectF computeBorderInsets = computeBorderInsets();
             if (Color.alpha(this.computedBorderColors.getLeft()) != 0 || Color.alpha(this.computedBorderColors.getTop()) != 0 || Color.alpha(this.computedBorderColors.getRight()) != 0 || Color.alpha(this.computedBorderColors.getBottom()) != 0) {
@@ -688,7 +688,7 @@ public final class BorderDrawable extends Drawable {
                         f13 = 0.0f;
                     }
                     rectF8.top = f13;
-                    Unit unit6 = Unit.f33282a;
+                    Unit unit6 = Unit.f33298a;
                 }
                 if (rectF8 != null) {
                     if (rectF8 != null) {
@@ -697,7 +697,7 @@ public final class BorderDrawable extends Drawable {
                         f12 = 0.0f;
                     }
                     rectF8.bottom = f12;
-                    Unit unit7 = Unit.f33282a;
+                    Unit unit7 = Unit.f33298a;
                 }
                 if (rectF8 != null) {
                     if (rectF8 != null) {
@@ -706,7 +706,7 @@ public final class BorderDrawable extends Drawable {
                         f11 = 0.0f;
                     }
                     rectF8.left = f11;
-                    Unit unit8 = Unit.f33282a;
+                    Unit unit8 = Unit.f33298a;
                 }
                 if (rectF8 != null) {
                     if (rectF8 != null) {
@@ -715,7 +715,7 @@ public final class BorderDrawable extends Drawable {
                         f10 = 0.0f;
                     }
                     rectF8.right = f10;
-                    Unit unit9 = Unit.f33282a;
+                    Unit unit9 = Unit.f33298a;
                 }
             }
             RectF rectF9 = this.tempRectForCenterDrawPath;
@@ -726,7 +726,7 @@ public final class BorderDrawable extends Drawable {
                     f20 = 0.0f;
                 }
                 rectF9.top = f20;
-                Unit unit10 = Unit.f33282a;
+                Unit unit10 = Unit.f33298a;
             }
             if (rectF9 != null) {
                 if (rectF9 != null) {
@@ -735,7 +735,7 @@ public final class BorderDrawable extends Drawable {
                     f19 = 0.0f;
                 }
                 rectF9.bottom = f19;
-                Unit unit11 = Unit.f33282a;
+                Unit unit11 = Unit.f33298a;
             }
             if (rectF9 != null) {
                 if (rectF9 != null) {
@@ -744,7 +744,7 @@ public final class BorderDrawable extends Drawable {
                     f18 = 0.0f;
                 }
                 rectF9.left = f18;
-                Unit unit12 = Unit.f33282a;
+                Unit unit12 = Unit.f33298a;
             }
             if (rectF9 != null) {
                 if (rectF9 != null) {
@@ -753,7 +753,7 @@ public final class BorderDrawable extends Drawable {
                     f17 = 0.0f;
                 }
                 rectF9.right = f17;
-                Unit unit13 = Unit.f33282a;
+                Unit unit13 = Unit.f33298a;
             }
             BorderRadiusStyle borderRadiusStyle = this.borderRadius;
             if (borderRadiusStyle != null) {
@@ -804,7 +804,7 @@ public final class BorderDrawable extends Drawable {
                 c11 = 7;
                 c10 = 6;
                 path3.addRoundRect(rectF12, new float[]{innerBorderRadius, innerBorderRadius2, innerBorderRadius3, innerBorderRadius4, innerBorderRadius5, innerBorderRadius6, innerBorderRadius7, innerBorderRadius8}, Path.Direction.CW);
-                Unit unit14 = Unit.f33282a;
+                Unit unit14 = Unit.f33298a;
             } else {
                 c10 = 6;
                 c11 = 7;
@@ -830,7 +830,7 @@ public final class BorderDrawable extends Drawable {
                 fArr[c10] = horizontal4;
                 fArr[c11] = vertical4;
                 path2.addRoundRect(rectF13, fArr, Path.Direction.CW);
-                Unit unit15 = Unit.f33282a;
+                Unit unit15 = Unit.f33298a;
             } else {
                 c12 = 5;
             }
@@ -861,7 +861,7 @@ public final class BorderDrawable extends Drawable {
                 fArr2[c10] = horizontal8;
                 fArr2[c11] = vertical8;
                 path8.addRoundRect(rectF14, fArr2, Path.Direction.CW);
-                Unit unit16 = Unit.f33282a;
+                Unit unit16 = Unit.f33298a;
             }
             ComputedBorderRadius computedBorderRadius5 = this.computedBorderRadius;
             if (computedBorderRadius5 == null || !computedBorderRadius5.isUniform()) {
@@ -871,7 +871,7 @@ public final class BorderDrawable extends Drawable {
                 }
                 this.centerDrawPath = path9;
                 path9.reset();
-                Unit unit17 = Unit.f33282a;
+                Unit unit17 = Unit.f33298a;
                 RectF rectF15 = this.tempRectForCenterDrawPath;
                 if (rectF15 != null && (path = this.centerDrawPath) != null) {
                     float horizontal9 = cornerRadii.getHorizontal() - (computeBorderInsets.left * 0.5f);
@@ -893,7 +893,7 @@ public final class BorderDrawable extends Drawable {
                     fArr3[c10] = horizontal12;
                     fArr3[c11] = vertical12;
                     path.addRoundRect(rectF15, fArr3, Path.Direction.CW);
-                    Unit unit18 = Unit.f33282a;
+                    Unit unit18 = Unit.f33298a;
                     rectF = this.innerClipTempRectForBorderRadius;
                     RectF rectF16 = this.outerClipTempRectForBorderRadius;
                     if (rectF == null && rectF16 != null) {
@@ -903,56 +903,56 @@ public final class BorderDrawable extends Drawable {
                         }
                         this.innerTopLeftCorner = pointF;
                         pointF.x = rectF.left;
-                        Unit unit19 = Unit.f33282a;
+                        Unit unit19 = Unit.f33298a;
                         pointF.y = rectF.top;
-                        Unit unit20 = Unit.f33282a;
+                        Unit unit20 = Unit.f33298a;
                         float f21 = rectF.left;
                         float f22 = rectF.top;
                         float f23 = i10;
                         getEllipseIntersectionWithLine(f21, f22, (innerBorderRadius * f23) + f21, (f23 * innerBorderRadius2) + f22, rectF16.left, rectF16.top, f21, f22, pointF);
-                        Unit unit21 = Unit.f33282a;
+                        Unit unit21 = Unit.f33298a;
                         PointF pointF2 = this.innerBottomLeftCorner;
                         if (pointF2 == null) {
                             pointF2 = new PointF();
                         }
                         this.innerBottomLeftCorner = pointF2;
                         pointF2.x = rectF.left;
-                        Unit unit22 = Unit.f33282a;
+                        Unit unit22 = Unit.f33298a;
                         pointF2.y = rectF.bottom;
-                        Unit unit23 = Unit.f33282a;
+                        Unit unit23 = Unit.f33298a;
                         float f24 = rectF.left;
                         float f25 = rectF.bottom;
                         float f26 = 2;
                         getEllipseIntersectionWithLine(f24, f25 - (innerBorderRadius8 * f26), (f26 * innerBorderRadius7) + f24, f25, rectF16.left, rectF16.bottom, f24, f25, pointF2);
-                        Unit unit24 = Unit.f33282a;
+                        Unit unit24 = Unit.f33298a;
                         PointF pointF3 = this.innerTopRightCorner;
                         if (pointF3 == null) {
                             pointF3 = new PointF();
                         }
                         this.innerTopRightCorner = pointF3;
                         pointF3.x = rectF.right;
-                        Unit unit25 = Unit.f33282a;
+                        Unit unit25 = Unit.f33298a;
                         pointF3.y = rectF.top;
-                        Unit unit26 = Unit.f33282a;
+                        Unit unit26 = Unit.f33298a;
                         float f27 = rectF.right;
                         float f28 = 2;
                         float f29 = rectF.top;
                         getEllipseIntersectionWithLine(f27 - (innerBorderRadius3 * f28), f29, f27, (f28 * innerBorderRadius4) + f29, rectF16.right, rectF16.top, f27, f29, pointF3);
-                        Unit unit27 = Unit.f33282a;
+                        Unit unit27 = Unit.f33298a;
                         PointF pointF4 = this.innerBottomRightCorner;
                         if (pointF4 == null) {
                             pointF4 = new PointF();
                         }
                         this.innerBottomRightCorner = pointF4;
                         pointF4.x = rectF.right;
-                        Unit unit28 = Unit.f33282a;
+                        Unit unit28 = Unit.f33298a;
                         pointF4.y = rectF.bottom;
-                        Unit unit29 = Unit.f33282a;
+                        Unit unit29 = Unit.f33298a;
                         float f30 = rectF.right;
                         float f31 = 2;
                         float f32 = rectF.bottom;
                         getEllipseIntersectionWithLine(f30 - (innerBorderRadius5 * f31), f32 - (f31 * innerBorderRadius6), f30, f32, rectF16.right, rectF16.bottom, f30, f32, pointF4);
-                        Unit unit30 = Unit.f33282a;
+                        Unit unit30 = Unit.f33298a;
                         return;
                     }
                 }

@@ -13,45 +13,45 @@ import kotlin.reflect.KClass;
 public final class m implements c0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final KClass f51269a;
+    private final KClass f51285a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f51270b;
+    private final int f51286b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Function1 f51271c;
+    private final Function1 f51287c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     static final class a extends Lambda implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ k f51272d;
+        final /* synthetic */ k f51288d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(k kVar) {
             super(2);
-            this.f51272d = kVar;
+            this.f51288d = kVar;
         }
 
         public final void a(Object rendering, a0 environment) {
             Intrinsics.checkNotNullParameter(rendering, "rendering");
             Intrinsics.checkNotNullParameter(environment, "environment");
-            this.f51272d.a(rendering, environment);
+            this.f51288d.a(rendering, environment);
         }
 
         @Override // kotlin.jvm.functions.Function2
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
             a(obj, (a0) obj2);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
     }
 
     public m(KClass type, int i10, Function1 runnerConstructor) {
         Intrinsics.checkNotNullParameter(type, "type");
         Intrinsics.checkNotNullParameter(runnerConstructor, "runnerConstructor");
-        this.f51269a = type;
-        this.f51270b = i10;
-        this.f51271c = runnerConstructor;
+        this.f51285a = type;
+        this.f51286b = i10;
+        this.f51287c = runnerConstructor;
     }
 
     @Override // vm.c0
@@ -59,8 +59,8 @@ public final class m implements c0 {
         Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
         Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
         Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-        View view = l.a(contextForNewView, viewGroup).inflate(this.f51270b, viewGroup, false);
-        Function1 function1 = this.f51271c;
+        View view = l.a(contextForNewView, viewGroup).inflate(this.f51286b, viewGroup, false);
+        Function1 function1 = this.f51287c;
         Intrinsics.checkNotNullExpressionValue(view, "view");
         g0.a(view, initialRendering, initialViewEnvironment, new a((k) function1.invoke(view)));
         Intrinsics.checkNotNullExpressionValue(view, "contextForNewView.viewBi…onment)\n        }\n      }");
@@ -69,6 +69,6 @@ public final class m implements c0 {
 
     @Override // vm.c0
     public KClass getType() {
-        return this.f51269a;
+        return this.f51285a;
     }
 }

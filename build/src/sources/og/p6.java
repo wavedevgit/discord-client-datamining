@@ -5,44 +5,44 @@ import ui.c;
 final class p6 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final p6 f43401a = new p6();
+    static final p6 f43417a = new p6();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43402b;
+    private static final ui.c f43418b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43403c;
+    private static final ui.c f43419c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f43404d;
+    private static final ui.c f43420d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f43405e;
+    private static final ui.c f43421e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final ui.c f43406f;
+    private static final ui.c f43422f;
 
     static {
         c.b a10 = ui.c.a("inferenceCommonLogEvent");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43402b = a10.b(s1Var.b()).a();
+        f43418b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("options");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43403c = a11.b(s1Var2.b()).a();
+        f43419c = a11.b(s1Var2.b()).a();
         c.b a12 = ui.c.a("imageInfo");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f43404d = a12.b(s1Var3.b()).a();
+        f43420d = a12.b(s1Var3.b()).a();
         c.b a13 = ui.c.a("labelCount");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f43405e = a13.b(s1Var4.b()).a();
+        f43421e = a13.b(s1Var4.b()).a();
         c.b a14 = ui.c.a("highestConfidence");
         s1 s1Var5 = new s1();
         s1Var5.a(5);
-        f43406f = a14.b(s1Var5.b()).a();
+        f43422f = a14.b(s1Var5.b()).a();
     }
 
     private p6() {

@@ -17,19 +17,19 @@ import org.jetbrains.annotations.NotNull;
 public final class ErrorTypeConstructor implements TypeConstructor {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ErrorTypeKind f35990a;
+    private final ErrorTypeKind f36006a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String[] f35991b;
+    private final String[] f36007b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f35992c;
+    private final String f36008c;
 
     public ErrorTypeConstructor(@NotNull ErrorTypeKind kind, @NotNull String... formatParams) {
         Intrinsics.checkNotNullParameter(kind, "kind");
         Intrinsics.checkNotNullParameter(formatParams, "formatParams");
-        this.f35990a = kind;
-        this.f35991b = formatParams;
+        this.f36006a = kind;
+        this.f36007b = formatParams;
         String debugText = ErrorEntity.ERROR_TYPE.getDebugText();
         String debugMessage = kind.getDebugMessage();
         Object[] copyOf = Arrays.copyOf(formatParams, formatParams.length);
@@ -37,7 +37,7 @@ public final class ErrorTypeConstructor implements TypeConstructor {
         Intrinsics.checkNotNullExpressionValue(format, "format(...)");
         String format2 = String.format(debugText, Arrays.copyOf(new Object[]{format}, 1));
         Intrinsics.checkNotNullExpressionValue(format2, "format(...)");
-        this.f35992c = format2;
+        this.f36008c = format2;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
@@ -55,12 +55,12 @@ public final class ErrorTypeConstructor implements TypeConstructor {
 
     @NotNull
     public final ErrorTypeKind getKind() {
-        return this.f35990a;
+        return this.f36006a;
     }
 
     @NotNull
     public final String getParam(int i10) {
-        return this.f35991b[i10];
+        return this.f36007b[i10];
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.TypeConstructor
@@ -89,6 +89,6 @@ public final class ErrorTypeConstructor implements TypeConstructor {
 
     @NotNull
     public String toString() {
-        return this.f35992c;
+        return this.f36008c;
     }
 }

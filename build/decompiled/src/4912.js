@@ -1,35 +1,55 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = global;
-    var _closure1_slot0 = var2;
-    var2 = global;
-    var5 = var2.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var2 = true;
-    var3.value = var2;
-    var2 = '__esModule';
-    var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function() { // Original name: isFabricInstalled, environment: var0
-        _fun44553: for (var _fun44553_ip = 0;;) switch (_fun44553_ip) {
-            case 0:
-                var2 = _closure1_slot0;
-                var1 = null;
-                var3 = var1 == var2;
-                var0 = undefined;
-                if (var3) {
-                    _fun44553_ip = 24;
-                    continue _fun44553
-                }
-            case 18:
-                var0 = var2.nativeFabricUIManager;
-            case 24:
-                var0 = var1 != var0;
-                return var0;
-        }
-    };
-    var1.isFabricInstalled = var0;
+    var3 = require;
+    var2 = exports;
+    var4 = dependencyMap;
+    var0 = global;
+    var6 = var0.Object;
+    var5 = var6.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var5.bind(var6)(var2, var0, var1);
+    var0 = 0;
+    var1 = var4[var0];
     var0 = undefined;
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.normalizeSnapPoint;
+    var2.normalizeSnapPoint = var1;
+    var1 = 1;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.animate;
+    var2.animate = var1;
+    var1 = 2;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.getKeyboardAnimationConfigs;
+    var2.getKeyboardAnimationConfigs = var1;
+    var1 = 3;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.print;
+    var2.print = var1;
+    var1 = 4;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.noop;
+    var2.noop = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.workletNoop;
+    var2.workletNoop = var1;
+    var1 = 5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.isFabricInstalled;
+    var2.isFabricInstalled = var1;
+    var1 = 6;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.findNodeHandle;
+    var2.findNodeHandle = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4913, 4914, 4915, 4916, 4917, 4918, 4919]);

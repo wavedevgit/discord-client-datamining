@@ -60,7 +60,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot3 = var0;
     var3 = function() { // Original name: useEncodePolyfill, environment: var3
-        _fun10331: for (var _fun10331_ip = 0;;) switch (_fun10331_ip) {
+        _fun10332: for (var _fun10332_ip = 0;;) switch (_fun10332_ip) {
             case 0:
                 var4 = _closure1_slot0;
                 var3 = _closure1_slot1;
@@ -76,14 +76,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var3.RN_GLOBAL_OBJ;
                 var3 = var3.TextEncoder;
                 if (var3) {
-                    _fun10331_ip = 73;
-                    continue _fun10331
+                    _fun10332_ip = 73;
+                    continue _fun10332
                 }
             case 61:
                 var3 = _closure1_slot3;
                 var2.encodePolyfill = var3;
-                _fun10331_ip = 117;
-                continue _fun10331;
+                _fun10332_ip = 117;
+                continue _fun10332;
             case 73:
                 var3 = _closure1_slot2;
                 var4 = _closure1_slot0;

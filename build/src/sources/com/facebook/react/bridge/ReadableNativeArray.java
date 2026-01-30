@@ -73,7 +73,7 @@ public class ReadableNativeArray extends NativeArray implements ReadableArray {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public ReadableNativeArray() {
-        ir.o oVar = ir.o.f31102d;
+        ir.o oVar = ir.o.f31118d;
         this.localArray$delegate = ir.l.a(oVar, new Function0() { // from class: com.facebook.react.bridge.t
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {

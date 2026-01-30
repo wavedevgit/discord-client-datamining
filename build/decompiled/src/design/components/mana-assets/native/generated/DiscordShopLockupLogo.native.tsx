@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/DiscordShopLockupLogo.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: DiscordShopLockupLogo, environment: var1
-        _fun52315: for (var _fun52315_ip = 0;;) switch (_fun52315_ip) {
+        _fun52360: for (var _fun52360_ip = 0;;) switch (_fun52360_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -43,8 +43,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.color;
                 var3 = undefined;
                 if (!(var2 === var3)) {
-                    _fun52315_ip = 63;
-                    continue _fun52315
+                    _fun52360_ip = 63;
+                    continue _fun52360
                 }
             case 29:
                 var7 = _closure1_slot1;
@@ -57,16 +57,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 63:
                 var10 = var0.width;
                 if (!(var10 === var3)) {
-                    _fun52315_ip = 78;
-                    continue _fun52315
+                    _fun52360_ip = 78;
+                    continue _fun52360
                 }
             case 72:
                 var10 = 256;
             case 78:
                 var7 = var0.height;
                 if (!(var7 === var3)) {
-                    _fun52315_ip = 90;
-                    continue _fun52315
+                    _fun52360_ip = 90;
+                    continue _fun52360
                 }
             case 87:
                 var7 = 30;
@@ -80,14 +80,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.bind(var1)(var2);
                 var0 = null;
                 if (!(var0 == var1)) {
-                    _fun52315_ip = 165;
-                    continue _fun52315
+                    _fun52360_ip = 165;
+                    continue _fun52360
                 }
             case 130:
                 var0 = var0 != var2;
                 if (!var0) {
-                    _fun52315_ip = 148;
-                    continue _fun52315
+                    _fun52360_ip = 148;
+                    continue _fun52360
                 }
             case 137:
                 var9 = 'string';
@@ -96,15 +96,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 148:
                 var8 = undefined;
                 if (!var0) {
-                    _fun52315_ip = 175;
-                    continue _fun52315
+                    _fun52360_ip = 175;
+                    continue _fun52360
                 }
             case 153:
                 var0 = {};
                 var0.tintColor = var2;
                 var8 = var0;
-                _fun52315_ip = 175;
-                continue _fun52315;
+                _fun52360_ip = 175;
+                continue _fun52360;
             case 165:
                 var0 = {};
                 var0.tintColor = var1;
@@ -139,4 +139,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.DiscordShopLockupLogo = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 671, 3110, 6050, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 33, 671, 3110, 6053, 2]);

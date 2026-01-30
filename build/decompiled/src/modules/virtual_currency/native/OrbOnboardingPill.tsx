@@ -57,12 +57,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[0] = var8;
         var1[1] = var5;
         var0 = function() { // Environment: var0
-            _fun87253: for (var _fun87253_ip = 0;;) switch (_fun87253_ip) {
+            _fun87299: for (var _fun87299_ip = 0;;) switch (_fun87299_ip) {
                 case 0:
                     var1 = _closure2_slot1;
                     if (var1) {
-                        _fun87253_ip = 20;
-                        continue _fun87253
+                        _fun87299_ip = 20;
+                        continue _fun87299
                     }
                 case 10:
                     var1 = _closure2_slot0;
@@ -237,4 +237,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var1;
     var2.OrbOnboardingPill = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1234, 9507, 3895, 1297, 671, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1234, 9512, 3901, 1297, 671, 2]);

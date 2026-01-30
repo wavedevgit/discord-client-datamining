@@ -1,153 +1,229 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun45359: for (var _fun45359_ip = 0;;) switch (_fun45359_ip) {
-        case 0:
-            var8 = require;
-            var10 = metroImportDefault;
-            var14 = exports;
-            var9 = dependencyMap;
-            var6 = var8;
-            var _closure1_slot0 = var10;
-            var1 = var14;
-            var5 = var9;
-            var _closure1_slot1 = var9;
-            var0 = undefined;
-            var4 = undefined;
-            var3 = undefined;
-            var7 = ['focusHook', 'scrollEventsHandlersHook', 'enableFooterMarginAdjustment'];
-            var _closure1_slot2 = var7;
-            var7 = ['data'];
-            var _closure1_slot3 = var7;
-            var7 = global;
-            var13 = var7.Object;
-            var12 = var13.defineProperty;
-            var11 = {};
-            var7 = true;
-            var11.value = var7;
-            var7 = '__esModule';
-            var7 = var12.bind(var13)(var14, var7, var11);
-            var7 = 0;
-            var7 = var9[var7];
-            var7 = var10.bind(var0)(var7);
-            var _closure1_slot5 = var7;
-            var7 = 1;
-            var11 = var9[var7];
-            var11 = var8.bind(var0)(var11);
-            var12 = var11.forwardRef;
-            var4 = var12;
-            var _closure1_slot6 = var12;
-            var3 = var11.memo;
-            var11 = var11.useMemo;
-            var _closure1_slot7 = var11;
-            var7 = var9[var7];
-            var7 = var10.bind(var0)(var7);
-            var7 = 2;
-            var7 = var9[var7];
-            var7 = var8.bind(var0)(var7);
-            var7 = var7.jsx;
-            var _closure1_slot8 = var7;
-        case 181: // try_start_0
-            var7 = var5;
-            var5 = 3;
-            var5 = var7[var5];
-            var5 = var6.bind(var0)(var5);
-            var _closure1_slot4 = var5;
-        case 200: // try_end0
-            _fun45359_ip = 204;
-            continue _fun45359;
-        case 202: // catch_target0
-            CatchBlockStart(arg_register = 5);
-        case 204:
-            var2 = function(arg0, arg1) { // Environment: var2
-                var6 = arg0;
-                var8 = var6.focusHook;
-                var _closure2_slot0 = var8;
-                var7 = var6.scrollEventsHandlersHook;
+    var8 = require;
+    var5 = metroImportDefault;
+    var2 = exports;
+    var7 = dependencyMap;
+    var _closure1_slot0 = var8;
+    var _closure1_slot1 = var7;
+    var0 = ['onRefresh', 'scrollableGesture'];
+    var _closure1_slot2 = var0;
+    var0 = global;
+    var6 = var0.Object;
+    var4 = var6.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var6)(var2, var0, var3);
+    var0 = 0;
+    var3 = var7[var0];
+    var0 = undefined;
+    var3 = var5.bind(var0)(var3);
+    var _closure1_slot3 = var3;
+    var3 = 1;
+    var3 = var7[var3];
+    var3 = var5.bind(var0)(var3);
+    var _closure1_slot4 = var3;
+    var4 = 2;
+    var3 = var7[var4];
+    var6 = var8.bind(var0)(var3);
+    var3 = var6.memo;
+    var9 = var6.useContext;
+    var _closure1_slot5 = var9;
+    var6 = var6.useMemo;
+    var _closure1_slot6 = var6;
+    var4 = var7[var4];
+    var4 = var5.bind(var0)(var4);
+    var4 = 3;
+    var4 = var7[var4];
+    var4 = var8.bind(var0)(var4);
+    var6 = var4.RefreshControl;
+    var4 = 4;
+    var4 = var7[var4];
+    var4 = var8.bind(var0)(var4);
+    var4 = var4.jsx;
+    var _closure1_slot7 = var4;
+    var4 = 5;
+    var4 = var7[var4];
+    var5 = var5.bind(var0)(var4);
+    var4 = var5.createAnimatedComponent;
+    var4 = var4.bind(var5)(var6);
+    var _closure1_slot8 = var4;
+    var4 = {};
+    var5 = 'function pnpm_BottomSheetRefreshControlAndroidTsx1(){const{animatedScrollableState,SCROLLABLE_STATE}=this.__closure;return{enabled:animatedScrollableState.value===SCROLLABLE_STATE.UNLOCKED};}';
+    var4.code = var5;
+    var _closure1_slot9 = var4;
+    var1 = function(arg0) { // Original name: BottomSheetRefreshControlComponent, environment: var1
+        _fun45402: for (var _fun45402_ip = 0;;) switch (_fun45402_ip) {
+            case 0:
+                var5 = arg0;
+                var11 = var5.onRefresh;
+                var3 = var5.scrollableGesture;
+                var _closure2_slot0 = var3;
+                var2 = _closure1_slot4;
+                var1 = _closure1_slot2;
+                var4 = undefined;
+                var10 = var2.bind(var4)(var5, var1);
+                var7 = _closure1_slot5;
+                var2 = _closure1_slot0;
+                var5 = _closure1_slot1;
+                var1 = 6;
+                var1 = var5[var1];
+                var1 = var2.bind(var4)(var1);
+                var1 = var1.BottomSheetDraggableContext;
+                var7 = var7.bind(var4)(var1);
                 var _closure2_slot1 = var7;
-                var5 = var6.enableFooterMarginAdjustment;
-                var _closure2_slot2 = var5;
-                var4 = _closure1_slot5;
-                var2 = _closure1_slot2;
-                var3 = undefined;
-                var6 = var4.bind(var3)(var6, var2);
-                var4 = _closure1_slot7;
-                var9 = function() { // Environment: var1
-                    _fun45361: for (var _fun45361_ip = 0;;) switch (_fun45361_ip) {
+                var1 = 7;
+                var1 = var5[var1];
+                var2 = var2.bind(var4)(var1);
+                var1 = var2.useBottomSheetInternal;
+                var2 = var1.bind(var2)();
+                var1 = var2.animatedScrollableState;
+                var _closure2_slot2 = var1;
+                var2 = var2.enableContentPanningGesture;
+                if (var7) {
+                    _fun45402_ip = 131;
+                    continue _fun45402
+                }
+            case 120:
+                if (!var2) {
+                    _fun45402_ip = 131;
+                    continue _fun45402
+                }
+            case 123:
+                var2 = "'BottomSheetRefreshControl' cannot be used out of the BottomSheet!";
+                throw var2;
+            case 131:
+                var13 = _closure1_slot0;
+                var14 = _closure1_slot1;
+                var2 = 5;
+                var2 = var14[var2];
+                var8 = var13.bind(var4)(var2);
+                var5 = var8.useAnimatedProps;
+                var2 = function() { // Original name: pnpm_BottomSheetRefreshControlAndroidTsx1, environment: var0
+                    var0 = {};
+                    var1 = _closure2_slot2;
+                    var2 = var1.value;
+                    var4 = _closure1_slot0;
+                    var3 = _closure1_slot1;
+                    var1 = 8;
+                    var3 = var3[var1];
+                    var1 = undefined;
+                    var1 = var4.bind(var1)(var3);
+                    var1 = var1.SCROLLABLE_STATE;
+                    var1 = var1.UNLOCKED;
+                    var1 = var2 === var1;
+                    var0.enabled = var1;
+                    return var0;
+                };
+                var9 = {};
+                var9.animatedScrollableState = var1;
+                var12 = 8;
+                var12 = var14[var12];
+                var12 = var13.bind(var4)(var12);
+                var12 = var12.SCROLLABLE_STATE;
+                var9.SCROLLABLE_STATE = var12;
+                var2.__closure = var9;
+                var9 = 8403038560398.0;
+                var2.__workletHash = var9;
+                var9 = _closure1_slot9;
+                var2.__initData = var9;
+                var9 = var1.value;
+                var1 = new Array(1);
+                var1[0] = var9;
+                var5 = var5.bind(var8)(var2, var1);
+                var2 = _closure1_slot6;
+                var1 = new Array(2);
+                var1[0] = var7;
+                var1[1] = var3;
+                var0 = function() { // Environment: var0
+                    _fun45404: for (var _fun45404_ip = 0;;) switch (_fun45404_ip) {
                         case 0:
-                            var0 = _closure1_slot4;
-                            if (var0) {
-                                _fun45361_ip = 18;
-                                continue _fun45361
-                            }
-                        case 10:
-                            var0 = 'You need to install FlashList first, `yarn install @shopify/flash-list`';
-                            throw var0;
-                        case 18:
+                            var2 = _closure2_slot1;
+                            var8 = undefined;
                             var0 = undefined;
+                            if (!var2) {
+                                _fun45404_ip = 135;
+                                continue _fun45404
+                            }
+                        case 14:
+                            var3 = _closure1_slot0;
+                            var4 = _closure1_slot1;
+                            var2 = 9;
+                            var2 = var4[var2];
+                            var2 = var3.bind(var8)(var2);
+                            var3 = var2.Gesture;
+                            var2 = var3.Native;
+                            var4 = var2.bind(var3)();
+                            var3 = var4.simultaneousWithExternalGesture;
+                            var2 = var3.apply;
+                            var7 = _closure1_slot3;
+                            var6 = _closure2_slot1;
+                            var5 = var6.toGestureArray;
+                            var5 = var5.bind(var6)();
+                            var6 = var7.bind(var8)(var5);
+                            var5 = var6.concat;
+                            var9 = _closure2_slot0;
+                            var1 = var9.toGestureArray;
+                            var1 = var1.bind(var9)();
+                            var1 = var7.bind(var8)(var1);
+                            var1 = var5.bind(var6)(var1);
+                            var3 = var2.bind(var3)(var4, var1);
+                            var2 = var3.shouldCancelWhenOutside;
+                            var1 = true;
+                            var0 = var2.bind(var3)(var1);
+                        case 135:
                             return var0;
                     }
                 };
-                var2 = new Array(0);
-                var2 = var4.bind(var3)(var9, var2);
-                var2 = new Array(3);
-                var2[0] = var8;
-                var2[1] = var7;
-                var2[2] = var5;
-                var1 = function() { // Environment: var1
-                    var2 = _closure1_slot6;
-                    var1 = undefined;
-                    var0 = function(arg0, arg1) { // Environment: var0
-                        var4 = arg0;
-                        var0 = var4.data;
-                        var2 = _closure1_slot5;
-                        var1 = _closure1_slot3;
-                        var3 = undefined;
-                        var7 = var2.bind(var3)(var4, var1);
-                        var2 = _closure1_slot8;
-                        var1 = _closure1_slot0;
-                        var4 = _closure1_slot1;
-                        var0 = 4;
-                        var0 = var4[var0];
-                        var1 = var1.bind(var3)(var0);
-                        var0 = global;
-                        var6 = var0.Object;
-                        var5 = var6.assign;
-                        var4 = {};
-                        var0 = arg1;
-                        var4.ref = var0;
-                        var0 = {};
-                        var9 = _closure2_slot0;
-                        var0.focusHook = var9;
-                        var9 = _closure2_slot1;
-                        var0.scrollEventsHandlersHook = var9;
-                        var8 = _closure2_slot2;
-                        var0.enableFooterMarginAdjustment = var8;
-                        var0 = var5.bind(var6)(var4, var7, var0);
-                        var0 = var2.bind(var3)(var1, var0);
-                        return var0;
-                    };
-                    var0 = var2.bind(var1)(var0);
-                    return var0;
-                };
-                var7 = var4.bind(var3)(var1, var2);
-                var2 = _closure1_slot8;
-                var0 = _closure1_slot4;
-                var1 = var0.FlashList;
+                var7 = var2.bind(var4)(var0, var1);
+                var3 = _closure1_slot7;
+                if (var7) {
+                    _fun45402_ip = 323;
+                    continue _fun45402
+                }
+            case 277:
+                var1 = _closure1_slot8;
                 var0 = global;
-                var5 = var0.Object;
-                var4 = var5.assign;
+                var9 = var0.Object;
+                var8 = var9.assign;
+                var2 = {};
+                var2.onRefresh = var11;
+                var2.animatedProps = var5;
                 var0 = {};
-                var8 = arg1;
-                var0.ref = var8;
-                var0.renderScrollComponent = var7;
-                var0 = var4.bind(var5)(var0, var6);
-                var0 = var2.bind(var3)(var1, var0);
+                var0 = var8.bind(var9)(var0, var10, var2);
+                var0 = var3.bind(var4)(var1, var0);
+                _fun45402_ip = 410;
+                continue _fun45402;
+            case 323:
+                var2 = _closure1_slot0;
+                var8 = _closure1_slot1;
+                var1 = 9;
+                var1 = var8[var1];
+                var1 = var2.bind(var4)(var1);
+                var2 = var1.GestureDetector;
+                var1 = {};
+                var1.gesture = var7;
+                var6 = _closure1_slot8;
+                var7 = global;
+                var9 = var7.Object;
+                var8 = var9.assign;
+                var7 = {};
+                var7.onRefresh = var11;
+                var7.animatedProps = var5;
+                var5 = {};
+                var5 = var8.bind(var9)(var5, var10, var7);
+                var5 = var3.bind(var4)(var6, var5);
+                var1.children = var5;
+                var0 = var3.bind(var4)(var2, var1);
+            case 410:
                 return var0;
-            };
-            var2 = var4.bind(var0)(var2);
-            var2 = var3.bind(var0)(var2);
-            var1.default = var2;
-            var1.BottomSheetFlashList = var2;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 31, 33, 5054, 5051]);
+        }
+    };
+    var1 = var3.bind(var0)(var1);
+    var3 = 'BottomSheetRefreshControl';
+    var1.displayName = var3;
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [65, 29, 31, 27, 33, 3680, 4907, 4900, 4896, 4923]);

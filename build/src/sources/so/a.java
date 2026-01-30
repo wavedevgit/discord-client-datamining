@@ -269,10 +269,10 @@ public abstract class a {
             documentStepStyle2 = documentStepStyle;
         } else {
             documentStepStyle2 = documentStepStyle;
-            a10 = u.f51649s.a(localizations.getPromptPage().getTitle(), localizations.getPromptPage().getPrompt(), localizations.getPromptPage().getBtnUpload(), localizations.getPromptPage().getBtnCapture(), documentStepStyle2);
+            a10 = u.f51665s.a(localizations.getPromptPage().getTitle(), localizations.getPromptPage().getPrompt(), localizations.getPromptPage().getBtnUpload(), localizations.getPromptPage().getBtnCapture(), documentStepStyle2);
         }
         if (pages == null || (document = pages.getDocument()) == null || (uploadOptionsDialog = document.getUploadOptionsDialog()) == null || (a11 = j(uploadOptionsDialog)) == null) {
-            a11 = b3.f51352s.a(localizations.getPromptPage().getCaptureOptionsDialogTitle(), localizations.getPromptPage().getBtnCapture(), localizations.getPromptPage().getBtnUpload(), documentStepStyle2);
+            a11 = b3.f51368s.a(localizations.getPromptPage().getCaptureOptionsDialogTitle(), localizations.getPromptPage().getBtnCapture(), localizations.getPromptPage().getBtnUpload(), documentStepStyle2);
         }
         return new vn.l(a10, a11);
     }

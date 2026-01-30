@@ -51,7 +51,7 @@ public final class ClassicBuiltinSpecialProperties {
         Name name;
         Intrinsics.checkNotNullParameter(callableMemberDescriptor, "<this>");
         KotlinBuiltIns.isBuiltIn(callableMemberDescriptor);
-        CallableMemberDescriptor firstOverridden$default = DescriptorUtilsKt.firstOverridden$default(DescriptorUtilsKt.getPropertyIfAccessor(callableMemberDescriptor), false, e.f34109d, 1, null);
+        CallableMemberDescriptor firstOverridden$default = DescriptorUtilsKt.firstOverridden$default(DescriptorUtilsKt.getPropertyIfAccessor(callableMemberDescriptor), false, e.f34125d, 1, null);
         if (firstOverridden$default == null || (name = BuiltinSpecialProperties.INSTANCE.getPROPERTY_FQ_NAME_TO_JVM_GETTER_NAME_MAP().get(DescriptorUtilsKt.getFqNameSafe(firstOverridden$default))) == null) {
             return null;
         }

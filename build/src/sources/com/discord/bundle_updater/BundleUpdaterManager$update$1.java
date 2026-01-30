@@ -48,11 +48,11 @@ public final class BundleUpdaterManager$update$1 extends kotlin.coroutines.jvm.i
         }
         reactApplicationContext = this.this$0.reactContext;
         ProcessPhoenix.b(reactApplicationContext);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((BundleUpdaterManager$update$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((BundleUpdaterManager$update$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

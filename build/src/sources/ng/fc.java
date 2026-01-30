@@ -3,16 +3,16 @@ package ng;
 public abstract class fc {
 
     /* renamed from: a  reason: collision with root package name */
-    private static ec f41210a;
+    private static ec f41226a;
 
     public static synchronized wb a(rb rbVar) {
         wb wbVar;
         synchronized (fc.class) {
             try {
-                if (f41210a == null) {
-                    f41210a = new ec(null);
+                if (f41226a == null) {
+                    f41226a = new ec(null);
                 }
-                wbVar = (wb) f41210a.b(rbVar);
+                wbVar = (wb) f41226a.b(rbVar);
             } catch (Throwable th2) {
                 throw th2;
             }

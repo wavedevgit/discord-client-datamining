@@ -4,47 +4,53 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var1 = function(arg0, arg1) { // Original name: cloneTypedArray, environment: var0
-        _fun32459: for (var _fun32459_ip = 0;;) switch (_fun32459_ip) {
-            case 0:
-                var0 = arg0;
-                var1 = arg1;
-                if (var1) {
-                    _fun32459_ip = 17;
-                    continue _fun32459
-                }
-            case 9:
-                var4 = var0.buffer;
-                _fun32459_ip = 52;
-                continue _fun32459;
-            case 17:
-                var2 = _closure1_slot0;
-                var3 = _closure1_slot1;
-                var1 = 0;
-                var1 = var3[var1];
-                var3 = undefined;
-                var2 = var2.bind(var3)(var1);
-                var1 = var0.buffer;
-                var4 = var2.bind(var3)(var1);
-            case 52:
-                var3 = var0.constructor;
-                var6 = var0.byteOffset;
-                var5 = var0.length;
-                var1 = var3.prototype;
-                var1 = Object.create(var1, {
-                    constructor: {
-                        value: var3
-                    }
-                });
-                var8 = var1;
-                var7 = var4;
-                var0 = new var8[var3](var7, var6, var5, var4);
-                var0 = var0 instanceof Object ? var0 : var1;
-                return var0;
-        }
+    var1 = function(arg0) { // Original name: cloneArrayBuffer, environment: var0
+        var5 = arg0;
+        var2 = var5.constructor;
+        var8 = var5.byteLength;
+        var1 = var2.prototype;
+        var1 = Object.create(var1, {
+            constructor: {
+                value: var2
+            }
+        });
+        var9 = var1;
+        var0 = new var9[var2](var8, var7);
+        var0 = var0 instanceof Object ? var0 : var1;
+        var6 = _closure1_slot0;
+        var7 = _closure1_slot1;
+        var1 = 0;
+        var2 = var7[var1];
+        var4 = undefined;
+        var2 = var6.bind(var4)(var2);
+        var3 = var2.prototype;
+        var3 = Object.create(var3, {
+            constructor: {
+                value: var2
+            }
+        });
+        var9 = var3;
+        var8 = var0;
+        var2 = new var9[var2](var8, var7);
+        var3 = var2 instanceof Object ? var2 : var3;
+        var2 = var3.set;
+        var1 = var7[var1];
+        var1 = var6.bind(var4)(var1);
+        var4 = var1.prototype;
+        var4 = Object.create(var4, {
+            constructor: {
+                value: var1
+            }
+        });
+        var9 = var4;
+        var8 = var5;
+        var1 = new var9[var1](var8, var7);
+        var1 = var1 instanceof Object ? var1 : var4;
+        var1 = var2.bind(var3)(var1);
+        return var0;
     };
     var0 = arg4;
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3622]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [759]);

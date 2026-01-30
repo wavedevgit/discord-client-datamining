@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/MessageWithContent.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0, arg1, arg2) { // Original name: generateMessageRowData, environment: var1
-        _fun53783: for (var _fun53783_ip = 0;;) switch (_fun53783_ip) {
+        _fun53828: for (var _fun53828_ip = 0;;) switch (_fun53828_ip) {
             case 0:
                 var8 = arg0;
                 var2 = arg1;
@@ -49,8 +49,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = undefined;
                 var20 = var5 !== var0;
                 if (!var20) {
-                    _fun53783_ip = 71;
-                    continue _fun53783
+                    _fun53828_ip = 71;
+                    continue _fun53828
                 }
             case 68:
                 var20 = var0;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var8.canShowImages;
                 var21 = var5 === var0;
                 if (var21) {
-                    _fun53783_ip = 87;
-                    continue _fun53783
+                    _fun53828_ip = 87;
+                    continue _fun53828
                 }
             case 84:
                 var21 = var0;
@@ -70,8 +70,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var8.alwaysShowAddReaction;
                 var4 = var5 !== var0;
                 if (!var4) {
-                    _fun53783_ip = 121;
-                    continue _fun53783
+                    _fun53828_ip = 121;
+                    continue _fun53828
                 }
             case 118:
                 var4 = var0;
@@ -133,8 +133,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.alwaysShowAddReaction = var4;
                 var11 = null;
                 if (!(var11 == var3)) {
-                    _fun53783_ip = 471;
-                    continue _fun53783
+                    _fun53828_ip = 471;
+                    continue _fun53828
                 }
             case 392:
                 var7 = _closure1_slot1;
@@ -165,16 +165,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var7.createSwipeActions;
                 var3 = var2.enableSwipeActions;
                 if (!var3) {
-                    _fun53783_ip = 519;
-                    continue _fun53783
+                    _fun53828_ip = 519;
+                    continue _fun53828
                 }
             case 513:
                 var3 = var8.canReply;
             case 519:
                 var2 = var2.enableSwipeActions;
                 if (!var2) {
-                    _fun53783_ip = 534;
-                    continue _fun53783
+                    _fun53828_ip = 534;
+                    continue _fun53828
                 }
             case 528:
                 var2 = var8.canEdit;
@@ -218,4 +218,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.generateMessageRowData = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6480, 6475, 6482, 1234, 6743, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6483, 6478, 6485, 1234, 6746, 2]);

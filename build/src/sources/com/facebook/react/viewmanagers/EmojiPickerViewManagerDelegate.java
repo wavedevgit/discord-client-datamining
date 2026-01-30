@@ -105,7 +105,7 @@ public class EmojiPickerViewManagerDelegate<T extends View, U extends BaseViewMa
                 }
                 break;
         }
-        float f10 = 0.0f;
+        float f10 = Float.NaN;
         switch (c10) {
             case 0:
                 ((EmojiPickerViewManagerInterface) this.mViewManager).setConfig(t10, (ReadableMap) obj);

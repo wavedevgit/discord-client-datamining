@@ -68,7 +68,7 @@ public abstract class a implements l {
             this.f24023h = aVar;
             this.f24018c = map;
             this.f24019d = aVar.a();
-            if (!Intrinsics.areEqual(descriptor.getKind(), l.b.f56103a) && !Intrinsics.areEqual(descriptor.getKind(), l.c.f56104a)) {
+            if (!Intrinsics.areEqual(descriptor.getKind(), l.b.f56119a) && !Intrinsics.areEqual(descriptor.getKind(), l.c.f56120a)) {
                 z10 = false;
             } else {
                 z10 = true;

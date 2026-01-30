@@ -18,50 +18,50 @@ import java.util.concurrent.TimeUnit;
 public final class nk {
 
     /* renamed from: k  reason: collision with root package name */
-    private static i1 f38499k;
+    private static i1 f38515k;
 
     /* renamed from: l  reason: collision with root package name */
-    private static final k1 f38500l = k1.c("optional-module-barcode", "com.google.android.gms.vision.barcode");
+    private static final k1 f38516l = k1.c("optional-module-barcode", "com.google.android.gms.vision.barcode");
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f38501a;
+    private final String f38517a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f38502b;
+    private final String f38518b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final dk f38503c;
+    private final dk f38519c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final pj.m f38504d;
+    private final pj.m f38520d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Task f38505e;
+    private final Task f38521e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final Task f38506f;
+    private final Task f38522f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final String f38507g;
+    private final String f38523g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final int f38508h;
+    private final int f38524h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Map f38509i = new HashMap();
+    private final Map f38525i = new HashMap();
 
     /* renamed from: j  reason: collision with root package name */
-    private final Map f38510j = new HashMap();
+    private final Map f38526j = new HashMap();
 
     public nk(Context context, final pj.m mVar, dk dkVar, String str) {
         int i10;
-        this.f38501a = context.getPackageName();
-        this.f38502b = pj.c.a(context);
-        this.f38504d = mVar;
-        this.f38503c = dkVar;
+        this.f38517a = context.getPackageName();
+        this.f38518b = pj.c.a(context);
+        this.f38520d = mVar;
+        this.f38519c = dkVar;
         al.a();
-        this.f38507g = str;
-        this.f38505e = pj.g.a().b(new Callable() { // from class: mg.jk
+        this.f38523g = str;
+        this.f38521e = pj.g.a().b(new Callable() { // from class: mg.jk
             @Override // java.util.concurrent.Callable
             public final Object call() {
                 return nk.this.b();
@@ -69,19 +69,19 @@ public final class nk {
         });
         pj.g a10 = pj.g.a();
         Objects.requireNonNull(mVar);
-        this.f38506f = a10.b(new Callable() { // from class: mg.kk
+        this.f38522f = a10.b(new Callable() { // from class: mg.kk
             @Override // java.util.concurrent.Callable
             public final Object call() {
                 return pj.m.this.a();
             }
         });
-        k1 k1Var = f38500l;
+        k1 k1Var = f38516l;
         if (k1Var.containsKey(str)) {
             i10 = DynamiteModule.b(context, (String) k1Var.get(str));
         } else {
             i10 = -1;
         }
-        this.f38508h = i10;
+        this.f38524h = i10;
     }
 
     static long a(List list, double d10) {
@@ -91,7 +91,7 @@ public final class nk {
     private static synchronized i1 i() {
         synchronized (nk.class) {
             try {
-                i1 i1Var = f38499k;
+                i1 i1Var = f38515k;
                 if (i1Var != null) {
                     return i1Var;
                 }
@@ -101,7 +101,7 @@ public final class nk {
                     f1Var.e(pj.c.b(a10.c(i10)));
                 }
                 i1 g10 = f1Var.g();
-                f38499k = g10;
+                f38515k = g10;
                 return g10;
             } catch (Throwable th2) {
                 throw th2;
@@ -110,14 +110,14 @@ public final class nk {
     }
 
     private final String j() {
-        if (this.f38505e.p()) {
-            return (String) this.f38505e.l();
+        if (this.f38521e.p()) {
+            return (String) this.f38521e.l();
         }
-        return gf.m.a().b(this.f38507g);
+        return gf.m.a().b(this.f38523g);
     }
 
     private final boolean k(ye yeVar, long j10, long j11) {
-        if (this.f38509i.get(yeVar) == null || j10 - ((Long) this.f38509i.get(yeVar)).longValue() > TimeUnit.SECONDS.toMillis(30L)) {
+        if (this.f38525i.get(yeVar) == null || j10 - ((Long) this.f38525i.get(yeVar)).longValue() > TimeUnit.SECONDS.toMillis(30L)) {
             return true;
         }
         return false;
@@ -125,7 +125,7 @@ public final class nk {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final /* synthetic */ String b() {
-        return gf.m.a().b(this.f38507g);
+        return gf.m.a().b(this.f38523g);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -134,22 +134,22 @@ public final class nk {
         ckVar.d(yeVar);
         String b10 = ckVar.b();
         yi yiVar = new yi();
-        yiVar.b(this.f38501a);
-        yiVar.c(this.f38502b);
+        yiVar.b(this.f38517a);
+        yiVar.c(this.f38518b);
         yiVar.h(i());
         yiVar.g(Boolean.TRUE);
         yiVar.l(b10);
         yiVar.j(str);
-        if (this.f38506f.p()) {
-            a10 = (String) this.f38506f.l();
+        if (this.f38522f.p()) {
+            a10 = (String) this.f38522f.l();
         } else {
-            a10 = this.f38504d.a();
+            a10 = this.f38520d.a();
         }
         yiVar.i(a10);
         yiVar.d(10);
-        yiVar.k(Integer.valueOf(this.f38508h));
+        yiVar.k(Integer.valueOf(this.f38524h));
         ckVar.c(yiVar);
-        this.f38503c.a(ckVar);
+        this.f38519c.a(ckVar);
     }
 
     public final void d(ck ckVar, ye yeVar) {
@@ -170,13 +170,13 @@ public final class nk {
         if (!k(yeVar, elapsedRealtime, 30L)) {
             return;
         }
-        this.f38509i.put(yeVar, Long.valueOf(elapsedRealtime));
+        this.f38525i.put(yeVar, Long.valueOf(elapsedRealtime));
         e(mkVar.zza(), yeVar, j());
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final /* synthetic */ void g(ye yeVar, uj.j jVar) {
-        n1 n1Var = (n1) this.f38510j.get(yeVar);
+        n1 n1Var = (n1) this.f38526j.get(yeVar);
         if (n1Var != null) {
             for (Object obj : n1Var.b()) {
                 ArrayList<Long> arrayList = new ArrayList(n1Var.a(obj));
@@ -194,21 +194,21 @@ public final class nk {
                 wdVar.e(Long.valueOf(a(arrayList, 0.0d)));
                 e(jVar.a(obj, arrayList.size(), wdVar.g()), yeVar, j());
             }
-            this.f38510j.remove(yeVar);
+            this.f38526j.remove(yeVar);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public final /* synthetic */ void h(final ye yeVar, Object obj, long j10, final uj.j jVar) {
-        if (!this.f38510j.containsKey(yeVar)) {
-            this.f38510j.put(yeVar, l0.p());
+        if (!this.f38526j.containsKey(yeVar)) {
+            this.f38526j.put(yeVar, l0.p());
         }
-        ((n1) this.f38510j.get(yeVar)).c(obj, Long.valueOf(j10));
+        ((n1) this.f38526j.get(yeVar)).c(obj, Long.valueOf(j10));
         long elapsedRealtime = SystemClock.elapsedRealtime();
         if (!k(yeVar, elapsedRealtime, 30L)) {
             return;
         }
-        this.f38509i.put(yeVar, Long.valueOf(elapsedRealtime));
+        this.f38525i.put(yeVar, Long.valueOf(elapsedRealtime));
         pj.g.d().execute(new Runnable() { // from class: mg.ik
             @Override // java.lang.Runnable
             public final void run() {

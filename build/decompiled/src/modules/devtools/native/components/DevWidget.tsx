@@ -109,7 +109,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.code = var6;
     var _closure1_slot14 = var3;
     var3 = function(arg0) { // Original name: DraggableContainer, environment: var1
-        _fun100342: for (var _fun100342_ip = 0;;) switch (_fun100342_ip) {
+        _fun100596: for (var _fun100596_ip = 0;;) switch (_fun100596_ip) {
             case 0:
                 var0 = arg0;
                 var15 = var0.x;
@@ -123,8 +123,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var20 = var0.dragBoundsPadding;
                 var3 = undefined;
                 if (!(var20 === var3)) {
-                    _fun100342_ip = 57;
-                    continue _fun100342
+                    _fun100596_ip = 57;
+                    continue _fun100596
                 }
             case 55:
                 var20 = 0;
@@ -556,4 +556,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 11004, 807, 33, 1297, 671, 3677, 5255, 13021, 4917, 4034, 4040, 4858, 11324, 11006, 13022, 11005, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 11010, 807, 33, 1297, 671, 3679, 5261, 13046, 4923, 4040, 4046, 4864, 11346, 11012, 13047, 11011, 2]);

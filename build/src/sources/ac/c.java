@@ -1,9 +1,8 @@
 package ac;
 
 import android.content.Context;
-/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class c extends h {
+final class c extends h {
 
     /* renamed from: a  reason: collision with root package name */
     private final Context f453a;

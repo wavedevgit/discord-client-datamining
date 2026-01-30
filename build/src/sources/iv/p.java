@@ -13,29 +13,29 @@ import okhttp3.Response;
 public abstract class p extends b0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final y f31352a;
+    private final y f31368a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Call.Factory f31353b;
+    private final Call.Factory f31369b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h f31354c;
+    private final h f31370c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends p {
 
         /* renamed from: d  reason: collision with root package name */
-        private final e f31355d;
+        private final e f31371d;
 
         a(y yVar, Call.Factory factory, h hVar, e eVar) {
             super(yVar, factory, hVar);
-            this.f31355d = eVar;
+            this.f31371d = eVar;
         }
 
         @Override // iv.p
         protected Object c(d dVar, Object[] objArr) {
-            return this.f31355d.b(dVar);
+            return this.f31371d.b(dVar);
         }
     }
 
@@ -44,30 +44,30 @@ public abstract class p extends b0 {
     public static final class b extends p {
 
         /* renamed from: d  reason: collision with root package name */
-        private final e f31356d;
+        private final e f31372d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final boolean f31357e;
+        private final boolean f31373e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final boolean f31358f;
+        private final boolean f31374f;
 
         b(y yVar, Call.Factory factory, h hVar, e eVar, boolean z10, boolean z11) {
             super(yVar, factory, hVar);
-            this.f31356d = eVar;
-            this.f31357e = z10;
-            this.f31358f = z11;
+            this.f31372d = eVar;
+            this.f31373e = z10;
+            this.f31374f = z11;
         }
 
         @Override // iv.p
         protected Object c(d dVar, Object[] objArr) {
-            d dVar2 = (d) this.f31356d.b(dVar);
+            d dVar2 = (d) this.f31372d.b(dVar);
             Continuation continuation = (Continuation) objArr[objArr.length - 1];
             try {
-                if (this.f31358f) {
+                if (this.f31374f) {
                     return r.d(dVar2, continuation);
                 }
-                if (this.f31357e) {
+                if (this.f31373e) {
                     return r.b(dVar2, continuation);
                 }
                 return r.a(dVar2, continuation);
@@ -91,16 +91,16 @@ public abstract class p extends b0 {
     public static final class c extends p {
 
         /* renamed from: d  reason: collision with root package name */
-        private final e f31359d;
+        private final e f31375d;
 
         c(y yVar, Call.Factory factory, h hVar, e eVar) {
             super(yVar, factory, hVar);
-            this.f31359d = eVar;
+            this.f31375d = eVar;
         }
 
         @Override // iv.p
         protected Object c(d dVar, Object[] objArr) {
-            d dVar2 = (d) this.f31359d.b(dVar);
+            d dVar2 = (d) this.f31375d.b(dVar);
             Continuation continuation = (Continuation) objArr[objArr.length - 1];
             try {
                 return r.c(dVar2, continuation);
@@ -111,9 +111,9 @@ public abstract class p extends b0 {
     }
 
     p(y yVar, Call.Factory factory, h hVar) {
-        this.f31352a = yVar;
-        this.f31353b = factory;
-        this.f31354c = hVar;
+        this.f31368a = yVar;
+        this.f31369b = factory;
+        this.f31370c = hVar;
     }
 
     private static e d(a0 a0Var, Method method, Type type, Annotation[] annotationArr) {
@@ -138,7 +138,7 @@ public abstract class p extends b0 {
         boolean z10;
         boolean z11;
         boolean m10;
-        boolean z12 = yVar.f31469l;
+        boolean z12 = yVar.f31485l;
         Annotation[] annotations = method.getAnnotations();
         if (z12) {
             Type[] genericParameterTypes = method.getGenericParameterTypes();
@@ -165,11 +165,11 @@ public abstract class p extends b0 {
         Type a10 = d10.a();
         if (a10 != Response.class) {
             if (a10 != z.class) {
-                if (yVar.f31461d.equals("HEAD") && !Void.class.equals(a10) && !e0.m(a10)) {
+                if (yVar.f31477d.equals("HEAD") && !Void.class.equals(a10) && !e0.m(a10)) {
                     throw e0.n(method, "HEAD method must use Void or Unit as response type.", new Object[0]);
                 }
                 h e10 = e(a0Var, method, a10);
-                Call.Factory factory = a0Var.f31295b;
+                Call.Factory factory = a0Var.f31311b;
                 if (!z12) {
                     return new a(yVar, factory, e10, d10);
                 }
@@ -186,7 +186,7 @@ public abstract class p extends b0 {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // iv.b0
     public final Object a(Object obj, Object[] objArr) {
-        return c(new s(this.f31352a, obj, objArr, this.f31353b, this.f31354c), objArr);
+        return c(new s(this.f31368a, obj, objArr, this.f31369b, this.f31370c), objArr);
     }
 
     protected abstract Object c(d dVar, Object[] objArr);

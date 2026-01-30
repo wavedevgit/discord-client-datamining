@@ -5,30 +5,30 @@ import ui.c;
 final class k1 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final k1 f41355a = new k1();
+    static final k1 f41371a = new k1();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41356b;
+    private static final ui.c f41372b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41357c;
+    private static final ui.c f41373c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41358d;
+    private static final ui.c f41374d;
 
     static {
         c.b a10 = ui.c.a("errorCode");
         f fVar = new f();
         fVar.a(1);
-        f41356b = a10.b(fVar.b()).a();
+        f41372b = a10.b(fVar.b()).a();
         c.b a11 = ui.c.a("isColdCall");
         f fVar2 = new f();
         fVar2.a(2);
-        f41357c = a11.b(fVar2.b()).a();
+        f41373c = a11.b(fVar2.b()).a();
         c.b a12 = ui.c.a("imageInfo");
         f fVar3 = new f();
         fVar3.a(3);
-        f41358d = a12.b(fVar3.b()).a();
+        f41374d = a12.b(fVar3.b()).a();
     }
 
     private k1() {

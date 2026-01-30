@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_launcher/native/screens/home/SubmittingOverlay.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: SubmittingOverlay, environment: var1
-        _fun107706: for (var _fun107706_ip = 0;;) switch (_fun107706_ip) {
+        _fun107968: for (var _fun107968_ip = 0;;) switch (_fun107968_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.submitting;
@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var12.bind(var3)(var2);
                 var2 = var7.useAnimatedStyle;
                 var1 = function() { // Original name: S, environment: var1
-                    _fun107707: for (var _fun107707_ip = 0;;) switch (_fun107707_ip) {
+                    _fun107969: for (var _fun107969_ip = 0;;) switch (_fun107969_ip) {
                         case 0:
                             var0 = {};
                             var3 = _closure1_slot0;
@@ -81,8 +81,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = _closure2_slot0;
                             var3 = 0;
                             if (!var2) {
-                                _fun107707_ip = 47;
-                                continue _fun107707
+                                _fun107969_ip = 47;
+                                continue _fun107969
                             }
                         case 44:
                             var3 = 1;
@@ -130,8 +130,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6[2] = var7;
                 var0.style = var6;
                 if (!var4) {
-                    _fun107706_ip = 257;
-                    continue _fun107706
+                    _fun107968_ip = 257;
+                    continue _fun107968
                 }
             case 207:
                 var7 = _closure1_slot3;
@@ -154,4 +154,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.SubmittingOverlay = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 1297, 671, 3677, 4034, 4040, 4055, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 1297, 671, 3679, 4040, 4046, 4061, 2]);

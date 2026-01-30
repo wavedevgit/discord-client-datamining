@@ -9,10 +9,10 @@ import w5.c;
 public abstract class l0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f50694a = c.a.a("nm", "c", "w", "o", "lc", "lj", "ml", "hd", "d");
+    private static final c.a f50710a = c.a.a("nm", "c", "w", "o", "lc", "lj", "ml", "hd", "d");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c.a f50695b = c.a.a("n", "v");
+    private static final c.a f50711b = c.a.a("n", "v");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static s5.s a(w5.c cVar, l5.i iVar) {
@@ -28,7 +28,7 @@ public abstract class l0 {
         boolean z10 = false;
         r5.d dVar = null;
         while (cVar.hasNext()) {
-            switch (cVar.B(f50694a)) {
+            switch (cVar.B(f50710a)) {
                 case 0:
                     str = cVar.e1();
                     break;
@@ -60,7 +60,7 @@ public abstract class l0 {
                         String str3 = str2;
                         Object obj2 = str3;
                         while (cVar.hasNext()) {
-                            int B = cVar.B(f50695b);
+                            int B = cVar.B(f50711b);
                             if (B != 0) {
                                 if (B != 1) {
                                     cVar.E();

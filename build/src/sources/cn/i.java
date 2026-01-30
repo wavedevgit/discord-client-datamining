@@ -243,7 +243,7 @@ public final class i {
                             z10 = true;
                         }
                     }
-                    Unit unit = Unit.f33282a;
+                    Unit unit = Unit.f33298a;
                 } catch (Throwable th2) {
                     throw th2;
                 }
@@ -370,7 +370,7 @@ public final class i {
         dVar.p();
         dVar.k();
         dVar.B();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private final void h(d dVar) {
@@ -508,7 +508,7 @@ public final class i {
                                     z10 = true;
                                 }
                             }
-                            Unit unit = Unit.f33282a;
+                            Unit unit = Unit.f33298a;
                         } catch (Throwable th2) {
                             throw th2;
                         }

@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.useSafetyHubClassifications = var3;
     var3 = function(arg0) { // Original name: useSafetyHubClassification, environment: var1
-        _fun79313: for (var _fun79313_ip = 0;;) switch (_fun79313_ip) {
+        _fun79359: for (var _fun79359_ip = 0;;) switch (_fun79359_ip) {
             case 0:
                 var9 = arg0;
                 var _closure2_slot0 = var9;
@@ -153,22 +153,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var7.isGuildClassification;
                 var1 = var1.bind(var7)(var3);
                 if (var1) {
-                    _fun79313_ip = 227;
-                    continue _fun79313
+                    _fun79359_ip = 227;
+                    continue _fun79359
                 }
             case 215:
                 var1 = _closure1_slot6;
                 var1 = var1.USER;
-                _fun79313_ip = 311;
-                continue _fun79313;
+                _fun79359_ip = 311;
+                continue _fun79359;
             case 227:
                 var7 = var3.guild_metadata;
                 var8 = null;
                 var10 = var8 == var7;
                 var8 = undefined;
                 if (var10) {
-                    _fun79313_ip = 250;
-                    continue _fun79313
+                    _fun79359_ip = 250;
+                    continue _fun79359
                 }
             case 244:
                 var8 = var7.member_type;
@@ -181,14 +181,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var7.MemberType;
                 var7 = var7.OWNER;
                 if (!(var8 !== var7)) {
-                    _fun79313_ip = 298;
-                    continue _fun79313
+                    _fun79359_ip = 298;
+                    continue _fun79359
                 }
             case 286:
                 var7 = _closure1_slot6;
                 var7 = var7.GUILD_MEMBER;
-                _fun79313_ip = 308;
-                continue _fun79313;
+                _fun79359_ip = 308;
+                continue _fun79359;
             case 298:
                 var8 = _closure1_slot6;
                 var7 = var8.GUILD_OWNER;
@@ -202,14 +202,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6[1] = var3;
                 var6[2] = var5;
                 var0 = function() { // Environment: var0
-                    _fun79318: for (var _fun79318_ip = 0;;) switch (_fun79318_ip) {
+                    _fun79364: for (var _fun79364_ip = 0;;) switch (_fun79364_ip) {
                         case 0:
                             var2 = _closure2_slot1;
                             var0 = undefined;
                             var2 = var0 === var2;
                             if (!var2) {
-                                _fun79318_ip = 26;
-                                continue _fun79318
+                                _fun79364_ip = 26;
+                                continue _fun79364
                             }
                         case 16:
                             var4 = _closure2_slot2;
@@ -217,8 +217,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var3 == var4;
                         case 26:
                             if (!var2) {
-                                _fun79318_ip = 67;
-                                continue _fun79318
+                                _fun79364_ip = 67;
+                                continue _fun79364
                             }
                         case 29:
                             var3 = _closure1_slot2;
@@ -239,16 +239,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.classificationRequestState = var5;
                 var0.isDsaEligible = var4;
                 if (!var2) {
-                    _fun79313_ip = 375;
-                    continue _fun79313
+                    _fun79359_ip = 375;
+                    continue _fun79359
                 }
             case 369:
                 var4 = null;
                 var2 = var4 != var3;
             case 375:
                 if (!var2) {
-                    _fun79313_ip = 390;
-                    continue _fun79313
+                    _fun79359_ip = 390;
+                    continue _fun79359
                 }
             case 378:
                 var4 = var3.appeal_status;
@@ -361,4 +361,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useSafetyHubAppealSignal = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 10046, 5899, 566, 21, 5898, 5900, 10053, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 10052, 5902, 566, 21, 5901, 5903, 10059, 2]);

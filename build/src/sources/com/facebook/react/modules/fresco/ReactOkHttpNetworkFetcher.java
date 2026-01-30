@@ -107,7 +107,7 @@ public final class ReactOkHttpNetworkFetcher extends OkHttpNetworkFetcher {
             aVar.e();
             map = null;
         }
-        Headers.b bVar = Headers.f44045e;
+        Headers.b bVar = Headers.f44061e;
         if (map == null) {
             map = o0.i();
         }

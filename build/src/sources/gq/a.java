@@ -13,7 +13,7 @@ public final class a implements Closeable, Parcelable {
     public static final Parcelable.Creator<a> CREATOR = new C0344a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f27081d;
+    private final List f27097d;
 
     /* renamed from: gq.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -39,16 +39,16 @@ public final class a implements Closeable, Parcelable {
 
     public a(List stepData) {
         Intrinsics.checkNotNullParameter(stepData, "stepData");
-        this.f27081d = stepData;
+        this.f27097d = stepData;
     }
 
     public final List a() {
-        return this.f27081d;
+        return this.f27097d;
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        for (g gVar : this.f27081d) {
+        for (g gVar : this.f27097d) {
             gVar.close();
         }
     }
@@ -62,25 +62,25 @@ public final class a implements Closeable, Parcelable {
         if (this == obj) {
             return true;
         }
-        if ((obj instanceof a) && Intrinsics.areEqual(this.f27081d, ((a) obj).f27081d)) {
+        if ((obj instanceof a) && Intrinsics.areEqual(this.f27097d, ((a) obj).f27097d)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f27081d.hashCode();
+        return this.f27097d.hashCode();
     }
 
     public String toString() {
-        List list = this.f27081d;
+        List list = this.f27097d;
         return "CollectedData(stepData=" + list + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        List<Parcelable> list = this.f27081d;
+        List<Parcelable> list = this.f27097d;
         dest.writeInt(list.size());
         for (Parcelable parcelable : list) {
             dest.writeParcelable(parcelable, i10);

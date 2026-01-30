@@ -5,13 +5,13 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 abstract class x3 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final d f53759a = new d(null);
+    public static final d f53775a = new d(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends x3 {
 
         /* renamed from: b  reason: collision with root package name */
-        public static final a f53760b = new a();
+        public static final a f53776b = new a();
 
         private a() {
             super(null);
@@ -37,7 +37,7 @@ abstract class x3 {
     public static final class b extends x3 {
 
         /* renamed from: b  reason: collision with root package name */
-        public static final b f53761b = new b();
+        public static final b f53777b = new b();
 
         private b() {
             super(null);
@@ -63,7 +63,7 @@ abstract class x3 {
     public static final class c extends x3 {
 
         /* renamed from: b  reason: collision with root package name */
-        public static final c f53762b = new c();
+        public static final c f53778b = new c();
 
         private c() {
             super(null);
@@ -97,11 +97,11 @@ abstract class x3 {
                     if (c10 != '@') {
                         return new e(c10);
                     }
-                    return a.f53760b;
+                    return a.f53776b;
                 }
-                return c.f53762b;
+                return c.f53778b;
             }
-            return b.f53761b;
+            return b.f53777b;
         }
 
         private d() {
@@ -112,33 +112,33 @@ abstract class x3 {
     public static final class e extends x3 {
 
         /* renamed from: b  reason: collision with root package name */
-        private final char f53763b;
+        private final char f53779b;
 
         public e(char c10) {
             super(null);
-            this.f53763b = c10;
+            this.f53779b = c10;
         }
 
         public final char b() {
-            return this.f53763b;
+            return this.f53779b;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            if ((obj instanceof e) && this.f53763b == ((e) obj).f53763b) {
+            if ((obj instanceof e) && this.f53779b == ((e) obj).f53779b) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return Character.hashCode(this.f53763b);
+            return Character.hashCode(this.f53779b);
         }
 
         public String toString() {
-            char c10 = this.f53763b;
+            char c10 = this.f53779b;
             return "Literal(char=" + c10 + ")";
         }
     }

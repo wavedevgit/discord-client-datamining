@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/powerups/hooks/useGuildPowerupCardFooterConfig.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0, arg1) { // Original name: useGuildPowerupCardFooterConfig, environment: var1
-        _fun102816: for (var _fun102816_ip = 0;;) switch (_fun102816_ip) {
+        _fun103071: for (var _fun103071_ip = 0;;) switch (_fun103071_ip) {
             case 0:
                 var8 = arg0;
                 var3 = arg1;
@@ -56,15 +56,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var2 = var1;
                 if (var1) {
-                    _fun102816_ip = 103;
-                    continue _fun102816
+                    _fun103071_ip = 103;
+                    continue _fun103071
                 }
             case 100:
                 var2 = !var7;
             case 103:
                 if (!var2) {
-                    _fun102816_ip = 113;
-                    continue _fun102816
+                    _fun103071_ip = 113;
+                    continue _fun103071
                 }
             case 106:
                 var5 = var6 === var5;
@@ -73,8 +73,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.showToggleButton = var2;
                 var2 = var1;
                 if (!var2) {
-                    _fun102816_ip = 144;
-                    continue _fun102816
+                    _fun103071_ip = 144;
+                    continue _fun103071
                 }
             case 124:
                 var5 = _closure1_slot2;
@@ -89,4 +89,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6675, 13341, 13338, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6678, 13366, 13363, 2]);

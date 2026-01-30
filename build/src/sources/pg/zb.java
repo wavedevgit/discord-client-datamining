@@ -5,7 +5,7 @@ import ui.c;
 final class zb implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final zb f45962a = new zb();
+    static final zb f45978a = new zb();
 
     static {
         c.b a10 = ui.c.a("metric");

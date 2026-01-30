@@ -6,19 +6,19 @@ import kotlin.jvm.internal.Intrinsics;
 public final class g implements v {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f49874a;
+    private final Object f49890a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Function1 f49875b;
+    private final Function1 f49891b;
 
     public g(Object obj, Function1 getter) {
         Intrinsics.checkNotNullParameter(getter, "getter");
-        this.f49874a = obj;
-        this.f49875b = getter;
+        this.f49890a = obj;
+        this.f49891b = getter;
     }
 
     @Override // ts.v
     public boolean test(Object obj) {
-        return Intrinsics.areEqual(this.f49875b.invoke(obj), this.f49874a);
+        return Intrinsics.areEqual(this.f49891b.invoke(obj), this.f49890a);
     }
 }

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
-        _fun117830: for (var _fun117830_ip = 0;;) switch (_fun117830_ip) {
+        _fun118109: for (var _fun118109_ip = 0;;) switch (_fun118109_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 72: // try_end0
-                _fun117830_ip = 76;
-                continue _fun117830;
+                _fun118109_ip = 76;
+                continue _fun118109;
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
         var2 = function(arg0) { // Original name: UserSettingsNativeBridgeManager, environment: var0
-            _fun117834: for (var _fun117834_ip = 0;;) switch (_fun117834_ip) {
+            _fun118113: for (var _fun118113_ip = 0;;) switch (_fun118113_ip) {
                 case 0:
                     var5 = this;
                     var13 = 0;
@@ -110,14 +110,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot9;
                     var0 = var0.bind(var4)();
                     if (var0) {
-                        _fun117834_ip = 86;
-                        continue _fun117834
+                        _fun118113_ip = 86;
+                        continue _fun118113
                     }
                 case 73:
                     var0 = var9.apply;
                     var0 = var0.bind(var9)(var5, var10);
-                    _fun117834_ip = 120;
-                    continue _fun117834;
+                    _fun118113_ip = 120;
+                    continue _fun118113;
                 case 86:
                     var6 = global;
                     var8 = var6.Reflect;
@@ -136,19 +136,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var3.isIOS;
                     var1 = var1.bind(var3)();
                     if (var1) {
-                        _fun117834_ip = 168;
-                        continue _fun117834
+                        _fun118113_ip = 168;
+                        continue _fun118113
                     }
                 case 159:
                     var1 = function() { // Environment: var2
                         var0 = undefined;
                         return var0;
                     };
-                    _fun117834_ip = 175;
-                    continue _fun117834;
+                    _fun118113_ip = 175;
+                    continue _fun118113;
                 case 168:
                     var1 = function() { // Environment: var2
-                        _fun117835: for (var _fun117835_ip = 0;;) switch (_fun117835_ip) {
+                        _fun118114: for (var _fun118114_ip = 0;;) switch (_fun118114_ip) {
                             case 0:
                                 var0 = _closure1_slot8;
                                 var3 = var0.settings;
@@ -157,16 +157,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var0 = undefined;
                                 var5 = undefined;
                                 if (var4) {
-                                    _fun117835_ip = 47;
-                                    continue _fun117835
+                                    _fun118114_ip = 47;
+                                    continue _fun118114
                                 }
                             case 26:
                                 var3 = var3.textAndImages;
                                 var4 = var1 == var3;
                                 var5 = undefined;
                                 if (var4) {
-                                    _fun117835_ip = 47;
-                                    continue _fun117835
+                                    _fun118114_ip = 47;
+                                    continue _fun118114
                                 }
                             case 41:
                                 var5 = var3.explicitContentSettings;
@@ -174,8 +174,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var2 = _closure1_slot7;
                                 var3 = var2.NSUserDefaultsBridge;
                                 if (!(var1 != var3)) {
-                                    _fun117835_ip = 93;
-                                    continue _fun117835
+                                    _fun118114_ip = 93;
+                                    continue _fun118114
                                 }
                             case 61:
                                 var2 = var3.setExplicitContentSettingsJSONString;
@@ -226,4 +226,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7, 6, 15, 17, 18, 27, 1310, 478, 4256, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7, 6, 15, 17, 18, 27, 1310, 478, 4262, 2]);

@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/stage_channels/StageChannelHeightHooks.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Original name: useGetStageRTCPanelHeight, environment: var1
-        _fun67993: for (var _fun67993_ip = 0;;) switch (_fun67993_ip) {
+        _fun68038: for (var _fun68038_ip = 0;;) switch (_fun68038_ip) {
             case 0:
                 var4 = arg0;
                 var5 = _closure1_slot0;
@@ -38,15 +38,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3.useStageIgnoredUsersCount;
                 var0 = var0.bind(var3)(var4);
                 if (!(!(var2 > var1))) {
-                    _fun67993_ip = 72;
-                    continue _fun67993
+                    _fun68038_ip = 72;
+                    continue _fun68038
                 }
             case 62:
                 var1 = var0 > var1;
                 var0 = 68;
                 if (!var1) {
-                    _fun67993_ip = 75;
-                    continue _fun67993
+                    _fun68038_ip = 75;
+                    continue _fun68038
                 }
             case 72:
                 var0 = 88;
@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useGetStageRTCPanelHeight = var3;
     var1 = function(arg0) { // Original name: useGetActionBarHeight, environment: var1
-        _fun67994: for (var _fun67994_ip = 0;;) switch (_fun67994_ip) {
+        _fun68039: for (var _fun68039_ip = 0;;) switch (_fun68039_ip) {
             case 0:
                 var4 = arg0;
                 var5 = _closure1_slot0;
@@ -72,15 +72,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3.useStageIgnoredUsersCount;
                 var0 = var0.bind(var3)(var4);
                 if (!(!(var2 > var1))) {
-                    _fun67994_ip = 72;
-                    continue _fun67994
+                    _fun68039_ip = 72;
+                    continue _fun68039
                 }
             case 62:
                 var1 = var0 > var1;
                 var0 = 112;
                 if (!var1) {
-                    _fun67994_ip = 75;
-                    continue _fun67994
+                    _fun68039_ip = 75;
+                    continue _fun68039
                 }
             case 72:
                 var0 = 132;
@@ -90,4 +90,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useGetActionBarHeight = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6413, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6416, 2]);

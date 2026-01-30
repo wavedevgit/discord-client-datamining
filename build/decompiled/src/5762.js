@@ -1,72 +1,45 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun51019: for (var _fun51019_ip = 0;;) switch (_fun51019_ip) {
-        case 0:
-            var4 = global;
-            var2 = exports;
-            var _closure1_slot0 = var4;
-            var5 = global;
-            var7 = var5.Object;
-            var6 = var7.defineProperty;
-            var3 = {};
-            var0 = true;
-            var3.value = var0;
-            var0 = '__esModule';
-            var0 = var6.bind(var7)(var2, var0, var3);
-            var3 = dependencyMap;
-            var0 = 0;
-            var6 = var3[var0];
-            var3 = metroImportAll;
-            var0 = undefined;
-            var3 = var3.bind(var0)(var6);
-            var _closure1_slot1 = var3;
-            var3 = var4.__react_navigation__elements_contexts;
-            var6 = null;
-            if (!(var6 == var3)) {
-                _fun51019_ip = 105;
-                continue _fun51019
-            }
-        case 79:
-            var5 = var5.Map;
-            var6 = var5.prototype;
-            var6 = Object.create(var6, {
-                constructor: {
-                    value: var5
+    var1 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
+    var0 = true;
+    var2.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = function(arg0, arg1) { // Original name: getHeaderTitle, environment: var0
+        _fun51060: for (var _fun51060_ip = 0;;) switch (_fun51060_ip) {
+            case 0:
+                var1 = arg0;
+                var0 = arg1;
+                var2 = var1.headerTitle;
+                var3 = 'string';
+                var2 = typeof var2;
+                if (!(var3 !== var2)) {
+                    _fun51060_ip = 41;
+                    continue _fun51060
                 }
-            });
-            var11 = var6;
-            var5 = new var11[var5](var10);
-            var3 = var5 instanceof Object ? var5 : var6;
-        case 105:
-            var4.__react_navigation__elements_contexts = var3;
-            var1 = function(arg0, arg1) { // Original name: getNamedContext, environment: var1
-                _fun51020: for (var _fun51020_ip = 0;;) switch (_fun51020_ip) {
-                    case 0:
-                        var4 = arg0;
-                        var0 = _closure1_slot0;
-                        var1 = var0.__react_navigation__elements_contexts;
-                        var0 = var1.get;
-                        var0 = var0.bind(var1)(var4);
-                        if (var0) {
-                            _fun51020_ip = 77;
-                            continue _fun51020
-                        }
-                    case 29:
-                        var5 = _closure1_slot1;
-                        var3 = var5.createContext;
-                        var1 = arg1;
-                        var1 = var3.bind(var5)(var1);
-                        var1.displayName = var4;
-                        var2 = _closure1_slot0;
-                        var3 = var2.__react_navigation__elements_contexts;
-                        var2 = var3.set;
-                        var2 = var2.bind(var3)(var4, var1);
-                        var0 = var1;
-                    case 77:
-                        return var0;
+            case 23:
+                var3 = var1.title;
+                var2 = undefined;
+                if (!(var2 !== var3)) {
+                    _fun51060_ip = 39;
+                    continue _fun51060
                 }
-            };
-            var2.default = var1;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31]);
+            case 34:
+                var0 = var1.title;
+            case 39:
+                _fun51060_ip = 47;
+                continue _fun51060;
+            case 41:
+                var0 = var1.headerTitle;
+            case 47:
+                return var0;
+        }
+    };
+    var1.default = var0;
+    var0 = undefined;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

@@ -8,7 +8,7 @@ import kotlin.reflect.jvm.internal.impl.descriptors.SimpleFunctionDescriptor;
 public class j0 implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final j0 f34266d = new j0();
+    public static final j0 f34282d = new j0();
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {

@@ -739,7 +739,7 @@ public final class MessageView extends ChatListRelativeLayout implements Vertica
                 this.accessories.add(new PostPreviewEmbedMessageAccessory(message2.m237getId3Eiw7ao(), postPreviewEmbed, i18, SpoilerAttributes.Companion.forMediaPostPreviewEmbed(postPreviewEmbed, message2, i18, postPreviewEmbed.getVerifyAge()), null));
                 i18 = i19;
             }
-            Unit unit = Unit.f33282a;
+            Unit unit = Unit.f33298a;
         }
         List<Embed> embeds = message2.getEmbeds();
         if (embeds != null) {
@@ -774,7 +774,7 @@ public final class MessageView extends ChatListRelativeLayout implements Vertica
                 }
                 i20 = i21;
             }
-            Unit unit2 = Unit.f33282a;
+            Unit unit2 = Unit.f33298a;
         }
         List<GiftEmbed> giftCodes = message2.getGiftCodes();
         if (giftCodes != null) {
@@ -787,7 +787,7 @@ public final class MessageView extends ChatListRelativeLayout implements Vertica
                 this.accessories.add(new GiftMessageAccessory(message2.m237getId3Eiw7ao(), i22, (GiftEmbed) obj4, null));
                 i22 = i23;
             }
-            Unit unit3 = Unit.f33282a;
+            Unit unit3 = Unit.f33298a;
         }
         GiftEmbed referralTrialOffer = message2.getReferralTrialOffer();
         if (referralTrialOffer != null) {
@@ -836,18 +836,18 @@ public final class MessageView extends ChatListRelativeLayout implements Vertica
                         throw new ir.p();
                     }
                     arrayList10.add(guildProfileInviteMessageAccessory);
-                    Unit unit4 = Unit.f33282a;
+                    Unit unit4 = Unit.f33298a;
                 }
                 i24 = i25;
             }
-            Unit unit5 = Unit.f33282a;
+            Unit unit5 = Unit.f33298a;
         }
         List<Sticker> stickers = message2.getStickers();
         if (stickers != null) {
             for (Sticker sticker : stickers) {
                 this.accessories.add(new StickerMessageAccessory(message2.m237getId3Eiw7ao(), sticker, null));
             }
-            Unit unit6 = Unit.f33282a;
+            Unit unit6 = Unit.f33298a;
         }
         if (message2.getComponents() != null) {
             defaultConstructorMarker = null;
@@ -1081,25 +1081,25 @@ public final class MessageView extends ChatListRelativeLayout implements Vertica
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setMessage$lambda$5(ChatEventHandler chatEventHandler, Message message) {
         ChatEventHandler.DefaultImpls.m488onInitiateReply8a0ehIg$default(chatEventHandler, message.m237getId3Eiw7ao(), message.m234getChannelIdo4g7jtM(), null, null, 12, null);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setMessage$lambda$6(ChatEventHandler chatEventHandler, Message message) {
         chatEventHandler.mo436onInitiateThreadpfaIj0E(message.m237getId3Eiw7ao(), message.m234getChannelIdo4g7jtM());
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setMessage$lambda$7(ChatEventHandler chatEventHandler, Message message) {
         chatEventHandler.mo434onInitiateEditpfaIj0E(message.m237getId3Eiw7ao(), message.m234getChannelIdo4g7jtM());
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit setMessage$lambda$9(ChatEventHandler chatEventHandler, Message message) {
         chatEventHandler.mo467onTapMessageReply0eiqbug(message.m234getChannelIdo4g7jtM(), message.m237getId3Eiw7ao());
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // com.discord.chat.presentation.list.SwipeReplyInitiator
@@ -1440,7 +1440,7 @@ public final class MessageView extends ChatListRelativeLayout implements Vertica
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33282a;
+                unit = Unit.f33298a;
                 return unit;
             }
         };
@@ -1448,7 +1448,7 @@ public final class MessageView extends ChatListRelativeLayout implements Vertica
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33282a;
+                unit = Unit.f33298a;
                 return unit;
             }
         };
@@ -1456,7 +1456,7 @@ public final class MessageView extends ChatListRelativeLayout implements Vertica
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33282a;
+                unit = Unit.f33298a;
                 return unit;
             }
         };

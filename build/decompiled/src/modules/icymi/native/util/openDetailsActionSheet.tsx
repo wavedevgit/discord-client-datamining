@@ -74,4 +74,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openDetailsActionSheet = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [8828, 3237, 13537, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [8832, 3237, 13563, 1307, 2]);

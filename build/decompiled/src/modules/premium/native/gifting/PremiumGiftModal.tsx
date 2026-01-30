@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/premium/native/gifting/PremiumGiftModal.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function(arg0) { // Original name: PremiumGiftModal, environment: var3
-        _fun74557: for (var _fun74557_ip = 0;;) switch (_fun74557_ip) {
+        _fun74601: for (var _fun74601_ip = 0;;) switch (_fun74601_ip) {
             case 0:
                 var0 = arg0;
                 var18 = var0.recipientUserId;
@@ -158,19 +158,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var5.bind(var8)(var1, var2);
                 var1 = null;
                 if (!(var1 == var12)) {
-                    _fun74557_ip = 196;
-                    continue _fun74557
+                    _fun74601_ip = 196;
+                    continue _fun74601
                 }
             case 167:
                 if (!(var1 == var15)) {
-                    _fun74557_ip = 183;
-                    continue _fun74557
+                    _fun74601_ip = 183;
+                    continue _fun74601
                 }
             case 171:
                 var1 = _closure1_slot6;
                 var1 = var1.PLAN_SELECT;
-                _fun74557_ip = 193;
-                continue _fun74557;
+                _fun74601_ip = 193;
+                continue _fun74601;
             case 183:
                 var2 = _closure1_slot6;
                 var1 = var2.CUSTOMIZATION;
@@ -193,7 +193,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new Array(0);
                 var17 = var8.bind(var5)(var2, var1);
                 var1 = function(arg0, arg1) { // Original name: useGetScreens, environment: var10
-                    _fun74561: for (var _fun74561_ip = 0;;) switch (_fun74561_ip) {
+                    _fun74605: for (var _fun74605_ip = 0;;) switch (_fun74605_ip) {
                         case 0:
                             var10 = arg0;
                             var7 = arg1;
@@ -214,8 +214,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var11 = var9.PLAN_SELECT;
                             var9 = undefined;
                             if (!(var10 === var11)) {
-                                _fun74561_ip = 74;
-                                continue _fun74561
+                                _fun74605_ip = 74;
+                                continue _fun74605
                             }
                         case 67:
                             var9 = function(arg0) { // Environment: var3
@@ -269,8 +269,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.title = var6;
                             var9 = var9.REWARD_SELECT;
                             if (!(var10 !== var9)) {
-                                _fun74561_ip = 155;
-                                continue _fun74561
+                                _fun74605_ip = 155;
+                                continue _fun74605
                             }
                         case 123:
                             var11 = _closure1_slot0;
@@ -280,8 +280,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var11 = var11.bind(var8)(var9);
                             var9 = var11.getHeaderBackButton;
                             var9 = var9.bind(var11)();
-                            _fun74561_ip = 186;
-                            continue _fun74561;
+                            _fun74605_ip = 186;
+                            continue _fun74605;
                         case 155:
                             var12 = _closure1_slot0;
                             var13 = _closure1_slot2;
@@ -323,8 +323,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1.title = var6;
                             var9 = var9.CUSTOMIZATION;
                             if (!(var10 !== var9)) {
-                                _fun74561_ip = 276;
-                                continue _fun74561
+                                _fun74605_ip = 276;
+                                continue _fun74605
                             }
                         case 244:
                             var10 = _closure1_slot0;
@@ -334,8 +334,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var10 = var10.bind(var8)(var9);
                             var9 = var10.getHeaderBackButton;
                             var9 = var9.bind(var10)();
-                            _fun74561_ip = 307;
-                            continue _fun74561;
+                            _fun74605_ip = 307;
+                            continue _fun74605;
                         case 276:
                             var11 = _closure1_slot0;
                             var12 = _closure1_slot2;
@@ -440,13 +440,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.initialRouteName = var12;
                 var8.screens = var11;
                 var10 = function(arg0) { // Original name: onStateChange, environment: var10
-                    _fun74567: for (var _fun74567_ip = 0;;) switch (_fun74567_ip) {
+                    _fun74611: for (var _fun74611_ip = 0;;) switch (_fun74611_ip) {
                         case 0:
                             var0 = arg0;
                             var1 = null;
                             if (!(var1 != var0)) {
-                                _fun74567_ip = 54;
-                                continue _fun74567
+                                _fun74611_ip = 54;
+                                continue _fun74611
                             }
                         case 9:
                             var1 = var0.routes;
@@ -477,4 +477,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.PremiumGiftScreens = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 33, 7062, 1297, 671, 4661, 9360, 9435, 9439, 9476, 5684, 4884, 491, 4518, 9361, 9509, 5744, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 33, 7065, 1297, 671, 4667, 9365, 9440, 9444, 9481, 5687, 4890, 491, 4524, 9366, 9514, 5747, 2]);

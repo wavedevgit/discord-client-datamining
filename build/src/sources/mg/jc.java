@@ -5,7 +5,7 @@ import ui.c;
 final class jc implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final jc f38287a = new jc();
+    static final jc f38303a = new jc();
 
     static {
         c.b a10 = ui.c.a("language");

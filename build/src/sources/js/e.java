@@ -9,19 +9,19 @@ import kotlinx.coroutines.channels.ProducerScope;
 abstract class e extends ks.e {
 
     /* renamed from: o  reason: collision with root package name */
-    private final Function2 f32492o;
+    private final Function2 f32508o;
 
     public e(Function2 function2, CoroutineContext coroutineContext, int i10, is.a aVar) {
         super(coroutineContext, i10, aVar);
-        this.f32492o = function2;
+        this.f32508o = function2;
     }
 
     static /* synthetic */ Object n(e eVar, ProducerScope producerScope, Continuation continuation) {
-        Object invoke = eVar.f32492o.invoke(producerScope, continuation);
+        Object invoke = eVar.f32508o.invoke(producerScope, continuation);
         if (invoke == or.b.f()) {
             return invoke;
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -32,6 +32,6 @@ abstract class e extends ks.e {
 
     @Override // ks.e
     public String toString() {
-        return "block[" + this.f32492o + "] -> " + super.toString();
+        return "block[" + this.f32508o + "] -> " + super.toString();
     }
 }

@@ -19,7 +19,7 @@ public class x extends s {
     /* JADX INFO: Access modifiers changed from: package-private */
     public x(r rVar, int i10) {
         super(rVar);
-        this.f16572e = yg.e.f54410a;
+        this.f16572e = yg.e.f54426a;
         this.f16574g = new View.OnClickListener() { // from class: com.google.android.material.textfield.w
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
@@ -75,7 +75,7 @@ public class x extends s {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.textfield.s
     public int c() {
-        return yg.i.f54496v;
+        return yg.i.f54512v;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

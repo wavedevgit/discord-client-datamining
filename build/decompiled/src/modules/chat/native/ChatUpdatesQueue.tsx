@@ -83,7 +83,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var5 = var6.addListener;
             var4 = 'AddBlocker';
             var3 = function(arg0) { // Environment: var1
-                _fun76926: for (var _fun76926_ip = 0;;) switch (_fun76926_ip) {
+                _fun76970: for (var _fun76970_ip = 0;;) switch (_fun76970_ip) {
                     case 0:
                         var0 = arg0;
                         var2 = var0.blockerId;
@@ -94,15 +94,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = null;
                         var1 = var1 != var4;
                         if (!var1) {
-                            _fun76926_ip = 45;
-                            continue _fun76926
+                            _fun76970_ip = 45;
+                            continue _fun76970
                         }
                     case 41:
                         var1 = var4 === var3;
                     case 45:
                         if (!var1) {
-                            _fun76926_ip = 65;
-                            continue _fun76926
+                            _fun76970_ip = 65;
+                            continue _fun76970
                         }
                     case 48:
                         var1 = _closure3_slot0;
@@ -119,7 +119,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var4 = var5.addListener;
             var3 = 'RemoveBlocker';
             var1 = function(arg0) { // Environment: var1
-                _fun76927: for (var _fun76927_ip = 0;;) switch (_fun76927_ip) {
+                _fun76971: for (var _fun76971_ip = 0;;) switch (_fun76971_ip) {
                     case 0:
                         var0 = arg0;
                         var2 = var0.blockerId;
@@ -130,15 +130,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = null;
                         var1 = var1 != var4;
                         if (!var1) {
-                            _fun76927_ip = 45;
-                            continue _fun76927
+                            _fun76971_ip = 45;
+                            continue _fun76971
                         }
                     case 41:
                         var1 = var4 === var3;
                     case 45:
                         if (!var1) {
-                            _fun76927_ip = 65;
-                            continue _fun76927
+                            _fun76971_ip = 65;
+                            continue _fun76971
                         }
                     case 48:
                         var1 = _closure3_slot0;
@@ -172,14 +172,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'isBlocking';
         var0.key = var5;
         var5 = function() { // Original name: get, environment: var4
-            _fun76929: for (var _fun76929_ip = 0;;) switch (_fun76929_ip) {
+            _fun76973: for (var _fun76973_ip = 0;;) switch (_fun76973_ip) {
                 case 0:
                     var1 = this;
                     var0 = var1.hasUpdates;
                     var0 = var0.bind(var1)();
                     if (var0) {
-                        _fun76929_ip = 33;
-                        continue _fun76929
+                        _fun76973_ip = 33;
+                        continue _fun76973
                     }
                 case 16:
                     var1 = var1.blockers;
@@ -196,13 +196,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'addBlocker';
         var0.key = var5;
         var5 = function(arg0) { // Original name: value, environment: var4
-            _fun76930: for (var _fun76930_ip = 0;;) switch (_fun76930_ip) {
+            _fun76974: for (var _fun76974_ip = 0;;) switch (_fun76974_ip) {
                 case 0:
                     var2 = arg0;
                     var0 = null;
                     if (!(var0 != var2)) {
-                        _fun76930_ip = 28;
-                        continue _fun76930
+                        _fun76974_ip = 28;
+                        continue _fun76974
                     }
                 case 9:
                     var0 = this;
@@ -220,14 +220,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'removeBlocker';
         var0.key = var5;
         var5 = function(arg0) { // Original name: value, environment: var4
-            _fun76931: for (var _fun76931_ip = 0;;) switch (_fun76931_ip) {
+            _fun76975: for (var _fun76975_ip = 0;;) switch (_fun76975_ip) {
                 case 0:
                     var3 = arg0;
                     var1 = this;
                     var0 = null;
                     if (!(var0 != var3)) {
-                        _fun76931_ip = 55;
-                        continue _fun76931
+                        _fun76975_ip = 55;
+                        continue _fun76975
                     }
                 case 12:
                     var2 = var1.blockers;
@@ -237,8 +237,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var0.size;
                     var0 = 0;
                     if (!(var0 === var2)) {
-                        _fun76931_ip = 55;
-                        continue _fun76931
+                        _fun76975_ip = 55;
+                        continue _fun76975
                     }
                 case 45:
                     var0 = var1.flush;
@@ -254,14 +254,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'add';
         var0.key = var5;
         var5 = function(arg0) { // Original name: value, environment: var4
-            _fun76932: for (var _fun76932_ip = 0;;) switch (_fun76932_ip) {
+            _fun76976: for (var _fun76976_ip = 0;;) switch (_fun76976_ip) {
                 case 0:
                     var1 = this;
                     var0 = var1.queueStartTimestamp;
                     var3 = null;
                     if (!(var3 == var0)) {
-                        _fun76932_ip = 38;
-                        continue _fun76932
+                        _fun76976_ip = 38;
+                        continue _fun76976
                     }
                 case 15:
                     var0 = global;
@@ -281,8 +281,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var1.queueStartTimestamp;
                     var2 = var3 != var2;
                     if (!var2) {
-                        _fun76932_ip = 125;
-                        continue _fun76932
+                        _fun76976_ip = 125;
+                        continue _fun76976
                     }
                 case 88:
                     var3 = global;
@@ -295,15 +295,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var4 > var3;
                 case 125:
                     if (var0) {
-                        _fun76932_ip = 131;
-                        continue _fun76932
+                        _fun76976_ip = 131;
+                        continue _fun76976
                     }
                 case 128:
                     var0 = var2;
                 case 131:
                     if (!var0) {
-                        _fun76932_ip = 160;
-                        continue _fun76932
+                        _fun76976_ip = 160;
+                        continue _fun76976
                     }
                 case 134:
                     var2 = var1.blockers;
@@ -322,15 +322,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'tryFlush';
         var0.key = var5;
         var5 = function() { // Original name: value, environment: var4
-            _fun76933: for (var _fun76933_ip = 0;;) switch (_fun76933_ip) {
+            _fun76977: for (var _fun76977_ip = 0;;) switch (_fun76977_ip) {
                 case 0:
                     var1 = this;
                     var0 = var1.blockers;
                     var2 = var0.size;
                     var0 = 0;
                     if (!(var0 === var2)) {
-                        _fun76933_ip = 30;
-                        continue _fun76933
+                        _fun76977_ip = 30;
+                        continue _fun76977
                     }
                 case 20:
                     var0 = var1.flush;
@@ -353,20 +353,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var1.queue;
             var2 = var3.forEach;
             var0 = function(arg0) { // Environment: var0
-                _fun76935: for (var _fun76935_ip = 0;;) switch (_fun76935_ip) {
+                _fun76979: for (var _fun76979_ip = 0;;) switch (_fun76979_ip) {
                     case 0:
                         var3 = arg0;
                         var1 = null;
                         if (!(var1 != var3)) {
-                            _fun76935_ip = 41;
-                            continue _fun76935
+                            _fun76979_ip = 41;
+                            continue _fun76979
                         }
                     case 9:
                         var2 = _closure3_slot0;
                         var2 = var2.onFlushItem;
                         if (!(var1 != var2)) {
-                            _fun76935_ip = 41;
-                            continue _fun76935
+                            _fun76979_ip = 41;
+                            continue _fun76979
                         }
                     case 26:
                         var1 = var2.call;

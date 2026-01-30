@@ -126,7 +126,7 @@ public final class HlsMediaSource extends qd.a implements k.e {
             this.f13887f = new l();
             this.f13884c = new wd.a();
             this.f13885d = wd.c.A;
-            this.f13883b = h.f50959a;
+            this.f13883b = h.f50975a;
             this.f13888g = new f();
             this.f13886e = new i();
             this.f13890i = 1;
@@ -143,9 +143,9 @@ public final class HlsMediaSource extends qd.a implements k.e {
         long j12;
         long K;
         boolean z10;
-        long c10 = fVar.f52332h - this.B.c();
-        if (fVar.f52339o) {
-            j12 = c10 + fVar.f52345u;
+        long c10 = fVar.f52348h - this.B.c();
+        if (fVar.f52355o) {
+            j12 = c10 + fVar.f52361u;
         } else {
             j12 = -9223372036854775807L;
         }
@@ -156,31 +156,31 @@ public final class HlsMediaSource extends qd.a implements k.e {
         } else {
             K = K(fVar, I);
         }
-        L(fVar, w0.r(K, I, fVar.f52345u + I));
+        L(fVar, w0.r(K, I, fVar.f52361u + I));
         long J = J(fVar, I);
-        if (fVar.f52328d == 2 && fVar.f52330f) {
+        if (fVar.f52344d == 2 && fVar.f52346f) {
             z10 = true;
         } else {
             z10 = false;
         }
-        return new p0(j10, j11, -9223372036854775807L, j12, fVar.f52345u, c10, J, true, !fVar.f52339o, z10, aVar, this.D, this.F);
+        return new p0(j10, j11, -9223372036854775807L, j12, fVar.f52361u, c10, J, true, !fVar.f52355o, z10, aVar, this.D, this.F);
     }
 
     private p0 F(wd.f fVar, long j10, long j11, com.google.android.exoplayer2.source.hls.a aVar) {
         long j12;
-        if (fVar.f52329e != -9223372036854775807L && !fVar.f52342r.isEmpty()) {
-            if (!fVar.f52331g) {
-                long j13 = fVar.f52329e;
-                if (j13 != fVar.f52345u) {
-                    j12 = H(fVar.f52342r, j13).f52358p;
+        if (fVar.f52345e != -9223372036854775807L && !fVar.f52358r.isEmpty()) {
+            if (!fVar.f52347g) {
+                long j13 = fVar.f52345e;
+                if (j13 != fVar.f52361u) {
+                    j12 = H(fVar.f52358r, j13).f52374p;
                 }
             }
-            j12 = fVar.f52329e;
+            j12 = fVar.f52345e;
         } else {
             j12 = 0;
         }
         long j14 = j12;
-        long j15 = fVar.f52345u;
+        long j15 = fVar.f52361u;
         return new p0(j10, j11, -9223372036854775807L, j15, j15, 0L, j14, true, false, true, aVar, this.D, null);
     }
 
@@ -188,8 +188,8 @@ public final class HlsMediaSource extends qd.a implements k.e {
         f.b bVar = null;
         for (int i10 = 0; i10 < list.size(); i10++) {
             f.b bVar2 = (f.b) list.get(i10);
-            long j11 = bVar2.f52358p;
-            if (j11 <= j10 && bVar2.f52347w) {
+            long j11 = bVar2.f52374p;
+            if (j11 <= j10 && bVar2.f52363w) {
                 bVar = bVar2;
             } else if (j11 > j10) {
                 break;
@@ -203,51 +203,51 @@ public final class HlsMediaSource extends qd.a implements k.e {
     }
 
     private long I(wd.f fVar) {
-        if (fVar.f52340p) {
+        if (fVar.f52356p) {
             return w0.K0(w0.f0(this.C)) - fVar.e();
         }
         return 0L;
     }
 
     private long J(wd.f fVar, long j10) {
-        long j11 = fVar.f52329e;
+        long j11 = fVar.f52345e;
         if (j11 == -9223372036854775807L) {
-            j11 = (fVar.f52345u + j10) - w0.K0(this.F.f12818d);
+            j11 = (fVar.f52361u + j10) - w0.K0(this.F.f12818d);
         }
-        if (fVar.f52331g) {
+        if (fVar.f52347g) {
             return j11;
         }
-        f.b G = G(fVar.f52343s, j11);
+        f.b G = G(fVar.f52359s, j11);
         if (G != null) {
-            return G.f52358p;
+            return G.f52374p;
         }
-        if (fVar.f52342r.isEmpty()) {
+        if (fVar.f52358r.isEmpty()) {
             return 0L;
         }
-        f.d H = H(fVar.f52342r, j11);
-        f.b G2 = G(H.f52353x, j11);
+        f.d H = H(fVar.f52358r, j11);
+        f.b G2 = G(H.f52369x, j11);
         if (G2 != null) {
-            return G2.f52358p;
+            return G2.f52374p;
         }
-        return H.f52358p;
+        return H.f52374p;
     }
 
     private static long K(wd.f fVar, long j10) {
         long j11;
-        f.C0719f c0719f = fVar.f52346v;
-        long j12 = fVar.f52329e;
+        f.C0719f c0719f = fVar.f52362v;
+        long j12 = fVar.f52345e;
         if (j12 != -9223372036854775807L) {
-            j11 = fVar.f52345u - j12;
+            j11 = fVar.f52361u - j12;
         } else {
-            long j13 = c0719f.f52368d;
-            if (j13 != -9223372036854775807L && fVar.f52338n != -9223372036854775807L) {
+            long j13 = c0719f.f52384d;
+            if (j13 != -9223372036854775807L && fVar.f52354n != -9223372036854775807L) {
                 j11 = j13;
             } else {
-                long j14 = c0719f.f52367c;
+                long j14 = c0719f.f52383c;
                 if (j14 != -9223372036854775807L) {
                     j11 = j14;
                 } else {
-                    j11 = fVar.f52337m * 3;
+                    j11 = fVar.f52353m * 3;
                 }
             }
         }
@@ -273,12 +273,12 @@ public final class HlsMediaSource extends qd.a implements k.e {
             float r0 = r0.f12822p
             int r0 = (r0 > r2 ? 1 : (r0 == r2 ? 0 : -1))
             if (r0 != 0) goto L28
-            wd.f$f r5 = r5.f52346v
-            long r0 = r5.f52367c
+            wd.f$f r5 = r5.f52362v
+            long r0 = r5.f52383c
             r2 = -9223372036854775807(0x8000000000000001, double:-4.9E-324)
             int r0 = (r0 > r2 ? 1 : (r0 == r2 ? 0 : -1))
             if (r0 != 0) goto L28
-            long r0 = r5.f52368d
+            long r0 = r5.f52384d
             int r5 = (r0 > r2 ? 1 : (r0 == r2 ? 0 : -1))
             if (r5 != 0) goto L28
             r5 = 1
@@ -332,12 +332,12 @@ public final class HlsMediaSource extends qd.a implements k.e {
         long j10;
         long j11;
         p0 F;
-        if (fVar.f52340p) {
-            j10 = w0.p1(fVar.f52332h);
+        if (fVar.f52356p) {
+            j10 = w0.p1(fVar.f52348h);
         } else {
             j10 = -9223372036854775807L;
         }
-        int i10 = fVar.f52328d;
+        int i10 = fVar.f52344d;
         if (i10 != 2 && i10 != 1) {
             j11 = -9223372036854775807L;
         } else {

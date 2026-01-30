@@ -8,18 +8,18 @@ import pr.a;
 public final class DeprecationLevelValue {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ DeprecationLevelValue[] f35436d;
+    private static final /* synthetic */ DeprecationLevelValue[] f35452d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f35437e;
+    private static final /* synthetic */ EnumEntries f35453e;
     public static final DeprecationLevelValue WARNING = new DeprecationLevelValue("WARNING", 0);
     public static final DeprecationLevelValue ERROR = new DeprecationLevelValue("ERROR", 1);
     public static final DeprecationLevelValue HIDDEN = new DeprecationLevelValue("HIDDEN", 2);
 
     static {
         DeprecationLevelValue[] a10 = a();
-        f35436d = a10;
-        f35437e = a.a(a10);
+        f35452d = a10;
+        f35453e = a.a(a10);
     }
 
     private DeprecationLevelValue(String str, int i10) {
@@ -34,6 +34,6 @@ public final class DeprecationLevelValue {
     }
 
     public static DeprecationLevelValue[] values() {
-        return (DeprecationLevelValue[]) f35436d.clone();
+        return (DeprecationLevelValue[]) f35452d.clone();
     }
 }

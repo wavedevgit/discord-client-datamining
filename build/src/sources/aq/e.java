@@ -28,7 +28,7 @@ public final class e implements ViewBinding {
         int i10 = vp.e.W;
         Guideline guideline = (Guideline) e4.a.a(view, i10);
         if (guideline != null) {
-            i10 = vp.e.f51820r0;
+            i10 = vp.e.f51836r0;
             Guideline guideline2 = (Guideline) e4.a.a(view, i10);
             if (guideline2 != null) {
                 return new e((ConstraintLayout) view, guideline, guideline2);
@@ -42,7 +42,7 @@ public final class e implements ViewBinding {
     }
 
     public static e d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(vp.f.f51841e, viewGroup, false);
+        View inflate = layoutInflater.inflate(vp.f.f51857e, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }

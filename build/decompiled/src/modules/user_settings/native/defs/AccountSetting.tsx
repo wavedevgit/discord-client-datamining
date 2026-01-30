@@ -56,7 +56,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var7.UserCircleIcon;
     var1.IconComponent = var7;
     var7 = function() { // Original name: useAccountSettingTrailing, environment: var8
-        _fun80660: for (var _fun80660_ip = 0;;) switch (_fun80660_ip) {
+        _fun80706: for (var _fun80706_ip = 0;;) switch (_fun80706_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot2;
@@ -68,8 +68,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.bind(var2)();
                 var0 = null;
                 if (!var2) {
-                    _fun80660_ip = 144;
-                    continue _fun80660
+                    _fun80706_ip = 144;
+                    continue _fun80706
                 }
             case 40:
                 var3 = _closure1_slot3;
@@ -125,4 +125,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 33, 10233, 4881, 671, 4039, 7472, 8939, 1234, 9055, 10076, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 33, 10239, 4887, 671, 4045, 7475, 8943, 1234, 9059, 10082, 2]);

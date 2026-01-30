@@ -1,7 +1,7 @@
 // uikit-native/OverlayView.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun37120: for (var _fun37120_ip = 0;;) switch (_fun37120_ip) {
+    _fun37171: for (var _fun37171_ip = 0;;) switch (_fun37171_ip) {
         case 0:
             var6 = require;
             var2 = exports;
@@ -38,8 +38,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var8 = var4.bind(var8)();
             var4 = var1;
             if (!var8) {
-                _fun37120_ip = 157;
-                continue _fun37120
+                _fun37171_ip = 157;
+                continue _fun37171
             }
         case 139:
             var8 = 4;
@@ -53,8 +53,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var5 = var8.isIOS;
             var5 = var5.bind(var8)();
             if (!var5) {
-                _fun37120_ip = 198;
-                continue _fun37120
+                _fun37171_ip = 198;
+                continue _fun37171
             }
         case 183:
             var5 = 5;
@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var5 = var6.bind(var7)(var5);
             var2.default = var4;
             var3 = function(arg0) { // Original name: TransitionGroupOverlayView, environment: var3
-                _fun37121: for (var _fun37121_ip = 0;;) switch (_fun37121_ip) {
+                _fun37172: for (var _fun37172_ip = 0;;) switch (_fun37172_ip) {
                     case 0:
                         var2 = arg0;
                         var7 = var2.children;
@@ -88,16 +88,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var0.bind(var2)(var7);
                         var0 = null;
                         if (!var2) {
-                            _fun37121_ip = 138;
-                            continue _fun37121
+                            _fun37172_ip = 138;
+                            continue _fun37172
                         }
                     case 54:
                         var2 = var7.length;
                         var2 = var2 > var4;
                         var0 = null;
                         if (!var2) {
-                            _fun37121_ip = 138;
-                            continue _fun37121
+                            _fun37172_ip = 138;
+                            continue _fun37172
                         }
                     case 68:
                         var4 = _closure1_slot2;
@@ -125,4 +125,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.NonExpandingOverlayView = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 478, 3984, 4016, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 478, 3990, 4022, 2]);

@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/creator_monetization/guild_shop/GuildShopExperimentsUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0, arg1) { // Original name: useIsEligibleForSubscriptionsInGuildShop, environment: var1
-        _fun49743: for (var _fun49743_ip = 0;;) switch (_fun49743_ip) {
+        _fun49789: for (var _fun49789_ip = 0;;) switch (_fun49789_ip) {
             case 0:
                 var4 = arg1;
                 var3 = _closure1_slot0;
@@ -44,8 +44,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = arg0;
                 var1 = var2.bind(var3)(var1, var4);
                 if (!var0) {
-                    _fun49743_ip = 88;
-                    continue _fun49743
+                    _fun49789_ip = 88;
+                    continue _fun49789
                 }
             case 85:
                 var0 = var1;
@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsEligibleForSubscriptionsInGuildShop = var3;
     var3 = function(arg0, arg1) { // Original name: isEligibleForSubscriptionsInGuildShop, environment: var1
-        _fun49744: for (var _fun49744_ip = 0;;) switch (_fun49744_ip) {
+        _fun49790: for (var _fun49790_ip = 0;;) switch (_fun49790_ip) {
             case 0:
                 var4 = arg1;
                 var3 = _closure1_slot0;
@@ -77,8 +77,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = arg0;
                 var1 = var2.bind(var3)(var1, var4);
                 if (!var0) {
-                    _fun49744_ip = 88;
-                    continue _fun49744
+                    _fun49790_ip = 88;
+                    continue _fun49790
                 }
             case 85:
                 var0 = var1;
@@ -105,4 +105,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsEligibleForGuildShopPreview = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5586, 5587, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5589, 5590, 2]);

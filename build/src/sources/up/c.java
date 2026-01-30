@@ -9,7 +9,7 @@ public abstract class c {
     public static final void a(Context context) {
         Intrinsics.checkNotNullParameter(context, "context");
         try {
-            context.getResources().getLayout(n.f32342c);
+            context.getResources().getLayout(n.f32358c);
         } catch (Resources.NotFoundException unused) {
             di.a.b(context);
         }

@@ -20,15 +20,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var7;
     var3 = var5.bind(var6)(var2, var4, var3);
     var1 = function(arg0) { // Original name: getTraceMetaTags, environment: var1
-        _fun9486: for (var _fun9486_ip = 0;;) switch (_fun9486_ip) {
+        _fun9487: for (var _fun9487_ip = 0;;) switch (_fun9487_ip) {
             case 0:
                 var2 = arg0;
                 var0 = global;
                 var1 = var0.Object;
                 var0 = var1.entries;
                 if (var2) {
-                    _fun9486_ip = 55;
-                    continue _fun9486
+                    _fun9487_ip = 55;
+                    continue _fun9487
                 }
             case 20:
                 var5 = _closure1_slot0;

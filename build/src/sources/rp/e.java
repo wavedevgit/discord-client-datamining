@@ -13,10 +13,10 @@ public abstract class e {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Function0 f48444a;
+        final /* synthetic */ Function0 f48460a;
 
         a(Function0 function0) {
-            this.f48444a = function0;
+            this.f48460a = function0;
         }
     }
 
@@ -35,7 +35,7 @@ public abstract class e {
                 return c10;
             }
         };
-        backPressHandler.setTag(m.f32334h, new a(function0));
+        backPressHandler.setTag(m.f32350h, new a(function0));
         if (navigationState.a()) {
             vm.e.c(backPressHandler, function0);
         }
@@ -48,6 +48,6 @@ public abstract class e {
         } else {
             function02.invoke();
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 }

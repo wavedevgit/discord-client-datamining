@@ -7,26 +7,26 @@ import kotlinx.coroutines.flow.MutableStateFlow;
 public final class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final MutableStateFlow f54939a;
+    private final MutableStateFlow f54955a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Flow f54940b;
+    private final Flow f54956b;
 
     public h(g gVar) {
         MutableStateFlow a10 = l0.a(gVar);
-        this.f54939a = a10;
-        this.f54940b = js.g.m(a10, 1);
+        this.f54955a = a10;
+        this.f54956b = js.g.m(a10, 1);
     }
 
     public final Flow a() {
-        return this.f54940b;
+        return this.f54956b;
     }
 
     public final g b() {
-        return (g) this.f54939a.getValue();
+        return (g) this.f54955a.getValue();
     }
 
     public final void c(g gVar) {
-        this.f54939a.setValue(gVar);
+        this.f54955a.setValue(gVar);
     }
 }

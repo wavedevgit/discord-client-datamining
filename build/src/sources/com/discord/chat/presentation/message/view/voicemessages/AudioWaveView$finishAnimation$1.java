@@ -93,7 +93,7 @@ final class AudioWaveView$finishAnimation$1 extends kotlin.coroutines.jvm.intern
             int r1 = r1 + r2
             goto L33
         L5b:
-            kotlin.Unit r9 = kotlin.Unit.f33282a
+            kotlin.Unit r9 = kotlin.Unit.f33298a
             return r9
         */
         throw new UnsupportedOperationException("Method not decompiled: com.discord.chat.presentation.message.view.voicemessages.AudioWaveView$finishAnimation$1.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -101,6 +101,6 @@ final class AudioWaveView$finishAnimation$1 extends kotlin.coroutines.jvm.intern
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((AudioWaveView$finishAnimation$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((AudioWaveView$finishAnimation$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

@@ -8,31 +8,31 @@ import kotlin.jvm.internal.Intrinsics;
 public final class h0 implements Lazy, Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    private Function0 f31092d;
+    private Function0 f31108d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Object f31093e;
+    private Object f31109e;
 
     public h0(Function0 initializer) {
         Intrinsics.checkNotNullParameter(initializer, "initializer");
-        this.f31092d = initializer;
-        this.f31093e = d0.f31085a;
+        this.f31108d = initializer;
+        this.f31109e = d0.f31101a;
     }
 
     @Override // kotlin.Lazy
     public Object getValue() {
-        if (this.f31093e == d0.f31085a) {
-            Function0 function0 = this.f31092d;
+        if (this.f31109e == d0.f31101a) {
+            Function0 function0 = this.f31108d;
             Intrinsics.checkNotNull(function0);
-            this.f31093e = function0.invoke();
-            this.f31092d = null;
+            this.f31109e = function0.invoke();
+            this.f31108d = null;
         }
-        return this.f31093e;
+        return this.f31109e;
     }
 
     @Override // kotlin.Lazy
     public boolean isInitialized() {
-        if (this.f31093e != d0.f31085a) {
+        if (this.f31109e != d0.f31101a) {
             return true;
         }
         return false;

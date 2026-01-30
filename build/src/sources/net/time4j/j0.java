@@ -5,24 +5,24 @@ import java.util.concurrent.TimeUnit;
 class j0 implements jt.p {
 
     /* renamed from: o  reason: collision with root package name */
-    static final jt.p f40714o = new j0(g.class, g.f40588d, g.f40593q);
+    static final jt.p f40730o = new j0(g.class, g.f40604d, g.f40609q);
 
     /* renamed from: p  reason: collision with root package name */
-    static final jt.p f40715p = new j0(TimeUnit.class, TimeUnit.DAYS, TimeUnit.NANOSECONDS);
+    static final jt.p f40731p = new j0(TimeUnit.class, TimeUnit.DAYS, TimeUnit.NANOSECONDS);
 
     /* renamed from: d  reason: collision with root package name */
-    private final Class f40716d;
+    private final Class f40732d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient Comparable f40717e;
+    private final transient Comparable f40733e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient Comparable f40718i;
+    private final transient Comparable f40734i;
 
     private j0(Class cls, Comparable comparable, Comparable comparable2) {
-        this.f40716d = cls;
-        this.f40717e = comparable;
-        this.f40718i = comparable2;
+        this.f40732d = cls;
+        this.f40733e = comparable;
+        this.f40734i = comparable2;
     }
 
     @Override // jt.p
@@ -35,7 +35,7 @@ class j0 implements jt.p {
     public int compare(jt.o oVar, jt.o oVar2) {
         Comparable comparable = (Comparable) oVar.p(this);
         Comparable comparable2 = (Comparable) oVar2.p(this);
-        if (this.f40716d == g.class) {
+        if (this.f40732d == g.class) {
             return comparable.compareTo(comparable2);
         }
         return comparable2.compareTo(comparable);
@@ -44,13 +44,13 @@ class j0 implements jt.p {
     @Override // jt.p
     /* renamed from: b */
     public Comparable e() {
-        return this.f40718i;
+        return this.f40734i;
     }
 
     @Override // jt.p
     /* renamed from: c */
     public Comparable A() {
-        return this.f40717e;
+        return this.f40733e;
     }
 
     @Override // jt.p
@@ -60,7 +60,7 @@ class j0 implements jt.p {
 
     @Override // jt.p
     public Class getType() {
-        return this.f40716d;
+        return this.f40732d;
     }
 
     @Override // jt.p

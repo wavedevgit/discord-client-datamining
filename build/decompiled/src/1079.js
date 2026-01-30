@@ -15,26 +15,26 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
     var0 = function() { // Original name: showReportDialog, environment: var0
-        _fun11021: for (var _fun11021_ip = 0;;) switch (_fun11021_ip) {
+        _fun11022: for (var _fun11022_ip = 0;;) switch (_fun11022_ip) {
             case 0:
                 var0 = undefined;
                 var1 = undefined;
                 var2 = arguments.length;
                 var5 = 0;
                 if (!(var2 > var5)) {
-                    _fun11021_ip = 23;
-                    continue _fun11021
+                    _fun11022_ip = 23;
+                    continue _fun11022
                 }
             case 15:
                 var2 = arguments[var5];
                 if (!(var0 === var2)) {
-                    _fun11021_ip = 27;
-                    continue _fun11021
+                    _fun11022_ip = 27;
+                    continue _fun11022
                 }
             case 23:
                 var11 = {};
-                _fun11021_ip = 31;
-                continue _fun11021;
+                _fun11022_ip = 31;
+                continue _fun11022;
             case 27:
                 var11 = arguments[var5];
             case 31:
@@ -48,22 +48,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = var2 == var7;
                 var3 = undefined;
                 if (var6) {
-                    _fun11021_ip = 80;
-                    continue _fun11021
+                    _fun11022_ip = 80;
+                    continue _fun11022
                 }
             case 74:
                 var3 = var7.head;
             case 80:
                 if (var3) {
-                    _fun11021_ip = 100;
-                    continue _fun11021
+                    _fun11022_ip = 100;
+                    continue _fun11022
                 }
             case 83:
                 var8 = var2 == var7;
                 var6 = undefined;
                 if (var8) {
-                    _fun11021_ip = 97;
-                    continue _fun11021
+                    _fun11022_ip = 97;
+                    continue _fun11022
                 }
             case 92:
                 var6 = var7.body;
@@ -73,8 +73,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = _closure1_slot0;
                 var6 = _closure1_slot1;
                 if (var3) {
-                    _fun11021_ip = 182;
-                    continue _fun11021
+                    _fun11022_ip = 182;
+                    continue _fun11022
                 }
             case 111:
                 var8 = 1;
@@ -82,8 +82,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var8 = var7.bind(var0)(var8);
                 var8 = var8.DEBUG_BUILD;
                 if (!var8) {
-                    _fun11021_ip = 603;
-                    continue _fun11021
+                    _fun11022_ip = 603;
+                    continue _fun11022
                 }
             case 135:
                 var9 = _closure1_slot0;
@@ -95,8 +95,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var9 = var10.error;
                 var8 = '[showReportDialog] Global document not defined';
                 var8 = var9.bind(var10)(var8);
-                _fun11021_ip = 603;
-                continue _fun11021;
+                _fun11022_ip = 603;
+                continue _fun11022;
             case 182:
                 var10 = 2;
                 var8 = var6[var10];
@@ -110,16 +110,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var2 == var6;
                 var9 = undefined;
                 if (var2) {
-                    _fun11021_ip = 242;
-                    continue _fun11021
+                    _fun11022_ip = 242;
+                    continue _fun11022
                 }
             case 232:
                 var2 = var6.getDsn;
                 var9 = var2.bind(var6)();
             case 242:
                 if (var9) {
-                    _fun11021_ip = 321;
-                    continue _fun11021
+                    _fun11022_ip = 321;
+                    continue _fun11022
                 }
             case 245:
                 var6 = _closure1_slot0;
@@ -129,8 +129,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var6.bind(var0)(var2);
                 var2 = var2.DEBUG_BUILD;
                 if (!var2) {
-                    _fun11021_ip = 603;
-                    continue _fun11021
+                    _fun11022_ip = 603;
+                    continue _fun11022
                 }
             case 277:
                 var6 = _closure1_slot0;
@@ -141,8 +141,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = var7.error;
                 var2 = '[showReportDialog] DSN not configured';
                 var2 = var6.bind(var7)(var2);
-                _fun11021_ip = 603;
-                continue _fun11021;
+                _fun11022_ip = 603;
+                continue _fun11022;
             case 321:
                 var2 = global;
                 var8 = var2.Object;
@@ -158,8 +158,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6.user = var2;
                 var2 = var11.eventId;
                 if (var2) {
-                    _fun11021_ip = 411;
-                    continue _fun11021
+                    _fun11022_ip = 411;
+                    continue _fun11022
                 }
             case 384:
                 var13 = _closure1_slot0;
@@ -194,26 +194,26 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = var6.onClose;
                 var _closure2_slot0 = var6;
                 if (!var7) {
-                    _fun11021_ip = 541;
-                    continue _fun11021
+                    _fun11022_ip = 541;
+                    continue _fun11022
                 }
             case 535:
                 var2.onload = var7;
             case 541:
                 if (!var6) {
-                    _fun11021_ip = 592;
-                    continue _fun11021
+                    _fun11022_ip = 592;
+                    continue _fun11022
                 }
             case 544:
                 var6 = function(arg0) { // Original name: reportDialogClosedMessageHandler, environment: var4
-                    _fun11022: for (var _fun11022_ip = 0;;) switch (_fun11022_ip) {
+                    _fun11023: for (var _fun11023_ip = 0;;) switch (_fun11023_ip) {
                         case 0:
                             var0 = arg0;
                             var1 = var0.data;
                             var0 = '__sentry_reportdialog_closed__';
                             if (!(var0 === var1)) {
-                                _fun11022_ip = 79;
-                                continue _fun11022
+                                _fun11023_ip = 79;
+                                continue _fun11023
                             }
                         case 18: // try_start_0
                             var1 = _closure2_slot0;

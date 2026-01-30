@@ -38,7 +38,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_member_verification/canReviewGuildMemberApplications.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Original name: canReviewGuildMemberApplications, environment: var1
-        _fun49800: for (var _fun49800_ip = 0;;) switch (_fun49800_ip) {
+        _fun49846: for (var _fun49846_ip = 0;;) switch (_fun49846_ip) {
             case 0:
                 var3 = _closure1_slot2;
                 var1 = var3.getGuild;
@@ -47,8 +47,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var0 = var0 != var5;
                 if (!var0) {
-                    _fun49800_ip = 87;
-                    continue _fun49800
+                    _fun49846_ip = 87;
+                    continue _fun49846
                 }
             case 29:
                 var4 = var5.features;
@@ -57,8 +57,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.MEMBER_VERIFICATION_MANUAL_APPROVAL;
                 var1 = var3.bind(var4)(var1);
                 if (!var1) {
-                    _fun49800_ip = 84;
-                    continue _fun49800
+                    _fun49846_ip = 84;
+                    continue _fun49846
                 }
             case 58:
                 var4 = _closure1_slot3;
@@ -74,7 +74,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.canReviewGuildMemberApplications = var3;
     var1 = function(arg0) { // Original name: useCanReviewGuildMemberApplications, environment: var1
-        _fun49801: for (var _fun49801_ip = 0;;) switch (_fun49801_ip) {
+        _fun49847: for (var _fun49847_ip = 0;;) switch (_fun49847_ip) {
             case 0:
                 var1 = arg0;
                 var _closure2_slot0 = var1;
@@ -102,8 +102,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.KICK_MEMBERS;
                 var2 = var2.bind(var5)(var0, var3);
                 if (var2) {
-                    _fun49801_ip = 117;
-                    continue _fun49801
+                    _fun49847_ip = 117;
+                    continue _fun49847
                 }
             case 91:
                 var6 = _closure1_slot3;
@@ -115,8 +115,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var0 = var0 != var3;
                 if (!var0) {
-                    _fun49801_ip = 152;
-                    continue _fun49801
+                    _fun49847_ip = 152;
+                    continue _fun49847
                 }
             case 126:
                 var7 = var3.features;
@@ -126,15 +126,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var6.bind(var7)(var5);
             case 152:
                 if (!var0) {
-                    _fun49801_ip = 158;
-                    continue _fun49801
+                    _fun49847_ip = 158;
+                    continue _fun49847
                 }
             case 155:
                 var0 = var2;
             case 158:
                 if (!var0) {
-                    _fun49801_ip = 192;
-                    continue _fun49801
+                    _fun49847_ip = 192;
+                    continue _fun49847
                 }
             case 161:
                 var2 = _closure1_slot0;
@@ -150,4 +150,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useCanReviewGuildMemberApplications = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 3050, 660, 566, 4781, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 3050, 660, 566, 4787, 2]);

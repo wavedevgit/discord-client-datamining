@@ -948,7 +948,7 @@ final class b {
         int h11 = g0Var.h(2);
         boolean g10 = g0Var.g();
         g0Var.r(1);
-        byte[] bArr2 = w0.f40284f;
+        byte[] bArr2 = w0.f40300f;
         if (h11 == 1) {
             g0Var.r(g0Var.h(8) * 16);
         } else if (h11 == 0) {

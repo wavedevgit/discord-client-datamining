@@ -6,7 +6,7 @@ import kotlin.collections.CollectionsKt;
 public final class a implements ku.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f49210a = new a();
+    public static final a f49226a = new a();
 
     private a() {
     }

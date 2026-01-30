@@ -24,37 +24,37 @@ import kotlin.reflect.KClass;
 public final class e {
 
     /* renamed from: a */
-    private final Function2 f32283a;
+    private final Function2 f32299a;
 
     /* renamed from: b */
-    private final Function2 f32284b;
+    private final Function2 f32300b;
 
     /* renamed from: c */
-    private final Function2 f32285c;
+    private final Function2 f32301c;
 
     /* renamed from: d */
-    private RecyclerView.Adapter f32286d;
+    private RecyclerView.Adapter f32302d;
 
     /* renamed from: e */
-    private final androidx.recyclerview.widget.c f32287e;
+    private final androidx.recyclerview.widget.c f32303e;
 
     /* renamed from: f */
-    private final List f32288f;
+    private final List f32304f;
 
     /* renamed from: g */
-    private final Map f32289g;
+    private final Map f32305g;
 
     /* renamed from: h */
-    private final Map f32290h;
+    private final Map f32306h;
 
     /* renamed from: i */
-    private final d0 f32291i;
+    private final d0 f32307i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Function2 {
 
         /* renamed from: d */
-        public static final a f32292d = new a();
+        public static final a f32308d = new a();
 
         a() {
         }
@@ -72,45 +72,45 @@ public final class e {
     public static final class b {
 
         /* renamed from: a */
-        private final int f32293a;
+        private final int f32309a;
 
         /* renamed from: b */
-        private final KClass f32294b;
+        private final KClass f32310b;
 
         /* renamed from: c */
-        private final Function3 f32295c;
+        private final Function3 f32311c;
 
         /* renamed from: d */
-        private final Function3 f32296d;
+        private final Function3 f32312d;
 
         /* renamed from: e */
-        private final Function1 f32297e;
+        private final Function1 f32313e;
 
         public b(int i10, KClass viewBindingClass, Function3 inflateFn, Function3 bindViewHolder, Function1 function1) {
             Intrinsics.checkNotNullParameter(viewBindingClass, "viewBindingClass");
             Intrinsics.checkNotNullParameter(inflateFn, "inflateFn");
             Intrinsics.checkNotNullParameter(bindViewHolder, "bindViewHolder");
-            this.f32293a = i10;
-            this.f32294b = viewBindingClass;
-            this.f32295c = inflateFn;
-            this.f32296d = bindViewHolder;
-            this.f32297e = function1;
+            this.f32309a = i10;
+            this.f32310b = viewBindingClass;
+            this.f32311c = inflateFn;
+            this.f32312d = bindViewHolder;
+            this.f32313e = function1;
         }
 
         public final Function3 a() {
-            return this.f32296d;
+            return this.f32312d;
         }
 
         public final Function3 b() {
-            return this.f32295c;
+            return this.f32311c;
         }
 
         public final Function1 c() {
-            return this.f32297e;
+            return this.f32313e;
         }
 
         public final int d() {
-            return this.f32293a;
+            return this.f32309a;
         }
 
         public boolean equals(Object obj) {
@@ -121,7 +121,7 @@ public final class e {
                 return false;
             }
             b bVar = (b) obj;
-            if (this.f32293a == bVar.f32293a && Intrinsics.areEqual(this.f32294b, bVar.f32294b) && Intrinsics.areEqual(this.f32295c, bVar.f32295c) && Intrinsics.areEqual(this.f32296d, bVar.f32296d) && Intrinsics.areEqual(this.f32297e, bVar.f32297e)) {
+            if (this.f32309a == bVar.f32309a && Intrinsics.areEqual(this.f32310b, bVar.f32310b) && Intrinsics.areEqual(this.f32311c, bVar.f32311c) && Intrinsics.areEqual(this.f32312d, bVar.f32312d) && Intrinsics.areEqual(this.f32313e, bVar.f32313e)) {
                 return true;
             }
             return false;
@@ -129,8 +129,8 @@ public final class e {
 
         public int hashCode() {
             int hashCode;
-            int hashCode2 = ((((((Integer.hashCode(this.f32293a) * 31) + this.f32294b.hashCode()) * 31) + this.f32295c.hashCode()) * 31) + this.f32296d.hashCode()) * 31;
-            Function1 function1 = this.f32297e;
+            int hashCode2 = ((((((Integer.hashCode(this.f32309a) * 31) + this.f32310b.hashCode()) * 31) + this.f32311c.hashCode()) * 31) + this.f32312d.hashCode()) * 31;
+            Function1 function1 = this.f32313e;
             if (function1 == null) {
                 hashCode = 0;
             } else {
@@ -140,11 +140,11 @@ public final class e {
         }
 
         public String toString() {
-            int i10 = this.f32293a;
-            KClass kClass = this.f32294b;
-            Function3 function3 = this.f32295c;
-            Function3 function32 = this.f32296d;
-            Function1 function1 = this.f32297e;
+            int i10 = this.f32309a;
+            KClass kClass = this.f32310b;
+            Function3 function3 = this.f32311c;
+            Function3 function32 = this.f32312d;
+            Function1 function1 = this.f32313e;
             return "ItemInfo(viewType=" + i10 + ", viewBindingClass=" + kClass + ", inflateFn=" + function3 + ", bindViewHolder=" + function32 + ", onViewCreated=" + function1 + ")";
         }
     }
@@ -157,7 +157,7 @@ public final class e {
 
         @Override // androidx.recyclerview.widget.m
         public void a(int i10, int i11) {
-            RecyclerView.Adapter adapter = e.this.f32286d;
+            RecyclerView.Adapter adapter = e.this.f32302d;
             if (adapter != null) {
                 adapter.notifyItemRangeInserted(i10, i11);
             }
@@ -165,7 +165,7 @@ public final class e {
 
         @Override // androidx.recyclerview.widget.m
         public void b(int i10, int i11) {
-            RecyclerView.Adapter adapter = e.this.f32286d;
+            RecyclerView.Adapter adapter = e.this.f32302d;
             if (adapter != null) {
                 adapter.notifyItemRangeRemoved(i10, i11);
             }
@@ -173,7 +173,7 @@ public final class e {
 
         @Override // androidx.recyclerview.widget.m
         public void c(int i10, int i11, Object obj) {
-            RecyclerView.Adapter adapter = e.this.f32286d;
+            RecyclerView.Adapter adapter = e.this.f32302d;
             if (adapter != null) {
                 adapter.notifyItemRangeChanged(i10, i11, obj);
             }
@@ -181,7 +181,7 @@ public final class e {
 
         @Override // androidx.recyclerview.widget.m
         public void d(int i10, int i11) {
-            RecyclerView.Adapter adapter = e.this.f32286d;
+            RecyclerView.Adapter adapter = e.this.f32302d;
             if (adapter != null) {
                 adapter.notifyItemMoved(i10, i11);
             }
@@ -198,21 +198,21 @@ public final class e {
         public boolean a(Object oldItem, Object newItem) {
             Intrinsics.checkNotNullParameter(oldItem, "oldItem");
             Intrinsics.checkNotNullParameter(newItem, "newItem");
-            return ((Boolean) e.this.f32284b.invoke(oldItem, newItem)).booleanValue();
+            return ((Boolean) e.this.f32300b.invoke(oldItem, newItem)).booleanValue();
         }
 
         @Override // androidx.recyclerview.widget.e.f
         public boolean b(Object oldItem, Object newItem) {
             Intrinsics.checkNotNullParameter(oldItem, "oldItem");
             Intrinsics.checkNotNullParameter(newItem, "newItem");
-            return ((Boolean) e.this.f32283a.invoke(oldItem, newItem)).booleanValue();
+            return ((Boolean) e.this.f32299a.invoke(oldItem, newItem)).booleanValue();
         }
 
         @Override // androidx.recyclerview.widget.e.f
         public Object c(Object oldItem, Object newItem) {
             Intrinsics.checkNotNullParameter(oldItem, "oldItem");
             Intrinsics.checkNotNullParameter(newItem, "newItem");
-            return e.this.f32285c.invoke(oldItem, newItem);
+            return e.this.f32301c.invoke(oldItem, newItem);
         }
     }
 
@@ -220,14 +220,14 @@ public final class e {
         Intrinsics.checkNotNullParameter(areItemsTheSame, "areItemsTheSame");
         Intrinsics.checkNotNullParameter(areContentsTheSame, "areContentsTheSame");
         Intrinsics.checkNotNullParameter(getChangePayload, "getChangePayload");
-        this.f32283a = areItemsTheSame;
-        this.f32284b = areContentsTheSame;
-        this.f32285c = getChangePayload;
-        this.f32287e = new androidx.recyclerview.widget.c(new c(), new b.a(new d()).a());
-        this.f32288f = new ArrayList();
-        this.f32289g = new LinkedHashMap();
-        this.f32290h = new LinkedHashMap();
-        this.f32291i = e0.f32300a.a();
+        this.f32299a = areItemsTheSame;
+        this.f32300b = areContentsTheSame;
+        this.f32301c = getChangePayload;
+        this.f32303e = new androidx.recyclerview.widget.c(new c(), new b.a(new d()).a());
+        this.f32304f = new ArrayList();
+        this.f32305g = new LinkedHashMap();
+        this.f32306h = new LinkedHashMap();
+        this.f32307i = e0.f32316a.a();
     }
 
     public static final boolean e(Object oldItem, Object newItem) {
@@ -241,18 +241,18 @@ public final class e {
         Intrinsics.checkNotNullParameter(b10, "b");
         Intrinsics.checkNotNullParameter(h10, "h");
         function3.invoke(item, b10, h10);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     public static final Unit l(Function1 function1, ViewBinding viewBinding) {
         Intrinsics.checkNotNull(viewBinding, "null cannot be cast to non-null type VB of com.withpersona.sdk2.inquiry.shared.AdapterHelper.addItemTypeInternal");
         function1.invoke(viewBinding);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private final b n(int i10) {
         Object obj = p().get(i10);
-        Object obj2 = this.f32289g.get(Reflection.getOrCreateKotlinClass(obj.getClass()));
+        Object obj2 = this.f32305g.get(Reflection.getOrCreateKotlinClass(obj.getClass()));
         if (obj2 != null) {
             return (b) obj2;
         }
@@ -277,8 +277,8 @@ public final class e {
         Intrinsics.checkNotNullParameter(viewBindingClass, "viewBindingClass");
         Intrinsics.checkNotNullParameter(inflateFn, "inflateFn");
         Intrinsics.checkNotNullParameter(bindViewHolder, "bindViewHolder");
-        if (this.f32289g.get(clazz) == null) {
-            int a10 = this.f32291i.a();
+        if (this.f32305g.get(clazz) == null) {
+            int a10 = this.f32307i.a();
             Function3 function3 = new Function3() { // from class: jp.a
                 @Override // kotlin.jvm.functions.Function3
                 public final Object invoke(Object obj, Object obj2, Object obj3) {
@@ -300,16 +300,16 @@ public final class e {
                 function12 = null;
             }
             b bVar = new b(a10, viewBindingClass, inflateFn, function3, function12);
-            this.f32288f.add(bVar);
-            this.f32289g.put(clazz, bVar);
-            this.f32290h.put(Integer.valueOf(bVar.d()), bVar);
+            this.f32304f.add(bVar);
+            this.f32305g.put(clazz, bVar);
+            this.f32306h.put(Integer.valueOf(bVar.d()), bVar);
             return;
         }
         throw new IllegalArgumentException(("Item type " + clazz + " has already been added.").toString());
     }
 
     public final int m() {
-        return this.f32287e.a().size();
+        return this.f32303e.a().size();
     }
 
     public final int o(int i10) {
@@ -317,7 +317,7 @@ public final class e {
     }
 
     public final List p() {
-        List a10 = this.f32287e.a();
+        List a10 = this.f32303e.a();
         Intrinsics.checkNotNullExpressionValue(a10, "getCurrentList(...)");
         return a10;
     }
@@ -331,10 +331,10 @@ public final class e {
     public final RecyclerView.ViewHolder r(ViewGroup parent, int i10) {
         b bVar;
         Intrinsics.checkNotNullParameter(parent, "parent");
-        if (this.f32288f.size() == 1) {
-            bVar = (b) CollectionsKt.o0(this.f32288f);
+        if (this.f32304f.size() == 1) {
+            bVar = (b) CollectionsKt.o0(this.f32304f);
         } else {
-            Object obj = this.f32290h.get(Integer.valueOf(i10));
+            Object obj = this.f32306h.get(Integer.valueOf(i10));
             if (obj != null) {
                 bVar = (b) obj;
             } else {
@@ -356,8 +356,8 @@ public final class e {
         Runnable runnable;
         Intrinsics.checkNotNullParameter(newItems, "newItems");
         Intrinsics.checkNotNullParameter(adapter, "adapter");
-        this.f32286d = adapter;
-        androidx.recyclerview.widget.c cVar = this.f32287e;
+        this.f32302d = adapter;
+        androidx.recyclerview.widget.c cVar = this.f32303e;
         if (function0 != null) {
             runnable = new Runnable() { // from class: jp.d
                 @Override // java.lang.Runnable
@@ -379,6 +379,6 @@ public final class e {
                 e10 = e.e(obj, obj2);
                 return Boolean.valueOf(e10);
             }
-        } : function22, (i10 & 4) != 0 ? a.f32292d : function23);
+        } : function22, (i10 & 4) != 0 ? a.f32308d : function23);
     }
 }

@@ -92,4 +92,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.EMPTY_MEDIA_RESULTS = var3;
     var2.PLATFORM_REGEX_ICON_PAIRS = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3104, 11673, 11675, 11677, 11679, 11681, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3104, 11695, 11697, 11699, 11701, 11703, 2]);

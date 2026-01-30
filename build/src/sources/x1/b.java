@@ -8,22 +8,22 @@ import kotlin.collections.o0;
 public final class b {
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f53126d;
+    private final int f53142d;
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f53123a = 30;
+    private final int f53139a = 30;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f53124b = 31;
+    private final int f53140b = 31;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f53125c = 33;
+    private final int f53141c = 33;
 
     /* renamed from: e  reason: collision with root package name */
-    private final HashMap f53127e = o0.k(v.a("robolectric-BrandX/ProductX/Device30:11", 30), v.a("robolectric-BrandX/ProductX/Device31:12", 31), v.a("OPPO/CPH2025EEA/OP4BA2L1:12", 30), v.a("OPPO/CPH2207EEA/OP4F0BL1:12", 30), v.a("OPPO/PENM00/OP4EC1:11", 30), v.a("OnePlus/OnePlus7TTMO/OnePlus7TTMO:11", 30), v.a("OnePlus/OnePlus8_BETA/OnePlus8:11", 30), v.a("Xiaomi/umi_global/umi:11", 30), v.a("realme/RMX2085/RMX2085L1:11", 30), v.a("samsung/c1qsqw/c1q:12", 30), v.a("samsung/o1quew/o1q:12", 30), v.a("samsung/r0quew/r0q:12", 30), v.a("samsung/r0sxxx/r0s:12", 30));
+    private final HashMap f53143e = o0.k(v.a("robolectric-BrandX/ProductX/Device30:11", 30), v.a("robolectric-BrandX/ProductX/Device31:12", 31), v.a("OPPO/CPH2025EEA/OP4BA2L1:12", 30), v.a("OPPO/CPH2207EEA/OP4F0BL1:12", 30), v.a("OPPO/PENM00/OP4EC1:11", 30), v.a("OnePlus/OnePlus7TTMO/OnePlus7TTMO:11", 30), v.a("OnePlus/OnePlus8_BETA/OnePlus8:11", 30), v.a("Xiaomi/umi_global/umi:11", 30), v.a("realme/RMX2085/RMX2085L1:11", 30), v.a("samsung/c1qsqw/c1q:12", 30), v.a("samsung/o1quew/o1q:12", 30), v.a("samsung/r0quew/r0q:12", 30), v.a("samsung/r0sxxx/r0s:12", 30));
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f53128f = a();
+    private final int f53144f = a();
 
     private final int a() {
         int d10 = d();
@@ -34,7 +34,7 @@ public final class b {
         if (e(c10)) {
             return c10;
         }
-        return this.f53126d;
+        return this.f53142d;
     }
 
     private final int c() {
@@ -42,9 +42,9 @@ public final class b {
         String str2 = Build.PRODUCT;
         String str3 = Build.DEVICE;
         String str4 = Build.VERSION.RELEASE;
-        Integer num = (Integer) this.f53127e.get(str + '/' + str2 + '/' + str3 + ':' + str4);
+        Integer num = (Integer) this.f53143e.get(str + '/' + str2 + '/' + str3 + ':' + str4);
         if (num == null) {
-            num = Integer.valueOf(this.f53126d);
+            num = Integer.valueOf(this.f53142d);
         }
         return num.intValue();
     }
@@ -55,17 +55,17 @@ public final class b {
             i10 = Build.VERSION.MEDIA_PERFORMANCE_CLASS;
             return i10;
         }
-        return this.f53126d;
+        return this.f53142d;
     }
 
     private final boolean e(int i10) {
-        if (i10 >= this.f53123a) {
+        if (i10 >= this.f53139a) {
             return true;
         }
         return false;
     }
 
     public int b() {
-        return this.f53128f;
+        return this.f53144f;
     }
 }

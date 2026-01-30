@@ -1,117 +1,59 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var0 = require;
-    var _closure1_slot0 = var0;
-    var0 = dependencyMap;
-    var _closure1_slot1 = var0;
-    var2 = {};
-    var4 = function() { // Original name: get ColorPropType, environment: var1
-        var2 = _closure1_slot0;
-        var1 = _closure1_slot1;
-        var0 = 0;
-        var1 = var1[var0];
-        var0 = undefined;
-        var0 = var2.bind(var0)(var1);
-        return var0;
+    var1 = function(arg0) { // Original name: keyMirror, environment: var0
+        _fun61655: for (var _fun61655_ip = 0;;) switch (_fun61655_ip) {
+            case 0:
+                var7 = arg0;
+                var1 = {};
+                var0 = global;
+                var2 = var0.Object;
+                var2 = var7 instanceof var2;
+                if (!var2) {
+                    _fun61655_ip = 84;
+                    continue _fun61655
+                }
+            case 20:
+                var3 = var0.Array;
+                var2 = var3.isArray;
+                var2 = var2.bind(var3)(var7);
+                if (var2) {
+                    _fun61655_ip = 84;
+                    continue _fun61655
+                }
+            case 39:
+                var5 = var7;
+                for (var2 in var5)
+                    case 50: {
+                        case 59: var8 = var2;
+                        var9 = var7.hasOwnProperty;
+                        var9 = var9.bind(var7)(var8);
+                        if (!var9) {
+                            _fun61655_ip = 50;
+                            continue _fun61655
+                        }
+                        case 76: var1[var8] = var8;
+                        _fun61655_ip = 50;
+                        continue _fun61655;
+                    }
+            case 82:
+                return var1;
+            case 84:
+                var2 = var0.Error;
+                var0 = var2.prototype;
+                var1 = Object.create(var0, {
+                    constructor: {
+                        value: var2
+                    }
+                });
+                var10 = 'keyMirror(...): Argument must be an object.';
+                var11 = var1;
+                var0 = new var11[var2](var10, var9);
+                var0 = var0 instanceof Object ? var0 : var1;
+                throw var0;
+        }
     };
+    var0 = arg4;
+    var0.exports = var1;
     var0 = undefined;
-    var3 = 'ColorPropType';
-    Object.defineProperty(var2, var3, {
-        get: var4,
-        set: var0,
-        enumerable: true
-    });
-    var4 = function() { // Original name: get EdgeInsetsPropType, environment: var1
-        var2 = _closure1_slot0;
-        var1 = _closure1_slot1;
-        var0 = 1;
-        var1 = var1[var0];
-        var0 = undefined;
-        var0 = var2.bind(var0)(var1);
-        return var0;
-    };
-    var3 = 'EdgeInsetsPropType';
-    Object.defineProperty(var2, var3, {
-        get: var4,
-        set: var0,
-        enumerable: true
-    });
-    var4 = function() { // Original name: get ImagePropTypes, environment: var1
-        var2 = _closure1_slot0;
-        var1 = _closure1_slot1;
-        var0 = 2;
-        var1 = var1[var0];
-        var0 = undefined;
-        var0 = var2.bind(var0)(var1);
-        return var0;
-    };
-    var3 = 'ImagePropTypes';
-    Object.defineProperty(var2, var3, {
-        get: var4,
-        set: var0,
-        enumerable: true
-    });
-    var4 = function() { // Original name: get PointPropType, environment: var1
-        var2 = _closure1_slot0;
-        var1 = _closure1_slot1;
-        var0 = 3;
-        var1 = var1[var0];
-        var0 = undefined;
-        var0 = var2.bind(var0)(var1);
-        return var0;
-    };
-    var3 = 'PointPropType';
-    Object.defineProperty(var2, var3, {
-        get: var4,
-        set: var0,
-        enumerable: true
-    });
-    var4 = function() { // Original name: get TextInputPropTypes, environment: var1
-        var2 = _closure1_slot0;
-        var1 = _closure1_slot1;
-        var0 = 4;
-        var1 = var1[var0];
-        var0 = undefined;
-        var0 = var2.bind(var0)(var1);
-        return var0;
-    };
-    var3 = 'TextInputPropTypes';
-    Object.defineProperty(var2, var3, {
-        get: var4,
-        set: var0,
-        enumerable: true
-    });
-    var4 = function() { // Original name: get TextPropTypes, environment: var1
-        var2 = _closure1_slot0;
-        var1 = _closure1_slot1;
-        var0 = 5;
-        var1 = var1[var0];
-        var0 = undefined;
-        var0 = var2.bind(var0)(var1);
-        return var0;
-    };
-    var3 = 'TextPropTypes';
-    Object.defineProperty(var2, var3, {
-        get: var4,
-        set: var0,
-        enumerable: true
-    });
-    var3 = function() { // Original name: get ViewPropTypes, environment: var1
-        var2 = _closure1_slot0;
-        var1 = _closure1_slot1;
-        var0 = 6;
-        var1 = var1[var0];
-        var0 = undefined;
-        var0 = var2.bind(var0)(var1);
-        return var0;
-    };
-    var1 = 'ViewPropTypes';
-    Object.defineProperty(var2, var1, {
-        get: var3,
-        set: var0,
-        enumerable: true
-    });
-    var1 = arg4;
-    var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7664, 7666, 7667, 7677, 7678, 7679, 7668]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

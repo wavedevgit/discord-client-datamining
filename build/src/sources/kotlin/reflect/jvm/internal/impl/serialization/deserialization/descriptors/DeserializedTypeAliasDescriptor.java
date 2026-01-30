@@ -31,19 +31,19 @@ public final class DeserializedTypeAliasDescriptor extends AbstractTypeAliasDesc
     private SimpleType D;
 
     /* renamed from: v  reason: collision with root package name */
-    private final ProtoBuf.TypeAlias f35705v;
+    private final ProtoBuf.TypeAlias f35721v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final NameResolver f35706w;
+    private final NameResolver f35722w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final TypeTable f35707x;
+    private final TypeTable f35723x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final VersionRequirementTable f35708y;
+    private final VersionRequirementTable f35724y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final DeserializedContainerSource f35709z;
+    private final DeserializedContainerSource f35725z;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*
@@ -85,12 +85,12 @@ public final class DeserializedTypeAliasDescriptor extends AbstractTypeAliasDesc
             r3 = r14
             r4 = r15
             r0.<init>(r1, r2, r3, r4, r5, r6)
-            r11.f35705v = r7
-            r11.f35706w = r8
-            r11.f35707x = r9
-            r11.f35708y = r10
+            r11.f35721v = r7
+            r11.f35722w = r8
+            r11.f35723x = r9
+            r11.f35724y = r10
             r1 = r21
-            r11.f35709z = r1
+            r11.f35725z = r1
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedTypeAliasDescriptor.<init>(kotlin.reflect.jvm.internal.impl.storage.StorageManager, kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotations, kotlin.reflect.jvm.internal.impl.name.Name, kotlin.reflect.jvm.internal.impl.descriptors.DescriptorVisibility, kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf$TypeAlias, kotlin.reflect.jvm.internal.impl.metadata.deserialization.NameResolver, kotlin.reflect.jvm.internal.impl.metadata.deserialization.TypeTable, kotlin.reflect.jvm.internal.impl.metadata.deserialization.VersionRequirementTable, kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedContainerSource):void");
@@ -110,7 +110,7 @@ public final class DeserializedTypeAliasDescriptor extends AbstractTypeAliasDesc
 
     @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberDescriptor
     public DeserializedContainerSource getContainerSource() {
-        return this.f35709z;
+        return this.f35725z;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptor
@@ -138,13 +138,13 @@ public final class DeserializedTypeAliasDescriptor extends AbstractTypeAliasDesc
     @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberDescriptor
     @NotNull
     public NameResolver getNameResolver() {
-        return this.f35706w;
+        return this.f35722w;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberDescriptor
     @NotNull
     public TypeTable getTypeTable() {
-        return this.f35707x;
+        return this.f35723x;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.TypeAliasDescriptor
@@ -160,7 +160,7 @@ public final class DeserializedTypeAliasDescriptor extends AbstractTypeAliasDesc
 
     @NotNull
     public VersionRequirementTable getVersionRequirementTable() {
-        return this.f35708y;
+        return this.f35724y;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -188,7 +188,7 @@ public final class DeserializedTypeAliasDescriptor extends AbstractTypeAliasDesc
     @Override // kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptors.DeserializedMemberDescriptor
     @NotNull
     public ProtoBuf.TypeAlias getProto() {
-        return this.f35705v;
+        return this.f35721v;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.Substitutable

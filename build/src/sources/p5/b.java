@@ -19,41 +19,41 @@ import x5.j;
 public class b {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Object f44978d = new Object();
+    private static final Object f44994d = new Object();
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f44979a;
+    private final Context f44995a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f44980b;
+    private final String f44996b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f44981c;
+    private final Map f44997c;
 
     public b(Drawable.Callback callback, String str, c cVar, Map map) {
         if (!TextUtils.isEmpty(str) && str.charAt(str.length() - 1) != '/') {
-            this.f44980b = str + '/';
+            this.f44996b = str + '/';
         } else {
-            this.f44980b = str;
+            this.f44996b = str;
         }
-        this.f44981c = map;
+        this.f44997c = map;
         d(cVar);
         if (!(callback instanceof View)) {
-            this.f44979a = null;
+            this.f44995a = null;
         } else {
-            this.f44979a = ((View) callback).getContext().getApplicationContext();
+            this.f44995a = ((View) callback).getContext().getApplicationContext();
         }
     }
 
     private Bitmap c(String str, Bitmap bitmap) {
-        synchronized (f44978d) {
-            ((w) this.f44981c.get(str)).g(bitmap);
+        synchronized (f44994d) {
+            ((w) this.f44997c.get(str)).g(bitmap);
         }
         return bitmap;
     }
 
     public Bitmap a(String str) {
-        w wVar = (w) this.f44981c.get(str);
+        w wVar = (w) this.f44997c.get(str);
         if (wVar == null) {
             return null;
         }
@@ -61,7 +61,7 @@ public class b {
         if (b10 != null) {
             return b10;
         }
-        Context context = this.f44979a;
+        Context context = this.f44995a;
         if (context == null) {
             return null;
         }
@@ -79,10 +79,10 @@ public class b {
             }
         }
         try {
-            if (!TextUtils.isEmpty(this.f44980b)) {
+            if (!TextUtils.isEmpty(this.f44996b)) {
                 AssetManager assets = context.getAssets();
                 try {
-                    Bitmap decodeStream = BitmapFactory.decodeStream(assets.open(this.f44980b + c10), null, options);
+                    Bitmap decodeStream = BitmapFactory.decodeStream(assets.open(this.f44996b + c10), null, options);
                     if (decodeStream == null) {
                         d.c("Decoded image `" + str + "` is null.");
                         return null;
@@ -101,10 +101,10 @@ public class b {
     }
 
     public boolean b(Context context) {
-        if (this.f44979a instanceof Application) {
+        if (this.f44995a instanceof Application) {
             context = context.getApplicationContext();
         }
-        if (context == this.f44979a) {
+        if (context == this.f44995a) {
             return true;
         }
         return false;

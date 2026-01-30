@@ -35,13 +35,13 @@ public abstract class a0 {
     public static abstract class b implements ii.f {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f32034d = new a("KEY", 0);
+        public static final b f32050d = new a("KEY", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final b f32035e = new C0417b("VALUE", 1);
+        public static final b f32051e = new C0417b("VALUE", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        private static final /* synthetic */ b[] f32036i = a();
+        private static final /* synthetic */ b[] f32052i = a();
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         enum a extends b {
@@ -74,7 +74,7 @@ public abstract class a0 {
         }
 
         private static /* synthetic */ b[] a() {
-            return new b[]{f32034d, f32035e};
+            return new b[]{f32050d, f32051e};
         }
 
         public static b valueOf(String str) {
@@ -82,7 +82,7 @@ public abstract class a0 {
         }
 
         public static b[] values() {
-            return (b[]) f32036i.clone();
+            return (b[]) f32052i.clone();
         }
 
         /* synthetic */ b(String str, int i10, z zVar) {
@@ -143,16 +143,16 @@ public abstract class a0 {
     public static class d extends q0.d {
 
         /* renamed from: d  reason: collision with root package name */
-        final Map f32037d;
+        final Map f32053d;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public d(Map map) {
-            this.f32037d = (Map) ii.m.j(map);
+            this.f32053d = (Map) ii.m.j(map);
         }
 
         /* JADX INFO: Access modifiers changed from: package-private */
         public Map b() {
-            return this.f32037d;
+            return this.f32053d;
         }
 
         @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
@@ -176,14 +176,14 @@ public abstract class a0 {
     public static class e extends AbstractCollection {
 
         /* renamed from: d  reason: collision with root package name */
-        final Map f32038d;
+        final Map f32054d;
 
         e(Map map) {
-            this.f32038d = (Map) ii.m.j(map);
+            this.f32054d = (Map) ii.m.j(map);
         }
 
         final Map b() {
-            return this.f32038d;
+            return this.f32054d;
         }
 
         @Override // java.util.AbstractCollection, java.util.Collection
@@ -262,10 +262,10 @@ public abstract class a0 {
     public static abstract class f extends AbstractMap {
 
         /* renamed from: d  reason: collision with root package name */
-        private transient Set f32039d;
+        private transient Set f32055d;
 
         /* renamed from: e  reason: collision with root package name */
-        private transient Collection f32040e;
+        private transient Collection f32056e;
 
         abstract Set a();
 
@@ -275,10 +275,10 @@ public abstract class a0 {
 
         @Override // java.util.AbstractMap, java.util.Map
         public Set entrySet() {
-            Set set = this.f32039d;
+            Set set = this.f32055d;
             if (set == null) {
                 Set a10 = a();
-                this.f32039d = a10;
+                this.f32055d = a10;
                 return a10;
             }
             return set;
@@ -286,10 +286,10 @@ public abstract class a0 {
 
         @Override // java.util.AbstractMap, java.util.Map
         public Collection values() {
-            Collection collection = this.f32040e;
+            Collection collection = this.f32056e;
             if (collection == null) {
                 Collection b10 = b();
-                this.f32040e = b10;
+                this.f32056e = b10;
                 return b10;
             }
             return collection;
@@ -386,7 +386,7 @@ public abstract class a0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static ii.f k() {
-        return b.f32035e;
+        return b.f32051e;
     }
 
     static Iterator l(Iterator it) {

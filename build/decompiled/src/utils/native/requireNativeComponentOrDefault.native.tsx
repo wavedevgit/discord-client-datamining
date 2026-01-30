@@ -55,7 +55,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'utils/native/requireNativeComponentOrDefault.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: requireNativeComponentOrDefault, environment: var1
-        _fun37293: for (var _fun37293_ip = 0;;) switch (_fun37293_ip) {
+        _fun37344: for (var _fun37344_ip = 0;;) switch (_fun37344_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.componentName;
@@ -63,16 +63,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.componentMissingFallbackInstance;
                 var7 = undefined;
                 if (!(var2 === var7)) {
-                    _fun37293_ip = 34;
-                    continue _fun37293
+                    _fun37344_ip = 34;
+                    continue _fun37344
                 }
             case 27:
                 var2 = _closure1_slot2;
             case 34:
                 var4 = var0.warnWhenMissing;
                 if (!(var4 === var7)) {
-                    _fun37293_ip = 46;
-                    continue _fun37293
+                    _fun37344_ip = 46;
+                    continue _fun37344
                 }
             case 44:
                 var4 = true;
@@ -81,14 +81,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var6.hasViewManagerConfig;
                 var0 = var0.bind(var6)(var3);
                 if (var0) {
-                    _fun37293_ip = 121;
-                    continue _fun37293
+                    _fun37344_ip = 121;
+                    continue _fun37344
                 }
             case 67:
                 var0 = var2;
                 if (!var4) {
-                    _fun37293_ip = 182;
-                    continue _fun37293
+                    _fun37344_ip = 182;
+                    continue _fun37344
                 }
             case 73:
                 var8 = _closure1_slot3;
@@ -101,23 +101,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var10.bind(var9)(var3, var4);
                 var4 = var6.bind(var8)(var4);
                 var0 = var2;
-                _fun37293_ip = 182;
-                continue _fun37293;
+                _fun37344_ip = 182;
+                continue _fun37344;
             case 121:
                 var4 = _closure1_slot4;
                 var2 = var4.has;
                 var2 = var2.bind(var4)(var3);
                 if (var2) {
-                    _fun37293_ip = 168;
-                    continue _fun37293
+                    _fun37344_ip = 168;
+                    continue _fun37344
                 }
             case 138:
                 var4 = _closure1_slot4;
                 var2 = var4.set;
                 var6 = null;
                 if (!(var6 == var5)) {
-                    _fun37293_ip = 162;
-                    continue _fun37293
+                    _fun37344_ip = 162;
+                    continue _fun37344
                 }
             case 153:
                 var6 = _closure1_slot0;

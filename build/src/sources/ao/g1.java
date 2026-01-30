@@ -124,7 +124,7 @@ public final class g1 implements vm.k {
         }
 
         private a() {
-            k.a aVar = vm.k.f51267a;
+            k.a aVar = vm.k.f51283a;
             this.f6027a = new vm.z(Reflection.getOrCreateKotlinClass(f5.e.class), C0088a.f6028d, b.f6029d);
         }
     }
@@ -231,7 +231,7 @@ public final class g1 implements vm.k {
             return null;
         }
         this.f6023b.f25376k.setControlsColor(capturePageHeaderIconColorValue.intValue());
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private final void l() {
@@ -278,7 +278,7 @@ public final class g1 implements vm.k {
         }
         if (!z10 && !z11) {
             g1Var.m(axis, j10);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         if (z10 && (gVar.f25367b.getLineCount() > 1 || gVar.f25385t.getLineCount() > 1 || axis == StyleElements.Axis.VERTICAL)) {
             Button acceptButton = gVar.f25367b;
@@ -308,7 +308,7 @@ public final class g1 implements vm.k {
                 g1.p(g1.this);
             }
         });
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -368,19 +368,19 @@ public final class g1 implements vm.k {
             r10.h(eVar.k());
             j10.a(r10.a());
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit v(f5.e eVar) {
         eVar.p().invoke();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit w(f5.e eVar) {
         eVar.e().invoke();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -549,7 +549,7 @@ public final class g1 implements vm.k {
         StepStyles.GovernmentIdStepStyle s10 = rendering.s();
         if (s10 != null) {
             k(s10);
-            sp.c.a(viewEnvironment, androidx.core.content.a.c(this.f6023b.getRoot().getContext(), jp.j.f32303a));
+            sp.c.a(viewEnvironment, androidx.core.content.a.c(this.f6023b.getRoot().getContext(), jp.j.f32319a));
         }
         n(this, rendering.r(), 0L, 2, null);
         CoordinatorLayout cameraScreenContent = this.f6023b.f25369d;

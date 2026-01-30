@@ -233,14 +233,14 @@ public final class a {
         public static final Unit f(C0155a this$0, boolean z10) {
             Intrinsics.checkNotNullParameter(this$0, "this$0");
             this$0.M = z10;
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final Unit h(C0155a this$0, boolean z10) {
             Intrinsics.checkNotNullParameter(this$0, "this$0");
             this$0.f11601s = z10;
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         public final a d() {
@@ -481,7 +481,7 @@ public final class a {
         this.f11570n = dVar == null ? new c() : dVar;
         Supplier BOOLEAN_FALSE = c0155a.f11599q;
         if (BOOLEAN_FALSE == null) {
-            BOOLEAN_FALSE = m.f42484b;
+            BOOLEAN_FALSE = m.f42500b;
             Intrinsics.checkNotNullExpressionValue(BOOLEAN_FALSE, "BOOLEAN_FALSE");
         }
         this.f11571o = BOOLEAN_FALSE;

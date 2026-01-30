@@ -9,11 +9,11 @@ import org.jetbrains.annotations.NotNull;
 public final class KotlinJvmBinaryPackageSourceElement implements SourceElement {
 
     /* renamed from: a  reason: collision with root package name */
-    private final LazyJavaPackageFragment f34516a;
+    private final LazyJavaPackageFragment f34532a;
 
     public KotlinJvmBinaryPackageSourceElement(@NotNull LazyJavaPackageFragment packageFragment) {
         Intrinsics.checkNotNullParameter(packageFragment, "packageFragment");
-        this.f34516a = packageFragment;
+        this.f34532a = packageFragment;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.SourceElement
@@ -26,6 +26,6 @@ public final class KotlinJvmBinaryPackageSourceElement implements SourceElement 
 
     @NotNull
     public String toString() {
-        return this.f34516a + ": " + this.f34516a.getBinaryClasses$descriptors_jvm().keySet();
+        return this.f34532a + ": " + this.f34532a.getBinaryClasses$descriptors_jvm().keySet();
     }
 }

@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot7 = var3;
     var3 = var6.memo;
     var1 = function() { // Original name: GuildsBarItemUnavailableGuilds, environment: var1
-        _fun101523: for (var _fun101523_ip = 0;;) switch (_fun101523_ip) {
+        _fun101777: for (var _fun101777_ip = 0;;) switch (_fun101777_ip) {
             case 0:
                 var0 = _closure1_slot7;
                 var4 = undefined;
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var13 <= var0;
                 var0 = null;
                 if (var1) {
-                    _fun101523_ip = 243;
-                    continue _fun101523
+                    _fun101777_ip = 243;
+                    continue _fun101777
                 }
             case 83:
                 var3 = _closure1_slot6;
@@ -176,4 +176,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3955, 13125, 33, 1297, 3956, 1234, 566, 13169, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3961, 13150, 33, 1297, 3962, 1234, 566, 13194, 2]);

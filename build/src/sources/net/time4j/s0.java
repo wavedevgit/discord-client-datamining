@@ -3,7 +3,7 @@ package net.time4j;
 final class s0 extends o {
 
     /* renamed from: i  reason: collision with root package name */
-    private final Object f40799i;
+    private final Object f40815i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public s0(jt.p pVar, int i10) {
@@ -38,7 +38,7 @@ final class s0 extends o {
     @Override // jt.v
     /* renamed from: b */
     public g0 apply(g0 g0Var) {
-        return (g0) ((jt.v) this.f40799i).apply(g0Var);
+        return (g0) ((jt.v) this.f40815i).apply(g0Var);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -46,28 +46,28 @@ final class s0 extends o {
         super(pVar, i10);
         switch (i10) {
             case -1:
-                this.f40799i = e(pVar, obj);
+                this.f40815i = e(pVar, obj);
                 return;
             case 0:
-                this.f40799i = jt.g0.l(pVar);
+                this.f40815i = jt.g0.l(pVar);
                 return;
             case 1:
-                this.f40799i = jt.g0.j(pVar);
+                this.f40815i = jt.g0.j(pVar);
                 return;
             case 2:
-                this.f40799i = jt.g0.f(pVar);
+                this.f40815i = jt.g0.f(pVar);
                 return;
             case 3:
-                this.f40799i = jt.g0.h(pVar);
+                this.f40815i = jt.g0.h(pVar);
                 return;
             case 4:
-                this.f40799i = c(pVar, false);
+                this.f40815i = c(pVar, false);
                 return;
             case 5:
-                this.f40799i = c(pVar, true);
+                this.f40815i = c(pVar, true);
                 return;
             case 6:
-                this.f40799i = d(pVar, obj);
+                this.f40815i = d(pVar, obj);
                 return;
             default:
                 throw new AssertionError("Unknown: " + a());

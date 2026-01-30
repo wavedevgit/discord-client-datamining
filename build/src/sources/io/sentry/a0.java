@@ -10,25 +10,25 @@ import java.io.IOException;
 public final class a0 extends s implements o0 {
 
     /* renamed from: e  reason: collision with root package name */
-    private final w0 f28725e;
+    private final w0 f28741e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final b1 f28726f;
+    private final b1 f28742f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final ILogger f28727g;
+    private final ILogger f28743g;
 
     public a0(w0 w0Var, b1 b1Var, ILogger iLogger, long j10, int i10) {
         super(w0Var, iLogger, j10, i10);
-        this.f28725e = (w0) io.sentry.util.y.c(w0Var, "Scopes are required.");
-        this.f28726f = (b1) io.sentry.util.y.c(b1Var, "Serializer is required.");
-        this.f28727g = (ILogger) io.sentry.util.y.c(iLogger, "Logger is required.");
+        this.f28741e = (w0) io.sentry.util.y.c(w0Var, "Scopes are required.");
+        this.f28742f = (b1) io.sentry.util.y.c(b1Var, "Serializer is required.");
+        this.f28743g = (ILogger) io.sentry.util.y.c(iLogger, "Logger is required.");
     }
 
     public static /* synthetic */ void f(a0 a0Var, io.sentry.hints.i iVar) {
         a0Var.getClass();
         if (!iVar.g()) {
-            a0Var.f28727g.c(SentryLevel.WARNING, "Timed out waiting for envelope submission.", new Object[0]);
+            a0Var.f28743g.c(SentryLevel.WARNING, "Timed out waiting for envelope submission.", new Object[0]);
         }
     }
 
@@ -36,25 +36,25 @@ public final class a0 extends s implements o0 {
         a0Var.getClass();
         if (!kVar.a()) {
             a0Var.i(file, "after trying to capture it");
-            a0Var.f28727g.c(SentryLevel.DEBUG, "Deleted file %s.", file.getAbsolutePath());
+            a0Var.f28743g.c(SentryLevel.DEBUG, "Deleted file %s.", file.getAbsolutePath());
             return;
         }
-        a0Var.f28727g.c(SentryLevel.INFO, "File not deleted since retry was marked. %s.", file.getAbsolutePath());
+        a0Var.f28743g.c(SentryLevel.INFO, "File not deleted since retry was marked. %s.", file.getAbsolutePath());
     }
 
     public static /* synthetic */ void h(a0 a0Var, Throwable th2, File file, io.sentry.hints.k kVar) {
         a0Var.getClass();
         kVar.d(false);
-        a0Var.f28727g.a(SentryLevel.INFO, th2, "File '%s' won't retry.", file.getAbsolutePath());
+        a0Var.f28743g.a(SentryLevel.INFO, th2, "File '%s' won't retry.", file.getAbsolutePath());
     }
 
     private void i(File file, String str) {
         try {
             if (!file.delete()) {
-                this.f28727g.c(SentryLevel.ERROR, "Failed to delete '%s' %s", file.getAbsolutePath(), str);
+                this.f28743g.c(SentryLevel.ERROR, "Failed to delete '%s' %s", file.getAbsolutePath(), str);
             }
         } catch (Throwable th2) {
-            this.f28727g.a(SentryLevel.ERROR, th2, "Failed to delete '%s' %s", file.getAbsolutePath(), str);
+            this.f28743g.a(SentryLevel.ERROR, th2, "Failed to delete '%s' %s", file.getAbsolutePath(), str);
         }
     }
 
@@ -80,33 +80,33 @@ public final class a0 extends s implements o0 {
         ILogger iLogger;
         n.a aVar;
         if (!file.isFile()) {
-            this.f28727g.c(SentryLevel.DEBUG, "'%s' is not a file.", file.getAbsolutePath());
+            this.f28743g.c(SentryLevel.DEBUG, "'%s' is not a file.", file.getAbsolutePath());
         } else if (!c(file.getName())) {
-            this.f28727g.c(SentryLevel.DEBUG, "File '%s' doesn't match extension expected.", file.getAbsolutePath());
+            this.f28743g.c(SentryLevel.DEBUG, "File '%s' doesn't match extension expected.", file.getAbsolutePath());
         } else {
             try {
                 if (!file.getParentFile().canWrite()) {
-                    this.f28727g.c(SentryLevel.WARNING, "File '%s' cannot be deleted so it will not be processed.", file.getAbsolutePath());
+                    this.f28743g.c(SentryLevel.WARNING, "File '%s' cannot be deleted so it will not be processed.", file.getAbsolutePath());
                     return;
                 }
                 try {
                     try {
                         BufferedInputStream bufferedInputStream = new BufferedInputStream(new FileInputStream(file));
                         try {
-                            l5 d10 = this.f28726f.d(bufferedInputStream);
+                            l5 d10 = this.f28742f.d(bufferedInputStream);
                             if (d10 == null) {
-                                this.f28727g.c(SentryLevel.ERROR, "Failed to deserialize cached envelope %s", file.getAbsolutePath());
+                                this.f28743g.c(SentryLevel.ERROR, "Failed to deserialize cached envelope %s", file.getAbsolutePath());
                             } else {
-                                this.f28725e.m(d10, hint);
+                                this.f28741e.m(d10, hint);
                             }
-                            io.sentry.util.n.m(hint, io.sentry.hints.i.class, this.f28727g, new n.a() { // from class: io.sentry.x
+                            io.sentry.util.n.m(hint, io.sentry.hints.i.class, this.f28743g, new n.a() { // from class: io.sentry.x
                                 @Override // io.sentry.util.n.a
                                 public final void accept(Object obj) {
                                     a0.f(a0.this, (io.sentry.hints.i) obj);
                                 }
                             });
                             bufferedInputStream.close();
-                            io.sentry.util.n.m(hint, io.sentry.hints.k.class, this.f28727g, new n.a() { // from class: io.sentry.y
+                            io.sentry.util.n.m(hint, io.sentry.hints.k.class, this.f28743g, new n.a() { // from class: io.sentry.y
                                 @Override // io.sentry.util.n.a
                                 public final void accept(Object obj) {
                                     a0.g(a0.this, file, (io.sentry.hints.k) obj);
@@ -121,8 +121,8 @@ public final class a0 extends s implements o0 {
                             throw th2;
                         }
                     } catch (FileNotFoundException e10) {
-                        this.f28727g.a(SentryLevel.ERROR, e10, "File '%s' cannot be found.", file.getAbsolutePath());
-                        iLogger = this.f28727g;
+                        this.f28743g.a(SentryLevel.ERROR, e10, "File '%s' cannot be found.", file.getAbsolutePath());
+                        iLogger = this.f28743g;
                         aVar = new n.a() { // from class: io.sentry.y
                             @Override // io.sentry.util.n.a
                             public final void accept(Object obj) {
@@ -132,8 +132,8 @@ public final class a0 extends s implements o0 {
                         io.sentry.util.n.m(hint, io.sentry.hints.k.class, iLogger, aVar);
                     }
                 } catch (IOException e11) {
-                    this.f28727g.a(SentryLevel.ERROR, e11, "I/O on file '%s' failed.", file.getAbsolutePath());
-                    iLogger = this.f28727g;
+                    this.f28743g.a(SentryLevel.ERROR, e11, "I/O on file '%s' failed.", file.getAbsolutePath());
+                    iLogger = this.f28743g;
                     aVar = new n.a() { // from class: io.sentry.y
                         @Override // io.sentry.util.n.a
                         public final void accept(Object obj) {
@@ -142,14 +142,14 @@ public final class a0 extends s implements o0 {
                     };
                     io.sentry.util.n.m(hint, io.sentry.hints.k.class, iLogger, aVar);
                 } catch (Throwable th4) {
-                    this.f28727g.a(SentryLevel.ERROR, th4, "Failed to capture cached envelope %s", file.getAbsolutePath());
-                    io.sentry.util.n.m(hint, io.sentry.hints.k.class, this.f28727g, new n.a() { // from class: io.sentry.z
+                    this.f28743g.a(SentryLevel.ERROR, th4, "Failed to capture cached envelope %s", file.getAbsolutePath());
+                    io.sentry.util.n.m(hint, io.sentry.hints.k.class, this.f28743g, new n.a() { // from class: io.sentry.z
                         @Override // io.sentry.util.n.a
                         public final void accept(Object obj) {
                             a0.h(a0.this, th4, file, (io.sentry.hints.k) obj);
                         }
                     });
-                    iLogger = this.f28727g;
+                    iLogger = this.f28743g;
                     aVar = new n.a() { // from class: io.sentry.y
                         @Override // io.sentry.util.n.a
                         public final void accept(Object obj) {
@@ -159,7 +159,7 @@ public final class a0 extends s implements o0 {
                     io.sentry.util.n.m(hint, io.sentry.hints.k.class, iLogger, aVar);
                 }
             } catch (Throwable th5) {
-                io.sentry.util.n.m(hint, io.sentry.hints.k.class, this.f28727g, new n.a() { // from class: io.sentry.y
+                io.sentry.util.n.m(hint, io.sentry.hints.k.class, this.f28743g, new n.a() { // from class: io.sentry.y
                     @Override // io.sentry.util.n.a
                     public final void accept(Object obj) {
                         a0.g(a0.this, file, (io.sentry.hints.k) obj);

@@ -20,7 +20,7 @@ public final class BuiltInsPackageFragmentImpl extends DeserializedPackageFragme
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: y  reason: collision with root package name */
-    private final boolean f35640y;
+    private final boolean f35656y;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -59,6 +59,6 @@ public final class BuiltInsPackageFragmentImpl extends DeserializedPackageFragme
 
     private BuiltInsPackageFragmentImpl(FqName fqName, StorageManager storageManager, ModuleDescriptor moduleDescriptor, ProtoBuf.PackageFragment packageFragment, BuiltInsBinaryVersion builtInsBinaryVersion, boolean z10) {
         super(fqName, storageManager, moduleDescriptor, packageFragment, builtInsBinaryVersion, null);
-        this.f35640y = z10;
+        this.f35656y = z10;
     }
 }

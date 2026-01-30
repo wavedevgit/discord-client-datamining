@@ -65,14 +65,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.StickyContext = var3;
     var1 = function(arg0) { // Original name: StickyWrapper, environment: var1
-        _fun89426: for (var _fun89426_ip = 0;;) switch (_fun89426_ip) {
+        _fun89663: for (var _fun89663_ip = 0;;) switch (_fun89663_ip) {
             case 0:
                 var1 = arg0;
                 var11 = var1.initiallyShowHeader;
                 var3 = undefined;
                 if (!(var11 === var3)) {
-                    _fun89426_ip = 19;
-                    continue _fun89426
+                    _fun89663_ip = 19;
+                    continue _fun89663
                 }
             case 17:
                 var11 = true;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var9.bind(var3)(var2);
                 var9 = var12.useAnimatedStyle;
                 var2 = function() { // Original name: H, environment: var0
-                    _fun89429: for (var _fun89429_ip = 0;;) switch (_fun89429_ip) {
+                    _fun89666: for (var _fun89666_ip = 0;;) switch (_fun89666_ip) {
                         case 0:
                             var0 = {
                                 'position': 'relative',
@@ -140,8 +140,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var1.bind(var3)();
                             var1 = 0;
                             if (!var3) {
-                                _fun89429_ip = 48;
-                                continue _fun89429
+                                _fun89666_ip = 48;
+                                continue _fun89666
                             }
                         case 35:
                             var3 = _closure2_slot2;
@@ -203,4 +203,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.StickyWrapper = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 660, 33, 5211, 3677, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 660, 33, 5217, 3679, 2]);

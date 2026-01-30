@@ -11,33 +11,33 @@ import kt.j;
 public final class f implements kt.i {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Locale[] f46212b = new Locale[0];
+    private static final Locale[] f46228b = new Locale[0];
 
     /* renamed from: c  reason: collision with root package name */
-    public static final Set f46213c;
+    public static final Set f46229c;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final f f46214d;
+    public static final f f46230d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Map f46215e;
+    private static final Map f46231e;
 
     static {
         j[] values;
         String[] split = e.h("i18n/numbers/symbol", Locale.ROOT).f("locales").split(" ");
         HashSet hashSet = new HashSet();
         Collections.addAll(hashSet, split);
-        f46213c = Collections.unmodifiableSet(hashSet);
-        f46214d = new f();
+        f46229c = Collections.unmodifiableSet(hashSet);
+        f46230d = new f();
         HashMap hashMap = new HashMap();
         for (j jVar : j.values()) {
             hashMap.put(jVar.k(), jVar);
         }
-        f46215e = Collections.unmodifiableMap(hashMap);
+        f46231e = Collections.unmodifiableMap(hashMap);
     }
 
     private static e g(Locale locale) {
-        if (f46213c.contains(d.a(locale))) {
+        if (f46229c.contains(d.a(locale))) {
             return e.h("i18n/numbers/symbol", locale);
         }
         return null;
@@ -61,23 +61,23 @@ public final class f implements kt.i {
 
     @Override // kt.i
     public Locale[] a() {
-        return f46212b;
+        return f46228b;
     }
 
     @Override // kt.i
     public char b(Locale locale) {
-        return h(locale, "separator", kt.i.f36587a.b(locale));
+        return h(locale, "separator", kt.i.f36603a.b(locale));
     }
 
     @Override // kt.i
     public String c(Locale locale) {
-        return i(locale, "plus", kt.i.f36587a.c(locale));
+        return i(locale, "plus", kt.i.f36603a.c(locale));
     }
 
     @Override // kt.i
     public j d(Locale locale) {
-        String i10 = i(locale, "numsys", j.f36588d.k());
-        j jVar = (j) f46215e.get(i10);
+        String i10 = i(locale, "numsys", j.f36604d.k());
+        j jVar = (j) f46231e.get(i10);
         if (jVar != null) {
             return jVar;
         }
@@ -86,12 +86,12 @@ public final class f implements kt.i {
 
     @Override // kt.i
     public String e(Locale locale) {
-        return i(locale, "minus", kt.i.f36587a.e(locale));
+        return i(locale, "minus", kt.i.f36603a.e(locale));
     }
 
     @Override // kt.i
     public char f(Locale locale) {
-        return h(locale, "zero", kt.i.f36587a.f(locale));
+        return h(locale, "zero", kt.i.f36603a.f(locale));
     }
 
     public String toString() {

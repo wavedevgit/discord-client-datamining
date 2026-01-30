@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
     var0 = function(arg0) { // Original name: FamilyCenterModalDisconnectScreen, environment: var1
-        _fun81928: for (var _fun81928_ip = 0;;) switch (_fun81928_ip) {
+        _fun81974: for (var _fun81974_ip = 0;;) switch (_fun81974_ip) {
             case 0:
                 var0 = arg0;
                 var28 = var0.otherUser;
@@ -323,8 +323,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11.variant = var20;
                 var17 = !var17;
                 if (var17) {
-                    _fun81928_ip = 1167;
-                    continue _fun81928
+                    _fun81974_ip = 1167;
+                    continue _fun81974
                 }
             case 1164:
                 var17 = var16;
@@ -563,4 +563,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 671, 4518, 6468, 3106, 1234, 10386, 10393, 1849, 6397, 6398, 10443, 5280, 3895, 10419, 5335, 4874, 10388, 6401, 4037, 4661, 7462, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 671, 4524, 6471, 3106, 1234, 10392, 10399, 1849, 6400, 6401, 10449, 5284, 3901, 10425, 5339, 4880, 10394, 6404, 4043, 4667, 7465, 2]);

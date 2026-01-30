@@ -20,25 +20,25 @@ import org.jetbrains.annotations.NotNull;
 public class ErrorScope implements MemberScope {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ErrorScopeKind f35978a;
+    private final ErrorScopeKind f35994a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f35979b;
+    private final String f35995b;
 
     public ErrorScope(@NotNull ErrorScopeKind kind, @NotNull String... formatParams) {
         Intrinsics.checkNotNullParameter(kind, "kind");
         Intrinsics.checkNotNullParameter(formatParams, "formatParams");
-        this.f35978a = kind;
+        this.f35994a = kind;
         String debugMessage = kind.getDebugMessage();
         Object[] copyOf = Arrays.copyOf(formatParams, formatParams.length);
         String format = String.format(debugMessage, Arrays.copyOf(copyOf, copyOf.length));
         Intrinsics.checkNotNullExpressionValue(format, "format(...)");
-        this.f35979b = format;
+        this.f35995b = format;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final String a() {
-        return this.f35979b;
+        return this.f35995b;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope
@@ -89,7 +89,7 @@ public class ErrorScope implements MemberScope {
 
     @NotNull
     public String toString() {
-        return "ErrorScope{" + this.f35979b + '}';
+        return "ErrorScope{" + this.f35995b + '}';
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.resolve.scopes.MemberScope, kotlin.reflect.jvm.internal.impl.resolve.scopes.ResolutionScope

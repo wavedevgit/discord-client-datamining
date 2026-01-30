@@ -46,11 +46,11 @@ final class AudioPlayerView$configureGestures$onTouchListener$1$onTouch$1 extend
         }
         runnable = this.this$0.longPressRunnable;
         runnable.run();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((AudioPlayerView$configureGestures$onTouchListener$1$onTouch$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((AudioPlayerView$configureGestures$onTouchListener$1$onTouch$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

@@ -61,6 +61,6 @@ public abstract class g2 {
             Intrinsics.checkNotNullExpressionValue(inputLayout, "inputLayout");
             cq.a0.k(inputLayout, styles);
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 }

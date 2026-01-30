@@ -9,10 +9,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class j extends h {
 
     /* renamed from: f  reason: collision with root package name */
-    private final ConnectivityManager f42396f;
+    private final ConnectivityManager f42412f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final a f42397g;
+    private final a f42413g;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a extends ConnectivityManager.NetworkCallback {
@@ -25,10 +25,10 @@ public final class j extends h {
             Intrinsics.checkNotNullParameter(network, "network");
             Intrinsics.checkNotNullParameter(capabilities, "capabilities");
             k4.m e10 = k4.m.e();
-            str = k.f42399a;
+            str = k.f42415a;
             e10.a(str, "Network capabilities changed: " + capabilities);
             j jVar = j.this;
-            jVar.g(k.c(jVar.f42396f));
+            jVar.g(k.c(jVar.f42412f));
         }
 
         @Override // android.net.ConnectivityManager.NetworkCallback
@@ -36,10 +36,10 @@ public final class j extends h {
             String str;
             Intrinsics.checkNotNullParameter(network, "network");
             k4.m e10 = k4.m.e();
-            str = k.f42399a;
+            str = k.f42415a;
             e10.a(str, "Network connection lost");
             j jVar = j.this;
-            jVar.g(k.c(jVar.f42396f));
+            jVar.g(k.c(jVar.f42412f));
         }
     }
 
@@ -50,8 +50,8 @@ public final class j extends h {
         Intrinsics.checkNotNullParameter(taskExecutor, "taskExecutor");
         Object systemService = d().getSystemService("connectivity");
         Intrinsics.checkNotNull(systemService, "null cannot be cast to non-null type android.net.ConnectivityManager");
-        this.f42396f = (ConnectivityManager) systemService;
-        this.f42397g = new a();
+        this.f42412f = (ConnectivityManager) systemService;
+        this.f42413g = new a();
     }
 
     @Override // o4.h
@@ -61,16 +61,16 @@ public final class j extends h {
         String str3;
         try {
             k4.m e10 = k4.m.e();
-            str3 = k.f42399a;
+            str3 = k.f42415a;
             e10.a(str3, "Registering network callback");
-            q4.l.a(this.f42396f, this.f42397g);
+            q4.l.a(this.f42412f, this.f42413g);
         } catch (IllegalArgumentException e11) {
             k4.m e12 = k4.m.e();
-            str2 = k.f42399a;
+            str2 = k.f42415a;
             e12.d(str2, "Received exception while registering network callback", e11);
         } catch (SecurityException e13) {
             k4.m e14 = k4.m.e();
-            str = k.f42399a;
+            str = k.f42415a;
             e14.d(str, "Received exception while registering network callback", e13);
         }
     }
@@ -82,16 +82,16 @@ public final class j extends h {
         String str3;
         try {
             k4.m e10 = k4.m.e();
-            str3 = k.f42399a;
+            str3 = k.f42415a;
             e10.a(str3, "Unregistering network callback");
-            q4.j.c(this.f42396f, this.f42397g);
+            q4.j.c(this.f42412f, this.f42413g);
         } catch (IllegalArgumentException e11) {
             k4.m e12 = k4.m.e();
-            str2 = k.f42399a;
+            str2 = k.f42415a;
             e12.d(str2, "Received exception while unregistering network callback", e11);
         } catch (SecurityException e13) {
             k4.m e14 = k4.m.e();
-            str = k.f42399a;
+            str = k.f42415a;
             e14.d(str, "Received exception while unregistering network callback", e13);
         }
     }
@@ -99,6 +99,6 @@ public final class j extends h {
     @Override // o4.h
     /* renamed from: k */
     public m4.c e() {
-        return k.c(this.f42396f);
+        return k.c(this.f42412f);
     }
 }

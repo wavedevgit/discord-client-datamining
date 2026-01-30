@@ -255,7 +255,7 @@ public final class ScreenDummyLayoutHelper implements LifecycleEventListener {
                     return true;
                 }
                 f(currentActivity);
-                Unit unit = Unit.f33282a;
+                Unit unit = Unit.f33298a;
                 return true;
             }
         }

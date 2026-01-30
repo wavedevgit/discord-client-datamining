@@ -48,11 +48,11 @@ final class MediaEngineModule$setAudioInputEnabled$1 extends kotlin.coroutines.j
             }
         }
         this.this$0.getMediaEngine().setAudioInputEnabled$media_engine_release(this.$enabled);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$setAudioInputEnabled$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((MediaEngineModule$setAudioInputEnabled$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

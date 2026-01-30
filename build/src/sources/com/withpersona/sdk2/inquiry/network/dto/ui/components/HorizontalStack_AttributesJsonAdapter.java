@@ -76,7 +76,7 @@ public final class HorizontalStack_AttributesJsonAdapter extends h {
         }
         Constructor<HorizontalStack.Attributes> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = HorizontalStack.Attributes.class.getDeclaredConstructor(List.class, JsonLogicBoolean.class, Integer.TYPE, c.f49081c);
+            constructor = HorizontalStack.Attributes.class.getDeclaredConstructor(List.class, JsonLogicBoolean.class, Integer.TYPE, c.f49097c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

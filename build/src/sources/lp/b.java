@@ -14,39 +14,39 @@ import jp.n;
 public final class b implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ConstraintLayout f37410a;
+    private final ConstraintLayout f37426a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final FrameLayout f37411b;
+    public final FrameLayout f37427b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final NestedScrollView f37412c;
+    public final NestedScrollView f37428c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final FrameLayout f37413d;
+    public final FrameLayout f37429d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final Pi2NavigationBar f37414e;
+    public final Pi2NavigationBar f37430e;
 
     private b(ConstraintLayout constraintLayout, FrameLayout frameLayout, NestedScrollView nestedScrollView, FrameLayout frameLayout2, Pi2NavigationBar pi2NavigationBar) {
-        this.f37410a = constraintLayout;
-        this.f37411b = frameLayout;
-        this.f37412c = nestedScrollView;
-        this.f37413d = frameLayout2;
-        this.f37414e = pi2NavigationBar;
+        this.f37426a = constraintLayout;
+        this.f37427b = frameLayout;
+        this.f37428c = nestedScrollView;
+        this.f37429d = frameLayout2;
+        this.f37430e = pi2NavigationBar;
     }
 
     public static b a(View view) {
-        int i10 = m.f32328b;
+        int i10 = m.f32344b;
         FrameLayout frameLayout = (FrameLayout) e4.a.a(view, i10);
         if (frameLayout != null) {
-            i10 = m.f32329c;
+            i10 = m.f32345c;
             NestedScrollView nestedScrollView = (NestedScrollView) e4.a.a(view, i10);
             if (nestedScrollView != null) {
-                i10 = m.f32330d;
+                i10 = m.f32346d;
                 FrameLayout frameLayout2 = (FrameLayout) e4.a.a(view, i10);
                 if (frameLayout2 != null) {
-                    i10 = m.f32333g;
+                    i10 = m.f32349g;
                     Pi2NavigationBar pi2NavigationBar = (Pi2NavigationBar) e4.a.a(view, i10);
                     if (pi2NavigationBar != null) {
                         return new b((ConstraintLayout) view, frameLayout, nestedScrollView, frameLayout2, pi2NavigationBar);
@@ -58,7 +58,7 @@ public final class b implements ViewBinding {
     }
 
     public static b c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(n.f32341b, viewGroup, false);
+        View inflate = layoutInflater.inflate(n.f32357b, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -68,6 +68,6 @@ public final class b implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ConstraintLayout getRoot() {
-        return this.f37410a;
+        return this.f37426a;
     }
 }

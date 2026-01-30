@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.SEARCH_BAR_HEIGHT = var3;
     var1 = function(arg0) { // Original name: SearchButtonContent, environment: var1
-        _fun90246: for (var _fun90246_ip = 0;;) switch (_fun90246_ip) {
+        _fun90483: for (var _fun90483_ip = 0;;) switch (_fun90483_ip) {
             case 0:
                 var2 = arg0;
                 var7 = var2.panelVariant;
@@ -117,13 +117,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = new Array(3);
                 var6[0] = var9;
                 if (var7) {
-                    _fun90246_ip = 91;
-                    continue _fun90246
+                    _fun90483_ip = 91;
+                    continue _fun90483
                 }
             case 83:
                 var7 = var8.roundedCorners;
-                _fun90246_ip = 97;
-                continue _fun90246;
+                _fun90483_ip = 97;
+                continue _fun90483;
             case 91:
                 var7 = var8.roundedCornersAlt;
             case 97:
@@ -178,4 +178,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.SearchButtonContent = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 6970, 3895, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 6973, 3901, 1234, 2]);

@@ -10,16 +10,16 @@ import tm.o;
 public final class n<OutputT> implements o<OutputT> {
 
     /* renamed from: b  reason: collision with root package name */
-    private final KType f49724b;
+    private final KType f49740b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Flow f49725c;
+    private final Flow f49741c;
 
     public n(KType outputType, Flow work) {
         Intrinsics.checkNotNullParameter(outputType, "outputType");
         Intrinsics.checkNotNullParameter(work, "work");
-        this.f49724b = outputType;
-        this.f49725c = work;
+        this.f49740b = outputType;
+        this.f49741c = work;
     }
 
     @Override // tm.o
@@ -29,10 +29,10 @@ public final class n<OutputT> implements o<OutputT> {
 
     @Override // tm.o
     public Flow run() {
-        return this.f49725c;
+        return this.f49741c;
     }
 
     public String toString() {
-        return "TypedWorker(" + this.f49724b + ')';
+        return "TypedWorker(" + this.f49740b + ')';
     }
 }

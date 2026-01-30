@@ -16,34 +16,34 @@ import ji.q;
 public abstract class t implements Map, Serializable {
 
     /* renamed from: o  reason: collision with root package name */
-    static final Map.Entry[] f32169o = new Map.Entry[0];
+    static final Map.Entry[] f32185o = new Map.Entry[0];
 
     /* renamed from: d  reason: collision with root package name */
-    private transient u f32170d;
+    private transient u f32186d;
 
     /* renamed from: e  reason: collision with root package name */
-    private transient u f32171e;
+    private transient u f32187e;
 
     /* renamed from: i  reason: collision with root package name */
-    private transient q f32172i;
+    private transient q f32188i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        Comparator f32173a;
+        Comparator f32189a;
 
         /* renamed from: b  reason: collision with root package name */
-        Object[] f32174b;
+        Object[] f32190b;
 
         /* renamed from: c  reason: collision with root package name */
-        int f32175c;
+        int f32191c;
 
         /* renamed from: d  reason: collision with root package name */
-        boolean f32176d;
+        boolean f32192d;
 
         /* renamed from: e  reason: collision with root package name */
-        C0422a f32177e;
+        C0422a f32193e;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: ji.t$a$a  reason: collision with other inner class name */
@@ -51,27 +51,27 @@ public abstract class t implements Map, Serializable {
         public static final class C0422a {
 
             /* renamed from: a  reason: collision with root package name */
-            private final Object f32178a;
+            private final Object f32194a;
 
             /* renamed from: b  reason: collision with root package name */
-            private final Object f32179b;
+            private final Object f32195b;
 
             /* renamed from: c  reason: collision with root package name */
-            private final Object f32180c;
+            private final Object f32196c;
 
             /* JADX INFO: Access modifiers changed from: package-private */
             public C0422a(Object obj, Object obj2, Object obj3) {
-                this.f32178a = obj;
-                this.f32179b = obj2;
-                this.f32180c = obj3;
+                this.f32194a = obj;
+                this.f32195b = obj2;
+                this.f32196c = obj3;
             }
 
             /* JADX INFO: Access modifiers changed from: package-private */
             public IllegalArgumentException a() {
-                String valueOf = String.valueOf(this.f32178a);
-                String valueOf2 = String.valueOf(this.f32179b);
-                String valueOf3 = String.valueOf(this.f32178a);
-                String valueOf4 = String.valueOf(this.f32180c);
+                String valueOf = String.valueOf(this.f32194a);
+                String valueOf2 = String.valueOf(this.f32195b);
+                String valueOf3 = String.valueOf(this.f32194a);
+                String valueOf4 = String.valueOf(this.f32196c);
                 StringBuilder sb2 = new StringBuilder(valueOf.length() + 39 + valueOf2.length() + valueOf3.length() + valueOf4.length());
                 sb2.append("Multiple entries with same key: ");
                 sb2.append(valueOf);
@@ -93,28 +93,28 @@ public abstract class t implements Map, Serializable {
             Object[] objArr;
             C0422a c0422a;
             C0422a c0422a2;
-            if (z10 && (c0422a2 = this.f32177e) != null) {
+            if (z10 && (c0422a2 = this.f32193e) != null) {
                 throw c0422a2.a();
             }
-            int i10 = this.f32175c;
-            if (this.f32173a == null) {
-                objArr = this.f32174b;
+            int i10 = this.f32191c;
+            if (this.f32189a == null) {
+                objArr = this.f32190b;
             } else {
-                if (this.f32176d) {
-                    this.f32174b = Arrays.copyOf(this.f32174b, i10 * 2);
+                if (this.f32192d) {
+                    this.f32190b = Arrays.copyOf(this.f32190b, i10 * 2);
                 }
-                objArr = this.f32174b;
+                objArr = this.f32190b;
                 if (!z10) {
-                    objArr = e(objArr, this.f32175c);
-                    if (objArr.length < this.f32174b.length) {
+                    objArr = e(objArr, this.f32191c);
+                    if (objArr.length < this.f32190b.length) {
                         i10 = objArr.length >>> 1;
                     }
                 }
-                i(objArr, i10, this.f32173a);
+                i(objArr, i10, this.f32189a);
             }
-            this.f32176d = true;
+            this.f32192d = true;
             l0 l10 = l0.l(i10, objArr, this);
-            if (z10 && (c0422a = this.f32177e) != null) {
+            if (z10 && (c0422a = this.f32193e) != null) {
                 throw c0422a.a();
             }
             return l10;
@@ -122,10 +122,10 @@ public abstract class t implements Map, Serializable {
 
         private void d(int i10) {
             int i11 = i10 * 2;
-            Object[] objArr = this.f32174b;
+            Object[] objArr = this.f32190b;
             if (i11 > objArr.length) {
-                this.f32174b = Arrays.copyOf(objArr, q.b.c(objArr.length, i11));
-                this.f32176d = false;
+                this.f32190b = Arrays.copyOf(objArr, q.b.c(objArr.length, i11));
+                this.f32192d = false;
             }
         }
 
@@ -191,13 +191,13 @@ public abstract class t implements Map, Serializable {
         }
 
         public a f(Object obj, Object obj2) {
-            d(this.f32175c + 1);
+            d(this.f32191c + 1);
             h.a(obj, obj2);
-            Object[] objArr = this.f32174b;
-            int i10 = this.f32175c;
+            Object[] objArr = this.f32190b;
+            int i10 = this.f32191c;
             objArr[i10 * 2] = obj;
             objArr[(i10 * 2) + 1] = obj2;
-            this.f32175c = i10 + 1;
+            this.f32191c = i10 + 1;
             return this;
         }
 
@@ -207,7 +207,7 @@ public abstract class t implements Map, Serializable {
 
         public a h(Iterable iterable) {
             if (iterable instanceof Collection) {
-                d(this.f32175c + ((Collection) iterable).size());
+                d(this.f32191c + ((Collection) iterable).size());
             }
             Iterator it = iterable.iterator();
             while (it.hasNext()) {
@@ -217,9 +217,9 @@ public abstract class t implements Map, Serializable {
         }
 
         a(int i10) {
-            this.f32174b = new Object[i10 * 2];
-            this.f32175c = 0;
-            this.f32176d = false;
+            this.f32190b = new Object[i10 * 2];
+            this.f32191c = 0;
+            this.f32192d = false;
         }
     }
 
@@ -250,7 +250,7 @@ public abstract class t implements Map, Serializable {
     }
 
     public static t j() {
-        return l0.f32125s;
+        return l0.f32141s;
     }
 
     @Override // java.util.Map
@@ -285,10 +285,10 @@ public abstract class t implements Map, Serializable {
     @Override // java.util.Map
     /* renamed from: g */
     public u entrySet() {
-        u uVar = this.f32170d;
+        u uVar = this.f32186d;
         if (uVar == null) {
             u d10 = d();
-            this.f32170d = d10;
+            this.f32186d = d10;
             return d10;
         }
         return uVar;
@@ -316,10 +316,10 @@ public abstract class t implements Map, Serializable {
     @Override // java.util.Map
     /* renamed from: i */
     public u keySet() {
-        u uVar = this.f32171e;
+        u uVar = this.f32187e;
         if (uVar == null) {
             u e10 = e();
-            this.f32171e = e10;
+            this.f32187e = e10;
             return e10;
         }
         return uVar;
@@ -336,10 +336,10 @@ public abstract class t implements Map, Serializable {
     @Override // java.util.Map
     /* renamed from: k */
     public q values() {
-        q qVar = this.f32172i;
+        q qVar = this.f32188i;
         if (qVar == null) {
             q f10 = f();
-            this.f32172i = f10;
+            this.f32188i = f10;
             return f10;
         }
         return qVar;

@@ -5,14 +5,14 @@ import iv.a0;
 public final class o implements tq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final com.withpersona.sdk2.inquiry.internal.network.f f49128a;
+    private final com.withpersona.sdk2.inquiry.internal.network.f f49144a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final tq.h f49129b;
+    private final tq.h f49145b;
 
     public o(com.withpersona.sdk2.inquiry.internal.network.f fVar, tq.h hVar) {
-        this.f49128a = fVar;
-        this.f49129b = hVar;
+        this.f49144a = fVar;
+        this.f49145b = hVar;
     }
 
     public static o a(com.withpersona.sdk2.inquiry.internal.network.f fVar, tq.h hVar) {
@@ -26,6 +26,6 @@ public final class o implements tq.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public jq.b get() {
-        return c(this.f49128a, (a0) this.f49129b.get());
+        return c(this.f49144a, (a0) this.f49145b.get());
     }
 }

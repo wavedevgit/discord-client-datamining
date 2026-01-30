@@ -507,7 +507,7 @@ public final class ImagePipelineConfig implements r {
 
         /* JADX INFO: Access modifiers changed from: private */
         public final void j(x8.b bVar, com.facebook.imagepipeline.core.a aVar, x8.a aVar2) {
-            x8.c.f53254c = bVar;
+            x8.c.f53270c = bVar;
             aVar.z();
             if (aVar2 != null) {
                 bVar.a(aVar2);
@@ -770,7 +770,7 @@ public final class ImagePipelineConfig implements r {
             this.f11516m = builder.A();
             Supplier BOOLEAN_FALSE = builder.r();
             if (BOOLEAN_FALSE == null) {
-                BOOLEAN_FALSE = m.f42484b;
+                BOOLEAN_FALSE = m.f42500b;
                 Intrinsics.checkNotNullExpressionValue(BOOLEAN_FALSE, "BOOLEAN_FALSE");
             }
             this.f11518o = BOOLEAN_FALSE;
@@ -779,7 +779,7 @@ public final class ImagePipelineConfig implements r {
             this.f11519p = builder.D();
             Supplier BOOLEAN_TRUE = builder.Q();
             if (BOOLEAN_TRUE == null) {
-                BOOLEAN_TRUE = m.f42483a;
+                BOOLEAN_TRUE = m.f42499a;
                 Intrinsics.checkNotNullExpressionValue(BOOLEAN_TRUE, "BOOLEAN_TRUE");
             }
             this.f11520q = BOOLEAN_TRUE;

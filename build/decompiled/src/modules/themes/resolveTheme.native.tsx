@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/themes/resolveTheme.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0, arg1) { // Original name: resolveTheme, environment: var1
-        _fun27537: for (var _fun27537_ip = 0;;) switch (_fun27537_ip) {
+        _fun27538: for (var _fun27538_ip = 0;;) switch (_fun27538_ip) {
             case 0:
                 var2 = arg0;
                 var1 = arg1;
@@ -57,8 +57,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.bind(var3)();
                 var8 = undefined;
                 if (!(var8 === var0)) {
-                    _fun27537_ip = 285;
-                    continue _fun27537
+                    _fun27538_ip = 285;
+                    continue _fun27538
                 }
             case 32:
                 var3 = _closure1_slot4;
@@ -71,22 +71,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var6.isAuthenticated;
                 var3 = var3.bind(var6)();
                 if (!var3) {
-                    _fun27537_ip = 89;
-                    continue _fun27537
+                    _fun27538_ip = 89;
+                    continue _fun27538
                 }
             case 75:
                 var3 = _closure1_slot8;
                 var3 = var3.ON;
                 if (!(var5 === var3)) {
-                    _fun27537_ip = 106;
-                    continue _fun27537
+                    _fun27538_ip = 106;
+                    continue _fun27538
                 }
             case 89:
                 var3 = _closure1_slot7;
                 var3 = var3.NO_PREFERENCE;
                 if (!(var2 === var3)) {
-                    _fun27537_ip = 279;
-                    continue _fun27537
+                    _fun27538_ip = 279;
+                    continue _fun27538
                 }
             case 106:
                 var5 = _closure1_slot3;
@@ -96,15 +96,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var6 == var5;
                 var3 = undefined;
                 if (var7) {
-                    _fun27537_ip = 137;
-                    continue _fun27537
+                    _fun27538_ip = 137;
+                    continue _fun27538
                 }
             case 131:
                 var3 = var5.theme;
             case 137:
                 if (!(var6 == var3)) {
-                    _fun27537_ip = 277;
-                    continue _fun27537
+                    _fun27538_ip = 277;
+                    continue _fun27538
                 }
             case 144:
                 var5 = _closure1_slot5;
@@ -113,15 +113,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var6 == var7;
                 var5 = undefined;
                 if (var9) {
-                    _fun27537_ip = 175;
-                    continue _fun27537
+                    _fun27538_ip = 175;
+                    continue _fun27538
                 }
             case 169:
                 var5 = var7.theme;
             case 175:
                 if (!(var6 == var5)) {
-                    _fun27537_ip = 211;
-                    continue _fun27537
+                    _fun27538_ip = 211;
+                    continue _fun27538
                 }
             case 179:
                 var7 = _closure1_slot0;
@@ -140,21 +140,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6.Theme;
                 var6 = var6.UNSET;
                 if (!(var5 === var6)) {
-                    _fun27537_ip = 261;
-                    continue _fun27537
+                    _fun27538_ip = 261;
+                    continue _fun27538
                 }
             case 247:
                 var6 = _closure1_slot7;
                 var6 = var6.NO_PREFERENCE;
                 if (!(var2 === var6)) {
-                    _fun27537_ip = 271;
-                    continue _fun27537
+                    _fun27538_ip = 271;
+                    continue _fun27538
                 }
             case 261:
                 var4 = _closure1_slot6;
                 var4 = var4[var5];
-                _fun27537_ip = 275;
-                continue _fun27537;
+                _fun27538_ip = 275;
+                continue _fun27538;
             case 271:
                 var4 = var1[var2];
             case 275:

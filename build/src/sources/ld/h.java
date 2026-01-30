@@ -17,7 +17,7 @@ import ne.y;
 public final class h extends gd.e {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a f37137b = new a() { // from class: ld.g
+    public static final a f37153b = new a() { // from class: ld.g
         @Override // ld.h.a
         public final boolean a(int i10, int i11, int i12, int i13, int i14) {
             return h.c(i10, i11, i12, i13, i14);
@@ -25,7 +25,7 @@ public final class h extends gd.e {
     };
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f37138a;
+    private final a f37154a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public interface a {
@@ -37,18 +37,18 @@ public final class h extends gd.e {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f37139a;
+        private final int f37155a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final boolean f37140b;
+        private final boolean f37156b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final int f37141c;
+        private final int f37157c;
 
         public b(int i10, boolean z10, int i11) {
-            this.f37139a = i10;
-            this.f37140b = z10;
-            this.f37141c = i11;
+            this.f37155a = i10;
+            this.f37156b = z10;
+            this.f37157c = i11;
         }
     }
 
@@ -217,7 +217,7 @@ public final class h extends gd.e {
 
     private static byte[] d(byte[] bArr, int i10, int i11) {
         if (i11 <= i10) {
-            return w0.f40284f;
+            return w0.f40300f;
         }
         return Arrays.copyOfRange(bArr, i10, i11);
     }
@@ -231,14 +231,14 @@ public final class h extends gd.e {
         byte[] bArr = new byte[i12];
         h0Var.l(bArr, 0, i12);
         if (i11 == 2) {
-            str = "image/" + ii.b.e(new String(bArr, 0, 3, ii.d.f28520b));
+            str = "image/" + ii.b.e(new String(bArr, 0, 3, ii.d.f28536b));
             if (ClipboardModule.MIMETYPE_JPG.equals(str)) {
                 str = ClipboardModule.MIMETYPE_JPEG;
             }
             z10 = 2;
         } else {
             z10 = z(bArr, 0);
-            String e10 = ii.b.e(new String(bArr, 0, z10, ii.d.f28520b));
+            String e10 = ii.b.e(new String(bArr, 0, z10, ii.d.f28536b));
             if (e10.indexOf(47) == -1) {
                 str = "image/" + e10;
             } else {
@@ -260,7 +260,7 @@ public final class h extends gd.e {
         long j10;
         int f10 = h0Var.f();
         int z11 = z(h0Var.e(), f10);
-        String str = new String(h0Var.e(), f10, z11 - f10, ii.d.f28520b);
+        String str = new String(h0Var.e(), f10, z11 - f10, ii.d.f28536b);
         h0Var.U(z11 + 1);
         int q10 = h0Var.q();
         int q11 = h0Var.q();
@@ -290,7 +290,7 @@ public final class h extends gd.e {
         boolean z12;
         int f10 = h0Var.f();
         int z13 = z(h0Var.e(), f10);
-        String str = new String(h0Var.e(), f10, z13 - f10, ii.d.f28520b);
+        String str = new String(h0Var.e(), f10, z13 - f10, ii.d.f28536b);
         h0Var.U(z13 + 1);
         int H = h0Var.H();
         if ((H & 2) != 0) {
@@ -308,7 +308,7 @@ public final class h extends gd.e {
         for (int i13 = 0; i13 < H2; i13++) {
             int f11 = h0Var.f();
             int z14 = z(h0Var.e(), f11);
-            strArr[i13] = new String(h0Var.e(), f11, z14 - f11, ii.d.f28520b);
+            strArr[i13] = new String(h0Var.e(), f11, z14 - f11, ii.d.f28536b);
             h0Var.U(z14 + 1);
         }
         ArrayList arrayList = new ArrayList();
@@ -371,7 +371,7 @@ public final class h extends gd.e {
         byte[] bArr = new byte[i11];
         h0Var.l(bArr, 0, i11);
         int z10 = z(bArr, 0);
-        String str = new String(bArr, 0, z10, ii.d.f28520b);
+        String str = new String(bArr, 0, z10, ii.d.f28536b);
         int i12 = z10 + 1;
         int y10 = y(bArr, i12, H);
         String p10 = p(bArr, i12, y10, w10);
@@ -446,7 +446,7 @@ public final class h extends gd.e {
         byte[] bArr = new byte[i10];
         h0Var.l(bArr, 0, i10);
         int z10 = z(bArr, 0);
-        return new l(new String(bArr, 0, z10, ii.d.f28520b), d(bArr, z10 + 1, i10));
+        return new l(new String(bArr, 0, z10, ii.d.f28536b), d(bArr, z10 + 1, i10));
     }
 
     private static String p(byte[] bArr, int i10, int i11, Charset charset) {
@@ -500,7 +500,7 @@ public final class h extends gd.e {
     private static n t(h0 h0Var, int i10, String str) {
         byte[] bArr = new byte[i10];
         h0Var.l(bArr, 0, i10);
-        return new n(str, null, new String(bArr, 0, z(bArr, 0), ii.d.f28520b));
+        return new n(str, null, new String(bArr, 0, z(bArr, 0), ii.d.f28536b));
     }
 
     private static n u(h0 h0Var, int i10) {
@@ -514,7 +514,7 @@ public final class h extends gd.e {
         int y10 = y(bArr, 0, H);
         String str = new String(bArr, 0, y10, w(H));
         int v10 = y10 + v(H);
-        return new n("WXXX", str, p(bArr, v10, z(bArr, v10), ii.d.f28520b));
+        return new n("WXXX", str, p(bArr, v10, z(bArr, v10), ii.d.f28536b));
     }
 
     private static int v(int i10) {
@@ -528,13 +528,13 @@ public final class h extends gd.e {
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 != 3) {
-                    return ii.d.f28520b;
+                    return ii.d.f28536b;
                 }
-                return ii.d.f28521c;
+                return ii.d.f28537c;
             }
-            return ii.d.f28522d;
+            return ii.d.f28538d;
         }
-        return ii.d.f28524f;
+        return ii.d.f28540f;
     }
 
     private static String x(int i10, int i11, int i12, int i13, int i14) {
@@ -582,27 +582,27 @@ public final class h extends gd.e {
             return null;
         }
         int f10 = h0Var.f();
-        if (m10.f37139a == 2) {
+        if (m10.f37155a == 2) {
             i11 = 6;
         } else {
             i11 = 10;
         }
-        int i12 = m10.f37141c;
-        if (m10.f37140b) {
-            i12 = A(h0Var, m10.f37141c);
+        int i12 = m10.f37157c;
+        if (m10.f37156b) {
+            i12 = A(h0Var, m10.f37157c);
         }
         h0Var.T(f10 + i12);
         boolean z10 = false;
-        if (!B(h0Var, m10.f37139a, i11, false)) {
-            if (m10.f37139a == 4 && B(h0Var, 4, i11, true)) {
+        if (!B(h0Var, m10.f37155a, i11, false)) {
+            if (m10.f37155a == 4 && B(h0Var, 4, i11, true)) {
                 z10 = true;
             } else {
-                y.i("Id3Decoder", "Failed to validate ID3 tag with majorVersion=" + m10.f37139a);
+                y.i("Id3Decoder", "Failed to validate ID3 tag with majorVersion=" + m10.f37155a);
                 return null;
             }
         }
         while (h0Var.a() >= i11) {
-            i k10 = k(m10.f37139a, h0Var, z10, i11, this.f37138a);
+            i k10 = k(m10.f37155a, h0Var, z10, i11, this.f37154a);
             if (k10 != null) {
                 arrayList.add(k10);
             }
@@ -611,6 +611,6 @@ public final class h extends gd.e {
     }
 
     public h(a aVar) {
-        this.f37138a = aVar;
+        this.f37154a = aVar;
     }
 }

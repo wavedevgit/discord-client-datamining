@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.CollectiblesMobileShopScreen;
     var _closure1_slot5 = var3;
     var3 = function(arg0) { // Original name: usePriceFilter, environment: var1
-        _fun88501: for (var _fun88501_ip = 0;;) switch (_fun88501_ip) {
+        _fun88738: for (var _fun88738_ip = 0;;) switch (_fun88738_ip) {
             case 0:
                 var2 = _closure1_slot5;
                 var3 = var2.ORBS;
@@ -59,8 +59,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var4 = var2 != var6;
                 if (!var4) {
-                    _fun88501_ip = 118;
-                    continue _fun88501
+                    _fun88738_ip = 118;
+                    continue _fun88738
                 }
             case 87:
                 var3 = _closure1_slot1;
@@ -78,14 +78,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[0] = var5;
                 var1[1] = var4;
                 var0 = function(arg0) { // Environment: var0
-                    _fun88503: for (var _fun88503_ip = 0;;) switch (_fun88503_ip) {
+                    _fun88740: for (var _fun88740_ip = 0;;) switch (_fun88740_ip) {
                         case 0:
                             var3 = arg0;
                             var1 = _closure2_slot0;
                             var0 = var3;
                             if (!var1) {
-                                _fun88503_ip = 35;
-                                continue _fun88503
+                                _fun88740_ip = 35;
+                                continue _fun88740
                             }
                         case 16:
                             var2 = var3.filter;
@@ -159,17 +159,17 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5[3] = var9;
         var5[4] = var1;
         var1 = function() { // Environment: var0
-            _fun88506: for (var _fun88506_ip = 0;;) switch (_fun88506_ip) {
+            _fun88743: for (var _fun88743_ip = 0;;) switch (_fun88743_ip) {
                 case 0:
                     var2 = _closure2_slot2;
                     if (var2) {
-                        _fun88506_ip = 18;
-                        continue _fun88506
+                        _fun88743_ip = 18;
+                        continue _fun88743
                     }
                 case 12:
                     var2 = _closure2_slot4;
-                    _fun88506_ip = 25;
-                    continue _fun88506;
+                    _fun88743_ip = 25;
+                    continue _fun88743;
                 case 18:
                     var2 = function(arg0) { // Environment: var0
                         var0 = arg0;
@@ -207,18 +207,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[0] = var5;
         var1[1] = var4;
         var0 = function() { // Environment: var0
-            _fun88509: for (var _fun88509_ip = 0;;) switch (_fun88509_ip) {
+            _fun88746: for (var _fun88746_ip = 0;;) switch (_fun88746_ip) {
                 case 0:
                     var2 = _closure2_slot1;
                     var0 = null;
                     if (!(var0 == var2)) {
-                        _fun88509_ip = 19;
-                        continue _fun88509
+                        _fun88746_ip = 19;
+                        continue _fun88746
                     }
                 case 13:
                     var0 = _closure2_slot6;
-                    _fun88509_ip = 40;
-                    continue _fun88509;
+                    _fun88746_ip = 40;
+                    continue _fun88746;
                 case 19:
                     var4 = _closure2_slot6;
                     var3 = var4.slice;
@@ -234,4 +234,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useFilteredAndSortedProducts = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1613, 3242, 11424, 11425, 11426, 566, 3068, 4570, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1613, 3242, 11446, 11447, 11448, 566, 3068, 4576, 2]);

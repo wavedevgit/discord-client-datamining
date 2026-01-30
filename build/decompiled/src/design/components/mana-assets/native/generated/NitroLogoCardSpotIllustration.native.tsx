@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/mana-assets/native/generated/NitroLogoCardSpotIllustration.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: NitroLogoCardSpotIllustration, environment: var1
-        _fun52534: for (var _fun52534_ip = 0;;) switch (_fun52534_ip) {
+        _fun52579: for (var _fun52579_ip = 0;;) switch (_fun52579_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.accessible;
@@ -37,16 +37,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var0.width;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun52534_ip = 32;
-                    continue _fun52534
+                    _fun52579_ip = 32;
+                    continue _fun52579
                 }
             case 29:
                 var9 = 144;
             case 32:
                 var7 = var0.height;
                 if (!(var7 === var3)) {
-                    _fun52534_ip = 44;
-                    continue _fun52534
+                    _fun52579_ip = 44;
+                    continue _fun52579
                 }
             case 41:
                 var7 = 144;
@@ -81,4 +81,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.NitroLogoCardSpotIllustration = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4660, 6196, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 4666, 6199, 2]);

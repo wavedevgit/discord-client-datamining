@@ -9,10 +9,10 @@ public abstract /* synthetic */ class h {
         p0 a10;
         CoroutineContext k10;
         Thread currentThread = Thread.currentThread();
-        kotlin.coroutines.d dVar = (kotlin.coroutines.d) coroutineContext.l(kotlin.coroutines.d.f33354h);
+        kotlin.coroutines.d dVar = (kotlin.coroutines.d) coroutineContext.l(kotlin.coroutines.d.f33370h);
         if (dVar == null) {
-            a10 = l1.f27161a.b();
-            k10 = x.k(v0.f27191d, coroutineContext.U0(a10));
+            a10 = l1.f27177a.b();
+            k10 = x.k(v0.f27207d, coroutineContext.U0(a10));
         } else {
             p0 p0Var2 = null;
             if (dVar instanceof p0) {
@@ -26,20 +26,20 @@ public abstract /* synthetic */ class h {
                 }
                 if (p0Var2 != null) {
                     a10 = p0Var2;
-                    k10 = x.k(v0.f27191d, coroutineContext);
+                    k10 = x.k(v0.f27207d, coroutineContext);
                 }
             }
-            a10 = l1.f27161a.a();
-            k10 = x.k(v0.f27191d, coroutineContext);
+            a10 = l1.f27177a.a();
+            k10 = x.k(v0.f27207d, coroutineContext);
         }
         e eVar = new e(k10, currentThread, a10);
-        eVar.V0(c0.f27144d, eVar, function2);
+        eVar.V0(c0.f27160d, eVar, function2);
         return eVar.W0();
     }
 
     public static /* synthetic */ Object b(CoroutineContext coroutineContext, Function2 function2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            coroutineContext = kotlin.coroutines.e.f33356d;
+            coroutineContext = kotlin.coroutines.e.f33372d;
         }
         return g.e(coroutineContext, function2);
     }

@@ -11,18 +11,18 @@ public class k extends p {
     }
 
     private void q(f fVar) {
-        this.f36793h.f36744k.add(fVar);
-        fVar.f36745l.add(this.f36793h);
+        this.f36809h.f36760k.add(fVar);
+        fVar.f36761l.add(this.f36809h);
     }
 
     @Override // l1.p, l1.d
     public void a(d dVar) {
-        androidx.constraintlayout.core.widgets.a aVar = (androidx.constraintlayout.core.widgets.a) this.f36787b;
+        androidx.constraintlayout.core.widgets.a aVar = (androidx.constraintlayout.core.widgets.a) this.f36803b;
         int w12 = aVar.w1();
         int i10 = 0;
         int i11 = -1;
-        for (f fVar : this.f36793h.f36745l) {
-            int i12 = fVar.f36740g;
+        for (f fVar : this.f36809h.f36761l) {
+            int i12 = fVar.f36756g;
             if (i11 == -1 || i12 < i11) {
                 i11 = i12;
             }
@@ -31,18 +31,18 @@ public class k extends p {
             }
         }
         if (w12 != 0 && w12 != 2) {
-            this.f36793h.d(i10 + aVar.x1());
+            this.f36809h.d(i10 + aVar.x1());
         } else {
-            this.f36793h.d(i11 + aVar.x1());
+            this.f36809h.d(i11 + aVar.x1());
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // l1.p
     public void d() {
-        ConstraintWidget constraintWidget = this.f36787b;
+        ConstraintWidget constraintWidget = this.f36803b;
         if (constraintWidget instanceof androidx.constraintlayout.core.widgets.a) {
-            this.f36793h.f36735b = true;
+            this.f36809h.f36751b = true;
             androidx.constraintlayout.core.widgets.a aVar = (androidx.constraintlayout.core.widgets.a) constraintWidget;
             int w12 = aVar.w1();
             boolean v12 = aVar.v1();
@@ -51,74 +51,74 @@ public class k extends p {
                 if (w12 != 1) {
                     if (w12 != 2) {
                         if (w12 == 3) {
-                            this.f36793h.f36738e = f.a.BOTTOM;
+                            this.f36809h.f36754e = f.a.BOTTOM;
                             while (i10 < aVar.M0) {
                                 ConstraintWidget constraintWidget2 = aVar.L0[i10];
                                 if (v12 || constraintWidget2.V() != 8) {
-                                    f fVar = constraintWidget2.f2251f.f36794i;
-                                    fVar.f36744k.add(this.f36793h);
-                                    this.f36793h.f36745l.add(fVar);
+                                    f fVar = constraintWidget2.f2251f.f36810i;
+                                    fVar.f36760k.add(this.f36809h);
+                                    this.f36809h.f36761l.add(fVar);
                                 }
                                 i10++;
                             }
-                            q(this.f36787b.f2251f.f36793h);
-                            q(this.f36787b.f2251f.f36794i);
+                            q(this.f36803b.f2251f.f36809h);
+                            q(this.f36803b.f2251f.f36810i);
                             return;
                         }
                         return;
                     }
-                    this.f36793h.f36738e = f.a.TOP;
+                    this.f36809h.f36754e = f.a.TOP;
                     while (i10 < aVar.M0) {
                         ConstraintWidget constraintWidget3 = aVar.L0[i10];
                         if (v12 || constraintWidget3.V() != 8) {
-                            f fVar2 = constraintWidget3.f2251f.f36793h;
-                            fVar2.f36744k.add(this.f36793h);
-                            this.f36793h.f36745l.add(fVar2);
+                            f fVar2 = constraintWidget3.f2251f.f36809h;
+                            fVar2.f36760k.add(this.f36809h);
+                            this.f36809h.f36761l.add(fVar2);
                         }
                         i10++;
                     }
-                    q(this.f36787b.f2251f.f36793h);
-                    q(this.f36787b.f2251f.f36794i);
+                    q(this.f36803b.f2251f.f36809h);
+                    q(this.f36803b.f2251f.f36810i);
                     return;
                 }
-                this.f36793h.f36738e = f.a.RIGHT;
+                this.f36809h.f36754e = f.a.RIGHT;
                 while (i10 < aVar.M0) {
                     ConstraintWidget constraintWidget4 = aVar.L0[i10];
                     if (v12 || constraintWidget4.V() != 8) {
-                        f fVar3 = constraintWidget4.f2249e.f36794i;
-                        fVar3.f36744k.add(this.f36793h);
-                        this.f36793h.f36745l.add(fVar3);
+                        f fVar3 = constraintWidget4.f2249e.f36810i;
+                        fVar3.f36760k.add(this.f36809h);
+                        this.f36809h.f36761l.add(fVar3);
                     }
                     i10++;
                 }
-                q(this.f36787b.f2249e.f36793h);
-                q(this.f36787b.f2249e.f36794i);
+                q(this.f36803b.f2249e.f36809h);
+                q(this.f36803b.f2249e.f36810i);
                 return;
             }
-            this.f36793h.f36738e = f.a.LEFT;
+            this.f36809h.f36754e = f.a.LEFT;
             while (i10 < aVar.M0) {
                 ConstraintWidget constraintWidget5 = aVar.L0[i10];
                 if (v12 || constraintWidget5.V() != 8) {
-                    f fVar4 = constraintWidget5.f2249e.f36793h;
-                    fVar4.f36744k.add(this.f36793h);
-                    this.f36793h.f36745l.add(fVar4);
+                    f fVar4 = constraintWidget5.f2249e.f36809h;
+                    fVar4.f36760k.add(this.f36809h);
+                    this.f36809h.f36761l.add(fVar4);
                 }
                 i10++;
             }
-            q(this.f36787b.f2249e.f36793h);
-            q(this.f36787b.f2249e.f36794i);
+            q(this.f36803b.f2249e.f36809h);
+            q(this.f36803b.f2249e.f36810i);
         }
     }
 
     @Override // l1.p
     public void e() {
-        ConstraintWidget constraintWidget = this.f36787b;
+        ConstraintWidget constraintWidget = this.f36803b;
         if (constraintWidget instanceof androidx.constraintlayout.core.widgets.a) {
             int w12 = ((androidx.constraintlayout.core.widgets.a) constraintWidget).w1();
             if (w12 != 0 && w12 != 1) {
-                this.f36787b.o1(this.f36793h.f36740g);
+                this.f36803b.o1(this.f36809h.f36756g);
             } else {
-                this.f36787b.n1(this.f36793h.f36740g);
+                this.f36803b.n1(this.f36809h.f36756g);
             }
         }
     }
@@ -126,8 +126,8 @@ public class k extends p {
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // l1.p
     public void f() {
-        this.f36788c = null;
-        this.f36793h.c();
+        this.f36804c = null;
+        this.f36809h.c();
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

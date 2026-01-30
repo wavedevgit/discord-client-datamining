@@ -1,206 +1,222 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun37745: for (var _fun37745_ip = 0;;) switch (_fun37745_ip) {
-        case 0:
-            var4 = require;
-            var3 = exports;
-            var5 = dependencyMap;
-            var1 = this;
-            var2 = var1;
-            if (!var1) {
-                _fun37745_ip = 26;
-                continue _fun37745
-            }
-        case 20:
-            var2 = var1.__createBinding;
-        case 26:
-            if (var2) {
-                _fun37745_ip = 60;
-                continue _fun37745
-            }
-        case 29:
-            var6 = global;
-            var6 = var6.Object;
-            var6 = var6.create;
-            if (var6) {
-                _fun37745_ip = 52;
-                continue _fun37745
-            }
-        case 45:
-            var6 = function(arg0, arg1, arg2, arg3) { // Environment: var0
-                _fun37748: for (var _fun37748_ip = 0;;) switch (_fun37748_ip) {
-                    case 0:
-                        var2 = arg2;
-                        var3 = arg3;
-                        var0 = undefined;
-                        if (!(var0 === var3)) {
-                            _fun37748_ip = 15;
-                            continue _fun37748
-                        }
-                    case 12:
-                        var3 = var2;
-                    case 15:
-                        var1 = arg1;
-                        var2 = var1[var2];
-                        var1 = arg0;
-                        var1[var3] = var2;
-                        return var0;
-                }
-            };
-            _fun37745_ip = 57;
-            continue _fun37745;
-        case 52:
-            var6 = function(arg0, arg1, arg2, arg3) { // Environment: var0
-                _fun37746: for (var _fun37746_ip = 0;;) switch (_fun37746_ip) {
-                    case 0:
-                        var7 = arg1;
-                        var6 = arg2;
-                        var5 = arg3;
-                        var _closure2_slot0 = var7;
-                        var _closure2_slot1 = var6;
-                        var0 = undefined;
-                        if (!(var0 === var5)) {
-                            _fun37746_ip = 28;
-                            continue _fun37746
-                        }
-                    case 25:
-                        var5 = var6;
-                    case 28:
-                        var1 = global;
-                        var4 = var1.Object;
-                        var2 = var4.getOwnPropertyDescriptor;
-                        var4 = var2.bind(var4)(var7, var6);
-                        var2 = var4;
-                        if (!var4) {
-                            _fun37746_ip = 94;
-                            continue _fun37746
-                        }
-                    case 54:
-                        var6 = 'get';
-                        var6 = var6 in var4;
-                        if (var6) {
-                            _fun37746_ip = 82;
-                            continue _fun37746
-                        }
-                    case 65:
-                        var6 = var4.writable;
-                        if (var6) {
-                            _fun37746_ip = 80;
-                            continue _fun37746
-                        }
-                    case 74:
-                        var6 = var4.configurable;
-                    case 80:
-                        _fun37746_ip = 91;
-                        continue _fun37746;
-                    case 82:
-                        var7 = var7.__esModule;
-                        var6 = !var7;
-                    case 91:
-                        var2 = !var6;
-                    case 94:
-                        if (var2) {
-                            _fun37746_ip = 117;
-                            continue _fun37746
-                        }
-                    case 97:
-                        var2 = {};
-                        var6 = true;
-                        var2.enumerable = var6;
-                        var3 = function() { // Original name: get, environment: var3
-                            var1 = _closure2_slot0;
-                            var0 = _closure2_slot1;
-                            var0 = var1[var0];
-                            return var0;
-                        };
-                        var2.get = var3;
-                        var4 = var2;
-                    case 117:
-                        var3 = var1.Object;
-                        var2 = var3.defineProperty;
-                        var1 = arg0;
-                        var1 = var2.bind(var3)(var1, var5, var4);
-                        return var0;
-                }
-            };
-        case 57:
-            var2 = var6;
-        case 60:
-            var _closure1_slot0 = var2;
-            var2 = var1;
-            if (!var2) {
-                _fun37745_ip = 76;
-                continue _fun37745
-            }
-        case 70:
-            var2 = var1.__exportStar;
-        case 76:
-            if (var2) {
-                _fun37745_ip = 84;
-                continue _fun37745
-            }
-        case 79:
-            var2 = function(arg0, arg1) { // Environment: var0
-                _fun37749: for (var _fun37749_ip = 0;;) switch (_fun37749_ip) {
-                    case 0:
-                        var10 = arg0;
-                        var9 = arg1;
-                        var7 = var10;
-                        var0 = undefined;
-                        var2 = global;
-                        var1 = 'default';
-                        for (var4 in var7)
-                            case 28: {
-                                case 37: var12 = var4;
-                                var11 = var1 === var12;
-                                if (var11) {
-                                    _fun37749_ip = 75;
-                                    continue _fun37749
-                                }
-                                case 47: var13 = var2.Object;
-                                var13 = var13.prototype;
-                                var14 = var13.hasOwnProperty;
-                                var13 = var14.call;
-                                var11 = var13.bind(var14)(var9, var12);
-                                case 75: if (var11) {
-                                    _fun37749_ip = 28;
-                                    continue _fun37749
-                                }
-                                case 78: var11 = _closure1_slot0;
-                                var11 = var11.bind(var0)(var9, var10, var12);
-                                _fun37749_ip = 28;
-                                continue _fun37749;
-                            }
-                    case 91:
-                        return var0;
-                }
-            };
-        case 84:
-            var0 = global;
-            var7 = var0.Object;
-            var6 = var7.defineProperty;
-            var1 = {};
-            var0 = true;
-            var1.value = var0;
-            var0 = '__esModule';
-            var0 = var6.bind(var7)(var3, var0, var1);
-            var0 = 0;
-            var1 = var5[var0];
-            var0 = undefined;
-            var1 = var4.bind(var0)(var1);
-            var1 = var2.bind(var0)(var1, var3);
-            var1 = 1;
-            var1 = var5[var1];
-            var1 = var4.bind(var0)(var1);
-            var1 = var2.bind(var0)(var1, var3);
-            var1 = 2;
-            var1 = var5[var1];
-            var1 = var4.bind(var0)(var1);
-            var1 = var2.bind(var0)(var1, var3);
-            var1 = 3;
-            var1 = var5[var1];
-            var1 = var4.bind(var0)(var1);
-            var1 = var2.bind(var0)(var1, var3);
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4113, 4114, 4115, 4116]);
+    var5 = require;
+    var1 = exports;
+    var6 = dependencyMap;
+    var0 = 0;
+    var2 = var6[var0];
+    var0 = undefined;
+    var3 = var5.bind(var0)(var2);
+    var2 = 1;
+    var2 = var6[var2];
+    var2 = var5.bind(var0)(var2);
+    var _closure1_slot0 = var2;
+    var2 = global;
+    var7 = var2.Object;
+    var6 = var7.defineProperty;
+    var5 = {};
+    var2 = true;
+    var5.value = var2;
+    var2 = '__esModule';
+    var2 = var6.bind(var7)(var1, var2, var5);
+    var1.VideoTypes = var0;
+    var2 = function() { // Original name: VideoTypes, environment: var4
+        var3 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var0 = undefined;
+        var1 = this;
+        var1 = var3.bind(var0)(var1, var2);
+        return var0;
+    };
+    var _closure1_slot1 = var2;
+    var2 = var3.bind(var0)(var2);
+    var1.VideoTypes = var2;
+    var1 = {
+        'extension': 'avi',
+        'mimeType': 'video/x-msvideo',
+        'description': 'Audio Video Interleave video format'
+    };
+    var4 = {};
+    var3 = [82, 73, 70, 70, 65, 86, 73, 32, 76, 73, 83, 84];
+    var4.sequence = var3;
+    var3 = [4, 5, 6, 7];
+    var4.skippedBytes = var3;
+    var3 = new Array(1);
+    var3[0] = var4;
+    var1.signatures = var3;
+    var2.AVI = var1;
+    var1 = {
+        'extension': 'flv',
+        'mimeType': 'video/x-flv',
+        'description': 'Flash Video file'
+    };
+    var4 = {};
+    var3 = [70, 76, 86, 1];
+    var4.sequence = var3;
+    var3 = new Array(2);
+    var3[0] = var4;
+    var4 = {
+        'sequence': null,
+        'description': 'ISO Media, MPEG v4 system, or iTunes AVC-LC file',
+        'offset': 4
+    };
+    var5 = [102, 116, 121, 112, 77, 52, 86, 32];
+    var4.sequence = var5;
+    var6 = 4;
+    var5 = ['mp4', 'm4v'];
+    var4.compatibleExtensions = var5;
+    var3[1] = var4;
+    var1.signatures = var3;
+    var2.FLV = var1;
+    var1 = {
+        'extension': 'm4v',
+        'mimeType': 'video/x-m4v',
+        'description': "Apple's video container format, very similar to MP4"
+    };
+    var4 = {
+        'sequence': null,
+        'description': 'MPEG-4 video | QuickTime file',
+        'offset': 4
+    };
+    var3 = [102, 116, 121, 112, 109, 112, 52, 50];
+    var4.sequence = var3;
+    var3 = ['mp4'];
+    var4.compatibleExtensions = var3;
+    var3 = new Array(2);
+    var3[0] = var4;
+    var4 = {
+        'sequence': null,
+        'description': 'ISO Media, MPEG v4 system, or iTunes AVC-LC file',
+        'offset': 4
+    };
+    var5 = [102, 116, 121, 112, 77, 52, 86, 32];
+    var4.sequence = var5;
+    var5 = ['mp4', 'flv'];
+    var4.compatibleExtensions = var5;
+    var3[1] = var4;
+    var1.signatures = var3;
+    var2.M4V = var1;
+    var1 = {
+        'extension': 'mkv',
+        'mimeType': 'video/x-matroska',
+        'description': 'MKV (Matroska Video) is a flexible, open-source media container format that supports multiple audio, video, and subtitle streams in a single file'
+    };
+    var5 = {};
+    var3 = [26, 69, 223, 163];
+    var5.sequence = var3;
+    var3 = 'EBML identifier';
+    var5.description = var3;
+    var4 = ['webm', 'mka', 'mks', 'mk3d'];
+    var5.compatibleExtensions = var4;
+    var4 = new Array(1);
+    var4[0] = var5;
+    var1.signatures = var4;
+    var2.MKV = var1;
+    var1 = {
+        'extension': 'mov',
+        'mimeType': 'video/quicktime',
+        'description': 'QuickTime movie file'
+    };
+    var5 = {};
+    var4 = [102, 116, 121, 112, 113, 116, 32, 32];
+    var5.sequence = var4;
+    var5.offset = var6;
+    var4 = new Array(2);
+    var4[0] = var5;
+    var5 = {};
+    var7 = [109, 111, 111, 118];
+    var5.sequence = var7;
+    var5.offset = var6;
+    var4[1] = var5;
+    var1.signatures = var4;
+    var2.MOV = var1;
+    var1 = {
+        'extension': 'mp4',
+        'mimeType': 'video/mp4',
+        'description': 'A multimedia container format widely used for storing audio, video, and other data, and is known for its high compression efficiency and compatibility with many devices'
+    };
+    var5 = {
+        'sequence': null,
+        'description': 'MPEG-4 video file',
+        'offset': 4
+    };
+    var4 = [102, 116, 121, 112, 77, 83, 78, 86];
+    var5.sequence = var4;
+    var4 = new Array(3);
+    var4[0] = var5;
+    var5 = {
+        'sequence': null,
+        'description': 'ISO Base Media file (MPEG-4) v1',
+        'offset': 4
+    };
+    var6 = [102, 116, 121, 112, 105, 115, 111, 109];
+    var5.sequence = var6;
+    var4[1] = var5;
+    var5 = {
+        'sequence': null,
+        'description': 'ISO Media, MPEG v4 system, or iTunes AVC-LC file',
+        'offset': 4
+    };
+    var6 = [102, 116, 121, 112, 77, 52, 86, 32];
+    var5.sequence = var6;
+    var6 = ['m4v', 'flv'];
+    var5.compatibleExtensions = var6;
+    var4[2] = var5;
+    var1.signatures = var4;
+    var2.MP4 = var1;
+    var1 = {
+        'extension': 'ogg',
+        'mimeType': 'video/ogg',
+        'description': 'Ogg Vorbis Codec compressed Multimedia file'
+    };
+    var5 = {};
+    var4 = [79, 103, 103, 83, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0];
+    var5.sequence = var4;
+    var4 = ['oga', 'ogv', 'ogx'];
+    var5.compatibleExtensions = var4;
+    var4 = new Array(1);
+    var4[0] = var5;
+    var1.signatures = var4;
+    var2.OGG = var1;
+    var1 = {
+        'extension': 'swf',
+        'mimeType': 'application/x-shockwave-flash',
+        'description': 'SWF (Shockwave Flash) is a file format for multimedia, vector graphics, and ActionScript, used for creating and delivering animations, games, and other interactive web-based content'
+    };
+    var5 = {};
+    var4 = [67, 87, 83];
+    var5.sequence = var4;
+    var4 = 'Macromedia Shockwave Flash player file (zlib compressed, SWF 6 and later)';
+    var5.description = var4;
+    var4 = new Array(3);
+    var4[0] = var5;
+    var5 = {};
+    var6 = [70, 87, 83];
+    var5.sequence = var6;
+    var6 = 'Macromedia Shockwave Flash player file (uncompressed)';
+    var5.description = var6;
+    var4[1] = var5;
+    var5 = {};
+    var7 = [90, 87, 83];
+    var5.sequence = var7;
+    var5.description = var6;
+    var4[2] = var5;
+    var1.signatures = var4;
+    var2.SWF = var1;
+    var1 = {
+        'extension': 'webm',
+        'mimeType': 'video/webm',
+        'description': 'WebM is a royalty-free, open-source media file format optimized for web delivery, using efficient VP8 video and Vorbis audio codecs'
+    };
+    var4 = {};
+    var5 = [26, 69, 223, 163];
+    var4.sequence = var5;
+    var4.description = var3;
+    var3 = ['mkv'];
+    var4.compatibleExtensions = var3;
+    var3 = new Array(1);
+    var3[0] = var4;
+    var1.signatures = var3;
+    var2.WEBM = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7, 6]);

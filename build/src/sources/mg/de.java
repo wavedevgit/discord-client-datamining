@@ -14,14 +14,14 @@ public enum de implements n2 {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f38155d;
+    private final int f38171d;
 
     de(int i10) {
-        this.f38155d = i10;
+        this.f38171d = i10;
     }
 
     @Override // mg.n2
     public final int zza() {
-        return this.f38155d;
+        return this.f38171d;
     }
 }

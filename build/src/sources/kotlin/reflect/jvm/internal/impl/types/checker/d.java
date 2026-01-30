@@ -7,20 +7,20 @@ import kotlin.jvm.functions.Function0;
 public class d implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final NewCapturedTypeConstructor f35961d;
+    private final NewCapturedTypeConstructor f35977d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final KotlinTypeRefiner f35962e;
+    private final KotlinTypeRefiner f35978e;
 
     public d(NewCapturedTypeConstructor newCapturedTypeConstructor, KotlinTypeRefiner kotlinTypeRefiner) {
-        this.f35961d = newCapturedTypeConstructor;
-        this.f35962e = kotlinTypeRefiner;
+        this.f35977d = newCapturedTypeConstructor;
+        this.f35978e = kotlinTypeRefiner;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         List i10;
-        i10 = NewCapturedTypeConstructor.i(this.f35961d, this.f35962e);
+        i10 = NewCapturedTypeConstructor.i(this.f35977d, this.f35978e);
         return i10;
     }
 }

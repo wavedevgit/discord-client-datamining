@@ -28,13 +28,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = 'voice';
         var0.currentType = var2;
         var2 = function() { // Original name: startTimer, environment: var1
-            _fun101077: for (var _fun101077_ip = 0;;) switch (_fun101077_ip) {
+            _fun101331: for (var _fun101331_ip = 0;;) switch (_fun101331_ip) {
                 case 0:
                     var1 = _closure1_slot0;
                     var0 = null;
                     if (!(var0 != var1)) {
-                        _fun101077_ip = 32;
-                        continue _fun101077
+                        _fun101331_ip = 32;
+                        continue _fun101331
                     }
                 case 13:
                     var0 = global;
@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var0.setInterval;
                     var0 = undefined;
                     var3 = function() { // Environment: var1
-                        _fun101078: for (var _fun101078_ip = 0;;) switch (_fun101078_ip) {
+                        _fun101332: for (var _fun101332_ip = 0;;) switch (_fun101332_ip) {
                             case 0:
                                 var2 = _closure2_slot1;
                                 var0 = undefined;
@@ -57,8 +57,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var1 = {};
                                 var3 = 'voice';
                                 if (!(var3 === var4)) {
-                                    _fun101078_ip = 37;
-                                    continue _fun101078
+                                    _fun101332_ip = 37;
+                                    continue _fun101332
                                 }
                             case 33:
                                 var3 = 'activity';
@@ -76,13 +76,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var0.startTimer = var2;
         var1 = function() { // Original name: stopTimer, environment: var1
-            _fun101079: for (var _fun101079_ip = 0;;) switch (_fun101079_ip) {
+            _fun101333: for (var _fun101333_ip = 0;;) switch (_fun101333_ip) {
                 case 0:
                     var2 = _closure1_slot0;
                     var0 = null;
                     if (!(var0 != var2)) {
-                        _fun101079_ip = 36;
-                        continue _fun101079
+                        _fun101333_ip = 36;
+                        continue _fun101333
                     }
                 case 13:
                     var2 = global;

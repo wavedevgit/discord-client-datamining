@@ -3,53 +3,53 @@ package mg;
 public final class e3 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final xe f38161a;
+    private final xe f38177a;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Boolean f38163c;
+    private final Boolean f38179c;
 
     /* renamed from: e  reason: collision with root package name */
-    private final wj f38165e;
+    private final wj f38181e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final i1 f38166f;
+    private final i1 f38182f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final i1 f38167g;
+    private final i1 f38183g;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Boolean f38162b = null;
+    private final Boolean f38178b = null;
 
     /* renamed from: d  reason: collision with root package name */
-    private final fe f38164d = null;
+    private final fe f38180d = null;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ e3(c3 c3Var, d3 d3Var) {
-        this.f38161a = c3.i(c3Var);
-        this.f38163c = c3.k(c3Var);
-        this.f38165e = c3.j(c3Var);
-        this.f38166f = c3.a(c3Var);
-        this.f38167g = c3.b(c3Var);
+        this.f38177a = c3.i(c3Var);
+        this.f38179c = c3.k(c3Var);
+        this.f38181e = c3.j(c3Var);
+        this.f38182f = c3.a(c3Var);
+        this.f38183g = c3.b(c3Var);
     }
 
     public final i1 a() {
-        return this.f38166f;
+        return this.f38182f;
     }
 
     public final i1 b() {
-        return this.f38167g;
+        return this.f38183g;
     }
 
     public final xe c() {
-        return this.f38161a;
+        return this.f38177a;
     }
 
     public final wj d() {
-        return this.f38165e;
+        return this.f38181e;
     }
 
     public final Boolean e() {
-        return this.f38163c;
+        return this.f38179c;
     }
 
     public final boolean equals(Object obj) {
@@ -60,13 +60,13 @@ public final class e3 {
             return false;
         }
         e3 e3Var = (e3) obj;
-        if (gf.o.a(this.f38161a, e3Var.f38161a) && gf.o.a(null, null) && gf.o.a(this.f38163c, e3Var.f38163c) && gf.o.a(null, null) && gf.o.a(this.f38165e, e3Var.f38165e) && gf.o.a(this.f38166f, e3Var.f38166f) && gf.o.a(this.f38167g, e3Var.f38167g)) {
+        if (gf.o.a(this.f38177a, e3Var.f38177a) && gf.o.a(null, null) && gf.o.a(this.f38179c, e3Var.f38179c) && gf.o.a(null, null) && gf.o.a(this.f38181e, e3Var.f38181e) && gf.o.a(this.f38182f, e3Var.f38182f) && gf.o.a(this.f38183g, e3Var.f38183g)) {
             return true;
         }
         return false;
     }
 
     public final int hashCode() {
-        return gf.o.b(this.f38161a, null, this.f38163c, null, this.f38165e, this.f38166f, this.f38167g);
+        return gf.o.b(this.f38177a, null, this.f38179c, null, this.f38181e, this.f38182f, this.f38183g);
     }
 }

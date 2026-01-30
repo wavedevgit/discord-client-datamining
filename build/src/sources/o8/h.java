@@ -8,16 +8,16 @@ public abstract class h {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f42476a;
+        private final String f42492a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final C0531a f42477b;
+        private final C0531a f42493b;
 
         /* renamed from: c  reason: collision with root package name */
-        private C0531a f42478c;
+        private C0531a f42494c;
 
         /* renamed from: d  reason: collision with root package name */
-        private boolean f42479d;
+        private boolean f42495d;
 
         /* JADX INFO: Access modifiers changed from: private */
         /* renamed from: o8.h$a$a  reason: collision with other inner class name */
@@ -25,13 +25,13 @@ public abstract class h {
         public static final class C0531a {
 
             /* renamed from: a  reason: collision with root package name */
-            String f42480a;
+            String f42496a;
 
             /* renamed from: b  reason: collision with root package name */
-            Object f42481b;
+            Object f42497b;
 
             /* renamed from: c  reason: collision with root package name */
-            C0531a f42482c;
+            C0531a f42498c;
 
             private C0531a() {
             }
@@ -39,15 +39,15 @@ public abstract class h {
 
         private C0531a d() {
             C0531a c0531a = new C0531a();
-            this.f42478c.f42482c = c0531a;
-            this.f42478c = c0531a;
+            this.f42494c.f42498c = c0531a;
+            this.f42494c = c0531a;
             return c0531a;
         }
 
         private a e(String str, Object obj) {
             C0531a d10 = d();
-            d10.f42481b = obj;
-            d10.f42480a = (String) j.g(str);
+            d10.f42497b = obj;
+            d10.f42496a = (String) j.g(str);
             return this;
         }
 
@@ -64,16 +64,16 @@ public abstract class h {
         }
 
         public String toString() {
-            boolean z10 = this.f42479d;
+            boolean z10 = this.f42495d;
             StringBuilder sb2 = new StringBuilder(32);
-            sb2.append(this.f42476a);
+            sb2.append(this.f42492a);
             sb2.append('{');
             String str = "";
-            for (C0531a c0531a = this.f42477b.f42482c; c0531a != null; c0531a = c0531a.f42482c) {
-                Object obj = c0531a.f42481b;
+            for (C0531a c0531a = this.f42493b.f42498c; c0531a != null; c0531a = c0531a.f42498c) {
+                Object obj = c0531a.f42497b;
                 if (!z10 || obj != null) {
                     sb2.append(str);
-                    String str2 = c0531a.f42480a;
+                    String str2 = c0531a.f42496a;
                     if (str2 != null) {
                         sb2.append(str2);
                         sb2.append('=');
@@ -93,10 +93,10 @@ public abstract class h {
 
         private a(String str) {
             C0531a c0531a = new C0531a();
-            this.f42477b = c0531a;
-            this.f42478c = c0531a;
-            this.f42479d = false;
-            this.f42476a = (String) j.g(str);
+            this.f42493b = c0531a;
+            this.f42494c = c0531a;
+            this.f42495d = false;
+            this.f42492a = (String) j.g(str);
         }
     }
 

@@ -37,19 +37,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isValidGifProvider = var3;
     var1 = function(arg0) { // Original name: getProviderForRequest, environment: var1
-        _fun73034: for (var _fun73034_ip = 0;;) switch (_fun73034_ip) {
+        _fun73061: for (var _fun73061_ip = 0;;) switch (_fun73061_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.enabled;
                 if (!var0) {
-                    _fun73034_ip = 20;
-                    continue _fun73034
+                    _fun73061_ip = 20;
+                    continue _fun73061
                 }
             case 11:
                 var0 = var1.sendProviderToAPI;
                 if (var0) {
-                    _fun73034_ip = 24;
-                    continue _fun73034
+                    _fun73061_ip = 24;
+                    continue _fun73061
                 }
             case 20:
                 var0 = undefined;
@@ -58,13 +58,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.userProvider;
                 var0 = null;
                 if (!(var0 == var2)) {
-                    _fun73034_ip = 44;
-                    continue _fun73034
+                    _fun73061_ip = 44;
+                    continue _fun73061
                 }
             case 36:
                 var0 = var1.fallbackProvider;
-                _fun73034_ip = 50;
-                continue _fun73034;
+                _fun73061_ip = 50;
+                continue _fun73061;
             case 44:
                 var0 = var1.userProvider;
             case 50:

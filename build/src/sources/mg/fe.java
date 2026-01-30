@@ -3,35 +3,35 @@ package mg;
 public final class fe {
 
     /* renamed from: a  reason: collision with root package name */
-    private final de f38190a;
+    private final de f38206a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Integer f38191b;
+    private final Integer f38207b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Integer f38192c;
+    private final Integer f38208c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Boolean f38193d;
+    private final Boolean f38209d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ fe(ce ceVar, ee eeVar) {
         de deVar;
         Integer num;
-        deVar = ceVar.f38133a;
-        this.f38190a = deVar;
-        num = ceVar.f38134b;
-        this.f38191b = num;
-        this.f38192c = null;
-        this.f38193d = null;
+        deVar = ceVar.f38149a;
+        this.f38206a = deVar;
+        num = ceVar.f38150b;
+        this.f38207b = num;
+        this.f38208c = null;
+        this.f38209d = null;
     }
 
     public final de a() {
-        return this.f38190a;
+        return this.f38206a;
     }
 
     public final Integer b() {
-        return this.f38191b;
+        return this.f38207b;
     }
 
     public final boolean equals(Object obj) {
@@ -42,13 +42,13 @@ public final class fe {
             return false;
         }
         fe feVar = (fe) obj;
-        if (gf.o.a(this.f38190a, feVar.f38190a) && gf.o.a(this.f38191b, feVar.f38191b) && gf.o.a(null, null) && gf.o.a(null, null)) {
+        if (gf.o.a(this.f38206a, feVar.f38206a) && gf.o.a(this.f38207b, feVar.f38207b) && gf.o.a(null, null) && gf.o.a(null, null)) {
             return true;
         }
         return false;
     }
 
     public final int hashCode() {
-        return gf.o.b(this.f38190a, this.f38191b, null, null);
+        return gf.o.b(this.f38206a, this.f38207b, null, null);
     }
 }

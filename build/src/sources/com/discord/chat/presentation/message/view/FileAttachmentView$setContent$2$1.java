@@ -109,14 +109,14 @@ public final class FileAttachmentView$setContent$2$1 extends kotlin.coroutines.j
                                 i11 = 0;
                             }
                             fileAttachmentDownload.setVisibility(i11);
-                            return Unit.f33282a;
+                            return Unit.f33298a;
                         }
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
 
                     @Override // kotlin.jvm.functions.Function2
                     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-                        return ((C01431) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+                        return ((C01431) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
                     }
                 }
 
@@ -127,7 +127,7 @@ public final class FileAttachmentView$setContent$2$1 extends kotlin.coroutines.j
 
                 public final Object emit(DownloadState downloadState, Continuation<? super Unit> continuation) {
                     Object g10 = gs.g.g(gs.m0.c(), new C01431(downloadState, FileAttachmentView.this, null), continuation);
-                    return g10 == or.b.f() ? g10 : Unit.f33282a;
+                    return g10 == or.b.f() ? g10 : Unit.f33298a;
                 }
             };
             this.label = 1;
@@ -135,11 +135,11 @@ public final class FileAttachmentView$setContent$2$1 extends kotlin.coroutines.j
                 return f10;
             }
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileAttachmentView$setContent$2$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((FileAttachmentView$setContent$2$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

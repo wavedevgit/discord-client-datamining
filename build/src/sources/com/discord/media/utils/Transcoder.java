@@ -52,7 +52,7 @@ public final class Transcoder {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit convertCompress$lambda$0(float f10) {
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     public final void cancel(@NotNull String requestId) {
@@ -71,7 +71,7 @@ public final class Transcoder {
             @Override // kotlin.jvm.functions.Function0
             public /* bridge */ /* synthetic */ Object invoke() {
                 m941invoke();
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
 
             /* renamed from: invoke  reason: collision with other method in class */
@@ -127,7 +127,7 @@ public final class Transcoder {
                 Transcoder.cancelCallbacks.remove(str);
                 if (eVar.a()) {
                     CancellableContinuation cancellableContinuation = eVar;
-                    Result.a aVar = Result.f33279e;
+                    Result.a aVar = Result.f33295e;
                     cancellableContinuation.resumeWith(Result.b(kotlin.c.a(new CancellationException("Video transcoding was cancelled"))));
                 }
             }
@@ -139,7 +139,7 @@ public final class Transcoder {
                 function1.invoke(Float.valueOf(1.0f));
                 Transcoder.cancelCallbacks.remove(str);
                 CancellableContinuation cancellableContinuation = eVar;
-                Result.a aVar = Result.f33279e;
+                Result.a aVar = Result.f33295e;
                 cancellableContinuation.resumeWith(Result.b(uri));
             }
 
@@ -149,7 +149,7 @@ public final class Transcoder {
                 mediaTransformer.e();
                 Transcoder.cancelCallbacks.remove(str);
                 CancellableContinuation cancellableContinuation = eVar;
-                Result.a aVar = Result.f33279e;
+                Result.a aVar = Result.f33295e;
                 if (th2 == null) {
                     th2 = new Throwable("Unknown transcoding error");
                 }
@@ -172,7 +172,7 @@ public final class Transcoder {
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 invoke((Throwable) obj);
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
 
             public final void invoke(Throwable th2) {

@@ -1,87 +1,155 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var5 = require;
-    var2 = exports;
-    var7 = dependencyMap;
-    var0 = global;
-    var8 = var0.Object;
-    var6 = var8.defineProperty;
-    var4 = {};
-    var13 = true;
-    var4.value = var13;
-    var1 = '__esModule';
-    var1 = var6.bind(var8)(var2, var1, var4);
-    var1 = {};
-    var6 = 'RNSVGGroup';
-    var1.uiViewClassName = var6;
-    var4 = {};
-    var8 = {};
-    var9 = 'onSvgLayout';
-    var8.registrationName = var9;
-    var4.topSvgLayout = var8;
-    var1.directEventTypes = var4;
-    var10 = var0.Object;
-    var9 = var10.assign;
-    var8 = {
-        'name': true,
-        'opacity': true,
-        'matrix': true,
-        'mask': true,
-        'markerStart': true,
-        'markerMid': true,
-        'markerEnd': true,
-        'clipPath': true,
-        'clipRule': true,
-        'responsible': true,
-        'display': true,
-        'pointerEvents': true,
-        'color': null,
-        'fill': true,
-        'fillOpacity': true,
-        'fillRule': true,
-        'stroke': true,
-        'strokeOpacity': true,
-        'strokeWidth': true,
-        'strokeLinecap': true,
-        'strokeLinejoin': true,
-        'strokeDasharray': true,
-        'strokeDashoffset': true,
-        'strokeMiterlimit': true,
-        'vectorEffect': true,
-        'propList': true,
-        'filter': true,
-        'fontSize': true,
-        'fontWeight': true,
-        'font': true
+    var1 = exports;
+    var2 = function(arg0) { // Original name: parsePercentageRGBColor, environment: var0
+        _fun48348: for (var _fun48348_ip = 0;;) switch (_fun48348_ip) {
+            case 0:
+                var1 = arg0;
+                var3 = _closure1_slot0;
+                var2 = var3.exec;
+                var4 = var2.bind(var3)(var1);
+                if (var4) {
+                    _fun48348_ip = 71;
+                    continue _fun48348
+                }
+            case 24:
+                var2 = global;
+                var5 = var2.console;
+                var3 = var5.warn;
+                var2 = var2.HermesInternal;
+                var7 = var2.concat;
+                var6 = '"';
+                var2 = '" is not a valid percentage rgb/rgba color';
+                var2 = var7.bind(var6)(var1, var2);
+                var2 = var3.bind(var5)(var2);
+                return var1;
+            case 71:
+                var1 = 1;
+                var5 = var4[var1];
+                var1 = 3;
+                var3 = var4[var1];
+                var1 = 5;
+                var1 = var4[var1];
+                var2 = 7;
+                var7 = var4[var2];
+                var2 = _closure1_slot1;
+                var4 = undefined;
+                var8 = var2.bind(var4)(var5);
+                var2 = _closure1_slot1;
+                var11 = var2.bind(var4)(var3);
+                var0 = _closure1_slot1;
+                var9 = var0.bind(var4)(var1);
+                var1 = global;
+                var0 = var1.HermesInternal;
+                var2 = var0.concat;
+                var14 = '';
+                var6 = ', ';
+                var13 = var8;
+                var12 = var6;
+                var10 = var6;
+                var5 = var14[var2](var13, var12, var11, var10, var9, var8);
+                if (var7) {
+                    _fun48348_ip = 196;
+                    continue _fun48348
+                }
+            case 167:
+                var0 = var1.HermesInternal;
+                var3 = var0.concat;
+                var2 = 'rgb(';
+                var0 = ')';
+                var0 = var3.bind(var2)(var5, var0);
+                _fun48348_ip = 271;
+                continue _fun48348;
+            case 196:
+                var3 = var7.endsWith;
+                var2 = '%';
+                var2 = var3.bind(var7)(var2);
+                var3 = var1.parseFloat;
+                var3 = var3.bind(var4)(var7);
+                if (var2) {
+                    _fun48348_ip = 230;
+                    continue _fun48348
+                }
+            case 225:
+                var4 = var3;
+                _fun48348_ip = 237;
+                continue _fun48348;
+            case 230:
+                var2 = 100;
+                var4 = var3 / var2;
+            case 237:
+                var1 = var1.HermesInternal;
+                var3 = var1.concat;
+                var14 = 'rgba(';
+                var10 = ')';
+                var13 = var5;
+                var12 = var6;
+                var11 = var4;
+                var0 = var14[var3](var13, var12, var11, var10, var9);
+            case 271:
+                return var0;
+        }
     };
-    var4 = {};
-    var0 = 0;
-    var11 = var7[var0];
-    var0 = undefined;
-    var11 = var5.bind(var0)(var11);
-    var11 = var11.default;
-    var4.process = var11;
-    var8.color = var4;
-    var4 = 1;
-    var4 = var7[var4];
-    var12 = var5.bind(var0)(var4);
-    var11 = var12.ConditionallyIgnoredEventHandlers;
-    var4 = {};
-    var4.onSvgLayout = var13;
-    var4 = var11.bind(var12)(var4);
-    var4 = var9.bind(var10)(var8, var4);
-    var1.validAttributes = var4;
-    var _closure1_slot0 = var1;
-    var4 = 2;
-    var4 = var7[var4];
-    var5 = var5.bind(var0)(var4);
-    var4 = var5.get;
-    var3 = function() { // Environment: var3
-        var0 = _closure1_slot0;
+    var _closure1_slot2 = var2;
+    var2 = global;
+    var5 = var2.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var2 = true;
+    var3.value = var2;
+    var2 = '__esModule';
+    var2 = var4.bind(var5)(var1, var2, var3);
+    var2 = /^rgba?\(\s*(100%|\d{1,2}(\.\d+)?%)\s*,\s*(100%|\d{1,2}(\.\d+)?%)\s*,\s*(100%|\d{1,2}(\.\d+)?%)\s*(?:,\s*(1|0(\.\d+)?|100%|\d{1,2}(\.\d+)?%)\s*)?\)$/;
+    var _closure1_slot0 = var2;
+    var3 = function(arg0) { // Original name: percentTo255, environment: var0
+        var0 = global;
+        var2 = var0.Math;
+        var1 = var2.round;
+        var4 = var0.parseFloat;
+        var3 = undefined;
+        var0 = arg0;
+        var3 = var4.bind(var3)(var0);
+        var0 = 2.55;
+        var0 = var0 * var3;
+        var0 = var1.bind(var2)(var0);
         return var0;
     };
-    var3 = var4.bind(var5)(var6, var3);
-    var2.default = var3;
-    var2.__INTERNAL_VIEW_CONFIG = var1;
+    var _closure1_slot1 = var3;
+    var1.RGB_RGBA_PATTERN = var2;
+    var0 = function(arg0) { // Original name: convertPercentageColor, environment: var0
+        _fun48350: for (var _fun48350_ip = 0;;) switch (_fun48350_ip) {
+            case 0:
+                var0 = arg0;
+                var2 = 'string';
+                var1 = typeof var0;
+                if (!(var2 === var1)) {
+                    _fun48350_ip = 79;
+                    continue _fun48350
+                }
+            case 14:
+                var3 = var0.replace;
+                var2 = /\s/g;
+                var1 = '';
+                var4 = var3.bind(var0)(var2, var1);
+                var3 = _closure1_slot0;
+                var1 = var3.test;
+                var3 = var1.bind(var3)(var4);
+                var1 = var0;
+                if (!var3) {
+                    _fun48350_ip = 77;
+                    continue _fun48350
+                }
+            case 66:
+                var3 = _closure1_slot2;
+                var2 = undefined;
+                var1 = var3.bind(var2)(var4);
+            case 77:
+                return var1;
+            case 79:
+                return var0;
+        }
+    };
+    var1.convertPercentageColor = var0;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [38, 110, 42]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

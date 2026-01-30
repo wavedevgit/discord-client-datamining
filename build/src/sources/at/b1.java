@@ -87,7 +87,7 @@ public final class b1 extends s0 {
         super(keySerializer, valueSerializer, null);
         Intrinsics.checkNotNullParameter(keySerializer, "keySerializer");
         Intrinsics.checkNotNullParameter(valueSerializer, "valueSerializer");
-        this.f6777c = zs.j.d("kotlin.collections.Map.Entry", l.c.f56104a, new SerialDescriptor[0], new Function1() { // from class: at.a1
+        this.f6777c = zs.j.d("kotlin.collections.Map.Entry", l.c.f56120a, new SerialDescriptor[0], new Function1() { // from class: at.a1
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
                 Unit g10;
@@ -102,7 +102,7 @@ public final class b1 extends s0 {
         Intrinsics.checkNotNullParameter(buildSerialDescriptor, "$this$buildSerialDescriptor");
         zs.a.b(buildSerialDescriptor, "key", kSerializer.getDescriptor(), null, false, 12, null);
         zs.a.b(buildSerialDescriptor, "value", kSerializer2.getDescriptor(), null, false, 12, null);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlinx.serialization.KSerializer, xs.o, kotlinx.serialization.DeserializationStrategy

@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.showEditBenefitModal = var3;
     var1 = function(arg0) { // Original name: showEditEmojisModal, environment: var1
-        _fun117158: for (var _fun117158_ip = 0;;) switch (_fun117158_ip) {
+        _fun117437: for (var _fun117437_ip = 0;;) switch (_fun117437_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.guildId;
@@ -128,8 +128,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2.subscriptionRoleId = var8;
                 var8 = null;
                 if (!(var8 == var7)) {
-                    _fun117158_ip = 142;
-                    continue _fun117158
+                    _fun117437_ip = 142;
+                    continue _fun117437
                 }
             case 114:
                 var8 = global;
@@ -154,4 +154,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.showEditEmojisModal = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [14900, 4518, 14901, 1307, 14907, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [14929, 4524, 14930, 1307, 14936, 2]);

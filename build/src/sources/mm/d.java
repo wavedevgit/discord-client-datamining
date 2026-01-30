@@ -14,13 +14,13 @@ import kotlin.jvm.internal.Intrinsics;
 public final class d {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f39101c = new a(null);
+    public static final a f39117c = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final ReactApplicationContext f39102a;
+    private final ReactApplicationContext f39118a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f39103b;
+    private final int f39119b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -34,8 +34,8 @@ public final class d {
 
     public d(ReactApplicationContext mReactContext) {
         Intrinsics.checkNotNullParameter(mReactContext, "mReactContext");
-        this.f39102a = mReactContext;
-        this.f39103b = f();
+        this.f39118a = mReactContext;
+        this.f39119b = f();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -61,7 +61,7 @@ public final class d {
     private final int f() {
         Window window;
         WindowManager.LayoutParams attributes;
-        Activity currentActivity = this.f39102a.getCurrentActivity();
+        Activity currentActivity = this.f39118a.getCurrentActivity();
         if (currentActivity != null && (window = currentActivity.getWindow()) != null && (attributes = window.getAttributes()) != null) {
             return attributes.softInputMode;
         }
@@ -70,7 +70,7 @@ public final class d {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void i() {
-        nm.a.f41976a.a();
+        nm.a.f41992a.a();
     }
 
     private final void k(final int i10) {
@@ -86,14 +86,14 @@ public final class d {
     public static final void l(d dVar, int i10) {
         Activity currentActivity;
         Window window;
-        if (dVar.f() != i10 && (currentActivity = dVar.f39102a.getCurrentActivity()) != null && (window = currentActivity.getWindow()) != null) {
+        if (dVar.f() != i10 && (currentActivity = dVar.f39118a.getCurrentActivity()) != null && (window = currentActivity.getWindow()) != null) {
             window.setSoftInputMode(i10);
         }
     }
 
     public final void d(final boolean z10) {
-        final Activity currentActivity = this.f39102a.getCurrentActivity();
-        final EditText b10 = nm.a.f41976a.b();
+        final Activity currentActivity = this.f39118a.getCurrentActivity();
+        final EditText b10 = nm.a.f41992a.b();
         if (b10 != null) {
             UiThreadUtil.runOnUiThread(new Runnable() { // from class: mm.c
                 @Override // java.lang.Runnable
@@ -105,7 +105,7 @@ public final class d {
     }
 
     public final void g() {
-        k(this.f39103b);
+        k(this.f39119b);
     }
 
     public final void h(String direction) {
@@ -119,9 +119,9 @@ public final class d {
             });
             return;
         }
-        EditText b10 = nm.a.f41976a.b();
+        EditText b10 = nm.a.f41992a.b();
         if (b10 != null) {
-            nm.c.f41979a.j(direction, b10);
+            nm.c.f41995a.j(direction, b10);
         }
     }
 

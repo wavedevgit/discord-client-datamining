@@ -3,26 +3,26 @@ package zb;
 public final class a implements vi.a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final vi.a f55422a = new a();
+    public static final vi.a f55438a = new a();
 
     /* renamed from: zb.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private static final class C0776a implements ui.d {
 
         /* renamed from: a  reason: collision with root package name */
-        static final C0776a f55423a = new C0776a();
+        static final C0776a f55439a = new C0776a();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final ui.c f55424b = ui.c.a("window").b(xi.a.b().c(1).a()).a();
+        private static final ui.c f55440b = ui.c.a("window").b(xi.a.b().c(1).a()).a();
 
         /* renamed from: c  reason: collision with root package name */
-        private static final ui.c f55425c = ui.c.a("logSourceMetrics").b(xi.a.b().c(2).a()).a();
+        private static final ui.c f55441c = ui.c.a("logSourceMetrics").b(xi.a.b().c(2).a()).a();
 
         /* renamed from: d  reason: collision with root package name */
-        private static final ui.c f55426d = ui.c.a("globalMetrics").b(xi.a.b().c(3).a()).a();
+        private static final ui.c f55442d = ui.c.a("globalMetrics").b(xi.a.b().c(3).a()).a();
 
         /* renamed from: e  reason: collision with root package name */
-        private static final ui.c f55427e = ui.c.a("appNamespace").b(xi.a.b().c(4).a()).a();
+        private static final ui.c f55443e = ui.c.a("appNamespace").b(xi.a.b().c(4).a()).a();
 
         private C0776a() {
         }
@@ -30,10 +30,10 @@ public final class a implements vi.a {
         @Override // ui.d
         /* renamed from: b */
         public void a(cc.a aVar, ui.e eVar) {
-            eVar.b(f55424b, aVar.d());
-            eVar.b(f55425c, aVar.c());
-            eVar.b(f55426d, aVar.b());
-            eVar.b(f55427e, aVar.a());
+            eVar.b(f55440b, aVar.d());
+            eVar.b(f55441c, aVar.c());
+            eVar.b(f55442d, aVar.b());
+            eVar.b(f55443e, aVar.a());
         }
     }
 
@@ -41,10 +41,10 @@ public final class a implements vi.a {
     private static final class b implements ui.d {
 
         /* renamed from: a  reason: collision with root package name */
-        static final b f55428a = new b();
+        static final b f55444a = new b();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final ui.c f55429b = ui.c.a("storageMetrics").b(xi.a.b().c(1).a()).a();
+        private static final ui.c f55445b = ui.c.a("storageMetrics").b(xi.a.b().c(1).a()).a();
 
         private b() {
         }
@@ -52,7 +52,7 @@ public final class a implements vi.a {
         @Override // ui.d
         /* renamed from: b */
         public void a(cc.b bVar, ui.e eVar) {
-            eVar.b(f55429b, bVar.a());
+            eVar.b(f55445b, bVar.a());
         }
     }
 
@@ -60,13 +60,13 @@ public final class a implements vi.a {
     private static final class c implements ui.d {
 
         /* renamed from: a  reason: collision with root package name */
-        static final c f55430a = new c();
+        static final c f55446a = new c();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final ui.c f55431b = ui.c.a("eventsDroppedCount").b(xi.a.b().c(1).a()).a();
+        private static final ui.c f55447b = ui.c.a("eventsDroppedCount").b(xi.a.b().c(1).a()).a();
 
         /* renamed from: c  reason: collision with root package name */
-        private static final ui.c f55432c = ui.c.a("reason").b(xi.a.b().c(3).a()).a();
+        private static final ui.c f55448c = ui.c.a("reason").b(xi.a.b().c(3).a()).a();
 
         private c() {
         }
@@ -74,8 +74,8 @@ public final class a implements vi.a {
         @Override // ui.d
         /* renamed from: b */
         public void a(cc.c cVar, ui.e eVar) {
-            eVar.d(f55431b, cVar.a());
-            eVar.b(f55432c, cVar.b());
+            eVar.d(f55447b, cVar.a());
+            eVar.b(f55448c, cVar.b());
         }
     }
 
@@ -83,13 +83,13 @@ public final class a implements vi.a {
     private static final class d implements ui.d {
 
         /* renamed from: a  reason: collision with root package name */
-        static final d f55433a = new d();
+        static final d f55449a = new d();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final ui.c f55434b = ui.c.a("logSource").b(xi.a.b().c(1).a()).a();
+        private static final ui.c f55450b = ui.c.a("logSource").b(xi.a.b().c(1).a()).a();
 
         /* renamed from: c  reason: collision with root package name */
-        private static final ui.c f55435c = ui.c.a("logEventDropped").b(xi.a.b().c(2).a()).a();
+        private static final ui.c f55451c = ui.c.a("logEventDropped").b(xi.a.b().c(2).a()).a();
 
         private d() {
         }
@@ -97,8 +97,8 @@ public final class a implements vi.a {
         @Override // ui.d
         /* renamed from: b */
         public void a(cc.d dVar, ui.e eVar) {
-            eVar.b(f55434b, dVar.b());
-            eVar.b(f55435c, dVar.a());
+            eVar.b(f55450b, dVar.b());
+            eVar.b(f55451c, dVar.a());
         }
     }
 
@@ -106,10 +106,10 @@ public final class a implements vi.a {
     private static final class e implements ui.d {
 
         /* renamed from: a  reason: collision with root package name */
-        static final e f55436a = new e();
+        static final e f55452a = new e();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final ui.c f55437b = ui.c.d("clientMetrics");
+        private static final ui.c f55453b = ui.c.d("clientMetrics");
 
         private e() {
         }
@@ -129,13 +129,13 @@ public final class a implements vi.a {
     private static final class f implements ui.d {
 
         /* renamed from: a  reason: collision with root package name */
-        static final f f55438a = new f();
+        static final f f55454a = new f();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final ui.c f55439b = ui.c.a("currentCacheSizeBytes").b(xi.a.b().c(1).a()).a();
+        private static final ui.c f55455b = ui.c.a("currentCacheSizeBytes").b(xi.a.b().c(1).a()).a();
 
         /* renamed from: c  reason: collision with root package name */
-        private static final ui.c f55440c = ui.c.a("maxCacheSizeBytes").b(xi.a.b().c(2).a()).a();
+        private static final ui.c f55456c = ui.c.a("maxCacheSizeBytes").b(xi.a.b().c(2).a()).a();
 
         private f() {
         }
@@ -143,8 +143,8 @@ public final class a implements vi.a {
         @Override // ui.d
         /* renamed from: b */
         public void a(cc.e eVar, ui.e eVar2) {
-            eVar2.d(f55439b, eVar.a());
-            eVar2.d(f55440c, eVar.b());
+            eVar2.d(f55455b, eVar.a());
+            eVar2.d(f55456c, eVar.b());
         }
     }
 
@@ -152,13 +152,13 @@ public final class a implements vi.a {
     private static final class g implements ui.d {
 
         /* renamed from: a  reason: collision with root package name */
-        static final g f55441a = new g();
+        static final g f55457a = new g();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final ui.c f55442b = ui.c.a("startMs").b(xi.a.b().c(1).a()).a();
+        private static final ui.c f55458b = ui.c.a("startMs").b(xi.a.b().c(1).a()).a();
 
         /* renamed from: c  reason: collision with root package name */
-        private static final ui.c f55443c = ui.c.a("endMs").b(xi.a.b().c(2).a()).a();
+        private static final ui.c f55459c = ui.c.a("endMs").b(xi.a.b().c(2).a()).a();
 
         private g() {
         }
@@ -166,8 +166,8 @@ public final class a implements vi.a {
         @Override // ui.d
         /* renamed from: b */
         public void a(cc.f fVar, ui.e eVar) {
-            eVar.d(f55442b, fVar.b());
-            eVar.d(f55443c, fVar.a());
+            eVar.d(f55458b, fVar.b());
+            eVar.d(f55459c, fVar.a());
         }
     }
 
@@ -176,12 +176,12 @@ public final class a implements vi.a {
 
     @Override // vi.a
     public void a(vi.b bVar) {
-        bVar.a(l.class, e.f55436a);
-        bVar.a(cc.a.class, C0776a.f55423a);
-        bVar.a(cc.f.class, g.f55441a);
-        bVar.a(cc.d.class, d.f55433a);
-        bVar.a(cc.c.class, c.f55430a);
-        bVar.a(cc.b.class, b.f55428a);
-        bVar.a(cc.e.class, f.f55438a);
+        bVar.a(l.class, e.f55452a);
+        bVar.a(cc.a.class, C0776a.f55439a);
+        bVar.a(cc.f.class, g.f55457a);
+        bVar.a(cc.d.class, d.f55449a);
+        bVar.a(cc.c.class, c.f55446a);
+        bVar.a(cc.b.class, b.f55444a);
+        bVar.a(cc.e.class, f.f55454a);
     }
 }

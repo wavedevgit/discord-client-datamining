@@ -21,7 +21,7 @@ import zj.a;
 public final class i implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Lazy f42001a = ir.l.b(new Function0() { // from class: nn.g
+    private final Lazy f42017a = ir.l.b(new Function0() { // from class: nn.g
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             xj.d d10;
@@ -31,7 +31,7 @@ public final class i implements e {
     });
 
     /* renamed from: b  reason: collision with root package name */
-    private final Lazy f42002b = ir.l.b(new Function0() { // from class: nn.h
+    private final Lazy f42018b = ir.l.b(new Function0() { // from class: nn.h
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             zj.c g10;
@@ -48,11 +48,11 @@ public final class i implements e {
     }
 
     private final xj.d e() {
-        return (xj.d) this.f42001a.getValue();
+        return (xj.d) this.f42017a.getValue();
     }
 
     private final zj.c f() {
-        return (zj.c) this.f42002b.getValue();
+        return (zj.c) this.f42018b.getValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -75,8 +75,8 @@ public final class i implements e {
             Intrinsics.checkNotNullExpressionValue(l10, "getResult(...)");
             xj.a aVar = (xj.a) CollectionsKt.q0((List) l10, 0);
             if (aVar == null) {
-                Result.a aVar2 = Result.f33279e;
-                return Result.b(a.b.f41981a);
+                Result.a aVar2 = Result.f33295e;
+                return Result.b(a.b.f41997a);
             }
             List b10 = ((zj.a) g11.l()).b();
             Intrinsics.checkNotNullExpressionValue(b10, "getTextBlocks(...)");
@@ -93,21 +93,21 @@ public final class i implements e {
                 arrayList.add(arrayList2);
             }
             if (CollectionsKt.y(arrayList).size() < 5) {
-                Result.a aVar3 = Result.f33279e;
-                return Result.b(a.b.f41981a);
+                Result.a aVar3 = Result.f33295e;
+                return Result.b(a.b.f41997a);
             }
             Rect rect2 = new Rect(0, 0, f10.l(), f10.h());
             rect2.inset(1, 1);
             if (rect2.contains(aVar.a())) {
-                Result.a aVar4 = Result.f33279e;
+                Result.a aVar4 = Result.f33295e;
                 String a10 = ((zj.a) g11.l()).a();
                 Intrinsics.checkNotNullExpressionValue(a10, "getText(...)");
                 return Result.b(new a.d(new h0(a10)));
             }
-            Result.a aVar5 = Result.f33279e;
-            return Result.b(a.b.f41981a);
+            Result.a aVar5 = Result.f33295e;
+            return Result.b(a.b.f41997a);
         } catch (ExecutionException unused) {
-            Result.a aVar6 = Result.f33279e;
+            Result.a aVar6 = Result.f33295e;
             return Result.b(kotlin.c.a(new b.a()));
         }
     }

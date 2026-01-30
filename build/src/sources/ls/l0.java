@@ -8,10 +8,10 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class l0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e0 f37459a = new e0("NO_THREAD_ELEMENTS");
+    public static final e0 f37475a = new e0("NO_THREAD_ELEMENTS");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Function2 f37460b = new Function2() { // from class: ls.i0
+    private static final Function2 f37476b = new Function2() { // from class: ls.i0
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(Object obj, Object obj2) {
             Object d10;
@@ -21,7 +21,7 @@ public abstract class l0 {
     };
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Function2 f37461c = new Function2() { // from class: ls.j0
+    private static final Function2 f37477c = new Function2() { // from class: ls.j0
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(Object obj, Object obj2) {
             k1 e10;
@@ -31,7 +31,7 @@ public abstract class l0 {
     };
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Function2 f37462d = new Function2() { // from class: ls.k0
+    private static final Function2 f37478d = new Function2() { // from class: ls.k0
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(Object obj, Object obj2) {
             p0 h10;
@@ -75,20 +75,20 @@ public abstract class l0 {
     }
 
     public static final void f(CoroutineContext coroutineContext, Object obj) {
-        if (obj == f37459a) {
+        if (obj == f37475a) {
             return;
         }
         if (obj instanceof p0) {
             ((p0) obj).b(coroutineContext);
             return;
         }
-        Object A1 = coroutineContext.A1(null, f37461c);
+        Object A1 = coroutineContext.A1(null, f37477c);
         Intrinsics.checkNotNull(A1, "null cannot be cast to non-null type kotlinx.coroutines.ThreadContextElement<kotlin.Any?>");
         ((k1) A1).F0(coroutineContext, obj);
     }
 
     public static final Object g(CoroutineContext coroutineContext) {
-        Object A1 = coroutineContext.A1(0, f37460b);
+        Object A1 = coroutineContext.A1(0, f37476b);
         Intrinsics.checkNotNull(A1);
         return A1;
     }
@@ -97,7 +97,7 @@ public abstract class l0 {
     public static final p0 h(p0 p0Var, CoroutineContext.Element element) {
         if (element instanceof k1) {
             k1 k1Var = (k1) element;
-            p0Var.a(k1Var, k1Var.B1(p0Var.f37469a));
+            p0Var.a(k1Var, k1Var.B1(p0Var.f37485a));
         }
         return p0Var;
     }
@@ -107,10 +107,10 @@ public abstract class l0 {
             obj = g(coroutineContext);
         }
         if (obj == 0) {
-            return f37459a;
+            return f37475a;
         }
         if (obj instanceof Integer) {
-            return coroutineContext.A1(new p0(coroutineContext, ((Number) obj).intValue()), f37462d);
+            return coroutineContext.A1(new p0(coroutineContext, ((Number) obj).intValue()), f37478d);
         }
         Intrinsics.checkNotNull(obj, "null cannot be cast to non-null type kotlinx.coroutines.ThreadContextElement<kotlin.Any?>");
         return ((k1) obj).B1(coroutineContext);

@@ -19,7 +19,7 @@ import org.jetbrains.annotations.NotNull;
     @Override // kotlin.jvm.functions.Function3
     public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3) {
         m57invokeiFQtAB8(((ViewModelInstanceHandle) obj).m203unboximpl(), (String) obj2, (String) obj3);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* renamed from: invoke-iFQtAB8  reason: not valid java name */

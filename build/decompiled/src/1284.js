@@ -4,7 +4,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = exports;
     var6 = dependencyMap;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
-        _fun13886: for (var _fun13886_ip = 0;;) switch (_fun13886_ip) {
+        _fun13887: for (var _fun13887_ip = 0;;) switch (_fun13887_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -25,8 +25,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun13886_ip = 74;
-                continue _fun13886;
+                _fun13887_ip = 74;
+                continue _fun13887;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -44,23 +44,23 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot10 = var0;
     var4 = function(arg0, arg1) { // Original name: formatToAst, environment: var1
-        _fun13889: for (var _fun13889_ip = 0;;) switch (_fun13889_ip) {
+        _fun13890: for (var _fun13890_ip = 0;;) switch (_fun13890_ip) {
             case 0:
                 var1 = arg0;
                 var4 = this;
                 var2 = 'string';
                 var0 = typeof var1;
                 if (!(var2 !== var0)) {
-                    _fun13889_ip = 42;
-                    continue _fun13889
+                    _fun13890_ip = 42;
+                    continue _fun13890
                 }
             case 17:
                 var3 = var4.bindFormatValues;
                 var2 = _closure1_slot9;
                 var0 = arg1;
                 var0 = var3.bind(var4)(var2, var1, var0);
-                _fun13889_ip = 75;
-                continue _fun13889;
+                _fun13890_ip = 75;
+                continue _fun13890;
             case 42:
                 var2 = {};
                 var3 = _closure1_slot0;
@@ -207,7 +207,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var5 = var3.FormatBuilder;
     var3 = function(arg0) { // Environment: var1
         var3 = function() { // Original name: AstBuilder, environment: var5
-            _fun13897: for (var _fun13897_ip = 0;;) switch (_fun13897_ip) {
+            _fun13898: for (var _fun13898_ip = 0;;) switch (_fun13898_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -221,16 +221,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = _closure1_slot10;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun13897_ip = 69;
-                        continue _fun13897
+                        _fun13898_ip = 69;
+                        continue _fun13898
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun13897_ip = 105;
-                    continue _fun13897;
+                    _fun13898_ip = 105;
+                    continue _fun13898;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -257,14 +257,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = 'pushRichTextTag';
         var4.key = var0;
         var0 = function(arg0, arg1, arg2) { // Original name: pushRichTextTag, environment: var5
-            _fun13898: for (var _fun13898_ip = 0;;) switch (_fun13898_ip) {
+            _fun13899: for (var _fun13899_ip = 0;;) switch (_fun13899_ip) {
                 case 0:
                     var1 = arg0;
                     var2 = _closure1_slot8;
                     var2 = var1 in var2;
                     if (var2) {
-                        _fun13898_ip = 48;
-                        continue _fun13898
+                        _fun13899_ip = 48;
+                        continue _fun13899
                     }
                 case 17:
                     var2 = global;
@@ -289,13 +289,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = var2.result;
                     var2 = var3.push;
                     if (var1) {
-                        _fun13898_ip = 115;
-                        continue _fun13898
+                        _fun13899_ip = 115;
+                        continue _fun13899
                     }
                 case 108:
                     var1 = var2.bind(var3)(var5);
-                    _fun13898_ip = 137;
-                    continue _fun13898;
+                    _fun13899_ip = 137;
+                    continue _fun13899;
                 case 115:
                     var1 = var2.apply;
                     var4 = _closure1_slot1;
@@ -314,7 +314,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var6 = 'pushLiteralText';
         var4.key = var6;
         var6 = function(arg0) { // Original name: pushLiteralText, environment: var5
-            _fun13899: for (var _fun13899_ip = 0;;) switch (_fun13899_ip) {
+            _fun13900: for (var _fun13900_ip = 0;;) switch (_fun13900_ip) {
                 case 0:
                     var2 = arg0;
                     var0 = this;
@@ -326,16 +326,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = var3[var1];
                     var3 = null;
                     if (!(var3 != var1)) {
-                        _fun13899_ip = 61;
-                        continue _fun13899
+                        _fun13900_ip = 61;
+                        continue _fun13900
                     }
                 case 40:
                     var4 = var1.type;
                     var3 = _closure1_slot0;
                     var3 = var3.Text;
                     if (!(var4 !== var3)) {
-                        _fun13899_ip = 101;
-                        continue _fun13899
+                        _fun13900_ip = 101;
+                        continue _fun13900
                     }
                 case 61:
                     var4 = var0.result;
@@ -346,8 +346,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0.type = var5;
                     var0.content = var2;
                     var0 = var3.bind(var4)(var0);
-                    _fun13899_ip = 116;
-                    continue _fun13899;
+                    _fun13900_ip = 116;
+                    continue _fun13900;
                 case 101:
                     var0 = var1.content;
                     var0 = var0 + var2;

@@ -6,10 +6,10 @@ import mn.z;
 public final class b0 implements z.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a0 f39169a;
+    private final a0 f39185a;
 
     b0(a0 a0Var) {
-        this.f39169a = a0Var;
+        this.f39185a = a0Var;
     }
 
     public static tq.h b(a0 a0Var) {
@@ -18,6 +18,6 @@ public final class b0 implements z.a {
 
     @Override // mn.z.a
     public z a(t tVar, PreviewView previewView, y yVar) {
-        return this.f39169a.b(tVar, previewView, yVar);
+        return this.f39185a.b(tVar, previewView, yVar);
     }
 }

@@ -511,7 +511,7 @@ public final class Format implements g {
         O.k0(bundle.getLong(str, format2.A)).n0(bundle.getInt(f12678j0, format2.B)).S(bundle.getInt(f12679k0, format2.C)).R(bundle.getFloat(f12680l0, format2.D)).f0(bundle.getInt(f12681m0, format2.E)).c0(bundle.getFloat(f12682n0, format2.F)).d0(bundle.getByteArray(f12683o0)).j0(bundle.getInt(f12684p0, format2.H));
         Bundle bundle2 = bundle.getBundle(f12685q0);
         if (bundle2 != null) {
-            bVar.L((oe.c) oe.c.f42524w.a(bundle2));
+            bVar.L((oe.c) oe.c.f42540w.a(bundle2));
         }
         bVar.J(bundle.getInt(f12686r0, format2.J)).h0(bundle.getInt(f12687s0, format2.K)).a0(bundle.getInt(f12688t0, format2.L)).P(bundle.getInt(f12689u0, format2.M)).Q(bundle.getInt(f12690v0, format2.N)).H(bundle.getInt(f12691w0, format2.O)).l0(bundle.getInt(f12693y0, format2.P)).m0(bundle.getInt(f12694z0, format2.Q)).N(bundle.getInt(f12692x0, format2.R));
         return bVar.G();
@@ -543,19 +543,19 @@ public final class Format implements g {
             int i10 = 0;
             while (true) {
                 rc.m mVar = format.f12709z;
-                if (i10 >= mVar.f48220o) {
+                if (i10 >= mVar.f48236o) {
                     break;
                 }
-                UUID uuid = mVar.k(i10).f48222e;
-                if (uuid.equals(lc.d.f37054b)) {
+                UUID uuid = mVar.k(i10).f48238e;
+                if (uuid.equals(lc.d.f37070b)) {
                     linkedHashSet.add("cenc");
-                } else if (uuid.equals(lc.d.f37055c)) {
+                } else if (uuid.equals(lc.d.f37071c)) {
                     linkedHashSet.add("clearkey");
-                } else if (uuid.equals(lc.d.f37057e)) {
+                } else if (uuid.equals(lc.d.f37073e)) {
                     linkedHashSet.add("playready");
-                } else if (uuid.equals(lc.d.f37056d)) {
+                } else if (uuid.equals(lc.d.f37072d)) {
                     linkedHashSet.add("widevine");
-                } else if (uuid.equals(lc.d.f37053a)) {
+                } else if (uuid.equals(lc.d.f37069a)) {
                     linkedHashSet.add("universal");
                 } else {
                     linkedHashSet.add("unknown (" + uuid + ")");

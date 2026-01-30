@@ -31,15 +31,15 @@ public class CollectionsKt___CollectionsKt extends a0 {
     public static final class a implements Sequence {
 
         /* renamed from: a */
-        final /* synthetic */ Iterable f33293a;
+        final /* synthetic */ Iterable f33309a;
 
         public a(Iterable iterable) {
-            this.f33293a = iterable;
+            this.f33309a = iterable;
         }
 
         @Override // kotlin.sequences.Sequence
         public Iterator iterator() {
-            return this.f33293a.iterator();
+            return this.f33309a.iterator();
         }
     }
 

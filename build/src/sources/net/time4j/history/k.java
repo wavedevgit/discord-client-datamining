@@ -15,7 +15,7 @@ import net.time4j.f0;
 final class k extends kt.d implements t {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Locale f40682e = new Locale("la");
+    private static final Locale f40698e = new Locale("la");
     private static final long serialVersionUID = 5200533417265981438L;
     private final d history;
 
@@ -23,10 +23,10 @@ final class k extends kt.d implements t {
     private static class a implements z {
 
         /* renamed from: d  reason: collision with root package name */
-        private final d f40683d;
+        private final d f40699d;
 
         a(d dVar) {
-            this.f40683d = dVar;
+            this.f40699d = dVar;
         }
 
         @Override // jt.z
@@ -65,7 +65,7 @@ final class k extends kt.d implements t {
         /* renamed from: f */
         public j x(q qVar) {
             try {
-                return this.f40683d.e((f0) qVar.p(f0.f40573z)).e();
+                return this.f40699d.e((f0) qVar.p(f0.f40589z)).e();
             } catch (IllegalArgumentException e10) {
                 throw new r(e10.getMessage(), e10);
             }
@@ -77,7 +77,7 @@ final class k extends kt.d implements t {
             if (jVar == null) {
                 return false;
             }
-            if (this.f40683d.e((f0) qVar.p(f0.f40573z)).e() != jVar) {
+            if (this.f40699d.e((f0) qVar.p(f0.f40589z)).e() != jVar) {
                 return false;
             }
             return true;
@@ -87,7 +87,7 @@ final class k extends kt.d implements t {
         /* renamed from: i */
         public q w(q qVar, j jVar, boolean z10) {
             if (jVar != null) {
-                if (this.f40683d.e((f0) qVar.p(f0.f40573z)).e() == jVar) {
+                if (this.f40699d.e((f0) qVar.p(f0.f40589z)).e() == jVar) {
                     return qVar;
                 }
                 throw new IllegalArgumentException(jVar.name());
@@ -103,21 +103,21 @@ final class k extends kt.d implements t {
     }
 
     private s F(jt.d dVar) {
-        jt.c cVar = kt.a.f36534g;
+        jt.c cVar = kt.a.f36550g;
         v vVar = v.WIDE;
         v vVar2 = (v) dVar.b(cVar, vVar);
-        jt.c cVar2 = ot.a.f44764c;
+        jt.c cVar2 = ot.a.f44780c;
         Boolean bool = Boolean.FALSE;
         String str = "a";
         if (((Boolean) dVar.b(cVar2, bool)).booleanValue()) {
-            kt.b c10 = kt.b.c("historic", f40682e);
+            kt.b c10 = kt.b.c("historic", f40698e);
             if (vVar2 == vVar) {
                 str = "w";
             }
             return c10.o(this, str);
         }
-        kt.b d10 = kt.b.d((Locale) dVar.b(kt.a.f36530c, Locale.ROOT));
-        if (((Boolean) dVar.b(ot.a.f44763b, bool)).booleanValue()) {
+        kt.b d10 = kt.b.d((Locale) dVar.b(kt.a.f36546c, Locale.ROOT));
+        if (((Boolean) dVar.b(ot.a.f44779b, bool)).booleanValue()) {
             if (vVar2 == vVar) {
                 str = "w";
             }
@@ -156,7 +156,7 @@ final class k extends kt.d implements t {
     /* JADX INFO: Access modifiers changed from: protected */
     @Override // jt.e
     public z c(x xVar) {
-        if (xVar.E(f0.f40573z)) {
+        if (xVar.E(f0.f40589z)) {
             return new a(this.history);
         }
         return null;

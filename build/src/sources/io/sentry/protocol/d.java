@@ -16,13 +16,13 @@ import java.util.Map;
 public final class d implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private q f30321d;
+    private q f30337d;
 
     /* renamed from: e  reason: collision with root package name */
-    private List f30322e;
+    private List f30338e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Map f30323i;
+    private Map f30339i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -36,9 +36,9 @@ public final class d implements w1 {
                 String l02 = e3Var.l0();
                 l02.getClass();
                 if (l02.equals("images")) {
-                    dVar.f30322e = e3Var.g2(iLogger, new DebugImage.a());
+                    dVar.f30338e = e3Var.g2(iLogger, new DebugImage.a());
                 } else if (l02.equals("sdk_info")) {
-                    dVar.f30321d = (q) e3Var.G0(iLogger, new q.a());
+                    dVar.f30337d = (q) e3Var.G0(iLogger, new q.a());
                 } else {
                     if (hashMap == null) {
                         hashMap = new HashMap();
@@ -81,7 +81,7 @@ public final class d implements w1 {
     }
 
     public List d() {
-        return this.f30322e;
+        return this.f30338e;
     }
 
     public void e(List list) {
@@ -91,26 +91,26 @@ public final class d implements w1 {
         } else {
             arrayList = null;
         }
-        this.f30322e = arrayList;
+        this.f30338e = arrayList;
     }
 
     public void f(Map map) {
-        this.f30323i = map;
+        this.f30339i = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        if (this.f30321d != null) {
-            f3Var.e("sdk_info").j(iLogger, this.f30321d);
+        if (this.f30337d != null) {
+            f3Var.e("sdk_info").j(iLogger, this.f30337d);
         }
-        if (this.f30322e != null) {
-            f3Var.e("images").j(iLogger, this.f30322e);
+        if (this.f30338e != null) {
+            f3Var.e("images").j(iLogger, this.f30338e);
         }
-        Map map = this.f30323i;
+        Map map = this.f30339i;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f30323i.get(str));
+                f3Var.e(str).j(iLogger, this.f30339i.get(str));
             }
         }
         f3Var.y();

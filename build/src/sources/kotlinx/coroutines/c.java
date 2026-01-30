@@ -5,18 +5,18 @@ import java.util.concurrent.Future;
 final class c implements d {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Future f36311d;
+    private final Future f36327d;
 
     public c(Future future) {
-        this.f36311d = future;
+        this.f36327d = future;
     }
 
     @Override // kotlinx.coroutines.d
     public void c(Throwable th2) {
-        this.f36311d.cancel(false);
+        this.f36327d.cancel(false);
     }
 
     public String toString() {
-        return "CancelFutureOnCancel[" + this.f36311d + ']';
+        return "CancelFutureOnCancel[" + this.f36327d + ']';
     }
 }

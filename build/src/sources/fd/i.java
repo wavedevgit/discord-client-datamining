@@ -30,12 +30,12 @@ final class i {
 
     public long d(Format format, qc.f fVar) {
         if (this.f24966b == 0) {
-            this.f24965a = fVar.f47078p;
+            this.f24965a = fVar.f47094p;
         }
         if (this.f24967c) {
-            return fVar.f47078p;
+            return fVar.f47094p;
         }
-        ByteBuffer byteBuffer = (ByteBuffer) ne.a.e(fVar.f47076i);
+        ByteBuffer byteBuffer = (ByteBuffer) ne.a.e(fVar.f47092i);
         int i10 = 0;
         for (int i11 = 0; i11 < 4; i11++) {
             i10 = (i10 << 8) | (byteBuffer.get(i11) & 255);
@@ -44,9 +44,9 @@ final class i {
         if (m10 == -1) {
             this.f24967c = true;
             this.f24966b = 0L;
-            this.f24965a = fVar.f47078p;
+            this.f24965a = fVar.f47094p;
             ne.y.i("C2Mp3TimestampTracker", "MPEG audio header is invalid.");
-            return fVar.f47078p;
+            return fVar.f47094p;
         }
         long a10 = a(format.K);
         this.f24966b += m10;

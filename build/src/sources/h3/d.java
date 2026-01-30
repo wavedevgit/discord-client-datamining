@@ -5,15 +5,15 @@ import android.view.animation.Interpolator;
 abstract class d implements Interpolator {
 
     /* renamed from: a  reason: collision with root package name */
-    private final float[] f27336a;
+    private final float[] f27352a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final float f27337b;
+    private final float f27353b;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public d(float[] fArr) {
-        this.f27336a = fArr;
-        this.f27337b = 1.0f / (fArr.length - 1);
+        this.f27352a = fArr;
+        this.f27353b = 1.0f / (fArr.length - 1);
     }
 
     @Override // android.animation.TimeInterpolator
@@ -24,11 +24,11 @@ abstract class d implements Interpolator {
         if (f10 <= 0.0f) {
             return 0.0f;
         }
-        float[] fArr = this.f27336a;
+        float[] fArr = this.f27352a;
         int min = Math.min((int) ((fArr.length - 1) * f10), fArr.length - 2);
-        float f11 = this.f27337b;
+        float f11 = this.f27353b;
         float f12 = (f10 - (min * f11)) / f11;
-        float[] fArr2 = this.f27336a;
+        float[] fArr2 = this.f27352a;
         float f13 = fArr2[min];
         return f13 + (f12 * (fArr2[min + 1] - f13));
     }

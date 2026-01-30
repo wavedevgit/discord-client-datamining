@@ -152,9 +152,9 @@ public class Snackbar extends BaseTransientBottomBar {
             }
             LayoutInflater from = LayoutInflater.from(context);
             if (k0(context)) {
-                i11 = h.f54472u;
+                i11 = h.f54488u;
             } else {
-                i11 = h.f54454c;
+                i11 = h.f54470c;
             }
             SnackbarContentLayout snackbarContentLayout = (SnackbarContentLayout) from.inflate(i11, h02, false);
             Snackbar snackbar = new Snackbar(context, h02, snackbarContentLayout, snackbarContentLayout);

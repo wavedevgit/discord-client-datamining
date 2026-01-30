@@ -163,7 +163,7 @@ public final class BlobModule extends NativeBlobModuleSpec {
                 if (map2 != null) {
                     byte[] resolve = BlobModule.this.resolve(map2.getString("blobId"), map2.getInt("offset"), map2.getInt("size"));
                     if (resolve != null) {
-                        return RequestBody.Companion.o(RequestBody.Companion, MediaType.f44069e.a(str), resolve, 0, 0, 12, null);
+                        return RequestBody.Companion.o(RequestBody.Companion, MediaType.f44085e.a(str), resolve, 0, 0, 12, null);
                     }
                     throw new IllegalStateException("Required value was null.");
                 }
@@ -264,7 +264,7 @@ public final class BlobModule extends NativeBlobModuleSpec {
                     c.a(query, null);
                     return string;
                 }
-                Unit unit = Unit.f33282a;
+                Unit unit = Unit.f33298a;
                 c.a(query, null);
             } finally {
             }
@@ -430,7 +430,7 @@ public final class BlobModule extends NativeBlobModuleSpec {
         int i10 = (int) d10;
         WebSocketModule webSocketModule = getWebSocketModule();
         if (webSocketModule != null && (resolve = resolve(blob.getString("blobId"), blob.getInt("offset"), blob.getInt("size"))) != null) {
-            ByteString.a aVar = ByteString.f44363o;
+            ByteString.a aVar = ByteString.f44379o;
             ByteBuffer wrap = ByteBuffer.wrap(resolve);
             Intrinsics.checkNotNullExpressionValue(wrap, "wrap(...)");
             webSocketModule.sendBinary(aVar.c(wrap), i10);
@@ -451,7 +451,7 @@ public final class BlobModule extends NativeBlobModuleSpec {
         Intrinsics.checkNotNullParameter(blobId, "blobId");
         synchronized (this.blobs) {
             this.blobs.put(blobId, data);
-            Unit unit = Unit.f33282a;
+            Unit unit = Unit.f33298a;
         }
     }
 

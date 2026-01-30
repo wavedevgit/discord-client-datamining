@@ -10,35 +10,35 @@ import gf.t;
 public final class k {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f41958a;
+    private final String f41974a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f41959b;
+    private final String f41975b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f41960c;
+    private final String f41976c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f41961d;
+    private final String f41977d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f41962e;
+    private final String f41978e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String f41963f;
+    private final String f41979f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final String f41964g;
+    private final String f41980g;
 
     private k(String str, String str2, String str3, String str4, String str5, String str6, String str7) {
         q.o(!m.a(str), "ApplicationId must be set.");
-        this.f41959b = str;
-        this.f41958a = str2;
-        this.f41960c = str3;
-        this.f41961d = str4;
-        this.f41962e = str5;
-        this.f41963f = str6;
-        this.f41964g = str7;
+        this.f41975b = str;
+        this.f41974a = str2;
+        this.f41976c = str3;
+        this.f41977d = str4;
+        this.f41978e = str5;
+        this.f41979f = str6;
+        this.f41980g = str7;
     }
 
     public static k a(Context context) {
@@ -51,19 +51,19 @@ public final class k {
     }
 
     public String b() {
-        return this.f41958a;
+        return this.f41974a;
     }
 
     public String c() {
-        return this.f41959b;
+        return this.f41975b;
     }
 
     public String d() {
-        return this.f41962e;
+        return this.f41978e;
     }
 
     public String e() {
-        return this.f41964g;
+        return this.f41980g;
     }
 
     public boolean equals(Object obj) {
@@ -71,17 +71,17 @@ public final class k {
             return false;
         }
         k kVar = (k) obj;
-        if (!o.a(this.f41959b, kVar.f41959b) || !o.a(this.f41958a, kVar.f41958a) || !o.a(this.f41960c, kVar.f41960c) || !o.a(this.f41961d, kVar.f41961d) || !o.a(this.f41962e, kVar.f41962e) || !o.a(this.f41963f, kVar.f41963f) || !o.a(this.f41964g, kVar.f41964g)) {
+        if (!o.a(this.f41975b, kVar.f41975b) || !o.a(this.f41974a, kVar.f41974a) || !o.a(this.f41976c, kVar.f41976c) || !o.a(this.f41977d, kVar.f41977d) || !o.a(this.f41978e, kVar.f41978e) || !o.a(this.f41979f, kVar.f41979f) || !o.a(this.f41980g, kVar.f41980g)) {
             return false;
         }
         return true;
     }
 
     public int hashCode() {
-        return o.b(this.f41959b, this.f41958a, this.f41960c, this.f41961d, this.f41962e, this.f41963f, this.f41964g);
+        return o.b(this.f41975b, this.f41974a, this.f41976c, this.f41977d, this.f41978e, this.f41979f, this.f41980g);
     }
 
     public String toString() {
-        return o.c(this).a("applicationId", this.f41959b).a("apiKey", this.f41958a).a("databaseUrl", this.f41960c).a("gcmSenderId", this.f41962e).a("storageBucket", this.f41963f).a("projectId", this.f41964g).toString();
+        return o.c(this).a("applicationId", this.f41975b).a("apiKey", this.f41974a).a("databaseUrl", this.f41976c).a("gcmSenderId", this.f41978e).a("storageBucket", this.f41979f).a("projectId", this.f41980g).toString();
     }
 }

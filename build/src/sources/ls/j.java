@@ -13,13 +13,13 @@ import kotlinx.coroutines.Job;
 public abstract class j {
 
     /* renamed from: a */
-    private static final e0 f37448a = new e0("UNDEFINED");
+    private static final e0 f37464a = new e0("UNDEFINED");
 
     /* renamed from: b */
-    public static final e0 f37449b = new e0("REUSABLE_CLAIMED");
+    public static final e0 f37465b = new e0("REUSABLE_CLAIMED");
 
     public static final /* synthetic */ e0 a() {
-        return f37448a;
+        return f37464a;
     }
 
     public static final void b(Continuation continuation, Object obj) {
@@ -27,39 +27,39 @@ public abstract class j {
         if (continuation instanceof i) {
             i iVar = (i) continuation;
             Object b10 = gs.t.b(obj);
-            if (d(iVar.f37444o, iVar.getContext())) {
-                iVar.f37446q = b10;
-                iVar.f36343i = 1;
-                c(iVar.f37444o, iVar.getContext(), iVar);
+            if (d(iVar.f37460o, iVar.getContext())) {
+                iVar.f37462q = b10;
+                iVar.f36359i = 1;
+                c(iVar.f37460o, iVar.getContext(), iVar);
                 return;
             }
-            gs.p0 b11 = l1.f27161a.b();
+            gs.p0 b11 = l1.f27177a.b();
             if (b11.r2()) {
-                iVar.f37446q = b10;
-                iVar.f36343i = 1;
+                iVar.f37462q = b10;
+                iVar.f36359i = 1;
                 b11.j2(iVar);
                 return;
             }
             b11.p2(true);
             try {
-                Job job = (Job) iVar.getContext().l(Job.f36291j);
+                Job job = (Job) iVar.getContext().l(Job.f36307j);
                 if (job != null && !job.a()) {
                     CancellationException N = job.N();
                     iVar.b(b10, N);
-                    Result.a aVar = Result.f33279e;
+                    Result.a aVar = Result.f33295e;
                     iVar.resumeWith(Result.b(kotlin.c.a(N)));
                 } else {
-                    Continuation continuation2 = iVar.f37445p;
-                    Object obj2 = iVar.f37447r;
+                    Continuation continuation2 = iVar.f37461p;
+                    Object obj2 = iVar.f37463r;
                     CoroutineContext context = continuation2.getContext();
                     Object i10 = l0.i(context, obj2);
-                    if (i10 != l0.f37459a) {
+                    if (i10 != l0.f37475a) {
                         u1Var = gs.x.m(continuation2, context, i10);
                     } else {
                         u1Var = null;
                     }
-                    iVar.f37445p.resumeWith(obj);
-                    Unit unit = Unit.f33282a;
+                    iVar.f37461p.resumeWith(obj);
+                    Unit unit = Unit.f33298a;
                     if (u1Var == null || u1Var.Z0()) {
                         l0.f(context, i10);
                     }
@@ -94,14 +94,14 @@ public abstract class j {
     }
 
     public static final boolean e(i iVar) {
-        Unit unit = Unit.f33282a;
-        gs.p0 b10 = l1.f27161a.b();
+        Unit unit = Unit.f33298a;
+        gs.p0 b10 = l1.f27177a.b();
         if (b10.s2()) {
             return false;
         }
         if (b10.r2()) {
-            iVar.f37446q = unit;
-            iVar.f36343i = 1;
+            iVar.f37462q = unit;
+            iVar.f36359i = 1;
             b10.j2(iVar);
             return true;
         }

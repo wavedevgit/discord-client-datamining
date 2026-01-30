@@ -6,7 +6,7 @@ import tu.d;
 public final class b implements ku.b, tu.d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f47675a = new b();
+    public static final b f47691a = new b();
 
     private b() {
     }

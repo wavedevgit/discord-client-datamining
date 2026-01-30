@@ -20,7 +20,7 @@ public /* synthetic */ class ActivityRichPresenceInviteEmbedViewHolder$bind$2 ex
     @Override // kotlin.jvm.functions.Function2
     public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
         m717invokentcYbpo(((MessageId) obj).m1093unboximpl(), (LinkContentNode) obj2);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* renamed from: invoke-ntcYbpo  reason: not valid java name */

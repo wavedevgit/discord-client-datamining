@@ -30,7 +30,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.SafetyFlowTaskContext = var3;
     var1 = function() { // Original name: useSafetyFlowTask, environment: var1
-        _fun118154: for (var _fun118154_ip = 0;;) switch (_fun118154_ip) {
+        _fun118433: for (var _fun118433_ip = 0;;) switch (_fun118433_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var1 = var2.useContext;
@@ -38,8 +38,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.bind(var2)(var0);
                 var1 = null;
                 if (!(var1 != var0)) {
-                    _fun118154_ip = 30;
-                    continue _fun118154
+                    _fun118433_ip = 30;
+                    continue _fun118433
                 }
             case 28:
                 return var0;

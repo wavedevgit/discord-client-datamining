@@ -12,10 +12,10 @@ import org.jetbrains.annotations.NotNull;
 public final class NameResolverImpl implements NameResolver {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ProtoBuf.StringTable f34999a;
+    private final ProtoBuf.StringTable f35015a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ProtoBuf.QualifiedNameTable f35000b;
+    private final ProtoBuf.QualifiedNameTable f35016b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public /* synthetic */ class WhenMappings {
@@ -42,8 +42,8 @@ public final class NameResolverImpl implements NameResolver {
     public NameResolverImpl(@NotNull ProtoBuf.StringTable strings, @NotNull ProtoBuf.QualifiedNameTable qualifiedNames) {
         Intrinsics.checkNotNullParameter(strings, "strings");
         Intrinsics.checkNotNullParameter(qualifiedNames, "qualifiedNames");
-        this.f34999a = strings;
-        this.f35000b = qualifiedNames;
+        this.f35015a = strings;
+        this.f35016b = qualifiedNames;
     }
 
     private final u a(int i10) {
@@ -51,8 +51,8 @@ public final class NameResolverImpl implements NameResolver {
         LinkedList linkedList2 = new LinkedList();
         boolean z10 = false;
         while (i10 != -1) {
-            ProtoBuf.QualifiedNameTable.QualifiedName qualifiedName = this.f35000b.getQualifiedName(i10);
-            String string = this.f34999a.getString(qualifiedName.getShortName());
+            ProtoBuf.QualifiedNameTable.QualifiedName qualifiedName = this.f35016b.getQualifiedName(i10);
+            String string = this.f35015a.getString(qualifiedName.getShortName());
             ProtoBuf.QualifiedNameTable.QualifiedName.Kind kind = qualifiedName.getKind();
             Intrinsics.checkNotNull(kind);
             int i11 = WhenMappings.$EnumSwitchMapping$0[kind.ordinal()];
@@ -90,7 +90,7 @@ public final class NameResolverImpl implements NameResolver {
     @Override // kotlin.reflect.jvm.internal.impl.metadata.deserialization.NameResolver
     @NotNull
     public String getString(int i10) {
-        String string = this.f34999a.getString(i10);
+        String string = this.f35015a.getString(i10);
         Intrinsics.checkNotNullExpressionValue(string, "getString(...)");
         return string;
     }

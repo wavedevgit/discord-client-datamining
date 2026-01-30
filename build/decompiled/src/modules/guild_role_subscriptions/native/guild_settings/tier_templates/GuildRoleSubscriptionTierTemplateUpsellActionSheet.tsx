@@ -199,7 +199,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var7 = var17.container;
         var4.style = var7;
         var7 = function(arg0) { // Original name: onLayout, environment: var15
-            _fun103132: for (var _fun103132_ip = 0;;) switch (_fun103132_ip) {
+            _fun103388: for (var _fun103388_ip = 0;;) switch (_fun103388_ip) {
                 case 0:
                     var0 = arg0;
                     var0 = var0.nativeEvent;
@@ -211,8 +211,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure2_slot3;
                     var1 = var3;
                     if (!var0) {
-                        _fun103132_ip = 51;
-                        continue _fun103132
+                        _fun103388_ip = 51;
+                        continue _fun103388
                     }
                 case 44:
                     var0 = 2;
@@ -410,4 +410,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1298, 660, 1369, 33, 1297, 671, 5319, 632, 4887, 1234, 8796, 3895, 4829, 8112, 3237, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 1298, 660, 1369, 33, 1297, 671, 5323, 632, 4893, 1234, 8800, 3901, 4835, 8115, 3237, 2]);

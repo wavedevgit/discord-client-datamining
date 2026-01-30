@@ -130,7 +130,7 @@ public final class BasicButtonAttributesJsonAdapter extends h {
         String str6 = str;
         Constructor<BasicButtonAttributes> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = BasicButtonAttributes.class.getDeclaredConstructor(String.class, Button.ButtonType.class, String.class, Integer.class, JsonLogicBoolean.class, JsonLogicBoolean.class, Integer.TYPE, c.f49081c);
+            constructor = BasicButtonAttributes.class.getDeclaredConstructor(String.class, Button.ButtonType.class, String.class, Integer.class, JsonLogicBoolean.class, JsonLogicBoolean.class, Integer.TYPE, c.f49097c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

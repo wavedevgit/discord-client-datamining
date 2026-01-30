@@ -59,7 +59,7 @@ public final class UnicodeEmojis {
         @NotNull
         public static final Companion Companion = new Companion(null);
         @NotNull
-        private static final Lazy[] $childSerializers = {ir.l.a(o.f31103e, new Function0() { // from class: com.discord.emoji.e
+        private static final Lazy[] $childSerializers = {ir.l.a(o.f31119e, new Function0() { // from class: com.discord.emoji.e
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 KSerializer _childSerializers$_anonymous_;
@@ -212,7 +212,7 @@ public final class UnicodeEmojis {
         }
 
         static {
-            o oVar = o.f31103e;
+            o oVar = o.f31119e;
             $childSerializers = new Lazy[]{ir.l.a(oVar, new Function0() { // from class: com.discord.emoji.f
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
@@ -531,7 +531,7 @@ public final class UnicodeEmojis {
     public static final Unit emojiJsonParser$lambda$0(JsonBuilder Json) {
         Intrinsics.checkNotNullParameter(Json, "$this$Json");
         Json.c(true);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */

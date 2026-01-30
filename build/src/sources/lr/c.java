@@ -50,13 +50,13 @@ public class c {
     }
 
     public static Comparator f() {
-        f fVar = f.f37426d;
+        f fVar = f.f37442d;
         Intrinsics.checkNotNull(fVar, "null cannot be cast to non-null type java.util.Comparator<T of kotlin.comparisons.ComparisonsKt__ComparisonsKt.naturalOrder>");
         return fVar;
     }
 
     public static Comparator g() {
-        g gVar = g.f37427d;
+        g gVar = g.f37443d;
         Intrinsics.checkNotNull(gVar, "null cannot be cast to non-null type java.util.Comparator<T of kotlin.comparisons.ComparisonsKt__ComparisonsKt.reverseOrder>");
         return gVar;
     }

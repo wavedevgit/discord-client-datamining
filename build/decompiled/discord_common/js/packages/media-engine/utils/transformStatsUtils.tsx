@@ -20,27 +20,27 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = '../discord_common/js/packages/media-engine/utils/transformStatsUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0, arg1, arg2) { // Original name: formatSinkWantStat, environment: var1
-        _fun32610: for (var _fun32610_ip = 0;;) switch (_fun32610_ip) {
+        _fun32615: for (var _fun32615_ip = 0;;) switch (_fun32615_ip) {
             case 0:
                 var2 = arg0;
                 var0 = arg1;
                 var1 = var2[var0];
                 var0 = null;
                 if (!(var0 != var1)) {
-                    _fun32610_ip = 27;
-                    continue _fun32610
+                    _fun32615_ip = 27;
+                    continue _fun32615
                 }
             case 16:
                 var0 = var1.toString;
                 var0 = var0.bind(var1)();
-                _fun32610_ip = 77;
-                continue _fun32610;
+                _fun32615_ip = 77;
+                continue _fun32615;
             case 27:
                 var1 = '100';
                 var3 = arg2;
                 if (!var3) {
-                    _fun32610_ip = 74;
-                    continue _fun32610
+                    _fun32615_ip = 74;
+                    continue _fun32615
                 }
             case 39:
                 var5 = var2.any;
@@ -58,15 +58,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.formatSinkWantStat = var3;
     var1 = function(arg0, arg1) { // Original name: formatSinkWantAsInt, environment: var1
-        _fun32611: for (var _fun32611_ip = 0;;) switch (_fun32611_ip) {
+        _fun32616: for (var _fun32616_ip = 0;;) switch (_fun32616_ip) {
             case 0:
                 var1 = arg0;
                 var0 = arg1;
                 var0 = var1[var0];
                 var2 = null;
                 if (!(var2 == var0)) {
-                    _fun32611_ip = 22;
-                    continue _fun32611
+                    _fun32616_ip = 22;
+                    continue _fun32616
                 }
             case 16:
                 var0 = var1.any;

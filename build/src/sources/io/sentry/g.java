@@ -12,47 +12,47 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public final class g implements IScope {
 
     /* renamed from: a  reason: collision with root package name */
-    private final IScope f29996a;
+    private final IScope f30012a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final IScope f29997b;
+    private final IScope f30013b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final IScope f29998c;
+    private final IScope f30014c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f29999a;
+        static final /* synthetic */ int[] f30015a;
 
         static {
             int[] iArr = new int[d4.values().length];
-            f29999a = iArr;
+            f30015a = iArr;
             try {
                 iArr[d4.CURRENT.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f29999a[d4.ISOLATION.ordinal()] = 2;
+                f30015a[d4.ISOLATION.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f29999a[d4.GLOBAL.ordinal()] = 3;
+                f30015a[d4.GLOBAL.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f29999a[d4.COMBINED.ordinal()] = 4;
+                f30015a[d4.COMBINED.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
         }
     }
 
     public g(IScope iScope, IScope iScope2, IScope iScope3) {
-        this.f29996a = iScope;
-        this.f29997b = iScope2;
-        this.f29998c = iScope3;
+        this.f30012a = iScope;
+        this.f30013b = iScope2;
+        this.f30014c = iScope3;
     }
 
     private IScope d() {
@@ -66,41 +66,41 @@ public final class g implements IScope {
 
     @Override // io.sentry.IScope
     public List B() {
-        List B = this.f29998c.B();
+        List B = this.f30014c.B();
         if (!B.isEmpty()) {
             return B;
         }
-        List B2 = this.f29997b.B();
+        List B2 = this.f30013b.B();
         if (!B2.isEmpty()) {
             return B2;
         }
-        return this.f29996a.B();
+        return this.f30012a.B();
     }
 
     @Override // io.sentry.IScope
     public io.sentry.protocol.h0 C() {
-        io.sentry.protocol.h0 C = this.f29998c.C();
+        io.sentry.protocol.h0 C = this.f30014c.C();
         if (C != null) {
             return C;
         }
-        io.sentry.protocol.h0 C2 = this.f29997b.C();
+        io.sentry.protocol.h0 C2 = this.f30013b.C();
         if (C2 != null) {
             return C2;
         }
-        return this.f29996a.C();
+        return this.f30012a.C();
     }
 
     @Override // io.sentry.IScope
     public String D() {
-        String D = this.f29998c.D();
+        String D = this.f30014c.D();
         if (D != null) {
             return D;
         }
-        String D2 = this.f29997b.D();
+        String D2 = this.f30013b.D();
         if (D2 != null) {
             return D2;
         }
-        return this.f29996a.D();
+        return this.f30012a.D();
     }
 
     @Override // io.sentry.IScope
@@ -110,7 +110,7 @@ public final class g implements IScope {
 
     @Override // io.sentry.IScope
     public io.sentry.featureflags.b F() {
-        return io.sentry.featureflags.a.c(b(), this.f29996a.F(), this.f29997b.F(), this.f29998c.F());
+        return io.sentry.featureflags.a.c(b(), this.f30012a.F(), this.f30013b.F(), this.f30014c.F());
     }
 
     @Override // io.sentry.IScope
@@ -125,29 +125,29 @@ public final class g implements IScope {
 
     @Override // io.sentry.IScope
     public z7 I() {
-        z7 I = this.f29998c.I();
+        z7 I = this.f30014c.I();
         if (I != null) {
             return I;
         }
-        z7 I2 = this.f29997b.I();
+        z7 I2 = this.f30013b.I();
         if (I2 != null) {
             return I2;
         }
-        return this.f29996a.I();
+        return this.f30012a.I();
     }
 
     @Override // io.sentry.IScope
     public io.sentry.protocol.x J() {
-        io.sentry.protocol.x J = this.f29998c.J();
-        io.sentry.protocol.x xVar = io.sentry.protocol.x.f30470e;
+        io.sentry.protocol.x J = this.f30014c.J();
+        io.sentry.protocol.x xVar = io.sentry.protocol.x.f30486e;
         if (!xVar.equals(J)) {
             return J;
         }
-        io.sentry.protocol.x J2 = this.f29997b.J();
+        io.sentry.protocol.x J2 = this.f30013b.J();
         if (!xVar.equals(J2)) {
             return J2;
         }
-        return this.f29996a.J();
+        return this.f30012a.J();
     }
 
     @Override // io.sentry.IScope
@@ -162,29 +162,29 @@ public final class g implements IScope {
 
     @Override // io.sentry.IScope
     public y0 M() {
-        y0 M = this.f29998c.M();
+        y0 M = this.f30014c.M();
         if (!(M instanceof s2)) {
             return M;
         }
-        y0 M2 = this.f29997b.M();
+        y0 M2 = this.f30013b.M();
         if (!(M2 instanceof s2)) {
             return M2;
         }
-        return this.f29996a.M();
+        return this.f30012a.M();
     }
 
     @Override // io.sentry.IScope
     public List N() {
         CopyOnWriteArrayList copyOnWriteArrayList = new CopyOnWriteArrayList();
-        copyOnWriteArrayList.addAll(this.f29996a.N());
-        copyOnWriteArrayList.addAll(this.f29997b.N());
-        copyOnWriteArrayList.addAll(this.f29998c.N());
+        copyOnWriteArrayList.addAll(this.f30012a.N());
+        copyOnWriteArrayList.addAll(this.f30013b.N());
+        copyOnWriteArrayList.addAll(this.f30014c.N());
         return copyOnWriteArrayList;
     }
 
     @Override // io.sentry.IScope
     public void O(SentryEvent sentryEvent) {
-        this.f29996a.O(sentryEvent);
+        this.f30012a.O(sentryEvent);
     }
 
     @Override // io.sentry.IScope
@@ -204,9 +204,9 @@ public final class g implements IScope {
 
     @Override // io.sentry.IScope
     public void S(io.sentry.protocol.x xVar) {
-        this.f29996a.S(xVar);
-        this.f29997b.S(xVar);
-        this.f29998c.S(xVar);
+        this.f30012a.S(xVar);
+        this.f30013b.S(xVar);
+        this.f30014c.S(xVar);
     }
 
     @Override // io.sentry.IScope
@@ -222,7 +222,7 @@ public final class g implements IScope {
     /* JADX INFO: Access modifiers changed from: package-private */
     public IScope V(d4 d4Var) {
         if (d4Var != null) {
-            int i10 = a.f29999a[d4Var.ordinal()];
+            int i10 = a.f30015a[d4Var.ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 != 3) {
@@ -230,26 +230,26 @@ public final class g implements IScope {
                             return this;
                         }
                     } else {
-                        return this.f29996a;
+                        return this.f30012a;
                     }
                 } else {
-                    return this.f29997b;
+                    return this.f30013b;
                 }
             } else {
-                return this.f29998c;
+                return this.f30014c;
             }
         }
-        int i11 = a.f29999a[b().getDefaultScopeType().ordinal()];
+        int i11 = a.f30015a[b().getDefaultScopeType().ordinal()];
         if (i11 != 1) {
             if (i11 != 2) {
                 if (i11 != 3) {
-                    return this.f29998c;
+                    return this.f30014c;
                 }
-                return this.f29996a;
+                return this.f30012a;
             }
-            return this.f29997b;
+            return this.f30013b;
         }
-        return this.f29998c;
+        return this.f30014c;
     }
 
     @Override // io.sentry.IScope
@@ -259,20 +259,20 @@ public final class g implements IScope {
 
     @Override // io.sentry.IScope
     public k7 b() {
-        return this.f29996a.b();
+        return this.f30012a.b();
     }
 
     @Override // io.sentry.IScope
     public io.sentry.protocol.o c() {
-        io.sentry.protocol.o c10 = this.f29998c.c();
+        io.sentry.protocol.o c10 = this.f30014c.c();
         if (c10 != null) {
             return c10;
         }
-        io.sentry.protocol.o c11 = this.f29997b.c();
+        io.sentry.protocol.o c11 = this.f30013b.c();
         if (c11 != null) {
             return c11;
         }
-        return this.f29996a.c();
+        return this.f30012a.c();
     }
 
     @Override // io.sentry.IScope
@@ -298,28 +298,28 @@ public final class g implements IScope {
     @Override // io.sentry.IScope
     public Map getExtras() {
         ConcurrentHashMap concurrentHashMap = new ConcurrentHashMap();
-        concurrentHashMap.putAll(this.f29996a.getExtras());
-        concurrentHashMap.putAll(this.f29997b.getExtras());
-        concurrentHashMap.putAll(this.f29998c.getExtras());
+        concurrentHashMap.putAll(this.f30012a.getExtras());
+        concurrentHashMap.putAll(this.f30013b.getExtras());
+        concurrentHashMap.putAll(this.f30014c.getExtras());
         return concurrentHashMap;
     }
 
     @Override // io.sentry.IScope
     public String h() {
-        String h10 = this.f29998c.h();
+        String h10 = this.f30014c.h();
         if (h10 != null) {
             return h10;
         }
-        String h11 = this.f29997b.h();
+        String h11 = this.f30013b.h();
         if (h11 != null) {
             return h11;
         }
-        return this.f29996a.h();
+        return this.f30012a.h();
     }
 
     @Override // io.sentry.IScope
     public void i(Throwable th2, ISpan iSpan, String str) {
-        this.f29996a.i(th2, iSpan, str);
+        this.f30012a.i(th2, iSpan, str);
     }
 
     @Override // io.sentry.IScope
@@ -329,15 +329,15 @@ public final class g implements IScope {
 
     @Override // io.sentry.IScope
     public e1 k() {
-        e1 k10 = this.f29998c.k();
+        e1 k10 = this.f30014c.k();
         if (k10 != null) {
             return k10;
         }
-        e1 k11 = this.f29997b.k();
+        e1 k11 = this.f30013b.k();
         if (k11 != null) {
             return k11;
         }
-        return this.f29996a.k();
+        return this.f30012a.k();
     }
 
     @Override // io.sentry.IScope
@@ -347,15 +347,15 @@ public final class g implements IScope {
 
     @Override // io.sentry.IScope
     public SentryLevel m() {
-        SentryLevel m10 = this.f29998c.m();
+        SentryLevel m10 = this.f30014c.m();
         if (m10 != null) {
             return m10;
         }
-        SentryLevel m11 = this.f29997b.m();
+        SentryLevel m11 = this.f30013b.m();
         if (m11 != null) {
             return m11;
         }
-        return this.f29996a.m();
+        return this.f30012a.m();
     }
 
     @Override // io.sentry.IScope
@@ -375,30 +375,30 @@ public final class g implements IScope {
 
     @Override // io.sentry.IScope
     public void q(k7 k7Var) {
-        this.f29996a.q(k7Var);
+        this.f30012a.q(k7Var);
     }
 
     @Override // io.sentry.IScope
     public ISpan r() {
-        ISpan r10 = this.f29998c.r();
+        ISpan r10 = this.f30014c.r();
         if (r10 != null) {
             return r10;
         }
-        ISpan r11 = this.f29997b.r();
+        ISpan r11 = this.f30013b.r();
         if (r11 != null) {
             return r11;
         }
-        return this.f29996a.r();
+        return this.f30012a.r();
     }
 
     @Override // io.sentry.IScope
     public Queue s() {
         ArrayList arrayList = new ArrayList();
-        arrayList.addAll(this.f29996a.s());
-        arrayList.addAll(this.f29997b.s());
-        arrayList.addAll(this.f29998c.s());
+        arrayList.addAll(this.f30012a.s());
+        arrayList.addAll(this.f30013b.s());
+        arrayList.addAll(this.f30014c.s());
         Collections.sort(arrayList);
-        Queue V = z3.V(this.f29998c.b().getMaxBreadcrumbs());
+        Queue V = z3.V(this.f30014c.b().getMaxBreadcrumbs());
         V.addAll(arrayList);
         return V;
     }
@@ -416,9 +416,9 @@ public final class g implements IScope {
     @Override // io.sentry.IScope
     public Map v() {
         ConcurrentHashMap concurrentHashMap = new ConcurrentHashMap();
-        concurrentHashMap.putAll(this.f29996a.v());
-        concurrentHashMap.putAll(this.f29997b.v());
-        concurrentHashMap.putAll(this.f29998c.v());
+        concurrentHashMap.putAll(this.f30012a.v());
+        concurrentHashMap.putAll(this.f30013b.v());
+        concurrentHashMap.putAll(this.f30014c.v());
         return concurrentHashMap;
     }
 
@@ -430,16 +430,16 @@ public final class g implements IScope {
     @Override // io.sentry.IScope
     public List x() {
         CopyOnWriteArrayList copyOnWriteArrayList = new CopyOnWriteArrayList();
-        copyOnWriteArrayList.addAll(this.f29996a.x());
-        copyOnWriteArrayList.addAll(this.f29997b.x());
-        copyOnWriteArrayList.addAll(this.f29998c.x());
+        copyOnWriteArrayList.addAll(this.f30012a.x());
+        copyOnWriteArrayList.addAll(this.f30013b.x());
+        copyOnWriteArrayList.addAll(this.f30014c.x());
         Collections.sort(copyOnWriteArrayList);
         return copyOnWriteArrayList;
     }
 
     @Override // io.sentry.IScope
     public io.sentry.protocol.c y() {
-        return new f(this.f29996a.y(), this.f29997b.y(), this.f29998c.y(), b().getDefaultScopeType());
+        return new f(this.f30012a.y(), this.f30013b.y(), this.f30014c.y(), b().getDefaultScopeType());
     }
 
     @Override // io.sentry.IScope
@@ -450,6 +450,6 @@ public final class g implements IScope {
     @Override // io.sentry.IScope
     /* renamed from: clone */
     public IScope m1181clone() {
-        return new g(this.f29996a, this.f29997b.clone(), this.f29998c.clone());
+        return new g(this.f30012a, this.f30013b.clone(), this.f30014c.clone());
     }
 }

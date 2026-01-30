@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot11 = var6;
     var6 = var7.memo;
     var1 = function(arg0) { // Original name: ChannelsEmpty, environment: var1
-        _fun103153: for (var _fun103153_ip = 0;;) switch (_fun103153_ip) {
+        _fun103409: for (var _fun103409_ip = 0;;) switch (_fun103409_ip) {
             case 0:
                 var1 = arg0;
                 var1 = var1.guild;
@@ -207,8 +207,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4[1] = var6;
                 var0.style = var4;
                 if (!var5) {
-                    _fun103153_ip = 392;
-                    continue _fun103153
+                    _fun103409_ip = 392;
+                    continue _fun103409
                 }
             case 222:
                 var7 = _closure1_slot9;
@@ -320,8 +320,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var12.bind(var3)(var11, var10);
                 var8[2] = var10;
                 if (!var9) {
-                    _fun103153_ip = 840;
-                    continue _fun103153
+                    _fun103409_ip = 840;
+                    continue _fun103409
                 }
             case 692:
                 var12 = _closure1_slot9;
@@ -375,4 +375,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3050, 13121, 660, 33, 1297, 3895, 671, 632, 8112, 8092, 5337, 4039, 13437, 1234, 13438, 4829, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3050, 13146, 660, 33, 1297, 3901, 671, 632, 8115, 8095, 5341, 4045, 13462, 1234, 13463, 4835, 2]);

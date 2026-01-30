@@ -268,7 +268,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         annotatedStructurableText2 = annotatedStructurableText3;
                         int i26 = i24;
                         i15 = i23;
-                        Unit unit = Unit.f33282a;
+                        Unit unit = Unit.f33298a;
                         num18 = num30;
                         i25 = i25;
                         i16 = i26;
@@ -293,7 +293,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         codedLinkExtendedType2 = codedLinkExtendedType4;
                         annotatedStructurableText2 = annotatedStructurableText3;
                         int i27 = b10.i(serialDescriptor, 0);
-                        Unit unit2 = Unit.f33282a;
+                        Unit unit2 = Unit.f33298a;
                         num18 = num30;
                         i25 = i25;
                         i16 = i24 | 1;
@@ -321,7 +321,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         i15 = i23;
                         int i29 = b10.i(serialDescriptor, 1);
                         int i30 = i28 | 2;
-                        Unit unit3 = Unit.f33282a;
+                        Unit unit3 = Unit.f33298a;
                         num18 = num30;
                         i25 = i29;
                         i16 = i30;
@@ -347,7 +347,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         i15 = i23;
                         int i32 = b10.i(serialDescriptor, 2);
                         int i33 = i31 | 4;
-                        Unit unit4 = Unit.f33282a;
+                        Unit unit4 = Unit.f33298a;
                         num18 = num30;
                         i25 = i25;
                         i16 = i33;
@@ -374,7 +374,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         int i34 = i24;
                         i15 = i23;
                         int i35 = i34 | 8;
-                        Unit unit5 = Unit.f33282a;
+                        Unit unit5 = Unit.f33298a;
                         num18 = num30;
                         i25 = i25;
                         i16 = i35;
@@ -401,7 +401,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         int i36 = i24;
                         i15 = i23;
                         int i37 = i36 | 16;
-                        Unit unit6 = Unit.f33282a;
+                        Unit unit6 = Unit.f33298a;
                         num18 = num30;
                         i25 = i25;
                         i16 = i37;
@@ -428,7 +428,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         int i38 = i24;
                         i15 = i23;
                         int i39 = i38 | 32;
-                        Unit unit7 = Unit.f33282a;
+                        Unit unit7 = Unit.f33298a;
                         num18 = num30;
                         i25 = i25;
                         i16 = i39;
@@ -455,7 +455,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         int i40 = i24;
                         i15 = i23;
                         int i41 = i40 | 64;
-                        Unit unit8 = Unit.f33282a;
+                        Unit unit8 = Unit.f33298a;
                         num18 = num30;
                         i25 = i25;
                         i16 = i41;
@@ -482,7 +482,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         int i42 = i24;
                         i15 = i23;
                         int i43 = i42 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT;
-                        Unit unit9 = Unit.f33282a;
+                        Unit unit9 = Unit.f33298a;
                         num18 = num30;
                         i25 = i25;
                         i16 = i43;
@@ -509,7 +509,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         int i44 = i24;
                         i15 = i23;
                         int i45 = i44 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER;
-                        Unit unit10 = Unit.f33282a;
+                        Unit unit10 = Unit.f33298a;
                         num18 = num30;
                         i25 = i25;
                         i16 = i45;
@@ -536,7 +536,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         int i46 = i24;
                         i15 = i23;
                         int i47 = i46 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING;
-                        Unit unit11 = Unit.f33282a;
+                        Unit unit11 = Unit.f33298a;
                         num18 = num30;
                         i25 = i25;
                         i16 = i47;
@@ -563,7 +563,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         int i48 = i24;
                         i15 = i23;
                         int i49 = i48 | IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET;
-                        Unit unit12 = Unit.f33282a;
+                        Unit unit12 = Unit.f33298a;
                         num18 = num30;
                         i25 = i25;
                         i16 = i49;
@@ -590,7 +590,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         int i50 = i24;
                         i15 = i23;
                         int i51 = i50 | RecyclerView.ItemAnimator.FLAG_MOVED;
-                        Unit unit13 = Unit.f33282a;
+                        Unit unit13 = Unit.f33298a;
                         num18 = num30;
                         i25 = i25;
                         i16 = i51;
@@ -617,7 +617,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         int i52 = i24;
                         i15 = i23;
                         int i53 = i52 | RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
-                        Unit unit14 = Unit.f33282a;
+                        Unit unit14 = Unit.f33298a;
                         num18 = num30;
                         i25 = i25;
                         i16 = i53;
@@ -645,7 +645,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         i15 = i23;
                         num12 = num31;
                         int i56 = i55 | 8192;
-                        Unit unit15 = Unit.f33282a;
+                        Unit unit15 = Unit.f33298a;
                         i16 = i56;
                         i25 = i54;
                         num18 = (Integer) b10.n(serialDescriptor, 13, p0.f6864a, num30);
@@ -670,7 +670,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         i15 = i23;
                         bool4 = bool10;
                         i17 = i57 | 16384;
-                        Unit unit16 = Unit.f33282a;
+                        Unit unit16 = Unit.f33298a;
                         num12 = (Integer) b10.n(serialDescriptor, 14, p0.f6864a, num31);
                         i25 = i25;
                         num18 = num30;
@@ -696,7 +696,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         i15 = i23;
                         num13 = num32;
                         int i60 = 32768 | i59;
-                        Unit unit17 = Unit.f33282a;
+                        Unit unit17 = Unit.f33298a;
                         i16 = i60;
                         i25 = i58;
                         bool4 = (Boolean) b10.n(serialDescriptor, 15, h.f6812a, bool10);
@@ -721,7 +721,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         i15 = i23;
                         str11 = str24;
                         i17 = 65536 | i61;
-                        Unit unit18 = Unit.f33282a;
+                        Unit unit18 = Unit.f33298a;
                         num13 = (Integer) b10.n(serialDescriptor, 16, p0.f6864a, num32);
                         i25 = i25;
                         num18 = num30;
@@ -747,7 +747,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         i15 = i23;
                         str12 = str25;
                         int i64 = 131072 | i63;
-                        Unit unit19 = Unit.f33282a;
+                        Unit unit19 = Unit.f33298a;
                         i16 = i64;
                         i25 = i62;
                         str11 = (String) b10.n(serialDescriptor, 17, n2.f6848a, str24);
@@ -772,7 +772,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         i15 = i23;
                         str13 = str26;
                         i17 = 262144 | i65;
-                        Unit unit20 = Unit.f33282a;
+                        Unit unit20 = Unit.f33298a;
                         str12 = (String) b10.n(serialDescriptor, 18, n2.f6848a, str25);
                         i25 = i25;
                         num18 = num30;
@@ -798,7 +798,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         i15 = i23;
                         num14 = num33;
                         int i68 = 524288 | i67;
-                        Unit unit21 = Unit.f33282a;
+                        Unit unit21 = Unit.f33298a;
                         i16 = i68;
                         i25 = i66;
                         str13 = (String) b10.n(serialDescriptor, 19, n2.f6848a, str26);
@@ -823,7 +823,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         i15 = i23;
                         num15 = num34;
                         i17 = 1048576 | i69;
-                        Unit unit22 = Unit.f33282a;
+                        Unit unit22 = Unit.f33298a;
                         num14 = (Integer) b10.n(serialDescriptor, 20, p0.f6864a, num33);
                         i25 = i25;
                         num18 = num30;
@@ -849,7 +849,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         i15 = i23;
                         num16 = num35;
                         int i72 = 2097152 | i71;
-                        Unit unit23 = Unit.f33282a;
+                        Unit unit23 = Unit.f33298a;
                         i16 = i72;
                         i25 = i70;
                         num15 = (Integer) b10.n(serialDescriptor, 21, p0.f6864a, num34);
@@ -874,7 +874,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         i15 = i23;
                         str14 = str27;
                         i17 = 4194304 | i73;
-                        Unit unit24 = Unit.f33282a;
+                        Unit unit24 = Unit.f33298a;
                         num16 = (Integer) b10.n(serialDescriptor, 22, p0.f6864a, num35);
                         i25 = i25;
                         num18 = num30;
@@ -900,7 +900,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         i15 = i23;
                         str15 = str28;
                         int i76 = 8388608 | i75;
-                        Unit unit25 = Unit.f33282a;
+                        Unit unit25 = Unit.f33298a;
                         i16 = i76;
                         i25 = i74;
                         str14 = (String) b10.n(serialDescriptor, 23, n2.f6848a, str27);
@@ -925,7 +925,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         i15 = i23;
                         num17 = num36;
                         i17 = 16777216 | i77;
-                        Unit unit26 = Unit.f33282a;
+                        Unit unit26 = Unit.f33298a;
                         str15 = (String) b10.n(serialDescriptor, 24, n2.f6848a, str28);
                         i25 = i25;
                         num18 = num30;
@@ -951,7 +951,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         i15 = i23;
                         str16 = str29;
                         int i80 = 33554432 | i79;
-                        Unit unit27 = Unit.f33282a;
+                        Unit unit27 = Unit.f33298a;
                         i16 = i80;
                         i25 = i78;
                         num17 = (Integer) b10.n(serialDescriptor, 25, p0.f6864a, num36);
@@ -976,7 +976,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         i15 = i23;
                         list2 = list4;
                         i17 = 67108864 | i81;
-                        Unit unit28 = Unit.f33282a;
+                        Unit unit28 = Unit.f33298a;
                         str16 = (String) b10.n(serialDescriptor, 26, n2.f6848a, str29);
                         i25 = i25;
                         num18 = num30;
@@ -1003,7 +1003,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         DeserializationStrategy deserializationStrategy = (DeserializationStrategy) lazyArr[27].getValue();
                         codedLinkExtendedType2 = codedLinkExtendedType4;
                         int i84 = 134217728 | i83;
-                        Unit unit29 = Unit.f33282a;
+                        Unit unit29 = Unit.f33298a;
                         i16 = i84;
                         i25 = i82;
                         list2 = (List) b10.y(serialDescriptor, 27, deserializationStrategy, list4);
@@ -1029,7 +1029,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         i15 = i23;
                         annotatedStructurableText2 = annotatedStructurableText3;
                         int i87 = 268435456 | i86;
-                        Unit unit30 = Unit.f33282a;
+                        Unit unit30 = Unit.f33298a;
                         i16 = i87;
                         i25 = i85;
                         codedLinkExtendedType2 = (CodedLinkExtendedType) b10.y(serialDescriptor, 28, CodedLinkExtendedType.Serializer.INSTANCE, codedLinkExtendedType4);
@@ -1054,7 +1054,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         int i88 = i24;
                         i15 = i23;
                         i17 = 536870912 | i88;
-                        Unit unit31 = Unit.f33282a;
+                        Unit unit31 = Unit.f33298a;
                         annotatedStructurableText2 = (AnnotatedStructurableText) b10.n(serialDescriptor, 29, AnnotatedStructurableTextSerializer.INSTANCE, annotatedStructurableText3);
                         i25 = i25;
                         num18 = num30;
@@ -1079,7 +1079,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                         i14 = i22;
                         String m11 = b10.m(serialDescriptor, 30);
                         i18 = i24 | 1073741824;
-                        Unit unit32 = Unit.f33282a;
+                        Unit unit32 = Unit.f33298a;
                         str30 = m11;
                         num18 = num30;
                         num12 = num31;
@@ -1104,7 +1104,7 @@ public /* synthetic */ class EmbeddedActivityInviteEmbedImpl$$serializer impleme
                     case ChatViewRecyclerTypes.EMBEDDED_ACTIVITY_INVITE /* 31 */:
                         z12 = b10.C(serialDescriptor, 31);
                         i18 = i24 | Integer.MIN_VALUE;
-                        Unit unit33 = Unit.f33282a;
+                        Unit unit33 = Unit.f33298a;
                         i14 = i22;
                         num18 = num30;
                         num12 = num31;

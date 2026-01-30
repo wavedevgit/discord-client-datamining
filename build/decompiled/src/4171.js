@@ -3,416 +3,578 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = exports;
     var0 = require;
     var _closure1_slot0 = var0;
-    var0 = metroImportDefault;
-    var _closure1_slot1 = var0;
     var0 = dependencyMap;
+    var _closure1_slot1 = var0;
+    var0 = function(arg0) { // Original name: toCompany, environment: var3
+        _fun38272: for (var _fun38272_ip = 0;;) switch (_fun38272_ip) {
+            case 0:
+                var0 = arg0;
+                var1 = var0.toLowerCase;
+                var2 = var1.bind(var0)();
+                var1 = 'appl';
+                if (!(var1 !== var2)) {
+                    _fun38272_ip = 113;
+                    continue _fun38272
+                }
+            case 23:
+                var1 = 'adbe';
+                if (!(var1 !== var2)) {
+                    _fun38272_ip = 105;
+                    continue _fun38272
+                }
+            case 33:
+                var1 = 'msft';
+                if (!(var1 !== var2)) {
+                    _fun38272_ip = 99;
+                    continue _fun38272
+                }
+            case 43:
+                var1 = 'sunw';
+                if (!(var1 !== var2)) {
+                    _fun38272_ip = 91;
+                    continue _fun38272
+                }
+            case 53:
+                var1 = 'sgi';
+                if (!(var1 !== var2)) {
+                    _fun38272_ip = 83;
+                    continue _fun38272
+                }
+            case 63:
+                var1 = 'tgnt';
+                if (!(var1 !== var2)) {
+                    _fun38272_ip = 75;
+                    continue _fun38272
+                }
+            case 73:
+                return var0;
+            case 75:
+                var0 = 'Taligent';
+                return var0;
+            case 83:
+                var0 = 'Silicon Graphics';
+                return var0;
+            case 91:
+                var0 = 'Sun Microsystems';
+                return var0;
+            case 99:
+                var0 = 'Microsoft';
+                return var0;
+            case 105:
+                var0 = 'Adobe';
+                return var0;
+            case 113:
+                var0 = 'Apple';
+                return var0;
+        }
+    };
     var _closure1_slot2 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: getPixelsPerUnitX, environment: var2
-        _fun38280: for (var _fun38280_ip = 0;;) switch (_fun38280_ip) {
-            case 0:
-                var3 = arg0;
-                var5 = arg1;
-                var6 = _closure1_slot7;
-                var7 = undefined;
-                var11 = arg2;
-                var4 = 0;
-                var9 = 4;
-                var14 = undefined;
-                var13 = var3;
-                var12 = var5;
-                var10 = 0;
-                var1 = var14[var6](var13, var12, var11, var10, var9, var8);
-                if (var1) {
-                    _fun38280_ip = 42;
-                    continue _fun38280
-                }
-            case 40:
-                return var7;
-            case 42:
-                var2 = _closure1_slot1;
-                var8 = _closure1_slot2;
-                var1 = var8[var4];
-                var2 = var2.bind(var7)(var1);
-                var1 = var2.getLongAt;
-                var6 = _closure1_slot0;
-                var0 = 1;
-                var0 = var8[var0];
-                var0 = var6.bind(var7)(var0);
-                var0 = var0.PNG_CHUNK_DATA_OFFSET;
-                var0 = var5 + var0;
-                var0 = var0 + var4;
-                var1 = var1.bind(var2)(var3, var0);
-                var0 = {};
-                var0.value = var1;
-                var1 = '' + var1;
-                var0.description = var1;
-                return var0;
-        }
-    };
-    var _closure1_slot3 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: getPixelsPerUnitY, environment: var2
-        _fun38281: for (var _fun38281_ip = 0;;) switch (_fun38281_ip) {
-            case 0:
-                var3 = arg0;
-                var5 = arg1;
-                var2 = _closure1_slot7;
-                var7 = undefined;
-                var11 = arg2;
-                var4 = 4;
-                var14 = undefined;
-                var13 = var3;
-                var12 = var5;
-                var10 = var4;
-                var9 = var4;
-                var1 = var14[var2](var13, var12, var11, var10, var9, var8);
-                if (var1) {
-                    _fun38281_ip = 44;
-                    continue _fun38281
-                }
-            case 42:
-                return var7;
-            case 44:
-                var2 = _closure1_slot1;
-                var8 = _closure1_slot2;
-                var1 = 0;
-                var1 = var8[var1];
-                var2 = var2.bind(var7)(var1);
-                var1 = var2.getLongAt;
-                var6 = _closure1_slot0;
-                var0 = 1;
-                var0 = var8[var0];
-                var0 = var6.bind(var7)(var0);
-                var0 = var0.PNG_CHUNK_DATA_OFFSET;
-                var0 = var5 + var0;
-                var0 = var0 + var4;
-                var1 = var1.bind(var2)(var3, var0);
-                var0 = {};
-                var0.value = var1;
-                var1 = '' + var1;
-                var0.description = var1;
-                return var0;
-        }
-    };
-    var _closure1_slot4 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: getPixelUnits, environment: var2
-        _fun38282: for (var _fun38282_ip = 0;;) switch (_fun38282_ip) {
-            case 0:
-                var4 = arg0;
-                var6 = arg1;
-                var1 = _closure1_slot7;
-                var8 = undefined;
-                var11 = arg2;
-                var5 = 8;
-                var3 = 1;
-                var14 = undefined;
-                var13 = var4;
-                var12 = var6;
-                var10 = var5;
-                var9 = var3;
-                var0 = var14[var1](var13, var12, var11, var10, var9, var8);
-                if (var0) {
-                    _fun38282_ip = 47;
-                    continue _fun38282
-                }
-            case 45:
-                return var8;
-            case 47:
-                var2 = _closure1_slot1;
-                var0 = _closure1_slot2;
-                var1 = 0;
-                var1 = var0[var1];
-                var2 = var2.bind(var8)(var1);
-                var1 = var2.getByteAt;
-                var7 = _closure1_slot0;
-                var0 = var0[var3];
-                var0 = var7.bind(var8)(var0);
-                var0 = var0.PNG_CHUNK_DATA_OFFSET;
-                var0 = var6 + var0;
-                var0 = var0 + var5;
-                var2 = var1.bind(var2)(var4, var0);
-                var0 = {};
-                var0.value = var2;
-                var1 = 'Unknown';
-                if (!(var3 === var2)) {
-                    _fun38282_ip = 125;
-                    continue _fun38282
-                }
-            case 119:
-                var1 = 'meters';
-            case 125:
-                var0.description = var1;
-                return var0;
-        }
-    };
-    var _closure1_slot5 = var0;
-    var0 = function(arg0, arg1, arg2) { // Original name: getModifyDate, environment: var2
-        _fun38283: for (var _fun38283_ip = 0;;) switch (_fun38283_ip) {
-            case 0:
-                var12 = arg0;
-                var13 = arg1;
-                var5 = _closure1_slot7;
-                var4 = undefined;
-                var27 = arg2;
-                var2 = 0;
-                var25 = 7;
-                var30 = undefined;
-                var29 = var12;
-                var28 = var13;
-                var26 = 0;
-                var0 = var30[var5](var29, var28, var27, var26, var25, var24);
-                if (var0) {
-                    _fun38283_ip = 42;
-                    continue _fun38283
-                }
-            case 40:
-                return var4;
-            case 42:
-                var11 = _closure1_slot1;
-                var15 = _closure1_slot2;
-                var0 = var15[var2];
-                var6 = var11.bind(var4)(var0);
-                var5 = var6.getShortAt;
-                var14 = _closure1_slot0;
-                var0 = 1;
-                var3 = var15[var0];
-                var3 = var14.bind(var4)(var3);
-                var3 = var3.PNG_CHUNK_DATA_OFFSET;
-                var3 = var13 + var3;
-                var10 = var5.bind(var6)(var12, var3);
-                var3 = var15[var2];
-                var7 = var11.bind(var4)(var3);
-                var6 = var7.getByteAt;
-                var3 = var15[var0];
-                var3 = var14.bind(var4)(var3);
-                var3 = var3.PNG_CHUNK_DATA_OFFSET;
-                var5 = var13 + var3;
-                var3 = 2;
-                var5 = var5 + var3;
-                var8 = var6.bind(var7)(var12, var5);
-                var5 = var15[var2];
-                var7 = var11.bind(var4)(var5);
-                var6 = var7.getByteAt;
-                var5 = var15[var0];
-                var5 = var14.bind(var4)(var5);
-                var5 = var5.PNG_CHUNK_DATA_OFFSET;
-                var9 = var13 + var5;
-                var5 = 3;
-                var5 = var9 + var5;
-                var7 = var6.bind(var7)(var12, var5);
-                var5 = var15[var2];
-                var16 = var11.bind(var4)(var5);
-                var6 = var16.getByteAt;
-                var5 = var15[var0];
-                var5 = var14.bind(var4)(var5);
-                var5 = var5.PNG_CHUNK_DATA_OFFSET;
-                var5 = var13 + var5;
-                var9 = 4;
-                var5 = var5 + var9;
-                var6 = var6.bind(var16)(var12, var5);
-                var5 = var15[var2];
-                var17 = var11.bind(var4)(var5);
-                var16 = var17.getByteAt;
-                var5 = var15[var0];
-                var5 = var14.bind(var4)(var5);
-                var5 = var5.PNG_CHUNK_DATA_OFFSET;
-                var18 = var13 + var5;
-                var5 = 5;
-                var5 = var18 + var5;
-                var5 = var16.bind(var17)(var12, var5);
-                var2 = var15[var2];
-                var11 = var11.bind(var4)(var2);
-                var2 = var11.getByteAt;
-                var0 = var15[var0];
-                var0 = var14.bind(var4)(var0);
-                var0 = var0.PNG_CHUNK_DATA_OFFSET;
-                var13 = var13 + var0;
-                var0 = 6;
-                var0 = var13 + var0;
-                var2 = var2.bind(var11)(var12, var0);
-                var0 = {};
-                var11 = new Array(6);
-                var11[0] = var10;
-                var11[1] = var8;
-                var11[2] = var7;
-                var11[3] = var6;
-                var11[4] = var5;
-                var11[5] = var2;
-                var0.value = var11;
-                var1 = _closure1_slot8;
-                var11 = var1.bind(var4)(var10, var9);
-                var27 = var1.bind(var4)(var8, var3);
-                var25 = var1.bind(var4)(var7, var3);
-                var23 = var1.bind(var4)(var6, var3);
-                var21 = var1.bind(var4)(var5, var3);
-                var19 = var1.bind(var4)(var2, var3);
-                var1 = global;
-                var1 = var1.HermesInternal;
-                var5 = var1.concat;
-                var30 = '';
-                var3 = '-';
-                var24 = ' ';
-                var1 = ':';
-                var29 = var11;
-                var28 = var3;
-                var26 = var3;
-                var22 = var1;
-                var20 = var1;
-                var1 = var30[var5](var29, var28, var27, var26, var25, var24, var23, var22, var21, var20, var19, var18);
-                var0.description = var1;
-                return var0;
-        }
-    };
-    var _closure1_slot6 = var0;
-    var0 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: tagFitsInBuffer, environment: var2
-        _fun38284: for (var _fun38284_ip = 0;;) switch (_fun38284_ip) {
-            case 0:
-                var3 = arg3;
-                var2 = arg4;
-                var1 = var3 + var2;
-                var0 = arg2;
-                var0 = var1 <= var0;
-                if (!var0) {
-                    _fun38284_ip = 79;
-                    continue _fun38284
-                }
-            case 20:
-                var5 = _closure1_slot0;
-                var4 = _closure1_slot2;
-                var1 = 1;
-                var4 = var4[var1];
-                var1 = undefined;
-                var1 = var5.bind(var1)(var4);
-                var4 = var1.PNG_CHUNK_DATA_OFFSET;
-                var1 = arg1;
-                var1 = var1 + var4;
-                var1 = var1 + var3;
-                var2 = var1 + var2;
-                var1 = arg0;
-                var1 = var1.byteLength;
-                var0 = var2 <= var1;
-            case 79:
-                return var0;
-        }
-    };
-    var _closure1_slot7 = var0;
-    var0 = function(arg0, arg1) { // Original name: pad, environment: var2
-        var3 = arg0;
-        var2 = '0';
-        var1 = var2.repeat;
-        var0 = '' + var3;
-        var4 = var0.length;
-        var0 = arg1;
-        var0 = var0 - var4;
-        var2 = var1.bind(var2)(var0);
-        var0 = global;
-        var0 = var0.HermesInternal;
-        var1 = var0.concat;
-        var0 = '';
-        var0 = var1.bind(var0)(var2, var3);
-        return var0;
-    };
-    var _closure1_slot8 = var0;
     var0 = global;
     var5 = var0.Object;
     var4 = var5.defineProperty;
-    var3 = {};
+    var2 = {};
     var0 = true;
-    var3.value = var0;
+    var2.value = var0;
     var0 = '__esModule';
-    var0 = var4.bind(var5)(var1, var0, var3);
+    var0 = var4.bind(var5)(var1, var0, var2);
     var0 = {};
-    var2 = function(arg0, arg1) { // Original name: read, environment: var2
-        _fun38286: for (var _fun38286_ip = 0;;) switch (_fun38286_ip) {
+    var2 = {};
+    var4 = 'Preferred CMM type';
+    var2.name = var4;
+    var4 = function(arg0, arg1) { // Original name: value, environment: var3
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 0;
+        var1 = var1[var0];
+        var0 = undefined;
+        var4 = var2.bind(var0)(var1);
+        var3 = var4.getStringFromDataView;
+        var2 = arg0;
+        var1 = arg1;
+        var0 = 4;
+        var0 = var3.bind(var4)(var2, var1, var0);
+        return var0;
+    };
+    var2.value = var4;
+    var4 = function(arg0) { // Original name: description, environment: var3
+        _fun38274: for (var _fun38274_ip = 0;;) switch (_fun38274_ip) {
             case 0:
-                var9 = arg0;
-                var8 = arg1;
-                var0 = {};
-                var1 = var8.length;
-                var7 = 0;
-                var1 = var7 < var1;
-                var5 = undefined;
-                var4 = 1;
-                var3 = 2;
-                var2 = 0;
-                if (!var1) {
-                    _fun38286_ip = 309;
-                    continue _fun38286
+                var3 = arg0;
+                var0 = '';
+                var1 = null;
+                if (!(var1 !== var3)) {
+                    _fun38274_ip = 27;
+                    continue _fun38274
                 }
-            case 38:
-                var11 = _closure1_slot1;
-                var1 = _closure1_slot2;
-                var10 = var1[var7];
-                var13 = var11.bind(var5)(var10);
-                var11 = var13.getLongAt;
-                var14 = var8[var2];
-                var12 = _closure1_slot0;
-                var10 = var1[var4];
-                var10 = var12.bind(var5)(var10);
-                var10 = var10.PNG_CHUNK_LENGTH_OFFSET;
-                var10 = var14 + var10;
-                var11 = var11.bind(var13)(var9, var10);
-                var10 = var1[var3];
-                var15 = var12.bind(var5)(var10);
-                var14 = var15.getStringFromDataView;
-                var13 = var8[var2];
-                var10 = var1[var4];
-                var10 = var12.bind(var5)(var10);
-                var10 = var10.PNG_CHUNK_TYPE_OFFSET;
-                var13 = var13 + var10;
-                var10 = var1[var4];
-                var10 = var12.bind(var5)(var10);
-                var10 = var10.PNG_CHUNK_TYPE_SIZE;
-                var10 = var14.bind(var15)(var9, var13, var10);
-                var1 = var1[var4];
-                var1 = var12.bind(var5)(var1);
-                var1 = var1.TYPE_PHYS;
-                if (!(var10 !== var1)) {
-                    _fun38286_ip = 225;
-                    continue _fun38286
-                }
-            case 173:
-                var12 = _closure1_slot0;
-                var1 = _closure1_slot2;
-                var1 = var1[var4];
-                var1 = var12.bind(var5)(var1);
-                var1 = var1.TYPE_TIME;
-                if (!(var10 === var1)) {
-                    _fun38286_ip = 294;
-                    continue _fun38286
-                }
-            case 200:
-                var10 = _closure1_slot6;
-                var1 = var8[var2];
-                var1 = var10.bind(var5)(var9, var1, var11);
-                var0['Modify Date'] = var1;
-                _fun38286_ip = 294;
-                continue _fun38286;
-            case 225:
-                var10 = _closure1_slot3;
-                var1 = var8[var2];
-                var1 = var10.bind(var5)(var9, var1, var11);
-                var0['Pixels Per Unit X'] = var1;
-                var10 = _closure1_slot4;
-                var1 = var8[var2];
-                var1 = var10.bind(var5)(var9, var1, var11);
-                var0['Pixels Per Unit Y'] = var1;
-                var10 = _closure1_slot5;
-                var1 = var8[var2];
-                var1 = var10.bind(var5)(var9, var1, var11);
-                var0['Pixel Units'] = var1;
-            case 294:
-                var2 = var2 + 1;
-                var1 = var8.length;
-                if (var2 < var1) {
-                    _fun38286_ip = 38;
-                    continue _fun38286
-                }
-            case 309:
+            case 13:
+                var2 = _closure1_slot2;
+                var1 = undefined;
+                var0 = var2.bind(var1)(var3);
+            case 27:
                 return var0;
         }
     };
-    var0.read = var2;
-    var1.default = var0;
+    var2.description = var4;
+    var0[4] = var2;
+    var2 = {};
+    var4 = 'Profile Version';
+    var2.name = var4;
+    var4 = function(arg0, arg1) { // Original name: value, environment: var3
+        var5 = arg0;
+        var6 = arg1;
+        var0 = var5.getUint8;
+        var1 = var0.bind(var5)(var6);
+        var0 = var1.toString;
+        var4 = 10;
+        var0 = var0.bind(var1)(var4);
+        var2 = '.';
+        var3 = var0 + var2;
+        var7 = var5.getUint8;
+        var1 = 1;
+        var0 = var6 + var1;
+        var7 = var7.bind(var5)(var0);
+        var0 = 4;
+        var7 = var7 >> var0;
+        var0 = var7.toString;
+        var0 = var0.bind(var7)(var4);
+        var0 = var3 + var0;
+        var3 = var5.getUint8;
+        var1 = var6 + var1;
+        var3 = var3.bind(var5)(var1);
+        var1 = 16;
+        var3 = var3 % var1;
+        var1 = var3.toString;
+        var1 = var1.bind(var3)(var4);
+        var0 = var0 + var2;
+        var0 = var0 + var1;
+        return var0;
+    };
+    var2.value = var4;
+    var0[8] = var2;
+    var2 = {};
+    var4 = 'Profile/Device class';
+    var2.name = var4;
+    var4 = function(arg0, arg1) { // Original name: value, environment: var3
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 0;
+        var1 = var1[var0];
+        var0 = undefined;
+        var4 = var2.bind(var0)(var1);
+        var3 = var4.getStringFromDataView;
+        var2 = arg0;
+        var1 = arg1;
+        var0 = 4;
+        var0 = var3.bind(var4)(var2, var1, var0);
+        return var0;
+    };
+    var2.value = var4;
+    var4 = function(arg0) { // Original name: description, environment: var3
+        _fun38277: for (var _fun38277_ip = 0;;) switch (_fun38277_ip) {
+            case 0:
+                var0 = arg0;
+                var1 = var0.toLowerCase;
+                var2 = var1.bind(var0)();
+                var1 = 'scnr';
+                if (!(var1 !== var2)) {
+                    _fun38277_ip = 215;
+                    continue _fun38277
+                }
+            case 26:
+                var1 = 'mntr';
+                if (!(var1 !== var2)) {
+                    _fun38277_ip = 207;
+                    continue _fun38277
+                }
+            case 39:
+                var1 = 'prtr';
+                if (!(var1 !== var2)) {
+                    _fun38277_ip = 199;
+                    continue _fun38277
+                }
+            case 52:
+                var1 = 'link';
+                if (!(var1 !== var2)) {
+                    _fun38277_ip = 191;
+                    continue _fun38277
+                }
+            case 63:
+                var1 = 'abst';
+                if (!(var1 !== var2)) {
+                    _fun38277_ip = 183;
+                    continue _fun38277
+                }
+            case 73:
+                var1 = 'spac';
+                if (!(var1 !== var2)) {
+                    _fun38277_ip = 175;
+                    continue _fun38277
+                }
+            case 83:
+                var1 = 'nmcl';
+                if (!(var1 !== var2)) {
+                    _fun38277_ip = 167;
+                    continue _fun38277
+                }
+            case 93:
+                var1 = 'cenc';
+                if (!(var1 !== var2)) {
+                    _fun38277_ip = 159;
+                    continue _fun38277
+                }
+            case 103:
+                var1 = 'mid ';
+                if (!(var1 !== var2)) {
+                    _fun38277_ip = 151;
+                    continue _fun38277
+                }
+            case 113:
+                var1 = 'mlnk';
+                if (!(var1 !== var2)) {
+                    _fun38277_ip = 143;
+                    continue _fun38277
+                }
+            case 123:
+                var1 = 'mvis';
+                if (!(var1 !== var2)) {
+                    _fun38277_ip = 135;
+                    continue _fun38277
+                }
+            case 133:
+                return var0;
+            case 135:
+                var0 = 'MultiplexVisualization profile';
+                return var0;
+            case 143:
+                var0 = 'MultiplexLink profile';
+                return var0;
+            case 151:
+                var0 = 'MultiplexIdentification profile';
+                return var0;
+            case 159:
+                var0 = 'ColorEncodingSpace profile';
+                return var0;
+            case 167:
+                var0 = 'NamedColor profile';
+                return var0;
+            case 175:
+                var0 = 'ColorSpace profile';
+                return var0;
+            case 183:
+                var0 = 'Abstract profile';
+                return var0;
+            case 191:
+                var0 = 'DeviceLink profile';
+                return var0;
+            case 199:
+                var0 = 'Output Device profile';
+                return var0;
+            case 207:
+                var0 = 'Display Device profile';
+                return var0;
+            case 215:
+                var0 = 'Input Device profile';
+                return var0;
+        }
+    };
+    var2.description = var4;
+    var0[12] = var2;
+    var2 = {};
+    var4 = 'Color Space';
+    var2.name = var4;
+    var4 = function(arg0, arg1) { // Original name: value, environment: var3
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 0;
+        var1 = var1[var0];
+        var0 = undefined;
+        var4 = var2.bind(var0)(var1);
+        var3 = var4.getStringFromDataView;
+        var2 = arg0;
+        var1 = arg1;
+        var0 = 4;
+        var0 = var3.bind(var4)(var2, var1, var0);
+        return var0;
+    };
+    var2.value = var4;
+    var0[16] = var2;
+    var2 = {};
+    var4 = 'Connection Space';
+    var2.name = var4;
+    var4 = function(arg0, arg1) { // Original name: value, environment: var3
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 0;
+        var1 = var1[var0];
+        var0 = undefined;
+        var4 = var2.bind(var0)(var1);
+        var3 = var4.getStringFromDataView;
+        var2 = arg0;
+        var1 = arg1;
+        var0 = 4;
+        var0 = var3.bind(var4)(var2, var1, var0);
+        return var0;
+    };
+    var2.value = var4;
+    var0[20] = var2;
+    var2 = {};
+    var4 = 'ICC Profile Date';
+    var2.name = var4;
+    var4 = function(arg0, arg1) { // Original name: value, environment: var3
+        var2 = arg0;
+        var3 = arg1;
+        var0 = var2.getUint16;
+        var8 = var0.bind(var2)(var3);
+        var1 = var2.getUint16;
+        var0 = 2;
+        var0 = var3 + var0;
+        var1 = var1.bind(var2)(var0);
+        var0 = 1;
+        var13 = var1 - var0;
+        var1 = var2.getUint16;
+        var0 = 4;
+        var0 = var3 + var0;
+        var12 = var1.bind(var2)(var0);
+        var1 = var2.getUint16;
+        var0 = 6;
+        var0 = var3 + var0;
+        var11 = var1.bind(var2)(var0);
+        var1 = var2.getUint16;
+        var0 = 8;
+        var0 = var3 + var0;
+        var10 = var1.bind(var2)(var0);
+        var1 = var2.getUint16;
+        var0 = 10;
+        var0 = var3 + var0;
+        var9 = var1.bind(var2)(var0);
+        var0 = global;
+        var2 = var0.Date;
+        var1 = var0.Date;
+        var0 = var1.UTC;
+        var15 = var1;
+        var14 = var8;
+        var14 = var15[var0](var14, var13, var12, var11, var10, var9, var8);
+        var1 = var2.prototype;
+        var1 = Object.create(var1, {
+            constructor: {
+                value: var2
+            }
+        });
+        var15 = var1;
+        var0 = new var15[var2](var14, var13);
+        var1 = var0 instanceof Object ? var0 : var1;
+        var0 = var1.toISOString;
+        var0 = var0.bind(var1)();
+        return var0;
+    };
+    var2.value = var4;
+    var0[24] = var2;
+    var2 = {};
+    var4 = 'ICC Signature';
+    var2.name = var4;
+    var4 = function(arg0, arg1) { // Original name: value, environment: var3
+        var3 = arg1;
+        var0 = arg0;
+        var2 = var0.buffer;
+        var1 = var2.slice;
+        var0 = 4;
+        var0 = var3 + var0;
+        var6 = var1.bind(var2)(var3, var0);
+        var0 = global;
+        var1 = var0.String;
+        var3 = var1.fromCharCode;
+        var2 = var3.apply;
+        var0 = var0.Uint8Array;
+        var1 = var0.prototype;
+        var1 = Object.create(var1, {
+            constructor: {
+                value: var0
+            }
+        });
+        var7 = var1;
+        var0 = new var7[var0](var6, var5);
+        var1 = var0 instanceof Object ? var0 : var1;
+        var0 = null;
+        var0 = var2.bind(var3)(var0, var1);
+        return var0;
+    };
+    var2.value = var4;
+    var0[36] = var2;
+    var2 = {};
+    var4 = 'Primary Platform';
+    var2.name = var4;
+    var4 = function(arg0, arg1) { // Original name: value, environment: var3
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 0;
+        var1 = var1[var0];
+        var0 = undefined;
+        var4 = var2.bind(var0)(var1);
+        var3 = var4.getStringFromDataView;
+        var2 = arg0;
+        var1 = arg1;
+        var0 = 4;
+        var0 = var3.bind(var4)(var2, var1, var0);
+        return var0;
+    };
+    var2.value = var4;
+    var4 = function(arg0) { // Original name: description, environment: var3
+        var2 = _closure1_slot2;
+        var1 = undefined;
+        var0 = arg0;
+        var0 = var2.bind(var1)(var0);
+        return var0;
+    };
+    var2.description = var4;
+    var0[40] = var2;
+    var2 = {};
+    var4 = 'Device Manufacturer';
+    var2.name = var4;
+    var4 = function(arg0, arg1) { // Original name: value, environment: var3
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 0;
+        var1 = var1[var0];
+        var0 = undefined;
+        var4 = var2.bind(var0)(var1);
+        var3 = var4.getStringFromDataView;
+        var2 = arg0;
+        var1 = arg1;
+        var0 = 4;
+        var0 = var3.bind(var4)(var2, var1, var0);
+        return var0;
+    };
+    var2.value = var4;
+    var4 = function(arg0) { // Original name: description, environment: var3
+        var2 = _closure1_slot2;
+        var1 = undefined;
+        var0 = arg0;
+        var0 = var2.bind(var1)(var0);
+        return var0;
+    };
+    var2.description = var4;
+    var0[48] = var2;
+    var2 = {};
+    var4 = 'Device Model Number';
+    var2.name = var4;
+    var4 = function(arg0, arg1) { // Original name: value, environment: var3
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 0;
+        var1 = var1[var0];
+        var0 = undefined;
+        var4 = var2.bind(var0)(var1);
+        var3 = var4.getStringFromDataView;
+        var2 = arg0;
+        var1 = arg1;
+        var0 = 4;
+        var0 = var3.bind(var4)(var2, var1, var0);
+        return var0;
+    };
+    var2.value = var4;
+    var0[52] = var2;
+    var2 = {};
+    var4 = 'Rendering Intent';
+    var2.name = var4;
+    var4 = function(arg0, arg1) { // Original name: value, environment: var3
+        var2 = arg0;
+        var1 = var2.getUint32;
+        var0 = arg1;
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var2.value = var4;
+    var4 = function(arg0) { // Original name: description, environment: var3
+        _fun38288: for (var _fun38288_ip = 0;;) switch (_fun38288_ip) {
+            case 0:
+                var0 = arg0;
+                var1 = 0;
+                if (!(var1 !== var0)) {
+                    _fun38288_ip = 54;
+                    continue _fun38288
+                }
+            case 9:
+                var1 = 1;
+                if (!(var1 !== var0)) {
+                    _fun38288_ip = 46;
+                    continue _fun38288
+                }
+            case 16:
+                var1 = 2;
+                if (!(var1 !== var0)) {
+                    _fun38288_ip = 40;
+                    continue _fun38288
+                }
+            case 23:
+                var1 = 3;
+                if (!(var1 !== var0)) {
+                    _fun38288_ip = 32;
+                    continue _fun38288
+                }
+            case 30:
+                return var0;
+            case 32:
+                var0 = 'Absolute Colorimetric';
+                return var0;
+            case 40:
+                var0 = 'Saturation';
+                return var0;
+            case 46:
+                var0 = 'Relative Colorimetric';
+                return var0;
+            case 54:
+                var0 = 'Perceptual';
+                return var0;
+        }
+    };
+    var2.description = var4;
+    var0[64] = var2;
+    var2 = {};
+    var4 = 'Profile Creator';
+    var2.name = var4;
+    var3 = function(arg0, arg1) { // Original name: value, environment: var3
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 0;
+        var1 = var1[var0];
+        var0 = undefined;
+        var4 = var2.bind(var0)(var1);
+        var3 = var4.getStringFromDataView;
+        var2 = arg0;
+        var1 = arg1;
+        var0 = 4;
+        var0 = var3.bind(var4)(var2, var1, var0);
+        return var0;
+    };
+    var2.value = var3;
+    var0[80] = var2;
+    var2 = {};
+    var3 = {};
+    var4 = 'ICC Description';
+    var3.name = var4;
+    var2.desc = var3;
+    var3 = {};
+    var4 = 'ICC Copyright';
+    var3.name = var4;
+    var2.cprt = var3;
+    var3 = {};
+    var4 = 'ICC Device Model Description';
+    var3.name = var4;
+    var2.dmdd = var3;
+    var3 = {};
+    var4 = 'ICC Viewing Conditions Description';
+    var3.name = var4;
+    var2.vued = var3;
+    var3 = {};
+    var4 = 'ICC Device Manufacturer for Display';
+    var3.name = var4;
+    var2.dmnd = var3;
+    var3 = {};
+    var4 = 'Technology';
+    var3.name = var4;
+    var2.tech = var3;
+    var1.iccTags = var2;
+    var1.iccProfile = var0;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4140, 4130, 4123]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4129]);

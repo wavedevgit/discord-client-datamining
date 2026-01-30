@@ -63,7 +63,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/native/UserProfileEditFormTextField.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: UserProfileEditFormTextField, environment: var1
-        _fun79781: for (var _fun79781_ip = 0;;) switch (_fun79781_ip) {
+        _fun79827: for (var _fun79827_ip = 0;;) switch (_fun79827_ip) {
             case 0:
                 var2 = arg0;
                 var7 = var2.label;
@@ -73,8 +73,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var2.clearButtonVisibility;
                 var3 = undefined;
                 if (!(var9 === var3)) {
-                    _fun79781_ip = 72;
-                    continue _fun79781
+                    _fun79827_ip = 72;
+                    continue _fun79827
                 }
             case 37:
                 var1 = _closure1_slot0;
@@ -120,15 +120,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var1.NEVER;
                 var1 = undefined;
                 if (!(var9 !== var11)) {
-                    _fun79781_ip = 210;
-                    continue _fun79781
+                    _fun79827_ip = 210;
+                    continue _fun79827
                 }
             case 196:
                 var11 = true;
                 var1 = undefined;
                 if (!(var11 !== var6)) {
-                    _fun79781_ip = 210;
-                    continue _fun79781
+                    _fun79827_ip = 210;
+                    continue _fun79827
                 }
             case 204:
                 var1 = var2.withClearButton;
@@ -166,8 +166,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var10.bind(var11)();
                 var10 = undefined;
                 if (var11) {
-                    _fun79781_ip = 347;
-                    continue _fun79781
+                    _fun79827_ip = 347;
+                    continue _fun79827
                 }
             case 344:
                 var10 = var7;
@@ -187,8 +187,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4[var7] = var8;
                 var8 = 'center';
                 if (!var6) {
-                    _fun79781_ip = 414;
-                    continue _fun79781
+                    _fun79827_ip = 414;
+                    continue _fun79827
                 }
             case 410:
                 var8 = 'top';
@@ -197,8 +197,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4[var7] = var8;
                 var7 = 'done';
                 if (!var6) {
-                    _fun79781_ip = 434;
-                    continue _fun79781
+                    _fun79827_ip = 434;
+                    continue _fun79827
                 }
             case 430:
                 var7 = 'default';
@@ -213,4 +213,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 5364, 5346, 5335, 478, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 5368, 5350, 5339, 478, 2]);

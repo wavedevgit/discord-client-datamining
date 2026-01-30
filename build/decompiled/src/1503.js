@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
     var0 = function(arg0) { // Original name: getFocusedRouteNameFromRoute, environment: var0
-        _fun17167: for (var _fun17167_ip = 0;;) switch (_fun17167_ip) {
+        _fun17168: for (var _fun17168_ip = 0;;) switch (_fun17168_ip) {
             case 0:
                 var1 = arg0;
                 var4 = _closure1_slot0;
@@ -27,23 +27,23 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var1[var2];
                 var5 = null;
                 if (!(var5 == var4)) {
-                    _fun17167_ip = 48;
-                    continue _fun17167
+                    _fun17168_ip = 48;
+                    continue _fun17168
                 }
             case 43:
                 var4 = var1.state;
             case 48:
                 var1 = var1.params;
                 if (var4) {
-                    _fun17167_ip = 93;
-                    continue _fun17167
+                    _fun17168_ip = 93;
+                    continue _fun17168
                 }
             case 57:
                 var6 = var5 == var1;
                 var2 = undefined;
                 if (var6) {
-                    _fun17167_ip = 72;
-                    continue _fun17167
+                    _fun17168_ip = 72;
+                    continue _fun17168
                 }
             case 66:
                 var2 = var1.screen;
@@ -52,36 +52,36 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = typeof var2;
                 var0 = undefined;
                 if (!(var6 === var2)) {
-                    _fun17167_ip = 91;
-                    continue _fun17167
+                    _fun17168_ip = 91;
+                    continue _fun17168
                 }
             case 85:
                 var0 = var1.screen;
             case 91:
-                _fun17167_ip = 169;
-                continue _fun17167;
+                _fun17168_ip = 169;
+                continue _fun17168;
             case 93:
                 var2 = var4.routes;
                 var1 = var4.index;
                 if (!(var5 == var1)) {
-                    _fun17167_ip = 160;
-                    continue _fun17167
+                    _fun17168_ip = 160;
+                    continue _fun17168
                 }
             case 108:
                 var5 = var4.type;
                 var6 = 'string';
                 var5 = typeof var5;
                 if (!(var6 === var5)) {
-                    _fun17167_ip = 139;
-                    continue _fun17167
+                    _fun17168_ip = 139;
+                    continue _fun17168
                 }
             case 124:
                 var6 = var4.type;
                 var5 = 'stack';
                 var3 = 0;
                 if (!(var5 === var6)) {
-                    _fun17167_ip = 157;
-                    continue _fun17167
+                    _fun17168_ip = 157;
+                    continue _fun17168
                 }
             case 139:
                 var4 = var4.routes;

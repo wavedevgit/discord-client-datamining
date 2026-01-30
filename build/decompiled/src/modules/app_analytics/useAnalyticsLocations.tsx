@@ -8,15 +8,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var6;
     var0 = function(arg0, arg1) { // Original name: mergeLocations, environment: var1
-        _fun50676: for (var _fun50676_ip = 0;;) switch (_fun50676_ip) {
+        _fun50722: for (var _fun50722_ip = 0;;) switch (_fun50722_ip) {
             case 0:
                 var0 = arg0;
                 var4 = arg1;
                 var1 = var4.length;
                 var2 = 0;
                 if (!(var2 !== var1)) {
-                    _fun50676_ip = 81;
-                    continue _fun50676
+                    _fun50722_ip = 81;
+                    continue _fun50722
                 }
             case 17:
                 var5 = _closure1_slot0;
@@ -132,7 +132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[0] = var8;
         var1[1] = var7;
         var0 = function() { // Environment: var0
-            _fun50680: for (var _fun50680_ip = 0;;) switch (_fun50680_ip) {
+            _fun50726: for (var _fun50726_ip = 0;;) switch (_fun50726_ip) {
                 case 0:
                     var2 = _closure1_slot0;
                     var1 = _closure1_slot1;
@@ -144,8 +144,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure2_slot1;
                     var2 = var4.bind(var0)(var3, var2);
                     if (var2) {
-                        _fun50680_ip = 58;
-                        continue _fun50680
+                        _fun50726_ip = 58;
+                        continue _fun50726
                     }
                 case 45:
                     var2 = _closure2_slot2;

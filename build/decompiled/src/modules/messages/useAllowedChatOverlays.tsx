@@ -90,7 +90,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/useAllowedChatOverlays.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Original name: useAllowedChatOverlays, environment: var1
-        _fun89605: for (var _fun89605_ip = 0;;) switch (_fun89605_ip) {
+        _fun89842: for (var _fun89842_ip = 0;;) switch (_fun89842_ip) {
             case 0:
                 var4 = _closure1_slot0;
                 var6 = _closure1_slot2;
@@ -129,16 +129,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var3 == var0;
                 var3 = undefined;
                 if (var7) {
-                    _fun89605_ip = 126;
-                    continue _fun89605
+                    _fun89842_ip = 126;
+                    continue _fun89842
                 }
             case 121:
                 var3 = var0.location;
             case 126:
                 var4 = var4.bind(var6)(var3);
                 if (!(var5 !== var0)) {
-                    _fun89605_ip = 178;
-                    continue _fun89605
+                    _fun89842_ip = 178;
+                    continue _fun89842
                 }
             case 135:
                 var3 = _closure1_slot1;
@@ -149,14 +149,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot4;
                 var0 = var3.bind(var5)(var4, var0);
                 if (var0) {
-                    _fun89605_ip = 178;
-                    continue _fun89605
+                    _fun89842_ip = 178;
+                    continue _fun89842
                 }
             case 168:
                 var0 = _closure1_slot5;
                 var0 = var0[var2];
-                _fun89605_ip = 190;
-                continue _fun89605;
+                _fun89842_ip = 190;
+                continue _fun89842;
             case 178:
                 var1 = _closure1_slot5;
                 var0 = var1.no_text_activity;
@@ -166,4 +166,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1371, 1372, 11592, 7874, 632, 3040, 7916, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1371, 1372, 11614, 7877, 632, 3040, 7919, 2]);

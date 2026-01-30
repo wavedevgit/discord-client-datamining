@@ -12,16 +12,16 @@ public final class JavaTypeEnhancementState {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private static final JavaTypeEnhancementState f33993d = new JavaTypeEnhancementState(JavaNullabilityAnnotationSettingsKt.getDefaultJsr305Settings$default(null, 1, null), a.f33997d);
+    private static final JavaTypeEnhancementState f34009d = new JavaTypeEnhancementState(JavaNullabilityAnnotationSettingsKt.getDefaultJsr305Settings$default(null, 1, null), a.f34013d);
 
     /* renamed from: a  reason: collision with root package name */
-    private final Jsr305Settings f33994a;
+    private final Jsr305Settings f34010a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Function1 f33995b;
+    private final Function1 f34011b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f33996c;
+    private final boolean f34012c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -31,7 +31,7 @@ public final class JavaTypeEnhancementState {
 
         @NotNull
         public final JavaTypeEnhancementState getDEFAULT() {
-            return JavaTypeEnhancementState.f33993d;
+            return JavaTypeEnhancementState.f34009d;
         }
 
         private Companion() {
@@ -42,7 +42,7 @@ public final class JavaTypeEnhancementState {
     /* synthetic */ class a extends FunctionReferenceImpl implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f33997d = new a();
+        public static final a f34013d = new a();
 
         a() {
             super(1, JavaNullabilityAnnotationSettingsKt.class, "getDefaultReportLevelForAnnotation", "getDefaultReportLevelForAnnotation(Lorg/jetbrains/kotlin/name/FqName;)Lorg/jetbrains/kotlin/load/java/ReportLevel;", 1);
@@ -60,32 +60,32 @@ public final class JavaTypeEnhancementState {
         boolean z10;
         Intrinsics.checkNotNullParameter(jsr305, "jsr305");
         Intrinsics.checkNotNullParameter(getReportLevelForAnnotation, "getReportLevelForAnnotation");
-        this.f33994a = jsr305;
-        this.f33995b = getReportLevelForAnnotation;
+        this.f34010a = jsr305;
+        this.f34011b = getReportLevelForAnnotation;
         if (!jsr305.isDisabled() && getReportLevelForAnnotation.invoke(JavaNullabilityAnnotationSettingsKt.getJSPECIFY_ANNOTATIONS_PACKAGE()) != ReportLevel.IGNORE) {
             z10 = false;
         } else {
             z10 = true;
         }
-        this.f33996c = z10;
+        this.f34012c = z10;
     }
 
     public final boolean getDisabledDefaultAnnotations() {
-        return this.f33996c;
+        return this.f34012c;
     }
 
     @NotNull
     public final Function1<FqName, ReportLevel> getGetReportLevelForAnnotation() {
-        return this.f33995b;
+        return this.f34011b;
     }
 
     @NotNull
     public final Jsr305Settings getJsr305() {
-        return this.f33994a;
+        return this.f34010a;
     }
 
     @NotNull
     public String toString() {
-        return "JavaTypeEnhancementState(jsr305=" + this.f33994a + ", getReportLevelForAnnotation=" + this.f33995b + ')';
+        return "JavaTypeEnhancementState(jsr305=" + this.f34010a + ", getReportLevelForAnnotation=" + this.f34011b + ')';
     }
 }

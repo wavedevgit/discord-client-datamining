@@ -5,10 +5,10 @@ import java.util.logging.Logger;
 abstract class e3 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Logger f41057a = Logger.getLogger(e3.class.getName());
+    private static final Logger f41073a = Logger.getLogger(e3.class.getName());
 
     /* renamed from: b  reason: collision with root package name */
-    private static final d2 f41058b = new d2(null);
+    private static final d2 f41074b = new d2(null);
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static boolean a(String str) {

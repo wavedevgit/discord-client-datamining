@@ -18,86 +18,86 @@ import hq.g1;
 public final class a implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final CoordinatorLayout f31048a;
+    private final CoordinatorLayout f31064a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final ConstraintLayout f31049b;
+    public final ConstraintLayout f31065b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final FrameLayout f31050c;
+    public final FrameLayout f31066c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final MaterialDivider f31051d;
+    public final MaterialDivider f31067d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final LinearLayout f31052e;
+    public final LinearLayout f31068e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final CoordinatorLayout f31053f;
+    public final CoordinatorLayout f31069f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final View f31054g;
+    public final View f31070g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final NestedScrollView f31055h;
+    public final NestedScrollView f31071h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final Pi2NavigationBar f31056i;
+    public final Pi2NavigationBar f31072i;
 
     /* renamed from: j  reason: collision with root package name */
-    public final ShadowedNestedScrollView f31057j;
+    public final ShadowedNestedScrollView f31073j;
 
     /* renamed from: k  reason: collision with root package name */
-    public final ConstraintLayout f31058k;
+    public final ConstraintLayout f31074k;
 
     /* renamed from: l  reason: collision with root package name */
-    public final FrameLayout f31059l;
+    public final FrameLayout f31075l;
 
     private a(CoordinatorLayout coordinatorLayout, ConstraintLayout constraintLayout, FrameLayout frameLayout, MaterialDivider materialDivider, LinearLayout linearLayout, CoordinatorLayout coordinatorLayout2, View view, NestedScrollView nestedScrollView, Pi2NavigationBar pi2NavigationBar, ShadowedNestedScrollView shadowedNestedScrollView, ConstraintLayout constraintLayout2, FrameLayout frameLayout2) {
-        this.f31048a = coordinatorLayout;
-        this.f31049b = constraintLayout;
-        this.f31050c = frameLayout;
-        this.f31051d = materialDivider;
-        this.f31052e = linearLayout;
-        this.f31053f = coordinatorLayout2;
-        this.f31054g = view;
-        this.f31055h = nestedScrollView;
-        this.f31056i = pi2NavigationBar;
-        this.f31057j = shadowedNestedScrollView;
-        this.f31058k = constraintLayout2;
-        this.f31059l = frameLayout2;
+        this.f31064a = coordinatorLayout;
+        this.f31065b = constraintLayout;
+        this.f31066c = frameLayout;
+        this.f31067d = materialDivider;
+        this.f31068e = linearLayout;
+        this.f31069f = coordinatorLayout2;
+        this.f31070g = view;
+        this.f31071h = nestedScrollView;
+        this.f31072i = pi2NavigationBar;
+        this.f31073j = shadowedNestedScrollView;
+        this.f31074k = constraintLayout2;
+        this.f31075l = frameLayout2;
     }
 
     public static a a(View view) {
         View a10;
-        int i10 = f1.f27720d;
+        int i10 = f1.f27736d;
         ConstraintLayout constraintLayout = (ConstraintLayout) e4.a.a(view, i10);
         if (constraintLayout != null) {
-            i10 = f1.f27722f;
+            i10 = f1.f27738f;
             FrameLayout frameLayout = (FrameLayout) e4.a.a(view, i10);
             if (frameLayout != null) {
-                i10 = f1.f27723g;
+                i10 = f1.f27739g;
                 MaterialDivider materialDivider = (MaterialDivider) e4.a.a(view, i10);
                 if (materialDivider != null) {
-                    i10 = f1.f27724h;
+                    i10 = f1.f27740h;
                     LinearLayout linearLayout = (LinearLayout) e4.a.a(view, i10);
                     if (linearLayout != null) {
-                        i10 = f1.f27725i;
+                        i10 = f1.f27741i;
                         CoordinatorLayout coordinatorLayout = (CoordinatorLayout) e4.a.a(view, i10);
-                        if (coordinatorLayout != null && (a10 = e4.a.a(view, (i10 = f1.f27726j))) != null) {
-                            i10 = f1.f27728l;
+                        if (coordinatorLayout != null && (a10 = e4.a.a(view, (i10 = f1.f27742j))) != null) {
+                            i10 = f1.f27744l;
                             NestedScrollView nestedScrollView = (NestedScrollView) e4.a.a(view, i10);
                             if (nestedScrollView != null) {
-                                i10 = f1.f27729m;
+                                i10 = f1.f27745m;
                                 Pi2NavigationBar pi2NavigationBar = (Pi2NavigationBar) e4.a.a(view, i10);
                                 if (pi2NavigationBar != null) {
-                                    i10 = f1.f27730n;
+                                    i10 = f1.f27746n;
                                     ShadowedNestedScrollView shadowedNestedScrollView = (ShadowedNestedScrollView) e4.a.a(view, i10);
                                     if (shadowedNestedScrollView != null) {
-                                        i10 = f1.f27731o;
+                                        i10 = f1.f27747o;
                                         ConstraintLayout constraintLayout2 = (ConstraintLayout) e4.a.a(view, i10);
                                         if (constraintLayout2 != null) {
-                                            i10 = f1.f27738v;
+                                            i10 = f1.f27754v;
                                             FrameLayout frameLayout2 = (FrameLayout) e4.a.a(view, i10);
                                             if (frameLayout2 != null) {
                                                 return new a((CoordinatorLayout) view, constraintLayout, frameLayout, materialDivider, linearLayout, coordinatorLayout, a10, nestedScrollView, pi2NavigationBar, shadowedNestedScrollView, constraintLayout2, frameLayout2);
@@ -119,7 +119,7 @@ public final class a implements ViewBinding {
     }
 
     public static a d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(g1.f27766a, viewGroup, false);
+        View inflate = layoutInflater.inflate(g1.f27782a, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -129,6 +129,6 @@ public final class a implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public CoordinatorLayout getRoot() {
-        return this.f31048a;
+        return this.f31064a;
     }
 }

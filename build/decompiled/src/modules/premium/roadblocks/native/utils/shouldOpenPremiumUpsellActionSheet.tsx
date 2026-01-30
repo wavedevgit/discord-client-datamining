@@ -9,20 +9,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
     var0 = function(arg0, arg1) { // Original name: _maybeOpenPremiumUpsellActionSheet, environment: var1
-        _fun61311: for (var _fun61311_ip = 0;;) switch (_fun61311_ip) {
+        _fun61355: for (var _fun61355_ip = 0;;) switch (_fun61355_ip) {
             case 0:
                 var5 = arg1;
                 var1 = null;
                 var0 = var1 == var5;
                 if (var0) {
-                    _fun61311_ip = 60;
-                    continue _fun61311
+                    _fun61355_ip = 60;
+                    continue _fun61355
                 }
             case 12:
                 var1 = var1 != var5;
                 if (!var1) {
-                    _fun61311_ip = 57;
-                    continue _fun61311
+                    _fun61355_ip = 57;
+                    continue _fun61355
                 }
             case 19:
                 var4 = var5.getCurrentConfig;
@@ -38,8 +38,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1;
             case 60:
                 if (var0) {
-                    _fun61311_ip = 86;
-                    continue _fun61311
+                    _fun61355_ip = 86;
+                    continue _fun61355
                 }
             case 63:
                 var3 = _closure1_slot3;
@@ -50,8 +50,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var0;
                 var0 = !var1;
                 if (var1) {
-                    _fun61311_ip = 130;
-                    continue _fun61311
+                    _fun61355_ip = 130;
+                    continue _fun61355
                 }
             case 95:
                 var2 = _closure1_slot1;
@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/roadblocks/native/utils/shouldOpenPremiumUpsellActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: maybeOpenPremiumUpsellActionSheet, environment: var1
-        _fun61312: for (var _fun61312_ip = 0;;) switch (_fun61312_ip) {
+        _fun61356: for (var _fun61356_ip = 0;;) switch (_fun61356_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.initialUpsellKey;
@@ -101,8 +101,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.UpsellTypes;
                 var1 = var1.UPLOAD;
                 if (!(var1 !== var3)) {
-                    _fun61312_ip = 386;
-                    continue _fun61312
+                    _fun61356_ip = 386;
+                    continue _fun61356
                 }
             case 53:
                 var4 = _closure1_slot0;
@@ -112,8 +112,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.UpsellTypes;
                 var1 = var1.GLOBAL_EMOJI;
                 if (!(var1 !== var3)) {
-                    _fun61312_ip = 343;
-                    continue _fun61312
+                    _fun61356_ip = 343;
+                    continue _fun61356
                 }
             case 89:
                 var4 = _closure1_slot0;
@@ -123,8 +123,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.UpsellTypes;
                 var1 = var1.ANIMATED_EMOJI;
                 if (!(var1 !== var3)) {
-                    _fun61312_ip = 300;
-                    continue _fun61312
+                    _fun61356_ip = 300;
+                    continue _fun61356
                 }
             case 125:
                 var4 = _closure1_slot0;
@@ -134,8 +134,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.UpsellTypes;
                 var1 = var1.SOUNDBOARD;
                 if (!(var1 !== var3)) {
-                    _fun61312_ip = 257;
-                    continue _fun61312
+                    _fun61356_ip = 257;
+                    continue _fun61356
                 }
             case 158:
                 var4 = _closure1_slot0;
@@ -145,8 +145,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.UpsellTypes;
                 var1 = var1.APP_ICONS;
                 if (!(var1 !== var3)) {
-                    _fun61312_ip = 195;
-                    continue _fun61312
+                    _fun61356_ip = 195;
+                    continue _fun61356
                 }
             case 191:
                 var1 = false;
@@ -214,4 +214,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3958, 7578, 670, 7580, 7589, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3964, 7581, 670, 7583, 7592, 2]);

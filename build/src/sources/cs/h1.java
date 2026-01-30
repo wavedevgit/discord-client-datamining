@@ -413,7 +413,7 @@ public final class h1 extends a0 implements FunctionBase, KFunction, l {
         this.f21150s = str2;
         this.f21151t = obj;
         this.f21152u = z2.b(functionDescriptor, new e1(this, str));
-        ir.o oVar = ir.o.f31103e;
+        ir.o oVar = ir.o.f31119e;
         this.f21153v = ir.l.a(oVar, new f1(this));
         this.f21154w = ir.l.a(oVar, new g1(this));
     }

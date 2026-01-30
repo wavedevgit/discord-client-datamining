@@ -39,21 +39,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/isVoiceEmbeddedActivity.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: isVoiceEmbeddedActivity, environment: var1
-        _fun63875: for (var _fun63875_ip = 0;;) switch (_fun63875_ip) {
+        _fun63919: for (var _fun63919_ip = 0;;) switch (_fun63919_ip) {
             case 0:
                 var3 = arguments[1];
                 var1 = arguments[2];
                 var8 = undefined;
                 if (!(var3 === var8)) {
-                    _fun63875_ip = 19;
-                    continue _fun63875
+                    _fun63919_ip = 19;
+                    continue _fun63919
                 }
             case 12:
                 var3 = _closure1_slot3;
             case 19:
                 if (!(var1 === var8)) {
-                    _fun63875_ip = 30;
-                    continue _fun63875
+                    _fun63919_ip = 30;
+                    continue _fun63919
                 }
             case 23:
                 var1 = _closure1_slot4;
@@ -66,8 +66,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = null;
                 var0 = var5 != var6;
                 if (!var0) {
-                    _fun63875_ip = 194;
-                    continue _fun63875
+                    _fun63919_ip = 194;
+                    continue _fun63919
                 }
             case 65:
                 var2 = var6.type;
@@ -80,8 +80,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.GUILD_VOICE;
                 var1 = var2 === var1;
                 if (var1) {
-                    _fun63875_ip = 191;
-                    continue _fun63875
+                    _fun63919_ip = 191;
+                    continue _fun63919
                 }
             case 112:
                 var2 = var6.isPrivate;
@@ -89,15 +89,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = !var2;
                 var2 = !var3;
                 if (var3) {
-                    _fun63875_ip = 188;
-                    continue _fun63875
+                    _fun63919_ip = 188;
+                    continue _fun63919
                 }
             case 131:
                 var3 = var6.id;
                 var3 = var3 === var7;
                 if (var3) {
-                    _fun63875_ip = 185;
-                    continue _fun63875
+                    _fun63919_ip = 185;
+                    continue _fun63919
                 }
             case 143:
                 var8 = _closure1_slot5;

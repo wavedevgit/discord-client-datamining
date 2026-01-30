@@ -16,51 +16,51 @@ import tc.z;
 public final class t implements tc.k {
 
     /* renamed from: g  reason: collision with root package name */
-    private static final Pattern f51041g = Pattern.compile("LOCAL:([^,]+)");
+    private static final Pattern f51057g = Pattern.compile("LOCAL:([^,]+)");
 
     /* renamed from: h  reason: collision with root package name */
-    private static final Pattern f51042h = Pattern.compile("MPEGTS:(-?\\d+)");
+    private static final Pattern f51058h = Pattern.compile("MPEGTS:(-?\\d+)");
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f51043a;
+    private final String f51059a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final s0 f51044b;
+    private final s0 f51060b;
 
     /* renamed from: d  reason: collision with root package name */
-    private tc.m f51046d;
+    private tc.m f51062d;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f51048f;
+    private int f51064f;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h0 f51045c = new h0();
+    private final h0 f51061c = new h0();
 
     /* renamed from: e  reason: collision with root package name */
-    private byte[] f51047e = new byte[IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET];
+    private byte[] f51063e = new byte[IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET];
 
     public t(String str, s0 s0Var) {
-        this.f51043a = str;
-        this.f51044b = s0Var;
+        this.f51059a = str;
+        this.f51060b = s0Var;
     }
 
     private b0 b(long j10) {
-        b0 c10 = this.f51046d.c(0, 3);
-        c10.b(new Format.b().g0("text/vtt").X(this.f51043a).k0(j10).G());
-        this.f51046d.s();
+        b0 c10 = this.f51062d.c(0, 3);
+        c10.b(new Format.b().g0("text/vtt").X(this.f51059a).k0(j10).G());
+        this.f51062d.s();
         return c10;
     }
 
     private void e() {
-        h0 h0Var = new h0(this.f51047e);
+        h0 h0Var = new h0(this.f51063e);
         ie.i.e(h0Var);
         long j10 = 0;
         long j11 = 0;
         for (String s10 = h0Var.s(); !TextUtils.isEmpty(s10); s10 = h0Var.s()) {
             if (s10.startsWith("X-TIMESTAMP-MAP")) {
-                Matcher matcher = f51041g.matcher(s10);
+                Matcher matcher = f51057g.matcher(s10);
                 if (matcher.find()) {
-                    Matcher matcher2 = f51042h.matcher(s10);
+                    Matcher matcher2 = f51058h.matcher(s10);
                     if (matcher2.find()) {
                         j11 = ie.i.d((String) ne.a.e(matcher.group(1)));
                         j10 = s0.g(Long.parseLong((String) ne.a.e(matcher2.group(1))));
@@ -78,11 +78,11 @@ public final class t implements tc.k {
             return;
         }
         long d10 = ie.i.d((String) ne.a.e(a10.group(1)));
-        long b10 = this.f51044b.b(s0.k((j10 + d10) - j11));
+        long b10 = this.f51060b.b(s0.k((j10 + d10) - j11));
         b0 b11 = b(b10 - d10);
-        this.f51045c.S(this.f51047e, this.f51048f);
-        b11.f(this.f51045c, this.f51048f);
-        b11.d(b10, 1, this.f51048f, 0, null);
+        this.f51061c.S(this.f51063e, this.f51064f);
+        b11.f(this.f51061c, this.f51064f);
+        b11.d(b10, 1, this.f51064f, 0, null);
     }
 
     @Override // tc.k
@@ -92,31 +92,31 @@ public final class t implements tc.k {
 
     @Override // tc.k
     public void c(tc.m mVar) {
-        this.f51046d = mVar;
+        this.f51062d = mVar;
         mVar.q(new z.b(-9223372036854775807L));
     }
 
     @Override // tc.k
     public int d(tc.l lVar, y yVar) {
         int length;
-        ne.a.e(this.f51046d);
+        ne.a.e(this.f51062d);
         int length2 = (int) lVar.getLength();
-        int i10 = this.f51048f;
-        byte[] bArr = this.f51047e;
+        int i10 = this.f51064f;
+        byte[] bArr = this.f51063e;
         if (i10 == bArr.length) {
             if (length2 != -1) {
                 length = length2;
             } else {
                 length = bArr.length;
             }
-            this.f51047e = Arrays.copyOf(bArr, (length * 3) / 2);
+            this.f51063e = Arrays.copyOf(bArr, (length * 3) / 2);
         }
-        byte[] bArr2 = this.f51047e;
-        int i11 = this.f51048f;
+        byte[] bArr2 = this.f51063e;
+        int i11 = this.f51064f;
         int read = lVar.read(bArr2, i11, bArr2.length - i11);
         if (read != -1) {
-            int i12 = this.f51048f + read;
-            this.f51048f = i12;
+            int i12 = this.f51064f + read;
+            this.f51064f = i12;
             if (length2 == -1 || i12 != length2) {
                 return 0;
             }
@@ -127,14 +127,14 @@ public final class t implements tc.k {
 
     @Override // tc.k
     public boolean f(tc.l lVar) {
-        lVar.c(this.f51047e, 0, 6, false);
-        this.f51045c.S(this.f51047e, 6);
-        if (ie.i.b(this.f51045c)) {
+        lVar.c(this.f51063e, 0, 6, false);
+        this.f51061c.S(this.f51063e, 6);
+        if (ie.i.b(this.f51061c)) {
             return true;
         }
-        lVar.c(this.f51047e, 6, 3, false);
-        this.f51045c.S(this.f51047e, 9);
-        return ie.i.b(this.f51045c);
+        lVar.c(this.f51063e, 6, 3, false);
+        this.f51061c.S(this.f51063e, 9);
+        return ie.i.b(this.f51061c);
     }
 
     @Override // tc.k

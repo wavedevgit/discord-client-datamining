@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = _closure1_slot3;
         var1 = undefined;
         var0 = function(arg0) { // Environment: var0
-            _fun70917: for (var _fun70917_ip = 0;;) switch (_fun70917_ip) {
+            _fun70963: for (var _fun70963_ip = 0;;) switch (_fun70963_ip) {
                 case 0:
                     var0 = arg0;
                     var3 = var0.states;
@@ -31,8 +31,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var2.bind(var3)(var1);
                     var1 = null;
                     if (!(var1 == var2)) {
-                        _fun70917_ip = 45;
-                        continue _fun70917
+                        _fun70963_ip = 45;
+                        continue _fun70963
                     }
                 case 32:
                     var3 = _closure1_slot4;
@@ -156,7 +156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = arg2;
         var3.searchActiveSource = var0;
         var2 = function(arg0, arg1) { // Original name: upsertChannelState, environment: var0
-            _fun70926: for (var _fun70926_ip = 0;;) switch (_fun70926_ip) {
+            _fun70972: for (var _fun70972_ip = 0;;) switch (_fun70972_ip) {
                 case 0:
                     var5 = arg0;
                     var3 = _closure1_slot3;
@@ -168,8 +168,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = {};
                     var3 = null;
                     if (!(var3 == var2)) {
-                        _fun70926_ip = 56;
-                        continue _fun70926
+                        _fun70972_ip = 56;
+                        continue _fun70972
                     }
                 case 46:
                     var7 = _closure1_slot4;
@@ -224,7 +224,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setIsChannelDetailsSearchActive = var3;
     var3 = function(arg0) { // Original name: getIsChannelDetailsSearchActive, environment: var1
-        _fun70928: for (var _fun70928_ip = 0;;) switch (_fun70928_ip) {
+        _fun70974: for (var _fun70974_ip = 0;;) switch (_fun70974_ip) {
             case 0:
                 var2 = _closure1_slot3;
                 var0 = var2.getState;
@@ -235,8 +235,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.bind(var3)(var0);
                 var2 = null;
                 if (!(var2 == var0)) {
-                    _fun70928_ip = 52;
-                    continue _fun70928
+                    _fun70974_ip = 52;
+                    continue _fun70974
                 }
             case 42:
                 var2 = _closure1_slot4;

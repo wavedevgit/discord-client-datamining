@@ -28,43 +28,43 @@ import kotlin.jvm.internal.Reflection;
 public final class c extends ReactViewGroup {
 
     /* renamed from: w  reason: collision with root package name */
-    public static final a f44404w = new a(null);
+    public static final a f44420w = new a(null);
 
     /* renamed from: x  reason: collision with root package name */
-    private static final String f44405x = Reflection.getOrCreateKotlinClass(c.class).getSimpleName();
+    private static final String f44421x = Reflection.getOrCreateKotlinClass(c.class).getSimpleName();
 
     /* renamed from: d  reason: collision with root package name */
-    private final ThemedReactContext f44406d;
+    private final ThemedReactContext f44422d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f44407e;
+    private boolean f44423e;
 
     /* renamed from: i  reason: collision with root package name */
-    private boolean f44408i;
+    private boolean f44424i;
 
     /* renamed from: o  reason: collision with root package name */
-    private boolean f44409o;
+    private boolean f44425o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f44410p;
+    private boolean f44426p;
 
     /* renamed from: q  reason: collision with root package name */
-    private boolean f44411q;
+    private boolean f44427q;
 
     /* renamed from: r  reason: collision with root package name */
-    private ReactViewGroup f44412r;
+    private ReactViewGroup f44428r;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f44413s;
+    private boolean f44429s;
 
     /* renamed from: t  reason: collision with root package name */
-    private k f44414t;
+    private k f44430t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final l f44415u;
+    private final l f44431u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final lm.b f44416v;
+    private final lm.b f44432v;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -73,7 +73,7 @@ public final class c extends ReactViewGroup {
         }
 
         public final String a() {
-            return c.f44405x;
+            return c.f44421x;
         }
 
         private a() {
@@ -97,29 +97,29 @@ public final class c extends ReactViewGroup {
     public c(ThemedReactContext reactContext) {
         super(reactContext);
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
-        this.f44406d = reactContext;
-        l lVar = new l(WindowInsetsCompat.p.h(), WindowInsetsCompat.p.c(), 1, this.f44408i);
-        this.f44415u = lVar;
-        this.f44416v = new lm.b(this, reactContext, lVar, new b(this));
+        this.f44422d = reactContext;
+        l lVar = new l(WindowInsetsCompat.p.h(), WindowInsetsCompat.p.c(), 1, this.f44424i);
+        this.f44431u = lVar;
+        this.f44432v = new lm.b(this, reactContext, lVar, new b(this));
         g.e(reactContext);
-        setTag(f44405x);
+        setTag(f44421x);
     }
 
     private final void g() {
         o();
         k();
-        this.f44416v.b();
+        this.f44432v.b();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final k getKeyboardCallback() {
-        return this.f44414t;
+        return this.f44430t;
     }
 
     private final void h() {
         o();
         n();
-        this.f44416v.c();
+        this.f44432v.c();
     }
 
     private final void j() {
@@ -128,11 +128,11 @@ public final class c extends ReactViewGroup {
     }
 
     private final void k() {
-        k kVar = this.f44414t;
+        k kVar = this.f44430t;
         if (kVar != null) {
             kVar.e();
         }
-        final ReactViewGroup reactViewGroup = this.f44412r;
+        final ReactViewGroup reactViewGroup = this.f44428r;
         new Handler(Looper.getMainLooper()).post(new Runnable() { // from class: om.b
             @Override // java.lang.Runnable
             public final void run() {
@@ -147,28 +147,28 @@ public final class c extends ReactViewGroup {
     }
 
     private final void n() {
-        if (this.f44406d.getCurrentActivity() != null) {
-            this.f44412r = new ReactViewGroup(getContext());
-            ViewGroup a10 = fm.f.a(this.f44406d);
+        if (this.f44422d.getCurrentActivity() != null) {
+            this.f44428r = new ReactViewGroup(getContext());
+            ViewGroup a10 = fm.f.a(this.f44422d);
             if (a10 != null) {
-                a10.addView(this.f44412r);
+                a10.addView(this.f44428r);
             }
-            k kVar = new k(this, this, this.f44406d, this.f44415u);
-            this.f44414t = kVar;
-            ReactViewGroup reactViewGroup = this.f44412r;
+            k kVar = new k(this, this, this.f44422d, this.f44431u);
+            this.f44430t = kVar;
+            ReactViewGroup reactViewGroup = this.f44428r;
             if (reactViewGroup != null) {
                 h0.L0(reactViewGroup, kVar);
-                h0.D0(reactViewGroup, this.f44414t);
+                h0.D0(reactViewGroup, this.f44430t);
                 i.c(reactViewGroup);
                 return;
             }
             return;
         }
-        jm.a.e(jm.a.f32237a, d.a(), "Can not setup keyboard animation listener, since `currentActivity` is null", null, 4, null);
+        jm.a.e(jm.a.f32253a, d.a(), "Can not setup keyboard animation listener, since `currentActivity` is null", null, 4, null);
     }
 
     private final void o() {
-        View b10 = fm.f.b(this.f44406d);
+        View b10 = fm.f.b(this.f44422d);
         if (b10 != null) {
             h0.D0(b10, new v() { // from class: om.a
                 @Override // androidx.core.view.v
@@ -188,17 +188,17 @@ public final class c extends ReactViewGroup {
         int i11;
         Intrinsics.checkNotNullParameter(v10, "v");
         Intrinsics.checkNotNullParameter(insets, "insets");
-        ViewGroup a10 = fm.f.a(cVar.f44406d);
+        ViewGroup a10 = fm.f.a(cVar.f44422d);
         FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(-1, -1);
-        boolean z11 = cVar.f44410p;
+        boolean z11 = cVar.f44426p;
         boolean z12 = true;
         int i12 = 0;
-        if (z11 && !cVar.f44407e) {
+        if (z11 && !cVar.f44423e) {
             z10 = false;
         } else {
             z10 = true;
         }
-        if (z11 && !cVar.f44408i) {
+        if (z11 && !cVar.f44424i) {
             z12 = false;
         }
         Insets f10 = insets.f(WindowInsetsCompat.p.f());
@@ -224,31 +224,31 @@ public final class c extends ReactViewGroup {
         WindowInsetsCompat Z = h0.Z(v10, insets);
         Intrinsics.checkNotNullExpressionValue(Z, "onApplyWindowInsets(...)");
         int o10 = Z.o();
-        if (!cVar.f44407e) {
+        if (!cVar.f44423e) {
             i12 = Z.q();
         }
         return Z.v(o10, i12, Z.p(), Z.n());
     }
 
     public final void i(boolean z10) {
-        if (this.f44410p && this.f44407e != z10) {
-            this.f44407e = z10;
+        if (this.f44426p && this.f44423e != z10) {
+            this.f44423e = z10;
             j();
         }
     }
 
     public final void m() {
         boolean z10;
-        if (!this.f44410p && !this.f44409o) {
+        if (!this.f44426p && !this.f44425o) {
             z10 = false;
         } else {
             z10 = true;
         }
-        if (this.f44411q != z10) {
-            this.f44411q = z10;
-            Activity currentActivity = this.f44406d.getCurrentActivity();
+        if (this.f44427q != z10) {
+            this.f44427q = z10;
+            Activity currentActivity = this.f44422d.getCurrentActivity();
             if (currentActivity != null) {
-                w0.c(currentActivity.getWindow(), true ^ this.f44411q);
+                w0.c(currentActivity.getWindow(), true ^ this.f44427q);
             }
         }
     }
@@ -257,8 +257,8 @@ public final class c extends ReactViewGroup {
     @Override // com.facebook.react.views.view.ReactViewGroup, android.view.ViewGroup, android.view.View
     public void onAttachedToWindow() {
         super.onAttachedToWindow();
-        if (!this.f44413s) {
-            this.f44413s = true;
+        if (!this.f44429s) {
+            this.f44429s = true;
         } else {
             n();
         }
@@ -276,7 +276,7 @@ public final class c extends ReactViewGroup {
     }
 
     public final void setActive(boolean z10) {
-        this.f44410p = z10;
+        this.f44426p = z10;
         if (z10) {
             h();
         } else {
@@ -285,15 +285,15 @@ public final class c extends ReactViewGroup {
     }
 
     public final void setNavigationBarTranslucent(boolean z10) {
-        this.f44408i = z10;
-        this.f44415u.e(z10);
+        this.f44424i = z10;
+        this.f44431u.e(z10);
     }
 
     public final void setPreserveEdgeToEdge(boolean z10) {
-        this.f44409o = z10;
+        this.f44425o = z10;
     }
 
     public final void setStatusBarTranslucent(boolean z10) {
-        this.f44407e = z10;
+        this.f44423e = z10;
     }
 }

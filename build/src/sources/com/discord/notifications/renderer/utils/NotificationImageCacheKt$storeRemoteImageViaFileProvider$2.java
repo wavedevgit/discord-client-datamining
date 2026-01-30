@@ -49,6 +49,6 @@ public final class NotificationImageCacheKt$storeRemoteImageViaFileProvider$2 ex
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Pair<? extends Uri, String>> continuation) {
-        return ((NotificationImageCacheKt$storeRemoteImageViaFileProvider$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((NotificationImageCacheKt$storeRemoteImageViaFileProvider$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

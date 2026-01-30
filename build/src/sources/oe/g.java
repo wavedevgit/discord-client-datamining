@@ -5,20 +5,20 @@ import android.view.Surface;
 public class g extends fd.m {
 
     /* renamed from: i  reason: collision with root package name */
-    public final int f42560i;
+    public final int f42576i;
 
     /* renamed from: o  reason: collision with root package name */
-    public final boolean f42561o;
+    public final boolean f42577o;
 
     public g(Throwable th2, fd.q qVar, Surface surface) {
         super(th2, qVar);
         boolean z10;
-        this.f42560i = System.identityHashCode(surface);
+        this.f42576i = System.identityHashCode(surface);
         if (surface != null && !surface.isValid()) {
             z10 = false;
         } else {
             z10 = true;
         }
-        this.f42561o = z10;
+        this.f42577o = z10;
     }
 }

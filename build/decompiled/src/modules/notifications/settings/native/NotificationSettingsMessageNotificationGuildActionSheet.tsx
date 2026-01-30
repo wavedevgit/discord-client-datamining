@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/notifications/settings/native/NotificationSettingsMessageNotificationGuildActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: NotificationSettingsMessageNotificationGuildActionSheet, environment: var1
-        _fun69824: for (var _fun69824_ip = 0;;) switch (_fun69824_ip) {
+        _fun69870: for (var _fun69870_ip = 0;;) switch (_fun69870_ip) {
             case 0:
                 var0 = arg0;
                 var _closure2_slot0 = var0;
@@ -81,16 +81,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var5.ALL_MESSAGES;
                 var5 = undefined;
                 if (!(var9 !== var7)) {
-                    _fun69824_ip = 187;
-                    continue _fun69824
+                    _fun69870_ip = 187;
+                    continue _fun69870
                 }
             case 116:
                 var7 = _closure1_slot5;
                 var7 = var7.ALL_MESSAGES;
                 var5 = undefined;
                 if (!(var8 !== var7)) {
-                    _fun69824_ip = 187;
-                    continue _fun69824
+                    _fun69870_ip = 187;
+                    continue _fun69870
                 }
             case 132:
                 var9 = _closure1_slot0;
@@ -108,7 +108,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 187:
                 var0.allMessagesSubLabel = var5;
                 var4 = function(arg0) { // Original name: onChange, environment: var4
-                    _fun69825: for (var _fun69825_ip = 0;;) switch (_fun69825_ip) {
+                    _fun69871: for (var _fun69871_ip = 0;;) switch (_fun69871_ip) {
                         case 0:
                             var7 = arg0;
                             var5 = {};
@@ -117,8 +117,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var0.ALL_MESSAGES;
                             var0 = var7 === var0;
                             if (!var0) {
-                                _fun69825_ip = 51;
-                                continue _fun69825
+                                _fun69871_ip = 51;
+                                continue _fun69871
                             }
                         case 30:
                             var3 = _closure2_slot1;
@@ -127,8 +127,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = var3 !== var2;
                         case 51:
                             if (!var0) {
-                                _fun69825_ip = 131;
-                                continue _fun69825
+                                _fun69871_ip = 131;
+                                continue _fun69871
                             }
                         case 54:
                             var3 = _closure1_slot0;
@@ -175,4 +175,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4260, 660, 4261, 665, 33, 8713, 8719, 1234, 8706, 4654, 4651, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4266, 660, 4267, 665, 33, 8717, 8723, 1234, 8710, 4660, 4657, 2]);

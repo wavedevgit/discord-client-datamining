@@ -8,15 +8,15 @@ import java.io.IOException;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ByteArrayOutputStream f28443a;
+    private final ByteArrayOutputStream f28459a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final DataOutputStream f28444b;
+    private final DataOutputStream f28460b;
 
     public c() {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream(IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING);
-        this.f28443a = byteArrayOutputStream;
-        this.f28444b = new DataOutputStream(byteArrayOutputStream);
+        this.f28459a = byteArrayOutputStream;
+        this.f28460b = new DataOutputStream(byteArrayOutputStream);
     }
 
     private static void b(DataOutputStream dataOutputStream, String str) {
@@ -25,19 +25,19 @@ public final class c {
     }
 
     public byte[] a(a aVar) {
-        this.f28443a.reset();
+        this.f28459a.reset();
         try {
-            b(this.f28444b, aVar.f28437d);
-            String str = aVar.f28438e;
+            b(this.f28460b, aVar.f28453d);
+            String str = aVar.f28454e;
             if (str == null) {
                 str = "";
             }
-            b(this.f28444b, str);
-            this.f28444b.writeLong(aVar.f28439i);
-            this.f28444b.writeLong(aVar.f28440o);
-            this.f28444b.write(aVar.f28441p);
-            this.f28444b.flush();
-            return this.f28443a.toByteArray();
+            b(this.f28460b, str);
+            this.f28460b.writeLong(aVar.f28455i);
+            this.f28460b.writeLong(aVar.f28456o);
+            this.f28460b.write(aVar.f28457p);
+            this.f28460b.flush();
+            return this.f28459a.toByteArray();
         } catch (IOException e10) {
             throw new RuntimeException(e10);
         }

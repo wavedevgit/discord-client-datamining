@@ -299,9 +299,9 @@ public class PersonaInquiryModule2 extends ReactContextBaseJavaModule implements
                 str11 = null;
             }
             if (str11 != null && str11.equals("server")) {
-                clientThemeSource2 = new ServerThemeSource(Integer.valueOf(b.f39572a));
+                clientThemeSource2 = new ServerThemeSource(Integer.valueOf(b.f39588a));
             } else {
-                clientThemeSource2 = new ClientThemeSource(Integer.valueOf(b.f39572a));
+                clientThemeSource2 = new ClientThemeSource(Integer.valueOf(b.f39588a));
             }
             InquiryBuilder theme = fromInquiry.theme(clientThemeSource2);
             if (readableMap.hasKey(ACCESS_TOKEN)) {
@@ -336,9 +336,9 @@ public class PersonaInquiryModule2 extends ReactContextBaseJavaModule implements
                 str4 = null;
             }
             if (str4 != null && str4.equals("server")) {
-                clientThemeSource = new ServerThemeSource(Integer.valueOf(b.f39572a));
+                clientThemeSource = new ServerThemeSource(Integer.valueOf(b.f39588a));
             } else {
-                clientThemeSource = new ClientThemeSource(Integer.valueOf(b.f39572a));
+                clientThemeSource = new ClientThemeSource(Integer.valueOf(b.f39588a));
             }
             InquiryTemplateBuilder theme2 = fromTemplateVersion.theme(clientThemeSource);
             if (readableMap.hasKey(REFERENCE_ID)) {

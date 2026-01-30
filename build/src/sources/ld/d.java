@@ -9,19 +9,19 @@ public final class d extends i {
     public static final Parcelable.Creator<d> CREATOR = new a();
 
     /* renamed from: e  reason: collision with root package name */
-    public final String f37125e;
+    public final String f37141e;
 
     /* renamed from: i  reason: collision with root package name */
-    public final boolean f37126i;
+    public final boolean f37142i;
 
     /* renamed from: o  reason: collision with root package name */
-    public final boolean f37127o;
+    public final boolean f37143o;
 
     /* renamed from: p  reason: collision with root package name */
-    public final String[] f37128p;
+    public final String[] f37144p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final i[] f37129q;
+    private final i[] f37145q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a implements Parcelable.Creator {
@@ -43,11 +43,11 @@ public final class d extends i {
 
     public d(String str, boolean z10, boolean z11, String[] strArr, i[] iVarArr) {
         super("CTOC");
-        this.f37125e = str;
-        this.f37126i = z10;
-        this.f37127o = z11;
-        this.f37128p = strArr;
-        this.f37129q = iVarArr;
+        this.f37141e = str;
+        this.f37142i = z10;
+        this.f37143o = z11;
+        this.f37144p = strArr;
+        this.f37145q = iVarArr;
     }
 
     public boolean equals(Object obj) {
@@ -56,7 +56,7 @@ public final class d extends i {
         }
         if (obj != null && d.class == obj.getClass()) {
             d dVar = (d) obj;
-            if (this.f37126i == dVar.f37126i && this.f37127o == dVar.f37127o && w0.c(this.f37125e, dVar.f37125e) && Arrays.equals(this.f37128p, dVar.f37128p) && Arrays.equals(this.f37129q, dVar.f37129q)) {
+            if (this.f37142i == dVar.f37142i && this.f37143o == dVar.f37143o && w0.c(this.f37141e, dVar.f37141e) && Arrays.equals(this.f37144p, dVar.f37144p) && Arrays.equals(this.f37145q, dVar.f37145q)) {
                 return true;
             }
         }
@@ -65,8 +65,8 @@ public final class d extends i {
 
     public int hashCode() {
         int i10;
-        int i11 = (((527 + (this.f37126i ? 1 : 0)) * 31) + (this.f37127o ? 1 : 0)) * 31;
-        String str = this.f37125e;
+        int i11 = (((527 + (this.f37142i ? 1 : 0)) * 31) + (this.f37143o ? 1 : 0)) * 31;
+        String str = this.f37141e;
         if (str != null) {
             i10 = str.hashCode();
         } else {
@@ -77,26 +77,26 @@ public final class d extends i {
 
     @Override // android.os.Parcelable
     public void writeToParcel(Parcel parcel, int i10) {
-        parcel.writeString(this.f37125e);
-        parcel.writeByte(this.f37126i ? (byte) 1 : (byte) 0);
-        parcel.writeByte(this.f37127o ? (byte) 1 : (byte) 0);
-        parcel.writeStringArray(this.f37128p);
-        parcel.writeInt(this.f37129q.length);
-        for (i iVar : this.f37129q) {
+        parcel.writeString(this.f37141e);
+        parcel.writeByte(this.f37142i ? (byte) 1 : (byte) 0);
+        parcel.writeByte(this.f37143o ? (byte) 1 : (byte) 0);
+        parcel.writeStringArray(this.f37144p);
+        parcel.writeInt(this.f37145q.length);
+        for (i iVar : this.f37145q) {
             parcel.writeParcelable(iVar, 0);
         }
     }
 
     d(Parcel parcel) {
         super("CTOC");
-        this.f37125e = (String) w0.j(parcel.readString());
-        this.f37126i = parcel.readByte() != 0;
-        this.f37127o = parcel.readByte() != 0;
-        this.f37128p = (String[]) w0.j(parcel.createStringArray());
+        this.f37141e = (String) w0.j(parcel.readString());
+        this.f37142i = parcel.readByte() != 0;
+        this.f37143o = parcel.readByte() != 0;
+        this.f37144p = (String[]) w0.j(parcel.createStringArray());
         int readInt = parcel.readInt();
-        this.f37129q = new i[readInt];
+        this.f37145q = new i[readInt];
         for (int i10 = 0; i10 < readInt; i10++) {
-            this.f37129q[i10] = (i) parcel.readParcelable(i.class.getClassLoader());
+            this.f37145q[i10] = (i) parcel.readParcelable(i.class.getClassLoader());
         }
     }
 }

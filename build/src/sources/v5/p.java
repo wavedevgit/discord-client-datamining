@@ -8,10 +8,10 @@ import w5.c;
 public abstract class p {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f50701a = c.a.a("nm", "g", "o", "t", "s", "e", "r", "hd");
+    private static final c.a f50717a = c.a.a("nm", "g", "o", "t", "s", "e", "r", "hd");
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c.a f50702b = c.a.a("p", "k");
+    private static final c.a f50718b = c.a.a("p", "k");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static s5.e a(w5.c cVar, l5.i iVar) {
@@ -26,7 +26,7 @@ public abstract class p {
         r5.f fVar2 = null;
         boolean z10 = false;
         while (cVar.hasNext()) {
-            switch (cVar.B(f50701a)) {
+            switch (cVar.B(f50717a)) {
                 case 0:
                     str = cVar.e1();
                     break;
@@ -34,7 +34,7 @@ public abstract class p {
                     cVar.r();
                     int i10 = -1;
                     while (cVar.hasNext()) {
-                        int B = cVar.B(f50702b);
+                        int B = cVar.B(f50718b);
                         if (B != 0) {
                             if (B != 1) {
                                 cVar.E();

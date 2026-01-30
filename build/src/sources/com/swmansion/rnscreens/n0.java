@@ -610,7 +610,7 @@ public final class n0 extends w implements ScreenStackFragmentWrapper {
 
     @Override // androidx.fragment.app.Fragment
     public void onStop() {
-        if (kn.a.f33270a.a(getContext())) {
+        if (kn.a.f33286a.a(getContext())) {
             this.f19291x = X();
         }
         super.onStop();

@@ -3,22 +3,22 @@ package io.sentry;
 public final class i5 {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final i5 f30041d = new i5();
+    private static final i5 f30057d = new i5();
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f30042a;
+    private boolean f30058a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Boolean f30043b;
+    private Boolean f30059b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final io.sentry.util.a f30044c = new io.sentry.util.a();
+    private final io.sentry.util.a f30060c = new io.sentry.util.a();
 
     private i5() {
     }
 
     public static i5 a() {
-        return f30041d;
+        return f30057d;
     }
 
     /* JADX WARN: Removed duplicated region for block: B:31:0x004e  */
@@ -29,11 +29,11 @@ public final class i5 {
     public java.lang.Boolean b(java.lang.String r6, boolean r7) {
         /*
             r5 = this;
-            io.sentry.util.a r0 = r5.f30044c
+            io.sentry.util.a r0 = r5.f30060c
             io.sentry.a1 r0 = r0.a()
-            boolean r1 = r5.f30042a     // Catch: java.lang.Throwable -> L12
+            boolean r1 = r5.f30058a     // Catch: java.lang.Throwable -> L12
             if (r1 == 0) goto L14
-            java.lang.Boolean r6 = r5.f30043b     // Catch: java.lang.Throwable -> L12
+            java.lang.Boolean r6 = r5.f30059b     // Catch: java.lang.Throwable -> L12
             if (r0 == 0) goto L11
             r0.close()
         L11:
@@ -50,7 +50,7 @@ public final class i5 {
             return r6
         L1d:
             r1 = 1
-            r5.f30042a = r1     // Catch: java.lang.Throwable -> L12
+            r5.f30058a = r1     // Catch: java.lang.Throwable -> L12
             java.io.File r2 = new java.io.File     // Catch: java.lang.Throwable -> L12
             java.lang.String r3 = "last_crash"
             r2.<init>(r6, r3)     // Catch: java.lang.Throwable -> L12
@@ -72,11 +72,11 @@ public final class i5 {
             r1 = r6
         L46:
             java.lang.Boolean r6 = java.lang.Boolean.valueOf(r1)     // Catch: java.lang.Throwable -> L12
-            r5.f30043b = r6     // Catch: java.lang.Throwable -> L12
+            r5.f30059b = r6     // Catch: java.lang.Throwable -> L12
             if (r0 == 0) goto L51
             r0.close()
         L51:
-            java.lang.Boolean r6 = r5.f30043b
+            java.lang.Boolean r6 = r5.f30059b
             return r6
         L54:
             if (r0 == 0) goto L5e
@@ -92,11 +92,11 @@ public final class i5 {
     }
 
     public void c(boolean z10) {
-        a1 a10 = this.f30044c.a();
+        a1 a10 = this.f30060c.a();
         try {
-            if (!this.f30042a) {
-                this.f30043b = Boolean.valueOf(z10);
-                this.f30042a = true;
+            if (!this.f30058a) {
+                this.f30059b = Boolean.valueOf(z10);
+                this.f30058a = true;
             }
             if (a10 != null) {
                 a10.close();

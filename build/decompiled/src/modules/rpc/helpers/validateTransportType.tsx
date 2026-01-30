@@ -33,21 +33,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/rpc/helpers/validateTransportType.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: validateTransportType, environment: var1
-        _fun98559: for (var _fun98559_ip = 0;;) switch (_fun98559_ip) {
+        _fun98813: for (var _fun98813_ip = 0;;) switch (_fun98813_ip) {
             case 0:
                 var2 = arg0;
                 var1 = _closure1_slot2;
                 var1 = var1.IPC;
                 if (!(var1 !== var2)) {
-                    _fun98559_ip = 34;
-                    continue _fun98559
+                    _fun98813_ip = 34;
+                    continue _fun98813
                 }
             case 20:
                 var1 = _closure1_slot2;
                 var1 = var1.POST_MESSAGE;
                 if (!(var1 === var2)) {
-                    _fun98559_ip = 38;
-                    continue _fun98559
+                    _fun98813_ip = 38;
+                    continue _fun98813
                 }
             case 34:
                 var1 = undefined;
@@ -79,4 +79,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.validateTransportType = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3315, 660, 7887, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3315, 660, 7890, 2]);

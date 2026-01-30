@@ -39,41 +39,41 @@ import org.jetbrains.annotations.NotNull;
 public final class OverridingUtilTypeSystemContext implements ClassicTypeSystemContext {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Map f35388a;
+    private final Map f35404a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final KotlinTypeChecker.TypeConstructorEquality f35389b;
+    private final KotlinTypeChecker.TypeConstructorEquality f35405b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final KotlinTypeRefiner f35390c;
+    private final KotlinTypeRefiner f35406c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final KotlinTypePreparator f35391d;
+    private final KotlinTypePreparator f35407d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Function2 f35392e;
+    private final Function2 f35408e;
 
     public OverridingUtilTypeSystemContext(Map<TypeConstructor, ? extends TypeConstructor> map, @NotNull KotlinTypeChecker.TypeConstructorEquality equalityAxioms, @NotNull KotlinTypeRefiner kotlinTypeRefiner, @NotNull KotlinTypePreparator kotlinTypePreparator, Function2<? super KotlinType, ? super KotlinType, Boolean> function2) {
         Intrinsics.checkNotNullParameter(equalityAxioms, "equalityAxioms");
         Intrinsics.checkNotNullParameter(kotlinTypeRefiner, "kotlinTypeRefiner");
         Intrinsics.checkNotNullParameter(kotlinTypePreparator, "kotlinTypePreparator");
-        this.f35388a = map;
-        this.f35389b = equalityAxioms;
-        this.f35390c = kotlinTypeRefiner;
-        this.f35391d = kotlinTypePreparator;
-        this.f35392e = function2;
+        this.f35404a = map;
+        this.f35405b = equalityAxioms;
+        this.f35406c = kotlinTypeRefiner;
+        this.f35407d = kotlinTypePreparator;
+        this.f35408e = function2;
     }
 
     private final boolean a(TypeConstructor typeConstructor, TypeConstructor typeConstructor2) {
-        if (this.f35389b.equals(typeConstructor, typeConstructor2)) {
+        if (this.f35405b.equals(typeConstructor, typeConstructor2)) {
             return true;
         }
-        Map map = this.f35388a;
+        Map map = this.f35404a;
         if (map == null) {
             return false;
         }
         TypeConstructor typeConstructor3 = (TypeConstructor) map.get(typeConstructor);
-        TypeConstructor typeConstructor4 = (TypeConstructor) this.f35388a.get(typeConstructor2);
+        TypeConstructor typeConstructor4 = (TypeConstructor) this.f35404a.get(typeConstructor2);
         if ((typeConstructor3 != null && Intrinsics.areEqual(typeConstructor3, typeConstructor2)) || (typeConstructor4 != null && Intrinsics.areEqual(typeConstructor4, typeConstructor))) {
             return true;
         }
@@ -525,19 +525,19 @@ public final class OverridingUtilTypeSystemContext implements ClassicTypeSystemC
     @Override // kotlin.reflect.jvm.internal.impl.types.model.TypeCheckerProviderContext
     @NotNull
     public TypeCheckerState newTypeCheckerState(final boolean z10, final boolean z11, final boolean z12) {
-        if (this.f35392e == null) {
-            return ClassicTypeCheckerStateKt.createClassicTypeCheckerState(z10, z11, this, this.f35391d, this.f35390c);
+        if (this.f35408e == null) {
+            return ClassicTypeCheckerStateKt.createClassicTypeCheckerState(z10, z11, this, this.f35407d, this.f35406c);
         }
-        final KotlinTypePreparator kotlinTypePreparator = this.f35391d;
-        final KotlinTypeRefiner kotlinTypeRefiner = this.f35390c;
+        final KotlinTypePreparator kotlinTypePreparator = this.f35407d;
+        final KotlinTypeRefiner kotlinTypeRefiner = this.f35406c;
         return new TypeCheckerState(z10, z11, z12, this, kotlinTypePreparator, kotlinTypeRefiner) { // from class: kotlin.reflect.jvm.internal.impl.resolve.OverridingUtilTypeSystemContext$newTypeCheckerState$1
 
             /* renamed from: l  reason: collision with root package name */
-            final /* synthetic */ OverridingUtilTypeSystemContext f35393l;
+            final /* synthetic */ OverridingUtilTypeSystemContext f35409l;
 
             /* JADX INFO: Access modifiers changed from: package-private */
             {
-                this.f35393l = this;
+                this.f35409l = this;
             }
 
             @Override // kotlin.reflect.jvm.internal.impl.types.TypeCheckerState
@@ -547,7 +547,7 @@ public final class OverridingUtilTypeSystemContext implements ClassicTypeSystemC
                 Intrinsics.checkNotNullParameter(superType, "superType");
                 if (subType instanceof KotlinType) {
                     if (superType instanceof KotlinType) {
-                        function2 = this.f35393l.f35392e;
+                        function2 = this.f35409l.f35408e;
                         return ((Boolean) function2.invoke(subType, superType)).booleanValue();
                     }
                     throw new IllegalArgumentException("Failed requirement.");

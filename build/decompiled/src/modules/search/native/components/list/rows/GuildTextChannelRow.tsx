@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var3;
     var3 = var6.memo;
     var1 = function(arg0) { // Original name: GuildTextChannelRow, environment: var1
-        _fun105890: for (var _fun105890_ip = 0;;) switch (_fun105890_ip) {
+        _fun106152: for (var _fun106152_ip = 0;;) switch (_fun106152_ip) {
             case 0:
                 var4 = arg0;
                 var7 = var4.channel;
@@ -65,8 +65,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot3 = var11;
                 var0 = var2 != var8;
                 if (!var0) {
-                    _fun105890_ip = 137;
-                    continue _fun105890
+                    _fun106152_ip = 137;
+                    continue _fun106152
                 }
             case 103:
                 var5 = _closure1_slot1;
@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5[1] = var11;
                 var5[2] = var2;
                 var2 = function() { // Environment: var1
-                    _fun105891: for (var _fun105891_ip = 0;;) switch (_fun105891_ip) {
+                    _fun106153: for (var _fun106153_ip = 0;;) switch (_fun106153_ip) {
                         case 0:
                             var1 = _closure1_slot0;
                             var2 = _closure1_slot2;
@@ -99,8 +99,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = null;
                             var6 = var5 != var6;
                             if (!var6) {
-                                _fun105891_ip = 84;
-                                continue _fun105891
+                                _fun106153_ip = 84;
+                                continue _fun106153
                             }
                         case 49:
                             var7 = _closure1_slot0;
@@ -169,4 +169,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 8857, 33, 21, 13738, 8923, 13741, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 8861, 33, 21, 13764, 8927, 13767, 2]);

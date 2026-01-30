@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/burst_reactions/SuperReactionUpsellActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: SuperReactionCoachmarkActionSheet, environment: var1
-        _fun57354: for (var _fun57354_ip = 0;;) switch (_fun57354_ip) {
+        _fun57398: for (var _fun57398_ip = 0;;) switch (_fun57398_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.onDismiss;
@@ -212,8 +212,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var3.bind(var6)(var0, var2);
                 var0 = null;
                 if (var1) {
-                    _fun57354_ip = 502;
-                    continue _fun57354
+                    _fun57398_ip = 502;
+                    continue _fun57398
                 }
             case 186:
                 var3 = _closure1_slot7;
@@ -337,4 +337,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1613, 660, 33, 1358, 6997, 6998, 6999, 7000, 7001, 7002, 7003, 1297, 671, 5684, 566, 3068, 4518, 7004, 1307, 7631, 22, 12017, 6525, 12018, 1234, 6514, 6563, 3237, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1613, 660, 33, 1358, 7000, 7001, 7002, 7003, 7004, 7005, 7006, 1297, 671, 5687, 566, 3068, 4524, 7007, 1307, 7634, 22, 12039, 6528, 12040, 1234, 6517, 6566, 3237, 2]);

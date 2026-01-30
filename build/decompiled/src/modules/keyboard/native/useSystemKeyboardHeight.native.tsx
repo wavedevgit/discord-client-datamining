@@ -39,21 +39,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/keyboard/native/useSystemKeyboardHeight.native.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function() { // Original name: useSystemKeyboardHeight, environment: var1
-        _fun17618: for (var _fun17618_ip = 0;;) switch (_fun17618_ip) {
+        _fun17619: for (var _fun17619_ip = 0;;) switch (_fun17619_ip) {
             case 0:
                 var0 = arguments[0];
                 var2 = undefined;
                 if (!(var0 === var2)) {
-                    _fun17618_ip = 16;
-                    continue _fun17618
+                    _fun17619_ip = 16;
+                    continue _fun17619
                 }
             case 9:
                 var0 = _closure1_slot4;
             case 16:
                 var0 = var0.excludeSafeAreaInsets;
                 if (!(var0 === var2)) {
-                    _fun17618_ip = 28;
-                    continue _fun17618
+                    _fun17619_ip = 28;
+                    continue _fun17619
                 }
             case 26:
                 var0 = false;
@@ -64,13 +64,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var5[var1];
                 var1 = var4.bind(var2)(var1);
                 if (var0) {
-                    _fun17618_ip = 59;
-                    continue _fun17618
+                    _fun17619_ip = 59;
+                    continue _fun17619
                 }
             case 53:
                 var0 = _closure1_slot2;
-                _fun17618_ip = 63;
-                continue _fun17618;
+                _fun17619_ip = 63;
+                continue _fun17619;
             case 59:
                 var0 = _closure1_slot3;
             case 63:
@@ -80,13 +80,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var1 = function() { // Original name: getSystemKeyboardHeight, environment: var1
-        _fun17619: for (var _fun17619_ip = 0;;) switch (_fun17619_ip) {
+        _fun17620: for (var _fun17620_ip = 0;;) switch (_fun17620_ip) {
             case 0:
                 var0 = arguments[0];
                 var3 = undefined;
                 if (!(var0 === var3)) {
-                    _fun17619_ip = 16;
-                    continue _fun17619
+                    _fun17620_ip = 16;
+                    continue _fun17620
                 }
             case 9:
                 var0 = _closure1_slot4;
@@ -100,13 +100,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.getState;
                 var1 = var1.bind(var2)();
                 if (var0) {
-                    _fun17619_ip = 65;
-                    continue _fun17619
+                    _fun17620_ip = 65;
+                    continue _fun17620
                 }
             case 57:
                 var0 = var1.keyboardHeight;
-                _fun17619_ip = 71;
-                continue _fun17619;
+                _fun17620_ip = 71;
+                continue _fun17620;
             case 65:
                 var0 = var1.keyboardHeightExcludingSafeAreaInsets;
             case 71:

@@ -23,7 +23,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_scheduled_events/GuildScheduledEventsNoticesActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Original name: hideLiveChannelNotice, environment: var1
-        _fun111066: for (var _fun111066_ip = 0;;) switch (_fun111066_ip) {
+        _fun111328: for (var _fun111328_ip = 0;;) switch (_fun111328_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.eventId;
@@ -31,15 +31,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = null;
                 var0 = var1 == var4;
                 if (!var0) {
-                    _fun111066_ip = 28;
-                    continue _fun111066
+                    _fun111328_ip = 28;
+                    continue _fun111328
                 }
             case 24:
                 var0 = var1 == var3;
             case 28:
                 if (var0) {
-                    _fun111066_ip = 87;
-                    continue _fun111066
+                    _fun111328_ip = 87;
+                    continue _fun111328
                 }
             case 31:
                 var2 = _closure1_slot0;

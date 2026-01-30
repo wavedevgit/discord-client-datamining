@@ -82,7 +82,7 @@ public final class q0 {
         public final Object invoke(ir.b bVar, Unit unit, Continuation continuation) {
             a aVar = new a(continuation);
             aVar.f21393e = bVar;
-            return aVar.invokeSuspend(Unit.f33282a);
+            return aVar.invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -168,7 +168,7 @@ public final class q0 {
     }
 
     private final JsonElement g() {
-        return (JsonElement) kotlin.a.b(new ir.a(new a(null)), Unit.f33282a);
+        return (JsonElement) kotlin.a.b(new ir.a(new a(null)), Unit.f33298a);
     }
 
     /* JADX INFO: Access modifiers changed from: private */

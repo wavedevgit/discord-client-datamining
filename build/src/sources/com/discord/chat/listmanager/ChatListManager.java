@@ -139,7 +139,7 @@ public final class ChatListManager {
 
     public ChatListManager(@NotNull CoroutineScope coroutineScope) {
         Intrinsics.checkNotNullParameter(coroutineScope, "coroutineScope");
-        this.updatesFlow = c0.a(1, 3, a.f31125d);
+        this.updatesFlow = c0.a(1, 3, a.f31141d);
         this.publishScope = i.j(coroutineScope, m0.a());
     }
 

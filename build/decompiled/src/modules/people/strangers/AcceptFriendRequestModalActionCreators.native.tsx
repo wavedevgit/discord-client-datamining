@@ -88,7 +88,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = var4;
                     var4 = copyDataProperties(var6, var5);
                     var4 = function() { // Original name: onCancel, environment: var0
-                        _fun72020: for (var _fun72020_ip = 0;;) switch (_fun72020_ip) {
+                        _fun72066: for (var _fun72066_ip = 0;;) switch (_fun72066_ip) {
                             case 0:
                                 var1 = _closure5_slot0;
                                 var0 = var1.onClose;
@@ -96,8 +96,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var2 = _closure2_slot1;
                                 var1 = null;
                                 if (!(var1 != var2)) {
-                                    _fun72020_ip = 40;
-                                    continue _fun72020
+                                    _fun72066_ip = 40;
+                                    continue _fun72066
                                 }
                             case 30:
                                 var1 = _closure2_slot1;
@@ -128,4 +128,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openAcceptFriendRequestConfirmModal = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [8966, 660, 33, 795, 3890, 8967, 1307, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [8970, 660, 33, 795, 3896, 8971, 1307, 2]);

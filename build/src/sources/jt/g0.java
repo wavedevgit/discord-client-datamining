@@ -3,13 +3,13 @@ package jt;
 public final class g0 implements v {
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f32746d;
+    private final int f32762d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final p f32747e;
+    private final p f32763e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Object f32748i;
+    private final Object f32764i;
 
     private g0(int i10, p pVar) {
         this(i10, pVar, null);
@@ -81,7 +81,7 @@ public final class g0 implements v {
 
     private q m(q qVar, boolean z10) {
         if (qVar instanceof k0) {
-            return (q) qVar.w().p().cast(a((k0) k0.class.cast(qVar), this.f32747e, z10));
+            return (q) qVar.w().p().cast(a((k0) k0.class.cast(qVar), this.f32763e, z10));
         }
         throw new r("Base units not supported by: " + qVar.w().p());
     }
@@ -112,33 +112,33 @@ public final class g0 implements v {
     @Override // jt.v
     /* renamed from: b */
     public q apply(q qVar) {
-        switch (this.f32746d) {
+        switch (this.f32762d) {
             case 0:
-                return p(qVar, this.f32747e, this.f32748i, false);
+                return p(qVar, this.f32763e, this.f32764i, false);
             case 1:
-                return k(qVar, this.f32747e);
+                return k(qVar, this.f32763e);
             case 2:
-                return i(qVar, this.f32747e);
+                return i(qVar, this.f32763e);
             case 3:
-                return g(qVar, this.f32747e);
+                return g(qVar, this.f32763e);
             case 4:
-                return e(qVar, this.f32747e);
+                return e(qVar, this.f32763e);
             case 5:
-                return p(qVar, this.f32747e, this.f32748i, true);
+                return p(qVar, this.f32763e, this.f32764i, true);
             case 6:
                 return m(qVar, false);
             case 7:
                 return m(qVar, true);
             default:
-                throw new UnsupportedOperationException("Unknown mode: " + this.f32746d);
+                throw new UnsupportedOperationException("Unknown mode: " + this.f32762d);
         }
     }
 
     private g0(int i10, p pVar, Object obj) {
         if (pVar != null) {
-            this.f32746d = i10;
-            this.f32747e = pVar;
-            this.f32748i = obj;
+            this.f32762d = i10;
+            this.f32763e = pVar;
+            this.f32764i = obj;
             return;
         }
         throw new NullPointerException("Missing chronological element.");

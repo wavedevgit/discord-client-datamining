@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/checkpoint/native/components/CheckpointApngPlayer.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: CheckpointApngPlayer, environment: var1
-        _fun86443: for (var _fun86443_ip = 0;;) switch (_fun86443_ip) {
+        _fun86489: for (var _fun86489_ip = 0;;) switch (_fun86489_ip) {
             case 0:
                 var0 = arg0;
                 var11 = var0.uri;
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.bind(var6)();
                 var7 = _closure1_slot5;
                 if (var4) {
-                    _fun86443_ip = 178;
-                    continue _fun86443
+                    _fun86489_ip = 178;
+                    continue _fun86489
                 }
             case 126:
                 var6 = _closure1_slot0;
@@ -103,8 +103,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.autoplay = var10;
                 var4.style = var9;
                 var4 = var7.bind(var3)(var6, var4);
-                _fun86443_ip = 236;
-                continue _fun86443;
+                _fun86489_ip = 236;
+                continue _fun86489;
             case 178:
                 var6 = _closure1_slot1;
                 var10 = _closure1_slot2;
@@ -129,4 +129,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 1298, 33, 1297, 566, 479, 4660, 6868, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 1298, 33, 1297, 566, 479, 4666, 6871, 2]);

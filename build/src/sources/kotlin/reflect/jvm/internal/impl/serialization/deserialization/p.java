@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.metadata.ProtoBuf;
 public class p implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final TypeDeserializer f35781d;
+    private final TypeDeserializer f35797d;
 
     public p(TypeDeserializer typeDeserializer) {
-        this.f35781d = typeDeserializer;
+        this.f35797d = typeDeserializer;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         ProtoBuf.Type v10;
-        v10 = TypeDeserializer.v(this.f35781d, (ProtoBuf.Type) obj);
+        v10 = TypeDeserializer.v(this.f35797d, (ProtoBuf.Type) obj);
         return v10;
     }
 }

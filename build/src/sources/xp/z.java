@@ -40,7 +40,7 @@ public abstract class z {
         }
         StyleElements.SizeSet padding = config.getPadding();
         if (padding != null) {
-            int dimensionPixelOffset = a10.getResources().getDimensionPixelOffset(jp.k.f32305b);
+            int dimensionPixelOffset = a10.getResources().getDimensionPixelOffset(jp.k.f32321b);
             StyleElements.Size left = padding.getLeft();
             if (left != null && (dp6 = left.getDp()) != null) {
                 i11 = (int) jp.h.a(dp6.doubleValue());

@@ -24,10 +24,10 @@ import zo.x;
 public final class x extends tm.k {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f56026a;
+    private final Context f56042a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final m.a f56027b;
+    private final m.a f56043b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static abstract class a implements Parcelable {
@@ -37,7 +37,7 @@ public final class x extends tm.k {
         public static final class C0791a extends a {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final C0791a f56028d = new C0791a();
+            public static final C0791a f56044d = new C0791a();
             @NotNull
             public static final Parcelable.Creator<C0791a> CREATOR = new C0792a();
 
@@ -49,7 +49,7 @@ public final class x extends tm.k {
                 public final C0791a createFromParcel(Parcel parcel) {
                     Intrinsics.checkNotNullParameter(parcel, "parcel");
                     parcel.readInt();
-                    return C0791a.f56028d;
+                    return C0791a.f56044d;
                 }
 
                 @Override // android.os.Parcelable.Creator
@@ -94,7 +94,7 @@ public final class x extends tm.k {
         public static final class b extends a {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final b f56029d = new b();
+            public static final b f56045d = new b();
             @NotNull
             public static final Parcelable.Creator<b> CREATOR = new C0793a();
 
@@ -106,7 +106,7 @@ public final class x extends tm.k {
                 public final b createFromParcel(Parcel parcel) {
                     Intrinsics.checkNotNullParameter(parcel, "parcel");
                     parcel.readInt();
-                    return b.f56029d;
+                    return b.f56045d;
                 }
 
                 @Override // android.os.Parcelable.Creator
@@ -151,7 +151,7 @@ public final class x extends tm.k {
         public static final class c extends a {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final c f56030d = new c();
+            public static final c f56046d = new c();
             @NotNull
             public static final Parcelable.Creator<c> CREATOR = new C0794a();
 
@@ -163,7 +163,7 @@ public final class x extends tm.k {
                 public final c createFromParcel(Parcel parcel) {
                     Intrinsics.checkNotNullParameter(parcel, "parcel");
                     parcel.readInt();
-                    return c.f56030d;
+                    return c.f56046d;
                 }
 
                 @Override // android.os.Parcelable.Creator
@@ -208,7 +208,7 @@ public final class x extends tm.k {
         public static final class d extends a {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final d f56031d = new d();
+            public static final d f56047d = new d();
             @NotNull
             public static final Parcelable.Creator<d> CREATOR = new C0795a();
 
@@ -220,7 +220,7 @@ public final class x extends tm.k {
                 public final d createFromParcel(Parcel parcel) {
                     Intrinsics.checkNotNullParameter(parcel, "parcel");
                     parcel.readInt();
-                    return d.f56031d;
+                    return d.f56047d;
                 }
 
                 @Override // android.os.Parcelable.Creator
@@ -273,33 +273,33 @@ public final class x extends tm.k {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final a0 f56032a;
+        private final a0 f56048a;
 
         public b(a0 deviceFeatureState) {
             Intrinsics.checkNotNullParameter(deviceFeatureState, "deviceFeatureState");
-            this.f56032a = deviceFeatureState;
+            this.f56048a = deviceFeatureState;
         }
 
         public final a0 a() {
-            return this.f56032a;
+            return this.f56048a;
         }
 
         public boolean equals(Object obj) {
             if (this == obj) {
                 return true;
             }
-            if ((obj instanceof b) && Intrinsics.areEqual(this.f56032a, ((b) obj).f56032a)) {
+            if ((obj instanceof b) && Intrinsics.areEqual(this.f56048a, ((b) obj).f56048a)) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return this.f56032a.hashCode();
+            return this.f56048a.hashCode();
         }
 
         public String toString() {
-            a0 a0Var = this.f56032a;
+            a0 a0Var = this.f56048a;
             return "Output(deviceFeatureState=" + a0Var + ")";
         }
     }
@@ -308,51 +308,51 @@ public final class x extends tm.k {
     public static final class c {
 
         /* renamed from: a  reason: collision with root package name */
-        private final b0 f56033a;
+        private final b0 f56049a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f56034b;
+        private final String f56050b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final String f56035c;
+        private final String f56051c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f56036d;
+        private final String f56052d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f56037e;
+        private final String f56053e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final StepStyle f56038f;
+        private final StepStyle f56054f;
 
         public c(b0 feature, String str, String str2, String str3, String str4, StepStyle stepStyle) {
             Intrinsics.checkNotNullParameter(feature, "feature");
-            this.f56033a = feature;
-            this.f56034b = str;
-            this.f56035c = str2;
-            this.f56036d = str3;
-            this.f56037e = str4;
-            this.f56038f = stepStyle;
+            this.f56049a = feature;
+            this.f56050b = str;
+            this.f56051c = str2;
+            this.f56052d = str3;
+            this.f56053e = str4;
+            this.f56054f = stepStyle;
         }
 
         public final b0 a() {
-            return this.f56033a;
+            return this.f56049a;
         }
 
         public final String b() {
-            return this.f56037e;
+            return this.f56053e;
         }
 
         public final String c() {
-            return this.f56036d;
+            return this.f56052d;
         }
 
         public final String d() {
-            return this.f56035c;
+            return this.f56051c;
         }
 
         public final String e() {
-            return this.f56034b;
+            return this.f56050b;
         }
 
         public boolean equals(Object obj) {
@@ -363,14 +363,14 @@ public final class x extends tm.k {
                 return false;
             }
             c cVar = (c) obj;
-            if (this.f56033a == cVar.f56033a && Intrinsics.areEqual(this.f56034b, cVar.f56034b) && Intrinsics.areEqual(this.f56035c, cVar.f56035c) && Intrinsics.areEqual(this.f56036d, cVar.f56036d) && Intrinsics.areEqual(this.f56037e, cVar.f56037e) && Intrinsics.areEqual(this.f56038f, cVar.f56038f)) {
+            if (this.f56049a == cVar.f56049a && Intrinsics.areEqual(this.f56050b, cVar.f56050b) && Intrinsics.areEqual(this.f56051c, cVar.f56051c) && Intrinsics.areEqual(this.f56052d, cVar.f56052d) && Intrinsics.areEqual(this.f56053e, cVar.f56053e) && Intrinsics.areEqual(this.f56054f, cVar.f56054f)) {
                 return true;
             }
             return false;
         }
 
         public final StepStyle f() {
-            return this.f56038f;
+            return this.f56054f;
         }
 
         public int hashCode() {
@@ -378,8 +378,8 @@ public final class x extends tm.k {
             int hashCode2;
             int hashCode3;
             int hashCode4;
-            int hashCode5 = this.f56033a.hashCode() * 31;
-            String str = this.f56034b;
+            int hashCode5 = this.f56049a.hashCode() * 31;
+            String str = this.f56050b;
             int i10 = 0;
             if (str == null) {
                 hashCode = 0;
@@ -387,28 +387,28 @@ public final class x extends tm.k {
                 hashCode = str.hashCode();
             }
             int i11 = (hashCode5 + hashCode) * 31;
-            String str2 = this.f56035c;
+            String str2 = this.f56051c;
             if (str2 == null) {
                 hashCode2 = 0;
             } else {
                 hashCode2 = str2.hashCode();
             }
             int i12 = (i11 + hashCode2) * 31;
-            String str3 = this.f56036d;
+            String str3 = this.f56052d;
             if (str3 == null) {
                 hashCode3 = 0;
             } else {
                 hashCode3 = str3.hashCode();
             }
             int i13 = (i12 + hashCode3) * 31;
-            String str4 = this.f56037e;
+            String str4 = this.f56053e;
             if (str4 == null) {
                 hashCode4 = 0;
             } else {
                 hashCode4 = str4.hashCode();
             }
             int i14 = (i13 + hashCode4) * 31;
-            StepStyle stepStyle = this.f56038f;
+            StepStyle stepStyle = this.f56054f;
             if (stepStyle != null) {
                 i10 = stepStyle.hashCode();
             }
@@ -416,12 +416,12 @@ public final class x extends tm.k {
         }
 
         public String toString() {
-            b0 b0Var = this.f56033a;
-            String str = this.f56034b;
-            String str2 = this.f56035c;
-            String str3 = this.f56036d;
-            String str4 = this.f56037e;
-            StepStyle stepStyle = this.f56038f;
+            b0 b0Var = this.f56049a;
+            String str = this.f56050b;
+            String str2 = this.f56051c;
+            String str3 = this.f56052d;
+            String str4 = this.f56053e;
+            StepStyle stepStyle = this.f56054f;
             return "Props(feature=" + b0Var + ", requestFeatureTitle=" + str + ", requestFeatureRationale=" + str2 + ", requestFeatureModalPositiveButton=" + str3 + ", requestFeatureModalNegativeButton=" + str4 + ", styles=" + stepStyle + ")";
         }
     }
@@ -431,36 +431,36 @@ public final class x extends tm.k {
     public static final class d extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f56039d;
+        int f56055d;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ k.a f56041i;
+        final /* synthetic */ k.a f56057i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ c f56042o;
+        final /* synthetic */ c f56058o;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         d(k.a aVar, c cVar, Continuation continuation) {
             super(2, continuation);
-            this.f56041i = aVar;
-            this.f56042o = cVar;
+            this.f56057i = aVar;
+            this.f56058o = cVar;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final Unit l(x xVar, c cVar, r.c cVar2) {
-            xVar.r(cVar2, new a0(cVar.a(), c0.f55855d));
-            return Unit.f33282a;
+            xVar.r(cVar2, new a0(cVar.a(), c0.f55871d));
+            return Unit.f33298a;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final Unit m(r.c cVar) {
-            cVar.e(a.d.f56031d);
-            return Unit.f33282a;
+            cVar.e(a.d.f56047d);
+            return Unit.f33298a;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new d(this.f56041i, this.f56042o, continuation);
+            return new d(this.f56057i, this.f56058o, continuation);
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
@@ -468,12 +468,12 @@ public final class x extends tm.k {
             tm.r d10;
             tm.r d11;
             or.b.f();
-            if (this.f56039d == 0) {
+            if (this.f56055d == 0) {
                 kotlin.c.b(obj);
-                if (qp.f.b(x.this.f56026a)) {
-                    tm.h c10 = this.f56041i.c();
+                if (qp.f.b(x.this.f56042a)) {
+                    tm.h c10 = this.f56057i.c();
                     final x xVar = x.this;
-                    final c cVar = this.f56042o;
+                    final c cVar = this.f56058o;
                     d11 = tm.z.d(xVar, null, new Function1() { // from class: zo.y
                         @Override // kotlin.jvm.functions.Function1
                         public final Object invoke(Object obj2) {
@@ -484,7 +484,7 @@ public final class x extends tm.k {
                     }, 1, null);
                     c10.d(d11);
                 } else {
-                    tm.h c11 = this.f56041i.c();
+                    tm.h c11 = this.f56057i.c();
                     d10 = tm.z.d(x.this, null, new Function1() { // from class: zo.z
                         @Override // kotlin.jvm.functions.Function1
                         public final Object invoke(Object obj2) {
@@ -495,43 +495,43 @@ public final class x extends tm.k {
                     }, 1, null);
                     c11.d(d10);
                 }
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((d) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((d) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
     public x(Context applicationContext, m.a deviceFeatureRequestWorkerFactory) {
         Intrinsics.checkNotNullParameter(applicationContext, "applicationContext");
         Intrinsics.checkNotNullParameter(deviceFeatureRequestWorkerFactory, "deviceFeatureRequestWorkerFactory");
-        this.f56026a = applicationContext;
-        this.f56027b = deviceFeatureRequestWorkerFactory;
+        this.f56042a = applicationContext;
+        this.f56043b = deviceFeatureRequestWorkerFactory;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit A(x xVar, c cVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        xVar.r(action, new a0(cVar.a(), c0.f55855d));
-        return Unit.f33282a;
+        xVar.r(action, new a0(cVar.a(), c0.f55871d));
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit B(x xVar, c cVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        xVar.r(action, new a0(cVar.a(), c0.f55856e));
-        return Unit.f33282a;
+        xVar.r(action, new a0(cVar.a(), c0.f55872e));
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit C(x xVar, c cVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        xVar.r(action, new a0(cVar.a(), c0.f55857i));
-        return Unit.f33282a;
+        xVar.r(action, new a0(cVar.a(), c0.f55873i));
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -542,7 +542,7 @@ public final class x extends tm.k {
     private final void s() {
         Intent intent = new Intent("android.settings.LOCATION_SOURCE_SETTINGS");
         intent.setFlags(268435456);
-        this.f56026a.startActivity(intent);
+        this.f56042a.startActivity(intent);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -558,14 +558,14 @@ public final class x extends tm.k {
             }
         }, 1, null);
         c10.d(d10);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit w(r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        action.e(a.c.f56030d);
-        return Unit.f33282a;
+        action.e(a.c.f56046d);
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -581,14 +581,14 @@ public final class x extends tm.k {
             }
         }, 1, null);
         c10.d(d10);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit y(x xVar, c cVar, r.c action) {
         Intrinsics.checkNotNullParameter(action, "$this$action");
-        xVar.r(action, new a0(cVar.a(), c0.f55856e));
-        return Unit.f33282a;
+        xVar.r(action, new a0(cVar.a(), c0.f55872e));
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -666,7 +666,7 @@ public final class x extends tm.k {
                 return aVar;
             }
         }
-        return a.C0791a.f56028d;
+        return a.C0791a.f56044d;
     }
 
     @Override // tm.k
@@ -675,10 +675,10 @@ public final class x extends tm.k {
         Intrinsics.checkNotNullParameter(renderProps, "renderProps");
         Intrinsics.checkNotNullParameter(renderState, "renderState");
         Intrinsics.checkNotNullParameter(context, "context");
-        if (Intrinsics.areEqual(renderState, a.C0791a.f56028d)) {
+        if (Intrinsics.areEqual(renderState, a.C0791a.f56044d)) {
             context.a("check_device_feature_state", new d(context, renderProps, null));
             return null;
-        } else if (Intrinsics.areEqual(renderState, a.d.f56031d)) {
+        } else if (Intrinsics.areEqual(renderState, a.d.f56047d)) {
             String e10 = renderProps.e();
             if (e10 == null) {
                 e10 = "Couldn't access location feature";
@@ -711,9 +711,9 @@ public final class x extends tm.k {
                     x10 = x.x(k.a.this, this, renderProps);
                     return x10;
                 }
-            }), tp.j.f49798i);
-        } else if (Intrinsics.areEqual(renderState, a.c.f56030d)) {
-            tm.w.l(context, this.f56027b.create(), Reflection.typeOf(m.class), "", new Function1() { // from class: zo.r
+            }), tp.j.f49814i);
+        } else if (Intrinsics.areEqual(renderState, a.c.f56046d)) {
+            tm.w.l(context, this.f56043b.create(), Reflection.typeOf(m.class), "", new Function1() { // from class: zo.r
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     tm.r z10;
@@ -722,7 +722,7 @@ public final class x extends tm.k {
                 }
             });
             return null;
-        } else if (Intrinsics.areEqual(renderState, a.b.f56029d)) {
+        } else if (Intrinsics.areEqual(renderState, a.b.f56045d)) {
             return null;
         } else {
             throw new ir.p();

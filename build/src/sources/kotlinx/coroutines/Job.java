@@ -11,7 +11,7 @@ import kotlin.sequences.Sequence;
 public interface Job extends CoroutineContext.Element {
 
     /* renamed from: j  reason: collision with root package name */
-    public static final b f36291j = b.f36292d;
+    public static final b f36307j = b.f36308d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -47,7 +47,7 @@ public interface Job extends CoroutineContext.Element {
     public static final class b implements CoroutineContext.b {
 
         /* renamed from: d  reason: collision with root package name */
-        static final /* synthetic */ b f36292d = new b();
+        static final /* synthetic */ b f36308d = new b();
 
         private b() {
         }

@@ -15,14 +15,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
     var2 = function(arg0, arg1) { // Original name: handleResponseError, environment: var0
-        _fun9965: for (var _fun9965_ip = 0;;) switch (_fun9965_ip) {
+        _fun9966: for (var _fun9966_ip = 0;;) switch (_fun9966_ip) {
             case 0:
                 var5 = arg0;
                 var0 = arg1;
                 var1 = var0.error;
                 if (!var1) {
-                    _fun9965_ip = 142;
-                    continue _fun9965
+                    _fun9966_ip = 142;
+                    continue _fun9966
                 }
             case 17:
                 var4 = var5.setStatus;
@@ -38,8 +38,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = var0.error;
                 var6 = var6.type;
                 if (var6) {
-                    _fun9965_ip = 79;
-                    continue _fun9965
+                    _fun9966_ip = 79;
+                    continue _fun9966
                 }
             case 73:
                 var6 = 'internal_error';

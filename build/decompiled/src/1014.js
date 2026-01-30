@@ -24,7 +24,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = '__esModule';
     var3 = var5.bind(var6)(var1, var3, var4);
     var3 = function() { // Original name: polyfillPromise, environment: var0
-        _fun10370: for (var _fun10370_ip = 0;;) switch (_fun10370_ip) {
+        _fun10371: for (var _fun10371_ip = 0;;) switch (_fun10371_ip) {
             case 0:
                 var5 = _closure1_slot0;
                 var0 = _closure1_slot1;
@@ -35,8 +35,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var3.ReactNativeLibraries;
                 var3 = var3.Utilities;
                 if (var3) {
-                    _fun10370_ip = 85;
-                    continue _fun10370
+                    _fun10371_ip = 85;
+                    continue _fun10371
                 }
             case 41:
                 var5 = _closure1_slot0;
@@ -48,8 +48,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var6.warn;
                 var3 = 'Could not polyfill Promise. React Native Libraries Utilities not found.';
                 var3 = var5.bind(var6)(var3);
-                _fun10370_ip = 171;
-                continue _fun10370;
+                _fun10371_ip = 171;
+                continue _fun10371;
             case 85:
                 var3 = _closure1_slot2;
                 var3 = var3.bind(var0)();
@@ -90,7 +90,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.requireRejectionTracking = var2;
     var0 = function() { // Original name: checkPromiseAndWarn, environment: var0
-        _fun10373: for (var _fun10373_ip = 0;;) switch (_fun10373_ip) {
+        _fun10374: for (var _fun10374_ip = 0;;) switch (_fun10374_ip) {
             case 0:
                 var0 = undefined;
                 var2 = undefined;
@@ -108,8 +108,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = _closure1_slot2;
                 var2 = var5.bind(var0)();
                 if (!(var4 !== var3)) {
-                    _fun10373_ip = 103;
-                    continue _fun10373
+                    _fun10374_ip = 103;
+                    continue _fun10374
                 }
             case 61:
                 var4 = _closure1_slot0;
@@ -131,8 +131,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var2.RN_GLOBAL_OBJ;
                 var2 = var2.Promise;
                 if (!(var3 === var2)) {
-                    _fun10373_ip = 185;
-                    continue _fun10373
+                    _fun10374_ip = 185;
+                    continue _fun10374
                 }
             case 141:
                 var3 = _closure1_slot0;
@@ -144,8 +144,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var4.log;
                 var2 = 'Unhandled promise rejections will be caught by Sentry.';
                 var2 = var3.bind(var4)(var2);
-                _fun10373_ip = 227;
-                continue _fun10373;
+                _fun10374_ip = 227;
+                continue _fun10374;
             case 185:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot1;
@@ -157,8 +157,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = 'Unhandled promise rejections will not be caught by Sentry. See https://docs.sentry.io/platforms/react-native/troubleshooting/ for more details.';
                 var1 = var2.bind(var3)(var1);
             case 227: // try_end0
-                _fun10373_ip = 276;
-                continue _fun10373;
+                _fun10374_ip = 276;
+                continue _fun10374;
             case 229: // catch_target0
                 CatchBlockStart(arg_register = 1);
                 var2 = _closure1_slot0;

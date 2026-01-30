@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/getCanSendInvite.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0, arg1, arg2, arg3) { // Original name: getCanSendInvite, environment: var1
-        _fun92872: for (var _fun92872_ip = 0;;) switch (_fun92872_ip) {
+        _fun93109: for (var _fun93109_ip = 0;;) switch (_fun93109_ip) {
             case 0:
                 var6 = arg0;
                 var0 = arg1;
@@ -39,8 +39,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1.id;
                 var1 = arg3;
                 if (!(var2 !== var1)) {
-                    _fun92872_ip = 256;
-                    continue _fun92872
+                    _fun93109_ip = 256;
+                    continue _fun93109
                 }
             case 27:
                 var3 = _closure1_slot1;
@@ -53,8 +53,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.id;
                 var2 = var3.bind(var4)(var6, var0, var2);
                 if (var2) {
-                    _fun92872_ip = 74;
-                    continue _fun92872
+                    _fun93109_ip = 74;
+                    continue _fun93109
                 }
             case 70:
                 var2 = false;
@@ -65,8 +65,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var2 == var0;
                 var2 = undefined;
                 if (var3) {
-                    _fun92872_ip = 96;
-                    continue _fun92872
+                    _fun93109_ip = 96;
+                    continue _fun93109
                 }
             case 91:
                 var2 = var0.type;
@@ -74,8 +74,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot4;
                 var0 = var0.JOIN_REQUEST;
                 if (!(var2 === var0)) {
-                    _fun92872_ip = 252;
-                    continue _fun92872
+                    _fun93109_ip = 252;
+                    continue _fun93109
                 }
             case 113:
                 var2 = _closure1_slot1;
@@ -87,8 +87,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.JOIN;
                 var0 = var2.bind(var4)(var6, var0);
                 if (var0) {
-                    _fun92872_ip = 156;
-                    continue _fun92872
+                    _fun93109_ip = 156;
+                    continue _fun93109
                 }
             case 152:
                 var0 = false;
@@ -108,8 +108,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.bind(var2)(var3);
                 var0 = !var0;
                 if (var0) {
-                    _fun92872_ip = 247;
-                    continue _fun92872
+                    _fun93109_ip = 247;
+                    continue _fun93109
                 }
             case 216:
                 var2 = _closure1_slot0;
@@ -132,4 +132,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getCanSendInvite = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 12067, 5629, 12070, 12073, 12074, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 12089, 5632, 12092, 12095, 12096, 2]);

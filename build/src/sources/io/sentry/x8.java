@@ -8,19 +8,19 @@ import java.util.Map;
 public final class x8 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final io.sentry.protocol.x f30948d;
+    private final io.sentry.protocol.x f30964d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f30949e;
+    private String f30965e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f30950i;
+    private String f30966i;
 
     /* renamed from: o  reason: collision with root package name */
-    private String f30951o;
+    private String f30967o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Map f30952p;
+    private Map f30968p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -97,40 +97,40 @@ public final class x8 implements w1 {
     }
 
     public x8(io.sentry.protocol.x xVar, String str, String str2, String str3) {
-        this.f30948d = xVar;
-        this.f30949e = str;
-        this.f30950i = str2;
-        this.f30951o = str3;
+        this.f30964d = xVar;
+        this.f30965e = str;
+        this.f30966i = str2;
+        this.f30967o = str3;
     }
 
     public void a(Map map) {
-        this.f30952p = map;
+        this.f30968p = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
         f3Var.e("event_id");
-        this.f30948d.serialize(f3Var, iLogger);
-        if (this.f30949e != null) {
-            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f30949e);
+        this.f30964d.serialize(f3Var, iLogger);
+        if (this.f30965e != null) {
+            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f30965e);
         }
-        if (this.f30950i != null) {
-            f3Var.e("email").f(this.f30950i);
+        if (this.f30966i != null) {
+            f3Var.e("email").f(this.f30966i);
         }
-        if (this.f30951o != null) {
-            f3Var.e("comments").f(this.f30951o);
+        if (this.f30967o != null) {
+            f3Var.e("comments").f(this.f30967o);
         }
-        Map map = this.f30952p;
+        Map map = this.f30968p;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f30952p.get(str));
+                f3Var.e(str).j(iLogger, this.f30968p.get(str));
             }
         }
         f3Var.y();
     }
 
     public String toString() {
-        return "UserFeedback{eventId=" + this.f30948d + ", name='" + this.f30949e + "', email='" + this.f30950i + "', comments='" + this.f30951o + "'}";
+        return "UserFeedback{eventId=" + this.f30964d + ", name='" + this.f30965e + "', email='" + this.f30966i + "', comments='" + this.f30967o + "'}";
     }
 }

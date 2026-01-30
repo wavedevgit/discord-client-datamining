@@ -5,13 +5,13 @@ import java.nio.ByteBuffer;
 public class b implements b2.d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f48056a = new b();
+    public static final b f48072a = new b();
 
     /* renamed from: b  reason: collision with root package name */
-    private static int f48057b = 16384;
+    private static int f48073b = 16384;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ThreadLocal f48058c = new a();
+    private static final ThreadLocal f48074c = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     class a extends ThreadLocal {
@@ -22,18 +22,18 @@ public class b implements b2.d {
         @Override // java.lang.ThreadLocal
         /* renamed from: a */
         public ByteBuffer initialValue() {
-            return ByteBuffer.allocate(b.f48057b);
+            return ByteBuffer.allocate(b.f48073b);
         }
     }
 
     public static int c() {
-        return f48057b;
+        return f48073b;
     }
 
     @Override // b2.d
     /* renamed from: b */
     public ByteBuffer acquire() {
-        return (ByteBuffer) f48058c.get();
+        return (ByteBuffer) f48074c.get();
     }
 
     @Override // b2.d

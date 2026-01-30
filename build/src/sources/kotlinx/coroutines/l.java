@@ -7,7 +7,7 @@ import kotlin.coroutines.CoroutineContext;
 public final class l extends ls.a0 {
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ AtomicIntegerFieldUpdater f36342p = AtomicIntegerFieldUpdater.newUpdater(l.class, "_decision$volatile");
+    private static final /* synthetic */ AtomicIntegerFieldUpdater f36358p = AtomicIntegerFieldUpdater.newUpdater(l.class, "_decision$volatile");
     private volatile /* synthetic */ int _decision$volatile;
 
     public l(CoroutineContext coroutineContext, Continuation continuation) {
@@ -15,7 +15,7 @@ public final class l extends ls.a0 {
     }
 
     private final boolean b1() {
-        AtomicIntegerFieldUpdater atomicIntegerFieldUpdater = f36342p;
+        AtomicIntegerFieldUpdater atomicIntegerFieldUpdater = f36358p;
         do {
             int i10 = atomicIntegerFieldUpdater.get(this);
             if (i10 != 0) {
@@ -24,12 +24,12 @@ public final class l extends ls.a0 {
                 }
                 throw new IllegalStateException("Already resumed");
             }
-        } while (!f36342p.compareAndSet(this, 0, 2));
+        } while (!f36358p.compareAndSet(this, 0, 2));
         return true;
     }
 
     private final boolean c1() {
-        AtomicIntegerFieldUpdater atomicIntegerFieldUpdater = f36342p;
+        AtomicIntegerFieldUpdater atomicIntegerFieldUpdater = f36358p;
         do {
             int i10 = atomicIntegerFieldUpdater.get(this);
             if (i10 != 0) {
@@ -38,7 +38,7 @@ public final class l extends ls.a0 {
                 }
                 throw new IllegalStateException("Already suspended");
             }
-        } while (!f36342p.compareAndSet(this, 0, 1));
+        } while (!f36358p.compareAndSet(this, 0, 1));
         return true;
     }
 
@@ -53,7 +53,7 @@ public final class l extends ls.a0 {
         if (b1()) {
             return;
         }
-        ls.j.b(or.b.c(this.f37429o), gs.t.a(obj, this.f37429o));
+        ls.j.b(or.b.c(this.f37445o), gs.t.a(obj, this.f37445o));
     }
 
     public final Object Z0() {
@@ -64,6 +64,6 @@ public final class l extends ls.a0 {
         if (!(h10 instanceof gs.r)) {
             return h10;
         }
-        throw ((gs.r) h10).f27178a;
+        throw ((gs.r) h10).f27194a;
     }
 }

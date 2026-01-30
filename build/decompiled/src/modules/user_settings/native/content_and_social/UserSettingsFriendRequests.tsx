@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var13 = var11.all;
         var7.value = var13;
         var13 = function(arg0) { // Original name: onValueChange, environment: var10
-            _fun109035: for (var _fun109035_ip = 0;;) switch (_fun109035_ip) {
+            _fun109297: for (var _fun109297_ip = 0;;) switch (_fun109297_ip) {
                 case 0:
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -125,16 +125,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = _closure1_slot5;
                     var4 = arg0;
                     if (var4) {
-                        _fun109035_ip = 66;
-                        continue _fun109035
+                        _fun109297_ip = 66;
+                        continue _fun109297
                     }
                 case 47:
                     var0 = _closure1_slot6;
                     var0 = var0.NO_RELATION;
                     var0 = ~var0;
                     var0 = var3 & var0;
-                    _fun109035_ip = 69;
-                    continue _fun109035;
+                    _fun109297_ip = 69;
+                    continue _fun109297;
                 case 66:
                     var0 = var3;
                 case 69:
@@ -163,7 +163,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var14 = var11.mutualFriends;
         var9.value = var14;
         var14 = function(arg0) { // Original name: onValueChange, environment: var10
-            _fun109036: for (var _fun109036_ip = 0;;) switch (_fun109036_ip) {
+            _fun109298: for (var _fun109298_ip = 0;;) switch (_fun109298_ip) {
                 case 0:
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -180,8 +180,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var4.bind(var5)(var0);
                     var0 = arg0;
                     if (var0) {
-                        _fun109036_ip = 101;
-                        continue _fun109036
+                        _fun109298_ip = 101;
+                        continue _fun109298
                     }
                 case 63:
                     var7 = var6.removeFlags;
@@ -190,8 +190,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var0.MUTUAL_FRIENDS;
                     var0 = var0.NO_RELATION;
                     var0 = var7.bind(var6)(var5, var4, var0);
-                    _fun109036_ip = 130;
-                    continue _fun109036;
+                    _fun109298_ip = 130;
+                    continue _fun109298;
                 case 101:
                     var5 = var6.addFlag;
                     var4 = _closure2_slot0;
@@ -223,7 +223,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var11 = var11.mutualGuilds;
         var8.value = var11;
         var10 = function(arg0) { // Original name: onValueChange, environment: var10
-            _fun109037: for (var _fun109037_ip = 0;;) switch (_fun109037_ip) {
+            _fun109299: for (var _fun109299_ip = 0;;) switch (_fun109299_ip) {
                 case 0:
                     var1 = _closure1_slot0;
                     var2 = _closure1_slot2;
@@ -240,8 +240,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var4.bind(var5)(var0);
                     var0 = arg0;
                     if (var0) {
-                        _fun109037_ip = 101;
-                        continue _fun109037
+                        _fun109299_ip = 101;
+                        continue _fun109299
                     }
                 case 63:
                     var7 = var6.removeFlags;
@@ -250,8 +250,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var0.MUTUAL_GUILDS;
                     var0 = var0.NO_RELATION;
                     var0 = var7.bind(var6)(var5, var4, var0);
-                    _fun109037_ip = 130;
-                    continue _fun109037;
+                    _fun109299_ip = 130;
+                    continue _fun109299;
                 case 101:
                     var5 = var6.addFlag;
                     var4 = _closure2_slot0;
@@ -274,4 +274,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1348, 7185, 5320, 1234, 5373, 1384, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1348, 7188, 5324, 1234, 5377, 1384, 2]);

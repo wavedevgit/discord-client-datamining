@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'modules/activities/utils/hasPartySize.tsx';
     var1 = var3.bind(var4)(var1);
     var1 = function(arg0) { // Original name: hasPartySize, environment: var1
-        _fun92874: for (var _fun92874_ip = 0;;) switch (_fun92874_ip) {
+        _fun93111: for (var _fun93111_ip = 0;;) switch (_fun93111_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.partySize;
@@ -28,8 +28,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = -1;
                 var0 = var0 > var1;
                 if (!var0) {
-                    _fun92874_ip = 32;
-                    continue _fun92874
+                    _fun93111_ip = 32;
+                    continue _fun93111
                 }
             case 28:
                 var0 = var2 > var1;

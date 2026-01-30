@@ -131,7 +131,7 @@ public final class e5 implements vm.b {
         this.f5914z = onErrorDismissed;
         this.A = governmentIdStepStyle;
         this.B = z10;
-        k.a aVar = vm.k.f51267a;
+        k.a aVar = vm.k.f51283a;
         this.C = new vm.z(Reflection.getOrCreateKotlinClass(e5.class), a.f5915d, new Function1() { // from class: ao.y4
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
@@ -289,13 +289,13 @@ public final class e5 implements vm.b {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit m(e5 e5Var) {
         e5Var.f5911w.invoke();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit n(e5 e5Var) {
         e5Var.f5912x.invoke();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // vm.b

@@ -12,19 +12,19 @@ import z9.n;
 public class b extends z9.a implements Closeable, c0 {
 
     /* renamed from: i  reason: collision with root package name */
-    private final v8.b f26551i;
+    private final v8.b f26567i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final j f26552o;
+    private final j f26568o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final i f26553p;
+    private final i f26569p;
 
     /* renamed from: q  reason: collision with root package name */
-    private i f26554q;
+    private i f26570q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final boolean f26555r;
+    private final boolean f26571r;
 
     public b(v8.b bVar, j jVar, i iVar) {
         this(bVar, jVar, iVar, true);
@@ -32,16 +32,16 @@ public class b extends z9.a implements Closeable, c0 {
 
     private void A0(j jVar, e eVar) {
         jVar.H(eVar);
-        this.f26553p.b(jVar, eVar);
-        i iVar = this.f26554q;
+        this.f26569p.b(jVar, eVar);
+        i iVar = this.f26570q;
         if (iVar != null) {
             iVar.b(jVar, eVar);
         }
     }
 
     private void C0(j jVar, n nVar) {
-        this.f26553p.a(jVar, nVar);
-        i iVar = this.f26554q;
+        this.f26569p.a(jVar, nVar);
+        i iVar = this.f26570q;
         if (iVar != null) {
             iVar.a(jVar, nVar);
         }
@@ -50,20 +50,20 @@ public class b extends z9.a implements Closeable, c0 {
     private void L(j jVar, long j10) {
         jVar.R(false);
         jVar.L(j10);
-        C0(jVar, n.f55404q);
+        C0(jVar, n.f55420q);
     }
 
     @Override // z9.a, z9.b
     public void B(String str, Object obj, b.a aVar) {
-        long now = this.f26551i.now();
-        j jVar = this.f26552o;
+        long now = this.f26567i.now();
+        j jVar = this.f26568o;
         jVar.x();
         jVar.D(now);
         jVar.B(str);
         jVar.y(obj);
         jVar.F(aVar);
-        A0(jVar, e.f55331p);
-        if (this.f26555r) {
+        A0(jVar, e.f55347p);
+        if (this.f26571r) {
             N(jVar, now);
         }
     }
@@ -71,35 +71,35 @@ public class b extends z9.a implements Closeable, c0 {
     @Override // z9.a, z9.b
     /* renamed from: E */
     public void a(String str, ImageInfo imageInfo, b.a aVar) {
-        long now = this.f26551i.now();
-        j jVar = this.f26552o;
+        long now = this.f26567i.now();
+        j jVar = this.f26568o;
         jVar.F(aVar);
         jVar.A(now);
         jVar.J(now);
         jVar.B(str);
         jVar.G(imageInfo);
-        A0(jVar, e.f55333r);
+        A0(jVar, e.f55349r);
     }
 
     @Override // z9.a, z9.b
     /* renamed from: F */
     public void onIntermediateImageSet(String str, ImageInfo imageInfo) {
-        long now = this.f26551i.now();
-        j jVar = this.f26552o;
+        long now = this.f26567i.now();
+        j jVar = this.f26568o;
         jVar.C(now);
         jVar.B(str);
         jVar.G(imageInfo);
-        A0(jVar, e.f55332q);
+        A0(jVar, e.f55348q);
     }
 
     public void N(j jVar, long j10) {
         jVar.R(true);
         jVar.Q(j10);
-        C0(jVar, n.f55403p);
+        C0(jVar, n.f55419p);
     }
 
     public void V() {
-        this.f26552o.w();
+        this.f26568o.w();
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
@@ -109,43 +109,43 @@ public class b extends z9.a implements Closeable, c0 {
 
     @Override // z9.a, z9.b
     public void h(String str, Throwable th2, b.a aVar) {
-        long now = this.f26551i.now();
-        j jVar = this.f26552o;
+        long now = this.f26567i.now();
+        j jVar = this.f26568o;
         jVar.F(aVar);
         jVar.z(now);
         jVar.B(str);
         jVar.E(th2);
-        A0(jVar, e.f55334s);
+        A0(jVar, e.f55350s);
         L(jVar, now);
     }
 
     @Override // com.facebook.drawee.drawable.c0
     public void n(boolean z10) {
         if (z10) {
-            N(this.f26552o, this.f26551i.now());
+            N(this.f26568o, this.f26567i.now());
         } else {
-            L(this.f26552o, this.f26551i.now());
+            L(this.f26568o, this.f26567i.now());
         }
     }
 
     @Override // z9.a, z9.b
     public void x(String str, b.a aVar) {
-        long now = this.f26551i.now();
-        j jVar = this.f26552o;
+        long now = this.f26567i.now();
+        j jVar = this.f26568o;
         jVar.F(aVar);
         jVar.B(str);
-        A0(jVar, e.f55336u);
-        if (this.f26555r) {
+        A0(jVar, e.f55352u);
+        if (this.f26571r) {
             L(jVar, now);
         }
     }
 
     public b(v8.b bVar, j jVar, i iVar, boolean z10) {
-        this.f26554q = null;
-        this.f26551i = bVar;
-        this.f26552o = jVar;
-        this.f26553p = iVar;
-        this.f26555r = z10;
+        this.f26570q = null;
+        this.f26567i = bVar;
+        this.f26568o = jVar;
+        this.f26569p = iVar;
+        this.f26571r = z10;
     }
 
     @Override // com.facebook.drawee.drawable.c0

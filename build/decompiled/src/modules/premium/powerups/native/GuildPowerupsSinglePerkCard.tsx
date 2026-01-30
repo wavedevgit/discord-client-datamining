@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/powerups/native/GuildPowerupsSinglePerkCard.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: GuildPowerupsSinglePerkCard, environment: var1
-        _fun102880: for (var _fun102880_ip = 0;;) switch (_fun102880_ip) {
+        _fun103135: for (var _fun103135_ip = 0;;) switch (_fun103135_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.guildId;
@@ -76,8 +76,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var6 != var7;
                 var6 = '';
                 if (!var8) {
-                    _fun102880_ip = 177;
-                    continue _fun102880
+                    _fun103135_ip = 177;
+                    continue _fun103135
                 }
             case 174:
                 var6 = var7;
@@ -91,4 +91,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 13363, 13341, 13359, 13360, 13386, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 13388, 13366, 13384, 13385, 13411, 2]);

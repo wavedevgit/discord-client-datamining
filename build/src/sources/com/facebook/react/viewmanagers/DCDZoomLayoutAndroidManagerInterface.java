@@ -6,9 +6,9 @@ import com.facebook.react.uimanager.ViewManagerWithGeneratedInterface;
 public interface DCDZoomLayoutAndroidManagerInterface<T extends View> extends ViewManagerWithGeneratedInterface {
     void setGestureEnabled(T t10, boolean z10);
 
-    void setMaximumZoomScale(T t10, float f10);
+    void setMaximumZoomScale(T t10, Float f10);
 
-    void setMinimumZoomScale(T t10, float f10);
+    void setMinimumZoomScale(T t10, Float f10);
 
     void unzoom(T t10, boolean z10);
 

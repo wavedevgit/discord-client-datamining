@@ -48,14 +48,14 @@ public final class StickerPickerRowViewManager extends SimpleViewManager<Sticker
     public static final Unit createViewInstance$lambda$2$lambda$0(StickerPickerRowViewManager stickerPickerRowViewManager, ThemedReactContext themedReactContext, StickerPickerRowView stickerPickerRowView, String stickerId) {
         Intrinsics.checkNotNullParameter(stickerId, "stickerId");
         stickerPickerRowViewManager.reactEvents.emitEvent(themedReactContext, stickerPickerRowView, new OnPressStickerEvent(stickerId));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit createViewInstance$lambda$2$lambda$1(StickerPickerRowViewManager stickerPickerRowViewManager, ThemedReactContext themedReactContext, StickerPickerRowView stickerPickerRowView, String stickerId) {
         Intrinsics.checkNotNullParameter(stickerId, "stickerId");
         stickerPickerRowViewManager.reactEvents.emitEvent(themedReactContext, stickerPickerRowView, new OnLongPressStickerEvent(stickerId));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // com.facebook.react.uimanager.BaseViewManager, com.facebook.react.uimanager.ViewManager

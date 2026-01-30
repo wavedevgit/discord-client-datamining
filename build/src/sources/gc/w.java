@@ -6,22 +6,22 @@ import javax.inject.Provider;
 public final class w implements bc.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Provider f26648a;
+    private final Provider f26664a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Provider f26649b;
+    private final Provider f26665b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Provider f26650c;
+    private final Provider f26666c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Provider f26651d;
+    private final Provider f26667d;
 
     public w(Provider provider, Provider provider2, Provider provider3, Provider provider4) {
-        this.f26648a = provider;
-        this.f26649b = provider2;
-        this.f26650c = provider3;
-        this.f26651d = provider4;
+        this.f26664a = provider;
+        this.f26665b = provider2;
+        this.f26666c = provider3;
+        this.f26667d = provider4;
     }
 
     public static w a(Provider provider, Provider provider2, Provider provider3, Provider provider4) {
@@ -35,6 +35,6 @@ public final class w implements bc.b {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public v get() {
-        return c((Executor) this.f26648a.get(), (hc.d) this.f26649b.get(), (x) this.f26650c.get(), (ic.b) this.f26651d.get());
+        return c((Executor) this.f26664a.get(), (hc.d) this.f26665b.get(), (x) this.f26666c.get(), (ic.b) this.f26667d.get());
     }
 }

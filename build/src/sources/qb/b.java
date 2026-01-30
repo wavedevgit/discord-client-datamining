@@ -8,10 +8,10 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f47056a = new b();
+    public static final b f47072a = new b();
 
     /* renamed from: b  reason: collision with root package name */
-    public static boolean f47057b;
+    public static boolean f47073b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static abstract class a {
@@ -27,10 +27,10 @@ public final class b {
     private static final class C0565b extends a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final long f47058a;
+        private final long f47074a;
 
         public C0565b(long j10) {
-            this.f47058a = j10;
+            this.f47074a = j10;
         }
 
         @Override // qb.b.a
@@ -48,7 +48,7 @@ public final class b {
 
         @Override // qb.b.a
         public void c() {
-            qb.a.i(this.f47058a);
+            qb.a.i(this.f47074a);
         }
     }
 
@@ -57,23 +57,23 @@ public final class b {
     public static final class c extends a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final long f47059a;
+        private final long f47075a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final String f47060b;
+        private final String f47076b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final List f47061c;
+        private final List f47077c;
 
         public c(long j10, String sectionName) {
             Intrinsics.checkNotNullParameter(sectionName, "sectionName");
-            this.f47059a = j10;
-            this.f47060b = sectionName;
-            this.f47061c = new ArrayList();
+            this.f47075a = j10;
+            this.f47076b = sectionName;
+            this.f47077c = new ArrayList();
         }
 
         private final void d(String str, String str2) {
-            List list = this.f47061c;
+            List list = this.f47077c;
             list.add(str + ": " + str2);
         }
 
@@ -95,10 +95,10 @@ public final class b {
         @Override // qb.b.a
         public void c() {
             String str;
-            long j10 = this.f47059a;
-            String str2 = this.f47060b;
-            if (b.f47057b && !this.f47061c.isEmpty()) {
-                str = " (" + c2.a(", ", this.f47061c) + ")";
+            long j10 = this.f47075a;
+            String str2 = this.f47076b;
+            if (b.f47073b && !this.f47077c.isEmpty()) {
+                str = " (" + c2.a(", ", this.f47077c) + ")";
             } else {
                 str = "";
             }

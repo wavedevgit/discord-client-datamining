@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.useValue = var8;
     var8 = function(arg0) { // Original name: onNoiseSuppressionSettingValueChange, environment: var7
-        _fun84320: for (var _fun84320_ip = 0;;) switch (_fun84320_ip) {
+        _fun84366: for (var _fun84366_ip = 0;;) switch (_fun84366_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var0 = _closure1_slot1;
@@ -86,13 +86,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var1.NoiseSuppressionOpt;
                 var1 = arg0;
                 if (var1) {
-                    _fun84320_ip = 68;
-                    continue _fun84320
+                    _fun84366_ip = 68;
+                    continue _fun84366
                 }
             case 60:
                 var1 = var4.NONE;
-                _fun84320_ip = 74;
-                continue _fun84320;
+                _fun84366_ip = 74;
+                continue _fun84366;
             case 68:
                 var1 = var4.STANDARD;
             case 74:
@@ -132,4 +132,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3435, 6965, 566, 10748, 8939, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3435, 6968, 566, 10754, 8943, 1234, 2]);

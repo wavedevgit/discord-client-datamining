@@ -6,43 +6,43 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class c5 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    boolean f29771d;
+    boolean f29787d;
 
     /* renamed from: e  reason: collision with root package name */
-    Double f29772e;
+    Double f29788e;
 
     /* renamed from: i  reason: collision with root package name */
-    boolean f29773i;
+    boolean f29789i;
 
     /* renamed from: o  reason: collision with root package name */
-    Double f29774o;
+    Double f29790o;
 
     /* renamed from: p  reason: collision with root package name */
-    String f29775p;
+    String f29791p;
 
     /* renamed from: q  reason: collision with root package name */
-    boolean f29776q;
+    boolean f29792q;
 
     /* renamed from: r  reason: collision with root package name */
-    boolean f29777r;
+    boolean f29793r;
 
     /* renamed from: s  reason: collision with root package name */
-    int f29778s;
+    int f29794s;
 
     /* renamed from: t  reason: collision with root package name */
-    boolean f29779t;
+    boolean f29795t;
 
     /* renamed from: u  reason: collision with root package name */
-    boolean f29780u;
+    boolean f29796u;
 
     /* renamed from: v  reason: collision with root package name */
-    boolean f29781v;
+    boolean f29797v;
 
     /* renamed from: w  reason: collision with root package name */
-    o3 f29782w;
+    o3 f29798w;
 
     /* renamed from: x  reason: collision with root package name */
-    private Map f29783x;
+    private Map f29799x;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -136,7 +136,7 @@ public final class c5 implements w1 {
                         if (v02 == null) {
                             break;
                         } else {
-                            c5Var.f29780u = v02.booleanValue();
+                            c5Var.f29796u = v02.booleanValue();
                             break;
                         }
                     case 1:
@@ -144,7 +144,7 @@ public final class c5 implements w1 {
                         if (v03 == null) {
                             break;
                         } else {
-                            c5Var.f29773i = v03.booleanValue();
+                            c5Var.f29789i = v03.booleanValue();
                             break;
                         }
                     case 2:
@@ -152,7 +152,7 @@ public final class c5 implements w1 {
                         if (r12 == null) {
                             break;
                         } else {
-                            c5Var.f29775p = r12;
+                            c5Var.f29791p = r12;
                             break;
                         }
                     case 3:
@@ -160,7 +160,7 @@ public final class c5 implements w1 {
                         if (v04 == null) {
                             break;
                         } else {
-                            c5Var.f29777r = v04.booleanValue();
+                            c5Var.f29793r = v04.booleanValue();
                             break;
                         }
                     case 4:
@@ -168,7 +168,7 @@ public final class c5 implements w1 {
                         if (v05 == null) {
                             break;
                         } else {
-                            c5Var.f29776q = v05.booleanValue();
+                            c5Var.f29792q = v05.booleanValue();
                             break;
                         }
                     case 5:
@@ -176,7 +176,7 @@ public final class c5 implements w1 {
                         if (v06 == null) {
                             break;
                         } else {
-                            c5Var.f29781v = v06.booleanValue();
+                            c5Var.f29797v = v06.booleanValue();
                             break;
                         }
                     case 6:
@@ -184,7 +184,7 @@ public final class c5 implements w1 {
                         if (v07 == null) {
                             break;
                         } else {
-                            c5Var.f29771d = v07.booleanValue();
+                            c5Var.f29787d = v07.booleanValue();
                             break;
                         }
                     case 7:
@@ -193,7 +193,7 @@ public final class c5 implements w1 {
                             break;
                         } else {
                             try {
-                                c5Var.f29782w = o3.valueOf(r13);
+                                c5Var.f29798w = o3.valueOf(r13);
                                 break;
                             } catch (IllegalArgumentException unused) {
                                 iLogger.c(SentryLevel.ERROR, "Error when deserializing ProfileLifecycle: " + r13, new Object[0]);
@@ -205,7 +205,7 @@ public final class c5 implements w1 {
                         if (v08 == null) {
                             break;
                         } else {
-                            c5Var.f29779t = v08.booleanValue();
+                            c5Var.f29795t = v08.booleanValue();
                             break;
                         }
                     case '\t':
@@ -213,7 +213,7 @@ public final class c5 implements w1 {
                         if (j12 == null) {
                             break;
                         } else {
-                            c5Var.f29778s = j12.intValue();
+                            c5Var.f29794s = j12.intValue();
                             break;
                         }
                     case '\n':
@@ -221,7 +221,7 @@ public final class c5 implements w1 {
                         if (k02 == null) {
                             break;
                         } else {
-                            c5Var.f29774o = k02;
+                            c5Var.f29790o = k02;
                             break;
                         }
                     case 11:
@@ -229,7 +229,7 @@ public final class c5 implements w1 {
                         if (k03 == null) {
                             break;
                         } else {
-                            c5Var.f29772e = k03;
+                            c5Var.f29788e = k03;
                             break;
                         }
                     default:
@@ -247,91 +247,91 @@ public final class c5 implements w1 {
     }
 
     public c5() {
-        this.f29773i = false;
-        this.f29774o = null;
-        this.f29771d = false;
-        this.f29772e = null;
-        this.f29779t = false;
-        this.f29775p = null;
-        this.f29776q = false;
-        this.f29777r = false;
-        this.f29782w = o3.MANUAL;
-        this.f29778s = 0;
-        this.f29780u = true;
-        this.f29781v = false;
+        this.f29789i = false;
+        this.f29790o = null;
+        this.f29787d = false;
+        this.f29788e = null;
+        this.f29795t = false;
+        this.f29791p = null;
+        this.f29792q = false;
+        this.f29793r = false;
+        this.f29798w = o3.MANUAL;
+        this.f29794s = 0;
+        this.f29796u = true;
+        this.f29797v = false;
     }
 
     public o3 a() {
-        return this.f29782w;
+        return this.f29798w;
     }
 
     public Double b() {
-        return this.f29772e;
+        return this.f29788e;
     }
 
     public String c() {
-        return this.f29775p;
+        return this.f29791p;
     }
 
     public int d() {
-        return this.f29778s;
+        return this.f29794s;
     }
 
     public Double e() {
-        return this.f29774o;
+        return this.f29790o;
     }
 
     public boolean f() {
-        return this.f29779t;
+        return this.f29795t;
     }
 
     public boolean g() {
-        return this.f29777r;
+        return this.f29793r;
     }
 
     public boolean h() {
-        return this.f29780u;
+        return this.f29796u;
     }
 
     public boolean i() {
-        return this.f29771d;
+        return this.f29787d;
     }
 
     public boolean j() {
-        return this.f29776q;
+        return this.f29792q;
     }
 
     public boolean k() {
-        return this.f29781v;
+        return this.f29797v;
     }
 
     public boolean l() {
-        return this.f29773i;
+        return this.f29789i;
     }
 
     public void m(Map map) {
-        this.f29783x = map;
+        this.f29799x = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        f3Var.e("profile_sampled").j(iLogger, Boolean.valueOf(this.f29771d));
-        f3Var.e("profile_sample_rate").j(iLogger, this.f29772e);
-        f3Var.e("continuous_profile_sampled").j(iLogger, Boolean.valueOf(this.f29779t));
-        f3Var.e("trace_sampled").j(iLogger, Boolean.valueOf(this.f29773i));
-        f3Var.e("trace_sample_rate").j(iLogger, this.f29774o);
-        f3Var.e("profiling_traces_dir_path").j(iLogger, this.f29775p);
-        f3Var.e("is_profiling_enabled").j(iLogger, Boolean.valueOf(this.f29776q));
-        f3Var.e("is_continuous_profiling_enabled").j(iLogger, Boolean.valueOf(this.f29777r));
-        f3Var.e("profile_lifecycle").j(iLogger, this.f29782w.name());
-        f3Var.e("profiling_traces_hz").j(iLogger, Integer.valueOf(this.f29778s));
-        f3Var.e("is_enable_app_start_profiling").j(iLogger, Boolean.valueOf(this.f29780u));
-        f3Var.e("is_start_profiler_on_app_start").j(iLogger, Boolean.valueOf(this.f29781v));
-        Map map = this.f29783x;
+        f3Var.e("profile_sampled").j(iLogger, Boolean.valueOf(this.f29787d));
+        f3Var.e("profile_sample_rate").j(iLogger, this.f29788e);
+        f3Var.e("continuous_profile_sampled").j(iLogger, Boolean.valueOf(this.f29795t));
+        f3Var.e("trace_sampled").j(iLogger, Boolean.valueOf(this.f29789i));
+        f3Var.e("trace_sample_rate").j(iLogger, this.f29790o);
+        f3Var.e("profiling_traces_dir_path").j(iLogger, this.f29791p);
+        f3Var.e("is_profiling_enabled").j(iLogger, Boolean.valueOf(this.f29792q));
+        f3Var.e("is_continuous_profiling_enabled").j(iLogger, Boolean.valueOf(this.f29793r));
+        f3Var.e("profile_lifecycle").j(iLogger, this.f29798w.name());
+        f3Var.e("profiling_traces_hz").j(iLogger, Integer.valueOf(this.f29794s));
+        f3Var.e("is_enable_app_start_profiling").j(iLogger, Boolean.valueOf(this.f29796u));
+        f3Var.e("is_start_profiler_on_app_start").j(iLogger, Boolean.valueOf(this.f29797v));
+        Map map = this.f29799x;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f29783x.get(str);
+                Object obj = this.f29799x.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -341,17 +341,17 @@ public final class c5 implements w1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public c5(k7 k7Var, s8 s8Var) {
-        this.f29773i = s8Var.e().booleanValue();
-        this.f29774o = s8Var.d();
-        this.f29771d = s8Var.b().booleanValue();
-        this.f29772e = s8Var.a();
-        this.f29779t = k7Var.getInternalTracesSampler().c(io.sentry.util.d0.a().c());
-        this.f29775p = k7Var.getProfilingTracesDirPath();
-        this.f29776q = k7Var.isProfilingEnabled();
-        this.f29777r = k7Var.isContinuousProfilingEnabled();
-        this.f29782w = k7Var.getProfileLifecycle();
-        this.f29778s = k7Var.getProfilingTracesHz();
-        this.f29780u = k7Var.isEnableAppStartProfiling();
-        this.f29781v = k7Var.isStartProfilerOnAppStart();
+        this.f29789i = s8Var.e().booleanValue();
+        this.f29790o = s8Var.d();
+        this.f29787d = s8Var.b().booleanValue();
+        this.f29788e = s8Var.a();
+        this.f29795t = k7Var.getInternalTracesSampler().c(io.sentry.util.d0.a().c());
+        this.f29791p = k7Var.getProfilingTracesDirPath();
+        this.f29792q = k7Var.isProfilingEnabled();
+        this.f29793r = k7Var.isContinuousProfilingEnabled();
+        this.f29798w = k7Var.getProfileLifecycle();
+        this.f29794s = k7Var.getProfilingTracesHz();
+        this.f29796u = k7Var.isEnableAppStartProfiling();
+        this.f29797v = k7Var.isStartProfilerOnAppStart();
     }
 }

@@ -7,18 +7,18 @@ import kotlin.enums.EnumEntries;
 public final class KotlinRetention {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ KotlinRetention[] f33639d;
+    private static final /* synthetic */ KotlinRetention[] f33655d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f33640e;
+    private static final /* synthetic */ EnumEntries f33656e;
     public static final KotlinRetention RUNTIME = new KotlinRetention("RUNTIME", 0);
     public static final KotlinRetention BINARY = new KotlinRetention("BINARY", 1);
     public static final KotlinRetention SOURCE = new KotlinRetention("SOURCE", 2);
 
     static {
         KotlinRetention[] a10 = a();
-        f33639d = a10;
-        f33640e = pr.a.a(a10);
+        f33655d = a10;
+        f33656e = pr.a.a(a10);
     }
 
     private KotlinRetention(String str, int i10) {
@@ -33,6 +33,6 @@ public final class KotlinRetention {
     }
 
     public static KotlinRetention[] values() {
-        return (KotlinRetention[]) f33639d.clone();
+        return (KotlinRetention[]) f33655d.clone();
     }
 }

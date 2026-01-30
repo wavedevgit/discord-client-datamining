@@ -87,7 +87,7 @@ public final class p1 implements vm.k {
         }
 
         private a() {
-            k.a aVar = vm.k.f51267a;
+            k.a aVar = vm.k.f51283a;
             this.f23324a = new vm.z(Reflection.getOrCreateKotlinClass(x5.d.C0315d.class), C0302a.f23325d, b.f23326d);
         }
     }

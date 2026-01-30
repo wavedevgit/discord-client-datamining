@@ -9,19 +9,19 @@ public final class h extends hf.a implements ef.k {
     public static final Parcelable.Creator<h> CREATOR = new i();
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f50268d;
+    private final List f50284d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f50269e;
+    private final String f50285e;
 
     public h(List list, String str) {
-        this.f50268d = list;
-        this.f50269e = str;
+        this.f50284d = list;
+        this.f50285e = str;
     }
 
     @Override // ef.k
     public final Status a() {
-        if (this.f50269e != null) {
+        if (this.f50285e != null) {
             return Status.f14789q;
         }
         return Status.f14793u;
@@ -29,10 +29,10 @@ public final class h extends hf.a implements ef.k {
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel parcel, int i10) {
-        List list = this.f50268d;
+        List list = this.f50284d;
         int a10 = hf.c.a(parcel);
         hf.c.u(parcel, 1, list, false);
-        hf.c.s(parcel, 2, this.f50269e, false);
+        hf.c.s(parcel, 2, this.f50285e, false);
         hf.c.b(parcel, a10);
     }
 }

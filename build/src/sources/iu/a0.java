@@ -9,13 +9,13 @@ import okio.ByteString;
 public final class a0 extends kotlin.collections.d implements RandomAccess {
 
     /* renamed from: o  reason: collision with root package name */
-    public static final a f31205o = new a(null);
+    public static final a f31221o = new a(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private final ByteString[] f31206e;
+    private final ByteString[] f31222e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int[] f31207i;
+    private final int[] f31223i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -176,12 +176,12 @@ public final class a0 extends kotlin.collections.d implements RandomAccess {
     }
 
     public static final a0 k(ByteString... byteStringArr) {
-        return f31205o.d(byteStringArr);
+        return f31221o.d(byteStringArr);
     }
 
     @Override // kotlin.collections.b
     public int c() {
-        return this.f31206e.length;
+        return this.f31222e.length;
     }
 
     @Override // kotlin.collections.b, java.util.Collection, java.util.List
@@ -199,15 +199,15 @@ public final class a0 extends kotlin.collections.d implements RandomAccess {
     @Override // kotlin.collections.d, java.util.List
     /* renamed from: f */
     public ByteString get(int i10) {
-        return this.f31206e[i10];
+        return this.f31222e[i10];
     }
 
     public final ByteString[] g() {
-        return this.f31206e;
+        return this.f31222e;
     }
 
     public final int[] h() {
-        return this.f31207i;
+        return this.f31223i;
     }
 
     public /* bridge */ int i(ByteString byteString) {
@@ -235,7 +235,7 @@ public final class a0 extends kotlin.collections.d implements RandomAccess {
     }
 
     private a0(ByteString[] byteStringArr, int[] iArr) {
-        this.f31206e = byteStringArr;
-        this.f31207i = iArr;
+        this.f31222e = byteStringArr;
+        this.f31223i = iArr;
     }
 }

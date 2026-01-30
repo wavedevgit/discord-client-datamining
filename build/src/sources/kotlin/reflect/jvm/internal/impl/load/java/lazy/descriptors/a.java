@@ -7,16 +7,16 @@ import kotlin.reflect.jvm.internal.impl.load.java.structure.JavaMethod;
 public class a implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final ClassDeclaredMemberIndex f34244d;
+    private final ClassDeclaredMemberIndex f34260d;
 
     public a(ClassDeclaredMemberIndex classDeclaredMemberIndex) {
-        this.f34244d = classDeclaredMemberIndex;
+        this.f34260d = classDeclaredMemberIndex;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         boolean b10;
-        b10 = ClassDeclaredMemberIndex.b(this.f34244d, (JavaMethod) obj);
+        b10 = ClassDeclaredMemberIndex.b(this.f34260d, (JavaMethod) obj);
         return Boolean.valueOf(b10);
     }
 }

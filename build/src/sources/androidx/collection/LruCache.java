@@ -100,7 +100,7 @@ public class LruCache {
                         this.f2168b.d(key, d10);
                     } else {
                         this.f2170d += h(key, a11);
-                        Unit unit = Unit.f33282a;
+                        Unit unit = Unit.f33298a;
                     }
                 } catch (Throwable th2) {
                     throw th2;
@@ -135,7 +135,7 @@ public class LruCache {
                 if (d10 != null) {
                     this.f2170d -= h(key, d10);
                 }
-                Unit unit = Unit.f33282a;
+                Unit unit = Unit.f33298a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -156,7 +156,7 @@ public class LruCache {
                 if (e10 != null) {
                     this.f2170d -= h(key, e10);
                 }
-                Unit unit = Unit.f33282a;
+                Unit unit = Unit.f33298a;
             } catch (Throwable th2) {
                 throw th2;
             }

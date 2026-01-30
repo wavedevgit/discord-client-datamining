@@ -19,19 +19,19 @@ public abstract /* synthetic */ class w {
     public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f32696d;
+        int f32712d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ g0 f32697e;
+        final /* synthetic */ g0 f32713e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Flow f32698i;
+        final /* synthetic */ Flow f32714i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ MutableSharedFlow f32699o;
+        final /* synthetic */ MutableSharedFlow f32715o;
 
         /* renamed from: p  reason: collision with root package name */
-        final /* synthetic */ Object f32700p;
+        final /* synthetic */ Object f32716p;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: js.w$a$a  reason: collision with other inner class name */
@@ -39,10 +39,10 @@ public abstract /* synthetic */ class w {
         public static final class C0441a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f32701d;
+            int f32717d;
 
             /* renamed from: e  reason: collision with root package name */
-            /* synthetic */ int f32702e;
+            /* synthetic */ int f32718e;
 
             C0441a(Continuation continuation) {
                 super(2, continuation);
@@ -51,21 +51,21 @@ public abstract /* synthetic */ class w {
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
                 C0441a c0441a = new C0441a(continuation);
-                c0441a.f32702e = ((Number) obj).intValue();
+                c0441a.f32718e = ((Number) obj).intValue();
                 return c0441a;
             }
 
             public final Object invoke(int i10, Continuation continuation) {
-                return ((C0441a) create(Integer.valueOf(i10), continuation)).invokeSuspend(Unit.f33282a);
+                return ((C0441a) create(Integer.valueOf(i10), continuation)).invokeSuspend(Unit.f33298a);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 boolean z10;
                 or.b.f();
-                if (this.f32701d == 0) {
+                if (this.f32717d == 0) {
                     kotlin.c.b(obj);
-                    if (this.f32702e > 0) {
+                    if (this.f32718e > 0) {
                         z10 = true;
                     } else {
                         z10 = false;
@@ -86,64 +86,64 @@ public abstract /* synthetic */ class w {
         public static final class b extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f32703d;
+            int f32719d;
 
             /* renamed from: e  reason: collision with root package name */
-            /* synthetic */ Object f32704e;
+            /* synthetic */ Object f32720e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ Flow f32705i;
+            final /* synthetic */ Flow f32721i;
 
             /* renamed from: o  reason: collision with root package name */
-            final /* synthetic */ MutableSharedFlow f32706o;
+            final /* synthetic */ MutableSharedFlow f32722o;
 
             /* renamed from: p  reason: collision with root package name */
-            final /* synthetic */ Object f32707p;
+            final /* synthetic */ Object f32723p;
 
             /* renamed from: js.w$a$b$a  reason: collision with other inner class name */
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
             public /* synthetic */ class C0442a {
 
                 /* renamed from: a  reason: collision with root package name */
-                public static final /* synthetic */ int[] f32708a;
+                public static final /* synthetic */ int[] f32724a;
 
                 static {
                     int[] iArr = new int[e0.values().length];
                     try {
-                        iArr[e0.f32493d.ordinal()] = 1;
+                        iArr[e0.f32509d.ordinal()] = 1;
                     } catch (NoSuchFieldError unused) {
                     }
                     try {
-                        iArr[e0.f32494e.ordinal()] = 2;
+                        iArr[e0.f32510e.ordinal()] = 2;
                     } catch (NoSuchFieldError unused2) {
                     }
                     try {
-                        iArr[e0.f32495i.ordinal()] = 3;
+                        iArr[e0.f32511i.ordinal()] = 3;
                     } catch (NoSuchFieldError unused3) {
                     }
-                    f32708a = iArr;
+                    f32724a = iArr;
                 }
             }
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             b(Flow flow, MutableSharedFlow mutableSharedFlow, Object obj, Continuation continuation) {
                 super(2, continuation);
-                this.f32705i = flow;
-                this.f32706o = mutableSharedFlow;
-                this.f32707p = obj;
+                this.f32721i = flow;
+                this.f32722o = mutableSharedFlow;
+                this.f32723p = obj;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                b bVar = new b(this.f32705i, this.f32706o, this.f32707p, continuation);
-                bVar.f32704e = obj;
+                b bVar = new b(this.f32721i, this.f32722o, this.f32723p, continuation);
+                bVar.f32720e = obj;
                 return bVar;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 Object f10 = or.b.f();
-                int i10 = this.f32703d;
+                int i10 = this.f32719d;
                 if (i10 != 0) {
                     if (i10 == 1) {
                         kotlin.c.b(obj);
@@ -152,51 +152,51 @@ public abstract /* synthetic */ class w {
                     }
                 } else {
                     kotlin.c.b(obj);
-                    int i11 = C0442a.f32708a[((e0) this.f32704e).ordinal()];
+                    int i11 = C0442a.f32724a[((e0) this.f32720e).ordinal()];
                     if (i11 != 1) {
                         if (i11 != 2) {
                             if (i11 == 3) {
-                                Object obj2 = this.f32707p;
-                                if (obj2 == c0.f32484a) {
-                                    this.f32706o.i();
+                                Object obj2 = this.f32723p;
+                                if (obj2 == c0.f32500a) {
+                                    this.f32722o.i();
                                 } else {
-                                    kotlin.coroutines.jvm.internal.b.a(this.f32706o.b(obj2));
+                                    kotlin.coroutines.jvm.internal.b.a(this.f32722o.b(obj2));
                                 }
                             } else {
                                 throw new ir.p();
                             }
                         }
                     } else {
-                        Flow flow = this.f32705i;
-                        MutableSharedFlow mutableSharedFlow = this.f32706o;
-                        this.f32703d = 1;
+                        Flow flow = this.f32721i;
+                        MutableSharedFlow mutableSharedFlow = this.f32722o;
+                        this.f32719d = 1;
                         if (flow.collect(mutableSharedFlow, this) == f10) {
                             return f10;
                         }
                     }
                 }
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
 
             @Override // kotlin.jvm.functions.Function2
             /* renamed from: j */
             public final Object invoke(e0 e0Var, Continuation continuation) {
-                return ((b) create(e0Var, continuation)).invokeSuspend(Unit.f33282a);
+                return ((b) create(e0Var, continuation)).invokeSuspend(Unit.f33298a);
             }
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(g0 g0Var, Flow flow, MutableSharedFlow mutableSharedFlow, Object obj, Continuation continuation) {
             super(2, continuation);
-            this.f32697e = g0Var;
-            this.f32698i = flow;
-            this.f32699o = mutableSharedFlow;
-            this.f32700p = obj;
+            this.f32713e = g0Var;
+            this.f32714i = flow;
+            this.f32715o = mutableSharedFlow;
+            this.f32716p = obj;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            return new a(this.f32697e, this.f32698i, this.f32699o, this.f32700p, continuation);
+            return new a(this.f32713e, this.f32714i, this.f32715o, this.f32716p, continuation);
         }
 
         /* JADX WARN: Code restructure failed: missing block: B:16:0x003c, code lost:
@@ -220,7 +220,7 @@ public abstract /* synthetic */ class w {
             /*
                 r7 = this;
                 java.lang.Object r0 = or.b.f()
-                int r1 = r7.f32696d
+                int r1 = r7.f32712d
                 r2 = 4
                 r3 = 3
                 r4 = 2
@@ -244,54 +244,54 @@ public abstract /* synthetic */ class w {
                 goto L8d
             L25:
                 kotlin.c.b(r8)
-                js.g0 r8 = r7.f32697e
-                js.g0$a r1 = js.g0.f32511a
+                js.g0 r8 = r7.f32713e
+                js.g0$a r1 = js.g0.f32527a
                 js.g0 r6 = r1.a()
                 if (r8 != r6) goto L3f
-                kotlinx.coroutines.flow.Flow r8 = r7.f32698i
-                kotlinx.coroutines.flow.MutableSharedFlow r1 = r7.f32699o
-                r7.f32696d = r5
+                kotlinx.coroutines.flow.Flow r8 = r7.f32714i
+                kotlinx.coroutines.flow.MutableSharedFlow r1 = r7.f32715o
+                r7.f32712d = r5
                 java.lang.Object r8 = r8.collect(r1, r7)
                 if (r8 != r0) goto L8d
                 goto L8c
             L3f:
-                js.g0 r8 = r7.f32697e
+                js.g0 r8 = r7.f32713e
                 js.g0 r1 = r1.b()
                 r5 = 0
                 if (r8 != r1) goto L69
-                kotlinx.coroutines.flow.MutableSharedFlow r8 = r7.f32699o
+                kotlinx.coroutines.flow.MutableSharedFlow r8 = r7.f32715o
                 js.j0 r8 = r8.e()
                 js.w$a$a r1 = new js.w$a$a
                 r1.<init>(r5)
-                r7.f32696d = r4
+                r7.f32712d = r4
                 java.lang.Object r8 = js.g.t(r8, r1, r7)
                 if (r8 != r0) goto L5c
                 goto L8c
             L5c:
-                kotlinx.coroutines.flow.Flow r8 = r7.f32698i
-                kotlinx.coroutines.flow.MutableSharedFlow r1 = r7.f32699o
-                r7.f32696d = r3
+                kotlinx.coroutines.flow.Flow r8 = r7.f32714i
+                kotlinx.coroutines.flow.MutableSharedFlow r1 = r7.f32715o
+                r7.f32712d = r3
                 java.lang.Object r8 = r8.collect(r1, r7)
                 if (r8 != r0) goto L8d
                 goto L8c
             L69:
-                js.g0 r8 = r7.f32697e
-                kotlinx.coroutines.flow.MutableSharedFlow r1 = r7.f32699o
+                js.g0 r8 = r7.f32713e
+                kotlinx.coroutines.flow.MutableSharedFlow r1 = r7.f32715o
                 js.j0 r1 = r1.e()
                 kotlinx.coroutines.flow.Flow r8 = r8.a(r1)
                 kotlinx.coroutines.flow.Flow r8 = js.g.l(r8)
                 js.w$a$b r1 = new js.w$a$b
-                kotlinx.coroutines.flow.Flow r3 = r7.f32698i
-                kotlinx.coroutines.flow.MutableSharedFlow r4 = r7.f32699o
-                java.lang.Object r6 = r7.f32700p
+                kotlinx.coroutines.flow.Flow r3 = r7.f32714i
+                kotlinx.coroutines.flow.MutableSharedFlow r4 = r7.f32715o
+                java.lang.Object r6 = r7.f32716p
                 r1.<init>(r3, r4, r6, r5)
-                r7.f32696d = r2
+                r7.f32712d = r2
                 java.lang.Object r8 = js.g.i(r8, r1, r7)
                 if (r8 != r0) goto L8d
             L8c:
                 return r0
             L8d:
-                kotlin.Unit r8 = kotlin.Unit.f33282a
+                kotlin.Unit r8 = kotlin.Unit.f33298a
                 return r8
             */
             throw new UnsupportedOperationException("Method not decompiled: js.w.a.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -299,7 +299,7 @@ public abstract /* synthetic */ class w {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -316,7 +316,7 @@ public abstract /* synthetic */ class w {
     */
     private static final js.f0 b(kotlinx.coroutines.flow.Flow r7, int r8) {
         /*
-            is.g$b r0 = is.g.f31185g
+            is.g$b r0 = is.g.f31201g
             int r0 = r0.a()
             int r0 = kotlin.ranges.d.d(r8, r0)
             int r0 = r0 - r8
@@ -327,7 +327,7 @@ public abstract /* synthetic */ class w {
             kotlinx.coroutines.flow.Flow r2 = r1.j()
             if (r2 == 0) goto L3c
             js.f0 r7 = new js.f0
-            int r3 = r1.f36451e
+            int r3 = r1.f36467e
             r4 = -3
             if (r3 == r4) goto L26
             r4 = -2
@@ -336,8 +336,8 @@ public abstract /* synthetic */ class w {
             r0 = r3
             goto L34
         L26:
-            is.a r4 = r1.f36452i
-            is.a r5 = is.a.f31125d
+            is.a r4 = r1.f36468i
+            is.a r5 = is.a.f31141d
             r6 = 0
             if (r4 != r5) goto L31
             if (r3 != 0) goto L34
@@ -348,14 +348,14 @@ public abstract /* synthetic */ class w {
             if (r8 != 0) goto L2f
             r0 = 1
         L34:
-            is.a r8 = r1.f36452i
-            kotlin.coroutines.CoroutineContext r1 = r1.f36450d
+            is.a r8 = r1.f36468i
+            kotlin.coroutines.CoroutineContext r1 = r1.f36466d
             r7.<init>(r2, r0, r8, r1)
             return r7
         L3c:
             js.f0 r8 = new js.f0
-            is.a r1 = is.a.f31125d
-            kotlin.coroutines.e r2 = kotlin.coroutines.e.f33356d
+            is.a r1 = is.a.f31141d
+            kotlin.coroutines.e r2 = kotlin.coroutines.e.f33372d
             r8.<init>(r7, r0, r1, r2)
             return r8
         */
@@ -364,10 +364,10 @@ public abstract /* synthetic */ class w {
 
     private static final Job c(CoroutineScope coroutineScope, CoroutineContext coroutineContext, Flow flow, MutableSharedFlow mutableSharedFlow, g0 g0Var, Object obj) {
         gs.c0 c0Var;
-        if (Intrinsics.areEqual(g0Var, g0.f32511a.a())) {
-            c0Var = gs.c0.f27144d;
+        if (Intrinsics.areEqual(g0Var, g0.f32527a.a())) {
+            c0Var = gs.c0.f27160d;
         } else {
-            c0Var = gs.c0.f27147o;
+            c0Var = gs.c0.f27163o;
         }
         return gs.g.c(coroutineScope, coroutineContext, c0Var, new a(g0Var, flow, mutableSharedFlow, obj, null));
     }
@@ -379,6 +379,6 @@ public abstract /* synthetic */ class w {
     public static final j0 e(Flow flow, CoroutineScope coroutineScope, g0 g0Var, Object obj) {
         f0 b10 = b(flow, 1);
         MutableStateFlow a10 = l0.a(obj);
-        return new y(a10, c(coroutineScope, b10.f32510d, b10.f32507a, a10, g0Var, obj));
+        return new y(a10, c(coroutineScope, b10.f32526d, b10.f32523a, a10, g0Var, obj));
     }
 }

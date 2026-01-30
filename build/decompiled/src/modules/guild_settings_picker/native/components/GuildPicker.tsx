@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_settings_picker/native/components/GuildPicker.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: GuildPicker, environment: var1
-        _fun96726: for (var _fun96726_ip = 0;;) switch (_fun96726_ip) {
+        _fun96980: for (var _fun96980_ip = 0;;) switch (_fun96980_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.guildId;
@@ -63,8 +63,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var6 == var7;
                 var6 = undefined;
                 if (var8) {
-                    _fun96726_ip = 121;
-                    continue _fun96726
+                    _fun96980_ip = 121;
+                    continue _fun96980
                 }
             case 116:
                 var6 = var7.name;
@@ -101,19 +101,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = _closure2_slot2;
                     var2.items = var6;
                     var6 = function(arg0) { // Original name: onItemSelect, environment: var6
-                        _fun96728: for (var _fun96728_ip = 0;;) switch (_fun96728_ip) {
+                        _fun96982: for (var _fun96982_ip = 0;;) switch (_fun96982_ip) {
                             case 0:
                                 var2 = arg0;
                                 var3 = null;
                                 if (!(var3 != var2)) {
-                                    _fun96728_ip = 31;
-                                    continue _fun96728
+                                    _fun96982_ip = 31;
+                                    continue _fun96982
                                 }
                             case 9:
                                 var1 = _closure2_slot1;
                                 if (!(var3 != var1)) {
-                                    _fun96728_ip = 31;
-                                    continue _fun96728
+                                    _fun96982_ip = 31;
+                                    continue _fun96982
                                 }
                             case 20:
                                 var1 = _closure2_slot1;
@@ -166,4 +166,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 12554, 12555, 3237, 5334, 1307, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 12579, 12580, 3237, 5338, 1307, 1234, 2]);

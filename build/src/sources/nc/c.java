@@ -13,32 +13,32 @@ import ne.h0;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final int[] f40026a = {2002, 2000, 1920, 1601, 1600, RNCWebViewManager.COMMAND_CLEAR_CACHE, 1000, 960, 800, 800, DiscordVideoMediaSource.DEFAULT_HEIGHT, ReactFontManager.TypefaceStyle.NORMAL, ReactFontManager.TypefaceStyle.NORMAL, RecyclerView.ItemAnimator.FLAG_MOVED};
+    private static final int[] f40042a = {2002, 2000, 1920, 1601, 1600, RNCWebViewManager.COMMAND_CLEAR_CACHE, 1000, 960, 800, 800, DiscordVideoMediaSource.DEFAULT_HEIGHT, ReactFontManager.TypefaceStyle.NORMAL, ReactFontManager.TypefaceStyle.NORMAL, RecyclerView.ItemAnimator.FLAG_MOVED};
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public final int f40027a;
+        public final int f40043a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final int f40028b;
+        public final int f40044b;
 
         /* renamed from: c  reason: collision with root package name */
-        public final int f40029c;
+        public final int f40045c;
 
         /* renamed from: d  reason: collision with root package name */
-        public final int f40030d;
+        public final int f40046d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final int f40031e;
+        public final int f40047e;
 
         private b(int i10, int i11, int i12, int i13, int i14) {
-            this.f40027a = i10;
-            this.f40029c = i11;
-            this.f40028b = i12;
-            this.f40030d = i13;
-            this.f40031e = i14;
+            this.f40043a = i10;
+            this.f40045c = i11;
+            this.f40044b = i12;
+            this.f40046d = i13;
+            this.f40047e = i14;
         }
     }
 
@@ -70,7 +70,7 @@ public abstract class c {
         int position = byteBuffer.position();
         byteBuffer.get(bArr);
         byteBuffer.position(position);
-        return d(new g0(bArr)).f40031e;
+        return d(new g0(bArr)).f40047e;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:39:0x0082, code lost:
@@ -137,14 +137,14 @@ public abstract class c {
             if (r7 != r6) goto L65
             r6 = 13
             if (r11 != r6) goto L65
-            int[] r0 = nc.c.f40026a
+            int[] r0 = nc.c.f40042a
             r11 = r0[r11]
         L63:
             r9 = r11
             goto L95
         L65:
             if (r7 != r4) goto L93
-            int[] r4 = nc.c.f40026a
+            int[] r4 = nc.c.f40042a
             int r6 = r4.length
             if (r11 >= r6) goto L93
             r4 = r4[r11]

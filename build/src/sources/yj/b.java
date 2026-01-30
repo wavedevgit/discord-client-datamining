@@ -20,34 +20,34 @@ import og.qd;
 public final class b implements c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f54772a;
+    private final Context f54788a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final xj.e f54773b;
+    private final xj.e f54789b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f54774c;
+    private boolean f54790c;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f54775d;
+    private boolean f54791d;
 
     /* renamed from: e  reason: collision with root package name */
-    private boolean f54776e;
+    private boolean f54792e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final qd f54777f;
+    private final qd f54793f;
 
     /* renamed from: g  reason: collision with root package name */
-    private le f54778g;
+    private le f54794g;
 
     /* renamed from: h  reason: collision with root package name */
-    private le f54779h;
+    private le f54795h;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public b(Context context, xj.e eVar, qd qdVar) {
-        this.f54772a = context;
-        this.f54773b = eVar;
-        this.f54777f = qdVar;
+        this.f54788a = context;
+        this.f54789b = eVar;
+        this.f54793f = qdVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -59,20 +59,20 @@ public final class b implements c {
     }
 
     private final void e() {
-        if (this.f54773b.c() == 2) {
-            if (this.f54778g == null) {
-                this.f54778g = f(new he(this.f54773b.e(), 1, 1, 2, false, this.f54773b.a()));
+        if (this.f54789b.c() == 2) {
+            if (this.f54794g == null) {
+                this.f54794g = f(new he(this.f54789b.e(), 1, 1, 2, false, this.f54789b.a()));
             }
-            if ((this.f54773b.d() == 2 || this.f54773b.b() == 2 || this.f54773b.e() == 2) && this.f54779h == null) {
-                this.f54779h = f(new he(this.f54773b.e(), this.f54773b.d(), this.f54773b.b(), 1, this.f54773b.g(), this.f54773b.a()));
+            if ((this.f54789b.d() == 2 || this.f54789b.b() == 2 || this.f54789b.e() == 2) && this.f54795h == null) {
+                this.f54795h = f(new he(this.f54789b.e(), this.f54789b.d(), this.f54789b.b(), 1, this.f54789b.g(), this.f54789b.a()));
             }
-        } else if (this.f54779h == null) {
-            this.f54779h = f(new he(this.f54773b.e(), this.f54773b.d(), this.f54773b.b(), 1, this.f54773b.g(), this.f54773b.a()));
+        } else if (this.f54795h == null) {
+            this.f54795h = f(new he(this.f54789b.e(), this.f54789b.d(), this.f54789b.b(), 1, this.f54789b.g(), this.f54789b.a()));
         }
     }
 
     private final le f(he heVar) {
-        if (this.f54775d) {
+        if (this.f54791d) {
             return d(DynamiteModule.f14871c, "com.google.mlkit.dynamite.face", "com.google.mlkit.vision.face.bundled.internal.ThickFaceDetectorCreator", heVar);
         }
         return d(DynamiteModule.f14870b, "com.google.android.gms.vision.face", "com.google.android.gms.vision.face.mlkit.FaceDetectorCreator", heVar);
@@ -96,9 +96,9 @@ public final class b implements c {
 
     @Override // yj.c
     public final boolean b() {
-        if (this.f54779h == null && this.f54778g == null) {
-            if (DynamiteModule.a(this.f54772a, "com.google.mlkit.dynamite.face") > 0) {
-                this.f54775d = true;
+        if (this.f54795h == null && this.f54794g == null) {
+            if (DynamiteModule.a(this.f54788a, "com.google.mlkit.dynamite.face") > 0) {
+                this.f54791d = true;
                 try {
                     e();
                 } catch (RemoteException e10) {
@@ -107,59 +107,59 @@ public final class b implements c {
                     throw new lj.a("Failed to load the bundled face module.", 13, e11);
                 }
             } else {
-                this.f54775d = false;
+                this.f54791d = false;
                 try {
                     e();
                 } catch (RemoteException e12) {
-                    k.c(this.f54777f, this.f54775d, ca.OPTIONAL_MODULE_INIT_ERROR);
+                    k.c(this.f54793f, this.f54791d, ca.OPTIONAL_MODULE_INIT_ERROR);
                     throw new lj.a("Failed to create thin face detector.", 13, e12);
                 } catch (DynamiteModule.a e13) {
-                    if (!this.f54776e) {
-                        pj.l.c(this.f54772a, "face");
-                        this.f54776e = true;
+                    if (!this.f54792e) {
+                        pj.l.c(this.f54788a, "face");
+                        this.f54792e = true;
                     }
-                    k.c(this.f54777f, this.f54775d, ca.OPTIONAL_MODULE_NOT_AVAILABLE);
+                    k.c(this.f54793f, this.f54791d, ca.OPTIONAL_MODULE_NOT_AVAILABLE);
                     throw new lj.a("Waiting for the face module to be downloaded. Please wait.", 14, e13);
                 }
             }
-            k.c(this.f54777f, this.f54775d, ca.NO_ERROR);
-            return this.f54775d;
+            k.c(this.f54793f, this.f54791d, ca.NO_ERROR);
+            return this.f54791d;
         }
-        return this.f54775d;
+        return this.f54791d;
     }
 
     @Override // yj.c
     public final Pair c(vj.a aVar) {
         List list;
-        if (this.f54779h == null && this.f54778g == null) {
+        if (this.f54795h == null && this.f54794g == null) {
             b();
         }
-        if (!this.f54774c) {
+        if (!this.f54790c) {
             try {
-                le leVar = this.f54779h;
+                le leVar = this.f54795h;
                 if (leVar != null) {
                     leVar.T0();
                 }
-                le leVar2 = this.f54778g;
+                le leVar2 = this.f54794g;
                 if (leVar2 != null) {
                     leVar2.T0();
                 }
-                this.f54774c = true;
+                this.f54790c = true;
             } catch (RemoteException e10) {
                 throw new lj.a("Failed to init face detector.", 13, e10);
             }
         }
-        le leVar3 = this.f54779h;
+        le leVar3 = this.f54795h;
         List list2 = null;
         if (leVar3 != null) {
             list = g(leVar3, aVar);
-            if (!this.f54773b.g()) {
+            if (!this.f54789b.g()) {
                 i.m(list);
             }
         } else {
             list = null;
         }
-        le leVar4 = this.f54778g;
+        le leVar4 = this.f54794g;
         if (leVar4 != null) {
             list2 = g(leVar4, aVar);
             i.m(list2);
@@ -168,25 +168,25 @@ public final class b implements c {
     }
 
     final le d(DynamiteModule.b bVar, String str, String str2, he heVar) {
-        return oe.e(DynamiteModule.d(this.f54772a, bVar, str).c(str2)).V(sf.b.S0(this.f54772a), heVar);
+        return oe.e(DynamiteModule.d(this.f54788a, bVar, str).c(str2)).V(sf.b.S0(this.f54788a), heVar);
     }
 
     @Override // yj.c
     public final void zzb() {
         try {
-            le leVar = this.f54779h;
+            le leVar = this.f54795h;
             if (leVar != null) {
                 leVar.U0();
-                this.f54779h = null;
+                this.f54795h = null;
             }
-            le leVar2 = this.f54778g;
+            le leVar2 = this.f54794g;
             if (leVar2 != null) {
                 leVar2.U0();
-                this.f54778g = null;
+                this.f54794g = null;
             }
         } catch (RemoteException e10) {
             Log.e("DecoupledFaceDelegate", "Failed to release face detector.", e10);
         }
-        this.f54774c = false;
+        this.f54790c = false;
     }
 }

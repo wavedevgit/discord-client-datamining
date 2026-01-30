@@ -29,23 +29,23 @@ import vn.r2;
 public final class t implements vm.k {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f51640c = new a(null);
+    public static final a f51656c = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private final wn.c f51641b;
+    private final wn.c f51657b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements vm.c0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final /* synthetic */ vm.c0 f51642a;
+        private final /* synthetic */ vm.c0 f51658a;
 
         /* renamed from: vn.t$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         /* synthetic */ class C0699a extends FunctionReferenceImpl implements Function3 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final C0699a f51643d = new C0699a();
+            public static final C0699a f51659d = new C0699a();
 
             C0699a() {
                 super(3, wn.c.class, "inflate", "inflate(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Z)Lcom/withpersona/sdk2/inquiry/document/databinding/Pi2DocumentReviewBinding;", 0);
@@ -66,7 +66,7 @@ public final class t implements vm.k {
         /* synthetic */ class b extends FunctionReferenceImpl implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            public static final b f51644d = new b();
+            public static final b f51660d = new b();
 
             b() {
                 super(1, t.class, "<init>", "<init>(Lcom/withpersona/sdk2/inquiry/document/databinding/Pi2DocumentReviewBinding;)V", 0);
@@ -90,23 +90,23 @@ public final class t implements vm.k {
             Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
             Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
             Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-            return this.f51642a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
+            return this.f51658a.a(initialRendering, initialViewEnvironment, contextForNewView, viewGroup);
         }
 
         @Override // vm.c0
         public KClass getType() {
-            return this.f51642a.getType();
+            return this.f51658a.getType();
         }
 
         private a() {
-            k.a aVar = vm.k.f51267a;
-            this.f51642a = new vm.z(Reflection.getOrCreateKotlinClass(r2.d.b.class), C0699a.f51643d, b.f51644d);
+            k.a aVar = vm.k.f51283a;
+            this.f51658a = new vm.z(Reflection.getOrCreateKotlinClass(r2.d.b.class), C0699a.f51659d, b.f51660d);
         }
     }
 
     public t(wn.c binding) {
         Intrinsics.checkNotNullParameter(binding, "binding");
-        this.f51641b = binding;
+        this.f51657b = binding;
         CoordinatorLayout root = binding.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
         tp.f.d(root, false, false, false, false, 15, null);
@@ -121,37 +121,37 @@ public final class t implements vm.k {
         Integer backgroundColorValue;
         if (documentStepStyle != null && (backgroundColorValue = documentStepStyle.getBackgroundColorValue()) != null) {
             int intValue = backgroundColorValue.intValue();
-            this.f51641b.getRoot().setBackgroundColor(intValue);
+            this.f51657b.getRoot().setBackgroundColor(intValue);
             sp.c.a(a0Var, intValue);
         }
         if (documentStepStyle != null) {
-            Context context = this.f51641b.getRoot().getContext();
+            Context context = this.f51657b.getRoot().getContext();
             Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
             Drawable a10 = eq.c.a(documentStepStyle, context);
             if (a10 != null) {
-                this.f51641b.getRoot().setBackground(a10);
+                this.f51657b.getRoot().setBackground(a10);
             }
         }
         if (documentStepStyle != null && (headerButtonColorValue = documentStepStyle.getHeaderButtonColorValue()) != null) {
-            this.f51641b.f52716f.setControlsColor(headerButtonColorValue.intValue());
+            this.f51657b.f52732f.setControlsColor(headerButtonColorValue.intValue());
         }
         if (documentStepStyle != null && (titleStyleValue = documentStepStyle.getTitleStyleValue()) != null) {
-            TextView title = this.f51641b.f52720j;
+            TextView title = this.f51657b.f52736j;
             Intrinsics.checkNotNullExpressionValue(title, "title");
             cq.f0.n(title, titleStyleValue, null, 2, null);
         }
         if (documentStepStyle != null && (textStyleValue = documentStepStyle.getTextStyleValue()) != null) {
-            TextView body = this.f51641b.f52712b;
+            TextView body = this.f51657b.f52728b;
             Intrinsics.checkNotNullExpressionValue(body, "body");
             cq.f0.n(body, textStyleValue, null, 2, null);
         }
         if (documentStepStyle != null && (disclaimerStyleValue = documentStepStyle.getDisclaimerStyleValue()) != null) {
-            TextView disclaimer = this.f51641b.f52714d;
+            TextView disclaimer = this.f51657b.f52730d;
             Intrinsics.checkNotNullExpressionValue(disclaimer, "disclaimer");
             cq.f0.n(disclaimer, disclaimerStyleValue, null, 2, null);
         }
         if (documentStepStyle != null && (buttonPrimaryStyleValue = documentStepStyle.getButtonPrimaryStyleValue()) != null) {
-            Button submitButton = this.f51641b.f52719i;
+            Button submitButton = this.f51657b.f52735i;
             Intrinsics.checkNotNullExpressionValue(submitButton, "submitButton");
             cq.e.f(submitButton, buttonPrimaryStyleValue, false, false, 6, null);
         }
@@ -163,7 +163,7 @@ public final class t implements vm.k {
         if (it instanceof d.b) {
             bVar.k().invoke(it);
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -174,13 +174,13 @@ public final class t implements vm.k {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit j(r2.d.b bVar) {
         bVar.h().invoke();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit k(r2.d.b bVar) {
         bVar.i().invoke();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // vm.k
@@ -190,20 +190,20 @@ public final class t implements vm.k {
         boolean z10;
         Intrinsics.checkNotNullParameter(rendering, "rendering");
         Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
-        wn.c cVar = this.f51641b;
-        cVar.f52720j.setText(rendering.r());
+        wn.c cVar = this.f51657b;
+        cVar.f52736j.setText(rendering.r());
         String n10 = rendering.n();
         if (n10 != null) {
-            ar.e.b(this.f51641b.getRoot().getContext()).c(cVar.f52712b, n10);
+            ar.e.b(this.f51657b.getRoot().getContext()).c(cVar.f52728b, n10);
         }
-        cVar.f52714d.setText(rendering.c());
-        if (cVar.f52717g.getAdapter() == null) {
-            Context context = this.f51641b.getRoot().getContext();
+        cVar.f52730d.setText(rendering.c());
+        if (cVar.f52733g.getAdapter() == null) {
+            Context context = this.f51657b.getRoot().getContext();
             Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
             xVar = new x(context, rendering.f(), rendering.m(), rendering.o());
-            cVar.f52717g.setAdapter(xVar);
+            cVar.f52733g.setAdapter(xVar);
         } else {
-            RecyclerView.Adapter adapter = cVar.f52717g.getAdapter();
+            RecyclerView.Adapter adapter = cVar.f52733g.getAdapter();
             Intrinsics.checkNotNull(adapter, "null cannot be cast to non-null type com.withpersona.sdk2.inquiry.document.DocumentTileAdapter");
             xVar = (x) adapter;
         }
@@ -221,9 +221,9 @@ public final class t implements vm.k {
                 return h10;
             }
         });
-        cVar.f52719i.setText(rendering.q());
-        cVar.f52719i.setEnabled(rendering.p());
-        cVar.f52719i.setOnClickListener(new View.OnClickListener() { // from class: vn.q
+        cVar.f52735i.setText(rendering.q());
+        cVar.f52735i.setEnabled(rendering.p());
+        cVar.f52735i.setOnClickListener(new View.OnClickListener() { // from class: vn.q
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 t.i(r2.d.b.this, view);
@@ -246,14 +246,14 @@ public final class t implements vm.k {
                 return k10;
             }
         };
-        Pi2NavigationBar navigationBar = cVar.f52716f;
+        Pi2NavigationBar navigationBar = cVar.f52732f;
         Intrinsics.checkNotNullExpressionValue(navigationBar, "navigationBar");
         CoordinatorLayout root = cVar.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
         rp.e.b(g10, function0, function02, navigationBar, root);
-        CoordinatorLayout root2 = this.f51641b.getRoot();
+        CoordinatorLayout root2 = this.f51657b.getRoot();
         Intrinsics.checkNotNullExpressionValue(root2, "getRoot(...)");
-        jp.z.a(root2, rendering.e(), rendering.j(), this.f51641b.f52719i, 4, 10000);
+        jp.z.a(root2, rendering.e(), rendering.j(), this.f51657b.f52735i, 4, 10000);
         f(rendering.o(), viewEnvironment);
     }
 }

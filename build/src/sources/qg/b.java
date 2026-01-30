@@ -5,13 +5,13 @@ import java.io.Closeable;
 public final class b implements Closeable {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final b f47392d = new b(false, null);
+    private static final b f47408d = new b(false, null);
 
     private b(boolean z10, d dVar) {
     }
 
     public static b a(boolean z10, c cVar) {
-        return f47392d;
+        return f47408d;
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable

@@ -8,10 +8,10 @@ import org.jetbrains.annotations.NotNull;
 public abstract class ConstantValue<T> {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f35410a;
+    private final Object f35426a;
 
     public ConstantValue(T t10) {
-        this.f35410a = t10;
+        this.f35426a = t10;
     }
 
     public boolean equals(Object obj) {
@@ -39,7 +39,7 @@ public abstract class ConstantValue<T> {
     public abstract KotlinType getType(@NotNull ModuleDescriptor moduleDescriptor);
 
     public T getValue() {
-        return (T) this.f35410a;
+        return (T) this.f35426a;
     }
 
     public int hashCode() {

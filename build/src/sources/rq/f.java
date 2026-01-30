@@ -12,39 +12,39 @@ import java.nio.charset.Charset;
 public class f {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final byte[] f48450b = "Exif\u0000\u0000".getBytes(Charset.forName("UTF-8"));
+    private static final byte[] f48466b = "Exif\u0000\u0000".getBytes(Charset.forName("UTF-8"));
 
     /* renamed from: c  reason: collision with root package name */
-    private static final int[] f48451c = {0, 1, 1, 2, 4, 8, 1, 1, 2, 4, 8, 4, 8};
+    private static final int[] f48467c = {0, 1, 1, 2, 4, 8, 1, 1, 2, 4, 8, 4, 8};
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f48452a;
+    private final b f48468a;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final ByteBuffer f48453a;
+        private final ByteBuffer f48469a;
 
         public a(byte[] bArr, int i10) {
-            this.f48453a = (ByteBuffer) ByteBuffer.wrap(bArr).order(ByteOrder.BIG_ENDIAN).limit(i10);
+            this.f48469a = (ByteBuffer) ByteBuffer.wrap(bArr).order(ByteOrder.BIG_ENDIAN).limit(i10);
         }
 
         public short a(int i10) {
-            return this.f48453a.getShort(i10);
+            return this.f48469a.getShort(i10);
         }
 
         public int b(int i10) {
-            return this.f48453a.getInt(i10);
+            return this.f48469a.getInt(i10);
         }
 
         public int c() {
-            return this.f48453a.remaining();
+            return this.f48469a.remaining();
         }
 
         public void d(ByteOrder byteOrder) {
-            this.f48453a.order(byteOrder);
+            this.f48469a.order(byteOrder);
         }
     }
 
@@ -64,22 +64,22 @@ public class f {
     private static class c implements b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final InputStream f48454a;
+        private final InputStream f48470a;
 
         public c(InputStream inputStream) {
-            this.f48454a = inputStream;
+            this.f48470a = inputStream;
         }
 
         @Override // rq.f.b
         public int a() {
-            return ((this.f48454a.read() << 8) & 65280) | (this.f48454a.read() & SetSpanOperation.SPAN_MAX_PRIORITY);
+            return ((this.f48470a.read() << 8) & 65280) | (this.f48470a.read() & SetSpanOperation.SPAN_MAX_PRIORITY);
         }
 
         @Override // rq.f.b
         public int b(byte[] bArr, int i10) {
             int i11 = i10;
             while (i11 > 0) {
-                int read = this.f48454a.read(bArr, i10 - i11, i11);
+                int read = this.f48470a.read(bArr, i10 - i11, i11);
                 if (read == -1) {
                     break;
                 }
@@ -90,7 +90,7 @@ public class f {
 
         @Override // rq.f.b
         public short c() {
-            return (short) (this.f48454a.read() & SetSpanOperation.SPAN_MAX_PRIORITY);
+            return (short) (this.f48470a.read() & SetSpanOperation.SPAN_MAX_PRIORITY);
         }
 
         @Override // rq.f.b
@@ -100,9 +100,9 @@ public class f {
             }
             long j11 = j10;
             while (j11 > 0) {
-                long skip = this.f48454a.skip(j11);
+                long skip = this.f48470a.skip(j11);
                 if (skip <= 0) {
-                    if (this.f48454a.read() == -1) {
+                    if (this.f48470a.read() == -1) {
                         break;
                     }
                     skip = 1;
@@ -114,7 +114,7 @@ public class f {
     }
 
     public f(InputStream inputStream) {
-        this.f48452a = new c(inputStream);
+        this.f48468a = new c(inputStream);
     }
 
     private static int a(int i10, int i11) {
@@ -150,7 +150,7 @@ public class f {
 
     private boolean e(byte[] bArr, int i10) {
         boolean z10;
-        if (bArr != null && i10 > f48450b.length) {
+        if (bArr != null && i10 > f48466b.length) {
             z10 = true;
         } else {
             z10 = false;
@@ -158,7 +158,7 @@ public class f {
         if (z10) {
             int i11 = 0;
             while (true) {
-                byte[] bArr2 = f48450b;
+                byte[] bArr2 = f48466b;
                 if (i11 >= bArr2.length) {
                     break;
                 } else if (bArr[i11] != bArr2[i11]) {
@@ -178,13 +178,13 @@ public class f {
         long j10;
         long skip;
         do {
-            if (this.f48452a.c() != 255) {
+            if (this.f48468a.c() != 255) {
                 if (Log.isLoggable("ImageHeaderParser", 3)) {
                     Log.d("ImageHeaderParser", "Unknown segmentId=" + ((int) c10));
                 }
                 return -1;
             }
-            c11 = this.f48452a.c();
+            c11 = this.f48468a.c();
             if (c11 == 218) {
                 return -1;
             }
@@ -194,10 +194,10 @@ public class f {
                 }
                 return -1;
             }
-            a10 = this.f48452a.a() - 2;
+            a10 = this.f48468a.a() - 2;
             if (c11 != 225) {
                 j10 = a10;
-                skip = this.f48452a.skip(j10);
+                skip = this.f48468a.skip(j10);
             } else {
                 return a10;
             }
@@ -239,7 +239,7 @@ public class f {
                         if (Log.isLoggable("ImageHeaderParser", 3)) {
                             Log.d("ImageHeaderParser", "Got tagIndex=" + i10 + " tagType=" + ((int) a13) + " formatCode=" + ((int) a14) + " componentCount=" + b11);
                         }
-                        int i11 = b11 + f48451c[a14];
+                        int i11 = b11 + f48467c[a14];
                         if (i11 > 4) {
                             if (Log.isLoggable("ImageHeaderParser", 3)) {
                                 Log.d("ImageHeaderParser", "Got byte count > 4, not orientation, continuing, formatCode=" + ((int) a14));
@@ -267,7 +267,7 @@ public class f {
     }
 
     private int h(byte[] bArr, int i10) {
-        int b10 = this.f48452a.b(bArr, i10);
+        int b10 = this.f48468a.b(bArr, i10);
         if (b10 != i10) {
             if (Log.isLoggable("ImageHeaderParser", 3)) {
                 Log.d("ImageHeaderParser", "Unable to read exif segment data, length: " + i10 + ", actually read: " + b10);
@@ -284,7 +284,7 @@ public class f {
     }
 
     public int c() {
-        int a10 = this.f48452a.a();
+        int a10 = this.f48468a.a();
         if (!d(a10)) {
             if (Log.isLoggable("ImageHeaderParser", 3)) {
                 Log.d("ImageHeaderParser", "Parser doesn't handle magic number: " + a10);

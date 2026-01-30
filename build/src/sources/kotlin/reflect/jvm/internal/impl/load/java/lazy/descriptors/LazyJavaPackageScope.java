@@ -40,16 +40,16 @@ import org.jetbrains.annotations.NotNull;
 public final class LazyJavaPackageScope extends LazyJavaStaticScope {
 
     /* renamed from: m  reason: collision with root package name */
-    private final JavaPackage f34210m;
+    private final JavaPackage f34226m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final LazyJavaPackageFragment f34211n;
+    private final LazyJavaPackageFragment f34227n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final NullableLazyValue f34212o;
+    private final NullableLazyValue f34228o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final MemoizedFunctionToNullable f34213p;
+    private final MemoizedFunctionToNullable f34229p;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -59,18 +59,18 @@ public final class LazyJavaPackageScope extends LazyJavaStaticScope {
         public static final class Found extends KotlinClassLookupResult {
 
             /* renamed from: a  reason: collision with root package name */
-            private final ClassDescriptor f34214a;
+            private final ClassDescriptor f34230a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public Found(@NotNull ClassDescriptor descriptor) {
                 super(null);
                 Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-                this.f34214a = descriptor;
+                this.f34230a = descriptor;
             }
 
             @NotNull
             public final ClassDescriptor getDescriptor() {
-                return this.f34214a;
+                return this.f34230a;
             }
         }
 
@@ -107,34 +107,34 @@ public final class LazyJavaPackageScope extends LazyJavaStaticScope {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Name f34215a;
+        private final Name f34231a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final JavaClass f34216b;
+        private final JavaClass f34232b;
 
         public a(Name name, JavaClass javaClass) {
             Intrinsics.checkNotNullParameter(name, "name");
-            this.f34215a = name;
-            this.f34216b = javaClass;
+            this.f34231a = name;
+            this.f34232b = javaClass;
         }
 
         public final JavaClass a() {
-            return this.f34216b;
+            return this.f34232b;
         }
 
         public final Name b() {
-            return this.f34215a;
+            return this.f34231a;
         }
 
         public boolean equals(Object obj) {
-            if ((obj instanceof a) && Intrinsics.areEqual(this.f34215a, ((a) obj).f34215a)) {
+            if ((obj instanceof a) && Intrinsics.areEqual(this.f34231a, ((a) obj).f34231a)) {
                 return true;
             }
             return false;
         }
 
         public int hashCode() {
-            return this.f34215a.hashCode();
+            return this.f34231a.hashCode();
         }
     }
 
@@ -144,10 +144,10 @@ public final class LazyJavaPackageScope extends LazyJavaStaticScope {
         Intrinsics.checkNotNullParameter(c10, "c");
         Intrinsics.checkNotNullParameter(jPackage, "jPackage");
         Intrinsics.checkNotNullParameter(ownerDescriptor, "ownerDescriptor");
-        this.f34210m = jPackage;
-        this.f34211n = ownerDescriptor;
-        this.f34212o = c10.getStorageManager().createNullableLazyValue(new w(c10, this));
-        this.f34213p = c10.getStorageManager().createMemoizedFunctionWithNullableValues(new x(this, c10));
+        this.f34226m = jPackage;
+        this.f34227n = ownerDescriptor;
+        this.f34228o = c10.getStorageManager().createNullableLazyValue(new w(c10, this));
+        this.f34229p = c10.getStorageManager().createMemoizedFunctionWithNullableValues(new x(this, c10));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -230,11 +230,11 @@ public final class LazyJavaPackageScope extends LazyJavaStaticScope {
         if (!SpecialNames.INSTANCE.isSafeIdentifier(name)) {
             return null;
         }
-        Set set = (Set) this.f34212o.invoke();
+        Set set = (Set) this.f34228o.invoke();
         if (javaClass == null && set != null && !set.contains(name.asString())) {
             return null;
         }
-        return (ClassDescriptor) this.f34213p.invoke(new a(name, javaClass));
+        return (ClassDescriptor) this.f34229p.invoke(new a(name, javaClass));
     }
 
     private final MetadataVersion a0() {
@@ -264,7 +264,7 @@ public final class LazyJavaPackageScope extends LazyJavaStaticScope {
     @Override // kotlin.reflect.jvm.internal.impl.load.java.lazy.descriptors.LazyJavaScope
     /* renamed from: b0 */
     public LazyJavaPackageFragment getOwnerDescriptor() {
-        return this.f34211n;
+        return this.f34227n;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.lazy.descriptors.LazyJavaScope
@@ -322,7 +322,7 @@ public final class LazyJavaPackageScope extends LazyJavaStaticScope {
         if (!kindFilter.acceptsKinds(DescriptorKindFilter.Companion.getNON_SINGLETON_CLASSIFIERS_MASK())) {
             return x0.d();
         }
-        Set<String> set = (Set) this.f34212o.invoke();
+        Set<String> set = (Set) this.f34228o.invoke();
         if (set != null) {
             HashSet hashSet = new HashSet();
             for (String str : set) {
@@ -330,7 +330,7 @@ public final class LazyJavaPackageScope extends LazyJavaStaticScope {
             }
             return hashSet;
         }
-        JavaPackage javaPackage = this.f34210m;
+        JavaPackage javaPackage = this.f34226m;
         if (function1 == null) {
             function1 = FunctionsKt.alwaysTrue();
         }

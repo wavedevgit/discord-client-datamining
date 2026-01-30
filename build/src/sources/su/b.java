@@ -8,14 +8,14 @@ import su.c;
 public final class b implements ku.b, c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f49158a = new b();
+    public static final b f49174a = new b();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends Lambda implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f49159d = new a();
+        public static final a f49175d = new a();
 
         a() {
             super(2);
@@ -77,6 +77,6 @@ public final class b implements ku.b, c {
     @Override // ku.b
     /* renamed from: i */
     public Boolean f(Object obj, Object obj2) {
-        return Boolean.valueOf(h(obj, a.f49159d));
+        return Boolean.valueOf(h(obj, a.f49175d));
     }
 }

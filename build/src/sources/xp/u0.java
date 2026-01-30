@@ -147,7 +147,7 @@ public abstract class u0 {
             Intrinsics.checkNotNullExpressionValue(checkboxGroupLabel, "checkboxGroupLabel");
             cq.f0.n(checkboxGroupLabel, textBasedStyle, null, 2, null);
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private static final void f(InputCheckboxGroupComponent inputCheckboxGroupComponent, List list) {

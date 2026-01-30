@@ -32,13 +32,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/rewards/ProgramRewardsUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function() { // Original name: isInProgramRewardsTreatments, environment: var1
-        _fun96167: for (var _fun96167_ip = 0;;) switch (_fun96167_ip) {
+        _fun96415: for (var _fun96415_ip = 0;;) switch (_fun96415_ip) {
             case 0:
                 var2 = arguments[0];
                 var3 = undefined;
                 if (!(var2 === var3)) {
-                    _fun96167_ip = 15;
-                    continue _fun96167
+                    _fun96415_ip = 15;
+                    continue _fun96415
                 }
             case 9:
                 var2 = 'ProgramRewardsUtils';
@@ -56,13 +56,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isInProgramRewardsTreatments = var3;
     var3 = function() { // Original name: useIsInProgramRewardsTreatments, environment: var1
-        _fun96168: for (var _fun96168_ip = 0;;) switch (_fun96168_ip) {
+        _fun96416: for (var _fun96416_ip = 0;;) switch (_fun96416_ip) {
             case 0:
                 var2 = arguments[0];
                 var3 = undefined;
                 if (!(var2 === var3)) {
-                    _fun96168_ip = 15;
-                    continue _fun96168
+                    _fun96416_ip = 15;
+                    continue _fun96416
                 }
             case 9:
                 var2 = 'ProgramRewardsUtils';
@@ -80,13 +80,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsInProgramRewardsTreatments = var3;
     var1 = function(arg0) { // Original name: hasNecessaryPremiumSubscriptionStatus, environment: var1
-        _fun96169: for (var _fun96169_ip = 0;;) switch (_fun96169_ip) {
+        _fun96417: for (var _fun96417_ip = 0;;) switch (_fun96417_ip) {
             case 0:
                 var3 = arg0;
                 var0 = null;
                 if (!(var0 == var3)) {
-                    _fun96169_ip = 25;
-                    continue _fun96169
+                    _fun96417_ip = 25;
+                    continue _fun96417
                 }
             case 9:
                 var1 = _closure1_slot2;
@@ -108,4 +108,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.hasNecessaryPremiumSubscriptionStatus = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1613, 1615, 12485, 1628, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1613, 1615, 12509, 1628, 2]);

@@ -8,13 +8,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var1 = function() { // Original name: getPendingFolderGuildIds, environment: var3
-        _fun59739: for (var _fun59739_ip = 0;;) switch (_fun59739_ip) {
+        _fun59783: for (var _fun59783_ip = 0;;) switch (_fun59783_ip) {
             case 0:
                 var2 = arguments[0];
                 var1 = undefined;
                 if (!(var2 === var1)) {
-                    _fun59739_ip = 37;
-                    continue _fun59739
+                    _fun59783_ip = 37;
+                    continue _fun59783
                 }
             case 11:
                 var5 = _closure1_slot2;
@@ -32,16 +32,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var2 === var1;
                 var2 = undefined;
                 if (var5) {
-                    _fun59739_ip = 62;
-                    continue _fun59739
+                    _fun59783_ip = 62;
+                    continue _fun59783
                 }
             case 59:
                 var2 = var3;
             case 62:
                 var3 = undefined;
                 if (var5) {
-                    _fun59739_ip = 92;
-                    continue _fun59739
+                    _fun59783_ip = 92;
+                    continue _fun59783
                 }
             case 67:
                 var7 = var6().value;
@@ -50,16 +50,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = undefined;
                 var5 = var6;
                 if (var6) {
-                    _fun59739_ip = 92;
-                    continue _fun59739
+                    _fun59783_ip = 92;
+                    continue _fun59783
                 }
             case 86:
                 var3 = var7;
                 var5 = var6;
             case 92:
                 if (var5) {
-                    _fun59739_ip = 98;
-                    continue _fun59739
+                    _fun59783_ip = 98;
+                    continue _fun59783
                 }
             case 95:
                 var4.return();

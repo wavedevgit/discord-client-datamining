@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function(arg0, arg1) { // Original name: HasProperty, environment: var0
-        _fun28998: for (var _fun28998_ip = 0;;) switch (_fun28998_ip) {
+        _fun28999: for (var _fun28999_ip = 0;;) switch (_fun28999_ip) {
             case 0:
                 var1 = arg0;
                 var0 = arg1;
@@ -19,8 +19,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = _closure1_slot0;
                 var6 = _closure1_slot1;
                 if (var3) {
-                    _fun28998_ip = 86;
-                    continue _fun28998
+                    _fun28999_ip = 86;
+                    continue _fun28999
                 }
             case 46:
                 var3 = 1;
@@ -43,8 +43,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var5.bind(var4)(var3);
                 var3 = var3.bind(var4)(var0);
                 if (var3) {
-                    _fun28998_ip = 154;
-                    continue _fun28998
+                    _fun28999_ip = 154;
+                    continue _fun28999
                 }
             case 106:
                 var3 = _closure1_slot0;

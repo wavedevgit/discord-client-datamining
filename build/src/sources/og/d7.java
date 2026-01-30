@@ -5,30 +5,30 @@ import ui.c;
 final class d7 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final d7 f42845a = new d7();
+    static final d7 f42861a = new d7();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f42846b;
+    private static final ui.c f42862b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f42847c;
+    private static final ui.c f42863c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f42848d;
+    private static final ui.c f42864d;
 
     static {
         c.b a10 = ui.c.a("detectorMode");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f42846b = a10.b(s1Var.b()).a();
+        f42862b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("streamModeSmoothingRatio");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f42847c = a11.b(s1Var2.b()).a();
+        f42863c = a11.b(s1Var2.b()).a();
         c.b a12 = ui.c.a("rawSizeMaskEnabled");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f42848d = a12.b(s1Var3.b()).a();
+        f42864d = a12.b(s1Var3.b()).a();
     }
 
     private d7() {

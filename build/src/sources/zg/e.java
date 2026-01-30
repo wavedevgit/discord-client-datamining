@@ -7,18 +7,18 @@ import android.widget.ImageView;
 public class e extends Property {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Matrix f55665a;
+    private final Matrix f55681a;
 
     public e() {
         super(Matrix.class, "imageMatrixProperty");
-        this.f55665a = new Matrix();
+        this.f55681a = new Matrix();
     }
 
     @Override // android.util.Property
     /* renamed from: a */
     public Matrix get(ImageView imageView) {
-        this.f55665a.set(imageView.getImageMatrix());
-        return this.f55665a;
+        this.f55681a.set(imageView.getImageMatrix());
+        return this.f55681a;
     }
 
     @Override // android.util.Property

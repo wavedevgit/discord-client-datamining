@@ -13,17 +13,17 @@ import kotlinx.coroutines.flow.FlowCollector;
 public abstract class g extends e {
 
     /* renamed from: o  reason: collision with root package name */
-    protected final Flow f36460o;
+    protected final Flow f36476o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f36461d;
+        int f36477d;
 
         /* renamed from: e  reason: collision with root package name */
-        /* synthetic */ Object f36462e;
+        /* synthetic */ Object f36478e;
 
         a(Continuation continuation) {
             super(2, continuation);
@@ -32,14 +32,14 @@ public abstract class g extends e {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             a aVar = new a(continuation);
-            aVar.f36462e = obj;
+            aVar.f36478e = obj;
             return aVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = or.b.f();
-            int i10 = this.f36461d;
+            int i10 = this.f36477d;
             if (i10 != 0) {
                 if (i10 == 1) {
                     kotlin.c.b(obj);
@@ -49,50 +49,50 @@ public abstract class g extends e {
             } else {
                 kotlin.c.b(obj);
                 g gVar = g.this;
-                this.f36461d = 1;
-                if (gVar.q((FlowCollector) this.f36462e, this) == f10) {
+                this.f36477d = 1;
+                if (gVar.q((FlowCollector) this.f36478e, this) == f10) {
                     return f10;
                 }
             }
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((a) create(flowCollector, continuation)).invokeSuspend(Unit.f33282a);
+            return ((a) create(flowCollector, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
     public g(Flow flow, CoroutineContext coroutineContext, int i10, is.a aVar) {
         super(coroutineContext, i10, aVar);
-        this.f36460o = flow;
+        this.f36476o = flow;
     }
 
     static /* synthetic */ Object n(g gVar, FlowCollector flowCollector, Continuation continuation) {
-        if (gVar.f36451e == -3) {
+        if (gVar.f36467e == -3) {
             CoroutineContext context = continuation.getContext();
-            CoroutineContext j10 = gs.x.j(context, gVar.f36450d);
+            CoroutineContext j10 = gs.x.j(context, gVar.f36466d);
             if (Intrinsics.areEqual(j10, context)) {
                 Object q10 = gVar.q(flowCollector, continuation);
                 if (q10 == or.b.f()) {
                     return q10;
                 }
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
-            d.b bVar = kotlin.coroutines.d.f33354h;
+            d.b bVar = kotlin.coroutines.d.f33370h;
             if (Intrinsics.areEqual(j10.l(bVar), context.l(bVar))) {
                 Object p10 = gVar.p(flowCollector, j10, continuation);
                 if (p10 == or.b.f()) {
                     return p10;
                 }
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
         }
         Object collect = super.collect(flowCollector, continuation);
         if (collect == or.b.f()) {
             return collect;
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     static /* synthetic */ Object o(g gVar, ProducerScope producerScope, Continuation continuation) {
@@ -100,7 +100,7 @@ public abstract class g extends e {
         if (q10 == or.b.f()) {
             return q10;
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private final Object p(FlowCollector flowCollector, CoroutineContext coroutineContext, Continuation continuation) {
@@ -123,6 +123,6 @@ public abstract class g extends e {
 
     @Override // ks.e
     public String toString() {
-        return this.f36460o + " -> " + super.toString();
+        return this.f36476o + " -> " + super.toString();
     }
 }

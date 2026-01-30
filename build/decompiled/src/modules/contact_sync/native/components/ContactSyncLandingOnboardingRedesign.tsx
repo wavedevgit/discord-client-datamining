@@ -143,13 +143,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = _closure1_slot3;
         var0 = function*() { // Environment: var0
             var0 = function*() { // Original name: ?anon_0_, environment: var0
-                _fun81467: for (var _fun81467_ip = 0;;) switch (_fun81467_ip) {
+                _fun81513: for (var _fun81513_ip = 0;;) switch (_fun81513_ip) {
                     case 0:
                         StartGenerator();
                         ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                         if (var1) {
-                            _fun81467_ip = 83;
-                            continue _fun81467
+                            _fun81513_ip = 83;
+                            continue _fun81513
                         }
                     case 7:
                         var4 = _closure1_slot1;
@@ -168,13 +168,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 57:
                         ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
                         if (var3) {
-                            _fun81467_ip = 80;
-                            continue _fun81467
+                            _fun81513_ip = 80;
+                            continue _fun81513
                         }
                     case 63:
                         if (!var1) {
-                            _fun81467_ip = 77;
-                            continue _fun81467
+                            _fun81513_ip = 77;
+                            continue _fun81513
                         }
                     case 66:
                         var3 = _closure2_slot0;
@@ -316,4 +316,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 27, 3967, 33, 1297, 671, 4659, 3968, 10356, 3895, 1234, 4037, 10221, 10349, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 31, 27, 3973, 33, 1297, 671, 4665, 3974, 10362, 3901, 1234, 4043, 10227, 10355, 2]);

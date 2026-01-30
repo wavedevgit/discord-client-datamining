@@ -7,35 +7,35 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final LinkedHashMap f50585a;
+    private final LinkedHashMap f50601a;
 
     public c(int i10, float f10) {
-        this.f50585a = new LinkedHashMap(i10, f10, true);
+        this.f50601a = new LinkedHashMap(i10, f10, true);
     }
 
     public final Object a(Object key) {
         Intrinsics.checkNotNullParameter(key, "key");
-        return this.f50585a.get(key);
+        return this.f50601a.get(key);
     }
 
     public final Set b() {
-        Set entrySet = this.f50585a.entrySet();
+        Set entrySet = this.f50601a.entrySet();
         Intrinsics.checkNotNullExpressionValue(entrySet, "<get-entries>(...)");
         return entrySet;
     }
 
     public final boolean c() {
-        return this.f50585a.isEmpty();
+        return this.f50601a.isEmpty();
     }
 
     public final Object d(Object key, Object value) {
         Intrinsics.checkNotNullParameter(key, "key");
         Intrinsics.checkNotNullParameter(value, "value");
-        return this.f50585a.put(key, value);
+        return this.f50601a.put(key, value);
     }
 
     public final Object e(Object key) {
         Intrinsics.checkNotNullParameter(key, "key");
-        return this.f50585a.remove(key);
+        return this.f50601a.remove(key);
     }
 }

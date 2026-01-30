@@ -24,7 +24,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = 'HttpContext';
         var0.name = var1;
         var1 = function(arg0) { // Original name: preprocessEvent, environment: var1
-            _fun11010: for (var _fun11010_ip = 0;;) switch (_fun11010_ip) {
+            _fun11011: for (var _fun11011_ip = 0;;) switch (_fun11011_ip) {
                 case 0:
                     var2 = arg0;
                     var5 = _closure1_slot0;
@@ -36,8 +36,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = var3.WINDOW;
                     var3 = var3.navigator;
                     if (var3) {
-                        _fun11010_ip = 109;
-                        continue _fun11010
+                        _fun11011_ip = 109;
+                        continue _fun11011
                     }
                 case 43:
                     var5 = _closure1_slot0;
@@ -47,8 +47,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = var3.WINDOW;
                     var3 = var3.location;
                     if (var3) {
-                        _fun11010_ip = 109;
-                        continue _fun11010
+                        _fun11011_ip = 109;
+                        continue _fun11011
                     }
                 case 74:
                     var5 = _closure1_slot0;
@@ -58,8 +58,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = var3.WINDOW;
                     var3 = var3.document;
                     if (!var3) {
-                        _fun11010_ip = 232;
-                        continue _fun11010
+                        _fun11011_ip = 232;
+                        continue _fun11011
                     }
                 case 109:
                     var3 = _closure1_slot0;
@@ -77,8 +77,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var9 = var4 == var1;
                     var4 = undefined;
                     if (var9) {
-                        _fun11010_ip = 178;
-                        continue _fun11010
+                        _fun11011_ip = 178;
+                        continue _fun11011
                     }
                 case 172:
                     var4 = var1.headers;

@@ -26,8 +26,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/collectibles/hooks/useDefaultVariantIndex.tsx';
     var3 = var4.bind(var5)(var3);
-    var3 = function(arg0) { // Environment: var1
-        _fun87499: for (var _fun87499_ip = 0;;) switch (_fun87499_ip) {
+    var1 = function(arg0) { // Environment: var1
+        _fun87533: for (var _fun87533_ip = 0;;) switch (_fun87533_ip) {
             case 0:
                 var5 = arg0;
                 var3 = _closure1_slot0;
@@ -52,8 +52,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = 0;
                 var0 = 0;
                 if (!var3) {
-                    _fun87499_ip = 156;
-                    continue _fun87499
+                    _fun87533_ip = 156;
+                    continue _fun87533
                 }
             case 77:
                 var3 = _closure1_slot0;
@@ -65,8 +65,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.bind(var3)(var5);
                 var0 = 0;
                 if (!var2) {
-                    _fun87499_ip = 156;
-                    continue _fun87499
+                    _fun87533_ip = 156;
+                    continue _fun87533
                 }
             case 113:
                 var2 = global;
@@ -89,47 +89,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 return var0;
         }
     };
-    var2.useDefaultVariantIndex = var3;
-    var1 = function(arg0) { // Environment: var1
-        _fun87502: for (var _fun87502_ip = 0;;) switch (_fun87502_ip) {
-            case 0:
-                var1 = arg0;
-                var3 = _closure1_slot0;
-                var2 = _closure1_slot1;
-                var0 = 2;
-                var2 = var2[var0];
-                var0 = undefined;
-                var2 = var3.bind(var0)(var2);
-                var0 = var2.getIsVariantProduct;
-                var2 = var0.bind(var2)(var1);
-                var4 = 0;
-                var0 = 0;
-                if (!var2) {
-                    _fun87502_ip = 91;
-                    continue _fun87502
-                }
-            case 46:
-                var2 = global;
-                var3 = var2.Math;
-                var2 = var3.max;
-                var6 = var1.variants;
-                var5 = var6.findIndex;
-                var1 = function(arg0) { // Environment: var1
-                    var2 = _closure1_slot2;
-                    var1 = var2.getPurchase;
-                    var0 = arg0;
-                    var0 = var0.skuId;
-                    var1 = var1.bind(var2)(var0);
-                    var0 = null;
-                    var0 = var0 == var1;
-                    return var0;
-                };
-                var1 = var5.bind(var6)(var1);
-                var0 = var2.bind(var3)(var4, var1);
-            case 91:
-                return var0;
-        }
-    };
-    var2.getDefaultVariantIndex = var1;
+    var2.useDefaultVariantIndex = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4573, 566, 4570, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4579, 566, 4576, 2]);

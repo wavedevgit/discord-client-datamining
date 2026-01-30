@@ -7,17 +7,17 @@ import kotlin.enums.EnumEntries;
 public final class TypeUsage {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ TypeUsage[] f35912d;
+    private static final /* synthetic */ TypeUsage[] f35928d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f35913e;
+    private static final /* synthetic */ EnumEntries f35929e;
     public static final TypeUsage SUPERTYPE = new TypeUsage("SUPERTYPE", 0);
     public static final TypeUsage COMMON = new TypeUsage("COMMON", 1);
 
     static {
         TypeUsage[] a10 = a();
-        f35912d = a10;
-        f35913e = pr.a.a(a10);
+        f35928d = a10;
+        f35929e = pr.a.a(a10);
     }
 
     private TypeUsage(String str, int i10) {
@@ -32,6 +32,6 @@ public final class TypeUsage {
     }
 
     public static TypeUsage[] values() {
-        return (TypeUsage[]) f35912d.clone();
+        return (TypeUsage[]) f35928d.clone();
     }
 }

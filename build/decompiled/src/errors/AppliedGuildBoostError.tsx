@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
-        _fun28819: for (var _fun28819_ip = 0;;) switch (_fun28819_ip) {
+        _fun28820: for (var _fun28820_ip = 0;;) switch (_fun28820_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -30,8 +30,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun28819_ip = 74;
-                continue _fun28819;
+                _fun28820_ip = 74;
+                continue _fun28820;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -82,7 +82,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
         var3 = function(arg0, arg1) { // Original name: AppliedGuildBoostError, environment: var0
-            _fun28823: for (var _fun28823_ip = 0;;) switch (_fun28823_ip) {
+            _fun28824: for (var _fun28824_ip = 0;;) switch (_fun28824_ip) {
                 case 0:
                     var2 = arg0;
                     var4 = this;
@@ -100,14 +100,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot8;
                     var0 = var0.bind(var3)();
                     if (var0) {
-                        _fun28823_ip = 80;
-                        continue _fun28823
+                        _fun28824_ip = 80;
+                        continue _fun28824
                     }
                 case 67:
                     var0 = var8.apply;
                     var0 = var0.bind(var8)(var4, var9);
-                    _fun28823_ip = 114;
-                    continue _fun28823;
+                    _fun28824_ip = 114;
+                    continue _fun28824;
                 case 80:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -121,8 +121,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var0.status;
                     var1 = 429;
                     if (!(var1 === var3)) {
-                        _fun28823_ip = 154;
-                        continue _fun28823
+                        _fun28824_ip = 154;
+                        continue _fun28824
                     }
                 case 135:
                     var1 = var0._getMessageFromRateLimit;

@@ -22,7 +22,7 @@ public abstract class u0 {
 
         public final Set b(i0 governmentIdCameraScreenViewFactory) {
             Intrinsics.checkNotNullParameter(governmentIdCameraScreenViewFactory, "governmentIdCameraScreenViewFactory");
-            return kotlin.collections.x0.i(p0.f6432f, governmentIdCameraScreenViewFactory, g1.f6022f, s1.f6462d, zm.c.f55795q, tp.n.f49803i, bo.f0.f7563d);
+            return kotlin.collections.x0.i(p0.f6432f, governmentIdCameraScreenViewFactory, g1.f6022f, s1.f6462d, zm.c.f55811q, tp.n.f49819i, bo.f0.f7563d);
         }
 
         private a() {

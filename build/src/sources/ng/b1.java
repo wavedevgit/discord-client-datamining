@@ -5,58 +5,58 @@ import ui.c;
 final class b1 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final b1 f40968a = new b1();
+    static final b1 f40984a = new b1();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f40969b;
+    private static final ui.c f40985b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f40970c;
+    private static final ui.c f40986c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f40971d;
+    private static final ui.c f40987d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f40972e;
+    private static final ui.c f40988e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final ui.c f40973f;
+    private static final ui.c f40989f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final ui.c f40974g;
+    private static final ui.c f40990g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final ui.c f40975h;
+    private static final ui.c f40991h;
 
     static {
         c.b a10 = ui.c.a("errorCode");
         f fVar = new f();
         fVar.a(1);
-        f40969b = a10.b(fVar.b()).a();
+        f40985b = a10.b(fVar.b()).a();
         c.b a11 = ui.c.a("hasResult");
         f fVar2 = new f();
         fVar2.a(2);
-        f40970c = a11.b(fVar2.b()).a();
+        f40986c = a11.b(fVar2.b()).a();
         c.b a12 = ui.c.a("isColdCall");
         f fVar3 = new f();
         fVar3.a(3);
-        f40971d = a12.b(fVar3.b()).a();
+        f40987d = a12.b(fVar3.b()).a();
         c.b a13 = ui.c.a("imageInfo");
         f fVar4 = new f();
         fVar4.a(4);
-        f40972e = a13.b(fVar4.b()).a();
+        f40988e = a13.b(fVar4.b()).a();
         c.b a14 = ui.c.a("options");
         f fVar5 = new f();
         fVar5.a(5);
-        f40973f = a14.b(fVar5.b()).a();
+        f40989f = a14.b(fVar5.b()).a();
         c.b a15 = ui.c.a("detectedBarcodeFormats");
         f fVar6 = new f();
         fVar6.a(6);
-        f40974g = a15.b(fVar6.b()).a();
+        f40990g = a15.b(fVar6.b()).a();
         c.b a16 = ui.c.a("detectedBarcodeValueTypes");
         f fVar7 = new f();
         fVar7.a(7);
-        f40975h = a16.b(fVar7.b()).a();
+        f40991h = a16.b(fVar7.b()).a();
     }
 
     private b1() {

@@ -8,13 +8,13 @@ import org.jetbrains.annotations.NotNull;
 public final class ErrorEntity {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ ErrorEntity[] f35968e;
+    private static final /* synthetic */ ErrorEntity[] f35984e;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f35969i;
+    private static final /* synthetic */ EnumEntries f35985i;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f35970d;
+    private final String f35986d;
     public static final ErrorEntity ERROR_CLASS = new ErrorEntity("ERROR_CLASS", 0, "<Error class: %s>");
     public static final ErrorEntity ERROR_FUNCTION = new ErrorEntity("ERROR_FUNCTION", 1, "<Error function>");
     public static final ErrorEntity ERROR_SCOPE = new ErrorEntity("ERROR_SCOPE", 2, "<Error scope>");
@@ -25,12 +25,12 @@ public final class ErrorEntity {
 
     static {
         ErrorEntity[] a10 = a();
-        f35968e = a10;
-        f35969i = pr.a.a(a10);
+        f35984e = a10;
+        f35985i = pr.a.a(a10);
     }
 
     private ErrorEntity(String str, int i10, String str2) {
-        this.f35970d = str2;
+        this.f35986d = str2;
     }
 
     private static final /* synthetic */ ErrorEntity[] a() {
@@ -42,11 +42,11 @@ public final class ErrorEntity {
     }
 
     public static ErrorEntity[] values() {
-        return (ErrorEntity[]) f35968e.clone();
+        return (ErrorEntity[]) f35984e.clone();
     }
 
     @NotNull
     public final String getDebugText() {
-        return this.f35970d;
+        return this.f35986d;
     }
 }

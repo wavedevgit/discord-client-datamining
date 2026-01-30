@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_onboarding/native/ConnectionCard.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: ConnectionCard, environment: var1
-        _fun77384: for (var _fun77384_ip = 0;;) switch (_fun77384_ip) {
+        _fun77428: for (var _fun77428_ip = 0;;) switch (_fun77428_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.connection;
@@ -47,8 +47,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot2;
                 var0 = var0.APPLICATION;
                 if (!(var2 !== var0)) {
-                    _fun77384_ip = 113;
-                    continue _fun77384
+                    _fun77428_ip = 113;
+                    continue _fun77428
                 }
             case 42:
                 var3 = var7.connection_type;
@@ -56,8 +56,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.PROVIDER_CONNECTED_ACCOUNT;
                 var0 = null;
                 if (!(var3 === var2)) {
-                    _fun77384_ip = 111;
-                    continue _fun77384
+                    _fun77428_ip = 111;
+                    continue _fun77428
                 }
             case 64:
                 var8 = _closure1_slot3;
@@ -73,8 +73,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2.location = var5;
                 var0 = var8.bind(var4)(var3, var2);
             case 111:
-                _fun77384_ip = 160;
-                continue _fun77384;
+                _fun77428_ip = 160;
+                continue _fun77428;
             case 113:
                 var4 = _closure1_slot3;
                 var2 = _closure1_slot0;
@@ -94,4 +94,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4540, 33, 9783, 9785, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4546, 33, 9788, 9790, 2]);

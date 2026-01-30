@@ -5,7 +5,7 @@ import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
 public final class m extends r {
 
     /* renamed from: c  reason: collision with root package name */
-    private static final /* synthetic */ AtomicIntegerFieldUpdater f27163c = AtomicIntegerFieldUpdater.newUpdater(m.class, "_resumed$volatile");
+    private static final /* synthetic */ AtomicIntegerFieldUpdater f27179c = AtomicIntegerFieldUpdater.newUpdater(m.class, "_resumed$volatile");
     private volatile /* synthetic */ int _resumed$volatile;
 
     /* JADX WARN: Illegal instructions before constructor call */
@@ -35,6 +35,6 @@ public final class m extends r {
     }
 
     public final boolean e() {
-        return f27163c.compareAndSet(this, 0, 1);
+        return f27179c.compareAndSet(this, 0, 1);
     }
 }

@@ -11,7 +11,7 @@ public final class j1 implements SerialDescriptor {
     public static final j1 f6824a = new j1();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final zs.k f6825b = l.d.f56105a;
+    private static final zs.k f6825b = l.d.f56121a;
 
     /* renamed from: c  reason: collision with root package name */
     private static final String f6826c = "kotlin.Nothing";

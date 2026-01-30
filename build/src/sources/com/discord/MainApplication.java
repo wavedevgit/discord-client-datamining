@@ -94,19 +94,19 @@ public final class MainApplication extends TTILoggingApplication implements Reac
             }
         });
         mainApplication.soloaderLoaded.countDown();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit initialize$lambda$3(MainApplication mainApplication) {
         mainApplication.performInitialization();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onCreate$lambda$2(MainApplication mainApplication) {
         DeepLinks.INSTANCE.init(mainApplication);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private final void performInitialization() {
@@ -180,7 +180,7 @@ public final class MainApplication extends TTILoggingApplication implements Reac
             HermesExecutor.f11420a.b();
             mainApplication.initializeReactNativeLatch.countDown();
             LibdiscoreModule.INSTANCE.init(mainApplication);
-            return Unit.f33282a;
+            return Unit.f33298a;
         } catch (Throwable th2) {
             mainApplication.initializeReactNativeLatch.countDown();
             throw th2;
@@ -195,7 +195,7 @@ public final class MainApplication extends TTILoggingApplication implements Reac
         I18nUtil.Companion.getInstance().allowRTL(mainApplication, false);
         TTIMetrics.record$default(tTIMetrics, "I18nUtil.allowRtl()", 0L, null, false, 14, null);
         BundleUpdater.OtaBundle bundle = BundleUpdater.Companion.instance().getBundle();
-        CrashReporting.INSTANCE.init(mainApplication, (bundle == null || (r0 = bundle.getReleaseName()) == null) ? "discord_android@315.4.0-2+315204" : "discord_android@315.4.0-2+315204");
+        CrashReporting.INSTANCE.init(mainApplication, (bundle == null || (r0 = bundle.getReleaseName()) == null) ? "discord_android@315.5.0-2+315205" : "discord_android@315.5.0-2+315205");
         TTIMetrics.record$default(tTIMetrics, "CrashReporting.init()", 0L, null, false, 14, null);
         ForegroundServiceStartGuard.INSTANCE.setLogger(new Function2() { // from class: com.discord.a
             @Override // kotlin.jvm.functions.Function2
@@ -205,7 +205,7 @@ public final class MainApplication extends TTILoggingApplication implements Reac
                 return performInitialization$lambda$6$lambda$5;
             }
         });
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -213,13 +213,13 @@ public final class MainApplication extends TTILoggingApplication implements Reac
         Intrinsics.checkNotNullParameter(message, "message");
         Intrinsics.checkNotNullParameter(data, "data");
         CrashReporting.addBreadcrumb$default(CrashReporting.INSTANCE, message, data, "fgs_guard", null, false, 24, null);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit performInitialization$lambda$7(MainApplication mainApplication) {
         mainApplication.getReactHost();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */

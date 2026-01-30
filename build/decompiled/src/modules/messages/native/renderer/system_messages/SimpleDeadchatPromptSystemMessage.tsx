@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/SimpleDeadchatPromptSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: createSimpleDeadchatPromptSystemMessage, environment: var1
-        _fun55724: for (var _fun55724_ip = 0;;) switch (_fun55724_ip) {
+        _fun55769: for (var _fun55769_ip = 0;;) switch (_fun55769_ip) {
             case 0:
                 var2 = arg0;
                 var0 = {};
@@ -46,16 +46,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var3.content;
                 var3 = null;
                 if (!(var3 != var4)) {
-                    _fun55724_ip = 76;
-                    continue _fun55724
+                    _fun55769_ip = 76;
+                    continue _fun55769
                 }
             case 58:
                 var4 = var2.message;
                 var5 = var4.content;
                 var4 = '';
                 if (!(var4 === var5)) {
-                    _fun55724_ip = 135;
-                    continue _fun55724
+                    _fun55769_ip = 135;
+                    continue _fun55769
                 }
             case 76:
                 var8 = _closure1_slot0;
@@ -70,8 +70,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.t;
                 var4 = var4.wnn1Dc;
                 var4 = var5.bind(var7)(var4);
-                _fun55724_ip = 145;
-                continue _fun55724;
+                _fun55769_ip = 145;
+                continue _fun55769;
             case 135:
                 var2 = var2.message;
                 var4 = var2.content;
@@ -88,8 +88,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var4.bind(var5)();
                 var4 = null;
                 if (var5) {
-                    _fun55724_ip = 258;
-                    continue _fun55724
+                    _fun55769_ip = 258;
+                    continue _fun55769
                 }
             case 191:
                 var9 = _closure1_slot3;
@@ -131,8 +131,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.bind(var5)();
                 var3 = null;
                 if (var4) {
-                    _fun55724_ip = 420;
-                    continue _fun55724
+                    _fun55769_ip = 420;
+                    continue _fun55769
                 }
             case 363:
                 var8 = _closure1_slot0;
@@ -169,4 +169,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createSimpleDeadchatPromptSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 6636, 1234, 478, 1417, 6717, 6718, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 6639, 1234, 478, 1417, 6720, 6721, 2]);

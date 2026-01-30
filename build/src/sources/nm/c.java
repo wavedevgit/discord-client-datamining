@@ -13,7 +13,7 @@ import kotlin.ranges.d;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f41979a = new c();
+    public static final c f41995a = new c();
 
     private c() {
     }
@@ -103,7 +103,7 @@ public final class c {
     }
 
     private static final void h(List list, View view) {
-        if (f41979a.i(view)) {
+        if (f41995a.i(view)) {
             Intrinsics.checkNotNull(view, "null cannot be cast to non-null type android.widget.EditText");
             list.add((EditText) view);
         } else if (view instanceof ViewGroup) {

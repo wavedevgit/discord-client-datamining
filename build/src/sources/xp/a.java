@@ -13,25 +13,25 @@ public final class a implements h {
     public static final Parcelable.Creator<a> CREATOR = new C0745a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f53485d;
+    private final String f53501d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final JsonLogicBoolean f53486e;
+    private final JsonLogicBoolean f53502e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final JsonLogicBoolean f53487i;
+    private final JsonLogicBoolean f53503i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f53488o;
+    private final String f53504o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Integer f53489p;
+    private final Integer f53505p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final List f53490q;
+    private final List f53506q;
 
     /* renamed from: r  reason: collision with root package name */
-    private boolean f53491r;
+    private boolean f53507r;
 
     /* renamed from: xp.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -62,22 +62,22 @@ public final class a implements h {
 
     public a(String name, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, String str, Integer num) {
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f53485d = name;
-        this.f53486e = jsonLogicBoolean;
-        this.f53487i = jsonLogicBoolean2;
-        this.f53488o = str;
-        this.f53489p = num;
-        this.f53490q = new ArrayList();
+        this.f53501d = name;
+        this.f53502e = jsonLogicBoolean;
+        this.f53503i = jsonLogicBoolean2;
+        this.f53504o = str;
+        this.f53505p = num;
+        this.f53506q = new ArrayList();
     }
 
     @Override // xp.h
     public boolean E0() {
-        return this.f53491r;
+        return this.f53507r;
     }
 
     @Override // xp.e0
     public List d() {
-        return this.f53490q;
+        return this.f53506q;
     }
 
     @Override // android.os.Parcelable
@@ -93,7 +93,7 @@ public final class a implements h {
             return false;
         }
         a aVar = (a) obj;
-        if (Intrinsics.areEqual(this.f53485d, aVar.f53485d) && Intrinsics.areEqual(this.f53486e, aVar.f53486e) && Intrinsics.areEqual(this.f53487i, aVar.f53487i) && Intrinsics.areEqual(this.f53488o, aVar.f53488o) && Intrinsics.areEqual(this.f53489p, aVar.f53489p)) {
+        if (Intrinsics.areEqual(this.f53501d, aVar.f53501d) && Intrinsics.areEqual(this.f53502e, aVar.f53502e) && Intrinsics.areEqual(this.f53503i, aVar.f53503i) && Intrinsics.areEqual(this.f53504o, aVar.f53504o) && Intrinsics.areEqual(this.f53505p, aVar.f53505p)) {
             return true;
         }
         return false;
@@ -101,35 +101,35 @@ public final class a implements h {
 
     @Override // xp.h
     public String getAutoSubmitCountdownText() {
-        return this.f53488o;
+        return this.f53504o;
     }
 
     @Override // xp.h
     public Integer getAutoSubmitIntervalSeconds() {
-        return this.f53489p;
+        return this.f53505p;
     }
 
     @Override // xp.v
     public JsonLogicBoolean getDisabled() {
-        return this.f53487i;
+        return this.f53503i;
     }
 
     @Override // xp.e0
     public JsonLogicBoolean getHidden() {
-        return this.f53486e;
+        return this.f53502e;
     }
 
     @Override // xp.h, xp.k5
     public String getName() {
-        return this.f53485d;
+        return this.f53501d;
     }
 
     public int hashCode() {
         int hashCode;
         int hashCode2;
         int hashCode3;
-        int hashCode4 = this.f53485d.hashCode() * 31;
-        JsonLogicBoolean jsonLogicBoolean = this.f53486e;
+        int hashCode4 = this.f53501d.hashCode() * 31;
+        JsonLogicBoolean jsonLogicBoolean = this.f53502e;
         int i10 = 0;
         if (jsonLogicBoolean == null) {
             hashCode = 0;
@@ -137,21 +137,21 @@ public final class a implements h {
             hashCode = jsonLogicBoolean.hashCode();
         }
         int i11 = (hashCode4 + hashCode) * 31;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f53487i;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f53503i;
         if (jsonLogicBoolean2 == null) {
             hashCode2 = 0;
         } else {
             hashCode2 = jsonLogicBoolean2.hashCode();
         }
         int i12 = (i11 + hashCode2) * 31;
-        String str = this.f53488o;
+        String str = this.f53504o;
         if (str == null) {
             hashCode3 = 0;
         } else {
             hashCode3 = str.hashCode();
         }
         int i13 = (i12 + hashCode3) * 31;
-        Integer num = this.f53489p;
+        Integer num = this.f53505p;
         if (num != null) {
             i10 = num.hashCode();
         }
@@ -159,22 +159,22 @@ public final class a implements h {
     }
 
     public String toString() {
-        String str = this.f53485d;
-        JsonLogicBoolean jsonLogicBoolean = this.f53486e;
-        JsonLogicBoolean jsonLogicBoolean2 = this.f53487i;
-        String str2 = this.f53488o;
-        Integer num = this.f53489p;
+        String str = this.f53501d;
+        JsonLogicBoolean jsonLogicBoolean = this.f53502e;
+        JsonLogicBoolean jsonLogicBoolean2 = this.f53503i;
+        String str2 = this.f53504o;
+        Integer num = this.f53505p;
         return "ActionButtonComponent(name=" + str + ", hidden=" + jsonLogicBoolean + ", disabled=" + jsonLogicBoolean2 + ", autoSubmitCountdownText=" + str2 + ", autoSubmitIntervalSeconds=" + num + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f53485d);
-        dest.writeParcelable(this.f53486e, i10);
-        dest.writeParcelable(this.f53487i, i10);
-        dest.writeString(this.f53488o);
-        Integer num = this.f53489p;
+        dest.writeString(this.f53501d);
+        dest.writeParcelable(this.f53502e, i10);
+        dest.writeParcelable(this.f53503i, i10);
+        dest.writeString(this.f53504o);
+        Integer num = this.f53505p;
         if (num == null) {
             dest.writeInt(0);
             return;
@@ -185,7 +185,7 @@ public final class a implements h {
 
     @Override // xp.h, xp.j2
     public void x(boolean z10) {
-        this.f53491r = z10;
+        this.f53507r = z10;
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

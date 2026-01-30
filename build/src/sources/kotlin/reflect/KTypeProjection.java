@@ -10,16 +10,16 @@ public final class KTypeProjection {
     @NotNull
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f33386c = new a(null);
+    public static final a f33402c = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    public static final KTypeProjection f33387d = new KTypeProjection(null, null);
+    public static final KTypeProjection f33403d = new KTypeProjection(null, null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final m f33388a;
+    private final m f33404a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final KType f33389b;
+    private final KType f33405b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -29,21 +29,21 @@ public final class KTypeProjection {
 
         public final KTypeProjection a(KType type) {
             Intrinsics.checkNotNullParameter(type, "type");
-            return new KTypeProjection(m.f36122e, type);
+            return new KTypeProjection(m.f36138e, type);
         }
 
         public final KTypeProjection b(KType type) {
             Intrinsics.checkNotNullParameter(type, "type");
-            return new KTypeProjection(m.f36123i, type);
+            return new KTypeProjection(m.f36139i, type);
         }
 
         public final KTypeProjection c() {
-            return KTypeProjection.f33387d;
+            return KTypeProjection.f33403d;
         }
 
         public final KTypeProjection d(KType type) {
             Intrinsics.checkNotNullParameter(type, "type");
-            return new KTypeProjection(m.f36121d, type);
+            return new KTypeProjection(m.f36137d, type);
         }
 
         private a() {
@@ -54,31 +54,31 @@ public final class KTypeProjection {
     public /* synthetic */ class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f33390a;
+        public static final /* synthetic */ int[] f33406a;
 
         static {
             int[] iArr = new int[m.values().length];
             try {
-                iArr[m.f36121d.ordinal()] = 1;
+                iArr[m.f36137d.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[m.f36122e.ordinal()] = 2;
+                iArr[m.f36138e.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[m.f36123i.ordinal()] = 3;
+                iArr[m.f36139i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f33390a = iArr;
+            f33406a = iArr;
         }
     }
 
     public KTypeProjection(m mVar, KType kType) {
         boolean z10;
         String str;
-        this.f33388a = mVar;
-        this.f33389b = kType;
+        this.f33404a = mVar;
+        this.f33405b = kType;
         if (mVar == null) {
             z10 = true;
         } else {
@@ -96,19 +96,19 @@ public final class KTypeProjection {
     }
 
     public final m a() {
-        return this.f33388a;
+        return this.f33404a;
     }
 
     public final KType b() {
-        return this.f33389b;
+        return this.f33405b;
     }
 
     public final KType c() {
-        return this.f33389b;
+        return this.f33405b;
     }
 
     public final m d() {
-        return this.f33388a;
+        return this.f33404a;
     }
 
     public boolean equals(Object obj) {
@@ -117,37 +117,37 @@ public final class KTypeProjection {
         }
         if (obj instanceof KTypeProjection) {
             KTypeProjection kTypeProjection = (KTypeProjection) obj;
-            return this.f33388a == kTypeProjection.f33388a && Intrinsics.areEqual(this.f33389b, kTypeProjection.f33389b);
+            return this.f33404a == kTypeProjection.f33404a && Intrinsics.areEqual(this.f33405b, kTypeProjection.f33405b);
         }
         return false;
     }
 
     public int hashCode() {
-        m mVar = this.f33388a;
+        m mVar = this.f33404a;
         int hashCode = (mVar == null ? 0 : mVar.hashCode()) * 31;
-        KType kType = this.f33389b;
+        KType kType = this.f33405b;
         return hashCode + (kType != null ? kType.hashCode() : 0);
     }
 
     public String toString() {
         int i10;
-        m mVar = this.f33388a;
+        m mVar = this.f33404a;
         if (mVar == null) {
             i10 = -1;
         } else {
-            i10 = b.f33390a[mVar.ordinal()];
+            i10 = b.f33406a[mVar.ordinal()];
         }
         if (i10 != -1) {
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 == 3) {
-                        return "out " + this.f33389b;
+                        return "out " + this.f33405b;
                     }
                     throw new ir.p();
                 }
-                return "in " + this.f33389b;
+                return "in " + this.f33405b;
             }
-            return String.valueOf(this.f33389b);
+            return String.valueOf(this.f33405b);
         }
         return "*";
     }

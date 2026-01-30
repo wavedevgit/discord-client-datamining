@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var9;
     var _closure1_slot2 = var5;
     var0 = function(arg0, arg1, arg2, arg3) { // Original name: computeWindowDimensions, environment: var3
-        _fun16920: for (var _fun16920_ip = 0;;) switch (_fun16920_ip) {
+        _fun16921: for (var _fun16921_ip = 0;;) switch (_fun16921_ip) {
             case 0:
                 var0 = arg0;
                 var2 = arg2;
@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var3;
                 var6 = var4;
                 if (!(var6 === var11)) {
-                    _fun16920_ip = 80;
-                    continue _fun16920
+                    _fun16921_ip = 80;
+                    continue _fun16921
                 }
             case 74:
                 var10 = var4;
@@ -53,8 +53,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = arg1;
                 var2 = 0;
                 if (var9) {
-                    _fun16920_ip = 184;
-                    continue _fun16920
+                    _fun16921_ip = 184;
+                    continue _fun16921
                 }
             case 154:
                 var9 = _closure1_slot0;
@@ -71,21 +71,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4 == var0;
                 var1 = undefined;
                 if (var4) {
-                    _fun16920_ip = 210;
-                    continue _fun16920
+                    _fun16921_ip = 210;
+                    continue _fun16921
                 }
             case 205:
                 var1 = var0.width;
             case 210:
                 if (!(var1 === var3)) {
-                    _fun16920_ip = 223;
-                    continue _fun16920
+                    _fun16921_ip = 223;
+                    continue _fun16921
                 }
             case 214:
                 var1 = var0.height;
                 if (!(var1 !== var2)) {
-                    _fun16920_ip = 236;
-                    continue _fun16920
+                    _fun16921_ip = 236;
+                    continue _fun16921
                 }
             case 223:
                 var1 = {};
@@ -98,7 +98,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot5 = var0;
     var0 = function(arg0) { // Original name: getDimensionsStoreState, environment: var3
-        _fun16921: for (var _fun16921_ip = 0;;) switch (_fun16921_ip) {
+        _fun16922: for (var _fun16922_ip = 0;;) switch (_fun16922_ip) {
             case 0:
                 var0 = arg0;
                 var10 = {};
@@ -118,8 +118,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var6 == var3;
                 var3 = undefined;
                 if (var4) {
-                    _fun16921_ip = 93;
-                    continue _fun16921
+                    _fun16922_ip = 93;
+                    continue _fun16922
                 }
             case 66:
                 var7 = _closure1_slot1;
@@ -139,8 +139,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var6 == var3;
                 var9 = undefined;
                 if (var3) {
-                    _fun16921_ip = 156;
-                    continue _fun16921
+                    _fun16922_ip = 156;
+                    continue _fun16922
                 }
             case 129:
                 var4 = _closure1_slot1;
@@ -151,8 +151,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var3.bind(var4)();
             case 156:
                 if (!(var6 == var9)) {
-                    _fun16921_ip = 178;
-                    continue _fun16921
+                    _fun16922_ip = 178;
+                    continue _fun16922
                 }
             case 160:
                 var5 = _closure1_slot3;
@@ -167,8 +167,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var6 == var0;
                 var3 = undefined;
                 if (var7) {
-                    _fun16921_ip = 213;
-                    continue _fun16921
+                    _fun16922_ip = 213;
+                    continue _fun16922
                 }
             case 207:
                 var3 = var0.windowDimensions;
@@ -176,8 +176,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var6 == var0;
                 var8 = undefined;
                 if (var7) {
-                    _fun16921_ip = 228;
-                    continue _fun16921
+                    _fun16922_ip = 228;
+                    continue _fun16922
                 }
             case 222:
                 var8 = var0.windowDimensionsIgnoringKeyboard;
@@ -197,27 +197,27 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var6 == var0;
                 var1 = undefined;
                 if (var6) {
-                    _fun16921_ip = 279;
-                    continue _fun16921
+                    _fun16922_ip = 279;
+                    continue _fun16922
                 }
             case 273:
                 var1 = var0.windowDimensions;
             case 279:
                 if (!(var1 === var3)) {
-                    _fun16921_ip = 303;
-                    continue _fun16921
+                    _fun16922_ip = 303;
+                    continue _fun16922
                 }
             case 283:
                 var1 = var0.fontScale;
                 if (!(var1 === var5)) {
-                    _fun16921_ip = 303;
-                    continue _fun16921
+                    _fun16922_ip = 303;
+                    continue _fun16922
                 }
             case 293:
                 var1 = var0.screenIsLandscape;
                 if (!(var1 !== var4)) {
-                    _fun16921_ip = 328;
-                    continue _fun16921
+                    _fun16922_ip = 328;
+                    continue _fun16922
                 }
             case 303:
                 var1 = {};

@@ -56,7 +56,7 @@ public final class LoadingActionType {
         $VALUES = $values;
         $ENTRIES = pr.a.a($values);
         Companion = new Companion(null);
-        $cachedSerializer$delegate = l.a(o.f31103e, new Function0() { // from class: com.discord.chat.bridge.row.c
+        $cachedSerializer$delegate = l.a(o.f31119e, new Function0() { // from class: com.discord.chat.bridge.row.c
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 KSerializer _init_$_anonymous_;

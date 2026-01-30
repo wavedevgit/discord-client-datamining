@@ -61,14 +61,14 @@ public final class ExternalPipModule extends ReactContextBaseJavaModule {
             if (!Result.h(result.j()) && (module = ExternalPipModule.Companion.getModule(reactContext)) != null) {
                 module.onPipModeChanged(false);
             }
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         public final Unit onPipModeChanged(ReactContext reactContext, boolean z10) {
             ExternalPipModule module;
             if (reactContext != null && (module = getModule(reactContext)) != null) {
                 module.onPipModeChanged(z10);
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
             return null;
         }

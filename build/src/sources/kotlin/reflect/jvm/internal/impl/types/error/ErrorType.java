@@ -17,25 +17,25 @@ import org.jetbrains.annotations.NotNull;
 public final class ErrorType extends SimpleType {
 
     /* renamed from: e  reason: collision with root package name */
-    private final TypeConstructor f35983e;
+    private final TypeConstructor f35999e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final MemberScope f35984i;
+    private final MemberScope f36000i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final ErrorTypeKind f35985o;
+    private final ErrorTypeKind f36001o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final List f35986p;
+    private final List f36002p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final boolean f35987q;
+    private final boolean f36003q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final String[] f35988r;
+    private final String[] f36004r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final String f35989s;
+    private final String f36005s;
 
     public /* synthetic */ ErrorType(TypeConstructor typeConstructor, MemberScope memberScope, ErrorTypeKind errorTypeKind, List list, boolean z10, String[] strArr, int i10, DefaultConstructorMarker defaultConstructorMarker) {
         this(typeConstructor, memberScope, errorTypeKind, (i10 & 8) != 0 ? CollectionsKt.l() : list, (i10 & 16) != 0 ? false : z10, strArr);
@@ -44,7 +44,7 @@ public final class ErrorType extends SimpleType {
     @Override // kotlin.reflect.jvm.internal.impl.types.KotlinType
     @NotNull
     public List<TypeProjection> getArguments() {
-        return this.f35986p;
+        return this.f36002p;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.KotlinType
@@ -56,28 +56,28 @@ public final class ErrorType extends SimpleType {
     @Override // kotlin.reflect.jvm.internal.impl.types.KotlinType
     @NotNull
     public TypeConstructor getConstructor() {
-        return this.f35983e;
+        return this.f35999e;
     }
 
     @NotNull
     public final String getDebugMessage() {
-        return this.f35989s;
+        return this.f36005s;
     }
 
     @NotNull
     public final ErrorTypeKind getKind() {
-        return this.f35985o;
+        return this.f36001o;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.KotlinType
     @NotNull
     public MemberScope getMemberScope() {
-        return this.f35984i;
+        return this.f36000i;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.KotlinType
     public boolean isMarkedNullable() {
-        return this.f35987q;
+        return this.f36003q;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.types.UnwrappedType, kotlin.reflect.jvm.internal.impl.types.KotlinType
@@ -92,9 +92,9 @@ public final class ErrorType extends SimpleType {
         Intrinsics.checkNotNullParameter(newArguments, "newArguments");
         TypeConstructor constructor = getConstructor();
         MemberScope memberScope = getMemberScope();
-        ErrorTypeKind errorTypeKind = this.f35985o;
+        ErrorTypeKind errorTypeKind = this.f36001o;
         boolean isMarkedNullable = isMarkedNullable();
-        String[] strArr = this.f35988r;
+        String[] strArr = this.f36004r;
         return new ErrorType(constructor, memberScope, errorTypeKind, newArguments, isMarkedNullable, (String[]) Arrays.copyOf(strArr, strArr.length));
     }
 
@@ -110,9 +110,9 @@ public final class ErrorType extends SimpleType {
     public SimpleType makeNullableAsSpecified(boolean z10) {
         TypeConstructor constructor = getConstructor();
         MemberScope memberScope = getMemberScope();
-        ErrorTypeKind errorTypeKind = this.f35985o;
+        ErrorTypeKind errorTypeKind = this.f36001o;
         List<TypeProjection> arguments = getArguments();
-        String[] strArr = this.f35988r;
+        String[] strArr = this.f36004r;
         return new ErrorType(constructor, memberScope, errorTypeKind, arguments, z10, (String[]) Arrays.copyOf(strArr, strArr.length));
     }
 
@@ -122,17 +122,17 @@ public final class ErrorType extends SimpleType {
         Intrinsics.checkNotNullParameter(kind, "kind");
         Intrinsics.checkNotNullParameter(arguments, "arguments");
         Intrinsics.checkNotNullParameter(formatParams, "formatParams");
-        this.f35983e = constructor;
-        this.f35984i = memberScope;
-        this.f35985o = kind;
-        this.f35986p = arguments;
-        this.f35987q = z10;
-        this.f35988r = formatParams;
+        this.f35999e = constructor;
+        this.f36000i = memberScope;
+        this.f36001o = kind;
+        this.f36002p = arguments;
+        this.f36003q = z10;
+        this.f36004r = formatParams;
         StringCompanionObject stringCompanionObject = StringCompanionObject.INSTANCE;
         String debugMessage = kind.getDebugMessage();
         Object[] copyOf = Arrays.copyOf(formatParams, formatParams.length);
         String format = String.format(debugMessage, Arrays.copyOf(copyOf, copyOf.length));
         Intrinsics.checkNotNullExpressionValue(format, "format(...)");
-        this.f35989s = format;
+        this.f36005s = format;
     }
 }

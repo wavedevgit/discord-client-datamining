@@ -3,26 +3,26 @@ package pg;
 public final class t3 {
 
     /* renamed from: a  reason: collision with root package name */
-    private w3 f45726a;
+    private w3 f45742a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Integer f45727b;
+    private Integer f45743b;
 
     /* renamed from: c  reason: collision with root package name */
-    private jd f45728c;
+    private jd f45744c;
 
     public final t3 a(Integer num) {
-        this.f45727b = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
+        this.f45743b = Integer.valueOf(num.intValue() & Integer.MAX_VALUE);
         return this;
     }
 
     public final t3 b(jd jdVar) {
-        this.f45728c = jdVar;
+        this.f45744c = jdVar;
         return this;
     }
 
     public final t3 c(w3 w3Var) {
-        this.f45726a = w3Var;
+        this.f45742a = w3Var;
         return this;
     }
 

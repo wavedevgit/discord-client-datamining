@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/expression_picker/native/useExpressionPickerInsets.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: useExpressionPickerInsets, environment: var1
-        _fun73761: for (var _fun73761_ip = 0;;) switch (_fun73761_ip) {
+        _fun73805: for (var _fun73805_ip = 0;;) switch (_fun73805_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.hasCategories;
@@ -71,8 +71,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.safeAreaStyle = var2;
                 var2 = 0;
                 if (!var5) {
-                    _fun73761_ip = 137;
-                    continue _fun73761
+                    _fun73805_ip = 137;
+                    continue _fun73805
                 }
             case 133:
                 var2 = _closure1_slot3;
@@ -92,4 +92,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 1568, 4849, 671, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 1568, 4855, 671, 2]);

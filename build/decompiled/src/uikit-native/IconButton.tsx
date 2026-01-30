@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var13;
     var _closure1_slot2 = var6;
     var3 = function(arg0) { // Original name: SquareIconButton, environment: var8
-        _fun91995: for (var _fun91995_ip = 0;;) switch (_fun91995_ip) {
+        _fun92232: for (var _fun92232_ip = 0;;) switch (_fun92232_ip) {
             case 0:
                 var1 = arg0;
                 var11 = var1.onPress;
@@ -32,21 +32,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[0] = var13;
                 var1[1] = var9;
                 var0 = function() { // Environment: var0
-                    _fun91996: for (var _fun91996_ip = 0;;) switch (_fun91996_ip) {
+                    _fun92233: for (var _fun92233_ip = 0;;) switch (_fun92233_ip) {
                         case 0:
                             var3 = _closure2_slot0;
                             var2 = _closure1_slot5;
                             var2 = var2.MEDIUM_32;
                             if (!(var2 !== var3)) {
-                                _fun91996_ip = 72;
-                                continue _fun91996
+                                _fun92233_ip = 72;
+                                continue _fun92233
                             }
                         case 24:
                             var2 = _closure1_slot5;
                             var2 = var2.LARGE_40;
                             if (!(var2 !== var3)) {
-                                _fun91996_ip = 60;
-                                continue _fun91996
+                                _fun92233_ip = 60;
+                                continue _fun92233
                             }
                         case 38:
                             var1 = _closure1_slot5;
@@ -77,8 +77,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.accessibilityRole = var15;
                 var15 = undefined;
                 if (var14) {
-                    _fun91995_ip = 156;
-                    continue _fun91995
+                    _fun92232_ip = 156;
+                    continue _fun92232
                 }
             case 153:
                 var15 = var16;
@@ -103,8 +103,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = _closure1_slot5;
                 var11 = var11.LARGE_40;
                 if (!(var13 !== var11)) {
-                    _fun91995_ip = 269;
-                    continue _fun91995
+                    _fun92232_ip = 269;
+                    continue _fun92232
                 }
             case 238:
                 var13 = _closure1_slot1;
@@ -113,8 +113,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var13.bind(var3)(var11);
                 var11 = var11.Sizes;
                 var11 = var11.REFRESH_SMALL_16;
-                _fun91995_ip = 298;
-                continue _fun91995;
+                _fun92232_ip = 298;
+                continue _fun92232;
             case 269:
                 var13 = _closure1_slot1;
                 var12 = _closure1_slot2;
@@ -126,8 +126,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4.size = var11;
                 var11 = null;
                 if (var8) {
-                    _fun91995_ip = 312;
-                    continue _fun91995
+                    _fun92232_ip = 312;
+                    continue _fun92232
                 }
             case 307:
                 var11 = var9.icon;
@@ -146,7 +146,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot7 = var3;
     var1 = function(arg0) { // Original name: CircularIconButton, environment: var8
-        _fun91997: for (var _fun91997_ip = 0;;) switch (_fun91997_ip) {
+        _fun92234: for (var _fun92234_ip = 0;;) switch (_fun92234_ip) {
             case 0:
                 var2 = arg0;
                 var8 = var2.style;
@@ -173,32 +173,32 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = _closure1_slot5;
                 var10 = var10.SMALL_24;
                 if (!(var10 !== var6)) {
-                    _fun91997_ip = 137;
-                    continue _fun91997
+                    _fun92234_ip = 137;
+                    continue _fun92234
                 }
             case 91:
                 var10 = _closure1_slot5;
                 var10 = var10.MEDIUM_32;
                 if (!(var10 !== var6)) {
-                    _fun91997_ip = 129;
-                    continue _fun91997
+                    _fun92234_ip = 129;
+                    continue _fun92234
                 }
             case 105:
                 var9 = _closure1_slot5;
                 var10 = var9.LARGE_40;
                 var9 = undefined;
                 if (!(var10 === var6)) {
-                    _fun91997_ip = 143;
-                    continue _fun91997
+                    _fun92234_ip = 143;
+                    continue _fun92234
                 }
             case 121:
                 var9 = var7.largeCircular;
-                _fun91997_ip = 143;
-                continue _fun91997;
+                _fun92234_ip = 143;
+                continue _fun92234;
             case 129:
                 var9 = var7.mediumCircular;
-                _fun91997_ip = 143;
-                continue _fun91997;
+                _fun92234_ip = 143;
+                continue _fun92234;
             case 137:
                 var9 = var7.smallCircular;
             case 143:
@@ -323,4 +323,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.SquareIconButton = var3;
     var2.CircularIconButton = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 4828, 4858, 4039, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 4834, 4864, 4045, 2]);

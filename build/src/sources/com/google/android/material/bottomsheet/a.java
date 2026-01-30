@@ -248,26 +248,26 @@ public class a extends l {
         this.f15647w = true;
         this.B = new e();
         j(1);
-        this.f15650z = getContext().getTheme().obtainStyledAttributes(new int[]{yg.b.f54359t}).getBoolean(0, false);
+        this.f15650z = getContext().getTheme().obtainStyledAttributes(new int[]{yg.b.f54375t}).getBoolean(0, false);
     }
 
     private static int g(Context context, int i10) {
         if (i10 == 0) {
             TypedValue typedValue = new TypedValue();
-            if (context.getTheme().resolveAttribute(yg.b.f54334c, typedValue, true)) {
+            if (context.getTheme().resolveAttribute(yg.b.f54350c, typedValue, true)) {
                 return typedValue.resourceId;
             }
-            return j.f54500c;
+            return j.f54516c;
         }
         return i10;
     }
 
     private FrameLayout o() {
         if (this.f15642r == null) {
-            FrameLayout frameLayout = (FrameLayout) View.inflate(getContext(), h.f54452a, null);
+            FrameLayout frameLayout = (FrameLayout) View.inflate(getContext(), h.f54468a, null);
             this.f15642r = frameLayout;
-            this.f15643s = (CoordinatorLayout) frameLayout.findViewById(yg.f.f54425e);
-            FrameLayout frameLayout2 = (FrameLayout) this.f15642r.findViewById(yg.f.f54426f);
+            this.f15643s = (CoordinatorLayout) frameLayout.findViewById(yg.f.f54441e);
+            FrameLayout frameLayout2 = (FrameLayout) this.f15642r.findViewById(yg.f.f54442f);
             this.f15644t = frameLayout2;
             BottomSheetBehavior q02 = BottomSheetBehavior.q0(frameLayout2);
             this.f15641q = q02;
@@ -292,7 +292,7 @@ public class a extends l {
 
     private View u(int i10, View view, ViewGroup.LayoutParams layoutParams) {
         o();
-        CoordinatorLayout coordinatorLayout = (CoordinatorLayout) this.f15642r.findViewById(yg.f.f54425e);
+        CoordinatorLayout coordinatorLayout = (CoordinatorLayout) this.f15642r.findViewById(yg.f.f54441e);
         if (i10 != 0 && view == null) {
             view = getLayoutInflater().inflate(i10, (ViewGroup) coordinatorLayout, false);
         }

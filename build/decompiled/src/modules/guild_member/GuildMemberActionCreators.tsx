@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_member/GuildMemberActionCreators.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0, arg1) { // Original name: updateGuildSelfMember, environment: var1
-        _fun43345: for (var _fun43345_ip = 0;;) switch (_fun43345_ip) {
+        _fun43396: for (var _fun43396_ip = 0;;) switch (_fun43396_ip) {
             case 0:
                 var4 = arg0;
                 var5 = arg1;
                 var7 = arguments[2];
                 var0 = undefined;
                 if (!(var7 === var0)) {
-                    _fun43345_ip = 17;
-                    continue _fun43345
+                    _fun43396_ip = 17;
+                    continue _fun43396
                 }
             case 15:
                 var7 = false;
@@ -50,8 +50,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.isFullServerPreview;
                 var2 = var2.bind(var3)(var4);
                 if (var2) {
-                    _fun43345_ip = 186;
-                    continue _fun43345
+                    _fun43396_ip = 186;
+                    continue _fun43396
                 }
             case 41:
                 var3 = _closure1_slot1;
@@ -84,8 +84,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = !var7;
                 var7 = !var8;
                 if (!var8) {
-                    _fun43345_ip = 168;
-                    continue _fun43345
+                    _fun43396_ip = 168;
+                    continue _fun43396
                 }
             case 166:
                 var7 = undefined;
@@ -110,4 +110,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.updateGuildSelfMember = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1664, 660, 4648, 806, 507, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1664, 660, 4654, 806, 507, 2]);

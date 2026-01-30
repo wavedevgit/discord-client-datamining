@@ -80,14 +80,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var9 = new Array(1);
         var9[0] = var8;
         var8 = function() { // Environment: var2
-            _fun80863: for (var _fun80863_ip = 0;;) switch (_fun80863_ip) {
+            _fun80909: for (var _fun80909_ip = 0;;) switch (_fun80909_ip) {
                 case 0:
                     var1 = _closure2_slot2;
                     var2 = var1.current;
                     var1 = null;
                     if (!(var1 != var2)) {
-                        _fun80863_ip = 31;
-                        continue _fun80863
+                        _fun80909_ip = 31;
+                        continue _fun80909
                     }
                 case 18:
                     var1 = _closure2_slot2;
@@ -159,12 +159,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = _closure2_slot0;
                 var6.duration = var4;
                 var5 = function(arg0) { // Original name: t, environment: var4
-                    _fun80868: for (var _fun80868_ip = 0;;) switch (_fun80868_ip) {
+                    _fun80914: for (var _fun80914_ip = 0;;) switch (_fun80914_ip) {
                         case 0:
                             var0 = arg0;
                             if (!var0) {
-                                _fun80868_ip = 52;
-                                continue _fun80868
+                                _fun80914_ip = 52;
+                                continue _fun80914
                             }
                         case 6:
                             var2 = _closure1_slot0;
@@ -231,4 +231,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3677, 4050, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3679, 4056, 2]);

@@ -16,28 +16,28 @@ import kotlin.reflect.KClass;
 public final class i implements c0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final KClass f51231a;
+    private final KClass f51247a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Function2 f51232b;
+    private final Function2 f51248b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h0 f51233c;
+    private final h0 f51249c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Function4 f51234d;
+    private final Function4 f51250d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends Lambda implements Function4 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Function1 f51235d;
+        final /* synthetic */ Function1 f51251d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(Function1 function1) {
             super(4);
-            this.f51235d = function1;
+            this.f51251d = function1;
         }
 
         public final void a(View noName_0, Function2 innerShowRendering, Object outerRendering, a0 viewEnvironment) {
@@ -45,13 +45,13 @@ public final class i implements c0 {
             Intrinsics.checkNotNullParameter(innerShowRendering, "innerShowRendering");
             Intrinsics.checkNotNullParameter(outerRendering, "outerRendering");
             Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
-            innerShowRendering.invoke(this.f51235d.invoke(outerRendering), viewEnvironment);
+            innerShowRendering.invoke(this.f51251d.invoke(outerRendering), viewEnvironment);
         }
 
         @Override // kotlin.jvm.functions.Function4
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3, Object obj4) {
             a((View) obj, (Function2) obj2, obj3, (a0) obj4);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
     }
 
@@ -59,12 +59,12 @@ public final class i implements c0 {
     static final class b extends Lambda implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Function1 f51236d;
+        final /* synthetic */ Function1 f51252d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(Function1 function1) {
             super(2);
-            this.f51236d = function1;
+            this.f51252d = function1;
         }
 
         @Override // kotlin.jvm.functions.Function2
@@ -72,7 +72,7 @@ public final class i implements c0 {
         public final Pair invoke(Object outer, a0 viewEnvironment) {
             Intrinsics.checkNotNullParameter(outer, "outer");
             Intrinsics.checkNotNullParameter(viewEnvironment, "viewEnvironment");
-            return new Pair(this.f51236d.invoke(outer), viewEnvironment);
+            return new Pair(this.f51252d.invoke(outer), viewEnvironment);
         }
     }
 
@@ -81,28 +81,28 @@ public final class i implements c0 {
     public static final class c extends Lambda implements Function2 {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ View f51238e;
+        final /* synthetic */ View f51254e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Function2 f51239i;
+        final /* synthetic */ Function2 f51255i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         c(View view, Function2 function2) {
             super(2);
-            this.f51238e = view;
-            this.f51239i = function2;
+            this.f51254e = view;
+            this.f51255i = function2;
         }
 
         public final void a(Object rendering, a0 env) {
             Intrinsics.checkNotNullParameter(rendering, "rendering");
             Intrinsics.checkNotNullParameter(env, "env");
-            i.this.f51234d.invoke(this.f51238e, this.f51239i, rendering, env);
+            i.this.f51250d.invoke(this.f51254e, this.f51255i, rendering, env);
         }
 
         @Override // kotlin.jvm.functions.Function2
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
             a(obj, (a0) obj2);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
     }
 
@@ -110,10 +110,10 @@ public final class i implements c0 {
         Intrinsics.checkNotNullParameter(type, "type");
         Intrinsics.checkNotNullParameter(map, "map");
         Intrinsics.checkNotNullParameter(doShowRendering, "doShowRendering");
-        this.f51231a = type;
-        this.f51232b = map;
-        this.f51233c = h0Var;
-        this.f51234d = doShowRendering;
+        this.f51247a = type;
+        this.f51248b = map;
+        this.f51249c = h0Var;
+        this.f51250d = doShowRendering;
     }
 
     @Override // vm.c0
@@ -121,10 +121,10 @@ public final class i implements c0 {
         Intrinsics.checkNotNullParameter(initialRendering, "initialRendering");
         Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
         Intrinsics.checkNotNullParameter(contextForNewView, "contextForNewView");
-        Pair pair = (Pair) this.f51232b.invoke(initialRendering, initialViewEnvironment);
+        Pair pair = (Pair) this.f51248b.invoke(initialRendering, initialViewEnvironment);
         Object a10 = pair.a();
         a0 a0Var = (a0) pair.b();
-        View c10 = f0.c((e0) a0Var.a(e0.f51221a), a10, a0Var, contextForNewView, viewGroup, this.f51233c);
+        View c10 = f0.c((e0) a0Var.a(e0.f51237a), a10, a0Var, contextForNewView, viewGroup, this.f51249c);
         Function2 d10 = g0.d(c10);
         Intrinsics.checkNotNull(d10);
         g0.a(c10, initialRendering, a0Var, new c(c10, d10));
@@ -133,7 +133,7 @@ public final class i implements c0 {
 
     @Override // vm.c0
     public KClass getType() {
-        return this.f51231a;
+        return this.f51247a;
     }
 
     public /* synthetic */ i(KClass kClass, Function1 function1, h0 h0Var, Function4 function4, int i10, DefaultConstructorMarker defaultConstructorMarker) {

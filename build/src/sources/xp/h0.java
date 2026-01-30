@@ -88,6 +88,6 @@ public abstract class h0 {
         ConstraintLayout root = hVar.getRoot();
         Intrinsics.checkNotNullExpressionValue(root, "getRoot(...)");
         cq.q.c(root, horizontalStackComponentStyle);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 }

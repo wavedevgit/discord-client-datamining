@@ -357,7 +357,7 @@ public final class NotificationChannels {
         } else {
             configureCallChannel$default(INSTANCE, context, notificationChannelCompat, builder, null, 8, null);
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private final NotificationChannelCompat migrateOrCreateNotificationChannel(Context context, Category category, int i10, Map<String, String> map, Function2<? super NotificationChannelCompat, ? super NotificationChannelCompat.Builder, Unit> function2) {
@@ -422,7 +422,7 @@ public final class NotificationChannels {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit migrateOrCreateNotificationChannel$lambda$8(NotificationChannelCompat notificationChannelCompat, NotificationChannelCompat.Builder builder) {
         Intrinsics.checkNotNullParameter(builder, "<unused var>");
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @NotNull

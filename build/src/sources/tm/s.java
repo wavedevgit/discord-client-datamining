@@ -16,22 +16,22 @@ import okio.ByteString;
 public final class s {
 
     /* renamed from: f  reason: collision with root package name */
-    public static final a f49742f = new a(null);
+    public static final a f49758f = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final kotlin.reflect.b f49743a;
+    private final kotlin.reflect.b f49759a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final s f49744b;
+    private final s f49760b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Function0 f49745c;
+    private final Function0 f49761c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Lazy f49746d;
+    private final Lazy f49762d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Sequence f49747e;
+    private final Sequence f49763e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -50,7 +50,7 @@ public final class s {
                 if (readByte == 0) {
                     a10 = null;
                 } else if (readByte == 1) {
-                    a10 = s.f49742f.a(buffer.L1());
+                    a10 = s.f49758f.a(buffer.L1());
                 } else {
                     throw new IllegalArgumentException("Invalid WorkflowIdentifier");
                 }
@@ -68,7 +68,7 @@ public final class s {
     static final class b extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f49748d = new b();
+        public static final b f49764d = new b();
 
         b() {
             super(1);
@@ -78,7 +78,7 @@ public final class s {
         /* renamed from: a */
         public final s invoke(s it) {
             Intrinsics.checkNotNullParameter(it, "it");
-            return it.f49744b;
+            return it.f49760b;
         }
     }
 
@@ -86,7 +86,7 @@ public final class s {
     static final class c extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final c f49749d = new c();
+        public static final c f49765d = new c();
 
         c() {
             super(1);
@@ -108,35 +108,35 @@ public final class s {
 
         @Override // kotlin.jvm.functions.Function0
         public final String invoke() {
-            return s.this.f49743a instanceof KClass ? vr.a.b((KClass) s.this.f49743a).getName() : s.this.f49743a.toString();
+            return s.this.f49759a instanceof KClass ? vr.a.b((KClass) s.this.f49759a).getName() : s.this.f49759a.toString();
         }
     }
 
     public s(kotlin.reflect.b type, s sVar, Function0 function0) {
         Intrinsics.checkNotNullParameter(type, "type");
-        this.f49743a = type;
-        this.f49744b = sVar;
-        this.f49745c = function0;
+        this.f49759a = type;
+        this.f49760b = sVar;
+        this.f49761c = function0;
         if (!(type instanceof KClass) && (!(type instanceof KType) || !(((KType) type).getClassifier() instanceof KClass))) {
             throw new IllegalArgumentException(Intrinsics.stringPlus("Expected type to be either a KClass or a KType with a KClass classifier, but was ", type).toString());
         }
-        this.f49746d = ir.l.a(ir.o.f31103e, new d());
-        this.f49747e = kotlin.sequences.k.q(this, b.f49748d);
+        this.f49762d = ir.l.a(ir.o.f31119e, new d());
+        this.f49763e = kotlin.sequences.k.q(this, b.f49764d);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final String d() {
-        Object value = this.f49746d.getValue();
+        Object value = this.f49762d.getValue();
         Intrinsics.checkNotNullExpressionValue(value, "<get-typeName>(...)");
         return (String) value;
     }
 
     public final ByteString e() {
         ByteString byteString = null;
-        if (!(this.f49743a instanceof KClass)) {
+        if (!(this.f49759a instanceof KClass)) {
             return null;
         }
-        s sVar = this.f49744b;
+        s sVar = this.f49760b;
         if (sVar != null) {
             ByteString e10 = sVar.e();
             if (e10 == null) {
@@ -163,7 +163,7 @@ public final class s {
             return false;
         }
         s sVar = (s) obj;
-        if (Intrinsics.areEqual(this.f49743a, sVar.f49743a) && Intrinsics.areEqual(this.f49744b, sVar.f49744b)) {
+        if (Intrinsics.areEqual(this.f49759a, sVar.f49759a) && Intrinsics.areEqual(this.f49760b, sVar.f49760b)) {
             return true;
         }
         return false;
@@ -171,8 +171,8 @@ public final class s {
 
     public int hashCode() {
         int hashCode;
-        int hashCode2 = this.f49743a.hashCode() * 31;
-        s sVar = this.f49744b;
+        int hashCode2 = this.f49759a.hashCode() * 31;
+        s sVar = this.f49760b;
         if (sVar == null) {
             hashCode = 0;
         } else {
@@ -183,14 +183,14 @@ public final class s {
 
     public String toString() {
         String str;
-        Function0 function0 = this.f49745c;
+        Function0 function0 = this.f49761c;
         if (function0 == null) {
             str = null;
         } else {
             str = (String) function0.invoke();
         }
         if (str == null) {
-            String P = kotlin.sequences.k.P(this.f49747e, null, null, null, 0, null, c.f49749d, 31, null);
+            String P = kotlin.sequences.k.P(this.f49763e, null, null, null, 0, null, c.f49765d, 31, null);
             return "WorkflowIdentifier(" + P + ')';
         }
         return str;

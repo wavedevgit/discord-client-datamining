@@ -8,29 +8,29 @@ import android.net.Uri;
 abstract class n1 extends ContentProvider {
 
     /* renamed from: d  reason: collision with root package name */
-    private final io.sentry.android.core.internal.util.l f29146d = new io.sentry.android.core.internal.util.l();
+    private final io.sentry.android.core.internal.util.l f29162d = new io.sentry.android.core.internal.util.l();
 
     @Override // android.content.ContentProvider
     public final int delete(Uri uri, String str, String[] strArr) {
-        this.f29146d.a(this);
+        this.f29162d.a(this);
         return 0;
     }
 
     @Override // android.content.ContentProvider
     public final Uri insert(Uri uri, ContentValues contentValues) {
-        this.f29146d.a(this);
+        this.f29162d.a(this);
         return null;
     }
 
     @Override // android.content.ContentProvider
     public final Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2) {
-        this.f29146d.a(this);
+        this.f29162d.a(this);
         return null;
     }
 
     @Override // android.content.ContentProvider
     public final int update(Uri uri, ContentValues contentValues, String str, String[] strArr) {
-        this.f29146d.a(this);
+        this.f29162d.a(this);
         return 0;
     }
 }

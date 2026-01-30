@@ -80,7 +80,7 @@ public final class w implements vm.b {
         this.f7600p = onContinueClick;
         this.f7601q = onBackClick;
         this.f7602r = onCancelClick;
-        k.a aVar = vm.k.f51267a;
+        k.a aVar = vm.k.f51283a;
         this.f7603s = new vm.z(Reflection.getOrCreateKotlinClass(w.class), a.f7604d, new Function1() { // from class: bo.q
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
@@ -140,7 +140,7 @@ public final class w implements vm.b {
         } else {
             localImageComponentStyle = null;
         }
-        aVar.f25298d.setAnimation(jp.o.f32354i);
+        aVar.f25298d.setAnimation(jp.o.f32370i);
         if (localImageComponentStyle != null) {
             CoordinatorLayout root2 = aVar.getRoot();
             Intrinsics.checkNotNullExpressionValue(root2, "getRoot(...)");
@@ -168,13 +168,13 @@ public final class w implements vm.b {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit k(w wVar) {
         wVar.f7601q.invoke();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit l(w wVar) {
         wVar.f7602r.invoke();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -182,7 +182,7 @@ public final class w implements vm.b {
         ThemeableLottieAnimationView illustration = aVar.f25298d;
         Intrinsics.checkNotNullExpressionValue(illustration, "illustration");
         cq.g.c(illustration, localImageComponentStyle, new String[]{"#190051"}, new String[]{"#AA84FF"}, new String[0]);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */

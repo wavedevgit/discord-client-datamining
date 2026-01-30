@@ -6,7 +6,7 @@ import vm.b0;
 public final class b extends b0 {
 
     /* renamed from: b  reason: collision with root package name */
-    public static final b f49136b = new b();
+    public static final b f49152b = new b();
 
     private b() {
         super(Reflection.getOrCreateKotlinClass(a.class));

@@ -169,7 +169,7 @@ public abstract class g {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit e(ThemeableLottieAnimationView themeableLottieAnimationView, LocalImageComponentStyle localImageComponentStyle, String[] strArr, String[] strArr2, String[] strArr3) {
         d(themeableLottieAnimationView, localImageComponentStyle, strArr, strArr2, strArr3);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     public static final void f(ImageView imageView, RemoteImage component) {

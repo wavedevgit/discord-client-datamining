@@ -19,7 +19,7 @@ public abstract class w3 {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f53746a;
+        public static final /* synthetic */ int[] f53762a;
 
         static {
             int[] iArr = new int[LocalImage.Image.values().length];
@@ -135,7 +135,7 @@ public abstract class w3 {
                 iArr[LocalImage.Image.REUSABLE_PERSONA_LOGO.ordinal()] = 28;
             } catch (NoSuchFieldError unused28) {
             }
-            f53746a = iArr;
+            f53762a = iArr;
         }
     }
 
@@ -147,7 +147,7 @@ public abstract class w3 {
         Intrinsics.checkNotNullParameter(config, "config");
         if (config.getStyles() != null) {
             final lp.e c10 = lp.e.c(uiComponentHelper.b());
-            c10.f37421b.setAnimation(i10);
+            c10.f37437b.setAnimation(i10);
             uiComponentHelper.d(new Function0() { // from class: xp.n3
                 @Override // kotlin.jvm.functions.Function0
                 public final Object invoke() {
@@ -161,7 +161,7 @@ public abstract class w3 {
         }
         final int dimension = (int) uiComponentHelper.a().getResources().getDimension(bp.c.f7636e);
         final lp.f c11 = lp.f.c(uiComponentHelper.b());
-        c11.f37423b.setImageResource(i11);
+        c11.f37439b.setImageResource(i11);
         uiComponentHelper.d(new Function0() { // from class: xp.o3
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
@@ -176,21 +176,21 @@ public abstract class w3 {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit M(lp.e eVar, LocalImage localImage, String[] strArr, String[] strArr2) {
-        ThemeableLottieAnimationView lottieView = eVar.f37421b;
+        ThemeableLottieAnimationView lottieView = eVar.f37437b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         cq.g.c(lottieView, localImage.getStyles(), strArr, strArr2, new String[0]);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit N(lp.f fVar, int i10) {
-        ImageView imageView = fVar.f37423b;
+        ImageView imageView = fVar.f37439b;
         Intrinsics.checkNotNullExpressionValue(imageView, "imageView");
         ViewGroup.LayoutParams layoutParams = imageView.getLayoutParams();
         if (layoutParams != null) {
             layoutParams.height = i10;
             imageView.setLayoutParams(layoutParams);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
     }
@@ -207,7 +207,7 @@ public abstract class w3 {
         final int dimension2 = (int) a10.getResources().getDimension(bp.c.f7635d);
         LocalImage.Attributes attributes = config.getAttributes();
         LocalImage.Image imageKey = attributes != null ? attributes.getImageKey() : null;
-        switch (imageKey == null ? -1 : a.f53746a[imageKey.ordinal()]) {
+        switch (imageKey == null ? -1 : a.f53762a[imageKey.ordinal()]) {
             case -1:
                 eVar = null;
                 break;
@@ -217,7 +217,7 @@ public abstract class w3 {
             case 1:
                 if (config.getStyles() != null) {
                     final lp.e c11 = lp.e.c(uiComponentHelper.b());
-                    c11.f37421b.setAnimation(jp.o.f32356k);
+                    c11.f37437b.setAnimation(jp.o.f32372k);
                     uiComponentHelper.d(new Function0() { // from class: xp.l2
                         @Override // kotlin.jvm.functions.Function0
                         public final Object invoke() {
@@ -231,7 +231,7 @@ public abstract class w3 {
                     break;
                 } else {
                     c10 = lp.f.c(uiComponentHelper.b());
-                    c10.f37423b.setImageResource(jp.l.f32321p);
+                    c10.f37439b.setImageResource(jp.l.f32337p);
                     uiComponentHelper.d(new Function0() { // from class: xp.n2
                         @Override // kotlin.jvm.functions.Function0
                         public final Object invoke() {
@@ -247,7 +247,7 @@ public abstract class w3 {
             case 2:
                 if (config.getStyles() != null) {
                     final lp.e c12 = lp.e.c(uiComponentHelper.b());
-                    c12.f37421b.setAnimation(jp.o.f32347b);
+                    c12.f37437b.setAnimation(jp.o.f32363b);
                     uiComponentHelper.d(new Function0() { // from class: xp.z2
                         @Override // kotlin.jvm.functions.Function0
                         public final Object invoke() {
@@ -261,7 +261,7 @@ public abstract class w3 {
                     break;
                 } else {
                     c10 = lp.f.c(uiComponentHelper.b());
-                    c10.f37423b.setImageResource(jp.l.f32316k);
+                    c10.f37439b.setImageResource(jp.l.f32332k);
                     uiComponentHelper.d(new Function0() { // from class: xp.f3
                         @Override // kotlin.jvm.functions.Function0
                         public final Object invoke() {
@@ -276,7 +276,7 @@ public abstract class w3 {
                 }
             case 3:
                 final lp.e c13 = lp.e.c(uiComponentHelper.b());
-                c13.f37421b.setAnimation(jp.o.f32357l);
+                c13.f37437b.setAnimation(jp.o.f32373l);
                 uiComponentHelper.d(new Function0() { // from class: xp.g3
                     @Override // kotlin.jvm.functions.Function0
                     public final Object invoke() {
@@ -285,7 +285,7 @@ public abstract class w3 {
                         return Q;
                     }
                 });
-                c13.f37421b.j(new l5.z() { // from class: xp.i3
+                c13.f37437b.j(new l5.z() { // from class: xp.i3
                     @Override // l5.z
                     public final void a(l5.i iVar) {
                         w3.R(lp.e.this, iVar);
@@ -296,7 +296,7 @@ public abstract class w3 {
             case 4:
                 if (config.getStyles() != null) {
                     final lp.e c14 = lp.e.c(uiComponentHelper.b());
-                    c14.f37421b.setAnimation(jp.o.f32355j);
+                    c14.f37437b.setAnimation(jp.o.f32371j);
                     uiComponentHelper.d(new Function0() { // from class: xp.j3
                         @Override // kotlin.jvm.functions.Function0
                         public final Object invoke() {
@@ -310,7 +310,7 @@ public abstract class w3 {
                     break;
                 } else {
                     final lp.f c15 = lp.f.c(uiComponentHelper.b());
-                    c15.f37423b.setImageResource(jp.l.f32320o);
+                    c15.f37439b.setImageResource(jp.l.f32336o);
                     uiComponentHelper.d(new Function0() { // from class: xp.k3
                         @Override // kotlin.jvm.functions.Function0
                         public final Object invoke() {
@@ -326,7 +326,7 @@ public abstract class w3 {
             case 5:
                 if (config.getStyles() != null) {
                     final lp.e c16 = lp.e.c(uiComponentHelper.b());
-                    c16.f37421b.setAnimation(jp.o.f32354i);
+                    c16.f37437b.setAnimation(jp.o.f32370i);
                     uiComponentHelper.d(new Function0() { // from class: xp.l3
                         @Override // kotlin.jvm.functions.Function0
                         public final Object invoke() {
@@ -340,7 +340,7 @@ public abstract class w3 {
                     break;
                 } else {
                     final lp.f c17 = lp.f.c(uiComponentHelper.b());
-                    c17.f37423b.setImageResource(jp.l.f32319n);
+                    c17.f37439b.setImageResource(jp.l.f32335n);
                     uiComponentHelper.d(new Function0() { // from class: xp.m3
                         @Override // kotlin.jvm.functions.Function0
                         public final Object invoke() {
@@ -356,7 +356,7 @@ public abstract class w3 {
             case 6:
                 if (config.getStyles() != null) {
                     final lp.e c18 = lp.e.c(uiComponentHelper.b());
-                    c18.f37421b.setAnimation(jp.o.f32353h);
+                    c18.f37437b.setAnimation(jp.o.f32369h);
                     uiComponentHelper.d(new Function0() { // from class: xp.w2
                         @Override // kotlin.jvm.functions.Function0
                         public final Object invoke() {
@@ -370,7 +370,7 @@ public abstract class w3 {
                     break;
                 } else {
                     final lp.f c19 = lp.f.c(uiComponentHelper.b());
-                    c19.f37423b.setImageResource(jp.l.f32318m);
+                    c19.f37439b.setImageResource(jp.l.f32334m);
                     uiComponentHelper.d(new Function0() { // from class: xp.h3
                         @Override // kotlin.jvm.functions.Function0
                         public final Object invoke() {
@@ -386,7 +386,7 @@ public abstract class w3 {
             case 7:
                 if (config.getStyles() != null) {
                     final lp.e c20 = lp.e.c(uiComponentHelper.b());
-                    c20.f37421b.setAnimation(jp.o.f32371z);
+                    c20.f37437b.setAnimation(jp.o.f32387z);
                     uiComponentHelper.d(new Function0() { // from class: xp.p3
                         @Override // kotlin.jvm.functions.Function0
                         public final Object invoke() {
@@ -400,7 +400,7 @@ public abstract class w3 {
                     break;
                 } else {
                     final lp.f c21 = lp.f.c(uiComponentHelper.b());
-                    c21.f37423b.setImageResource(jp.l.f32323r);
+                    c21.f37439b.setImageResource(jp.l.f32339r);
                     uiComponentHelper.d(new Function0() { // from class: xp.q3
                         @Override // kotlin.jvm.functions.Function0
                         public final Object invoke() {
@@ -416,7 +416,7 @@ public abstract class w3 {
             case 8:
                 if (config.getStyles() != null) {
                     final lp.e c22 = lp.e.c(uiComponentHelper.b());
-                    c22.f37421b.setAnimation(jp.o.f32346a);
+                    c22.f37437b.setAnimation(jp.o.f32362a);
                     uiComponentHelper.d(new Function0() { // from class: xp.r3
                         @Override // kotlin.jvm.functions.Function0
                         public final Object invoke() {
@@ -430,7 +430,7 @@ public abstract class w3 {
                     break;
                 } else {
                     c10 = lp.f.c(uiComponentHelper.b());
-                    c10.f37423b.setImageResource(jp.l.f32315j);
+                    c10.f37439b.setImageResource(jp.l.f32331j);
                     uiComponentHelper.d(new Function0() { // from class: xp.s3
                         @Override // kotlin.jvm.functions.Function0
                         public final Object invoke() {
@@ -446,7 +446,7 @@ public abstract class w3 {
             case 9:
                 if (config.getStyles() != null) {
                     final lp.e c23 = lp.e.c(uiComponentHelper.b());
-                    c23.f37421b.setAnimation(jp.o.f32370y);
+                    c23.f37437b.setAnimation(jp.o.f32386y);
                     uiComponentHelper.d(new Function0() { // from class: xp.t3
                         @Override // kotlin.jvm.functions.Function0
                         public final Object invoke() {
@@ -460,7 +460,7 @@ public abstract class w3 {
                     break;
                 } else {
                     c10 = lp.f.c(uiComponentHelper.b());
-                    c10.f37423b.setImageResource(jp.l.f32322q);
+                    c10.f37439b.setImageResource(jp.l.f32338q);
                     uiComponentHelper.d(new Function0() { // from class: xp.u3
                         @Override // kotlin.jvm.functions.Function0
                         public final Object invoke() {
@@ -475,8 +475,8 @@ public abstract class w3 {
                 }
             case 10:
                 final lp.e c24 = lp.e.c(uiComponentHelper.b());
-                c24.f37421b.setAnimation(jp.o.f32368w);
-                c24.f37421b.playAnimation();
+                c24.f37437b.setAnimation(jp.o.f32384w);
+                c24.f37437b.playAnimation();
                 if (config.getStyles() != null) {
                     uiComponentHelper.d(new Function0() { // from class: xp.v3
                         @Override // kotlin.jvm.functions.Function0
@@ -487,9 +487,9 @@ public abstract class w3 {
                         }
                     });
                 } else {
-                    ThemeableLottieAnimationView lottieView = c24.f37421b;
+                    ThemeableLottieAnimationView lottieView = c24.f37437b;
                     Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
-                    cq.g.g(lottieView, Integer.valueOf(jp.s.d(a10, yg.b.f54352m, null, false, 6, null)), Integer.valueOf(jp.s.d(a10, yg.b.f54353n, null, false, 6, null)), null, new String[]{"#190052"}, new String[]{"#F1EBFF", "#8552FF"}, new String[]{"#FFFFFF"});
+                    cq.g.g(lottieView, Integer.valueOf(jp.s.d(a10, yg.b.f54368m, null, false, 6, null)), Integer.valueOf(jp.s.d(a10, yg.b.f54369n, null, false, 6, null)), null, new String[]{"#190052"}, new String[]{"#F1EBFF", "#8552FF"}, new String[]{"#FFFFFF"});
                 }
                 uiComponentHelper.d(new Function0() { // from class: xp.m2
                     @Override // kotlin.jvm.functions.Function0
@@ -503,7 +503,7 @@ public abstract class w3 {
                 break;
             case 11:
                 final lp.e c25 = lp.e.c(uiComponentHelper.b());
-                c25.f37421b.setAnimation(jp.o.f32369x);
+                c25.f37437b.setAnimation(jp.o.f32385x);
                 uiComponentHelper.d(new Function0() { // from class: xp.o2
                     @Override // kotlin.jvm.functions.Function0
                     public final Object invoke() {
@@ -524,15 +524,15 @@ public abstract class w3 {
                     eVar = c25;
                     break;
                 } else {
-                    ThemeableLottieAnimationView lottieView2 = c25.f37421b;
+                    ThemeableLottieAnimationView lottieView2 = c25.f37437b;
                     Intrinsics.checkNotNullExpressionValue(lottieView2, "lottieView");
-                    cq.g.g(lottieView2, Integer.valueOf(jp.s.d(a10, yg.b.f54352m, null, false, 6, null)), Integer.valueOf(jp.s.d(a10, yg.b.f54353n, null, false, 6, null)), null, new String[]{"#02214F", "#190051"}, new String[]{"#E5E5EA"}, new String[0]);
+                    cq.g.g(lottieView2, Integer.valueOf(jp.s.d(a10, yg.b.f54368m, null, false, 6, null)), Integer.valueOf(jp.s.d(a10, yg.b.f54369n, null, false, 6, null)), null, new String[]{"#02214F", "#190051"}, new String[]{"#E5E5EA"}, new String[0]);
                     eVar = c25;
                     break;
                 }
             case 12:
                 final lp.e c26 = lp.e.c(uiComponentHelper.b());
-                c26.f37421b.setAnimation(jp.o.f32367v);
+                c26.f37437b.setAnimation(jp.o.f32383v);
                 if (config.getStyles() != null) {
                     uiComponentHelper.d(new Function0() { // from class: xp.q2
                         @Override // kotlin.jvm.functions.Function0
@@ -543,9 +543,9 @@ public abstract class w3 {
                         }
                     });
                 } else {
-                    ThemeableLottieAnimationView lottieView3 = c26.f37421b;
+                    ThemeableLottieAnimationView lottieView3 = c26.f37437b;
                     Intrinsics.checkNotNullExpressionValue(lottieView3, "lottieView");
-                    cq.g.g(lottieView3, Integer.valueOf(jp.s.d(a10, yg.b.f54352m, null, false, 6, null)), null, null, new String[]{"#280087"}, new String[0], new String[0]);
+                    cq.g.g(lottieView3, Integer.valueOf(jp.s.d(a10, yg.b.f54368m, null, false, 6, null)), null, null, new String[]{"#280087"}, new String[0], new String[0]);
                 }
                 uiComponentHelper.d(new Function0() { // from class: xp.r2
                     @Override // kotlin.jvm.functions.Function0
@@ -559,8 +559,8 @@ public abstract class w3 {
                 break;
             case 13:
                 final lp.e c27 = lp.e.c(uiComponentHelper.b());
-                c27.f37421b.setAnimation(jp.o.f32348c);
-                c27.f37421b.playAnimation();
+                c27.f37437b.setAnimation(jp.o.f32364c);
+                c27.f37437b.playAnimation();
                 if (config.getStyles() != null) {
                     uiComponentHelper.d(new Function0() { // from class: xp.s2
                         @Override // kotlin.jvm.functions.Function0
@@ -571,9 +571,9 @@ public abstract class w3 {
                         }
                     });
                 } else {
-                    ThemeableLottieAnimationView lottieView4 = c27.f37421b;
+                    ThemeableLottieAnimationView lottieView4 = c27.f37437b;
                     Intrinsics.checkNotNullExpressionValue(lottieView4, "lottieView");
-                    cq.g.g(lottieView4, Integer.valueOf(jp.s.d(a10, yg.b.f54352m, null, false, 6, null)), Integer.valueOf(jp.s.d(a10, yg.b.f54353n, null, false, 6, null)), null, new String[]{"#280087", "#322A7E"}, new String[]{"#CBB1FF"}, new String[]{"#F1EBFF"});
+                    cq.g.g(lottieView4, Integer.valueOf(jp.s.d(a10, yg.b.f54368m, null, false, 6, null)), Integer.valueOf(jp.s.d(a10, yg.b.f54369n, null, false, 6, null)), null, new String[]{"#280087", "#322A7E"}, new String[]{"#CBB1FF"}, new String[]{"#F1EBFF"});
                 }
                 uiComponentHelper.d(new Function0() { // from class: xp.t2
                     @Override // kotlin.jvm.functions.Function0
@@ -587,8 +587,8 @@ public abstract class w3 {
                 break;
             case 14:
                 final lp.e c28 = lp.e.c(uiComponentHelper.b());
-                c28.f37421b.setAnimation(jp.o.f32350e);
-                c28.f37421b.playAnimation();
+                c28.f37437b.setAnimation(jp.o.f32366e);
+                c28.f37437b.playAnimation();
                 if (config.getStyles() != null) {
                     uiComponentHelper.d(new Function0() { // from class: xp.u2
                         @Override // kotlin.jvm.functions.Function0
@@ -599,9 +599,9 @@ public abstract class w3 {
                         }
                     });
                 } else {
-                    ThemeableLottieAnimationView lottieView5 = c28.f37421b;
+                    ThemeableLottieAnimationView lottieView5 = c28.f37437b;
                     Intrinsics.checkNotNullExpressionValue(lottieView5, "lottieView");
-                    cq.g.g(lottieView5, Integer.valueOf(jp.s.d(a10, yg.b.f54352m, null, false, 6, null)), Integer.valueOf(jp.s.d(a10, yg.b.f54353n, null, false, 6, null)), null, new String[]{"#280087", "#322A7E"}, new String[]{"#CBB1FF"}, new String[]{"#F1EBFF"});
+                    cq.g.g(lottieView5, Integer.valueOf(jp.s.d(a10, yg.b.f54368m, null, false, 6, null)), Integer.valueOf(jp.s.d(a10, yg.b.f54369n, null, false, 6, null)), null, new String[]{"#280087", "#322A7E"}, new String[]{"#CBB1FF"}, new String[]{"#F1EBFF"});
                 }
                 uiComponentHelper.d(new Function0() { // from class: xp.v2
                     @Override // kotlin.jvm.functions.Function0
@@ -615,8 +615,8 @@ public abstract class w3 {
                 break;
             case 15:
                 final lp.e c29 = lp.e.c(uiComponentHelper.b());
-                c29.f37421b.setAnimation(jp.o.f32352g);
-                c29.f37421b.playAnimation();
+                c29.f37437b.setAnimation(jp.o.f32368g);
+                c29.f37437b.playAnimation();
                 if (config.getStyles() != null) {
                     uiComponentHelper.d(new Function0() { // from class: xp.x2
                         @Override // kotlin.jvm.functions.Function0
@@ -627,9 +627,9 @@ public abstract class w3 {
                         }
                     });
                 } else {
-                    ThemeableLottieAnimationView lottieView6 = c29.f37421b;
+                    ThemeableLottieAnimationView lottieView6 = c29.f37437b;
                     Intrinsics.checkNotNullExpressionValue(lottieView6, "lottieView");
-                    cq.g.g(lottieView6, Integer.valueOf(jp.s.d(a10, yg.b.f54352m, null, false, 6, null)), Integer.valueOf(jp.s.d(a10, yg.b.f54353n, null, false, 6, null)), null, new String[]{"#280087", "#322A7E"}, new String[]{"#CBB1FF"}, new String[]{"#F1EBFF"});
+                    cq.g.g(lottieView6, Integer.valueOf(jp.s.d(a10, yg.b.f54368m, null, false, 6, null)), Integer.valueOf(jp.s.d(a10, yg.b.f54369n, null, false, 6, null)), null, new String[]{"#280087", "#322A7E"}, new String[]{"#CBB1FF"}, new String[]{"#F1EBFF"});
                 }
                 uiComponentHelper.d(new Function0() { // from class: xp.y2
                     @Override // kotlin.jvm.functions.Function0
@@ -643,8 +643,8 @@ public abstract class w3 {
                 break;
             case 16:
                 final lp.e c30 = lp.e.c(uiComponentHelper.b());
-                c30.f37421b.setAnimation(jp.o.f32351f);
-                c30.f37421b.playAnimation();
+                c30.f37437b.setAnimation(jp.o.f32367f);
+                c30.f37437b.playAnimation();
                 if (config.getStyles() != null) {
                     uiComponentHelper.d(new Function0() { // from class: xp.a3
                         @Override // kotlin.jvm.functions.Function0
@@ -655,9 +655,9 @@ public abstract class w3 {
                         }
                     });
                 } else {
-                    ThemeableLottieAnimationView lottieView7 = c30.f37421b;
+                    ThemeableLottieAnimationView lottieView7 = c30.f37437b;
                     Intrinsics.checkNotNullExpressionValue(lottieView7, "lottieView");
-                    cq.g.g(lottieView7, Integer.valueOf(jp.s.d(a10, yg.b.f54352m, null, false, 6, null)), Integer.valueOf(jp.s.d(a10, yg.b.f54353n, null, false, 6, null)), null, new String[]{"#280087", "#322A7E"}, new String[]{"#CBB1FF"}, new String[]{"#F1EBFF"});
+                    cq.g.g(lottieView7, Integer.valueOf(jp.s.d(a10, yg.b.f54368m, null, false, 6, null)), Integer.valueOf(jp.s.d(a10, yg.b.f54369n, null, false, 6, null)), null, new String[]{"#280087", "#322A7E"}, new String[]{"#CBB1FF"}, new String[]{"#F1EBFF"});
                 }
                 uiComponentHelper.d(new Function0() { // from class: xp.b3
                     @Override // kotlin.jvm.functions.Function0
@@ -671,8 +671,8 @@ public abstract class w3 {
                 break;
             case 17:
                 final lp.e c31 = lp.e.c(uiComponentHelper.b());
-                c31.f37421b.setAnimation(jp.o.f32349d);
-                c31.f37421b.playAnimation();
+                c31.f37437b.setAnimation(jp.o.f32365d);
+                c31.f37437b.playAnimation();
                 if (config.getStyles() != null) {
                     uiComponentHelper.d(new Function0() { // from class: xp.c3
                         @Override // kotlin.jvm.functions.Function0
@@ -683,9 +683,9 @@ public abstract class w3 {
                         }
                     });
                 } else {
-                    ThemeableLottieAnimationView lottieView8 = c31.f37421b;
+                    ThemeableLottieAnimationView lottieView8 = c31.f37437b;
                     Intrinsics.checkNotNullExpressionValue(lottieView8, "lottieView");
-                    cq.g.g(lottieView8, Integer.valueOf(jp.s.d(a10, yg.b.f54352m, null, false, 6, null)), Integer.valueOf(jp.s.d(a10, yg.b.f54353n, null, false, 6, null)), null, new String[]{"#280087", "#322A7E"}, new String[]{"#CBB1FF"}, new String[]{"#F1EBFF"});
+                    cq.g.g(lottieView8, Integer.valueOf(jp.s.d(a10, yg.b.f54368m, null, false, 6, null)), Integer.valueOf(jp.s.d(a10, yg.b.f54369n, null, false, 6, null)), null, new String[]{"#280087", "#322A7E"}, new String[]{"#CBB1FF"}, new String[]{"#F1EBFF"});
                 }
                 uiComponentHelper.d(new Function0() { // from class: xp.d3
                     @Override // kotlin.jvm.functions.Function0
@@ -699,9 +699,9 @@ public abstract class w3 {
                 break;
             case ChatViewRecyclerTypes.EPHEMERAL_INDICATION /* 18 */:
                 final lp.e c32 = lp.e.c(uiComponentHelper.b());
-                c32.f37421b.setImageResource(vp.d.f51780a);
+                c32.f37437b.setImageResource(vp.d.f51796a);
                 if (config.getStyles() != null) {
-                    ThemeableLottieAnimationView lottieView9 = c32.f37421b;
+                    ThemeableLottieAnimationView lottieView9 = c32.f37437b;
                     Intrinsics.checkNotNullExpressionValue(lottieView9, "lottieView");
                     cq.g.c(lottieView9, config.getStyles(), new String[0], new String[0], new String[0]);
                     eVar = c32;
@@ -719,38 +719,38 @@ public abstract class w3 {
                     break;
                 }
             case ChatViewRecyclerTypes.INTERACTION_STATUS /* 19 */:
-                eVar = L(k2Var, uiComponentHelper, jp.o.f32358m, jp.l.f32306a, new String[0], new String[0], config);
+                eVar = L(k2Var, uiComponentHelper, jp.o.f32374m, jp.l.f32322a, new String[0], new String[0], config);
                 break;
             case 20:
-                eVar = L(k2Var, uiComponentHelper, jp.o.f32359n, jp.l.f32307b, new String[]{"#000000"}, new String[0], config);
+                eVar = L(k2Var, uiComponentHelper, jp.o.f32375n, jp.l.f32323b, new String[]{"#000000"}, new String[0], config);
                 break;
             case ChatViewRecyclerTypes.FLAGGED_MESSAGE_EMBED /* 21 */:
-                eVar = L(k2Var, uiComponentHelper, jp.o.f32360o, jp.l.f32308c, new String[]{"#FFFFFF"}, new String[]{"#000000"}, config);
+                eVar = L(k2Var, uiComponentHelper, jp.o.f32376o, jp.l.f32324c, new String[]{"#FFFFFF"}, new String[]{"#000000"}, config);
                 break;
             case ChatViewRecyclerTypes.FLAGGED_MESSAGE_ACTION_BAR /* 22 */:
-                eVar = L(k2Var, uiComponentHelper, jp.o.f32361p, jp.l.f32309d, new String[]{"#FFFFFF"}, new String[]{"#000000"}, config);
+                eVar = L(k2Var, uiComponentHelper, jp.o.f32377p, jp.l.f32325d, new String[]{"#FFFFFF"}, new String[]{"#000000"}, config);
                 break;
             case 23:
-                eVar = L(k2Var, uiComponentHelper, jp.o.f32362q, jp.l.f32310e, new String[]{"#FFFFFF"}, new String[]{"#000000"}, config);
+                eVar = L(k2Var, uiComponentHelper, jp.o.f32378q, jp.l.f32326e, new String[]{"#FFFFFF"}, new String[]{"#000000"}, config);
                 break;
             case ChatViewRecyclerTypes.SURVEY_INDICATION /* 24 */:
-                eVar = L(k2Var, uiComponentHelper, jp.o.f32363r, jp.l.f32311f, new String[]{"#FFFFFF"}, new String[]{"#000000"}, config);
+                eVar = L(k2Var, uiComponentHelper, jp.o.f32379r, jp.l.f32327f, new String[]{"#FFFFFF"}, new String[]{"#000000"}, config);
                 break;
             case ChatViewRecyclerTypes.GUILD_INVITE_DISABLED /* 25 */:
-                eVar = L(k2Var, uiComponentHelper, jp.o.f32364s, jp.l.f32312g, new String[]{"#FFFFFF"}, new String[]{"#000000"}, config);
+                eVar = L(k2Var, uiComponentHelper, jp.o.f32380s, jp.l.f32328g, new String[]{"#FFFFFF"}, new String[]{"#000000"}, config);
                 break;
             case ChatViewRecyclerTypes.MEDIA_MOSAIC_ATTACHMENT /* 26 */:
-                eVar = L(k2Var, uiComponentHelper, jp.o.f32365t, jp.l.f32313h, new String[]{"#FFFFFF"}, new String[]{"#000000"}, config);
+                eVar = L(k2Var, uiComponentHelper, jp.o.f32381t, jp.l.f32329h, new String[]{"#FFFFFF"}, new String[]{"#000000"}, config);
                 break;
             case 27:
-                eVar = L(k2Var, uiComponentHelper, jp.o.f32366u, jp.l.f32314i, new String[]{"#FFFFFF"}, new String[]{"#000000"}, config);
+                eVar = L(k2Var, uiComponentHelper, jp.o.f32382u, jp.l.f32330i, new String[]{"#FFFFFF"}, new String[]{"#000000"}, config);
                 break;
             case 28:
                 lp.e c33 = lp.e.c(uiComponentHelper.b());
-                c33.f37421b.setImageResource(vp.d.f51784e);
+                c33.f37437b.setImageResource(vp.d.f51800e);
                 eVar = c33;
                 if (config.getStyles() != null) {
-                    ThemeableLottieAnimationView lottieView10 = c33.f37421b;
+                    ThemeableLottieAnimationView lottieView10 = c33.f37437b;
                     Intrinsics.checkNotNullExpressionValue(lottieView10, "lottieView");
                     cq.g.c(lottieView10, config.getStyles(), new String[0], new String[0], new String[0]);
                     eVar = c33;
@@ -766,15 +766,15 @@ public abstract class w3 {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit P(lp.e eVar, LocalImage localImage) {
-        ThemeableLottieAnimationView lottieView = eVar.f37421b;
+        ThemeableLottieAnimationView lottieView = eVar.f37437b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         cq.g.c(lottieView, localImage.getStyles(), new String[]{"#02214F"}, new String[]{"#AA84FF", "#F2EAFF"}, new String[]{"#FFFFFF"});
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit Q(lp.e eVar) {
-        ThemeableLottieAnimationView lottieView = eVar.f37421b;
+        ThemeableLottieAnimationView lottieView = eVar.f37437b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         ViewGroup.LayoutParams layoutParams = lottieView.getLayoutParams();
         if (layoutParams != null) {
@@ -782,174 +782,174 @@ public abstract class w3 {
                 ((ConstraintLayout.LayoutParams) layoutParams).V = 0.5f;
             }
             lottieView.setLayoutParams(layoutParams);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void R(lp.e eVar, l5.i iVar) {
-        eVar.f37421b.playAnimation();
+        eVar.f37437b.playAnimation();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit S(lp.e eVar, LocalImage localImage) {
-        ThemeableLottieAnimationView lottieView = eVar.f37421b;
+        ThemeableLottieAnimationView lottieView = eVar.f37437b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         cq.g.c(lottieView, localImage.getStyles(), new String[]{"#02214F"}, new String[]{"#AA84FF"}, new String[0]);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit T(lp.f fVar, int i10) {
-        ImageView imageView = fVar.f37423b;
+        ImageView imageView = fVar.f37439b;
         Intrinsics.checkNotNullExpressionValue(imageView, "imageView");
         ViewGroup.LayoutParams layoutParams = imageView.getLayoutParams();
         if (layoutParams != null) {
             layoutParams.height = i10;
             imageView.setLayoutParams(layoutParams);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit U(lp.e eVar, LocalImage localImage) {
-        ThemeableLottieAnimationView lottieView = eVar.f37421b;
+        ThemeableLottieAnimationView lottieView = eVar.f37437b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         cq.g.c(lottieView, localImage.getStyles(), new String[]{"#190051"}, new String[]{"#AA84FF"}, new String[0]);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit V(lp.f fVar, int i10) {
-        ImageView imageView = fVar.f37423b;
+        ImageView imageView = fVar.f37439b;
         Intrinsics.checkNotNullExpressionValue(imageView, "imageView");
         ViewGroup.LayoutParams layoutParams = imageView.getLayoutParams();
         if (layoutParams != null) {
             layoutParams.height = i10;
             imageView.setLayoutParams(layoutParams);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit W(lp.e eVar, LocalImage localImage) {
-        ThemeableLottieAnimationView lottieView = eVar.f37421b;
+        ThemeableLottieAnimationView lottieView = eVar.f37437b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         cq.g.c(lottieView, localImage.getStyles(), new String[]{"#190051"}, new String[]{"#AA84FF"}, new String[0]);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit X(lp.f fVar, int i10) {
-        ImageView imageView = fVar.f37423b;
+        ImageView imageView = fVar.f37439b;
         Intrinsics.checkNotNullExpressionValue(imageView, "imageView");
         ViewGroup.LayoutParams layoutParams = imageView.getLayoutParams();
         if (layoutParams != null) {
             layoutParams.height = i10;
             imageView.setLayoutParams(layoutParams);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit Y(lp.e eVar, LocalImage localImage) {
-        ThemeableLottieAnimationView lottieView = eVar.f37421b;
+        ThemeableLottieAnimationView lottieView = eVar.f37437b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         cq.g.c(lottieView, localImage.getStyles(), new String[]{"#190051"}, new String[]{"#AA84FF"}, new String[0]);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit Z(lp.f fVar, int i10) {
-        ImageView imageView = fVar.f37423b;
+        ImageView imageView = fVar.f37439b;
         Intrinsics.checkNotNullExpressionValue(imageView, "imageView");
         ViewGroup.LayoutParams layoutParams = imageView.getLayoutParams();
         if (layoutParams != null) {
             layoutParams.height = i10;
             imageView.setLayoutParams(layoutParams);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit a0(lp.e eVar, LocalImage localImage) {
-        ThemeableLottieAnimationView lottieView = eVar.f37421b;
+        ThemeableLottieAnimationView lottieView = eVar.f37437b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         cq.g.c(lottieView, localImage.getStyles(), new String[]{"#4C4293"}, new String[]{"#B5B5CC"}, new String[0]);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit b0(lp.f fVar, int i10) {
-        ImageView imageView = fVar.f37423b;
+        ImageView imageView = fVar.f37439b;
         Intrinsics.checkNotNullExpressionValue(imageView, "imageView");
         ViewGroup.LayoutParams layoutParams = imageView.getLayoutParams();
         if (layoutParams != null) {
             layoutParams.height = i10;
             imageView.setLayoutParams(layoutParams);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit c0(lp.f fVar, int i10) {
-        ImageView imageView = fVar.f37423b;
+        ImageView imageView = fVar.f37439b;
         Intrinsics.checkNotNullExpressionValue(imageView, "imageView");
         ViewGroup.LayoutParams layoutParams = imageView.getLayoutParams();
         if (layoutParams != null) {
             layoutParams.height = i10;
             imageView.setLayoutParams(layoutParams);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit d0(lp.e eVar, LocalImage localImage) {
-        ThemeableLottieAnimationView lottieView = eVar.f37421b;
+        ThemeableLottieAnimationView lottieView = eVar.f37437b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         cq.g.c(lottieView, localImage.getStyles(), new String[]{"#190051", "#02214F"}, new String[]{"#AA84FF"}, new String[]{"#AA84FF"});
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit e0(lp.f fVar, int i10) {
-        ImageView imageView = fVar.f37423b;
+        ImageView imageView = fVar.f37439b;
         Intrinsics.checkNotNullExpressionValue(imageView, "imageView");
         ViewGroup.LayoutParams layoutParams = imageView.getLayoutParams();
         if (layoutParams != null) {
             layoutParams.height = i10;
             imageView.setLayoutParams(layoutParams);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit f0(lp.e eVar, LocalImage localImage) {
-        ThemeableLottieAnimationView lottieView = eVar.f37421b;
+        ThemeableLottieAnimationView lottieView = eVar.f37437b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         cq.g.c(lottieView, localImage.getStyles(), new String[]{"#190052"}, new String[]{"#F1EBFF", "#8552FF"}, new String[]{"#FFFFFF"});
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit g0(lp.e eVar) {
-        eVar.f37421b.setRepeatMode(1);
-        eVar.f37421b.setRepeatCount(-1);
-        eVar.f37421b.playAnimation();
-        return Unit.f33282a;
+        eVar.f37437b.setRepeatMode(1);
+        eVar.f37437b.setRepeatCount(-1);
+        eVar.f37437b.playAnimation();
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit h0(lp.e eVar) {
-        ThemeableLottieAnimationView lottieView = eVar.f37421b;
+        ThemeableLottieAnimationView lottieView = eVar.f37437b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         ViewGroup.LayoutParams layoutParams = lottieView.getLayoutParams();
         if (layoutParams != null) {
@@ -957,30 +957,30 @@ public abstract class w3 {
                 ((ConstraintLayout.LayoutParams) layoutParams).V = 0.5f;
             }
             lottieView.setLayoutParams(layoutParams);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit i0(lp.e eVar, LocalImage localImage) {
-        ThemeableLottieAnimationView lottieView = eVar.f37421b;
+        ThemeableLottieAnimationView lottieView = eVar.f37437b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         cq.g.c(lottieView, localImage.getStyles(), new String[]{"#02214F", "#190051"}, new String[]{"#E5E5EA"}, new String[0]);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit j0(lp.e eVar, LocalImage localImage) {
-        ThemeableLottieAnimationView lottieView = eVar.f37421b;
+        ThemeableLottieAnimationView lottieView = eVar.f37437b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         cq.g.c(lottieView, localImage.getStyles(), new String[]{"#280087"}, new String[0], new String[0]);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit k0(lp.e eVar) {
-        ThemeableLottieAnimationView lottieView = eVar.f37421b;
+        ThemeableLottieAnimationView lottieView = eVar.f37437b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         ViewGroup.LayoutParams layoutParams = lottieView.getLayoutParams();
         if (layoutParams != null) {
@@ -988,121 +988,121 @@ public abstract class w3 {
                 ((ConstraintLayout.LayoutParams) layoutParams).V = 0.5f;
             }
             lottieView.setLayoutParams(layoutParams);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit l0(lp.e eVar, LocalImage localImage) {
-        ThemeableLottieAnimationView lottieView = eVar.f37421b;
+        ThemeableLottieAnimationView lottieView = eVar.f37437b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         cq.g.c(lottieView, localImage.getStyles(), new String[]{"#280087", "#322A7E"}, new String[]{"#CBB1FF"}, new String[]{"#F1EBFF"});
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit m0(lp.e eVar) {
-        eVar.f37421b.setRepeatMode(1);
-        eVar.f37421b.setRepeatCount(-1);
-        eVar.f37421b.playAnimation();
-        return Unit.f33282a;
+        eVar.f37437b.setRepeatMode(1);
+        eVar.f37437b.setRepeatCount(-1);
+        eVar.f37437b.playAnimation();
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit n0(lp.e eVar, LocalImage localImage) {
-        ThemeableLottieAnimationView lottieView = eVar.f37421b;
+        ThemeableLottieAnimationView lottieView = eVar.f37437b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         cq.g.c(lottieView, localImage.getStyles(), new String[]{"#190051"}, new String[]{"#AA84FF", "#F2EAFF"}, new String[]{"#FFFFFF"});
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit o0(lp.e eVar, LocalImage localImage) {
-        ThemeableLottieAnimationView lottieView = eVar.f37421b;
+        ThemeableLottieAnimationView lottieView = eVar.f37437b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         cq.g.c(lottieView, localImage.getStyles(), new String[]{"#280087", "#322A7E"}, new String[]{"#CBB1FF"}, new String[]{"#F1EBFF"});
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit p0(lp.e eVar) {
-        eVar.f37421b.setRepeatMode(1);
-        eVar.f37421b.setRepeatCount(-1);
-        eVar.f37421b.playAnimation();
-        return Unit.f33282a;
+        eVar.f37437b.setRepeatMode(1);
+        eVar.f37437b.setRepeatCount(-1);
+        eVar.f37437b.playAnimation();
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit q0(lp.e eVar, LocalImage localImage) {
-        ThemeableLottieAnimationView lottieView = eVar.f37421b;
+        ThemeableLottieAnimationView lottieView = eVar.f37437b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         cq.g.c(lottieView, localImage.getStyles(), new String[]{"#280087", "#322A7E"}, new String[]{"#CBB1FF"}, new String[]{"#F1EBFF"});
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit r0(lp.e eVar) {
-        eVar.f37421b.setRepeatMode(1);
-        eVar.f37421b.setRepeatCount(-1);
-        eVar.f37421b.playAnimation();
-        return Unit.f33282a;
+        eVar.f37437b.setRepeatMode(1);
+        eVar.f37437b.setRepeatCount(-1);
+        eVar.f37437b.playAnimation();
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit s0(lp.e eVar, LocalImage localImage) {
-        ThemeableLottieAnimationView lottieView = eVar.f37421b;
+        ThemeableLottieAnimationView lottieView = eVar.f37437b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         cq.g.c(lottieView, localImage.getStyles(), new String[]{"#280087", "#322A7E"}, new String[]{"#CBB1FF"}, new String[]{"#F1EBFF"});
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit t0(lp.e eVar) {
-        eVar.f37421b.setRepeatMode(1);
-        eVar.f37421b.setRepeatCount(-1);
-        eVar.f37421b.playAnimation();
-        return Unit.f33282a;
+        eVar.f37437b.setRepeatMode(1);
+        eVar.f37437b.setRepeatCount(-1);
+        eVar.f37437b.playAnimation();
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit u0(lp.e eVar, LocalImage localImage) {
-        ThemeableLottieAnimationView lottieView = eVar.f37421b;
+        ThemeableLottieAnimationView lottieView = eVar.f37437b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         cq.g.c(lottieView, localImage.getStyles(), new String[]{"#280087", "#322A7E"}, new String[]{"#CBB1FF"}, new String[]{"#F1EBFF"});
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit v0(lp.e eVar) {
-        eVar.f37421b.setRepeatMode(1);
-        eVar.f37421b.setRepeatCount(-1);
-        eVar.f37421b.playAnimation();
-        return Unit.f33282a;
+        eVar.f37437b.setRepeatMode(1);
+        eVar.f37437b.setRepeatCount(-1);
+        eVar.f37437b.playAnimation();
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit w0(lp.e eVar) {
-        ThemeableLottieAnimationView lottieView = eVar.f37421b;
+        ThemeableLottieAnimationView lottieView = eVar.f37437b;
         Intrinsics.checkNotNullExpressionValue(lottieView, "lottieView");
         ViewGroup.LayoutParams layoutParams = lottieView.getLayoutParams();
         if (layoutParams != null) {
             layoutParams.height = (int) jp.h.a(44.0d);
             lottieView.setLayoutParams(layoutParams);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit x0(lp.f fVar, int i10) {
-        ImageView imageView = fVar.f37423b;
+        ImageView imageView = fVar.f37439b;
         Intrinsics.checkNotNullExpressionValue(imageView, "imageView");
         ViewGroup.LayoutParams layoutParams = imageView.getLayoutParams();
         if (layoutParams != null) {
             layoutParams.height = i10;
             imageView.setLayoutParams(layoutParams);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         throw new NullPointerException("null cannot be cast to non-null type android.view.ViewGroup.LayoutParams");
     }

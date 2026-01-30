@@ -15,7 +15,7 @@ public interface e {
         public static final class C0478a {
 
             /* renamed from: a  reason: collision with root package name */
-            private final CopyOnWriteArrayList f37186a = new CopyOnWriteArrayList();
+            private final CopyOnWriteArrayList f37202a = new CopyOnWriteArrayList();
 
             /* JADX INFO: Access modifiers changed from: private */
             /* renamed from: le.e$a$a$a  reason: collision with other inner class name */
@@ -23,21 +23,21 @@ public interface e {
             public static final class C0479a {
 
                 /* renamed from: a  reason: collision with root package name */
-                private final Handler f37187a;
+                private final Handler f37203a;
 
                 /* renamed from: b  reason: collision with root package name */
-                private final a f37188b;
+                private final a f37204b;
 
                 /* renamed from: c  reason: collision with root package name */
-                private boolean f37189c;
+                private boolean f37205c;
 
                 public C0479a(Handler handler, a aVar) {
-                    this.f37187a = handler;
-                    this.f37188b = aVar;
+                    this.f37203a = handler;
+                    this.f37204b = aVar;
                 }
 
                 public void d() {
-                    this.f37189c = true;
+                    this.f37205c = true;
                 }
             }
 
@@ -45,24 +45,24 @@ public interface e {
                 ne.a.e(handler);
                 ne.a.e(aVar);
                 d(aVar);
-                this.f37186a.add(new C0479a(handler, aVar));
+                this.f37202a.add(new C0479a(handler, aVar));
             }
 
             public void c(int i10, long j10, long j11) {
                 final int i11;
                 final long j12;
                 final long j13;
-                Iterator it = this.f37186a.iterator();
+                Iterator it = this.f37202a.iterator();
                 while (it.hasNext()) {
                     final C0479a c0479a = (C0479a) it.next();
-                    if (!c0479a.f37189c) {
+                    if (!c0479a.f37205c) {
                         i11 = i10;
                         j12 = j10;
                         j13 = j11;
-                        c0479a.f37187a.post(new Runnable() { // from class: le.d
+                        c0479a.f37203a.post(new Runnable() { // from class: le.d
                             @Override // java.lang.Runnable
                             public final void run() {
-                                e.a.C0478a.C0479a.this.f37188b.u(i11, j12, j13);
+                                e.a.C0478a.C0479a.this.f37204b.u(i11, j12, j13);
                             }
                         });
                     } else {
@@ -77,12 +77,12 @@ public interface e {
             }
 
             public void d(a aVar) {
-                Iterator it = this.f37186a.iterator();
+                Iterator it = this.f37202a.iterator();
                 while (it.hasNext()) {
                     C0479a c0479a = (C0479a) it.next();
-                    if (c0479a.f37188b == aVar) {
+                    if (c0479a.f37204b == aVar) {
                         c0479a.d();
-                        this.f37186a.remove(c0479a);
+                        this.f37202a.remove(c0479a);
                     }
                 }
             }

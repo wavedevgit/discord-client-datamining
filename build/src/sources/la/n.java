@@ -8,31 +8,31 @@ public interface n extends w, r8.c {
     public static class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public final Object f37024a;
+        public final Object f37040a;
 
         /* renamed from: b  reason: collision with root package name */
-        public final CloseableReference f37025b;
+        public final CloseableReference f37041b;
 
         /* renamed from: e  reason: collision with root package name */
-        public final b f37028e;
+        public final b f37044e;
 
         /* renamed from: g  reason: collision with root package name */
-        public int f37030g;
+        public int f37046g;
 
         /* renamed from: c  reason: collision with root package name */
-        public int f37026c = 0;
+        public int f37042c = 0;
 
         /* renamed from: d  reason: collision with root package name */
-        public boolean f37027d = false;
+        public boolean f37043d = false;
 
         /* renamed from: f  reason: collision with root package name */
-        public int f37029f = 0;
+        public int f37045f = 0;
 
         private a(Object obj, CloseableReference closeableReference, b bVar, int i10) {
-            this.f37024a = o8.j.g(obj);
-            this.f37025b = (CloseableReference) o8.j.g(CloseableReference.E(closeableReference));
-            this.f37028e = bVar;
-            this.f37030g = i10;
+            this.f37040a = o8.j.g(obj);
+            this.f37041b = (CloseableReference) o8.j.g(CloseableReference.E(closeableReference));
+            this.f37044e = bVar;
+            this.f37046g = i10;
         }
 
         public static a a(Object obj, CloseableReference closeableReference, int i10, b bVar) {

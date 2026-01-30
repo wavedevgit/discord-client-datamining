@@ -22,7 +22,7 @@ public interface g extends j$.time.temporal.k, Comparable {
             if (nVar != j$.time.temporal.a.INSTANT_SECONDS && nVar != j$.time.temporal.a.OFFSET_SECONDS) {
                 return s().i(nVar);
             }
-            return ((j$.time.temporal.a) nVar).f31633b;
+            return ((j$.time.temporal.a) nVar).f31649b;
         }
         return nVar.t(this);
     }
@@ -30,7 +30,7 @@ public interface g extends j$.time.temporal.k, Comparable {
     @Override // j$.time.temporal.TemporalAccessor
     default int g(n nVar) {
         if (nVar instanceof j$.time.temporal.a) {
-            int i10 = f.f31537a[((j$.time.temporal.a) nVar).ordinal()];
+            int i10 = f.f31553a[((j$.time.temporal.a) nVar).ordinal()];
             if (i10 != 1) {
                 if (i10 == 2) {
                     return n().getTotalSeconds();
@@ -45,7 +45,7 @@ public interface g extends j$.time.temporal.k, Comparable {
     @Override // j$.time.temporal.TemporalAccessor
     default long m(n nVar) {
         if (nVar instanceof j$.time.temporal.a) {
-            int i10 = f.f31537a[((j$.time.temporal.a) nVar).ordinal()];
+            int i10 = f.f31553a[((j$.time.temporal.a) nVar).ordinal()];
             if (i10 != 1) {
                 if (i10 == 2) {
                     return n().getTotalSeconds();
@@ -67,31 +67,31 @@ public interface g extends j$.time.temporal.k, Comparable {
 
     default j f() {
         l().f();
-        return k.f31542a;
+        return k.f31558a;
     }
 
     @Override // j$.time.temporal.k
     /* renamed from: k */
     default g c(l lVar) {
         f();
-        return i.r(k.f31542a, lVar.d(this));
+        return i.r(k.f31558a, lVar.d(this));
     }
 
     @Override // j$.time.temporal.TemporalAccessor
     default Object a(TemporalQuery temporalQuery) {
-        if (temporalQuery == o.f31649e || temporalQuery == o.f31645a) {
+        if (temporalQuery == o.f31665e || temporalQuery == o.f31661a) {
             return y();
         }
-        if (temporalQuery == o.f31648d) {
+        if (temporalQuery == o.f31664d) {
             return n();
         }
-        if (temporalQuery == o.f31651g) {
+        if (temporalQuery == o.f31667g) {
             return e();
         }
-        if (temporalQuery == o.f31646b) {
+        if (temporalQuery == o.f31662b) {
             f();
-            return k.f31542a;
-        } else if (temporalQuery == o.f31647c) {
+            return k.f31558a;
+        } else if (temporalQuery == o.f31663c) {
             return j$.time.temporal.b.NANOS;
         } else {
             return temporalQuery.queryFrom(this);
@@ -106,9 +106,9 @@ public interface g extends j$.time.temporal.k, Comparable {
     /* renamed from: o */
     default int compareTo(g gVar) {
         int compare = Long.compare(D(), gVar.D());
-        if (compare == 0 && (compare = e().f31517d - gVar.e().f31517d) == 0 && (compare = s().compareTo(gVar.s())) == 0 && (compare = y().r().compareTo(gVar.y().r())) == 0) {
+        if (compare == 0 && (compare = e().f31533d - gVar.e().f31533d) == 0 && (compare = s().compareTo(gVar.s())) == 0 && (compare = y().r().compareTo(gVar.y().r())) == 0) {
             f();
-            k kVar = k.f31542a;
+            k kVar = k.f31558a;
             gVar.f();
             return 0;
         }

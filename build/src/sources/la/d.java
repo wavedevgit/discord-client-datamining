@@ -5,30 +5,30 @@ import java.util.LinkedHashSet;
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f36994a;
+    private final int f37010a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final LinkedHashSet f36995b;
+    private final LinkedHashSet f37011b;
 
     public d(int i10) {
-        this.f36994a = i10;
-        this.f36995b = new LinkedHashSet(i10);
+        this.f37010a = i10;
+        this.f37011b = new LinkedHashSet(i10);
     }
 
     public final synchronized boolean a(Object obj) {
         try {
-            if (this.f36995b.size() == this.f36994a) {
-                LinkedHashSet linkedHashSet = this.f36995b;
+            if (this.f37011b.size() == this.f37010a) {
+                LinkedHashSet linkedHashSet = this.f37011b;
                 linkedHashSet.remove(linkedHashSet.iterator().next());
             }
-            this.f36995b.remove(obj);
+            this.f37011b.remove(obj);
         } catch (Throwable th2) {
             throw th2;
         }
-        return this.f36995b.add(obj);
+        return this.f37011b.add(obj);
     }
 
     public final synchronized boolean b(Object obj) {
-        return this.f36995b.contains(obj);
+        return this.f37011b.contains(obj);
     }
 }

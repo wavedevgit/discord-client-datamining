@@ -163,7 +163,7 @@ public final class m0 implements vm.k {
             /* renamed from: a */
             public final Object emit(mn.x xVar, Continuation continuation) {
                 Function1 function1;
-                if (Intrinsics.areEqual(xVar, x.b.f39337a)) {
+                if (Intrinsics.areEqual(xVar, x.b.f39353a)) {
                     Function1 function12 = this.f23241d.f23233f;
                     if (function12 != null) {
                         function12.invoke(new mn.e1());
@@ -171,7 +171,7 @@ public final class m0 implements vm.k {
                 } else if ((xVar instanceof x.a) && ((x.a) xVar).a() && (function1 = this.f23241d.f23233f) != null) {
                     function1.invoke(new mn.u0());
                 }
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
         }
 
@@ -203,12 +203,12 @@ public final class m0 implements vm.k {
                     return f10;
                 }
             }
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((c) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -248,7 +248,7 @@ public final class m0 implements vm.k {
                 or.b.f();
                 if (this.f23245d == 0) {
                     kotlin.c.b(obj);
-                    return kotlin.coroutines.jvm.internal.b.a(!Intrinsics.areEqual((mn.x) this.f23246e, x.e.f39340a));
+                    return kotlin.coroutines.jvm.internal.b.a(!Intrinsics.areEqual((mn.x) this.f23246e, x.e.f39356a));
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
@@ -256,7 +256,7 @@ public final class m0 implements vm.k {
             @Override // kotlin.jvm.functions.Function2
             /* renamed from: j */
             public final Object invoke(mn.x xVar, Continuation continuation) {
-                return ((a) create(xVar, continuation)).invokeSuspend(Unit.f33282a);
+                return ((a) create(xVar, continuation)).invokeSuspend(Unit.f33298a);
             }
         }
 
@@ -291,14 +291,14 @@ public final class m0 implements vm.k {
                 if (this.f23247d == 0) {
                     kotlin.c.b(obj);
                     ((x5.d.c.b.g) this.f23248e).b().invoke(this.f23249i.f23230c.b());
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+                return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
             }
         }
 
@@ -372,7 +372,7 @@ public final class m0 implements vm.k {
             L53:
                 return r0
             L54:
-                kotlin.Unit r7 = kotlin.Unit.f33282a
+                kotlin.Unit r7 = kotlin.Unit.f33298a
                 return r7
             */
             throw new UnsupportedOperationException("Method not decompiled: ep.m0.d.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -380,7 +380,7 @@ public final class m0 implements vm.k {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((d) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((d) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -432,14 +432,14 @@ public final class m0 implements vm.k {
                 if (function1 != null) {
                     function1.invoke(new mn.v0());
                 }
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -533,7 +533,7 @@ public final class m0 implements vm.k {
                     java.lang.Object r7 = r7.getValue()
                     boolean r7 = r7 instanceof mn.x.a
                     if (r7 == 0) goto L4d
-                    kotlin.Unit r7 = kotlin.Unit.f33282a
+                    kotlin.Unit r7 = kotlin.Unit.f33298a
                     return r7
                 L4d:
                     ep.m0 r7 = r6.f23259i
@@ -556,7 +556,7 @@ public final class m0 implements vm.k {
                     r0.<init>()
                     r7.invoke(r0)
                 L77:
-                    kotlin.Unit r7 = kotlin.Unit.f33282a
+                    kotlin.Unit r7 = kotlin.Unit.f33298a
                     return r7
                 */
                 throw new UnsupportedOperationException("Method not decompiled: ep.m0.f.a.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -564,7 +564,7 @@ public final class m0 implements vm.k {
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
             }
         }
 
@@ -618,12 +618,12 @@ public final class m0 implements vm.k {
             if (e10 != null) {
                 ((x5.d.c.b.C0311b) bVar2).d().invoke(e10);
             }
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((f) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((f) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -682,12 +682,12 @@ public final class m0 implements vm.k {
             if (e10 != null && !(e10 instanceof mn.q0)) {
                 cVar.h().invoke(e10);
             }
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((g) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((g) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -745,12 +745,12 @@ public final class m0 implements vm.k {
             if (e10 != null) {
                 ((x5.d.c.b.C0313d) bVar2).c().invoke(e10);
             }
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((h) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((h) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -797,25 +797,25 @@ public final class m0 implements vm.k {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit B(x5.d.c.b bVar) {
         ((x5.d.c.b.e) bVar).b().invoke();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit C(x5.d.c.b bVar) {
         ((x5.d.c.b.C0312c) bVar).c().invoke();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit D(x5.d.c cVar) {
         cVar.g().invoke();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit E(x5.d.c cVar) {
         cVar.i().invoke();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private static final void F(androidx.lifecycle.j jVar, m0 m0Var, x5.d.c.b bVar) {
@@ -922,13 +922,13 @@ public final class m0 implements vm.k {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit x(androidx.lifecycle.j jVar, m0 m0Var, x5.d.c.b bVar) {
         F(jVar, m0Var, bVar);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit y(x5.d.c.b bVar) {
         ((x5.d.c.b.f) bVar).b().invoke();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1135,7 +1135,7 @@ public final class m0 implements vm.k {
         StepStyles.SelfieStepStyle l10 = rendering.l();
         if (l10 != null) {
             t(l10);
-            int c10 = androidx.core.content.a.c(this.f23229b.getRoot().getContext(), jp.j.f32303a);
+            int c10 = androidx.core.content.a.c(this.f23229b.getRoot().getContext(), jp.j.f32319a);
             this.f23229b.f25427l.A(l10);
             sp.c.a(viewEnvironment, c10);
         }

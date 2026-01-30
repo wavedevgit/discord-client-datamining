@@ -4,24 +4,23 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'v': '5.9.4',
         'fr': 24,
         'ip': 0,
-        'op': 52,
+        'op': 73,
         'w': 900,
         'h': 600,
-        'nm': 'DIS_Nitro_Gifcard_003_Chest_Idle',
+        'nm': 'DIS_Nitro_Gifcard_004_Coffee_Loop',
         'ddd': 0
     };
-    var5 = 24;
-    var6 = 0;
+    var15 = 0;
     var2 = {
         'id': 'comp_0',
-        'nm': 'DIS_Nitro_Gifcard_003',
+        'nm': 'Nitro_Logo',
         'fr': 24
     };
     var3 = {
         'ddd': 0,
-        'ind': 2,
+        'ind': 1,
         'ty': 4,
-        'nm': '2',
+        'nm': 'Layer 1',
         'sr': 1,
         'ks': null,
         'ao': 0,
@@ -32,8 +31,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'ct': 1,
         'bm': 0
     };
-    var30 = 2;
-    var9 = 1;
+    var11 = 1;
+    var31 = 4;
     var0 = {};
     var4 = {
         'a': 0,
@@ -41,7 +40,6 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'ix': 11
     };
     var0.o = var4;
-    var15 = 10;
     var4 = {
         'a': 0,
         'k': 0,
@@ -54,8 +52,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'ix': 2,
         'l': 2
     };
-    var7 = [469.5, 179.5, 0];
-    var4.k = var7;
+    var5 = [71.837, 196.159, 0];
+    var4.k = var5;
     var0.p = var4;
     var4 = {
         'a': 0,
@@ -63,8 +61,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'ix': 1,
         'l': 2
     };
-    var7 = [0, 0, 0];
-    var4.k = var7;
+    var5 = [431.414, 171.018, 0];
+    var4.k = var5;
     var0.a = var4;
     var4 = {
         'a': 0,
@@ -72,23 +70,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'ix': 6,
         'l': 2
     };
-    var7 = [100, 100, 100];
-    var4.k = var7;
-    var18 = 6;
+    var5 = [1086, 1086, 100];
+    var4.k = var5;
+    var44 = 6;
     var0.s = var4;
     var3.ks = var0;
     var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var11 = {
         'ty': 'gr',
         'it': null,
         'nm': 'Group 1',
@@ -99,7 +86,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'mn': 'ADBE Vector Group',
         'hd': false
     };
-    var7 = {
+    var5 = {
         'ind': 0,
         'ty': 'sh',
         'ix': 1,
@@ -113,67 +100,57 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'k': null,
         'ix': 2
     };
-    var8 = {};
-    var12 = [0];
-    var20 = -8.305;
-    var12[1] = var20;
-    var10 = new Array(4);
-    var10[0] = var12;
-    var12 = [8.359, 0];
-    var10[1] = var12;
-    var12 = [0, 8.305];
-    var10[2] = var12;
-    var12 = new Array(2);
-    var22 = -8.359;
-    var12[0] = var22;
-    var12[1] = var6;
-    var10[3] = var12;
-    var8.i = var10;
-    var10 = new Array(4);
-    var12 = [0, 8.305];
-    var10[0] = var12;
-    var12 = new Array(2);
-    var12[0] = var22;
-    var12[1] = var6;
-    var10[1] = var12;
-    var12 = [0];
-    var12[1] = var20;
-    var10[2] = var12;
-    var12 = [8.359, 0];
-    var10[3] = var12;
-    var8.o = var10;
-    var12 = new Array(2);
-    var10 = -402.56;
-    var12[0] = var10;
-    var14 = 201.792;
-    var12[1] = var14;
-    var10 = new Array(4);
-    var10[0] = var12;
-    var12 = new Array(2);
-    var13 = -417.695;
-    var12[0] = var13;
-    var16 = 216.83;
-    var12[1] = var16;
-    var10[1] = var12;
-    var12 = new Array(2);
-    var16 = -432.831;
-    var12[0] = var16;
-    var12[1] = var14;
-    var10[2] = var12;
-    var12 = new Array(2);
-    var12[0] = var13;
-    var13 = 186.753;
-    var12[1] = var13;
-    var10[3] = var12;
-    var8.v = var10;
-    var10 = true;
-    var8.c = var10;
-    var0.k = var8;
-    var7.ks = var0;
-    var17 = false;
+    var6 = {};
+    var7 = new Array(4);
+    var8 = [0, 0];
+    var7[0] = var8;
+    var8 = new Array(2);
+    var62 = -0.226;
+    var8[0] = var62;
+    var21 = 0.091;
+    var8[1] = var21;
+    var7[1] = var8;
+    var8 = [0, 0];
+    var7[2] = var8;
+    var8 = [0, 0];
+    var7[3] = var8;
+    var6.i = var7;
+    var7 = new Array(4);
+    var8 = [0.226, 0.091];
+    var7[0] = var8;
+    var8 = [0, 0];
+    var7[1] = var8;
+    var8 = [0, 0];
+    var7[2] = var8;
+    var8 = [0, 0];
+    var7[3] = var8;
+    var6.o = var7;
+    var8 = new Array(2);
+    var9 = -0.356;
+    var8[0] = var9;
+    var10 = -0.637;
+    var8[1] = var10;
+    var7 = new Array(4);
+    var7[0] = var8;
+    var8 = [0.356];
+    var8[1] = var10;
+    var7[1] = var8;
+    var8 = [0.356, 0.637];
+    var7[2] = var8;
+    var8 = new Array(2);
+    var8[0] = var9;
+    var9 = 0.637;
+    var8[1] = var9;
+    var7[3] = var8;
+    var6.v = var7;
+    var14 = true;
+    var6.c = var14;
+    var0.k = var6;
+    var5.ks = var0;
+    var9 = false;
     var0 = new Array(3);
-    var0[0] = var7;
-    var7 = {
+    var0[0] = var5;
+    var5 = {
         'ty': 'fl',
         'c': null,
         'o': null,
@@ -183,159 +160,93 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'mn': 'ADBE Vector Graphic - Fill',
         'hd': false
     };
-    var8 = {
+    var6 = {
         'a': 0,
         'k': null,
         'ix': 4
     };
-    var12 = [0.937254905701, 0.921568632126, 0.439215689898, 1];
-    var8.k = var12;
-    var7.c = var8;
-    var45 = 5;
-    var8 = {
+    var7 = [1, 1, 1, 1];
+    var6.k = var7;
+    var5.c = var6;
+    var33 = 5;
+    var6 = {
         'a': 0,
         'k': 100,
         'ix': 5
     };
-    var7.o = var8;
-    var0[1] = var7;
-    var12 = {};
+    var5.o = var6;
+    var0[1] = var5;
+    var5 = {};
     var8 = 'tr';
-    var12.ty = var8;
-    var7 = {
+    var5.ty = var8;
+    var6 = {
         'a': 0,
         'k': null,
         'ix': 2
     };
-    var13 = [0, 0];
-    var7.k = var13;
-    var12.p = var7;
-    var7 = {
+    var7 = [441.51, 173.187];
+    var6.k = var7;
+    var5.p = var6;
+    var6 = {
         'a': 0,
         'k': null,
         'ix': 1
     };
-    var13 = [0, 0];
-    var7.k = var13;
-    var12.a = var7;
-    var7 = {
+    var7 = [0, 0];
+    var6.k = var7;
+    var5.a = var6;
+    var6 = {
         'a': 0,
         'k': null,
         'ix': 3
     };
-    var13 = [100, 100];
-    var7.k = var13;
-    var21 = 3;
-    var12.s = var7;
-    var7 = {
+    var7 = [100, 100];
+    var6.k = var7;
+    var13 = 3;
+    var5.s = var6;
+    var6 = {
         'a': 0,
         'k': 0,
         'ix': 6
     };
-    var12.r = var7;
-    var35 = 7;
-    var7 = {
+    var5.r = var6;
+    var39 = 7;
+    var6 = {
         'a': 0,
         'k': 100,
         'ix': 7
     };
-    var12.o = var7;
-    var7 = {
+    var5.o = var6;
+    var6 = {
         'a': 0,
         'k': 0,
         'ix': 4
     };
-    var12.sk = var7;
-    var7 = {
+    var5.sk = var6;
+    var6 = {
         'a': 0,
         'k': 0,
         'ix': 5
     };
-    var12.sa = var7;
+    var5.sa = var6;
     var7 = 'Transform';
-    var12.nm = var7;
-    var0[2] = var12;
-    var11.it = var0;
-    var0 = new Array(2);
-    var0[0] = var11;
-    var11 = {};
-    var11.ty = var8;
-    var12 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var13 = [0, 0];
-    var12.k = var13;
-    var11.p = var12;
-    var12 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var13 = [0, 0];
-    var12.k = var13;
-    var11.a = var12;
-    var12 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var13 = [100, 100];
-    var12.k = var13;
-    var11.s = var12;
-    var12 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var11.r = var12;
-    var12 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var11.o = var12;
-    var12 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var11.sk = var12;
-    var12 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var11.sa = var12;
-    var11.nm = var7;
-    var0[1] = var11;
+    var5.nm = var7;
+    var0[2] = var5;
     var4.it = var0;
-    var0 = new Array(31);
+    var0 = new Array(9);
     var0[0] = var4;
     var4 = {
         'ty': 'gr',
         'it': null,
         'nm': 'Group 2',
-        'np': 1,
+        'np': 2,
         'cix': 2,
         'bm': 0,
         'ix': 2,
         'mn': 'ADBE Vector Group',
         'hd': false
     };
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var13 = {
+    var6 = {
         'ind': 0,
         'ty': 'sh',
         'ix': 1,
@@ -344,68 +255,61 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'mn': 'ADBE Vector Shape - Group',
         'hd': false
     };
-    var11 = {
+    var5 = {
         'a': 0,
         'k': null,
         'ix': 2
     };
-    var14 = {};
-    var19 = [0];
-    var19[1] = var20;
-    var16 = new Array(4);
-    var16[0] = var19;
-    var19 = [8.359, 0];
-    var16[1] = var19;
-    var19 = [0, 8.305];
-    var16[2] = var19;
-    var19 = new Array(2);
-    var19[0] = var22;
-    var19[1] = var6;
-    var16[3] = var19;
-    var14.i = var16;
-    var16 = new Array(4);
-    var19 = [0, 8.305];
-    var16[0] = var19;
-    var19 = new Array(2);
-    var19[0] = var22;
-    var19[1] = var6;
-    var16[1] = var19;
-    var19 = [0];
-    var19[1] = var20;
-    var16[2] = var19;
-    var19 = [8.359, 0];
-    var16[3] = var19;
-    var14.o = var16;
-    var19 = new Array(2);
-    var16 = -367.127;
-    var19[0] = var16;
-    var24 = 20.113;
-    var19[1] = var24;
-    var16 = new Array(4);
-    var16[0] = var19;
-    var19 = new Array(2);
-    var23 = -382.262;
-    var19[0] = var23;
-    var25 = 35.151;
-    var19[1] = var25;
-    var16[1] = var19;
-    var19 = new Array(2);
-    var25 = -397.397;
-    var19[0] = var25;
-    var19[1] = var24;
-    var16[2] = var19;
-    var19 = new Array(2);
-    var19[0] = var23;
-    var23 = 5.074;
-    var19[1] = var23;
-    var16[3] = var19;
-    var14.v = var16;
-    var14.c = var10;
-    var11.k = var14;
-    var13.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var13;
-    var13 = {
+    var10 = {};
+    var16 = new Array(2);
+    var17 = -0.195;
+    var16[0] = var17;
+    var16[1] = var15;
+    var12 = new Array(4);
+    var12[0] = var16;
+    var16 = [0, 0.171];
+    var12[1] = var16;
+    var16 = [0.195, 0];
+    var12[2] = var16;
+    var16 = [0];
+    var18 = -0.171;
+    var16[1] = var18;
+    var12[3] = var16;
+    var10.i = var12;
+    var12 = new Array(4);
+    var16 = [0.195, 0];
+    var12[0] = var16;
+    var16 = [0];
+    var16[1] = var18;
+    var12[1] = var16;
+    var16 = new Array(2);
+    var16[0] = var17;
+    var16[1] = var15;
+    var12[2] = var16;
+    var16 = [0, 0.171];
+    var12[3] = var16;
+    var10.o = var12;
+    var12 = new Array(4);
+    var16 = [0, 0.31];
+    var12[0] = var16;
+    var16 = [0.353, 0];
+    var12[1] = var16;
+    var16 = [0];
+    var17 = -0.31;
+    var16[1] = var17;
+    var12[2] = var16;
+    var16 = new Array(2);
+    var17 = -0.353;
+    var16[0] = var17;
+    var16[1] = var15;
+    var12[3] = var16;
+    var10.v = var12;
+    var10.c = var14;
+    var5.k = var10;
+    var6.ks = var5;
+    var5 = new Array(3);
+    var5[0] = var6;
+    var6 = {
         'ty': 'fl',
         'c': null,
         'o': null,
@@ -415,153 +319,87 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'mn': 'ADBE Vector Graphic - Fill',
         'hd': false
     };
-    var14 = {
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 4
     };
-    var16 = [0.937254905701, 0.921568632126, 0.439215689898, 1];
-    var14.k = var16;
-    var13.c = var14;
-    var14 = {
+    var12 = [1, 1, 1, 1];
+    var10.k = var12;
+    var6.c = var10;
+    var10 = {
         'a': 0,
         'k': 100,
         'ix': 5
     };
-    var13.o = var14;
-    var11[1] = var13;
-    var13 = {};
-    var13.ty = var8;
-    var14 = {
+    var6.o = var10;
+    var5[1] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 2
     };
-    var16 = [0, 0];
-    var14.k = var16;
-    var13.p = var14;
-    var14 = {
+    var12 = [441.506, 172.026];
+    var10.k = var12;
+    var6.p = var10;
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 1
     };
-    var16 = [0, 0];
-    var14.k = var16;
-    var13.a = var14;
-    var14 = {
+    var12 = [0, 0];
+    var10.k = var12;
+    var6.a = var10;
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 3
     };
-    var16 = [100, 100];
-    var14.k = var16;
-    var13.s = var14;
-    var14 = {
+    var12 = [100, 100];
+    var10.k = var12;
+    var6.s = var10;
+    var10 = {
         'a': 0,
         'k': 0,
         'ix': 6
     };
-    var13.r = var14;
-    var14 = {
+    var6.r = var10;
+    var10 = {
         'a': 0,
         'k': 100,
         'ix': 7
     };
-    var13.o = var14;
-    var14 = {
+    var6.o = var10;
+    var10 = {
         'a': 0,
         'k': 0,
         'ix': 4
     };
-    var13.sk = var14;
-    var14 = {
+    var6.sk = var10;
+    var10 = {
         'a': 0,
         'k': 0,
         'ix': 5
     };
-    var13.sa = var14;
-    var13.nm = var7;
-    var11[2] = var13;
-    var12.it = var11;
-    var11 = new Array(2);
-    var11[0] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var14 = [0, 0];
-    var13.k = var14;
-    var12.p = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var14 = [0, 0];
-    var13.k = var14;
-    var12.a = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var14 = [100, 100];
-    var13.k = var14;
-    var12.s = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var13;
-    var13 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var13;
-    var12.nm = var7;
-    var11[1] = var12;
-    var4.it = var11;
+    var6.sa = var10;
+    var6.nm = var7;
+    var5[2] = var6;
+    var4.it = var5;
     var0[1] = var4;
     var4 = {
         'ty': 'gr',
         'it': null,
         'nm': 'Group 3',
-        'np': 1,
+        'np': 4,
         'cix': 2,
         'bm': 0,
         'ix': 3,
         'mn': 'ADBE Vector Group',
         'hd': false
     };
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var13 = {
+    var6 = {
         'ind': 0,
         'ty': 'sh',
         'ix': 1,
@@ -570,68 +408,356 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'mn': 'ADBE Vector Shape - Group',
         'hd': false
     };
-    var11 = {
+    var5 = {
         'a': 0,
         'k': null,
         'ix': 2
     };
-    var14 = {};
-    var19 = [0];
-    var19[1] = var20;
-    var16 = new Array(4);
+    var10 = {};
+    var12 = new Array(4);
+    var16 = [0.266, 0];
+    var12[0] = var16;
+    var16 = [0, 0.278];
+    var12[1] = var16;
+    var16 = new Array(2);
+    var19 = -0.266;
     var16[0] = var19;
-    var19 = [8.359, 0];
-    var16[1] = var19;
-    var19 = [0, 8.305];
-    var16[2] = var19;
+    var16[1] = var15;
+    var12[2] = var16;
+    var16 = [0.007];
+    var29 = -0.284;
+    var16[1] = var29;
+    var12[3] = var16;
+    var10.i = var12;
+    var16 = new Array(2);
+    var94 = -0.26;
+    var16[0] = var94;
+    var16[1] = var15;
+    var12 = new Array(4);
+    var12[0] = var16;
+    var16 = [0];
+    var18 = -0.278;
+    var16[1] = var18;
+    var12[1] = var16;
+    var16 = [0.266, 0];
+    var12[2] = var16;
+    var16 = [0, 0.284];
+    var12[3] = var16;
+    var10.o = var12;
+    var12 = new Array(4);
+    var16 = [0.872, 0.705];
+    var12[0] = var16;
+    var16 = [0.4, 0.194];
+    var12[1] = var16;
+    var16 = [0.872];
+    var59 = -0.323;
+    var16[1] = var59;
+    var12[2] = var16;
+    var16 = [1.345, 0.194];
+    var12[3] = var16;
+    var10.v = var12;
+    var10.c = var14;
+    var5.k = var10;
+    var6.ks = var5;
+    var5 = new Array(5);
+    var5[0] = var6;
+    var6 = {
+        'ind': 1,
+        'ty': 'sh',
+        'ix': 2,
+        'ks': null,
+        'nm': 'Path 2',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var10 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var12 = {};
+    var16 = new Array(4);
+    var17 = [0.266, 0];
+    var16[0] = var17;
+    var17 = [0, 0.278];
+    var16[1] = var17;
+    var17 = new Array(2);
+    var17[0] = var19;
+    var17[1] = var15;
+    var16[2] = var17;
+    var17 = [0];
+    var17[1] = var29;
+    var16[3] = var17;
+    var12.i = var16;
+    var17 = new Array(2);
+    var17[0] = var94;
+    var17[1] = var15;
+    var16 = new Array(4);
+    var16[0] = var17;
+    var17 = [0];
+    var17[1] = var18;
+    var16[1] = var17;
+    var17 = [0.266, 0];
+    var16[2] = var17;
+    var17 = [0, 0.284];
+    var16[3] = var17;
+    var12.o = var16;
+    var17 = new Array(2);
+    var78 = -0.885;
+    var17[0] = var78;
+    var16 = 0.705;
+    var17[1] = var16;
+    var16 = new Array(4);
+    var16[0] = var17;
+    var17 = new Array(2);
+    var18 = -1.364;
+    var17[0] = var18;
+    var18 = 0.194;
+    var17[1] = var18;
+    var16[1] = var17;
+    var17 = new Array(2);
+    var19 = -0.891;
+    var17[0] = var19;
+    var17[1] = var59;
+    var16[2] = var17;
+    var17 = new Array(2);
+    var19 = -0.412;
+    var17[0] = var19;
+    var17[1] = var18;
+    var16[3] = var17;
+    var12.v = var16;
+    var12.c = var14;
+    var10.k = var12;
+    var6.ks = var10;
+    var5[1] = var6;
+    var6 = {
+        'ind': 2,
+        'ty': 'sh',
+        'ix': 3,
+        'ks': null,
+        'nm': 'Path 3',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var10 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var17 = {};
+    var18 = new Array(16);
+    var12 = [0.599, 0.853];
+    var18[0] = var12;
+    var12 = [0.379, 0.065];
+    var18[1] = var12;
+    var12 = [0.04];
+    var36 = -0.097;
+    var12[1] = var36;
+    var18[2] = var12;
+    var12 = [0.399];
+    var60 = -0.058;
+    var12[1] = var60;
+    var18[3] = var12;
+    var12 = [0.053, 0.091];
+    var18[4] = var12;
+    var12 = [0.353];
+    var30 = -0.155;
+    var12[1] = var30;
+    var18[5] = var12;
+    var12 = new Array(2);
+    var51 = -0.093;
+    var12[0] = var51;
+    var16 = -0.957;
+    var12[1] = var16;
+    var18[6] = var12;
+    var12 = new Array(2);
+    var16 = -0.479;
+    var12[0] = var16;
+    var42 = -0.142;
+    var12[1] = var42;
+    var18[7] = var12;
     var19 = new Array(2);
+    var12 = -0.08;
+    var19[0] = var12;
+    var58 = 0.155;
+    var19[1] = var58;
+    var18[8] = var19;
+    var19 = [0.146, 0.078];
+    var18[9] = var19;
+    var19 = new Array(2);
+    var20 = -0.04;
+    var19[0] = var20;
+    var65 = 0.026;
+    var19[1] = var65;
+    var18[10] = var19;
+    var19 = new Array(2);
+    var22 = -0.852;
     var19[0] = var22;
-    var19[1] = var6;
-    var16[3] = var19;
-    var14.i = var16;
-    var16 = new Array(4);
-    var19 = [0, 8.305];
-    var16[0] = var19;
+    var22 = 0.388;
+    var19[1] = var22;
+    var18[11] = var19;
     var19 = new Array(2);
+    var19[0] = var20;
+    var50 = -0.019;
+    var19[1] = var50;
+    var18[12] = var19;
+    var19 = [0.16];
+    var47 = -0.052;
+    var19[1] = var47;
+    var18[13] = var19;
+    var19 = new Array(2);
+    var27 = -0.106;
+    var19[0] = var27;
+    var19[1] = var42;
+    var18[14] = var19;
+    var19 = new Array(2);
+    var57 = -0.406;
+    var19[0] = var57;
+    var22 = 0.291;
+    var19[1] = var22;
+    var18[15] = var19;
+    var17.i = var18;
+    var19 = new Array(2);
+    var18 = -0.346;
+    var19[0] = var18;
+    var69 = -0.149;
+    var19[1] = var69;
+    var18 = new Array(16);
+    var18[0] = var19;
+    var19 = new Array(2);
+    var102 = -0.053;
+    var19[0] = var102;
+    var19[1] = var21;
+    var18[1] = var19;
+    var19 = new Array(2);
+    var22 = -0.399;
     var19[0] = var22;
-    var19[1] = var6;
-    var16[1] = var19;
-    var19 = [0];
+    var19[1] = var60;
+    var18[2] = var19;
+    var19 = new Array(2);
+    var19[0] = var20;
+    var19[1] = var36;
+    var18[3] = var19;
+    var19 = new Array(2);
+    var20 = -0.373;
+    var19[0] = var20;
+    var70 = 0.065;
+    var19[1] = var70;
+    var18[4] = var19;
+    var19 = new Array(2);
+    var20 = -0.685;
+    var19[0] = var20;
+    var20 = 0.989;
     var19[1] = var20;
-    var16[2] = var19;
-    var19 = [8.359, 0];
-    var16[3] = var19;
-    var14.o = var16;
+    var18[5] = var19;
+    var19 = [0.406, 0.291];
+    var18[6] = var19;
+    var19 = [0.106];
+    var19[1] = var42;
+    var18[7] = var19;
     var19 = new Array(2);
-    var16 = -421.358;
-    var19[0] = var16;
-    var24 = -55.633;
-    var19[1] = var24;
-    var16 = new Array(4);
-    var16[0] = var19;
-    var19 = new Array(2);
-    var23 = -436.493;
-    var19[0] = var23;
-    var25 = -40.595;
-    var19[1] = var25;
-    var16[1] = var19;
-    var19 = new Array(2);
-    var25 = -451.628;
-    var19[0] = var25;
-    var19[1] = var24;
-    var16[2] = var19;
-    var19 = new Array(2);
-    var19[0] = var23;
-    var23 = -70.671;
+    var41 = -0.153;
+    var19[0] = var41;
+    var19[1] = var60;
+    var18[8] = var19;
+    var19 = [0.04];
+    var23 = -0.026;
     var19[1] = var23;
-    var16[3] = var19;
-    var14.v = var16;
-    var14.c = var10;
-    var11.k = var14;
-    var13.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var13;
-    var13 = {
+    var18[9] = var19;
+    var19 = [0.845, 0.388];
+    var18[10] = var19;
+    var19 = [0.033, 0.026];
+    var18[11] = var19;
+    var19 = new Array(2);
+    var38 = -0.146;
+    var19[0] = var38;
+    var20 = 0.084;
+    var19[1] = var20;
+    var18[12] = var19;
+    var19 = [0.08, 0.155];
+    var18[13] = var19;
+    var19 = [0.479];
+    var19[1] = var42;
+    var18[14] = var19;
+    var19 = [0.106];
+    var20 = -1.106;
+    var19[1] = var20;
+    var18[15] = var19;
+    var17.o = var18;
+    var19 = [1.831];
+    var18 = -1.623;
+    var19[1] = var18;
+    var18 = new Array(16);
+    var18[0] = var19;
+    var19 = [0.739];
+    var20 = -1.946;
+    var19[1] = var20;
+    var18[1] = var19;
+    var19 = [0.6];
+    var22 = -1.668;
+    var19[1] = var22;
+    var18[2] = var19;
+    var19 = new Array(2);
+    var98 = -0.612;
+    var19[0] = var98;
+    var19[1] = var22;
+    var18[3] = var19;
+    var19 = new Array(2);
+    var22 = -0.751;
+    var19[0] = var22;
+    var19[1] = var20;
+    var18[4] = var19;
+    var19 = new Array(2);
+    var20 = -1.843;
+    var19[0] = var20;
+    var20 = -1.616;
+    var19[1] = var20;
+    var18[5] = var19;
+    var19 = new Array(2);
+    var20 = -2.622;
+    var19[0] = var20;
+    var20 = 1.293;
+    var19[1] = var20;
+    var18[6] = var19;
+    var19 = new Array(2);
+    var22 = -1.284;
+    var19[0] = var22;
+    var22 = 1.946;
+    var19[1] = var22;
+    var18[7] = var19;
+    var19 = new Array(2);
+    var22 = -0.998;
+    var19[0] = var22;
+    var22 = 1.5;
+    var19[1] = var22;
+    var18[8] = var19;
+    var19 = new Array(2);
+    var22 = -1.45;
+    var19[0] = var22;
+    var19[1] = var20;
+    var18[9] = var19;
+    var19 = new Array(2);
+    var20 = -1.337;
+    var19[0] = var20;
+    var20 = 1.215;
+    var19[1] = var20;
+    var18[10] = var19;
+    var19 = [1.338, 1.215];
+    var18[11] = var19;
+    var19 = [1.451, 1.293];
+    var18[12] = var19;
+    var19 = [0.999, 1.5];
+    var18[13] = var19;
+    var19 = [1.285, 1.946];
+    var18[14] = var19;
+    var19 = [2.623, 1.293];
+    var18[15] = var19;
+    var17.v = var18;
+    var17.c = var14;
+    var10.k = var17;
+    var6.ks = var10;
+    var5[2] = var6;
+    var6 = {
         'ty': 'fl',
         'c': null,
         'o': null,
@@ -641,153 +767,87 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'mn': 'ADBE Vector Graphic - Fill',
         'hd': false
     };
-    var14 = {
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 4
     };
-    var16 = [0.937254905701, 0.921568632126, 0.439215689898, 1];
-    var14.k = var16;
-    var13.c = var14;
-    var14 = {
+    var17 = [1, 1, 1, 1];
+    var10.k = var17;
+    var6.c = var10;
+    var10 = {
         'a': 0,
         'k': 100,
         'ix': 5
     };
-    var13.o = var14;
-    var11[1] = var13;
-    var13 = {};
-    var13.ty = var8;
-    var14 = {
+    var6.o = var10;
+    var5[3] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 2
     };
-    var16 = [0, 0];
-    var14.k = var16;
-    var13.p = var14;
-    var14 = {
+    var17 = [434.059, 172.964];
+    var10.k = var17;
+    var6.p = var10;
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 1
     };
-    var16 = [0, 0];
-    var14.k = var16;
-    var13.a = var14;
-    var14 = {
+    var17 = [0, 0];
+    var10.k = var17;
+    var6.a = var10;
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 3
     };
-    var16 = [100, 100];
-    var14.k = var16;
-    var13.s = var14;
-    var14 = {
+    var17 = [100, 100];
+    var10.k = var17;
+    var6.s = var10;
+    var10 = {
         'a': 0,
         'k': 0,
         'ix': 6
     };
-    var13.r = var14;
-    var14 = {
+    var6.r = var10;
+    var10 = {
         'a': 0,
         'k': 100,
         'ix': 7
     };
-    var13.o = var14;
-    var14 = {
+    var6.o = var10;
+    var10 = {
         'a': 0,
         'k': 0,
         'ix': 4
     };
-    var13.sk = var14;
-    var14 = {
+    var6.sk = var10;
+    var10 = {
         'a': 0,
         'k': 0,
         'ix': 5
     };
-    var13.sa = var14;
-    var13.nm = var7;
-    var11[2] = var13;
-    var12.it = var11;
-    var11 = new Array(2);
-    var11[0] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var14 = [0, 0];
-    var13.k = var14;
-    var12.p = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var14 = [0, 0];
-    var13.k = var14;
-    var12.a = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var14 = [100, 100];
-    var13.k = var14;
-    var12.s = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var13;
-    var13 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var13;
-    var12.nm = var7;
-    var11[1] = var12;
-    var4.it = var11;
+    var6.sa = var10;
+    var6.nm = var7;
+    var5[4] = var6;
+    var4.it = var5;
     var0[2] = var4;
     var4 = {
         'ty': 'gr',
         'it': null,
         'nm': 'Group 4',
-        'np': 1,
+        'np': 3,
         'cix': 2,
         'bm': 0,
         'ix': 4,
         'mn': 'ADBE Vector Group',
         'hd': false
     };
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var13 = {
+    var6 = {
         'ind': 0,
         'ty': 'sh',
         'ix': 1,
@@ -796,68 +856,276 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'mn': 'ADBE Vector Shape - Group',
         'hd': false
     };
-    var11 = {
+    var5 = {
         'a': 0,
         'k': null,
         'ix': 2
     };
-    var14 = {};
-    var19 = [0];
-    var19[1] = var20;
-    var16 = new Array(4);
-    var16[0] = var19;
-    var19 = [8.359, 0];
-    var16[1] = var19;
-    var19 = [0, 8.305];
-    var16[2] = var19;
+    var10 = {};
+    var17 = new Array(2);
+    var17[0] = var12;
+    var64 = 0.071;
+    var17[1] = var64;
+    var18 = new Array(7);
+    var18[0] = var17;
+    var17 = [0.007, 0.097];
+    var18[1] = var17;
+    var17 = [0.066, 0.065];
+    var18[2] = var17;
+    var17 = [0.173];
+    var79 = -0.136;
+    var17[1] = var79;
+    var18[3] = var17;
+    var17 = new Array(2);
+    var52 = -0.007;
+    var17[0] = var52;
+    var17[1] = var36;
+    var18[4] = var17;
     var19 = new Array(2);
-    var19[0] = var22;
-    var19[1] = var6;
-    var16[3] = var19;
-    var14.i = var16;
-    var16 = new Array(4);
-    var19 = [0, 8.305];
-    var16[0] = var19;
+    var32 = -0.073;
+    var19[0] = var32;
+    var17 = -0.071;
+    var19[1] = var17;
+    var18[5] = var19;
     var19 = new Array(2);
-    var19[0] = var22;
-    var19[1] = var6;
-    var16[1] = var19;
-    var19 = [0];
-    var19[1] = var20;
-    var16[2] = var19;
-    var19 = [8.359, 0];
-    var16[3] = var19;
-    var14.o = var16;
-    var19 = new Array(2);
-    var16 = -417.441;
-    var19[0] = var16;
-    var22 = 83.924;
-    var19[1] = var22;
-    var16 = new Array(4);
-    var16[0] = var19;
-    var19 = new Array(2);
-    var20 = -432.577;
+    var20 = -0.107;
     var19[0] = var20;
-    var23 = 98.962;
-    var19[1] = var23;
-    var16[1] = var19;
+    var19[1] = var15;
+    var18[6] = var19;
+    var10.i = var18;
+    var19 = [0.073];
+    var19[1] = var17;
+    var18 = new Array(7);
+    var18[0] = var19;
+    var19 = [0];
+    var19[1] = var36;
+    var18[1] = var19;
     var19 = new Array(2);
-    var23 = -447.712;
-    var19[0] = var23;
+    var34 = -0.166;
+    var19[0] = var34;
+    var19[1] = var79;
+    var18[2] = var19;
+    var19 = new Array(2);
+    var19[0] = var32;
+    var19[1] = var64;
+    var18[3] = var19;
+    var19 = new Array(2);
+    var19[0] = var52;
+    var40 = 0.097;
+    var19[1] = var40;
+    var18[4] = var19;
+    var19 = [0.08, 0.071];
+    var18[5] = var19;
+    var19 = [0.113, 0.006];
+    var18[6] = var19;
+    var10.o = var18;
+    var18 = new Array(7);
+    var19 = [0.3, 0.413];
+    var18[0] = var19;
+    var19 = [0.406, 0.148];
+    var18[1] = var19;
+    var19 = [0.3];
+    var66 = -0.11;
+    var19[1] = var66;
+    var18[2] = var19;
+    var19 = new Array(2);
+    var37 = -0.279;
+    var19[0] = var37;
+    var19[1] = var66;
+    var18[3] = var19;
+    var19 = new Array(2);
+    var68 = -0.386;
+    var19[0] = var68;
+    var22 = 0.148;
     var19[1] = var22;
-    var16[2] = var19;
+    var18[4] = var19;
     var19 = new Array(2);
-    var19[0] = var20;
-    var20 = 68.885;
-    var19[1] = var20;
-    var16[3] = var19;
-    var14.v = var16;
-    var14.c = var10;
-    var11.k = var14;
-    var13.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var13;
-    var13 = {
+    var19[0] = var37;
+    var22 = 0.413;
+    var19[1] = var22;
+    var18[5] = var19;
+    var19 = [0.007, 0.517];
+    var18[6] = var19;
+    var10.v = var18;
+    var10.c = var14;
+    var5.k = var10;
+    var6.ks = var5;
+    var5 = new Array(4);
+    var5[0] = var6;
+    var6 = {
+        'ind': 1,
+        'ty': 'sh',
+        'ix': 2,
+        'ks': null,
+        'nm': 'Path 2',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var10 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var19 = {};
+    var18 = new Array(14);
+    var22 = [0, 0];
+    var18[0] = var22;
+    var22 = [0, 0];
+    var18[1] = var22;
+    var22 = [0, 0];
+    var18[2] = var22;
+    var22 = [0, 0];
+    var18[3] = var22;
+    var22 = [0.12];
+    var22[1] = var17;
+    var18[4] = var22;
+    var22 = [0.16, 0.006];
+    var18[5] = var22;
+    var22 = [0.126, 0.078];
+    var18[6] = var22;
+    var22 = [0.06, 0.129];
+    var18[7] = var22;
+    var22 = [0, 0.155];
+    var18[8] = var22;
+    var22 = new Array(2);
+    var25 = -0.066;
+    var22[0] = var25;
+    var43 = 0.142;
+    var22[1] = var43;
+    var18[9] = var22;
+    var22 = new Array(2);
+    var48 = -0.126;
+    var22[0] = var48;
+    var24 = 0.078;
+    var22[1] = var24;
+    var18[10] = var22;
+    var22 = new Array(2);
+    var22[0] = var41;
+    var22[1] = var15;
+    var18[11] = var22;
+    var22 = new Array(2);
+    var45 = -0.12;
+    var22[0] = var45;
+    var22[1] = var29;
+    var18[12] = var22;
+    var22 = [0, 0];
+    var18[13] = var22;
+    var19.i = var18;
+    var18 = new Array(14);
+    var22 = [0, 0];
+    var18[0] = var22;
+    var22 = [0, 0];
+    var18[1] = var22;
+    var22 = [0, 0];
+    var18[2] = var22;
+    var22 = new Array(2);
+    var22[0] = var102;
+    var61 = 0.129;
+    var22[1] = var61;
+    var18[3] = var22;
+    var22 = new Array(2);
+    var26 = -0.14;
+    var22[0] = var26;
+    var22[1] = var24;
+    var18[4] = var22;
+    var22 = new Array(2);
+    var22[0] = var38;
+    var35 = 0.006;
+    var22[1] = var35;
+    var18[5] = var22;
+    var22 = new Array(2);
+    var22[0] = var45;
+    var28 = -0.078;
+    var22[1] = var28;
+    var18[6] = var22;
+    var22 = new Array(2);
+    var22[0] = var25;
+    var22[1] = var42;
+    var18[7] = var22;
+    var22 = new Array(2);
+    var22[0] = var52;
+    var63 = -0.162;
+    var22[1] = var63;
+    var18[8] = var22;
+    var22 = [0.067];
+    var22[1] = var79;
+    var18[9] = var22;
+    var22 = [0.133];
+    var22[1] = var28;
+    var18[10] = var22;
+    var22 = [0.339, 0];
+    var18[11] = var22;
+    var22 = [0, 0];
+    var18[12] = var22;
+    var22 = [0, 0];
+    var18[13] = var22;
+    var19.o = var18;
+    var18 = [1.118];
+    var26 = -1.048;
+    var18[1] = var26;
+    var22 = new Array(14);
+    var22[0] = var18;
+    var18 = [1.118, 0.989];
+    var22[1] = var18;
+    var18 = [0.406, 0.989];
+    var22[2] = var18;
+    var18 = [0.406, 0.62];
+    var22[3] = var18;
+    var18 = [0.133, 0.937];
+    var22[4] = var18;
+    var18 = new Array(2);
+    var25 = -0.319;
+    var18[0] = var25;
+    var25 = 1.047;
+    var18[1] = var25;
+    var22[5] = var18;
+    var18 = new Array(2);
+    var25 = -0.738;
+    var18[0] = var25;
+    var25 = 0.931;
+    var18[1] = var25;
+    var22[6] = var18;
+    var25 = new Array(2);
+    var46 = -1.018;
+    var25[0] = var46;
+    var18 = 0.614;
+    var25[1] = var18;
+    var22[7] = var25;
+    var25 = new Array(2);
+    var49 = -1.118;
+    var25[0] = var49;
+    var49 = 0.161;
+    var25[1] = var49;
+    var22[8] = var25;
+    var25 = new Array(2);
+    var25[0] = var46;
+    var49 = -0.304;
+    var25[1] = var49;
+    var22[9] = var25;
+    var25 = new Array(2);
+    var46 = -0.718;
+    var25[0] = var46;
+    var46 = -0.627;
+    var25[1] = var46;
+    var22[10] = var25;
+    var25 = new Array(2);
+    var25[0] = var37;
+    var37 = -0.744;
+    var25[1] = var37;
+    var22[11] = var25;
+    var25 = [0.406];
+    var37 = -0.317;
+    var25[1] = var37;
+    var22[12] = var25;
+    var25 = [0.406];
+    var25[1] = var26;
+    var22[13] = var25;
+    var19.v = var22;
+    var19.c = var14;
+    var10.k = var19;
+    var6.ks = var10;
+    var5[1] = var6;
+    var6 = {
         'ty': 'fl',
         'c': null,
         'o': null,
@@ -867,153 +1135,87 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'mn': 'ADBE Vector Graphic - Fill',
         'hd': false
     };
-    var14 = {
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 4
     };
-    var16 = [0.937254905701, 0.921568632126, 0.439215689898, 1];
-    var14.k = var16;
-    var13.c = var14;
-    var14 = {
+    var19 = [1, 1, 1, 1];
+    var10.k = var19;
+    var6.c = var10;
+    var10 = {
         'a': 0,
         'k': 100,
         'ix': 5
     };
-    var13.o = var14;
-    var11[1] = var13;
-    var13 = {};
-    var13.ty = var8;
-    var14 = {
+    var6.o = var10;
+    var5[2] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 2
     };
-    var16 = [0, 0];
-    var14.k = var16;
-    var13.p = var14;
-    var14 = {
+    var19 = [451.435, 172.822];
+    var10.k = var19;
+    var6.p = var10;
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 1
     };
-    var16 = [0, 0];
-    var14.k = var16;
-    var13.a = var14;
-    var14 = {
+    var19 = [0, 0];
+    var10.k = var19;
+    var6.a = var10;
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 3
     };
-    var16 = [100, 100];
-    var14.k = var16;
-    var13.s = var14;
-    var14 = {
+    var19 = [100, 100];
+    var10.k = var19;
+    var6.s = var10;
+    var10 = {
         'a': 0,
         'k': 0,
         'ix': 6
     };
-    var13.r = var14;
-    var14 = {
+    var6.r = var10;
+    var10 = {
         'a': 0,
         'k': 100,
         'ix': 7
     };
-    var13.o = var14;
-    var14 = {
+    var6.o = var10;
+    var10 = {
         'a': 0,
         'k': 0,
         'ix': 4
     };
-    var13.sk = var14;
-    var14 = {
+    var6.sk = var10;
+    var10 = {
         'a': 0,
         'k': 0,
         'ix': 5
     };
-    var13.sa = var14;
-    var13.nm = var7;
-    var11[2] = var13;
-    var12.it = var11;
-    var11 = new Array(2);
-    var11[0] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var14 = [0, 0];
-    var13.k = var14;
-    var12.p = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var14 = [0, 0];
-    var13.k = var14;
-    var12.a = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var14 = [100, 100];
-    var13.k = var14;
-    var12.s = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var13;
-    var13 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var13;
-    var12.nm = var7;
-    var11[1] = var12;
-    var4.it = var11;
+    var6.sa = var10;
+    var6.nm = var7;
+    var5[3] = var6;
+    var4.it = var5;
     var0[3] = var4;
     var4 = {
         'ty': 'gr',
         'it': null,
         'nm': 'Group 5',
-        'np': 1,
+        'np': 2,
         'cix': 2,
         'bm': 0,
         'ix': 5,
         'mn': 'ADBE Vector Group',
         'hd': false
     };
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var13 = {
+    var6 = {
         'ind': 0,
         'ty': 'sh',
         'ix': 1,
@@ -1022,63 +1224,147 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'mn': 'ADBE Vector Shape - Group',
         'hd': false
     };
-    var11 = {
+    var5 = {
         'a': 0,
         'k': null,
         'ix': 2
     };
-    var14 = {};
-    var19 = [0];
-    var20 = -3.446;
-    var19[1] = var20;
-    var16 = new Array(4);
-    var16[0] = var19;
-    var19 = [3.468, 0];
-    var16[1] = var19;
-    var19 = [0, 3.446];
-    var16[2] = var19;
+    var10 = {};
     var19 = new Array(2);
-    var22 = -3.468;
-    var19[0] = var22;
-    var19[1] = var6;
-    var16[3] = var19;
-    var14.i = var16;
-    var16 = new Array(4);
-    var19 = [0, 3.446];
-    var16[0] = var19;
-    var19 = new Array(2);
-    var19[0] = var22;
-    var19[1] = var6;
-    var16[1] = var19;
+    var19[0] = var12;
+    var37 = -0.045;
+    var19[1] = var37;
+    var22 = new Array(12);
+    var22[0] = var19;
+    var19 = [0, 0];
+    var22[1] = var19;
+    var19 = [0.1];
+    var26 = -0.006;
+    var19[1] = var26;
+    var22[2] = var19;
+    var19 = [0.087];
+    var46 = -0.091;
+    var19[1] = var46;
+    var22[3] = var19;
     var19 = [0];
-    var19[1] = var20;
-    var16[2] = var19;
-    var19 = [3.468, 0];
-    var16[3] = var19;
-    var14.o = var16;
-    var19 = [260.924];
-    var23 = -43.477;
-    var19[1] = var23;
-    var16 = new Array(4);
-    var16[0] = var19;
-    var19 = [254.645];
-    var24 = -37.238;
-    var19[1] = var24;
-    var16[1] = var19;
-    var19 = [248.366];
-    var19[1] = var23;
-    var16[2] = var19;
-    var19 = [254.645];
-    var23 = -49.716;
-    var19[1] = var23;
-    var16[3] = var19;
-    var14.v = var16;
-    var14.c = var10;
-    var11.k = var14;
-    var13.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var13;
-    var13 = {
+    var54 = -0.194;
+    var19[1] = var54;
+    var22[4] = var19;
+    var19 = [0, 0];
+    var22[5] = var19;
+    var19 = [0, 0];
+    var22[6] = var19;
+    var19 = [0, 0];
+    var22[7] = var19;
+    var19 = [0, 0];
+    var22[8] = var19;
+    var19 = [0, 0];
+    var22[9] = var19;
+    var25 = new Array(2);
+    var19 = -0.087;
+    var25[0] = var19;
+    var25[1] = var21;
+    var22[10] = var25;
+    var25 = new Array(2);
+    var25[0] = var48;
+    var25[1] = var26;
+    var22[11] = var25;
+    var10.i = var22;
+    var22 = new Array(12);
+    var25 = [0, 0];
+    var22[0] = var25;
+    var25 = new Array(2);
+    var25[0] = var19;
+    var25[1] = var47;
+    var22[1] = var25;
+    var25 = new Array(2);
+    var25[0] = var41;
+    var25[1] = var15;
+    var22[2] = var25;
+    var25 = new Array(2);
+    var25[0] = var12;
+    var25[1] = var21;
+    var22[3] = var25;
+    var25 = [0, 0];
+    var22[4] = var25;
+    var25 = [0, 0];
+    var22[5] = var25;
+    var25 = [0, 0];
+    var22[6] = var25;
+    var25 = [0, 0];
+    var22[7] = var25;
+    var25 = [0, 0];
+    var22[8] = var25;
+    var25 = [0.04];
+    var25[1] = var54;
+    var22[9] = var25;
+    var25 = [0.087];
+    var25[1] = var46;
+    var22[10] = var25;
+    var25 = [0.093, 0];
+    var22[11] = var25;
+    var10.o = var22;
+    var25 = [0.742];
+    var56 = -0.776;
+    var25[1] = var56;
+    var22 = new Array(12);
+    var22[0] = var25;
+    var25 = [0.742];
+    var47 = -0.161;
+    var25[1] = var47;
+    var22[1] = var25;
+    var25 = [0.456];
+    var47 = -0.232;
+    var25[1] = var47;
+    var22[2] = var25;
+    var25 = [0.097];
+    var25[1] = var36;
+    var22[3] = var25;
+    var25 = new Array(2);
+    var47 = -0.03;
+    var25[0] = var47;
+    var48 = 0.33;
+    var25[1] = var48;
+    var22[4] = var25;
+    var25 = new Array(2);
+    var25[0] = var47;
+    var48 = 0.847;
+    var25[1] = var48;
+    var22[5] = var25;
+    var25 = new Array(2);
+    var47 = -0.742;
+    var25[0] = var47;
+    var25[1] = var48;
+    var22[6] = var25;
+    var25 = new Array(2);
+    var25[0] = var47;
+    var48 = -0.808;
+    var25[1] = var48;
+    var22[7] = var25;
+    var25 = new Array(2);
+    var47 = -0.043;
+    var25[0] = var47;
+    var25[1] = var48;
+    var22[8] = var25;
+    var25 = new Array(2);
+    var25[0] = var47;
+    var25[1] = var29;
+    var22[9] = var25;
+    var25 = [0.143];
+    var55 = -0.711;
+    var25[1] = var55;
+    var22[10] = var25;
+    var25 = [0.476];
+    var29 = -0.847;
+    var25[1] = var29;
+    var22[11] = var25;
+    var10.v = var22;
+    var10.c = var14;
+    var5.k = var10;
+    var6.ks = var5;
+    var5 = new Array(3);
+    var5[0] = var6;
+    var6 = {
         'ty': 'fl',
         'c': null,
         'o': null,
@@ -1088,153 +1374,87 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'mn': 'ADBE Vector Graphic - Fill',
         'hd': false
     };
-    var14 = {
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 4
     };
-    var16 = [0.937254905701, 0.921568632126, 0.439215689898, 1];
-    var14.k = var16;
-    var13.c = var14;
-    var14 = {
+    var22 = [1, 1, 1, 1];
+    var10.k = var22;
+    var6.c = var10;
+    var10 = {
         'a': 0,
         'k': 100,
         'ix': 5
     };
-    var13.o = var14;
-    var11[1] = var13;
-    var13 = {};
-    var13.ty = var8;
-    var14 = {
+    var6.o = var10;
+    var5[1] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 2
     };
-    var16 = [0, 0];
-    var14.k = var16;
-    var13.p = var14;
-    var14 = {
+    var22 = [449.443, 172.963];
+    var10.k = var22;
+    var6.p = var10;
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 1
     };
-    var16 = [0, 0];
-    var14.k = var16;
-    var13.a = var14;
-    var14 = {
+    var22 = [0, 0];
+    var10.k = var22;
+    var6.a = var10;
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 3
     };
-    var16 = [100, 100];
-    var14.k = var16;
-    var13.s = var14;
-    var14 = {
+    var22 = [100, 100];
+    var10.k = var22;
+    var6.s = var10;
+    var10 = {
         'a': 0,
         'k': 0,
         'ix': 6
     };
-    var13.r = var14;
-    var14 = {
+    var6.r = var10;
+    var10 = {
         'a': 0,
         'k': 100,
         'ix': 7
     };
-    var13.o = var14;
-    var14 = {
+    var6.o = var10;
+    var10 = {
         'a': 0,
         'k': 0,
         'ix': 4
     };
-    var13.sk = var14;
-    var14 = {
+    var6.sk = var10;
+    var10 = {
         'a': 0,
         'k': 0,
         'ix': 5
     };
-    var13.sa = var14;
-    var13.nm = var7;
-    var11[2] = var13;
-    var12.it = var11;
-    var11 = new Array(2);
-    var11[0] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var14 = [0, 0];
-    var13.k = var14;
-    var12.p = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var14 = [0, 0];
-    var13.k = var14;
-    var12.a = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var14 = [100, 100];
-    var13.k = var14;
-    var12.s = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var13;
-    var13 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var13;
-    var12.nm = var7;
-    var11[1] = var12;
-    var4.it = var11;
+    var6.sa = var10;
+    var6.nm = var7;
+    var5[2] = var6;
+    var4.it = var5;
     var0[4] = var4;
     var4 = {
         'ty': 'gr',
         'it': null,
         'nm': 'Group 6',
-        'np': 1,
+        'np': 3,
         'cix': 2,
         'bm': 0,
         'ix': 6,
         'mn': 'ADBE Vector Group',
         'hd': false
     };
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var13 = {
+    var6 = {
         'ind': 0,
         'ty': 'sh',
         'ix': 1,
@@ -1243,54 +1463,241 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'mn': 'ADBE Vector Shape - Group',
         'hd': false
     };
-    var11 = {
+    var5 = {
         'a': 0,
         'k': null,
         'ix': 2
     };
-    var14 = {};
-    var19 = [0];
-    var19[1] = var20;
-    var16 = new Array(4);
-    var16[0] = var19;
-    var19 = [3.468, 0];
-    var16[1] = var19;
-    var19 = [0, 3.446];
-    var16[2] = var19;
-    var19 = new Array(2);
-    var19[0] = var22;
-    var19[1] = var6;
-    var16[3] = var19;
-    var14.i = var16;
-    var16 = new Array(4);
-    var19 = [0, 3.446];
-    var16[0] = var19;
-    var19 = new Array(2);
-    var19[0] = var22;
-    var19[1] = var6;
-    var16[1] = var19;
-    var19 = [0];
-    var19[1] = var20;
-    var16[2] = var19;
-    var19 = [3.468, 0];
-    var16[3] = var19;
-    var14.o = var16;
-    var16 = new Array(4);
-    var19 = [340.107, 50.778];
-    var16[0] = var19;
-    var19 = [333.828, 57.017];
-    var16[1] = var19;
-    var19 = [327.548, 50.778];
-    var16[2] = var19;
-    var19 = [333.828, 44.539];
-    var16[3] = var19;
-    var14.v = var16;
-    var14.c = var10;
-    var11.k = var14;
-    var13.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var13;
-    var13 = {
+    var10 = {};
+    var25 = new Array(2);
+    var25[0] = var32;
+    var25[1] = var64;
+    var22 = new Array(8);
+    var22[0] = var25;
+    var25 = [0.007, 0.097];
+    var22[1] = var25;
+    var25 = [0.073, 0.071];
+    var22[2] = var25;
+    var25 = [0.107, 0];
+    var22[3] = var25;
+    var25 = [0.08];
+    var25[1] = var17;
+    var22[4] = var25;
+    var25 = new Array(2);
+    var25[0] = var52;
+    var48 = -0.103;
+    var25[1] = var48;
+    var22[5] = var25;
+    var25 = new Array(2);
+    var25[0] = var32;
+    var25[1] = var17;
+    var22[6] = var25;
+    var25 = new Array(2);
+    var25[0] = var20;
+    var25[1] = var35;
+    var22[7] = var25;
+    var10.i = var22;
+    var25 = [0.073];
+    var25[1] = var17;
+    var22 = new Array(8);
+    var22[0] = var25;
+    var25 = [0.007];
+    var25[1] = var48;
+    var22[1] = var25;
+    var25 = new Array(2);
+    var25[0] = var12;
+    var25[1] = var17;
+    var22[2] = var25;
+    var25 = new Array(2);
+    var25[0] = var20;
+    var25[1] = var26;
+    var22[3] = var25;
+    var25 = new Array(2);
+    var25[0] = var32;
+    var25[1] = var64;
+    var22[4] = var25;
+    var25 = new Array(2);
+    var25[0] = var52;
+    var29 = 0.103;
+    var25[1] = var29;
+    var22[5] = var25;
+    var25 = [0.08, 0.071];
+    var22[6] = var25;
+    var25 = [0.113, 0.006];
+    var22[7] = var25;
+    var10.o = var22;
+    var22 = new Array(8);
+    var25 = [0.286, 0.266];
+    var22[0] = var25;
+    var25 = [0.393];
+    var25[1] = var26;
+    var22[1] = var25;
+    var25 = [0.286];
+    var47 = -0.277;
+    var25[1] = var47;
+    var22[2] = var25;
+    var25 = new Array(2);
+    var25[0] = var52;
+    var29 = -0.381;
+    var25[1] = var29;
+    var22[3] = var25;
+    var29 = new Array(2);
+    var25 = -0.299;
+    var29[0] = var25;
+    var29[1] = var47;
+    var22[4] = var29;
+    var29 = new Array(2);
+    var29[0] = var57;
+    var29[1] = var26;
+    var22[5] = var29;
+    var29 = new Array(2);
+    var29[0] = var25;
+    var47 = 0.266;
+    var29[1] = var47;
+    var22[6] = var29;
+    var29 = new Array(2);
+    var29[0] = var52;
+    var47 = 0.369;
+    var29[1] = var47;
+    var22[7] = var29;
+    var10.v = var22;
+    var10.c = var14;
+    var5.k = var10;
+    var6.ks = var5;
+    var5 = new Array(4);
+    var5[0] = var6;
+    var6 = {
+        'ind': 1,
+        'ty': 'sh',
+        'ix': 2,
+        'ks': null,
+        'nm': 'Path 2',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var10 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var22 = {};
+    var29 = new Array(10);
+    var47 = [0.379, 0.155];
+    var29[0] = var47;
+    var47 = [0.093, 0.142];
+    var29[1] = var47;
+    var47 = [0, 0.162];
+    var29[2] = var47;
+    var47 = new Array(2);
+    var47[0] = var51;
+    var67 = 0.136;
+    var47[1] = var67;
+    var29[3] = var47;
+    var47 = new Array(2);
+    var53 = -0.16;
+    var47[0] = var53;
+    var47[1] = var70;
+    var29[4] = var47;
+    var47 = new Array(2);
+    var70 = -0.379;
+    var47[0] = var70;
+    var47[1] = var69;
+    var29[5] = var47;
+    var47 = new Array(2);
+    var47[0] = var51;
+    var47[1] = var79;
+    var29[6] = var47;
+    var47 = [0];
+    var47[1] = var30;
+    var29[7] = var47;
+    var47 = [0.087];
+    var47[1] = var79;
+    var29[8] = var47;
+    var47 = [0.153];
+    var47[1] = var17;
+    var29[9] = var47;
+    var22.i = var29;
+    var47 = new Array(2);
+    var47[0] = var53;
+    var47[1] = var17;
+    var29 = new Array(10);
+    var29[0] = var47;
+    var47 = new Array(2);
+    var47[0] = var19;
+    var47[1] = var79;
+    var29[1] = var47;
+    var47 = [0];
+    var47[1] = var63;
+    var29[2] = var47;
+    var47 = [0.093];
+    var47[1] = var79;
+    var29[3] = var47;
+    var47 = [0.379];
+    var47[1] = var69;
+    var29[4] = var47;
+    var47 = [0.153, 0.065];
+    var29[5] = var47;
+    var47 = [0.087, 0.136];
+    var29[6] = var47;
+    var47 = [0, 0.162];
+    var29[7] = var47;
+    var47 = new Array(2);
+    var47[0] = var51;
+    var47[1] = var43;
+    var29[8] = var47;
+    var47 = new Array(2);
+    var47[0] = var68;
+    var47[1] = var58;
+    var29[9] = var47;
+    var22.o = var29;
+    var29 = new Array(2);
+    var69 = -0.592;
+    var29[0] = var69;
+    var47 = 0.77;
+    var29[1] = var47;
+    var58 = new Array(10);
+    var58[0] = var29;
+    var47 = new Array(2);
+    var29 = -0.978;
+    var47[0] = var29;
+    var68 = 0.447;
+    var47[1] = var68;
+    var58[1] = var47;
+    var68 = new Array(2);
+    var47 = -1.111;
+    var68[0] = var47;
+    var47 = -0.012;
+    var68[1] = var47;
+    var58[2] = var68;
+    var68 = new Array(2);
+    var68[0] = var29;
+    var29 = -0.465;
+    var68[1] = var29;
+    var58[3] = var68;
+    var68 = new Array(2);
+    var68[0] = var69;
+    var69 = -0.775;
+    var68[1] = var69;
+    var58[4] = var68;
+    var68 = [0.599];
+    var68[1] = var69;
+    var58[5] = var68;
+    var68 = [0.978];
+    var68[1] = var29;
+    var58[6] = var68;
+    var68 = [1.111];
+    var68[1] = var47;
+    var58[7] = var68;
+    var68 = [0.978, 0.447];
+    var58[8] = var68;
+    var68 = [0.599, 0.77];
+    var58[9] = var68;
+    var22.v = var58;
+    var22.c = var14;
+    var10.k = var22;
+    var6.ks = var10;
+    var5[1] = var6;
+    var6 = {
         'ty': 'fl',
         'c': null,
         'o': null,
@@ -1300,153 +1707,87 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'mn': 'ADBE Vector Graphic - Fill',
         'hd': false
     };
-    var14 = {
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 4
     };
-    var16 = [0.937254905701, 0.921568632126, 0.439215689898, 1];
-    var14.k = var16;
-    var13.c = var14;
-    var14 = {
+    var22 = [1, 1, 1, 1];
+    var10.k = var22;
+    var6.c = var10;
+    var10 = {
         'a': 0,
         'k': 100,
         'ix': 5
     };
-    var13.o = var14;
-    var11[1] = var13;
-    var13 = {};
-    var13.ty = var8;
-    var14 = {
+    var6.o = var10;
+    var5[2] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 2
     };
-    var16 = [0, 0];
-    var14.k = var16;
-    var13.p = var14;
-    var14 = {
+    var22 = [447.33, 172.982];
+    var10.k = var22;
+    var6.p = var10;
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 1
     };
-    var16 = [0, 0];
-    var14.k = var16;
-    var13.a = var14;
-    var14 = {
+    var22 = [0, 0];
+    var10.k = var22;
+    var6.a = var10;
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 3
     };
-    var16 = [100, 100];
-    var14.k = var16;
-    var13.s = var14;
-    var14 = {
+    var22 = [100, 100];
+    var10.k = var22;
+    var6.s = var10;
+    var10 = {
         'a': 0,
         'k': 0,
         'ix': 6
     };
-    var13.r = var14;
-    var14 = {
+    var6.r = var10;
+    var10 = {
         'a': 0,
         'k': 100,
         'ix': 7
     };
-    var13.o = var14;
-    var14 = {
+    var6.o = var10;
+    var10 = {
         'a': 0,
         'k': 0,
         'ix': 4
     };
-    var13.sk = var14;
-    var14 = {
+    var6.sk = var10;
+    var10 = {
         'a': 0,
         'k': 0,
         'ix': 5
     };
-    var13.sa = var14;
-    var13.nm = var7;
-    var11[2] = var13;
-    var12.it = var11;
-    var11 = new Array(2);
-    var11[0] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var14 = [0, 0];
-    var13.k = var14;
-    var12.p = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var14 = [0, 0];
-    var13.k = var14;
-    var12.a = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var14 = [100, 100];
-    var13.k = var14;
-    var12.s = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var13;
-    var13 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var13;
-    var12.nm = var7;
-    var11[1] = var12;
-    var4.it = var11;
+    var6.sa = var10;
+    var6.nm = var7;
+    var5[3] = var6;
+    var4.it = var5;
     var0[5] = var4;
     var4 = {
         'ty': 'gr',
         'it': null,
         'nm': 'Group 7',
-        'np': 1,
+        'np': 2,
         'cix': 2,
         'bm': 0,
         'ix': 7,
         'mn': 'ADBE Vector Group',
         'hd': false
     };
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var13 = {
+    var6 = {
         'ind': 0,
         'ty': 'sh',
         'ix': 1,
@@ -1455,54 +1796,211 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'mn': 'ADBE Vector Shape - Group',
         'hd': false
     };
-    var11 = {
+    var5 = {
         'a': 0,
         'k': null,
         'ix': 2
     };
-    var14 = {};
-    var19 = [0];
-    var19[1] = var20;
-    var16 = new Array(4);
-    var16[0] = var19;
-    var19 = [3.468, 0];
-    var16[1] = var19;
-    var19 = [0, 3.446];
-    var16[2] = var19;
-    var19 = new Array(2);
-    var19[0] = var22;
-    var19[1] = var6;
-    var16[3] = var19;
-    var14.i = var16;
-    var16 = new Array(4);
-    var19 = [0, 3.446];
-    var16[0] = var19;
-    var19 = new Array(2);
-    var19[0] = var22;
-    var19[1] = var6;
-    var16[1] = var19;
-    var19 = [0];
-    var19[1] = var20;
-    var16[2] = var19;
-    var19 = [3.468, 0];
-    var16[3] = var19;
-    var14.o = var16;
-    var16 = new Array(4);
-    var19 = [279.684, 30.637];
-    var16[0] = var19;
-    var19 = [273.405, 36.876];
-    var16[1] = var19;
-    var19 = [267.126, 30.637];
-    var16[2] = var19;
-    var19 = [273.405, 24.399];
-    var16[3] = var19;
-    var14.v = var16;
-    var14.c = var10;
-    var11.k = var14;
-    var13.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var13;
-    var13 = {
+    var10 = {};
+    var22 = new Array(18);
+    var58 = [0.186, 0.084];
+    var22[0] = var58;
+    var58 = [0.093, 0.142];
+    var22[1] = var58;
+    var58 = [0, 0.162];
+    var22[2] = var58;
+    var58 = new Array(2);
+    var58[0] = var51;
+    var58[1] = var67;
+    var22[3] = var58;
+    var58 = new Array(2);
+    var58[0] = var53;
+    var58[1] = var64;
+    var22[4] = var58;
+    var64 = new Array(2);
+    var58 = -0.206;
+    var64[0] = var58;
+    var64[1] = var26;
+    var22[5] = var64;
+    var64 = new Array(2);
+    var67 = -0.193;
+    var64[0] = var67;
+    var68 = -0.123;
+    var64[1] = var68;
+    var22[6] = var64;
+    var64 = [0, 0];
+    var22[7] = var64;
+    var64 = [0.087, 0.026];
+    var22[8] = var64;
+    var64 = [0.1, 0];
+    var22[9] = var64;
+    var64 = [0.107];
+    var68 = -0.065;
+    var64[1] = var68;
+    var22[10] = var64;
+    var64 = new Array(2);
+    var64[0] = var12;
+    var64[1] = var42;
+    var22[11] = var64;
+    var64 = new Array(2);
+    var68 = -0.047;
+    var64[0] = var68;
+    var64[1] = var23;
+    var22[12] = var64;
+    var64 = new Array(2);
+    var64[0] = var67;
+    var64[1] = var15;
+    var22[13] = var64;
+    var64 = new Array(2);
+    var64[0] = var51;
+    var64[1] = var65;
+    var22[14] = var64;
+    var64 = new Array(2);
+    var64[0] = var32;
+    var65 = 0.045;
+    var64[1] = var65;
+    var22[15] = var64;
+    var64 = [0, 0];
+    var22[16] = var64;
+    var64 = [0.26, 0.006];
+    var22[17] = var64;
+    var10.i = var22;
+    var22 = new Array(2);
+    var22[0] = var41;
+    var22[1] = var17;
+    var17 = new Array(18);
+    var17[0] = var22;
+    var22 = new Array(2);
+    var22[0] = var19;
+    var22[1] = var79;
+    var17[1] = var22;
+    var22 = [0];
+    var22[1] = var63;
+    var17[2] = var22;
+    var22 = [0.093];
+    var22[1] = var42;
+    var17[3] = var22;
+    var22 = [0.193];
+    var22[1] = var28;
+    var17[4] = var22;
+    var22 = [0.293, 0];
+    var17[5] = var22;
+    var22 = [0, 0];
+    var17[6] = var22;
+    var22 = new Array(2);
+    var22[0] = var32;
+    var22[1] = var37;
+    var17[7] = var22;
+    var22 = new Array(2);
+    var22[0] = var51;
+    var22[1] = var23;
+    var17[8] = var22;
+    var22 = new Array(2);
+    var42 = -0.18;
+    var22[0] = var42;
+    var22[1] = var15;
+    var17[9] = var22;
+    var22 = new Array(2);
+    var22[0] = var38;
+    var22[1] = var24;
+    var17[10] = var22;
+    var22 = [0.027, 0.045];
+    var17[11] = var22;
+    var22 = [0.1, 0.065];
+    var17[12] = var22;
+    var22 = [0.1, 0];
+    var17[13] = var22;
+    var22 = [0.087];
+    var22[1] = var23;
+    var17[14] = var22;
+    var22 = [0, 0];
+    var17[15] = var22;
+    var22 = new Array(2);
+    var22[0] = var62;
+    var22[1] = var61;
+    var17[16] = var22;
+    var22 = new Array(2);
+    var22[0] = var58;
+    var22[1] = var35;
+    var17[17] = var22;
+    var10.o = var17;
+    var22 = new Array(2);
+    var17 = -0.419;
+    var22[0] = var17;
+    var17 = 0.776;
+    var22[1] = var17;
+    var17 = new Array(18);
+    var17[0] = var22;
+    var22 = new Array(2);
+    var35 = -0.799;
+    var22[0] = var35;
+    var35 = 0.453;
+    var22[1] = var35;
+    var17[1] = var22;
+    var22 = new Array(2);
+    var35 = -0.925;
+    var22[0] = var35;
+    var22[1] = var52;
+    var17[2] = var22;
+    var22 = new Array(2);
+    var35 = -0.792;
+    var22[0] = var35;
+    var35 = -0.459;
+    var22[1] = var35;
+    var17[3] = var22;
+    var22 = new Array(2);
+    var22[0] = var57;
+    var22[1] = var56;
+    var17[4] = var22;
+    var22 = [0.2];
+    var56 = -0.892;
+    var22[1] = var56;
+    var17[5] = var22;
+    var22 = [0.925];
+    var22[1] = var55;
+    var17[6] = var22;
+    var22 = [0.925];
+    var22[1] = var54;
+    var17[7] = var22;
+    var22 = [0.686];
+    var22[1] = var49;
+    var17[8] = var22;
+    var22 = [0.393];
+    var49 = -0.349;
+    var22[1] = var49;
+    var17[9] = var22;
+    var22 = new Array(2);
+    var49 = -0.033;
+    var22[0] = var49;
+    var54 = -0.252;
+    var22[1] = var54;
+    var17[10] = var22;
+    var22 = new Array(2);
+    var22[0] = var38;
+    var22[1] = var43;
+    var17[11] = var22;
+    var22 = new Array(2);
+    var22[0] = var49;
+    var43 = 0.252;
+    var22[1] = var43;
+    var17[12] = var22;
+    var22 = [0.399, 0.349];
+    var17[13] = var22;
+    var22 = [0.686, 0.31];
+    var17[14] = var22;
+    var22 = [0.925, 0.207];
+    var17[15] = var22;
+    var22 = [0.925, 0.705];
+    var17[16] = var22;
+    var22 = [0.186, 0.892];
+    var17[17] = var22;
+    var10.v = var17;
+    var10.c = var14;
+    var5.k = var10;
+    var6.ks = var5;
+    var5 = new Array(3);
+    var5[0] = var6;
+    var6 = {
         'ty': 'fl',
         'c': null,
         'o': null,
@@ -1512,153 +2010,87 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'mn': 'ADBE Vector Graphic - Fill',
         'hd': false
     };
-    var14 = {
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 4
     };
-    var16 = [0.937254905701, 0.921568632126, 0.439215689898, 1];
-    var14.k = var16;
-    var13.c = var14;
-    var14 = {
+    var17 = [1, 1, 1, 1];
+    var10.k = var17;
+    var6.c = var10;
+    var10 = {
         'a': 0,
         'k': 100,
         'ix': 5
     };
-    var13.o = var14;
-    var11[1] = var13;
-    var13 = {};
-    var13.ty = var8;
-    var14 = {
+    var6.o = var10;
+    var5[1] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 2
     };
-    var16 = [0, 0];
-    var14.k = var16;
-    var13.p = var14;
-    var14 = {
+    var17 = [445.087, 172.977];
+    var10.k = var17;
+    var6.p = var10;
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 1
     };
-    var16 = [0, 0];
-    var14.k = var16;
-    var13.a = var14;
-    var14 = {
+    var17 = [0, 0];
+    var10.k = var17;
+    var6.a = var10;
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 3
     };
-    var16 = [100, 100];
-    var14.k = var16;
-    var13.s = var14;
-    var14 = {
+    var17 = [100, 100];
+    var10.k = var17;
+    var6.s = var10;
+    var10 = {
         'a': 0,
         'k': 0,
         'ix': 6
     };
-    var13.r = var14;
-    var14 = {
+    var6.r = var10;
+    var10 = {
         'a': 0,
         'k': 100,
         'ix': 7
     };
-    var13.o = var14;
-    var14 = {
+    var6.o = var10;
+    var10 = {
         'a': 0,
         'k': 0,
         'ix': 4
     };
-    var13.sk = var14;
-    var14 = {
+    var6.sk = var10;
+    var10 = {
         'a': 0,
         'k': 0,
         'ix': 5
     };
-    var13.sa = var14;
-    var13.nm = var7;
-    var11[2] = var13;
-    var12.it = var11;
-    var11 = new Array(2);
-    var11[0] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var14 = [0, 0];
-    var13.k = var14;
-    var12.p = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var14 = [0, 0];
-    var13.k = var14;
-    var12.a = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var14 = [100, 100];
-    var13.k = var14;
-    var12.s = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var13;
-    var13 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var13;
-    var12.nm = var7;
-    var11[1] = var12;
-    var4.it = var11;
+    var6.sa = var10;
+    var6.nm = var7;
+    var5[2] = var6;
+    var4.it = var5;
     var0[6] = var4;
     var4 = {
         'ty': 'gr',
         'it': null,
         'nm': 'Group 8',
-        'np': 1,
+        'np': 2,
         'cix': 2,
         'bm': 0,
         'ix': 8,
         'mn': 'ADBE Vector Group',
         'hd': false
     };
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var13 = {
+    var6 = {
         'ind': 0,
         'ty': 'sh',
         'ix': 1,
@@ -1667,61 +2099,313 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'mn': 'ADBE Vector Shape - Group',
         'hd': false
     };
-    var11 = {
+    var5 = {
         'a': 0,
         'k': null,
         'ix': 2
     };
-    var14 = {};
-    var19 = [0];
-    var19[1] = var20;
-    var16 = new Array(4);
-    var16[0] = var19;
-    var19 = [3.468, 0];
-    var16[1] = var19;
-    var19 = [0, 3.446];
-    var16[2] = var19;
-    var19 = new Array(2);
-    var19[0] = var22;
-    var19[1] = var6;
-    var16[3] = var19;
-    var14.i = var16;
-    var16 = new Array(4);
-    var19 = [0, 3.446];
-    var16[0] = var19;
-    var19 = new Array(2);
-    var19[0] = var22;
-    var19[1] = var6;
-    var16[1] = var19;
-    var19 = [0];
-    var19[1] = var20;
-    var16[2] = var19;
-    var19 = [3.468, 0];
-    var16[3] = var19;
-    var14.o = var16;
-    var19 = [332.822];
-    var23 = -46.069;
-    var19[1] = var23;
-    var16 = new Array(4);
-    var16[0] = var19;
-    var19 = [326.543];
-    var24 = -39.83;
-    var19[1] = var24;
-    var16[1] = var19;
-    var19 = [320.263];
-    var19[1] = var23;
-    var16[2] = var19;
-    var19 = [326.543];
-    var23 = -52.308;
-    var19[1] = var23;
-    var16[3] = var19;
-    var14.v = var16;
-    var14.c = var10;
-    var11.k = var14;
-    var13.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var13;
-    var13 = {
+    var10 = {};
+    var22 = new Array(28);
+    var17 = [0.16, 0.039];
+    var22[0] = var17;
+    var17 = [0.133, 0.078];
+    var22[1] = var17;
+    var17 = [0, 0];
+    var22[2] = var17;
+    var17 = new Array(2);
+    var43 = -0.133;
+    var17[0] = var43;
+    var43 = -0.032;
+    var17[1] = var43;
+    var22[3] = var17;
+    var17 = new Array(2);
+    var17[0] = var53;
+    var17[1] = var26;
+    var22[4] = var17;
+    var17 = new Array(2);
+    var17[0] = var102;
+    var53 = 0.019;
+    var17[1] = var53;
+    var22[5] = var17;
+    var17 = [0, 0.026];
+    var22[6] = var17;
+    var17 = [0.02, 0.019];
+    var22[7] = var17;
+    var17 = [0.04, 0.006];
+    var22[8] = var17;
+    var17 = [0, 0];
+    var22[9] = var17;
+    var17 = [0.087, 0.078];
+    var22[10] = var17;
+    var17 = new Array(2);
+    var17[0] = var52;
+    var82 = 0.116;
+    var17[1] = var82;
+    var22[11] = var17;
+    var17 = new Array(2);
+    var17[0] = var32;
+    var17[1] = var24;
+    var22[12] = var17;
+    var17 = new Array(2);
+    var17[0] = var45;
+    var24 = 0.032;
+    var17[1] = var24;
+    var22[13] = var17;
+    var17 = new Array(2);
+    var17[0] = var34;
+    var17[1] = var26;
+    var22[14] = var17;
+    var24 = new Array(2);
+    var24[0] = var38;
+    var17 = -0.039;
+    var24[1] = var17;
+    var22[15] = var24;
+    var24 = new Array(2);
+    var24[0] = var20;
+    var24[1] = var60;
+    var22[16] = var24;
+    var24 = [0, 0];
+    var22[17] = var24;
+    var24 = [0.106, 0.026];
+    var22[18] = var24;
+    var24 = [0.12, 0];
+    var22[19] = var24;
+    var24 = [0];
+    var24[1] = var60;
+    var22[20] = var24;
+    var32 = new Array(2);
+    var24 = -0.027;
+    var32[0] = var24;
+    var24 = -0.013;
+    var32[1] = var24;
+    var22[21] = var32;
+    var32 = new Array(2);
+    var32[0] = var102;
+    var32[1] = var24;
+    var22[22] = var32;
+    var32 = [0, 0];
+    var22[23] = var32;
+    var32 = new Array(2);
+    var32[0] = var51;
+    var32[1] = var28;
+    var22[24] = var32;
+    var32 = [0];
+    var32[1] = var30;
+    var22[25] = var32;
+    var51 = [0.146];
+    var32 = -0.084;
+    var51[1] = var32;
+    var22[26] = var51;
+    var51 = [0.286, 0];
+    var22[27] = var51;
+    var10.i = var22;
+    var22 = new Array(2);
+    var22[0] = var38;
+    var22[1] = var17;
+    var17 = new Array(28);
+    var17[0] = var22;
+    var22 = [0, 0];
+    var17[1] = var22;
+    var22 = [0.113, 0.084];
+    var17[2] = var22;
+    var22 = [0.153, 0.045];
+    var17[3] = var22;
+    var22 = [0.053, 0];
+    var17[4] = var22;
+    var22 = [0.033];
+    var22[1] = var50;
+    var17[5] = var22;
+    var22 = [0];
+    var22[1] = var23;
+    var17[6] = var22;
+    var22 = new Array(2);
+    var22[0] = var49;
+    var22[1] = var23;
+    var17[7] = var22;
+    var22 = [0, 0];
+    var17[8] = var22;
+    var23 = new Array(2);
+    var22 = -0.2;
+    var23[0] = var22;
+    var23[1] = var37;
+    var17[9] = var23;
+    var23 = new Array(2);
+    var23[0] = var19;
+    var23[1] = var32;
+    var17[10] = var23;
+    var23 = [0];
+    var23[1] = var48;
+    var17[11] = var23;
+    var23 = [0.087];
+    var23[1] = var46;
+    var17[12] = var23;
+    var23 = [0.153];
+    var23[1] = var37;
+    var17[13] = var23;
+    var23 = [0.153, 0];
+    var17[14] = var23;
+    var23 = [0.12, 0.026];
+    var17[15] = var23;
+    var23 = [0, 0];
+    var17[16] = var23;
+    var23 = new Array(2);
+    var37 = -0.1;
+    var23[0] = var37;
+    var23[1] = var60;
+    var17[17] = var23;
+    var23 = new Array(2);
+    var23[0] = var45;
+    var23[1] = var43;
+    var17[18] = var23;
+    var23 = new Array(2);
+    var23[0] = var42;
+    var23[1] = var15;
+    var17[19] = var23;
+    var23 = [0, 0.026];
+    var17[20] = var23;
+    var23 = [0.047, 0.019];
+    var17[21] = var23;
+    var23 = [0, 0];
+    var17[22] = var23;
+    var23 = [0.186, 0.032];
+    var17[23] = var23;
+    var23 = [0.093, 0.078];
+    var17[24] = var23;
+    var23 = [0, 0.168];
+    var17[25] = var23;
+    var23 = new Array(2);
+    var23[0] = var41;
+    var23[1] = var40;
+    var17[26] = var23;
+    var23 = new Array(2);
+    var23[0] = var34;
+    var23[1] = var26;
+    var17[27] = var23;
+    var10.o = var17;
+    var17 = new Array(2);
+    var17[0] = var16;
+    var16 = 0.831;
+    var17[1] = var16;
+    var16 = new Array(28);
+    var16[0] = var17;
+    var17 = new Array(2);
+    var23 = -0.905;
+    var17[0] = var23;
+    var26 = 0.657;
+    var17[1] = var26;
+    var16[1] = var17;
+    var17 = new Array(2);
+    var17[0] = var23;
+    var23 = 0.185;
+    var17[1] = var23;
+    var16[2] = var17;
+    var17 = new Array(2);
+    var26 = -0.526;
+    var17[0] = var26;
+    var26 = 0.359;
+    var17[1] = var26;
+    var16[3] = var17;
+    var17 = new Array(2);
+    var26 = -0.06;
+    var17[0] = var26;
+    var26 = 0.43;
+    var17[1] = var26;
+    var16[4] = var17;
+    var17 = [0.1, 0.405];
+    var16[5] = var17;
+    var17 = [0.153, 0.34];
+    var16[6] = var17;
+    var17 = [0.126, 0.269];
+    var16[7] = var17;
+    var17 = [0.013, 0.224];
+    var16[8] = var17;
+    var17 = new Array(2);
+    var26 = -0.333;
+    var17[0] = var26;
+    var34 = 0.146;
+    var17[1] = var34;
+    var16[9] = var17;
+    var17 = new Array(2);
+    var34 = -0.759;
+    var17[0] = var34;
+    var45 = -0.042;
+    var17[1] = var45;
+    var16[10] = var17;
+    var17 = new Array(2);
+    var17[0] = var78;
+    var34 = -0.358;
+    var17[1] = var34;
+    var16[11] = var17;
+    var17 = new Array(2);
+    var34 = -0.772;
+    var17[0] = var34;
+    var34 = -0.643;
+    var17[1] = var34;
+    var16[12] = var17;
+    var17 = new Array(2);
+    var17[0] = var35;
+    var34 = -0.83;
+    var17[1] = var34;
+    var16[13] = var17;
+    var17 = [0.02];
+    var34 = -0.895;
+    var17[1] = var34;
+    var16[14] = var17;
+    var17 = [0.466];
+    var34 = -0.843;
+    var17[1] = var34;
+    var16[15] = var17;
+    var17 = [0.805];
+    var34 = -0.714;
+    var17[1] = var34;
+    var16[16] = var17;
+    var17 = [0.805];
+    var34 = -0.268;
+    var17[1] = var34;
+    var16[17] = var17;
+    var17 = [0.493];
+    var40 = -0.391;
+    var17[1] = var40;
+    var16[18] = var17;
+    var17 = [0.126];
+    var50 = -0.436;
+    var17[1] = var50;
+    var16[19] = var17;
+    var17 = new Array(2);
+    var17[0] = var38;
+    var38 = -0.345;
+    var17[1] = var38;
+    var16[20] = var17;
+    var17 = new Array(2);
+    var17[0] = var20;
+    var20 = -0.281;
+    var17[1] = var20;
+    var16[21] = var17;
+    var17 = [0.047];
+    var58 = -0.235;
+    var17[1] = var58;
+    var16[22] = var17;
+    var17 = [0.339];
+    var62 = -0.184;
+    var17[1] = var62;
+    var16[23] = var17;
+    var17 = [0.765];
+    var20 = -0.016;
+    var17[1] = var20;
+    var16[24] = var17;
+    var17 = [0.905, 0.34];
+    var16[25] = var17;
+    var17 = [0.672, 0.747];
+    var16[26] = var17;
+    var17 = [0.013, 0.896];
+    var16[27] = var17;
+    var10.v = var16;
+    var10.c = var14;
+    var5.k = var10;
+    var6.ks = var5;
+    var5 = new Array(3);
+    var5[0] = var6;
+    var6 = {
         'ty': 'fl',
         'c': null,
         'o': null,
@@ -1731,154 +2415,87 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'mn': 'ADBE Vector Graphic - Fill',
         'hd': false
     };
-    var14 = {
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 4
     };
-    var16 = [0.937254905701, 0.921568632126, 0.439215689898, 1];
-    var14.k = var16;
-    var13.c = var14;
-    var14 = {
+    var16 = [1, 1, 1, 1];
+    var10.k = var16;
+    var6.c = var10;
+    var10 = {
         'a': 0,
         'k': 100,
         'ix': 5
     };
-    var13.o = var14;
-    var11[1] = var13;
-    var13 = {};
-    var13.ty = var8;
-    var14 = {
+    var6.o = var10;
+    var5[1] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 2
     };
-    var16 = [0, 0];
-    var14.k = var16;
-    var13.p = var14;
-    var14 = {
+    var16 = [443.083, 172.979];
+    var10.k = var16;
+    var6.p = var10;
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 1
     };
     var16 = [0, 0];
-    var14.k = var16;
-    var13.a = var14;
-    var14 = {
+    var10.k = var16;
+    var6.a = var10;
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 3
     };
     var16 = [100, 100];
-    var14.k = var16;
-    var13.s = var14;
-    var14 = {
+    var10.k = var16;
+    var6.s = var10;
+    var10 = {
         'a': 0,
         'k': 0,
         'ix': 6
     };
-    var13.r = var14;
-    var14 = {
+    var6.r = var10;
+    var10 = {
         'a': 0,
         'k': 100,
         'ix': 7
     };
-    var13.o = var14;
-    var14 = {
+    var6.o = var10;
+    var10 = {
         'a': 0,
         'k': 0,
         'ix': 4
     };
-    var13.sk = var14;
-    var14 = {
+    var6.sk = var10;
+    var10 = {
         'a': 0,
         'k': 0,
         'ix': 5
     };
-    var13.sa = var14;
-    var13.nm = var7;
-    var11[2] = var13;
-    var12.it = var11;
-    var11 = new Array(2);
-    var11[0] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var14 = [0, 0];
-    var13.k = var14;
-    var12.p = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var14 = [0, 0];
-    var13.k = var14;
-    var12.a = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var14 = [100, 100];
-    var13.k = var14;
-    var12.s = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var13;
-    var13 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var13;
-    var12.nm = var7;
-    var11[1] = var12;
-    var4.it = var11;
-    var31 = 8;
+    var6.sa = var10;
+    var6.nm = var7;
+    var5[2] = var6;
+    var4.it = var5;
     var0[7] = var4;
     var4 = {
         'ty': 'gr',
         'it': null,
         'nm': 'Group 9',
-        'np': 1,
+        'np': 3,
         'cix': 2,
         'bm': 0,
         'ix': 9,
         'mn': 'ADBE Vector Group',
         'hd': false
     };
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var13 = {
+    var6 = {
         'ind': 0,
         'ty': 'sh',
         'ix': 1,
@@ -1887,1634 +2504,209 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'mn': 'ADBE Vector Shape - Group',
         'hd': false
     };
-    var11 = {
+    var5 = {
         'a': 0,
         'k': null,
         'ix': 2
     };
-    var14 = {};
-    var19 = [0];
-    var19[1] = var20;
-    var16 = new Array(4);
-    var16[0] = var19;
-    var19 = [3.468, 0];
-    var16[1] = var19;
-    var19 = [0, 3.446];
-    var16[2] = var19;
-    var19 = new Array(2);
-    var19[0] = var22;
-    var19[1] = var6;
-    var16[3] = var19;
-    var14.i = var16;
-    var16 = new Array(4);
-    var19 = [0, 3.446];
-    var16[0] = var19;
-    var19 = new Array(2);
-    var19[0] = var22;
-    var19[1] = var6;
-    var16[1] = var19;
-    var19 = [0];
-    var19[1] = var20;
-    var16[2] = var19;
-    var19 = [3.468, 0];
-    var16[3] = var19;
-    var14.o = var16;
-    var19 = [298.992];
-    var23 = -96.294;
-    var19[1] = var23;
-    var16 = new Array(4);
-    var16[0] = var19;
-    var19 = [292.713];
-    var24 = -90.055;
-    var19[1] = var24;
-    var16[1] = var19;
-    var19 = [286.434];
-    var19[1] = var23;
-    var16[2] = var19;
-    var19 = [292.713];
-    var23 = -102.533;
-    var19[1] = var23;
-    var16[3] = var19;
-    var14.v = var16;
-    var14.c = var10;
-    var11.k = var14;
-    var13.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var13;
-    var13 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var16 = [0.937254905701, 0.921568632126, 0.439215689898, 1];
-    var14.k = var16;
-    var13.c = var14;
-    var14 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var13.o = var14;
-    var11[1] = var13;
-    var13 = {};
-    var13.ty = var8;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = [0, 0];
-    var14.k = var16;
-    var13.p = var14;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var16 = [0, 0];
-    var14.k = var16;
-    var13.a = var14;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var16 = [100, 100];
-    var14.k = var16;
-    var13.s = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var13.r = var14;
-    var14 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var13.o = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var13.sk = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var13.sa = var14;
-    var13.nm = var7;
-    var11[2] = var13;
-    var12.it = var11;
-    var11 = new Array(2);
-    var11[0] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var14 = [0, 0];
-    var13.k = var14;
-    var12.p = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var14 = [0, 0];
-    var13.k = var14;
-    var12.a = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var14 = [100, 100];
-    var13.k = var14;
-    var12.s = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var13;
-    var13 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var13;
-    var12.nm = var7;
-    var11[1] = var12;
-    var4.it = var11;
-    var25 = 9;
-    var0[8] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 10',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 10,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var13 = {
-        'ind': 0,
+    var10 = {};
+    var16 = new Array(8);
+    var17 = [0, 0];
+    var16[0] = var17;
+    var17 = new Array(2);
+    var17[0] = var37;
+    var17[1] = var21;
+    var16[1] = var17;
+    var17 = [0.007, 0.142];
+    var16[2] = var17;
+    var17 = [0.093, 0.091];
+    var16[3] = var17;
+    var17 = [0.18, 0];
+    var16[4] = var17;
+    var17 = [0, 0];
+    var16[5] = var17;
+    var17 = [0, 0];
+    var16[6] = var17;
+    var17 = [0, 0];
+    var16[7] = var17;
+    var10.i = var16;
+    var16 = new Array(8);
+    var17 = [0.186, 0];
+    var16[0] = var17;
+    var17 = [0.1];
+    var17[1] = var36;
+    var16[1] = var17;
+    var17 = [0.007];
+    var36 = -0.129;
+    var17[1] = var36;
+    var16[2] = var17;
+    var17 = new Array(2);
+    var17[0] = var19;
+    var17[1] = var32;
+    var16[3] = var17;
+    var17 = [0, 0];
+    var16[4] = var17;
+    var17 = [0, 0];
+    var16[5] = var17;
+    var17 = [0, 0];
+    var16[6] = var17;
+    var17 = [0, 0];
+    var16[7] = var17;
+    var10.o = var16;
+    var17 = new Array(2);
+    var36 = -0.15;
+    var17[0] = var36;
+    var16 = 0.482;
+    var17[1] = var16;
+    var16 = new Array(8);
+    var16[0] = var17;
+    var17 = [0.276, 0.346];
+    var16[1] = var17;
+    var17 = [0.422];
+    var19 = -0.023;
+    var17[1] = var19;
+    var16[2] = var17;
+    var17 = [0.289];
+    var19 = -0.365;
+    var17[1] = var19;
+    var16[3] = var17;
+    var17 = new Array(2);
+    var17[0] = var66;
+    var37 = -0.495;
+    var17[1] = var37;
+    var16[4] = var17;
+    var17 = new Array(2);
+    var19 = -0.463;
+    var17[0] = var19;
+    var17[1] = var37;
+    var16[5] = var17;
+    var17 = new Array(2);
+    var17[0] = var19;
+    var19 = 0.475;
+    var17[1] = var19;
+    var16[6] = var17;
+    var17 = new Array(2);
+    var17[0] = var36;
+    var17[1] = var19;
+    var16[7] = var17;
+    var10.v = var16;
+    var10.c = var14;
+    var5.k = var10;
+    var6.ks = var5;
+    var5 = new Array(4);
+    var5[0] = var6;
+    var6 = {
+        'ind': 1,
         'ty': 'sh',
-        'ix': 1,
+        'ix': 2,
         'ks': null,
-        'nm': 'Path 1',
+        'nm': 'Path 2',
         'mn': 'ADBE Vector Shape - Group',
         'hd': false
     };
-    var11 = {
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 2
     };
-    var14 = {};
-    var19 = [0];
-    var19[1] = var20;
-    var16 = new Array(4);
-    var16[0] = var19;
-    var19 = [3.468, 0];
-    var16[1] = var19;
-    var19 = [0, 3.446];
-    var16[2] = var19;
+    var16 = {};
+    var17 = new Array(9);
+    var19 = [0, 0];
+    var17[0] = var19;
+    var19 = [0, 0];
+    var17[1] = var19;
     var19 = new Array(2);
-    var19[0] = var22;
-    var19[1] = var6;
-    var16[3] = var19;
-    var14.i = var16;
-    var16 = new Array(4);
-    var19 = [0, 3.446];
-    var16[0] = var19;
-    var19 = new Array(2);
-    var19[0] = var22;
-    var19[1] = var6;
-    var16[1] = var19;
-    var19 = [0];
-    var19[1] = var20;
-    var16[2] = var19;
-    var19 = [3.468, 0];
-    var16[3] = var19;
-    var14.o = var16;
-    var19 = [326.478];
-    var23 = -152.049;
-    var19[1] = var23;
-    var16 = new Array(4);
-    var16[0] = var19;
-    var19 = [320.199];
-    var24 = -145.811;
-    var19[1] = var24;
-    var16[1] = var19;
-    var19 = [313.92];
-    var19[1] = var23;
-    var16[2] = var19;
-    var19 = [320.199];
-    var23 = -158.288;
-    var19[1] = var23;
-    var16[3] = var19;
-    var14.v = var16;
-    var14.c = var10;
-    var11.k = var14;
-    var13.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var13;
-    var13 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var16 = [0.937254905701, 0.921568632126, 0.439215689898, 1];
-    var14.k = var16;
-    var13.c = var14;
-    var14 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var13.o = var14;
-    var11[1] = var13;
-    var13 = {};
-    var13.ty = var8;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = [0, 0];
-    var14.k = var16;
-    var13.p = var14;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var16 = [0, 0];
-    var14.k = var16;
-    var13.a = var14;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var16 = [100, 100];
-    var14.k = var16;
-    var13.s = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var13.r = var14;
-    var14 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var13.o = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var13.sk = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var13.sa = var14;
-    var13.nm = var7;
-    var11[2] = var13;
-    var12.it = var11;
-    var11 = new Array(2);
-    var11[0] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var14 = [0, 0];
-    var13.k = var14;
-    var12.p = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var14 = [0, 0];
-    var13.k = var14;
-    var12.a = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var14 = [100, 100];
-    var13.k = var14;
-    var12.s = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var13;
-    var13 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var13;
-    var12.nm = var7;
-    var11[1] = var12;
-    var4.it = var11;
-    var0[9] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 11',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 11,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var13 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var11 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var14 = {};
-    var19 = [0];
-    var19[1] = var20;
-    var16 = new Array(4);
-    var16[0] = var19;
-    var19 = [3.468, 0];
-    var16[1] = var19;
-    var19 = [0, 3.446];
-    var16[2] = var19;
-    var19 = new Array(2);
-    var19[0] = var22;
-    var19[1] = var6;
-    var16[3] = var19;
-    var14.i = var16;
-    var16 = new Array(4);
-    var19 = [0, 3.446];
-    var16[0] = var19;
-    var19 = new Array(2);
-    var19[0] = var22;
-    var19[1] = var6;
-    var16[1] = var19;
-    var19 = [0];
-    var19[1] = var20;
-    var16[2] = var19;
-    var19 = [3.468, 0];
-    var16[3] = var19;
-    var14.o = var16;
-    var19 = [246.56];
-    var20 = -150.416;
-    var19[1] = var20;
-    var16 = new Array(4);
-    var16[0] = var19;
-    var19 = [240.281];
-    var22 = -144.177;
-    var19[1] = var22;
-    var16[1] = var19;
-    var19 = [234.002];
-    var19[1] = var20;
-    var16[2] = var19;
-    var19 = [240.281];
-    var20 = -156.655;
-    var19[1] = var20;
-    var16[3] = var19;
-    var14.v = var16;
-    var14.c = var10;
-    var11.k = var14;
-    var13.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var13;
-    var13 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var16 = [0.937254905701, 0.921568632126, 0.439215689898, 1];
-    var14.k = var16;
-    var13.c = var14;
-    var14 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var13.o = var14;
-    var11[1] = var13;
-    var13 = {};
-    var13.ty = var8;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = [0, 0];
-    var14.k = var16;
-    var13.p = var14;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var16 = [0, 0];
-    var14.k = var16;
-    var13.a = var14;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var16 = [100, 100];
-    var14.k = var16;
-    var13.s = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var13.r = var14;
-    var14 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var13.o = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var13.sk = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var13.sa = var14;
-    var13.nm = var7;
-    var11[2] = var13;
-    var12.it = var11;
-    var11 = new Array(2);
-    var11[0] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var14 = [0, 0];
-    var13.k = var14;
-    var12.p = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var14 = [0, 0];
-    var13.k = var14;
-    var12.a = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var14 = [100, 100];
-    var13.k = var14;
-    var12.s = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var13;
-    var13 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var13;
-    var12.nm = var7;
-    var11[1] = var12;
-    var4.it = var11;
-    var0[10] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 12',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 12,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var13 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var11 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var14 = {};
-    var19 = [0];
-    var26 = -2.619;
-    var19[1] = var26;
-    var16 = new Array(4);
-    var16[0] = var19;
-    var19 = [2.636, 0];
-    var16[1] = var19;
-    var19 = [0, 2.619];
-    var16[2] = var19;
-    var19 = new Array(2);
-    var27 = -2.636;
-    var19[0] = var27;
-    var19[1] = var6;
-    var16[3] = var19;
-    var14.i = var16;
-    var16 = new Array(4);
-    var19 = [0, 2.619];
-    var16[0] = var19;
+    var36 = -0.186;
+    var19[0] = var36;
+    var19[1] = var32;
+    var17[2] = var19;
     var19 = new Array(2);
     var19[0] = var27;
-    var19[1] = var6;
-    var16[1] = var19;
-    var19 = [0];
-    var19[1] = var26;
-    var16[2] = var19;
-    var19 = [2.636, 0];
-    var16[3] = var19;
-    var14.o = var16;
-    var19 = new Array(2);
-    var16 = -283.021;
-    var19[0] = var16;
-    var22 = 86.014;
-    var19[1] = var22;
-    var16 = new Array(4);
-    var16[0] = var19;
-    var19 = new Array(2);
-    var20 = -287.794;
-    var19[0] = var20;
-    var23 = 90.756;
-    var19[1] = var23;
-    var16[1] = var19;
-    var19 = new Array(2);
-    var23 = -292.567;
-    var19[0] = var23;
-    var19[1] = var22;
-    var16[2] = var19;
-    var19 = new Array(2);
-    var19[0] = var20;
-    var20 = 81.271;
-    var19[1] = var20;
-    var16[3] = var19;
-    var14.v = var16;
-    var14.c = var10;
-    var11.k = var14;
-    var13.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var13;
-    var13 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var16 = [0.937254905701, 0.921568632126, 0.439215689898, 1];
-    var14.k = var16;
-    var13.c = var14;
-    var14 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var13.o = var14;
-    var11[1] = var13;
-    var13 = {};
-    var13.ty = var8;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = [0, 0];
-    var14.k = var16;
-    var13.p = var14;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var16 = [0, 0];
-    var14.k = var16;
-    var13.a = var14;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var16 = [100, 100];
-    var14.k = var16;
-    var13.s = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var13.r = var14;
-    var14 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var13.o = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var13.sk = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var13.sa = var14;
-    var13.nm = var7;
-    var11[2] = var13;
-    var12.it = var11;
-    var11 = new Array(2);
-    var11[0] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var14 = [0, 0];
-    var13.k = var14;
-    var12.p = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var14 = [0, 0];
-    var13.k = var14;
-    var12.a = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var14 = [100, 100];
-    var13.k = var14;
-    var12.s = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var13;
-    var13 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var13;
-    var12.nm = var7;
-    var11[1] = var12;
-    var4.it = var11;
-    var23 = 12;
-    var0[11] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 13',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 13,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var13 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var11 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var14 = {};
-    var19 = [0];
-    var19[1] = var26;
-    var16 = new Array(4);
-    var16[0] = var19;
-    var19 = [2.636, 0];
-    var16[1] = var19;
-    var19 = [0, 2.619];
-    var16[2] = var19;
-    var19 = new Array(2);
-    var19[0] = var27;
-    var19[1] = var6;
-    var16[3] = var19;
-    var14.i = var16;
-    var16 = new Array(4);
-    var19 = [0, 2.619];
-    var16[0] = var19;
-    var19 = new Array(2);
-    var19[0] = var27;
-    var19[1] = var6;
-    var16[1] = var19;
-    var19 = [0];
-    var19[1] = var26;
-    var16[2] = var19;
-    var19 = [2.636, 0];
-    var16[3] = var19;
-    var14.o = var16;
-    var19 = new Array(2);
-    var16 = -148.102;
-    var19[0] = var16;
-    var22 = 87.452;
-    var19[1] = var22;
-    var16 = new Array(4);
-    var16[0] = var19;
-    var19 = new Array(2);
-    var20 = -152.875;
-    var19[0] = var20;
-    var24 = 92.194;
-    var19[1] = var24;
-    var16[1] = var19;
-    var19 = new Array(2);
-    var24 = -157.648;
-    var19[0] = var24;
-    var19[1] = var22;
-    var16[2] = var19;
-    var19 = new Array(2);
-    var19[0] = var20;
-    var20 = 82.71;
-    var19[1] = var20;
-    var16[3] = var19;
-    var14.v = var16;
-    var14.c = var10;
-    var11.k = var14;
-    var13.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var13;
-    var13 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var16 = [0.937254905701, 0.921568632126, 0.439215689898, 1];
-    var14.k = var16;
-    var13.c = var14;
-    var14 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var13.o = var14;
-    var11[1] = var13;
-    var13 = {};
-    var13.ty = var8;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = [0, 0];
-    var14.k = var16;
-    var13.p = var14;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var16 = [0, 0];
-    var14.k = var16;
-    var13.a = var14;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var16 = [100, 100];
-    var14.k = var16;
-    var13.s = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var13.r = var14;
-    var14 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var13.o = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var13.sk = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var13.sa = var14;
-    var13.nm = var7;
-    var11[2] = var13;
-    var12.it = var11;
-    var11 = new Array(2);
-    var11[0] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var14 = [0, 0];
-    var13.k = var14;
-    var12.p = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var14 = [0, 0];
-    var13.k = var14;
-    var12.a = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var14 = [100, 100];
-    var13.k = var14;
-    var12.s = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var13;
-    var13 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var13;
-    var12.nm = var7;
-    var11[1] = var12;
-    var4.it = var11;
-    var0[12] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 14',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 14,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var13 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var11 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var14 = {};
-    var19 = [0];
-    var19[1] = var26;
-    var16 = new Array(4);
-    var16[0] = var19;
-    var19 = [2.636, 0];
-    var16[1] = var19;
-    var19 = [0, 2.619];
-    var16[2] = var19;
-    var19 = new Array(2);
-    var19[0] = var27;
-    var19[1] = var6;
-    var16[3] = var19;
-    var14.i = var16;
-    var16 = new Array(4);
-    var19 = [0, 2.619];
-    var16[0] = var19;
-    var19 = new Array(2);
-    var19[0] = var27;
-    var19[1] = var6;
-    var16[1] = var19;
-    var19 = [0];
-    var19[1] = var26;
-    var16[2] = var19;
-    var19 = [2.636, 0];
-    var16[3] = var19;
-    var14.o = var16;
-    var19 = new Array(2);
-    var16 = -187.801;
-    var19[0] = var16;
-    var22 = -7.768;
-    var19[1] = var22;
-    var16 = new Array(4);
-    var16[0] = var19;
-    var19 = new Array(2);
-    var20 = -192.574;
-    var19[0] = var20;
-    var24 = -3.025;
-    var19[1] = var24;
-    var16[1] = var19;
-    var19 = new Array(2);
-    var24 = -197.347;
-    var19[0] = var24;
-    var19[1] = var22;
-    var16[2] = var19;
-    var19 = new Array(2);
-    var19[0] = var20;
-    var20 = -12.51;
-    var19[1] = var20;
-    var16[3] = var19;
-    var14.v = var16;
-    var14.c = var10;
-    var11.k = var14;
-    var13.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var13;
-    var13 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var16 = [0.937254905701, 0.921568632126, 0.439215689898, 1];
-    var14.k = var16;
-    var13.c = var14;
-    var14 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var13.o = var14;
-    var11[1] = var13;
-    var13 = {};
-    var13.ty = var8;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = [0, 0];
-    var14.k = var16;
-    var13.p = var14;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var16 = [0, 0];
-    var14.k = var16;
-    var13.a = var14;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var16 = [100, 100];
-    var14.k = var16;
-    var13.s = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var13.r = var14;
-    var14 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var13.o = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var13.sk = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var13.sa = var14;
-    var13.nm = var7;
-    var11[2] = var13;
-    var12.it = var11;
-    var11 = new Array(2);
-    var11[0] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var14 = [0, 0];
-    var13.k = var14;
-    var12.p = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var14 = [0, 0];
-    var13.k = var14;
-    var12.a = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var14 = [100, 100];
-    var13.k = var14;
-    var12.s = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var13;
-    var13 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var13;
-    var12.nm = var7;
-    var11[1] = var12;
-    var4.it = var11;
-    var0[13] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 15',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 15,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var13 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var11 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var14 = {};
-    var19 = [0];
-    var19[1] = var26;
-    var16 = new Array(4);
-    var16[0] = var19;
-    var19 = [2.636, 0];
-    var16[1] = var19;
-    var19 = [0, 2.619];
-    var16[2] = var19;
-    var19 = new Array(2);
-    var19[0] = var27;
-    var19[1] = var6;
-    var16[3] = var19;
-    var14.i = var16;
-    var16 = new Array(4);
-    var19 = [0, 2.619];
-    var16[0] = var19;
-    var19 = new Array(2);
-    var19[0] = var27;
-    var19[1] = var6;
-    var16[1] = var19;
-    var19 = [0];
-    var19[1] = var26;
-    var16[2] = var19;
-    var19 = [2.636, 0];
-    var16[3] = var19;
-    var14.o = var16;
-    var19 = new Array(2);
-    var16 = -217.431;
-    var19[0] = var16;
-    var22 = 58.397;
-    var19[1] = var22;
-    var16 = new Array(4);
-    var16[0] = var19;
-    var19 = new Array(2);
-    var20 = -222.204;
-    var19[0] = var20;
-    var24 = 63.139;
-    var19[1] = var24;
-    var16[1] = var19;
-    var19 = new Array(2);
-    var24 = -226.977;
-    var19[0] = var24;
-    var19[1] = var22;
-    var16[2] = var19;
-    var19 = new Array(2);
-    var19[0] = var20;
-    var20 = 53.655;
-    var19[1] = var20;
-    var16[3] = var19;
-    var14.v = var16;
-    var14.c = var10;
-    var11.k = var14;
-    var13.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var13;
-    var13 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var16 = [0.937254905701, 0.921568632126, 0.439215689898, 1];
-    var14.k = var16;
-    var13.c = var14;
-    var14 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var13.o = var14;
-    var11[1] = var13;
-    var13 = {};
-    var13.ty = var8;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = [0, 0];
-    var14.k = var16;
-    var13.p = var14;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var16 = [0, 0];
-    var14.k = var16;
-    var13.a = var14;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var16 = [100, 100];
-    var14.k = var16;
-    var13.s = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var13.r = var14;
-    var14 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var13.o = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var13.sk = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var13.sa = var14;
-    var13.nm = var7;
-    var11[2] = var13;
-    var12.it = var11;
-    var11 = new Array(2);
-    var11[0] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var14 = [0, 0];
-    var13.k = var14;
-    var12.p = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var14 = [0, 0];
-    var13.k = var14;
-    var12.a = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var14 = [100, 100];
-    var13.k = var14;
-    var12.s = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var13;
-    var13 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var13;
-    var12.nm = var7;
-    var11[1] = var12;
-    var4.it = var11;
-    var22 = 15;
-    var0[14] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 16',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 16,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var13 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var11 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var14 = {};
-    var19 = [0];
-    var19[1] = var26;
-    var16 = new Array(4);
-    var16[0] = var19;
-    var19 = [2.636, 0];
-    var16[1] = var19;
-    var19 = [0, 2.619];
-    var16[2] = var19;
-    var19 = new Array(2);
-    var19[0] = var27;
-    var19[1] = var6;
-    var16[3] = var19;
-    var14.i = var16;
-    var16 = new Array(4);
-    var19 = [0, 2.619];
-    var16[0] = var19;
-    var19 = new Array(2);
-    var19[0] = var27;
-    var19[1] = var6;
-    var16[1] = var19;
-    var19 = [0];
-    var19[1] = var26;
-    var16[2] = var19;
-    var19 = [2.636, 0];
-    var16[3] = var19;
-    var14.o = var16;
-    var19 = new Array(2);
-    var16 = -281.582;
-    var19[0] = var16;
-    var24 = 22.438;
-    var19[1] = var24;
-    var16 = new Array(4);
-    var16[0] = var19;
-    var19 = new Array(2);
-    var20 = -286.355;
-    var19[0] = var20;
-    var28 = 27.18;
+    var19[1] = var30;
+    var17[3] = var19;
+    var19 = [0.007];
+    var32 = -0.175;
+    var19[1] = var32;
+    var17[4] = var19;
+    var19 = [0.1];
+    var19[1] = var30;
+    var17[5] = var19;
+    var19 = [0.18];
     var19[1] = var28;
-    var16[1] = var19;
+    var17[6] = var19;
+    var19 = [0.293, 0];
+    var17[7] = var19;
+    var19 = [0, 0];
+    var17[8] = var19;
+    var16.i = var17;
+    var17 = new Array(9);
+    var19 = [0, 0];
+    var17[0] = var19;
+    var19 = [0.273, 0];
+    var17[1] = var19;
+    var19 = [0.173, 0.071];
+    var17[2] = var19;
+    var19 = [0.093, 0.155];
+    var17[3] = var19;
+    var19 = [0, 0.181];
+    var17[4] = var19;
     var19 = new Array(2);
-    var28 = -291.128;
-    var19[0] = var28;
-    var19[1] = var24;
-    var16[2] = var19;
+    var19[0] = var27;
+    var27 = 0.162;
+    var19[1] = var27;
+    var17[5] = var19;
     var19 = new Array(2);
-    var19[0] = var20;
-    var20 = 17.696;
+    var19[0] = var22;
+    var19[1] = var21;
+    var17[6] = var19;
+    var19 = [0, 0];
+    var17[7] = var19;
+    var19 = [0, 0];
+    var17[8] = var19;
+    var16.o = var17;
+    var19 = new Array(2);
+    var21 = -1.195;
+    var19[0] = var21;
+    var22 = -0.992;
+    var19[1] = var22;
+    var17 = new Array(9);
+    var17[0] = var19;
+    var19 = new Array(2);
+    var27 = -0.063;
+    var19[0] = var27;
+    var19[1] = var22;
+    var17[1] = var19;
+    var19 = [0.629];
+    var22 = -0.87;
+    var19[1] = var22;
+    var17[2] = var19;
+    var19 = [1.055];
+    var22 = -0.52;
+    var19[1] = var22;
+    var17[3] = var19;
+    var19 = [1.194];
     var19[1] = var20;
-    var16[3] = var19;
-    var14.v = var16;
-    var14.c = var10;
-    var11.k = var14;
-    var13.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var13;
-    var13 = {
+    var17[4] = var19;
+    var19 = [1.048, 0.495];
+    var17[5] = var19;
+    var19 = [0.602, 0.857];
+    var17[6] = var19;
+    var19 = new Array(2);
+    var41 = -0.143;
+    var19[0] = var41;
+    var20 = 0.992;
+    var19[1] = var20;
+    var17[7] = var19;
+    var19 = new Array(2);
+    var19[0] = var21;
+    var19[1] = var20;
+    var17[8] = var19;
+    var16.v = var17;
+    var16.c = var14;
+    var10.k = var16;
+    var6.ks = var10;
+    var5[1] = var6;
+    var6 = {
         'ty': 'fl',
         'c': null,
         'o': null,
@@ -3524,4191 +2716,75 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'mn': 'ADBE Vector Graphic - Fill',
         'hd': false
     };
-    var14 = {
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 4
     };
-    var16 = [0.937254905701, 0.921568632126, 0.439215689898, 1];
-    var14.k = var16;
-    var13.c = var14;
-    var14 = {
+    var16 = [1, 1, 1, 1];
+    var10.k = var16;
+    var6.c = var10;
+    var10 = {
         'a': 0,
         'k': 100,
         'ix': 5
     };
-    var13.o = var14;
-    var11[1] = var13;
-    var13 = {};
-    var13.ty = var8;
-    var14 = {
+    var6.o = var10;
+    var5[2] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 2
     };
-    var16 = [0, 0];
-    var14.k = var16;
-    var13.p = var14;
-    var14 = {
+    var16 = [439.706, 172.825];
+    var10.k = var16;
+    var6.p = var10;
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 1
     };
     var16 = [0, 0];
-    var14.k = var16;
-    var13.a = var14;
-    var14 = {
+    var10.k = var16;
+    var6.a = var10;
+    var10 = {
         'a': 0,
         'k': null,
         'ix': 3
     };
     var16 = [100, 100];
-    var14.k = var16;
-    var13.s = var14;
-    var14 = {
+    var10.k = var16;
+    var6.s = var10;
+    var10 = {
         'a': 0,
         'k': 0,
         'ix': 6
     };
-    var13.r = var14;
-    var14 = {
+    var6.r = var10;
+    var10 = {
         'a': 0,
         'k': 100,
         'ix': 7
     };
-    var13.o = var14;
-    var14 = {
+    var6.o = var10;
+    var10 = {
         'a': 0,
         'k': 0,
         'ix': 4
     };
-    var13.sk = var14;
-    var14 = {
+    var6.sk = var10;
+    var10 = {
         'a': 0,
         'k': 0,
         'ix': 5
     };
-    var13.sa = var14;
-    var13.nm = var7;
-    var11[2] = var13;
-    var12.it = var11;
-    var11 = new Array(2);
-    var11[0] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var14 = [0, 0];
-    var13.k = var14;
-    var12.p = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var14 = [0, 0];
-    var13.k = var14;
-    var12.a = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var14 = [100, 100];
-    var13.k = var14;
-    var12.s = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var13;
-    var13 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var13;
-    var12.nm = var7;
-    var11[1] = var12;
-    var4.it = var11;
-    var14 = 16;
-    var0[15] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 17',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 17,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var13 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var11 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = {};
-    var20 = [0];
-    var20[1] = var26;
-    var19 = new Array(4);
-    var19[0] = var20;
-    var20 = [2.636, 0];
-    var19[1] = var20;
-    var20 = [0, 2.619];
-    var19[2] = var20;
-    var20 = new Array(2);
-    var20[0] = var27;
-    var20[1] = var6;
-    var19[3] = var20;
-    var16.i = var19;
-    var19 = new Array(4);
-    var20 = [0, 2.619];
-    var19[0] = var20;
-    var20 = new Array(2);
-    var20[0] = var27;
-    var20[1] = var6;
-    var19[1] = var20;
-    var20 = [0];
-    var20[1] = var26;
-    var19[2] = var20;
-    var20 = [2.636, 0];
-    var19[3] = var20;
-    var16.o = var19;
-    var20 = new Array(2);
-    var19 = -131.993;
-    var20[0] = var19;
-    var28 = 32.507;
-    var20[1] = var28;
-    var19 = new Array(4);
-    var19[0] = var20;
-    var20 = new Array(2);
-    var24 = -136.766;
-    var20[0] = var24;
-    var29 = 37.249;
-    var20[1] = var29;
-    var19[1] = var20;
-    var20 = new Array(2);
-    var29 = -141.539;
-    var20[0] = var29;
-    var20[1] = var28;
-    var19[2] = var20;
-    var20 = new Array(2);
-    var20[0] = var24;
-    var24 = 27.764;
-    var20[1] = var24;
-    var19[3] = var20;
-    var16.v = var19;
-    var16.c = var10;
-    var11.k = var16;
-    var13.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var13;
-    var13 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var19 = [0.937254905701, 0.921568632126, 0.439215689898, 1];
-    var16.k = var19;
-    var13.c = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var13.o = var16;
-    var11[1] = var13;
-    var13 = {};
-    var13.ty = var8;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var19 = [0, 0];
-    var16.k = var19;
-    var13.p = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var19 = [0, 0];
-    var16.k = var19;
-    var13.a = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var19 = [100, 100];
-    var16.k = var19;
-    var13.s = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var13.r = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var13.o = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var13.sk = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var13.sa = var16;
-    var13.nm = var7;
-    var11[2] = var13;
-    var12.it = var11;
-    var11 = new Array(2);
-    var11[0] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = [0, 0];
-    var13.k = var16;
-    var12.p = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var16 = [0, 0];
-    var13.k = var16;
-    var12.a = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var16 = [100, 100];
-    var13.k = var16;
-    var12.s = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var13;
-    var13 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var13;
-    var12.nm = var7;
-    var11[1] = var12;
-    var4.it = var11;
-    var0[16] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 18',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 18,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var13 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var11 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = {};
-    var20 = [0];
-    var20[1] = var26;
-    var19 = new Array(4);
-    var19[0] = var20;
-    var20 = [2.636, 0];
-    var19[1] = var20;
-    var20 = [0, 2.619];
-    var19[2] = var20;
-    var20 = new Array(2);
-    var20[0] = var27;
-    var20[1] = var6;
-    var19[3] = var20;
-    var16.i = var19;
-    var19 = new Array(4);
-    var20 = [0, 2.619];
-    var19[0] = var20;
-    var20 = new Array(2);
-    var20[0] = var27;
-    var20[1] = var6;
-    var19[1] = var20;
-    var20 = [0];
-    var20[1] = var26;
-    var19[2] = var20;
-    var20 = [2.636, 0];
-    var19[3] = var20;
-    var16.o = var19;
-    var20 = new Array(2);
-    var19 = -213.116;
-    var20[0] = var19;
-    var28 = -63.288;
-    var20[1] = var28;
-    var19 = new Array(4);
-    var19[0] = var20;
-    var20 = new Array(2);
-    var24 = -217.889;
-    var20[0] = var24;
-    var29 = -58.546;
-    var20[1] = var29;
-    var19[1] = var20;
-    var20 = new Array(2);
-    var29 = -222.662;
-    var20[0] = var29;
-    var20[1] = var28;
-    var19[2] = var20;
-    var20 = new Array(2);
-    var20[0] = var24;
-    var24 = -68.031;
-    var20[1] = var24;
-    var19[3] = var20;
-    var16.v = var19;
-    var16.c = var10;
-    var11.k = var16;
-    var13.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var13;
-    var13 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var19 = [0.937254905701, 0.921568632126, 0.439215689898, 1];
-    var16.k = var19;
-    var13.c = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var13.o = var16;
-    var11[1] = var13;
-    var13 = {};
-    var13.ty = var8;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var19 = [0, 0];
-    var16.k = var19;
-    var13.p = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var19 = [0, 0];
-    var16.k = var19;
-    var13.a = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var19 = [100, 100];
-    var16.k = var19;
-    var13.s = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var13.r = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var13.o = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var13.sk = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var13.sa = var16;
-    var13.nm = var7;
-    var11[2] = var13;
-    var12.it = var11;
-    var11 = new Array(2);
-    var11[0] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = [0, 0];
-    var13.k = var16;
-    var12.p = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var16 = [0, 0];
-    var13.k = var16;
-    var12.a = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var16 = [100, 100];
-    var13.k = var16;
-    var12.s = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var13;
-    var13 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var13;
-    var12.nm = var7;
-    var11[1] = var12;
-    var4.it = var11;
-    var20 = 18;
-    var0[17] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 19',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 19,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var13 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var11 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = {};
-    var24 = [0];
-    var24[1] = var26;
-    var19 = new Array(4);
-    var19[0] = var24;
-    var24 = [2.636, 0];
-    var19[1] = var24;
-    var24 = [0, 2.619];
-    var19[2] = var24;
-    var24 = new Array(2);
-    var24[0] = var27;
-    var24[1] = var6;
-    var19[3] = var24;
-    var16.i = var19;
-    var19 = new Array(4);
-    var24 = [0, 2.619];
-    var19[0] = var24;
-    var24 = new Array(2);
-    var24[0] = var27;
-    var24[1] = var6;
-    var19[1] = var24;
-    var24 = [0];
-    var24[1] = var26;
-    var19[2] = var24;
-    var24 = [2.636, 0];
-    var19[3] = var24;
-    var16.o = var19;
-    var24 = new Array(2);
-    var19 = -147.24;
-    var24[0] = var19;
-    var29 = -91.711;
-    var24[1] = var29;
-    var19 = new Array(4);
-    var19[0] = var24;
-    var24 = new Array(2);
-    var28 = -152.013;
-    var24[0] = var28;
-    var32 = -86.969;
-    var24[1] = var32;
-    var19[1] = var24;
-    var24 = new Array(2);
-    var32 = -156.786;
-    var24[0] = var32;
-    var24[1] = var29;
-    var19[2] = var24;
-    var24 = new Array(2);
-    var24[0] = var28;
-    var28 = -96.453;
-    var24[1] = var28;
-    var19[3] = var24;
-    var16.v = var19;
-    var16.c = var10;
-    var11.k = var16;
-    var13.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var13;
-    var13 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var19 = [0.937254905701, 0.921568632126, 0.439215689898, 1];
-    var16.k = var19;
-    var13.c = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var13.o = var16;
-    var11[1] = var13;
-    var13 = {};
-    var13.ty = var8;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var19 = [0, 0];
-    var16.k = var19;
-    var13.p = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var19 = [0, 0];
-    var16.k = var19;
-    var13.a = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var19 = [100, 100];
-    var16.k = var19;
-    var13.s = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var13.r = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var13.o = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var13.sk = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var13.sa = var16;
-    var13.nm = var7;
-    var11[2] = var13;
-    var12.it = var11;
-    var11 = new Array(2);
-    var11[0] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = [0, 0];
-    var13.k = var16;
-    var12.p = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var16 = [0, 0];
-    var13.k = var16;
-    var12.a = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var16 = [100, 100];
-    var13.k = var16;
-    var12.s = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var13;
-    var13 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var13;
-    var12.nm = var7;
-    var11[1] = var12;
-    var4.it = var11;
-    var34 = 19;
-    var0[18] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 20',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 20,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var13 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var11 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = {};
-    var24 = [0];
-    var24[1] = var26;
-    var19 = new Array(4);
-    var19[0] = var24;
-    var24 = [2.636, 0];
-    var19[1] = var24;
-    var24 = [0, 2.619];
-    var19[2] = var24;
-    var24 = new Array(2);
-    var24[0] = var27;
-    var24[1] = var6;
-    var19[3] = var24;
-    var16.i = var19;
-    var19 = new Array(4);
-    var24 = [0, 2.619];
-    var19[0] = var24;
-    var24 = new Array(2);
-    var24[0] = var27;
-    var24[1] = var6;
-    var19[1] = var24;
-    var24 = [0];
-    var24[1] = var26;
-    var19[2] = var24;
-    var24 = [2.636, 0];
-    var19[3] = var24;
-    var16.o = var19;
-    var24 = new Array(2);
-    var19 = -198.733;
-    var24[0] = var19;
-    var27 = -112.136;
-    var24[1] = var27;
-    var19 = new Array(4);
-    var19[0] = var24;
-    var24 = new Array(2);
-    var26 = -203.506;
-    var24[0] = var26;
-    var28 = -107.393;
-    var24[1] = var28;
-    var19[1] = var24;
-    var24 = new Array(2);
-    var28 = -208.279;
-    var24[0] = var28;
-    var24[1] = var27;
-    var19[2] = var24;
-    var24 = new Array(2);
-    var24[0] = var26;
-    var26 = -116.878;
-    var24[1] = var26;
-    var19[3] = var24;
-    var16.v = var19;
-    var16.c = var10;
-    var11.k = var16;
-    var13.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var13;
-    var13 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var19 = [0.937254905701, 0.921568632126, 0.439215689898, 1];
-    var16.k = var19;
-    var13.c = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var13.o = var16;
-    var11[1] = var13;
-    var13 = {};
-    var13.ty = var8;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var19 = [0, 0];
-    var16.k = var19;
-    var13.p = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var19 = [0, 0];
-    var16.k = var19;
-    var13.a = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var19 = [100, 100];
-    var16.k = var19;
-    var13.s = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var13.r = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var13.o = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var13.sk = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var13.sa = var16;
-    var13.nm = var7;
-    var11[2] = var13;
-    var12.it = var11;
-    var11 = new Array(2);
-    var11[0] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = [0, 0];
-    var13.k = var16;
-    var12.p = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var16 = [0, 0];
-    var13.k = var16;
-    var12.a = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var16 = [100, 100];
-    var13.k = var16;
-    var12.s = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var13;
-    var13 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var13;
-    var12.nm = var7;
-    var11[1] = var12;
-    var4.it = var11;
-    var26 = 20;
-    var0[19] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 21',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 21,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var13 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var11 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = {};
-    var19 = new Array(12);
-    var24 = [0, 0];
-    var19[0] = var24;
-    var24 = [0, 0];
-    var19[1] = var24;
-    var24 = [0, 0];
-    var19[2] = var24;
-    var24 = [0, 0];
-    var19[3] = var24;
-    var24 = [0, 0];
-    var19[4] = var24;
-    var24 = [0];
-    var56 = -22.961;
-    var24[1] = var56;
-    var19[5] = var24;
-    var24 = [0, 0];
-    var19[6] = var24;
-    var24 = [0, 0];
-    var19[7] = var24;
-    var24 = [0, 0];
-    var19[8] = var24;
-    var24 = new Array(2);
-    var24[0] = var56;
-    var24[1] = var6;
-    var19[9] = var24;
-    var24 = [0, 0];
-    var19[10] = var24;
-    var24 = [0, 0];
-    var19[11] = var24;
-    var16.i = var19;
-    var19 = new Array(12);
-    var24 = [0, 0];
-    var19[0] = var24;
-    var24 = [0, 0];
-    var19[1] = var24;
-    var24 = [0, 0];
-    var19[2] = var24;
-    var24 = [0, 0];
-    var19[3] = var24;
-    var24 = new Array(2);
-    var24[0] = var56;
-    var24[1] = var6;
-    var19[4] = var24;
-    var24 = [0, 0];
-    var19[5] = var24;
-    var24 = [0, 0];
-    var19[6] = var24;
-    var24 = [0, 0];
-    var19[7] = var24;
-    var24 = [0, 22.961];
-    var19[8] = var24;
-    var24 = [0, 0];
-    var19[9] = var24;
-    var24 = [0, 0];
-    var19[10] = var24;
-    var24 = [0, 0];
-    var19[11] = var24;
-    var16.o = var19;
-    var24 = new Array(2);
-    var19 = -345.757;
-    var24[0] = var19;
-    var19 = 152.529;
-    var24[1] = var19;
-    var19 = new Array(12);
-    var19[0] = var24;
-    var24 = new Array(2);
-    var27 = -400.816;
-    var24[0] = var27;
-    var27 = -35.941;
-    var24[1] = var27;
-    var19[1] = var24;
-    var24 = new Array(2);
-    var27 = -344.699;
-    var24[0] = var27;
-    var27 = -10.529;
-    var24[1] = var27;
-    var19[2] = var24;
-    var24 = new Array(2);
-    var27 = -377.366;
-    var24[0] = var27;
-    var55 = -177.614;
-    var24[1] = var55;
-    var19[3] = var24;
-    var24 = new Array(2);
-    var49 = -426.465;
-    var24[0] = var49;
-    var24[1] = var55;
-    var19[4] = var24;
-    var24 = new Array(2);
-    var52 = -468.213;
-    var24[0] = var52;
-    var37 = -135.866;
-    var24[1] = var37;
-    var19[5] = var24;
-    var24 = new Array(2);
-    var24[0] = var52;
-    var54 = 122.162;
-    var24[1] = var54;
-    var19[6] = var24;
-    var24 = new Array(2);
-    var24[0] = var52;
-    var53 = 134.732;
-    var24[1] = var53;
-    var19[7] = var24;
-    var24 = new Array(2);
-    var24[0] = var52;
-    var51 = 212.583;
-    var24[1] = var51;
-    var19[8] = var24;
-    var24 = new Array(2);
-    var24[0] = var49;
-    var43 = 254.33;
-    var24[1] = var43;
-    var19[9] = var24;
-    var24 = new Array(2);
-    var27 = -378.112;
-    var24[0] = var27;
-    var24[1] = var43;
-    var19[10] = var24;
-    var24 = new Array(2);
-    var27 = -412.463;
-    var24[0] = var27;
-    var27 = 131.353;
-    var24[1] = var27;
-    var19[11] = var24;
-    var16.v = var19;
-    var16.c = var10;
-    var11.k = var16;
-    var13.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var13;
-    var13 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var19 = [0.141176477075, 0.286274522543, 0.258823543787, 1];
-    var16.k = var19;
-    var13.c = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var13.o = var16;
-    var11[1] = var13;
-    var13 = {};
-    var13.ty = var8;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var19 = [0, 0];
-    var16.k = var19;
-    var13.p = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var19 = [0, 0];
-    var16.k = var19;
-    var13.a = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var19 = [100, 100];
-    var16.k = var19;
-    var13.s = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var13.r = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var13.o = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var13.sk = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var13.sa = var16;
-    var13.nm = var7;
-    var11[2] = var13;
-    var12.it = var11;
-    var11 = new Array(2);
-    var11[0] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = [0, 0];
-    var13.k = var16;
-    var12.p = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var16 = [0, 0];
-    var13.k = var16;
-    var12.a = var13;
-    var13 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var16 = [100, 100];
-    var13.k = var16;
-    var12.s = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var13;
-    var13 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var13;
-    var13 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var13;
-    var12.nm = var7;
-    var11[1] = var12;
-    var4.it = var11;
-    var12 = 21;
-    var0[20] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 22',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 22,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var13 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1grass',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var16 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var11 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var19 = {};
-    var24 = new Array(12);
-    var27 = [0, 0];
-    var24[0] = var27;
-    var27 = new Array(2);
-    var27[0] = var56;
-    var27[1] = var6;
-    var24[1] = var27;
-    var27 = [0, 0];
-    var24[2] = var27;
-    var27 = [0, 0];
-    var24[3] = var27;
-    var27 = new Array(2);
-    var63 = -5.48;
-    var27[0] = var63;
-    var62 = -0.172;
-    var27[1] = var62;
-    var24[4] = var27;
-    var27 = new Array(2);
-    var61 = -0.05;
-    var27[0] = var61;
-    var60 = -0.002;
-    var27[1] = var60;
-    var24[5] = var27;
-    var27 = [0, 0];
-    var24[6] = var27;
-    var27 = [0, 0];
-    var24[7] = var27;
-    var27 = [0, 0];
-    var24[8] = var27;
-    var27 = [123.717, 56.17];
-    var24[9] = var27;
-    var27 = [46.562];
-    var58 = -18.127;
-    var27[1] = var58;
-    var24[10] = var27;
-    var27 = [0, 0];
-    var24[11] = var27;
-    var19.i = var24;
-    var24 = new Array(12);
-    var27 = [0, 22.961];
-    var24[0] = var27;
-    var27 = [0, 0];
-    var24[1] = var27;
-    var27 = [0, 0];
-    var24[2] = var27;
-    var27 = [5.673, 0.458];
-    var24[3] = var27;
-    var27 = [0.05, 0.002];
-    var24[4] = var27;
-    var27 = [0, 0];
-    var24[5] = var27;
-    var27 = [0, 0];
-    var24[6] = var27;
-    var27 = [0, 0];
-    var24[7] = var27;
-    var27 = new Array(2);
-    var57 = -143.947;
-    var27[0] = var57;
-    var50 = -21.473;
-    var27[1] = var50;
-    var24[8] = var27;
-    var27 = new Array(2);
-    var48 = -143.412;
-    var27[0] = var48;
-    var44 = -65.112;
-    var27[1] = var44;
-    var24[9] = var27;
-    var27 = [0, 0];
-    var24[10] = var27;
-    var27 = [0, 0];
-    var24[11] = var27;
-    var19.o = var24;
-    var27 = new Array(2);
-    var27[0] = var52;
-    var27[1] = var51;
-    var24 = new Array(12);
-    var24[0] = var27;
-    var27 = new Array(2);
-    var27[0] = var49;
-    var27[1] = var43;
-    var24[1] = var27;
-    var27 = new Array(2);
-    var47 = -223.065;
-    var27[0] = var47;
-    var27[1] = var43;
-    var24[2] = var27;
-    var27 = new Array(2);
-    var46 = -98.247;
-    var27[0] = var46;
-    var27[1] = var43;
-    var24[3] = var27;
-    var27 = new Array(2);
-    var42 = -81.491;
-    var27[0] = var42;
-    var38 = 255.257;
-    var27[1] = var38;
-    var24[4] = var27;
-    var27 = new Array(2);
-    var41 = -81.34;
-    var27[0] = var41;
-    var40 = 255.262;
-    var27[1] = var40;
-    var24[5] = var27;
-    var27 = new Array(2);
-    var39 = -80.871;
-    var27[0] = var39;
-    var27[1] = var38;
-    var24[6] = var27;
-    var27 = [9.048, 254.33];
-    var24[7] = var27;
-    var27 = [298.074, 254.33];
-    var24[8] = var27;
-    var27 = new Array(2);
-    var36 = -157.287;
-    var27[0] = var36;
-    var33 = 137.706;
-    var27[1] = var33;
-    var24[9] = var27;
-    var27 = new Array(2);
-    var27[0] = var52;
-    var32 = 124.41;
-    var27[1] = var32;
-    var24[10] = var27;
-    var27 = new Array(2);
-    var27[0] = var52;
-    var27[1] = var53;
-    var24[11] = var27;
-    var19.v = var24;
-    var19.c = var10;
-    var11.k = var19;
-    var16.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var16;
-    var16 = {
-        'ty': 'gf',
-        'o': null,
-        'r': 1,
-        'bm': 0
-    };
-    var19 = {
-        'a': 0,
-        'k': 100,
-        'ix': 10
-    };
-    var16.o = var19;
-    var19 = {};
-    var19.p = var21;
-    var24 = {
-        'a': 0,
-        'k': null,
-        'ix': 9
-    };
-    var27 = [0, 0.918, 1, 0.949, 0.5, 0.555, 0.733, 0.659, 1, 0.192, 0.467, 0.369];
-    var24.k = var27;
-    var19.k = var24;
-    var16.g = var19;
-    var19 = {
-        'a': 0,
-        'k': null,
-        'ix': 5
-    };
-    var24 = new Array(2);
-    var27 = -48.879;
-    var24[0] = var27;
-    var24[1] = var25;
-    var19.k = var24;
-    var16.s = var19;
-    var19 = {
-        'a': 0,
-        'k': null,
-        'ix': 6
-    };
-    var24 = new Array(2);
-    var27 = -118.57;
-    var24[0] = var27;
-    var27 = 349.592;
-    var24[1] = var27;
-    var19.k = var24;
-    var16.e = var19;
-    var16.t = var9;
-    var19 = 'Gradient Fill 1grass';
-    var16.nm = var19;
-    var28 = 'ADBE Vector Graphic - G-Fill';
-    var16.mn = var28;
-    var16.hd = var17;
-    var11[1] = var16;
-    var16 = {};
-    var16.ty = var8;
-    var19 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var24 = [0, 0];
-    var19.k = var24;
-    var16.p = var19;
-    var19 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var24 = [0, 0];
-    var19.k = var24;
-    var16.a = var19;
-    var19 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var24 = [100, 100];
-    var19.k = var24;
-    var16.s = var19;
-    var19 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var16.r = var19;
-    var19 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var16.o = var19;
-    var19 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var16.sk = var19;
-    var19 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var16.sa = var19;
-    var16.nm = var7;
-    var11[2] = var16;
-    var13.it = var11;
-    var11 = new Array(3);
-    var11[0] = var13;
-    var13 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 2',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 2,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var19 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var24 = {};
-    var27 = new Array(12);
-    var29 = [0, 0];
-    var27[0] = var29;
-    var29 = new Array(2);
-    var29[0] = var56;
-    var29[1] = var6;
-    var27[1] = var29;
-    var29 = [0, 0];
-    var27[2] = var29;
-    var29 = [0, 0];
-    var27[3] = var29;
-    var29 = new Array(2);
-    var29[0] = var63;
-    var29[1] = var62;
-    var27[4] = var29;
-    var29 = new Array(2);
-    var29[0] = var61;
-    var29[1] = var60;
-    var27[5] = var29;
-    var29 = [0, 0];
-    var27[6] = var29;
-    var29 = [0, 0];
-    var27[7] = var29;
-    var29 = [0, 0];
-    var27[8] = var29;
-    var29 = [123.717, 56.17];
-    var27[9] = var29;
-    var29 = [46.562];
-    var29[1] = var58;
-    var27[10] = var29;
-    var29 = [0, 0];
-    var27[11] = var29;
-    var24.i = var27;
-    var27 = new Array(12);
-    var29 = [0, 22.961];
-    var27[0] = var29;
-    var29 = [0, 0];
-    var27[1] = var29;
-    var29 = [0, 0];
-    var27[2] = var29;
-    var29 = [5.673, 0.458];
-    var27[3] = var29;
-    var29 = [0.05, 0.002];
-    var27[4] = var29;
-    var29 = [0, 0];
-    var27[5] = var29;
-    var29 = [0, 0];
-    var27[6] = var29;
-    var29 = [0, 0];
-    var27[7] = var29;
-    var29 = new Array(2);
-    var29[0] = var57;
-    var29[1] = var50;
-    var27[8] = var29;
-    var29 = new Array(2);
-    var29[0] = var48;
-    var29[1] = var44;
-    var27[9] = var29;
-    var29 = [0, 0];
-    var27[10] = var29;
-    var29 = [0, 0];
-    var27[11] = var29;
-    var24.o = var27;
-    var29 = new Array(2);
-    var29[0] = var52;
-    var29[1] = var51;
-    var27 = new Array(12);
-    var27[0] = var29;
-    var29 = new Array(2);
-    var29[0] = var49;
-    var29[1] = var43;
-    var27[1] = var29;
-    var29 = new Array(2);
-    var29[0] = var47;
-    var29[1] = var43;
-    var27[2] = var29;
-    var29 = new Array(2);
-    var29[0] = var46;
-    var29[1] = var43;
-    var27[3] = var29;
-    var29 = new Array(2);
-    var29[0] = var42;
-    var29[1] = var38;
-    var27[4] = var29;
-    var29 = new Array(2);
-    var29[0] = var41;
-    var29[1] = var40;
-    var27[5] = var29;
-    var29 = new Array(2);
-    var29[0] = var39;
-    var29[1] = var38;
-    var27[6] = var29;
-    var29 = [9.048, 254.33];
-    var27[7] = var29;
-    var29 = [298.074, 254.33];
-    var27[8] = var29;
-    var29 = new Array(2);
-    var29[0] = var36;
-    var29[1] = var33;
-    var27[9] = var29;
-    var29 = new Array(2);
-    var29[0] = var52;
-    var29[1] = var32;
-    var27[10] = var29;
-    var29 = new Array(2);
-    var29[0] = var52;
-    var29[1] = var53;
-    var27[11] = var29;
-    var24.v = var27;
-    var24.c = var10;
-    var16.k = var24;
-    var19.ks = var16;
-    var16 = new Array(3);
-    var16[0] = var19;
-    var19 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var24 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var27 = [0.345098048449, 0.600000023842, 0.549019634724, 1];
-    var24.k = var27;
-    var19.c = var24;
-    var24 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var19.o = var24;
-    var16[1] = var19;
-    var19 = {};
-    var19.ty = var8;
-    var24 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var27 = [0, 0];
-    var24.k = var27;
-    var19.p = var24;
-    var24 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var27 = [0, 0];
-    var24.k = var27;
-    var19.a = var24;
-    var24 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var27 = [100, 100];
-    var24.k = var27;
-    var19.s = var24;
-    var24 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var19.r = var24;
-    var24 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var19.o = var24;
-    var24 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var19.sk = var24;
-    var24 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var19.sa = var24;
-    var19.nm = var7;
-    var16[2] = var19;
-    var13.it = var16;
-    var11[1] = var13;
-    var13 = {};
-    var13.ty = var8;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var19 = [0, 0];
-    var16.k = var19;
-    var13.p = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var19 = [0, 0];
-    var16.k = var19;
-    var13.a = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var19 = [100, 100];
-    var16.k = var19;
-    var13.s = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var13.r = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var13.o = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var13.sk = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var13.sa = var16;
-    var13.nm = var7;
-    var11[2] = var13;
-    var4.it = var11;
-    var19 = 22;
-    var0[21] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 23',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 23,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var13 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var11 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = {};
-    var27 = new Array(2);
-    var27[0] = var61;
-    var27[1] = var60;
-    var24 = new Array(3);
-    var24[0] = var27;
-    var27 = [0, 0];
-    var24[1] = var27;
-    var27 = [0, 0];
-    var24[2] = var27;
-    var16.i = var24;
-    var24 = new Array(3);
-    var27 = [0, 0];
-    var24[0] = var27;
-    var27 = [0, 0];
-    var24[1] = var27;
-    var27 = [0.05, 0.002];
-    var24[2] = var27;
-    var16.o = var24;
-    var27 = new Array(2);
-    var27[0] = var41;
-    var27[1] = var40;
-    var24 = new Array(3);
-    var24[0] = var27;
-    var27 = new Array(2);
-    var27[0] = var39;
-    var27[1] = var38;
-    var24[1] = var27;
-    var27 = new Array(2);
-    var27[0] = var42;
-    var27[1] = var38;
-    var24[2] = var27;
-    var16.v = var24;
-    var16.c = var10;
-    var11.k = var16;
-    var13.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var13;
-    var13 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var24 = [0.160784319043, 0.800000011921, 0.478431373835, 1];
-    var16.k = var24;
-    var13.c = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var13.o = var16;
-    var11[1] = var13;
-    var13 = {};
-    var13.ty = var8;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var24 = [0, 0];
-    var16.k = var24;
-    var13.p = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var24 = [0, 0];
-    var16.k = var24;
-    var13.a = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var24 = [100, 100];
-    var16.k = var24;
-    var13.s = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var13.r = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var13.o = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var13.sk = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var13.sa = var16;
-    var13.nm = var7;
-    var11[2] = var13;
-    var4.it = var11;
-    var50 = 23;
-    var0[22] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 24',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 24,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var13 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var11 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = {};
-    var24 = new Array(11);
-    var27 = [0, 0];
-    var24[0] = var27;
-    var27 = [0, 0];
-    var24[1] = var27;
-    var27 = [0, 0];
-    var24[2] = var27;
-    var27 = [0, 0];
-    var24[3] = var27;
-    var27 = [0, 0];
-    var24[4] = var27;
-    var27 = [0, 0];
-    var24[5] = var27;
-    var27 = [0, 0];
-    var24[6] = var27;
-    var27 = [0, 0];
-    var24[7] = var27;
-    var27 = [0, 0];
-    var24[8] = var27;
-    var27 = [0, 0];
-    var24[9] = var27;
-    var27 = [0, 0];
-    var24[10] = var27;
-    var16.i = var24;
-    var24 = new Array(11);
-    var27 = [0, 0];
-    var24[0] = var27;
-    var27 = [0, 0];
-    var24[1] = var27;
-    var27 = [0, 0];
-    var24[2] = var27;
-    var27 = [0, 0];
-    var24[3] = var27;
-    var27 = [0, 0];
-    var24[4] = var27;
-    var27 = [0, 0];
-    var24[5] = var27;
-    var27 = [0, 0];
-    var24[6] = var27;
-    var27 = [0, 0];
-    var24[7] = var27;
-    var27 = [0, 0];
-    var24[8] = var27;
-    var27 = [0, 0];
-    var24[9] = var27;
-    var27 = [0, 0];
-    var24[10] = var27;
-    var16.o = var24;
-    var27 = new Array(2);
-    var24 = -169.64;
-    var27[0] = var24;
-    var24 = -155.941;
-    var27[1] = var24;
-    var24 = new Array(11);
-    var24[0] = var27;
-    var27 = new Array(2);
-    var29 = -262.816;
-    var27[0] = var29;
-    var29 = -47.941;
-    var27[1] = var29;
-    var24[1] = var27;
-    var27 = new Array(2);
-    var29 = -233.169;
-    var27[0] = var29;
-    var29 = -42.294;
-    var27[1] = var29;
-    var24[2] = var27;
-    var27 = new Array(2);
-    var29 = -311.522;
-    var27[0] = var29;
-    var29 = 33.941;
-    var27[1] = var29;
-    var24[3] = var27;
-    var27 = new Array(2);
-    var29 = -270.581;
-    var27[0] = var29;
-    var29 = 39.588;
-    var27[1] = var29;
-    var24[4] = var27;
-    var27 = new Array(2);
-    var29 = -351.051;
-    var27[0] = var29;
-    var29 = 118.647;
-    var27[1] = var29;
-    var24[5] = var27;
-    var27 = new Array(2);
-    var29 = -121.64;
-    var27[0] = var29;
-    var29 = 168.765;
-    var27[1] = var29;
-    var24[6] = var27;
-    var27 = new Array(2);
-    var29 = -158.346;
-    var27[0] = var29;
-    var29 = 62.882;
-    var27[1] = var29;
-    var24[7] = var27;
-    var27 = new Array(2);
-    var29 = -123.051;
-    var27[0] = var29;
-    var29 = 70.647;
-    var27[1] = var29;
-    var24[8] = var27;
-    var27 = new Array(2);
-    var29 = -160.463;
-    var27[0] = var29;
-    var29 = -25.353;
-    var27[1] = var29;
-    var24[9] = var27;
-    var27 = new Array(2);
-    var29 = -133.64;
-    var27[0] = var29;
-    var29 = -21.118;
-    var27[1] = var29;
-    var24[10] = var27;
-    var16.v = var24;
-    var16.c = var10;
-    var11.k = var16;
-    var13.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var13;
-    var13 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var24 = [0.141176477075, 0.286274522543, 0.258823543787, 1];
-    var16.k = var24;
-    var13.c = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var13.o = var16;
-    var11[1] = var13;
-    var13 = {};
-    var13.ty = var8;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var24 = [0, 0];
-    var16.k = var24;
-    var13.p = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var24 = [0, 0];
-    var16.k = var24;
-    var13.a = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var24 = [100, 100];
-    var16.k = var24;
-    var13.s = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var13.r = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var13.o = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var13.sk = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var13.sa = var16;
-    var13.nm = var7;
-    var11[2] = var13;
-    var4.it = var11;
-    var0[23] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 25',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 25,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var13 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var11 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = {};
-    var27 = new Array(2);
-    var27[0] = var63;
-    var27[1] = var62;
-    var24 = new Array(4);
-    var24[0] = var27;
-    var27 = [0, 0];
-    var24[1] = var27;
-    var27 = [0, 0];
-    var24[2] = var27;
-    var27 = [0, 0];
-    var24[3] = var27;
-    var16.i = var24;
-    var24 = new Array(4);
-    var27 = [0, 0];
-    var24[0] = var27;
-    var27 = [0, 0];
-    var24[1] = var27;
-    var27 = [0, 0];
-    var24[2] = var27;
-    var27 = [5.673, 0.458];
-    var24[3] = var27;
-    var16.o = var24;
-    var27 = new Array(2);
-    var27[0] = var42;
-    var27[1] = var38;
-    var24 = new Array(4);
-    var24[0] = var27;
-    var27 = new Array(2);
-    var27[0] = var39;
-    var27[1] = var38;
-    var24[1] = var27;
-    var27 = [9.048, 254.33];
-    var24[2] = var27;
-    var27 = new Array(2);
-    var27[0] = var46;
-    var27[1] = var43;
-    var24[3] = var27;
-    var16.v = var24;
-    var16.c = var10;
-    var11.k = var16;
-    var13.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var13;
-    var13 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var24 = [0.341176480055, 0.949019610882, 0.529411792755, 1];
-    var16.k = var24;
-    var13.c = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var13.o = var16;
-    var11[1] = var13;
-    var13 = {};
-    var13.ty = var8;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var24 = [0, 0];
-    var16.k = var24;
-    var13.p = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var24 = [0, 0];
-    var16.k = var24;
-    var13.a = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var24 = [100, 100];
-    var16.k = var24;
-    var13.s = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var13.r = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var13.o = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var13.sk = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var13.sa = var16;
-    var13.nm = var7;
-    var11[2] = var13;
-    var4.it = var11;
-    var32 = 25;
-    var0[24] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 26',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 26,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var13 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1grass2',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var16 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var11 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var24 = {};
-    var27 = new Array(14);
-    var29 = [0, 0];
-    var27[0] = var29;
-    var29 = new Array(2);
-    var29[0] = var63;
-    var29[1] = var62;
-    var27[1] = var29;
-    var29 = new Array(2);
-    var29[0] = var61;
-    var29[1] = var60;
-    var27[2] = var29;
-    var29 = [0, 0];
-    var27[3] = var29;
-    var29 = [0, 0];
-    var27[4] = var29;
-    var29 = [0, 0];
-    var27[5] = var29;
-    var29 = new Array(2);
-    var59 = -2.823;
-    var29[0] = var59;
-    var58 = 0.608;
-    var29[1] = var58;
-    var27[6] = var29;
-    var29 = [0, 19.964];
-    var27[7] = var29;
-    var29 = [0, 0];
-    var27[8] = var29;
-    var29 = [0, 0];
-    var27[9] = var29;
-    var29 = [175.401];
-    var70 = -52.695;
-    var29[1] = var70;
-    var27[10] = var29;
-    var29 = [94.235, 19.059];
-    var27[11] = var29;
-    var29 = new Array(2);
-    var69 = -5.599;
-    var29[0] = var69;
-    var68 = -17.047;
-    var29[1] = var68;
-    var27[12] = var29;
-    var29 = [0, 0];
-    var27[13] = var29;
-    var24.i = var27;
-    var27 = new Array(14);
-    var29 = [5.673, 0.458];
-    var27[0] = var29;
-    var29 = [0.05, 0.002];
-    var27[1] = var29;
-    var29 = [0, 0];
-    var27[2] = var29;
-    var29 = [0, 0];
-    var27[3] = var29;
-    var29 = [0, 0];
-    var27[4] = var29;
-    var29 = [2.998, 0];
-    var27[5] = var29;
-    var29 = [18.799];
-    var57 = -4.048;
-    var29[1] = var57;
-    var27[6] = var29;
-    var29 = [0, 0];
-    var27[7] = var29;
-    var29 = [0, 0];
-    var27[8] = var29;
-    var29 = new Array(2);
-    var67 = -38.475;
-    var29[0] = var67;
-    var66 = -8.592;
-    var29[1] = var66;
-    var27[9] = var29;
-    var29 = new Array(2);
-    var65 = -246.706;
-    var29[0] = var65;
-    var64 = 74.118;
-    var29[1] = var64;
-    var27[10] = var29;
-    var29 = [0, 0];
-    var27[11] = var29;
-    var29 = [0, 0];
-    var27[12] = var29;
-    var29 = [0, 0];
-    var27[13] = var29;
-    var24.o = var27;
-    var29 = new Array(2);
-    var29[0] = var46;
-    var29[1] = var43;
-    var27 = new Array(14);
-    var27[0] = var29;
-    var29 = new Array(2);
-    var29[0] = var42;
-    var29[1] = var38;
-    var27[1] = var29;
-    var29 = new Array(2);
-    var29[0] = var41;
-    var29[1] = var40;
-    var27[2] = var29;
-    var29 = new Array(2);
-    var29[0] = var39;
-    var29[1] = var38;
-    var27[3] = var29;
-    var29 = [9.048, 254.33];
-    var27[4] = var29;
-    var29 = [300.513, 254.33];
-    var27[5] = var29;
-    var29 = [309.258, 253.395];
-    var27[6] = var29;
-    var29 = [342.261, 212.583];
-    var27[7] = var29;
-    var29 = [342.261, 117.575];
-    var27[8] = var29;
-    var29 = [342.261, 71.204];
-    var27[9] = var29;
-    var29 = [36.478, 108.059];
-    var27[10] = var29;
-    var29 = new Array(2);
-    var48 = -380.699;
-    var29[0] = var48;
-    var44 = 223.471;
-    var29[1] = var44;
-    var27[11] = var29;
-    var29 = new Array(2);
-    var36 = -370.955;
-    var29[0] = var36;
-    var29[1] = var43;
-    var27[12] = var29;
-    var29 = new Array(2);
-    var29[0] = var47;
-    var29[1] = var43;
-    var27[13] = var29;
-    var24.v = var27;
-    var24.c = var10;
-    var11.k = var24;
-    var16.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var16;
-    var16 = {
-        'ty': 'gf',
-        'o': null,
-        'r': 1,
-        'bm': 0
-    };
-    var24 = {
-        'a': 0,
-        'k': 100,
-        'ix': 10
-    };
-    var16.o = var24;
-    var24 = {};
-    var24.p = var21;
-    var27 = {
-        'a': 0,
-        'k': null,
-        'ix': 9
-    };
-    var29 = [0, 0.918, 1, 0.949, 0.5, 0.555, 0.733, 0.659, 1, 0.192, 0.467, 0.369];
-    var27.k = var29;
-    var24.k = var27;
-    var16.g = var24;
-    var24 = {
-        'a': 0,
-        'k': null,
-        'ix': 5
-    };
-    var27 = new Array(2);
-    var29 = -132.879;
-    var27[0] = var29;
-    var29 = -85;
-    var27[1] = var29;
-    var24.k = var27;
-    var16.s = var24;
-    var24 = {
-        'a': 0,
-        'k': null,
-        'ix': 6
-    };
-    var27 = [124.303, 453.721];
-    var24.k = var27;
-    var16.e = var24;
-    var16.t = var9;
-    var24 = 'Gradient Fill 1grass2';
-    var16.nm = var24;
-    var16.mn = var28;
-    var16.hd = var17;
-    var11[1] = var16;
-    var16 = {};
-    var16.ty = var8;
-    var24 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var27 = [0, 0];
-    var24.k = var27;
-    var16.p = var24;
-    var24 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var27 = [0, 0];
-    var24.k = var27;
-    var16.a = var24;
-    var24 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var27 = [100, 100];
-    var24.k = var27;
-    var16.s = var24;
-    var24 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var16.r = var24;
-    var24 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var16.o = var24;
-    var24 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var16.sk = var24;
-    var24 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var16.sa = var24;
-    var16.nm = var7;
-    var11[2] = var16;
-    var13.it = var11;
-    var11 = new Array(3);
-    var11[0] = var13;
-    var13 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 2',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 2,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var24 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var27 = {};
-    var29 = new Array(14);
-    var33 = [0, 0];
-    var29[0] = var33;
-    var33 = new Array(2);
-    var33[0] = var63;
-    var33[1] = var62;
-    var29[1] = var33;
-    var33 = new Array(2);
-    var33[0] = var61;
-    var33[1] = var60;
-    var29[2] = var33;
-    var33 = [0, 0];
-    var29[3] = var33;
-    var33 = [0, 0];
-    var29[4] = var33;
-    var33 = [0, 0];
-    var29[5] = var33;
-    var33 = new Array(2);
-    var33[0] = var59;
-    var33[1] = var58;
-    var29[6] = var33;
-    var33 = [0, 19.964];
-    var29[7] = var33;
-    var33 = [0, 0];
-    var29[8] = var33;
-    var33 = [0, 0];
-    var29[9] = var33;
-    var33 = [175.401];
-    var33[1] = var70;
-    var29[10] = var33;
-    var33 = [94.235, 19.059];
-    var29[11] = var33;
-    var33 = new Array(2);
-    var33[0] = var69;
-    var33[1] = var68;
-    var29[12] = var33;
-    var33 = [0, 0];
-    var29[13] = var33;
-    var27.i = var29;
-    var29 = new Array(14);
-    var33 = [5.673, 0.458];
-    var29[0] = var33;
-    var33 = [0.05, 0.002];
-    var29[1] = var33;
-    var33 = [0, 0];
-    var29[2] = var33;
-    var33 = [0, 0];
-    var29[3] = var33;
-    var33 = [0, 0];
-    var29[4] = var33;
-    var33 = [2.998, 0];
-    var29[5] = var33;
-    var33 = [18.799];
-    var33[1] = var57;
-    var29[6] = var33;
-    var33 = [0, 0];
-    var29[7] = var33;
-    var33 = [0, 0];
-    var29[8] = var33;
-    var33 = new Array(2);
-    var33[0] = var67;
-    var33[1] = var66;
-    var29[9] = var33;
-    var33 = new Array(2);
-    var33[0] = var65;
-    var33[1] = var64;
-    var29[10] = var33;
-    var33 = [0, 0];
-    var29[11] = var33;
-    var33 = [0, 0];
-    var29[12] = var33;
-    var33 = [0, 0];
-    var29[13] = var33;
-    var27.o = var29;
-    var33 = new Array(2);
-    var33[0] = var46;
-    var33[1] = var43;
-    var29 = new Array(14);
-    var29[0] = var33;
-    var33 = new Array(2);
-    var33[0] = var42;
-    var33[1] = var38;
-    var29[1] = var33;
-    var33 = new Array(2);
-    var33[0] = var41;
-    var33[1] = var40;
-    var29[2] = var33;
-    var33 = new Array(2);
-    var33[0] = var39;
-    var33[1] = var38;
-    var29[3] = var33;
-    var33 = [9.048, 254.33];
-    var29[4] = var33;
-    var33 = [300.513, 254.33];
-    var29[5] = var33;
-    var33 = [309.258, 253.395];
-    var29[6] = var33;
-    var33 = [342.261, 212.583];
-    var29[7] = var33;
-    var33 = [342.261, 117.575];
-    var29[8] = var33;
-    var33 = [342.261, 71.204];
-    var29[9] = var33;
-    var33 = [36.478, 108.059];
-    var29[10] = var33;
-    var33 = new Array(2);
-    var33[0] = var48;
-    var33[1] = var44;
-    var29[11] = var33;
-    var33 = new Array(2);
-    var33[0] = var36;
-    var33[1] = var43;
-    var29[12] = var33;
-    var33 = new Array(2);
-    var33[0] = var47;
-    var33[1] = var43;
-    var29[13] = var33;
-    var27.v = var29;
-    var27.c = var10;
-    var16.k = var27;
-    var24.ks = var16;
-    var16 = new Array(3);
-    var16[0] = var24;
-    var24 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var27 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var29 = [0.345098048449, 0.600000023842, 0.549019634724, 1];
-    var27.k = var29;
-    var24.c = var27;
-    var27 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var24.o = var27;
-    var16[1] = var24;
-    var24 = {};
-    var24.ty = var8;
-    var27 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var29 = [0, 0];
-    var27.k = var29;
-    var24.p = var27;
-    var27 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var29 = [0, 0];
-    var27.k = var29;
-    var24.a = var27;
-    var27 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var29 = [100, 100];
-    var27.k = var29;
-    var24.s = var27;
-    var27 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var24.r = var27;
-    var27 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var24.o = var27;
-    var27 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var24.sk = var27;
-    var27 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var24.sa = var27;
-    var24.nm = var7;
-    var16[2] = var24;
-    var13.it = var16;
-    var11[1] = var13;
-    var13 = {};
-    var13.ty = var8;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var24 = [0, 0];
-    var16.k = var24;
-    var13.p = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var24 = [0, 0];
-    var16.k = var24;
-    var13.a = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var24 = [100, 100];
-    var16.k = var24;
-    var13.s = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var13.r = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var13.o = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var13.sk = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var13.sa = var16;
-    var13.nm = var7;
-    var11[2] = var13;
-    var4.it = var11;
-    var16 = 26;
-    var0[25] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 27',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 27,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var13 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var24 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var11 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var27 = {};
-    var29 = new Array(10);
-    var33 = [0, 0];
-    var29[0] = var33;
-    var33 = [0, 0];
-    var29[1] = var33;
-    var33 = [0, 0];
-    var29[2] = var33;
-    var33 = [0, 0];
-    var29[3] = var33;
-    var33 = [0, 0];
-    var29[4] = var33;
-    var33 = [0, 0];
-    var29[5] = var33;
-    var33 = [0, 0];
-    var29[6] = var33;
-    var33 = [22.961, 0];
-    var29[7] = var33;
-    var33 = [0, 0];
-    var29[8] = var33;
-    var33 = [0, 0];
-    var29[9] = var33;
-    var27.i = var29;
-    var29 = new Array(10);
-    var33 = [0, 0];
-    var29[0] = var33;
-    var33 = [0, 0];
-    var29[1] = var33;
-    var33 = [0, 0];
-    var29[2] = var33;
-    var33 = [0, 0];
-    var29[3] = var33;
-    var33 = [0, 0];
-    var29[4] = var33;
-    var33 = [0, 0];
-    var29[5] = var33;
-    var33 = [0];
-    var33[1] = var56;
-    var29[6] = var33;
-    var33 = [0, 0];
-    var29[7] = var33;
-    var33 = [0, 0];
-    var29[8] = var33;
-    var33 = [0, 0];
-    var29[9] = var33;
-    var27.o = var29;
-    var33 = [254.241];
-    var29 = -98.585;
-    var33[1] = var29;
-    var29 = new Array(10);
-    var29[0] = var33;
-    var33 = [233.778, 6.135];
-    var29[1] = var33;
-    var33 = [276.509];
-    var36 = -13.124;
-    var33[1] = var36;
-    var29[2] = var33;
-    var33 = [257.772, 99.588];
-    var29[3] = var33;
-    var33 = [342.261, 98.799];
-    var29[4] = var33;
-    var33 = [342.261, 46.231];
-    var29[5] = var33;
-    var33 = [342.261];
-    var33[1] = var37;
-    var29[6] = var33;
-    var33 = [300.513];
-    var33[1] = var55;
-    var29[7] = var33;
-    var33 = [233.778];
-    var33[1] = var55;
-    var29[8] = var33;
-    var33 = [212.714];
-    var36 = -82.336;
-    var33[1] = var36;
-    var29[9] = var33;
-    var27.v = var29;
-    var27.c = var10;
-    var11.k = var27;
-    var24.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var24;
-    var24 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var27 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var29 = [0.141176477075, 0.286274522543, 0.258823543787, 1];
-    var27.k = var29;
-    var24.c = var27;
-    var27 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var24.o = var27;
-    var11[1] = var24;
-    var24 = {};
-    var24.ty = var8;
-    var27 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var29 = [0, 0];
-    var27.k = var29;
-    var24.p = var27;
-    var27 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var29 = [0, 0];
-    var27.k = var29;
-    var24.a = var27;
-    var27 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var29 = [100, 100];
-    var27.k = var29;
-    var24.s = var27;
-    var27 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var24.r = var27;
-    var27 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var24.o = var27;
-    var27 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var24.sk = var27;
-    var27 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var24.sa = var27;
-    var24.nm = var7;
-    var11[2] = var24;
-    var13.it = var11;
-    var11 = new Array(2);
-    var11[0] = var13;
-    var13 = {};
-    var13.ty = var8;
-    var24 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var27 = [0, 0];
-    var24.k = var27;
-    var13.p = var24;
-    var24 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var27 = [0, 0];
-    var24.k = var27;
-    var13.a = var24;
-    var24 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var27 = [100, 100];
-    var24.k = var27;
-    var13.s = var24;
-    var24 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var13.r = var24;
-    var24 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var13.o = var24;
-    var24 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var13.sk = var24;
-    var24 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var13.sa = var24;
-    var13.nm = var7;
-    var11[1] = var13;
-    var4.it = var11;
-    var48 = 27;
-    var0[26] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 28',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 28,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var13 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var11 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var24 = {};
-    var27 = new Array(11);
-    var29 = [0, 0];
-    var27[0] = var29;
-    var29 = [0, 0];
-    var27[1] = var29;
-    var29 = [0, 0];
-    var27[2] = var29;
-    var29 = [0, 0];
-    var27[3] = var29;
-    var29 = [0, 0];
-    var27[4] = var29;
-    var29 = [0, 0];
-    var27[5] = var29;
-    var29 = [0, 0];
-    var27[6] = var29;
-    var29 = [0, 0];
-    var27[7] = var29;
-    var29 = [0, 0];
-    var27[8] = var29;
-    var29 = [0, 0];
-    var27[9] = var29;
-    var29 = [0, 0];
-    var27[10] = var29;
-    var24.i = var27;
-    var27 = new Array(11);
-    var29 = [0, 0];
-    var27[0] = var29;
-    var29 = [0, 0];
-    var27[1] = var29;
-    var29 = [0, 0];
-    var27[2] = var29;
-    var29 = [0, 0];
-    var27[3] = var29;
-    var29 = [0, 0];
-    var27[4] = var29;
-    var29 = [0, 0];
-    var27[5] = var29;
-    var29 = [0, 0];
-    var27[6] = var29;
-    var29 = [0, 0];
-    var27[7] = var29;
-    var29 = [0, 0];
-    var27[8] = var29;
-    var29 = [0, 0];
-    var27[9] = var29;
-    var29 = [0, 0];
-    var27[10] = var29;
-    var24.o = var27;
-    var29 = new Array(2);
-    var27 = -320.699;
-    var29[0] = var27;
-    var27 = -74.833;
-    var29[1] = var27;
-    var27 = new Array(11);
-    var27[0] = var29;
-    var29 = new Array(2);
-    var33 = -368.734;
-    var29[0] = var33;
-    var33 = -0.946;
-    var29[1] = var33;
-    var27[1] = var29;
-    var29 = new Array(2);
-    var33 = -350.113;
-    var29[0] = var33;
-    var33 = 0.039;
-    var29[1] = var33;
-    var27[2] = var29;
-    var29 = new Array(2);
-    var33 = -391.722;
-    var29[0] = var33;
-    var33 = 53.243;
-    var29[1] = var33;
-    var27[3] = var29;
-    var29 = new Array(2);
-    var33 = -366.188;
-    var29[0] = var33;
-    var33 = 53.286;
-    var29[1] = var33;
-    var27[4] = var29;
-    var29 = new Array(2);
-    var33 = -408.858;
-    var29[0] = var33;
-    var33 = 108.396;
-    var29[1] = var33;
-    var27[5] = var29;
-    var29 = new Array(2);
-    var33 = -264.235;
-    var29[0] = var33;
-    var33 = 119.946;
-    var29[1] = var33;
-    var27[6] = var29;
-    var29 = new Array(2);
-    var33 = -295.536;
-    var29[0] = var33;
-    var33 = 58.187;
-    var29[1] = var33;
-    var27[7] = var29;
-    var29 = new Array(2);
-    var33 = -273.281;
-    var29[0] = var33;
-    var33 = 59.997;
-    var29[1] = var33;
-    var27[8] = var29;
-    var29 = new Array(2);
-    var33 = -304.191;
-    var29[0] = var33;
-    var33 = 4.346;
-    var29[1] = var33;
-    var27[9] = var29;
-    var29 = new Array(2);
-    var33 = -287.416;
-    var29[0] = var33;
-    var33 = 4.702;
-    var29[1] = var33;
-    var27[10] = var29;
-    var24.v = var27;
-    var24.c = var10;
-    var11.k = var24;
-    var13.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var13;
-    var13 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var24 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var27 = [0.141176477075, 0.286274522543, 0.258823543787, 1];
-    var24.k = var27;
-    var13.c = var24;
-    var24 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var13.o = var24;
-    var11[1] = var13;
-    var13 = {};
-    var13.ty = var8;
-    var24 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var27 = [0, 0];
-    var24.k = var27;
-    var13.p = var24;
-    var24 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var27 = [0, 0];
-    var24.k = var27;
-    var13.a = var24;
-    var24 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var27 = [100, 100];
-    var24.k = var27;
-    var13.s = var24;
-    var24 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var13.r = var24;
-    var27 = 42;
-    var24 = {
-        'a': 0,
-        'k': 42,
-        'ix': 7
-    };
-    var13.o = var24;
-    var24 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var13.sk = var24;
-    var24 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var13.sa = var24;
-    var13.nm = var7;
-    var11[2] = var13;
-    var4.it = var11;
-    var13 = 28;
-    var0[27] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 29',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 29,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var24 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var11 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var29 = {};
-    var33 = new Array(11);
-    var36 = [0, 0];
-    var33[0] = var36;
-    var36 = [0, 0];
-    var33[1] = var36;
-    var36 = [0, 0];
-    var33[2] = var36;
-    var36 = [0, 0];
-    var33[3] = var36;
-    var36 = [0, 0];
-    var33[4] = var36;
-    var36 = [0, 0];
-    var33[5] = var36;
-    var36 = [0, 0];
-    var33[6] = var36;
-    var36 = [0, 0];
-    var33[7] = var36;
-    var36 = [0, 0];
-    var33[8] = var36;
-    var36 = [0, 0];
-    var33[9] = var36;
-    var36 = [0, 0];
-    var33[10] = var36;
-    var29.i = var33;
-    var33 = new Array(11);
-    var36 = [0, 0];
-    var33[0] = var36;
-    var36 = [0, 0];
-    var33[1] = var36;
-    var36 = [0, 0];
-    var33[2] = var36;
-    var36 = [0, 0];
-    var33[3] = var36;
-    var36 = [0, 0];
-    var33[4] = var36;
-    var36 = [0, 0];
-    var33[5] = var36;
-    var36 = [0, 0];
-    var33[6] = var36;
-    var36 = [0, 0];
-    var33[7] = var36;
-    var36 = [0, 0];
-    var33[8] = var36;
-    var36 = [0, 0];
-    var33[9] = var36;
-    var36 = [0, 0];
-    var33[10] = var36;
-    var29.o = var33;
-    var36 = new Array(2);
-    var33 = -51.702;
-    var36[0] = var33;
-    var33 = -13.852;
-    var36[1] = var33;
-    var33 = new Array(11);
-    var33[0] = var36;
-    var36 = new Array(2);
-    var44 = -127.794;
-    var36[0] = var44;
-    var44 = 52.732;
-    var36[1] = var44;
-    var33[1] = var36;
-    var36 = new Array(2);
-    var44 = -106.931;
-    var36[0] = var44;
-    var44 = 59.219;
-    var36[1] = var44;
-    var33[2] = var36;
-    var36 = new Array(2);
-    var44 = -169.697;
-    var36[0] = var44;
-    var44 = 105.124;
-    var36[1] = var44;
-    var33[3] = var36;
-    var36 = new Array(2);
-    var44 = -140.707;
-    var36[0] = var44;
-    var44 = 112.594;
-    var36[1] = var44;
-    var33[4] = var36;
-    var36 = new Array(2);
-    var44 = -205.233;
-    var36[0] = var44;
-    var44 = 160.268;
-    var36[1] = var44;
-    var33[5] = var36;
-    var36 = new Array(2);
-    var44 = -44.332;
-    var36[0] = var44;
-    var44 = 214.907;
-    var36[1] = var44;
-    var33[6] = var36;
-    var36 = new Array(2);
-    var44 = -61.886;
-    var36[0] = var44;
-    var44 = 138.478;
-    var36[1] = var44;
-    var33[7] = var36;
-    var36 = new Array(2);
-    var44 = -37.137;
-    var36[0] = var44;
-    var44 = 146.922;
-    var36[1] = var44;
-    var33[8] = var36;
-    var36 = new Array(2);
-    var44 = -56.026;
-    var36[0] = var44;
-    var44 = 77.267;
-    var36[1] = var44;
-    var33[9] = var36;
-    var36 = new Array(2);
-    var44 = -37.077;
-    var36[0] = var44;
-    var44 = 82.532;
-    var36[1] = var44;
-    var33[10] = var36;
-    var29.v = var33;
-    var29.c = var10;
-    var11.k = var29;
-    var24.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var24;
-    var24 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var29 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var33 = [0.141176477075, 0.286274522543, 0.258823543787, 1];
-    var29.k = var33;
-    var24.c = var29;
-    var29 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var24.o = var29;
-    var11[1] = var24;
-    var24 = {};
-    var24.ty = var8;
-    var29 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var33 = [0, 0];
-    var29.k = var33;
-    var24.p = var29;
-    var29 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var33 = [0, 0];
-    var29.k = var33;
-    var24.a = var29;
-    var29 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var33 = [100, 100];
-    var29.k = var33;
-    var24.s = var29;
-    var29 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var24.r = var29;
-    var29 = {
-        'a': 0,
-        'k': 42,
-        'ix': 7
-    };
-    var24.o = var29;
-    var29 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var24.sk = var29;
-    var29 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var24.sa = var29;
-    var24.nm = var7;
-    var11[2] = var24;
-    var4.it = var11;
-    var44 = 29;
-    var0[28] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 30',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 30,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var24 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var11 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var29 = {};
-    var33 = new Array(11);
-    var36 = [0, 0];
-    var33[0] = var36;
-    var36 = [0, 0];
-    var33[1] = var36;
-    var36 = [0, 0];
-    var33[2] = var36;
-    var36 = [0, 0];
-    var33[3] = var36;
-    var36 = [0, 0];
-    var33[4] = var36;
-    var36 = [0, 0];
-    var33[5] = var36;
-    var36 = [0, 0];
-    var33[6] = var36;
-    var36 = [0, 0];
-    var33[7] = var36;
-    var36 = [0, 0];
-    var33[8] = var36;
-    var36 = [0, 0];
-    var33[9] = var36;
-    var36 = [0, 0];
-    var33[10] = var36;
-    var29.i = var33;
-    var33 = new Array(11);
-    var36 = [0, 0];
-    var33[0] = var36;
-    var36 = [0, 0];
-    var33[1] = var36;
-    var36 = [0, 0];
-    var33[2] = var36;
-    var36 = [0, 0];
-    var33[3] = var36;
-    var36 = [0, 0];
-    var33[4] = var36;
-    var36 = [0, 0];
-    var33[5] = var36;
-    var36 = [0, 0];
-    var33[6] = var36;
-    var36 = [0, 0];
-    var33[7] = var36;
-    var36 = [0, 0];
-    var33[8] = var36;
-    var36 = [0, 0];
-    var33[9] = var36;
-    var36 = [0, 0];
-    var33[10] = var36;
-    var29.o = var33;
-    var36 = [131.237];
-    var33 = -97.72;
-    var36[1] = var33;
-    var33 = new Array(11);
-    var33[0] = var36;
-    var36 = [102.544, 16.649];
-    var33[1] = var36;
-    var36 = [126.536, 9.807];
-    var33[2] = var36;
-    var36 = [96.992, 95.211];
-    var33[3] = var36;
-    var36 = [129.324, 84.174];
-    var33[4] = var36;
-    var36 = [99.264, 172.45];
-    var33[5] = var36;
-    var36 = [287.301, 124.244];
-    var33[6] = var36;
-    var36 = [220.863, 59.685];
-    var33[7] = var36;
-    var36 = [249.812, 52.309];
-    var33[8] = var36;
-    var36 = [186.522];
-    var64 = -4.69;
-    var36[1] = var64;
-    var33[9] = var36;
-    var36 = [207.905];
-    var64 = -11.526;
-    var36[1] = var64;
-    var33[10] = var36;
-    var29.v = var33;
-    var29.c = var10;
-    var11.k = var29;
-    var24.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var24;
-    var24 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var29 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var33 = [0.141176477075, 0.286274522543, 0.258823543787, 1];
-    var29.k = var33;
-    var24.c = var29;
-    var29 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var24.o = var29;
-    var11[1] = var24;
-    var24 = {};
-    var24.ty = var8;
-    var29 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var33 = [0, 0];
-    var29.k = var33;
-    var24.p = var29;
-    var29 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var33 = [0, 0];
-    var29.k = var33;
-    var24.a = var29;
-    var29 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var33 = [100, 100];
-    var29.k = var33;
-    var24.s = var29;
-    var29 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var24.r = var29;
-    var29 = {
-        'a': 0,
-        'k': 42,
-        'ix': 7
-    };
-    var24.o = var29;
-    var29 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var24.sk = var29;
-    var29 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var24.sa = var29;
-    var24.nm = var7;
-    var11[2] = var24;
-    var4.it = var11;
-    var0[29] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 31sky',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 31,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var24 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var11 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var29 = {};
-    var33 = new Array(21);
-    var36 = [22.961, 0];
-    var33[0] = var36;
-    var36 = [0, 0];
-    var33[1] = var36;
-    var36 = [0, 0];
-    var33[2] = var36;
-    var36 = [0, 0];
-    var33[3] = var36;
-    var36 = [0];
-    var36[1] = var56;
-    var33[4] = var36;
-    var36 = [0, 0];
-    var33[5] = var36;
-    var36 = [0, 0];
-    var33[6] = var36;
-    var36 = [0, 0];
-    var33[7] = var36;
-    var36 = new Array(2);
-    var36[0] = var56;
-    var36[1] = var6;
-    var33[8] = var36;
-    var36 = [0, 0];
-    var33[9] = var36;
-    var36 = [0, 0];
-    var33[10] = var36;
-    var36 = new Array(2);
-    var36[0] = var63;
-    var36[1] = var62;
-    var33[11] = var36;
-    var36 = new Array(2);
-    var36[0] = var61;
-    var36[1] = var60;
-    var33[12] = var36;
-    var36 = [0, 0];
-    var33[13] = var36;
-    var36 = [0, 0];
-    var33[14] = var36;
-    var36 = [0, 0];
-    var33[15] = var36;
-    var36 = new Array(2);
-    var36[0] = var59;
-    var36[1] = var58;
-    var33[16] = var36;
-    var36 = [0, 19.964];
-    var33[17] = var36;
-    var36 = [0, 0];
-    var33[18] = var36;
-    var36 = [0, 0];
-    var33[19] = var36;
-    var36 = [0, 0];
-    var33[20] = var36;
-    var29.i = var33;
-    var33 = new Array(21);
-    var36 = [0, 0];
-    var33[0] = var36;
-    var36 = [0, 0];
-    var33[1] = var36;
-    var36 = [0, 0];
-    var33[2] = var36;
-    var36 = new Array(2);
-    var36[0] = var56;
-    var36[1] = var6;
-    var33[3] = var36;
-    var36 = [0, 0];
-    var33[4] = var36;
-    var36 = [0, 0];
-    var33[5] = var36;
-    var36 = [0, 0];
-    var33[6] = var36;
-    var36 = [0, 22.961];
-    var33[7] = var36;
-    var36 = [0, 0];
-    var33[8] = var36;
-    var36 = [0, 0];
-    var33[9] = var36;
-    var36 = [5.673, 0.458];
-    var33[10] = var36;
-    var36 = [0.05, 0.002];
-    var33[11] = var36;
-    var36 = [0, 0];
-    var33[12] = var36;
-    var36 = [0, 0];
-    var33[13] = var36;
-    var36 = [0, 0];
-    var33[14] = var36;
-    var36 = [2.998, 0];
-    var33[15] = var36;
-    var36 = [18.799];
-    var36[1] = var57;
-    var33[16] = var36;
-    var36 = [0, 0];
-    var33[17] = var36;
-    var36 = [0, 0];
-    var33[18] = var36;
-    var36 = [0, 0];
-    var33[19] = var36;
-    var36 = [0];
-    var36[1] = var56;
-    var33[20] = var36;
-    var29.o = var33;
-    var36 = [300.513];
-    var36[1] = var55;
-    var33 = new Array(21);
-    var33[0] = var36;
-    var36 = new Array(2);
-    var56 = -27.393;
-    var36[0] = var56;
-    var36[1] = var55;
-    var33[1] = var36;
-    var36 = new Array(2);
-    var56 = -64.716;
-    var36[0] = var56;
-    var36[1] = var55;
-    var33[2] = var36;
-    var36 = new Array(2);
-    var36[0] = var49;
-    var36[1] = var55;
-    var33[3] = var36;
-    var36 = new Array(2);
-    var36[0] = var52;
-    var36[1] = var37;
-    var33[4] = var36;
-    var36 = new Array(2);
-    var36[0] = var52;
-    var36[1] = var54;
-    var33[5] = var36;
-    var36 = new Array(2);
-    var36[0] = var52;
-    var36[1] = var53;
-    var33[6] = var36;
-    var36 = new Array(2);
-    var36[0] = var52;
-    var36[1] = var51;
-    var33[7] = var36;
-    var36 = new Array(2);
-    var36[0] = var49;
-    var36[1] = var43;
-    var33[8] = var36;
-    var36 = new Array(2);
-    var36[0] = var47;
-    var36[1] = var43;
-    var33[9] = var36;
-    var36 = new Array(2);
-    var36[0] = var46;
-    var36[1] = var43;
-    var33[10] = var36;
-    var36 = new Array(2);
-    var36[0] = var42;
-    var36[1] = var38;
-    var33[11] = var36;
-    var36 = new Array(2);
-    var36[0] = var41;
-    var36[1] = var40;
-    var33[12] = var36;
-    var36 = new Array(2);
-    var36[0] = var39;
-    var36[1] = var38;
-    var33[13] = var36;
-    var36 = [9.048, 254.33];
-    var33[14] = var36;
-    var36 = [300.513, 254.33];
-    var33[15] = var36;
-    var36 = [309.258, 253.395];
-    var33[16] = var36;
-    var36 = [342.261, 212.583];
-    var33[17] = var36;
-    var36 = [342.261, 117.575];
-    var33[18] = var36;
-    var36 = [342.261, 46.231];
-    var33[19] = var36;
-    var36 = [342.261];
-    var36[1] = var37;
-    var33[20] = var36;
-    var29.v = var33;
-    var29.c = var10;
-    var11.k = var29;
-    var24.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var24;
-    var24 = {
-        'ty': 'gf',
-        'o': null,
-        'r': 1,
-        'bm': 0
-    };
-    var29 = {
-        'a': 0,
-        'k': 100,
-        'ix': 10
-    };
-    var24.o = var29;
-    var29 = {};
-    var29.p = var21;
-    var33 = {
-        'a': 0,
-        'k': null,
-        'ix': 9
-    };
-    var36 = [0.257, 0.345, 0.6, 0.549, 0.628, 0.345, 0.6, 0.549, 1, 0.345, 0.6, 0.549];
-    var33.k = var36;
-    var29.k = var33;
-    var24.g = var29;
-    var29 = {
-        'a': 0,
-        'k': null,
-        'ix': 5
-    };
-    var33 = new Array(2);
-    var36 = -47.879;
-    var33[0] = var36;
-    var36 = -139;
-    var33[1] = var36;
-    var29.k = var33;
-    var24.s = var29;
-    var29 = {
-        'a': 0,
-        'k': null,
-        'ix': 6
-    };
-    var33 = [278.367];
-    var36 = -142.226;
-    var33[1] = var36;
-    var29.k = var33;
-    var24.e = var29;
-    var24.t = var30;
-    var29 = {
-        'a': 0,
-        'k': 0,
-        'ix': 7
-    };
-    var24.h = var29;
-    var29 = {
-        'a': 0,
-        'k': 0,
-        'ix': 8
-    };
-    var24.a = var29;
-    var29 = 'Gradient Fill 1sky';
-    var24.nm = var29;
-    var24.mn = var28;
-    var24.hd = var17;
-    var11[1] = var24;
-    var24 = {};
-    var24.ty = var8;
-    var28 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var29 = [0, 0];
-    var28.k = var29;
-    var24.p = var28;
-    var28 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var29 = [0, 0];
-    var28.k = var29;
-    var24.a = var28;
-    var28 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var29 = [100, 100];
-    var28.k = var29;
-    var24.s = var28;
-    var28 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var24.r = var28;
-    var28 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var24.o = var28;
-    var28 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var24.sk = var28;
-    var28 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var24.sa = var28;
-    var24.nm = var7;
-    var11[2] = var24;
-    var4.it = var11;
-    var11 = 31;
-    var0[30] = var4;
+    var6.sa = var10;
+    var6.nm = var7;
+    var5[3] = var6;
+    var4.it = var5;
+    var0[8] = var4;
     var3.shapes = var0;
     var0 = new Array(1);
     var0[0] = var3;
@@ -7718,21 +2794,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1.assets = var0;
     var2 = {
         'ddd': 0,
-        'ind': 2,
-        'ty': 4,
-        'nm': 'Star_01',
-        'parent': 33,
+        'ind': 1,
+        'ty': 0,
+        'nm': 'Nitro_Logo',
+        'refId': 'comp_0',
         'sr': 1,
         'ks': null,
         'ao': 0,
-        'shapes': null,
-        'ip': 25,
-        'op': 39,
-        'st': 4294967275,
-        'ct': 1,
+        'w': 900,
+        'h': 600,
+        'ip': 0,
+        'op': 96,
+        'st': 0,
         'bm': 0
     };
-    var29 = 33;
     var0 = {};
     var3 = {
         'a': 0,
@@ -7752,12 +2827,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'ix': 2,
         'l': 2
     };
-    var4 = new Array(3);
-    var24 = -106.138;
-    var4[0] = var24;
-    var24 = 133.522;
-    var4[1] = var24;
-    var4[2] = var6;
+    var4 = [450, 300, 0];
     var3.k = var4;
     var0.p = var3;
     var3 = {
@@ -7766,2250 +2836,31 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'ix': 1,
         'l': 2
     };
-    var4 = [1084.112, 189.522, 0];
+    var4 = [450, 300, 0];
     var3.k = var4;
     var0.a = var3;
     var3 = {
-        'a': 1,
+        'a': 0,
         'k': null,
         'ix': 6,
         'l': 2
     };
-    var24 = {};
-    var4 = {};
-    var28 = [0, 0, 0];
-    var4.x = var28;
-    var28 = [1, 1, 1];
-    var4.y = var28;
-    var24.i = var4;
-    var4 = {};
-    var28 = [0.391, 0.391, 0.167];
-    var4.x = var28;
-    var28 = [0, 0, 0];
-    var4.y = var28;
-    var24.o = var4;
-    var24.t = var32;
-    var4 = [0, 0, 100];
-    var24.s = var4;
-    var4 = new Array(3);
-    var4[0] = var24;
-    var24 = {};
-    var28 = {};
-    var33 = [0.665, 0.665, 0.833];
-    var28.x = var33;
-    var33 = [1, 1, 1];
-    var28.y = var33;
-    var24.i = var28;
-    var28 = {};
-    var33 = [1, 1, 1];
-    var28.x = var33;
-    var33 = [0, 0, 0];
-    var28.y = var33;
-    var24.o = var28;
-    var28 = 32;
-    var24.t = var28;
-    var28 = [100, 100, 100];
-    var24.s = var28;
-    var4[1] = var24;
-    var24 = {};
-    var28 = 39;
-    var24.t = var28;
-    var33 = [0, 0, 100];
-    var24.s = var33;
-    var4[2] = var24;
+    var4 = [100, 100, 100];
     var3.k = var4;
     var0.s = var3;
     var2.ks = var0;
-    var3 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var24 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var33 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var36 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var0 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var37 = {};
-    var40 = new Array(2);
-    var43 = -0.41;
-    var40[0] = var43;
-    var39 = 3.494;
-    var40[1] = var39;
-    var38 = new Array(4);
-    var38[0] = var40;
-    var40 = new Array(2);
-    var49 = -11.976;
-    var40[0] = var49;
-    var41 = -1.818;
-    var40[1] = var41;
-    var38[1] = var40;
-    var40 = [0.403];
-    var42 = -3.473;
-    var40[1] = var42;
-    var38[2] = var40;
-    var40 = [11.983, 1.804];
-    var38[3] = var40;
-    var37.i = var38;
-    var38 = new Array(4);
-    var40 = [0.403, 3.494];
-    var38[0] = var40;
-    var40 = new Array(2);
-    var47 = -11.983;
-    var40[0] = var47;
-    var46 = 1.804;
-    var40[1] = var46;
-    var38[1] = var40;
-    var40 = new Array(2);
-    var40[0] = var43;
-    var40[1] = var42;
-    var38[2] = var40;
-    var40 = [11.976];
-    var40[1] = var41;
-    var38[3] = var40;
-    var37.o = var38;
-    var38 = new Array(4);
-    var40 = [1084.115, 163.951];
-    var38[0] = var40;
-    var40 = [1099.359, 189.522];
-    var38[1] = var40;
-    var40 = [1084.115, 215.093];
-    var38[2] = var40;
-    var40 = [1068.865, 189.522];
-    var38[3] = var40;
-    var37.v = var38;
-    var37.c = var10;
-    var0.k = var37;
-    var36.ks = var0;
-    var0 = new Array(3);
-    var0[0] = var36;
-    var36 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var37 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var38 = [1, 1, 1, 1];
-    var37.k = var38;
-    var36.c = var37;
-    var37 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var36.o = var37;
-    var0[1] = var36;
-    var36 = {};
-    var36.ty = var8;
-    var37 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var38 = [0, 0];
-    var37.k = var38;
-    var36.p = var37;
-    var37 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var38 = [0, 0];
-    var37.k = var38;
-    var36.a = var37;
-    var37 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var38 = [100, 100];
-    var37.k = var38;
-    var36.s = var37;
-    var37 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var36.r = var37;
-    var37 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var36.o = var37;
-    var37 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var36.sk = var37;
-    var37 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var36.sa = var37;
-    var36.nm = var7;
-    var0[2] = var36;
-    var33.it = var0;
-    var0 = new Array(2);
-    var0[0] = var33;
-    var33 = {};
-    var33.ty = var8;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var37 = [0, 0];
-    var36.k = var37;
-    var33.p = var36;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var37 = [0, 0];
-    var36.k = var37;
-    var33.a = var36;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var37 = [100, 100];
-    var36.k = var37;
-    var33.s = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var33.r = var36;
-    var36 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var33.o = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var33.sk = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var33.sa = var36;
-    var33.nm = var7;
-    var0[1] = var33;
-    var24.it = var0;
-    var0 = new Array(2);
-    var0[0] = var24;
-    var24 = {};
-    var24.ty = var8;
-    var33 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var36 = [0, 0];
-    var33.k = var36;
-    var24.p = var33;
-    var33 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var36 = [0, 0];
-    var33.k = var36;
-    var24.a = var33;
-    var33 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var36 = [100, 100];
-    var33.k = var36;
-    var24.s = var33;
-    var33 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var24.r = var33;
-    var33 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var24.o = var33;
-    var33 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var24.sk = var33;
-    var33 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var24.sa = var33;
-    var24.nm = var7;
-    var0[1] = var24;
-    var4.it = var0;
-    var0 = new Array(2);
-    var0[0] = var4;
-    var4 = {};
-    var4.ty = var8;
-    var24 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var33 = [0, 0];
-    var24.k = var33;
-    var4.p = var24;
-    var24 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var33 = [0, 0];
-    var24.k = var33;
-    var4.a = var24;
-    var24 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var33 = [100, 100];
-    var24.k = var33;
-    var4.s = var24;
-    var24 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var4.r = var24;
-    var24 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var4.o = var24;
-    var24 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var4.sk = var24;
-    var24 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var4.sa = var24;
-    var4.nm = var7;
-    var0[1] = var4;
-    var3.it = var0;
-    var0 = new Array(1);
-    var0[0] = var3;
-    var2.shapes = var0;
-    var0 = new Array(31);
+    var0 = new Array(21);
     var0[0] = var2;
     var2 = {
         'ddd': 0,
-        'ind': 3,
-        'ty': 4,
-        'nm': 'Star_02',
-        'parent': 33,
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'shapes': null,
-        'ip': 22,
-        'op': 36,
-        'st': 4294967272,
-        'ct': 1,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 0,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 2,
-        'l': 2
-    };
-    var24 = new Array(3);
-    var33 = -240.391;
-    var24[0] = var33;
-    var33 = 16.161;
-    var24[1] = var33;
-    var24[2] = var6;
-    var4.k = var24;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1,
-        'l': 2
-    };
-    var24 = [1381.859, 80.661, 0];
-    var4.k = var24;
-    var3.a = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 6,
-        'l': 2
-    };
-    var33 = {};
-    var24 = {};
-    var36 = [0, 0, 0];
-    var24.x = var36;
-    var36 = [1, 1, 1];
-    var24.y = var36;
-    var33.i = var24;
-    var24 = {};
-    var36 = [0.391, 0.391, 0.167];
-    var24.x = var36;
-    var36 = [0, 0, 0];
-    var24.y = var36;
-    var33.o = var24;
-    var33.t = var19;
-    var24 = [0, 0, 100];
-    var33.s = var24;
-    var24 = new Array(3);
-    var24[0] = var33;
-    var33 = {};
-    var36 = {};
-    var37 = [0.665, 0.665, 0.833];
-    var36.x = var37;
-    var37 = [1, 1, 1];
-    var36.y = var37;
-    var33.i = var36;
-    var36 = {};
-    var37 = [1, 1, 1];
-    var36.x = var37;
-    var37 = [0, 0, 0];
-    var36.y = var37;
-    var33.o = var36;
-    var33.t = var44;
-    var36 = [100, 100, 100];
-    var33.s = var36;
-    var24[1] = var33;
-    var33 = {};
-    var36 = 36;
-    var33.t = var36;
-    var36 = [0, 0, 100];
-    var33.s = var36;
-    var24[2] = var33;
-    var4.k = var24;
-    var3.s = var4;
-    var2.ks = var3;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 2',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var24 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var33 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var36 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var37 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var3 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var38 = {};
-    var40 = new Array(2);
-    var40[0] = var43;
-    var40[1] = var39;
-    var39 = new Array(4);
-    var39[0] = var40;
-    var40 = new Array(2);
-    var40[0] = var49;
-    var40[1] = var41;
-    var39[1] = var40;
-    var40 = [0.403];
-    var40[1] = var42;
-    var39[2] = var40;
-    var40 = [11.983, 1.804];
-    var39[3] = var40;
-    var38.i = var39;
-    var39 = new Array(4);
-    var40 = [0.403, 3.494];
-    var39[0] = var40;
-    var40 = new Array(2);
-    var40[0] = var47;
-    var40[1] = var46;
-    var39[1] = var40;
-    var40 = new Array(2);
-    var40[0] = var43;
-    var40[1] = var42;
-    var39[2] = var40;
-    var40 = [11.976];
-    var40[1] = var41;
-    var39[3] = var40;
-    var38.o = var39;
-    var39 = new Array(4);
-    var40 = [1381.863, 55.09];
-    var39[0] = var40;
-    var40 = [1397.107, 80.661];
-    var39[1] = var40;
-    var40 = [1381.863, 106.232];
-    var39[2] = var40;
-    var40 = [1366.612, 80.661];
-    var39[3] = var40;
-    var38.v = var39;
-    var38.c = var10;
-    var3.k = var38;
-    var37.ks = var3;
-    var3 = new Array(3);
-    var3[0] = var37;
-    var37 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var38 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var39 = [1, 1, 1, 1];
-    var38.k = var39;
-    var37.c = var38;
-    var38 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var37.o = var38;
-    var3[1] = var37;
-    var37 = {};
-    var37.ty = var8;
-    var38 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var39 = [0, 0];
-    var38.k = var39;
-    var37.p = var38;
-    var38 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var39 = [0, 0];
-    var38.k = var39;
-    var37.a = var38;
-    var38 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var39 = [100, 100];
-    var38.k = var39;
-    var37.s = var38;
-    var38 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var37.r = var38;
-    var38 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var37.o = var38;
-    var38 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var37.sk = var38;
-    var38 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var37.sa = var38;
-    var37.nm = var7;
-    var3[2] = var37;
-    var36.it = var3;
-    var3 = new Array(2);
-    var3[0] = var36;
-    var36 = {};
-    var36.ty = var8;
-    var37 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var38 = [0, 0];
-    var37.k = var38;
-    var36.p = var37;
-    var37 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var38 = [0, 0];
-    var37.k = var38;
-    var36.a = var37;
-    var37 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var38 = [100, 100];
-    var37.k = var38;
-    var36.s = var37;
-    var37 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var36.r = var37;
-    var37 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var36.o = var37;
-    var37 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var36.sk = var37;
-    var37 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var36.sa = var37;
-    var36.nm = var7;
-    var3[1] = var36;
-    var33.it = var3;
-    var3 = new Array(2);
-    var3[0] = var33;
-    var33 = {};
-    var33.ty = var8;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var37 = [0, 0];
-    var36.k = var37;
-    var33.p = var36;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var37 = [0, 0];
-    var36.k = var37;
-    var33.a = var36;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var37 = [100, 100];
-    var36.k = var37;
-    var33.s = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var33.r = var36;
-    var36 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var33.o = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var33.sk = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var33.sa = var36;
-    var33.nm = var7;
-    var3[1] = var33;
-    var24.it = var3;
-    var3 = new Array(2);
-    var3[0] = var24;
-    var24 = {};
-    var24.ty = var8;
-    var33 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var36 = [0, 0];
-    var33.k = var36;
-    var24.p = var33;
-    var33 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var36 = [0, 0];
-    var33.k = var36;
-    var24.a = var33;
-    var33 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var36 = [100, 100];
-    var33.k = var36;
-    var24.s = var33;
-    var33 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var24.r = var33;
-    var33 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var24.o = var33;
-    var33 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var24.sk = var33;
-    var33 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var24.sa = var33;
-    var24.nm = var7;
-    var3[1] = var24;
-    var4.it = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var2.shapes = var3;
-    var0[1] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 4,
-        'ty': 4,
-        'nm': 'Star_03',
-        'parent': 33,
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'shapes': null,
-        'ip': 28,
-        'op': 42,
-        'st': 4294967278,
-        'ct': 1,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 0,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 2,
-        'l': 2
-    };
-    var24 = [63.022, 209.581, 0];
-    var4.k = var24;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1,
-        'l': 2
-    };
-    var24 = [1428.272, 165.081, 0];
-    var4.k = var24;
-    var3.a = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 6,
-        'l': 2
-    };
-    var24 = {};
-    var33 = {};
-    var36 = [0, 0, 0];
-    var33.x = var36;
-    var36 = [1, 1, 1];
-    var33.y = var36;
-    var24.i = var33;
-    var33 = {};
-    var36 = [0.391, 0.391, 0.167];
-    var33.x = var36;
-    var36 = [0, 0, 0];
-    var33.y = var36;
-    var24.o = var33;
-    var24.t = var13;
-    var13 = [0, 0, 100];
-    var24.s = var13;
-    var13 = new Array(3);
-    var13[0] = var24;
-    var24 = {};
-    var33 = {};
-    var36 = [0.665, 0.665, 0.833];
-    var33.x = var36;
-    var36 = [1, 1, 1];
-    var33.y = var36;
-    var24.i = var33;
-    var33 = {};
-    var36 = [1, 1, 1];
-    var33.x = var36;
-    var36 = [0, 0, 0];
-    var33.y = var36;
-    var24.o = var33;
-    var39 = 35;
-    var24.t = var39;
-    var33 = [100, 100, 100];
-    var24.s = var33;
-    var13[1] = var24;
-    var24 = {};
-    var24.t = var27;
-    var27 = [0, 0, 100];
-    var24.s = var27;
-    var13[2] = var24;
-    var4.k = var13;
-    var3.s = var4;
-    var2.ks = var3;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 3',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var13 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var24 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var27 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var33 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var3 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var36 = {};
-    var38 = new Array(2);
-    var42 = -0.541;
-    var38[0] = var42;
-    var37 = 4.604;
-    var38[1] = var37;
-    var37 = new Array(4);
-    var37[0] = var38;
-    var38 = new Array(2);
-    var40 = -15.777;
-    var38[0] = var40;
-    var40 = -2.395;
-    var38[1] = var40;
-    var37[1] = var38;
-    var38 = [0.531];
-    var41 = -4.576;
-    var38[1] = var41;
-    var37[2] = var38;
-    var38 = [15.787, 2.376];
-    var37[3] = var38;
-    var36.i = var37;
-    var37 = new Array(4);
-    var38 = [0.531, 4.604];
-    var37[0] = var38;
-    var38 = new Array(2);
-    var43 = -15.787;
-    var38[0] = var43;
-    var43 = 2.376;
-    var38[1] = var43;
-    var37[1] = var38;
-    var38 = new Array(2);
-    var38[0] = var42;
-    var38[1] = var41;
-    var37[2] = var38;
-    var38 = [15.777];
-    var38[1] = var40;
-    var37[3] = var38;
-    var36.o = var37;
-    var37 = new Array(4);
-    var38 = [1428.276, 131.392];
-    var37[0] = var38;
-    var38 = [1448.359, 165.081];
-    var37[1] = var38;
-    var38 = [1428.276, 198.769];
-    var37[2] = var38;
-    var38 = [1408.185, 165.081];
-    var37[3] = var38;
-    var36.v = var37;
-    var36.c = var10;
-    var3.k = var36;
-    var33.ks = var3;
-    var3 = new Array(3);
-    var3[0] = var33;
-    var33 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var37 = [1, 1, 1, 1];
-    var36.k = var37;
-    var33.c = var36;
-    var36 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var33.o = var36;
-    var3[1] = var33;
-    var33 = {};
-    var33.ty = var8;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var37 = [0, 0];
-    var36.k = var37;
-    var33.p = var36;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var37 = [0, 0];
-    var36.k = var37;
-    var33.a = var36;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var37 = [100, 100];
-    var36.k = var37;
-    var33.s = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var33.r = var36;
-    var36 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var33.o = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var33.sk = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var33.sa = var36;
-    var33.nm = var7;
-    var3[2] = var33;
-    var27.it = var3;
-    var3 = new Array(2);
-    var3[0] = var27;
-    var27 = {};
-    var27.ty = var8;
-    var33 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var36 = [0, 0];
-    var33.k = var36;
-    var27.p = var33;
-    var33 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var36 = [0, 0];
-    var33.k = var36;
-    var27.a = var33;
-    var33 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var36 = [100, 100];
-    var33.k = var36;
-    var27.s = var33;
-    var33 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var27.r = var33;
-    var33 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var27.o = var33;
-    var33 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var27.sk = var33;
-    var33 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var27.sa = var33;
-    var27.nm = var7;
-    var3[1] = var27;
-    var24.it = var3;
-    var3 = new Array(2);
-    var3[0] = var24;
-    var24 = {};
-    var24.ty = var8;
-    var27 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var33 = [0, 0];
-    var27.k = var33;
-    var24.p = var27;
-    var27 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var33 = [0, 0];
-    var27.k = var33;
-    var24.a = var27;
-    var27 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var33 = [100, 100];
-    var27.k = var33;
-    var24.s = var27;
-    var27 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var24.r = var27;
-    var27 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var24.o = var27;
-    var27 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var24.sk = var27;
-    var27 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var24.sa = var27;
-    var24.nm = var7;
-    var3[1] = var24;
-    var13.it = var3;
-    var3 = new Array(2);
-    var3[0] = var13;
-    var13 = {};
-    var13.ty = var8;
-    var24 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var27 = [0, 0];
-    var24.k = var27;
-    var13.p = var24;
-    var24 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var27 = [0, 0];
-    var24.k = var27;
-    var13.a = var24;
-    var24 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var27 = [100, 100];
-    var24.k = var27;
-    var13.s = var24;
-    var24 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var13.r = var24;
-    var24 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var13.o = var24;
-    var24 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var13.sk = var24;
-    var24 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var13.sa = var24;
-    var13.nm = var7;
-    var3[1] = var13;
-    var4.it = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var2.shapes = var3;
-    var0[2] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 5,
-        'ty': 4,
-        'nm': 'Star_05',
-        'parent': 33,
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'shapes': null,
-        'ip': 31,
-        'op': 45,
-        'st': 4294967281,
-        'ct': 1,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 0,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 2,
-        'l': 2
-    };
-    var13 = [7.284, 7.542, 0];
-    var4.k = var13;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1,
-        'l': 2
-    };
-    var13 = [1051.534, 49.042, 0];
-    var4.k = var13;
-    var3.a = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 6,
-        'l': 2
-    };
-    var13 = {};
-    var24 = {};
-    var27 = [0, 0, 0];
-    var24.x = var27;
-    var27 = [1, 1, 1];
-    var24.y = var27;
-    var13.i = var24;
-    var24 = {};
-    var27 = [0.391, 0.391, 0.167];
-    var24.x = var27;
-    var27 = [0, 0, 0];
-    var24.y = var27;
-    var13.o = var24;
-    var13.t = var11;
-    var11 = [0, 0, 100];
-    var13.s = var11;
-    var11 = new Array(3);
-    var11[0] = var13;
-    var24 = {};
-    var13 = {};
-    var27 = [0.665, 0.665, 0.833];
-    var13.x = var27;
-    var27 = [1, 1, 1];
-    var13.y = var27;
-    var24.i = var13;
-    var13 = {};
-    var27 = [1, 1, 1];
-    var13.x = var27;
-    var27 = [0, 0, 0];
-    var13.y = var27;
-    var24.o = var13;
-    var13 = 38;
-    var24.t = var13;
-    var27 = [100, 100, 100];
-    var24.s = var27;
-    var11[1] = var24;
-    var24 = {};
-    var27 = 45;
-    var24.t = var27;
-    var33 = [0, 0, 100];
-    var24.s = var33;
-    var11[2] = var24;
-    var4.k = var11;
-    var3.s = var4;
-    var2.ks = var3;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 4',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var11 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var24 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var33 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var36 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var3 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var37 = {};
-    var41 = new Array(2);
-    var46 = -0.638;
-    var41[0] = var46;
-    var40 = 5.433;
-    var41[1] = var40;
-    var38 = new Array(4);
-    var38[0] = var41;
-    var41 = new Array(2);
-    var51 = -18.619;
-    var41[0] = var51;
-    var42 = -2.826;
-    var41[1] = var42;
-    var38[1] = var41;
-    var41 = [0.627];
-    var43 = -5.4;
-    var41[1] = var43;
-    var38[2] = var41;
-    var41 = [18.63, 2.804];
-    var38[3] = var41;
-    var37.i = var38;
-    var38 = new Array(4);
-    var41 = [0.627, 5.433];
-    var38[0] = var41;
-    var41 = new Array(2);
-    var49 = -18.63;
-    var41[0] = var49;
-    var47 = 2.804;
-    var41[1] = var47;
-    var38[1] = var41;
-    var41 = new Array(2);
-    var41[0] = var46;
-    var41[1] = var43;
-    var38[2] = var41;
-    var41 = [18.619];
-    var41[1] = var42;
-    var38[3] = var41;
-    var37.o = var38;
-    var38 = new Array(4);
-    var41 = [1051.539, 9.285];
-    var38[0] = var41;
-    var41 = [1075.24, 49.042];
-    var38[1] = var41;
-    var41 = [1051.539, 88.8];
-    var38[2] = var41;
-    var41 = [1027.828, 49.042];
-    var38[3] = var41;
-    var37.v = var38;
-    var37.c = var10;
-    var3.k = var37;
-    var36.ks = var3;
-    var3 = new Array(3);
-    var3[0] = var36;
-    var36 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var37 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var38 = [1, 1, 1, 1];
-    var37.k = var38;
-    var36.c = var37;
-    var37 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var36.o = var37;
-    var3[1] = var36;
-    var36 = {};
-    var36.ty = var8;
-    var37 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var38 = [0, 0];
-    var37.k = var38;
-    var36.p = var37;
-    var37 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var38 = [0, 0];
-    var37.k = var38;
-    var36.a = var37;
-    var37 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var38 = [100, 100];
-    var37.k = var38;
-    var36.s = var37;
-    var37 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var36.r = var37;
-    var37 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var36.o = var37;
-    var37 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var36.sk = var37;
-    var37 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var36.sa = var37;
-    var36.nm = var7;
-    var3[2] = var36;
-    var33.it = var3;
-    var3 = new Array(2);
-    var3[0] = var33;
-    var33 = {};
-    var33.ty = var8;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var37 = [0, 0];
-    var36.k = var37;
-    var33.p = var36;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var37 = [0, 0];
-    var36.k = var37;
-    var33.a = var36;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var37 = [100, 100];
-    var36.k = var37;
-    var33.s = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var33.r = var36;
-    var36 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var33.o = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var33.sk = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var33.sa = var36;
-    var33.nm = var7;
-    var3[1] = var33;
-    var24.it = var3;
-    var3 = new Array(2);
-    var3[0] = var24;
-    var24 = {};
-    var24.ty = var8;
-    var33 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var36 = [0, 0];
-    var33.k = var36;
-    var24.p = var33;
-    var33 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var36 = [0, 0];
-    var33.k = var36;
-    var24.a = var33;
-    var33 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var36 = [100, 100];
-    var33.k = var36;
-    var24.s = var33;
-    var33 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var24.r = var33;
-    var33 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var24.o = var33;
-    var33 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var24.sk = var33;
-    var33 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var24.sa = var33;
-    var24.nm = var7;
-    var3[1] = var24;
-    var11.it = var3;
-    var3 = new Array(2);
-    var3[0] = var11;
-    var11 = {};
-    var11.ty = var8;
-    var24 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var33 = [0, 0];
-    var24.k = var33;
-    var11.p = var24;
-    var24 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var33 = [0, 0];
-    var24.k = var33;
-    var11.a = var24;
-    var24 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var33 = [100, 100];
-    var24.k = var33;
-    var11.s = var24;
-    var24 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var11.r = var24;
-    var24 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var11.o = var24;
-    var24 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var11.sk = var24;
-    var24 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var11.sa = var24;
-    var11.nm = var7;
-    var3[1] = var11;
-    var4.it = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var2.shapes = var3;
-    var0[3] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 6,
-        'ty': 4,
-        'nm': 'Star_04',
-        'parent': 33,
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'shapes': null,
-        'ip': 34,
-        'op': 48,
-        'st': 4294967284,
-        'ct': 1,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 0,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 2,
-        'l': 2
-    };
-    var11 = new Array(3);
-    var24 = -234.716;
-    var11[0] = var24;
-    var24 = 155.542;
-    var11[1] = var24;
-    var11[2] = var6;
-    var4.k = var11;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1,
-        'l': 2
-    };
-    var11 = [1051.534, 49.042, 0];
-    var4.k = var11;
-    var3.a = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 6,
-        'l': 2
-    };
-    var24 = {};
-    var11 = {};
-    var33 = [0, 0, 0];
-    var11.x = var33;
-    var33 = [1, 1, 1];
-    var11.y = var33;
-    var24.i = var11;
-    var11 = {};
-    var33 = [0.391, 0.391, 0.167];
-    var11.x = var33;
-    var33 = [0, 0, 0];
-    var11.y = var33;
-    var24.o = var11;
-    var33 = 34;
-    var24.t = var33;
-    var11 = [0, 0, 100];
-    var24.s = var11;
-    var11 = new Array(3);
-    var11[0] = var24;
-    var24 = {};
-    var36 = {};
-    var37 = [0.665, 0.665, 0.833];
-    var36.x = var37;
-    var37 = [1, 1, 1];
-    var36.y = var37;
-    var24.i = var36;
-    var36 = {};
-    var37 = [1, 1, 1];
-    var36.x = var37;
-    var37 = [0, 0, 0];
-    var36.y = var37;
-    var24.o = var36;
-    var36 = 41;
-    var24.t = var36;
-    var36 = [80, 80, 100];
-    var24.s = var36;
-    var11[1] = var24;
-    var24 = {};
-    var36 = 48;
-    var24.t = var36;
-    var36 = [0, 0, 100];
-    var24.s = var36;
-    var11[2] = var24;
-    var4.k = var11;
-    var3.s = var4;
-    var2.ks = var3;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 4',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var11 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var24 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var36 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var37 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var3 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var38 = {};
-    var41 = new Array(2);
-    var41[0] = var46;
-    var41[1] = var40;
-    var40 = new Array(4);
-    var40[0] = var41;
-    var41 = new Array(2);
-    var41[0] = var51;
-    var41[1] = var42;
-    var40[1] = var41;
-    var41 = [0.627];
-    var41[1] = var43;
-    var40[2] = var41;
-    var41 = [18.63, 2.804];
-    var40[3] = var41;
-    var38.i = var40;
-    var40 = new Array(4);
-    var41 = [0.627, 5.433];
-    var40[0] = var41;
-    var41 = new Array(2);
-    var41[0] = var49;
-    var41[1] = var47;
-    var40[1] = var41;
-    var41 = new Array(2);
-    var41[0] = var46;
-    var41[1] = var43;
-    var40[2] = var41;
-    var41 = [18.619];
-    var41[1] = var42;
-    var40[3] = var41;
-    var38.o = var40;
-    var40 = new Array(4);
-    var41 = [1051.539, 9.285];
-    var40[0] = var41;
-    var41 = [1075.24, 49.042];
-    var40[1] = var41;
-    var41 = [1051.539, 88.8];
-    var40[2] = var41;
-    var41 = [1027.828, 49.042];
-    var40[3] = var41;
-    var38.v = var40;
-    var38.c = var10;
-    var3.k = var38;
-    var37.ks = var3;
-    var3 = new Array(3);
-    var3[0] = var37;
-    var37 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var38 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var40 = [1, 1, 1, 1];
-    var38.k = var40;
-    var37.c = var38;
-    var38 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var37.o = var38;
-    var3[1] = var37;
-    var37 = {};
-    var37.ty = var8;
-    var38 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var40 = [0, 0];
-    var38.k = var40;
-    var37.p = var38;
-    var38 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var40 = [0, 0];
-    var38.k = var40;
-    var37.a = var38;
-    var38 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var40 = [100, 100];
-    var38.k = var40;
-    var37.s = var38;
-    var38 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var37.r = var38;
-    var38 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var37.o = var38;
-    var38 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var37.sk = var38;
-    var38 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var37.sa = var38;
-    var37.nm = var7;
-    var3[2] = var37;
-    var36.it = var3;
-    var3 = new Array(2);
-    var3[0] = var36;
-    var36 = {};
-    var36.ty = var8;
-    var37 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var38 = [0, 0];
-    var37.k = var38;
-    var36.p = var37;
-    var37 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var38 = [0, 0];
-    var37.k = var38;
-    var36.a = var37;
-    var37 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var38 = [100, 100];
-    var37.k = var38;
-    var36.s = var37;
-    var37 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var36.r = var37;
-    var37 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var36.o = var37;
-    var37 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var36.sk = var37;
-    var37 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var36.sa = var37;
-    var36.nm = var7;
-    var3[1] = var36;
-    var24.it = var3;
-    var3 = new Array(2);
-    var3[0] = var24;
-    var24 = {};
-    var24.ty = var8;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var37 = [0, 0];
-    var36.k = var37;
-    var24.p = var36;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var37 = [0, 0];
-    var36.k = var37;
-    var24.a = var36;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var37 = [100, 100];
-    var36.k = var37;
-    var24.s = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var24.r = var36;
-    var36 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var24.o = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var24.sk = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var24.sa = var36;
-    var24.nm = var7;
-    var3[1] = var24;
-    var11.it = var3;
-    var3 = new Array(2);
-    var3[0] = var11;
-    var11 = {};
-    var11.ty = var8;
-    var24 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var36 = [0, 0];
-    var24.k = var36;
-    var11.p = var24;
-    var24 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var36 = [0, 0];
-    var24.k = var36;
-    var11.a = var24;
-    var24 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var36 = [100, 100];
-    var24.k = var36;
-    var11.s = var24;
-    var24 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var11.r = var24;
-    var24 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var11.o = var24;
-    var24 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var11.sk = var24;
-    var24 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var11.sa = var24;
-    var11.nm = var7;
-    var3[1] = var11;
-    var4.it = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var2.shapes = var3;
-    var24 = -12;
-    var0[4] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 8,
+        'ind': 2,
         'ty': 3,
-        'nm': 'Face_Ctrl',
-        'parent': 15,
+        'nm': 'Null 9',
         'sr': 1,
         'ks': null,
         'ao': 0,
         'ip': 0,
-        'op': 96,
+        'op': 120,
         'st': 0,
         'bm': 0
     };
@@ -10027,18620 +2878,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var3.r = var4;
     var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 2,
-        'l': 2
-    };
-    var36 = {};
-    var11 = {
-        'x': 0.667,
-        'y': 1
-    };
-    var36.i = var11;
-    var11 = {
-        'x': 0.333,
-        'y': 0
-    };
-    var36.o = var11;
-    var36.t = var30;
-    var11 = [233];
-    var41 = -79;
-    var11[1] = var41;
-    var11[2] = var6;
-    var36.s = var11;
-    var11 = [0, 0, 0];
-    var36.to = var11;
-    var11 = [0, 0, 0];
-    var36.ti = var11;
-    var11 = new Array(6);
-    var11[0] = var36;
-    var36 = {};
-    var37 = {
-        'x': 0.42,
-        'y': 1
-    };
-    var36.i = var37;
-    var37 = {
-        'x': 0.333,
-        'y': 0
-    };
-    var36.o = var37;
-    var36.t = var31;
-    var37 = [229.728];
-    var38 = -75.219;
-    var37[1] = var38;
-    var37[2] = var6;
-    var36.s = var37;
-    var37 = [0, 0, 0];
-    var36.to = var37;
-    var37 = [0, 0, 0];
-    var36.ti = var37;
-    var11[1] = var36;
-    var36 = {};
-    var37 = {
-        'x': 0.42,
-        'y': 1
-    };
-    var36.i = var37;
-    var37 = {
-        'x': 0.58,
-        'y': 0
-    };
-    var36.o = var37;
-    var36.t = var26;
-    var37 = [231.558];
-    var38 = -75.876;
-    var37[1] = var38;
-    var37[2] = var6;
-    var36.s = var37;
-    var37 = [0, 0, 0];
-    var36.to = var37;
-    var37 = [0, 0, 0];
-    var36.ti = var37;
-    var11[2] = var36;
-    var36 = {};
-    var37 = {
-        'x': 0.42,
-        'y': 0.42
-    };
-    var36.i = var37;
-    var37 = {
-        'x': 0.58,
-        'y': 0.58
-    };
-    var36.o = var37;
-    var36.t = var33;
-    var37 = [250];
-    var40 = -90;
-    var37[1] = var40;
-    var37[2] = var6;
-    var36.s = var37;
-    var37 = [0, 0, 0];
-    var36.to = var37;
-    var37 = [0, 0, 0];
-    var36.ti = var37;
-    var11[3] = var36;
-    var36 = {};
-    var37 = {
-        'x': 0.42,
-        'y': 1
-    };
-    var36.i = var37;
-    var37 = {
-        'x': 0.58,
-        'y': 0
-    };
-    var36.o = var37;
-    var38 = 40;
-    var36.t = var38;
-    var37 = [250];
-    var37[1] = var40;
-    var37[2] = var6;
-    var36.s = var37;
-    var37 = [0, 0, 0];
-    var36.to = var37;
-    var37 = [0, 0, 0];
-    var36.ti = var37;
-    var11[4] = var36;
-    var36 = {};
-    var37 = 50;
-    var36.t = var37;
-    var40 = [233];
-    var40[1] = var41;
-    var40[2] = var6;
-    var36.s = var40;
-    var11[5] = var36;
-    var4.k = var11;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1,
-        'l': 2
-    };
-    var11 = [50, 50, 0];
-    var4.k = var11;
-    var3.a = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 6,
-        'l': 2
-    };
-    var11 = [50, 50, 100];
-    var4.k = var11;
-    var3.s = var4;
-    var2.ks = var3;
-    var0[5] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 9,
-        'ty': 4,
-        'nm': 'L_Eye',
-        'parent': 8,
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'shapes': null,
-        'ip': 0,
-        'op': 96,
-        'st': 0,
-        'ct': 1,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 0,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
         'a': 0,
         'k': null,
         'ix': 2,
         'l': 2
     };
-    var11 = new Array(3);
-    var40 = -416;
-    var11[0] = var40;
-    var36 = 208;
-    var11[1] = var36;
-    var11[2] = var6;
-    var4.k = var11;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1,
-        'l': 2
-    };
-    var11 = [0, 0, 0];
-    var4.k = var11;
-    var3.a = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 6,
-        'l': 2
-    };
-    var11 = [200, 200, 100];
-    var4.k = var11;
-    var3.s = var4;
-    var2.ks = var3;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var11 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var3 = {
-        'a': 1,
-        'k': null,
-        'ix': 2
-    };
-    var42 = {};
-    var41 = {
-        'x': 0.833,
-        'y': 1
-    };
-    var42.i = var41;
-    var41 = {
-        'x': 0.333,
-        'y': 0
-    };
-    var42.o = var41;
-    var42.t = var21;
-    var46 = {};
-    var43 = new Array(2);
-    var53 = -0.807;
-    var43[0] = var53;
-    var52 = -7.124;
-    var43[1] = var52;
-    var41 = new Array(4);
-    var41[0] = var43;
-    var43 = [6.721];
-    var51 = -0.837;
-    var43[1] = var51;
-    var41[1] = var43;
-    var43 = [0.807, 7.124];
-    var41[2] = var43;
-    var43 = new Array(2);
-    var55 = -6.721;
-    var43[0] = var55;
-    var54 = 0.837;
-    var43[1] = var54;
-    var41[3] = var43;
-    var46.i = var41;
-    var41 = new Array(4);
-    var43 = [0.807, 7.124];
-    var41[0] = var43;
-    var43 = new Array(2);
-    var43[0] = var55;
-    var43[1] = var54;
-    var41[1] = var43;
-    var43 = new Array(2);
-    var43[0] = var53;
-    var43[1] = var52;
-    var41[2] = var43;
-    var43 = [6.721];
-    var43[1] = var51;
-    var41[3] = var43;
-    var46.o = var41;
-    var47 = [322.569];
-    var43 = -93.506;
-    var47[1] = var43;
-    var41 = new Array(4);
-    var41[0] = var47;
-    var47 = [311.86];
-    var57 = -79.091;
-    var47[1] = var57;
-    var41[1] = var47;
-    var47 = [298.228];
-    var56 = -90.476;
-    var47[1] = var56;
-    var41[2] = var47;
-    var47 = [308.937];
-    var49 = -104.891;
-    var47[1] = var49;
-    var41[3] = var47;
-    var46.v = var41;
-    var46.c = var10;
-    var41 = new Array(1);
-    var41[0] = var46;
-    var42.s = var41;
-    var41 = new Array(8);
-    var41[0] = var42;
-    var42 = {};
-    var46 = {
-        'x': 0.833,
-        'y': 1
-    };
-    var42.i = var46;
-    var46 = {
-        'x': 0.167,
-        'y': 0
-    };
-    var42.o = var46;
-    var42.t = var45;
-    var58 = {};
-    var59 = new Array(2);
-    var64 = -2.72;
-    var59[0] = var64;
-    var46 = -4.643;
-    var59[1] = var46;
-    var47 = new Array(4);
-    var47[0] = var59;
-    var59 = [6.721];
-    var59[1] = var51;
-    var47[1] = var59;
-    var59 = new Array(2);
-    var63 = -1.003;
-    var59[0] = var63;
-    var62 = 2.86;
-    var59[1] = var62;
-    var47[2] = var59;
-    var59 = new Array(2);
-    var59[0] = var55;
-    var59[1] = var54;
-    var47[3] = var59;
-    var58.i = var47;
-    var47 = new Array(4);
-    var59 = [1.492, 2.547];
-    var47[0] = var59;
-    var59 = new Array(2);
-    var59[0] = var55;
-    var59[1] = var54;
-    var47[1] = var59;
-    var59 = [1.63];
-    var61 = -4.648;
-    var59[1] = var61;
-    var47[2] = var59;
-    var59 = [6.721];
-    var59[1] = var51;
-    var47[3] = var59;
-    var58.o = var47;
-    var59 = [322.569];
-    var59[1] = var43;
-    var47 = new Array(4);
-    var47[0] = var59;
-    var59 = [311.191];
-    var60 = -84.581;
-    var59[1] = var60;
-    var47[1] = var59;
-    var59 = [298.228];
-    var59[1] = var56;
-    var47[2] = var59;
-    var65 = [310.867];
-    var59 = -89.424;
-    var65[1] = var59;
-    var47[3] = var65;
-    var58.v = var47;
-    var58.c = var10;
-    var47 = new Array(1);
-    var47[0] = var58;
-    var42.s = var47;
-    var41[1] = var42;
-    var42 = {};
-    var47 = {
-        'x': 0.667,
-        'y': 1
-    };
-    var42.i = var47;
-    var47 = {
-        'x': 0.167,
-        'y': 0
-    };
-    var42.o = var47;
-    var42.t = var35;
-    var58 = {};
-    var65 = new Array(2);
-    var65[0] = var64;
-    var65[1] = var46;
-    var47 = new Array(4);
-    var47[0] = var65;
-    var65 = [6.721];
-    var65[1] = var51;
-    var47[1] = var65;
-    var65 = new Array(2);
-    var65[0] = var63;
-    var65[1] = var62;
-    var47[2] = var65;
-    var65 = new Array(2);
-    var65[0] = var55;
-    var65[1] = var54;
-    var47[3] = var65;
-    var58.i = var47;
-    var47 = new Array(4);
-    var65 = [1.492, 2.547];
-    var47[0] = var65;
-    var65 = new Array(2);
-    var65[0] = var55;
-    var65[1] = var54;
-    var47[1] = var65;
-    var65 = [1.63];
-    var65[1] = var61;
-    var47[2] = var65;
-    var65 = [6.721];
-    var65[1] = var51;
-    var47[3] = var65;
-    var58.o = var47;
-    var65 = [322.569];
-    var65[1] = var43;
-    var47 = new Array(4);
-    var47[0] = var65;
-    var65 = [311.191];
-    var65[1] = var60;
-    var47[1] = var65;
-    var65 = [298.228];
-    var65[1] = var56;
-    var47[2] = var65;
-    var65 = [310.867];
-    var65[1] = var59;
-    var47[3] = var65;
-    var58.v = var47;
-    var58.c = var10;
-    var47 = new Array(1);
-    var47[0] = var58;
-    var42.s = var47;
-    var41[2] = var42;
-    var42 = {};
-    var47 = {
-        'x': 0.833,
-        'y': 1
-    };
-    var42.i = var47;
-    var47 = {
-        'x': 0.167,
-        'y': 0
-    };
-    var42.o = var47;
-    var42.t = var25;
-    var58 = {};
-    var65 = new Array(2);
-    var65[0] = var53;
-    var65[1] = var52;
-    var47 = new Array(4);
-    var47[0] = var65;
-    var65 = [6.721];
-    var65[1] = var51;
-    var47[1] = var65;
-    var65 = [0.807, 7.124];
-    var47[2] = var65;
-    var65 = new Array(2);
-    var65[0] = var55;
-    var65[1] = var54;
-    var47[3] = var65;
-    var58.i = var47;
-    var47 = new Array(4);
-    var65 = [0.807, 7.124];
-    var47[0] = var65;
-    var65 = new Array(2);
-    var65[0] = var55;
-    var65[1] = var54;
-    var47[1] = var65;
-    var65 = new Array(2);
-    var65[0] = var53;
-    var65[1] = var52;
-    var47[2] = var65;
-    var65 = [6.721];
-    var65[1] = var51;
-    var47[3] = var65;
-    var58.o = var47;
-    var65 = [322.569];
-    var65[1] = var43;
-    var47 = new Array(4);
-    var47[0] = var65;
-    var65 = [311.86];
-    var65[1] = var57;
-    var47[1] = var65;
-    var65 = [298.228];
-    var65[1] = var56;
-    var47[2] = var65;
-    var65 = [308.937];
-    var65[1] = var49;
-    var47[3] = var65;
-    var58.v = var47;
-    var58.c = var10;
-    var47 = new Array(1);
-    var47[0] = var58;
-    var42.s = var47;
-    var41[3] = var42;
-    var42 = {};
-    var47 = {
-        'x': 0.833,
-        'y': 1
-    };
-    var42.i = var47;
-    var47 = {
-        'x': 0.333,
-        'y': 0
-    };
-    var42.o = var47;
-    var42.t = var50;
-    var58 = {};
-    var65 = new Array(2);
-    var65[0] = var53;
-    var65[1] = var52;
-    var47 = new Array(4);
-    var47[0] = var65;
-    var65 = [6.721];
-    var65[1] = var51;
-    var47[1] = var65;
-    var65 = [0.807, 7.124];
-    var47[2] = var65;
-    var65 = new Array(2);
-    var65[0] = var55;
-    var65[1] = var54;
-    var47[3] = var65;
-    var58.i = var47;
-    var47 = new Array(4);
-    var65 = [0.807, 7.124];
-    var47[0] = var65;
-    var65 = new Array(2);
-    var65[0] = var55;
-    var65[1] = var54;
-    var47[1] = var65;
-    var65 = new Array(2);
-    var65[0] = var53;
-    var65[1] = var52;
-    var47[2] = var65;
-    var65 = [6.721];
-    var65[1] = var51;
-    var47[3] = var65;
-    var58.o = var47;
-    var65 = [322.569];
-    var65[1] = var43;
-    var47 = new Array(4);
-    var47[0] = var65;
-    var65 = [311.86];
-    var65[1] = var57;
-    var47[1] = var65;
-    var65 = [298.228];
-    var65[1] = var56;
-    var47[2] = var65;
-    var65 = [308.937];
-    var65[1] = var49;
-    var47[3] = var65;
-    var58.v = var47;
-    var58.c = var10;
-    var47 = new Array(1);
-    var47[0] = var58;
-    var42.s = var47;
-    var41[4] = var42;
-    var42 = {};
-    var47 = {
-        'x': 0.833,
-        'y': 1
-    };
-    var42.i = var47;
-    var47 = {
-        'x': 0.167,
-        'y': 0
-    };
-    var42.o = var47;
-    var42.t = var32;
-    var58 = {};
-    var65 = new Array(2);
-    var65[0] = var64;
-    var65[1] = var46;
-    var47 = new Array(4);
-    var47[0] = var65;
-    var65 = [6.721];
-    var65[1] = var51;
-    var47[1] = var65;
-    var65 = new Array(2);
-    var65[0] = var63;
-    var65[1] = var62;
-    var47[2] = var65;
-    var65 = new Array(2);
-    var65[0] = var55;
-    var65[1] = var54;
-    var47[3] = var65;
-    var58.i = var47;
-    var47 = new Array(4);
-    var65 = [1.492, 2.547];
-    var47[0] = var65;
-    var65 = new Array(2);
-    var65[0] = var55;
-    var65[1] = var54;
-    var47[1] = var65;
-    var65 = [1.63];
-    var65[1] = var61;
-    var47[2] = var65;
-    var65 = [6.721];
-    var65[1] = var51;
-    var47[3] = var65;
-    var58.o = var47;
-    var65 = [322.569];
-    var65[1] = var43;
-    var47 = new Array(4);
-    var47[0] = var65;
-    var65 = [311.191];
-    var65[1] = var60;
-    var47[1] = var65;
-    var65 = [298.228];
-    var65[1] = var56;
-    var47[2] = var65;
-    var65 = [310.867];
-    var65[1] = var59;
-    var47[3] = var65;
-    var58.v = var47;
-    var58.c = var10;
-    var47 = new Array(1);
-    var47[0] = var58;
-    var42.s = var47;
-    var41[5] = var42;
-    var42 = {};
-    var47 = {
-        'x': 0.667,
-        'y': 1
-    };
-    var42.i = var47;
-    var47 = {
-        'x': 0.167,
-        'y': 0
-    };
-    var42.o = var47;
-    var42.t = var48;
-    var47 = {};
-    var58 = new Array(2);
-    var58[0] = var64;
-    var58[1] = var46;
-    var46 = new Array(4);
-    var46[0] = var58;
-    var58 = [6.721];
-    var58[1] = var51;
-    var46[1] = var58;
-    var58 = new Array(2);
-    var58[0] = var63;
-    var58[1] = var62;
-    var46[2] = var58;
-    var58 = new Array(2);
-    var58[0] = var55;
-    var58[1] = var54;
-    var46[3] = var58;
-    var47.i = var46;
-    var46 = new Array(4);
-    var58 = [1.492, 2.547];
-    var46[0] = var58;
-    var58 = new Array(2);
-    var58[0] = var55;
-    var58[1] = var54;
-    var46[1] = var58;
-    var58 = [1.63];
-    var58[1] = var61;
-    var46[2] = var58;
-    var58 = [6.721];
-    var58[1] = var51;
-    var46[3] = var58;
-    var47.o = var46;
-    var58 = [322.569];
-    var58[1] = var43;
-    var46 = new Array(4);
-    var46[0] = var58;
-    var58 = [311.191];
-    var58[1] = var60;
-    var46[1] = var58;
-    var58 = [298.228];
-    var58[1] = var56;
-    var46[2] = var58;
-    var58 = [310.867];
-    var58[1] = var59;
-    var46[3] = var58;
-    var47.v = var46;
-    var47.c = var10;
-    var46 = new Array(1);
-    var46[0] = var47;
-    var42.s = var46;
-    var41[6] = var42;
-    var42 = {};
-    var42.t = var44;
-    var46 = {};
-    var58 = new Array(2);
-    var58[0] = var53;
-    var58[1] = var52;
-    var47 = new Array(4);
-    var47[0] = var58;
-    var58 = [6.721];
-    var58[1] = var51;
-    var47[1] = var58;
-    var58 = [0.807, 7.124];
-    var47[2] = var58;
-    var58 = new Array(2);
-    var58[0] = var55;
-    var58[1] = var54;
-    var47[3] = var58;
-    var46.i = var47;
-    var47 = new Array(4);
-    var58 = [0.807, 7.124];
-    var47[0] = var58;
-    var58 = new Array(2);
-    var58[0] = var55;
-    var58[1] = var54;
-    var47[1] = var58;
-    var58 = new Array(2);
-    var58[0] = var53;
-    var58[1] = var52;
-    var47[2] = var58;
-    var58 = [6.721];
-    var58[1] = var51;
-    var47[3] = var58;
-    var46.o = var47;
-    var47 = [322.569];
-    var47[1] = var43;
-    var43 = new Array(4);
-    var43[0] = var47;
-    var47 = [311.86];
-    var47[1] = var57;
-    var43[1] = var47;
-    var47 = [298.228];
-    var47[1] = var56;
-    var43[2] = var47;
-    var47 = [308.937];
-    var47[1] = var49;
-    var43[3] = var47;
-    var46.v = var43;
-    var46.c = var10;
-    var43 = new Array(1);
-    var43[0] = var46;
-    var42.s = var43;
-    var41[7] = var42;
-    var3.k = var41;
-    var11.ks = var3;
-    var3 = new Array(3);
-    var3[0] = var11;
-    var11 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var41 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var42 = [0.031372550875, 0.007843137719, 0.003921568859, 1];
-    var41.k = var42;
-    var11.c = var41;
-    var41 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var11.o = var41;
-    var3[1] = var11;
-    var11 = {};
-    var11.ty = var8;
-    var41 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var42 = [0, 0];
-    var41.k = var42;
-    var11.p = var41;
-    var41 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var42 = [0, 0];
-    var41.k = var42;
-    var11.a = var41;
-    var41 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var42 = [100, 100];
-    var41.k = var42;
-    var11.s = var41;
-    var41 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var11.r = var41;
-    var41 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var11.o = var41;
-    var41 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var11.sk = var41;
-    var41 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var11.sa = var41;
-    var11.nm = var7;
-    var3[2] = var11;
-    var4.it = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var2.shapes = var3;
-    var0[6] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 10,
-        'ty': 4,
-        'nm': 'R_Eye',
-        'parent': 8,
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'shapes': null,
-        'ip': 0,
-        'op': 96,
-        'st': 0,
-        'ct': 1,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 0,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 2,
-        'l': 2
-    };
-    var11 = new Array(3);
-    var11[0] = var40;
-    var11[1] = var36;
-    var11[2] = var6;
-    var4.k = var11;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1,
-        'l': 2
-    };
-    var11 = [0, 0, 0];
-    var4.k = var11;
-    var3.a = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 6,
-        'l': 2
-    };
-    var11 = [200, 200, 100];
-    var4.k = var11;
-    var3.s = var4;
-    var2.ks = var3;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var11 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var3 = {
-        'a': 1,
-        'k': null,
-        'ix': 2
-    };
-    var42 = {};
-    var41 = {
-        'x': 0.833,
-        'y': 1
-    };
-    var42.i = var41;
-    var41 = {
-        'x': 0.333,
-        'y': 0
-    };
-    var42.o = var41;
-    var42.t = var21;
-    var56 = {};
-    var43 = new Array(2);
-    var43[0] = var53;
-    var43[1] = var52;
-    var41 = new Array(4);
-    var41[0] = var43;
-    var43 = [6.721];
-    var43[1] = var51;
-    var41[1] = var43;
-    var43 = [0.807, 7.124];
-    var41[2] = var43;
-    var43 = new Array(2);
-    var43[0] = var55;
-    var43[1] = var54;
-    var41[3] = var43;
-    var56.i = var41;
-    var41 = new Array(4);
-    var43 = [0.807, 7.124];
-    var41[0] = var43;
-    var43 = new Array(2);
-    var43[0] = var55;
-    var43[1] = var54;
-    var41[1] = var43;
-    var43 = new Array(2);
-    var43[0] = var53;
-    var43[1] = var52;
-    var41[2] = var43;
-    var43 = [6.721];
-    var43[1] = var51;
-    var41[3] = var43;
-    var56.o = var41;
-    var46 = [176.721];
-    var43 = -75.21;
-    var46[1] = var43;
-    var41 = new Array(4);
-    var41[0] = var46;
-    var46 = [166.012];
-    var49 = -60.796;
-    var46[1] = var49;
-    var41[1] = var46;
-    var46 = [152.381];
-    var47 = -72.18;
-    var46[1] = var47;
-    var41[2] = var46;
-    var57 = [163.09];
-    var46 = -86.595;
-    var57[1] = var46;
-    var41[3] = var57;
-    var56.v = var41;
-    var56.c = var10;
-    var41 = new Array(1);
-    var41[0] = var56;
-    var42.s = var41;
-    var41 = new Array(8);
-    var41[0] = var42;
-    var42 = {};
-    var56 = {
-        'x': 0.833,
-        'y': 1
-    };
-    var42.i = var56;
-    var56 = {
-        'x': 0.167,
-        'y': 0
-    };
-    var42.o = var56;
-    var42.t = var45;
-    var63 = {};
-    var57 = new Array(2);
-    var62 = -2.493;
-    var57[0] = var62;
-    var45 = -4.351;
-    var57[1] = var45;
-    var56 = new Array(4);
-    var56[0] = var57;
-    var57 = [6.721];
-    var57[1] = var51;
-    var56[1] = var57;
-    var57 = new Array(2);
-    var61 = -1.539;
-    var57[0] = var61;
-    var60 = 2.986;
-    var57[1] = var60;
-    var56[2] = var57;
-    var57 = new Array(2);
-    var57[0] = var55;
-    var57[1] = var54;
-    var56[3] = var57;
-    var63.i = var56;
-    var56 = new Array(4);
-    var57 = [1.876, 3.275];
-    var56[0] = var57;
-    var57 = new Array(2);
-    var57[0] = var55;
-    var57[1] = var54;
-    var56[1] = var57;
-    var57 = [2.125];
-    var59 = -4.124;
-    var57[1] = var59;
-    var56[2] = var57;
-    var57 = [6.721];
-    var57[1] = var51;
-    var56[3] = var57;
-    var63.o = var56;
-    var57 = [176.721];
-    var57[1] = var43;
-    var56 = new Array(4);
-    var56[0] = var57;
-    var57 = [165.515];
-    var58 = -64.032;
-    var57[1] = var58;
-    var56[1] = var57;
-    var57 = [152.381];
-    var57[1] = var47;
-    var56[2] = var57;
-    var64 = [164.714];
-    var57 = -68.587;
-    var64[1] = var57;
-    var56[3] = var64;
-    var63.v = var56;
-    var63.c = var10;
-    var56 = new Array(1);
-    var56[0] = var63;
-    var42.s = var56;
-    var41[1] = var42;
-    var42 = {};
-    var56 = {
-        'x': 0.667,
-        'y': 1
-    };
-    var42.i = var56;
-    var56 = {
-        'x': 0.167,
-        'y': 0
-    };
-    var42.o = var56;
-    var42.t = var35;
-    var63 = {};
-    var64 = new Array(2);
-    var64[0] = var62;
-    var64[1] = var45;
-    var56 = new Array(4);
-    var56[0] = var64;
-    var64 = [6.721];
-    var64[1] = var51;
-    var56[1] = var64;
-    var64 = new Array(2);
-    var64[0] = var61;
-    var64[1] = var60;
-    var56[2] = var64;
-    var64 = new Array(2);
-    var64[0] = var55;
-    var64[1] = var54;
-    var56[3] = var64;
-    var63.i = var56;
-    var56 = new Array(4);
-    var64 = [1.876, 3.275];
-    var56[0] = var64;
-    var64 = new Array(2);
-    var64[0] = var55;
-    var64[1] = var54;
-    var56[1] = var64;
-    var64 = [2.125];
-    var64[1] = var59;
-    var56[2] = var64;
-    var64 = [6.721];
-    var64[1] = var51;
-    var56[3] = var64;
-    var63.o = var56;
-    var64 = [176.721];
-    var64[1] = var43;
-    var56 = new Array(4);
-    var56[0] = var64;
-    var64 = [165.515];
-    var64[1] = var58;
-    var56[1] = var64;
-    var64 = [152.381];
-    var64[1] = var47;
-    var56[2] = var64;
-    var64 = [164.714];
-    var64[1] = var57;
-    var56[3] = var64;
-    var63.v = var56;
-    var63.c = var10;
-    var56 = new Array(1);
-    var56[0] = var63;
-    var42.s = var56;
-    var41[2] = var42;
-    var42 = {};
-    var56 = {
-        'x': 0.833,
-        'y': 1
-    };
-    var42.i = var56;
-    var56 = {
-        'x': 0.167,
-        'y': 0
-    };
-    var42.o = var56;
-    var42.t = var25;
-    var63 = {};
-    var64 = new Array(2);
-    var64[0] = var53;
-    var64[1] = var52;
-    var56 = new Array(4);
-    var56[0] = var64;
-    var64 = [6.721];
-    var64[1] = var51;
-    var56[1] = var64;
-    var64 = [0.807, 7.124];
-    var56[2] = var64;
-    var64 = new Array(2);
-    var64[0] = var55;
-    var64[1] = var54;
-    var56[3] = var64;
-    var63.i = var56;
-    var56 = new Array(4);
-    var64 = [0.807, 7.124];
-    var56[0] = var64;
-    var64 = new Array(2);
-    var64[0] = var55;
-    var64[1] = var54;
-    var56[1] = var64;
-    var64 = new Array(2);
-    var64[0] = var53;
-    var64[1] = var52;
-    var56[2] = var64;
-    var64 = [6.721];
-    var64[1] = var51;
-    var56[3] = var64;
-    var63.o = var56;
-    var64 = [176.721];
-    var64[1] = var43;
-    var56 = new Array(4);
-    var56[0] = var64;
-    var64 = [166.012];
-    var64[1] = var49;
-    var56[1] = var64;
-    var64 = [152.381];
-    var64[1] = var47;
-    var56[2] = var64;
-    var64 = [163.09];
-    var64[1] = var46;
-    var56[3] = var64;
-    var63.v = var56;
-    var63.c = var10;
-    var56 = new Array(1);
-    var56[0] = var63;
-    var42.s = var56;
-    var41[3] = var42;
-    var42 = {};
-    var56 = {
-        'x': 0.833,
-        'y': 1
-    };
-    var42.i = var56;
-    var56 = {
-        'x': 0.333,
-        'y': 0
-    };
-    var42.o = var56;
-    var42.t = var50;
-    var56 = {};
-    var63 = new Array(2);
-    var63[0] = var53;
-    var63[1] = var52;
-    var50 = new Array(4);
-    var50[0] = var63;
-    var63 = [6.721];
-    var63[1] = var51;
-    var50[1] = var63;
-    var63 = [0.807, 7.124];
-    var50[2] = var63;
-    var63 = new Array(2);
-    var63[0] = var55;
-    var63[1] = var54;
-    var50[3] = var63;
-    var56.i = var50;
-    var50 = new Array(4);
-    var63 = [0.807, 7.124];
-    var50[0] = var63;
-    var63 = new Array(2);
-    var63[0] = var55;
-    var63[1] = var54;
-    var50[1] = var63;
-    var63 = new Array(2);
-    var63[0] = var53;
-    var63[1] = var52;
-    var50[2] = var63;
-    var63 = [6.721];
-    var63[1] = var51;
-    var50[3] = var63;
-    var56.o = var50;
-    var63 = [176.721];
-    var63[1] = var43;
-    var50 = new Array(4);
-    var50[0] = var63;
-    var63 = [166.012];
-    var63[1] = var49;
-    var50[1] = var63;
-    var63 = [152.381];
-    var63[1] = var47;
-    var50[2] = var63;
-    var63 = [163.09];
-    var63[1] = var46;
-    var50[3] = var63;
-    var56.v = var50;
-    var56.c = var10;
-    var50 = new Array(1);
-    var50[0] = var56;
-    var42.s = var50;
-    var41[4] = var42;
-    var42 = {};
-    var50 = {
-        'x': 0.833,
-        'y': 1
-    };
-    var42.i = var50;
-    var50 = {
-        'x': 0.167,
-        'y': 0
-    };
-    var42.o = var50;
-    var42.t = var32;
-    var56 = {};
-    var63 = new Array(2);
-    var63[0] = var62;
-    var63[1] = var45;
-    var50 = new Array(4);
-    var50[0] = var63;
-    var63 = [6.721];
-    var63[1] = var51;
-    var50[1] = var63;
-    var63 = new Array(2);
-    var63[0] = var61;
-    var63[1] = var60;
-    var50[2] = var63;
-    var63 = new Array(2);
-    var63[0] = var55;
-    var63[1] = var54;
-    var50[3] = var63;
-    var56.i = var50;
-    var50 = new Array(4);
-    var63 = [1.876, 3.275];
-    var50[0] = var63;
-    var63 = new Array(2);
-    var63[0] = var55;
-    var63[1] = var54;
-    var50[1] = var63;
-    var63 = [2.125];
-    var63[1] = var59;
-    var50[2] = var63;
-    var63 = [6.721];
-    var63[1] = var51;
-    var50[3] = var63;
-    var56.o = var50;
-    var63 = [176.721];
-    var63[1] = var43;
-    var50 = new Array(4);
-    var50[0] = var63;
-    var63 = [165.515];
-    var63[1] = var58;
-    var50[1] = var63;
-    var63 = [152.381];
-    var63[1] = var47;
-    var50[2] = var63;
-    var63 = [164.714];
-    var63[1] = var57;
-    var50[3] = var63;
-    var56.v = var50;
-    var56.c = var10;
-    var50 = new Array(1);
-    var50[0] = var56;
-    var42.s = var50;
-    var41[5] = var42;
-    var42 = {};
-    var50 = {
-        'x': 0.667,
-        'y': 1
-    };
-    var42.i = var50;
-    var50 = {
-        'x': 0.167,
-        'y': 0
-    };
-    var42.o = var50;
-    var42.t = var48;
-    var50 = {};
-    var56 = new Array(2);
-    var56[0] = var62;
-    var56[1] = var45;
-    var45 = new Array(4);
-    var45[0] = var56;
-    var56 = [6.721];
-    var56[1] = var51;
-    var45[1] = var56;
-    var56 = new Array(2);
-    var56[0] = var61;
-    var56[1] = var60;
-    var45[2] = var56;
-    var56 = new Array(2);
-    var56[0] = var55;
-    var56[1] = var54;
-    var45[3] = var56;
-    var50.i = var45;
-    var45 = new Array(4);
-    var56 = [1.876, 3.275];
-    var45[0] = var56;
-    var56 = new Array(2);
-    var56[0] = var55;
-    var56[1] = var54;
-    var45[1] = var56;
-    var56 = [2.125];
-    var56[1] = var59;
-    var45[2] = var56;
-    var56 = [6.721];
-    var56[1] = var51;
-    var45[3] = var56;
-    var50.o = var45;
-    var56 = [176.721];
-    var56[1] = var43;
-    var45 = new Array(4);
-    var45[0] = var56;
-    var56 = [165.515];
-    var56[1] = var58;
-    var45[1] = var56;
-    var56 = [152.381];
-    var56[1] = var47;
-    var45[2] = var56;
-    var56 = [164.714];
-    var56[1] = var57;
-    var45[3] = var56;
-    var50.v = var45;
-    var50.c = var10;
-    var45 = new Array(1);
-    var45[0] = var50;
-    var42.s = var45;
-    var41[6] = var42;
-    var42 = {};
-    var42.t = var44;
-    var44 = {};
-    var50 = new Array(2);
-    var50[0] = var53;
-    var50[1] = var52;
-    var45 = new Array(4);
-    var45[0] = var50;
-    var50 = [6.721];
-    var50[1] = var51;
-    var45[1] = var50;
-    var50 = [0.807, 7.124];
-    var45[2] = var50;
-    var50 = new Array(2);
-    var50[0] = var55;
-    var50[1] = var54;
-    var45[3] = var50;
-    var44.i = var45;
-    var45 = new Array(4);
-    var50 = [0.807, 7.124];
-    var45[0] = var50;
-    var50 = new Array(2);
-    var50[0] = var55;
-    var50[1] = var54;
-    var45[1] = var50;
-    var50 = new Array(2);
-    var50[0] = var53;
-    var50[1] = var52;
-    var45[2] = var50;
-    var50 = [6.721];
-    var50[1] = var51;
-    var45[3] = var50;
-    var44.o = var45;
-    var45 = [176.721];
-    var45[1] = var43;
-    var43 = new Array(4);
-    var43[0] = var45;
-    var45 = [166.012];
-    var45[1] = var49;
-    var43[1] = var45;
-    var45 = [152.381];
-    var45[1] = var47;
-    var43[2] = var45;
-    var45 = [163.09];
-    var45[1] = var46;
-    var43[3] = var45;
-    var44.v = var43;
-    var44.c = var10;
-    var43 = new Array(1);
-    var43[0] = var44;
-    var42.s = var43;
-    var41[7] = var42;
-    var3.k = var41;
-    var11.ks = var3;
-    var3 = new Array(3);
-    var3[0] = var11;
-    var11 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var41 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var42 = [0.031372550875, 0.007843137719, 0.003921568859, 1];
-    var41.k = var42;
-    var11.c = var41;
-    var41 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var11.o = var41;
-    var3[1] = var11;
-    var11 = {};
-    var11.ty = var8;
-    var41 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var42 = [0, 0];
-    var41.k = var42;
-    var11.p = var41;
-    var41 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var42 = [0, 0];
-    var41.k = var42;
-    var11.a = var41;
-    var41 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var42 = [100, 100];
-    var41.k = var42;
-    var11.s = var41;
-    var41 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var11.r = var41;
-    var41 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var11.o = var41;
-    var41 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var11.sk = var41;
-    var41 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var11.sa = var41;
-    var11.nm = var7;
-    var3[2] = var11;
-    var4.it = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var2.shapes = var3;
-    var0[7] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 11,
-        'ty': 4,
-        'nm': 'Nose',
-        'parent': 8,
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'shapes': null,
-        'ip': 0,
-        'op': 96,
-        'st': 0,
-        'ct': 1,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 0,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 2,
-        'l': 2
-    };
-    var11 = new Array(3);
-    var11[0] = var40;
-    var11[1] = var36;
-    var11[2] = var6;
-    var4.k = var11;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1,
-        'l': 2
-    };
-    var11 = [0, 0, 0];
-    var4.k = var11;
-    var3.a = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 6,
-        'l': 2
-    };
-    var11 = [200, 200, 100];
-    var4.k = var11;
-    var3.s = var4;
-    var2.ks = var3;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var11 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var3 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var36 = {};
-    var41 = [3.716];
-    var43 = -0.463;
-    var41[1] = var43;
-    var40 = new Array(8);
-    var40[0] = var41;
-    var41 = [0, 0];
-    var40[1] = var41;
-    var41 = [0.446, 3.938];
-    var40[2] = var41;
-    var41 = [0, 0];
-    var40[3] = var41;
-    var41 = new Array(2);
-    var47 = -3.716;
-    var41[0] = var47;
-    var46 = 0.463;
-    var41[1] = var46;
-    var40[4] = var41;
-    var41 = [0, 0];
-    var40[5] = var41;
-    var41 = new Array(2);
-    var45 = -0.446;
-    var41[0] = var45;
-    var44 = -3.938;
-    var41[1] = var44;
-    var40[6] = var41;
-    var41 = [0, 0];
-    var40[7] = var41;
-    var36.i = var40;
-    var40 = new Array(8);
-    var41 = [0, 0];
-    var40[0] = var41;
-    var41 = new Array(2);
-    var41[0] = var47;
-    var41[1] = var46;
-    var40[1] = var41;
-    var41 = [0, 0];
-    var40[2] = var41;
-    var41 = new Array(2);
-    var41[0] = var45;
-    var41[1] = var44;
-    var40[3] = var41;
-    var41 = [0, 0];
-    var40[4] = var41;
-    var41 = [3.716];
-    var41[1] = var43;
-    var40[5] = var41;
-    var41 = [0, 0];
-    var40[6] = var41;
-    var41 = [0.446, 3.938];
-    var40[7] = var41;
-    var36.o = var40;
-    var41 = [217.749];
-    var40 = -55.054;
-    var41[1] = var40;
-    var40 = new Array(8);
-    var40[0] = var41;
-    var41 = [206.917];
-    var42 = -53.705;
-    var41[1] = var42;
-    var40[1] = var41;
-    var41 = [199.35];
-    var42 = -60.025;
-    var41[1] = var42;
-    var40[2] = var41;
-    var41 = [199.315];
-    var42 = -60.33;
-    var41[1] = var42;
-    var40[3] = var41;
-    var41 = [205.26];
-    var42 = -68.332;
-    var41[1] = var42;
-    var40[4] = var41;
-    var41 = [216.092];
-    var42 = -69.68;
-    var41[1] = var42;
-    var40[5] = var41;
-    var41 = [223.659];
-    var42 = -63.361;
-    var41[1] = var42;
-    var40[6] = var41;
-    var41 = [223.694];
-    var42 = -63.056;
-    var41[1] = var42;
-    var40[7] = var41;
-    var36.v = var40;
-    var36.c = var10;
-    var3.k = var36;
-    var11.ks = var3;
-    var3 = new Array(3);
-    var3[0] = var11;
-    var11 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var40 = [0.411764711142, 0.556862771511, 1, 1];
-    var36.k = var40;
-    var11.c = var36;
-    var36 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var11.o = var36;
-    var3[1] = var11;
-    var11 = {};
-    var11.ty = var8;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var40 = [0, 0];
-    var36.k = var40;
-    var11.p = var36;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var40 = [0, 0];
-    var36.k = var40;
-    var11.a = var36;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var40 = [100, 100];
-    var36.k = var40;
-    var11.s = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var11.r = var36;
-    var36 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var11.o = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var11.sk = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var11.sa = var36;
-    var11.nm = var7;
-    var3[2] = var11;
-    var4.it = var3;
-    var3 = new Array(3);
-    var3[0] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 2',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 2,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var36 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var11 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var40 = {};
-    var42 = [3.716];
-    var42[1] = var43;
-    var41 = new Array(8);
-    var41[0] = var42;
-    var42 = [0, 0];
-    var41[1] = var42;
-    var42 = [0.446, 3.938];
-    var41[2] = var42;
-    var42 = [0, 0];
-    var41[3] = var42;
-    var42 = new Array(2);
-    var42[0] = var47;
-    var42[1] = var46;
-    var41[4] = var42;
-    var42 = [0, 0];
-    var41[5] = var42;
-    var42 = new Array(2);
-    var42[0] = var45;
-    var42[1] = var44;
-    var41[6] = var42;
-    var42 = [0, 0];
-    var41[7] = var42;
-    var40.i = var41;
-    var41 = new Array(8);
-    var42 = [0, 0];
-    var41[0] = var42;
-    var42 = new Array(2);
-    var42[0] = var47;
-    var42[1] = var46;
-    var41[1] = var42;
-    var42 = [0, 0];
-    var41[2] = var42;
-    var42 = new Array(2);
-    var42[0] = var45;
-    var42[1] = var44;
-    var41[3] = var42;
-    var42 = [0, 0];
-    var41[4] = var42;
-    var42 = [3.716];
-    var42[1] = var43;
-    var41[5] = var42;
-    var42 = [0, 0];
-    var41[6] = var42;
-    var42 = [0.446, 3.938];
-    var41[7] = var42;
-    var40.o = var41;
-    var42 = [257.271];
-    var41 = -59.975;
-    var42[1] = var41;
-    var41 = new Array(8);
-    var41[0] = var42;
-    var42 = [246.439];
-    var43 = -58.626;
-    var42[1] = var43;
-    var41[1] = var42;
-    var42 = [238.871];
-    var43 = -64.946;
-    var42[1] = var43;
-    var41[2] = var42;
-    var42 = [238.837];
-    var43 = -65.251;
-    var42[1] = var43;
-    var41[3] = var42;
-    var42 = [244.782];
-    var43 = -73.253;
-    var42[1] = var43;
-    var41[4] = var42;
-    var42 = [255.614];
-    var43 = -74.601;
-    var42[1] = var43;
-    var41[5] = var42;
-    var42 = [263.181];
-    var43 = -68.282;
-    var42[1] = var43;
-    var41[6] = var42;
-    var42 = [263.216];
-    var43 = -67.977;
-    var42[1] = var43;
-    var41[7] = var42;
-    var40.v = var41;
-    var40.c = var10;
-    var11.k = var40;
-    var36.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var36;
-    var36 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var40 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var41 = [0.411764711142, 0.556862771511, 1, 1];
-    var40.k = var41;
-    var36.c = var40;
-    var40 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var36.o = var40;
-    var11[1] = var36;
-    var36 = {};
-    var36.ty = var8;
-    var40 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var41 = [0, 0];
-    var40.k = var41;
-    var36.p = var40;
-    var40 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var41 = [0, 0];
-    var40.k = var41;
-    var36.a = var40;
-    var40 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var41 = [100, 100];
-    var40.k = var41;
-    var36.s = var40;
-    var40 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var36.r = var40;
-    var40 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var36.o = var40;
-    var40 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var36.sk = var40;
-    var40 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var36.sa = var40;
-    var36.nm = var7;
-    var11[2] = var36;
-    var4.it = var11;
-    var3[1] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 3',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 3,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var36 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var11 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var40 = {};
-    var42 = [14.543];
-    var41 = -1.715;
-    var42[1] = var41;
-    var41 = new Array(8);
-    var41[0] = var42;
-    var42 = [0, 0];
-    var41[1] = var42;
-    var42 = [1.981, 18.445];
-    var41[2] = var42;
-    var42 = [0, 0];
-    var41[3] = var42;
-    var42 = new Array(2);
-    var43 = -10.228;
-    var42[0] = var43;
-    var43 = 1.206;
-    var42[1] = var43;
-    var41[4] = var42;
-    var42 = [0, 0];
-    var41[5] = var42;
-    var42 = new Array(2);
-    var43 = -1.118;
-    var42[0] = var43;
-    var43 = -10.408;
-    var42[1] = var43;
-    var41[6] = var42;
-    var42 = [0, 0];
-    var41[7] = var42;
-    var40.i = var41;
-    var41 = new Array(8);
-    var42 = [0, 0];
-    var41[0] = var42;
-    var42 = new Array(2);
-    var43 = -17.402;
-    var42[0] = var43;
-    var43 = 2.052;
-    var42[1] = var43;
-    var41[1] = var42;
-    var42 = [0, 0];
-    var41[2] = var42;
-    var42 = new Array(2);
-    var43 = -1.165;
-    var42[0] = var43;
-    var43 = -10.84;
-    var42[1] = var43;
-    var41[3] = var42;
-    var42 = [0, 0];
-    var41[4] = var42;
-    var42 = [9.819];
-    var43 = -1.158;
-    var42[1] = var43;
-    var41[5] = var42;
-    var42 = [0, 0];
-    var41[6] = var42;
-    var42 = [1.656, 15.414];
-    var41[7] = var42;
-    var40.o = var41;
-    var42 = [265.917];
-    var41 = -40.922;
-    var42[1] = var41;
-    var41 = new Array(8);
-    var41[0] = var42;
-    var42 = [219.619];
-    var43 = -35.462;
-    var42[1] = var43;
-    var41[1] = var42;
-    var42 = [184.375];
-    var43 = -65.267;
-    var42[1] = var43;
-    var41[2] = var42;
-    var42 = [181.403];
-    var43 = -92.939;
-    var42[1] = var43;
-    var41[3] = var42;
-    var42 = [197.881];
-    var43 = -114.842;
-    var42[1] = var43;
-    var41[4] = var42;
-    var42 = [265.813];
-    var43 = -122.853;
-    var42[1] = var43;
-    var41[5] = var42;
-    var42 = [285.699];
-    var43 = -106.036;
-    var42[1] = var43;
-    var41[6] = var42;
-    var42 = [289.348];
-    var43 = -72.066;
-    var42[1] = var43;
-    var41[7] = var42;
-    var40.v = var41;
-    var40.c = var10;
-    var11.k = var40;
-    var36.ks = var11;
-    var11 = new Array(3);
-    var11[0] = var36;
-    var36 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var40 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var41 = [0.717647075653, 0.803921580315, 1, 1];
-    var40.k = var41;
-    var36.c = var40;
-    var40 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var36.o = var40;
-    var11[1] = var36;
-    var36 = {};
-    var36.ty = var8;
-    var40 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var41 = [0, 0];
-    var40.k = var41;
-    var36.p = var40;
-    var40 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var41 = [0, 0];
-    var40.k = var41;
-    var36.a = var40;
-    var40 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var41 = [100, 100];
-    var40.k = var41;
-    var36.s = var40;
-    var40 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var36.r = var40;
-    var40 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var36.o = var40;
-    var40 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var36.sk = var40;
-    var40 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var36.sa = var40;
-    var36.nm = var7;
-    var11[2] = var36;
-    var4.it = var11;
-    var3[2] = var4;
-    var2.shapes = var3;
-    var0[8] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 12,
-        'ty': 4,
-        'nm': 'Mouth_02',
-        'parent': 13,
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'shapes': null,
-        'ip': 20,
-        'op': 48,
-        'st': 0,
-        'ct': 1,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': -10.231,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 2,
-        'l': 2
-    };
-    var11 = [269.279];
-    var36 = -20.045;
-    var11[1] = var36;
-    var11[2] = var6;
-    var4.k = var11;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1,
-        'l': 2
-    };
-    var11 = [277.088];
-    var41 = -40.412;
-    var11[1] = var41;
-    var11[2] = var6;
-    var4.k = var11;
-    var3.a = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 6,
-        'l': 2
-    };
-    var11 = {};
-    var36 = {};
-    var40 = [0, 0, 0.667];
-    var36.x = var40;
-    var40 = [1.008, 1.009, 1];
-    var36.y = var40;
-    var11.i = var36;
-    var36 = {};
-    var40 = [0.167, 0.167, 0.167];
-    var36.x = var40;
-    var40 = [0.167, 0.167];
-    var42 = -0.107;
-    var40[2] = var42;
-    var36.y = var40;
-    var11.o = var36;
-    var11.t = var26;
-    var36 = [103.771, 96.435, 100];
-    var11.s = var36;
-    var36 = new Array(4);
-    var36[0] = var11;
-    var11 = {};
-    var40 = {};
-    var42 = [0, 0, 0.667];
-    var40.x = var42;
-    var42 = [1, 1, 1];
-    var40.y = var42;
-    var11.i = var40;
-    var40 = {};
-    var42 = [0.333, 0.333, 0.333];
-    var40.x = var42;
-    var42 = [0, 0, 0];
-    var40.y = var42;
-    var11.o = var40;
-    var11.t = var39;
-    var39 = [167.26, 155.435, 100];
-    var11.s = var39;
-    var36[1] = var11;
-    var11 = {};
-    var39 = {};
-    var40 = [0.833, 0.833, 0.833];
-    var39.x = var40;
-    var40 = [0.833, 0.833, 1];
-    var39.y = var40;
-    var11.i = var39;
-    var39 = {};
-    var40 = [0.333, 0.333, 0.333];
-    var39.x = var40;
-    var40 = [0, 0, 0];
-    var39.y = var40;
-    var11.o = var39;
-    var43 = 43;
-    var11.t = var43;
-    var39 = [167.26, 155.435, 100];
-    var11.s = var39;
-    var36[2] = var11;
-    var39 = {};
-    var11 = 47;
-    var39.t = var11;
-    var40 = [103.771, 96.435, 100];
-    var39.s = var40;
-    var36[3] = var39;
-    var4.k = var36;
-    var3.s = var4;
-    var2.ks = var3;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Ellipse 1',
-        'np': 3,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var36 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var3 = {
-        'a': 1,
-        'k': null,
-        'ix': 2
-    };
-    var40 = {};
-    var39 = {
-        'x': 0.667,
-        'y': 1
-    };
-    var40.i = var39;
-    var39 = {
-        'x': 0.333,
-        'y': 0
-    };
-    var40.o = var39;
-    var40.t = var26;
-    var44 = {};
-    var42 = new Array(2);
-    var62 = -10.547;
-    var42[0] = var62;
-    var53 = 0.749;
-    var42[1] = var53;
-    var39 = new Array(4);
-    var39[0] = var42;
-    var42 = new Array(2);
-    var61 = -0.276;
-    var42[0] = var61;
-    var60 = -3.49;
-    var42[1] = var60;
-    var39[1] = var42;
-    var42 = [7.726];
-    var59 = -2.308;
-    var42[1] = var59;
-    var39[2] = var42;
-    var42 = [0.666, 1.551];
-    var39[3] = var42;
-    var44.i = var39;
-    var42 = [3.492];
-    var45 = -0.248;
-    var42[1] = var45;
-    var39 = new Array(4);
-    var39[0] = var42;
-    var42 = [0.213, 2.694];
-    var39[1] = var42;
-    var42 = new Array(2);
-    var57 = -3.354;
-    var42[0] = var57;
-    var56 = 1.002;
-    var42[1] = var56;
-    var39[2] = var42;
-    var42 = new Array(2);
-    var55 = -1.382;
-    var42[0] = var55;
-    var54 = -3.216;
-    var42[1] = var54;
-    var39[3] = var42;
-    var44.o = var39;
-    var46 = new Array(2);
-    var52 = -1.08;
-    var46[0] = var52;
-    var42 = 2.534;
-    var46[1] = var42;
-    var39 = new Array(4);
-    var39[0] = var46;
-    var46 = [15.448];
-    var51 = -0.804;
-    var46[1] = var51;
-    var39[1] = var46;
-    var46 = new Array(2);
-    var50 = -0.205;
-    var46[0] = var50;
-    var49 = 5.307;
-    var46[1] = var49;
-    var39[2] = var46;
-    var58 = new Array(2);
-    var47 = -17.495;
-    var58[0] = var47;
-    var46 = 2.994;
-    var58[1] = var46;
-    var39[3] = var58;
-    var44.v = var39;
-    var44.c = var10;
-    var39 = new Array(1);
-    var39[0] = var44;
-    var40.s = var39;
-    var39 = new Array(4);
-    var39[0] = var40;
-    var40 = {};
-    var44 = {
-        'x': 0.667,
-        'y': 1
-    };
-    var40.i = var44;
-    var44 = {
-        'x': 0.333,
-        'y': 0
-    };
-    var40.o = var44;
-    var40.t = var19;
-    var74 = {};
-    var58 = new Array(2);
-    var77 = -5.863;
-    var58[0] = var77;
-    var67 = 1.144;
-    var58[1] = var67;
-    var44 = new Array(4);
-    var44[0] = var58;
-    var58 = [0.055];
-    var76 = -3.5;
-    var58[1] = var76;
-    var44[1] = var58;
-    var58 = [5.392];
-    var75 = -0.897;
-    var58[1] = var75;
-    var44[2] = var58;
-    var58 = [0.034, 5.741];
-    var44[3] = var58;
-    var74.i = var44;
-    var58 = [6.499];
-    var63 = -1.268;
-    var58[1] = var63;
-    var44 = new Array(4);
-    var44[0] = var58;
-    var58 = new Array(2);
-    var73 = -0.076;
-    var58[0] = var73;
-    var72 = 4.879;
-    var58[1] = var72;
-    var44[1] = var58;
-    var58 = new Array(2);
-    var71 = -4.074;
-    var58[0] = var71;
-    var70 = 0.678;
-    var58[1] = var70;
-    var44[2] = var58;
-    var58 = new Array(2);
-    var69 = -0.021;
-    var58[0] = var69;
-    var68 = -3.501;
-    var58[1] = var68;
-    var44[3] = var58;
-    var74.o = var44;
-    var64 = new Array(2);
-    var66 = -1.257;
-    var64[0] = var66;
-    var44 = -5.365;
-    var64[1] = var44;
-    var58 = new Array(4);
-    var58[0] = var64;
-    var64 = [10.667, 1.571];
-    var58[1] = var64;
-    var64 = [0.581, 8.586];
-    var58[2] = var64;
-    var78 = new Array(2);
-    var65 = -10.557;
-    var78[0] = var65;
-    var64 = 4.294;
-    var78[1] = var64;
-    var58[3] = var78;
-    var74.v = var58;
-    var74.c = var10;
-    var58 = new Array(1);
-    var58[0] = var74;
-    var40.s = var58;
-    var39[1] = var40;
-    var40 = {};
-    var58 = {
-        'x': 0.667,
-        'y': 1
-    };
-    var40.i = var58;
-    var58 = {
-        'x': 0.333,
-        'y': 0
-    };
-    var40.o = var58;
-    var40.t = var43;
-    var58 = {};
-    var74 = new Array(2);
-    var74[0] = var77;
-    var74[1] = var67;
-    var67 = new Array(4);
-    var67[0] = var74;
-    var74 = [0.055];
-    var74[1] = var76;
-    var67[1] = var74;
-    var74 = [5.392];
-    var74[1] = var75;
-    var67[2] = var74;
-    var74 = [0.034, 5.741];
-    var67[3] = var74;
-    var58.i = var67;
-    var67 = [6.499];
-    var67[1] = var63;
-    var63 = new Array(4);
-    var63[0] = var67;
-    var67 = new Array(2);
-    var67[0] = var73;
-    var67[1] = var72;
-    var63[1] = var67;
-    var67 = new Array(2);
-    var67[0] = var71;
-    var67[1] = var70;
-    var63[2] = var67;
-    var67 = new Array(2);
-    var67[0] = var69;
-    var67[1] = var68;
-    var63[3] = var67;
-    var58.o = var63;
-    var63 = new Array(2);
-    var63[0] = var66;
-    var63[1] = var44;
-    var44 = new Array(4);
-    var44[0] = var63;
-    var63 = [10.667, 1.571];
-    var44[1] = var63;
-    var63 = [0.581, 8.586];
-    var44[2] = var63;
-    var63 = new Array(2);
-    var63[0] = var65;
-    var63[1] = var64;
-    var44[3] = var63;
-    var58.v = var44;
-    var58.c = var10;
-    var44 = new Array(1);
-    var44[0] = var58;
-    var40.s = var44;
-    var39[2] = var40;
-    var40 = {};
-    var40.t = var11;
-    var44 = {};
-    var58 = new Array(2);
-    var58[0] = var62;
-    var58[1] = var53;
-    var53 = new Array(4);
-    var53[0] = var58;
-    var58 = new Array(2);
-    var58[0] = var61;
-    var58[1] = var60;
-    var53[1] = var58;
-    var58 = [7.726];
-    var58[1] = var59;
-    var53[2] = var58;
-    var58 = [0.666, 1.551];
-    var53[3] = var58;
-    var44.i = var53;
-    var53 = [3.492];
-    var53[1] = var45;
-    var45 = new Array(4);
-    var45[0] = var53;
-    var53 = [0.213, 2.694];
-    var45[1] = var53;
-    var53 = new Array(2);
-    var53[0] = var57;
-    var53[1] = var56;
-    var45[2] = var53;
-    var53 = new Array(2);
-    var53[0] = var55;
-    var53[1] = var54;
-    var45[3] = var53;
-    var44.o = var45;
-    var45 = new Array(2);
-    var45[0] = var52;
-    var45[1] = var42;
-    var42 = new Array(4);
-    var42[0] = var45;
-    var45 = [15.448];
-    var45[1] = var51;
-    var42[1] = var45;
-    var45 = new Array(2);
-    var45[0] = var50;
-    var45[1] = var49;
-    var42[2] = var45;
-    var45 = new Array(2);
-    var45[0] = var47;
-    var45[1] = var46;
-    var42[3] = var45;
-    var44.v = var42;
-    var44.c = var10;
-    var42 = new Array(1);
-    var42[0] = var44;
-    var40.s = var42;
-    var39[3] = var40;
-    var3.k = var39;
-    var36.ks = var3;
-    var3 = new Array(3);
-    var3[0] = var36;
-    var36 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var39 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var40 = [0.031372070313, 0.007843017578, 0.00390625, 1];
-    var39.k = var40;
-    var36.c = var39;
-    var39 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var36.o = var39;
-    var3[1] = var36;
-    var36 = {};
-    var36.ty = var8;
-    var39 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var40 = [277.088];
-    var40[1] = var41;
-    var39.k = var40;
-    var36.p = var39;
-    var39 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var40 = [0, 0];
-    var39.k = var40;
-    var36.a = var39;
-    var39 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var40 = [100, 100];
-    var39.k = var40;
-    var36.s = var39;
-    var39 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var36.r = var39;
-    var39 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var36.o = var39;
-    var39 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var36.sk = var39;
-    var39 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var36.sa = var39;
-    var36.nm = var7;
-    var3[2] = var36;
-    var4.it = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var2.shapes = var3;
-    var0[9] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 13,
-        'ty': 4,
-        'nm': 'Mouth',
-        'parent': 8,
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'shapes': null,
-        'ip': 0,
-        'op': 104,
-        'st': 0,
-        'ct': 1,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 0,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 2,
-        'l': 2
-    };
-    var36 = new Array(3);
-    var39 = -366.201;
-    var36[0] = var39;
-    var39 = 174.095;
-    var36[1] = var39;
-    var36[2] = var6;
-    var4.k = var36;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1,
-        'l': 2
-    };
-    var36 = [0, 0, 0];
-    var4.k = var36;
-    var3.a = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 6,
-        'l': 2
-    };
-    var36 = [200, 200, 100];
-    var4.k = var36;
-    var3.s = var4;
-    var2.ks = var3;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var36 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var3 = {
-        'a': 1,
-        'k': null,
-        'ix': 2
-    };
-    var40 = {};
-    var39 = {
-        'x': 0.667,
-        'y': 1
-    };
-    var40.i = var39;
-    var39 = {
-        'x': 0.333,
-        'y': 0
-    };
-    var40.o = var39;
-    var40.t = var26;
-    var42 = {};
-    var39 = new Array(2);
-    var41 = [0, 0];
-    var39[0] = var41;
-    var41 = new Array(2);
-    var47 = -11.196;
-    var41[0] = var47;
-    var46 = 9.33;
-    var41[1] = var46;
-    var39[1] = var41;
-    var42.i = var39;
-    var39 = new Array(2);
-    var41 = [0, 0];
-    var39[0] = var41;
-    var41 = [0, 0];
-    var39[1] = var41;
-    var42.o = var39;
-    var44 = [252.161];
-    var41 = -13.978;
-    var44[1] = var41;
-    var39 = new Array(2);
-    var39[0] = var44;
-    var45 = [284.195];
-    var44 = -23.619;
-    var45[1] = var44;
-    var39[1] = var45;
-    var42.v = var39;
-    var42.c = var17;
-    var39 = new Array(1);
-    var39[0] = var42;
-    var40.s = var39;
-    var39 = new Array(4);
-    var39[0] = var40;
-    var40 = {};
-    var42 = {
-        'x': 0.667,
-        'y': 1
-    };
-    var40.i = var42;
-    var42 = {
-        'x': 0.333,
-        'y': 0
-    };
-    var40.o = var42;
-    var40.t = var19;
-    var50 = {};
-    var42 = new Array(2);
-    var45 = [0, 0];
-    var42[0] = var45;
-    var45 = new Array(2);
-    var52 = -0.038;
-    var45[0] = var52;
-    var51 = -0.08;
-    var45[1] = var51;
-    var42[1] = var45;
-    var50.i = var42;
-    var42 = new Array(2);
-    var45 = [0, 0];
-    var42[0] = var45;
-    var45 = [0, 0];
-    var42[1] = var45;
-    var50.o = var42;
-    var49 = [268.325];
-    var42 = -20.719;
-    var49[1] = var42;
-    var45 = new Array(2);
-    var45[0] = var49;
-    var53 = [269.131];
-    var49 = -20.9;
-    var53[1] = var49;
-    var45[1] = var53;
-    var50.v = var45;
-    var50.c = var17;
-    var45 = new Array(1);
-    var45[0] = var50;
-    var40.s = var45;
-    var39[1] = var40;
-    var40 = {};
-    var45 = {
-        'x': 0.667,
-        'y': 1
-    };
-    var40.i = var45;
-    var45 = {
-        'x': 0.333,
-        'y': 0
-    };
-    var40.o = var45;
-    var40.t = var43;
-    var43 = {};
-    var45 = new Array(2);
-    var50 = [0, 0];
-    var45[0] = var50;
-    var50 = new Array(2);
-    var50[0] = var52;
-    var50[1] = var51;
-    var45[1] = var50;
-    var43.i = var45;
-    var45 = new Array(2);
-    var50 = [0, 0];
-    var45[0] = var50;
-    var50 = [0, 0];
-    var45[1] = var50;
-    var43.o = var45;
-    var45 = [268.325];
-    var45[1] = var42;
-    var42 = new Array(2);
-    var42[0] = var45;
-    var45 = [269.131];
-    var45[1] = var49;
-    var42[1] = var45;
-    var43.v = var42;
-    var43.c = var17;
-    var42 = new Array(1);
-    var42[0] = var43;
-    var40.s = var42;
-    var39[2] = var40;
-    var40 = {};
-    var40.t = var11;
-    var42 = {};
-    var43 = new Array(2);
-    var45 = [0, 0];
-    var43[0] = var45;
-    var45 = new Array(2);
-    var45[0] = var47;
-    var45[1] = var46;
-    var43[1] = var45;
-    var42.i = var43;
-    var43 = new Array(2);
-    var45 = [0, 0];
-    var43[0] = var45;
-    var45 = [0, 0];
-    var43[1] = var45;
-    var42.o = var43;
-    var43 = [252.161];
-    var43[1] = var41;
-    var41 = new Array(2);
-    var41[0] = var43;
-    var43 = [284.195];
-    var43[1] = var44;
-    var41[1] = var43;
-    var42.v = var41;
-    var42.c = var17;
-    var41 = new Array(1);
-    var41[0] = var42;
-    var40.s = var41;
-    var39[3] = var40;
-    var3.k = var39;
-    var36.ks = var3;
-    var3 = new Array(3);
-    var3[0] = var36;
-    var36 = {
-        'ty': 'st',
-        'c': null,
-        'o': null,
-        'w': null,
-        'lc': 2,
-        'lj': 2,
-        'bm': 0,
-        'nm': 'Stroke 1',
-        'mn': 'ADBE Vector Graphic - Stroke',
-        'hd': false
-    };
-    var39 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var40 = [0.031372550875, 0.007843137719, 0.003921568859, 1];
-    var39.k = var40;
-    var36.c = var39;
-    var39 = {
-        'a': 0,
-        'k': 100,
-        'ix': 4
-    };
-    var36.o = var39;
-    var39 = {
-        'a': 0,
-        'k': 4,
-        'ix': 5
-    };
-    var36.w = var39;
-    var3[1] = var36;
-    var36 = {};
-    var36.ty = var8;
-    var39 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var40 = [0, 0];
-    var39.k = var40;
-    var36.p = var39;
-    var39 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var40 = [0, 0];
-    var39.k = var40;
-    var36.a = var39;
-    var39 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var40 = [100, 100];
-    var39.k = var40;
-    var36.s = var39;
-    var39 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var36.r = var39;
-    var39 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var36.o = var39;
-    var39 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var36.sk = var39;
-    var39 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var36.sa = var39;
-    var36.nm = var7;
-    var3[2] = var36;
-    var4.it = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var2.shapes = var3;
-    var0[10] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 14,
-        'ty': 4,
-        'nm': 'L_Ear',
-        'parent': 15,
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'shapes': null,
-        'ip': 0,
-        'op': 96,
-        'st': 0,
-        'ct': 1,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 0,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 2,
-        'l': 2
-    };
-    var40 = {};
-    var36 = {
-        'x': 0.42,
-        'y': 1
-    };
-    var40.i = var36;
-    var36 = {
-        'x': 0.58,
-        'y': 0
-    };
-    var40.o = var36;
-    var40.t = var26;
-    var36 = [392.548];
-    var39 = -97.055;
-    var36[1] = var39;
-    var36[2] = var6;
-    var40.s = var36;
-    var36 = [0, 0, 0];
-    var40.to = var36;
-    var36 = [0, 0, 0];
-    var40.ti = var36;
-    var36 = new Array(4);
-    var36[0] = var40;
-    var40 = {};
-    var41 = {
-        'x': 0.42,
-        'y': 0.42
-    };
-    var40.i = var41;
-    var41 = {
-        'x': 0.58,
-        'y': 0.58
-    };
-    var40.o = var41;
-    var40.t = var33;
-    var41 = [403.548];
-    var42 = -99.055;
-    var41[1] = var42;
-    var41[2] = var6;
-    var40.s = var41;
-    var41 = [0, 0, 0];
-    var40.to = var41;
-    var41 = [0, 0, 0];
-    var40.ti = var41;
-    var36[1] = var40;
-    var40 = {};
-    var41 = {
-        'x': 0.42,
-        'y': 1
-    };
-    var40.i = var41;
-    var41 = {
-        'x': 0.58,
-        'y': 0
-    };
-    var40.o = var41;
-    var40.t = var38;
-    var41 = [403.548];
-    var41[1] = var42;
-    var41[2] = var6;
-    var40.s = var41;
-    var41 = [0, 0, 0];
-    var40.to = var41;
-    var41 = [0, 0, 0];
-    var40.ti = var41;
-    var36[2] = var40;
-    var40 = {};
-    var40.t = var37;
-    var41 = [392.548];
-    var41[1] = var39;
-    var41[2] = var6;
-    var40.s = var41;
-    var36[3] = var40;
-    var4.k = var36;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1,
-        'l': 2
-    };
-    var36 = [392.548];
-    var36[1] = var39;
-    var36[2] = var6;
-    var4.k = var36;
-    var3.a = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 6,
-        'l': 2
-    };
-    var36 = [100, 100, 100];
-    var4.k = var36;
-    var3.s = var4;
-    var2.ks = var3;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var36 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var3 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var39 = {};
-    var41 = [6.303];
-    var42 = -0.785;
-    var41[1] = var42;
-    var40 = new Array(8);
-    var40[0] = var41;
-    var41 = [0, 0];
-    var40[1] = var41;
-    var41 = [0.323, 2.849];
-    var40[2] = var41;
-    var41 = [0, 0];
-    var40[3] = var41;
-    var41 = new Array(2);
-    var43 = -2.696;
-    var41[0] = var43;
-    var43 = 0.336;
-    var41[1] = var43;
-    var40[4] = var41;
-    var41 = [0, 0];
-    var40[5] = var41;
-    var41 = new Array(2);
-    var51 = -0.757;
-    var41[0] = var51;
-    var50 = -6.681;
-    var41[1] = var50;
-    var40[6] = var41;
-    var41 = [0, 0];
-    var40[7] = var41;
-    var39.i = var40;
-    var40 = new Array(8);
-    var41 = [0, 0];
-    var40[0] = var41;
-    var41 = new Array(2);
-    var43 = -2.688;
-    var41[0] = var43;
-    var43 = 0.335;
-    var41[1] = var43;
-    var40[1] = var41;
-    var41 = [0, 0];
-    var40[2] = var41;
-    var41 = new Array(2);
-    var46 = -0.324;
-    var41[0] = var46;
-    var45 = -2.858;
-    var41[1] = var45;
-    var40[3] = var41;
-    var41 = [0, 0];
-    var40[4] = var41;
-    var41 = [6.303];
-    var41[1] = var42;
-    var40[5] = var41;
-    var41 = [0, 0];
-    var40[6] = var41;
-    var41 = [0.757, 6.681];
-    var40[7] = var41;
-    var39.o = var40;
-    var41 = [402.694];
-    var40 = -75.504;
-    var41[1] = var40;
-    var40 = new Array(8);
-    var40[0] = var41;
-    var41 = [387.446];
-    var42 = -73.605;
-    var41[1] = var42;
-    var40[1] = var41;
-    var41 = [381.971];
-    var42 = -78.178;
-    var41[1] = var42;
-    var40[2] = var41;
-    var41 = [377.263];
-    var42 = -119.743;
-    var41[1] = var42;
-    var40[3] = var41;
-    var41 = [381.576];
-    var42 = -125.549;
-    var41[1] = var42;
-    var40[4] = var41;
-    var41 = [396.811];
-    var42 = -127.446;
-    var41[1] = var42;
-    var40[5] = var41;
-    var41 = [409.647];
-    var42 = -116.726;
-    var41[1] = var42;
-    var40[6] = var41;
-    var41 = [412.779];
-    var42 = -89.078;
-    var41[1] = var42;
-    var40[7] = var41;
-    var39.v = var40;
-    var39.c = var10;
-    var3.k = var39;
-    var36.ks = var3;
-    var3 = new Array(3);
-    var3[0] = var36;
-    var36 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var39 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var40 = [0.717647075653, 0.803921580315, 1, 1];
-    var39.k = var40;
-    var36.c = var39;
-    var39 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var36.o = var39;
-    var3[1] = var36;
-    var36 = {};
-    var36.ty = var8;
-    var39 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var40 = [0, 0];
-    var39.k = var40;
-    var36.p = var39;
-    var39 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var40 = [0, 0];
-    var39.k = var40;
-    var36.a = var39;
-    var39 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var40 = [100, 100];
-    var39.k = var40;
-    var36.s = var39;
-    var39 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var36.r = var39;
-    var39 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var36.o = var39;
-    var39 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var36.sk = var39;
-    var39 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var36.sa = var39;
-    var36.nm = var7;
-    var3[2] = var36;
-    var4.it = var3;
-    var3 = new Array(2);
-    var3[0] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 2',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 2,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var44 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var47 = {};
-    var39 = [15.814];
-    var43 = -1.969;
-    var39[1] = var43;
-    var49 = new Array(8);
-    var49[0] = var39;
-    var39 = [0, 0];
-    var49[1] = var39;
-    var39 = [1.899, 16.762];
-    var49[2] = var39;
-    var39 = [0, 0];
-    var49[3] = var39;
-    var41 = new Array(2);
-    var40 = -15.814;
-    var41[0] = var40;
-    var39 = 1.969;
-    var41[1] = var39;
-    var49[4] = var41;
-    var41 = [0, 0];
-    var49[5] = var41;
-    var52 = new Array(2);
-    var42 = -1.899;
-    var52[0] = var42;
-    var41 = -16.762;
-    var52[1] = var41;
-    var49[6] = var52;
-    var52 = [0, 0];
-    var49[7] = var52;
-    var47.i = var49;
-    var49 = new Array(8);
-    var52 = [0, 0];
-    var49[0] = var52;
-    var52 = new Array(2);
-    var52[0] = var40;
-    var52[1] = var39;
-    var49[1] = var52;
-    var52 = [0, 0];
-    var49[2] = var52;
-    var52 = new Array(2);
-    var52[0] = var42;
-    var52[1] = var41;
-    var49[3] = var52;
-    var52 = [0, 0];
-    var49[4] = var52;
-    var52 = [15.814];
-    var52[1] = var43;
-    var49[5] = var52;
-    var52 = [0, 0];
-    var49[6] = var52;
-    var52 = [1.899, 16.762];
-    var49[7] = var52;
-    var47.o = var49;
-    var52 = [404.156];
-    var49 = -52.68;
-    var52[1] = var49;
-    var49 = new Array(8);
-    var49[0] = var52;
-    var52 = [391.177];
-    var53 = -51.064;
-    var52[1] = var53;
-    var49[1] = var52;
-    var52 = [358.973];
-    var53 = -77.96;
-    var52[1] = var53;
-    var49[2] = var52;
-    var52 = [355.641];
-    var53 = -107.374;
-    var52[1] = var53;
-    var49[3] = var52;
-    var52 = [380.941];
-    var53 = -141.429;
-    var52[1] = var53;
-    var49[4] = var52;
-    var52 = [393.92];
-    var53 = -143.045;
-    var52[1] = var53;
-    var49[5] = var52;
-    var52 = [426.124];
-    var53 = -116.149;
-    var52[1] = var53;
-    var49[6] = var52;
-    var52 = [429.456];
-    var53 = -86.736;
-    var52[1] = var53;
-    var49[7] = var52;
-    var47.v = var49;
-    var47.c = var10;
-    var36.k = var47;
-    var44.ks = var36;
-    var36 = new Array(3);
-    var36[0] = var44;
-    var44 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var49 = [0.411764711142, 0.556862771511, 1, 1];
-    var47.k = var49;
-    var44.c = var47;
-    var47 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var44.o = var47;
-    var36[1] = var44;
-    var44 = {};
-    var44.ty = var8;
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var49 = [0, 0];
-    var47.k = var49;
-    var44.p = var47;
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var49 = [0, 0];
-    var47.k = var49;
-    var44.a = var47;
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var49 = [100, 100];
-    var47.k = var49;
-    var44.s = var47;
-    var47 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var44.r = var47;
-    var47 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var44.o = var47;
-    var47 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var44.sk = var47;
-    var47 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var44.sa = var47;
-    var44.nm = var7;
-    var36[2] = var44;
-    var4.it = var36;
-    var3[1] = var4;
-    var2.shapes = var3;
-    var0[11] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 15,
-        'ty': 4,
-        'nm': 'Head',
-        'parent': 23,
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'shapes': null,
-        'ip': 0,
-        'op': 96,
-        'st': 0,
-        'ct': 1,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 10
-    };
-    var44 = {};
-    var36 = {};
-    var47 = [0.833];
-    var36.x = var47;
-    var47 = [1];
-    var36.y = var47;
-    var44.i = var36;
-    var36 = {};
-    var47 = [0.333];
-    var36.x = var47;
-    var47 = [0];
-    var36.y = var47;
-    var44.o = var36;
-    var44.t = var30;
-    var36 = [0];
-    var44.s = var36;
-    var36 = new Array(3);
-    var36[0] = var44;
-    var44 = {};
-    var47 = {};
-    var49 = [0.833];
-    var47.x = var49;
-    var49 = [1];
-    var47.y = var49;
-    var44.i = var47;
-    var47 = {};
-    var49 = [0.167];
-    var47.x = var49;
-    var49 = [0];
-    var47.y = var49;
-    var44.o = var47;
-    var44.t = var31;
-    var47 = new Array(1);
-    var31 = -2;
-    var47[0] = var31;
-    var44.s = var47;
-    var36[1] = var44;
-    var44 = {};
-    var44.t = var26;
-    var47 = [0];
-    var44.s = var47;
-    var36[2] = var44;
-    var4.k = var36;
-    var3.r = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 2,
-        'l': 2
-    };
-    var44 = {};
-    var36 = {
-        'x': 0.42,
-        'y': 0.42
-    };
-    var44.i = var36;
-    var36 = {
-        'x': 0.167,
-        'y': 0.167
-    };
-    var44.o = var36;
-    var44.t = var30;
-    var36 = [268.338, 5.295, 0];
-    var44.s = var36;
-    var36 = [0, 0, 0];
-    var44.to = var36;
-    var36 = [0, 0, 0];
-    var44.ti = var36;
-    var36 = new Array(5);
-    var36[0] = var44;
-    var44 = {};
-    var47 = {
-        'x': 0.42,
-        'y': 1
-    };
-    var44.i = var47;
-    var47 = {
-        'x': 0.167,
-        'y': 0
-    };
-    var44.o = var47;
-    var44.t = var26;
-    var47 = [268.338, 5.295, 0];
-    var44.s = var47;
-    var47 = [0, 0, 0];
-    var44.to = var47;
-    var47 = [0, 0, 0];
-    var44.ti = var47;
-    var36[1] = var44;
-    var44 = {};
-    var47 = {
-        'x': 0.42,
-        'y': 0.42
-    };
-    var44.i = var47;
-    var47 = {
-        'x': 0.58,
-        'y': 0.58
-    };
-    var44.o = var47;
-    var44.t = var33;
-    var47 = [262.338, 6.295, 0];
-    var44.s = var47;
-    var47 = [0, 0, 0];
-    var44.to = var47;
-    var47 = [0, 0, 0];
-    var44.ti = var47;
-    var36[2] = var44;
-    var44 = {};
-    var47 = {
-        'x': 0.42,
-        'y': 1
-    };
-    var44.i = var47;
-    var47 = {
-        'x': 0.58,
-        'y': 0
-    };
-    var44.o = var47;
-    var44.t = var38;
-    var47 = [262.338, 6.295, 0];
-    var44.s = var47;
-    var47 = [0, 0, 0];
-    var44.to = var47;
-    var47 = [0, 0, 0];
-    var44.ti = var47;
-    var36[3] = var44;
-    var44 = {};
-    var44.t = var37;
-    var47 = [268.338, 5.295, 0];
-    var44.s = var47;
-    var36[4] = var44;
-    var4.k = var36;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1,
-        'l': 2
-    };
-    var36 = [268.338, 5.295, 0];
-    var4.k = var36;
-    var3.a = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 6,
-        'l': 2
-    };
-    var36 = {};
-    var44 = {};
-    var47 = [0.833, 0.833, 0.833];
-    var44.x = var47;
-    var47 = [1, 1, 1];
-    var44.y = var47;
-    var36.i = var44;
-    var44 = {};
-    var47 = [0.333, 0.333, 0.333];
-    var44.x = var47;
-    var47 = [0, 0, 0];
-    var44.y = var47;
-    var36.o = var44;
-    var36.t = var30;
-    var30 = [100, 100, 100];
-    var36.s = var30;
-    var30 = new Array(3);
-    var30[0] = var36;
-    var36 = {};
-    var44 = {};
-    var47 = [0.667, 0.667, 0.667];
-    var44.x = var47;
-    var47 = [1, 1, 1];
-    var44.y = var47;
-    var36.i = var44;
-    var44 = {};
-    var47 = [0.167, 0.167, 0.167];
-    var44.x = var47;
-    var47 = [0, 0, 0];
-    var44.y = var47;
-    var36.o = var44;
-    var36.t = var26;
-    var44 = [102, 98, 100];
-    var36.s = var44;
-    var30[1] = var36;
-    var36 = {};
-    var36.t = var16;
-    var44 = [100, 100, 100];
-    var36.s = var44;
-    var30[2] = var36;
-    var4.k = var30;
-    var3.s = var4;
-    var2.ks = var3;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var30 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var3 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var36 = {};
-    var47 = [37.415];
-    var44 = -6.513;
-    var47[1] = var44;
-    var44 = new Array(8);
-    var44[0] = var47;
-    var47 = [26.774];
-    var55 = -0.067;
-    var47[1] = var55;
-    var44[1] = var47;
-    var47 = [2.74, 32.477];
-    var44[2] = var47;
-    var47 = [0, 0];
-    var44[3] = var47;
-    var47 = new Array(2);
-    var49 = -39.561;
-    var47[0] = var49;
-    var49 = 7.758;
-    var47[1] = var49;
-    var44[4] = var47;
-    var47 = new Array(2);
-    var49 = -14.333;
-    var47[0] = var49;
-    var49 = 1.044;
-    var47[1] = var49;
-    var44[5] = var47;
-    var47 = new Array(2);
-    var49 = -2.74;
-    var47[0] = var49;
-    var49 = -32.477;
-    var47[1] = var49;
-    var44[6] = var47;
-    var47 = [0, 0];
-    var44[7] = var47;
-    var36.i = var44;
-    var47 = new Array(2);
-    var44 = -30.005;
-    var47[0] = var44;
-    var44 = 5.224;
-    var47[1] = var44;
-    var44 = new Array(8);
-    var44[0] = var47;
-    var47 = new Array(2);
-    var49 = -26.63;
-    var47[0] = var49;
-    var49 = 0.067;
-    var47[1] = var49;
-    var44[1] = var47;
-    var47 = [0, 0];
-    var44[2] = var47;
-    var47 = new Array(2);
-    var49 = -4.338;
-    var47[0] = var49;
-    var49 = -47.595;
-    var47[1] = var49;
-    var44[3] = var47;
-    var47 = [42.257];
-    var49 = -8.287;
-    var47[1] = var49;
-    var44[4] = var47;
-    var47 = [39.308];
-    var49 = -2.864;
-    var47[1] = var49;
-    var44[5] = var47;
-    var47 = [0, 0];
-    var44[6] = var47;
-    var47 = [3.025, 35.856];
-    var44[7] = var47;
-    var36.o = var44;
-    var47 = [340.436];
-    var44 = -10.084;
-    var47[1] = var44;
-    var44 = new Array(8);
-    var44[0] = var47;
-    var47 = [202.324, 5.295];
-    var44[1] = var47;
-    var47 = [141.91];
-    var49 = -46.878;
-    var47[1] = var49;
-    var44[2] = var47;
-    var47 = [138.981];
-    var49 = -97.481;
-    var47[1] = var49;
-    var44[3] = var47;
-    var47 = [195.004];
-    var49 = -168.2;
-    var47[1] = var49;
-    var44[4] = var47;
-    var47 = [328.35];
-    var49 = -184.779;
-    var47[1] = var49;
-    var44[5] = var47;
-    var47 = [392.045];
-    var49 = -131.913;
-    var47[1] = var49;
-    var44[6] = var47;
-    var47 = [397.997];
-    var49 = -74.377;
-    var47[1] = var49;
-    var44[7] = var47;
-    var36.v = var44;
-    var36.c = var10;
-    var3.k = var36;
-    var30.ks = var3;
-    var3 = new Array(3);
-    var3[0] = var30;
-    var30 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var44 = [0.411764711142, 0.556862771511, 1, 1];
-    var36.k = var44;
-    var30.c = var36;
-    var36 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var30.o = var36;
-    var3[1] = var30;
-    var30 = {};
-    var30.ty = var8;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var44 = [0, 0];
-    var36.k = var44;
-    var30.p = var36;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var44 = [0, 0];
-    var36.k = var44;
-    var30.a = var36;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var44 = [100, 100];
-    var36.k = var44;
-    var30.s = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var30.r = var36;
-    var36 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var30.o = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var30.sk = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var30.sa = var36;
-    var30.nm = var7;
-    var3[2] = var30;
-    var4.it = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var2.shapes = var3;
-    var0[12] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 16,
-        'ty': 4,
-        'nm': 'Scarf_02',
-        'parent': 17,
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'shapes': null,
-        'ip': 0,
-        'op': 96,
-        'st': 0,
-        'ct': 1,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 0,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 2,
-        'l': 2
-    };
-    var30 = [0, 0, 0];
-    var4.k = var30;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1,
-        'l': 2
-    };
-    var30 = [0, 0, 0];
-    var4.k = var30;
-    var3.a = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 6,
-        'l': 2
-    };
-    var30 = [100, 100, 100];
-    var4.k = var30;
-    var3.s = var4;
-    var2.ks = var3;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 7,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var30 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var36 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var3 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var44 = {};
-    var49 = new Array(2);
-    var61 = -13.496;
-    var49[0] = var61;
-    var60 = 0.237;
-    var49[1] = var60;
-    var47 = new Array(5);
-    var47[0] = var49;
-    var49 = new Array(2);
-    var52 = -0.322;
-    var49[0] = var52;
-    var52 = 2.49;
-    var49[1] = var52;
-    var47[1] = var49;
-    var49 = [14.447, 2.138];
-    var47[2] = var49;
-    var49 = [0, 0];
-    var47[3] = var49;
-    var49 = [1.378];
-    var52 = -3.331;
-    var49[1] = var52;
-    var47[4] = var49;
-    var44.i = var47;
-    var49 = [0.708];
-    var47 = -5.914;
-    var49[1] = var47;
-    var47 = new Array(5);
-    var47[0] = var49;
-    var49 = new Array(2);
-    var66 = -9.174;
-    var49[0] = var66;
-    var52 = 0.104;
-    var49[1] = var52;
-    var47[1] = var49;
-    var49 = new Array(2);
-    var53 = -0.625;
-    var49[0] = var53;
-    var53 = 1.208;
-    var49[1] = var53;
-    var47[2] = var49;
-    var49 = new Array(2);
-    var53 = -1.616;
-    var49[0] = var53;
-    var53 = 3.354;
-    var49[1] = var53;
-    var47[3] = var49;
-    var49 = [9.958, 1.047];
-    var47[4] = var49;
-    var44.o = var47;
-    var47 = new Array(5);
-    var49 = [328.179, 10.891];
-    var47[0] = var49;
-    var53 = [329.797];
-    var49 = -2.139;
-    var53[1] = var49;
-    var47[1] = var53;
-    var53 = [286.72];
-    var64 = -4.254;
-    var53[1] = var64;
-    var47[2] = var53;
-    var53 = [285.768];
-    var54 = -2.235;
-    var53[1] = var54;
-    var47[3] = var53;
-    var53 = [281.285, 7.804];
-    var47[4] = var53;
-    var44.v = var47;
-    var44.c = var10;
-    var3.k = var44;
-    var36.ks = var3;
-    var3 = new Array(3);
-    var3[0] = var36;
-    var36 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var47 = [0.858823537827, 0.337254911661, 0.337254911661, 1];
-    var44.k = var47;
-    var36.c = var44;
-    var44 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var36.o = var44;
-    var3[1] = var36;
-    var36 = {};
-    var36.ty = var8;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var47 = [0, 0];
-    var44.k = var47;
-    var36.p = var44;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var47 = [0, 0];
-    var44.k = var47;
-    var36.a = var44;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var47 = [100, 100];
-    var44.k = var47;
-    var36.s = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var36.r = var44;
-    var44 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var36.o = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var36.sk = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var36.sa = var44;
-    var36.nm = var7;
-    var3[2] = var36;
-    var30.it = var3;
-    var3 = new Array(8);
-    var3[0] = var30;
-    var30 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 2',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 2,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var44 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var47 = {};
-    var53 = new Array(4);
-    var54 = [13.939, 2.899];
-    var53[0] = var54;
-    var54 = [1.023];
-    var56 = -4.412;
-    var54[1] = var56;
-    var53[1] = var54;
-    var54 = new Array(2);
-    var57 = -24.568;
-    var54[0] = var57;
-    var56 = 1.484;
-    var54[1] = var56;
-    var53[2] = var54;
-    var54 = new Array(2);
-    var58 = -0.553;
-    var54[0] = var58;
-    var58 = 5.208;
-    var54[1] = var58;
-    var53[3] = var54;
-    var47.i = var53;
-    var54 = new Array(2);
-    var53 = -1.456;
-    var54[0] = var53;
-    var53 = 4.907;
-    var54[1] = var53;
-    var53 = new Array(4);
-    var53[0] = var54;
-    var54 = [9.645, 1.903];
-    var53[1] = var54;
-    var54 = [0.488];
-    var58 = -5.376;
-    var54[1] = var58;
-    var53[2] = var54;
-    var54 = new Array(2);
-    var63 = -11.402;
-    var54[0] = var63;
-    var62 = 0.548;
-    var54[1] = var62;
-    var53[3] = var54;
-    var47.o = var53;
-    var53 = new Array(4);
-    var54 = [273.787, 29.062];
-    var53[0] = var54;
-    var54 = [270.087, 43.088];
-    var53[1] = var54;
-    var54 = [324.37, 46.539];
-    var53[2] = var54;
-    var54 = [325.956, 30.526];
-    var53[3] = var54;
-    var47.v = var53;
-    var47.c = var10;
-    var36.k = var47;
-    var44.ks = var36;
-    var36 = new Array(3);
-    var36[0] = var44;
-    var44 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var53 = [0.858823537827, 0.337254911661, 0.337254911661, 1];
-    var47.k = var53;
-    var44.c = var47;
-    var47 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var44.o = var47;
-    var36[1] = var44;
-    var44 = {};
-    var44.ty = var8;
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var53 = [0, 0];
-    var47.k = var53;
-    var44.p = var47;
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var53 = [0, 0];
-    var47.k = var53;
-    var44.a = var47;
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var53 = [100, 100];
-    var47.k = var53;
-    var44.s = var47;
-    var47 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var44.r = var47;
-    var47 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var44.o = var47;
-    var47 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var44.sk = var47;
-    var47 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var44.sa = var47;
-    var44.nm = var7;
-    var36[2] = var44;
-    var30.it = var36;
-    var3[1] = var30;
-    var30 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 3',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 3,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var44 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var47 = {};
-    var58 = new Array(6);
-    var53 = [11.591, 0.578];
-    var58[0] = var53;
-    var53 = [0, 0];
-    var58[1] = var53;
-    var53 = new Array(2);
-    var54 = -0.441;
-    var53[0] = var54;
-    var54 = -2.416;
-    var53[1] = var54;
-    var58[2] = var53;
-    var59 = new Array(2);
-    var54 = -12.26;
-    var59[0] = var54;
-    var53 = 1.288;
-    var59[1] = var53;
-    var58[3] = var59;
-    var59 = [0, 0];
-    var58[4] = var59;
-    var59 = new Array(2);
-    var65 = -0.215;
-    var59[0] = var65;
-    var65 = 3.827;
-    var59[1] = var65;
-    var58[5] = var59;
-    var47.i = var58;
-    var58 = new Array(2);
-    var59 = -0.704;
-    var58[0] = var59;
-    var59 = 5.574;
-    var58[1] = var59;
-    var65 = new Array(6);
-    var65[0] = var58;
-    var58 = [0.079, 3.404];
-    var65[1] = var58;
-    var58 = [18.684, 3.21];
-    var65[2] = var58;
-    var58 = [0.552];
-    var59 = -3.945;
-    var58[1] = var59;
-    var65[3] = var58;
-    var58 = [0.042];
-    var59 = -3.166;
-    var58[1] = var59;
-    var65[4] = var58;
-    var67 = new Array(2);
-    var59 = -19.413;
-    var67[0] = var59;
-    var58 = 2.001;
-    var67[1] = var58;
-    var65[5] = var67;
-    var47.o = var65;
-    var65 = new Array(6);
-    var67 = [265.827, 66.749];
-    var65[0] = var67;
-    var67 = [264.945, 75.588];
-    var65[1] = var67;
-    var67 = [265.76, 84.263];
-    var65[2] = var67;
-    var67 = [322.194, 84.196];
-    var65[3] = var67;
-    var67 = [322.474, 76.824];
-    var65[4] = var67;
-    var67 = [322.873, 66.26];
-    var65[5] = var67;
-    var47.v = var65;
-    var47.c = var10;
-    var36.k = var47;
-    var44.ks = var36;
-    var36 = new Array(3);
-    var36[0] = var44;
-    var44 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var65 = [0.858823537827, 0.337254911661, 0.337254911661, 1];
-    var47.k = var65;
-    var44.c = var47;
-    var47 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var44.o = var47;
-    var36[1] = var44;
-    var44 = {};
-    var44.ty = var8;
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var65 = [0, 0];
-    var47.k = var65;
-    var44.p = var47;
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var65 = [0, 0];
-    var47.k = var65;
-    var44.a = var47;
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var65 = [100, 100];
-    var47.k = var65;
-    var44.s = var47;
-    var47 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var44.r = var47;
-    var47 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var44.o = var47;
-    var47 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var44.sk = var47;
-    var47 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var44.sa = var47;
-    var44.nm = var7;
-    var36[2] = var44;
-    var30.it = var36;
-    var3[2] = var30;
-    var30 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 4',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 4,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var44 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var47 = {};
-    var65 = new Array(2);
-    var65[0] = var66;
-    var65[1] = var52;
-    var52 = new Array(5);
-    var52[0] = var65;
-    var65 = [0, 0];
-    var52[1] = var65;
-    var65 = [0, 0];
-    var52[2] = var65;
-    var65 = [0, 0];
-    var52[3] = var65;
-    var65 = [1.578];
-    var66 = -3.05;
-    var65[1] = var66;
-    var52[4] = var65;
-    var47.i = var52;
-    var65 = [0.169];
-    var52 = -1.312;
-    var65[1] = var52;
-    var52 = new Array(5);
-    var52[0] = var65;
-    var65 = [2.294];
-    var66 = -11.294;
-    var65[1] = var66;
-    var52[1] = var65;
-    var65 = new Array(2);
-    var66 = -21.353;
-    var65[0] = var66;
-    var66 = -1.941;
-    var65[1] = var66;
-    var52[2] = var65;
-    var65 = new Array(2);
-    var66 = -4.93;
-    var65[0] = var66;
-    var66 = 1.517;
-    var65[1] = var66;
-    var52[3] = var65;
-    var65 = [14.447, 2.138];
-    var52[4] = var65;
-    var47.o = var52;
-    var52 = [329.797];
-    var52[1] = var49;
-    var49 = new Array(5);
-    var49[0] = var52;
-    var52 = [330.062];
-    var65 = -4.176;
-    var52[1] = var65;
-    var49[1] = var52;
-    var52 = [324.062];
-    var65 = -15.824;
-    var52[1] = var65;
-    var49[2] = var52;
-    var52 = [296.709];
-    var65 = -14.412;
-    var52[1] = var65;
-    var49[3] = var52;
-    var52 = [286.72];
-    var52[1] = var64;
-    var49[4] = var52;
-    var47.v = var49;
-    var47.c = var10;
-    var36.k = var47;
-    var44.ks = var36;
-    var36 = new Array(3);
-    var36[0] = var44;
-    var44 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var49 = [0.752941191196, 0, 0.117647059262, 1];
-    var47.k = var49;
-    var44.c = var47;
-    var47 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var44.o = var47;
-    var36[1] = var44;
-    var44 = {};
-    var44.ty = var8;
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var49 = [0, 0];
-    var47.k = var49;
-    var44.p = var47;
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var49 = [0, 0];
-    var47.k = var49;
-    var44.a = var47;
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var49 = [100, 100];
-    var47.k = var49;
-    var44.s = var47;
-    var47 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var44.r = var47;
-    var47 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var44.o = var47;
-    var47 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var44.sk = var47;
-    var47 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var44.sa = var47;
-    var44.nm = var7;
-    var36[2] = var44;
-    var30.it = var36;
-    var3[3] = var30;
-    var30 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 5',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 5,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var44 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var47 = {};
-    var49 = new Array(4);
-    var52 = [9.958, 1.047];
-    var49[0] = var52;
-    var52 = [2.016];
-    var64 = -6.795;
-    var52[1] = var64;
-    var49[1] = var52;
-    var52 = new Array(2);
-    var52[0] = var63;
-    var52[1] = var62;
-    var49[2] = var52;
-    var52 = new Array(2);
-    var62 = -0.674;
-    var52[0] = var62;
-    var62 = 5.628;
-    var52[1] = var62;
-    var49[3] = var52;
-    var47.i = var49;
-    var52 = new Array(2);
-    var49 = -3.014;
-    var52[0] = var49;
-    var49 = 7.289;
-    var52[1] = var49;
-    var49 = new Array(4);
-    var49[0] = var52;
-    var52 = [13.939, 2.899];
-    var49[1] = var52;
-    var52 = [0.767];
-    var62 = -7.218;
-    var52[1] = var62;
-    var49[2] = var52;
-    var52 = new Array(2);
-    var52[0] = var61;
-    var52[1] = var60;
-    var49[3] = var52;
-    var47.o = var49;
-    var49 = new Array(4);
-    var52 = [281.285, 7.804];
-    var49[0] = var52;
-    var52 = [273.787, 29.062];
-    var49[1] = var52;
-    var52 = [325.956, 30.526];
-    var49[2] = var52;
-    var52 = [328.179, 10.891];
-    var49[3] = var52;
-    var47.v = var49;
-    var47.c = var10;
-    var36.k = var47;
-    var44.ks = var36;
-    var36 = new Array(3);
-    var36[0] = var44;
-    var44 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var49 = [0.752941191196, 0, 0.117647059262, 1];
-    var47.k = var49;
-    var44.c = var47;
-    var47 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var44.o = var47;
-    var36[1] = var44;
-    var44 = {};
-    var44.ty = var8;
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var49 = [0, 0];
-    var47.k = var49;
-    var44.p = var47;
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var49 = [0, 0];
-    var47.k = var49;
-    var44.a = var47;
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var49 = [100, 100];
-    var47.k = var49;
-    var44.s = var47;
-    var47 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var44.r = var47;
-    var47 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var44.o = var47;
-    var47 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var44.sk = var47;
-    var47 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var44.sa = var47;
-    var44.nm = var7;
-    var36[2] = var44;
-    var30.it = var36;
-    var3[4] = var30;
-    var30 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 6',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 6,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var44 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var47 = {};
-    var49 = new Array(4);
-    var52 = [9.645, 1.903];
-    var49[0] = var52;
-    var52 = [0.728];
-    var60 = -5.763;
-    var52[1] = var60;
-    var49[1] = var52;
-    var52 = new Array(2);
-    var52[0] = var59;
-    var52[1] = var58;
-    var49[2] = var52;
-    var52 = new Array(2);
-    var58 = -0.623;
-    var52[0] = var58;
-    var58 = 6.854;
-    var52[1] = var58;
-    var49[3] = var52;
-    var47.i = var49;
-    var52 = new Array(2);
-    var49 = -2.241;
-    var52[0] = var49;
-    var49 = 9.663;
-    var52[1] = var49;
-    var49 = new Array(4);
-    var49[0] = var52;
-    var52 = [11.591, 0.578];
-    var49[1] = var52;
-    var52 = [0.343];
-    var58 = -6.104;
-    var52[1] = var58;
-    var49[2] = var52;
-    var52 = new Array(2);
-    var52[0] = var57;
-    var52[1] = var56;
-    var49[3] = var52;
-    var47.o = var49;
-    var49 = new Array(4);
-    var52 = [270.087, 43.088];
-    var49[0] = var52;
-    var52 = [265.827, 66.749];
-    var49[1] = var52;
-    var52 = [322.873, 66.26];
-    var49[2] = var52;
-    var52 = [324.37, 46.539];
-    var49[3] = var52;
-    var47.v = var49;
-    var47.c = var10;
-    var36.k = var47;
-    var44.ks = var36;
-    var36 = new Array(3);
-    var36[0] = var44;
-    var44 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var49 = [0.752941191196, 0, 0.117647059262, 1];
-    var47.k = var49;
-    var44.c = var47;
-    var47 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var44.o = var47;
-    var36[1] = var44;
-    var44 = {};
-    var44.ty = var8;
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var49 = [0, 0];
-    var47.k = var49;
-    var44.p = var47;
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var49 = [0, 0];
-    var47.k = var49;
-    var44.a = var47;
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var49 = [100, 100];
-    var47.k = var49;
-    var44.s = var47;
-    var47 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var44.r = var47;
-    var47 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var44.o = var47;
-    var47 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var44.sk = var47;
-    var47 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var44.sa = var47;
-    var44.nm = var7;
-    var36[2] = var44;
-    var30.it = var36;
-    var3[5] = var30;
-    var30 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 7',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 7,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var44 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var47 = {};
-    var49 = new Array(4);
-    var52 = [18.684, 3.21];
-    var49[0] = var52;
-    var52 = [0, 0];
-    var49[1] = var52;
-    var52 = [0, 0];
-    var49[2] = var52;
-    var52 = new Array(2);
-    var56 = -0.624;
-    var52[0] = var56;
-    var56 = 4.453;
-    var52[1] = var56;
-    var49[3] = var52;
-    var47.i = var49;
-    var49 = new Array(4);
-    var52 = [2.53, 13.867];
-    var49[0] = var52;
-    var52 = [28.588, 1.941];
-    var49[1] = var52;
-    var52 = [4.304];
-    var56 = -1.591;
-    var52[1] = var56;
-    var49[2] = var52;
-    var52 = new Array(2);
-    var52[0] = var54;
-    var52[1] = var53;
-    var49[3] = var52;
-    var47.o = var49;
-    var49 = new Array(4);
-    var52 = [265.76, 84.263];
-    var49[0] = var52;
-    var52 = [275.709, 97.118];
-    var49[1] = var52;
-    var52 = [315.592, 95.353];
-    var49[2] = var52;
-    var52 = [322.194, 84.196];
-    var49[3] = var52;
-    var47.v = var49;
-    var47.c = var10;
-    var36.k = var47;
-    var44.ks = var36;
-    var36 = new Array(3);
-    var36[0] = var44;
-    var44 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var49 = [0.752941191196, 0, 0.117647059262, 1];
-    var47.k = var49;
-    var44.c = var47;
-    var47 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var44.o = var47;
-    var36[1] = var44;
-    var44 = {};
-    var44.ty = var8;
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var49 = [0, 0];
-    var47.k = var49;
-    var44.p = var47;
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var49 = [0, 0];
-    var47.k = var49;
-    var44.a = var47;
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var49 = [100, 100];
-    var47.k = var49;
-    var44.s = var47;
-    var47 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var44.r = var47;
-    var47 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var44.o = var47;
-    var47 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var44.sk = var47;
-    var47 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var44.sa = var47;
-    var44.nm = var7;
-    var36[2] = var44;
-    var30.it = var36;
-    var3[6] = var30;
-    var30 = {};
-    var30.ty = var8;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var44 = [0, 0];
-    var36.k = var44;
-    var30.p = var36;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var44 = [0, 0];
-    var36.k = var44;
-    var30.a = var36;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var44 = [100, 100];
-    var36.k = var44;
-    var30.s = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var30.r = var36;
-    var36 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var30.o = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var30.sk = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var30.sa = var36;
-    var30.nm = var7;
-    var3[7] = var30;
-    var4.it = var3;
-    var3 = new Array(2);
-    var3[0] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 2',
-        'np': 7,
-        'cix': 2,
-        'bm': 0,
-        'ix': 2,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var36 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var44 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var30 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var47 = {};
-    var52 = new Array(2);
-    var67 = -11.404;
-    var52[0] = var67;
-    var66 = 3.04;
-    var52[1] = var66;
-    var49 = new Array(5);
-    var49[0] = var52;
-    var52 = [0.234, 2.109];
-    var49[1] = var52;
-    var52 = [12.695];
-    var72 = -1.294;
-    var52[1] = var72;
-    var49[2] = var52;
-    var52 = [0, 0];
-    var49[3] = var52;
-    var52 = [0.491];
-    var53 = -3.02;
-    var52[1] = var53;
-    var49[4] = var52;
-    var47.i = var49;
-    var52 = new Array(2);
-    var49 = -0.603;
-    var52[0] = var49;
-    var49 = -4.996;
-    var52[1] = var49;
-    var49 = new Array(5);
-    var49[0] = var52;
-    var52 = new Array(2);
-    var73 = -7.764;
-    var52[0] = var73;
-    var61 = 2.02;
-    var52[1] = var61;
-    var49[1] = var52;
-    var52 = new Array(2);
-    var53 = -0.284;
-    var52[0] = var53;
-    var53 = 1.122;
-    var52[1] = var53;
-    var49[2] = var52;
-    var52 = new Array(2);
-    var53 = -0.688;
-    var52[0] = var53;
-    var53 = 3.089;
-    var52[1] = var53;
-    var49[3] = var52;
-    var52 = [8.664];
-    var58 = -1.241;
-    var52[1] = var58;
-    var49[4] = var52;
-    var47.o = var49;
-    var49 = new Array(5);
-    var52 = [344.489, 7.671];
-    var49[0] = var52;
-    var52 = [343.208];
-    var65 = -3.349;
-    var52[1] = var65;
-    var49[1] = var52;
-    var52 = [306.224, 4.001];
-    var49[2] = var52;
-    var52 = [305.827, 5.855];
-    var49[3] = var52;
-    var52 = [304.067, 15.028];
-    var49[4] = var52;
-    var47.v = var49;
-    var47.c = var10;
-    var30.k = var47;
-    var44.ks = var30;
-    var30 = new Array(3);
-    var30[0] = var44;
-    var44 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var49 = [0, 0, 0, 1];
-    var47.k = var49;
-    var44.c = var47;
-    var47 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var44.o = var47;
-    var30[1] = var44;
-    var44 = {};
-    var44.ty = var8;
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var49 = [0, 0];
-    var47.k = var49;
-    var44.p = var47;
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var49 = [0, 0];
-    var47.k = var49;
-    var44.a = var47;
-    var47 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var49 = [100, 100];
-    var47.k = var49;
-    var44.s = var47;
-    var47 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var44.r = var47;
-    var47 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var44.o = var47;
-    var47 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var44.sk = var47;
-    var47 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var44.sa = var47;
-    var44.nm = var7;
-    var30[2] = var44;
-    var36.it = var30;
-    var30 = new Array(8);
-    var30[0] = var36;
-    var36 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 2',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 2,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var47 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var49 = {};
-    var53 = [12.419];
-    var68 = -0.563;
-    var53[1] = var68;
-    var52 = new Array(4);
-    var52[0] = var53;
-    var53 = new Array(2);
-    var54 = -0.03;
-    var53[0] = var54;
-    var54 = -3.831;
-    var53[1] = var54;
-    var52[1] = var53;
-    var53 = new Array(2);
-    var60 = -20.545;
-    var53[0] = var60;
-    var59 = 6.396;
-    var53[1] = var59;
-    var52[2] = var53;
-    var53 = [0.591, 4.385];
-    var52[3] = var53;
-    var49.i = var52;
-    var53 = new Array(2);
-    var52 = -0.236;
-    var53[0] = var52;
-    var52 = 4.328;
-    var53[1] = var52;
-    var52 = new Array(4);
-    var52[0] = var53;
-    var53 = [8.572];
-    var54 = -0.474;
-    var53[1] = var54;
-    var52[1] = var53;
-    var53 = new Array(2);
-    var56 = -0.68;
-    var53[0] = var56;
-    var56 = -4.509;
-    var53[1] = var56;
-    var52[2] = var53;
-    var53 = new Array(2);
-    var70 = -9.564;
-    var53[0] = var70;
-    var69 = 2.853;
-    var53[1] = var69;
-    var52[3] = var53;
-    var49.o = var52;
-    var52 = new Array(4);
-    var53 = [302.034, 34.031];
-    var52[0] = var53;
-    var53 = [301.75, 46.306];
-    var52[1] = var53;
-    var53 = [348.515, 37.689];
-    var52[2] = var53;
-    var53 = [346.6, 24.231];
-    var52[3] = var53;
-    var49.v = var52;
-    var49.c = var10;
-    var44.k = var49;
-    var47.ks = var44;
-    var44 = new Array(3);
-    var44[0] = var47;
-    var47 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var49 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var52 = [0, 0, 0, 1];
-    var49.k = var52;
-    var47.c = var49;
-    var49 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var47.o = var49;
-    var44[1] = var47;
-    var47 = {};
-    var47.ty = var8;
-    var49 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var52 = [0, 0];
-    var49.k = var52;
-    var47.p = var49;
-    var49 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var52 = [0, 0];
-    var49.k = var52;
-    var47.a = var49;
-    var49 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var52 = [100, 100];
-    var49.k = var52;
-    var47.s = var49;
-    var49 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var47.r = var49;
-    var49 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var47.o = var49;
-    var49 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var47.sk = var49;
-    var49 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var47.sa = var49;
-    var47.nm = var7;
-    var44[2] = var47;
-    var36.it = var44;
-    var30[1] = var36;
-    var36 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 3',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 3,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var49 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var52 = {};
-    var53 = [9.953];
-    var62 = -1.97;
-    var53[1] = var62;
-    var47 = new Array(6);
-    var47[0] = var53;
-    var53 = [0, 0];
-    var47[1] = var53;
-    var53 = new Array(2);
-    var56 = -0.866;
-    var53[0] = var56;
-    var56 = -1.887;
-    var53[1] = var56;
-    var47[2] = var53;
-    var53 = new Array(2);
-    var57 = -10.141;
-    var53[0] = var57;
-    var56 = 3.641;
-    var53[1] = var56;
-    var47[3] = var53;
-    var53 = [0, 0];
-    var47[4] = var53;
-    var53 = [0.597, 3.182];
-    var47[5] = var53;
-    var52.i = var47;
-    var71 = new Array(6);
-    var47 = [0.538, 4.716];
-    var71[0] = var47;
-    var47 = [0.76, 2.773];
-    var71[1] = var47;
-    var47 = [16.508];
-    var53 = -1.309;
-    var47[1] = var53;
-    var71[2] = var47;
-    var63 = new Array(2);
-    var47 = -0.335;
-    var63[0] = var47;
-    var64 = -3.35;
-    var63[1] = var64;
-    var71[3] = var63;
-    var63 = new Array(2);
-    var64 = -0.609;
-    var63[0] = var64;
-    var64 = -2.604;
-    var63[1] = var64;
-    var71[4] = var63;
-    var74 = new Array(2);
-    var64 = -16.066;
-    var74[0] = var64;
-    var63 = 5.733;
-    var74[1] = var63;
-    var71[5] = var74;
-    var52.o = var71;
-    var71 = new Array(6);
-    var74 = [302.953, 66.596];
-    var71[0] = var74;
-    var74 = [304.005, 74.026];
-    var71[1] = var74;
-    var74 = [306.463, 80.964];
-    var71[2] = var74;
-    var74 = [354.338, 69.01];
-    var71[3] = var74;
-    var74 = [353.074, 62.909];
-    var71[4] = var74;
-    var74 = [351.261, 54.167];
-    var71[5] = var74;
-    var52.v = var71;
-    var52.c = var10;
-    var44.k = var52;
-    var49.ks = var44;
-    var44 = new Array(3);
-    var44[0] = var49;
-    var49 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var52 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var71 = [0, 0, 0, 1];
-    var52.k = var71;
-    var49.c = var52;
-    var52 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var49.o = var52;
-    var44[1] = var49;
-    var49 = {};
-    var49.ty = var8;
-    var52 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var71 = [0, 0];
-    var52.k = var71;
-    var49.p = var52;
-    var52 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var71 = [0, 0];
-    var52.k = var71;
-    var49.a = var52;
-    var52 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var71 = [100, 100];
-    var52.k = var71;
-    var49.s = var52;
-    var52 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var49.r = var52;
-    var52 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var49.o = var52;
-    var52 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var49.sk = var52;
-    var52 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var49.sa = var52;
-    var49.nm = var7;
-    var44[2] = var49;
-    var36.it = var44;
-    var30[2] = var36;
-    var36 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 4',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 4,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var49 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var52 = {};
-    var71 = new Array(2);
-    var71[0] = var73;
-    var71[1] = var61;
-    var61 = new Array(5);
-    var61[0] = var71;
-    var71 = [0, 0];
-    var61[1] = var71;
-    var71 = [0, 0];
-    var61[2] = var71;
-    var71 = [0, 0];
-    var61[3] = var71;
-    var71 = [0.718];
-    var73 = -2.833;
-    var71[1] = var73;
-    var61[4] = var71;
-    var52.i = var61;
-    var71 = new Array(2);
-    var61 = -0.124;
-    var71[0] = var61;
-    var61 = -1.111;
-    var71[1] = var61;
-    var61 = new Array(5);
-    var61[0] = var71;
-    var71 = new Array(2);
-    var73 = -0.353;
-    var71[0] = var73;
-    var73 = -9.74;
-    var71[1] = var73;
-    var61[1] = var71;
-    var71 = new Array(2);
-    var73 = -18.515;
-    var71[0] = var73;
-    var73 = 2.911;
-    var71[1] = var73;
-    var61[2] = var71;
-    var71 = new Array(2);
-    var73 = -3.875;
-    var71[0] = var73;
-    var73 = 2.283;
-    var71[1] = var73;
-    var61[3] = var71;
-    var71 = [12.695];
-    var71[1] = var72;
-    var61[4] = var71;
-    var52.o = var61;
-    var61 = [343.208];
-    var61[1] = var65;
-    var65 = new Array(5);
-    var65[0] = var61;
-    var71 = [343.018];
-    var61 = -5.075;
-    var71[1] = var61;
-    var65[1] = var71;
-    var71 = [335.555];
-    var72 = -13.355;
-    var71[1] = var72;
-    var65[2] = var71;
-    var71 = [312.632];
-    var72 = -6.431;
-    var71[1] = var72;
-    var65[3] = var71;
-    var71 = [306.224, 4.001];
-    var65[4] = var71;
-    var52.v = var65;
-    var52.c = var10;
-    var44.k = var52;
-    var49.ks = var44;
-    var44 = new Array(3);
-    var44[0] = var49;
-    var49 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var52 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var65 = [0, 0, 0, 1];
-    var52.k = var65;
-    var49.c = var52;
-    var52 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var49.o = var52;
-    var44[1] = var49;
-    var49 = {};
-    var49.ty = var8;
-    var52 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var65 = [0, 0];
-    var52.k = var65;
-    var49.p = var52;
-    var52 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var65 = [0, 0];
-    var52.k = var65;
-    var49.a = var52;
-    var52 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var65 = [100, 100];
-    var52.k = var65;
-    var49.s = var52;
-    var52 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var49.r = var52;
-    var52 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var49.o = var52;
-    var52 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var49.sk = var52;
-    var52 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var49.sa = var52;
-    var49.nm = var7;
-    var44[2] = var49;
-    var36.it = var44;
-    var30[3] = var36;
-    var36 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 5',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 5,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var49 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var52 = {};
-    var65 = [8.664];
-    var65[1] = var58;
-    var58 = new Array(4);
-    var58[0] = var65;
-    var65 = [0.327];
-    var71 = -5.994;
-    var65[1] = var71;
-    var58[1] = var65;
-    var65 = new Array(2);
-    var65[0] = var70;
-    var65[1] = var69;
-    var58[2] = var65;
-    var65 = [0.574, 4.755];
-    var58[3] = var65;
-    var52.i = var58;
-    var65 = new Array(2);
-    var58 = -1.074;
-    var65[0] = var58;
-    var58 = 6.609;
-    var65[1] = var58;
-    var58 = new Array(4);
-    var58[0] = var65;
-    var65 = [12.419];
-    var65[1] = var68;
-    var58[1] = var65;
-    var65 = new Array(2);
-    var68 = -0.819;
-    var65[0] = var68;
-    var68 = -6.077;
-    var65[1] = var68;
-    var58[2] = var65;
-    var65 = new Array(2);
-    var65[0] = var67;
-    var65[1] = var66;
-    var58[3] = var65;
-    var52.o = var58;
-    var58 = new Array(4);
-    var65 = [304.067, 15.028];
-    var58[0] = var65;
-    var65 = [302.034, 34.031];
-    var58[1] = var65;
-    var65 = [346.6, 24.231];
-    var58[2] = var65;
-    var65 = [344.489, 7.671];
-    var58[3] = var65;
-    var52.v = var58;
-    var52.c = var10;
-    var44.k = var52;
-    var49.ks = var44;
-    var44 = new Array(3);
-    var44[0] = var49;
-    var49 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var52 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var58 = [0, 0, 0, 1];
-    var52.k = var58;
-    var49.c = var52;
-    var52 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var49.o = var52;
-    var44[1] = var49;
-    var49 = {};
-    var49.ty = var8;
-    var52 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var58 = [0, 0];
-    var52.k = var58;
-    var49.p = var52;
-    var52 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var58 = [0, 0];
-    var52.k = var58;
-    var49.a = var52;
-    var52 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var58 = [100, 100];
-    var52.k = var58;
-    var49.s = var52;
-    var52 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var49.r = var52;
-    var52 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var49.o = var52;
-    var52 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var49.sk = var52;
-    var52 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var49.sa = var52;
-    var49.nm = var7;
-    var44[2] = var49;
-    var36.it = var44;
-    var30[4] = var36;
-    var36 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 6',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 6,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var49 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var52 = {};
-    var58 = [8.572];
-    var58[1] = var54;
-    var54 = new Array(4);
-    var54[0] = var58;
-    var58 = new Array(2);
-    var65 = -0.556;
-    var58[0] = var65;
-    var65 = -4.877;
-    var58[1] = var65;
-    var54[1] = var58;
-    var58 = new Array(2);
-    var58[0] = var64;
-    var58[1] = var63;
-    var54[2] = var58;
-    var58 = [0.867, 5.749];
-    var54[3] = var58;
-    var52.i = var54;
-    var54 = new Array(4);
-    var58 = [0.066, 8.392];
-    var54[0] = var58;
-    var58 = [9.953];
-    var58[1] = var62;
-    var54[1] = var58;
-    var58 = new Array(2);
-    var62 = -0.952;
-    var58[0] = var62;
-    var58[1] = var61;
-    var54[2] = var58;
-    var58 = new Array(2);
-    var58[0] = var60;
-    var58[1] = var59;
-    var54[3] = var58;
-    var52.o = var54;
-    var54 = new Array(4);
-    var58 = [301.75, 46.306];
-    var54[0] = var58;
-    var58 = [302.953, 66.596];
-    var54[1] = var58;
-    var58 = [351.261, 54.167];
-    var54[2] = var58;
-    var58 = [348.515, 37.689];
-    var54[3] = var58;
-    var52.v = var54;
-    var52.c = var10;
-    var44.k = var52;
-    var49.ks = var44;
-    var44 = new Array(3);
-    var44[0] = var49;
-    var49 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var52 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var54 = [0, 0, 0, 1];
-    var52.k = var54;
-    var49.c = var52;
-    var52 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var49.o = var52;
-    var44[1] = var49;
-    var49 = {};
-    var49.ty = var8;
-    var52 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var54 = [0, 0];
-    var52.k = var54;
-    var49.p = var52;
-    var52 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var54 = [0, 0];
-    var52.k = var54;
-    var49.a = var52;
-    var52 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var54 = [100, 100];
-    var52.k = var54;
-    var49.s = var52;
-    var52 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var49.r = var52;
-    var52 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var49.o = var52;
-    var52 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var49.sk = var52;
-    var52 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var49.sa = var52;
-    var49.nm = var7;
-    var44[2] = var49;
-    var36.it = var44;
-    var30[5] = var36;
-    var36 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 7',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 7,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var49 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var52 = {};
-    var54 = [16.508];
-    var54[1] = var53;
-    var53 = new Array(4);
-    var53[0] = var54;
-    var54 = [0, 0];
-    var53[1] = var54;
-    var54 = [0, 0];
-    var53[2] = var54;
-    var54 = [0.377, 3.781];
-    var53[3] = var54;
-    var52.i = var53;
-    var53 = new Array(4);
-    var54 = [4.971, 10.831];
-    var53[0] = var54;
-    var54 = [24.654];
-    var58 = -4.437;
-    var54[1] = var58;
-    var53[1] = var54;
-    var54 = [3.328];
-    var58 = -2.211;
-    var54[1] = var58;
-    var53[2] = var54;
-    var54 = new Array(2);
-    var54[0] = var57;
-    var54[1] = var56;
-    var53[3] = var54;
-    var52.o = var53;
-    var53 = new Array(4);
-    var54 = [306.463, 80.964];
-    var53[0] = var54;
-    var54 = [317.524, 89.401];
-    var53[1] = var54;
-    var54 = [351.007, 79.545];
-    var53[2] = var54;
-    var54 = [354.338, 69.01];
-    var53[3] = var54;
-    var52.v = var53;
-    var52.c = var10;
-    var44.k = var52;
-    var49.ks = var44;
-    var44 = new Array(3);
-    var44[0] = var49;
-    var49 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var52 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var53 = [0, 0, 0, 1];
-    var52.k = var53;
-    var49.c = var52;
-    var52 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var49.o = var52;
-    var44[1] = var49;
-    var49 = {};
-    var49.ty = var8;
-    var52 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var53 = [0, 0];
-    var52.k = var53;
-    var49.p = var52;
-    var52 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var53 = [0, 0];
-    var52.k = var53;
-    var49.a = var52;
-    var52 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var53 = [100, 100];
-    var52.k = var53;
-    var49.s = var52;
-    var52 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var49.r = var52;
-    var52 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var49.o = var52;
-    var52 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var49.sk = var52;
-    var52 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var49.sa = var52;
-    var49.nm = var7;
-    var44[2] = var49;
-    var36.it = var44;
-    var30[6] = var36;
-    var36 = {};
-    var36.ty = var8;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var49 = [0, 0];
-    var44.k = var49;
-    var36.p = var44;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var49 = [0, 0];
-    var44.k = var49;
-    var36.a = var44;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var49 = [100, 100];
-    var44.k = var49;
-    var36.s = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var36.r = var44;
-    var44 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var36.o = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var36.sk = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var36.sa = var44;
-    var36.nm = var7;
-    var30[7] = var36;
-    var4.it = var30;
-    var3[1] = var4;
-    var2.shapes = var3;
-    var0[13] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 17,
-        'ty': 4,
-        'nm': 'Scarf_01',
-        'parent': 23,
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'shapes': null,
-        'ip': 0,
-        'op': 96,
-        'st': 0,
-        'ct': 1,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 0,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 2,
-        'l': 2
-    };
-    var30 = [1.346];
-    var36 = -1.738;
-    var30[1] = var36;
-    var30[2] = var6;
-    var4.k = var30;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1,
-        'l': 2
-    };
-    var30 = [0, 0, 0];
-    var4.k = var30;
-    var3.a = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 6,
-        'l': 2
-    };
-    var30 = [100, 100, 100];
-    var4.k = var30;
-    var3.s = var4;
-    var2.ks = var3;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var30 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var3 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var36 = {};
-    var44 = new Array(3);
-    var49 = [0, 0];
-    var44[0] = var49;
-    var49 = [0.963];
-    var75 = -9.306;
-    var49[1] = var75;
-    var44[1] = var49;
-    var49 = new Array(2);
-    var52 = -0.473;
-    var49[0] = var52;
-    var52 = 10.887;
-    var49[1] = var52;
-    var44[2] = var49;
-    var36.i = var44;
-    var44 = new Array(3);
-    var49 = [0.485, 3.74];
-    var44[0] = var49;
-    var49 = [3.606];
-    var52 = -3.691;
-    var49[1] = var52;
-    var44[1] = var49;
-    var49 = [0, 0];
-    var44[2] = var49;
-    var36.o = var44;
-    var49 = [352.973];
-    var56 = -18.94;
-    var49[1] = var56;
-    var44 = new Array(3);
-    var44[0] = var49;
-    var49 = [353.257, 2.261];
-    var44[1] = var49;
-    var49 = [362.886];
-    var52 = -19.706;
-    var49[1] = var52;
-    var44[2] = var49;
-    var36.v = var44;
-    var36.c = var10;
-    var3.k = var36;
-    var30.ks = var3;
-    var3 = new Array(3);
-    var3[0] = var30;
-    var30 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var44 = [0.858823537827, 0.337254911661, 0.337254911661, 1];
-    var36.k = var44;
-    var30.c = var36;
-    var36 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var30.o = var36;
-    var3[1] = var30;
-    var30 = {};
-    var30.ty = var8;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var44 = [0, 0];
-    var36.k = var44;
-    var30.p = var36;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var44 = [0, 0];
-    var36.k = var44;
-    var30.a = var36;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var44 = [100, 100];
-    var36.k = var44;
-    var30.s = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var30.r = var36;
-    var36 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var30.o = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var30.sk = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var30.sa = var36;
-    var30.nm = var7;
-    var3[2] = var30;
-    var4.it = var3;
-    var3 = new Array(9);
-    var3[0] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 2',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 2,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var36 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var30 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var44 = {};
-    var49 = new Array(5);
-    var52 = [2.978, 9.596];
-    var49[0] = var52;
-    var52 = [0, 0];
-    var49[1] = var52;
-    var52 = [0, 0];
-    var49[2] = var52;
-    var52 = [0.642];
-    var62 = -22.04;
-    var52[1] = var62;
-    var49[3] = var52;
-    var52 = new Array(2);
-    var53 = -4.266;
-    var52[0] = var53;
-    var53 = 2.285;
-    var52[1] = var53;
-    var49[4] = var52;
-    var44.i = var49;
-    var49 = new Array(5);
-    var52 = [0, 0];
-    var49[0] = var52;
-    var52 = [0, 0];
-    var49[1] = var52;
-    var52 = [0, 0];
-    var49[2] = var52;
-    var52 = [4.075];
-    var53 = -2.021;
-    var52[1] = var53;
-    var49[3] = var52;
-    var52 = [0.659];
-    var76 = -9.709;
-    var52[1] = var76;
-    var49[4] = var52;
-    var44.o = var49;
-    var52 = [332.318];
-    var73 = -17.345;
-    var52[1] = var73;
-    var49 = new Array(5);
-    var49[0] = var52;
-    var52 = [316.226];
-    var60 = -16.103;
-    var52[1] = var60;
-    var49[1] = var52;
-    var52 = [316.415];
-    var53 = -15.706;
-    var52[1] = var53;
-    var49[2] = var52;
-    var52 = [322.326, 20.02];
-    var49[3] = var52;
-    var52 = [334.83, 13.575];
-    var49[4] = var52;
-    var44.v = var49;
-    var44.c = var10;
-    var30.k = var44;
-    var36.ks = var30;
-    var30 = new Array(3);
-    var30[0] = var36;
-    var36 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var49 = [0.858823537827, 0.337254911661, 0.337254911661, 1];
-    var44.k = var49;
-    var36.c = var44;
-    var44 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var36.o = var44;
-    var30[1] = var36;
-    var36 = {};
-    var36.ty = var8;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var49 = [0, 0];
-    var44.k = var49;
-    var36.p = var44;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var49 = [0, 0];
-    var44.k = var49;
-    var36.a = var44;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var49 = [100, 100];
-    var44.k = var49;
-    var36.s = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var36.r = var44;
-    var44 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var36.o = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var36.sk = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var36.sa = var44;
-    var36.nm = var7;
-    var30[2] = var36;
-    var4.it = var30;
-    var3[1] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 3',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 3,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var36 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var30 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var44 = {};
-    var49 = new Array(4);
-    var52 = [2.169, 12.556];
-    var49[0] = var52;
-    var52 = [0, 0];
-    var49[1] = var52;
-    var52 = new Array(2);
-    var58 = -0.486;
-    var52[0] = var58;
-    var57 = -20.058;
-    var52[1] = var57;
-    var49[2] = var52;
-    var52 = new Array(2);
-    var54 = -4.809;
-    var52[0] = var54;
-    var54 = 1.932;
-    var52[1] = var54;
-    var49[3] = var52;
-    var44.i = var49;
-    var49 = new Array(4);
-    var52 = [0, 0];
-    var49[0] = var52;
-    var52 = [1.54, 10.665];
-    var49[1] = var52;
-    var52 = [4.484];
-    var54 = -1.559;
-    var52[1] = var54;
-    var49[2] = var52;
-    var52 = [0.256];
-    var63 = -13.386;
-    var52[1] = var63;
-    var49[3] = var52;
-    var44.o = var49;
-    var52 = [293.202];
-    var59 = -14.325;
-    var52[1] = var59;
-    var49 = new Array(4);
-    var49[0] = var52;
-    var52 = [276.726];
-    var54 = -13.053;
-    var52[1] = var54;
-    var49[1] = var52;
-    var52 = [281.223, 37.471];
-    var49[2] = var52;
-    var52 = [295.162, 32.242];
-    var49[3] = var52;
-    var44.v = var49;
-    var44.c = var10;
-    var30.k = var44;
-    var36.ks = var30;
-    var30 = new Array(3);
-    var30[0] = var36;
-    var36 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var49 = [0.858823537827, 0.337254911661, 0.337254911661, 1];
-    var44.k = var49;
-    var36.c = var44;
-    var44 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var36.o = var44;
-    var30[1] = var36;
-    var36 = {};
-    var36.ty = var8;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var49 = [0, 0];
-    var44.k = var49;
-    var36.p = var44;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var49 = [0, 0];
-    var44.k = var49;
-    var36.a = var44;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var49 = [100, 100];
-    var44.k = var49;
-    var36.s = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var36.r = var44;
-    var44 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var36.o = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var36.sk = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var36.sa = var44;
-    var36.nm = var7;
-    var30[2] = var36;
-    var4.it = var30;
-    var3[2] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 4',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 4,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var36 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var30 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var44 = {};
-    var49 = new Array(4);
-    var52 = [0, 0];
-    var49[0] = var52;
-    var52 = new Array(2);
-    var66 = -1.739;
-    var52[0] = var66;
-    var65 = -18.411;
-    var52[1] = var65;
-    var49[1] = var52;
-    var52 = new Array(2);
-    var61 = -5.827;
-    var52[0] = var61;
-    var61 = 1.307;
-    var52[1] = var61;
-    var49[2] = var52;
-    var52 = [0, 0];
-    var49[3] = var52;
-    var44.i = var49;
-    var49 = new Array(4);
-    var52 = [0.011, 12.967];
-    var49[0] = var52;
-    var52 = [5.072];
-    var61 = -0.698;
-    var52[1] = var61;
-    var49[1] = var52;
-    var52 = [0, 0];
-    var49[2] = var52;
-    var52 = [0, 0];
-    var49[3] = var52;
-    var44.o = var49;
-    var52 = [234.981];
-    var64 = -9.829;
-    var52[1] = var64;
-    var49 = new Array(4);
-    var49[0] = var52;
-    var52 = [236.983, 48.487];
-    var49[1] = var52;
-    var52 = [253.325, 45.512];
-    var49[2] = var52;
-    var61 = [249.863];
-    var52 = -10.978;
-    var61[1] = var52;
-    var49[3] = var61;
-    var44.v = var49;
-    var44.c = var10;
-    var30.k = var44;
-    var36.ks = var30;
-    var30 = new Array(3);
-    var30[0] = var36;
-    var36 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var49 = [0.858823537827, 0.337254911661, 0.337254911661, 1];
-    var44.k = var49;
-    var36.c = var44;
-    var44 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var36.o = var44;
-    var30[1] = var36;
-    var36 = {};
-    var36.ty = var8;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var49 = [0, 0];
-    var44.k = var49;
-    var36.p = var44;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var49 = [0, 0];
-    var44.k = var49;
-    var36.a = var44;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var49 = [100, 100];
-    var44.k = var49;
-    var36.s = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var36.r = var44;
-    var44 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var36.o = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var36.sk = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var36.sa = var44;
-    var36.nm = var7;
-    var30[2] = var36;
-    var4.it = var30;
-    var3[3] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 5',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 5,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var36 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var30 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var44 = {};
-    var61 = new Array(2);
-    var68 = -4.113;
-    var61[0] = var68;
-    var67 = 20.222;
-    var61[1] = var67;
-    var49 = new Array(4);
-    var49[0] = var61;
-    var61 = [0, 0];
-    var49[1] = var61;
-    var61 = new Array(2);
-    var70 = -7.558;
-    var61[0] = var70;
-    var69 = -29.491;
-    var61[1] = var69;
-    var49[2] = var61;
-    var61 = new Array(2);
-    var71 = -6.643;
-    var61[0] = var71;
-    var71 = -0.49;
-    var61[1] = var71;
-    var49[3] = var61;
-    var44.i = var49;
-    var49 = new Array(4);
-    var61 = [0, 0];
-    var49[0] = var61;
-    var61 = [0, 0];
-    var49[1] = var61;
-    var61 = [3.797, 0.979];
-    var49[2] = var61;
-    var61 = new Array(2);
-    var72 = -2.748;
-    var61[0] = var72;
-    var71 = -10.716;
-    var61[1] = var71;
-    var49[3] = var61;
-    var44.o = var49;
-    var74 = [203.945];
-    var49 = -3.706;
-    var74[1] = var49;
-    var61 = new Array(4);
-    var61[0] = var74;
-    var74 = [190.298, 0.765];
-    var61[1] = var74;
-    var74 = [191.437, 47.235];
-    var61[2] = var74;
-    var74 = [207.077, 49.686];
-    var61[3] = var74;
-    var44.v = var61;
-    var44.c = var10;
-    var30.k = var44;
-    var36.ks = var30;
-    var30 = new Array(3);
-    var30[0] = var36;
-    var36 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var61 = [0.858823537827, 0.337254911661, 0.337254911661, 1];
-    var44.k = var61;
-    var36.c = var44;
-    var44 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var36.o = var44;
-    var30[1] = var36;
-    var36 = {};
-    var36.ty = var8;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var61 = [0, 0];
-    var44.k = var61;
-    var36.p = var44;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var61 = [0, 0];
-    var44.k = var61;
-    var36.a = var44;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var61 = [100, 100];
-    var44.k = var61;
-    var36.s = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var36.r = var44;
-    var44 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var36.o = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var36.sk = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var36.sa = var44;
-    var36.nm = var7;
-    var30[2] = var36;
-    var4.it = var30;
-    var3[4] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 6',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 6,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var36 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var30 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var44 = {};
-    var61 = new Array(5);
-    var74 = [0.485, 3.74];
-    var61[0] = var74;
-    var74 = [0, 0];
-    var61[1] = var74;
-    var74 = [0.659];
-    var74[1] = var76;
-    var61[2] = var74;
-    var74 = new Array(2);
-    var76 = -5.249;
-    var74[0] = var76;
-    var76 = 3.052;
-    var74[1] = var76;
-    var61[3] = var74;
-    var74 = new Array(2);
-    var76 = -1.772;
-    var74[0] = var76;
-    var76 = 1.813;
-    var74[1] = var76;
-    var61[4] = var74;
-    var44.i = var61;
-    var61 = new Array(5);
-    var74 = [0, 0];
-    var61[0] = var74;
-    var74 = [2.978, 9.596];
-    var61[1] = var74;
-    var74 = [4.987];
-    var76 = -2.671;
-    var74[1] = var76;
-    var61[2] = var74;
-    var74 = [0, 0];
-    var61[3] = var74;
-    var74 = [0.963];
-    var74[1] = var75;
-    var61[4] = var74;
-    var44.o = var61;
-    var61 = [352.973];
-    var61[1] = var56;
-    var56 = new Array(5);
-    var56[0] = var61;
-    var61 = [332.318];
-    var61[1] = var73;
-    var56[1] = var61;
-    var61 = [334.83, 13.575];
-    var56[2] = var61;
-    var61 = [350.18, 5];
-    var56[3] = var61;
-    var61 = [353.257, 2.261];
-    var56[4] = var61;
-    var44.v = var56;
-    var44.c = var10;
-    var30.k = var44;
-    var36.ks = var30;
-    var30 = new Array(3);
-    var30[0] = var36;
-    var36 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var56 = [0.752941191196, 0, 0.117647059262, 1];
-    var44.k = var56;
-    var36.c = var44;
-    var44 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var36.o = var44;
-    var30[1] = var36;
-    var36 = {};
-    var36.ty = var8;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var56 = [0, 0];
-    var44.k = var56;
-    var36.p = var44;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var56 = [0, 0];
-    var44.k = var56;
-    var36.a = var44;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var56 = [100, 100];
-    var44.k = var56;
-    var36.s = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var36.r = var44;
-    var44 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var36.o = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var36.sk = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var36.sa = var44;
-    var36.nm = var7;
-    var30[2] = var36;
-    var4.it = var30;
-    var3[5] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 7',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 7,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var36 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var30 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var44 = {};
-    var56 = new Array(9);
-    var61 = [0, 0];
-    var56[0] = var61;
-    var61 = new Array(2);
-    var73 = -12.353;
-    var61[0] = var73;
-    var73 = -27.529;
-    var61[1] = var73;
-    var56[1] = var61;
-    var61 = new Array(2);
-    var73 = -6.706;
-    var61[0] = var73;
-    var73 = -3.882;
-    var61[1] = var73;
-    var56[2] = var61;
-    var61 = new Array(2);
-    var73 = -5.266;
-    var61[0] = var73;
-    var73 = -1.358;
-    var61[1] = var73;
-    var56[3] = var61;
-    var61 = [0, 0];
-    var56[4] = var61;
-    var61 = [0, 0];
-    var56[5] = var61;
-    var61 = new Array(2);
-    var61[0] = var72;
-    var61[1] = var71;
-    var56[6] = var61;
-    var61 = new Array(2);
-    var71 = -12.064;
-    var61[0] = var71;
-    var71 = 1.661;
-    var61[1] = var71;
-    var56[7] = var61;
-    var61 = [0.011, 12.967];
-    var56[8] = var61;
-    var44.i = var56;
-    var56 = new Array(9);
-    var61 = [0, 0];
-    var56[0] = var61;
-    var61 = [0, 0];
-    var56[1] = var61;
-    var61 = [0, 0];
-    var56[2] = var61;
-    var61 = new Array(2);
-    var61[0] = var70;
-    var61[1] = var69;
-    var56[3] = var61;
-    var61 = [0, 0];
-    var56[4] = var61;
-    var61 = new Array(2);
-    var61[0] = var68;
-    var61[1] = var67;
-    var56[5] = var61;
-    var61 = [7.899, 0.582];
-    var56[6] = var61;
-    var61 = new Array(2);
-    var61[0] = var66;
-    var61[1] = var65;
-    var56[7] = var61;
-    var61 = [0, 0];
-    var56[8] = var61;
-    var44.o = var56;
-    var61 = [180.062];
-    var56 = -5.588;
-    var61[1] = var56;
-    var56 = new Array(9);
-    var56[0] = var61;
-    var61 = [174.768, 34.647];
-    var56[1] = var61;
-    var61 = [183.592, 44.529];
-    var56[2] = var61;
-    var61 = [191.437, 47.235];
-    var56[3] = var61;
-    var61 = [190.298, 0.765];
-    var56[4] = var61;
-    var61 = [203.945];
-    var61[1] = var49;
-    var56[5] = var61;
-    var61 = [207.077, 49.686];
-    var56[6] = var61;
-    var61 = [236.983, 48.487];
-    var56[7] = var61;
-    var61 = [234.981];
-    var61[1] = var64;
-    var56[8] = var61;
-    var44.v = var56;
-    var44.c = var10;
-    var30.k = var44;
-    var36.ks = var30;
-    var30 = new Array(3);
-    var30[0] = var36;
-    var36 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var56 = [0.752941191196, 0, 0.117647059262, 1];
-    var44.k = var56;
-    var36.c = var44;
-    var44 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var36.o = var44;
-    var30[1] = var36;
-    var36 = {};
-    var36.ty = var8;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var56 = [0, 0];
-    var44.k = var56;
-    var36.p = var44;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var56 = [0, 0];
-    var44.k = var56;
-    var36.a = var44;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var56 = [100, 100];
-    var44.k = var56;
-    var36.s = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var36.r = var44;
-    var44 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var36.o = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var36.sk = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var36.sa = var44;
-    var36.nm = var7;
-    var30[2] = var36;
-    var4.it = var30;
-    var3[6] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 8',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 8,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var36 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var30 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var44 = {};
-    var56 = new Array(5);
-    var61 = [0, 0];
-    var56[0] = var61;
-    var61 = [0, 0];
-    var56[1] = var61;
-    var61 = [0, 0];
-    var56[2] = var61;
-    var61 = [0.256];
-    var61[1] = var63;
-    var56[3] = var61;
-    var61 = new Array(2);
-    var63 = -9.575;
-    var61[0] = var63;
-    var63 = 4.749;
-    var61[1] = var63;
-    var56[4] = var61;
-    var44.i = var56;
-    var56 = new Array(5);
-    var61 = [0, 0];
-    var56[0] = var61;
-    var61 = [0, 0];
-    var56[1] = var61;
-    var61 = [2.169, 12.556];
-    var56[2] = var61;
-    var61 = [8.537];
-    var63 = -3.429;
-    var61[1] = var63;
-    var56[3] = var61;
-    var61 = [0.642];
-    var61[1] = var62;
-    var56[4] = var61;
-    var44.o = var56;
-    var56 = [316.415];
-    var56[1] = var53;
-    var53 = new Array(5);
-    var53[0] = var56;
-    var56 = [316.226];
-    var56[1] = var60;
-    var53[1] = var56;
-    var56 = [293.202];
-    var56[1] = var59;
-    var53[2] = var56;
-    var56 = [295.162, 32.242];
-    var53[3] = var56;
-    var56 = [322.326, 20.02];
-    var53[4] = var56;
-    var44.v = var53;
-    var44.c = var10;
-    var30.k = var44;
-    var36.ks = var30;
-    var30 = new Array(3);
-    var30[0] = var36;
-    var36 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var53 = [0.752941191196, 0, 0.117647059262, 1];
-    var44.k = var53;
-    var36.c = var44;
-    var44 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var36.o = var44;
-    var30[1] = var36;
-    var36 = {};
-    var36.ty = var8;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var53 = [0, 0];
-    var44.k = var53;
-    var36.p = var44;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var53 = [0, 0];
-    var44.k = var53;
-    var36.a = var44;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var53 = [100, 100];
-    var44.k = var53;
-    var36.s = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var36.r = var44;
-    var44 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var36.o = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var36.sk = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var36.sa = var44;
-    var36.nm = var7;
-    var30[2] = var36;
-    var4.it = var30;
-    var3[7] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 9',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 9,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var36 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var30 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var44 = {};
-    var53 = new Array(4);
-    var56 = [0, 0];
-    var53[0] = var56;
-    var56 = [0, 0];
-    var53[1] = var56;
-    var56 = new Array(2);
-    var59 = -10.116;
-    var56[0] = var59;
-    var59 = 3.518;
-    var56[1] = var59;
-    var53[2] = var56;
-    var56 = [1.54, 10.665];
-    var53[3] = var56;
-    var44.i = var53;
-    var53 = new Array(4);
-    var56 = [0, 0];
-    var53[0] = var56;
-    var56 = [8.485];
-    var59 = -1.903;
-    var56[1] = var59;
-    var53[1] = var56;
-    var56 = new Array(2);
-    var56[0] = var58;
-    var56[1] = var57;
-    var53[2] = var56;
-    var56 = [0, 0];
-    var53[3] = var56;
-    var44.o = var53;
-    var53 = [249.863];
-    var53[1] = var52;
-    var52 = new Array(4);
-    var52[0] = var53;
-    var53 = [253.325, 45.512];
-    var52[1] = var53;
-    var53 = [281.223, 37.471];
-    var52[2] = var53;
-    var53 = [276.726];
-    var53[1] = var54;
-    var52[3] = var53;
-    var44.v = var52;
-    var44.c = var10;
-    var30.k = var44;
-    var36.ks = var30;
-    var30 = new Array(3);
-    var30[0] = var36;
-    var36 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var52 = [0.752941191196, 0, 0.117647059262, 1];
-    var44.k = var52;
-    var36.c = var44;
-    var44 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var36.o = var44;
-    var30[1] = var36;
-    var36 = {};
-    var36.ty = var8;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var52 = [0, 0];
-    var44.k = var52;
-    var36.p = var44;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var52 = [0, 0];
-    var44.k = var52;
-    var36.a = var44;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var52 = [100, 100];
-    var44.k = var52;
-    var36.s = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var36.r = var44;
-    var44 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var36.o = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var36.sk = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var36.sa = var44;
-    var36.nm = var7;
-    var30[2] = var36;
-    var4.it = var30;
-    var3[8] = var4;
-    var2.shapes = var3;
-    var0[14] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 18,
-        'ty': 4,
-        'nm': 'Leaf',
-        'parent': 15,
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'shapes': null,
-        'ip': 0,
-        'op': 96,
-        'st': 0,
-        'ct': 1,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 0,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 2,
-        'l': 2
-    };
-    var30 = [252.656];
-    var36 = -186.114;
-    var30[1] = var36;
-    var30[2] = var6;
-    var4.k = var30;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1,
-        'l': 2
-    };
-    var30 = [252.656];
-    var30[1] = var36;
-    var30[2] = var6;
-    var4.k = var30;
-    var3.a = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 6,
-        'l': 2
-    };
-    var36 = {};
-    var30 = {};
-    var44 = [0.42, 0.42, 0.42];
-    var30.x = var44;
-    var44 = [1, 1, 1];
-    var30.y = var44;
-    var36.i = var30;
-    var30 = {};
-    var44 = [0.58, 0.58, 0.58];
-    var30.x = var44;
-    var44 = [0, 0, 0];
-    var30.y = var44;
-    var36.o = var30;
-    var36.t = var26;
-    var30 = [100, 100, 100];
-    var36.s = var30;
-    var30 = new Array(4);
-    var30[0] = var36;
-    var36 = {};
-    var44 = {};
-    var52 = [0.42, 0.42, 0.42];
-    var44.x = var52;
-    var52 = [1, 1, 1];
-    var44.y = var52;
-    var36.i = var44;
-    var44 = {};
-    var52 = [0.58, 0.58, 0.58];
-    var44.x = var52;
-    var52 = [0, 0, 0];
-    var44.y = var52;
-    var36.o = var44;
-    var36.t = var33;
-    var44 = [94, 100, 100];
-    var36.s = var44;
-    var30[1] = var36;
-    var36 = {};
-    var44 = {};
-    var52 = [0.42, 0.42, 0.42];
-    var44.x = var52;
-    var52 = [1, 1, 1];
-    var44.y = var52;
-    var36.i = var44;
-    var44 = {};
-    var52 = [0.58, 0.58, 0.58];
-    var44.x = var52;
-    var52 = [0, 0, 0];
-    var44.y = var52;
-    var36.o = var44;
-    var36.t = var38;
-    var44 = [94, 100, 100];
-    var36.s = var44;
-    var30[2] = var36;
-    var36 = {};
-    var36.t = var37;
-    var44 = [100, 100, 100];
-    var36.s = var44;
-    var30[3] = var36;
-    var4.k = var30;
-    var3.s = var4;
-    var2.ks = var3;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var30 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var36 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var3 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var44 = {};
-    var53 = [1.104];
-    var52 = -0.137;
-    var53[1] = var52;
-    var52 = new Array(8);
-    var52[0] = var53;
-    var53 = [0.802, 0.56];
-    var52[1] = var53;
-    var53 = [0.325, 0.766];
-    var52[2] = var53;
-    var53 = new Array(2);
-    var54 = -1.968;
-    var53[0] = var54;
-    var54 = 0.933;
-    var53[1] = var54;
-    var52[3] = var53;
-    var53 = new Array(2);
-    var54 = -0.888;
-    var53[0] = var54;
-    var54 = -2.084;
-    var53[1] = var54;
-    var52[4] = var53;
-    var53 = [0, 0];
-    var52[5] = var53;
-    var53 = new Array(2);
-    var54 = -14.857;
-    var53[0] = var54;
-    var54 = -10.373;
-    var53[1] = var54;
-    var52[6] = var53;
-    var53 = [1.184];
-    var54 = -1.908;
-    var53[1] = var54;
-    var52[7] = var53;
-    var44.i = var52;
-    var53 = new Array(2);
-    var52 = -0.883;
-    var53[0] = var52;
-    var52 = 0.11;
-    var53[1] = var52;
-    var52 = new Array(8);
-    var52[0] = var53;
-    var53 = new Array(2);
-    var54 = -16.816;
-    var53[0] = var54;
-    var54 = -11.741;
-    var53[1] = var54;
-    var52[1] = var53;
-    var53 = new Array(2);
-    var54 = -0.886;
-    var53[0] = var54;
-    var54 = -2.087;
-    var53[1] = var54;
-    var52[2] = var53;
-    var53 = [1.963];
-    var54 = -0.932;
-    var53[1] = var54;
-    var52[3] = var53;
-    var53 = [0, 0];
-    var52[4] = var53;
-    var53 = [0.071, 0.166];
-    var52[5] = var53;
-    var53 = [1.804, 1.26];
-    var52[6] = var53;
-    var53 = new Array(2);
-    var54 = -0.658;
-    var53[0] = var54;
-    var54 = 1.061;
-    var53[1] = var54;
-    var52[7] = var53;
-    var44.o = var52;
-    var53 = [238.659];
-    var52 = -163.666;
-    var53[1] = var52;
-    var52 = new Array(8);
-    var52[0] = var53;
-    var53 = [236.05];
-    var54 = -164.323;
-    var53[1] = var54;
-    var52[1] = var53;
-    var53 = [211.081];
-    var54 = -194.954;
-    var53[1] = var54;
-    var52[2] = var53;
-    var53 = [213.039];
-    var54 = -200.423;
-    var53[1] = var54;
-    var52[3] = var53;
-    var53 = [218.204];
-    var54 = -198.339;
-    var53[1] = var54;
-    var52[4] = var53;
-    var53 = [218.204];
-    var53[1] = var54;
-    var52[5] = var53;
-    var53 = [240.339];
-    var54 = -171.233;
-    var53[1] = var54;
-    var52[6] = var53;
-    var53 = [241.461];
-    var54 = -165.498;
-    var53[1] = var54;
-    var52[7] = var53;
-    var44.v = var52;
-    var44.c = var10;
-    var3.k = var44;
-    var36.ks = var3;
-    var3 = new Array(3);
-    var3[0] = var36;
-    var36 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var52 = [0, 0.549019634724, 0.262745112181, 1];
-    var44.k = var52;
-    var36.c = var44;
-    var44 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var36.o = var44;
-    var3[1] = var36;
-    var36 = {};
-    var36.ty = var8;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var52 = [0, 0];
-    var44.k = var52;
-    var36.p = var44;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var52 = [0, 0];
-    var44.k = var52;
-    var36.a = var44;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var52 = [100, 100];
-    var44.k = var52;
-    var36.s = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var36.r = var44;
-    var44 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var36.o = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var36.sk = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var36.sa = var44;
-    var36.nm = var7;
-    var3[2] = var36;
-    var30.it = var3;
-    var3 = new Array(2);
-    var3[0] = var30;
-    var30 = {};
-    var30.ty = var8;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var44 = [0, 0];
-    var36.k = var44;
-    var30.p = var36;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var44 = [0, 0];
-    var36.k = var44;
-    var30.a = var36;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var44 = [100, 100];
-    var36.k = var44;
-    var30.s = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var30.r = var36;
-    var36 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var30.o = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var30.sk = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var30.sa = var36;
-    var30.nm = var7;
-    var3[1] = var30;
-    var4.it = var3;
-    var3 = new Array(4);
-    var3[0] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 2',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 2,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var36 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var30 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var44 = {};
-    var52 = new Array(5);
-    var53 = [0, 0];
-    var52[0] = var53;
-    var53 = [26.176, 28.607];
-    var52[1] = var53;
-    var53 = [20.175];
-    var54 = -7.792;
-    var53[1] = var54;
-    var52[2] = var53;
-    var53 = new Array(2);
-    var54 = -12.045;
-    var53[0] = var54;
-    var54 = -22.099;
-    var53[1] = var54;
-    var52[3] = var53;
-    var53 = [0, 0];
-    var52[4] = var53;
-    var44.i = var52;
-    var52 = new Array(5);
-    var53 = [0, 0];
-    var52[0] = var53;
-    var53 = new Array(2);
-    var54 = -19.123;
-    var53[0] = var54;
-    var54 = -20.899;
-    var53[1] = var54;
-    var52[1] = var53;
-    var53 = new Array(2);
-    var54 = -16.758;
-    var53[0] = var54;
-    var54 = 6.472;
-    var53[1] = var54;
-    var52[2] = var53;
-    var53 = [13.72, 25.172];
-    var52[3] = var53;
-    var53 = [0, 0];
-    var52[4] = var53;
-    var44.o = var52;
-    var53 = [304.078];
-    var52 = -155.896;
-    var53[1] = var52;
-    var52 = new Array(5);
-    var52[0] = var53;
-    var53 = [256.766];
-    var54 = -197.765;
-    var53[1] = var54;
-    var52[1] = var53;
-    var53 = [206.446];
-    var54 = -222.22;
-    var53[1] = var54;
-    var52[2] = var53;
-    var53 = [193.159];
-    var54 = -177.605;
-    var53[1] = var54;
-    var52[3] = var53;
-    var53 = [240.05];
-    var54 = -141.444;
-    var53[1] = var54;
-    var52[4] = var53;
-    var44.v = var52;
-    var44.c = var10;
-    var30.k = var44;
-    var36.ks = var30;
-    var30 = new Array(3);
-    var30[0] = var36;
-    var36 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var52 = [0.145098045468, 0.796078443527, 0.474509805441, 1];
-    var44.k = var52;
-    var36.c = var44;
-    var44 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var36.o = var44;
-    var30[1] = var36;
-    var36 = {};
-    var36.ty = var8;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var52 = [0, 0];
-    var44.k = var52;
-    var36.p = var44;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var52 = [0, 0];
-    var44.k = var52;
-    var36.a = var44;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var52 = [100, 100];
-    var44.k = var52;
-    var36.s = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var36.r = var44;
-    var44 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var36.o = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var36.sk = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var36.sa = var44;
-    var36.nm = var7;
-    var30[2] = var36;
-    var4.it = var30;
-    var3[1] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 3',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 3,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var36 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var44 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var30 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var52 = {};
-    var54 = [0.835];
-    var53 = -0.104;
-    var54[1] = var53;
-    var53 = new Array(7);
-    var53[0] = var54;
-    var54 = [0.883, 0.943];
-    var53[1] = var54;
-    var54 = new Array(2);
-    var56 = -1.53;
-    var54[0] = var56;
-    var56 = 1.608;
-    var54[1] = var56;
-    var53[2] = var54;
-    var54 = new Array(2);
-    var56 = -0.008;
-    var54[0] = var56;
-    var56 = 0.285;
-    var54[1] = var56;
-    var53[3] = var54;
-    var54 = new Array(2);
-    var56 = -2.161;
-    var54[0] = var56;
-    var54[1] = var55;
-    var53[4] = var54;
-    var54 = [0.062];
-    var55 = -2.285;
-    var54[1] = var55;
-    var53[5] = var54;
-    var54 = [20.692];
-    var56 = -21.743;
-    var54[1] = var56;
-    var53[6] = var54;
-    var52.i = var53;
-    var54 = new Array(2);
-    var53 = -1.153;
-    var54[0] = var53;
-    var53 = 0.144;
-    var54[1] = var53;
-    var53 = new Array(7);
-    var53[0] = var54;
-    var54 = new Array(2);
-    var56 = -1.522;
-    var54[0] = var56;
-    var56 = -1.625;
-    var54[1] = var56;
-    var53[1] = var54;
-    var54 = [18.503];
-    var56 = -19.443;
-    var54[1] = var56;
-    var53[2] = var54;
-    var54 = [0.062];
-    var54[1] = var55;
-    var53[3] = var54;
-    var54 = [2.157, 0.072];
-    var53[4] = var54;
-    var54 = new Array(2);
-    var55 = -0.035;
-    var54[0] = var55;
-    var55 = 1.297;
-    var54[1] = var55;
-    var53[5] = var54;
-    var54 = new Array(2);
-    var55 = -0.642;
-    var54[0] = var55;
-    var55 = 0.675;
-    var54[1] = var55;
-    var53[6] = var54;
-    var52.o = var53;
-    var54 = [278.962];
-    var53 = -171.595;
-    var54[1] = var53;
-    var53 = new Array(7);
-    var53[0] = var54;
-    var54 = [275.723];
-    var55 = -172.795;
-    var54[1] = var55;
-    var53[1] = var54;
-    var54 = [275.739];
-    var55 = -178.65;
-    var54[1] = var55;
-    var53[2] = var54;
-    var54 = [295.226];
-    var55 = -226.774;
-    var54[1] = var55;
-    var53[3] = var54;
-    var54 = [299.244];
-    var55 = -230.783;
-    var54[1] = var55;
-    var53[4] = var54;
-    var54 = [303.037];
-    var55 = -226.516;
-    var54[1] = var55;
-    var53[5] = var54;
-    var54 = [281.248];
-    var55 = -172.763;
-    var54[1] = var55;
-    var53[6] = var54;
-    var52.v = var53;
-    var52.c = var10;
-    var30.k = var52;
-    var44.ks = var30;
-    var30 = new Array(3);
-    var30[0] = var44;
-    var44 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var52 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var53 = [0, 0.549019634724, 0.262745112181, 1];
-    var52.k = var53;
-    var44.c = var52;
-    var52 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var44.o = var52;
-    var30[1] = var44;
-    var44 = {};
-    var44.ty = var8;
-    var52 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var53 = [0, 0];
-    var52.k = var53;
-    var44.p = var52;
-    var52 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var53 = [0, 0];
-    var52.k = var53;
-    var44.a = var52;
-    var52 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var53 = [100, 100];
-    var52.k = var53;
-    var44.s = var52;
-    var52 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var44.r = var52;
-    var52 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var44.o = var52;
-    var52 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var44.sk = var52;
-    var52 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var44.sa = var52;
-    var44.nm = var7;
-    var30[2] = var44;
-    var36.it = var30;
-    var30 = new Array(2);
-    var30[0] = var36;
-    var36 = {};
-    var36.ty = var8;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var52 = [0, 0];
-    var44.k = var52;
-    var36.p = var44;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var52 = [0, 0];
-    var44.k = var52;
-    var36.a = var44;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var52 = [100, 100];
-    var44.k = var52;
-    var36.s = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var36.r = var44;
-    var44 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var36.o = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var36.sk = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var36.sa = var44;
-    var36.nm = var7;
-    var30[1] = var36;
-    var4.it = var30;
-    var3[2] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 4',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 4,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var36 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var30 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var44 = {};
-    var52 = new Array(6);
-    var53 = [0, 0];
-    var52[0] = var53;
-    var53 = new Array(2);
-    var54 = -4.842;
-    var53[0] = var54;
-    var54 = 5.827;
-    var53[1] = var54;
-    var52[1] = var53;
-    var53 = new Array(2);
-    var54 = -15.375;
-    var53[0] = var54;
-    var54 = -9.103;
-    var53[1] = var54;
-    var52[2] = var53;
-    var53 = [10.458];
-    var54 = -15.14;
-    var53[1] = var54;
-    var52[3] = var53;
-    var53 = [0, 0];
-    var52[4] = var53;
-    var53 = [0, 0];
-    var52[5] = var53;
-    var44.i = var52;
-    var52 = new Array(6);
-    var53 = [0, 0];
-    var52[0] = var53;
-    var53 = [7.453];
-    var54 = -8.969;
-    var53[1] = var54;
-    var52[1] = var53;
-    var53 = [13.049, 7.725];
-    var52[2] = var53;
-    var53 = new Array(2);
-    var54 = -10.308;
-    var53[0] = var54;
-    var54 = 14.923;
-    var53[1] = var54;
-    var52[3] = var53;
-    var53 = [0, 0];
-    var52[4] = var53;
-    var53 = [0, 0];
-    var52[5] = var53;
-    var44.o = var52;
-    var53 = [250.422];
-    var52 = -179.597;
-    var53[1] = var52;
-    var52 = new Array(6);
-    var52[0] = var53;
-    var53 = [266.704];
-    var54 = -199.39;
-    var53[1] = var54;
-    var52[1] = var53;
-    var53 = [305.34];
-    var54 = -207.192;
-    var53[1] = var54;
-    var52[2] = var53;
-    var53 = [311.779];
-    var54 = -170.594;
-    var53[1] = var54;
-    var52[3] = var53;
-    var53 = [293.931];
-    var54 = -155.281;
-    var53[1] = var54;
-    var52[4] = var53;
-    var53 = [221.711];
-    var54 = -146.477;
-    var53[1] = var54;
-    var52[5] = var53;
-    var44.v = var52;
-    var44.c = var10;
-    var30.k = var44;
-    var36.ks = var30;
-    var30 = new Array(3);
-    var30[0] = var36;
-    var36 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var52 = [0.333333343267, 0.945098042488, 0.525490224361, 1];
-    var44.k = var52;
-    var36.c = var44;
-    var44 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var36.o = var44;
-    var30[1] = var36;
-    var36 = {};
-    var36.ty = var8;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var52 = [0, 0];
-    var44.k = var52;
-    var36.p = var44;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var52 = [0, 0];
-    var44.k = var52;
-    var36.a = var44;
-    var44 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var52 = [100, 100];
-    var44.k = var52;
-    var36.s = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var36.r = var44;
-    var44 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var36.o = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var36.sk = var44;
-    var44 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var36.sa = var44;
-    var36.nm = var7;
-    var30[2] = var36;
-    var4.it = var30;
-    var3[3] = var4;
-    var2.shapes = var3;
-    var0[15] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 19,
-        'ty': 4,
-        'nm': 'R_Ear',
-        'parent': 15,
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'shapes': null,
-        'ip': 0,
-        'op': 96,
-        'st': 0,
-        'ct': 1,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 0,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 2,
-        'l': 2
-    };
-    var36 = {};
-    var30 = {
-        'x': 0.42,
-        'y': 1
-    };
-    var36.i = var30;
-    var30 = {
-        'x': 0.58,
-        'y': 0
-    };
-    var36.o = var30;
-    var36.t = var26;
-    var26 = [149.582];
-    var30 = -69.472;
-    var26[1] = var30;
-    var26[2] = var6;
-    var36.s = var26;
-    var26 = [0, 0, 0];
-    var36.to = var26;
-    var26 = [0, 0, 0];
-    var36.ti = var26;
-    var26 = new Array(4);
-    var26[0] = var36;
-    var36 = {};
-    var44 = {
-        'x': 0.42,
-        'y': 0.42
-    };
-    var36.i = var44;
-    var44 = {
-        'x': 0.58,
-        'y': 0.58
-    };
-    var36.o = var44;
-    var36.t = var33;
-    var52 = [140.582];
-    var44 = -68.472;
-    var52[1] = var44;
-    var52[2] = var6;
-    var36.s = var52;
-    var52 = [0, 0, 0];
-    var36.to = var52;
-    var52 = [0, 0, 0];
-    var36.ti = var52;
-    var26[1] = var36;
-    var36 = {};
-    var52 = {
-        'x': 0.42,
-        'y': 1
-    };
-    var36.i = var52;
-    var52 = {
-        'x': 0.58,
-        'y': 0
-    };
-    var36.o = var52;
-    var36.t = var38;
-    var38 = [140.582];
-    var38[1] = var44;
-    var38[2] = var6;
-    var36.s = var38;
-    var38 = [0, 0, 0];
-    var36.to = var38;
-    var38 = [0, 0, 0];
-    var36.ti = var38;
-    var26[2] = var36;
-    var36 = {};
-    var36.t = var37;
-    var37 = [149.582];
-    var37[1] = var30;
-    var37[2] = var6;
-    var36.s = var37;
-    var26[3] = var36;
-    var4.k = var26;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1,
-        'l': 2
-    };
-    var26 = [149.582];
-    var26[1] = var30;
-    var26[2] = var6;
-    var4.k = var26;
-    var3.a = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 6,
-        'l': 2
-    };
-    var26 = [100, 100, 100];
-    var4.k = var26;
-    var3.s = var4;
-    var2.ks = var3;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var26 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var3 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var30 = {};
-    var37 = new Array(2);
-    var44 = -6.303;
-    var37[0] = var44;
-    var38 = 0.785;
-    var37[1] = var38;
-    var36 = new Array(8);
-    var36[0] = var37;
-    var37 = [0, 0];
-    var36[1] = var37;
-    var37 = [0.323, 2.849];
-    var36[2] = var37;
-    var37 = [0, 0];
-    var36[3] = var37;
-    var37 = [2.696];
-    var52 = -0.336;
-    var37[1] = var52;
-    var36[4] = var37;
-    var37 = [0, 0];
-    var36[5] = var37;
-    var37 = new Array(2);
-    var37[0] = var51;
-    var37[1] = var50;
-    var36[6] = var37;
-    var37 = [0, 0];
-    var36[7] = var37;
-    var30.i = var36;
-    var36 = new Array(8);
-    var37 = [0, 0];
-    var36[0] = var37;
-    var37 = [2.688];
-    var37[1] = var47;
-    var36[1] = var37;
-    var37 = [0, 0];
-    var36[2] = var37;
-    var37 = new Array(2);
-    var37[0] = var46;
-    var37[1] = var45;
-    var36[3] = var37;
-    var37 = [0, 0];
-    var36[4] = var37;
-    var37 = new Array(2);
-    var37[0] = var44;
-    var37[1] = var38;
-    var36[5] = var37;
-    var37 = [0, 0];
-    var36[6] = var37;
-    var37 = [0.757, 6.681];
-    var36[7] = var37;
-    var30.o = var36;
-    var37 = [144.532];
-    var36 = -46.03;
-    var37[1] = var36;
-    var36 = new Array(8);
-    var36[0] = var37;
-    var37 = [159.781];
-    var38 = -47.928;
-    var37[1] = var38;
-    var36[1] = var37;
-    var37 = [164.082];
-    var38 = -53.717;
-    var37[1] = var38;
-    var36[2] = var37;
-    var37 = [159.374];
-    var38 = -95.283;
-    var37[1] = var38;
-    var36[3] = var37;
-    var37 = [153.883];
-    var38 = -99.868;
-    var37[1] = var38;
-    var36[4] = var37;
-    var37 = [138.648];
-    var38 = -97.971;
-    var37[1] = var38;
-    var36[5] = var37;
-    var37 = [128.564];
-    var38 = -84.398;
-    var37[1] = var38;
-    var36[6] = var37;
-    var37 = [131.696];
-    var38 = -56.75;
-    var37[1] = var38;
-    var36[7] = var37;
-    var30.v = var36;
-    var30.c = var10;
-    var3.k = var30;
-    var26.ks = var3;
-    var3 = new Array(3);
-    var3[0] = var26;
-    var26 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var30 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var36 = [0.717647075653, 0.803921580315, 1, 1];
-    var30.k = var36;
-    var26.c = var30;
-    var30 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var26.o = var30;
-    var3[1] = var26;
-    var26 = {};
-    var26.ty = var8;
-    var30 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var36 = [0, 0];
-    var30.k = var36;
-    var26.p = var30;
-    var30 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var36 = [0, 0];
-    var30.k = var36;
-    var26.a = var30;
-    var30 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var36 = [100, 100];
-    var30.k = var36;
-    var26.s = var30;
-    var30 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var26.r = var30;
-    var30 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var26.o = var30;
-    var30 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var26.sk = var30;
-    var30 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var26.sa = var30;
-    var26.nm = var7;
-    var3[2] = var26;
-    var4.it = var3;
-    var3 = new Array(2);
-    var3[0] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 2',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 2,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var30 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var26 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var36 = {};
-    var38 = new Array(2);
-    var38[0] = var40;
-    var38[1] = var39;
-    var37 = new Array(8);
-    var37[0] = var38;
-    var38 = [0, 0];
-    var37[1] = var38;
-    var38 = [1.899, 16.762];
-    var37[2] = var38;
-    var38 = [0, 0];
-    var37[3] = var38;
-    var38 = [15.814];
-    var38[1] = var43;
-    var37[4] = var38;
-    var38 = [0, 0];
-    var37[5] = var38;
-    var38 = new Array(2);
-    var38[0] = var42;
-    var38[1] = var41;
-    var37[6] = var38;
-    var38 = [0, 0];
-    var37[7] = var38;
-    var36.i = var37;
-    var37 = new Array(8);
-    var38 = [0, 0];
-    var37[0] = var38;
-    var38 = [15.814];
-    var38[1] = var43;
-    var37[1] = var38;
-    var38 = [0, 0];
-    var37[2] = var38;
-    var38 = new Array(2);
-    var38[0] = var42;
-    var38[1] = var41;
-    var37[3] = var38;
-    var38 = [0, 0];
-    var37[4] = var38;
-    var38 = new Array(2);
-    var38[0] = var40;
-    var38[1] = var39;
-    var37[5] = var38;
-    var38 = [0, 0];
-    var37[6] = var38;
-    var38 = [1.899, 16.762];
-    var37[7] = var38;
-    var36.o = var37;
-    var38 = [148.211];
-    var37 = -23.482;
-    var38[1] = var37;
-    var37 = new Array(8);
-    var37[0] = var38;
-    var38 = [161.189];
-    var39 = -25.098;
-    var38[1] = var39;
-    var37[1] = var38;
-    var38 = [186.489];
-    var39 = -59.153;
-    var38[1] = var39;
-    var37[2] = var38;
-    var38 = [183.157];
-    var39 = -88.567;
-    var38[1] = var39;
-    var37[3] = var38;
-    var38 = [150.953];
-    var39 = -115.463;
-    var38[1] = var39;
-    var37[4] = var38;
-    var38 = [137.974];
-    var39 = -113.847;
-    var38[1] = var39;
-    var37[5] = var38;
-    var38 = [112.674];
-    var39 = -79.791;
-    var38[1] = var39;
-    var37[6] = var38;
-    var38 = [116.006];
-    var39 = -50.378;
-    var38[1] = var39;
-    var37[7] = var38;
-    var36.v = var37;
-    var36.c = var10;
-    var26.k = var36;
-    var30.ks = var26;
-    var26 = new Array(3);
-    var26[0] = var30;
-    var30 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var37 = [0.411764711142, 0.556862771511, 1, 1];
-    var36.k = var37;
-    var30.c = var36;
-    var36 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var30.o = var36;
-    var26[1] = var30;
-    var30 = {};
-    var30.ty = var8;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var37 = [0, 0];
-    var36.k = var37;
-    var30.p = var36;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var37 = [0, 0];
-    var36.k = var37;
-    var30.a = var36;
-    var36 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var37 = [100, 100];
-    var36.k = var37;
-    var30.s = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var30.r = var36;
-    var36 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var30.o = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var30.sk = var36;
-    var36 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var30.sa = var36;
-    var30.nm = var7;
-    var26[2] = var30;
-    var4.it = var26;
-    var3[1] = var4;
-    var2.shapes = var3;
-    var0[16] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 20,
-        'ty': 4,
-        'nm': 'L_Leg',
-        'parent': 33,
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'shapes': null,
-        'ip': 0,
-        'op': 96,
-        'st': 0,
-        'ct': 1,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 0,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 2,
-        'l': 2
-    };
-    var26 = [239, 152, 0];
-    var4.k = var26;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1,
-        'l': 2
-    };
-    var26 = [302, 152, 0];
-    var4.k = var26;
-    var3.a = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 6,
-        'l': 2
-    };
-    var26 = [100, 100, 100];
-    var4.k = var26;
-    var3.s = var4;
-    var2.ks = var3;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var26 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var3 = {
-        'a': 1,
-        'k': null,
-        'ix': 2
-    };
-    var36 = {};
-    var30 = {
-        'x': 0.833,
-        'y': 1
-    };
-    var36.i = var30;
-    var30 = {
-        'x': 0.333,
-        'y': 0
-    };
-    var36.o = var30;
-    var36.t = var12;
-    var38 = {};
-    var39 = new Array(2);
-    var56 = -0.76;
-    var39[0] = var56;
-    var37 = -26.184;
-    var39[1] = var37;
-    var30 = new Array(9);
-    var30[0] = var39;
-    var39 = new Array(2);
-    var55 = -1.787;
-    var39[0] = var55;
-    var54 = -11.737;
-    var39[1] = var54;
-    var30[1] = var39;
-    var39 = [0, 0];
-    var30[2] = var39;
-    var39 = new Array(2);
-    var53 = -5.299;
-    var39[0] = var53;
-    var52 = -17.223;
-    var39[1] = var52;
-    var30[3] = var39;
-    var39 = new Array(2);
-    var51 = -19.902;
-    var39[0] = var51;
-    var50 = 4.235;
-    var39[1] = var50;
-    var30[4] = var39;
-    var39 = [0.827, 13.647];
-    var30[5] = var39;
-    var39 = [2.012, 10.22];
-    var30[6] = var39;
-    var39 = [0.629, 8.827];
-    var30[7] = var39;
-    var39 = [15.109, 3.181];
-    var30[8] = var39;
-    var38.i = var30;
-    var30 = new Array(9);
-    var39 = [0, 0];
-    var30[0] = var39;
-    var39 = [1.239, 8.138];
-    var30[1] = var39;
-    var39 = [0, 0];
-    var30[2] = var39;
-    var39 = [4.805, 15.615];
-    var30[3] = var39;
-    var39 = [17.417];
-    var39[1] = var49;
-    var30[4] = var39;
-    var39 = new Array(2);
-    var47 = -0.423;
-    var39[0] = var47;
-    var46 = -6.973;
-    var39[1] = var46;
-    var30[5] = var39;
-    var39 = new Array(2);
-    var45 = -2.153;
-    var39[0] = var45;
-    var44 = -10.937;
-    var39[1] = var44;
-    var30[6] = var39;
-    var39 = new Array(2);
-    var43 = -1.218;
-    var39[0] = var43;
-    var42 = -17.077;
-    var39[1] = var42;
-    var30[7] = var39;
-    var39 = new Array(2);
-    var41 = -16.426;
-    var39[0] = var41;
-    var40 = -3.458;
-    var39[1] = var40;
-    var30[8] = var39;
-    var38.o = var30;
-    var30 = new Array(9);
-    var39 = [269.468, 154.739];
-    var30[0] = var39;
-    var39 = [274.829, 189.95];
-    var30[1] = var39;
-    var39 = [278.546, 214.363];
-    var30[2] = var39;
-    var39 = [268.645, 239.913];
-    var30[3] = var39;
-    var39 = [329.603, 248.921];
-    var30[4] = var39;
-    var39 = [340.891, 212.513];
-    var30[5] = var39;
-    var39 = [336.533, 185.494];
-    var30[6] = var39;
-    var39 = [331.495, 154.341];
-    var30[7] = var39;
-    var39 = [312.012, 124.521];
-    var30[8] = var39;
-    var38.v = var30;
-    var38.c = var10;
-    var30 = new Array(1);
-    var30[0] = var38;
-    var36.s = var30;
-    var30 = new Array(4);
-    var30[0] = var36;
-    var36 = {};
-    var38 = {
-        'x': 0.667,
-        'y': 1
-    };
-    var36.i = var38;
-    var38 = {
-        'x': 0.167,
-        'y': 0
-    };
-    var36.o = var38;
-    var36.t = var48;
-    var39 = {};
-    var57 = new Array(2);
-    var57[0] = var56;
-    var57[1] = var37;
-    var38 = new Array(9);
-    var38[0] = var57;
-    var57 = new Array(2);
-    var57[0] = var55;
-    var57[1] = var54;
-    var38[1] = var57;
-    var57 = [0, 0];
-    var38[2] = var57;
-    var57 = new Array(2);
-    var57[0] = var53;
-    var57[1] = var52;
-    var38[3] = var57;
-    var57 = new Array(2);
-    var57[0] = var51;
-    var57[1] = var50;
-    var38[4] = var57;
-    var57 = [0.827, 13.647];
-    var38[5] = var57;
-    var57 = [2.012, 10.22];
-    var38[6] = var57;
-    var57 = [0.629, 8.827];
-    var38[7] = var57;
-    var57 = [15.109, 3.181];
-    var38[8] = var57;
-    var39.i = var38;
-    var38 = new Array(9);
-    var57 = [0, 0];
-    var38[0] = var57;
-    var57 = [1.239, 8.138];
-    var38[1] = var57;
-    var57 = [0, 0];
-    var38[2] = var57;
-    var57 = [4.805, 15.615];
-    var38[3] = var57;
-    var57 = [17.417];
-    var57[1] = var49;
-    var38[4] = var57;
-    var57 = new Array(2);
-    var57[0] = var47;
-    var57[1] = var46;
-    var38[5] = var57;
-    var57 = new Array(2);
-    var57[0] = var45;
-    var57[1] = var44;
-    var38[6] = var57;
-    var57 = new Array(2);
-    var57[0] = var43;
-    var57[1] = var42;
-    var38[7] = var57;
-    var57 = new Array(2);
-    var57[0] = var41;
-    var57[1] = var40;
-    var38[8] = var57;
-    var39.o = var38;
-    var38 = new Array(9);
-    var57 = [269.468, 154.739];
-    var38[0] = var57;
-    var57 = [269.329, 190.95];
-    var38[1] = var57;
-    var57 = [278.546, 214.363];
-    var38[2] = var57;
-    var57 = [268.645, 239.913];
-    var38[3] = var57;
-    var57 = [329.603, 248.921];
-    var38[4] = var57;
-    var57 = [340.891, 212.513];
-    var38[5] = var57;
-    var57 = [331.033, 186.494];
-    var38[6] = var57;
-    var57 = [331.495, 154.341];
-    var38[7] = var57;
-    var57 = [312.012, 124.521];
-    var38[8] = var57;
-    var39.v = var38;
-    var39.c = var10;
-    var38 = new Array(1);
-    var38[0] = var39;
-    var36.s = var38;
-    var30[1] = var36;
-    var36 = {};
-    var38 = {
-        'x': 0.667,
-        'y': 1
-    };
-    var36.i = var38;
-    var38 = {
-        'x': 0.333,
-        'y': 0
-    };
-    var36.o = var38;
-    var36.t = var29;
-    var39 = {};
-    var57 = new Array(2);
-    var57[0] = var56;
-    var57[1] = var37;
-    var38 = new Array(9);
-    var38[0] = var57;
-    var57 = new Array(2);
-    var57[0] = var55;
-    var57[1] = var54;
-    var38[1] = var57;
-    var57 = [0, 0];
-    var38[2] = var57;
-    var57 = new Array(2);
-    var57[0] = var53;
-    var57[1] = var52;
-    var38[3] = var57;
-    var57 = new Array(2);
-    var57[0] = var51;
-    var57[1] = var50;
-    var38[4] = var57;
-    var57 = [0.827, 13.647];
-    var38[5] = var57;
-    var57 = [2.012, 10.22];
-    var38[6] = var57;
-    var57 = [0.629, 8.827];
-    var38[7] = var57;
-    var57 = [15.109, 3.181];
-    var38[8] = var57;
-    var39.i = var38;
-    var38 = new Array(9);
-    var57 = [0, 0];
-    var38[0] = var57;
-    var57 = [1.239, 8.138];
-    var38[1] = var57;
-    var57 = [0, 0];
-    var38[2] = var57;
-    var57 = [4.805, 15.615];
-    var38[3] = var57;
-    var57 = [17.417];
-    var57[1] = var49;
-    var38[4] = var57;
-    var57 = new Array(2);
-    var57[0] = var47;
-    var57[1] = var46;
-    var38[5] = var57;
-    var57 = new Array(2);
-    var57[0] = var45;
-    var57[1] = var44;
-    var38[6] = var57;
-    var57 = new Array(2);
-    var57[0] = var43;
-    var57[1] = var42;
-    var38[7] = var57;
-    var57 = new Array(2);
-    var57[0] = var41;
-    var57[1] = var40;
-    var38[8] = var57;
-    var39.o = var38;
-    var38 = new Array(9);
-    var57 = [269.468, 146.739];
-    var38[0] = var57;
-    var57 = [274.829, 181.95];
-    var38[1] = var57;
-    var57 = [278.546, 214.363];
-    var38[2] = var57;
-    var57 = [268.645, 239.913];
-    var38[3] = var57;
-    var57 = [329.603, 248.921];
-    var38[4] = var57;
-    var57 = [340.891, 212.513];
-    var38[5] = var57;
-    var57 = [336.533, 177.494];
-    var38[6] = var57;
-    var57 = [331.495, 146.341];
-    var38[7] = var57;
-    var57 = [312.012, 116.521];
-    var38[8] = var57;
-    var39.v = var38;
-    var39.c = var10;
-    var38 = new Array(1);
-    var38[0] = var39;
-    var36.s = var38;
-    var30[2] = var36;
-    var36 = {};
-    var36.t = var28;
-    var38 = {};
-    var39 = new Array(2);
-    var39[0] = var56;
-    var39[1] = var37;
-    var37 = new Array(9);
-    var37[0] = var39;
-    var39 = new Array(2);
-    var39[0] = var55;
-    var39[1] = var54;
-    var37[1] = var39;
-    var39 = [0, 0];
-    var37[2] = var39;
-    var39 = new Array(2);
-    var39[0] = var53;
-    var39[1] = var52;
-    var37[3] = var39;
-    var39 = new Array(2);
-    var39[0] = var51;
-    var39[1] = var50;
-    var37[4] = var39;
-    var39 = [0.827, 13.647];
-    var37[5] = var39;
-    var39 = [2.012, 10.22];
-    var37[6] = var39;
-    var39 = [0.629, 8.827];
-    var37[7] = var39;
-    var39 = [15.109, 3.181];
-    var37[8] = var39;
-    var38.i = var37;
-    var37 = new Array(9);
-    var39 = [0, 0];
-    var37[0] = var39;
-    var39 = [1.239, 8.138];
-    var37[1] = var39;
-    var39 = [0, 0];
-    var37[2] = var39;
-    var39 = [4.805, 15.615];
-    var37[3] = var39;
-    var39 = [17.417];
-    var39[1] = var49;
-    var37[4] = var39;
-    var39 = new Array(2);
-    var39[0] = var47;
-    var39[1] = var46;
-    var37[5] = var39;
-    var39 = new Array(2);
-    var39[0] = var45;
-    var39[1] = var44;
-    var37[6] = var39;
-    var39 = new Array(2);
-    var39[0] = var43;
-    var39[1] = var42;
-    var37[7] = var39;
-    var39 = new Array(2);
-    var39[0] = var41;
-    var39[1] = var40;
-    var37[8] = var39;
-    var38.o = var37;
-    var37 = new Array(9);
-    var39 = [269.468, 154.739];
-    var37[0] = var39;
-    var39 = [274.829, 189.95];
-    var37[1] = var39;
-    var39 = [278.546, 214.363];
-    var37[2] = var39;
-    var39 = [268.645, 239.913];
-    var37[3] = var39;
-    var39 = [329.603, 248.921];
-    var37[4] = var39;
-    var39 = [340.891, 212.513];
-    var37[5] = var39;
-    var39 = [336.533, 185.494];
-    var37[6] = var39;
-    var39 = [331.495, 154.341];
-    var37[7] = var39;
-    var39 = [312.012, 124.521];
-    var37[8] = var39;
-    var38.v = var37;
-    var38.c = var10;
-    var37 = new Array(1);
-    var37[0] = var38;
-    var36.s = var37;
-    var30[3] = var36;
-    var3.k = var30;
-    var26.ks = var3;
-    var3 = new Array(3);
-    var3[0] = var26;
-    var26 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var30 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var36 = [0.411764711142, 0.556862771511, 1, 1];
-    var30.k = var36;
-    var26.c = var30;
-    var30 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var26.o = var30;
-    var3[1] = var26;
-    var26 = {};
-    var26.ty = var8;
-    var30 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var36 = [0, 0];
-    var30.k = var36;
-    var26.p = var30;
-    var30 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var36 = [0, 0];
-    var30.k = var36;
-    var26.a = var30;
-    var30 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var36 = [100, 100];
-    var30.k = var36;
-    var26.s = var30;
-    var30 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var26.r = var30;
-    var30 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var26.o = var30;
-    var30 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var26.sk = var30;
-    var30 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var26.sa = var30;
-    var26.nm = var7;
-    var3[2] = var26;
-    var4.it = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var2.shapes = var3;
-    var0[17] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 21,
-        'ty': 4,
-        'nm': 'L_Arm',
-        'parent': 23,
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'shapes': null,
-        'ip': 0,
-        'op': 96,
-        'st': 0,
-        'ct': 1,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 10
-    };
-    var30 = {};
-    var26 = {};
-    var36 = [0];
-    var26.x = var36;
-    var36 = [1];
-    var26.y = var36;
-    var30.i = var26;
-    var26 = {};
-    var36 = [0.167];
-    var26.x = var36;
-    var36 = [0];
-    var26.y = var36;
-    var30.o = var26;
-    var30.t = var6;
-    var26 = [0];
-    var30.s = var26;
-    var26 = new Array(5);
-    var26[0] = var30;
-    var30 = {};
-    var36 = {};
-    var37 = [0.833];
-    var36.x = var37;
-    var37 = [1];
-    var36.y = var37;
-    var30.i = var36;
-    var36 = {};
-    var37 = [0.333];
-    var36.x = var37;
-    var37 = [0];
-    var36.y = var37;
-    var30.o = var36;
-    var30.t = var12;
-    var36 = [20];
-    var30.s = var36;
-    var26[1] = var30;
-    var30 = {};
-    var36 = {};
-    var37 = [0.833];
-    var36.x = var37;
-    var37 = [1];
-    var36.y = var37;
-    var30.i = var36;
-    var36 = {};
-    var37 = [0.167];
-    var36.x = var37;
-    var37 = [0];
-    var36.y = var37;
-    var30.o = var36;
-    var30.t = var48;
-    var36 = [6];
-    var30.s = var36;
-    var26[2] = var30;
-    var30 = {};
-    var36 = {};
-    var37 = [0.833];
-    var36.x = var37;
-    var37 = [1];
-    var36.y = var37;
-    var30.i = var36;
-    var36 = {};
-    var37 = [0.167];
-    var36.x = var37;
-    var37 = [0];
-    var36.y = var37;
-    var30.o = var36;
-    var30.t = var33;
-    var33 = new Array(1);
-    var36 = -6;
-    var33[0] = var36;
-    var30.s = var33;
-    var26[3] = var30;
-    var30 = {};
-    var30.t = var11;
-    var33 = [0];
-    var30.s = var33;
-    var26[4] = var30;
-    var4.k = var26;
-    var3.r = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 2,
-        'l': 2
-    };
-    var26 = [338, 15, 0];
-    var4.k = var26;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1,
-        'l': 2
-    };
-    var26 = [338, 15, 0];
-    var4.k = var26;
-    var3.a = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 6,
-        'l': 2
-    };
-    var26 = [100, 100, 100];
-    var4.k = var26;
-    var3.s = var4;
-    var2.ks = var3;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var26 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var3 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var30 = {};
-    var33 = new Array(8);
-    var36 = [0, 0];
-    var33[0] = var36;
-    var36 = new Array(2);
-    var37 = -11.267;
-    var36[0] = var37;
-    var37 = -12.877;
-    var36[1] = var37;
-    var33[1] = var36;
-    var36 = new Array(2);
-    var37 = -1.571;
-    var36[0] = var37;
-    var37 = -7.349;
-    var36[1] = var37;
-    var33[2] = var36;
-    var36 = new Array(2);
-    var37 = -7.831;
-    var36[0] = var37;
-    var37 = -5.848;
-    var36[1] = var37;
-    var33[3] = var36;
-    var36 = new Array(2);
-    var37 = -8.296;
-    var36[0] = var37;
-    var37 = 2.44;
-    var36[1] = var37;
-    var33[4] = var36;
-    var36 = [12.166, 29.605];
-    var33[5] = var36;
-    var36 = [30.843, 1.142];
-    var33[6] = var36;
-    var36 = new Array(2);
-    var37 = -0.406;
-    var36[0] = var37;
-    var37 = -8.516;
-    var36[1] = var37;
-    var33[7] = var36;
-    var30.i = var33;
-    var33 = new Array(8);
-    var36 = [0, 0];
-    var33[0] = var36;
-    var36 = [4.971, 5.681];
-    var33[1] = var36;
-    var36 = [1.845, 8.635];
-    var33[2] = var36;
-    var36 = [7.162, 5.348];
-    var33[3] = var36;
-    var36 = [20.683];
-    var37 = -6.083;
-    var36[1] = var37;
-    var33[4] = var36;
-    var36 = new Array(2);
-    var37 = -12.166;
-    var36[0] = var37;
-    var37 = -29.605;
-    var36[1] = var37;
-    var33[5] = var36;
-    var36 = new Array(2);
-    var37 = -21.899;
-    var36[0] = var37;
-    var37 = -0.811;
-    var36[1] = var37;
-    var33[6] = var36;
-    var36 = [0.898, 18.848];
-    var33[7] = var36;
-    var30.o = var33;
-    var33 = new Array(8);
-    var36 = [332.542, 37.365];
-    var33[0] = var36;
-    var36 = [369.447, 61.293];
-    var33[1] = var36;
-    var36 = [379.143, 81.218];
-    var33[2] = var36;
-    var36 = [388.01, 104.887];
-    var33[3] = var36;
-    var36 = [412.84, 107.93];
-    var33[4] = var36;
-    var36 = [432.306, 49.531];
-    var33[5] = var36;
-    var36 = [345.519];
-    var37 = -8.462;
-    var36[1] = var37;
-    var33[6] = var36;
-    var36 = [313.075, 13.032];
-    var33[7] = var36;
-    var30.v = var33;
-    var30.c = var10;
-    var3.k = var30;
-    var26.ks = var3;
-    var3 = new Array(3);
-    var3[0] = var26;
-    var26 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var30 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var33 = [0.411764711142, 0.556862771511, 1, 1];
-    var30.k = var33;
-    var26.c = var30;
-    var30 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var26.o = var30;
-    var3[1] = var26;
-    var26 = {};
-    var26.ty = var8;
-    var30 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var33 = [0, 0];
-    var30.k = var33;
-    var26.p = var30;
-    var30 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var33 = [0, 0];
-    var30.k = var33;
-    var26.a = var30;
-    var30 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var33 = [100, 100];
-    var30.k = var33;
-    var26.s = var30;
-    var30 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var26.r = var30;
-    var30 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var26.o = var30;
-    var30 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var26.sk = var30;
-    var30 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var26.sa = var30;
-    var26.nm = var7;
-    var3[2] = var26;
-    var4.it = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var2.shapes = var3;
-    var0[18] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 22,
-        'ty': 4,
-        'nm': 'Head_Shadow',
-        'parent': 23,
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'shapes': null,
-        'ip': 0,
-        'op': 96,
-        'st': 0,
-        'ct': 1,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 0,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 2,
-        'l': 2
-    };
-    var30 = {};
-    var26 = {
-        'x': 0.667,
-        'y': 1
-    };
-    var30.i = var26;
-    var26 = {
-        'x': 0.333,
-        'y': 0
-    };
-    var30.o = var26;
-    var30.t = var9;
-    var26 = [262.156];
-    var33 = -18.682;
-    var26[1] = var33;
-    var26[2] = var6;
-    var30.s = var26;
-    var26 = [0, 0, 0];
-    var30.to = var26;
-    var26 = [0, 0, 0];
-    var30.ti = var26;
-    var26 = new Array(7);
-    var26[0] = var30;
-    var30 = {};
-    var36 = {
-        'x': 0.667,
-        'y': 0.667
-    };
-    var30.i = var36;
-    var36 = {
-        'x': 0.333,
-        'y': 0.333
-    };
-    var30.o = var36;
-    var30.t = var35;
-    var36 = [259.114];
-    var35 = -15.73;
-    var36[1] = var35;
-    var36[2] = var6;
-    var30.s = var36;
-    var36 = [0, 0, 0];
-    var30.to = var36;
-    var36 = [0, 0, 0];
-    var30.ti = var36;
-    var26[1] = var30;
-    var30 = {};
-    var36 = {
-        'x': 0.667,
-        'y': 1
-    };
-    var30.i = var36;
-    var36 = {
-        'x': 0.333,
-        'y': 0
-    };
-    var30.o = var36;
-    var30.t = var34;
-    var34 = [259.114];
-    var34[1] = var35;
-    var34[2] = var6;
-    var30.s = var34;
-    var34 = [0, 0, 0];
-    var30.to = var34;
-    var34 = [0, 0, 0];
-    var30.ti = var34;
-    var26[2] = var30;
-    var30 = {};
-    var34 = {
-        'x': 0.667,
-        'y': 1
-    };
-    var30.i = var34;
-    var34 = {
-        'x': 0.333,
-        'y': 0
-    };
-    var30.o = var34;
-    var30.t = var32;
-    var32 = [262.156];
-    var32[1] = var33;
-    var32[2] = var6;
-    var30.s = var32;
-    var32 = [0, 0, 0];
-    var30.to = var32;
-    var32 = [0, 0, 0];
-    var30.ti = var32;
-    var26[3] = var30;
-    var30 = {};
-    var32 = {
-        'x': 0.667,
-        'y': 0.667
-    };
-    var30.i = var32;
-    var32 = {
-        'x': 0.333,
-        'y': 0.333
-    };
-    var30.o = var32;
-    var30.t = var29;
-    var32 = [267.156];
-    var34 = -19.682;
-    var32[1] = var34;
-    var32[2] = var6;
-    var30.s = var32;
-    var32 = [0, 0, 0];
-    var30.to = var32;
-    var32 = [0, 0, 0];
-    var30.ti = var32;
-    var26[4] = var30;
-    var30 = {};
-    var32 = {
-        'x': 0.667,
-        'y': 1
-    };
-    var30.i = var32;
-    var32 = {
-        'x': 0.333,
-        'y': 0
-    };
-    var30.o = var32;
-    var30.t = var28;
-    var32 = [267.156];
-    var32[1] = var34;
-    var32[2] = var6;
-    var30.s = var32;
-    var32 = [0, 0, 0];
-    var30.to = var32;
-    var32 = [0, 0, 0];
-    var30.ti = var32;
-    var26[5] = var30;
-    var30 = {};
-    var32 = 49;
-    var30.t = var32;
-    var32 = [262.156];
-    var32[1] = var33;
-    var32[2] = var6;
-    var30.s = var32;
-    var26[6] = var30;
-    var4.k = var26;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1,
-        'l': 2
-    };
-    var26 = [258.156];
-    var30 = -10.682;
-    var26[1] = var30;
-    var26[2] = var6;
-    var4.k = var26;
-    var3.a = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 6,
-        'l': 2
-    };
-    var26 = [100, 100, 100];
-    var4.k = var26;
-    var3.s = var4;
-    var2.ks = var3;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var26 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var3 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var30 = {};
-    var33 = new Array(2);
-    var36 = -7.797;
-    var33[0] = var36;
-    var35 = -21.641;
-    var33[1] = var35;
-    var32 = new Array(4);
-    var32[0] = var33;
-    var33 = [34.265];
-    var34 = -12.345;
-    var33[1] = var34;
-    var32[1] = var33;
-    var33 = [7.797, 21.641];
-    var32[2] = var33;
-    var33 = new Array(2);
-    var38 = -34.265;
-    var33[0] = var38;
-    var37 = 12.345;
-    var33[1] = var37;
-    var32[3] = var33;
-    var30.i = var32;
-    var32 = new Array(4);
-    var33 = [7.797, 21.641];
-    var32[0] = var33;
-    var33 = new Array(2);
-    var33[0] = var38;
-    var33[1] = var37;
-    var32[1] = var33;
-    var33 = new Array(2);
-    var33[0] = var36;
-    var33[1] = var35;
-    var32[2] = var33;
-    var33 = [34.265];
-    var33[1] = var34;
-    var32[3] = var33;
-    var30.o = var32;
-    var33 = [320.198];
-    var32 = -33.036;
-    var33[1] = var32;
-    var32 = new Array(4);
-    var32[0] = var33;
-    var33 = [272.274, 28.502];
-    var32[1] = var33;
-    var33 = [196.114, 11.671];
-    var32[2] = var33;
-    var33 = [244.038];
-    var34 = -49.867;
-    var33[1] = var34;
-    var32[3] = var33;
-    var30.v = var32;
-    var30.c = var10;
-    var3.k = var30;
-    var26.ks = var3;
-    var3 = new Array(3);
-    var3[0] = var26;
-    var26 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var30 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var32 = [0.305882364511, 0.352941185236, 0.909803926945, 1];
-    var30.k = var32;
-    var26.c = var30;
-    var30 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var26.o = var30;
-    var3[1] = var26;
-    var26 = {};
-    var26.ty = var8;
-    var30 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var32 = [0, 0];
-    var30.k = var32;
-    var26.p = var30;
-    var30 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var32 = [0, 0];
-    var30.k = var32;
-    var26.a = var30;
-    var30 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var32 = [100, 100];
-    var30.k = var32;
-    var26.s = var30;
-    var30 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var26.r = var30;
-    var30 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var26.o = var30;
-    var30 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var26.sk = var30;
-    var30 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var26.sa = var30;
-    var26.nm = var7;
-    var3[2] = var26;
-    var4.it = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var2.shapes = var3;
-    var0[19] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 23,
-        'ty': 4,
-        'nm': 'TORSO',
-        'parent': 33,
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'shapes': null,
-        'ip': 0,
-        'op': 96,
-        'st': 0,
-        'ct': 1,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 10
-    };
-    var26 = {};
-    var30 = {};
-    var32 = [0];
-    var30.x = var32;
-    var32 = [1];
-    var30.y = var32;
-    var26.i = var30;
-    var30 = {};
-    var32 = [0.167];
-    var30.x = var32;
-    var32 = [0];
-    var30.y = var32;
-    var26.o = var30;
-    var26.t = var9;
-    var9 = [0];
-    var26.s = var9;
-    var9 = new Array(4);
-    var9[0] = var26;
-    var26 = {};
-    var30 = {};
-    var32 = [0.833];
-    var30.x = var32;
-    var32 = [1];
-    var30.y = var32;
-    var26.i = var30;
-    var30 = {};
-    var32 = [0.333];
-    var30.x = var32;
-    var32 = [0];
-    var30.y = var32;
-    var26.o = var30;
-    var26.t = var12;
-    var30 = new Array(1);
-    var32 = -3;
-    var30[0] = var32;
-    var26.s = var30;
-    var9[1] = var26;
-    var26 = {};
-    var30 = {};
-    var32 = [0.667];
-    var30.x = var32;
-    var32 = [1];
-    var30.y = var32;
-    var26.i = var30;
-    var30 = {};
-    var32 = [0.167];
-    var30.x = var32;
-    var32 = [0];
-    var30.y = var32;
-    var26.o = var30;
-    var26.t = var48;
-    var30 = new Array(1);
-    var30[0] = var31;
-    var26.s = var30;
-    var9[2] = var26;
-    var26 = {};
-    var26.t = var28;
-    var30 = [0];
-    var26.s = var30;
-    var9[3] = var26;
-    var4.k = var9;
-    var3.r = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 2,
-        'l': 2
-    };
-    var26 = {};
-    var9 = {
-        'x': 0.667,
-        'y': 1
-    };
-    var26.i = var9;
-    var9 = {
-        'x': 0.333,
-        'y': 0
-    };
-    var26.o = var9;
-    var26.t = var12;
-    var9 = [207.779, 156.762, 0];
-    var26.s = var9;
-    var9 = [0, 0, 0];
-    var26.to = var9;
-    var9 = [0, 0, 0];
-    var26.ti = var9;
-    var9 = new Array(3);
-    var9[0] = var26;
-    var26 = {};
-    var30 = {
-        'x': 0.667,
-        'y': 1
-    };
-    var26.i = var30;
-    var30 = {
-        'x': 0.333,
-        'y': 0
-    };
-    var26.o = var30;
-    var26.t = var48;
-    var30 = [207.779, 160.762, 0];
-    var26.s = var30;
-    var30 = [0, 0, 0];
-    var26.to = var30;
-    var30 = [0, 0, 0];
-    var26.ti = var30;
-    var9[1] = var26;
-    var26 = {};
-    var26.t = var28;
-    var30 = [207.779, 156.762, 0];
-    var26.s = var30;
-    var9[2] = var26;
-    var4.k = var9;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1,
-        'l': 2
-    };
-    var9 = [270.779, 156.762, 0];
-    var4.k = var9;
-    var3.a = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 6,
-        'l': 2
-    };
-    var26 = {};
-    var9 = {};
-    var30 = [0.833, 0.833, 0.833];
-    var9.x = var30;
-    var30 = [1, 1, 1];
-    var9.y = var30;
-    var26.i = var9;
-    var9 = {};
-    var30 = [0.333, 0.333, 0.333];
-    var9.x = var30;
-    var30 = [0, 0, 0];
-    var9.y = var30;
-    var26.o = var9;
-    var26.t = var12;
-    var9 = [100, 100, 100];
-    var26.s = var9;
-    var9 = new Array(4);
-    var9[0] = var26;
-    var26 = {};
-    var30 = {};
-    var31 = [0.833, 0.833, 0.833];
-    var30.x = var31;
-    var31 = [1, 1, 1];
-    var30.y = var31;
-    var26.i = var30;
-    var30 = {};
-    var31 = [0.167, 0.167, 0.167];
-    var30.x = var31;
-    var31 = [0, 0, 0];
-    var30.y = var31;
-    var26.o = var30;
-    var26.t = var48;
-    var30 = [104, 96, 100];
-    var26.s = var30;
-    var9[1] = var26;
-    var26 = {};
-    var30 = {};
-    var31 = [0.667, 0.667, 0.667];
-    var30.x = var31;
-    var31 = [1, 1, 1];
-    var30.y = var31;
-    var26.i = var30;
-    var30 = {};
-    var31 = [0.167, 0.167, 0.167];
-    var30.x = var31;
-    var31 = [0, 0, 0];
-    var30.y = var31;
-    var26.o = var30;
-    var26.t = var28;
-    var30 = [102, 98, 100];
-    var26.s = var30;
-    var9[2] = var26;
-    var26 = {};
-    var26.t = var27;
-    var27 = [100, 100, 100];
-    var26.s = var27;
-    var9[3] = var26;
-    var4.k = var9;
-    var3.s = var4;
-    var2.ks = var3;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 2',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 2,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var9 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var3 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var26 = {};
-    var30 = [5.95];
-    var27 = -21.302;
-    var30[1] = var27;
-    var27 = new Array(5);
-    var27[0] = var30;
-    var30 = new Array(2);
-    var31 = -23.163;
-    var30[0] = var31;
-    var31 = -54.146;
-    var30[1] = var31;
-    var27[1] = var30;
-    var30 = new Array(2);
-    var31 = -36.297;
-    var30[0] = var31;
-    var31 = 11.695;
-    var30[1] = var31;
-    var27[2] = var30;
-    var30 = [8.925, 45.799];
-    var27[3] = var30;
-    var30 = [0, 0];
-    var27[4] = var30;
-    var26.i = var27;
-    var27 = new Array(5);
-    var30 = [0, 0];
-    var27[0] = var30;
-    var30 = [16.858, 39.408];
-    var27[1] = var30;
-    var30 = [44.86];
-    var31 = -14.454;
-    var30[1] = var31;
-    var27[2] = var30;
-    var30 = new Array(2);
-    var31 = -8.925;
-    var30[0] = var31;
-    var31 = -45.799;
-    var30[1] = var31;
-    var27[3] = var30;
-    var30 = [0, 0];
-    var27[4] = var30;
-    var26.o = var27;
-    var30 = [195.185];
-    var27 = -4.035;
-    var30[1] = var27;
-    var27 = new Array(5);
-    var27[0] = var30;
-    var30 = [187.471, 117.87];
-    var27[1] = var30;
-    var30 = [322.86, 151.396];
-    var27[2] = var30;
-    var30 = [357.819, 42.828];
-    var27[3] = var30;
-    var30 = [332.036];
-    var31 = -28.532;
-    var30[1] = var31;
-    var27[4] = var30;
-    var26.v = var27;
-    var26.c = var10;
-    var3.k = var26;
-    var9.ks = var3;
-    var3 = new Array(3);
-    var3[0] = var9;
-    var9 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var26 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var27 = [0.411764711142, 0.556862771511, 1, 1];
-    var26.k = var27;
-    var9.c = var26;
-    var26 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var9.o = var26;
-    var3[1] = var9;
-    var9 = {};
-    var9.ty = var8;
-    var26 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var27 = [0, 0];
-    var26.k = var27;
-    var9.p = var26;
-    var26 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var27 = [0, 0];
-    var26.k = var27;
-    var9.a = var26;
-    var26 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var27 = [100, 100];
-    var26.k = var27;
-    var9.s = var26;
-    var26 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var9.r = var26;
-    var26 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var9.o = var26;
-    var26 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var9.sk = var26;
-    var26 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var9.sa = var26;
-    var9.nm = var7;
-    var3[2] = var9;
-    var4.it = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var2.shapes = var3;
-    var0[20] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 24,
-        'ty': 4,
-        'nm': 'R_Leg',
-        'parent': 33,
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'shapes': null,
-        'ip': 0,
-        'op': 96,
-        'st': 0,
-        'ct': 1,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 4294967255,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 2,
-        'l': 2
-    };
-    var9 = [185.5, 136, 0];
-    var4.k = var9;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1,
-        'l': 2
-    };
-    var9 = [223, 136, 0];
-    var4.k = var9;
-    var3.a = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 6,
-        'l': 2
-    };
-    var9 = [100, 100, 100];
-    var4.k = var9;
-    var3.s = var4;
-    var2.ks = var3;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var9 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var3 = {
-        'a': 1,
-        'k': null,
-        'ix': 2
-    };
-    var26 = {};
-    var27 = {
-        'x': 0.833,
-        'y': 1
-    };
-    var26.i = var27;
-    var27 = {
-        'x': 0.333,
-        'y': 0
-    };
-    var26.o = var27;
-    var26.t = var12;
-    var49 = {};
-    var30 = [16.999];
-    var27 = -19.93;
-    var30[1] = var27;
-    var12 = new Array(9);
-    var12[0] = var30;
-    var30 = [6.728];
-    var45 = -7.711;
-    var30[1] = var45;
-    var12[1] = var30;
-    var30 = [0, 0];
-    var12[2] = var30;
-    var30 = [3.517];
-    var47 = -12.896;
-    var30[1] = var47;
-    var12[3] = var30;
-    var30 = new Array(2);
-    var46 = -21.035;
-    var30[0] = var46;
-    var30[1] = var45;
-    var12[4] = var30;
-    var30 = new Array(2);
-    var44 = -7.034;
-    var30[0] = var44;
-    var43 = 11.724;
-    var30[1] = var43;
-    var12[5] = var30;
-    var30 = new Array(2);
-    var42 = -4.883;
-    var30[0] = var42;
-    var41 = 6.373;
-    var30[1] = var41;
-    var12[6] = var30;
-    var30 = new Array(2);
-    var40 = -5.791;
-    var30[0] = var40;
-    var39 = 7.4;
-    var30[1] = var39;
-    var12[7] = var30;
-    var30 = [3.566, 16.402];
-    var12[8] = var30;
-    var49.i = var12;
-    var12 = new Array(9);
-    var30 = [0, 0];
-    var12[0] = var30;
-    var30 = new Array(2);
-    var38 = -6.382;
-    var30[0] = var38;
-    var37 = 7.314;
-    var30[1] = var37;
-    var12[1] = var30;
-    var30 = [0, 0];
-    var12[2] = var30;
-    var30 = new Array(2);
-    var36 = -3.517;
-    var30[0] = var36;
-    var35 = 12.896;
-    var30[1] = var35;
-    var12[3] = var30;
-    var30 = [15.183, 5.566];
-    var12[4] = var30;
-    var30 = [3.173];
-    var34 = -5.289;
-    var30[1] = var34;
-    var12[5] = var30;
-    var30 = [6.648];
-    var33 = -8.677;
-    var30[1] = var33;
-    var12[6] = var30;
-    var30 = [10.551];
-    var32 = -13.482;
-    var30[1] = var32;
-    var12[7] = var30;
-    var50 = new Array(2);
-    var31 = -4.941;
-    var50[0] = var31;
-    var30 = -22.73;
-    var50[1] = var30;
-    var12[8] = var50;
-    var49.o = var12;
-    var12 = new Array(9);
-    var50 = [192.232, 127.54];
-    var12[0] = var50;
-    var50 = [172.049, 150.673];
-    var12[1] = var50;
-    var50 = [152.904, 172.616];
-    var12[2] = var50;
-    var50 = [129.177, 185.014];
-    var12[3] = var50;
-    var50 = [170.163, 230.216];
-    var12[4] = var50;
-    var50 = [200.384, 213.062];
-    var12[5] = var50;
-    var50 = [214.48, 193.532];
-    var12[6] = var50;
-    var50 = [234.969, 167.927];
-    var12[7] = var50;
-    var50 = [248.068, 132.481];
-    var12[8] = var50;
-    var49.v = var12;
-    var49.c = var10;
-    var12 = new Array(1);
-    var12[0] = var49;
-    var26.s = var12;
-    var12 = new Array(4);
-    var12[0] = var26;
-    var26 = {};
-    var49 = {
-        'x': 0.667,
-        'y': 1
-    };
-    var26.i = var49;
-    var49 = {
-        'x': 0.167,
-        'y': 0
-    };
-    var26.o = var49;
-    var26.t = var48;
-    var49 = {};
-    var50 = [16.999];
-    var50[1] = var27;
-    var48 = new Array(9);
-    var48[0] = var50;
-    var50 = [6.728];
-    var50[1] = var45;
-    var48[1] = var50;
-    var50 = [0, 0];
-    var48[2] = var50;
-    var50 = [3.517];
-    var50[1] = var47;
-    var48[3] = var50;
-    var50 = new Array(2);
-    var50[0] = var46;
-    var50[1] = var45;
-    var48[4] = var50;
-    var50 = new Array(2);
-    var50[0] = var44;
-    var50[1] = var43;
-    var48[5] = var50;
-    var50 = new Array(2);
-    var50[0] = var42;
-    var50[1] = var41;
-    var48[6] = var50;
-    var50 = new Array(2);
-    var50[0] = var40;
-    var50[1] = var39;
-    var48[7] = var50;
-    var50 = [3.566, 16.402];
-    var48[8] = var50;
-    var49.i = var48;
-    var48 = new Array(9);
-    var50 = [0, 0];
-    var48[0] = var50;
-    var50 = new Array(2);
-    var50[0] = var38;
-    var50[1] = var37;
-    var48[1] = var50;
-    var50 = [0, 0];
-    var48[2] = var50;
-    var50 = new Array(2);
-    var50[0] = var36;
-    var50[1] = var35;
-    var48[3] = var50;
-    var50 = [15.183, 5.566];
-    var48[4] = var50;
-    var50 = [3.173];
-    var50[1] = var34;
-    var48[5] = var50;
-    var50 = [6.648];
-    var50[1] = var33;
-    var48[6] = var50;
-    var50 = [10.551];
-    var50[1] = var32;
-    var48[7] = var50;
-    var50 = new Array(2);
-    var50[0] = var31;
-    var50[1] = var30;
-    var48[8] = var50;
-    var49.o = var48;
-    var48 = new Array(9);
-    var50 = [192.232, 127.54];
-    var48[0] = var50;
-    var50 = [164.699, 146.934];
-    var48[1] = var50;
-    var50 = [152.904, 172.616];
-    var48[2] = var50;
-    var50 = [129.177, 185.014];
-    var48[3] = var50;
-    var50 = [170.163, 230.216];
-    var48[4] = var50;
-    var50 = [200.384, 213.062];
-    var48[5] = var50;
-    var50 = [207.131, 189.793];
-    var48[6] = var50;
-    var50 = [234.969, 167.927];
-    var48[7] = var50;
-    var50 = [248.068, 132.481];
-    var48[8] = var50;
-    var49.v = var48;
-    var49.c = var10;
-    var48 = new Array(1);
-    var48[0] = var49;
-    var26.s = var48;
-    var12[1] = var26;
-    var26 = {};
-    var48 = {
-        'x': 0.667,
-        'y': 1
-    };
-    var26.i = var48;
-    var48 = {
-        'x': 0.333,
-        'y': 0
-    };
-    var26.o = var48;
-    var26.t = var29;
-    var48 = {};
-    var49 = [16.999];
-    var49[1] = var27;
-    var29 = new Array(9);
-    var29[0] = var49;
-    var49 = [6.728];
-    var49[1] = var45;
-    var29[1] = var49;
-    var49 = [0, 0];
-    var29[2] = var49;
-    var49 = [3.517];
-    var49[1] = var47;
-    var29[3] = var49;
-    var49 = new Array(2);
-    var49[0] = var46;
-    var49[1] = var45;
-    var29[4] = var49;
-    var49 = new Array(2);
-    var49[0] = var44;
-    var49[1] = var43;
-    var29[5] = var49;
-    var49 = new Array(2);
-    var49[0] = var42;
-    var49[1] = var41;
-    var29[6] = var49;
-    var49 = new Array(2);
-    var49[0] = var40;
-    var49[1] = var39;
-    var29[7] = var49;
-    var49 = [3.566, 16.402];
-    var29[8] = var49;
-    var48.i = var29;
-    var29 = new Array(9);
-    var49 = [0, 0];
-    var29[0] = var49;
-    var49 = new Array(2);
-    var49[0] = var38;
-    var49[1] = var37;
-    var29[1] = var49;
-    var49 = [0, 0];
-    var29[2] = var49;
-    var49 = new Array(2);
-    var49[0] = var36;
-    var49[1] = var35;
-    var29[3] = var49;
-    var49 = [15.183, 5.566];
-    var29[4] = var49;
-    var49 = [3.173];
-    var49[1] = var34;
-    var29[5] = var49;
-    var49 = [6.648];
-    var49[1] = var33;
-    var29[6] = var49;
-    var49 = [10.551];
-    var49[1] = var32;
-    var29[7] = var49;
-    var49 = new Array(2);
-    var49[0] = var31;
-    var49[1] = var30;
-    var29[8] = var49;
-    var48.o = var29;
-    var29 = new Array(9);
-    var49 = [203.304, 118.614];
-    var29[0] = var49;
-    var49 = [172.049, 150.673];
-    var29[1] = var49;
-    var49 = [152.904, 172.616];
-    var29[2] = var49;
-    var49 = [129.177, 185.014];
-    var29[3] = var49;
-    var49 = [170.163, 230.216];
-    var29[4] = var49;
-    var49 = [200.384, 213.062];
-    var29[5] = var49;
-    var49 = [214.48, 193.532];
-    var29[6] = var49;
-    var49 = [246.04, 159.001];
-    var29[7] = var49;
-    var49 = [259.14, 123.555];
-    var29[8] = var49;
-    var48.v = var29;
-    var48.c = var10;
-    var29 = new Array(1);
-    var29[0] = var48;
-    var26.s = var29;
-    var12[2] = var26;
-    var26 = {};
-    var26.t = var28;
-    var28 = {};
-    var29 = [16.999];
-    var29[1] = var27;
-    var27 = new Array(9);
-    var27[0] = var29;
-    var29 = [6.728];
-    var29[1] = var45;
-    var27[1] = var29;
-    var29 = [0, 0];
-    var27[2] = var29;
-    var29 = [3.517];
-    var29[1] = var47;
-    var27[3] = var29;
-    var29 = new Array(2);
-    var29[0] = var46;
-    var29[1] = var45;
-    var27[4] = var29;
-    var29 = new Array(2);
-    var29[0] = var44;
-    var29[1] = var43;
-    var27[5] = var29;
-    var29 = new Array(2);
-    var29[0] = var42;
-    var29[1] = var41;
-    var27[6] = var29;
-    var29 = new Array(2);
-    var29[0] = var40;
-    var29[1] = var39;
-    var27[7] = var29;
-    var29 = [3.566, 16.402];
-    var27[8] = var29;
-    var28.i = var27;
-    var27 = new Array(9);
-    var29 = [0, 0];
-    var27[0] = var29;
-    var29 = new Array(2);
-    var29[0] = var38;
-    var29[1] = var37;
-    var27[1] = var29;
-    var29 = [0, 0];
-    var27[2] = var29;
-    var29 = new Array(2);
-    var29[0] = var36;
-    var29[1] = var35;
-    var27[3] = var29;
-    var29 = [15.183, 5.566];
-    var27[4] = var29;
-    var29 = [3.173];
-    var29[1] = var34;
-    var27[5] = var29;
-    var29 = [6.648];
-    var29[1] = var33;
-    var27[6] = var29;
-    var29 = [10.551];
-    var29[1] = var32;
-    var27[7] = var29;
-    var29 = new Array(2);
-    var29[0] = var31;
-    var29[1] = var30;
-    var27[8] = var29;
-    var28.o = var27;
-    var27 = new Array(9);
-    var29 = [192.232, 127.54];
-    var27[0] = var29;
-    var29 = [172.049, 150.673];
-    var27[1] = var29;
-    var29 = [152.904, 172.616];
-    var27[2] = var29;
-    var29 = [129.177, 185.014];
-    var27[3] = var29;
-    var29 = [170.163, 230.216];
-    var27[4] = var29;
-    var29 = [200.384, 213.062];
-    var27[5] = var29;
-    var29 = [214.48, 193.532];
-    var27[6] = var29;
-    var29 = [234.969, 167.927];
-    var27[7] = var29;
-    var29 = [248.068, 132.481];
-    var27[8] = var29;
-    var28.v = var27;
-    var28.c = var10;
-    var27 = new Array(1);
-    var27[0] = var28;
-    var26.s = var27;
-    var12[3] = var26;
-    var3.k = var12;
-    var9.ks = var3;
-    var3 = new Array(3);
-    var3[0] = var9;
-    var9 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var12 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var26 = [0.305882364511, 0.352941185236, 0.909803926945, 1];
-    var12.k = var26;
-    var9.c = var12;
-    var12 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var9.o = var12;
-    var3[1] = var9;
-    var9 = {};
-    var9.ty = var8;
-    var12 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var26 = [0, 0];
-    var12.k = var26;
-    var9.p = var12;
-    var12 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var26 = [0, 0];
-    var12.k = var26;
-    var9.a = var12;
-    var12 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var26 = [100, 100];
-    var12.k = var26;
-    var9.s = var12;
-    var12 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var9.r = var12;
-    var12 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var9.o = var12;
-    var12 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var9.sk = var12;
-    var12 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var9.sa = var12;
-    var9.nm = var7;
-    var3[2] = var9;
-    var4.it = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var2.shapes = var3;
-    var0[21] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 25,
-        'ty': 3,
-        'nm': 'Cofre_Ctrl',
-        'parent': 33,
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'ip': 0,
-        'op': 96,
-        'st': 0,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 0,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 10
-    };
-    var12 = {};
-    var9 = {};
-    var26 = [0.833];
-    var9.x = var26;
-    var26 = [0.833];
-    var9.y = var26;
-    var12.i = var9;
-    var9 = {};
-    var26 = [0.167];
-    var9.x = var26;
-    var26 = [0.167];
-    var9.y = var26;
-    var12.o = var9;
-    var9 = 1.5;
-    var12.t = var9;
-    var9 = [0];
-    var12.s = var9;
-    var9 = new Array(5);
-    var9[0] = var12;
-    var12 = {};
-    var26 = {};
-    var27 = [0.833];
-    var26.x = var27;
-    var27 = [0.833];
-    var26.y = var27;
-    var12.i = var26;
-    var26 = {};
-    var27 = [0.167];
-    var26.x = var27;
-    var27 = [0.167];
-    var26.y = var27;
-    var12.o = var26;
-    var26 = 3.75;
-    var12.t = var26;
-    var26 = [5];
-    var12.s = var26;
-    var9[1] = var12;
-    var12 = {};
-    var26 = {};
-    var27 = [0.833];
-    var26.x = var27;
-    var27 = [0.833];
-    var26.y = var27;
-    var12.i = var26;
-    var26 = {};
-    var27 = [0.167];
-    var26.x = var27;
-    var27 = [0.167];
-    var26.y = var27;
-    var12.o = var26;
-    var12.t = var18;
-    var26 = new Array(1);
-    var27 = -5;
-    var26[0] = var27;
-    var12.s = var26;
-    var9[2] = var12;
-    var12 = {};
-    var26 = {};
-    var27 = [0.833];
-    var26.x = var27;
-    var27 = [0.833];
-    var26.y = var27;
-    var12.i = var26;
-    var26 = {};
-    var27 = [0.167];
-    var26.x = var27;
-    var27 = [0.167];
-    var26.y = var27;
-    var12.o = var26;
-    var26 = 8.25;
-    var12.t = var26;
-    var26 = [2];
-    var12.s = var26;
-    var9[3] = var12;
-    var12 = {};
-    var26 = 10.5;
-    var12.t = var26;
-    var26 = [0];
-    var12.s = var26;
-    var9[4] = var12;
-    var4.k = var9;
-    var3.r = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 2,
-        'l': 2
-    };
-    var9 = new Array(3);
-    var12 = -74;
-    var9[0] = var12;
-    var12 = 106;
-    var9[1] = var12;
-    var9[2] = var6;
-    var4.k = var9;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1,
-        'l': 2
-    };
-    var9 = [50, 50, 0];
-    var4.k = var9;
-    var3.a = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 6,
-        'l': 2
-    };
-    var9 = [100, 100, 100];
-    var4.k = var9;
-    var3.s = var4;
-    var2.ks = var3;
-    var0[22] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 26,
-        'ty': 4,
-        'nm': 'Locker_Cofre_Detail',
-        'parent': 29,
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'shapes': null,
-        'ip': 0,
-        'op': 96,
-        'st': 0,
-        'ct': 1,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 0,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 2,
-        'l': 2
-    };
-    var9 = new Array(3);
-    var32 = -942.164;
-    var9[0] = var32;
-    var12 = 92.646;
-    var9[1] = var12;
-    var9[2] = var6;
-    var4.k = var9;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1,
-        'l': 2
-    };
-    var9 = new Array(3);
-    var9[0] = var32;
-    var9[1] = var12;
-    var9[2] = var6;
-    var4.k = var9;
-    var3.a = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 6,
-        'l': 2
-    };
-    var9 = [100, 100, 100];
-    var4.k = var9;
-    var3.s = var4;
-    var2.ks = var3;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 3',
-        'np': 1,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var9 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 3',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var12 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var3 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var26 = {};
-    var27 = new Array(8);
-    var28 = [6.646, 0];
-    var27[0] = var28;
-    var28 = [0, 0];
-    var27[1] = var28;
-    var28 = [0, 6.646];
-    var27[2] = var28;
-    var28 = [0, 0];
-    var27[3] = var28;
-    var28 = new Array(2);
-    var29 = -6.646;
-    var28[0] = var29;
-    var28[1] = var6;
-    var27[4] = var28;
-    var28 = [0, 0];
-    var27[5] = var28;
-    var28 = [0];
-    var28[1] = var29;
-    var27[6] = var28;
-    var28 = [0, 0];
-    var27[7] = var28;
-    var26.i = var27;
-    var27 = new Array(8);
-    var28 = [0, 0];
-    var27[0] = var28;
-    var28 = new Array(2);
-    var28[0] = var29;
-    var28[1] = var6;
-    var27[1] = var28;
-    var28 = [0, 0];
-    var27[2] = var28;
-    var28 = [0];
-    var28[1] = var29;
-    var27[3] = var28;
-    var28 = [0, 0];
-    var27[4] = var28;
-    var28 = [6.646, 0];
-    var27[5] = var28;
-    var28 = [0, 0];
-    var27[6] = var28;
-    var28 = [0, 6.646];
-    var27[7] = var28;
-    var26.o = var27;
-    var28 = new Array(2);
-    var28[0] = var32;
-    var29 = 114.799;
-    var28[1] = var29;
-    var27 = new Array(8);
-    var27[0] = var28;
-    var28 = new Array(2);
-    var28[0] = var32;
-    var28[1] = var29;
-    var27[1] = var28;
-    var28 = new Array(2);
-    var30 = -954.247;
-    var28[0] = var30;
-    var29 = 102.716;
-    var28[1] = var29;
-    var27[2] = var28;
-    var28 = new Array(2);
-    var28[0] = var30;
-    var31 = 82.577;
-    var28[1] = var31;
-    var27[3] = var28;
-    var28 = new Array(2);
-    var28[0] = var32;
-    var30 = 70.493;
-    var28[1] = var30;
-    var27[4] = var28;
-    var28 = new Array(2);
-    var28[0] = var32;
-    var28[1] = var30;
-    var27[5] = var28;
-    var28 = new Array(2);
-    var30 = -930.08;
-    var28[0] = var30;
-    var28[1] = var31;
-    var27[6] = var28;
-    var28 = new Array(2);
-    var28[0] = var30;
-    var28[1] = var29;
-    var27[7] = var28;
-    var26.v = var27;
-    var26.c = var10;
-    var3.k = var26;
-    var12.ks = var3;
-    var3 = new Array(3);
-    var3[0] = var12;
-    var12 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var26 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var27 = [0.737254917622, 0.592156887054, 0.23137255013, 1];
-    var26.k = var27;
-    var12.c = var26;
-    var26 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var12.o = var26;
-    var3[1] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var26 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var27 = [0, 0];
-    var26.k = var27;
-    var12.p = var26;
-    var26 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var27 = [0, 0];
-    var26.k = var27;
-    var12.a = var26;
-    var26 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var27 = [100, 100];
-    var26.k = var27;
-    var12.s = var26;
-    var26 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var26;
-    var26 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var26;
-    var26 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var26;
-    var26 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var26;
-    var12.nm = var7;
-    var3[2] = var12;
-    var9.it = var3;
-    var3 = new Array(2);
-    var3[0] = var9;
-    var9 = {};
-    var9.ty = var8;
-    var12 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var26 = [0, 0];
-    var12.k = var26;
-    var9.p = var12;
-    var12 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var26 = [0, 0];
-    var12.k = var26;
-    var9.a = var12;
-    var12 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var26 = [100, 100];
-    var12.k = var26;
-    var9.s = var12;
-    var12 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var9.r = var12;
-    var12 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var9.o = var12;
-    var12 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var9.sk = var12;
-    var12 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var9.sa = var12;
-    var9.nm = var7;
-    var3[1] = var9;
-    var4.it = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var2.shapes = var3;
-    var0[23] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 27,
-        'ty': 4,
-        'nm': 'Locker',
-        'parent': 29,
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'shapes': null,
-        'ip': 0,
-        'op': 96,
-        'st': 0,
-        'ct': 1,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 10
-    };
-    var12 = {};
-    var9 = {};
-    var26 = [0.667];
-    var9.x = var26;
-    var26 = [1];
-    var9.y = var26;
-    var12.i = var9;
-    var9 = {};
-    var26 = [0.333];
-    var9.x = var26;
-    var26 = [0];
-    var9.y = var26;
-    var12.o = var9;
-    var12.t = var21;
-    var9 = [0];
-    var12.s = var9;
-    var9 = new Array(8);
-    var9[0] = var12;
-    var12 = {};
-    var26 = {};
-    var27 = [0.667];
-    var26.x = var27;
-    var27 = [1];
-    var26.y = var27;
-    var12.i = var26;
-    var26 = {};
-    var27 = [0.333];
-    var26.x = var27;
-    var27 = [0];
-    var26.y = var27;
-    var12.o = var26;
-    var12.t = var18;
-    var26 = new Array(1);
-    var27 = -26;
-    var26[0] = var27;
-    var12.s = var26;
-    var9[1] = var12;
-    var12 = {};
-    var26 = {};
-    var27 = [0.667];
-    var26.x = var27;
-    var27 = [1];
-    var26.y = var27;
-    var12.i = var26;
-    var26 = {};
-    var27 = [0.333];
-    var26.x = var27;
-    var27 = [0];
-    var26.y = var27;
-    var12.o = var26;
-    var12.t = var25;
-    var25 = [22];
-    var12.s = var25;
-    var9[2] = var12;
-    var12 = {};
-    var25 = {};
-    var26 = [0.667];
-    var25.x = var26;
-    var26 = [1];
-    var25.y = var26;
-    var12.i = var25;
-    var25 = {};
-    var26 = [0.333];
-    var25.x = var26;
-    var26 = [0];
-    var25.y = var26;
-    var12.o = var25;
-    var12.t = var23;
-    var23 = new Array(1);
-    var23[0] = var24;
-    var12.s = var23;
-    var9[3] = var12;
-    var12 = {};
-    var23 = {};
-    var24 = [0.833];
-    var23.x = var24;
-    var24 = [1];
-    var23.y = var24;
-    var12.i = var23;
-    var23 = {};
-    var24 = [0.333];
-    var23.x = var24;
-    var24 = [0];
-    var23.y = var24;
-    var12.o = var23;
-    var12.t = var22;
-    var22 = [12];
-    var12.s = var22;
-    var9[4] = var12;
-    var12 = {};
-    var22 = {};
-    var23 = [0.833];
-    var22.x = var23;
-    var23 = [1];
-    var22.y = var23;
-    var12.i = var22;
-    var22 = {};
-    var23 = [0.167];
-    var22.x = var23;
-    var23 = [0];
-    var22.y = var23;
-    var12.o = var22;
-    var12.t = var20;
-    var20 = new Array(1);
-    var22 = -8;
-    var20[0] = var22;
-    var12.s = var20;
-    var9[5] = var12;
-    var12 = {};
-    var20 = {};
-    var22 = [0.833];
-    var20.x = var22;
-    var22 = [1];
-    var20.y = var22;
-    var12.i = var20;
-    var20 = {};
-    var22 = [0.167];
-    var20.x = var22;
-    var22 = [0];
-    var20.y = var22;
-    var12.o = var20;
-    var12.t = var19;
-    var19 = [4];
-    var12.s = var19;
-    var9[6] = var12;
-    var12 = {};
-    var12.t = var16;
-    var16 = [0];
-    var12.s = var16;
-    var9[7] = var12;
-    var4.k = var9;
-    var3.r = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 2,
-        'l': 2
-    };
-    var9 = new Array(3);
-    var25 = -941.844;
-    var9[0] = var25;
-    var12 = 95.423;
-    var9[1] = var12;
-    var9[2] = var6;
-    var4.k = var9;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1,
-        'l': 2
-    };
-    var9 = new Array(3);
-    var9[0] = var25;
-    var9[1] = var12;
-    var9[2] = var6;
-    var4.k = var9;
-    var3.a = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 6,
-        'l': 2
-    };
-    var9 = [100, 100, 100];
-    var4.k = var9;
-    var3.s = var4;
-    var2.ks = var3;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 3',
-        'np': 5,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var9 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var12 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var3 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = {};
-    var19 = new Array(4);
-    var20 = [0, 0];
-    var19[0] = var20;
-    var20 = [0, 0];
-    var19[1] = var20;
-    var20 = [0, 0];
-    var19[2] = var20;
-    var20 = [0, 0];
-    var19[3] = var20;
-    var16.i = var19;
-    var19 = new Array(4);
-    var20 = [0, 0];
-    var19[0] = var20;
-    var20 = [0, 0];
-    var19[1] = var20;
-    var20 = [0, 0];
-    var19[2] = var20;
-    var20 = [0, 0];
-    var19[3] = var20;
-    var16.o = var19;
-    var20 = new Array(2);
-    var19 = -925.624;
-    var20[0] = var19;
-    var22 = 175.597;
-    var20[1] = var22;
-    var19 = new Array(4);
-    var19[0] = var20;
-    var20 = new Array(2);
-    var23 = -956.215;
-    var20[0] = var23;
-    var20[1] = var22;
-    var19[1] = var20;
-    var20 = new Array(2);
-    var22 = -946.215;
-    var20[0] = var22;
-    var22 = 156.971;
-    var20[1] = var22;
-    var19[2] = var20;
-    var20 = new Array(2);
-    var23 = -935.624;
-    var20[0] = var23;
-    var20[1] = var22;
-    var19[3] = var20;
-    var16.v = var19;
-    var16.c = var10;
-    var3.k = var16;
-    var12.ks = var3;
-    var3 = new Array(3);
-    var3[0] = var12;
-    var12 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var19 = [0, 0, 0, 1];
-    var16.k = var19;
-    var12.c = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var12.o = var16;
-    var3[1] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var19 = [0, 0];
-    var16.k = var19;
-    var12.p = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var19 = [0, 0];
-    var16.k = var19;
-    var12.a = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var19 = [100, 100];
-    var16.k = var19;
-    var12.s = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var16;
-    var12.nm = var7;
-    var3[2] = var12;
-    var9.it = var3;
-    var3 = new Array(5);
-    var3[0] = var9;
-    var9 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 2',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 2,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var16 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var12 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var19 = {};
-    var22 = [0];
-    var23 = -6.571;
-    var22[1] = var23;
-    var20 = new Array(4);
-    var20[0] = var22;
-    var22 = [6.571, 0];
-    var20[1] = var22;
-    var22 = [0, 6.571];
-    var20[2] = var22;
-    var22 = new Array(2);
-    var22[0] = var23;
-    var22[1] = var6;
-    var20[3] = var22;
-    var19.i = var20;
-    var20 = new Array(4);
-    var22 = [0, 6.571];
-    var20[0] = var22;
-    var22 = new Array(2);
-    var22[0] = var23;
-    var22[1] = var6;
-    var20[1] = var22;
-    var22 = [0];
-    var22[1] = var23;
-    var20[2] = var22;
-    var22 = [6.571, 0];
-    var20[3] = var22;
-    var19.o = var20;
-    var22 = new Array(2);
-    var20 = -929.204;
-    var22[0] = var20;
-    var24 = 150.762;
-    var22[1] = var24;
-    var20 = new Array(4);
-    var20[0] = var22;
-    var22 = new Array(2);
-    var23 = -941.102;
-    var22[0] = var23;
-    var26 = 162.66;
-    var22[1] = var26;
-    var20[1] = var22;
-    var22 = new Array(2);
-    var26 = -953;
-    var22[0] = var26;
-    var22[1] = var24;
-    var20[2] = var22;
-    var22 = new Array(2);
-    var22[0] = var23;
-    var23 = 138.864;
-    var22[1] = var23;
-    var20[3] = var22;
-    var19.v = var20;
-    var19.c = var10;
-    var12.k = var19;
-    var16.ks = var12;
-    var12 = new Array(3);
-    var12[0] = var16;
-    var16 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var19 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var20 = [0, 0, 0, 1];
-    var19.k = var20;
-    var16.c = var19;
-    var19 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var16.o = var19;
-    var12[1] = var16;
-    var16 = {};
-    var16.ty = var8;
-    var19 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var20 = [0, 0];
-    var19.k = var20;
-    var16.p = var19;
-    var19 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var20 = [0, 0];
-    var19.k = var20;
-    var16.a = var19;
-    var19 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var20 = [100, 100];
-    var19.k = var20;
-    var16.s = var19;
-    var19 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var16.r = var19;
-    var19 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var16.o = var19;
-    var19 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var16.sk = var19;
-    var19 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var16.sa = var19;
-    var16.nm = var7;
-    var12[2] = var16;
-    var9.it = var12;
-    var3[1] = var9;
-    var9 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 4',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 4,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var16 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var12 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var19 = {};
-    var20 = new Array(5);
-    var22 = [0, 0];
-    var20[0] = var22;
-    var22 = [0];
-    var23 = -4.008;
-    var22[1] = var23;
-    var20[1] = var22;
-    var22 = [29.299, 0];
-    var20[2] = var22;
-    var22 = [0, 28.72];
-    var20[3] = var22;
-    var22 = new Array(2);
-    var23 = -0.548;
-    var22[0] = var23;
-    var23 = 3.31;
-    var22[1] = var23;
-    var20[4] = var22;
-    var19.i = var20;
-    var20 = new Array(5);
-    var22 = [0.712, 3.747];
-    var20[0] = var22;
-    var22 = [0, 28.72];
-    var20[1] = var22;
-    var22 = new Array(2);
-    var23 = -28.272;
-    var22[0] = var23;
-    var22[1] = var6;
-    var20[2] = var22;
-    var22 = [0];
-    var23 = -3.504;
-    var22[1] = var23;
-    var20[3] = var22;
-    var22 = [0, 0];
-    var20[4] = var22;
-    var19.o = var20;
-    var22 = new Array(2);
-    var20 = -899.795;
-    var22[0] = var20;
-    var20 = 128.959;
-    var22[1] = var20;
-    var20 = new Array(5);
-    var20[0] = var22;
-    var22 = new Array(2);
-    var23 = -898.707;
-    var22[0] = var23;
-    var23 = 140.615;
-    var22[1] = var23;
-    var20[1] = var22;
-    var22 = new Array(2);
-    var22[0] = var25;
-    var24 = 192.618;
-    var22[1] = var24;
-    var20[2] = var22;
-    var22 = new Array(2);
-    var24 = -984.982;
-    var22[0] = var24;
-    var22[1] = var23;
-    var20[3] = var22;
-    var22 = new Array(2);
-    var23 = -984.146;
-    var22[0] = var23;
-    var23 = 130.378;
-    var22[1] = var23;
-    var20[4] = var22;
-    var19.v = var20;
-    var19.c = var10;
-    var12.k = var19;
-    var16.ks = var12;
-    var12 = new Array(3);
-    var12[0] = var16;
-    var16 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var19 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var20 = [0.388235300779, 0.364705890417, 0.352941185236, 1];
-    var19.k = var20;
-    var16.c = var19;
-    var19 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var16.o = var19;
-    var12[1] = var16;
-    var16 = {};
-    var16.ty = var8;
-    var19 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var20 = [0, 0];
-    var19.k = var20;
-    var16.p = var19;
-    var19 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var20 = [0, 0];
-    var19.k = var20;
-    var16.a = var19;
-    var19 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var20 = [100, 100];
-    var19.k = var20;
-    var16.s = var19;
-    var19 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var16.r = var19;
-    var19 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var16.o = var19;
-    var19 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var16.sk = var19;
-    var19 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var16.sa = var19;
-    var16.nm = var7;
-    var12[2] = var16;
-    var9.it = var12;
-    var3[2] = var9;
-    var9 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 5',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 5,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var16 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var12 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var19 = {};
-    var20 = new Array(10);
-    var22 = [0, 0];
-    var20[0] = var22;
-    var22 = [0, 2.946];
-    var20[1] = var22;
-    var22 = new Array(2);
-    var23 = -20.648;
-    var22[0] = var23;
-    var22[1] = var6;
-    var20[2] = var22;
-    var22 = [0];
-    var24 = -21.115;
-    var22[1] = var24;
-    var20[3] = var22;
-    var22 = [0.475];
-    var23 = -2.434;
-    var22[1] = var23;
-    var20[4] = var22;
-    var22 = [0, 0];
-    var20[5] = var22;
-    var22 = [0, 1.504];
-    var20[6] = var22;
-    var22 = [11.065, 0];
-    var20[7] = var22;
-    var22 = [0];
-    var23 = -12.322;
-    var22[1] = var23;
-    var20[8] = var22;
-    var22 = new Array(2);
-    var26 = -0.331;
-    var22[0] = var26;
-    var26 = -1.608;
-    var22[1] = var26;
-    var20[9] = var22;
-    var19.i = var20;
-    var22 = new Array(2);
-    var20 = -0.617;
-    var22[0] = var20;
-    var20 = -2.755;
-    var22[1] = var20;
-    var20 = new Array(10);
-    var20[0] = var22;
-    var22 = [0];
-    var22[1] = var24;
-    var20[1] = var22;
-    var22 = [20.648, 0];
-    var20[2] = var22;
-    var22 = [0, 2.576];
-    var20[3] = var22;
-    var22 = [0, 0];
-    var20[4] = var22;
-    var22 = [0.255];
-    var24 = -1.42;
-    var22[1] = var24;
-    var20[5] = var22;
-    var22 = [0];
-    var22[1] = var23;
-    var20[6] = var22;
-    var22 = new Array(2);
-    var23 = -11.065;
-    var22[0] = var23;
-    var22[1] = var6;
-    var20[7] = var22;
-    var22 = [0, 1.719];
-    var20[8] = var22;
-    var22 = [0, 0];
-    var20[9] = var22;
-    var19.o = var20;
-    var22 = new Array(2);
-    var20 = -978.288;
-    var22[0] = var20;
-    var23 = 131.188;
-    var22[1] = var23;
-    var20 = new Array(10);
-    var20[0] = var22;
-    var22 = new Array(2);
-    var24 = -979.231;
-    var22[0] = var24;
-    var24 = 122.618;
-    var22[1] = var24;
-    var20[1] = var22;
-    var22 = new Array(2);
-    var22[0] = var25;
-    var26 = 84.385;
-    var22[1] = var26;
-    var20[2] = var22;
-    var22 = new Array(2);
-    var26 = -904.458;
-    var22[0] = var26;
-    var22[1] = var24;
-    var20[3] = var22;
-    var22 = new Array(2);
-    var24 = -905.182;
-    var22[0] = var24;
-    var24 = 130.145;
-    var22[1] = var24;
-    var20[4] = var22;
-    var22 = new Array(2);
-    var24 = -922.199;
-    var22[0] = var24;
-    var24 = 130.579;
-    var22[1] = var24;
-    var20[5] = var22;
-    var22 = new Array(2);
-    var24 = -921.81;
-    var22[0] = var24;
-    var24 = 126.187;
-    var22[1] = var24;
-    var20[6] = var22;
-    var22 = new Array(2);
-    var22[0] = var25;
-    var25 = 103.876;
-    var22[1] = var25;
-    var20[7] = var22;
-    var22 = new Array(2);
-    var25 = -961.879;
-    var22[0] = var25;
-    var22[1] = var24;
-    var20[8] = var22;
-    var22 = new Array(2);
-    var24 = -961.373;
-    var22[0] = var24;
-    var22[1] = var23;
-    var20[9] = var22;
-    var19.v = var20;
-    var19.c = var10;
-    var12.k = var19;
-    var16.ks = var12;
-    var12 = new Array(3);
-    var12[0] = var16;
-    var16 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var19 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var20 = [0.686274528503, 0.686274528503, 0.686274528503, 1];
-    var19.k = var20;
-    var16.c = var19;
-    var19 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var16.o = var19;
-    var12[1] = var16;
-    var16 = {};
-    var16.ty = var8;
-    var19 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var20 = [0, 0];
-    var19.k = var20;
-    var16.p = var19;
-    var19 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var20 = [0, 0];
-    var19.k = var20;
-    var16.a = var19;
-    var19 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var20 = [100, 100];
-    var19.k = var20;
-    var16.s = var19;
-    var19 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var16.r = var19;
-    var19 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var16.o = var19;
-    var19 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var16.sk = var19;
-    var19 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var16.sa = var19;
-    var16.nm = var7;
-    var12[2] = var16;
-    var9.it = var12;
-    var3[3] = var9;
-    var9 = {};
-    var9.ty = var8;
-    var12 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = [0, 0];
-    var12.k = var16;
-    var9.p = var12;
-    var12 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var16 = [0, 0];
-    var12.k = var16;
-    var9.a = var12;
-    var12 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var16 = [100, 100];
-    var12.k = var16;
-    var9.s = var12;
-    var12 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var9.r = var12;
-    var12 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var9.o = var12;
-    var12 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var9.sk = var12;
-    var12 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var9.sa = var12;
-    var9.nm = var7;
-    var3[4] = var9;
-    var4.it = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var2.shapes = var3;
-    var0[24] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 28,
-        'ty': 4,
-        'nm': 'Cofre_Top',
-        'parent': 29,
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'shapes': null,
-        'ip': 0,
-        'op': 96,
-        'st': 0,
-        'ct': 1,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 0,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 2,
-        'l': 2
-    };
-    var9 = new Array(3);
-    var16 = -956.973;
-    var9[0] = var16;
-    var12 = 47.446;
-    var9[1] = var12;
-    var9[2] = var6;
-    var4.k = var9;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1,
-        'l': 2
-    };
-    var9 = new Array(3);
-    var9[0] = var16;
-    var9[1] = var12;
-    var9[2] = var6;
-    var4.k = var9;
-    var3.a = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 6,
-        'l': 2
-    };
-    var9 = [100, 100, 100];
-    var4.k = var9;
-    var3.s = var4;
-    var2.ks = var3;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 4',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 2,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var9 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var3 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var12 = {};
-    var19 = [0];
-    var20 = -30.56;
-    var19[1] = var20;
-    var16 = new Array(4);
-    var16[0] = var19;
-    var19 = [30.56, 0];
-    var16[1] = var19;
-    var19 = [0, 30.56];
-    var16[2] = var19;
-    var19 = new Array(2);
-    var19[0] = var20;
-    var19[1] = var6;
-    var16[3] = var19;
-    var12.i = var16;
-    var16 = new Array(4);
-    var19 = [0, 30.56];
-    var16[0] = var19;
-    var19 = new Array(2);
-    var19[0] = var20;
-    var19[1] = var6;
-    var16[1] = var19;
-    var19 = [0];
-    var19[1] = var20;
-    var16[2] = var19;
-    var19 = [30.56, 0];
-    var16[3] = var19;
-    var12.o = var16;
-    var19 = new Array(2);
-    var16 = -887.762;
-    var19[0] = var16;
-    var23 = 99.231;
-    var19[1] = var23;
-    var16 = new Array(4);
-    var16[0] = var19;
-    var19 = new Array(2);
-    var22 = -943.095;
-    var19[0] = var22;
-    var20 = 154.564;
-    var19[1] = var20;
-    var16[1] = var19;
-    var19 = new Array(2);
-    var20 = -998.429;
-    var19[0] = var20;
-    var19[1] = var23;
-    var16[2] = var19;
-    var19 = new Array(2);
-    var19[0] = var22;
-    var20 = 43.898;
-    var19[1] = var20;
-    var16[3] = var19;
-    var12.v = var16;
-    var12.c = var10;
-    var3.k = var12;
-    var9.ks = var3;
-    var3 = new Array(3);
-    var3[0] = var9;
-    var9 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var12 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var16 = [1, 0.847058832645, 0.352941185236, 1];
-    var12.k = var16;
-    var9.c = var12;
-    var12 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var9.o = var12;
-    var3[1] = var9;
-    var9 = {};
-    var9.ty = var8;
-    var12 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = [0, 0];
-    var12.k = var16;
-    var9.p = var12;
-    var12 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var16 = [0, 0];
-    var12.k = var16;
-    var9.a = var12;
-    var12 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var16 = [100, 100];
-    var12.k = var16;
-    var9.s = var12;
-    var12 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var9.r = var12;
-    var12 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var9.o = var12;
-    var12 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var9.sk = var12;
-    var12 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var9.sa = var12;
-    var9.nm = var7;
-    var3[2] = var9;
-    var4.it = var3;
-    var3 = new Array(9);
-    var3[0] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 5',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 3,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var12 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var9 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = {};
-    var20 = [0];
-    var24 = -34.33;
-    var20[1] = var24;
-    var19 = new Array(4);
-    var19[0] = var20;
-    var20 = [33.654, 0];
-    var19[1] = var20;
-    var20 = [0, 34.33];
-    var19[2] = var20;
-    var20 = new Array(2);
-    var25 = -33.654;
-    var20[0] = var25;
-    var20[1] = var6;
-    var19[3] = var20;
-    var16.i = var19;
-    var19 = new Array(4);
-    var20 = [0, 34.33];
-    var19[0] = var20;
-    var20 = new Array(2);
-    var20[0] = var25;
-    var20[1] = var6;
-    var19[1] = var20;
-    var20 = [0];
-    var20[1] = var24;
-    var19[2] = var20;
-    var20 = [33.654, 0];
-    var19[3] = var20;
-    var16.o = var19;
-    var20 = new Array(2);
-    var19 = -882.16;
-    var20[0] = var19;
-    var20[1] = var23;
-    var19 = new Array(4);
-    var19[0] = var20;
-    var20 = new Array(2);
-    var20[0] = var22;
-    var24 = 161.391;
-    var20[1] = var24;
-    var19[1] = var20;
-    var20 = new Array(2);
-    var24 = -1004.031;
-    var20[0] = var24;
-    var20[1] = var23;
-    var19[2] = var20;
-    var20 = new Array(2);
-    var20[0] = var22;
-    var22 = 37.071;
-    var20[1] = var22;
-    var19[3] = var20;
-    var16.v = var19;
-    var16.c = var10;
-    var9.k = var16;
-    var12.ks = var9;
-    var9 = new Array(3);
-    var9[0] = var12;
-    var12 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var19 = [0.737254917622, 0.592156887054, 0.23137255013, 1];
-    var16.k = var19;
-    var12.c = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var12.o = var16;
-    var9[1] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var19 = [0, 0];
-    var16.k = var19;
-    var12.p = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var19 = [0, 0];
-    var16.k = var19;
-    var12.a = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var19 = [100, 100];
-    var16.k = var19;
-    var12.s = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var16;
-    var12.nm = var7;
-    var9[2] = var12;
-    var4.it = var9;
-    var3[1] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 6',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 4,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var12 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var9 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = {};
-    var19 = new Array(8);
-    var20 = [5.5, 0];
-    var19[0] = var20;
-    var20 = [0, 0];
-    var19[1] = var20;
-    var20 = [0, 5.5];
-    var19[2] = var20;
-    var20 = [0, 0];
-    var19[3] = var20;
-    var20 = new Array(2);
-    var22 = -5.5;
-    var20[0] = var22;
-    var20[1] = var6;
-    var19[4] = var20;
-    var20 = [0, 0];
-    var19[5] = var20;
-    var20 = [0];
-    var20[1] = var22;
-    var19[6] = var20;
-    var20 = [0, 0];
-    var19[7] = var20;
-    var16.i = var19;
-    var19 = new Array(8);
-    var20 = [0, 0];
-    var19[0] = var20;
-    var20 = new Array(2);
-    var20[0] = var22;
-    var20[1] = var6;
-    var19[1] = var20;
-    var20 = [0, 0];
-    var19[2] = var20;
-    var20 = [0];
-    var20[1] = var22;
-    var19[3] = var20;
-    var20 = [0, 0];
-    var19[4] = var20;
-    var20 = [5.5, 0];
-    var19[5] = var20;
-    var20 = [0, 0];
-    var19[6] = var20;
-    var20 = [0, 5.5];
-    var19[7] = var20;
-    var16.o = var19;
-    var20 = new Array(2);
-    var26 = -930.479;
-    var20[0] = var26;
-    var23 = 75.127;
-    var20[1] = var23;
-    var19 = new Array(8);
-    var19[0] = var20;
-    var20 = new Array(2);
-    var24 = -957.919;
-    var20[0] = var24;
-    var20[1] = var23;
-    var19[1] = var20;
-    var20 = new Array(2);
-    var25 = -967.919;
-    var20[0] = var25;
-    var23 = 65.127;
-    var20[1] = var23;
-    var19[2] = var20;
-    var20 = new Array(2);
-    var20[0] = var25;
-    var25 = -32.654;
-    var20[1] = var25;
-    var19[3] = var20;
-    var20 = new Array(2);
-    var20[0] = var24;
-    var24 = -42.654;
-    var20[1] = var24;
-    var19[4] = var20;
-    var20 = new Array(2);
-    var20[0] = var26;
-    var20[1] = var24;
-    var19[5] = var20;
-    var20 = new Array(2);
-    var24 = -920.479;
-    var20[0] = var24;
-    var20[1] = var25;
-    var19[6] = var20;
-    var20 = new Array(2);
-    var20[0] = var24;
-    var20[1] = var23;
-    var19[7] = var20;
-    var16.v = var19;
-    var16.c = var10;
-    var9.k = var16;
-    var12.ks = var9;
-    var9 = new Array(3);
-    var9[0] = var12;
-    var12 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var19 = [0.878431379795, 0.721568644047, 0.282352954149, 1];
-    var16.k = var19;
-    var12.c = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var12.o = var16;
-    var9[1] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var19 = [0, 0];
-    var16.k = var19;
-    var12.p = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var19 = [0, 0];
-    var16.k = var19;
-    var12.a = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var19 = [100, 100];
-    var16.k = var19;
-    var12.s = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var16;
-    var12.nm = var7;
-    var9[2] = var12;
-    var4.it = var9;
-    var3[2] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 7',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 5,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var12 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var9 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = {};
-    var19 = new Array(8);
-    var20 = [5.5, 0];
-    var19[0] = var20;
-    var20 = [0, 0];
-    var19[1] = var20;
-    var20 = [0, 5.5];
-    var19[2] = var20;
-    var20 = [0, 0];
-    var19[3] = var20;
-    var20 = new Array(2);
-    var20[0] = var22;
-    var20[1] = var6;
-    var19[4] = var20;
-    var20 = [0, 0];
-    var19[5] = var20;
-    var20 = [0];
-    var20[1] = var22;
-    var19[6] = var20;
-    var20 = [0, 0];
-    var19[7] = var20;
-    var16.i = var19;
-    var19 = new Array(8);
-    var20 = [0, 0];
-    var19[0] = var20;
-    var20 = new Array(2);
-    var20[0] = var22;
-    var20[1] = var6;
-    var19[1] = var20;
-    var20 = [0, 0];
-    var19[2] = var20;
-    var20 = [0];
-    var20[1] = var22;
-    var19[3] = var20;
-    var20 = [0, 0];
-    var19[4] = var20;
-    var20 = [5.5, 0];
-    var19[5] = var20;
-    var20 = [0, 0];
-    var19[6] = var20;
-    var20 = [0, 5.5];
-    var19[7] = var20;
-    var16.o = var19;
-    var19 = new Array(2);
-    var26 = -762.929;
-    var19[0] = var26;
-    var20 = 94.576;
-    var19[1] = var20;
-    var22 = new Array(8);
-    var22[0] = var19;
-    var19 = new Array(2);
-    var23 = -1137.655;
-    var19[0] = var23;
-    var19[1] = var20;
-    var22[1] = var19;
-    var20 = new Array(2);
-    var19 = -1147.655;
-    var20[0] = var19;
-    var24 = 84.576;
-    var20[1] = var24;
-    var22[2] = var20;
-    var20 = new Array(2);
-    var20[0] = var19;
-    var25 = 73.025;
-    var20[1] = var25;
-    var22[3] = var20;
-    var20 = new Array(2);
-    var20[0] = var23;
-    var23 = 63.025;
-    var20[1] = var23;
-    var22[4] = var20;
-    var20 = new Array(2);
-    var20[0] = var26;
-    var20[1] = var23;
-    var22[5] = var20;
-    var23 = new Array(2);
-    var20 = -752.929;
-    var23[0] = var20;
-    var23[1] = var25;
-    var22[6] = var23;
-    var23 = new Array(2);
-    var23[0] = var20;
-    var23[1] = var24;
-    var22[7] = var23;
-    var16.v = var22;
-    var16.c = var10;
-    var9.k = var16;
-    var12.ks = var9;
-    var9 = new Array(3);
-    var9[0] = var12;
-    var12 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var22 = [1, 0.847058832645, 0.352941185236, 1];
-    var16.k = var22;
-    var12.c = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var12.o = var16;
-    var9[1] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var22 = [0, 0];
-    var16.k = var22;
-    var12.p = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var22 = [0, 0];
-    var16.k = var22;
-    var12.a = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var22 = [100, 100];
-    var16.k = var22;
-    var12.s = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var16;
-    var12.nm = var7;
-    var9[2] = var12;
-    var4.it = var9;
-    var3[3] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 8',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 6,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var16 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var9 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var23 = {};
-    var22 = new Array(5);
-    var24 = [0, 0];
-    var22[0] = var24;
-    var24 = [3.732, 32.759];
-    var22[1] = var24;
-    var24 = [7.464, 4.976];
-    var22[2] = var24;
-    var24 = new Array(2);
-    var25 = -14.928;
-    var24[0] = var25;
-    var42 = -10.367;
-    var24[1] = var42;
-    var22[3] = var24;
-    var24 = [6.635];
-    var41 = -62.2;
-    var24[1] = var41;
-    var22[4] = var24;
-    var23.i = var22;
-    var22 = new Array(5);
-    var24 = [0, 0];
-    var22[0] = var24;
-    var24 = new Array(2);
-    var25 = -2.742;
-    var24[0] = var25;
-    var40 = -24.07;
-    var24[1] = var40;
-    var22[1] = var24;
-    var24 = [0, 0];
-    var22[2] = var24;
-    var24 = [4.817, 3.345];
-    var22[3] = var24;
-    var24 = [0, 0];
-    var22[4] = var24;
-    var23.o = var22;
-    var25 = new Array(2);
-    var22 = -793.048;
-    var25[0] = var22;
-    var22 = 72.767;
-    var25[1] = var22;
-    var24 = new Array(5);
-    var24[0] = var25;
-    var25 = new Array(2);
-    var26 = -792.634;
-    var25[0] = var26;
-    var38 = 15.128;
-    var25[1] = var38;
-    var24[1] = var25;
-    var25 = new Array(2);
-    var26 = -814.196;
-    var25[0] = var26;
-    var37 = -40.023;
-    var25[1] = var37;
-    var24[2] = var25;
-    var25 = new Array(2);
-    var26 = -778.12;
-    var25[0] = var26;
-    var36 = -29.656;
-    var25[1] = var36;
-    var24[3] = var25;
-    var25 = new Array(2);
-    var26 = -762.363;
-    var25[0] = var26;
-    var35 = 73.182;
-    var25[1] = var35;
-    var24[4] = var25;
-    var23.v = var24;
-    var23.c = var10;
-    var9.k = var23;
-    var16.ks = var9;
-    var9 = new Array(3);
-    var9[0] = var16;
-    var16 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var23 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var24 = [0.878431379795, 0.721568644047, 0.282352954149, 1];
-    var23.k = var24;
-    var16.c = var23;
-    var23 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var16.o = var23;
-    var9[1] = var16;
-    var16 = {};
-    var16.ty = var8;
-    var23 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var24 = [0, 0];
-    var23.k = var24;
-    var16.p = var23;
-    var23 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var24 = [0, 0];
-    var23.k = var24;
-    var16.a = var23;
-    var23 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var24 = [100, 100];
-    var23.k = var24;
-    var16.s = var23;
-    var23 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var16.r = var23;
-    var23 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var16.o = var23;
-    var23 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var16.sk = var23;
-    var23 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var16.sa = var23;
-    var16.nm = var7;
-    var9[2] = var16;
-    var12.it = var9;
-    var9 = new Array(3);
-    var9[0] = var12;
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 2',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 2,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var23 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var39 = {};
-    var24 = new Array(7);
-    var25 = [0, 0];
-    var24[0] = var25;
-    var25 = [0, 0];
-    var24[1] = var25;
-    var25 = [6.8, 48.279];
-    var24[2] = var25;
-    var25 = [0, 0];
-    var24[3] = var25;
-    var25 = [0, 0];
-    var24[4] = var25;
-    var25 = new Array(2);
-    var32 = -3.317;
-    var25[0] = var32;
-    var26 = 1.244;
-    var25[1] = var26;
-    var24[5] = var25;
-    var25 = new Array(2);
-    var30 = -8.293;
-    var25[0] = var30;
-    var34 = -24.88;
-    var25[1] = var34;
-    var24[6] = var25;
-    var39.i = var24;
-    var24 = new Array(7);
-    var25 = [0, 0];
-    var24[0] = var25;
-    var25 = [0, 0];
-    var24[1] = var25;
-    var25 = new Array(2);
-    var26 = -3.357;
-    var25[0] = var26;
-    var33 = -23.831;
-    var25[1] = var33;
-    var24[2] = var25;
-    var25 = [0, 0];
-    var24[3] = var25;
-    var25 = [0, 0];
-    var24[4] = var25;
-    var25 = [3.317];
-    var31 = -1.244;
-    var25[1] = var31;
-    var24[5] = var25;
-    var25 = [8.293, 24.88];
-    var24[6] = var25;
-    var39.o = var24;
-    var24 = new Array(2);
-    var25 = -789.316;
-    var24[0] = var25;
-    var29 = 72.353;
-    var24[1] = var29;
-    var43 = new Array(7);
-    var43[0] = var24;
-    var24 = new Array(2);
-    var25 = -800.927;
-    var24[0] = var25;
-    var24[1] = var29;
-    var43[1] = var24;
-    var24 = new Array(2);
-    var25 = -800.342;
-    var24[0] = var25;
-    var26 = 8.8;
-    var24[1] = var26;
-    var43[2] = var24;
-    var24 = new Array(2);
-    var25 = -817.099;
-    var24[0] = var25;
-    var28 = -33.388;
-    var24[1] = var28;
-    var43[3] = var24;
-    var24 = new Array(2);
-    var27 = -822.904;
-    var24[0] = var27;
-    var27 = -35.047;
-    var24[1] = var27;
-    var43[4] = var24;
-    var24 = new Array(2);
-    var24[0] = var25;
-    var25 = -40.852;
-    var24[1] = var25;
-    var43[5] = var24;
-    var44 = new Array(2);
-    var24 = -795.122;
-    var44[0] = var24;
-    var24 = -12.655;
-    var44[1] = var24;
-    var43[6] = var44;
-    var39.v = var43;
-    var39.c = var10;
-    var16.k = var39;
-    var23.ks = var16;
-    var16 = new Array(3);
-    var16[0] = var23;
-    var23 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var39 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var43 = [0.737254917622, 0.592156887054, 0.23137255013, 1];
-    var39.k = var43;
-    var23.c = var39;
-    var39 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var23.o = var39;
-    var16[1] = var23;
-    var23 = {};
-    var23.ty = var8;
-    var39 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var43 = [0, 0];
-    var39.k = var43;
-    var23.p = var39;
-    var39 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var43 = [0, 0];
-    var39.k = var43;
-    var23.a = var39;
-    var39 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var43 = [100, 100];
-    var39.k = var43;
-    var23.s = var39;
-    var39 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var23.r = var39;
-    var39 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var23.o = var39;
-    var39 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var23.sk = var39;
-    var39 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var23.sa = var39;
-    var23.nm = var7;
-    var16[2] = var23;
-    var12.it = var16;
-    var9[1] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var23 = [0, 0];
-    var16.k = var23;
-    var12.p = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var23 = [0, 0];
-    var16.k = var23;
-    var12.a = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var23 = [100, 100];
-    var16.k = var23;
-    var12.s = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var16;
-    var12.nm = var7;
-    var9[2] = var12;
-    var4.it = var9;
-    var3[4] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 9',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 7,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var12 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var9 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = {};
-    var23 = new Array(5);
-    var39 = [0, 0];
-    var23[0] = var39;
-    var39 = new Array(2);
-    var43 = -3.732;
-    var39[0] = var43;
-    var43 = 32.759;
-    var39[1] = var43;
-    var23[1] = var39;
-    var39 = new Array(2);
-    var43 = -7.464;
-    var39[0] = var43;
-    var43 = 4.976;
-    var39[1] = var43;
-    var23[2] = var39;
-    var39 = [14.928];
-    var39[1] = var42;
-    var23[3] = var39;
-    var39 = new Array(2);
-    var42 = -6.635;
-    var39[0] = var42;
-    var39[1] = var41;
-    var23[4] = var39;
-    var16.i = var23;
-    var23 = new Array(5);
-    var39 = [0, 0];
-    var23[0] = var39;
-    var39 = [2.742];
-    var39[1] = var40;
-    var23[1] = var39;
-    var39 = [0, 0];
-    var23[2] = var39;
-    var39 = new Array(2);
-    var40 = -4.817;
-    var39[0] = var40;
-    var40 = 3.345;
-    var39[1] = var40;
-    var23[3] = var39;
-    var39 = [0, 0];
-    var23[4] = var39;
-    var16.o = var23;
-    var23 = new Array(2);
-    var39 = -1110.478;
-    var23[0] = var39;
-    var23[1] = var22;
-    var22 = new Array(5);
-    var22[0] = var23;
-    var23 = new Array(2);
-    var39 = -1110.893;
-    var23[0] = var39;
-    var23[1] = var38;
-    var22[1] = var23;
-    var23 = new Array(2);
-    var38 = -1089.33;
-    var23[0] = var38;
-    var23[1] = var37;
-    var22[2] = var23;
-    var23 = new Array(2);
-    var37 = -1125.406;
-    var23[0] = var37;
-    var23[1] = var36;
-    var22[3] = var23;
-    var23 = new Array(2);
-    var36 = -1141.164;
-    var23[0] = var36;
-    var23[1] = var35;
-    var22[4] = var23;
-    var16.v = var22;
-    var16.c = var10;
-    var9.k = var16;
-    var12.ks = var9;
-    var9 = new Array(3);
-    var9[0] = var12;
-    var12 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var22 = [0.878431379795, 0.721568644047, 0.282352954149, 1];
-    var16.k = var22;
-    var12.c = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var12.o = var16;
-    var9[1] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var22 = [0, 0];
-    var16.k = var22;
-    var12.p = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var22 = [0, 0];
-    var16.k = var22;
-    var12.a = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var22 = [100, 100];
-    var16.k = var22;
-    var12.s = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var16;
-    var12.nm = var7;
-    var9[2] = var12;
-    var4.it = var9;
-    var3[5] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 10',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 8,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var12 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var9 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = {};
-    var22 = new Array(7);
-    var23 = [0, 0];
-    var22[0] = var23;
-    var23 = [0, 0];
-    var22[1] = var23;
-    var23 = new Array(2);
-    var35 = -6.8;
-    var23[0] = var35;
-    var35 = 48.279;
-    var23[1] = var35;
-    var22[2] = var23;
-    var23 = [0, 0];
-    var22[3] = var23;
-    var23 = [0, 0];
-    var22[4] = var23;
-    var23 = [3.317, 1.244];
-    var22[5] = var23;
-    var23 = [8.293];
-    var23[1] = var34;
-    var22[6] = var23;
-    var16.i = var22;
-    var22 = new Array(7);
-    var23 = [0, 0];
-    var22[0] = var23;
-    var23 = [0, 0];
-    var22[1] = var23;
-    var23 = [3.357];
-    var23[1] = var33;
-    var22[2] = var23;
-    var23 = [0, 0];
-    var22[3] = var23;
-    var23 = [0, 0];
-    var22[4] = var23;
-    var23 = new Array(2);
-    var23[0] = var32;
-    var23[1] = var31;
-    var22[5] = var23;
-    var23 = new Array(2);
-    var23[0] = var30;
-    var30 = 24.88;
-    var23[1] = var30;
-    var22[6] = var23;
-    var16.o = var22;
-    var23 = new Array(2);
-    var22 = -1114.21;
-    var23[0] = var22;
-    var23[1] = var29;
-    var22 = new Array(7);
-    var22[0] = var23;
-    var23 = new Array(2);
-    var30 = -1102.599;
-    var23[0] = var30;
-    var23[1] = var29;
-    var22[1] = var23;
-    var23 = new Array(2);
-    var29 = -1103.185;
-    var23[0] = var29;
-    var23[1] = var26;
-    var22[2] = var23;
-    var23 = new Array(2);
-    var26 = -1086.427;
-    var23[0] = var26;
-    var23[1] = var28;
-    var22[3] = var23;
-    var23 = new Array(2);
-    var28 = -1080.622;
-    var23[0] = var28;
-    var23[1] = var27;
-    var22[4] = var23;
-    var23 = new Array(2);
-    var23[0] = var26;
-    var23[1] = var25;
-    var22[5] = var23;
-    var23 = new Array(2);
-    var25 = -1108.405;
-    var23[0] = var25;
-    var23[1] = var24;
-    var22[6] = var23;
-    var16.v = var22;
-    var16.c = var10;
-    var9.k = var16;
-    var12.ks = var9;
-    var9 = new Array(3);
-    var9[0] = var12;
-    var12 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var22 = [0.737254917622, 0.592156887054, 0.23137255013, 1];
-    var16.k = var22;
-    var12.c = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var12.o = var16;
-    var9[1] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var22 = [0, 0];
-    var16.k = var22;
-    var12.p = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var22 = [0, 0];
-    var16.k = var22;
-    var12.a = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var22 = [100, 100];
-    var16.k = var22;
-    var12.s = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var16;
-    var12.nm = var7;
-    var9[2] = var12;
-    var4.it = var9;
-    var3[6] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 11',
-        'np': 6,
-        'cix': 2,
-        'bm': 0,
-        'ix': 9,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 2',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var16 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var9 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var22 = {};
-    var23 = new Array(2);
-    var24 = [0, 0];
-    var23[0] = var24;
-    var24 = [0, 0];
-    var23[1] = var24;
-    var22.i = var23;
-    var23 = new Array(2);
-    var24 = [0, 0];
-    var23[0] = var24;
-    var24 = [0, 0];
-    var23[1] = var24;
-    var22.o = var23;
-    var24 = new Array(2);
-    var23 = -1099.416;
-    var24[0] = var23;
-    var25 = -19.644;
-    var24[1] = var25;
-    var23 = new Array(2);
-    var23[0] = var24;
-    var24 = new Array(2);
-    var26 = -1040.246;
-    var24[0] = var26;
-    var24[1] = var25;
-    var23[1] = var24;
-    var22.v = var23;
-    var22.c = var17;
-    var9.k = var22;
-    var16.ks = var9;
-    var9 = new Array(3);
-    var9[0] = var16;
-    var16 = {
-        'ty': 'st',
-        'c': null,
-        'o': null,
-        'w': null,
-        'lc': 2,
-        'lj': 2,
-        'bm': 0,
-        'nm': 'Stroke 1',
-        'mn': 'ADBE Vector Graphic - Stroke',
-        'hd': false
-    };
-    var22 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var23 = [0.698039233685, 0.458823531866, 0.364705890417, 1];
-    var22.k = var23;
-    var16.c = var22;
-    var22 = {
-        'a': 0,
-        'k': 100,
-        'ix': 4
-    };
-    var16.o = var22;
-    var22 = {
-        'a': 0,
-        'k': 3,
-        'ix': 5
-    };
-    var16.w = var22;
-    var9[1] = var16;
-    var16 = {};
-    var16.ty = var8;
-    var22 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var23 = [0, 0];
-    var22.k = var23;
-    var16.p = var22;
-    var22 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var23 = [0, 0];
-    var22.k = var23;
-    var16.a = var22;
-    var22 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var23 = [100, 100];
-    var22.k = var23;
-    var16.s = var22;
-    var22 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var16.r = var22;
-    var22 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var16.o = var22;
-    var22 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var16.sk = var22;
-    var22 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var16.sa = var22;
-    var16.nm = var7;
-    var9[2] = var16;
-    var12.it = var9;
-    var9 = new Array(7);
-    var9[0] = var12;
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 4',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 2,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var22 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var23 = {};
-    var24 = new Array(2);
-    var25 = [0, 0];
-    var24[0] = var25;
-    var25 = [0, 0];
-    var24[1] = var25;
-    var23.i = var24;
-    var24 = new Array(2);
-    var25 = [0, 0];
-    var24[0] = var25;
-    var25 = [0, 0];
-    var24[1] = var25;
-    var23.o = var24;
-    var25 = new Array(2);
-    var24 = -928.046;
-    var25[0] = var24;
-    var26 = -22.993;
-    var25[1] = var26;
-    var24 = new Array(2);
-    var24[0] = var25;
-    var25 = new Array(2);
-    var27 = -868.876;
-    var25[0] = var27;
-    var25[1] = var26;
-    var24[1] = var25;
-    var23.v = var24;
-    var23.c = var17;
-    var16.k = var23;
-    var22.ks = var16;
-    var16 = new Array(3);
-    var16[0] = var22;
-    var22 = {
-        'ty': 'st',
-        'c': null,
-        'o': null,
-        'w': null,
-        'lc': 2,
-        'lj': 2,
-        'bm': 0,
-        'nm': 'Stroke 1',
-        'mn': 'ADBE Vector Graphic - Stroke',
-        'hd': false
-    };
-    var23 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var24 = [0.698039233685, 0.458823531866, 0.364705890417, 1];
-    var23.k = var24;
-    var22.c = var23;
-    var23 = {
-        'a': 0,
-        'k': 100,
-        'ix': 4
-    };
-    var22.o = var23;
-    var23 = {
-        'a': 0,
-        'k': 3,
-        'ix': 5
-    };
-    var22.w = var23;
-    var16[1] = var22;
-    var22 = {};
-    var22.ty = var8;
-    var23 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var24 = [0, 0];
-    var23.k = var24;
-    var22.p = var23;
-    var23 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var24 = [0, 0];
-    var23.k = var24;
-    var22.a = var23;
-    var23 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var24 = [100, 100];
-    var23.k = var24;
-    var22.s = var23;
-    var23 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var22.r = var23;
-    var23 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var22.o = var23;
-    var23 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var22.sk = var23;
-    var23 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var22.sa = var23;
-    var22.nm = var7;
-    var16[2] = var22;
-    var12.it = var16;
-    var9[1] = var12;
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 6',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 3,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var22 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var23 = {};
-    var24 = new Array(2);
-    var25 = [0, 0];
-    var24[0] = var25;
-    var25 = [0, 0];
-    var24[1] = var25;
-    var23.i = var24;
-    var24 = new Array(2);
-    var25 = [0, 0];
-    var24[0] = var25;
-    var25 = [0, 0];
-    var24[1] = var25;
-    var23.o = var24;
-    var25 = new Array(2);
-    var24 = -1115.604;
-    var25[0] = var24;
-    var26 = 44.55;
-    var25[1] = var26;
-    var24 = new Array(2);
-    var24[0] = var25;
-    var25 = new Array(2);
-    var27 = -1074.297;
-    var25[0] = var27;
-    var25[1] = var26;
-    var24[1] = var25;
-    var23.v = var24;
-    var23.c = var17;
-    var16.k = var23;
-    var22.ks = var16;
-    var16 = new Array(3);
-    var16[0] = var22;
-    var22 = {
-        'ty': 'st',
-        'c': null,
-        'o': null,
-        'w': null,
-        'lc': 2,
-        'lj': 2,
-        'bm': 0,
-        'nm': 'Stroke 1',
-        'mn': 'ADBE Vector Graphic - Stroke',
-        'hd': false
-    };
-    var23 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var24 = [0.698039233685, 0.458823531866, 0.364705890417, 1];
-    var23.k = var24;
-    var22.c = var23;
-    var23 = {
-        'a': 0,
-        'k': 100,
-        'ix': 4
-    };
-    var22.o = var23;
-    var23 = {
-        'a': 0,
-        'k': 3,
-        'ix': 5
-    };
-    var22.w = var23;
-    var16[1] = var22;
-    var22 = {};
-    var22.ty = var8;
-    var23 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var24 = [0, 0];
-    var23.k = var24;
-    var22.p = var23;
-    var23 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var24 = [0, 0];
-    var23.k = var24;
-    var22.a = var23;
-    var23 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var24 = [100, 100];
-    var23.k = var24;
-    var22.s = var23;
-    var23 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var22.r = var23;
-    var23 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var22.o = var23;
-    var23 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var22.sk = var23;
-    var23 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var22.sa = var23;
-    var22.nm = var7;
-    var16[2] = var22;
-    var12.it = var16;
-    var9[2] = var12;
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 7',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 4,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var22 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var23 = {};
-    var24 = new Array(2);
-    var25 = [0, 0];
-    var24[0] = var25;
-    var25 = [0, 0];
-    var24[1] = var25;
-    var23.i = var24;
-    var24 = new Array(2);
-    var25 = [0, 0];
-    var24[0] = var25;
-    var25 = [0, 0];
-    var24[1] = var25;
-    var23.o = var24;
-    var25 = new Array(2);
-    var24 = -894.553;
-    var25[0] = var24;
-    var26 = 20.547;
-    var25[1] = var26;
-    var24 = new Array(2);
-    var24[0] = var25;
-    var25 = new Array(2);
-    var27 = -853.246;
-    var25[0] = var27;
-    var25[1] = var26;
-    var24[1] = var25;
-    var23.v = var24;
-    var23.c = var17;
-    var16.k = var23;
-    var22.ks = var16;
-    var16 = new Array(3);
-    var16[0] = var22;
-    var22 = {
-        'ty': 'st',
-        'c': null,
-        'o': null,
-        'w': null,
-        'lc': 2,
-        'lj': 2,
-        'bm': 0,
-        'nm': 'Stroke 1',
-        'mn': 'ADBE Vector Graphic - Stroke',
-        'hd': false
-    };
-    var23 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var24 = [0.698039233685, 0.458823531866, 0.364705890417, 1];
-    var23.k = var24;
-    var22.c = var23;
-    var23 = {
-        'a': 0,
-        'k': 100,
-        'ix': 4
-    };
-    var22.o = var23;
-    var23 = {
-        'a': 0,
-        'k': 3,
-        'ix': 5
-    };
-    var22.w = var23;
-    var16[1] = var22;
-    var22 = {};
-    var22.ty = var8;
-    var23 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var24 = [0, 0];
-    var23.k = var24;
-    var22.p = var23;
-    var23 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var24 = [0, 0];
-    var23.k = var24;
-    var22.a = var23;
-    var23 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var24 = [100, 100];
-    var23.k = var24;
-    var22.s = var23;
-    var23 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var22.r = var23;
-    var23 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var22.o = var23;
-    var23 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var22.sk = var23;
-    var23 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var22.sa = var23;
-    var22.nm = var7;
-    var16[2] = var22;
-    var12.it = var16;
-    var9[3] = var12;
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 9',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 5,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var22 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var23 = {};
-    var24 = new Array(2);
-    var25 = [0, 0];
-    var24[0] = var25;
-    var25 = [0, 0];
-    var24[1] = var25;
-    var23.i = var24;
-    var24 = new Array(2);
-    var25 = [0, 0];
-    var24[0] = var25;
-    var25 = [0, 0];
-    var24[1] = var25;
-    var23.o = var24;
-    var25 = new Array(2);
-    var24 = -979.401;
-    var25[0] = var24;
-    var26 = 19.431;
-    var25[1] = var26;
-    var24 = new Array(2);
-    var24[0] = var25;
-    var25 = new Array(2);
-    var27 = -1041.921;
-    var25[0] = var27;
-    var25[1] = var26;
-    var24[1] = var25;
-    var23.v = var24;
-    var23.c = var17;
-    var16.k = var23;
-    var22.ks = var16;
-    var16 = new Array(3);
-    var16[0] = var22;
-    var22 = {
-        'ty': 'st',
-        'c': null,
-        'o': null,
-        'w': null,
-        'lc': 2,
-        'lj': 2,
-        'bm': 0,
-        'nm': 'Stroke 1',
-        'mn': 'ADBE Vector Graphic - Stroke',
-        'hd': false
-    };
-    var23 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var24 = [0.698039233685, 0.458823531866, 0.364705890417, 1];
-    var23.k = var24;
-    var22.c = var23;
-    var23 = {
-        'a': 0,
-        'k': 100,
-        'ix': 4
-    };
-    var22.o = var23;
-    var23 = {
-        'a': 0,
-        'k': 3,
-        'ix': 5
-    };
-    var22.w = var23;
-    var16[1] = var22;
-    var22 = {};
-    var22.ty = var8;
-    var23 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var24 = [0, 0];
-    var23.k = var24;
-    var22.p = var23;
-    var23 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var24 = [0, 0];
-    var23.k = var24;
-    var22.a = var23;
-    var23 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var24 = [100, 100];
-    var23.k = var24;
-    var22.s = var23;
-    var23 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var22.r = var23;
-    var23 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var22.o = var23;
-    var23 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var22.sk = var23;
-    var23 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var22.sa = var23;
-    var22.nm = var7;
-    var16[2] = var22;
-    var12.it = var16;
-    var9[4] = var12;
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 10',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 6,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var22 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var23 = {};
-    var24 = new Array(2);
-    var25 = [0, 0];
-    var24[0] = var25;
-    var25 = [0, 0];
-    var24[1] = var25;
-    var23.i = var24;
-    var24 = new Array(2);
-    var25 = [0, 0];
-    var24[0] = var25;
-    var25 = [0, 0];
-    var24[1] = var25;
-    var23.o = var24;
-    var25 = new Array(2);
-    var24 = -791.843;
-    var25[0] = var24;
-    var26 = 40.085;
-    var25[1] = var26;
-    var24 = new Array(2);
-    var24[0] = var25;
-    var25 = new Array(2);
-    var27 = -854.362;
-    var25[0] = var27;
-    var25[1] = var26;
-    var24[1] = var25;
-    var23.v = var24;
-    var23.c = var17;
-    var16.k = var23;
-    var22.ks = var16;
-    var16 = new Array(3);
-    var16[0] = var22;
-    var22 = {
-        'ty': 'st',
-        'c': null,
-        'o': null,
-        'w': null,
-        'lc': 2,
-        'lj': 2,
-        'bm': 0,
-        'nm': 'Stroke 1',
-        'mn': 'ADBE Vector Graphic - Stroke',
-        'hd': false
-    };
-    var23 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var24 = [0.698039233685, 0.458823531866, 0.364705890417, 1];
-    var23.k = var24;
-    var22.c = var23;
-    var23 = {
-        'a': 0,
-        'k': 100,
-        'ix': 4
-    };
-    var22.o = var23;
-    var23 = {
-        'a': 0,
-        'k': 3,
-        'ix': 5
-    };
-    var22.w = var23;
-    var16[1] = var22;
-    var22 = {};
-    var22.ty = var8;
-    var23 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var24 = [0, 0];
-    var23.k = var24;
-    var22.p = var23;
-    var23 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var24 = [0, 0];
-    var23.k = var24;
-    var22.a = var23;
-    var23 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var24 = [100, 100];
-    var23.k = var24;
-    var22.s = var23;
-    var23 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var22.r = var23;
-    var23 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var22.o = var23;
-    var23 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var22.sk = var23;
-    var23 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var22.sa = var23;
-    var22.nm = var7;
-    var16[2] = var22;
-    var12.it = var16;
-    var9[5] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var22 = [0, 0];
-    var16.k = var22;
-    var12.p = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var22 = [0, 0];
-    var16.k = var22;
-    var12.a = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var22 = [100, 100];
-    var16.k = var22;
-    var12.s = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var16;
-    var12.nm = var7;
-    var9[6] = var12;
-    var4.it = var9;
-    var3[7] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 12',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 10,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var12 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var9 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = {};
-    var22 = new Array(6);
-    var23 = [0, 0];
-    var22[0] = var23;
-    var23 = [0, 0];
-    var22[1] = var23;
-    var23 = [0, 0];
-    var22[2] = var23;
-    var23 = [0, 0];
-    var22[3] = var23;
-    var23 = [0, 0];
-    var22[4] = var23;
-    var23 = [0, 0];
-    var22[5] = var23;
-    var16.i = var22;
-    var22 = new Array(6);
-    var23 = [0, 0];
-    var22[0] = var23;
-    var23 = [0, 0];
-    var22[1] = var23;
-    var23 = [0, 0];
-    var22[2] = var23;
-    var23 = [0, 0];
-    var22[3] = var23;
-    var23 = [0, 0];
-    var22[4] = var23;
-    var23 = [0, 0];
-    var22[5] = var23;
-    var16.o = var22;
-    var23 = new Array(2);
-    var22 = -785.658;
-    var23[0] = var22;
-    var24 = 81.873;
-    var23[1] = var24;
-    var22 = new Array(6);
-    var22[0] = var23;
-    var23 = new Array(2);
-    var25 = -1127.103;
-    var23[0] = var25;
-    var23[1] = var24;
-    var22[1] = var23;
-    var23 = new Array(2);
-    var24 = -1120.206;
-    var23[0] = var24;
-    var24 = 2.426;
-    var23[1] = var24;
-    var22[2] = var23;
-    var23 = new Array(2);
-    var24 = -1087.103;
-    var23[0] = var24;
-    var24 = -34.65;
-    var23[1] = var24;
-    var22[3] = var23;
-    var23 = new Array(2);
-    var25 = -815.658;
-    var23[0] = var25;
-    var23[1] = var24;
-    var22[4] = var23;
-    var23 = new Array(2);
-    var24 = -787.852;
-    var23[0] = var24;
-    var24 = 1.764;
-    var23[1] = var24;
-    var22[5] = var23;
-    var16.v = var22;
-    var16.c = var10;
-    var9.k = var16;
-    var12.ks = var9;
-    var9 = new Array(3);
-    var9[0] = var12;
-    var12 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var22 = [0.588235318661, 0.349019616842, 0.243137255311, 1];
-    var16.k = var22;
-    var12.c = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var12.o = var16;
-    var9[1] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var22 = [0, 0];
-    var16.k = var22;
-    var12.p = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var22 = [0, 0];
-    var16.k = var22;
-    var12.a = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var22 = [100, 100];
-    var16.k = var22;
-    var12.s = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var16;
-    var12.nm = var7;
-    var9[2] = var12;
-    var4.it = var9;
-    var3[8] = var4;
-    var2.shapes = var3;
-    var0[25] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 29,
-        'ty': 4,
-        'nm': 'Cofre_Bottom',
-        'parent': 25,
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'shapes': null,
-        'ip': 0,
-        'op': 96,
-        'st': 0,
-        'ct': 1,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 0,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 2,
-        'l': 2
-    };
-    var12 = {};
-    var9 = {
-        'x': 0.2,
-        'y': 1
-    };
-    var12.i = var9;
-    var9 = {
-        'x': 0.508,
-        'y': 0
-    };
-    var12.o = var9;
-    var12.t = var21;
-    var9 = [48.257, 184.806, 0];
-    var12.s = var9;
-    var9 = [0, 0, 0];
-    var12.to = var9;
-    var9 = [0, 0, 0];
-    var12.ti = var9;
-    var9 = new Array(3);
-    var9[0] = var12;
-    var12 = {};
-    var16 = {
-        'x': 0.953,
-        'y': 1
-    };
-    var12.i = var16;
-    var16 = {
-        'x': 0.8,
-        'y': 0
-    };
-    var12.o = var16;
-    var12.t = var18;
-    var16 = [43.028, 171.578, 0];
-    var12.s = var16;
-    var16 = [0, 0, 0];
-    var12.to = var16;
-    var16 = [0, 0, 0];
-    var12.ti = var16;
-    var9[1] = var12;
-    var12 = {};
-    var12.t = var15;
-    var16 = [48.257, 184.806, 0];
-    var12.s = var16;
-    var9[2] = var12;
-    var4.k = var9;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1,
-        'l': 2
-    };
-    var9 = new Array(3);
-    var12 = -945.743;
-    var9[0] = var12;
-    var16 = 252.806;
-    var9[1] = var16;
-    var9[2] = var6;
-    var4.k = var9;
-    var3.a = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 6,
-        'l': 2
-    };
-    var12 = {};
-    var9 = {};
-    var22 = [0.2, 0.2, 0.2];
-    var9.x = var22;
-    var22 = [1, 1, 1];
-    var9.y = var22;
-    var12.i = var9;
-    var9 = {};
-    var22 = [0.333, 0.333, 0.333];
-    var9.x = var22;
-    var22 = [0, 0, 0];
-    var9.y = var22;
-    var12.o = var9;
-    var12.t = var6;
-    var9 = [86.5, 86.5, 100];
-    var12.s = var9;
-    var9 = new Array(5);
-    var9[0] = var12;
-    var12 = {};
-    var22 = {};
-    var23 = [0.2, 0.2, 0.2];
-    var22.x = var23;
-    var23 = [1, 1, 1];
-    var22.y = var23;
-    var12.i = var22;
-    var22 = {};
-    var23 = [0.508, 0.535, 0.8];
-    var22.x = var23;
-    var23 = [0.024];
-    var24 = -0.017;
-    var23[1] = var24;
-    var23[2] = var6;
-    var22.y = var23;
-    var12.o = var22;
-    var12.t = var21;
-    var21 = [94, 78, 100];
-    var12.s = var21;
-    var9[1] = var12;
-    var12 = {};
-    var21 = {};
-    var22 = [0.833, 0.833, 0.833];
-    var21.x = var22;
-    var22 = [0.833, 0.833, 1];
-    var21.y = var22;
-    var12.i = var21;
-    var21 = {};
-    var22 = [0.8, 0.8, 0.8];
-    var21.x = var22;
-    var22 = [0, 0, 0];
-    var21.y = var22;
-    var12.o = var21;
-    var12.t = var18;
-    var18 = [80, 92, 100];
-    var12.s = var18;
-    var9[2] = var12;
-    var12 = {};
-    var18 = {};
-    var21 = [0.667, 0.667, 0.667];
-    var18.x = var21;
-    var21 = [1, 1, 1];
-    var18.y = var21;
-    var12.i = var18;
-    var18 = {};
-    var21 = [0.167, 0.167, 0.167];
-    var18.x = var21;
-    var21 = [0.167, 0.167, 0];
-    var18.y = var21;
-    var12.o = var18;
-    var12.t = var15;
-    var15 = [94, 78, 100];
-    var12.s = var15;
-    var9[3] = var12;
-    var12 = {};
-    var12.t = var14;
-    var14 = [86.5, 86.5, 100];
-    var12.s = var14;
-    var9[4] = var12;
-    var4.k = var9;
-    var3.s = var4;
-    var2.ks = var3;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 2',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var9 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var3 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var12 = {};
-    var14 = new Array(8);
-    var15 = [5.955, 0];
-    var14[0] = var15;
-    var15 = [0, 0];
-    var14[1] = var15;
-    var15 = [1.795, 5.883];
-    var14[2] = var15;
-    var15 = [0, 0];
-    var14[3] = var15;
-    var15 = new Array(2);
-    var22 = -5.955;
-    var15[0] = var22;
-    var15[1] = var6;
-    var14[4] = var15;
-    var15 = [0, 0];
-    var14[5] = var15;
-    var15 = [0];
-    var15[1] = var22;
-    var14[6] = var15;
-    var15 = [0, 0];
-    var14[7] = var15;
-    var12.i = var14;
-    var14 = new Array(8);
-    var15 = [0, 0];
-    var14[0] = var15;
-    var15 = new Array(2);
-    var15[0] = var22;
-    var15[1] = var6;
-    var14[1] = var15;
-    var15 = [0, 0];
-    var14[2] = var15;
-    var15 = [0];
-    var15[1] = var22;
-    var14[3] = var15;
-    var15 = [0, 0];
-    var14[4] = var15;
-    var15 = [5.955, 0];
-    var14[5] = var15;
-    var15 = [0, 0];
-    var14[6] = var15;
-    var15 = new Array(2);
-    var18 = -2.649;
-    var15[0] = var18;
-    var21 = 6.41;
-    var15[1] = var21;
-    var14[7] = var15;
-    var12.o = var14;
-    var15 = new Array(2);
-    var14 = -795.857;
-    var15[0] = var14;
-    var15[1] = var16;
-    var14 = new Array(8);
-    var14[0] = var15;
-    var15 = new Array(2);
-    var21 = -1105.929;
-    var15[0] = var21;
-    var15[1] = var16;
-    var14[1] = var15;
-    var15 = new Array(2);
-    var16 = -1116.756;
-    var15[0] = var16;
-    var16 = 241.979;
-    var15[1] = var16;
-    var14[2] = var15;
-    var15 = new Array(2);
-    var21 = -1120.756;
-    var15[0] = var21;
-    var21 = 226.646;
-    var15[1] = var21;
-    var14[3] = var15;
-    var15 = new Array(2);
-    var23 = -1109.929;
-    var15[0] = var23;
-    var23 = 215.819;
-    var15[1] = var23;
-    var14[4] = var15;
-    var15 = new Array(2);
-    var24 = -791.857;
-    var15[0] = var24;
-    var15[1] = var23;
-    var14[5] = var15;
-    var15 = new Array(2);
-    var23 = -781.03;
-    var15[0] = var23;
-    var15[1] = var21;
-    var14[6] = var15;
-    var15 = new Array(2);
-    var21 = -785.03;
-    var15[0] = var21;
-    var15[1] = var16;
-    var14[7] = var15;
-    var12.v = var14;
-    var12.c = var10;
-    var3.k = var12;
-    var9.ks = var3;
-    var3 = new Array(3);
-    var3[0] = var9;
-    var9 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var12 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var14 = [1, 0.847058832645, 0.352941185236, 1];
-    var12.k = var14;
-    var9.c = var12;
-    var12 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var9.o = var12;
-    var3[1] = var9;
-    var9 = {};
-    var9.ty = var8;
-    var12 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var14 = [0, 0];
-    var12.k = var14;
-    var9.p = var12;
-    var12 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var14 = [0, 0];
-    var12.k = var14;
-    var9.a = var12;
-    var12 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var14 = [100, 100];
-    var12.k = var14;
-    var9.s = var12;
-    var12 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var9.r = var12;
-    var12 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var9.o = var12;
-    var12 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var9.sk = var12;
-    var12 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var9.sa = var12;
-    var9.nm = var7;
-    var3[2] = var9;
-    var4.it = var3;
-    var3 = new Array(9);
-    var3[0] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 3',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 2,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var12 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var9 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var14 = {};
-    var15 = new Array(8);
-    var16 = [5.955, 0];
-    var15[0] = var16;
-    var16 = [0, 0];
-    var15[1] = var16;
-    var16 = [1.795, 5.513];
-    var15[2] = var16;
-    var16 = [0, 0];
-    var15[3] = var16;
-    var16 = new Array(2);
-    var16[0] = var22;
-    var16[1] = var6;
-    var15[4] = var16;
-    var16 = [0, 0];
-    var15[5] = var16;
-    var16 = [0];
-    var21 = -5.58;
-    var16[1] = var21;
-    var15[6] = var16;
-    var16 = [0, 0];
-    var15[7] = var16;
-    var14.i = var15;
-    var15 = new Array(8);
-    var16 = [0, 0];
-    var15[0] = var16;
-    var16 = new Array(2);
-    var16[0] = var22;
-    var16[1] = var6;
-    var15[1] = var16;
-    var16 = [0, 0];
-    var15[2] = var16;
-    var16 = [0];
-    var16[1] = var21;
-    var15[3] = var16;
-    var16 = [0, 0];
-    var15[4] = var16;
-    var16 = [5.955, 0];
-    var15[5] = var16;
-    var16 = [0, 0];
-    var15[6] = var16;
-    var16 = new Array(2);
-    var16[0] = var18;
-    var18 = 6.007;
-    var16[1] = var18;
-    var15[7] = var16;
-    var14.o = var15;
-    var16 = new Array(2);
-    var15 = -767.756;
-    var16[0] = var15;
-    var18 = 133.577;
-    var16[1] = var18;
-    var15 = new Array(8);
-    var15[0] = var16;
-    var16 = new Array(2);
-    var21 = -1132.828;
-    var16[0] = var21;
-    var16[1] = var18;
-    var15[1] = var16;
-    var16 = new Array(2);
-    var18 = -1143.655;
-    var16[0] = var18;
-    var18 = 123.431;
-    var16[1] = var18;
-    var15[2] = var16;
-    var16 = new Array(2);
-    var16[0] = var19;
-    var19 = 109.063;
-    var16[1] = var19;
-    var15[3] = var16;
-    var16 = new Array(2);
-    var21 = -1136.828;
-    var16[0] = var21;
-    var21 = 98.918;
-    var16[1] = var21;
-    var15[4] = var16;
-    var16 = new Array(2);
-    var22 = -763.756;
-    var16[0] = var22;
-    var16[1] = var21;
-    var15[5] = var16;
-    var16 = new Array(2);
-    var16[0] = var20;
-    var16[1] = var19;
-    var15[6] = var16;
-    var16 = new Array(2);
-    var19 = -756.929;
-    var16[0] = var19;
-    var16[1] = var18;
-    var15[7] = var16;
-    var14.v = var15;
-    var14.c = var10;
-    var9.k = var14;
-    var12.ks = var9;
-    var9 = new Array(3);
-    var9[0] = var12;
-    var12 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var15 = [1, 0.847058832645, 0.352941185236, 1];
-    var14.k = var15;
-    var12.c = var14;
-    var14 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var12.o = var14;
-    var9[1] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var15 = [0, 0];
-    var14.k = var15;
-    var12.p = var14;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var15 = [0, 0];
-    var14.k = var15;
-    var12.a = var14;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var15 = [100, 100];
-    var14.k = var15;
-    var12.s = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var14;
-    var14 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var14;
-    var12.nm = var7;
-    var9[2] = var12;
-    var4.it = var9;
-    var3[1] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 4',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 3,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var12 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var9 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var14 = {};
-    var15 = new Array(4);
-    var16 = [0, 0];
-    var15[0] = var16;
-    var16 = [0, 0];
-    var15[1] = var16;
-    var16 = [0, 0];
-    var15[2] = var16;
-    var16 = [0, 0];
-    var15[3] = var16;
-    var14.i = var15;
-    var15 = new Array(4);
-    var16 = [0, 0];
-    var15[0] = var16;
-    var16 = [0, 0];
-    var15[1] = var16;
-    var16 = [0, 0];
-    var15[2] = var16;
-    var16 = [0, 0];
-    var15[3] = var16;
-    var14.o = var15;
-    var16 = new Array(2);
-    var15 = -823.475;
-    var16[0] = var15;
-    var19 = 230.799;
-    var16[1] = var19;
-    var15 = new Array(4);
-    var15[0] = var16;
-    var16 = new Array(2);
-    var18 = -790.619;
-    var16[0] = var18;
-    var16[1] = var19;
-    var15[1] = var16;
-    var16 = new Array(2);
-    var18 = -766.444;
-    var16[0] = var18;
-    var18 = 126.737;
-    var16[1] = var18;
-    var15[2] = var16;
-    var16 = new Array(2);
-    var20 = -800.3;
-    var16[0] = var20;
-    var16[1] = var18;
-    var15[3] = var16;
-    var14.v = var15;
-    var14.c = var10;
-    var9.k = var14;
-    var12.ks = var9;
-    var9 = new Array(3);
-    var9[0] = var12;
-    var12 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var15 = [0.878431379795, 0.721568644047, 0.282352954149, 1];
-    var14.k = var15;
-    var12.c = var14;
-    var14 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var12.o = var14;
-    var9[1] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var15 = [0, 0];
-    var14.k = var15;
-    var12.p = var14;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var15 = [0, 0];
-    var14.k = var15;
-    var12.a = var14;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var15 = [100, 100];
-    var14.k = var15;
-    var12.s = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var14;
-    var14 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var14;
-    var12.nm = var7;
-    var9[2] = var12;
-    var4.it = var9;
-    var3[2] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 5',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 4,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var12 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var9 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var14 = {};
-    var15 = new Array(4);
-    var16 = [0, 0];
-    var15[0] = var16;
-    var16 = [0, 0];
-    var15[1] = var16;
-    var16 = [0, 0];
-    var15[2] = var16;
-    var16 = [0, 0];
-    var15[3] = var16;
-    var14.i = var15;
-    var15 = new Array(4);
-    var16 = [0, 0];
-    var15[0] = var16;
-    var16 = [0, 0];
-    var15[1] = var16;
-    var16 = [0, 0];
-    var15[2] = var16;
-    var16 = [0, 0];
-    var15[3] = var16;
-    var14.o = var15;
-    var16 = new Array(2);
-    var15 = -829.525;
-    var16[0] = var15;
-    var16[1] = var19;
-    var15 = new Array(4);
-    var15[0] = var16;
-    var16 = new Array(2);
-    var20 = -796.67;
-    var16[0] = var20;
-    var16[1] = var19;
-    var15[1] = var16;
-    var16 = new Array(2);
-    var20 = -775.494;
-    var16[0] = var20;
-    var16[1] = var18;
-    var15[2] = var16;
-    var16 = new Array(2);
-    var20 = -806.35;
-    var16[0] = var20;
-    var16[1] = var18;
-    var15[3] = var16;
-    var14.v = var15;
-    var14.c = var10;
-    var9.k = var14;
-    var12.ks = var9;
-    var9 = new Array(3);
-    var9[0] = var12;
-    var12 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var15 = [0.737254917622, 0.592156887054, 0.23137255013, 1];
-    var14.k = var15;
-    var12.c = var14;
-    var14 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var12.o = var14;
-    var9[1] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var15 = [0, 0];
-    var14.k = var15;
-    var12.p = var14;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var15 = [0, 0];
-    var14.k = var15;
-    var12.a = var14;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var15 = [100, 100];
-    var14.k = var15;
-    var12.s = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var14;
-    var14 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var14;
-    var12.nm = var7;
-    var9[2] = var12;
-    var4.it = var9;
-    var3[3] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 6',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 5,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var12 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var9 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var14 = {};
-    var15 = new Array(4);
-    var16 = [0, 0];
-    var15[0] = var16;
-    var16 = [0, 0];
-    var15[1] = var16;
-    var16 = [0, 0];
-    var15[2] = var16;
-    var16 = [0, 0];
-    var15[3] = var16;
-    var14.i = var15;
-    var15 = new Array(4);
-    var16 = [0, 0];
-    var15[0] = var16;
-    var16 = [0, 0];
-    var15[1] = var16;
-    var16 = [0, 0];
-    var15[2] = var16;
-    var16 = [0, 0];
-    var15[3] = var16;
-    var14.o = var15;
-    var16 = new Array(2);
-    var15 = -1079.564;
-    var16[0] = var15;
-    var16[1] = var19;
-    var15 = new Array(4);
-    var15[0] = var16;
-    var16 = new Array(2);
-    var20 = -1112.42;
-    var16[0] = var20;
-    var16[1] = var19;
-    var15[1] = var16;
-    var16 = new Array(2);
-    var20 = -1136.595;
-    var16[0] = var20;
-    var16[1] = var18;
-    var15[2] = var16;
-    var16 = new Array(2);
-    var20 = -1102.74;
-    var16[0] = var20;
-    var16[1] = var18;
-    var15[3] = var16;
-    var14.v = var15;
-    var14.c = var10;
-    var9.k = var14;
-    var12.ks = var9;
-    var9 = new Array(3);
-    var9[0] = var12;
-    var12 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var15 = [0.878431379795, 0.721568644047, 0.282352954149, 1];
-    var14.k = var15;
-    var12.c = var14;
-    var14 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var12.o = var14;
-    var9[1] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var15 = [0, 0];
-    var14.k = var15;
-    var12.p = var14;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var15 = [0, 0];
-    var14.k = var15;
-    var12.a = var14;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var15 = [100, 100];
-    var14.k = var15;
-    var12.s = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var14;
-    var14 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var14;
-    var12.nm = var7;
-    var9[2] = var12;
-    var4.it = var9;
-    var3[4] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 7',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 6,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var12 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var9 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var14 = {};
-    var15 = new Array(4);
-    var16 = [0, 0];
-    var15[0] = var16;
-    var16 = [0, 0];
-    var15[1] = var16;
-    var16 = [0, 0];
-    var15[2] = var16;
-    var16 = [0, 0];
-    var15[3] = var16;
-    var14.i = var15;
-    var15 = new Array(4);
-    var16 = [0, 0];
-    var15[0] = var16;
-    var16 = [0, 0];
-    var15[1] = var16;
-    var16 = [0, 0];
-    var15[2] = var16;
-    var16 = [0, 0];
-    var15[3] = var16;
-    var14.o = var15;
-    var16 = new Array(2);
-    var15 = -1073.514;
-    var16[0] = var15;
-    var16[1] = var19;
-    var15 = new Array(4);
-    var15[0] = var16;
-    var16 = new Array(2);
-    var20 = -1106.37;
-    var16[0] = var20;
-    var16[1] = var19;
-    var15[1] = var16;
-    var16 = new Array(2);
-    var19 = -1127.545;
-    var16[0] = var19;
-    var16[1] = var18;
-    var15[2] = var16;
-    var16 = new Array(2);
-    var19 = -1096.69;
-    var16[0] = var19;
-    var16[1] = var18;
-    var15[3] = var16;
-    var14.v = var15;
-    var14.c = var10;
-    var9.k = var14;
-    var12.ks = var9;
-    var9 = new Array(3);
-    var9[0] = var12;
-    var12 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var15 = [0.737254917622, 0.592156887054, 0.23137255013, 1];
-    var14.k = var15;
-    var12.c = var14;
-    var14 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var12.o = var14;
-    var9[1] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var15 = [0, 0];
-    var14.k = var15;
-    var12.p = var14;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var15 = [0, 0];
-    var14.k = var15;
-    var12.a = var14;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var15 = [100, 100];
-    var14.k = var15;
-    var12.s = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var14;
-    var14 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var14;
-    var12.nm = var7;
-    var9[2] = var12;
-    var4.it = var9;
-    var3[5] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 8',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 7,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var12 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var9 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var14 = {};
-    var15 = new Array(4);
-    var16 = [0, 0];
-    var15[0] = var16;
-    var16 = [0, 0];
-    var15[1] = var16;
-    var16 = [0, 0];
-    var15[2] = var16;
-    var16 = [0, 0];
-    var15[3] = var16;
-    var14.i = var15;
-    var15 = new Array(4);
-    var16 = [0, 0];
-    var15[0] = var16;
-    var16 = [0, 0];
-    var15[1] = var16;
-    var16 = [0, 0];
-    var15[2] = var16;
-    var16 = [0, 0];
-    var15[3] = var16;
-    var14.o = var15;
-    var16 = new Array(2);
-    var19 = -819.594;
-    var16[0] = var19;
-    var20 = 209.019;
-    var16[1] = var20;
-    var15 = new Array(4);
-    var15[0] = var16;
-    var16 = new Array(2);
-    var18 = -1093.06;
-    var16[0] = var18;
-    var16[1] = var20;
-    var15[1] = var16;
-    var16 = new Array(2);
-    var16[0] = var18;
-    var18 = 235.639;
-    var16[1] = var18;
-    var15[2] = var16;
-    var16 = new Array(2);
-    var16[0] = var19;
-    var16[1] = var18;
-    var15[3] = var16;
-    var14.v = var15;
-    var14.c = var10;
-    var9.k = var14;
-    var12.ks = var9;
-    var9 = new Array(3);
-    var9[0] = var12;
-    var12 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var15 = [0.737254917622, 0.592156887054, 0.23137255013, 1];
-    var14.k = var15;
-    var12.c = var14;
-    var14 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var12.o = var14;
-    var9[1] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var15 = [0, 0];
-    var14.k = var15;
-    var12.p = var14;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var15 = [0, 0];
-    var14.k = var15;
-    var12.a = var14;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var15 = [100, 100];
-    var14.k = var15;
-    var12.s = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var14;
-    var14 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var14;
-    var12.nm = var7;
-    var9[2] = var12;
-    var4.it = var9;
-    var3[6] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 9',
-        'np': 4,
-        'cix': 2,
-        'bm': 0,
-        'ix': 8,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var14 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var9 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var15 = {};
-    var16 = new Array(2);
-    var18 = [0, 0];
-    var16[0] = var18;
-    var18 = [0, 0];
-    var16[1] = var18;
-    var15.i = var16;
-    var16 = new Array(2);
-    var18 = [0, 0];
-    var16[0] = var18;
-    var18 = [0, 0];
-    var16[1] = var18;
-    var15.o = var16;
-    var18 = new Array(2);
-    var16 = -918.245;
-    var18[0] = var16;
-    var19 = 193.116;
-    var18[1] = var19;
-    var16 = new Array(2);
-    var16[0] = var18;
-    var18 = new Array(2);
-    var20 = -859.075;
-    var18[0] = var20;
-    var18[1] = var19;
-    var16[1] = var18;
-    var15.v = var16;
-    var15.c = var17;
-    var9.k = var15;
-    var14.ks = var9;
-    var9 = new Array(3);
-    var9[0] = var14;
-    var14 = {
-        'ty': 'st',
-        'c': null,
-        'o': null,
-        'w': null,
-        'lc': 2,
-        'lj': 2,
-        'bm': 0,
-        'nm': 'Stroke 1',
-        'mn': 'ADBE Vector Graphic - Stroke',
-        'hd': false
-    };
-    var15 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var16 = [0.698039233685, 0.458823531866, 0.364705890417, 1];
-    var15.k = var16;
-    var14.c = var15;
-    var15 = {
-        'a': 0,
-        'k': 100,
-        'ix': 4
-    };
-    var14.o = var15;
-    var15 = {
-        'a': 0,
-        'k': 3,
-        'ix': 5
-    };
-    var14.w = var15;
-    var9[1] = var14;
-    var14 = {};
-    var14.ty = var8;
-    var15 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = [0, 0];
-    var15.k = var16;
-    var14.p = var15;
-    var15 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var16 = [0, 0];
-    var15.k = var16;
-    var14.a = var15;
-    var15 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var16 = [100, 100];
-    var15.k = var16;
-    var14.s = var15;
-    var15 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var14.r = var15;
-    var15 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var14.o = var15;
-    var15 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var14.sk = var15;
-    var15 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var14.sa = var15;
-    var14.nm = var7;
-    var9[2] = var14;
-    var12.it = var9;
-    var9 = new Array(5);
-    var9[0] = var12;
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 3',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 2,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var15 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = {};
-    var18 = new Array(2);
-    var19 = [0, 0];
-    var18[0] = var19;
-    var19 = [0, 0];
-    var18[1] = var19;
-    var16.i = var18;
-    var18 = new Array(2);
-    var19 = [0, 0];
-    var18[0] = var19;
-    var19 = [0, 0];
-    var18[1] = var19;
-    var16.o = var18;
-    var19 = new Array(2);
-    var18 = -864.868;
-    var19[0] = var18;
-    var20 = 153.533;
-    var19[1] = var20;
-    var18 = new Array(2);
-    var18[0] = var19;
-    var19 = new Array(2);
-    var21 = -805.698;
-    var19[0] = var21;
-    var19[1] = var20;
-    var18[1] = var19;
-    var16.v = var18;
-    var16.c = var17;
-    var14.k = var16;
-    var15.ks = var14;
-    var14 = new Array(3);
-    var14[0] = var15;
-    var15 = {
-        'ty': 'st',
-        'c': null,
-        'o': null,
-        'w': null,
-        'lc': 2,
-        'lj': 2,
-        'bm': 0,
-        'nm': 'Stroke 1',
-        'mn': 'ADBE Vector Graphic - Stroke',
-        'hd': false
-    };
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var18 = [0.698039233685, 0.458823531866, 0.364705890417, 1];
-    var16.k = var18;
-    var15.c = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 4
-    };
-    var15.o = var16;
-    var16 = {
-        'a': 0,
-        'k': 3,
-        'ix': 5
-    };
-    var15.w = var16;
-    var14[1] = var15;
-    var15 = {};
-    var15.ty = var8;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var18 = [0, 0];
-    var16.k = var18;
-    var15.p = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var18 = [0, 0];
-    var16.k = var18;
-    var15.a = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var18 = [100, 100];
-    var16.k = var18;
-    var15.s = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var15.r = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var15.o = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var15.sk = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var15.sa = var16;
-    var15.nm = var7;
-    var14[2] = var15;
-    var12.it = var14;
-    var9[1] = var12;
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 5',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 3,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var15 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = {};
-    var18 = new Array(2);
-    var19 = [0, 0];
-    var18[0] = var19;
-    var19 = [0, 0];
-    var18[1] = var19;
-    var16.i = var18;
-    var18 = new Array(2);
-    var19 = [0, 0];
-    var18[0] = var19;
-    var19 = [0, 0];
-    var18[1] = var19;
-    var16.o = var18;
-    var19 = new Array(2);
-    var18 = -1093.306;
-    var19[0] = var18;
-    var20 = 150.466;
-    var19[1] = var20;
-    var18 = new Array(2);
-    var18[0] = var19;
-    var19 = new Array(2);
-    var21 = -1051.999;
-    var19[0] = var21;
-    var19[1] = var20;
-    var18[1] = var19;
-    var16.v = var18;
-    var16.c = var17;
-    var14.k = var16;
-    var15.ks = var14;
-    var14 = new Array(3);
-    var14[0] = var15;
-    var15 = {
-        'ty': 'st',
-        'c': null,
-        'o': null,
-        'w': null,
-        'lc': 2,
-        'lj': 2,
-        'bm': 0,
-        'nm': 'Stroke 1',
-        'mn': 'ADBE Vector Graphic - Stroke',
-        'hd': false
-    };
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var18 = [0.698039233685, 0.458823531866, 0.364705890417, 1];
-    var16.k = var18;
-    var15.c = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 4
-    };
-    var15.o = var16;
-    var16 = {
-        'a': 0,
-        'k': 3,
-        'ix': 5
-    };
-    var15.w = var16;
-    var14[1] = var15;
-    var15 = {};
-    var15.ty = var8;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var18 = [0, 0];
-    var16.k = var18;
-    var15.p = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var18 = [0, 0];
-    var16.k = var18;
-    var15.a = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var18 = [100, 100];
-    var16.k = var18;
-    var15.s = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var15.r = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var15.o = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var15.sk = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var15.sa = var16;
-    var15.nm = var7;
-    var14[2] = var15;
-    var12.it = var14;
-    var9[2] = var12;
-    var12 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 8',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 4,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var15 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var16 = {};
-    var18 = new Array(2);
-    var19 = [0, 0];
-    var18[0] = var19;
-    var19 = [0, 0];
-    var18[1] = var19;
-    var16.i = var18;
-    var18 = new Array(2);
-    var19 = [0, 0];
-    var18[0] = var19;
-    var19 = [0, 0];
-    var18[1] = var19;
-    var16.o = var18;
-    var19 = new Array(2);
-    var18 = -987.763;
-    var19[0] = var18;
-    var20 = 183.879;
-    var19[1] = var20;
-    var18 = new Array(2);
-    var18[0] = var19;
-    var19 = new Array(2);
-    var21 = -1050.282;
-    var19[0] = var21;
-    var19[1] = var20;
-    var18[1] = var19;
-    var16.v = var18;
-    var16.c = var17;
-    var14.k = var16;
-    var15.ks = var14;
-    var14 = new Array(3);
-    var14[0] = var15;
-    var15 = {
-        'ty': 'st',
-        'c': null,
-        'o': null,
-        'w': null,
-        'lc': 2,
-        'lj': 2,
-        'bm': 0,
-        'nm': 'Stroke 1',
-        'mn': 'ADBE Vector Graphic - Stroke',
-        'hd': false
-    };
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var17 = [0.698039233685, 0.458823531866, 0.364705890417, 1];
-    var16.k = var17;
-    var15.c = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 4
-    };
-    var15.o = var16;
-    var16 = {
-        'a': 0,
-        'k': 3,
-        'ix': 5
-    };
-    var15.w = var16;
-    var14[1] = var15;
-    var15 = {};
-    var15.ty = var8;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var17 = [0, 0];
-    var16.k = var17;
-    var15.p = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var17 = [0, 0];
-    var16.k = var17;
-    var15.a = var16;
-    var16 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var17 = [100, 100];
-    var16.k = var17;
-    var15.s = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var15.r = var16;
-    var16 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var15.o = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var15.sk = var16;
-    var16 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var15.sa = var16;
-    var15.nm = var7;
-    var14[2] = var15;
-    var12.it = var14;
-    var9[3] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var15 = [0, 0];
-    var14.k = var15;
-    var12.p = var14;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var15 = [0, 0];
-    var14.k = var15;
-    var12.a = var14;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var15 = [100, 100];
-    var14.k = var15;
-    var12.s = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var14;
-    var14 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var14;
-    var12.nm = var7;
-    var9[4] = var12;
-    var4.it = var9;
-    var3[7] = var4;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 10',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 9,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var12 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var9 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var14 = {};
-    var15 = new Array(6);
-    var16 = [0, 0];
-    var15[0] = var16;
-    var16 = [0, 0];
-    var15[1] = var16;
-    var16 = [0, 0];
-    var15[2] = var16;
-    var16 = [0, 0];
-    var15[3] = var16;
-    var16 = [0, 0];
-    var15[4] = var16;
-    var16 = [0, 0];
-    var15[5] = var16;
-    var14.i = var15;
-    var15 = new Array(6);
-    var16 = [0, 0];
-    var15[0] = var16;
-    var16 = [0, 0];
-    var15[1] = var16;
-    var16 = [0, 0];
-    var15[2] = var16;
-    var16 = [0, 0];
-    var15[3] = var16;
-    var16 = [0, 0];
-    var15[4] = var16;
-    var16 = [0, 0];
-    var15[5] = var16;
-    var14.o = var15;
-    var16 = new Array(2);
-    var15 = -1102.395;
-    var16[0] = var15;
-    var17 = 124.282;
-    var16[1] = var17;
-    var15 = new Array(6);
-    var15[0] = var16;
-    var16 = new Array(2);
-    var18 = -797.642;
-    var16[0] = var18;
-    var16[1] = var17;
-    var15[1] = var16;
-    var16 = new Array(2);
-    var17 = -803.798;
-    var16[0] = var17;
-    var17 = 198.153;
-    var16[1] = var17;
-    var15[2] = var16;
-    var16 = new Array(2);
-    var17 = -833.344;
-    var16[0] = var17;
-    var17 = 232.626;
-    var16[1] = var17;
-    var15[3] = var16;
-    var16 = new Array(2);
-    var18 = -1075.619;
-    var16[0] = var18;
-    var16[1] = var17;
-    var15[4] = var16;
-    var16 = new Array(2);
-    var17 = -1100.438;
-    var16[0] = var17;
-    var17 = 198.768;
-    var16[1] = var17;
-    var15[5] = var16;
-    var14.v = var15;
-    var14.c = var10;
-    var9.k = var14;
-    var12.ks = var9;
-    var9 = new Array(3);
-    var9[0] = var12;
-    var12 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var15 = [0.588235318661, 0.349019616842, 0.243137255311, 1];
-    var14.k = var15;
-    var12.c = var14;
-    var14 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var12.o = var14;
-    var9[1] = var12;
-    var12 = {};
-    var12.ty = var8;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var15 = [0, 0];
-    var14.k = var15;
-    var12.p = var14;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var15 = [0, 0];
-    var14.k = var15;
-    var12.a = var14;
-    var14 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var15 = [100, 100];
-    var14.k = var15;
-    var12.s = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var12.r = var14;
-    var14 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var12.o = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var12.sk = var14;
-    var14 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var12.sa = var14;
-    var12.nm = var7;
-    var9[2] = var12;
-    var4.it = var9;
-    var3[8] = var4;
-    var2.shapes = var3;
-    var0[26] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 30,
-        'ty': 4,
-        'nm': 'Cofre_BG',
-        'parent': 29,
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'shapes': null,
-        'ip': 0,
-        'op': 96,
-        'st': 0,
-        'ct': 1,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 0,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 2,
-        'l': 2
-    };
-    var9 = new Array(3);
-    var14 = -951.688;
-    var9[0] = var14;
-    var12 = 97.092;
-    var9[1] = var12;
-    var9[2] = var6;
-    var4.k = var9;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1,
-        'l': 2
-    };
-    var9 = new Array(3);
-    var9[0] = var14;
-    var9[1] = var12;
-    var9[2] = var6;
-    var4.k = var9;
-    var3.a = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 6,
-        'l': 2
-    };
-    var9 = [100, 100, 100];
-    var4.k = var9;
-    var3.s = var4;
-    var2.ks = var3;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var9 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var3 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var12 = {};
-    var14 = new Array(4);
-    var15 = [0, 0];
-    var14[0] = var15;
-    var15 = [0, 0];
-    var14[1] = var15;
-    var15 = [0, 0];
-    var14[2] = var15;
-    var15 = [0, 0];
-    var14[3] = var15;
-    var12.i = var14;
-    var14 = new Array(4);
-    var15 = [0, 0];
-    var14[0] = var15;
-    var15 = [0, 0];
-    var14[1] = var15;
-    var15 = [0, 0];
-    var14[2] = var15;
-    var15 = [0, 0];
-    var14[3] = var15;
-    var12.o = var14;
-    var15 = new Array(2);
-    var17 = -761.419;
-    var15[0] = var17;
-    var18 = 108.85;
-    var15[1] = var18;
-    var14 = new Array(4);
-    var14[0] = var15;
-    var15 = new Array(2);
-    var16 = -1141.956;
-    var15[0] = var16;
-    var15[1] = var18;
-    var14[1] = var15;
-    var15 = new Array(2);
-    var15[0] = var16;
-    var16 = 85.334;
-    var15[1] = var16;
-    var14[2] = var15;
-    var15 = new Array(2);
-    var15[0] = var17;
-    var15[1] = var16;
-    var14[3] = var15;
-    var12.v = var14;
-    var12.c = var10;
-    var3.k = var12;
-    var9.ks = var3;
-    var3 = new Array(3);
-    var3[0] = var9;
-    var9 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var12 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var14 = [0.20000000298, 0.164705887437, 0.149019613862, 1];
-    var12.k = var14;
-    var9.c = var12;
-    var12 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var9.o = var12;
-    var3[1] = var9;
-    var9 = {};
-    var9.ty = var8;
-    var12 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var14 = [0, 0];
-    var12.k = var14;
-    var9.p = var12;
-    var12 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var14 = [0, 0];
-    var12.k = var14;
-    var9.a = var12;
-    var12 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var14 = [100, 100];
-    var12.k = var14;
-    var9.s = var12;
-    var12 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var9.r = var12;
-    var12 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var9.o = var12;
-    var12 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var9.sk = var12;
-    var12 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var9.sa = var12;
-    var9.nm = var7;
-    var3[2] = var9;
-    var4.it = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var2.shapes = var3;
-    var0[27] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 31,
-        'ty': 4,
-        'nm': 'R_Arm',
-        'parent': 23,
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'shapes': null,
-        'ip': 0,
-        'op': 96,
-        'st': 0,
-        'ct': 1,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 1,
-        'k': null,
-        'ix': 10
-    };
-    var9 = {};
-    var12 = {};
-    var14 = [0];
-    var12.x = var14;
-    var14 = [1];
-    var12.y = var14;
-    var9.i = var12;
-    var12 = {};
-    var14 = [0.333];
-    var12.x = var14;
-    var14 = [0];
-    var12.y = var14;
-    var9.o = var12;
-    var9.t = var5;
-    var5 = new Array(1);
-    var12 = -52;
-    var5[0] = var12;
-    var9.s = var5;
-    var5 = new Array(3);
-    var5[0] = var9;
-    var9 = {};
-    var14 = {};
-    var15 = [0.667];
-    var14.x = var15;
-    var15 = [1];
-    var14.y = var15;
-    var9.i = var14;
-    var14 = {};
-    var15 = [0.167];
-    var14.x = var15;
-    var15 = [0];
-    var14.y = var15;
-    var9.o = var14;
-    var9.t = var13;
-    var13 = new Array(1);
-    var14 = -34;
-    var13[0] = var14;
-    var9.s = var13;
-    var5[1] = var9;
-    var9 = {};
-    var9.t = var11;
-    var11 = new Array(1);
-    var11[0] = var12;
-    var9.s = var11;
-    var5[2] = var9;
-    var4.k = var5;
-    var3.r = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 2,
-        'l': 2
-    };
-    var5 = [211, 22, 0];
-    var4.k = var5;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1,
-        'l': 2
-    };
-    var5 = [199, 22, 0];
-    var4.k = var5;
-    var3.a = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 6,
-        'l': 2
-    };
-    var5 = [100, 100, 100];
-    var4.k = var5;
-    var3.s = var4;
-    var2.ks = var3;
-    var4 = {
-        'ty': 'gr',
-        'it': null,
-        'nm': 'Group 1',
-        'np': 2,
-        'cix': 2,
-        'bm': 0,
-        'ix': 1,
-        'mn': 'ADBE Vector Group',
-        'hd': false
-    };
-    var5 = {
-        'ind': 0,
-        'ty': 'sh',
-        'ix': 1,
-        'ks': null,
-        'nm': 'Path 1',
-        'mn': 'ADBE Vector Shape - Group',
-        'hd': false
-    };
-    var3 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var9 = {};
-    var11 = new Array(8);
-    var12 = [0, 0];
-    var11[0] = var12;
-    var12 = [17.005];
-    var13 = -1.894;
-    var12[1] = var13;
-    var11[1] = var12;
-    var12 = [6.93, 2.908];
-    var11[2] = var12;
-    var12 = [9.273];
-    var13 = -3.088;
-    var12[1] = var13;
-    var11[3] = var12;
-    var12 = [2.735];
-    var13 = -8.203;
-    var12[1] = var13;
-    var11[4] = var12;
-    var12 = new Array(2);
-    var13 = -31.25;
-    var12[0] = var13;
-    var13 = -6.922;
-    var12[1] = var13;
-    var11[5] = var12;
-    var12 = new Array(2);
-    var13 = -18.553;
-    var12[0] = var13;
-    var13 = 24.665;
-    var12[1] = var13;
-    var11[6] = var12;
-    var12 = [7.222, 4.531];
-    var11[7] = var12;
-    var9.i = var11;
-    var11 = new Array(8);
-    var12 = [0, 0];
-    var11[0] = var12;
-    var12 = new Array(2);
-    var13 = -7.502;
-    var12[0] = var13;
-    var13 = 0.836;
-    var12[1] = var13;
-    var11[1] = var12;
-    var12 = new Array(2);
-    var13 = -8.142;
-    var12[0] = var13;
-    var13 = -3.417;
-    var12[1] = var13;
-    var11[2] = var12;
-    var12 = new Array(2);
-    var13 = -8.481;
-    var12[0] = var13;
-    var13 = 2.825;
-    var12[1] = var13;
-    var11[3] = var12;
-    var12 = new Array(2);
-    var13 = -6.819;
-    var12[0] = var13;
-    var13 = 20.452;
-    var12[1] = var13;
-    var11[4] = var12;
-    var12 = [31.25, 6.922];
-    var11[5] = var12;
-    var12 = [13.173];
-    var13 = -17.513;
-    var12[1] = var13;
-    var11[6] = var12;
-    var12 = new Array(2);
-    var13 = -15.984;
-    var12[0] = var13;
-    var13 = -10.028;
-    var12[1] = var13;
-    var11[7] = var12;
-    var9.o = var11;
-    var11 = new Array(8);
-    var12 = [184.037, 4.293];
-    var11[0] = var12;
-    var12 = [143.318, 20.921];
-    var11[1] = var12;
-    var12 = [121.424, 17.5];
-    var11[2] = var12;
-    var12 = [96.93, 11.26];
-    var11[3] = var12;
-    var12 = [80.252, 29.903];
-    var11[4] = var12;
-    var12 = [117.07, 79.236];
-    var11[5] = var12;
-    var12 = [214.242, 41.119];
-    var11[6] = var12;
-    var12 = [215.128, 2.212];
-    var11[7] = var12;
-    var9.v = var11;
-    var9.c = var10;
-    var3.k = var9;
-    var5.ks = var3;
-    var3 = new Array(3);
-    var3[0] = var5;
-    var5 = {
-        'ty': 'fl',
-        'c': null,
-        'o': null,
-        'r': 1,
-        'bm': 0,
-        'nm': 'Fill 1',
-        'mn': 'ADBE Vector Graphic - Fill',
-        'hd': false
-    };
-    var9 = {
-        'a': 0,
-        'k': null,
-        'ix': 4
-    };
-    var10 = [0.305882364511, 0.352941185236, 0.909803926945, 1];
-    var9.k = var10;
-    var5.c = var9;
-    var9 = {
-        'a': 0,
-        'k': 100,
-        'ix': 5
-    };
-    var5.o = var9;
-    var3[1] = var5;
-    var5 = {};
-    var5.ty = var8;
-    var8 = {
-        'a': 0,
-        'k': null,
-        'ix': 2
-    };
-    var9 = [0, 0];
-    var8.k = var9;
-    var5.p = var8;
-    var8 = {
-        'a': 0,
-        'k': null,
-        'ix': 1
-    };
-    var9 = [0, 0];
-    var8.k = var9;
-    var5.a = var8;
-    var8 = {
-        'a': 0,
-        'k': null,
-        'ix': 3
-    };
-    var9 = [100, 100];
-    var8.k = var9;
-    var5.s = var8;
-    var8 = {
-        'a': 0,
-        'k': 0,
-        'ix': 6
-    };
-    var5.r = var8;
-    var8 = {
-        'a': 0,
-        'k': 100,
-        'ix': 7
-    };
-    var5.o = var8;
-    var8 = {
-        'a': 0,
-        'k': 0,
-        'ix': 4
-    };
-    var5.sk = var8;
-    var8 = {
-        'a': 0,
-        'k': 0,
-        'ix': 5
-    };
-    var5.sa = var8;
-    var5.nm = var7;
-    var3[2] = var5;
-    var4.it = var3;
-    var3 = new Array(1);
-    var3[0] = var4;
-    var2.shapes = var3;
-    var0[28] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 32,
-        'ty': 0,
-        'nm': 'DIS_Nitro_Gifcard_003',
-        'parent': 33,
-        'refId': 'comp_0',
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'w': 815,
-        'h': 435,
-        'ip': 0,
-        'op': 96,
-        'st': 0,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 0,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 2,
-        'l': 2
-    };
-    var5 = new Array(3);
-    var7 = -9.654;
-    var5[0] = var7;
-    var7 = 39.262;
-    var5[1] = var7;
-    var5[2] = var6;
-    var4.k = var5;
-    var3.p = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 1,
-        'l': 2
-    };
-    var5 = [407.5, 217.5, 0];
-    var4.k = var5;
-    var3.a = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 6,
-        'l': 2
-    };
-    var5 = [100, 100, 100];
-    var4.k = var5;
-    var3.s = var4;
-    var2.ks = var3;
-    var0[29] = var2;
-    var2 = {
-        'ddd': 0,
-        'ind': 33,
-        'ty': 3,
-        'nm': 'Background 3',
-        'sr': 1,
-        'ks': null,
-        'ao': 0,
-        'ip': 0,
-        'op': 96,
-        'st': 0,
-        'ct': 1,
-        'bm': 0
-    };
-    var3 = {};
-    var4 = {
-        'a': 0,
-        'k': 100,
-        'ix': 11
-    };
-    var3.o = var4;
-    var4 = {
-        'a': 0,
-        'k': 0,
-        'ix': 10
-    };
-    var3.r = var4;
-    var4 = {
-        'a': 0,
-        'k': null,
-        'ix': 2,
-        'l': 2
-    };
-    var5 = [459.654, 344.738, 0];
+    var5 = [390, 300, 0];
     var4.k = var5;
     var3.p = var4;
     var4 = {
@@ -28662,9 +2905,15769 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var4.k = var5;
     var3.s = var4;
     var2.ks = var3;
-    var0[30] = var2;
+    var0[1] = var2;
+    var2 = {
+        'ddd': 0,
+        'ind': 3,
+        'ty': 3,
+        'nm': 'C | Cup',
+        'parent': 2,
+        'sr': 1,
+        'ks': null,
+        'ao': 0,
+        'ip': 0,
+        'op': 120,
+        'st': 0,
+        'bm': 0
+    };
+    var3 = {};
+    var4 = {
+        'a': 0,
+        'k': 0,
+        'ix': 11
+    };
+    var3.o = var4;
+    var4 = {
+        'a': 1,
+        'k': null,
+        'ix': 10
+    };
+    var6 = {};
+    var5 = {};
+    var10 = [0.667];
+    var5.x = var10;
+    var10 = [0.601];
+    var5.y = var10;
+    var6.i = var5;
+    var5 = {};
+    var10 = [0.333];
+    var5.x = var10;
+    var10 = [0];
+    var5.y = var10;
+    var6.o = var5;
+    var6.t = var15;
+    var5 = [0];
+    var6.s = var5;
+    var5 = new Array(4);
+    var5[0] = var6;
+    var6 = {};
+    var10 = {};
+    var16 = [0.667];
+    var10.x = var16;
+    var16 = [1];
+    var10.y = var16;
+    var6.i = var10;
+    var10 = {};
+    var16 = [0.333];
+    var10.x = var16;
+    var16 = [0.539];
+    var10.y = var16;
+    var6.o = var10;
+    var17 = 12;
+    var6.t = var17;
+    var10 = [12.284];
+    var6.s = var10;
+    var5[1] = var6;
+    var6 = {};
+    var10 = {};
+    var16 = [0.287];
+    var10.x = var16;
+    var16 = [0.992];
+    var10.y = var16;
+    var6.i = var10;
+    var10 = {};
+    var16 = [0.333];
+    var10.x = var16;
+    var16 = [0];
+    var10.y = var16;
+    var6.o = var10;
+    var16 = 31;
+    var6.t = var16;
+    var10 = [26.701];
+    var6.s = var10;
+    var5[2] = var6;
+    var6 = {};
+    var30 = 45;
+    var6.t = var30;
+    var10 = [0];
+    var6.s = var10;
+    var5[3] = var6;
+    var4.k = var5;
+    var3.r = var4;
+    var4 = {
+        'a': 1,
+        'k': null,
+        'ix': 2,
+        'l': 2
+    };
+    var6 = {};
+    var5 = {
+        'x': 0.235,
+        'y': 1
+    };
+    var6.i = var5;
+    var5 = {
+        'x': 0.333,
+        'y': 0
+    };
+    var6.o = var5;
+    var6.t = var15;
+    var5 = [55.013, 300, 0];
+    var6.s = var5;
+    var5 = new Array(3);
+    var10 = -5.917;
+    var5[0] = var10;
+    var10 = -19.25;
+    var5[1] = var10;
+    var5[2] = var15;
+    var6.to = var5;
+    var5 = new Array(3);
+    var10 = -19.583;
+    var5[0] = var10;
+    var10 = 27.25;
+    var5[1] = var10;
+    var5[2] = var15;
+    var6.ti = var5;
+    var5 = new Array(4);
+    var5[0] = var6;
+    var6 = {};
+    var10 = {
+        'x': 0.667,
+        'y': 1
+    };
+    var6.i = var10;
+    var10 = {
+        'x': 0.333,
+        'y': 0
+    };
+    var6.o = var10;
+    var6.t = var17;
+    var10 = [64.013, 209, 0];
+    var6.s = var10;
+    var10 = [0.483];
+    var10[1] = var12;
+    var10[2] = var15;
+    var6.to = var10;
+    var10 = new Array(3);
+    var12 = -0.083;
+    var10[0] = var12;
+    var12 = 0.25;
+    var10[1] = var12;
+    var10[2] = var15;
+    var6.ti = var10;
+    var5[1] = var6;
+    var6 = {};
+    var10 = {
+        'x': 0.287,
+        'y': 1
+    };
+    var6.i = var10;
+    var10 = {
+        'x': 0.57,
+        'y': 0
+    };
+    var6.o = var10;
+    var6.t = var16;
+    var10 = [60.013, 184, 0];
+    var6.s = var10;
+    var10 = new Array(3);
+    var12 = -27.652;
+    var10[0] = var12;
+    var12 = 53.893;
+    var10[1] = var12;
+    var10[2] = var15;
+    var6.to = var10;
+    var10 = [1.91, 12.278, 0];
+    var6.ti = var10;
+    var5[2] = var6;
+    var6 = {};
+    var6.t = var30;
+    var10 = [55.013, 300, 0];
+    var6.s = var10;
+    var5[3] = var6;
+    var4.k = var5;
+    var3.p = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 1,
+        'l': 2
+    };
+    var5 = [250, 500, 0];
+    var4.k = var5;
+    var3.a = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 6,
+        'l': 2
+    };
+    var5 = [57, 57, 100];
+    var4.k = var5;
+    var3.s = var4;
+    var2.ks = var3;
+    var0[2] = var2;
+    var2 = {
+        'ddd': 0,
+        'ind': 4,
+        'ty': 4,
+        'nm': 'Cup Arm',
+        'parent': 7,
+        'sr': 1,
+        'ks': null,
+        'ao': 0,
+        'shapes': null,
+        'ip': 0,
+        'op': 120,
+        'st': 0,
+        'ct': 1,
+        'bm': 0
+    };
+    var3 = {};
+    var4 = {
+        'a': 0,
+        'k': 100,
+        'ix': 11
+    };
+    var3.o = var4;
+    var4 = {
+        'a': 0,
+        'k': 0,
+        'ix': 10
+    };
+    var3.r = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 2,
+        'l': 2
+    };
+    var5 = [358.897, 148.094, 0];
+    var4.k = var5;
+    var3.p = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 1,
+        'l': 2
+    };
+    var5 = [122.989, 148.679, 0];
+    var4.k = var5;
+    var3.a = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 6,
+        'l': 2
+    };
+    var5 = [100, 100, 100];
+    var4.k = var5;
+    var3.s = var4;
+    var2.ks = var3;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 1',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 1,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var5 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var3 = {
+        'a': 1,
+        'k': null,
+        'ix': 2
+    };
+    var10 = {};
+    var6 = {
+        'x': 0.246,
+        'y': 1
+    };
+    var10.i = var6;
+    var6 = {
+        'x': 0.333,
+        'y': 0
+    };
+    var10.o = var6;
+    var10.t = var15;
+    var19 = {};
+    var12 = new Array(2);
+    var57 = -3.604;
+    var12[0] = var57;
+    var20 = 0.209;
+    var12[1] = var20;
+    var6 = new Array(8);
+    var6[0] = var12;
+    var12 = [1.144, 1.575];
+    var6[1] = var12;
+    var12 = [2.384, 2.502];
+    var6[2] = var12;
+    var12 = [2.291, 1.827];
+    var6[3] = var12;
+    var12 = [1.66, 0.098];
+    var6[4] = var12;
+    var12 = new Array(2);
+    var56 = -1.396;
+    var12[0] = var56;
+    var55 = -1.994;
+    var12[1] = var55;
+    var6[5] = var12;
+    var12 = new Array(2);
+    var54 = -1.803;
+    var12[0] = var54;
+    var53 = -2.288;
+    var12[1] = var53;
+    var6[6] = var12;
+    var12 = new Array(2);
+    var52 = -1.886;
+    var12[0] = var52;
+    var51 = -2.782;
+    var12[1] = var51;
+    var6[7] = var12;
+    var19.i = var6;
+    var21 = [3.415];
+    var12 = -0.198;
+    var21[1] = var12;
+    var6 = new Array(8);
+    var6[0] = var21;
+    var21 = new Array(2);
+    var48 = -1.058;
+    var21[0] = var48;
+    var46 = -1.457;
+    var21[1] = var46;
+    var6[1] = var21;
+    var21 = new Array(2);
+    var43 = -1.219;
+    var21[0] = var43;
+    var42 = -1.28;
+    var21[1] = var42;
+    var6[2] = var21;
+    var21 = new Array(2);
+    var38 = -2.291;
+    var21[0] = var38;
+    var37 = -1.827;
+    var21[1] = var37;
+    var6[3] = var21;
+    var21 = new Array(2);
+    var36 = -2.135;
+    var21[0] = var36;
+    var40 = -0.127;
+    var21[1] = var40;
+    var6[4] = var21;
+    var21 = [0.453, 0.648];
+    var6[5] = var21;
+    var21 = [2.123, 2.694];
+    var6[6] = var21;
+    var21 = [1.605, 2.367];
+    var6[7] = var21;
+    var19.o = var6;
+    var6 = new Array(8);
+    var21 = [197.211, 9.903];
+    var6[0] = var21;
+    var21 = [197.771, 4.207];
+    var6[1] = var21;
+    var21 = [192.869];
+    var32 = -1.35;
+    var21[1] = var32;
+    var6[2] = var21;
+    var21 = [187.968];
+    var28 = -5.834;
+    var21[1] = var28;
+    var6[3] = var21;
+    var21 = [180.941];
+    var27 = -9.028;
+    var21[1] = var27;
+    var6[4] = var21;
+    var21 = [178.557];
+    var22 = -6.393;
+    var21[1] = var22;
+    var6[5] = var21;
+    var49 = [182.984];
+    var21 = -1.083;
+    var49[1] = var21;
+    var6[6] = var49;
+    var49 = [189.793, 7.333];
+    var6[7] = var49;
+    var19.v = var6;
+    var19.c = var14;
+    var6 = new Array(1);
+    var6[0] = var19;
+    var10.s = var6;
+    var6 = new Array(4);
+    var6[0] = var10;
+    var10 = {};
+    var19 = {
+        'x': 0.246,
+        'y': 1
+    };
+    var10.i = var19;
+    var19 = {
+        'x': 0.665,
+        'y': 0
+    };
+    var10.o = var19;
+    var10.t = var17;
+    var75 = {};
+    var49 = new Array(2);
+    var85 = -3.362;
+    var49[0] = var85;
+    var61 = 0.601;
+    var49[1] = var61;
+    var19 = new Array(8);
+    var19[0] = var49;
+    var49 = [0.953, 1.734];
+    var19[1] = var49;
+    var49 = [1.814, 2.221];
+    var19[2] = var49;
+    var49 = [2.272, 2.149];
+    var19[3] = var49;
+    var49 = [2.1, 0.432];
+    var19[4] = var49;
+    var49 = new Array(2);
+    var84 = -1.248;
+    var49[0] = var84;
+    var83 = -1.57;
+    var49[1] = var83;
+    var19[5] = var49;
+    var49 = new Array(2);
+    var81 = -1.664;
+    var49[0] = var81;
+    var80 = -2.466;
+    var49[1] = var80;
+    var19[6] = var49;
+    var49 = new Array(2);
+    var77 = -1.666;
+    var49[0] = var77;
+    var76 = -3.021;
+    var49[1] = var76;
+    var19[7] = var49;
+    var75.i = var19;
+    var63 = [3.265];
+    var19 = -0.594;
+    var63[1] = var19;
+    var49 = new Array(8);
+    var49[0] = var63;
+    var63 = new Array(2);
+    var74 = -0.881;
+    var63[0] = var74;
+    var73 = -1.604;
+    var63[1] = var73;
+    var49[1] = var63;
+    var63 = new Array(2);
+    var72 = -1.167;
+    var63[0] = var72;
+    var71 = -1.509;
+    var63[1] = var71;
+    var49[2] = var63;
+    var63 = new Array(2);
+    var70 = -2.18;
+    var63[0] = var70;
+    var69 = -2.048;
+    var63[1] = var69;
+    var49[3] = var63;
+    var63 = new Array(2);
+    var68 = -2.336;
+    var63[0] = var68;
+    var67 = -0.446;
+    var63[1] = var67;
+    var49[4] = var63;
+    var63 = [0.779, 0.901];
+    var49[5] = var63;
+    var63 = [2.046, 3.055];
+    var49[6] = var63;
+    var63 = [1.673, 2.506];
+    var49[7] = var63;
+    var75.o = var49;
+    var49 = new Array(8);
+    var63 = [172.241, 15.29];
+    var49[0] = var63;
+    var63 = [173.047, 9.32];
+    var49[1] = var63;
+    var63 = [168.902, 3.151];
+    var49[2] = var63;
+    var63 = [164.425];
+    var65 = -1.854;
+    var63[1] = var65;
+    var49[3] = var63;
+    var63 = [157.366];
+    var64 = -6.106;
+    var63[1] = var64;
+    var49[4] = var63;
+    var86 = [154.572];
+    var63 = -3.6;
+    var86[1] = var63;
+    var49[5] = var86;
+    var86 = [159.148, 2.117];
+    var49[6] = var86;
+    var86 = [165.321, 12.144];
+    var49[7] = var86;
+    var75.v = var49;
+    var75.c = var14;
+    var49 = new Array(1);
+    var49[0] = var75;
+    var10.s = var49;
+    var6[1] = var10;
+    var10 = {};
+    var49 = {
+        'x': 0.325,
+        'y': 0.926
+    };
+    var10.i = var49;
+    var49 = {
+        'x': 0.665,
+        'y': 0
+    };
+    var10.o = var49;
+    var10.t = var16;
+    var49 = {};
+    var75 = new Array(2);
+    var75[0] = var85;
+    var75[1] = var61;
+    var61 = new Array(8);
+    var61[0] = var75;
+    var75 = [0.953, 1.734];
+    var61[1] = var75;
+    var75 = [1.814, 2.221];
+    var61[2] = var75;
+    var75 = [2.272, 2.149];
+    var61[3] = var75;
+    var75 = [2.1, 0.432];
+    var61[4] = var75;
+    var75 = new Array(2);
+    var75[0] = var84;
+    var75[1] = var83;
+    var61[5] = var75;
+    var75 = new Array(2);
+    var75[0] = var81;
+    var75[1] = var80;
+    var61[6] = var75;
+    var75 = new Array(2);
+    var75[0] = var77;
+    var75[1] = var76;
+    var61[7] = var75;
+    var49.i = var61;
+    var61 = [3.265];
+    var61[1] = var19;
+    var19 = new Array(8);
+    var19[0] = var61;
+    var61 = new Array(2);
+    var61[0] = var74;
+    var61[1] = var73;
+    var19[1] = var61;
+    var61 = new Array(2);
+    var61[0] = var72;
+    var61[1] = var71;
+    var19[2] = var61;
+    var61 = new Array(2);
+    var61[0] = var70;
+    var61[1] = var69;
+    var19[3] = var61;
+    var61 = new Array(2);
+    var61[0] = var68;
+    var61[1] = var67;
+    var19[4] = var61;
+    var61 = [0.779, 0.901];
+    var19[5] = var61;
+    var61 = [2.046, 3.055];
+    var19[6] = var61;
+    var61 = [1.673, 2.506];
+    var19[7] = var61;
+    var49.o = var19;
+    var19 = new Array(8);
+    var61 = [172.241, 15.29];
+    var19[0] = var61;
+    var61 = [173.047, 9.32];
+    var19[1] = var61;
+    var61 = [168.902, 3.151];
+    var19[2] = var61;
+    var61 = [164.425];
+    var61[1] = var65;
+    var19[3] = var61;
+    var61 = [157.366];
+    var61[1] = var64;
+    var19[4] = var61;
+    var61 = [154.572];
+    var61[1] = var63;
+    var19[5] = var61;
+    var61 = [159.148, 2.117];
+    var19[6] = var61;
+    var61 = [165.321, 12.144];
+    var19[7] = var61;
+    var49.v = var19;
+    var49.c = var14;
+    var19 = new Array(1);
+    var19[0] = var49;
+    var10.s = var19;
+    var6[2] = var10;
+    var10 = {};
+    var10.t = var30;
+    var19 = {};
+    var49 = new Array(2);
+    var49[0] = var57;
+    var49[1] = var20;
+    var20 = new Array(8);
+    var20[0] = var49;
+    var49 = [1.144, 1.575];
+    var20[1] = var49;
+    var49 = [2.384, 2.502];
+    var20[2] = var49;
+    var49 = [2.291, 1.827];
+    var20[3] = var49;
+    var49 = [1.66, 0.098];
+    var20[4] = var49;
+    var49 = new Array(2);
+    var49[0] = var56;
+    var49[1] = var55;
+    var20[5] = var49;
+    var49 = new Array(2);
+    var49[0] = var54;
+    var49[1] = var53;
+    var20[6] = var49;
+    var49 = new Array(2);
+    var49[0] = var52;
+    var49[1] = var51;
+    var20[7] = var49;
+    var19.i = var20;
+    var20 = [3.415];
+    var20[1] = var12;
+    var12 = new Array(8);
+    var12[0] = var20;
+    var20 = new Array(2);
+    var20[0] = var48;
+    var20[1] = var46;
+    var12[1] = var20;
+    var20 = new Array(2);
+    var20[0] = var43;
+    var20[1] = var42;
+    var12[2] = var20;
+    var20 = new Array(2);
+    var20[0] = var38;
+    var20[1] = var37;
+    var12[3] = var20;
+    var20 = new Array(2);
+    var20[0] = var36;
+    var20[1] = var40;
+    var12[4] = var20;
+    var20 = [0.453, 0.648];
+    var12[5] = var20;
+    var20 = [2.123, 2.694];
+    var12[6] = var20;
+    var20 = [1.605, 2.367];
+    var12[7] = var20;
+    var19.o = var12;
+    var12 = new Array(8);
+    var20 = [197.211, 9.903];
+    var12[0] = var20;
+    var20 = [197.771, 4.207];
+    var12[1] = var20;
+    var20 = [192.869];
+    var20[1] = var32;
+    var12[2] = var20;
+    var20 = [187.968];
+    var20[1] = var28;
+    var12[3] = var20;
+    var20 = [180.941];
+    var20[1] = var27;
+    var12[4] = var20;
+    var20 = [178.557];
+    var20[1] = var22;
+    var12[5] = var20;
+    var20 = [182.984];
+    var20[1] = var21;
+    var12[6] = var20;
+    var20 = [189.793, 7.333];
+    var12[7] = var20;
+    var19.v = var12;
+    var19.c = var14;
+    var12 = new Array(1);
+    var12[0] = var19;
+    var10.s = var12;
+    var6[3] = var10;
+    var3.k = var6;
+    var5.ks = var3;
+    var3 = new Array(3);
+    var3[0] = var5;
+    var5 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var10 = [0.933333393172, 0.988235353956, 1, 1];
+    var6.k = var10;
+    var5.c = var6;
+    var6 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var5.o = var6;
+    var3[1] = var5;
+    var5 = {};
+    var5.ty = var8;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var10 = [28.79, 79.326];
+    var6.k = var10;
+    var5.p = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var10 = [0, 0];
+    var6.k = var10;
+    var5.a = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var10 = [100, 100];
+    var6.k = var10;
+    var5.s = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var5.r = var6;
+    var6 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var5.o = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var5.sk = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var5.sa = var6;
+    var5.nm = var7;
+    var3[2] = var5;
+    var4.it = var3;
+    var3 = new Array(2);
+    var3[0] = var4;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 4',
+        'np': 3,
+        'cix': 2,
+        'bm': 0,
+        'ix': 2,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 2',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var5 = {
+        'a': 1,
+        'k': null,
+        'ix': 2
+    };
+    var12 = {};
+    var10 = {
+        'x': 0.246,
+        'y': 1
+    };
+    var12.i = var10;
+    var10 = {
+        'x': 0.333,
+        'y': 0
+    };
+    var12.o = var10;
+    var12.t = var15;
+    var20 = {};
+    var22 = new Array(2);
+    var75 = -18.283;
+    var22[0] = var75;
+    var19 = -19.001;
+    var22[1] = var19;
+    var10 = new Array(12);
+    var10[0] = var22;
+    var22 = [0.552];
+    var74 = -24.17;
+    var22[1] = var74;
+    var10[1] = var22;
+    var22 = [18.108];
+    var73 = -12.706;
+    var22[1] = var73;
+    var10[2] = var22;
+    var22 = [18.101];
+    var22[1] = var66;
+    var10[3] = var22;
+    var22 = [0.178];
+    var72 = -5.689;
+    var22[1] = var72;
+    var10[4] = var22;
+    var22 = new Array(2);
+    var71 = -11.923;
+    var22[0] = var71;
+    var70 = -1.751;
+    var22[1] = var70;
+    var10[5] = var22;
+    var22 = new Array(2);
+    var69 = -18.178;
+    var22[0] = var69;
+    var68 = 25.449;
+    var22[1] = var68;
+    var10[6] = var22;
+    var22 = new Array(2);
+    var67 = -0.743;
+    var22[0] = var67;
+    var65 = 24.861;
+    var22[1] = var65;
+    var10[7] = var22;
+    var22 = [18.74, 14.132];
+    var10[8] = var22;
+    var22 = [15.952];
+    var64 = -2.496;
+    var22[1] = var64;
+    var10[9] = var22;
+    var22 = [0.003];
+    var63 = -5.118;
+    var22[1] = var63;
+    var10[10] = var22;
+    var22 = new Array(2);
+    var61 = -7.02;
+    var22[0] = var61;
+    var22[1] = var59;
+    var10[11] = var22;
+    var20.i = var10;
+    var10 = new Array(12);
+    var22 = [8.659, 8.999];
+    var10[0] = var22;
+    var22 = new Array(2);
+    var57 = -0.444;
+    var22[0] = var57;
+    var56 = 19.468;
+    var22[1] = var56;
+    var10[1] = var22;
+    var22 = new Array(2);
+    var55 = -24.289;
+    var22[0] = var55;
+    var54 = 17.043;
+    var22[1] = var54;
+    var10[2] = var22;
+    var22 = new Array(2);
+    var53 = -9.467;
+    var22[0] = var53;
+    var52 = 0.057;
+    var22[1] = var52;
+    var10[3] = var22;
+    var22 = new Array(2);
+    var51 = -0.177;
+    var22[0] = var51;
+    var49 = 5.656;
+    var22[1] = var49;
+    var10[4] = var22;
+    var22 = [61.106, 8.977];
+    var10[5] = var22;
+    var22 = [9.175];
+    var48 = -12.845;
+    var22[1] = var48;
+    var10[6] = var22;
+    var22 = [0.587];
+    var43 = -19.65;
+    var22[1] = var43;
+    var10[7] = var22;
+    var22 = new Array(2);
+    var42 = -28.676;
+    var22[0] = var42;
+    var38 = -21.624;
+    var22[1] = var38;
+    var10[8] = var22;
+    var22 = new Array(2);
+    var36 = -5.154;
+    var22[0] = var36;
+    var32 = 0.806;
+    var22[1] = var32;
+    var10[9] = var22;
+    var22 = new Array(2);
+    var37 = -0.003;
+    var22[0] = var37;
+    var28 = 5.639;
+    var22[1] = var28;
+    var10[10] = var22;
+    var22 = [14.719, 0.678];
+    var10[11] = var22;
+    var20.o = var10;
+    var10 = new Array(12);
+    var22 = [90.761, 79.025];
+    var10[0] = var22;
+    var22 = [103.505, 131.123];
+    var10[1] = var22;
+    var22 = [83.829, 195.612];
+    var10[2] = var22;
+    var22 = [9.357, 209.089];
+    var10[3] = var22;
+    var22 = new Array(2);
+    var46 = -3.88;
+    var22[0] = var46;
+    var27 = 220.377;
+    var22[1] = var27;
+    var10[4] = var22;
+    var22 = [14.881, 232.187];
+    var10[5] = var22;
+    var22 = [122.454, 201.68];
+    var10[6] = var22;
+    var22 = [138.119, 132.744];
+    var10[7] = var22;
+    var22 = [119.747, 58.173];
+    var10[8] = var22;
+    var22 = [17.271, 43.66];
+    var10[9] = var22;
+    var22 = [4.583, 53.277];
+    var10[10] = var22;
+    var22 = [14.996, 64.39];
+    var10[11] = var22;
+    var20.v = var10;
+    var20.c = var14;
+    var10 = new Array(1);
+    var10[0] = var20;
+    var12.s = var10;
+    var10 = new Array(4);
+    var10[0] = var12;
+    var12 = {};
+    var20 = {
+        'x': 0.246,
+        'y': 1
+    };
+    var12.i = var20;
+    var20 = {
+        'x': 0.665,
+        'y': 0
+    };
+    var12.o = var20;
+    var12.t = var17;
+    var76 = {};
+    var77 = new Array(2);
+    var109 = -12.886;
+    var77[0] = var109;
+    var20 = -16.685;
+    var77[1] = var20;
+    var22 = new Array(12);
+    var22[0] = var77;
+    var77 = [0.331];
+    var108 = -23.564;
+    var77[1] = var108;
+    var22[1] = var77;
+    var77 = [13.074];
+    var107 = -12.449;
+    var77[1] = var107;
+    var22[2] = var77;
+    var77 = [12.18];
+    var106 = -4.419;
+    var77[1] = var106;
+    var22[3] = var77;
+    var77 = new Array(2);
+    var105 = -1.269;
+    var77[0] = var105;
+    var104 = -4.539;
+    var77[1] = var104;
+    var22[4] = var77;
+    var77 = new Array(2);
+    var103 = -11.007;
+    var77[0] = var103;
+    var77[1] = var102;
+    var22[5] = var77;
+    var77 = new Array(2);
+    var101 = -14.32;
+    var77[0] = var101;
+    var100 = 23.218;
+    var77[1] = var100;
+    var22[6] = var77;
+    var77 = new Array(2);
+    var86 = -0.912;
+    var77[0] = var86;
+    var99 = 24.854;
+    var77[1] = var99;
+    var22[7] = var77;
+    var77 = [16.184, 17.383];
+    var22[8] = var77;
+    var77 = [17.413];
+    var77[1] = var98;
+    var22[9] = var77;
+    var77 = [1.288];
+    var97 = -3.803;
+    var77[1] = var97;
+    var22[10] = var77;
+    var77 = new Array(2);
+    var96 = -4.937;
+    var77[0] = var96;
+    var95 = -1.61;
+    var77[1] = var95;
+    var22[11] = var77;
+    var76.i = var22;
+    var22 = new Array(12);
+    var77 = [8.099, 11.711];
+    var22[0] = var77;
+    var77 = new Array(2);
+    var77[0] = var94;
+    var93 = 19.469;
+    var77[1] = var93;
+    var22[1] = var77;
+    var77 = new Array(2);
+    var92 = -17.716;
+    var77[0] = var92;
+    var91 = 15.61;
+    var77[1] = var91;
+    var22[2] = var77;
+    var77 = new Array(2);
+    var90 = -6.306;
+    var77[0] = var90;
+    var89 = 2.514;
+    var77[1] = var89;
+    var22[3] = var77;
+    var77 = [1.15, 4.49];
+    var22[4] = var77;
+    var77 = [38.7, 3.126];
+    var22[5] = var77;
+    var77 = [7.537];
+    var88 = -13.528;
+    var77[1] = var88;
+    var22[6] = var77;
+    var77 = [0.753];
+    var87 = -20.201;
+    var77[1] = var87;
+    var22[7] = var77;
+    var77 = new Array(2);
+    var85 = -21.126;
+    var77[0] = var85;
+    var84 = -21.11;
+    var77[1] = var84;
+    var22[8] = var77;
+    var77 = new Array(2);
+    var83 = -6.851;
+    var77[0] = var83;
+    var77[1] = var82;
+    var22[9] = var77;
+    var77 = new Array(2);
+    var81 = -1.419;
+    var77[0] = var81;
+    var80 = 4.19;
+    var77[1] = var80;
+    var22[10] = var77;
+    var77 = [11.153, 4.178];
+    var22[11] = var77;
+    var76.o = var22;
+    var22 = new Array(12);
+    var77 = [65.749, 82.269];
+    var22[0] = var77;
+    var77 = [74.626, 133.107];
+    var22[1] = var77;
+    var77 = [58.844, 190.49];
+    var22[2] = var77;
+    var77 = [6.447, 211.409];
+    var22[3] = var77;
+    var110 = new Array(2);
+    var110[0] = var79;
+    var77 = 223.581;
+    var110[1] = var77;
+    var22[4] = var110;
+    var110 = [18.926, 231.443];
+    var22[5] = var110;
+    var110 = [99.306, 199.806];
+    var22[6] = var110;
+    var110 = [112.546, 134.287];
+    var22[7] = var110;
+    var110 = [98.253, 63.959];
+    var22[8] = var110;
+    var110 = [21.142, 44.563];
+    var22[9] = var110;
+    var110 = [7.466, 50.815];
+    var22[10] = var110;
+    var110 = [13.154, 61.966];
+    var22[11] = var110;
+    var76.v = var22;
+    var76.c = var14;
+    var22 = new Array(1);
+    var22[0] = var76;
+    var12.s = var22;
+    var10[1] = var12;
+    var12 = {};
+    var22 = {
+        'x': 0.325,
+        'y': 0.926
+    };
+    var12.i = var22;
+    var22 = {
+        'x': 0.665,
+        'y': 0
+    };
+    var12.o = var22;
+    var12.t = var16;
+    var22 = {};
+    var76 = new Array(2);
+    var76[0] = var109;
+    var76[1] = var20;
+    var20 = new Array(12);
+    var20[0] = var76;
+    var76 = [0.331];
+    var76[1] = var108;
+    var20[1] = var76;
+    var76 = [13.074];
+    var76[1] = var107;
+    var20[2] = var76;
+    var76 = [12.18];
+    var76[1] = var106;
+    var20[3] = var76;
+    var76 = new Array(2);
+    var76[0] = var105;
+    var76[1] = var104;
+    var20[4] = var76;
+    var76 = new Array(2);
+    var76[0] = var103;
+    var76[1] = var102;
+    var20[5] = var76;
+    var76 = new Array(2);
+    var76[0] = var101;
+    var76[1] = var100;
+    var20[6] = var76;
+    var76 = new Array(2);
+    var76[0] = var86;
+    var76[1] = var99;
+    var20[7] = var76;
+    var76 = [16.184, 17.383];
+    var20[8] = var76;
+    var76 = [17.413];
+    var76[1] = var98;
+    var20[9] = var76;
+    var76 = [1.288];
+    var76[1] = var97;
+    var20[10] = var76;
+    var76 = new Array(2);
+    var76[0] = var96;
+    var76[1] = var95;
+    var20[11] = var76;
+    var22.i = var20;
+    var20 = new Array(12);
+    var76 = [8.099, 11.711];
+    var20[0] = var76;
+    var76 = new Array(2);
+    var76[0] = var94;
+    var76[1] = var93;
+    var20[1] = var76;
+    var76 = new Array(2);
+    var76[0] = var92;
+    var76[1] = var91;
+    var20[2] = var76;
+    var76 = new Array(2);
+    var76[0] = var90;
+    var76[1] = var89;
+    var20[3] = var76;
+    var76 = [1.15, 4.49];
+    var20[4] = var76;
+    var76 = [38.7, 3.126];
+    var20[5] = var76;
+    var76 = [7.537];
+    var76[1] = var88;
+    var20[6] = var76;
+    var76 = [0.753];
+    var76[1] = var87;
+    var20[7] = var76;
+    var76 = new Array(2);
+    var76[0] = var85;
+    var76[1] = var84;
+    var20[8] = var76;
+    var76 = new Array(2);
+    var76[0] = var83;
+    var76[1] = var82;
+    var20[9] = var76;
+    var76 = new Array(2);
+    var76[0] = var81;
+    var76[1] = var80;
+    var20[10] = var76;
+    var76 = [11.153, 4.178];
+    var20[11] = var76;
+    var22.o = var20;
+    var20 = new Array(12);
+    var76 = [65.749, 82.269];
+    var20[0] = var76;
+    var76 = [74.626, 133.107];
+    var20[1] = var76;
+    var76 = [58.844, 190.49];
+    var20[2] = var76;
+    var76 = [6.447, 211.409];
+    var20[3] = var76;
+    var76 = new Array(2);
+    var76[0] = var79;
+    var76[1] = var77;
+    var20[4] = var76;
+    var76 = [18.926, 231.443];
+    var20[5] = var76;
+    var76 = [99.306, 199.806];
+    var20[6] = var76;
+    var76 = [112.546, 134.287];
+    var20[7] = var76;
+    var76 = [98.253, 63.959];
+    var20[8] = var76;
+    var76 = [21.142, 44.563];
+    var20[9] = var76;
+    var76 = [7.466, 50.815];
+    var20[10] = var76;
+    var76 = [13.154, 61.966];
+    var20[11] = var76;
+    var22.v = var20;
+    var22.c = var14;
+    var20 = new Array(1);
+    var20[0] = var22;
+    var12.s = var20;
+    var10[2] = var12;
+    var12 = {};
+    var12.t = var30;
+    var20 = {};
+    var22 = new Array(2);
+    var22[0] = var75;
+    var22[1] = var19;
+    var19 = new Array(12);
+    var19[0] = var22;
+    var22 = [0.552];
+    var22[1] = var74;
+    var19[1] = var22;
+    var22 = [18.108];
+    var22[1] = var73;
+    var19[2] = var22;
+    var22 = [18.101];
+    var22[1] = var66;
+    var19[3] = var22;
+    var22 = [0.178];
+    var22[1] = var72;
+    var19[4] = var22;
+    var22 = new Array(2);
+    var22[0] = var71;
+    var22[1] = var70;
+    var19[5] = var22;
+    var22 = new Array(2);
+    var22[0] = var69;
+    var22[1] = var68;
+    var19[6] = var22;
+    var22 = new Array(2);
+    var22[0] = var67;
+    var22[1] = var65;
+    var19[7] = var22;
+    var22 = [18.74, 14.132];
+    var19[8] = var22;
+    var22 = [15.952];
+    var22[1] = var64;
+    var19[9] = var22;
+    var22 = [0.003];
+    var22[1] = var63;
+    var19[10] = var22;
+    var22 = new Array(2);
+    var22[0] = var61;
+    var22[1] = var59;
+    var19[11] = var22;
+    var20.i = var19;
+    var19 = new Array(12);
+    var22 = [8.659, 8.999];
+    var19[0] = var22;
+    var22 = new Array(2);
+    var22[0] = var57;
+    var22[1] = var56;
+    var19[1] = var22;
+    var22 = new Array(2);
+    var22[0] = var55;
+    var22[1] = var54;
+    var19[2] = var22;
+    var22 = new Array(2);
+    var22[0] = var53;
+    var22[1] = var52;
+    var19[3] = var22;
+    var22 = new Array(2);
+    var22[0] = var51;
+    var22[1] = var49;
+    var19[4] = var22;
+    var22 = [61.106, 8.977];
+    var19[5] = var22;
+    var22 = [9.175];
+    var22[1] = var48;
+    var19[6] = var22;
+    var22 = [0.587];
+    var22[1] = var43;
+    var19[7] = var22;
+    var22 = new Array(2);
+    var22[0] = var42;
+    var22[1] = var38;
+    var19[8] = var22;
+    var22 = new Array(2);
+    var22[0] = var36;
+    var22[1] = var32;
+    var19[9] = var22;
+    var22 = new Array(2);
+    var22[0] = var37;
+    var22[1] = var28;
+    var19[10] = var22;
+    var22 = [14.719, 0.678];
+    var19[11] = var22;
+    var20.o = var19;
+    var19 = new Array(12);
+    var22 = [90.761, 79.025];
+    var19[0] = var22;
+    var22 = [103.505, 131.123];
+    var19[1] = var22;
+    var22 = [83.829, 195.612];
+    var19[2] = var22;
+    var22 = [9.357, 209.089];
+    var19[3] = var22;
+    var22 = new Array(2);
+    var22[0] = var46;
+    var22[1] = var27;
+    var19[4] = var22;
+    var22 = [14.881, 232.187];
+    var19[5] = var22;
+    var22 = [122.454, 201.68];
+    var19[6] = var22;
+    var22 = [138.119, 132.744];
+    var19[7] = var22;
+    var22 = [119.747, 58.173];
+    var19[8] = var22;
+    var22 = [17.271, 43.66];
+    var19[9] = var22;
+    var22 = [4.583, 53.277];
+    var19[10] = var22;
+    var22 = [14.996, 64.39];
+    var19[11] = var22;
+    var20.v = var19;
+    var20.c = var14;
+    var19 = new Array(1);
+    var19[0] = var20;
+    var12.s = var19;
+    var10[3] = var12;
+    var5.k = var10;
+    var6.ks = var5;
+    var5 = new Array(4);
+    var5[0] = var6;
+    var6 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 2',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var10 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var12 = [1, 0.470581054688, 0.725433349609, 1];
+    var10.k = var12;
+    var6.c = var10;
+    var10 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var6.o = var10;
+    var5[1] = var6;
+    var6 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var10 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var12 = [1, 0.470581054688, 0.725433349609, 1];
+    var10.k = var12;
+    var6.c = var10;
+    var10 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var6.o = var10;
+    var5[2] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var10 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var12 = [107.713, 12.258];
+    var10.k = var12;
+    var6.p = var10;
+    var10 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var12 = [0, 0];
+    var10.k = var12;
+    var6.a = var10;
+    var10 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var12 = [100, 100];
+    var10.k = var12;
+    var6.s = var10;
+    var10 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var6.r = var10;
+    var10 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var10;
+    var10 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var10;
+    var10 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var10;
+    var6.nm = var7;
+    var5[3] = var6;
+    var4.it = var5;
+    var3[1] = var4;
+    var2.shapes = var3;
+    var0[3] = var2;
+    var2 = {
+        'ddd': 0,
+        'ind': 5,
+        'ty': 4,
+        'nm': 'Arm Front 2',
+        'parent': 9,
+        'sr': 1,
+        'ks': null,
+        'ao': 0,
+        'shapes': null,
+        'ip': 0,
+        'op': 120,
+        'st': 0,
+        'ct': 1,
+        'bm': 0
+    };
+    var3 = {};
+    var4 = {
+        'a': 0,
+        'k': 100,
+        'ix': 11
+    };
+    var3.o = var4;
+    var4 = {
+        'a': 1,
+        'k': null,
+        'ix': 10
+    };
+    var6 = {};
+    var5 = {};
+    var10 = [0.302];
+    var5.x = var10;
+    var10 = [0.998];
+    var5.y = var10;
+    var6.i = var5;
+    var5 = {};
+    var10 = [0.333];
+    var5.x = var10;
+    var10 = [0];
+    var5.y = var10;
+    var6.o = var5;
+    var6.t = var15;
+    var5 = new Array(1);
+    var19 = -13.872;
+    var5[0] = var19;
+    var6.s = var5;
+    var5 = new Array(6);
+    var5[0] = var6;
+    var6 = {};
+    var10 = {};
+    var12 = [0.726];
+    var10.x = var12;
+    var12 = [0.872];
+    var10.y = var12;
+    var6.i = var10;
+    var10 = {};
+    var12 = [0.409];
+    var10.x = var12;
+    var12 = [0.003];
+    var10.y = var12;
+    var6.o = var10;
+    var6.t = var17;
+    var10 = [3.477];
+    var6.s = var10;
+    var5[1] = var6;
+    var6 = {};
+    var10 = {};
+    var12 = [0.627];
+    var10.x = var12;
+    var12 = [1];
+    var10.y = var12;
+    var6.i = var10;
+    var10 = {};
+    var12 = [0.367];
+    var10.x = var12;
+    var12 = new Array(1);
+    var20 = -1.164;
+    var12[0] = var20;
+    var10.y = var12;
+    var6.o = var10;
+    var12 = 20;
+    var6.t = var12;
+    var10 = [8.362];
+    var6.s = var10;
+    var5[2] = var6;
+    var6 = {};
+    var10 = {};
+    var20 = [0.833];
+    var10.x = var20;
+    var20 = [0.85];
+    var10.y = var20;
+    var6.i = var10;
+    var10 = {};
+    var20 = [0.333];
+    var10.x = var20;
+    var20 = [0];
+    var10.y = var20;
+    var6.o = var10;
+    var6.t = var16;
+    var10 = [7.374];
+    var6.s = var10;
+    var5[3] = var6;
+    var6 = {};
+    var10 = {};
+    var20 = [0.428];
+    var10.x = var20;
+    var20 = [1];
+    var10.y = var20;
+    var6.i = var10;
+    var10 = {};
+    var20 = [0.167];
+    var10.x = var20;
+    var20 = [0.174];
+    var10.y = var20;
+    var6.o = var10;
+    var32 = 35;
+    var6.t = var32;
+    var10 = [0.63];
+    var6.s = var10;
+    var5[4] = var6;
+    var6 = {};
+    var6.t = var30;
+    var10 = new Array(1);
+    var10[0] = var19;
+    var6.s = var10;
+    var5[5] = var6;
+    var4.k = var5;
+    var3.r = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 2,
+        'l': 2
+    };
+    var5 = [71.627, 159.579, 0];
+    var4.k = var5;
+    var3.p = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 1,
+        'l': 2
+    };
+    var5 = [204.355, 84.144, 0];
+    var4.k = var5;
+    var3.a = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 6,
+        'l': 2
+    };
+    var5 = [100, 100, 100];
+    var4.k = var5;
+    var3.s = var4;
+    var2.ks = var3;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 2',
+        'np': 3,
+        'cix': 2,
+        'bm': 0,
+        'ix': 2,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var5 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var3 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var6 = {};
+    var10 = new Array(5);
+    var19 = [34.869, 1.753];
+    var10[0] = var19;
+    var19 = [22.074, 4.917];
+    var10[1] = var19;
+    var19 = [13.545];
+    var20 = -40.914;
+    var19[1] = var20;
+    var10[2] = var19;
+    var19 = new Array(2);
+    var20 = -65.566;
+    var19[0] = var20;
+    var20 = -9.161;
+    var19[1] = var20;
+    var10[3] = var19;
+    var19 = new Array(2);
+    var20 = -7.278;
+    var19[0] = var20;
+    var20 = 40.348;
+    var19[1] = var20;
+    var10[4] = var19;
+    var6.i = var10;
+    var10 = new Array(5);
+    var19 = [0, 0];
+    var10[0] = var19;
+    var19 = new Array(2);
+    var20 = -22.073;
+    var19[0] = var20;
+    var20 = -4.917;
+    var19[1] = var20;
+    var10[1] = var19;
+    var19 = new Array(2);
+    var20 = -13.545;
+    var19[0] = var20;
+    var20 = 40.915;
+    var19[1] = var20;
+    var10[2] = var19;
+    var19 = [65.566, 9.16];
+    var10[3] = var19;
+    var19 = [7.278];
+    var20 = -40.348;
+    var19[1] = var20;
+    var10[4] = var19;
+    var6.o = var10;
+    var19 = [72.149];
+    var10 = -41.412;
+    var19[1] = var10;
+    var10 = new Array(5);
+    var10[0] = var19;
+    var19 = new Array(2);
+    var20 = -23.461;
+    var19[0] = var20;
+    var20 = -52.391;
+    var19[1] = var20;
+    var10[1] = var19;
+    var19 = new Array(2);
+    var20 = -106.545;
+    var19[0] = var20;
+    var20 = -21.839;
+    var19[1] = var20;
+    var10[2] = var19;
+    var19 = new Array(2);
+    var20 = -12.334;
+    var19[0] = var20;
+    var20 = 59.209;
+    var19[1] = var20;
+    var10[3] = var19;
+    var19 = [112.812, 32.657];
+    var10[4] = var19;
+    var6.v = var10;
+    var6.c = var14;
+    var3.k = var6;
+    var5.ks = var3;
+    var3 = new Array(4);
+    var3[0] = var5;
+    var5 = {
+        'ty': 'mm',
+        'mm': 4,
+        'nm': 'Merge Paths 1',
+        'mn': 'ADBE Vector Filter - Merge',
+        'hd': false
+    };
+    var3[1] = var5;
+    var5 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var10 = [0.411764735802, 0.556862745098, 1, 1];
+    var6.k = var10;
+    var5.c = var6;
+    var6 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var5.o = var6;
+    var3[2] = var5;
+    var5 = {};
+    var5.ty = var8;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var10 = [132.37, 75.033];
+    var6.k = var10;
+    var5.p = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var10 = [0, 0];
+    var6.k = var10;
+    var5.a = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var10 = [100, 100];
+    var6.k = var10;
+    var5.s = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var5.r = var6;
+    var6 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var5.o = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var5.sk = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var5.sa = var6;
+    var5.nm = var7;
+    var3[3] = var5;
+    var4.it = var3;
+    var3 = new Array(1);
+    var3[0] = var4;
+    var2.shapes = var3;
+    var0[4] = var2;
+    var2 = {
+        'ddd': 0,
+        'ind': 6,
+        'ty': 4,
+        'nm': 'Plate',
+        'parent': 21,
+        'sr': 1,
+        'ks': null,
+        'ao': 0,
+        'shapes': null,
+        'ip': 0,
+        'op': 120,
+        'st': 0,
+        'ct': 1,
+        'bm': 0
+    };
+    var10 = 21;
+    var3 = {};
+    var4 = {
+        'a': 0,
+        'k': 100,
+        'ix': 11
+    };
+    var3.o = var4;
+    var4 = {
+        'a': 0,
+        'k': 0,
+        'ix': 10
+    };
+    var3.r = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 2,
+        'l': 2
+    };
+    var5 = [58.934, 216.711, 0];
+    var4.k = var5;
+    var3.p = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 1,
+        'l': 2
+    };
+    var5 = [224.081, 32.859, 0];
+    var4.k = var5;
+    var3.a = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 6,
+        'l': 2
+    };
+    var5 = [57, 57, 100];
+    var4.k = var5;
+    var3.s = var4;
+    var2.ks = var3;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 1',
+        'np': 3,
+        'cix': 2,
+        'bm': 0,
+        'ix': 1,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var5 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var3 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var6 = {};
+    var20 = new Array(14);
+    var19 = [1.565, 4.957];
+    var20[0] = var19;
+    var19 = [0, 0];
+    var20[1] = var19;
+    var19 = [0, 0];
+    var20[2] = var19;
+    var19 = [0, 0];
+    var20[3] = var19;
+    var19 = [0, 0];
+    var20[4] = var19;
+    var22 = [1.566];
+    var19 = -4.957;
+    var22[1] = var19;
+    var20[5] = var22;
+    var27 = new Array(2);
+    var38 = -8.348;
+    var27[0] = var38;
+    var22 = -1.044;
+    var27[1] = var22;
+    var20[6] = var27;
+    var27 = new Array(2);
+    var42 = -21.913;
+    var27[0] = var42;
+    var28 = -3.652;
+    var27[1] = var28;
+    var20[7] = var27;
+    var27 = new Array(2);
+    var36 = -4.435;
+    var27[0] = var36;
+    var36 = -2.87;
+    var27[1] = var36;
+    var20[8] = var27;
+    var27 = [0, 0];
+    var20[9] = var27;
+    var27 = [0, 0];
+    var20[10] = var27;
+    var27 = [0, 0];
+    var20[11] = var27;
+    var27 = new Array(2);
+    var27[0] = var42;
+    var42 = 3.652;
+    var27[1] = var42;
+    var20[12] = var27;
+    var27 = new Array(2);
+    var27[0] = var38;
+    var38 = 1.043;
+    var27[1] = var38;
+    var20[13] = var27;
+    var6.i = var20;
+    var20 = new Array(2);
+    var27 = -1.565;
+    var20[0] = var27;
+    var20[1] = var19;
+    var19 = new Array(14);
+    var19[0] = var20;
+    var20 = [0, 0];
+    var19[1] = var20;
+    var20 = [0, 0];
+    var19[2] = var20;
+    var20 = [0, 0];
+    var19[3] = var20;
+    var20 = [0, 0];
+    var19[4] = var20;
+    var20 = new Array(2);
+    var20[0] = var27;
+    var38 = 4.957;
+    var20[1] = var38;
+    var19[5] = var20;
+    var20 = [8.347, 1.043];
+    var19[6] = var20;
+    var20 = [21.912, 3.652];
+    var19[7] = var20;
+    var20 = [0, 0];
+    var19[8] = var20;
+    var20 = [0, 0];
+    var19[9] = var20;
+    var20 = [0, 0];
+    var19[10] = var20;
+    var20 = [4.434];
+    var20[1] = var36;
+    var19[11] = var20;
+    var20 = [21.912];
+    var20[1] = var28;
+    var19[12] = var20;
+    var20 = [8.347];
+    var20[1] = var22;
+    var19[13] = var20;
+    var6.o = var19;
+    var20 = [222.266];
+    var22 = -11.348;
+    var20[1] = var22;
+    var19 = new Array(14);
+    var19[0] = var20;
+    var20 = [216.266];
+    var28 = -15.26;
+    var20[1] = var28;
+    var19[1] = var20;
+    var20 = [41.985];
+    var20[1] = var28;
+    var19[2] = var20;
+    var20 = [39.137];
+    var20[1] = var28;
+    var19[3] = var20;
+    var20 = new Array(2);
+    var36 = -216.265;
+    var20[0] = var36;
+    var20[1] = var28;
+    var19[4] = var20;
+    var20 = new Array(2);
+    var28 = -222.265;
+    var20[0] = var28;
+    var20[1] = var22;
+    var19[5] = var20;
+    var20 = new Array(2);
+    var22 = -209.482;
+    var20[0] = var22;
+    var22 = -3.26;
+    var20[1] = var22;
+    var19[6] = var20;
+    var20 = new Array(2);
+    var28 = -150.787;
+    var20[0] = var28;
+    var28 = 6.652;
+    var20[1] = var28;
+    var19[7] = var20;
+    var20 = new Array(2);
+    var28 = -111.918;
+    var20[0] = var28;
+    var28 = 16.305;
+    var20[1] = var28;
+    var19[8] = var20;
+    var20 = [6.761, 16.305];
+    var19[9] = var20;
+    var20 = [74.363, 16.305];
+    var19[10] = var20;
+    var20 = [111.92, 16.305];
+    var19[11] = var20;
+    var20 = [150.788, 6.652];
+    var19[12] = var20;
+    var20 = [209.483];
+    var20[1] = var22;
+    var19[13] = var20;
+    var6.v = var19;
+    var6.c = var14;
+    var3.k = var6;
+    var5.ks = var3;
+    var3 = new Array(4);
+    var3[0] = var5;
+    var5 = {
+        'ty': 'mm',
+        'mm': 4,
+        'nm': 'Merge Paths 1',
+        'mn': 'ADBE Vector Filter - Merge',
+        'hd': false
+    };
+    var3[1] = var5;
+    var5 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var19 = [0.258819580078, 0.239196777344, 0.501953125, 1];
+    var6.k = var19;
+    var5.c = var6;
+    var6 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var5.o = var6;
+    var3[2] = var5;
+    var5 = {};
+    var5.ty = var8;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var19 = [224.081, 16.555];
+    var6.k = var19;
+    var5.p = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var19 = [0, 0];
+    var6.k = var19;
+    var5.a = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var19 = [100, 100];
+    var6.k = var19;
+    var5.s = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var5.r = var6;
+    var6 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var5.o = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var5.sk = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var5.sa = var6;
+    var5.nm = var7;
+    var3[3] = var5;
+    var4.it = var3;
+    var3 = new Array(1);
+    var3[0] = var4;
+    var2.shapes = var3;
+    var0[5] = var2;
+    var2 = {
+        'ddd': 0,
+        'ind': 7,
+        'ty': 4,
+        'nm': 'Cup',
+        'parent': 3,
+        'sr': 1,
+        'ks': null,
+        'ao': 0,
+        'shapes': null,
+        'ip': 0,
+        'op': 120,
+        'st': 0,
+        'ct': 1,
+        'bm': 0
+    };
+    var3 = {};
+    var4 = {
+        'a': 0,
+        'k': 100,
+        'ix': 11
+    };
+    var3.o = var4;
+    var4 = {
+        'a': 0,
+        'k': 0,
+        'ix': 10
+    };
+    var3.r = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 2,
+        'l': 2
+    };
+    var5 = [257.301, 476.288, 0];
+    var4.k = var5;
+    var3.p = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 1,
+        'l': 2
+    };
+    var5 = [242.472, 270.203, 0];
+    var4.k = var5;
+    var3.a = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 6,
+        'l': 2
+    };
+    var5 = [100, 100, 100];
+    var4.k = var5;
+    var3.s = var4;
+    var2.ks = var3;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 3',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 1,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var5 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var3 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var6 = {};
+    var20 = [22.577];
+    var19 = -10.71;
+    var20[1] = var19;
+    var19 = new Array(4);
+    var19[0] = var20;
+    var20 = new Array(2);
+    var22 = -8.684;
+    var20[0] = var22;
+    var22 = -15.341;
+    var20[1] = var22;
+    var19[1] = var20;
+    var20 = new Array(2);
+    var22 = -15.052;
+    var20[0] = var22;
+    var22 = 2.895;
+    var20[1] = var22;
+    var19[2] = var20;
+    var20 = [9.262, 15.052];
+    var19[3] = var20;
+    var6.i = var19;
+    var19 = new Array(4);
+    var20 = [0, 0];
+    var19[0] = var20;
+    var20 = [8.683, 15.341];
+    var19[1] = var20;
+    var20 = [15.051];
+    var22 = -2.894;
+    var20[1] = var22;
+    var19[2] = var20;
+    var20 = new Array(2);
+    var28 = -9.262;
+    var20[0] = var28;
+    var28 = -15.051;
+    var20[1] = var28;
+    var19[3] = var20;
+    var6.o = var19;
+    var20 = new Array(2);
+    var19 = -42.693;
+    var20[0] = var19;
+    var19 = -14.183;
+    var20[1] = var19;
+    var19 = new Array(4);
+    var19[0] = var20;
+    var20 = new Array(2);
+    var28 = -18.959;
+    var20[0] = var28;
+    var28 = 2.605;
+    var20[1] = var28;
+    var19[1] = var20;
+    var20 = [17.801, 21.998];
+    var19[2] = var20;
+    var20 = [33.431];
+    var28 = -8.105;
+    var20[1] = var28;
+    var19[3] = var20;
+    var6.v = var19;
+    var6.c = var14;
+    var3.k = var6;
+    var5.ks = var3;
+    var3 = new Array(3);
+    var3[0] = var5;
+    var5 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var19 = [0.964691162109, 0.854888916016, 0.643127441406, 1];
+    var6.k = var19;
+    var5.c = var6;
+    var6 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var5.o = var6;
+    var3[1] = var5;
+    var5 = {};
+    var5.ty = var8;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var19 = [174.016, 27.873];
+    var6.k = var19;
+    var5.p = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var19 = [5.538];
+    var20 = -13.338;
+    var19[1] = var20;
+    var6.k = var19;
+    var5.a = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var19 = [100, 100];
+    var6.k = var19;
+    var5.s = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var5.r = var6;
+    var6 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var5.o = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var5.sk = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var5.sa = var6;
+    var5.nm = var7;
+    var3[2] = var5;
+    var4.it = var3;
+    var3 = new Array(6);
+    var3[0] = var4;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 2',
+        'np': 3,
+        'cix': 2,
+        'bm': 0,
+        'ix': 2,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var5 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var19 = {};
+    var36 = new Array(2);
+    var28 = -2.097;
+    var36[0] = var28;
+    var36[1] = var15;
+    var20 = new Array(3);
+    var20[0] = var36;
+    var36 = [0, 0];
+    var20[1] = var36;
+    var36 = [0, 0];
+    var20[2] = var36;
+    var19.i = var20;
+    var20 = new Array(3);
+    var36 = [0, 0];
+    var20[0] = var36;
+    var36 = [0, 0];
+    var20[1] = var36;
+    var36 = [2.098, 0];
+    var20[2] = var36;
+    var19.o = var20;
+    var36 = new Array(2);
+    var20 = -512.038;
+    var36[0] = var20;
+    var20 = 4.953;
+    var36[1] = var20;
+    var20 = new Array(3);
+    var20[0] = var36;
+    var36 = new Array(2);
+    var38 = -513.02;
+    var36[0] = var38;
+    var38 = 5.014;
+    var36[1] = var38;
+    var20[1] = var36;
+    var36 = new Array(2);
+    var38 = -511.806;
+    var36[0] = var38;
+    var38 = 4.966;
+    var36[1] = var38;
+    var20[2] = var36;
+    var19.v = var20;
+    var19.c = var9;
+    var5.k = var19;
+    var6.ks = var5;
+    var5 = new Array(4);
+    var5[0] = var6;
+    var6 = {
+        'ind': 1,
+        'ty': 'sh',
+        'ix': 2,
+        'ks': null,
+        'nm': 'Path 2',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var19 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var20 = {};
+    var36 = new Array(2);
+    var36[0] = var28;
+    var36[1] = var15;
+    var28 = new Array(6);
+    var28[0] = var36;
+    var36 = [0, 0];
+    var28[1] = var36;
+    var36 = [0, 0];
+    var28[2] = var36;
+    var36 = [0, 0];
+    var28[3] = var36;
+    var36 = [0, 0];
+    var28[4] = var36;
+    var36 = [0, 0];
+    var28[5] = var36;
+    var20.i = var28;
+    var28 = new Array(6);
+    var36 = [0, 0];
+    var28[0] = var36;
+    var36 = [0, 0];
+    var28[1] = var36;
+    var36 = [0, 0];
+    var28[2] = var36;
+    var36 = [0, 0];
+    var28[3] = var36;
+    var36 = [0, 0];
+    var28[4] = var36;
+    var36 = [2.098, 0];
+    var28[5] = var36;
+    var20.o = var28;
+    var36 = new Array(2);
+    var28 = -433.635;
+    var36[0] = var28;
+    var42 = -1.75;
+    var36[1] = var42;
+    var28 = new Array(6);
+    var28[0] = var36;
+    var36 = new Array(2);
+    var43 = -425.421;
+    var36[0] = var43;
+    var43 = -1.743;
+    var36[1] = var43;
+    var28[1] = var36;
+    var36 = new Array(2);
+    var43 = -406.579;
+    var36[0] = var43;
+    var43 = -1.729;
+    var36[1] = var43;
+    var28[2] = var36;
+    var36 = new Array(2);
+    var43 = -393.412;
+    var36[0] = var43;
+    var43 = -1.718;
+    var36[1] = var43;
+    var28[3] = var36;
+    var36 = new Array(2);
+    var43 = -384.688;
+    var36[0] = var43;
+    var43 = -1.759;
+    var36[1] = var43;
+    var28[4] = var36;
+    var36 = new Array(2);
+    var43 = -381.51;
+    var36[0] = var43;
+    var36[1] = var42;
+    var28[5] = var36;
+    var20.v = var28;
+    var20.c = var9;
+    var19.k = var20;
+    var6.ks = var19;
+    var5[1] = var6;
+    var6 = {
+        'ty': 'st',
+        'c': null,
+        'o': null,
+        'w': null,
+        'lc': 2,
+        'lj': 1,
+        'ml': 4,
+        'bm': 0,
+        'nm': 'Stroke 1',
+        'mn': 'ADBE Vector Graphic - Stroke',
+        'hd': false
+    };
+    var19 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var20 = [1, 0.423522949219, 0.807830810547, 1];
+    var19.k = var20;
+    var6.c = var19;
+    var19 = {
+        'a': 0,
+        'k': 100,
+        'ix': 4
+    };
+    var6.o = var19;
+    var19 = {
+        'a': 0,
+        'k': 8,
+        'ix': 5
+    };
+    var6.w = var19;
+    var5[2] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var19 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var20 = [693.397, 42.501];
+    var19.k = var20;
+    var6.p = var19;
+    var19 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var20 = [0, 0];
+    var19.k = var20;
+    var6.a = var19;
+    var19 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var20 = [100, 100];
+    var19.k = var20;
+    var6.s = var19;
+    var19 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var6.r = var19;
+    var19 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var19;
+    var19 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var19;
+    var19 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var19;
+    var6.nm = var7;
+    var5[3] = var6;
+    var4.it = var5;
+    var3[1] = var4;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 5',
+        'np': 3,
+        'cix': 2,
+        'bm': 0,
+        'ix': 3,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var5 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var19 = {};
+    var28 = new Array(12);
+    var20 = [1.701, 7.229];
+    var28[0] = var20;
+    var20 = [0, 0];
+    var28[1] = var20;
+    var20 = [0, 0];
+    var28[2] = var20;
+    var20 = [0, 0];
+    var28[3] = var20;
+    var20 = [0, 0];
+    var28[4] = var20;
+    var36 = [1.701];
+    var20 = -7.229;
+    var36[1] = var20;
+    var28[5] = var36;
+    var42 = new Array(2);
+    var49 = -5.953;
+    var42[0] = var49;
+    var36 = -5.954;
+    var42[1] = var36;
+    var28[6] = var42;
+    var43 = new Array(2);
+    var42 = -2.126;
+    var43[0] = var42;
+    var42 = -40.398;
+    var43[1] = var42;
+    var28[7] = var43;
+    var48 = new Array(2);
+    var43 = -3.715;
+    var48[0] = var43;
+    var43 = -19.297;
+    var48[1] = var43;
+    var28[8] = var48;
+    var48 = [0, 0];
+    var28[9] = var48;
+    var48 = new Array(2);
+    var51 = -0.736;
+    var48[0] = var51;
+    var51 = 13.977;
+    var48[1] = var51;
+    var28[10] = var48;
+    var48 = new Array(2);
+    var48[0] = var49;
+    var49 = 5.953;
+    var48[1] = var49;
+    var28[11] = var48;
+    var19.i = var28;
+    var28 = new Array(2);
+    var48 = -1.701;
+    var28[0] = var48;
+    var28[1] = var20;
+    var20 = new Array(12);
+    var20[0] = var28;
+    var28 = [0, 0];
+    var20[1] = var28;
+    var28 = [0, 0];
+    var20[2] = var28;
+    var28 = [0, 0];
+    var20[3] = var28;
+    var28 = [0, 0];
+    var20[4] = var28;
+    var28 = new Array(2);
+    var28[0] = var48;
+    var48 = 7.229;
+    var28[1] = var48;
+    var20[5] = var28;
+    var28 = [5.954, 5.953];
+    var20[6] = var28;
+    var28 = [0.735, 13.977];
+    var20[7] = var28;
+    var28 = [0, 0];
+    var20[8] = var28;
+    var28 = [3.715];
+    var28[1] = var43;
+    var20[9] = var28;
+    var28 = [2.126];
+    var28[1] = var42;
+    var20[10] = var28;
+    var28 = [5.954];
+    var28[1] = var36;
+    var20[11] = var28;
+    var19.o = var20;
+    var28 = [228.742];
+    var42 = -63.403;
+    var28[1] = var42;
+    var20 = new Array(12);
+    var20[0] = var28;
+    var28 = [218.96];
+    var43 = -69.355;
+    var28[1] = var43;
+    var20[1] = var28;
+    var28 = [8.548];
+    var28[1] = var43;
+    var20[2] = var28;
+    var28 = new Array(2);
+    var36 = -8.548;
+    var28[0] = var36;
+    var28[1] = var43;
+    var20[3] = var28;
+    var28 = new Array(2);
+    var36 = -218.96;
+    var28[0] = var36;
+    var28[1] = var43;
+    var20[4] = var28;
+    var28 = new Array(2);
+    var43 = -228.742;
+    var28[0] = var43;
+    var28[1] = var42;
+    var20[5] = var28;
+    var28 = new Array(2);
+    var28[0] = var36;
+    var36 = -48.943;
+    var28[1] = var36;
+    var20[6] = var28;
+    var28 = new Array(2);
+    var42 = -188.768;
+    var28[0] = var42;
+    var42 = 19.095;
+    var28[1] = var42;
+    var20[7] = var28;
+    var28 = new Array(2);
+    var43 = -183.355;
+    var28[0] = var43;
+    var42 = 70.631;
+    var28[1] = var42;
+    var20[8] = var28;
+    var28 = [183.355, 70.631];
+    var20[9] = var28;
+    var28 = [188.768, 19.095];
+    var20[10] = var28;
+    var28 = [218.96];
+    var28[1] = var36;
+    var20[11] = var28;
+    var19.v = var20;
+    var19.c = var14;
+    var5.k = var19;
+    var6.ks = var5;
+    var5 = new Array(4);
+    var5[0] = var6;
+    var6 = {
+        'ty': 'mm',
+        'mm': 4,
+        'nm': 'Merge Paths 1',
+        'mn': 'ADBE Vector Filter - Merge',
+        'hd': false
+    };
+    var5[1] = var6;
+    var6 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var19 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var20 = [0.819549560547, 0.082336425781, 0.513671875, 1];
+    var19.k = var20;
+    var6.c = var19;
+    var19 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var6.o = var19;
+    var5[2] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var19 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var20 = [242.472, 100.805];
+    var19.k = var20;
+    var6.p = var19;
+    var19 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var20 = [0, 0];
+    var19.k = var20;
+    var6.a = var19;
+    var19 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var20 = [100, 100];
+    var19.k = var20;
+    var6.s = var19;
+    var19 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var6.r = var19;
+    var19 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var19;
+    var19 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var19;
+    var19 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var19;
+    var6.nm = var7;
+    var5[3] = var6;
+    var4.it = var5;
+    var3[2] = var4;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 6',
+        'np': 3,
+        'cix': 2,
+        'bm': 0,
+        'ix': 4,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var5 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var19 = {};
+    var28 = new Array(2);
+    var20 = -43.834;
+    var28[0] = var20;
+    var42 = -21.917;
+    var28[1] = var42;
+    var20 = new Array(5);
+    var20[0] = var28;
+    var28 = new Array(2);
+    var36 = -31.971;
+    var28[0] = var36;
+    var36 = 0.094;
+    var28[1] = var36;
+    var20[1] = var28;
+    var28 = new Array(2);
+    var36 = -0.687;
+    var28[0] = var36;
+    var48 = 0.343;
+    var28[1] = var48;
+    var20[2] = var28;
+    var28 = new Array(2);
+    var48 = -7.024;
+    var28[0] = var48;
+    var48 = 36.481;
+    var28[1] = var48;
+    var20[3] = var28;
+    var28 = [0, 0];
+    var20[4] = var28;
+    var19.i = var20;
+    var20 = new Array(5);
+    var28 = [0.687, 0.343];
+    var20[0] = var28;
+    var28 = [31.971, 0.094];
+    var20[1] = var28;
+    var28 = [43.834];
+    var28[1] = var42;
+    var20[2] = var28;
+    var28 = [0, 0];
+    var20[3] = var28;
+    var28 = [7.024, 36.481];
+    var20[4] = var28;
+    var19.o = var20;
+    var28 = new Array(2);
+    var20 = -115.625;
+    var28[0] = var20;
+    var20 = 49.117;
+    var28[1] = var20;
+    var20 = new Array(5);
+    var20[0] = var28;
+    var28 = [0, 49.156];
+    var20[1] = var28;
+    var28 = [115.625, 49.117];
+    var20[2] = var28;
+    var28 = [183.355];
+    var42 = -49.46;
+    var28[1] = var42;
+    var20[3] = var28;
+    var28 = new Array(2);
+    var28[0] = var43;
+    var28[1] = var42;
+    var20[4] = var28;
+    var19.v = var20;
+    var19.c = var14;
+    var5.k = var19;
+    var6.ks = var5;
+    var5 = new Array(4);
+    var5[0] = var6;
+    var6 = {
+        'ty': 'mm',
+        'mm': 4,
+        'nm': 'Merge Paths 1',
+        'mn': 'ADBE Vector Filter - Merge',
+        'hd': false
+    };
+    var5[1] = var6;
+    var6 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var19 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var20 = [0.921508789063, 0.270568847656, 0.623474121094, 1];
+    var19.k = var20;
+    var6.c = var19;
+    var19 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var6.o = var19;
+    var5[2] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var19 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var20 = [242.472, 220.897];
+    var19.k = var20;
+    var6.p = var19;
+    var19 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var20 = [0, 0];
+    var19.k = var20;
+    var6.a = var19;
+    var19 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var20 = [100, 100];
+    var19.k = var20;
+    var6.s = var19;
+    var19 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var6.r = var19;
+    var19 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var19;
+    var19 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var19;
+    var19 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var19;
+    var6.nm = var7;
+    var5[3] = var6;
+    var4.it = var5;
+    var3[3] = var4;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 7',
+        'np': 3,
+        'cix': 2,
+        'bm': 0,
+        'ix': 5,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var5 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var19 = {};
+    var20 = new Array(3);
+    var28 = [0, 0];
+    var20[0] = var28;
+    var28 = new Array(2);
+    var42 = -27.787;
+    var28[0] = var42;
+    var42 = 5.789;
+    var28[1] = var42;
+    var20[1] = var28;
+    var28 = new Array(2);
+    var42 = -6.947;
+    var28[0] = var42;
+    var42 = -19.393;
+    var28[1] = var42;
+    var20[2] = var28;
+    var19.i = var20;
+    var28 = [0.289];
+    var20 = -0.868;
+    var28[1] = var20;
+    var20 = new Array(3);
+    var20[0] = var28;
+    var28 = [27.787];
+    var42 = -5.789;
+    var28[1] = var42;
+    var20[1] = var28;
+    var28 = [0, 0];
+    var20[2] = var28;
+    var19.o = var20;
+    var28 = new Array(2);
+    var20 = -53.693;
+    var28[0] = var20;
+    var20 = 12.157;
+    var28[1] = var20;
+    var20 = new Array(3);
+    var20[0] = var28;
+    var28 = new Array(2);
+    var42 = -13.17;
+    var28[0] = var42;
+    var42 = -10.131;
+    var28[1] = var42;
+    var20[1] = var28;
+    var28 = [53.693, 15.92];
+    var20[2] = var28;
+    var19.v = var20;
+    var19.c = var14;
+    var5.k = var19;
+    var6.ks = var5;
+    var5 = new Array(4);
+    var5[0] = var6;
+    var6 = {
+        'ty': 'mm',
+        'mm': 4,
+        'nm': 'Merge Paths 1',
+        'mn': 'ADBE Vector Filter - Merge',
+        'hd': false
+    };
+    var5[1] = var6;
+    var6 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var19 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var20 = [0.964691162109, 0.854888916016, 0.643127441406, 1];
+    var19.k = var20;
+    var6.c = var19;
+    var19 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var6.o = var19;
+    var5[2] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var19 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var20 = [115.07, 27.607];
+    var19.k = var20;
+    var6.p = var19;
+    var19 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var20 = [0, 0];
+    var19.k = var20;
+    var6.a = var19;
+    var19 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var20 = [100, 100];
+    var19.k = var20;
+    var6.s = var19;
+    var19 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var6.r = var19;
+    var19 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var19;
+    var19 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var19;
+    var19 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var19;
+    var6.nm = var7;
+    var5[3] = var6;
+    var4.it = var5;
+    var3[4] = var4;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 8',
+        'np': 3,
+        'cix': 2,
+        'bm': 0,
+        'ix': 6,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var5 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var19 = {};
+    var20 = new Array(4);
+    var28 = [0, 0];
+    var20[0] = var28;
+    var28 = new Array(2);
+    var42 = -28.48;
+    var28[0] = var42;
+    var42 = 6.686;
+    var28[1] = var42;
+    var20[1] = var28;
+    var28 = [0, 0];
+    var20[2] = var28;
+    var28 = new Array(2);
+    var42 = -24.765;
+    var28[0] = var42;
+    var42 = -39.377;
+    var28[1] = var42;
+    var20[3] = var28;
+    var19.i = var20;
+    var20 = new Array(4);
+    var28 = [0, 0];
+    var20[0] = var28;
+    var28 = [28.48];
+    var42 = -6.687;
+    var28[1] = var42;
+    var20[1] = var28;
+    var28 = [0, 0];
+    var20[2] = var28;
+    var28 = [0, 0];
+    var20[3] = var28;
+    var19.o = var20;
+    var28 = new Array(2);
+    var20 = -79.124;
+    var28[0] = var20;
+    var20 = 20.679;
+    var28[1] = var20;
+    var20 = new Array(4);
+    var20[0] = var28;
+    var28 = new Array(2);
+    var42 = -34.548;
+    var28[0] = var42;
+    var42 = -0.371;
+    var28[1] = var42;
+    var20[1] = var28;
+    var28 = [23.403, 4.582];
+    var20[2] = var28;
+    var28 = [79.124, 18.698];
+    var20[3] = var28;
+    var19.v = var20;
+    var19.c = var14;
+    var5.k = var19;
+    var6.ks = var5;
+    var5 = new Array(4);
+    var5[0] = var6;
+    var6 = {
+        'ty': 'mm',
+        'mm': 4,
+        'nm': 'Merge Paths 1',
+        'mn': 'ADBE Vector Filter - Merge',
+        'hd': false
+    };
+    var5[1] = var6;
+    var6 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var19 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var20 = [0.964691162109, 0.854888916016, 0.643127441406, 1];
+    var19.k = var20;
+    var6.c = var19;
+    var19 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var6.o = var19;
+    var5[2] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var19 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var20 = [357.609, 20.929];
+    var19.k = var20;
+    var6.p = var19;
+    var19 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var20 = [0, 0];
+    var19.k = var20;
+    var6.a = var19;
+    var19 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var20 = [100, 100];
+    var19.k = var20;
+    var6.s = var19;
+    var19 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var6.r = var19;
+    var19 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var19;
+    var19 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var19;
+    var19 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var19;
+    var6.nm = var7;
+    var5[3] = var6;
+    var4.it = var5;
+    var3[5] = var4;
+    var2.shapes = var3;
+    var0[6] = var2;
+    var2 = {
+        'ddd': 0,
+        'ind': 8,
+        'ty': 4,
+        'nm': 'Foam',
+        'parent': 7,
+        'sr': 1,
+        'ks': null,
+        'ao': 0,
+        'shapes': null,
+        'ip': 0,
+        'op': 120,
+        'st': 0,
+        'ct': 1,
+        'bm': 0
+    };
+    var3 = {};
+    var4 = {
+        'a': 0,
+        'k': 100,
+        'ix': 11
+    };
+    var3.o = var4;
+    var4 = {
+        'a': 0,
+        'k': 4294967295,
+        'ix': 10
+    };
+    var3.r = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 2,
+        'l': 2
+    };
+    var5 = [243.362, 33.978, 0];
+    var4.k = var5;
+    var3.p = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 1,
+        'l': 2
+    };
+    var5 = [230.945, 234.207, 0];
+    var4.k = var5;
+    var3.a = var4;
+    var4 = {
+        'a': 1,
+        'k': null,
+        'ix': 6,
+        'l': 2
+    };
+    var6 = {};
+    var5 = {};
+    var19 = [0.667, 0.667, 0.667];
+    var5.x = var19;
+    var19 = [1, 1, 1];
+    var5.y = var19;
+    var6.i = var5;
+    var5 = {};
+    var19 = [0.333, 0.333, 0.333];
+    var5.x = var19;
+    var19 = [0, 0, 0];
+    var5.y = var19;
+    var6.o = var5;
+    var6.t = var15;
+    var5 = [100, 100, 100];
+    var6.s = var5;
+    var5 = new Array(9);
+    var5[0] = var6;
+    var6 = {};
+    var19 = {};
+    var20 = [0.667, 0.667, 0.667];
+    var19.x = var20;
+    var20 = [1, 1, 1];
+    var19.y = var20;
+    var6.i = var19;
+    var19 = {};
+    var20 = [0.333, 0.333, 0.333];
+    var19.x = var20;
+    var20 = [0, 0, 0];
+    var19.y = var20;
+    var6.o = var19;
+    var6.t = var33;
+    var19 = [102, 90, 100];
+    var6.s = var19;
+    var5[1] = var6;
+    var6 = {};
+    var19 = {};
+    var20 = [0.667, 0.667, 0.667];
+    var19.x = var20;
+    var20 = [1, 1, 1];
+    var19.y = var20;
+    var6.i = var19;
+    var19 = {};
+    var20 = [0.333, 0.333, 0.333];
+    var19.x = var20;
+    var20 = [0, 0, 0];
+    var19.y = var20;
+    var6.o = var19;
+    var19 = 15;
+    var6.t = var19;
+    var19 = [100, 100, 100];
+    var6.s = var19;
+    var5[2] = var6;
+    var6 = {};
+    var19 = {};
+    var20 = [0.667, 0.667, 0.667];
+    var19.x = var20;
+    var20 = [1, 1, 1];
+    var19.y = var20;
+    var6.i = var19;
+    var19 = {};
+    var20 = [0.333, 0.333, 0.333];
+    var19.x = var20;
+    var20 = [0, 0, 0];
+    var19.y = var20;
+    var6.o = var19;
+    var6.t = var10;
+    var10 = [102, 95, 100];
+    var6.s = var10;
+    var5[3] = var6;
+    var6 = {};
+    var10 = {};
+    var19 = [0.833, 0.833, 0.833];
+    var10.x = var19;
+    var19 = [0.833, 0.833, 0.833];
+    var10.y = var19;
+    var6.i = var10;
+    var10 = {};
+    var19 = [0.167, 0.167, 0.167];
+    var10.x = var19;
+    var19 = [0.167, 0.167, 0.167];
+    var10.y = var19;
+    var6.o = var10;
+    var10 = 29;
+    var6.t = var10;
+    var10 = [100, 100, 100];
+    var6.s = var10;
+    var5[4] = var6;
+    var6 = {};
+    var10 = {};
+    var19 = [0.667, 0.667, 0.667];
+    var10.x = var19;
+    var19 = [1, 1, 1];
+    var10.y = var19;
+    var6.i = var10;
+    var10 = {};
+    var19 = [0.333, 0.333, 0.333];
+    var10.x = var19;
+    var19 = [0, 0, 0];
+    var10.y = var19;
+    var6.o = var10;
+    var6.t = var16;
+    var10 = [100, 100, 100];
+    var6.s = var10;
+    var5[5] = var6;
+    var6 = {};
+    var10 = {};
+    var19 = [0.667, 0.667, 0.667];
+    var10.x = var19;
+    var19 = [1, 1, 1];
+    var10.y = var19;
+    var6.i = var10;
+    var10 = {};
+    var19 = [0.333, 0.333, 0.333];
+    var10.x = var19;
+    var19 = [0, 0, 0];
+    var10.y = var19;
+    var6.o = var10;
+    var10 = 39;
+    var6.t = var10;
+    var10 = [95, 110, 100];
+    var6.s = var10;
+    var5[6] = var6;
+    var6 = {};
+    var10 = {};
+    var19 = [0.667, 0.667, 0.667];
+    var10.x = var19;
+    var19 = [1, 1, 1];
+    var10.y = var19;
+    var6.i = var10;
+    var10 = {};
+    var19 = [0.333, 0.333, 0.333];
+    var10.x = var19;
+    var19 = [0, 0, 0];
+    var10.y = var19;
+    var6.o = var10;
+    var10 = 47;
+    var6.t = var10;
+    var10 = [102, 95, 100];
+    var6.s = var10;
+    var5[7] = var6;
+    var6 = {};
+    var10 = 55;
+    var6.t = var10;
+    var10 = [100, 100, 100];
+    var6.s = var10;
+    var5[8] = var6;
+    var4.k = var5;
+    var3.s = var4;
+    var2.ks = var3;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 12',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 1,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var5 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var3 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var6 = {};
+    var19 = new Array(2);
+    var20 = -1.641;
+    var19[0] = var20;
+    var28 = -1.301;
+    var19[1] = var28;
+    var10 = new Array(8);
+    var10[0] = var19;
+    var19 = [0, 0];
+    var10[1] = var19;
+    var19 = [1.301];
+    var42 = -1.642;
+    var19[1] = var42;
+    var10[2] = var19;
+    var19 = [0, 0];
+    var10[3] = var19;
+    var19 = [1.642, 1.3];
+    var10[4] = var19;
+    var19 = [0, 0];
+    var10[5] = var19;
+    var19 = new Array(2);
+    var19[0] = var28;
+    var42 = 1.641;
+    var19[1] = var42;
+    var10[6] = var19;
+    var19 = [0, 0];
+    var10[7] = var19;
+    var6.i = var10;
+    var10 = new Array(8);
+    var19 = [0, 0];
+    var10[0] = var19;
+    var19 = [1.641, 1.3];
+    var10[1] = var19;
+    var19 = [0, 0];
+    var10[2] = var19;
+    var19 = new Array(2);
+    var19[0] = var28;
+    var42 = 1.642;
+    var19[1] = var42;
+    var10[3] = var19;
+    var19 = [0, 0];
+    var10[4] = var19;
+    var19 = new Array(2);
+    var19[0] = var20;
+    var19[1] = var28;
+    var10[5] = var19;
+    var19 = [0, 0];
+    var10[6] = var19;
+    var19 = [1.3];
+    var19[1] = var20;
+    var10[7] = var19;
+    var6.o = var10;
+    var19 = new Array(2);
+    var10 = -3.582;
+    var19[0] = var10;
+    var10 = -8.137;
+    var19[1] = var10;
+    var10 = new Array(8);
+    var10[0] = var19;
+    var19 = [8.741, 1.629];
+    var10[1] = var19;
+    var19 = [9.359, 6.978];
+    var10[2] = var19;
+    var19 = [8.931, 7.518];
+    var10[3] = var19;
+    var19 = [3.581, 8.138];
+    var10[4] = var19;
+    var19 = new Array(2);
+    var20 = -8.741;
+    var19[0] = var20;
+    var20 = -1.628;
+    var19[1] = var20;
+    var10[5] = var19;
+    var19 = new Array(2);
+    var43 = -9.36;
+    var19[0] = var43;
+    var20 = -6.977;
+    var19[1] = var20;
+    var10[6] = var19;
+    var19 = new Array(2);
+    var20 = -8.932;
+    var19[0] = var20;
+    var20 = -7.517;
+    var19[1] = var20;
+    var10[7] = var19;
+    var6.v = var10;
+    var6.c = var14;
+    var3.k = var6;
+    var5.ks = var3;
+    var3 = new Array(3);
+    var3[0] = var5;
+    var5 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var10 = [0.882353001015, 0.501960784314, 0.721568627451, 1];
+    var6.k = var10;
+    var5.c = var6;
+    var6 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var5.o = var6;
+    var3[1] = var5;
+    var5 = {};
+    var5.ty = var8;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var10 = [166.698, 33.948];
+    var6.k = var10;
+    var5.p = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var10 = [0, 0];
+    var6.k = var10;
+    var5.a = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var10 = [100, 100];
+    var6.k = var10;
+    var5.s = var6;
+    var6 = {
+        'a': 0,
+        'k': -14.548,
+        'ix': 6
+    };
+    var5.r = var6;
+    var6 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var5.o = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var5.sk = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var5.sa = var6;
+    var5.nm = var7;
+    var3[2] = var5;
+    var4.it = var3;
+    var3 = new Array(17);
+    var3[0] = var4;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 1',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 2,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var5 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var10 = {};
+    var19 = new Array(8);
+    var20 = [2.013, 0.579];
+    var19[0] = var20;
+    var20 = [0, 0];
+    var19[1] = var20;
+    var20 = new Array(2);
+    var28 = -0.579;
+    var20[0] = var28;
+    var42 = 2.012;
+    var20[1] = var42;
+    var19[2] = var20;
+    var20 = [0, 0];
+    var19[3] = var20;
+    var20 = new Array(2);
+    var48 = -2.012;
+    var20[0] = var48;
+    var20[1] = var28;
+    var19[4] = var20;
+    var20 = [0, 0];
+    var19[5] = var20;
+    var20 = [0.579];
+    var42 = -2.013;
+    var20[1] = var42;
+    var19[6] = var20;
+    var20 = [0, 0];
+    var19[7] = var20;
+    var10.i = var19;
+    var19 = new Array(8);
+    var20 = [0, 0];
+    var19[0] = var20;
+    var20 = new Array(2);
+    var20[0] = var48;
+    var48 = -0.578;
+    var20[1] = var48;
+    var19[1] = var20;
+    var20 = [0, 0];
+    var19[2] = var20;
+    var20 = [0.579];
+    var20[1] = var42;
+    var19[3] = var20;
+    var20 = [0, 0];
+    var19[4] = var20;
+    var20 = [2.013, 0.579];
+    var19[5] = var20;
+    var20 = [0, 0];
+    var19[6] = var20;
+    var20 = new Array(2);
+    var20[0] = var28;
+    var28 = 2.013;
+    var20[1] = var28;
+    var19[7] = var20;
+    var10.o = var19;
+    var19 = new Array(8);
+    var20 = [6.407, 6.164];
+    var19[0] = var20;
+    var20 = new Array(2);
+    var28 = -8.704;
+    var20[0] = var28;
+    var28 = 1.817;
+    var20[1] = var28;
+    var19[1] = var20;
+    var20 = new Array(2);
+    var28 = -11.309;
+    var20[0] = var28;
+    var20[1] = var22;
+    var19[2] = var20;
+    var20 = new Array(2);
+    var22 = -11.119;
+    var20[0] = var22;
+    var22 = -3.557;
+    var20[1] = var22;
+    var19[3] = var20;
+    var20 = new Array(2);
+    var22 = -6.408;
+    var20[0] = var22;
+    var22 = -6.164;
+    var20[1] = var22;
+    var19[4] = var20;
+    var20 = [8.702];
+    var22 = -1.817;
+    var20[1] = var22;
+    var19[5] = var20;
+    var20 = [11.309, 2.895];
+    var19[6] = var20;
+    var20 = [11.118, 3.557];
+    var19[7] = var20;
+    var10.v = var19;
+    var10.c = var14;
+    var5.k = var10;
+    var6.ks = var5;
+    var5 = new Array(3);
+    var5[0] = var6;
+    var6 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var10 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var19 = [0.882353001015, 0.501960784314, 0.721568627451, 1];
+    var10.k = var19;
+    var6.c = var10;
+    var10 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var6.o = var10;
+    var5[1] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var10 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var19 = [163.207, 113.001];
+    var10.k = var19;
+    var6.p = var10;
+    var10 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var19 = [0, 0];
+    var10.k = var19;
+    var6.a = var10;
+    var10 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var19 = [100, 100];
+    var10.k = var19;
+    var6.s = var10;
+    var10 = {
+        'a': 0,
+        'k': 13.435,
+        'ix': 6
+    };
+    var6.r = var10;
+    var10 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var10;
+    var10 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var10;
+    var10 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var10;
+    var6.nm = var7;
+    var5[2] = var6;
+    var4.it = var5;
+    var3[1] = var4;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 2',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 3,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var5 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var10 = {};
+    var20 = [4.398];
+    var22 = -0.723;
+    var20[1] = var22;
+    var19 = new Array(6);
+    var19[0] = var20;
+    var20 = [0, 0];
+    var19[1] = var20;
+    var20 = [0.723, 4.398];
+    var19[2] = var20;
+    var20 = new Array(2);
+    var28 = -4.398;
+    var20[0] = var28;
+    var42 = 0.723;
+    var20[1] = var42;
+    var19[3] = var20;
+    var20 = [0, 0];
+    var19[4] = var20;
+    var20 = new Array(2);
+    var20[0] = var22;
+    var28 = -4.399;
+    var20[1] = var28;
+    var19[5] = var20;
+    var10.i = var19;
+    var19 = new Array(6);
+    var20 = [0, 0];
+    var19[0] = var20;
+    var20 = new Array(2);
+    var20[0] = var28;
+    var20[1] = var42;
+    var19[1] = var20;
+    var20 = new Array(2);
+    var42 = -0.722;
+    var20[0] = var42;
+    var20[1] = var28;
+    var19[2] = var20;
+    var20 = [0, 0];
+    var19[3] = var20;
+    var20 = [4.399];
+    var20[1] = var22;
+    var19[4] = var20;
+    var20 = [0.722, 4.398];
+    var19[5] = var20;
+    var10.o = var19;
+    var19 = new Array(6);
+    var20 = [14.895, 5.765];
+    var19[0] = var20;
+    var20 = new Array(2);
+    var22 = -12.266;
+    var20[0] = var22;
+    var22 = 10.227;
+    var20[1] = var22;
+    var19[1] = var20;
+    var20 = new Array(2);
+    var22 = -21.578;
+    var20[0] = var22;
+    var22 = 3.546;
+    var20[1] = var22;
+    var19[2] = var20;
+    var20 = new Array(2);
+    var22 = -14.894;
+    var20[0] = var22;
+    var22 = -5.766;
+    var20[1] = var22;
+    var19[3] = var20;
+    var20 = [12.266];
+    var22 = -10.228;
+    var20[1] = var22;
+    var19[4] = var20;
+    var20 = [21.578];
+    var22 = -3.545;
+    var20[1] = var22;
+    var19[5] = var20;
+    var10.v = var19;
+    var10.c = var14;
+    var5.k = var10;
+    var6.ks = var5;
+    var5 = new Array(3);
+    var5[0] = var6;
+    var6 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var10 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var19 = [0.964691162109, 0.867218017578, 0.671722412109, 1];
+    var10.k = var19;
+    var6.c = var10;
+    var10 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var6.o = var10;
+    var5[1] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var10 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var19 = [201.495, 204.791];
+    var10.k = var19;
+    var6.p = var10;
+    var10 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var19 = [0, 0];
+    var10.k = var19;
+    var6.a = var10;
+    var10 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var19 = [100, 100];
+    var10.k = var19;
+    var6.s = var10;
+    var10 = {
+        'a': 0,
+        'k': 7.408,
+        'ix': 6
+    };
+    var6.r = var10;
+    var10 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var10;
+    var10 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var10;
+    var10 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var10;
+    var6.nm = var7;
+    var5[2] = var6;
+    var4.it = var5;
+    var3[2] = var4;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 3',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 4,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var5 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var10 = {};
+    var19 = new Array(6);
+    var20 = [4.457, 0];
+    var19[0] = var20;
+    var20 = [0, 0];
+    var19[1] = var20;
+    var20 = [0, 4.457];
+    var19[2] = var20;
+    var20 = new Array(2);
+    var22 = -4.457;
+    var20[0] = var22;
+    var20[1] = var15;
+    var19[3] = var20;
+    var20 = [0, 0];
+    var19[4] = var20;
+    var20 = [0];
+    var20[1] = var22;
+    var19[5] = var20;
+    var10.i = var19;
+    var19 = new Array(6);
+    var20 = [0, 0];
+    var19[0] = var20;
+    var20 = new Array(2);
+    var20[0] = var22;
+    var20[1] = var15;
+    var19[1] = var20;
+    var20 = [0];
+    var20[1] = var22;
+    var19[2] = var20;
+    var20 = [0, 0];
+    var19[3] = var20;
+    var20 = [4.457, 0];
+    var19[4] = var20;
+    var20 = [0, 4.457];
+    var19[5] = var20;
+    var10.o = var19;
+    var19 = new Array(6);
+    var20 = [13.763, 8.104];
+    var19[0] = var20;
+    var20 = new Array(2);
+    var22 = -13.763;
+    var20[0] = var22;
+    var28 = 8.104;
+    var20[1] = var28;
+    var19[1] = var20;
+    var20 = new Array(2);
+    var28 = -21.866;
+    var20[0] = var28;
+    var20[1] = var15;
+    var19[2] = var20;
+    var20 = new Array(2);
+    var20[0] = var22;
+    var22 = -8.104;
+    var20[1] = var22;
+    var19[3] = var20;
+    var20 = [13.763];
+    var20[1] = var22;
+    var19[4] = var20;
+    var20 = [21.866, 0];
+    var19[5] = var20;
+    var10.v = var19;
+    var10.c = var14;
+    var5.k = var10;
+    var6.ks = var5;
+    var5 = new Array(3);
+    var5[0] = var6;
+    var6 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var10 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var19 = [0.964691162109, 0.867218017578, 0.671722412109, 1];
+    var10.k = var19;
+    var6.c = var10;
+    var10 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var6.o = var10;
+    var5[1] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var10 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var19 = [270.773, 185.532];
+    var10.k = var19;
+    var6.p = var10;
+    var10 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var19 = [0, 0];
+    var10.k = var19;
+    var6.a = var10;
+    var10 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var19 = [100, 100];
+    var10.k = var19;
+    var6.s = var10;
+    var10 = {
+        'a': 0,
+        'k': -7.718,
+        'ix': 6
+    };
+    var6.r = var10;
+    var10 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var10;
+    var10 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var10;
+    var10 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var10;
+    var6.nm = var7;
+    var5[2] = var6;
+    var4.it = var5;
+    var3[3] = var4;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 4',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 5,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var5 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var10 = {};
+    var19 = new Array(5);
+    var20 = [0, 0];
+    var19[0] = var20;
+    var20 = new Array(2);
+    var22 = -14.448;
+    var20[0] = var22;
+    var22 = -3.415;
+    var20[1] = var22;
+    var19[1] = var20;
+    var20 = new Array(2);
+    var22 = -4.991;
+    var20[0] = var22;
+    var22 = 19.963;
+    var20[1] = var22;
+    var19[2] = var20;
+    var20 = [0, 0];
+    var19[3] = var20;
+    var20 = [0, 0];
+    var19[4] = var20;
+    var10.i = var19;
+    var19 = new Array(5);
+    var20 = [0, 0];
+    var19[0] = var20;
+    var20 = [14.447, 3.415];
+    var19[1] = var20;
+    var20 = [4.991];
+    var22 = -19.964;
+    var20[1] = var22;
+    var19[2] = var20;
+    var20 = [0, 0];
+    var19[3] = var20;
+    var20 = [0, 0];
+    var19[4] = var20;
+    var10.o = var19;
+    var20 = new Array(2);
+    var19 = -30.208;
+    var20[0] = var19;
+    var19 = 4.991;
+    var20[1] = var19;
+    var19 = new Array(5);
+    var19[0] = var20;
+    var20 = new Array(2);
+    var22 = -16.811;
+    var20[0] = var22;
+    var22 = 22.328;
+    var20[1] = var22;
+    var19[1] = var20;
+    var20 = [26.268];
+    var22 = -4.465;
+    var20[1] = var22;
+    var19[2] = var20;
+    var20 = new Array(2);
+    var22 = -15.498;
+    var20[0] = var22;
+    var22 = -25.743;
+    var20[1] = var22;
+    var19[3] = var20;
+    var20 = new Array(2);
+    var22 = -21.802;
+    var20[0] = var22;
+    var22 = 2.364;
+    var20[1] = var22;
+    var19[4] = var20;
+    var10.v = var19;
+    var10.c = var14;
+    var5.k = var10;
+    var6.ks = var5;
+    var5 = new Array(3);
+    var5[0] = var6;
+    var6 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var10 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var19 = [0.943572998047, 0.668426513672, 0.295318603516, 1];
+    var10.k = var19;
+    var6.c = var10;
+    var10 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var6.o = var10;
+    var5[1] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var10 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var19 = [157.079, 66.163];
+    var10.k = var19;
+    var6.p = var10;
+    var10 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var19 = [0, 0];
+    var10.k = var19;
+    var6.a = var10;
+    var10 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var19 = [100, 100];
+    var10.k = var19;
+    var6.s = var10;
+    var10 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var6.r = var10;
+    var10 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var10;
+    var10 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var10;
+    var10 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var10;
+    var6.nm = var7;
+    var5[2] = var6;
+    var4.it = var5;
+    var3[4] = var4;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 5',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 6,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var5 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var10 = {};
+    var19 = new Array(4);
+    var20 = [0, 0];
+    var19[0] = var20;
+    var20 = new Array(2);
+    var22 = -13.355;
+    var20[0] = var22;
+    var22 = 10.835;
+    var20[1] = var22;
+    var19[1] = var20;
+    var20 = new Array(2);
+    var22 = -4.536;
+    var20[0] = var22;
+    var22 = -2.519;
+    var20[1] = var22;
+    var19[2] = var20;
+    var20 = [13.103];
+    var22 = -5.039;
+    var20[1] = var22;
+    var19[3] = var20;
+    var10.i = var19;
+    var20 = [1.008];
+    var19 = -0.504;
+    var20[1] = var19;
+    var19 = new Array(4);
+    var19[0] = var20;
+    var20 = [13.355];
+    var22 = -10.835;
+    var20[1] = var22;
+    var19[1] = var20;
+    var20 = [4.536, 2.52];
+    var19[2] = var20;
+    var20 = new Array(2);
+    var22 = -13.103;
+    var20[0] = var22;
+    var22 = 5.04;
+    var20[1] = var22;
+    var19[3] = var20;
+    var10.o = var19;
+    var20 = new Array(2);
+    var19 = -27.844;
+    var20[0] = var19;
+    var19 = 16.63;
+    var20[1] = var19;
+    var19 = new Array(4);
+    var19[0] = var20;
+    var20 = [0.126, 1.512];
+    var19[1] = var20;
+    var20 = [23.308];
+    var22 = -14.363;
+    var20[1] = var22;
+    var19[2] = var20;
+    var20 = new Array(2);
+    var22 = -1.89;
+    var20[0] = var22;
+    var22 = 11.842;
+    var20[1] = var22;
+    var19[3] = var20;
+    var10.v = var19;
+    var10.c = var14;
+    var5.k = var10;
+    var6.ks = var5;
+    var5 = new Array(3);
+    var5[0] = var6;
+    var6 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var10 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var19 = [0.839215746113, 0.596078431373, 0.278431372549, 1];
+    var10.k = var19;
+    var6.c = var10;
+    var10 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var6.o = var10;
+    var5[1] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var10 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var19 = [250.407, 37.205];
+    var10.k = var19;
+    var6.p = var10;
+    var10 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var19 = [0, 0];
+    var10.k = var19;
+    var6.a = var10;
+    var10 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var19 = [100, 100];
+    var10.k = var19;
+    var6.s = var10;
+    var10 = {
+        'a': 0,
+        'k': 4.958,
+        'ix': 6
+    };
+    var6.r = var10;
+    var10 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var10;
+    var10 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var10;
+    var10 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var10;
+    var6.nm = var7;
+    var5[2] = var6;
+    var4.it = var5;
+    var3[5] = var4;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 6',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 7,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 3',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var5 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var10 = {};
+    var20 = [18.53];
+    var19 = -10.915;
+    var20[1] = var19;
+    var19 = new Array(7);
+    var19[0] = var20;
+    var20 = new Array(2);
+    var22 = -1.862;
+    var20[0] = var22;
+    var22 = -23.887;
+    var20[1] = var22;
+    var19[1] = var20;
+    var20 = [0, 0];
+    var19[2] = var20;
+    var20 = [0, 0];
+    var19[3] = var20;
+    var20 = [2.792, 23.266];
+    var19[4] = var20;
+    var20 = [32.883, 4.654];
+    var19[5] = var20;
+    var20 = [7.324, 0];
+    var19[6] = var20;
+    var10.i = var19;
+    var20 = new Array(2);
+    var19 = -22.646;
+    var20[0] = var19;
+    var19 = 13.34;
+    var20[1] = var19;
+    var19 = new Array(7);
+    var19[0] = var20;
+    var20 = [1.862, 23.887];
+    var19[1] = var20;
+    var20 = [0, 0];
+    var19[2] = var20;
+    var20 = [0, 0];
+    var19[3] = var20;
+    var20 = new Array(2);
+    var22 = -2.792;
+    var20[0] = var22;
+    var22 = -23.267;
+    var20[1] = var22;
+    var19[4] = var20;
+    var20 = new Array(2);
+    var22 = -5.977;
+    var20[0] = var22;
+    var22 = -0.846;
+    var20[1] = var22;
+    var19[5] = var20;
+    var20 = new Array(2);
+    var22 = -32.972;
+    var20[0] = var22;
+    var22 = 0.001;
+    var20[1] = var22;
+    var19[6] = var20;
+    var10.o = var19;
+    var20 = new Array(2);
+    var19 = -65.514;
+    var20[0] = var19;
+    var19 = -41.078;
+    var20[1] = var19;
+    var19 = new Array(7);
+    var19[0] = var20;
+    var20 = new Array(2);
+    var22 = -90.952;
+    var20[0] = var22;
+    var22 = 17.865;
+    var20[1] = var22;
+    var19[1] = var20;
+    var20 = new Array(2);
+    var22 = -79.487;
+    var20[0] = var22;
+    var22 = 67.289;
+    var20[1] = var22;
+    var19[2] = var20;
+    var20 = [97.121, 68.702];
+    var19[3] = var20;
+    var20 = [91.562];
+    var22 = -4.23;
+    var20[1] = var22;
+    var19[4] = var20;
+    var20 = [48.959];
+    var22 = -58.76;
+    var20[1] = var22;
+    var19[5] = var20;
+    var20 = [28.825];
+    var22 = -60.001;
+    var20[1] = var22;
+    var19[6] = var20;
+    var10.v = var19;
+    var10.c = var14;
+    var5.k = var10;
+    var6.ks = var5;
+    var5 = new Array(3);
+    var5[0] = var6;
+    var6 = {
+        'ty': 'gf',
+        'o': null,
+        'r': 1,
+        'bm': 0
+    };
+    var10 = {
+        'a': 0,
+        'k': 100,
+        'ix': 10
+    };
+    var6.o = var10;
+    var10 = {};
+    var10.p = var13;
+    var19 = {
+        'a': 0,
+        'k': null,
+        'ix': 9
+    };
+    var20 = [0, 0.944, 0.668, 0.295, 0.326, 0.966, 0.806, 0.588, 0.704, 0.989, 0.943, 0.88];
+    var19.k = var20;
+    var10.k = var19;
+    var6.g = var10;
+    var10 = {
+        'a': 0,
+        'k': null,
+        'ix': 5
+    };
+    var19 = new Array(2);
+    var20 = -5.92;
+    var19[0] = var20;
+    var20 = -56.561;
+    var19[1] = var20;
+    var10.k = var19;
+    var6.s = var10;
+    var10 = {
+        'a': 0,
+        'k': null,
+        'ix': 6
+    };
+    var19 = [7.707, 20.471];
+    var10.k = var19;
+    var6.e = var10;
+    var6.t = var11;
+    var28 = 'Gradient Fill 1';
+    var6.nm = var28;
+    var10 = 'ADBE Vector Graphic - G-Fill';
+    var6.mn = var10;
+    var6.hd = var9;
+    var5[1] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var19 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var20 = [234.258, 174.179];
+    var19.k = var20;
+    var6.p = var19;
+    var19 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var20 = [0, 0];
+    var19.k = var20;
+    var6.a = var19;
+    var19 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var20 = [100, 100];
+    var19.k = var20;
+    var6.s = var19;
+    var19 = {
+        'a': 0,
+        'k': 1.297,
+        'ix': 6
+    };
+    var6.r = var19;
+    var19 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var19;
+    var19 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var19;
+    var19 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var19;
+    var6.nm = var7;
+    var5[2] = var6;
+    var4.it = var5;
+    var3[6] = var4;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 7',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 8,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var5 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var20 = {};
+    var19 = new Array(7);
+    var22 = [0, 0];
+    var19[0] = var22;
+    var22 = [5.773, 0.601];
+    var19[1] = var22;
+    var22 = [2.289];
+    var42 = -0.787;
+    var22[1] = var42;
+    var19[2] = var22;
+    var22 = new Array(2);
+    var22[0] = var29;
+    var29 = 2.855;
+    var22[1] = var29;
+    var19[3] = var22;
+    var22 = new Array(2);
+    var29 = -11.388;
+    var22[0] = var29;
+    var29 = 1.027;
+    var22[1] = var29;
+    var19[4] = var22;
+    var22 = new Array(2);
+    var29 = -1.459;
+    var22[0] = var29;
+    var29 = -4.241;
+    var22[1] = var29;
+    var19[5] = var22;
+    var22 = [2.058, 0.478];
+    var19[6] = var22;
+    var20.i = var19;
+    var22 = new Array(7);
+    var19 = [0, 0];
+    var22[0] = var19;
+    var29 = new Array(2);
+    var19 = -5.774;
+    var29[0] = var19;
+    var42 = -0.601;
+    var29[1] = var42;
+    var22[1] = var29;
+    var29 = new Array(2);
+    var42 = -2.29;
+    var29[0] = var42;
+    var42 = 0.788;
+    var29[1] = var42;
+    var22[2] = var29;
+    var29 = [0.466];
+    var42 = -2.855;
+    var29[1] = var42;
+    var22[3] = var29;
+    var29 = [9.065];
+    var42 = -0.817;
+    var29[1] = var42;
+    var22[4] = var29;
+    var29 = [1.459, 4.24];
+    var22[5] = var29;
+    var29 = new Array(2);
+    var42 = -2.057;
+    var29[0] = var42;
+    var42 = -0.478;
+    var29[1] = var42;
+    var22[6] = var29;
+    var20.o = var22;
+    var22 = new Array(7);
+    var29 = [8.218, 6.669];
+    var22[0] = var29;
+    var29 = new Array(2);
+    var42 = -0.979;
+    var29[0] = var42;
+    var29[1] = var38;
+    var22[1] = var29;
+    var29 = new Array(2);
+    var38 = -13.583;
+    var29[0] = var38;
+    var38 = 6.101;
+    var29[1] = var38;
+    var22[2] = var29;
+    var29 = new Array(2);
+    var38 = -17.785;
+    var29[0] = var38;
+    var38 = 2.695;
+    var29[1] = var38;
+    var22[3] = var29;
+    var29 = [0.303];
+    var38 = -8.211;
+    var29[1] = var38;
+    var22[4] = var29;
+    var29 = [16.791, 2.501];
+    var22[5] = var29;
+    var29 = [13.305, 8.55];
+    var22[6] = var29;
+    var20.v = var22;
+    var20.c = var14;
+    var5.k = var20;
+    var6.ks = var5;
+    var5 = new Array(3);
+    var5[0] = var6;
+    var6 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var22 = [0.870588295133, 0.658823529412, 0.372549019608, 1];
+    var20.k = var22;
+    var6.c = var20;
+    var20 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var6.o = var20;
+    var5[1] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var22 = [339.486, 134.74];
+    var20.k = var22;
+    var6.p = var20;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var22 = [0, 0];
+    var20.k = var22;
+    var6.a = var20;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var22 = [100, 100];
+    var20.k = var22;
+    var6.s = var20;
+    var20 = {
+        'a': 0,
+        'k': 5.45,
+        'ix': 6
+    };
+    var6.r = var20;
+    var20 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var20;
+    var6.nm = var7;
+    var5[2] = var6;
+    var4.it = var5;
+    var3[7] = var4;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 8',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 9,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var5 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var20 = {};
+    var22 = new Array(7);
+    var29 = [0, 0];
+    var22[0] = var29;
+    var29 = new Array(2);
+    var38 = -6.001;
+    var29[0] = var38;
+    var38 = 2.88;
+    var29[1] = var38;
+    var22[1] = var29;
+    var29 = new Array(2);
+    var38 = -2.76;
+    var29[0] = var38;
+    var29[1] = var15;
+    var22[2] = var29;
+    var29 = [1.56, 3.001];
+    var22[3] = var29;
+    var29 = [9.961];
+    var38 = -3;
+    var29[1] = var38;
+    var22[4] = var29;
+    var29 = [0];
+    var42 = -5.281;
+    var29[1] = var42;
+    var22[5] = var29;
+    var29 = new Array(2);
+    var42 = -2.04;
+    var29[0] = var42;
+    var42 = 1.32;
+    var29[1] = var42;
+    var22[6] = var29;
+    var20.i = var22;
+    var22 = new Array(7);
+    var29 = [0, 0];
+    var22[0] = var29;
+    var29 = [6.001];
+    var42 = -2.881;
+    var29[1] = var42;
+    var22[1] = var29;
+    var29 = [2.761, 0];
+    var22[2] = var29;
+    var29 = new Array(2);
+    var42 = -1.56;
+    var29[0] = var42;
+    var29[1] = var38;
+    var22[3] = var29;
+    var29 = new Array(2);
+    var38 = -9.962;
+    var29[0] = var38;
+    var38 = 3.001;
+    var29[1] = var38;
+    var22[4] = var29;
+    var29 = [0, 5.281];
+    var22[5] = var29;
+    var29 = [2.04];
+    var38 = -1.321;
+    var29[1] = var38;
+    var22[6] = var29;
+    var20.o = var22;
+    var29 = new Array(2);
+    var22 = -8.761;
+    var29[0] = var22;
+    var22 = 9.181;
+    var29[1] = var22;
+    var22 = new Array(7);
+    var22[0] = var29;
+    var29 = [1.801, 3.18];
+    var22[1] = var29;
+    var29 = [14.763, 0.179];
+    var22[2] = var29;
+    var29 = [18.243];
+    var38 = -4.382;
+    var29[1] = var38;
+    var22[3] = var29;
+    var29 = new Array(2);
+    var38 = -6;
+    var29[0] = var38;
+    var38 = -10.982;
+    var29[1] = var38;
+    var22[4] = var29;
+    var29 = new Array(2);
+    var38 = -19.803;
+    var29[0] = var38;
+    var38 = 7.261;
+    var29[1] = var38;
+    var22[5] = var29;
+    var29 = new Array(2);
+    var38 = -13.802;
+    var29[0] = var38;
+    var38 = 12.662;
+    var29[1] = var38;
+    var22[6] = var29;
+    var20.v = var22;
+    var20.c = var14;
+    var5.k = var20;
+    var6.ks = var5;
+    var5 = new Array(3);
+    var5[0] = var6;
+    var6 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var22 = [0.870588295133, 0.658823529412, 0.372549019608, 1];
+    var20.k = var22;
+    var6.c = var20;
+    var20 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var6.o = var20;
+    var5[1] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var22 = [111.877, 168.616];
+    var20.k = var22;
+    var6.p = var20;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var22 = [0, 0];
+    var20.k = var22;
+    var6.a = var20;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var22 = [100, 100];
+    var20.k = var22;
+    var6.s = var20;
+    var20 = {
+        'a': 0,
+        'k': -8.322,
+        'ix': 6
+    };
+    var6.r = var20;
+    var20 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var20;
+    var6.nm = var7;
+    var5[2] = var6;
+    var4.it = var5;
+    var3[8] = var4;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 9',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 10,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var5 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var20 = {};
+    var29 = [1.412];
+    var38 = -1.547;
+    var29[1] = var38;
+    var22 = new Array(8);
+    var22[0] = var29;
+    var29 = [0, 0];
+    var22[1] = var29;
+    var29 = [1.547, 1.412];
+    var22[2] = var29;
+    var29 = [0, 0];
+    var22[3] = var29;
+    var29 = new Array(2);
+    var42 = -1.411;
+    var29[0] = var42;
+    var48 = 1.547;
+    var29[1] = var48;
+    var22[4] = var29;
+    var29 = [0, 0];
+    var22[5] = var29;
+    var29 = new Array(2);
+    var49 = -1.546;
+    var29[0] = var49;
+    var49 = -1.412;
+    var29[1] = var49;
+    var22[6] = var29;
+    var29 = [0, 0];
+    var22[7] = var29;
+    var20.i = var22;
+    var22 = new Array(8);
+    var29 = [0, 0];
+    var22[0] = var29;
+    var29 = new Array(2);
+    var29[0] = var42;
+    var29[1] = var48;
+    var22[1] = var29;
+    var29 = [0, 0];
+    var22[2] = var29;
+    var29 = new Array(2);
+    var29[0] = var38;
+    var29[1] = var42;
+    var22[3] = var29;
+    var29 = [0, 0];
+    var22[4] = var29;
+    var29 = [1.412];
+    var29[1] = var38;
+    var22[5] = var29;
+    var29 = [0, 0];
+    var22[6] = var29;
+    var29 = [1.547, 1.412];
+    var22[7] = var29;
+    var20.o = var22;
+    var29 = [8.367];
+    var22 = -3.007;
+    var29[1] = var22;
+    var22 = new Array(8);
+    var22[0] = var29;
+    var29 = new Array(2);
+    var38 = -2.234;
+    var29[0] = var38;
+    var38 = 8.606;
+    var29[1] = var38;
+    var22[1] = var29;
+    var29 = new Array(2);
+    var38 = -7.612;
+    var29[0] = var38;
+    var38 = 8.851;
+    var29[1] = var38;
+    var22[2] = var29;
+    var29 = new Array(2);
+    var38 = -8.122;
+    var29[0] = var38;
+    var38 = 8.386;
+    var29[1] = var38;
+    var22[3] = var29;
+    var29 = new Array(2);
+    var38 = -8.367;
+    var29[0] = var38;
+    var38 = 3.006;
+    var29[1] = var38;
+    var22[4] = var29;
+    var29 = [2.232];
+    var38 = -8.606;
+    var29[1] = var38;
+    var22[5] = var29;
+    var29 = [7.612];
+    var38 = -8.851;
+    var29[1] = var38;
+    var22[6] = var29;
+    var29 = [8.121];
+    var38 = -8.386;
+    var29[1] = var38;
+    var22[7] = var29;
+    var20.v = var22;
+    var20.c = var14;
+    var5.k = var20;
+    var6.ks = var5;
+    var5 = new Array(3);
+    var5[0] = var6;
+    var6 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var22 = [0.423529441684, 0.780392216701, 0.501960784314, 1];
+    var20.k = var22;
+    var6.c = var20;
+    var20 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var6.o = var20;
+    var5[1] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var22 = [342.645, 74.443];
+    var20.k = var22;
+    var6.p = var20;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var22 = [0, 0];
+    var20.k = var22;
+    var6.a = var20;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var22 = [100, 100];
+    var20.k = var22;
+    var6.s = var20;
+    var57 = 11.141;
+    var20 = {
+        'a': 0,
+        'k': 11.141,
+        'ix': 6
+    };
+    var6.r = var20;
+    var20 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var20;
+    var6.nm = var7;
+    var5[2] = var6;
+    var4.it = var5;
+    var3[9] = var4;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 10',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 11,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var5 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var20 = {};
+    var29 = [1.922];
+    var38 = -0.832;
+    var29[1] = var38;
+    var22 = new Array(8);
+    var22[0] = var29;
+    var29 = [0, 0];
+    var22[1] = var29;
+    var29 = [0.832, 1.921];
+    var22[2] = var29;
+    var29 = [0, 0];
+    var22[3] = var29;
+    var29 = new Array(2);
+    var42 = -1.922;
+    var29[0] = var42;
+    var48 = 0.833;
+    var29[1] = var48;
+    var22[4] = var29;
+    var29 = [0, 0];
+    var22[5] = var29;
+    var29 = new Array(2);
+    var49 = -0.833;
+    var29[0] = var49;
+    var29[1] = var42;
+    var22[6] = var29;
+    var29 = [0, 0];
+    var22[7] = var29;
+    var20.i = var22;
+    var22 = new Array(8);
+    var29 = [0, 0];
+    var22[0] = var29;
+    var29 = new Array(2);
+    var29[0] = var42;
+    var29[1] = var48;
+    var22[1] = var29;
+    var29 = [0, 0];
+    var22[2] = var29;
+    var29 = new Array(2);
+    var29[0] = var38;
+    var29[1] = var42;
+    var22[3] = var29;
+    var29 = [0, 0];
+    var22[4] = var29;
+    var29 = [1.922];
+    var29[1] = var38;
+    var22[5] = var29;
+    var29 = [0, 0];
+    var22[6] = var29;
+    var29 = [0.832, 1.921];
+    var22[7] = var29;
+    var20.o = var22;
+    var22 = new Array(8);
+    var29 = [8.864, 0.686];
+    var22[0] = var29;
+    var29 = new Array(2);
+    var38 = -5.563;
+    var29[0] = var38;
+    var38 = 6.934;
+    var29[1] = var38;
+    var22[1] = var29;
+    var29 = new Array(2);
+    var38 = -10.571;
+    var29[0] = var38;
+    var38 = 4.954;
+    var29[1] = var38;
+    var22[2] = var29;
+    var29 = new Array(2);
+    var38 = -10.845;
+    var29[0] = var38;
+    var38 = 4.321;
+    var29[1] = var38;
+    var22[3] = var29;
+    var29 = new Array(2);
+    var38 = -8.864;
+    var29[0] = var38;
+    var29[1] = var36;
+    var22[4] = var29;
+    var29 = [5.563];
+    var36 = -6.935;
+    var29[1] = var36;
+    var22[5] = var29;
+    var29 = [10.571];
+    var36 = -4.954;
+    var29[1] = var36;
+    var22[6] = var29;
+    var29 = [10.845];
+    var36 = -4.321;
+    var29[1] = var36;
+    var22[7] = var29;
+    var20.v = var22;
+    var20.c = var14;
+    var5.k = var20;
+    var6.ks = var5;
+    var5 = new Array(3);
+    var5[0] = var6;
+    var6 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var22 = [0.423529441684, 0.780392216701, 0.501960784314, 1];
+    var20.k = var22;
+    var6.c = var20;
+    var20 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var6.o = var20;
+    var5[1] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var22 = [127.093, 85.573];
+    var20.k = var22;
+    var6.p = var20;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var22 = [0, 0];
+    var20.k = var22;
+    var6.a = var20;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var22 = [100, 100];
+    var20.k = var22;
+    var6.s = var20;
+    var20 = {
+        'a': 0,
+        'k': 12.524,
+        'ix': 6
+    };
+    var6.r = var20;
+    var20 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var20;
+    var6.nm = var7;
+    var5[2] = var6;
+    var4.it = var5;
+    var3[10] = var4;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 11',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 12,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var5 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var20 = {};
+    var29 = [2.086];
+    var22 = -0.188;
+    var29[1] = var22;
+    var22 = new Array(8);
+    var22[0] = var29;
+    var29 = [0, 0];
+    var22[1] = var29;
+    var29 = [0.188, 2.086];
+    var22[2] = var29;
+    var29 = [0, 0];
+    var22[3] = var29;
+    var29 = new Array(2);
+    var38 = -2.085;
+    var29[0] = var38;
+    var42 = 0.188;
+    var29[1] = var42;
+    var22[4] = var29;
+    var29 = [0, 0];
+    var22[5] = var29;
+    var29 = new Array(2);
+    var36 = -0.189;
+    var29[0] = var36;
+    var29[1] = var38;
+    var22[6] = var29;
+    var29 = [0, 0];
+    var22[7] = var29;
+    var20.i = var22;
+    var22 = new Array(8);
+    var29 = [0, 0];
+    var22[0] = var29;
+    var29 = new Array(2);
+    var38 = -2.086;
+    var29[0] = var38;
+    var29[1] = var42;
+    var22[1] = var29;
+    var29 = [0, 0];
+    var22[2] = var29;
+    var29 = new Array(2);
+    var29[0] = var36;
+    var29[1] = var38;
+    var22[3] = var29;
+    var29 = [0, 0];
+    var22[4] = var29;
+    var29 = [2.086];
+    var29[1] = var36;
+    var22[5] = var29;
+    var29 = [0, 0];
+    var22[6] = var29;
+    var29 = [0.188, 2.086];
+    var22[7] = var29;
+    var20.o = var22;
+    var22 = new Array(8);
+    var29 = [8.203, 3.429];
+    var22[0] = var29;
+    var29 = new Array(2);
+    var36 = -7.456;
+    var29[0] = var36;
+    var36 = 4.843;
+    var29[1] = var36;
+    var22[1] = var29;
+    var29 = new Array(2);
+    var36 = -11.59;
+    var29[0] = var36;
+    var36 = 1.393;
+    var29[1] = var36;
+    var22[2] = var29;
+    var29 = new Array(2);
+    var36 = -11.652;
+    var29[0] = var36;
+    var36 = 0.706;
+    var29[1] = var36;
+    var22[3] = var29;
+    var29 = new Array(2);
+    var36 = -8.203;
+    var29[0] = var36;
+    var36 = -3.428;
+    var29[1] = var36;
+    var22[4] = var29;
+    var29 = [7.456];
+    var36 = -4.842;
+    var29[1] = var36;
+    var22[5] = var29;
+    var29 = [11.591];
+    var36 = -1.393;
+    var29[1] = var36;
+    var22[6] = var29;
+    var29 = [11.653];
+    var36 = -0.706;
+    var29[1] = var36;
+    var22[7] = var29;
+    var20.v = var22;
+    var20.c = var14;
+    var5.k = var20;
+    var6.ks = var5;
+    var5 = new Array(3);
+    var5[0] = var6;
+    var6 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var22 = [0.882353001015, 0.501960784314, 0.721568627451, 1];
+    var20.k = var22;
+    var6.c = var20;
+    var20 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var6.o = var20;
+    var5[1] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var22 = [270.195, 73.169];
+    var20.k = var22;
+    var6.p = var20;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var22 = [0, 0];
+    var20.k = var22;
+    var6.a = var20;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var22 = [100, 100];
+    var20.k = var22;
+    var6.s = var20;
+    var20 = {
+        'a': 0,
+        'k': -11.334,
+        'ix': 6
+    };
+    var6.r = var20;
+    var20 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var20;
+    var6.nm = var7;
+    var5[2] = var6;
+    var4.it = var5;
+    var3[11] = var4;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 13',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 13,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var5 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var22 = {};
+    var29 = [0.861];
+    var38 = -1.909;
+    var29[1] = var38;
+    var20 = new Array(8);
+    var20[0] = var29;
+    var29 = [0, 0];
+    var20[1] = var29;
+    var29 = [1.909, 0.861];
+    var20[2] = var29;
+    var29 = [0, 0];
+    var20[3] = var29;
+    var29 = new Array(2);
+    var36 = -0.861;
+    var29[0] = var36;
+    var42 = 1.909;
+    var29[1] = var42;
+    var20[4] = var29;
+    var29 = [0, 0];
+    var20[5] = var29;
+    var29 = new Array(2);
+    var29[0] = var38;
+    var48 = -0.86;
+    var29[1] = var48;
+    var20[6] = var29;
+    var29 = [0, 0];
+    var20[7] = var29;
+    var22.i = var20;
+    var20 = new Array(8);
+    var29 = [0, 0];
+    var20[0] = var29;
+    var29 = new Array(2);
+    var29[0] = var36;
+    var29[1] = var42;
+    var20[1] = var29;
+    var29 = [0, 0];
+    var20[2] = var29;
+    var29 = new Array(2);
+    var29[0] = var38;
+    var29[1] = var36;
+    var20[3] = var29;
+    var29 = [0, 0];
+    var20[4] = var29;
+    var29 = [0.861];
+    var36 = -1.91;
+    var29[1] = var36;
+    var20[5] = var29;
+    var29 = [0, 0];
+    var20[6] = var29;
+    var29 = [1.909, 0.861];
+    var20[7] = var29;
+    var22.o = var20;
+    var20 = [7.017];
+    var29 = -5.46;
+    var20[1] = var29;
+    var29 = new Array(8);
+    var29[0] = var20;
+    var20 = [0.555, 8.873];
+    var29[1] = var20;
+    var20 = new Array(2);
+    var36 = -4.482;
+    var20[0] = var36;
+    var36 = 10.779;
+    var20[1] = var36;
+    var29[2] = var20;
+    var20 = new Array(2);
+    var36 = -5.11;
+    var20[0] = var36;
+    var36 = 10.496;
+    var20[1] = var36;
+    var29[3] = var20;
+    var36 = new Array(2);
+    var20 = -7.016;
+    var36[0] = var20;
+    var20 = 5.46;
+    var36[1] = var20;
+    var29[4] = var36;
+    var36 = new Array(2);
+    var38 = -0.555;
+    var36[0] = var38;
+    var42 = -8.873;
+    var36[1] = var42;
+    var29[5] = var36;
+    var36 = [4.482];
+    var42 = -10.78;
+    var36[1] = var42;
+    var29[6] = var36;
+    var36 = [5.111];
+    var42 = -10.496;
+    var36[1] = var42;
+    var29[7] = var36;
+    var22.v = var29;
+    var22.c = var14;
+    var5.k = var22;
+    var6.ks = var5;
+    var5 = new Array(3);
+    var5[0] = var6;
+    var6 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var22 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var29 = [1, 0.996078491211, 0.980392216701, 1];
+    var22.k = var29;
+    var6.c = var22;
+    var22 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var6.o = var22;
+    var5[1] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var22 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var29 = [203.922, 72.615];
+    var22.k = var29;
+    var6.p = var22;
+    var22 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var29 = [0, 0];
+    var22.k = var29;
+    var6.a = var22;
+    var22 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var29 = [100, 100];
+    var22.k = var29;
+    var6.s = var22;
+    var22 = {
+        'a': 0,
+        'k': -15.232,
+        'ix': 6
+    };
+    var6.r = var22;
+    var22 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var22;
+    var22 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var22;
+    var22 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var22;
+    var6.nm = var7;
+    var5[2] = var6;
+    var4.it = var5;
+    var3[12] = var4;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 14',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 14,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var5 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var22 = {};
+    var36 = new Array(2);
+    var29 = -0.472;
+    var36[0] = var29;
+    var29 = -7.486;
+    var36[1] = var29;
+    var29 = new Array(7);
+    var29[0] = var36;
+    var36 = new Array(2);
+    var42 = -1.493;
+    var36[0] = var42;
+    var42 = -12.621;
+    var36[1] = var42;
+    var29[1] = var36;
+    var36 = new Array(2);
+    var42 = -0.09;
+    var36[0] = var42;
+    var42 = -1.93;
+    var36[1] = var42;
+    var29[2] = var36;
+    var36 = [6.07];
+    var42 = -1.152;
+    var36[1] = var42;
+    var29[3] = var36;
+    var36 = [2.267, 9.798];
+    var29[4] = var36;
+    var36 = new Array(2);
+    var42 = -1.486;
+    var36[0] = var42;
+    var42 = 5.819;
+    var36[1] = var42;
+    var29[5] = var36;
+    var36 = new Array(2);
+    var42 = -6.758;
+    var36[0] = var42;
+    var42 = 1.982;
+    var36[1] = var42;
+    var29[6] = var36;
+    var22.i = var29;
+    var29 = new Array(7);
+    var36 = [0, 0];
+    var29[0] = var36;
+    var36 = [1.429, 12.089];
+    var29[1] = var36;
+    var36 = [0.09, 1.931];
+    var29[2] = var36;
+    var36 = new Array(2);
+    var42 = -6.069;
+    var36[0] = var42;
+    var42 = 1.152;
+    var36[1] = var42;
+    var29[3] = var36;
+    var36 = new Array(2);
+    var42 = -2.266;
+    var36[0] = var42;
+    var42 = -9.798;
+    var36[1] = var42;
+    var29[4] = var36;
+    var36 = [1.487];
+    var42 = -5.82;
+    var36[1] = var42;
+    var29[5] = var36;
+    var36 = [6.759];
+    var42 = -1.983;
+    var36[1] = var42;
+    var29[6] = var36;
+    var22.o = var29;
+    var36 = [10.054];
+    var29 = -24.216;
+    var36[1] = var29;
+    var29 = new Array(7);
+    var29[0] = var36;
+    var36 = [12.6];
+    var42 = -0.781;
+    var36[1] = var42;
+    var29[1] = var36;
+    var36 = [15.602, 25.63];
+    var29[2] = var36;
+    var36 = [8.305, 30.549];
+    var29[3] = var36;
+    var36 = new Array(2);
+    var42 = -10.305;
+    var36[0] = var42;
+    var42 = 20.021;
+    var36[1] = var42;
+    var29[4] = var36;
+    var36 = new Array(2);
+    var42 = -14.206;
+    var36[0] = var42;
+    var42 = -18.436;
+    var36[1] = var42;
+    var29[5] = var36;
+    var36 = new Array(2);
+    var42 = -1.686;
+    var36[0] = var42;
+    var42 = -29.703;
+    var36[1] = var42;
+    var29[6] = var36;
+    var22.v = var29;
+    var22.c = var14;
+    var5.k = var22;
+    var6.ks = var5;
+    var5 = new Array(3);
+    var5[0] = var6;
+    var6 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var22 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var29 = [0.940782135608, 0.854555317, 0.68206206677, 1];
+    var22.k = var29;
+    var6.c = var22;
+    var22 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var6.o = var22;
+    var5[1] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var22 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var29 = [51.067, 216.639];
+    var22.k = var29;
+    var6.p = var22;
+    var22 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var29 = [0, 0];
+    var22.k = var29;
+    var6.a = var22;
+    var22 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var29 = [100, 100];
+    var22.k = var29;
+    var6.s = var22;
+    var22 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var6.r = var22;
+    var22 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var22;
+    var22 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var22;
+    var22 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var22;
+    var6.nm = var7;
+    var5[2] = var6;
+    var4.it = var5;
+    var3[13] = var4;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 15',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 15,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var5 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var29 = {};
+    var36 = new Array(2);
+    var22 = -2.036;
+    var36[0] = var22;
+    var42 = -7.219;
+    var36[1] = var42;
+    var22 = new Array(7);
+    var22[0] = var36;
+    var36 = new Array(2);
+    var48 = -2.777;
+    var36[0] = var48;
+    var48 = -12.401;
+    var36[1] = var48;
+    var22[1] = var36;
+    var36 = new Array(2);
+    var36[0] = var38;
+    var38 = -1.851;
+    var36[1] = var38;
+    var22[2] = var36;
+    var36 = new Array(2);
+    var38 = -6.109;
+    var36[0] = var38;
+    var38 = 0.925;
+    var36[1] = var38;
+    var22[3] = var36;
+    var36 = [1.111, 9.995];
+    var22[4] = var36;
+    var36 = [3.332, 4.997];
+    var22[5] = var36;
+    var36 = [7.034];
+    var38 = -0.37;
+    var36[1] = var38;
+    var22[6] = var36;
+    var29.i = var22;
+    var36 = new Array(7);
+    var22 = [0, 0];
+    var36[0] = var22;
+    var22 = [2.659, 11.879];
+    var36[1] = var22;
+    var22 = [0.555, 1.851];
+    var36[2] = var22;
+    var22 = [6.108];
+    var38 = -0.926;
+    var22[1] = var38;
+    var36[3] = var22;
+    var22 = new Array(2);
+    var38 = -1.11;
+    var22[0] = var38;
+    var38 = -9.995;
+    var22[1] = var38;
+    var36[4] = var22;
+    var22 = new Array(2);
+    var38 = -3.331;
+    var22[0] = var38;
+    var38 = -4.998;
+    var22[1] = var38;
+    var36[5] = var22;
+    var38 = new Array(2);
+    var22 = -7.034;
+    var38[0] = var22;
+    var22 = 0.37;
+    var38[1] = var22;
+    var36[6] = var38;
+    var29.o = var36;
+    var38 = new Array(2);
+    var36 = -16.474;
+    var38[0] = var36;
+    var36 = -21.287;
+    var38[1] = var36;
+    var36 = new Array(7);
+    var36[0] = var38;
+    var38 = new Array(2);
+    var48 = -11.106;
+    var38[0] = var48;
+    var48 = 1.666;
+    var38[1] = var48;
+    var36[1] = var38;
+    var38 = new Array(2);
+    var48 = -5.183;
+    var38[0] = var48;
+    var48 = 27.58;
+    var38[1] = var48;
+    var36[2] = var38;
+    var38 = [3.332, 29.801];
+    var36[3] = var38;
+    var38 = [17.399, 13.697];
+    var36[4] = var38;
+    var38 = [8.329];
+    var48 = -23.877;
+    var38[1] = var48;
+    var36[5] = var38;
+    var38 = new Array(2);
+    var38[0] = var42;
+    var42 = -30.356;
+    var38[1] = var42;
+    var36[6] = var38;
+    var29.v = var36;
+    var29.c = var14;
+    var5.k = var29;
+    var6.ks = var5;
+    var5 = new Array(3);
+    var5[0] = var6;
+    var6 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var29 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var36 = [0.940782135608, 0.854555317, 0.68206206677, 1];
+    var29.k = var36;
+    var6.c = var29;
+    var29 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var6.o = var29;
+    var5[1] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var29 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var36 = [400.513, 167.15];
+    var29.k = var36;
+    var6.p = var29;
+    var29 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var36 = [0, 0];
+    var29.k = var36;
+    var6.a = var29;
+    var29 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var36 = [100, 100];
+    var29.k = var36;
+    var6.s = var29;
+    var29 = {
+        'a': 0,
+        'k': -1.502,
+        'ix': 6
+    };
+    var6.r = var29;
+    var29 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var29;
+    var29 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var29;
+    var29 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var29;
+    var6.nm = var7;
+    var5[2] = var6;
+    var4.it = var5;
+    var3[14] = var4;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 16',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 16,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 3',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var5 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var29 = {};
+    var36 = new Array(15);
+    var38 = [0, 0];
+    var36[0] = var38;
+    var38 = [12.37];
+    var42 = -19.161;
+    var38[1] = var42;
+    var36[1] = var38;
+    var38 = [0, 0];
+    var36[2] = var38;
+    var38 = [0, 0];
+    var36[3] = var38;
+    var38 = [0, 0];
+    var36[4] = var38;
+    var38 = [2.911];
+    var42 = -11.886;
+    var38[1] = var42;
+    var36[5] = var38;
+    var38 = [0, 0];
+    var36[6] = var38;
+    var38 = new Array(2);
+    var42 = -12.855;
+    var38[0] = var42;
+    var42 = 4.124;
+    var38[1] = var42;
+    var36[7] = var38;
+    var38 = [2.426, 15.281];
+    var36[8] = var38;
+    var38 = [3.881, 2.911];
+    var36[9] = var38;
+    var38 = [0, 0];
+    var36[10] = var38;
+    var38 = [0, 0];
+    var36[11] = var38;
+    var38 = [0, 0];
+    var36[12] = var38;
+    var38 = [33.23, 17.705];
+    var36[13] = var38;
+    var38 = [5.545, 0];
+    var36[14] = var38;
+    var29.i = var36;
+    var36 = new Array(15);
+    var38 = [0, 0];
+    var36[0] = var38;
+    var38 = new Array(2);
+    var42 = -12.371;
+    var38[0] = var42;
+    var42 = 19.162;
+    var38[1] = var42;
+    var36[1] = var38;
+    var38 = new Array(2);
+    var42 = -93.384;
+    var38[0] = var42;
+    var42 = 22.073;
+    var38[1] = var42;
+    var36[2] = var38;
+    var38 = new Array(2);
+    var42 = -41.234;
+    var38[0] = var42;
+    var42 = 11.4;
+    var38[1] = var42;
+    var36[3] = var38;
+    var38 = new Array(2);
+    var42 = -2.183;
+    var38[0] = var42;
+    var56 = -0.242;
+    var38[1] = var56;
+    var36[4] = var38;
+    var38 = new Array(2);
+    var42 = -2.911;
+    var38[0] = var42;
+    var48 = 11.885;
+    var38[1] = var48;
+    var36[5] = var38;
+    var38 = [0, 0];
+    var36[6] = var38;
+    var38 = [12.854];
+    var48 = -4.124;
+    var38[1] = var48;
+    var36[7] = var38;
+    var38 = new Array(2);
+    var48 = -2.426;
+    var38[0] = var48;
+    var48 = -15.281;
+    var38[1] = var48;
+    var36[8] = var38;
+    var38 = new Array(2);
+    var38[0] = var46;
+    var38[1] = var42;
+    var36[9] = var38;
+    var38 = new Array(2);
+    var42 = -5.821;
+    var38[0] = var42;
+    var42 = -90.958;
+    var38[1] = var42;
+    var36[10] = var38;
+    var38 = new Array(2);
+    var42 = -16.008;
+    var38[0] = var42;
+    var42 = -56.758;
+    var38[1] = var42;
+    var36[11] = var38;
+    var38 = [0, 0];
+    var36[12] = var38;
+    var38 = new Array(2);
+    var42 = -5.045;
+    var38[0] = var42;
+    var42 = -2.688;
+    var38[1] = var42;
+    var36[13] = var38;
+    var38 = new Array(2);
+    var42 = -30.98;
+    var38[0] = var42;
+    var42 = 0.002;
+    var38[1] = var42;
+    var36[14] = var38;
+    var29.o = var36;
+    var38 = new Array(2);
+    var36 = -43.975;
+    var38[0] = var36;
+    var36 = -85.877;
+    var38[1] = var36;
+    var36 = new Array(15);
+    var36[0] = var38;
+    var38 = new Array(2);
+    var42 = -108.979;
+    var38[0] = var42;
+    var42 = -84.179;
+    var38[1] = var42;
+    var36[1] = var38;
+    var38 = new Array(2);
+    var42 = -101.46;
+    var38[0] = var42;
+    var42 = -55.315;
+    var38[1] = var42;
+    var36[2] = var38;
+    var38 = new Array(2);
+    var42 = -179.805;
+    var38[0] = var42;
+    var42 = 29.579;
+    var38[1] = var42;
+    var36[3] = var38;
+    var38 = new Array(2);
+    var42 = -217.401;
+    var38[0] = var42;
+    var42 = 78.575;
+    var38[1] = var42;
+    var36[4] = var38;
+    var38 = new Array(2);
+    var42 = -231.226;
+    var38[0] = var42;
+    var42 = 93.614;
+    var38[1] = var42;
+    var36[5] = var38;
+    var38 = new Array(2);
+    var42 = -229.286;
+    var38[0] = var42;
+    var42 = 115.201;
+    var38[1] = var42;
+    var36[6] = var38;
+    var38 = [209.738, 117.627];
+    var36[7] = var38;
+    var38 = [231.325, 90.218];
+    var36[8] = var38;
+    var38 = [212.89, 64.75];
+    var36[9] = var38;
+    var38 = [208.282, 57.473];
+    var36[10] = var38;
+    var38 = [134.06];
+    var42 = -18.447;
+    var38[1] = var42;
+    var36[11] = var38;
+    var38 = [50.136];
+    var42 = -74.234;
+    var38[1] = var42;
+    var36[12] = var38;
+    var38 = [38.252];
+    var42 = -117.651;
+    var38[1] = var42;
+    var36[13] = var38;
+    var38 = [22.258];
+    var42 = -121.478;
+    var38[1] = var42;
+    var36[14] = var38;
+    var29.v = var36;
+    var29.c = var14;
+    var5.k = var29;
+    var6.ks = var5;
+    var5 = new Array(3);
+    var5[0] = var6;
+    var6 = {
+        'ty': 'gf',
+        'o': null,
+        'r': 1,
+        'bm': 0
+    };
+    var29 = {
+        'a': 0,
+        'k': 100,
+        'ix': 10
+    };
+    var6.o = var29;
+    var29 = {};
+    var29.p = var33;
+    var33 = {
+        'a': 0,
+        'k': null,
+        'ix': 9
+    };
+    var36 = [0.017, 0.944, 0.668, 0.295, 0.097, 0.95, 0.72, 0.409, 0.176, 0.957, 0.772, 0.522, 0.588, 0.979, 0.886, 0.761, 1, 1, 1, 1];
+    var33.k = var36;
+    var29.k = var33;
+    var6.g = var29;
+    var29 = {
+        'a': 0,
+        'k': null,
+        'ix': 5
+    };
+    var33 = new Array(2);
+    var36 = -41.504;
+    var33[0] = var36;
+    var36 = -67.93;
+    var33[1] = var36;
+    var29.k = var33;
+    var6.s = var29;
+    var29 = {
+        'a': 0,
+        'k': null,
+        'ix': 6
+    };
+    var33 = new Array(2);
+    var36 = -24.177;
+    var33[0] = var36;
+    var36 = 84.289;
+    var33[1] = var36;
+    var29.k = var33;
+    var6.e = var29;
+    var6.t = var11;
+    var6.nm = var28;
+    var6.mn = var10;
+    var6.hd = var9;
+    var5[1] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var29 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var33 = [234.193, 121.865];
+    var29.k = var33;
+    var6.p = var29;
+    var29 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var33 = [0, 0];
+    var29.k = var33;
+    var6.a = var29;
+    var29 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var33 = [100, 100];
+    var29.k = var33;
+    var6.s = var29;
+    var29 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var6.r = var29;
+    var29 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var29;
+    var29 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var29;
+    var29 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var29;
+    var6.nm = var7;
+    var5[2] = var6;
+    var4.it = var5;
+    var3[15] = var4;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 17',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 17,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var5 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var29 = {};
+    var36 = new Array(2);
+    var46 = -2.09;
+    var36[0] = var46;
+    var42 = 0.135;
+    var36[1] = var42;
+    var33 = new Array(8);
+    var33[0] = var36;
+    var36 = [0, 0];
+    var33[1] = var36;
+    var36 = new Array(2);
+    var38 = -0.135;
+    var36[0] = var38;
+    var36[1] = var46;
+    var33[2] = var36;
+    var36 = [0, 0];
+    var33[3] = var36;
+    var36 = [2.09];
+    var36[1] = var38;
+    var33[4] = var36;
+    var36 = [0, 0];
+    var33[5] = var36;
+    var36 = [0.135, 2.089];
+    var33[6] = var36;
+    var36 = [0, 0];
+    var33[7] = var36;
+    var29.i = var33;
+    var33 = new Array(8);
+    var36 = [0, 0];
+    var33[0] = var36;
+    var36 = [2.09];
+    var36[1] = var38;
+    var33[1] = var36;
+    var36 = [0, 0];
+    var33[2] = var36;
+    var36 = [0.135, 2.09];
+    var33[3] = var36;
+    var36 = [0, 0];
+    var33[4] = var36;
+    var36 = new Array(2);
+    var36[0] = var46;
+    var36[1] = var42;
+    var33[5] = var36;
+    var36 = [0, 0];
+    var33[6] = var36;
+    var36 = new Array(2);
+    var36[0] = var38;
+    var38 = -2.089;
+    var36[1] = var38;
+    var33[7] = var36;
+    var29.o = var33;
+    var36 = new Array(2);
+    var33 = -8.113;
+    var36[0] = var33;
+    var33 = -3.637;
+    var36[1] = var33;
+    var33 = new Array(8);
+    var33[0] = var36;
+    var36 = [7.577];
+    var38 = -4.651;
+    var36[1] = var38;
+    var33[1] = var36;
+    var36 = [11.622];
+    var38 = -1.097;
+    var36[1] = var38;
+    var33[2] = var36;
+    var36 = [11.667];
+    var38 = -0.409;
+    var36[1] = var38;
+    var33[3] = var36;
+    var36 = [8.112, 3.637];
+    var33[4] = var36;
+    var36 = new Array(2);
+    var38 = -7.577;
+    var36[0] = var38;
+    var38 = 4.651;
+    var36[1] = var38;
+    var33[5] = var36;
+    var36 = new Array(2);
+    var38 = -11.623;
+    var36[0] = var38;
+    var38 = 1.097;
+    var36[1] = var38;
+    var33[6] = var36;
+    var36 = new Array(2);
+    var38 = -11.667;
+    var36[0] = var38;
+    var38 = 0.408;
+    var36[1] = var38;
+    var33[7] = var36;
+    var29.v = var33;
+    var29.c = var14;
+    var5.k = var29;
+    var6.ks = var5;
+    var5 = new Array(3);
+    var5[0] = var6;
+    var6 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var29 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var33 = [0.423529441684, 0.780392216701, 0.501960784314, 1];
+    var29.k = var33;
+    var6.c = var29;
+    var29 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var6.o = var29;
+    var5[1] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var29 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var33 = [212.521, 18.353];
+    var29.k = var33;
+    var6.p = var29;
+    var29 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var33 = [0, 0];
+    var29.k = var33;
+    var6.a = var29;
+    var29 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var33 = [100, 100];
+    var29.k = var33;
+    var6.s = var29;
+    var29 = {
+        'a': 0,
+        'k': 12.655,
+        'ix': 6
+    };
+    var6.r = var29;
+    var29 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var29;
+    var29 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var29;
+    var29 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var29;
+    var6.nm = var7;
+    var5[2] = var6;
+    var4.it = var5;
+    var3[16] = var4;
+    var2.shapes = var3;
+    var0[7] = var2;
+    var2 = {
+        'ddd': 0,
+        'ind': 9,
+        'ty': 4,
+        'nm': 'Arm Front 1',
+        'parent': 17,
+        'sr': 1,
+        'ks': null,
+        'ao': 0,
+        'shapes': null,
+        'ip': 0,
+        'op': 120,
+        'st': 0,
+        'ct': 1,
+        'bm': 0
+    };
+    var3 = {};
+    var4 = {
+        'a': 0,
+        'k': 100,
+        'ix': 11
+    };
+    var3.o = var4;
+    var4 = {
+        'a': 1,
+        'k': null,
+        'ix': 10
+    };
+    var6 = {};
+    var5 = {};
+    var29 = [0.302];
+    var5.x = var29;
+    var29 = [0.997];
+    var5.y = var29;
+    var6.i = var5;
+    var5 = {};
+    var29 = [0.333];
+    var5.x = var29;
+    var29 = [0];
+    var5.y = var29;
+    var6.o = var5;
+    var6.t = var15;
+    var5 = [16.722];
+    var6.s = var5;
+    var5 = new Array(6);
+    var5[0] = var6;
+    var6 = {};
+    var29 = {};
+    var33 = [0.726];
+    var29.x = var33;
+    var33 = [0.881];
+    var29.y = var33;
+    var6.i = var29;
+    var33 = {};
+    var29 = [0.409];
+    var33.x = var29;
+    var36 = new Array(1);
+    var29 = -0.002;
+    var36[0] = var29;
+    var33.y = var36;
+    var6.o = var33;
+    var6.t = var17;
+    var33 = [26.149];
+    var6.s = var33;
+    var5[1] = var6;
+    var6 = {};
+    var33 = {};
+    var36 = [0.627];
+    var33.x = var36;
+    var36 = [1];
+    var33.y = var36;
+    var6.i = var33;
+    var33 = {};
+    var36 = [0.367];
+    var33.x = var36;
+    var36 = new Array(1);
+    var38 = -0.855;
+    var36[0] = var38;
+    var33.y = var36;
+    var6.o = var33;
+    var6.t = var12;
+    var33 = [18.319];
+    var6.s = var33;
+    var5[2] = var6;
+    var6 = {};
+    var33 = {};
+    var36 = [0.833];
+    var33.x = var36;
+    var36 = [1.021];
+    var33.y = var36;
+    var6.i = var33;
+    var33 = {};
+    var36 = [0.333];
+    var33.x = var36;
+    var36 = [0];
+    var33.y = var36;
+    var6.o = var33;
+    var6.t = var16;
+    var33 = [20.332];
+    var6.s = var33;
+    var5[3] = var6;
+    var6 = {};
+    var33 = {};
+    var36 = [0.428];
+    var33.x = var36;
+    var36 = [1];
+    var33.y = var36;
+    var6.i = var33;
+    var33 = {};
+    var36 = [0.167];
+    var33.x = var36;
+    var36 = [0.036];
+    var33.y = var36;
+    var6.o = var33;
+    var6.t = var32;
+    var32 = [28.62];
+    var6.s = var32;
+    var5[4] = var6;
+    var6 = {};
+    var6.t = var30;
+    var32 = [16.722];
+    var6.s = var32;
+    var5[5] = var6;
+    var4.k = var5;
+    var3.r = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 2,
+        'l': 2
+    };
+    var5 = [263.545, 137.364, 0];
+    var4.k = var5;
+    var3.p = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 1,
+        'l': 2
+    };
+    var5 = [52.127, 57.736, 0];
+    var4.k = var5;
+    var3.a = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 6,
+        'l': 2
+    };
+    var5 = [100, 100, 100];
+    var4.k = var5;
+    var3.s = var4;
+    var2.ks = var3;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 1',
+        'np': 3,
+        'cix': 2,
+        'bm': 0,
+        'ix': 1,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var5 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var3 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var6 = {};
+    var32 = new Array(2);
+    var33 = -19.792;
+    var32[0] = var33;
+    var32[1] = var20;
+    var20 = new Array(5);
+    var20[0] = var32;
+    var32 = [0, 48.455];
+    var20[1] = var32;
+    var32 = [42.996, 17.061];
+    var20[2] = var32;
+    var32 = new Array(2);
+    var33 = -4.179;
+    var32[0] = var33;
+    var33 = -42.835;
+    var32[1] = var33;
+    var20[3] = var32;
+    var32 = new Array(2);
+    var33 = -19.369;
+    var32[0] = var33;
+    var33 = -32.785;
+    var32[1] = var33;
+    var20[4] = var32;
+    var6.i = var20;
+    var20 = new Array(5);
+    var32 = [0, 0];
+    var20[0] = var32;
+    var32 = [0];
+    var33 = -48.456;
+    var32[1] = var33;
+    var20[1] = var32;
+    var32 = new Array(2);
+    var33 = -34.261;
+    var32[0] = var33;
+    var33 = -13.596;
+    var32[1] = var33;
+    var20[2] = var32;
+    var32 = [2.73, 27.982];
+    var20[3] = var32;
+    var32 = [10.978, 18.581];
+    var20[4] = var32;
+    var6.o = var20;
+    var20 = new Array(5);
+    var32 = [17.104, 105.026];
+    var20[0] = var32;
+    var32 = [64.877, 46.334];
+    var20[1] = var32;
+    var32 = [4.137];
+    var33 = -92.89;
+    var32[1] = var33;
+    var20[2] = var32;
+    var32 = new Array(2);
+    var33 = -60.698;
+    var32[0] = var33;
+    var33 = -38.293;
+    var32[1] = var33;
+    var20[3] = var32;
+    var32 = new Array(2);
+    var33 = -29.304;
+    var32[0] = var33;
+    var33 = 77.045;
+    var32[1] = var33;
+    var20[4] = var32;
+    var6.v = var20;
+    var6.c = var14;
+    var3.k = var6;
+    var5.ks = var3;
+    var3 = new Array(4);
+    var3[0] = var5;
+    var5 = {
+        'ty': 'mm',
+        'mm': 4,
+        'nm': 'Merge Paths 1',
+        'mn': 'ADBE Vector Filter - Merge',
+        'hd': false
+    };
+    var3[1] = var5;
+    var5 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var20 = [0.411764735802, 0.556862745098, 1, 1];
+    var6.k = var20;
+    var5.c = var6;
+    var6 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var5.o = var6;
+    var3[2] = var5;
+    var5 = {};
+    var5.ty = var8;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var20 = [65.127, 106.736];
+    var6.k = var20;
+    var5.p = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var20 = [0, 0];
+    var6.k = var20;
+    var5.a = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var20 = [100, 100];
+    var6.k = var20;
+    var5.s = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var5.r = var6;
+    var6 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var5.o = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var5.sk = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var5.sa = var6;
+    var5.nm = var7;
+    var3[3] = var5;
+    var4.it = var3;
+    var3 = new Array(1);
+    var3[0] = var4;
+    var2.shapes = var3;
+    var0[8] = var2;
+    var2 = {
+        'ddd': 0,
+        'ind': 10,
+        'ty': 4,
+        'nm': 'Nose',
+        'parent': 14,
+        'sr': 1,
+        'ks': null,
+        'ao': 0,
+        'shapes': null,
+        'ip': 0,
+        'op': 120,
+        'st': 0,
+        'ct': 1,
+        'bm': 0
+    };
+    var3 = {};
+    var4 = {
+        'a': 0,
+        'k': 100,
+        'ix': 11
+    };
+    var3.o = var4;
+    var4 = {
+        'a': 0,
+        'k': 0,
+        'ix': 10
+    };
+    var3.r = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 2,
+        'l': 2
+    };
+    var5 = [180.394, 143.695, 0];
+    var4.k = var5;
+    var3.p = var4;
+    var4 = {
+        'a': 1,
+        'k': null,
+        'ix': 1,
+        'l': 2
+    };
+    var6 = {};
+    var5 = {
+        'x': 0.224,
+        'y': 1
+    };
+    var6.i = var5;
+    var5 = {
+        'x': 0.333,
+        'y': 0
+    };
+    var6.o = var5;
+    var6.t = var15;
+    var5 = [80, 60, 0];
+    var6.s = var5;
+    var5 = new Array(3);
+    var32 = -2.5;
+    var5[0] = var32;
+    var5[1] = var15;
+    var5[2] = var15;
+    var6.to = var5;
+    var5 = [2.5, 0, 0];
+    var6.ti = var5;
+    var5 = new Array(4);
+    var5[0] = var6;
+    var6 = {};
+    var20 = {
+        'x': 0.667,
+        'y': 0.667
+    };
+    var6.i = var20;
+    var20 = {
+        'x': 0.167,
+        'y': 0.167
+    };
+    var6.o = var20;
+    var6.t = var17;
+    var20 = [65, 60, 0];
+    var6.s = var20;
+    var20 = [0, 0, 0];
+    var6.to = var20;
+    var20 = [0, 0, 0];
+    var6.ti = var20;
+    var5[1] = var6;
+    var6 = {};
+    var20 = {
+        'x': 0.325,
+        'y': 0.997
+    };
+    var6.i = var20;
+    var20 = {
+        'x': 0.167,
+        'y': 0
+    };
+    var6.o = var20;
+    var6.t = var16;
+    var20 = [65, 60, 0];
+    var6.s = var20;
+    var20 = [2.5, 0, 0];
+    var6.to = var20;
+    var20 = new Array(3);
+    var20[0] = var32;
+    var20[1] = var15;
+    var20[2] = var15;
+    var6.ti = var20;
+    var5[2] = var6;
+    var6 = {};
+    var6.t = var30;
+    var20 = [80, 60, 0];
+    var6.s = var20;
+    var5[3] = var6;
+    var4.k = var5;
+    var3.a = var4;
+    var4 = {
+        'a': 1,
+        'k': null,
+        'ix': 6,
+        'l': 2
+    };
+    var6 = {};
+    var5 = {};
+    var20 = [0.224, 0.224, 0.667];
+    var5.x = var20;
+    var20 = [1.009, 1.027, 1];
+    var5.y = var20;
+    var6.i = var5;
+    var5 = {};
+    var20 = [0.333, 0.333, 0.333];
+    var5.x = var20;
+    var20 = [0, 0, 0];
+    var5.y = var20;
+    var6.o = var5;
+    var6.t = var15;
+    var5 = [100, 100, 100];
+    var6.s = var5;
+    var5 = new Array(4);
+    var5[0] = var6;
+    var6 = {};
+    var20 = {};
+    var33 = [0.833, 0.833, 0.833];
+    var20.x = var33;
+    var33 = [1, 1, 1];
+    var20.y = var33;
+    var6.i = var20;
+    var20 = {};
+    var33 = [0.167, 0.167, 0.167];
+    var20.x = var33;
+    var33 = [0, 0, 0];
+    var20.y = var33;
+    var6.o = var20;
+    var6.t = var17;
+    var20 = [103, 100, 100];
+    var6.s = var20;
+    var5[1] = var6;
+    var6 = {};
+    var20 = {};
+    var33 = [0.325, 0.325, 0.667];
+    var20.x = var33;
+    var33 = [1.014, 0.957, 1];
+    var20.y = var33;
+    var6.i = var20;
+    var20 = {};
+    var33 = [0.167, 0.167, 0.167];
+    var20.x = var33;
+    var33 = [0, 0, 0];
+    var20.y = var33;
+    var6.o = var20;
+    var6.t = var16;
+    var20 = [103, 100, 100];
+    var6.s = var20;
+    var5[2] = var6;
+    var6 = {};
+    var6.t = var30;
+    var20 = [100, 100, 100];
+    var6.s = var20;
+    var5[3] = var6;
+    var4.k = var5;
+    var3.s = var4;
+    var2.ks = var3;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 1',
+        'np': 3,
+        'cix': 2,
+        'bm': 0,
+        'ix': 1,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var5 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var3 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var6 = {};
+    var33 = [5.518];
+    var33[1] = var60;
+    var20 = new Array(8);
+    var20[0] = var33;
+    var33 = [0, 0];
+    var20[1] = var33;
+    var33 = new Array(2);
+    var33[0] = var37;
+    var69 = 5.842;
+    var33[1] = var69;
+    var20[2] = var33;
+    var33 = [0, 0];
+    var20[3] = var33;
+    var33 = new Array(2);
+    var68 = -5.518;
+    var33[0] = var68;
+    var67 = 0.059;
+    var33[1] = var67;
+    var20[4] = var33;
+    var33 = [0, 0];
+    var20[5] = var33;
+    var33 = [0.003];
+    var65 = -5.841;
+    var33[1] = var65;
+    var20[6] = var33;
+    var33 = [0, 0];
+    var20[7] = var33;
+    var6.i = var20;
+    var20 = new Array(8);
+    var33 = [0, 0];
+    var20[0] = var33;
+    var33 = new Array(2);
+    var64 = -5.517;
+    var33[0] = var64;
+    var63 = 0.058;
+    var33[1] = var63;
+    var20[1] = var33;
+    var33 = [0, 0];
+    var20[2] = var33;
+    var33 = [0.003];
+    var61 = -5.842;
+    var33[1] = var61;
+    var20[3] = var33;
+    var33 = [0, 0];
+    var20[4] = var33;
+    var33 = [5.518];
+    var33[1] = var60;
+    var20[5] = var33;
+    var33 = [0, 0];
+    var20[6] = var33;
+    var33 = new Array(2);
+    var33[0] = var37;
+    var59 = 5.841;
+    var33[1] = var59;
+    var20[7] = var33;
+    var6.o = var20;
+    var20 = new Array(8);
+    var33 = [8.038, 10.761];
+    var20[0] = var33;
+    var33 = new Array(2);
+    var55 = -8.049;
+    var33[0] = var55;
+    var54 = 10.931;
+    var33[1] = var54;
+    var20[1] = var33;
+    var33 = new Array(2);
+    var53 = -18.076;
+    var33[0] = var53;
+    var52 = 0.417;
+    var33[1] = var52;
+    var20[2] = var33;
+    var33 = new Array(2);
+    var51 = -18.074;
+    var33[0] = var51;
+    var49 = -0.035;
+    var33[1] = var49;
+    var20[3] = var33;
+    var33 = new Array(2);
+    var48 = -8.036;
+    var33[0] = var48;
+    var46 = -10.762;
+    var33[1] = var46;
+    var20[4] = var33;
+    var33 = [8.049];
+    var42 = -10.932;
+    var33[1] = var42;
+    var20[5] = var33;
+    var33 = [18.076];
+    var38 = -0.417;
+    var33[1] = var38;
+    var20[6] = var33;
+    var33 = [18.076, 0.035];
+    var20[7] = var33;
+    var6.v = var20;
+    var6.c = var14;
+    var3.k = var6;
+    var5.ks = var3;
+    var3 = new Array(4);
+    var3[0] = var5;
+    var5 = {
+        'ty': 'mm',
+        'mm': 4,
+        'nm': 'Merge Paths 1',
+        'mn': 'ADBE Vector Filter - Merge',
+        'hd': false
+    };
+    var3[1] = var5;
+    var5 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var20 = [0.411764735802, 0.556862745098, 1, 1];
+    var6.k = var20;
+    var5.c = var6;
+    var6 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var5.o = var6;
+    var3[2] = var5;
+    var5 = {};
+    var5.ty = var8;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var20 = [39.55, 80.813];
+    var6.k = var20;
+    var5.p = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var20 = [0, 0];
+    var6.k = var20;
+    var5.a = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var20 = [100, 100];
+    var6.k = var20;
+    var5.s = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var5.r = var6;
+    var6 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var5.o = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var5.sk = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var5.sa = var6;
+    var5.nm = var7;
+    var3[3] = var5;
+    var4.it = var3;
+    var3 = new Array(3);
+    var3[0] = var4;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 2',
+        'np': 3,
+        'cix': 2,
+        'bm': 0,
+        'ix': 2,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var5 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var20 = {};
+    var36 = [5.518];
+    var36[1] = var60;
+    var33 = new Array(8);
+    var33[0] = var36;
+    var36 = [0, 0];
+    var33[1] = var36;
+    var36 = new Array(2);
+    var36[0] = var37;
+    var36[1] = var69;
+    var33[2] = var36;
+    var36 = [0, 0];
+    var33[3] = var36;
+    var36 = new Array(2);
+    var36[0] = var68;
+    var36[1] = var67;
+    var33[4] = var36;
+    var36 = [0, 0];
+    var33[5] = var36;
+    var36 = [0.003];
+    var36[1] = var65;
+    var33[6] = var36;
+    var36 = [0, 0];
+    var33[7] = var36;
+    var20.i = var33;
+    var33 = new Array(8);
+    var36 = [0, 0];
+    var33[0] = var36;
+    var36 = new Array(2);
+    var36[0] = var64;
+    var36[1] = var63;
+    var33[1] = var36;
+    var36 = [0, 0];
+    var33[2] = var36;
+    var36 = [0.003];
+    var36[1] = var61;
+    var33[3] = var36;
+    var36 = [0, 0];
+    var33[4] = var36;
+    var36 = [5.518];
+    var36[1] = var60;
+    var33[5] = var36;
+    var36 = [0, 0];
+    var33[6] = var36;
+    var36 = new Array(2);
+    var36[0] = var37;
+    var36[1] = var59;
+    var33[7] = var36;
+    var20.o = var33;
+    var33 = new Array(8);
+    var36 = [8.038, 10.761];
+    var33[0] = var36;
+    var36 = new Array(2);
+    var36[0] = var55;
+    var36[1] = var54;
+    var33[1] = var36;
+    var36 = new Array(2);
+    var36[0] = var53;
+    var36[1] = var52;
+    var33[2] = var36;
+    var36 = new Array(2);
+    var36[0] = var51;
+    var36[1] = var49;
+    var33[3] = var36;
+    var36 = new Array(2);
+    var36[0] = var48;
+    var36[1] = var46;
+    var33[4] = var36;
+    var36 = [8.049];
+    var36[1] = var42;
+    var33[5] = var36;
+    var36 = [18.076];
+    var36[1] = var38;
+    var33[6] = var36;
+    var36 = [18.076, 0.035];
+    var33[7] = var36;
+    var20.v = var33;
+    var20.c = var14;
+    var5.k = var20;
+    var6.ks = var5;
+    var5 = new Array(4);
+    var5[0] = var6;
+    var6 = {
+        'ty': 'mm',
+        'mm': 4,
+        'nm': 'Merge Paths 1',
+        'mn': 'ADBE Vector Filter - Merge',
+        'hd': false
+    };
+    var5[1] = var6;
+    var6 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var33 = [0.411764735802, 0.556862745098, 1, 1];
+    var20.k = var33;
+    var6.c = var20;
+    var20 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var6.o = var20;
+    var5[2] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var33 = [98.239, 80.193];
+    var20.k = var33;
+    var6.p = var20;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var33 = [0, 0];
+    var20.k = var33;
+    var6.a = var20;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var33 = [100, 100];
+    var20.k = var33;
+    var6.s = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var6.r = var20;
+    var20 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var20;
+    var6.nm = var7;
+    var5[3] = var6;
+    var4.it = var5;
+    var3[1] = var4;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 3',
+        'np': 3,
+        'cix': 2,
+        'bm': 0,
+        'ix': 3,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var5 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var20 = {};
+    var36 = [21.58];
+    var33 = -0.088;
+    var36[1] = var33;
+    var33 = new Array(8);
+    var33[0] = var36;
+    var36 = [0, 0];
+    var33[1] = var36;
+    var36 = new Array(2);
+    var38 = -0.172;
+    var36[0] = var38;
+    var38 = 27.338;
+    var36[1] = var38;
+    var33[2] = var36;
+    var36 = [0, 0];
+    var33[3] = var36;
+    var36 = new Array(2);
+    var38 = -15.176;
+    var36[0] = var38;
+    var38 = 0.062;
+    var36[1] = var38;
+    var33[4] = var36;
+    var36 = [0, 0];
+    var33[5] = var36;
+    var36 = [0.097];
+    var38 = -15.425;
+    var36[1] = var38;
+    var33[6] = var36;
+    var36 = [0, 0];
+    var33[7] = var36;
+    var20.i = var33;
+    var33 = new Array(8);
+    var36 = [0, 0];
+    var33[0] = var36;
+    var36 = new Array(2);
+    var38 = -25.824;
+    var36[0] = var38;
+    var38 = 0.105;
+    var36[1] = var38;
+    var33[1] = var36;
+    var36 = [0, 0];
+    var33[2] = var36;
+    var36 = [0.101];
+    var38 = -16.067;
+    var36[1] = var38;
+    var33[3] = var36;
+    var36 = [0, 0];
+    var33[4] = var36;
+    var38 = [14.571];
+    var36 = -0.059;
+    var38[1] = var36;
+    var33[5] = var38;
+    var38 = [0, 0];
+    var33[6] = var38;
+    var38 = new Array(2);
+    var38[0] = var41;
+    var41 = 22.847;
+    var38[1] = var41;
+    var33[7] = var38;
+    var20.o = var33;
+    var33 = new Array(8);
+    var38 = [37.8, 59.829];
+    var33[0] = var38;
+    var38 = new Array(2);
+    var41 = -30.902;
+    var38[0] = var41;
+    var41 = 60.11;
+    var38[1] = var41;
+    var33[1] = var38;
+    var38 = new Array(2);
+    var41 = -77.54;
+    var38[0] = var41;
+    var41 = 10.596;
+    var38[1] = var41;
+    var33[2] = var38;
+    var38 = new Array(2);
+    var41 = -77.282;
+    var38[0] = var41;
+    var41 = -30.419;
+    var38[1] = var41;
+    var33[3] = var38;
+    var38 = new Array(2);
+    var41 = -49.504;
+    var38[0] = var41;
+    var41 = -59.745;
+    var38[1] = var41;
+    var33[4] = var38;
+    var38 = [51.3];
+    var41 = -60.156;
+    var38[1] = var41;
+    var33[5] = var38;
+    var38 = [77.616];
+    var41 = -32.217;
+    var38[1] = var41;
+    var33[6] = var38;
+    var38 = [77.298, 18.131];
+    var33[7] = var38;
+    var20.v = var33;
+    var20.c = var14;
+    var5.k = var20;
+    var6.ks = var5;
+    var5 = new Array(4);
+    var5[0] = var6;
+    var6 = {
+        'ty': 'mm',
+        'mm': 4,
+        'nm': 'Merge Paths 1',
+        'mn': 'ADBE Vector Filter - Merge',
+        'hd': false
+    };
+    var5[1] = var6;
+    var6 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var33 = [0.717647058824, 0.803921628466, 1, 1];
+    var20.k = var33;
+    var6.c = var20;
+    var20 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var6.o = var20;
+    var5[2] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var33 = [77.962, 60.465];
+    var20.k = var33;
+    var6.p = var20;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var33 = [0, 0];
+    var20.k = var33;
+    var6.a = var20;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var33 = [100, 100];
+    var20.k = var33;
+    var6.s = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var6.r = var20;
+    var20 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var20;
+    var6.nm = var7;
+    var5[3] = var6;
+    var4.it = var5;
+    var3[2] = var4;
+    var2.shapes = var3;
+    var0[9] = var2;
+    var2 = {
+        'ddd': 0,
+        'ind': 11,
+        'ty': 4,
+        'nm': 'Eyes',
+        'parent': 10,
+        'sr': 1,
+        'ks': null,
+        'ao': 0,
+        'shapes': null,
+        'ip': 0,
+        'op': 120,
+        'st': 0,
+        'ct': 1,
+        'bm': 0
+    };
+    var3 = {};
+    var4 = {
+        'a': 0,
+        'k': 100,
+        'ix': 11
+    };
+    var3.o = var4;
+    var4 = {
+        'a': 0,
+        'k': 0,
+        'ix': 10
+    };
+    var3.r = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 2,
+        'l': 2
+    };
+    var5 = [81.05, 54.611, 0];
+    var4.k = var5;
+    var3.p = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 1,
+        'l': 2
+    };
+    var5 = [89.521, 16.947, 0];
+    var4.k = var5;
+    var3.a = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 6,
+        'l': 2
+    };
+    var5 = [140.347, 142.77, 100];
+    var4.k = var5;
+    var3.s = var4;
+    var2.ks = var3;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Open',
+        'np': 3,
+        'cix': 2,
+        'bm': 0,
+        'ix': 1,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var5 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'L',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 1,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var3 = {
+        'a': 1,
+        'k': null,
+        'ix': 2
+    };
+    var33 = {};
+    var20 = {
+        'x': 0.667,
+        'y': 1
+    };
+    var33.i = var20;
+    var20 = {
+        'x': 0.333,
+        'y': 0
+    };
+    var33.o = var20;
+    var33.t = var31;
+    var41 = {};
+    var38 = [0.242];
+    var54 = -6.131;
+    var38[1] = var54;
+    var20 = new Array(4);
+    var20[0] = var38;
+    var38 = [6.131, 0.242];
+    var20[1] = var38;
+    var42 = new Array(2);
+    var42[0] = var56;
+    var38 = 6.131;
+    var42[1] = var38;
+    var20[2] = var42;
+    var42 = new Array(2);
+    var42[0] = var54;
+    var42[1] = var56;
+    var20[3] = var42;
+    var41.i = var20;
+    var42 = new Array(2);
+    var42[0] = var56;
+    var42[1] = var38;
+    var20 = new Array(4);
+    var20[0] = var42;
+    var42 = new Array(2);
+    var42[0] = var54;
+    var42[1] = var56;
+    var20[1] = var42;
+    var42 = [0.242];
+    var42[1] = var54;
+    var20[2] = var42;
+    var42 = [6.131, 0.242];
+    var20[3] = var42;
+    var41.o = var20;
+    var20 = new Array(4);
+    var42 = [11.101, 0.437];
+    var20[0] = var42;
+    var42 = new Array(2);
+    var53 = -0.437;
+    var42[0] = var53;
+    var52 = 11.102;
+    var42[1] = var52;
+    var20[1] = var42;
+    var42 = new Array(2);
+    var51 = -11.102;
+    var42[0] = var51;
+    var42[1] = var50;
+    var20[2] = var42;
+    var42 = [0.436];
+    var49 = -11.101;
+    var42[1] = var49;
+    var20[3] = var42;
+    var41.v = var20;
+    var41.c = var14;
+    var20 = new Array(1);
+    var20[0] = var41;
+    var33.s = var20;
+    var20 = new Array(4);
+    var20[0] = var33;
+    var33 = {};
+    var41 = {
+        'x': 0.667,
+        'y': 1
+    };
+    var33.i = var41;
+    var41 = {
+        'x': 0.333,
+        'y': 0
+    };
+    var33.o = var41;
+    var33.t = var39;
+    var55 = {};
+    var42 = new Array(2);
+    var42[0] = var66;
+    var48 = -2.223;
+    var42[1] = var48;
+    var41 = new Array(4);
+    var41[0] = var42;
+    var42 = [6.131, 0.184];
+    var41[1] = var42;
+    var42 = [1.672, 4.851];
+    var41[2] = var42;
+    var46 = new Array(2);
+    var65 = -11.123;
+    var46[0] = var65;
+    var42 = -0.248;
+    var46[1] = var42;
+    var41[3] = var46;
+    var55.i = var41;
+    var59 = new Array(2);
+    var63 = -1.512;
+    var59[0] = var63;
+    var41 = 5.354;
+    var59[1] = var41;
+    var46 = new Array(4);
+    var46[0] = var59;
+    var59 = new Array(2);
+    var59[0] = var54;
+    var59[1] = var62;
+    var46[1] = var59;
+    var59 = [0.214];
+    var61 = -2.469;
+    var59[1] = var61;
+    var46[2] = var59;
+    var59 = [11.558, 0.258];
+    var46[3] = var59;
+    var55.o = var46;
+    var46 = new Array(4);
+    var59 = [11.101, 3.039];
+    var46[0] = var59;
+    var59 = new Array(2);
+    var59[0] = var53;
+    var60 = 11.16;
+    var59[1] = var60;
+    var46[1] = var59;
+    var64 = new Array(2);
+    var64[0] = var51;
+    var59 = 2.374;
+    var64[1] = var59;
+    var46[2] = var64;
+    var64 = new Array(2);
+    var64[0] = var58;
+    var64[1] = var57;
+    var46[3] = var64;
+    var55.v = var46;
+    var55.c = var14;
+    var46 = new Array(1);
+    var46[0] = var55;
+    var33.s = var46;
+    var20[1] = var33;
+    var33 = {};
+    var46 = {
+        'x': 0.667,
+        'y': 1
+    };
+    var33.i = var46;
+    var46 = {
+        'x': 0.333,
+        'y': 0
+    };
+    var33.o = var46;
+    var55 = 33;
+    var33.t = var55;
+    var46 = {};
+    var64 = new Array(2);
+    var64[0] = var66;
+    var64[1] = var48;
+    var48 = new Array(4);
+    var48[0] = var64;
+    var64 = [6.131, 0.184];
+    var48[1] = var64;
+    var64 = [1.672, 4.851];
+    var48[2] = var64;
+    var64 = new Array(2);
+    var64[0] = var65;
+    var64[1] = var42;
+    var48[3] = var64;
+    var46.i = var48;
+    var48 = new Array(2);
+    var48[0] = var63;
+    var48[1] = var41;
+    var41 = new Array(4);
+    var41[0] = var48;
+    var48 = new Array(2);
+    var48[0] = var54;
+    var48[1] = var62;
+    var41[1] = var48;
+    var48 = [0.214];
+    var48[1] = var61;
+    var41[2] = var48;
+    var48 = [11.558, 0.258];
+    var41[3] = var48;
+    var46.o = var41;
+    var41 = new Array(4);
+    var48 = [11.101, 3.039];
+    var41[0] = var48;
+    var48 = new Array(2);
+    var48[0] = var53;
+    var48[1] = var60;
+    var41[1] = var48;
+    var48 = new Array(2);
+    var48[0] = var51;
+    var48[1] = var59;
+    var41[2] = var48;
+    var48 = new Array(2);
+    var48[0] = var58;
+    var48[1] = var57;
+    var41[3] = var48;
+    var46.v = var41;
+    var46.c = var14;
+    var41 = new Array(1);
+    var41[0] = var46;
+    var33.s = var41;
+    var20[2] = var33;
+    var33 = {};
+    var46 = 37;
+    var33.t = var46;
+    var41 = {};
+    var57 = [0.242];
+    var57[1] = var54;
+    var48 = new Array(4);
+    var48[0] = var57;
+    var57 = [6.131, 0.242];
+    var48[1] = var57;
+    var57 = new Array(2);
+    var57[0] = var56;
+    var57[1] = var38;
+    var48[2] = var57;
+    var57 = new Array(2);
+    var57[0] = var54;
+    var57[1] = var56;
+    var48[3] = var57;
+    var41.i = var48;
+    var48 = new Array(2);
+    var48[0] = var56;
+    var48[1] = var38;
+    var38 = new Array(4);
+    var38[0] = var48;
+    var48 = new Array(2);
+    var48[0] = var54;
+    var48[1] = var56;
+    var38[1] = var48;
+    var48 = [0.242];
+    var48[1] = var54;
+    var38[2] = var48;
+    var48 = [6.131, 0.242];
+    var38[3] = var48;
+    var41.o = var38;
+    var38 = new Array(4);
+    var48 = [11.101, 0.437];
+    var38[0] = var48;
+    var48 = new Array(2);
+    var48[0] = var53;
+    var48[1] = var52;
+    var38[1] = var48;
+    var48 = new Array(2);
+    var48[0] = var51;
+    var48[1] = var50;
+    var38[2] = var48;
+    var48 = [0.436];
+    var48[1] = var49;
+    var38[3] = var48;
+    var41.v = var38;
+    var41.c = var14;
+    var38 = new Array(1);
+    var38[0] = var41;
+    var33.s = var38;
+    var20[3] = var33;
+    var3.k = var20;
+    var6.ks = var3;
+    var3 = new Array(3);
+    var3[0] = var6;
+    var6 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var33 = [0.03137254902, 0.007843137255, 0.003921568627, 1];
+    var20.k = var33;
+    var6.c = var20;
+    var20 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var6.o = var20;
+    var3[1] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var33 = [12.202, 17.687];
+    var20.k = var33;
+    var6.p = var20;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var33 = [0, 0];
+    var20.k = var33;
+    var6.a = var20;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var33 = [100, 100];
+    var20.k = var33;
+    var6.s = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var6.r = var20;
+    var20 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var20;
+    var6.nm = var7;
+    var3[2] = var6;
+    var5.it = var3;
+    var3 = new Array(4);
+    var3[0] = var5;
+    var5 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'R',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 2,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var20 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var6 = {
+        'a': 1,
+        'k': null,
+        'ix': 2
+    };
+    var38 = {};
+    var33 = {
+        'x': 0.667,
+        'y': 1
+    };
+    var38.i = var33;
+    var33 = {
+        'x': 0.333,
+        'y': 0
+    };
+    var38.o = var33;
+    var38.t = var31;
+    var48 = {};
+    var41 = [0.238];
+    var53 = -6.036;
+    var41[1] = var53;
+    var33 = new Array(4);
+    var33[0] = var41;
+    var41 = [6.036, 0.238];
+    var33[1] = var41;
+    var49 = new Array(2);
+    var54 = -0.238;
+    var49[0] = var54;
+    var41 = 6.036;
+    var49[1] = var41;
+    var33[2] = var49;
+    var49 = new Array(2);
+    var49[0] = var53;
+    var49[1] = var54;
+    var33[3] = var49;
+    var48.i = var33;
+    var49 = new Array(2);
+    var49[0] = var54;
+    var49[1] = var41;
+    var33 = new Array(4);
+    var33[0] = var49;
+    var49 = new Array(2);
+    var49[0] = var53;
+    var49[1] = var54;
+    var33[1] = var49;
+    var49 = [0.238];
+    var49[1] = var53;
+    var33[2] = var49;
+    var49 = [6.036, 0.238];
+    var33[3] = var49;
+    var48.o = var33;
+    var33 = new Array(4);
+    var49 = [10.928, 0.43];
+    var33[0] = var49;
+    var49 = new Array(2);
+    var50 = -0.43;
+    var49[0] = var50;
+    var52 = 10.929;
+    var49[1] = var52;
+    var33[1] = var49;
+    var49 = new Array(2);
+    var51 = -10.929;
+    var49[0] = var51;
+    var49[1] = var50;
+    var33[2] = var49;
+    var56 = [0.43];
+    var49 = -10.928;
+    var56[1] = var49;
+    var33[3] = var56;
+    var48.v = var33;
+    var48.c = var14;
+    var33 = new Array(1);
+    var33[0] = var48;
+    var38.s = var33;
+    var33 = new Array(4);
+    var33[0] = var38;
+    var38 = {};
+    var48 = {
+        'x': 0.667,
+        'y': 1
+    };
+    var38.i = var48;
+    var48 = {
+        'x': 0.333,
+        'y': 0
+    };
+    var38.o = var48;
+    var38.t = var39;
+    var68 = {};
+    var48 = [1.631];
+    var56 = -1.277;
+    var48[1] = var56;
+    var57 = new Array(4);
+    var57[0] = var48;
+    var48 = [6.032, 0.254];
+    var57[1] = var48;
+    var58 = new Array(2);
+    var58[0] = var54;
+    var48 = 4.77;
+    var58[1] = var48;
+    var57[2] = var58;
+    var58 = new Array(2);
+    var67 = -10.265;
+    var58[0] = var67;
+    var66 = -0.36;
+    var58[1] = var66;
+    var57[3] = var58;
+    var68.i = var57;
+    var58 = new Array(2);
+    var58[0] = var54;
+    var58[1] = var48;
+    var57 = new Array(4);
+    var57[0] = var58;
+    var58 = new Array(2);
+    var64 = -6.448;
+    var58[0] = var64;
+    var63 = -0.271;
+    var58[1] = var63;
+    var57[1] = var58;
+    var58 = new Array(2);
+    var62 = -0.901;
+    var58[0] = var62;
+    var61 = -1.423;
+    var58[1] = var61;
+    var57[2] = var58;
+    var58 = [10.621, 0.372];
+    var57[3] = var58;
+    var68.o = var57;
+    var65 = new Array(4);
+    var57 = [10.928, 2.734];
+    var65[0] = var57;
+    var57 = new Array(2);
+    var57[0] = var50;
+    var60 = 11.03;
+    var57[1] = var60;
+    var65[1] = var57;
+    var57 = new Array(2);
+    var57[0] = var51;
+    var59 = 2.054;
+    var57[1] = var59;
+    var65[2] = var57;
+    var69 = new Array(2);
+    var58 = -0.384;
+    var69[0] = var58;
+    var57 = 11.038;
+    var69[1] = var57;
+    var65[3] = var69;
+    var68.v = var65;
+    var68.c = var14;
+    var65 = new Array(1);
+    var65[0] = var68;
+    var38.s = var65;
+    var33[1] = var38;
+    var38 = {};
+    var65 = {
+        'x': 0.667,
+        'y': 1
+    };
+    var38.i = var65;
+    var65 = {
+        'x': 0.333,
+        'y': 0
+    };
+    var38.o = var65;
+    var38.t = var55;
+    var55 = {};
+    var65 = [1.631];
+    var65[1] = var56;
+    var56 = new Array(4);
+    var56[0] = var65;
+    var65 = [6.032, 0.254];
+    var56[1] = var65;
+    var65 = new Array(2);
+    var65[0] = var54;
+    var65[1] = var48;
+    var56[2] = var65;
+    var65 = new Array(2);
+    var65[0] = var67;
+    var65[1] = var66;
+    var56[3] = var65;
+    var55.i = var56;
+    var56 = new Array(2);
+    var56[0] = var54;
+    var56[1] = var48;
+    var48 = new Array(4);
+    var48[0] = var56;
+    var56 = new Array(2);
+    var56[0] = var64;
+    var56[1] = var63;
+    var48[1] = var56;
+    var56 = new Array(2);
+    var56[0] = var62;
+    var56[1] = var61;
+    var48[2] = var56;
+    var56 = [10.621, 0.372];
+    var48[3] = var56;
+    var55.o = var48;
+    var48 = new Array(4);
+    var56 = [10.928, 2.734];
+    var48[0] = var56;
+    var56 = new Array(2);
+    var56[0] = var50;
+    var56[1] = var60;
+    var48[1] = var56;
+    var56 = new Array(2);
+    var56[0] = var51;
+    var56[1] = var59;
+    var48[2] = var56;
+    var56 = new Array(2);
+    var56[0] = var58;
+    var56[1] = var57;
+    var48[3] = var56;
+    var55.v = var48;
+    var55.c = var14;
+    var48 = new Array(1);
+    var48[0] = var55;
+    var38.s = var48;
+    var33[2] = var38;
+    var38 = {};
+    var38.t = var46;
+    var46 = {};
+    var55 = [0.238];
+    var55[1] = var53;
+    var48 = new Array(4);
+    var48[0] = var55;
+    var55 = [6.036, 0.238];
+    var48[1] = var55;
+    var55 = new Array(2);
+    var55[0] = var54;
+    var55[1] = var41;
+    var48[2] = var55;
+    var55 = new Array(2);
+    var55[0] = var53;
+    var55[1] = var54;
+    var48[3] = var55;
+    var46.i = var48;
+    var48 = new Array(2);
+    var48[0] = var54;
+    var48[1] = var41;
+    var41 = new Array(4);
+    var41[0] = var48;
+    var48 = new Array(2);
+    var48[0] = var53;
+    var48[1] = var54;
+    var41[1] = var48;
+    var48 = [0.238];
+    var48[1] = var53;
+    var41[2] = var48;
+    var48 = [6.036, 0.238];
+    var41[3] = var48;
+    var46.o = var41;
+    var41 = new Array(4);
+    var48 = [10.928, 0.43];
+    var41[0] = var48;
+    var48 = new Array(2);
+    var48[0] = var50;
+    var48[1] = var52;
+    var41[1] = var48;
+    var48 = new Array(2);
+    var48[0] = var51;
+    var48[1] = var50;
+    var41[2] = var48;
+    var48 = [0.43];
+    var48[1] = var49;
+    var41[3] = var48;
+    var46.v = var41;
+    var46.c = var14;
+    var41 = new Array(1);
+    var41[0] = var46;
+    var38.s = var41;
+    var33[3] = var38;
+    var6.k = var33;
+    var20.ks = var6;
+    var6 = new Array(3);
+    var6[0] = var20;
+    var20 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var33 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var38 = [0.03137254902, 0.007843137255, 0.003921568627, 1];
+    var33.k = var38;
+    var20.c = var33;
+    var33 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var20.o = var33;
+    var6[1] = var20;
+    var20 = {};
+    var20.ty = var8;
+    var33 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var38 = [167.013, 16.033];
+    var33.k = var38;
+    var20.p = var33;
+    var33 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var38 = [0, 0];
+    var33.k = var38;
+    var20.a = var33;
+    var33 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var38 = [100, 100];
+    var33.k = var38;
+    var20.s = var33;
+    var33 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var20.r = var33;
+    var33 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var20.o = var33;
+    var33 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var20.sk = var33;
+    var33 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var20.sa = var33;
+    var20.nm = var7;
+    var6[2] = var20;
+    var5.it = var6;
+    var3[1] = var5;
+    var5 = {
+        'ty': 'st',
+        'c': null,
+        'o': null,
+        'w': null,
+        'lc': 1,
+        'lj': 1,
+        'ml': 4,
+        'bm': 0,
+        'nm': 'Stroke 1',
+        'mn': 'ADBE Vector Graphic - Stroke',
+        'hd': false
+    };
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var20 = [0.031372070313, 0.007843017578, 0.00390625, 1];
+    var6.k = var20;
+    var5.c = var6;
+    var6 = {
+        'a': 0,
+        'k': 100,
+        'ix': 4
+    };
+    var5.o = var6;
+    var6 = {
+        'a': 0,
+        'k': 5,
+        'ix': 5
+    };
+    var5.w = var6;
+    var3[2] = var5;
+    var5 = {};
+    var5.ty = var8;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var20 = [90.492, 16.418];
+    var6.k = var20;
+    var5.p = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var20 = [90.492, 16.418];
+    var6.k = var20;
+    var5.a = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var20 = [100, 100];
+    var6.k = var20;
+    var5.s = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var5.r = var6;
+    var6 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var5.o = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var5.sk = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var5.sa = var6;
+    var5.nm = var7;
+    var3[3] = var5;
+    var4.it = var3;
+    var3 = new Array(1);
+    var3[0] = var4;
+    var2.shapes = var3;
+    var0[10] = var2;
+    var2 = {
+        'ddd': 0,
+        'ind': 12,
+        'ty': 4,
+        'nm': 'Mouth Opened',
+        'parent': 10,
+        'sr': 1,
+        'ks': null,
+        'ao': 0,
+        'shapes': null,
+        'ip': 0,
+        'op': 120,
+        'st': 0,
+        'ct': 1,
+        'bm': 0
+    };
+    var3 = {};
+    var4 = {
+        'a': 0,
+        'k': 100,
+        'ix': 11
+    };
+    var3.o = var4;
+    var4 = {
+        'a': 0,
+        'k': 0,
+        'ix': 10
+    };
+    var3.r = var4;
+    var4 = {
+        'a': 1,
+        'k': null,
+        'ix': 2,
+        'l': 2
+    };
+    var6 = {};
+    var5 = {
+        'x': 0.667,
+        'y': 1
+    };
+    var6.i = var5;
+    var5 = {
+        'x': 0.333,
+        'y': 0
+    };
+    var6.o = var5;
+    var6.t = var31;
+    var5 = [161.612, 140.013, 0];
+    var6.s = var5;
+    var5 = new Array(3);
+    var46 = -9.502;
+    var5[0] = var46;
+    var41 = 1.115;
+    var5[1] = var41;
+    var5[2] = var15;
+    var6.to = var5;
+    var5 = [4.777];
+    var20 = -1.34;
+    var5[1] = var20;
+    var5[2] = var15;
+    var6.ti = var5;
+    var5 = new Array(4);
+    var5[0] = var6;
+    var6 = {};
+    var20 = {
+        'x': 0.667,
+        'y': 1
+    };
+    var6.i = var20;
+    var20 = {
+        'x': 0.333,
+        'y': 0
+    };
+    var6.o = var20;
+    var6.t = var39;
+    var20 = [104.597, 146.705, 0];
+    var6.s = var20;
+    var20 = new Array(3);
+    var38 = -4.777;
+    var20[0] = var38;
+    var33 = 1.34;
+    var20[1] = var33;
+    var20[2] = var15;
+    var6.to = var20;
+    var20 = new Array(3);
+    var20[0] = var46;
+    var20[1] = var41;
+    var20[2] = var15;
+    var6.ti = var20;
+    var5[1] = var6;
+    var6 = {};
+    var20 = {
+        'x': 0.667,
+        'y': 1
+    };
+    var6.i = var20;
+    var20 = {
+        'x': 0.333,
+        'y': 0
+    };
+    var6.o = var20;
+    var6.t = var16;
+    var20 = [132.952, 148.056, 0];
+    var6.s = var20;
+    var20 = [9.502];
+    var41 = -1.115;
+    var20[1] = var41;
+    var20[2] = var15;
+    var6.to = var20;
+    var20 = new Array(3);
+    var20[0] = var38;
+    var20[1] = var33;
+    var20[2] = var15;
+    var6.ti = var20;
+    var5[2] = var6;
+    var6 = {};
+    var38 = 34;
+    var6.t = var38;
+    var20 = [161.612, 140.013, 0];
+    var6.s = var20;
+    var5[3] = var6;
+    var4.k = var5;
+    var3.p = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 1,
+        'l': 2
+    };
+    var5 = [27.607, 18.94, 0];
+    var4.k = var5;
+    var3.a = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 6,
+        'l': 2
+    };
+    var5 = [100, 100, 100];
+    var4.k = var5;
+    var3.s = var4;
+    var2.ks = var3;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 1',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 1,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var5 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var3 = {
+        'a': 1,
+        'k': null,
+        'ix': 2
+    };
+    var20 = {};
+    var6 = {
+        'x': 0.667,
+        'y': 1
+    };
+    var20.i = var6;
+    var6 = {
+        'x': 0.333,
+        'y': 0
+    };
+    var20.o = var6;
+    var20.t = var31;
+    var41 = {};
+    var6 = new Array(3);
+    var33 = [0, 0];
+    var6[0] = var33;
+    var33 = new Array(2);
+    var55 = -26.373;
+    var33[0] = var55;
+    var54 = -0.99;
+    var33[1] = var54;
+    var6[1] = var33;
+    var33 = [16.791];
+    var53 = -6.909;
+    var33[1] = var53;
+    var6[2] = var33;
+    var41.i = var6;
+    var6 = new Array(3);
+    var33 = [0, 0];
+    var6[0] = var33;
+    var33 = [0, 0];
+    var6[1] = var33;
+    var33 = new Array(2);
+    var52 = -14.461;
+    var33[0] = var52;
+    var51 = 5.95;
+    var33[1] = var51;
+    var6[2] = var33;
+    var41.o = var6;
+    var46 = new Array(2);
+    var49 = -22.175;
+    var46[0] = var49;
+    var33 = 2.565;
+    var46[1] = var33;
+    var6 = new Array(3);
+    var6[0] = var46;
+    var46 = [22.052];
+    var48 = -12.588;
+    var46[1] = var48;
+    var6[1] = var46;
+    var46 = [5.385, 7.628];
+    var6[2] = var46;
+    var41.v = var6;
+    var41.c = var14;
+    var6 = new Array(1);
+    var6[0] = var41;
+    var20.s = var6;
+    var6 = new Array(4);
+    var6[0] = var20;
+    var20 = {};
+    var41 = {
+        'x': 0.833,
+        'y': 1
+    };
+    var20.i = var41;
+    var41 = {
+        'x': 0.167,
+        'y': 0
+    };
+    var20.o = var41;
+    var20.t = var44;
+    var50 = {};
+    var41 = new Array(3);
+    var46 = [0, 0];
+    var41[0] = var46;
+    var46 = new Array(2);
+    var46[0] = var55;
+    var46[1] = var54;
+    var41[1] = var46;
+    var46 = [14.474];
+    var61 = -5.009;
+    var46[1] = var61;
+    var41[2] = var46;
+    var50.i = var41;
+    var41 = new Array(3);
+    var46 = [0, 0];
+    var41[0] = var46;
+    var46 = [0, 0];
+    var41[1] = var46;
+    var46 = new Array(2);
+    var60 = -10.743;
+    var46[0] = var60;
+    var59 = 3.717;
+    var46[1] = var59;
+    var41[2] = var46;
+    var50.o = var41;
+    var56 = new Array(2);
+    var57 = -15.738;
+    var56[0] = var57;
+    var41 = -0.748;
+    var56[1] = var41;
+    var46 = new Array(3);
+    var46[0] = var56;
+    var58 = [11.739];
+    var56 = -10.961;
+    var58[1] = var56;
+    var46[1] = var58;
+    var58 = [1.197, 8.565];
+    var46[2] = var58;
+    var50.v = var46;
+    var50.c = var14;
+    var46 = new Array(1);
+    var46[0] = var50;
+    var20.s = var46;
+    var6[1] = var20;
+    var20 = {};
+    var46 = {
+        'x': 0.833,
+        'y': 1
+    };
+    var20.i = var46;
+    var46 = {
+        'x': 0.167,
+        'y': 0
+    };
+    var20.o = var46;
+    var20.t = var16;
+    var46 = {};
+    var50 = new Array(3);
+    var58 = [0, 0];
+    var50[0] = var58;
+    var58 = new Array(2);
+    var58[0] = var55;
+    var58[1] = var54;
+    var50[1] = var58;
+    var58 = [14.474];
+    var58[1] = var61;
+    var50[2] = var58;
+    var46.i = var50;
+    var50 = new Array(3);
+    var58 = [0, 0];
+    var50[0] = var58;
+    var58 = [0, 0];
+    var50[1] = var58;
+    var58 = new Array(2);
+    var58[0] = var60;
+    var58[1] = var59;
+    var50[2] = var58;
+    var46.o = var50;
+    var50 = new Array(2);
+    var50[0] = var57;
+    var50[1] = var41;
+    var41 = new Array(3);
+    var41[0] = var50;
+    var50 = [11.739];
+    var50[1] = var56;
+    var41[1] = var50;
+    var50 = [1.197, 8.565];
+    var41[2] = var50;
+    var46.v = var41;
+    var46.c = var14;
+    var41 = new Array(1);
+    var41[0] = var46;
+    var20.s = var41;
+    var6[2] = var20;
+    var20 = {};
+    var20.t = var38;
+    var41 = {};
+    var46 = new Array(3);
+    var50 = [0, 0];
+    var46[0] = var50;
+    var50 = new Array(2);
+    var50[0] = var55;
+    var50[1] = var54;
+    var46[1] = var50;
+    var50 = [16.791];
+    var50[1] = var53;
+    var46[2] = var50;
+    var41.i = var46;
+    var46 = new Array(3);
+    var50 = [0, 0];
+    var46[0] = var50;
+    var50 = [0, 0];
+    var46[1] = var50;
+    var50 = new Array(2);
+    var50[0] = var52;
+    var50[1] = var51;
+    var46[2] = var50;
+    var41.o = var46;
+    var46 = new Array(2);
+    var46[0] = var49;
+    var46[1] = var33;
+    var33 = new Array(3);
+    var33[0] = var46;
+    var46 = [22.052];
+    var46[1] = var48;
+    var33[1] = var46;
+    var46 = [5.385, 7.628];
+    var33[2] = var46;
+    var41.v = var33;
+    var41.c = var14;
+    var33 = new Array(1);
+    var33[0] = var41;
+    var20.s = var33;
+    var6[3] = var20;
+    var3.k = var6;
+    var5.ks = var3;
+    var3 = new Array(3);
+    var3[0] = var5;
+    var5 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var6 = {
+        'a': 1,
+        'k': null,
+        'ix': 4
+    };
+    var33 = {};
+    var20 = {};
+    var41 = [0.667];
+    var20.x = var41;
+    var41 = [1];
+    var20.y = var41;
+    var33.i = var20;
+    var20 = {};
+    var41 = [0.333];
+    var20.x = var41;
+    var41 = [0];
+    var20.y = var41;
+    var33.o = var20;
+    var33.t = var31;
+    var20 = [1, 0.674509803922, 0.839215746113, 1];
+    var33.s = var20;
+    var20 = new Array(4);
+    var20[0] = var33;
+    var33 = {};
+    var41 = {};
+    var46 = [0.667];
+    var41.x = var46;
+    var46 = [1];
+    var41.y = var46;
+    var33.i = var41;
+    var41 = {};
+    var46 = [0.167];
+    var41.x = var46;
+    var46 = [0];
+    var41.y = var46;
+    var33.o = var41;
+    var33.t = var44;
+    var41 = [0, 0, 0, 1];
+    var33.s = var41;
+    var20[1] = var33;
+    var33 = {};
+    var41 = {};
+    var46 = [0.833];
+    var41.x = var46;
+    var46 = [1];
+    var41.y = var46;
+    var33.i = var41;
+    var41 = {};
+    var46 = [0.167];
+    var41.x = var46;
+    var46 = [0];
+    var41.y = var46;
+    var33.o = var41;
+    var33.t = var16;
+    var41 = [0, 0, 0, 1];
+    var33.s = var41;
+    var20[2] = var33;
+    var33 = {};
+    var33.t = var38;
+    var41 = [1, 0.674509803922, 0.839215746113, 1];
+    var33.s = var41;
+    var20[3] = var33;
+    var6.k = var20;
+    var5.c = var6;
+    var6 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var5.o = var6;
+    var3[1] = var5;
+    var5 = {};
+    var5.ty = var8;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var20 = [31.745, 24.054];
+    var6.k = var20;
+    var5.p = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var20 = [0, 0];
+    var6.k = var20;
+    var5.a = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var20 = [100, 100];
+    var6.k = var20;
+    var5.s = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var5.r = var6;
+    var6 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var5.o = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var5.sk = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var5.sa = var6;
+    var5.nm = var7;
+    var3[2] = var5;
+    var4.it = var3;
+    var3 = new Array(3);
+    var3[0] = var4;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 2',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 2,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var5 = {
+        'a': 1,
+        'k': null,
+        'ix': 2
+    };
+    var33 = {};
+    var20 = {
+        'x': 0.667,
+        'y': 1
+    };
+    var33.i = var20;
+    var20 = {
+        'x': 0.333,
+        'y': 0
+    };
+    var33.o = var20;
+    var33.t = var31;
+    var46 = {};
+    var41 = [6.055];
+    var55 = -0.67;
+    var41[1] = var55;
+    var20 = new Array(6);
+    var20[0] = var41;
+    var41 = [6.234];
+    var69 = -2.626;
+    var41[1] = var69;
+    var20[1] = var41;
+    var41 = new Array(2);
+    var68 = -3.099;
+    var41[0] = var68;
+    var67 = -7.176;
+    var41[1] = var67;
+    var20[2] = var41;
+    var41 = new Array(2);
+    var66 = -12.669;
+    var41[0] = var66;
+    var65 = 1.75;
+    var41[1] = var65;
+    var20[3] = var41;
+    var41 = new Array(2);
+    var64 = -1.231;
+    var41[0] = var64;
+    var63 = 7.123;
+    var41[1] = var63;
+    var20[4] = var41;
+    var41 = [3.142, 3.712];
+    var20[5] = var41;
+    var46.i = var20;
+    var41 = new Array(2);
+    var61 = -3.697;
+    var41[0] = var61;
+    var48 = 0.409;
+    var41[1] = var48;
+    var20 = new Array(6);
+    var20[0] = var41;
+    var41 = new Array(2);
+    var60 = -5.481;
+    var41[0] = var60;
+    var59 = 2.308;
+    var41[1] = var59;
+    var20[1] = var41;
+    var41 = [3.1, 7.177];
+    var20[2] = var41;
+    var41 = [12.669];
+    var58 = -1.749;
+    var41[1] = var58;
+    var20[3] = var41;
+    var41 = [0, 0];
+    var20[4] = var41;
+    var41 = new Array(2);
+    var57 = -3.142;
+    var41[0] = var57;
+    var56 = -3.711;
+    var41[1] = var56;
+    var20[5] = var41;
+    var46.o = var20;
+    var49 = [5.321];
+    var41 = -15.569;
+    var49[1] = var41;
+    var20 = new Array(6);
+    var20[0] = var49;
+    var49 = new Array(2);
+    var54 = -17.738;
+    var49[0] = var54;
+    var53 = -9.98;
+    var49[1] = var53;
+    var20[1] = var49;
+    var49 = new Array(2);
+    var52 = -24.258;
+    var49[0] = var52;
+    var51 = 1.651;
+    var49[1] = var51;
+    var20[2] = var49;
+    var49 = [3.968, 15.461];
+    var20[3] = var49;
+    var49 = [25.848];
+    var50 = -4.072;
+    var49[1] = var50;
+    var20[4] = var49;
+    var62 = [24.215];
+    var49 = -13.5;
+    var62[1] = var49;
+    var20[5] = var62;
+    var46.v = var20;
+    var46.c = var14;
+    var20 = new Array(1);
+    var20[0] = var46;
+    var33.s = var20;
+    var20 = new Array(4);
+    var20[0] = var33;
+    var33 = {};
+    var46 = {
+        'x': 0.833,
+        'y': 1
+    };
+    var33.i = var46;
+    var46 = {
+        'x': 0.167,
+        'y': 0
+    };
+    var33.o = var46;
+    var33.t = var44;
+    var76 = {};
+    var46 = new Array(6);
+    var62 = [3.611, 1.094];
+    var46[0] = var62;
+    var62 = [5.295];
+    var91 = -2.242;
+    var62[1] = var91;
+    var46[1] = var62;
+    var62 = new Array(2);
+    var90 = -0.81;
+    var62[0] = var90;
+    var89 = -7.774;
+    var62[1] = var89;
+    var46[2] = var62;
+    var62 = new Array(2);
+    var88 = -8.721;
+    var62[0] = var88;
+    var87 = 1.191;
+    var62[1] = var87;
+    var46[3] = var62;
+    var62 = new Array(2);
+    var62[0] = var86;
+    var85 = 5.39;
+    var62[1] = var85;
+    var46[4] = var62;
+    var62 = [1.967, 3.086];
+    var46[5] = var62;
+    var76.i = var46;
+    var62 = new Array(2);
+    var83 = -2.481;
+    var62[0] = var83;
+    var70 = -0.752;
+    var62[1] = var70;
+    var46 = new Array(6);
+    var46[0] = var62;
+    var62 = new Array(2);
+    var82 = -5.476;
+    var62[0] = var82;
+    var81 = 2.319;
+    var62[1] = var81;
+    var46[1] = var62;
+    var62 = [0.567, 5.44];
+    var46[2] = var62;
+    var62 = [7.472];
+    var80 = -1.02;
+    var62[1] = var80;
+    var46[3] = var62;
+    var62 = [0.46];
+    var79 = -2.717;
+    var62[1] = var79;
+    var46[4] = var62;
+    var62 = new Array(2);
+    var62[0] = var78;
+    var77 = -1.389;
+    var62[1] = var77;
+    var46[5] = var62;
+    var76.o = var46;
+    var71 = [6.946];
+    var46 = -13.507;
+    var71[1] = var46;
+    var62 = new Array(6);
+    var62[0] = var71;
+    var71 = new Array(2);
+    var75 = -3.488;
+    var71[0] = var75;
+    var74 = -13.169;
+    var71[1] = var74;
+    var62[1] = var71;
+    var71 = new Array(2);
+    var73 = -12.133;
+    var71[0] = var73;
+    var72 = 2.775;
+    var71[1] = var72;
+    var62[2] = var71;
+    var71 = [4.156, 15.336];
+    var62[3] = var71;
+    var71 = [16.036, 2.554];
+    var62[4] = var71;
+    var84 = [13.966];
+    var71 = -7.436;
+    var84[1] = var71;
+    var62[5] = var84;
+    var76.v = var62;
+    var76.c = var14;
+    var62 = new Array(1);
+    var62[0] = var76;
+    var33.s = var62;
+    var20[1] = var33;
+    var33 = {};
+    var62 = {
+        'x': 0.833,
+        'y': 1
+    };
+    var33.i = var62;
+    var62 = {
+        'x': 0.167,
+        'y': 0
+    };
+    var33.o = var62;
+    var33.t = var16;
+    var62 = {};
+    var76 = new Array(6);
+    var84 = [3.611, 1.094];
+    var76[0] = var84;
+    var84 = [5.295];
+    var84[1] = var91;
+    var76[1] = var84;
+    var84 = new Array(2);
+    var84[0] = var90;
+    var84[1] = var89;
+    var76[2] = var84;
+    var84 = new Array(2);
+    var84[0] = var88;
+    var84[1] = var87;
+    var76[3] = var84;
+    var84 = new Array(2);
+    var84[0] = var86;
+    var84[1] = var85;
+    var76[4] = var84;
+    var84 = [1.967, 3.086];
+    var76[5] = var84;
+    var62.i = var76;
+    var76 = new Array(2);
+    var76[0] = var83;
+    var76[1] = var70;
+    var70 = new Array(6);
+    var70[0] = var76;
+    var76 = new Array(2);
+    var76[0] = var82;
+    var76[1] = var81;
+    var70[1] = var76;
+    var76 = [0.567, 5.44];
+    var70[2] = var76;
+    var76 = [7.472];
+    var76[1] = var80;
+    var70[3] = var76;
+    var76 = [0.46];
+    var76[1] = var79;
+    var70[4] = var76;
+    var76 = new Array(2);
+    var76[0] = var78;
+    var76[1] = var77;
+    var70[5] = var76;
+    var62.o = var70;
+    var70 = [6.946];
+    var70[1] = var46;
+    var46 = new Array(6);
+    var46[0] = var70;
+    var70 = new Array(2);
+    var70[0] = var75;
+    var70[1] = var74;
+    var46[1] = var70;
+    var70 = new Array(2);
+    var70[0] = var73;
+    var70[1] = var72;
+    var46[2] = var70;
+    var70 = [4.156, 15.336];
+    var46[3] = var70;
+    var70 = [16.036, 2.554];
+    var46[4] = var70;
+    var70 = [13.966];
+    var70[1] = var71;
+    var46[5] = var70;
+    var62.v = var46;
+    var62.c = var14;
+    var46 = new Array(1);
+    var46[0] = var62;
+    var33.s = var46;
+    var20[2] = var33;
+    var33 = {};
+    var33.t = var38;
+    var46 = {};
+    var62 = [6.055];
+    var62[1] = var55;
+    var55 = new Array(6);
+    var55[0] = var62;
+    var62 = [6.234];
+    var62[1] = var69;
+    var55[1] = var62;
+    var62 = new Array(2);
+    var62[0] = var68;
+    var62[1] = var67;
+    var55[2] = var62;
+    var62 = new Array(2);
+    var62[0] = var66;
+    var62[1] = var65;
+    var55[3] = var62;
+    var62 = new Array(2);
+    var62[0] = var64;
+    var62[1] = var63;
+    var55[4] = var62;
+    var62 = [3.142, 3.712];
+    var55[5] = var62;
+    var46.i = var55;
+    var55 = new Array(2);
+    var55[0] = var61;
+    var55[1] = var48;
+    var48 = new Array(6);
+    var48[0] = var55;
+    var55 = new Array(2);
+    var55[0] = var60;
+    var55[1] = var59;
+    var48[1] = var55;
+    var55 = [3.1, 7.177];
+    var48[2] = var55;
+    var55 = [12.669];
+    var55[1] = var58;
+    var48[3] = var55;
+    var55 = [0, 0];
+    var48[4] = var55;
+    var55 = new Array(2);
+    var55[0] = var57;
+    var55[1] = var56;
+    var48[5] = var55;
+    var46.o = var48;
+    var48 = [5.321];
+    var48[1] = var41;
+    var41 = new Array(6);
+    var41[0] = var48;
+    var48 = new Array(2);
+    var48[0] = var54;
+    var48[1] = var53;
+    var41[1] = var48;
+    var48 = new Array(2);
+    var48[0] = var52;
+    var48[1] = var51;
+    var41[2] = var48;
+    var48 = [3.968, 15.461];
+    var41[3] = var48;
+    var48 = [25.848];
+    var48[1] = var50;
+    var41[4] = var48;
+    var48 = [24.215];
+    var48[1] = var49;
+    var41[5] = var48;
+    var46.v = var41;
+    var46.c = var14;
+    var41 = new Array(1);
+    var41[0] = var46;
+    var33.s = var41;
+    var20[3] = var33;
+    var5.k = var20;
+    var6.ks = var5;
+    var5 = new Array(3);
+    var5[0] = var6;
+    var6 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var20 = {
+        'a': 1,
+        'k': null,
+        'ix': 4
+    };
+    var41 = {};
+    var33 = {};
+    var46 = [0.667];
+    var33.x = var46;
+    var46 = [1];
+    var33.y = var46;
+    var41.i = var33;
+    var33 = {};
+    var46 = [0.333];
+    var33.x = var46;
+    var46 = [0];
+    var33.y = var46;
+    var41.o = var33;
+    var41.t = var31;
+    var33 = [0.913725550034, 0.270588235294, 0.611764705882, 1];
+    var41.s = var33;
+    var33 = new Array(4);
+    var33[0] = var41;
+    var41 = {};
+    var46 = {};
+    var48 = [0.667];
+    var46.x = var48;
+    var48 = [1];
+    var46.y = var48;
+    var41.i = var46;
+    var46 = {};
+    var48 = [0.167];
+    var46.x = var48;
+    var48 = [0];
+    var46.y = var48;
+    var41.o = var46;
+    var41.t = var44;
+    var44 = [0, 0, 0, 1];
+    var41.s = var44;
+    var33[1] = var41;
+    var41 = {};
+    var44 = {};
+    var46 = [0.833];
+    var44.x = var46;
+    var46 = [1];
+    var44.y = var46;
+    var41.i = var44;
+    var44 = {};
+    var46 = [0.167];
+    var44.x = var46;
+    var46 = [0];
+    var44.y = var46;
+    var41.o = var44;
+    var41.t = var16;
+    var44 = [0, 0, 0, 1];
+    var41.s = var44;
+    var33[2] = var41;
+    var41 = {};
+    var41.t = var38;
+    var44 = [0.913725550034, 0.270588235294, 0.611764705882, 1];
+    var41.s = var44;
+    var33[3] = var41;
+    var20.k = var33;
+    var6.c = var20;
+    var20 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var6.o = var20;
+    var5[1] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var33 = [27.607, 17.461];
+    var20.k = var33;
+    var6.p = var20;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var33 = [0, 0];
+    var20.k = var33;
+    var6.a = var20;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var33 = [100, 100];
+    var20.k = var33;
+    var6.s = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var6.r = var20;
+    var20 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var20;
+    var6.nm = var7;
+    var5[2] = var6;
+    var4.it = var5;
+    var3[1] = var4;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 3',
+        'np': 3,
+        'cix': 2,
+        'bm': 0,
+        'ix': 3,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 4',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 1,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var20 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var5 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var33 = {};
+    var41 = new Array(2);
+    var44 = [0, 0];
+    var41[0] = var44;
+    var44 = new Array(2);
+    var46 = -8.796;
+    var44[0] = var46;
+    var46 = 6.678;
+    var44[1] = var46;
+    var41[1] = var44;
+    var33.i = var41;
+    var41 = new Array(2);
+    var44 = [0, 0];
+    var41[0] = var44;
+    var44 = [0, 0];
+    var41[1] = var44;
+    var33.o = var41;
+    var41 = new Array(2);
+    var44 = -9.34;
+    var41[0] = var44;
+    var41[1] = var40;
+    var40 = new Array(2);
+    var40[0] = var41;
+    var41 = [8.96];
+    var44 = -3.339;
+    var41[1] = var44;
+    var40[1] = var41;
+    var33.v = var40;
+    var33.c = var9;
+    var5.k = var33;
+    var20.ks = var5;
+    var5 = new Array(3);
+    var5[0] = var20;
+    var20 = {
+        'ty': 'st',
+        'c': null,
+        'o': null,
+        'w': null,
+        'lc': 2,
+        'lj': 2,
+        'bm': 0,
+        'nm': 'Stroke 1',
+        'mn': 'ADBE Vector Graphic - Stroke',
+        'hd': false
+    };
+    var33 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var40 = [0.305882352941, 0.352941176471, 0.909803981407, 1];
+    var33.k = var40;
+    var20.c = var33;
+    var33 = {
+        'a': 0,
+        'k': 100,
+        'ix': 4
+    };
+    var20.o = var33;
+    var33 = {
+        'a': 0,
+        'k': 3,
+        'ix': 5
+    };
+    var20.w = var33;
+    var5[1] = var20;
+    var20 = {};
+    var20.ty = var8;
+    var33 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var40 = [38.914, 8.301];
+    var33.k = var40;
+    var20.p = var33;
+    var33 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var40 = [0, 0];
+    var33.k = var40;
+    var20.a = var33;
+    var33 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var40 = [100, 100];
+    var33.k = var40;
+    var20.s = var33;
+    var33 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var20.r = var33;
+    var33 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var20.o = var33;
+    var33 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var20.sk = var33;
+    var33 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var20.sa = var33;
+    var20.nm = var7;
+    var5[2] = var20;
+    var6.it = var5;
+    var5 = new Array(4);
+    var5[0] = var6;
+    var6 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 5',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 2,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var33 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var40 = {};
+    var41 = new Array(2);
+    var44 = [0, 0];
+    var41[0] = var44;
+    var44 = new Array(2);
+    var46 = -8.753;
+    var44[0] = var46;
+    var46 = -6.734;
+    var44[1] = var46;
+    var41[1] = var44;
+    var40.i = var41;
+    var41 = new Array(2);
+    var44 = [0, 0];
+    var41[0] = var44;
+    var44 = [0, 0];
+    var41[1] = var44;
+    var40.o = var41;
+    var44 = new Array(2);
+    var41 = -8.614;
+    var44[0] = var41;
+    var41 = 0.354;
+    var44[1] = var41;
+    var41 = new Array(2);
+    var41[0] = var44;
+    var44 = [8.952, 3.367];
+    var41[1] = var44;
+    var40.v = var41;
+    var40.c = var9;
+    var20.k = var40;
+    var33.ks = var20;
+    var20 = new Array(3);
+    var20[0] = var33;
+    var33 = {
+        'ty': 'st',
+        'c': null,
+        'o': null,
+        'w': null,
+        'lc': 2,
+        'lj': 2,
+        'bm': 0,
+        'nm': 'Stroke 1',
+        'mn': 'ADBE Vector Graphic - Stroke',
+        'hd': false
+    };
+    var40 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var41 = [0.305882352941, 0.352941176471, 0.909803981407, 1];
+    var40.k = var41;
+    var33.c = var40;
+    var40 = {
+        'a': 0,
+        'k': 100,
+        'ix': 4
+    };
+    var33.o = var40;
+    var40 = {
+        'a': 0,
+        'k': 3,
+        'ix': 5
+    };
+    var33.w = var40;
+    var20[1] = var33;
+    var33 = {};
+    var33.ty = var8;
+    var40 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var41 = [38.914, 26.646];
+    var40.k = var41;
+    var33.p = var40;
+    var40 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var41 = [0, 0];
+    var40.k = var41;
+    var33.a = var40;
+    var40 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var41 = [100, 100];
+    var40.k = var41;
+    var33.s = var40;
+    var40 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var33.r = var40;
+    var40 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var33.o = var40;
+    var40 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var33.sk = var40;
+    var40 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var33.sa = var40;
+    var33.nm = var7;
+    var20[2] = var33;
+    var6.it = var20;
+    var5[1] = var6;
+    var6 = {
+        'ty': 'tm',
+        's': null,
+        'e': null,
+        'o': null,
+        'm': 1,
+        'ix': 3,
+        'nm': 'Trim Paths 1',
+        'mn': 'ADBE Vector Filter - Trim',
+        'hd': false
+    };
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 1
+    };
+    var6.s = var20;
+    var20 = {
+        'a': 1,
+        'k': null,
+        'ix': 2
+    };
+    var33 = {};
+    var40 = {};
+    var41 = [0.667];
+    var40.x = var41;
+    var41 = [1];
+    var40.y = var41;
+    var33.i = var40;
+    var40 = {};
+    var41 = [0.333];
+    var40.x = var41;
+    var41 = [0];
+    var40.y = var41;
+    var33.o = var40;
+    var33.t = var31;
+    var31 = [0];
+    var33.s = var31;
+    var31 = new Array(4);
+    var31[0] = var33;
+    var33 = {};
+    var40 = {};
+    var41 = [0.833];
+    var40.x = var41;
+    var41 = [1];
+    var40.y = var41;
+    var33.i = var40;
+    var40 = {};
+    var41 = [0.167];
+    var40.x = var41;
+    var41 = [0];
+    var40.y = var41;
+    var33.o = var40;
+    var33.t = var39;
+    var39 = [100];
+    var33.s = var39;
+    var31[1] = var33;
+    var33 = {};
+    var39 = {};
+    var40 = [0.833];
+    var39.x = var40;
+    var40 = [1];
+    var39.y = var40;
+    var33.i = var39;
+    var39 = {};
+    var40 = [0.167];
+    var39.x = var40;
+    var40 = [0];
+    var39.y = var40;
+    var33.o = var39;
+    var33.t = var16;
+    var39 = [100];
+    var33.s = var39;
+    var31[2] = var33;
+    var33 = {};
+    var33.t = var38;
+    var38 = [0];
+    var33.s = var38;
+    var31[3] = var33;
+    var20.k = var31;
+    var6.e = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 3
+    };
+    var6.o = var20;
+    var5[2] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var31 = [28.441, 17.761];
+    var20.k = var31;
+    var6.p = var20;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var31 = [28.973, 17.375];
+    var20.k = var31;
+    var6.a = var20;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var31 = [147.953, 139.764];
+    var20.k = var31;
+    var6.s = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var6.r = var20;
+    var20 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var20;
+    var6.nm = var7;
+    var5[3] = var6;
+    var4.it = var5;
+    var3[2] = var4;
+    var2.shapes = var3;
+    var0[11] = var2;
+    var2 = {
+        'ddd': 0,
+        'ind': 13,
+        'ty': 4,
+        'nm': 'Ear R',
+        'parent': 10,
+        'sr': 1,
+        'ks': null,
+        'ao': 0,
+        'shapes': null,
+        'ip': 0,
+        'op': 120,
+        'st': 0,
+        'ct': 1,
+        'bm': 0
+    };
+    var3 = {};
+    var4 = {
+        'a': 0,
+        'k': 100,
+        'ix': 11
+    };
+    var3.o = var4;
+    var4 = {
+        'a': 0,
+        'k': 0,
+        'ix': 10
+    };
+    var3.r = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 2,
+        'l': 2
+    };
+    var5 = [310.534, 59.202, 0];
+    var4.k = var5;
+    var3.p = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 1,
+        'l': 2
+    };
+    var5 = [412.965, 142.433, 0];
+    var4.k = var5;
+    var3.a = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 6,
+        'l': 2
+    };
+    var5 = [100, 100, 100];
+    var4.k = var5;
+    var3.s = var4;
+    var2.ks = var3;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 1',
+        'np': 3,
+        'cix': 2,
+        'bm': 0,
+        'ix': 1,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var5 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var3 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var6 = {};
+    var31 = [9.36];
+    var33 = -0.099;
+    var31[1] = var33;
+    var20 = new Array(8);
+    var20[0] = var31;
+    var31 = [0, 0];
+    var20[1] = var31;
+    var31 = new Array(2);
+    var31[0] = var37;
+    var46 = 4.226;
+    var31[1] = var46;
+    var20[2] = var31;
+    var31 = [0, 0];
+    var20[3] = var31;
+    var31 = new Array(2);
+    var37 = -4.003;
+    var31[0] = var37;
+    var37 = 0.042;
+    var31[1] = var37;
+    var20[4] = var31;
+    var31 = [0, 0];
+    var20[5] = var31;
+    var31 = [0.005];
+    var38 = -9.909;
+    var31[1] = var38;
+    var20[6] = var31;
+    var31 = [0, 0];
+    var20[7] = var31;
+    var6.i = var20;
+    var20 = new Array(8);
+    var31 = [0, 0];
+    var20[0] = var31;
+    var31 = new Array(2);
+    var38 = -3.992;
+    var31[0] = var38;
+    var31[1] = var37;
+    var20[1] = var31;
+    var31 = [0, 0];
+    var20[2] = var31;
+    var31 = [0.002];
+    var44 = -4.238;
+    var31[1] = var44;
+    var20[3] = var31;
+    var31 = [0, 0];
+    var20[4] = var31;
+    var31 = [9.36];
+    var31[1] = var33;
+    var20[5] = var31;
+    var31 = [0, 0];
+    var20[6] = var31;
+    var31 = new Array(2);
+    var37 = -0.005;
+    var31[0] = var37;
+    var33 = 9.908;
+    var31[1] = var33;
+    var20[7] = var31;
+    var6.o = var20;
+    var20 = new Array(8);
+    var31 = [6.424, 38.427];
+    var20[0] = var31;
+    var31 = new Array(2);
+    var33 = -16.221;
+    var31[0] = var33;
+    var33 = 38.666;
+    var31[1] = var33;
+    var20[1] = var31;
+    var31 = new Array(2);
+    var33 = -23.474;
+    var31[0] = var33;
+    var33 = 31.059;
+    var31[1] = var33;
+    var20[2] = var31;
+    var31 = new Array(2);
+    var33 = -23.443;
+    var31[0] = var33;
+    var33 = -30.587;
+    var31[1] = var33;
+    var20[3] = var31;
+    var31 = new Array(2);
+    var33 = -16.161;
+    var31[0] = var33;
+    var33 = -38.37;
+    var31[1] = var33;
+    var20[4] = var31;
+    var31 = [6.464];
+    var33 = -38.609;
+    var31[1] = var33;
+    var20[5] = var31;
+    var31 = [23.472];
+    var33 = -20.773;
+    var31[1] = var33;
+    var20[6] = var31;
+    var31 = [23.451, 20.232];
+    var20[7] = var31;
+    var6.v = var20;
+    var6.c = var14;
+    var3.k = var6;
+    var5.ks = var3;
+    var3 = new Array(4);
+    var3[0] = var5;
+    var5 = {
+        'ty': 'mm',
+        'mm': 4,
+        'nm': 'Merge Paths 1',
+        'mn': 'ADBE Vector Filter - Merge',
+        'hd': false
+    };
+    var3[1] = var5;
+    var5 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var20 = [0.717647058824, 0.803921628466, 1, 1];
+    var6.k = var20;
+    var5.c = var6;
+    var6 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var5.o = var6;
+    var3[2] = var5;
+    var5 = {};
+    var5.ty = var8;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var20 = [417.807, 137.252];
+    var6.k = var20;
+    var5.p = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var20 = [0, 0];
+    var6.k = var20;
+    var5.a = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var20 = [100, 100];
+    var6.k = var20;
+    var5.s = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var5.r = var6;
+    var6 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var5.o = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var5.sk = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var5.sa = var6;
+    var5.nm = var7;
+    var3[3] = var5;
+    var4.it = var3;
+    var3 = new Array(2);
+    var3[0] = var4;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 2',
+        'np': 3,
+        'cix': 2,
+        'bm': 0,
+        'ix': 2,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var5 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var20 = {};
+    var33 = [23.483];
+    var33[1] = var42;
+    var31 = new Array(8);
+    var31[0] = var33;
+    var33 = [0, 0];
+    var31[1] = var33;
+    var33 = new Array(2);
+    var33[0] = var47;
+    var38 = 24.86;
+    var33[1] = var38;
+    var31[2] = var33;
+    var33 = [0, 0];
+    var31[3] = var33;
+    var33 = new Array(2);
+    var40 = -23.483;
+    var33[0] = var40;
+    var39 = 0.248;
+    var33[1] = var39;
+    var31[4] = var33;
+    var33 = [0, 0];
+    var31[5] = var33;
+    var33 = [0.013];
+    var41 = -24.859;
+    var33[1] = var41;
+    var31[6] = var33;
+    var33 = [0, 0];
+    var31[7] = var33;
+    var20.i = var31;
+    var31 = new Array(8);
+    var33 = [0, 0];
+    var31[0] = var33;
+    var33 = new Array(2);
+    var33[0] = var40;
+    var33[1] = var39;
+    var31[1] = var33;
+    var33 = [0, 0];
+    var31[2] = var33;
+    var33 = [0.013];
+    var33[1] = var41;
+    var31[3] = var33;
+    var33 = [0, 0];
+    var31[4] = var33;
+    var33 = [23.483];
+    var33[1] = var42;
+    var31[5] = var33;
+    var33 = [0, 0];
+    var31[6] = var33;
+    var33 = new Array(2);
+    var33[0] = var47;
+    var33[1] = var38;
+    var31[7] = var33;
+    var20.o = var31;
+    var38 = new Array(8);
+    var31 = [9.602, 66.908];
+    var38[0] = var31;
+    var33 = new Array(2);
+    var31 = -9.671;
+    var33[0] = var31;
+    var31 = 67.113;
+    var33[1] = var31;
+    var38[1] = var33;
+    var33 = new Array(2);
+    var47 = -52.345;
+    var33[0] = var47;
+    var47 = 22.363;
+    var33[1] = var47;
+    var38[2] = var33;
+    var33 = new Array(2);
+    var47 = -52.322;
+    var33[0] = var47;
+    var47 = -21.259;
+    var33[1] = var47;
+    var38[3] = var33;
+    var33 = new Array(2);
+    var47 = -9.603;
+    var33[0] = var47;
+    var47 = -66.909;
+    var33[1] = var47;
+    var38[4] = var33;
+    var47 = [9.671];
+    var33 = -67.112;
+    var47[1] = var33;
+    var38[5] = var47;
+    var47 = [52.345];
+    var48 = -22.365;
+    var47[1] = var48;
+    var38[6] = var47;
+    var47 = [52.322, 21.259];
+    var38[7] = var47;
+    var20.v = var38;
+    var20.c = var14;
+    var5.k = var20;
+    var6.ks = var5;
+    var5 = new Array(4);
+    var5[0] = var6;
+    var6 = {
+        'ty': 'mm',
+        'mm': 4,
+        'nm': 'Merge Paths 1',
+        'mn': 'ADBE Vector Filter - Merge',
+        'hd': false
+    };
+    var5[1] = var6;
+    var6 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var38 = [0.411764735802, 0.556862745098, 1, 1];
+    var20.k = var38;
+    var6.c = var20;
+    var20 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var6.o = var20;
+    var5[2] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var38 = [412.966, 142.433];
+    var20.k = var38;
+    var6.p = var20;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var38 = [0, 0];
+    var20.k = var38;
+    var6.a = var20;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var38 = [100, 100];
+    var20.k = var38;
+    var6.s = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var6.r = var20;
+    var20 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var20;
+    var6.nm = var7;
+    var5[3] = var6;
+    var4.it = var5;
+    var3[1] = var4;
+    var2.shapes = var3;
+    var0[12] = var2;
+    var2 = {
+        'ddd': 0,
+        'ind': 14,
+        'ty': 4,
+        'nm': 'Head',
+        'parent': 17,
+        'sr': 1,
+        'ks': null,
+        'ao': 0,
+        'shapes': null,
+        'ip': 0,
+        'op': 120,
+        'st': 0,
+        'ct': 1,
+        'bm': 0
+    };
+    var3 = {};
+    var4 = {
+        'a': 0,
+        'k': 100,
+        'ix': 11
+    };
+    var3.o = var4;
+    var4 = {
+        'a': 1,
+        'k': null,
+        'ix': 10
+    };
+    var6 = {};
+    var5 = {};
+    var20 = [0.833];
+    var5.x = var20;
+    var20 = [0.92];
+    var5.y = var20;
+    var6.i = var5;
+    var5 = {};
+    var20 = [0.333];
+    var5.x = var20;
+    var20 = [0];
+    var5.y = var20;
+    var6.o = var5;
+    var6.t = var15;
+    var5 = [0];
+    var6.s = var5;
+    var5 = new Array(4);
+    var5[0] = var6;
+    var6 = {};
+    var20 = {};
+    var38 = [0.667];
+    var20.x = var38;
+    var38 = [1];
+    var20.y = var38;
+    var6.i = var20;
+    var20 = {};
+    var38 = [0.167];
+    var20.x = var38;
+    var38 = [0.526];
+    var20.y = var38;
+    var6.o = var20;
+    var6.t = var17;
+    var20 = [13.7];
+    var6.s = var20;
+    var5[1] = var6;
+    var6 = {};
+    var20 = {};
+    var38 = [0.667];
+    var20.x = var38;
+    var38 = [1];
+    var20.y = var38;
+    var6.i = var20;
+    var20 = {};
+    var38 = [0.333];
+    var20.x = var38;
+    var38 = [0];
+    var20.y = var38;
+    var6.o = var20;
+    var6.t = var16;
+    var20 = [17];
+    var6.s = var20;
+    var5[2] = var6;
+    var6 = {};
+    var6.t = var30;
+    var20 = [0];
+    var6.s = var20;
+    var5[3] = var6;
+    var4.k = var5;
+    var3.r = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 2,
+        'l': 2
+    };
+    var5 = [138.545, 74.839, 0];
+    var4.k = var5;
+    var3.p = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 1,
+        'l': 2
+    };
+    var5 = [217.787, 230.606, 0];
+    var4.k = var5;
+    var3.a = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 6,
+        'l': 2
+    };
+    var5 = [100, 100, 100];
+    var4.k = var5;
+    var3.s = var4;
+    var2.ks = var3;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 3',
+        'np': 3,
+        'cix': 2,
+        'bm': 0,
+        'ix': 1,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var5 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var3 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var6 = {};
+    var38 = [55.87];
+    var20 = -3.303;
+    var38[1] = var20;
+    var20 = new Array(8);
+    var20[0] = var38;
+    var38 = [39.215, 4.362];
+    var20[1] = var38;
+    var38 = new Array(2);
+    var47 = -1.4;
+    var38[0] = var47;
+    var47 = 48.011;
+    var38[1] = var47;
+    var20[2] = var38;
+    var38 = [0, 0];
+    var20[3] = var38;
+    var38 = new Array(2);
+    var47 = -59.22;
+    var38[0] = var47;
+    var47 = 4.768;
+    var38[1] = var47;
+    var20[4] = var38;
+    var38 = new Array(2);
+    var47 = -21.16;
+    var38[0] = var47;
+    var47 = -0.859;
+    var38[1] = var47;
+    var20[5] = var38;
+    var38 = [1.399];
+    var47 = -48.01;
+    var38[1] = var47;
+    var20[6] = var38;
+    var38 = [0, 0];
+    var20[7] = var38;
+    var6.i = var20;
+    var38 = new Array(2);
+    var20 = -44.805;
+    var38[0] = var20;
+    var20 = 2.649;
+    var38[1] = var20;
+    var20 = new Array(8);
+    var20[0] = var38;
+    var38 = new Array(2);
+    var47 = -39.004;
+    var38[0] = var47;
+    var47 = -4.34;
+    var38[1] = var47;
+    var20[1] = var38;
+    var38 = [0, 0];
+    var20[2] = var38;
+    var38 = [1.579];
+    var47 = -70.414;
+    var38[1] = var47;
+    var20[3] = var38;
+    var38 = [63.255];
+    var47 = -5.093;
+    var38[1] = var47;
+    var20[4] = var38;
+    var38 = [58.033, 2.356];
+    var20[5] = var38;
+    var38 = [0, 0];
+    var20[6] = var38;
+    var38 = new Array(2);
+    var47 = -1.545;
+    var38[0] = var47;
+    var47 = 53.006;
+    var38[1] = var47;
+    var20[7] = var38;
+    var6.o = var20;
+    var20 = new Array(8);
+    var38 = [94.346, 128.489];
+    var20[0] = var38;
+    var38 = new Array(2);
+    var47 = -110.446;
+    var38[0] = var47;
+    var47 = 127.994;
+    var38[1] = var47;
+    var20[1] = var38;
+    var38 = new Array(2);
+    var47 = -190.213;
+    var38[0] = var47;
+    var47 = 41.533;
+    var38[1] = var47;
+    var20[2] = var38;
+    var38 = new Array(2);
+    var47 = -186.07;
+    var38[0] = var47;
+    var47 = -33.049;
+    var38[1] = var47;
+    var20[3] = var38;
+    var38 = new Array(2);
+    var47 = -92.255;
+    var38[0] = var47;
+    var47 = -127.263;
+    var38[1] = var47;
+    var20[4] = var38;
+    var38 = [105.757];
+    var47 = -129.32;
+    var38[1] = var47;
+    var20[5] = var38;
+    var38 = [190.214];
+    var47 = -41.298;
+    var38[1] = var47;
+    var20[6] = var38;
+    var38 = [189.341, 43.94];
+    var20[7] = var38;
+    var6.v = var20;
+    var6.c = var14;
+    var3.k = var6;
+    var5.ks = var3;
+    var3 = new Array(4);
+    var3[0] = var5;
+    var5 = {
+        'ty': 'mm',
+        'mm': 4,
+        'nm': 'Merge Paths 1',
+        'mn': 'ADBE Vector Filter - Merge',
+        'hd': false
+    };
+    var3[1] = var5;
+    var5 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var20 = [0.411764735802, 0.556862745098, 1, 1];
+    var6.k = var20;
+    var5.c = var6;
+    var6 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var5.o = var6;
+    var3[2] = var5;
+    var5 = {};
+    var5.ty = var8;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var20 = [227.823, 132.606];
+    var6.k = var20;
+    var5.p = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var20 = [0, 0];
+    var6.k = var20;
+    var5.a = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var20 = [100, 100];
+    var6.k = var20;
+    var5.s = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var5.r = var6;
+    var6 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var5.o = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var5.sk = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var5.sa = var6;
+    var5.nm = var7;
+    var3[3] = var5;
+    var4.it = var3;
+    var3 = new Array(1);
+    var3[0] = var4;
+    var2.shapes = var3;
+    var0[13] = var2;
+    var2 = {
+        'ddd': 0,
+        'ind': 15,
+        'ty': 4,
+        'nm': 'Ear L',
+        'parent': 14,
+        'sr': 1,
+        'ks': null,
+        'ao': 0,
+        'shapes': null,
+        'ip': 0,
+        'op': 120,
+        'st': 0,
+        'ct': 1,
+        'bm': 0
+    };
+    var3 = {};
+    var4 = {
+        'a': 0,
+        'k': 100,
+        'ix': 11
+    };
+    var3.o = var4;
+    var4 = {
+        'a': 0,
+        'k': 0,
+        'ix': 10
+    };
+    var3.r = var4;
+    var4 = {
+        'a': 1,
+        'k': null,
+        'ix': 2,
+        'l': 2
+    };
+    var6 = {};
+    var5 = {
+        'x': 0.224,
+        'y': 1
+    };
+    var6.i = var5;
+    var5 = {
+        'x': 0.333,
+        'y': 0
+    };
+    var6.o = var5;
+    var6.t = var15;
+    var5 = [44.608, 142.335, 0];
+    var6.s = var5;
+    var5 = new Array(3);
+    var5[0] = var32;
+    var5[1] = var15;
+    var5[2] = var15;
+    var6.to = var5;
+    var5 = [2.5, 0, 0];
+    var6.ti = var5;
+    var5 = new Array(4);
+    var5[0] = var6;
+    var6 = {};
+    var20 = {
+        'x': 0.667,
+        'y': 0.667
+    };
+    var6.i = var20;
+    var20 = {
+        'x': 0.167,
+        'y': 0.167
+    };
+    var6.o = var20;
+    var6.t = var17;
+    var20 = [29.608, 142.335, 0];
+    var6.s = var20;
+    var20 = [0, 0, 0];
+    var6.to = var20;
+    var20 = [0, 0, 0];
+    var6.ti = var20;
+    var5[1] = var6;
+    var6 = {};
+    var20 = {
+        'x': 0.325,
+        'y': 0.997
+    };
+    var6.i = var20;
+    var20 = {
+        'x': 0.167,
+        'y': 0
+    };
+    var6.o = var20;
+    var6.t = var16;
+    var20 = [29.608, 142.335, 0];
+    var6.s = var20;
+    var20 = [2.5, 0, 0];
+    var6.to = var20;
+    var20 = new Array(3);
+    var20[0] = var32;
+    var20[1] = var15;
+    var20[2] = var15;
+    var6.ti = var20;
+    var5[2] = var6;
+    var6 = {};
+    var6.t = var30;
+    var20 = [44.608, 142.335, 0];
+    var6.s = var20;
+    var5[3] = var6;
+    var4.k = var5;
+    var3.p = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 1,
+        'l': 2
+    };
+    var5 = [52.608, 142.335, 0];
+    var4.k = var5;
+    var3.a = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 6,
+        'l': 2
+    };
+    var5 = [100, 100, 100];
+    var4.k = var5;
+    var3.s = var4;
+    var2.ks = var3;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 4',
+        'np': 3,
+        'cix': 2,
+        'bm': 0,
+        'ix': 1,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var5 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var3 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var6 = {};
+    var32 = new Array(2);
+    var32[0] = var43;
+    var38 = 0.099;
+    var32[1] = var38;
+    var20 = new Array(8);
+    var20[0] = var32;
+    var32 = [0, 0];
+    var20[1] = var32;
+    var32 = new Array(2);
+    var32[0] = var29;
+    var32[1] = var46;
+    var20[2] = var32;
+    var32 = [0, 0];
+    var20[3] = var32;
+    var32 = [4.003];
+    var32[1] = var45;
+    var20[4] = var32;
+    var32 = [0, 0];
+    var20[5] = var32;
+    var32 = [0.005];
+    var46 = -9.908;
+    var32[1] = var46;
+    var20[6] = var32;
+    var32 = [0, 0];
+    var20[7] = var32;
+    var6.i = var20;
+    var20 = new Array(8);
+    var32 = [0, 0];
+    var20[0] = var32;
+    var32 = [3.992];
+    var32[1] = var45;
+    var20[1] = var32;
+    var32 = [0, 0];
+    var20[2] = var32;
+    var32 = [0.002];
+    var32[1] = var44;
+    var20[3] = var32;
+    var32 = [0, 0];
+    var20[4] = var32;
+    var32 = new Array(2);
+    var32[0] = var43;
+    var32[1] = var38;
+    var20[5] = var32;
+    var32 = [0, 0];
+    var20[6] = var32;
+    var32 = new Array(2);
+    var32[0] = var37;
+    var37 = 9.909;
+    var32[1] = var37;
+    var20[7] = var32;
+    var6.o = var20;
+    var32 = new Array(2);
+    var20 = -6.463;
+    var32[0] = var20;
+    var20 = 38.609;
+    var32[1] = var20;
+    var20 = new Array(8);
+    var20[0] = var32;
+    var32 = [16.181, 38.37];
+    var20[1] = var32;
+    var32 = [23.443, 30.61];
+    var20[2] = var32;
+    var32 = [23.475];
+    var37 = -31.037;
+    var32[1] = var37;
+    var20[3] = var32;
+    var32 = [16.2];
+    var37 = -38.666;
+    var32[1] = var37;
+    var20[4] = var32;
+    var32 = new Array(2);
+    var37 = -6.423;
+    var32[0] = var37;
+    var37 = -38.427;
+    var32[1] = var37;
+    var20[5] = var32;
+    var32 = new Array(2);
+    var37 = -23.451;
+    var32[0] = var37;
+    var37 = -20.232;
+    var32[1] = var37;
+    var20[6] = var32;
+    var32 = new Array(2);
+    var37 = -23.472;
+    var32[0] = var37;
+    var37 = 20.773;
+    var32[1] = var37;
+    var20[7] = var32;
+    var6.v = var20;
+    var6.c = var14;
+    var3.k = var6;
+    var5.ks = var3;
+    var3 = new Array(4);
+    var3[0] = var5;
+    var5 = {
+        'ty': 'mm',
+        'mm': 4,
+        'nm': 'Merge Paths 1',
+        'mn': 'ADBE Vector Filter - Merge',
+        'hd': false
+    };
+    var3[1] = var5;
+    var5 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var20 = [0.717647058824, 0.803921628466, 1, 1];
+    var6.k = var20;
+    var5.c = var6;
+    var6 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var5.o = var6;
+    var3[2] = var5;
+    var5 = {};
+    var5.ty = var8;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var20 = [47.771, 137.21];
+    var6.k = var20;
+    var5.p = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var20 = [0, 0];
+    var6.k = var20;
+    var5.a = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var20 = [100, 100];
+    var6.k = var20;
+    var5.s = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var5.r = var6;
+    var6 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var5.o = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var5.sk = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var5.sa = var6;
+    var5.nm = var7;
+    var3[3] = var5;
+    var4.it = var3;
+    var3 = new Array(2);
+    var3[0] = var4;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 5',
+        'np': 3,
+        'cix': 2,
+        'bm': 0,
+        'ix': 2,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var5 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var20 = {};
+    var37 = new Array(2);
+    var37[0] = var40;
+    var37[1] = var39;
+    var32 = new Array(8);
+    var32[0] = var37;
+    var37 = [0, 0];
+    var32[1] = var37;
+    var37 = new Array(2);
+    var37[0] = var24;
+    var38 = 24.859;
+    var37[1] = var38;
+    var32[2] = var37;
+    var37 = [0, 0];
+    var32[3] = var37;
+    var37 = [23.483];
+    var37[1] = var42;
+    var32[4] = var37;
+    var37 = [0, 0];
+    var32[5] = var37;
+    var37 = [0.013];
+    var43 = -24.86;
+    var37[1] = var43;
+    var32[6] = var37;
+    var37 = [0, 0];
+    var32[7] = var37;
+    var20.i = var32;
+    var32 = new Array(8);
+    var37 = [0, 0];
+    var32[0] = var37;
+    var37 = [23.483];
+    var37[1] = var42;
+    var32[1] = var37;
+    var37 = [0, 0];
+    var32[2] = var37;
+    var37 = [0.012];
+    var37[1] = var41;
+    var32[3] = var37;
+    var37 = [0, 0];
+    var32[4] = var37;
+    var37 = new Array(2);
+    var37[0] = var40;
+    var37[1] = var39;
+    var32[5] = var37;
+    var37 = [0, 0];
+    var32[6] = var37;
+    var37 = new Array(2);
+    var37[0] = var24;
+    var37[1] = var38;
+    var32[7] = var37;
+    var20.o = var32;
+    var32 = new Array(2);
+    var37 = -9.67;
+    var32[0] = var37;
+    var32[1] = var31;
+    var31 = new Array(8);
+    var31[0] = var32;
+    var32 = [9.602, 66.909];
+    var31[1] = var32;
+    var32 = [52.322, 21.26];
+    var31[2] = var32;
+    var32 = [52.345];
+    var37 = -22.364;
+    var32[1] = var37;
+    var31[3] = var32;
+    var32 = [9.671];
+    var32[1] = var33;
+    var31[4] = var32;
+    var32 = new Array(2);
+    var33 = -9.602;
+    var32[0] = var33;
+    var33 = -66.908;
+    var32[1] = var33;
+    var31[5] = var32;
+    var32 = new Array(2);
+    var33 = -52.321;
+    var32[0] = var33;
+    var33 = -21.258;
+    var32[1] = var33;
+    var31[6] = var32;
+    var32 = new Array(2);
+    var33 = -52.344;
+    var32[0] = var33;
+    var33 = 22.365;
+    var32[1] = var33;
+    var31[7] = var32;
+    var20.v = var31;
+    var20.c = var14;
+    var5.k = var20;
+    var6.ks = var5;
+    var5 = new Array(4);
+    var5[0] = var6;
+    var6 = {
+        'ty': 'mm',
+        'mm': 4,
+        'nm': 'Merge Paths 1',
+        'mn': 'ADBE Vector Filter - Merge',
+        'hd': false
+    };
+    var5[1] = var6;
+    var6 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var31 = [0.411764735802, 0.556862745098, 1, 1];
+    var20.k = var31;
+    var6.c = var20;
+    var20 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var6.o = var20;
+    var5[2] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var31 = [52.607, 142.335];
+    var20.k = var31;
+    var6.p = var20;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var31 = [0, 0];
+    var20.k = var31;
+    var6.a = var20;
+    var20 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var31 = [100, 100];
+    var20.k = var31;
+    var6.s = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var6.r = var20;
+    var20 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var20;
+    var20 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var20;
+    var6.nm = var7;
+    var5[3] = var6;
+    var4.it = var5;
+    var3[1] = var4;
+    var2.shapes = var3;
+    var0[14] = var2;
+    var2 = {
+        'ddd': 0,
+        'ind': 16,
+        'ty': 4,
+        'nm': 'Leaf',
+        'parent': 14,
+        'sr': 1,
+        'ks': null,
+        'ao': 0,
+        'shapes': null,
+        'ip': 0,
+        'op': 120,
+        'st': 0,
+        'ct': 1,
+        'bm': 0
+    };
+    var3 = {};
+    var4 = {
+        'a': 0,
+        'k': 100,
+        'ix': 11
+    };
+    var3.o = var4;
+    var4 = {
+        'a': 0,
+        'k': 0,
+        'ix': 10
+    };
+    var3.r = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 2,
+        'l': 2
+    };
+    var5 = [222.634];
+    var6 = -13.935;
+    var5[1] = var6;
+    var5[2] = var15;
+    var4.k = var5;
+    var3.p = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 1,
+        'l': 2
+    };
+    var5 = [102.406, 66.211, 0];
+    var4.k = var5;
+    var3.a = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 6,
+        'l': 2
+    };
+    var5 = [100, 100, 100];
+    var4.k = var5;
+    var3.s = var4;
+    var2.ks = var3;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'L',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 1,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var5 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 1',
+        'np': 3,
+        'cix': 2,
+        'bm': 0,
+        'ix': 1,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var3 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var31 = {};
+    var32 = [1.639];
+    var20 = -0.017;
+    var32[1] = var20;
+    var20 = new Array(7);
+    var20[0] = var32;
+    var32 = [1.081, 0.953];
+    var20[1] = var32;
+    var32 = [0.348, 1.176];
+    var20[2] = var32;
+    var32 = new Array(2);
+    var33 = -3.037;
+    var32[0] = var33;
+    var33 = 1.039;
+    var32[1] = var33;
+    var20[3] = var32;
+    var32 = new Array(2);
+    var33 = -0.953;
+    var32[0] = var33;
+    var33 = -3.199;
+    var32[1] = var33;
+    var20[4] = var32;
+    var32 = new Array(2);
+    var33 = -20.026;
+    var32[0] = var33;
+    var33 = -17.665;
+    var32[1] = var33;
+    var20[5] = var32;
+    var32 = [2.052];
+    var33 = -2.596;
+    var32[1] = var33;
+    var20[6] = var32;
+    var31.i = var20;
+    var33 = new Array(2);
+    var20 = -1.311;
+    var33[0] = var20;
+    var32 = 0.014;
+    var33[1] = var32;
+    var32 = new Array(7);
+    var32[0] = var33;
+    var33 = new Array(2);
+    var37 = -22.666;
+    var33[0] = var37;
+    var37 = -19.995;
+    var33[1] = var37;
+    var32[1] = var33;
+    var33 = new Array(2);
+    var37 = -0.95;
+    var33[0] = var37;
+    var37 = -3.204;
+    var33[1] = var37;
+    var32[2] = var33;
+    var33 = [3.03];
+    var37 = -1.038;
+    var33[1] = var37;
+    var32[3] = var33;
+    var33 = [0.076, 0.255];
+    var32[4] = var33;
+    var33 = [2.431, 2.145];
+    var32[5] = var33;
+    var33 = new Array(2);
+    var37 = -1.14;
+    var33[0] = var37;
+    var37 = 1.443;
+    var33[1] = var37;
+    var32[6] = var33;
+    var31.o = var32;
+    var32 = new Array(7);
+    var33 = [14.828, 29.557];
+    var32[0] = var33;
+    var33 = [11.118, 28.161];
+    var32[1] = var33;
+    var33 = new Array(2);
+    var37 = -20.339;
+    var33[0] = var37;
+    var37 = -20.851;
+    var33[1] = var37;
+    var32[2] = var33;
+    var33 = new Array(2);
+    var37 = -16.56;
+    var33[0] = var37;
+    var37 = -28.533;
+    var33[1] = var37;
+    var32[3] = var33;
+    var33 = new Array(2);
+    var37 = -9.345;
+    var33[0] = var37;
+    var37 = -24.621;
+    var33[1] = var37;
+    var32[4] = var33;
+    var33 = [18.549, 18.757];
+    var32[5] = var33;
+    var33 = [19.237, 27.342];
+    var32[6] = var33;
+    var31.v = var32;
+    var31.c = var14;
+    var3.k = var31;
+    var6.ks = var3;
+    var3 = new Array(4);
+    var3[0] = var6;
+    var6 = {
+        'ty': 'mm',
+        'mm': 4,
+        'nm': 'Merge Paths 1',
+        'mn': 'ADBE Vector Filter - Merge',
+        'hd': false
+    };
+    var3[1] = var6;
+    var6 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var31 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var32 = [0, 0.549019607843, 0.262745098039, 1];
+    var31.k = var32;
+    var6.c = var31;
+    var31 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var6.o = var31;
+    var3[2] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var31 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var32 = [63.677, 69.844];
+    var31.k = var32;
+    var6.p = var31;
+    var31 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var32 = [0, 0];
+    var31.k = var32;
+    var6.a = var31;
+    var31 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var32 = [100, 100];
+    var31.k = var32;
+    var6.s = var31;
+    var31 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var6.r = var31;
+    var31 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var31;
+    var31 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var31;
+    var31 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var31;
+    var6.nm = var7;
+    var3[3] = var6;
+    var5.it = var3;
+    var3 = new Array(3);
+    var3[0] = var5;
+    var5 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 2',
+        'np': 3,
+        'cix': 2,
+        'bm': 0,
+        'ix': 2,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var31 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var32 = {};
+    var33 = new Array(5);
+    var37 = [0, 0];
+    var33[0] = var37;
+    var37 = [33.562, 46.249];
+    var33[1] = var37;
+    var37 = [30.839];
+    var38 = -8.047;
+    var37[1] = var38;
+    var33[2] = var37;
+    var37 = new Array(2);
+    var38 = -13.955;
+    var37[0] = var38;
+    var38 = -34.365;
+    var37[1] = var38;
+    var33[3] = var37;
+    var37 = [0, 0];
+    var33[4] = var37;
+    var32.i = var33;
+    var33 = new Array(5);
+    var37 = [0, 0];
+    var33[0] = var37;
+    var37 = new Array(2);
+    var38 = -24.519;
+    var37[0] = var38;
+    var38 = -33.788;
+    var37[1] = var38;
+    var33[1] = var37;
+    var37 = new Array(2);
+    var38 = -25.616;
+    var37[0] = var38;
+    var38 = 6.685;
+    var37[1] = var38;
+    var33[2] = var37;
+    var37 = [15.895, 39.144];
+    var33[3] = var37;
+    var37 = [0, 0];
+    var33[4] = var37;
+    var32.o = var33;
+    var33 = new Array(5);
+    var37 = [86.375, 55.469];
+    var33[0] = var37;
+    var37 = [24.076];
+    var38 = -13.721;
+    var37[1] = var38;
+    var33[1] = var37;
+    var37 = new Array(2);
+    var38 = -45.53;
+    var37[0] = var38;
+    var38 = -57.914;
+    var37[1] = var38;
+    var33[2] = var37;
+    var37 = new Array(2);
+    var38 = -72.42;
+    var37[0] = var38;
+    var38 = 5.198;
+    var37[1] = var38;
+    var33[3] = var37;
+    var37 = new Array(2);
+    var38 = -9.785;
+    var37[0] = var38;
+    var38 = 65.961;
+    var37[1] = var38;
+    var33[4] = var37;
+    var32.v = var33;
+    var32.c = var14;
+    var6.k = var32;
+    var31.ks = var6;
+    var6 = new Array(4);
+    var6[0] = var31;
+    var31 = {
+        'ty': 'mm',
+        'mm': 4,
+        'nm': 'Merge Paths 1',
+        'mn': 'ADBE Vector Filter - Merge',
+        'hd': false
+    };
+    var6[1] = var31;
+    var31 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var32 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var33 = [0.145098039216, 0.796078491211, 0.474509833841, 1];
+    var32.k = var33;
+    var31.c = var32;
+    var32 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var31.o = var32;
+    var6[2] = var31;
+    var31 = {};
+    var31.ty = var8;
+    var32 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var33 = [86.625, 66.211];
+    var32.k = var33;
+    var31.p = var32;
+    var32 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var33 = [0, 0];
+    var32.k = var33;
+    var31.a = var32;
+    var32 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var33 = [100, 100];
+    var32.k = var33;
+    var31.s = var32;
+    var32 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var31.r = var32;
+    var32 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var31.o = var32;
+    var32 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var31.sk = var32;
+    var32 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var31.sa = var32;
+    var31.nm = var7;
+    var6[3] = var31;
+    var5.it = var6;
+    var3[1] = var5;
+    var5 = {};
+    var5.ty = var8;
+    var6 = {
+        'a': 1,
+        'k': null,
+        'ix': 2
+    };
+    var32 = {};
+    var31 = {
+        'x': 0.224,
+        'y': 1
+    };
+    var32.i = var31;
+    var31 = {
+        'x': 0.333,
+        'y': 0
+    };
+    var32.o = var31;
+    var32.t = var15;
+    var31 = [65, 62.722];
+    var32.s = var31;
+    var31 = [1.083, 0];
+    var32.to = var31;
+    var31 = new Array(2);
+    var31[0] = var21;
+    var31[1] = var15;
+    var32.ti = var31;
+    var31 = new Array(4);
+    var31[0] = var32;
+    var32 = {};
+    var33 = {
+        'x': 0.667,
+        'y': 0.667
+    };
+    var32.i = var33;
+    var33 = {
+        'x': 0.333,
+        'y': 0.333
+    };
+    var32.o = var33;
+    var32.t = var17;
+    var33 = [71.5, 62.722];
+    var32.s = var33;
+    var33 = [0, 0];
+    var32.to = var33;
+    var33 = [0, 0];
+    var32.ti = var33;
+    var31[1] = var32;
+    var32 = {};
+    var33 = {
+        'x': 0.325,
+        'y': 0.993
+    };
+    var32.i = var33;
+    var33 = {
+        'x': 0.333,
+        'y': 0
+    };
+    var32.o = var33;
+    var32.t = var16;
+    var33 = [71.5, 62.722];
+    var32.s = var33;
+    var33 = new Array(2);
+    var33[0] = var21;
+    var33[1] = var15;
+    var32.to = var33;
+    var33 = [1.083, 0];
+    var32.ti = var33;
+    var31[2] = var32;
+    var32 = {};
+    var32.t = var30;
+    var33 = [65, 62.722];
+    var32.s = var33;
+    var31[3] = var32;
+    var6.k = var31;
+    var5.p = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var31 = [56.864, 62.722];
+    var6.k = var31;
+    var5.a = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var31 = [100, 100];
+    var6.k = var31;
+    var5.s = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var5.r = var6;
+    var6 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var5.o = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var5.sk = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var5.sa = var6;
+    var5.nm = var7;
+    var3[2] = var5;
+    var4.it = var3;
+    var3 = new Array(2);
+    var3[0] = var4;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'R',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 2,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 3',
+        'np': 3,
+        'cix': 2,
+        'bm': 0,
+        'ix': 1,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var31 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var5 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var32 = {};
+    var33 = [1.24];
+    var33[1] = var24;
+    var24 = new Array(7);
+    var24[0] = var33;
+    var33 = [1.136, 1.528];
+    var24[1] = var33;
+    var33 = new Array(2);
+    var37 = -2.508;
+    var33[0] = var37;
+    var37 = 2.099;
+    var33[1] = var37;
+    var24[2] = var33;
+    var33 = new Array(2);
+    var33[0] = var36;
+    var36 = 0.416;
+    var33[1] = var36;
+    var24[3] = var33;
+    var33 = new Array(2);
+    var36 = -3.154;
+    var33[0] = var36;
+    var33[1] = var35;
+    var24[4] = var33;
+    var33 = [0.471];
+    var35 = -3.336;
+    var33[1] = var35;
+    var24[5] = var33;
+    var33 = [33.92];
+    var36 = -28.388;
+    var33[1] = var36;
+    var24[6] = var33;
+    var32.i = var24;
+    var24 = new Array(2);
+    var33 = -1.713;
+    var24[0] = var33;
+    var33 = 0.018;
+    var24[1] = var33;
+    var33 = new Array(7);
+    var33[0] = var24;
+    var24 = new Array(2);
+    var36 = -1.957;
+    var24[0] = var36;
+    var36 = -2.634;
+    var24[1] = var36;
+    var33[1] = var24;
+    var24 = [30.333];
+    var36 = -25.387;
+    var24[1] = var36;
+    var33[2] = var24;
+    var24 = [0.472];
+    var24[1] = var35;
+    var33[3] = var24;
+    var24 = [3.147, 0.464];
+    var33[4] = var24;
+    var24 = new Array(2);
+    var24[0] = var34;
+    var34 = 1.892;
+    var24[1] = var34;
+    var33[5] = var24;
+    var34 = new Array(2);
+    var24 = -1.053;
+    var34[0] = var24;
+    var35 = 0.882;
+    var34[1] = var35;
+    var33[6] = var34;
+    var32.o = var33;
+    var34 = new Array(2);
+    var33 = -19.188;
+    var34[0] = var33;
+    var33 = 41.863;
+    var34[1] = var33;
+    var33 = new Array(7);
+    var33[0] = var34;
+    var34 = new Array(2);
+    var35 = -23.731;
+    var34[0] = var35;
+    var35 = 39.566;
+    var34[1] = var35;
+    var33[1] = var34;
+    var34 = new Array(2);
+    var35 = -22.732;
+    var34[0] = var35;
+    var35 = 30.997;
+    var34[1] = var35;
+    var33[2] = var34;
+    var34 = [13.821];
+    var35 = -36.223;
+    var34[1] = var35;
+    var33[3] = var34;
+    var34 = [20.372];
+    var35 = -41.422;
+    var34[1] = var35;
+    var33[4] = var34;
+    var34 = [25.216];
+    var35 = -34.541;
+    var34[1] = var35;
+    var33[5] = var34;
+    var34 = new Array(2);
+    var35 = -15.645;
+    var34[0] = var35;
+    var35 = 40.534;
+    var34[1] = var35;
+    var33[6] = var34;
+    var32.v = var33;
+    var32.c = var14;
+    var5.k = var32;
+    var31.ks = var5;
+    var5 = new Array(4);
+    var5[0] = var31;
+    var31 = {
+        'ty': 'mm',
+        'mm': 4,
+        'nm': 'Merge Paths 1',
+        'mn': 'ADBE Vector Filter - Merge',
+        'hd': false
+    };
+    var5[1] = var31;
+    var31 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var32 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var33 = [0, 0.549019607843, 0.262745098039, 1];
+    var32.k = var33;
+    var31.c = var32;
+    var32 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var31.o = var32;
+    var5[2] = var31;
+    var31 = {};
+    var31.ty = var8;
+    var32 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var33 = [158.027, 52.644];
+    var32.k = var33;
+    var31.p = var32;
+    var32 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var33 = [0, 0];
+    var32.k = var33;
+    var31.a = var32;
+    var32 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var33 = [100, 100];
+    var32.k = var33;
+    var31.s = var32;
+    var32 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var31.r = var32;
+    var32 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var31.o = var32;
+    var32 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var31.sk = var32;
+    var32 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var31.sa = var32;
+    var31.nm = var7;
+    var5[3] = var31;
+    var6.it = var5;
+    var5 = new Array(3);
+    var5[0] = var6;
+    var6 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 4',
+        'np': 3,
+        'cix': 2,
+        'bm': 0,
+        'ix': 2,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var32 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var31 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var33 = {};
+    var34 = new Array(6);
+    var35 = [0, 0];
+    var34[0] = var35;
+    var35 = new Array(2);
+    var36 = -8.061;
+    var35[0] = var36;
+    var36 = 7.726;
+    var35[1] = var36;
+    var34[1] = var35;
+    var35 = new Array(2);
+    var36 = -20.996;
+    var35[0] = var36;
+    var36 = -15.891;
+    var35[1] = var36;
+    var34[2] = var35;
+    var35 = [17.837];
+    var36 = -20.426;
+    var35[1] = var36;
+    var34[3] = var35;
+    var35 = [0, 0];
+    var34[4] = var35;
+    var35 = [0, 0];
+    var34[5] = var35;
+    var33.i = var34;
+    var34 = new Array(6);
+    var35 = [0, 0];
+    var34[0] = var35;
+    var35 = [12.407];
+    var36 = -11.89;
+    var35[1] = var36;
+    var34[1] = var35;
+    var35 = [17.819, 13.486];
+    var34[2] = var35;
+    var35 = new Array(2);
+    var36 = -17.58;
+    var35[0] = var36;
+    var36 = 20.133;
+    var35[1] = var36;
+    var34[3] = var35;
+    var35 = [0, 0];
+    var34[4] = var35;
+    var35 = [0, 0];
+    var34[5] = var35;
+    var33.o = var34;
+    var35 = new Array(2);
+    var34 = -29.31;
+    var35[0] = var34;
+    var34 = 1.716;
+    var35[1] = var34;
+    var34 = new Array(6);
+    var34[0] = var35;
+    var35 = new Array(2);
+    var36 = -2.171;
+    var35[0] = var36;
+    var36 = -24.552;
+    var35[1] = var36;
+    var34[1] = var35;
+    var35 = [55.702];
+    var36 = -29.538;
+    var35[1] = var36;
+    var34[2] = var35;
+    var35 = [59.032, 25.123];
+    var34[3] = var35;
+    var35 = [30.345, 44.57];
+    var34[4] = var35;
+    var35 = new Array(2);
+    var36 = -76.868;
+    var35[0] = var36;
+    var36 = 45.429;
+    var35[1] = var36;
+    var34[5] = var35;
+    var33.v = var34;
+    var33.c = var14;
+    var31.k = var33;
+    var32.ks = var31;
+    var31 = new Array(4);
+    var31[0] = var32;
+    var32 = {
+        'ty': 'mm',
+        'mm': 4,
+        'nm': 'Merge Paths 1',
+        'mn': 'ADBE Vector Filter - Merge',
+        'hd': false
+    };
+    var31[1] = var32;
+    var32 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var33 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var34 = [0.333333333333, 0.945098099054, 0.525490196078, 1];
+    var33.k = var34;
+    var32.c = var33;
+    var33 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var32.o = var33;
+    var31[2] = var32;
+    var32 = {};
+    var32.ty = var8;
+    var33 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var34 = [127.694, 76.319];
+    var33.k = var34;
+    var32.p = var33;
+    var33 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var34 = [0, 0];
+    var33.k = var34;
+    var32.a = var33;
+    var33 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var34 = [100, 100];
+    var33.k = var34;
+    var32.s = var33;
+    var33 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var32.r = var33;
+    var33 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var32.o = var33;
+    var33 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var32.sk = var33;
+    var33 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var32.sa = var33;
+    var32.nm = var7;
+    var31[3] = var32;
+    var6.it = var31;
+    var5[1] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var31 = {
+        'a': 1,
+        'k': null,
+        'ix': 2
+    };
+    var33 = {};
+    var32 = {
+        'x': 0.224,
+        'y': 1
+    };
+    var33.i = var32;
+    var32 = {
+        'x': 0.333,
+        'y': 0
+    };
+    var33.o = var32;
+    var33.t = var15;
+    var32 = [150, 64.892];
+    var33.s = var32;
+    var32 = new Array(2);
+    var35 = -2.05;
+    var32[0] = var35;
+    var32[1] = var15;
+    var33.to = var32;
+    var32 = [2.05, 0];
+    var33.ti = var32;
+    var32 = new Array(4);
+    var32[0] = var33;
+    var33 = {};
+    var34 = {
+        'x': 0.667,
+        'y': 0.667
+    };
+    var33.i = var34;
+    var34 = {
+        'x': 0.333,
+        'y': 0.333
+    };
+    var33.o = var34;
+    var33.t = var17;
+    var34 = [137.7, 64.892];
+    var33.s = var34;
+    var34 = [0, 0];
+    var33.to = var34;
+    var34 = [0, 0];
+    var33.ti = var34;
+    var32[1] = var33;
+    var33 = {};
+    var34 = {
+        'x': 0.325,
+        'y': 0.996
+    };
+    var33.i = var34;
+    var34 = {
+        'x': 0.333,
+        'y': 0
+    };
+    var33.o = var34;
+    var33.t = var16;
+    var34 = [137.7, 64.892];
+    var33.s = var34;
+    var34 = [2.05, 0];
+    var33.to = var34;
+    var34 = new Array(2);
+    var34[0] = var35;
+    var34[1] = var15;
+    var33.ti = var34;
+    var32[2] = var33;
+    var33 = {};
+    var33.t = var30;
+    var34 = [150, 64.892];
+    var33.s = var34;
+    var32[3] = var33;
+    var31.k = var32;
+    var6.p = var31;
+    var31 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var32 = [159.152, 64.892];
+    var31.k = var32;
+    var6.a = var31;
+    var31 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var32 = [100, 100];
+    var31.k = var32;
+    var6.s = var31;
+    var31 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var6.r = var31;
+    var31 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var31;
+    var31 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var31;
+    var31 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var31;
+    var6.nm = var7;
+    var5[2] = var6;
+    var4.it = var5;
+    var3[1] = var4;
+    var2.shapes = var3;
+    var0[15] = var2;
+    var2 = {
+        'ddd': 0,
+        'ind': 17,
+        'ty': 4,
+        'nm': 'Body',
+        'parent': 2,
+        'sr': 1,
+        'ks': null,
+        'ao': 0,
+        'shapes': null,
+        'ip': 0,
+        'op': 120,
+        'st': 0,
+        'ct': 1,
+        'bm': 0
+    };
+    var3 = {};
+    var4 = {
+        'a': 0,
+        'k': 100,
+        'ix': 11
+    };
+    var3.o = var4;
+    var4 = {
+        'a': 1,
+        'k': null,
+        'ix': 10
+    };
+    var6 = {};
+    var5 = {};
+    var31 = [0.667];
+    var5.x = var31;
+    var31 = [1];
+    var5.y = var31;
+    var6.i = var5;
+    var5 = {};
+    var31 = [0.333];
+    var5.x = var31;
+    var31 = [0];
+    var5.y = var31;
+    var6.o = var5;
+    var6.t = var15;
+    var5 = [0];
+    var6.s = var5;
+    var5 = new Array(4);
+    var5[0] = var6;
+    var6 = {};
+    var31 = {};
+    var32 = [0.667];
+    var31.x = var32;
+    var32 = [1];
+    var31.y = var32;
+    var6.i = var31;
+    var31 = {};
+    var32 = [0.333];
+    var31.x = var32;
+    var32 = [0];
+    var31.y = var32;
+    var6.o = var31;
+    var6.t = var17;
+    var31 = [2.8];
+    var6.s = var31;
+    var5[1] = var6;
+    var6 = {};
+    var31 = {};
+    var32 = [0.667];
+    var31.x = var32;
+    var32 = [1];
+    var31.y = var32;
+    var6.i = var31;
+    var31 = {};
+    var32 = [0.333];
+    var31.x = var32;
+    var32 = [0];
+    var31.y = var32;
+    var6.o = var31;
+    var6.t = var16;
+    var31 = [2.8];
+    var6.s = var31;
+    var5[2] = var6;
+    var6 = {};
+    var6.t = var30;
+    var30 = [0];
+    var6.s = var30;
+    var5[3] = var6;
+    var4.k = var5;
+    var3.r = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 2,
+        'l': 2
+    };
+    var5 = [220.546, 279.844, 0];
+    var4.k = var5;
+    var3.p = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 1,
+        'l': 2
+    };
+    var5 = [159.493, 272.694, 0];
+    var4.k = var5;
+    var3.a = var4;
+    var4 = {
+        'a': 1,
+        'k': null,
+        'ix': 6,
+        'l': 2
+    };
+    var6 = {};
+    var5 = {};
+    var30 = [0.667, 0.667, 0.667];
+    var5.x = var30;
+    var30 = [1, 1, 1];
+    var5.y = var30;
+    var6.i = var5;
+    var5 = {};
+    var30 = [0.333, 0.333, 0.333];
+    var5.x = var30;
+    var30 = [0, 0, 0];
+    var5.y = var30;
+    var6.o = var5;
+    var6.t = var15;
+    var5 = [100, 100, 100];
+    var6.s = var5;
+    var5 = new Array(7);
+    var5[0] = var6;
+    var6 = {};
+    var30 = {};
+    var31 = [0.667, 0.667, 0.667];
+    var30.x = var31;
+    var31 = [1, 1, 1];
+    var30.y = var31;
+    var6.i = var30;
+    var30 = {};
+    var31 = [0.333, 0.333, 0.333];
+    var30.x = var31;
+    var31 = [0, 0, 0];
+    var30.y = var31;
+    var6.o = var30;
+    var6.t = var13;
+    var30 = [102, 98, 100];
+    var6.s = var30;
+    var5[1] = var6;
+    var6 = {};
+    var30 = {};
+    var31 = [0.667, 0.667, 0.667];
+    var30.x = var31;
+    var31 = [1, 1, 1];
+    var30.y = var31;
+    var6.i = var30;
+    var30 = {};
+    var31 = [0.333, 0.333, 0.333];
+    var30.x = var31;
+    var31 = [0, 0, 0];
+    var30.y = var31;
+    var6.o = var30;
+    var6.t = var17;
+    var30 = [98, 103, 100];
+    var6.s = var30;
+    var5[2] = var6;
+    var6 = {};
+    var30 = {};
+    var31 = [0.667, 0.667, 0.667];
+    var30.x = var31;
+    var31 = [1, 1, 1];
+    var30.y = var31;
+    var6.i = var30;
+    var30 = {};
+    var31 = [0.333, 0.333, 0.333];
+    var30.x = var31;
+    var31 = [0, 0, 0];
+    var30.y = var31;
+    var6.o = var30;
+    var30 = 32;
+    var6.t = var30;
+    var30 = [98, 103, 100];
+    var6.s = var30;
+    var5[3] = var6;
+    var6 = {};
+    var30 = {};
+    var31 = [0.667, 0.667, 0.667];
+    var30.x = var31;
+    var31 = [1, 1, 1];
+    var30.y = var31;
+    var6.i = var30;
+    var30 = {};
+    var31 = [0.333, 0.333, 0.333];
+    var30.x = var31;
+    var31 = [0, 0, 0];
+    var30.y = var31;
+    var6.o = var30;
+    var30 = 48;
+    var6.t = var30;
+    var30 = [102, 98, 100];
+    var6.s = var30;
+    var5[4] = var6;
+    var6 = {};
+    var30 = {};
+    var31 = [0.667, 0.667, 0.667];
+    var30.x = var31;
+    var31 = [1, 1, 1];
+    var30.y = var31;
+    var6.i = var30;
+    var30 = {};
+    var31 = [0.333, 0.333, 0.333];
+    var30.x = var31;
+    var31 = [0, 0, 0];
+    var30.y = var31;
+    var6.o = var30;
+    var30 = 57;
+    var6.t = var30;
+    var30 = [98, 101, 100];
+    var6.s = var30;
+    var5[5] = var6;
+    var6 = {};
+    var30 = 68;
+    var6.t = var30;
+    var30 = [100, 100, 100];
+    var6.s = var30;
+    var5[6] = var6;
+    var4.k = var5;
+    var3.s = var4;
+    var2.ks = var3;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 2',
+        'np': 3,
+        'cix': 2,
+        'bm': 0,
+        'ix': 2,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var5 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var3 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var6 = {};
+    var31 = new Array(2);
+    var34 = -7.811;
+    var31[0] = var34;
+    var33 = -32.987;
+    var31[1] = var33;
+    var30 = new Array(4);
+    var30[0] = var31;
+    var31 = [47.782];
+    var32 = -11.314;
+    var31[1] = var32;
+    var30[1] = var31;
+    var31 = [7.81, 32.987];
+    var30[2] = var31;
+    var31 = new Array(2);
+    var36 = -47.783;
+    var31[0] = var36;
+    var35 = 11.315;
+    var31[1] = var35;
+    var30[3] = var31;
+    var6.i = var30;
+    var30 = new Array(4);
+    var31 = [7.811, 32.987];
+    var30[0] = var31;
+    var31 = new Array(2);
+    var31[0] = var36;
+    var31[1] = var35;
+    var30[1] = var31;
+    var31 = new Array(2);
+    var31[0] = var34;
+    var31[1] = var33;
+    var30[2] = var31;
+    var31 = [47.783];
+    var31[1] = var32;
+    var30[3] = var31;
+    var6.o = var30;
+    var31 = [86.518];
+    var30 = -20.487;
+    var31[1] = var30;
+    var30 = new Array(4);
+    var30[0] = var31;
+    var31 = [14.143, 59.727];
+    var30[1] = var31;
+    var31 = new Array(2);
+    var32 = -86.518;
+    var31[0] = var32;
+    var32 = 20.487;
+    var31[1] = var32;
+    var30[2] = var31;
+    var31 = new Array(2);
+    var32 = -14.143;
+    var31[0] = var32;
+    var32 = -59.729;
+    var31[1] = var32;
+    var30[3] = var31;
+    var6.v = var30;
+    var6.c = var14;
+    var3.k = var6;
+    var5.ks = var3;
+    var3 = new Array(4);
+    var3[0] = var5;
+    var5 = {
+        'ty': 'mm',
+        'mm': 4,
+        'nm': 'Merge Paths 1',
+        'mn': 'ADBE Vector Filter - Merge',
+        'hd': false
+    };
+    var3[1] = var5;
+    var5 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var30 = [0.305882352941, 0.352941176471, 0.909803981407, 1];
+    var6.k = var30;
+    var5.c = var6;
+    var6 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var5.o = var6;
+    var3[2] = var5;
+    var5 = {};
+    var5.ty = var8;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var30 = [152.967, 71.293];
+    var6.k = var30;
+    var5.p = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var30 = [0, 0];
+    var6.k = var30;
+    var5.a = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var30 = [100, 100];
+    var6.k = var30;
+    var5.s = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var5.r = var6;
+    var6 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var5.o = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var5.sk = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var5.sa = var6;
+    var5.nm = var7;
+    var3[3] = var5;
+    var4.it = var3;
+    var3 = new Array(2);
+    var3[0] = var4;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 3',
+        'np': 3,
+        'cix': 2,
+        'bm': 0,
+        'ix': 3,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var5 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var30 = {};
+    var32 = new Array(2);
+    var31 = -20.905;
+    var32[0] = var31;
+    var31 = 68.396;
+    var32[1] = var31;
+    var31 = new Array(5);
+    var31[0] = var32;
+    var32 = [9.762, 38.211];
+    var31[1] = var32;
+    var32 = [0, 0];
+    var31[2] = var32;
+    var32 = [45.198];
+    var33 = -102.529;
+    var32[1] = var33;
+    var31[3] = var32;
+    var32 = new Array(2);
+    var33 = -38.344;
+    var32[0] = var33;
+    var33 = -72.146;
+    var32[1] = var33;
+    var31[4] = var32;
+    var30.i = var31;
+    var32 = [10.758];
+    var31 = -35.199;
+    var32[1] = var31;
+    var31 = new Array(5);
+    var31[0] = var32;
+    var32 = new Array(2);
+    var33 = -15.756;
+    var32[0] = var33;
+    var33 = -61.678;
+    var32[1] = var33;
+    var31[1] = var32;
+    var32 = [0, 0];
+    var31[2] = var32;
+    var32 = [0, 0];
+    var31[3] = var32;
+    var32 = [38.344, 72.146];
+    var31[4] = var32;
+    var30.o = var31;
+    var31 = new Array(5);
+    var32 = [136.538, 111.04];
+    var31[0] = var32;
+    var32 = [134.322];
+    var33 = -15.672;
+    var32[1] = var33;
+    var31[1] = var32;
+    var32 = [84.784];
+    var33 = -121.29;
+    var32[1] = var33;
+    var31[2] = var32;
+    var32 = new Array(2);
+    var33 = -107.816;
+    var32[0] = var33;
+    var33 = -69.284;
+    var32[1] = var33;
+    var31[3] = var32;
+    var32 = new Array(2);
+    var33 = -139.721;
+    var32[0] = var33;
+    var33 = 161.412;
+    var32[1] = var33;
+    var31[4] = var32;
+    var30.v = var31;
+    var30.c = var14;
+    var5.k = var30;
+    var6.ks = var5;
+    var5 = new Array(4);
+    var5[0] = var6;
+    var6 = {
+        'ty': 'mm',
+        'mm': 4,
+        'nm': 'Merge Paths 1',
+        'mn': 'ADBE Vector Filter - Merge',
+        'hd': false
+    };
+    var5[1] = var6;
+    var6 = {
+        'ty': 'gf',
+        'o': null,
+        'r': 1,
+        'bm': 0
+    };
+    var30 = {
+        'a': 0,
+        'k': 100,
+        'ix': 10
+    };
+    var6.o = var30;
+    var30 = {};
+    var30.p = var13;
+    var31 = {
+        'a': 0,
+        'k': null,
+        'ix': 9
+    };
+    var32 = [0, 0.412, 0.557, 1, 0.5, 0.363, 0.512, 0.966, 1, 0.315, 0.467, 0.932];
+    var31.k = var32;
+    var30.k = var31;
+    var6.g = var30;
+    var30 = {
+        'a': 0,
+        'k': null,
+        'ix': 5
+    };
+    var31 = [44.045];
+    var32 = -38.185;
+    var31[1] = var32;
+    var30.k = var31;
+    var6.s = var30;
+    var30 = {
+        'a': 0,
+        'k': null,
+        'ix': 6
+    };
+    var31 = [72.143, 121.278];
+    var30.k = var31;
+    var6.e = var30;
+    var6.t = var11;
+    var6.nm = var28;
+    var6.mn = var10;
+    var6.hd = var9;
+    var5[2] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var28 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var30 = [151.327, 181.413];
+    var28.k = var30;
+    var6.p = var28;
+    var28 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var30 = [0, 0];
+    var28.k = var30;
+    var6.a = var28;
+    var28 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var30 = [100, 100];
+    var28.k = var30;
+    var6.s = var28;
+    var28 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var6.r = var28;
+    var28 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var28;
+    var28 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var28;
+    var28 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var28;
+    var6.nm = var7;
+    var5[3] = var6;
+    var4.it = var5;
+    var3[1] = var4;
+    var2.shapes = var3;
+    var0[16] = var2;
+    var2 = {
+        'ddd': 0,
+        'ind': 18,
+        'ty': 4,
+        'nm': 'Hand Back',
+        'parent': 7,
+        'sr': 1,
+        'ks': null,
+        'ao': 0,
+        'shapes': null,
+        'ip': 0,
+        'op': 120,
+        'st': 0,
+        'ct': 1,
+        'bm': 0
+    };
+    var3 = {};
+    var4 = {
+        'a': 0,
+        'k': 100,
+        'ix': 11
+    };
+    var3.o = var4;
+    var4 = {
+        'a': 0,
+        'k': 6.394,
+        'ix': 10
+    };
+    var3.r = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 2,
+        'l': 2
+    };
+    var5 = [91.302, 172.976, 0];
+    var4.k = var5;
+    var3.p = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 1,
+        'l': 2
+    };
+    var5 = [60.983, 65.005, 0];
+    var4.k = var5;
+    var3.a = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 6,
+        'l': 2
+    };
+    var5 = [173.033, 179.462, 100];
+    var4.k = var5;
+    var3.s = var4;
+    var2.ks = var3;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 2',
+        'np': 3,
+        'cix': 2,
+        'bm': 0,
+        'ix': 2,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var5 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var3 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var6 = {};
+    var30 = new Array(2);
+    var28 = -14.652;
+    var30[0] = var28;
+    var28 = 7.643;
+    var30[1] = var28;
+    var28 = new Array(5);
+    var28[0] = var30;
+    var30 = new Array(2);
+    var31 = -10.958;
+    var30[0] = var31;
+    var31 = 1.516;
+    var30[1] = var31;
+    var28[1] = var30;
+    var30 = new Array(2);
+    var31 = -1.892;
+    var30[0] = var31;
+    var31 = -42.455;
+    var30[1] = var31;
+    var28[2] = var30;
+    var30 = [31.951, 0.872];
+    var28[3] = var30;
+    var30 = [3.371, 37.831];
+    var28[4] = var30;
+    var6.i = var28;
+    var30 = [13.182];
+    var28 = -6.876;
+    var30[1] = var28;
+    var28 = new Array(5);
+    var28[0] = var30;
+    var30 = [10.959];
+    var31 = -1.516;
+    var30[1] = var31;
+    var28[1] = var30;
+    var30 = [1.891, 42.455];
+    var28[2] = var30;
+    var30 = new Array(2);
+    var31 = -31.952;
+    var30[0] = var31;
+    var31 = -0.872;
+    var30[1] = var31;
+    var28[3] = var30;
+    var30 = new Array(2);
+    var31 = -2.393;
+    var30[0] = var31;
+    var31 = -26.853;
+    var30[1] = var31;
+    var28[4] = var30;
+    var6.o = var28;
+    var30 = new Array(2);
+    var28 = -32.21;
+    var30[0] = var28;
+    var28 = -45.827;
+    var30[1] = var28;
+    var28 = new Array(5);
+    var28[0] = var30;
+    var30 = [17.977];
+    var31 = -53.27;
+    var30[1] = var31;
+    var28[1] = var30;
+    var30 = [53.828];
+    var31 = -10.527;
+    var30[1] = var31;
+    var28[2] = var30;
+    var30 = [3.306, 53.913];
+    var28[3] = var30;
+    var30 = new Array(2);
+    var31 = -53.326;
+    var30[0] = var31;
+    var31 = 6.852;
+    var30[1] = var31;
+    var28[4] = var30;
+    var6.v = var28;
+    var6.c = var14;
+    var3.k = var6;
+    var5.ks = var3;
+    var3 = new Array(4);
+    var3[0] = var5;
+    var5 = {
+        'ty': 'mm',
+        'mm': 4,
+        'nm': 'Merge Paths 1',
+        'mn': 'ADBE Vector Filter - Merge',
+        'hd': false
+    };
+    var3[1] = var5;
+    var5 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var28 = [0.411764735802, 0.556862745098, 1, 1];
+    var6.k = var28;
+    var5.c = var6;
+    var6 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var5.o = var6;
+    var3[2] = var5;
+    var5 = {};
+    var5.ty = var8;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var28 = [55.969, 65.25];
+    var6.k = var28;
+    var5.p = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var28 = [0, 0];
+    var6.k = var28;
+    var5.a = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var28 = [100, 100];
+    var6.k = var28;
+    var5.s = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var5.r = var6;
+    var6 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var5.o = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var5.sk = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var5.sa = var6;
+    var5.nm = var7;
+    var3[3] = var5;
+    var4.it = var3;
+    var3 = new Array(1);
+    var3[0] = var4;
+    var2.shapes = var3;
+    var0[17] = var2;
+    var2 = {
+        'ddd': 0,
+        'ind': 19,
+        'ty': 4,
+        'nm': 'Arm Back',
+        'parent': 17,
+        'sr': 1,
+        'ks': null,
+        'ao': 0,
+        'shapes': null,
+        'ip': 0,
+        'op': 120,
+        'st': 0,
+        'ct': 1,
+        'bm': 0
+    };
+    var3 = {};
+    var4 = {
+        'a': 0,
+        'k': 100,
+        'ix': 11
+    };
+    var3.o = var4;
+    var4 = {
+        'a': 1,
+        'k': null,
+        'ix': 10
+    };
+    var6 = {};
+    var5 = {};
+    var28 = [0.08];
+    var5.x = var28;
+    var28 = [1.008];
+    var5.y = var28;
+    var6.i = var5;
+    var5 = {};
+    var28 = [0.333];
+    var5.x = var28;
+    var28 = [0];
+    var5.y = var28;
+    var6.o = var5;
+    var6.t = var15;
+    var5 = [13.846];
+    var6.s = var5;
+    var5 = new Array(5);
+    var5[0] = var6;
+    var6 = {};
+    var28 = {};
+    var30 = [0.574];
+    var28.x = var30;
+    var30 = [0.69];
+    var28.y = var30;
+    var6.i = var28;
+    var28 = {};
+    var30 = [0.243];
+    var28.x = var30;
+    var30 = [0];
+    var28.y = var30;
+    var6.o = var28;
+    var6.t = var17;
+    var28 = [96.861];
+    var6.s = var28;
+    var5[1] = var6;
+    var6 = {};
+    var28 = {};
+    var30 = [0.609];
+    var28.x = var30;
+    var30 = [1];
+    var28.y = var30;
+    var6.i = var28;
+    var28 = {};
+    var30 = [0.277];
+    var28.x = var30;
+    var30 = [0.692];
+    var28.y = var30;
+    var6.o = var28;
+    var6.t = var12;
+    var12 = [110.809];
+    var6.s = var12;
+    var5[2] = var6;
+    var6 = {};
+    var12 = {};
+    var28 = [0.667];
+    var12.x = var28;
+    var28 = [1];
+    var12.y = var28;
+    var6.i = var12;
+    var12 = {};
+    var28 = [0.51];
+    var12.x = var28;
+    var28 = new Array(1);
+    var28[0] = var29;
+    var12.y = var28;
+    var6.o = var12;
+    var6.t = var16;
+    var12 = [116.399];
+    var6.s = var12;
+    var5[3] = var6;
+    var6 = {};
+    var12 = 43;
+    var6.t = var12;
+    var28 = [13.846];
+    var6.s = var28;
+    var5[4] = var6;
+    var4.k = var5;
+    var3.r = var4;
+    var4 = {
+        'a': 1,
+        'k': null,
+        'ix': 2,
+        'l': 2
+    };
+    var6 = {};
+    var5 = {
+        'x': 0.08,
+        'y': 1
+    };
+    var6.i = var5;
+    var5 = {
+        'x': 0.333,
+        'y': 0
+    };
+    var6.o = var5;
+    var6.t = var15;
+    var5 = [47.599, 130.302, 0];
+    var6.s = var5;
+    var5 = [0.217, 10.844, 0];
+    var6.to = var5;
+    var5 = [1.565];
+    var28 = -9.307;
+    var5[1] = var28;
+    var5[2] = var15;
+    var6.ti = var5;
+    var5 = new Array(4);
+    var5[0] = var6;
+    var6 = {};
+    var28 = {
+        'x': 0.52,
+        'y': 0.987
+    };
+    var6.i = var28;
+    var28 = {
+        'x': 0.194,
+        'y': 0
+    };
+    var6.o = var28;
+    var6.t = var17;
+    var17 = [48.9, 195.368, 0];
+    var6.s = var17;
+    var28 = new Array(3);
+    var28[0] = var27;
+    var17 = 9.307;
+    var28[1] = var17;
+    var28[2] = var15;
+    var6.to = var28;
+    var28 = [0.217, 10.844, 0];
+    var6.ti = var28;
+    var5[1] = var6;
+    var6 = {};
+    var28 = {
+        'x': 0.667,
+        'y': 1
+    };
+    var6.i = var28;
+    var28 = {
+        'x': 0.51,
+        'y': 0.003
+    };
+    var6.o = var28;
+    var6.t = var16;
+    var16 = [38.21, 186.145, 0];
+    var6.s = var16;
+    var16 = new Array(3);
+    var28 = -0.217;
+    var16[0] = var28;
+    var28 = -10.844;
+    var16[1] = var28;
+    var16[2] = var15;
+    var6.to = var16;
+    var16 = new Array(3);
+    var16[0] = var27;
+    var16[1] = var17;
+    var16[2] = var15;
+    var6.ti = var16;
+    var5[2] = var6;
+    var6 = {};
+    var6.t = var12;
+    var12 = [47.599, 130.302, 0];
+    var6.s = var12;
+    var5[3] = var6;
+    var4.k = var5;
+    var3.p = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 1,
+        'l': 2
+    };
+    var5 = [95.65, 52.946, 0];
+    var4.k = var5;
+    var3.a = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 6,
+        'l': 2
+    };
+    var5 = [100.064, 101.671, 100];
+    var4.k = var5;
+    var3.s = var4;
+    var2.ks = var3;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 1',
+        'np': 3,
+        'cix': 2,
+        'bm': 0,
+        'ix': 1,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var5 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var3 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var6 = {};
+    var12 = new Array(5);
+    var16 = [34.571, 13.477];
+    var12[0] = var16;
+    var16 = new Array(2);
+    var17 = -9.141;
+    var16[0] = var17;
+    var17 = 40.558;
+    var16[1] = var17;
+    var12[1] = var16;
+    var16 = new Array(2);
+    var17 = -44.881;
+    var16[0] = var17;
+    var17 = 11.201;
+    var16[1] = var17;
+    var12[2] = var16;
+    var16 = [9.831];
+    var17 = -41.901;
+    var16[1] = var17;
+    var12[3] = var16;
+    var16 = [18.164];
+    var17 = -35.743;
+    var16[1] = var17;
+    var12[4] = var16;
+    var6.i = var12;
+    var16 = new Array(2);
+    var12 = -18.57;
+    var16[0] = var12;
+    var12 = -7.239;
+    var16[1] = var12;
+    var12 = new Array(5);
+    var12[0] = var16;
+    var16 = [10.655];
+    var17 = -47.27;
+    var16[1] = var17;
+    var12[1] = var16;
+    var16 = [35.763];
+    var17 = -8.924;
+    var16[1] = var17;
+    var12[2] = var16;
+    var16 = new Array(2);
+    var17 = -6.422;
+    var16[0] = var17;
+    var17 = 27.371;
+    var16[1] = var17;
+    var12[3] = var16;
+    var16 = new Array(2);
+    var17 = -12.888;
+    var16[0] = var17;
+    var17 = 25.36;
+    var16[1] = var17;
+    var12[4] = var16;
+    var6.o = var12;
+    var16 = new Array(2);
+    var12 = -37.142;
+    var16[0] = var12;
+    var12 = 96.049;
+    var16[1] = var12;
+    var12 = new Array(5);
+    var12[0] = var16;
+    var16 = new Array(2);
+    var17 = -67.259;
+    var16[0] = var17;
+    var17 = 34.983;
+    var16[1] = var17;
+    var12[1] = var16;
+    var16 = [11.434];
+    var17 = -94.941;
+    var16[1] = var17;
+    var12[2] = var16;
+    var16 = [66.57];
+    var17 = -36.961;
+    var16[1] = var17;
+    var12[3] = var16;
+    var16 = [31.999, 64.994];
+    var12[4] = var16;
+    var6.v = var12;
+    var6.c = var14;
+    var3.k = var6;
+    var5.ks = var3;
+    var3 = new Array(4);
+    var3[0] = var5;
+    var5 = {
+        'ty': 'mm',
+        'mm': 4,
+        'nm': 'Merge Paths 1',
+        'mn': 'ADBE Vector Filter - Merge',
+        'hd': false
+    };
+    var3[1] = var5;
+    var5 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var12 = [0.411764735802, 0.556862745098, 1, 1];
+    var6.k = var12;
+    var5.c = var6;
+    var6 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var5.o = var6;
+    var3[2] = var5;
+    var5 = {};
+    var5.ty = var8;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var12 = [76.65, 104.115];
+    var6.k = var12;
+    var5.p = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var12 = [0, 0];
+    var6.k = var12;
+    var5.a = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var12 = [100, 100];
+    var6.k = var12;
+    var5.s = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var5.r = var6;
+    var6 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var5.o = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var5.sk = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var5.sa = var6;
+    var5.nm = var7;
+    var3[3] = var5;
+    var4.it = var3;
+    var3 = new Array(1);
+    var3[0] = var4;
+    var2.shapes = var3;
+    var0[18] = var2;
+    var2 = {
+        'ddd': 0,
+        'ind': 20,
+        'ty': 4,
+        'nm': 'Card New',
+        'sr': 1,
+        'ks': null,
+        'ao': 0,
+        'sy': null,
+        'shapes': null,
+        'ip': 0,
+        'op': 120,
+        'st': 0,
+        'ct': 1,
+        'bm': 0
+    };
+    var3 = {};
+    var4 = {
+        'a': 0,
+        'k': 100,
+        'ix': 11
+    };
+    var3.o = var4;
+    var4 = {
+        'a': 0,
+        'k': 0,
+        'ix': 10
+    };
+    var3.r = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 2,
+        'l': 2
+    };
+    var5 = [450.013, 385, 0];
+    var4.k = var5;
+    var3.p = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 1,
+        'l': 2
+    };
+    var5 = [405.5, 216.5, 0];
+    var4.k = var5;
+    var3.a = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 6,
+        'l': 2
+    };
+    var5 = [100, 100, 100];
+    var4.k = var5;
+    var3.s = var4;
+    var2.ks = var3;
+    var4 = {};
+    var3 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var5 = [0.349019616842, 0.396078437567, 0.949019610882, 1];
+    var3.k = var5;
+    var4.c = var3;
+    var3 = {
+        'a': 0,
+        'k': 12,
+        'ix': 3
+    };
+    var4.s = var3;
+    var4.ty = var15;
+    var3 = 'Stroke';
+    var4.nm = var3;
+    var3 = new Array(1);
+    var3[0] = var4;
+    var2.sy = var3;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Glouds',
+        'np': 4,
+        'cix': 2,
+        'bm': 0,
+        'ix': 1,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var5 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 7',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 1,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var3 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var12 = {};
+    var17 = new Array(2);
+    var16 = -1.372;
+    var17[0] = var16;
+    var17[1] = var15;
+    var16 = new Array(11);
+    var16[0] = var17;
+    var17 = [0, 0];
+    var16[1] = var17;
+    var17 = [0.361, 0.978];
+    var16[2] = var17;
+    var17 = [6.38, 1.064];
+    var16[3] = var17;
+    var17 = [1.75];
+    var27 = -0.298;
+    var17[1] = var27;
+    var16[4] = var17;
+    var17 = new Array(2);
+    var17[0] = var26;
+    var26 = 1.05;
+    var17[1] = var26;
+    var16[5] = var17;
+    var17 = [11.073];
+    var17[1] = var25;
+    var16[6] = var17;
+    var17 = [3.688];
+    var25 = -3.723;
+    var17[1] = var25;
+    var16[7] = var17;
+    var17 = [0.497, 0.828];
+    var16[8] = var17;
+    var17 = [8.955];
+    var17[1] = var24;
+    var16[9] = var17;
+    var17 = [4.987];
+    var24 = -4.412;
+    var17[1] = var24;
+    var16[10] = var17;
+    var12.i = var16;
+    var16 = new Array(11);
+    var17 = [0, 0];
+    var16[0] = var17;
+    var17 = [1.042, 0];
+    var16[1] = var17;
+    var17 = new Array(2);
+    var24 = -1.022;
+    var17[0] = var24;
+    var24 = -2.778;
+    var17[1] = var24;
+    var16[2] = var17;
+    var17 = new Array(2);
+    var24 = -4.088;
+    var17[0] = var24;
+    var24 = -0.681;
+    var17[1] = var24;
+    var16[3] = var17;
+    var17 = new Array(2);
+    var24 = -1.086;
+    var17[0] = var24;
+    var17[1] = var23;
+    var16[4] = var17;
+    var17 = [1.375];
+    var23 = -4.332;
+    var17[1] = var23;
+    var16[5] = var17;
+    var17 = new Array(2);
+    var23 = -14.269;
+    var17[0] = var23;
+    var23 = 0.385;
+    var17[1] = var23;
+    var16[6] = var17;
+    var17 = new Array(2);
+    var23 = -0.68;
+    var17[0] = var23;
+    var23 = 0.686;
+    var17[1] = var23;
+    var16[7] = var17;
+    var17 = new Array(2);
+    var23 = -1.448;
+    var17[0] = var23;
+    var23 = -2.413;
+    var17[1] = var23;
+    var16[8] = var17;
+    var17 = new Array(2);
+    var23 = -9.541;
+    var17[0] = var23;
+    var23 = 1.123;
+    var17[1] = var23;
+    var16[9] = var17;
+    var17 = new Array(2);
+    var23 = -1.028;
+    var17[0] = var23;
+    var23 = 0.909;
+    var17[1] = var23;
+    var16[10] = var17;
+    var12.o = var16;
+    var17 = new Array(2);
+    var16 = -48.407;
+    var17[0] = var16;
+    var16 = 12.202;
+    var17[1] = var16;
+    var16 = new Array(11);
+    var16[0] = var17;
+    var17 = [48.414, 12.202];
+    var16[1] = var17;
+    var17 = [49.808, 10.188];
+    var16[2] = var17;
+    var17 = [39.746, 1.563];
+    var16[3] = var17;
+    var17 = [31.194, 1.262];
+    var16[4] = var17;
+    var17 = [29.541];
+    var23 = -0.64;
+    var17[1] = var23;
+    var16[5] = var17;
+    var17 = [20.658];
+    var23 = -12.193;
+    var17[1] = var23;
+    var16[6] = var17;
+    var17 = new Array(2);
+    var23 = -7.635;
+    var17[0] = var23;
+    var23 = 0.888;
+    var17[1] = var23;
+    var16[7] = var17;
+    var17 = new Array(2);
+    var23 = -9.951;
+    var17[0] = var23;
+    var17[1] = var18;
+    var16[8] = var17;
+    var17 = new Array(2);
+    var18 = -24.087;
+    var17[0] = var18;
+    var18 = -4.516;
+    var17[1] = var18;
+    var16[9] = var17;
+    var17 = new Array(2);
+    var18 = -49.399;
+    var17[0] = var18;
+    var18 = 9.602;
+    var17[1] = var18;
+    var16[10] = var17;
+    var12.v = var16;
+    var12.c = var14;
+    var3.k = var12;
+    var6.ks = var3;
+    var3 = new Array(3);
+    var3[0] = var6;
+    var6 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var12 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var16 = [1, 1, 1, 1];
+    var12.k = var16;
+    var6.c = var12;
+    var12 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var6.o = var12;
+    var3[1] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var12 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var16 = [121.924, 390.506];
+    var12.k = var16;
+    var6.p = var12;
+    var12 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var16 = [0, 0];
+    var12.k = var16;
+    var6.a = var12;
+    var12 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var16 = [100, 100];
+    var12.k = var16;
+    var6.s = var12;
+    var12 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var6.r = var12;
+    var12 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var12;
+    var12 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var12;
+    var12 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var12;
+    var6.nm = var7;
+    var3[2] = var6;
+    var5.it = var3;
+    var3 = new Array(5);
+    var3[0] = var5;
+    var5 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 8',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 2,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var12 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var16 = {};
+    var18 = new Array(2);
+    var17 = -1.434;
+    var18[0] = var17;
+    var18[1] = var15;
+    var17 = new Array(11);
+    var17[0] = var18;
+    var18 = [0, 0];
+    var17[1] = var18;
+    var18 = [0.293, 1.005];
+    var17[2] = var18;
+    var18 = [14.161, 2.361];
+    var17[3] = var18;
+    var18 = [3.024];
+    var23 = -0.989;
+    var18[1] = var23;
+    var17[4] = var18;
+    var18 = new Array(2);
+    var23 = -0.187;
+    var18[0] = var23;
+    var23 = 1.176;
+    var18[1] = var23;
+    var17[5] = var18;
+    var18 = [19.101, 1.124];
+    var17[6] = var18;
+    var18 = [4.835];
+    var23 = -4.427;
+    var18[1] = var23;
+    var17[7] = var18;
+    var18 = [0.593, 0.597];
+    var17[8] = var18;
+    var18 = [21.016];
+    var23 = -2.472;
+    var18[1] = var23;
+    var17[9] = var18;
+    var18 = [8.045];
+    var23 = -7.417;
+    var18[1] = var23;
+    var17[10] = var18;
+    var16.i = var17;
+    var17 = new Array(11);
+    var18 = [0, 0];
+    var17[0] = var18;
+    var18 = [1.047, 0];
+    var17[1] = var18;
+    var18 = new Array(2);
+    var23 = -1.38;
+    var18[0] = var23;
+    var23 = -4.748;
+    var18[1] = var23;
+    var17[2] = var18;
+    var18 = new Array(2);
+    var23 = -10.618;
+    var18[0] = var23;
+    var23 = -1.769;
+    var18[1] = var23;
+    var17[3] = var18;
+    var18 = new Array(2);
+    var23 = -1.131;
+    var18[0] = var23;
+    var18[1] = var22;
+    var17[4] = var18;
+    var18 = [0.932];
+    var22 = -5.884;
+    var18[1] = var22;
+    var17[5] = var18;
+    var18 = new Array(2);
+    var22 = -21.944;
+    var18[0] = var22;
+    var22 = -1.291;
+    var18[1] = var22;
+    var17[6] = var18;
+    var18 = new Array(2);
+    var22 = -0.621;
+    var18[0] = var22;
+    var22 = 0.568;
+    var18[1] = var22;
+    var17[7] = var18;
+    var18 = new Array(2);
+    var22 = -3.381;
+    var18[0] = var22;
+    var22 = -3.404;
+    var18[1] = var22;
+    var17[8] = var18;
+    var18 = new Array(2);
+    var22 = -20.591;
+    var18[0] = var22;
+    var22 = 2.423;
+    var18[1] = var22;
+    var17[9] = var18;
+    var18 = new Array(2);
+    var22 = -1.054;
+    var18[0] = var22;
+    var22 = 0.972;
+    var18[1] = var22;
+    var17[10] = var18;
+    var16.o = var17;
+    var18 = new Array(2);
+    var17 = -97.457;
+    var18[0] = var17;
+    var17 = 20.866;
+    var18[1] = var17;
+    var17 = new Array(11);
+    var17[0] = var18;
+    var18 = [97.462, 20.866];
+    var17[1] = var18;
+    var18 = [98.978, 18.864];
+    var17[2] = var18;
+    var18 = [78.635, 0.035];
+    var17[3] = var18;
+    var18 = [59.111, 0.116];
+    var17[4] = var18;
+    var18 = [57.065];
+    var22 = -1.633;
+    var18[1] = var22;
+    var17[5] = var18;
+    var18 = [38.462];
+    var22 = -20.795;
+    var18[1] = var22;
+    var17[6] = var18;
+    var18 = new Array(2);
+    var22 = -8.021;
+    var18[0] = var22;
+    var22 = -1.032;
+    var18[1] = var22;
+    var17[7] = var18;
+    var18 = new Array(2);
+    var22 = -10.179;
+    var18[0] = var22;
+    var18[1] = var21;
+    var17[8] = var18;
+    var18 = new Array(2);
+    var21 = -46.348;
+    var18[0] = var21;
+    var21 = -11.868;
+    var18[1] = var21;
+    var17[9] = var18;
+    var18 = new Array(2);
+    var21 = -98.534;
+    var18[0] = var21;
+    var21 = 18.143;
+    var18[1] = var21;
+    var17[10] = var18;
+    var16.v = var17;
+    var16.c = var14;
+    var6.k = var16;
+    var12.ks = var6;
+    var6 = new Array(3);
+    var6[0] = var12;
+    var12 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var16 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var17 = [1, 1, 1, 1];
+    var16.k = var17;
+    var12.c = var16;
+    var16 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var12.o = var16;
+    var6[1] = var12;
+    var12 = {};
+    var12.ty = var8;
+    var16 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var17 = [118.278, 157.645];
+    var16.k = var17;
+    var12.p = var16;
+    var16 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var17 = [0, 0];
+    var16.k = var17;
+    var12.a = var16;
+    var16 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var17 = [100, 100];
+    var16.k = var17;
+    var12.s = var16;
+    var16 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var12.r = var16;
+    var16 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var12.o = var16;
+    var16 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var12.sk = var16;
+    var16 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var12.sa = var16;
+    var12.nm = var7;
+    var6[2] = var12;
+    var5.it = var6;
+    var3[1] = var5;
+    var5 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 9',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 3,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var12 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var16 = {};
+    var18 = new Array(2);
+    var17 = -3.741;
+    var18[0] = var17;
+    var18[1] = var15;
+    var17 = new Array(13);
+    var17[0] = var18;
+    var18 = [0, 0];
+    var17[1] = var18;
+    var18 = [1.368, 2.99];
+    var17[2] = var18;
+    var18 = [12.693, 7.616];
+    var17[3] = var18;
+    var18 = [5.882];
+    var21 = -1.873;
+    var18[1] = var21;
+    var17[4] = var18;
+    var18 = [0.487, 2.74];
+    var17[5] = var18;
+    var18 = [15.894, 6.954];
+    var17[6] = var18;
+    var18 = [5.062];
+    var21 = -3.744;
+    var18[1] = var21;
+    var17[7] = var18;
+    var18 = [0.679, 3.196];
+    var17[8] = var18;
+    var18 = [35.799];
+    var21 = -1.801;
+    var18[1] = var21;
+    var17[9] = var18;
+    var18 = [3.797];
+    var21 = -11.164;
+    var18[1] = var21;
+    var17[10] = var18;
+    var18 = [1.921];
+    var21 = -0.021;
+    var18[1] = var21;
+    var17[11] = var18;
+    var18 = [28.949];
+    var21 = -37.235;
+    var18[1] = var21;
+    var17[12] = var18;
+    var16.i = var17;
+    var17 = new Array(13);
+    var18 = [0, 0];
+    var17[0] = var18;
+    var18 = [3.287, 0];
+    var17[1] = var18;
+    var18 = new Array(2);
+    var21 = -2.357;
+    var18[0] = var21;
+    var21 = -5.149;
+    var18[1] = var21;
+    var17[2] = var18;
+    var18 = new Array(2);
+    var21 = -13.941;
+    var18[0] = var21;
+    var21 = -8.364;
+    var18[1] = var21;
+    var17[3] = var18;
+    var18 = new Array(2);
+    var21 = -2.651;
+    var18[0] = var21;
+    var21 = 0.845;
+    var18[1] = var21;
+    var17[4] = var18;
+    var18 = new Array(2);
+    var18[0] = var20;
+    var20 = -7.375;
+    var18[1] = var20;
+    var17[5] = var18;
+    var18 = new Array(2);
+    var20 = -13.198;
+    var18[0] = var20;
+    var18[1] = var19;
+    var17[6] = var18;
+    var18 = new Array(2);
+    var19 = -2.627;
+    var18[0] = var19;
+    var19 = 1.944;
+    var18[1] = var19;
+    var17[7] = var18;
+    var18 = new Array(2);
+    var19 = -3.049;
+    var18[0] = var19;
+    var19 = -14.345;
+    var18[1] = var19;
+    var17[8] = var18;
+    var18 = new Array(2);
+    var19 = -52.835;
+    var18[0] = var19;
+    var19 = 2.658;
+    var18[1] = var19;
+    var17[9] = var18;
+    var18 = new Array(2);
+    var19 = -0.618;
+    var18[0] = var19;
+    var19 = 1.818;
+    var18[1] = var19;
+    var17[10] = var18;
+    var18 = new Array(2);
+    var19 = -18.005;
+    var18[0] = var19;
+    var19 = 0.193;
+    var18[1] = var19;
+    var17[11] = var18;
+    var18 = new Array(2);
+    var19 = -2.296;
+    var18[0] = var19;
+    var19 = 2.953;
+    var18[1] = var19;
+    var17[12] = var18;
+    var16.o = var17;
+    var18 = new Array(2);
+    var17 = -182.474;
+    var18[0] = var17;
+    var17 = 51.346;
+    var18[1] = var17;
+    var17 = new Array(13);
+    var17[0] = var18;
+    var18 = [182.484, 51.346];
+    var17[1] = var18;
+    var18 = [186.635, 44.961];
+    var17[2] = var18;
+    var18 = [166.115, 24.58];
+    var17[3] = var18;
+    var18 = [135.837, 19.018];
+    var17[4] = var18;
+    var18 = [129.939, 15.483];
+    var17[5] = var18;
+    var18 = [108.122];
+    var19 = -11.108;
+    var18[1] = var19;
+    var17[6] = var18;
+    var18 = [81.24];
+    var19 = -10.218;
+    var18[1] = var19;
+    var17[7] = var18;
+    var18 = [74.162];
+    var19 = -12.927;
+    var18[1] = var19;
+    var17[8] = var18;
+    var18 = [24.85];
+    var19 = -51.257;
+    var18[1] = var19;
+    var17[9] = var18;
+    var18 = new Array(2);
+    var19 = -48.577;
+    var18[0] = var19;
+    var19 = 0.714;
+    var18[1] = var19;
+    var17[10] = var18;
+    var18 = new Array(2);
+    var19 = -52.813;
+    var18[0] = var19;
+    var19 = 3.77;
+    var18[1] = var19;
+    var17[11] = var18;
+    var18 = new Array(2);
+    var19 = -186.106;
+    var18[0] = var19;
+    var19 = 44.083;
+    var18[1] = var19;
+    var17[12] = var18;
+    var16.v = var17;
+    var16.c = var14;
+    var6.k = var16;
+    var12.ks = var6;
+    var6 = new Array(3);
+    var6[0] = var12;
+    var12 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var16 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var17 = [1, 1, 1, 1];
+    var16.k = var17;
+    var12.c = var16;
+    var16 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var12.o = var16;
+    var6[1] = var12;
+    var12 = {};
+    var12.ty = var8;
+    var16 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var17 = [338.581, 236.251];
+    var16.k = var17;
+    var12.p = var16;
+    var16 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var17 = [0, 0];
+    var16.k = var17;
+    var12.a = var16;
+    var16 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var17 = [100, 100];
+    var16.k = var17;
+    var12.s = var16;
+    var16 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var12.r = var16;
+    var16 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var12.o = var16;
+    var16 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var12.sk = var16;
+    var16 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var12.sa = var16;
+    var12.nm = var7;
+    var6[2] = var12;
+    var5.it = var6;
+    var3[2] = var5;
+    var5 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'Group 10',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 4,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var12 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 1',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var16 = {};
+    var18 = [21.884];
+    var17 = -1.962;
+    var18[1] = var17;
+    var17 = new Array(10);
+    var17[0] = var18;
+    var18 = [0, 0];
+    var17[1] = var18;
+    var18 = new Array(2);
+    var19 = -51.315;
+    var18[0] = var19;
+    var19 = 11.546;
+    var18[1] = var19;
+    var17[2] = var18;
+    var18 = [0, 0];
+    var17[3] = var18;
+    var18 = new Array(2);
+    var19 = -62.862;
+    var18[0] = var19;
+    var19 = 1.283;
+    var18[1] = var19;
+    var17[4] = var18;
+    var18 = [0, 0];
+    var17[5] = var18;
+    var18 = new Array(2);
+    var19 = -61.579;
+    var18[0] = var19;
+    var19 = -23.093;
+    var18[1] = var19;
+    var17[6] = var18;
+    var18 = new Array(2);
+    var19 = -7.21;
+    var18[0] = var19;
+    var19 = -7.825;
+    var18[1] = var19;
+    var17[7] = var18;
+    var18 = [0, 0];
+    var17[8] = var18;
+    var18 = [2.069];
+    var19 = -5.655;
+    var18[1] = var19;
+    var17[9] = var18;
+    var16.i = var17;
+    var18 = new Array(2);
+    var17 = -187.526;
+    var18[0] = var17;
+    var18[1] = var15;
+    var17 = new Array(10);
+    var17[0] = var18;
+    var18 = [0, 0];
+    var17[1] = var18;
+    var18 = [51.316];
+    var19 = -11.546;
+    var18[1] = var19;
+    var17[2] = var18;
+    var18 = [0, 0];
+    var17[3] = var18;
+    var18 = [62.862];
+    var19 = -1.282;
+    var18[1] = var19;
+    var17[4] = var18;
+    var18 = [0, 0];
+    var17[5] = var18;
+    var18 = [15.201, 5.7];
+    var17[6] = var18;
+    var18 = [0, 0];
+    var17[7] = var18;
+    var18 = [0, 0];
+    var17[8] = var18;
+    var18 = new Array(2);
+    var19 = -3.825;
+    var18[0] = var19;
+    var19 = 10.459;
+    var18[1] = var19;
+    var17[9] = var18;
+    var16.o = var17;
+    var17 = new Array(10);
+    var18 = [228.227, 63.589];
+    var17[0] = var18;
+    var18 = new Array(2);
+    var19 = -266.204;
+    var18[0] = var19;
+    var19 = 64.156;
+    var18[1] = var19;
+    var17[1] = var18;
+    var18 = new Array(2);
+    var19 = -184.099;
+    var18[0] = var19;
+    var19 = 12.84;
+    var18[1] = var19;
+    var17[2] = var18;
+    var18 = new Array(2);
+    var19 = -150.743;
+    var18[0] = var19;
+    var19 = 32.084;
+    var18[1] = var19;
+    var17[3] = var18;
+    var18 = [23.731];
+    var19 = -64.134;
+    var18[1] = var19;
+    var17[4] = var18;
+    var18 = [99.422];
+    var19 = -12.818;
+    var18[1] = var19;
+    var17[5] = var18;
+    var18 = [232.843];
+    var19 = -41.041;
+    var18[1] = var19;
+    var17[6] = var18;
+    var18 = [266.204];
+    var19 = -20.025;
+    var18[1] = var19;
+    var17[7] = var18;
+    var18 = [266.127, 25.722];
+    var17[8] = var18;
+    var18 = [263.893, 35.657];
+    var17[9] = var18;
+    var16.v = var17;
+    var16.c = var14;
+    var6.k = var16;
+    var12.ks = var6;
+    var6 = new Array(3);
+    var6[0] = var12;
+    var12 = {
+        'ty': 'fl',
+        'c': null,
+        'o': null,
+        'r': 1,
+        'bm': 0,
+        'nm': 'Fill 1',
+        'mn': 'ADBE Vector Graphic - Fill',
+        'hd': false
+    };
+    var16 = {
+        'a': 0,
+        'k': null,
+        'ix': 4
+    };
+    var17 = [1, 1, 1, 1];
+    var16.k = var17;
+    var12.c = var16;
+    var16 = {
+        'a': 0,
+        'k': 100,
+        'ix': 5
+    };
+    var12.o = var16;
+    var6[1] = var12;
+    var12 = {};
+    var12.ty = var8;
+    var16 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var17 = [544.477, 368.423];
+    var16.k = var17;
+    var12.p = var16;
+    var16 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var17 = [0, 0];
+    var16.k = var17;
+    var12.a = var16;
+    var16 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var17 = [100, 100];
+    var16.k = var17;
+    var12.s = var16;
+    var16 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var12.r = var16;
+    var16 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var12.o = var16;
+    var16 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var12.sk = var16;
+    var16 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var12.sa = var16;
+    var12.nm = var7;
+    var6[2] = var12;
+    var5.it = var6;
+    var3[3] = var5;
+    var5 = {};
+    var5.ty = var8;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var12 = [414.958, 284.679];
+    var6.k = var12;
+    var5.p = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var12 = [414.958, 284.679];
+    var6.k = var12;
+    var5.a = var6;
+    var6 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var12 = [100, 100];
+    var6.k = var12;
+    var5.s = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var5.r = var6;
+    var6 = {
+        'a': 0,
+        'k': 25,
+        'ix': 7
+    };
+    var5.o = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var5.sk = var6;
+    var6 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var5.sa = var6;
+    var5.nm = var7;
+    var3[4] = var5;
+    var4.it = var3;
+    var3 = new Array(2);
+    var3[0] = var4;
+    var4 = {
+        'ty': 'gr',
+        'it': null,
+        'nm': 'BGnew',
+        'np': 2,
+        'cix': 2,
+        'bm': 0,
+        'ix': 2,
+        'mn': 'ADBE Vector Group',
+        'hd': false
+    };
+    var6 = {
+        'ind': 0,
+        'ty': 'sh',
+        'ix': 1,
+        'ks': null,
+        'nm': 'Path 2',
+        'mn': 'ADBE Vector Shape - Group',
+        'hd': false
+    };
+    var5 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var12 = {};
+    var16 = new Array(8);
+    var17 = [0, 0];
+    var16[0] = var17;
+    var18 = [0];
+    var17 = -22.961;
+    var18[1] = var17;
+    var16[1] = var18;
+    var18 = [0, 0];
+    var16[2] = var18;
+    var18 = new Array(2);
+    var18[0] = var17;
+    var18[1] = var15;
+    var16[3] = var18;
+    var18 = [0, 0];
+    var16[4] = var18;
+    var18 = [0, 22.961];
+    var16[5] = var18;
+    var18 = [0, 0];
+    var16[6] = var18;
+    var18 = [22.961, 0];
+    var16[7] = var18;
+    var12.i = var16;
+    var16 = new Array(2);
+    var16[0] = var17;
+    var16[1] = var15;
+    var15 = new Array(8);
+    var15[0] = var16;
+    var16 = [0, 0];
+    var15[1] = var16;
+    var16 = [0, 22.961];
+    var15[2] = var16;
+    var16 = [0, 0];
+    var15[3] = var16;
+    var16 = [22.961, 0];
+    var15[4] = var16;
+    var16 = [0, 0];
+    var15[5] = var16;
+    var16 = [0];
+    var16[1] = var17;
+    var15[6] = var16;
+    var16 = [0, 0];
+    var15[7] = var16;
+    var12.o = var15;
+    var16 = new Array(2);
+    var18 = -1589.618;
+    var16[0] = var18;
+    var17 = -184.791;
+    var16[1] = var17;
+    var15 = new Array(8);
+    var15[0] = var16;
+    var16 = new Array(2);
+    var20 = -1631.365;
+    var16[0] = var20;
+    var19 = -143.043;
+    var16[1] = var19;
+    var15[1] = var16;
+    var16 = new Array(2);
+    var16[0] = var20;
+    var21 = 205.406;
+    var16[1] = var21;
+    var15[2] = var16;
+    var16 = new Array(2);
+    var16[0] = var18;
+    var20 = 247.154;
+    var16[1] = var20;
+    var15[3] = var16;
+    var16 = new Array(2);
+    var18 = -862.639;
+    var16[0] = var18;
+    var16[1] = var20;
+    var15[4] = var16;
+    var16 = new Array(2);
+    var20 = -820.891;
+    var16[0] = var20;
+    var16[1] = var21;
+    var15[5] = var16;
+    var16 = new Array(2);
+    var16[0] = var20;
+    var16[1] = var19;
+    var15[6] = var16;
+    var16 = new Array(2);
+    var16[0] = var18;
+    var16[1] = var17;
+    var15[7] = var16;
+    var12.v = var15;
+    var12.c = var14;
+    var5.k = var12;
+    var6.ks = var5;
+    var5 = new Array(3);
+    var5[0] = var6;
+    var6 = {
+        'ty': 'gf',
+        'o': null,
+        'r': 1,
+        'bm': 0
+    };
+    var12 = {
+        'a': 0,
+        'k': 100,
+        'ix': 10
+    };
+    var6.o = var12;
+    var12 = {};
+    var12.p = var13;
+    var13 = {
+        'a': 0,
+        'k': null,
+        'ix': 9
+    };
+    var14 = [0, 1, 0.549, 0.098, 0.334, 1, 0.727, 0.229, 0.669, 1, 0.906, 0.361];
+    var13.k = var14;
+    var12.k = var13;
+    var6.g = var12;
+    var12 = {
+        'a': 0,
+        'k': null,
+        'ix': 5
+    };
+    var13 = new Array(2);
+    var14 = -1596.697;
+    var13[0] = var14;
+    var14 = -143.431;
+    var13[1] = var14;
+    var12.k = var13;
+    var6.s = var12;
+    var12 = {
+        'a': 0,
+        'k': null,
+        'ix': 6
+    };
+    var13 = new Array(2);
+    var14 = -873.473;
+    var13[0] = var14;
+    var14 = 205.529;
+    var13[1] = var14;
+    var12.k = var13;
+    var6.e = var12;
+    var6.t = var11;
+    var11 = 'Gradient Fill 1new';
+    var6.nm = var11;
+    var6.mn = var10;
+    var6.hd = var9;
+    var5[1] = var6;
+    var6 = {};
+    var6.ty = var8;
+    var8 = {
+        'a': 0,
+        'k': null,
+        'ix': 2
+    };
+    var9 = [226.401, 75.827];
+    var8.k = var9;
+    var6.p = var8;
+    var8 = {
+        'a': 0,
+        'k': null,
+        'ix': 1
+    };
+    var9 = new Array(2);
+    var10 = -1405.214;
+    var9[0] = var10;
+    var10 = -109.214;
+    var9[1] = var10;
+    var8.k = var9;
+    var6.a = var8;
+    var8 = {
+        'a': 0,
+        'k': null,
+        'ix': 3
+    };
+    var9 = [100, 100];
+    var8.k = var9;
+    var6.s = var8;
+    var8 = {
+        'a': 0,
+        'k': 0,
+        'ix': 6
+    };
+    var6.r = var8;
+    var8 = {
+        'a': 0,
+        'k': 100,
+        'ix': 7
+    };
+    var6.o = var8;
+    var8 = {
+        'a': 0,
+        'k': 0,
+        'ix': 4
+    };
+    var6.sk = var8;
+    var8 = {
+        'a': 0,
+        'k': 0,
+        'ix': 5
+    };
+    var6.sa = var8;
+    var6.nm = var7;
+    var5[2] = var6;
+    var4.it = var5;
+    var3[1] = var4;
+    var2.shapes = var3;
+    var0[19] = var2;
+    var2 = {
+        'ddd': 0,
+        'ind': 21,
+        'ty': 3,
+        'nm': 'Card',
+        'parent': 2,
+        'sr': 1,
+        'ks': null,
+        'ao': 0,
+        'ip': 0,
+        'op': 120,
+        'st': 0,
+        'ct': 1,
+        'bm': 0
+    };
+    var3 = {};
+    var4 = {
+        'a': 0,
+        'k': 100,
+        'ix': 11
+    };
+    var3.o = var4;
+    var4 = {
+        'a': 0,
+        'k': 0,
+        'ix': 10
+    };
+    var3.r = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 2,
+        'l': 2
+    };
+    var5 = [0.039, 83.959, 0];
+    var4.k = var5;
+    var3.p = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 1,
+        'l': 2
+    };
+    var5 = [0, 0, 0];
+    var4.k = var5;
+    var3.a = var4;
+    var4 = {
+        'a': 0,
+        'k': null,
+        'ix': 6,
+        'l': 2
+    };
+    var5 = [100, 100, 100];
+    var4.k = var5;
+    var3.s = var4;
+    var2.ks = var3;
+    var0[20] = var2;
     var1.layers = var0;
-    var0 = new Array(0);
+    var0 = new Array(1);
+    var2 = {
+        'tm': 72,
+        'cm': '',
+        'dr': 0
+    };
+    var0[0] = var2;
     var1.markers = var0;
     var0 = module;
     var0.exports = var1;

@@ -7,23 +7,23 @@ import kotlin.jvm.internal.Intrinsics;
 public class n0 {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final /* synthetic */ AtomicIntegerFieldUpdater f37464b = AtomicIntegerFieldUpdater.newUpdater(n0.class, "_size$volatile");
+    private static final /* synthetic */ AtomicIntegerFieldUpdater f37480b = AtomicIntegerFieldUpdater.newUpdater(n0.class, "_size$volatile");
     private volatile /* synthetic */ int _size$volatile;
 
     /* renamed from: a  reason: collision with root package name */
-    private o0[] f37465a;
+    private o0[] f37481a;
 
     private final o0[] g() {
-        o0[] o0VarArr = this.f37465a;
+        o0[] o0VarArr = this.f37481a;
         if (o0VarArr == null) {
             o0[] o0VarArr2 = new o0[4];
-            this.f37465a = o0VarArr2;
+            this.f37481a = o0VarArr2;
             return o0VarArr2;
         } else if (c() >= o0VarArr.length) {
             Object[] copyOf = Arrays.copyOf(o0VarArr, c() * 2);
             Intrinsics.checkNotNullExpressionValue(copyOf, "copyOf(...)");
             o0[] o0VarArr3 = (o0[]) copyOf;
-            this.f37465a = o0VarArr3;
+            this.f37481a = o0VarArr3;
             return o0VarArr3;
         } else {
             return o0VarArr;
@@ -31,7 +31,7 @@ public class n0 {
     }
 
     private final void k(int i10) {
-        f37464b.set(this, i10);
+        f37480b.set(this, i10);
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:8:0x0028, code lost:
@@ -51,7 +51,7 @@ public class n0 {
             if (r1 < r2) goto Lb
             goto L3e
         Lb:
-            ls.o0[] r2 = r5.f37465a
+            ls.o0[] r2 = r5.f37481a
             kotlin.jvm.internal.Intrinsics.checkNotNull(r2)
             int r0 = r0 + 2
             int r3 = r5.c()
@@ -86,7 +86,7 @@ public class n0 {
 
     private final void m(int i10) {
         while (i10 > 0) {
-            o0[] o0VarArr = this.f37465a;
+            o0[] o0VarArr = this.f37481a;
             Intrinsics.checkNotNull(o0VarArr);
             int i11 = (i10 - 1) / 2;
             o0 o0Var = o0VarArr[i11];
@@ -102,7 +102,7 @@ public class n0 {
     }
 
     private final void n(int i10, int i11) {
-        o0[] o0VarArr = this.f37465a;
+        o0[] o0VarArr = this.f37481a;
         Intrinsics.checkNotNull(o0VarArr);
         o0 o0Var = o0VarArr[i11];
         Intrinsics.checkNotNull(o0Var);
@@ -125,7 +125,7 @@ public class n0 {
     }
 
     public final o0 b() {
-        o0[] o0VarArr = this.f37465a;
+        o0[] o0VarArr = this.f37481a;
         if (o0VarArr != null) {
             return o0VarArr[0];
         }
@@ -133,7 +133,7 @@ public class n0 {
     }
 
     public final int c() {
-        return f37464b.get(this);
+        return f37480b.get(this);
     }
 
     public final boolean e() {
@@ -165,7 +165,7 @@ public class n0 {
     }
 
     public final o0 i(int i10) {
-        o0[] o0VarArr = this.f37465a;
+        o0[] o0VarArr = this.f37481a;
         Intrinsics.checkNotNull(o0VarArr);
         k(c() - 1);
         if (i10 < c()) {

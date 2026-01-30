@@ -5,7 +5,7 @@ import ui.c;
 final class y6 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final y6 f45937a = new y6();
+    static final y6 f45953a = new y6();
 
     static {
         c.b a10 = ui.c.a("initialImageUriCount");

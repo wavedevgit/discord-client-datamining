@@ -11,7 +11,7 @@ import kotlinx.coroutines.CoroutineDispatcher;
 public abstract class CoroutineDispatcher extends kotlin.coroutines.a implements kotlin.coroutines.d {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f36290e = new a(null);
+    public static final a f36306e = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends kotlin.coroutines.b {
@@ -28,7 +28,7 @@ public abstract class CoroutineDispatcher extends kotlin.coroutines.a implements
         }
 
         private a() {
-            super(kotlin.coroutines.d.f33354h, new Function1() { // from class: gs.y
+            super(kotlin.coroutines.d.f33370h, new Function1() { // from class: gs.y
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Object obj) {
                     CoroutineDispatcher d10;
@@ -40,7 +40,7 @@ public abstract class CoroutineDispatcher extends kotlin.coroutines.a implements
     }
 
     public CoroutineDispatcher() {
-        super(kotlin.coroutines.d.f33354h);
+        super(kotlin.coroutines.d.f33370h);
     }
 
     public static /* synthetic */ CoroutineDispatcher c2(CoroutineDispatcher coroutineDispatcher, int i10, String str, int i11, Object obj) {

@@ -44,7 +44,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = function() { // Environment: var1
             var0 = {};
             var2 = function(arg0) { // Original name: zoomTo, environment: var1
-                _fun64460: for (var _fun64460_ip = 0;;) switch (_fun64460_ip) {
+                _fun64504: for (var _fun64504_ip = 0;;) switch (_fun64504_ip) {
                     case 0:
                         var1 = arg0;
                         var2 = var1.x;
@@ -52,16 +52,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var7 = var1.scale;
                         var0 = undefined;
                         if (!(var7 === var0)) {
-                            _fun64460_ip = 28;
-                            continue _fun64460
+                            _fun64504_ip = 28;
+                            continue _fun64504
                         }
                     case 25:
                         var7 = 2;
                     case 28:
                         var6 = var1.animated;
                         if (!(var6 === var0)) {
-                            _fun64460_ip = 40;
-                            continue _fun64460
+                            _fun64504_ip = 40;
+                            continue _fun64504
                         }
                     case 38:
                         var6 = true;
@@ -70,8 +70,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = var3.current;
                         var3 = null;
                         if (!(var3 != var4)) {
-                            _fun64460_ip = 152;
-                            continue _fun64460
+                            _fun64504_ip = 152;
+                            continue _fun64504
                         }
                     case 58:
                         var8 = _closure1_slot4;
@@ -102,21 +102,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var0.zoomTo = var2;
             var1 = function() { // Original name: unzoom, environment: var1
-                _fun64461: for (var _fun64461_ip = 0;;) switch (_fun64461_ip) {
+                _fun64505: for (var _fun64505_ip = 0;;) switch (_fun64505_ip) {
                     case 0:
                         var1 = arguments[0];
                         var0 = undefined;
                         if (!(var1 === var0)) {
-                            _fun64461_ip = 11;
-                            continue _fun64461
+                            _fun64505_ip = 11;
+                            continue _fun64505
                         }
                     case 9:
                         var1 = {};
                     case 11:
                         var4 = var1.animated;
                         if (!(var4 === var0)) {
-                            _fun64461_ip = 23;
-                            continue _fun64461
+                            _fun64505_ip = 23;
+                            continue _fun64505
                         }
                     case 21:
                         var4 = true;
@@ -125,8 +125,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var3 = var2.current;
                         var2 = null;
                         if (!(var2 != var3)) {
-                            _fun64461_ip = 91;
-                            continue _fun64461
+                            _fun64505_ip = 91;
+                            continue _fun64505
                         }
                     case 41:
                         var3 = _closure1_slot0;
@@ -172,4 +172,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 7998, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 8001, 2]);

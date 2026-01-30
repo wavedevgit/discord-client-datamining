@@ -137,7 +137,7 @@ public final class w0 extends c1 implements KClass, x0, w2 {
             this.f21282g = z2.c(new p0(w0.this));
             this.f21283h = z2.c(new q0(w0.this));
             this.f21284i = z2.c(new r0(this));
-            this.f21285j = ir.l.a(ir.o.f31103e, new s0(this, w0.this));
+            this.f21285j = ir.l.a(ir.o.f31119e, new s0(this, w0.this));
             this.f21286k = z2.c(new t0(this, w0.this));
             this.f21287l = z2.c(new u0(this, w0.this));
             this.f21288m = z2.c(new v0(this));
@@ -547,7 +547,7 @@ public final class w0 extends c1 implements KClass, x0, w2 {
     public w0(Class jClass) {
         Intrinsics.checkNotNullParameter(jClass, "jClass");
         this.f21276o = jClass;
-        this.f21277p = ir.l.a(ir.o.f31103e, new b0(this));
+        this.f21277p = ir.l.a(ir.o.f31119e, new b0(this));
     }
 
     private final ClassDescriptor F(ClassId classId, RuntimeModuleData runtimeModuleData) {

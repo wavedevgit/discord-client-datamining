@@ -67,4 +67,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.SCROLL_POSITION_COEFFICIENT = var1;
     var2.SCALE_FACTOR = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5411, 671, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5415, 671, 2]);

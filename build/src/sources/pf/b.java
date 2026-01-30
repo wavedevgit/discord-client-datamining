@@ -8,36 +8,36 @@ import android.content.pm.PackageInfo;
 public class b {
 
     /* renamed from: a  reason: collision with root package name */
-    protected final Context f45114a;
+    protected final Context f45130a;
 
     public b(Context context) {
-        this.f45114a = context;
+        this.f45130a = context;
     }
 
     public int a(String str) {
-        return this.f45114a.checkCallingOrSelfPermission(str);
+        return this.f45130a.checkCallingOrSelfPermission(str);
     }
 
     public int b(String str, String str2) {
-        return this.f45114a.getPackageManager().checkPermission(str, str2);
+        return this.f45130a.getPackageManager().checkPermission(str, str2);
     }
 
     public ApplicationInfo c(String str, int i10) {
-        return this.f45114a.getPackageManager().getApplicationInfo(str, i10);
+        return this.f45130a.getPackageManager().getApplicationInfo(str, i10);
     }
 
     public CharSequence d(String str) {
-        Context context = this.f45114a;
+        Context context = this.f45130a;
         return context.getPackageManager().getApplicationLabel(context.getPackageManager().getApplicationInfo(str, 0));
     }
 
     public PackageInfo e(String str, int i10) {
-        return this.f45114a.getPackageManager().getPackageInfo(str, i10);
+        return this.f45130a.getPackageManager().getPackageInfo(str, i10);
     }
 
     public final boolean f(int i10, String str) {
         try {
-            AppOpsManager appOpsManager = (AppOpsManager) this.f45114a.getSystemService("appops");
+            AppOpsManager appOpsManager = (AppOpsManager) this.f45130a.getSystemService("appops");
             if (appOpsManager != null) {
                 appOpsManager.checkPackage(i10, str);
                 return true;

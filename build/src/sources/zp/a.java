@@ -11,7 +11,7 @@ import vp.e;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f56054a = new a();
+    public static final a f56070a = new a();
 
     private a() {
     }
@@ -21,7 +21,7 @@ public final class a {
         Editable editable2;
         Editable editable3;
         Intrinsics.checkNotNullParameter(view, "view");
-        TextInputLayout textInputLayout = (TextInputLayout) view.findViewById(e.f51826u0);
+        TextInputLayout textInputLayout = (TextInputLayout) view.findViewById(e.f51842u0);
         TextInputLayout textInputLayout2 = (TextInputLayout) view.findViewById(e.B0);
         TextInputLayout textInputLayout3 = (TextInputLayout) view.findViewById(e.L);
         EditText editText = ((TextInputLayout) view.findViewById(e.G)).getEditText();

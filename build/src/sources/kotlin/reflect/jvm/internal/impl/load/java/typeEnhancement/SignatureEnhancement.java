@@ -36,15 +36,15 @@ import org.jetbrains.annotations.NotNull;
 public final class SignatureEnhancement {
 
     /* renamed from: a  reason: collision with root package name */
-    private final JavaTypeEnhancement f34354a;
+    private final JavaTypeEnhancement f34370a;
 
     public SignatureEnhancement(@NotNull JavaTypeEnhancement typeEnhancement) {
         Intrinsics.checkNotNullParameter(typeEnhancement, "typeEnhancement");
-        this.f34354a = typeEnhancement;
+        this.f34370a = typeEnhancement;
     }
 
     private final boolean f(KotlinType kotlinType) {
-        return TypeUtils.contains(kotlinType, b1.f34375d);
+        return TypeUtils.contains(kotlinType, b1.f34391d);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -79,7 +79,7 @@ public final class SignatureEnhancement {
     }
 
     private final KotlinType i(c1 c1Var, KotlinType kotlinType, List list, TypeEnhancementInfo typeEnhancementInfo, boolean z10) {
-        return this.f34354a.enhance(kotlinType, c1Var.computeIndexedQualifiers(kotlinType, list, typeEnhancementInfo, z10), c1Var.getSkipRawTypeArguments());
+        return this.f34370a.enhance(kotlinType, c1Var.computeIndexedQualifiers(kotlinType, list, typeEnhancementInfo, z10), c1Var.getSkipRawTypeArguments());
     }
 
     static /* synthetic */ KotlinType j(SignatureEnhancement signatureEnhancement, CallableMemberDescriptor callableMemberDescriptor, Annotated annotated, boolean z10, LazyJavaResolverContext lazyJavaResolverContext, AnnotationQualifierApplicabilityType annotationQualifierApplicabilityType, TypeEnhancementInfo typeEnhancementInfo, boolean z11, Function1 function1, int i10, Object obj) {
@@ -238,7 +238,7 @@ public final class SignatureEnhancement {
         List<? extends KotlinType> list = bounds;
         ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
         for (KotlinType kotlinType2 : list) {
-            if (TypeUtilsKt.contains(kotlinType2, a1.f34371d)) {
+            if (TypeUtilsKt.contains(kotlinType2, a1.f34387d)) {
                 kotlinType = kotlinType2;
             } else {
                 kotlinType = kotlinType2;

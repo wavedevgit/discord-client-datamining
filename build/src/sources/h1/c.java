@@ -5,14 +5,14 @@ import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 public class c {
 
     /* renamed from: a  reason: collision with root package name */
-    e f27232a = new f(IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER);
+    e f27248a = new f(IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER);
 
     /* renamed from: b  reason: collision with root package name */
-    e f27233b = new f(IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER);
+    e f27249b = new f(IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER);
 
     /* renamed from: c  reason: collision with root package name */
-    e f27234c = new f(IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER);
+    e f27250c = new f(IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER);
 
     /* renamed from: d  reason: collision with root package name */
-    h[] f27235d = new h[32];
+    h[] f27251d = new h[32];
 }

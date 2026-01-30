@@ -3,21 +3,21 @@ package io.sentry.util;
 public final class z {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f30830a;
+    private final Object f30846a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Object f30831b;
+    private final Object f30847b;
 
     public z(Object obj, Object obj2) {
-        this.f30830a = obj;
-        this.f30831b = obj2;
+        this.f30846a = obj;
+        this.f30847b = obj2;
     }
 
     public Object a() {
-        return this.f30830a;
+        return this.f30846a;
     }
 
     public Object b() {
-        return this.f30831b;
+        return this.f30847b;
     }
 }

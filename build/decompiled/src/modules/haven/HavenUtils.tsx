@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.parseRoom = var3;
     var1 = function(arg0) { // Original name: getHavenSoundControlName, environment: var1
-        _fun96539: for (var _fun96539_ip = 0;;) switch (_fun96539_ip) {
+        _fun96793: for (var _fun96793_ip = 0;;) switch (_fun96793_ip) {
             case 0:
                 var2 = arg0;
                 var3 = _closure1_slot0;
@@ -78,8 +78,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.HavenSoundKeys;
                 var1 = var1.RADIO;
                 if (!(var1 !== var2)) {
-                    _fun96539_ip = 240;
-                    continue _fun96539
+                    _fun96793_ip = 240;
+                    continue _fun96793
                 }
             case 46:
                 var3 = _closure1_slot0;
@@ -89,8 +89,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.HavenSoundKeys;
                 var1 = var1.ENVIRONMENT;
                 if (!(var1 !== var2)) {
-                    _fun96539_ip = 179;
-                    continue _fun96539
+                    _fun96793_ip = 179;
+                    continue _fun96793
                 }
             case 79:
                 var3 = _closure1_slot0;
@@ -100,8 +100,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.HavenSoundKeys;
                 var1 = var1.CAMPFIRE;
                 if (!(var1 !== var2)) {
-                    _fun96539_ip = 118;
-                    continue _fun96539
+                    _fun96793_ip = 118;
+                    continue _fun96793
                 }
             case 112:
                 var1 = '';
@@ -155,4 +155,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getHavenSoundControlName = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [12515, 1234, 2525, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12540, 1234, 2525, 2]);

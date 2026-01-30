@@ -9,13 +9,13 @@ public final class Position implements Serializable {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: i  reason: collision with root package name */
-    private static final Position f33949i = new Position(-1, -1);
+    private static final Position f33965i = new Position(-1, -1);
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f33950d;
+    private final int f33966d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f33951e;
+    private final int f33967e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class Companion {
@@ -25,7 +25,7 @@ public final class Position implements Serializable {
 
         @NotNull
         public final Position getNO_POSITION() {
-            return Position.f33949i;
+            return Position.f33965i;
         }
 
         private Companion() {
@@ -33,8 +33,8 @@ public final class Position implements Serializable {
     }
 
     public Position(int i10, int i11) {
-        this.f33950d = i10;
-        this.f33951e = i11;
+        this.f33966d = i10;
+        this.f33967e = i11;
     }
 
     public boolean equals(Object obj) {
@@ -43,17 +43,17 @@ public final class Position implements Serializable {
         }
         if (obj instanceof Position) {
             Position position = (Position) obj;
-            return this.f33950d == position.f33950d && this.f33951e == position.f33951e;
+            return this.f33966d == position.f33966d && this.f33967e == position.f33967e;
         }
         return false;
     }
 
     public int hashCode() {
-        return (Integer.hashCode(this.f33950d) * 31) + Integer.hashCode(this.f33951e);
+        return (Integer.hashCode(this.f33966d) * 31) + Integer.hashCode(this.f33967e);
     }
 
     @NotNull
     public String toString() {
-        return "Position(line=" + this.f33950d + ", column=" + this.f33951e + ')';
+        return "Position(line=" + this.f33966d + ", column=" + this.f33967e + ')';
     }
 }

@@ -107,7 +107,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/voice_panel/native/shared/VoicePanelStreamPreview.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: VoicePanelStreamPreview, environment: var1
-        _fun92085: for (var _fun92085_ip = 0;;) switch (_fun92085_ip) {
+        _fun92322: for (var _fun92322_ip = 0;;) switch (_fun92322_ip) {
             case 0:
                 var1 = arg0;
                 var6 = var1.mode;
@@ -128,8 +128,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var9 == var7;
                 var4 = undefined;
                 if (var1) {
-                    _fun92085_ip = 85;
-                    continue _fun92085
+                    _fun92322_ip = 85;
+                    continue _fun92322
                 }
             case 80:
                 var4 = var7.guildId;
@@ -137,8 +137,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var9 == var7;
                 var2 = undefined;
                 if (var1) {
-                    _fun92085_ip = 99;
-                    continue _fun92085
+                    _fun92322_ip = 99;
+                    continue _fun92322
                 }
             case 94:
                 var2 = var7.channelId;
@@ -146,8 +146,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var9 == var7;
                 var1 = undefined;
                 if (var8) {
-                    _fun92085_ip = 114;
-                    continue _fun92085
+                    _fun92322_ip = 114;
+                    continue _fun92322
                 }
             case 108:
                 var1 = var7.ownerId;
@@ -161,13 +161,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var8.bind(var3)(var1);
                 var1 = var2.useAnimatedStyle;
                 var0 = function() { // Original name: p, environment: var0
-                    _fun92086: for (var _fun92086_ip = 0;;) switch (_fun92086_ip) {
+                    _fun92323: for (var _fun92323_ip = 0;;) switch (_fun92323_ip) {
                         case 0:
                             var1 = _closure2_slot0;
                             var0 = null;
                             if (!(var0 != var1)) {
-                                _fun92086_ip = 87;
-                                continue _fun92086
+                                _fun92323_ip = 87;
+                                continue _fun92323
                             }
                         case 13:
                             var0 = {};
@@ -184,8 +184,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = 1;
                             var5 = 'pip';
                             if (!(var5 === var6)) {
-                                _fun92086_ip = 71;
-                                continue _fun92086
+                                _fun92323_ip = 71;
+                                continue _fun92323
                             }
                         case 69:
                             var2 = 0;
@@ -193,8 +193,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = _closure1_slot7;
                             var1 = var3.bind(var4)(var2, var1);
                             var0.opacity = var1;
-                            _fun92086_ip = 99;
-                            continue _fun92086;
+                            _fun92323_ip = 99;
+                            continue _fun92323;
                         case 87:
                             var1 = {};
                             var2 = 1;
@@ -237,8 +237,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = {};
                 var4.layout = var13;
                 if (!(var9 == var7)) {
-                    _fun92085_ip = 328;
-                    continue _fun92085
+                    _fun92322_ip = 328;
+                    continue _fun92322
                 }
             case 306:
                 var16 = _closure1_slot1;
@@ -246,8 +246,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = 9;
                 var14 = var17[var14];
                 var14 = var16.bind(var3)(var14);
-                _fun92085_ip = 337;
-                continue _fun92085;
+                _fun92322_ip = 337;
+                continue _fun92322;
             case 328:
                 var16 = {};
                 var16.uri = var7;
@@ -255,13 +255,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 337:
                 var4.source = var14;
                 if (!(var9 == var7)) {
-                    _fun92085_ip = 353;
-                    continue _fun92085
+                    _fun92322_ip = 353;
+                    continue _fun92322
                 }
             case 345:
                 var14 = var15.streamPreviewImagePlaceholder;
-                _fun92085_ip = 359;
-                continue _fun92085;
+                _fun92322_ip = 359;
+                continue _fun92322;
             case 353:
                 var14 = var15.streamPreviewImage;
             case 359:
@@ -269,8 +269,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var9 != var7;
                 var7 = 'contain';
                 if (!var9) {
-                    _fun92085_ip = 378;
-                    continue _fun92085
+                    _fun92322_ip = 378;
+                    continue _fun92322
                 }
             case 374:
                 var7 = 'cover';
@@ -320,4 +320,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.VoicePanelStreamPreview = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 3677, 4037, 1297, 671, 8626, 4050, 8624, 6416, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 3679, 4043, 1297, 671, 8629, 4056, 8627, 6419, 1234, 2]);

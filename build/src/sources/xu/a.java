@@ -7,7 +7,7 @@ import xu.b;
 public final class a implements ku.b, b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f53836a = new a();
+    public static final a f53852a = new a();
 
     private a() {
     }

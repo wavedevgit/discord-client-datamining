@@ -7,14 +7,14 @@ import kotlin.jvm.functions.Function2;
 public abstract class a extends b0 implements Job, Continuation, CoroutineScope {
 
     /* renamed from: i  reason: collision with root package name */
-    private final CoroutineContext f36293i;
+    private final CoroutineContext f36309i;
 
     public a(CoroutineContext coroutineContext, boolean z10, boolean z11) {
         super(z11);
         if (z10) {
-            h0((Job) coroutineContext.l(Job.f36291j));
+            h0((Job) coroutineContext.l(Job.f36307j));
         }
-        this.f36293i = coroutineContext.U0(this);
+        this.f36309i = coroutineContext.U0(this);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -44,22 +44,22 @@ public abstract class a extends b0 implements Job, Continuation, CoroutineScope 
 
     @Override // kotlinx.coroutines.b0
     public final void g0(Throwable th2) {
-        gs.a0.a(this.f36293i, th2);
+        gs.a0.a(this.f36309i, th2);
     }
 
     @Override // kotlin.coroutines.Continuation
     public final CoroutineContext getContext() {
-        return this.f36293i;
+        return this.f36309i;
     }
 
     @Override // kotlinx.coroutines.CoroutineScope
     public CoroutineContext getCoroutineContext() {
-        return this.f36293i;
+        return this.f36309i;
     }
 
     @Override // kotlinx.coroutines.b0
     public String p0() {
-        String g10 = gs.x.g(this.f36293i);
+        String g10 = gs.x.g(this.f36309i);
         if (g10 == null) {
             return super.p0();
         }
@@ -69,7 +69,7 @@ public abstract class a extends b0 implements Job, Continuation, CoroutineScope 
     @Override // kotlin.coroutines.Continuation
     public final void resumeWith(Object obj) {
         Object o02 = o0(gs.t.b(obj));
-        if (o02 == c0.f36313b) {
+        if (o02 == c0.f36329b) {
             return;
         }
         Q0(o02);
@@ -79,7 +79,7 @@ public abstract class a extends b0 implements Job, Continuation, CoroutineScope 
     protected final void u0(Object obj) {
         if (obj instanceof gs.r) {
             gs.r rVar = (gs.r) obj;
-            S0(rVar.f27178a, rVar.a());
+            S0(rVar.f27194a, rVar.a());
             return;
         }
         T0(obj);

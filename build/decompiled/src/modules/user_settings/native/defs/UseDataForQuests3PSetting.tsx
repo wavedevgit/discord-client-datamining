@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.onValueChange = var8;
     var7 = function() { // Original name: useDataToSupportQuests3PSettingIsDisabled, environment: var7
-        _fun88710: for (var _fun88710_ip = 0;;) switch (_fun88710_ip) {
+        _fun88947: for (var _fun88947_ip = 0;;) switch (_fun88947_ip) {
             case 0:
                 var4 = _closure1_slot0;
                 var5 = _closure1_slot1;
@@ -95,15 +95,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var3.useIsParentallyControlled;
                 var1 = var1.bind(var3)();
                 if (var0) {
-                    _fun88710_ip = 91;
-                    continue _fun88710
+                    _fun88947_ip = 91;
+                    continue _fun88947
                 }
             case 88:
                 var0 = var2;
             case 91:
                 if (var0) {
-                    _fun88710_ip = 97;
-                    continue _fun88710
+                    _fun88947_ip = 97;
+                    continue _fun88947
                 }
             case 94:
                 var0 = var1;
@@ -121,4 +121,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6965, 1348, 11460, 10325, 8939, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6968, 1348, 11482, 10331, 8943, 1234, 2]);

@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/notification_center/native/ForYouSuggestedFriendsSectionHeader.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: ForYouSuggestedFriendsSectionHeader, environment: var1
-        _fun103669: for (var _fun103669_ip = 0;;) switch (_fun103669_ip) {
+        _fun103925: for (var _fun103925_ip = 0;;) switch (_fun103925_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.showDivider;
@@ -88,8 +88,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5[0] = var8;
                 var6 = !var6;
                 if (!var6) {
-                    _fun103669_ip = 57;
-                    continue _fun103669
+                    _fun103925_ip = 57;
+                    continue _fun103925
                 }
             case 51:
                 var6 = var7.noDivider;
@@ -129,4 +129,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3895, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 3901, 1234, 2]);

@@ -8,15 +8,15 @@ public abstract class i {
     class a implements h {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Provider f49819a;
+        final /* synthetic */ Provider f49835a;
 
         a(Provider provider) {
-            this.f49819a = provider;
+            this.f49835a = provider;
         }
 
         @Override // javax.inject.Provider
         public Object get() {
-            return this.f49819a.get();
+            return this.f49835a.get();
         }
     }
 

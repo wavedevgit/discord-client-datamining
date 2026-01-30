@@ -6,54 +6,54 @@ import java.util.List;
 public final class r extends s {
 
     /* renamed from: o  reason: collision with root package name */
-    final transient int f26931o;
+    final transient int f26947o;
 
     /* renamed from: p  reason: collision with root package name */
-    final transient int f26932p;
+    final transient int f26948p;
 
     /* renamed from: q  reason: collision with root package name */
-    final /* synthetic */ s f26933q;
+    final /* synthetic */ s f26949q;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public r(s sVar, int i10, int i11) {
-        this.f26933q = sVar;
-        this.f26931o = i10;
-        this.f26932p = i11;
+        this.f26949q = sVar;
+        this.f26947o = i10;
+        this.f26948p = i11;
     }
 
     @Override // gi.p
     final int c() {
-        return this.f26933q.d() + this.f26931o + this.f26932p;
+        return this.f26949q.d() + this.f26947o + this.f26948p;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // gi.p
     public final int d() {
-        return this.f26933q.d() + this.f26931o;
+        return this.f26949q.d() + this.f26947o;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     @Override // gi.p
     public final Object[] e() {
-        return this.f26933q.e();
+        return this.f26949q.e();
     }
 
     @Override // gi.s
     public final s f(int i10, int i11) {
-        m.c(i10, i11, this.f26932p);
-        int i12 = this.f26931o;
-        return this.f26933q.subList(i10 + i12, i11 + i12);
+        m.c(i10, i11, this.f26948p);
+        int i12 = this.f26947o;
+        return this.f26949q.subList(i10 + i12, i11 + i12);
     }
 
     @Override // java.util.List
     public final Object get(int i10) {
-        m.a(i10, this.f26932p, "index");
-        return this.f26933q.get(i10 + this.f26931o);
+        m.a(i10, this.f26948p, "index");
+        return this.f26949q.get(i10 + this.f26947o);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
     public final int size() {
-        return this.f26932p;
+        return this.f26948p;
     }
 
     @Override // gi.s, java.util.List

@@ -50,7 +50,7 @@ public final class ShareBroadcastReceiver extends BroadcastReceiver {
             Intrinsics.checkNotNullParameter(context, "context");
             Intent intent = new Intent(ShareBroadcastReceiver.SHARE_SHEET_CLICK);
             intent.putExtra(ShareBroadcastReceiver.SHARE_SHEET_LOCATION, str);
-            Unit unit = Unit.f33282a;
+            Unit unit = Unit.f33298a;
             IntentSender intentSender = PendingIntent.getBroadcast(context, 0, intent, PendingIntentUtils.immutablePendingIntentFlag$default(PendingIntentUtils.INSTANCE, 0, 1, null)).getIntentSender();
             Intrinsics.checkNotNullExpressionValue(intentSender, "getIntentSender(...)");
             return intentSender;

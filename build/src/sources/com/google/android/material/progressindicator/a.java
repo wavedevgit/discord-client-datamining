@@ -18,7 +18,7 @@ import yg.k;
 public abstract class a extends ProgressBar {
 
     /* renamed from: z  reason: collision with root package name */
-    static final int f16232z = yg.j.f54521x;
+    static final int f16232z = yg.j.f54537x;
 
     /* renamed from: d  reason: collision with root package name */
     com.google.android.material.progressindicator.b f16233d;
@@ -434,7 +434,7 @@ public abstract class a extends ProgressBar {
 
     public void setIndicatorColor(int... iArr) {
         if (iArr.length == 0) {
-            iArr = new int[]{eh.a.b(getContext(), yg.b.f54351l, -1)};
+            iArr = new int[]{eh.a.b(getContext(), yg.b.f54367l, -1)};
         }
         if (!Arrays.equals(getIndicatorColor(), iArr)) {
             this.f16233d.f16253c = iArr;

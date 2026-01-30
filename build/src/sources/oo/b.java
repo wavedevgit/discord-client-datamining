@@ -11,25 +11,25 @@ import mo.g2;
 public final class b implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final View f44603a;
+    private final View f44619a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final View f44604b;
+    public final View f44620b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final FrameLayout f44605c;
+    public final FrameLayout f44621c;
 
     private b(View view, View view2, FrameLayout frameLayout) {
-        this.f44603a = view;
-        this.f44604b = view2;
-        this.f44605c = frameLayout;
+        this.f44619a = view;
+        this.f44620b = view2;
+        this.f44621c = frameLayout;
     }
 
     public static b a(View view) {
-        int i10 = f2.f39405g;
+        int i10 = f2.f39421g;
         View a10 = e4.a.a(view, i10);
         if (a10 != null) {
-            i10 = f2.f39408j;
+            i10 = f2.f39424j;
             FrameLayout frameLayout = (FrameLayout) e4.a.a(view, i10);
             if (frameLayout != null) {
                 return new b(view, a10, frameLayout);
@@ -40,7 +40,7 @@ public final class b implements ViewBinding {
 
     public static b b(LayoutInflater layoutInflater, ViewGroup viewGroup) {
         if (viewGroup != null) {
-            layoutInflater.inflate(g2.f39435b, viewGroup);
+            layoutInflater.inflate(g2.f39451b, viewGroup);
             return a(viewGroup);
         }
         throw new NullPointerException("parent");
@@ -48,6 +48,6 @@ public final class b implements ViewBinding {
 
     @Override // androidx.viewbinding.ViewBinding
     public View getRoot() {
-        return this.f44603a;
+        return this.f44619a;
     }
 }

@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
     var0 = function(arg0) { // Original name: RobloxIcon, environment: var1
-        _fun110171: for (var _fun110171_ip = 0;;) switch (_fun110171_ip) {
+        _fun110433: for (var _fun110433_ip = 0;;) switch (_fun110433_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.theme;
@@ -33,8 +33,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var2.bind(var5)(var1);
                 var6 = 'white';
                 if (!var0) {
-                    _fun110171_ip = 100;
-                    continue _fun110171
+                    _fun110433_ip = 100;
+                    continue _fun110433
                 }
             case 96:
                 var6 = 'black';
@@ -47,13 +47,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.makeSource;
                 var5 = var5.icon;
                 if (var0) {
-                    _fun110171_ip = 142;
-                    continue _fun110171
+                    _fun110433_ip = 142;
+                    continue _fun110433
                 }
             case 134:
                 var0 = var5.lightPNG;
-                _fun110171_ip = 148;
-                continue _fun110171;
+                _fun110433_ip = 148;
+                continue _fun110433;
             case 142:
                 var0 = var5.darkPNG;
             case 148:
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot16 = var0;
     var0 = function(arg0) { // Original name: UnionIcon, environment: var1
-        _fun110172: for (var _fun110172_ip = 0;;) switch (_fun110172_ip) {
+        _fun110434: for (var _fun110434_ip = 0;;) switch (_fun110434_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.theme;
@@ -106,8 +106,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.bind(var1)(var2);
                 var15 = 'black';
                 if (!var0) {
-                    _fun110172_ip = 56;
-                    continue _fun110172
+                    _fun110434_ip = 56;
+                    continue _fun110434
                 }
             case 52:
                 var15 = 'white';
@@ -384,7 +384,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var0 = var0.bind(var3)();
         var9 = var0.bottom;
         var15 = function() { // Original name: handleCancel, environment: var18
-            _fun110176: for (var _fun110176_ip = 0;;) switch (_fun110176_ip) {
+            _fun110438: for (var _fun110438_ip = 0;;) switch (_fun110438_ip) {
                 case 0:
                     var3 = _closure1_slot1;
                     var2 = _closure1_slot2;
@@ -397,8 +397,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = _closure2_slot0;
                     var3 = null;
                     if (!(var3 != var4)) {
-                        _fun110176_ip = 67;
-                        continue _fun110176
+                        _fun110438_ip = 67;
+                        continue _fun110438
                     }
                 case 48:
                     var2 = _closure2_slot0;
@@ -586,7 +586,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var21 = 'lg';
         var11.size = var21;
         var18 = function() { // Original name: onPress, environment: var18
-            _fun110178: for (var _fun110178_ip = 0;;) switch (_fun110178_ip) {
+            _fun110440: for (var _fun110440_ip = 0;;) switch (_fun110440_ip) {
                 case 0:
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
@@ -599,8 +599,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = _closure2_slot0;
                     var2 = null;
                     if (!(var2 != var3)) {
-                        _fun110178_ip = 67;
-                        continue _fun110178
+                        _fun110440_ip = 67;
+                        continue _fun110440
                     }
                 case 48:
                     var2 = _closure2_slot0;
@@ -671,7 +671,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var1 = function() { // Original name: useShouldShowRobloxConnectionCoachmark, environment: var1
-        _fun110179: for (var _fun110179_ip = 0;;) switch (_fun110179_ip) {
+        _fun110441: for (var _fun110441_ip = 0;;) switch (_fun110441_ip) {
             case 0:
                 var7 = _closure1_slot0;
                 var8 = _closure1_slot2;
@@ -750,20 +750,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5[0] = var4;
                 var5[1] = var2;
                 var4 = function() { // Environment: var3
-                    _fun110183: for (var _fun110183_ip = 0;;) switch (_fun110183_ip) {
+                    _fun110445: for (var _fun110445_ip = 0;;) switch (_fun110445_ip) {
                         case 0:
                             var1 = _closure2_slot0;
                             if (!var1) {
-                                _fun110183_ip = 17;
-                                continue _fun110183
+                                _fun110445_ip = 17;
+                                continue _fun110445
                             }
                         case 10:
                             var2 = _closure2_slot1;
                             var1 = !var2;
                         case 17:
                             if (!var1) {
-                                _fun110183_ip = 66;
-                                continue _fun110183
+                                _fun110445_ip = 66;
+                                continue _fun110445
                             }
                         case 20:
                             var1 = _closure2_slot2;
@@ -787,12 +787,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(1);
                 var4[0] = var1;
                 var3 = function() { // Environment: var3
-                    _fun110184: for (var _fun110184_ip = 0;;) switch (_fun110184_ip) {
+                    _fun110446: for (var _fun110446_ip = 0;;) switch (_fun110446_ip) {
                         case 0:
                             var0 = _closure2_slot3;
                             if (!var0) {
-                                _fun110184_ip = 88;
-                                continue _fun110184
+                                _fun110446_ip = 88;
+                                continue _fun110446
                             }
                         case 10:
                             var5 = _closure1_slot0;
@@ -820,15 +820,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var5.bind(var6)(var3, var4);
                 var0 = !var0;
                 if (!var0) {
-                    _fun110179_ip = 232;
-                    continue _fun110179
+                    _fun110441_ip = 232;
+                    continue _fun110441
                 }
             case 229:
                 var0 = var2;
             case 232:
                 if (!var0) {
-                    _fun110179_ip = 238;
-                    continue _fun110179
+                    _fun110441_ip = 238;
+                    continue _fun110441
                 }
             case 235:
                 var0 = !var1;
@@ -838,4 +838,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useShouldShowRobloxConnectionCoachmark = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 4476, 1613, 12470, 660, 1369, 33, 1297, 671, 3118, 1568, 3237, 4887, 5167, 5165, 4033, 3895, 1234, 4037, 9026, 5275, 5880, 3116, 4352, 1417, 4039, 5417, 566, 5409, 12471, 4478, 3171, 1358, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 4482, 1613, 12494, 660, 1369, 33, 1297, 671, 3118, 1568, 3237, 4893, 5173, 5171, 4039, 3901, 1234, 4043, 9030, 5279, 5883, 3116, 4358, 1417, 4045, 5421, 566, 5413, 12495, 4484, 3171, 1358, 2]);

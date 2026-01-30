@@ -4,17 +4,17 @@ package net.time4j;
 public final class b1 extends net.time4j.a {
 
     /* renamed from: q  reason: collision with root package name */
-    private static final jt.m0 f40395q = new c();
+    private static final jt.m0 f40411q = new c();
 
     /* renamed from: r  reason: collision with root package name */
-    static final b1 f40396r = new b1("YEAR_OF_WEEKDATE");
+    static final b1 f40412r = new b1("YEAR_OF_WEEKDATE");
     private static final long serialVersionUID = -6907291758376370420L;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient o f40397o;
+    private final transient o f40413o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final transient o f40398p;
+    private final transient o f40414p;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -23,14 +23,14 @@ public final class b1 extends net.time4j.a {
         }
 
         private jt.p b() {
-            return a1.f40342x.n();
+            return a1.f40358x.n();
         }
 
         private static f0 m(f0 f0Var, int i10) {
             int i11;
             int N = b1.N(i10);
             int Q = b1.Q(f0Var);
-            long l10 = jt.a0.UNIX.l(gt.b.j(i10, 1, 1), jt.a0.MODIFIED_JULIAN_DATE) + (N - 1) + ((Q - 1) * 7) + (f0Var.A0().e(a1.f40342x) - 1);
+            long l10 = jt.a0.UNIX.l(gt.b.j(i10, 1, 1), jt.a0.MODIFIED_JULIAN_DATE) + (N - 1) + ((Q - 1) * 7) + (f0Var.A0().e(a1.f40358x) - 1);
             if (Q == 53) {
                 int N2 = b1.N(i10 + 1);
                 if (gt.b.e(i10)) {
@@ -60,19 +60,19 @@ public final class b1 extends net.time4j.a {
         @Override // jt.z
         /* renamed from: e */
         public Integer j(jt.q qVar) {
-            return b1.f40396r.e();
+            return b1.f40412r.e();
         }
 
         @Override // jt.z
         /* renamed from: f */
         public Integer p(jt.q qVar) {
-            return b1.f40396r.A();
+            return b1.f40412r.A();
         }
 
         @Override // jt.z
         /* renamed from: g */
         public Integer x(jt.q qVar) {
-            f0 f0Var = (f0) qVar.p(f0.f40572y);
+            f0 f0Var = (f0) qVar.p(f0.f40588y);
             int f10 = f0Var.f();
             int B0 = f0Var.B0();
             int O = b1.O(f0Var, 0);
@@ -100,7 +100,7 @@ public final class b1 extends net.time4j.a {
         /* renamed from: n */
         public jt.q w(jt.q qVar, Integer num, boolean z10) {
             if (num != null) {
-                jt.p pVar = f0.f40572y;
+                jt.p pVar = f0.f40588y;
                 return qVar.E(pVar, m((f0) qVar.p(pVar), num.intValue()));
             }
             throw new IllegalArgumentException("Missing element value.");
@@ -118,13 +118,13 @@ public final class b1 extends net.time4j.a {
             if (j10 == 0) {
                 return qVar;
             }
-            int g10 = gt.c.g(gt.c.f(((Integer) qVar.p(b1.f40396r)).intValue(), j10));
-            jt.p pVar = f0.f40572y;
+            int g10 = gt.c.g(gt.c.f(((Integer) qVar.p(b1.f40412r)).intValue(), j10));
+            jt.p pVar = f0.f40588y;
             f0 f0Var = (f0) qVar.p(pVar);
             int E0 = f0Var.E0();
             y0 A0 = f0Var.A0();
             if (E0 == 53) {
-                E0 = ((Integer) f0.J0(g10, 26, A0).i(a1.f40342x.n())).intValue();
+                E0 = ((Integer) f0.J0(g10, 26, A0).i(a1.f40358x.n())).intValue();
             }
             return qVar.E(pVar, f0.J0(g10, E0, A0));
         }
@@ -132,10 +132,10 @@ public final class b1 extends net.time4j.a {
         @Override // jt.m0
         /* renamed from: d */
         public long a(jt.q qVar, jt.q qVar2) {
-            jt.p pVar = f0.f40572y;
+            jt.p pVar = f0.f40588y;
             f0 f0Var = (f0) qVar.p(pVar);
             f0 f0Var2 = (f0) qVar2.p(pVar);
-            b1 b1Var = b1.f40396r;
+            b1 b1Var = b1.f40412r;
             long intValue = ((Integer) f0Var2.p(b1Var)).intValue() - ((Integer) f0Var.p(b1Var)).intValue();
             int i10 = (intValue > 0L ? 1 : (intValue == 0L ? 0 : -1));
             if (i10 != 0) {
@@ -157,7 +157,7 @@ public final class b1 extends net.time4j.a {
                     }
                     int i12 = (intValue > 0L ? 1 : (intValue == 0L ? 0 : -1));
                     if (i12 != 0 && d10 == d11) {
-                        jt.p pVar2 = g0.f40606z;
+                        jt.p pVar2 = g0.f40622z;
                         if (qVar.o(pVar2) && qVar2.o(pVar2)) {
                             g0 g0Var = (g0) qVar.p(pVar2);
                             g0 g0Var2 = (g0) qVar2.p(pVar2);
@@ -184,10 +184,10 @@ public final class b1 extends net.time4j.a {
     public static class d extends o {
 
         /* renamed from: i  reason: collision with root package name */
-        private final long f40399i;
+        private final long f40415i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final jt.v f40400o;
+        private final jt.v f40416o;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
         class a implements jt.v {
@@ -197,27 +197,27 @@ public final class b1 extends net.time4j.a {
             @Override // jt.v
             /* renamed from: a */
             public i0 apply(i0 i0Var) {
-                return (i0) b1.R().b(i0Var, d.this.f40399i);
+                return (i0) b1.R().b(i0Var, d.this.f40415i);
             }
         }
 
         @Override // jt.v
         /* renamed from: c */
         public f0 apply(f0 f0Var) {
-            return (f0) b1.R().b(f0Var, this.f40399i);
+            return (f0) b1.R().b(f0Var, this.f40415i);
         }
 
         private d(long j10) {
-            super(b1.f40396r, 8);
-            this.f40399i = j10;
-            this.f40400o = new a();
+            super(b1.f40412r, 8);
+            this.f40415i = j10;
+            this.f40416o = new a();
         }
     }
 
     private b1(String str) {
         super(str);
-        this.f40397o = new d(-1L);
-        this.f40398p = new d(1L);
+        this.f40413o = new d(-1L);
+        this.f40414p = new d(1L);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -228,7 +228,7 @@ public final class b1 extends net.time4j.a {
     /* JADX INFO: Access modifiers changed from: private */
     public static int N(int i10) {
         y0 h10 = y0.h(gt.b.c(i10, 1, 1));
-        a1 a1Var = a1.f40342x;
+        a1 a1Var = a1.f40358x;
         int e10 = h10.e(a1Var);
         if (e10 <= 8 - a1Var.g()) {
             return 2 - e10;
@@ -265,11 +265,11 @@ public final class b1 extends net.time4j.a {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static jt.m0 R() {
-        return f40395q;
+        return f40411q;
     }
 
     private Object readResolve() {
-        return f40396r;
+        return f40412r;
     }
 
     @Override // jt.p
@@ -285,13 +285,13 @@ public final class b1 extends net.time4j.a {
     @Override // jt.p
     /* renamed from: L */
     public Integer e() {
-        return f0.f40565r;
+        return f0.f40581r;
     }
 
     @Override // jt.p
     /* renamed from: M */
     public Integer A() {
-        return f0.f40564q;
+        return f0.f40580q;
     }
 
     @Override // jt.e, jt.p

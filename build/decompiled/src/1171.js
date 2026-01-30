@@ -10,50 +10,50 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var3.bind(var4)(var1, var0, var2);
     var0 = function(arg0) { // Original name: PrimitiveToString, environment: var0
-        _fun12769: for (var _fun12769_ip = 0;;) switch (_fun12769_ip) {
+        _fun12770: for (var _fun12770_ip = 0;;) switch (_fun12770_ip) {
             case 0:
                 var0 = arg0;
                 var1 = null;
                 if (!(var1 !== var0)) {
-                    _fun12769_ip = 125;
-                    continue _fun12769
+                    _fun12770_ip = 125;
+                    continue _fun12770
                 }
             case 9:
                 var2 = typeof var0;
                 var1 = 'string';
                 if (!(var1 !== var2)) {
-                    _fun12769_ip = 123;
-                    continue _fun12769
+                    _fun12770_ip = 123;
+                    continue _fun12770
                 }
             case 20:
                 var1 = 'boolean';
                 if (!(var1 !== var2)) {
-                    _fun12769_ip = 99;
-                    continue _fun12769
+                    _fun12770_ip = 99;
+                    continue _fun12770
                 }
             case 28:
                 var1 = 'number';
                 if (!(var1 !== var2)) {
-                    _fun12769_ip = 75;
-                    continue _fun12769
+                    _fun12770_ip = 75;
+                    continue _fun12770
                 }
             case 36:
                 var1 = 'bigint';
                 if (!(var1 !== var2)) {
-                    _fun12769_ip = 75;
-                    continue _fun12769
+                    _fun12770_ip = 75;
+                    continue _fun12770
                 }
             case 44:
                 var1 = 'undefined';
                 if (!(var1 !== var2)) {
-                    _fun12769_ip = 71;
-                    continue _fun12769
+                    _fun12770_ip = 71;
+                    continue _fun12770
                 }
             case 52:
                 var1 = 'symbol';
                 if (!(var1 === var2)) {
-                    _fun12769_ip = 123;
-                    continue _fun12769
+                    _fun12770_ip = 123;
+                    continue _fun12770
                 }
             case 60:
                 var1 = var0.toString;
@@ -74,8 +74,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var1 == var0;
                 var1 = 'False';
                 if (!var2) {
-                    _fun12769_ip = 121;
-                    continue _fun12769
+                    _fun12770_ip = 121;
+                    continue _fun12770
                 }
             case 115:
                 var1 = 'True';

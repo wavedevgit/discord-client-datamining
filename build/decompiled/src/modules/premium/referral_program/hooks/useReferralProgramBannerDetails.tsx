@@ -130,4 +130,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useReferralProgramBannerDetails = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1613, 6600, 566, 6913, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1613, 6603, 566, 6916, 2]);

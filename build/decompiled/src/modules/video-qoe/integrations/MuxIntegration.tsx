@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = 'mapDiscordToMuxMetadata';
         var0.key = var2;
         var2 = function(arg0, arg1) { // Original name: value, environment: var1
-            _fun82955: for (var _fun82955_ip = 0;;) switch (_fun82955_ip) {
+            _fun83001: for (var _fun83001_ip = 0;;) switch (_fun83001_ip) {
                 case 0:
                     var2 = arg0;
                     var4 = this;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var1.durationMs;
                     var3 = null;
                     if (!(var3 == var1)) {
-                        _fun82955_ip = 104;
-                        continue _fun82955
+                        _fun83001_ip = 104;
+                        continue _fun83001
                     }
                 case 80:
                     var5 = var2.contentMetadata;
@@ -82,8 +82,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var3 != var5;
                     var1 = 'Discord';
                     if (!var6) {
-                        _fun82955_ip = 188;
-                        continue _fun82955
+                        _fun83001_ip = 188;
+                        continue _fun83001
                     }
                 case 185:
                     var1 = var5;
@@ -104,8 +104,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var6 = var3 == var5;
                     var4 = undefined;
                     if (var6) {
-                        _fun82955_ip = 271;
-                        continue _fun82955
+                        _fun83001_ip = 271;
+                        continue _fun83001
                     }
                 case 266:
                     var4 = var5.userId;
@@ -115,8 +115,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var3 == var2;
                     var1 = undefined;
                     if (var3) {
-                        _fun82955_ip = 299;
-                        continue _fun82955
+                        _fun83001_ip = 299;
+                        continue _fun83001
                     }
                 case 291:
                     var1 = var2.userTier;
@@ -132,9 +132,9 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'getAppVersion';
         var0.key = var5;
         var5 = function() { // Original name: value, environment: var1
-            _fun82956: for (var _fun82956_ip = 0;;) switch (_fun82956_ip) {
+            _fun83002: for (var _fun83002_ip = 0;;) switch (_fun83002_ip) {
                 case 0:
-                    var0 = '5096';
+                    var0 = '5099';
                     return var0;
                 case 8:
                     CatchBlockStart(arg_register = 0);
@@ -148,7 +148,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'getBuildChannel';
         var0.key = var5;
         var1 = function() { // Original name: value, environment: var1
-            _fun82957: for (var _fun82957_ip = 0;;) switch (_fun82957_ip) {
+            _fun83003: for (var _fun83003_ip = 0;;) switch (_fun83003_ip) {
                 case 0:
                     var1 = undefined;
                     var3 = undefined;
@@ -161,8 +161,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var4 = var0 == var4;
                     var2 = undefined;
                     if (var4) {
-                        _fun82957_ip = 38;
-                        continue _fun82957
+                        _fun83003_ip = 38;
+                        continue _fun83003
                     }
                 case 32:
                     var2 = var3.RELEASE_CHANNEL;
@@ -171,8 +171,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var0 != var2;
                     var0 = 'stable';
                     if (!var2) {
-                        _fun82957_ip = 55;
-                        continue _fun82957
+                        _fun83003_ip = 55;
+                        continue _fun83003
                     }
                 case 52:
                     var0 = var1;

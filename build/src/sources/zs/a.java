@@ -11,35 +11,35 @@ import kotlinx.serialization.descriptors.SerialDescriptor;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f56071a;
+    private final String f56087a;
 
     /* renamed from: b  reason: collision with root package name */
-    private List f56072b;
+    private List f56088b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final List f56073c;
+    private final List f56089c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Set f56074d;
+    private final Set f56090d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f56075e;
+    private final List f56091e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final List f56076f;
+    private final List f56092f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final List f56077g;
+    private final List f56093g;
 
     public a(String serialName) {
         Intrinsics.checkNotNullParameter(serialName, "serialName");
-        this.f56071a = serialName;
-        this.f56072b = CollectionsKt.l();
-        this.f56073c = new ArrayList();
-        this.f56074d = new HashSet();
-        this.f56075e = new ArrayList();
-        this.f56076f = new ArrayList();
-        this.f56077g = new ArrayList();
+        this.f56087a = serialName;
+        this.f56088b = CollectionsKt.l();
+        this.f56089c = new ArrayList();
+        this.f56090d = new HashSet();
+        this.f56091e = new ArrayList();
+        this.f56092f = new ArrayList();
+        this.f56093g = new ArrayList();
     }
 
     public static /* synthetic */ void b(a aVar, String str, SerialDescriptor serialDescriptor, List list, boolean z10, int i10, Object obj) {
@@ -56,38 +56,38 @@ public final class a {
         Intrinsics.checkNotNullParameter(elementName, "elementName");
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
         Intrinsics.checkNotNullParameter(annotations, "annotations");
-        if (this.f56074d.add(elementName)) {
-            this.f56073c.add(elementName);
-            this.f56075e.add(descriptor);
-            this.f56076f.add(annotations);
-            this.f56077g.add(Boolean.valueOf(z10));
+        if (this.f56090d.add(elementName)) {
+            this.f56089c.add(elementName);
+            this.f56091e.add(descriptor);
+            this.f56092f.add(annotations);
+            this.f56093g.add(Boolean.valueOf(z10));
             return;
         }
-        throw new IllegalArgumentException(("Element with name '" + elementName + "' is already registered in " + this.f56071a).toString());
+        throw new IllegalArgumentException(("Element with name '" + elementName + "' is already registered in " + this.f56087a).toString());
     }
 
     public final List c() {
-        return this.f56072b;
+        return this.f56088b;
     }
 
     public final List d() {
-        return this.f56076f;
+        return this.f56092f;
     }
 
     public final List e() {
-        return this.f56075e;
+        return this.f56091e;
     }
 
     public final List f() {
-        return this.f56073c;
+        return this.f56089c;
     }
 
     public final List g() {
-        return this.f56077g;
+        return this.f56093g;
     }
 
     public final void h(List list) {
         Intrinsics.checkNotNullParameter(list, "<set-?>");
-        this.f56072b = list;
+        this.f56088b = list;
     }
 }

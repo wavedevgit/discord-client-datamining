@@ -10,14 +10,14 @@ import kotlinx.coroutines.CoroutineScope;
 public final class e extends k {
 
     /* renamed from: r  reason: collision with root package name */
-    private final kotlinx.coroutines.e f44719r;
+    private final kotlinx.coroutines.e f44735r;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f44720d;
+        int f44736d;
 
         a(Continuation continuation) {
             super(2, continuation);
@@ -31,7 +31,7 @@ public final class e extends k {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = or.b.f();
-            int i10 = this.f44720d;
+            int i10 = this.f44736d;
             try {
                 if (i10 != 0) {
                     if (i10 == 1) {
@@ -42,42 +42,42 @@ public final class e extends k {
                 } else {
                     kotlin.c.b(obj);
                     e eVar = e.this;
-                    this.f44720d = 1;
+                    this.f44736d = 1;
                     obj = eVar.o(this);
                     if (obj == f10) {
                         return f10;
                     }
                 }
-                n.c(e.this.f44719r, obj);
-                return Unit.f33282a;
+                n.c(e.this.f44735r, obj);
+                return Unit.f33298a;
             } catch (Throwable th2) {
-                n.d(e.this.f44719r, th2);
-                return Unit.f33282a;
+                n.d(e.this.f44735r, th2);
+                return Unit.f33298a;
             }
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
     public e(Continuation continuation) {
         super(continuation.getContext());
-        this.f44719r = new kotlinx.coroutines.e(or.b.c(continuation), 1);
+        this.f44735r = new kotlinx.coroutines.e(or.b.c(continuation), 1);
     }
 
     public final Object B() {
-        if (!this.f44719r.isCompleted()) {
-            gs.i.d(kotlinx.coroutines.i.a(getContext()), null, c0.f27147o, new a(null), 1, null);
-            return this.f44719r.B();
+        if (!this.f44735r.isCompleted()) {
+            gs.i.d(kotlinx.coroutines.i.a(getContext()), null, c0.f27163o, new a(null), 1, null);
+            return this.f44735r.B();
         }
-        return this.f44719r.B();
+        return this.f44735r.B();
     }
 
     public final void C(Throwable th2) {
-        kotlinx.coroutines.e eVar = this.f44719r;
-        Result.a aVar = Result.f33279e;
+        kotlinx.coroutines.e eVar = this.f44735r;
+        Result.a aVar = Result.f33295e;
         eVar.resumeWith(Result.b(kotlin.c.a(th2)));
     }
 }

@@ -9,30 +9,30 @@ import java.util.concurrent.Executor;
 public final class m0 extends Task {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f52608a = new Object();
+    private final Object f52624a = new Object();
 
     /* renamed from: b  reason: collision with root package name */
-    private final i0 f52609b = new i0();
+    private final i0 f52625b = new i0();
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f52610c;
+    private boolean f52626c;
 
     /* renamed from: d  reason: collision with root package name */
-    private volatile boolean f52611d;
+    private volatile boolean f52627d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Object f52612e;
+    private Object f52628e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Exception f52613f;
+    private Exception f52629f;
 
     private final void A() {
-        synchronized (this.f52608a) {
+        synchronized (this.f52624a) {
             try {
-                if (!this.f52610c) {
+                if (!this.f52626c) {
                     return;
                 }
-                this.f52609b.b(this);
+                this.f52625b.b(this);
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -40,18 +40,18 @@ public final class m0 extends Task {
     }
 
     private final void x() {
-        gf.q.o(this.f52610c, "Task is not yet complete");
+        gf.q.o(this.f52626c, "Task is not yet complete");
     }
 
     private final void y() {
-        if (!this.f52611d) {
+        if (!this.f52627d) {
             return;
         }
         throw new CancellationException("Task is already canceled.");
     }
 
     private final void z() {
-        if (!this.f52610c) {
+        if (!this.f52626c) {
             return;
         }
         throw d.a(this);
@@ -59,61 +59,61 @@ public final class m0 extends Task {
 
     @Override // com.google.android.gms.tasks.Task
     public final Task a(Executor executor, e eVar) {
-        this.f52609b.a(new y(executor, eVar));
+        this.f52625b.a(new y(executor, eVar));
         A();
         return this;
     }
 
     @Override // com.google.android.gms.tasks.Task
     public final Task addOnCompleteListener(OnCompleteListener onCompleteListener) {
-        this.f52609b.a(new a0(l.f52605a, onCompleteListener));
+        this.f52625b.a(new a0(l.f52621a, onCompleteListener));
         A();
         return this;
     }
 
     @Override // com.google.android.gms.tasks.Task
     public final Task b(e eVar) {
-        a(l.f52605a, eVar);
+        a(l.f52621a, eVar);
         return this;
     }
 
     @Override // com.google.android.gms.tasks.Task
     public final Task c(Executor executor, OnCompleteListener onCompleteListener) {
-        this.f52609b.a(new a0(executor, onCompleteListener));
+        this.f52625b.a(new a0(executor, onCompleteListener));
         A();
         return this;
     }
 
     @Override // com.google.android.gms.tasks.Task
     public final Task d(Executor executor, f fVar) {
-        this.f52609b.a(new c0(executor, fVar));
+        this.f52625b.a(new c0(executor, fVar));
         A();
         return this;
     }
 
     @Override // com.google.android.gms.tasks.Task
     public final Task e(f fVar) {
-        d(l.f52605a, fVar);
+        d(l.f52621a, fVar);
         return this;
     }
 
     @Override // com.google.android.gms.tasks.Task
     public final Task f(Executor executor, g gVar) {
-        this.f52609b.a(new e0(executor, gVar));
+        this.f52625b.a(new e0(executor, gVar));
         A();
         return this;
     }
 
     @Override // com.google.android.gms.tasks.Task
     public final Task g(g gVar) {
-        f(l.f52605a, gVar);
+        f(l.f52621a, gVar);
         return this;
     }
 
     @Override // com.google.android.gms.tasks.Task
     public final Task h(Executor executor, c cVar) {
         m0 m0Var = new m0();
-        this.f52609b.a(new u(executor, cVar, m0Var));
+        this.f52625b.a(new u(executor, cVar, m0Var));
         A();
         return m0Var;
     }
@@ -121,21 +121,21 @@ public final class m0 extends Task {
     @Override // com.google.android.gms.tasks.Task
     public final Task i(Executor executor, c cVar) {
         m0 m0Var = new m0();
-        this.f52609b.a(new w(executor, cVar, m0Var));
+        this.f52625b.a(new w(executor, cVar, m0Var));
         A();
         return m0Var;
     }
 
     @Override // com.google.android.gms.tasks.Task
     public final Task j(c cVar) {
-        return i(l.f52605a, cVar);
+        return i(l.f52621a, cVar);
     }
 
     @Override // com.google.android.gms.tasks.Task
     public final Exception k() {
         Exception exc;
-        synchronized (this.f52608a) {
-            exc = this.f52613f;
+        synchronized (this.f52624a) {
+            exc = this.f52629f;
         }
         return exc;
     }
@@ -143,13 +143,13 @@ public final class m0 extends Task {
     @Override // com.google.android.gms.tasks.Task
     public final Object l() {
         Object obj;
-        synchronized (this.f52608a) {
+        synchronized (this.f52624a) {
             try {
                 x();
                 y();
-                Exception exc = this.f52613f;
+                Exception exc = this.f52629f;
                 if (exc == null) {
-                    obj = this.f52612e;
+                    obj = this.f52628e;
                 } else {
                     throw new i(exc);
                 }
@@ -163,19 +163,19 @@ public final class m0 extends Task {
     @Override // com.google.android.gms.tasks.Task
     public final Object m(Class cls) {
         Object obj;
-        synchronized (this.f52608a) {
+        synchronized (this.f52624a) {
             try {
                 x();
                 y();
-                if (!cls.isInstance(this.f52613f)) {
-                    Exception exc = this.f52613f;
+                if (!cls.isInstance(this.f52629f)) {
+                    Exception exc = this.f52629f;
                     if (exc == null) {
-                        obj = this.f52612e;
+                        obj = this.f52628e;
                     } else {
                         throw new i(exc);
                     }
                 } else {
-                    throw ((Throwable) cls.cast(this.f52613f));
+                    throw ((Throwable) cls.cast(this.f52629f));
                 }
             } catch (Throwable th2) {
                 throw th2;
@@ -186,14 +186,14 @@ public final class m0 extends Task {
 
     @Override // com.google.android.gms.tasks.Task
     public final boolean n() {
-        return this.f52611d;
+        return this.f52627d;
     }
 
     @Override // com.google.android.gms.tasks.Task
     public final boolean o() {
         boolean z10;
-        synchronized (this.f52608a) {
-            z10 = this.f52610c;
+        synchronized (this.f52624a) {
+            z10 = this.f52626c;
         }
         return z10;
     }
@@ -201,10 +201,10 @@ public final class m0 extends Task {
     @Override // com.google.android.gms.tasks.Task
     public final boolean p() {
         boolean z10;
-        synchronized (this.f52608a) {
+        synchronized (this.f52624a) {
             try {
                 z10 = false;
-                if (this.f52610c && !this.f52611d && this.f52613f == null) {
+                if (this.f52626c && !this.f52627d && this.f52629f == null) {
                     z10 = true;
                 }
             } finally {
@@ -216,48 +216,48 @@ public final class m0 extends Task {
     @Override // com.google.android.gms.tasks.Task
     public final Task q(Executor executor, j jVar) {
         m0 m0Var = new m0();
-        this.f52609b.a(new g0(executor, jVar, m0Var));
+        this.f52625b.a(new g0(executor, jVar, m0Var));
         A();
         return m0Var;
     }
 
     @Override // com.google.android.gms.tasks.Task
     public final Task r(j jVar) {
-        Executor executor = l.f52605a;
+        Executor executor = l.f52621a;
         m0 m0Var = new m0();
-        this.f52609b.a(new g0(executor, jVar, m0Var));
+        this.f52625b.a(new g0(executor, jVar, m0Var));
         A();
         return m0Var;
     }
 
     public final void s(Exception exc) {
         gf.q.m(exc, "Exception must not be null");
-        synchronized (this.f52608a) {
+        synchronized (this.f52624a) {
             z();
-            this.f52610c = true;
-            this.f52613f = exc;
+            this.f52626c = true;
+            this.f52629f = exc;
         }
-        this.f52609b.b(this);
+        this.f52625b.b(this);
     }
 
     public final void t(Object obj) {
-        synchronized (this.f52608a) {
+        synchronized (this.f52624a) {
             z();
-            this.f52610c = true;
-            this.f52612e = obj;
+            this.f52626c = true;
+            this.f52628e = obj;
         }
-        this.f52609b.b(this);
+        this.f52625b.b(this);
     }
 
     public final boolean u() {
-        synchronized (this.f52608a) {
+        synchronized (this.f52624a) {
             try {
-                if (this.f52610c) {
+                if (this.f52626c) {
                     return false;
                 }
-                this.f52610c = true;
-                this.f52611d = true;
-                this.f52609b.b(this);
+                this.f52626c = true;
+                this.f52627d = true;
+                this.f52625b.b(this);
                 return true;
             } catch (Throwable th2) {
                 throw th2;
@@ -267,14 +267,14 @@ public final class m0 extends Task {
 
     public final boolean v(Exception exc) {
         gf.q.m(exc, "Exception must not be null");
-        synchronized (this.f52608a) {
+        synchronized (this.f52624a) {
             try {
-                if (this.f52610c) {
+                if (this.f52626c) {
                     return false;
                 }
-                this.f52610c = true;
-                this.f52613f = exc;
-                this.f52609b.b(this);
+                this.f52626c = true;
+                this.f52629f = exc;
+                this.f52625b.b(this);
                 return true;
             } catch (Throwable th2) {
                 throw th2;
@@ -283,14 +283,14 @@ public final class m0 extends Task {
     }
 
     public final boolean w(Object obj) {
-        synchronized (this.f52608a) {
+        synchronized (this.f52624a) {
             try {
-                if (this.f52610c) {
+                if (this.f52626c) {
                     return false;
                 }
-                this.f52610c = true;
-                this.f52612e = obj;
-                this.f52609b.b(this);
+                this.f52626c = true;
+                this.f52628e = obj;
+                this.f52625b.b(this);
                 return true;
             } catch (Throwable th2) {
                 throw th2;

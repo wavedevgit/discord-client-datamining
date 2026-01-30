@@ -6,16 +6,16 @@ import kotlin.jvm.functions.Function0;
 public class l implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final DescriptorRendererImpl f35358d;
+    private final DescriptorRendererImpl f35374d;
 
     public l(DescriptorRendererImpl descriptorRendererImpl) {
-        this.f35358d = descriptorRendererImpl;
+        this.f35374d = descriptorRendererImpl;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         DescriptorRendererImpl H;
-        H = DescriptorRendererImpl.H(this.f35358d);
+        H = DescriptorRendererImpl.H(this.f35374d);
         return H;
     }
 }

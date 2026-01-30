@@ -103,7 +103,7 @@ public final class p implements vm.k {
         }
 
         private a() {
-            k.a aVar = vm.k.f51267a;
+            k.a aVar = vm.k.f51283a;
             this.f21013a = new z(Reflection.getOrCreateKotlinClass(i.class), C0268a.f21014d, b.f21015d);
         }
     }
@@ -117,12 +117,12 @@ public final class p implements vm.k {
         if (this.f21012c != null) {
             return;
         }
-        final Dialog dialog = new Dialog(context, yg.j.f54501d);
+        final Dialog dialog = new Dialog(context, yg.j.f54517d);
         dp.a c10 = dp.a.c(LayoutInflater.from(dialog.getContext()));
         Intrinsics.checkNotNullExpressionValue(c10, "inflate(...)");
         dialog.setContentView(c10.getRoot());
         c10.f22275c.setTitle("Sandbox options");
-        c10.f22275c.setNavigationIcon(jp.l.f32326u);
+        c10.f22275c.setNavigationIcon(jp.l.f32342u);
         c10.f22275c.setNavigationOnClickListener(new View.OnClickListener() { // from class: cp.m
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
@@ -191,7 +191,7 @@ public final class p implements vm.k {
             CoordinatorLayout.f fVar = (CoordinatorLayout.f) layoutParams;
             ((ViewGroup.MarginLayoutParams) fVar).bottomMargin = (int) (g10.f3153d + jp.h.c(16.0d));
             floatingActionButton.setLayoutParams(fVar);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         throw new NullPointerException("null cannot be cast to non-null type androidx.coordinatorlayout.widget.CoordinatorLayout.LayoutParams");
     }

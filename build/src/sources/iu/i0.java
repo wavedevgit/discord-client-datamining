@@ -9,18 +9,18 @@ import okio.ByteString;
 public final class i0 extends ByteString {
 
     /* renamed from: q  reason: collision with root package name */
-    private final transient byte[][] f31266q;
+    private final transient byte[][] f31282q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final transient int[] f31267r;
+    private final transient int[] f31283r;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public i0(byte[][] segments, int[] directory) {
-        super(ByteString.f44364p.k());
+        super(ByteString.f44380p.k());
         Intrinsics.checkNotNullParameter(segments, "segments");
         Intrinsics.checkNotNullParameter(directory, "directory");
-        this.f31266q = segments;
-        this.f31267r = directory;
+        this.f31282q = segments;
+        this.f31283r = directory;
     }
 
     private final ByteString R() {
@@ -92,7 +92,7 @@ public final class i0 extends ByteString {
                         return this;
                     }
                     if (i10 == e10) {
-                        return ByteString.f44364p;
+                        return ByteString.f44380p;
                     }
                     int b10 = ju.e.b(this, i10);
                     int b11 = ju.e.b(this, e10 - 1);
@@ -182,14 +182,14 @@ public final class i0 extends ByteString {
             int min = Math.min(i13, (P()[b10] - i12) + i12) - i10;
             int i15 = i14 + (i10 - i12);
             g0 g0Var = new g0(Q()[b10], i15, i15 + min, true, false);
-            g0 g0Var2 = buffer.f44352d;
+            g0 g0Var2 = buffer.f44368d;
             if (g0Var2 == null) {
-                g0Var.f31255g = g0Var;
-                g0Var.f31254f = g0Var;
-                buffer.f44352d = g0Var;
+                g0Var.f31271g = g0Var;
+                g0Var.f31270f = g0Var;
+                buffer.f44368d = g0Var;
             } else {
                 Intrinsics.checkNotNull(g0Var2);
-                g0 g0Var3 = g0Var2.f31255g;
+                g0 g0Var3 = g0Var2.f31271g;
                 Intrinsics.checkNotNull(g0Var3);
                 g0Var3.c(g0Var);
             }
@@ -200,11 +200,11 @@ public final class i0 extends ByteString {
     }
 
     public final int[] P() {
-        return this.f31267r;
+        return this.f31283r;
     }
 
     public final byte[][] Q() {
-        return this.f31266q;
+        return this.f31282q;
     }
 
     @Override // okio.ByteString

@@ -7,34 +7,34 @@ import kotlin.enums.EnumEntries;
 public final class d0 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final d0 f55893d = new d0("Camera", 0);
+    public static final d0 f55909d = new d0("Camera", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final d0 f55894e = new d0("RecordAudio", 1);
+    public static final d0 f55910e = new d0("RecordAudio", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final d0 f55895i = new d0("RoughLocation", 2);
+    public static final d0 f55911i = new d0("RoughLocation", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    public static final d0 f55896o = new d0("PreciseLocation", 3);
+    public static final d0 f55912o = new d0("PreciseLocation", 3);
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ d0[] f55897p;
+    private static final /* synthetic */ d0[] f55913p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f55898q;
+    private static final /* synthetic */ EnumEntries f55914q;
 
     static {
         d0[] a10 = a();
-        f55897p = a10;
-        f55898q = pr.a.a(a10);
+        f55913p = a10;
+        f55914q = pr.a.a(a10);
     }
 
     private d0(String str, int i10) {
     }
 
     private static final /* synthetic */ d0[] a() {
-        return new d0[]{f55893d, f55894e, f55895i, f55896o};
+        return new d0[]{f55909d, f55910e, f55911i, f55912o};
     }
 
     public static d0 valueOf(String str) {
@@ -42,6 +42,6 @@ public final class d0 {
     }
 
     public static d0[] values() {
-        return (d0[]) f55897p.clone();
+        return (d0[]) f55913p.clone();
     }
 }

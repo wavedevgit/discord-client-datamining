@@ -5,5 +5,5 @@ import android.view.animation.LinearInterpolator;
 public abstract class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final LinearInterpolator f27035a = new LinearInterpolator();
+    private static final LinearInterpolator f27051a = new LinearInterpolator();
 }

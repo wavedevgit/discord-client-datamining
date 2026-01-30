@@ -26,31 +26,31 @@ import w3.b;
 public class a extends androidx.core.content.pm.a {
 
     /* renamed from: h  reason: collision with root package name */
-    private static final Object f52170h = new Object();
+    private static final Object f52186h = new Object();
 
     /* renamed from: i  reason: collision with root package name */
-    private static volatile a f52171i;
+    private static volatile a f52187i;
 
     /* renamed from: a  reason: collision with root package name */
-    final Context f52172a;
+    final Context f52188a;
 
     /* renamed from: b  reason: collision with root package name */
-    final Map f52173b = new u0.a();
+    final Map f52189b = new u0.a();
 
     /* renamed from: c  reason: collision with root package name */
-    final Map f52174c = new u0.a();
+    final Map f52190c = new u0.a();
 
     /* renamed from: d  reason: collision with root package name */
-    final ExecutorService f52175d;
+    final ExecutorService f52191d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ExecutorService f52176e;
+    private final ExecutorService f52192e;
 
     /* renamed from: f  reason: collision with root package name */
-    final File f52177f;
+    final File f52193f;
 
     /* renamed from: g  reason: collision with root package name */
-    final File f52178g;
+    final File f52194g;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: w3.a$a  reason: collision with other inner class name */
@@ -58,16 +58,16 @@ public class a extends androidx.core.content.pm.a {
     public class RunnableC0715a implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ List f52179d;
+        final /* synthetic */ List f52195d;
 
         RunnableC0715a(List list) {
-            this.f52179d = list;
+            this.f52195d = list;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            a.this.h(this.f52179d);
-            w3.b.f(this.f52179d, a.this.f52177f);
+            a.this.h(this.f52195d);
+            w3.b.f(this.f52195d, a.this.f52193f);
         }
     }
 
@@ -76,23 +76,23 @@ public class a extends androidx.core.content.pm.a {
     public class b implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ ListenableFuture f52181d;
+        final /* synthetic */ ListenableFuture f52197d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ androidx.concurrent.futures.d f52182e;
+        final /* synthetic */ androidx.concurrent.futures.d f52198e;
 
         b(ListenableFuture listenableFuture, androidx.concurrent.futures.d dVar) {
-            this.f52181d = listenableFuture;
-            this.f52182e = dVar;
+            this.f52197d = listenableFuture;
+            this.f52198e = dVar;
         }
 
         @Override // java.lang.Runnable
         public void run() {
             try {
-                this.f52181d.get();
-                this.f52182e.s(null);
+                this.f52197d.get();
+                this.f52198e.s(null);
             } catch (Exception e10) {
-                this.f52182e.t(e10);
+                this.f52198e.t(e10);
             }
         }
     }
@@ -101,20 +101,20 @@ public class a extends androidx.core.content.pm.a {
     class c implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ File f52184d;
+        final /* synthetic */ File f52200d;
 
         c(File file) {
-            this.f52184d = file;
+            this.f52200d = file;
         }
 
         @Override // java.lang.Runnable
         public void run() {
             try {
-                a.i(this.f52184d);
-                a.i(a.this.f52178g);
+                a.i(this.f52200d);
+                a.i(a.this.f52194g);
                 a aVar = a.this;
-                aVar.f52173b.putAll(w3.b.b(aVar.f52177f, aVar.f52172a));
-                a.this.h(new ArrayList(a.this.f52173b.values()));
+                aVar.f52189b.putAll(w3.b.b(aVar.f52193f, aVar.f52188a));
+                a.this.h(new ArrayList(a.this.f52189b.values()));
             } catch (Exception e10) {
                 Log.w("ShortcutInfoCompatSaver", "ShortcutInfoCompatSaver started with an exceptions ", e10);
             }
@@ -126,26 +126,26 @@ public class a extends androidx.core.content.pm.a {
     public class d implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ List f52186d;
+        final /* synthetic */ List f52202d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ androidx.concurrent.futures.d f52187e;
+        final /* synthetic */ androidx.concurrent.futures.d f52203e;
 
         d(List list, androidx.concurrent.futures.d dVar) {
-            this.f52186d = list;
-            this.f52187e = dVar;
+            this.f52202d = list;
+            this.f52203e = dVar;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            for (String str : this.f52186d) {
-                a.this.f52173b.remove(str);
-                ListenableFuture listenableFuture = (ListenableFuture) a.this.f52174c.remove(str);
+            for (String str : this.f52202d) {
+                a.this.f52189b.remove(str);
+                ListenableFuture listenableFuture = (ListenableFuture) a.this.f52190c.remove(str);
                 if (listenableFuture != null) {
                     listenableFuture.cancel(false);
                 }
             }
-            a.this.p(this.f52187e);
+            a.this.p(this.f52203e);
         }
     }
 
@@ -154,20 +154,20 @@ public class a extends androidx.core.content.pm.a {
     public class e implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ androidx.concurrent.futures.d f52189d;
+        final /* synthetic */ androidx.concurrent.futures.d f52205d;
 
         e(androidx.concurrent.futures.d dVar) {
-            this.f52189d = dVar;
+            this.f52205d = dVar;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            a.this.f52173b.clear();
-            for (ListenableFuture listenableFuture : a.this.f52174c.values()) {
+            a.this.f52189b.clear();
+            for (ListenableFuture listenableFuture : a.this.f52190c.values()) {
                 listenableFuture.cancel(false);
             }
-            a.this.f52174c.clear();
-            a.this.p(this.f52189d);
+            a.this.f52190c.clear();
+            a.this.p(this.f52205d);
         }
     }
 
@@ -180,8 +180,8 @@ public class a extends androidx.core.content.pm.a {
         /* renamed from: a */
         public ArrayList call() {
             ArrayList arrayList = new ArrayList();
-            for (b.a aVar : a.this.f52173b.values()) {
-                arrayList.add(new ShortcutInfoCompat.b(aVar.f52210c).a());
+            for (b.a aVar : a.this.f52189b.values()) {
+                arrayList.add(new ShortcutInfoCompat.b(aVar.f52226c).a());
             }
             return arrayList;
         }
@@ -191,16 +191,16 @@ public class a extends androidx.core.content.pm.a {
     class g implements Callable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ String f52192d;
+        final /* synthetic */ String f52208d;
 
         g(String str) {
-            this.f52192d = str;
+            this.f52208d = str;
         }
 
         @Override // java.util.concurrent.Callable
         /* renamed from: a */
         public b.a call() {
-            return (b.a) a.this.f52173b.get(this.f52192d);
+            return (b.a) a.this.f52189b.get(this.f52208d);
         }
     }
 
@@ -208,16 +208,16 @@ public class a extends androidx.core.content.pm.a {
     class h implements Callable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ b.a f52194d;
+        final /* synthetic */ b.a f52210d;
 
         h(b.a aVar) {
-            this.f52194d = aVar;
+            this.f52210d = aVar;
         }
 
         @Override // java.util.concurrent.Callable
         /* renamed from: a */
         public Bitmap call() {
-            return BitmapFactory.decodeFile(this.f52194d.f52209b);
+            return BitmapFactory.decodeFile(this.f52210d.f52225b);
         }
     }
 
@@ -226,71 +226,71 @@ public class a extends androidx.core.content.pm.a {
     public class i implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ List f52196d;
+        final /* synthetic */ List f52212d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ androidx.concurrent.futures.d f52197e;
+        final /* synthetic */ androidx.concurrent.futures.d f52213e;
 
         /* renamed from: w3.a$i$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         class RunnableC0716a implements Runnable {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ String f52199d;
+            final /* synthetic */ String f52215d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ ListenableFuture f52200e;
+            final /* synthetic */ ListenableFuture f52216e;
 
             RunnableC0716a(String str, ListenableFuture listenableFuture) {
-                this.f52199d = str;
-                this.f52200e = listenableFuture;
+                this.f52215d = str;
+                this.f52216e = listenableFuture;
             }
 
             @Override // java.lang.Runnable
             public void run() {
-                a.this.f52174c.remove(this.f52199d);
-                if (this.f52200e.isCancelled()) {
+                a.this.f52190c.remove(this.f52215d);
+                if (this.f52216e.isCancelled()) {
                     return;
                 }
                 try {
-                    this.f52200e.get();
+                    this.f52216e.get();
                 } catch (Exception e10) {
-                    i.this.f52197e.t(e10);
+                    i.this.f52213e.t(e10);
                 }
             }
         }
 
         i(List list, androidx.concurrent.futures.d dVar) {
-            this.f52196d = list;
-            this.f52197e = dVar;
+            this.f52212d = list;
+            this.f52213e = dVar;
         }
 
         @Override // java.lang.Runnable
         public void run() {
             Bitmap bitmap;
-            for (ShortcutInfoCompat shortcutInfoCompat : this.f52196d) {
+            for (ShortcutInfoCompat shortcutInfoCompat : this.f52212d) {
                 Set d10 = shortcutInfoCompat.d();
                 if (d10 != null && !d10.isEmpty()) {
                     b.a f10 = a.this.f(shortcutInfoCompat);
                     IconCompat f11 = shortcutInfoCompat.f();
-                    if (f10.f52209b != null) {
+                    if (f10.f52225b != null) {
                         bitmap = f11.m();
                     } else {
                         bitmap = null;
                     }
                     String g10 = shortcutInfoCompat.g();
-                    a.this.f52173b.put(g10, f10);
+                    a.this.f52189b.put(g10, f10);
                     if (bitmap != null) {
-                        ListenableFuture o10 = a.this.o(bitmap, f10.f52209b);
-                        ListenableFuture listenableFuture = (ListenableFuture) a.this.f52174c.put(g10, o10);
+                        ListenableFuture o10 = a.this.o(bitmap, f10.f52225b);
+                        ListenableFuture listenableFuture = (ListenableFuture) a.this.f52190c.put(g10, o10);
                         if (listenableFuture != null) {
                             listenableFuture.cancel(false);
                         }
-                        o10.a(new RunnableC0716a(g10, o10), a.this.f52175d);
+                        o10.a(new RunnableC0716a(g10, o10), a.this.f52191d);
                     }
                 }
             }
-            a.this.p(this.f52197e);
+            a.this.p(this.f52213e);
         }
     }
 
@@ -299,19 +299,19 @@ public class a extends androidx.core.content.pm.a {
     public class j implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Bitmap f52202d;
+        final /* synthetic */ Bitmap f52218d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ String f52203e;
+        final /* synthetic */ String f52219e;
 
         j(Bitmap bitmap, String str) {
-            this.f52202d = bitmap;
-            this.f52203e = str;
+            this.f52218d = bitmap;
+            this.f52219e = str;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            a.this.n(this.f52202d, this.f52203e);
+            a.this.n(this.f52218d, this.f52219e);
         }
     }
 
@@ -320,37 +320,37 @@ public class a extends androidx.core.content.pm.a {
     public class k implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ androidx.concurrent.futures.d f52205d;
+        final /* synthetic */ androidx.concurrent.futures.d f52221d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Runnable f52206e;
+        final /* synthetic */ Runnable f52222e;
 
         k(androidx.concurrent.futures.d dVar, Runnable runnable) {
-            this.f52205d = dVar;
-            this.f52206e = runnable;
+            this.f52221d = dVar;
+            this.f52222e = runnable;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            if (this.f52205d.isCancelled()) {
+            if (this.f52221d.isCancelled()) {
                 return;
             }
             try {
-                this.f52206e.run();
-                this.f52205d.s(null);
+                this.f52222e.run();
+                this.f52221d.s(null);
             } catch (Exception e10) {
-                this.f52205d.t(e10);
+                this.f52221d.t(e10);
             }
         }
     }
 
     a(Context context, ExecutorService executorService, ExecutorService executorService2) {
-        this.f52172a = context.getApplicationContext();
-        this.f52175d = executorService;
-        this.f52176e = executorService2;
+        this.f52188a = context.getApplicationContext();
+        this.f52191d = executorService;
+        this.f52192e = executorService2;
         File file = new File(context.getFilesDir(), "ShortcutInfoCompatSaver_share_targets");
-        this.f52178g = new File(file, "ShortcutInfoCompatSaver_share_targets_bitmaps");
-        this.f52177f = new File(file, "targets.xml");
+        this.f52194g = new File(file, "ShortcutInfoCompatSaver_share_targets_bitmaps");
+        this.f52193f = new File(file, "targets.xml");
         executorService.submit(new c(file));
     }
 
@@ -369,28 +369,28 @@ public class a extends androidx.core.content.pm.a {
     }
 
     public static a j(Context context) {
-        if (f52171i == null) {
-            synchronized (f52170h) {
+        if (f52187i == null) {
+            synchronized (f52186h) {
                 try {
-                    if (f52171i == null) {
-                        f52171i = new a(context, g(), g());
+                    if (f52187i == null) {
+                        f52187i = new a(context, g(), g());
                     }
                 } finally {
                 }
             }
         }
-        return f52171i;
+        return f52187i;
     }
 
     private ListenableFuture q(Runnable runnable) {
         androidx.concurrent.futures.d w10 = androidx.concurrent.futures.d.w();
-        this.f52176e.submit(new k(w10, runnable));
+        this.f52192e.submit(new k(w10, runnable));
         return w10;
     }
 
     @Override // androidx.core.content.pm.a
     public List b() {
-        return (List) this.f52175d.submit(new f()).get();
+        return (List) this.f52191d.submit(new f()).get();
     }
 
     @Override // androidx.core.content.pm.a
@@ -402,7 +402,7 @@ public class a extends androidx.core.content.pm.a {
             arrayList.add(new ShortcutInfoCompat.b((ShortcutInfoCompat) it.next()).a());
         }
         androidx.concurrent.futures.d w10 = androidx.concurrent.futures.d.w();
-        this.f52175d.submit(new i(arrayList, w10));
+        this.f52191d.submit(new i(arrayList, w10));
         return w10;
     }
 
@@ -428,7 +428,7 @@ public class a extends androidx.core.content.pm.a {
             if (r2 == r0) goto L25
             goto L3b
         L15:
-            android.content.Context r2 = r4.f52172a
+            android.content.Context r2 = r4.f52188a
             android.content.res.Resources r2 = r2.getResources()
             int r0 = r0.n()
             java.lang.String r0 = r2.getResourceName(r0)
@@ -436,7 +436,7 @@ public class a extends androidx.core.content.pm.a {
             goto L3d
         L25:
             java.io.File r0 = new java.io.File
-            java.io.File r2 = r4.f52178g
+            java.io.File r2 = r4.f52194g
             java.util.UUID r3 = java.util.UUID.randomUUID()
             java.lang.String r3 = r3.toString()
             r0.<init>(r2, r3)
@@ -465,11 +465,11 @@ public class a extends androidx.core.content.pm.a {
         Iterator it = list.iterator();
         while (it.hasNext()) {
             b.a aVar = (b.a) it.next();
-            if (!TextUtils.isEmpty(aVar.f52209b)) {
-                arrayList.add(aVar.f52209b);
+            if (!TextUtils.isEmpty(aVar.f52225b)) {
+                arrayList.add(aVar.f52225b);
             }
         }
-        for (File file : this.f52178g.listFiles()) {
+        for (File file : this.f52194g.listFiles()) {
             if (!arrayList.contains(file.getAbsolutePath())) {
                 file.delete();
             }
@@ -479,21 +479,21 @@ public class a extends androidx.core.content.pm.a {
     public IconCompat k(String str) {
         int i10;
         Bitmap bitmap;
-        b.a aVar = (b.a) this.f52175d.submit(new g(str)).get();
+        b.a aVar = (b.a) this.f52191d.submit(new g(str)).get();
         if (aVar == null) {
             return null;
         }
-        if (!TextUtils.isEmpty(aVar.f52208a)) {
+        if (!TextUtils.isEmpty(aVar.f52224a)) {
             try {
-                i10 = this.f52172a.getResources().getIdentifier(aVar.f52208a, null, null);
+                i10 = this.f52188a.getResources().getIdentifier(aVar.f52224a, null, null);
             } catch (Exception unused) {
                 i10 = 0;
             }
             if (i10 != 0) {
-                return IconCompat.k(this.f52172a, i10);
+                return IconCompat.k(this.f52188a, i10);
             }
         }
-        if (TextUtils.isEmpty(aVar.f52209b) || (bitmap = (Bitmap) this.f52176e.submit(new h(aVar)).get()) == null) {
+        if (TextUtils.isEmpty(aVar.f52225b) || (bitmap = (Bitmap) this.f52192e.submit(new h(aVar)).get()) == null) {
             return null;
         }
         return IconCompat.h(bitmap);
@@ -503,7 +503,7 @@ public class a extends androidx.core.content.pm.a {
     /* renamed from: l */
     public ListenableFuture c() {
         androidx.concurrent.futures.d w10 = androidx.concurrent.futures.d.w();
-        this.f52175d.submit(new e(w10));
+        this.f52191d.submit(new e(w10));
         return w10;
     }
 
@@ -512,7 +512,7 @@ public class a extends androidx.core.content.pm.a {
     public ListenableFuture d(List list) {
         ArrayList arrayList = new ArrayList(list);
         androidx.concurrent.futures.d w10 = androidx.concurrent.futures.d.w();
-        this.f52175d.submit(new d(arrayList, w10));
+        this.f52191d.submit(new d(arrayList, w10));
         return w10;
     }
 
@@ -551,7 +551,7 @@ public class a extends androidx.core.content.pm.a {
     }
 
     void p(androidx.concurrent.futures.d dVar) {
-        ListenableFuture q10 = q(new RunnableC0715a(new ArrayList(this.f52173b.values())));
-        q10.a(new b(q10, dVar), this.f52175d);
+        ListenableFuture q10 = q(new RunnableC0715a(new ArrayList(this.f52189b.values())));
+        q10.a(new b(q10, dVar), this.f52191d);
     }
 }

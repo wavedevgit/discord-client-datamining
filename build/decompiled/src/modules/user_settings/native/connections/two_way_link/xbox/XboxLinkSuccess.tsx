@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/connections/two_way_link/xbox/XboxLinkSuccess.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Original name: XboxLinkDiscordSuccess, environment: var1
-        _fun50887: for (var _fun50887_ip = 0;;) switch (_fun50887_ip) {
+        _fun50933: for (var _fun50933_ip = 0;;) switch (_fun50933_ip) {
             case 0:
                 var1 = _closure1_slot15;
                 var3 = undefined;
@@ -183,12 +183,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = new Array(1);
                 var2[0] = var13;
                 var1 = function() { // Environment: var0
-                    _fun50889: for (var _fun50889_ip = 0;;) switch (_fun50889_ip) {
+                    _fun50935: for (var _fun50935_ip = 0;;) switch (_fun50935_ip) {
                         case 0:
                             var0 = _closure2_slot0;
                             if (var0) {
-                                _fun50889_ip = 78;
-                                continue _fun50889
+                                _fun50935_ip = 78;
+                                continue _fun50935
                             }
                         case 10:
                             var3 = _closure1_slot0;
@@ -202,14 +202,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = _closure1_slot7;
                             var1 = var2.openURL;
                             if (var3) {
-                                _fun50889_ip = 69;
-                                continue _fun50889
+                                _fun50935_ip = 69;
+                                continue _fun50935
                             }
                         case 58:
                             var3 = _closure1_slot11;
                             var3 = var1.bind(var2)(var3);
-                            _fun50889_ip = 78;
-                            continue _fun50889;
+                            _fun50935_ip = 78;
+                            continue _fun50935;
                         case 69:
                             var0 = _closure1_slot10;
                             var0 = var1.bind(var2)(var0);
@@ -343,14 +343,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var19 = var20.bind(var3)(var19);
                 var20 = var19.t;
                 if (var13) {
-                    _fun50887_ip = 654;
-                    continue _fun50887
+                    _fun50933_ip = 654;
+                    continue _fun50933
                 }
             case 641:
                 var19 = var20["12Kx2v"];
                 var19 = var21.bind(var22)(var19);
-                _fun50887_ip = 667;
-                continue _fun50887;
+                _fun50933_ip = 667;
+                continue _fun50933;
             case 654:
                 var20 = var20.zcKE8W;
                 var19 = var21.bind(var22)(var20);
@@ -360,8 +360,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11[1] = var14;
                 var16 = _closure1_slot13;
                 if (var13) {
-                    _fun50887_ip = 783;
-                    continue _fun50887
+                    _fun50933_ip = 783;
+                    continue _fun50933
                 }
             case 688:
                 var19 = _closure1_slot1;
@@ -385,8 +385,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var15 = var18.icon;
                 var13.style = var15;
                 var13 = var16.bind(var3)(var14, var13);
-                _fun50887_ip = 828;
-                continue _fun50887;
+                _fun50933_ip = 828;
+                continue _fun50933;
             case 783:
                 var15 = _closure1_slot5;
                 var14 = {};
@@ -455,4 +455,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 5278, 5296, 33, 1297, 671, 5288, 478, 1469, 5733, 3895, 1234, 5734, 5735, 4039, 5736, 4690, 4037, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 5282, 5300, 33, 1297, 671, 5292, 478, 1469, 5736, 3901, 1234, 5737, 5738, 4045, 5739, 4696, 4043, 2]);

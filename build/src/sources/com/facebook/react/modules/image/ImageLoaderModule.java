@@ -99,7 +99,7 @@ public final class ImageLoaderModule extends NativeImageLoaderAndroidSpec implem
     private final void registerRequest(int i10, DataSource dataSource) {
         synchronized (this.enqueuedRequestMonitor) {
             this.enqueuedRequests.put(i10, dataSource);
-            Unit unit = Unit.f33282a;
+            Unit unit = Unit.f33298a;
         }
     }
 
@@ -236,7 +236,7 @@ public final class ImageLoaderModule extends NativeImageLoaderAndroidSpec implem
                     valueAt.close();
                 }
                 this.enqueuedRequests.clear();
-                Unit unit = Unit.f33282a;
+                Unit unit = Unit.f33298a;
             } catch (Throwable th2) {
                 throw th2;
             }

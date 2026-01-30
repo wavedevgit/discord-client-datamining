@@ -9,16 +9,16 @@ import kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptor
 public class a0 implements Function1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final DeserializedMemberScope.OptimizedImplementation f35714d;
+    private final DeserializedMemberScope.OptimizedImplementation f35730d;
 
     public a0(DeserializedMemberScope.OptimizedImplementation optimizedImplementation) {
-        this.f35714d = optimizedImplementation;
+        this.f35730d = optimizedImplementation;
     }
 
     @Override // kotlin.jvm.functions.Function1
     public Object invoke(Object obj) {
         Collection o10;
-        o10 = DeserializedMemberScope.OptimizedImplementation.o(this.f35714d, (Name) obj);
+        o10 = DeserializedMemberScope.OptimizedImplementation.o(this.f35730d, (Name) obj);
         return o10;
     }
 }

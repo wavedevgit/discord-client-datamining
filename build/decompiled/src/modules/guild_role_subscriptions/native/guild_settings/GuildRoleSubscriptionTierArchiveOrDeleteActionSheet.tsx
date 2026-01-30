@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_role_subscriptions/native/guild_settings/GuildRoleSubscriptionTierArchiveOrDeleteActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: GuildRoleSubscriptionTierArchiveOrDeleteActionSheet, environment: var1
-        _fun117044: for (var _fun117044_ip = 0;;) switch (_fun117044_ip) {
+        _fun117323: for (var _fun117323_ip = 0;;) switch (_fun117323_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.editStateId;
@@ -175,8 +175,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11.color = var20;
                 var11.onPress = var19;
                 if (var17) {
-                    _fun117044_ip = 451;
-                    continue _fun117044
+                    _fun117323_ip = 451;
+                    continue _fun117323
                 }
             case 448:
                 var17 = var18;
@@ -245,4 +245,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 1568, 44, 14885, 4887, 4889, 3895, 9219, 4829, 3237, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 1568, 44, 14914, 4893, 4895, 3901, 9224, 4835, 3237, 1234, 2]);

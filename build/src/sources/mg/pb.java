@@ -5,7 +5,7 @@ import ui.c;
 final class pb implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final pb f38564a = new pb();
+    static final pb f38580a = new pb();
 
     static {
         c.b a10 = ui.c.a("errorSpace");

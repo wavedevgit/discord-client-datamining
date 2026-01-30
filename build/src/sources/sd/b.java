@@ -5,24 +5,24 @@ import java.util.NoSuchElementException;
 public abstract class b implements o {
 
     /* renamed from: b  reason: collision with root package name */
-    private final long f48915b;
+    private final long f48931b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final long f48916c;
+    private final long f48932c;
 
     /* renamed from: d  reason: collision with root package name */
-    private long f48917d;
+    private long f48933d;
 
     public b(long j10, long j11) {
-        this.f48915b = j10;
-        this.f48916c = j11;
+        this.f48931b = j10;
+        this.f48932c = j11;
         f();
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final void c() {
-        long j10 = this.f48917d;
-        if (j10 >= this.f48915b && j10 <= this.f48916c) {
+        long j10 = this.f48933d;
+        if (j10 >= this.f48931b && j10 <= this.f48932c) {
             return;
         }
         throw new NoSuchElementException();
@@ -30,23 +30,23 @@ public abstract class b implements o {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final long d() {
-        return this.f48917d;
+        return this.f48933d;
     }
 
     public boolean e() {
-        if (this.f48917d > this.f48916c) {
+        if (this.f48933d > this.f48932c) {
             return true;
         }
         return false;
     }
 
     public void f() {
-        this.f48917d = this.f48915b - 1;
+        this.f48933d = this.f48931b - 1;
     }
 
     @Override // sd.o
     public boolean next() {
-        this.f48917d++;
+        this.f48933d++;
         return !e();
     }
 }

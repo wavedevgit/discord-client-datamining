@@ -1,380 +1,372 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun34892: for (var _fun34892_ip = 0;;) switch (_fun34892_ip) {
-        case 0:
-            var5 = require;
-            var2 = exports;
-            var6 = dependencyMap;
-            var0 = global;
-            var _closure1_slot0 = var0;
-            var _closure1_slot1 = var5;
-            var _closure1_slot2 = var6;
-            var0 = global;
-            var7 = var0.Object;
-            var3 = var7.defineProperty;
-            var1 = {};
-            var0 = true;
-            var1.value = var0;
-            var0 = '__esModule';
-            var0 = var3.bind(var7)(var2, var0, var1);
-            var0 = {};
-            var1 = 'function measureFabric_Pnpm_measureTs1(animatedRef){const{logger}=this.__closure;if(!_WORKLET){return null;}const viewTag=animatedRef();if(viewTag===-1){logger.warn("The view with tag "+viewTag+" is not a valid argument for measure(). This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).");return null;}const measured=global._measureFabric(viewTag);if(measured===null){logger.warn("The view has some undefined, not-yet-computed or meaningless value of `LayoutMetrics` type. This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).");return null;}else if(measured.x===-1234567){logger.warn("The view returned an invalid measurement response. Please make sure the view is currently rendered.");return null;}else if(isNaN(measured.x)){logger.warn("The view gets view-flattened on Android. To disable view-flattening, set `collapsable={false}` on this component.");return null;}else{return measured;}}';
-            var0.code = var1;
-            var _closure1_slot3 = var0;
-            var1 = function() { // Environment: var4
-                var0 = function(arg0) { // Original name: measureFabric, environment: var0
-                    _fun34894: for (var _fun34894_ip = 0;;) switch (_fun34894_ip) {
-                        case 0:
-                            var0 = global;
-                            var1 = var0._WORKLET;
-                            if (var1) {
-                                _fun34894_ip = 15;
-                                continue _fun34894
-                            }
-                        case 11:
-                            var1 = null;
-                            return var1;
-                        case 15:
-                            var1 = arg0;
-                            var3 = undefined;
-                            var5 = var1.bind(var3)();
-                            var1 = -1;
-                            if (!(var1 !== var5)) {
-                                _fun34894_ip = 235;
-                                continue _fun34894
-                            }
-                        case 37:
-                            var2 = _closure1_slot0;
-                            var1 = var2._measureFabric;
-                            var1 = var1.bind(var2)(var5);
-                            var2 = null;
-                            if (!(var2 !== var1)) {
-                                _fun34894_ip = 190;
-                                continue _fun34894
-                            }
-                        case 66:
-                            var7 = var1.x;
-                            var6 = -1234567;
-                            if (!(var6 !== var7)) {
-                                _fun34894_ip = 145;
-                                continue _fun34894
-                            }
-                        case 81:
-                            var7 = var0.isNaN;
-                            var6 = var1.x;
-                            var6 = var7.bind(var3)(var6);
-                            if (!var6) {
-                                _fun34894_ip = 143;
-                                continue _fun34894
-                            }
-                        case 100:
-                            var7 = _closure1_slot1;
-                            var8 = _closure1_slot2;
-                            var6 = 0;
-                            var6 = var8[var6];
-                            var6 = var7.bind(var3)(var6);
-                            var8 = var6.logger;
-                            var7 = var8.warn;
-                            var6 = 'The view gets view-flattened on Android. To disable view-flattening, set `collapsable={false}` on this component.';
-                            var6 = var7.bind(var8)(var6);
-                            var1 = null;
-                        case 143:
-                            _fun34894_ip = 188;
-                            continue _fun34894;
-                        case 145:
-                            var7 = _closure1_slot1;
-                            var8 = _closure1_slot2;
-                            var6 = 0;
-                            var6 = var8[var6];
-                            var6 = var7.bind(var3)(var6);
-                            var8 = var6.logger;
-                            var7 = var8.warn;
-                            var6 = 'The view returned an invalid measurement response. Please make sure the view is currently rendered.';
-                            var6 = var7.bind(var8)(var6);
-                            var1 = null;
-                        case 188:
-                            _fun34894_ip = 233;
-                            continue _fun34894;
-                        case 190:
-                            var6 = _closure1_slot1;
-                            var7 = _closure1_slot2;
-                            var4 = 0;
-                            var4 = var7[var4];
-                            var4 = var6.bind(var3)(var4);
-                            var7 = var4.logger;
-                            var6 = var7.warn;
-                            var4 = 'The view has some undefined, not-yet-computed or meaningless value of `LayoutMetrics` type. This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).';
-                            var4 = var6.bind(var7)(var4);
-                            var1 = null;
-                        case 233:
-                            return var1;
-                        case 235:
-                            var2 = _closure1_slot1;
-                            var4 = _closure1_slot2;
-                            var1 = 0;
-                            var1 = var4[var1];
-                            var1 = var2.bind(var3)(var1);
-                            var2 = var1.logger;
-                            var1 = var2.warn;
-                            var0 = var0.HermesInternal;
-                            var4 = var0.concat;
-                            var3 = 'The view with tag ';
-                            var0 = ' is not a valid argument for measure(). This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).';
-                            var0 = var4.bind(var3)(var5, var0);
-                            var0 = var1.bind(var2)(var0);
-                            var0 = null;
-                            return var0;
+    var2 = exports;
+    var0 = metroImportDefault;
+    var _closure1_slot0 = var0;
+    var0 = dependencyMap;
+    var _closure1_slot1 = var0;
+    var0 = global;
+    var5 = var0.Object;
+    var3 = var5.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var5)(var2, var0, var1);
+    var0 = {};
+    var1 = 'function convertLrgbToOklab_Pnpm_oklabTs1({r=0,g=0,b=0,alpha:alpha}){const L=Math.cbrt(0.41222147079999993*r+0.5363325363*g+0.0514459929*b);const M=Math.cbrt(0.2119034981999999*r+0.6806995450999999*g+0.1073969566*b);const S=Math.cbrt(0.08830246189999998*r+0.2817188376*g+0.6299787005000002*b);return{l:0.2104542553*L+0.793617785*M-0.0040720468*S,a:1.9779984951*L-2.428592205*M+0.4505937099*S,b:0.0259040371*L+0.7827717662*M-0.808675766*S,alpha:alpha};}';
+    var0.code = var1;
+    var _closure1_slot2 = var0;
+    var1 = function() { // Environment: var4
+        var0 = function(arg0) { // Original name: convertLrgbToOklab, environment: var0
+            _fun34896: for (var _fun34896_ip = 0;;) switch (_fun34896_ip) {
+                case 0:
+                    var0 = arg0;
+                    var1 = var0.r;
+                    var2 = undefined;
+                    var7 = 0;
+                    if (!(var2 !== var1)) {
+                        _fun34896_ip = 19;
+                        continue _fun34896
                     }
-                };
-                var2 = {};
-                var5 = _closure1_slot1;
-                var4 = _closure1_slot2;
-                var3 = 0;
-                var4 = var4[var3];
-                var3 = undefined;
-                var3 = var5.bind(var3)(var4);
-                var3 = var3.logger;
-                var2.logger = var3;
-                var0.__closure = var2;
-                var2 = 11588690892656.0;
-                var0.__workletHash = var2;
-                var1 = _closure1_slot3;
-                var0.__initData = var1;
-                return var0;
-            };
-            var0 = undefined;
-            var7 = var1.bind(var0)();
-            var1 = {};
-            var3 = 'function measurePaper_Pnpm_measureTs2(animatedRef){const{logger}=this.__closure;if(!_WORKLET){return null;}const viewTag=animatedRef();if(viewTag===-1){logger.warn("The view with tag "+viewTag+" is not a valid argument for measure(). This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).");return null;}const measured=global._measurePaper(viewTag);if(measured===null){logger.warn("The view with tag "+viewTag+" has some undefined, not-yet-computed or meaningless value of `LayoutMetrics` type. This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).");return null;}else if(measured.x===-1234567){logger.warn("The view with tag "+viewTag+" returned an invalid measurement response. Please make sure the view is currently rendered.");return null;}else if(isNaN(measured.x)){logger.warn("The view with tag "+viewTag+" gets view-flattened on Android. To disable view-flattening, set `collapsable={false}` on this component.");return null;}else{return measured;}}';
-            var1.code = var3;
-            var _closure1_slot4 = var1;
-            var1 = function() { // Environment: var4
-                var0 = function(arg0) { // Original name: measurePaper, environment: var0
-                    _fun34896: for (var _fun34896_ip = 0;;) switch (_fun34896_ip) {
-                        case 0:
-                            var0 = global;
-                            var1 = var0._WORKLET;
-                            if (var1) {
-                                _fun34896_ip = 15;
-                                continue _fun34896
-                            }
-                        case 11:
-                            var1 = null;
-                            return var1;
-                        case 15:
-                            var1 = arg0;
-                            var3 = undefined;
-                            var5 = var1.bind(var3)();
-                            var1 = -1;
-                            if (!(var1 !== var5)) {
-                                _fun34896_ip = 304;
-                                continue _fun34896
-                            }
-                        case 37:
-                            var2 = _closure1_slot0;
-                            var1 = var2._measurePaper;
-                            var1 = var1.bind(var2)(var5);
-                            var2 = null;
-                            if (!(var2 !== var1)) {
-                                _fun34896_ip = 236;
-                                continue _fun34896
-                            }
-                        case 66:
-                            var7 = var1.x;
-                            var6 = -1234567;
-                            if (!(var6 !== var7)) {
-                                _fun34896_ip = 168;
-                                continue _fun34896
-                            }
-                        case 81:
-                            var7 = var0.isNaN;
-                            var6 = var1.x;
-                            var6 = var7.bind(var3)(var6);
-                            if (!var6) {
-                                _fun34896_ip = 166;
-                                continue _fun34896
-                            }
-                        case 100:
-                            var7 = _closure1_slot1;
-                            var8 = _closure1_slot2;
-                            var6 = 0;
-                            var6 = var8[var6];
-                            var6 = var7.bind(var3)(var6);
-                            var8 = var6.logger;
-                            var7 = var8.warn;
-                            var6 = var0.HermesInternal;
-                            var10 = var6.concat;
-                            var9 = 'The view with tag ';
-                            var6 = ' gets view-flattened on Android. To disable view-flattening, set `collapsable={false}` on this component.';
-                            var6 = var10.bind(var9)(var5, var6);
-                            var6 = var7.bind(var8)(var6);
-                            var1 = null;
-                        case 166:
-                            _fun34896_ip = 234;
-                            continue _fun34896;
-                        case 168:
-                            var7 = _closure1_slot1;
-                            var8 = _closure1_slot2;
-                            var6 = 0;
-                            var6 = var8[var6];
-                            var6 = var7.bind(var3)(var6);
-                            var8 = var6.logger;
-                            var7 = var8.warn;
-                            var6 = var0.HermesInternal;
-                            var10 = var6.concat;
-                            var9 = 'The view with tag ';
-                            var6 = ' returned an invalid measurement response. Please make sure the view is currently rendered.';
-                            var6 = var10.bind(var9)(var5, var6);
-                            var6 = var7.bind(var8)(var6);
-                            var1 = null;
-                        case 234:
-                            _fun34896_ip = 302;
-                            continue _fun34896;
-                        case 236:
-                            var6 = _closure1_slot1;
-                            var7 = _closure1_slot2;
-                            var4 = 0;
-                            var4 = var7[var4];
-                            var4 = var6.bind(var3)(var4);
-                            var7 = var4.logger;
-                            var6 = var7.warn;
-                            var4 = var0.HermesInternal;
-                            var9 = var4.concat;
-                            var8 = 'The view with tag ';
-                            var4 = ' has some undefined, not-yet-computed or meaningless value of `LayoutMetrics` type. This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).';
-                            var4 = var9.bind(var8)(var5, var4);
-                            var4 = var6.bind(var7)(var4);
-                            var1 = null;
-                        case 302:
-                            return var1;
-                        case 304:
-                            var2 = _closure1_slot1;
-                            var4 = _closure1_slot2;
-                            var1 = 0;
-                            var1 = var4[var1];
-                            var1 = var2.bind(var3)(var1);
-                            var2 = var1.logger;
-                            var1 = var2.warn;
-                            var0 = var0.HermesInternal;
-                            var4 = var0.concat;
-                            var3 = 'The view with tag ';
-                            var0 = ' is not a valid argument for measure(). This may be because the view is not currently rendered, which may not be a bug (e.g. an off-screen FlatList item).';
-                            var0 = var4.bind(var3)(var5, var0);
-                            var0 = var1.bind(var2)(var0);
-                            var0 = null;
-                            return var0;
+                case 16:
+                    var7 = var1;
+                case 19:
+                    var1 = var0.g;
+                    var6 = 0;
+                    if (!(var2 !== var1)) {
+                        _fun34896_ip = 33;
+                        continue _fun34896
                     }
-                };
-                var2 = {};
-                var5 = _closure1_slot1;
-                var4 = _closure1_slot2;
-                var3 = 0;
-                var4 = var4[var3];
-                var3 = undefined;
-                var3 = var5.bind(var3)(var4);
-                var3 = var3.logger;
-                var2.logger = var3;
-                var0.__closure = var2;
-                var2 = 12497864483036.0;
-                var0.__workletHash = var2;
-                var1 = _closure1_slot4;
-                var0.__initData = var1;
+                case 30:
+                    var6 = var1;
+                case 33:
+                    var1 = var0.b;
+                    var8 = 0;
+                    if (!(var2 !== var1)) {
+                        _fun34896_ip = 48;
+                        continue _fun34896
+                    }
+                case 45:
+                    var8 = var1;
+                case 48:
+                    var1 = var0.alpha;
+                    var0 = global;
+                    var4 = var0.Math;
+                    var3 = var4.cbrt;
+                    var2 = 0.41222147079999993;
+                    var9 = var2 * var7;
+                    var2 = 0.5363325363;
+                    var2 = var2 * var6;
+                    var5 = 0.0514459929;
+                    var5 = var5 * var8;
+                    var2 = var9 + var2;
+                    var2 = var2 + var5;
+                    var4 = var3.bind(var4)(var2);
+                    var5 = var0.Math;
+                    var3 = var5.cbrt;
+                    var2 = 0.2119034981999999;
+                    var10 = var2 * var7;
+                    var2 = 0.6806995450999999;
+                    var2 = var2 * var6;
+                    var9 = 0.1073969566;
+                    var9 = var9 * var8;
+                    var2 = var10 + var2;
+                    var2 = var2 + var9;
+                    var3 = var3.bind(var5)(var2);
+                    var5 = var0.Math;
+                    var2 = var5.cbrt;
+                    var0 = 0.08830246189999998;
+                    var7 = var0 * var7;
+                    var0 = 0.2817188376;
+                    var0 = var0 * var6;
+                    var6 = 0.6299787005000002;
+                    var6 = var6 * var8;
+                    var0 = var7 + var0;
+                    var0 = var0 + var6;
+                    var5 = var2.bind(var5)(var0);
+                    var0 = {};
+                    var2 = 0.2104542553;
+                    var7 = var2 * var4;
+                    var2 = 0.793617785;
+                    var2 = var2 * var3;
+                    var6 = 0.0040720468;
+                    var6 = var6 * var5;
+                    var2 = var7 + var2;
+                    var2 = var2 - var6;
+                    var0.l = var2;
+                    var2 = 1.9779984951;
+                    var7 = var2 * var4;
+                    var2 = 2.428592205;
+                    var2 = var2 * var3;
+                    var6 = 0.4505937099;
+                    var6 = var6 * var5;
+                    var2 = var7 - var2;
+                    var2 = var2 + var6;
+                    var0.a = var2;
+                    var2 = 0.0259040371;
+                    var4 = var2 * var4;
+                    var2 = 0.7827717662;
+                    var2 = var2 * var3;
+                    var3 = 0.808675766;
+                    var3 = var3 * var5;
+                    var2 = var4 + var2;
+                    var2 = var2 - var3;
+                    var0.b = var2;
+                    var0.alpha = var1;
+                    return var0;
+            }
+        };
+        var1 = {};
+        var0.__closure = var1;
+        var1 = 12620455378469.0;
+        var0.__workletHash = var1;
+        var1 = _closure1_slot2;
+        var0.__initData = var1;
+        return var0;
+    };
+    var0 = undefined;
+    var1 = var1.bind(var0)();
+    var _closure1_slot3 = var1;
+    var1 = {};
+    var3 = 'function convertRgbToOklab_Pnpm_oklabTs2(rgb){const{lrgb,convertLrgbToOklab}=this.__closure;const lrgbColor=lrgb.convert.fromRgb(rgb);const result=convertLrgbToOklab(lrgbColor);if(rgb.r===rgb.b&&rgb.b===rgb.g){result.a=result.b=0;}return result;}';
+    var1.code = var3;
+    var _closure1_slot4 = var1;
+    var1 = function() { // Environment: var4
+        var0 = function(arg0) { // Original name: convertRgbToOklab, environment: var0
+            _fun34898: for (var _fun34898_ip = 0;;) switch (_fun34898_ip) {
+                case 0:
+                    var3 = arg0;
+                    var5 = _closure1_slot0;
+                    var2 = _closure1_slot1;
+                    var1 = 0;
+                    var2 = var2[var1];
+                    var4 = undefined;
+                    var2 = var5.bind(var4)(var2);
+                    var5 = var2.convert;
+                    var2 = var5.fromRgb;
+                    var2 = var2.bind(var5)(var3);
+                    var0 = _closure1_slot3;
+                    var0 = var0.bind(var4)(var2);
+                    var4 = var3.r;
+                    var2 = var3.b;
+                    var2 = var4 === var2;
+                    if (!var2) {
+                        _fun34898_ip = 86;
+                        continue _fun34898
+                    }
+                case 71:
+                    var4 = var3.b;
+                    var3 = var3.g;
+                    var2 = var4 === var3;
+                case 86:
+                    if (!var2) {
+                        _fun34898_ip = 101;
+                        continue _fun34898
+                    }
+                case 89:
+                    var0.b = var1;
+                    var0.a = var1;
+                case 101:
+                    return var0;
+            }
+        };
+        var2 = {};
+        var5 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var3 = 0;
+        var4 = var4[var3];
+        var3 = undefined;
+        var3 = var5.bind(var3)(var4);
+        var2.lrgb = var3;
+        var3 = _closure1_slot3;
+        var2.convertLrgbToOklab = var3;
+        var0.__closure = var2;
+        var2 = 16743889557677.0;
+        var0.__workletHash = var2;
+        var1 = _closure1_slot4;
+        var0.__initData = var1;
+        return var0;
+    };
+    var5 = var1.bind(var0)();
+    var1 = {};
+    var3 = 'function convertOklabToLrgb_Pnpm_oklabTs3({l=0,a=0,b=0,alpha:alpha}){const L=Math.pow(l*0.99999999845051981432+0.39633779217376785678*a+0.21580375806075880339*b,3);const M=Math.pow(l*1.0000000088817607767-0.1055613423236563494*a-0.063854174771705903402*b,3);const S=Math.pow(l*1.0000000546724109177-0.089484182094965759684*a-1.2914855378640917399*b,3);return{r:+4.076741661347994*L-3.307711590408193*M+0.230969928729428*S,g:-1.2684380040921763*L+2.6097574006633715*M-0.3413193963102197*S,b:-0.004196086541837188*L-0.7034186144594493*M+1.7076147009309444*S,alpha:alpha};}';
+    var1.code = var3;
+    var _closure1_slot5 = var1;
+    var1 = function() { // Environment: var4
+        var0 = function(arg0) { // Original name: convertOklabToLrgb, environment: var0
+            _fun34900: for (var _fun34900_ip = 0;;) switch (_fun34900_ip) {
+                case 0:
+                    var0 = arg0;
+                    var1 = var0.l;
+                    var2 = undefined;
+                    var8 = 0;
+                    if (!(var2 !== var1)) {
+                        _fun34900_ip = 19;
+                        continue _fun34900
+                    }
+                case 16:
+                    var8 = var1;
+                case 19:
+                    var1 = var0.a;
+                    var7 = 0;
+                    if (!(var2 !== var1)) {
+                        _fun34900_ip = 33;
+                        continue _fun34900
+                    }
+                case 30:
+                    var7 = var1;
+                case 33:
+                    var1 = var0.b;
+                    var9 = 0;
+                    if (!(var2 !== var1)) {
+                        _fun34900_ip = 48;
+                        continue _fun34900
+                    }
+                case 45:
+                    var9 = var1;
+                case 48:
+                    var1 = var0.alpha;
+                    var0 = global;
+                    var4 = var0.Math;
+                    var3 = var4.pow;
+                    var2 = 0.9999999984505198;
+                    var6 = var2 * var8;
+                    var2 = 0.39633779217376786;
+                    var2 = var2 * var7;
+                    var5 = 0.2158037580607588;
+                    var5 = var5 * var9;
+                    var2 = var6 + var2;
+                    var2 = var2 + var5;
+                    var6 = 3;
+                    var4 = var3.bind(var4)(var2, var6);
+                    var5 = var0.Math;
+                    var3 = var5.pow;
+                    var2 = 1.0000000088817609;
+                    var11 = var2 * var8;
+                    var2 = 0.10556134232365635;
+                    var2 = var2 * var7;
+                    var10 = 0.06385417477170591;
+                    var10 = var10 * var9;
+                    var2 = var11 - var2;
+                    var2 = var2 - var10;
+                    var3 = var3.bind(var5)(var2, var6);
+                    var5 = var0.Math;
+                    var2 = var5.pow;
+                    var0 = 1.0000000546724108;
+                    var8 = var0 * var8;
+                    var0 = 0.08948418209496575;
+                    var0 = var0 * var7;
+                    var7 = 1.2914855378640917;
+                    var7 = var7 * var9;
+                    var0 = var8 - var0;
+                    var0 = var0 - var7;
+                    var5 = var2.bind(var5)(var0, var6);
+                    var0 = {};
+                    var2 = 4.076741661347994;
+                    var7 = var2 * var4;
+                    var2 = 3.307711590408193;
+                    var2 = var2 * var3;
+                    var6 = 0.230969928729428;
+                    var6 = var6 * var5;
+                    var2 = var7 - var2;
+                    var2 = var2 + var6;
+                    var0.r = var2;
+                    var2 = -1.2684380040921763;
+                    var7 = var2 * var4;
+                    var2 = 2.6097574006633715;
+                    var2 = var2 * var3;
+                    var6 = 0.3413193963102197;
+                    var6 = var6 * var5;
+                    var2 = var7 + var2;
+                    var2 = var2 - var6;
+                    var0.g = var2;
+                    var2 = -0.004196086541837188;
+                    var4 = var2 * var4;
+                    var2 = 0.7034186144594493;
+                    var2 = var2 * var3;
+                    var3 = 1.7076147009309444;
+                    var3 = var3 * var5;
+                    var2 = var4 - var2;
+                    var2 = var2 + var3;
+                    var0.b = var2;
+                    var0.alpha = var1;
+                    return var0;
+            }
+        };
+        var1 = {};
+        var0.__closure = var1;
+        var1 = 14870197803884.0;
+        var0.__workletHash = var1;
+        var1 = _closure1_slot5;
+        var0.__initData = var1;
+        return var0;
+    };
+    var1 = var1.bind(var0)();
+    var _closure1_slot6 = var1;
+    var1 = {};
+    var3 = 'function convertOklabToRgb_Pnpm_oklabTs4(labColor){const{convertOklabToLrgb,lrgb}=this.__closure;const roundChannel=function(channel){return Math.ceil(channel*100_000)/100_000;};const lrgbColor=convertOklabToLrgb(labColor);const rgbColor=lrgb.convert.toRgb(lrgbColor);rgbColor.r=roundChannel(rgbColor.r);rgbColor.g=roundChannel(rgbColor.g);rgbColor.b=roundChannel(rgbColor.b);return rgbColor;}';
+    var1.code = var3;
+    var _closure1_slot7 = var1;
+    var1 = {};
+    var3 = {};
+    var3.fromRgb = var5;
+    var4 = function() { // Environment: var4
+        var0 = function(arg0) { // Original name: convertOklabToRgb, environment: var0
+            var3 = function(arg0) { // Original name: roundChannel, environment: var0
+                var0 = global;
+                var3 = var0.Math;
+                var2 = var3.ceil;
+                var1 = 100000;
+                var0 = arg0;
+                var0 = var1 * var0;
+                var0 = var2.bind(var3)(var0);
+                var0 = var0 / var1;
                 return var0;
             };
-            var1 = var1.bind(var0)();
-            var3 = 1;
-            var8 = var6[var3];
-            var9 = var5.bind(var0)(var8);
-            var8 = var9.shouldBeUseWeb;
-            var9 = var8.bind(var9)();
-            var8 = var6[var3];
-            var8 = var5.bind(var0)(var8);
-            if (var9) {
-                _fun34892_ip = 162;
-                continue _fun34892
-            }
-        case 144:
-            var9 = var8.isFabric;
-            var9 = var9.bind(var8)();
-            if (!var9) {
-                _fun34892_ip = 160;
-                continue _fun34892
-            }
-        case 157:
-            var1 = var7;
-        case 160:
-            _fun34892_ip = 219;
-            continue _fun34892;
-        case 162:
-            var7 = var8.isJest;
-            var7 = var7.bind(var8)();
-            if (var7) {
-                _fun34892_ip = 211;
-                continue _fun34892
-            }
-        case 175:
-            var3 = var6[var3];
-            var5 = var5.bind(var0)(var3);
-            var3 = var5.isChromeDebugger;
-            var3 = var3.bind(var5)();
-            if (var3) {
-                _fun34892_ip = 204;
-                continue _fun34892
-            }
-        case 197:
-            var3 = function() { // Original name: measureDefault, environment: var4
-                var2 = _closure1_slot1;
-                var1 = _closure1_slot2;
-                var0 = 0;
-                var1 = var1[var0];
-                var0 = undefined;
-                var0 = var2.bind(var0)(var1);
-                var2 = var0.logger;
-                var1 = var2.warn;
-                var0 = 'measure() is not supported on this configuration.';
-                var0 = var1.bind(var2)(var0);
-                var0 = null;
-                return var0;
-            };
-            _fun34892_ip = 209;
-            continue _fun34892;
-        case 204:
-            var3 = function() { // Original name: measureChromeDebugger, environment: var4
-                var2 = _closure1_slot1;
-                var1 = _closure1_slot2;
-                var0 = 0;
-                var1 = var1[var0];
-                var0 = undefined;
-                var0 = var2.bind(var0)(var1);
-                var2 = var0.logger;
-                var1 = var2.warn;
-                var0 = 'measure() cannot be used with Chrome Debugger.';
-                var0 = var1.bind(var2)(var0);
-                var0 = null;
-                return var0;
-            };
-        case 209:
-            _fun34892_ip = 216;
-            continue _fun34892;
-        case 211:
-            var3 = function() { // Original name: measureJest, environment: var4
-                var2 = _closure1_slot1;
-                var1 = _closure1_slot2;
-                var0 = 0;
-                var1 = var1[var0];
-                var0 = undefined;
-                var0 = var2.bind(var0)(var1);
-                var2 = var0.logger;
-                var1 = var2.warn;
-                var0 = 'measure() cannot be used with Jest.';
-                var0 = var1.bind(var2)(var0);
-                var0 = null;
-                return var0;
-            };
-        case 216:
-            var1 = var3;
-        case 219:
-            var2.measure = var1;
+            var4 = _closure1_slot6;
+            var2 = undefined;
+            var1 = arg0;
+            var4 = var4.bind(var2)(var1);
+            var1 = _closure1_slot0;
+            var5 = _closure1_slot1;
+            var0 = 0;
+            var0 = var5[var0];
+            var0 = var1.bind(var2)(var0);
+            var1 = var0.convert;
+            var0 = var1.toRgb;
+            var0 = var0.bind(var1)(var4);
+            var1 = var0.r;
+            var1 = var3.bind(var2)(var1);
+            var0.r = var1;
+            var1 = var0.g;
+            var1 = var3.bind(var2)(var1);
+            var0.g = var1;
+            var1 = var0.b;
+            var1 = var3.bind(var2)(var1);
+            var0.b = var1;
             return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3682, 3681]);
+        };
+        var2 = {};
+        var3 = _closure1_slot6;
+        var2.convertOklabToLrgb = var3;
+        var5 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var3 = 0;
+        var4 = var4[var3];
+        var3 = undefined;
+        var3 = var5.bind(var3)(var4);
+        var2.lrgb = var3;
+        var0.__closure = var2;
+        var2 = 14795767520122.0;
+        var0.__workletHash = var2;
+        var1 = _closure1_slot7;
+        var0.__initData = var1;
+        return var0;
+    };
+    var4 = var4.bind(var0)();
+    var3.toRgb = var4;
+    var1.convert = var3;
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3852]);

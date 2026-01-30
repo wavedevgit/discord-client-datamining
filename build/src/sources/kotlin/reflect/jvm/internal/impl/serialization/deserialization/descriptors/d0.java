@@ -8,20 +8,20 @@ import kotlin.reflect.jvm.internal.impl.serialization.deserialization.descriptor
 public class d0 implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final DeserializedMemberScope.OptimizedImplementation f35721d;
+    private final DeserializedMemberScope.OptimizedImplementation f35737d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final DeserializedMemberScope f35722e;
+    private final DeserializedMemberScope f35738e;
 
     public d0(DeserializedMemberScope.OptimizedImplementation optimizedImplementation, DeserializedMemberScope deserializedMemberScope) {
-        this.f35721d = optimizedImplementation;
-        this.f35722e = deserializedMemberScope;
+        this.f35737d = optimizedImplementation;
+        this.f35738e = deserializedMemberScope;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         Set q10;
-        q10 = DeserializedMemberScope.OptimizedImplementation.q(this.f35721d, this.f35722e);
+        q10 = DeserializedMemberScope.OptimizedImplementation.q(this.f35737d, this.f35738e);
         return q10;
     }
 }

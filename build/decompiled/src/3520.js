@@ -4,40 +4,40 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var1;
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
-    var1 = function(arg0, arg1) { // Original name: getMapData, environment: var0
-        _fun31532: for (var _fun31532_ip = 0;;) switch (_fun31532_ip) {
+    var1 = function(arg0, arg1) { // Original name: listCacheSet, environment: var0
+        _fun31533: for (var _fun31533_ip = 0;;) switch (_fun31533_ip) {
             case 0:
+                var5 = arg0;
                 var4 = arg1;
-                var0 = arg0;
-                var2 = var0.__data__;
-                var3 = _closure1_slot0;
+                var0 = this;
+                var3 = var0.__data__;
+                var7 = _closure1_slot0;
                 var1 = _closure1_slot1;
-                var0 = 0;
-                var0 = var1[var0];
-                var1 = undefined;
-                var0 = var3.bind(var1)(var0);
-                var0 = var0.bind(var1)(var4);
-                if (var0) {
-                    _fun31532_ip = 51;
-                    continue _fun31532
+                var2 = 0;
+                var1 = var1[var2];
+                var6 = undefined;
+                var1 = var7.bind(var6)(var1);
+                var1 = var1.bind(var6)(var3, var5);
+                if (!(!(var1 < var2))) {
+                    _fun31533_ip = 61;
+                    continue _fun31533
                 }
-            case 44:
-                var0 = var2.map;
-                _fun31532_ip = 73;
-                continue _fun31532;
-            case 51:
-                var1 = 'hash';
-                var3 = 'string';
-                var4 = typeof var4;
-                if (!(var3 === var4)) {
-                    _fun31532_ip = 69;
-                    continue _fun31532
-                }
-            case 66:
-                var1 = var3;
-            case 69:
-                var0 = var2[var1];
-            case 73:
+            case 48:
+                var2 = var3[var1];
+                var1 = 1;
+                var2[var1] = var4;
+                _fun31533_ip = 97;
+                continue _fun31533;
+            case 61:
+                var1 = var0.size;
+                var1 = var1 + 1;
+                var0.size = var1;
+                var2 = var3.push;
+                var1 = new Array(2);
+                var1[0] = var5;
+                var1[1] = var4;
+                var1 = var2.bind(var3)(var1);
+            case 97:
                 return var0;
         }
     };
@@ -45,4 +45,4 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0.exports = var1;
     var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3521]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3517]);

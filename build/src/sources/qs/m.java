@@ -14,19 +14,19 @@ import kotlin.jvm.internal.Lambda;
 public abstract class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Lazy f47651a = ir.l.b(c.f47656d);
+    private static final Lazy f47667a = ir.l.b(c.f47672d);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Lazy f47652b = ir.l.b(b.f47655d);
+    private static final Lazy f47668b = ir.l.b(b.f47671d);
 
     /* renamed from: c  reason: collision with root package name */
-    private static final Lazy f47653c = ir.l.b(a.f47654d);
+    private static final Lazy f47669c = ir.l.b(a.f47670d);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static final class a extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f47654d = new a();
+        public static final a f47670d = new a();
 
         a() {
             super(0);
@@ -43,7 +43,7 @@ public abstract class m {
     static final class b extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f47655d = new b();
+        public static final b f47671d = new b();
 
         b() {
             super(0);
@@ -60,7 +60,7 @@ public abstract class m {
     static final class c extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final c f47656d = new c();
+        public static final c f47672d = new c();
 
         c() {
             super(0);
@@ -114,17 +114,17 @@ public abstract class m {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final DateTimeFormatter f() {
-        return (DateTimeFormatter) f47653c.getValue();
+        return (DateTimeFormatter) f47669c.getValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final DateTimeFormatter g() {
-        return (DateTimeFormatter) f47652b.getValue();
+        return (DateTimeFormatter) f47668b.getValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final DateTimeFormatter h() {
-        return (DateTimeFormatter) f47651a.getValue();
+        return (DateTimeFormatter) f47667a.getValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */

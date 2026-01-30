@@ -16,31 +16,31 @@ import kotlinx.coroutines.flow.FlowCollector;
 public final class o implements tm.o<k> {
 
     /* renamed from: b  reason: collision with root package name */
-    private final ActivityResultLauncher f54890b;
+    private final ActivityResultLauncher f54906b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Context f54891c;
+    private final Context f54907c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final cp.c f54892d;
+    private final cp.c f54908d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f54893e;
+    private final String f54909e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final yo.b f54894f;
+    private final yo.b f54910f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final m f54895g;
+    private final m f54911g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final List f54896h;
+    private final List f54912h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final StepStyles.UiStepStyle f54897i;
+    private final StepStyles.UiStepStyle f54913i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final Integer f54898j;
+    private final Integer f54914j;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public interface a {
@@ -51,20 +51,20 @@ public final class o implements tm.o<k> {
     static final class b extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f54899d;
+        int f54915d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f54900e;
+        private /* synthetic */ Object f54916e;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements FlowCollector {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ o f54902d;
+            final /* synthetic */ o f54918d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ FlowCollector f54903e;
+            final /* synthetic */ FlowCollector f54919e;
 
             /* JADX INFO: Access modifiers changed from: package-private */
             /* renamed from: yo.o$b$a$a  reason: collision with other inner class name */
@@ -72,16 +72,16 @@ public final class o implements tm.o<k> {
             public static final class C0765a extends kotlin.coroutines.jvm.internal.d {
 
                 /* renamed from: d  reason: collision with root package name */
-                Object f54904d;
+                Object f54920d;
 
                 /* renamed from: e  reason: collision with root package name */
-                Object f54905e;
+                Object f54921e;
 
                 /* renamed from: i  reason: collision with root package name */
-                /* synthetic */ Object f54906i;
+                /* synthetic */ Object f54922i;
 
                 /* renamed from: p  reason: collision with root package name */
-                int f54908p;
+                int f54924p;
 
                 C0765a(Continuation continuation) {
                     super(continuation);
@@ -89,19 +89,19 @@ public final class o implements tm.o<k> {
 
                 @Override // kotlin.coroutines.jvm.internal.a
                 public final Object invokeSuspend(Object obj) {
-                    this.f54906i = obj;
-                    this.f54908p |= Integer.MIN_VALUE;
+                    this.f54922i = obj;
+                    this.f54924p |= Integer.MIN_VALUE;
                     return a.this.emit(null, this);
                 }
             }
 
             a(o oVar, FlowCollector flowCollector) {
-                this.f54902d = oVar;
-                this.f54903e = flowCollector;
+                this.f54918d = oVar;
+                this.f54919e = flowCollector;
             }
 
             /* JADX WARN: Code restructure failed: missing block: B:20:0x005e, code lost:
-                if (gs.i0.a(r7.f54902d.f54891c.getResources().getInteger(yo.n.f54889a), r0) == r1) goto L21;
+                if (gs.i0.a(r7.f54918d.f54907c.getResources().getInteger(yo.n.f54905a), r0) == r1) goto L21;
              */
             /* JADX WARN: Code restructure failed: missing block: B:24:0x006f, code lost:
                 if (r9.emit(r8, r0) == r1) goto L21;
@@ -124,20 +124,20 @@ public final class o implements tm.o<k> {
                     if (r0 == 0) goto L13
                     r0 = r9
                     yo.o$b$a$a r0 = (yo.o.b.a.C0765a) r0
-                    int r1 = r0.f54908p
+                    int r1 = r0.f54924p
                     r2 = -2147483648(0xffffffff80000000, float:-0.0)
                     r3 = r1 & r2
                     if (r3 == 0) goto L13
                     int r1 = r1 - r2
-                    r0.f54908p = r1
+                    r0.f54924p = r1
                     goto L18
                 L13:
                     yo.o$b$a$a r0 = new yo.o$b$a$a
                     r0.<init>(r9)
                 L18:
-                    java.lang.Object r9 = r0.f54906i
+                    java.lang.Object r9 = r0.f54922i
                     java.lang.Object r1 = or.b.f()
-                    int r2 = r0.f54908p
+                    int r2 = r0.f54924p
                     r3 = 2
                     r4 = 1
                     if (r2 == 0) goto L40
@@ -151,40 +151,40 @@ public final class o implements tm.o<k> {
                     r8.<init>(r9)
                     throw r8
                 L34:
-                    java.lang.Object r8 = r0.f54905e
+                    java.lang.Object r8 = r0.f54921e
                     yo.k r8 = (yo.k) r8
-                    java.lang.Object r2 = r0.f54904d
+                    java.lang.Object r2 = r0.f54920d
                     yo.o$b$a r2 = (yo.o.b.a) r2
                     kotlin.c.b(r9)     // Catch: android.content.res.Resources.NotFoundException -> L62
                     goto L62
                 L40:
                     kotlin.c.b(r9)
-                    yo.o r9 = r7.f54902d     // Catch: android.content.res.Resources.NotFoundException -> L61
+                    yo.o r9 = r7.f54918d     // Catch: android.content.res.Resources.NotFoundException -> L61
                     android.content.Context r9 = yo.o.c(r9)     // Catch: android.content.res.Resources.NotFoundException -> L61
                     android.content.res.Resources r9 = r9.getResources()     // Catch: android.content.res.Resources.NotFoundException -> L61
-                    int r2 = yo.n.f54889a     // Catch: android.content.res.Resources.NotFoundException -> L61
+                    int r2 = yo.n.f54905a     // Catch: android.content.res.Resources.NotFoundException -> L61
                     int r9 = r9.getInteger(r2)     // Catch: android.content.res.Resources.NotFoundException -> L61
                     long r5 = (long) r9     // Catch: android.content.res.Resources.NotFoundException -> L61
-                    r0.f54904d = r7     // Catch: android.content.res.Resources.NotFoundException -> L61
-                    r0.f54905e = r8     // Catch: android.content.res.Resources.NotFoundException -> L61
-                    r0.f54908p = r4     // Catch: android.content.res.Resources.NotFoundException -> L61
+                    r0.f54920d = r7     // Catch: android.content.res.Resources.NotFoundException -> L61
+                    r0.f54921e = r8     // Catch: android.content.res.Resources.NotFoundException -> L61
+                    r0.f54924p = r4     // Catch: android.content.res.Resources.NotFoundException -> L61
                     java.lang.Object r9 = gs.i0.a(r5, r0)     // Catch: android.content.res.Resources.NotFoundException -> L61
                     if (r9 != r1) goto L61
                     goto L71
                 L61:
                     r2 = r7
                 L62:
-                    kotlinx.coroutines.flow.FlowCollector r9 = r2.f54903e
+                    kotlinx.coroutines.flow.FlowCollector r9 = r2.f54919e
                     r2 = 0
-                    r0.f54904d = r2
-                    r0.f54905e = r2
-                    r0.f54908p = r3
+                    r0.f54920d = r2
+                    r0.f54921e = r2
+                    r0.f54924p = r3
                     java.lang.Object r8 = r9.emit(r8, r0)
                     if (r8 != r1) goto L72
                 L71:
                     return r1
                 L72:
-                    kotlin.Unit r8 = kotlin.Unit.f33282a
+                    kotlin.Unit r8 = kotlin.Unit.f33298a
                     return r8
                 */
                 throw new UnsupportedOperationException("Method not decompiled: yo.o.b.a.emit(yo.k, kotlin.coroutines.Continuation):java.lang.Object");
@@ -198,7 +198,7 @@ public final class o implements tm.o<k> {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             b bVar = new b(continuation);
-            bVar.f54900e = obj;
+            bVar.f54916e = obj;
             return bVar;
         }
 
@@ -223,7 +223,7 @@ public final class o implements tm.o<k> {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((b) create(flowCollector, continuation)).invokeSuspend(Unit.f33282a);
+            return ((b) create(flowCollector, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -235,15 +235,15 @@ public final class o implements tm.o<k> {
         Intrinsics.checkNotNullParameter(mrzKey, "mrzKey");
         Intrinsics.checkNotNullParameter(passportNfcStrings, "passportNfcStrings");
         Intrinsics.checkNotNullParameter(enabledDataGroups, "enabledDataGroups");
-        this.f54890b = passportNfcReaderLauncher;
-        this.f54891c = context;
-        this.f54892d = sandboxFlags;
-        this.f54893e = cardAccessNumber;
-        this.f54894f = mrzKey;
-        this.f54895g = passportNfcStrings;
-        this.f54896h = enabledDataGroups;
-        this.f54897i = uiStepStyle;
-        this.f54898j = num;
+        this.f54906b = passportNfcReaderLauncher;
+        this.f54907c = context;
+        this.f54908d = sandboxFlags;
+        this.f54909e = cardAccessNumber;
+        this.f54910f = mrzKey;
+        this.f54911g = passportNfcStrings;
+        this.f54912h = enabledDataGroups;
+        this.f54913i = uiStepStyle;
+        this.f54914j = num;
     }
 
     @Override // tm.o

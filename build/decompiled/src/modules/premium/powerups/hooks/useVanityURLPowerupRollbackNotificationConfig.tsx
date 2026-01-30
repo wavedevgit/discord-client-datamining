@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/powerups/hooks/useVanityURLPowerupRollbackNotificationConfig.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0, arg1) { // Original name: useVanityURLPowerupRollbackNotificationConfig, environment: var1
-        _fun102677: for (var _fun102677_ip = 0;;) switch (_fun102677_ip) {
+        _fun102931: for (var _fun102931_ip = 0;;) switch (_fun102931_ip) {
             case 0:
                 var7 = arg0;
                 var _closure2_slot0 = var7;
@@ -57,7 +57,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = new Array(1);
                 var6[0] = var5;
                 var5 = function() { // Environment: var0
-                    _fun102678: for (var _fun102678_ip = 0;;) switch (_fun102678_ip) {
+                    _fun102932: for (var _fun102932_ip = 0;;) switch (_fun102932_ip) {
                         case 0:
                             var2 = _closure1_slot3;
                             var1 = var2.getGuild;
@@ -67,8 +67,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var0 == var1;
                             var0 = undefined;
                             if (var2) {
-                                _fun102678_ip = 41;
-                                continue _fun102678
+                                _fun102932_ip = 41;
+                                continue _fun102932
                             }
                         case 35:
                             var0 = var1.features;
@@ -95,8 +95,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var12 == var0;
                 var3 = undefined;
                 if (var1) {
-                    _fun102677_ip = 150;
-                    continue _fun102677
+                    _fun102931_ip = 150;
+                    continue _fun102931
                 }
             case 114:
                 var1 = var0.allPowerups;
@@ -125,8 +125,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var3;
                 var8 = undefined;
                 if (var1) {
-                    _fun102677_ip = 225;
-                    continue _fun102677
+                    _fun102931_ip = 225;
+                    continue _fun102931
                 }
             case 219:
                 var8 = var13.storeRemovalDate;
@@ -134,8 +134,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var12 == var6;
                 var3 = undefined;
                 if (var1) {
-                    _fun102677_ip = 254;
-                    continue _fun102677
+                    _fun102931_ip = 254;
+                    continue _fun102931
                 }
             case 234:
                 var5 = var6.has;
@@ -145,29 +145,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 254:
                 var1 = var12 != var3;
                 if (!var1) {
-                    _fun102677_ip = 264;
-                    continue _fun102677
+                    _fun102931_ip = 264;
+                    continue _fun102931
                 }
             case 261:
                 var1 = var3;
             case 264:
                 if (!var2) {
-                    _fun102677_ip = 271;
-                    continue _fun102677
+                    _fun102931_ip = 271;
+                    continue _fun102931
                 }
             case 267:
                 var2 = var12 != var8;
             case 271:
                 if (!var2) {
-                    _fun102677_ip = 277;
-                    continue _fun102677
+                    _fun102931_ip = 277;
+                    continue _fun102931
                 }
             case 274:
                 var2 = !var1;
             case 277:
                 if (!var2) {
-                    _fun102677_ip = 299;
-                    continue _fun102677
+                    _fun102931_ip = 299;
+                    continue _fun102931
                 }
             case 280:
                 var1 = var0.type;
@@ -179,8 +179,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.shouldShow = var2;
                 var1 = null;
                 if (!var2) {
-                    _fun102677_ip = 486;
-                    continue _fun102677
+                    _fun102931_ip = 486;
+                    continue _fun102931
                 }
             case 314:
                 var2 = {};
@@ -200,8 +200,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var12 == var13;
                 var12 = undefined;
                 if (var14) {
-                    _fun102677_ip = 386;
-                    continue _fun102677
+                    _fun102931_ip = 386;
+                    continue _fun102931
                 }
             case 381:
                 var12 = var13.title;
@@ -235,4 +235,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 6674, 6675, 660, 566, 6598, 13341, 13339, 1234, 1881, 13342, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 6677, 6678, 660, 566, 6601, 13366, 13364, 1234, 1881, 13367, 2]);

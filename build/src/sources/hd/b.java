@@ -36,14 +36,14 @@ public final class b extends e {
                     if (h13 != 3) {
                     }
                     while (g0Var.d() < d12) {
-                        str = g0Var.l(g0Var.h(8), d.f28519a);
+                        str = g0Var.l(g0Var.h(8), d.f28535a);
                         int h14 = g0Var.h(8);
                         for (int i10 = 0; i10 < h14; i10++) {
                             g0Var.s(g0Var.h(8));
                         }
                     }
                 } else if (h11 == 21) {
-                    str2 = g0Var.l(h12, d.f28519a);
+                    str2 = g0Var.l(h12, d.f28535a);
                 }
                 g0Var.p(d12 * 8);
             }

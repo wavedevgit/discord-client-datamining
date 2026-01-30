@@ -28,10 +28,10 @@ public class TypeUtils {
     public static class SpecialType extends DelegatingSimpleType {
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f35914e;
+        private final String f35930e;
 
         public SpecialType(String str) {
-            this.f35914e = str;
+            this.f35930e = str;
         }
 
         /* JADX WARN: Removed duplicated region for block: B:23:0x0036  */
@@ -125,7 +125,7 @@ public class TypeUtils {
 
         @Override // kotlin.reflect.jvm.internal.impl.types.DelegatingSimpleType
         protected SimpleType getDelegate() {
-            throw new IllegalStateException(this.f35914e);
+            throw new IllegalStateException(this.f35930e);
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.types.DelegatingSimpleType, kotlin.reflect.jvm.internal.impl.types.UnwrappedType, kotlin.reflect.jvm.internal.impl.types.KotlinType
@@ -143,13 +143,13 @@ public class TypeUtils {
             if (simpleType == null) {
                 b(2);
             }
-            throw new IllegalStateException(this.f35914e);
+            throw new IllegalStateException(this.f35930e);
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.types.SimpleType
         @NotNull
         public String toString() {
-            String str = this.f35914e;
+            String str = this.f35930e;
             if (str == null) {
                 b(1);
             }
@@ -159,7 +159,7 @@ public class TypeUtils {
         @Override // kotlin.reflect.jvm.internal.impl.types.UnwrappedType
         @NotNull
         public SimpleType makeNullableAsSpecified(boolean z10) {
-            throw new IllegalStateException(this.f35914e);
+            throw new IllegalStateException(this.f35930e);
         }
 
         @Override // kotlin.reflect.jvm.internal.impl.types.UnwrappedType
@@ -168,7 +168,7 @@ public class TypeUtils {
             if (typeAttributes == null) {
                 b(0);
             }
-            throw new IllegalStateException(this.f35914e);
+            throw new IllegalStateException(this.f35930e);
         }
     }
 

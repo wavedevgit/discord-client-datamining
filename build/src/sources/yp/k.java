@@ -9,29 +9,29 @@ import kotlinx.coroutines.flow.MutableStateFlow;
 public final class k {
 
     /* renamed from: a  reason: collision with root package name */
-    private final MutableStateFlow f54945a;
+    private final MutableStateFlow f54961a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Flow f54946b;
+    private final Flow f54962b;
 
     public k(List initialValue) {
         Intrinsics.checkNotNullParameter(initialValue, "initialValue");
         MutableStateFlow a10 = l0.a(initialValue);
-        this.f54945a = a10;
-        this.f54946b = js.g.m(a10, 1);
+        this.f54961a = a10;
+        this.f54962b = js.g.m(a10, 1);
     }
 
     public final Flow a() {
-        return this.f54946b;
+        return this.f54962b;
     }
 
     public final List b() {
-        return (List) this.f54945a.getValue();
+        return (List) this.f54961a.getValue();
     }
 
     public final void c(List value) {
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f54945a.setValue(value);
+        this.f54961a.setValue(value);
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

@@ -5,7 +5,7 @@ import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 public class q {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final /* synthetic */ AtomicReferenceFieldUpdater f37473a = AtomicReferenceFieldUpdater.newUpdater(q.class, Object.class, "_cur$volatile");
+    private static final /* synthetic */ AtomicReferenceFieldUpdater f37489a = AtomicReferenceFieldUpdater.newUpdater(q.class, Object.class, "_cur$volatile");
     private volatile /* synthetic */ Object _cur$volatile;
 
     public q(boolean z10) {
@@ -13,7 +13,7 @@ public class q {
     }
 
     public final boolean a(Object obj) {
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f37473a;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f37489a;
         while (true) {
             r rVar = (r) atomicReferenceFieldUpdater.get(this);
             int a10 = rVar.a(obj);
@@ -25,35 +25,35 @@ public class q {
                     return false;
                 }
             } else {
-                androidx.concurrent.futures.b.a(f37473a, this, rVar, rVar.l());
+                androidx.concurrent.futures.b.a(f37489a, this, rVar, rVar.l());
             }
         }
     }
 
     public final void b() {
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f37473a;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f37489a;
         while (true) {
             r rVar = (r) atomicReferenceFieldUpdater.get(this);
             if (rVar.d()) {
                 return;
             }
-            androidx.concurrent.futures.b.a(f37473a, this, rVar, rVar.l());
+            androidx.concurrent.futures.b.a(f37489a, this, rVar, rVar.l());
         }
     }
 
     public final int c() {
-        return ((r) f37473a.get(this)).g();
+        return ((r) f37489a.get(this)).g();
     }
 
     public final Object e() {
-        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f37473a;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f37489a;
         while (true) {
             r rVar = (r) atomicReferenceFieldUpdater.get(this);
             Object m10 = rVar.m();
-            if (m10 != r.f37477h) {
+            if (m10 != r.f37493h) {
                 return m10;
             }
-            androidx.concurrent.futures.b.a(f37473a, this, rVar, rVar.l());
+            androidx.concurrent.futures.b.a(f37489a, this, rVar, rVar.l());
         }
     }
 }

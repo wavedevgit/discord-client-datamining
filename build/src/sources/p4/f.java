@@ -7,10 +7,10 @@ import java.util.List;
 public final class f implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final r3.u f44880a;
+    private final r3.u f44896a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r3.i f44881b;
+    private final r3.i f44897b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a extends r3.i {
@@ -40,8 +40,8 @@ public final class f implements e {
     }
 
     public f(r3.u uVar) {
-        this.f44880a = uVar;
-        this.f44881b = new a(uVar);
+        this.f44896a = uVar;
+        this.f44897b = new a(uVar);
     }
 
     public static List c() {
@@ -50,13 +50,13 @@ public final class f implements e {
 
     @Override // p4.e
     public void a(d dVar) {
-        this.f44880a.d();
-        this.f44880a.e();
+        this.f44896a.d();
+        this.f44896a.e();
         try {
-            this.f44881b.j(dVar);
-            this.f44880a.A();
+            this.f44897b.j(dVar);
+            this.f44896a.A();
         } finally {
-            this.f44880a.i();
+            this.f44896a.i();
         }
     }
 
@@ -68,9 +68,9 @@ public final class f implements e {
         } else {
             l10.g1(1, str);
         }
-        this.f44880a.d();
+        this.f44896a.d();
         Long l11 = null;
-        Cursor b10 = t3.b.b(this.f44880a, l10, false, null);
+        Cursor b10 = t3.b.b(this.f44896a, l10, false, null);
         try {
             if (b10.moveToFirst() && !b10.isNull(0)) {
                 l11 = Long.valueOf(b10.getLong(0));

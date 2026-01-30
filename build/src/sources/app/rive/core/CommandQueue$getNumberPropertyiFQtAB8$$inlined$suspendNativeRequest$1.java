@@ -79,7 +79,7 @@ public final class CommandQueue$getNumberPropertyiFQtAB8$$inlined$suspendNativeR
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj2) {
                 invoke((Throwable) obj2);
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
 
             public final void invoke(Throwable th2) {
@@ -103,6 +103,6 @@ public final class CommandQueue$getNumberPropertyiFQtAB8$$inlined$suspendNativeR
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(@NotNull CoroutineScope coroutineScope, Continuation<? super Float> continuation) {
-        return ((CommandQueue$getNumberPropertyiFQtAB8$$inlined$suspendNativeRequest$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((CommandQueue$getNumberPropertyiFQtAB8$$inlined$suspendNativeRequest$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

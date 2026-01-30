@@ -166,14 +166,14 @@ public abstract class g extends Drawable implements Animatable {
             ObjectAnimator ofFloat = ObjectAnimator.ofFloat(this, f16281z, 0.0f, 1.0f);
             this.f16285o = ofFloat;
             ofFloat.setDuration(500L);
-            this.f16285o.setInterpolator(zg.a.f55659b);
+            this.f16285o.setInterpolator(zg.a.f55675b);
             p(this.f16285o);
         }
         if (this.f16286p == null) {
             ObjectAnimator ofFloat2 = ObjectAnimator.ofFloat(this, f16281z, 1.0f, 0.0f);
             this.f16286p = ofFloat2;
             ofFloat2.setDuration(500L);
-            this.f16286p.setInterpolator(zg.a.f55659b);
+            this.f16286p.setInterpolator(zg.a.f55675b);
             o(this.f16286p);
         }
     }

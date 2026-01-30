@@ -50,7 +50,7 @@ public final class j implements n0.i {
                     y0.l("ScreenFlashWrapper", "apply: pendingListener is null!");
                 }
                 this$0.e();
-                Unit unit = Unit.f33282a;
+                Unit unit = Unit.f33298a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -65,7 +65,7 @@ public final class j implements n0.i {
                     n0.i iVar = this.f22509a;
                     if (iVar != null) {
                         iVar.clear();
-                        unit = Unit.f33282a;
+                        unit = Unit.f33298a;
                     } else {
                         unit = null;
                     }
@@ -76,7 +76,7 @@ public final class j implements n0.i {
                     y0.l("ScreenFlashWrapper", "completePendingScreenFlashClear: none pending!");
                 }
                 this.f22511c = false;
-                Unit unit2 = Unit.f33282a;
+                Unit unit2 = Unit.f33298a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -91,7 +91,7 @@ public final class j implements n0.i {
                     jVar.a();
                 }
                 this.f22512d = null;
-                Unit unit = Unit.f33282a;
+                Unit unit = Unit.f33298a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -109,7 +109,7 @@ public final class j implements n0.i {
         synchronized (this.f22510b) {
             this.f22511c = true;
             this.f22512d = screenFlashListener;
-            Unit unit2 = Unit.f33282a;
+            Unit unit2 = Unit.f33298a;
         }
         n0.i iVar = this.f22509a;
         if (iVar != null) {
@@ -119,7 +119,7 @@ public final class j implements n0.i {
                     j.c(j.this);
                 }
             });
-            unit = Unit.f33282a;
+            unit = Unit.f33298a;
         } else {
             unit = null;
         }

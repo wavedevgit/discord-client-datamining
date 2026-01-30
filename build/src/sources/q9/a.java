@@ -9,13 +9,13 @@ import kotlin.text.StringsKt;
 public final class a implements CacheKey {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final C0563a f47019c = new C0563a(null);
+    public static final C0563a f47035c = new C0563a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final boolean f47020a;
+    private final boolean f47036a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f47021b;
+    private final String f47037b;
 
     /* renamed from: q9.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -29,13 +29,13 @@ public final class a implements CacheKey {
     }
 
     public a(int i10, boolean z10) {
-        this.f47020a = z10;
-        this.f47021b = "anim://" + i10;
+        this.f47036a = z10;
+        this.f47037b = "anim://" + i10;
     }
 
     @Override // com.facebook.cache.common.CacheKey
     public String a() {
-        return this.f47021b;
+        return this.f47037b;
     }
 
     @Override // com.facebook.cache.common.CacheKey
@@ -43,7 +43,7 @@ public final class a implements CacheKey {
         Intrinsics.checkNotNullParameter(uri, "uri");
         String uri2 = uri.toString();
         Intrinsics.checkNotNullExpressionValue(uri2, "toString(...)");
-        return StringsKt.P(uri2, this.f47021b, false, 2, null);
+        return StringsKt.P(uri2, this.f47037b, false, 2, null);
     }
 
     @Override // com.facebook.cache.common.CacheKey
@@ -53,23 +53,23 @@ public final class a implements CacheKey {
 
     @Override // com.facebook.cache.common.CacheKey
     public boolean equals(Object obj) {
-        if (!this.f47020a) {
+        if (!this.f47036a) {
             return super.equals(obj);
         }
         if (this == obj) {
             return true;
         }
         if (obj != null && Intrinsics.areEqual(a.class, obj.getClass())) {
-            return Intrinsics.areEqual(this.f47021b, ((a) obj).f47021b);
+            return Intrinsics.areEqual(this.f47037b, ((a) obj).f47037b);
         }
         return false;
     }
 
     @Override // com.facebook.cache.common.CacheKey
     public int hashCode() {
-        if (!this.f47020a) {
+        if (!this.f47036a) {
             return super.hashCode();
         }
-        return this.f47021b.hashCode();
+        return this.f47037b.hashCode();
     }
 }

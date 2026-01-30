@@ -27,7 +27,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/tti_analytics/isTTIAutomationEnabled.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Original name: isTTIAutomationEnabled, environment: var1
-        _fun35178: for (var _fun35178_ip = 0;;) switch (_fun35178_ip) {
+        _fun35229: for (var _fun35229_ip = 0;;) switch (_fun35229_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -38,8 +38,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.isAndroid;
                 var0 = var0.bind(var2)();
                 if (!var0) {
-                    _fun35178_ip = 58;
-                    continue _fun35178
+                    _fun35229_ip = 58;
+                    continue _fun35229
                 }
             case 38:
                 var1 = _closure1_slot2;

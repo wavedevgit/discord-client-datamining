@@ -14,19 +14,19 @@ public abstract class s {
     static final class a extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Parcelable f51311d;
+        final /* synthetic */ Parcelable f51327d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(Parcelable parcelable) {
             super(1);
-            this.f51311d = parcelable;
+            this.f51327d = parcelable;
         }
 
         public final void a(BufferedSink bufferedSink) {
             Intrinsics.checkNotNullParameter(bufferedSink, "bufferedSink");
             Parcel obtain = Parcel.obtain();
             Intrinsics.checkNotNullExpressionValue(obtain, "obtain()");
-            obtain.writeParcelable(this.f51311d, 0);
+            obtain.writeParcelable(this.f51327d, 0);
             byte[] byteArray = obtain.marshall();
             Intrinsics.checkNotNullExpressionValue(byteArray, "byteArray");
             bufferedSink.write(byteArray);
@@ -36,12 +36,12 @@ public abstract class s {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((BufferedSink) obj);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
     }
 
     public static final tm.i a(Parcelable parcelable) {
         Intrinsics.checkNotNullParameter(parcelable, "<this>");
-        return tm.i.f49706c.c(new a(parcelable));
+        return tm.i.f49722c.c(new a(parcelable));
     }
 }

@@ -60,7 +60,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/checkpoint/native/components/CheckpointBoxShadow.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: CheckpointBoxShadow, environment: var1
-        _fun86468: for (var _fun86468_ip = 0;;) switch (_fun86468_ip) {
+        _fun86514: for (var _fun86514_ip = 0;;) switch (_fun86514_ip) {
             case 0:
                 var1 = arg0;
                 var13 = var1.selected;
@@ -149,8 +149,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17.transform = var18;
                 var18 = var16;
                 if (!var13) {
-                    _fun86468_ip = 320;
-                    continue _fun86468
+                    _fun86514_ip = 320;
+                    continue _fun86514
                 }
             case 291:
                 var19 = global;
@@ -180,8 +180,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9[0] = var11;
                 var11 = {};
                 if (!var13) {
-                    _fun86468_ip = 406;
-                    continue _fun86468
+                    _fun86514_ip = 406;
+                    continue _fun86514
                 }
             case 403:
                 var15 = var16;
@@ -189,8 +189,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11.borderColor = var15;
                 var11.borderWidth = var14;
                 if (!var13) {
-                    _fun86468_ip = 448;
-                    continue _fun86468
+                    _fun86514_ip = 448;
+                    continue _fun86514
                 }
             case 419:
                 var13 = global;
@@ -214,4 +214,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 671, 11130, 3110, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 671, 11136, 3110, 2]);

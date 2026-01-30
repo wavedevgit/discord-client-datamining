@@ -3,9 +3,9 @@ package im;
 public abstract class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final em.b f28607a = new em.b(0.0d, 0.0d, 0.0d, 0.0d, 0.0d, 0.0d, -1, -1);
+    private static final em.b f28623a = new em.b(0.0d, 0.0d, 0.0d, 0.0d, 0.0d, 0.0d, -1, -1);
 
     public static final em.b a() {
-        return f28607a;
+        return f28623a;
     }
 }

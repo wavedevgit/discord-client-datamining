@@ -17,23 +17,23 @@ public abstract /* synthetic */ class y {
     public static final class a implements FlowCollector {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ h f49758d;
+        final /* synthetic */ h f49774d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Function1 f49759e;
+        final /* synthetic */ Function1 f49775e;
 
         public a(h hVar, Function1 function1) {
-            this.f49758d = hVar;
-            this.f49759e = function1;
+            this.f49774d = hVar;
+            this.f49775e = function1;
         }
 
         @Override // kotlinx.coroutines.flow.FlowCollector
         public Object emit(Object obj, Continuation continuation) {
-            Object m10 = w.m(this.f49758d, (r) this.f49759e.invoke(obj), continuation);
+            Object m10 = w.m(this.f49774d, (r) this.f49775e.invoke(obj), continuation);
             if (m10 == or.b.f()) {
                 return m10;
             }
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
     }
 
@@ -41,30 +41,30 @@ public abstract /* synthetic */ class y {
     public static final class b extends r {
 
         /* renamed from: c  reason: collision with root package name */
-        final /* synthetic */ r f49760c;
+        final /* synthetic */ r f49776c;
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ CancellableContinuation f49761d;
+        final /* synthetic */ CancellableContinuation f49777d;
 
         b(r rVar, CancellableContinuation cancellableContinuation) {
-            this.f49760c = rVar;
-            this.f49761d = cancellableContinuation;
+            this.f49776c = rVar;
+            this.f49777d = cancellableContinuation;
         }
 
         @Override // tm.r
         public void a(r.c cVar) {
             Intrinsics.checkNotNullParameter(cVar, "<this>");
-            if (!this.f49761d.a()) {
+            if (!this.f49777d.a()) {
                 return;
             }
-            this.f49760c.a(cVar);
-            CancellableContinuation cancellableContinuation = this.f49761d;
-            Result.a aVar = Result.f33279e;
-            cancellableContinuation.resumeWith(Result.b(Unit.f33282a));
+            this.f49776c.a(cVar);
+            CancellableContinuation cancellableContinuation = this.f49777d;
+            Result.a aVar = Result.f33295e;
+            cancellableContinuation.resumeWith(Result.b(Unit.f33298a));
         }
 
         public String toString() {
-            return "sendAndAwaitApplication(" + this.f49760c + ')';
+            return "sendAndAwaitApplication(" + this.f49776c + ')';
         }
     }
 
@@ -73,7 +73,7 @@ public abstract /* synthetic */ class y {
         if (collect == or.b.f()) {
             return collect;
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     public static final Object b(h hVar, r rVar, Continuation continuation) {
@@ -87,6 +87,6 @@ public abstract /* synthetic */ class y {
         if (B == or.b.f()) {
             return B;
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 }

@@ -7,7 +7,7 @@ import kotlin.jvm.internal.Intrinsics;
 public final class p extends z {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final b f32984e = new b(null);
+    public static final b f33000e = new b(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class b {
@@ -31,7 +31,7 @@ public final class p extends z {
     }
 
     public static final p e(Class cls) {
-        return f32984e.a(cls);
+        return f33000e.a(cls);
     }
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
@@ -45,7 +45,7 @@ public final class p extends z {
         @Override // k4.z.a
         /* renamed from: k */
         public p b() {
-            if (c() && g().f44919j.h()) {
+            if (c() && g().f44935j.h()) {
                 throw new IllegalArgumentException("Cannot set backoff criteria on an idle mode job");
             }
             return new p(this);

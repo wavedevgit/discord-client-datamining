@@ -7,42 +7,42 @@ import kotlin.jvm.internal.markers.KMappedMarker;
 public final class b implements Sequence, c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Sequence f36138a;
+    private final Sequence f36154a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f36139b;
+    private final int f36155b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a implements Iterator, KMappedMarker {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Iterator f36140d;
+        private final Iterator f36156d;
 
         /* renamed from: e  reason: collision with root package name */
-        private int f36141e;
+        private int f36157e;
 
         a(b bVar) {
-            this.f36140d = bVar.f36138a.iterator();
-            this.f36141e = bVar.f36139b;
+            this.f36156d = bVar.f36154a.iterator();
+            this.f36157e = bVar.f36155b;
         }
 
         private final void a() {
-            while (this.f36141e > 0 && this.f36140d.hasNext()) {
-                this.f36140d.next();
-                this.f36141e--;
+            while (this.f36157e > 0 && this.f36156d.hasNext()) {
+                this.f36156d.next();
+                this.f36157e--;
             }
         }
 
         @Override // java.util.Iterator
         public boolean hasNext() {
             a();
-            return this.f36140d.hasNext();
+            return this.f36156d.hasNext();
         }
 
         @Override // java.util.Iterator
         public Object next() {
             a();
-            return this.f36140d.next();
+            return this.f36156d.next();
         }
 
         @Override // java.util.Iterator
@@ -53,8 +53,8 @@ public final class b implements Sequence, c {
 
     public b(Sequence sequence, int i10) {
         Intrinsics.checkNotNullParameter(sequence, "sequence");
-        this.f36138a = sequence;
-        this.f36139b = i10;
+        this.f36154a = sequence;
+        this.f36155b = i10;
         if (i10 >= 0) {
             return;
         }
@@ -63,11 +63,11 @@ public final class b implements Sequence, c {
 
     @Override // kotlin.sequences.c
     public Sequence a(int i10) {
-        int i11 = this.f36139b + i10;
+        int i11 = this.f36155b + i10;
         if (i11 < 0) {
             return new b(this, i10);
         }
-        return new b(this.f36138a, i11);
+        return new b(this.f36154a, i11);
     }
 
     @Override // kotlin.sequences.Sequence

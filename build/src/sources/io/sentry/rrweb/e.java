@@ -15,28 +15,28 @@ import org.jetbrains.annotations.NotNull;
 public final class e extends d implements w1 {
 
     /* renamed from: o  reason: collision with root package name */
-    private b f30640o;
+    private b f30656o;
 
     /* renamed from: p  reason: collision with root package name */
-    private int f30641p;
+    private int f30657p;
 
     /* renamed from: q  reason: collision with root package name */
-    private float f30642q;
+    private float f30658q;
 
     /* renamed from: r  reason: collision with root package name */
-    private float f30643r;
+    private float f30659r;
 
     /* renamed from: s  reason: collision with root package name */
-    private int f30644s;
+    private int f30660s;
 
     /* renamed from: t  reason: collision with root package name */
-    private int f30645t;
+    private int f30661t;
 
     /* renamed from: u  reason: collision with root package name */
-    private Map f30646u;
+    private Map f30662u;
 
     /* renamed from: v  reason: collision with root package name */
-    private Map f30647v;
+    private Map f30663v;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -88,22 +88,22 @@ public final class e extends d implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        eVar.f30642q = e3Var.nextFloat();
+                        eVar.f30658q = e3Var.nextFloat();
                         break;
                     case 1:
-                        eVar.f30643r = e3Var.nextFloat();
+                        eVar.f30659r = e3Var.nextFloat();
                         break;
                     case 2:
-                        eVar.f30641p = e3Var.nextInt();
+                        eVar.f30657p = e3Var.nextInt();
                         break;
                     case 3:
-                        eVar.f30640o = (b) e3Var.G0(iLogger, new b.a());
+                        eVar.f30656o = (b) e3Var.G0(iLogger, new b.a());
                         break;
                     case 4:
-                        eVar.f30644s = e3Var.nextInt();
+                        eVar.f30660s = e3Var.nextInt();
                         break;
                     case 5:
-                        eVar.f30645t = e3Var.nextInt();
+                        eVar.f30661t = e3Var.nextInt();
                         break;
                     default:
                         if (!aVar.a(eVar, l02, e3Var, iLogger)) {
@@ -179,22 +179,22 @@ public final class e extends d implements w1 {
 
     public e() {
         super(d.b.MouseInteraction);
-        this.f30644s = 2;
+        this.f30660s = 2;
     }
 
     private void o(f3 f3Var, ILogger iLogger) {
         f3Var.r();
         new d.c().a(this, f3Var, iLogger);
-        f3Var.e("type").j(iLogger, this.f30640o);
-        f3Var.e(StackTraceHelper.ID_KEY).b(this.f30641p);
-        f3Var.e("x").c(this.f30642q);
-        f3Var.e("y").c(this.f30643r);
-        f3Var.e("pointerType").b(this.f30644s);
-        f3Var.e("pointerId").b(this.f30645t);
-        Map map = this.f30647v;
+        f3Var.e("type").j(iLogger, this.f30656o);
+        f3Var.e(StackTraceHelper.ID_KEY).b(this.f30657p);
+        f3Var.e("x").c(this.f30658q);
+        f3Var.e("y").c(this.f30659r);
+        f3Var.e("pointerType").b(this.f30660s);
+        f3Var.e("pointerId").b(this.f30661t);
+        Map map = this.f30663v;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f30647v.get(str);
+                Object obj = this.f30663v.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -203,19 +203,19 @@ public final class e extends d implements w1 {
     }
 
     public void p(Map map) {
-        this.f30647v = map;
+        this.f30663v = map;
     }
 
     public void q(int i10) {
-        this.f30641p = i10;
+        this.f30657p = i10;
     }
 
     public void r(b bVar) {
-        this.f30640o = bVar;
+        this.f30656o = bVar;
     }
 
     public void s(int i10) {
-        this.f30645t = i10;
+        this.f30661t = i10;
     }
 
     @Override // io.sentry.w1
@@ -224,10 +224,10 @@ public final class e extends d implements w1 {
         new b.C0403b().a(this, f3Var, iLogger);
         f3Var.e("data");
         o(f3Var, iLogger);
-        Map map = this.f30646u;
+        Map map = this.f30662u;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f30646u.get(str);
+                Object obj = this.f30662u.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -236,14 +236,14 @@ public final class e extends d implements w1 {
     }
 
     public void t(Map map) {
-        this.f30646u = map;
+        this.f30662u = map;
     }
 
     public void u(float f10) {
-        this.f30642q = f10;
+        this.f30658q = f10;
     }
 
     public void v(float f10) {
-        this.f30643r = f10;
+        this.f30659r = f10;
     }
 }

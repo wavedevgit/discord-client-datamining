@@ -13,51 +13,51 @@ public final class d implements Parcelable {
     public static final Parcelable.Creator<d> CREATOR;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final d f27085d = new d("NetworkError", 0);
+    public static final d f27101d = new d("NetworkError", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final d f27086e = new d("CameraPermissionError", 1);
+    public static final d f27102e = new d("CameraPermissionError", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final d f27087i = new d("SdkConfigurationError", 2);
+    public static final d f27103i = new d("SdkConfigurationError", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    public static final d f27088o = new d("CameraCompatibilityError", 3);
+    public static final d f27104o = new d("CameraCompatibilityError", 3);
 
     /* renamed from: p  reason: collision with root package name */
-    public static final d f27089p = new d("IntegrationError", 4);
+    public static final d f27105p = new d("IntegrationError", 4);
 
     /* renamed from: q  reason: collision with root package name */
-    public static final d f27090q = new d("SessionTokenError", 5);
+    public static final d f27106q = new d("SessionTokenError", 5);
 
     /* renamed from: r  reason: collision with root package name */
-    public static final d f27091r = new d("RateLimitExceeded", 6);
+    public static final d f27107r = new d("RateLimitExceeded", 6);
 
     /* renamed from: s  reason: collision with root package name */
-    public static final d f27092s = new d("UnexpectedError", 7);
+    public static final d f27108s = new d("UnexpectedError", 7);
 
     /* renamed from: t  reason: collision with root package name */
-    public static final d f27093t = new d("NoDiskSpaceError", 8);
+    public static final d f27109t = new d("NoDiskSpaceError", 8);
 
     /* renamed from: u  reason: collision with root package name */
-    public static final d f27094u = new d("WebRtcIntegrationError", 9);
+    public static final d f27110u = new d("WebRtcIntegrationError", 9);
 
     /* renamed from: v  reason: collision with root package name */
-    public static final d f27095v = new d("InvalidOneTimeLinkCode", 10);
+    public static final d f27111v = new d("InvalidOneTimeLinkCode", 10);
 
     /* renamed from: w  reason: collision with root package name */
-    public static final d f27096w = new d("ExceptionError", 11);
+    public static final d f27112w = new d("ExceptionError", 11);
 
     /* renamed from: x  reason: collision with root package name */
-    private static final /* synthetic */ d[] f27097x;
+    private static final /* synthetic */ d[] f27113x;
 
     /* renamed from: y  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f27098y;
+    private static final /* synthetic */ EnumEntries f27114y;
 
     static {
         d[] a10 = a();
-        f27097x = a10;
-        f27098y = pr.a.a(a10);
+        f27113x = a10;
+        f27114y = pr.a.a(a10);
         CREATOR = new Parcelable.Creator() { // from class: gq.d.a
             @Override // android.os.Parcelable.Creator
             /* renamed from: a */
@@ -78,7 +78,7 @@ public final class d implements Parcelable {
     }
 
     private static final /* synthetic */ d[] a() {
-        return new d[]{f27085d, f27086e, f27087i, f27088o, f27089p, f27090q, f27091r, f27092s, f27093t, f27094u, f27095v, f27096w};
+        return new d[]{f27101d, f27102e, f27103i, f27104o, f27105p, f27106q, f27107r, f27108s, f27109t, f27110u, f27111v, f27112w};
     }
 
     public static d valueOf(String str) {
@@ -86,7 +86,7 @@ public final class d implements Parcelable {
     }
 
     public static d[] values() {
-        return (d[]) f27097x.clone();
+        return (d[]) f27113x.clone();
     }
 
     @Override // android.os.Parcelable

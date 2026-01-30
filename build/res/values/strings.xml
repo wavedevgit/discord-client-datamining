@@ -404,7 +404,7 @@
     <string name="radiogroup_description">Radio Group</string>
     <string name="range_end">Range end</string>
     <string name="range_start">Range start</string>
-    <string name="react_native_dev_server_ip">10.76.39.3</string>
+    <string name="react_native_dev_server_ip">10.76.20.9</string>
     <string name="rn_tab_description">Tab</string>
     <string name="scrollbar_description">Scroll Bar</string>
     <string name="search_menu_title">Search</string>

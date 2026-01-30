@@ -17,22 +17,22 @@ public interface SignaturePropagator {
     public static class PropagatedSignature {
 
         /* renamed from: a  reason: collision with root package name */
-        private final KotlinType f34089a;
+        private final KotlinType f34105a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final KotlinType f34090b;
+        private final KotlinType f34106b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final List f34091c;
+        private final List f34107c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final List f34092d;
+        private final List f34108d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final List f34093e;
+        private final List f34109e;
 
         /* renamed from: f  reason: collision with root package name */
-        private final boolean f34094f;
+        private final boolean f34110f;
 
         public PropagatedSignature(@NotNull KotlinType kotlinType, KotlinType kotlinType2, @NotNull List<ValueParameterDescriptor> list, @NotNull List<TypeParameterDescriptor> list2, @NotNull List<String> list3, boolean z10) {
             if (kotlinType == null) {
@@ -47,12 +47,12 @@ public interface SignaturePropagator {
             if (list3 == null) {
                 a(3);
             }
-            this.f34089a = kotlinType;
-            this.f34090b = kotlinType2;
-            this.f34091c = list;
-            this.f34092d = list2;
-            this.f34093e = list3;
-            this.f34094f = z10;
+            this.f34105a = kotlinType;
+            this.f34106b = kotlinType2;
+            this.f34107c = list;
+            this.f34108d = list2;
+            this.f34109e = list3;
+            this.f34110f = z10;
         }
 
         private static /* synthetic */ void a(int i10) {
@@ -101,7 +101,7 @@ public interface SignaturePropagator {
 
         @NotNull
         public List<String> getErrors() {
-            List<String> list = this.f34093e;
+            List<String> list = this.f34109e;
             if (list == null) {
                 a(7);
             }
@@ -109,12 +109,12 @@ public interface SignaturePropagator {
         }
 
         public KotlinType getReceiverType() {
-            return this.f34090b;
+            return this.f34106b;
         }
 
         @NotNull
         public KotlinType getReturnType() {
-            KotlinType kotlinType = this.f34089a;
+            KotlinType kotlinType = this.f34105a;
             if (kotlinType == null) {
                 a(4);
             }
@@ -123,7 +123,7 @@ public interface SignaturePropagator {
 
         @NotNull
         public List<TypeParameterDescriptor> getTypeParameters() {
-            List<TypeParameterDescriptor> list = this.f34092d;
+            List<TypeParameterDescriptor> list = this.f34108d;
             if (list == null) {
                 a(6);
             }
@@ -132,7 +132,7 @@ public interface SignaturePropagator {
 
         @NotNull
         public List<ValueParameterDescriptor> getValueParameters() {
-            List<ValueParameterDescriptor> list = this.f34091c;
+            List<ValueParameterDescriptor> list = this.f34107c;
             if (list == null) {
                 a(5);
             }
@@ -140,7 +140,7 @@ public interface SignaturePropagator {
         }
 
         public boolean hasStableParameterNames() {
-            return this.f34094f;
+            return this.f34110f;
         }
     }
 

@@ -97,7 +97,7 @@ public class c implements com.google.android.exoplayer2.source.dash.a {
         }
 
         public a(DataSource.Factory factory, int i10) {
-            this(sd.e.f48920u, factory, i10);
+            this(sd.e.f48936u, factory, i10);
         }
 
         public a(g.a aVar, DataSource.Factory factory, int i10) {
@@ -274,10 +274,10 @@ public class c implements com.google.android.exoplayer2.source.dash.a {
         int i14 = 0;
         while (i14 < this.f13832i.length) {
             j jVar = (j) n10.get(gVar.e(i14));
-            ud.b j11 = bVar.j(jVar.f50199c);
+            ud.b j11 = bVar.j(jVar.f50215c);
             b[] bVarArr = this.f13832i;
-            ud.b bVar2 = j11 == null ? (ud.b) jVar.f50199c.get(0) : j11;
-            sd.g a10 = aVar.a(i13, jVar.f50198b, z10, list, cVar3, t1Var);
+            ud.b bVar2 = j11 == null ? (ud.b) jVar.f50215c.get(0) : j11;
+            sd.g a10 = aVar.a(i13, jVar.f50214b, z10, list, cVar3, t1Var);
             long j12 = g10;
             bVarArr[i14] = new b(j12, jVar, bVar2, a10, 0L, jVar.l());
             i14++;
@@ -301,7 +301,7 @@ public class c implements com.google.android.exoplayer2.source.dash.a {
     }
 
     private long l(long j10, long j11) {
-        if (this.f13834k.f50151d && this.f13832i[0].h() != 0) {
+        if (this.f13834k.f50167d && this.f13832i[0].h() != 0) {
             return Math.max(0L, Math.min(m(j10), this.f13832i[0].i(this.f13832i[0].g(j10))) - j11);
         }
         return -9223372036854775807L;
@@ -309,18 +309,18 @@ public class c implements com.google.android.exoplayer2.source.dash.a {
 
     private long m(long j10) {
         ud.c cVar = this.f13834k;
-        long j11 = cVar.f50148a;
+        long j11 = cVar.f50164a;
         if (j11 == -9223372036854775807L) {
             return -9223372036854775807L;
         }
-        return j10 - w0.K0(j11 + cVar.d(this.f13835l).f50184b);
+        return j10 - w0.K0(j11 + cVar.d(this.f13835l).f50200b);
     }
 
     private ArrayList n() {
-        List list = this.f13834k.d(this.f13835l).f50185c;
+        List list = this.f13834k.d(this.f13835l).f50201c;
         ArrayList arrayList = new ArrayList();
         for (int i10 : this.f13826c) {
-            arrayList.addAll(((ud.a) list.get(i10)).f50140c);
+            arrayList.addAll(((ud.a) list.get(i10)).f50156c);
         }
         return arrayList;
     }
@@ -334,7 +334,7 @@ public class c implements com.google.android.exoplayer2.source.dash.a {
 
     private b r(int i10) {
         b bVar = this.f13832i[i10];
-        ud.b j10 = this.f13825b.j(bVar.f13842b.f50199c);
+        ud.b j10 = this.f13825b.j(bVar.f13842b.f50215c);
         if (j10 != null && !j10.equals(bVar.f13843c)) {
             b d10 = bVar.d(j10);
             this.f13832i[i10] = d10;
@@ -377,7 +377,7 @@ public class c implements com.google.android.exoplayer2.source.dash.a {
         c cVar3 = this;
         if (cVar3.f13836m == null) {
             long j14 = j11 - j10;
-            long K0 = w0.K0(cVar3.f13834k.f50148a) + w0.K0(cVar3.f13834k.d(cVar3.f13835l).f50184b) + j11;
+            long K0 = w0.K0(cVar3.f13834k.f50164a) + w0.K0(cVar3.f13834k.d(cVar3.f13835l).f50200b) + j11;
             e.c cVar4 = cVar3.f13831h;
             if (cVar4 != null && cVar4.h(K0)) {
                 return;
@@ -397,7 +397,7 @@ public class c implements com.google.android.exoplayer2.source.dash.a {
             while (i12 < length) {
                 b bVar = cVar3.f13832i[i12];
                 if (bVar.f13844d == null) {
-                    oVarArr2[i12] = o.f48982a;
+                    oVarArr2[i12] = o.f48998a;
                     cVar2 = cVar3;
                     nVar2 = nVar;
                     z13 = z14;
@@ -419,7 +419,7 @@ public class c implements com.google.android.exoplayer2.source.dash.a {
                     cVar2 = cVar3;
                     nVar2 = nVar3;
                     if (o10 < e10) {
-                        oVarArr[i10] = o.f48982a;
+                        oVarArr[i10] = o.f48998a;
                     } else {
                         oVarArr[i10] = new C0168c(cVar2.r(i10), o10, g10, m10);
                     }
@@ -451,12 +451,12 @@ public class c implements com.google.android.exoplayer2.source.dash.a {
                 }
                 i iVar3 = iVar2;
                 if (iVar != null || iVar3 != null) {
-                    hVar.f48947a = cVar5.p(r10, cVar5.f13828e, cVar5.f13833j.q(), cVar5.f13833j.r(), cVar5.f13833j.h(), iVar, iVar3, null);
+                    hVar.f48963a = cVar5.p(r10, cVar5.f13828e, cVar5.f13833j.q(), cVar5.f13833j.r(), cVar5.f13833j.h(), iVar, iVar3, null);
                     return;
                 }
             }
             long j15 = r10.f13845e;
-            if (cVar5.f13834k.f50151d && cVar5.f13835l == cVar.e() - 1) {
+            if (cVar5.f13834k.f50167d && cVar5.f13835l == cVar.e() - 1) {
                 z10 = z15;
             } else {
                 z10 = false;
@@ -467,7 +467,7 @@ public class c implements com.google.android.exoplayer2.source.dash.a {
                 z11 = z15;
             }
             if (r10.h() == 0) {
-                hVar.f48948b = z11;
+                hVar.f48964b = z11;
                 return;
             }
             long e11 = r10.e(K02);
@@ -490,7 +490,7 @@ public class c implements com.google.android.exoplayer2.source.dash.a {
             int i14 = (o11 > g11 ? 1 : (o11 == g11 ? 0 : -1));
             if (i14 <= 0 && (!cVar5.f13837n || i14 < 0)) {
                 if (z16 && r10.k(o11) >= j15) {
-                    hVar.f48948b = z15;
+                    hVar.f48964b = z15;
                     return;
                 }
                 int min = (int) Math.min(cVar5.f13830g, (g11 - o11) + 1);
@@ -504,10 +504,10 @@ public class c implements com.google.android.exoplayer2.source.dash.a {
                 } else {
                     j12 = -9223372036854775807L;
                 }
-                hVar.f48947a = cVar5.q(r10, cVar5.f13828e, cVar5.f13827d, cVar5.f13833j.q(), cVar5.f13833j.r(), cVar5.f13833j.h(), o11, min, j12, m10, null);
+                hVar.f48963a = cVar5.q(r10, cVar5.f13828e, cVar5.f13827d, cVar5.f13833j.q(), cVar5.f13833j.r(), cVar5.f13833j.h(), o11, min, j12, m10, null);
                 return;
             }
-            hVar.f48948b = z16;
+            hVar.f48964b = z16;
         }
     }
 
@@ -549,10 +549,10 @@ public class c implements com.google.android.exoplayer2.source.dash.a {
         if (cVar2 != null && cVar2.j(fVar)) {
             return true;
         }
-        if (!this.f13834k.f50151d && (fVar instanceof n)) {
+        if (!this.f13834k.f50167d && (fVar instanceof n)) {
             IOException iOException = cVar.f14481c;
             if ((iOException instanceof g.f) && ((g.f) iOException).f14467o == 404) {
-                b bVar = this.f13832i[this.f13833j.o(fVar.f48941d)];
+                b bVar = this.f13832i[this.f13833j.o(fVar.f48957d)];
                 long h10 = bVar.h();
                 if (h10 != -1 && h10 != 0) {
                     if (((n) fVar).g() > (bVar.f() + h10) - 1) {
@@ -562,17 +562,17 @@ public class c implements com.google.android.exoplayer2.source.dash.a {
                 }
             }
         }
-        b bVar2 = this.f13832i[this.f13833j.o(fVar.f48941d)];
-        ud.b j10 = this.f13825b.j(bVar2.f13842b.f50199c);
+        b bVar2 = this.f13832i[this.f13833j.o(fVar.f48957d)];
+        ud.b j10 = this.f13825b.j(bVar2.f13842b.f50215c);
         if (j10 != null && !bVar2.f13843c.equals(j10)) {
             return true;
         }
-        h.a k10 = k(this.f13833j, bVar2.f13842b.f50199c);
+        h.a k10 = k(this.f13833j, bVar2.f13842b.f50215c);
         if ((k10.a(2) || k10.a(1)) && (c10 = hVar.c(k10, cVar)) != null && k10.a(c10.f14477a)) {
             int i10 = c10.f14477a;
             if (i10 == 2) {
                 com.google.android.exoplayer2.trackselection.g gVar = this.f13833j;
-                return gVar.f(gVar.o(fVar.f48941d), c10.f14478b);
+                return gVar.f(gVar.o(fVar.f48957d), c10.f14478b);
             } else if (i10 == 1) {
                 this.f13825b.e(bVar2.f13843c, c10.f14478b);
                 return true;
@@ -593,10 +593,10 @@ public class c implements com.google.android.exoplayer2.source.dash.a {
     public void h(sd.f fVar) {
         tc.c b10;
         if (fVar instanceof m) {
-            int o10 = this.f13833j.o(((m) fVar).f48941d);
+            int o10 = this.f13833j.o(((m) fVar).f48957d);
             b bVar = this.f13832i[o10];
             if (bVar.f13844d == null && (b10 = bVar.f13841a.b()) != null) {
-                this.f13832i[o10] = bVar.c(new td.h(b10, bVar.f13842b.f50200d));
+                this.f13832i[o10] = bVar.c(new td.h(b10, bVar.f13842b.f50216d));
             }
         }
         e.c cVar = this.f13831h;
@@ -633,14 +633,14 @@ public class c implements com.google.android.exoplayer2.source.dash.a {
         i iVar3 = iVar;
         j jVar = bVar.f13842b;
         if (iVar3 != null) {
-            i a10 = iVar3.a(iVar2, bVar.f13843c.f50144a);
+            i a10 = iVar3.a(iVar2, bVar.f13843c.f50160a);
             if (a10 != null) {
                 iVar3 = a10;
             }
         } else {
             iVar3 = iVar2;
         }
-        return new m(dataSource, td.g.a(jVar, bVar.f13843c.f50144a, iVar3, 0, t.j()), format, i10, obj, bVar.f13841a);
+        return new m(dataSource, td.g.a(jVar, bVar.f13843c.f50160a, iVar3, 0, t.j()), format, i10, obj, bVar.f13841a);
     }
 
     protected sd.f q(b bVar, DataSource dataSource, int i10, Format format, int i11, Object obj, long j10, int i12, long j11, long j12, le.h hVar) {
@@ -653,13 +653,13 @@ public class c implements com.google.android.exoplayer2.source.dash.a {
             if (bVar.m(j10, j12)) {
                 i13 = 0;
             }
-            return new p(dataSource, td.g.a(jVar, bVar.f13843c.f50144a, l10, i13, t.j()), format, i11, obj, k10, i14, j10, i10, format);
+            return new p(dataSource, td.g.a(jVar, bVar.f13843c.f50160a, l10, i13, t.j()), format, i11, obj, k10, i14, j10, i10, format);
         }
         int i15 = 8;
         int i16 = 1;
         int i17 = 1;
         while (i16 < i12) {
-            i a10 = l10.a(bVar.l(j10 + i16), bVar.f13843c.f50144a);
+            i a10 = l10.a(bVar.l(j10 + i16), bVar.f13843c.f50160a);
             if (a10 == null) {
                 break;
             }
@@ -677,7 +677,7 @@ public class c implements com.google.android.exoplayer2.source.dash.a {
         if (bVar.m(j13, j12)) {
             i15 = 0;
         }
-        return new k(dataSource, td.g.a(jVar, bVar.f13843c.f50144a, l10, i15, t.j()), format, i11, obj, k10, i19, j11, j14, j10, i18, -jVar.f50200d, bVar.f13841a);
+        return new k(dataSource, td.g.a(jVar, bVar.f13843c.f50160a, l10, i15, t.j()), format, i11, obj, k10, i19, j11, j14, j10, i18, -jVar.f50216d, bVar.f13841a);
     }
 
     @Override // sd.j

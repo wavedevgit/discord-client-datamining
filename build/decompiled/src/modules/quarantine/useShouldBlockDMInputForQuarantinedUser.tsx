@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/quarantine/useShouldBlockDMInputForQuarantinedUser.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0, arg1) { // Original name: _default, environment: var1
-        _fun90929: for (var _fun90929_ip = 0;;) switch (_fun90929_ip) {
+        _fun91166: for (var _fun91166_ip = 0;;) switch (_fun91166_ip) {
             case 0:
                 var5 = arg0;
                 var8 = arg1;
@@ -69,8 +69,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var0 = var0 != var5;
                 if (!var0) {
-                    _fun90929_ip = 144;
-                    continue _fun90929
+                    _fun91166_ip = 144;
+                    continue _fun91166
                 }
             case 108:
                 var4 = var5.hasFlag;
@@ -78,15 +78,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.QUARANTINED;
                 var1 = var4.bind(var5)(var1);
                 if (!var1) {
-                    _fun90929_ip = 135;
-                    continue _fun90929
+                    _fun91166_ip = 135;
+                    continue _fun91166
                 }
             case 132:
                 var1 = var3;
             case 135:
                 if (!var1) {
-                    _fun90929_ip = 141;
-                    continue _fun90929
+                    _fun91166_ip = 141;
+                    continue _fun91166
                 }
             case 138:
                 var1 = !var2;
@@ -98,4 +98,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4207, 660, 11649, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4213, 660, 11671, 566, 2]);

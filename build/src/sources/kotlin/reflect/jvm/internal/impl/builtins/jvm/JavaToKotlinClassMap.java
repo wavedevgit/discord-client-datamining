@@ -39,87 +39,87 @@ public final class JavaToKotlinClassMap {
     public static final JavaToKotlinClassMap INSTANCE;
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f33492a;
+    private static final String f33508a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final String f33493b;
+    private static final String f33509b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final String f33494c;
+    private static final String f33510c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final String f33495d;
+    private static final String f33511d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ClassId f33496e;
+    private static final ClassId f33512e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final FqName f33497f;
+    private static final FqName f33513f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final ClassId f33498g;
+    private static final ClassId f33514g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final ClassId f33499h;
+    private static final ClassId f33515h;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final ClassId f33500i;
+    private static final ClassId f33516i;
 
     /* renamed from: j  reason: collision with root package name */
-    private static final HashMap f33501j;
+    private static final HashMap f33517j;
 
     /* renamed from: k  reason: collision with root package name */
-    private static final HashMap f33502k;
+    private static final HashMap f33518k;
 
     /* renamed from: l  reason: collision with root package name */
-    private static final HashMap f33503l;
+    private static final HashMap f33519l;
 
     /* renamed from: m  reason: collision with root package name */
-    private static final HashMap f33504m;
+    private static final HashMap f33520m;
 
     /* renamed from: n  reason: collision with root package name */
-    private static final HashMap f33505n;
+    private static final HashMap f33521n;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final HashMap f33506o;
+    private static final HashMap f33522o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final List f33507p;
+    private static final List f33523p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class PlatformMutabilityMapping {
 
         /* renamed from: a  reason: collision with root package name */
-        private final ClassId f33508a;
+        private final ClassId f33524a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final ClassId f33509b;
+        private final ClassId f33525b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final ClassId f33510c;
+        private final ClassId f33526c;
 
         public PlatformMutabilityMapping(@NotNull ClassId javaClass, @NotNull ClassId kotlinReadOnly, @NotNull ClassId kotlinMutable) {
             Intrinsics.checkNotNullParameter(javaClass, "javaClass");
             Intrinsics.checkNotNullParameter(kotlinReadOnly, "kotlinReadOnly");
             Intrinsics.checkNotNullParameter(kotlinMutable, "kotlinMutable");
-            this.f33508a = javaClass;
-            this.f33509b = kotlinReadOnly;
-            this.f33510c = kotlinMutable;
+            this.f33524a = javaClass;
+            this.f33525b = kotlinReadOnly;
+            this.f33526c = kotlinMutable;
         }
 
         @NotNull
         public final ClassId component1() {
-            return this.f33508a;
+            return this.f33524a;
         }
 
         @NotNull
         public final ClassId component2() {
-            return this.f33509b;
+            return this.f33525b;
         }
 
         @NotNull
         public final ClassId component3() {
-            return this.f33510c;
+            return this.f33526c;
         }
 
         public boolean equals(Object obj) {
@@ -128,23 +128,23 @@ public final class JavaToKotlinClassMap {
             }
             if (obj instanceof PlatformMutabilityMapping) {
                 PlatformMutabilityMapping platformMutabilityMapping = (PlatformMutabilityMapping) obj;
-                return Intrinsics.areEqual(this.f33508a, platformMutabilityMapping.f33508a) && Intrinsics.areEqual(this.f33509b, platformMutabilityMapping.f33509b) && Intrinsics.areEqual(this.f33510c, platformMutabilityMapping.f33510c);
+                return Intrinsics.areEqual(this.f33524a, platformMutabilityMapping.f33524a) && Intrinsics.areEqual(this.f33525b, platformMutabilityMapping.f33525b) && Intrinsics.areEqual(this.f33526c, platformMutabilityMapping.f33526c);
             }
             return false;
         }
 
         @NotNull
         public final ClassId getJavaClass() {
-            return this.f33508a;
+            return this.f33524a;
         }
 
         public int hashCode() {
-            return (((this.f33508a.hashCode() * 31) + this.f33509b.hashCode()) * 31) + this.f33510c.hashCode();
+            return (((this.f33524a.hashCode() * 31) + this.f33525b.hashCode()) * 31) + this.f33526c.hashCode();
         }
 
         @NotNull
         public String toString() {
-            return "PlatformMutabilityMapping(javaClass=" + this.f33508a + ", kotlinReadOnly=" + this.f33509b + ", kotlinMutable=" + this.f33510c + ')';
+            return "PlatformMutabilityMapping(javaClass=" + this.f33524a + ", kotlinReadOnly=" + this.f33525b + ", kotlinMutable=" + this.f33526c + ')';
         }
     }
 
@@ -157,39 +157,39 @@ public final class JavaToKotlinClassMap {
         sb2.append(function.getPackageFqName());
         sb2.append('.');
         sb2.append(function.getClassNamePrefix());
-        f33492a = sb2.toString();
+        f33508a = sb2.toString();
         StringBuilder sb3 = new StringBuilder();
         FunctionTypeKind.KFunction kFunction = FunctionTypeKind.KFunction.INSTANCE;
         sb3.append(kFunction.getPackageFqName());
         sb3.append('.');
         sb3.append(kFunction.getClassNamePrefix());
-        f33493b = sb3.toString();
+        f33509b = sb3.toString();
         StringBuilder sb4 = new StringBuilder();
         FunctionTypeKind.SuspendFunction suspendFunction = FunctionTypeKind.SuspendFunction.INSTANCE;
         sb4.append(suspendFunction.getPackageFqName());
         sb4.append('.');
         sb4.append(suspendFunction.getClassNamePrefix());
-        f33494c = sb4.toString();
+        f33510c = sb4.toString();
         StringBuilder sb5 = new StringBuilder();
         FunctionTypeKind.KSuspendFunction kSuspendFunction = FunctionTypeKind.KSuspendFunction.INSTANCE;
         sb5.append(kSuspendFunction.getPackageFqName());
         sb5.append('.');
         sb5.append(kSuspendFunction.getClassNamePrefix());
-        f33495d = sb5.toString();
+        f33511d = sb5.toString();
         ClassId.Companion companion = ClassId.Companion;
         ClassId classId = companion.topLevel(new FqName("kotlin.jvm.functions.FunctionN"));
-        f33496e = classId;
-        f33497f = classId.asSingleFqName();
+        f33512e = classId;
+        f33513f = classId.asSingleFqName();
         StandardClassIds standardClassIds = StandardClassIds.INSTANCE;
-        f33498g = standardClassIds.getKFunction();
-        f33499h = standardClassIds.getKClass();
-        f33500i = javaToKotlinClassMap.g(Class.class);
-        f33501j = new HashMap();
-        f33502k = new HashMap();
-        f33503l = new HashMap();
-        f33504m = new HashMap();
-        f33505n = new HashMap();
-        f33506o = new HashMap();
+        f33514g = standardClassIds.getKFunction();
+        f33515h = standardClassIds.getKClass();
+        f33516i = javaToKotlinClassMap.g(Class.class);
+        f33517j = new HashMap();
+        f33518k = new HashMap();
+        f33519l = new HashMap();
+        f33520m = new HashMap();
+        f33521n = new HashMap();
+        f33522o = new HashMap();
         ClassId classId2 = companion.topLevel(StandardNames.FqNames.iterable);
         PlatformMutabilityMapping platformMutabilityMapping = new PlatformMutabilityMapping(javaToKotlinClassMap.g(Iterable.class), classId2, new ClassId(classId2.getPackageFqName(), FqNamesUtilKt.tail(StandardNames.FqNames.mutableIterable, classId2.getPackageFqName()), false));
         ClassId classId3 = companion.topLevel(StandardNames.FqNames.iterator);
@@ -207,7 +207,7 @@ public final class JavaToKotlinClassMap {
         PlatformMutabilityMapping platformMutabilityMapping7 = new PlatformMutabilityMapping(javaToKotlinClassMap.g(Map.class), classId8, new ClassId(classId8.getPackageFqName(), FqNamesUtilKt.tail(StandardNames.FqNames.mutableMap, classId8.getPackageFqName()), false));
         ClassId createNestedClassId = companion.topLevel(fqName).createNestedClassId(StandardNames.FqNames.mapEntry.shortName());
         List<PlatformMutabilityMapping> o10 = CollectionsKt.o(platformMutabilityMapping, platformMutabilityMapping2, platformMutabilityMapping3, platformMutabilityMapping4, platformMutabilityMapping5, platformMutabilityMapping6, platformMutabilityMapping7, new PlatformMutabilityMapping(javaToKotlinClassMap.g(Map.Entry.class), createNestedClassId, new ClassId(createNestedClassId.getPackageFqName(), FqNamesUtilKt.tail(StandardNames.FqNames.mutableMapEntry, createNestedClassId.getPackageFqName()), false)));
-        f33507p = o10;
+        f33523p = o10;
         javaToKotlinClassMap.f(Object.class, StandardNames.FqNames.any);
         javaToKotlinClassMap.f(String.class, StandardNames.FqNames.string);
         javaToKotlinClassMap.f(CharSequence.class, StandardNames.FqNames.charSequence);
@@ -236,11 +236,11 @@ public final class JavaToKotlinClassMap {
         for (int i10 = 0; i10 < 23; i10++) {
             JavaToKotlinClassMap javaToKotlinClassMap3 = INSTANCE;
             javaToKotlinClassMap3.a(ClassId.Companion.topLevel(new FqName("kotlin.jvm.functions.Function" + i10)), StandardNames.getFunctionClassId(i10));
-            javaToKotlinClassMap3.c(new FqName(f33493b + i10), f33498g);
+            javaToKotlinClassMap3.c(new FqName(f33509b + i10), f33514g);
         }
         for (int i11 = 0; i11 < 22; i11++) {
             FunctionTypeKind.KSuspendFunction kSuspendFunction2 = FunctionTypeKind.KSuspendFunction.INSTANCE;
-            INSTANCE.c(new FqName((kSuspendFunction2.getPackageFqName() + '.' + kSuspendFunction2.getClassNamePrefix()) + i11), f33498g);
+            INSTANCE.c(new FqName((kSuspendFunction2.getPackageFqName() + '.' + kSuspendFunction2.getClassNamePrefix()) + i11), f33514g);
         }
         JavaToKotlinClassMap javaToKotlinClassMap4 = INSTANCE;
         javaToKotlinClassMap4.c(new FqName("kotlin.concurrent.atomics.AtomicInt"), javaToKotlinClassMap4.g(AtomicInteger.class));
@@ -262,11 +262,11 @@ public final class JavaToKotlinClassMap {
     }
 
     private final void b(ClassId classId, ClassId classId2) {
-        f33501j.put(classId.asSingleFqName().toUnsafe(), classId2);
+        f33517j.put(classId.asSingleFqName().toUnsafe(), classId2);
     }
 
     private final void c(FqName fqName, ClassId classId) {
-        f33502k.put(fqName.toUnsafe(), classId);
+        f33518k.put(fqName.toUnsafe(), classId);
     }
 
     private final void d(PlatformMutabilityMapping platformMutabilityMapping) {
@@ -275,12 +275,12 @@ public final class JavaToKotlinClassMap {
         ClassId component3 = platformMutabilityMapping.component3();
         a(component1, component2);
         c(component3.asSingleFqName(), component1);
-        f33505n.put(component3, component2);
-        f33506o.put(component2, component3);
+        f33521n.put(component3, component2);
+        f33522o.put(component2, component3);
         FqName asSingleFqName = component2.asSingleFqName();
         FqName asSingleFqName2 = component3.asSingleFqName();
-        f33503l.put(component3.asSingleFqName().toUnsafe(), asSingleFqName);
-        f33504m.put(asSingleFqName.toUnsafe(), asSingleFqName2);
+        f33519l.put(component3.asSingleFqName().toUnsafe(), asSingleFqName);
+        f33520m.put(asSingleFqName.toUnsafe(), asSingleFqName2);
     }
 
     private final void e(Class cls, FqName fqName) {
@@ -324,49 +324,49 @@ public final class JavaToKotlinClassMap {
 
     @NotNull
     public final FqName getFUNCTION_N_FQ_NAME() {
-        return f33497f;
+        return f33513f;
     }
 
     @NotNull
     public final List<PlatformMutabilityMapping> getMutabilityMappings() {
-        return f33507p;
+        return f33523p;
     }
 
     public final boolean isMutable(FqNameUnsafe fqNameUnsafe) {
-        return f33503l.containsKey(fqNameUnsafe);
+        return f33519l.containsKey(fqNameUnsafe);
     }
 
     public final boolean isReadOnly(FqNameUnsafe fqNameUnsafe) {
-        return f33504m.containsKey(fqNameUnsafe);
+        return f33520m.containsKey(fqNameUnsafe);
     }
 
     public final ClassId mapJavaToKotlin(@NotNull FqName fqName) {
         Intrinsics.checkNotNullParameter(fqName, "fqName");
-        return (ClassId) f33501j.get(fqName.toUnsafe());
+        return (ClassId) f33517j.get(fqName.toUnsafe());
     }
 
     public final ClassId mapKotlinToJava(@NotNull FqNameUnsafe kotlinFqName) {
         Intrinsics.checkNotNullParameter(kotlinFqName, "kotlinFqName");
-        if (h(kotlinFqName, f33492a)) {
-            return f33496e;
+        if (h(kotlinFqName, f33508a)) {
+            return f33512e;
         }
-        if (h(kotlinFqName, f33494c)) {
-            return f33496e;
+        if (h(kotlinFqName, f33510c)) {
+            return f33512e;
         }
-        if (h(kotlinFqName, f33493b)) {
-            return f33498g;
+        if (h(kotlinFqName, f33509b)) {
+            return f33514g;
         }
-        if (h(kotlinFqName, f33495d)) {
-            return f33498g;
+        if (h(kotlinFqName, f33511d)) {
+            return f33514g;
         }
-        return (ClassId) f33502k.get(kotlinFqName);
+        return (ClassId) f33518k.get(kotlinFqName);
     }
 
     public final FqName mutableToReadOnly(FqNameUnsafe fqNameUnsafe) {
-        return (FqName) f33503l.get(fqNameUnsafe);
+        return (FqName) f33519l.get(fqNameUnsafe);
     }
 
     public final FqName readOnlyToMutable(FqNameUnsafe fqNameUnsafe) {
-        return (FqName) f33504m.get(fqNameUnsafe);
+        return (FqName) f33520m.get(fqNameUnsafe);
     }
 }

@@ -12,16 +12,16 @@ public final class b implements f {
     public static final Parcelable.Creator<b> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f27043d;
+    private final String f27059d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final a1 f27044e;
+    private final a1 f27060e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final a1 f27045i;
+    private final a1 f27061i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final a1 f27046o;
+    private final a1 f27062o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -41,18 +41,18 @@ public final class b implements f {
 
     public b(String stepName, a1 a1Var, a1 a1Var2, a1 a1Var3) {
         Intrinsics.checkNotNullParameter(stepName, "stepName");
-        this.f27043d = stepName;
-        this.f27044e = a1Var;
-        this.f27045i = a1Var2;
-        this.f27046o = a1Var3;
+        this.f27059d = stepName;
+        this.f27060e = a1Var;
+        this.f27061i = a1Var2;
+        this.f27062o = a1Var3;
     }
 
     public final a1 a() {
-        return this.f27044e;
+        return this.f27060e;
     }
 
     public String b() {
-        return this.f27043d;
+        return this.f27059d;
     }
 
     @Override // android.os.Parcelable
@@ -68,7 +68,7 @@ public final class b implements f {
             return false;
         }
         b bVar = (b) obj;
-        if (Intrinsics.areEqual(this.f27043d, bVar.f27043d) && Intrinsics.areEqual(this.f27044e, bVar.f27044e) && Intrinsics.areEqual(this.f27045i, bVar.f27045i) && Intrinsics.areEqual(this.f27046o, bVar.f27046o)) {
+        if (Intrinsics.areEqual(this.f27059d, bVar.f27059d) && Intrinsics.areEqual(this.f27060e, bVar.f27060e) && Intrinsics.areEqual(this.f27061i, bVar.f27061i) && Intrinsics.areEqual(this.f27062o, bVar.f27062o)) {
             return true;
         }
         return false;
@@ -77,8 +77,8 @@ public final class b implements f {
     public int hashCode() {
         int hashCode;
         int hashCode2;
-        int hashCode3 = this.f27043d.hashCode() * 31;
-        a1 a1Var = this.f27044e;
+        int hashCode3 = this.f27059d.hashCode() * 31;
+        a1 a1Var = this.f27060e;
         int i10 = 0;
         if (a1Var == null) {
             hashCode = 0;
@@ -86,14 +86,14 @@ public final class b implements f {
             hashCode = a1Var.hashCode();
         }
         int i11 = (hashCode3 + hashCode) * 31;
-        a1 a1Var2 = this.f27045i;
+        a1 a1Var2 = this.f27061i;
         if (a1Var2 == null) {
             hashCode2 = 0;
         } else {
             hashCode2 = a1Var2.hashCode();
         }
         int i12 = (i11 + hashCode2) * 31;
-        a1 a1Var3 = this.f27046o;
+        a1 a1Var3 = this.f27062o;
         if (a1Var3 != null) {
             i10 = a1Var3.hashCode();
         }
@@ -101,19 +101,19 @@ public final class b implements f {
     }
 
     public String toString() {
-        String str = this.f27043d;
-        a1 a1Var = this.f27044e;
-        a1 a1Var2 = this.f27045i;
-        a1 a1Var3 = this.f27046o;
+        String str = this.f27059d;
+        a1 a1Var = this.f27060e;
+        a1 a1Var2 = this.f27061i;
+        a1 a1Var3 = this.f27062o;
         return "SelfieStepData(stepName=" + str + ", centerCapture=" + a1Var + ", leftCapture=" + a1Var2 + ", rightCapture=" + a1Var3 + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f27043d);
-        dest.writeParcelable(this.f27044e, i10);
-        dest.writeParcelable(this.f27045i, i10);
-        dest.writeParcelable(this.f27046o, i10);
+        dest.writeString(this.f27059d);
+        dest.writeParcelable(this.f27060e, i10);
+        dest.writeParcelable(this.f27061i, i10);
+        dest.writeParcelable(this.f27062o, i10);
     }
 }

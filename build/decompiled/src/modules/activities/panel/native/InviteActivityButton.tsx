@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var3;
     var3 = var6.memo;
     var1 = function(arg0) { // Original name: InviteActivityButton, environment: var1
-        _fun110799: for (var _fun110799_ip = 0;;) switch (_fun110799_ip) {
+        _fun111061: for (var _fun111061_ip = 0;;) switch (_fun111061_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.applicationId;
@@ -48,15 +48,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new Array(1);
                 var1[0] = var0;
                 var0 = function() { // Environment: var6
-                    _fun110800: for (var _fun110800_ip = 0;;) switch (_fun110800_ip) {
+                    _fun111062: for (var _fun111062_ip = 0;;) switch (_fun111062_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var0 = null;
                             var2 = var0 != var2;
                             var0 = undefined;
                             if (!var2) {
-                                _fun110800_ip = 40;
-                                continue _fun110800
+                                _fun111062_ip = 40;
+                                continue _fun111062
                             }
                         case 18:
                             var3 = _closure1_slot3;
@@ -72,8 +72,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var1 = var0 == var1;
                 if (var1) {
-                    _fun110799_ip = 286;
-                    continue _fun110799
+                    _fun111061_ip = 286;
+                    continue _fun111061
                 }
             case 85:
                 var3 = _closure1_slot4;
@@ -161,4 +161,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5616, 33, 3237, 14219, 1307, 566, 4037, 8590, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5619, 33, 3237, 14245, 1307, 566, 4043, 8593, 1234, 2]);

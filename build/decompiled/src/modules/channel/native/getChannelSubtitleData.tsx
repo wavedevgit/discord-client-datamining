@@ -22,38 +22,38 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/channel/native/getChannelSubtitleData.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: getChannelSubtitleData, environment: var1
-        _fun102974: for (var _fun102974_ip = 0;;) switch (_fun102974_ip) {
+        _fun103230: for (var _fun103230_ip = 0;;) switch (_fun103230_ip) {
             case 0:
                 var2 = arg0;
                 var0 = null;
                 if (!(var0 != var2)) {
-                    _fun102974_ip = 188;
-                    continue _fun102974
+                    _fun103230_ip = 188;
+                    continue _fun103230
                 }
             case 12:
                 var3 = var2.type;
                 var1 = 'embedded-activities';
                 if (!(var1 !== var3)) {
-                    _fun102974_ip = 165;
-                    continue _fun102974
+                    _fun103230_ip = 165;
+                    continue _fun103230
                 }
             case 30:
                 var1 = 'event';
                 if (!(var1 !== var3)) {
-                    _fun102974_ip = 165;
-                    continue _fun102974
+                    _fun103230_ip = 165;
+                    continue _fun103230
                 }
             case 41:
                 var1 = 'go-live';
                 if (!(var1 !== var3)) {
-                    _fun102974_ip = 86;
-                    continue _fun102974
+                    _fun103230_ip = 86;
+                    continue _fun103230
                 }
             case 51:
                 var1 = 'voice';
                 if (!(var1 !== var3)) {
-                    _fun102974_ip = 63;
-                    continue _fun102974
+                    _fun103230_ip = 63;
+                    continue _fun103230
                 }
             case 59:
                 var1 = undefined;

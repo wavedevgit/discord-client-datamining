@@ -33,7 +33,7 @@ public final class ExternalPipTransitionView extends View {
         /* JADX INFO: Access modifiers changed from: private */
         public static final Unit tryHide$lambda$0(ViewGroup viewGroup, ExternalPipTransitionView externalPipTransitionView) {
             viewGroup.removeView(externalPipTransitionView);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         public final void tryHide(Activity activity, boolean z10) {

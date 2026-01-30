@@ -3,10 +3,10 @@ package rk;
 final class l {
 
     /* renamed from: a  reason: collision with root package name */
-    private final o f48313a;
+    private final o f48329a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f48314b;
+    private final boolean f48330b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public l() {
@@ -15,17 +15,17 @@ final class l {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public o a() {
-        return this.f48313a;
+        return this.f48329a;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public boolean b() {
-        return this.f48314b;
+        return this.f48330b;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public l(o oVar, boolean z10) {
-        this.f48314b = z10;
-        this.f48313a = oVar;
+        this.f48330b = z10;
+        this.f48329a = oVar;
     }
 }

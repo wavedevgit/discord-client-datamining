@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_scheduled_events/native/components/EditGuildEventStepHeader.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: EditGuildEventStepHeader, environment: var1
-        _fun65649: for (var _fun65649_ip = 0;;) switch (_fun65649_ip) {
+        _fun65693: for (var _fun65693_ip = 0;;) switch (_fun65693_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.title;
@@ -95,15 +95,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var8 != var9;
                 var5 = null;
                 if (!var7) {
-                    _fun65649_ip = 202;
-                    continue _fun65649
+                    _fun65693_ip = 202;
+                    continue _fun65693
                 }
             case 130:
                 var7 = '';
                 var5 = null;
                 if (!(var7 !== var9)) {
-                    _fun65649_ip = 202;
-                    continue _fun65649
+                    _fun65693_ip = 202;
+                    continue _fun65693
                 }
             case 140:
                 var8 = _closure1_slot3;
@@ -130,4 +130,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 3895, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 3901, 2]);

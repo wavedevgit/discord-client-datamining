@@ -7,20 +7,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var1 = function(arg0, arg1) { // Original name: useInputClearButtonConfig, environment: var3
-        _fun47911: for (var _fun47911_ip = 0;;) switch (_fun47911_ip) {
+        _fun47958: for (var _fun47958_ip = 0;;) switch (_fun47958_ip) {
             case 0:
                 var2 = arg1;
                 var0 = arg0;
                 var0 = var0.isClearable;
                 if (!var0) {
-                    _fun47911_ip = 24;
-                    continue _fun47911
+                    _fun47958_ip = 24;
+                    continue _fun47958
                 }
             case 15:
                 var0 = var2.hasValue;
                 if (var0) {
-                    _fun47911_ip = 28;
-                    continue _fun47911
+                    _fun47958_ip = 28;
+                    continue _fun47958
                 }
             case 24:
                 var0 = undefined;
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'design/components/Input/native/useInputClearButton.native.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function(arg0, arg1) { // Original name: useInputClearButton, environment: var3
-        _fun47912: for (var _fun47912_ip = 0;;) switch (_fun47912_ip) {
+        _fun47959: for (var _fun47959_ip = 0;;) switch (_fun47959_ip) {
             case 0:
                 var3 = _closure1_slot4;
                 var4 = undefined;
@@ -102,8 +102,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var2 = var0 != var5;
                 if (!var2) {
-                    _fun47912_ip = 73;
-                    continue _fun47912
+                    _fun47959_ip = 73;
+                    continue _fun47959
                 }
             case 30:
                 var3 = _closure1_slot3;
@@ -123,4 +123,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useInputClearButton = var3;
     var2.useInputClearButtonConfig = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 5330, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 5334, 1234, 2]);

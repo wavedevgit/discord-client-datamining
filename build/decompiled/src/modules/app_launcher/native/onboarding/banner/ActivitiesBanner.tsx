@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_launcher/native/onboarding/banner/ActivitiesBanner.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: ActivitiesBanner, environment: var1
-        _fun107627: for (var _fun107627_ip = 0;;) switch (_fun107627_ip) {
+        _fun107889: for (var _fun107889_ip = 0;;) switch (_fun107889_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.context;
@@ -75,15 +75,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var2 == var9;
                 var0 = null;
                 if (var3) {
-                    _fun107627_ip = 258;
-                    continue _fun107627
+                    _fun107889_ip = 258;
+                    continue _fun107889
                 }
             case 142:
                 var1 = var2 == var1;
                 var0 = null;
                 if (var1) {
-                    _fun107627_ip = 258;
-                    continue _fun107627
+                    _fun107889_ip = 258;
+                    continue _fun107889
                 }
             case 151:
                 var3 = _closure1_slot4;
@@ -116,4 +116,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 33, 11731, 13859, 13868, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 33, 11753, 13885, 13894, 1234, 2]);

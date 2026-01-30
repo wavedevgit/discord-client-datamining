@@ -8,7 +8,7 @@ import wu.a;
 public final class b implements ku.b, wu.a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f50567a = new b();
+    public static final b f50583a = new b();
 
     private b() {
     }

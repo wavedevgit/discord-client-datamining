@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var5.bind(var0)(var4);
     var7 = var8.createStyles;
     var4 = function(arg0, arg1) { // Environment: var1
-        _fun46203: for (var _fun46203_ip = 0;;) switch (_fun46203_ip) {
+        _fun46254: for (var _fun46254_ip = 0;;) switch (_fun46254_ip) {
             case 0:
                 var7 = arg0;
                 var3 = arg1;
@@ -63,16 +63,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = _closure1_slot10;
                 var5 = var5.FLOATING;
                 if (!(var5 !== var7)) {
-                    _fun46203_ip = 50;
-                    continue _fun46203
+                    _fun46254_ip = 50;
+                    continue _fun46254
                 }
             case 34:
                 var5 = _closure1_slot10;
                 var6 = var5.OVERLAY;
                 var5 = undefined;
                 if (!(var6 === var7)) {
-                    _fun46203_ip = 64;
-                    continue _fun46203
+                    _fun46254_ip = 64;
+                    continue _fun46254
                 }
             case 50:
                 var5 = {
@@ -110,16 +110,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = _closure1_slot10;
                 var5 = var5.FLOATING;
                 if (!(var5 !== var7)) {
-                    _fun46203_ip = 254;
-                    continue _fun46203
+                    _fun46254_ip = 254;
+                    continue _fun46254
                 }
             case 171:
                 var5 = _closure1_slot10;
                 var6 = var5.OVERLAY;
                 var5 = undefined;
                 if (!(var6 === var7)) {
-                    _fun46203_ip = 291;
-                    continue _fun46203
+                    _fun46254_ip = 291;
+                    continue _fun46254
                 }
             case 187:
                 var6 = {};
@@ -137,8 +137,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var6;
                 var7 = copyDataProperties(var13, var12);
                 var5 = var6;
-                _fun46203_ip = 291;
-                continue _fun46203;
+                _fun46254_ip = 291;
+                continue _fun46254;
             case 254:
                 var6 = {};
                 var8 = _closure1_slot1;
@@ -178,14 +178,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.ActionSheetHeaderBarVariants = var3;
     var1 = function(arg0) { // Original name: ActionSheetHeaderBar, environment: var1
-        _fun46204: for (var _fun46204_ip = 0;;) switch (_fun46204_ip) {
+        _fun46255: for (var _fun46255_ip = 0;;) switch (_fun46255_ip) {
             case 0:
                 var0 = arg0;
                 var10 = var0.accessibilityLabel;
                 var4 = undefined;
                 if (!(var10 === var4)) {
-                    _fun46204_ip = 72;
-                    continue _fun46204
+                    _fun46255_ip = 72;
+                    continue _fun46255
                 }
             case 14:
                 var5 = _closure1_slot0;
@@ -247,8 +247,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var3.bind(var4)(var2, var0);
                 var0 = var6;
                 if (!var1) {
-                    _fun46204_ip = 348;
-                    continue _fun46204
+                    _fun46255_ip = 348;
+                    continue _fun46255
                 }
             case 270:
                 var3 = _closure1_slot9;
@@ -276,4 +276,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.ActionSheetHeaderBar = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 1234, 1464, 4023, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 1234, 1464, 4029, 2]);

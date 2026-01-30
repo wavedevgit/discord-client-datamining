@@ -1,60 +1,64 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
+    var3 = require;
+    var2 = exports;
+    var4 = dependencyMap;
     var0 = global;
-    var5 = var0.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var2 = true;
-    var3.value = var2;
-    var2 = '__esModule';
-    var2 = var4.bind(var5)(var1, var2, var3);
-    var3 = var0.Object;
-    var2 = var3.freeze;
-    var0 = {
-        'OPERATION_CANCELED': 'OPERATION_CANCELED',
-        'IN_PROGRESS': 'ASYNC_OP_IN_PROGRESS',
-        'UNABLE_TO_OPEN_FILE_TYPE': 'UNABLE_TO_OPEN_FILE_TYPE'
-    };
-    var0 = var2.bind(var3)(var0);
-    var1.errorCodes = var0;
-    var0 = function(arg0) { // Original name: isErrorWithCode, environment: var0
-        _fun75382: for (var _fun75382_ip = 0;;) switch (_fun75382_ip) {
-            case 0:
-                var2 = arg0;
-                var0 = global;
-                var0 = var0.Error;
-                var0 = var2 instanceof var0;
-                if (var0) {
-                    _fun75382_ip = 41;
-                    continue _fun75382
-                }
-            case 18:
-                var3 = 'object';
-                var1 = typeof var2;
-                var1 = var3 === var1;
-                if (!var1) {
-                    _fun75382_ip = 38;
-                    continue _fun75382
-                }
-            case 32:
-                var3 = null;
-                var1 = var3 != var2;
-            case 38:
-                var0 = var1;
-            case 41:
-                if (!var0) {
-                    _fun75382_ip = 52;
-                    continue _fun75382
-                }
-            case 44:
-                var1 = 'code';
-                var0 = var1 in var2;
-            case 52:
-                return var0;
-        }
-    };
-    var1.isErrorWithCode = var0;
+    var6 = var0.Object;
+    var5 = var6.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var5.bind(var6)(var2, var0, var1);
+    var0 = 0;
+    var1 = var4[var0];
     var0 = undefined;
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.isKnownType;
+    var2.isKnownType = var1;
+    var1 = 1;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.keepLocalCopy;
+    var2.keepLocalCopy = var1;
+    var1 = 2;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.types;
+    var2.types = var1;
+    var1 = 3;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.errorCodes;
+    var2.errorCodes = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.isErrorWithCode;
+    var2.isErrorWithCode = var1;
+    var1 = 4;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.pickDirectory;
+    var2.pickDirectory = var1;
+    var1 = 5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.pick;
+    var2.pick = var1;
+    var1 = 6;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.saveDocuments;
+    var2.saveDocuments = var1;
+    var1 = 7;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.releaseLongTermAccess;
+    var2.releaseLongTermAccess = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.releaseSecureAccess;
+    var2.releaseSecureAccess = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, []);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [9518, 9520, 9521, 9522, 9523, 9524, 9526, 9527]);

@@ -8,22 +8,22 @@ import vo.e;
 public final class c implements tq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f48420a;
+    private final h f48436a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final h f48421b;
+    private final h f48437b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final h f48422c;
+    private final h f48438c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final h f48423d;
+    private final h f48439d;
 
     public c(h hVar, h hVar2, h hVar3, h hVar4) {
-        this.f48420a = hVar;
-        this.f48421b = hVar2;
-        this.f48422c = hVar3;
-        this.f48423d = hVar4;
+        this.f48436a = hVar;
+        this.f48437b = hVar2;
+        this.f48438c = hVar3;
+        this.f48439d = hVar4;
     }
 
     public static c a(h hVar, h hVar2, h hVar3, h hVar4) {
@@ -37,6 +37,6 @@ public final class c implements tq.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public a get() {
-        return c((Context) this.f48420a.get(), (e.a) this.f48421b.get(), (f) this.f48422c.get(), (CoroutineDispatcher) this.f48423d.get());
+        return c((Context) this.f48436a.get(), (e.a) this.f48437b.get(), (f) this.f48438c.get(), (CoroutineDispatcher) this.f48439d.get());
     }
 }

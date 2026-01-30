@@ -131,7 +131,7 @@ public class IntentModule extends NativeIntentAndroidSpec {
                         intentModule.initialURLListener = null;
                         list2 = intentModule.pendingOpenURLPromises;
                         list2.clear();
-                        Unit unit = Unit.f33282a;
+                        Unit unit = Unit.f33298a;
                     } catch (Throwable th2) {
                         throw th2;
                     }
@@ -199,7 +199,7 @@ public class IntentModule extends NativeIntentAndroidSpec {
                 LifecycleEventListener lifecycleEventListener = this.initialURLListener;
                 if (lifecycleEventListener != null) {
                     getReactApplicationContext().removeLifecycleEventListener(lifecycleEventListener);
-                    Unit unit = Unit.f33282a;
+                    Unit unit = Unit.f33298a;
                 }
                 this.initialURLListener = null;
             } catch (Throwable th2) {

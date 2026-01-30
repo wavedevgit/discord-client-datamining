@@ -12,7 +12,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = var3.bind(var0)(var2);
     var _closure1_slot2 = var2;
     var2 = function(arg0) { // Original name: regexTester, environment: var1
-        _fun16391: for (var _fun16391_ip = 0;;) switch (_fun16391_ip) {
+        _fun16392: for (var _fun16392_ip = 0;;) switch (_fun16392_ip) {
             case 0:
                 var4 = arg0;
                 var _closure2_slot0 = var4;
@@ -24,8 +24,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var5.bind(var3)(var2);
                 var2 = var2.bind(var3)(var4);
                 if (var2) {
-                    _fun16391_ip = 90;
-                    continue _fun16391
+                    _fun16392_ip = 90;
+                    continue _fun16392
                 }
             case 42:
                 var2 = _closure1_slot0;

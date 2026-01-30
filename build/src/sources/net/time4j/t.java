@@ -7,33 +7,33 @@ public final class t extends b implements l0 {
     private static final long serialVersionUID = -1337148214680014674L;
 
     /* renamed from: o  reason: collision with root package name */
-    private final transient int f40800o;
+    private final transient int f40816o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final transient Integer f40801p;
+    private final transient Integer f40817p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final transient Integer f40802q;
+    private final transient Integer f40818q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final transient char f40803r;
+    private final transient char f40819r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final transient jt.t f40804s;
+    private final transient jt.t f40820s;
 
     private t(String str, int i10, Integer num, Integer num2, char c10) {
         super(str);
         boolean z10;
-        this.f40800o = i10;
-        this.f40801p = num;
-        this.f40802q = num2;
-        this.f40803r = c10;
+        this.f40816o = i10;
+        this.f40817p = num;
+        this.f40818q = num2;
+        this.f40819r = c10;
         if (i10 != 5 && i10 != 7 && i10 != 9 && i10 != 13) {
             z10 = false;
         } else {
             z10 = true;
         }
-        this.f40804s = new m0(this, z10);
+        this.f40820s = new m0(this, z10);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -86,23 +86,23 @@ public final class t extends b implements l0 {
     @Override // jt.p
     /* renamed from: I */
     public Integer e() {
-        return this.f40802q;
+        return this.f40818q;
     }
 
     @Override // jt.p
     /* renamed from: J */
     public Integer A() {
-        return this.f40801p;
+        return this.f40817p;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public int K() {
-        return this.f40800o;
+        return this.f40816o;
     }
 
     @Override // jt.e, jt.p
     public char d() {
-        return this.f40803r;
+        return this.f40819r;
     }
 
     @Override // jt.p

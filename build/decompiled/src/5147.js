@@ -1,26 +1,81 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var2 = exports;
+    var1 = exports;
     var0 = global;
     var4 = var0.Object;
     var3 = var4.defineProperty;
-    var1 = {};
+    var2 = {};
     var0 = true;
-    var1.value = var0;
+    var2.value = var0;
     var0 = '__esModule';
-    var0 = var3.bind(var4)(var2, var0, var1);
-    var1 = dependencyMap;
-    var0 = 0;
-    var3 = var1[var0];
-    var1 = require;
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = function(arg0, arg1) { // Original name: useDataMultiplier, environment: var0
+        _fun46173: for (var _fun46173_ip = 0;;) switch (_fun46173_ip) {
+            case 0:
+                var6 = arg0;
+                var5 = arg1;
+                var4 = var6.length;
+                var3 = global;
+                var0 = var3.Array;
+                var1 = var0.prototype;
+                var1 = Object.create(var1, {
+                    constructor: {
+                        value: var0
+                    }
+                });
+                var14 = var1;
+                var13 = var5;
+                var0 = new var14[var0](var13, var12);
+                var1 = var0 instanceof Object ? var0 : var1;
+                var2 = 0;
+                var7 = var6[var2];
+                var8 = 'object';
+                var7 = typeof var7;
+                var0 = false;
+                if (!(var8 === var7)) {
+                    _fun46173_ip = 63;
+                    continue _fun46173
+                }
+            case 61:
+                var0 = true;
+            case 63:
+                var7 = var2 < var5;
+                var2 = 0;
+                if (!var7) {
+                    _fun46173_ip = 123;
+                    continue _fun46173
+                }
+            case 72:
+                if (var0) {
+                    _fun46173_ip = 85;
+                    continue _fun46173
+                }
+            case 75:
+                var7 = var2 % var4;
+                var7 = var6[var7];
+                _fun46173_ip = 112;
+                continue _fun46173;
+            case 85:
+                var11 = var3.Object;
+                var10 = var11.assign;
+                var8 = var2 % var4;
+                var9 = var6[var8];
+                var8 = {};
+                var7 = var10.bind(var11)(var8, var9);
+            case 112:
+                var1[var2] = var7;
+                var2 = var2 + 1;
+                if (var2 < var5) {
+                    _fun46173_ip = 72;
+                    continue _fun46173
+                }
+            case 123:
+                var0 = new Array(1);
+                var0[0] = var1;
+                return var0;
+        }
+    };
+    var1.useDataMultiplier = var0;
     var0 = undefined;
-    var1 = var1.bind(var0)(var3);
-    var4 = var1.StyleSheet;
-    var3 = var4.create;
-    var1 = {};
-    var5 = {};
-    var1.container = var5;
-    var1 = var3.bind(var4)(var1);
-    var2.styles = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

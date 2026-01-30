@@ -5,30 +5,30 @@ import ui.c;
 final class s3 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final s3 f43511a = new s3();
+    static final s3 f43527a = new s3();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43512b;
+    private static final ui.c f43528b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43513c;
+    private static final ui.c f43529c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f43514d;
+    private static final ui.c f43530d;
 
     static {
         c.b a10 = ui.c.a("logEventKey");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43512b = a10.b(s1Var.b()).a();
+        f43528b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("eventCount");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43513c = a11.b(s1Var2.b()).a();
+        f43529c = a11.b(s1Var2.b()).a();
         c.b a12 = ui.c.a("inferenceDurationStats");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f43514d = a12.b(s1Var3.b()).a();
+        f43530d = a12.b(s1Var3.b()).a();
     }
 
     private s3() {
@@ -38,8 +38,8 @@ final class s3 implements ui.d {
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         s2 s2Var = (s2) obj;
         ui.e eVar = (ui.e) obj2;
-        eVar.b(f43512b, s2Var.a());
-        eVar.b(f43513c, s2Var.c());
-        eVar.b(f43514d, s2Var.b());
+        eVar.b(f43528b, s2Var.a());
+        eVar.b(f43529c, s2Var.c());
+        eVar.b(f43530d, s2Var.b());
     }
 }

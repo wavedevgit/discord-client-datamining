@@ -10,7 +10,7 @@ import xu.b;
 public final class c implements ku.b, b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f53837a = new c();
+    public static final c f53853a = new c();
 
     private c() {
     }
@@ -92,15 +92,15 @@ public final class c implements ku.b, b {
         Object b10;
         String x02 = CollectionsKt.x0(k(CollectionsKt.firstOrNull(list)), ",", null, null, 0, null, null, 62, null);
         try {
-            Result.a aVar = Result.f33279e;
+            Result.a aVar = Result.f33295e;
             if (list.size() == 2) {
-                x02 = f53837a.i(x02, i10);
+                x02 = f53853a.i(x02, i10);
             } else if (list.size() > 2) {
-                x02 = f53837a.d(x02, i10, i11);
+                x02 = f53853a.d(x02, i10, i11);
             }
             b10 = Result.b(x02);
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f33279e;
+            Result.a aVar2 = Result.f33295e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         if (Result.g(b10)) {
@@ -117,7 +117,7 @@ public final class c implements ku.b, b {
     /* renamed from: c */
     public String f(Object obj, Object obj2) {
         List c10 = pv.a.c(obj);
-        return f53837a.j(c10, d.b(String.valueOf(pv.c.b(c10))), d.b(String.valueOf(pv.c.c(c10))));
+        return f53853a.j(c10, d.b(String.valueOf(pv.c.b(c10))), d.b(String.valueOf(pv.c.c(c10))));
     }
 
     public List k(Object obj) {

@@ -105,7 +105,7 @@ public class TrackSelectionView extends LinearLayout {
         for (int i10 = 0; i10 < list.size(); i10++) {
             je.o oVar = (je.o) map.get(((Tracks.a) list.get(i10)).b());
             if (oVar != null && (z10 || hashMap.isEmpty())) {
-                hashMap.put(oVar.f31989d, oVar);
+                hashMap.put(oVar.f32005d, oVar);
             }
         }
         return hashMap;
@@ -147,7 +147,7 @@ public class TrackSelectionView extends LinearLayout {
             this.f14260r.put(b10, new je.o(b10, s.s(Integer.valueOf(i10))));
             return;
         }
-        ArrayList arrayList = new ArrayList(oVar.f31990e);
+        ArrayList arrayList = new ArrayList(oVar.f32006e);
         boolean isChecked = ((CheckedTextView) view).isChecked();
         boolean g10 = g(cVar.f14268a);
         z10 = (g10 || h()) ? true : true;
@@ -199,7 +199,7 @@ public class TrackSelectionView extends LinearLayout {
                 CheckedTextView[] checkedTextViewArr = this.f14264v[i10];
                 if (i11 < checkedTextViewArr.length) {
                     if (oVar != null) {
-                        this.f14264v[i10][i11].setChecked(oVar.f31990e.contains(Integer.valueOf(((c) ne.a.e(checkedTextViewArr[i11].getTag())).f14269b)));
+                        this.f14264v[i10][i11].setChecked(oVar.f32006e.contains(Integer.valueOf(((c) ne.a.e(checkedTextViewArr[i11].getTag())).f14269b)));
                     } else {
                         checkedTextViewArr[i11].setChecked(false);
                     }
@@ -239,7 +239,7 @@ public class TrackSelectionView extends LinearLayout {
             }
             for (int i14 = 0; i14 < i12; i14++) {
                 if (i14 == 0) {
-                    addView(this.f14255e.inflate(l.f33128a, (ViewGroup) this, false));
+                    addView(this.f14255e.inflate(l.f33144a, (ViewGroup) this, false));
                 }
                 if (!g10 && !h10) {
                     i10 = 17367055;
@@ -325,17 +325,17 @@ public class TrackSelectionView extends LinearLayout {
         CheckedTextView checkedTextView = (CheckedTextView) from.inflate(17367055, (ViewGroup) this, false);
         this.f14256i = checkedTextView;
         checkedTextView.setBackgroundResource(resourceId);
-        checkedTextView.setText(m.f33147q);
+        checkedTextView.setText(m.f33163q);
         checkedTextView.setEnabled(false);
         checkedTextView.setFocusable(true);
         checkedTextView.setOnClickListener(bVar);
         checkedTextView.setVisibility(8);
         addView(checkedTextView);
-        addView(from.inflate(l.f33128a, (ViewGroup) this, false));
+        addView(from.inflate(l.f33144a, (ViewGroup) this, false));
         CheckedTextView checkedTextView2 = (CheckedTextView) from.inflate(17367055, (ViewGroup) this, false);
         this.f14257o = checkedTextView2;
         checkedTextView2.setBackgroundResource(resourceId);
-        checkedTextView2.setText(m.f33146p);
+        checkedTextView2.setText(m.f33162p);
         checkedTextView2.setEnabled(false);
         checkedTextView2.setFocusable(true);
         checkedTextView2.setOnClickListener(bVar);

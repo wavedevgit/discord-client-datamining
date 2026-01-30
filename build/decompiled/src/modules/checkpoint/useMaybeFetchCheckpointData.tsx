@@ -80,19 +80,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = new Array(1);
         var5[0] = var3;
         var3 = function() { // Environment: var1
-            _fun87089: for (var _fun87089_ip = 0;;) switch (_fun87089_ip) {
+            _fun87135: for (var _fun87135_ip = 0;;) switch (_fun87135_ip) {
                 case 0:
                     var0 = _closure2_slot1;
                     var2 = var0.applications;
                     var0 = null;
                     if (!(var0 == var2)) {
-                        _fun87089_ip = 25;
-                        continue _fun87089
+                        _fun87135_ip = 25;
+                        continue _fun87135
                     }
                 case 19:
                     var0 = new Array(0);
-                    _fun87089_ip = 60;
-                    continue _fun87089;
+                    _fun87135_ip = 60;
+                    continue _fun87135;
                 case 25:
                     var1 = _closure2_slot1;
                     var1 = var1.applications;
@@ -115,14 +115,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = new Array(1);
         var6[0] = var0;
         var2 = function() { // Environment: var1
-            _fun87091: for (var _fun87091_ip = 0;;) switch (_fun87091_ip) {
+            _fun87137: for (var _fun87137_ip = 0;;) switch (_fun87137_ip) {
                 case 0:
                     var1 = _closure2_slot0;
                     var0 = _closure1_slot6;
                     var0 = var0.INIT;
                     if (!(var1 === var0)) {
-                        _fun87091_ip = 96;
-                        continue _fun87091
+                        _fun87137_ip = 96;
+                        continue _fun87137
                     }
                 case 24:
                     var2 = _closure1_slot0;
@@ -167,4 +167,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useMaybeFetchCheckpointData = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 11128, 660, 566, 11129, 4610, 4625, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 11134, 660, 566, 11135, 4616, 4631, 2]);

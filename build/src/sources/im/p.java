@@ -12,16 +12,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class p {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a f28634c = new a(null);
+    public static final a f28650c = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private static int f28635d = -1;
+    private static int f28651d = -1;
 
     /* renamed from: a  reason: collision with root package name */
-    private final ThemedReactContext f28636a;
+    private final ThemedReactContext f28652a;
 
     /* renamed from: b  reason: collision with root package name */
-    private im.a f28637b = new im.a(0.0d, 0.0d);
+    private im.a f28653b = new im.a(0.0d, 0.0d);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -35,9 +35,9 @@ public final class p {
 
     public p(ThemedReactContext themedReactContext) {
         ViewTreeObserver viewTreeObserver;
-        this.f28636a = themedReactContext;
-        if (themedReactContext != null && f28635d != themedReactContext.hashCode()) {
-            f28635d = themedReactContext.hashCode();
+        this.f28652a = themedReactContext;
+        if (themedReactContext != null && f28651d != themedReactContext.hashCode()) {
+            f28651d = themedReactContext.hashCode();
             final ViewGroup a10 = fm.f.a(themedReactContext);
             c(a10);
             if (a10 != null && (viewTreeObserver = a10.getViewTreeObserver()) != null) {
@@ -59,13 +59,13 @@ public final class p {
     private final void c(ViewGroup viewGroup) {
         if (viewGroup != null) {
             im.a aVar = new im.a(fm.d.a(viewGroup.getWidth()), fm.d.a(viewGroup.getHeight()));
-            if (!Intrinsics.areEqual(aVar, this.f28637b)) {
-                this.f28637b = aVar;
-                ThemedReactContext themedReactContext = this.f28636a;
+            if (!Intrinsics.areEqual(aVar, this.f28653b)) {
+                this.f28653b = aVar;
+                ThemedReactContext themedReactContext = this.f28652a;
                 WritableMap createMap = Arguments.createMap();
                 createMap.putDouble("height", aVar.a());
                 createMap.putDouble("width", aVar.b());
-                Unit unit = Unit.f33282a;
+                Unit unit = Unit.f33298a;
                 Intrinsics.checkNotNullExpressionValue(createMap, "apply(...)");
                 fm.g.b(themedReactContext, "KeyboardController::windowDidResize", createMap);
             }

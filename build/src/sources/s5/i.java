@@ -3,16 +3,16 @@ package s5;
 public class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f48754a;
+    private final a f48770a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final r5.h f48755b;
+    private final r5.h f48771b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final r5.d f48756c;
+    private final r5.d f48772c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f48757d;
+    private final boolean f48773d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public enum a {
@@ -23,25 +23,25 @@ public class i {
     }
 
     public i(a aVar, r5.h hVar, r5.d dVar, boolean z10) {
-        this.f48754a = aVar;
-        this.f48755b = hVar;
-        this.f48756c = dVar;
-        this.f48757d = z10;
+        this.f48770a = aVar;
+        this.f48771b = hVar;
+        this.f48772c = dVar;
+        this.f48773d = z10;
     }
 
     public a a() {
-        return this.f48754a;
+        return this.f48770a;
     }
 
     public r5.h b() {
-        return this.f48755b;
+        return this.f48771b;
     }
 
     public r5.d c() {
-        return this.f48756c;
+        return this.f48772c;
     }
 
     public boolean d() {
-        return this.f48757d;
+        return this.f48773d;
     }
 }

@@ -653,7 +653,7 @@ public final class h {
             if (view2 instanceof ImageView) {
                 return k5.k.n((ImageView) view2);
             }
-            return h5.h.f27354e;
+            return h5.h.f27370e;
         }
 
         private final h5.j n() {
@@ -662,7 +662,7 @@ public final class h {
             if (cVar instanceof i5.d) {
                 View view = ((i5.d) cVar).getView();
                 if ((view instanceof ImageView) && ((scaleType = ((ImageView) view).getScaleType()) == ImageView.ScaleType.CENTER || scaleType == ImageView.ScaleType.MATRIX)) {
-                    return h5.k.a(h5.i.f27358d);
+                    return h5.k.a(h5.i.f27374d);
                 }
                 return h5.m.b(view, false, 2, null);
             }
@@ -798,7 +798,7 @@ public final class h {
             if (i10 > 0) {
                 aVar = new a.C0411a(i10, false, 2, null);
             } else {
-                aVar = c.a.f31860b;
+                aVar = c.a.f31876b;
             }
             t(aVar);
             return this;

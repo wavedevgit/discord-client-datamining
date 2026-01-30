@@ -6,10 +6,10 @@ import java.util.Map;
 public final class b5 implements z4.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a5 f27668a;
+    private final a5 f27684a;
 
     b5(a5 a5Var) {
-        this.f27668a = a5Var;
+        this.f27684a = a5Var;
     }
 
     public static tq.h b(a5 a5Var) {
@@ -18,6 +18,6 @@ public final class b5 implements z4.a {
 
     @Override // hq.z4.a
     public z4 a(String str, String str2, String str3, String str4, Map map) {
-        return this.f27668a.b(str, str2, str3, str4, map);
+        return this.f27684a.b(str, str2, str3, str4, map);
     }
 }

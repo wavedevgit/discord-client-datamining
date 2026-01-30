@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/video_calls/native/components/HideSelfStreamAndVideoConfirmDialog.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: HideSelfStreamAndVideoConfirmDialog, environment: var1
-        _fun68493: for (var _fun68493_ip = 0;;) switch (_fun68493_ip) {
+        _fun68538: for (var _fun68538_ip = 0;;) switch (_fun68538_ip) {
             case 0:
                 var3 = arg0;
                 var1 = var3.type;
@@ -90,8 +90,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot4;
                 var0 = var0.STREAM;
                 if (!(var1 !== var0)) {
-                    _fun68493_ip = 134;
-                    continue _fun68493
+                    _fun68538_ip = 134;
+                    continue _fun68538
                 }
             case 75:
                 var9 = _closure1_slot0;
@@ -106,8 +106,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.t;
                 var0 = var0.xzxhZS;
                 var10 = var2.bind(var8)(var0);
-                _fun68493_ip = 191;
-                continue _fun68493;
+                _fun68538_ip = 191;
+                continue _fun68538;
             case 134:
                 var9 = _closure1_slot0;
                 var11 = _closure1_slot2;
@@ -125,8 +125,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot4;
                 var0 = var0.STREAM;
                 if (!(var1 !== var0)) {
-                    _fun68493_ip = 264;
-                    continue _fun68493
+                    _fun68538_ip = 264;
+                    continue _fun68538
                 }
             case 205:
                 var8 = _closure1_slot0;
@@ -141,8 +141,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.t;
                 var0 = var0.oU1p9O;
                 var16 = var1.bind(var2)(var0);
-                _fun68493_ip = 321;
-                continue _fun68493;
+                _fun68538_ip = 321;
+                continue _fun68538;
             case 264:
                 var8 = _closure1_slot0;
                 var9 = _closure1_slot2;
@@ -188,8 +188,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var6 == var4;
                 var6 = undefined;
                 if (var8) {
-                    _fun68493_ip = 456;
-                    continue _fun68493
+                    _fun68538_ip = 456;
+                    continue _fun68538
                 }
             case 450:
                 var6 = var4.onClose;
@@ -282,4 +282,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 8460, 33, 1297, 1234, 3891, 3895, 7584, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 8463, 33, 1297, 1234, 3897, 3901, 7587, 2]);

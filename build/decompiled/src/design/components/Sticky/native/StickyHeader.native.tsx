@@ -9,15 +9,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var6;
     var1 = function(arg0) { // Original name: useStickyHeaderStyles, environment: var3
-        _fun89432: for (var _fun89432_ip = 0;;) switch (_fun89432_ip) {
+        _fun89669: for (var _fun89669_ip = 0;;) switch (_fun89669_ip) {
             case 0:
                 var6 = arg0;
                 var5 = arguments[1];
                 var _closure2_slot0 = var6;
                 var8 = undefined;
                 if (!(var5 === var8)) {
-                    _fun89432_ip = 20;
-                    continue _fun89432
+                    _fun89669_ip = 20;
+                    continue _fun89669
                 }
             case 18:
                 var5 = true;
@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var7.bind(var8)(var1);
                 var1 = var2.useAnimatedStyle;
                 var0 = function() { // Original name: l, environment: var0
-                    _fun89433: for (var _fun89433_ip = 0;;) switch (_fun89433_ip) {
+                    _fun89670: for (var _fun89670_ip = 0;;) switch (_fun89670_ip) {
                         case 0:
                             var0 = _closure2_slot2;
                             var1 = {};
@@ -52,14 +52,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = var2 > var6;
                             var2 = 'relative';
                             if (var0) {
-                                _fun89433_ip = 163;
-                                continue _fun89433
+                                _fun89670_ip = 163;
+                                continue _fun89670
                             }
                         case 38:
                             var0 = var2;
                             if (!var4) {
-                                _fun89433_ip = 48;
-                                continue _fun89433
+                                _fun89670_ip = 48;
+                                continue _fun89670
                             }
                         case 44:
                             var0 = 'absolute';
@@ -76,8 +76,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = _closure2_slot1;
                             var8 = 0;
                             if (var7) {
-                                _fun89433_ip = 109;
-                                continue _fun89433
+                                _fun89670_ip = 109;
+                                continue _fun89670
                             }
                         case 93:
                             var11 = _closure2_slot0;
@@ -97,12 +97,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0[0] = var5;
                             var1.transform = var0;
                             var0 = var1;
-                            _fun89433_ip = 255;
-                            continue _fun89433;
+                            _fun89670_ip = 255;
+                            continue _fun89670;
                         case 163:
                             if (!var4) {
-                                _fun89433_ip = 170;
-                                continue _fun89433
+                                _fun89670_ip = 170;
+                                continue _fun89670
                             }
                         case 166:
                             var2 = 'absolute';
@@ -118,8 +118,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = _closure2_slot1;
                             var6 = 0;
                             if (!var3) {
-                                _fun89433_ip = 216;
-                                continue _fun89433
+                                _fun89670_ip = 216;
+                                continue _fun89670
                             }
                         case 213:
                             var6 = 1;
@@ -217,14 +217,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'design/components/Sticky/native/StickyHeader.native.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function(arg0) { // Original name: StickyHeader, environment: var3
-        _fun89434: for (var _fun89434_ip = 0;;) switch (_fun89434_ip) {
+        _fun89671: for (var _fun89671_ip = 0;;) switch (_fun89671_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.show;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun89434_ip = 19;
-                    continue _fun89434
+                    _fun89671_ip = 19;
+                    continue _fun89671
                 }
             case 17:
                 var6 = true;
@@ -261,20 +261,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8[0] = var6;
                 var8[1] = var5;
                 var5 = function() { // Environment: var1
-                    _fun89435: for (var _fun89435_ip = 0;;) switch (_fun89435_ip) {
+                    _fun89672: for (var _fun89672_ip = 0;;) switch (_fun89672_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             if (var2) {
-                                _fun89435_ip = 29;
-                                continue _fun89435
+                                _fun89672_ip = 29;
+                                continue _fun89672
                             }
                         case 12:
                             var4 = _closure2_slot2;
                             var3 = _closure2_slot0;
                             var2 = undefined;
                             var2 = var4.bind(var2)(var3);
-                            _fun89435_ip = 69;
-                            continue _fun89435;
+                            _fun89672_ip = 69;
+                            continue _fun89672;
                         case 29:
                             var2 = _closure2_slot3;
                             var1 = global;
@@ -338,8 +338,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.accessibilityElementsHidden = var5;
                 var5 = 'no-hide-descendants';
                 if (!var6) {
-                    _fun89434_ip = 290;
-                    continue _fun89434
+                    _fun89671_ip = 290;
+                    continue _fun89671
                 }
             case 286:
                 var5 = 'auto';
@@ -353,4 +353,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.StickyHeader = var3;
     var2.useStickyHeaderStyles = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3677, 1297, 11564, 3124, 4050, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3679, 1297, 11586, 3124, 4056, 2]);

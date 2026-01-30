@@ -9,10 +9,10 @@ import kotlin.coroutines.Continuation;
 public final class f0 extends z0 {
 
     /* renamed from: p  reason: collision with root package name */
-    private final Continuation f36328p;
+    private final Continuation f36344p;
 
     public f0(Continuation continuation) {
-        this.f36328p = continuation;
+        this.f36344p = continuation;
     }
 
     @Override // gs.z0
@@ -22,8 +22,8 @@ public final class f0 extends z0 {
 
     @Override // gs.z0
     public void w(Throwable th2) {
-        Continuation continuation = this.f36328p;
-        Result.a aVar = Result.f33279e;
-        continuation.resumeWith(Result.b(Unit.f33282a));
+        Continuation continuation = this.f36344p;
+        Result.a aVar = Result.f33295e;
+        continuation.resumeWith(Result.b(Unit.f33298a));
     }
 }

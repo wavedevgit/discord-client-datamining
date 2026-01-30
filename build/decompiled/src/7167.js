@@ -1,211 +1,154 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = require;
-    var2 = exports;
-    var5 = dependencyMap;
-    var0 = 0;
-    var3 = var5[var0];
-    var0 = undefined;
-    var3 = var4.bind(var0)(var3);
-    var3 = 1;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var _closure1_slot0 = var3;
-    var3 = 2;
-    var3 = var5[var3];
-    var3 = var4.bind(var0)(var3);
-    var _closure1_slot1 = var3;
-    var3 = global;
-    var6 = var3.Object;
-    var5 = var6.defineProperty;
-    var4 = {};
-    var3 = true;
-    var4.value = var3;
-    var3 = '__esModule';
-    var3 = var5.bind(var6)(var2, var3, var4);
-    var1 = function() { // Environment: var1
-        var3 = _closure1_slot1;
-        var2 = function(arg0) { // Original name: LRUMap, environment: var4
-            var2 = this;
-            var3 = _closure1_slot0;
-            var1 = _closure2_slot0;
-            var0 = undefined;
-            var1 = var3.bind(var0)(var2, var1);
-            var1 = arg0;
-            var2._maxSize = var1;
-            var1 = global;
-            var1 = var1.Map;
-            var3 = var1.prototype;
-            var3 = Object.create(var3, {
-                constructor: {
-                    value: var1
-                }
-            });
-            var6 = var3;
-            var1 = new var6[var1](var5);
-            var1 = var1 instanceof Object ? var1 : var3;
-            var2._cache = var1;
-            return var0;
-        };
-        var _closure2_slot0 = var2;
+    var1 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
+    var0 = true;
+    var2.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = function(arg0) { // Original name: makeFifoCache, environment: var0
+        var0 = arg0;
+        var _closure2_slot0 = var0;
+        var0 = new Array(0);
+        var _closure2_slot1 = var0;
         var0 = {};
-        var1 = 'size';
-        var0.key = var1;
-        var1 = function() { // Original name: get, environment: var4
-            var0 = this;
-            var0 = var0._cache;
-            var0 = var0.size;
-            return var0;
-        };
-        var0.get = var1;
-        var1 = new Array(7);
-        var1[0] = var0;
+        var _closure2_slot2 = var0;
         var0 = {};
-        var5 = 'get';
-        var0.key = var5;
-        var5 = function(arg0) { // Original name: get, environment: var4
-            _fun58805: for (var _fun58805_ip = 0;;) switch (_fun58805_ip) {
+        var2 = function(arg0, arg1) { // Original name: add, environment: var1
+            _fun58827: for (var _fun58827_ip = 0;;) switch (_fun58827_ip) {
                 case 0:
                     var3 = arg0;
-                    var1 = this;
-                    var2 = var1._cache;
-                    var0 = var2.get;
-                    var0 = var0.bind(var2)(var3);
-                    var2 = undefined;
-                    if (!(var2 === var0)) {
-                        _fun58805_ip = 30;
-                        continue _fun58805
+                    var4 = this;
+                    var0 = _closure2_slot1;
+                    var5 = var0.length;
+                    var2 = _closure2_slot0;
+                    var0 = undefined;
+                    if (!(var5 >= var2)) {
+                        _fun58827_ip = 70;
+                        continue _fun58827
                     }
-                case 28:
-                    return var2;
-                case 30:
-                    var4 = var1._cache;
+                case 27:
+                    var5 = _closure2_slot1;
+                    var2 = var5.shift;
+                    var5 = var2.bind(var5)();
+                    if (!(var0 !== var5)) {
+                        _fun58827_ip = 53;
+                        continue _fun58827
+                    }
+                case 45:
+                    var2 = _closure2_slot2;
+                    var2 = delete var2[var5];
+                case 53:
+                    var2 = _closure2_slot1;
+                    var5 = var2.length;
+                    var2 = _closure2_slot0;
+                    if (var5 >= var2) {
+                        _fun58827_ip = 27;
+                        continue _fun58827
+                    }
+                case 70:
+                    var2 = _closure2_slot2;
+                    var2 = var2[var3];
+                    if (!var2) {
+                        _fun58827_ip = 91;
+                        continue _fun58827
+                    }
+                case 81:
                     var2 = var4.delete;
                     var2 = var2.bind(var4)(var3);
-                    var2 = var1._cache;
-                    var1 = var2.set;
-                    var1 = var1.bind(var2)(var3, var0);
+                case 91:
+                    var4 = _closure2_slot1;
+                    var2 = var4.push;
+                    var2 = var2.bind(var4)(var3);
+                    var2 = _closure2_slot2;
+                    var1 = arg1;
+                    var2[var3] = var1;
                     return var0;
             }
         };
-        var0.value = var5;
-        var1[1] = var0;
-        var0 = {};
-        var5 = 'set';
-        var0.key = var5;
-        var5 = function(arg0, arg1) { // Original name: set, environment: var4
-            _fun58806: for (var _fun58806_ip = 0;;) switch (_fun58806_ip) {
-                case 0:
-                    var0 = this;
-                    var1 = var0._cache;
-                    var2 = var1.size;
-                    var1 = var0._maxSize;
-                    if (!(var2 >= var1)) {
-                        _fun58806_ip = 69;
-                        continue _fun58806
-                    }
-                case 24:
-                    var3 = var0._cache;
-                    var2 = var3.delete;
-                    var4 = var0._cache;
-                    var1 = var4.keys;
-                    var4 = var1.bind(var4)();
-                    var1 = var4.next;
-                    var1 = var1.bind(var4)();
-                    var1 = var1.value;
-                    var1 = var2.bind(var3)(var1);
-                case 69:
-                    var3 = var0._cache;
-                    var2 = var3.set;
-                    var1 = arg0;
-                    var0 = arg1;
-                    var0 = var2.bind(var3)(var1, var0);
-                    var0 = undefined;
-                    return var0;
-            }
-        };
-        var0.value = var5;
-        var1[2] = var0;
-        var0 = {};
-        var5 = 'remove';
-        var0.key = var5;
-        var5 = function(arg0) { // Original name: remove, environment: var4
-            _fun58807: for (var _fun58807_ip = 0;;) switch (_fun58807_ip) {
-                case 0:
-                    var3 = arg0;
-                    var1 = this;
-                    var2 = var1._cache;
-                    var0 = var2.get;
-                    var0 = var0.bind(var2)(var3);
-                    if (!var0) {
-                        _fun58807_ip = 41;
-                        continue _fun58807
-                    }
-                case 25:
-                    var2 = var1._cache;
-                    var1 = var2.delete;
-                    var1 = var1.bind(var2)(var3);
-                case 41:
-                    return var0;
-            }
-        };
-        var0.value = var5;
-        var1[3] = var0;
-        var0 = {};
-        var5 = 'clear';
-        var0.key = var5;
-        var5 = function() { // Original name: clear, environment: var4
-            var0 = this;
-            var1 = var0._cache;
-            var0 = var1.clear;
-            var0 = var0.bind(var1)();
+        var0.add = var2;
+        var2 = function() { // Original name: clear, environment: var1
+            var0 = {};
+            _closure2_slot2 = var0;
+            var0 = new Array(0);
+            _closure2_slot1 = var0;
             var0 = undefined;
             return var0;
         };
-        var0.value = var5;
-        var1[4] = var0;
-        var0 = {};
-        var5 = 'keys';
-        var0.key = var5;
-        var5 = function() { // Original name: keys, environment: var4
-            var0 = global;
-            var2 = var0.Array;
-            var1 = var2.from;
-            var0 = this;
-            var3 = var0._cache;
-            var0 = var3.keys;
-            var0 = var0.bind(var3)();
-            var0 = var1.bind(var2)(var0);
+        var0.clear = var2;
+        var2 = function(arg0) { // Original name: get, environment: var1
+            var1 = _closure2_slot2;
+            var0 = arg0;
+            var0 = var1[var0];
             return var0;
         };
-        var0.value = var5;
-        var1[5] = var0;
-        var0 = {};
-        var5 = 'values';
-        var0.key = var5;
-        var4 = function() { // Original name: values, environment: var4
-            var0 = new Array(0);
-            var _closure3_slot0 = var0;
-            var2 = this;
-            var3 = var2._cache;
-            var2 = var3.forEach;
-            var1 = function(arg0) { // Environment: var1
-                var2 = _closure3_slot0;
-                var1 = var2.push;
-                var0 = arg0;
-                var0 = var1.bind(var2)(var0);
-                return var0;
-            };
-            var1 = var2.bind(var3)(var1);
+        var0.get = var2;
+        var2 = function() { // Original name: size, environment: var1
+            var0 = _closure2_slot1;
+            var0 = var0.length;
             return var0;
         };
-        var0.value = var4;
-        var1[6] = var0;
-        var0 = undefined;
-        var0 = var3.bind(var0)(var2, var1);
+        var0.size = var2;
+        var1 = function(arg0) { // Original name: _delete, environment: var1
+            _fun58831: for (var _fun58831_ip = 0;;) switch (_fun58831_ip) {
+                case 0:
+                    var4 = arg0;
+                    var1 = _closure2_slot2;
+                    var1 = var1[var4];
+                    if (var1) {
+                        _fun58831_ip = 21;
+                        continue _fun58831
+                    }
+                case 17:
+                    var1 = false;
+                    return var1;
+                case 21:
+                    var1 = _closure2_slot2;
+                    var1 = delete var1[var4];
+                    var1 = _closure2_slot1;
+                    var1 = var1.length;
+                    var2 = 0;
+                    var1 = var2 < var1;
+                    if (!var1) {
+                        _fun58831_ip = 99;
+                        continue _fun58831
+                    }
+                case 47:
+                    var1 = _closure2_slot1;
+                    var1 = var1[var2];
+                    var3 = var2;
+                    if (!(var1 !== var4)) {
+                        _fun58831_ip = 80;
+                        continue _fun58831
+                    }
+                case 62:
+                    var2 = var3 + 1;
+                    var1 = _closure2_slot1;
+                    var1 = var1.length;
+                    if (var2 < var1) {
+                        _fun58831_ip = 47;
+                        continue _fun58831
+                    }
+                case 78:
+                    _fun58831_ip = 99;
+                    continue _fun58831;
+                case 80:
+                    var2 = _closure2_slot1;
+                    var1 = var2.splice;
+                    var0 = 1;
+                    var0 = var1.bind(var2)(var3, var0);
+                case 99:
+                    var0 = true;
+                    return var0;
+            }
+        };
+        var0.delete = var1;
         return var0;
     };
-    var1 = var1.bind(var0)();
-    var2.LRUMap = var1;
+    var1.makeFifoCache = var0;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [153, 6, 7]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

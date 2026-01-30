@@ -54,7 +54,6 @@ public class DCDChatManagerDelegate<T extends View, U extends BaseViewManager<T,
 
     @Override // com.facebook.react.uimanager.BaseViewManagerDelegate, com.facebook.react.uimanager.ViewManagerDelegate
     public void setProperty(T t10, String str, Object obj) {
-        String str2;
         str.getClass();
         boolean z10 = false;
         char c10 = 65535;
@@ -102,12 +101,15 @@ public class DCDChatManagerDelegate<T extends View, U extends BaseViewManager<T,
                 }
                 break;
         }
+        String str2 = null;
+        Boolean bool = null;
+        Boolean bool2 = null;
+        Boolean bool3 = null;
+        Boolean bool4 = null;
         switch (c10) {
             case 0:
                 DCDChatManagerInterface dCDChatManagerInterface = (DCDChatManagerInterface) this.mViewManager;
-                if (obj == null) {
-                    str2 = null;
-                } else {
+                if (obj != null) {
                     str2 = (String) obj;
                 }
                 dCDChatManagerInterface.setKeyboardBackgroundRgba(t10, str2);
@@ -115,16 +117,16 @@ public class DCDChatManagerDelegate<T extends View, U extends BaseViewManager<T,
             case 1:
                 DCDChatManagerInterface dCDChatManagerInterface2 = (DCDChatManagerInterface) this.mViewManager;
                 if (obj != null) {
-                    z10 = ((Boolean) obj).booleanValue();
+                    bool4 = (Boolean) obj;
                 }
-                dCDChatManagerInterface2.setAlwaysRespectKeyboard(t10, z10);
+                dCDChatManagerInterface2.setAlwaysRespectKeyboard(t10, bool4);
                 return;
             case 2:
                 DCDChatManagerInterface dCDChatManagerInterface3 = (DCDChatManagerInterface) this.mViewManager;
                 if (obj != null) {
-                    z10 = ((Boolean) obj).booleanValue();
+                    bool3 = (Boolean) obj;
                 }
-                dCDChatManagerInterface3.setAdjustContentOffsetWithBounds(t10, z10);
+                dCDChatManagerInterface3.setAdjustContentOffsetWithBounds(t10, bool3);
                 return;
             case 3:
                 ((DCDChatManagerInterface) this.mViewManager).setRoleStyle(t10, (String) obj);
@@ -139,16 +141,16 @@ public class DCDChatManagerDelegate<T extends View, U extends BaseViewManager<T,
             case 5:
                 DCDChatManagerInterface dCDChatManagerInterface5 = (DCDChatManagerInterface) this.mViewManager;
                 if (obj != null) {
-                    z10 = ((Boolean) obj).booleanValue();
+                    bool2 = (Boolean) obj;
                 }
-                dCDChatManagerInterface5.setAnimateEmoji(t10, z10);
+                dCDChatManagerInterface5.setAnimateEmoji(t10, bool2);
                 return;
             case 6:
                 DCDChatManagerInterface dCDChatManagerInterface6 = (DCDChatManagerInterface) this.mViewManager;
                 if (obj != null) {
-                    z10 = ((Boolean) obj).booleanValue();
+                    bool = (Boolean) obj;
                 }
-                dCDChatManagerInterface6.setHACK_fixModalInteraction(t10, z10);
+                dCDChatManagerInterface6.setHACK_fixModalInteraction(t10, bool);
                 return;
             default:
                 super.kotlinCompat$setProperty(t10, str, obj);

@@ -5,16 +5,16 @@ import ui.c;
 final class n6 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final n6 f43325a = new n6();
+    static final n6 f43341a = new n6();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43326b;
+    private static final ui.c f43342b;
 
     static {
         c.b a10 = ui.c.a("errorCode");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43326b = a10.b(s1Var.b()).a();
+        f43342b = a10.b(s1Var.b()).a();
     }
 
     private n6() {
@@ -22,6 +22,6 @@ final class n6 implements ui.d {
 
     @Override // ui.d
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
-        ((ui.e) obj2).b(f43326b, ((za) obj).a());
+        ((ui.e) obj2).b(f43342b, ((za) obj).a());
     }
 }

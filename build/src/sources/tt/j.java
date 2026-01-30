@@ -14,10 +14,10 @@ public enum j {
     
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f49929e = new a(null);
+    public static final a f49945e = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f49937d;
+    private final String f49953d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -28,27 +28,27 @@ public enum j {
         public final j a(String protocol) {
             Intrinsics.checkNotNullParameter(protocol, "protocol");
             j jVar = j.HTTP_1_0;
-            if (Intrinsics.areEqual(protocol, jVar.f49937d)) {
+            if (Intrinsics.areEqual(protocol, jVar.f49953d)) {
                 return jVar;
             }
             j jVar2 = j.HTTP_1_1;
-            if (Intrinsics.areEqual(protocol, jVar2.f49937d)) {
+            if (Intrinsics.areEqual(protocol, jVar2.f49953d)) {
                 return jVar2;
             }
             j jVar3 = j.H2_PRIOR_KNOWLEDGE;
-            if (Intrinsics.areEqual(protocol, jVar3.f49937d)) {
+            if (Intrinsics.areEqual(protocol, jVar3.f49953d)) {
                 return jVar3;
             }
             j jVar4 = j.HTTP_2;
-            if (Intrinsics.areEqual(protocol, jVar4.f49937d)) {
+            if (Intrinsics.areEqual(protocol, jVar4.f49953d)) {
                 return jVar4;
             }
             j jVar5 = j.SPDY_3;
-            if (Intrinsics.areEqual(protocol, jVar5.f49937d)) {
+            if (Intrinsics.areEqual(protocol, jVar5.f49953d)) {
                 return jVar5;
             }
             j jVar6 = j.QUIC;
-            if (Intrinsics.areEqual(protocol, jVar6.f49937d)) {
+            if (Intrinsics.areEqual(protocol, jVar6.f49953d)) {
                 return jVar6;
             }
             throw new IOException("Unexpected protocol: " + protocol);
@@ -59,11 +59,11 @@ public enum j {
     }
 
     j(String str) {
-        this.f49937d = str;
+        this.f49953d = str;
     }
 
     @Override // java.lang.Enum
     public String toString() {
-        return this.f49937d;
+        return this.f49953d;
     }
 }

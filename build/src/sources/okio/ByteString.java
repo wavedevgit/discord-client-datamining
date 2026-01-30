@@ -16,19 +16,19 @@ import kotlin.text.StringsKt;
 public class ByteString implements Serializable, Comparable {
 
     /* renamed from: o  reason: collision with root package name */
-    public static final a f44363o = new a(null);
+    public static final a f44379o = new a(null);
 
     /* renamed from: p  reason: collision with root package name */
-    public static final ByteString f44364p = new ByteString(new byte[0]);
+    public static final ByteString f44380p = new ByteString(new byte[0]);
 
     /* renamed from: d  reason: collision with root package name */
-    private final byte[] f44365d;
+    private final byte[] f44381d;
 
     /* renamed from: e  reason: collision with root package name */
-    private transient int f44366e;
+    private transient int f44382e;
 
     /* renamed from: i  reason: collision with root package name */
-    private transient String f44367i;
+    private transient String f44383i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -119,7 +119,7 @@ public class ByteString implements Serializable, Comparable {
 
     public ByteString(byte[] data) {
         Intrinsics.checkNotNullParameter(data, "data");
-        this.f44365d = data;
+        this.f44381d = data;
     }
 
     public static /* synthetic */ ByteString J(ByteString byteString, int i10, int i11, int i12, Object obj) {
@@ -136,11 +136,11 @@ public class ByteString implements Serializable, Comparable {
     }
 
     public static final ByteString f(String str) {
-        return f44363o.e(str);
+        return f44379o.e(str);
     }
 
     public static final ByteString h(String str) {
-        return f44363o.g(str);
+        return f44379o.g(str);
     }
 
     public static /* synthetic */ int t(ByteString byteString, ByteString byteString2, int i10, int i11, Object obj) {
@@ -177,11 +177,11 @@ public class ByteString implements Serializable, Comparable {
     }
 
     public final void C(int i10) {
-        this.f44366e = i10;
+        this.f44382e = i10;
     }
 
     public final void D(String str) {
-        this.f44367i = str;
+        this.f44383i = str;
     }
 
     public final ByteString E() {
@@ -257,7 +257,7 @@ public class ByteString implements Serializable, Comparable {
 
     public void N(OutputStream out) {
         Intrinsics.checkNotNullParameter(out, "out");
-        out.write(this.f44365d);
+        out.write(this.f44381d);
     }
 
     public void O(Buffer buffer, int i10, int i11) {
@@ -316,7 +316,7 @@ public class ByteString implements Serializable, Comparable {
     public ByteString g(String algorithm) {
         Intrinsics.checkNotNullParameter(algorithm, "algorithm");
         MessageDigest messageDigest = MessageDigest.getInstance(algorithm);
-        messageDigest.update(this.f44365d, 0, G());
+        messageDigest.update(this.f44381d, 0, G());
         byte[] digest = messageDigest.digest();
         Intrinsics.checkNotNull(digest);
         return new ByteString(digest);
@@ -342,11 +342,11 @@ public class ByteString implements Serializable, Comparable {
     }
 
     public final byte[] k() {
-        return this.f44365d;
+        return this.f44381d;
     }
 
     public final int l() {
-        return this.f44366e;
+        return this.f44382e;
     }
 
     public int o() {
@@ -354,7 +354,7 @@ public class ByteString implements Serializable, Comparable {
     }
 
     public final String p() {
-        return this.f44367i;
+        return this.f44383i;
     }
 
     public String q() {

@@ -9,44 +9,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var0;
     var0 = '__esModule';
     var0 = var3.bind(var4)(var1, var0, var2);
-    var5 = ['id', 'enabled', 'shouldCancelWhenOutside', 'hitSlop', 'cancelsTouchesInView', 'userSelect', 'activeCursor', 'mouseButton', 'enableContextMenu', 'touchAction'];
-    var4 = new Array(0);
-    var3 = var4.concat;
-    var2 = ['waitFor', 'simultaneousHandlers', 'blocksHandlers'];
-    var0 = ['onBegan', 'onFailed', 'onCancelled', 'onActivated', 'onEnded', 'onGestureEvent', 'onHandlerStateChange'];
-    var3 = var3.bind(var4)(var5, var2, var0);
-    var4 = new Array(0);
-    var2 = var4.concat;
-    var0 = ['needsPointerData', 'manualActivation'];
-    var2 = var2.bind(var4)(var5, var0);
-    var0 = {};
-    var5 = 1;
-    var0.LEFT = var5;
-    var4 = 'LEFT';
-    var0[var5] = var4;
-    var5 = 2;
-    var0.RIGHT = var5;
-    var4 = 'RIGHT';
-    var0[var5] = var4;
-    var5 = 4;
-    var0.MIDDLE = var5;
-    var4 = 'MIDDLE';
-    var0[var5] = var4;
-    var5 = 8;
-    var0.BUTTON_4 = var5;
-    var4 = 'BUTTON_4';
-    var0[var5] = var4;
-    var5 = 16;
-    var0.BUTTON_5 = var5;
-    var4 = 'BUTTON_5';
-    var0[var5] = var4;
-    var5 = 31;
-    var0.ALL = var5;
-    var4 = 'ALL';
-    var0[var5] = var4;
-    var1.baseGestureHandlerProps = var3;
-    var1.baseGestureHandlerWithDetectorProps = var2;
-    var1.MouseButton = var0;
+    var0 = {
+        'RIGHT': 1,
+        'LEFT': 2,
+        'UP': 4,
+        'DOWN': 8
+    };
+    var1.Directions = var0;
+    var0 = {
+        'UP_RIGHT': 5,
+        'DOWN_RIGHT': 9,
+        'UP_LEFT': 6,
+        'DOWN_LEFT': 10
+    };
+    var1.DiagonalDirections = var0;
     var0 = undefined;
     return var0;
 })(undefined, undefined, undefined, undefined, undefined, undefined, []);

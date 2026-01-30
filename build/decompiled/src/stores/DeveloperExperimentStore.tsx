@@ -1,7 +1,7 @@
 // stores/DeveloperExperimentStore.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun81319: for (var _fun81319_ip = 0;;) switch (_fun81319_ip) {
+    _fun81365: for (var _fun81365_ip = 0;;) switch (_fun81365_ip) {
         case 0:
             var4 = require;
             var6 = metroImportDefault;
@@ -10,7 +10,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var _closure1_slot0 = var4;
             var _closure1_slot1 = var5;
             var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
-                _fun81320: for (var _fun81320_ip = 0;;) switch (_fun81320_ip) {
+                _fun81366: for (var _fun81366_ip = 0;;) switch (_fun81366_ip) {
                     case 0:
                     case 2: // try_start_0
                         var1 = global;
@@ -31,8 +31,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = !var1;
                         var _closure2_slot0 = var1;
                     case 72: // try_end0
-                        _fun81320_ip = 76;
-                        continue _fun81320;
+                        _fun81366_ip = 76;
+                        continue _fun81366;
                     case 74: // catch_target0
                         CatchBlockStart(arg_register = 1);
                     case 76:
@@ -115,8 +115,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = 'production';
             var7 = var7 === var10;
             if (var7) {
-                _fun81319_ip = 274;
-                continue _fun81319
+                _fun81365_ip = 274;
+                continue _fun81365
             }
         case 246:
             var9 = var9.window;
@@ -132,7 +132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = var7.Store;
             var1 = function(arg0) { // Environment: var1
                 var3 = function(arg0) { // Original name: DeveloperExperimentStore, environment: var5
-                    _fun81325: for (var _fun81325_ip = 0;;) switch (_fun81325_ip) {
+                    _fun81371: for (var _fun81371_ip = 0;;) switch (_fun81371_ip) {
                         case 0:
                             var3 = this;
                             var11 = 0;
@@ -152,14 +152,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = _closure1_slot11;
                             var0 = var0.bind(var2)();
                             if (var0) {
-                                _fun81325_ip = 84;
-                                continue _fun81325
+                                _fun81371_ip = 84;
+                                continue _fun81371
                             }
                         case 71:
                             var0 = var7.apply;
                             var0 = var0.bind(var7)(var3, var8);
-                            _fun81325_ip = 118;
-                            continue _fun81325;
+                            _fun81371_ip = 118;
+                            continue _fun81371;
                         case 84:
                             var5 = global;
                             var6 = var5.Reflect;
@@ -232,13 +232,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = 'getExperimentDescriptor';
                 var4.key = var6;
                 var5 = function() { // Original name: value, environment: var5
-                    _fun81330: for (var _fun81330_ip = 0;;) switch (_fun81330_ip) {
+                    _fun81376: for (var _fun81376_ip = 0;;) switch (_fun81376_ip) {
                         case 0:
                             var1 = _closure1_slot10;
                             var0 = null;
                             if (!var1) {
-                                _fun81330_ip = 44;
-                                continue _fun81330
+                                _fun81376_ip = 44;
+                                continue _fun81376
                             }
                         case 12:
                             var1 = {

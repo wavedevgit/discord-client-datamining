@@ -38,15 +38,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = 'initialize';
         var0.key = var1;
         var1 = function(arg0) { // Original name: value, environment: var4
-            _fun36987: for (var _fun36987_ip = 0;;) switch (_fun36987_ip) {
+            _fun37038: for (var _fun37038_ip = 0;;) switch (_fun37038_ip) {
                 case 0:
                     var2 = this;
                     var7 = 0;
                     var3 = copyRestArgs(var7);
                     var0 = var2.isInitialized;
                     if (var0) {
-                        _fun36987_ip = 61;
-                        continue _fun36987
+                        _fun37038_ip = 61;
+                        continue _fun37038
                     }
                 case 18:
                     var0 = true;
@@ -73,13 +73,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'terminate';
         var0.key = var5;
         var4 = function() { // Original name: value, environment: var4
-            _fun36988: for (var _fun36988_ip = 0;;) switch (_fun36988_ip) {
+            _fun37039: for (var _fun37039_ip = 0;;) switch (_fun37039_ip) {
                 case 0:
                     var1 = this;
                     var0 = var1.isInitialized;
                     if (!var0) {
-                        _fun36988_ip = 30;
-                        continue _fun36988
+                        _fun37039_ip = 30;
+                        continue _fun37039
                     }
                 case 12:
                     var0 = false;

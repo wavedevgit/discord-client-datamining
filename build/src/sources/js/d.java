@@ -9,13 +9,13 @@ import kotlinx.coroutines.flow.FlowCollector;
 public final class d implements c {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Flow f32485d;
+    private final Flow f32501d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static final class a implements FlowCollector {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ FlowCollector f32486d;
+        final /* synthetic */ FlowCollector f32502d;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: js.d$a$a  reason: collision with other inner class name */
@@ -23,10 +23,10 @@ public final class d implements c {
         public static final class C0431a extends kotlin.coroutines.jvm.internal.d {
 
             /* renamed from: d  reason: collision with root package name */
-            /* synthetic */ Object f32487d;
+            /* synthetic */ Object f32503d;
 
             /* renamed from: i  reason: collision with root package name */
-            int f32489i;
+            int f32505i;
 
             C0431a(Continuation continuation) {
                 super(continuation);
@@ -34,14 +34,14 @@ public final class d implements c {
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
-                this.f32487d = obj;
-                this.f32489i |= Integer.MIN_VALUE;
+                this.f32503d = obj;
+                this.f32505i |= Integer.MIN_VALUE;
                 return a.this.emit(null, this);
             }
         }
 
         a(FlowCollector flowCollector) {
-            this.f32486d = flowCollector;
+            this.f32502d = flowCollector;
         }
 
         /* JADX WARN: Removed duplicated region for block: B:10:0x0023  */
@@ -58,20 +58,20 @@ public final class d implements c {
                 if (r0 == 0) goto L13
                 r0 = r6
                 js.d$a$a r0 = (js.d.a.C0431a) r0
-                int r1 = r0.f32489i
+                int r1 = r0.f32505i
                 r2 = -2147483648(0xffffffff80000000, float:-0.0)
                 r3 = r1 & r2
                 if (r3 == 0) goto L13
                 int r1 = r1 - r2
-                r0.f32489i = r1
+                r0.f32505i = r1
                 goto L18
             L13:
                 js.d$a$a r0 = new js.d$a$a
                 r0.<init>(r6)
             L18:
-                java.lang.Object r6 = r0.f32487d
+                java.lang.Object r6 = r0.f32503d
                 java.lang.Object r1 = or.b.f()
-                int r2 = r0.f32489i
+                int r2 = r0.f32505i
                 r3 = 1
                 if (r2 == 0) goto L31
                 if (r2 != r3) goto L29
@@ -86,13 +86,13 @@ public final class d implements c {
                 kotlin.c.b(r6)
                 kotlin.coroutines.CoroutineContext r6 = r0.getContext()
                 kotlinx.coroutines.z.k(r6)
-                kotlinx.coroutines.flow.FlowCollector r6 = r4.f32486d
-                r0.f32489i = r3
+                kotlinx.coroutines.flow.FlowCollector r6 = r4.f32502d
+                r0.f32505i = r3
                 java.lang.Object r5 = r6.emit(r5, r0)
                 if (r5 != r1) goto L46
                 return r1
             L46:
-                kotlin.Unit r5 = kotlin.Unit.f33282a
+                kotlin.Unit r5 = kotlin.Unit.f33298a
                 return r5
             */
             throw new UnsupportedOperationException("Method not decompiled: js.d.a.emit(java.lang.Object, kotlin.coroutines.Continuation):java.lang.Object");
@@ -100,15 +100,15 @@ public final class d implements c {
     }
 
     public d(Flow flow) {
-        this.f32485d = flow;
+        this.f32501d = flow;
     }
 
     @Override // kotlinx.coroutines.flow.Flow
     public Object collect(FlowCollector flowCollector, Continuation continuation) {
-        Object collect = this.f32485d.collect(new a(flowCollector), continuation);
+        Object collect = this.f32501d.collect(new a(flowCollector), continuation);
         if (collect == or.b.f()) {
             return collect;
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 }

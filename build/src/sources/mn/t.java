@@ -27,7 +27,7 @@ import x.y1;
 public final class t {
 
     /* renamed from: a  reason: collision with root package name */
-    private w f39289a;
+    private w f39305a;
 
     /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
     /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
@@ -35,31 +35,31 @@ public final class t {
     public static final class a {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f39290d = new a("FRONT", 0);
+        public static final a f39306d = new a("FRONT", 0);
 
         /* renamed from: e  reason: collision with root package name */
-        public static final a f39291e = new a("BACK", 1);
+        public static final a f39307e = new a("BACK", 1);
 
         /* renamed from: i  reason: collision with root package name */
-        public static final a f39292i = new a("EXTERNAL", 2);
+        public static final a f39308i = new a("EXTERNAL", 2);
 
         /* renamed from: o  reason: collision with root package name */
-        private static final /* synthetic */ a[] f39293o;
+        private static final /* synthetic */ a[] f39309o;
 
         /* renamed from: p  reason: collision with root package name */
-        private static final /* synthetic */ EnumEntries f39294p;
+        private static final /* synthetic */ EnumEntries f39310p;
 
         static {
             a[] a10 = a();
-            f39293o = a10;
-            f39294p = pr.a.a(a10);
+            f39309o = a10;
+            f39310p = pr.a.a(a10);
         }
 
         private a(String str, int i10) {
         }
 
         private static final /* synthetic */ a[] a() {
-            return new a[]{f39290d, f39291e, f39292i};
+            return new a[]{f39306d, f39307e, f39308i};
         }
 
         public static a valueOf(String str) {
@@ -67,7 +67,7 @@ public final class t {
         }
 
         public static a[] values() {
-            return (a[]) f39293o.clone();
+            return (a[]) f39309o.clone();
         }
     }
 
@@ -75,16 +75,16 @@ public final class t {
     public static final class b implements DefaultLifecycleObserver {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ ExecutorService f39295d;
+        final /* synthetic */ ExecutorService f39311d;
 
         b(ExecutorService executorService) {
-            this.f39295d = executorService;
+            this.f39311d = executorService;
         }
 
         @Override // androidx.lifecycle.DefaultLifecycleObserver
         public void onDestroy(LifecycleOwner owner) {
             Intrinsics.checkNotNullParameter(owner, "owner");
-            this.f39295d.shutdown();
+            this.f39311d.shutdown();
         }
     }
 
@@ -93,16 +93,16 @@ public final class t {
     public static final class c extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f39296d;
+        Object f39312d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f39297e;
+        Object f39313e;
 
         /* renamed from: i  reason: collision with root package name */
-        /* synthetic */ Object f39298i;
+        /* synthetic */ Object f39314i;
 
         /* renamed from: p  reason: collision with root package name */
-        int f39300p;
+        int f39316p;
 
         c(Continuation continuation) {
             super(continuation);
@@ -110,8 +110,8 @@ public final class t {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f39298i = obj;
-            this.f39300p |= Integer.MIN_VALUE;
+            this.f39314i = obj;
+            this.f39316p |= Integer.MIN_VALUE;
             Object j10 = t.this.j(null, this);
             if (j10 == or.b.f()) {
                 return j10;
@@ -124,29 +124,29 @@ public final class t {
     public static final class d implements n0.f {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Continuation f39301a;
+        final /* synthetic */ Continuation f39317a;
 
         /* renamed from: b  reason: collision with root package name */
-        final /* synthetic */ File f39302b;
+        final /* synthetic */ File f39318b;
 
         d(Continuation continuation, File file) {
-            this.f39301a = continuation;
-            this.f39302b = file;
+            this.f39317a = continuation;
+            this.f39318b = file;
         }
 
         @Override // x.n0.f
         public void d(n0.h outputFileResults) {
             Intrinsics.checkNotNullParameter(outputFileResults, "outputFileResults");
-            Continuation continuation = this.f39301a;
-            Result.a aVar = Result.f33279e;
-            continuation.resumeWith(Result.b(Result.a(Result.b(this.f39302b))));
+            Continuation continuation = this.f39317a;
+            Result.a aVar = Result.f33295e;
+            continuation.resumeWith(Result.b(Result.a(Result.b(this.f39318b))));
         }
 
         @Override // x.n0.f
         public void e(x.o0 exception) {
             Intrinsics.checkNotNullParameter(exception, "exception");
-            Continuation continuation = this.f39301a;
-            Result.a aVar = Result.f33279e;
+            Continuation continuation = this.f39317a;
+            Result.a aVar = Result.f33295e;
             continuation.resumeWith(Result.b(Result.a(Result.b(kotlin.c.a(exception)))));
         }
     }
@@ -164,7 +164,7 @@ public final class t {
         }
         final int rotation = previewView.getDisplay().getRotation();
         final ExecutorService newSingleThreadExecutor = Executors.newSingleThreadExecutor();
-        g.a aVar2 = o0.g.f42228i;
+        g.a aVar2 = o0.g.f42244i;
         Context context2 = previewView.getContext();
         Intrinsics.checkNotNullExpressionValue(context2, "getContext(...)");
         final ListenableFuture b10 = aVar2.b(context2);
@@ -204,7 +204,7 @@ public final class t {
             y1 b11 = aVar2.b();
             Intrinsics.checkNotNullExpressionValue(b11, "build(...)");
             x.i n10 = gVar.n(b10, pVar, b11);
-            tVar.f39289a = new w(n10, n0Var, tVar.i(n10));
+            tVar.f39305a = new w(n10, n0Var, tVar.i(n10));
             Context context2 = previewView.getContext();
             Intrinsics.checkNotNullExpressionValue(context2, "getContext(...)");
             jp.f.i(context2).getLifecycle().a(new b(executorService));
@@ -252,7 +252,7 @@ public final class t {
             int r3 = r1.intValue()     // Catch: java.lang.IllegalArgumentException -> L90
             r4 = 1
             if (r3 != r4) goto L4c
-            mn.v$b r1 = mn.v.b.f39320e     // Catch: java.lang.IllegalArgumentException -> L90
+            mn.v$b r1 = mn.v.b.f39336e     // Catch: java.lang.IllegalArgumentException -> L90
             goto L5a
         L4c:
             if (r1 != 0) goto L4f
@@ -260,10 +260,10 @@ public final class t {
         L4f:
             int r1 = r1.intValue()     // Catch: java.lang.IllegalArgumentException -> L90
             if (r1 != 0) goto L58
-            mn.v$b r1 = mn.v.b.f39319d     // Catch: java.lang.IllegalArgumentException -> L90
+            mn.v$b r1 = mn.v.b.f39335d     // Catch: java.lang.IllegalArgumentException -> L90
             goto L5a
         L58:
-            mn.v$b r1 = mn.v.b.f39321i     // Catch: java.lang.IllegalArgumentException -> L90
+            mn.v$b r1 = mn.v.b.f39337i     // Catch: java.lang.IllegalArgumentException -> L90
         L5a:
             android.hardware.camera2.CameraCharacteristics$Key r3 = android.hardware.camera2.CameraCharacteristics.CONTROL_AE_AVAILABLE_TARGET_FPS_RANGES     // Catch: java.lang.IllegalArgumentException -> L90
             java.lang.Object r12 = r12.b(r3)     // Catch: java.lang.IllegalArgumentException -> L90
@@ -306,7 +306,7 @@ public final class t {
 
     public final void c(boolean z10) {
         x.i a10;
-        w wVar = this.f39289a;
+        w wVar = this.f39305a;
         if (wVar != null && (a10 = wVar.a()) != null) {
             a10.a().a(z10);
         }
@@ -315,7 +315,7 @@ public final class t {
     public final void d(PreviewView previewView) {
         x.i a10;
         Intrinsics.checkNotNullParameter(previewView, "previewView");
-        w wVar = this.f39289a;
+        w wVar = this.f39305a;
         if (wVar != null && (a10 = wVar.a()) != null) {
             a10.a().h(new b0.a(new x.y(previewView.getDisplay(), a10.b(), previewView.getWidth(), previewView.getHeight()).b(previewView.getWidth() / 2.0f, previewView.getHeight() / 2.0f), 1).b());
         }
@@ -323,7 +323,7 @@ public final class t {
 
     public final v e() {
         v b10;
-        w wVar = this.f39289a;
+        w wVar = this.f39305a;
         if (wVar != null && (b10 = wVar.b()) != null) {
             return b10;
         }
@@ -336,7 +336,7 @@ public final class t {
         Intrinsics.checkNotNullParameter(cameraDirection, "cameraDirection");
         Intrinsics.checkNotNullParameter(onCameraError, "onCameraError");
         p.a aVar2 = new p.a();
-        if (cameraDirection == a.f39290d) {
+        if (cameraDirection == a.f39306d) {
             i10 = 0;
         } else {
             i10 = 1;
@@ -364,26 +364,26 @@ public final class t {
             if (r0 == 0) goto L13
             r0 = r8
             mn.t$c r0 = (mn.t.c) r0
-            int r1 = r0.f39300p
+            int r1 = r0.f39316p
             r2 = -2147483648(0xffffffff80000000, float:-0.0)
             r3 = r1 & r2
             if (r3 == 0) goto L13
             int r1 = r1 - r2
-            r0.f39300p = r1
+            r0.f39316p = r1
             goto L18
         L13:
             mn.t$c r0 = new mn.t$c
             r0.<init>(r8)
         L18:
-            java.lang.Object r8 = r0.f39298i
+            java.lang.Object r8 = r0.f39314i
             java.lang.Object r1 = or.b.f()
-            int r2 = r0.f39300p
+            int r2 = r0.f39316p
             r3 = 1
             if (r2 == 0) goto L39
             if (r2 != r3) goto L31
-            java.lang.Object r7 = r0.f39297e
+            java.lang.Object r7 = r0.f39313e
             op.c r7 = (op.c) r7
-            java.lang.Object r7 = r0.f39296d
+            java.lang.Object r7 = r0.f39312d
             mn.t r7 = (mn.t) r7
             kotlin.c.b(r8)
             goto L8d
@@ -394,9 +394,9 @@ public final class t {
             throw r7
         L39:
             kotlin.c.b(r8)
-            r0.f39296d = r6
-            r0.f39297e = r7
-            r0.f39300p = r3
+            r0.f39312d = r6
+            r0.f39313e = r7
+            r0.f39316p = r3
             nr.d r8 = new nr.d
             kotlin.coroutines.Continuation r2 = or.b.c(r0)
             r8.<init>(r2)
@@ -407,7 +407,7 @@ public final class t {
             x.n0$g r2 = r2.a()
             java.lang.String r3 = "build(...)"
             kotlin.jvm.internal.Intrinsics.checkNotNullExpressionValue(r2, r3)
-            mn.w r3 = r6.f39289a
+            mn.w r3 = r6.f39305a
             if (r3 == 0) goto L7d
             x.n0 r3 = r3.c()
             if (r3 == 0) goto L7d

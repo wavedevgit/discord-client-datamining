@@ -54,7 +54,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var8 = var8.VOICE;
     var1.parent = var8;
     var8 = function() { // Original name: useInputModeSettingTrailing, environment: var7
-        _fun84249: for (var _fun84249_ip = 0;;) switch (_fun84249_ip) {
+        _fun84295: for (var _fun84295_ip = 0;;) switch (_fun84295_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot1;
@@ -76,8 +76,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot3;
                 var0 = var0.PUSH_TO_TALK;
                 if (!(var2 !== var0)) {
-                    _fun84249_ip = 128;
-                    continue _fun84249
+                    _fun84295_ip = 128;
+                    continue _fun84295
                 }
             case 71:
                 var4 = _closure1_slot0;
@@ -92,8 +92,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.t;
                 var0 = var0.cHCEOJ;
                 var0 = var2.bind(var3)(var0);
-                _fun84249_ip = 183;
-                continue _fun84249;
+                _fun84295_ip = 183;
+                continue _fun84295;
             case 128:
                 var4 = _closure1_slot0;
                 var6 = _closure1_slot1;
@@ -145,4 +145,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3435, 6965, 3469, 566, 1234, 8939, 10740, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3435, 6968, 3469, 566, 1234, 8943, 10746, 2]);

@@ -53,11 +53,11 @@ public final class AFb1lSDK implements Application.ActivityLifecycleCallbacks {
         Intrinsics.checkNotNullParameter(aFb1lSDK, "");
         Intrinsics.checkNotNullParameter(activity, "");
         try {
-            Result.a aVar = Result.f33279e;
+            Result.a aVar = Result.f33295e;
             aFb1lSDK.getRevenue.getMonetizationNetwork(new AFh1rSDK(activity, aFb1lSDK.getMonetizationNetwork));
-            b10 = Result.b(Unit.f33282a);
+            b10 = Result.b(Unit.f33298a);
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f33279e;
+            Result.a aVar2 = Result.f33295e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         Throwable e10 = Result.e(b10);
@@ -72,11 +72,11 @@ public final class AFb1lSDK implements Application.ActivityLifecycleCallbacks {
         Intrinsics.checkNotNullParameter(aFb1lSDK, "");
         aFb1lSDK.AFAdRevenueData = false;
         try {
-            Result.a aVar = Result.f33279e;
+            Result.a aVar = Result.f33295e;
             aFb1lSDK.getRevenue.getMediationNetwork();
-            b10 = Result.b(Unit.f33282a);
+            b10 = Result.b(Unit.f33298a);
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f33279e;
+            Result.a aVar2 = Result.f33295e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         Throwable e10 = Result.e(b10);

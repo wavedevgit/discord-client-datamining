@@ -8,14 +8,14 @@ public enum ba implements u1 {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f42765d;
+    private final int f42781d;
 
     ba(int i10) {
-        this.f42765d = i10;
+        this.f42781d = i10;
     }
 
     @Override // og.u1
     public final int zza() {
-        return this.f42765d;
+        return this.f42781d;
     }
 }

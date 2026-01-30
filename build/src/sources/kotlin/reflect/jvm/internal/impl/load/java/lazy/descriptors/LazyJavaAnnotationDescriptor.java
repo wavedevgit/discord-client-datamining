@@ -57,50 +57,50 @@ import org.jetbrains.annotations.NotNull;
 public final class LazyJavaAnnotationDescriptor implements PossiblyExternalAnnotationDescriptor {
 
     /* renamed from: i  reason: collision with root package name */
-    static final /* synthetic */ KProperty[] f34174i = {Reflection.property1(new PropertyReference1Impl(LazyJavaAnnotationDescriptor.class, "fqName", "getFqName()Lorg/jetbrains/kotlin/name/FqName;", 0)), Reflection.property1(new PropertyReference1Impl(LazyJavaAnnotationDescriptor.class, "type", "getType()Lorg/jetbrains/kotlin/types/SimpleType;", 0)), Reflection.property1(new PropertyReference1Impl(LazyJavaAnnotationDescriptor.class, "allValueArguments", "getAllValueArguments()Ljava/util/Map;", 0))};
+    static final /* synthetic */ KProperty[] f34190i = {Reflection.property1(new PropertyReference1Impl(LazyJavaAnnotationDescriptor.class, "fqName", "getFqName()Lorg/jetbrains/kotlin/name/FqName;", 0)), Reflection.property1(new PropertyReference1Impl(LazyJavaAnnotationDescriptor.class, "type", "getType()Lorg/jetbrains/kotlin/types/SimpleType;", 0)), Reflection.property1(new PropertyReference1Impl(LazyJavaAnnotationDescriptor.class, "allValueArguments", "getAllValueArguments()Ljava/util/Map;", 0))};
 
     /* renamed from: a  reason: collision with root package name */
-    private final LazyJavaResolverContext f34175a;
+    private final LazyJavaResolverContext f34191a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final JavaAnnotation f34176b;
+    private final JavaAnnotation f34192b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final NullableLazyValue f34177c;
+    private final NullableLazyValue f34193c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final NotNullLazyValue f34178d;
+    private final NotNullLazyValue f34194d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final JavaSourceElement f34179e;
+    private final JavaSourceElement f34195e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final NotNullLazyValue f34180f;
+    private final NotNullLazyValue f34196f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final boolean f34181g;
+    private final boolean f34197g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final boolean f34182h;
+    private final boolean f34198h;
 
     public LazyJavaAnnotationDescriptor(@NotNull LazyJavaResolverContext c10, @NotNull JavaAnnotation javaAnnotation, boolean z10) {
         Intrinsics.checkNotNullParameter(c10, "c");
         Intrinsics.checkNotNullParameter(javaAnnotation, "javaAnnotation");
-        this.f34175a = c10;
-        this.f34176b = javaAnnotation;
-        this.f34177c = c10.getStorageManager().createNullableLazyValue(new c(this));
-        this.f34178d = c10.getStorageManager().createLazyValue(new d(this));
-        this.f34179e = c10.getComponents().getSourceElementFactory().source(javaAnnotation);
-        this.f34180f = c10.getStorageManager().createLazyValue(new e(this));
-        this.f34181g = javaAnnotation.isIdeExternalAnnotation();
-        this.f34182h = javaAnnotation.isFreshlySupportedTypeUseAnnotation() || z10;
+        this.f34191a = c10;
+        this.f34192b = javaAnnotation;
+        this.f34193c = c10.getStorageManager().createNullableLazyValue(new c(this));
+        this.f34194d = c10.getStorageManager().createLazyValue(new d(this));
+        this.f34195e = c10.getComponents().getSourceElementFactory().source(javaAnnotation);
+        this.f34196f = c10.getStorageManager().createLazyValue(new e(this));
+        this.f34197g = javaAnnotation.isIdeExternalAnnotation();
+        this.f34198h = javaAnnotation.isFreshlySupportedTypeUseAnnotation() || z10;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Map d(LazyJavaAnnotationDescriptor lazyJavaAnnotationDescriptor) {
         Pair pair;
         ArrayList arrayList = new ArrayList();
-        for (JavaAnnotationArgument javaAnnotationArgument : lazyJavaAnnotationDescriptor.f34176b.getArguments()) {
+        for (JavaAnnotationArgument javaAnnotationArgument : lazyJavaAnnotationDescriptor.f34192b.getArguments()) {
             Name name = javaAnnotationArgument.getName();
             if (name == null) {
                 name = JvmAnnotationNames.DEFAULT_ANNOTATION_MEMBER_NAME;
@@ -119,12 +119,12 @@ public final class LazyJavaAnnotationDescriptor implements PossiblyExternalAnnot
     }
 
     private final ClassDescriptor e(FqName fqName) {
-        return FindClassInModuleKt.findNonGenericClassAcrossDependencies(this.f34175a.getModule(), ClassId.Companion.topLevel(fqName), this.f34175a.getComponents().getDeserializedDescriptorResolver().getComponents().getNotFoundClasses());
+        return FindClassInModuleKt.findNonGenericClassAcrossDependencies(this.f34191a.getModule(), ClassId.Companion.topLevel(fqName), this.f34191a.getComponents().getDeserializedDescriptorResolver().getComponents().getNotFoundClasses());
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final FqName f(LazyJavaAnnotationDescriptor lazyJavaAnnotationDescriptor) {
-        ClassId classId = lazyJavaAnnotationDescriptor.f34176b.getClassId();
+        ClassId classId = lazyJavaAnnotationDescriptor.f34192b.getClassId();
         if (classId != null) {
             return classId.asSingleFqName();
         }
@@ -157,7 +157,7 @@ public final class LazyJavaAnnotationDescriptor implements PossiblyExternalAnnot
     }
 
     private final ConstantValue h(JavaAnnotation javaAnnotation) {
-        return new AnnotationValue(new LazyJavaAnnotationDescriptor(this.f34175a, javaAnnotation, false, 4, null));
+        return new AnnotationValue(new LazyJavaAnnotationDescriptor(this.f34191a, javaAnnotation, false, 4, null));
     }
 
     private final ConstantValue i(Name name, List list) {
@@ -169,7 +169,7 @@ public final class LazyJavaAnnotationDescriptor implements PossiblyExternalAnnot
         Intrinsics.checkNotNull(annotationClass);
         ValueParameterDescriptor annotationParameterByName = DescriptorResolverUtils.getAnnotationParameterByName(name, annotationClass);
         if (annotationParameterByName == null || (arrayType = annotationParameterByName.getType()) == null) {
-            arrayType = this.f34175a.getComponents().getModule().getBuiltIns().getArrayType(Variance.INVARIANT, ErrorUtils.createErrorType(ErrorTypeKind.UNKNOWN_ARRAY_ELEMENT_TYPE_OF_ANNOTATION_ARGUMENT, new String[0]));
+            arrayType = this.f34191a.getComponents().getModule().getBuiltIns().getArrayType(Variance.INVARIANT, ErrorUtils.createErrorType(ErrorTypeKind.UNKNOWN_ARRAY_ELEMENT_TYPE_OF_ANNOTATION_ARGUMENT, new String[0]));
             Intrinsics.checkNotNullExpressionValue(arrayType, "getArrayType(...)");
         }
         List<JavaAnnotationArgument> list2 = list;
@@ -192,20 +192,20 @@ public final class LazyJavaAnnotationDescriptor implements PossiblyExternalAnnot
     }
 
     private final ConstantValue k(JavaType javaType) {
-        return KClassValue.Companion.create(this.f34175a.getTypeResolver().transformJavaType(javaType, JavaTypeAttributesKt.toAttributes$default(TypeUsage.COMMON, false, false, null, 7, null)));
+        return KClassValue.Companion.create(this.f34191a.getTypeResolver().transformJavaType(javaType, JavaTypeAttributesKt.toAttributes$default(TypeUsage.COMMON, false, false, null, 7, null)));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final SimpleType l(LazyJavaAnnotationDescriptor lazyJavaAnnotationDescriptor) {
         FqName fqName = lazyJavaAnnotationDescriptor.getFqName();
         if (fqName == null) {
-            return ErrorUtils.createErrorType(ErrorTypeKind.NOT_FOUND_FQNAME_FOR_JAVA_ANNOTATION, lazyJavaAnnotationDescriptor.f34176b.toString());
+            return ErrorUtils.createErrorType(ErrorTypeKind.NOT_FOUND_FQNAME_FOR_JAVA_ANNOTATION, lazyJavaAnnotationDescriptor.f34192b.toString());
         }
-        ClassDescriptor mapJavaToKotlin$default = JavaToKotlinClassMapper.mapJavaToKotlin$default(JavaToKotlinClassMapper.INSTANCE, fqName, lazyJavaAnnotationDescriptor.f34175a.getModule().getBuiltIns(), null, 4, null);
+        ClassDescriptor mapJavaToKotlin$default = JavaToKotlinClassMapper.mapJavaToKotlin$default(JavaToKotlinClassMapper.INSTANCE, fqName, lazyJavaAnnotationDescriptor.f34191a.getModule().getBuiltIns(), null, 4, null);
         if (mapJavaToKotlin$default == null) {
-            JavaClass resolve = lazyJavaAnnotationDescriptor.f34176b.resolve();
+            JavaClass resolve = lazyJavaAnnotationDescriptor.f34192b.resolve();
             if (resolve != null) {
-                mapJavaToKotlin$default = lazyJavaAnnotationDescriptor.f34175a.getComponents().getModuleClassResolver().resolveClass(resolve);
+                mapJavaToKotlin$default = lazyJavaAnnotationDescriptor.f34191a.getComponents().getModuleClassResolver().resolveClass(resolve);
             } else {
                 mapJavaToKotlin$default = null;
             }
@@ -219,21 +219,21 @@ public final class LazyJavaAnnotationDescriptor implements PossiblyExternalAnnot
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotationDescriptor
     @NotNull
     public Map<Name, ConstantValue<?>> getAllValueArguments() {
-        return (Map) StorageKt.getValue(this.f34180f, this, f34174i[2]);
+        return (Map) StorageKt.getValue(this.f34196f, this, f34190i[2]);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotationDescriptor
     public FqName getFqName() {
-        return (FqName) StorageKt.getValue(this.f34177c, this, f34174i[0]);
+        return (FqName) StorageKt.getValue(this.f34193c, this, f34190i[0]);
     }
 
     public final boolean isFreshlySupportedTypeUseAnnotation() {
-        return this.f34182h;
+        return this.f34198h;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.descriptors.PossiblyExternalAnnotationDescriptor
     public boolean isIdeExternalAnnotation() {
-        return this.f34181g;
+        return this.f34197g;
     }
 
     @NotNull
@@ -244,13 +244,13 @@ public final class LazyJavaAnnotationDescriptor implements PossiblyExternalAnnot
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotationDescriptor
     @NotNull
     public JavaSourceElement getSource() {
-        return this.f34179e;
+        return this.f34195e;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotationDescriptor
     @NotNull
     public SimpleType getType() {
-        return (SimpleType) StorageKt.getValue(this.f34178d, this, f34174i[1]);
+        return (SimpleType) StorageKt.getValue(this.f34194d, this, f34190i[1]);
     }
 
     public /* synthetic */ LazyJavaAnnotationDescriptor(LazyJavaResolverContext lazyJavaResolverContext, JavaAnnotation javaAnnotation, boolean z10, int i10, DefaultConstructorMarker defaultConstructorMarker) {

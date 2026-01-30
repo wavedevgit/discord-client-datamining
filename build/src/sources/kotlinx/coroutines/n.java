@@ -6,18 +6,18 @@ import java.util.concurrent.Future;
 final class n implements n0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Future f36344d;
+    private final Future f36360d;
 
     public n(Future future) {
-        this.f36344d = future;
+        this.f36360d = future;
     }
 
     @Override // gs.n0
     public void dispose() {
-        this.f36344d.cancel(false);
+        this.f36360d.cancel(false);
     }
 
     public String toString() {
-        return "DisposableFutureHandle[" + this.f36344d + ']';
+        return "DisposableFutureHandle[" + this.f36360d + ']';
     }
 }

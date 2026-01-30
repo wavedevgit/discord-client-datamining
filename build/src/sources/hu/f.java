@@ -6,7 +6,7 @@ import okio.Buffer;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final f f28280a = new f();
+    public static final f f28296a = new f();
 
     private f() {
     }
@@ -27,9 +27,9 @@ public final class f {
         int length = key.length;
         int i10 = 0;
         do {
-            byte[] bArr = cursor.f44358p;
-            int i11 = cursor.f44359q;
-            int i12 = cursor.f44360r;
+            byte[] bArr = cursor.f44374p;
+            int i11 = cursor.f44375q;
+            int i12 = cursor.f44376r;
             if (bArr != null) {
                 while (i11 < i12) {
                     int i13 = i10 % length;

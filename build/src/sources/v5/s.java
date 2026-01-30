@@ -10,28 +10,28 @@ import w5.c;
 abstract class s {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c.a f50707a = c.a.a("x", "y");
+    private static final c.a f50723a = c.a.a("x", "y");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f50708a;
+        static final /* synthetic */ int[] f50724a;
 
         static {
             int[] iArr = new int[c.b.values().length];
-            f50708a = iArr;
+            f50724a = iArr;
             try {
                 iArr[c.b.NUMBER.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f50708a[c.b.BEGIN_ARRAY.ordinal()] = 2;
+                f50724a[c.b.BEGIN_ARRAY.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f50708a[c.b.BEGIN_OBJECT.ordinal()] = 3;
+                f50724a[c.b.BEGIN_OBJECT.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
         }
@@ -62,7 +62,7 @@ abstract class s {
         float f11 = 0.0f;
         float f12 = 0.0f;
         while (cVar.hasNext()) {
-            int B = cVar.B(f50707a);
+            int B = cVar.B(f50723a);
             if (B != 0) {
                 if (B != 1) {
                     cVar.E();
@@ -93,7 +93,7 @@ abstract class s {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static PointF e(w5.c cVar, float f10) {
-        int i10 = a.f50708a[cVar.n().ordinal()];
+        int i10 = a.f50724a[cVar.n().ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
@@ -122,7 +122,7 @@ abstract class s {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static float g(w5.c cVar) {
         c.b n10 = cVar.n();
-        int i10 = a.f50708a[n10.ordinal()];
+        int i10 = a.f50724a[n10.ordinal()];
         if (i10 != 1) {
             if (i10 == 2) {
                 cVar.u();

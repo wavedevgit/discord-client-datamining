@@ -20,7 +20,7 @@ public final class b0 extends a2 {
     public b0(final String name, final int i10) {
         super(name, null, i10, 2, null);
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f6775m = k.b.f56101a;
+        this.f6775m = k.b.f56117a;
         this.f6776n = ir.l.b(new Function0() { // from class: at.a0
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
@@ -35,7 +35,7 @@ public final class b0 extends a2 {
     public static final SerialDescriptor[] A(int i10, String str, b0 b0Var) {
         SerialDescriptor[] serialDescriptorArr = new SerialDescriptor[i10];
         for (int i11 = 0; i11 < i10; i11++) {
-            serialDescriptorArr[i11] = zs.j.e(str + '.' + b0Var.e(i11), l.d.f56105a, new SerialDescriptor[0], null, 8, null);
+            serialDescriptorArr[i11] = zs.j.e(str + '.' + b0Var.e(i11), l.d.f56121a, new SerialDescriptor[0], null, 8, null);
         }
         return serialDescriptorArr;
     }
@@ -53,7 +53,7 @@ public final class b0 extends a2 {
             return false;
         }
         SerialDescriptor serialDescriptor = (SerialDescriptor) obj;
-        if (serialDescriptor.getKind() == k.b.f56101a && Intrinsics.areEqual(h(), serialDescriptor.h()) && Intrinsics.areEqual(u1.a(this), u1.a(serialDescriptor))) {
+        if (serialDescriptor.getKind() == k.b.f56117a && Intrinsics.areEqual(h(), serialDescriptor.h()) && Intrinsics.areEqual(u1.a(this), u1.a(serialDescriptor))) {
             return true;
         }
         return false;

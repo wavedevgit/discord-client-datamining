@@ -8,28 +8,28 @@ import kotlin.reflect.jvm.internal.impl.types.model.TypeSystemContext;
 public class b implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final TypeCheckerState f35925d;
+    private final TypeCheckerState f35941d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final TypeSystemContext f35926e;
+    private final TypeSystemContext f35942e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final RigidTypeMarker f35927i;
+    private final RigidTypeMarker f35943i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final RigidTypeMarker f35928o;
+    private final RigidTypeMarker f35944o;
 
     public b(TypeCheckerState typeCheckerState, TypeSystemContext typeSystemContext, RigidTypeMarker rigidTypeMarker, RigidTypeMarker rigidTypeMarker2) {
-        this.f35925d = typeCheckerState;
-        this.f35926e = typeSystemContext;
-        this.f35927i = rigidTypeMarker;
-        this.f35928o = rigidTypeMarker2;
+        this.f35941d = typeCheckerState;
+        this.f35942e = typeSystemContext;
+        this.f35943i = rigidTypeMarker;
+        this.f35944o = rigidTypeMarker2;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         boolean r10;
-        r10 = AbstractTypeChecker.r(this.f35925d, this.f35926e, this.f35927i, this.f35928o);
+        r10 = AbstractTypeChecker.r(this.f35941d, this.f35942e, this.f35943i, this.f35944o);
         return Boolean.valueOf(r10);
     }
 }

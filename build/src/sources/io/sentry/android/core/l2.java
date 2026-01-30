@@ -7,10 +7,10 @@ import io.sentry.k5;
 public final class l2 implements k5 {
 
     /* renamed from: a  reason: collision with root package name */
-    private k5 f29119a = new d7();
+    private k5 f29135a = new d7();
 
     @Override // io.sentry.k5
     public j5 now() {
-        return this.f29119a.now();
+        return this.f29135a.now();
     }
 }

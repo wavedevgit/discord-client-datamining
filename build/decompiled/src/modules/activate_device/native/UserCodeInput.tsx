@@ -85,7 +85,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activate_device/native/UserCodeInput.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun96666: for (var _fun96666_ip = 0;;) switch (_fun96666_ip) {
+        _fun96920: for (var _fun96920_ip = 0;;) switch (_fun96920_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.onClose;
@@ -101,8 +101,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0 != var6;
                 var0 = '';
                 if (!var7) {
-                    _fun96666_ip = 65;
-                    continue _fun96666
+                    _fun96920_ip = 65;
+                    continue _fun96920
                 }
             case 62:
                 var0 = var6;
@@ -257,4 +257,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.UserCodeInput = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 12540, 33, 1297, 671, 12541, 12542, 3895, 1234, 5358, 4037, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 12565, 33, 1297, 671, 12566, 12567, 3901, 1234, 5362, 4043, 2]);

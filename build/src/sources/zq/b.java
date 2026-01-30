@@ -7,39 +7,39 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f56056a;
+    private boolean f56072a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f56057b;
+    private final int f56073b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f56058c;
+    private final int f56074c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Bitmap.CompressFormat f56059d;
+    private final Bitmap.CompressFormat f56075d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f56060e;
+    private final int f56076e;
 
     public b(int i10, int i11, Bitmap.CompressFormat format, int i12) {
         Intrinsics.checkParameterIsNotNull(format, "format");
-        this.f56057b = i10;
-        this.f56058c = i11;
-        this.f56059d = format;
-        this.f56060e = i12;
+        this.f56073b = i10;
+        this.f56074c = i11;
+        this.f56075d = format;
+        this.f56076e = i12;
     }
 
     @Override // zq.a
     public boolean isSatisfied(File imageFile) {
         Intrinsics.checkParameterIsNotNull(imageFile, "imageFile");
-        return this.f56056a;
+        return this.f56072a;
     }
 
     @Override // zq.a
     public File satisfy(File imageFile) {
         Intrinsics.checkParameterIsNotNull(imageFile, "imageFile");
-        File j10 = yq.c.j(imageFile, yq.c.f(imageFile, yq.c.e(imageFile, this.f56057b, this.f56058c)), this.f56059d, this.f56060e);
-        this.f56056a = true;
+        File j10 = yq.c.j(imageFile, yq.c.f(imageFile, yq.c.e(imageFile, this.f56073b, this.f56074c)), this.f56075d, this.f56076e);
+        this.f56072a = true;
         return j10;
     }
 }

@@ -34,7 +34,7 @@ public final class FrameTickerKt {
                 @Override // kotlin.jvm.functions.Function1
                 public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                     invoke(((Number) obj).longValue());
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
 
                 public final void invoke(long j10) {
@@ -44,7 +44,7 @@ public final class FrameTickerKt {
             if (withFrameNanosChoreo == b.f()) {
                 return withFrameNanosChoreo;
             }
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
     };
     @NotNull
@@ -94,7 +94,7 @@ public final class FrameTickerKt {
                         @Override // kotlin.jvm.functions.Function1
                         public /* bridge */ /* synthetic */ Object invoke(Object obj2) {
                             invoke(((Number) obj2).longValue());
-                            return Unit.f33282a;
+                            return Unit.f33298a;
                         }
 
                         public final void invoke(long j10) {
@@ -106,12 +106,12 @@ public final class FrameTickerKt {
                         return f10;
                     }
                 }
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(@NotNull CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-                return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+                return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
             }
         }
 
@@ -121,7 +121,7 @@ public final class FrameTickerKt {
             if (g10 == b.f()) {
                 return g10;
             }
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
     };
 

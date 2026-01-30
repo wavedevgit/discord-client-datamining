@@ -18,7 +18,7 @@ import java.nio.ByteBuffer;
 public class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final c f52663a = new c();
+    private static final c f52679a = new c();
 
     private c() {
     }
@@ -34,7 +34,7 @@ public class c {
     }
 
     public static c f() {
-        return f52663a;
+        return f52679a;
     }
 
     public static Bitmap i(ByteBuffer byteBuffer, int i10, int i11, int i12) {

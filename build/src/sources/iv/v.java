@@ -7,31 +7,31 @@ import java.util.concurrent.Executor;
 abstract class v {
 
     /* renamed from: a  reason: collision with root package name */
-    static final Executor f31440a;
+    static final Executor f31456a;
 
     /* renamed from: b  reason: collision with root package name */
-    static final w f31441b;
+    static final w f31457b;
 
     /* renamed from: c  reason: collision with root package name */
-    static final c f31442c;
+    static final c f31458c;
 
     static {
         String property = System.getProperty("java.vm.name");
         property.getClass();
         if (!property.equals("RoboVM")) {
             if (!property.equals("Dalvik")) {
-                f31440a = null;
-                f31441b = new w.b();
-                f31442c = new c.a();
+                f31456a = null;
+                f31457b = new w.b();
+                f31458c = new c.a();
                 return;
             }
-            f31440a = new a();
-            f31441b = new w.a();
-            f31442c = new c.a();
+            f31456a = new a();
+            f31457b = new w.a();
+            f31458c = new c.a();
             return;
         }
-        f31440a = null;
-        f31441b = new w();
-        f31442c = new c();
+        f31456a = null;
+        f31457b = new w();
+        f31458c = new c();
     }
 }

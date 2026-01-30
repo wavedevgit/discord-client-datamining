@@ -183,14 +183,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.NewBadge = var3;
     var3 = function(arg0) { // Environment: var1
-        _fun50811: for (var _fun50811_ip = 0;;) switch (_fun50811_ip) {
+        _fun50857: for (var _fun50857_ip = 0;;) switch (_fun50857_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.isNew;
                 var4 = undefined;
                 if (!(var0 === var4)) {
-                    _fun50811_ip = 17;
-                    continue _fun50811
+                    _fun50857_ip = 17;
+                    continue _fun50857
                 }
             case 15:
                 var0 = false;
@@ -199,8 +199,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot7;
                 var9 = var1.bind(var4)();
                 if (var0) {
-                    _fun50811_ip = 156;
-                    continue _fun50811
+                    _fun50857_ip = 156;
+                    continue _fun50857
                 }
             case 36:
                 var2 = _closure1_slot5;
@@ -230,8 +230,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var2.bind(var4)(var6, var3);
                 var0.children = var3;
                 var0 = var2.bind(var4)(var1, var0);
-                _fun50811_ip = 408;
-                continue _fun50811;
+                _fun50857_ip = 408;
+                continue _fun50857;
             case 156:
                 var3 = _closure1_slot6;
                 var10 = _closure1_slot1;
@@ -297,14 +297,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.LockBadge = var3;
     var3 = function(arg0) { // Environment: var1
-        _fun50812: for (var _fun50812_ip = 0;;) switch (_fun50812_ip) {
+        _fun50858: for (var _fun50858_ip = 0;;) switch (_fun50858_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.isNew;
                 var4 = undefined;
                 if (!(var0 === var4)) {
-                    _fun50812_ip = 17;
-                    continue _fun50812
+                    _fun50858_ip = 17;
+                    continue _fun50858
                 }
             case 15:
                 var0 = false;
@@ -313,8 +313,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = _closure1_slot7;
                 var9 = var1.bind(var4)();
                 if (var0) {
-                    _fun50812_ip = 156;
-                    continue _fun50812
+                    _fun50858_ip = 156;
+                    continue _fun50858
                 }
             case 36:
                 var2 = _closure1_slot5;
@@ -344,8 +344,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var2.bind(var4)(var6, var3);
                 var0.children = var3;
                 var0 = var2.bind(var4)(var1, var0);
-                _fun50812_ip = 408;
-                continue _fun50812;
+                _fun50858_ip = 408;
+                continue _fun50858;
             case 156:
                 var3 = _closure1_slot6;
                 var10 = _closure1_slot1;
@@ -454,4 +454,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.LimitedTimeBadge = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1615, 33, 1297, 671, 3895, 1234, 5706, 4814, 5707, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1615, 33, 1297, 671, 3901, 1234, 5709, 4820, 5710, 2]);

@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/game_update/native/GameUpdateFeedbackModule.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: GameUpdateFeedbackModule, environment: var1
-        _fun118439: for (var _fun118439_ip = 0;;) switch (_fun118439_ip) {
+        _fun118718: for (var _fun118718_ip = 0;;) switch (_fun118718_ip) {
             case 0:
                 var0 = arg0;
                 var12 = var0.gameName;
@@ -123,8 +123,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var11 != var12;
                 var11 = '';
                 if (!var13) {
-                    _fun118439_ip = 209;
-                    continue _fun118439
+                    _fun118718_ip = 209;
+                    continue _fun118718
                 }
             case 206:
                 var11 = var12;
@@ -155,8 +155,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = 'interested';
                 var11 = var16;
                 if (!(var12 === var18)) {
-                    _fun118439_ip = 323;
-                    continue _fun118439
+                    _fun118718_ip = 323;
+                    continue _fun118718
                 }
             case 319:
                 var11 = 'active';
@@ -224,8 +224,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = {};
                 var17 = 'not_interested';
                 if (!(var17 === var18)) {
-                    _fun118439_ip = 513;
-                    continue _fun118439
+                    _fun118718_ip = 513;
+                    continue _fun118718
                 }
             case 507:
                 var16 = 'destructive';
@@ -291,4 +291,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.GameUpdateFeedbackModule = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 660, 33, 1297, 3895, 1234, 2491, 4037, 13587, 795, 13589, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 660, 33, 1297, 3901, 1234, 2491, 4043, 13613, 795, 13615, 2]);

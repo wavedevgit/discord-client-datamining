@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var1.bind(var2)(var3);
         var2 = var3.filter;
         var1 = function(arg0) { // Environment: var0
-            _fun117961: for (var _fun117961_ip = 0;;) switch (_fun117961_ip) {
+            _fun118240: for (var _fun118240_ip = 0;;) switch (_fun118240_ip) {
                 case 0:
                     var0 = arg0;
                     var1 = var0.userId;
@@ -45,8 +45,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.bind(var3)();
                     var0 = var0 === var1;
                     if (!var0) {
-                        _fun117961_ip = 44;
-                        continue _fun117961
+                        _fun118240_ip = 44;
+                        continue _fun118240
                     }
                 case 38:
                     var1 = null;
@@ -98,4 +98,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.AVErrorVideoStreamSenderReadyTimeoutDefinition = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1216, 3906, 7965, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1216, 3912, 7968, 2]);

@@ -5,50 +5,50 @@ import kotlin.jvm.internal.LongCompanionObject;
 public final class c9 {
 
     /* renamed from: a  reason: collision with root package name */
-    private Long f42791a;
+    private Long f42807a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Long f42792b;
+    private Long f42808b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Long f42793c;
+    private Long f42809c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Long f42794d;
+    private Long f42810d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Long f42795e;
+    private Long f42811e;
 
     /* renamed from: f  reason: collision with root package name */
-    private Long f42796f;
+    private Long f42812f;
 
     public final c9 a(Long l10) {
-        this.f42793c = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
+        this.f42809c = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
         return this;
     }
 
     public final c9 b(Long l10) {
-        this.f42794d = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
+        this.f42810d = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
         return this;
     }
 
     public final c9 c(Long l10) {
-        this.f42791a = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
+        this.f42807a = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
         return this;
     }
 
     public final c9 d(Long l10) {
-        this.f42795e = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
+        this.f42811e = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
         return this;
     }
 
     public final c9 e(Long l10) {
-        this.f42792b = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
+        this.f42808b = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
         return this;
     }
 
     public final c9 f(Long l10) {
-        this.f42796f = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
+        this.f42812f = Long.valueOf(l10.longValue() & LongCompanionObject.MAX_VALUE);
         return this;
     }
 

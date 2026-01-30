@@ -1,14 +1,14 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = function(arg0) { // Environment: var0
-        _fun17281: for (var _fun17281_ip = 0;;) switch (_fun17281_ip) {
+        _fun17282: for (var _fun17282_ip = 0;;) switch (_fun17282_ip) {
             case 0:
                 var3 = arg0;
                 var1 = 'string';
                 var0 = typeof var3;
                 if (!(var1 === var0)) {
-                    _fun17281_ip = 78;
-                    continue _fun17281
+                    _fun17282_ip = 78;
+                    continue _fun17282
                 }
             case 14:
                 var2 = var3.replace;

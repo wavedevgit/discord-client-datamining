@@ -5,30 +5,30 @@ import ui.c;
 final class u5 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final u5 f43581a = new u5();
+    static final u5 f43597a = new u5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43582b;
+    private static final ui.c f43598b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43583c;
+    private static final ui.c f43599c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f43584d;
+    private static final ui.c f43600d;
 
     static {
         c.b a10 = ui.c.a("identifyLanguageConfidenceThreshold");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43582b = a10.b(s1Var.b()).a();
+        f43598b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("identifyAllLanguagesConfidenceThreshold");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43583c = a11.b(s1Var2.b()).a();
+        f43599c = a11.b(s1Var2.b()).a();
         c.b a12 = ui.c.a("confidenceThreshold");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f43584d = a12.b(s1Var3.b()).a();
+        f43600d = a12.b(s1Var3.b()).a();
     }
 
     private u5() {

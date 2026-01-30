@@ -8,10 +8,10 @@ import pb.h;
 public abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final AtomicReference f42505a = new AtomicReference();
+    private static final AtomicReference f42521a = new AtomicReference();
 
     public static void a(Throwable th2) {
-        a[] aVarArr = (a[]) f42505a.get();
+        a[] aVarArr = (a[]) f42521a.get();
         if (aVarArr != null && aVarArr.length > 0) {
             a aVar = aVarArr[0];
             throw null;
@@ -19,7 +19,7 @@ public abstract class b {
     }
 
     public static void b() {
-        a[] aVarArr = (a[]) f42505a.get();
+        a[] aVarArr = (a[]) f42521a.get();
         if (aVarArr != null && aVarArr.length > 0) {
             a aVar = aVarArr[0];
             throw null;
@@ -27,7 +27,7 @@ public abstract class b {
     }
 
     public static void c(Throwable th2, boolean z10) {
-        a[] aVarArr = (a[]) f42505a.get();
+        a[] aVarArr = (a[]) f42521a.get();
         if (aVarArr != null && aVarArr.length > 0) {
             a aVar = aVarArr[0];
             throw null;
@@ -35,7 +35,7 @@ public abstract class b {
     }
 
     public static void d(String str, int i10) {
-        a[] aVarArr = (a[]) f42505a.get();
+        a[] aVarArr = (a[]) f42521a.get();
         if (aVarArr != null && aVarArr.length > 0) {
             a aVar = aVarArr[0];
             throw null;
@@ -43,7 +43,7 @@ public abstract class b {
     }
 
     public static void e(Throwable th2, boolean z10) {
-        a[] aVarArr = (a[]) f42505a.get();
+        a[] aVarArr = (a[]) f42521a.get();
         if (aVarArr != null && aVarArr.length > 0) {
             a aVar = aVarArr[0];
             throw null;
@@ -51,7 +51,7 @@ public abstract class b {
     }
 
     public static void f(String str, String str2, int i10) {
-        a[] aVarArr = (a[]) f42505a.get();
+        a[] aVarArr = (a[]) f42521a.get();
         if (aVarArr != null && aVarArr.length > 0) {
             a aVar = aVarArr[0];
             throw null;
@@ -59,7 +59,7 @@ public abstract class b {
     }
 
     public static void g(Throwable th2) {
-        a[] aVarArr = (a[]) f42505a.get();
+        a[] aVarArr = (a[]) f42521a.get();
         if (aVarArr != null && aVarArr.length > 0) {
             a aVar = aVarArr[0];
             throw null;
@@ -67,7 +67,7 @@ public abstract class b {
     }
 
     public static void h(h hVar) {
-        a[] aVarArr = (a[]) f42505a.get();
+        a[] aVarArr = (a[]) f42521a.get();
         if (aVarArr != null && aVarArr.length > 0) {
             a aVar = aVarArr[0];
             throw null;
@@ -75,7 +75,7 @@ public abstract class b {
     }
 
     public static void i(Throwable th2) {
-        a[] aVarArr = (a[]) f42505a.get();
+        a[] aVarArr = (a[]) f42521a.get();
         if (aVarArr != null && aVarArr.length > 0) {
             a aVar = aVarArr[0];
             throw null;
@@ -83,7 +83,7 @@ public abstract class b {
     }
 
     public static void j(x xVar, String str, int i10) {
-        a[] aVarArr = (a[]) f42505a.get();
+        a[] aVarArr = (a[]) f42521a.get();
         if (aVarArr != null && aVarArr.length > 0) {
             a aVar = aVarArr[0];
             throw null;
@@ -91,7 +91,7 @@ public abstract class b {
     }
 
     public static void k(Throwable th2) {
-        a[] aVarArr = (a[]) f42505a.get();
+        a[] aVarArr = (a[]) f42521a.get();
         if (aVarArr != null && aVarArr.length > 0) {
             a aVar = aVarArr[0];
             throw null;
@@ -99,7 +99,7 @@ public abstract class b {
     }
 
     public static void l(e0 e0Var) {
-        a[] aVarArr = (a[]) f42505a.get();
+        a[] aVarArr = (a[]) f42521a.get();
         if (aVarArr != null && aVarArr.length > 0) {
             a aVar = aVarArr[0];
             throw null;

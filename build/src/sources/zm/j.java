@@ -22,7 +22,7 @@ import zm.g;
 public abstract class j extends g {
 
     /* renamed from: p  reason: collision with root package name */
-    public static final a f55835p = new a(null);
+    public static final a f55851p = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -38,7 +38,7 @@ public abstract class j extends g {
     static final class b extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final b f55836d = new b();
+        public static final b f55852d = new b();
 
         b() {
             super(0);
@@ -47,7 +47,7 @@ public abstract class j extends g {
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             m1234invoke();
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         /* renamed from: invoke  reason: collision with other method in class */
@@ -59,7 +59,7 @@ public abstract class j extends g {
     static final class c extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final c f55837d = new c();
+        public static final c f55853d = new c();
 
         c() {
             super(0);
@@ -68,7 +68,7 @@ public abstract class j extends g {
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             m1235invoke();
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         /* renamed from: invoke  reason: collision with other method in class */
@@ -102,10 +102,10 @@ public abstract class j extends g {
     protected final g.a b(Object initialModalRendering, a0 initialViewEnvironment) {
         Intrinsics.checkNotNullParameter(initialModalRendering, "initialModalRendering");
         Intrinsics.checkNotNullParameter(initialViewEnvironment, "initialViewEnvironment");
-        vm.d dVar = new vm.d(initialModalRendering, false, b.f55836d, 2, null);
+        vm.d dVar = new vm.d(initialModalRendering, false, b.f55852d, 2, null);
         Context context = getContext();
         Intrinsics.checkNotNullExpressionValue(context, "this.context");
-        final View d10 = f0.d((e0) initialViewEnvironment.a(e0.f51221a), dVar, initialViewEnvironment, context, this, null, 16, null);
+        final View d10 = f0.d((e0) initialViewEnvironment.a(e0.f51237a), dVar, initialViewEnvironment, context, this, null, 16, null);
         g0.h(d10);
         Dialog g10 = g(d10);
         g10.setOnKeyListener(new DialogInterface.OnKeyListener() { // from class: zm.i
@@ -122,7 +122,7 @@ public abstract class j extends g {
     @Override // zm.g
     protected void d(g.a dialogRef) {
         Intrinsics.checkNotNullParameter(dialogRef, "dialogRef");
-        vm.d dVar = new vm.d(dialogRef.f(), false, c.f55837d, 2, null);
+        vm.d dVar = new vm.d(dialogRef.f(), false, c.f55853d, 2, null);
         Object e10 = dialogRef.e();
         if (e10 != null) {
             g0.g((View) e10, dVar, dialogRef.h());

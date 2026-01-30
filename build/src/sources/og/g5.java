@@ -5,30 +5,30 @@ import ui.c;
 final class g5 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final g5 f43050a = new g5();
+    static final g5 f43066a = new g5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43051b;
+    private static final ui.c f43067b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43052c;
+    private static final ui.c f43068c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f43053d;
+    private static final ui.c f43069d;
 
     static {
         c.b a10 = ui.c.a("modelType");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43051b = a10.b(s1Var.b()).a();
+        f43067b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("isSuccessful");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43052c = a11.b(s1Var2.b()).a();
+        f43068c = a11.b(s1Var2.b()).a();
         c.b a12 = ui.c.a("modelName");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f43053d = a12.b(s1Var3.b()).a();
+        f43069d = a12.b(s1Var3.b()).a();
     }
 
     private g5() {

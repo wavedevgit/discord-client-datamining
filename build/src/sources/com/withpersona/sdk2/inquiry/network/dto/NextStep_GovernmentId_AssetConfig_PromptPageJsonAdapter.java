@@ -100,7 +100,7 @@ public final class NextStep_GovernmentId_AssetConfig_PromptPageJsonAdapter exten
         RemoteImage remoteImage15 = remoteImage;
         Constructor<NextStep.GovernmentId.AssetConfig.PromptPage> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.GovernmentId.AssetConfig.PromptPage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, Integer.TYPE, sm.c.f49081c);
+            constructor = NextStep.GovernmentId.AssetConfig.PromptPage.class.getDeclaredConstructor(RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, RemoteImage.class, Integer.TYPE, sm.c.f49097c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

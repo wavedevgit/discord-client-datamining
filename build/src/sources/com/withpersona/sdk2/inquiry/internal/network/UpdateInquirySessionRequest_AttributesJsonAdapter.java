@@ -89,7 +89,7 @@ public final class UpdateInquirySessionRequest_AttributesJsonAdapter extends com
         }
         Constructor constructor = this.f20231e;
         if (constructor == null) {
-            constructor = UpdateInquirySessionRequest.Attributes.class.getDeclaredConstructor(Double.class, Double.class, String.class, List.class, Integer.TYPE, sm.c.f49081c);
+            constructor = UpdateInquirySessionRequest.Attributes.class.getDeclaredConstructor(Double.class, Double.class, String.class, List.class, Integer.TYPE, sm.c.f49097c);
             this.f20231e = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

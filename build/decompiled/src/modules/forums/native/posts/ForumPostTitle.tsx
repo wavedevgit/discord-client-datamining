@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/forums/native/posts/ForumPostTitle.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: ForumPostTitle, environment: var1
-        _fun89936: for (var _fun89936_ip = 0;;) switch (_fun89936_ip) {
+        _fun90173: for (var _fun90173_ip = 0;;) switch (_fun90173_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.title;
@@ -55,8 +55,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var2.bind(var3)();
                 var9 = 'text-muted';
                 if (!var1) {
-                    _fun89936_ip = 60;
-                    continue _fun89936
+                    _fun90173_ip = 60;
+                    continue _fun90173
                 }
             case 54:
                 var9 = 'mobile-text-heading-primary';
@@ -84,4 +84,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 3895, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 3901, 2]);

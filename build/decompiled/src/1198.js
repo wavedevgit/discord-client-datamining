@@ -40,7 +40,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot4 = var1;
     var4 = function() { // Original name: getTheme, environment: var4
-        _fun13042: for (var _fun13042_ip = 0;;) switch (_fun13042_ip) {
+        _fun13043: for (var _fun13043_ip = 0;;) switch (_fun13043_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var0 = _closure1_slot1;
@@ -52,8 +52,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var0.bind(var1)();
                 var0 = 'system';
                 if (!(var0 === var3)) {
-                    _fun13042_ip = 57;
-                    continue _fun13042
+                    _fun13043_ip = 57;
+                    continue _fun13043
                 }
             case 43:
                 var1 = _closure1_slot2;
@@ -89,8 +89,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var4.bind(var5)(var2, var1);
                 var2 = 'dark';
                 if (!(var2 === var3)) {
-                    _fun13042_ip = 196;
-                    continue _fun13042
+                    _fun13043_ip = 196;
+                    continue _fun13043
                 }
             case 193:
                 var0 = var1;

@@ -5,7 +5,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var4 = dependencyMap;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
-        _fun55550: for (var _fun55550_ip = 0;;) switch (_fun55550_ip) {
+        _fun55595: for (var _fun55595_ip = 0;;) switch (_fun55595_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -26,8 +26,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun55550_ip = 74;
-                continue _fun55550;
+                _fun55595_ip = 74;
+                continue _fun55595;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -78,7 +78,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var5.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
         var4 = function(arg0) { // Original name: GuildBoostSlotRecord, environment: var0
-            _fun55554: for (var _fun55554_ip = 0;;) switch (_fun55554_ip) {
+            _fun55599: for (var _fun55599_ip = 0;;) switch (_fun55599_ip) {
                 case 0:
                     var1 = arg0;
                     var4 = this;
@@ -92,14 +92,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot5;
                     var0 = var0.bind(var3)();
                     if (var0) {
-                        _fun55554_ip = 65;
-                        continue _fun55554
+                        _fun55599_ip = 65;
+                        continue _fun55599
                     }
                 case 52:
                     var0 = var9.apply;
                     var0 = var0.bind(var9)(var4, var3);
-                    _fun55554_ip = 103;
-                    continue _fun55554;
+                    _fun55599_ip = 103;
+                    continue _fun55599;
                 case 65:
                     var6 = global;
                     var8 = var6.Reflect;
@@ -136,15 +136,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = 'isOnCooldown';
         var5.key = var1;
         var1 = function() { // Original name: value, environment: var0
-            _fun55555: for (var _fun55555_ip = 0;;) switch (_fun55555_ip) {
+            _fun55600: for (var _fun55600_ip = 0;;) switch (_fun55600_ip) {
                 case 0:
                     var2 = this;
                     var1 = var2.cooldownEndsAt;
                     var0 = null;
                     var0 = var0 != var1;
                     if (!var0) {
-                        _fun55555_ip = 81;
-                        continue _fun55555
+                        _fun55600_ip = 81;
+                        continue _fun55600
                     }
                 case 18:
                     var1 = global;
@@ -176,15 +176,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'isAvailable';
         var5.key = var6;
         var6 = function() { // Original name: value, environment: var0
-            _fun55556: for (var _fun55556_ip = 0;;) switch (_fun55556_ip) {
+            _fun55601: for (var _fun55601_ip = 0;;) switch (_fun55601_ip) {
                 case 0:
                     var2 = this;
                     var1 = var2.premiumGuildSubscription;
                     var0 = null;
                     var0 = var0 == var1;
                     if (!var0) {
-                        _fun55556_ip = 31;
-                        continue _fun55556
+                        _fun55601_ip = 31;
+                        continue _fun55601
                     }
                 case 18:
                     var1 = var2.isOnCooldown;
@@ -200,7 +200,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'createFromServer';
         var5.key = var6;
         var0 = function(arg0, arg1) { // Original name: value, environment: var0
-            _fun55557: for (var _fun55557_ip = 0;;) switch (_fun55557_ip) {
+            _fun55602: for (var _fun55602_ip = 0;;) switch (_fun55602_ip) {
                 case 0:
                     var1 = arg0;
                     var2 = _closure2_slot0;
@@ -213,8 +213,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = null;
                     var4 = var3 != var4;
                     if (!var4) {
-                        _fun55557_ip = 82;
-                        continue _fun55557
+                        _fun55602_ip = 82;
+                        continue _fun55602
                     }
                 case 47:
                     var4 = {};

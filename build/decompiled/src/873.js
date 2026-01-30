@@ -6,15 +6,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
     var2 = function(arg0) { // Original name: getBaseApiEndpoint, environment: var0
-        _fun9226: for (var _fun9226_ip = 0;;) switch (_fun9226_ip) {
+        _fun9227: for (var _fun9227_ip = 0;;) switch (_fun9227_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.protocol;
                 var7 = '';
                 var6 = var7;
                 if (!var1) {
-                    _fun9226_ip = 48;
-                    continue _fun9226
+                    _fun9227_ip = 48;
+                    continue _fun9227
                 }
             case 19:
                 var3 = var0.protocol;
@@ -27,8 +27,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var0.port;
                 var5 = var7;
                 if (!var1) {
-                    _fun9226_ip = 88;
-                    continue _fun9226
+                    _fun9227_ip = 88;
+                    continue _fun9227
                 }
             case 60:
                 var3 = var0.port;
@@ -42,8 +42,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var0.path;
                 var3 = var7;
                 if (!var1) {
-                    _fun9226_ip = 134;
-                    continue _fun9226
+                    _fun9227_ip = 134;
+                    continue _fun9227
                 }
             case 106:
                 var2 = var0.path;
@@ -78,14 +78,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
     var2 = function(arg0, arg1, arg2) { // Original name: getEnvelopeEndpointWithUrlEncodedAuth, environment: var0
-        _fun9227: for (var _fun9227_ip = 0;;) switch (_fun9227_ip) {
+        _fun9228: for (var _fun9228_ip = 0;;) switch (_fun9228_ip) {
             case 0:
                 var3 = arg0;
                 var0 = arg1;
                 var2 = arg2;
                 if (var0) {
-                    _fun9227_ip = 201;
-                    continue _fun9227
+                    _fun9228_ip = 201;
+                    continue _fun9228
                 }
             case 15:
                 var4 = _closure1_slot2;
@@ -103,16 +103,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6.sentry_version = var7;
                 var7 = var3.publicKey;
                 if (!var7) {
-                    _fun9227_ip = 99;
-                    continue _fun9227
+                    _fun9228_ip = 99;
+                    continue _fun9228
                 }
             case 87:
                 var3 = var3.publicKey;
                 var6.sentry_key = var3;
             case 99:
                 if (!var2) {
-                    _fun9227_ip = 141;
-                    continue _fun9227
+                    _fun9228_ip = 141;
+                    continue _fun9228
                 }
             case 102:
                 var8 = var2.name;
@@ -146,7 +146,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.getEnvelopeEndpointWithUrlEncodedAuth = var2;
     var0 = function(arg0, arg1) { // Original name: getReportDialogEndpoint, environment: var0
-        _fun9228: for (var _fun9228_ip = 0;;) switch (_fun9228_ip) {
+        _fun9229: for (var _fun9229_ip = 0;;) switch (_fun9229_ip) {
             case 0:
                 var19 = arg1;
                 var2 = _closure1_slot0;
@@ -159,8 +159,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = arg0;
                 var5 = var2.bind(var3)(var0);
                 if (var5) {
-                    _fun9228_ip = 50;
-                    continue _fun9228
+                    _fun9229_ip = 50;
+                    continue _fun9229
                 }
             case 44:
                 var0 = '';
@@ -201,17 +201,17 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         case 207: var20 = var13;
                         var5 = var23;
                         if (var6 === var20) {
-                            _fun9228_ip = 189;
-                            continue _fun9228
+                            _fun9229_ip = 189;
+                            continue _fun9229
                         }
                         case 217: var5 = var23;
                         if (var7 === var20) {
-                            _fun9228_ip = 189;
-                            continue _fun9228
+                            _fun9229_ip = 189;
+                            continue _fun9229
                         }
                         case 224: if (!(var8 !== var20)) {
-                            _fun9228_ip = 278;
-                            continue _fun9228
+                            _fun9229_ip = 278;
+                            continue _fun9229
                         }
                         case 228: var21 = var0.encodeURIComponent;
                         var22 = var21.bind(var18)(var20);
@@ -222,20 +222,20 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var20 = var20.concat;
                         var20 = var20.bind(var10)(var22, var9, var21);
                         var5 = var23 + var20;
-                        _fun9228_ip = 189;
-                        continue _fun9228;
+                        _fun9229_ip = 189;
+                        continue _fun9229;
                         case 278: var20 = var19.user;
                         var5 = var23;
                         var1 = var20;
                         if (!var1) {
-                            _fun9228_ip = 189;
-                            continue _fun9228
+                            _fun9229_ip = 189;
+                            continue _fun9229
                         }
                         case 292: var21 = var20.name;
                         var22 = var23;
                         if (!var21) {
-                            _fun9228_ip = 339;
-                            continue _fun9228
+                            _fun9229_ip = 339;
+                            continue _fun9229
                         }
                         case 303: var24 = var0.encodeURIComponent;
                         var21 = var20.name;
@@ -248,8 +248,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var5 = var22;
                         var1 = var20;
                         if (!var21) {
-                            _fun9228_ip = 189;
-                            continue _fun9228
+                            _fun9229_ip = 189;
+                            continue _fun9229
                         }
                         case 357: var23 = var0.encodeURIComponent;
                         var21 = var20.email;
@@ -259,8 +259,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var21 = var21.bind(var12)(var23);
                         var5 = var22 + var21;
                         var1 = var20;
-                        _fun9228_ip = 189;
-                        continue _fun9228;
+                        _fun9229_ip = 189;
+                        continue _fun9229;
                     }
             case 402:
                 var0 = var0.HermesInternal;

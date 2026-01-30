@@ -34,7 +34,7 @@ public final class j1 extends a2 implements kotlin.reflect.f {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             Q(obj);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
     }
 
@@ -43,7 +43,7 @@ public final class j1 extends a2 implements kotlin.reflect.f {
         super(container, descriptor);
         Intrinsics.checkNotNullParameter(container, "container");
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        this.B = ir.l.a(ir.o.f31103e, new i1(this));
+        this.B = ir.l.a(ir.o.f31119e, new i1(this));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -67,6 +67,6 @@ public final class j1 extends a2 implements kotlin.reflect.f {
         Intrinsics.checkNotNullParameter(container, "container");
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(signature, "signature");
-        this.B = ir.l.a(ir.o.f31103e, new i1(this));
+        this.B = ir.l.a(ir.o.f31119e, new i1(this));
     }
 }

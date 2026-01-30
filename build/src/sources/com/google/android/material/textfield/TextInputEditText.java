@@ -22,7 +22,7 @@ public class TextInputEditText extends AppCompatEditText {
     private boolean f16423e;
 
     public TextInputEditText(@NonNull Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, yg.b.f54355p);
+        this(context, attributeSet, yg.b.f54371p);
     }
 
     private boolean a(TextInputLayout textInputLayout) {
@@ -122,7 +122,7 @@ public class TextInputEditText extends AppCompatEditText {
     public TextInputEditText(Context context, AttributeSet attributeSet, int i10) {
         super(rh.a.c(context, attributeSet, i10, 0), attributeSet, i10);
         this.f16422d = new Rect();
-        TypedArray i11 = com.google.android.material.internal.l.i(context, attributeSet, yg.k.C6, i10, yg.j.f54506i, new int[0]);
+        TypedArray i11 = com.google.android.material.internal.l.i(context, attributeSet, yg.k.C6, i10, yg.j.f54522i, new int[0]);
         setTextInputLayoutFocusedRectEnabled(i11.getBoolean(yg.k.D6, false));
         i11.recycle();
     }

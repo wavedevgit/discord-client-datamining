@@ -9,54 +9,54 @@ import java.util.concurrent.Executor;
 public abstract class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Object f26801a = new Object();
+    private static final Object f26817a = new Object();
 
     /* renamed from: b  reason: collision with root package name */
-    private static int f26802b = 9;
+    private static int f26818b = 9;
 
     /* renamed from: c  reason: collision with root package name */
-    private static n1 f26803c = null;
+    private static n1 f26819c = null;
 
     /* renamed from: d  reason: collision with root package name */
-    static HandlerThread f26804d = null;
+    static HandlerThread f26820d = null;
 
     /* renamed from: e  reason: collision with root package name */
-    private static Executor f26805e = null;
+    private static Executor f26821e = null;
 
     /* renamed from: f  reason: collision with root package name */
-    private static boolean f26806f = false;
+    private static boolean f26822f = false;
 
     public static h a(Context context) {
         Looper mainLooper;
-        synchronized (f26801a) {
+        synchronized (f26817a) {
             try {
-                if (f26803c == null) {
+                if (f26819c == null) {
                     Context applicationContext = context.getApplicationContext();
-                    if (f26806f) {
+                    if (f26822f) {
                         mainLooper = b().getLooper();
                     } else {
                         mainLooper = context.getMainLooper();
                     }
-                    f26803c = new n1(applicationContext, mainLooper, f26805e);
+                    f26819c = new n1(applicationContext, mainLooper, f26821e);
                 }
             } catch (Throwable th2) {
                 throw th2;
             }
         }
-        return f26803c;
+        return f26819c;
     }
 
     public static HandlerThread b() {
-        synchronized (f26801a) {
+        synchronized (f26817a) {
             try {
-                HandlerThread handlerThread = f26804d;
+                HandlerThread handlerThread = f26820d;
                 if (handlerThread != null) {
                     return handlerThread;
                 }
-                HandlerThread handlerThread2 = new HandlerThread("GoogleApiHandler", f26802b);
-                f26804d = handlerThread2;
+                HandlerThread handlerThread2 = new HandlerThread("GoogleApiHandler", f26818b);
+                f26820d = handlerThread2;
                 handlerThread2.start();
-                return f26804d;
+                return f26820d;
             } catch (Throwable th2) {
                 throw th2;
             }

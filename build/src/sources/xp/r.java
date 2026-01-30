@@ -13,13 +13,13 @@ public final class r implements vp.b {
     public static final Parcelable.Creator<r> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f53695d;
+    private final List f53711d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f53696e;
+    private final List f53712e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final StepStyles.UiStepStyle f53697i;
+    private final StepStyles.UiStepStyle f53713i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -55,14 +55,14 @@ public final class r implements vp.b {
 
     public r(List list, List componentConfigs, StepStyles.UiStepStyle uiStepStyle) {
         Intrinsics.checkNotNullParameter(componentConfigs, "componentConfigs");
-        this.f53695d = list;
-        this.f53696e = componentConfigs;
-        this.f53697i = uiStepStyle;
+        this.f53711d = list;
+        this.f53712e = componentConfigs;
+        this.f53713i = uiStepStyle;
     }
 
     @Override // vp.b
     public List C0() {
-        return this.f53696e;
+        return this.f53712e;
     }
 
     @Override // android.os.Parcelable
@@ -78,7 +78,7 @@ public final class r implements vp.b {
             return false;
         }
         r rVar = (r) obj;
-        if (Intrinsics.areEqual(this.f53695d, rVar.f53695d) && Intrinsics.areEqual(this.f53696e, rVar.f53696e) && Intrinsics.areEqual(this.f53697i, rVar.f53697i)) {
+        if (Intrinsics.areEqual(this.f53711d, rVar.f53711d) && Intrinsics.areEqual(this.f53712e, rVar.f53712e) && Intrinsics.areEqual(this.f53713i, rVar.f53713i)) {
             return true;
         }
         return false;
@@ -86,25 +86,25 @@ public final class r implements vp.b {
 
     @Override // vp.b
     public List getComponents() {
-        return this.f53695d;
+        return this.f53711d;
     }
 
     @Override // vp.b
     public StepStyles.UiStepStyle getStyles() {
-        return this.f53697i;
+        return this.f53713i;
     }
 
     public int hashCode() {
         int hashCode;
-        List list = this.f53695d;
+        List list = this.f53711d;
         int i10 = 0;
         if (list == null) {
             hashCode = 0;
         } else {
             hashCode = list.hashCode();
         }
-        int hashCode2 = ((hashCode * 31) + this.f53696e.hashCode()) * 31;
-        StepStyles.UiStepStyle uiStepStyle = this.f53697i;
+        int hashCode2 = ((hashCode * 31) + this.f53712e.hashCode()) * 31;
+        StepStyles.UiStepStyle uiStepStyle = this.f53713i;
         if (uiStepStyle != null) {
             i10 = uiStepStyle.hashCode();
         }
@@ -112,16 +112,16 @@ public final class r implements vp.b {
     }
 
     public String toString() {
-        List list = this.f53695d;
-        List list2 = this.f53696e;
-        StepStyles.UiStepStyle uiStepStyle = this.f53697i;
+        List list = this.f53711d;
+        List list2 = this.f53712e;
+        StepStyles.UiStepStyle uiStepStyle = this.f53713i;
         return "CtaCardPage(components=" + list + ", componentConfigs=" + list2 + ", styles=" + uiStepStyle + ")";
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         Intrinsics.checkNotNullParameter(dest, "dest");
-        List<Parcelable> list = this.f53695d;
+        List<Parcelable> list = this.f53711d;
         if (list == null) {
             dest.writeInt(0);
         } else {
@@ -131,11 +131,11 @@ public final class r implements vp.b {
                 dest.writeParcelable(parcelable, i10);
             }
         }
-        List<Parcelable> list2 = this.f53696e;
+        List<Parcelable> list2 = this.f53712e;
         dest.writeInt(list2.size());
         for (Parcelable parcelable2 : list2) {
             dest.writeParcelable(parcelable2, i10);
         }
-        dest.writeParcelable(this.f53697i, i10);
+        dest.writeParcelable(this.f53713i, i10);
     }
 }

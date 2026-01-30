@@ -13,28 +13,28 @@ public final class q5 implements h {
     public static final Parcelable.Creator<q5> CREATOR = new a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f53687d;
+    private final String f53703d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final JsonLogicBoolean f53688e;
+    private final JsonLogicBoolean f53704e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final JsonLogicBoolean f53689i;
+    private final JsonLogicBoolean f53705i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final String f53690o;
+    private final String f53706o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Integer f53691p;
+    private final Integer f53707p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final String f53692q;
+    private final String f53708q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final List f53693r;
+    private final List f53709r;
 
     /* renamed from: s  reason: collision with root package name */
-    private boolean f53694s;
+    private boolean f53710s;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements Parcelable.Creator {
@@ -64,27 +64,27 @@ public final class q5 implements h {
 
     public q5(String name, JsonLogicBoolean jsonLogicBoolean, JsonLogicBoolean jsonLogicBoolean2, String str, Integer num, String str2) {
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f53687d = name;
-        this.f53688e = jsonLogicBoolean;
-        this.f53689i = jsonLogicBoolean2;
-        this.f53690o = str;
-        this.f53691p = num;
-        this.f53692q = str2;
-        this.f53693r = new ArrayList();
+        this.f53703d = name;
+        this.f53704e = jsonLogicBoolean;
+        this.f53705i = jsonLogicBoolean2;
+        this.f53706o = str;
+        this.f53707p = num;
+        this.f53708q = str2;
+        this.f53709r = new ArrayList();
     }
 
     @Override // xp.h
     public boolean E0() {
-        return this.f53694s;
+        return this.f53710s;
     }
 
     public final String a() {
-        return this.f53692q;
+        return this.f53708q;
     }
 
     @Override // xp.e0
     public List d() {
-        return this.f53693r;
+        return this.f53709r;
     }
 
     @Override // android.os.Parcelable
@@ -94,38 +94,38 @@ public final class q5 implements h {
 
     @Override // xp.h
     public String getAutoSubmitCountdownText() {
-        return this.f53690o;
+        return this.f53706o;
     }
 
     @Override // xp.h
     public Integer getAutoSubmitIntervalSeconds() {
-        return this.f53691p;
+        return this.f53707p;
     }
 
     @Override // xp.v
     public JsonLogicBoolean getDisabled() {
-        return this.f53689i;
+        return this.f53705i;
     }
 
     @Override // xp.e0
     public JsonLogicBoolean getHidden() {
-        return this.f53688e;
+        return this.f53704e;
     }
 
     @Override // xp.h, xp.k5
     public String getName() {
-        return this.f53687d;
+        return this.f53703d;
     }
 
     @Override // android.os.Parcelable
     public final void writeToParcel(Parcel dest, int i10) {
         int intValue;
         Intrinsics.checkNotNullParameter(dest, "dest");
-        dest.writeString(this.f53687d);
-        dest.writeParcelable(this.f53688e, i10);
-        dest.writeParcelable(this.f53689i, i10);
-        dest.writeString(this.f53690o);
-        Integer num = this.f53691p;
+        dest.writeString(this.f53703d);
+        dest.writeParcelable(this.f53704e, i10);
+        dest.writeParcelable(this.f53705i, i10);
+        dest.writeString(this.f53706o);
+        Integer num = this.f53707p;
         if (num == null) {
             intValue = 0;
         } else {
@@ -133,12 +133,12 @@ public final class q5 implements h {
             intValue = num.intValue();
         }
         dest.writeInt(intValue);
-        dest.writeString(this.f53692q);
+        dest.writeString(this.f53708q);
     }
 
     @Override // xp.h, xp.j2
     public void x(boolean z10) {
-        this.f53694s = z10;
+        this.f53710s = z10;
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

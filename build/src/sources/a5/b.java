@@ -30,6 +30,6 @@ public final class b implements h {
 
     @Override // a5.h
     public Object a(Continuation continuation) {
-        return new f(new BitmapDrawable(this.f387b.g().getResources(), this.f386a), false, x4.h.f53167e);
+        return new f(new BitmapDrawable(this.f387b.g().getResources(), this.f386a), false, x4.h.f53183e);
     }
 }

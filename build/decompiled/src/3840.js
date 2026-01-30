@@ -1,617 +1,196 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = require;
+    var4 = metroImportDefault;
     var2 = exports;
-    var7 = dependencyMap;
-    var _closure1_slot0 = var4;
-    var _closure1_slot1 = var7;
-    var0 = function(arg0) { // Original name: JsPerformance, environment: var1
-        var1 = arg0;
-        var10 = var1.smoothingFrames;
-        var2 = _closure1_slot0;
-        var4 = _closure1_slot1;
-        var1 = 5;
-        var5 = var4[var1];
-        var3 = undefined;
-        var7 = var2.bind(var3)(var5);
-        var6 = var7.useSharedValue;
-        var5 = null;
-        var5 = var6.bind(var7)(var5);
-        var _closure2_slot0 = var5;
-        var6 = var4[var1];
-        var9 = var2.bind(var3)(var6);
-        var7 = var9.useSharedValue;
-        var6 = 0;
-        var6 = var7.bind(var9)(var6);
-        var9 = _closure1_slot3;
-        var7 = _closure1_slot8;
-        var7 = var7.bind(var3)(var10);
-        var7 = var9.bind(var3)(var7);
-        var _closure2_slot1 = var7;
-        var9 = _closure1_slot2;
-        var7 = new Array(2);
-        var7[0] = var5;
-        var7[1] = var6;
-        var6 = function() { // Environment: var0
-            var2 = function(arg0) { // Original name: loopAnimationFrame, environment: var1
-                var1 = arg0;
-                var _closure4_slot0 = var1;
-                var1 = 0;
-                var _closure4_slot1 = var1;
-                var1 = function() { // Original name: loop, environment: var0
-                    var0 = global;
-                    var2 = var0.requestAnimationFrame;
-                    var0 = undefined;
-                    var1 = function(arg0) { // Environment: var1
-                        _fun34791: for (var _fun34791_ip = 0;;) switch (_fun34791_ip) {
-                            case 0:
-                                var1 = arg0;
-                                var3 = _closure4_slot1;
-                                var2 = 0;
-                                if (!(var3 > var2)) {
-                                    _fun34791_ip = 32;
-                                    continue _fun34791
-                                }
-                            case 16:
-                                var4 = _closure4_slot0;
-                                var3 = _closure4_slot1;
-                                var2 = undefined;
-                                var2 = var4.bind(var2)(var3, var1);
-                            case 32:
-                                _closure4_slot1 = var1;
-                                var1 = global;
-                                var2 = var1.requestAnimationFrame;
-                                var1 = _closure4_slot2;
-                                var0 = undefined;
-                                var1 = var2.bind(var0)(var1);
-                                return var0;
-                        }
-                    };
-                    var1 = var2.bind(var0)(var1);
-                    return var0;
-                };
-                var _closure4_slot2 = var1;
-                var0 = undefined;
-                var1 = var1.bind(var0)();
-                return var0;
-            };
-            var0 = undefined;
-            var1 = function(arg0, arg1) { // Environment: var1
-                var0 = global;
-                var2 = var0.Math;
-                var1 = var2.round;
-                var0 = arg1;
-                var4 = var1.bind(var2)(var0);
-                var3 = _closure1_slot13;
-                var0 = _closure2_slot1;
-                var2 = var0.current;
-                var0 = undefined;
-                var3 = var3.bind(var0)(var2, var4);
-                var2 = _closure2_slot0;
-                var1 = 2;
-                var4 = var1 * var3;
-                var3 = var4.toFixed;
-                var1 = 0;
-                var1 = var3.bind(var4)(var1);
-                var2.value = var1;
-                return var0;
-            };
-            var1 = var2.bind(var0)(var1);
-            return var0;
-        };
-        var6 = var9.bind(var3)(var6, var7);
-        var1 = var4[var1];
-        var2 = var2.bind(var3)(var1);
-        var1 = var2.useAnimatedProps;
-        var0 = function() { // Original name: pnpm_PerformanceMonitorTsx4, environment: var0
-            _fun34793: for (var _fun34793_ip = 0;;) switch (_fun34793_ip) {
-                case 0:
-                    var0 = _closure2_slot0;
-                    var0 = var0.value;
-                    var1 = null;
-                    var2 = var1 != var0;
-                    var1 = 'N/A';
-                    if (!var2) {
-                        _fun34793_ip = 30;
-                        continue _fun34793
-                    }
-                case 27:
-                    var1 = var0;
-                case 30:
-                    var0 = 'JS: ';
-                    var1 = var0 + var1;
-                    var0 = ' ';
-                    var1 = var1 + var0;
-                    var0 = {};
-                    var0.text = var1;
-                    var0.defaultValue = var1;
-                    return var0;
-            }
-        };
-        var4 = {};
-        var4.jsFps = var5;
-        var0.__closure = var4;
-        var4 = 12993491204154.0;
-        var0.__workletHash = var4;
-        var4 = _closure1_slot14;
-        var0.__initData = var4;
-        var7 = var1.bind(var2)(var0);
-        var2 = _closure1_slot5;
-        var1 = _closure1_slot4;
-        var0 = {};
-        var4 = _closure1_slot17;
-        var4 = var4.container;
-        var0.style = var4;
-        var6 = _closure1_slot5;
-        var5 = _closure1_slot9;
-        var4 = {};
-        var8 = _closure1_slot17;
-        var8 = var8.text;
-        var4.style = var8;
-        var4.animatedProps = var7;
-        var7 = false;
-        var4.editable = var7;
-        var4 = var6.bind(var3)(var5, var4);
-        var0.children = var4;
-        var0 = var2.bind(var3)(var1, var0);
-        return var0;
-    };
-    var _closure1_slot18 = var0;
-    var0 = function(arg0) { // Original name: UiPerformance, environment: var1
-        var1 = arg0;
-        var11 = var1.smoothingFrames;
-        var _closure2_slot0 = var11;
-        var2 = _closure1_slot0;
-        var4 = _closure1_slot1;
-        var1 = 5;
-        var5 = var4[var1];
-        var3 = undefined;
-        var6 = var2.bind(var3)(var5);
-        var5 = var6.useSharedValue;
-        var9 = null;
-        var5 = var5.bind(var6)(var9);
-        var _closure2_slot1 = var5;
-        var6 = var4[var1];
-        var7 = var2.bind(var3)(var6);
-        var6 = var7.useSharedValue;
-        var12 = var6.bind(var7)(var9);
-        var _closure2_slot2 = var12;
-        var6 = var4[var1];
-        var9 = var2.bind(var3)(var6);
-        var7 = var9.useFrameCallback;
-        var6 = function(arg0) { // Original name: pnpm_PerformanceMonitorTsx5, environment: var0
-            _fun34795: for (var _fun34795_ip = 0;;) switch (_fun34795_ip) {
-                case 0:
-                    var0 = arg0;
-                    var3 = var0.timestamp;
-                    var0 = _closure2_slot2;
-                    var2 = var0.value;
-                    var0 = null;
-                    if (!(var0 === var2)) {
-                        _fun34795_ip = 55;
-                        continue _fun34795
-                    }
-                case 27:
-                    var2 = _closure2_slot2;
-                    var5 = _closure1_slot8;
-                    var4 = _closure2_slot0;
-                    var0 = undefined;
-                    var0 = var5.bind(var0)(var4);
-                    var2.value = var0;
-                case 55:
-                    var0 = global;
-                    var2 = var0.Math;
-                    var0 = var2.round;
-                    var4 = var0.bind(var2)(var3);
-                    var3 = _closure1_slot13;
-                    var0 = _closure2_slot2;
-                    var2 = var0.value;
-                    var0 = undefined;
-                    var4 = var3.bind(var0)(var2, var4);
-                    var2 = _closure2_slot1;
-                    var3 = var4.toFixed;
-                    var1 = 0;
-                    var1 = var3.bind(var4)(var1);
-                    var2.value = var1;
-                    return var0;
-            }
-        };
-        var10 = {};
-        var10.circularBuffer = var12;
-        var12 = _closure1_slot8;
-        var10.createCircularDoublesBuffer = var12;
-        var10.smoothingFrames = var11;
-        var11 = _closure1_slot13;
-        var10.completeBufferRoutine = var11;
-        var10.uiFps = var5;
-        var6.__closure = var10;
-        var10 = 10137562113926.0;
-        var6.__workletHash = var10;
-        var10 = _closure1_slot15;
-        var6.__initData = var10;
-        var6 = var7.bind(var9)(var6);
-        var1 = var4[var1];
-        var2 = var2.bind(var3)(var1);
-        var1 = var2.useAnimatedProps;
-        var0 = function() { // Original name: pnpm_PerformanceMonitorTsx6, environment: var0
-            _fun34796: for (var _fun34796_ip = 0;;) switch (_fun34796_ip) {
-                case 0:
-                    var0 = _closure2_slot1;
-                    var0 = var0.value;
-                    var1 = null;
-                    var2 = var1 != var0;
-                    var1 = 'N/A';
-                    if (!var2) {
-                        _fun34796_ip = 30;
-                        continue _fun34796
-                    }
-                case 27:
-                    var1 = var0;
-                case 30:
-                    var0 = 'UI: ';
-                    var1 = var0 + var1;
-                    var0 = ' ';
-                    var1 = var1 + var0;
-                    var0 = {};
-                    var0.text = var1;
-                    var0.defaultValue = var1;
-                    return var0;
-            }
-        };
-        var4 = {};
-        var4.uiFps = var5;
-        var0.__closure = var4;
-        var4 = 1865752198941.0;
-        var0.__workletHash = var4;
-        var4 = _closure1_slot16;
-        var0.__initData = var4;
-        var7 = var1.bind(var2)(var0);
-        var2 = _closure1_slot5;
-        var1 = _closure1_slot4;
-        var0 = {};
-        var4 = _closure1_slot17;
-        var4 = var4.container;
-        var0.style = var4;
-        var6 = _closure1_slot5;
-        var5 = _closure1_slot9;
-        var4 = {};
-        var8 = _closure1_slot17;
-        var8 = var8.text;
-        var4.style = var8;
-        var4.animatedProps = var7;
-        var7 = false;
-        var4.editable = var7;
-        var4 = var6.bind(var3)(var5, var4);
-        var0.children = var4;
-        var0 = var2.bind(var3)(var1, var0);
-        return var0;
-    };
-    var _closure1_slot19 = var0;
+    var5 = dependencyMap;
     var0 = global;
-    var6 = var0.Object;
-    var5 = var6.defineProperty;
+    var _closure1_slot0 = var0;
+    var0 = require;
+    var _closure1_slot1 = var0;
+    var _closure1_slot2 = var5;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
     var3 = {};
-    var10 = true;
-    var3.value = var10;
+    var0 = true;
+    var3.value = var0;
     var0 = '__esModule';
-    var0 = var5.bind(var6)(var2, var0, var3);
-    var3 = 0;
-    var5 = var7[var3];
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var3 = var5[var0];
     var0 = undefined;
-    var5 = var4.bind(var0)(var5);
-    var6 = var5.useEffect;
-    var _closure1_slot2 = var6;
-    var5 = var5.useRef;
-    var _closure1_slot3 = var5;
-    var5 = var7[var3];
-    var3 = arg2;
-    var3 = var3.bind(var0)(var5);
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot3 = var3;
     var3 = 1;
-    var3 = var7[var3];
+    var3 = var5[var3];
     var3 = var4.bind(var0)(var3);
-    var5 = var3.StyleSheet;
-    var6 = var3.TextInput;
-    var3 = var3.View;
     var _closure1_slot4 = var3;
-    var3 = 2;
-    var3 = var7[var3];
-    var3 = var4.bind(var0)(var3);
-    var8 = var3.jsx;
-    var _closure1_slot5 = var8;
-    var3 = var3.jsxs;
+    var3 = {};
+    var4 = 'function pnpm_FrameCallbackRegistryJSTs1(){const{callback,callbackId}=this.__closure;global._frameCallbackRegistry.registerFrameCallback(callback,callbackId);}';
+    var3.code = var4;
+    var _closure1_slot5 = var3;
+    var3 = {};
+    var4 = 'function pnpm_FrameCallbackRegistryJSTs2(){const{callbackId}=this.__closure;global._frameCallbackRegistry.unregisterFrameCallback(callbackId);}';
+    var3.code = var4;
     var _closure1_slot6 = var3;
     var3 = {};
-    var8 = 'function createCircularDoublesBuffer_Pnpm_PerformanceMonitorTsx1(size){return{next:0,buffer:new Float32Array(size),size:size,count:0,push:function(value){const oldValue=this.buffer[this.next];const oldCount=this.count;this.buffer[this.next]=value;this.next=(this.next+1)%this.size;this.count=Math.min(this.size,this.count+1);return oldCount===this.size?oldValue:null;},front:function(){const notEmpty=this.count>0;if(notEmpty){const current=this.next-1;const index=current<0?this.size-1:current;return this.buffer[index];}return null;},back:function(){const notEmpty=this.count>0;return notEmpty?this.buffer[this.next]:null;}};}';
-    var3.code = var8;
+    var4 = 'function pnpm_FrameCallbackRegistryJSTs3(){const{callbackId,state}=this.__closure;global._frameCallbackRegistry.manageStateFrameCallback(callbackId,state);}';
+    var3.code = var4;
     var _closure1_slot7 = var3;
-    var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: createCircularDoublesBuffer, environment: var0
-            var3 = arg0;
-            var0 = {};
+    var1 = function() { // Environment: var1
+        var3 = _closure1_slot4;
+        var2 = function() { // Original name: FrameCallbackRegistryJS, environment: var4
+            var3 = this;
+            var4 = _closure1_slot3;
+            var2 = _closure2_slot0;
+            var0 = undefined;
+            var2 = var4.bind(var0)(var3, var2);
             var2 = 0;
-            var0.next = var2;
-            var4 = global;
-            var4 = var4.Float32Array;
-            var5 = var4.prototype;
-            var5 = Object.create(var5, {
-                constructor: {
-                    value: var4
-                }
-            });
-            var7 = var5;
-            var6 = var3;
-            var4 = new var7[var4](var6, var5);
-            var4 = var4 instanceof Object ? var4 : var5;
-            var0.buffer = var4;
-            var0.size = var3;
-            var0.count = var2;
-            var2 = function(arg0) { // Original name: push, environment: var1
-                _fun34799: for (var _fun34799_ip = 0;;) switch (_fun34799_ip) {
-                    case 0:
-                        var0 = this;
-                        var2 = var0.buffer;
-                        var1 = var0.next;
-                        var1 = var2[var1];
-                        var3 = var0.count;
-                        var5 = var0.buffer;
-                        var4 = var0.next;
-                        var2 = arg0;
-                        var5[var4] = var2;
-                        var2 = var0.next;
-                        var7 = 1;
-                        var4 = var2 + var7;
-                        var2 = var0.size;
-                        var2 = var4 % var2;
-                        var0.next = var2;
-                        var2 = global;
-                        var6 = var2.Math;
-                        var5 = var6.min;
-                        var4 = var0.size;
-                        var2 = var0.count;
-                        var2 = var2 + var7;
-                        var2 = var5.bind(var6)(var4, var2);
-                        var0.count = var2;
-                        var2 = var0.size;
-                        var0 = null;
-                        if (!(var3 === var2)) {
-                            _fun34799_ip = 123;
-                            continue _fun34799
-                        }
-                    case 120:
-                        var0 = var1;
-                    case 123:
-                        return var0;
-                }
-            };
-            var0.push = var2;
-            var2 = function() { // Original name: front, environment: var1
-                _fun34800: for (var _fun34800_ip = 0;;) switch (_fun34800_ip) {
-                    case 0:
-                        var0 = this;
-                        var1 = var0.count;
-                        var2 = 0;
-                        if (!(!(var1 > var2))) {
-                            _fun34800_ip = 19;
-                            continue _fun34800
-                        }
-                    case 15:
-                        var1 = null;
-                        return var1;
-                    case 19:
-                        var1 = var0.next;
-                        var3 = 1;
-                        var1 = var1 - var3;
-                        if (!(var1 < var2)) {
-                            _fun34800_ip = 44;
-                            continue _fun34800
-                        }
-                    case 35:
-                        var2 = var0.size;
-                        var1 = var2 - var3;
-                    case 44:
-                        var0 = var0.buffer;
-                        var0 = var0[var1];
-                        return var0;
-                }
-            };
-            var0.front = var2;
-            var1 = function() { // Original name: back, environment: var1
-                _fun34801: for (var _fun34801_ip = 0;;) switch (_fun34801_ip) {
-                    case 0:
-                        var1 = this;
-                        var2 = var1.count;
-                        var0 = 0;
-                        var2 = var2 > var0;
-                        var0 = null;
-                        if (!var2) {
-                            _fun34801_ip = 35;
-                            continue _fun34801
-                        }
-                    case 20:
-                        var2 = var1.buffer;
-                        var1 = var1.next;
-                        var0 = var2[var1];
-                    case 35:
-                        return var0;
-                }
-            };
-            var0.back = var1;
+            var3.nextCallbackId = var2;
+            var2 = _closure1_slot1;
+            var3 = _closure1_slot2;
+            var1 = 2;
+            var1 = var3[var1];
+            var2 = var2.bind(var0)(var1);
+            var1 = var2.prepareUIRegistry;
+            var1 = var1.bind(var2)();
             return var0;
         };
-        var1 = {};
-        var0.__closure = var1;
-        var1 = 7814494919003.0;
-        var0.__workletHash = var1;
-        var1 = _closure1_slot7;
-        var0.__initData = var1;
-        return var0;
-    };
-    var3 = var3.bind(var0)();
-    var _closure1_slot8 = var3;
-    var3 = 3;
-    var3 = var7[var3];
-    var9 = var4.bind(var0)(var3);
-    var8 = var9.addWhitelistedNativeProps;
-    var3 = {};
-    var3.text = var10;
-    var3 = var8.bind(var9)(var3);
-    var3 = 4;
-    var3 = var7[var3];
-    var4 = var4.bind(var0)(var3);
-    var3 = var4.createAnimatedComponent;
-    var3 = var3.bind(var4)(var6);
-    var _closure1_slot9 = var3;
-    var3 = {};
-    var4 = 'function getFps_Pnpm_PerformanceMonitorTsx2(renderTimeInMs){return 1000/renderTimeInMs;}';
-    var3.code = var4;
-    var _closure1_slot10 = var3;
-    var3 = function() { // Environment: var1
-        var0 = function(arg0) { // Original name: getFps, environment: var0
-            var1 = 1000;
-            var0 = arg0;
-            var0 = var1 / var0;
-            return var0;
-        };
-        var1 = {};
-        var0.__closure = var1;
-        var1 = 14651351045012.0;
-        var0.__workletHash = var1;
-        var1 = _closure1_slot10;
-        var0.__initData = var1;
-        return var0;
-    };
-    var3 = var3.bind(var0)();
-    var _closure1_slot11 = var3;
-    var3 = {};
-    var4 = 'function completeBufferRoutine_Pnpm_PerformanceMonitorTsx3(buffer,timestamp){const{getFps}=this.__closure;var _buffer$push;timestamp=Math.round(timestamp);const droppedTimestamp=(_buffer$push=buffer.push(timestamp))!==null&&_buffer$push!==void 0?_buffer$push:timestamp;const measuredRangeDuration=timestamp-droppedTimestamp;return getFps(measuredRangeDuration/buffer.count);}';
-    var3.code = var4;
-    var _closure1_slot12 = var3;
-    var3 = function() { // Environment: var1
-        var0 = function(arg0, arg1) { // Original name: completeBufferRoutine, environment: var0
-            _fun34805: for (var _fun34805_ip = 0;;) switch (_fun34805_ip) {
+        var _closure2_slot0 = var2;
+        var0 = {};
+        var1 = 'registerFrameCallback';
+        var0.key = var1;
+        var1 = function(arg0) { // Original name: registerFrameCallback, environment: var4
+            _fun34806: for (var _fun34806_ip = 0;;) switch (_fun34806_ip) {
                 case 0:
-                    var0 = arg0;
-                    var1 = global;
-                    var3 = var1.Math;
-                    var2 = var3.round;
-                    var1 = arg1;
-                    var3 = var2.bind(var3)(var1);
-                    var1 = var0.push;
-                    var2 = var1.bind(var0)(var3);
-                    var4 = null;
-                    var1 = var3;
-                    if (!(var4 != var2)) {
-                        _fun34805_ip = 46;
-                        continue _fun34805
+                    var7 = arg0;
+                    var3 = this;
+                    var _closure3_slot0 = var7;
+                    if (var7) {
+                        _fun34806_ip = 23;
+                        continue _fun34806
                     }
-                case 43:
-                    var1 = var2;
-                case 46:
-                    var2 = _closure1_slot11;
-                    var1 = var3 - var1;
-                    var0 = var0.count;
-                    var1 = var1 / var0;
-                    var0 = undefined;
-                    var0 = var2.bind(var0)(var1);
+                case 15:
+                    var0 = -1;
+                    return var0;
+                case 23:
+                    var0 = var3.nextCallbackId;
+                    var _closure3_slot1 = var0;
+                    var2 = var3.nextCallbackId;
+                    var2 = var2 + 1;
+                    var3.nextCallbackId = var2;
+                    var4 = _closure1_slot1;
+                    var3 = _closure1_slot2;
+                    var2 = 3;
+                    var3 = var3[var2];
+                    var2 = undefined;
+                    var4 = var4.bind(var2)(var3);
+                    var3 = var4.runOnUI;
+                    var1 = function() { // Original name: pnpm_FrameCallbackRegistryJSTs1, environment: var1
+                        var0 = _closure1_slot0;
+                        var3 = var0._frameCallbackRegistry;
+                        var2 = var3.registerFrameCallback;
+                        var1 = _closure3_slot0;
+                        var0 = _closure3_slot1;
+                        var0 = var2.bind(var3)(var1, var0);
+                        var0 = undefined;
+                        return var0;
+                    };
+                    var6 = {};
+                    var6.callback = var7;
+                    var6.callbackId = var0;
+                    var1.__closure = var6;
+                    var6 = 11361563554462.0;
+                    var1.__workletHash = var6;
+                    var5 = _closure1_slot5;
+                    var1.__initData = var5;
+                    var1 = var3.bind(var4)(var1);
+                    var1 = var1.bind(var2)();
                     return var0;
             }
         };
-        var2 = {};
-        var3 = _closure1_slot11;
-        var2.getFps = var3;
-        var0.__closure = var2;
-        var2 = 5653450315763.0;
-        var0.__workletHash = var2;
-        var1 = _closure1_slot12;
-        var0.__initData = var1;
+        var0.value = var1;
+        var1 = new Array(3);
+        var1[0] = var0;
+        var0 = {};
+        var5 = 'unregisterFrameCallback';
+        var0.key = var5;
+        var5 = function(arg0) { // Original name: unregisterFrameCallback, environment: var4
+            var6 = arg0;
+            var _closure3_slot0 = var6;
+            var3 = _closure1_slot1;
+            var2 = _closure1_slot2;
+            var0 = 3;
+            var2 = var2[var0];
+            var0 = undefined;
+            var3 = var3.bind(var0)(var2);
+            var2 = var3.runOnUI;
+            var1 = function() { // Original name: pnpm_FrameCallbackRegistryJSTs2, environment: var1
+                var0 = _closure1_slot0;
+                var2 = var0._frameCallbackRegistry;
+                var1 = var2.unregisterFrameCallback;
+                var0 = _closure3_slot0;
+                var0 = var1.bind(var2)(var0);
+                var0 = undefined;
+                return var0;
+            };
+            var5 = {};
+            var5.callbackId = var6;
+            var1.__closure = var5;
+            var5 = 9182274559334.0;
+            var1.__workletHash = var5;
+            var4 = _closure1_slot6;
+            var1.__initData = var4;
+            var1 = var2.bind(var3)(var1);
+            var1 = var1.bind(var0)();
+            return var0;
+        };
+        var0.value = var5;
+        var1[1] = var0;
+        var0 = {};
+        var5 = 'manageStateFrameCallback';
+        var0.key = var5;
+        var4 = function(arg0, arg1) { // Original name: manageStateFrameCallback, environment: var4
+            var7 = arg0;
+            var6 = arg1;
+            var _closure3_slot0 = var7;
+            var _closure3_slot1 = var6;
+            var3 = _closure1_slot1;
+            var2 = _closure1_slot2;
+            var0 = 3;
+            var2 = var2[var0];
+            var0 = undefined;
+            var3 = var3.bind(var0)(var2);
+            var2 = var3.runOnUI;
+            var1 = function() { // Original name: pnpm_FrameCallbackRegistryJSTs3, environment: var1
+                var0 = _closure1_slot0;
+                var3 = var0._frameCallbackRegistry;
+                var2 = var3.manageStateFrameCallback;
+                var1 = _closure3_slot0;
+                var0 = _closure3_slot1;
+                var0 = var2.bind(var3)(var1, var0);
+                var0 = undefined;
+                return var0;
+            };
+            var5 = {};
+            var5.callbackId = var7;
+            var5.state = var6;
+            var1.__closure = var5;
+            var5 = 5244475777443.0;
+            var1.__workletHash = var5;
+            var4 = _closure1_slot7;
+            var1.__initData = var4;
+            var1 = var2.bind(var3)(var1);
+            var1 = var1.bind(var0)();
+            return var0;
+        };
+        var0.value = var4;
+        var1[2] = var0;
+        var0 = undefined;
+        var0 = var3.bind(var0)(var2, var1);
         return var0;
     };
-    var3 = var3.bind(var0)();
-    var _closure1_slot13 = var3;
-    var3 = {};
-    var4 = "function pnpm_PerformanceMonitorTsx4(){const{jsFps}=this.__closure;var _jsFps$value;const text='JS: '+((_jsFps$value=jsFps.value)!==null&&_jsFps$value!==void 0?_jsFps$value:'N/A')+' ';return{text:text,defaultValue:text};}";
-    var3.code = var4;
-    var _closure1_slot14 = var3;
-    var3 = {};
-    var4 = 'function pnpm_PerformanceMonitorTsx5({timestamp:timestamp}){const{circularBuffer,createCircularDoublesBuffer,smoothingFrames,completeBufferRoutine,uiFps}=this.__closure;if(circularBuffer.value===null){circularBuffer.value=createCircularDoublesBuffer(smoothingFrames);}timestamp=Math.round(timestamp);const currentFps=completeBufferRoutine(circularBuffer.value,timestamp);uiFps.value=currentFps.toFixed(0);}';
-    var3.code = var4;
-    var _closure1_slot15 = var3;
-    var3 = {};
-    var4 = "function pnpm_PerformanceMonitorTsx6(){const{uiFps}=this.__closure;var _uiFps$value;const text='UI: '+((_uiFps$value=uiFps.value)!==null&&_uiFps$value!==void 0?_uiFps$value:'N/A')+' ';return{text:text,defaultValue:text};}";
-    var3.code = var4;
-    var _closure1_slot16 = var3;
-    var4 = var5.create;
-    var3 = {};
-    var6 = {
-        'flexDirection': 'row',
-        'position': 'absolute',
-        'backgroundColor': '#0006',
-        'zIndex': 1000
-    };
-    var3.monitor = var6;
-    var6 = {
-        'fontSize': 14,
-        'color': '#ffff',
-        'paddingHorizontal': 5
-    };
-    var3.header = var6;
-    var6 = {
-        'fontSize': 13,
-        'fontVariant': null,
-        'color': '#ffff',
-        'fontFamily': 'monospace',
-        'paddingHorizontal': 3
-    };
-    var7 = ['tabular-nums'];
-    var6.fontVariant = var7;
-    var3.text = var6;
-    var6 = {
-        'alignItems': 'center',
-        'justifyContent': 'center',
-        'flexDirection': 'row',
-        'flexWrap': 'wrap'
-    };
-    var3.container = var6;
-    var3 = var4.bind(var5)(var3);
-    var _closure1_slot17 = var3;
-    var1 = function(arg0) { // Original name: PerformanceMonitor, environment: var1
-        _fun34806: for (var _fun34806_ip = 0;;) switch (_fun34806_ip) {
-            case 0:
-                var0 = arg0;
-                var0 = var0.smoothingFrames;
-                var8 = 20;
-                var3 = undefined;
-                if (!(var3 !== var0)) {
-                    _fun34806_ip = 21;
-                    continue _fun34806
-                }
-            case 18:
-                var8 = var0;
-            case 21:
-                var2 = _closure1_slot6;
-                var1 = _closure1_slot4;
-                var0 = {};
-                var4 = _closure1_slot17;
-                var4 = var4.monitor;
-                var0.style = var4;
-                var7 = _closure1_slot5;
-                var6 = _closure1_slot18;
-                var4 = {};
-                var4.smoothingFrames = var8;
-                var6 = var7.bind(var3)(var6, var4);
-                var4 = new Array(2);
-                var4[0] = var6;
-                var7 = _closure1_slot5;
-                var6 = _closure1_slot19;
-                var5 = {};
-                var5.smoothingFrames = var8;
-                var5 = var7.bind(var3)(var6, var5);
-                var4[1] = var5;
-                var0.children = var4;
-                var0 = var2.bind(var3)(var1, var0);
-                return var0;
-        }
-    };
-    var2.PerformanceMonitor = var1;
+    var1 = var1.bind(var0)();
+    var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 3778, 3712, 3817]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 3841, 3724]);

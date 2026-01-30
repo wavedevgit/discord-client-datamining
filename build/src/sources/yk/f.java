@@ -3,29 +3,29 @@ package yk;
 public final class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final d f54827a;
+    private final d f54843a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final d f54828b;
+    private final d f54844b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final d f54829c;
+    private final d f54845c;
 
     public f(d[] dVarArr) {
-        this.f54827a = dVarArr[0];
-        this.f54828b = dVarArr[1];
-        this.f54829c = dVarArr[2];
+        this.f54843a = dVarArr[0];
+        this.f54844b = dVarArr[1];
+        this.f54845c = dVarArr[2];
     }
 
     public d a() {
-        return this.f54827a;
+        return this.f54843a;
     }
 
     public d b() {
-        return this.f54828b;
+        return this.f54844b;
     }
 
     public d c() {
-        return this.f54829c;
+        return this.f54845c;
     }
 }

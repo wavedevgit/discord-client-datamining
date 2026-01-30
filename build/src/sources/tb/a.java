@@ -24,14 +24,14 @@ public class a implements c.a {
     public static class C0635a {
 
         /* renamed from: a  reason: collision with root package name */
-        public ZipFile f49362a;
+        public ZipFile f49378a;
 
         /* renamed from: b  reason: collision with root package name */
-        public ZipEntry f49363b;
+        public ZipEntry f49379b;
 
         public C0635a(ZipFile zipFile, ZipEntry zipEntry) {
-            this.f49362a = zipFile;
-            this.f49363b = zipEntry;
+            this.f49378a = zipFile;
+            this.f49379b = zipEntry;
         }
     }
 
@@ -190,8 +190,8 @@ public class a implements c.a {
             r0 = r1
             goto La4
         L29:
-            java.util.zip.ZipFile r10 = r1.f49362a     // Catch: java.lang.Throwable -> L72 java.io.IOException -> L75 java.io.FileNotFoundException -> L78
-            java.util.zip.ZipEntry r3 = r1.f49363b     // Catch: java.lang.Throwable -> L72 java.io.IOException -> L75 java.io.FileNotFoundException -> L78
+            java.util.zip.ZipFile r10 = r1.f49378a     // Catch: java.lang.Throwable -> L72 java.io.IOException -> L75 java.io.FileNotFoundException -> L78
+            java.util.zip.ZipEntry r3 = r1.f49379b     // Catch: java.lang.Throwable -> L72 java.io.IOException -> L75 java.io.FileNotFoundException -> L78
             java.io.InputStream r10 = r10.getInputStream(r3)     // Catch: java.lang.Throwable -> L72 java.io.IOException -> L75 java.io.FileNotFoundException -> L78
             java.io.FileOutputStream r3 = new java.io.FileOutputStream     // Catch: java.lang.Throwable -> L6b java.io.IOException -> L6e java.io.FileNotFoundException -> L70
             r3.<init>(r12)     // Catch: java.lang.Throwable -> L6b java.io.IOException -> L6e java.io.FileNotFoundException -> L70
@@ -212,7 +212,7 @@ public class a implements c.a {
             r12.setReadable(r10, r9)     // Catch: java.lang.Throwable -> L25
             r12.setExecutable(r10, r9)     // Catch: java.lang.Throwable -> L25
             r12.setWritable(r10)     // Catch: java.lang.Throwable -> L25
-            java.util.zip.ZipFile r9 = r1.f49362a     // Catch: java.io.IOException -> L8e
+            java.util.zip.ZipFile r9 = r1.f49378a     // Catch: java.io.IOException -> L8e
             if (r9 == 0) goto L8e
         L64:
             r9.close()     // Catch: java.io.IOException -> L8e
@@ -254,7 +254,7 @@ public class a implements c.a {
         L84:
             java.lang.String r9 = "FATAL! Couldn't extract the library from the APK!"
             r13.h(r9)     // Catch: java.lang.Throwable -> L25
-            java.util.zip.ZipFile r9 = r1.f49362a     // Catch: java.io.IOException -> L8e
+            java.util.zip.ZipFile r9 = r1.f49378a     // Catch: java.io.IOException -> L8e
             if (r9 == 0) goto L8e
             goto L64
         L8e:
@@ -274,7 +274,7 @@ public class a implements c.a {
             r9 = move-exception
         La4:
             if (r0 == 0) goto Lad
-            java.util.zip.ZipFile r10 = r0.f49362a     // Catch: java.io.IOException -> Lad
+            java.util.zip.ZipFile r10 = r0.f49378a     // Catch: java.io.IOException -> Lad
             if (r10 == 0) goto Lad
             r10.close()     // Catch: java.io.IOException -> Lad
         Lad:

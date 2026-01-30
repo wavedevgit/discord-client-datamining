@@ -151,7 +151,7 @@ public final class RequestBodyUtil {
         if (hashCode == 79599 ? !method.equals("PUT") : !(hashCode == 2461856 ? method.equals("POST") : hashCode == 75900968 && method.equals("PATCH"))) {
             return null;
         }
-        return RequestBody.Companion.e(null, ByteString.f44364p);
+        return RequestBody.Companion.e(null, ByteString.f44380p);
     }
 
     public static final InputStream getFileInputStream(@NotNull Context context, @NotNull String fileContentUriStr) {

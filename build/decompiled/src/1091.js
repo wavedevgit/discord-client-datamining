@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
     var0 = function() { // Original name: registerBackgroundTabDetection, environment: var0
-        _fun11998: for (var _fun11998_ip = 0;;) switch (_fun11998_ip) {
+        _fun11999: for (var _fun11999_ip = 0;;) switch (_fun11999_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var0 = _closure1_slot1;
@@ -28,8 +28,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = _closure1_slot0;
                 var1 = _closure1_slot1;
                 if (var5) {
-                    _fun11998_ip = 112;
-                    continue _fun11998
+                    _fun11999_ip = 112;
+                    continue _fun11999
                 }
             case 47:
                 var5 = 2;
@@ -37,8 +37,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var2.bind(var0)(var5);
                 var5 = var5.DEBUG_BUILD;
                 if (!var5) {
-                    _fun11998_ip = 158;
-                    continue _fun11998
+                    _fun11999_ip = 158;
+                    continue _fun11999
                 }
             case 68:
                 var5 = _closure1_slot0;
@@ -50,8 +50,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var6.warn;
                 var4 = '[Tracing] Could not set up background tab detection due to lack of global document';
                 var4 = var5.bind(var6)(var4);
-                _fun11998_ip = 158;
-                continue _fun11998;
+                _fun11999_ip = 158;
+                continue _fun11999;
             case 112:
                 var1 = var1[var3];
                 var1 = var2.bind(var0)(var1);
@@ -60,7 +60,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var4.addEventListener;
                 var2 = 'visibilitychange';
                 var1 = function() { // Environment: var1
-                    _fun11999: for (var _fun11999_ip = 0;;) switch (_fun11999_ip) {
+                    _fun12000: for (var _fun12000_ip = 0;;) switch (_fun12000_ip) {
                         case 0:
                             var2 = _closure1_slot0;
                             var0 = _closure1_slot1;
@@ -71,8 +71,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var1 = var2.getActiveSpan;
                             var7 = var1.bind(var2)();
                             if (!var7) {
-                                _fun11999_ip = 322;
-                                continue _fun11999
+                                _fun12000_ip = 322;
+                                continue _fun12000
                             }
                         case 41:
                             var3 = _closure1_slot0;
@@ -88,13 +88,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var1 = var1.document;
                             var1 = var1.hidden;
                             if (!var1) {
-                                _fun11999_ip = 322;
-                                continue _fun11999
+                                _fun12000_ip = 322;
+                                continue _fun12000
                             }
                         case 104:
                             if (!var2) {
-                                _fun11999_ip = 322;
-                                continue _fun11999
+                                _fun12000_ip = 322;
+                                continue _fun12000
                             }
                         case 110:
                             var5 = _closure1_slot0;
@@ -110,8 +110,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var3 = var5.bind(var0)(var3);
                             var3 = var3.DEBUG_BUILD;
                             if (!var3) {
-                                _fun11999_ip = 238;
-                                continue _fun11999
+                                _fun12000_ip = 238;
+                                continue _fun12000
                             }
                         case 169:
                             var5 = _closure1_slot0;
@@ -130,8 +130,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                             var3 = var5.bind(var7)(var3);
                         case 238:
                             if (var1) {
-                                _fun11999_ip = 289;
-                                continue _fun11999
+                                _fun12000_ip = 289;
+                                continue _fun12000
                             }
                         case 241:
                             var3 = var2.setStatus;

@@ -52,7 +52,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'next';
         var0.key = var5;
         var4 = function() { // Original name: value, environment: var4
-            _fun40012: for (var _fun40012_ip = 0;;) switch (_fun40012_ip) {
+            _fun40063: for (var _fun40063_ip = 0;;) switch (_fun40063_ip) {
                 case 0:
                     var3 = this;
                     var1 = var3.index;
@@ -60,8 +60,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.length;
                     var2 = 1;
                     if (!(var1 < var0)) {
-                        _fun40012_ip = 95;
-                        continue _fun40012
+                        _fun40063_ip = 95;
+                        continue _fun40063
                     }
                 case 26:
                     var1 = var3.items;
@@ -71,8 +71,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.bind(var1)();
                     var1 = var0.done;
                     if (var1) {
-                        _fun40012_ip = 60;
-                        continue _fun40012
+                        _fun40063_ip = 60;
+                        continue _fun40063
                     }
                 case 58:
                     return var0;
@@ -84,8 +84,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var3.items;
                     var0 = var0.length;
                     if (var1 < var0) {
-                        _fun40012_ip = 26;
-                        continue _fun40012
+                        _fun40063_ip = 26;
+                        continue _fun40063
                     }
                 case 95:
                     var0 = {};

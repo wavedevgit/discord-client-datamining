@@ -5,30 +5,30 @@ import ui.c;
 final class g7 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final g7 f43060a = new g7();
+    static final g7 f43076a = new g7();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43061b;
+    private static final ui.c f43077b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43062c;
+    private static final ui.c f43078c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f43063d;
+    private static final ui.c f43079d;
 
     static {
         c.b a10 = ui.c.a("inferenceCommonLogEvent");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43061b = a10.b(s1Var.b()).a();
+        f43077b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("detectorOptions");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43062c = a11.b(s1Var2.b()).a();
+        f43078c = a11.b(s1Var2.b()).a();
         c.b a12 = ui.c.a("imageInfo");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f43063d = a12.b(s1Var3.b()).a();
+        f43079d = a12.b(s1Var3.b()).a();
     }
 
     private g7() {

@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/NewThreadSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: createNewThreadSystemMessage, environment: var1
-        _fun55646: for (var _fun55646_ip = 0;;) switch (_fun55646_ip) {
+        _fun55691: for (var _fun55691_ip = 0;;) switch (_fun55691_ip) {
             case 0:
                 var3 = arg0;
                 var10 = var3.message;
@@ -52,8 +52,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var9 == var6;
                 var0 = undefined;
                 if (var11) {
-                    _fun55646_ip = 104;
-                    continue _fun55646
+                    _fun55691_ip = 104;
+                    continue _fun55691
                 }
             case 99:
                 var0 = var6.channel_id;
@@ -90,8 +90,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var17 = 'username';
                 var12 = null;
                 if (!(var17 === var14)) {
-                    _fun55646_ip = 252;
-                    continue _fun55646
+                    _fun55691_ip = 252;
+                    continue _fun55691
                 }
             case 249:
                 var12 = var13;
@@ -100,8 +100,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.roleColor = var13;
                 var12 = null;
                 if (!var16) {
-                    _fun55646_ip = 270;
-                    continue _fun55646
+                    _fun55691_ip = 270;
+                    continue _fun55691
                 }
             case 267:
                 var12 = var15;
@@ -110,8 +110,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = 'dot';
                 var12 = var12 === var14;
                 if (!var12) {
-                    _fun55646_ip = 290;
-                    continue _fun55646
+                    _fun55691_ip = 290;
+                    continue _fun55691
                 }
             case 286:
                 var12 = var9 != var13;
@@ -125,15 +125,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var9 == var11;
                 var8 = undefined;
                 if (var12) {
-                    _fun55646_ip = 331;
-                    continue _fun55646
+                    _fun55691_ip = 331;
+                    continue _fun55691
                 }
             case 326:
                 var8 = var11.name;
             case 331:
                 if (!(var9 == var8)) {
-                    _fun55646_ip = 340;
-                    continue _fun55646
+                    _fun55691_ip = 340;
+                    continue _fun55691
                 }
             case 335:
                 var8 = var10.content;
@@ -148,8 +148,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var9 == var10;
                 var9 = undefined;
                 if (var11) {
-                    _fun55646_ip = 379;
-                    continue _fun55646
+                    _fun55691_ip = 379;
+                    continue _fun55691
                 }
             case 374:
                 var9 = var10.channel_id;
@@ -171,4 +171,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createNewThreadSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 6634, 6635, 1234, 6636, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 6637, 6638, 1234, 6639, 2]);

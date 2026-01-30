@@ -17,14 +17,14 @@ public enum a0 implements p {
     public static class a implements z {
 
         /* renamed from: d  reason: collision with root package name */
-        private final a0 f32735d;
+        private final a0 f32751d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final k f32736e;
+        private final k f32752e;
 
         a(a0 a0Var, k kVar) {
-            this.f32735d = a0Var;
-            this.f32736e = kVar;
+            this.f32751d = a0Var;
+            this.f32752e = kVar;
         }
 
         @Override // jt.z
@@ -42,19 +42,19 @@ public enum a0 implements p {
         @Override // jt.z
         /* renamed from: d */
         public Long j(q qVar) {
-            return Long.valueOf(this.f32735d.l(this.f32736e.a() + 730, a0.UNIX));
+            return Long.valueOf(this.f32751d.l(this.f32752e.a() + 730, a0.UNIX));
         }
 
         @Override // jt.z
         /* renamed from: e */
         public Long p(q qVar) {
-            return Long.valueOf(this.f32735d.l(this.f32736e.d() + 730, a0.UNIX));
+            return Long.valueOf(this.f32751d.l(this.f32752e.d() + 730, a0.UNIX));
         }
 
         @Override // jt.z
         /* renamed from: f */
         public Long x(q qVar) {
-            return Long.valueOf(this.f32735d.l(this.f32736e.c(qVar) + 730, a0.UNIX));
+            return Long.valueOf(this.f32751d.l(this.f32752e.c(qVar) + 730, a0.UNIX));
         }
 
         @Override // jt.z
@@ -64,11 +64,11 @@ public enum a0 implements p {
                 return false;
             }
             try {
-                long m10 = gt.c.m(a0.UNIX.l(l10.longValue(), this.f32735d), 730L);
-                if (m10 > this.f32736e.a()) {
+                long m10 = gt.c.m(a0.UNIX.l(l10.longValue(), this.f32751d), 730L);
+                if (m10 > this.f32752e.a()) {
                     return false;
                 }
-                if (m10 < this.f32736e.d()) {
+                if (m10 < this.f32752e.d()) {
                     return false;
                 }
                 return true;
@@ -81,7 +81,7 @@ public enum a0 implements p {
         /* renamed from: i */
         public q w(q qVar, Long l10, boolean z10) {
             if (l10 != null) {
-                return (q) this.f32736e.b(gt.c.m(a0.UNIX.l(l10.longValue(), this.f32735d), 730L));
+                return (q) this.f32752e.b(gt.c.m(a0.UNIX.l(l10.longValue(), this.f32751d), 730L));
             }
             throw new IllegalArgumentException("Missing epoch day value.");
         }

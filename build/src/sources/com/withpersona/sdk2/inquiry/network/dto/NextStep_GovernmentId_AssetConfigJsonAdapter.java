@@ -106,7 +106,7 @@ public final class NextStep_GovernmentId_AssetConfigJsonAdapter extends h {
         NextStep.GovernmentId.AssetConfig.SelectPage selectPage2 = selectPage;
         Constructor<NextStep.GovernmentId.AssetConfig> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.GovernmentId.AssetConfig.class.getDeclaredConstructor(NextStep.GovernmentId.AssetConfig.SelectPage.class, NextStep.GovernmentId.AssetConfig.PromptPage.class, NextStep.GovernmentId.AssetConfig.CapturePage.class, NextStep.GovernmentId.AssetConfig.CheckPage.class, NextStep.GovernmentId.AssetConfig.PendingPage.class, Integer.TYPE, sm.c.f49081c);
+            constructor = NextStep.GovernmentId.AssetConfig.class.getDeclaredConstructor(NextStep.GovernmentId.AssetConfig.SelectPage.class, NextStep.GovernmentId.AssetConfig.PromptPage.class, NextStep.GovernmentId.AssetConfig.CapturePage.class, NextStep.GovernmentId.AssetConfig.CheckPage.class, NextStep.GovernmentId.AssetConfig.PendingPage.class, Integer.TYPE, sm.c.f49097c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

@@ -135,7 +135,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
     var1 = function(arg0) { // Original name: getMediaEmptyStateComponentOrNull, environment: var1
-        _fun75532: for (var _fun75532_ip = 0;;) switch (_fun75532_ip) {
+        _fun75576: for (var _fun75576_ip = 0;;) switch (_fun75576_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.photoPermissionStatus;
@@ -146,29 +146,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot5;
                 var0 = var0.DENIED;
                 if (!(var2 !== var0)) {
-                    _fun75532_ip = 500;
-                    continue _fun75532
+                    _fun75576_ip = 500;
+                    continue _fun75576
                 }
             case 53:
                 var0 = _closure1_slot5;
                 var0 = var0.RESTRICTED;
                 if (!(var2 !== var0)) {
-                    _fun75532_ip = 500;
-                    continue _fun75532
+                    _fun75576_ip = 500;
+                    continue _fun75576
                 }
             case 70:
                 var5 = undefined;
                 var0 = undefined;
                 if (!var1) {
-                    _fun75532_ip = 495;
-                    continue _fun75532
+                    _fun75576_ip = 495;
+                    continue _fun75576
                 }
             case 80:
                 var1 = _closure1_slot5;
                 var1 = var1.LIMITED;
                 if (!(var2 !== var1)) {
-                    _fun75532_ip = 299;
-                    continue _fun75532
+                    _fun75576_ip = 299;
+                    continue _fun75576
                 }
             case 97:
                 var3 = _closure1_slot6;
@@ -214,8 +214,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var8.bind(var10)(var4);
                 var1.label = var4;
                 var1 = var3.bind(var5)(var2, var1);
-                _fun75532_ip = 492;
-                continue _fun75532;
+                _fun75576_ip = 492;
+                continue _fun75576;
             case 299:
                 var4 = _closure1_slot6;
                 var3 = _closure1_slot9;
@@ -263,8 +263,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 492:
                 var0 = var1;
             case 495:
-                _fun75532_ip = 699;
-                continue _fun75532;
+                _fun75576_ip = 699;
+                continue _fun75576;
             case 500:
                 var4 = _closure1_slot6;
                 var3 = _closure1_slot9;
@@ -316,4 +316,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getMediaEmptyStateComponentOrNull = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3967, 33, 1297, 671, 3895, 4037, 5326, 1234, 9544, 9531, 9545, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3973, 33, 1297, 671, 3901, 4043, 5330, 1234, 9549, 9536, 9550, 2]);

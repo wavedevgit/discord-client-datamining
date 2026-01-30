@@ -80,7 +80,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var7)(var3);
     var _closure1_slot11 = var3;
     var3 = function(arg0) { // Original name: AvatarRow, environment: var1
-        _fun69329: for (var _fun69329_ip = 0;;) switch (_fun69329_ip) {
+        _fun69375: for (var _fun69375_ip = 0;;) switch (_fun69375_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.recipients;
@@ -88,20 +88,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot0 = var0;
                 var0 = null;
                 if (!(var0 != var3)) {
-                    _fun69329_ip = 95;
-                    continue _fun69329
+                    _fun69375_ip = 95;
+                    continue _fun69375
                 }
             case 26:
                 var4 = var3.length;
                 var2 = 0;
                 if (!(var2 !== var4)) {
-                    _fun69329_ip = 95;
-                    continue _fun69329
+                    _fun69375_ip = 95;
+                    continue _fun69375
                 }
             case 37:
                 var2 = var3.map;
                 var1 = function(arg0) { // Environment: var1
-                    _fun69330: for (var _fun69330_ip = 0;;) switch (_fun69330_ip) {
+                    _fun69376: for (var _fun69376_ip = 0;;) switch (_fun69376_ip) {
                         case 0:
                             var5 = arg0;
                             var2 = _closure1_slot8;
@@ -110,8 +110,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = null;
                             var2 = var0 == var8;
                             if (var2) {
-                                _fun69330_ip = 85;
-                                continue _fun69330
+                                _fun69376_ip = 85;
+                                continue _fun69376
                             }
                         case 30:
                             var4 = _closure1_slot9;
@@ -170,7 +170,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var8;
         var0 = function() { // Environment: var0
-            _fun69332: for (var _fun69332_ip = 0;;) switch (_fun69332_ip) {
+            _fun69378: for (var _fun69378_ip = 0;;) switch (_fun69378_ip) {
                 case 0:
                     var2 = _closure1_slot7;
                     var1 = var2.getChannel;
@@ -178,20 +178,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var1.bind(var2)(var0);
                     var0 = null;
                     if (!(var0 != var1)) {
-                        _fun69332_ip = 43;
-                        continue _fun69332
+                        _fun69378_ip = 43;
+                        continue _fun69378
                     }
                 case 30:
                     var0 = var1.isPrivate;
                     var0 = var0.bind(var1)();
                     if (var0) {
-                        _fun69332_ip = 49;
-                        continue _fun69332
+                        _fun69378_ip = 49;
+                        continue _fun69378
                     }
                 case 43:
                     var0 = new Array(0);
-                    _fun69332_ip = 71;
-                    continue _fun69332;
+                    _fun69378_ip = 71;
+                    continue _fun69378;
                 case 49:
                     var4 = var1.recipients;
                     var3 = var4.slice;
@@ -271,4 +271,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1216, 1372, 1613, 33, 671, 566, 1304, 4026, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1216, 1372, 1613, 33, 671, 566, 1304, 4032, 2]);

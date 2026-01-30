@@ -8,21 +8,21 @@ import java.util.Queue;
 public final class i0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Object f52600a = new Object();
+    private final Object f52616a = new Object();
 
     /* renamed from: b  reason: collision with root package name */
-    private Queue f52601b;
+    private Queue f52617b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f52602c;
+    private boolean f52618c;
 
     public final void a(h0 h0Var) {
-        synchronized (this.f52600a) {
+        synchronized (this.f52616a) {
             try {
-                if (this.f52601b == null) {
-                    this.f52601b = new ArrayDeque();
+                if (this.f52617b == null) {
+                    this.f52617b = new ArrayDeque();
                 }
-                this.f52601b.add(h0Var);
+                this.f52617b.add(h0Var);
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -31,15 +31,15 @@ public final class i0 {
 
     public final void b(Task task) {
         h0 h0Var;
-        synchronized (this.f52600a) {
-            if (this.f52601b != null && !this.f52602c) {
-                this.f52602c = true;
+        synchronized (this.f52616a) {
+            if (this.f52617b != null && !this.f52618c) {
+                this.f52618c = true;
                 while (true) {
-                    synchronized (this.f52600a) {
+                    synchronized (this.f52616a) {
                         try {
-                            h0Var = (h0) this.f52601b.poll();
+                            h0Var = (h0) this.f52617b.poll();
                             if (h0Var == null) {
-                                this.f52602c = false;
+                                this.f52618c = false;
                                 return;
                             }
                         } finally {

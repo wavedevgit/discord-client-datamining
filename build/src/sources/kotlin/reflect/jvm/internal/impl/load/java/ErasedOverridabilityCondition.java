@@ -70,7 +70,7 @@ public final class ErasedOverridabilityCondition implements ExternalOverridabili
                 }
                 List<ValueParameterDescriptor> valueParameters = javaMethodDescriptor.getValueParameters();
                 Intrinsics.checkNotNullExpressionValue(valueParameters, "getValueParameters(...)");
-                Sequence R = kotlin.sequences.k.R(CollectionsKt.b0(valueParameters), f.f34110d);
+                Sequence R = kotlin.sequences.k.R(CollectionsKt.b0(valueParameters), f.f34126d);
                 KotlinType returnType = javaMethodDescriptor.getReturnType();
                 Intrinsics.checkNotNull(returnType);
                 Sequence U = kotlin.sequences.k.U(R, returnType);

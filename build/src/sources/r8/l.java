@@ -6,35 +6,35 @@ import java.io.OutputStream;
 public class l {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f48069a;
+    private final int f48085a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final a f48070b;
+    private final a f48086b;
 
     public l(a aVar) {
         this(aVar, 16384);
     }
 
     public long a(InputStream inputStream, OutputStream outputStream) {
-        byte[] bArr = (byte[]) this.f48070b.get(this.f48069a);
+        byte[] bArr = (byte[]) this.f48086b.get(this.f48085a);
         long j10 = 0;
         while (true) {
             try {
-                int read = inputStream.read(bArr, 0, this.f48069a);
+                int read = inputStream.read(bArr, 0, this.f48085a);
                 if (read == -1) {
                     return j10;
                 }
                 outputStream.write(bArr, 0, read);
                 j10 += read;
             } finally {
-                this.f48070b.release(bArr);
+                this.f48086b.release(bArr);
             }
         }
     }
 
     public l(a aVar, int i10) {
         o8.j.b(Boolean.valueOf(i10 > 0));
-        this.f48069a = i10;
-        this.f48070b = aVar;
+        this.f48085a = i10;
+        this.f48086b = aVar;
     }
 }

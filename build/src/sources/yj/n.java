@@ -22,32 +22,32 @@ import og.qd;
 final class n implements c {
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f54803a;
+    private boolean f54819a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Context f54804b;
+    private final Context f54820b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final xj.e f54805c;
+    private final xj.e f54821c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f54806d;
+    private final int f54822d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final qd f54807e;
+    private final qd f54823e;
 
     /* renamed from: f  reason: collision with root package name */
-    private i8 f54808f;
+    private i8 f54824f;
 
     /* renamed from: g  reason: collision with root package name */
-    private i8 f54809g;
+    private i8 f54825g;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public n(Context context, xj.e eVar, qd qdVar) {
-        this.f54804b = context;
-        this.f54805c = eVar;
-        this.f54806d = com.google.android.gms.common.g.f().a(context);
-        this.f54807e = qdVar;
+        this.f54820b = context;
+        this.f54821c = eVar;
+        this.f54822d = com.google.android.gms.common.g.f().a(context);
+        this.f54823e = qdVar;
     }
 
     static int a(int i10) {
@@ -84,7 +84,7 @@ final class n implements c {
         e4[] T0;
         try {
             ne neVar = new ne(aVar.l(), aVar.h(), 0, SystemClock.elapsedRealtime(), wj.b.a(aVar.k()));
-            if (aVar.g() == 35 && this.f54806d >= 201500000) {
+            if (aVar.g() == 35 && this.f54822d >= 201500000) {
                 Image.Plane[] planeArr = (Image.Plane[]) q.l(aVar.j());
                 T0 = i8Var.U0(sf.b.S0(planeArr[0].getBuffer()), sf.b.S0(planeArr[1].getBuffer()), sf.b.S0(planeArr[2].getBuffer()), planeArr[0].getPixelStride(), planeArr[1].getPixelStride(), planeArr[2].getPixelStride(), planeArr[0].getRowStride(), planeArr[1].getRowStride(), planeArr[2].getRowStride(), neVar);
             } else {
@@ -102,28 +102,28 @@ final class n implements c {
 
     @Override // yj.c
     public final boolean b() {
-        if (this.f54808f != null || this.f54809g != null) {
+        if (this.f54824f != null || this.f54825g != null) {
             return false;
         }
         try {
-            lb e10 = ka.e(DynamiteModule.d(this.f54804b, DynamiteModule.f14870b, "com.google.android.gms.vision.dynamite").c("com.google.android.gms.vision.face.ChimeraNativeFaceDetectorCreator"));
-            sf.a S0 = sf.b.S0(this.f54804b);
-            if (this.f54805c.c() == 2) {
-                if (this.f54809g == null) {
-                    this.f54809g = e10.Q0(S0, new g6(2, 2, 0, true, false, this.f54805c.a()));
+            lb e10 = ka.e(DynamiteModule.d(this.f54820b, DynamiteModule.f14870b, "com.google.android.gms.vision.dynamite").c("com.google.android.gms.vision.face.ChimeraNativeFaceDetectorCreator"));
+            sf.a S0 = sf.b.S0(this.f54820b);
+            if (this.f54821c.c() == 2) {
+                if (this.f54825g == null) {
+                    this.f54825g = e10.Q0(S0, new g6(2, 2, 0, true, false, this.f54821c.a()));
                 }
-                if ((this.f54805c.d() == 2 || this.f54805c.b() == 2 || this.f54805c.e() == 2) && this.f54808f == null) {
-                    this.f54808f = e10.Q0(S0, new g6(e(this.f54805c.e()), d(this.f54805c.d()), a(this.f54805c.b()), false, this.f54805c.g(), this.f54805c.a()));
+                if ((this.f54821c.d() == 2 || this.f54821c.b() == 2 || this.f54821c.e() == 2) && this.f54824f == null) {
+                    this.f54824f = e10.Q0(S0, new g6(e(this.f54821c.e()), d(this.f54821c.d()), a(this.f54821c.b()), false, this.f54821c.g(), this.f54821c.a()));
                 }
-            } else if (this.f54808f == null) {
-                this.f54808f = e10.Q0(S0, new g6(e(this.f54805c.e()), d(this.f54805c.d()), a(this.f54805c.b()), false, this.f54805c.g(), this.f54805c.a()));
+            } else if (this.f54824f == null) {
+                this.f54824f = e10.Q0(S0, new g6(e(this.f54821c.e()), d(this.f54821c.d()), a(this.f54821c.b()), false, this.f54821c.g(), this.f54821c.a()));
             }
-            if (this.f54808f == null && this.f54809g == null && !this.f54803a) {
+            if (this.f54824f == null && this.f54825g == null && !this.f54819a) {
                 Log.d("LegacyFaceDelegate", "Request face optional module download.");
-                pj.l.c(this.f54804b, "barcode");
-                this.f54803a = true;
+                pj.l.c(this.f54820b, "barcode");
+                this.f54819a = true;
             }
-            k.c(this.f54807e, false, ca.NO_ERROR);
+            k.c(this.f54823e, false, ca.NO_ERROR);
             return false;
         } catch (RemoteException e11) {
             throw new lj.a("Failed to create legacy face detector.", 13, e11);
@@ -135,23 +135,23 @@ final class n implements c {
     @Override // yj.c
     public final Pair c(vj.a aVar) {
         List list;
-        if (this.f54808f == null && this.f54809g == null) {
+        if (this.f54824f == null && this.f54825g == null) {
             b();
         }
-        i8 i8Var = this.f54808f;
-        if (i8Var == null && this.f54809g == null) {
+        i8 i8Var = this.f54824f;
+        if (i8Var == null && this.f54825g == null) {
             throw new lj.a("Waiting for the face detection module to be downloaded. Please wait.", 14);
         }
         List list2 = null;
         if (i8Var != null) {
             list = f(i8Var, aVar);
-            if (!this.f54805c.g()) {
+            if (!this.f54821c.g()) {
                 i.m(list);
             }
         } else {
             list = null;
         }
-        i8 i8Var2 = this.f54809g;
+        i8 i8Var2 = this.f54825g;
         if (i8Var2 != null) {
             list2 = f(i8Var2, aVar);
             i.m(list2);
@@ -161,23 +161,23 @@ final class n implements c {
 
     @Override // yj.c
     public final void zzb() {
-        i8 i8Var = this.f54808f;
+        i8 i8Var = this.f54824f;
         if (i8Var != null) {
             try {
                 i8Var.S0();
             } catch (RemoteException e10) {
                 Log.e("LegacyFaceDelegate", "Failed to release legacy face detector.", e10);
             }
-            this.f54808f = null;
+            this.f54824f = null;
         }
-        i8 i8Var2 = this.f54809g;
+        i8 i8Var2 = this.f54825g;
         if (i8Var2 != null) {
             try {
                 i8Var2.S0();
             } catch (RemoteException e11) {
                 Log.e("LegacyFaceDelegate", "Failed to release legacy face detector.", e11);
             }
-            this.f54809g = null;
+            this.f54825g = null;
         }
     }
 }

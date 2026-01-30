@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'components_native/calls/stream/StreamFullAlert.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: StreamFullAlert, environment: var1
-        _fun118008: for (var _fun118008_ip = 0;;) switch (_fun118008_ip) {
+        _fun118287: for (var _fun118287_ip = 0;;) switch (_fun118287_ip) {
             case 0:
                 var5 = _closure1_slot0;
                 var6 = _closure1_slot2;
@@ -69,8 +69,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1 == var0;
                 var6 = undefined;
                 if (var1) {
-                    _fun118008_ip = 74;
-                    continue _fun118008
+                    _fun118287_ip = 74;
+                    continue _fun118287
                 }
             case 68:
                 var6 = var0.errorCode;
@@ -164,4 +164,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 7965, 1234, 3891, 3895, 15000, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 7968, 1234, 3897, 3901, 15029, 2]);

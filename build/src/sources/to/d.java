@@ -6,32 +6,32 @@ import vm.g;
 public final class d implements g {
 
     /* renamed from: b  reason: collision with root package name */
-    private final Object f49774b;
+    private final Object f49790b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final boolean f49775c;
+    private final boolean f49791c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f49776d;
+    private final String f49792d;
 
     public d(Object screen, boolean z10, String name) {
         Intrinsics.checkNotNullParameter(screen, "screen");
         Intrinsics.checkNotNullParameter(name, "name");
-        this.f49774b = screen;
-        this.f49775c = z10;
-        this.f49776d = name;
+        this.f49790b = screen;
+        this.f49791c = z10;
+        this.f49792d = name;
     }
 
     public final Object a() {
-        return this.f49774b;
+        return this.f49790b;
     }
 
     public final boolean b() {
-        return this.f49775c;
+        return this.f49791c;
     }
 
     @Override // vm.g
     public String c() {
-        return this.f49776d;
+        return this.f49792d;
     }
 }

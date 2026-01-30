@@ -6,10 +6,10 @@ import on.g;
 public final class i implements g.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f44539a;
+    private final h f44555a;
 
     i(h hVar) {
-        this.f44539a = hVar;
+        this.f44555a = hVar;
     }
 
     public static tq.h b(h hVar) {
@@ -18,6 +18,6 @@ public final class i implements g.a {
 
     @Override // on.g.a
     public g a(m mVar, Camera2PreviewView camera2PreviewView, b bVar, sn.a aVar, lq.a aVar2, boolean z10) {
-        return this.f44539a.b(mVar, camera2PreviewView, bVar, aVar, aVar2, z10);
+        return this.f44555a.b(mVar, camera2PreviewView, bVar, aVar, aVar2, z10);
     }
 }

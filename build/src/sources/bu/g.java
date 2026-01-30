@@ -56,7 +56,7 @@ public final class g implements zt.d {
             Headers h10 = request.h();
             ArrayList arrayList = new ArrayList(h10.size() + 4);
             arrayList.add(new c(c.f7860g, request.j()));
-            arrayList.add(new c(c.f7861h, zt.i.f56126a.c(request.n())));
+            arrayList.add(new c(c.f7861h, zt.i.f56142a.c(request.n())));
             String f10 = request.f("Host");
             if (f10 != null) {
                 arrayList.add(new c(c.f7863j, f10));
@@ -86,14 +86,14 @@ public final class g implements zt.d {
                 String e10 = headerBlock.e(i10);
                 String j10 = headerBlock.j(i10);
                 if (Intrinsics.areEqual(e10, ":status")) {
-                    k.a aVar2 = zt.k.f56129d;
+                    k.a aVar2 = zt.k.f56145d;
                     kVar = aVar2.a("HTTP/1.1 " + j10);
                 } else if (!g.f7957i.contains(e10)) {
                     aVar.d(e10, j10);
                 }
             }
             if (kVar != null) {
-                return new Response.a().p(protocol).g(kVar.f56131b).m(kVar.f56132c).k(aVar.f());
+                return new Response.a().p(protocol).g(kVar.f56147b).m(kVar.f56148c).k(aVar.f());
             }
             throw new ProtocolException("Expected ':status' header not present");
         }

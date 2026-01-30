@@ -5,7 +5,7 @@ import java.io.Serializable;
 public final class k extends a implements Serializable {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final k f31542a = new Object();
+    public static final k f31558a = new Object();
 
     public static boolean w(long j10) {
         if ((3 & j10) == 0) {

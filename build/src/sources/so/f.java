@@ -6,14 +6,14 @@ import iv.a0;
 public final class f implements tq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final com.withpersona.sdk2.inquiry.internal.network.f f49115a;
+    private final com.withpersona.sdk2.inquiry.internal.network.f f49131a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final tq.h f49116b;
+    private final tq.h f49132b;
 
     public f(com.withpersona.sdk2.inquiry.internal.network.f fVar, tq.h hVar) {
-        this.f49115a = fVar;
-        this.f49116b = hVar;
+        this.f49131a = fVar;
+        this.f49132b = hVar;
     }
 
     public static f a(com.withpersona.sdk2.inquiry.internal.network.f fVar, tq.h hVar) {
@@ -27,6 +27,6 @@ public final class f implements tq.d {
     @Override // javax.inject.Provider
     /* renamed from: c */
     public FallbackModeService get() {
-        return b(this.f49115a, (a0) this.f49116b.get());
+        return b(this.f49131a, (a0) this.f49132b.get());
     }
 }

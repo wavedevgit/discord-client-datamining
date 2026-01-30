@@ -3,14 +3,14 @@ package io.sentry;
 public final class p implements h1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final k7 f30244a;
+    private final k7 f30260a;
 
     public p(k7 k7Var) {
-        this.f30244a = k7Var;
+        this.f30260a = k7Var;
     }
 
     @Override // io.sentry.h1
     public boolean a() {
-        return u6.d().c(this.f30244a.getFatalLogger());
+        return u6.d().c(this.f30260a.getFatalLogger());
     }
 }

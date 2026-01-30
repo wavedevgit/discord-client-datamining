@@ -5,7 +5,7 @@ import ui.c;
 final class k6 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final k6 f45503a = new k6();
+    static final k6 f45519a = new k6();
 
     static {
         c.b a10 = ui.c.a("supportedFormats");

@@ -14,13 +14,13 @@ import kotlin.jvm.internal.Lambda;
 public final class y implements s {
 
     /* renamed from: a  reason: collision with root package name */
-    private final o f49899a;
+    private final o f49915a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final boolean f49900b;
+    private final boolean f49916b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Set f49901c;
+    private final Set f49917c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     /* synthetic */ class a extends FunctionReferenceImpl implements Function1 {
@@ -43,7 +43,7 @@ public final class y implements s {
 
         public final void a(Object obj, boolean z10) {
             boolean z11;
-            for (m mVar : y.this.f49901c) {
+            for (m mVar : y.this.f49917c) {
                 boolean areEqual = Intrinsics.areEqual(mVar.isNegative().a(obj), Boolean.TRUE);
                 ts.b isNegative = mVar.isNegative();
                 if (z10 != areEqual) {
@@ -58,15 +58,15 @@ public final class y implements s {
         @Override // kotlin.jvm.functions.Function2
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
             a(obj, ((Boolean) obj2).booleanValue());
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
     }
 
     public y(o format, boolean z10) {
         List<l> b10;
         Intrinsics.checkNotNullParameter(format, "format");
-        this.f49899a = format;
-        this.f49900b = z10;
+        this.f49915a = format;
+        this.f49916b = z10;
         b10 = p.b(format);
         ArrayList arrayList = new ArrayList();
         for (l lVar : b10) {
@@ -76,7 +76,7 @@ public final class y implements s {
             }
         }
         Set l12 = CollectionsKt.l1(arrayList);
-        this.f49901c = l12;
+        this.f49917c = l12;
         if (!l12.isEmpty()) {
             return;
         }
@@ -86,7 +86,7 @@ public final class y implements s {
     /* JADX INFO: Access modifiers changed from: private */
     public static final boolean e(y yVar, Object obj) {
         boolean z10 = false;
-        for (m mVar : yVar.f49901c) {
+        for (m mVar : yVar.f49917c) {
             if (Intrinsics.areEqual(mVar.isNegative().a(obj), Boolean.TRUE)) {
                 z10 = true;
             } else if (!mVar.a(obj)) {
@@ -98,20 +98,20 @@ public final class y implements s {
 
     @Override // ts.o
     public us.e a() {
-        return new us.f(this.f49899a.a(), new a(), this.f49900b);
+        return new us.f(this.f49915a.a(), new a(), this.f49916b);
     }
 
     @Override // ts.o
     public vs.q b() {
         b bVar = new b();
-        boolean z10 = this.f49900b;
-        return vs.n.b(CollectionsKt.o(new vs.q(CollectionsKt.e(new vs.s(bVar, z10, "sign for " + this.f49901c)), CollectionsKt.l()), this.f49899a.b()));
+        boolean z10 = this.f49916b;
+        return vs.n.b(CollectionsKt.o(new vs.q(CollectionsKt.e(new vs.s(bVar, z10, "sign for " + this.f49917c)), CollectionsKt.l()), this.f49915a.b()));
     }
 
     public boolean equals(Object obj) {
         if (obj instanceof y) {
             y yVar = (y) obj;
-            if (Intrinsics.areEqual(this.f49899a, yVar.f49899a) && this.f49900b == yVar.f49900b) {
+            if (Intrinsics.areEqual(this.f49915a, yVar.f49915a) && this.f49916b == yVar.f49916b) {
                 return true;
             }
             return false;
@@ -120,14 +120,14 @@ public final class y implements s {
     }
 
     public final o f() {
-        return this.f49899a;
+        return this.f49915a;
     }
 
     public int hashCode() {
-        return (this.f49899a.hashCode() * 31) + Boolean.hashCode(this.f49900b);
+        return (this.f49915a.hashCode() * 31) + Boolean.hashCode(this.f49916b);
     }
 
     public String toString() {
-        return "SignedFormatStructure(" + this.f49899a + ')';
+        return "SignedFormatStructure(" + this.f49915a + ')';
     }
 }

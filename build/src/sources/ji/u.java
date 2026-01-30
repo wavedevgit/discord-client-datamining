@@ -10,33 +10,33 @@ import ji.q;
 public abstract class u extends q implements Set {
 
     /* renamed from: e  reason: collision with root package name */
-    private transient s f32181e;
+    private transient s f32197e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static class a extends q.a {
 
         /* renamed from: d  reason: collision with root package name */
-        Object[] f32182d;
+        Object[] f32198d;
 
         /* renamed from: e  reason: collision with root package name */
-        private int f32183e;
+        private int f32199e;
 
         public a() {
             super(4);
         }
 
         private void k(Object obj) {
-            Objects.requireNonNull(this.f32182d);
-            int length = this.f32182d.length - 1;
+            Objects.requireNonNull(this.f32198d);
+            int length = this.f32198d.length - 1;
             int hashCode = obj.hashCode();
             int b10 = p.b(hashCode);
             while (true) {
                 int i10 = b10 & length;
-                Object[] objArr = this.f32182d;
+                Object[] objArr = this.f32198d;
                 Object obj2 = objArr[i10];
                 if (obj2 == null) {
                     objArr[i10] = obj;
-                    this.f32183e += hashCode;
+                    this.f32199e += hashCode;
                     super.d(obj);
                     return;
                 } else if (obj2.equals(obj)) {
@@ -51,17 +51,17 @@ public abstract class u extends q implements Set {
         /* renamed from: h */
         public a a(Object obj) {
             ii.m.j(obj);
-            if (this.f32182d != null && u.j(this.f32154b) <= this.f32182d.length) {
+            if (this.f32198d != null && u.j(this.f32170b) <= this.f32198d.length) {
                 k(obj);
                 return this;
             }
-            this.f32182d = null;
+            this.f32198d = null;
             super.d(obj);
             return this;
         }
 
         public a i(Object... objArr) {
-            if (this.f32182d != null) {
+            if (this.f32198d != null) {
                 for (Object obj : objArr) {
                     a(obj);
                 }
@@ -73,7 +73,7 @@ public abstract class u extends q implements Set {
 
         public a j(Iterable iterable) {
             ii.m.j(iterable);
-            if (this.f32182d != null) {
+            if (this.f32198d != null) {
                 for (Object obj : iterable) {
                     a(obj);
                 }
@@ -86,28 +86,28 @@ public abstract class u extends q implements Set {
         public u l() {
             u k10;
             Object[] objArr;
-            int i10 = this.f32154b;
+            int i10 = this.f32170b;
             if (i10 != 0) {
                 if (i10 != 1) {
-                    if (this.f32182d == null || u.j(i10) != this.f32182d.length) {
-                        k10 = u.k(this.f32154b, this.f32153a);
-                        this.f32154b = k10.size();
+                    if (this.f32198d == null || u.j(i10) != this.f32198d.length) {
+                        k10 = u.k(this.f32170b, this.f32169a);
+                        this.f32170b = k10.size();
                     } else {
-                        if (u.w(this.f32154b, this.f32153a.length)) {
-                            objArr = Arrays.copyOf(this.f32153a, this.f32154b);
+                        if (u.w(this.f32170b, this.f32169a.length)) {
+                            objArr = Arrays.copyOf(this.f32169a, this.f32170b);
                         } else {
-                            objArr = this.f32153a;
+                            objArr = this.f32169a;
                         }
                         Object[] objArr2 = objArr;
-                        int i11 = this.f32183e;
-                        Object[] objArr3 = this.f32182d;
-                        k10 = new m0(objArr2, i11, objArr3, objArr3.length - 1, this.f32154b);
+                        int i11 = this.f32199e;
+                        Object[] objArr3 = this.f32198d;
+                        k10 = new m0(objArr2, i11, objArr3, objArr3.length - 1, this.f32170b);
                     }
-                    this.f32155c = true;
-                    this.f32182d = null;
+                    this.f32171c = true;
+                    this.f32198d = null;
                     return k10;
                 }
-                Object obj = this.f32153a[0];
+                Object obj = this.f32169a[0];
                 Objects.requireNonNull(obj);
                 return u.s(obj);
             }
@@ -206,7 +206,7 @@ public abstract class u extends q implements Set {
     }
 
     public static u r() {
-        return m0.f32144t;
+        return m0.f32160t;
     }
 
     public static u s(Object obj) {
@@ -235,10 +235,10 @@ public abstract class u extends q implements Set {
 
     @Override // ji.q
     public s b() {
-        s sVar = this.f32181e;
+        s sVar = this.f32197e;
         if (sVar == null) {
             s o10 = o();
-            this.f32181e = o10;
+            this.f32197e = o10;
             return o10;
         }
         return sVar;

@@ -444,7 +444,7 @@ public abstract class y {
     }
 
     private static boolean C(MediaCodecInfo mediaCodecInfo) {
-        if (w0.f40279a >= 29 && D(mediaCodecInfo)) {
+        if (w0.f40295a >= 29 && D(mediaCodecInfo)) {
             return true;
         }
         return false;
@@ -458,41 +458,41 @@ public abstract class y {
         if (mediaCodecInfo.isEncoder() || (!z10 && str.endsWith(".secure"))) {
             return false;
         }
-        int i10 = w0.f40279a;
+        int i10 = w0.f40295a;
         if (i10 < 21 && ("CIPAACDecoder".equals(str) || "CIPMP3Decoder".equals(str) || "CIPVorbisDecoder".equals(str) || "CIPAMRNBDecoder".equals(str) || "AACDecoder".equals(str) || "MP3Decoder".equals(str))) {
             return false;
         }
         if (i10 < 18 && "OMX.MTK.AUDIO.DECODER.AAC".equals(str)) {
-            String str3 = w0.f40280b;
-            if ("a70".equals(str3) || ("Xiaomi".equals(w0.f40281c) && str3.startsWith("HM"))) {
+            String str3 = w0.f40296b;
+            if ("a70".equals(str3) || ("Xiaomi".equals(w0.f40297c) && str3.startsWith("HM"))) {
                 return false;
             }
         }
         if (i10 == 16 && "OMX.qcom.audio.decoder.mp3".equals(str)) {
-            String str4 = w0.f40280b;
+            String str4 = w0.f40296b;
             if ("dlxu".equals(str4) || "protou".equals(str4) || "ville".equals(str4) || "villeplus".equals(str4) || "villec2".equals(str4) || str4.startsWith("gee") || "C6602".equals(str4) || "C6603".equals(str4) || "C6606".equals(str4) || "C6616".equals(str4) || "L36h".equals(str4) || "SO-02E".equals(str4)) {
                 return false;
             }
         }
         if (i10 == 16 && "OMX.qcom.audio.decoder.aac".equals(str)) {
-            String str5 = w0.f40280b;
+            String str5 = w0.f40296b;
             if ("C1504".equals(str5) || "C1505".equals(str5) || "C1604".equals(str5) || "C1605".equals(str5)) {
                 return false;
             }
         }
-        if (i10 < 24 && (("OMX.SEC.aac.dec".equals(str) || "OMX.Exynos.AAC.Decoder".equals(str)) && "samsung".equals(w0.f40281c))) {
-            String str6 = w0.f40280b;
+        if (i10 < 24 && (("OMX.SEC.aac.dec".equals(str) || "OMX.Exynos.AAC.Decoder".equals(str)) && "samsung".equals(w0.f40297c))) {
+            String str6 = w0.f40296b;
             if (str6.startsWith("zeroflte") || str6.startsWith("zerolte") || str6.startsWith("zenlte") || "SC-05G".equals(str6) || "marinelteatt".equals(str6) || "404SC".equals(str6) || "SC-04G".equals(str6) || "SCV31".equals(str6)) {
                 return false;
             }
         }
-        if (i10 <= 19 && "OMX.SEC.vp8.dec".equals(str) && "samsung".equals(w0.f40281c)) {
-            String str7 = w0.f40280b;
+        if (i10 <= 19 && "OMX.SEC.vp8.dec".equals(str) && "samsung".equals(w0.f40297c)) {
+            String str7 = w0.f40296b;
             if (str7.startsWith("d2") || str7.startsWith("serrano") || str7.startsWith("jflte") || str7.startsWith("santos") || str7.startsWith("t0")) {
                 return false;
             }
         }
-        if (i10 <= 19 && w0.f40280b.startsWith("jflte") && "OMX.qcom.video.decoder.vp8".equals(str)) {
+        if (i10 <= 19 && w0.f40296b.startsWith("jflte") && "OMX.qcom.video.decoder.vp8".equals(str)) {
             return false;
         }
         if (i10 <= 23 && "audio/eac3-joc".equals(str2) && "OMX.MTK.AUDIO.DECODER.DSPAC3".equals(str)) {
@@ -502,7 +502,7 @@ public abstract class y {
     }
 
     private static boolean F(MediaCodecInfo mediaCodecInfo, String str) {
-        if (w0.f40279a >= 29) {
+        if (w0.f40295a >= 29) {
             return G(mediaCodecInfo);
         }
         return !H(mediaCodecInfo, str);
@@ -513,7 +513,7 @@ public abstract class y {
     }
 
     private static boolean H(MediaCodecInfo mediaCodecInfo, String str) {
-        if (w0.f40279a >= 29) {
+        if (w0.f40295a >= 29) {
             return I(mediaCodecInfo);
         }
         if (c0.o(str)) {
@@ -534,7 +534,7 @@ public abstract class y {
     }
 
     private static boolean J(MediaCodecInfo mediaCodecInfo) {
-        if (w0.f40279a >= 29) {
+        if (w0.f40295a >= 29) {
             return K(mediaCodecInfo);
         }
         String e10 = ii.b.e(mediaCodecInfo.getName());
@@ -561,7 +561,7 @@ public abstract class y {
                     i12 = Math.max(h(h10[i11].level), i12);
                     i11++;
                 }
-                if (w0.f40279a >= 21) {
+                if (w0.f40295a >= 21) {
                     i10 = 345600;
                 } else {
                     i10 = 172800;
@@ -686,7 +686,7 @@ public abstract class y {
     public static /* synthetic */ int b(q qVar) {
         String str = qVar.f24983a;
         if (!str.startsWith("OMX.google") && !str.startsWith("c2.android")) {
-            if (w0.f40279a < 26 && str.equals("OMX.MTK.AUDIO.DECODER.RAW")) {
+            if (w0.f40295a < 26 && str.equals("OMX.MTK.AUDIO.DECODER.RAW")) {
                 return -1;
             }
             return 0;
@@ -704,7 +704,7 @@ public abstract class y {
 
     private static void e(String str, List list) {
         if ("audio/raw".equals(str)) {
-            if (w0.f40279a < 26 && w0.f40280b.equals("R9") && list.size() == 1 && ((q) list.get(0)).f24983a.equals("OMX.MTK.AUDIO.DECODER.RAW")) {
+            if (w0.f40295a < 26 && w0.f40296b.equals("R9") && list.size() == 1 && ((q) list.get(0)).f24983a.equals("OMX.MTK.AUDIO.DECODER.RAW")) {
                 list.add(q.F("OMX.google.raw.decoder", "audio/raw", "audio/raw", null, false, true, false, false, false));
             }
             N(list, new g() { // from class: fd.u
@@ -714,7 +714,7 @@ public abstract class y {
                 }
             });
         }
-        int i10 = w0.f40279a;
+        int i10 = w0.f40295a;
         if (i10 < 21 && list.size() > 1) {
             String str2 = ((q) list.get(0)).f24983a;
             if ("OMX.SEC.mp3.dec".equals(str2) || "OMX.SEC.MP3.Decoder".equals(str2) || "OMX.brcm.audio.mp3.decoder".equals(str2)) {
@@ -1170,7 +1170,7 @@ public abstract class y {
                 return null;
             } else {
                 if (parseInt3 != 8) {
-                    if (cVar != null && (cVar.f42528o != null || (i10 = cVar.f42527i) == 7 || i10 == 6)) {
+                    if (cVar != null && (cVar.f42544o != null || (i10 = cVar.f42543i) == 7 || i10 == 6)) {
                         i11 = RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
                     } else {
                         i11 = 2;
@@ -1406,7 +1406,7 @@ public abstract class y {
                 if (list != null) {
                     return list;
                 }
-                int i10 = w0.f40279a;
+                int i10 = w0.f40295a;
                 if (i10 >= 21) {
                     eVar = new f(z10, z11);
                 } else {
@@ -1519,7 +1519,7 @@ public abstract class y {
         String group = matcher.group(1);
         if (!"1".equals(group)) {
             if ("2".equals(group)) {
-                if (cVar != null && cVar.f42527i == 6) {
+                if (cVar != null && cVar.f42543i == 6) {
                     i10 = RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT;
                 } else {
                     i10 = 2;

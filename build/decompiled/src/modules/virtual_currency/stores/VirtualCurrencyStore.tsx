@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var4;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
-        _fun75258: for (var _fun75258_ip = 0;;) switch (_fun75258_ip) {
+        _fun75302: for (var _fun75302_ip = 0;;) switch (_fun75302_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -28,8 +28,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 72: // try_end0
-                _fun75258_ip = 76;
-                continue _fun75258;
+                _fun75302_ip = 76;
+                continue _fun75302;
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
@@ -81,7 +81,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var3.Store;
     var1 = function(arg0) { // Environment: var1
         var3 = function() { // Original name: VirtualCurrencyStore, environment: var5
-            _fun75262: for (var _fun75262_ip = 0;;) switch (_fun75262_ip) {
+            _fun75306: for (var _fun75306_ip = 0;;) switch (_fun75306_ip) {
                 case 0:
                     var4 = this;
                     var0 = _closure1_slot2;
@@ -192,14 +192,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot7;
                     var0 = var0.bind(var3)();
                     if (var0) {
-                        _fun75262_ip = 248;
-                        continue _fun75262
+                        _fun75306_ip = 248;
+                        continue _fun75306
                     }
                 case 235:
                     var0 = var8.apply;
                     var0 = var0.bind(var8)(var4, var9);
-                    _fun75262_ip = 282;
-                    continue _fun75262;
+                    _fun75306_ip = 282;
+                    continue _fun75306;
                 case 248:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -363,14 +363,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'handleBalanceFetch';
         var4.key = var6;
         var6 = function(arg0) { // Original name: value, environment: var5
-            _fun75286: for (var _fun75286_ip = 0;;) switch (_fun75286_ip) {
+            _fun75330: for (var _fun75330_ip = 0;;) switch (_fun75330_ip) {
                 case 0:
                     var1 = arg0;
                     var2 = this;
                     var0 = null;
                     if (!(var1 != var0)) {
-                        _fun75286_ip = 30;
-                        continue _fun75286
+                        _fun75330_ip = 30;
+                        continue _fun75330
                     }
                 case 12:
                     var3 = true;
@@ -488,13 +488,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'handleOnboardingModalOpen';
         var4.key = var6;
         var6 = function(arg0) { // Original name: value, environment: var5
-            _fun75293: for (var _fun75293_ip = 0;;) switch (_fun75293_ip) {
+            _fun75337: for (var _fun75337_ip = 0;;) switch (_fun75337_ip) {
                 case 0:
                     var1 = arg0;
                     var0 = null;
                     if (!(var1 != var0)) {
-                        _fun75293_ip = 24;
-                        continue _fun75293
+                        _fun75337_ip = 24;
+                        continue _fun75337
                     }
                 case 9:
                     var2 = true;
@@ -516,13 +516,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'handleOnboardingModalReset';
         var4.key = var6;
         var5 = function(arg0) { // Original name: value, environment: var5
-            _fun75294: for (var _fun75294_ip = 0;;) switch (_fun75294_ip) {
+            _fun75338: for (var _fun75338_ip = 0;;) switch (_fun75338_ip) {
                 case 0:
                     var1 = arg0;
                     var0 = null;
                     if (!(var1 != var0)) {
-                        _fun75294_ip = 24;
-                        continue _fun75294
+                        _fun75338_ip = 24;
+                        continue _fun75338
                     }
                 case 9:
                     var2 = false;

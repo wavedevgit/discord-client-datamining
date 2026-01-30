@@ -30,22 +30,22 @@ import wf.r;
 public final class b extends m2.b {
 
     /* renamed from: l  reason: collision with root package name */
-    public static final a f42312l = new a(null);
+    public static final a f42328l = new a(null);
 
     /* renamed from: g  reason: collision with root package name */
-    private final Context f42313g;
+    private final Context f42329g;
 
     /* renamed from: h  reason: collision with root package name */
-    private g2.j f42314h;
+    private g2.j f42330h;
 
     /* renamed from: i  reason: collision with root package name */
-    private Executor f42315i;
+    private Executor f42331i;
 
     /* renamed from: j  reason: collision with root package name */
-    private CancellationSignal f42316j;
+    private CancellationSignal f42332j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final k f42317k;
+    private final k f42333k;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -68,7 +68,7 @@ public final class b extends m2.b {
     public static final class C0529b extends Lambda implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final C0529b f42318d = new C0529b();
+        public static final C0529b f42334d = new C0529b();
 
         C0529b() {
             super(2);
@@ -76,14 +76,14 @@ public final class b extends m2.b {
 
         public final void a(CancellationSignal cancellationSignal, Function0 f10) {
             Intrinsics.checkNotNullParameter(f10, "f");
-            b.a aVar = m2.b.f37791f;
+            b.a aVar = m2.b.f37807f;
             m2.b.e(cancellationSignal, f10);
         }
 
         @Override // kotlin.jvm.functions.Function2
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
             a((CancellationSignal) obj, (Function0) obj2);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
     }
 
@@ -96,7 +96,7 @@ public final class b extends m2.b {
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final void c(b bVar, h2.e eVar) {
-            g2.j jVar = bVar.f42314h;
+            g2.j jVar = bVar.f42330h;
             if (jVar == null) {
                 Intrinsics.throwUninitializedPropertyAccessException("callback");
                 jVar = null;
@@ -106,7 +106,7 @@ public final class b extends m2.b {
 
         public final void b(final h2.e e10) {
             Intrinsics.checkNotNullParameter(e10, "e");
-            Executor executor = b.this.f42315i;
+            Executor executor = b.this.f42331i;
             if (executor == null) {
                 Intrinsics.throwUninitializedPropertyAccessException("executor");
                 executor = null;
@@ -123,7 +123,7 @@ public final class b extends m2.b {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             b((h2.e) obj);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
     }
 
@@ -132,17 +132,17 @@ public final class b extends m2.b {
     public static final class d extends Lambda implements Function0 {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ h2.e f42321e;
+        final /* synthetic */ h2.e f42337e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         d(h2.e eVar) {
             super(0);
-            this.f42321e = eVar;
+            this.f42337e = eVar;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final void b(b bVar, h2.e eVar) {
-            g2.j jVar = bVar.f42314h;
+            g2.j jVar = bVar.f42330h;
             if (jVar == null) {
                 Intrinsics.throwUninitializedPropertyAccessException("callback");
                 jVar = null;
@@ -153,18 +153,18 @@ public final class b extends m2.b {
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             m1212invoke();
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         /* renamed from: invoke  reason: collision with other method in class */
         public final void m1212invoke() {
-            Executor executor = b.this.f42315i;
+            Executor executor = b.this.f42331i;
             if (executor == null) {
                 Intrinsics.throwUninitializedPropertyAccessException("executor");
                 executor = null;
             }
             final b bVar = b.this;
-            final h2.e eVar = this.f42321e;
+            final h2.e eVar = this.f42337e;
             executor.execute(new Runnable() { // from class: o2.d
                 @Override // java.lang.Runnable
                 public final void run() {
@@ -179,17 +179,17 @@ public final class b extends m2.b {
     public static final class e extends Lambda implements Function0 {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ g2.c f42323e;
+        final /* synthetic */ g2.c f42339e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         e(g2.c cVar) {
             super(0);
-            this.f42323e = cVar;
+            this.f42339e = cVar;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final void b(b bVar, g2.c cVar) {
-            g2.j jVar = bVar.f42314h;
+            g2.j jVar = bVar.f42330h;
             if (jVar == null) {
                 Intrinsics.throwUninitializedPropertyAccessException("callback");
                 jVar = null;
@@ -200,18 +200,18 @@ public final class b extends m2.b {
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             m1213invoke();
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         /* renamed from: invoke  reason: collision with other method in class */
         public final void m1213invoke() {
-            Executor executor = b.this.f42315i;
+            Executor executor = b.this.f42331i;
             if (executor == null) {
                 Intrinsics.throwUninitializedPropertyAccessException("executor");
                 executor = null;
             }
             final b bVar = b.this;
-            final g2.c cVar = this.f42323e;
+            final g2.c cVar = this.f42339e;
             executor.execute(new Runnable() { // from class: o2.e
                 @Override // java.lang.Runnable
                 public final void run() {
@@ -226,17 +226,17 @@ public final class b extends m2.b {
     public static final class f extends Lambda implements Function0 {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ JSONException f42325e;
+        final /* synthetic */ JSONException f42341e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         f(JSONException jSONException) {
             super(0);
-            this.f42325e = jSONException;
+            this.f42341e = jSONException;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final void b(b bVar, JSONException jSONException) {
-            g2.j jVar = bVar.f42314h;
+            g2.j jVar = bVar.f42330h;
             if (jVar == null) {
                 Intrinsics.throwUninitializedPropertyAccessException("callback");
                 jVar = null;
@@ -247,18 +247,18 @@ public final class b extends m2.b {
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             m1214invoke();
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         /* renamed from: invoke  reason: collision with other method in class */
         public final void m1214invoke() {
-            Executor executor = b.this.f42315i;
+            Executor executor = b.this.f42331i;
             if (executor == null) {
                 Intrinsics.throwUninitializedPropertyAccessException("executor");
                 executor = null;
             }
             final b bVar = b.this;
-            final JSONException jSONException = this.f42325e;
+            final JSONException jSONException = this.f42341e;
             executor.execute(new Runnable() { // from class: o2.f
                 @Override // java.lang.Runnable
                 public final void run() {
@@ -273,17 +273,17 @@ public final class b extends m2.b {
     public static final class g extends Lambda implements Function0 {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Throwable f42327e;
+        final /* synthetic */ Throwable f42343e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         g(Throwable th2) {
             super(0);
-            this.f42327e = th2;
+            this.f42343e = th2;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final void b(b bVar, Throwable th2) {
-            g2.j jVar = bVar.f42314h;
+            g2.j jVar = bVar.f42330h;
             if (jVar == null) {
                 Intrinsics.throwUninitializedPropertyAccessException("callback");
                 jVar = null;
@@ -294,18 +294,18 @@ public final class b extends m2.b {
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             m1215invoke();
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         /* renamed from: invoke  reason: collision with other method in class */
         public final void m1215invoke() {
-            Executor executor = b.this.f42315i;
+            Executor executor = b.this.f42331i;
             if (executor == null) {
                 Intrinsics.throwUninitializedPropertyAccessException("executor");
                 executor = null;
             }
             final b bVar = b.this;
-            final Throwable th2 = this.f42327e;
+            final Throwable th2 = this.f42343e;
             executor.execute(new Runnable() { // from class: o2.g
                 @Override // java.lang.Runnable
                 public final void run() {
@@ -319,17 +319,17 @@ public final class b extends m2.b {
     static final class h extends Lambda implements Function0 {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ JSONException f42329e;
+        final /* synthetic */ JSONException f42345e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         h(JSONException jSONException) {
             super(0);
-            this.f42329e = jSONException;
+            this.f42345e = jSONException;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final void b(b bVar, JSONException jSONException) {
-            g2.j jVar = bVar.f42314h;
+            g2.j jVar = bVar.f42330h;
             if (jVar == null) {
                 Intrinsics.throwUninitializedPropertyAccessException("callback");
                 jVar = null;
@@ -340,18 +340,18 @@ public final class b extends m2.b {
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             m1216invoke();
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         /* renamed from: invoke  reason: collision with other method in class */
         public final void m1216invoke() {
-            Executor executor = b.this.f42315i;
+            Executor executor = b.this.f42331i;
             if (executor == null) {
                 Intrinsics.throwUninitializedPropertyAccessException("executor");
                 executor = null;
             }
             final b bVar = b.this;
-            final JSONException jSONException = this.f42329e;
+            final JSONException jSONException = this.f42345e;
             executor.execute(new Runnable() { // from class: o2.h
                 @Override // java.lang.Runnable
                 public final void run() {
@@ -365,17 +365,17 @@ public final class b extends m2.b {
     static final class i extends Lambda implements Function0 {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Throwable f42331e;
+        final /* synthetic */ Throwable f42347e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         i(Throwable th2) {
             super(0);
-            this.f42331e = th2;
+            this.f42347e = th2;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final void b(b bVar, Throwable th2) {
-            g2.j jVar = bVar.f42314h;
+            g2.j jVar = bVar.f42330h;
             if (jVar == null) {
                 Intrinsics.throwUninitializedPropertyAccessException("callback");
                 jVar = null;
@@ -386,18 +386,18 @@ public final class b extends m2.b {
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             m1217invoke();
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         /* renamed from: invoke  reason: collision with other method in class */
         public final void m1217invoke() {
-            Executor executor = b.this.f42315i;
+            Executor executor = b.this.f42331i;
             if (executor == null) {
                 Intrinsics.throwUninitializedPropertyAccessException("executor");
                 executor = null;
             }
             final b bVar = b.this;
-            final Throwable th2 = this.f42331e;
+            final Throwable th2 = this.f42347e;
             executor.execute(new Runnable() { // from class: o2.i
                 @Override // java.lang.Runnable
                 public final void run() {
@@ -415,7 +415,7 @@ public final class b extends m2.b {
 
         /* JADX INFO: Access modifiers changed from: private */
         public static final void b(b bVar) {
-            g2.j jVar = bVar.f42314h;
+            g2.j jVar = bVar.f42330h;
             if (jVar == null) {
                 Intrinsics.throwUninitializedPropertyAccessException("callback");
                 jVar = null;
@@ -426,12 +426,12 @@ public final class b extends m2.b {
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             m1218invoke();
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         /* renamed from: invoke  reason: collision with other method in class */
         public final void m1218invoke() {
-            Executor executor = b.this.f42315i;
+            Executor executor = b.this.f42331i;
             if (executor == null) {
                 Intrinsics.throwUninitializedPropertyAccessException("executor");
                 executor = null;
@@ -472,22 +472,22 @@ public final class b extends m2.b {
             g2.j jVar;
             Intrinsics.checkNotNullParameter(resultData, "resultData");
             b bVar = b.this;
-            a aVar = new a(m2.a.f37787b);
-            Executor executor2 = b.this.f42315i;
+            a aVar = new a(m2.a.f37803b);
+            Executor executor2 = b.this.f42331i;
             if (executor2 == null) {
                 Intrinsics.throwUninitializedPropertyAccessException("executor");
                 executor = null;
             } else {
                 executor = executor2;
             }
-            g2.j jVar2 = b.this.f42314h;
+            g2.j jVar2 = b.this.f42330h;
             if (jVar2 == null) {
                 Intrinsics.throwUninitializedPropertyAccessException("callback");
                 jVar = null;
             } else {
                 jVar = jVar2;
             }
-            if (bVar.f(resultData, aVar, executor, jVar, b.this.f42316j)) {
+            if (bVar.f(resultData, aVar, executor, jVar, b.this.f42332j)) {
                 return;
             }
             b.this.s(resultData.getInt("ACTIVITY_REQUEST_CODE"), i10, (Intent) resultData.getParcelable("RESULT_DATA"));
@@ -498,8 +498,8 @@ public final class b extends m2.b {
     public b(Context context) {
         super(context);
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f42313g = context;
-        this.f42317k = new k(new Handler(Looper.getMainLooper()));
+        this.f42329g = context;
+        this.f42333k = new k(new Handler(Looper.getMainLooper()));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -513,7 +513,7 @@ public final class b extends m2.b {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final void t(b bVar) {
-        g2.j jVar = bVar.f42314h;
+        g2.j jVar = bVar.f42330h;
         if (jVar == null) {
             Intrinsics.throwUninitializedPropertyAccessException("callback");
             jVar = null;
@@ -523,7 +523,7 @@ public final class b extends m2.b {
 
     public r q(g2.f request) {
         Intrinsics.checkNotNullParameter(request, "request");
-        return o2.k.f42349a.d(request, this.f42313g);
+        return o2.k.f42365a.d(request, this.f42329g);
     }
 
     public g2.c r(q response) {
@@ -540,9 +540,9 @@ public final class b extends m2.b {
     public final void s(int i10, int i11, Intent intent) {
         a.C0487a c0487a;
         byte[] bArr;
-        if (i10 != m2.a.f37787b.b()) {
+        if (i10 != m2.a.f37803b.b()) {
             Log.w("CreatePublicKey", "Returned request code " + c0487a.b() + " does not match what was given " + i10);
-        } else if (!m2.b.g(i11, C0529b.f42318d, new c(), this.f42316j)) {
+        } else if (!m2.b.g(i11, C0529b.f42334d, new c(), this.f42332j)) {
             Executor executor = null;
             if (intent != null) {
                 bArr = intent.getByteArrayExtra("FIDO2_CREDENTIAL_EXTRA");
@@ -550,8 +550,8 @@ public final class b extends m2.b {
                 bArr = null;
             }
             if (bArr == null) {
-                if (!CredentialProviderPlayServicesImpl.Companion.a(this.f42316j)) {
-                    Executor executor2 = this.f42315i;
+                if (!CredentialProviderPlayServicesImpl.Companion.a(this.f42332j)) {
+                    Executor executor2 = this.f42331i;
                     if (executor2 == null) {
                         Intrinsics.throwUninitializedPropertyAccessException("executor");
                     } else {
@@ -569,17 +569,17 @@ public final class b extends m2.b {
             }
             q b10 = q.b(bArr);
             Intrinsics.checkNotNullExpressionValue(b10, "deserializeFromBytes(...)");
-            h2.e M = o2.k.f42349a.M(b10);
+            h2.e M = o2.k.f42365a.M(b10);
             if (M != null) {
-                m2.b.e(this.f42316j, new d(M));
+                m2.b.e(this.f42332j, new d(M));
                 return;
             }
             try {
-                m2.b.e(this.f42316j, new e(r(b10)));
+                m2.b.e(this.f42332j, new e(r(b10)));
             } catch (JSONException e10) {
-                m2.b.e(this.f42316j, new f(e10));
+                m2.b.e(this.f42332j, new f(e10));
             } catch (Throwable th2) {
-                m2.b.e(this.f42316j, new g(th2));
+                m2.b.e(this.f42332j, new g(th2));
             }
         }
     }
@@ -588,19 +588,19 @@ public final class b extends m2.b {
         Intrinsics.checkNotNullParameter(request, "request");
         Intrinsics.checkNotNullParameter(callback, "callback");
         Intrinsics.checkNotNullParameter(executor, "executor");
-        this.f42316j = cancellationSignal;
-        this.f42314h = callback;
-        this.f42315i = executor;
+        this.f42332j = cancellationSignal;
+        this.f42330h = callback;
+        this.f42331i = executor;
         try {
             r q10 = q(request);
             if (CredentialProviderPlayServicesImpl.Companion.a(cancellationSignal)) {
                 return;
             }
-            Intent intent = new Intent(this.f42313g, HiddenActivity.class);
+            Intent intent = new Intent(this.f42329g, HiddenActivity.class);
             intent.putExtra("REQUEST_TYPE", q10);
-            c(this.f42317k, intent, "CREATE_PUBLIC_KEY_CREDENTIAL");
+            c(this.f42333k, intent, "CREATE_PUBLIC_KEY_CREDENTIAL");
             try {
-                this.f42313g.startActivity(intent);
+                this.f42329g.startActivity(intent);
             } catch (Exception unused) {
                 m2.b.e(cancellationSignal, new j());
             }

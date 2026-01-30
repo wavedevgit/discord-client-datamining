@@ -3,18 +3,18 @@ package mo;
 public final class h implements tq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final tq.h f39440a;
+    private final tq.h f39456a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final tq.h f39441b;
+    private final tq.h f39457b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final tq.h f39442c;
+    private final tq.h f39458c;
 
     public h(tq.h hVar, tq.h hVar2, tq.h hVar3) {
-        this.f39440a = hVar;
-        this.f39441b = hVar2;
-        this.f39442c = hVar3;
+        this.f39456a = hVar;
+        this.f39457b = hVar2;
+        this.f39458c = hVar3;
     }
 
     public static h a(tq.h hVar, tq.h hVar2, tq.h hVar3) {
@@ -28,6 +28,6 @@ public final class h implements tq.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public g get() {
-        return c((so.r) this.f39440a.get(), (com.squareup.moshi.w) this.f39441b.get(), (vo.b) this.f39442c.get());
+        return c((so.r) this.f39456a.get(), (com.squareup.moshi.w) this.f39457b.get(), (vo.b) this.f39458c.get());
     }
 }

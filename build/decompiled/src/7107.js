@@ -1,259 +1,61 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = require;
-    var2 = exports;
-    var3 = dependencyMap;
-    var _closure1_slot0 = var4;
-    var _closure1_slot1 = var3;
-    var0 = global;
-    var7 = var0.Object;
-    var6 = var7.defineProperty;
-    var5 = {};
-    var8 = true;
-    var5.value = var8;
-    var0 = '__esModule';
-    var0 = var6.bind(var7)(var2, var0, var5);
-    var0 = 0;
-    var3 = var3[var0];
-    var0 = undefined;
-    var3 = var4.bind(var0)(var3);
-    var5 = var3.NativeModules;
-    var3 = var3.Platform;
-    var3 = var5.RNIapIos;
-    var _closure1_slot2 = var3;
-    var4 = var5.RNIapIosSk2;
-    var _closure1_slot3 = var4;
-    var4 = var5.RNIapModule;
-    var _closure1_slot4 = var4;
-    var5 = var5.RNIapAmazonModule;
-    var _closure1_slot5 = var5;
-    var7 = !var5;
-    var6 = !var4;
-    var _closure1_slot6 = var4;
-    var5 = function() { // Original name: checkNativeAndroidAvailable, environment: var1
-        _fun58255: for (var _fun58255_ip = 0;;) switch (_fun58255_ip) {
-            case 0:
-                var1 = _closure1_slot4;
-                if (var1) {
-                    _fun58255_ip = 81;
-                    continue _fun58255
+    _fun58286: for (var _fun58286_ip = 0;;) switch (_fun58286_ip) {
+        case 0:
+            var9 = require;
+            var8 = exports;
+            var7 = dependencyMap;
+            var0 = global;
+            var10 = var0.Object;
+            var2 = var10.defineProperty;
+            var1 = {};
+            var0 = true;
+            var1.value = var0;
+            var0 = '__esModule';
+            var0 = var2.bind(var10)(var8, var0, var1);
+            var2 = 0;
+            var1 = var7[var2];
+            var0 = undefined;
+            var5 = var9.bind(var0)(var1);
+            for (var1 in var5)
+                case 62: {
+                    case 71: var11 = var1;
+                    var10 = var7[var2];
+                    var10 = var9.bind(var0)(var10);
+                    var10 = var10[var11];
+                    var8[var11] = var10;
+                    _fun58286_ip = 62;
+                    continue _fun58286;
                 }
-            case 10:
-                var1 = _closure1_slot5;
-                if (var1) {
-                    _fun58255_ip = 81;
-                    continue _fun58255
+        case 93:
+            var2 = 1;
+            var1 = var7[var2];
+            var5 = var9.bind(var0)(var1);
+            for (var1 in var5)
+                case 113: {
+                    case 122: var11 = var1;
+                    var10 = var7[var2];
+                    var10 = var9.bind(var0)(var10);
+                    var10 = var10[var11];
+                    var8[var11] = var10;
+                    _fun58286_ip = 113;
+                    continue _fun58286;
                 }
-            case 17:
-                var1 = global;
-                var2 = var1.Error;
-                var3 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 1;
-                var1 = var1[var0];
-                var0 = undefined;
-                var0 = var3.bind(var0)(var1);
-                var0 = var0.ErrorCode;
-                var4 = var0.E_IAP_NOT_AVAILABLE;
-                var1 = var2.prototype;
-                var1 = Object.create(var1, {
-                    constructor: {
-                        value: var2
-                    }
-                });
-                var5 = var1;
-                var0 = new var5[var2](var4, var3);
-                var0 = var0 instanceof Object ? var0 : var1;
-                throw var0;
-            case 81:
-                var0 = undefined;
-                return var0;
-        }
-    };
-    var _closure1_slot7 = var5;
-    var4 = function() { // Original name: getAndroidModule, environment: var1
-        _fun58256: for (var _fun58256_ip = 0;;) switch (_fun58256_ip) {
-            case 0:
-                var1 = _closure1_slot7;
-                var0 = undefined;
-                var0 = var1.bind(var0)();
-                var0 = _closure1_slot6;
-                if (var0) {
-                    _fun58256_ip = 34;
-                    continue _fun58256
+        case 144:
+            var2 = 2;
+            var1 = var7[var2];
+            var5 = var9.bind(var0)(var1);
+            for (var1 in var5)
+                case 164: {
+                    case 173: var11 = var1;
+                    var10 = var7[var2];
+                    var10 = var9.bind(var0)(var10);
+                    var10 = var10[var11];
+                    var8[var11] = var10;
+                    _fun58286_ip = 164;
+                    continue _fun58286;
                 }
-            case 20:
-                var1 = _closure1_slot4;
-                if (var1) {
-                    _fun58256_ip = 31;
-                    continue _fun58256
-                }
-            case 27:
-                var1 = _closure1_slot5;
-            case 31:
-                var0 = var1;
-            case 34:
-                return var0;
-        }
-    };
-    var _closure1_slot8 = var4;
-    var _closure1_slot9 = var3;
-    var3 = function() { // Original name: isStorekit2Available, environment: var1
-        var0 = false;
-        return var0;
-    };
-    var _closure1_slot10 = var3;
-    var9 = false;
-    var2.isIos = var9;
-    var2.isAndroid = var8;
-    var7 = !var7;
-    var2.isAmazon = var7;
-    var6 = !var6;
-    var2.isPlay = var6;
-    var6 = function(arg0) { // Original name: setAndroidNativeModule, environment: var1
-        var0 = arg0;
-        _closure1_slot6 = var0;
-        var0 = undefined;
-        return var0;
-    };
-    var2.setAndroidNativeModule = var6;
-    var2.checkNativeAndroidAvailable = var5;
-    var2.getAndroidModule = var4;
-    var4 = function() { // Original name: getAndroidModuleType, environment: var1
-        _fun58259: for (var _fun58259_ip = 0;;) switch (_fun58259_ip) {
-            case 0:
-                var2 = _closure1_slot8;
-                var1 = undefined;
-                var1 = var2.bind(var1)();
-                var2 = _closure1_slot4;
-                if (!(var2 !== var1)) {
-                    _fun58259_ip = 39;
-                    continue _fun58259
-                }
-            case 21:
-                var0 = _closure1_slot5;
-                if (!(var0 !== var1)) {
-                    _fun58259_ip = 33;
-                    continue _fun58259
-                }
-            case 29:
-                var0 = null;
-                return var0;
-            case 33:
-                var0 = 'amazon';
-                return var0;
-            case 39:
-                var0 = 'android';
-                return var0;
-        }
-    };
-    var2.getAndroidModuleType = var4;
-    var4 = function() { // Original name: getNativeModule, environment: var1
-        var1 = _closure1_slot8;
-        var0 = undefined;
-        var0 = var1.bind(var0)();
-        return var0;
-    };
-    var2.getNativeModule = var4;
-    var2.isStorekit2Available = var3;
-    var3 = function() { // Original name: isIosStorekit2, environment: var1
-        var0 = false;
-        return var0;
-    };
-    var2.isIosStorekit2 = var3;
-    var3 = function(arg0) { // Original name: setIosNativeModule, environment: var1
-        var0 = arg0;
-        _closure1_slot9 = var0;
-        var0 = undefined;
-        return var0;
-    };
-    var2.setIosNativeModule = var3;
-    var3 = function() { // Original name: storekit2Mode, environment: var1
-        var1 = _closure1_slot3;
-        _closure1_slot9 = var1;
-        var1 = _closure1_slot10;
-        var0 = undefined;
-        var0 = var1.bind(var0)();
-        var0 = true;
-        return var0;
-    };
-    var2.storekit2Mode = var3;
-    var3 = function() { // Original name: storekit1Mode, environment: var1
-        var1 = _closure1_slot2;
-        _closure1_slot9 = var1;
-        var1 = _closure1_slot10;
-        var0 = undefined;
-        var0 = var1.bind(var0)();
-        var0 = false;
-        return var0;
-    };
-    var2.storekit1Mode = var3;
-    var3 = function() { // Original name: storekitHybridMode, environment: var1
-        var2 = _closure1_slot10;
-        var0 = undefined;
-        var0 = var2.bind(var0)();
-        var0 = _closure1_slot2;
-        _closure1_slot9 = var0;
-        var0 = global;
-        var2 = var0.console;
-        var1 = var2.info;
-        var0 = 'Using Storekit 1';
-        var0 = var1.bind(var2)(var0);
-        var0 = true;
-        return var0;
-    };
-    var2.storekitHybridMode = var3;
-    var1 = function() { // Original name: getIosModule, environment: var1
-        _fun58266: for (var _fun58266_ip = 0;;) switch (_fun58266_ip) {
-            case 0:
-                var0 = _closure1_slot2;
-                if (var0) {
-                    _fun58266_ip = 82;
-                    continue _fun58266
-                }
-            case 10:
-                var0 = _closure1_slot10;
-                var4 = undefined;
-                var0 = var0.bind(var4)();
-                var0 = global;
-                var3 = var0.Error;
-                var1 = _closure1_slot0;
-                var5 = _closure1_slot1;
-                var0 = 1;
-                var0 = var5[var0];
-                var0 = var1.bind(var4)(var0);
-                var0 = var0.ErrorCode;
-                var6 = var0.E_IAP_NOT_AVAILABLE;
-                var1 = var3.prototype;
-                var1 = Object.create(var1, {
-                    constructor: {
-                        value: var3
-                    }
-                });
-                var7 = var1;
-                var0 = new var7[var3](var6, var5);
-                var0 = var0 instanceof Object ? var0 : var1;
-                throw var0;
-            case 82:
-                var0 = _closure1_slot9;
-                if (var0) {
-                    _fun58266_ip = 103;
-                    continue _fun58266
-                }
-            case 89:
-                var1 = _closure1_slot3;
-                if (var1) {
-                    _fun58266_ip = 100;
-                    continue _fun58266
-                }
-            case 96:
-                var1 = _closure1_slot2;
-            case 100:
-                var0 = var1;
-            case 103:
-                return var0;
-        }
-    };
-    var2.getIosModule = var1;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 7108]);
+        case 195:
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7108, 7109, 7110]);

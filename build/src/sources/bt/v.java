@@ -15,7 +15,7 @@ public final class v implements KSerializer {
     public static final v f7832a = new v();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f7833b = zs.j.e("kotlinx.serialization.json.JsonNull", k.b.f56101a, new SerialDescriptor[0], null, 8, null);
+    private static final SerialDescriptor f7833b = zs.j.e("kotlinx.serialization.json.JsonNull", k.b.f56117a, new SerialDescriptor[0], null, 8, null);
 
     private v() {
     }

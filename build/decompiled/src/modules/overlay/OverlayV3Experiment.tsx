@@ -18,13 +18,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot11 = var12;
     var10 = function(arg0) { // Original name: getOverlayV3OneClickGoLive, environment: var1
-        _fun95706: for (var _fun95706_ip = 0;;) switch (_fun95706_ip) {
+        _fun95954: for (var _fun95954_ip = 0;;) switch (_fun95954_ip) {
             case 0:
                 var4 = arguments[1];
                 var0 = undefined;
                 if (!(var4 === var0)) {
-                    _fun95706_ip = 11;
-                    continue _fun95706
+                    _fun95954_ip = 11;
+                    continue _fun95954
                 }
             case 9:
                 var4 = true;
@@ -42,13 +42,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot12 = var10;
     var7 = function(arg0) { // Original name: getOverlayNegativeWidgetConfig, environment: var1
-        _fun95707: for (var _fun95707_ip = 0;;) switch (_fun95707_ip) {
+        _fun95955: for (var _fun95955_ip = 0;;) switch (_fun95955_ip) {
             case 0:
                 var4 = arguments[1];
                 var0 = undefined;
                 if (!(var4 === var0)) {
-                    _fun95707_ip = 11;
-                    continue _fun95707
+                    _fun95955_ip = 11;
+                    continue _fun95955
                 }
             case 9:
                 var4 = true;
@@ -66,13 +66,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot13 = var7;
     var5 = function(arg0) { // Original name: getOverlayWelcomeNotificationConfig, environment: var1
-        _fun95708: for (var _fun95708_ip = 0;;) switch (_fun95708_ip) {
+        _fun95956: for (var _fun95956_ip = 0;;) switch (_fun95956_ip) {
             case 0:
                 var4 = arguments[1];
                 var0 = undefined;
                 if (!(var4 === var0)) {
-                    _fun95708_ip = 11;
-                    continue _fun95708
+                    _fun95956_ip = 11;
+                    continue _fun95956
                 }
             case 9:
                 var4 = true;
@@ -90,13 +90,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot14 = var5;
     var3 = function(arg0) { // Original name: getOverlayBugReporterConfig, environment: var1
-        _fun95709: for (var _fun95709_ip = 0;;) switch (_fun95709_ip) {
+        _fun95957: for (var _fun95957_ip = 0;;) switch (_fun95957_ip) {
             case 0:
                 var4 = arguments[1];
                 var0 = undefined;
                 if (!(var4 === var0)) {
-                    _fun95709_ip = 11;
-                    continue _fun95709
+                    _fun95957_ip = 11;
+                    continue _fun95957
                 }
             case 9:
                 var4 = true;
@@ -497,13 +497,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useOverlayRafManager = var17;
     var17 = function(arg0) { // Original name: getUseOverlayRafManager, environment: var1
-        _fun95711: for (var _fun95711_ip = 0;;) switch (_fun95711_ip) {
+        _fun95959: for (var _fun95959_ip = 0;;) switch (_fun95959_ip) {
             case 0:
                 var4 = arguments[1];
                 var0 = undefined;
                 if (!(var4 === var0)) {
-                    _fun95711_ip = 11;
-                    continue _fun95711
+                    _fun95959_ip = 11;
+                    continue _fun95959
                 }
             case 9:
                 var4 = true;
@@ -522,13 +522,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getUseOverlayRafManager = var17;
     var2.OverlayRenderTimeoutExperiment = var16;
     var16 = function(arg0) { // Original name: getOverlayRenderTimeout, environment: var1
-        _fun95712: for (var _fun95712_ip = 0;;) switch (_fun95712_ip) {
+        _fun95960: for (var _fun95960_ip = 0;;) switch (_fun95960_ip) {
             case 0:
                 var4 = arguments[1];
                 var0 = undefined;
                 if (!(var4 === var0)) {
-                    _fun95712_ip = 11;
-                    continue _fun95712
+                    _fun95960_ip = 11;
+                    continue _fun95960
                 }
             case 9:
                 var4 = true;
@@ -558,13 +558,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useOverlayDefaultDisable = var15;
     var15 = function(arg0) { // Original name: getOverlayDefaultDisable, environment: var1
-        _fun95714: for (var _fun95714_ip = 0;;) switch (_fun95714_ip) {
+        _fun95962: for (var _fun95962_ip = 0;;) switch (_fun95962_ip) {
             case 0:
                 var4 = arguments[1];
                 var0 = undefined;
                 if (!(var4 === var0)) {
-                    _fun95714_ip = 11;
-                    continue _fun95714
+                    _fun95962_ip = 11;
+                    continue _fun95962
                 }
             case 9:
                 var4 = true;
@@ -599,13 +599,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getOverlayV3OneClickGoLive = var10;
     var2.OverlayDefaultKeybindOverrideExperiment = var9;
     var9 = function(arg0) { // Original name: getOverlayDefaultKeybind, environment: var1
-        _fun95716: for (var _fun95716_ip = 0;;) switch (_fun95716_ip) {
+        _fun95964: for (var _fun95964_ip = 0;;) switch (_fun95964_ip) {
             case 0:
                 var4 = arguments[1];
                 var0 = undefined;
                 if (!(var4 === var0)) {
-                    _fun95716_ip = 11;
-                    continue _fun95716
+                    _fun95964_ip = 11;
+                    continue _fun95964
                 }
             case 9:
                 var4 = true;
@@ -624,7 +624,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getOverlayDefaultKeybind = var9;
     var2.OverlayNegativeWidgetExperiment = var8;
     var8 = function(arg0) { // Original name: getOverlayNegativeWidgetExperimentBucket, environment: var1
-        _fun95717: for (var _fun95717_ip = 0;;) switch (_fun95717_ip) {
+        _fun95965: for (var _fun95965_ip = 0;;) switch (_fun95965_ip) {
             case 0:
                 var4 = _closure1_slot13;
                 var5 = undefined;
@@ -642,8 +642,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.defaultConfig;
                 var2 = var3.bind(var5)(var2, var4);
                 if (var2) {
-                    _fun95717_ip = 148;
-                    continue _fun95717
+                    _fun95965_ip = 148;
+                    continue _fun95965
                 }
             case 71:
                 var1 = _closure1_slot8;
@@ -668,8 +668,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0 == var1;
                 var0 = 'control';
                 if (var2) {
-                    _fun95717_ip = 146;
-                    continue _fun95717
+                    _fun95965_ip = 146;
+                    continue _fun95965
                 }
             case 117:
                 var3 = var1.id;

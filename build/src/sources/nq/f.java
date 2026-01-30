@@ -3,5 +3,5 @@ package nq;
 public abstract class f {
 
     /* renamed from: a  reason: collision with root package name */
-    public static int f42116a = 2131689473;
+    public static int f42132a = 2131689473;
 }

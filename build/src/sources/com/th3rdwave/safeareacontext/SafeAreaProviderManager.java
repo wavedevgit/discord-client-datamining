@@ -57,7 +57,7 @@ public final class SafeAreaProviderManager extends ViewGroupManager<f> implement
         @Override // kotlin.jvm.functions.Function3
         public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3) {
             a((f) obj, (com.th3rdwave.safeareacontext.a) obj2, (c) obj3);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
     }
 

@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
     var0 = function(arg0) { // Original name: AppLauncherActionSheet, environment: var1
-        _fun108679: for (var _fun108679_ip = 0;;) switch (_fun108679_ip) {
+        _fun108941: for (var _fun108941_ip = 0;;) switch (_fun108941_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.chatInputRef;
@@ -73,7 +73,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.useRef;
                 var0 = {};
                 var6 = function() { // Original name: getApplicationCommandManager, environment: var5
-                    _fun108681: for (var _fun108681_ip = 0;;) switch (_fun108681_ip) {
+                    _fun108943: for (var _fun108943_ip = 0;;) switch (_fun108943_ip) {
                         case 0:
                             var0 = _closure2_slot0;
                             var2 = var0.current;
@@ -81,8 +81,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var1 = var0 == var2;
                             var0 = undefined;
                             if (var1) {
-                                _fun108681_ip = 33;
-                                continue _fun108681
+                                _fun108943_ip = 33;
+                                continue _fun108943
                             }
                         case 23:
                             var1 = var2.getApplicationCommandManager;
@@ -93,14 +93,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var0.getApplicationCommandManager = var6;
                 var6 = function() { // Original name: closeCustomKeyboard, environment: var5
-                    _fun108682: for (var _fun108682_ip = 0;;) switch (_fun108682_ip) {
+                    _fun108944: for (var _fun108944_ip = 0;;) switch (_fun108944_ip) {
                         case 0:
                             var0 = _closure2_slot2;
                             var1 = var0.current;
                             var0 = null;
                             if (!(var0 != var1)) {
-                                _fun108682_ip = 28;
-                                continue _fun108682
+                                _fun108944_ip = 28;
+                                continue _fun108944
                             }
                         case 18:
                             var0 = var1.closeActionSheet;
@@ -112,14 +112,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var0.closeCustomKeyboard = var6;
                 var5 = function() { // Original name: openCustomKeyboard, environment: var5
-                    _fun108683: for (var _fun108683_ip = 0;;) switch (_fun108683_ip) {
+                    _fun108945: for (var _fun108945_ip = 0;;) switch (_fun108945_ip) {
                         case 0:
                             var0 = _closure2_slot2;
                             var1 = var0.current;
                             var0 = null;
                             if (!(var0 != var1)) {
-                                _fun108683_ip = 28;
-                                continue _fun108683
+                                _fun108945_ip = 28;
+                                continue _fun108945
                             }
                         case 18:
                             var0 = var1.expandActionSheet;
@@ -168,8 +168,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var8 == var9;
                 var8 = undefined;
                 if (var10) {
-                    _fun108679_ip = 448;
-                    continue _fun108679
+                    _fun108941_ip = 448;
+                    continue _fun108941
                 }
             case 443:
                 var8 = var9.name;
@@ -241,13 +241,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3[0] = var7;
         var3[1] = var6;
         var2 = function() { // Environment: var2
-            _fun108685: for (var _fun108685_ip = 0;;) switch (_fun108685_ip) {
+            _fun108947: for (var _fun108947_ip = 0;;) switch (_fun108947_ip) {
                 case 0:
                     var1 = _closure2_slot1;
                     var0 = null;
                     if (!var1) {
-                        _fun108685_ip = 142;
-                        continue _fun108685
+                        _fun108947_ip = 142;
+                        continue _fun108947
                     }
                 case 17:
                     var4 = _closure1_slot6;
@@ -301,4 +301,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useAppLauncherActionSheet = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 1468, 33, 3677, 7693, 7694, 7695, 4887, 13887, 11645, 5156, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 1468, 33, 3679, 7696, 7697, 7698, 4893, 13913, 11667, 5162, 2]);

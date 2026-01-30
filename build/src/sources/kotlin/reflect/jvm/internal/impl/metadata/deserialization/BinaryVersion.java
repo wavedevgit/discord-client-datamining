@@ -15,19 +15,19 @@ public abstract class BinaryVersion {
     public static final Companion Companion = new Companion(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final int[] f34992a;
+    private final int[] f35008a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f34993b;
+    private final int f35009b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f34994c;
+    private final int f35010c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f34995d;
+    private final int f35011d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f34996e;
+    private final List f35012e;
 
     @SourceDebugExtension({"SMAP\nBinaryVersion.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BinaryVersion.kt\norg/jetbrains/kotlin/metadata/deserialization/BinaryVersion$Companion\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 ArraysJVM.kt\nkotlin/collections/ArraysKt__ArraysJVMKt\n*L\n1#1,101:1\n1563#2:102\n1634#2,3:103\n37#3:106\n36#3,3:107\n*S KotlinDebug\n*F\n+ 1 BinaryVersion.kt\norg/jetbrains/kotlin/metadata/deserialization/BinaryVersion$Companion\n*L\n97#1:102\n97#1:103,3\n98#1:106\n98#1:107,3\n*E\n"})
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -45,23 +45,23 @@ public abstract class BinaryVersion {
         int i11;
         List l10;
         Intrinsics.checkNotNullParameter(numbers, "numbers");
-        this.f34992a = numbers;
+        this.f35008a = numbers;
         Integer b02 = i.b0(numbers, 0);
         if (b02 != null) {
             i10 = b02.intValue();
         } else {
             i10 = -1;
         }
-        this.f34993b = i10;
+        this.f35009b = i10;
         Integer b03 = i.b0(numbers, 1);
         if (b03 != null) {
             i11 = b03.intValue();
         } else {
             i11 = -1;
         }
-        this.f34994c = i11;
+        this.f35010c = i11;
         Integer b04 = i.b0(numbers, 2);
-        this.f34995d = b04 != null ? b04.intValue() : -1;
+        this.f35011d = b04 != null ? b04.intValue() : -1;
         if (numbers.length > 3) {
             if (numbers.length <= 1024) {
                 l10 = CollectionsKt.h1(i.d(numbers).subList(3, numbers.length));
@@ -71,19 +71,19 @@ public abstract class BinaryVersion {
         } else {
             l10 = CollectionsKt.l();
         }
-        this.f34996e = l10;
+        this.f35012e = l10;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final boolean a(BinaryVersion ourVersion) {
         Intrinsics.checkNotNullParameter(ourVersion, "ourVersion");
-        int i10 = this.f34993b;
+        int i10 = this.f35009b;
         if (i10 == 0) {
-            if (ourVersion.f34993b != 0 || this.f34994c != ourVersion.f34994c) {
+            if (ourVersion.f35009b != 0 || this.f35010c != ourVersion.f35010c) {
                 return false;
             }
             return true;
-        } else if (i10 != ourVersion.f34993b || this.f34994c > ourVersion.f34994c) {
+        } else if (i10 != ourVersion.f35009b || this.f35010c > ourVersion.f35010c) {
             return false;
         } else {
             return true;
@@ -93,7 +93,7 @@ public abstract class BinaryVersion {
     public boolean equals(Object obj) {
         if (obj != null && Intrinsics.areEqual(getClass(), obj.getClass())) {
             BinaryVersion binaryVersion = (BinaryVersion) obj;
-            if (this.f34993b == binaryVersion.f34993b && this.f34994c == binaryVersion.f34994c && this.f34995d == binaryVersion.f34995d && Intrinsics.areEqual(this.f34996e, binaryVersion.f34996e)) {
+            if (this.f35009b == binaryVersion.f35009b && this.f35010c == binaryVersion.f35010c && this.f35011d == binaryVersion.f35011d && Intrinsics.areEqual(this.f35012e, binaryVersion.f35012e)) {
                 return true;
             }
             return false;
@@ -102,38 +102,38 @@ public abstract class BinaryVersion {
     }
 
     public final int getMajor() {
-        return this.f34993b;
+        return this.f35009b;
     }
 
     public final int getMinor() {
-        return this.f34994c;
+        return this.f35010c;
     }
 
     public int hashCode() {
-        int i10 = this.f34993b;
-        int i11 = i10 + (i10 * 31) + this.f34994c;
-        int i12 = i11 + (i11 * 31) + this.f34995d;
-        return i12 + (i12 * 31) + this.f34996e.hashCode();
+        int i10 = this.f35009b;
+        int i11 = i10 + (i10 * 31) + this.f35010c;
+        int i12 = i11 + (i11 * 31) + this.f35011d;
+        return i12 + (i12 * 31) + this.f35012e.hashCode();
     }
 
     public final boolean isAtLeast(@NotNull BinaryVersion version) {
         Intrinsics.checkNotNullParameter(version, "version");
-        return isAtLeast(version.f34993b, version.f34994c, version.f34995d);
+        return isAtLeast(version.f35009b, version.f35010c, version.f35011d);
     }
 
     public final boolean isAtMost(int i10, int i11, int i12) {
-        int i13 = this.f34993b;
+        int i13 = this.f35009b;
         if (i13 < i10) {
             return true;
         }
         if (i13 > i10) {
             return false;
         }
-        int i14 = this.f34994c;
+        int i14 = this.f35010c;
         if (i14 < i11) {
             return true;
         }
-        if (i14 <= i11 && this.f34995d <= i12) {
+        if (i14 <= i11 && this.f35011d <= i12) {
             return true;
         }
         return false;
@@ -141,7 +141,7 @@ public abstract class BinaryVersion {
 
     @NotNull
     public final int[] toArray() {
-        return this.f34992a;
+        return this.f35008a;
     }
 
     @NotNull
@@ -161,17 +161,17 @@ public abstract class BinaryVersion {
     }
 
     public final boolean isAtLeast(int i10, int i11, int i12) {
-        int i13 = this.f34993b;
+        int i13 = this.f35009b;
         if (i13 > i10) {
             return true;
         }
         if (i13 < i10) {
             return false;
         }
-        int i14 = this.f34994c;
+        int i14 = this.f35010c;
         if (i14 > i11) {
             return true;
         }
-        return i14 >= i11 && this.f34995d >= i12;
+        return i14 >= i11 && this.f35011d >= i12;
     }
 }

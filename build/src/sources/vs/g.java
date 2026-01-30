@@ -8,16 +8,16 @@ public interface g {
     public static final class a implements g {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Object f51901a;
+        private final Object f51917a;
 
         public a(Object conflicting) {
             Intrinsics.checkNotNullParameter(conflicting, "conflicting");
-            this.f51901a = conflicting;
+            this.f51917a = conflicting;
         }
 
         @Override // vs.g
         public String a() {
-            return "attempted to overwrite the existing value '" + this.f51901a + '\'';
+            return "attempted to overwrite the existing value '" + this.f51917a + '\'';
         }
     }
 
@@ -25,7 +25,7 @@ public interface g {
     public static final class b implements g {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final b f51902a = new b();
+        public static final b f51918a = new b();
 
         private b() {
         }
@@ -40,15 +40,15 @@ public interface g {
     public static final class c implements g {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f51903a;
+        private final int f51919a;
 
         public c(int i10) {
-            this.f51903a = i10;
+            this.f51919a = i10;
         }
 
         @Override // vs.g
         public String a() {
-            return "expected at least " + this.f51903a + " digits";
+            return "expected at least " + this.f51919a + " digits";
         }
     }
 
@@ -56,15 +56,15 @@ public interface g {
     public static final class d implements g {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f51904a;
+        private final int f51920a;
 
         public d(int i10) {
-            this.f51904a = i10;
+            this.f51920a = i10;
         }
 
         @Override // vs.g
         public String a() {
-            return "expected at most " + this.f51904a + " digits";
+            return "expected at most " + this.f51920a + " digits";
         }
     }
 
@@ -72,16 +72,16 @@ public interface g {
     public static final class e implements g {
 
         /* renamed from: a  reason: collision with root package name */
-        private final String f51905a;
+        private final String f51921a;
 
         public e(String expected) {
             Intrinsics.checkNotNullParameter(expected, "expected");
-            this.f51905a = expected;
+            this.f51921a = expected;
         }
 
         @Override // vs.g
         public String a() {
-            return "expected '" + this.f51905a + '\'';
+            return "expected '" + this.f51921a + '\'';
         }
     }
 

@@ -22,7 +22,7 @@ public final class ContentNodeSerializer implements KSerializer {
     @Override // kotlinx.serialization.KSerializer, xs.o, kotlinx.serialization.DeserializationStrategy
     @NotNull
     public SerialDescriptor getDescriptor() {
-        return zs.j.b("ContentNode", e.i.f56091a);
+        return zs.j.b("ContentNode", e.i.f56107a);
     }
 
     @Override // kotlinx.serialization.DeserializationStrategy

@@ -69,14 +69,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = '_processEntry';
         var0.key = var5;
         var4 = function(arg0) { // Original name: _processEntry, environment: var4
-            _fun10788: for (var _fun10788_ip = 0;;) switch (_fun10788_ip) {
+            _fun10789: for (var _fun10789_ip = 0;;) switch (_fun10789_ip) {
                 case 0:
                     var3 = arg0;
                     var2 = this;
                     var0 = var3.hadRecentInput;
                     if (var0) {
-                        _fun10788_ip = 212;
-                        continue _fun10788
+                        _fun10789_ip = 212;
+                        continue _fun10789
                     }
                 case 18:
                     var1 = var2._sessionEntries;
@@ -90,18 +90,18 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = var4[var1];
                     var4 = var2._sessionValue;
                     if (!var4) {
-                        _fun10788_ip = 125;
-                        continue _fun10788
+                        _fun10789_ip = 125;
+                        continue _fun10789
                     }
                 case 67:
                     if (!var0) {
-                        _fun10788_ip = 125;
-                        continue _fun10788
+                        _fun10789_ip = 125;
+                        continue _fun10789
                     }
                 case 70:
                     if (!var1) {
-                        _fun10788_ip = 125;
-                        continue _fun10788
+                        _fun10789_ip = 125;
+                        continue _fun10789
                     }
                 case 73:
                     var4 = var3.startTime;
@@ -109,8 +109,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var4 = var4 - var1;
                     var1 = 1000;
                     if (!(var4 < var1)) {
-                        _fun10788_ip = 125;
-                        continue _fun10788
+                        _fun10789_ip = 125;
+                        continue _fun10789
                     }
                 case 99:
                     var1 = var3.startTime;
@@ -118,8 +118,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = var1 - var0;
                     var0 = 5000;
                     if (!(!(var1 < var0))) {
-                        _fun10788_ip = 152;
-                        continue _fun10788
+                        _fun10789_ip = 152;
+                        continue _fun10789
                     }
                 case 125:
                     var0 = var3.value;
@@ -127,8 +127,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = new Array(1);
                     var0[0] = var3;
                     var2._sessionEntries = var0;
-                    _fun10788_ip = 189;
-                    continue _fun10788;
+                    _fun10789_ip = 189;
+                    continue _fun10789;
                 case 152:
                     var1 = var2._sessionValue;
                     var0 = var3.value;
@@ -141,8 +141,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = var2._onAfterProcessingUnexpectedShift;
                     var0 = null;
                     if (!(var0 != var1)) {
-                        _fun10788_ip = 212;
-                        continue _fun10788
+                        _fun10789_ip = 212;
+                        continue _fun10789
                     }
                 case 201:
                     var0 = var1.call;

@@ -5,7 +5,7 @@ import js.j0;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
 public final class b0 extends js.b0 implements j0 {
     public b0(int i10) {
-        super(1, Integer.MAX_VALUE, is.a.f31126e);
+        super(1, Integer.MAX_VALUE, is.a.f31142e);
         b(Integer.valueOf(i10));
     }
 

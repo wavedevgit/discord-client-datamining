@@ -6,10 +6,10 @@ import gs.z0;
 public final class f extends z0 {
 
     /* renamed from: p  reason: collision with root package name */
-    public final e f36327p;
+    public final e f36343p;
 
     public f(e eVar) {
-        this.f36327p = eVar;
+        this.f36343p = eVar;
     }
 
     @Override // gs.z0
@@ -19,7 +19,7 @@ public final class f extends z0 {
 
     @Override // gs.z0
     public void w(Throwable th2) {
-        e eVar = this.f36327p;
+        e eVar = this.f36343p;
         eVar.O(eVar.z(u()));
     }
 }

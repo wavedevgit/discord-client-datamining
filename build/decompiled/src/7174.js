@@ -1,40 +1,95 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var2 = global;
-    var5 = var2.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var2 = true;
-    var3.value = var2;
-    var2 = '__esModule';
-    var2 = var4.bind(var5)(var1, var2, var3);
-    var0 = function() { // Original name: generatePropagationContext, environment: var0
-        var0 = {};
-        var3 = _closure1_slot0;
-        var4 = _closure1_slot1;
-        var1 = 0;
-        var5 = var4[var1];
-        var2 = undefined;
-        var6 = var3.bind(var2)(var5);
-        var5 = var6.uuid4;
-        var5 = var5.bind(var6)();
-        var0.traceId = var5;
-        var1 = var4[var1];
-        var2 = var3.bind(var2)(var1);
-        var1 = var2.uuid4;
-        var3 = var1.bind(var2)();
-        var2 = var3.substring;
-        var1 = 16;
-        var1 = var2.bind(var3)(var1);
-        var0.spanId = var1;
+    var4 = require;
+    var2 = exports;
+    var3 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var3;
+    var0 = function() { // Original name: _asyncOptionalChainDelete2, environment: var1
+        var4 = undefined;
+        var0 = undefined;
+        var3 = _closure1_slot2;
+        var2 = function*(arg0) { // Environment: var2
+            var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
+                _fun58872: for (var _fun58872_ip = 0;;) switch (_fun58872_ip) {
+                    case 0:
+                        StartGenerator();
+                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
+                        if (var1) {
+                            _fun58872_ip = 74;
+                            continue _fun58872
+                        }
+                    case 7:
+                        var3 = _closure1_slot0;
+                        var2 = _closure1_slot1;
+                        var1 = 1;
+                        var2 = var2[var1];
+                        var1 = undefined;
+                        var3 = var3.bind(var1)(var2);
+                        var2 = var3._asyncOptionalChain;
+                        var1 = arg0;
+                        var1 = var2.bind(var3)(var1);
+                        SaveGenerator(address = 50);
+                    case 48:
+                        return var1;
+                    case 50:
+                        ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
+                        if (var2) {
+                            _fun58872_ip = 71;
+                            continue _fun58872
+                        }
+                    case 56:
+                        var2 = null;
+                        var2 = var2 == var1;
+                        if (var2) {
+                            _fun58872_ip = 68;
+                            continue _fun58872
+                        }
+                    case 65:
+                        var2 = var1;
+                    case 68:
+                        return var2;
+                    case 71:
+                        return var1;
+                    case 74:
+                        return var0;
+                }
+            };
+            return var0;
+        };
+        var3 = var3.bind(var4)(var2);
+        _closure1_slot3 = var3;
+        var2 = var3.apply;
+        var0 = arguments;
+        var1 = var0;
+        var0 = this;
+        var0 = var2.bind(var3)(var0, var1);
         return var0;
     };
-    var1.generatePropagationContext = var0;
+    var _closure1_slot3 = var0;
+    var0 = 0;
+    var3 = var3[var0];
     var0 = undefined;
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot2 = var3;
+    var3 = global;
+    var6 = var3.Object;
+    var5 = var6.defineProperty;
+    var4 = {};
+    var3 = true;
+    var4.value = var3;
+    var3 = '__esModule';
+    var3 = var5.bind(var6)(var2, var3, var4);
+    var1 = function(arg0) { // Original name: _asyncOptionalChainDelete, environment: var1
+        var0 = undefined;
+        var3 = _closure1_slot3;
+        var2 = var3.apply;
+        var0 = arguments;
+        var1 = var0;
+        var0 = this;
+        var0 = var2.bind(var3)(var0, var1);
+        return var0;
+    };
+    var2._asyncOptionalChainDelete = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7149]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 7173]);

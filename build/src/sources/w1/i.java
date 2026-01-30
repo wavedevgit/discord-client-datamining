@@ -8,19 +8,19 @@ import java.lang.reflect.Method;
 public abstract class i {
 
     /* renamed from: a  reason: collision with root package name */
-    private static long f52033a;
+    private static long f52049a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static Method f52034b;
+    private static Method f52050b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static Method f52035c;
+    private static Method f52051c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static Method f52036d;
+    private static Method f52052d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static Method f52037e;
+    private static Method f52053e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static class a {
@@ -32,13 +32,13 @@ public abstract class i {
     static {
         if (Build.VERSION.SDK_INT < 29) {
             try {
-                f52033a = Trace.class.getField("TRACE_TAG_APP").getLong(null);
+                f52049a = Trace.class.getField("TRACE_TAG_APP").getLong(null);
                 Class cls = Long.TYPE;
-                f52034b = Trace.class.getMethod("isTagEnabled", cls);
+                f52050b = Trace.class.getMethod("isTagEnabled", cls);
                 Class cls2 = Integer.TYPE;
-                f52035c = Trace.class.getMethod("asyncTraceBegin", cls, String.class, cls2);
-                f52036d = Trace.class.getMethod("asyncTraceEnd", cls, String.class, cls2);
-                f52037e = Trace.class.getMethod("traceCounter", cls, String.class, cls2);
+                f52051c = Trace.class.getMethod("asyncTraceBegin", cls, String.class, cls2);
+                f52052d = Trace.class.getMethod("asyncTraceEnd", cls, String.class, cls2);
+                f52053e = Trace.class.getMethod("traceCounter", cls, String.class, cls2);
             } catch (Exception e10) {
                 Log.i("TraceCompat", "Unable to initialize via reflection.", e10);
             }
@@ -58,7 +58,7 @@ public abstract class i {
             return a.a();
         }
         try {
-            return ((Boolean) f52034b.invoke(null, Long.valueOf(f52033a))).booleanValue();
+            return ((Boolean) f52050b.invoke(null, Long.valueOf(f52049a))).booleanValue();
         } catch (Exception unused) {
             Log.v("TraceCompat", "Unable to invoke isTagEnabled() via reflection.");
             return false;

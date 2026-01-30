@@ -8,7 +8,7 @@ import java.util.Map;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ik.c f41975a = new ik.c(ik.a.f28563o);
+    private final ik.c f41991a = new ik.c(ik.a.f28579o);
 
     private int a(byte[] bArr, int i10, int i11, int i12, int i13) {
         int i14;
@@ -25,7 +25,7 @@ public final class c {
             }
         }
         try {
-            int a10 = this.f41975a.a(iArr, i12 / i14);
+            int a10 = this.f41991a.a(iArr, i12 / i14);
             for (int i17 = 0; i17 < i11; i17++) {
                 if (i13 == 0 || i17 % 2 == i13 - 1) {
                     bArr[i17 + i10] = (byte) iArr[i17 / i14];

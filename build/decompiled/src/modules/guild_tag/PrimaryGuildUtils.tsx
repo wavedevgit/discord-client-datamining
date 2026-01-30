@@ -20,27 +20,27 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_tag/PrimaryGuildUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0, arg1) { // Original name: isUserPrimaryGuildEqual, environment: var1
-        _fun18083: for (var _fun18083_ip = 0;;) switch (_fun18083_ip) {
+        _fun18084: for (var _fun18084_ip = 0;;) switch (_fun18084_ip) {
             case 0:
                 var2 = arg0;
                 var1 = arg1;
                 var0 = null;
                 if (!(var0 != var2)) {
-                    _fun18083_ip = 89;
-                    continue _fun18083
+                    _fun18084_ip = 89;
+                    continue _fun18084
                 }
             case 12:
                 if (!(var0 != var1)) {
-                    _fun18083_ip = 89;
-                    continue _fun18083
+                    _fun18084_ip = 89;
+                    continue _fun18084
                 }
             case 16:
                 var3 = var2.identityGuildId;
                 var0 = var1.identityGuildId;
                 var0 = var3 === var0;
                 if (!var0) {
-                    _fun18083_ip = 51;
-                    continue _fun18083
+                    _fun18084_ip = 51;
+                    continue _fun18084
                 }
             case 35:
                 var4 = var2.identityEnabled;
@@ -48,8 +48,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4 === var3;
             case 51:
                 if (!var0) {
-                    _fun18083_ip = 68;
-                    continue _fun18083
+                    _fun18084_ip = 68;
+                    continue _fun18084
                 }
             case 54:
                 var4 = var2.tag;
@@ -57,16 +57,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var4 === var3;
             case 68:
                 if (!var0) {
-                    _fun18083_ip = 87;
-                    continue _fun18083
+                    _fun18084_ip = 87;
+                    continue _fun18084
                 }
             case 71:
                 var4 = var2.badge;
                 var3 = var1.badge;
                 var0 = var4 === var3;
             case 87:
-                _fun18083_ip = 93;
-                continue _fun18083;
+                _fun18084_ip = 93;
+                continue _fun18084;
             case 89:
                 var0 = var2 === var1;
             case 93:
@@ -75,20 +75,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isUserPrimaryGuildEqual = var3;
     var1 = function(arg0) { // Original name: ensureUserPrimaryGuild, environment: var1
-        _fun18084: for (var _fun18084_ip = 0;;) switch (_fun18084_ip) {
+        _fun18085: for (var _fun18085_ip = 0;;) switch (_fun18085_ip) {
             case 0:
                 var1 = arg0;
                 var0 = null;
                 if (!(var0 != var1)) {
-                    _fun18084_ip = 68;
-                    continue _fun18084
+                    _fun18085_ip = 68;
+                    continue _fun18085
                 }
             case 9:
                 var2 = 'identityGuildId';
                 var2 = var2 in var1;
                 if (var2) {
-                    _fun18084_ip = 66;
-                    continue _fun18084
+                    _fun18085_ip = 66;
+                    continue _fun18085
                 }
             case 20:
                 var2 = {};

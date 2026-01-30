@@ -140,15 +140,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = '_processEntry';
         var0.key = var5;
         var4 = function(arg0) { // Original name: _processEntry, environment: var4
-            _fun10829: for (var _fun10829_ip = 0;;) switch (_fun10829_ip) {
+            _fun10830: for (var _fun10830_ip = 0;;) switch (_fun10830_ip) {
                 case 0:
                     var4 = arg0;
                     var3 = this;
                     var2 = var3._onBeforeProcessingEntry;
                     var0 = null;
                     if (!(var0 != var2)) {
-                        _fun10829_ip = 29;
-                        continue _fun10829
+                        _fun10830_ip = 29;
+                        continue _fun10830
                     }
                 case 18:
                     var1 = var2.call;
@@ -156,15 +156,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 case 29:
                     var1 = var4.interactionId;
                     if (var1) {
-                        _fun10829_ip = 57;
-                        continue _fun10829
+                        _fun10830_ip = 57;
+                        continue _fun10830
                     }
                 case 38:
                     var2 = var4.entryType;
                     var1 = 'first-input';
                     if (!(var1 === var2)) {
-                        _fun10829_ip = 464;
-                        continue _fun10829
+                        _fun10830_ip = 464;
+                        continue _fun10830
                     }
                 case 57:
                     var5 = var3._longestInteractionList;
@@ -176,28 +176,28 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = var4.interactionId;
                     var1 = var5.bind(var6)(var1);
                     if (var1) {
-                        _fun10829_ip = 141;
-                        continue _fun10829
+                        _fun10830_ip = 141;
+                        continue _fun10830
                     }
                 case 105:
                     var5 = var3._longestInteractionList;
                     var6 = var5.length;
                     var5 = 10;
                     if (!(!(var6 < var5))) {
-                        _fun10829_ip = 141;
-                        continue _fun10829
+                        _fun10830_ip = 141;
+                        continue _fun10830
                     }
                 case 123:
                     var5 = var4.duration;
                     var2 = var2._latency;
                     if (!(var5 > var2)) {
-                        _fun10829_ip = 464;
-                        continue _fun10829
+                        _fun10830_ip = 464;
+                        continue _fun10830
                     }
                 case 141:
                     if (var1) {
-                        _fun10829_ip = 219;
-                        continue _fun10829
+                        _fun10830_ip = 219;
+                        continue _fun10830
                     }
                 case 144:
                     var2 = {};
@@ -215,22 +215,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var6 = var3._longestInteractionList;
                     var5 = var6.push;
                     var5 = var5.bind(var6)(var2);
-                    _fun10829_ip = 335;
-                    continue _fun10829;
+                    _fun10830_ip = 335;
+                    continue _fun10830;
                 case 219:
                     var6 = var4.duration;
                     var5 = var1._latency;
                     if (!(!(var6 > var5))) {
-                        _fun10829_ip = 307;
-                        continue _fun10829
+                        _fun10830_ip = 307;
+                        continue _fun10830
                     }
                 case 234:
                     var6 = var4.duration;
                     var5 = var1._latency;
                     var5 = var6 === var5;
                     if (!var5) {
-                        _fun10829_ip = 280;
-                        continue _fun10829
+                        _fun10830_ip = 280;
+                        continue _fun10830
                     }
                 case 252:
                     var7 = var4.startTime;
@@ -242,16 +242,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 case 280:
                     var2 = var1;
                     if (!var5) {
-                        _fun10829_ip = 335;
-                        continue _fun10829
+                        _fun10830_ip = 335;
+                        continue _fun10830
                     }
                 case 286:
                     var6 = var1.entries;
                     var5 = var6.push;
                     var5 = var5.bind(var6)(var4);
                     var2 = var1;
-                    _fun10829_ip = 335;
-                    continue _fun10829;
+                    _fun10830_ip = 335;
+                    continue _fun10830;
                 case 307:
                     var5 = new Array(1);
                     var5[0] = var4;
@@ -275,8 +275,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = var1.length;
                     var5 = 10;
                     if (!(var1 > var5)) {
-                        _fun10829_ip = 443;
-                        continue _fun10829
+                        _fun10830_ip = 443;
+                        continue _fun10830
                     }
                 case 377:
                     var4 = var3._longestInteractionList;
@@ -290,8 +290,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var6 = var5().value;
                     var7 = var4;
                     if (!(var7 !== var1)) {
-                        _fun10829_ip = 443;
-                        continue _fun10829
+                        _fun10830_ip = 443;
+                        continue _fun10830
                     }
                 case 413: // try_start_0
                     var8 = var3._longestInteractionMap;
@@ -299,8 +299,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var6 = var6.id;
                     var6 = var7.bind(var8)(var6);
                 case 434: // try_end0
-                    _fun10829_ip = 402;
-                    continue _fun10829;
+                    _fun10830_ip = 402;
+                    continue _fun10830;
                 case 436: // catch_target0
                     CatchBlockStart(arg_register = 1);
                     var4.return();
@@ -308,8 +308,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 case 443:
                     var1 = var3._onAfterProcessingINPCandidate;
                     if (!(var0 != var1)) {
-                        _fun10829_ip = 464;
-                        continue _fun10829
+                        _fun10830_ip = 464;
+                        continue _fun10830
                     }
                 case 453:
                     var0 = var1.call;

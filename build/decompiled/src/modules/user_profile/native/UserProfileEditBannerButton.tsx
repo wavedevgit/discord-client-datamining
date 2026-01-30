@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
     var0 = function(arg0) { // Original name: ProfilePreviewButton, environment: var1
-        _fun79671: for (var _fun79671_ip = 0;;) switch (_fun79671_ip) {
+        _fun79717: for (var _fun79717_ip = 0;;) switch (_fun79717_ip) {
             case 0:
                 var1 = arg0;
                 var1 = var1.userId;
@@ -40,13 +40,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2[1] = var9;
                 var2[2] = var8;
                 var0 = function() { // Environment: var0
-                    _fun79672: for (var _fun79672_ip = 0;;) switch (_fun79672_ip) {
+                    _fun79718: for (var _fun79718_ip = 0;;) switch (_fun79718_ip) {
                         case 0:
                             var1 = _closure2_slot0;
                             var0 = null;
                             if (!(var0 != var1)) {
-                                _fun79672_ip = 93;
-                                continue _fun79672
+                                _fun79718_ip = 93;
+                                continue _fun79718
                             }
                         case 13:
                             var1 = _closure1_slot1;
@@ -78,8 +78,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var1 = var0 == var1;
                 if (var1) {
-                    _fun79671_ip = 350;
-                    continue _fun79671
+                    _fun79717_ip = 350;
+                    continue _fun79717
                 }
             case 146:
                 var3 = _closure1_slot5;
@@ -134,7 +134,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot8 = var0;
     var0 = function(arg0) { // Original name: EditButton, environment: var1
-        _fun79673: for (var _fun79673_ip = 0;;) switch (_fun79673_ip) {
+        _fun79719: for (var _fun79719_ip = 0;;) switch (_fun79719_ip) {
             case 0:
                 var0 = arg0;
                 var9 = var0.onPress;
@@ -142,8 +142,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var0.disabled;
                 var3 = undefined;
                 if (!(var8 === var3)) {
-                    _fun79673_ip = 26;
-                    continue _fun79673
+                    _fun79719_ip = 26;
+                    continue _fun79719
                 }
             case 24:
                 var8 = false;
@@ -273,7 +273,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/native/UserProfileEditBannerButton.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: UserProfileEditBannerButton, environment: var1
-        _fun79674: for (var _fun79674_ip = 0;;) switch (_fun79674_ip) {
+        _fun79720: for (var _fun79720_ip = 0;;) switch (_fun79720_ip) {
             case 0:
                 var0 = arg0;
                 var14 = var0.user;
@@ -287,8 +287,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0.showEditButton;
                 var3 = undefined;
                 if (!(var5 === var3)) {
-                    _fun79674_ip = 64;
-                    continue _fun79674
+                    _fun79720_ip = 64;
+                    continue _fun79720
                 }
             case 62:
                 var5 = true;
@@ -297,8 +297,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var0.editButtonAccessibilityLabel;
                 var9 = var0.editDisabled;
                 if (!(var9 === var3)) {
-                    _fun79674_ip = 88;
-                    continue _fun79674
+                    _fun79720_ip = 88;
+                    continue _fun79720
                 }
             case 86:
                 var9 = false;
@@ -333,8 +333,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(3);
                 var4[0] = var8;
                 if (!var7) {
-                    _fun79674_ip = 241;
-                    continue _fun79674
+                    _fun79720_ip = 241;
+                    continue _fun79720
                 }
             case 216:
                 var13 = _closure1_slot5;
@@ -346,8 +346,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 241:
                 var4[1] = var7;
                 if (!var5) {
-                    _fun79674_ip = 276;
-                    continue _fun79674
+                    _fun79720_ip = 276;
+                    continue _fun79720
                 }
             case 248:
                 var8 = _closure1_slot5;
@@ -366,4 +366,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 5684, 6931, 7310, 4858, 1234, 3895, 7473, 7325, 6924, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 671, 5687, 6934, 7313, 4864, 1234, 3901, 7476, 7328, 6927, 2]);

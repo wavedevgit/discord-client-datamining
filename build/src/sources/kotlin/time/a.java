@@ -9,7 +9,7 @@ public interface a extends TimeMark, Comparable {
     public static final class C0461a {
         public static int a(a aVar, a other) {
             Intrinsics.checkNotNullParameter(other, "other");
-            return Duration.j(aVar.m(other), Duration.f36281e.c());
+            return Duration.j(aVar.m(other), Duration.f36297e.c());
         }
     }
 

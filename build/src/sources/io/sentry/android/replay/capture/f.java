@@ -33,19 +33,19 @@ public final class f extends io.sentry.android.replay.capture.a {
     public static final int B = 8;
 
     /* renamed from: v  reason: collision with root package name */
-    private final k7 f29468v;
+    private final k7 f29484v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final w0 f29469w;
+    private final w0 f29485w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final p f29470x;
+    private final p f29486x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final b0 f29471y;
+    private final b0 f29487y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final List f29472z;
+    private final List f29488z;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -61,22 +61,22 @@ public final class f extends io.sentry.android.replay.capture.a {
     static final class b extends Lambda implements Function1 {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ Function1 f29474e;
+        final /* synthetic */ Function1 f29490e;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(Function1 function1) {
             super(1);
-            this.f29474e = function1;
+            this.f29490e = function1;
         }
 
         public final void a(h.c segment) {
             Intrinsics.checkNotNullParameter(segment, "segment");
             f fVar = f.this;
-            fVar.L(fVar.f29472z);
+            fVar.L(fVar.f29488z);
             if (segment instanceof h.c.a) {
                 h.c.a aVar = (h.c.a) segment;
-                h.c.a.b(aVar, f.this.f29469w, null, 2, null);
-                Function1 function1 = this.f29474e;
+                h.c.a.b(aVar, f.this.f29485w, null, 2, null);
+                Function1 function1 = this.f29490e;
                 Date i02 = aVar.c().i0();
                 Intrinsics.checkNotNullExpressionValue(i02, "getTimestamp(...)");
                 function1.invoke(i02);
@@ -86,7 +86,7 @@ public final class f extends io.sentry.android.replay.capture.a {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((h.c) obj);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
     }
 
@@ -99,7 +99,7 @@ public final class f extends io.sentry.android.replay.capture.a {
         public final void a(h.c segment) {
             Intrinsics.checkNotNullParameter(segment, "segment");
             if (segment instanceof h.c.a) {
-                f.this.f29472z.add(segment);
+                f.this.f29488z.add(segment);
                 f fVar = f.this;
                 fVar.c(fVar.d() + 1);
             }
@@ -108,7 +108,7 @@ public final class f extends io.sentry.android.replay.capture.a {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((h.c) obj);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
     }
 
@@ -121,7 +121,7 @@ public final class f extends io.sentry.android.replay.capture.a {
         public final void a(h.c segment) {
             Intrinsics.checkNotNullParameter(segment, "segment");
             if (segment instanceof h.c.a) {
-                f.this.f29472z.add(segment);
+                f.this.f29488z.add(segment);
                 f fVar = f.this;
                 fVar.c(fVar.d() + 1);
             }
@@ -130,7 +130,7 @@ public final class f extends io.sentry.android.replay.capture.a {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((h.c) obj);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
     }
 
@@ -139,31 +139,31 @@ public final class f extends io.sentry.android.replay.capture.a {
     public static final class e extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ long f29477d;
+        final /* synthetic */ long f29493d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ f f29478e;
+        final /* synthetic */ f f29494e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Ref.BooleanRef f29479i;
+        final /* synthetic */ Ref.BooleanRef f29495i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         e(long j10, f fVar, Ref.BooleanRef booleanRef) {
             super(1);
-            this.f29477d = j10;
-            this.f29478e = fVar;
-            this.f29479i = booleanRef;
+            this.f29493d = j10;
+            this.f29494e = fVar;
+            this.f29495i = booleanRef;
         }
 
         @Override // kotlin.jvm.functions.Function1
         /* renamed from: a */
         public final Boolean invoke(h.c.a it) {
             Intrinsics.checkNotNullParameter(it, "it");
-            if (it.c().i0().getTime() < this.f29477d) {
-                f fVar = this.f29478e;
+            if (it.c().i0().getTime() < this.f29493d) {
+                f fVar = this.f29494e;
                 fVar.c(fVar.d() - 1);
-                this.f29478e.P(it.c().j0());
-                this.f29479i.element = true;
+                this.f29494e.P(it.c().j0());
+                this.f29495i.element = true;
                 return Boolean.TRUE;
             }
             return Boolean.FALSE;
@@ -177,18 +177,18 @@ public final class f extends io.sentry.android.replay.capture.a {
         Intrinsics.checkNotNullParameter(dateProvider, "dateProvider");
         Intrinsics.checkNotNullParameter(random, "random");
         Intrinsics.checkNotNullParameter(executor, "executor");
-        this.f29468v = options;
-        this.f29469w = w0Var;
-        this.f29470x = dateProvider;
-        this.f29471y = random;
-        this.f29472z = new ArrayList();
+        this.f29484v = options;
+        this.f29485w = w0Var;
+        this.f29486x = dateProvider;
+        this.f29487y = random;
+        this.f29488z = new ArrayList();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public final void L(List list) {
         h.c.a aVar = (h.c.a) CollectionsKt.K(list);
         while (aVar != null) {
-            h.c.a.b(aVar, this.f29469w, null, 2, null);
+            h.c.a.b(aVar, this.f29485w, null, 2, null);
             aVar = (h.c.a) CollectionsKt.K(list);
             Thread.sleep(100L);
         }
@@ -205,13 +205,13 @@ public final class f extends io.sentry.android.replay.capture.a {
         Long V;
         final s s10 = s();
         if (s10 == null) {
-            ILogger logger = this.f29468v.getLogger();
+            ILogger logger = this.f29484v.getLogger();
             SentryLevel sentryLevel = SentryLevel.DEBUG;
             logger.c(sentryLevel, "Recorder config is not set, not creating segment for task: " + str, new Object[0]);
             return;
         }
-        long c10 = this.f29468v.getSessionReplay().c();
-        long a10 = this.f29470x.a();
+        long c10 = this.f29484v.getSessionReplay().c();
+        long a10 = this.f29486x.a();
         io.sentry.android.replay.i p10 = p();
         if (p10 == null || (V = p10.V()) == null || (e10 = io.sentry.k.e(V.longValue())) == null) {
             e10 = io.sentry.k.e(a10 - c10);
@@ -238,10 +238,10 @@ public final class f extends io.sentry.android.replay.capture.a {
         if (file != null) {
             try {
                 if (!file.delete()) {
-                    this.f29468v.getLogger().c(SentryLevel.ERROR, "Failed to delete replay segment: %s", file.getAbsolutePath());
+                    this.f29484v.getLogger().c(SentryLevel.ERROR, "Failed to delete replay segment: %s", file.getAbsolutePath());
                 }
             } catch (Throwable th2) {
-                this.f29468v.getLogger().a(SentryLevel.ERROR, th2, "Failed to delete replay segment: %s", file.getAbsolutePath());
+                this.f29484v.getLogger().a(SentryLevel.ERROR, th2, "Failed to delete replay segment: %s", file.getAbsolutePath());
             }
         }
     }
@@ -253,7 +253,7 @@ public final class f extends io.sentry.android.replay.capture.a {
         if (p10 != null) {
             function2.invoke(p10, Long.valueOf(j10));
         }
-        long a10 = fVar.f29470x.a() - fVar.f29468v.getSessionReplay().c();
+        long a10 = fVar.f29486x.a() - fVar.f29484v.getSessionReplay().c();
         io.sentry.android.replay.i p11 = fVar.p();
         if (p11 != null) {
             str = p11.F0(a10);
@@ -261,7 +261,7 @@ public final class f extends io.sentry.android.replay.capture.a {
             str = null;
         }
         fVar.C(str);
-        fVar.R(fVar.f29472z, a10);
+        fVar.R(fVar.f29488z, a10);
     }
 
     private final void R(List list, long j10) {
@@ -295,11 +295,11 @@ public final class f extends io.sentry.android.replay.capture.a {
     @Override // io.sentry.android.replay.capture.h
     public void e(boolean z10, Function1 onSegmentSent) {
         Intrinsics.checkNotNullParameter(onSegmentSent, "onSegmentSent");
-        if (!io.sentry.android.replay.util.k.a(this.f29471y, this.f29468v.getSessionReplay().l())) {
-            this.f29468v.getLogger().c(SentryLevel.INFO, "Replay wasn't sampled by onErrorSampleRate, not capturing for event", new Object[0]);
+        if (!io.sentry.android.replay.util.k.a(this.f29487y, this.f29484v.getSessionReplay().l())) {
+            this.f29484v.getLogger().c(SentryLevel.INFO, "Replay wasn't sampled by onErrorSampleRate, not capturing for event", new Object[0]);
             return;
         }
-        w0 w0Var = this.f29469w;
+        w0 w0Var = this.f29485w;
         if (w0Var != null) {
             w0Var.o(new b4() { // from class: io.sentry.android.replay.capture.c
                 @Override // io.sentry.b4
@@ -310,7 +310,7 @@ public final class f extends io.sentry.android.replay.capture.a {
         }
         if (z10) {
             y().set(true);
-            this.f29468v.getLogger().c(SentryLevel.DEBUG, "Not capturing replay for crashed event, will be captured on next launch", new Object[0]);
+            this.f29484v.getLogger().c(SentryLevel.DEBUG, "Not capturing replay for crashed event, will be captured on next launch", new Object[0]);
             return;
         }
         N("capture_replay", new b(onSegmentSent));
@@ -319,7 +319,7 @@ public final class f extends io.sentry.android.replay.capture.a {
     @Override // io.sentry.android.replay.capture.h
     public void f(Bitmap bitmap, final Function2 store) {
         Intrinsics.checkNotNullParameter(store, "store");
-        final long a10 = this.f29470x.a();
+        final long a10 = this.f29486x.a();
         t().submit(new io.sentry.android.replay.util.j("BufferCaptureStrategy.add_frame", new Runnable() { // from class: io.sentry.android.replay.capture.e
             @Override // java.lang.Runnable
             public final void run() {
@@ -331,10 +331,10 @@ public final class f extends io.sentry.android.replay.capture.a {
     @Override // io.sentry.android.replay.capture.h
     public h g() {
         if (y().get()) {
-            this.f29468v.getLogger().c(SentryLevel.DEBUG, "Not converting to session mode, because the process is about to terminate", new Object[0]);
+            this.f29484v.getLogger().c(SentryLevel.DEBUG, "Not converting to session mode, because the process is about to terminate", new Object[0]);
             return this;
         }
-        m mVar = new m(this.f29468v, this.f29469w, this.f29470x, t(), null, 16, null);
+        m mVar = new m(this.f29484v, this.f29485w, this.f29486x, t(), null, 16, null);
         mVar.A(s());
         mVar.h(d(), a(), l7.b.BUFFER);
         return mVar;
@@ -351,7 +351,7 @@ public final class f extends io.sentry.android.replay.capture.a {
     public void onTouchEvent(MotionEvent event) {
         Intrinsics.checkNotNullParameter(event, "event");
         super.onTouchEvent(event);
-        h.a.h(h.f29481a, q(), this.f29470x.a() - this.f29468v.getSessionReplay().c(), null, 4, null);
+        h.a.h(h.f29497a, q(), this.f29486x.a() - this.f29484v.getSessionReplay().c(), null, 4, null);
     }
 
     @Override // io.sentry.android.replay.capture.a, io.sentry.android.replay.capture.h

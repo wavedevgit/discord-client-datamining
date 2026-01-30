@@ -9,10 +9,10 @@ import tq.h;
 public final class e implements c.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final d f27080a;
+    private final d f27096a;
 
     e(d dVar) {
-        this.f27080a = dVar;
+        this.f27096a = dVar;
     }
 
     public static h b(d dVar) {
@@ -21,6 +21,6 @@ public final class e implements c.a {
 
     @Override // gp.c.a
     public c a(String str, String str2, String str3, String str4, d2 d2Var, String str5, List list, String str6, v vVar, long j10) {
-        return this.f27080a.b(str, str2, d2Var, list, str4, str3, str5, str6, vVar, j10);
+        return this.f27096a.b(str, str2, d2Var, list, str4, str3, str5, str6, vVar, j10);
     }
 }

@@ -19,28 +19,28 @@ import org.jetbrains.annotations.NotNull;
 public abstract class AbstractDeserializedPackageFragmentProvider implements PackageFragmentProviderOptimized {
 
     /* renamed from: a  reason: collision with root package name */
-    private final StorageManager f35548a;
+    private final StorageManager f35564a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final KotlinMetadataFinder f35549b;
+    private final KotlinMetadataFinder f35565b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final ModuleDescriptor f35550c;
+    private final ModuleDescriptor f35566c;
 
     /* renamed from: d  reason: collision with root package name */
-    protected DeserializationComponents f35551d;
+    protected DeserializationComponents f35567d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final MemoizedFunctionToNullable f35552e;
+    private final MemoizedFunctionToNullable f35568e;
 
     public AbstractDeserializedPackageFragmentProvider(@NotNull StorageManager storageManager, @NotNull KotlinMetadataFinder finder, @NotNull ModuleDescriptor moduleDescriptor) {
         Intrinsics.checkNotNullParameter(storageManager, "storageManager");
         Intrinsics.checkNotNullParameter(finder, "finder");
         Intrinsics.checkNotNullParameter(moduleDescriptor, "moduleDescriptor");
-        this.f35548a = storageManager;
-        this.f35549b = finder;
-        this.f35550c = moduleDescriptor;
-        this.f35552e = storageManager.createMemoizedFunctionWithNullableValues(new a(this));
+        this.f35564a = storageManager;
+        this.f35565b = finder;
+        this.f35566c = moduleDescriptor;
+        this.f35568e = storageManager.createMemoizedFunctionWithNullableValues(new a(this));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -60,11 +60,11 @@ public abstract class AbstractDeserializedPackageFragmentProvider implements Pac
     public void collectPackageFragments(@NotNull FqName fqName, @NotNull Collection<PackageFragmentDescriptor> packageFragments) {
         Intrinsics.checkNotNullParameter(fqName, "fqName");
         Intrinsics.checkNotNullParameter(packageFragments, "packageFragments");
-        CollectionsKt.addIfNotNull(packageFragments, this.f35552e.invoke(fqName));
+        CollectionsKt.addIfNotNull(packageFragments, this.f35568e.invoke(fqName));
     }
 
     protected final DeserializationComponents d() {
-        DeserializationComponents deserializationComponents = this.f35551d;
+        DeserializationComponents deserializationComponents = this.f35567d;
         if (deserializationComponents != null) {
             return deserializationComponents;
         }
@@ -74,17 +74,17 @@ public abstract class AbstractDeserializedPackageFragmentProvider implements Pac
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final KotlinMetadataFinder e() {
-        return this.f35549b;
+        return this.f35565b;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final ModuleDescriptor f() {
-        return this.f35550c;
+        return this.f35566c;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final StorageManager g() {
-        return this.f35548a;
+        return this.f35564a;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.PackageFragmentProvider
@@ -92,7 +92,7 @@ public abstract class AbstractDeserializedPackageFragmentProvider implements Pac
     @NotNull
     public List<PackageFragmentDescriptor> getPackageFragments(@NotNull FqName fqName) {
         Intrinsics.checkNotNullParameter(fqName, "fqName");
-        return kotlin.collections.CollectionsKt.p(this.f35552e.invoke(fqName));
+        return kotlin.collections.CollectionsKt.p(this.f35568e.invoke(fqName));
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.PackageFragmentProvider
@@ -106,15 +106,15 @@ public abstract class AbstractDeserializedPackageFragmentProvider implements Pac
     /* JADX INFO: Access modifiers changed from: protected */
     public final void h(DeserializationComponents deserializationComponents) {
         Intrinsics.checkNotNullParameter(deserializationComponents, "<set-?>");
-        this.f35551d = deserializationComponents;
+        this.f35567d = deserializationComponents;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.PackageFragmentProviderOptimized
     public boolean isEmpty(@NotNull FqName fqName) {
         DeclarationDescriptorWithSource b10;
         Intrinsics.checkNotNullParameter(fqName, "fqName");
-        if (this.f35552e.isComputed(fqName)) {
-            b10 = (PackageFragmentDescriptor) this.f35552e.invoke(fqName);
+        if (this.f35568e.isComputed(fqName)) {
+            b10 = (PackageFragmentDescriptor) this.f35568e.invoke(fqName);
         } else {
             b10 = b(fqName);
         }

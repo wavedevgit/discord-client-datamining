@@ -17,40 +17,40 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public final class d implements Iterable, Comparator {
 
     /* renamed from: q  reason: collision with root package name */
-    public static final boolean f47657q = Boolean.getBoolean("net.time4j.scale.leapseconds.suppressed");
+    public static final boolean f47673q = Boolean.getBoolean("net.time4j.scale.leapseconds.suppressed");
 
     /* renamed from: r  reason: collision with root package name */
-    public static final boolean f47658r = Boolean.getBoolean("net.time4j.scale.leapseconds.final");
+    public static final boolean f47674r = Boolean.getBoolean("net.time4j.scale.leapseconds.final");
 
     /* renamed from: s  reason: collision with root package name */
-    public static final String f47659s = System.getProperty("net.time4j.scale.leapseconds.path", "data/leapseconds.data");
+    public static final String f47675s = System.getProperty("net.time4j.scale.leapseconds.path", "data/leapseconds.data");
 
     /* renamed from: t  reason: collision with root package name */
-    private static final qt.a[] f47660t = new qt.a[0];
+    private static final qt.a[] f47676t = new qt.a[0];
 
     /* renamed from: u  reason: collision with root package name */
-    private static final d f47661u = new d();
+    private static final d f47677u = new d();
 
     /* renamed from: d  reason: collision with root package name */
-    private final c f47662d;
+    private final c f47678d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f47663e;
+    private final List f47679e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final qt.a[] f47664i;
+    private final qt.a[] f47680i;
 
     /* renamed from: o  reason: collision with root package name */
-    private volatile qt.a[] f47665o;
+    private volatile qt.a[] f47681o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final boolean f47666p;
+    private final boolean f47682p;
 
     private d() {
         c cVar;
         int i10;
         boolean z10 = false;
-        if (!f47657q) {
+        if (!f47673q) {
             cVar = null;
             i10 = 0;
             for (c cVar2 : gt.d.c().g(c.class)) {
@@ -71,20 +71,20 @@ public final class d implements Iterable, Comparator {
                 treeSet.add(new a(aVar, Long.MIN_VALUE, (-62985601) + J(aVar), ((Integer) entry.getValue()).intValue()));
             }
             j(treeSet);
-            boolean z11 = f47658r;
+            boolean z11 = f47674r;
             if (z11) {
-                this.f47663e = Collections.unmodifiableList(new ArrayList(treeSet));
+                this.f47679e = Collections.unmodifiableList(new ArrayList(treeSet));
             } else {
-                this.f47663e = new CopyOnWriteArrayList(treeSet);
+                this.f47679e = new CopyOnWriteArrayList(treeSet);
             }
             qt.a[] x10 = x();
-            this.f47664i = x10;
-            this.f47665o = x10;
-            this.f47662d = cVar;
+            this.f47680i = x10;
+            this.f47681o = x10;
+            this.f47678d = cVar;
             if (z11) {
                 boolean b10 = cVar.b();
                 if (b10) {
-                    Iterator it = this.f47663e.iterator();
+                    Iterator it = this.f47679e.iterator();
                     while (true) {
                         if (it.hasNext()) {
                             if (((qt.a) it.next()).a() < 0) {
@@ -97,18 +97,18 @@ public final class d implements Iterable, Comparator {
                     }
                     b10 = z10;
                 }
-                this.f47666p = b10;
+                this.f47682p = b10;
                 return;
             }
-            this.f47666p = true;
+            this.f47682p = true;
             return;
         }
-        this.f47662d = null;
-        this.f47663e = Collections.EMPTY_LIST;
-        qt.a[] aVarArr = f47660t;
-        this.f47664i = aVarArr;
-        this.f47665o = aVarArr;
-        this.f47666p = false;
+        this.f47678d = null;
+        this.f47679e = Collections.EMPTY_LIST;
+        qt.a[] aVarArr = f47676t;
+        this.f47680i = aVarArr;
+        this.f47681o = aVarArr;
+        this.f47682p = false;
     }
 
     private static long J(gt.a aVar) {
@@ -138,25 +138,25 @@ public final class d implements Iterable, Comparator {
     }
 
     private qt.a[] n() {
-        if (!f47657q && !f47658r) {
-            return this.f47665o;
+        if (!f47673q && !f47674r) {
+            return this.f47681o;
         }
-        return this.f47664i;
+        return this.f47680i;
     }
 
     public static d p() {
-        return f47661u;
+        return f47677u;
     }
 
     private qt.a[] x() {
-        ArrayList arrayList = new ArrayList(this.f47663e.size());
-        arrayList.addAll(this.f47663e);
+        ArrayList arrayList = new ArrayList(this.f47679e.size());
+        arrayList.addAll(this.f47679e);
         Collections.reverse(arrayList);
         return (qt.a[]) arrayList.toArray(new qt.a[arrayList.size()]);
     }
 
     public boolean D() {
-        return !this.f47663e.isEmpty();
+        return !this.f47679e.isEmpty();
     }
 
     public boolean G(long j10) {
@@ -183,7 +183,7 @@ public final class d implements Iterable, Comparator {
             return j10 + 63072000;
         }
         qt.a[] n10 = n();
-        boolean z10 = this.f47666p;
+        boolean z10 = this.f47682p;
         for (qt.a aVar : n10) {
             if (aVar.b() - aVar.a() < j10 || (z10 && aVar.a() < 0 && aVar.b() < j10)) {
                 j10 = gt.c.f(j10, aVar.d() - aVar.b());
@@ -194,7 +194,7 @@ public final class d implements Iterable, Comparator {
     }
 
     public boolean I() {
-        return this.f47666p;
+        return this.f47682p;
     }
 
     @Override // java.util.Comparator
@@ -249,7 +249,7 @@ public final class d implements Iterable, Comparator {
 
     public gt.a m() {
         if (D()) {
-            return this.f47662d.d();
+            return this.f47678d.d();
         }
         throw new IllegalStateException("Leap seconds not activated.");
     }
@@ -257,15 +257,15 @@ public final class d implements Iterable, Comparator {
     public String toString() {
         StringBuilder sb2 = new StringBuilder((int) RecyclerView.ItemAnimator.FLAG_MOVED);
         sb2.append("[PROVIDER=");
-        sb2.append(this.f47662d);
-        if (this.f47662d != null) {
+        sb2.append(this.f47678d);
+        if (this.f47678d != null) {
             sb2.append(",EXPIRES=");
             sb2.append(k(m()));
         }
         sb2.append(",EVENTS=[");
         if (D()) {
             boolean z10 = true;
-            for (Object obj : this.f47663e) {
+            for (Object obj : this.f47679e) {
                 if (z10) {
                     z10 = false;
                 } else {

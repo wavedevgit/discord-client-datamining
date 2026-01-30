@@ -9,23 +9,23 @@ import org.jetbrains.annotations.NotNull;
 public final class ReflectJavaEnumValueAnnotationArgument extends ReflectJavaAnnotationArgument implements JavaEnumValueAnnotationArgument {
 
     /* renamed from: b  reason: collision with root package name */
-    private final Enum f33925b;
+    private final Enum f33941b;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ReflectJavaEnumValueAnnotationArgument(Name name, @NotNull Enum<?> value) {
         super(name, null);
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f33925b = value;
+        this.f33941b = value;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaEnumValueAnnotationArgument
     public Name getEntryName() {
-        return Name.identifier(this.f33925b.name());
+        return Name.identifier(this.f33941b.name());
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaEnumValueAnnotationArgument
     public ClassId getEnumClassId() {
-        Class<?> cls = this.f33925b.getClass();
+        Class<?> cls = this.f33941b.getClass();
         if (!cls.isEnum()) {
             cls = cls.getEnclosingClass();
         }

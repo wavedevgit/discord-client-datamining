@@ -27,50 +27,50 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/icymi/native/util/getIconForChannel.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: getIconForChannel, environment: var1
-        _fun104384: for (var _fun104384_ip = 0;;) switch (_fun104384_ip) {
+        _fun104646: for (var _fun104646_ip = 0;;) switch (_fun104646_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.type;
                 var1 = _closure1_slot2;
                 var1 = var1.GUILD_ANNOUNCEMENT;
                 if (!(var1 !== var2)) {
-                    _fun104384_ip = 284;
-                    continue _fun104384
+                    _fun104646_ip = 284;
+                    continue _fun104646
                 }
             case 28:
                 var1 = _closure1_slot2;
                 var1 = var1.GUILD_VOICE;
                 if (!(var1 !== var2)) {
-                    _fun104384_ip = 254;
-                    continue _fun104384
+                    _fun104646_ip = 254;
+                    continue _fun104646
                 }
             case 45:
                 var1 = _closure1_slot2;
                 var1 = var1.GUILD_STAGE_VOICE;
                 if (!(var1 !== var2)) {
-                    _fun104384_ip = 224;
-                    continue _fun104384
+                    _fun104646_ip = 224;
+                    continue _fun104646
                 }
             case 62:
                 var1 = _closure1_slot2;
                 var1 = var1.GUILD_TEXT;
                 if (!(var1 !== var2)) {
-                    _fun104384_ip = 194;
-                    continue _fun104384
+                    _fun104646_ip = 194;
+                    continue _fun104646
                 }
             case 76:
                 var1 = _closure1_slot2;
                 var1 = var1.GUILD_FORUM;
                 if (!(var1 !== var2)) {
-                    _fun104384_ip = 164;
-                    continue _fun104384
+                    _fun104646_ip = 164;
+                    continue _fun104646
                 }
             case 90:
                 var1 = _closure1_slot2;
                 var1 = var1.GUILD_MEDIA;
                 if (!(var1 !== var2)) {
-                    _fun104384_ip = 134;
-                    continue _fun104384
+                    _fun104646_ip = 134;
+                    continue _fun104646
                 }
             case 104:
                 var3 = _closure1_slot0;
@@ -139,4 +139,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getIconForChannel = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 4813, 4819, 4816, 4802, 4808, 4807, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 4819, 4825, 4822, 4808, 4814, 4813, 2]);

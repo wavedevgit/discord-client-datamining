@@ -5,16 +5,16 @@ import ui.c;
 final class e4 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final e4 f41059a = new e4();
+    static final e4 f41075a = new e4();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41060b;
+    private static final ui.c f41076b;
 
     static {
         c.b a10 = ui.c.a("errorCode");
         f fVar = new f();
         fVar.a(1);
-        f41060b = a10.b(fVar.b()).a();
+        f41076b = a10.b(fVar.b()).a();
     }
 
     private e4() {

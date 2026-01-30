@@ -126,14 +126,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.generateColorVariants = var3;
     var3 = function(arg0) { // Original name: parseServerDisplayNameStyles, environment: var1
-        _fun18087: for (var _fun18087_ip = 0;;) switch (_fun18087_ip) {
+        _fun18088: for (var _fun18088_ip = 0;;) switch (_fun18088_ip) {
             case 0:
                 var2 = arg0;
                 var0 = null;
                 var1 = var0 == var2;
                 if (var1) {
-                    _fun18087_ip = 52;
-                    continue _fun18087
+                    _fun18088_ip = 52;
+                    continue _fun18088
                 }
             case 12:
                 var1 = {};
@@ -150,7 +150,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.parseServerDisplayNameStyles = var3;
     var3 = function() { // Original name: generateRandomDisplayNameStyles, environment: var1
-        _fun18088: for (var _fun18088_ip = 0;;) switch (_fun18088_ip) {
+        _fun18089: for (var _fun18089_ip = 0;;) switch (_fun18089_ip) {
             case 0:
                 var2 = _closure1_slot5;
                 var0 = global;
@@ -182,8 +182,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.DisplayNameEffect;
                 var1 = var1.GRADIENT;
                 if (!(var2 !== var1)) {
-                    _fun18088_ip = 203;
-                    continue _fun18088
+                    _fun18089_ip = 203;
+                    continue _fun18089
                 }
             case 143:
                 var5 = _closure1_slot3;
@@ -198,8 +198,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5[var1];
                 var1 = new Array(1);
                 var1[0] = var5;
-                _fun18088_ip = 278;
-                continue _fun18088;
+                _fun18089_ip = 278;
+                continue _fun18089;
             case 203:
                 var4 = _closure1_slot4;
                 var6 = var0.Math;
@@ -227,13 +227,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.generateRandomDisplayNameStyles = var3;
     var1 = function(arg0) { // Original name: hasNonLatinLetters, environment: var1
-        _fun18089: for (var _fun18089_ip = 0;;) switch (_fun18089_ip) {
+        _fun18090: for (var _fun18090_ip = 0;;) switch (_fun18090_ip) {
             case 0:
                 var3 = arg0;
                 var0 = null;
                 if (!(var0 != var3)) {
-                    _fun18089_ip = 64;
-                    continue _fun18089
+                    _fun18090_ip = 64;
+                    continue _fun18090
                 }
             case 9:
                 var2 = var3.replace;

@@ -68,7 +68,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/voice/redesign/NewUserSettingsVoiceOutputOptions.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Original name: NewUserSettingsVoiceOutputOptions, environment: var1
-        _fun67906: for (var _fun67906_ip = 0;;) switch (_fun67906_ip) {
+        _fun67951: for (var _fun67951_ip = 0;;) switch (_fun67951_ip) {
             case 0:
                 var0 = _closure1_slot11;
                 var3 = undefined;
@@ -98,7 +98,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot6;
                 var4[1] = var2;
                 var2 = function() { // Environment: var19
-                    _fun67908: for (var _fun67908_ip = 0;;) switch (_fun67908_ip) {
+                    _fun67953: for (var _fun67953_ip = 0;;) switch (_fun67953_ip) {
                         case 0:
                             var1 = _closure1_slot5;
                             var0 = var1.getLastActiveStream;
@@ -107,8 +107,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var4 != var1;
                             var0 = null;
                             if (!var3) {
-                                _fun67908_ip = 57;
-                                continue _fun67908
+                                _fun67953_ip = 57;
+                                continue _fun67953
                             }
                         case 28:
                             var3 = var1.ownerId;
@@ -117,8 +117,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var2.bind(var5)();
                             var0 = null;
                             if (!(var3 !== var2)) {
-                                _fun67908_ip = 57;
-                                continue _fun67908
+                                _fun67953_ip = 57;
+                                continue _fun67953
                             }
                         case 54:
                             var0 = var1;
@@ -134,15 +134,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new Array(1);
                 var1[0] = var0;
                 var0 = function() { // Environment: var19
-                    _fun67909: for (var _fun67909_ip = 0;;) switch (_fun67909_ip) {
+                    _fun67954: for (var _fun67954_ip = 0;;) switch (_fun67954_ip) {
                         case 0:
                             var1 = _closure2_slot0;
                             var0 = null;
                             var1 = var0 != var1;
                             var0 = 0;
                             if (!var1) {
-                                _fun67909_ip = 57;
-                                continue _fun67909
+                                _fun67954_ip = 57;
+                                continue _fun67954
                             }
                         case 18:
                             var4 = _closure1_slot7;
@@ -253,8 +253,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = null;
                 var5 = var5 != var7;
                 if (!var5) {
-                    _fun67906_ip = 579;
-                    continue _fun67906
+                    _fun67951_ip = 579;
+                    continue _fun67951
                 }
             case 435:
                 var8 = _closure1_slot9;
@@ -298,4 +298,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3671, 1216, 3435, 3469, 33, 1297, 566, 44, 8167, 8423, 1234, 4854, 8429, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3673, 1216, 3435, 3469, 33, 1297, 566, 44, 8170, 8426, 1234, 4860, 8432, 2]);

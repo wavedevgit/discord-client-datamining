@@ -13,31 +13,31 @@ public abstract class l {
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Object f51919a;
+        private final Object f51935a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final q f51920b;
+        private final q f51936b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final int f51921c;
+        private final int f51937c;
 
         public a(Object obj, q parserStructure, int i10) {
             Intrinsics.checkNotNullParameter(parserStructure, "parserStructure");
-            this.f51919a = obj;
-            this.f51920b = parserStructure;
-            this.f51921c = i10;
+            this.f51935a = obj;
+            this.f51936b = parserStructure;
+            this.f51937c = i10;
         }
 
         public final int a() {
-            return this.f51921c;
+            return this.f51937c;
         }
 
         public final Object b() {
-            return this.f51919a;
+            return this.f51935a;
         }
 
         public final q c() {
-            return this.f51920b;
+            return this.f51936b;
         }
     }
 
@@ -87,7 +87,7 @@ public abstract class l {
                     if (a10 == input.length()) {
                         return cVar;
                     }
-                    arrayList.add(new i(a10, m.f51922d));
+                    arrayList.add(new i(a10, m.f51938d));
                 } else {
                     int size2 = c10.a().size() - 1;
                     if (size2 >= 0) {

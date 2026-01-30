@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
     var0 = function() { // Original name: getActivationStart, environment: var0
-        _fun10764: for (var _fun10764_ip = 0;;) switch (_fun10764_ip) {
+        _fun10765: for (var _fun10765_ip = 0;;) switch (_fun10765_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var1 = _closure1_slot1;
@@ -28,8 +28,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = null;
                 var4 = var2 == var3;
                 if (var4) {
-                    _fun10764_ip = 49;
-                    continue _fun10764
+                    _fun10765_ip = 49;
+                    continue _fun10765
                 }
             case 43:
                 var1 = var3.activationStart;
@@ -37,8 +37,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var2 != var1;
                 var0 = 0;
                 if (!var2) {
-                    _fun10764_ip = 61;
-                    continue _fun10764
+                    _fun10765_ip = 61;
+                    continue _fun10765
                 }
             case 58:
                 var0 = var1;

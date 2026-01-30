@@ -212,20 +212,20 @@ public final class RLottieImageView extends com.discord.rlottie.RLottieImageView
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit rLottieStateManager$lambda$1(RLottieImageView rLottieImageView) {
         rLottieImageView.playAnimation();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit rLottieStateManager$lambda$2(RLottieImageView rLottieImageView) {
         rLottieImageView.pauseAnimation();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit rLottieStateManager$lambda$3(RLottieImageView rLottieImageView, Config it) {
         Intrinsics.checkNotNullParameter(it, "it");
         rLottieImageView.recycle(false);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -238,7 +238,7 @@ public final class RLottieImageView extends com.discord.rlottie.RLottieImageView
     public static final Unit rLottieStateManager$lambda$5(RLottieImageView rLottieImageView, Config config) {
         Intrinsics.checkNotNullParameter(config, "config");
         rLottieImageView.fetchSticker(config);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     public static /* synthetic */ void recycle$default(RLottieImageView rLottieImageView, boolean z10, int i10, Object obj) {

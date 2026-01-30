@@ -42,7 +42,7 @@ public abstract class y {
     }
 
     public static int a(Exception exc, int i10) {
-        int i11 = w0.f40279a;
+        int i11 = w0.f40295a;
         if (i11 >= 21 && b.a(exc)) {
             return b.b(exc);
         }

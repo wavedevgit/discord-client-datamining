@@ -7,49 +7,49 @@ import tc.l;
 final class a implements c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final byte[] f55510a = new byte[8];
+    private final byte[] f55526a = new byte[8];
 
     /* renamed from: b  reason: collision with root package name */
-    private final ArrayDeque f55511b = new ArrayDeque();
+    private final ArrayDeque f55527b = new ArrayDeque();
 
     /* renamed from: c  reason: collision with root package name */
-    private final g f55512c = new g();
+    private final g f55528c = new g();
 
     /* renamed from: d  reason: collision with root package name */
-    private zc.b f55513d;
+    private zc.b f55529d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f55514e;
+    private int f55530e;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f55515f;
+    private int f55531f;
 
     /* renamed from: g  reason: collision with root package name */
-    private long f55516g;
+    private long f55532g;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     private static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final int f55517a;
+        private final int f55533a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final long f55518b;
+        private final long f55534b;
 
         private b(int i10, long j10) {
-            this.f55517a = i10;
-            this.f55518b = j10;
+            this.f55533a = i10;
+            this.f55534b = j10;
         }
     }
 
     private long c(l lVar) {
         lVar.e();
         while (true) {
-            lVar.n(this.f55510a, 0, 4);
-            int c10 = g.c(this.f55510a[0]);
+            lVar.n(this.f55526a, 0, 4);
+            int c10 = g.c(this.f55526a[0]);
             if (c10 != -1 && c10 <= 4) {
-                int a10 = (int) g.a(this.f55510a, c10, false);
-                if (this.f55513d.f(a10)) {
+                int a10 = (int) g.a(this.f55526a, c10, false);
+                if (this.f55529d.f(a10)) {
                     lVar.k(c10);
                     return a10;
                 }
@@ -67,10 +67,10 @@ final class a implements c {
     }
 
     private long e(l lVar, int i10) {
-        lVar.readFully(this.f55510a, 0, i10);
+        lVar.readFully(this.f55526a, 0, i10);
         long j10 = 0;
         for (int i11 = 0; i11 < i10; i11++) {
-            j10 = (j10 << 8) | (this.f55510a[i11] & 255);
+            j10 = (j10 << 8) | (this.f55526a[i11] & 255);
         }
         return j10;
     }
@@ -89,85 +89,85 @@ final class a implements c {
 
     @Override // zc.c
     public boolean a(l lVar) {
-        ne.a.i(this.f55513d);
+        ne.a.i(this.f55529d);
         while (true) {
-            b bVar = (b) this.f55511b.peek();
-            if (bVar != null && lVar.getPosition() >= bVar.f55518b) {
-                this.f55513d.a(((b) this.f55511b.pop()).f55517a);
+            b bVar = (b) this.f55527b.peek();
+            if (bVar != null && lVar.getPosition() >= bVar.f55534b) {
+                this.f55529d.a(((b) this.f55527b.pop()).f55533a);
                 return true;
             }
-            if (this.f55514e == 0) {
-                long d10 = this.f55512c.d(lVar, true, false, 4);
+            if (this.f55530e == 0) {
+                long d10 = this.f55528c.d(lVar, true, false, 4);
                 if (d10 == -2) {
                     d10 = c(lVar);
                 }
                 if (d10 == -1) {
                     return false;
                 }
-                this.f55515f = (int) d10;
-                this.f55514e = 1;
+                this.f55531f = (int) d10;
+                this.f55530e = 1;
             }
-            if (this.f55514e == 1) {
-                this.f55516g = this.f55512c.d(lVar, false, true, 8);
-                this.f55514e = 2;
+            if (this.f55530e == 1) {
+                this.f55532g = this.f55528c.d(lVar, false, true, 8);
+                this.f55530e = 2;
             }
-            int e10 = this.f55513d.e(this.f55515f);
+            int e10 = this.f55529d.e(this.f55531f);
             if (e10 != 0) {
                 if (e10 != 1) {
                     if (e10 != 2) {
                         if (e10 != 3) {
                             if (e10 != 4) {
                                 if (e10 == 5) {
-                                    long j10 = this.f55516g;
+                                    long j10 = this.f55532g;
                                     if (j10 != 4 && j10 != 8) {
-                                        throw l0.a("Invalid float size: " + this.f55516g, null);
+                                        throw l0.a("Invalid float size: " + this.f55532g, null);
                                     }
-                                    this.f55513d.c(this.f55515f, d(lVar, (int) j10));
-                                    this.f55514e = 0;
+                                    this.f55529d.c(this.f55531f, d(lVar, (int) j10));
+                                    this.f55530e = 0;
                                     return true;
                                 }
                                 throw l0.a("Invalid element type " + e10, null);
                             }
-                            this.f55513d.b(this.f55515f, (int) this.f55516g, lVar);
-                            this.f55514e = 0;
+                            this.f55529d.b(this.f55531f, (int) this.f55532g, lVar);
+                            this.f55530e = 0;
                             return true;
                         }
-                        long j11 = this.f55516g;
+                        long j11 = this.f55532g;
                         if (j11 <= 2147483647L) {
-                            this.f55513d.g(this.f55515f, f(lVar, (int) j11));
-                            this.f55514e = 0;
+                            this.f55529d.g(this.f55531f, f(lVar, (int) j11));
+                            this.f55530e = 0;
                             return true;
                         }
-                        throw l0.a("String element size: " + this.f55516g, null);
+                        throw l0.a("String element size: " + this.f55532g, null);
                     }
-                    long j12 = this.f55516g;
+                    long j12 = this.f55532g;
                     if (j12 <= 8) {
-                        this.f55513d.d(this.f55515f, e(lVar, (int) j12));
-                        this.f55514e = 0;
+                        this.f55529d.d(this.f55531f, e(lVar, (int) j12));
+                        this.f55530e = 0;
                         return true;
                     }
-                    throw l0.a("Invalid integer size: " + this.f55516g, null);
+                    throw l0.a("Invalid integer size: " + this.f55532g, null);
                 }
                 long position = lVar.getPosition();
-                this.f55511b.push(new b(this.f55515f, this.f55516g + position));
-                this.f55513d.h(this.f55515f, position, this.f55516g);
-                this.f55514e = 0;
+                this.f55527b.push(new b(this.f55531f, this.f55532g + position));
+                this.f55529d.h(this.f55531f, position, this.f55532g);
+                this.f55530e = 0;
                 return true;
             }
-            lVar.k((int) this.f55516g);
-            this.f55514e = 0;
+            lVar.k((int) this.f55532g);
+            this.f55530e = 0;
         }
     }
 
     @Override // zc.c
     public void b(zc.b bVar) {
-        this.f55513d = bVar;
+        this.f55529d = bVar;
     }
 
     @Override // zc.c
     public void reset() {
-        this.f55514e = 0;
-        this.f55511b.clear();
-        this.f55512c.e();
+        this.f55530e = 0;
+        this.f55527b.clear();
+        this.f55528c.e();
     }
 }

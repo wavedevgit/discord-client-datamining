@@ -141,7 +141,7 @@ public final class w implements vm.k {
                 TextView realTimeHint = wVar.f23446b.f25456t;
                 Intrinsics.checkNotNullExpressionValue(realTimeHint, "realTimeHint");
                 w.e0(wVar, realTimeHint, str, 0, 2, null);
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
         }
 
@@ -173,12 +173,12 @@ public final class w implements vm.k {
                     return f10;
                 }
             }
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -211,15 +211,15 @@ public final class w implements vm.k {
             f23473a = iArr;
             int[] iArr2 = new int[v.b.values().length];
             try {
-                iArr2[v.b.f39319d.ordinal()] = 1;
+                iArr2[v.b.f39335d.ordinal()] = 1;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                iArr2[v.b.f39320e.ordinal()] = 2;
+                iArr2[v.b.f39336e.ordinal()] = 2;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                iArr2[v.b.f39321i.ordinal()] = 3;
+                iArr2[v.b.f39337i.ordinal()] = 3;
             } catch (NoSuchFieldError unused6) {
             }
             f23474b = iArr2;
@@ -297,15 +297,15 @@ public final class w implements vm.k {
             static {
                 int[] iArr = new int[v.b.values().length];
                 try {
-                    iArr[v.b.f39319d.ordinal()] = 1;
+                    iArr[v.b.f39335d.ordinal()] = 1;
                 } catch (NoSuchFieldError unused) {
                 }
                 try {
-                    iArr[v.b.f39320e.ordinal()] = 2;
+                    iArr[v.b.f39336e.ordinal()] = 2;
                 } catch (NoSuchFieldError unused2) {
                 }
                 try {
-                    iArr[v.b.f39321i.ordinal()] = 3;
+                    iArr[v.b.f39337i.ordinal()] = 3;
                 } catch (NoSuchFieldError unused3) {
                 }
                 f23480a = iArr;
@@ -320,7 +320,7 @@ public final class w implements vm.k {
         public static final Unit c(x5.d.a aVar, mn.k it) {
             Intrinsics.checkNotNullParameter(it, "it");
             aVar.l().invoke(it);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         @Override // mn.y
@@ -333,15 +333,15 @@ public final class w implements vm.k {
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 == 3) {
-                        aVar = t.a.f39292i;
+                        aVar = t.a.f39308i;
                     } else {
                         throw new ir.p();
                     }
                 } else {
-                    aVar = t.a.f39291e;
+                    aVar = t.a.f39307e;
                 }
             } else {
-                aVar = t.a.f39290d;
+                aVar = t.a.f39306d;
             }
             t.a aVar2 = aVar;
             mn.w0 w0Var = w.this.f23448d;
@@ -385,7 +385,7 @@ public final class w implements vm.k {
             /* renamed from: a */
             public final Object emit(mn.x xVar, Continuation continuation) {
                 Function1 function1;
-                if (Intrinsics.areEqual(xVar, x.b.f39337a)) {
+                if (Intrinsics.areEqual(xVar, x.b.f39353a)) {
                     Function1 function12 = this.f23484d.f23457m;
                     if (function12 != null) {
                         function12.invoke(new mn.e1());
@@ -393,7 +393,7 @@ public final class w implements vm.k {
                 } else if ((xVar instanceof x.a) && ((x.a) xVar).a() && (function1 = this.f23484d.f23457m) != null) {
                     function1.invoke(new mn.u0());
                 }
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
         }
 
@@ -428,12 +428,12 @@ public final class w implements vm.k {
                     return f10;
                 }
             }
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((e) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -500,12 +500,12 @@ public final class w implements vm.k {
                 aVar.l().invoke(e10);
                 ((x5.d.a.AbstractC0308a.c) abstractC0308a2).c().invoke();
             }
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((f) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((f) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -548,7 +548,7 @@ public final class w implements vm.k {
                 or.b.f();
                 if (this.f23492d == 0) {
                     kotlin.c.b(obj);
-                    return kotlin.coroutines.jvm.internal.b.a(!Intrinsics.areEqual((mn.x) this.f23493e, x.e.f39340a));
+                    return kotlin.coroutines.jvm.internal.b.a(!Intrinsics.areEqual((mn.x) this.f23493e, x.e.f39356a));
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
@@ -556,7 +556,7 @@ public final class w implements vm.k {
             @Override // kotlin.jvm.functions.Function2
             /* renamed from: j */
             public final Object invoke(mn.x xVar, Continuation continuation) {
-                return ((a) create(xVar, continuation)).invokeSuspend(Unit.f33282a);
+                return ((a) create(xVar, continuation)).invokeSuspend(Unit.f33298a);
             }
         }
 
@@ -610,12 +610,12 @@ public final class w implements vm.k {
                     ((File) i10).delete();
                 }
                 ((x5.d.a.AbstractC0308a.g) this.f23496i).b().invoke(this.f23495e.b());
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+                return ((b) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
             }
         }
 
@@ -689,7 +689,7 @@ public final class w implements vm.k {
             L4f:
                 return r0
             L50:
-                kotlin.Unit r7 = kotlin.Unit.f33282a
+                kotlin.Unit r7 = kotlin.Unit.f33298a
                 return r7
             */
             throw new UnsupportedOperationException("Method not decompiled: ep.w.g.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -697,7 +697,7 @@ public final class w implements vm.k {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((g) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((g) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -753,14 +753,14 @@ public final class w implements vm.k {
                 if (function1 != null) {
                     function1.invoke(new mn.v0());
                 }
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((h) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((h) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -860,7 +860,7 @@ public final class w implements vm.k {
                     java.lang.Object r7 = r7.getValue()
                     boolean r7 = r7 instanceof mn.x.a
                     if (r7 == 0) goto L49
-                    kotlin.Unit r7 = kotlin.Unit.f33282a
+                    kotlin.Unit r7 = kotlin.Unit.f33298a
                     return r7
                 L49:
                     mn.i r7 = r6.f23507i
@@ -882,7 +882,7 @@ public final class w implements vm.k {
                     r0.<init>()
                     r7.invoke(r0)
                 L6f:
-                    kotlin.Unit r7 = kotlin.Unit.f33282a
+                    kotlin.Unit r7 = kotlin.Unit.f33298a
                     return r7
                 */
                 throw new UnsupportedOperationException("Method not decompiled: ep.w.i.a.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -890,7 +890,7 @@ public final class w implements vm.k {
 
             @Override // kotlin.jvm.functions.Function2
             public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+                return ((a) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
             }
         }
 
@@ -945,12 +945,12 @@ public final class w implements vm.k {
             if (e10 != null) {
                 ((x5.d.a.AbstractC0308a.b) abstractC0308a2).d().invoke(e10);
             }
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((i) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((i) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -1069,7 +1069,7 @@ public final class w implements vm.k {
             L8b:
                 ep.w r6 = ep.w.this
                 ep.w.I(r6, r0)
-                kotlin.Unit r6 = kotlin.Unit.f33282a
+                kotlin.Unit r6 = kotlin.Unit.f33298a
                 return r6
             */
             throw new UnsupportedOperationException("Method not decompiled: ep.w.j.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -1077,7 +1077,7 @@ public final class w implements vm.k {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation continuation) {
-            return ((j) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((j) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -1183,22 +1183,22 @@ public final class w implements vm.k {
         Context context = this.f23446b.getRoot().getContext();
         Camera2PreviewView camera2Preview = this.f23446b.f25441e;
         Intrinsics.checkNotNullExpressionValue(camera2Preview, "camera2Preview");
-        if (aVar.x() != sn.a.f49092i) {
+        if (aVar.x() != sn.a.f49108i) {
             Context applicationContext = context.getApplicationContext();
             Intrinsics.checkNotNullExpressionValue(applicationContext, "getApplicationContext(...)");
             int i10 = b.f23474b[aVar.g().ordinal()];
             if (i10 != 1) {
                 if (i10 != 2) {
                     if (i10 == 3) {
-                        nVar = on.n.f44575i;
+                        nVar = on.n.f44591i;
                     } else {
                         throw new ir.p();
                     }
                 } else {
-                    nVar = on.n.f44574e;
+                    nVar = on.n.f44590e;
                 }
             } else {
-                nVar = on.n.f44573d;
+                nVar = on.n.f44589d;
             }
             on.m b10 = on.j.b(applicationContext, nVar);
             if (b10 == null) {
@@ -1290,7 +1290,7 @@ public final class w implements vm.k {
         if (iVar != null) {
             v.b b10 = iVar.b().b();
             if (z10) {
-                if (b10 == v.b.f39319d) {
+                if (b10 == v.b.f39335d) {
                     this.f23446b.f25458v.setVisibility(0);
                     Context context = this.f23446b.getRoot().getContext();
                     Intrinsics.checkNotNullExpressionValue(context, "getContext(...)");
@@ -1304,7 +1304,7 @@ public final class w implements vm.k {
                     return;
                 }
                 iVar.a(true);
-            } else if (b10 == v.b.f39319d) {
+            } else if (b10 == v.b.f39335d) {
                 this.f23446b.f25458v.setVisibility(8);
                 Context context2 = this.f23446b.getRoot().getContext();
                 Intrinsics.checkNotNullExpressionValue(context2, "getContext(...)");
@@ -1433,13 +1433,13 @@ public final class w implements vm.k {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit i0(x5.d.a aVar) {
         aVar.k().invoke();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit j0(x5.d.a aVar) {
         aVar.n().invoke();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1454,7 +1454,7 @@ public final class w implements vm.k {
         PreviewView previewviewSelfieCamera = wVar.f23446b.f25454r;
         Intrinsics.checkNotNullExpressionValue(previewviewSelfieCamera, "previewviewSelfieCamera");
         pn.b.a(w0Var, iVar, previewviewSelfieCamera);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1465,7 +1465,7 @@ public final class w implements vm.k {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit n0(fp.c cVar) {
         cVar.f25459w.setIntensity(0.0f);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1476,17 +1476,17 @@ public final class w implements vm.k {
             wVar.v0(aVar);
             ((x5.d.a.AbstractC0308a.h) abstractC0308a).c().invoke();
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit p0() {
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit q0() {
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */

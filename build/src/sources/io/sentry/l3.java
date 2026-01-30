@@ -13,67 +13,67 @@ import java.util.Date;
 public final class l3 implements Runnable {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final Charset f30129i = Charset.forName("UTF-8");
+    private static final Charset f30145i = Charset.forName("UTF-8");
 
     /* renamed from: d  reason: collision with root package name */
-    private final k7 f30130d;
+    private final k7 f30146d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final w0 f30131e;
+    private final w0 f30147e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public l3(k7 k7Var, w0 w0Var) {
-        this.f30130d = k7Var;
-        this.f30131e = w0Var;
+        this.f30146d = k7Var;
+        this.f30147e = w0Var;
     }
 
     private Date a(File file) {
         try {
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(file), f30129i));
+            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(file), f30145i));
             String readLine = bufferedReader.readLine();
-            this.f30130d.getLogger().c(SentryLevel.DEBUG, "Crash marker file has %s timestamp.", readLine);
+            this.f30146d.getLogger().c(SentryLevel.DEBUG, "Crash marker file has %s timestamp.", readLine);
             Date f10 = k.f(readLine);
             bufferedReader.close();
             return f10;
         } catch (IOException e10) {
-            this.f30130d.getLogger().b(SentryLevel.ERROR, "Error reading the crash marker file.", e10);
+            this.f30146d.getLogger().b(SentryLevel.ERROR, "Error reading the crash marker file.", e10);
             return null;
         } catch (IllegalArgumentException e11) {
-            this.f30130d.getLogger().a(SentryLevel.ERROR, e11, "Error converting the crash timestamp.", new Object[0]);
+            this.f30146d.getLogger().a(SentryLevel.ERROR, e11, "Error converting the crash timestamp.", new Object[0]);
             return null;
         }
     }
 
     @Override // java.lang.Runnable
     public void run() {
-        String cacheDirPath = this.f30130d.getCacheDirPath();
+        String cacheDirPath = this.f30146d.getCacheDirPath();
         if (cacheDirPath == null) {
-            this.f30130d.getLogger().c(SentryLevel.INFO, "Cache dir is not set, not finalizing the previous session.", new Object[0]);
-        } else if (!this.f30130d.isEnableAutoSessionTracking()) {
-            this.f30130d.getLogger().c(SentryLevel.DEBUG, "Session tracking is disabled, bailing from previous session finalizer.", new Object[0]);
+            this.f30146d.getLogger().c(SentryLevel.INFO, "Cache dir is not set, not finalizing the previous session.", new Object[0]);
+        } else if (!this.f30146d.isEnableAutoSessionTracking()) {
+            this.f30146d.getLogger().c(SentryLevel.DEBUG, "Session tracking is disabled, bailing from previous session finalizer.", new Object[0]);
         } else {
-            io.sentry.cache.g envelopeDiskCache = this.f30130d.getEnvelopeDiskCache();
+            io.sentry.cache.g envelopeDiskCache = this.f30146d.getEnvelopeDiskCache();
             if ((envelopeDiskCache instanceof io.sentry.cache.f) && !((io.sentry.cache.f) envelopeDiskCache).C()) {
-                this.f30130d.getLogger().c(SentryLevel.WARNING, "Timed out waiting to flush previous session to its own file in session finalizer.", new Object[0]);
+                this.f30146d.getLogger().c(SentryLevel.WARNING, "Timed out waiting to flush previous session to its own file in session finalizer.", new Object[0]);
                 return;
             }
             File w10 = io.sentry.cache.f.w(cacheDirPath);
-            b1 serializer = this.f30130d.getSerializer();
+            b1 serializer = this.f30146d.getSerializer();
             if (w10.exists()) {
-                this.f30130d.getLogger().c(SentryLevel.WARNING, "Current session is not ended, we'd need to end it.", new Object[0]);
+                this.f30146d.getLogger().c(SentryLevel.WARNING, "Current session is not ended, we'd need to end it.", new Object[0]);
                 try {
-                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(w10), f30129i));
+                    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(w10), f30145i));
                     z7 z7Var = (z7) serializer.c(bufferedReader, z7.class);
                     if (z7Var == null) {
-                        this.f30130d.getLogger().c(SentryLevel.ERROR, "Stream from path %s resulted in a null envelope.", w10.getAbsolutePath());
+                        this.f30146d.getLogger().c(SentryLevel.ERROR, "Stream from path %s resulted in a null envelope.", w10.getAbsolutePath());
                     } else {
-                        File file = new File(this.f30130d.getCacheDirPath(), ".sentry-native/last_crash");
+                        File file = new File(this.f30146d.getCacheDirPath(), ".sentry-native/last_crash");
                         Date date = null;
                         if (file.exists()) {
-                            this.f30130d.getLogger().c(SentryLevel.INFO, "Crash marker file exists, last Session is gonna be Crashed.", new Object[0]);
+                            this.f30146d.getLogger().c(SentryLevel.INFO, "Crash marker file exists, last Session is gonna be Crashed.", new Object[0]);
                             Date a10 = a(file);
                             if (!file.delete()) {
-                                this.f30130d.getLogger().c(SentryLevel.ERROR, "Failed to delete the crash marker file. %s.", file.getAbsolutePath());
+                                this.f30146d.getLogger().c(SentryLevel.ERROR, "Failed to delete the crash marker file. %s.", file.getAbsolutePath());
                             }
                             z7Var.p(z7.b.Crashed, null, true);
                             date = a10;
@@ -81,14 +81,14 @@ public final class l3 implements Runnable {
                         if (z7Var.f() == null) {
                             z7Var.d(date);
                         }
-                        this.f30131e.w(l5.a(serializer, z7Var, this.f30130d.getSdkVersion()));
+                        this.f30147e.w(l5.a(serializer, z7Var, this.f30146d.getSdkVersion()));
                     }
                     bufferedReader.close();
                 } catch (Throwable th2) {
-                    this.f30130d.getLogger().b(SentryLevel.ERROR, "Error processing previous session.", th2);
+                    this.f30146d.getLogger().b(SentryLevel.ERROR, "Error processing previous session.", th2);
                 }
                 if (!w10.delete()) {
-                    this.f30130d.getLogger().c(SentryLevel.WARNING, "Failed to delete the previous session file.", new Object[0]);
+                    this.f30146d.getLogger().c(SentryLevel.WARNING, "Failed to delete the previous session file.", new Object[0]);
                 }
             }
         }

@@ -36,7 +36,7 @@ public abstract class c {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit c(e eVar) {
         eVar.i();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     public static final TextWatcher d(EditText editText, Function1 action) {
@@ -64,23 +64,23 @@ public abstract class c {
                 arrayList.add(0, aVar);
                 return aVar;
             }
-            jm.a.e(jm.a.f32237a, editText.getClass().getSimpleName(), "Can not attach listener because `fieldValue` does not belong to `ArrayList<TextWatcher>`", null, 4, null);
+            jm.a.e(jm.a.f32253a, editText.getClass().getSimpleName(), "Can not attach listener because `fieldValue` does not belong to `ArrayList<TextWatcher>`", null, 4, null);
             return aVar;
         } catch (ClassCastException e10) {
-            jm.a aVar2 = jm.a.f32237a;
+            jm.a aVar2 = jm.a.f32253a;
             String simpleName = editText.getClass().getSimpleName();
             String message = e10.getMessage();
             jm.a.e(aVar2, simpleName, "Can not attach listener because casting failed: " + message, null, 4, null);
             return aVar;
         } catch (IllegalArgumentException e11) {
-            jm.a aVar3 = jm.a.f32237a;
+            jm.a aVar3 = jm.a.f32253a;
             String simpleName2 = editText.getClass().getSimpleName();
             String message2 = e11.getMessage();
             jm.a.e(aVar3, simpleName2, "Can not attach listener to be the first in the list: " + message2 + ". Attaching to the end...", null, 4, null);
             editText.addTextChangedListener(aVar);
             return aVar;
         } catch (NoSuchFieldException e12) {
-            jm.a aVar4 = jm.a.f32237a;
+            jm.a aVar4 = jm.a.f32253a;
             String simpleName3 = editText.getClass().getSimpleName();
             String message3 = e12.getMessage();
             jm.a.e(aVar4, simpleName3, "Can not attach listener because field `mListeners` not found: " + message3, null, 4, null);

@@ -5,7 +5,7 @@ import ui.c;
 final class qb implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final qb f45662a = new qb();
+    static final qb f45678a = new qb();
 
     static {
         c.b a10 = ui.c.a("subjectSegmenterOptions");

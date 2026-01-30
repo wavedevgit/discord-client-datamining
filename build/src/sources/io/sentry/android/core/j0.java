@@ -5,13 +5,13 @@ import android.net.TrafficStats;
 public final class j0 implements io.sentry.c1 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final j0 f29085a = new j0();
+    private static final j0 f29101a = new j0();
 
     private j0() {
     }
 
     public static j0 c() {
-        return f29085a;
+        return f29101a;
     }
 
     @Override // io.sentry.c1

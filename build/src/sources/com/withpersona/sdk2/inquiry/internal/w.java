@@ -221,7 +221,7 @@ public abstract class w implements Parcelable {
         }
 
         public /* synthetic */ a(b2 b2Var, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-            this((i10 & 1) != 0 ? b2.f39369e : b2Var);
+            this((i10 & 1) != 0 ? b2.f39385e : b2Var);
         }
 
         public final b2 a() {

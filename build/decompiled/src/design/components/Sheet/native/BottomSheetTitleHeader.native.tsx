@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
     var0 = function(arg0) { // Original name: RedesignBottomSheetTitleHeaderBase, environment: var1
-        _fun46243: for (var _fun46243_ip = 0;;) switch (_fun46243_ip) {
+        _fun46294: for (var _fun46294_ip = 0;;) switch (_fun46294_ip) {
             case 0:
                 var0 = arg0;
                 var11 = var0.title;
@@ -39,8 +39,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = null;
                 var10 = var8 != var12;
                 if (!var10) {
-                    _fun46243_ip = 131;
-                    continue _fun46243
+                    _fun46294_ip = 131;
+                    continue _fun46294
                 }
             case 111:
                 var11 = _closure1_slot6;
@@ -59,7 +59,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot11 = var0;
     var0 = function(arg0) { // Original name: RedesignBottomSheetTitleHeaderStacked, environment: var1
-        _fun46244: for (var _fun46244_ip = 0;;) switch (_fun46244_ip) {
+        _fun46295: for (var _fun46295_ip = 0;;) switch (_fun46295_ip) {
             case 0:
                 var0 = arg0;
                 var12 = var0.title;
@@ -123,8 +123,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = null;
                 var11 = var9 != var13;
                 if (!var11) {
-                    _fun46244_ip = 276;
-                    continue _fun46244
+                    _fun46295_ip = 276;
+                    continue _fun46295
                 }
             case 256:
                 var12 = _closure1_slot6;
@@ -144,7 +144,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot12 = var0;
     var0 = function(arg0) { // Original name: RedesignBottomSheetTitleHeaderComplex, environment: var1
-        _fun46245: for (var _fun46245_ip = 0;;) switch (_fun46245_ip) {
+        _fun46296: for (var _fun46296_ip = 0;;) switch (_fun46296_ip) {
             case 0:
                 var1 = arg0;
                 var18 = var1.title;
@@ -190,7 +190,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = _closure2_slot0;
                     var0 = undefined;
                     var1 = function(arg0) { // Environment: var1
-                        _fun46247: for (var _fun46247_ip = 0;;) switch (_fun46247_ip) {
+                        _fun46298: for (var _fun46298_ip = 0;;) switch (_fun46298_ip) {
                             case 0:
                                 var0 = arg0;
                                 var1 = global;
@@ -200,8 +200,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                                 var4 = var1 != var0;
                                 var1 = 0;
                                 if (!var4) {
-                                    _fun46247_ip = 30;
-                                    continue _fun46247
+                                    _fun46298_ip = 30;
+                                    continue _fun46298
                                 }
                             case 27:
                                 var1 = var0;
@@ -248,8 +248,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = null;
                 var17 = var16 != var20;
                 if (!var17) {
-                    _fun46245_ip = 311;
-                    continue _fun46245
+                    _fun46296_ip = 311;
+                    continue _fun46296
                 }
             case 291:
                 var19 = _closure1_slot6;
@@ -474,7 +474,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Sheet/native/BottomSheetTitleHeader.native.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: BottomSheetTitleHeader, environment: var1
-        _fun46253: for (var _fun46253_ip = 0;;) switch (_fun46253_ip) {
+        _fun46304: for (var _fun46304_ip = 0;;) switch (_fun46304_ip) {
             case 0:
                 var6 = arg0;
                 var9 = var6.leading;
@@ -494,35 +494,35 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var _closure2_slot0 = var4;
                 var4 = null;
                 if (!(var4 != var9)) {
-                    _fun46253_ip = 86;
-                    continue _fun46253
+                    _fun46304_ip = 86;
+                    continue _fun46304
                 }
             case 74:
                 if (!(var0 !== var9)) {
-                    _fun46253_ip = 86;
-                    continue _fun46253
+                    _fun46304_ip = 86;
+                    continue _fun46304
                 }
             case 78:
                 var8 = '';
                 if (!(var8 === var9)) {
-                    _fun46253_ip = 130;
-                    continue _fun46253
+                    _fun46304_ip = 130;
+                    continue _fun46304
                 }
             case 86:
                 if (!(var4 != var3)) {
-                    _fun46253_ip = 102;
-                    continue _fun46253
+                    _fun46304_ip = 102;
+                    continue _fun46304
                 }
             case 90:
                 if (!(var0 !== var3)) {
-                    _fun46253_ip = 102;
-                    continue _fun46253
+                    _fun46304_ip = 102;
+                    continue _fun46304
                 }
             case 94:
                 var0 = '';
                 if (!(var0 === var3)) {
-                    _fun46253_ip = 130;
-                    continue _fun46253
+                    _fun46304_ip = 130;
+                    continue _fun46304
                 }
             case 102:
                 var4 = _closure1_slot6;
@@ -532,13 +532,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var6;
                 var8 = copyDataProperties(var11, var10);
                 var0 = var4.bind(var5)(var3, var0);
-                _fun46253_ip = 202;
-                continue _fun46253;
+                _fun46304_ip = 202;
+                continue _fun46304;
             case 130:
                 var4 = _closure1_slot6;
                 if (var1) {
-                    _fun46253_ip = 177;
-                    continue _fun46253
+                    _fun46304_ip = 177;
+                    continue _fun46304
                 }
             case 137:
                 var3 = _closure1_slot13;
@@ -561,8 +561,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = 'onTitleTextLayout';
                 var1[var7] = var8;
                 var1 = var4.bind(var5)(var3, var1);
-                _fun46253_ip = 199;
-                continue _fun46253;
+                _fun46304_ip = 199;
+                continue _fun46304;
             case 177:
                 var3 = _closure1_slot12;
                 var2 = {};
@@ -578,4 +578,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.BottomSheetTitleHeader = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 1464, 4832, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 1464, 4838, 2]);

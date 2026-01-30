@@ -112,7 +112,7 @@ public final class i {
                         z11 = false;
                     }
                     z12 = z11;
-                    Unit unit = Unit.f33282a;
+                    Unit unit = Unit.f33298a;
                 } catch (Throwable th2) {
                     throw th2;
                 }
@@ -130,7 +130,7 @@ public final class i {
             boolean z10;
             boolean z11;
             i iVar = i.this;
-            if (ut.e.f50563h && Thread.holdsLock(iVar)) {
+            if (ut.e.f50579h && Thread.holdsLock(iVar)) {
                 throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + iVar);
             }
             i iVar2 = i.this;
@@ -143,7 +143,7 @@ public final class i {
                 } else {
                     z10 = false;
                 }
-                Unit unit = Unit.f33282a;
+                Unit unit = Unit.f33298a;
                 if (!i.this.o().f7991d) {
                     if (this.f7992e.size() > 0) {
                         z11 = true;
@@ -169,7 +169,7 @@ public final class i {
                 }
                 synchronized (i.this) {
                     this.f7994o = true;
-                    Unit unit2 = Unit.f33282a;
+                    Unit unit2 = Unit.f33298a;
                 }
                 i.this.g().flush();
                 i.this.b();
@@ -179,13 +179,13 @@ public final class i {
         @Override // okio.Sink, java.io.Flushable
         public void flush() {
             i iVar = i.this;
-            if (ut.e.f50563h && Thread.holdsLock(iVar)) {
+            if (ut.e.f50579h && Thread.holdsLock(iVar)) {
                 throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + iVar);
             }
             i iVar2 = i.this;
             synchronized (iVar2) {
                 iVar2.c();
-                Unit unit = Unit.f33282a;
+                Unit unit = Unit.f33298a;
             }
             while (this.f7992e.size() > 0) {
                 a(false);
@@ -205,7 +205,7 @@ public final class i {
         public void t0(Buffer source, long j10) {
             Intrinsics.checkNotNullParameter(source, "source");
             i iVar = i.this;
-            if (ut.e.f50563h && Thread.holdsLock(iVar)) {
+            if (ut.e.f50579h && Thread.holdsLock(iVar)) {
                 throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + iVar);
             }
             this.f7992e.t0(source, j10);
@@ -248,7 +248,7 @@ public final class i {
 
         private final void B(long j10) {
             i iVar = i.this;
-            if (ut.e.f50563h && Thread.holdsLock(iVar)) {
+            if (ut.e.f50579h && Thread.holdsLock(iVar)) {
                 throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + iVar);
             }
             i.this.g().w2(j10);
@@ -268,7 +268,7 @@ public final class i {
                 this.f7999o.l();
                 Intrinsics.checkNotNull(iVar, "null cannot be cast to non-null type java.lang.Object");
                 iVar.notifyAll();
-                Unit unit = Unit.f33282a;
+                Unit unit = Unit.f33298a;
             }
             if (size > 0) {
                 B(size);
@@ -286,7 +286,7 @@ public final class i {
             boolean z12;
             Intrinsics.checkNotNullParameter(source, "source");
             i iVar = i.this;
-            if (ut.e.f50563h && Thread.holdsLock(iVar)) {
+            if (ut.e.f50579h && Thread.holdsLock(iVar)) {
                 throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + iVar);
             }
             long j11 = j10;
@@ -299,7 +299,7 @@ public final class i {
                     } else {
                         z12 = false;
                     }
-                    Unit unit = Unit.f33282a;
+                    Unit unit = Unit.f33298a;
                 }
                 if (z12) {
                     source.skip(j11);
@@ -426,7 +426,7 @@ public final class i {
             La0:
                 bu.i$d r4 = r6.m()     // Catch: java.lang.Throwable -> Lb9
                 r4.C()     // Catch: java.lang.Throwable -> Lb9
-                kotlin.Unit r4 = kotlin.Unit.f33282a     // Catch: java.lang.Throwable -> Lb9
+                kotlin.Unit r4 = kotlin.Unit.f33298a     // Catch: java.lang.Throwable -> Lb9
                 monitor-exit(r6)
                 if (r11 == 0) goto Lb0
                 r4 = 0
@@ -532,7 +532,7 @@ public final class i {
     }
 
     private final boolean e(bu.b bVar, IOException iOException) {
-        if (ut.e.f50563h && Thread.holdsLock(this)) {
+        if (ut.e.f50579h && Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
         synchronized (this) {
@@ -546,7 +546,7 @@ public final class i {
             if (this.f7985i.h() && this.f7986j.l()) {
                 return false;
             }
-            Unit unit = Unit.f33282a;
+            Unit unit = Unit.f33298a;
             this.f7978b.p2(this.f7977a);
             return true;
         }
@@ -607,7 +607,7 @@ public final class i {
     public final void b() {
         boolean z10;
         boolean u10;
-        if (ut.e.f50563h && Thread.holdsLock(this)) {
+        if (ut.e.f50579h && Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
         synchronized (this) {
@@ -615,11 +615,11 @@ public final class i {
                 if (this.f7985i.h() || !this.f7985i.a() || (!this.f7986j.l() && !this.f7986j.h())) {
                     z10 = false;
                     u10 = u();
-                    Unit unit = Unit.f33282a;
+                    Unit unit = Unit.f33298a;
                 }
                 z10 = true;
                 u10 = u();
-                Unit unit2 = Unit.f33282a;
+                Unit unit2 = Unit.f33298a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -700,7 +700,7 @@ public final class i {
                 if (!this.f7984h && !t()) {
                     throw new IllegalStateException("reply before requesting the sink");
                 }
-                Unit unit = Unit.f33282a;
+                Unit unit = Unit.f33298a;
             } catch (Throwable th2) {
                 throw th2;
             }
@@ -768,7 +768,7 @@ public final class i {
 
     public final void w(BufferedSource source, int i10) {
         Intrinsics.checkNotNullParameter(source, "source");
-        if (ut.e.f50563h && Thread.holdsLock(this)) {
+        if (ut.e.f50579h && Thread.holdsLock(this)) {
             throw new AssertionError("Thread " + Thread.currentThread().getName() + " MUST NOT hold lock on " + this);
         }
         this.f7985i.l(source, i10);
@@ -784,7 +784,7 @@ public final class i {
             r2 = this;
             java.lang.String r0 = "headers"
             kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r3, r0)
-            boolean r0 = ut.e.f50563h
+            boolean r0 = ut.e.f50579h
             if (r0 == 0) goto L37
             boolean r0 = java.lang.Thread.holdsLock(r2)
             if (r0 != 0) goto L10
@@ -831,7 +831,7 @@ public final class i {
             java.lang.String r4 = "null cannot be cast to non-null type java.lang.Object"
             kotlin.jvm.internal.Intrinsics.checkNotNull(r2, r4)     // Catch: java.lang.Throwable -> L46
             r2.notifyAll()     // Catch: java.lang.Throwable -> L46
-            kotlin.Unit r4 = kotlin.Unit.f33282a     // Catch: java.lang.Throwable -> L46
+            kotlin.Unit r4 = kotlin.Unit.f33298a     // Catch: java.lang.Throwable -> L46
             monitor-exit(r2)
             if (r3 != 0) goto L6e
             bu.f r3 = r2.f7978b

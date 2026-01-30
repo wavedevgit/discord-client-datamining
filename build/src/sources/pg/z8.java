@@ -5,7 +5,7 @@ import ui.c;
 final class z8 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final z8 f45956a = new z8();
+    static final z8 f45972a = new z8();
 
     static {
         c.b a10 = ui.c.a("errorCode");

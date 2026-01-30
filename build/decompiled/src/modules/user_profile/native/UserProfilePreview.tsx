@@ -49,7 +49,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var4.bind(var0)(var3);
     var6 = var7.createStyles;
     var3 = function(arg0, arg1, arg2) { // Environment: var1
-        _fun56889: for (var _fun56889_ip = 0;;) switch (_fun56889_ip) {
+        _fun56933: for (var _fun56933_ip = 0;;) switch (_fun56933_ip) {
             case 0:
                 var4 = arg1;
                 var3 = arg2;
@@ -64,8 +64,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var2 != var3;
                 var2 = 263;
                 if (!var5) {
-                    _fun56889_ip = 40;
-                    continue _fun56889
+                    _fun56933_ip = 40;
+                    continue _fun56933
                 }
             case 37:
                 var2 = var3;
@@ -74,8 +74,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = 350;
                 var3 = arg0;
                 if (!var3) {
-                    _fun56889_ip = 59;
-                    continue _fun56889
+                    _fun56933_ip = 59;
+                    continue _fun56933
                 }
             case 57:
                 var2 = undefined;
@@ -84,8 +84,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = 1;
                 var3 = var2;
                 if (!var4) {
-                    _fun56889_ip = 75;
-                    continue _fun56889
+                    _fun56933_ip = 75;
+                    continue _fun56933
                 }
             case 73:
                 var3 = undefined;
@@ -99,13 +99,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var8.bind(var5)(var7);
                 var7 = var7.colors;
                 if (var4) {
-                    _fun56889_ip = 121;
-                    continue _fun56889
+                    _fun56933_ip = 121;
+                    continue _fun56933
                 }
             case 113:
                 var4 = var7.BACKGROUND_SURFACE_HIGH;
-                _fun56889_ip = 127;
-                continue _fun56889;
+                _fun56933_ip = 127;
+                continue _fun56933;
             case 121:
                 var4 = var7.BORDER_MUTED;
             case 127:
@@ -143,138 +143,49 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/native/UserProfilePreview.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: UserProfilePreview, environment: var1
-        _fun56890: for (var _fun56890_ip = 0;;) switch (_fun56890_ip) {
+        _fun56934: for (var _fun56934_ip = 0;;) switch (_fun56934_ip) {
             case 0:
                 var1 = arg0;
                 var25 = var1.user;
                 var33 = var1.displayName;
                 var27 = var1.guildId;
-                var7 = var1.pendingProfileEffectRecord;
+                var13 = var1.pendingProfileEffectRecord;
                 var28 = var1.pendingDisplayNameStyles;
                 var16 = var1.style;
                 var19 = var1.compact;
                 var3 = undefined;
                 if (!(var19 === var3)) {
-                    _fun56890_ip = 51;
-                    continue _fun56890
+                    _fun56934_ip = 51;
+                    continue _fun56934
                 }
             case 49:
                 var19 = false;
             case 51:
                 var24 = var1.bioLineClamp;
-                var10 = var1.maxWidth;
+                var12 = var1.maxWidth;
                 var37 = var1.gradientFullHeight;
                 if (!(var37 === var3)) {
-                    _fun56890_ip = 75;
-                    continue _fun56890
+                    _fun56934_ip = 75;
+                    continue _fun56934
                 }
             case 73:
                 var37 = false;
             case 75:
                 var5 = var1.additionalBadges;
                 if (!(var5 === var3)) {
-                    _fun56890_ip = 89;
-                    continue _fun56890
+                    _fun56934_ip = 89;
+                    continue _fun56934
                 }
             case 85:
                 var5 = new Array(0);
             case 89:
                 var _closure2_slot0 = var3;
-                var2 = _closure1_slot1;
-                var6 = _closure1_slot2;
+                var6 = _closure1_slot0;
+                var7 = _closure1_slot2;
                 var1 = 7;
-                var1 = var6[var1];
-                var4 = var2.bind(var3)(var1);
-                var1 = var25.id;
-                var23 = var4.bind(var3)(var1, var27);
-                var1 = 8;
-                var1 = var6[var1];
-                var4 = var2.bind(var3)(var1);
-                var1 = {};
-                var1.user = var25;
-                var1.displayProfile = var23;
-                var1 = var4.bind(var3)(var1);
-                var4 = var1.theme;
-                var21 = var1.primaryColor;
-                var18 = var1.secondaryColor;
-                var8 = null;
-                var35 = var8 != var21;
-                var1 = _closure1_slot9;
-                var12 = var1.bind(var3)(var19, var35, var10);
-                var1 = 9;
-                var1 = var6[var1];
-                var1 = var2.bind(var3)(var1);
-                var34 = var1.bind(var3)();
-                var2 = _closure1_slot0;
-                var1 = 10;
-                var1 = var6[var1];
-                var2 = var2.bind(var3)(var1);
-                var1 = var2.useCustomStatusActivity;
-                var36 = var1.bind(var2)();
-                var20 = var8 != var36;
-                if (!var20) {
-                    _fun56890_ip = 242;
-                    continue _fun56890
-                }
-            case 239:
-                var20 = !var19;
-            case 242:
-                var2 = _closure1_slot0;
-                var6 = _closure1_slot2;
-                var1 = 11;
-                var1 = var6[var1];
-                var11 = var2.bind(var3)(var1);
-                var10 = var11.useUserProfileColors;
-                var1 = {};
-                var1.theme = var4;
-                var1.primaryColor = var21;
-                var1.secondaryColor = var18;
-                var1 = var10.bind(var11)(var1);
-                var22 = var1.gradientFallbackBackground;
-                var41 = var1.avatarBackground;
-                var26 = var1.containerBackground;
-                var1 = 12;
-                var1 = var6[var1];
-                var6 = var2.bind(var3)(var1);
-                var2 = var6.getProfilePreviewValue;
-                var1 = {};
-                var1.pendingValue = var7;
-                var10 = var8 == var23;
-                var7 = undefined;
-                if (var10) {
-                    _fun56890_ip = 348;
-                    continue _fun56890
-                }
-            case 342:
-                var7 = var23.profileEffect;
-            case 348:
-                var1.userValue = var7;
-                var10 = var8 == var23;
-                var7 = undefined;
-                if (var10) {
-                    _fun56890_ip = 383;
-                    continue _fun56890
-                }
-            case 362:
-                var10 = var23._guildMemberProfile;
-                var11 = var8 == var10;
-                var7 = undefined;
-                if (var11) {
-                    _fun56890_ip = 383;
-                    continue _fun56890
-                }
-            case 377:
-                var7 = var10.profileEffect;
-            case 383:
-                var1.guildValue = var7;
-                var1.guildId = var27;
-                var13 = var2.bind(var6)(var1);
-                var17 = _closure1_slot0;
-                var38 = _closure1_slot2;
-                var1 = 13;
-                var1 = var38[var1];
-                var7 = var17.bind(var3)(var1);
-                var6 = var7.useStateFromStoresObject;
+                var1 = var7[var1];
+                var8 = var6.bind(var3)(var1);
+                var4 = var8.useStateFromStoresObject;
                 var1 = _closure1_slot4;
                 var2 = new Array(1);
                 var2[0] = var1;
@@ -284,7 +195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.bind(var1)();
                     return var0;
                 };
-                var1 = var6.bind(var7)(var2, var1);
+                var1 = var4.bind(var8)(var2, var1);
                 var10 = var1.pendingAvatar;
                 var11 = var1.pendingBanner;
                 var15 = var1.pendingAccentColor;
@@ -293,6 +204,96 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var32 = var1.pendingGlobalName;
                 var31 = var1.pendingPronouns;
                 var2 = var1.pendingLegacyUsernameDisabled;
+                var17 = _closure1_slot1;
+                var1 = 8;
+                var1 = var7[var1];
+                var4 = var17.bind(var3)(var1);
+                var1 = var25.id;
+                var23 = var4.bind(var3)(var1, var27);
+                var1 = 9;
+                var1 = var7[var1];
+                var4 = var17.bind(var3)(var1);
+                var1 = {};
+                var1.user = var25;
+                var1.displayProfile = var23;
+                var1.pendingThemeColors = var14;
+                var1 = var4.bind(var3)(var1);
+                var4 = var1.theme;
+                var21 = var1.primaryColor;
+                var18 = var1.secondaryColor;
+                var8 = null;
+                var35 = var8 != var21;
+                var1 = _closure1_slot9;
+                var12 = var1.bind(var3)(var19, var35, var12);
+                var1 = 10;
+                var1 = var7[var1];
+                var1 = var17.bind(var3)(var1);
+                var34 = var1.bind(var3)();
+                var1 = 11;
+                var1 = var7[var1];
+                var6 = var6.bind(var3)(var1);
+                var1 = var6.useCustomStatusActivity;
+                var36 = var1.bind(var6)();
+                var20 = var8 != var36;
+                if (!var20) {
+                    _fun56934_ip = 336;
+                    continue _fun56934
+                }
+            case 333:
+                var20 = !var19;
+            case 336:
+                var6 = _closure1_slot0;
+                var7 = _closure1_slot2;
+                var1 = 12;
+                var1 = var7[var1];
+                var22 = var6.bind(var3)(var1);
+                var17 = var22.useUserProfileColors;
+                var1 = {};
+                var1.theme = var4;
+                var1.primaryColor = var21;
+                var1.secondaryColor = var18;
+                var1 = var17.bind(var22)(var1);
+                var22 = var1.gradientFallbackBackground;
+                var41 = var1.avatarBackground;
+                var26 = var1.containerBackground;
+                var1 = 13;
+                var1 = var7[var1];
+                var7 = var6.bind(var3)(var1);
+                var6 = var7.getProfilePreviewValue;
+                var1 = {};
+                var1.pendingValue = var13;
+                var17 = var8 == var23;
+                var13 = undefined;
+                if (var17) {
+                    _fun56934_ip = 442;
+                    continue _fun56934
+                }
+            case 436:
+                var13 = var23.profileEffect;
+            case 442:
+                var1.userValue = var13;
+                var17 = var8 == var23;
+                var13 = undefined;
+                if (var17) {
+                    _fun56934_ip = 477;
+                    continue _fun56934
+                }
+            case 456:
+                var17 = var23._guildMemberProfile;
+                var29 = var8 == var17;
+                var13 = undefined;
+                if (var29) {
+                    _fun56934_ip = 477;
+                    continue _fun56934
+                }
+            case 471:
+                var13 = var17.profileEffect;
+            case 477:
+                var1.guildValue = var13;
+                var1.guildId = var27;
+                var13 = var6.bind(var7)(var1);
+                var17 = _closure1_slot0;
+                var38 = _closure1_slot2;
                 var1 = 14;
                 var1 = var38[var1];
                 var7 = var17.bind(var3)(var1);
@@ -382,22 +383,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = var8 != var15;
                 var11 = undefined;
                 if (!var16) {
-                    _fun56890_ip = 795;
-                    continue _fun56890
+                    _fun56934_ip = 800;
+                    continue _fun56934
                 }
-            case 792:
+            case 797:
                 var11 = var15;
-            case 795:
+            case 800:
                 var7.pendingAccentColor = var11;
                 var15 = var8 != var14;
                 var11 = undefined;
                 if (!var15) {
-                    _fun56890_ip = 812;
-                    continue _fun56890
+                    _fun56934_ip = 817;
+                    continue _fun56934
                 }
-            case 809:
+            case 814:
                 var11 = var14;
-            case 812:
+            case 817:
                 var7.pendingThemeColors = var11;
                 var40 = true;
                 var7.disableInteraction = var40;
@@ -435,33 +436,33 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18[0] = var21;
                 var21 = !var20;
                 if (var20) {
-                    _fun56890_ip = 978;
-                    continue _fun56890
+                    _fun56934_ip = 983;
+                    continue _fun56934
                 }
-            case 964:
+            case 969:
                 var22 = {};
                 var38 = _closure1_slot5;
                 var22.paddingTop = var38;
                 var21 = var22;
-            case 978:
+            case 983:
                 var18[1] = var21;
                 var21 = {};
                 var22 = undefined;
                 if (!var37) {
-                    _fun56890_ip = 995;
-                    continue _fun56890
+                    _fun56934_ip = 1000;
+                    continue _fun56934
                 }
-            case 989:
+            case 994:
                 var22 = '100%';
-            case 995:
+            case 1000:
                 var21.height = var22;
                 var18[2] = var21;
                 var16.containerStyle = var18;
                 if (!var20) {
-                    _fun56890_ip = 1089;
-                    continue _fun56890
+                    _fun56934_ip = 1094;
+                    continue _fun56934
                 }
-            case 1011:
+            case 1016:
                 var22 = _closure1_slot7;
                 var21 = _closure1_slot1;
                 var37 = _closure1_slot2;
@@ -479,7 +480,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var34 = var34.emojiOnlyCustomStatusBubble;
                 var18.emojiOnlyStyle = var34;
                 var20 = var22.bind(var3)(var21, var18);
-            case 1089:
+            case 1094:
                 var18 = new Array(3);
                 var18[0] = var20;
                 var22 = _closure1_slot7;
@@ -494,29 +495,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var34 = var34.PREVIEW;
                 var20.themeType = var34;
                 if (!(var8 != var33)) {
-                    _fun56890_ip = 1149;
-                    continue _fun56890
+                    _fun56934_ip = 1154;
+                    continue _fun56934
                 }
-            case 1146:
+            case 1151:
                 var32 = var33;
-            case 1149:
+            case 1154:
                 var20.displayName = var32;
                 if (!(var8 == var31)) {
-                    _fun56890_ip = 1175;
-                    continue _fun56890
+                    _fun56934_ip = 1180;
+                    continue _fun56934
                 }
-            case 1157:
+            case 1162:
                 var33 = var8 == var23;
                 var32 = undefined;
                 if (var33) {
-                    _fun56890_ip = 1172;
-                    continue _fun56890
+                    _fun56934_ip = 1177;
+                    continue _fun56934
                 }
-            case 1166:
+            case 1171:
                 var32 = var23.pronouns;
-            case 1172:
+            case 1177:
                 var31 = var32;
-            case 1175:
+            case 1180:
                 var20.pronouns = var31;
                 var20.badges = var30;
                 var20.badgeContainerBackground = var26;
@@ -527,10 +528,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var18[1] = var20;
                 var19 = !var19;
                 if (!var19) {
-                    _fun56890_ip = 1327;
-                    continue _fun56890
+                    _fun56934_ip = 1332;
+                    continue _fun56934
                 }
-            case 1220:
+            case 1225:
                 var22 = _closure1_slot7;
                 var21 = _closure1_slot1;
                 var27 = _closure1_slot2;
@@ -554,15 +555,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var25 = var8 != var24;
                 var23 = 3;
                 if (!var25) {
-                    _fun56890_ip = 1316;
-                    continue _fun56890
+                    _fun56934_ip = 1321;
+                    continue _fun56934
                 }
-            case 1313:
+            case 1318:
                 var23 = var24;
-            case 1316:
+            case 1321:
                 var20.bioLineClamp = var23;
                 var19 = var22.bind(var3)(var21, var20);
-            case 1327:
+            case 1332:
                 var18[2] = var19;
                 var16.children = var18;
                 var16 = var14.bind(var3)(var17, var16);
@@ -572,10 +573,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7[1] = var10;
                 var8 = var8 != var13;
                 if (!var8) {
-                    _fun56890_ip = 1419;
-                    continue _fun56890
+                    _fun56934_ip = 1424;
+                    continue _fun56934
                 }
-            case 1366:
+            case 1371:
                 var11 = _closure1_slot7;
                 var10 = _closure1_slot1;
                 var14 = _closure1_slot2;
@@ -588,7 +589,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var12.profileEffect;
                 var9.style = var12;
                 var8 = var11.bind(var3)(var10, var9);
-            case 1419:
+            case 1424:
                 var7[2] = var8;
                 var4.children = var7;
                 var4 = var6.bind(var3)(var5, var4);
@@ -599,4 +600,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 5540, 6918, 33, 1297, 671, 6911, 6919, 6921, 5625, 6922, 5542, 566, 5681, 6923, 3118, 6924, 6863, 6927, 6928, 6930, 7326, 7554, 6861, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 5544, 6921, 33, 1297, 671, 566, 6914, 6922, 6924, 5628, 6925, 5546, 5684, 6926, 3118, 6927, 6866, 6930, 6931, 6933, 7329, 7557, 6864, 2]);

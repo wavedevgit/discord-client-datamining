@@ -324,7 +324,7 @@ public final class k implements com.google.android.exoplayer2.audio.f {
         }
 
         private AudioTrack d(boolean z10, AudioAttributes audioAttributes, int i10) {
-            int i11 = w0.f40279a;
+            int i11 = w0.f40295a;
             if (i11 >= 29) {
                 return f(z10, audioAttributes, i10);
             }
@@ -811,14 +811,14 @@ public final class k implements com.google.android.exoplayer2.audio.f {
     }
 
     private int Q(AudioFormat audioFormat, android.media.AudioAttributes audioAttributes) {
-        int i10 = w0.f40279a;
+        int i10 = w0.f40295a;
         if (i10 >= 31) {
             return AudioManager.getPlaybackOffloadSupport(audioFormat, audioAttributes);
         }
         if (!AudioManager.isOffloadedPlaybackSupported(audioFormat, audioAttributes)) {
             return 0;
         }
-        if (i10 == 30 && w0.f40282d.startsWith("Pixel")) {
+        if (i10 == 30 && w0.f40298d.startsWith("Pixel")) {
             return 2;
         }
         return 1;
@@ -858,7 +858,7 @@ public final class k implements com.google.android.exoplayer2.audio.f {
                 audioTrack.setOffloadDelayPadding(format.M, format.N);
             }
         }
-        int i10 = w0.f40279a;
+        int i10 = w0.f40295a;
         if (i10 >= 31 && (t1Var = this.f13328r) != null) {
             c.a(this.f13333w, t1Var);
         }
@@ -873,10 +873,10 @@ public final class k implements com.google.android.exoplayer2.audio.f {
         }
         hVar.r(audioTrack2, z10, gVar.f13353g, gVar.f13350d, gVar.f13354h);
         g0();
-        int i11 = this.Z.f40057a;
+        int i11 = this.Z.f40073a;
         if (i11 != 0) {
             this.f13333w.attachAuxEffect(i11);
-            this.f13333w.setAuxEffectSendLevel(this.Z.f40058b);
+            this.f13333w.setAuxEffectSendLevel(this.Z.f40074b);
         }
         d dVar = this.f13305a0;
         if (dVar != null && i10 >= 23) {
@@ -887,7 +887,7 @@ public final class k implements com.google.android.exoplayer2.audio.f {
     }
 
     private static boolean U(int i10) {
-        if ((w0.f40279a >= 24 && i10 == -6) || i10 == -32) {
+        if ((w0.f40295a >= 24 && i10 == -6) || i10 == -32) {
             return true;
         }
         return false;
@@ -901,7 +901,7 @@ public final class k implements com.google.android.exoplayer2.audio.f {
     }
 
     private static boolean W(AudioTrack audioTrack) {
-        if (w0.f40279a >= 29 && audioTrack.isOffloadedPlayback()) {
+        if (w0.f40295a >= 29 && audioTrack.isOffloadedPlayback()) {
             return true;
         }
         return false;
@@ -1064,7 +1064,7 @@ public final class k implements com.google.android.exoplayer2.audio.f {
         if (!V()) {
             return;
         }
-        if (w0.f40279a >= 21) {
+        if (w0.f40295a >= 21) {
             h0(this.f13333w, this.O);
         } else {
             i0(this.f13333w, this.O);
@@ -1105,7 +1105,7 @@ public final class k implements com.google.android.exoplayer2.audio.f {
 
     private boolean m0() {
         g gVar = this.f13331u;
-        if (gVar != null && gVar.f13356j && w0.f40279a >= 23) {
+        if (gVar != null && gVar.f13356j && w0.f40295a >= 23) {
             return true;
         }
         return false;
@@ -1117,7 +1117,7 @@ public final class k implements com.google.android.exoplayer2.audio.f {
         int Q;
         boolean z10;
         boolean z11;
-        if (w0.f40279a < 29 || this.f13322l == 0 || (f10 = c0.f((String) ne.a.e(format.f12706w), format.f12703t)) == 0 || (H = w0.H(format.J)) == 0 || (Q = Q(N(format.K, H, f10), audioAttributes.b().f13206a)) == 0) {
+        if (w0.f40295a < 29 || this.f13322l == 0 || (f10 = c0.f((String) ne.a.e(format.f12706w), format.f12703t)) == 0 || (H = w0.H(format.J)) == 0 || (Q = Q(N(format.K, H, f10), audioAttributes.b().f13206a)) == 0) {
             return false;
         }
         if (Q != 1) {
@@ -1161,7 +1161,7 @@ public final class k implements com.google.android.exoplayer2.audio.f {
                 ne.a.a(z11);
             } else {
                 this.R = byteBuffer;
-                if (w0.f40279a < 21) {
+                if (w0.f40295a < 21) {
                     int remaining = byteBuffer.remaining();
                     byte[] bArr = this.S;
                     if (bArr == null || bArr.length < remaining) {
@@ -1174,7 +1174,7 @@ public final class k implements com.google.android.exoplayer2.audio.f {
                 }
             }
             int remaining2 = byteBuffer.remaining();
-            if (w0.f40279a < 21) {
+            if (w0.f40295a < 21) {
                 int b10 = this.f13319i.b(this.I);
                 if (b10 > 0) {
                     p02 = this.f13333w.write(this.S, this.T, Math.min(remaining2, b10));
@@ -1256,7 +1256,7 @@ public final class k implements com.google.android.exoplayer2.audio.f {
     }
 
     private int q0(AudioTrack audioTrack, ByteBuffer byteBuffer, int i10, long j10) {
-        if (w0.f40279a >= 26) {
+        if (w0.f40295a >= 26) {
             return audioTrack.write(byteBuffer, i10, 1, j10 * 1000);
         }
         if (this.E == null) {
@@ -1401,7 +1401,7 @@ public final class k implements com.google.android.exoplayer2.audio.f {
             if (W(this.f13333w)) {
                 ((m) ne.a.e(this.f13323m)).b(this.f13333w);
             }
-            if (w0.f40279a < 21 && !this.X) {
+            if (w0.f40295a < 21 && !this.X) {
                 this.Y = 0;
             }
             g gVar = this.f13330t;
@@ -1619,7 +1619,7 @@ public final class k implements com.google.android.exoplayer2.audio.f {
     @Override // com.google.android.exoplayer2.audio.f
     public void n() {
         boolean z10;
-        if (w0.f40279a < 25) {
+        if (w0.f40295a < 25) {
             flush();
             return;
         }
@@ -1725,7 +1725,7 @@ public final class k implements com.google.android.exoplayer2.audio.f {
     @Override // com.google.android.exoplayer2.audio.f
     public void u() {
         boolean z10;
-        if (w0.f40279a >= 21) {
+        if (w0.f40295a >= 21) {
             z10 = true;
         } else {
             z10 = false;
@@ -1743,11 +1743,11 @@ public final class k implements com.google.android.exoplayer2.audio.f {
         if (this.Z.equals(pVar)) {
             return;
         }
-        int i10 = pVar.f40057a;
-        float f10 = pVar.f40058b;
+        int i10 = pVar.f40073a;
+        float f10 = pVar.f40074b;
         AudioTrack audioTrack = this.f13333w;
         if (audioTrack != null) {
-            if (this.Z.f40057a != i10) {
+            if (this.Z.f40073a != i10) {
                 audioTrack.attachAuxEffect(i10);
             }
             if (i10 != 0) {
@@ -1795,13 +1795,13 @@ public final class k implements com.google.android.exoplayer2.audio.f {
         }
         this.f13334x = aVar;
         this.f13306b = fVar.f13341c;
-        int i10 = w0.f40279a;
+        int i10 = w0.f40295a;
         boolean z10 = true;
         this.f13308c = i10 >= 21 && fVar.f13342d;
         this.f13321k = (i10 < 23 || !fVar.f13343e) ? false : z10;
         this.f13322l = i10 >= 29 ? fVar.f13344f : 0;
         this.f13326p = fVar.f13345g;
-        ne.h hVar = new ne.h(ne.e.f40172a);
+        ne.h hVar = new ne.h(ne.e.f40188a);
         this.f13318h = hVar;
         hVar.e();
         this.f13319i = new com.google.android.exoplayer2.audio.h(new l());

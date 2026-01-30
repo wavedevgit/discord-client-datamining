@@ -5,16 +5,16 @@ import android.graphics.Color;
 abstract class b {
 
     /* renamed from: a  reason: collision with root package name */
-    static final float[][] f46808a = {new float[]{0.401288f, 0.650173f, -0.051461f}, new float[]{-0.250268f, 1.204414f, 0.045854f}, new float[]{-0.002079f, 0.048952f, 0.953127f}};
+    static final float[][] f46824a = {new float[]{0.401288f, 0.650173f, -0.051461f}, new float[]{-0.250268f, 1.204414f, 0.045854f}, new float[]{-0.002079f, 0.048952f, 0.953127f}};
 
     /* renamed from: b  reason: collision with root package name */
-    static final float[][] f46809b = {new float[]{1.8620678f, -1.0112547f, 0.14918678f}, new float[]{0.38752654f, 0.62144744f, -0.00897398f}, new float[]{-0.0158415f, -0.03412294f, 1.0499644f}};
+    static final float[][] f46825b = {new float[]{1.8620678f, -1.0112547f, 0.14918678f}, new float[]{0.38752654f, 0.62144744f, -0.00897398f}, new float[]{-0.0158415f, -0.03412294f, 1.0499644f}};
 
     /* renamed from: c  reason: collision with root package name */
-    static final float[] f46810c = {95.047f, 100.0f, 108.883f};
+    static final float[] f46826c = {95.047f, 100.0f, 108.883f};
 
     /* renamed from: d  reason: collision with root package name */
-    static final float[][] f46811d = {new float[]{0.41233894f, 0.35762063f, 0.18051042f}, new float[]{0.2126f, 0.7152f, 0.0722f}, new float[]{0.01932141f, 0.11916382f, 0.9503448f}};
+    static final float[][] f46827d = {new float[]{0.41233894f, 0.35762063f, 0.18051042f}, new float[]{0.2126f, 0.7152f, 0.0722f}, new float[]{0.01932141f, 0.11916382f, 0.9503448f}};
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static int a(float f10) {
@@ -47,7 +47,7 @@ abstract class b {
         if (!z10) {
             f14 = ((f13 * 116.0f) - 16.0f) / 903.2963f;
         }
-        float[] fArr = f46810c;
+        float[] fArr = f46826c;
         return r1.c.b(f12 * fArr[0], f11 * fArr[1], f14 * fArr[2]);
     }
 
@@ -85,7 +85,7 @@ abstract class b {
         float e10 = e(Color.red(i10));
         float e11 = e(Color.green(i10));
         float e12 = e(Color.blue(i10));
-        float[][] fArr2 = f46811d;
+        float[][] fArr2 = f46827d;
         float[] fArr3 = fArr2[0];
         fArr[0] = (fArr3[0] * e10) + (fArr3[1] * e11) + (fArr3[2] * e12);
         float[] fArr4 = fArr2[1];
@@ -98,7 +98,7 @@ abstract class b {
         float e10 = e(Color.red(i10));
         float e11 = e(Color.green(i10));
         float e12 = e(Color.blue(i10));
-        float[] fArr = f46811d[1];
+        float[] fArr = f46827d[1];
         return (e10 * fArr[0]) + (e11 * fArr[1]) + (e12 * fArr[2]);
     }
 

@@ -8,16 +8,16 @@ import java.util.ServiceLoader;
 public final class t {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final t f37483a;
+    public static final t f37499a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final c1 f37484b;
+    public static final c1 f37500b;
 
     static {
         t tVar = new t();
-        f37483a = tVar;
+        f37499a = tVar;
         f0.f("kotlinx.coroutines.fast.service.loader", true);
-        f37484b = tVar.a();
+        f37500b = tVar.a();
     }
 
     private t() {

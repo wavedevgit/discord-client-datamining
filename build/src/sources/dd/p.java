@@ -183,7 +183,7 @@ public final class p implements m {
                 }
                 d0.c cVar = (d0.c) ne.a.i(this.f21993c);
                 d0.c cVar2 = (d0.c) ne.a.i(aVar.f21993c);
-                if (this.f21996f == aVar.f21996f && this.f21997g == aVar.f21997g && this.f21998h == aVar.f21998h && ((!this.f21999i || !aVar.f21999i || this.f22000j == aVar.f22000j) && (((i10 = this.f21994d) == (i11 = aVar.f21994d) || (i10 != 0 && i11 != 0)) && (((i12 = cVar.f40166l) != 0 || cVar2.f40166l != 0 || (this.f22003m == aVar.f22003m && this.f22004n == aVar.f22004n)) && ((i12 != 1 || cVar2.f40166l != 1 || (this.f22005o == aVar.f22005o && this.f22006p == aVar.f22006p)) && (z10 = this.f22001k) == aVar.f22001k && (!z10 || this.f22002l == aVar.f22002l)))))) {
+                if (this.f21996f == aVar.f21996f && this.f21997g == aVar.f21997g && this.f21998h == aVar.f21998h && ((!this.f21999i || !aVar.f21999i || this.f22000j == aVar.f22000j) && (((i10 = this.f21994d) == (i11 = aVar.f21994d) || (i10 != 0 && i11 != 0)) && (((i12 = cVar.f40182l) != 0 || cVar2.f40182l != 0 || (this.f22003m == aVar.f22003m && this.f22004n == aVar.f22004n)) && ((i12 != 1 || cVar2.f40182l != 1 || (this.f22005o == aVar.f22005o && this.f22006p == aVar.f22006p)) && (z10 = this.f22001k) == aVar.f22001k && (!z10 || this.f22002l == aVar.f22002l)))))) {
                     return false;
                 }
                 return true;
@@ -296,11 +296,11 @@ public final class p implements m {
         }
 
         public void e(d0.b bVar) {
-            this.f21977e.append(bVar.f40152a, bVar);
+            this.f21977e.append(bVar.f40168a, bVar);
         }
 
         public void f(d0.c cVar) {
-            this.f21976d.append(cVar.f40158d, cVar);
+            this.f21976d.append(cVar.f40174d, cVar);
         }
 
         public void g() {
@@ -357,7 +357,7 @@ public final class p implements m {
                     d0.c l10 = ne.d0.l(uVar3.f22076d, 3, uVar3.f22077e);
                     u uVar4 = this.f21962e;
                     d0.b j12 = ne.d0.j(uVar4.f22076d, 3, uVar4.f22077e);
-                    this.f21967j.b(new Format.b().U(this.f21966i).g0("video/avc").K(ne.f.a(l10.f40155a, l10.f40156b, l10.f40157c)).n0(l10.f40160f).S(l10.f40161g).c0(l10.f40162h).V(arrayList).G());
+                    this.f21967j.b(new Format.b().U(this.f21966i).g0("video/avc").K(ne.f.a(l10.f40171a, l10.f40172b, l10.f40173c)).n0(l10.f40176f).S(l10.f40177g).c0(l10.f40178h).V(arrayList).G());
                     this.f21969l = true;
                     this.f21968k.f(l10);
                     this.f21968k.e(j12);

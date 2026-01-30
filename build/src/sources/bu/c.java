@@ -47,7 +47,7 @@ public final class c {
     }
 
     static {
-        ByteString.a aVar = ByteString.f44363o;
+        ByteString.a aVar = ByteString.f44379o;
         f7858e = aVar.g(":");
         f7859f = aVar.g(":status");
         f7860g = aVar.g(":method");
@@ -106,7 +106,7 @@ public final class c {
             kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r2, r0)
             java.lang.String r0 = "value"
             kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r3, r0)
-            okio.ByteString$a r0 = okio.ByteString.f44363o
+            okio.ByteString$a r0 = okio.ByteString.f44379o
             okio.ByteString r2 = r0.g(r2)
             okio.ByteString r3 = r0.g(r3)
             r1.<init>(r2, r3)
@@ -117,7 +117,7 @@ public final class c {
 
     /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
     public c(ByteString name, String value) {
-        this(name, ByteString.f44363o.g(value));
+        this(name, ByteString.f44379o.g(value));
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(value, "value");
     }

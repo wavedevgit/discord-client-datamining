@@ -6,23 +6,23 @@ import java.util.List;
 public class f {
 
     /* renamed from: a  reason: collision with root package name */
-    private final c f26575a;
+    private final c f26591a;
 
     /* renamed from: b  reason: collision with root package name */
-    private CloseableReference f26576b;
+    private CloseableReference f26592b;
 
     /* renamed from: c  reason: collision with root package name */
-    private List f26577c;
+    private List f26593c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f26578d;
+    private int f26594d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f26579e;
+    private String f26595e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f(c cVar) {
-        this.f26575a = cVar;
+        this.f26591a = cVar;
     }
 
     /* JADX WARN: Type inference failed for: r0v0, types: [java.util.List, com.facebook.common.references.CloseableReference] */
@@ -30,10 +30,10 @@ public class f {
         try {
             return new e(this);
         } finally {
-            CloseableReference.N(this.f26576b);
-            this.f26576b = null;
-            CloseableReference.V(this.f26577c);
-            this.f26577c = null;
+            CloseableReference.N(this.f26592b);
+            this.f26592b = null;
+            CloseableReference.V(this.f26593c);
+            this.f26593c = null;
         }
     }
 
@@ -42,42 +42,42 @@ public class f {
     }
 
     public List c() {
-        return CloseableReference.F(this.f26577c);
+        return CloseableReference.F(this.f26593c);
     }
 
     public int d() {
-        return this.f26578d;
+        return this.f26594d;
     }
 
     public c e() {
-        return this.f26575a;
+        return this.f26591a;
     }
 
     public CloseableReference f() {
-        return CloseableReference.E(this.f26576b);
+        return CloseableReference.E(this.f26592b);
     }
 
     public String g() {
-        return this.f26579e;
+        return this.f26595e;
     }
 
     public f i(List list) {
-        this.f26577c = CloseableReference.F(list);
+        this.f26593c = CloseableReference.F(list);
         return this;
     }
 
     public f j(int i10) {
-        this.f26578d = i10;
+        this.f26594d = i10;
         return this;
     }
 
     public f k(CloseableReference closeableReference) {
-        this.f26576b = CloseableReference.E(closeableReference);
+        this.f26592b = CloseableReference.E(closeableReference);
         return this;
     }
 
     public f l(String str) {
-        this.f26579e = str;
+        this.f26595e = str;
         return this;
     }
 

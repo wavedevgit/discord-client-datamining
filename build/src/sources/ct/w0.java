@@ -113,7 +113,7 @@ public class w0 extends kotlinx.serialization.encoding.a implements bt.f {
         if (i11 && !g10.b() && this.f21414c.O(true)) {
             return true;
         }
-        if (!Intrinsics.areEqual(g10.getKind(), k.b.f56101a) || ((g10.b() && this.f21414c.O(false)) || (H = this.f21414c.H(this.f21418g.q())) == null)) {
+        if (!Intrinsics.areEqual(g10.getKind(), k.b.f56117a) || ((g10.b() && this.f21414c.O(false)) || (H = this.f21414c.H(this.f21418g.q())) == null)) {
             return false;
         }
         int i12 = i0.i(g10, json, H);

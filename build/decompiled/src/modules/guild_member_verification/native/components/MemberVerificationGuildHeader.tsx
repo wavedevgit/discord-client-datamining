@@ -156,7 +156,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_member_verification/native/components/MemberVerificationGuildHeader.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: MemberVerificationGuildHeader, environment: var1
-        _fun60258: for (var _fun60258_ip = 0;;) switch (_fun60258_ip) {
+        _fun60302: for (var _fun60302_ip = 0;;) switch (_fun60302_ip) {
             case 0:
                 var1 = arg0;
                 var20 = var1.guild;
@@ -169,8 +169,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var20.banner;
                 var1 = null;
                 if (!(var1 == var2)) {
-                    _fun60258_ip = 73;
-                    continue _fun60258
+                    _fun60302_ip = 73;
+                    continue _fun60302
                 }
             case 51:
                 var2 = _closure1_slot1;
@@ -178,8 +178,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 7;
                 var1 = var4[var1];
                 var17 = var2.bind(var3)(var1);
-                _fun60258_ip = 104;
-                continue _fun60258;
+                _fun60302_ip = 104;
+                continue _fun60302;
             case 73:
                 var2 = _closure1_slot1;
                 var4 = _closure1_slot2;
@@ -486,8 +486,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var16.bind(var3)(var14);
                 var16 = var14.t;
                 if (var10) {
-                    _fun60258_ip = 931;
-                    continue _fun60258
+                    _fun60302_ip = 931;
+                    continue _fun60302
                 }
             case 903:
                 var17 = var16.VnxBOA;
@@ -495,8 +495,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var21 = var20.name;
                 var14.guildName = var21;
                 var14 = var18.bind(var19)(var17, var14);
-                _fun60258_ip = 957;
-                continue _fun60258;
+                _fun60302_ip = 957;
+                continue _fun60302;
             case 931:
                 var17 = var16.cgX47Z;
                 var16 = {};
@@ -530,14 +530,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var11 = var14.bind(var3)(var11);
                 var11 = var11.t;
                 if (var10) {
-                    _fun60258_ip = 1082;
-                    continue _fun60258
+                    _fun60302_ip = 1082;
+                    continue _fun60302
                 }
             case 1067:
                 var10 = var11["7D3C5p"];
                 var10 = var12.bind(var13)(var10);
-                _fun60258_ip = 1095;
-                continue _fun60258;
+                _fun60302_ip = 1095;
+                continue _fun60302;
             case 1082:
                 var11 = var11["3smSPP"];
                 var10 = var12.bind(var13)(var11);
@@ -555,4 +555,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 7406, 33, 1297, 671, 1417, 7411, 1568, 3677, 4051, 7353, 7412, 3895, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 7409, 33, 1297, 671, 1417, 7414, 1568, 3679, 4057, 7356, 7415, 3901, 1234, 2]);

@@ -37,7 +37,7 @@ public final class ContainerComponent extends BaseLayoutComponent implements Spo
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {null, null, null, ir.l.a(ir.o.f31103e, new Function0() { // from class: com.discord.chat.bridge.botuikit.d
+    private static final Lazy[] $childSerializers = {null, null, null, ir.l.a(ir.o.f31119e, new Function0() { // from class: com.discord.chat.bridge.botuikit.d
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;

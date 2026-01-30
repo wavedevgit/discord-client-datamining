@@ -6,32 +6,32 @@ import java.util.Set;
 public final class f0 implements h {
 
     /* renamed from: d  reason: collision with root package name */
-    private final jt.p f37585d;
+    private final jt.p f37601d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f37586e;
+    private final int f37602e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final char f37587i;
+    private final char f37603i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final kt.g f37588o;
+    private final kt.g f37604o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final int f37589p;
+    private final int f37605p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final int f37590q;
+    private final int f37606q;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public f0(jt.p pVar) {
         if (pVar.name().startsWith("YEAR")) {
-            this.f37585d = pVar;
-            this.f37586e = 0;
-            this.f37587i = '0';
-            this.f37588o = kt.g.SMART;
-            this.f37589p = 0;
-            this.f37590q = 100;
+            this.f37601d = pVar;
+            this.f37602e = 0;
+            this.f37603i = '0';
+            this.f37604o = kt.g.SMART;
+            this.f37605p = 0;
+            this.f37606q = 100;
             return;
         }
         throw new IllegalArgumentException("Year element required: " + pVar);
@@ -40,9 +40,9 @@ public final class f0 implements h {
     private int b(boolean z10, jt.d dVar) {
         int intValue;
         if (z10) {
-            intValue = this.f37590q;
+            intValue = this.f37606q;
         } else {
-            intValue = ((Integer) dVar.b(kt.a.f36544q, Integer.valueOf(this.f37590q))).intValue();
+            intValue = ((Integer) dVar.b(kt.a.f36560q, Integer.valueOf(this.f37606q))).intValue();
         }
         if (intValue >= 100) {
             return intValue;
@@ -62,14 +62,14 @@ public final class f0 implements h {
 
     @Override // lt.h
     public h a(c cVar, jt.d dVar, int i10) {
-        return new f0(this.f37585d, i10, ((Character) dVar.b(kt.a.f36540m, '0')).charValue(), (kt.g) dVar.b(kt.a.f36533f, kt.g.SMART), ((Integer) dVar.b(kt.a.f36546s, 0)).intValue(), ((Integer) dVar.b(kt.a.f36544q, Integer.valueOf(cVar.q().h()))).intValue());
+        return new f0(this.f37601d, i10, ((Character) dVar.b(kt.a.f36556m, '0')).charValue(), (kt.g) dVar.b(kt.a.f36549f, kt.g.SMART), ((Integer) dVar.b(kt.a.f36562s, 0)).intValue(), ((Integer) dVar.b(kt.a.f36560q, Integer.valueOf(cVar.q().h()))).intValue());
     }
 
     @Override // lt.h
     public int d(jt.o oVar, Appendable appendable, jt.d dVar, Set set, boolean z10) {
         char charValue;
         int i10;
-        int q10 = oVar.q(this.f37585d);
+        int q10 = oVar.q(this.f37601d);
         if (q10 < 0) {
             if (q10 == Integer.MIN_VALUE) {
                 throw new IllegalArgumentException("Format context has no year: " + oVar);
@@ -81,9 +81,9 @@ public final class f0 implements h {
         }
         String num = Integer.toString(q10);
         if (z10) {
-            charValue = this.f37587i;
+            charValue = this.f37603i;
         } else {
-            charValue = ((Character) dVar.b(kt.a.f36540m, '0')).charValue();
+            charValue = ((Character) dVar.b(kt.a.f36556m, '0')).charValue();
         }
         int i11 = 0;
         if (charValue != '0') {
@@ -106,7 +106,7 @@ public final class f0 implements h {
         appendable.append(num);
         int length = i11 + num.length();
         if (i10 != -1 && length > 0 && set != null) {
-            set.add(new g(this.f37585d, i10, i10 + length));
+            set.add(new g(this.f37601d, i10, i10 + length));
         }
         return length;
     }
@@ -131,7 +131,7 @@ public final class f0 implements h {
             return true;
         }
         if (obj instanceof f0) {
-            return this.f37585d.equals(((f0) obj).f37585d);
+            return this.f37601d.equals(((f0) obj).f37601d);
         }
         return false;
     }
@@ -143,7 +143,7 @@ public final class f0 implements h {
 
     @Override // lt.h
     public h g(jt.p pVar) {
-        if (this.f37585d == pVar) {
+        if (this.f37601d == pVar) {
             return this;
         }
         return new f0(pVar);
@@ -151,28 +151,28 @@ public final class f0 implements h {
 
     @Override // lt.h
     public jt.p getElement() {
-        return this.f37585d;
+        return this.f37601d;
     }
 
     public int hashCode() {
-        return this.f37585d.hashCode();
+        return this.f37601d.hashCode();
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder(64);
         sb2.append(f0.class.getName());
         sb2.append("[element=");
-        sb2.append(this.f37585d.name());
+        sb2.append(this.f37601d.name());
         sb2.append(']');
         return sb2.toString();
     }
 
     private f0(jt.p pVar, int i10, char c10, kt.g gVar, int i11, int i12) {
-        this.f37585d = pVar;
-        this.f37586e = i10;
-        this.f37587i = c10;
-        this.f37588o = gVar;
-        this.f37589p = i11;
-        this.f37590q = i12;
+        this.f37601d = pVar;
+        this.f37602e = i10;
+        this.f37603i = c10;
+        this.f37604o = gVar;
+        this.f37605p = i11;
+        this.f37606q = i12;
     }
 }

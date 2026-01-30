@@ -74,7 +74,7 @@ public abstract class a0 implements KCallable, w2 {
         z2.a c14 = z2.c(new u(this));
         Intrinsics.checkNotNullExpressionValue(c14, "lazySoft(...)");
         this.f21092p = c14;
-        this.f21093q = ir.l.a(ir.o.f31103e, new v(this));
+        this.f21093q = ir.l.a(ir.o.f31119e, new v(this));
     }
 
     private final int E(kotlin.reflect.i iVar) {
@@ -114,7 +114,7 @@ public abstract class a0 implements KCallable, w2 {
         if (((Boolean) a0Var.f21093q.getValue()).booleanValue()) {
             i10 = 0;
             for (kotlin.reflect.i iVar : parameters) {
-                if (iVar.getKind() == i.a.f33400i) {
+                if (iVar.getKind() == i.a.f33416i) {
                     i11 = a0Var.E(iVar);
                 } else {
                     i11 = 0;
@@ -128,7 +128,7 @@ public abstract class a0 implements KCallable, w2 {
             } else {
                 i10 = 0;
                 for (kotlin.reflect.i iVar2 : list) {
-                    if (iVar2.getKind() == i.a.f33400i && (i10 = i10 + 1) < 0) {
+                    if (iVar2.getKind() == i.a.f33416i && (i10 = i10 + 1) < 0) {
                         CollectionsKt.u();
                     }
                 }
@@ -163,14 +163,14 @@ public abstract class a0 implements KCallable, w2 {
         if (!a0Var.G()) {
             ReceiverParameterDescriptor i12 = j3.i(D);
             if (i12 != null) {
-                arrayList.add(new x1(a0Var, 0, i.a.f33398d, new w(i12)));
+                arrayList.add(new x1(a0Var, 0, i.a.f33414d, new w(i12)));
                 i10 = 1;
             } else {
                 i10 = 0;
             }
             ReceiverParameterDescriptor extensionReceiverParameter = D.getExtensionReceiverParameter();
             if (extensionReceiverParameter != null) {
-                arrayList.add(new x1(a0Var, i10, i.a.f33399e, new x(extensionReceiverParameter)));
+                arrayList.add(new x1(a0Var, i10, i.a.f33415e, new x(extensionReceiverParameter)));
                 i10++;
             }
         } else {
@@ -178,7 +178,7 @@ public abstract class a0 implements KCallable, w2 {
         }
         int size = D.getValueParameters().size();
         while (i11 < size) {
-            arrayList.add(new x1(a0Var, i10, i.a.f33400i, new y(D, i11)));
+            arrayList.add(new x1(a0Var, i10, i.a.f33416i, new y(D, i11)));
             i11++;
             i10++;
         }
@@ -445,7 +445,7 @@ public abstract class a0 implements KCallable, w2 {
             } else if (!iVar.isVararg()) {
                 throw new IllegalArgumentException("No argument provided for a required parameter: " + iVar);
             }
-            if (iVar.getKind() == i.a.f33400i) {
+            if (iVar.getKind() == i.a.f33416i) {
                 i11 += i10;
             }
         }

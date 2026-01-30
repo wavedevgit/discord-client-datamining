@@ -33,15 +33,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'design/components/Icon/native/redesign/generated/HeadphonesDenyIcon.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Environment: var1
-        _fun66404: for (var _fun66404_ip = 0;;) switch (_fun66404_ip) {
+        _fun66448: for (var _fun66448_ip = 0;;) switch (_fun66448_ip) {
             case 0:
                 var2 = arg0;
                 var5 = var2.style;
                 var6 = var2.color;
                 var3 = undefined;
                 if (!(var6 === var3)) {
-                    _fun66404_ip = 53;
-                    continue _fun66404
+                    _fun66448_ip = 53;
+                    continue _fun66448
                 }
             case 19:
                 var1 = _closure1_slot1;
@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.HeadphonesDenyIcon = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3109, 8193, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 671, 3109, 8196, 2]);

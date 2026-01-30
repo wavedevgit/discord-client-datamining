@@ -53,11 +53,11 @@ final class MediaEngineModule$connectionInstancePrepareSecureFramesEpoch$1 exten
             }
         }
         this.this$0.getMediaEngine().connectionInstancePrepareSecureFramesEpoch$media_engine_release((int) this.$connectionId, this.$epoch, (int) this.$transitionId, this.$groupId);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$connectionInstancePrepareSecureFramesEpoch$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((MediaEngineModule$connectionInstancePrepareSecureFramesEpoch$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

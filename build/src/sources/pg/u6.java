@@ -5,7 +5,7 @@ import ui.c;
 final class u6 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final u6 f45755a = new u6();
+    static final u6 f45771a = new u6();
 
     static {
         c.b a10 = ui.c.a("useCases");

@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
-        _fun60244: for (var _fun60244_ip = 0;;) switch (_fun60244_ip) {
+        _fun60288: for (var _fun60288_ip = 0;;) switch (_fun60288_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -28,8 +28,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun60244_ip = 74;
-                continue _fun60244;
+                _fun60288_ip = 74;
+                continue _fun60288;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -92,7 +92,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var3.Store;
     var3 = function(arg0) { // Environment: var1
         var3 = function() { // Original name: InitialMemberVerificationStore, environment: var0
-            _fun60248: for (var _fun60248_ip = 0;;) switch (_fun60248_ip) {
+            _fun60292: for (var _fun60292_ip = 0;;) switch (_fun60292_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -106,16 +106,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot8;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun60248_ip = 69;
-                        continue _fun60248
+                        _fun60292_ip = 69;
+                        continue _fun60292
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun60248_ip = 105;
-                    continue _fun60248;
+                    _fun60292_ip = 105;
+                    continue _fun60292;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -140,15 +140,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'getInitialVerificationState';
         var4.key = var5;
         var0 = function(arg0) { // Original name: value, environment: var0
-            _fun60249: for (var _fun60249_ip = 0;;) switch (_fun60249_ip) {
+            _fun60293: for (var _fun60293_ip = 0;;) switch (_fun60293_ip) {
                 case 0:
                     var4 = arg0;
                     var1 = null;
                     var2 = var1 == var4;
                     var0 = null;
                     if (var2) {
-                        _fun60249_ip = 46;
-                        continue _fun60249
+                        _fun60293_ip = 46;
+                        continue _fun60293
                     }
                 case 14:
                     var3 = _closure1_slot7;
@@ -157,8 +157,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var1 != var2;
                     var1 = null;
                     if (!var3) {
-                        _fun60249_ip = 43;
-                        continue _fun60249
+                        _fun60293_ip = 43;
+                        continue _fun60293
                     }
                 case 40:
                     var1 = var2;
@@ -182,7 +182,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var11 = var4.bind(var0)(var3);
     var3 = {};
     var4 = function(arg0) { // Original name: handleSetInitialState, environment: var1
-        _fun60250: for (var _fun60250_ip = 0;;) switch (_fun60250_ip) {
+        _fun60294: for (var _fun60294_ip = 0;;) switch (_fun60294_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.guildId;
@@ -191,8 +191,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var4.has;
                 var1 = var1.bind(var4)(var3);
                 if (var1) {
-                    _fun60250_ip = 48;
-                    continue _fun60250
+                    _fun60294_ip = 48;
+                    continue _fun60294
                 }
             case 33:
                 var1 = _closure1_slot7;

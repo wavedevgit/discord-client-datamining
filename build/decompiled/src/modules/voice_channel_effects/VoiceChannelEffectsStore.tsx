@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var4;
     var _closure1_slot2 = var6;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
-        _fun64503: for (var _fun64503_ip = 0;;) switch (_fun64503_ip) {
+        _fun64547: for (var _fun64547_ip = 0;;) switch (_fun64547_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -30,8 +30,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun64503_ip = 74;
-                continue _fun64503;
+                _fun64547_ip = 74;
+                continue _fun64547;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -132,7 +132,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var3.Store;
     var3 = function(arg0) { // Environment: var1
         var3 = function() { // Original name: VoiceChannelEffectsStore, environment: var5
-            _fun64508: for (var _fun64508_ip = 0;;) switch (_fun64508_ip) {
+            _fun64552: for (var _fun64552_ip = 0;;) switch (_fun64552_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -146,16 +146,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot16;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun64508_ip = 69;
-                        continue _fun64508
+                        _fun64552_ip = 69;
+                        continue _fun64552
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun64508_ip = 105;
-                    continue _fun64508;
+                    _fun64552_ip = 105;
+                    continue _fun64552;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -190,14 +190,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'isOnCooldown';
         var4.key = var6;
         var6 = function() { // Original name: get, environment: var5
-            _fun64510: for (var _fun64510_ip = 0;;) switch (_fun64510_ip) {
+            _fun64554: for (var _fun64554_ip = 0;;) switch (_fun64554_ip) {
                 case 0:
                     var2 = _closure1_slot3;
                     var0 = null;
                     var0 = var0 != var2;
                     if (!var0) {
-                        _fun64510_ip = 52;
-                        continue _fun64510
+                        _fun64554_ip = 52;
+                        continue _fun64554
                     }
                 case 16:
                     var2 = global;
@@ -250,7 +250,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var12 = var4.bind(var0)(var3);
     var3 = {};
     var4 = function(arg0) { // Original name: VOICE_CHANNEL_EFFECT_CLEAR, environment: var1
-        _fun64513: for (var _fun64513_ip = 0;;) switch (_fun64513_ip) {
+        _fun64557: for (var _fun64557_ip = 0;;) switch (_fun64557_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.userId;
@@ -258,8 +258,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var2[var1];
                 var2 = null;
                 if (!(var2 != var3)) {
-                    _fun64513_ip = 33;
-                    continue _fun64513
+                    _fun64557_ip = 33;
+                    continue _fun64557
                 }
             case 25:
                 var0 = _closure1_slot11;
@@ -271,14 +271,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3.VOICE_CHANNEL_EFFECT_CLEAR = var4;
     var4 = function(arg0) { // Original name: VOICE_CHANNEL_EFFECT_RECENT_EMOJI, environment: var1
-        _fun64514: for (var _fun64514_ip = 0;;) switch (_fun64514_ip) {
+        _fun64558: for (var _fun64558_ip = 0;;) switch (_fun64558_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.emoji;
                 var0 = null;
                 if (!(var0 != var3)) {
-                    _fun64514_ip = 113;
-                    continue _fun64514
+                    _fun64558_ip = 113;
+                    continue _fun64558
                 }
             case 15:
                 var2 = _closure1_slot10;
@@ -300,8 +300,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 1;
                 var1 = var3 + var1;
                 if (!(var2 > var1)) {
-                    _fun64514_ip = 113;
-                    continue _fun64514
+                    _fun64558_ip = 113;
+                    continue _fun64558
                 }
             case 99:
                 var1 = _closure1_slot10;
@@ -314,7 +314,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3.VOICE_CHANNEL_EFFECT_RECENT_EMOJI = var4;
     var4 = function(arg0) { // Original name: VOICE_CHANNEL_EFFECT_SEND, environment: var1
-        _fun64515: for (var _fun64515_ip = 0;;) switch (_fun64515_ip) {
+        _fun64559: for (var _fun64559_ip = 0;;) switch (_fun64559_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.emoji;
@@ -323,15 +323,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = null;
                 var0 = var1 != var5;
                 if (!var0) {
-                    _fun64515_ip = 33;
-                    continue _fun64515
+                    _fun64559_ip = 33;
+                    continue _fun64559
                 }
             case 29:
                 var0 = var1 != var3;
             case 33:
                 if (!var0) {
-                    _fun64515_ip = 140;
-                    continue _fun64515
+                    _fun64559_ip = 140;
+                    continue _fun64559
                 }
             case 36:
                 var2 = _closure1_slot11;
@@ -367,7 +367,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var3.VOICE_CHANNEL_EFFECT_SEND = var4;
     var4 = function() { // Original name: VOICE_CHANNEL_EFFECT_SENT_LOCAL, environment: var1
-        _fun64516: for (var _fun64516_ip = 0;;) switch (_fun64516_ip) {
+        _fun64560: for (var _fun64560_ip = 0;;) switch (_fun64560_ip) {
             case 0:
                 var0 = global;
                 var1 = var0.Date;
@@ -394,8 +394,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _closure1_slot13 = var2;
                 var2 = var2.length;
                 if (!(var2 >= var3)) {
-                    _fun64516_ip = 186;
-                    continue _fun64516
+                    _fun64560_ip = 186;
+                    continue _fun64560
                 }
             case 85:
                 var3 = _closure1_slot13;
@@ -409,8 +409,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3 - var2;
                 var3 = _closure1_slot14;
                 if (!(var2 < var3)) {
-                    _fun64516_ip = 186;
-                    continue _fun64516
+                    _fun64560_ip = 186;
+                    continue _fun64560
                 }
             case 134:
                 var3 = var0.Date;
@@ -476,13 +476,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
     var1 = function(arg0) { // Environment: var1
-        _fun64518: for (var _fun64518_ip = 0;;) switch (_fun64518_ip) {
+        _fun64562: for (var _fun64562_ip = 0;;) switch (_fun64562_ip) {
             case 0:
                 var3 = arg0;
                 var0 = null;
                 if (!(var0 != var3)) {
-                    _fun64518_ip = 60;
-                    continue _fun64518
+                    _fun64562_ip = 60;
+                    continue _fun64562
                 }
             case 9:
                 var2 = _closure1_slot1;
@@ -504,4 +504,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.clearVoiceChannelEffectForUser = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 3482, 806, 667, 22, 5652, 3165, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 3482, 806, 667, 22, 5655, 3165, 566, 2]);

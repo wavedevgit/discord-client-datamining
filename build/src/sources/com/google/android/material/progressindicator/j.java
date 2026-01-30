@@ -22,7 +22,7 @@ public final class j extends g {
     /* JADX INFO: Access modifiers changed from: package-private */
     public static j t(Context context, e eVar, c cVar) {
         j jVar = new j(context, eVar, cVar, new d(eVar));
-        jVar.z(androidx.vectordrawable.graphics.drawable.f.b(context.getResources(), yg.e.f54411b, null));
+        jVar.z(androidx.vectordrawable.graphics.drawable.f.b(context.getResources(), yg.e.f54427b, null));
         return jVar;
     }
 

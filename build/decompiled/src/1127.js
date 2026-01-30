@@ -14,26 +14,26 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
     var0 = function(arg0, arg1) { // Original name: enrichXhrBreadcrumbsForMobileReplay, environment: var0
-        _fun12327: for (var _fun12327_ip = 0;;) switch (_fun12327_ip) {
+        _fun12328: for (var _fun12328_ip = 0;;) switch (_fun12328_ip) {
             case 0:
                 var1 = arg0;
                 var0 = arg1;
                 var3 = var1.category;
                 var2 = 'xhr';
                 if (!(var2 === var3)) {
-                    _fun12327_ip = 376;
-                    continue _fun12327
+                    _fun12328_ip = 376;
+                    continue _fun12328
                 }
             case 23:
                 if (!var0) {
-                    _fun12327_ip = 376;
-                    continue _fun12327
+                    _fun12328_ip = 376;
+                    continue _fun12328
                 }
             case 29:
                 var2 = var0.xhr;
                 if (!var2) {
-                    _fun12327_ip = 376;
-                    continue _fun12327
+                    _fun12328_ip = 376;
+                    continue _fun12328
                 }
             case 41:
                 var4 = global;
@@ -43,16 +43,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var9 = var0.startTimestamp;
                 var5 = undefined;
                 if (!(var5 === var9)) {
-                    _fun12327_ip = 73;
-                    continue _fun12327
+                    _fun12328_ip = 73;
+                    continue _fun12328
                 }
             case 70:
                 var9 = var2;
             case 73:
                 var8 = var0.endTimestamp;
                 if (!(var5 === var8)) {
-                    _fun12327_ip = 86;
-                    continue _fun12327
+                    _fun12328_ip = 86;
+                    continue _fun12328
                 }
             case 83:
                 var8 = var2;
@@ -70,8 +70,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var11 = 'content-length';
                 var0 = var0.bind(var12)(var11);
                 if (var0) {
-                    _fun12327_ip = 256;
-                    continue _fun12327
+                    _fun12328_ip = 256;
+                    continue _fun12328
                 }
             case 149:
                 var13 = var12.response;
@@ -82,27 +82,27 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = var3;
                 var3 = 'json';
                 if (!(var3 === var6)) {
-                    _fun12327_ip = 198;
-                    continue _fun12327
+                    _fun12328_ip = 198;
+                    continue _fun12328
                 }
             case 178:
                 var3 = var0;
                 if (!var3) {
-                    _fun12327_ip = 198;
-                    continue _fun12327
+                    _fun12328_ip = 198;
+                    continue _fun12328
                 }
             case 184:
                 var3 = var0;
                 var6 = 'object';
                 var3 = typeof var3;
                 if (!(var6 !== var3)) {
-                    _fun12327_ip = 203;
-                    continue _fun12327
+                    _fun12328_ip = 203;
+                    continue _fun12328
                 }
             case 198:
                 var6 = var0;
-                _fun12327_ip = 220;
-                continue _fun12327;
+                _fun12328_ip = 220;
+                continue _fun12328;
             case 203:
                 var13 = var4.JSON;
                 var3 = var13.stringify;
@@ -115,14 +115,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var3.getBodySize;
                 var0 = var0.bind(var3)(var6);
             case 248: // try_end0
-                _fun12327_ip = 254;
-                continue _fun12327;
+                _fun12328_ip = 254;
+                continue _fun12328;
             case 250: // catch_target0
                 CatchBlockStart(arg_register = 3);
                 var0 = undefined;
             case 254:
-                _fun12327_ip = 295;
-                continue _fun12327;
+                _fun12328_ip = 295;
+                continue _fun12328;
             case 256:
                 var6 = _closure1_slot0;
                 var3 = _closure1_slot1;

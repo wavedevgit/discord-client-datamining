@@ -8,15 +8,15 @@ import net.time4j.y0;
 class s implements z {
 
     /* renamed from: d  reason: collision with root package name */
-    private final a1 f40529d;
+    private final a1 f40545d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final t f40530e;
+    private final t f40546e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public s(a1 a1Var, t tVar) {
-        this.f40529d = a1Var;
-        this.f40530e = tVar;
+        this.f40545d = a1Var;
+        this.f40546e = tVar;
     }
 
     private static y0 g(long j10) {
@@ -38,21 +38,21 @@ class s implements z {
     @Override // jt.z
     /* renamed from: d */
     public y0 j(jt.g gVar) {
-        jt.k kVar = (jt.k) this.f40530e.apply(gVar);
-        if ((gVar.j() + 7) - x(gVar).e(this.f40529d) > kVar.a()) {
+        jt.k kVar = (jt.k) this.f40546e.apply(gVar);
+        if ((gVar.j() + 7) - x(gVar).e(this.f40545d) > kVar.a()) {
             return g(kVar.a());
         }
-        return this.f40529d.f().f(6);
+        return this.f40545d.f().f(6);
     }
 
     @Override // jt.z
     /* renamed from: e */
     public y0 p(jt.g gVar) {
-        jt.k kVar = (jt.k) this.f40530e.apply(gVar);
-        if ((gVar.j() + 1) - x(gVar).e(this.f40529d) < kVar.d()) {
+        jt.k kVar = (jt.k) this.f40546e.apply(gVar);
+        if ((gVar.j() + 1) - x(gVar).e(this.f40545d) < kVar.d()) {
             return g(kVar.d());
         }
-        return this.f40529d.f();
+        return this.f40545d.f();
     }
 
     @Override // jt.z
@@ -67,9 +67,9 @@ class s implements z {
         if (y0Var == null) {
             return false;
         }
-        int e10 = x(gVar).e(this.f40529d);
-        long j10 = (gVar.j() + y0Var.e(this.f40529d)) - e10;
-        jt.k kVar = (jt.k) this.f40530e.apply(gVar);
+        int e10 = x(gVar).e(this.f40545d);
+        long j10 = (gVar.j() + y0Var.e(this.f40545d)) - e10;
+        jt.k kVar = (jt.k) this.f40546e.apply(gVar);
         if (j10 < kVar.d() || j10 > kVar.a()) {
             return false;
         }
@@ -80,9 +80,9 @@ class s implements z {
     /* renamed from: m */
     public jt.g w(jt.g gVar, y0 y0Var, boolean z10) {
         if (y0Var != null) {
-            int e10 = x(gVar).e(this.f40529d);
-            long j10 = (gVar.j() + y0Var.e(this.f40529d)) - e10;
-            jt.k kVar = (jt.k) this.f40530e.apply(gVar);
+            int e10 = x(gVar).e(this.f40545d);
+            long j10 = (gVar.j() + y0Var.e(this.f40545d)) - e10;
+            jt.k kVar = (jt.k) this.f40546e.apply(gVar);
             if (j10 >= kVar.d() && j10 <= kVar.a()) {
                 return (jt.g) kVar.b(j10);
             }

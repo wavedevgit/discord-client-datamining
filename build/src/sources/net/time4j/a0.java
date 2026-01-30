@@ -18,129 +18,129 @@ public final class a0 extends jt.k0 implements qt.g {
     private static final jt.v A;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final long f40318i;
+    private static final long f40334i;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final long f40319o;
+    private static final long f40335o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final a0 f40320p;
+    private static final a0 f40336p;
 
     /* renamed from: q  reason: collision with root package name */
-    private static final a0 f40321q;
+    private static final a0 f40337q;
 
     /* renamed from: r  reason: collision with root package name */
-    private static final a0 f40322r;
+    private static final a0 f40338r;
 
     /* renamed from: s  reason: collision with root package name */
-    private static final Set f40323s;
+    private static final Set f40339s;
     private static final long serialVersionUID = -3192884724477742274L;
 
     /* renamed from: t  reason: collision with root package name */
-    private static final Map f40324t;
+    private static final Map f40340t;
 
     /* renamed from: u  reason: collision with root package name */
-    private static final Map f40325u;
+    private static final Map f40341u;
 
     /* renamed from: v  reason: collision with root package name */
-    private static final jt.h0 f40326v;
+    private static final jt.h0 f40342v;
 
     /* renamed from: w  reason: collision with root package name */
-    public static final a0 f40327w;
+    public static final a0 f40343w;
 
     /* renamed from: x  reason: collision with root package name */
-    public static final jt.p f40328x;
+    public static final jt.p f40344x;
 
     /* renamed from: y  reason: collision with root package name */
-    public static final jt.p f40329y;
+    public static final jt.p f40345y;
 
     /* renamed from: z  reason: collision with root package name */
-    public static final jt.p f40330z;
+    public static final jt.p f40346z;
 
     /* renamed from: d  reason: collision with root package name */
-    private final transient long f40331d;
+    private final transient long f40347d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient int f40332e;
+    private final transient int f40348e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f40333a;
+        static final /* synthetic */ int[] f40349a;
 
         /* renamed from: b  reason: collision with root package name */
-        static final /* synthetic */ int[] f40334b;
+        static final /* synthetic */ int[] f40350b;
 
         /* renamed from: c  reason: collision with root package name */
-        static final /* synthetic */ int[] f40335c;
+        static final /* synthetic */ int[] f40351c;
 
         static {
             int[] iArr = new int[TimeUnit.values().length];
-            f40335c = iArr;
+            f40351c = iArr;
             try {
                 iArr[TimeUnit.DAYS.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f40335c[TimeUnit.HOURS.ordinal()] = 2;
+                f40351c[TimeUnit.HOURS.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f40335c[TimeUnit.MINUTES.ordinal()] = 3;
+                f40351c[TimeUnit.MINUTES.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f40335c[TimeUnit.SECONDS.ordinal()] = 4;
+                f40351c[TimeUnit.SECONDS.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f40335c[TimeUnit.MILLISECONDS.ordinal()] = 5;
+                f40351c[TimeUnit.MILLISECONDS.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f40335c[TimeUnit.MICROSECONDS.ordinal()] = 6;
+                f40351c[TimeUnit.MICROSECONDS.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
             try {
-                f40335c[TimeUnit.NANOSECONDS.ordinal()] = 7;
+                f40351c[TimeUnit.NANOSECONDS.ordinal()] = 7;
             } catch (NoSuchFieldError unused7) {
             }
             int[] iArr2 = new int[o0.values().length];
-            f40334b = iArr2;
+            f40350b = iArr2;
             try {
                 iArr2[o0.SECONDS.ordinal()] = 1;
             } catch (NoSuchFieldError unused8) {
             }
             try {
-                f40334b[o0.NANOSECONDS.ordinal()] = 2;
+                f40350b[o0.NANOSECONDS.ordinal()] = 2;
             } catch (NoSuchFieldError unused9) {
             }
             int[] iArr3 = new int[qt.f.values().length];
-            f40333a = iArr3;
+            f40349a = iArr3;
             try {
                 iArr3[qt.f.POSIX.ordinal()] = 1;
             } catch (NoSuchFieldError unused10) {
             }
             try {
-                f40333a[qt.f.UTC.ordinal()] = 2;
+                f40349a[qt.f.UTC.ordinal()] = 2;
             } catch (NoSuchFieldError unused11) {
             }
             try {
-                f40333a[qt.f.TAI.ordinal()] = 3;
+                f40349a[qt.f.TAI.ordinal()] = 3;
             } catch (NoSuchFieldError unused12) {
             }
             try {
-                f40333a[qt.f.GPS.ordinal()] = 4;
+                f40349a[qt.f.GPS.ordinal()] = 4;
             } catch (NoSuchFieldError unused13) {
             }
             try {
-                f40333a[qt.f.TT.ordinal()] = 5;
+                f40349a[qt.f.TT.ordinal()] = 5;
             } catch (NoSuchFieldError unused14) {
             }
             try {
-                f40333a[qt.f.UT.ordinal()] = 6;
+                f40349a[qt.f.UT.ordinal()] = 6;
             } catch (NoSuchFieldError unused15) {
             }
         }
@@ -295,25 +295,25 @@ public final class a0 extends jt.k0 implements qt.g {
         @Override // jt.p
         /* renamed from: F */
         public Long e() {
-            return Long.valueOf(a0.f40319o);
+            return Long.valueOf(a0.f40335o);
         }
 
         @Override // jt.p
         /* renamed from: G */
         public Long A() {
-            return Long.valueOf(a0.f40318i);
+            return Long.valueOf(a0.f40334i);
         }
 
         @Override // jt.z
         /* renamed from: H */
         public Long j(a0 a0Var) {
-            return Long.valueOf(a0.f40319o);
+            return Long.valueOf(a0.f40335o);
         }
 
         @Override // jt.z
         /* renamed from: I */
         public Long p(a0 a0Var) {
-            return Long.valueOf(a0.f40318i);
+            return Long.valueOf(a0.f40334i);
         }
 
         @Override // jt.z
@@ -329,7 +329,7 @@ public final class a0 extends jt.k0 implements qt.g {
                 return false;
             }
             long longValue = l10.longValue();
-            if (longValue < a0.f40318i || longValue > a0.f40319o) {
+            if (longValue < a0.f40334i || longValue > a0.f40335o) {
                 return false;
             }
             return true;
@@ -372,7 +372,7 @@ public final class a0 extends jt.k0 implements qt.g {
 
         @Override // jt.u
         public jt.f0 a() {
-            return jt.f0.f32742a;
+            return jt.f0.f32758a;
         }
 
         @Override // jt.u
@@ -388,7 +388,7 @@ public final class a0 extends jt.k0 implements qt.g {
             a0 a0Var;
             net.time4j.tz.p B;
             a0 a0Var2;
-            qt.f fVar = (qt.f) dVar.b(kt.a.f36550w, qt.f.UTC);
+            qt.f fVar = (qt.f) dVar.b(kt.a.f36566w, qt.f.UTC);
             if (qVar instanceof gt.f) {
                 return a0.a0((gt.f) gt.f.class.cast(qVar)).u0(fVar);
             }
@@ -414,15 +414,15 @@ public final class a0 extends jt.k0 implements qt.g {
             if (qVar.l()) {
                 kVar = qVar.v();
             } else {
-                jt.c cVar2 = kt.a.f36531d;
+                jt.c cVar2 = kt.a.f36547d;
                 kVar = dVar.a(cVar2) ? (net.time4j.tz.k) dVar.c(cVar2) : null;
             }
             if (kVar != null) {
                 jt.b0 b0Var = jt.b0.DAYLIGHT_SAVING;
                 if (qVar.o(b0Var)) {
-                    a0Var = i0Var.Y(net.time4j.tz.l.N(kVar).Q(((net.time4j.tz.o) dVar.b(kt.a.f36532e, net.time4j.tz.l.f40846o)).a(((Boolean) qVar.p(b0Var)).booleanValue() ? net.time4j.tz.g.EARLIER_OFFSET : net.time4j.tz.g.LATER_OFFSET)));
+                    a0Var = i0Var.Y(net.time4j.tz.l.N(kVar).Q(((net.time4j.tz.o) dVar.b(kt.a.f36548e, net.time4j.tz.l.f40862o)).a(((Boolean) qVar.p(b0Var)).booleanValue() ? net.time4j.tz.g.EARLIER_OFFSET : net.time4j.tz.g.LATER_OFFSET)));
                 } else {
-                    jt.c cVar3 = kt.a.f36532e;
+                    jt.c cVar3 = kt.a.f36548e;
                     if (dVar.a(cVar3)) {
                         a0Var = i0Var.Y(net.time4j.tz.l.N(kVar).Q((net.time4j.tz.o) dVar.c(cVar3)));
                     } else {
@@ -465,9 +465,9 @@ public final class a0 extends jt.k0 implements qt.g {
         @Override // jt.u
         /* renamed from: e */
         public jt.o c(a0 a0Var, jt.d dVar) {
-            jt.c cVar = kt.a.f36531d;
+            jt.c cVar = kt.a.f36547d;
             if (dVar.a(cVar)) {
-                return a0Var.v0((qt.f) dVar.b(kt.a.f36550w, qt.f.UTC)).h0((net.time4j.tz.k) dVar.c(cVar));
+                return a0Var.v0((qt.f) dVar.b(kt.a.f36566w, qt.f.UTC)).h0((net.time4j.tz.k) dVar.c(cVar));
             }
             throw new IllegalArgumentException("Cannot print moment without timezone.");
         }
@@ -543,7 +543,7 @@ public final class a0 extends jt.k0 implements qt.g {
         public TimeUnit x(a0 a0Var) {
             int a10 = a0Var.a();
             if (a10 == 0) {
-                long j10 = a0Var.f40331d;
+                long j10 = a0Var.f40347d;
                 if (gt.c.d(j10, 86400) == 0) {
                     return TimeUnit.DAYS;
                 }
@@ -575,21 +575,21 @@ public final class a0 extends jt.k0 implements qt.g {
         public a0 w(a0 a0Var, TimeUnit timeUnit, boolean z10) {
             a0 l02;
             if (timeUnit != null) {
-                switch (a.f40335c[timeUnit.ordinal()]) {
+                switch (a.f40351c[timeUnit.ordinal()]) {
                     case 1:
-                        return a0.m0(gt.c.b(a0Var.f40331d, 86400) * 86400, qt.f.POSIX);
+                        return a0.m0(gt.c.b(a0Var.f40347d, 86400) * 86400, qt.f.POSIX);
                     case 2:
-                        return a0.m0(gt.c.b(a0Var.f40331d, 3600) * 3600, qt.f.POSIX);
+                        return a0.m0(gt.c.b(a0Var.f40347d, 3600) * 3600, qt.f.POSIX);
                     case 3:
-                        return a0.m0(gt.c.b(a0Var.f40331d, 60) * 60, qt.f.POSIX);
+                        return a0.m0(gt.c.b(a0Var.f40347d, 60) * 60, qt.f.POSIX);
                     case 4:
-                        l02 = a0.l0(a0Var.f40331d, 0, qt.f.POSIX);
+                        l02 = a0.l0(a0Var.f40347d, 0, qt.f.POSIX);
                         break;
                     case 5:
-                        l02 = a0.l0(a0Var.f40331d, (a0Var.a() / 1000000) * 1000000, qt.f.POSIX);
+                        l02 = a0.l0(a0Var.f40347d, (a0Var.a() / 1000000) * 1000000, qt.f.POSIX);
                         break;
                     case 6:
-                        l02 = a0.l0(a0Var.f40331d, (a0Var.a() / 1000) * 1000, qt.f.POSIX);
+                        l02 = a0.l0(a0Var.f40347d, (a0Var.a() / 1000) * 1000, qt.f.POSIX);
                         break;
                     case 7:
                         return a0Var;
@@ -613,19 +613,19 @@ public final class a0 extends jt.k0 implements qt.g {
     private static class h implements jt.m0 {
 
         /* renamed from: a  reason: collision with root package name */
-        private final TimeUnit f40340a;
+        private final TimeUnit f40356a;
 
         h(TimeUnit timeUnit) {
-            this.f40340a = timeUnit;
+            this.f40356a = timeUnit;
         }
 
         @Override // jt.m0
         /* renamed from: c */
         public a0 b(a0 a0Var, long j10) {
-            if (this.f40340a.compareTo(TimeUnit.SECONDS) >= 0) {
-                return a0.l0(gt.c.f(a0Var.r(), gt.c.i(j10, this.f40340a.toSeconds(1L))), a0Var.a(), qt.f.POSIX);
+            if (this.f40356a.compareTo(TimeUnit.SECONDS) >= 0) {
+                return a0.l0(gt.c.f(a0Var.r(), gt.c.i(j10, this.f40356a.toSeconds(1L))), a0Var.a(), qt.f.POSIX);
             }
-            long f10 = gt.c.f(a0Var.a(), gt.c.i(j10, this.f40340a.toNanos(1L)));
+            long f10 = gt.c.f(a0Var.a(), gt.c.i(j10, this.f40356a.toNanos(1L)));
             return a0.l0(gt.c.f(a0Var.r(), gt.c.b(f10, 1000000000)), gt.c.d(f10, 1000000000), qt.f.POSIX);
         }
 
@@ -633,7 +633,7 @@ public final class a0 extends jt.k0 implements qt.g {
         /* renamed from: d */
         public long a(a0 a0Var, a0 a0Var2) {
             long f10;
-            if (this.f40340a.compareTo(TimeUnit.SECONDS) >= 0) {
+            if (this.f40356a.compareTo(TimeUnit.SECONDS) >= 0) {
                 f10 = a0Var2.r() - a0Var.r();
                 int i10 = (f10 > 0L ? 1 : (f10 == 0L ? 0 : -1));
                 if (i10 < 0) {
@@ -646,7 +646,7 @@ public final class a0 extends jt.k0 implements qt.g {
             } else {
                 f10 = gt.c.f(gt.c.i(gt.c.m(a0Var2.r(), a0Var.r()), 1000000000L), a0Var2.a() - a0Var.a());
             }
-            switch (a.f40335c[this.f40340a.ordinal()]) {
+            switch (a.f40351c[this.f40356a.ordinal()]) {
                 case 1:
                     return f10 / 86400;
                 case 2:
@@ -661,7 +661,7 @@ public final class a0 extends jt.k0 implements qt.g {
                 case 6:
                     return f10 / 1000;
                 default:
-                    throw new UnsupportedOperationException(this.f40340a.name());
+                    throw new UnsupportedOperationException(this.f40356a.name());
             }
         }
     }
@@ -673,15 +673,15 @@ public final class a0 extends jt.k0 implements qt.g {
         jt.a0 a0Var = jt.a0.UNIX;
         jt.a0 a0Var2 = jt.a0.MODIFIED_JULIAN_DATE;
         long l10 = a0Var.l(j10, a0Var2) * 86400;
-        f40318i = l10;
+        f40334i = l10;
         long l11 = (a0Var.l(j11, a0Var2) * 86400) + 86399;
-        f40319o = l11;
+        f40335o = l11;
         qt.f fVar = qt.f.POSIX;
         a0 a0Var3 = new a0(l10, 0, fVar);
-        f40320p = a0Var3;
+        f40336p = a0Var3;
         a0 a0Var4 = new a0(l11, 999999999, fVar);
-        f40321q = a0Var4;
-        f40322r = new a0(63158400L, 0, fVar);
+        f40337q = a0Var4;
+        f40338r = new a0(63158400L, 0, fVar);
         HashSet hashSet = new HashSet();
         hashSet.add(g0.G);
         hashSet.add(g0.F);
@@ -691,7 +691,7 @@ public final class a0 extends jt.k0 implements qt.g {
         hashSet.add(g0.B);
         hashSet.add(g0.H);
         hashSet.add(g0.I);
-        f40323s = Collections.unmodifiableSet(hashSet);
+        f40339s = Collections.unmodifiableSet(hashSet);
         HashMap hashMap = new HashMap();
         hashMap.put(g0.J, 1);
         hashMap.put(g0.K, 1);
@@ -701,7 +701,7 @@ public final class a0 extends jt.k0 implements qt.g {
         hashMap.put(g0.P, 1000000);
         hashMap.put(g0.N, 1000000000);
         hashMap.put(g0.Q, 1000000000);
-        f40324t = Collections.unmodifiableMap(hashMap);
+        f40340t = Collections.unmodifiableMap(hashMap);
         EnumMap enumMap = new EnumMap(TimeUnit.class);
         enumMap.put((EnumMap) TimeUnit.DAYS, (TimeUnit) Double.valueOf(86400.0d));
         enumMap.put((EnumMap) TimeUnit.HOURS, (TimeUnit) Double.valueOf(3600.0d));
@@ -710,24 +710,24 @@ public final class a0 extends jt.k0 implements qt.g {
         enumMap.put((EnumMap) TimeUnit.MILLISECONDS, (TimeUnit) Double.valueOf(0.001d));
         enumMap.put((EnumMap) TimeUnit.MICROSECONDS, (TimeUnit) Double.valueOf(1.0E-6d));
         enumMap.put((EnumMap) TimeUnit.NANOSECONDS, (TimeUnit) Double.valueOf(1.0E-9d));
-        f40325u = Collections.unmodifiableMap(enumMap);
+        f40341u = Collections.unmodifiableMap(enumMap);
         h0.b k10 = h0.b.k(TimeUnit.class, a0.class, new e(null), a0Var3, a0Var4);
         for (TimeUnit timeUnit : TimeUnit.values()) {
             h hVar = new h(timeUnit);
-            Map map = f40325u;
+            Map map = f40341u;
             k10.g(timeUnit, hVar, ((Double) map.get(timeUnit)).doubleValue(), map.keySet());
         }
         d dVar = d.POSIX_TIME;
         k10.e(dVar, dVar, TimeUnit.SECONDS);
         c cVar = c.FRACTION;
         k10.e(cVar, cVar, TimeUnit.NANOSECONDS);
-        jt.p pVar = j0.f40715p;
+        jt.p pVar = j0.f40731p;
         k10.d(pVar, new g(null));
-        f40326v = k10.l(new b(null)).h();
-        f40327w = new a0(0L, 0, qt.f.POSIX);
-        f40328x = dVar;
-        f40329y = cVar;
-        f40330z = pVar;
+        f40342v = k10.l(new b(null)).h();
+        f40343w = new a0(0L, 0, qt.f.POSIX);
+        f40344x = dVar;
+        f40345y = cVar;
+        f40346z = pVar;
         A = new f(null);
     }
 
@@ -736,11 +736,11 @@ public final class a0 extends jt.k0 implements qt.g {
     }
 
     public static jt.h0 T() {
-        return f40326v;
+        return f40342v;
     }
 
     static void U(a0 a0Var) {
-        if (a0Var.f40331d >= 63072000) {
+        if (a0Var.f40347d >= 63072000) {
             return;
         }
         throw new UnsupportedOperationException("Cannot calculate SI-duration before 1972-01-01.");
@@ -762,7 +762,7 @@ public final class a0 extends jt.k0 implements qt.g {
     }
 
     private static void X(long j10) {
-        if (j10 <= f40319o && j10 >= f40318i) {
+        if (j10 <= f40335o && j10 >= f40334i) {
             return;
         }
         throw new IllegalArgumentException("UNIX time (UT) out of supported range: " + j10);
@@ -794,18 +794,18 @@ public final class a0 extends jt.k0 implements qt.g {
 
     /* JADX INFO: Access modifiers changed from: private */
     public f0 c0() {
-        return f0.M0(gt.c.b(this.f40331d, 86400), jt.a0.UNIX);
+        return f0.M0(gt.c.b(this.f40347d, 86400), jt.a0.UNIX);
     }
 
     private long d0() {
         if (qt.d.p().D()) {
-            long h10 = qt.d.p().h(this.f40331d);
+            long h10 = qt.d.p().h(this.f40347d);
             if (k0()) {
                 return h10 + 1;
             }
             return h10;
         }
-        return this.f40331d - 63072000;
+        return this.f40347d - 63072000;
     }
 
     private double e0() {
@@ -818,7 +818,7 @@ public final class a0 extends jt.k0 implements qt.g {
     }
 
     private static int f0(a0 a0Var) {
-        return gt.c.d(a0Var.f40331d, 86400);
+        return gt.c.d(a0Var.f40347d, 86400);
     }
 
     private i0 g0(net.time4j.tz.l lVar) {
@@ -827,7 +827,7 @@ public final class a0 extends jt.k0 implements qt.g {
 
     /* JADX INFO: Access modifiers changed from: private */
     public boolean k0() {
-        if ((this.f40332e >>> 30) != 0) {
+        if ((this.f40348e >>> 30) != 0) {
             return true;
         }
         return false;
@@ -835,7 +835,7 @@ public final class a0 extends jt.k0 implements qt.g {
 
     public static a0 l0(long j10, int i10, qt.f fVar) {
         if (j10 == 0 && i10 == 0 && fVar == qt.f.POSIX) {
-            return f40327w;
+            return f40343w;
         }
         return new a0(j10, i10, fVar);
     }
@@ -857,20 +857,20 @@ public final class a0 extends jt.k0 implements qt.g {
         if (readLong == 0) {
             if (!z10) {
                 if (i10 == 0) {
-                    return f40327w;
+                    return f40343w;
                 }
             } else {
                 throw new InvalidObjectException("UTC epoch is no leap second.");
             }
         }
-        if (readLong == f40318i && i10 == 0) {
+        if (readLong == f40334i && i10 == 0) {
             if (!z10) {
-                return f40320p;
+                return f40336p;
             }
             throw new InvalidObjectException("Minimum is no leap second.");
-        } else if (readLong == f40319o && i10 == 999999999) {
+        } else if (readLong == f40335o && i10 == 999999999) {
             if (!z10) {
-                return f40321q;
+                return f40337q;
             }
             throw new InvalidObjectException("Maximum is no leap second.");
         } else {
@@ -952,18 +952,18 @@ public final class a0 extends jt.k0 implements qt.g {
     public a0 u0(qt.f fVar) {
         if (fVar != qt.f.UTC) {
             if (!j0()) {
-                int i10 = a.f40333a[fVar.ordinal()];
+                int i10 = a.f40349a[fVar.ordinal()];
                 if (i10 != 1) {
                     if (i10 != 3) {
                         if (i10 != 4) {
                             if (i10 != 5 && i10 != 6) {
                                 throw new UnsupportedOperationException(fVar.name());
                             }
-                            return new a0(gt.c.m(this.f40331d, 63072000L), a(), fVar);
+                            return new a0(gt.c.m(this.f40347d, 63072000L), a(), fVar);
                         }
-                        return new a0(gt.c.m(this.f40331d, 315964800L), a(), fVar);
+                        return new a0(gt.c.m(this.f40347d, 315964800L), a(), fVar);
                     }
-                    return new a0(gt.c.m(this.f40331d, -378691200L), a(), fVar);
+                    return new a0(gt.c.m(this.f40347d, -378691200L), a(), fVar);
                 }
             } else {
                 throw new IllegalArgumentException("Leap seconds do not exist on continuous time scale: " + fVar);
@@ -975,10 +975,10 @@ public final class a0 extends jt.k0 implements qt.g {
     /* JADX INFO: Access modifiers changed from: private */
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
     public a0 v0(qt.f fVar) {
-        switch (a.f40333a[fVar.ordinal()]) {
+        switch (a.f40349a[fVar.ordinal()]) {
             case 1:
                 if (j0()) {
-                    return new a0(a(), this.f40331d);
+                    return new a0(a(), this.f40347d);
                 }
                 break;
             case 2:
@@ -1004,7 +1004,7 @@ public final class a0 extends jt.k0 implements qt.g {
     @Override // jt.q
     /* renamed from: H */
     public jt.h0 w() {
-        return f40326v;
+        return f40342v;
     }
 
     @Override // java.lang.Comparable
@@ -1026,7 +1026,7 @@ public final class a0 extends jt.k0 implements qt.g {
 
     @Override // gt.f
     public int a() {
-        return this.f40332e & (-1073741825);
+        return this.f40348e & (-1073741825);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
@@ -1042,11 +1042,11 @@ public final class a0 extends jt.k0 implements qt.g {
         }
         if (obj instanceof a0) {
             a0 a0Var = (a0) obj;
-            if (this.f40331d != a0Var.f40331d) {
+            if (this.f40347d != a0Var.f40347d) {
                 return false;
             }
             if (qt.d.p().D()) {
-                if (this.f40332e == a0Var.f40332e) {
+                if (this.f40348e == a0Var.f40348e) {
                     return true;
                 }
                 return false;
@@ -1062,7 +1062,7 @@ public final class a0 extends jt.k0 implements qt.g {
     }
 
     public int hashCode() {
-        long j10 = this.f40331d;
+        long j10 = this.f40347d;
         return (((int) (j10 ^ (j10 >>> 32))) * 19) + (a() * 37);
     }
 
@@ -1085,13 +1085,13 @@ public final class a0 extends jt.k0 implements qt.g {
         long d02;
         int a10;
         int i10 = 0;
-        switch (a.f40333a[fVar.ordinal()]) {
+        switch (a.f40349a[fVar.ordinal()]) {
             case 1:
             case 2:
                 return a();
             case 3:
                 if (d0() < 0) {
-                    double e10 = qt.f.e(c0()) + (this.f40331d - 63072000) + (a() / 1.0E9d);
+                    double e10 = qt.f.e(c0()) + (this.f40347d - 63072000) + (a() / 1.0E9d);
                     long floor = (long) Math.floor(e10);
                     if (Double.compare(1.0E9d - ((e10 - floor) * 1.0E9d), 1.0d) < 0) {
                         floor++;
@@ -1118,8 +1118,8 @@ public final class a0 extends jt.k0 implements qt.g {
                 }
                 throw new IllegalArgumentException("GPS not supported before 1980-01-06: " + this);
             case 5:
-                if (this.f40331d < 63072000) {
-                    double e11 = qt.f.e(c0()) + (this.f40331d - 63072000) + (a() / 1.0E9d);
+                if (this.f40347d < 63072000) {
+                    double e11 = qt.f.e(c0()) + (this.f40347d - 63072000) + (a() / 1.0E9d);
                     long floor2 = (long) Math.floor(e11);
                     if (Double.compare(1.0E9d - ((e11 - floor2) * 1.0E9d), 1.0d) < 0) {
                         return 0;
@@ -1133,7 +1133,7 @@ public final class a0 extends jt.k0 implements qt.g {
                 }
                 return i11;
             case 6:
-                if (this.f40331d < 63072000) {
+                if (this.f40347d < 63072000) {
                     return a();
                 }
                 double e02 = e0();
@@ -1151,7 +1151,7 @@ public final class a0 extends jt.k0 implements qt.g {
             return this;
         }
         try {
-            int i11 = a.f40334b[o0Var.ordinal()];
+            int i11 = a.f40350b[o0Var.ordinal()];
             if (i11 != 1) {
                 if (i11 == 2) {
                     long f10 = gt.c.f(a(), j10);
@@ -1160,7 +1160,7 @@ public final class a0 extends jt.k0 implements qt.g {
                     if (qt.d.p().D()) {
                         l02 = new a0(gt.c.f(d0(), b10), d10, qt.f.UTC);
                     } else {
-                        l02 = l0(gt.c.f(this.f40331d, b10), d10, qt.f.POSIX);
+                        l02 = l0(gt.c.f(this.f40347d, b10), d10, qt.f.POSIX);
                     }
                 } else {
                     throw new UnsupportedOperationException();
@@ -1168,7 +1168,7 @@ public final class a0 extends jt.k0 implements qt.g {
             } else if (qt.d.p().D()) {
                 l02 = new a0(gt.c.f(d0(), j10), a(), qt.f.UTC);
             } else {
-                l02 = l0(gt.c.f(this.f40331d, j10), a(), qt.f.POSIX);
+                l02 = l0(gt.c.f(this.f40347d, j10), a(), qt.f.POSIX);
             }
             if (i10 < 0) {
                 U(l02);
@@ -1184,32 +1184,32 @@ public final class a0 extends jt.k0 implements qt.g {
     public r p0(jt.j jVar, String str, net.time4j.tz.k kVar, jt.f0 f0Var) {
         i0 t02 = t0(kVar);
         t02.X();
-        ((i0) t02.J(f0Var.b(t02.V(), kVar), net.time4j.g.f40590i)).V();
+        ((i0) t02.J(f0Var.b(t02.V(), kVar), net.time4j.g.f40606i)).V();
         throw null;
     }
 
     public r q0(jt.x xVar, net.time4j.tz.k kVar, jt.f0 f0Var) {
         i0 t02 = t0(kVar);
-        return r.b(((i0) t02.J(f0Var.b(t02.V(), kVar), net.time4j.g.f40590i)).V().T(xVar.p()), t02.X());
+        return r.b(((i0) t02.J(f0Var.b(t02.V(), kVar), net.time4j.g.f40606i)).V().T(xVar.p()), t02.X());
     }
 
     @Override // gt.f
     public long r() {
-        return this.f40331d;
+        return this.f40347d;
     }
 
     @Override // qt.g
     public long s(qt.f fVar) {
         long d02;
         int r02;
-        switch (a.f40333a[fVar.ordinal()]) {
+        switch (a.f40349a[fVar.ordinal()]) {
             case 1:
-                return this.f40331d;
+                return this.f40347d;
             case 2:
                 return d0();
             case 3:
                 if (d0() < 0) {
-                    double e10 = qt.f.e(c0()) + (this.f40331d - 63072000) + (a() / 1.0E9d);
+                    double e10 = qt.f.e(c0()) + (this.f40347d - 63072000) + (a() / 1.0E9d);
                     long floor = (long) Math.floor(e10);
                     if (Double.compare(1.0E9d - ((e10 - floor) * 1.0E9d), 1.0d) < 0) {
                         floor++;
@@ -1238,8 +1238,8 @@ public final class a0 extends jt.k0 implements qt.g {
                 }
                 throw new IllegalArgumentException("GPS not supported before 1980-01-06: " + this);
             case 5:
-                if (this.f40331d < 63072000) {
-                    double e11 = qt.f.e(c0()) + (this.f40331d - 63072000) + (a() / 1.0E9d);
+                if (this.f40347d < 63072000) {
+                    double e11 = qt.f.e(c0()) + (this.f40347d - 63072000) + (a() / 1.0E9d);
                     long floor2 = (long) Math.floor(e11);
                     if (Double.compare(1.0E9d - ((e11 - floor2) * 1.0E9d), 1.0d) < 0) {
                         return floor2 + 1;
@@ -1253,7 +1253,7 @@ public final class a0 extends jt.k0 implements qt.g {
                 }
                 return j10;
             case 6:
-                long j11 = this.f40331d;
+                long j11 = this.f40347d;
                 if (j11 < 63072000) {
                     return j11 - 63072000;
                 }
@@ -1284,7 +1284,7 @@ public final class a0 extends jt.k0 implements qt.g {
             i10 |= 2;
         }
         dataOutput.writeByte(i10);
-        dataOutput.writeLong(this.f40331d);
+        dataOutput.writeLong(this.f40347d);
         if (a10 > 0) {
             dataOutput.writeInt(a10);
         }
@@ -1298,8 +1298,8 @@ public final class a0 extends jt.k0 implements qt.g {
         long j12 = j10;
         int i11 = i10;
         if (fVar == qt.f.POSIX) {
-            this.f40331d = j12;
-            this.f40332e = i11;
+            this.f40347d = j12;
+            this.f40348e = i11;
         } else {
             qt.d p10 = qt.d.p();
             if (p10.D()) {
@@ -1356,11 +1356,11 @@ public final class a0 extends jt.k0 implements qt.g {
                     }
                     long H = p10.H(floor);
                     h10 = floor - p10.h(H);
-                    this.f40331d = H;
-                    if (h10 != j11 || H == f40319o) {
-                        this.f40332e = r02;
+                    this.f40347d = H;
+                    if (h10 != j11 || H == f40335o) {
+                        this.f40348e = r02;
                     } else if (h10 == 1) {
-                        this.f40332e = 1073741824 | r02;
+                        this.f40348e = 1073741824 | r02;
                     } else {
                         throw new IllegalStateException("Cannot handle leap shift of " + j12 + ".");
                     }
@@ -1370,22 +1370,22 @@ public final class a0 extends jt.k0 implements qt.g {
                 floor = j12;
                 long H2 = p10.H(floor);
                 h10 = floor - p10.h(H2);
-                this.f40331d = H2;
+                this.f40347d = H2;
                 if (h10 != j11) {
                 }
-                this.f40332e = r02;
+                this.f40348e = r02;
                 i11 = r02;
             } else {
                 throw new IllegalStateException("Leap seconds are not supported by configuration.");
             }
         }
-        X(this.f40331d);
+        X(this.f40347d);
         V(i11);
     }
 
     private a0(int i10, long j10) {
         X(j10);
-        this.f40331d = j10;
-        this.f40332e = i10;
+        this.f40347d = j10;
+        this.f40348e = i10;
     }
 }

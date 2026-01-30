@@ -6,19 +6,19 @@ import kotlin.jvm.internal.Intrinsics;
 public final class g implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Function1 f50545a;
+    private final Function1 f50561a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f50546b;
+    private final int f50562b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Integer f50547c;
+    private final Integer f50563c;
 
     public g(Function1 number, int i10, Integer num) {
         Intrinsics.checkNotNullParameter(number, "number");
-        this.f50545a = number;
-        this.f50546b = i10;
-        this.f50547c = num;
+        this.f50561a = number;
+        this.f50562b = i10;
+        this.f50563c = num;
         if (i10 >= 0) {
             if (i10 <= 9) {
                 return;

@@ -6,7 +6,7 @@ import vs.g;
 public final class b extends e {
 
     /* renamed from: c  reason: collision with root package name */
-    private final String f51895c;
+    private final String f51911c;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*
@@ -28,7 +28,7 @@ public final class b extends e {
             java.lang.String r1 = r1.toString()
             r2 = 0
             r3.<init>(r0, r1, r2)
-            r3.f51895c = r4
+            r3.f51911c = r4
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: vs.b.<init>(java.lang.String):void");
@@ -37,9 +37,9 @@ public final class b extends e {
     @Override // vs.e
     public g a(Object obj, CharSequence input, int i10, int i11) {
         Intrinsics.checkNotNullParameter(input, "input");
-        if (Intrinsics.areEqual(input.subSequence(i10, i11).toString(), this.f51895c)) {
+        if (Intrinsics.areEqual(input.subSequence(i10, i11).toString(), this.f51911c)) {
             return null;
         }
-        return new g.e(this.f51895c);
+        return new g.e(this.f51911c);
     }
 }

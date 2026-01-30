@@ -5,25 +5,25 @@ import w5.c;
 public class k {
 
     /* renamed from: f  reason: collision with root package name */
-    private static final c.a f50685f = c.a.a("ef");
+    private static final c.a f50701f = c.a.a("ef");
 
     /* renamed from: g  reason: collision with root package name */
-    private static final c.a f50686g = c.a.a("nm", "v");
+    private static final c.a f50702g = c.a.a("nm", "v");
 
     /* renamed from: a  reason: collision with root package name */
-    private r5.a f50687a;
+    private r5.a f50703a;
 
     /* renamed from: b  reason: collision with root package name */
-    private r5.b f50688b;
+    private r5.b f50704b;
 
     /* renamed from: c  reason: collision with root package name */
-    private r5.b f50689c;
+    private r5.b f50705c;
 
     /* renamed from: d  reason: collision with root package name */
-    private r5.b f50690d;
+    private r5.b f50706d;
 
     /* renamed from: e  reason: collision with root package name */
-    private r5.b f50691e;
+    private r5.b f50707e;
 
     /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
     /* JADX WARN: Code restructure failed: missing block: B:26:0x0052, code lost:
@@ -41,7 +41,7 @@ public class k {
         L5:
             boolean r1 = r6.hasNext()
             if (r1 == 0) goto L90
-            w5.c$a r1 = v5.k.f50686g
+            w5.c$a r1 = v5.k.f50702g
             int r1 = r6.B(r1)
             if (r1 == 0) goto L8a
             r2 = 1
@@ -115,23 +115,23 @@ public class k {
             goto L5
         L66:
             r5.b r1 = v5.d.e(r6, r7)
-            r5.f50691e = r1
+            r5.f50707e = r1
             goto L5
         L6d:
             r5.a r1 = v5.d.c(r6, r7)
-            r5.f50687a = r1
+            r5.f50703a = r1
             goto L5
         L74:
             r5.b r1 = v5.d.f(r6, r7, r3)
-            r5.f50689c = r1
+            r5.f50705c = r1
             goto L5
         L7b:
             r5.b r1 = v5.d.f(r6, r7, r3)
-            r5.f50688b = r1
+            r5.f50704b = r1
             goto L5
         L82:
             r5.b r1 = v5.d.e(r6, r7)
-            r5.f50690d = r1
+            r5.f50706d = r1
             goto L5
         L8a:
             java.lang.String r0 = r6.e1()
@@ -150,7 +150,7 @@ public class k {
         r5.b bVar3;
         r5.b bVar4;
         while (cVar.hasNext()) {
-            if (cVar.B(f50685f) != 0) {
+            if (cVar.B(f50701f) != 0) {
                 cVar.E();
                 cVar.P();
             } else {
@@ -161,8 +161,8 @@ public class k {
                 cVar.s();
             }
         }
-        r5.a aVar = this.f50687a;
-        if (aVar != null && (bVar = this.f50688b) != null && (bVar2 = this.f50689c) != null && (bVar3 = this.f50690d) != null && (bVar4 = this.f50691e) != null) {
+        r5.a aVar = this.f50703a;
+        if (aVar != null && (bVar = this.f50704b) != null && (bVar2 = this.f50705c) != null && (bVar3 = this.f50706d) != null && (bVar4 = this.f50707e) != null) {
             return new j(aVar, bVar, bVar2, bVar3, bVar4);
         }
         return null;

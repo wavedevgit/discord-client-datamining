@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/premium_marketing/PremiumSettingScreen.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Original name: PremiumScreen, environment: var1
-        _fun82292: for (var _fun82292_ip = 0;;) switch (_fun82292_ip) {
+        _fun82338: for (var _fun82338_ip = 0;;) switch (_fun82338_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var5 = _closure1_slot2;
@@ -52,8 +52,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var2)();
                 var5 = undefined;
                 if (var1) {
-                    _fun82292_ip = 98;
-                    continue _fun82292
+                    _fun82338_ip = 98;
+                    continue _fun82338
                 }
             case 72:
                 var2 = _closure1_slot1;
@@ -80,4 +80,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 7509, 1469, 7184, 7005, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 7512, 1469, 7187, 7008, 2]);

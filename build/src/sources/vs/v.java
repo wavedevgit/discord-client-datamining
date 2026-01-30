@@ -6,16 +6,16 @@ import vs.g;
 public final class v extends e {
 
     /* renamed from: c  reason: collision with root package name */
-    private final Integer f51951c;
+    private final Integer f51967c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Integer f51952d;
+    private final Integer f51968d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final a f51953e;
+    private final a f51969e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final boolean f51954f;
+    private final boolean f51970f;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*
@@ -38,10 +38,10 @@ public final class v extends e {
             r0 = r1
         L14:
             r2.<init>(r0, r6, r1)
-            r2.f51951c = r3
-            r2.f51952d = r4
-            r2.f51953e = r5
-            r2.f51954f = r7
+            r2.f51967c = r3
+            r2.f51968d = r4
+            r2.f51969e = r5
+            r2.f51970f = r7
             java.lang.Integer r3 = r2.b()
             if (r3 == 0) goto L67
             kotlin.ranges.IntRange r3 = new kotlin.ranges.IntRange
@@ -80,18 +80,18 @@ public final class v extends e {
         Integer e10;
         g f10;
         Intrinsics.checkNotNullParameter(input, "input");
-        Integer num = this.f51952d;
+        Integer num = this.f51968d;
         if (num != null && i11 - i10 > num.intValue()) {
-            return new g.d(this.f51952d.intValue());
+            return new g.d(this.f51968d.intValue());
         }
-        Integer num2 = this.f51951c;
+        Integer num2 = this.f51967c;
         if (num2 == null || i11 - i10 >= num2.intValue()) {
             e10 = f.e(input, i10, i11);
             if (e10 == null) {
-                return g.b.f51902a;
+                return g.b.f51918a;
             }
-            a aVar = this.f51953e;
-            boolean z10 = this.f51954f;
+            a aVar = this.f51969e;
+            boolean z10 = this.f51970f;
             int intValue = e10.intValue();
             if (z10) {
                 intValue = -intValue;
@@ -99,6 +99,6 @@ public final class v extends e {
             f10 = f.f(aVar, obj, Integer.valueOf(intValue));
             return f10;
         }
-        return new g.c(this.f51951c.intValue());
+        return new g.c(this.f51967c.intValue());
     }
 }

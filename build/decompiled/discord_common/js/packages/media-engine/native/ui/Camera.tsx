@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var0;
     var _closure1_slot1 = var5;
     var1 = function(arg0) { // Original name: Camera, environment: var6
-        _fun32214: for (var _fun32214_ip = 0;;) switch (_fun32214_ip) {
+        _fun32219: for (var _fun32219_ip = 0;;) switch (_fun32219_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.disabled;
@@ -17,8 +17,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.height;
                 var4 = _closure1_slot2;
                 if (var1) {
-                    _fun32214_ip = 85;
-                    continue _fun32214
+                    _fun32219_ip = 85;
+                    continue _fun32219
                 }
             case 34:
                 var1 = _closure1_slot0;
@@ -34,8 +34,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6.height = var2;
                 var0.style = var6;
                 var0 = var4.bind(var3)(var1, var0);
-                _fun32214_ip = 124;
-                continue _fun32214;
+                _fun32219_ip = 124;
+                continue _fun32219;
             case 85:
                 var3 = {};
                 var1 = 'media-engine-video';
@@ -83,4 +83,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3593, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3595, 2]);

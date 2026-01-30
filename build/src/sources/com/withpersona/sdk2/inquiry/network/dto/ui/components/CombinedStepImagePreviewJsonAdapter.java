@@ -85,7 +85,7 @@ public final class CombinedStepImagePreviewJsonAdapter extends h {
         }
         Constructor<CombinedStepImagePreview> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = CombinedStepImagePreview.class.getDeclaredConstructor(String.class, CombinedStepImagePreview.Attributes.class, CombinedStepImagePreview.CombinedStepImagePreviewComponentStyle.class, Integer.TYPE, c.f49081c);
+            constructor = CombinedStepImagePreview.class.getDeclaredConstructor(String.class, CombinedStepImagePreview.Attributes.class, CombinedStepImagePreview.CombinedStepImagePreviewComponentStyle.class, Integer.TYPE, c.f49097c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

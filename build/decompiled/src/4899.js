@@ -1,48 +1,68 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var4 = require;
+    var5 = require;
     var2 = exports;
-    var3 = dependencyMap;
-    var _closure1_slot0 = var4;
-    var _closure1_slot1 = var3;
-    var0 = global;
-    var7 = var0.Object;
-    var6 = var7.defineProperty;
-    var5 = {};
-    var0 = true;
-    var5.value = var0;
+    var6 = dependencyMap;
+    var3 = global;
+    var8 = var3.Object;
+    var7 = var8.defineProperty;
+    var4 = {};
+    var1 = true;
+    var4.value = var1;
     var0 = '__esModule';
-    var0 = var6.bind(var7)(var2, var0, var5);
-    var0 = 0;
-    var3 = var3[var0];
+    var0 = var7.bind(var8)(var2, var0, var4);
+    var4 = 0;
+    var7 = var6[var4];
     var0 = undefined;
-    var3 = var4.bind(var0)(var3);
-    var3 = var3.useContext;
-    var _closure1_slot2 = var3;
-    var1 = function() { // Original name: useBottomSheetModal, environment: var1
-        _fun44528: for (var _fun44528_ip = 0;;) switch (_fun44528_ip) {
-            case 0:
-                var2 = _closure1_slot2;
-                var3 = _closure1_slot0;
-                var1 = _closure1_slot1;
-                var0 = 1;
-                var0 = var1[var0];
-                var1 = undefined;
-                var0 = var3.bind(var1)(var0);
-                var0 = var0.BottomSheetModalContext;
-                var0 = var2.bind(var1)(var0);
-                var1 = null;
-                if (!(var1 !== var0)) {
-                    _fun44528_ip = 48;
-                    continue _fun44528
-                }
-            case 46:
-                return var0;
-            case 48:
-                var0 = "'BottomSheetModalContext' cannot be null!";
-                throw var0;
-        }
+    var7 = var5.bind(var0)(var7);
+    var7 = var7.KEYBOARD_BEHAVIOR;
+    var10 = var7.interactive;
+    var7 = var6[var4];
+    var7 = var5.bind(var0)(var7);
+    var7 = var7.KEYBOARD_BLUR_BEHAVIOR;
+    var9 = var7.none;
+    var7 = var6[var4];
+    var7 = var5.bind(var0)(var7);
+    var7 = var7.KEYBOARD_INPUT_MODE;
+    var8 = var7.adjustPan;
+    var3 = var3.Number;
+    var3 = var3.NEGATIVE_INFINITY;
+    var7 = 24;
+    var2.DEFAULT_HANDLE_HEIGHT = var7;
+    var7 = 2.5;
+    var2.DEFAULT_OVER_DRAG_RESISTANCE_FACTOR = var7;
+    var2.DEFAULT_ENABLE_CONTENT_PANNING_GESTURE = var1;
+    var2.DEFAULT_ENABLE_HANDLE_PANNING_GESTURE = var1;
+    var2.DEFAULT_ENABLE_OVER_DRAG = var1;
+    var7 = false;
+    var2.DEFAULT_ENABLE_PAN_DOWN_TO_CLOSE = var7;
+    var2.DEFAULT_DYNAMIC_SIZING = var1;
+    var2.DEFAULT_ANIMATE_ON_MOUNT = var1;
+    var2.DEFAULT_KEYBOARD_BEHAVIOR = var10;
+    var2.DEFAULT_KEYBOARD_BLUR_BEHAVIOR = var9;
+    var2.DEFAULT_KEYBOARD_INPUT_MODE = var8;
+    var2.DEFAULT_ENABLE_BLUR_KEYBOARD_ON_GESTURE = var7;
+    var2.DEFAULT_KEYBOARD_INCLUDE_BOTTOM_OFFSET = var7;
+    var4 = var6[var4];
+    var4 = var5.bind(var0)(var4);
+    var4 = var4.SCREEN_HEIGHT;
+    var2.INITIAL_POSITION = var4;
+    var4 = -999;
+    var2.INITIAL_CONTAINER_HEIGHT = var4;
+    var5 = {
+        'top': 0,
+        'bottom': 0,
+        'left': 0,
+        'right': 0
     };
-    var2.useBottomSheetModal = var1;
+    var2.INITIAL_CONTAINER_OFFSET = var5;
+    var2.INITIAL_HANDLE_HEIGHT = var4;
+    var2.INITIAL_SNAP_POINT = var4;
+    var2.INITIAL_VALUE = var3;
+    var2.DEFAULT_ACCESSIBLE = var1;
+    var1 = 'Bottom Sheet';
+    var2.DEFAULT_ACCESSIBILITY_LABEL = var1;
+    var1 = 'adjustable';
+    var2.DEFAULT_ACCESSIBILITY_ROLE = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 4900]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4896]);

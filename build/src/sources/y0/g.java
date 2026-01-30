@@ -5,32 +5,32 @@ import java.util.Arrays;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final u0.l f53858a;
+    private final u0.l f53874a;
 
     public g(long[] jArr) {
         u0.l lVar;
         if (jArr != null) {
             long[] copyOf = Arrays.copyOf(jArr, jArr.length);
             lVar = new u0.l(copyOf.length);
-            lVar.d(lVar.f50000b, copyOf);
+            lVar.d(lVar.f50016b, copyOf);
         } else {
             lVar = new u0.l(0, 1, null);
         }
-        this.f53858a = lVar;
+        this.f53874a = lVar;
     }
 
     public final void a(long j10) {
-        this.f53858a.c(j10);
+        this.f53874a.c(j10);
     }
 
     public final long[] b() {
-        u0.l lVar = this.f53858a;
-        int i10 = lVar.f50000b;
+        u0.l lVar = this.f53874a;
+        int i10 = lVar.f50016b;
         if (i10 == 0) {
             return null;
         }
         long[] jArr = new long[i10];
-        long[] jArr2 = lVar.f49999a;
+        long[] jArr2 = lVar.f50015a;
         for (int i11 = 0; i11 < i10; i11++) {
             jArr[i11] = jArr2[i11];
         }

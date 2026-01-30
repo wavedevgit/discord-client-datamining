@@ -96,14 +96,14 @@ public final class MediaEngineModule extends NativeMediaEngineModuleSpec {
                 Debug debug = Debug.INSTANCE;
                 System.nanoTime();
                 MediaEngineModule.this.mediaEngineDeferred.J0(mediaEngine);
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
         }
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -178,7 +178,7 @@ public final class MediaEngineModule extends NativeMediaEngineModuleSpec {
         Intrinsics.checkNotNullParameter(errorMessage, "errorMessage");
         Intrinsics.checkNotNullParameter(connectionInfo, "connectionInfo");
         callback.invoke(errorMessage, NativeMapExtensionsKt.toNativeMap(connectionInfo));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private static /* synthetic */ void getAppScope$annotations() {

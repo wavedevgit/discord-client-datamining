@@ -6,7 +6,7 @@ import java.nio.ByteBuffer;
 public abstract class f extends qc.h implements h {
 
     /* renamed from: n  reason: collision with root package name */
-    private final String f55627n;
+    private final String f55643n;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
@@ -23,7 +23,7 @@ public abstract class f extends qc.h implements h {
     /* JADX INFO: Access modifiers changed from: protected */
     public f(String str) {
         super(new k[2], new l[2]);
-        this.f55627n = str;
+        this.f55643n = str;
         u(IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET);
     }
 
@@ -32,8 +32,8 @@ public abstract class f extends qc.h implements h {
     /* renamed from: A */
     public final i j(k kVar, l lVar, boolean z10) {
         try {
-            ByteBuffer byteBuffer = (ByteBuffer) ne.a.e(kVar.f47076i);
-            lVar.u(kVar.f47078p, z(byteBuffer.array(), byteBuffer.limit(), z10), kVar.f55630t);
+            ByteBuffer byteBuffer = (ByteBuffer) ne.a.e(kVar.f47092i);
+            lVar.u(kVar.f47094p, z(byteBuffer.array(), byteBuffer.limit(), z10), kVar.f55646t);
             lVar.i(Integer.MIN_VALUE);
             return null;
         } catch (i e10) {

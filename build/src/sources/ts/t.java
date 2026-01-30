@@ -13,26 +13,26 @@ import kotlin.jvm.internal.Lambda;
 public final class t implements s {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f49891a;
+    private final String f49907a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final o f49892b;
+    private final o f49908b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final List f49893c;
+    private final List f49909c;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
 
         /* renamed from: c  reason: collision with root package name */
-        public static final C0653a f49894c = new C0653a(null);
+        public static final C0653a f49910c = new C0653a(null);
 
         /* renamed from: a  reason: collision with root package name */
-        private final ts.b f49895a;
+        private final ts.b f49911a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Object f49896b;
+        private final Object f49912b;
 
         /* renamed from: ts.t$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
@@ -59,8 +59,8 @@ public final class t implements s {
         }
 
         private a(ts.b bVar, Object obj) {
-            this.f49895a = bVar;
-            this.f49896b = obj;
+            this.f49911a = bVar;
+            this.f49912b = obj;
         }
     }
 
@@ -97,15 +97,15 @@ public final class t implements s {
         }
 
         public final void a(Object obj) {
-            for (a aVar : t.this.f49893c) {
-                aVar.f49895a.c(obj, aVar.f49896b);
+            for (a aVar : t.this.f49909c) {
+                aVar.f49911a.c(obj, aVar.f49912b);
             }
         }
 
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a(obj);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
     }
 
@@ -113,8 +113,8 @@ public final class t implements s {
         List b10;
         Intrinsics.checkNotNullParameter(onZero, "onZero");
         Intrinsics.checkNotNullParameter(format, "format");
-        this.f49891a = onZero;
-        this.f49892b = format;
+        this.f49907a = onZero;
+        this.f49908b = format;
         b10 = p.b(format);
         List<l> list = b10;
         ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
@@ -124,33 +124,33 @@ public final class t implements s {
         List<n> e02 = CollectionsKt.e0(arrayList);
         ArrayList arrayList2 = new ArrayList(CollectionsKt.w(e02, 10));
         for (n nVar : e02) {
-            arrayList2.add(a.f49894c.a(nVar));
+            arrayList2.add(a.f49910c.a(nVar));
         }
-        this.f49893c = arrayList2;
+        this.f49909c = arrayList2;
     }
 
     @Override // ts.o
     public us.e a() {
-        us.e a10 = this.f49892b.a();
-        List<a> list = this.f49893c;
+        us.e a10 = this.f49908b.a();
+        List<a> list = this.f49909c;
         ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
         for (a aVar : list) {
-            arrayList.add(new g(aVar.f49896b, new u(aVar.f49895a)));
+            arrayList.add(new g(aVar.f49912b, new u(aVar.f49911a)));
         }
         v a11 = w.a(arrayList);
         if (a11 instanceof a0) {
-            return new us.c(this.f49891a);
+            return new us.c(this.f49907a);
         }
-        return new us.b(CollectionsKt.o(ir.v.a(new b(a11), new us.c(this.f49891a)), ir.v.a(new c(a0.f49856a), a10)));
+        return new us.b(CollectionsKt.o(ir.v.a(new b(a11), new us.c(this.f49907a)), ir.v.a(new c(a0.f49872a), a10)));
     }
 
     @Override // ts.o
     public vs.q b() {
         List e10;
         List l10 = CollectionsKt.l();
-        vs.q b10 = this.f49892b.b();
-        vs.q b11 = new j(this.f49891a).b();
-        if (this.f49893c.isEmpty()) {
+        vs.q b10 = this.f49908b.b();
+        vs.q b11 = new j(this.f49907a).b();
+        if (this.f49909c.isEmpty()) {
             e10 = CollectionsKt.l();
         } else {
             e10 = CollectionsKt.e(new vs.u(new d()));
@@ -159,13 +159,13 @@ public final class t implements s {
     }
 
     public final o d() {
-        return this.f49892b;
+        return this.f49908b;
     }
 
     public boolean equals(Object obj) {
         if (obj instanceof t) {
             t tVar = (t) obj;
-            if (Intrinsics.areEqual(this.f49891a, tVar.f49891a) && Intrinsics.areEqual(this.f49892b, tVar.f49892b)) {
+            if (Intrinsics.areEqual(this.f49907a, tVar.f49907a) && Intrinsics.areEqual(this.f49908b, tVar.f49908b)) {
                 return true;
             }
             return false;
@@ -174,10 +174,10 @@ public final class t implements s {
     }
 
     public int hashCode() {
-        return (this.f49891a.hashCode() * 31) + this.f49892b.hashCode();
+        return (this.f49907a.hashCode() * 31) + this.f49908b.hashCode();
     }
 
     public String toString() {
-        return "Optional(" + this.f49891a + ", " + this.f49892b + ')';
+        return "Optional(" + this.f49907a + ", " + this.f49908b + ')';
     }
 }

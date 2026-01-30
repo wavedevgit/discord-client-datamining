@@ -9,7 +9,7 @@ import kt.t;
 public interface a extends t {
 
     /* renamed from: k  reason: collision with root package name */
-    public static final jt.c f39574k = kt.a.e("COUNT_OF_PATTERN_SYMBOLS", Integer.class);
+    public static final jt.c f39590k = kt.a.e("COUNT_OF_PATTERN_SYMBOLS", Integer.class);
 
     void o(o oVar, Appendable appendable, jt.d dVar, j jVar, char c10, int i10, int i11);
 

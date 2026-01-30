@@ -6,62 +6,62 @@ import java.util.ListIterator;
 final class k extends i implements ListIterator {
 
     /* renamed from: o  reason: collision with root package name */
-    final /* synthetic */ l f45496o;
+    final /* synthetic */ l f45512o;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public k(l lVar) {
         super(lVar);
-        this.f45496o = lVar;
+        this.f45512o = lVar;
     }
 
     @Override // java.util.ListIterator
     public final void add(Object obj) {
         int i10;
-        boolean isEmpty = this.f45496o.isEmpty();
+        boolean isEmpty = this.f45512o.isEmpty();
         a();
-        ((ListIterator) this.f45280d).add(obj);
-        m mVar = this.f45496o.f45544q;
-        i10 = mVar.f45567o;
-        mVar.f45567o = i10 + 1;
+        ((ListIterator) this.f45296d).add(obj);
+        m mVar = this.f45512o.f45560q;
+        i10 = mVar.f45583o;
+        mVar.f45583o = i10 + 1;
         if (isEmpty) {
-            this.f45496o.b();
+            this.f45512o.b();
         }
     }
 
     @Override // java.util.ListIterator
     public final boolean hasPrevious() {
         a();
-        return ((ListIterator) this.f45280d).hasPrevious();
+        return ((ListIterator) this.f45296d).hasPrevious();
     }
 
     @Override // java.util.ListIterator
     public final int nextIndex() {
         a();
-        return ((ListIterator) this.f45280d).nextIndex();
+        return ((ListIterator) this.f45296d).nextIndex();
     }
 
     @Override // java.util.ListIterator
     public final Object previous() {
         a();
-        return ((ListIterator) this.f45280d).previous();
+        return ((ListIterator) this.f45296d).previous();
     }
 
     @Override // java.util.ListIterator
     public final int previousIndex() {
         a();
-        return ((ListIterator) this.f45280d).previousIndex();
+        return ((ListIterator) this.f45296d).previousIndex();
     }
 
     @Override // java.util.ListIterator
     public final void set(Object obj) {
         a();
-        ((ListIterator) this.f45280d).set(obj);
+        ((ListIterator) this.f45296d).set(obj);
     }
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public k(l lVar, int i10) {
-        super(lVar, ((List) lVar.f45331e).listIterator(i10));
-        this.f45496o = lVar;
+        super(lVar, ((List) lVar.f45347e).listIterator(i10));
+        this.f45512o = lVar;
     }
 }

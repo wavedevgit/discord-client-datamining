@@ -284,12 +284,12 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
 
     public static final Unit K(OldSelfieOverlayView oldSelfieOverlayView, Function0 function0) {
         oldSelfieOverlayView.M(oldSelfieOverlayView.f20416d, y0.f23967a, function0);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     public static final Unit L(OldSelfieOverlayView oldSelfieOverlayView, Function0 function0) {
         oldSelfieOverlayView.M(oldSelfieOverlayView.f20416d, y0.f23967a, function0);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private final void M(final fp.b bVar, int i10, final Function0 function0) {
@@ -317,7 +317,7 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
         View hintOverlayView = bVar.f25434f;
         Intrinsics.checkNotNullExpressionValue(hintOverlayView, "hintOverlayView");
         z(oldSelfieOverlayView, hintOverlayView, 0L, 1, null);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     public static final void O(OldSelfieOverlayView oldSelfieOverlayView, final fp.b bVar, final Function0 function0) {
@@ -344,7 +344,7 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
         View hintOverlayView = bVar.f25434f;
         Intrinsics.checkNotNullExpressionValue(hintOverlayView, "hintOverlayView");
         w(oldSelfieOverlayView, hintOverlayView, 0L, 1, null);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     public static final void Q(Function0 function0) {
@@ -673,24 +673,24 @@ public final class OldSelfieOverlayView extends ConstraintLayout {
         int parseColor = Color.parseColor("#022050");
         Context context2 = b10.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context2, "getContext(...)");
-        themeableLottieAnimationView.I(parseColor, s.d(context2, yg.b.f54352m, null, false, 6, null));
+        themeableLottieAnimationView.I(parseColor, s.d(context2, yg.b.f54368m, null, false, 6, null));
         int parseColor2 = Color.parseColor("#AA85FF");
         Context context3 = b10.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context3, "getContext(...)");
-        themeableLottieAnimationView.I(parseColor2, s.d(context3, yg.b.f54353n, null, false, 6, null));
+        themeableLottieAnimationView.I(parseColor2, s.d(context3, yg.b.f54369n, null, false, 6, null));
         int parseColor3 = Color.parseColor("#280087");
         Context context4 = b10.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context4, "getContext(...)");
-        themeableLottieAnimationView.I(parseColor3, s.d(context4, yg.b.f54352m, null, false, 6, null));
+        themeableLottieAnimationView.I(parseColor3, s.d(context4, yg.b.f54368m, null, false, 6, null));
         int parseColor4 = Color.parseColor("#8552FF");
         Context context5 = b10.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context5, "getContext(...)");
-        themeableLottieAnimationView.I(parseColor4, s.d(context5, yg.b.f54353n, null, false, 6, null));
+        themeableLottieAnimationView.I(parseColor4, s.d(context5, yg.b.f54369n, null, false, 6, null));
         Context context6 = b10.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context6, "getContext(...)");
-        int d10 = s.d(context6, yg.b.f54353n, null, false, 6, null);
+        int d10 = s.d(context6, yg.b.f54369n, null, false, 6, null);
         Context context7 = b10.getRoot().getContext();
         Intrinsics.checkNotNullExpressionValue(context7, "getContext(...)");
-        themeableLottieAnimationView.I(Color.parseColor("#DBCCFF"), r1.c.c(d10, s.d(context7, yg.b.f54354o, null, false, 6, null), 0.66f));
+        themeableLottieAnimationView.I(Color.parseColor("#DBCCFF"), r1.c.c(d10, s.d(context7, yg.b.f54370o, null, false, 6, null), 0.66f));
     }
 }

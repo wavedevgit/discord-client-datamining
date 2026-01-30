@@ -212,11 +212,11 @@ public final class k {
         this.f13649q = 1;
         this.f13650r = 0;
         this.f13651s = true;
-        this.f13652t = lc.t0.f37103g;
+        this.f13652t = lc.t0.f37119g;
         this.f13653u = 5000L;
         this.f13654v = 15000L;
         this.f13655w = new h.b().a();
-        this.f13634b = ne.e.f40172a;
+        this.f13634b = ne.e.f40188a;
         this.f13656x = 500L;
         this.f13657y = 2000L;
         this.A = true;

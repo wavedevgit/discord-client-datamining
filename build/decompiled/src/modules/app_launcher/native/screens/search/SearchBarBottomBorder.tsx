@@ -54,15 +54,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/app_launcher/native/screens/search/SearchBarBottomBorder.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: usePinnedSearchBarBottomBorder, environment: var1
-        _fun108076: for (var _fun108076_ip = 0;;) switch (_fun108076_ip) {
+        _fun108338: for (var _fun108338_ip = 0;;) switch (_fun108338_ip) {
             case 0:
                 var1 = arg0;
                 var5 = var1.key;
                 var11 = var1.triggerScrollHeight;
                 var4 = undefined;
                 if (!(var11 === var4)) {
-                    _fun108076_ip = 25;
-                    continue _fun108076
+                    _fun108338_ip = 25;
+                    continue _fun108338
                 }
             case 22:
                 var11 = 1;
@@ -111,7 +111,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var12.bind(var4)(var7);
                 var7 = var9.useAnimatedStyle;
                 var0 = function() { // Original name: u, environment: var0
-                    _fun108079: for (var _fun108079_ip = 0;;) switch (_fun108079_ip) {
+                    _fun108341: for (var _fun108341_ip = 0;;) switch (_fun108341_ip) {
                         case 0:
                             var0 = {};
                             var3 = _closure1_slot0;
@@ -128,8 +128,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var5 = var5 > var2;
                             var2 = 0;
                             if (!var5) {
-                                _fun108079_ip = 64;
-                                continue _fun108079
+                                _fun108341_ip = 64;
+                                continue _fun108341
                             }
                         case 61:
                             var2 = 1;
@@ -184,4 +184,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.usePinnedSearchBarBottomBorder = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 3677, 4034, 4040, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 3679, 4040, 4046, 2]);

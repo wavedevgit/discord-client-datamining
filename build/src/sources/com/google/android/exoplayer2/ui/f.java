@@ -308,43 +308,43 @@ final class f {
     public void b(zd.b bVar, ke.b bVar2, float f10, float f11, float f12, Canvas canvas, int i10, int i11, int i12, int i13) {
         boolean z10;
         int i14;
-        if (bVar.f55590o == null) {
+        if (bVar.f55606o == null) {
             z10 = true;
         } else {
             z10 = false;
         }
         if (z10) {
-            if (TextUtils.isEmpty(bVar.f55587d)) {
+            if (TextUtils.isEmpty(bVar.f55603d)) {
                 return;
             }
-            if (bVar.f55598w) {
-                i14 = bVar.f55599x;
+            if (bVar.f55614w) {
+                i14 = bVar.f55615x;
             } else {
-                i14 = bVar2.f33087c;
+                i14 = bVar2.f33103c;
             }
         } else {
             i14 = -16777216;
         }
-        if (a(this.f14295i, bVar.f55587d) && w0.c(this.f14296j, bVar.f55588e) && this.f14297k == bVar.f55590o && this.f14298l == bVar.f55591p && this.f14299m == bVar.f55592q && w0.c(Integer.valueOf(this.f14300n), Integer.valueOf(bVar.f55593r)) && this.f14301o == bVar.f55594s && w0.c(Integer.valueOf(this.f14302p), Integer.valueOf(bVar.f55595t)) && this.f14303q == bVar.f55596u && this.f14304r == bVar.f55597v && this.f14305s == bVar2.f33085a && this.f14306t == bVar2.f33086b && this.f14307u == i14 && this.f14309w == bVar2.f33088d && this.f14308v == bVar2.f33089e && w0.c(this.f14292f.getTypeface(), bVar2.f33090f) && this.f14310x == f10 && this.f14311y == f11 && this.f14312z == f12 && this.A == i10 && this.B == i11 && this.C == i12 && this.D == i13) {
+        if (a(this.f14295i, bVar.f55603d) && w0.c(this.f14296j, bVar.f55604e) && this.f14297k == bVar.f55606o && this.f14298l == bVar.f55607p && this.f14299m == bVar.f55608q && w0.c(Integer.valueOf(this.f14300n), Integer.valueOf(bVar.f55609r)) && this.f14301o == bVar.f55610s && w0.c(Integer.valueOf(this.f14302p), Integer.valueOf(bVar.f55611t)) && this.f14303q == bVar.f55612u && this.f14304r == bVar.f55613v && this.f14305s == bVar2.f33101a && this.f14306t == bVar2.f33102b && this.f14307u == i14 && this.f14309w == bVar2.f33104d && this.f14308v == bVar2.f33105e && w0.c(this.f14292f.getTypeface(), bVar2.f33106f) && this.f14310x == f10 && this.f14311y == f11 && this.f14312z == f12 && this.A == i10 && this.B == i11 && this.C == i12 && this.D == i13) {
             d(canvas, z10);
             return;
         }
-        this.f14295i = bVar.f55587d;
-        this.f14296j = bVar.f55588e;
-        this.f14297k = bVar.f55590o;
-        this.f14298l = bVar.f55591p;
-        this.f14299m = bVar.f55592q;
-        this.f14300n = bVar.f55593r;
-        this.f14301o = bVar.f55594s;
-        this.f14302p = bVar.f55595t;
-        this.f14303q = bVar.f55596u;
-        this.f14304r = bVar.f55597v;
-        this.f14305s = bVar2.f33085a;
-        this.f14306t = bVar2.f33086b;
+        this.f14295i = bVar.f55603d;
+        this.f14296j = bVar.f55604e;
+        this.f14297k = bVar.f55606o;
+        this.f14298l = bVar.f55607p;
+        this.f14299m = bVar.f55608q;
+        this.f14300n = bVar.f55609r;
+        this.f14301o = bVar.f55610s;
+        this.f14302p = bVar.f55611t;
+        this.f14303q = bVar.f55612u;
+        this.f14304r = bVar.f55613v;
+        this.f14305s = bVar2.f33101a;
+        this.f14306t = bVar2.f33102b;
         this.f14307u = i14;
-        this.f14309w = bVar2.f33088d;
-        this.f14308v = bVar2.f33089e;
-        this.f14292f.setTypeface(bVar2.f33090f);
+        this.f14309w = bVar2.f33104d;
+        this.f14308v = bVar2.f33105e;
+        this.f14292f.setTypeface(bVar2.f33106f);
         this.f14310x = f10;
         this.f14311y = f11;
         this.f14312z = f12;

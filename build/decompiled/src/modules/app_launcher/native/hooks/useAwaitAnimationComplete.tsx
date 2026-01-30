@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.AwaitAnimationContext = var3;
     var1 = function() { // Original name: useAwaitAnimationCompletion, environment: var1
-        _fun108462: for (var _fun108462_ip = 0;;) switch (_fun108462_ip) {
+        _fun108724: for (var _fun108724_ip = 0;;) switch (_fun108724_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var1 = var2.useContext;
@@ -69,13 +69,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var1.bind(var2)(var0);
                 var1 = null;
                 if (!(var1 != var0)) {
-                    _fun108462_ip = 36;
-                    continue _fun108462
+                    _fun108724_ip = 36;
+                    continue _fun108724
                 }
             case 28:
                 var0 = var0.handleQueuedCallback;
-                _fun108462_ip = 45;
-                continue _fun108462;
+                _fun108724_ip = 45;
+                continue _fun108724;
             case 36:
                 var0 = function(arg0) { // Environment: var1
                     var1 = arg0;

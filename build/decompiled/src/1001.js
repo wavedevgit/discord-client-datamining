@@ -14,7 +14,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = '__esModule';
     var2 = var4.bind(var5)(var1, var2, var3);
     var0 = function(arg0) { // Original name: encodeUTF8, environment: var0
-        _fun10324: for (var _fun10324_ip = 0;;) switch (_fun10324_ip) {
+        _fun10325: for (var _fun10325_ip = 0;;) switch (_fun10325_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot1;
@@ -26,8 +26,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var1.bind(var2)();
                 var1 = var2.encodePolyfill;
                 if (var1) {
-                    _fun10324_ip = 73;
-                    continue _fun10324
+                    _fun10325_ip = 73;
+                    continue _fun10325
                 }
             case 43:
                 var1 = _closure1_slot0;

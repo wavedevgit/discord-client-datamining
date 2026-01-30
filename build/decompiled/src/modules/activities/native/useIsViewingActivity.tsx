@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/native/useIsViewingActivity.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: useIsViewingActivity, environment: var1
-        _fun62777: for (var _fun62777_ip = 0;;) switch (_fun62777_ip) {
+        _fun62821: for (var _fun62821_ip = 0;;) switch (_fun62821_ip) {
             case 0:
                 var0 = arg0;
                 var7 = var0.channelId;
@@ -67,15 +67,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var1 = var5.bind(var6)(var4, var1, var3);
                 if (!var0) {
-                    _fun62777_ip = 138;
-                    continue _fun62777
+                    _fun62821_ip = 138;
+                    continue _fun62821
                 }
             case 135:
                 var0 = var2;
             case 138:
                 if (!var0) {
-                    _fun62777_ip = 144;
-                    continue _fun62777
+                    _fun62821_ip = 144;
+                    continue _fun62821
                 }
             case 141:
                 var0 = !var1;
@@ -85,4 +85,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsViewingActivity = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3902, 7849, 3872, 7841, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3908, 7852, 3878, 7844, 566, 2]);

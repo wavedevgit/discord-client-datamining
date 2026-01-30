@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.getSDKSource = var2;
     var0 = function() { // Original name: isBrowserBundle, environment: var0
-        _fun10139: for (var _fun10139_ip = 0;;) switch (_fun10139_ip) {
+        _fun10140: for (var _fun10140_ip = 0;;) switch (_fun10140_ip) {
             case 0:
                 var1 = global;
                 var0 = var1.__SENTRY_BROWSER_BUNDLE__;
@@ -24,8 +24,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = typeof var0;
                 var0 = var2 !== var0;
                 if (!var0) {
-                    _fun10139_ip = 34;
-                    continue _fun10139
+                    _fun10140_ip = 34;
+                    continue _fun10140
                 }
             case 22:
                 var1 = var1.__SENTRY_BROWSER_BUNDLE__;

@@ -86,26 +86,26 @@ final class FileModule$writeFile$1 extends k implements Function2<CoroutineScope
                         fileOutputStream.write(bytes);
                     }
                     fileOutputStream.getFD().sync();
-                    Unit unit = Unit.f33282a;
+                    Unit unit = Unit.f33298a;
                     tr.c.a(fileOutputStream, null);
                     file.renameTo(file2);
                     this.$promise.resolve(file2.getAbsolutePath());
                 } catch (Throwable th2) {
                     this.$promise.reject(th2);
                 }
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
             Promise promise2 = this.$promise;
             String str5 = this.$storageDir;
             hashMap3 = this.this$0.storageDirs;
             promise2.reject("err", "Unknown storage directory " + str5 + ". Supported storage directories: " + hashMap3.keySet());
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileModule$writeFile$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((FileModule$writeFile$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

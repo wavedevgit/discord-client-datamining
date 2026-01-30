@@ -8,16 +8,16 @@ import kotlin.reflect.jvm.internal.impl.types.TypeProjection;
 public class a implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final TypeProjection f35406d;
+    private final TypeProjection f35422d;
 
     public a(TypeProjection typeProjection) {
-        this.f35406d = typeProjection;
+        this.f35422d = typeProjection;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         KotlinType c10;
-        c10 = CapturedTypeConstructorKt.c(this.f35406d);
+        c10 = CapturedTypeConstructorKt.c(this.f35422d);
         return c10;
     }
 }

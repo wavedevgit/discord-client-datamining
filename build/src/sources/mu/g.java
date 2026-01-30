@@ -10,7 +10,7 @@ import mu.a;
 public final class g implements ku.a, a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final g f39581a = new g();
+    public static final g f39597a = new g();
 
     private g() {
     }
@@ -20,7 +20,7 @@ public final class g implements ku.a, a {
         if (b10 != null) {
             Object obj2 = obj;
             for (Object obj3 : b10) {
-                obj2 = f39581a.h(hVar, obj2, obj3, bVar.a());
+                obj2 = f39597a.h(hVar, obj2, obj3, bVar.a());
                 if (obj2 == null) {
                     return bVar.c();
                 }
@@ -34,7 +34,7 @@ public final class g implements ku.a, a {
 
     private final Object h(h hVar, Object obj, Object obj2, Map map) {
         if (map != null) {
-            return hVar.a(map, f39581a.i(obj, obj2));
+            return hVar.a(map, f39597a.i(obj, obj2));
         }
         return null;
     }
@@ -57,7 +57,7 @@ public final class g implements ku.a, a {
     public Object d(Object obj, Object obj2, h evaluator) {
         Intrinsics.checkNotNullParameter(evaluator, "evaluator");
         List c10 = pv.a.c(obj);
-        g gVar = f39581a;
+        g gVar = f39597a;
         return gVar.f(gVar.c(c10, obj2, evaluator), pv.c.c(c10), evaluator);
     }
 

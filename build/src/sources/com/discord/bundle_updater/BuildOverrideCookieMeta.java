@@ -53,7 +53,7 @@ public final class BuildOverrideCookieMeta {
     }
 
     static {
-        ir.o oVar = ir.o.f31103e;
+        ir.o oVar = ir.o.f31119e;
         $childSerializers = new Lazy[]{null, null, ir.l.a(oVar, new Function0() { // from class: com.discord.bundle_updater.c
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {

@@ -73,7 +73,7 @@ public class w extends r {
             boolean isRegularFile = readAttributes.isRegularFile();
             boolean isDirectory = readAttributes.isDirectory();
             if (path != null) {
-                c0Var = c0.a.f(c0.f31213e, path, false, 1, null);
+                c0Var = c0.a.f(c0.f31229e, path, false, 1, null);
             } else {
                 c0Var = null;
             }

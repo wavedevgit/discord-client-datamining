@@ -11,7 +11,7 @@ import org.jetbrains.annotations.NotNull;
 public abstract class DeclarationDescriptorImpl extends AnnotatedImpl implements DeclarationDescriptor {
 
     /* renamed from: e  reason: collision with root package name */
-    private final Name f33710e;
+    private final Name f33726e;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public DeclarationDescriptorImpl(@NotNull Annotations annotations, @NotNull Name name) {
@@ -22,7 +22,7 @@ public abstract class DeclarationDescriptorImpl extends AnnotatedImpl implements
         if (name == null) {
             a(1);
         }
-        this.f33710e = name;
+        this.f33726e = name;
     }
 
     private static /* synthetic */ void a(int i10) {
@@ -71,7 +71,7 @@ public abstract class DeclarationDescriptorImpl extends AnnotatedImpl implements
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.Named
     @NotNull
     public Name getName() {
-        Name name = this.f33710e;
+        Name name = this.f33726e;
         if (name == null) {
             a(2);
         }

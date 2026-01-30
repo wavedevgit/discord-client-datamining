@@ -6,14 +6,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var3;
     var0 = function(arg0, arg1) { // Original name: createSpanName, environment: var1
-        _fun9760: for (var _fun9760_ip = 0;;) switch (_fun9760_ip) {
+        _fun9761: for (var _fun9761_ip = 0;;) switch (_fun9761_ip) {
             case 0:
                 var5 = arg0;
                 var4 = arg1;
                 var0 = var5;
                 if (!var4) {
-                    _fun9760_ip = 42;
-                    continue _fun9760
+                    _fun9761_ip = 42;
+                    continue _fun9761
                 }
             case 12:
                 var1 = global;
@@ -28,19 +28,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot3 = var0;
     var0 = function(arg0) { // Original name: buildSentryAttributes, environment: var1
-        _fun9761: for (var _fun9761_ip = 0;;) switch (_fun9761_ip) {
+        _fun9762: for (var _fun9762_ip = 0;;) switch (_fun9762_ip) {
             case 0:
                 var1 = arg0;
                 var0 = 'request';
                 if (!(var0 !== var1)) {
-                    _fun9761_ip = 137;
-                    continue _fun9761
+                    _fun9762_ip = 137;
+                    continue _fun9762
                 }
             case 14:
                 var0 = 'notification-incoming';
                 if (!(var0 !== var1)) {
-                    _fun9761_ip = 89;
-                    continue _fun9761
+                    _fun9762_ip = 89;
+                    continue _fun9762
                 }
             case 24:
                 var3 = undefined;
@@ -48,8 +48,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var8 = undefined;
                 var7 = undefined;
                 if (!(var0 === var1)) {
-                    _fun9761_ip = 183;
-                    continue _fun9761
+                    _fun9762_ip = 183;
+                    continue _fun9762
                 }
             case 43:
                 var2 = _closure1_slot0;
@@ -61,8 +61,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var4[var0];
                 var0 = var2.bind(var3)(var0);
                 var7 = var0.MCP_NOTIFICATION_ORIGIN_VALUE;
-                _fun9761_ip = 183;
-                continue _fun9761;
+                _fun9762_ip = 183;
+                continue _fun9762;
             case 89:
                 var3 = _closure1_slot0;
                 var4 = _closure1_slot1;
@@ -74,8 +74,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var4[var0];
                 var0 = var3.bind(var2)(var0);
                 var7 = var0.MCP_NOTIFICATION_ORIGIN_VALUE;
-                _fun9761_ip = 183;
-                continue _fun9761;
+                _fun9762_ip = 183;
+                continue _fun9762;
             case 137:
                 var3 = _closure1_slot0;
                 var4 = _closure1_slot1;
@@ -115,7 +115,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var _closure1_slot4 = var0;
     var0 = function(arg0) { // Original name: createMcpSpan, environment: var1
-        _fun9762: for (var _fun9762_ip = 0;;) switch (_fun9762_ip) {
+        _fun9763: for (var _fun9763_ip = 0;;) switch (_fun9763_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.type;
@@ -128,8 +128,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = 'request';
                 var5 = var16;
                 if (!(var0 === var8)) {
-                    _fun9762_ip = 115;
-                    continue _fun9762
+                    _fun9763_ip = 115;
+                    continue _fun9763
                 }
             case 54:
                 var2 = _closure1_slot3;
@@ -142,8 +142,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var4 = var6.extractTargetInfo;
                 var0 = var14;
                 if (var0) {
-                    _fun9762_ip = 97;
-                    continue _fun9762
+                    _fun9763_ip = 97;
+                    continue _fun9763
                 }
             case 95:
                 var0 = {};
@@ -192,8 +192,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = var1 == var7;
                 var1 = undefined;
                 if (var6) {
-                    _fun9762_ip = 300;
-                    continue _fun9762
+                    _fun9763_ip = 300;
+                    continue _fun9763
                 }
             case 284:
                 var6 = var7.getOptions;
@@ -237,7 +237,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var7;
     var3 = var5.bind(var6)(var2, var4, var3);
     var3 = function(arg0, arg1, arg2) { // Original name: buildMcpServerSpanConfig, environment: var1
-        _fun9763: for (var _fun9763_ip = 0;;) switch (_fun9763_ip) {
+        _fun9764: for (var _fun9764_ip = 0;;) switch (_fun9764_ip) {
             case 0:
                 var15 = arg0;
                 var10 = var15.method;
@@ -252,8 +252,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var5.extractTargetInfo;
                 var1 = var14;
                 if (var1) {
-                    _fun9763_ip = 58;
-                    continue _fun9763
+                    _fun9764_ip = 58;
+                    continue _fun9764
                 }
             case 56:
                 var1 = {};
@@ -303,8 +303,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var1 == var7;
                 var1 = undefined;
                 if (var3) {
-                    _fun9763_ip = 266;
-                    continue _fun9763
+                    _fun9764_ip = 266;
+                    continue _fun9764
                 }
             case 250:
                 var3 = var7.getOptions;

@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/creator_monetization_eligibility/guild_settings/useIsMFAEnabled.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Original name: useIsMFAEnabled, environment: var1
-        _fun116791: for (var _fun116791_ip = 0;;) switch (_fun116791_ip) {
+        _fun117070: for (var _fun117070_ip = 0;;) switch (_fun117070_ip) {
             case 0:
                 var5 = _closure1_slot0;
                 var6 = _closure1_slot1;
@@ -73,8 +73,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = null;
                 var5 = var5 == var3;
                 if (var5) {
-                    _fun116791_ip = 113;
-                    continue _fun116791
+                    _fun117070_ip = 113;
+                    continue _fun117070
                 }
             case 107:
                 var4 = var3.mfaEnabled;
@@ -91,4 +91,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsMFAEnabled = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [8113, 1613, 660, 632, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [8116, 1613, 660, 632, 2]);

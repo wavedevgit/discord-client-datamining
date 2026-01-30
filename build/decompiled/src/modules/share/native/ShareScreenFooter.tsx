@@ -33,7 +33,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/share/native/ShareScreenFooter.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: ShareScreenFooter, environment: var1
-        _fun96815: for (var _fun96815_ip = 0;;) switch (_fun96815_ip) {
+        _fun97069: for (var _fun97069_ip = 0;;) switch (_fun97069_ip) {
             case 0:
                 var0 = arg0;
                 var15 = var0.text;
@@ -46,8 +46,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var0.disabled;
                 var3 = undefined;
                 if (!(var8 === var3)) {
-                    _fun96815_ip = 57;
-                    continue _fun96815
+                    _fun97069_ip = 57;
+                    continue _fun97069
                 }
             case 55:
                 var8 = false;
@@ -83,8 +83,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6.text = var19;
                 var18 = !var18;
                 if (var18) {
-                    _fun96815_ip = 199;
-                    continue _fun96815
+                    _fun97069_ip = 199;
+                    continue _fun97069
                 }
             case 196:
                 var18 = var8;
@@ -92,8 +92,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6.disabled = var18;
                 var18 = undefined;
                 if (var17) {
-                    _fun96815_ip = 211;
-                    continue _fun96815
+                    _fun97069_ip = 211;
+                    continue _fun97069
                 }
             case 208:
                 var18 = var9;
@@ -127,4 +127,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 9114, 9115, 4037, 9124, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 9118, 9119, 4043, 9128, 2]);

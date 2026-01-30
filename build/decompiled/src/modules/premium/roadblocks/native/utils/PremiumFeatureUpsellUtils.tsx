@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
     var0 = function(arg0) { // Original name: useIsFeatureUpsellEnabled, environment: var1
-        _fun61356: for (var _fun61356_ip = 0;;) switch (_fun61356_ip) {
+        _fun61400: for (var _fun61400_ip = 0;;) switch (_fun61400_ip) {
             case 0:
                 var1 = arg0;
                 var2 = var1.featureEnabledPredicate;
@@ -18,8 +18,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var1.experimentEnabledPredicate;
                 var2 = undefined;
                 if (!(var3 === var2)) {
-                    _fun61356_ip = 38;
-                    continue _fun61356
+                    _fun61400_ip = 38;
+                    continue _fun61400
                 }
             case 33:
                 var3 = function(arg0) { // Original name: p, environment: var0
@@ -72,8 +72,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var4 == var8;
                 var1 = undefined;
                 if (var5) {
-                    _fun61356_ip = 219;
-                    continue _fun61356
+                    _fun61400_ip = 219;
+                    continue _fun61400
                 }
             case 168:
                 var7 = var8.useExperiment;
@@ -83,16 +83,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = {};
                 var11 = !var9;
                 if (!var11) {
-                    _fun61356_ip = 197;
-                    continue _fun61356
+                    _fun61400_ip = 197;
+                    continue _fun61400
                 }
             case 194:
                 var11 = var10;
             case 197:
                 var5.autoTrackExposure = var11;
                 if (var9) {
-                    _fun61356_ip = 208;
-                    continue _fun61356
+                    _fun61400_ip = 208;
+                    continue _fun61400
                 }
             case 205:
                 var9 = !var10;
@@ -101,15 +101,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var7.bind(var8)(var6, var5);
             case 219:
                 if (var0) {
-                    _fun61356_ip = 226;
-                    continue _fun61356
+                    _fun61400_ip = 226;
+                    continue _fun61400
                 }
             case 222:
                 var0 = var4 == var1;
             case 226:
                 if (var0) {
-                    _fun61356_ip = 234;
-                    continue _fun61356
+                    _fun61400_ip = 234;
+                    continue _fun61400
                 }
             case 229:
                 var0 = var3.bind(var2)(var1);
@@ -147,7 +147,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/roadblocks/native/utils/PremiumFeatureUpsellUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0, arg1) { // Original name: isSoundboardSectionNitroLocked, environment: var1
-        _fun61360: for (var _fun61360_ip = 0;;) switch (_fun61360_ip) {
+        _fun61404: for (var _fun61404_ip = 0;;) switch (_fun61404_ip) {
             case 0:
                 var1 = arg1;
                 var2 = var1.type;
@@ -161,8 +161,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.GUILD;
                 var0 = var2 === var0;
                 if (!var0) {
-                    _fun61360_ip = 69;
-                    continue _fun61360
+                    _fun61404_ip = 69;
+                    continue _fun61404
                 }
             case 52:
                 var1 = var1.guild;
@@ -237,7 +237,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useIsPremiumAppIconUpsellEnabled = var3;
     var1 = function(arg0) { // Original name: getUpsellType, environment: var1
-        _fun61366: for (var _fun61366_ip = 0;;) switch (_fun61366_ip) {
+        _fun61410: for (var _fun61410_ip = 0;;) switch (_fun61410_ip) {
             case 0:
                 var5 = arg0;
                 var3 = _closure1_slot0;
@@ -249,8 +249,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EntitlementFeatureNames;
                 var1 = var1.ANIMATED_EMOJIS;
                 if (!(var1 !== var5)) {
-                    _fun61366_ip = 518;
-                    continue _fun61366
+                    _fun61410_ip = 518;
+                    continue _fun61410
                 }
             case 47:
                 var3 = _closure1_slot0;
@@ -260,8 +260,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EntitlementFeatureNames;
                 var1 = var1.EMOJIS_EVERYWHERE;
                 if (!(var1 !== var5)) {
-                    _fun61366_ip = 484;
-                    continue _fun61366
+                    _fun61410_ip = 484;
+                    continue _fun61410
                 }
             case 83:
                 var3 = _closure1_slot0;
@@ -271,8 +271,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EntitlementFeatureNames;
                 var1 = var1.INCREASED_FILE_UPLOAD_SIZE;
                 if (!(var1 !== var5)) {
-                    _fun61366_ip = 450;
-                    continue _fun61366
+                    _fun61410_ip = 450;
+                    continue _fun61410
                 }
             case 119:
                 var3 = _closure1_slot0;
@@ -282,8 +282,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EntitlementFeatureNames;
                 var1 = var1.SOUNDBOARD_EVERYWHERE;
                 if (!(var1 !== var5)) {
-                    _fun61366_ip = 416;
-                    continue _fun61366
+                    _fun61410_ip = 416;
+                    continue _fun61410
                 }
             case 155:
                 var3 = _closure1_slot0;
@@ -293,8 +293,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EntitlementFeatureNames;
                 var1 = var1.CLIENT_THEMES;
                 if (!(var1 !== var5)) {
-                    _fun61366_ip = 382;
-                    continue _fun61366
+                    _fun61410_ip = 382;
+                    continue _fun61410
                 }
             case 191:
                 var3 = _closure1_slot0;
@@ -304,8 +304,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EntitlementFeatureNames;
                 var1 = var1.APP_ICONS;
                 if (!(var1 !== var5)) {
-                    _fun61366_ip = 348;
-                    continue _fun61366
+                    _fun61410_ip = 348;
+                    continue _fun61410
                 }
             case 227:
                 var3 = _closure1_slot0;
@@ -315,8 +315,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.EntitlementFeatureNames;
                 var1 = var1.SAVED_MESSAGES;
                 if (!(var1 !== var5)) {
-                    _fun61366_ip = 314;
-                    continue _fun61366
+                    _fun61410_ip = 314;
+                    continue _fun61410
                 }
             case 260:
                 var3 = _closure1_slot1;
@@ -399,4 +399,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getUpsellType = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3958, 1613, 4755, 7588, 566, 3068, 7589, 7580, 670, 44, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3964, 1613, 4761, 7591, 566, 3068, 7592, 7583, 670, 44, 2]);

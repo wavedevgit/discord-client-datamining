@@ -1,281 +1,518 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun34881: for (var _fun34881_ip = 0;;) switch (_fun34881_ip) {
-        case 0:
-            var5 = require;
-            var2 = exports;
-            var6 = dependencyMap;
-            var0 = global;
-            var _closure1_slot0 = var0;
-            var _closure1_slot1 = var5;
-            var _closure1_slot2 = var6;
-            var0 = global;
-            var7 = var0.Object;
-            var3 = var7.defineProperty;
-            var1 = {};
-            var0 = true;
-            var1.value = var0;
-            var0 = '__esModule';
-            var0 = var3.bind(var7)(var2, var0, var1);
-            var0 = {};
-            var1 = 'function dispatchCommandFabric_Pnpm_dispatchCommandTs1(animatedRef,commandName,args=[]){const{logger}=this.__closure;if(!_WORKLET){return;}const shadowNodeWrapper=animatedRef();if(!shadowNodeWrapper){logger.warn("Tried to dispatch command \\""+commandName+"\\" with an uninitialized ref. Make sure to pass the animated ref to the component before using it.");return;}global._dispatchCommandFabric(shadowNodeWrapper,commandName,args);}';
-            var0.code = var1;
-            var _closure1_slot3 = var0;
-            var1 = function() { // Environment: var4
-                var0 = function(arg0, arg1) { // Original name: dispatchCommandFabric, environment: var0
-                    _fun34883: for (var _fun34883_ip = 0;;) switch (_fun34883_ip) {
-                        case 0:
-                            var5 = arg1;
-                            var0 = undefined;
-                            var2 = undefined;
-                            var3 = arguments.length;
-                            var1 = 2;
-                            if (!(var3 > var1)) {
-                                _fun34883_ip = 25;
-                                continue _fun34883
-                            }
-                        case 17:
-                            var3 = arguments[var1];
-                            if (!(var0 === var3)) {
-                                _fun34883_ip = 31;
-                                continue _fun34883
-                            }
-                        case 25:
-                            var4 = new Array(0);
-                            _fun34883_ip = 35;
-                            continue _fun34883;
-                        case 31:
-                            var4 = arguments[var1];
-                        case 35:
-                            var2 = global;
-                            var1 = var2._WORKLET;
-                            if (!var1) {
-                                _fun34883_ip = 144;
-                                continue _fun34883
-                            }
-                        case 46:
-                            var1 = arg0;
-                            var3 = var1.bind(var0)();
-                            if (var3) {
-                                _fun34883_ip = 125;
-                                continue _fun34883
-                            }
-                        case 59:
-                            var7 = _closure1_slot1;
-                            var8 = _closure1_slot2;
-                            var6 = 0;
-                            var6 = var8[var6];
-                            var6 = var7.bind(var0)(var6);
-                            var7 = var6.logger;
-                            var6 = var7.warn;
-                            var2 = var2.HermesInternal;
-                            var9 = var2.concat;
-                            var8 = 'Tried to dispatch command "';
-                            var2 = '" with an uninitialized ref. Make sure to pass the animated ref to the component before using it.';
-                            var2 = var9.bind(var8)(var5, var2);
-                            var2 = var6.bind(var7)(var2);
-                            _fun34883_ip = 144;
-                            continue _fun34883;
-                        case 125:
-                            var2 = _closure1_slot0;
-                            var1 = var2._dispatchCommandFabric;
-                            var1 = var1.bind(var2)(var3, var5, var4);
-                        case 144:
-                            return var0;
+    var2 = exports;
+    var0 = require;
+    var _closure1_slot0 = var0;
+    var0 = dependencyMap;
+    var _closure1_slot1 = var0;
+    var0 = global;
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var5)(var2, var0, var3);
+    var4 = {};
+    var0 = 'identity';
+    var4.IDENTITY = var0;
+    var0 = 'clamp';
+    var4.CLAMP = var0;
+    var0 = 'extend';
+    var4.EXTEND = var0;
+    var _closure1_slot2 = var4;
+    var0 = {};
+    var3 = 'function getVal_Pnpm_interpolationTs1(type,coef,val,leftEdgeOutput,rightEdgeOutput,x){const{Extrapolation}=this.__closure;switch(type){case Extrapolation.IDENTITY:return x;case Extrapolation.CLAMP:if(coef*val<coef*leftEdgeOutput){return leftEdgeOutput;}return rightEdgeOutput;case Extrapolation.EXTEND:default:return val;}}';
+    var0.code = var3;
+    var _closure1_slot3 = var0;
+    var3 = function() { // Environment: var1
+        var0 = function(arg0, arg1, arg2, arg3, arg4, arg5) { // Original name: getVal, environment: var0
+            _fun34882: for (var _fun34882_ip = 0;;) switch (_fun34882_ip) {
+                case 0:
+                    var6 = arg0;
+                    var2 = arg1;
+                    var3 = arg2;
+                    var1 = arg3;
+                    var0 = arg4;
+                    var5 = _closure1_slot2;
+                    var5 = var5.IDENTITY;
+                    if (!(var5 !== var6)) {
+                        _fun34882_ip = 75;
+                        continue _fun34882
                     }
-                };
-                var2 = {};
-                var5 = _closure1_slot1;
-                var4 = _closure1_slot2;
-                var3 = 0;
-                var4 = var4[var3];
-                var3 = undefined;
-                var3 = var5.bind(var3)(var4);
-                var3 = var3.logger;
-                var2.logger = var3;
-                var0.__closure = var2;
-                var2 = 9994297174981.0;
-                var0.__workletHash = var2;
-                var1 = _closure1_slot3;
-                var0.__initData = var1;
-                return var0;
-            };
-            var0 = undefined;
-            var7 = var1.bind(var0)();
-            var1 = {};
-            var3 = 'function dispatchCommandPaper_Pnpm_dispatchCommandTs2(animatedRef,commandName,args=[]){const{logger}=this.__closure;if(!_WORKLET){return;}const viewTag=animatedRef();if(viewTag<0){logger.warn("Tried to dispatch command \\""+commandName+"\\" with an uninitialized ref. Make sure to pass the animated ref to the component before using it.");return;}global._dispatchCommandPaper(viewTag,commandName,args);}';
-            var1.code = var3;
-            var _closure1_slot4 = var1;
-            var1 = function() { // Environment: var4
-                var0 = function(arg0, arg1) { // Original name: dispatchCommandPaper, environment: var0
-                    _fun34885: for (var _fun34885_ip = 0;;) switch (_fun34885_ip) {
-                        case 0:
-                            var6 = arg1;
-                            var0 = undefined;
-                            var2 = undefined;
-                            var3 = arguments.length;
-                            var1 = 2;
-                            if (!(var3 > var1)) {
-                                _fun34885_ip = 25;
-                                continue _fun34885
-                            }
-                        case 17:
-                            var3 = arguments[var1];
-                            if (!(var0 === var3)) {
-                                _fun34885_ip = 31;
-                                continue _fun34885
-                            }
-                        case 25:
-                            var7 = new Array(0);
-                            _fun34885_ip = 35;
-                            continue _fun34885;
-                        case 31:
-                            var7 = arguments[var1];
-                        case 35:
-                            var1 = global;
-                            var2 = var1._WORKLET;
-                            if (!var2) {
-                                _fun34885_ip = 148;
-                                continue _fun34885
-                            }
-                        case 46:
-                            var2 = arg0;
-                            var5 = var2.bind(var0)();
-                            var4 = 0;
-                            if (!(!(var5 < var4))) {
-                                _fun34885_ip = 83;
-                                continue _fun34885
-                            }
-                        case 59:
-                            var3 = _closure1_slot0;
-                            var2 = var3._dispatchCommandPaper;
-                            var2 = var2.bind(var3)(var5, var6, var7);
-                            _fun34885_ip = 148;
-                            continue _fun34885;
-                        case 83:
-                            var3 = _closure1_slot1;
-                            var2 = _closure1_slot2;
-                            var2 = var2[var4];
-                            var2 = var3.bind(var0)(var2);
-                            var3 = var2.logger;
-                            var2 = var3.warn;
-                            var1 = var1.HermesInternal;
-                            var5 = var1.concat;
-                            var4 = 'Tried to dispatch command "';
-                            var1 = '" with an uninitialized ref. Make sure to pass the animated ref to the component before using it.';
-                            var1 = var5.bind(var4)(var6, var1);
-                            var1 = var2.bind(var3)(var1);
-                        case 148:
-                            return var0;
+                case 32:
+                    var5 = _closure1_slot2;
+                    var5 = var5.CLAMP;
+                    if (!(var5 !== var6)) {
+                        _fun34882_ip = 58;
+                        continue _fun34882
                     }
-                };
-                var2 = {};
-                var5 = _closure1_slot1;
-                var4 = _closure1_slot2;
-                var3 = 0;
-                var4 = var4[var3];
-                var3 = undefined;
-                var3 = var5.bind(var3)(var4);
-                var3 = var3.logger;
-                var2.logger = var3;
-                var0.__closure = var2;
-                var2 = 16962176072769.0;
-                var0.__workletHash = var2;
-                var1 = _closure1_slot4;
-                var0.__initData = var1;
-                return var0;
-            };
-            var1 = var1.bind(var0)();
-            var3 = 1;
-            var8 = var6[var3];
-            var9 = var5.bind(var0)(var8);
-            var8 = var9.shouldBeUseWeb;
-            var9 = var8.bind(var9)();
-            var8 = var6[var3];
-            var8 = var5.bind(var0)(var8);
-            if (var9) {
-                _fun34881_ip = 162;
-                continue _fun34881
+                case 46:
+                    var4 = _closure1_slot2;
+                    var4 = var4.EXTEND;
+                    return var3;
+                case 58:
+                    var3 = var2 * var3;
+                    var2 = var2 * var1;
+                    if (!(var3 < var2)) {
+                        _fun34882_ip = 73;
+                        continue _fun34882
+                    }
+                case 70:
+                    var0 = var1;
+                case 73:
+                    return var0;
+                case 75:
+                    var0 = arg5;
+                    return var0;
             }
-        case 144:
-            var9 = var8.isFabric;
-            var9 = var9.bind(var8)();
-            if (!var9) {
-                _fun34881_ip = 160;
-                continue _fun34881
+        };
+        var2 = {};
+        var3 = _closure1_slot2;
+        var2.Extrapolation = var3;
+        var0.__closure = var2;
+        var2 = 15103214376416.0;
+        var0.__workletHash = var2;
+        var1 = _closure1_slot3;
+        var0.__initData = var1;
+        return var0;
+    };
+    var0 = undefined;
+    var3 = var3.bind(var0)();
+    var _closure1_slot4 = var3;
+    var3 = {};
+    var5 = 'function isExtrapolate_Pnpm_interpolationTs2(value){const{Extrapolation}=this.__closure;return value===Extrapolation.EXTEND||value===Extrapolation.CLAMP||value===Extrapolation.IDENTITY;}';
+    var3.code = var5;
+    var _closure1_slot5 = var3;
+    var3 = function() { // Environment: var1
+        var0 = function(arg0) { // Original name: isExtrapolate, environment: var0
+            _fun34884: for (var _fun34884_ip = 0;;) switch (_fun34884_ip) {
+                case 0:
+                    var2 = arg0;
+                    var0 = _closure1_slot2;
+                    var0 = var0.EXTEND;
+                    var0 = var2 === var0;
+                    if (var0) {
+                        _fun34884_ip = 37;
+                        continue _fun34884
+                    }
+                case 23:
+                    var3 = _closure1_slot2;
+                    var3 = var3.CLAMP;
+                    var0 = var2 === var3;
+                case 37:
+                    if (var0) {
+                        _fun34884_ip = 54;
+                        continue _fun34884
+                    }
+                case 40:
+                    var1 = _closure1_slot2;
+                    var1 = var1.IDENTITY;
+                    var0 = var2 === var1;
+                case 54:
+                    return var0;
             }
-        case 157:
-            var1 = var7;
-        case 160:
-            _fun34881_ip = 219;
-            continue _fun34881;
-        case 162:
-            var7 = var8.isJest;
-            var7 = var7.bind(var8)();
-            if (var7) {
-                _fun34881_ip = 211;
-                continue _fun34881
+        };
+        var2 = {};
+        var3 = _closure1_slot2;
+        var2.Extrapolation = var3;
+        var0.__closure = var2;
+        var2 = 1560831703072.0;
+        var0.__workletHash = var2;
+        var1 = _closure1_slot5;
+        var0.__initData = var1;
+        return var0;
+    };
+    var3 = var3.bind(var0)();
+    var _closure1_slot6 = var3;
+    var3 = {};
+    var5 = 'function validateType_Pnpm_interpolationTs3(type){const{Extrapolation,isExtrapolate}=this.__closure;const extrapolationConfig={extrapolateLeft:Extrapolation.EXTEND,extrapolateRight:Extrapolation.EXTEND};if(!type){return extrapolationConfig;}if(typeof type===\'string\'){if(!isExtrapolate(type)){throw new ReanimatedError("Unsupported value for \\"interpolate\\" \\nSupported values: [\\"extend\\", \\"clamp\\", \\"identity\\", Extrapolatation.CLAMP, Extrapolatation.EXTEND, Extrapolatation.IDENTITY]\\n Valid example:\\n        interpolate(value, [inputRange], [outputRange], \\"clamp\\")");}extrapolationConfig.extrapolateLeft=type;extrapolationConfig.extrapolateRight=type;return extrapolationConfig;}if(type.extrapolateLeft&&!isExtrapolate(type.extrapolateLeft)||type.extrapolateRight&&!isExtrapolate(type.extrapolateRight)){throw new ReanimatedError("Unsupported value for \\"interpolate\\" \\nSupported values: [\\"extend\\", \\"clamp\\", \\"identity\\", Extrapolatation.CLAMP, Extrapolatation.EXTEND, Extrapolatation.IDENTITY]\\n Valid example:\\n      interpolate(value, [inputRange], [outputRange], {\\n        extrapolateLeft: Extrapolation.CLAMP,\\n        extrapolateRight: Extrapolation.IDENTITY\\n      }})");}Object.assign(extrapolationConfig,type);return extrapolationConfig;}';
+    var3.code = var5;
+    var _closure1_slot7 = var3;
+    var3 = function() { // Environment: var1
+        var0 = function(arg0) { // Original name: validateType, environment: var0
+            _fun34886: for (var _fun34886_ip = 0;;) switch (_fun34886_ip) {
+                case 0:
+                    var1 = arg0;
+                    var0 = {};
+                    var3 = _closure1_slot2;
+                    var4 = var3.EXTEND;
+                    var0.extrapolateLeft = var4;
+                    var3 = var3.EXTEND;
+                    var0.extrapolateRight = var3;
+                    if (var1) {
+                        _fun34886_ip = 39;
+                        continue _fun34886
+                    }
+                case 37:
+                    return var0;
+                case 39:
+                    var4 = 'string';
+                    var3 = typeof var1;
+                    if (!(var4 !== var3)) {
+                        _fun34886_ip = 187;
+                        continue _fun34886
+                    }
+                case 53:
+                    var3 = var1.extrapolateLeft;
+                    if (!var3) {
+                        _fun34886_ip = 82;
+                        continue _fun34886
+                    }
+                case 62:
+                    var5 = _closure1_slot6;
+                    var4 = var1.extrapolateLeft;
+                    var3 = undefined;
+                    var3 = var5.bind(var3)(var4);
+                    if (!var3) {
+                        _fun34886_ip = 111;
+                        continue _fun34886
+                    }
+                case 82:
+                    var3 = var1.extrapolateRight;
+                    if (!var3) {
+                        _fun34886_ip = 166;
+                        continue _fun34886
+                    }
+                case 91:
+                    var5 = _closure1_slot6;
+                    var4 = var1.extrapolateRight;
+                    var3 = undefined;
+                    var3 = var5.bind(var3)(var4);
+                    if (var3) {
+                        _fun34886_ip = 166;
+                        continue _fun34886
+                    }
+                case 111:
+                    var5 = _closure1_slot0;
+                    var4 = _closure1_slot1;
+                    var3 = 0;
+                    var4 = var4[var3];
+                    var3 = undefined;
+                    var3 = var5.bind(var3)(var4);
+                    var5 = var3.ReanimatedError;
+                    var3 = var5.prototype;
+                    var4 = Object.create(var3, {
+                        constructor: {
+                            value: var5
+                        }
+                    });
+                    var7 = 'Unsupported value for "interpolate" \nSupported values: ["extend", "clamp", "identity", Extrapolatation.CLAMP, Extrapolatation.EXTEND, Extrapolatation.IDENTITY]\n Valid example:\n      interpolate(value, [inputRange], [outputRange], {\n        extrapolateLeft: Extrapolation.CLAMP,\n        extrapolateRight: Extrapolation.IDENTITY\n      }})';
+                    var8 = var4;
+                    var3 = new var8[var5](var7, var6);
+                    var3 = var3 instanceof Object ? var3 : var4;
+                    throw var3;
+                case 166:
+                    var3 = global;
+                    var4 = var3.Object;
+                    var3 = var4.assign;
+                    var3 = var3.bind(var4)(var0, var1);
+                    return var0;
+                case 187:
+                    var3 = _closure1_slot6;
+                    var4 = undefined;
+                    var3 = var3.bind(var4)(var1);
+                    if (var3) {
+                        _fun34886_ip = 254;
+                        continue _fun34886
+                    }
+                case 201:
+                    var3 = _closure1_slot0;
+                    var5 = _closure1_slot1;
+                    var2 = 0;
+                    var2 = var5[var2];
+                    var2 = var3.bind(var4)(var2);
+                    var4 = var2.ReanimatedError;
+                    var2 = var4.prototype;
+                    var3 = Object.create(var2, {
+                        constructor: {
+                            value: var4
+                        }
+                    });
+                    var7 = 'Unsupported value for "interpolate" \nSupported values: ["extend", "clamp", "identity", Extrapolatation.CLAMP, Extrapolatation.EXTEND, Extrapolatation.IDENTITY]\n Valid example:\n        interpolate(value, [inputRange], [outputRange], "clamp")';
+                    var8 = var3;
+                    var2 = new var8[var4](var7, var6);
+                    var2 = var2 instanceof Object ? var2 : var3;
+                    throw var2;
+                case 254:
+                    var0.extrapolateLeft = var1;
+                    var0.extrapolateRight = var1;
+                    return var0;
             }
-        case 175:
-            var3 = var6[var3];
-            var5 = var5.bind(var0)(var3);
-            var3 = var5.isChromeDebugger;
-            var3 = var3.bind(var5)();
-            if (var3) {
-                _fun34881_ip = 204;
-                continue _fun34881
+        };
+        var2 = {};
+        var3 = _closure1_slot2;
+        var2.Extrapolation = var3;
+        var3 = _closure1_slot6;
+        var2.isExtrapolate = var3;
+        var0.__closure = var2;
+        var2 = 9722315466599.0;
+        var0.__workletHash = var2;
+        var1 = _closure1_slot7;
+        var0.__initData = var1;
+        return var0;
+    };
+    var3 = var3.bind(var0)();
+    var _closure1_slot8 = var3;
+    var3 = {};
+    var5 = 'function internalInterpolate_Pnpm_interpolationTs4(x,narrowedInput,extrapolationConfig){const{getVal}=this.__closure;const{leftEdgeInput:leftEdgeInput,rightEdgeInput:rightEdgeInput,leftEdgeOutput:leftEdgeOutput,rightEdgeOutput:rightEdgeOutput}=narrowedInput;if(rightEdgeInput-leftEdgeInput===0){return leftEdgeOutput;}const progress=(x-leftEdgeInput)/(rightEdgeInput-leftEdgeInput);const val=leftEdgeOutput+progress*(rightEdgeOutput-leftEdgeOutput);const coef=rightEdgeOutput>=leftEdgeOutput?1:-1;if(coef*val<coef*leftEdgeOutput){return getVal(extrapolationConfig.extrapolateLeft,coef,val,leftEdgeOutput,rightEdgeOutput,x);}else if(coef*val>coef*rightEdgeOutput){return getVal(extrapolationConfig.extrapolateRight,coef,val,leftEdgeOutput,rightEdgeOutput,x);}return val;}';
+    var3.code = var5;
+    var _closure1_slot9 = var3;
+    var3 = function() { // Environment: var1
+        var0 = function(arg0, arg1, arg2) { // Original name: internalInterpolate, environment: var0
+            _fun34888: for (var _fun34888_ip = 0;;) switch (_fun34888_ip) {
+                case 0:
+                    var8 = arg0;
+                    var3 = arg1;
+                    var2 = arg2;
+                    var4 = var3.leftEdgeInput;
+                    var1 = var3.rightEdgeInput;
+                    var0 = var3.leftEdgeOutput;
+                    var7 = var3.rightEdgeOutput;
+                    var5 = var1 - var4;
+                    var3 = 0;
+                    if (!(var5 != var3)) {
+                        _fun34888_ip = 185;
+                        continue _fun34888
+                    }
+                case 46:
+                    var3 = var8 - var4;
+                    var1 = var1 - var4;
+                    var3 = var3 / var1;
+                    var1 = var7 - var0;
+                    var1 = var3 * var1;
+                    var6 = var0 + var1;
+                    var1 = var7 >= var0;
+                    var5 = -1;
+                    if (!var1) {
+                        _fun34888_ip = 86;
+                        continue _fun34888
+                    }
+                case 83:
+                    var5 = 1;
+                case 86:
+                    var3 = var5 * var6;
+                    var1 = var5 * var0;
+                    if (!(!(var3 < var1))) {
+                        _fun34888_ip = 149;
+                        continue _fun34888
+                    }
+                case 98:
+                    var4 = var5 * var6;
+                    var3 = var5 * var7;
+                    var1 = var6;
+                    if (!(var4 > var3)) {
+                        _fun34888_ip = 147;
+                        continue _fun34888
+                    }
+                case 113:
+                    var9 = _closure1_slot4;
+                    var15 = var2.extrapolateRight;
+                    var16 = undefined;
+                    var14 = var5;
+                    var13 = var6;
+                    var12 = var0;
+                    var11 = var7;
+                    var10 = var8;
+                    var1 = var16[var9](var15, var14, var13, var12, var11, var10, var9);
+                case 147:
+                    _fun34888_ip = 183;
+                    continue _fun34888;
+                case 149:
+                    var4 = _closure1_slot4;
+                    var15 = var2.extrapolateLeft;
+                    var16 = undefined;
+                    var14 = var5;
+                    var13 = var6;
+                    var12 = var0;
+                    var11 = var7;
+                    var10 = var8;
+                    var1 = var16[var4](var15, var14, var13, var12, var11, var10, var9);
+                case 183:
+                    return var1;
+                case 185:
+                    return var0;
             }
-        case 197:
-            var3 = function() { // Original name: dispatchCommandDefault, environment: var4
-                var2 = _closure1_slot1;
-                var1 = _closure1_slot2;
-                var0 = 0;
-                var1 = var1[var0];
-                var0 = undefined;
-                var1 = var2.bind(var0)(var1);
-                var3 = var1.logger;
-                var2 = var3.warn;
-                var1 = 'dispatchCommand() is not supported on this configuration.';
-                var1 = var2.bind(var3)(var1);
-                return var0;
-            };
-            _fun34881_ip = 209;
-            continue _fun34881;
-        case 204:
-            var3 = function() { // Original name: dispatchCommandChromeDebugger, environment: var4
-                var2 = _closure1_slot1;
-                var1 = _closure1_slot2;
-                var0 = 0;
-                var1 = var1[var0];
-                var0 = undefined;
-                var1 = var2.bind(var0)(var1);
-                var3 = var1.logger;
-                var2 = var3.warn;
-                var1 = 'dispatchCommand() is not supported with Chrome Debugger.';
-                var1 = var2.bind(var3)(var1);
-                return var0;
-            };
-        case 209:
-            _fun34881_ip = 216;
-            continue _fun34881;
-        case 211:
-            var3 = function() { // Original name: dispatchCommandJest, environment: var4
-                var2 = _closure1_slot1;
-                var1 = _closure1_slot2;
-                var0 = 0;
-                var1 = var1[var0];
-                var0 = undefined;
-                var1 = var2.bind(var0)(var1);
-                var3 = var1.logger;
-                var2 = var3.warn;
-                var1 = 'dispatchCommand() is not supported with Jest.';
-                var1 = var2.bind(var3)(var1);
-                return var0;
-            };
-        case 216:
-            var1 = var3;
-        case 219:
-            var2.dispatchCommand = var1;
+        };
+        var2 = {};
+        var3 = _closure1_slot4;
+        var2.getVal = var3;
+        var0.__closure = var2;
+        var2 = 16257995045856.0;
+        var0.__workletHash = var2;
+        var1 = _closure1_slot9;
+        var0.__initData = var1;
+        return var0;
+    };
+    var3 = var3.bind(var0)();
+    var _closure1_slot10 = var3;
+    var3 = {};
+    var5 = "function interpolate_Pnpm_interpolationTs5(x,inputRange,outputRange,type){const{validateType,internalInterpolate}=this.__closure;if(inputRange.length<2||outputRange.length<2){throw new ReanimatedError('Interpolation input and output ranges should contain at least two values.');}const extrapolationConfig=validateType(type);const length=inputRange.length;const narrowedInput={leftEdgeInput:inputRange[0],rightEdgeInput:inputRange[1],leftEdgeOutput:outputRange[0],rightEdgeOutput:outputRange[1]};if(length>2){if(x>inputRange[length-1]){narrowedInput.leftEdgeInput=inputRange[length-2];narrowedInput.rightEdgeInput=inputRange[length-1];narrowedInput.leftEdgeOutput=outputRange[length-2];narrowedInput.rightEdgeOutput=outputRange[length-1];}else{for(let i=1;i<length;++i){if(x<=inputRange[i]){narrowedInput.leftEdgeInput=inputRange[i-1];narrowedInput.rightEdgeInput=inputRange[i];narrowedInput.leftEdgeOutput=outputRange[i-1];narrowedInput.rightEdgeOutput=outputRange[i];break;}}}}return internalInterpolate(x,narrowedInput,extrapolationConfig);}";
+    var3.code = var5;
+    var _closure1_slot11 = var3;
+    var3 = function() { // Environment: var1
+        var0 = function(arg0, arg1, arg2, arg3) { // Original name: interpolate, environment: var0
+            _fun34890: for (var _fun34890_ip = 0;;) switch (_fun34890_ip) {
+                case 0:
+                    var4 = arg0;
+                    var10 = arg1;
+                    var6 = arg2;
+                    var0 = var10.length;
+                    var8 = 2;
+                    if (!(!(var0 < var8))) {
+                        _fun34890_ip = 272;
+                        continue _fun34890
+                    }
+                case 24:
+                    var0 = var6.length;
+                    if (!(!(var0 < var8))) {
+                        _fun34890_ip = 272;
+                        continue _fun34890
+                    }
+                case 36:
+                    var2 = _closure1_slot8;
+                    var3 = undefined;
+                    var1 = arg3;
+                    var2 = var2.bind(var3)(var1);
+                    var7 = var10.length;
+                    var1 = {};
+                    var9 = 0;
+                    var5 = var10[var9];
+                    var1.leftEdgeInput = var5;
+                    var5 = 1;
+                    var11 = var10[var5];
+                    var1.rightEdgeInput = var11;
+                    var9 = var6[var9];
+                    var1.leftEdgeOutput = var9;
+                    var9 = var6[var5];
+                    var1.rightEdgeOutput = var9;
+                    if (!(var7 > var8)) {
+                        _fun34890_ip = 259;
+                        continue _fun34890
+                    }
+                case 108:
+                    var9 = var7 - var5;
+                    var9 = var10[var9];
+                    if (!(!(var4 > var9))) {
+                        _fun34890_ip = 203;
+                        continue _fun34890
+                    }
+                case 120:
+                    var9 = var5 < var7;
+                    var11 = var5;
+                    if (!var9) {
+                        _fun34890_ip = 259;
+                        continue _fun34890
+                    }
+                case 133:
+                    var12 = var10[var11];
+                    var9 = var11;
+                    if (!(!(var4 <= var12))) {
+                        _fun34890_ip = 153;
+                        continue _fun34890
+                    }
+                case 144:
+                    var11 = var9 + 1;
+                    if (var11 < var7) {
+                        _fun34890_ip = 133;
+                        continue _fun34890
+                    }
+                case 151:
+                    _fun34890_ip = 259;
+                    continue _fun34890;
+                case 153:
+                    var11 = var9 - var5;
+                    var11 = var10[var11];
+                    var1.leftEdgeInput = var11;
+                    var11 = var10[var9];
+                    var1.rightEdgeInput = var11;
+                    var11 = var9 - var5;
+                    var11 = var6[var11];
+                    var1.leftEdgeOutput = var11;
+                    var9 = var6[var9];
+                    var1.rightEdgeOutput = var9;
+                    _fun34890_ip = 259;
+                    continue _fun34890;
+                case 203:
+                    var9 = var7 - var8;
+                    var9 = var10[var9];
+                    var1.leftEdgeInput = var9;
+                    var9 = var7 - var5;
+                    var9 = var10[var9];
+                    var1.rightEdgeInput = var9;
+                    var8 = var7 - var8;
+                    var8 = var6[var8];
+                    var1.leftEdgeOutput = var8;
+                    var5 = var7 - var5;
+                    var5 = var6[var5];
+                    var1.rightEdgeOutput = var5;
+                case 259:
+                    var0 = _closure1_slot10;
+                    var0 = var0.bind(var3)(var4, var1, var2);
+                    return var0;
+                case 272:
+                    var2 = _closure1_slot0;
+                    var1 = _closure1_slot1;
+                    var0 = 0;
+                    var1 = var1[var0];
+                    var0 = undefined;
+                    var0 = var2.bind(var0)(var1);
+                    var2 = var0.ReanimatedError;
+                    var0 = var2.prototype;
+                    var1 = Object.create(var0, {
+                        constructor: {
+                            value: var2
+                        }
+                    });
+                    var15 = 'Interpolation input and output ranges should contain at least two values.';
+                    var16 = var1;
+                    var0 = new var16[var2](var15, var14);
+                    var0 = var0 instanceof Object ? var0 : var1;
+                    throw var0;
+            }
+        };
+        var2 = {};
+        var3 = _closure1_slot8;
+        var2.validateType = var3;
+        var3 = _closure1_slot10;
+        var2.internalInterpolate = var3;
+        var0.__closure = var2;
+        var2 = 16263308339935.0;
+        var0.__workletHash = var2;
+        var1 = _closure1_slot11;
+        var0.__initData = var1;
+        return var0;
+    };
+    var3 = var3.bind(var0)();
+    var5 = {};
+    var6 = 'function clamp_Pnpm_interpolationTs6(value,min,max){return Math.min(Math.max(value,min),max);}';
+    var5.code = var6;
+    var _closure1_slot12 = var5;
+    var1 = function() { // Environment: var1
+        var0 = function(arg0, arg1, arg2) { // Original name: clamp, environment: var0
+            var0 = global;
+            var3 = var0.Math;
+            var2 = var3.min;
+            var5 = var0.Math;
+            var4 = var5.max;
+            var1 = arg0;
+            var0 = arg1;
+            var1 = var4.bind(var5)(var1, var0);
+            var0 = arg2;
+            var0 = var2.bind(var3)(var1, var0);
             return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3682, 3681]);
+        };
+        var1 = {};
+        var0.__closure = var1;
+        var1 = 13846341562950.0;
+        var0.__workletHash = var1;
+        var1 = _closure1_slot12;
+        var0.__initData = var1;
+        return var0;
+    };
+    var1 = var1.bind(var0)();
+    var2.Extrapolation = var4;
+    var2.interpolate = var3;
+    var2.clamp = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3691]);

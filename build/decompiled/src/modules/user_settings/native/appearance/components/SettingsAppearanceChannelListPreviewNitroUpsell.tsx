@@ -22,7 +22,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var16.bind(var3)(var1);
         var2 = var4.useAnimatedStyle;
         var1 = function() { // Original name: l, environment: var0
-            _fun84508: for (var _fun84508_ip = 0;;) switch (_fun84508_ip) {
+            _fun84554: for (var _fun84554_ip = 0;;) switch (_fun84554_ip) {
                 case 0:
                     var0 = _closure2_slot0;
                     var2 = var0.theme;
@@ -30,8 +30,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.LIGHT;
                     var4 = 1;
                     if (!(var2 === var0)) {
-                        _fun84508_ip = 43;
-                        continue _fun84508
+                        _fun84554_ip = 43;
+                        continue _fun84554
                     }
                 case 33:
                     var4 = 0.5;
@@ -309,13 +309,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var8.bind(var4)(var3);
             var12 = var3.springStandard;
             var3 = function(arg0) { // Original name: s, environment: var2
-                _fun84514: for (var _fun84514_ip = 0;;) switch (_fun84514_ip) {
+                _fun84560: for (var _fun84560_ip = 0;;) switch (_fun84560_ip) {
                     case 0:
                         var2 = _closure3_slot0;
                         var1 = null;
                         if (!(var1 != var2)) {
-                            _fun84514_ip = 27;
-                            continue _fun84514
+                            _fun84560_ip = 27;
+                            continue _fun84560
                         }
                     case 13:
                         var2 = _closure3_slot0;
@@ -429,7 +429,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot20 = var3;
     var3 = var6.memo;
     var1 = function(arg0) { // Original name: SettingsAppearanceChannelListPreviewNitroUpsell, environment: var1
-        _fun84515: for (var _fun84515_ip = 0;;) switch (_fun84515_ip) {
+        _fun84561: for (var _fun84561_ip = 0;;) switch (_fun84561_ip) {
             case 0:
                 var7 = arg0;
                 var2 = _closure1_slot0;
@@ -451,7 +451,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = _closure1_slot3;
                 var2 = var4.useCallback;
                 var1 = function(arg0, arg1) { // Environment: var0
-                    _fun84517: for (var _fun84517_ip = 0;;) switch (_fun84517_ip) {
+                    _fun84563: for (var _fun84563_ip = 0;;) switch (_fun84563_ip) {
                         case 0:
                             var8 = arg0;
                             var3 = _closure1_slot10;
@@ -470,8 +470,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = null;
                             var6 = var4 != var8;
                             if (!var6) {
-                                _fun84517_ip = 92;
-                                continue _fun84517
+                                _fun84563_ip = 92;
+                                continue _fun84563
                             }
                         case 66:
                             var7 = _closure1_slot10;
@@ -499,8 +499,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = var7.visible;
                 var6 = undefined;
                 if (!var8) {
-                    _fun84515_ip = 127;
-                    continue _fun84515
+                    _fun84561_ip = 127;
+                    continue _fun84561
                 }
             case 124:
                 var6 = var7;
@@ -524,4 +524,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 660, 33, 3677, 4051, 4034, 4040, 1297, 671, 5684, 5536, 4518, 7004, 1307, 7631, 4037, 1234, 6563, 566, 4886, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1298, 660, 33, 3679, 4057, 4040, 4046, 1297, 671, 5687, 5540, 4524, 7007, 1307, 7634, 4043, 1234, 6566, 566, 4892, 2]);

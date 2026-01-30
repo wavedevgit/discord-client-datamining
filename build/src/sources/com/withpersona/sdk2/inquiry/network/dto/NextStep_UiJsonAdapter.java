@@ -91,7 +91,7 @@ public final class NextStep_UiJsonAdapter extends h {
         }
         Constructor<NextStep.Ui> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = NextStep.Ui.class.getDeclaredConstructor(String.class, NextStep.Ui.Config.class, StepStyles.UiStepStyle.class, Integer.TYPE, sm.c.f49081c);
+            constructor = NextStep.Ui.class.getDeclaredConstructor(String.class, NextStep.Ui.Config.class, StepStyles.UiStepStyle.class, Integer.TYPE, sm.c.f49097c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

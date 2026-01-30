@@ -31,7 +31,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/MessageUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Original name: canViewPotentiallyNSFWChannel, environment: var1
-        _fun69529: for (var _fun69529_ip = 0;;) switch (_fun69529_ip) {
+        _fun69575: for (var _fun69575_ip = 0;;) switch (_fun69575_ip) {
             case 0:
                 var2 = _closure1_slot3;
                 var0 = var2.getCurrentUser;
@@ -43,15 +43,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = null;
                 var0 = var2 != var0;
                 if (!var0) {
-                    _fun69529_ip = 46;
-                    continue _fun69529
+                    _fun69575_ip = 46;
+                    continue _fun69575
                 }
             case 42:
                 var0 = var2 != var3;
             case 46:
                 if (!var0) {
-                    _fun69529_ip = 85;
-                    continue _fun69529
+                    _fun69575_ip = 85;
+                    continue _fun69575
                 }
             case 49:
                 var4 = _closure1_slot0;
@@ -69,7 +69,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.canViewPotentiallyNSFWChannel = var3;
     var1 = function(arg0) { // Original name: getGuildIdFromMessage, environment: var1
-        _fun69530: for (var _fun69530_ip = 0;;) switch (_fun69530_ip) {
+        _fun69576: for (var _fun69576_ip = 0;;) switch (_fun69576_ip) {
             case 0:
                 var2 = _closure1_slot2;
                 var1 = var2.getChannel;
@@ -80,8 +80,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2 == var3;
                 var1 = undefined;
                 if (var4) {
-                    _fun69530_ip = 41;
-                    continue _fun69530
+                    _fun69576_ip = 41;
+                    continue _fun69576
                 }
             case 36:
                 var1 = var3.guild_id;
@@ -89,8 +89,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2 != var1;
                 var0 = undefined;
                 if (!var2) {
-                    _fun69530_ip = 53;
-                    continue _fun69530
+                    _fun69576_ip = 53;
+                    continue _fun69576
                 }
             case 50:
                 var0 = var1;
@@ -100,4 +100,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getGuildIdFromMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1613, 4508, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 1613, 4514, 2]);

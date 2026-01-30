@@ -29,29 +29,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/premium/powerups/utils/getGuildPowerupsBoostInfoText.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0, arg1) { // Original name: getGuildPowerupsBoostInfoText, environment: var1
-        _fun102712: for (var _fun102712_ip = 0;;) switch (_fun102712_ip) {
+        _fun102966: for (var _fun102966_ip = 0;;) switch (_fun102966_ip) {
             case 0:
                 var4 = arg0;
                 var2 = arg1;
                 var1 = _closure1_slot3;
                 var1 = var1.AVAILABLE;
                 if (!(var1 !== var2)) {
-                    _fun102712_ip = 192;
-                    continue _fun102712
+                    _fun102966_ip = 192;
+                    continue _fun102966
                 }
             case 26:
                 var1 = _closure1_slot3;
                 var1 = var1.SPENT;
                 if (!(var1 !== var2)) {
-                    _fun102712_ip = 121;
-                    continue _fun102712
+                    _fun102966_ip = 121;
+                    continue _fun102966
                 }
             case 40:
                 var1 = _closure1_slot3;
                 var1 = var1.TOTAL;
                 if (!(var1 !== var2)) {
-                    _fun102712_ip = 58;
-                    continue _fun102712
+                    _fun102966_ip = 58;
+                    continue _fun102966
                 }
             case 54:
                 var1 = undefined;
@@ -112,4 +112,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getGuildPowerupsBoostInfoText = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6675, 1234, 1881, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6678, 1234, 1881, 2]);

@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot11 = var0;
     var0 = function(arg0) { // Original name: EditSection, environment: var1
-        _fun103817: for (var _fun103817_ip = 0;;) switch (_fun103817_ip) {
+        _fun104073: for (var _fun104073_ip = 0;;) switch (_fun104073_ip) {
             case 0:
                 var1 = arg0;
                 var8 = var1.navigateToProfileCustomization;
@@ -92,13 +92,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2.bind(var3)(var1);
                 var2 = var4.useSelectedDismissibleContent;
                 if (var5) {
-                    _fun103817_ip = 166;
-                    continue _fun103817
+                    _fun104073_ip = 166;
+                    continue _fun104073
                 }
             case 160:
                 var1 = new Array(0);
-                _fun103817_ip = 209;
-                continue _fun103817;
+                _fun104073_ip = 209;
+                continue _fun104073;
             case 166:
                 var10 = _closure1_slot0;
                 var13 = _closure1_slot2;
@@ -137,7 +137,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[2] = var10;
                 var1[3] = var9;
                 var0 = function() { // Environment: var0
-                    _fun103818: for (var _fun103818_ip = 0;;) switch (_fun103818_ip) {
+                    _fun104074: for (var _fun104074_ip = 0;;) switch (_fun104074_ip) {
                         case 0:
                             var3 = _closure2_slot1;
                             var1 = {};
@@ -156,8 +156,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = var3.bind(var0)();
                             var3 = _closure2_slot3;
                             if (!var3) {
-                                _fun103818_ip = 91;
-                                continue _fun103818
+                                _fun104074_ip = 91;
+                                continue _fun104074
                             }
                         case 72:
                             var2 = _closure2_slot2;
@@ -225,8 +225,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(2);
                 var4[0] = var7;
                 if (!var5) {
-                    _fun103817_ip = 612;
-                    continue _fun103817
+                    _fun104073_ip = 612;
+                    continue _fun104073
                 }
             case 565:
                 var8 = _closure1_slot8;
@@ -290,94 +290,101 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot9 = var6;
     var3 = var3.jsxs;
     var _closure1_slot10 = var3;
-    var3 = 47;
+    var3 = 51;
     var3 = var5[var3];
     var5 = var4.bind(var0)(var3);
     var4 = var5.fileFinishedImporting;
     var3 = 'modules/user_profile/native/YouScreenUserProfileContent.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: YouScreenUserProfileContent, environment: var1
-        _fun103819: for (var _fun103819_ip = 0;;) switch (_fun103819_ip) {
+        _fun104075: for (var _fun104075_ip = 0;;) switch (_fun104075_ip) {
             case 0:
-                var1 = arg0;
-                var19 = var1.user;
-                var4 = var1.style;
-                var31 = var1.navigateToProfileCustomization;
-                var23 = var1.navigateToFriends;
-                var28 = var1.navigateToPremium;
-                var27 = var1.navigateToShop;
-                var7 = _closure1_slot1;
-                var5 = _closure1_slot2;
-                var1 = 9;
-                var1 = var5[var1];
+                var2 = arg0;
+                var32 = var2.user;
+                var _closure2_slot0 = var32;
+                var4 = var2.style;
+                var25 = var2.navigateToProfileCustomization;
+                var1 = var2.navigateToFriends;
+                var _closure2_slot1 = var1;
+                var21 = var2.navigateToPremium;
+                var _closure2_slot2 = var21;
+                var11 = var2.navigateToShop;
+                var _closure2_slot3 = var11;
                 var3 = undefined;
-                var1 = var7.bind(var3)(var1);
-                var14 = var1.bind(var3)();
-                var2 = _closure1_slot0;
-                var1 = 10;
-                var1 = var5[var1];
-                var6 = var2.bind(var3)(var1);
-                var1 = var6.useUserProfileAnalyticsContext;
-                var1 = var1.bind(var6)();
-                var1 = var1.trackUserProfileAction;
-                var _closure2_slot0 = var1;
-                var6 = 20;
-                var6 = var5[var6];
-                var8 = var7.bind(var3)(var6);
-                var6 = var19.id;
-                var24 = var8.bind(var3)(var6);
-                var6 = 21;
-                var6 = var5[var6];
-                var8 = var2.bind(var3)(var6);
-                var6 = var8.useCustomStatusActivity;
-                var30 = var6.bind(var8)();
-                var _closure2_slot1 = var30;
-                var6 = 22;
-                var6 = var5[var6];
-                var6 = var7.bind(var3)(var6);
-                var33 = var6.bind(var3)(var24);
-                var6 = 23;
-                var6 = var5[var6];
-                var6 = var2.bind(var3)(var6);
-                var8 = var6.StatusSetting;
-                var6 = var8.useSetting;
-                var36 = var6.bind(var8)();
-                var6 = 24;
-                var6 = var5[var6];
-                var7 = var7.bind(var3)(var6);
-                var6 = {};
-                var6.user = var19;
-                var6.displayProfile = var24;
-                var6 = var7.bind(var3)(var6);
-                var9 = var6.theme;
-                var12 = var6.primaryColor;
-                var11 = var6.secondaryColor;
-                var34 = null;
-                var26 = var34 != var12;
-                var6 = 25;
-                var6 = var5[var6];
-                var8 = var2.bind(var3)(var6);
+                var _closure2_slot17 = var3;
+                var7 = _closure1_slot1;
+                var22 = _closure1_slot2;
+                var2 = 9;
+                var2 = var22[var2];
+                var2 = var7.bind(var3)(var2);
+                var20 = var2.bind(var3)();
+                var _closure2_slot4 = var20;
+                var6 = _closure1_slot0;
+                var2 = 10;
+                var2 = var22[var2];
+                var5 = var6.bind(var3)(var2);
+                var2 = var5.useUserProfileAnalyticsContext;
+                var2 = var2.bind(var5)();
+                var2 = var2.trackUserProfileAction;
+                var _closure2_slot5 = var2;
+                var5 = 20;
+                var5 = var22[var5];
+                var8 = var7.bind(var3)(var5);
+                var5 = var32.id;
+                var30 = var8.bind(var3)(var5);
+                var _closure2_slot6 = var30;
+                var5 = 21;
+                var5 = var22[var5];
+                var8 = var6.bind(var3)(var5);
+                var5 = var8.useCustomStatusActivity;
+                var35 = var5.bind(var8)();
+                var _closure2_slot7 = var35;
+                var5 = 22;
+                var5 = var22[var5];
+                var5 = var7.bind(var3)(var5);
+                var28 = var5.bind(var3)(var30);
+                var5 = 23;
+                var5 = var22[var5];
+                var5 = var6.bind(var3)(var5);
+                var8 = var5.StatusSetting;
+                var5 = var8.useSetting;
+                var31 = var5.bind(var8)();
+                var5 = 24;
+                var5 = var22[var5];
+                var7 = var7.bind(var3)(var5);
+                var5 = {};
+                var5.user = var32;
+                var5.displayProfile = var30;
+                var5 = var7.bind(var3)(var5);
+                var9 = var5.theme;
+                var14 = var5.primaryColor;
+                var13 = var5.secondaryColor;
+                var29 = null;
+                var24 = var29 != var14;
+                var _closure2_slot8 = var24;
+                var5 = 25;
+                var5 = var22[var5];
+                var8 = var6.bind(var3)(var5);
                 var7 = var8.useUserProfileColors;
-                var6 = {};
-                var6.theme = var9;
-                var6.primaryColor = var12;
-                var6.secondaryColor = var11;
-                var6 = var7.bind(var8)(var6);
-                var10 = var6.gradientFallbackBackground;
-                var32 = var6.containerBackground;
-                var13 = var6.avatarBackground;
-                var38 = var6.statusBackground;
-                var18 = {};
-                var18.backgroundColor = var32;
+                var5 = {};
+                var5.theme = var9;
+                var5.primaryColor = var14;
+                var5.secondaryColor = var13;
+                var5 = var7.bind(var8)(var5);
+                var10 = var5.gradientFallbackBackground;
+                var27 = var5.containerBackground;
+                var _closure2_slot9 = var27;
+                var17 = var5.avatarBackground;
+                var37 = var5.statusBackground;
                 var7 = _closure1_slot4;
-                var6 = var7.useRef;
-                var37 = var6.bind(var7)(var34);
+                var5 = var7.useRef;
+                var36 = var5.bind(var7)(var29);
                 var8 = _closure1_slot4;
                 var7 = var8.useCallback;
-                var6 = new Array(1);
-                var6[0] = var1;
-                var1 = function() { // Environment: var0
-                    var2 = _closure2_slot0;
+                var5 = new Array(1);
+                var5[0] = var2;
+                var2 = function() { // Environment: var0
+                    var2 = _closure2_slot5;
                     var1 = {};
                     var0 = 'PRESS_SET_STATUS';
                     var1.action = var0;
@@ -392,82 +399,114 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var1.bind(var2)();
                     return var0;
                 };
-                var25 = var7.bind(var8)(var1, var6);
-                var1 = 26;
-                var1 = var5[var1];
-                var7 = var2.bind(var3)(var1);
-                var6 = var7.useIsEligibleForCustomStatusLabelsExperiment;
-                var1 = {};
-                var9 = 'YouScreenUserProfileContent';
-                var1.location = var9;
-                var8 = var6.bind(var7)(var1);
-                var _closure2_slot2 = var8;
-                var1 = 27;
-                var1 = var5[var1];
-                var7 = var2.bind(var3)(var1);
-                var6 = var7.useVirtualCurrencyMobileEnabled;
-                var1 = {};
-                var1.location = var9;
-                var1 = var6.bind(var7)(var1);
-                var17 = var1.enabled;
-                var1 = 28;
-                var1 = var5[var1];
-                var1 = var2.bind(var3)(var1);
-                var7 = var1.CheckpointExperiment;
-                var6 = var7.useConfig;
-                var1 = {};
-                var9 = 'YouScreen';
-                var1.location = var9;
-                var1 = var6.bind(var7)(var1);
-                var16 = var1.enabled;
-                var6 = _closure1_slot4;
-                var1 = var6.useState;
-                var7 = var1.bind(var6)(var34);
-                var6 = _closure1_slot3;
-                var1 = 2;
-                var6 = var6.bind(var3)(var7, var1);
-                var41 = 0;
-                var21 = var6[var41];
-                var1 = 1;
-                var1 = var6[var1];
-                var _closure2_slot3 = var1;
-                var1 = 29;
-                var1 = var5[var1];
-                var6 = var2.bind(var3)(var1);
-                var1 = var6.useShouldShowExpiringTrialOfferCard;
-                var20 = var1.bind(var6)();
-                var1 = 30;
-                var1 = var5[var1];
-                var2 = var2.bind(var3)(var1);
-                var1 = var2.useFocusEffect;
+                var26 = var7.bind(var8)(var2, var5);
+                var2 = 26;
+                var2 = var22[var2];
+                var7 = var6.bind(var3)(var2);
+                var5 = var7.useIsEligibleForCustomStatusLabelsExperiment;
+                var2 = {};
+                var12 = 'YouScreenUserProfileContent';
+                var2.location = var12;
+                var2 = var5.bind(var7)(var2);
+                var _closure2_slot10 = var2;
+                var5 = 27;
+                var5 = var22[var5];
+                var8 = var6.bind(var3)(var5);
+                var7 = var8.useVirtualCurrencyMobileEnabled;
+                var5 = {};
+                var5.location = var12;
+                var5 = var7.bind(var8)(var5);
+                var9 = var5.enabled;
+                var _closure2_slot11 = var9;
+                var5 = 28;
+                var5 = var22[var5];
+                var5 = var6.bind(var3)(var5);
+                var8 = var5.CheckpointExperiment;
+                var7 = var8.useConfig;
+                var5 = {};
+                var15 = 'YouScreen';
+                var5.location = var15;
+                var5 = var7.bind(var8)(var5);
+                var8 = var5.enabled;
+                var _closure2_slot12 = var8;
                 var7 = _closure1_slot4;
-                var6 = var7.useCallback;
-                var5 = new Array(2);
-                var5[0] = var30;
-                var5[1] = var8;
-                var0 = function() { // Environment: var0
-                    _fun103821: for (var _fun103821_ip = 0;;) switch (_fun103821_ip) {
+                var5 = var7.useState;
+                var7 = var5.bind(var7)(var29);
+                var5 = _closure1_slot3;
+                var15 = 2;
+                var5 = var5.bind(var3)(var7, var15);
+                var40 = 0;
+                var23 = var5[var40];
+                var18 = 1;
+                var5 = var5[var18];
+                var _closure2_slot13 = var5;
+                var5 = 29;
+                var5 = var22[var5];
+                var7 = var6.bind(var3)(var5);
+                var5 = var7.useShouldShowExpiringTrialOfferCard;
+                var19 = var5.bind(var7)();
+                var _closure2_slot14 = var19;
+                var5 = 30;
+                var5 = var22[var5];
+                var7 = var6.bind(var3)(var5);
+                var5 = var7.useMobileWishlistViewerExperiment;
+                var5 = var5.bind(var7)(var12);
+                var12 = var5.enabled;
+                var _closure2_slot15 = var12;
+                var7 = _closure1_slot4;
+                var5 = var7.useState;
+                var7 = var5.bind(var7)(var40);
+                var5 = _closure1_slot3;
+                var5 = var5.bind(var3)(var7, var15);
+                var7 = var5[var40];
+                var5 = var5[var18];
+                var _closure2_slot16 = var5;
+                var34 = _closure1_slot4;
+                var33 = var34.useCallback;
+                var15 = function(arg0) { // Environment: var0
+                    var0 = arg0;
+                    var0 = var0.nativeEvent;
+                    var0 = var0.layout;
+                    var2 = var0.width;
+                    var1 = _closure2_slot16;
+                    var0 = undefined;
+                    var1 = var1.bind(var0)(var2);
+                    return var0;
+                };
+                var5 = new Array(0);
+                var15 = var33.bind(var34)(var15, var5);
+                var5 = 31;
+                var5 = var22[var5];
+                var6 = var6.bind(var3)(var5);
+                var5 = var6.useFocusEffect;
+                var34 = _closure1_slot4;
+                var33 = var34.useCallback;
+                var22 = new Array(2);
+                var22[0] = var35;
+                var22[1] = var2;
+                var2 = function() { // Environment: var0
+                    _fun104078: for (var _fun104078_ip = 0;;) switch (_fun104078_ip) {
                         case 0:
-                            var2 = _closure2_slot3;
-                            var1 = _closure2_slot1;
+                            var2 = _closure2_slot13;
+                            var1 = _closure2_slot7;
                             var3 = null;
                             var4 = var3 == var1;
                             var1 = null;
                             if (!var4) {
-                                _fun103821_ip = 60;
-                                continue _fun103821
+                                _fun104078_ip = 60;
+                                continue _fun104078
                             }
                         case 22:
-                            var0 = _closure2_slot2;
+                            var0 = _closure2_slot10;
                             var1 = null;
                             if (!var0) {
-                                _fun103821_ip = 60;
-                                continue _fun103821
+                                _fun104078_ip = 60;
+                                continue _fun104078
                             }
                         case 31:
                             var4 = _closure1_slot1;
                             var3 = _closure1_slot2;
-                            var0 = 31;
+                            var0 = 32;
                             var0 = var3[var0];
                             var3 = undefined;
                             var0 = var4.bind(var3)(var0);
@@ -478,298 +517,473 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             return var0;
                     }
                 };
-                var0 = var6.bind(var7)(var0, var5);
-                var0 = var1.bind(var2)(var0);
-                var0 = var34 != var21;
-                var29 = undefined;
-                if (!var0) {
-                    _fun103819_ip = 623;
-                    continue _fun103819
+                var2 = var33.bind(var34)(var2, var22);
+                var2 = var5.bind(var6)(var2);
+                var2 = var29 != var23;
+                var34 = undefined;
+                if (!var2) {
+                    _fun104075_ip = 759;
+                    continue _fun104075
                 }
-            case 614:
-                var0 = var21.label;
-                var29 = var0.bind(var21)();
-            case 623:
-                var2 = _closure1_slot8;
+            case 750:
+                var2 = var23.label;
+                var34 = var2.bind(var23)();
+            case 759:
+                var6 = _closure1_slot4;
+                var5 = var6.useCallback;
+                var2 = new Array(11);
+                var2[0] = var27;
+                var22 = var20.cards;
+                var2[1] = var22;
+                var2[2] = var21;
+                var2[3] = var19;
+                var2[4] = var11;
+                var2[5] = var24;
+                var2[6] = var9;
+                var2[7] = var8;
+                var2[8] = var32;
+                var2[9] = var30;
+                var2[10] = var1;
+                var1 = function() { // Environment: var0
+                    _fun104079: for (var _fun104079_ip = 0;;) switch (_fun104079_ip) {
+                        case 0:
+                            var8 = {};
+                            var0 = _closure2_slot9;
+                            var8.backgroundColor = var0;
+                            var3 = _closure1_slot10;
+                            var2 = _closure1_slot5;
+                            var1 = {};
+                            var0 = _closure2_slot4;
+                            var0 = var0.cards;
+                            var1.style = var0;
+                            var7 = _closure1_slot8;
+                            var6 = _closure1_slot1;
+                            var4 = _closure1_slot2;
+                            var0 = 33;
+                            var4 = var4[var0];
+                            var0 = undefined;
+                            var6 = var6.bind(var0)(var4);
+                            var4 = {};
+                            var9 = _closure2_slot2;
+                            var4.navigateToPremium = var9;
+                            var4.style = var8;
+                            var6 = var7.bind(var0)(var6, var4);
+                            var4 = new Array(11);
+                            var4[0] = var6;
+                            var6 = _closure2_slot14;
+                            var6 = !var6;
+                            if (!var6) {
+                                _fun104079_ip = 164;
+                                continue _fun104079
+                            }
+                        case 105:
+                            var10 = _closure1_slot8;
+                            var9 = _closure1_slot1;
+                            var11 = _closure1_slot2;
+                            var7 = 34;
+                            var7 = var11[var7];
+                            var9 = var9.bind(var0)(var7);
+                            var7 = {};
+                            var11 = _closure2_slot2;
+                            var7.navigateToPremium = var11;
+                            var11 = _closure2_slot3;
+                            var7.navigateToShop = var11;
+                            var11 = _closure2_slot8;
+                            var7.hasCustomProfileTheme = var11;
+                            var6 = var10.bind(var0)(var9, var7);
+                        case 164:
+                            var4[1] = var6;
+                            var6 = _closure2_slot11;
+                            if (!var6) {
+                                _fun104079_ip = 211;
+                                continue _fun104079
+                            }
+                        case 175:
+                            var10 = _closure1_slot8;
+                            var9 = _closure1_slot1;
+                            var11 = _closure1_slot2;
+                            var7 = 35;
+                            var7 = var11[var7];
+                            var9 = var9.bind(var0)(var7);
+                            var7 = {};
+                            var7.style = var8;
+                            var6 = var10.bind(var0)(var9, var7);
+                        case 211:
+                            var4[2] = var6;
+                            var6 = _closure2_slot12;
+                            if (!var6) {
+                                _fun104079_ip = 258;
+                                continue _fun104079
+                            }
+                        case 222:
+                            var10 = _closure1_slot8;
+                            var9 = _closure1_slot1;
+                            var11 = _closure1_slot2;
+                            var7 = 36;
+                            var7 = var11[var7];
+                            var9 = var9.bind(var0)(var7);
+                            var7 = {};
+                            var7.style = var8;
+                            var6 = var10.bind(var0)(var9, var7);
+                        case 258:
+                            var4[3] = var6;
+                            var12 = _closure1_slot8;
+                            var6 = _closure1_slot1;
+                            var10 = _closure1_slot2;
+                            var7 = 37;
+                            var7 = var10[var7];
+                            var11 = var6.bind(var0)(var7);
+                            var7 = {};
+                            var9 = _closure2_slot0;
+                            var7.user = var9;
+                            var7.currentUser = var9;
+                            var7.style = var8;
+                            var7 = var12.bind(var0)(var11, var7);
+                            var4[4] = var7;
+                            var12 = _closure1_slot8;
+                            var7 = 38;
+                            var7 = var10[var7];
+                            var11 = var6.bind(var0)(var7);
+                            var7 = {};
+                            var14 = var9.id;
+                            var7.userId = var14;
+                            var14 = _closure2_slot6;
+                            var7.displayProfile = var14;
+                            var7.style = var8;
+                            var7 = var12.bind(var0)(var11, var7);
+                            var4[5] = var7;
+                            var15 = _closure1_slot8;
+                            var11 = _closure1_slot0;
+                            var7 = 39;
+                            var12 = var10[var7];
+                            var12 = var11.bind(var0)(var12);
+                            var14 = var12.UserProfileAccountConnectionsCard;
+                            var12 = {};
+                            var16 = var9.id;
+                            var12.userId = var16;
+                            var12.style = var8;
+                            var12 = var15.bind(var0)(var14, var12);
+                            var4[6] = var12;
+                            var15 = _closure1_slot8;
+                            var12 = var10[var7];
+                            var12 = var11.bind(var0)(var12);
+                            var14 = var12.UserProfileApplicationRoleConnectionsCard;
+                            var12 = {};
+                            var16 = var9.id;
+                            var12.userId = var16;
+                            var12.style = var8;
+                            var12 = var15.bind(var0)(var14, var12);
+                            var4[7] = var12;
+                            var12 = _closure1_slot8;
+                            var7 = var10[var7];
+                            var7 = var11.bind(var0)(var7);
+                            var11 = var7.UserProfileApplicationRoleConnectionsCard;
+                            var7 = {};
+                            var14 = var9.id;
+                            var7.userId = var14;
+                            var7.style = var8;
+                            var7 = var12.bind(var0)(var11, var7);
+                            var4[8] = var7;
+                            var12 = _closure1_slot8;
+                            var7 = 40;
+                            var7 = var10[var7];
+                            var11 = var6.bind(var0)(var7);
+                            var7 = {};
+                            var14 = var9.id;
+                            var7.userId = var14;
+                            var13 = _closure2_slot1;
+                            var7.navigateToFriends = var13;
+                            var7.style = var8;
+                            var7 = var12.bind(var0)(var11, var7);
+                            var4[9] = var7;
+                            var7 = _closure1_slot8;
+                            var5 = 41;
+                            var5 = var10[var5];
+                            var6 = var6.bind(var0)(var5);
+                            var5 = {};
+                            var9 = var9.id;
+                            var5.userId = var9;
+                            var5.style = var8;
+                            var5 = var7.bind(var0)(var6, var5);
+                            var4[10] = var5;
+                            var1.children = var4;
+                            var0 = var3.bind(var0)(var2, var1);
+                            return var0;
+                    }
+                };
+                var11 = var5.bind(var6)(var1, var2);
+                _closure2_slot17 = var11;
+                var5 = _closure1_slot4;
+                var2 = var5.useMemo;
+                var1 = new Array(2);
+                var1[0] = var12;
+                var1[1] = var11;
+                var0 = function() { // Environment: var0
+                    _fun104080: for (var _fun104080_ip = 0;;) switch (_fun104080_ip) {
+                        case 0:
+                            var1 = {};
+                            var0 = 'main';
+                            var1.id = var0;
+                            var6 = _closure1_slot0;
+                            var0 = _closure1_slot2;
+                            var8 = 18;
+                            var3 = var0[var8];
+                            var5 = undefined;
+                            var3 = var6.bind(var5)(var3);
+                            var4 = var3.intl;
+                            var3 = var4.string;
+                            var0 = var0[var8];
+                            var0 = var6.bind(var5)(var0);
+                            var0 = var0.t;
+                            var0 = var0.LXw470;
+                            var0 = var3.bind(var4)(var0);
+                            var1.label = var0;
+                            var0 = _closure2_slot15;
+                            if (var0) {
+                                _fun104080_ip = 104;
+                                continue _fun104080
+                            }
+                        case 86:
+                            var6 = _closure1_slot8;
+                            var4 = _closure1_slot5;
+                            var0 = {};
+                            var0 = var6.bind(var5)(var4, var0);
+                            _fun104080_ip = 112;
+                            continue _fun104080;
+                        case 104:
+                            var3 = _closure2_slot17;
+                            var0 = var3.bind(var5)();
+                        case 112:
+                            var1.page = var0;
+                            var0 = new Array(2);
+                            var0[0] = var1;
+                            var1 = {};
+                            var3 = 'wishlist';
+                            var1.id = var3;
+                            var7 = _closure1_slot0;
+                            var3 = _closure1_slot2;
+                            var4 = var3[var8];
+                            var4 = var7.bind(var5)(var4);
+                            var6 = var4.intl;
+                            var4 = var6.string;
+                            var3 = var3[var8];
+                            var3 = var7.bind(var5)(var3);
+                            var3 = var3.t;
+                            var3 = var3["7lZ31J"];
+                            var3 = var4.bind(var6)(var3);
+                            var1.label = var3;
+                            var4 = _closure1_slot8;
+                            var3 = _closure1_slot5;
+                            var2 = {};
+                            var2 = var4.bind(var5)(var3, var2);
+                            var1.page = var2;
+                            var0[1] = var1;
+                            return var0;
+                    }
+                };
+                var6 = var2.bind(var5)(var0, var1);
+                var5 = _closure1_slot0;
+                var33 = _closure1_slot2;
+                var0 = 42;
+                var0 = var33[var0];
+                var2 = var5.bind(var3)(var0);
+                var1 = var2.useSegmentedControlState;
+                var0 = {};
+                var0.pageWidth = var7;
+                var0.defaultIndex = var40;
                 var22 = _closure1_slot1;
-                var35 = _closure1_slot2;
-                var0 = 32;
-                var0 = var35[var0];
+                var21 = 17;
+                var7 = var33[var21];
+                var7 = var22.bind(var3)(var7);
+                var7 = var7.spacing;
+                var7 = var7.PX_24;
+                var0.itemSpacing = var7;
+                var0.items = var6;
+                var19 = var1.bind(var2)(var0);
+                var2 = _closure1_slot8;
+                var0 = 43;
+                var0 = var33[var0];
                 var0 = var22.bind(var3)(var0);
                 var1 = var0.View;
                 var0 = {};
                 var0.style = var4;
                 var6 = _closure1_slot8;
-                var5 = _closure1_slot0;
-                var4 = 33;
-                var4 = var35[var4];
+                var4 = 44;
+                var4 = var33[var4];
                 var4 = var5.bind(var3)(var4);
                 var5 = var4.LayerScope;
                 var4 = {};
                 var9 = _closure1_slot10;
-                var7 = 34;
-                var7 = var35[var7];
+                var7 = 45;
+                var7 = var33[var7];
                 var8 = var22.bind(var3)(var7);
                 var7 = {};
-                var40 = var14.profileContent;
-                var39 = new Array(2);
-                var39[0] = var40;
-                var40 = {};
-                var40.paddingTop = var41;
-                var39[1] = var40;
-                var7.containerStyle = var39;
-                var7.primaryColor = var12;
-                var7.secondaryColor = var11;
+                var39 = var20.profileContent;
+                var38 = new Array(2);
+                var38[0] = var39;
+                var39 = {};
+                var39.paddingTop = var40;
+                var38[1] = var39;
+                var7.containerStyle = var38;
+                var7.primaryColor = var14;
+                var7.secondaryColor = var13;
                 var7.fallbackBackground = var10;
-                var12 = _closure1_slot8;
-                var11 = _closure1_slot11;
+                var14 = _closure1_slot8;
+                var13 = _closure1_slot11;
                 var10 = {};
-                var10.user = var19;
-                var10.backgroundColor = var13;
-                var13 = {};
-                var13.backgroundColor = var38;
-                var10.statusStyle = var13;
-                var11 = var12.bind(var3)(var11, var10);
+                var10.user = var32;
+                var10.backgroundColor = var17;
+                var17 = {};
+                var17.backgroundColor = var37;
+                var10.statusStyle = var17;
+                var13 = var14.bind(var3)(var13, var10);
                 var10 = new Array(4);
-                var10[0] = var11;
-                var13 = _closure1_slot8;
-                var11 = 35;
-                var11 = var35[var11];
-                var12 = var22.bind(var3)(var11);
-                var11 = {};
-                var11.ref = var37;
-                var11.customStatusActivity = var30;
-                var11.hasCustomProfileTheme = var26;
-                var30 = var14.customStatusBubble;
-                var11.style = var30;
-                var30 = var14.emojiOnlyCustomStatusBubble;
-                var11.emojiOnlyStyle = var30;
-                var30 = true;
-                var11.editEnabled = var30;
-                var11.placeholderText = var29;
-                var11.prompt = var21;
-                var11 = var13.bind(var3)(var12, var11);
-                var10[1] = var11;
-                var13 = _closure1_slot10;
-                var12 = _closure1_slot5;
-                var11 = {};
-                var21 = var14.primaryInfo;
-                var11.style = var21;
-                var29 = _closure1_slot8;
-                var21 = 36;
-                var21 = var35[var21];
-                var22 = var22.bind(var3)(var21);
-                var21 = {};
-                var21.user = var19;
-                var35 = var34 == var24;
-                var34 = undefined;
-                if (var35) {
-                    _fun103819_ip = 929;
-                    continue _fun103819
-                }
-            case 923:
-                var34 = var24.pronouns;
-            case 929:
-                var21.pronouns = var34;
-                var21.badges = var33;
-                var21.badgeContainerBackground = var32;
-                var21.onPressDisplayName = var25;
-                var35 = _closure1_slot0;
-                var25 = _closure1_slot2;
-                var32 = 18;
-                var33 = var25[var32];
-                var33 = var35.bind(var3)(var33);
-                var37 = var33.intl;
-                var34 = var37.string;
-                var33 = var25[var32];
-                var33 = var35.bind(var3)(var33);
-                var33 = var33.t;
-                var33 = var33["0DPAZH"];
-                var38 = var34.bind(var37)(var33);
-                var33 = 37;
-                var33 = var25[var33];
-                var34 = var35.bind(var3)(var33);
-                var33 = var34.getStatusLabel;
-                var44 = var33.bind(var34)(var36);
-                var33 = var25[var32];
-                var33 = var35.bind(var3)(var33);
-                var34 = var33.intl;
-                var33 = var34.string;
-                var32 = var25[var32];
-                var32 = var35.bind(var3)(var32);
-                var32 = var32.t;
-                var32 = var32.C6COaT;
-                var42 = var33.bind(var34)(var32);
-                var32 = global;
-                var32 = var32.HermesInternal;
-                var35 = var32.concat;
-                var47 = '';
-                var45 = ': ';
-                var43 = '. ';
-                var46 = var38;
-                var32 = var47[var35](var46, var45, var44, var43, var42, var41);
-                var21.displayNameAccessibilityHint = var32;
-                var32 = _closure1_slot6;
-                var32 = var32.YOU_SCREEN;
-                var21.themeType = var32;
-                var21.showChevron = var30;
-                var22 = var29.bind(var3)(var22, var21);
-                var21 = new Array(2);
-                var21[0] = var22;
-                var30 = _closure1_slot8;
-                var29 = _closure1_slot12;
-                var22 = {};
-                var22.navigateToProfileCustomization = var31;
-                var22 = var30.bind(var3)(var29, var22);
-                var21[1] = var22;
-                var11.children = var21;
-                var11 = var13.bind(var3)(var12, var11);
-                var10[2] = var11;
-                var13 = _closure1_slot10;
-                var12 = _closure1_slot5;
-                var11 = {};
-                var14 = var14.cards;
-                var11.style = var14;
-                var22 = _closure1_slot8;
-                var21 = _closure1_slot1;
-                var14 = 38;
-                var14 = var25[var14];
-                var21 = var21.bind(var3)(var14);
-                var14 = {};
-                var14.navigateToPremium = var28;
-                var14.style = var18;
-                var21 = var22.bind(var3)(var21, var14);
-                var14 = new Array(11);
-                var14[0] = var21;
-                var20 = !var20;
-                if (!var20) {
-                    _fun103819_ip = 1303;
-                    continue _fun103819
-                }
-            case 1256:
-                var25 = _closure1_slot8;
-                var22 = _closure1_slot1;
-                var29 = _closure1_slot2;
-                var21 = 39;
-                var21 = var29[var21];
-                var22 = var22.bind(var3)(var21);
-                var21 = {};
-                var21.navigateToPremium = var28;
-                var21.navigateToShop = var27;
-                var21.hasCustomProfileTheme = var26;
-                var20 = var25.bind(var3)(var22, var21);
-            case 1303:
-                var14[1] = var20;
-                if (!var17) {
-                    _fun103819_ip = 1346;
-                    continue _fun103819
-                }
-            case 1310:
-                var22 = _closure1_slot8;
-                var21 = _closure1_slot1;
-                var25 = _closure1_slot2;
-                var20 = 40;
-                var20 = var25[var20];
-                var21 = var21.bind(var3)(var20);
-                var20 = {};
-                var20.style = var18;
-                var17 = var22.bind(var3)(var21, var20);
-            case 1346:
-                var14[2] = var17;
-                if (!var16) {
-                    _fun103819_ip = 1389;
-                    continue _fun103819
-                }
-            case 1353:
-                var21 = _closure1_slot8;
-                var20 = _closure1_slot1;
-                var22 = _closure1_slot2;
-                var17 = 41;
-                var17 = var22[var17];
-                var20 = var20.bind(var3)(var17);
-                var17 = {};
-                var17.style = var18;
-                var16 = var21.bind(var3)(var20, var17);
-            case 1389:
-                var14[3] = var16;
-                var22 = _closure1_slot8;
-                var16 = _closure1_slot1;
-                var20 = _closure1_slot2;
-                var17 = 42;
-                var17 = var20[var17];
-                var21 = var16.bind(var3)(var17);
-                var17 = {};
-                var17.user = var19;
-                var17.currentUser = var19;
-                var17.style = var18;
-                var17 = var22.bind(var3)(var21, var17);
-                var14[4] = var17;
-                var22 = _closure1_slot8;
-                var17 = 43;
-                var17 = var20[var17];
-                var21 = var16.bind(var3)(var17);
-                var17 = {};
-                var25 = var19.id;
-                var17.userId = var25;
-                var17.displayProfile = var24;
-                var17.style = var18;
-                var17 = var22.bind(var3)(var21, var17);
-                var14[5] = var17;
-                var25 = _closure1_slot8;
-                var21 = _closure1_slot0;
-                var17 = 44;
-                var22 = var20[var17];
-                var22 = var21.bind(var3)(var22);
-                var24 = var22.UserProfileAccountConnectionsCard;
-                var22 = {};
-                var26 = var19.id;
-                var22.userId = var26;
-                var22.style = var18;
-                var22 = var25.bind(var3)(var24, var22);
-                var14[6] = var22;
-                var25 = _closure1_slot8;
-                var22 = var20[var17];
-                var22 = var21.bind(var3)(var22);
-                var24 = var22.UserProfileApplicationRoleConnectionsCard;
-                var22 = {};
-                var26 = var19.id;
-                var22.userId = var26;
-                var22.style = var18;
-                var22 = var25.bind(var3)(var24, var22);
-                var14[7] = var22;
-                var22 = _closure1_slot8;
-                var17 = var20[var17];
-                var17 = var21.bind(var3)(var17);
-                var21 = var17.UserProfileApplicationRoleConnectionsCard;
-                var17 = {};
-                var24 = var19.id;
-                var17.userId = var24;
-                var17.style = var18;
-                var17 = var22.bind(var3)(var21, var17);
-                var14[8] = var17;
-                var22 = _closure1_slot8;
-                var17 = 45;
-                var17 = var20[var17];
-                var21 = var16.bind(var3)(var17);
-                var17 = {};
-                var24 = var19.id;
-                var17.userId = var24;
-                var17.navigateToFriends = var23;
-                var17.style = var18;
-                var17 = var22.bind(var3)(var21, var17);
-                var14[9] = var17;
+                var10[0] = var13;
                 var17 = _closure1_slot8;
-                var15 = 46;
-                var15 = var20[var15];
-                var16 = var16.bind(var3)(var15);
+                var13 = 46;
+                var13 = var33[var13];
+                var14 = var22.bind(var3)(var13);
+                var13 = {};
+                var13.ref = var36;
+                var13.customStatusActivity = var35;
+                var13.hasCustomProfileTheme = var24;
+                var24 = var20.customStatusBubble;
+                var13.style = var24;
+                var24 = var20.emojiOnlyCustomStatusBubble;
+                var13.emojiOnlyStyle = var24;
+                var24 = true;
+                var13.editEnabled = var24;
+                var13.placeholderText = var34;
+                var13.prompt = var23;
+                var13 = var17.bind(var3)(var14, var13);
+                var10[1] = var13;
+                var17 = _closure1_slot10;
+                var14 = _closure1_slot5;
+                var13 = {};
+                var20 = var20.primaryInfo;
+                var13.style = var20;
+                var23 = _closure1_slot8;
+                var20 = 47;
+                var20 = var33[var20];
+                var22 = var22.bind(var3)(var20);
+                var20 = {};
+                var20.user = var32;
+                var32 = var29 == var30;
+                var29 = undefined;
+                if (var32) {
+                    _fun104075_ip = 1247;
+                    continue _fun104075
+                }
+            case 1241:
+                var29 = var30.pronouns;
+            case 1247:
+                var20.pronouns = var29;
+                var20.badges = var28;
+                var20.badgeContainerBackground = var27;
+                var20.onPressDisplayName = var26;
+                var29 = _closure1_slot0;
+                var30 = _closure1_slot2;
+                var26 = 18;
+                var27 = var30[var26];
+                var27 = var29.bind(var3)(var27);
+                var32 = var27.intl;
+                var28 = var32.string;
+                var27 = var30[var26];
+                var27 = var29.bind(var3)(var27);
+                var27 = var27.t;
+                var27 = var27["0DPAZH"];
+                var32 = var28.bind(var32)(var27);
+                var27 = 48;
+                var27 = var30[var27];
+                var28 = var29.bind(var3)(var27);
+                var27 = var28.getStatusLabel;
+                var43 = var27.bind(var28)(var31);
+                var27 = var30[var26];
+                var27 = var29.bind(var3)(var27);
+                var28 = var27.intl;
+                var27 = var28.string;
+                var26 = var30[var26];
+                var26 = var29.bind(var3)(var26);
+                var26 = var26.t;
+                var26 = var26.C6COaT;
+                var41 = var27.bind(var28)(var26);
+                var26 = global;
+                var26 = var26.HermesInternal;
+                var29 = var26.concat;
+                var46 = '';
+                var44 = ': ';
+                var42 = '. ';
+                var45 = var32;
+                var26 = var46[var29](var45, var44, var43, var42, var41, var40);
+                var20.displayNameAccessibilityHint = var26;
+                var26 = _closure1_slot6;
+                var26 = var26.YOU_SCREEN;
+                var20.themeType = var26;
+                var20.showChevron = var24;
+                var22 = var23.bind(var3)(var22, var20);
+                var20 = new Array(2);
+                var20[0] = var22;
+                var24 = _closure1_slot8;
+                var23 = _closure1_slot12;
+                var22 = {};
+                var22.navigateToProfileCustomization = var25;
+                var22 = var24.bind(var3)(var23, var22);
+                var20[1] = var22;
+                var13.children = var20;
+                var13 = var17.bind(var3)(var14, var13);
+                var10[2] = var13;
+                if (var12) {
+                    _fun104075_ip = 1515;
+                    continue _fun104075
+                }
+            case 1506:
+                var11 = var11.bind(var3)();
+                _fun104075_ip = 1687;
+                continue _fun104075;
+            case 1515:
+                var14 = _closure1_slot10;
+                var13 = _closure1_slot5;
+                var12 = {};
+                var17 = {};
+                var17.flex = var18;
+                var12.style = var17;
+                var12.onLayout = var15;
+                var18 = _closure1_slot8;
                 var15 = {};
-                var19 = var19.id;
-                var15.userId = var19;
-                var15.style = var18;
-                var15 = var17.bind(var3)(var16, var15);
-                var14[10] = var15;
-                var11.children = var14;
-                var11 = var13.bind(var3)(var12, var11);
+                var17 = {};
+                var22 = _closure1_slot1;
+                var20 = _closure1_slot2;
+                var21 = var20[var21];
+                var21 = var22.bind(var3)(var21);
+                var21 = var21.spacing;
+                var21 = var21.PX_16;
+                var17.marginBottom = var21;
+                var15.style = var17;
+                var23 = _closure1_slot8;
+                var17 = _closure1_slot0;
+                var21 = 49;
+                var21 = var20[var21];
+                var21 = var17.bind(var3)(var21);
+                var22 = var21.Tabs;
+                var21 = {};
+                var21.state = var19;
+                var21 = var23.bind(var3)(var22, var21);
+                var15.children = var21;
+                var18 = var18.bind(var3)(var13, var15);
+                var15 = new Array(2);
+                var15[0] = var18;
+                var18 = _closure1_slot8;
+                var16 = 50;
+                var16 = var20[var16];
+                var16 = var17.bind(var3)(var16);
+                var17 = var16.SegmentedControlPages;
+                var16 = {};
+                var16.state = var19;
+                var16 = var18.bind(var3)(var17, var16);
+                var15[1] = var16;
+                var12.children = var15;
+                var11 = var14.bind(var3)(var13, var12);
+            case 1687:
                 var10[3] = var11;
                 var7.children = var10;
                 var7 = var9.bind(var3)(var8, var7);
@@ -782,4 +996,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 6918, 1369, 33, 13516, 13450, 6927, 6921, 6931, 3940, 5915, 1358, 7769, 4037, 7473, 671, 1234, 13522, 6911, 5625, 6923, 1348, 6919, 6922, 6943, 3303, 6804, 13523, 1470, 6944, 3677, 5161, 6928, 6930, 7326, 7835, 13524, 11974, 11218, 13526, 7787, 7554, 11976, 13527, 11945, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 6921, 1369, 33, 13541, 13475, 6930, 6924, 6934, 3946, 5918, 1358, 7772, 4043, 7476, 671, 1234, 13547, 6914, 5628, 6926, 1348, 6922, 6925, 6946, 3303, 6807, 13548, 13549, 1470, 6947, 13550, 11996, 11224, 13552, 7790, 7557, 11998, 13553, 11967, 7758, 3679, 5167, 6931, 6933, 7329, 7838, 7764, 7766, 2]);

@@ -50,14 +50,14 @@ public class AspectRatioTextView extends AppCompatTextView {
         if (paint != null) {
             paint.setColor(i10);
         }
-        setTextColor(new ColorStateList(new int[][]{new int[]{16842913}, new int[]{0}}, new int[]{i10, a.c(getContext(), nq.a.f42070j)}));
+        setTextColor(new ColorStateList(new int[][]{new int[]{16842913}, new int[]{0}}, new int[]{i10, a.c(getContext(), nq.a.f42086j)}));
     }
 
     private void h(TypedArray typedArray) {
         setGravity(1);
-        this.f20960q = typedArray.getString(h.f42122b);
-        this.f20961r = typedArray.getFloat(h.f42123c, 0.0f);
-        float f10 = typedArray.getFloat(h.f42124d, 0.0f);
+        this.f20960q = typedArray.getString(h.f42138b);
+        this.f20961r = typedArray.getFloat(h.f42139c, 0.0f);
+        float f10 = typedArray.getFloat(h.f42140d, 0.0f);
         this.f20962s = f10;
         float f11 = this.f20961r;
         if (f11 != 0.0f && f10 != 0.0f) {
@@ -65,12 +65,12 @@ public class AspectRatioTextView extends AppCompatTextView {
         } else {
             this.f20959p = 0.0f;
         }
-        this.f20958o = getContext().getResources().getDimensionPixelSize(b.f42081i);
+        this.f20958o = getContext().getResources().getDimensionPixelSize(b.f42097i);
         Paint paint = new Paint(1);
         this.f20957i = paint;
         paint.setStyle(Paint.Style.FILL);
         i();
-        f(getResources().getColor(nq.a.f42071k));
+        f(getResources().getColor(nq.a.f42087k));
         typedArray.recycle();
     }
 
@@ -135,6 +135,6 @@ public class AspectRatioTextView extends AppCompatTextView {
         super(context, attributeSet, i10);
         this.f20955d = 1.5f;
         this.f20956e = new Rect();
-        h(context.obtainStyledAttributes(attributeSet, h.f42121a));
+        h(context.obtainStyledAttributes(attributeSet, h.f42137a));
     }
 }

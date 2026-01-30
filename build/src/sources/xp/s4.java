@@ -8,27 +8,27 @@ import xp.x3;
 final class s4 extends PasswordTransformationMethod {
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f53711d;
+    private final String f53727d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     private static final class a implements CharSequence {
 
         /* renamed from: d  reason: collision with root package name */
-        private final String f53712d;
+        private final String f53728d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final CharSequence f53713e;
+        private final CharSequence f53729e;
 
         public a(String mask, CharSequence source) {
             Intrinsics.checkNotNullParameter(mask, "mask");
             Intrinsics.checkNotNullParameter(source, "source");
-            this.f53712d = mask;
-            this.f53713e = source;
+            this.f53728d = mask;
+            this.f53729e = source;
         }
 
         public char a(int i10) {
-            if (i10 < this.f53712d.length()) {
-                x3 a10 = x3.f53759a.a(this.f53712d.charAt(i10));
+            if (i10 < this.f53728d.length()) {
+                x3 a10 = x3.f53775a.a(this.f53728d.charAt(i10));
                 if (a10 instanceof x3.e) {
                     return ((x3.e) a10).b();
                 }
@@ -37,7 +37,7 @@ final class s4 extends PasswordTransformationMethod {
         }
 
         public int b() {
-            return this.f53713e.length();
+            return this.f53729e.length();
         }
 
         @Override // java.lang.CharSequence
@@ -52,13 +52,13 @@ final class s4 extends PasswordTransformationMethod {
 
         @Override // java.lang.CharSequence
         public CharSequence subSequence(int i10, int i11) {
-            return this.f53713e.subSequence(i10, i11);
+            return this.f53729e.subSequence(i10, i11);
         }
     }
 
     public s4(String mask) {
         Intrinsics.checkNotNullParameter(mask, "mask");
-        this.f53711d = mask;
+        this.f53727d = mask;
     }
 
     @Override // android.text.method.PasswordTransformationMethod, android.text.method.TransformationMethod
@@ -66,6 +66,6 @@ final class s4 extends PasswordTransformationMethod {
         if (charSequence == null) {
             return "";
         }
-        return new a(this.f53711d, charSequence);
+        return new a(this.f53727d, charSequence);
     }
 }

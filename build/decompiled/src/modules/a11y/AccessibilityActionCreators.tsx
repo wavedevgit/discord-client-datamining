@@ -59,13 +59,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setFontSize = var3;
     var3 = function() { // Original name: setMessageGroupSpacing, environment: var1
-        _fun84721: for (var _fun84721_ip = 0;;) switch (_fun84721_ip) {
+        _fun84767: for (var _fun84767_ip = 0;;) switch (_fun84767_ip) {
             case 0:
                 var4 = arguments[0];
                 var0 = undefined;
                 if (!(var4 === var0)) {
-                    _fun84721_ip = 11;
-                    continue _fun84721
+                    _fun84767_ip = 11;
+                    continue _fun84767
                 }
             case 9:
                 var4 = null;
@@ -311,7 +311,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setSaturation = var3;
     var3 = function(arg0) { // Original name: setPrefersReducedMotion, environment: var1
-        _fun84735: for (var _fun84735_ip = 0;;) switch (_fun84735_ip) {
+        _fun84781: for (var _fun84781_ip = 0;;) switch (_fun84781_ip) {
             case 0:
                 var3 = _closure1_slot2;
                 var2 = var3.useReducedMotion;
@@ -330,13 +330,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var5.bind(var6)(var4);
                 var3 = var3.useReducedMotion;
                 if (var2) {
-                    _fun84735_ip = 192;
-                    continue _fun84735
+                    _fun84781_ip = 192;
+                    continue _fun84781
                 }
             case 72:
                 if (!var3) {
-                    _fun84735_ip = 192;
-                    continue _fun84735
+                    _fun84781_ip = 192;
+                    continue _fun84781
                 }
             case 75:
                 var5 = _closure1_slot0;
@@ -366,19 +366,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7.reasonKey = var8;
                 var4.animateStickers = var7;
                 var4 = var5.bind(var6)(var4);
-                _fun84735_ip = 246;
-                continue _fun84735;
+                _fun84781_ip = 246;
+                continue _fun84781;
             case 192:
                 if (!var2) {
-                    _fun84735_ip = 198;
-                    continue _fun84735
+                    _fun84781_ip = 198;
+                    continue _fun84781
                 }
             case 195:
                 var2 = !var3;
             case 198:
                 if (!var2) {
-                    _fun84735_ip = 246;
-                    continue _fun84735
+                    _fun84781_ip = 246;
+                    continue _fun84781
                 }
             case 201:
                 var2 = _closure1_slot0;
@@ -625,4 +625,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.setHDRDynamicRange = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1298, 660, 1351, 1352, 806, 795, 7584, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1298, 660, 1351, 1352, 806, 795, 7587, 2]);

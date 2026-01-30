@@ -9,19 +9,19 @@ import x.y0;
 public class s0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final a f47762a;
+    private final a f47778a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final u.n f47763b;
+    private final u.n f47779b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Map f47764c = new HashMap();
+    private final Map f47780c = new HashMap();
 
     /* renamed from: d  reason: collision with root package name */
-    private final Map f47765d = new HashMap();
+    private final Map f47781d = new HashMap();
 
     /* renamed from: e  reason: collision with root package name */
-    private final Map f47766e = new HashMap();
+    private final Map f47782e = new HashMap();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     interface a {
@@ -35,8 +35,8 @@ public class s0 {
     }
 
     private s0(StreamConfigurationMap streamConfigurationMap, u.n nVar) {
-        this.f47762a = new t0(streamConfigurationMap);
-        this.f47763b = nVar;
+        this.f47778a = new t0(streamConfigurationMap);
+        this.f47779b = nVar;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -45,17 +45,17 @@ public class s0 {
     }
 
     public Size[] a(int i10) {
-        if (this.f47765d.containsKey(Integer.valueOf(i10))) {
-            if (((Size[]) this.f47765d.get(Integer.valueOf(i10))) == null) {
+        if (this.f47781d.containsKey(Integer.valueOf(i10))) {
+            if (((Size[]) this.f47781d.get(Integer.valueOf(i10))) == null) {
                 return null;
             }
-            return (Size[]) ((Size[]) this.f47765d.get(Integer.valueOf(i10))).clone();
+            return (Size[]) ((Size[]) this.f47781d.get(Integer.valueOf(i10))).clone();
         }
-        Size[] d10 = this.f47762a.d(i10);
+        Size[] d10 = this.f47778a.d(i10);
         if (d10 != null && d10.length > 0) {
-            d10 = this.f47763b.b(d10, i10);
+            d10 = this.f47779b.b(d10, i10);
         }
-        this.f47765d.put(Integer.valueOf(i10), d10);
+        this.f47781d.put(Integer.valueOf(i10), d10);
         if (d10 == null) {
             return null;
         }
@@ -63,7 +63,7 @@ public class s0 {
     }
 
     public int[] b() {
-        int[] c10 = this.f47762a.c();
+        int[] c10 = this.f47778a.c();
         if (c10 == null) {
             return null;
         }
@@ -71,16 +71,16 @@ public class s0 {
     }
 
     public Size[] c(int i10) {
-        if (this.f47764c.containsKey(Integer.valueOf(i10))) {
-            if (((Size[]) this.f47764c.get(Integer.valueOf(i10))) == null) {
+        if (this.f47780c.containsKey(Integer.valueOf(i10))) {
+            if (((Size[]) this.f47780c.get(Integer.valueOf(i10))) == null) {
                 return null;
             }
-            return (Size[]) ((Size[]) this.f47764c.get(Integer.valueOf(i10))).clone();
+            return (Size[]) ((Size[]) this.f47780c.get(Integer.valueOf(i10))).clone();
         }
-        Size[] b10 = this.f47762a.b(i10);
+        Size[] b10 = this.f47778a.b(i10);
         if (b10 != null && b10.length != 0) {
-            Size[] b11 = this.f47763b.b(b10, i10);
-            this.f47764c.put(Integer.valueOf(i10), b11);
+            Size[] b11 = this.f47779b.b(b10, i10);
+            this.f47780c.put(Integer.valueOf(i10), b11);
             return (Size[]) b11.clone();
         }
         y0.l("StreamConfigurationMapCompat", "Retrieved output sizes array is null or empty for format " + i10);
@@ -88,6 +88,6 @@ public class s0 {
     }
 
     public StreamConfigurationMap d() {
-        return this.f47762a.a();
+        return this.f47778a.a();
     }
 }

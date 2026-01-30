@@ -58,7 +58,7 @@ public class y extends LinearLayout {
         setVisibility(8);
         setOrientation(0);
         setLayoutParams(new FrameLayout.LayoutParams(-2, -1, 8388611));
-        CheckableImageButton checkableImageButton = (CheckableImageButton) LayoutInflater.from(getContext()).inflate(yg.h.f54457f, (ViewGroup) this, false);
+        CheckableImageButton checkableImageButton = (CheckableImageButton) LayoutInflater.from(getContext()).inflate(yg.h.f54473f, (ViewGroup) this, false);
         this.f16578o = checkableImageButton;
         t.e(checkableImageButton);
         AppCompatTextView appCompatTextView = new AppCompatTextView(getContext());

@@ -108,7 +108,7 @@ public final class DeviceAccessibilityModule extends NativeDeviceAccessibilityMo
             View findViewByReactTag = FindViewByReactTagKt.findViewByReactTag(reactApplicationContext, (int) d10, new DeviceAccessibilityModule$setAccessibilityFocus$1$1(promise));
             if (findViewByReactTag != null) {
                 findViewByReactTag.sendAccessibilityEvent(8);
-                Unit unit = Unit.f33282a;
+                Unit unit = Unit.f33298a;
                 promise.resolve("");
                 return;
             }
@@ -122,7 +122,7 @@ public final class DeviceAccessibilityModule extends NativeDeviceAccessibilityMo
                 View findViewByReactTag2 = FindViewByReactTagKt.findViewByReactTag(reactApplicationContext2, (int) d10, new DeviceAccessibilityModule$setAccessibilityFocus$1$1(promise));
                 if (findViewByReactTag2 != null) {
                     findViewByReactTag2.sendAccessibilityEvent(8);
-                    Unit unit2 = Unit.f33282a;
+                    Unit unit2 = Unit.f33298a;
                     promise.resolve("");
                 }
             }

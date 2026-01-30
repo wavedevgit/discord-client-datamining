@@ -9,25 +9,25 @@ import kotlin.jvm.internal.Intrinsics;
 public final class s {
 
     /* renamed from: g  reason: collision with root package name */
-    public static final a f29576g = new a(null);
+    public static final a f29592g = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f29577a;
+    private final int f29593a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f29578b;
+    private final int f29594b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final float f29579c;
+    private final float f29595c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final float f29580d;
+    private final float f29596d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f29581e;
+    private final int f29597e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final int f29582f;
+    private final int f29598f;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -59,32 +59,32 @@ public final class s {
     }
 
     public s(int i10, int i11, float f10, float f11, int i12, int i13) {
-        this.f29577a = i10;
-        this.f29578b = i11;
-        this.f29579c = f10;
-        this.f29580d = f11;
-        this.f29581e = i12;
-        this.f29582f = i13;
+        this.f29593a = i10;
+        this.f29594b = i11;
+        this.f29595c = f10;
+        this.f29596d = f11;
+        this.f29597e = i12;
+        this.f29598f = i13;
     }
 
     public final int a() {
-        return this.f29582f;
+        return this.f29598f;
     }
 
     public final int b() {
-        return this.f29581e;
+        return this.f29597e;
     }
 
     public final int c() {
-        return this.f29578b;
+        return this.f29594b;
     }
 
     public final int d() {
-        return this.f29577a;
+        return this.f29593a;
     }
 
     public final float e() {
-        return this.f29579c;
+        return this.f29595c;
     }
 
     public boolean equals(Object obj) {
@@ -93,20 +93,20 @@ public final class s {
         }
         if (obj instanceof s) {
             s sVar = (s) obj;
-            return this.f29577a == sVar.f29577a && this.f29578b == sVar.f29578b && Float.compare(this.f29579c, sVar.f29579c) == 0 && Float.compare(this.f29580d, sVar.f29580d) == 0 && this.f29581e == sVar.f29581e && this.f29582f == sVar.f29582f;
+            return this.f29593a == sVar.f29593a && this.f29594b == sVar.f29594b && Float.compare(this.f29595c, sVar.f29595c) == 0 && Float.compare(this.f29596d, sVar.f29596d) == 0 && this.f29597e == sVar.f29597e && this.f29598f == sVar.f29598f;
         }
         return false;
     }
 
     public final float f() {
-        return this.f29580d;
+        return this.f29596d;
     }
 
     public int hashCode() {
-        return (((((((((Integer.hashCode(this.f29577a) * 31) + Integer.hashCode(this.f29578b)) * 31) + Float.hashCode(this.f29579c)) * 31) + Float.hashCode(this.f29580d)) * 31) + Integer.hashCode(this.f29581e)) * 31) + Integer.hashCode(this.f29582f);
+        return (((((((((Integer.hashCode(this.f29593a) * 31) + Integer.hashCode(this.f29594b)) * 31) + Float.hashCode(this.f29595c)) * 31) + Float.hashCode(this.f29596d)) * 31) + Integer.hashCode(this.f29597e)) * 31) + Integer.hashCode(this.f29598f);
     }
 
     public String toString() {
-        return "ScreenshotRecorderConfig(recordingWidth=" + this.f29577a + ", recordingHeight=" + this.f29578b + ", scaleFactorX=" + this.f29579c + ", scaleFactorY=" + this.f29580d + ", frameRate=" + this.f29581e + ", bitRate=" + this.f29582f + ')';
+        return "ScreenshotRecorderConfig(recordingWidth=" + this.f29593a + ", recordingHeight=" + this.f29594b + ", scaleFactorX=" + this.f29595c + ", scaleFactorY=" + this.f29596d + ", frameRate=" + this.f29597e + ", bitRate=" + this.f29598f + ')';
     }
 }

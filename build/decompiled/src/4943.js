@@ -15,7 +15,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = require;
     var0 = undefined;
     var1 = var1.bind(var0)(var3);
-    var1 = var1.findNodeHandle;
-    var2.default = var1;
+    var1 = var1.customDirectEventTypes;
+    var2.customDirectEventTypes = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [43]);

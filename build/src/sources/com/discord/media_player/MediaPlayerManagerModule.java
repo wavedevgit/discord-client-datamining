@@ -99,7 +99,7 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit changeProgress$lambda$1(double d10, SimpleExoPlayer player) {
         Intrinsics.checkNotNullParameter(player, "player");
-        Duration.a aVar = Duration.f36281e;
+        Duration.a aVar = Duration.f36297e;
         long t10 = Duration.t(kotlin.time.b.r(d10, es.b.f24009p));
         long duration = player.getDuration();
         if (duration > 0 && t10 >= 0 && t10 <= duration) {
@@ -113,7 +113,7 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
             Log log2 = Log.INSTANCE;
             Log.w$default(log2, NAME, "Invalid seek attempt: position=" + t10 + ", duration=" + duration, (Throwable) null, 4, (Object) null);
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -140,7 +140,7 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
             double doubleValue = portal.doubleValue();
             ReactEvents reactEvents2 = this.reactEvents;
             ReactApplicationContext reactApplicationContext2 = this.reactContext;
-            Duration.a aVar = Duration.f36281e;
+            Duration.a aVar = Duration.f36297e;
             es.b bVar = es.b.f24008o;
             long t10 = kotlin.time.b.t(j10, bVar);
             es.b bVar2 = es.b.f24009p;
@@ -156,7 +156,7 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
         } else {
             player.R(0);
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -169,7 +169,7 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
             f10 = 1.0f;
         }
         player.F0(f10);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -183,11 +183,11 @@ public final class MediaPlayerManagerModule extends ReactContextBaseJavaModule {
             }
         }
         if (player.P() == z10) {
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         player.n(z10);
         mediaPlayerManagerModule.reactEvents.emitModuleEvent(mediaPlayerManagerModule.reactContext, new MediaPlayerPause(d10, !z10));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private final void withPlayer(final double d10, final Function1<? super SimpleExoPlayer, Unit> function1) {

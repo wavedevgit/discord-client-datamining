@@ -6,16 +6,16 @@ import sa.k;
 public final class a extends RuntimeException {
 
     /* renamed from: d  reason: collision with root package name */
-    private final k f47031d;
+    private final k f47047d;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public a(String str, k encodedImage) {
         super(str);
         Intrinsics.checkNotNullParameter(encodedImage, "encodedImage");
-        this.f47031d = encodedImage;
+        this.f47047d = encodedImage;
     }
 
     public final k a() {
-        return this.f47031d;
+        return this.f47047d;
     }
 }

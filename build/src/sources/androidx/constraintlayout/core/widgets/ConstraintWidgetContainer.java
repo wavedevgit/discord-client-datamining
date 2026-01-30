@@ -106,20 +106,20 @@ public class ConstraintWidgetContainer extends k1.c {
             return false;
         }
         if (constraintWidget.V() != 8 && !(constraintWidget instanceof f) && !(constraintWidget instanceof a)) {
-            aVar.f36713a = constraintWidget.A();
-            aVar.f36714b = constraintWidget.T();
-            aVar.f36715c = constraintWidget.W();
-            aVar.f36716d = constraintWidget.x();
-            aVar.f36721i = false;
-            aVar.f36722j = i11;
-            ConstraintWidget.b bVar = aVar.f36713a;
+            aVar.f36729a = constraintWidget.A();
+            aVar.f36730b = constraintWidget.T();
+            aVar.f36731c = constraintWidget.W();
+            aVar.f36732d = constraintWidget.x();
+            aVar.f36737i = false;
+            aVar.f36738j = i11;
+            ConstraintWidget.b bVar = aVar.f36729a;
             ConstraintWidget.b bVar2 = ConstraintWidget.b.MATCH_CONSTRAINT;
             if (bVar == bVar2) {
                 z10 = true;
             } else {
                 z10 = false;
             }
-            if (aVar.f36714b == bVar2) {
+            if (aVar.f36730b == bVar2) {
                 z11 = true;
             } else {
                 z11 = false;
@@ -135,75 +135,75 @@ public class ConstraintWidgetContainer extends k1.c {
                 z13 = false;
             }
             if (z10 && constraintWidget.a0(0) && constraintWidget.f2285w == 0 && !z12) {
-                aVar.f36713a = ConstraintWidget.b.WRAP_CONTENT;
+                aVar.f36729a = ConstraintWidget.b.WRAP_CONTENT;
                 if (z11 && constraintWidget.f2287x == 0) {
-                    aVar.f36713a = ConstraintWidget.b.FIXED;
+                    aVar.f36729a = ConstraintWidget.b.FIXED;
                 }
                 z10 = false;
             }
             if (z11 && constraintWidget.a0(1) && constraintWidget.f2287x == 0 && !z13) {
-                aVar.f36714b = ConstraintWidget.b.WRAP_CONTENT;
+                aVar.f36730b = ConstraintWidget.b.WRAP_CONTENT;
                 if (z10 && constraintWidget.f2285w == 0) {
-                    aVar.f36714b = ConstraintWidget.b.FIXED;
+                    aVar.f36730b = ConstraintWidget.b.FIXED;
                 }
                 z11 = false;
             }
             if (constraintWidget.n0()) {
-                aVar.f36713a = ConstraintWidget.b.FIXED;
+                aVar.f36729a = ConstraintWidget.b.FIXED;
                 z10 = false;
             }
             if (constraintWidget.o0()) {
-                aVar.f36714b = ConstraintWidget.b.FIXED;
+                aVar.f36730b = ConstraintWidget.b.FIXED;
                 z11 = false;
             }
             if (z12) {
                 if (constraintWidget.f2289y[0] == 4) {
-                    aVar.f36713a = ConstraintWidget.b.FIXED;
+                    aVar.f36729a = ConstraintWidget.b.FIXED;
                 } else if (!z11) {
-                    ConstraintWidget.b bVar3 = aVar.f36714b;
+                    ConstraintWidget.b bVar3 = aVar.f36730b;
                     ConstraintWidget.b bVar4 = ConstraintWidget.b.FIXED;
                     if (bVar3 == bVar4) {
-                        i13 = aVar.f36716d;
+                        i13 = aVar.f36732d;
                     } else {
-                        aVar.f36713a = ConstraintWidget.b.WRAP_CONTENT;
+                        aVar.f36729a = ConstraintWidget.b.WRAP_CONTENT;
                         interfaceC0474b.b(constraintWidget, aVar);
-                        i13 = aVar.f36718f;
+                        i13 = aVar.f36734f;
                     }
-                    aVar.f36713a = bVar4;
-                    aVar.f36715c = (int) (constraintWidget.v() * i13);
+                    aVar.f36729a = bVar4;
+                    aVar.f36731c = (int) (constraintWidget.v() * i13);
                 }
             }
             if (z13) {
                 if (constraintWidget.f2289y[1] == 4) {
-                    aVar.f36714b = ConstraintWidget.b.FIXED;
+                    aVar.f36730b = ConstraintWidget.b.FIXED;
                 } else if (!z10) {
-                    ConstraintWidget.b bVar5 = aVar.f36713a;
+                    ConstraintWidget.b bVar5 = aVar.f36729a;
                     ConstraintWidget.b bVar6 = ConstraintWidget.b.FIXED;
                     if (bVar5 == bVar6) {
-                        i12 = aVar.f36715c;
+                        i12 = aVar.f36731c;
                     } else {
-                        aVar.f36714b = ConstraintWidget.b.WRAP_CONTENT;
+                        aVar.f36730b = ConstraintWidget.b.WRAP_CONTENT;
                         interfaceC0474b.b(constraintWidget, aVar);
-                        i12 = aVar.f36717e;
+                        i12 = aVar.f36733e;
                     }
-                    aVar.f36714b = bVar6;
+                    aVar.f36730b = bVar6;
                     if (constraintWidget.w() == -1) {
-                        aVar.f36716d = (int) (i12 / constraintWidget.v());
+                        aVar.f36732d = (int) (i12 / constraintWidget.v());
                     } else {
-                        aVar.f36716d = (int) (constraintWidget.v() * i12);
+                        aVar.f36732d = (int) (constraintWidget.v() * i12);
                     }
                 }
             }
             interfaceC0474b.b(constraintWidget, aVar);
-            constraintWidget.l1(aVar.f36717e);
-            constraintWidget.M0(aVar.f36718f);
-            constraintWidget.L0(aVar.f36720h);
-            constraintWidget.B0(aVar.f36719g);
-            aVar.f36722j = b.a.f36710k;
-            return aVar.f36721i;
+            constraintWidget.l1(aVar.f36733e);
+            constraintWidget.M0(aVar.f36734f);
+            constraintWidget.L0(aVar.f36736h);
+            constraintWidget.B0(aVar.f36735g);
+            aVar.f36738j = b.a.f36726k;
+            return aVar.f36737i;
         }
-        aVar.f36717e = 0;
-        aVar.f36718f = 0;
+        aVar.f36733e = 0;
+        aVar.f36734f = 0;
         return false;
     }
 
@@ -336,7 +336,7 @@ public class ConstraintWidgetContainer extends k1.c {
 
     public void Y1(int i10) {
         this.f2305g1 = i10;
-        h1.d.f27236s = V1(IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING);
+        h1.d.f27252s = V1(IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING);
     }
 
     public void Z1(int i10) {
@@ -486,7 +486,7 @@ public class ConstraintWidgetContainer extends k1.c {
                 this.f2314p1.clear();
             }
         }
-        if (h1.d.f27236s) {
+        if (h1.d.f27252s) {
             HashSet hashSet = new HashSet();
             for (int i14 = 0; i14 < size; i14++) {
                 ConstraintWidget constraintWidget4 = (ConstraintWidget) this.L0.get(i14);

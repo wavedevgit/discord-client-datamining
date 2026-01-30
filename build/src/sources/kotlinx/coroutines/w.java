@@ -7,14 +7,14 @@ import kotlin.jvm.functions.Function1;
 final class w extends z0 {
 
     /* renamed from: q  reason: collision with root package name */
-    private static final /* synthetic */ AtomicIntegerFieldUpdater f36360q = AtomicIntegerFieldUpdater.newUpdater(w.class, "_invoked$volatile");
+    private static final /* synthetic */ AtomicIntegerFieldUpdater f36376q = AtomicIntegerFieldUpdater.newUpdater(w.class, "_invoked$volatile");
     private volatile /* synthetic */ int _invoked$volatile;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Function1 f36361p;
+    private final Function1 f36377p;
 
     public w(Function1 function1) {
-        this.f36361p = function1;
+        this.f36377p = function1;
     }
 
     @Override // gs.z0
@@ -24,8 +24,8 @@ final class w extends z0 {
 
     @Override // gs.z0
     public void w(Throwable th2) {
-        if (f36360q.compareAndSet(this, 0, 1)) {
-            this.f36361p.invoke(th2);
+        if (f36376q.compareAndSet(this, 0, 1)) {
+            this.f36377p.invoke(th2);
         }
     }
 }

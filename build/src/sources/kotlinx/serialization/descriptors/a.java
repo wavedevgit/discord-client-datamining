@@ -25,64 +25,64 @@ import zs.k;
 public final class a implements SerialDescriptor, l {
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f36370a;
+    private final String f36386a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final k f36371b;
+    private final k f36387b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f36372c;
+    private final int f36388c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f36373d;
+    private final List f36389d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Set f36374e;
+    private final Set f36390e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final String[] f36375f;
+    private final String[] f36391f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final SerialDescriptor[] f36376g;
+    private final SerialDescriptor[] f36392g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final List[] f36377h;
+    private final List[] f36393h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final boolean[] f36378i;
+    private final boolean[] f36394i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final Map f36379j;
+    private final Map f36395j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final SerialDescriptor[] f36380k;
+    private final SerialDescriptor[] f36396k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final Lazy f36381l;
+    private final Lazy f36397l;
 
     public a(String serialName, k kind, int i10, List typeParameters, zs.a builder) {
         Intrinsics.checkNotNullParameter(serialName, "serialName");
         Intrinsics.checkNotNullParameter(kind, "kind");
         Intrinsics.checkNotNullParameter(typeParameters, "typeParameters");
         Intrinsics.checkNotNullParameter(builder, "builder");
-        this.f36370a = serialName;
-        this.f36371b = kind;
-        this.f36372c = i10;
-        this.f36373d = builder.c();
-        this.f36374e = CollectionsKt.f1(builder.f());
+        this.f36386a = serialName;
+        this.f36387b = kind;
+        this.f36388c = i10;
+        this.f36389d = builder.c();
+        this.f36390e = CollectionsKt.f1(builder.f());
         String[] strArr = (String[]) builder.f().toArray(new String[0]);
-        this.f36375f = strArr;
-        this.f36376g = u1.b(builder.e());
-        this.f36377h = (List[]) builder.d().toArray(new List[0]);
-        this.f36378i = CollectionsKt.c1(builder.g());
+        this.f36391f = strArr;
+        this.f36392g = u1.b(builder.e());
+        this.f36393h = (List[]) builder.d().toArray(new List[0]);
+        this.f36394i = CollectionsKt.c1(builder.g());
         Iterable<IndexedValue> g12 = i.g1(strArr);
         ArrayList arrayList = new ArrayList(CollectionsKt.w(g12, 10));
         for (IndexedValue indexedValue : g12) {
             arrayList.add(v.a(indexedValue.d(), Integer.valueOf(indexedValue.c())));
         }
-        this.f36379j = o0.u(arrayList);
-        this.f36380k = u1.b(typeParameters);
-        this.f36381l = ir.l.b(new Function0() { // from class: zs.f
+        this.f36395j = o0.u(arrayList);
+        this.f36396k = u1.b(typeParameters);
+        this.f36397l = ir.l.b(new Function0() { // from class: zs.f
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 int l10;
@@ -94,11 +94,11 @@ public final class a implements SerialDescriptor, l {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final int l(a aVar) {
-        return b2.a(aVar, aVar.f36380k);
+        return b2.a(aVar, aVar.f36396k);
     }
 
     private final int m() {
-        return ((Number) this.f36381l.getValue()).intValue();
+        return ((Number) this.f36397l.getValue()).intValue();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -108,7 +108,7 @@ public final class a implements SerialDescriptor, l {
 
     @Override // at.l
     public Set a() {
-        return this.f36374e;
+        return this.f36390e;
     }
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
@@ -119,7 +119,7 @@ public final class a implements SerialDescriptor, l {
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public int c(String name) {
         Intrinsics.checkNotNullParameter(name, "name");
-        Integer num = (Integer) this.f36379j.get(name);
+        Integer num = (Integer) this.f36395j.get(name);
         if (num != null) {
             return num.intValue();
         }
@@ -128,12 +128,12 @@ public final class a implements SerialDescriptor, l {
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public int d() {
-        return this.f36372c;
+        return this.f36388c;
     }
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public String e(int i10) {
-        return this.f36375f[i10];
+        return this.f36391f[i10];
     }
 
     public boolean equals(Object obj) {
@@ -144,7 +144,7 @@ public final class a implements SerialDescriptor, l {
             return false;
         }
         SerialDescriptor serialDescriptor = (SerialDescriptor) obj;
-        if (!Intrinsics.areEqual(h(), serialDescriptor.h()) || !Arrays.equals(this.f36380k, ((a) obj).f36380k) || d() != serialDescriptor.d()) {
+        if (!Intrinsics.areEqual(h(), serialDescriptor.h()) || !Arrays.equals(this.f36396k, ((a) obj).f36396k) || d() != serialDescriptor.d()) {
             return false;
         }
         int d10 = d();
@@ -158,27 +158,27 @@ public final class a implements SerialDescriptor, l {
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public List f(int i10) {
-        return this.f36377h[i10];
+        return this.f36393h[i10];
     }
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public SerialDescriptor g(int i10) {
-        return this.f36376g[i10];
+        return this.f36392g[i10];
     }
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public List getAnnotations() {
-        return this.f36373d;
+        return this.f36389d;
     }
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public k getKind() {
-        return this.f36371b;
+        return this.f36387b;
     }
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public String h() {
-        return this.f36370a;
+        return this.f36386a;
     }
 
     public int hashCode() {
@@ -187,7 +187,7 @@ public final class a implements SerialDescriptor, l {
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public boolean i(int i10) {
-        return this.f36378i[i10];
+        return this.f36394i[i10];
     }
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor

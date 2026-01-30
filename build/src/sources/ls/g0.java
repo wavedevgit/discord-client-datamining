@@ -3,10 +3,10 @@ package ls;
 abstract /* synthetic */ class g0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final int f37441a = Runtime.getRuntime().availableProcessors();
+    private static final int f37457a = Runtime.getRuntime().availableProcessors();
 
     public static final int a() {
-        return f37441a;
+        return f37457a;
     }
 
     public static final String b(String str) {

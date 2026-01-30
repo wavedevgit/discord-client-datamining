@@ -366,15 +366,15 @@ public final class c implements AnalyticsListener, d.a {
     }
 
     private static int j(m mVar) {
-        for (int i10 = 0; i10 < mVar.f48220o; i10++) {
-            UUID uuid = mVar.k(i10).f48222e;
-            if (uuid.equals(lc.d.f37056d)) {
+        for (int i10 = 0; i10 < mVar.f48236o; i10++) {
+            UUID uuid = mVar.k(i10).f48238e;
+            if (uuid.equals(lc.d.f37072d)) {
                 return 3;
             }
-            if (uuid.equals(lc.d.f37057e)) {
+            if (uuid.equals(lc.d.f37073e)) {
                 return 2;
             }
-            if (uuid.equals(lc.d.f37055c)) {
+            if (uuid.equals(lc.d.f37071c)) {
                 return 6;
             }
         }
@@ -413,7 +413,7 @@ public final class c implements AnalyticsListener, d.a {
                     }
                     if (th2 instanceof n.a) {
                         Throwable th3 = (Throwable) ne.a.e(th2.getCause());
-                        int i12 = w0.f40279a;
+                        int i12 = w0.f40295a;
                         if (i12 >= 21 && (th3 instanceof MediaDrm.MediaDrmStateException)) {
                             int Z = w0.Z(((MediaDrm.MediaDrmStateException) th3).getDiagnosticInfo());
                             return new a(h(Z), Z);
@@ -436,7 +436,7 @@ public final class c implements AnalyticsListener, d.a {
                         }
                     } else if ((th2 instanceof s.b) && (th2.getCause() instanceof FileNotFoundException)) {
                         Throwable cause = ((Throwable) ne.a.e(th2.getCause())).getCause();
-                        if (w0.f40279a >= 21 && (cause instanceof ErrnoException) && ((ErrnoException) cause).errno == OsConstants.EACCES) {
+                        if (w0.f40295a >= 21 && (cause instanceof ErrnoException) && ((ErrnoException) cause).errno == OsConstants.EACCES) {
                             return new a(32, 0);
                         }
                         return new a(31, 0);
@@ -489,7 +489,7 @@ public final class c implements AnalyticsListener, d.a {
             if (th2 instanceof f.e) {
                 return new a(18, ((f.e) th2).f13251d);
             }
-            if (w0.f40279a >= 16 && (th2 instanceof MediaCodec.CryptoException)) {
+            if (w0.f40295a >= 16 && (th2 instanceof MediaCodec.CryptoException)) {
                 int errorCode = ((MediaCodec.CryptoException) th2).getErrorCode();
                 return new a(h(errorCode), errorCode);
             }
@@ -701,7 +701,7 @@ public final class c implements AnalyticsListener, d.a {
         int f10;
         int i10;
         PlaybackMetrics.Builder builder = this.f13128j;
-        if (bVar == null || (f10 = timeline.f(bVar.f47284a)) == -1) {
+        if (bVar == null || (f10 = timeline.f(bVar.f47300a)) == -1) {
             return;
         }
         timeline.j(f10, this.f13124f);

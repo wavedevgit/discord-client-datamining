@@ -145,4 +145,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.PlayStationLinkPreConnect = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5816, 33, 1297, 1469, 5820, 5293, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 5819, 33, 1297, 1469, 5823, 5297, 1234, 2]);

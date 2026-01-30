@@ -21,57 +21,57 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public final class SystemEventsBreadcrumbsIntegration implements io.sentry.k1, Closeable, w0.a {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Context f28827d;
+    private final Context f28843d;
 
     /* renamed from: e  reason: collision with root package name */
-    volatile b f28828e;
+    volatile b f28844e;
 
     /* renamed from: i  reason: collision with root package name */
-    private SentryAndroidOptions f28829i;
+    private SentryAndroidOptions f28845i;
 
     /* renamed from: o  reason: collision with root package name */
-    private io.sentry.w0 f28830o;
+    private io.sentry.w0 f28846o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final String[] f28831p;
+    private final String[] f28847p;
 
     /* renamed from: q  reason: collision with root package name */
-    private volatile boolean f28832q;
+    private volatile boolean f28848q;
 
     /* renamed from: r  reason: collision with root package name */
-    private volatile boolean f28833r;
+    private volatile boolean f28849r;
 
     /* renamed from: s  reason: collision with root package name */
-    private volatile IntentFilter f28834s;
+    private volatile IntentFilter f28850s;
 
     /* renamed from: t  reason: collision with root package name */
-    private volatile HandlerThread f28835t;
+    private volatile HandlerThread f28851t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final AtomicBoolean f28836u;
+    private final AtomicBoolean f28852u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final io.sentry.util.a f28837v;
+    private final io.sentry.util.a f28853v;
 
     /* renamed from: w  reason: collision with root package name */
-    private a f28838w;
+    private a f28854w;
 
     /* renamed from: x  reason: collision with root package name */
-    Handler f28839x;
+    Handler f28855x;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Integer f28840a;
+        private final Integer f28856a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final Boolean f28841b;
+        private final Boolean f28857b;
 
         a(Integer num, Boolean bool) {
-            this.f28840a = num;
-            this.f28841b = bool;
+            this.f28856a = num;
+            this.f28857b = bool;
         }
 
         public boolean equals(Object obj) {
@@ -79,14 +79,14 @@ public final class SystemEventsBreadcrumbsIntegration implements io.sentry.k1, C
                 return false;
             }
             a aVar = (a) obj;
-            if (!io.sentry.util.y.a(this.f28840a, aVar.f28840a) || !io.sentry.util.y.a(this.f28841b, aVar.f28841b)) {
+            if (!io.sentry.util.y.a(this.f28856a, aVar.f28856a) || !io.sentry.util.y.a(this.f28857b, aVar.f28857b)) {
                 return false;
             }
             return true;
         }
 
         public int hashCode() {
-            return io.sentry.util.y.b(this.f28840a, this.f28841b);
+            return io.sentry.util.y.b(this.f28856a, this.f28857b);
         }
     }
 
@@ -95,20 +95,20 @@ public final class SystemEventsBreadcrumbsIntegration implements io.sentry.k1, C
     public final class b extends BroadcastReceiver {
 
         /* renamed from: a  reason: collision with root package name */
-        private final io.sentry.w0 f28842a;
+        private final io.sentry.w0 f28858a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final SentryAndroidOptions f28843b;
+        private final SentryAndroidOptions f28859b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final io.sentry.android.core.internal.util.n f28844c = new io.sentry.android.core.internal.util.n(io.sentry.android.core.internal.util.f.b(), LogThrottleSingleton.RATE_LIMIT_ONE_MINUTE, 0);
+        private final io.sentry.android.core.internal.util.n f28860c = new io.sentry.android.core.internal.util.n(io.sentry.android.core.internal.util.f.b(), LogThrottleSingleton.RATE_LIMIT_ONE_MINUTE, 0);
 
         /* renamed from: d  reason: collision with root package name */
-        private final char[] f28845d = new char[64];
+        private final char[] f28861d = new char[64];
 
         b(io.sentry.w0 w0Var, SentryAndroidOptions sentryAndroidOptions) {
-            this.f28842a = w0Var;
-            this.f28843b = sentryAndroidOptions;
+            this.f28858a = w0Var;
+            this.f28859b = sentryAndroidOptions;
         }
 
         private Breadcrumb a(long j10, Intent intent, String str, a aVar) {
@@ -121,13 +121,13 @@ public final class SystemEventsBreadcrumbsIntegration implements io.sentry.k1, C
                 breadcrumb.A("action", b10);
             }
             if (aVar != null) {
-                if (aVar.f28840a != null) {
-                    breadcrumb.A("level", aVar.f28840a);
+                if (aVar.f28856a != null) {
+                    breadcrumb.A("level", aVar.f28856a);
                 }
-                if (aVar.f28841b != null) {
-                    breadcrumb.A("charging", aVar.f28841b);
+                if (aVar.f28857b != null) {
+                    breadcrumb.A("charging", aVar.f28857b);
                 }
-            } else if (this.f28843b.isEnableSystemEventBreadcrumbsExtras() && (extras = intent.getExtras()) != null && !extras.isEmpty()) {
+            } else if (this.f28859b.isEnableSystemEventBreadcrumbsExtras() && (extras = intent.getExtras()) != null && !extras.isEmpty()) {
                 HashMap hashMap = new HashMap(extras.size());
                 for (String str2 : extras.keySet()) {
                     try {
@@ -136,7 +136,7 @@ public final class SystemEventsBreadcrumbsIntegration implements io.sentry.k1, C
                             hashMap.put(str2, obj.toString());
                         }
                     } catch (Throwable th2) {
-                        this.f28843b.getLogger().a(SentryLevel.ERROR, th2, "%s key of the %s action threw an error.", str2, str);
+                        this.f28859b.getLogger().a(SentryLevel.ERROR, th2, "%s key of the %s action threw an error.", str2, str);
                     }
                 }
                 breadcrumb.A("extras", hashMap);
@@ -150,17 +150,17 @@ public final class SystemEventsBreadcrumbsIntegration implements io.sentry.k1, C
                 return null;
             }
             int length = str.length();
-            int length2 = this.f28845d.length;
+            int length2 = this.f28861d.length;
             for (int i10 = length - 1; i10 >= 0; i10--) {
                 char charAt = str.charAt(i10);
                 if (charAt == '.') {
-                    char[] cArr = this.f28845d;
+                    char[] cArr = this.f28861d;
                     return new String(cArr, length2, cArr.length - length2);
                 } else if (length2 == 0) {
                     return io.sentry.util.f0.d(str);
                 } else {
                     length2--;
-                    this.f28845d[length2] = charAt;
+                    this.f28861d[length2] = charAt;
                 }
             }
             return str;
@@ -172,14 +172,14 @@ public final class SystemEventsBreadcrumbsIntegration implements io.sentry.k1, C
             String action = intent.getAction();
             Integer num = null;
             if ("android.intent.action.BATTERY_CHANGED".equals(action)) {
-                if (!this.f28844c.a()) {
-                    Float e10 = m1.e(intent, this.f28843b);
+                if (!this.f28860c.a()) {
+                    Float e10 = m1.e(intent, this.f28859b);
                     if (e10 != null) {
                         num = Integer.valueOf(e10.intValue());
                     }
-                    a aVar2 = new a(num, m1.v(intent, this.f28843b));
-                    if (!aVar2.equals(SystemEventsBreadcrumbsIntegration.this.f28838w)) {
-                        SystemEventsBreadcrumbsIntegration.this.f28838w = aVar2;
+                    a aVar2 = new a(num, m1.v(intent, this.f28859b));
+                    if (!aVar2.equals(SystemEventsBreadcrumbsIntegration.this.f28854w)) {
+                        SystemEventsBreadcrumbsIntegration.this.f28854w = aVar2;
                         aVar = aVar2;
                     } else {
                         return;
@@ -193,7 +193,7 @@ public final class SystemEventsBreadcrumbsIntegration implements io.sentry.k1, C
             Breadcrumb a10 = a(System.currentTimeMillis(), intent, action, aVar);
             Hint hint = new Hint();
             hint.k("android:intent", intent);
-            this.f28842a.g(a10, hint);
+            this.f28858a.g(a10, hint);
         }
     }
 
@@ -206,7 +206,7 @@ public final class SystemEventsBreadcrumbsIntegration implements io.sentry.k1, C
     }
 
     private void L(final io.sentry.w0 w0Var, final SentryAndroidOptions sentryAndroidOptions) {
-        if (sentryAndroidOptions.isEnableSystemEventBreadcrumbs() && !this.f28832q && !this.f28833r && this.f28828e == null) {
+        if (sentryAndroidOptions.isEnableSystemEventBreadcrumbs() && !this.f28848q && !this.f28849r && this.f28844e == null) {
             try {
                 sentryAndroidOptions.getExecutorService().submit(new Runnable() { // from class: io.sentry.android.core.r2
                     @Override // java.lang.Runnable
@@ -221,7 +221,7 @@ public final class SystemEventsBreadcrumbsIntegration implements io.sentry.k1, C
     }
 
     private void N() {
-        SentryAndroidOptions sentryAndroidOptions = this.f28829i;
+        SentryAndroidOptions sentryAndroidOptions = this.f28845i;
         if (sentryAndroidOptions == null) {
             return;
         }
@@ -239,16 +239,16 @@ public final class SystemEventsBreadcrumbsIntegration implements io.sentry.k1, C
 
     /* JADX INFO: Access modifiers changed from: private */
     public void V() {
-        io.sentry.a1 a10 = this.f28837v.a();
+        io.sentry.a1 a10 = this.f28853v.a();
         try {
-            this.f28833r = true;
-            b bVar = this.f28828e;
-            this.f28828e = null;
+            this.f28849r = true;
+            b bVar = this.f28844e;
+            this.f28844e = null;
             if (a10 != null) {
                 a10.close();
             }
             if (bVar != null) {
-                this.f28827d.unregisterReceiver(bVar);
+                this.f28843d.unregisterReceiver(bVar);
             }
         } catch (Throwable th2) {
             if (a10 != null) {
@@ -274,32 +274,32 @@ public final class SystemEventsBreadcrumbsIntegration implements io.sentry.k1, C
     */
     public static /* synthetic */ void n(io.sentry.android.core.SystemEventsBreadcrumbsIntegration r6, io.sentry.w0 r7, io.sentry.android.core.SentryAndroidOptions r8) {
         /*
-            io.sentry.util.a r0 = r6.f28837v
+            io.sentry.util.a r0 = r6.f28853v
             io.sentry.a1 r0 = r0.a()
-            boolean r1 = r6.f28832q     // Catch: java.lang.Throwable -> L37
+            boolean r1 = r6.f28848q     // Catch: java.lang.Throwable -> L37
             if (r1 != 0) goto L9b
-            boolean r1 = r6.f28833r     // Catch: java.lang.Throwable -> L37
+            boolean r1 = r6.f28849r     // Catch: java.lang.Throwable -> L37
             if (r1 != 0) goto L9b
-            io.sentry.android.core.SystemEventsBreadcrumbsIntegration$b r1 = r6.f28828e     // Catch: java.lang.Throwable -> L37
+            io.sentry.android.core.SystemEventsBreadcrumbsIntegration$b r1 = r6.f28844e     // Catch: java.lang.Throwable -> L37
             if (r1 == 0) goto L14
             goto L9b
         L14:
             io.sentry.android.core.SystemEventsBreadcrumbsIntegration$b r1 = new io.sentry.android.core.SystemEventsBreadcrumbsIntegration$b     // Catch: java.lang.Throwable -> L37
             r1.<init>(r7, r8)     // Catch: java.lang.Throwable -> L37
-            r6.f28828e = r1     // Catch: java.lang.Throwable -> L37
-            android.content.IntentFilter r7 = r6.f28834s     // Catch: java.lang.Throwable -> L37
+            r6.f28844e = r1     // Catch: java.lang.Throwable -> L37
+            android.content.IntentFilter r7 = r6.f28850s     // Catch: java.lang.Throwable -> L37
             r1 = 0
             if (r7 != 0) goto L39
             android.content.IntentFilter r7 = new android.content.IntentFilter     // Catch: java.lang.Throwable -> L37
             r7.<init>()     // Catch: java.lang.Throwable -> L37
-            r6.f28834s = r7     // Catch: java.lang.Throwable -> L37
-            java.lang.String[] r7 = r6.f28831p     // Catch: java.lang.Throwable -> L37
+            r6.f28850s = r7     // Catch: java.lang.Throwable -> L37
+            java.lang.String[] r7 = r6.f28847p     // Catch: java.lang.Throwable -> L37
             int r2 = r7.length     // Catch: java.lang.Throwable -> L37
             r3 = r1
         L2b:
             if (r3 >= r2) goto L39
             r4 = r7[r3]     // Catch: java.lang.Throwable -> L37
-            android.content.IntentFilter r5 = r6.f28834s     // Catch: java.lang.Throwable -> L37
+            android.content.IntentFilter r5 = r6.f28850s     // Catch: java.lang.Throwable -> L37
             r5.addAction(r4)     // Catch: java.lang.Throwable -> L37
             int r3 = r3 + 1
             goto L2b
@@ -307,32 +307,32 @@ public final class SystemEventsBreadcrumbsIntegration implements io.sentry.k1, C
             r6 = move-exception
             goto La1
         L39:
-            android.os.Handler r7 = r6.f28839x     // Catch: java.lang.Throwable -> L37
+            android.os.Handler r7 = r6.f28855x     // Catch: java.lang.Throwable -> L37
             if (r7 != 0) goto L51
-            android.os.HandlerThread r7 = r6.f28835t     // Catch: java.lang.Throwable -> L37
+            android.os.HandlerThread r7 = r6.f28851t     // Catch: java.lang.Throwable -> L37
             if (r7 != 0) goto L51
             android.os.HandlerThread r7 = new android.os.HandlerThread     // Catch: java.lang.Throwable -> L37
             java.lang.String r2 = "SystemEventsReceiver"
             r3 = 10
             r7.<init>(r2, r3)     // Catch: java.lang.Throwable -> L37
-            r6.f28835t = r7     // Catch: java.lang.Throwable -> L37
-            android.os.HandlerThread r7 = r6.f28835t     // Catch: java.lang.Throwable -> L37
+            r6.f28851t = r7     // Catch: java.lang.Throwable -> L37
+            android.os.HandlerThread r7 = r6.f28851t     // Catch: java.lang.Throwable -> L37
             r7.start()     // Catch: java.lang.Throwable -> L37
         L51:
-            android.os.Handler r7 = r6.f28839x     // Catch: java.lang.Throwable -> L86
+            android.os.Handler r7 = r6.f28855x     // Catch: java.lang.Throwable -> L86
             if (r7 == 0) goto L56
             goto L61
         L56:
             android.os.Handler r7 = new android.os.Handler     // Catch: java.lang.Throwable -> L86
-            android.os.HandlerThread r2 = r6.f28835t     // Catch: java.lang.Throwable -> L86
+            android.os.HandlerThread r2 = r6.f28851t     // Catch: java.lang.Throwable -> L86
             android.os.Looper r2 = r2.getLooper()     // Catch: java.lang.Throwable -> L86
             r7.<init>(r2)     // Catch: java.lang.Throwable -> L86
         L61:
-            android.content.Context r2 = r6.f28827d     // Catch: java.lang.Throwable -> L86
-            io.sentry.android.core.SystemEventsBreadcrumbsIntegration$b r3 = r6.f28828e     // Catch: java.lang.Throwable -> L86
-            android.content.IntentFilter r4 = r6.f28834s     // Catch: java.lang.Throwable -> L86
+            android.content.Context r2 = r6.f28843d     // Catch: java.lang.Throwable -> L86
+            io.sentry.android.core.SystemEventsBreadcrumbsIntegration$b r3 = r6.f28844e     // Catch: java.lang.Throwable -> L86
+            android.content.IntentFilter r4 = r6.f28850s     // Catch: java.lang.Throwable -> L86
             io.sentry.android.core.e1.t(r2, r8, r3, r4, r7)     // Catch: java.lang.Throwable -> L86
-            java.util.concurrent.atomic.AtomicBoolean r6 = r6.f28836u     // Catch: java.lang.Throwable -> L86
+            java.util.concurrent.atomic.AtomicBoolean r6 = r6.f28852u     // Catch: java.lang.Throwable -> L86
             r7 = 1
             boolean r6 = r6.getAndSet(r7)     // Catch: java.lang.Throwable -> L86
             if (r6 != 0) goto L95
@@ -375,28 +375,28 @@ public final class SystemEventsBreadcrumbsIntegration implements io.sentry.k1, C
 
     @Override // io.sentry.android.core.w0.a
     public void a() {
-        if (this.f28830o != null && this.f28829i != null) {
-            this.f28833r = false;
-            L(this.f28830o, this.f28829i);
+        if (this.f28846o != null && this.f28845i != null) {
+            this.f28849r = false;
+            L(this.f28846o, this.f28845i);
         }
     }
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        io.sentry.a1 a10 = this.f28837v.a();
+        io.sentry.a1 a10 = this.f28853v.a();
         try {
-            this.f28832q = true;
-            this.f28834s = null;
-            if (this.f28835t != null) {
-                this.f28835t.quit();
+            this.f28848q = true;
+            this.f28850s = null;
+            if (this.f28851t != null) {
+                this.f28851t.quit();
             }
-            this.f28835t = null;
+            this.f28851t = null;
             if (a10 != null) {
                 a10.close();
             }
             w0.E().N(this);
             N();
-            SentryAndroidOptions sentryAndroidOptions = this.f28829i;
+            SentryAndroidOptions sentryAndroidOptions = this.f28845i;
             if (sentryAndroidOptions != null) {
                 sentryAndroidOptions.getLogger().c(SentryLevel.DEBUG, "SystemEventsBreadcrumbsIntegration removed.", new Object[0]);
             }
@@ -422,13 +422,13 @@ public final class SystemEventsBreadcrumbsIntegration implements io.sentry.k1, C
             sentryAndroidOptions = null;
         }
         SentryAndroidOptions sentryAndroidOptions2 = (SentryAndroidOptions) io.sentry.util.y.c(sentryAndroidOptions, "SentryAndroidOptions is required");
-        this.f28829i = sentryAndroidOptions2;
-        this.f28830o = w0Var;
-        sentryAndroidOptions2.getLogger().c(SentryLevel.DEBUG, "SystemEventsBreadcrumbsIntegration enabled: %s", Boolean.valueOf(this.f28829i.isEnableSystemEventBreadcrumbs()));
-        if (this.f28829i.isEnableSystemEventBreadcrumbs()) {
+        this.f28845i = sentryAndroidOptions2;
+        this.f28846o = w0Var;
+        sentryAndroidOptions2.getLogger().c(SentryLevel.DEBUG, "SystemEventsBreadcrumbsIntegration enabled: %s", Boolean.valueOf(this.f28845i.isEnableSystemEventBreadcrumbs()));
+        if (this.f28845i.isEnableSystemEventBreadcrumbs()) {
             w0.E().n(this);
             if (e1.s()) {
-                L(this.f28830o, this.f28829i);
+                L(this.f28846o, this.f28845i);
             }
         }
     }
@@ -439,15 +439,15 @@ public final class SystemEventsBreadcrumbsIntegration implements io.sentry.k1, C
     }
 
     SystemEventsBreadcrumbsIntegration(Context context, String[] strArr, Handler handler) {
-        this.f28832q = false;
-        this.f28833r = false;
-        this.f28834s = null;
-        this.f28835t = null;
-        this.f28836u = new AtomicBoolean(false);
-        this.f28837v = new io.sentry.util.a();
-        this.f28839x = null;
-        this.f28827d = e1.g(context);
-        this.f28831p = strArr;
-        this.f28839x = handler;
+        this.f28848q = false;
+        this.f28849r = false;
+        this.f28850s = null;
+        this.f28851t = null;
+        this.f28852u = new AtomicBoolean(false);
+        this.f28853v = new io.sentry.util.a();
+        this.f28855x = null;
+        this.f28843d = e1.g(context);
+        this.f28847p = strArr;
+        this.f28855x = handler;
     }
 }

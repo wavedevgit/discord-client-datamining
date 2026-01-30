@@ -89,7 +89,7 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 a((c.a) obj);
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
         }
 
@@ -113,7 +113,7 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 a((c.a) obj);
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
         }
 
@@ -137,7 +137,7 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
             @Override // kotlin.jvm.functions.Function1
             public /* bridge */ /* synthetic */ Object invoke(Object obj) {
                 a((c.a) obj);
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
         }
 
@@ -295,7 +295,7 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((c.a) obj);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
     }
 
@@ -324,7 +324,7 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((c.a) obj);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
     }
 
@@ -362,7 +362,7 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             a((c.a) obj);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
     }
 
@@ -527,7 +527,7 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
     }
 
     public void M(float f10, float f11, float f12, boolean z10) {
-        ul.c a10 = ul.c.f50363l.a(new d(this.f18288s.u(f10), f11, f12));
+        ul.c a10 = ul.c.f50379l.a(new d(this.f18288s.u(f10), f11, f12));
         if (z10) {
             this.f18289t.f(a10);
             return;
@@ -568,7 +568,7 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
     }
 
     public void Q(float f10, float f11, boolean z10) {
-        ul.c a10 = ul.c.f50363l.a(new e(f10, f11));
+        ul.c a10 = ul.c.f50379l.a(new e(f10, f11));
         if (z10) {
             this.f18289t.f(a10);
             return;
@@ -582,7 +582,7 @@ public class ZoomEngine implements com.otaliastudios.zoom.c {
     }
 
     public void S(float f10, boolean z10) {
-        ul.c a10 = ul.c.f50363l.a(new g(f10));
+        ul.c a10 = ul.c.f50379l.a(new g(f10));
         if (z10) {
             this.f18289t.f(a10);
             return;

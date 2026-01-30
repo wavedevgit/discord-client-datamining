@@ -13,19 +13,19 @@ public final class s implements Lazy, Serializable {
     @NotNull
 
     /* renamed from: o  reason: collision with root package name */
-    public static final a f31107o = new a(null);
+    public static final a f31123o = new a(null);
 
     /* renamed from: p  reason: collision with root package name */
-    private static final AtomicReferenceFieldUpdater f31108p = AtomicReferenceFieldUpdater.newUpdater(s.class, Object.class, "e");
+    private static final AtomicReferenceFieldUpdater f31124p = AtomicReferenceFieldUpdater.newUpdater(s.class, Object.class, "e");
 
     /* renamed from: d  reason: collision with root package name */
-    private volatile Function0 f31109d;
+    private volatile Function0 f31125d;
 
     /* renamed from: e  reason: collision with root package name */
-    private volatile Object f31110e;
+    private volatile Object f31126e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final Object f31111i;
+    private final Object f31127i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -39,33 +39,33 @@ public final class s implements Lazy, Serializable {
 
     public s(Function0 initializer) {
         Intrinsics.checkNotNullParameter(initializer, "initializer");
-        this.f31109d = initializer;
-        d0 d0Var = d0.f31085a;
-        this.f31110e = d0Var;
-        this.f31111i = d0Var;
+        this.f31125d = initializer;
+        d0 d0Var = d0.f31101a;
+        this.f31126e = d0Var;
+        this.f31127i = d0Var;
     }
 
     @Override // kotlin.Lazy
     public Object getValue() {
-        Object obj = this.f31110e;
-        d0 d0Var = d0.f31085a;
+        Object obj = this.f31126e;
+        d0 d0Var = d0.f31101a;
         if (obj != d0Var) {
             return obj;
         }
-        Function0 function0 = this.f31109d;
+        Function0 function0 = this.f31125d;
         if (function0 != null) {
             Object invoke = function0.invoke();
-            if (androidx.concurrent.futures.b.a(f31108p, this, d0Var, invoke)) {
-                this.f31109d = null;
+            if (androidx.concurrent.futures.b.a(f31124p, this, d0Var, invoke)) {
+                this.f31125d = null;
                 return invoke;
             }
         }
-        return this.f31110e;
+        return this.f31126e;
     }
 
     @Override // kotlin.Lazy
     public boolean isInitialized() {
-        if (this.f31110e != d0.f31085a) {
+        if (this.f31126e != d0.f31101a) {
             return true;
         }
         return false;

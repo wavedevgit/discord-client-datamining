@@ -20,38 +20,38 @@ abstract class h {
     private static class a implements ThreadFactory {
 
         /* renamed from: a  reason: collision with root package name */
-        private String f55260a;
+        private String f55276a;
 
         /* renamed from: b  reason: collision with root package name */
-        private int f55261b;
+        private int f55277b;
 
         /* renamed from: z1.h$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         private static class C0770a extends Thread {
 
             /* renamed from: d  reason: collision with root package name */
-            private final int f55262d;
+            private final int f55278d;
 
             C0770a(Runnable runnable, String str, int i10) {
                 super(runnable, str);
-                this.f55262d = i10;
+                this.f55278d = i10;
             }
 
             @Override // java.lang.Thread, java.lang.Runnable
             public void run() {
-                Process.setThreadPriority(this.f55262d);
+                Process.setThreadPriority(this.f55278d);
                 super.run();
             }
         }
 
         a(String str, int i10) {
-            this.f55260a = str;
-            this.f55261b = i10;
+            this.f55276a = str;
+            this.f55277b = i10;
         }
 
         @Override // java.util.concurrent.ThreadFactory
         public Thread newThread(Runnable runnable) {
-            return new C0770a(runnable, this.f55260a, this.f55261b);
+            return new C0770a(runnable, this.f55276a, this.f55277b);
         }
     }
 
@@ -59,18 +59,18 @@ abstract class h {
     private static class b implements Executor {
 
         /* renamed from: d  reason: collision with root package name */
-        private final Handler f55263d;
+        private final Handler f55279d;
 
         b(Handler handler) {
-            this.f55263d = (Handler) b2.e.g(handler);
+            this.f55279d = (Handler) b2.e.g(handler);
         }
 
         @Override // java.util.concurrent.Executor
         public void execute(Runnable runnable) {
-            if (this.f55263d.post((Runnable) b2.e.g(runnable))) {
+            if (this.f55279d.post((Runnable) b2.e.g(runnable))) {
                 return;
             }
-            throw new RejectedExecutionException(this.f55263d + " is shutting down");
+            throw new RejectedExecutionException(this.f55279d + " is shutting down");
         }
     }
 
@@ -78,49 +78,49 @@ abstract class h {
     private static class c implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        private Callable f55264d;
+        private Callable f55280d;
 
         /* renamed from: e  reason: collision with root package name */
-        private Consumer f55265e;
+        private Consumer f55281e;
 
         /* renamed from: i  reason: collision with root package name */
-        private Handler f55266i;
+        private Handler f55282i;
 
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
         class a implements Runnable {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ Consumer f55267d;
+            final /* synthetic */ Consumer f55283d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ Object f55268e;
+            final /* synthetic */ Object f55284e;
 
             a(Consumer consumer, Object obj) {
-                this.f55267d = consumer;
-                this.f55268e = obj;
+                this.f55283d = consumer;
+                this.f55284e = obj;
             }
 
             @Override // java.lang.Runnable
             public void run() {
-                this.f55267d.accept(this.f55268e);
+                this.f55283d.accept(this.f55284e);
             }
         }
 
         c(Handler handler, Callable callable, Consumer consumer) {
-            this.f55264d = callable;
-            this.f55265e = consumer;
-            this.f55266i = handler;
+            this.f55280d = callable;
+            this.f55281e = consumer;
+            this.f55282i = handler;
         }
 
         @Override // java.lang.Runnable
         public void run() {
             Object obj;
             try {
-                obj = this.f55264d.call();
+                obj = this.f55280d.call();
             } catch (Exception unused) {
                 obj = null;
             }
-            this.f55266i.post(new a(this.f55265e, obj));
+            this.f55282i.post(new a(this.f55281e, obj));
         }
     }
 

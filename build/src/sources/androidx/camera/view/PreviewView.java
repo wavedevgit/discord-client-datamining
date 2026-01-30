@@ -554,11 +554,11 @@ public final class PreviewView extends FrameLayout {
         };
         this.f2054y = new a();
         b0.p.a();
-        TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(attributeSet, p0.e.f44783a, i10, i11);
-        h0.l0(this, context, p0.e.f44783a, attributeSet, obtainStyledAttributes, i10, i11);
+        TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(attributeSet, p0.e.f44799a, i10, i11);
+        h0.l0(this, context, p0.e.f44799a, attributeSet, obtainStyledAttributes, i10, i11);
         try {
-            setScaleType(d.d(obtainStyledAttributes.getInteger(p0.e.f44785c, eVar.g().e())));
-            setImplementationMode(c.d(obtainStyledAttributes.getInteger(p0.e.f44784b, cVar.e())));
+            setScaleType(d.d(obtainStyledAttributes.getInteger(p0.e.f44801c, eVar.g().e())));
+            setImplementationMode(c.d(obtainStyledAttributes.getInteger(p0.e.f44800b, cVar.e())));
             obtainStyledAttributes.recycle();
             this.f2049t = new q0.a(context, new a.b() { // from class: p0.c
             });

@@ -106,7 +106,7 @@ public final class ThemeModule extends NativeThemeModuleSpec {
             com.facebook.react.bridge.ReactApplicationContext r4 = r3.reactContext
             android.app.Activity r4 = r4.getCurrentActivity()
             if (r4 == 0) goto L5a
-            g8.oc r0 = new g8.oc
+            g8.wc r0 = new g8.wc
             r0.<init>()
             r4.runOnUiThread(r0)
         L5a:

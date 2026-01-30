@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = arg0;
         var _closure2_slot0 = var1;
         var0 = function(arg0) { // Environment: var0
-            _fun21934: for (var _fun21934_ip = 0;;) switch (_fun21934_ip) {
+            _fun21935: for (var _fun21935_ip = 0;;) switch (_fun21935_ip) {
                 case 0:
                     var2 = arg0;
                     var1 = _closure1_slot0;
@@ -17,8 +17,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = _closure2_slot0;
                     var1 = "'múlt' ";
                     if (!var0) {
-                        _fun21934_ip = 52;
-                        continue _fun21934
+                        _fun21935_ip = 52;
+                        continue _fun21935
                     }
                 case 49:
                     var1 = var4;
@@ -60,7 +60,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.nextWeek = var4;
     var _closure1_slot1 = var3;
     var2 = function(arg0, arg1) { // Original name: formatRelative, environment: var2
-        _fun21935: for (var _fun21935_ip = 0;;) switch (_fun21935_ip) {
+        _fun21936: for (var _fun21936_ip = 0;;) switch (_fun21936_ip) {
             case 0:
                 var1 = _closure1_slot1;
                 var0 = arg0;
@@ -69,8 +69,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = typeof var3;
                 var0 = var3;
                 if (!(var2 === var1)) {
-                    _fun21935_ip = 38;
-                    continue _fun21935
+                    _fun21936_ip = 38;
+                    continue _fun21936
                 }
             case 28:
                 var2 = undefined;

@@ -48,22 +48,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var5;
         var0 = function() { // Environment: var0
-            _fun67806: for (var _fun67806_ip = 0;;) switch (_fun67806_ip) {
+            _fun67851: for (var _fun67851_ip = 0;;) switch (_fun67851_ip) {
                 case 0:
                     var1 = _closure2_slot0;
                     var0 = null;
                     var0 = var0 != var1;
                     if (!var0) {
-                        _fun67806_ip = 88;
-                        continue _fun67806
+                        _fun67851_ip = 88;
+                        continue _fun67851
                     }
                 case 16:
                     var2 = _closure2_slot0;
                     var1 = var2.isPrivate;
                     var1 = var1.bind(var2)();
                     if (var1) {
-                        _fun67806_ip = 85;
-                        continue _fun67806
+                        _fun67851_ip = 85;
+                        continue _fun67851
                     }
                 case 33:
                     var6 = _closure1_slot0;
@@ -90,14 +90,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var1 = function(arg0) { // Original name: getVideoPermission, environment: var1
-        _fun67807: for (var _fun67807_ip = 0;;) switch (_fun67807_ip) {
+        _fun67852: for (var _fun67852_ip = 0;;) switch (_fun67852_ip) {
             case 0:
                 var6 = arg0;
                 var0 = var6.isPrivate;
                 var0 = var0.bind(var6)();
                 if (var0) {
-                    _fun67807_ip = 67;
-                    continue _fun67807
+                    _fun67852_ip = 67;
+                    continue _fun67852
                 }
             case 16:
                 var4 = _closure1_slot0;
@@ -119,4 +119,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getVideoPermission = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 3050, 566, 5224, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1410, 3050, 566, 5230, 2]);

@@ -3,16 +3,16 @@ package wg;
 final class n implements g {
 
     /* renamed from: a  reason: collision with root package name */
-    final /* synthetic */ h f52614a;
+    final /* synthetic */ h f52630a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public n(s sVar, h hVar) {
-        this.f52614a = hVar;
+        this.f52630a = hVar;
     }
 
     @Override // wg.g
     public final /* bridge */ /* synthetic */ void onSuccess(Object obj) {
         Void r12 = (Void) obj;
-        this.f52614a.a();
+        this.f52630a.a();
     }
 }

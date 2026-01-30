@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var6.bind(var0)(var1);
     var1 = {};
     var7 = function() { // Original name: onSwitchStart, environment: var3
-        _fun114086: for (var _fun114086_ip = 0;;) switch (_fun114086_ip) {
+        _fun114365: for (var _fun114365_ip = 0;;) switch (_fun114365_ip) {
             case 0:
                 var4 = _closure1_slot1;
                 var1 = _closure1_slot2;
@@ -57,8 +57,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = _closure1_slot5;
                 var1 = null;
                 if (!(var1 !== var3)) {
-                    _fun114086_ip = 107;
-                    continue _fun114086
+                    _fun114365_ip = 107;
+                    continue _fun114365
                 }
             case 90:
                 var1 = global;
@@ -96,12 +96,12 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var0.setTimeout;
         var0 = undefined;
         var2 = function() { // Environment: var1
-            _fun114089: for (var _fun114089_ip = 0;;) switch (_fun114089_ip) {
+            _fun114368: for (var _fun114368_ip = 0;;) switch (_fun114368_ip) {
                 case 0:
                     var0 = _closure2_slot1;
                     if (!var0) {
-                        _fun114089_ip = 56;
-                        continue _fun114089
+                        _fun114368_ip = 56;
+                        continue _fun114368
                     }
                 case 10:
                     var3 = _closure1_slot0;
@@ -225,4 +225,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [10172, 660, 14576, 4518, 14577, 1307, 1220, 3107, 1234, 14578, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [10178, 660, 14605, 4524, 14606, 1307, 1220, 3107, 1234, 14607, 2]);

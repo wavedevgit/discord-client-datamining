@@ -6,43 +6,43 @@ import kotlin.jvm.internal.LongCompanionObject;
 public abstract class l extends qc.g implements g {
 
     /* renamed from: o  reason: collision with root package name */
-    private g f55631o;
+    private g f55647o;
 
     /* renamed from: p  reason: collision with root package name */
-    private long f55632p;
+    private long f55648p;
 
     @Override // zd.g
     public int a(long j10) {
-        return ((g) ne.a.e(this.f55631o)).a(j10 - this.f55632p);
+        return ((g) ne.a.e(this.f55647o)).a(j10 - this.f55648p);
     }
 
     @Override // zd.g
     public List d(long j10) {
-        return ((g) ne.a.e(this.f55631o)).d(j10 - this.f55632p);
+        return ((g) ne.a.e(this.f55647o)).d(j10 - this.f55648p);
     }
 
     @Override // zd.g
     public long e(int i10) {
-        return ((g) ne.a.e(this.f55631o)).e(i10) + this.f55632p;
+        return ((g) ne.a.e(this.f55647o)).e(i10) + this.f55648p;
     }
 
     @Override // zd.g
     public int f() {
-        return ((g) ne.a.e(this.f55631o)).f();
+        return ((g) ne.a.e(this.f55647o)).f();
     }
 
     @Override // qc.a
     public void h() {
         super.h();
-        this.f55631o = null;
+        this.f55647o = null;
     }
 
     public void u(long j10, g gVar, long j11) {
-        this.f47084e = j10;
-        this.f55631o = gVar;
+        this.f47100e = j10;
+        this.f55647o = gVar;
         if (j11 != LongCompanionObject.MAX_VALUE) {
             j10 = j11;
         }
-        this.f55632p = j10;
+        this.f55648p = j10;
     }
 }

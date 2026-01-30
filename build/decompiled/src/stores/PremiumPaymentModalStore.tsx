@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
-        _fun28763: for (var _fun28763_ip = 0;;) switch (_fun28763_ip) {
+        _fun28764: for (var _fun28764_ip = 0;;) switch (_fun28764_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun28763_ip = 74;
-                continue _fun28763;
+                _fun28764_ip = 74;
+                continue _fun28764;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -100,7 +100,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
         var3 = function() { // Original name: PremiumPaymentModalStore, environment: var5
-            _fun28769: for (var _fun28769_ip = 0;;) switch (_fun28769_ip) {
+            _fun28770: for (var _fun28770_ip = 0;;) switch (_fun28770_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -114,16 +114,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot10;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun28769_ip = 69;
-                        continue _fun28769
+                        _fun28770_ip = 69;
+                        continue _fun28770
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun28769_ip = 105;
-                    continue _fun28769;
+                    _fun28770_ip = 105;
+                    continue _fun28770;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -158,14 +158,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'getGiftCode';
         var4.key = var6;
         var5 = function(arg0) { // Original name: value, environment: var5
-            _fun28771: for (var _fun28771_ip = 0;;) switch (_fun28771_ip) {
+            _fun28772: for (var _fun28772_ip = 0;;) switch (_fun28772_ip) {
                 case 0:
                     var3 = _closure1_slot9;
                     var2 = arg0;
                     var0 = null;
                     if (!(var2 === var3)) {
-                        _fun28771_ip = 20;
-                        continue _fun28771
+                        _fun28772_ip = 20;
+                        continue _fun28772
                     }
                 case 16:
                     var0 = _closure1_slot8;
@@ -263,13 +263,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.SKU_PURCHASE_FAIL = var8;
     var8 = function(arg0) { // Original name: handleSKUPurchaseAwaitConfirmation, environment: var3
-        _fun28777: for (var _fun28777_ip = 0;;) switch (_fun28777_ip) {
+        _fun28778: for (var _fun28778_ip = 0;;) switch (_fun28778_ip) {
             case 0:
                 var0 = arg0;
                 var1 = var0.isGift;
                 if (!var1) {
-                    _fun28777_ip = 25;
-                    continue _fun28777
+                    _fun28778_ip = 25;
+                    continue _fun28778
                 }
             case 12:
                 var1 = var0.skuId;
@@ -281,22 +281,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.SKU_PURCHASE_AWAIT_CONFIRMATION = var8;
     var3 = function(arg0) { // Original name: handleGiftCodeCreate, environment: var3
-        _fun28778: for (var _fun28778_ip = 0;;) switch (_fun28778_ip) {
+        _fun28779: for (var _fun28779_ip = 0;;) switch (_fun28779_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.giftCode;
                 var2 = var0.uses;
                 var1 = 0;
                 if (!(var1 === var2)) {
-                    _fun28778_ip = 51;
-                    continue _fun28778
+                    _fun28779_ip = 51;
+                    continue _fun28779
                 }
             case 21:
                 var3 = var0.sku_id;
                 var2 = _closure1_slot9;
                 if (!(var3 === var2)) {
-                    _fun28778_ip = 51;
-                    continue _fun28778
+                    _fun28779_ip = 51;
+                    continue _fun28779
                 }
             case 38:
                 var0 = var0.code;

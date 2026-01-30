@@ -451,7 +451,7 @@ public final class EmojiPickerItemData {
         List<EmojiPickerItem>[] listArr = this.dataSets;
         List<EmojiPickerItem> leading = coreData.getLeading();
         leading.set(0, this.coreData.getLeading().get(0));
-        Unit unit = Unit.f33282a;
+        Unit unit = Unit.f33298a;
         listArr[0] = leading;
         List<EmojiPickerItem>[] listArr2 = this.dataSets;
         List<EmojiPickerItem> trailing = coreData.getTrailing();

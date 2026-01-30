@@ -20,7 +20,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.value = var7;
     var3 = var5.bind(var6)(var2, var4, var3);
     var1 = function(arg0) { // Original name: makeFetchTransport, environment: var1
-        _fun10712: for (var _fun10712_ip = 0;;) switch (_fun10712_ip) {
+        _fun10713: for (var _fun10713_ip = 0;;) switch (_fun10713_ip) {
             case 0:
                 var4 = arg0;
                 var6 = undefined;
@@ -32,14 +32,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = _closure1_slot2;
                     var1 = function*(arg0) { // Environment: var1
                         var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
-                            _fun10715: for (var _fun10715_ip = 0;;) switch (_fun10715_ip) {
+                            _fun10716: for (var _fun10716_ip = 0;;) switch (_fun10716_ip) {
                                 case 0:
                                     StartGenerator();
                                     var4 = arg0;
                                     ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 3);
                                     if (var3) {
-                                        _fun10715_ip = 388;
-                                        continue _fun10715
+                                        _fun10716_ip = 388;
+                                        continue _fun10716
                                     }
                                 case 13:
                                     var6 = undefined;
@@ -72,8 +72,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                     var9 = var10 <= var9;
                                     var4 = var9;
                                     if (!var9) {
-                                        _fun10715_ip = 138;
-                                        continue _fun10715
+                                        _fun10716_ip = 138;
+                                        continue _fun10716
                                     }
                                 case 127:
                                     var10 = _closure2_slot3;
@@ -95,8 +95,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 case 182:
                                     ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 4);
                                     if (var4) {
-                                        _fun10715_ip = 290;
-                                        continue _fun10715
+                                        _fun10716_ip = 290;
+                                        continue _fun10716
                                     }
                                 case 188:
                                     var4 = {};
@@ -171,14 +171,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = arguments.length;
                 var2 = 1;
                 if (!(var1 > var2)) {
-                    _fun10712_ip = 40;
-                    continue _fun10712
+                    _fun10713_ip = 40;
+                    continue _fun10713
                 }
             case 32:
                 var1 = arguments[var2];
                 if (!(var6 === var1)) {
-                    _fun10712_ip = 77;
-                    continue _fun10712
+                    _fun10713_ip = 77;
+                    continue _fun10713
                 }
             case 40:
                 var5 = _closure1_slot0;
@@ -188,8 +188,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var7.getNativeImplementation;
                 var1 = 'fetch';
                 var1 = var5.bind(var7)(var1);
-                _fun10712_ip = 81;
-                continue _fun10712;
+                _fun10713_ip = 81;
+                continue _fun10713;
             case 77:
                 var1 = arguments[var2];
             case 81:
@@ -208,8 +208,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var5 = var6.makePromiseBuffer;
                 var1 = var4.bufferSize;
                 if (var1) {
-                    _fun10712_ip = 151;
-                    continue _fun10712
+                    _fun10713_ip = 151;
+                    continue _fun10713
                 }
             case 148:
                 var1 = 40;

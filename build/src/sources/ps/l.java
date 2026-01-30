@@ -9,35 +9,35 @@ import ls.e0;
 public final class l extends b0 {
 
     /* renamed from: p  reason: collision with root package name */
-    private final /* synthetic */ AtomicReferenceArray f46187p;
+    private final /* synthetic */ AtomicReferenceArray f46203p;
 
     public l(long j10, l lVar, int i10) {
         super(j10, lVar, i10);
         int i11;
-        i11 = k.f46186f;
-        this.f46187p = new AtomicReferenceArray(i11);
+        i11 = k.f46202f;
+        this.f46203p = new AtomicReferenceArray(i11);
     }
 
     @Override // ls.b0
     public int r() {
         int i10;
-        i10 = k.f46186f;
+        i10 = k.f46202f;
         return i10;
     }
 
     @Override // ls.b0
     public void s(int i10, Throwable th2, CoroutineContext coroutineContext) {
         e0 e0Var;
-        e0Var = k.f46185e;
+        e0Var = k.f46201e;
         v().set(i10, e0Var);
         t();
     }
 
     public String toString() {
-        return "SemaphoreSegment[id=" + this.f37432i + ", hashCode=" + hashCode() + ']';
+        return "SemaphoreSegment[id=" + this.f37448i + ", hashCode=" + hashCode() + ']';
     }
 
     public final /* synthetic */ AtomicReferenceArray v() {
-        return this.f46187p;
+        return this.f46203p;
     }
 }

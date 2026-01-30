@@ -68,7 +68,7 @@ public abstract class OverlayBubbleWrap extends OverlayView {
         this.insetMargins = new Rect();
         this.moveThresholdPx = getResources().getDimensionPixelOffset(R.dimen.movement_threshold_dp);
         setStateListAnimator(AnimatorInflater.loadStateListAnimator(getContext(), R.drawable.bubble_state_selector));
-        kotlin.properties.a aVar = kotlin.properties.a.f33369a;
+        kotlin.properties.a aVar = kotlin.properties.a.f33385a;
         final Boolean bool = Boolean.FALSE;
         this.isMoving$delegate = new kotlin.properties.c(bool) { // from class: com.discord.mobile_voice_overlay.views.OverlayBubbleWrap$special$$inlined$observable$1
             @Override // kotlin.properties.c
@@ -171,7 +171,7 @@ public abstract class OverlayBubbleWrap extends OverlayView {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit touchDispatchSideEffectHandler$lambda$1(MotionEvent it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     public void anchorOff(boolean z10) {
@@ -421,7 +421,7 @@ public abstract class OverlayBubbleWrap extends OverlayView {
         this.insetMargins = new Rect();
         this.moveThresholdPx = getResources().getDimensionPixelOffset(R.dimen.movement_threshold_dp);
         setStateListAnimator(AnimatorInflater.loadStateListAnimator(getContext(), R.drawable.bubble_state_selector));
-        kotlin.properties.a aVar = kotlin.properties.a.f33369a;
+        kotlin.properties.a aVar = kotlin.properties.a.f33385a;
         final Boolean bool = Boolean.FALSE;
         this.isMoving$delegate = new kotlin.properties.c(bool) { // from class: com.discord.mobile_voice_overlay.views.OverlayBubbleWrap$special$$inlined$observable$2
             @Override // kotlin.properties.c
@@ -477,7 +477,7 @@ public abstract class OverlayBubbleWrap extends OverlayView {
         this.insetMargins = new Rect();
         this.moveThresholdPx = getResources().getDimensionPixelOffset(R.dimen.movement_threshold_dp);
         setStateListAnimator(AnimatorInflater.loadStateListAnimator(getContext(), R.drawable.bubble_state_selector));
-        kotlin.properties.a aVar = kotlin.properties.a.f33369a;
+        kotlin.properties.a aVar = kotlin.properties.a.f33385a;
         final Boolean bool = Boolean.FALSE;
         this.isMoving$delegate = new kotlin.properties.c(bool) { // from class: com.discord.mobile_voice_overlay.views.OverlayBubbleWrap$special$$inlined$observable$3
             @Override // kotlin.properties.c

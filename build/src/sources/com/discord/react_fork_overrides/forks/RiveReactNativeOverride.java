@@ -21,7 +21,7 @@ public final class RiveReactNativeOverride {
         Intrinsics.checkNotNullParameter(error, "error");
         Intrinsics.checkNotNullParameter(context, "context");
         CrashReporting.captureException$default(CrashReporting.INSTANCE, error, false, 2, null);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     public final void override() {

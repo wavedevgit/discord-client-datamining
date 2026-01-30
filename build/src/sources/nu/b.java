@@ -9,7 +9,7 @@ import nu.d;
 public final class b implements ku.a, d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f42202a = new b();
+    public static final b f42218a = new b();
 
     private b() {
     }
@@ -44,7 +44,7 @@ public final class b implements ku.a, d {
         Intrinsics.checkNotNullParameter(data, "data");
         Intrinsics.checkNotNullParameter(evaluator, "evaluator");
         for (Object obj : data.b()) {
-            if (f42202a.i(evaluator.a(data.a(), obj))) {
+            if (f42218a.i(evaluator.a(data.a(), obj))) {
                 return Boolean.FALSE;
             }
         }

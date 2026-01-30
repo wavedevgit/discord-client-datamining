@@ -147,13 +147,13 @@ public class b {
         gVar.N(materialCardView.getContext());
         gVar.c0(-12303292);
         k.b v10 = gVar.D().v();
-        TypedArray obtainStyledAttributes = materialCardView.getContext().obtainStyledAttributes(attributeSet, yg.k.f54699s0, i10, j.f54498a);
-        if (obtainStyledAttributes.hasValue(yg.k.f54708t0)) {
-            v10.o(obtainStyledAttributes.getDimension(yg.k.f54708t0, 0.0f));
+        TypedArray obtainStyledAttributes = materialCardView.getContext().obtainStyledAttributes(attributeSet, yg.k.f54715s0, i10, j.f54514a);
+        if (obtainStyledAttributes.hasValue(yg.k.f54724t0)) {
+            v10.o(obtainStyledAttributes.getDimension(yg.k.f54724t0, 0.0f));
         }
         this.f15733d = new g();
         Y(v10.m());
-        this.f15751v = jh.g.g(materialCardView.getContext(), yg.b.Q, zg.a.f55658a);
+        this.f15751v = jh.g.g(materialCardView.getContext(), yg.b.Q, zg.a.f55674a);
         this.f15752w = jh.g.f(materialCardView.getContext(), yg.b.K, ReactImageView.REMOTE_IMAGE_FADE_DURATION_MS);
         this.f15753x = jh.g.f(materialCardView.getContext(), yg.b.J, ReactImageView.REMOTE_IMAGE_FADE_DURATION_MS);
         obtainStyledAttributes.recycle();
@@ -271,7 +271,7 @@ public class b {
     }
 
     private Drawable i() {
-        if (mh.b.f39065a) {
+        if (mh.b.f39081a) {
             this.f15747r = j();
             return new RippleDrawable(this.f15740k, null, this.f15747r);
         }
@@ -292,7 +292,7 @@ public class b {
 
     private void k0() {
         Drawable drawable;
-        if (mh.b.f39065a && (drawable = this.f15744o) != null) {
+        if (mh.b.f39081a && (drawable = this.f15744o) != null) {
             ((RippleDrawable) drawable).setColor(this.f15740k);
             return;
         }
@@ -366,7 +366,7 @@ public class b {
         ColorStateList a11 = c.a(this.f15730a.getContext(), typedArray, yg.k.R3);
         this.f15740k = a11;
         if (a11 == null) {
-            this.f15740k = ColorStateList.valueOf(eh.a.d(this.f15730a, yg.b.f54346i));
+            this.f15740k = ColorStateList.valueOf(eh.a.d(this.f15730a, yg.b.f54362i));
         }
         M(c.a(this.f15730a.getContext(), typedArray, yg.k.L3));
         k0();

@@ -13,13 +13,13 @@ import okio.ByteString;
 public final class c0 implements Comparable {
 
     /* renamed from: e */
-    public static final a f31213e = new a(null);
+    public static final a f31229e = new a(null);
 
     /* renamed from: i */
-    public static final String f31214i;
+    public static final String f31230i;
 
     /* renamed from: d */
-    private final ByteString f31215d;
+    private final ByteString f31231d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -72,12 +72,12 @@ public final class c0 implements Comparable {
     static {
         String separator = File.separator;
         Intrinsics.checkNotNullExpressionValue(separator, "separator");
-        f31214i = separator;
+        f31230i = separator;
     }
 
     public c0(ByteString bytes) {
         Intrinsics.checkNotNullParameter(bytes, "bytes");
-        this.f31215d = bytes;
+        this.f31231d = bytes;
     }
 
     public static /* synthetic */ c0 o(c0 c0Var, c0 c0Var2, boolean z10, int i10, Object obj) {
@@ -95,7 +95,7 @@ public final class c0 implements Comparable {
     }
 
     public final ByteString d() {
-        return this.f31215d;
+        return this.f31231d;
     }
 
     public final c0 e() {
@@ -149,7 +149,7 @@ public final class c0 implements Comparable {
             return ByteString.J(d(), l10 + 1, 0, 2, null);
         }
         if (q() != null && d().G() == 2) {
-            return ByteString.f44364p;
+            return ByteString.f44380p;
         }
         return d();
     }
@@ -167,13 +167,13 @@ public final class c0 implements Comparable {
         ByteString byteString4;
         ByteString byteString5;
         ByteString d10 = d();
-        byteString = ju.d.f32793d;
+        byteString = ju.d.f32809d;
         if (!Intrinsics.areEqual(d10, byteString)) {
             ByteString d11 = d();
-            byteString2 = ju.d.f32790a;
+            byteString2 = ju.d.f32806a;
             if (!Intrinsics.areEqual(d11, byteString2)) {
                 ByteString d12 = d();
-                byteString3 = ju.d.f32791b;
+                byteString3 = ju.d.f32807b;
                 if (!Intrinsics.areEqual(d12, byteString3)) {
                     n10 = ju.d.n(this);
                     if (!n10) {
@@ -186,7 +186,7 @@ public final class c0 implements Comparable {
                         }
                         if (l10 == 1) {
                             ByteString d13 = d();
-                            byteString5 = ju.d.f32791b;
+                            byteString5 = ju.d.f32807b;
                             if (d13.H(byteString5)) {
                                 return null;
                             }
@@ -197,7 +197,7 @@ public final class c0 implements Comparable {
                             }
                             return new c0(ByteString.J(d(), 0, 2, 1, null));
                         } else if (l10 == -1) {
-                            byteString4 = ju.d.f32793d;
+                            byteString4 = ju.d.f32809d;
                             return new c0(byteString4);
                         } else if (l10 == 0) {
                             return new c0(ByteString.J(d(), 0, 1, 1, null));
@@ -259,7 +259,7 @@ public final class c0 implements Comparable {
             okio.ByteString r6 = r9.d()
             int r6 = r6.G()
             if (r3 != r6) goto L5d
-            iu.c0$a r9 = iu.c0.f31213e
+            iu.c0$a r9 = iu.c0.f31229e
             java.lang.String r0 = "."
             r1 = 0
             r2 = 1
@@ -278,7 +278,7 @@ public final class c0 implements Comparable {
             if (r9 != 0) goto L87
             okio.ByteString r9 = ju.d.f(r8)
             if (r9 != 0) goto L87
-            java.lang.String r9 = iu.c0.f31214i
+            java.lang.String r9 = iu.c0.f31230i
             okio.ByteString r9 = ju.d.i(r9)
         L87:
             int r2 = r2.size()
@@ -352,7 +352,7 @@ public final class c0 implements Comparable {
     public final Character q() {
         ByteString byteString;
         ByteString d10 = d();
-        byteString = ju.d.f32790a;
+        byteString = ju.d.f32806a;
         if (ByteString.t(d10, byteString, 0, 2, null) != -1 || d().G() < 2 || d().j(1) != 58) {
             return null;
         }

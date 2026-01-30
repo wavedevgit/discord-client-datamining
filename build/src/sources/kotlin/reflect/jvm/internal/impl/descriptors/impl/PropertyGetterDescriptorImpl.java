@@ -19,10 +19,10 @@ import org.jetbrains.annotations.NotNull;
 public class PropertyGetterDescriptorImpl extends PropertyAccessorDescriptorImpl implements PropertyGetterDescriptor {
 
     /* renamed from: x  reason: collision with root package name */
-    private KotlinType f33839x;
+    private KotlinType f33855x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final PropertyGetterDescriptor f33840y;
+    private final PropertyGetterDescriptor f33856y;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public PropertyGetterDescriptorImpl(@NotNull PropertyDescriptor propertyDescriptor, @NotNull Annotations annotations, @NotNull Modality modality, @NotNull DescriptorVisibility descriptorVisibility, boolean z10, boolean z11, boolean z12, @NotNull CallableMemberDescriptor.Kind kind, PropertyGetterDescriptor propertyGetterDescriptor, @NotNull SourceElement sourceElement) {
@@ -51,7 +51,7 @@ public class PropertyGetterDescriptorImpl extends PropertyAccessorDescriptorImpl
         } else {
             propertyGetterDescriptor2 = this;
         }
-        this.f33840y = propertyGetterDescriptor2;
+        this.f33856y = propertyGetterDescriptor2;
     }
 
     private static /* synthetic */ void a(int i10) {
@@ -118,7 +118,7 @@ public class PropertyGetterDescriptorImpl extends PropertyAccessorDescriptorImpl
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.CallableDescriptor
     public KotlinType getReturnType() {
-        return this.f33839x;
+        return this.f33855x;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.CallableDescriptor
@@ -135,13 +135,13 @@ public class PropertyGetterDescriptorImpl extends PropertyAccessorDescriptorImpl
         if (kotlinType == null) {
             kotlinType = getCorrespondingProperty().getType();
         }
-        this.f33839x = kotlinType;
+        this.f33855x = kotlinType;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.PropertyAccessorDescriptorImpl, kotlin.reflect.jvm.internal.impl.descriptors.impl.DeclarationDescriptorNonRootImpl, kotlin.reflect.jvm.internal.impl.descriptors.impl.DeclarationDescriptorImpl, kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptor
     @NotNull
     public PropertyGetterDescriptor getOriginal() {
-        PropertyGetterDescriptor propertyGetterDescriptor = this.f33840y;
+        PropertyGetterDescriptor propertyGetterDescriptor = this.f33856y;
         if (propertyGetterDescriptor == null) {
             a(8);
         }

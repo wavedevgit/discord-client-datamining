@@ -160,7 +160,7 @@ public class MaterialAutoCompleteTextView extends androidx.appcompat.widget.d {
     }
 
     public MaterialAutoCompleteTextView(@NonNull Context context, AttributeSet attributeSet) {
-        this(context, attributeSet, yg.b.f54332b);
+        this(context, attributeSet, yg.b.f54348b);
     }
 
     private TextInputLayout f() {
@@ -381,11 +381,11 @@ public class MaterialAutoCompleteTextView extends androidx.appcompat.widget.d {
         super(rh.a.c(context, attributeSet, i10, 0), attributeSet, i10);
         this.f16412r = new Rect();
         Context context2 = getContext();
-        TypedArray i11 = com.google.android.material.internal.l.i(context2, attributeSet, yg.k.G2, i10, yg.j.f54502e, new int[0]);
+        TypedArray i11 = com.google.android.material.internal.l.i(context2, attributeSet, yg.k.G2, i10, yg.j.f54518e, new int[0]);
         if (i11.hasValue(yg.k.H2) && i11.getInt(yg.k.H2, 0) == 0) {
             setKeyListener(null);
         }
-        this.f16413s = i11.getResourceId(yg.k.K2, yg.h.f54464m);
+        this.f16413s = i11.getResourceId(yg.k.K2, yg.h.f54480m);
         this.f16414t = i11.getDimensionPixelOffset(yg.k.I2, yg.d.V);
         if (i11.hasValue(yg.k.J2)) {
             this.f16415u = ColorStateList.valueOf(i11.getColor(yg.k.J2, 0));

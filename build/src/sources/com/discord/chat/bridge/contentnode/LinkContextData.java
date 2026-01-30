@@ -385,7 +385,7 @@ public abstract class LinkContextData {
     public static final class BindDoNothing extends LinkContext {
         @NotNull
         public static final BindDoNothing INSTANCE = new BindDoNothing();
-        private static final /* synthetic */ Lazy $cachedSerializer$delegate = ir.l.a(ir.o.f31103e, new Function0() { // from class: com.discord.chat.bridge.contentnode.n
+        private static final /* synthetic */ Lazy $cachedSerializer$delegate = ir.l.a(ir.o.f31119e, new Function0() { // from class: com.discord.chat.bridge.contentnode.n
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 KSerializer _init_$_anonymous_;
@@ -2777,7 +2777,7 @@ public abstract class LinkContextData {
         @NotNull
         public static final Companion Companion = new Companion(null);
         @NotNull
-        private static final Lazy $cachedSerializer$delegate = ir.l.a(ir.o.f31103e, new Function0() { // from class: com.discord.chat.bridge.contentnode.o
+        private static final Lazy $cachedSerializer$delegate = ir.l.a(ir.o.f31119e, new Function0() { // from class: com.discord.chat.bridge.contentnode.o
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 KSerializer _init_$_anonymous_;
@@ -2889,7 +2889,7 @@ public abstract class LinkContextData {
             @Override // kotlinx.serialization.KSerializer, xs.o, kotlinx.serialization.DeserializationStrategy
             @NotNull
             public SerialDescriptor getDescriptor() {
-                return zs.j.b("LinkUrl", e.i.f56091a);
+                return zs.j.b("LinkUrl", e.i.f56107a);
             }
 
             @Override // kotlinx.serialization.DeserializationStrategy

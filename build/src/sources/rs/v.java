@@ -6,46 +6,46 @@ import kotlin.jvm.internal.Intrinsics;
 public final class v implements h, vs.c {
 
     /* renamed from: a  reason: collision with root package name */
-    private Integer f48610a;
+    private Integer f48626a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Integer f48611b;
+    private Integer f48627b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Integer f48612c;
+    private Integer f48628c;
 
     /* renamed from: d  reason: collision with root package name */
-    private Integer f48613d;
+    private Integer f48629d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Integer f48614e;
+    private Integer f48630e;
 
     public v(Integer num, Integer num2, Integer num3, Integer num4, Integer num5) {
-        this.f48610a = num;
-        this.f48611b = num2;
-        this.f48612c = num3;
-        this.f48613d = num4;
-        this.f48614e = num5;
+        this.f48626a = num;
+        this.f48627b = num2;
+        this.f48628c = num3;
+        this.f48629d = num4;
+        this.f48630e = num5;
     }
 
     @Override // rs.h
     public Integer A() {
-        return this.f48614e;
+        return this.f48630e;
     }
 
     @Override // rs.h
     public void B(Integer num) {
-        this.f48610a = num;
+        this.f48626a = num;
     }
 
     @Override // rs.h
     public Integer C() {
-        return this.f48611b;
+        return this.f48627b;
     }
 
     @Override // rs.h
     public void E(Integer num) {
-        this.f48613d = num;
+        this.f48629d = num;
     }
 
     @Override // vs.c
@@ -103,12 +103,12 @@ public final class v implements h, vs.c {
 
     @Override // rs.h
     public Integer f() {
-        return this.f48610a;
+        return this.f48626a;
     }
 
     @Override // rs.h
     public Integer g() {
-        return this.f48612c;
+        return this.f48628c;
     }
 
     public int hashCode() {
@@ -154,12 +154,12 @@ public final class v implements h, vs.c {
 
     @Override // rs.h
     public Integer i() {
-        return this.f48613d;
+        return this.f48629d;
     }
 
     @Override // rs.h
     public void p(Integer num) {
-        this.f48614e = num;
+        this.f48630e = num;
     }
 
     public String toString() {
@@ -194,12 +194,12 @@ public final class v implements h, vs.c {
 
     @Override // rs.h
     public void v(Integer num) {
-        this.f48611b = num;
+        this.f48627b = num;
     }
 
     @Override // rs.h
     public void y(Integer num) {
-        this.f48612c = num;
+        this.f48628c = num;
     }
 
     public /* synthetic */ v(Integer num, Integer num2, Integer num3, Integer num4, Integer num5, int i10, DefaultConstructorMarker defaultConstructorMarker) {

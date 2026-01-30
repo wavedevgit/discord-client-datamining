@@ -8,11 +8,11 @@ import kotlin.jvm.internal.markers.KMutableCollection;
 public final class g extends kotlin.collections.e implements Collection, KMutableCollection {
 
     /* renamed from: d  reason: collision with root package name */
-    private final d f32451d;
+    private final d f32467d;
 
     public g(d backing) {
         Intrinsics.checkNotNullParameter(backing, "backing");
-        this.f32451d = backing;
+        this.f32467d = backing;
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection
@@ -28,45 +28,45 @@ public final class g extends kotlin.collections.e implements Collection, KMutabl
 
     @Override // kotlin.collections.e
     public int b() {
-        return this.f32451d.size();
+        return this.f32467d.size();
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection
     public void clear() {
-        this.f32451d.clear();
+        this.f32467d.clear();
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection
     public boolean contains(Object obj) {
-        return this.f32451d.containsValue(obj);
+        return this.f32467d.containsValue(obj);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection
     public boolean isEmpty() {
-        return this.f32451d.isEmpty();
+        return this.f32467d.isEmpty();
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable
     public Iterator iterator() {
-        return this.f32451d.O();
+        return this.f32467d.O();
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection
     public boolean remove(Object obj) {
-        return this.f32451d.M(obj);
+        return this.f32467d.M(obj);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection
     public boolean removeAll(Collection elements) {
         Intrinsics.checkNotNullParameter(elements, "elements");
-        this.f32451d.l();
+        this.f32467d.l();
         return super.removeAll(elements);
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection
     public boolean retainAll(Collection elements) {
         Intrinsics.checkNotNullParameter(elements, "elements");
-        this.f32451d.l();
+        this.f32467d.l();
         return super.retainAll(elements);
     }
 }

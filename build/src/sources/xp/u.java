@@ -12,10 +12,10 @@ import kotlin.text.StringsKt;
 public final class u implements InputFilter {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f53722a;
+    private final int f53738a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Lazy f53723b = ir.l.b(new Function0() { // from class: xp.t
+    private final Lazy f53739b = ir.l.b(new Function0() { // from class: xp.t
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             Pattern c10;
@@ -25,18 +25,18 @@ public final class u implements InputFilter {
     });
 
     public u(int i10) {
-        this.f53722a = i10;
+        this.f53738a = i10;
     }
 
     private final Pattern b() {
-        Object value = this.f53723b.getValue();
+        Object value = this.f53739b.getValue();
         Intrinsics.checkNotNullExpressionValue(value, "getValue(...)");
         return (Pattern) value;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Pattern c(u uVar) {
-        int i10 = uVar.f53722a;
+        int i10 = uVar.f53738a;
         return Pattern.compile("-?[0-9]*+((\\.[0-9]{0," + i10 + "})?)||(\\.)?");
     }
 

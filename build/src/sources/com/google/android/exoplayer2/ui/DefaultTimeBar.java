@@ -261,14 +261,14 @@ public class DefaultTimeBar extends View implements j {
     }
 
     private boolean m(Drawable drawable) {
-        if (w0.f40279a >= 23 && n(drawable, getLayoutDirection())) {
+        if (w0.f40295a >= 23 && n(drawable, getLayoutDirection())) {
             return true;
         }
         return false;
     }
 
     private static boolean n(Drawable drawable, int i10) {
-        if (w0.f40279a >= 23 && drawable.setLayoutDirection(i10)) {
+        if (w0.f40295a >= 23 && drawable.setLayoutDirection(i10)) {
             return true;
         }
         return false;
@@ -439,7 +439,7 @@ public class DefaultTimeBar extends View implements j {
         if (this.U <= 0) {
             return;
         }
-        if (w0.f40279a >= 21) {
+        if (w0.f40295a >= 21) {
             accessibilityNodeInfo.addAction(AccessibilityNodeInfo.AccessibilityAction.ACTION_SCROLL_FORWARD);
             accessibilityNodeInfo.addAction(AccessibilityNodeInfo.AccessibilityAction.ACTION_SCROLL_BACKWARD);
             return;
@@ -521,7 +521,7 @@ public class DefaultTimeBar extends View implements j {
         Rect rect = this.f14181e;
         Rect rect2 = this.f14180d;
         rect.set(rect2.left + i14, i16, rect2.right - i14, this.f14191w + i16);
-        if (w0.f40279a >= 29) {
+        if (w0.f40295a >= 29) {
             o(i17, i18);
         }
         r();
@@ -783,27 +783,27 @@ public class DefaultTimeBar extends View implements j {
         int e14 = e(f10, 0);
         int e15 = e(f10, 16);
         if (attributeSet2 != null) {
-            TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(attributeSet2, n.f33157e, i10, i11);
+            TypedArray obtainStyledAttributes = context.getTheme().obtainStyledAttributes(attributeSet2, n.f33173e, i10, i11);
             try {
-                Drawable drawable = obtainStyledAttributes.getDrawable(n.f33168p);
+                Drawable drawable = obtainStyledAttributes.getDrawable(n.f33184p);
                 this.f14190v = drawable;
                 if (drawable != null) {
                     m(drawable);
                     e11 = Math.max(drawable.getMinimumHeight(), e11);
                 }
-                this.f14191w = obtainStyledAttributes.getDimensionPixelSize(n.f33161i, e10);
-                this.f14192x = obtainStyledAttributes.getDimensionPixelSize(n.f33170r, e11);
-                this.f14193y = obtainStyledAttributes.getInt(n.f33160h, 0);
-                this.f14194z = obtainStyledAttributes.getDimensionPixelSize(n.f33159g, e12);
-                this.A = obtainStyledAttributes.getDimensionPixelSize(n.f33169q, e13);
-                this.B = obtainStyledAttributes.getDimensionPixelSize(n.f33166n, e14);
-                this.C = obtainStyledAttributes.getDimensionPixelSize(n.f33167o, e15);
-                int i12 = obtainStyledAttributes.getInt(n.f33164l, -1);
-                int i13 = obtainStyledAttributes.getInt(n.f33165m, -1);
-                int i14 = obtainStyledAttributes.getInt(n.f33162j, -855638017);
-                int i15 = obtainStyledAttributes.getInt(n.f33171s, 872415231);
-                int i16 = obtainStyledAttributes.getInt(n.f33158f, -1291845888);
-                int i17 = obtainStyledAttributes.getInt(n.f33163k, 872414976);
+                this.f14191w = obtainStyledAttributes.getDimensionPixelSize(n.f33177i, e10);
+                this.f14192x = obtainStyledAttributes.getDimensionPixelSize(n.f33186r, e11);
+                this.f14193y = obtainStyledAttributes.getInt(n.f33176h, 0);
+                this.f14194z = obtainStyledAttributes.getDimensionPixelSize(n.f33175g, e12);
+                this.A = obtainStyledAttributes.getDimensionPixelSize(n.f33185q, e13);
+                this.B = obtainStyledAttributes.getDimensionPixelSize(n.f33182n, e14);
+                this.C = obtainStyledAttributes.getDimensionPixelSize(n.f33183o, e15);
+                int i12 = obtainStyledAttributes.getInt(n.f33180l, -1);
+                int i13 = obtainStyledAttributes.getInt(n.f33181m, -1);
+                int i14 = obtainStyledAttributes.getInt(n.f33178j, -855638017);
+                int i15 = obtainStyledAttributes.getInt(n.f33187s, 872415231);
+                int i16 = obtainStyledAttributes.getInt(n.f33174f, -1291845888);
+                int i17 = obtainStyledAttributes.getInt(n.f33179k, 872414976);
                 paint.setColor(i12);
                 paint6.setColor(i13);
                 paint2.setColor(i14);

@@ -20,29 +20,29 @@ import org.jetbrains.annotations.NotNull;
 public final class LazyJavaPackageFragmentProvider implements PackageFragmentProviderOptimized {
 
     /* renamed from: a  reason: collision with root package name */
-    private final LazyJavaResolverContext f34145a;
+    private final LazyJavaResolverContext f34161a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final CacheWithNotNullValues f34146b;
+    private final CacheWithNotNullValues f34162b;
 
     public LazyJavaPackageFragmentProvider(@NotNull JavaResolverComponents components) {
         Intrinsics.checkNotNullParameter(components, "components");
         LazyJavaResolverContext lazyJavaResolverContext = new LazyJavaResolverContext(components, TypeParameterResolver.EMPTY.INSTANCE, l.c(null));
-        this.f34145a = lazyJavaResolverContext;
-        this.f34146b = lazyJavaResolverContext.getStorageManager().createCacheWithNotNullValues();
+        this.f34161a = lazyJavaResolverContext;
+        this.f34162b = lazyJavaResolverContext.getStorageManager().createCacheWithNotNullValues();
     }
 
     private final LazyJavaPackageFragment b(FqName fqName) {
-        JavaPackage findPackage$default = JavaClassFinder$$Util.findPackage$default(this.f34145a.getComponents().getFinder(), fqName, false, 2, null);
+        JavaPackage findPackage$default = JavaClassFinder$$Util.findPackage$default(this.f34161a.getComponents().getFinder(), fqName, false, 2, null);
         if (findPackage$default == null) {
             return null;
         }
-        return (LazyJavaPackageFragment) this.f34146b.computeIfAbsent(fqName, new d(this, findPackage$default));
+        return (LazyJavaPackageFragment) this.f34162b.computeIfAbsent(fqName, new d(this, findPackage$default));
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final LazyJavaPackageFragment c(LazyJavaPackageFragmentProvider lazyJavaPackageFragmentProvider, JavaPackage javaPackage) {
-        return new LazyJavaPackageFragment(lazyJavaPackageFragmentProvider.f34145a, javaPackage);
+        return new LazyJavaPackageFragment(lazyJavaPackageFragmentProvider.f34161a, javaPackage);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.PackageFragmentProviderOptimized
@@ -68,7 +68,7 @@ public final class LazyJavaPackageFragmentProvider implements PackageFragmentPro
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.PackageFragmentProviderOptimized
     public boolean isEmpty(@NotNull FqName fqName) {
         Intrinsics.checkNotNullParameter(fqName, "fqName");
-        if (JavaClassFinder$$Util.findPackage$default(this.f34145a.getComponents().getFinder(), fqName, false, 2, null) != null) {
+        if (JavaClassFinder$$Util.findPackage$default(this.f34161a.getComponents().getFinder(), fqName, false, 2, null) != null) {
             return false;
         }
         return true;
@@ -76,7 +76,7 @@ public final class LazyJavaPackageFragmentProvider implements PackageFragmentPro
 
     @NotNull
     public String toString() {
-        return "LazyJavaPackageFragmentProvider of module " + this.f34145a.getComponents().getModule();
+        return "LazyJavaPackageFragmentProvider of module " + this.f34161a.getComponents().getModule();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.PackageFragmentProvider

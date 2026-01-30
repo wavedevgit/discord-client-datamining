@@ -27,14 +27,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot6 = var5;
     var4 = function(arg0, arg1) { // Original name: getStreamerActivity, environment: var1
-        _fun54160: for (var _fun54160_ip = 0;;) switch (_fun54160_ip) {
+        _fun54205: for (var _fun54205_ip = 0;;) switch (_fun54205_ip) {
             case 0:
                 var1 = arg0;
                 var0 = null;
                 var2 = var0 != var1;
                 if (!var2) {
-                    _fun54160_ip = 36;
-                    continue _fun54160
+                    _fun54205_ip = 36;
+                    continue _fun54205
                 }
             case 12:
                 var4 = _closure1_slot6;
@@ -48,13 +48,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot7 = var4;
     var3 = function(arg0, arg1) { // Original name: getStreamerApplication, environment: var1
-        _fun54161: for (var _fun54161_ip = 0;;) switch (_fun54161_ip) {
+        _fun54206: for (var _fun54206_ip = 0;;) switch (_fun54206_ip) {
             case 0:
                 var4 = arg0;
                 var0 = null;
                 if (!(var0 != var4)) {
-                    _fun54161_ip = 62;
-                    continue _fun54161
+                    _fun54206_ip = 62;
+                    continue _fun54206
                 }
             case 9:
                 var3 = _closure1_slot7;
@@ -64,8 +64,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0 == var3;
                 var1 = null;
                 if (var2) {
-                    _fun54161_ip = 60;
-                    continue _fun54161
+                    _fun54206_ip = 60;
+                    continue _fun54206
                 }
             case 36:
                 var2 = {};
@@ -82,28 +82,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot8 = var3;
     var0 = function(arg0, arg1) { // Original name: streamApplicationEqualityCheck, environment: var1
-        _fun54162: for (var _fun54162_ip = 0;;) switch (_fun54162_ip) {
+        _fun54207: for (var _fun54207_ip = 0;;) switch (_fun54207_ip) {
             case 0:
                 var5 = arg0;
                 var4 = arg1;
                 var0 = var5 === var4;
                 if (var0) {
-                    _fun54162_ip = 63;
-                    continue _fun54162
+                    _fun54207_ip = 63;
+                    continue _fun54207
                 }
             case 13:
                 var2 = null;
                 var1 = var2 != var5;
                 if (!var1) {
-                    _fun54162_ip = 26;
-                    continue _fun54162
+                    _fun54207_ip = 26;
+                    continue _fun54207
                 }
             case 22:
                 var1 = var2 != var4;
             case 26:
                 if (!var1) {
-                    _fun54162_ip = 60;
-                    continue _fun54162
+                    _fun54207_ip = 60;
+                    continue _fun54207
                 }
             case 29:
                 var6 = _closure1_slot1;
@@ -179,4 +179,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useGetStreamApplication = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3567, 660, 628, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3569, 660, 628, 566, 2]);

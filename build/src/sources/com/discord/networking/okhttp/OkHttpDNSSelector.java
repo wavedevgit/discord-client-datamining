@@ -110,7 +110,7 @@ public final class OkHttpDNSSelector implements h {
     @NotNull
     public List<InetAddress> lookup(@NotNull String hostname) {
         Intrinsics.checkNotNullParameter(hostname, "hostname");
-        List<InetAddress> lookup = h.f49926b.lookup(hostname);
+        List<InetAddress> lookup = h.f49942b.lookup(hostname);
         int i10 = WhenMappings.$EnumSwitchMapping$0[this.mode.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {

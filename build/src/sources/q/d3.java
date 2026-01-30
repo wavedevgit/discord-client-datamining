@@ -13,41 +13,41 @@ import x.j;
 final class d3 implements z4.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final r.a0 f46279a;
+    private final r.a0 f46295a;
 
     /* renamed from: c  reason: collision with root package name */
-    private c.a f46281c;
+    private c.a f46297c;
 
     /* renamed from: b  reason: collision with root package name */
-    private Rect f46280b = null;
+    private Rect f46296b = null;
 
     /* renamed from: d  reason: collision with root package name */
-    private Rect f46282d = null;
+    private Rect f46298d = null;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d3(r.a0 a0Var) {
-        this.f46279a = a0Var;
+        this.f46295a = a0Var;
     }
 
     private Rect g() {
-        return (Rect) b2.e.g((Rect) this.f46279a.a(CameraCharacteristics.SENSOR_INFO_ACTIVE_ARRAY_SIZE));
+        return (Rect) b2.e.g((Rect) this.f46295a.a(CameraCharacteristics.SENSOR_INFO_ACTIVE_ARRAY_SIZE));
     }
 
     @Override // q.z4.b
     public void a(TotalCaptureResult totalCaptureResult) {
         Rect rect;
-        if (this.f46281c != null) {
+        if (this.f46297c != null) {
             CaptureRequest request = totalCaptureResult.getRequest();
             if (request == null) {
                 rect = null;
             } else {
                 rect = (Rect) request.get(CaptureRequest.SCALER_CROP_REGION);
             }
-            Rect rect2 = this.f46282d;
+            Rect rect2 = this.f46298d;
             if (rect2 != null && rect2.equals(rect)) {
-                this.f46281c.c(null);
-                this.f46281c = null;
-                this.f46282d = null;
+                this.f46297c.c(null);
+                this.f46297c = null;
+                this.f46298d = null;
             }
         }
     }
@@ -59,18 +59,18 @@ final class d3 implements z4.b {
 
     @Override // q.z4.b
     public void c() {
-        this.f46282d = null;
-        this.f46280b = null;
-        c.a aVar = this.f46281c;
+        this.f46298d = null;
+        this.f46296b = null;
+        c.a aVar = this.f46297c;
         if (aVar != null) {
             aVar.f(new j.a("Camera is not active."));
-            this.f46281c = null;
+            this.f46297c = null;
         }
     }
 
     @Override // q.z4.b
     public float d() {
-        Float f10 = (Float) this.f46279a.a(CameraCharacteristics.SCALER_AVAILABLE_MAX_DIGITAL_ZOOM);
+        Float f10 = (Float) this.f46295a.a(CameraCharacteristics.SCALER_AVAILABLE_MAX_DIGITAL_ZOOM);
         if (f10 == null) {
             return 1.0f;
         }
@@ -82,7 +82,7 @@ final class d3 implements z4.b {
 
     @Override // q.z4.b
     public Rect e() {
-        Rect rect = this.f46280b;
+        Rect rect = this.f46296b;
         if (rect != null) {
             return rect;
         }
@@ -91,7 +91,7 @@ final class d3 implements z4.b {
 
     @Override // q.z4.b
     public void f(a.C0551a c0551a) {
-        Rect rect = this.f46280b;
+        Rect rect = this.f46296b;
         if (rect != null) {
             c0551a.g(CaptureRequest.SCALER_CROP_REGION, rect, r0.c.REQUIRED);
         }

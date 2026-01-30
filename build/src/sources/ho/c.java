@@ -7,10 +7,10 @@ import tq.h;
 public final class c implements a.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f27620a;
+    private final b f27636a;
 
     c(b bVar) {
-        this.f27620a = bVar;
+        this.f27636a = bVar;
     }
 
     public static h b(b bVar) {
@@ -19,6 +19,6 @@ public final class c implements a.b {
 
     @Override // ho.a.b
     public a a(c4.e eVar) {
-        return this.f27620a.b(eVar);
+        return this.f27636a.b(eVar);
     }
 }

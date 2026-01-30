@@ -5,7 +5,7 @@ import ui.c;
 final class ma implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final ma f38469a = new ma();
+    static final ma f38485a = new ma();
 
     static {
         c.b a10 = ui.c.a("options");

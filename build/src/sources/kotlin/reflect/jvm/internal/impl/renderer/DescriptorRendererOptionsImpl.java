@@ -55,110 +55,110 @@ public final class DescriptorRendererOptionsImpl implements DescriptorRendererOp
     private final ReadWriteProperty Y;
 
     /* renamed from: a  reason: collision with root package name */
-    private boolean f35311a;
+    private boolean f35327a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final ReadWriteProperty f35312b = d(ClassifierNamePolicy.SOURCE_CODE_QUALIFIED.INSTANCE);
+    private final ReadWriteProperty f35328b = d(ClassifierNamePolicy.SOURCE_CODE_QUALIFIED.INSTANCE);
 
     /* renamed from: c  reason: collision with root package name */
-    private final ReadWriteProperty f35313c;
+    private final ReadWriteProperty f35329c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final ReadWriteProperty f35314d;
+    private final ReadWriteProperty f35330d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final ReadWriteProperty f35315e;
+    private final ReadWriteProperty f35331e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final ReadWriteProperty f35316f;
+    private final ReadWriteProperty f35332f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final ReadWriteProperty f35317g;
+    private final ReadWriteProperty f35333g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final ReadWriteProperty f35318h;
+    private final ReadWriteProperty f35334h;
 
     /* renamed from: i  reason: collision with root package name */
-    private final ReadWriteProperty f35319i;
+    private final ReadWriteProperty f35335i;
 
     /* renamed from: j  reason: collision with root package name */
-    private final ReadWriteProperty f35320j;
+    private final ReadWriteProperty f35336j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final ReadWriteProperty f35321k;
+    private final ReadWriteProperty f35337k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final ReadWriteProperty f35322l;
+    private final ReadWriteProperty f35338l;
 
     /* renamed from: m  reason: collision with root package name */
-    private final ReadWriteProperty f35323m;
+    private final ReadWriteProperty f35339m;
 
     /* renamed from: n  reason: collision with root package name */
-    private final ReadWriteProperty f35324n;
+    private final ReadWriteProperty f35340n;
 
     /* renamed from: o  reason: collision with root package name */
-    private final ReadWriteProperty f35325o;
+    private final ReadWriteProperty f35341o;
 
     /* renamed from: p  reason: collision with root package name */
-    private final ReadWriteProperty f35326p;
+    private final ReadWriteProperty f35342p;
 
     /* renamed from: q  reason: collision with root package name */
-    private final ReadWriteProperty f35327q;
+    private final ReadWriteProperty f35343q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final ReadWriteProperty f35328r;
+    private final ReadWriteProperty f35344r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final ReadWriteProperty f35329s;
+    private final ReadWriteProperty f35345s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final ReadWriteProperty f35330t;
+    private final ReadWriteProperty f35346t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final ReadWriteProperty f35331u;
+    private final ReadWriteProperty f35347u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final ReadWriteProperty f35332v;
+    private final ReadWriteProperty f35348v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final ReadWriteProperty f35333w;
+    private final ReadWriteProperty f35349w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final ReadWriteProperty f35334x;
+    private final ReadWriteProperty f35350x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final ReadWriteProperty f35335y;
+    private final ReadWriteProperty f35351y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final ReadWriteProperty f35336z;
+    private final ReadWriteProperty f35352z;
 
     public DescriptorRendererOptionsImpl() {
         Boolean bool = Boolean.TRUE;
-        this.f35313c = d(bool);
-        this.f35314d = d(bool);
-        this.f35315e = d(DescriptorRendererModifier.ALL_EXCEPT_ANNOTATIONS);
+        this.f35329c = d(bool);
+        this.f35330d = d(bool);
+        this.f35331e = d(DescriptorRendererModifier.ALL_EXCEPT_ANNOTATIONS);
         Boolean bool2 = Boolean.FALSE;
-        this.f35316f = d(bool2);
-        this.f35317g = d(bool2);
-        this.f35318h = d(bool2);
-        this.f35319i = d(bool2);
-        this.f35320j = d(bool2);
-        this.f35321k = d(bool);
-        this.f35322l = d(bool2);
-        this.f35323m = d(bool2);
-        this.f35324n = d(bool2);
-        this.f35325o = d(bool);
-        this.f35326p = d(bool);
-        this.f35327q = d(bool2);
-        this.f35328r = d(bool2);
-        this.f35329s = d(bool2);
-        this.f35330t = d(bool2);
-        this.f35331u = d(bool2);
-        this.f35332v = d(null);
-        this.f35333w = d(bool2);
-        this.f35334x = d(bool2);
-        this.f35335y = d(r.f35364d);
-        this.f35336z = d(s.f35365d);
+        this.f35332f = d(bool2);
+        this.f35333g = d(bool2);
+        this.f35334h = d(bool2);
+        this.f35335i = d(bool2);
+        this.f35336j = d(bool2);
+        this.f35337k = d(bool);
+        this.f35338l = d(bool2);
+        this.f35339m = d(bool2);
+        this.f35340n = d(bool2);
+        this.f35341o = d(bool);
+        this.f35342p = d(bool);
+        this.f35343q = d(bool2);
+        this.f35344r = d(bool2);
+        this.f35345s = d(bool2);
+        this.f35346t = d(bool2);
+        this.f35347u = d(bool2);
+        this.f35348v = d(null);
+        this.f35349w = d(bool2);
+        this.f35350x = d(bool2);
+        this.f35351y = d(r.f35380d);
+        this.f35352z = d(s.f35381d);
         this.A = d(bool);
         this.B = d(OverrideRenderingPolicy.RENDER_OPEN);
         this.C = d(DescriptorRenderer.ValueParametersHandler.DEFAULT.INSTANCE);
@@ -193,7 +193,7 @@ public final class DescriptorRendererOptionsImpl implements DescriptorRendererOp
     }
 
     private final ReadWriteProperty d(final Object obj) {
-        kotlin.properties.a aVar = kotlin.properties.a.f33369a;
+        kotlin.properties.a aVar = kotlin.properties.a.f33385a;
         return new kotlin.properties.c(obj) { // from class: kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptionsImpl$property$$inlined$vetoable$1
             @Override // kotlin.properties.c
             protected boolean beforeChange(KProperty property, Object obj2, Object obj3) {
@@ -252,7 +252,7 @@ public final class DescriptorRendererOptionsImpl implements DescriptorRendererOp
     }
 
     public boolean getActualPropertiesInPrimaryConstructor() {
-        return ((Boolean) this.f35329s.getValue(this, Z[17])).booleanValue();
+        return ((Boolean) this.f35345s.getValue(this, Z[17])).booleanValue();
     }
 
     public boolean getAlwaysRenderModifiers() {
@@ -274,21 +274,21 @@ public final class DescriptorRendererOptionsImpl implements DescriptorRendererOp
     }
 
     public boolean getClassWithPrimaryConstructor() {
-        return ((Boolean) this.f35319i.getValue(this, Z[7])).booleanValue();
+        return ((Boolean) this.f35335i.getValue(this, Z[7])).booleanValue();
     }
 
     @NotNull
     public ClassifierNamePolicy getClassifierNamePolicy() {
-        return (ClassifierNamePolicy) this.f35312b.getValue(this, Z[0]);
+        return (ClassifierNamePolicy) this.f35328b.getValue(this, Z[0]);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
     public boolean getDebugMode() {
-        return ((Boolean) this.f35318h.getValue(this, Z[6])).booleanValue();
+        return ((Boolean) this.f35334h.getValue(this, Z[6])).booleanValue();
     }
 
     public Function1<ValueParameterDescriptor, String> getDefaultParameterValueRenderer() {
-        return (Function1) this.f35336z.getValue(this, Z[24]);
+        return (Function1) this.f35352z.getValue(this, Z[24]);
     }
 
     public boolean getEachAnnotationOnNewLine() {
@@ -297,7 +297,7 @@ public final class DescriptorRendererOptionsImpl implements DescriptorRendererOp
 
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
     public boolean getEnhancedTypes() {
-        return ((Boolean) this.f35323m.getValue(this, Z[11])).booleanValue();
+        return ((Boolean) this.f35339m.getValue(this, Z[11])).booleanValue();
     }
 
     @NotNull
@@ -324,7 +324,7 @@ public final class DescriptorRendererOptionsImpl implements DescriptorRendererOp
     }
 
     public boolean getIncludePropertyConstant() {
-        return ((Boolean) this.f35331u.getValue(this, Z[19])).booleanValue();
+        return ((Boolean) this.f35347u.getValue(this, Z[19])).booleanValue();
     }
 
     public boolean getInformativeErrorType() {
@@ -333,11 +333,11 @@ public final class DescriptorRendererOptionsImpl implements DescriptorRendererOp
 
     @NotNull
     public Set<DescriptorRendererModifier> getModifiers() {
-        return (Set) this.f35315e.getValue(this, Z[3]);
+        return (Set) this.f35331e.getValue(this, Z[3]);
     }
 
     public boolean getNormalizedVisibilities() {
-        return ((Boolean) this.f35324n.getValue(this, Z[12])).booleanValue();
+        return ((Boolean) this.f35340n.getValue(this, Z[12])).booleanValue();
     }
 
     @NotNull
@@ -364,7 +364,7 @@ public final class DescriptorRendererOptionsImpl implements DescriptorRendererOp
     }
 
     public Function1<ConstantValue<?>, String> getPropertyConstantRenderer() {
-        return (Function1) this.f35332v.getValue(this, Z[20]);
+        return (Function1) this.f35348v.getValue(this, Z[20]);
     }
 
     public boolean getReceiverAfterName() {
@@ -380,7 +380,7 @@ public final class DescriptorRendererOptionsImpl implements DescriptorRendererOp
     }
 
     public boolean getRenderConstructorDelegation() {
-        return ((Boolean) this.f35327q.getValue(this, Z[15])).booleanValue();
+        return ((Boolean) this.f35343q.getValue(this, Z[15])).booleanValue();
     }
 
     public boolean getRenderConstructorKeyword() {
@@ -392,15 +392,15 @@ public final class DescriptorRendererOptionsImpl implements DescriptorRendererOp
     }
 
     public boolean getRenderDefaultModality() {
-        return ((Boolean) this.f35326p.getValue(this, Z[14])).booleanValue();
+        return ((Boolean) this.f35342p.getValue(this, Z[14])).booleanValue();
     }
 
     public boolean getRenderDefaultVisibility() {
-        return ((Boolean) this.f35325o.getValue(this, Z[13])).booleanValue();
+        return ((Boolean) this.f35341o.getValue(this, Z[13])).booleanValue();
     }
 
     public boolean getRenderPrimaryConstructorParametersAsProperties() {
-        return ((Boolean) this.f35328r.getValue(this, Z[16])).booleanValue();
+        return ((Boolean) this.f35344r.getValue(this, Z[16])).booleanValue();
     }
 
     public boolean getRenderTypeExpansions() {
@@ -416,11 +416,11 @@ public final class DescriptorRendererOptionsImpl implements DescriptorRendererOp
     }
 
     public boolean getStartFromDeclarationKeyword() {
-        return ((Boolean) this.f35317g.getValue(this, Z[5])).booleanValue();
+        return ((Boolean) this.f35333g.getValue(this, Z[5])).booleanValue();
     }
 
     public boolean getStartFromName() {
-        return ((Boolean) this.f35316f.getValue(this, Z[4])).booleanValue();
+        return ((Boolean) this.f35332f.getValue(this, Z[4])).booleanValue();
     }
 
     @NotNull
@@ -430,15 +430,15 @@ public final class DescriptorRendererOptionsImpl implements DescriptorRendererOp
 
     @NotNull
     public Function1<KotlinType, KotlinType> getTypeNormalizer() {
-        return (Function1) this.f35335y.getValue(this, Z[23]);
+        return (Function1) this.f35351y.getValue(this, Z[23]);
     }
 
     public boolean getUninferredTypeParameterAsName() {
-        return ((Boolean) this.f35330t.getValue(this, Z[18])).booleanValue();
+        return ((Boolean) this.f35346t.getValue(this, Z[18])).booleanValue();
     }
 
     public boolean getUnitReturnType() {
-        return ((Boolean) this.f35321k.getValue(this, Z[9])).booleanValue();
+        return ((Boolean) this.f35337k.getValue(this, Z[9])).booleanValue();
     }
 
     @NotNull
@@ -447,35 +447,35 @@ public final class DescriptorRendererOptionsImpl implements DescriptorRendererOp
     }
 
     public boolean getVerbose() {
-        return ((Boolean) this.f35320j.getValue(this, Z[8])).booleanValue();
+        return ((Boolean) this.f35336j.getValue(this, Z[8])).booleanValue();
     }
 
     public boolean getWithDefinedIn() {
-        return ((Boolean) this.f35313c.getValue(this, Z[1])).booleanValue();
+        return ((Boolean) this.f35329c.getValue(this, Z[1])).booleanValue();
     }
 
     public boolean getWithSourceFileForTopLevel() {
-        return ((Boolean) this.f35314d.getValue(this, Z[2])).booleanValue();
+        return ((Boolean) this.f35330d.getValue(this, Z[2])).booleanValue();
     }
 
     public boolean getWithoutReturnType() {
-        return ((Boolean) this.f35322l.getValue(this, Z[10])).booleanValue();
+        return ((Boolean) this.f35338l.getValue(this, Z[10])).booleanValue();
     }
 
     public boolean getWithoutSuperTypes() {
-        return ((Boolean) this.f35334x.getValue(this, Z[22])).booleanValue();
+        return ((Boolean) this.f35350x.getValue(this, Z[22])).booleanValue();
     }
 
     public boolean getWithoutTypeParameters() {
-        return ((Boolean) this.f35333w.getValue(this, Z[21])).booleanValue();
+        return ((Boolean) this.f35349w.getValue(this, Z[21])).booleanValue();
     }
 
     public final boolean isLocked() {
-        return this.f35311a;
+        return this.f35327a;
     }
 
     public final void lock() {
-        this.f35311a = true;
+        this.f35327a = true;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
@@ -487,12 +487,12 @@ public final class DescriptorRendererOptionsImpl implements DescriptorRendererOp
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
     public void setClassifierNamePolicy(@NotNull ClassifierNamePolicy classifierNamePolicy) {
         Intrinsics.checkNotNullParameter(classifierNamePolicy, "<set-?>");
-        this.f35312b.setValue(this, Z[0], classifierNamePolicy);
+        this.f35328b.setValue(this, Z[0], classifierNamePolicy);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
     public void setDebugMode(boolean z10) {
-        this.f35318h.setValue(this, Z[6], Boolean.valueOf(z10));
+        this.f35334h.setValue(this, Z[6], Boolean.valueOf(z10));
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
@@ -504,7 +504,7 @@ public final class DescriptorRendererOptionsImpl implements DescriptorRendererOp
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
     public void setModifiers(@NotNull Set<? extends DescriptorRendererModifier> set) {
         Intrinsics.checkNotNullParameter(set, "<set-?>");
-        this.f35315e.setValue(this, Z[3], set);
+        this.f35331e.setValue(this, Z[3], set);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
@@ -525,7 +525,7 @@ public final class DescriptorRendererOptionsImpl implements DescriptorRendererOp
 
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
     public void setStartFromName(boolean z10) {
-        this.f35316f.setValue(this, Z[4], Boolean.valueOf(z10));
+        this.f35332f.setValue(this, Z[4], Boolean.valueOf(z10));
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
@@ -536,21 +536,21 @@ public final class DescriptorRendererOptionsImpl implements DescriptorRendererOp
 
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
     public void setVerbose(boolean z10) {
-        this.f35320j.setValue(this, Z[8], Boolean.valueOf(z10));
+        this.f35336j.setValue(this, Z[8], Boolean.valueOf(z10));
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
     public void setWithDefinedIn(boolean z10) {
-        this.f35313c.setValue(this, Z[1], Boolean.valueOf(z10));
+        this.f35329c.setValue(this, Z[1], Boolean.valueOf(z10));
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
     public void setWithoutSuperTypes(boolean z10) {
-        this.f35334x.setValue(this, Z[22], Boolean.valueOf(z10));
+        this.f35350x.setValue(this, Z[22], Boolean.valueOf(z10));
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRendererOptions
     public void setWithoutTypeParameters(boolean z10) {
-        this.f35333w.setValue(this, Z[21], Boolean.valueOf(z10));
+        this.f35349w.setValue(this, Z[21], Boolean.valueOf(z10));
     }
 }

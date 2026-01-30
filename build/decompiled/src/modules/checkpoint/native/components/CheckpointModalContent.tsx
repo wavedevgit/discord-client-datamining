@@ -48,7 +48,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/checkpoint/native/components/CheckpointModalContent.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: CheckpointModalContent, environment: var1
-        _fun86441: for (var _fun86441_ip = 0;;) switch (_fun86441_ip) {
+        _fun86487: for (var _fun86487_ip = 0;;) switch (_fun86487_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.children;
@@ -65,8 +65,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = {};
                 var7 = 16;
                 if (!var8) {
-                    _fun86441_ip = 61;
-                    continue _fun86441
+                    _fun86487_ip = 61;
+                    continue _fun86487
                 }
             case 59:
                 var7 = 0;

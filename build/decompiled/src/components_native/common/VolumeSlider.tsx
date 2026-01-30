@@ -1,7 +1,7 @@
 // components_native/common/VolumeSlider.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun67912: for (var _fun67912_ip = 0;;) switch (_fun67912_ip) {
+    _fun67957: for (var _fun67957_ip = 0;;) switch (_fun67957_ip) {
         case 0:
             var4 = require;
             var2 = exports;
@@ -43,8 +43,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var6 = var6.bind(var8)();
             var9 = 16;
             if (!var6) {
-                _fun67912_ip = 161;
-                continue _fun67912
+                _fun67957_ip = 161;
+                continue _fun67957
             }
         case 159:
             var9 = 0;
@@ -77,15 +77,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = 'components_native/common/VolumeSlider.tsx';
             var3 = var4.bind(var5)(var3);
             var1 = function(arg0) { // Original name: _default, environment: var1
-                _fun67913: for (var _fun67913_ip = 0;;) switch (_fun67913_ip) {
+                _fun67958: for (var _fun67958_ip = 0;;) switch (_fun67958_ip) {
                     case 0:
                         var0 = arg0;
                         var5 = var0.style;
                         var12 = var0.minTrackColor;
                         var3 = undefined;
                         if (!(var12 === var3)) {
-                            _fun67913_ip = 58;
-                            continue _fun67913
+                            _fun67958_ip = 58;
+                            continue _fun67958
                         }
                     case 24:
                         var2 = _closure1_slot1;
@@ -98,8 +98,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     case 58:
                         var10 = var0.maxTrackTintColor;
                         if (!(var10 === var3)) {
-                            _fun67913_ip = 102;
-                            continue _fun67913
+                            _fun67958_ip = 102;
+                            continue _fun67958
                         }
                     case 68:
                         var2 = _closure1_slot1;
@@ -113,8 +113,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var18 = var0.value;
                         var13 = var0.maxVolume;
                         if (!(var13 === var3)) {
-                            _fun67913_ip = 120;
-                            continue _fun67913
+                            _fun67958_ip = 120;
+                            continue _fun67958
                         }
                     case 117:
                         var13 = 200;
@@ -192,8 +192,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var5.onValueChange = var10;
                         var10 = null;
                         if (!(var10 == var9)) {
-                            _fun67913_ip = 430;
-                            continue _fun67913
+                            _fun67958_ip = 430;
+                            continue _fun67958
                         }
                     case 385:
                         var12 = _closure1_slot0;
@@ -205,8 +205,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var12 = var10.bind(var12)();
                         var10 = undefined;
                         if (!var12) {
-                            _fun67913_ip = 427;
-                            continue _fun67913
+                            _fun67958_ip = 427;
+                            continue _fun67958
                         }
                     case 420:
                         var10 = function() { // Environment: var11
@@ -240,4 +240,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.default = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 478, 671, 8430, 5384, 3912, 1234, 4819, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 478, 671, 8433, 5388, 3918, 1234, 4825, 2]);

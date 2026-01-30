@@ -2852,7 +2852,7 @@ public abstract class x1 implements Parcelable {
         }
 
         public /* synthetic */ j(x1 x1Var, v.b bVar, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-            this(x1Var, (i10 & 2) != 0 ? v.b.f39319d : bVar);
+            this(x1Var, (i10 & 2) != 0 ? v.b.f39335d : bVar);
         }
 
         @Override // android.os.Parcelable
@@ -2994,7 +2994,7 @@ public abstract class x1 implements Parcelable {
         }
 
         public /* synthetic */ l(boolean z10, qn.b bVar, float f10, qn.a aVar, List list, long j10, boolean z11, long j11, mn.v vVar, x1 x1Var, s0 s0Var, v.b bVar2, boolean z12, int i10, DefaultConstructorMarker defaultConstructorMarker) {
-            this((i10 & 1) != 0 ? false : z10, (i10 & 2) != 0 ? qn.b.f47521d : bVar, f10, aVar, list, j10, (i10 & 64) != 0 ? true : z11, j11, vVar, x1Var, s0Var, bVar2, z12);
+            this((i10 & 1) != 0 ? false : z10, (i10 & 2) != 0 ? qn.b.f47537d : bVar, f10, aVar, list, j10, (i10 & 64) != 0 ? true : z11, j11, vVar, x1Var, s0Var, bVar2, z12);
         }
 
         public static /* synthetic */ l s(l lVar, boolean z10, qn.b bVar, float f10, qn.a aVar, List list, long j10, boolean z11, long j11, mn.v vVar, x1 x1Var, s0 s0Var, v.b bVar2, boolean z12, int i10, Object obj) {

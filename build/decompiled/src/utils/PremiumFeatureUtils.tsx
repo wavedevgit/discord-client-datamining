@@ -7,13 +7,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var1 = function(arg0) { // Original name: getUserMaxFileSize, environment: var4
-        _fun61465: for (var _fun61465_ip = 0;;) switch (_fun61465_ip) {
+        _fun61509: for (var _fun61509_ip = 0;;) switch (_fun61509_ip) {
             case 0:
                 var2 = arg0;
                 var3 = null;
                 if (!(var3 != var2)) {
-                    _fun61465_ip = 127;
-                    continue _fun61465
+                    _fun61509_ip = 127;
+                    continue _fun61509
                 }
             case 9:
                 var4 = _closure1_slot2;
@@ -22,20 +22,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2.isStaff;
                 var0 = var0.bind(var2)();
                 if (!var0) {
-                    _fun61465_ip = 47;
-                    continue _fun61465
+                    _fun61509_ip = 47;
+                    continue _fun61509
                 }
             case 39:
                 var0 = _closure1_slot6;
                 if (!(var4 !== var0)) {
-                    _fun61465_ip = 121;
-                    continue _fun61465
+                    _fun61509_ip = 121;
+                    continue _fun61509
                 }
             case 47:
                 var0 = var2.premiumType;
                 if (!(var3 != var0)) {
-                    _fun61465_ip = 93;
-                    continue _fun61465
+                    _fun61509_ip = 93;
+                    continue _fun61509
                 }
             case 57:
                 var4 = _closure1_slot0;
@@ -47,21 +47,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3.isPremium;
                 var0 = var0.bind(var3)(var2);
                 if (var0) {
-                    _fun61465_ip = 99;
-                    continue _fun61465
+                    _fun61509_ip = 99;
+                    continue _fun61509
                 }
             case 93:
                 var0 = _closure1_slot3;
-                _fun61465_ip = 119;
-                continue _fun61465;
+                _fun61509_ip = 119;
+                continue _fun61509;
             case 99:
                 var3 = _closure1_slot5;
                 var2 = var2.premiumType;
                 var2 = var3[var2];
                 var0 = var2.fileSize;
             case 119:
-                _fun61465_ip = 125;
-                continue _fun61465;
+                _fun61509_ip = 125;
+                continue _fun61509;
             case 121:
                 var0 = _closure1_slot4;
             case 125:

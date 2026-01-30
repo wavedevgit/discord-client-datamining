@@ -142,7 +142,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/premium/native/gift_code_modal/GiftCodeRedeemModal.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function(arg0) { // Original name: GiftCodeRedeemModal, environment: var3
-        _fun56450: for (var _fun56450_ip = 0;;) switch (_fun56450_ip) {
+        _fun56494: for (var _fun56494_ip = 0;;) switch (_fun56494_ip) {
             case 0:
                 var5 = arg0;
                 var4 = var5.code;
@@ -192,8 +192,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var6.bind(var5)(var3);
                 var10 = var3.bind(var5)(var4, var2);
                 if (!(var0 != var2)) {
-                    _fun56450_ip = 328;
-                    continue _fun56450
+                    _fun56494_ip = 328;
+                    continue _fun56494
                 }
             case 156:
                 var1 = function(arg0) { // Original name: getScreens, environment: var1
@@ -446,8 +446,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0 == var11;
                 var1 = null;
                 if (var2) {
-                    _fun56450_ip = 326;
-                    continue _fun56450
+                    _fun56494_ip = 326;
+                    continue _fun56494
                 }
             case 178:
                 var4 = _closure1_slot5;
@@ -460,8 +460,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = {};
                 var2.screens = var6;
                 if (!(var0 == var10)) {
-                    _fun56450_ip = 267;
-                    continue _fun56450
+                    _fun56494_ip = 267;
+                    continue _fun56494
                 }
             case 219:
                 var8 = {};
@@ -476,8 +476,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.params = var6;
                 var6 = new Array(1);
                 var6[0] = var8;
-                _fun56450_ip = 315;
-                continue _fun56450;
+                _fun56494_ip = 315;
+                continue _fun56494;
             case 267:
                 var8 = {};
                 var7 = _closure1_slot6;
@@ -504,4 +504,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.GiftCodeModalScreens = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 6818, 1613, 33, 3895, 1234, 4661, 4518, 6835, 6898, 6903, 6909, 12027, 12028, 566, 6836, 5744, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 6821, 1613, 33, 3901, 1234, 4667, 4524, 6838, 6901, 6906, 6912, 12049, 12050, 566, 6839, 5747, 2]);

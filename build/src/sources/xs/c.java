@@ -6,17 +6,17 @@ import kotlin.jvm.internal.Intrinsics;
 public final class c extends n {
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f53796d;
+    private final List f53812d;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public c(List missingFields, String str, Throwable th2) {
         super(str, th2);
         Intrinsics.checkNotNullParameter(missingFields, "missingFields");
-        this.f53796d = missingFields;
+        this.f53812d = missingFields;
     }
 
     public final List a() {
-        return this.f53796d;
+        return this.f53812d;
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

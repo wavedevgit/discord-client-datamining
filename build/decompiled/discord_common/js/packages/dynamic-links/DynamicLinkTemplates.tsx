@@ -70,7 +70,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getDefaultDynamicLinkTemplate = var3;
     var1 = function(arg0) { // Original name: getChannelDynamicLinkTemplate, environment: var1
-        _fun93071: for (var _fun93071_ip = 0;;) switch (_fun93071_ip) {
+        _fun93308: for (var _fun93308_ip = 0;;) switch (_fun93308_ip) {
             case 0:
                 var6 = arg0;
                 var0 = global;
@@ -80,8 +80,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.GLOBAL_ENV;
                 var4 = var1.WEBAPP_ENDPOINT;
                 if (var6) {
-                    _fun93071_ip = 44;
-                    continue _fun93071
+                    _fun93308_ip = 44;
+                    continue _fun93308
                 }
             case 38:
                 var6 = '@me';

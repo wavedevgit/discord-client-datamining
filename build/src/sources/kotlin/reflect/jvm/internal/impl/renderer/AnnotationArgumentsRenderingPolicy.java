@@ -8,29 +8,29 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public final class AnnotationArgumentsRenderingPolicy {
 
     /* renamed from: i  reason: collision with root package name */
-    private static final /* synthetic */ AnnotationArgumentsRenderingPolicy[] f35301i;
+    private static final /* synthetic */ AnnotationArgumentsRenderingPolicy[] f35317i;
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f35302o;
+    private static final /* synthetic */ EnumEntries f35318o;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f35303d;
+    private final boolean f35319d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f35304e;
+    private final boolean f35320e;
     public static final AnnotationArgumentsRenderingPolicy NO_ARGUMENTS = new AnnotationArgumentsRenderingPolicy("NO_ARGUMENTS", 0, false, false, 3, null);
     public static final AnnotationArgumentsRenderingPolicy UNLESS_EMPTY = new AnnotationArgumentsRenderingPolicy("UNLESS_EMPTY", 1, true, false, 2, null);
     public static final AnnotationArgumentsRenderingPolicy ALWAYS_PARENTHESIZED = new AnnotationArgumentsRenderingPolicy("ALWAYS_PARENTHESIZED", 2, true, true);
 
     static {
         AnnotationArgumentsRenderingPolicy[] a10 = a();
-        f35301i = a10;
-        f35302o = pr.a.a(a10);
+        f35317i = a10;
+        f35318o = pr.a.a(a10);
     }
 
     private AnnotationArgumentsRenderingPolicy(String str, int i10, boolean z10, boolean z11) {
-        this.f35303d = z10;
-        this.f35304e = z11;
+        this.f35319d = z10;
+        this.f35320e = z11;
     }
 
     private static final /* synthetic */ AnnotationArgumentsRenderingPolicy[] a() {
@@ -42,15 +42,15 @@ public final class AnnotationArgumentsRenderingPolicy {
     }
 
     public static AnnotationArgumentsRenderingPolicy[] values() {
-        return (AnnotationArgumentsRenderingPolicy[]) f35301i.clone();
+        return (AnnotationArgumentsRenderingPolicy[]) f35317i.clone();
     }
 
     public final boolean getIncludeAnnotationArguments() {
-        return this.f35303d;
+        return this.f35319d;
     }
 
     public final boolean getIncludeEmptyAnnotationArguments() {
-        return this.f35304e;
+        return this.f35320e;
     }
 
     /* synthetic */ AnnotationArgumentsRenderingPolicy(String str, int i10, boolean z10, boolean z11, int i11, DefaultConstructorMarker defaultConstructorMarker) {

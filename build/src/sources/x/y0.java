@@ -6,7 +6,7 @@ import android.util.Log;
 public abstract class y0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static int f53088a = 3;
+    private static int f53104a = 3;
 
     public static void a(String str, String str2) {
         String k10 = k(str);
@@ -48,7 +48,7 @@ public abstract class y0 {
     }
 
     private static boolean g(String str, int i10) {
-        if (f53088a > i10 && !Log.isLoggable(str, i10)) {
+        if (f53104a > i10 && !Log.isLoggable(str, i10)) {
             return false;
         }
         return true;
@@ -60,12 +60,12 @@ public abstract class y0 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void i() {
-        f53088a = 3;
+        f53104a = 3;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void j(int i10) {
-        f53088a = i10;
+        f53104a = i10;
     }
 
     private static String k(String str) {

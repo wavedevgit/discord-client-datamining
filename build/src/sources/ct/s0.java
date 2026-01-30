@@ -34,9 +34,9 @@ public final class s0 implements dt.d {
 
     private final void e(SerialDescriptor serialDescriptor, KClass kClass) {
         zs.k kind = serialDescriptor.getKind();
-        if (!(kind instanceof zs.d) && !Intrinsics.areEqual(kind, k.a.f56100a)) {
+        if (!(kind instanceof zs.d) && !Intrinsics.areEqual(kind, k.a.f56116a)) {
             if (!this.f21403a) {
-                if (!Intrinsics.areEqual(kind, l.b.f56103a) && !Intrinsics.areEqual(kind, l.c.f56104a) && !(kind instanceof zs.e) && !(kind instanceof k.b)) {
+                if (!Intrinsics.areEqual(kind, l.b.f56119a) && !Intrinsics.areEqual(kind, l.c.f56120a) && !(kind instanceof zs.e) && !(kind instanceof k.b)) {
                     return;
                 }
                 throw new IllegalArgumentException("Serializer for " + kClass.getSimpleName() + " of kind " + kind + " cannot be serialized polymorphically with class discriminator.");

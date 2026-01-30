@@ -5,51 +5,51 @@ import ui.c;
 final class k5 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final k5 f43208a = new k5();
+    static final k5 f43224a = new k5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43209b;
+    private static final ui.c f43225b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43210c;
+    private static final ui.c f43226c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f43211d;
+    private static final ui.c f43227d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f43212e;
+    private static final ui.c f43228e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final ui.c f43213f;
+    private static final ui.c f43229f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final ui.c f43214g;
+    private static final ui.c f43230g;
 
     static {
         c.b a10 = ui.c.a("landmarkMode");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43209b = a10.b(s1Var.b()).a();
+        f43225b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("classificationMode");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43210c = a11.b(s1Var2.b()).a();
+        f43226c = a11.b(s1Var2.b()).a();
         c.b a12 = ui.c.a("performanceMode");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f43211d = a12.b(s1Var3.b()).a();
+        f43227d = a12.b(s1Var3.b()).a();
         c.b a13 = ui.c.a("contourMode");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f43212e = a13.b(s1Var4.b()).a();
+        f43228e = a13.b(s1Var4.b()).a();
         c.b a14 = ui.c.a("isTrackingEnabled");
         s1 s1Var5 = new s1();
         s1Var5.a(5);
-        f43213f = a14.b(s1Var5.b()).a();
+        f43229f = a14.b(s1Var5.b()).a();
         c.b a15 = ui.c.a("minFaceSize");
         s1 s1Var6 = new s1();
         s1Var6.a(6);
-        f43214g = a15.b(s1Var6.b()).a();
+        f43230g = a15.b(s1Var6.b()).a();
     }
 
     private k5() {
@@ -59,11 +59,11 @@ final class k5 implements ui.d {
     public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
         n9 n9Var = (n9) obj;
         ui.e eVar = (ui.e) obj2;
-        eVar.b(f43209b, n9Var.c());
-        eVar.b(f43210c, n9Var.a());
-        eVar.b(f43211d, n9Var.d());
-        eVar.b(f43212e, n9Var.b());
-        eVar.b(f43213f, n9Var.e());
-        eVar.b(f43214g, n9Var.f());
+        eVar.b(f43225b, n9Var.c());
+        eVar.b(f43226c, n9Var.a());
+        eVar.b(f43227d, n9Var.d());
+        eVar.b(f43228e, n9Var.b());
+        eVar.b(f43229f, n9Var.e());
+        eVar.b(f43230g, n9Var.f());
     }
 }

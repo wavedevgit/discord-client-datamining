@@ -50,7 +50,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot4 = var3;
     var3 = var6.memo;
     var1 = function() { // Original name: ConnectionsSettingScreen, environment: var1
-        _fun82148: for (var _fun82148_ip = 0;;) switch (_fun82148_ip) {
+        _fun82194: for (var _fun82194_ip = 0;;) switch (_fun82194_ip) {
             case 0:
                 var4 = _closure1_slot0;
                 var5 = _closure1_slot2;
@@ -71,8 +71,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var4 == var2;
                 var4 = undefined;
                 if (var5) {
-                    _fun82148_ip = 86;
-                    continue _fun82148
+                    _fun82194_ip = 86;
+                    continue _fun82194
                 }
             case 80:
                 var4 = var2.selectedPlatformType;
@@ -144,4 +144,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3237, 10483, 1307, 1469, 7509, 8844, 1234, 10484, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 3237, 10489, 1307, 1469, 7512, 8848, 1234, 10490, 2]);

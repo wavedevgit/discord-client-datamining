@@ -40,7 +40,7 @@ public final class SmsAutofillManagerModule extends ReactContextBaseJavaModule {
     public static final Unit smsAutofillManager$lambda$0(SmsAutofillManagerModule smsAutofillManagerModule, ReactApplicationContext reactApplicationContext, String it) {
         Intrinsics.checkNotNullParameter(it, "it");
         smsAutofillManagerModule.reactEvents.emitModuleEvent(reactApplicationContext, new VerificationCodeReceivedEvent(it));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @ReactMethod

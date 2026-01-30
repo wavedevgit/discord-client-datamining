@@ -53,11 +53,11 @@ final class MediaEngineModule$connectionInstanceConfigureConnectionRetries$1 ext
             }
         }
         this.this$0.getMediaEngine().connectionInstanceConfigureConnectionRetries$media_engine_release((int) this.$connectionId, (int) this.$baseDelayMs, (int) this.$maxDelayMs, (int) this.$maxAttempts);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$connectionInstanceConfigureConnectionRetries$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((MediaEngineModule$connectionInstanceConfigureConnectionRetries$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

@@ -5,10 +5,10 @@ import java.io.Serializable;
 public final class h implements Comparable, Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final h f32749d = new h(0);
+    public static final h f32765d = new h(0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final h f32750e = new h(1);
+    public static final h f32766e = new h(1);
     private final long days;
 
     private h(long j10) {
@@ -17,10 +17,10 @@ public final class h implements Comparable, Serializable {
 
     public static h e(long j10) {
         if (j10 == 0) {
-            return f32749d;
+            return f32765d;
         }
         if (j10 == 1) {
-            return f32750e;
+            return f32766e;
         }
         return new h(j10);
     }

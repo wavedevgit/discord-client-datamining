@@ -6,46 +6,46 @@ import java.util.Arrays;
 abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final char[] f49616a = ";<>@[\\]_`~!\r\t,:\n-.$/\"|*()?{}'".toCharArray();
+    private static final char[] f49632a = ";<>@[\\]_`~!\r\t,:\n-.$/\"|*()?{}'".toCharArray();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final char[] f49617b = "0123456789&\r\t,:#-.$/+%*=^".toCharArray();
+    private static final char[] f49633b = "0123456789&\r\t,:#-.$/+%*=^".toCharArray();
 
     /* renamed from: c  reason: collision with root package name */
-    private static final BigInteger[] f49618c;
+    private static final BigInteger[] f49634c;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f49619a;
+        static final /* synthetic */ int[] f49635a;
 
         static {
             int[] iArr = new int[b.values().length];
-            f49619a = iArr;
+            f49635a = iArr;
             try {
                 iArr[b.ALPHA.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f49619a[b.LOWER.ordinal()] = 2;
+                f49635a[b.LOWER.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                f49619a[b.MIXED.ordinal()] = 3;
+                f49635a[b.MIXED.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             try {
-                f49619a[b.PUNCT.ordinal()] = 4;
+                f49635a[b.PUNCT.ordinal()] = 4;
             } catch (NoSuchFieldError unused4) {
             }
             try {
-                f49619a[b.ALPHA_SHIFT.ordinal()] = 5;
+                f49635a[b.ALPHA_SHIFT.ordinal()] = 5;
             } catch (NoSuchFieldError unused5) {
             }
             try {
-                f49619a[b.PUNCT_SHIFT.ordinal()] = 6;
+                f49635a[b.PUNCT_SHIFT.ordinal()] = 6;
             } catch (NoSuchFieldError unused6) {
             }
         }
@@ -64,13 +64,13 @@ abstract class e {
 
     static {
         BigInteger[] bigIntegerArr = new BigInteger[16];
-        f49618c = bigIntegerArr;
+        f49634c = bigIntegerArr;
         bigIntegerArr[0] = BigInteger.ONE;
         BigInteger valueOf = BigInteger.valueOf(900L);
         bigIntegerArr[1] = valueOf;
         int i10 = 2;
         while (true) {
-            BigInteger[] bigIntegerArr2 = f49618c;
+            BigInteger[] bigIntegerArr2 = f49634c;
             if (i10 < bigIntegerArr2.length) {
                 bigIntegerArr2[i10] = bigIntegerArr2[i10 - 1].multiply(valueOf);
                 i10++;
@@ -266,7 +266,7 @@ abstract class e {
     private static String c(int[] iArr, int i10) {
         BigInteger bigInteger = BigInteger.ZERO;
         for (int i11 = 0; i11 < i10; i11++) {
-            bigInteger = bigInteger.add(f49618c[(i10 - i11) - 1].multiply(BigInteger.valueOf(iArr[i11])));
+            bigInteger = bigInteger.add(f49634c[(i10 - i11) - 1].multiply(BigInteger.valueOf(iArr[i11])));
         }
         String bigInteger2 = bigInteger.toString();
         if (bigInteger2.charAt(0) == '1') {

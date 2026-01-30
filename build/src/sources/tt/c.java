@@ -17,25 +17,25 @@ import okio.ByteString;
 public final class c {
 
     /* renamed from: c  reason: collision with root package name */
-    public static final b f49913c = new b(null);
+    public static final b f49929c = new b(null);
 
     /* renamed from: d  reason: collision with root package name */
-    public static final c f49914d = new a().a();
+    public static final c f49930d = new a().a();
 
     /* renamed from: a  reason: collision with root package name */
-    private final Set f49915a;
+    private final Set f49931a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final gu.c f49916b;
+    private final gu.c f49932b;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final List f49917a = new ArrayList();
+        private final List f49933a = new ArrayList();
 
         public final c a() {
-            return new c(CollectionsKt.l1(this.f49917a), null, 2, null);
+            return new c(CollectionsKt.l1(this.f49933a), null, 2, null);
         }
     }
 
@@ -55,7 +55,7 @@ public final class c {
 
         public final ByteString b(X509Certificate x509Certificate) {
             Intrinsics.checkNotNullParameter(x509Certificate, "<this>");
-            ByteString.a aVar = ByteString.f44363o;
+            ByteString.a aVar = ByteString.f44379o;
             byte[] encoded = x509Certificate.getPublicKey().getEncoded();
             Intrinsics.checkNotNullExpressionValue(encoded, "publicKey.encoded");
             return ByteString.a.j(aVar, encoded, 0, 0, 3, null).F();
@@ -71,24 +71,24 @@ public final class c {
     public static final class C0656c extends Lambda implements Function0 {
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ List f49919e;
+        final /* synthetic */ List f49935e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ String f49920i;
+        final /* synthetic */ String f49936i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         C0656c(List list, String str) {
             super(0);
-            this.f49919e = list;
-            this.f49920i = str;
+            this.f49935e = list;
+            this.f49936i = str;
         }
 
         @Override // kotlin.jvm.functions.Function0
         public final List invoke() {
             List list;
             gu.c d10 = c.this.d();
-            if (d10 == null || (list = d10.a(this.f49919e, this.f49920i)) == null) {
-                list = this.f49919e;
+            if (d10 == null || (list = d10.a(this.f49935e, this.f49936i)) == null) {
+                list = this.f49935e;
             }
             List<Certificate> list2 = list;
             ArrayList arrayList = new ArrayList(CollectionsKt.w(list2, 10));
@@ -102,8 +102,8 @@ public final class c {
 
     public c(Set pins, gu.c cVar) {
         Intrinsics.checkNotNullParameter(pins, "pins");
-        this.f49915a = pins;
-        this.f49916b = cVar;
+        this.f49931a = pins;
+        this.f49932b = cVar;
     }
 
     public final void a(String hostname, List peerCertificates) {
@@ -132,7 +132,7 @@ public final class c {
         sb2.append("\n  Peer certificate chain:");
         for (X509Certificate x509Certificate2 : list) {
             sb2.append("\n    ");
-            sb2.append(f49913c.a(x509Certificate2));
+            sb2.append(f49929c.a(x509Certificate2));
             sb2.append(": ");
             sb2.append(x509Certificate2.getSubjectDN().getName());
         }
@@ -152,7 +152,7 @@ public final class c {
     public final List c(String hostname) {
         Intrinsics.checkNotNullParameter(hostname, "hostname");
         List l10 = CollectionsKt.l();
-        Iterator it = this.f49915a.iterator();
+        Iterator it = this.f49931a.iterator();
         if (!it.hasNext()) {
             return l10;
         }
@@ -161,21 +161,21 @@ public final class c {
     }
 
     public final gu.c d() {
-        return this.f49916b;
+        return this.f49932b;
     }
 
     public final c e(gu.c certificateChainCleaner) {
         Intrinsics.checkNotNullParameter(certificateChainCleaner, "certificateChainCleaner");
-        if (Intrinsics.areEqual(this.f49916b, certificateChainCleaner)) {
+        if (Intrinsics.areEqual(this.f49932b, certificateChainCleaner)) {
             return this;
         }
-        return new c(this.f49915a, certificateChainCleaner);
+        return new c(this.f49931a, certificateChainCleaner);
     }
 
     public boolean equals(Object obj) {
         if (obj instanceof c) {
             c cVar = (c) obj;
-            if (Intrinsics.areEqual(cVar.f49915a, this.f49915a) && Intrinsics.areEqual(cVar.f49916b, this.f49916b)) {
+            if (Intrinsics.areEqual(cVar.f49931a, this.f49931a) && Intrinsics.areEqual(cVar.f49932b, this.f49932b)) {
                 return true;
             }
             return false;
@@ -185,8 +185,8 @@ public final class c {
 
     public int hashCode() {
         int i10;
-        int hashCode = (1517 + this.f49915a.hashCode()) * 41;
-        gu.c cVar = this.f49916b;
+        int hashCode = (1517 + this.f49931a.hashCode()) * 41;
+        gu.c cVar = this.f49932b;
         if (cVar != null) {
             i10 = cVar.hashCode();
         } else {

@@ -43,7 +43,7 @@ public final class EmbeddedActivityInviteViewHolder extends MessagePartViewHolde
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33282a;
+                unit = Unit.f33298a;
                 return unit;
             }
         }, new EmbeddedActivityInviteViewHolder$bind$1$10(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$11(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$12(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$13(this.eventHandler), new EmbeddedActivityInviteViewHolder$bind$1$14(this.eventHandler));

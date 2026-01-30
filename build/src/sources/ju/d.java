@@ -10,27 +10,27 @@ import okio.ByteString;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final ByteString f32790a;
+    private static final ByteString f32806a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ByteString f32791b;
+    private static final ByteString f32807b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ByteString f32792c;
+    private static final ByteString f32808c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ByteString f32793d;
+    private static final ByteString f32809d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ByteString f32794e;
+    private static final ByteString f32810e;
 
     static {
-        ByteString.a aVar = ByteString.f44363o;
-        f32790a = aVar.g("/");
-        f32791b = aVar.g("\\");
-        f32792c = aVar.g("/\\");
-        f32793d = aVar.g(".");
-        f32794e = aVar.g("..");
+        ByteString.a aVar = ByteString.f44379o;
+        f32806a = aVar.g("/");
+        f32807b = aVar.g("\\");
+        f32808c = aVar.g("/\\");
+        f32809d = aVar.g(".");
+        f32810e = aVar.g("..");
     }
 
     public static final c0 j(c0 c0Var, c0 child, boolean z10) {
@@ -39,7 +39,7 @@ public abstract class d {
         if (!child.isAbsolute() && child.q() == null) {
             ByteString m10 = m(c0Var);
             if (m10 == null && (m10 = m(child)) == null) {
-                m10 = s(c0.f31214i);
+                m10 = s(c0.f31230i);
             }
             Buffer buffer = new Buffer();
             buffer.a2(c0Var.d());
@@ -59,22 +59,22 @@ public abstract class d {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final int l(c0 c0Var) {
-        int y10 = ByteString.y(c0Var.d(), f32790a, 0, 2, null);
+        int y10 = ByteString.y(c0Var.d(), f32806a, 0, 2, null);
         if (y10 != -1) {
             return y10;
         }
-        return ByteString.y(c0Var.d(), f32791b, 0, 2, null);
+        return ByteString.y(c0Var.d(), f32807b, 0, 2, null);
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final ByteString m(c0 c0Var) {
         ByteString d10 = c0Var.d();
-        ByteString byteString = f32790a;
+        ByteString byteString = f32806a;
         if (ByteString.t(d10, byteString, 0, 2, null) != -1) {
             return byteString;
         }
         ByteString d11 = c0Var.d();
-        ByteString byteString2 = f32791b;
+        ByteString byteString2 = f32807b;
         if (ByteString.t(d11, byteString2, 0, 2, null) == -1) {
             return null;
         }
@@ -83,7 +83,7 @@ public abstract class d {
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final boolean n(c0 c0Var) {
-        if (!c0Var.d().i(f32794e) || (c0Var.d().G() != 2 && !c0Var.d().A(c0Var.d().G() - 3, f32790a, 0, 1) && !c0Var.d().A(c0Var.d().G() - 3, f32791b, 0, 1))) {
+        if (!c0Var.d().i(f32810e) || (c0Var.d().G() != 2 && !c0Var.d().A(c0Var.d().G() - 3, f32806a, 0, 1) && !c0Var.d().A(c0Var.d().G() - 3, f32807b, 0, 1))) {
             return false;
         }
         return true;
@@ -101,7 +101,7 @@ public abstract class d {
             if (c0Var.d().G() <= 2 || c0Var.d().j(1) != 92) {
                 return 1;
             }
-            int r10 = c0Var.d().r(f32791b, 2);
+            int r10 = c0Var.d().r(f32807b, 2);
             if (r10 == -1) {
                 return c0Var.d().G();
             }
@@ -121,7 +121,7 @@ public abstract class d {
     }
 
     private static final boolean p(Buffer buffer, ByteString byteString) {
-        if (!Intrinsics.areEqual(byteString, f32791b) || buffer.size() < 2 || buffer.E0(1L) != 58) {
+        if (!Intrinsics.areEqual(byteString, f32807b) || buffer.size() < 2 || buffer.E0(1L) != 58) {
             return false;
         }
         char E0 = (char) buffer.E0(0L);
@@ -144,8 +144,8 @@ public abstract class d {
         ByteString byteString2 = null;
         int i10 = 0;
         while (true) {
-            if (!buffer.p0(0L, f32790a)) {
-                byteString = f32791b;
+            if (!buffer.p0(0L, f32806a)) {
+                byteString = f32807b;
                 if (!buffer.p0(0L, byteString)) {
                     break;
                 }
@@ -169,10 +169,10 @@ public abstract class d {
             Intrinsics.checkNotNull(byteString2);
             buffer2.a2(byteString2);
         } else {
-            long c02 = buffer.c0(f32792c);
+            long c02 = buffer.c0(f32808c);
             if (byteString2 == null) {
                 if (c02 == -1) {
-                    byteString2 = s(c0.f31214i);
+                    byteString2 = s(c0.f31230i);
                 } else {
                     byteString2 = r(buffer.E0(c02));
                 }
@@ -192,14 +192,14 @@ public abstract class d {
         }
         ArrayList arrayList = new ArrayList();
         while (!buffer.o1()) {
-            long c03 = buffer.c0(f32792c);
+            long c03 = buffer.c0(f32808c);
             if (c03 == -1) {
                 f12 = buffer.L1();
             } else {
                 f12 = buffer.f1(c03);
                 buffer.readByte();
             }
-            ByteString byteString3 = f32794e;
+            ByteString byteString3 = f32810e;
             if (Intrinsics.areEqual(f12, byteString3)) {
                 if (!z12 || !arrayList.isEmpty()) {
                     if (z10 && (z12 || (!arrayList.isEmpty() && !Intrinsics.areEqual(CollectionsKt.z0(arrayList), byteString3)))) {
@@ -210,7 +210,7 @@ public abstract class d {
                         arrayList.add(f12);
                     }
                 }
-            } else if (!Intrinsics.areEqual(f12, f32793d) && !Intrinsics.areEqual(f12, ByteString.f44364p)) {
+            } else if (!Intrinsics.areEqual(f12, f32809d) && !Intrinsics.areEqual(f12, ByteString.f44380p)) {
                 arrayList.add(f12);
             }
         }
@@ -222,7 +222,7 @@ public abstract class d {
             buffer2.a2((ByteString) arrayList.get(i11));
         }
         if (buffer2.size() == 0) {
-            buffer2.a2(f32793d);
+            buffer2.a2(f32809d);
         }
         return new c0(buffer2.L1());
     }
@@ -230,20 +230,20 @@ public abstract class d {
     private static final ByteString r(byte b10) {
         if (b10 != 47) {
             if (b10 == 92) {
-                return f32791b;
+                return f32807b;
             }
             throw new IllegalArgumentException("not a directory separator: " + ((int) b10));
         }
-        return f32790a;
+        return f32806a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final ByteString s(String str) {
         if (Intrinsics.areEqual(str, "/")) {
-            return f32790a;
+            return f32806a;
         }
         if (Intrinsics.areEqual(str, "\\")) {
-            return f32791b;
+            return f32807b;
         }
         throw new IllegalArgumentException("not a directory separator: " + str);
     }

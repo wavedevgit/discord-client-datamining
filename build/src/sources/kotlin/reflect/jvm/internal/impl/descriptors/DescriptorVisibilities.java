@@ -45,16 +45,16 @@ public class DescriptorVisibilities {
     public static final DescriptorVisibility UNKNOWN;
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f33577a;
+    private static final Map f33593a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ReceiverValue f33578b;
+    private static final ReceiverValue f33594b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ModuleVisibilityHelper f33579c;
+    private static final ModuleVisibilityHelper f33595c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final Map f33580d;
+    private static final Map f33596d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static class a implements ReceiverValue {
@@ -206,7 +206,7 @@ public class DescriptorVisibilities {
                 if (receiverValue == DescriptorVisibilities.ALWAYS_SUITABLE_RECEIVER) {
                     return true;
                 }
-                if (receiverValue != DescriptorVisibilities.f33578b && (parentOfType = DescriptorUtils.getParentOfType(declarationDescriptorWithVisibility, ClassDescriptor.class)) != null && (receiverValue instanceof ThisClassReceiver)) {
+                if (receiverValue != DescriptorVisibilities.f33594b && (parentOfType = DescriptorUtils.getParentOfType(declarationDescriptorWithVisibility, ClassDescriptor.class)) != null && (receiverValue instanceof ThisClassReceiver)) {
                     return ((ThisClassReceiver) receiverValue).getClassDescriptor().getOriginal().equals(parentOfType.getOriginal());
                 }
             }
@@ -254,7 +254,7 @@ public class DescriptorVisibilities {
             if (!(declarationDescriptorWithVisibility instanceof CallableMemberDescriptor) || (declarationDescriptorWithVisibility instanceof ConstructorDescriptor) || receiverValue == DescriptorVisibilities.ALWAYS_SUITABLE_RECEIVER) {
                 return true;
             }
-            if (receiverValue == DescriptorVisibilities.f33578b || receiverValue == null) {
+            if (receiverValue == DescriptorVisibilities.f33594b || receiverValue == null) {
                 return false;
             }
             if (receiverValue instanceof SuperCallReceiverValue) {
@@ -326,7 +326,7 @@ public class DescriptorVisibilities {
             if (!DescriptorUtils.getContainingModule(declarationDescriptor).shouldSeeInternalsOf(DescriptorUtils.getContainingModule(declarationDescriptorWithVisibility))) {
                 return false;
             }
-            return DescriptorVisibilities.f33579c.isInFriendModule(declarationDescriptorWithVisibility, declarationDescriptor);
+            return DescriptorVisibilities.f33595c.isInFriendModule(declarationDescriptorWithVisibility, declarationDescriptor);
         }
     }
 
@@ -507,9 +507,9 @@ public class DescriptorVisibilities {
         newHashMapWithExpectedSize.put(gVar, 1);
         newHashMapWithExpectedSize.put(fVar, 1);
         newHashMapWithExpectedSize.put(hVar, 2);
-        f33577a = Collections.unmodifiableMap(newHashMapWithExpectedSize);
+        f33593a = Collections.unmodifiableMap(newHashMapWithExpectedSize);
         DEFAULT_VISIBILITY = hVar;
-        f33578b = new a();
+        f33594b = new a();
         ALWAYS_SUITABLE_RECEIVER = new b();
         FALSE_IF_PROTECTED = new c();
         Iterator it = ServiceLoader.load(ModuleVisibilityHelper.class, ModuleVisibilityHelper.class.getClassLoader()).iterator();
@@ -518,8 +518,8 @@ public class DescriptorVisibilities {
         } else {
             moduleVisibilityHelper = ModuleVisibilityHelper.EMPTY.INSTANCE;
         }
-        f33579c = moduleVisibilityHelper;
-        f33580d = new HashMap();
+        f33595c = moduleVisibilityHelper;
+        f33596d = new HashMap();
         d(dVar);
         d(eVar);
         d(fVar);
@@ -702,7 +702,7 @@ public class DescriptorVisibilities {
     }
 
     private static void d(DescriptorVisibility descriptorVisibility) {
-        f33580d.put(descriptorVisibility.getDelegate(), descriptorVisibility);
+        f33596d.put(descriptorVisibility.getDelegate(), descriptorVisibility);
     }
 
     public static DeclarationDescriptorWithVisibility findInvisibleMember(ReceiverValue receiverValue, @NotNull DeclarationDescriptorWithVisibility declarationDescriptorWithVisibility, @NotNull DeclarationDescriptor declarationDescriptor, boolean z10) {
@@ -766,7 +766,7 @@ public class DescriptorVisibilities {
         if (visibility == null) {
             a(15);
         }
-        DescriptorVisibility descriptorVisibility = (DescriptorVisibility) f33580d.get(visibility);
+        DescriptorVisibility descriptorVisibility = (DescriptorVisibility) f33596d.get(visibility);
         if (descriptorVisibility != null) {
             return descriptorVisibility;
         }

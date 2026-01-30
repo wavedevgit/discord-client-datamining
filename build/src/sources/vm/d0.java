@@ -18,37 +18,37 @@ public abstract class d0 {
     public static final class a extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ c f51218d;
+        final /* synthetic */ c f51234d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ CoroutineContext f51219e;
+        final /* synthetic */ CoroutineContext f51235e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Function2 f51220i;
+        final /* synthetic */ Function2 f51236i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(c cVar, CoroutineContext coroutineContext, Function2 function2) {
             super(0);
-            this.f51218d = cVar;
-            this.f51219e = coroutineContext;
-            this.f51220i = function2;
+            this.f51234d = cVar;
+            this.f51235e = coroutineContext;
+            this.f51236i = function2;
         }
 
         @Override // kotlin.jvm.functions.Function0
         public /* bridge */ /* synthetic */ Object invoke() {
             m1232invoke();
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         /* renamed from: invoke  reason: collision with other method in class */
         public final void m1232invoke() {
-            gs.g.c(this.f51218d.b(), this.f51219e, gs.c0.f27147o, this.f51220i);
+            gs.g.c(this.f51234d.b(), this.f51235e, gs.c0.f27163o, this.f51236i);
         }
     }
 
     private static final c a(View view) {
         c cVar;
-        Object tag = view.getTag(q.f51281b);
+        Object tag = view.getTag(q.f51297b);
         c cVar2 = null;
         if (tag instanceof c) {
             cVar = (c) tag;
@@ -59,7 +59,7 @@ public abstract class d0 {
             cVar2 = cVar;
         }
         if (cVar2 == null) {
-            LifecycleOwner a10 = wm.c.f52690a.a(view);
+            LifecycleOwner a10 = wm.c.f52706a.a(view);
             if (a10 != null) {
                 androidx.lifecycle.j a11 = androidx.lifecycle.p.a(a10);
                 StringBuilder sb2 = new StringBuilder();
@@ -79,7 +79,7 @@ public abstract class d0 {
                 String sb4 = sb2.toString();
                 Intrinsics.checkNotNullExpressionValue(sb4, "StringBuilder().apply(builderAction).toString()");
                 c cVar3 = new c(kotlinx.coroutines.i.j(a11, new gs.b0(sb4)));
-                view.setTag(q.f51281b, cVar3);
+                view.setTag(q.f51297b, cVar3);
                 view.addOnAttachStateChangeListener(cVar3);
                 return cVar3;
             }
@@ -92,7 +92,7 @@ public abstract class d0 {
         Intrinsics.checkNotNullParameter(view, "<this>");
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(block, "block");
-        if (context.l(Job.f36291j) == null) {
+        if (context.l(Job.f36307j) == null) {
             c a10 = a(view);
             a aVar = new a(a10, context, block);
             if (view.isAttachedToWindow()) {
@@ -107,7 +107,7 @@ public abstract class d0 {
 
     public static /* synthetic */ Job c(View view, CoroutineContext coroutineContext, Function2 function2, int i10, Object obj) {
         if ((i10 & 1) != 0) {
-            coroutineContext = kotlin.coroutines.e.f33356d;
+            coroutineContext = kotlin.coroutines.e.f33372d;
         }
         return b(view, coroutineContext, function2);
     }

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var14
-        _fun48969: for (var _fun48969_ip = 0;;) switch (_fun48969_ip) {
+        _fun49016: for (var _fun49016_ip = 0;;) switch (_fun49016_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun48969_ip = 74;
-                continue _fun48969;
+                _fun49016_ip = 74;
+                continue _fun49016;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -67,7 +67,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot19 = var15;
     var11 = function(arg0) { // Original name: handleResetAllPending, environment: var14
-        _fun48974: for (var _fun48974_ip = 0;;) switch (_fun48974_ip) {
+        _fun49021: for (var _fun49021_ip = 0;;) switch (_fun49021_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.guildId;
@@ -91,8 +91,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot17;
                 var4 = null;
                 if (!(var4 == var3)) {
-                    _fun48974_ip = 93;
-                    continue _fun48974
+                    _fun49021_ip = 93;
+                    continue _fun49021
                 }
             case 89:
                 var3 = _closure1_slot9;
@@ -104,7 +104,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot20 = var11;
     var13 = function(arg0) { // Original name: handleResetPendingAccountChanges, environment: var14
-        _fun48975: for (var _fun48975_ip = 0;;) switch (_fun48975_ip) {
+        _fun49022: for (var _fun49022_ip = 0;;) switch (_fun49022_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.guildId;
@@ -115,16 +115,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = null;
                 var0 = var4;
                 if (!(var6 == var4)) {
-                    _fun48975_ip = 41;
-                    continue _fun48975
+                    _fun49022_ip = 41;
+                    continue _fun49022
                 }
             case 37:
                 var0 = _closure1_slot9;
             case 41:
                 var0 = var3[var0];
                 if (!(var6 == var0)) {
-                    _fun48975_ip = 51;
-                    continue _fun48975
+                    _fun49022_ip = 51;
+                    continue _fun49022
                 }
             case 49:
                 var0 = {};
@@ -133,15 +133,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.length;
                 var0 = 0;
                 if (!(var0 !== var1)) {
-                    _fun48975_ip = 169;
-                    continue _fun48975
+                    _fun49022_ip = 169;
+                    continue _fun49022
                 }
             case 67:
                 var3 = _closure1_slot14;
                 var2 = var4;
                 if (!(var6 == var4)) {
-                    _fun48975_ip = 82;
-                    continue _fun48975
+                    _fun49022_ip = 82;
+                    continue _fun49022
                 }
             case 78:
                 var2 = _closure1_slot9;
@@ -149,8 +149,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var0 = _closure1_slot14;
                 if (!(var6 == var4)) {
-                    _fun48975_ip = 96;
-                    continue _fun48975
+                    _fun49022_ip = 96;
+                    continue _fun49022
                 }
             case 92:
                 var4 = _closure1_slot9;
@@ -180,7 +180,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot21 = var13;
     var12 = function(arg0) { // Original name: handleResetPendingProfileChanges, environment: var14
-        _fun48976: for (var _fun48976_ip = 0;;) switch (_fun48976_ip) {
+        _fun49023: for (var _fun49023_ip = 0;;) switch (_fun49023_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.guildId;
@@ -191,16 +191,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = null;
                 var0 = var4;
                 if (!(var6 == var4)) {
-                    _fun48976_ip = 41;
-                    continue _fun48976
+                    _fun49023_ip = 41;
+                    continue _fun49023
                 }
             case 37:
                 var0 = _closure1_slot9;
             case 41:
                 var0 = var3[var0];
                 if (!(var6 == var0)) {
-                    _fun48976_ip = 51;
-                    continue _fun48976
+                    _fun49023_ip = 51;
+                    continue _fun49023
                 }
             case 49:
                 var0 = {};
@@ -209,15 +209,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var0.length;
                 var0 = 0;
                 if (!(var0 !== var1)) {
-                    _fun48976_ip = 169;
-                    continue _fun48976
+                    _fun49023_ip = 169;
+                    continue _fun49023
                 }
             case 67:
                 var3 = _closure1_slot14;
                 var2 = var4;
                 if (!(var6 == var4)) {
-                    _fun48976_ip = 82;
-                    continue _fun48976
+                    _fun49023_ip = 82;
+                    continue _fun49023
                 }
             case 78:
                 var2 = _closure1_slot9;
@@ -225,8 +225,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var0 = _closure1_slot14;
                 if (!(var6 == var4)) {
-                    _fun48976_ip = 96;
-                    continue _fun48976
+                    _fun49023_ip = 96;
+                    continue _fun49023
                 }
             case 92:
                 var4 = _closure1_slot9;
@@ -263,15 +263,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot23 = var10;
     var9 = function() { // Original name: handleResetPendingLegacyUsernameDisabled, environment: var14
-        _fun48978: for (var _fun48978_ip = 0;;) switch (_fun48978_ip) {
+        _fun49025: for (var _fun49025_ip = 0;;) switch (_fun49025_ip) {
             case 0:
                 var2 = _closure1_slot14;
                 var0 = _closure1_slot9;
                 var3 = var2[var0];
                 var0 = null;
                 if (!(var0 == var3)) {
-                    _fun48978_ip = 23;
-                    continue _fun48978
+                    _fun49025_ip = 23;
+                    continue _fun49025
                 }
             case 21:
                 var3 = {};
@@ -280,15 +280,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = undefined;
                 var2 = undefined;
                 if (var4) {
-                    _fun48978_ip = 40;
-                    continue _fun48978
+                    _fun49025_ip = 40;
+                    continue _fun49025
                 }
             case 34:
                 var2 = var3.pendingLegacyUsernameDisabled;
             case 40:
                 if (!(var0 !== var2)) {
-                    _fun48978_ip = 80;
-                    continue _fun48978
+                    _fun49025_ip = 80;
+                    continue _fun49025
                 }
             case 44:
                 var3 = _closure1_slot14;
@@ -308,15 +308,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot24 = var9;
     var8 = function() { // Original name: handleResetPendingPrimaryGuildChanges, environment: var14
-        _fun48979: for (var _fun48979_ip = 0;;) switch (_fun48979_ip) {
+        _fun49026: for (var _fun49026_ip = 0;;) switch (_fun49026_ip) {
             case 0:
                 var2 = _closure1_slot14;
                 var0 = _closure1_slot9;
                 var3 = var2[var0];
                 var0 = null;
                 if (!(var0 == var3)) {
-                    _fun48979_ip = 23;
-                    continue _fun48979
+                    _fun49026_ip = 23;
+                    continue _fun49026
                 }
             case 21:
                 var3 = {};
@@ -325,15 +325,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = undefined;
                 var2 = undefined;
                 if (var4) {
-                    _fun48979_ip = 40;
-                    continue _fun48979
+                    _fun49026_ip = 40;
+                    continue _fun49026
                 }
             case 34:
                 var2 = var3.pendingPrimaryGuildId;
             case 40:
                 if (!(var0 !== var2)) {
-                    _fun48979_ip = 80;
-                    continue _fun48979
+                    _fun49026_ip = 80;
+                    continue _fun49026
                 }
             case 44:
                 var3 = _closure1_slot14;
@@ -424,7 +424,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var14
         var3 = function() { // Original name: UserProfileSettingsStore, environment: var5
-            _fun48982: for (var _fun48982_ip = 0;;) switch (_fun48982_ip) {
+            _fun49029: for (var _fun49029_ip = 0;;) switch (_fun49029_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -438,16 +438,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot18;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun48982_ip = 69;
-                        continue _fun48982
+                        _fun49029_ip = 69;
+                        continue _fun49029
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun48982_ip = 105;
-                    continue _fun48982;
+                    _fun49029_ip = 105;
+                    continue _fun49029;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -482,22 +482,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'getErrors';
         var4.key = var6;
         var6 = function(arg0) { // Original name: value, environment: var5
-            _fun48984: for (var _fun48984_ip = 0;;) switch (_fun48984_ip) {
+            _fun49031: for (var _fun49031_ip = 0;;) switch (_fun49031_ip) {
                 case 0:
                     var3 = arg0;
                     var0 = _closure1_slot17;
                     var2 = null;
                     if (!(var2 == var3)) {
-                        _fun48984_ip = 20;
-                        continue _fun48984
+                        _fun49031_ip = 20;
+                        continue _fun49031
                     }
                 case 16:
                     var3 = _closure1_slot9;
                 case 20:
                     var0 = var0[var3];
                     if (!(var2 == var0)) {
-                        _fun48984_ip = 32;
-                        continue _fun48984
+                        _fun49031_ip = 32;
+                        continue _fun49031
                     }
                 case 28:
                     var0 = _closure1_slot13;
@@ -511,22 +511,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'getPendingChanges';
         var4.key = var6;
         var6 = function(arg0) { // Original name: value, environment: var5
-            _fun48985: for (var _fun48985_ip = 0;;) switch (_fun48985_ip) {
+            _fun49032: for (var _fun49032_ip = 0;;) switch (_fun49032_ip) {
                 case 0:
                     var3 = arg0;
                     var0 = _closure1_slot14;
                     var2 = null;
                     if (!(var2 == var3)) {
-                        _fun48985_ip = 20;
-                        continue _fun48985
+                        _fun49032_ip = 20;
+                        continue _fun49032
                     }
                 case 16:
                     var3 = _closure1_slot9;
                 case 20:
                     var0 = var0[var3];
                     if (!(var2 == var0)) {
-                        _fun48985_ip = 32;
-                        continue _fun48985
+                        _fun49032_ip = 32;
+                        continue _fun49032
                     }
                 case 28:
                     var0 = _closure1_slot11;
@@ -573,7 +573,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'canSubmit';
         var4.key = var6;
         var5 = function(arg0) { // Original name: value, environment: var5
-            _fun48989: for (var _fun48989_ip = 0;;) switch (_fun48989_ip) {
+            _fun49036: for (var _fun49036_ip = 0;;) switch (_fun49036_ip) {
                 case 0:
                     var2 = this;
                     var1 = var2.getPendingChanges;
@@ -583,8 +583,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = undefined;
                     var0 = var0 !== var2;
                     if (!var0) {
-                        _fun48989_ip = 54;
-                        continue _fun48989
+                        _fun49036_ip = 54;
+                        continue _fun49036
                     }
                 case 32:
                     var1 = var1.pendingBio;
@@ -612,15 +612,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.USER_SETTINGS_MODAL_INIT = var16;
     var1.USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS = var16;
     var16 = function(arg0) { // Original name: handleSectionChange, environment: var14
-        _fun48990: for (var _fun48990_ip = 0;;) switch (_fun48990_ip) {
+        _fun49037: for (var _fun49037_ip = 0;;) switch (_fun49037_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.section;
                 var0 = _closure1_slot10;
                 var0 = var0.ACCOUNT;
                 if (!(var2 === var0)) {
-                    _fun48990_ip = 49;
-                    continue _fun48990
+                    _fun49037_ip = 49;
+                    continue _fun49037
                 }
             case 25:
                 var0 = _closure1_slot8;
@@ -649,7 +649,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.USER_SETTINGS_ACCOUNT_SUBMIT = var15;
     var15 = function(arg0) { // Original name: handleFormSubmitFailure, environment: var14
-        _fun48992: for (var _fun48992_ip = 0;;) switch (_fun48992_ip) {
+        _fun49039: for (var _fun49039_ip = 0;;) switch (_fun49039_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.guildId;
@@ -658,8 +658,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot8;
                 var0 = var0.SUBMITTING;
                 if (!(var4 === var0)) {
-                    _fun48992_ip = 79;
-                    continue _fun48992
+                    _fun49039_ip = 79;
+                    continue _fun49039
                 }
             case 35:
                 var0 = _closure1_slot8;
@@ -668,15 +668,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = _closure1_slot17;
                 var4 = null;
                 if (!(var4 == var2)) {
-                    _fun48992_ip = 63;
-                    continue _fun48992
+                    _fun49039_ip = 63;
+                    continue _fun49039
                 }
             case 59:
                 var2 = _closure1_slot9;
             case 63:
                 if (!(var4 == var1)) {
-                    _fun48992_ip = 71;
-                    continue _fun48992
+                    _fun49039_ip = 71;
+                    continue _fun49039
                 }
             case 67:
                 var1 = _closure1_slot13;
@@ -691,7 +691,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE = var15;
     var15 = function(arg0) { // Original name: handleSetPendingAvatar, environment: var14
-        _fun48993: for (var _fun48993_ip = 0;;) switch (_fun48993_ip) {
+        _fun49040: for (var _fun49040_ip = 0;;) switch (_fun49040_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.guildId;
@@ -700,8 +700,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = null;
                 var1 = var6;
                 if (!(var7 == var6)) {
-                    _fun48993_ip = 34;
-                    continue _fun48993
+                    _fun49040_ip = 34;
+                    continue _fun49040
                 }
             case 30:
                 var1 = _closure1_slot9;
@@ -709,8 +709,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var4 = _closure1_slot14;
                 if (!(var7 == var6)) {
-                    _fun48993_ip = 48;
-                    continue _fun48993
+                    _fun49040_ip = 48;
+                    continue _fun49040
                 }
             case 44:
                 var6 = _closure1_slot9;
@@ -766,7 +766,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.USER_SETTINGS_ACCOUNT_SET_PENDING_LEGACY_USERNAME_DISABLED = var15;
     var15 = function(arg0) { // Original name: handleSetPendingCollectiblesItem, environment: var14
-        _fun48996: for (var _fun48996_ip = 0;;) switch (_fun48996_ip) {
+        _fun49043: for (var _fun49043_ip = 0;;) switch (_fun49043_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.guildId;
@@ -781,8 +781,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.CollectiblesItemType;
                 var1 = var1.AVATAR_DECORATION;
                 if (!(var2 !== var1)) {
-                    _fun48996_ip = 274;
-                    continue _fun48996
+                    _fun49043_ip = 274;
+                    continue _fun49043
                 }
             case 62:
                 var2 = var4.type;
@@ -793,8 +793,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.CollectiblesItemType;
                 var1 = var1.PROFILE_EFFECT;
                 if (!(var2 !== var1)) {
-                    _fun48996_ip = 209;
-                    continue _fun48996
+                    _fun49043_ip = 209;
+                    continue _fun49043
                 }
             case 100:
                 var2 = var4.type;
@@ -805,16 +805,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.CollectiblesItemType;
                 var1 = var1.NAMEPLATE;
                 if (!(var2 === var1)) {
-                    _fun48996_ip = 334;
-                    continue _fun48996
+                    _fun49043_ip = 334;
+                    continue _fun49043
                 }
             case 141:
                 var3 = _closure1_slot14;
                 var9 = null;
                 var2 = var6;
                 if (!(var9 == var6)) {
-                    _fun48996_ip = 158;
-                    continue _fun48996
+                    _fun49043_ip = 158;
+                    continue _fun49043
                 }
             case 154:
                 var2 = _closure1_slot9;
@@ -823,8 +823,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = _closure1_slot14;
                 var5 = var6;
                 if (!(var9 == var6)) {
-                    _fun48996_ip = 175;
-                    continue _fun48996
+                    _fun49043_ip = 175;
+                    continue _fun49043
                 }
             case 171:
                 var5 = _closure1_slot9;
@@ -836,15 +836,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = 'pendingNameplate';
                 var1[var5] = var8;
                 var3[var2] = var1;
-                _fun48996_ip = 334;
-                continue _fun48996;
+                _fun49043_ip = 334;
+                continue _fun49043;
             case 209:
                 var3 = _closure1_slot14;
                 var9 = null;
                 var2 = var6;
                 if (!(var9 == var6)) {
-                    _fun48996_ip = 226;
-                    continue _fun48996
+                    _fun49043_ip = 226;
+                    continue _fun49043
                 }
             case 222:
                 var2 = _closure1_slot9;
@@ -853,8 +853,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = _closure1_slot14;
                 var5 = var6;
                 if (!(var9 == var6)) {
-                    _fun48996_ip = 243;
-                    continue _fun48996
+                    _fun49043_ip = 243;
+                    continue _fun49043
                 }
             case 239:
                 var5 = _closure1_slot9;
@@ -866,15 +866,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = 'pendingProfileEffect';
                 var1[var5] = var8;
                 var3[var2] = var1;
-                _fun48996_ip = 334;
-                continue _fun48996;
+                _fun49043_ip = 334;
+                continue _fun49043;
             case 274:
                 var3 = _closure1_slot14;
                 var8 = null;
                 var2 = var6;
                 if (!(var8 == var6)) {
-                    _fun48996_ip = 291;
-                    continue _fun48996
+                    _fun49043_ip = 291;
+                    continue _fun49043
                 }
             case 287:
                 var2 = _closure1_slot9;
@@ -882,8 +882,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var5 = _closure1_slot14;
                 if (!(var8 == var6)) {
-                    _fun48996_ip = 305;
-                    continue _fun48996
+                    _fun49043_ip = 305;
+                    continue _fun49043
                 }
             case 301:
                 var6 = _closure1_slot9;
@@ -901,7 +901,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.USER_SETTINGS_ACCOUNT_SET_PENDING_COLLECTIBLES_ITEM = var15;
     var15 = function(arg0) { // Original name: handleSetPendingBanner, environment: var14
-        _fun48997: for (var _fun48997_ip = 0;;) switch (_fun48997_ip) {
+        _fun49044: for (var _fun49044_ip = 0;;) switch (_fun49044_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.guildId;
@@ -910,8 +910,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = null;
                 var1 = var5;
                 if (!(var7 == var5)) {
-                    _fun48997_ip = 34;
-                    continue _fun48997
+                    _fun49044_ip = 34;
+                    continue _fun49044
                 }
             case 30:
                 var1 = _closure1_slot9;
@@ -919,8 +919,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var3 = _closure1_slot14;
                 if (!(var7 == var5)) {
-                    _fun48997_ip = 48;
-                    continue _fun48997
+                    _fun49044_ip = 48;
+                    continue _fun49044
                 }
             case 44:
                 var5 = _closure1_slot9;
@@ -937,7 +937,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.USER_SETTINGS_ACCOUNT_SET_PENDING_BANNER = var15;
     var15 = function(arg0) { // Original name: handleSetPendingBio, environment: var14
-        _fun48998: for (var _fun48998_ip = 0;;) switch (_fun48998_ip) {
+        _fun49045: for (var _fun49045_ip = 0;;) switch (_fun49045_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.guildId;
@@ -946,8 +946,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = null;
                 var1 = var5;
                 if (!(var7 == var5)) {
-                    _fun48998_ip = 34;
-                    continue _fun48998
+                    _fun49045_ip = 34;
+                    continue _fun49045
                 }
             case 30:
                 var1 = _closure1_slot9;
@@ -955,8 +955,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var3 = _closure1_slot14;
                 if (!(var7 == var5)) {
-                    _fun48998_ip = 48;
-                    continue _fun48998
+                    _fun49045_ip = 48;
+                    continue _fun49045
                 }
             case 44:
                 var5 = _closure1_slot9;
@@ -973,7 +973,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.USER_SETTINGS_ACCOUNT_SET_PENDING_BIO = var15;
     var15 = function(arg0) { // Original name: handleSetPendingPronouns, environment: var14
-        _fun48999: for (var _fun48999_ip = 0;;) switch (_fun48999_ip) {
+        _fun49046: for (var _fun49046_ip = 0;;) switch (_fun49046_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.guildId;
@@ -982,8 +982,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = null;
                 var1 = var5;
                 if (!(var7 == var5)) {
-                    _fun48999_ip = 34;
-                    continue _fun48999
+                    _fun49046_ip = 34;
+                    continue _fun49046
                 }
             case 30:
                 var1 = _closure1_slot9;
@@ -991,8 +991,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var3 = _closure1_slot14;
                 if (!(var7 == var5)) {
-                    _fun48999_ip = 48;
-                    continue _fun48999
+                    _fun49046_ip = 48;
+                    continue _fun49046
                 }
             case 44:
                 var5 = _closure1_slot9;
@@ -1025,7 +1025,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.USER_SETTINGS_ACCOUNT_SET_PENDING_ACCENT_COLOR = var15;
     var15 = function(arg0) { // Original name: handleSetPendingThemeColors, environment: var14
-        _fun49001: for (var _fun49001_ip = 0;;) switch (_fun49001_ip) {
+        _fun49048: for (var _fun49048_ip = 0;;) switch (_fun49048_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.guildId;
@@ -1034,8 +1034,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = null;
                 var1 = var5;
                 if (!(var7 == var5)) {
-                    _fun49001_ip = 34;
-                    continue _fun49001
+                    _fun49048_ip = 34;
+                    continue _fun49048
                 }
             case 30:
                 var1 = _closure1_slot9;
@@ -1043,8 +1043,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var3 = _closure1_slot14;
                 if (!(var7 == var5)) {
-                    _fun49001_ip = 48;
-                    continue _fun49001
+                    _fun49048_ip = 48;
+                    continue _fun49048
                 }
             case 44:
                 var5 = _closure1_slot9;
@@ -1184,7 +1184,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.USER_SETTINGS_SET_PENDING_PRIMARY_GUILD_ID = var15;
     var15 = function(arg0) { // Original name: handleSetPendingDisplayNameStyles, environment: var14
-        _fun49010: for (var _fun49010_ip = 0;;) switch (_fun49010_ip) {
+        _fun49057: for (var _fun49057_ip = 0;;) switch (_fun49057_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.guildId;
@@ -1193,8 +1193,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = null;
                 var1 = var5;
                 if (!(var7 == var5)) {
-                    _fun49010_ip = 34;
-                    continue _fun49010
+                    _fun49057_ip = 34;
+                    continue _fun49057
                 }
             case 30:
                 var1 = _closure1_slot9;
@@ -1202,8 +1202,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = {};
                 var3 = _closure1_slot14;
                 if (!(var7 == var5)) {
-                    _fun49010_ip = 48;
-                    continue _fun49010
+                    _fun49057_ip = 48;
+                    continue _fun49057
                 }
             case 44:
                 var5 = _closure1_slot9;
@@ -1220,15 +1220,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.USER_SETTINGS_ACCOUNT_SET_PENDING_DISPLAY_NAME_STYLES = var15;
     var14 = function(arg0) { // Original name: handleClearErrors, environment: var14
-        _fun49011: for (var _fun49011_ip = 0;;) switch (_fun49011_ip) {
+        _fun49058: for (var _fun49058_ip = 0;;) switch (_fun49058_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.guildId;
                 var1 = _closure1_slot17;
                 var3 = null;
                 if (!(var3 == var2)) {
-                    _fun49011_ip = 25;
-                    continue _fun49011
+                    _fun49058_ip = 25;
+                    continue _fun49058
                 }
             case 21:
                 var2 = _closure1_slot9;

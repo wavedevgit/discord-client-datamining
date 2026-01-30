@@ -10,7 +10,7 @@ import ji.q;
 public abstract class s extends q implements List, RandomAccess {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final u0 f32163e = new b(k0.f32121p, 0);
+    private static final u0 f32179e = new b(k0.f32137p, 0);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a extends q.a {
@@ -36,8 +36,8 @@ public abstract class s extends q implements List, RandomAccess {
         }
 
         public s k() {
-            this.f32155c = true;
-            return s.i(this.f32153a, this.f32154b);
+            this.f32171c = true;
+            return s.i(this.f32169a, this.f32170b);
         }
 
         a(int i10) {
@@ -50,16 +50,16 @@ public abstract class s extends q implements List, RandomAccess {
     public static class b extends ji.a {
 
         /* renamed from: i  reason: collision with root package name */
-        private final s f32164i;
+        private final s f32180i;
 
         b(s sVar, int i10) {
             super(sVar.size(), i10);
-            this.f32164i = sVar;
+            this.f32180i = sVar;
         }
 
         @Override // ji.a
         protected Object a(int i10) {
-            return this.f32164i.get(i10);
+            return this.f32180i.get(i10);
         }
     }
 
@@ -68,14 +68,14 @@ public abstract class s extends q implements List, RandomAccess {
     public class c extends s {
 
         /* renamed from: i  reason: collision with root package name */
-        final transient int f32165i;
+        final transient int f32181i;
 
         /* renamed from: o  reason: collision with root package name */
-        final transient int f32166o;
+        final transient int f32182o;
 
         c(int i10, int i11) {
-            this.f32165i = i10;
-            this.f32166o = i11;
+            this.f32181i = i10;
+            this.f32182o = i11;
         }
 
         @Override // ji.q
@@ -85,12 +85,12 @@ public abstract class s extends q implements List, RandomAccess {
 
         @Override // ji.q
         int e() {
-            return s.this.f() + this.f32165i + this.f32166o;
+            return s.this.f() + this.f32181i + this.f32182o;
         }
 
         @Override // ji.q
         int f() {
-            return s.this.f() + this.f32165i;
+            return s.this.f() + this.f32181i;
         }
 
         @Override // ji.q
@@ -100,8 +100,8 @@ public abstract class s extends q implements List, RandomAccess {
 
         @Override // java.util.List
         public Object get(int i10) {
-            ii.m.h(i10, this.f32166o);
-            return s.this.get(i10 + this.f32165i);
+            ii.m.h(i10, this.f32182o);
+            return s.this.get(i10 + this.f32181i);
         }
 
         @Override // ji.s, java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.List
@@ -116,15 +116,15 @@ public abstract class s extends q implements List, RandomAccess {
 
         @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
         public int size() {
-            return this.f32166o;
+            return this.f32182o;
         }
 
         @Override // ji.s, java.util.List
         /* renamed from: w */
         public s subList(int i10, int i11) {
-            ii.m.n(i10, i11, this.f32166o);
+            ii.m.n(i10, i11, this.f32182o);
             s sVar = s.this;
-            int i12 = this.f32165i;
+            int i12 = this.f32181i;
             return sVar.subList(i10 + i12, i11 + i12);
         }
 
@@ -174,7 +174,7 @@ public abstract class s extends q implements List, RandomAccess {
     }
 
     public static s r() {
-        return k0.f32121p;
+        return k0.f32137p;
     }
 
     public static s s(Object obj) {
@@ -269,7 +269,7 @@ public abstract class s extends q implements List, RandomAccess {
     public u0 listIterator(int i10) {
         ii.m.l(i10, size());
         if (isEmpty()) {
-            return f32163e;
+            return f32179e;
         }
         return new b(this, i10);
     }

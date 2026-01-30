@@ -22,25 +22,25 @@ import z1.g;
 public class n extends l {
 
     /* renamed from: g  reason: collision with root package name */
-    protected final Class f47811g;
+    protected final Class f47827g;
 
     /* renamed from: h  reason: collision with root package name */
-    protected final Constructor f47812h;
+    protected final Constructor f47828h;
 
     /* renamed from: i  reason: collision with root package name */
-    protected final Method f47813i;
+    protected final Method f47829i;
 
     /* renamed from: j  reason: collision with root package name */
-    protected final Method f47814j;
+    protected final Method f47830j;
 
     /* renamed from: k  reason: collision with root package name */
-    protected final Method f47815k;
+    protected final Method f47831k;
 
     /* renamed from: l  reason: collision with root package name */
-    protected final Method f47816l;
+    protected final Method f47832l;
 
     /* renamed from: m  reason: collision with root package name */
-    protected final Method f47817m;
+    protected final Method f47833m;
 
     public n() {
         Class cls;
@@ -68,18 +68,18 @@ public class n extends l {
             method4 = null;
             method5 = null;
         }
-        this.f47811g = cls;
-        this.f47812h = constructor;
-        this.f47813i = method;
-        this.f47814j = method2;
-        this.f47815k = method3;
-        this.f47816l = method4;
-        this.f47817m = method5;
+        this.f47827g = cls;
+        this.f47828h = constructor;
+        this.f47829i = method;
+        this.f47830j = method2;
+        this.f47831k = method3;
+        this.f47832l = method4;
+        this.f47833m = method5;
     }
 
     private Object m() {
         try {
-            return this.f47812h.newInstance(null);
+            return this.f47828h.newInstance(null);
         } catch (IllegalAccessException | InstantiationException | InvocationTargetException unused) {
             return null;
         }
@@ -87,14 +87,14 @@ public class n extends l {
 
     private void n(Object obj) {
         try {
-            this.f47816l.invoke(obj, null);
+            this.f47832l.invoke(obj, null);
         } catch (IllegalAccessException | InvocationTargetException unused) {
         }
     }
 
     private boolean o(Context context, Object obj, String str, int i10, int i11, int i12, FontVariationAxis[] fontVariationAxisArr) {
         try {
-            return ((Boolean) this.f47813i.invoke(obj, context.getAssets(), str, 0, Boolean.FALSE, Integer.valueOf(i10), Integer.valueOf(i11), Integer.valueOf(i12), fontVariationAxisArr)).booleanValue();
+            return ((Boolean) this.f47829i.invoke(obj, context.getAssets(), str, 0, Boolean.FALSE, Integer.valueOf(i10), Integer.valueOf(i11), Integer.valueOf(i12), fontVariationAxisArr)).booleanValue();
         } catch (IllegalAccessException | InvocationTargetException unused) {
             return false;
         }
@@ -102,7 +102,7 @@ public class n extends l {
 
     private boolean p(Object obj, ByteBuffer byteBuffer, int i10, int i11, int i12) {
         try {
-            return ((Boolean) this.f47814j.invoke(obj, byteBuffer, Integer.valueOf(i10), null, Integer.valueOf(i11), Integer.valueOf(i12))).booleanValue();
+            return ((Boolean) this.f47830j.invoke(obj, byteBuffer, Integer.valueOf(i10), null, Integer.valueOf(i11), Integer.valueOf(i12))).booleanValue();
         } catch (IllegalAccessException | InvocationTargetException unused) {
             return false;
         }
@@ -110,17 +110,17 @@ public class n extends l {
 
     private boolean q(Object obj) {
         try {
-            return ((Boolean) this.f47815k.invoke(obj, null)).booleanValue();
+            return ((Boolean) this.f47831k.invoke(obj, null)).booleanValue();
         } catch (IllegalAccessException | InvocationTargetException unused) {
             return false;
         }
     }
 
     private boolean r() {
-        if (this.f47813i == null) {
+        if (this.f47829i == null) {
             Log.w("TypefaceCompatApi26Impl", "Unable to collect necessary private methods. Fallback to legacy implementation.");
         }
-        if (this.f47813i != null) {
+        if (this.f47829i != null) {
             return true;
         }
         return false;
@@ -241,9 +241,9 @@ public class n extends l {
 
     protected Typeface j(Object obj) {
         try {
-            Object newInstance = Array.newInstance(this.f47811g, 1);
+            Object newInstance = Array.newInstance(this.f47827g, 1);
             Array.set(newInstance, 0, obj);
-            return (Typeface) this.f47817m.invoke(null, newInstance, -1, -1);
+            return (Typeface) this.f47833m.invoke(null, newInstance, -1, -1);
         } catch (IllegalAccessException | InvocationTargetException unused) {
             return null;
         }

@@ -25,14 +25,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/changelog/utils/isChangelogUser.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: isChangelogUser, environment: var1
-        _fun18786: for (var _fun18786_ip = 0;;) switch (_fun18786_ip) {
+        _fun18787: for (var _fun18787_ip = 0;;) switch (_fun18787_ip) {
             case 0:
                 var2 = arg0;
                 var0 = null;
                 var0 = var0 != var2;
                 if (!var0) {
-                    _fun18786_ip = 23;
-                    continue _fun18786
+                    _fun18787_ip = 23;
+                    continue _fun18787
                 }
             case 12:
                 var1 = _closure1_slot0;

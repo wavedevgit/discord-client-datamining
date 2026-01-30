@@ -51,7 +51,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/nuf/native/components/SkipHeaderButton.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: SkipHeaderButton, environment: var1
-        _fun81475: for (var _fun81475_ip = 0;;) switch (_fun81475_ip) {
+        _fun81521: for (var _fun81521_ip = 0;;) switch (_fun81521_ip) {
             case 0:
                 var5 = arg0;
                 var0 = _closure1_slot3;
@@ -74,8 +74,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var5.insideNavigator;
                 var6 = undefined;
                 if (!var9) {
-                    _fun81475_ip = 89;
-                    continue _fun81475
+                    _fun81521_ip = 89;
+                    continue _fun81521
                 }
             case 83:
                 var6 = var8.insideNavigatorButton;
@@ -86,8 +86,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var5.label;
                 var6 = null;
                 if (!(var6 == var5)) {
-                    _fun81475_ip = 168;
-                    continue _fun81475
+                    _fun81521_ip = 168;
+                    continue _fun81521
                 }
             case 113:
                 var8 = _closure1_slot0;
@@ -111,4 +111,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 8844, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 8848, 1234, 2]);

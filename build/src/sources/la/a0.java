@@ -9,10 +9,10 @@ import java.util.Map;
 public class a0 {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final Class f36982b = a0.class;
+    private static final Class f36998b = a0.class;
 
     /* renamed from: a  reason: collision with root package name */
-    private Map f36983a = new HashMap();
+    private Map f36999a = new HashMap();
 
     private a0() {
     }
@@ -22,14 +22,14 @@ public class a0 {
     }
 
     private synchronized void e() {
-        p8.a.z(f36982b, "Count = %d", Integer.valueOf(this.f36983a.size()));
+        p8.a.z(f36998b, "Count = %d", Integer.valueOf(this.f36999a.size()));
     }
 
     public void a() {
         ArrayList arrayList;
         synchronized (this) {
-            arrayList = new ArrayList(this.f36983a.values());
-            this.f36983a.clear();
+            arrayList = new ArrayList(this.f36999a.values());
+            this.f36999a.clear();
         }
         for (int i10 = 0; i10 < arrayList.size(); i10++) {
             sa.k kVar = (sa.k) arrayList.get(i10);
@@ -41,14 +41,14 @@ public class a0 {
 
     public synchronized boolean b(CacheKey cacheKey) {
         o8.j.g(cacheKey);
-        if (!this.f36983a.containsKey(cacheKey)) {
+        if (!this.f36999a.containsKey(cacheKey)) {
             return false;
         }
-        sa.k kVar = (sa.k) this.f36983a.get(cacheKey);
+        sa.k kVar = (sa.k) this.f36999a.get(cacheKey);
         synchronized (kVar) {
             if (!sa.k.R0(kVar)) {
-                this.f36983a.remove(cacheKey);
-                p8.a.H(f36982b, "Found closed reference %d for key %s (%d)", Integer.valueOf(System.identityHashCode(kVar)), cacheKey.a(), Integer.valueOf(System.identityHashCode(cacheKey)));
+                this.f36999a.remove(cacheKey);
+                p8.a.H(f36998b, "Found closed reference %d for key %s (%d)", Integer.valueOf(System.identityHashCode(kVar)), cacheKey.a(), Integer.valueOf(System.identityHashCode(cacheKey)));
                 return false;
             }
             return true;
@@ -57,12 +57,12 @@ public class a0 {
 
     public synchronized sa.k c(CacheKey cacheKey) {
         o8.j.g(cacheKey);
-        sa.k kVar = (sa.k) this.f36983a.get(cacheKey);
+        sa.k kVar = (sa.k) this.f36999a.get(cacheKey);
         if (kVar != null) {
             synchronized (kVar) {
                 if (!sa.k.R0(kVar)) {
-                    this.f36983a.remove(cacheKey);
-                    p8.a.H(f36982b, "Found closed reference %d for key %s (%d)", Integer.valueOf(System.identityHashCode(kVar)), cacheKey.a(), Integer.valueOf(System.identityHashCode(cacheKey)));
+                    this.f36999a.remove(cacheKey);
+                    p8.a.H(f36998b, "Found closed reference %d for key %s (%d)", Integer.valueOf(System.identityHashCode(kVar)), cacheKey.a(), Integer.valueOf(System.identityHashCode(cacheKey)));
                     return null;
                 }
                 kVar = sa.k.h(kVar);
@@ -74,7 +74,7 @@ public class a0 {
     public synchronized void f(CacheKey cacheKey, sa.k kVar) {
         o8.j.g(cacheKey);
         o8.j.b(Boolean.valueOf(sa.k.R0(kVar)));
-        sa.k.l((sa.k) this.f36983a.put(cacheKey, sa.k.h(kVar)));
+        sa.k.l((sa.k) this.f36999a.put(cacheKey, sa.k.h(kVar)));
         e();
     }
 
@@ -82,7 +82,7 @@ public class a0 {
         sa.k kVar;
         o8.j.g(cacheKey);
         synchronized (this) {
-            kVar = (sa.k) this.f36983a.remove(cacheKey);
+            kVar = (sa.k) this.f36999a.remove(cacheKey);
         }
         if (kVar == null) {
             return false;
@@ -98,14 +98,14 @@ public class a0 {
         o8.j.g(cacheKey);
         o8.j.g(kVar);
         o8.j.b(Boolean.valueOf(sa.k.R0(kVar)));
-        sa.k kVar2 = (sa.k) this.f36983a.get(cacheKey);
+        sa.k kVar2 = (sa.k) this.f36999a.get(cacheKey);
         if (kVar2 == null) {
             return false;
         }
         CloseableReference x10 = kVar2.x();
         CloseableReference x11 = kVar.x();
         if (x10 != null && x11 != null && x10.D0() == x11.D0()) {
-            this.f36983a.remove(cacheKey);
+            this.f36999a.remove(cacheKey);
             CloseableReference.N(x11);
             CloseableReference.N(x10);
             sa.k.l(kVar2);

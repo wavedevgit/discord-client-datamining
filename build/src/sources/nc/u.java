@@ -3,49 +3,49 @@ package nc;
 public abstract class u {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String[] f40066a = {"audio/mpeg-L1", "audio/mpeg-L2", "audio/mpeg"};
+    private static final String[] f40082a = {"audio/mpeg-L1", "audio/mpeg-L2", "audio/mpeg"};
 
     /* renamed from: b  reason: collision with root package name */
-    private static final int[] f40067b = {44100, 48000, 32000};
+    private static final int[] f40083b = {44100, 48000, 32000};
 
     /* renamed from: c  reason: collision with root package name */
-    private static final int[] f40068c = {32000, 64000, 96000, 128000, 160000, 192000, 224000, 256000, 288000, 320000, 352000, 384000, 416000, 448000};
+    private static final int[] f40084c = {32000, 64000, 96000, 128000, 160000, 192000, 224000, 256000, 288000, 320000, 352000, 384000, 416000, 448000};
 
     /* renamed from: d  reason: collision with root package name */
-    private static final int[] f40069d = {32000, 48000, 56000, 64000, 80000, 96000, 112000, 128000, 144000, 160000, 176000, 192000, 224000, 256000};
+    private static final int[] f40085d = {32000, 48000, 56000, 64000, 80000, 96000, 112000, 128000, 144000, 160000, 176000, 192000, 224000, 256000};
 
     /* renamed from: e  reason: collision with root package name */
-    private static final int[] f40070e = {32000, 48000, 56000, 64000, 80000, 96000, 112000, 128000, 160000, 192000, 224000, 256000, 320000, 384000};
+    private static final int[] f40086e = {32000, 48000, 56000, 64000, 80000, 96000, 112000, 128000, 160000, 192000, 224000, 256000, 320000, 384000};
 
     /* renamed from: f  reason: collision with root package name */
-    private static final int[] f40071f = {32000, 40000, 48000, 56000, 64000, 80000, 96000, 112000, 128000, 160000, 192000, 224000, 256000, 320000};
+    private static final int[] f40087f = {32000, 40000, 48000, 56000, 64000, 80000, 96000, 112000, 128000, 160000, 192000, 224000, 256000, 320000};
 
     /* renamed from: g  reason: collision with root package name */
-    private static final int[] f40072g = {8000, 16000, 24000, 32000, 40000, 48000, 56000, 64000, 80000, 96000, 112000, 128000, 144000, 160000};
+    private static final int[] f40088g = {8000, 16000, 24000, 32000, 40000, 48000, 56000, 64000, 80000, 96000, 112000, 128000, 144000, 160000};
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public int f40073a;
+        public int f40089a;
 
         /* renamed from: b  reason: collision with root package name */
-        public String f40074b;
+        public String f40090b;
 
         /* renamed from: c  reason: collision with root package name */
-        public int f40075c;
+        public int f40091c;
 
         /* renamed from: d  reason: collision with root package name */
-        public int f40076d;
+        public int f40092d;
 
         /* renamed from: e  reason: collision with root package name */
-        public int f40077e;
+        public int f40093e;
 
         /* renamed from: f  reason: collision with root package name */
-        public int f40078f;
+        public int f40094f;
 
         /* renamed from: g  reason: collision with root package name */
-        public int f40079g;
+        public int f40095g;
 
         public boolean a(int i10) {
             int i11;
@@ -57,49 +57,49 @@ public abstract class u {
             if (!u.l(i10) || (i11 = (i10 >>> 19) & 3) == 1 || (i12 = (i10 >>> 17) & 3) == 0 || (i13 = (i10 >>> 12) & 15) == 0 || i13 == 15 || (i14 = (i10 >>> 10) & 3) == 3) {
                 return false;
             }
-            this.f40073a = i11;
-            this.f40074b = u.f40066a[3 - i12];
-            int i17 = u.f40067b[i14];
-            this.f40076d = i17;
+            this.f40089a = i11;
+            this.f40090b = u.f40082a[3 - i12];
+            int i17 = u.f40083b[i14];
+            this.f40092d = i17;
             int i18 = 2;
             if (i11 == 2) {
-                this.f40076d = i17 / 2;
+                this.f40092d = i17 / 2;
             } else if (i11 == 0) {
-                this.f40076d = i17 / 4;
+                this.f40092d = i17 / 4;
             }
             int i19 = (i10 >>> 9) & 1;
-            this.f40079g = u.k(i11, i12);
+            this.f40095g = u.k(i11, i12);
             if (i12 == 3) {
                 if (i11 == 3) {
-                    i16 = u.f40068c[i13 - 1];
+                    i16 = u.f40084c[i13 - 1];
                 } else {
-                    i16 = u.f40069d[i13 - 1];
+                    i16 = u.f40085d[i13 - 1];
                 }
-                this.f40078f = i16;
-                this.f40075c = (((i16 * 12) / this.f40076d) + i19) * 4;
+                this.f40094f = i16;
+                this.f40091c = (((i16 * 12) / this.f40092d) + i19) * 4;
             } else {
                 int i20 = 144;
                 if (i11 == 3) {
                     if (i12 == 2) {
-                        i15 = u.f40070e[i13 - 1];
+                        i15 = u.f40086e[i13 - 1];
                     } else {
-                        i15 = u.f40071f[i13 - 1];
+                        i15 = u.f40087f[i13 - 1];
                     }
-                    this.f40078f = i15;
-                    this.f40075c = ((i15 * 144) / this.f40076d) + i19;
+                    this.f40094f = i15;
+                    this.f40091c = ((i15 * 144) / this.f40092d) + i19;
                 } else {
-                    int i21 = u.f40072g[i13 - 1];
-                    this.f40078f = i21;
+                    int i21 = u.f40088g[i13 - 1];
+                    this.f40094f = i21;
                     if (i12 == 1) {
                         i20 = 72;
                     }
-                    this.f40075c = ((i20 * i21) / this.f40076d) + i19;
+                    this.f40091c = ((i20 * i21) / this.f40092d) + i19;
                 }
             }
             if (((i10 >> 6) & 3) == 3) {
                 i18 = 1;
             }
-            this.f40077e = i18;
+            this.f40093e = i18;
             return true;
         }
     }
@@ -114,7 +114,7 @@ public abstract class u {
         if (!l(i10) || (i11 = (i10 >>> 19) & 3) == 1 || (i12 = (i10 >>> 17) & 3) == 0 || (i13 = (i10 >>> 12) & 15) == 0 || i13 == 15 || (i14 = (i10 >>> 10) & 3) == 3) {
             return -1;
         }
-        int i17 = f40067b[i14];
+        int i17 = f40083b[i14];
         if (i11 == 2) {
             i17 /= 2;
         } else if (i11 == 0) {
@@ -123,20 +123,20 @@ public abstract class u {
         int i18 = (i10 >>> 9) & 1;
         if (i12 == 3) {
             if (i11 == 3) {
-                i16 = f40068c[i13 - 1];
+                i16 = f40084c[i13 - 1];
             } else {
-                i16 = f40069d[i13 - 1];
+                i16 = f40085d[i13 - 1];
             }
             return (((i16 * 12) / i17) + i18) * 4;
         }
         if (i11 == 3) {
             if (i12 == 2) {
-                i15 = f40070e[i13 - 1];
+                i15 = f40086e[i13 - 1];
             } else {
-                i15 = f40071f[i13 - 1];
+                i15 = f40087f[i13 - 1];
             }
         } else {
-            i15 = f40072g[i13 - 1];
+            i15 = f40088g[i13 - 1];
         }
         int i19 = 144;
         if (i11 == 3) {

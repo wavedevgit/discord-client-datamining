@@ -59,13 +59,13 @@ public final class NotificationRenderer$displayLocal$1 extends k implements Func
             NotificationCompat.Builder m10 = new NotificationCompat.Builder(context, NotificationChannels.INSTANCE.getNotificationChannelId(localNotificationData, context)).U(NotificationDataUtilsKt.getSmallIcon(localNotificationData)).s(ColorUtilsKt.getColorCompat(this.$context, com.discord.theme.R.color.brand_500)).p(NotificationDataUtilsKt.getNotificationCategory(localNotificationData)).x(localNotificationData.getTitle()).w(localNotificationData.getSubtitle()).D(NotificationDataUtilsKt.getGroupKey(localNotificationData)).T(localNotificationData.getSilent()).M(0).v(NotificationDataUtilsKt.getContentPendingIntent(localNotificationData, this.$context, y10)).m(true);
             Intrinsics.checkNotNullExpressionValue(m10, "setAutoCancel(...)");
             NotificationManagerUtilsKt.notify$default(NotificationManagerUtilsKt.getNotificationManagerCompat(this.$context), NotificationDataUtilsKt.getTag(localNotificationData), m10, 0, 4, null);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((NotificationRenderer$displayLocal$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((NotificationRenderer$displayLocal$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

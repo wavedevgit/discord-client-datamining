@@ -32,14 +32,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_automod/SystemRulesUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: isDefaultRuleId, environment: var1
-        _fun115440: for (var _fun115440_ip = 0;;) switch (_fun115440_ip) {
+        _fun115719: for (var _fun115719_ip = 0;;) switch (_fun115719_ip) {
             case 0:
                 var3 = arg0;
                 var0 = null;
                 var0 = var0 != var3;
                 if (!var0) {
-                    _fun115440_ip = 29;
-                    continue _fun115440
+                    _fun115719_ip = 29;
+                    continue _fun115719
                 }
             case 12:
                 var2 = _closure1_slot0;

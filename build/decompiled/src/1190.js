@@ -7,7 +7,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
-        _fun12935: for (var _fun12935_ip = 0;;) switch (_fun12935_ip) {
+        _fun12936: for (var _fun12936_ip = 0;;) switch (_fun12936_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -28,8 +28,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun12935_ip = 74;
-                continue _fun12935;
+                _fun12936_ip = 74;
+                continue _fun12936;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -97,7 +97,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.Profiler;
     var1 = function(arg0) { // Environment: var1
         var3 = function(arg0) { // Original name: ReactNativeProfiler, environment: var5
-            _fun12940: for (var _fun12940_ip = 0;;) switch (_fun12940_ip) {
+            _fun12941: for (var _fun12941_ip = 0;;) switch (_fun12941_ip) {
                 case 0:
                     var3 = this;
                     var0 = _closure1_slot2;
@@ -127,14 +127,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = _closure1_slot9;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun12940_ip = 136;
-                        continue _fun12940
+                        _fun12941_ip = 136;
+                        continue _fun12941
                     }
                 case 123:
                     var0 = var7.apply;
                     var0 = var0.bind(var7)(var3, var8);
-                    _fun12940_ip = 170;
-                    continue _fun12940;
+                    _fun12941_ip = 170;
+                    continue _fun12941;
                 case 136:
                     var5 = global;
                     var6 = var5.Reflect;
@@ -160,12 +160,12 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = 'componentDidMount';
         var4.key = var0;
         var0 = function() { // Original name: componentDidMount, environment: var5
-            _fun12941: for (var _fun12941_ip = 0;;) switch (_fun12941_ip) {
+            _fun12942: for (var _fun12942_ip = 0;;) switch (_fun12942_ip) {
                 case 0:
                     var3 = this;
                     var9 = _closure2_slot0;
                     var4 = function(arg0, arg1, arg2, arg3) { // Original name: _superPropGet, environment: var0
-                        _fun12942: for (var _fun12942_ip = 0;;) switch (_fun12942_ip) {
+                        _fun12943: for (var _fun12943_ip = 0;;) switch (_fun12943_ip) {
                             case 0:
                                 var4 = arg0;
                                 var6 = arg2;
@@ -177,8 +177,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var7 = var0 & var2;
                                 var0 = var4;
                                 if (!var7) {
-                                    _fun12942_ip = 44;
-                                    continue _fun12942
+                                    _fun12943_ip = 44;
+                                    continue _fun12943
                                 }
                             case 39:
                                 var0 = var4.prototype;
@@ -192,16 +192,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                                 var2 = var0 & var2;
                                 var0 = var4;
                                 if (!var2) {
-                                    _fun12942_ip = 98;
-                                    continue _fun12942
+                                    _fun12943_ip = 98;
+                                    continue _fun12943
                                 }
                             case 79:
                                 var3 = 'function';
                                 var2 = typeof var4;
                                 var0 = var4;
                                 if (!(var3 === var2)) {
-                                    _fun12942_ip = 98;
-                                    continue _fun12942
+                                    _fun12943_ip = 98;
+                                    continue _fun12943
                                 }
                             case 93:
                                 var0 = function(arg0) { // Environment: var1
@@ -228,8 +228,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = _closure1_slot8;
                     var2 = var2.appStartReported;
                     if (var2) {
-                        _fun12941_ip = 85;
-                        continue _fun12941
+                        _fun12942_ip = 85;
+                        continue _fun12942
                     }
                 case 63:
                     var2 = var3._reportAppStart;
@@ -248,7 +248,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var6 = '_reportAppStart';
         var4.key = var6;
         var5 = function() { // Original name: _reportAppStart, environment: var5
-            _fun12944: for (var _fun12944_ip = 0;;) switch (_fun12944_ip) {
+            _fun12945: for (var _fun12945_ip = 0;;) switch (_fun12945_ip) {
                 case 0:
                     var3 = _closure1_slot0;
                     var2 = _closure1_slot1;
@@ -259,23 +259,23 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var3.getClient;
                     var4 = var2.bind(var3)();
                     if (!var4) {
-                        _fun12944_ip = 269;
-                        continue _fun12944
+                        _fun12945_ip = 269;
+                        continue _fun12945
                     }
                 case 41:
                     var5 = var4.addIntegration;
                     var2 = null;
                     var2 = var2 === var5;
                     if (var2) {
-                        _fun12944_ip = 60;
-                        continue _fun12944
+                        _fun12945_ip = 60;
+                        continue _fun12945
                     }
                 case 56:
                     var2 = var0 === var5;
                 case 60:
                     if (var2) {
-                        _fun12944_ip = 113;
-                        continue _fun12944
+                        _fun12945_ip = 113;
+                        continue _fun12945
                     }
                 case 63:
                     var3 = var5.call;
@@ -298,16 +298,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var3.getAppRegistryIntegration;
                     var4 = var2.bind(var3)(var4);
                     if (!var4) {
-                        _fun12944_ip = 164;
-                        continue _fun12944
+                        _fun12945_ip = 164;
+                        continue _fun12945
                     }
                 case 147:
                     var2 = var4.onRunApplication;
                     var3 = 'function';
                     var2 = typeof var2;
                     if (!(var3 !== var2)) {
-                        _fun12944_ip = 208;
-                        continue _fun12944
+                        _fun12945_ip = 208;
+                        continue _fun12945
                     }
                 case 164:
                     var3 = _closure1_slot0;
@@ -319,8 +319,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = var5.warn;
                     var2 = 'AppRegistryIntegration.onRunApplication not found or invalid.';
                     var2 = var3.bind(var5)(var2);
-                    _fun12944_ip = 229;
-                    continue _fun12944;
+                    _fun12945_ip = 229;
+                    continue _fun12945;
                 case 208:
                     var3 = var4.onRunApplication;
                     var2 = _closure1_slot8;

@@ -72,13 +72,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1[0] = var5;
         var1[1] = var4;
         var0 = function() { // Environment: var0
-            _fun96934: for (var _fun96934_ip = 0;;) switch (_fun96934_ip) {
+            _fun97188: for (var _fun97188_ip = 0;;) switch (_fun97188_ip) {
                 case 0:
                     var2 = _closure2_slot2;
                     var1 = 0;
                     if (!(var2 > var1)) {
-                        _fun96934_ip = 28;
-                        continue _fun96934
+                        _fun97188_ip = 28;
+                        continue _fun97188
                     }
                 case 13:
                     var2 = _closure2_slot3;
@@ -140,7 +140,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = new Array(1);
             var7[0] = var6;
             var6 = function() { // Environment: var0
-                _fun96937: for (var _fun96937_ip = 0;;) switch (_fun96937_ip) {
+                _fun97191: for (var _fun97191_ip = 0;;) switch (_fun97191_ip) {
                     case 0:
                         var2 = _closure1_slot4;
                         var1 = var2.getMemberCount;
@@ -150,8 +150,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var0 != var1;
                         var0 = 0;
                         if (!var2) {
-                            _fun96937_ip = 39;
-                            continue _fun96937
+                            _fun97191_ip = 39;
+                            continue _fun97191
                         }
                     case 36:
                         var0 = var1;
@@ -195,7 +195,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var7 = new Array(1);
             var7[0] = var6;
             var6 = function() { // Environment: var0
-                _fun96940: for (var _fun96940_ip = 0;;) switch (_fun96940_ip) {
+                _fun97194: for (var _fun97194_ip = 0;;) switch (_fun97194_ip) {
                     case 0:
                         var2 = _closure1_slot4;
                         var1 = var2.getOnlineCount;
@@ -205,8 +205,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var2 = var0 != var1;
                         var0 = 0;
                         if (!var2) {
-                            _fun96940_ip = 39;
-                            continue _fun96940
+                            _fun97194_ip = 39;
+                            continue _fun97194
                         }
                     case 36:
                         var0 = var1;
@@ -260,4 +260,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useGuildHeaderCounts = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1599, 12579, 22, 806, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1599, 12604, 22, 806, 566, 2]);

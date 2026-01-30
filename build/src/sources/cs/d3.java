@@ -30,15 +30,15 @@ public final class d3 {
         static {
             int[] iArr = new int[i.a.values().length];
             try {
-                iArr[i.a.f33399e.ordinal()] = 1;
+                iArr[i.a.f33415e.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                iArr[i.a.f33398d.ordinal()] = 2;
+                iArr[i.a.f33414d.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
             try {
-                iArr[i.a.f33400i.ordinal()] = 3;
+                iArr[i.a.f33416i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
             f21124a = iArr;

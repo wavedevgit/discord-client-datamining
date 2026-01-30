@@ -76,7 +76,7 @@ public final class AudioWaveView extends View implements AudioProgressView {
         CHUNK_MAX_HEIGHT = SizeUtilsKt.getDpToPx(12);
         int i10 = dpToPx + dpToPx2;
         CHUNK_SIZE = i10;
-        Duration.a aVar = Duration.f36281e;
+        Duration.a aVar = Duration.f36297e;
         MAX_DURATION = Duration.t(kotlin.time.b.s(30, es.b.f24009p));
         MIN_WIDTH = i10 * 5;
         MAX_WIDTH = SizeUtilsKt.getDpToPx(600);

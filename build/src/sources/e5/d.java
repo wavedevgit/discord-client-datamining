@@ -108,7 +108,7 @@ public final class d {
             r8 = 2147483647(0x7fffffff, float:NaN)
             if (r7 == 0) goto L4b
             h5.c$a r6 = (h5.c.a) r6
-            int r6 = r6.f27342a
+            int r6 = r6.f27358a
             goto L4c
         L4b:
             r6 = r8
@@ -117,7 +117,7 @@ public final class d {
             boolean r9 = r7 instanceof h5.c.a
             if (r9 == 0) goto L58
             h5.c$a r7 = (h5.c.a) r7
-            int r8 = r7.f27342a
+            int r8 = r7.f27358a
         L58:
             r7 = r22
             double r9 = x4.j.c(r3, r1, r6, r8, r7)
@@ -243,7 +243,7 @@ public final class d {
     }
 
     public final q g(b.a aVar, g5.h hVar, c.b bVar, c.C0288c c0288c) {
-        return new q(new BitmapDrawable(hVar.l().getResources(), c0288c.a()), hVar, x4.h.f53166d, bVar, b(c0288c), d(c0288c), k.t(aVar));
+        return new q(new BitmapDrawable(hVar.l().getResources(), c0288c.a()), hVar, x4.h.f53182d, bVar, b(c0288c), d(c0288c), k.t(aVar));
     }
 
     public final boolean h(c.b bVar, g5.h hVar, a.b bVar2) {

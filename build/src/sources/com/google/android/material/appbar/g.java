@@ -23,10 +23,10 @@ abstract class g {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static void b(View view, float f10) {
-        int integer = view.getResources().getInteger(yg.g.f54447a);
+        int integer = view.getResources().getInteger(yg.g.f54463a);
         StateListAnimator stateListAnimator = new StateListAnimator();
         long j10 = integer;
-        stateListAnimator.addState(new int[]{16842910, yg.b.f54337d0, -yg.b.f54339e0}, ObjectAnimator.ofFloat(view, ViewProps.ELEVATION, 0.0f).setDuration(j10));
+        stateListAnimator.addState(new int[]{16842910, yg.b.f54353d0, -yg.b.f54355e0}, ObjectAnimator.ofFloat(view, ViewProps.ELEVATION, 0.0f).setDuration(j10));
         stateListAnimator.addState(new int[]{16842910}, ObjectAnimator.ofFloat(view, ViewProps.ELEVATION, f10).setDuration(j10));
         stateListAnimator.addState(new int[0], ObjectAnimator.ofFloat(view, ViewProps.ELEVATION, 0.0f).setDuration(0L));
         view.setStateListAnimator(stateListAnimator);

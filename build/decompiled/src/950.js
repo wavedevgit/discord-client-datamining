@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = dependencyMap;
     var _closure1_slot1 = var2;
     var2 = function(arg0, arg1, arg2, arg3) { // Original name: captureMetric, environment: var0
-        _fun9824: for (var _fun9824_ip = 0;;) switch (_fun9824_ip) {
+        _fun9825: for (var _fun9825_ip = 0;;) switch (_fun9825_ip) {
             case 0:
                 var6 = arg3;
                 var2 = _closure1_slot0;
@@ -27,8 +27,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = var5 == var6;
                 var1 = undefined;
                 if (var7) {
-                    _fun9824_ip = 73;
-                    continue _fun9824
+                    _fun9825_ip = 73;
+                    continue _fun9825
                 }
             case 67:
                 var1 = var6.unit;
@@ -37,8 +37,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = var5 == var6;
                 var1 = undefined;
                 if (var7) {
-                    _fun9824_ip = 93;
-                    continue _fun9824
+                    _fun9825_ip = 93;
+                    continue _fun9825
                 }
             case 87:
                 var1 = var6.attributes;
@@ -48,8 +48,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var7 = var5 == var6;
                 var5 = undefined;
                 if (var7) {
-                    _fun9824_ip = 115;
-                    continue _fun9824
+                    _fun9825_ip = 115;
+                    continue _fun9825
                 }
             case 109:
                 var5 = var6.scope;
@@ -70,7 +70,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2.value = var6;
     var2 = var4.bind(var5)(var1, var3, var2);
     var2 = function(arg0) { // Original name: count, environment: var0
-        _fun9825: for (var _fun9825_ip = 0;;) switch (_fun9825_ip) {
+        _fun9826: for (var _fun9826_ip = 0;;) switch (_fun9826_ip) {
             case 0:
                 var0 = undefined;
                 var2 = undefined;
@@ -80,15 +80,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = var3 > var1;
                 var4 = var1;
                 if (!var3) {
-                    _fun9825_ip = 42;
-                    continue _fun9825
+                    _fun9826_ip = 42;
+                    continue _fun9826
                 }
             case 27:
                 var3 = arguments[var1];
                 var4 = var1;
                 if (!(var0 !== var3)) {
-                    _fun9825_ip = 42;
-                    continue _fun9825
+                    _fun9826_ip = 42;
+                    continue _fun9826
                 }
             case 38:
                 var4 = arguments[var1];
@@ -98,8 +98,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var6 = var3 > var1;
                 var3 = undefined;
                 if (!var6) {
-                    _fun9825_ip = 61;
-                    continue _fun9825
+                    _fun9826_ip = 61;
+                    continue _fun9826
                 }
             case 57:
                 var3 = arguments[var1];

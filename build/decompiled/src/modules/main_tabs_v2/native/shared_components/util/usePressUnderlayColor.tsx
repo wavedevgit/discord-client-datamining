@@ -29,7 +29,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/main_tabs_v2/native/shared_components/util/usePressUnderlayColor.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: usePressUnderlayColor, environment: var1
-        _fun110480: for (var _fun110480_ip = 0;;) switch (_fun110480_ip) {
+        _fun110742: for (var _fun110742_ip = 0;;) switch (_fun110742_ip) {
             case 0:
                 var5 = arg0;
                 var7 = _closure1_slot1;
@@ -54,8 +54,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2 == var5;
                 var4 = undefined;
                 if (var0) {
-                    _fun110480_ip = 115;
-                    continue _fun110480
+                    _fun110742_ip = 115;
+                    continue _fun110742
                 }
             case 93:
                 var9 = var5.slice;
@@ -66,15 +66,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 115:
                 var0 = var7;
                 if (!(var2 != var4)) {
-                    _fun110480_ip = 193;
-                    continue _fun110480
+                    _fun110742_ip = 193;
+                    continue _fun110742
                 }
             case 122:
                 var2 = _closure1_slot3;
                 var0 = var7;
                 if (!(var5 !== var2)) {
-                    _fun110480_ip = 193;
-                    continue _fun110480
+                    _fun110742_ip = 193;
+                    continue _fun110742
                 }
             case 133:
                 var2 = _closure1_slot0;
@@ -86,8 +86,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 0.08;
                 var5 = 'dark';
                 if (!(var5 === var6)) {
-                    _fun110480_ip = 187;
-                    continue _fun110480
+                    _fun110742_ip = 187;
+                    continue _fun110742
                 }
             case 177:
                 var1 = 0.12;
@@ -99,4 +99,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [14177, 3205, 3110, 671, 3199, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [14203, 3205, 3110, 671, 3199, 2]);

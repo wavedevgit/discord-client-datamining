@@ -376,7 +376,7 @@ public final class TelemetryRing {
             synchronized (initLock) {
                 if (store == null && !initScheduled) {
                     initScheduled = true;
-                    Unit unit = Unit.f33282a;
+                    Unit unit = Unit.f33298a;
                     final Context applicationContext = context.getApplicationContext();
                     if (budget == null) {
                         budget = TelemetryRingTypes.INSTANCE.defaultBudget();
@@ -412,10 +412,10 @@ public final class TelemetryRing {
         });
         Intrinsics.checkNotNullExpressionValue(submit, "submit(...)");
         try {
-            Result.a aVar = Result.f33279e;
+            Result.a aVar = Result.f33295e;
             b10 = Result.b((Map) submit.get());
         } catch (Throwable th2) {
-            Result.a aVar2 = Result.f33279e;
+            Result.a aVar2 = Result.f33295e;
             b10 = Result.b(kotlin.c.a(th2));
         }
         Throwable e10 = Result.e(b10);

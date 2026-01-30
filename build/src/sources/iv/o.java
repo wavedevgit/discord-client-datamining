@@ -5,19 +5,19 @@ import java.util.Objects;
 public class o extends RuntimeException {
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f31349d;
+    private final int f31365d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f31350e;
+    private final String f31366e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient z f31351i;
+    private final transient z f31367i;
 
     public o(z zVar) {
         super(a(zVar));
-        this.f31349d = zVar.b();
-        this.f31350e = zVar.h();
-        this.f31351i = zVar;
+        this.f31365d = zVar.b();
+        this.f31366e = zVar.h();
+        this.f31367i = zVar;
     }
 
     private static String a(z zVar) {

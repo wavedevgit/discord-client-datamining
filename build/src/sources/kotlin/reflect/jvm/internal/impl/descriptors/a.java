@@ -13,87 +13,87 @@ import kotlin.reflect.jvm.internal.impl.types.Variance;
 final class a implements TypeParameterDescriptor {
 
     /* renamed from: d  reason: collision with root package name */
-    private final TypeParameterDescriptor f33612d;
+    private final TypeParameterDescriptor f33628d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final DeclarationDescriptor f33613e;
+    private final DeclarationDescriptor f33629e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f33614i;
+    private final int f33630i;
 
     public a(TypeParameterDescriptor originalDescriptor, DeclarationDescriptor declarationDescriptor, int i10) {
         Intrinsics.checkNotNullParameter(originalDescriptor, "originalDescriptor");
         Intrinsics.checkNotNullParameter(declarationDescriptor, "declarationDescriptor");
-        this.f33612d = originalDescriptor;
-        this.f33613e = declarationDescriptor;
-        this.f33614i = i10;
+        this.f33628d = originalDescriptor;
+        this.f33629e = declarationDescriptor;
+        this.f33630i = i10;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptor
     public Object accept(DeclarationDescriptorVisitor declarationDescriptorVisitor, Object obj) {
-        return this.f33612d.accept(declarationDescriptorVisitor, obj);
+        return this.f33628d.accept(declarationDescriptorVisitor, obj);
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.annotations.Annotated
     public Annotations getAnnotations() {
-        return this.f33612d.getAnnotations();
+        return this.f33628d.getAnnotations();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorNonRoot, kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptor
     public DeclarationDescriptor getContainingDeclaration() {
-        return this.f33613e;
+        return this.f33629e;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptor
     public SimpleType getDefaultType() {
-        SimpleType defaultType = this.f33612d.getDefaultType();
+        SimpleType defaultType = this.f33628d.getDefaultType();
         Intrinsics.checkNotNullExpressionValue(defaultType, "getDefaultType(...)");
         return defaultType;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.TypeParameterDescriptor
     public int getIndex() {
-        return this.f33614i + this.f33612d.getIndex();
+        return this.f33630i + this.f33628d.getIndex();
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.Named
     public Name getName() {
-        Name name = this.f33612d.getName();
+        Name name = this.f33628d.getName();
         Intrinsics.checkNotNullExpressionValue(name, "getName(...)");
         return name;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptorWithSource
     public SourceElement getSource() {
-        SourceElement source = this.f33612d.getSource();
+        SourceElement source = this.f33628d.getSource();
         Intrinsics.checkNotNullExpressionValue(source, "getSource(...)");
         return source;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.TypeParameterDescriptor
     public StorageManager getStorageManager() {
-        StorageManager storageManager = this.f33612d.getStorageManager();
+        StorageManager storageManager = this.f33628d.getStorageManager();
         Intrinsics.checkNotNullExpressionValue(storageManager, "getStorageManager(...)");
         return storageManager;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.TypeParameterDescriptor, kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptor
     public TypeConstructor getTypeConstructor() {
-        TypeConstructor typeConstructor = this.f33612d.getTypeConstructor();
+        TypeConstructor typeConstructor = this.f33628d.getTypeConstructor();
         Intrinsics.checkNotNullExpressionValue(typeConstructor, "getTypeConstructor(...)");
         return typeConstructor;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.TypeParameterDescriptor
     public List getUpperBounds() {
-        List<KotlinType> upperBounds = this.f33612d.getUpperBounds();
+        List<KotlinType> upperBounds = this.f33628d.getUpperBounds();
         Intrinsics.checkNotNullExpressionValue(upperBounds, "getUpperBounds(...)");
         return upperBounds;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.TypeParameterDescriptor
     public Variance getVariance() {
-        Variance variance = this.f33612d.getVariance();
+        Variance variance = this.f33628d.getVariance();
         Intrinsics.checkNotNullExpressionValue(variance, "getVariance(...)");
         return variance;
     }
@@ -105,16 +105,16 @@ final class a implements TypeParameterDescriptor {
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.TypeParameterDescriptor
     public boolean isReified() {
-        return this.f33612d.isReified();
+        return this.f33628d.isReified();
     }
 
     public String toString() {
-        return this.f33612d + "[inner-copy]";
+        return this.f33628d + "[inner-copy]";
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptor
     public TypeParameterDescriptor getOriginal() {
-        TypeParameterDescriptor original = this.f33612d.getOriginal();
+        TypeParameterDescriptor original = this.f33628d.getOriginal();
         Intrinsics.checkNotNullExpressionValue(original, "getOriginal(...)");
         return original;
     }

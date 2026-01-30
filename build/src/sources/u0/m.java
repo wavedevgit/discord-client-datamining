@@ -3,7 +3,7 @@ package u0;
 public final class m extends h {
 
     /* renamed from: e  reason: collision with root package name */
-    private int f50012e;
+    private int f50028e;
 
     public m(int i10) {
         super(null);
@@ -20,19 +20,19 @@ public final class m extends h {
     }
 
     private final void e() {
-        this.f50012e = r.a(b()) - this.f50004d;
+        this.f50028e = r.a(b()) - this.f50020d;
     }
 
     private final void f(int i10) {
         long[] jArr;
         if (i10 == 0) {
-            jArr = r.f50020a;
+            jArr = r.f50036a;
         } else {
             long[] jArr2 = new long[((i10 + 15) & (-8)) >> 3];
             kotlin.collections.i.y(jArr2, -9187201950435737472L, 0, 0, 6, null);
             jArr = jArr2;
         }
-        this.f50001a = jArr;
+        this.f50017a = jArr;
         int i11 = i10 >> 3;
         long j10 = 255 << ((i10 & 7) << 3);
         jArr[i11] = (jArr[i11] & (~j10)) | j10;
@@ -46,8 +46,8 @@ public final class m extends h {
         } else {
             i11 = 0;
         }
-        this.f50003c = i11;
+        this.f50019c = i11;
         f(i11);
-        this.f50002b = new long[i11];
+        this.f50018b = new long[i11];
     }
 }

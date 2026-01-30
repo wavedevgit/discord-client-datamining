@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var1 = function(arg0) { // Original name: isActivityFocused, environment: var3
-        _fun62629: for (var _fun62629_ip = 0;;) switch (_fun62629_ip) {
+        _fun62673: for (var _fun62673_ip = 0;;) switch (_fun62673_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.channelId;
@@ -21,15 +21,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = null;
                 var0 = var7 != var1;
                 if (!var0) {
-                    _fun62629_ip = 54;
-                    continue _fun62629
+                    _fun62673_ip = 54;
+                    continue _fun62673
                 }
             case 50:
                 var0 = var7 != var6;
             case 54:
                 if (!var0) {
-                    _fun62629_ip = 131;
-                    continue _fun62629
+                    _fun62673_ip = 131;
+                    continue _fun62673
                 }
             case 57:
                 var2 = var1.id;
@@ -45,8 +45,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.applicationId = var8;
                 var7 = var7 == var6;
                 if (var7) {
-                    _fun62629_ip = 117;
-                    continue _fun62629
+                    _fun62673_ip = 117;
+                    continue _fun62673
                 }
             case 111:
                 var5 = var6.compositeInstanceId;
@@ -116,4 +116,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.isActivityFocused = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3902, 1371, 3907, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3908, 1371, 3913, 566, 2]);

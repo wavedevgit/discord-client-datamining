@@ -7,17 +7,17 @@ import java.io.InputStream;
 public class a extends FilterInputStream {
 
     /* renamed from: d  reason: collision with root package name */
-    private int f50080d;
+    private int f50096d;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f50081e;
+    private int f50097e;
 
     public a(InputStream inputStream, int i10) {
         super(inputStream);
         inputStream.getClass();
         if (i10 >= 0) {
-            this.f50080d = i10;
-            this.f50081e = -1;
+            this.f50096d = i10;
+            this.f50097e = -1;
             return;
         }
         throw new IllegalArgumentException("limit must be >= 0");
@@ -25,25 +25,25 @@ public class a extends FilterInputStream {
 
     @Override // java.io.FilterInputStream, java.io.InputStream
     public int available() {
-        return Math.min(((FilterInputStream) this).in.available(), this.f50080d);
+        return Math.min(((FilterInputStream) this).in.available(), this.f50096d);
     }
 
     @Override // java.io.FilterInputStream, java.io.InputStream
     public void mark(int i10) {
         if (((FilterInputStream) this).in.markSupported()) {
             ((FilterInputStream) this).in.mark(i10);
-            this.f50081e = this.f50080d;
+            this.f50097e = this.f50096d;
         }
     }
 
     @Override // java.io.FilterInputStream, java.io.InputStream
     public int read() {
-        if (this.f50080d == 0) {
+        if (this.f50096d == 0) {
             return -1;
         }
         int read = ((FilterInputStream) this).in.read();
         if (read != -1) {
-            this.f50080d--;
+            this.f50096d--;
         }
         return read;
     }
@@ -51,9 +51,9 @@ public class a extends FilterInputStream {
     @Override // java.io.FilterInputStream, java.io.InputStream
     public void reset() {
         if (((FilterInputStream) this).in.markSupported()) {
-            if (this.f50081e != -1) {
+            if (this.f50097e != -1) {
                 ((FilterInputStream) this).in.reset();
-                this.f50080d = this.f50081e;
+                this.f50096d = this.f50097e;
                 return;
             }
             throw new IOException("mark not set");
@@ -63,20 +63,20 @@ public class a extends FilterInputStream {
 
     @Override // java.io.FilterInputStream, java.io.InputStream
     public long skip(long j10) {
-        long skip = ((FilterInputStream) this).in.skip(Math.min(j10, this.f50080d));
-        this.f50080d = (int) (this.f50080d - skip);
+        long skip = ((FilterInputStream) this).in.skip(Math.min(j10, this.f50096d));
+        this.f50096d = (int) (this.f50096d - skip);
         return skip;
     }
 
     @Override // java.io.FilterInputStream, java.io.InputStream
     public int read(byte[] bArr, int i10, int i11) {
-        int i12 = this.f50080d;
+        int i12 = this.f50096d;
         if (i12 == 0) {
             return -1;
         }
         int read = ((FilterInputStream) this).in.read(bArr, i10, Math.min(i11, i12));
         if (read > 0) {
-            this.f50080d -= read;
+            this.f50096d -= read;
         }
         return read;
     }

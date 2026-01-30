@@ -5,10 +5,10 @@ import android.hardware.camera2.CameraCharacteristics;
 public final /* synthetic */ class w0 implements u.c {
 
     /* renamed from: a  reason: collision with root package name */
-    public final /* synthetic */ r.a0 f46672a;
+    public final /* synthetic */ r.a0 f46688a;
 
     @Override // u.c
     public final Object a(CameraCharacteristics.Key key) {
-        return this.f46672a.a(key);
+        return this.f46688a.a(key);
     }
 }

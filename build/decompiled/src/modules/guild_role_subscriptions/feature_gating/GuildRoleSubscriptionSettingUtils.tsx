@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var10;
     var _closure1_slot1 = var11;
     var7 = function(arg0) { // Original name: canSeeGuildRoleSubscriptionSettingsContent, environment: var4
-        _fun49754: for (var _fun49754_ip = 0;;) switch (_fun49754_ip) {
+        _fun49800: for (var _fun49800_ip = 0;;) switch (_fun49800_ip) {
             case 0:
                 var1 = arg0;
                 var8 = var1.guild;
@@ -21,21 +21,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = !var0;
                 var0 = !var2;
                 if (var2) {
-                    _fun49754_ip = 212;
-                    continue _fun49754
+                    _fun49800_ip = 212;
+                    continue _fun49800
                 }
             case 56:
                 if (!var1) {
-                    _fun49754_ip = 62;
-                    continue _fun49754
+                    _fun49800_ip = 62;
+                    continue _fun49800
                 }
             case 59:
                 var1 = !var5;
             case 62:
                 var1 = !var1;
                 if (!var1) {
-                    _fun49754_ip = 209;
-                    continue _fun49754
+                    _fun49800_ip = 209;
+                    continue _fun49800
                 }
             case 71:
                 var10 = var8.features;
@@ -45,8 +45,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var9.bind(var10)(var2);
                 var9 = !var2;
                 if (!var9) {
-                    _fun49754_ip = 135;
-                    continue _fun49754
+                    _fun49800_ip = 135;
+                    continue _fun49800
                 }
             case 106:
                 var11 = var8.features;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             case 135:
                 var2 = !var9;
                 if (!var9) {
-                    _fun49754_ip = 206;
-                    continue _fun49754
+                    _fun49800_ip = 206;
+                    continue _fun49800
                 }
             case 141:
                 var9 = var8.features;
@@ -70,27 +70,27 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = !var3;
                 var3 = !var8;
                 if (var8) {
-                    _fun49754_ip = 203;
-                    continue _fun49754
+                    _fun49800_ip = 203;
+                    continue _fun49800
                 }
             case 176:
                 var7 = !var7;
                 if (!var7) {
-                    _fun49754_ip = 185;
-                    continue _fun49754
+                    _fun49800_ip = 185;
+                    continue _fun49800
                 }
             case 182:
                 var7 = !var4;
             case 185:
                 var4 = !var7;
                 if (var7) {
-                    _fun49754_ip = 200;
-                    continue _fun49754
+                    _fun49800_ip = 200;
+                    continue _fun49800
                 }
             case 191:
                 if (!var5) {
-                    _fun49754_ip = 197;
-                    continue _fun49754
+                    _fun49800_ip = 197;
+                    continue _fun49800
                 }
             case 194:
                 var5 = var6;
@@ -110,7 +110,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot8 = var7;
     var6 = function(arg0) { // Original name: computeGuildRoleSubscriptionSettingsVisibility, environment: var4
-        _fun49755: for (var _fun49755_ip = 0;;) switch (_fun49755_ip) {
+        _fun49801: for (var _fun49801_ip = 0;;) switch (_fun49801_ip) {
             case 0:
                 var3 = arg0;
                 var0 = var3.guild;
@@ -120,16 +120,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.CREATOR_MONETIZABLE_DISABLED;
                 var1 = var2.bind(var4)(var1);
                 if (var1) {
-                    _fun49755_ip = 196;
-                    continue _fun49755
+                    _fun49801_ip = 196;
+                    continue _fun49801
                 }
             case 43:
                 var2 = _closure1_slot8;
                 var1 = undefined;
                 var1 = var2.bind(var1)(var3);
                 if (var1) {
-                    _fun49755_ip = 184;
-                    continue _fun49755
+                    _fun49801_ip = 184;
+                    continue _fun49801
                 }
             case 60:
                 var2 = var3.guild;
@@ -139,43 +139,43 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var3.isGuildEligibleForRoleSubscriptions;
                 var3 = var3.isExpeditedMonetizationOnboardingGuild;
                 if (!var6) {
-                    _fun49755_ip = 116;
-                    continue _fun49755
+                    _fun49801_ip = 116;
+                    continue _fun49801
                 }
             case 98:
                 if (var1) {
-                    _fun49755_ip = 116;
-                    continue _fun49755
+                    _fun49801_ip = 116;
+                    continue _fun49801
                 }
             case 101:
                 if (!var5) {
-                    _fun49755_ip = 116;
-                    continue _fun49755
+                    _fun49801_ip = 116;
+                    continue _fun49801
                 }
             case 104:
                 var1 = _closure1_slot7;
                 var1 = var1.WAITLIST_ONLY;
-                _fun49755_ip = 182;
-                continue _fun49755;
+                _fun49801_ip = 182;
+                continue _fun49801;
             case 116:
                 if (!var6) {
-                    _fun49755_ip = 169;
-                    continue _fun49755
+                    _fun49801_ip = 169;
+                    continue _fun49801
                 }
             case 119:
                 if (!var5) {
-                    _fun49755_ip = 169;
-                    continue _fun49755
+                    _fun49801_ip = 169;
+                    continue _fun49801
                 }
             case 122:
                 if (var4) {
-                    _fun49755_ip = 128;
-                    continue _fun49755
+                    _fun49801_ip = 128;
+                    continue _fun49801
                 }
             case 125:
                 if (!var3) {
-                    _fun49755_ip = 169;
-                    continue _fun49755
+                    _fun49801_ip = 169;
+                    continue _fun49801
                 }
             case 128:
                 var4 = var2.features;
@@ -184,14 +184,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.COMMUNITY;
                 var2 = var3.bind(var4)(var2);
                 if (var2) {
-                    _fun49755_ip = 169;
-                    continue _fun49755
+                    _fun49801_ip = 169;
+                    continue _fun49801
                 }
             case 157:
                 var2 = _closure1_slot7;
                 var2 = var2.NEEDS_COMMUNITY;
-                _fun49755_ip = 179;
-                continue _fun49755;
+                _fun49801_ip = 179;
+                continue _fun49801;
             case 169:
                 var3 = _closure1_slot7;
                 var2 = var3.NONE;
@@ -211,7 +211,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot9 = var6;
     var5 = function(arg0) { // Original name: useGuildRoleSubscriptionSettingsVisibility, environment: var4
-        _fun49756: for (var _fun49756_ip = 0;;) switch (_fun49756_ip) {
+        _fun49802: for (var _fun49802_ip = 0;;) switch (_fun49802_ip) {
             case 0:
                 var11 = arg0;
                 var _closure2_slot0 = var11;
@@ -226,8 +226,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var0 == var11;
                 var2 = undefined;
                 if (var7) {
-                    _fun49756_ip = 56;
-                    continue _fun49756
+                    _fun49802_ip = 56;
+                    continue _fun49802
                 }
             case 51:
                 var2 = var11.id;
@@ -246,8 +246,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = var0 == var11;
                 var4 = undefined;
                 if (var10) {
-                    _fun49756_ip = 121;
-                    continue _fun49756
+                    _fun49802_ip = 121;
+                    continue _fun49802
                 }
             case 116:
                 var4 = var11.id;
@@ -265,7 +265,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = new Array(1);
                 var10[0] = var15;
                 var5 = function() { // Environment: var5
-                    _fun49757: for (var _fun49757_ip = 0;;) switch (_fun49757_ip) {
+                    _fun49803: for (var _fun49803_ip = 0;;) switch (_fun49803_ip) {
                         case 0:
                             var1 = _closure1_slot4;
                             var0 = var1.getCurrentUser;
@@ -274,8 +274,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var0 = null;
                             var0 = var0 != var3;
                             if (!var0) {
-                                _fun49757_ip = 48;
-                                continue _fun49757
+                                _fun49803_ip = 48;
+                                continue _fun49803
                             }
                         case 32:
                             var3 = _closure1_slot2;
@@ -298,8 +298,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var0 == var11;
                 var2 = undefined;
                 if (var13) {
-                    _fun49756_ip = 234;
-                    continue _fun49756
+                    _fun49802_ip = 234;
+                    continue _fun49802
                 }
             case 229:
                 var2 = var11.id;
@@ -307,8 +307,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var4.bind(var12)(var2);
                 var4 = var2.shouldRestrictUpdatingCreatorMonetizationSettings;
                 if (!(var0 != var11)) {
-                    _fun49756_ip = 301;
-                    continue _fun49756
+                    _fun49802_ip = 301;
+                    continue _fun49802
                 }
             case 249:
                 var2 = _closure1_slot9;
@@ -322,8 +322,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.isUserInCreatorMonetizationEligibleCountry = var5;
                 var0.shouldRestrictUpdatingRoleSubscriptionSettings = var4;
                 var0 = var2.bind(var3)(var0);
-                _fun49756_ip = 311;
-                continue _fun49756;
+                _fun49802_ip = 311;
+                continue _fun49802;
             case 301:
                 var1 = _closure1_slot7;
                 var0 = var1.NONE;
@@ -359,14 +359,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot11 = var3;
     var1 = function(arg0) { // Original name: canManageGuildRoleSubscriptions, environment: var4
-        _fun49760: for (var _fun49760_ip = 0;;) switch (_fun49760_ip) {
+        _fun49806: for (var _fun49806_ip = 0;;) switch (_fun49806_ip) {
             case 0:
                 var4 = arg0;
                 var0 = null;
                 var0 = var0 != var4;
                 if (!var0) {
-                    _fun49760_ip = 41;
-                    continue _fun49760
+                    _fun49806_ip = 41;
+                    continue _fun49806
                 }
             case 12:
                 var3 = _closure1_slot3;
@@ -444,13 +444,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.canSeeGuildRoleSubscriptionSettings = var6;
     var2.useGuildRoleSubscriptionSettingsVisibility = var5;
     var5 = function(arg0) { // Original name: getGuildRoleSubscriptionSettingsVisibility, environment: var4
-        _fun49762: for (var _fun49762_ip = 0;;) switch (_fun49762_ip) {
+        _fun49808: for (var _fun49808_ip = 0;;) switch (_fun49808_ip) {
             case 0:
                 var4 = arg0;
                 var0 = null;
                 if (!(var0 != var4)) {
-                    _fun49762_ip = 230;
-                    continue _fun49762
+                    _fun49808_ip = 230;
+                    continue _fun49808
                 }
             case 12:
                 var1 = _closure1_slot4;
@@ -521,4 +521,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.useCanManageGuildRoleSubscriptions = var3;
     var2.canManageGuildRoleSubscriptions = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1416, 3050, 1613, 660, 5591, 5594, 566, 5580, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1416, 3050, 1613, 660, 5594, 5597, 566, 5583, 2]);

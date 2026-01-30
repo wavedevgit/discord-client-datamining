@@ -1,279 +1,230 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var2 = exports;
-    var0 = global;
-    var _closure1_slot0 = var0;
-    var0 = global;
-    var5 = var0.Object;
+    var1 = exports;
+    var2 = require;
+    var _closure1_slot0 = var2;
+    var2 = dependencyMap;
+    var _closure1_slot1 = var2;
+    var2 = global;
+    var5 = var2.Object;
     var4 = var5.defineProperty;
     var3 = {};
-    var0 = true;
-    var3.value = var0;
-    var0 = '__esModule';
-    var0 = var4.bind(var5)(var2, var0, var3);
-    var5 = {};
-    var0 = 'function pnpm_FrameCallbackRegistryUITs1(){const frameCallbackRegistry={frameCallbackRegistry:new Map(),activeFrameCallbacks:new Set(),previousFrameTimestamp:null,nextCallId:0,runCallbacks:function(callId){var _this=this;const loop=function(timestamp){if(callId!==_this.nextCallId){return;}if(_this.previousFrameTimestamp===null){_this.previousFrameTimestamp=timestamp;}const delta=timestamp-_this.previousFrameTimestamp;_this.activeFrameCallbacks.forEach(function(callbackId){const callbackDetails=_this.frameCallbackRegistry.get(callbackId);const{startTime:startTime}=callbackDetails;if(startTime===null){callbackDetails.startTime=timestamp;callbackDetails.callback({timestamp:timestamp,timeSincePreviousFrame:null,timeSinceFirstFrame:0});}else{callbackDetails.callback({timestamp:timestamp,timeSincePreviousFrame:delta,timeSinceFirstFrame:timestamp-startTime});}});if(_this.activeFrameCallbacks.size>0){_this.previousFrameTimestamp=timestamp;requestAnimationFrame(loop);}else{_this.previousFrameTimestamp=null;}};if(this.activeFrameCallbacks.size===1&&callId===this.nextCallId){requestAnimationFrame(loop);}},registerFrameCallback:function(callback,callbackId){this.frameCallbackRegistry.set(callbackId,{callback:callback,startTime:null});},unregisterFrameCallback:function(callbackId){this.manageStateFrameCallback(callbackId,false);this.frameCallbackRegistry.delete(callbackId);},manageStateFrameCallback:function(callbackId,state){if(callbackId===-1){return;}if(state){this.activeFrameCallbacks.add(callbackId);this.runCallbacks(this.nextCallId);}else{const callback=this.frameCallbackRegistry.get(callbackId);callback.startTime=null;this.activeFrameCallbacks.delete(callbackId);if(this.activeFrameCallbacks.size===0){this.nextCallId+=1;}}}};global._frameCallbackRegistry=frameCallbackRegistry;}';
-    var5.code = var0;
-    var3 = dependencyMap;
-    var0 = 0;
-    var4 = var3[var0];
-    var3 = require;
-    var0 = undefined;
-    var4 = var3.bind(var0)(var4);
-    var3 = var4.runOnUIImmediately;
-    var1 = function() { // Original name: pnpm_FrameCallbackRegistryUITs1, environment: var1
-        var1 = {};
-        var2 = global;
-        var3 = var2.Map;
-        var4 = var3.prototype;
-        var4 = Object.create(var4, {
-            constructor: {
-                value: var3
-            }
-        });
-        var5 = var4;
-        var3 = new var5[var3](var4);
-        var3 = var3 instanceof Object ? var3 : var4;
-        var1.frameCallbackRegistry = var3;
-        var2 = var2.Set;
-        var3 = var2.prototype;
-        var3 = Object.create(var3, {
-            constructor: {
-                value: var2
-            }
-        });
-        var5 = var3;
-        var2 = new var5[var2](var4);
-        var2 = var2 instanceof Object ? var2 : var3;
-        var1.activeFrameCallbacks = var2;
-        var2 = null;
-        var1.previousFrameTimestamp = var2;
-        var2 = 0;
-        var1.nextCallId = var2;
-        var2 = function(arg0) { // Original name: runCallbacks, environment: var0
-            _fun34763: for (var _fun34763_ip = 0;;) switch (_fun34763_ip) {
-                case 0:
-                    var3 = arg0;
-                    var1 = this;
-                    var _closure3_slot0 = var3;
-                    var _closure3_slot1 = var1;
-                    var2 = function(arg0) { // Original name: loop, environment: var0
-                        _fun34764: for (var _fun34764_ip = 0;;) switch (_fun34764_ip) {
-                            case 0:
-                                var2 = arg0;
-                                var _closure4_slot0 = var2;
-                                var3 = _closure3_slot0;
-                                var1 = _closure3_slot1;
-                                var1 = var1.nextCallId;
-                                if (!(var3 === var1)) {
-                                    _fun34764_ip = 156;
-                                    continue _fun34764
-                                }
-                            case 33:
-                                var1 = _closure3_slot1;
-                                var1 = var1.previousFrameTimestamp;
-                                var3 = null;
-                                if (!(var3 === var1)) {
-                                    _fun34764_ip = 59;
-                                    continue _fun34764
-                                }
-                            case 49:
-                                var1 = _closure3_slot1;
-                                var1.previousFrameTimestamp = var2;
-                            case 59:
-                                var1 = _closure3_slot1;
-                                var5 = var1.previousFrameTimestamp;
-                                var5 = var2 - var5;
-                                var _closure4_slot1 = var5;
-                                var6 = var1.activeFrameCallbacks;
-                                var5 = var6.forEach;
-                                var4 = function(arg0) { // Environment: var4
-                                    _fun34765: for (var _fun34765_ip = 0;;) switch (_fun34765_ip) {
-                                        case 0:
-                                            var0 = _closure3_slot1;
-                                            var2 = var0.frameCallbackRegistry;
-                                            var1 = var2.get;
-                                            var0 = arg0;
-                                            var2 = var1.bind(var2)(var0);
-                                            var4 = var2.startTime;
-                                            var0 = null;
-                                            if (!(var0 !== var4)) {
-                                                _fun34765_ip = 83;
-                                                continue _fun34765
-                                            }
-                                        case 38:
-                                            var1 = var2.callback;
-                                            var0 = {};
-                                            var3 = _closure4_slot0;
-                                            var0.timestamp = var3;
-                                            var5 = _closure4_slot1;
-                                            var0.timeSincePreviousFrame = var5;
-                                            var3 = var3 - var4;
-                                            var0.timeSinceFirstFrame = var3;
-                                            var0 = var1.bind(var2)(var0);
-                                            _fun34765_ip = 127;
-                                            continue _fun34765;
-                                        case 83:
-                                            var3 = _closure4_slot0;
-                                            var2.startTime = var3;
-                                            var1 = var2.callback;
-                                            var0 = {
-                                                'timestamp': null,
-                                                'timeSincePreviousFrame': null,
-                                                'timeSinceFirstFrame': 0
-                                            };
-                                            var0.timestamp = var3;
-                                            var0 = var1.bind(var2)(var0);
-                                        case 127:
-                                            var0 = undefined;
-                                            return var0;
-                                    }
-                                };
-                                var4 = var5.bind(var6)(var4);
-                                var1 = var1.activeFrameCallbacks;
-                                var4 = var1.size;
-                                var1 = 0;
-                                if (!(!(var4 > var1))) {
-                                    _fun34764_ip = 127;
-                                    continue _fun34764
-                                }
-                            case 115:
-                                var1 = _closure3_slot1;
-                                var1.previousFrameTimestamp = var3;
-                                _fun34764_ip = 156;
-                                continue _fun34764;
-                            case 127:
-                                var1 = _closure3_slot1;
-                                var1.previousFrameTimestamp = var2;
-                                var1 = global;
-                                var2 = var1.requestAnimationFrame;
-                                var1 = _closure3_slot2;
-                                var0 = undefined;
-                                var0 = var2.bind(var0)(var1);
-                            case 156:
-                                var0 = undefined;
-                                return var0;
-                        }
-                    };
-                    var _closure3_slot2 = var2;
-                    var0 = var1.activeFrameCallbacks;
-                    var4 = var0.size;
-                    var0 = 1;
-                    var0 = var0 === var4;
-                    if (!var0) {
-                        _fun34763_ip = 56;
-                        continue _fun34763
+    var2 = true;
+    var3.value = var2;
+    var2 = '__esModule';
+    var2 = var4.bind(var5)(var1, var2, var3);
+    var2 = {};
+    var3 = "function pnpm_useAnimatedScrollHandlerTs1(event){const{scrollHandlers,context}=this.__closure;const{onScroll:onScroll,onBeginDrag:onBeginDrag,onEndDrag:onEndDrag,onMomentumBegin:onMomentumBegin,onMomentumEnd:onMomentumEnd}=scrollHandlers;if(onScroll&&event.eventName.endsWith('onScroll')){onScroll(event,context);}else if(onBeginDrag&&event.eventName.endsWith('onScrollBeginDrag')){onBeginDrag(event,context);}else if(onEndDrag&&event.eventName.endsWith('onScrollEndDrag')){onEndDrag(event,context);}else if(onMomentumBegin&&event.eventName.endsWith('onMomentumScrollBegin')){onMomentumBegin(event,context);}else if(onMomentumEnd&&event.eventName.endsWith('onMomentumScrollEnd')){onMomentumEnd(event,context);}}";
+    var2.code = var3;
+    var _closure1_slot2 = var2;
+    var0 = function(arg0, arg1) { // Original name: useAnimatedScrollHandler, environment: var0
+        _fun34768: for (var _fun34768_ip = 0;;) switch (_fun34768_ip) {
+            case 0:
+                var3 = arg0;
+                var4 = 'function';
+                var1 = typeof var3;
+                var2 = var3;
+                if (!(var4 === var1)) {
+                    _fun34768_ip = 29;
+                    continue _fun34768
+                }
+            case 19:
+                var1 = {};
+                var1.onScroll = var3;
+                var2 = var1;
+            case 29:
+                var _closure2_slot0 = var2;
+                var3 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var1 = 0;
+                var1 = var4[var1];
+                var6 = undefined;
+                var4 = var3.bind(var6)(var1);
+                var3 = var4.useHandler;
+                var1 = arg1;
+                var1 = var3.bind(var4)(var2, var1);
+                var7 = var1.context;
+                var _closure2_slot1 = var7;
+                var4 = var1.doDependenciesDiffer;
+                var3 = ['onScroll'];
+                var1 = var2.onBeginDrag;
+                var8 = var2;
+                if (!(var6 !== var1)) {
+                    _fun34768_ip = 122;
+                    continue _fun34768
+                }
+            case 108:
+                var2 = var3.push;
+                var1 = 'onScrollBeginDrag';
+                var1 = var2.bind(var3)(var1);
+            case 122:
+                var1 = var8.onEndDrag;
+                if (!(var6 !== var1)) {
+                    _fun34768_ip = 146;
+                    continue _fun34768
+                }
+            case 132:
+                var2 = var3.push;
+                var1 = 'onScrollEndDrag';
+                var1 = var2.bind(var3)(var1);
+            case 146:
+                var1 = var8.onMomentumBegin;
+                if (!(var6 !== var1)) {
+                    _fun34768_ip = 170;
+                    continue _fun34768
+                }
+            case 156:
+                var2 = var3.push;
+                var1 = 'onMomentumScrollBegin';
+                var1 = var2.bind(var3)(var1);
+            case 170:
+                var1 = var8.onMomentumEnd;
+                if (!(var6 !== var1)) {
+                    _fun34768_ip = 194;
+                    continue _fun34768
+                }
+            case 180:
+                var2 = var3.push;
+                var1 = 'onMomentumScrollEnd';
+                var1 = var2.bind(var3)(var1);
+            case 194:
+                var2 = _closure1_slot0;
+                var9 = _closure1_slot1;
+                var1 = 1;
+                var1 = var9[var1];
+                var2 = var2.bind(var6)(var1);
+                var1 = var2.useEvent;
+                var0 = function(arg0) { // Original name: pnpm_useAnimatedScrollHandlerTs1, environment: var0
+                    _fun34769: for (var _fun34769_ip = 0;;) switch (_fun34769_ip) {
+                        case 0:
+                            var3 = arg0;
+                            var1 = _closure2_slot0;
+                            var2 = var1.onScroll;
+                            var1 = _closure2_slot0;
+                            var5 = var1.onBeginDrag;
+                            var1 = _closure2_slot0;
+                            var6 = var1.onEndDrag;
+                            var1 = _closure2_slot0;
+                            var7 = var1.onMomentumBegin;
+                            var1 = _closure2_slot0;
+                            var8 = var1.onMomentumEnd;
+                            if (!var2) {
+                                _fun34769_ip = 86;
+                                continue _fun34769
+                            }
+                        case 59:
+                            var9 = var3.eventName;
+                            var4 = var9.endsWith;
+                            var1 = 'onScroll';
+                            var1 = var4.bind(var9)(var1);
+                            if (var1) {
+                                _fun34769_ip = 256;
+                                continue _fun34769
+                            }
+                        case 86:
+                            if (!var5) {
+                                _fun34769_ip = 116;
+                                continue _fun34769
+                            }
+                        case 89:
+                            var9 = var3.eventName;
+                            var4 = var9.endsWith;
+                            var1 = 'onScrollBeginDrag';
+                            var1 = var4.bind(var9)(var1);
+                            if (var1) {
+                                _fun34769_ip = 242;
+                                continue _fun34769
+                            }
+                        case 116:
+                            if (!var6) {
+                                _fun34769_ip = 143;
+                                continue _fun34769
+                            }
+                        case 119:
+                            var9 = var3.eventName;
+                            var4 = var9.endsWith;
+                            var1 = 'onScrollEndDrag';
+                            var1 = var4.bind(var9)(var1);
+                            if (var1) {
+                                _fun34769_ip = 228;
+                                continue _fun34769
+                            }
+                        case 143:
+                            if (!var7) {
+                                _fun34769_ip = 170;
+                                continue _fun34769
+                            }
+                        case 146:
+                            var9 = var3.eventName;
+                            var4 = var9.endsWith;
+                            var1 = 'onMomentumScrollBegin';
+                            var1 = var4.bind(var9)(var1);
+                            if (var1) {
+                                _fun34769_ip = 214;
+                                continue _fun34769
+                            }
+                        case 170:
+                            var1 = var8;
+                            if (!var1) {
+                                _fun34769_ip = 197;
+                                continue _fun34769
+                            }
+                        case 176:
+                            var10 = var3.eventName;
+                            var9 = var10.endsWith;
+                            var4 = 'onMomentumScrollEnd';
+                            var1 = var9.bind(var10)(var4);
+                        case 197:
+                            if (!var1) {
+                                _fun34769_ip = 268;
+                                continue _fun34769
+                            }
+                        case 200:
+                            var4 = _closure2_slot1;
+                            var1 = undefined;
+                            var1 = var8.bind(var1)(var3, var4);
+                            _fun34769_ip = 268;
+                            continue _fun34769;
+                        case 214:
+                            var4 = _closure2_slot1;
+                            var1 = undefined;
+                            var1 = var7.bind(var1)(var3, var4);
+                            _fun34769_ip = 268;
+                            continue _fun34769;
+                        case 228:
+                            var4 = _closure2_slot1;
+                            var1 = undefined;
+                            var1 = var6.bind(var1)(var3, var4);
+                            _fun34769_ip = 268;
+                            continue _fun34769;
+                        case 242:
+                            var4 = _closure2_slot1;
+                            var1 = undefined;
+                            var1 = var5.bind(var1)(var3, var4);
+                            _fun34769_ip = 268;
+                            continue _fun34769;
+                        case 256:
+                            var1 = _closure2_slot1;
+                            var0 = undefined;
+                            var0 = var2.bind(var0)(var3, var1);
+                        case 268:
+                            var0 = undefined;
+                            return var0;
                     }
-                case 46:
-                    var1 = var1.nextCallId;
-                    var0 = var3 === var1;
-                case 56:
-                    if (!var0) {
-                        _fun34763_ip = 74;
-                        continue _fun34763
-                    }
-                case 59:
-                    var0 = global;
-                    var1 = var0.requestAnimationFrame;
-                    var0 = undefined;
-                    var0 = var1.bind(var0)(var2);
-                case 74:
-                    var0 = undefined;
-                    return var0;
-            }
-        };
-        var1.runCallbacks = var2;
-        var2 = function(arg0, arg1) { // Original name: registerFrameCallback, environment: var0
-            var0 = this;
-            var3 = var0.frameCallbackRegistry;
-            var2 = var3.set;
-            var1 = {};
-            var0 = arg0;
-            var1.callback = var0;
-            var0 = null;
-            var1.startTime = var0;
-            var0 = arg1;
-            var0 = var2.bind(var3)(var0, var1);
-            var0 = undefined;
-            return var0;
-        };
-        var1.registerFrameCallback = var2;
-        var2 = function(arg0) { // Original name: unregisterFrameCallback, environment: var0
-            var2 = arg0;
-            var0 = this;
-            var3 = var0.manageStateFrameCallback;
-            var1 = false;
-            var1 = var3.bind(var0)(var2, var1);
-            var1 = var0.frameCallbackRegistry;
-            var0 = var1.delete;
-            var0 = var0.bind(var1)(var2);
-            var0 = undefined;
-            return var0;
-        };
-        var1.unregisterFrameCallback = var2;
-        var0 = function(arg0, arg1) { // Original name: manageStateFrameCallback, environment: var0
-            _fun34768: for (var _fun34768_ip = 0;;) switch (_fun34768_ip) {
-                case 0:
-                    var3 = arg0;
-                    var2 = this;
-                    var0 = -1;
-                    if (!(var0 !== var3)) {
-                        _fun34768_ip = 133;
-                        continue _fun34768
-                    }
-                case 16:
-                    var0 = arg1;
-                    if (var0) {
-                        _fun34768_ip = 100;
-                        continue _fun34768
-                    }
-                case 22:
-                    var1 = var2.frameCallbackRegistry;
-                    var0 = var1.get;
-                    var1 = var0.bind(var1)(var3);
-                    var0 = null;
-                    var1.startTime = var0;
-                    var1 = var2.activeFrameCallbacks;
-                    var0 = var1.delete;
-                    var0 = var0.bind(var1)(var3);
-                    var0 = var2.activeFrameCallbacks;
-                    var1 = var0.size;
-                    var0 = 0;
-                    if (!(var0 === var1)) {
-                        _fun34768_ip = 133;
-                        continue _fun34768
-                    }
-                case 79:
-                    var1 = var2.nextCallId;
-                    var0 = 1;
-                    var0 = var1 + var0;
-                    var2.nextCallId = var0;
-                    _fun34768_ip = 133;
-                    continue _fun34768;
-                case 100:
-                    var1 = var2.activeFrameCallbacks;
-                    var0 = var1.add;
-                    var0 = var0.bind(var1)(var3);
-                    var1 = var2.runCallbacks;
-                    var0 = var2.nextCallId;
-                    var0 = var1.bind(var2)(var0);
-                case 133:
-                    var0 = undefined;
-                    return var0;
-            }
-        };
-        var1.manageStateFrameCallback = var0;
-        var0 = _closure1_slot0;
-        var0._frameCallbackRegistry = var1;
-        var0 = undefined;
-        return var0;
+                };
+                var6 = {};
+                var6.scrollHandlers = var8;
+                var6.context = var7;
+                var0.__closure = var6;
+                var6 = 480432859268.0;
+                var0.__workletHash = var6;
+                var5 = _closure1_slot2;
+                var0.__initData = var5;
+                var0 = var1.bind(var2)(var0, var3, var4);
+                return var0;
+        }
     };
-    var6 = {};
-    var1.__closure = var6;
-    var6 = 12487935997347.0;
-    var1.__workletHash = var6;
-    var1.__initData = var5;
-    var1 = var3.bind(var4)(var1);
-    var2.prepareUIRegistry = var1;
+    var1.useAnimatedScrollHandler = var0;
+    var0 = undefined;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3685]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3825, 3827]);

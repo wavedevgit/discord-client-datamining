@@ -8,7 +8,7 @@ import kt.t;
 class e implements t, Serializable {
 
     /* renamed from: d  reason: collision with root package name */
-    static final e f40441d = new e();
+    static final e f40457d = new e();
     private static final long serialVersionUID = -4211396220263977858L;
 
     e() {
@@ -50,7 +50,7 @@ class e implements t, Serializable {
     @Override // kt.t
     /* renamed from: h */
     public c z(CharSequence charSequence, ParsePosition parsePosition, jt.d dVar) {
-        return c.s(charSequence, parsePosition, (Locale) dVar.b(kt.a.f36530c, Locale.ROOT), !((kt.g) dVar.b(kt.a.f36533f, kt.g.SMART)).e());
+        return c.s(charSequence, parsePosition, (Locale) dVar.b(kt.a.f36546c, Locale.ROOT), !((kt.g) dVar.b(kt.a.f36549f, kt.g.SMART)).e());
     }
 
     @Override // jt.p
@@ -64,12 +64,12 @@ class e implements t, Serializable {
     }
 
     protected Object readResolve() {
-        return f40441d;
+        return f40457d;
     }
 
     @Override // kt.t
     public void u(jt.o oVar, Appendable appendable, jt.d dVar) {
-        appendable.append(((c) oVar.p(this)).i((Locale) dVar.b(kt.a.f36530c, Locale.ROOT)));
+        appendable.append(((c) oVar.p(this)).i((Locale) dVar.b(kt.a.f36546c, Locale.ROOT)));
     }
 
     @Override // jt.p

@@ -9,14 +9,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var7;
     var3 = function(arg0, arg1) { // Original name: batchChannelUpdate, environment: var5
-        _fun116236: for (var _fun116236_ip = 0;;) switch (_fun116236_ip) {
+        _fun116515: for (var _fun116515_ip = 0;;) switch (_fun116515_ip) {
             case 0:
                 var4 = arg1;
                 var1 = var4.length;
                 var0 = 0;
                 if (!(!(var1 <= var0))) {
-                    _fun116236_ip = 153;
-                    continue _fun116236
+                    _fun116515_ip = 153;
+                    continue _fun116515
                 }
             case 17:
                 var2 = function() { // Original name: onEnd, environment: var0
@@ -69,14 +69,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         }
     };
     var1 = function(arg0, arg1) { // Original name: batchRoleUpdate, environment: var5
-        _fun116238: for (var _fun116238_ip = 0;;) switch (_fun116238_ip) {
+        _fun116517: for (var _fun116517_ip = 0;;) switch (_fun116517_ip) {
             case 0:
                 var4 = arg1;
                 var1 = var4.length;
                 var0 = 0;
                 if (!(!(var1 <= var0))) {
-                    _fun116238_ip = 153;
-                    continue _fun116238
+                    _fun116517_ip = 153;
+                    continue _fun116517
                 }
             case 17:
                 var2 = function() { // Original name: onEnd, environment: var0

@@ -52,14 +52,14 @@ public class JavaMethodDescriptor extends SimpleFunctionDescriptorImpl implement
         
 
         /* renamed from: d  reason: collision with root package name */
-        public final boolean f34107d;
+        public final boolean f34123d;
 
         /* renamed from: e  reason: collision with root package name */
-        public final boolean f34108e;
+        public final boolean f34124e;
 
         c(boolean z10, boolean z11) {
-            this.f34107d = z10;
-            this.f34108e = z11;
+            this.f34123d = z10;
+            this.f34124e = z11;
         }
 
         private static /* synthetic */ void a(int i10) {
@@ -233,12 +233,12 @@ public class JavaMethodDescriptor extends SimpleFunctionDescriptorImpl implement
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.FunctionDescriptorImpl
     public boolean hasStableParameterNames() {
-        return this.P.f34107d;
+        return this.P.f34123d;
     }
 
     @Override // kotlin.reflect.jvm.internal.impl.descriptors.impl.FunctionDescriptorImpl, kotlin.reflect.jvm.internal.impl.descriptors.CallableDescriptor
     public boolean hasSynthesizedParameterNames() {
-        return this.P.f34108e;
+        return this.P.f34124e;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

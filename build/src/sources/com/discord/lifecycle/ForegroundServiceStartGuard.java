@@ -164,7 +164,7 @@ public final class ForegroundServiceStartGuard {
                 Intrinsics.checkNotNullExpressionValue(lowerCase2, "toLowerCase(...)");
                 Map n10 = o0.n(v.a("decision", lowerCase2), v.a("reason", str));
                 n10.putAll(map);
-                Unit unit = Unit.f33282a;
+                Unit unit = Unit.f33298a;
                 function2.invoke(str2, n10);
             }
         } catch (Throwable unused) {

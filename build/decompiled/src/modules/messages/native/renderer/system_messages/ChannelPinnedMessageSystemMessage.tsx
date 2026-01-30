@@ -24,7 +24,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/ChannelPinnedMessageSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: createChannelPinnedMessageSystemMessage, environment: var1
-        _fun55339: for (var _fun55339_ip = 0;;) switch (_fun55339_ip) {
+        _fun55384: for (var _fun55384_ip = 0;;) switch (_fun55384_ip) {
             case 0:
                 var3 = arg0;
                 var9 = var3.message;
@@ -71,8 +71,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var16 = 'username';
                 var10 = null;
                 if (!(var16 === var13)) {
-                    _fun55339_ip = 208;
-                    continue _fun55339
+                    _fun55384_ip = 208;
+                    continue _fun55384
                 }
             case 205:
                 var10 = var12;
@@ -81,8 +81,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8.roleColor = var12;
                 var10 = null;
                 if (!var15) {
-                    _fun55339_ip = 226;
-                    continue _fun55339
+                    _fun55384_ip = 226;
+                    continue _fun55384
                 }
             case 223:
                 var10 = var14;
@@ -91,8 +91,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var10 = 'dot';
                 var10 = var10 === var13;
                 if (!var10) {
-                    _fun55339_ip = 246;
-                    continue _fun55339
+                    _fun55384_ip = 246;
+                    continue _fun55384
                 }
             case 242:
                 var10 = var11 != var12;
@@ -126,4 +126,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createChannelPinnedMessageSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6634, 6635, 1234, 6636, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6637, 6638, 1234, 6639, 2]);

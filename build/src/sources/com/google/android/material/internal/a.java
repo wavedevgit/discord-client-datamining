@@ -476,7 +476,7 @@ public final class a {
             d0(f10);
             f11 = f10;
         }
-        TimeInterpolator timeInterpolator = zg.a.f55659b;
+        TimeInterpolator timeInterpolator = zg.a.f55675b;
         Q(1.0f - G(0.0f, 1.0f, 1.0f - f10, timeInterpolator));
         Y(G(1.0f, 0.0f, f10, timeInterpolator));
         if (this.f16156o != this.f16154n) {
@@ -830,14 +830,14 @@ public final class a {
         if (dVar.j() != 0.0f) {
             this.f16152m = dVar.j();
         }
-        ColorStateList colorStateList = dVar.f37348c;
+        ColorStateList colorStateList = dVar.f37364c;
         if (colorStateList != null) {
             this.f16133c0 = colorStateList;
         }
-        this.f16129a0 = dVar.f37353h;
-        this.f16131b0 = dVar.f37354i;
-        this.Z = dVar.f37355j;
-        this.f16143h0 = dVar.f37357l;
+        this.f16129a0 = dVar.f37369h;
+        this.f16131b0 = dVar.f37370i;
+        this.Z = dVar.f37371j;
+        this.f16143h0 = dVar.f37373l;
         lh.a aVar = this.E;
         if (aVar != null) {
             aVar.c();

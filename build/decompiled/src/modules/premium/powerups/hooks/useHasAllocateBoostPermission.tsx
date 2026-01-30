@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var1 = function(arg0, arg1) { // Original name: getHasAllocateBoostPermission, environment: var3
-        _fun78006: for (var _fun78006_ip = 0;;) switch (_fun78006_ip) {
+        _fun78050: for (var _fun78050_ip = 0;;) switch (_fun78050_ip) {
             case 0:
                 var4 = arg0;
                 var3 = arg1;
@@ -16,8 +16,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2 == var3;
                 var0 = null;
                 if (var1) {
-                    _fun78006_ip = 62;
-                    continue _fun78006
+                    _fun78050_ip = 62;
+                    continue _fun78050
                 }
             case 17:
                 var1 = var4.getGuildPermissions;
@@ -25,8 +25,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2 == var1;
                 var0 = null;
                 if (var1) {
-                    _fun78006_ip = 62;
-                    continue _fun78006
+                    _fun78050_ip = 62;
+                    continue _fun78050
                 }
             case 37:
                 var2 = var4.can;

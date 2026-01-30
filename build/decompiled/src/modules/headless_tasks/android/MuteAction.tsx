@@ -35,7 +35,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var3 = var3.bind(var0)(var2);
             var2 = var3.awaitStorage;
             var1 = function() { // Environment: var1
-                _fun118597: for (var _fun118597_ip = 0;;) switch (_fun118597_ip) {
+                _fun118876: for (var _fun118876_ip = 0;;) switch (_fun118876_ip) {
                     case 0:
                         var0 = _closure2_slot0;
                         var1 = var0.muteTime;
@@ -43,8 +43,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var0 = -1;
                         var10 = null;
                         if (!(var0 !== var1)) {
-                            _fun118597_ip = 105;
-                            continue _fun118597
+                            _fun118876_ip = 105;
+                            continue _fun118876
                         }
                     case 27:
                         var4 = _closure1_slot1;
@@ -58,8 +58,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var1 = _closure2_slot0;
                         var1 = var1.muteTime;
                         if (!(var5 == var1)) {
-                            _fun118597_ip = 85;
-                            continue _fun118597
+                            _fun118876_ip = 85;
+                            continue _fun118876
                         }
                     case 75:
                         var0 = _closure1_slot3;
@@ -121,4 +121,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'modules/headless_tasks/android/MuteAction.tsx';
     var1 = var2.bind(var3)(var1);
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1351, 15071, 3004, 4654, 4651, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1351, 15100, 3004, 4660, 4657, 2]);

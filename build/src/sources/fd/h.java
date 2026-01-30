@@ -26,15 +26,15 @@ final class h extends qc.f {
         if (this.f24963u >= this.f24964v || fVar.l() != l()) {
             return false;
         }
-        ByteBuffer byteBuffer2 = fVar.f47076i;
-        if (byteBuffer2 == null || (byteBuffer = this.f47076i) == null || byteBuffer.position() + byteBuffer2.remaining() <= 3072000) {
+        ByteBuffer byteBuffer2 = fVar.f47092i;
+        if (byteBuffer2 == null || (byteBuffer = this.f47092i) == null || byteBuffer.position() + byteBuffer2.remaining() <= 3072000) {
             return true;
         }
         return false;
     }
 
     public long B() {
-        return this.f47078p;
+        return this.f47094p;
     }
 
     public long C() {
@@ -79,7 +79,7 @@ final class h extends qc.f {
         int i10 = this.f24963u;
         this.f24963u = i10 + 1;
         if (i10 == 0) {
-            this.f47078p = fVar.f47078p;
+            this.f47094p = fVar.f47094p;
             if (fVar.q()) {
                 s(1);
             }
@@ -87,12 +87,12 @@ final class h extends qc.f {
         if (fVar.l()) {
             s(Integer.MIN_VALUE);
         }
-        ByteBuffer byteBuffer = fVar.f47076i;
+        ByteBuffer byteBuffer = fVar.f47092i;
         if (byteBuffer != null) {
             u(byteBuffer.remaining());
-            this.f47076i.put(byteBuffer);
+            this.f47092i.put(byteBuffer);
         }
-        this.f24962t = fVar.f47078p;
+        this.f24962t = fVar.f47094p;
         return true;
     }
 }

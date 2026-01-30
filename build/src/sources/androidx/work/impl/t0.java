@@ -84,7 +84,7 @@ public class t0 implements Runnable {
                 this.f5696d.get();
                 k4.m e10 = k4.m.e();
                 String str = t0.D;
-                e10.a(str, "Starting work for " + t0.this.f5684o.f44912c);
+                e10.a(str, "Starting work for " + t0.this.f5684o.f44928c);
                 t0 t0Var = t0.this;
                 t0Var.B.r(t0Var.f5685p.n());
             } catch (Throwable th2) {
@@ -112,11 +112,11 @@ public class t0 implements Runnable {
                     if (aVar == null) {
                         k4.m e10 = k4.m.e();
                         String str = t0.D;
-                        e10.c(str, t0.this.f5684o.f44912c + " returned a null result. Treating it as a failure.");
+                        e10.c(str, t0.this.f5684o.f44928c + " returned a null result. Treating it as a failure.");
                     } else {
                         k4.m e11 = k4.m.e();
                         String str2 = t0.D;
-                        e11.a(str2, t0.this.f5684o.f44912c + " returned a " + aVar + ".");
+                        e11.a(str2, t0.this.f5684o.f44928c + " returned a " + aVar + ".");
                         t0.this.f5687r = aVar;
                     }
                     t0.this.i();
@@ -203,7 +203,7 @@ public class t0 implements Runnable {
         this.f5690u = cVar.f5702c;
         p4.u uVar = cVar.f5706g;
         this.f5684o = uVar;
-        this.f5682e = uVar.f44910a;
+        this.f5682e = uVar.f44926a;
         this.f5683i = cVar.f5708i;
         this.f5685p = cVar.f5701b;
         androidx.work.a aVar = cVar.f5704e;
@@ -351,32 +351,32 @@ public class t0 implements Runnable {
             this.f5691v.e();
             try {
                 p4.u uVar = this.f5684o;
-                if (uVar.f44911b != k4.x.ENQUEUED) {
+                if (uVar.f44927b != k4.x.ENQUEUED) {
                     m();
                     this.f5691v.A();
                     k4.m e10 = k4.m.e();
                     String str = D;
-                    e10.a(str, this.f5684o.f44912c + " is not in ENQUEUED state. Nothing more to do");
+                    e10.a(str, this.f5684o.f44928c + " is not in ENQUEUED state. Nothing more to do");
                 } else if ((uVar.m() || this.f5684o.l()) && this.f5689t.a() < this.f5684o.c()) {
-                    k4.m.e().a(D, String.format("Delaying execution for %s because it is being executed before schedule.", this.f5684o.f44912c));
+                    k4.m.e().a(D, String.format("Delaying execution for %s because it is being executed before schedule.", this.f5684o.f44928c));
                     l(true);
                     this.f5691v.A();
                 } else {
                     this.f5691v.A();
                     this.f5691v.i();
                     if (this.f5684o.m()) {
-                        a10 = this.f5684o.f44914e;
+                        a10 = this.f5684o.f44930e;
                     } else {
-                        k4.i b10 = this.f5688s.f().b(this.f5684o.f44913d);
+                        k4.i b10 = this.f5688s.f().b(this.f5684o.f44929d);
                         if (b10 == null) {
                             k4.m e11 = k4.m.e();
                             String str2 = D;
-                            e11.c(str2, "Could not create Input Merger " + this.f5684o.f44913d);
+                            e11.c(str2, "Could not create Input Merger " + this.f5684o.f44929d);
                             o();
                             return;
                         }
                         ArrayList arrayList = new ArrayList();
-                        arrayList.add(this.f5684o.f44914e);
+                        arrayList.add(this.f5684o.f44930e);
                         arrayList.addAll(this.f5692w.k(this.f5682e));
                         a10 = b10.a(arrayList);
                     }
@@ -385,20 +385,20 @@ public class t0 implements Runnable {
                     List list = this.f5694y;
                     WorkerParameters.a aVar = this.f5683i;
                     p4.u uVar2 = this.f5684o;
-                    WorkerParameters workerParameters = new WorkerParameters(fromString, bVar, list, aVar, uVar2.f44920k, uVar2.f(), this.f5688s.d(), this.f5686q, this.f5688s.n(), new q4.y(this.f5691v, this.f5686q), new q4.x(this.f5691v, this.f5690u, this.f5686q));
+                    WorkerParameters workerParameters = new WorkerParameters(fromString, bVar, list, aVar, uVar2.f44936k, uVar2.f(), this.f5688s.d(), this.f5686q, this.f5688s.n(), new q4.y(this.f5691v, this.f5686q), new q4.x(this.f5691v, this.f5690u, this.f5686q));
                     if (this.f5685p == null) {
-                        this.f5685p = this.f5688s.n().b(this.f5681d, this.f5684o.f44912c, workerParameters);
+                        this.f5685p = this.f5688s.n().b(this.f5681d, this.f5684o.f44928c, workerParameters);
                     }
                     androidx.work.c cVar = this.f5685p;
                     if (cVar == null) {
                         k4.m e12 = k4.m.e();
                         String str3 = D;
-                        e12.c(str3, "Could not create Worker " + this.f5684o.f44912c);
+                        e12.c(str3, "Could not create Worker " + this.f5684o.f44928c);
                         o();
                     } else if (cVar.k()) {
                         k4.m e13 = k4.m.e();
                         String str4 = D;
-                        e13.c(str4, "Received an already-used Worker " + this.f5684o.f44912c + "; Worker Factory should return new instances");
+                        e13.c(str4, "Received an already-used Worker " + this.f5684o.f44928c + "; Worker Factory should return new instances");
                         o();
                     } else {
                         this.f5685p.m();

@@ -64,13 +64,13 @@ public final class f implements m {
         this.f21793a.p(0);
         c.b d10 = nc.c.d(this.f21793a);
         Format format = this.f21803k;
-        if (format == null || d10.f40029c != format.J || d10.f40028b != format.K || !"audio/ac4".equals(format.f12706w)) {
-            Format G = new Format.b().U(this.f21796d).g0("audio/ac4").J(d10.f40029c).h0(d10.f40028b).X(this.f21795c).G();
+        if (format == null || d10.f40045c != format.J || d10.f40044b != format.K || !"audio/ac4".equals(format.f12706w)) {
+            Format G = new Format.b().U(this.f21796d).g0("audio/ac4").J(d10.f40045c).h0(d10.f40044b).X(this.f21795c).G();
             this.f21803k = G;
             this.f21797e.b(G);
         }
-        this.f21804l = d10.f40030d;
-        this.f21802j = (d10.f40031e * 1000000) / this.f21803k.K;
+        this.f21804l = d10.f40046d;
+        this.f21802j = (d10.f40047e * 1000000) / this.f21803k.K;
     }
 
     private boolean h(ne.h0 h0Var) {
@@ -177,7 +177,7 @@ public final class f implements m {
     public f(String str) {
         ne.g0 g0Var = new ne.g0(new byte[16]);
         this.f21793a = g0Var;
-        this.f21794b = new ne.h0(g0Var.f40188a);
+        this.f21794b = new ne.h0(g0Var.f40204a);
         this.f21798f = 0;
         this.f21799g = 0;
         this.f21800h = false;

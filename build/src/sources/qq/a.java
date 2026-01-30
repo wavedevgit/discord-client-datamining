@@ -27,30 +27,30 @@ import pq.c;
 public class a extends AsyncTask {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f47601a;
+    private final Context f47617a;
 
     /* renamed from: b  reason: collision with root package name */
-    private Uri f47602b;
+    private Uri f47618b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Uri f47603c;
+    private Uri f47619c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f47604d;
+    private final int f47620d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f47605e;
+    private final int f47621e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final b f47606f;
+    private final b f47622f;
 
     public a(Context context, Uri uri, Uri uri2, int i10, int i11, b bVar) {
-        this.f47601a = context;
-        this.f47602b = uri;
-        this.f47603c = uri2;
-        this.f47604d = i10;
-        this.f47605e = i11;
-        this.f47606f = bVar;
+        this.f47617a = context;
+        this.f47618b = uri;
+        this.f47619c = uri2;
+        this.f47620d = i10;
+        this.f47621e = i11;
+        this.f47622f = bVar;
     }
 
     private boolean a(Bitmap bitmap, BitmapFactory.Options options) {
@@ -73,11 +73,11 @@ public class a extends AsyncTask {
         Log.d("BitmapWorkerTask", "copyFile");
         if (uri2 != null) {
             try {
-                inputStream = this.f47601a.getContentResolver().openInputStream(uri);
+                inputStream = this.f47617a.getContentResolver().openInputStream(uri);
                 try {
                     if (inputStream != null) {
                         if (e(uri2)) {
-                            fileOutputStream = this.f47601a.getContentResolver().openOutputStream(uri2);
+                            fileOutputStream = this.f47617a.getContentResolver().openOutputStream(uri2);
                         } else {
                             fileOutputStream = new FileOutputStream(new File(uri2.getPath()));
                         }
@@ -89,7 +89,7 @@ public class a extends AsyncTask {
                             } else {
                                 rq.a.c(fileOutputStream);
                                 rq.a.c(inputStream);
-                                this.f47602b = this.f47603c;
+                                this.f47618b = this.f47619c;
                                 return;
                             }
                         }
@@ -100,7 +100,7 @@ public class a extends AsyncTask {
                     th = th2;
                     rq.a.c(null);
                     rq.a.c(inputStream);
-                    this.f47602b = this.f47603c;
+                    this.f47618b = this.f47619c;
                     throw th;
                 }
             } catch (Throwable th3) {
@@ -119,7 +119,7 @@ public class a extends AsyncTask {
         OutputStream fileOutputStream;
         Log.d("BitmapWorkerTask", "downloadFile");
         if (uri2 != null) {
-            OkHttpClient a10 = k.f42139b.a();
+            OkHttpClient a10 = k.f42155b.a();
             BufferedSource bufferedSource = null;
             try {
                 Response execute = a10.a(new Request.Builder().l(uri.toString()).b()).execute();
@@ -131,8 +131,8 @@ public class a extends AsyncTask {
                     closeable = null;
                 }
                 try {
-                    if (e(this.f47603c)) {
-                        fileOutputStream = this.f47601a.getContentResolver().openOutputStream(uri2);
+                    if (e(this.f47619c)) {
+                        fileOutputStream = this.f47617a.getContentResolver().openOutputStream(uri2);
                     } else {
                         fileOutputStream = new FileOutputStream(new File(uri2.getPath()));
                     }
@@ -143,7 +143,7 @@ public class a extends AsyncTask {
                         rq.a.c(g10);
                         rq.a.c(execute.x());
                         a10.s().b();
-                        this.f47602b = this.f47603c;
+                        this.f47618b = this.f47619c;
                         return;
                     }
                     throw new NullPointerException("OutputStream for given output Uri is null");
@@ -158,7 +158,7 @@ public class a extends AsyncTask {
                         rq.a.c(response.x());
                     }
                     a10.s().b();
-                    this.f47602b = this.f47603c;
+                    this.f47618b = this.f47619c;
                     throw th;
                 }
             } catch (Throwable th4) {
@@ -188,24 +188,24 @@ public class a extends AsyncTask {
     }
 
     private void i() {
-        Log.d("BitmapWorkerTask", "Uri scheme: " + this.f47602b.getScheme());
-        if (f(this.f47602b)) {
+        Log.d("BitmapWorkerTask", "Uri scheme: " + this.f47618b.getScheme());
+        if (f(this.f47618b)) {
             try {
-                d(this.f47602b, this.f47603c);
+                d(this.f47618b, this.f47619c);
             } catch (IOException | NullPointerException e10) {
                 Log.e("BitmapWorkerTask", "Downloading failed", e10);
                 throw e10;
             }
-        } else if (e(this.f47602b)) {
+        } else if (e(this.f47618b)) {
             try {
-                b(this.f47602b, this.f47603c);
+                b(this.f47618b, this.f47619c);
             } catch (IOException | NullPointerException e11) {
                 Log.e("BitmapWorkerTask", "Copying failed", e11);
                 throw e11;
             }
-        } else if (g(this.f47602b)) {
+        } else if (g(this.f47618b)) {
         } else {
-            String scheme = this.f47602b.getScheme();
+            String scheme = this.f47618b.getScheme();
             Log.e("BitmapWorkerTask", "Invalid Uri scheme " + scheme);
             throw new IllegalArgumentException("Invalid Uri scheme" + scheme);
         }
@@ -216,24 +216,24 @@ public class a extends AsyncTask {
     /* renamed from: c */
     public C0572a doInBackground(Void... voidArr) {
         InputStream openInputStream;
-        if (this.f47602b == null) {
+        if (this.f47618b == null) {
             return new C0572a(new NullPointerException("Input Uri cannot be null"));
         }
         try {
             i();
             BitmapFactory.Options options = new BitmapFactory.Options();
             options.inJustDecodeBounds = true;
-            options.inSampleSize = rq.a.a(options, this.f47604d, this.f47605e);
+            options.inSampleSize = rq.a.a(options, this.f47620d, this.f47621e);
             boolean z10 = false;
             options.inJustDecodeBounds = false;
             Bitmap bitmap = null;
             while (!z10) {
                 try {
-                    openInputStream = this.f47601a.getContentResolver().openInputStream(this.f47602b);
+                    openInputStream = this.f47617a.getContentResolver().openInputStream(this.f47618b);
                     bitmap = BitmapFactory.decodeStream(openInputStream, null, options);
                 } catch (IOException e10) {
                     Log.e("BitmapWorkerTask", "doInBackground: ImageDecoder.createSource: ", e10);
-                    return new C0572a(new IllegalArgumentException("Bitmap could not be decoded from the Uri: [" + this.f47602b + "]", e10));
+                    return new C0572a(new IllegalArgumentException("Bitmap could not be decoded from the Uri: [" + this.f47618b + "]", e10));
                 } catch (OutOfMemoryError e11) {
                     Log.e("BitmapWorkerTask", "doInBackground: BitmapFactory.decodeFileDescriptor: ", e11);
                     options.inSampleSize *= 2;
@@ -244,15 +244,15 @@ public class a extends AsyncTask {
                         z10 = true;
                     }
                 } else {
-                    C0572a c0572a = new C0572a(new IllegalArgumentException("Bounds for bitmap could not be retrieved from the Uri: [" + this.f47602b + "]"));
+                    C0572a c0572a = new C0572a(new IllegalArgumentException("Bounds for bitmap could not be retrieved from the Uri: [" + this.f47618b + "]"));
                     rq.a.c(openInputStream);
                     return c0572a;
                 }
             }
             if (bitmap == null) {
-                return new C0572a(new IllegalArgumentException("Bitmap could not be decoded from the Uri: [" + this.f47602b + "]"));
+                return new C0572a(new IllegalArgumentException("Bitmap could not be decoded from the Uri: [" + this.f47618b + "]"));
             }
-            int g10 = rq.a.g(this.f47601a, this.f47602b);
+            int g10 = rq.a.g(this.f47617a, this.f47618b);
             int e12 = rq.a.e(g10);
             int f10 = rq.a.f(g10);
             c cVar = new c(g10, e12, f10);
@@ -277,13 +277,13 @@ public class a extends AsyncTask {
     /* renamed from: h */
     public void onPostExecute(C0572a c0572a) {
         String path;
-        Exception exc = c0572a.f47609c;
+        Exception exc = c0572a.f47625c;
         if (exc == null) {
-            b bVar = this.f47606f;
-            Bitmap bitmap = c0572a.f47607a;
-            c cVar = c0572a.f47608b;
-            String path2 = this.f47602b.getPath();
-            Uri uri = this.f47603c;
+            b bVar = this.f47622f;
+            Bitmap bitmap = c0572a.f47623a;
+            c cVar = c0572a.f47624b;
+            String path2 = this.f47618b.getPath();
+            Uri uri = this.f47619c;
             if (uri == null) {
                 path = null;
             } else {
@@ -292,7 +292,7 @@ public class a extends AsyncTask {
             bVar.a(bitmap, cVar, path2, path);
             return;
         }
-        this.f47606f.onFailure(exc);
+        this.f47622f.onFailure(exc);
     }
 
     /* renamed from: qq.a$a  reason: collision with other inner class name */
@@ -300,21 +300,21 @@ public class a extends AsyncTask {
     public static class C0572a {
 
         /* renamed from: a  reason: collision with root package name */
-        Bitmap f47607a;
+        Bitmap f47623a;
 
         /* renamed from: b  reason: collision with root package name */
-        c f47608b;
+        c f47624b;
 
         /* renamed from: c  reason: collision with root package name */
-        Exception f47609c;
+        Exception f47625c;
 
         public C0572a(Bitmap bitmap, c cVar) {
-            this.f47607a = bitmap;
-            this.f47608b = cVar;
+            this.f47623a = bitmap;
+            this.f47624b = cVar;
         }
 
         public C0572a(Exception exc) {
-            this.f47609c = exc;
+            this.f47625c = exc;
         }
     }
 }

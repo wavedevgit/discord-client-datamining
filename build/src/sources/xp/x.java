@@ -21,22 +21,22 @@ public abstract class x {
     public static final class a implements i5.c {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ aq.v f53747d;
+        final /* synthetic */ aq.v f53763d;
 
         /* renamed from: e  reason: collision with root package name */
-        final /* synthetic */ aq.v f53748e;
+        final /* synthetic */ aq.v f53764e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ ESignatureComponent f53749i;
+        final /* synthetic */ ESignatureComponent f53765i;
 
         /* renamed from: o  reason: collision with root package name */
-        final /* synthetic */ aq.v f53750o;
+        final /* synthetic */ aq.v f53766o;
 
         public a(aq.v vVar, aq.v vVar2, ESignatureComponent eSignatureComponent, aq.v vVar3) {
-            this.f53747d = vVar;
-            this.f53748e = vVar2;
-            this.f53749i = eSignatureComponent;
-            this.f53750o = vVar3;
+            this.f53763d = vVar;
+            this.f53764e = vVar2;
+            this.f53765i = eSignatureComponent;
+            this.f53766o = vVar3;
         }
 
         @Override // i5.c
@@ -49,22 +49,22 @@ public abstract class x {
                 bitmapDrawable = null;
             }
             if (bitmapDrawable != null && (bitmap = bitmapDrawable.getBitmap()) != null) {
-                this.f53749i.a().c(bitmap);
-                this.f53750o.f6704g.setVisibility(0);
-                this.f53750o.f6700c.setVisibility(0);
+                this.f53765i.a().c(bitmap);
+                this.f53766o.f6704g.setVisibility(0);
+                this.f53766o.f6700c.setVisibility(0);
             }
         }
 
         @Override // i5.c
         public void b(Drawable drawable) {
-            this.f53747d.f6699b.setVisibility(8);
-            this.f53747d.f6700c.setVisibility(8);
-            this.f53747d.f6704g.setVisibility(8);
+            this.f53763d.f6699b.setVisibility(8);
+            this.f53763d.f6700c.setVisibility(8);
+            this.f53763d.f6704g.setVisibility(8);
         }
 
         @Override // i5.c
         public void c(Drawable drawable) {
-            this.f53748e.f6699b.setVisibility(0);
+            this.f53764e.f6699b.setVisibility(0);
         }
     }
 
@@ -147,6 +147,6 @@ public abstract class x {
             Intrinsics.checkNotNull(vVar);
             b(vVar, styles);
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 }

@@ -7,7 +7,7 @@ import w5.c;
 abstract class u {
 
     /* renamed from: a  reason: collision with root package name */
-    static c.a f50713a = c.a.a("k");
+    static c.a f50729a = c.a.a("k");
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static List a(w5.c cVar, l5.i iVar, float f10, n0 n0Var, boolean z10) {
@@ -23,7 +23,7 @@ abstract class u {
         }
         cVar.r();
         while (cVar.hasNext()) {
-            if (cVar.B(f50713a) != 0) {
+            if (cVar.B(f50729a) != 0) {
                 cVar.P();
             } else if (cVar.n() == c.b.BEGIN_ARRAY) {
                 cVar.u();
@@ -80,16 +80,16 @@ abstract class u {
             y5.a aVar = (y5.a) list.get(i11);
             i11++;
             y5.a aVar2 = (y5.a) list.get(i11);
-            aVar.f54000h = Float.valueOf(aVar2.f53999g);
-            if (aVar.f53995c == null && (obj = aVar2.f53994b) != null) {
-                aVar.f53995c = obj;
+            aVar.f54016h = Float.valueOf(aVar2.f54015g);
+            if (aVar.f54011c == null && (obj = aVar2.f54010b) != null) {
+                aVar.f54011c = obj;
                 if (aVar instanceof o5.i) {
                     ((o5.i) aVar).j();
                 }
             }
         }
         y5.a aVar3 = (y5.a) list.get(i10);
-        if ((aVar3.f53994b == null || aVar3.f53995c == null) && list.size() > 1) {
+        if ((aVar3.f54010b == null || aVar3.f54011c == null) && list.size() > 1) {
             list.remove(aVar3);
         }
     }

@@ -5,30 +5,30 @@ import android.content.Context;
 public final class c implements tq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final tq.h f49096a;
+    private final tq.h f49112a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final tq.h f49097b;
+    private final tq.h f49113b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final tq.h f49098c;
+    private final tq.h f49114c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final tq.h f49099d;
+    private final tq.h f49115d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final tq.h f49100e;
+    private final tq.h f49116e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final tq.h f49101f;
+    private final tq.h f49117f;
 
     public c(tq.h hVar, tq.h hVar2, tq.h hVar3, tq.h hVar4, tq.h hVar5, tq.h hVar6) {
-        this.f49096a = hVar;
-        this.f49097b = hVar2;
-        this.f49098c = hVar3;
-        this.f49099d = hVar4;
-        this.f49100e = hVar5;
-        this.f49101f = hVar6;
+        this.f49112a = hVar;
+        this.f49113b = hVar2;
+        this.f49114c = hVar3;
+        this.f49115d = hVar4;
+        this.f49116e = hVar5;
+        this.f49117f = hVar6;
     }
 
     public static c a(tq.h hVar, tq.h hVar2, tq.h hVar3, tq.h hVar4, tq.h hVar5, tq.h hVar6) {
@@ -42,6 +42,6 @@ public final class c implements tq.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public com.withpersona.sdk2.inquiry.internal.network.e get() {
-        return c((Context) this.f49096a.get(), (r) this.f49097b.get(), (qo.i) this.f49098c.get(), (cp.c) this.f49099d.get(), (un.a) this.f49100e.get(), (ro.a) this.f49101f.get());
+        return c((Context) this.f49112a.get(), (r) this.f49113b.get(), (qo.i) this.f49114c.get(), (cp.c) this.f49115d.get(), (un.a) this.f49116e.get(), (ro.a) this.f49117f.get());
     }
 }

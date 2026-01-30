@@ -9,33 +9,33 @@ import java.util.Objects;
 public final class OffsetDateTime implements j$.time.temporal.k, j$.time.temporal.l, Comparable<OffsetDateTime>, Serializable {
 
     /* renamed from: a  reason: collision with root package name */
-    public final LocalDateTime f31520a;
+    public final LocalDateTime f31536a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final ZoneOffset f31521b;
+    public final ZoneOffset f31537b;
 
     @Override // java.lang.Comparable
     public final int compareTo(OffsetDateTime offsetDateTime) {
         int compare;
         OffsetDateTime offsetDateTime2 = offsetDateTime;
-        if (this.f31521b.equals(offsetDateTime2.f31521b)) {
+        if (this.f31537b.equals(offsetDateTime2.f31537b)) {
             compare = toLocalDateTime().compareTo(offsetDateTime2.toLocalDateTime());
         } else {
-            compare = Long.compare(this.f31520a.q(this.f31521b), offsetDateTime2.f31520a.q(offsetDateTime2.f31521b));
+            compare = Long.compare(this.f31536a.q(this.f31537b), offsetDateTime2.f31536a.q(offsetDateTime2.f31537b));
             if (compare == 0) {
-                compare = this.f31520a.f31511b.f31517d - offsetDateTime2.f31520a.f31511b.f31517d;
+                compare = this.f31536a.f31527b.f31533d - offsetDateTime2.f31536a.f31527b.f31533d;
             }
         }
         return compare == 0 ? toLocalDateTime().compareTo(offsetDateTime2.toLocalDateTime()) : compare;
     }
 
     static {
-        LocalDateTime localDateTime = LocalDateTime.f31508c;
-        ZoneOffset zoneOffset = ZoneOffset.f31525f;
+        LocalDateTime localDateTime = LocalDateTime.f31524c;
+        ZoneOffset zoneOffset = ZoneOffset.f31541f;
         localDateTime.getClass();
         new OffsetDateTime(localDateTime, zoneOffset);
-        LocalDateTime localDateTime2 = LocalDateTime.f31509d;
-        ZoneOffset zoneOffset2 = ZoneOffset.f31524e;
+        LocalDateTime localDateTime2 = LocalDateTime.f31525d;
+        ZoneOffset zoneOffset2 = ZoneOffset.f31540e;
         localDateTime2.getClass();
         new OffsetDateTime(localDateTime2, zoneOffset2);
     }
@@ -49,13 +49,13 @@ public final class OffsetDateTime implements j$.time.temporal.k, j$.time.tempora
 
     public OffsetDateTime(LocalDateTime localDateTime, ZoneOffset zoneOffset) {
         Objects.requireNonNull(localDateTime, "dateTime");
-        this.f31520a = localDateTime;
+        this.f31536a = localDateTime;
         Objects.requireNonNull(zoneOffset, "offset");
-        this.f31521b = zoneOffset;
+        this.f31537b = zoneOffset;
     }
 
     public final OffsetDateTime t(LocalDateTime localDateTime, ZoneOffset zoneOffset) {
-        return (this.f31520a == localDateTime && this.f31521b.equals(zoneOffset)) ? this : new OffsetDateTime(localDateTime, zoneOffset);
+        return (this.f31536a == localDateTime && this.f31537b.equals(zoneOffset)) ? this : new OffsetDateTime(localDateTime, zoneOffset);
     }
 
     @Override // j$.time.temporal.TemporalAccessor
@@ -70,9 +70,9 @@ public final class OffsetDateTime implements j$.time.temporal.k, j$.time.tempora
     public final r i(j$.time.temporal.n nVar) {
         if (nVar instanceof j$.time.temporal.a) {
             if (nVar != j$.time.temporal.a.INSTANT_SECONDS && nVar != j$.time.temporal.a.OFFSET_SECONDS) {
-                return this.f31520a.i(nVar);
+                return this.f31536a.i(nVar);
             }
-            return ((j$.time.temporal.a) nVar).f31633b;
+            return ((j$.time.temporal.a) nVar).f31649b;
         }
         return nVar.t(this);
     }
@@ -80,12 +80,12 @@ public final class OffsetDateTime implements j$.time.temporal.k, j$.time.tempora
     @Override // j$.time.temporal.TemporalAccessor
     public final int g(j$.time.temporal.n nVar) {
         if (nVar instanceof j$.time.temporal.a) {
-            int i10 = h.f31621a[((j$.time.temporal.a) nVar).ordinal()];
+            int i10 = h.f31637a[((j$.time.temporal.a) nVar).ordinal()];
             if (i10 != 1) {
                 if (i10 == 2) {
-                    return this.f31521b.getTotalSeconds();
+                    return this.f31537b.getTotalSeconds();
                 }
-                return this.f31520a.g(nVar);
+                return this.f31536a.g(nVar);
             }
             throw new DateTimeException("Invalid field 'InstantSeconds' for get() method, use getLong() instead");
         }
@@ -95,26 +95,26 @@ public final class OffsetDateTime implements j$.time.temporal.k, j$.time.tempora
     @Override // j$.time.temporal.TemporalAccessor
     public final long m(j$.time.temporal.n nVar) {
         if (nVar instanceof j$.time.temporal.a) {
-            int i10 = h.f31621a[((j$.time.temporal.a) nVar).ordinal()];
+            int i10 = h.f31637a[((j$.time.temporal.a) nVar).ordinal()];
             if (i10 != 1) {
                 if (i10 == 2) {
-                    return this.f31521b.getTotalSeconds();
+                    return this.f31537b.getTotalSeconds();
                 }
-                return this.f31520a.m(nVar);
+                return this.f31536a.m(nVar);
             }
-            return this.f31520a.q(this.f31521b);
+            return this.f31536a.q(this.f31537b);
         }
         return nVar.B(this);
     }
 
     public LocalDateTime toLocalDateTime() {
-        return this.f31520a;
+        return this.f31536a;
     }
 
     @Override // j$.time.temporal.k
     public final j$.time.temporal.k c(LocalDate localDate) {
         if (localDate != null) {
-            return t(this.f31520a.c(localDate), this.f31521b);
+            return t(this.f31536a.c(localDate), this.f31537b);
         }
         return (OffsetDateTime) localDate.d(this);
     }
@@ -123,14 +123,14 @@ public final class OffsetDateTime implements j$.time.temporal.k, j$.time.tempora
     public final j$.time.temporal.k b(long j10, j$.time.temporal.n nVar) {
         if (nVar instanceof j$.time.temporal.a) {
             j$.time.temporal.a aVar = (j$.time.temporal.a) nVar;
-            int i10 = h.f31621a[aVar.ordinal()];
+            int i10 = h.f31637a[aVar.ordinal()];
             if (i10 != 1) {
                 if (i10 == 2) {
-                    return t(this.f31520a, ZoneOffset.ofTotalSeconds(aVar.f31633b.a(j10, aVar)));
+                    return t(this.f31536a, ZoneOffset.ofTotalSeconds(aVar.f31649b.a(j10, aVar)));
                 }
-                return t(this.f31520a.b(j10, nVar), this.f31521b);
+                return t(this.f31536a.b(j10, nVar), this.f31537b);
             }
-            return r(Instant.ofEpochSecond(j10, this.f31520a.f31511b.f31517d), this.f31521b);
+            return r(Instant.ofEpochSecond(j10, this.f31536a.f31527b.f31533d), this.f31537b);
         }
         return (OffsetDateTime) nVar.C(this, j10);
     }
@@ -138,7 +138,7 @@ public final class OffsetDateTime implements j$.time.temporal.k, j$.time.tempora
     @Override // j$.time.temporal.k
     public final j$.time.temporal.k h(long j10, j$.time.temporal.b bVar) {
         if (bVar != null) {
-            return t(this.f31520a.h(j10, bVar), this.f31521b);
+            return t(this.f31536a.h(j10, bVar), this.f31537b);
         }
         bVar.getClass();
         return (OffsetDateTime) h(j10, bVar);
@@ -146,22 +146,22 @@ public final class OffsetDateTime implements j$.time.temporal.k, j$.time.tempora
 
     @Override // j$.time.temporal.TemporalAccessor
     public final Object a(TemporalQuery temporalQuery) {
-        if (temporalQuery == o.f31648d || temporalQuery == o.f31649e) {
-            return this.f31521b;
+        if (temporalQuery == o.f31664d || temporalQuery == o.f31665e) {
+            return this.f31537b;
         }
-        if (temporalQuery == o.f31645a) {
+        if (temporalQuery == o.f31661a) {
             return null;
         }
-        if (temporalQuery == o.f31650f) {
-            return this.f31520a.f31510a;
+        if (temporalQuery == o.f31666f) {
+            return this.f31536a.f31526a;
         }
-        if (temporalQuery == o.f31651g) {
-            return this.f31520a.f31511b;
+        if (temporalQuery == o.f31667g) {
+            return this.f31536a.f31527b;
         }
-        if (temporalQuery == o.f31646b) {
-            return j$.time.chrono.k.f31542a;
+        if (temporalQuery == o.f31662b) {
+            return j$.time.chrono.k.f31558a;
         }
-        if (temporalQuery == o.f31647c) {
+        if (temporalQuery == o.f31663c) {
             return j$.time.temporal.b.NANOS;
         }
         return temporalQuery.queryFrom(this);
@@ -169,7 +169,7 @@ public final class OffsetDateTime implements j$.time.temporal.k, j$.time.tempora
 
     @Override // j$.time.temporal.l
     public final j$.time.temporal.k d(j$.time.temporal.k kVar) {
-        return kVar.b(this.f31520a.f31510a.toEpochDay(), j$.time.temporal.a.EPOCH_DAY).b(this.f31520a.f31511b.G(), j$.time.temporal.a.NANO_OF_DAY).b(this.f31521b.getTotalSeconds(), j$.time.temporal.a.OFFSET_SECONDS);
+        return kVar.b(this.f31536a.f31526a.toEpochDay(), j$.time.temporal.a.EPOCH_DAY).b(this.f31536a.f31527b.G(), j$.time.temporal.a.NANO_OF_DAY).b(this.f31537b.getTotalSeconds(), j$.time.temporal.a.OFFSET_SECONDS);
     }
 
     public final boolean equals(Object obj) {
@@ -178,7 +178,7 @@ public final class OffsetDateTime implements j$.time.temporal.k, j$.time.tempora
         }
         if (obj instanceof OffsetDateTime) {
             OffsetDateTime offsetDateTime = (OffsetDateTime) obj;
-            if (this.f31520a.equals(offsetDateTime.f31520a) && this.f31521b.equals(offsetDateTime.f31521b)) {
+            if (this.f31536a.equals(offsetDateTime.f31536a) && this.f31537b.equals(offsetDateTime.f31537b)) {
                 return true;
             }
         }
@@ -186,10 +186,10 @@ public final class OffsetDateTime implements j$.time.temporal.k, j$.time.tempora
     }
 
     public final int hashCode() {
-        return this.f31520a.hashCode() ^ this.f31521b.hashCode();
+        return this.f31536a.hashCode() ^ this.f31537b.hashCode();
     }
 
     public final String toString() {
-        return this.f31520a.toString() + this.f31521b.toString();
+        return this.f31536a.toString() + this.f31537b.toString();
     }
 }

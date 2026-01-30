@@ -6,16 +6,16 @@ import kotlin.jvm.functions.Function1;
 public final class e implements ku.b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Function1 f37727a;
+    private final Function1 f37743a;
 
     public e(Function1 function1) {
-        this.f37727a = function1;
+        this.f37743a = function1;
     }
 
     @Override // ku.b
     public Object f(Object obj, Object obj2) {
         Object firstOrNull = CollectionsKt.firstOrNull(pv.a.c(obj));
-        Function1 function1 = this.f37727a;
+        Function1 function1 = this.f37743a;
         if (function1 != null) {
             function1.invoke(firstOrNull);
         }

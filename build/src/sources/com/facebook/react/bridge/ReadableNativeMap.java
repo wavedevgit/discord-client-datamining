@@ -78,7 +78,7 @@ public class ReadableNativeMap extends NativeMap implements ReadableMap {
 
     /* JADX INFO: Access modifiers changed from: protected */
     public ReadableNativeMap() {
-        ir.o oVar = ir.o.f31102d;
+        ir.o oVar = ir.o.f31118d;
         this.keys$delegate = ir.l.a(oVar, new Function0() { // from class: com.facebook.react.bridge.v
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {

@@ -10,13 +10,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var0;
     var _closure1_slot2 = var5;
     var0 = function(arg0) { // Original name: getDefaultPermissionsForChannel, environment: var1
-        _fun41535: for (var _fun41535_ip = 0;;) switch (_fun41535_ip) {
+        _fun41586: for (var _fun41586_ip = 0;;) switch (_fun41586_ip) {
             case 0:
                 var0 = arg0;
                 var1 = null;
                 if (!(var1 != var0)) {
-                    _fun41535_ip = 40;
-                    continue _fun41535
+                    _fun41586_ip = 40;
+                    continue _fun41586
                 }
             case 9:
                 var2 = _closure1_slot5;
@@ -25,14 +25,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.type;
                 var0 = var2.bind(var3)(var0);
                 if (var0) {
-                    _fun41535_ip = 55;
-                    continue _fun41535
+                    _fun41586_ip = 55;
+                    continue _fun41586
                 }
             case 40:
                 var0 = _closure1_slot6;
                 var0 = var0.VIEW_CHANNEL;
-                _fun41535_ip = 109;
-                continue _fun41535;
+                _fun41586_ip = 109;
+                continue _fun41586;
             case 55:
                 var4 = _closure1_slot1;
                 var3 = _closure1_slot2;
@@ -99,7 +99,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = _closure1_slot4;
         var1[1] = var4;
         var0 = function() { // Environment: var0
-            _fun41537: for (var _fun41537_ip = 0;;) switch (_fun41537_ip) {
+            _fun41588: for (var _fun41588_ip = 0;;) switch (_fun41588_ip) {
                 case 0:
                     var3 = _closure1_slot4;
                     var2 = var3.getChannel;
@@ -113,8 +113,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure2_slot0;
                     var0 = var2.bind(var6)(var0, var7);
                     if (var0) {
-                        _fun41537_ip = 90;
-                        continue _fun41537
+                        _fun41588_ip = 90;
+                        continue _fun41588
                     }
                 case 58:
                     var2 = _closure1_slot1;
@@ -133,7 +133,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useCanChannelBeDefault = var3;
     var1 = function(arg0, arg1) { // Original name: canChannelBeDefault, environment: var1
-        _fun41538: for (var _fun41538_ip = 0;;) switch (_fun41538_ip) {
+        _fun41589: for (var _fun41589_ip = 0;;) switch (_fun41589_ip) {
             case 0:
                 var6 = arg1;
                 var2 = _closure1_slot7;
@@ -147,8 +147,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = arg0;
                 var0 = var2.bind(var3)(var0, var6);
                 if (var0) {
-                    _fun41538_ip = 99;
-                    continue _fun41538
+                    _fun41589_ip = 99;
+                    continue _fun41589
                 }
             case 53:
                 var3 = _closure1_slot1;

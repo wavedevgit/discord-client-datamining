@@ -5,13 +5,13 @@ import java.io.UnsupportedEncodingException;
 public final class xb implements ob {
 
     /* renamed from: a  reason: collision with root package name */
-    private final f8 f41868a;
+    private final f8 f41884a;
 
     /* renamed from: b  reason: collision with root package name */
-    private ja f41869b = new ja();
+    private ja f41885b = new ja();
 
     private xb(f8 f8Var, int i10) {
-        this.f41868a = f8Var;
+        this.f41884a = f8Var;
         jc.a();
     }
 
@@ -21,7 +21,7 @@ public final class xb implements ob {
 
     @Override // ng.ob
     public final String a() {
-        ma c10 = this.f41868a.f().c();
+        ma c10 = this.f41884a.f().c();
         if (c10 != null && !g5.b(c10.k())) {
             return (String) gf.q.l(c10.k());
         }
@@ -30,7 +30,7 @@ public final class xb implements ob {
 
     @Override // ng.ob
     public final ob b(ja jaVar) {
-        this.f41869b = jaVar;
+        this.f41885b = jaVar;
         return this;
     }
 
@@ -38,23 +38,23 @@ public final class xb implements ob {
     public final byte[] c(int i10, boolean z10) {
         boolean z11;
         int i11 = i10 ^ 1;
-        ja jaVar = this.f41869b;
+        ja jaVar = this.f41885b;
         if (1 != i11) {
             z11 = false;
         } else {
             z11 = true;
         }
         jaVar.f(Boolean.valueOf(z11));
-        this.f41869b.e(Boolean.FALSE);
-        this.f41868a.e(this.f41869b.m());
+        this.f41885b.e(Boolean.FALSE);
+        this.f41884a.e(this.f41885b.m());
         try {
             jc.a();
             if (i10 == 0) {
-                return new wi.d().j(m6.f41447a).k(true).i().b(this.f41868a.f()).getBytes("utf-8");
+                return new wi.d().j(m6.f41463a).k(true).i().b(this.f41884a.f()).getBytes("utf-8");
             }
-            h8 f10 = this.f41868a.f();
+            h8 f10 = this.f41884a.f();
             n nVar = new n();
-            m6.f41447a.a(nVar);
+            m6.f41463a.a(nVar);
             return nVar.b().a(f10);
         } catch (UnsupportedEncodingException e10) {
             throw new UnsupportedOperationException("Failed to covert logging to UTF-8 byte array", e10);
@@ -63,7 +63,7 @@ public final class xb implements ob {
 
     @Override // ng.ob
     public final ob d(e8 e8Var) {
-        this.f41868a.c(e8Var);
+        this.f41884a.c(e8Var);
         return this;
     }
 }

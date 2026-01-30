@@ -5,10 +5,10 @@ import android.app.Application;
 public final class m implements tq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final l f39494a;
+    private final l f39510a;
 
     public m(l lVar) {
-        this.f39494a = lVar;
+        this.f39510a = lVar;
     }
 
     public static Application a(l lVar) {
@@ -22,6 +22,6 @@ public final class m implements tq.d {
     @Override // javax.inject.Provider
     /* renamed from: c */
     public Application get() {
-        return a(this.f39494a);
+        return a(this.f39510a);
     }
 }

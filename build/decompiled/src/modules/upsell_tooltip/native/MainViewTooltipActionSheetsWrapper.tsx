@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/upsell_tooltip/native/MainViewTooltipActionSheetsWrapper.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Original name: MainViewTooltipActionSheetsWrapper, environment: var1
-        _fun110551: for (var _fun110551_ip = 0;;) switch (_fun110551_ip) {
+        _fun110813: for (var _fun110813_ip = 0;;) switch (_fun110813_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var2 = _closure1_slot1;
@@ -45,14 +45,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot2;
                 var5 = _closure1_slot1;
                 if (var0) {
-                    _fun110551_ip = 73;
-                    continue _fun110551
+                    _fun110813_ip = 73;
+                    continue _fun110813
                 }
             case 64:
                 var0 = 3;
                 var0 = var5[var0];
-                _fun110551_ip = 80;
-                continue _fun110551;
+                _fun110813_ip = 80;
+                continue _fun110813;
             case 73:
                 var4 = 2;
                 var0 = var5[var4];
@@ -65,4 +65,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 14189, 14190, 14122, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [33, 14215, 14216, 14148, 2]);

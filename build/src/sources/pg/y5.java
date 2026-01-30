@@ -5,7 +5,7 @@ import ui.c;
 final class y5 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final y5 f45936a = new y5();
+    static final y5 f45952a = new y5();
 
     static {
         c.b a10 = ui.c.a("maxResults");

@@ -178,13 +178,13 @@ public final class NotificationClient {
         JsonObject a11 = xVar.a();
         BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(new FileOutputStream(file, true), 8192);
         try {
-            Json.a aVar = Json.f36394d;
+            Json.a aVar = Json.f36410d;
             aVar.a();
             byte[] bytes = aVar.c(JsonObject.Companion.serializer(), a11).getBytes(Charsets.UTF_8);
             Intrinsics.checkNotNullExpressionValue(bytes, "getBytes(...)");
             bufferedOutputStream.write(bytes);
             bufferedOutputStream.write(10);
-            Unit unit = Unit.f33282a;
+            Unit unit = Unit.f33298a;
             c.a(bufferedOutputStream, null);
         } finally {
         }
@@ -250,7 +250,7 @@ public final class NotificationClient {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit tokenListener$lambda$1(String it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private final boolean updateAndComputeIfShouldRunBackgroundSync(Context context) {
@@ -382,7 +382,7 @@ public final class NotificationClient {
             str = AppStateModule.APP_STATE_ACTIVE;
         }
         y10.put("app_state", str);
-        Unit unit = Unit.f33282a;
+        Unit unit = Unit.f33298a;
         NotificationData notificationData = (NotificationData) c0316a.d(serializer, y10);
         appendNotificationToCacheFile(context, notificationData);
         showNotification(context, notificationData, data, true);

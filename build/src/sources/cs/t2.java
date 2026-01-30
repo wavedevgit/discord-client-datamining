@@ -91,7 +91,7 @@ public final class t2 implements KTypeBase {
         if (arguments.isEmpty()) {
             return CollectionsKt.l();
         }
-        Lazy a10 = ir.l.a(ir.o.f31103e, new r2(t2Var));
+        Lazy a10 = ir.l.a(ir.o.f31119e, new r2(t2Var));
         List<TypeProjection> list = arguments;
         ArrayList arrayList = new ArrayList(CollectionsKt.w(list, 10));
         int i10 = 0;
@@ -102,7 +102,7 @@ public final class t2 implements KTypeBase {
             }
             TypeProjection typeProjection = (TypeProjection) obj;
             if (typeProjection.isStarProjection()) {
-                d10 = KTypeProjection.f33386c.c();
+                d10 = KTypeProjection.f33402c.c();
             } else {
                 KotlinType type = typeProjection.getType();
                 Intrinsics.checkNotNullExpressionValue(type, "getType(...)");
@@ -116,15 +116,15 @@ public final class t2 implements KTypeBase {
                 if (i12 != 1) {
                     if (i12 != 2) {
                         if (i12 == 3) {
-                            d10 = KTypeProjection.f33386c.b(t2Var2);
+                            d10 = KTypeProjection.f33402c.b(t2Var2);
                         } else {
                             throw new ir.p();
                         }
                     } else {
-                        d10 = KTypeProjection.f33386c.a(t2Var2);
+                        d10 = KTypeProjection.f33402c.a(t2Var2);
                     }
                 } else {
-                    d10 = KTypeProjection.f33386c.d(t2Var2);
+                    d10 = KTypeProjection.f33402c.d(t2Var2);
                 }
             }
             arrayList.add(d10);

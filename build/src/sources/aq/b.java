@@ -30,13 +30,13 @@ public final class b implements ViewBinding {
     }
 
     public static b a(View view) {
-        int i10 = vp.e.f51806k0;
+        int i10 = vp.e.f51822k0;
         MaterialRadioButton materialRadioButton = (MaterialRadioButton) e4.a.a(view, i10);
         if (materialRadioButton != null) {
-            i10 = vp.e.f51810m0;
+            i10 = vp.e.f51826m0;
             TextView textView = (TextView) e4.a.a(view, i10);
             if (textView != null) {
-                i10 = vp.e.f51812n0;
+                i10 = vp.e.f51828n0;
                 TextView textView2 = (TextView) e4.a.a(view, i10);
                 if (textView2 != null) {
                     return new b((ConstraintLayout) view, materialRadioButton, textView, textView2);
@@ -47,7 +47,7 @@ public final class b implements ViewBinding {
     }
 
     public static b c(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(vp.f.f51838b, viewGroup, false);
+        View inflate = layoutInflater.inflate(vp.f.f51854b, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }

@@ -9,18 +9,18 @@ import kotlinx.coroutines.flow.FlowCollector;
 public final class z extends a {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Function2 f32725d;
+    private final Function2 f32741d;
 
     public z(Function2 function2) {
-        this.f32725d = function2;
+        this.f32741d = function2;
     }
 
     @Override // js.a
     public Object c(FlowCollector flowCollector, Continuation continuation) {
-        Object invoke = this.f32725d.invoke(flowCollector, continuation);
+        Object invoke = this.f32741d.invoke(flowCollector, continuation);
         if (invoke == or.b.f()) {
             return invoke;
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 }

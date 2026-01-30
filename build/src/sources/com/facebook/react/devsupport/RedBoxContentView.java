@@ -60,7 +60,7 @@ public final class RedBoxContentView extends LinearLayout implements AdapterView
     private static final class OpenStackFrameTask extends AsyncTask<StackFrame, Void, Void> {
         @NotNull
         public static final Companion Companion = new Companion(null);
-        private static final MediaType JSON = MediaType.f44069e.a("application/json; charset=utf-8");
+        private static final MediaType JSON = MediaType.f44085e.a("application/json; charset=utf-8");
         @NotNull
         private final DevSupportManager devSupportManager;
 

@@ -40,7 +40,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var _closure2_slot1 = var2;
         var3 = var4.forEach;
         var0 = function(arg0) { // Environment: var0
-            _fun40733: for (var _fun40733_ip = 0;;) switch (_fun40733_ip) {
+            _fun40784: for (var _fun40784_ip = 0;;) switch (_fun40784_ip) {
                 case 0:
                     var3 = arg0;
                     var2 = _closure1_slot0;
@@ -52,15 +52,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var2.isSnowflake;
                     var2 = var1.bind(var2)(var3);
                     if (var2) {
-                        _fun40733_ip = 60;
-                        continue _fun40733
+                        _fun40784_ip = 60;
+                        continue _fun40784
                     }
                 case 44:
                     var4 = _closure2_slot1;
                     var2 = var4.push;
                     var2 = var2.bind(var4)(var3);
-                    _fun40733_ip = 74;
-                    continue _fun40733;
+                    _fun40784_ip = 74;
+                    continue _fun40784;
                 case 60:
                     var2 = _closure2_slot0;
                     var1 = var2.push;
@@ -77,4 +77,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.splitQuery = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4501, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4507, 2]);

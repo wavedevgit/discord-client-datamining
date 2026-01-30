@@ -47,7 +47,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/quests/QuestEmbedPreview.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: QuestEmbedPreview, environment: var1
-        _fun83647: for (var _fun83647_ip = 0;;) switch (_fun83647_ip) {
+        _fun83693: for (var _fun83693_ip = 0;;) switch (_fun83693_ip) {
             case 0:
                 var1 = arg0;
                 var7 = var1.questId;
@@ -105,23 +105,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1[0] = var7;
                 var1[1] = var6;
                 var0 = function() { // Environment: var0
-                    _fun83650: for (var _fun83650_ip = 0;;) switch (_fun83650_ip) {
+                    _fun83696: for (var _fun83696_ip = 0;;) switch (_fun83696_ip) {
                         case 0:
                             var0 = _closure2_slot0;
                             var4 = null;
                             var1 = var4 == var0;
                             var0 = null;
                             if (var1) {
-                                _fun83650_ip = 286;
-                                continue _fun83650
+                                _fun83696_ip = 286;
+                                continue _fun83696
                             }
                         case 21:
                             var1 = _closure2_slot1;
                             var1 = var4 == var1;
                             var0 = null;
                             if (var1) {
-                                _fun83650_ip = 286;
-                                continue _fun83650
+                                _fun83696_ip = 286;
+                                continue _fun83696
                             }
                         case 37:
                             var3 = _closure1_slot4;
@@ -205,8 +205,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = null;
                 var1 = var0 == var7;
                 if (var1) {
-                    _fun83647_ip = 280;
-                    continue _fun83647
+                    _fun83693_ip = 280;
+                    continue _fun83693
                 }
             case 142:
                 var3 = _closure1_slot7;
@@ -247,4 +247,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.QuestEmbedPreview = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3060, 1613, 660, 33, 6474, 566, 3286, 5245, 10671, 1234, 8756, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3060, 1613, 660, 33, 6477, 566, 3286, 5251, 10677, 1234, 8760, 2]);

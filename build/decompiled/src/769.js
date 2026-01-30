@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = function(arg0, arg1) { // Original name: baseTimes, environment: var0
-        _fun8410: for (var _fun8410_ip = 0;;) switch (_fun8410_ip) {
+        _fun8411: for (var _fun8411_ip = 0;;) switch (_fun8411_ip) {
             case 0:
                 var4 = arg0;
                 var3 = arg1;
@@ -12,16 +12,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = 0;
                 var5 = var1 < var4;
                 if (!var5) {
-                    _fun8410_ip = 46;
-                    continue _fun8410
+                    _fun8411_ip = 46;
+                    continue _fun8411
                 }
             case 30:
                 var5 = var3.bind(var2)(var1);
                 var0[var1] = var5;
                 var1 = var1 + 1;
                 if (var1 < var4) {
-                    _fun8410_ip = 30;
-                    continue _fun8410
+                    _fun8411_ip = 30;
+                    continue _fun8411
                 }
             case 46:
                 return var0;

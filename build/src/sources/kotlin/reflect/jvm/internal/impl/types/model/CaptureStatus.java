@@ -8,18 +8,18 @@ import pr.a;
 public final class CaptureStatus {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ CaptureStatus[] f36014d;
+    private static final /* synthetic */ CaptureStatus[] f36030d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f36015e;
+    private static final /* synthetic */ EnumEntries f36031e;
     public static final CaptureStatus FOR_SUBTYPING = new CaptureStatus("FOR_SUBTYPING", 0);
     public static final CaptureStatus FOR_INCORPORATION = new CaptureStatus("FOR_INCORPORATION", 1);
     public static final CaptureStatus FROM_EXPRESSION = new CaptureStatus("FROM_EXPRESSION", 2);
 
     static {
         CaptureStatus[] a10 = a();
-        f36014d = a10;
-        f36015e = a.a(a10);
+        f36030d = a10;
+        f36031e = a.a(a10);
     }
 
     private CaptureStatus(String str, int i10) {
@@ -34,6 +34,6 @@ public final class CaptureStatus {
     }
 
     public static CaptureStatus[] values() {
-        return (CaptureStatus[]) f36014d.clone();
+        return (CaptureStatus[]) f36030d.clone();
     }
 }

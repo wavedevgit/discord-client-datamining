@@ -48,4 +48,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useMessageRequestsCount = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3918, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3924, 566, 2]);

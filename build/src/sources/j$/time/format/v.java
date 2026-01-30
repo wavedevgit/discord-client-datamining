@@ -8,14 +8,14 @@ public final class v {
     public static final v STRICT;
 
     /* renamed from: a  reason: collision with root package name */
-    public static final /* synthetic */ v[] f31617a;
+    public static final /* synthetic */ v[] f31633a;
 
     public static v valueOf(String str) {
         return (v) Enum.valueOf(v.class, str);
     }
 
     public static v[] values() {
-        return (v[]) f31617a.clone();
+        return (v[]) f31633a.clone();
     }
 
     /* JADX WARN: Type inference failed for: r0v0, types: [j$.time.format.v, java.lang.Enum] */
@@ -28,6 +28,6 @@ public final class v {
         SMART = r12;
         ?? r22 = new Enum("LENIENT", 2);
         LENIENT = r22;
-        f31617a = new v[]{r02, r12, r22};
+        f31633a = new v[]{r02, r12, r22};
     }
 }

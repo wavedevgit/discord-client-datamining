@@ -7,31 +7,31 @@ import kotlin.enums.EnumEntries;
 public final class j {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final j f49796d = new j("SLIDE_IN", 0);
+    public static final j f49812d = new j("SLIDE_IN", 0);
 
     /* renamed from: e  reason: collision with root package name */
-    public static final j f49797e = new j("SLIDE_OUT", 1);
+    public static final j f49813e = new j("SLIDE_OUT", 1);
 
     /* renamed from: i  reason: collision with root package name */
-    public static final j f49798i = new j("NONE", 2);
+    public static final j f49814i = new j("NONE", 2);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final /* synthetic */ j[] f49799o;
+    private static final /* synthetic */ j[] f49815o;
 
     /* renamed from: p  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f49800p;
+    private static final /* synthetic */ EnumEntries f49816p;
 
     static {
         j[] a10 = a();
-        f49799o = a10;
-        f49800p = pr.a.a(a10);
+        f49815o = a10;
+        f49816p = pr.a.a(a10);
     }
 
     private j(String str, int i10) {
     }
 
     private static final /* synthetic */ j[] a() {
-        return new j[]{f49796d, f49797e, f49798i};
+        return new j[]{f49812d, f49813e, f49814i};
     }
 
     public static j valueOf(String str) {
@@ -39,6 +39,6 @@ public final class j {
     }
 
     public static j[] values() {
-        return (j[]) f49799o.clone();
+        return (j[]) f49815o.clone();
     }
 }

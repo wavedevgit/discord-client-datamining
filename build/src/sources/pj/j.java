@@ -12,10 +12,10 @@ import java.util.concurrent.TimeUnit;
 public class j extends lg.u {
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ThreadLocal f45998e = new ThreadLocal();
+    private static final ThreadLocal f46014e = new ThreadLocal();
 
     /* renamed from: d  reason: collision with root package name */
-    private final ThreadPoolExecutor f45999d;
+    private final ThreadPoolExecutor f46015d;
 
     public j() {
         final ThreadFactory defaultThreadFactory = Executors.defaultThreadFactory();
@@ -31,7 +31,7 @@ public class j extends lg.u {
                 });
             }
         });
-        this.f45999d = threadPoolExecutor;
+        this.f46015d = threadPoolExecutor;
         threadPoolExecutor.allowCoreThreadTimeOut(true);
     }
 
@@ -50,25 +50,25 @@ public class j extends lg.u {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public static /* synthetic */ void n(Runnable runnable) {
-        f45998e.set(new ArrayDeque());
+        f46014e.set(new ArrayDeque());
         runnable.run();
     }
 
     @Override // lg.x0
     protected final /* synthetic */ Object a() {
-        return this.f45999d;
+        return this.f46015d;
     }
 
     @Override // java.util.concurrent.Executor
     public final void execute(final Runnable runnable) {
-        Deque deque = (Deque) f45998e.get();
+        Deque deque = (Deque) f46014e.get();
         if (deque != null && deque.size() <= 1) {
             B(deque, runnable);
         } else {
-            this.f45999d.execute(new Runnable() { // from class: pj.u
+            this.f46015d.execute(new Runnable() { // from class: pj.u
                 @Override // java.lang.Runnable
                 public final void run() {
-                    j.B((Deque) j.f45998e.get(), runnable);
+                    j.B((Deque) j.f46014e.get(), runnable);
                 }
             });
         }
@@ -76,6 +76,6 @@ public class j extends lg.u {
 
     @Override // lg.u
     protected final ExecutorService h() {
-        return this.f45999d;
+        return this.f46015d;
     }
 }

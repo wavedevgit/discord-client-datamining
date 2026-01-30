@@ -9,7 +9,7 @@ import tu.d;
 public final class a implements ku.b, tu.d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f47674a = new a();
+    public static final a f47690a = new a();
 
     private a() {
     }
@@ -31,7 +31,7 @@ public final class a implements ku.b, tu.d {
                     while (true) {
                         if (it.hasNext()) {
                             obj3 = it.next();
-                            if (!f47674a.a(obj3)) {
+                            if (!f47690a.a(obj3)) {
                                 break;
                             }
                         } else {
@@ -53,7 +53,7 @@ public final class a implements ku.b, tu.d {
                 if (!it2.hasNext()) {
                     break;
                 }
-                if (!f47674a.a(it2.next())) {
+                if (!f47690a.a(it2.next())) {
                     z11 = false;
                     break;
                 }

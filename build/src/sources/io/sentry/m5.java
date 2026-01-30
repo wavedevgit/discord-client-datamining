@@ -11,19 +11,19 @@ import java.util.Map;
 public final class m5 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final io.sentry.protocol.x f30189d;
+    private final io.sentry.protocol.x f30205d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final io.sentry.protocol.r f30190e;
+    private final io.sentry.protocol.r f30206e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final q8 f30191i;
+    private final q8 f30207i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Date f30192o;
+    private Date f30208o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Map f30193p;
+    private Map f30209p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -100,44 +100,44 @@ public final class m5 implements w1 {
     }
 
     public io.sentry.protocol.x a() {
-        return this.f30189d;
+        return this.f30205d;
     }
 
     public io.sentry.protocol.r b() {
-        return this.f30190e;
+        return this.f30206e;
     }
 
     public q8 c() {
-        return this.f30191i;
+        return this.f30207i;
     }
 
     public void d(Date date) {
-        this.f30192o = date;
+        this.f30208o = date;
     }
 
     public void e(Map map) {
-        this.f30193p = map;
+        this.f30209p = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        if (this.f30189d != null) {
-            f3Var.e("event_id").j(iLogger, this.f30189d);
+        if (this.f30205d != null) {
+            f3Var.e("event_id").j(iLogger, this.f30205d);
         }
-        if (this.f30190e != null) {
-            f3Var.e("sdk").j(iLogger, this.f30190e);
+        if (this.f30206e != null) {
+            f3Var.e("sdk").j(iLogger, this.f30206e);
         }
-        if (this.f30191i != null) {
-            f3Var.e(SharedPreferencesKey.TRACE).j(iLogger, this.f30191i);
+        if (this.f30207i != null) {
+            f3Var.e(SharedPreferencesKey.TRACE).j(iLogger, this.f30207i);
         }
-        if (this.f30192o != null) {
-            f3Var.e("sent_at").j(iLogger, k.h(this.f30192o));
+        if (this.f30208o != null) {
+            f3Var.e("sent_at").j(iLogger, k.h(this.f30208o));
         }
-        Map map = this.f30193p;
+        Map map = this.f30209p;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f30193p.get(str);
+                Object obj = this.f30209p.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -146,8 +146,8 @@ public final class m5 implements w1 {
     }
 
     public m5(io.sentry.protocol.x xVar, io.sentry.protocol.r rVar, q8 q8Var) {
-        this.f30189d = xVar;
-        this.f30190e = rVar;
-        this.f30191i = q8Var;
+        this.f30205d = xVar;
+        this.f30206e = rVar;
+        this.f30207i = q8Var;
     }
 }

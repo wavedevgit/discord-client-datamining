@@ -86,7 +86,7 @@ public class BackStackContainer extends FrameLayout {
                 @Override // kotlin.jvm.functions.Function2
                 public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2) {
                     a((xm.c) obj, (a0) obj2);
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
             }
 
@@ -101,7 +101,7 @@ public class BackStackContainer extends FrameLayout {
                 Intrinsics.checkNotNullParameter(initialEnv, "initialEnv");
                 Intrinsics.checkNotNullParameter(context, "context");
                 BackStackContainer backStackContainer = new BackStackContainer(context, null, 0, 0, 14, null);
-                backStackContainer.setId(ym.a.f54833c);
+                backStackContainer.setId(ym.a.f54849c);
                 backStackContainer.setLayoutParams(new ViewGroup.LayoutParams(-1, -1));
                 g0.a(backStackContainer, initialRendering, initialEnv, new C0222a(backStackContainer));
                 return backStackContainer;
@@ -160,7 +160,7 @@ public class BackStackContainer extends FrameLayout {
     public static final void d(View view, Function0 doStart) {
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(doStart, "doStart");
-        d.a.e(d.f52691n, view, null, 2, null);
+        d.a.e(d.f52707n, view, null, 2, null);
         doStart.invoke();
     }
 
@@ -178,8 +178,8 @@ public class BackStackContainer extends FrameLayout {
             addView(newView);
             return;
         }
-        View findViewById = view.findViewById(ym.a.f54831a);
-        View findViewById2 = newView.findViewById(ym.a.f54831a);
+        View findViewById = view.findViewById(ym.a.f54847a);
+        View findViewById2 = newView.findViewById(ym.a.f54847a);
         if (findViewById != null && findViewById2 != null) {
             view = findViewById;
         } else {
@@ -210,7 +210,7 @@ public class BackStackContainer extends FrameLayout {
         } else {
             aVar = xm.a.Other;
         }
-        a0 c11 = newViewEnvironment.c(v.a(xm.a.f53451d, aVar));
+        a0 c11 = newViewEnvironment.c(v.a(xm.a.f53467d, aVar));
         xm.c d10 = newRendering.d(c.f19055d);
         View currentView = getCurrentView();
         if (currentView != null) {
@@ -228,7 +228,7 @@ public class BackStackContainer extends FrameLayout {
         Object c12 = d10.c();
         Context context = getContext();
         Intrinsics.checkNotNullExpressionValue(context, "this.context");
-        View c13 = f0.c((e0) c11.a(e0.f51221a), c12, c11, context, this, new h0() { // from class: xm.b
+        View c13 = f0.c((e0) c11.a(e0.f51237a), c12, c11, context, this, new h0() { // from class: xm.b
             @Override // vm.h0
             public final void a(View view2, Function0 function0) {
                 BackStackContainer.d(view2, function0);
@@ -253,7 +253,7 @@ public class BackStackContainer extends FrameLayout {
             }
         }
         b(currentView, c13, z10);
-        if (currentView != null && (c10 = d.f52691n.c(currentView)) != null) {
+        if (currentView != null && (c10 = d.f52707n.c(currentView)) != null) {
             c10.d();
         }
         this.f19051e = d10;
@@ -263,8 +263,8 @@ public class BackStackContainer extends FrameLayout {
     protected void onAttachedToWindow() {
         Object c10;
         super.onAttachedToWindow();
-        u3.f c11 = wm.c.f52690a.c(this);
-        g.a aVar = g.f51229a;
+        u3.f c11 = wm.c.f52706a.c(this);
+        g.a aVar = g.f51245a;
         j0 d10 = k0.d(this);
         if (d10 == null) {
             c10 = null;
@@ -297,7 +297,7 @@ public class BackStackContainer extends FrameLayout {
         if (bVar != null) {
             this.f19050d.f(bVar.a());
             super.onRestoreInstanceState(((b) state).getSuperState());
-            unit = Unit.f33282a;
+            unit = Unit.f33298a;
         }
         if (unit == null) {
             super.onRestoreInstanceState(super.onSaveInstanceState());

@@ -7,7 +7,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function(arg0, arg1) { // Original name: useGetTrialOffer, environment: var1
-        _fun55193: for (var _fun55193_ip = 0;;) switch (_fun55193_ip) {
+        _fun55238: for (var _fun55238_ip = 0;;) switch (_fun55238_ip) {
             case 0:
                 var5 = arg0;
                 var1 = arg1;
@@ -40,8 +40,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.bind(var3)(var0);
                 var0 = null;
                 if (!var2) {
-                    _fun55193_ip = 112;
-                    continue _fun55193
+                    _fun55238_ip = 112;
+                    continue _fun55238
                 }
             case 109:
                 var0 = var1;
@@ -136,4 +136,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.usePremiumTrialOffer = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4568, 1615, 6606, 4565, 632, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4574, 1615, 6609, 4571, 632, 2]);

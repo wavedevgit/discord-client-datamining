@@ -19,16 +19,16 @@ import xs.o;
 public abstract class Json implements a0 {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f36394d = new a(null);
+    public static final a f36410d = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final d f36395a;
+    private final d f36411a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final dt.b f36396b;
+    private final dt.b f36412b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final x f36397c;
+    private final x f36413c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends Json {
@@ -47,7 +47,7 @@ public abstract class Json implements a0 {
 
     @Override // xs.l
     public dt.b a() {
-        return this.f36396b;
+        return this.f36412b;
     }
 
     @Override // xs.a0
@@ -79,11 +79,11 @@ public abstract class Json implements a0 {
     }
 
     public final d e() {
-        return this.f36395a;
+        return this.f36411a;
     }
 
     public final x f() {
-        return this.f36397c;
+        return this.f36413c;
     }
 
     public final JsonElement g(String string) {
@@ -92,8 +92,8 @@ public abstract class Json implements a0 {
     }
 
     private Json(d dVar, dt.b bVar) {
-        this.f36395a = dVar;
-        this.f36396b = bVar;
-        this.f36397c = new x();
+        this.f36411a = dVar;
+        this.f36412b = bVar;
+        this.f36413c = new x();
     }
 }

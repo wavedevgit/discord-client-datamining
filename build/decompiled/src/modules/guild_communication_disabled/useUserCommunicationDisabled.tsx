@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var0 = function(arg0, arg1, arg2) { // Original name: getUserGuildMember, environment: var1
-        _fun56173: for (var _fun56173_ip = 0;;) switch (_fun56173_ip) {
+        _fun56217: for (var _fun56217_ip = 0;;) switch (_fun56217_ip) {
             case 0:
                 var4 = arg0;
                 var3 = arg1;
@@ -17,15 +17,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var5 != var3;
                 var0 = null;
                 if (!var1) {
-                    _fun56173_ip = 41;
-                    continue _fun56173
+                    _fun56217_ip = 41;
+                    continue _fun56217
                 }
             case 20:
                 var1 = var5 != var4;
                 var0 = null;
                 if (!var1) {
-                    _fun56173_ip = 41;
-                    continue _fun56173
+                    _fun56217_ip = 41;
+                    continue _fun56217
                 }
             case 29:
                 var1 = var2.getMember;
@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot4 = var0;
     var0 = function(arg0) { // Original name: isCommunicationDisabled, environment: var1
-        _fun56174: for (var _fun56174_ip = 0;;) switch (_fun56174_ip) {
+        _fun56218: for (var _fun56218_ip = 0;;) switch (_fun56218_ip) {
             case 0:
                 var3 = arg0;
                 var1 = null;
@@ -44,8 +44,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = undefined;
                 var0 = undefined;
                 if (var2) {
-                    _fun56174_ip = 22;
-                    continue _fun56174
+                    _fun56218_ip = 22;
+                    continue _fun56218
                 }
             case 16:
                 var0 = var3.communicationDisabledUntil;
@@ -53,8 +53,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var1 != var0;
                 var1 = null;
                 if (!var2) {
-                    _fun56174_ip = 34;
-                    continue _fun56174
+                    _fun56218_ip = 34;
+                    continue _fun56218
                 }
             case 31:
                 var1 = var0;
@@ -131,7 +131,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.default = var3;
     var3 = function(arg0) { // Original name: useCurrentUserCommunicationDisabled, environment: var1
-        _fun56177: for (var _fun56177_ip = 0;;) switch (_fun56177_ip) {
+        _fun56221: for (var _fun56221_ip = 0;;) switch (_fun56221_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot1;
@@ -155,8 +155,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var1 == var0;
                 var1 = undefined;
                 if (var4) {
-                    _fun56177_ip = 75;
-                    continue _fun56177
+                    _fun56221_ip = 75;
+                    continue _fun56221
                 }
             case 70:
                 var1 = var0.id;

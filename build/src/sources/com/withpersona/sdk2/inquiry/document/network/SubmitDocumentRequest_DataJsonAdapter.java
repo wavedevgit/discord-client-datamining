@@ -65,7 +65,7 @@ public final class SubmitDocumentRequest_DataJsonAdapter extends h {
         }
         Constructor constructor = this.f19514c;
         if (constructor == null) {
-            constructor = SubmitDocumentRequest.Data.class.getDeclaredConstructor(String.class, Integer.TYPE, sm.c.f49081c);
+            constructor = SubmitDocumentRequest.Data.class.getDeclaredConstructor(String.class, Integer.TYPE, sm.c.f49097c);
             this.f19514c = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

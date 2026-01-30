@@ -25,21 +25,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/checkpoint/useCheckpointSlidesToRender.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: useCheckpointSlidesToRender, environment: var1
-        _fun86984: for (var _fun86984_ip = 0;;) switch (_fun86984_ip) {
+        _fun87030: for (var _fun87030_ip = 0;;) switch (_fun87030_ip) {
             case 0:
                 var4 = arg0;
                 var1 = var4.length;
                 var2 = 0;
                 if (!(var2 !== var1)) {
-                    _fun86984_ip = 95;
-                    continue _fun86984
+                    _fun87030_ip = 95;
+                    continue _fun87030
                 }
             case 16:
                 var3 = var4.length;
                 var1 = 1;
                 if (!(var1 !== var3)) {
-                    _fun86984_ip = 95;
-                    continue _fun86984
+                    _fun87030_ip = 95;
+                    continue _fun87030
                 }
             case 28:
                 var1 = global;
@@ -79,4 +79,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [9119, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [9123, 2]);

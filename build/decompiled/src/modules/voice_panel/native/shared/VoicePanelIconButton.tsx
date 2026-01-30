@@ -28,7 +28,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var3;
     var3 = var6.forwardRef;
     var1 = function(arg0, arg1) { // Environment: var1
-        _fun111345: for (var _fun111345_ip = 0;;) switch (_fun111345_ip) {
+        _fun111607: for (var _fun111607_ip = 0;;) switch (_fun111607_ip) {
             case 0:
                 var2 = arg0;
                 var11 = var2.style;
@@ -73,8 +73,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var8 != var6;
                 var8 = 'secondary-overlay';
                 if (!var9) {
-                    _fun111345_ip = 164;
-                    continue _fun111345
+                    _fun111607_ip = 164;
+                    continue _fun111607
                 }
             case 161:
                 var8 = var6;
@@ -100,4 +100,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 6416, 7468, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 6419, 7471, 2]);

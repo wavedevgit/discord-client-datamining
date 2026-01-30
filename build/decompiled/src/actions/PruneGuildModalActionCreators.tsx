@@ -27,15 +27,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot3 = var1;
     var1 = {};
     var6 = function(arg0) { // Original name: updateEstimate, environment: var3
-        _fun105301: for (var _fun105301_ip = 0;;) switch (_fun105301_ip) {
+        _fun105563: for (var _fun105563_ip = 0;;) switch (_fun105563_ip) {
             case 0:
                 var2 = arguments[1];
                 var1 = arg0;
                 var _closure2_slot0 = var1;
                 var1 = undefined;
                 if (!(var2 === var1)) {
-                    _fun105301_ip = 21;
-                    continue _fun105301
+                    _fun105563_ip = 21;
+                    continue _fun105563
                 }
             case 18:
                 var2 = 7;
@@ -46,13 +46,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot2;
                 var0 = function*() { // Environment: var0
                     var0 = function*() { // Original name: ?anon_0_, environment: var0
-                        _fun105303: for (var _fun105303_ip = 0;;) switch (_fun105303_ip) {
+                        _fun105565: for (var _fun105565_ip = 0;;) switch (_fun105565_ip) {
                             case 0:
                                 StartGenerator();
                                 ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
                                 if (var1) {
-                                    _fun105303_ip = 145;
-                                    continue _fun105303
+                                    _fun105565_ip = 145;
+                                    continue _fun105565
                                 }
                             case 10:
                                 var3 = _closure1_slot0;
@@ -86,8 +86,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             case 120:
                                 ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
                                 if (var2) {
-                                    _fun105303_ip = 142;
-                                    continue _fun105303
+                                    _fun105565_ip = 142;
+                                    continue _fun105565
                                 }
                             case 126:
                                 var2 = var1.body;

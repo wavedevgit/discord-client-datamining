@@ -80,13 +80,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'maybeTrackSettingSearchQueryEntered';
         var0.key = var5;
         var5 = function() { // Original name: value, environment: var4
-            _fun88981: for (var _fun88981_ip = 0;;) switch (_fun88981_ip) {
+            _fun89218: for (var _fun89218_ip = 0;;) switch (_fun89218_ip) {
                 case 0:
                     var1 = this;
                     var0 = var1.trackedQueryEntered;
                     if (var0) {
-                        _fun88981_ip = 55;
-                        continue _fun88981
+                        _fun89218_ip = 55;
+                        continue _fun89218
                     }
                 case 12:
                     var3 = _closure1_slot0;
@@ -110,20 +110,20 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'terminate';
         var0.key = var5;
         var4 = function() { // Original name: value, environment: var4
-            _fun88982: for (var _fun88982_ip = 0;;) switch (_fun88982_ip) {
+            _fun89219: for (var _fun89219_ip = 0;;) switch (_fun89219_ip) {
                 case 0:
                     var1 = this;
                     var2 = var1.searchSessionStartTime;
                     var0 = null;
                     if (!(var0 != var2)) {
-                        _fun88982_ip = 108;
-                        continue _fun88982
+                        _fun89219_ip = 108;
+                        continue _fun89219
                     }
                 case 15:
                     var2 = var1.searchSessionId;
                     if (!(var0 != var2)) {
-                        _fun88982_ip = 108;
-                        continue _fun88982
+                        _fun89219_ip = 108;
+                        continue _fun89219
                     }
                 case 25:
                     var2 = global;
@@ -173,4 +173,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.SettingSearchSessionAnalyticsManager = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 491, 11511, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 491, 11533, 2]);

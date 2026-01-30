@@ -80,7 +80,7 @@ public abstract class b {
         boolean z11;
         int length = str.length();
         if (length != 0) {
-            Duration.a aVar = Duration.f36281e;
+            Duration.a aVar = Duration.f36297e;
             long c10 = aVar.c();
             char charAt3 = str.charAt(0);
             int i12 = (charAt3 == '+' || charAt3 == '-') ? 1 : 0;

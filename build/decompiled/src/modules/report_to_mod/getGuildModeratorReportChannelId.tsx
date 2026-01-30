@@ -20,7 +20,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1 = 'modules/report_to_mod/getGuildModeratorReportChannelId.tsx';
     var1 = var3.bind(var4)(var1);
     var1 = function(arg0) { // Original name: getGuildModeratorReportChannelId, environment: var1
-        _fun41580: for (var _fun41580_ip = 0;;) switch (_fun41580_ip) {
+        _fun41631: for (var _fun41631_ip = 0;;) switch (_fun41631_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.moderatorReporting;
@@ -28,8 +28,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0 == var2;
                 var1 = undefined;
                 if (var3) {
-                    _fun41580_ip = 26;
-                    continue _fun41580
+                    _fun41631_ip = 26;
+                    continue _fun41631
                 }
             case 20:
                 var1 = var2.moderatorReportChannelId;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0 != var1;
                 var0 = null;
                 if (!var2) {
-                    _fun41580_ip = 38;
-                    continue _fun41580
+                    _fun41631_ip = 38;
+                    continue _fun41631
                 }
             case 35:
                 var0 = var1;

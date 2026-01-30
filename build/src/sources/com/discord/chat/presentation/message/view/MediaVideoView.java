@@ -193,7 +193,7 @@ public final class MediaVideoView extends FrameLayout implements MosaicView {
         if (z10 && (spoilerView = mediaVideoView.spoilerViewManager.getSpoilerView()) != null) {
             spoilerView.makeObscureHideButtonHidden();
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // com.discord.chat.presentation.message.view.mosaic_recycler.MosaicView

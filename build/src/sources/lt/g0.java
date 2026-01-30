@@ -7,51 +7,51 @@ import java.util.List;
 class g0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final b f37594a;
+    private final b f37610a;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static class b {
 
         /* renamed from: a  reason: collision with root package name */
-        private final char f37595a;
+        private final char f37611a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final b f37596b;
+        private final b f37612b;
 
         /* renamed from: c  reason: collision with root package name */
-        private final b f37597c;
+        private final b f37613c;
 
         /* renamed from: d  reason: collision with root package name */
-        private final b f37598d;
+        private final b f37614d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final List f37599e;
+        private final List f37615e;
 
         /* JADX INFO: Access modifiers changed from: private */
         public b j(net.time4j.tz.k kVar) {
             ArrayList arrayList = new ArrayList();
-            List list = this.f37599e;
+            List list = this.f37615e;
             if (list != null) {
                 arrayList.addAll(list);
             }
             arrayList.add(kVar);
-            return new b(this.f37595a, this.f37596b, this.f37597c, this.f37598d, arrayList);
+            return new b(this.f37611a, this.f37612b, this.f37613c, this.f37614d, arrayList);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public b k(b bVar) {
-            return new b(this.f37595a, bVar, this.f37597c, this.f37598d, this.f37599e);
+            return new b(this.f37611a, bVar, this.f37613c, this.f37614d, this.f37615e);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public b l(b bVar) {
-            return new b(this.f37595a, this.f37596b, bVar, this.f37598d, this.f37599e);
+            return new b(this.f37611a, this.f37612b, bVar, this.f37614d, this.f37615e);
         }
 
         /* JADX INFO: Access modifiers changed from: private */
         public b m(b bVar) {
-            return new b(this.f37595a, this.f37596b, this.f37597c, bVar, this.f37599e);
+            return new b(this.f37611a, this.f37612b, this.f37613c, bVar, this.f37615e);
         }
 
         private b(char c10) {
@@ -59,32 +59,32 @@ class g0 {
         }
 
         private b(char c10, b bVar, b bVar2, b bVar3, List list) {
-            this.f37595a = c10;
-            this.f37596b = bVar;
-            this.f37597c = bVar2;
-            this.f37598d = bVar3;
-            this.f37599e = list;
+            this.f37611a = c10;
+            this.f37612b = bVar;
+            this.f37613c = bVar2;
+            this.f37614d = bVar3;
+            this.f37615e = list;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g0(b bVar) {
-        this.f37594a = bVar;
+        this.f37610a = bVar;
     }
 
     private void a(b bVar, StringBuilder sb2, List list) {
         if (bVar == null) {
             return;
         }
-        a(bVar.f37596b, sb2, list);
-        if (bVar.f37599e != null) {
-            list.add(sb2.toString() + bVar.f37595a);
+        a(bVar.f37612b, sb2, list);
+        if (bVar.f37615e != null) {
+            list.add(sb2.toString() + bVar.f37611a);
         }
-        b bVar2 = bVar.f37597c;
-        sb2.append(bVar.f37595a);
+        b bVar2 = bVar.f37613c;
+        sb2.append(bVar.f37611a);
         a(bVar2, sb2, list);
         sb2.deleteCharAt(sb2.length() - 1);
-        a(bVar.f37598d, sb2, list);
+        a(bVar.f37614d, sb2, list);
     }
 
     private static b c(b bVar, String str, int i10) {
@@ -92,14 +92,14 @@ class g0 {
             return null;
         }
         char charAt = str.charAt(i10);
-        if (charAt < bVar.f37595a) {
-            return c(bVar.f37596b, str, i10);
+        if (charAt < bVar.f37611a) {
+            return c(bVar.f37612b, str, i10);
         }
-        if (charAt > bVar.f37595a) {
-            return c(bVar.f37598d, str, i10);
+        if (charAt > bVar.f37611a) {
+            return c(bVar.f37614d, str, i10);
         }
         if (i10 < str.length() - 1) {
-            return c(bVar.f37597c, str, i10 + 1);
+            return c(bVar.f37613c, str, i10 + 1);
         }
         return bVar;
     }
@@ -120,13 +120,13 @@ class g0 {
         if (bVar == null) {
             bVar = new b(charAt);
         }
-        if (charAt < bVar.f37595a) {
-            return bVar.k(e(bVar.f37596b, str, kVar, i10));
+        if (charAt < bVar.f37611a) {
+            return bVar.k(e(bVar.f37612b, str, kVar, i10));
         }
-        if (charAt > bVar.f37595a) {
-            return bVar.m(e(bVar.f37598d, str, kVar, i10));
+        if (charAt > bVar.f37611a) {
+            return bVar.m(e(bVar.f37614d, str, kVar, i10));
         }
-        return i10 < str.length() + (-1) ? bVar.l(e(bVar.f37597c, str, kVar, i10 + 1)) : bVar.j(kVar);
+        return i10 < str.length() + (-1) ? bVar.l(e(bVar.f37613c, str, kVar, i10 + 1)) : bVar.j(kVar);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -134,31 +134,31 @@ class g0 {
         if (str.isEmpty()) {
             return Collections.EMPTY_LIST;
         }
-        b c10 = c(this.f37594a, str, 0);
+        b c10 = c(this.f37610a, str, 0);
         if (c10 == null) {
             return Collections.EMPTY_LIST;
         }
-        return Collections.unmodifiableList(c10.f37599e);
+        return Collections.unmodifiableList(c10.f37615e);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public String f(CharSequence charSequence, int i10) {
-        b bVar = this.f37594a;
+        b bVar = this.f37610a;
         int length = charSequence.length();
         int i11 = i10;
         int i12 = i11;
         while (bVar != null && i11 < length) {
             char charAt = charSequence.charAt(i11);
-            if (charAt < bVar.f37595a) {
-                bVar = bVar.f37596b;
-            } else if (charAt > bVar.f37595a) {
-                bVar = bVar.f37598d;
+            if (charAt < bVar.f37611a) {
+                bVar = bVar.f37612b;
+            } else if (charAt > bVar.f37611a) {
+                bVar = bVar.f37614d;
             } else {
                 i11++;
-                if (bVar.f37599e != null) {
+                if (bVar.f37615e != null) {
                     i12 = i11;
                 }
-                bVar = bVar.f37597c;
+                bVar = bVar.f37613c;
             }
         }
         if (i10 >= i12) {
@@ -169,7 +169,7 @@ class g0 {
 
     public String toString() {
         ArrayList<String> arrayList = new ArrayList();
-        a(this.f37594a, new StringBuilder(), arrayList);
+        a(this.f37610a, new StringBuilder(), arrayList);
         StringBuilder sb2 = new StringBuilder();
         sb2.append("count=");
         sb2.append(arrayList.size());

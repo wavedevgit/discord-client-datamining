@@ -5,58 +5,58 @@ import ui.c;
 final class x5 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final x5 f43712a = new x5();
+    static final x5 f43728a = new x5();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43713b;
+    private static final ui.c f43729b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43714c;
+    private static final ui.c f43730c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f43715d;
+    private static final ui.c f43731d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ui.c f43716e;
+    private static final ui.c f43732e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final ui.c f43717f;
+    private static final ui.c f43733f;
 
     /* renamed from: g  reason: collision with root package name */
-    private static final ui.c f43718g;
+    private static final ui.c f43734g;
 
     /* renamed from: h  reason: collision with root package name */
-    private static final ui.c f43719h;
+    private static final ui.c f43735h;
 
     static {
         c.b a10 = ui.c.a("options");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43713b = a10.b(s1Var.b()).a();
+        f43729b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("roughDownloadDurationMs");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43714c = a11.b(s1Var2.b()).a();
+        f43730c = a11.b(s1Var2.b()).a();
         c.b a12 = ui.c.a("errorCode");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f43715d = a12.b(s1Var3.b()).a();
+        f43731d = a12.b(s1Var3.b()).a();
         c.b a13 = ui.c.a("exactDownloadDurationMs");
         s1 s1Var4 = new s1();
         s1Var4.a(4);
-        f43716e = a13.b(s1Var4.b()).a();
+        f43732e = a13.b(s1Var4.b()).a();
         c.b a14 = ui.c.a("downloadStatus");
         s1 s1Var5 = new s1();
         s1Var5.a(5);
-        f43717f = a14.b(s1Var5.b()).a();
+        f43733f = a14.b(s1Var5.b()).a();
         c.b a15 = ui.c.a("downloadFailureStatus");
         s1 s1Var6 = new s1();
         s1Var6.a(6);
-        f43718g = a15.b(s1Var6.b()).a();
+        f43734g = a15.b(s1Var6.b()).a();
         c.b a16 = ui.c.a("mddDownloadErrorCodes");
         s1 s1Var7 = new s1();
         s1Var7.a(7);
-        f43719h = a16.b(s1Var7.b()).a();
+        f43735h = a16.b(s1Var7.b()).a();
     }
 
     private x5() {

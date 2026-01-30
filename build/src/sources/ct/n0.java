@@ -53,7 +53,7 @@ public class n0 extends c {
         if (i11 && !g10.b() && (o0(str) instanceof JsonNull)) {
             return true;
         }
-        if (!Intrinsics.areEqual(g10.getKind(), k.b.f56101a) || (g10.b() && (o0(str) instanceof JsonNull))) {
+        if (!Intrinsics.areEqual(g10.getKind(), k.b.f56117a) || (g10.b() && (o0(str) instanceof JsonNull))) {
             return false;
         }
         JsonElement o02 = o0(str);

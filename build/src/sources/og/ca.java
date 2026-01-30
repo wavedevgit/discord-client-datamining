@@ -56,14 +56,14 @@ public enum ca implements u1 {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f42820d;
+    private final int f42836d;
 
     ca(int i10) {
-        this.f42820d = i10;
+        this.f42836d = i10;
     }
 
     @Override // og.u1
     public final int zza() {
-        return this.f42820d;
+        return this.f42836d;
     }
 }

@@ -12,16 +12,16 @@ public final class q implements WildcardType, Type {
     @NotNull
 
     /* renamed from: i  reason: collision with root package name */
-    public static final a f36133i = new a(null);
+    public static final a f36149i = new a(null);
 
     /* renamed from: o  reason: collision with root package name */
-    private static final q f36134o = new q(null, null);
+    private static final q f36150o = new q(null, null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final Type f36135d;
+    private final Type f36151d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Type f36136e;
+    private final Type f36152e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -30,7 +30,7 @@ public final class q implements WildcardType, Type {
         }
 
         public final q a() {
-            return q.f36134o;
+            return q.f36150o;
         }
 
         private a() {
@@ -38,8 +38,8 @@ public final class q implements WildcardType, Type {
     }
 
     public q(Type type, Type type2) {
-        this.f36135d = type;
-        this.f36136e = type2;
+        this.f36151d = type;
+        this.f36152e = type2;
     }
 
     public boolean equals(Object obj) {
@@ -55,7 +55,7 @@ public final class q implements WildcardType, Type {
 
     @Override // java.lang.reflect.WildcardType
     public Type[] getLowerBounds() {
-        Type type = this.f36136e;
+        Type type = this.f36152e;
         return type == null ? new Type[0] : new Type[]{type};
     }
 
@@ -63,18 +63,18 @@ public final class q implements WildcardType, Type {
     public String getTypeName() {
         String h10;
         String h11;
-        if (this.f36136e != null) {
+        if (this.f36152e != null) {
             StringBuilder sb2 = new StringBuilder();
             sb2.append("? super ");
-            h11 = p.h(this.f36136e);
+            h11 = p.h(this.f36152e);
             sb2.append(h11);
             return sb2.toString();
         }
-        Type type = this.f36135d;
+        Type type = this.f36151d;
         if (type != null && !Intrinsics.areEqual(type, Object.class)) {
             StringBuilder sb3 = new StringBuilder();
             sb3.append("? extends ");
-            h10 = p.h(this.f36135d);
+            h10 = p.h(this.f36151d);
             sb3.append(h10);
             return sb3.toString();
         }
@@ -83,7 +83,7 @@ public final class q implements WildcardType, Type {
 
     @Override // java.lang.reflect.WildcardType
     public Type[] getUpperBounds() {
-        Type type = this.f36135d;
+        Type type = this.f36151d;
         if (type == null) {
             type = Object.class;
         }

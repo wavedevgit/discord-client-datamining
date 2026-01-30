@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/blocking/useDiscoverableApplicationStream.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: useDiscoverableApplicationStream, environment: var1
-        _fun61851: for (var _fun61851_ip = 0;;) switch (_fun61851_ip) {
+        _fun61895: for (var _fun61895_ip = 0;;) switch (_fun61895_ip) {
             case 0:
                 var7 = arg0;
                 var _closure2_slot0 = var7;
@@ -51,19 +51,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var8 = new Array(1);
                 var8[0] = var3;
                 var3 = function() { // Environment: var1
-                    _fun61852: for (var _fun61852_ip = 0;;) switch (_fun61852_ip) {
+                    _fun61896: for (var _fun61896_ip = 0;;) switch (_fun61896_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var0 = null;
                             if (!(var0 == var2)) {
-                                _fun61852_ip = 28;
-                                continue _fun61852
+                                _fun61896_ip = 28;
+                                continue _fun61896
                             }
                         case 13:
                             var0 = _closure1_slot4;
                             var0 = var0.NONE;
-                            _fun61852_ip = 50;
-                            continue _fun61852;
+                            _fun61896_ip = 50;
+                            continue _fun61896;
                         case 28:
                             var3 = _closure1_slot3;
                             var2 = var3.getRelationshipType;
@@ -83,14 +83,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = new Array(1);
                 var2[0] = var7;
                 var1 = function() { // Environment: var1
-                    _fun61853: for (var _fun61853_ip = 0;;) switch (_fun61853_ip) {
+                    _fun61897: for (var _fun61897_ip = 0;;) switch (_fun61897_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var0 = null;
                             var2 = var0 == var2;
                             if (var2) {
-                                _fun61853_ip = 40;
-                                continue _fun61853
+                                _fun61897_ip = 40;
+                                continue _fun61897
                             }
                         case 16:
                             var3 = _closure1_slot2;
@@ -106,8 +106,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0.BLOCKED;
                 var0 = null;
                 if (!(var3 !== var2)) {
-                    _fun61851_ip = 127;
-                    continue _fun61851
+                    _fun61895_ip = 127;
+                    continue _fun61895
                 }
             case 124:
                 var0 = var1;
@@ -117,4 +117,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3671, 3059, 660, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3673, 3059, 660, 566, 2]);

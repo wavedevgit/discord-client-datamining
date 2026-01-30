@@ -32,7 +32,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/checkpoint/native/useCheckpointSound.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: useCheckpointSound, environment: var1
-        _fun86463: for (var _fun86463_ip = 0;;) switch (_fun86463_ip) {
+        _fun86509: for (var _fun86509_ip = 0;;) switch (_fun86509_ip) {
             case 0:
                 var7 = arg0;
                 var _closure2_slot0 = var7;
@@ -60,8 +60,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var6.createSound;
                 var4 = 1;
                 if (!var1) {
-                    _fun86463_ip = 98;
-                    continue _fun86463
+                    _fun86509_ip = 98;
+                    continue _fun86509
                 }
             case 96:
                 var4 = 0;
@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var2.bind(var3)(var1);
                 var _closure2_slot2 = var1;
                 var0 = function() { // Environment: var0
-                    _fun86465: for (var _fun86465_ip = 0;;) switch (_fun86465_ip) {
+                    _fun86511: for (var _fun86511_ip = 0;;) switch (_fun86511_ip) {
                         case 0:
                             var0 = _closure2_slot2;
                             var2 = var0.current;
@@ -90,8 +90,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var3 = 1;
                             var5 = var3;
                             if (!var2) {
-                                _fun86465_ip = 76;
-                                continue _fun86465
+                                _fun86511_ip = 76;
+                                continue _fun86511
                             }
                         case 74:
                             var5 = 0;
@@ -103,8 +103,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var2.current;
                             var4 = _closure2_slot1;
                             if (!var4) {
-                                _fun86465_ip = 113;
-                                continue _fun86465
+                                _fun86511_ip = 113;
+                                continue _fun86511
                             }
                         case 111:
                             var3 = 0;
@@ -122,4 +122,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 11128, 566, 8363, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 11134, 566, 8366, 2]);

@@ -47,7 +47,7 @@ public abstract class u {
 
     public static /* synthetic */ r h(c0 c0Var, iu.h hVar, String str, Closeable closeable, int i10, Object obj) {
         if ((i10 & 2) != 0) {
-            hVar = iu.h.f31257b;
+            hVar = iu.h.f31273b;
         }
         if ((i10 & 4) != 0) {
             str = null;

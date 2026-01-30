@@ -13,35 +13,35 @@ import kotlin.jvm.internal.TypeIntrinsics;
 public final class b extends ir.b implements Continuation {
 
     /* renamed from: d  reason: collision with root package name */
-    private Function3 f33284d;
+    private Function3 f33300d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Object f33285e;
+    private Object f33301e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Continuation f33286i;
+    private Continuation f33302i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Object f33287o;
+    private Object f33303o;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public b(Function3 block, Object obj) {
         super(null);
         Object obj2;
         Intrinsics.checkNotNullParameter(block, "block");
-        this.f33284d = block;
-        this.f33285e = obj;
+        this.f33300d = block;
+        this.f33301e = obj;
         Intrinsics.checkNotNull(this, "null cannot be cast to non-null type kotlin.coroutines.Continuation<kotlin.Any?>");
-        this.f33286i = this;
-        obj2 = a.f33283a;
-        this.f33287o = obj2;
+        this.f33302i = this;
+        obj2 = a.f33299a;
+        this.f33303o = obj2;
     }
 
     @Override // ir.b
     public Object b(Object obj, Continuation continuation) {
         Intrinsics.checkNotNull(continuation, "null cannot be cast to non-null type kotlin.coroutines.Continuation<kotlin.Any?>");
-        this.f33286i = continuation;
-        this.f33285e = obj;
+        this.f33302i = continuation;
+        this.f33301e = obj;
         Object f10 = or.b.f();
         if (f10 == or.b.f()) {
             g.c(continuation);
@@ -54,18 +54,18 @@ public final class b extends ir.b implements Continuation {
         Object obj2;
         Object invoke;
         while (true) {
-            Object obj3 = this.f33287o;
-            Continuation continuation = this.f33286i;
+            Object obj3 = this.f33303o;
+            Continuation continuation = this.f33302i;
             if (continuation != null) {
-                obj = a.f33283a;
+                obj = a.f33299a;
                 if (!Result.d(obj, obj3)) {
-                    obj2 = a.f33283a;
-                    this.f33287o = obj2;
+                    obj2 = a.f33299a;
+                    this.f33303o = obj2;
                     continuation.resumeWith(obj3);
                 } else {
                     try {
-                        Function3 function3 = this.f33284d;
-                        Object obj4 = this.f33285e;
+                        Function3 function3 = this.f33300d;
+                        Object obj4 = this.f33301e;
                         if (!(function3 instanceof kotlin.coroutines.jvm.internal.a)) {
                             invoke = or.b.e(function3, this, obj4, continuation);
                         } else {
@@ -75,7 +75,7 @@ public final class b extends ir.b implements Continuation {
                             continuation.resumeWith(Result.b(invoke));
                         }
                     } catch (Throwable th2) {
-                        Result.a aVar = Result.f33279e;
+                        Result.a aVar = Result.f33295e;
                         continuation.resumeWith(Result.b(c.a(th2)));
                     }
                 }
@@ -88,12 +88,12 @@ public final class b extends ir.b implements Continuation {
 
     @Override // kotlin.coroutines.Continuation
     public CoroutineContext getContext() {
-        return e.f33356d;
+        return e.f33372d;
     }
 
     @Override // kotlin.coroutines.Continuation
     public void resumeWith(Object obj) {
-        this.f33286i = null;
-        this.f33287o = obj;
+        this.f33302i = null;
+        this.f33303o = obj;
     }
 }

@@ -8,10 +8,10 @@ import java.util.List;
 public abstract class b implements j0, Comparator {
 
     /* renamed from: d  reason: collision with root package name */
-    private final List f32737d;
+    private final List f32753d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final boolean f32738e;
+    private final boolean f32754e;
 
     /* JADX INFO: Access modifiers changed from: protected */
     public b(boolean z10, w... wVarArr) {
@@ -38,8 +38,8 @@ public abstract class b implements j0, Comparator {
                     }
                 }
             }
-            this.f32737d = Collections.unmodifiableList(list);
-            this.f32738e = z10;
+            this.f32753d = Collections.unmodifiableList(list);
+            this.f32754e = z10;
             return;
         }
         throw new IllegalArgumentException("Missing units.");

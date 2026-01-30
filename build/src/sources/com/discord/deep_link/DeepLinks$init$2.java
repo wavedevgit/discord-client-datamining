@@ -30,7 +30,7 @@ public final class DeepLinks$init$2 implements DeepLinkListener {
         CrashReporting crashReporting = CrashReporting.INSTANCE;
         Intrinsics.checkNotNull(th2);
         CrashReporting.captureException$default(crashReporting, th2, false, 2, null);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // com.appsflyer.deeplink.DeepLinkListener

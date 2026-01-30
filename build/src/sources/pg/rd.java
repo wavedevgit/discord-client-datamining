@@ -3,35 +3,35 @@ package pg;
 public final class rd {
 
     /* renamed from: a  reason: collision with root package name */
-    private final pd f45680a;
+    private final pd f45696a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final Integer f45681b;
+    private final Integer f45697b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Integer f45682c;
+    private final Integer f45698c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Boolean f45683d;
+    private final Boolean f45699d;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ rd(od odVar, qd qdVar) {
         pd pdVar;
         Integer num;
-        pdVar = odVar.f45618a;
-        this.f45680a = pdVar;
-        num = odVar.f45619b;
-        this.f45681b = num;
-        this.f45682c = null;
-        this.f45683d = null;
+        pdVar = odVar.f45634a;
+        this.f45696a = pdVar;
+        num = odVar.f45635b;
+        this.f45697b = num;
+        this.f45698c = null;
+        this.f45699d = null;
     }
 
     public final pd a() {
-        return this.f45680a;
+        return this.f45696a;
     }
 
     public final Integer b() {
-        return this.f45681b;
+        return this.f45697b;
     }
 
     public final boolean equals(Object obj) {
@@ -42,13 +42,13 @@ public final class rd {
             return false;
         }
         rd rdVar = (rd) obj;
-        if (gf.o.a(this.f45680a, rdVar.f45680a) && gf.o.a(this.f45681b, rdVar.f45681b) && gf.o.a(null, null) && gf.o.a(null, null)) {
+        if (gf.o.a(this.f45696a, rdVar.f45696a) && gf.o.a(this.f45697b, rdVar.f45697b) && gf.o.a(null, null) && gf.o.a(null, null)) {
             return true;
         }
         return false;
     }
 
     public final int hashCode() {
-        return gf.o.b(this.f45680a, this.f45681b, null, null);
+        return gf.o.b(this.f45696a, this.f45697b, null, null);
     }
 }

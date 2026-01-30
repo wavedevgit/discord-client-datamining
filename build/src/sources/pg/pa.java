@@ -5,7 +5,7 @@ import ui.c;
 final class pa implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final pa f45632a = new pa();
+    static final pa f45648a = new pa();
 
     static {
         c.b a10 = ui.c.a("shadowRemovalType");

@@ -1,218 +1,186 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun51277: for (var _fun51277_ip = 0;;) switch (_fun51277_ip) {
-        case 0:
-            var12 = require;
-            var2 = exports;
-            var13 = dependencyMap;
-            var0 = global;
-            var4 = var0.Object;
-            var3 = var4.defineProperty;
-            var1 = {};
-            var0 = true;
-            var1.value = var0;
-            var0 = '__esModule';
-            var0 = var3.bind(var4)(var2, var0, var1);
-            var0 = 0;
-            var1 = var13[var0];
-            var0 = undefined;
-            var1 = var12.bind(var0)(var1);
-            var11 = var1.Platform;
-            var10 = {};
-            var1 = 'horizontal';
-            var10.gestureDirection = var1;
-            var3 = {};
-            var16 = 1;
-            var4 = var13[var16];
-            var4 = var12.bind(var0)(var4);
-            var4 = var4.TransitionIOSSpec;
-            var3.open = var4;
-            var4 = var13[var16];
-            var4 = var12.bind(var0)(var4);
-            var4 = var4.TransitionIOSSpec;
-            var3.close = var4;
-            var10.transitionSpec = var3;
-            var14 = 2;
-            var3 = var13[var14];
-            var3 = var12.bind(var0)(var3);
-            var3 = var3.forHorizontalIOS;
-            var10.cardStyleInterpolator = var3;
-            var3 = 3;
-            var4 = var13[var3];
-            var4 = var12.bind(var0)(var4);
-            var4 = var4.forFade;
-            var10.headerStyleInterpolator = var4;
-            var9 = {};
-            var15 = 'vertical';
-            var9.gestureDirection = var15;
-            var4 = {};
-            var5 = var13[var16];
-            var5 = var12.bind(var0)(var5);
-            var5 = var5.TransitionIOSSpec;
-            var4.open = var5;
-            var5 = var13[var16];
-            var5 = var12.bind(var0)(var5);
-            var5 = var5.TransitionIOSSpec;
-            var4.close = var5;
-            var9.transitionSpec = var4;
-            var4 = var13[var14];
-            var4 = var12.bind(var0)(var4);
-            var4 = var4.forVerticalIOS;
-            var9.cardStyleInterpolator = var4;
-            var4 = var13[var3];
-            var4 = var12.bind(var0)(var4);
-            var4 = var4.forFade;
-            var9.headerStyleInterpolator = var4;
-            var8 = {};
-            var8.gestureDirection = var15;
-            var4 = {};
-            var5 = var13[var16];
-            var5 = var12.bind(var0)(var5);
-            var5 = var5.TransitionIOSSpec;
-            var4.open = var5;
-            var5 = var13[var16];
-            var5 = var12.bind(var0)(var5);
-            var5 = var5.TransitionIOSSpec;
-            var4.close = var5;
-            var8.transitionSpec = var4;
-            var4 = var13[var14];
-            var4 = var12.bind(var0)(var4);
-            var4 = var4.forModalPresentationIOS;
-            var8.cardStyleInterpolator = var4;
-            var4 = var13[var3];
-            var4 = var12.bind(var0)(var4);
-            var4 = var4.forFade;
-            var8.headerStyleInterpolator = var4;
-            var7 = {};
-            var7.gestureDirection = var15;
-            var4 = {};
-            var5 = var13[var16];
-            var5 = var12.bind(var0)(var5);
-            var5 = var5.FadeInFromBottomAndroidSpec;
-            var4.open = var5;
-            var5 = var13[var16];
-            var5 = var12.bind(var0)(var5);
-            var5 = var5.FadeOutToBottomAndroidSpec;
-            var4.close = var5;
-            var7.transitionSpec = var4;
-            var4 = var13[var14];
-            var4 = var12.bind(var0)(var4);
-            var4 = var4.forFadeFromBottomAndroid;
-            var7.cardStyleInterpolator = var4;
-            var4 = var13[var3];
-            var4 = var12.bind(var0)(var4);
-            var4 = var4.forFade;
-            var7.headerStyleInterpolator = var4;
-            var6 = {};
-            var6.gestureDirection = var15;
-            var4 = {};
-            var5 = var13[var16];
-            var5 = var12.bind(var0)(var5);
-            var5 = var5.RevealFromBottomAndroidSpec;
-            var4.open = var5;
-            var5 = var13[var16];
-            var5 = var12.bind(var0)(var5);
-            var5 = var5.RevealFromBottomAndroidSpec;
-            var4.close = var5;
-            var6.transitionSpec = var4;
-            var4 = var13[var14];
-            var4 = var12.bind(var0)(var4);
-            var4 = var4.forRevealFromBottomAndroid;
-            var6.cardStyleInterpolator = var4;
-            var4 = var13[var3];
-            var4 = var12.bind(var0)(var4);
-            var4 = var4.forFade;
-            var6.headerStyleInterpolator = var4;
-            var5 = {};
-            var5.gestureDirection = var1;
-            var1 = {};
-            var4 = var13[var16];
-            var4 = var12.bind(var0)(var4);
-            var4 = var4.ScaleFromCenterAndroidSpec;
-            var1.open = var4;
-            var4 = var13[var16];
-            var4 = var12.bind(var0)(var4);
-            var4 = var4.ScaleFromCenterAndroidSpec;
-            var1.close = var4;
-            var5.transitionSpec = var1;
-            var1 = var13[var14];
-            var1 = var12.bind(var0)(var1);
-            var1 = var1.forScaleFromCenterAndroid;
-            var5.cardStyleInterpolator = var1;
-            var1 = var13[var3];
-            var1 = var12.bind(var0)(var1);
-            var1 = var1.forFade;
-            var5.headerStyleInterpolator = var1;
-            var1 = {};
-            var1.gestureDirection = var15;
-            var4 = {};
-            var17 = var13[var16];
-            var17 = var12.bind(var0)(var17);
-            var17 = var17.BottomSheetSlideInSpec;
-            var4.open = var17;
-            var17 = var13[var16];
-            var17 = var12.bind(var0)(var17);
-            var17 = var17.BottomSheetSlideOutSpec;
-            var4.close = var17;
-            var1.transitionSpec = var4;
-            var4 = var13[var14];
-            var4 = var12.bind(var0)(var4);
-            var4 = var4.forBottomSheetAndroid;
-            var1.cardStyleInterpolator = var4;
-            var4 = var13[var3];
-            var4 = var12.bind(var0)(var4);
-            var4 = var4.forFade;
-            var1.headerStyleInterpolator = var4;
-            var4 = {};
-            var4.gestureDirection = var15;
-            var15 = {};
-            var17 = var13[var16];
-            var17 = var12.bind(var0)(var17);
-            var17 = var17.BottomSheetSlideInSpec;
-            var15.open = var17;
-            var16 = var13[var16];
-            var16 = var12.bind(var0)(var16);
-            var16 = var16.BottomSheetSlideOutSpec;
-            var15.close = var16;
-            var4.transitionSpec = var15;
-            var14 = var13[var14];
-            var14 = var12.bind(var0)(var14);
-            var14 = var14.forFadeFromCenter;
-            var4.cardStyleInterpolator = var14;
-            var3 = var13[var3];
-            var3 = var12.bind(var0)(var3);
-            var3 = var3.forFade;
-            var4.headerStyleInterpolator = var3;
-            var13 = var11.Version;
-            var12 = 29;
-            var3 = var5;
-            if (!(!(var13 >= var12))) {
-                _fun51277_ip = 867;
-                continue _fun51277
-            }
-        case 845:
-            var13 = var11.Version;
-            var12 = 28;
-            var11 = var7;
-            if (!(var13 >= var12)) {
-                _fun51277_ip = 864;
-                continue _fun51277
-            }
-        case 861:
-            var11 = var6;
-        case 864:
-            var3 = var11;
-        case 867:
-            var2.SlideFromRightIOS = var10;
-            var2.ModalSlideFromBottomIOS = var9;
-            var2.ModalPresentationIOS = var8;
-            var2.FadeFromBottomAndroid = var7;
-            var2.RevealFromBottomAndroid = var6;
-            var2.ScaleFromCenterAndroid = var5;
-            var2.BottomSheetAndroid = var1;
-            var2.ModalFadeTransition = var4;
-            var2.DefaultTransition = var3;
-            var2.ModalTransition = var1;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 5799, 5796, 5776]);
+    var3 = require;
+    var5 = metroImportDefault;
+    var2 = exports;
+    var7 = dependencyMap;
+    var0 = ['enabled', 'layout', 'style'];
+    var _closure1_slot0 = var0;
+    var0 = global;
+    var8 = var0.Object;
+    var6 = var8.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var8)(var2, var0, var1);
+    var0 = 0;
+    var1 = var7[var0];
+    var0 = undefined;
+    var1 = var5.bind(var0)(var1);
+    var _closure1_slot1 = var1;
+    var1 = 1;
+    var1 = var7[var1];
+    var1 = var5.bind(var0)(var1);
+    var _closure1_slot2 = var1;
+    var1 = 2;
+    var5 = var7[var1];
+    var1 = metroImportAll;
+    var5 = var1.bind(var0)(var5);
+    var _closure1_slot3 = var5;
+    var1 = 3;
+    var1 = var7[var1];
+    var1 = var3.bind(var0)(var1);
+    var6 = var1.StyleSheet;
+    var1 = var1.View;
+    var _closure1_slot4 = var1;
+    var1 = 4;
+    var1 = var7[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.jsx;
+    var _closure1_slot5 = var1;
+    var3 = var5.forwardRef;
+    var1 = function(arg0, arg1) { // Original name: CardSheet, environment: var4
+        _fun51308: for (var _fun51308_ip = 0;;) switch (_fun51308_ip) {
+            case 0:
+                var5 = arg0;
+                var10 = var5.enabled;
+                var6 = var5.layout;
+                var _closure2_slot0 = var6;
+                var8 = var5.style;
+                var4 = _closure1_slot2;
+                var2 = _closure1_slot0;
+                var3 = undefined;
+                var7 = var4.bind(var3)(var5, var2);
+                var5 = _closure1_slot3;
+                var4 = var5.useState;
+                var2 = false;
+                var2 = var4.bind(var5)(var2);
+                var13 = _closure1_slot1;
+                var12 = 2;
+                var2 = var13.bind(var3)(var2, var12);
+                var11 = 0;
+                var9 = var2[var11];
+                var4 = 1;
+                var2 = var2[var4];
+                var _closure2_slot1 = var2;
+                var14 = var5.useState;
+                var2 = 'auto';
+                var2 = var14.bind(var5)(var2);
+                var2 = var13.bind(var3)(var2, var12);
+                var11 = var2[var11];
+                var2 = var2[var4];
+                var _closure2_slot2 = var2;
+                var12 = var5.useImperativeHandle;
+                var4 = arg1;
+                var2 = function() { // Environment: var1
+                    var0 = {};
+                    var1 = _closure2_slot2;
+                    var0.setPointerEvents = var1;
+                    return var0;
+                };
+                var2 = var12.bind(var5)(var4, var2);
+                var4 = var5.useEffect;
+                var12 = var6.height;
+                var2 = new Array(2);
+                var2[0] = var12;
+                var6 = var6.width;
+                var2[1] = var6;
+                var1 = function() { // Environment: var1
+                    _fun51310: for (var _fun51310_ip = 0;;) switch (_fun51310_ip) {
+                        case 0:
+                            var0 = global;
+                            var1 = var0.document;
+                            var2 = 'undefined';
+                            var1 = typeof var1;
+                            if (!(var2 !== var1)) {
+                                _fun51310_ip = 110;
+                                continue _fun51310
+                            }
+                        case 19:
+                            var1 = var0.document;
+                            var1 = var1.body;
+                            if (!var1) {
+                                _fun51310_ip = 110;
+                                continue _fun51310
+                            }
+                        case 33:
+                            var1 = var0.document;
+                            var1 = var1.body;
+                            var4 = var1.clientWidth;
+                            var0 = var0.document;
+                            var0 = var0.body;
+                            var3 = var0.clientHeight;
+                            var2 = _closure2_slot1;
+                            var1 = _closure2_slot0;
+                            var1 = var1.width;
+                            var1 = var4 === var1;
+                            if (!var1) {
+                                _fun51310_ip = 103;
+                                continue _fun51310
+                            }
+                        case 90:
+                            var0 = _closure2_slot0;
+                            var0 = var0.height;
+                            var1 = var3 === var0;
+                        case 103:
+                            var0 = undefined;
+                            var0 = var2.bind(var0)(var1);
+                        case 110:
+                            var0 = undefined;
+                            return var0;
+                    }
+                };
+                var1 = var4.bind(var5)(var1, var2);
+                var2 = _closure1_slot5;
+                var1 = _closure1_slot4;
+                var4 = global;
+                var6 = var4.Object;
+                var5 = var6.assign;
+                var4 = {};
+                var4.pointerEvents = var11;
+                if (!var10) {
+                    _fun51308_ip = 214;
+                    continue _fun51308
+                }
+            case 211:
+                if (var9) {
+                    _fun51308_ip = 226;
+                    continue _fun51308
+                }
+            case 214:
+                var9 = _closure1_slot6;
+                var9 = var9.card;
+                _fun51308_ip = 236;
+                continue _fun51308;
+            case 226:
+                var0 = _closure1_slot6;
+                var9 = var0.page;
+            case 236:
+                var0 = new Array(2);
+                var0[0] = var9;
+                var0[1] = var8;
+                var4.style = var0;
+                var0 = {};
+                var0 = var5.bind(var6)(var0, var7, var4);
+                var0 = var2.bind(var3)(var1, var0);
+                return var0;
+        }
+    };
+    var1 = var3.bind(var5)(var1);
+    var5 = var6.create;
+    var3 = {};
+    var7 = {};
+    var8 = '100%';
+    var7.minHeight = var8;
+    var3.page = var7;
+    var7 = {
+        'flex': 1,
+        'overflow': 'hidden'
+    };
+    var3.card = var7;
+    var3 = var5.bind(var6)(var3);
+    var _closure1_slot6 = var3;
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 29, 31, 27, 33]);

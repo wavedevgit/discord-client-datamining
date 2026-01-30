@@ -28,7 +28,7 @@ public final class ReactMarkerListener implements ReactMarker.MarkerListener {
     private static boolean stopped;
 
     static {
-        a aVar = a.f33369a;
+        a aVar = a.f33385a;
         bundleStartedTimestamp$delegate = aVar.a();
         bundleLoadedTimestamp$delegate = aVar.a();
         bundleParsedTimestamp$delegate = aVar.a();

@@ -6,10 +6,10 @@ import gs.w0;
 final class u implements w0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final d1 f36358d;
+    private final d1 f36374d;
 
     public u(d1 d1Var) {
-        this.f36358d = d1Var;
+        this.f36374d = d1Var;
     }
 
     @Override // gs.w0
@@ -19,7 +19,7 @@ final class u implements w0 {
 
     @Override // gs.w0
     public d1 b() {
-        return this.f36358d;
+        return this.f36374d;
     }
 
     public String toString() {

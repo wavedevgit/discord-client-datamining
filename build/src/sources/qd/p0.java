@@ -12,34 +12,34 @@ public final class p0 extends Timeline {
     private final MediaItem.g C;
 
     /* renamed from: q  reason: collision with root package name */
-    private final long f47274q;
+    private final long f47290q;
 
     /* renamed from: r  reason: collision with root package name */
-    private final long f47275r;
+    private final long f47291r;
 
     /* renamed from: s  reason: collision with root package name */
-    private final long f47276s;
+    private final long f47292s;
 
     /* renamed from: t  reason: collision with root package name */
-    private final long f47277t;
+    private final long f47293t;
 
     /* renamed from: u  reason: collision with root package name */
-    private final long f47278u;
+    private final long f47294u;
 
     /* renamed from: v  reason: collision with root package name */
-    private final long f47279v;
+    private final long f47295v;
 
     /* renamed from: w  reason: collision with root package name */
-    private final long f47280w;
+    private final long f47296w;
 
     /* renamed from: x  reason: collision with root package name */
-    private final boolean f47281x;
+    private final boolean f47297x;
 
     /* renamed from: y  reason: collision with root package name */
-    private final boolean f47282y;
+    private final boolean f47298y;
 
     /* renamed from: z  reason: collision with root package name */
-    private final boolean f47283z;
+    private final boolean f47299z;
 
     public p0(long j10, boolean z10, boolean z11, boolean z12, Object obj, MediaItem mediaItem) {
         this(j10, j10, 0L, 0L, z10, z11, z12, obj, mediaItem);
@@ -62,7 +62,7 @@ public final class p0 extends Timeline {
         } else {
             obj = null;
         }
-        return bVar.v(null, obj, 0, this.f47277t, -this.f47279v);
+        return bVar.v(null, obj, 0, this.f47293t, -this.f47295v);
     }
 
     @Override // com.google.android.exoplayer2.Timeline
@@ -92,15 +92,15 @@ public final class p0 extends Timeline {
             r2 = 1
             r3 = r25
             ne.a.c(r3, r1, r2)
-            long r1 = r0.f47280w
-            boolean r14 = r0.f47282y
+            long r1 = r0.f47296w
+            boolean r14 = r0.f47298y
             if (r14 == 0) goto L2e
-            boolean r3 = r0.f47283z
+            boolean r3 = r0.f47299z
             if (r3 != 0) goto L2e
             r3 = 0
             int r3 = (r27 > r3 ? 1 : (r27 == r3 ? 0 : -1))
             if (r3 == 0) goto L2e
-            long r3 = r0.f47278u
+            long r3 = r0.f47294u
             r5 = -9223372036854775807(0x8000000000000001, double:-4.9E-324)
             int r7 = (r3 > r5 ? 1 : (r3 == r5 ? 0 : -1))
             if (r7 != 0) goto L27
@@ -118,15 +118,15 @@ public final class p0 extends Timeline {
             java.lang.Object r4 = com.google.android.exoplayer2.Timeline.d.C
             com.google.android.exoplayer2.MediaItem r5 = r0.B
             java.lang.Object r6 = r0.A
-            long r7 = r0.f47274q
-            long r9 = r0.f47275r
-            long r11 = r0.f47276s
-            boolean r13 = r0.f47281x
+            long r7 = r0.f47290q
+            long r9 = r0.f47291r
+            long r11 = r0.f47292s
+            boolean r13 = r0.f47297x
             com.google.android.exoplayer2.MediaItem$g r15 = r0.C
-            long r1 = r0.f47278u
+            long r1 = r0.f47294u
             r21 = 0
             r18 = r1
-            long r1 = r0.f47279v
+            long r1 = r0.f47295v
             r20 = 0
             r3 = r26
             r22 = r1
@@ -146,16 +146,16 @@ public final class p0 extends Timeline {
     }
 
     public p0(long j10, long j11, long j12, long j13, long j14, long j15, long j16, boolean z10, boolean z11, boolean z12, Object obj, MediaItem mediaItem, MediaItem.g gVar) {
-        this.f47274q = j10;
-        this.f47275r = j11;
-        this.f47276s = j12;
-        this.f47277t = j13;
-        this.f47278u = j14;
-        this.f47279v = j15;
-        this.f47280w = j16;
-        this.f47281x = z10;
-        this.f47282y = z11;
-        this.f47283z = z12;
+        this.f47290q = j10;
+        this.f47291r = j11;
+        this.f47292s = j12;
+        this.f47293t = j13;
+        this.f47294u = j14;
+        this.f47295v = j15;
+        this.f47296w = j16;
+        this.f47297x = z10;
+        this.f47298y = z11;
+        this.f47299z = z12;
         this.A = obj;
         this.B = (MediaItem) ne.a.e(mediaItem);
         this.C = gVar;

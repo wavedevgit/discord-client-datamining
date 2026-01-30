@@ -5,30 +5,30 @@ import ui.c;
 final class r4 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final r4 f43474a = new r4();
+    static final r4 f43490a = new r4();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f43475b;
+    private static final ui.c f43491b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f43476c;
+    private static final ui.c f43492c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f43477d;
+    private static final ui.c f43493d;
 
     static {
         c.b a10 = ui.c.a("inferenceCommonLogEvent");
         s1 s1Var = new s1();
         s1Var.a(1);
-        f43475b = a10.b(s1Var.b()).a();
+        f43491b = a10.b(s1Var.b()).a();
         c.b a11 = ui.c.a("options");
         s1 s1Var2 = new s1();
         s1Var2.a(2);
-        f43476c = a11.b(s1Var2.b()).a();
+        f43492c = a11.b(s1Var2.b()).a();
         c.b a12 = ui.c.a("imageInfo");
         s1 s1Var3 = new s1();
         s1Var3.a(3);
-        f43477d = a12.b(s1Var3.b()).a();
+        f43493d = a12.b(s1Var3.b()).a();
     }
 
     private r4() {

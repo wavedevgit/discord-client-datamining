@@ -5,7 +5,7 @@ import ui.c;
 final class jb implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final jb f45343a = new jb();
+    static final jb f45359a = new jb();
 
     static {
         c.b a10 = ui.c.a("xMin");

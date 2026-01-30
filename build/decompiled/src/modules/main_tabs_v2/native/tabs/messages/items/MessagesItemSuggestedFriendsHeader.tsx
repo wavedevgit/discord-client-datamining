@@ -87,7 +87,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot9 = var4;
     var4 = var7.memo;
     var3 = function(arg0) { // Original name: MessagesItemSuggestedFriendsHeader, environment: var3
-        _fun101819: for (var _fun101819_ip = 0;;) switch (_fun101819_ip) {
+        _fun102073: for (var _fun102073_ip = 0;;) switch (_fun102073_ip) {
             case 0:
                 var1 = arg0;
                 var12 = var1.stickyAt;
@@ -108,14 +108,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2.bind(var3)(var1);
                 var2 = var4.useDerivedValue;
                 var1 = function() { // Original name: x, environment: var0
-                    _fun101820: for (var _fun101820_ip = 0;;) switch (_fun101820_ip) {
+                    _fun102074: for (var _fun102074_ip = 0;;) switch (_fun102074_ip) {
                         case 0:
                             var2 = _closure2_slot0;
                             var0 = null;
                             var0 = var0 != var2;
                             if (!var0) {
-                                _fun101820_ip = 37;
-                                continue _fun101820
+                                _fun102074_ip = 37;
+                                continue _fun102074
                             }
                         case 16:
                             var3 = _closure2_slot1;
@@ -166,8 +166,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0.collapsable = var6;
                 var6 = null;
                 if (!var4) {
-                    _fun101819_ip = 331;
-                    continue _fun101819
+                    _fun102073_ip = 331;
+                    continue _fun102073
                 }
             case 227:
                 var9 = _closure1_slot7;
@@ -246,4 +246,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.MESSAGES_ITEM_SUGGESTED_FRIENDS_HEADER_HEIGHT = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 3895, 671, 1297, 3677, 8149, 8667, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 3901, 671, 1297, 3679, 8152, 8671, 1234, 2]);

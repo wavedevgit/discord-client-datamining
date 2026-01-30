@@ -11,44 +11,44 @@ public abstract class g {
     static final class a extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f55280d;
+        int f55296d;
 
         /* renamed from: e  reason: collision with root package name */
-        /* synthetic */ Object f55281e;
+        /* synthetic */ Object f55297e;
 
         /* renamed from: i  reason: collision with root package name */
-        final /* synthetic */ Function2 f55282i;
+        final /* synthetic */ Function2 f55298i;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         a(Function2 function2, Continuation continuation) {
             super(2, continuation);
-            this.f55282i = function2;
+            this.f55298i = function2;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
-            a aVar = new a(this.f55282i, continuation);
-            aVar.f55281e = obj;
+            a aVar = new a(this.f55298i, continuation);
+            aVar.f55297e = obj;
             return aVar;
         }
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
             Object f10 = or.b.f();
-            int i10 = this.f55280d;
+            int i10 = this.f55296d;
             if (i10 != 0) {
                 if (i10 == 1) {
-                    z2.a aVar = (z2.a) this.f55281e;
+                    z2.a aVar = (z2.a) this.f55297e;
                     kotlin.c.b(obj);
                     return aVar;
                 }
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
             }
             kotlin.c.b(obj);
-            z2.a c10 = ((d) this.f55281e).c();
-            Function2 function2 = this.f55282i;
-            this.f55281e = c10;
-            this.f55280d = 1;
+            z2.a c10 = ((d) this.f55297e).c();
+            Function2 function2 = this.f55298i;
+            this.f55297e = c10;
+            this.f55296d = 1;
             if (function2.invoke(c10, this) == f10) {
                 return f10;
             }
@@ -58,7 +58,7 @@ public abstract class g {
         @Override // kotlin.jvm.functions.Function2
         /* renamed from: j */
         public final Object invoke(d dVar, Continuation continuation) {
-            return ((a) create(dVar, continuation)).invokeSuspend(Unit.f33282a);
+            return ((a) create(dVar, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 

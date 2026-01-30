@@ -8,24 +8,24 @@ import java.util.Objects;
 public final class f implements e {
 
     /* renamed from: a  reason: collision with root package name */
-    public final j$.time.temporal.n f31567a;
+    public final j$.time.temporal.n f31583a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f31568b;
+    public final int f31584b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final boolean f31569c;
+    public final boolean f31585c;
 
     @Override // j$.time.format.e
     public final int t(o oVar, CharSequence charSequence, int i10) {
-        boolean z10 = oVar.f31597c;
-        DateTimeFormatter dateTimeFormatter = oVar.f31595a;
-        int i11 = z10 ? this.f31568b : 9;
+        boolean z10 = oVar.f31613c;
+        DateTimeFormatter dateTimeFormatter = oVar.f31611a;
+        int i11 = z10 ? this.f31584b : 9;
         int length = charSequence.length();
         if (i10 != length) {
-            if (this.f31569c) {
+            if (this.f31585c) {
                 char charAt = charSequence.charAt(i10);
-                dateTimeFormatter.f31552c.getClass();
+                dateTimeFormatter.f31568c.getClass();
                 if (charAt == '.') {
                     i10++;
                 }
@@ -43,7 +43,7 @@ public final class f implements e {
                 }
                 int i15 = i14 + 1;
                 char charAt2 = charSequence.charAt(i14);
-                dateTimeFormatter.f31552c.getClass();
+                dateTimeFormatter.f31568c.getClass();
                 int i16 = charAt2 - '0';
                 i16 = (i16 < 0 || i16 > 9) ? -1 : -1;
                 if (i16 >= 0) {
@@ -54,9 +54,9 @@ public final class f implements e {
                 }
             }
             BigDecimal movePointLeft = new BigDecimal(i13).movePointLeft(i14 - i12);
-            j$.time.temporal.r x10 = this.f31567a.x();
-            BigDecimal valueOf = BigDecimal.valueOf(x10.f31652a);
-            return oVar.f(this.f31567a, movePointLeft.multiply(BigDecimal.valueOf(x10.f31655d).subtract(valueOf).add(BigDecimal.ONE)).setScale(0, RoundingMode.FLOOR).add(valueOf).longValueExact(), i12, i14);
+            j$.time.temporal.r x10 = this.f31583a.x();
+            BigDecimal valueOf = BigDecimal.valueOf(x10.f31668a);
+            return oVar.f(this.f31583a, movePointLeft.multiply(BigDecimal.valueOf(x10.f31671d).subtract(valueOf).add(BigDecimal.ONE)).setScale(0, RoundingMode.FLOOR).add(valueOf).longValueExact(), i12, i14);
         }
         return i10;
     }
@@ -64,27 +64,27 @@ public final class f implements e {
     public f(j$.time.temporal.n nVar) {
         Objects.requireNonNull(nVar, "field");
         j$.time.temporal.r x10 = nVar.x();
-        if (x10.f31652a != x10.f31653b || x10.f31654c != x10.f31655d) {
+        if (x10.f31668a != x10.f31669b || x10.f31670c != x10.f31671d) {
             throw new IllegalArgumentException("Field must have a fixed set of values: " + nVar);
         }
-        this.f31567a = nVar;
-        this.f31568b = 9;
-        this.f31569c = true;
+        this.f31583a = nVar;
+        this.f31584b = 9;
+        this.f31585c = true;
     }
 
     @Override // j$.time.format.e
     public final boolean r(q qVar, StringBuilder sb2) {
-        j$.time.temporal.n nVar = this.f31567a;
+        j$.time.temporal.n nVar = this.f31583a;
         Long a10 = qVar.a(nVar);
         if (a10 == null) {
             return false;
         }
-        t tVar = qVar.f31604b.f31552c;
+        t tVar = qVar.f31620b.f31568c;
         long longValue = a10.longValue();
         j$.time.temporal.r x10 = nVar.x();
         x10.b(longValue, nVar);
-        BigDecimal valueOf = BigDecimal.valueOf(x10.f31652a);
-        BigDecimal add = BigDecimal.valueOf(x10.f31655d).subtract(valueOf).add(BigDecimal.ONE);
+        BigDecimal valueOf = BigDecimal.valueOf(x10.f31668a);
+        BigDecimal add = BigDecimal.valueOf(x10.f31671d).subtract(valueOf).add(BigDecimal.ONE);
         BigDecimal subtract = BigDecimal.valueOf(longValue).subtract(valueOf);
         RoundingMode roundingMode = RoundingMode.FLOOR;
         BigDecimal divide = subtract.divide(add, 9, roundingMode);
@@ -95,9 +95,9 @@ public final class f implements e {
         if (bigDecimal.scale() == 0) {
             return true;
         }
-        String substring = bigDecimal.setScale(Math.min(Math.max(bigDecimal.scale(), 0), this.f31568b), roundingMode).toPlainString().substring(2);
+        String substring = bigDecimal.setScale(Math.min(Math.max(bigDecimal.scale(), 0), this.f31584b), roundingMode).toPlainString().substring(2);
         tVar.getClass();
-        if (this.f31569c) {
+        if (this.f31585c) {
             sb2.append('.');
         }
         sb2.append(substring);
@@ -105,7 +105,7 @@ public final class f implements e {
     }
 
     public final String toString() {
-        String str = this.f31569c ? ",DecimalPoint" : "";
-        return "Fraction(" + this.f31567a + ",0," + this.f31568b + str + ")";
+        String str = this.f31585c ? ",DecimalPoint" : "";
+        return "Fraction(" + this.f31583a + ",0," + this.f31584b + str + ")";
     }
 }

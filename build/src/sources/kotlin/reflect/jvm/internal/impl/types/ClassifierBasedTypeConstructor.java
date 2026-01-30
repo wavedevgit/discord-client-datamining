@@ -14,7 +14,7 @@ import org.jetbrains.annotations.NotNull;
 public abstract class ClassifierBasedTypeConstructor implements TypeConstructor {
 
     /* renamed from: a  reason: collision with root package name */
-    private int f35831a;
+    private int f35847a;
 
     private final boolean b(ClassifierDescriptor classifierDescriptor) {
         if (!ErrorUtils.isError(classifierDescriptor) && !DescriptorUtils.isLocal(classifierDescriptor)) {
@@ -80,7 +80,7 @@ public abstract class ClassifierBasedTypeConstructor implements TypeConstructor 
 
     public int hashCode() {
         int identityHashCode;
-        int i10 = this.f35831a;
+        int i10 = this.f35847a;
         if (i10 != 0) {
             return i10;
         }
@@ -90,7 +90,7 @@ public abstract class ClassifierBasedTypeConstructor implements TypeConstructor 
         } else {
             identityHashCode = System.identityHashCode(this);
         }
-        this.f35831a = identityHashCode;
+        this.f35847a = identityHashCode;
         return identityHashCode;
     }
 }

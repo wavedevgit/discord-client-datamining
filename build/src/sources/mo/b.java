@@ -9,10 +9,10 @@ public abstract class b {
     public /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f39363a;
+        public static final /* synthetic */ int[] f39379a;
 
         /* renamed from: b  reason: collision with root package name */
-        public static final /* synthetic */ int[] f39364b;
+        public static final /* synthetic */ int[] f39380b;
 
         static {
             int[] iArr = new int[CreateInquirySessionResponse.GpsCollectionRequirement.values().length];
@@ -28,7 +28,7 @@ public abstract class b {
                 iArr[CreateInquirySessionResponse.GpsCollectionRequirement.NONE.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f39363a = iArr;
+            f39379a = iArr;
             int[] iArr2 = new int[CreateInquirySessionResponse.GpsPrecisionRequirement.values().length];
             try {
                 iArr2[CreateInquirySessionResponse.GpsPrecisionRequirement.PRECISE.ordinal()] = 1;
@@ -38,34 +38,34 @@ public abstract class b {
                 iArr2[CreateInquirySessionResponse.GpsPrecisionRequirement.ROUGH.ordinal()] = 2;
             } catch (NoSuchFieldError unused5) {
             }
-            f39364b = iArr2;
+            f39380b = iArr2;
         }
     }
 
     public static final qp.a a(CreateInquirySessionResponse.GpsCollectionRequirement gpsCollectionRequirement) {
         Intrinsics.checkNotNullParameter(gpsCollectionRequirement, "<this>");
-        int i10 = a.f39363a[gpsCollectionRequirement.ordinal()];
+        int i10 = a.f39379a[gpsCollectionRequirement.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
-                    return qp.a.f47582i;
+                    return qp.a.f47598i;
                 }
                 throw new ir.p();
             }
-            return qp.a.f47581e;
+            return qp.a.f47597e;
         }
-        return qp.a.f47580d;
+        return qp.a.f47596d;
     }
 
     public static final qp.e b(CreateInquirySessionResponse.GpsPrecisionRequirement gpsPrecisionRequirement) {
         Intrinsics.checkNotNullParameter(gpsPrecisionRequirement, "<this>");
-        int i10 = a.f39364b[gpsPrecisionRequirement.ordinal()];
+        int i10 = a.f39380b[gpsPrecisionRequirement.ordinal()];
         if (i10 != 1) {
             if (i10 == 2) {
-                return qp.e.f47592d;
+                return qp.e.f47608d;
             }
             throw new ir.p();
         }
-        return qp.e.f47593e;
+        return qp.e.f47609e;
     }
 }

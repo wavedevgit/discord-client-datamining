@@ -25,13 +25,13 @@ public abstract class a {
     public /* synthetic */ class C0500a {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final /* synthetic */ int[] f39356a;
+        public static final /* synthetic */ int[] f39372a;
 
         /* renamed from: b  reason: collision with root package name */
-        public static final /* synthetic */ int[] f39357b;
+        public static final /* synthetic */ int[] f39373b;
 
         /* renamed from: c  reason: collision with root package name */
-        public static final /* synthetic */ int[] f39358c;
+        public static final /* synthetic */ int[] f39374c;
 
         static {
             int[] iArr = new int[d0.d.values().length];
@@ -47,7 +47,7 @@ public abstract class a {
                 iArr[d0.d.f5862i.ordinal()] = 3;
             } catch (NoSuchFieldError unused3) {
             }
-            f39356a = iArr;
+            f39372a = iArr;
             int[] iArr2 = new int[d0.a.values().length];
             try {
                 iArr2[d0.a.f5845d.ordinal()] = 1;
@@ -61,7 +61,7 @@ public abstract class a {
                 iArr2[d0.a.f5847i.ordinal()] = 3;
             } catch (NoSuchFieldError unused6) {
             }
-            f39357b = iArr2;
+            f39373b = iArr2;
             int[] iArr3 = new int[a1.a.values().length];
             try {
                 iArr3[a1.a.f23007e.ordinal()] = 1;
@@ -71,7 +71,7 @@ public abstract class a {
                 iArr3[a1.a.f23008i.ordinal()] = 2;
             } catch (NoSuchFieldError unused8) {
             }
-            f39358c = iArr3;
+            f39374c = iArr3;
         }
     }
 
@@ -98,33 +98,33 @@ public abstract class a {
         e.a aVar;
         e.c cVar;
         String x12 = d0Var.x1();
-        int i10 = C0500a.f39356a[d0Var.U0().ordinal()];
+        int i10 = C0500a.f39372a[d0Var.U0().ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 if (i10 == 3) {
-                    dVar = e.d.f27112i;
+                    dVar = e.d.f27128i;
                 } else {
                     throw new ir.p();
                 }
             } else {
-                dVar = e.d.f27111e;
+                dVar = e.d.f27127e;
             }
         } else {
-            dVar = e.d.f27110d;
+            dVar = e.d.f27126d;
         }
-        int i11 = C0500a.f39357b[d0Var.c2().ordinal()];
+        int i11 = C0500a.f39373b[d0Var.c2().ordinal()];
         if (i11 != 1) {
             if (i11 != 2) {
                 if (i11 == 3) {
-                    aVar = e.a.f27105i;
+                    aVar = e.a.f27121i;
                 } else {
                     throw new ir.p();
                 }
             } else {
-                aVar = e.a.f27103d;
+                aVar = e.a.f27119d;
             }
         } else {
-            aVar = e.a.f27104e;
+            aVar = e.a.f27120e;
         }
         ArrayList arrayList = new ArrayList();
         for (ao.c0 c0Var : d0Var.i2()) {
@@ -144,15 +144,15 @@ public abstract class a {
     private static final gq.f c(ep.a1 a1Var) {
         f.a aVar;
         if (new File(a1Var.a()).exists()) {
-            int i10 = C0500a.f39358c[a1Var.b().ordinal()];
+            int i10 = C0500a.f39374c[a1Var.b().ordinal()];
             if (i10 != 1) {
                 if (i10 == 2) {
-                    aVar = f.a.f27117d;
+                    aVar = f.a.f27133d;
                 } else {
                     throw new ir.p();
                 }
             } else {
-                aVar = f.a.f27118e;
+                aVar = f.a.f27134e;
             }
             return new gq.f(aVar, new File(a1Var.a()));
         }

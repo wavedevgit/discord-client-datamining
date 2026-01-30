@@ -8,16 +8,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class g implements ViewTreeObserver.OnPreDrawListener, View.OnAttachStateChangeListener {
 
     /* renamed from: o  reason: collision with root package name */
-    public static final a f49790o = new a(null);
+    public static final a f49806o = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final View f49791d;
+    private final View f49807d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Runnable f49792e;
+    private final Runnable f49808e;
 
     /* renamed from: i  reason: collision with root package name */
-    private ViewTreeObserver f49793i;
+    private ViewTreeObserver f49809i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -43,25 +43,25 @@ public final class g implements ViewTreeObserver.OnPreDrawListener, View.OnAttac
     }
 
     private final void a() {
-        if (this.f49793i.isAlive()) {
-            this.f49793i.removeOnPreDrawListener(this);
+        if (this.f49809i.isAlive()) {
+            this.f49809i.removeOnPreDrawListener(this);
         } else {
-            this.f49791d.getViewTreeObserver().removeOnPreDrawListener(this);
+            this.f49807d.getViewTreeObserver().removeOnPreDrawListener(this);
         }
-        this.f49791d.removeOnAttachStateChangeListener(this);
+        this.f49807d.removeOnAttachStateChangeListener(this);
     }
 
     @Override // android.view.ViewTreeObserver.OnPreDrawListener
     public boolean onPreDraw() {
         a();
-        this.f49792e.run();
+        this.f49808e.run();
         return false;
     }
 
     @Override // android.view.View.OnAttachStateChangeListener
     public void onViewAttachedToWindow(View v10) {
         Intrinsics.checkNotNullParameter(v10, "v");
-        this.f49793i = v10.getViewTreeObserver();
+        this.f49809i = v10.getViewTreeObserver();
     }
 
     @Override // android.view.View.OnAttachStateChangeListener
@@ -71,10 +71,10 @@ public final class g implements ViewTreeObserver.OnPreDrawListener, View.OnAttac
     }
 
     private g(View view, Runnable runnable) {
-        this.f49791d = view;
-        this.f49792e = runnable;
+        this.f49807d = view;
+        this.f49808e = runnable;
         ViewTreeObserver viewTreeObserver = view.getViewTreeObserver();
         Intrinsics.checkNotNullExpressionValue(viewTreeObserver, "getViewTreeObserver(...)");
-        this.f49793i = viewTreeObserver;
+        this.f49809i = viewTreeObserver;
     }
 }

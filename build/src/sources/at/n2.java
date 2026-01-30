@@ -13,7 +13,7 @@ public final class n2 implements KSerializer {
     public static final n2 f6848a = new n2();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final SerialDescriptor f6849b = new g2("kotlin.String", e.i.f56091a);
+    private static final SerialDescriptor f6849b = new g2("kotlin.String", e.i.f56107a);
 
     private n2() {
     }

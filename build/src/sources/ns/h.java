@@ -3,14 +3,14 @@ package ns;
 public abstract class h implements Runnable {
 
     /* renamed from: d  reason: collision with root package name */
-    public long f42182d;
+    public long f42198d;
 
     /* renamed from: e  reason: collision with root package name */
-    public boolean f42183e;
+    public boolean f42199e;
 
     public h(long j10, boolean z10) {
-        this.f42182d = j10;
-        this.f42183e = z10;
+        this.f42198d = j10;
+        this.f42199e = z10;
     }
 
     public h() {

@@ -42,7 +42,7 @@ public class d2 extends j2 implements KProperty1 {
         Intrinsics.checkNotNullParameter(container, "container");
         Intrinsics.checkNotNullParameter(name, "name");
         Intrinsics.checkNotNullParameter(signature, "signature");
-        ir.o oVar = ir.o.f31103e;
+        ir.o oVar = ir.o.f31119e;
         this.f21120z = ir.l.a(oVar, new b2(this));
         this.A = ir.l.a(oVar, new c2(this));
     }
@@ -83,7 +83,7 @@ public class d2 extends j2 implements KProperty1 {
         super(container, descriptor);
         Intrinsics.checkNotNullParameter(container, "container");
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
-        ir.o oVar = ir.o.f31103e;
+        ir.o oVar = ir.o.f31119e;
         this.f21120z = ir.l.a(oVar, new b2(this));
         this.A = ir.l.a(oVar, new c2(this));
     }

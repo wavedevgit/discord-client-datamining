@@ -10,7 +10,7 @@ import pv.d;
 public final class c implements ku.b, pu.a {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f44779a = new c();
+    public static final c f44795a = new c();
 
     private c() {
     }
@@ -65,7 +65,7 @@ public final class c implements ku.b, pu.a {
         if (str != null) {
             Object q02 = CollectionsKt.q0(list2, d.b(str));
             if (q02 instanceof List) {
-                return f44779a.c(list.subList(1, list.size()), (List) q02);
+                return f44795a.c(list.subList(1, list.size()), (List) q02);
             }
             return CollectionsKt.q0(list2, d.b(str));
         }

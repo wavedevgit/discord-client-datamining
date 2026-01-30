@@ -127,7 +127,7 @@ public final class y implements vm.b {
         this.f6553x = governmentIdStepStyle;
         this.f6554y = remoteImage;
         this.f6555z = i10;
-        k.a aVar = vm.k.f51267a;
+        k.a aVar = vm.k.f51283a;
         this.B = new vm.z(Reflection.getOrCreateKotlinClass(y.class), a.f6556d, new Function1() { // from class: ao.s
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Object obj) {
@@ -294,13 +294,13 @@ public final class y implements vm.b {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit m(y yVar) {
         yVar.f6549t.invoke();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit n(y yVar) {
         yVar.f6550u.invoke();
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // vm.b

@@ -42,7 +42,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getRoleSubscriptionPlanId = var3;
     var1 = function(arg0) { // Original name: getRoleSubscriptionMutationPlanId, environment: var1
-        _fun83940: for (var _fun83940_ip = 0;;) switch (_fun83940_ip) {
+        _fun83986: for (var _fun83986_ip = 0;;) switch (_fun83986_ip) {
             case 0:
                 var1 = arg0;
                 var3 = null;
@@ -50,23 +50,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = undefined;
                 var2 = undefined;
                 if (var4) {
-                    _fun83940_ip = 37;
-                    continue _fun83940
+                    _fun83986_ip = 37;
+                    continue _fun83986
                 }
             case 16:
                 var1 = var1.renewalMutations;
                 var4 = var3 == var1;
                 var2 = undefined;
                 if (var4) {
-                    _fun83940_ip = 37;
-                    continue _fun83940
+                    _fun83986_ip = 37;
+                    continue _fun83986
                 }
             case 31:
                 var2 = var1.items;
             case 37:
                 if (!(var3 == var2)) {
-                    _fun83940_ip = 43;
-                    continue _fun83940
+                    _fun83986_ip = 43;
+                    continue _fun83986
                 }
             case 41:
                 return var0;
@@ -84,8 +84,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var3 == var2;
                 var0 = undefined;
                 if (var3) {
-                    _fun83940_ip = 108;
-                    continue _fun83940
+                    _fun83986_ip = 108;
+                    continue _fun83986
                 }
             case 98:
                 var1 = var2[var1];

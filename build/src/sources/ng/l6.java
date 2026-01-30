@@ -5,30 +5,30 @@ import ui.c;
 final class l6 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final l6 f41410a = new l6();
+    static final l6 f41426a = new l6();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final ui.c f41411b;
+    private static final ui.c f41427b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ui.c f41412c;
+    private static final ui.c f41428c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ui.c f41413d;
+    private static final ui.c f41429d;
 
     static {
         c.b a10 = ui.c.a("numSamples");
         f fVar = new f();
         fVar.a(1);
-        f41411b = a10.b(fVar.b()).a();
+        f41427b = a10.b(fVar.b()).a();
         c.b a11 = ui.c.a("errorCode");
         f fVar2 = new f();
         fVar2.a(2);
-        f41412c = a11.b(fVar2.b()).a();
+        f41428c = a11.b(fVar2.b()).a();
         c.b a12 = ui.c.a("metricResults");
         f fVar3 = new f();
         fVar3.a(3);
-        f41413d = a12.b(fVar3.b()).a();
+        f41429d = a12.b(fVar3.b()).a();
     }
 
     private l6() {

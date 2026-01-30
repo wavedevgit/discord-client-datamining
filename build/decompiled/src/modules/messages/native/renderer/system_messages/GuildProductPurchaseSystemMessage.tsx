@@ -37,7 +37,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/messages/native/renderer/system_messages/GuildProductPurchaseSystemMessage.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: createGuildProductPurchaseSystemMessage, environment: var1
-        _fun55689: for (var _fun55689_ip = 0;;) switch (_fun55689_ip) {
+        _fun55734: for (var _fun55734_ip = 0;;) switch (_fun55734_ip) {
             case 0:
                 var0 = arg0;
                 var4 = {};
@@ -68,23 +68,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = undefined;
                 var12 = undefined;
                 if (var5) {
-                    _fun55689_ip = 122;
-                    continue _fun55689
+                    _fun55734_ip = 122;
+                    continue _fun55734
                 }
             case 101:
                 var1 = var1.guild_product_purchase;
                 var5 = var0 == var1;
                 var12 = undefined;
                 if (var5) {
-                    _fun55689_ip = 122;
-                    continue _fun55689
+                    _fun55734_ip = 122;
+                    continue _fun55734
                 }
             case 116:
                 var12 = var1.product_name;
             case 122:
                 if (!(var0 != var12)) {
-                    _fun55689_ip = 511;
-                    continue _fun55689
+                    _fun55734_ip = 511;
+                    continue _fun55734
                 }
             case 129:
                 var1 = var4.message;
@@ -97,8 +97,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var0 == var7;
                 var14 = undefined;
                 if (var5) {
-                    _fun55689_ip = 183;
-                    continue _fun55689
+                    _fun55734_ip = 183;
+                    continue _fun55734
                 }
             case 173:
                 var5 = var7.getGuildId;
@@ -118,19 +118,19 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var8.bind(var3)(var5);
                 var8 = var9.ensureAvatarSource;
                 if (!(var0 != var15)) {
-                    _fun55689_ip = 252;
-                    continue _fun55689
+                    _fun55734_ip = 252;
+                    continue _fun55734
                 }
             case 248:
                 if (!(var0 == var14)) {
-                    _fun55689_ip = 265;
-                    continue _fun55689
+                    _fun55734_ip = 265;
+                    continue _fun55734
                 }
             case 252:
                 var5 = var6.getAvatarSource;
                 var5 = var5.bind(var6)(var3);
-                _fun55689_ip = 317;
-                continue _fun55689;
+                _fun55734_ip = 317;
+                continue _fun55734;
             case 265:
                 var11 = _closure1_slot0;
                 var13 = _closure1_slot2;
@@ -196,4 +196,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.createGuildProductPurchaseSystemMessage = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3060, 1372, 660, 3936, 1418, 1417, 6651, 1234, 6636, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3060, 1372, 660, 3942, 1418, 1417, 6654, 1234, 6639, 2]);

@@ -960,7 +960,7 @@ public class ConstraintSet {
                             this.f2559d = obtainStyledAttributes.getString(index);
                             break;
                         } else {
-                            this.f2559d = i1.a.f28329c[obtainStyledAttributes.getInteger(index, 0)];
+                            this.f2559d = i1.a.f28345c[obtainStyledAttributes.getInteger(index, 0)];
                             break;
                         }
                     case 4:
@@ -1968,7 +1968,7 @@ public class ConstraintSet {
                         aVar.f2494d.f2559d = typedArray.getString(index);
                         break;
                     } else {
-                        aVar.f2494d.f2559d = i1.a.f28329c[typedArray.getInteger(index, 0)];
+                        aVar.f2494d.f2559d = i1.a.f28345c[typedArray.getInteger(index, 0)];
                         break;
                     }
                 case 66:
@@ -2304,7 +2304,7 @@ public class ConstraintSet {
                         c0027a.c(65, typedArray.getString(index));
                         break;
                     } else {
-                        c0027a.c(65, i1.a.f28329c[typedArray.getInteger(index, 0)]);
+                        c0027a.c(65, i1.a.f28345c[typedArray.getInteger(index, 0)]);
                         break;
                     }
                 case 66:
@@ -2419,7 +2419,7 @@ public class ConstraintSet {
                     c0027a.b(97, typedArray.getInt(index, aVar.f2495e.f2545q0));
                     break;
                 case 98:
-                    if (m1.b.f37786d) {
+                    if (m1.b.f37802d) {
                         int resourceId2 = typedArray.getResourceId(index, aVar.f2491a);
                         aVar.f2491a = resourceId2;
                         if (resourceId2 == -1) {

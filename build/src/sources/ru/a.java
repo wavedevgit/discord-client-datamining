@@ -8,7 +8,7 @@ import ru.b;
 public final class a implements ku.b, b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f48645a = new a();
+    public static final a f48661a = new a();
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* renamed from: ru.a$a  reason: collision with other inner class name */
@@ -16,7 +16,7 @@ public final class a implements ku.b, b {
     public static final class C0622a extends Lambda implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final C0622a f48646d = new C0622a();
+        public static final C0622a f48662d = new C0622a();
 
         C0622a() {
             super(2);
@@ -78,6 +78,6 @@ public final class a implements ku.b, b {
     @Override // ku.b
     /* renamed from: i */
     public Boolean f(Object obj, Object obj2) {
-        return Boolean.valueOf(h(obj, C0622a.f48646d));
+        return Boolean.valueOf(h(obj, C0622a.f48662d));
     }
 }

@@ -6,10 +6,10 @@ import vm.e0;
 public final class p implements tq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final tq.h f49130a;
+    private final tq.h f49146a;
 
     public p(tq.h hVar) {
-        this.f49130a = hVar;
+        this.f49146a = hVar;
     }
 
     public static p a(tq.h hVar) {
@@ -23,6 +23,6 @@ public final class p implements tq.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public e0 get() {
-        return c((Set) this.f49130a.get());
+        return c((Set) this.f49146a.get());
     }
 }

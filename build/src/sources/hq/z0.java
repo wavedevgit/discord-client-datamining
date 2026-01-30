@@ -5,18 +5,18 @@ import androidx.activity.result.ActivityResultLauncher;
 public final class z0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private final tq.h f28148a;
+    private final tq.h f28164a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final tq.h f28149b;
+    private final tq.h f28165b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final tq.h f28150c;
+    private final tq.h f28166c;
 
     public z0(tq.h hVar, tq.h hVar2, tq.h hVar3) {
-        this.f28148a = hVar;
-        this.f28149b = hVar2;
-        this.f28150c = hVar3;
+        this.f28164a = hVar;
+        this.f28165b = hVar2;
+        this.f28166c = hVar3;
     }
 
     public static z0 a(tq.h hVar, tq.h hVar2, tq.h hVar3) {
@@ -28,6 +28,6 @@ public final class z0 {
     }
 
     public y0 b(String str, String str2, String str3, String str4) {
-        return c((jq.b) this.f28148a.get(), (un.a) this.f28149b.get(), (ActivityResultLauncher) this.f28150c.get(), str, str2, str3, str4);
+        return c((jq.b) this.f28164a.get(), (un.a) this.f28165b.get(), (ActivityResultLauncher) this.f28166c.get(), str, str2, str3, str4);
     }
 }

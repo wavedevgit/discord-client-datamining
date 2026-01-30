@@ -93,4 +93,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.activityPanelStateContextDefault = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 7874, 5211, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 7877, 5217, 2]);

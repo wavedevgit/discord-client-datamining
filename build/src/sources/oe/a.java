@@ -9,42 +9,42 @@ import ne.h0;
 public final class a {
 
     /* renamed from: a  reason: collision with root package name */
-    public final List f42509a;
+    public final List f42525a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final int f42510b;
+    public final int f42526b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final int f42511c;
+    public final int f42527c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final int f42512d;
+    public final int f42528d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final int f42513e;
+    public final int f42529e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final int f42514f;
+    public final int f42530f;
 
     /* renamed from: g  reason: collision with root package name */
-    public final int f42515g;
+    public final int f42531g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final float f42516h;
+    public final float f42532h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final String f42517i;
+    public final String f42533i;
 
     private a(List list, int i10, int i11, int i12, int i13, int i14, int i15, float f10, String str) {
-        this.f42509a = list;
-        this.f42510b = i10;
-        this.f42511c = i11;
-        this.f42512d = i12;
-        this.f42513e = i13;
-        this.f42514f = i14;
-        this.f42515g = i15;
-        this.f42516h = f10;
-        this.f42517i = str;
+        this.f42525a = list;
+        this.f42526b = i10;
+        this.f42527c = i11;
+        this.f42528d = i12;
+        this.f42529e = i13;
+        this.f42530f = i14;
+        this.f42531g = i15;
+        this.f42532h = f10;
+        this.f42533i = str;
     }
 
     private static byte[] a(h0 h0Var) {
@@ -77,13 +77,13 @@ public final class a {
                 }
                 if (H2 > 0) {
                     d0.c l10 = d0.l((byte[]) arrayList.get(0), H, ((byte[]) arrayList.get(0)).length);
-                    int i17 = l10.f40160f;
-                    int i18 = l10.f40161g;
-                    int i19 = l10.f40169o;
-                    int i20 = l10.f40170p;
-                    int i21 = l10.f40171q;
-                    float f11 = l10.f40162h;
-                    str = ne.f.a(l10.f40155a, l10.f40156b, l10.f40157c);
+                    int i17 = l10.f40176f;
+                    int i18 = l10.f40177g;
+                    int i19 = l10.f40185o;
+                    int i20 = l10.f40186p;
+                    int i21 = l10.f40187q;
+                    float f11 = l10.f40178h;
+                    str = ne.f.a(l10.f40171a, l10.f40172b, l10.f40173c);
                     i12 = i20;
                     i13 = i21;
                     f10 = f11;

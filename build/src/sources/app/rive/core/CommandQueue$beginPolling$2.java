@@ -76,7 +76,7 @@ public final class CommandQueue$beginPolling$2 extends k implements Function2<Co
                 @Override // kotlin.jvm.functions.Function1
                 public /* bridge */ /* synthetic */ Object invoke(Object obj2) {
                     invoke(((Number) obj2).longValue());
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
 
                 public final void invoke(long j10) {
@@ -89,11 +89,11 @@ public final class CommandQueue$beginPolling$2 extends k implements Function2<Co
                 return f10;
             }
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(@NotNull CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((CommandQueue$beginPolling$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((CommandQueue$beginPolling$2) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

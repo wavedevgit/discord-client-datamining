@@ -102,28 +102,28 @@ public class a {
     public JobInfo a(u uVar, int i10) {
         boolean z10;
         int i11;
-        d dVar = uVar.f44919j;
+        d dVar = uVar.f44935j;
         PersistableBundle persistableBundle = new PersistableBundle();
-        persistableBundle.putString("EXTRA_WORK_SPEC_ID", uVar.f44910a);
+        persistableBundle.putString("EXTRA_WORK_SPEC_ID", uVar.f44926a);
         persistableBundle.putInt("EXTRA_WORK_SPEC_GENERATION", uVar.f());
         persistableBundle.putBoolean("EXTRA_IS_PERIODIC", uVar.m());
         JobInfo.Builder extras = new JobInfo.Builder(i10, this.f5583a).setRequiresCharging(dVar.g()).setRequiresDeviceIdle(dVar.h()).setExtras(persistableBundle);
         d(extras, dVar.d());
         boolean z11 = false;
         if (!dVar.h()) {
-            if (uVar.f44921l == k4.a.LINEAR) {
+            if (uVar.f44937l == k4.a.LINEAR) {
                 i11 = 0;
             } else {
                 i11 = 1;
             }
-            extras.setBackoffCriteria(uVar.f44922m, i11);
+            extras.setBackoffCriteria(uVar.f44938m, i11);
         }
         long max = Math.max(uVar.c() - this.f5584b.a(), 0L);
         if (Build.VERSION.SDK_INT <= 28) {
             extras.setMinimumLatency(max);
         } else if (max > 0) {
             extras.setMinimumLatency(max);
-        } else if (!uVar.f44926q) {
+        } else if (!uVar.f44942q) {
             extras.setImportantWhileForeground(true);
         }
         if (dVar.e()) {
@@ -139,7 +139,7 @@ public class a {
             extras.setRequiresBatteryNotLow(dVar.f());
             extras.setRequiresStorageNotLow(dVar.i());
         }
-        if (uVar.f44920k > 0) {
+        if (uVar.f44936k > 0) {
             z10 = true;
         } else {
             z10 = false;
@@ -147,7 +147,7 @@ public class a {
         if (max > 0) {
             z11 = true;
         }
-        if (i12 >= 31 && uVar.f44926q && !z10 && !z11) {
+        if (i12 >= 31 && uVar.f44942q && !z10 && !z11) {
             extras.setExpedited(true);
         }
         return extras.build();

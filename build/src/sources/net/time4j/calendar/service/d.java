@@ -9,16 +9,16 @@ public abstract class d extends kt.d implements q {
     private final Class<jt.q> chrono;
 
     /* renamed from: e  reason: collision with root package name */
-    private final transient char f40535e;
+    private final transient char f40551e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final transient boolean f40536i;
+    private final transient boolean f40552i;
 
     public d(String str, Class cls, char c10, boolean z10) {
         super(str);
         this.chrono = cls;
-        this.f40535e = c10;
-        this.f40536i = z10;
+        this.f40551e = c10;
+        this.f40552i = z10;
     }
 
     @Override // jt.p
@@ -33,7 +33,7 @@ public abstract class d extends kt.d implements q {
 
     @Override // jt.e, jt.p
     public char d() {
-        return this.f40535e;
+        return this.f40551e;
     }
 
     /* JADX INFO: Access modifiers changed from: protected */

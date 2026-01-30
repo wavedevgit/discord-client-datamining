@@ -8,11 +8,11 @@ import kotlin.jvm.internal.Intrinsics;
 public final class l implements b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Context f50480a;
+    private final Context f50496a;
 
     public l(Context context) {
         Intrinsics.checkNotNullParameter(context, "context");
-        this.f50480a = context;
+        this.f50496a = context;
     }
 
     @Override // un.b

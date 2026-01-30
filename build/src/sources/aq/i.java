@@ -34,16 +34,16 @@ public final class i implements ViewBinding {
     }
 
     public static i a(View view) {
-        int i10 = vp.e.f51813o;
+        int i10 = vp.e.f51829o;
         MaterialCheckBox materialCheckBox = (MaterialCheckBox) e4.a.a(view, i10);
         if (materialCheckBox != null) {
-            i10 = vp.e.f51815p;
+            i10 = vp.e.f51831p;
             TextView textView = (TextView) e4.a.a(view, i10);
             if (textView != null) {
-                i10 = vp.e.f51817q;
+                i10 = vp.e.f51833q;
                 TextView textView2 = (TextView) e4.a.a(view, i10);
                 if (textView2 != null) {
-                    i10 = vp.e.f51825u;
+                    i10 = vp.e.f51841u;
                     TextView textView3 = (TextView) e4.a.a(view, i10);
                     if (textView3 != null) {
                         return new i((ConstraintLayout) view, materialCheckBox, textView, textView2, textView3);
@@ -59,7 +59,7 @@ public final class i implements ViewBinding {
     }
 
     public static i d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(vp.f.f51846j, viewGroup, false);
+        View inflate = layoutInflater.inflate(vp.f.f51862j, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }

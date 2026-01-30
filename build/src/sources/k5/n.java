@@ -10,7 +10,7 @@ import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
 public final class n {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final n f33026a = new n();
+    public static final n f33042a = new n();
 
     private n() {
     }

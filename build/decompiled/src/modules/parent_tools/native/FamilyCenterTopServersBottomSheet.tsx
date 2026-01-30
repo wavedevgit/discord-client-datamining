@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var10;
     var _closure1_slot2 = var5;
     var0 = function(arg0) { // Original name: GuildRow, environment: var1
-        _fun81861: for (var _fun81861_ip = 0;;) switch (_fun81861_ip) {
+        _fun81907: for (var _fun81907_ip = 0;;) switch (_fun81907_ip) {
             case 0:
                 var1 = arg0;
                 var1 = var1.guildActivity;
@@ -37,8 +37,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = var3.bind(var6)(var2, var0);
                 var0 = null;
                 if (!(var0 != var9)) {
-                    _fun81861_ip = 225;
-                    continue _fun81861
+                    _fun81907_ip = 225;
+                    continue _fun81907
                 }
             case 87:
                 var2 = _closure1_slot0;
@@ -199,4 +199,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [4550, 33, 1297, 671, 566, 4615, 4854, 7353, 5164, 3895, 1234, 1849, 5320, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4556, 33, 1297, 671, 566, 4621, 4860, 7356, 5170, 3901, 1234, 1849, 5324, 2]);

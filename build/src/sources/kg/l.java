@@ -7,7 +7,7 @@ import ef.d;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class l extends ef.d implements sg.i {
     public l(Context context) {
-        super(context, g.f33189l, a.d.f22762c, d.a.f22774c);
+        super(context, g.f33205l, a.d.f22762c, d.a.f22774c);
     }
 
     @Override // sg.i

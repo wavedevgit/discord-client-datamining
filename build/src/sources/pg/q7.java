@@ -5,7 +5,7 @@ import ui.c;
 final class q7 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final q7 f45658a = new q7();
+    static final q7 f45674a = new q7();
 
     static {
         c.b a10 = ui.c.a("identifyLanguageConfidenceThreshold");

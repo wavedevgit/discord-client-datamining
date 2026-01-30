@@ -1,61 +1,75 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = require;
-    var _closure1_slot0 = var1;
-    var1 = dependencyMap;
-    var _closure1_slot1 = var1;
-    var1 = global;
-    var1 = var1.Array;
-    var1 = var1.prototype;
-    var1 = var1.splice;
-    var _closure1_slot2 = var1;
-    var1 = function(arg0) { // Original name: listCacheDelete, environment: var0
-        _fun31520: for (var _fun31520_ip = 0;;) switch (_fun31520_ip) {
+    var4 = require;
+    var5 = dependencyMap;
+    var2 = function(arg0) { // Original name: ListCache, environment: var0
+        _fun31521: for (var _fun31521_ip = 0;;) switch (_fun31521_ip) {
             case 0:
-                var2 = this;
-                var3 = var2.__data__;
-                var5 = _closure1_slot0;
-                var4 = _closure1_slot1;
+                var5 = arg0;
+                var4 = this;
+                var0 = null;
+                var0 = var0 == var5;
+                var3 = 0;
+                var2 = 0;
+                if (var0) {
+                    _fun31521_ip = 23;
+                    continue _fun31521
+                }
+            case 18:
+                var2 = var5.length;
+            case 23:
+                var0 = var4.clear;
+                var0 = var0.bind(var4)();
+                var6 = var3 < var2;
+                var1 = 1;
                 var0 = 0;
-                var4 = var4[var0];
-                var6 = undefined;
-                var5 = var5.bind(var6)(var4);
-                var4 = arg0;
-                var6 = var5.bind(var6)(var3, var4);
-                var4 = var6 < var0;
-                var0 = !var4;
-                if (var4) {
-                    _fun31520_ip = 111;
-                    continue _fun31520
+                if (!var6) {
+                    _fun31521_ip = 75;
+                    continue _fun31521
                 }
-            case 51:
-                var4 = var3.length;
-                var5 = 1;
-                var4 = var4 - var5;
-                if (!(var6 != var4)) {
-                    _fun31520_ip = 85;
-                    continue _fun31520
+            case 45:
+                var6 = var5[var0];
+                var8 = var4.set;
+                var7 = var6[var3];
+                var6 = var6[var1];
+                var6 = var8.bind(var4)(var7, var6);
+                var0 = var0 + 1;
+                if (var0 < var2) {
+                    _fun31521_ip = 45;
+                    continue _fun31521
                 }
-            case 67:
-                var4 = _closure1_slot2;
-                var1 = var4.call;
-                var1 = var1.bind(var4)(var3, var6, var5);
-                _fun31520_ip = 95;
-                continue _fun31520;
-            case 85:
-                var1 = var3.pop;
-                var1 = var1.bind(var3)();
-            case 95:
-                var1 = var2.size;
-                var1 = var1 - 1;
-                var2.size = var1;
-                var0 = true;
-            case 111:
+            case 75:
+                var0 = undefined;
                 return var0;
         }
     };
-    var0 = arg4;
-    var0.exports = var1;
+    var3 = var2.prototype;
+    var0 = 0;
+    var1 = var5[var0];
     var0 = undefined;
+    var1 = var4.bind(var0)(var1);
+    var3.clear = var1;
+    var3 = var2.prototype;
+    var1 = 1;
+    var1 = var5[var1];
+    var1 = var4.bind(var0)(var1);
+    var3.delete = var1;
+    var3 = var2.prototype;
+    var1 = 2;
+    var1 = var5[var1];
+    var1 = var4.bind(var0)(var1);
+    var3.get = var1;
+    var3 = var2.prototype;
+    var1 = 3;
+    var1 = var5[var1];
+    var1 = var4.bind(var0)(var1);
+    var3.has = var1;
+    var3 = var2.prototype;
+    var1 = 4;
+    var1 = var5[var1];
+    var1 = var4.bind(var0)(var1);
+    var3.set = var1;
+    var1 = arg4;
+    var1.exports = var2;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3515]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3515, 3516, 3518, 3519, 3520]);

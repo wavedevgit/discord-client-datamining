@@ -5,13 +5,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function(arg0) { // Original name: IsDataDescriptor, environment: var0
-        _fun28990: for (var _fun28990_ip = 0;;) switch (_fun28990_ip) {
+        _fun28991: for (var _fun28991_ip = 0;;) switch (_fun28991_ip) {
             case 0:
                 var4 = arg0;
                 var3 = undefined;
                 if (!(var3 !== var4)) {
-                    _fun28990_ip = 153;
-                    continue _fun28990
+                    _fun28991_ip = 153;
+                    continue _fun28991
                 }
             case 12:
                 var2 = _closure1_slot0;
@@ -23,8 +23,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = _closure1_slot0;
                 var0 = _closure1_slot1;
                 if (var5) {
-                    _fun28990_ip = 90;
-                    continue _fun28990
+                    _fun28991_ip = 90;
+                    continue _fun28991
                 }
             case 50:
                 var5 = 1;
@@ -49,8 +49,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var2.bind(var3)(var4, var0);
                 var0 = !var0;
                 if (!var0) {
-                    _fun28990_ip = 148;
-                    continue _fun28990
+                    _fun28991_ip = 148;
+                    continue _fun28991
                 }
             case 118:
                 var2 = _closure1_slot0;

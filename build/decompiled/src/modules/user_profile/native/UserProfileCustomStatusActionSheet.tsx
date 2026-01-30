@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_profile/native/UserProfileCustomStatusActionSheet.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: UserProfileCustomStatusActionSheet, environment: var1
-        _fun61774: for (var _fun61774_ip = 0;;) switch (_fun61774_ip) {
+        _fun61818: for (var _fun61818_ip = 0;;) switch (_fun61818_ip) {
             case 0:
                 var1 = arg0;
                 var16 = var1.user;
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = new Array(1);
                 var1[0] = var16;
                 var0 = function() { // Environment: var0
-                    _fun61775: for (var _fun61775_ip = 0;;) switch (_fun61775_ip) {
+                    _fun61819: for (var _fun61819_ip = 0;;) switch (_fun61819_ip) {
                         case 0:
                             var1 = _closure1_slot4;
                             var0 = var1.getCurrentUser;
@@ -124,8 +124,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = var1 == var0;
                             var1 = undefined;
                             if (var2) {
-                                _fun61775_ip = 32;
-                                continue _fun61775
+                                _fun61819_ip = 32;
+                                continue _fun61819
                             }
                         case 27:
                             var1 = var0.id;
@@ -155,8 +155,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var6.bind(var3)(var2);
                 var2 = var2.intl;
                 if (var1) {
-                    _fun61774_ip = 226;
-                    continue _fun61774
+                    _fun61818_ip = 226;
+                    continue _fun61818
                 }
             case 185:
                 var8 = var2.formatToPlainString;
@@ -167,8 +167,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = {};
                 var1.username = var9;
                 var5 = var8.bind(var2)(var5, var1);
-                _fun61774_ip = 258;
-                continue _fun61774;
+                _fun61818_ip = 258;
+                continue _fun61818;
             case 226:
                 var1 = var2.string;
                 var0 = var7[var0];
@@ -229,4 +229,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1613, 6918, 4888, 33, 1297, 671, 566, 7705, 3915, 1234, 7707, 5692, 6930, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1613, 6921, 4894, 33, 1297, 671, 566, 7708, 3921, 1234, 7710, 5695, 6933, 2]);

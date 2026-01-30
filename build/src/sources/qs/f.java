@@ -19,13 +19,13 @@ public final class f implements Comparable<f> {
     public static final a Companion = new a(null);
 
     /* renamed from: e  reason: collision with root package name */
-    private static final f f47637e;
+    private static final f f47653e;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final f f47638i;
+    private static final f f47654i;
 
     /* renamed from: d  reason: collision with root package name */
-    private final LocalDate f47639d;
+    private final LocalDate f47655d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -43,7 +43,7 @@ public final class f implements Comparable<f> {
         public final f a(CharSequence input, rs.n format) {
             Intrinsics.checkNotNullParameter(input, "input");
             Intrinsics.checkNotNullParameter(format, "format");
-            if (format == b.f47640a.a()) {
+            if (format == b.f47656a.a()) {
                 try {
                     return new f(LocalDate.parse(ss.d.d(input.toString())));
                 } catch (DateTimeParseException e10) {
@@ -55,7 +55,7 @@ public final class f implements Comparable<f> {
 
         @NotNull
         public final KSerializer serializer() {
-            return ws.f.f52755a;
+            return ws.f.f52771a;
         }
 
         private a() {
@@ -66,10 +66,10 @@ public final class f implements Comparable<f> {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final b f47640a = new b();
+        public static final b f47656a = new b();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final rs.n f47641b = z.c();
+        private static final rs.n f47657b = z.c();
 
         private b() {
         }
@@ -82,37 +82,37 @@ public final class f implements Comparable<f> {
     static {
         LocalDate MIN = LocalDate.MIN;
         Intrinsics.checkNotNullExpressionValue(MIN, "MIN");
-        f47637e = new f(MIN);
+        f47653e = new f(MIN);
         LocalDate MAX = LocalDate.MAX;
         Intrinsics.checkNotNullExpressionValue(MAX, "MAX");
-        f47638i = new f(MAX);
+        f47654i = new f(MAX);
     }
 
     public f(LocalDate value) {
         Intrinsics.checkNotNullParameter(value, "value");
-        this.f47639d = value;
+        this.f47655d = value;
     }
 
     @Override // java.lang.Comparable
     /* renamed from: a */
     public int compareTo(f other) {
         Intrinsics.checkNotNullParameter(other, "other");
-        return this.f47639d.compareTo((ChronoLocalDate) other.f47639d);
+        return this.f47655d.compareTo((ChronoLocalDate) other.f47655d);
     }
 
     public final int d() {
-        return this.f47639d.getDayOfMonth();
+        return this.f47655d.getDayOfMonth();
     }
 
     public final DayOfWeek e() {
-        DayOfWeek dayOfWeek = this.f47639d.getDayOfWeek();
+        DayOfWeek dayOfWeek = this.f47655d.getDayOfWeek();
         Intrinsics.checkNotNullExpressionValue(dayOfWeek, "getDayOfWeek(...)");
         return dayOfWeek;
     }
 
     public boolean equals(Object obj) {
         if (this != obj) {
-            if (!(obj instanceof f) || !Intrinsics.areEqual(this.f47639d, ((f) obj).f47639d)) {
+            if (!(obj instanceof f) || !Intrinsics.areEqual(this.f47655d, ((f) obj).f47655d)) {
                 return false;
             }
             return true;
@@ -121,33 +121,33 @@ public final class f implements Comparable<f> {
     }
 
     public final Month f() {
-        Month month = this.f47639d.getMonth();
+        Month month = this.f47655d.getMonth();
         Intrinsics.checkNotNullExpressionValue(month, "getMonth(...)");
         return month;
     }
 
     public final int g() {
-        return this.f47639d.getMonthValue();
+        return this.f47655d.getMonthValue();
     }
 
     public final LocalDate h() {
-        return this.f47639d;
+        return this.f47655d;
     }
 
     public int hashCode() {
-        return this.f47639d.hashCode();
+        return this.f47655d.hashCode();
     }
 
     public final int i() {
-        return this.f47639d.getYear();
+        return this.f47655d.getYear();
     }
 
     public final int j() {
-        return ss.c.a(this.f47639d.toEpochDay());
+        return ss.c.a(this.f47655d.toEpochDay());
     }
 
     public String toString() {
-        String localDate = this.f47639d.toString();
+        String localDate = this.f47655d.toString();
         Intrinsics.checkNotNullExpressionValue(localDate, "toString(...)");
         return localDate;
     }

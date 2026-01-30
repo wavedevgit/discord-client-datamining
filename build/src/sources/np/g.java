@@ -3,10 +3,10 @@ package np;
 public final class g implements tq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final f f42036a;
+    private final f f42052a;
 
     public g(f fVar) {
-        this.f42036a = fVar;
+        this.f42052a = fVar;
     }
 
     public static g a(f fVar) {
@@ -20,6 +20,6 @@ public final class g implements tq.d {
     @Override // javax.inject.Provider
     /* renamed from: c */
     public e get() {
-        return b(this.f42036a);
+        return b(this.f42052a);
     }
 }

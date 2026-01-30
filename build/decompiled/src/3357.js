@@ -5,26 +5,26 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function(arg0) { // Original name: truncate, environment: var0
-        _fun28943: for (var _fun28943_ip = 0;;) switch (_fun28943_ip) {
+        _fun28944: for (var _fun28944_ip = 0;;) switch (_fun28944_ip) {
             case 0:
                 var2 = arg0;
                 var1 = typeof var2;
                 var0 = 'number';
                 if (!(var0 !== var1)) {
-                    _fun28943_ip = 22;
-                    continue _fun28943
+                    _fun28944_ip = 22;
+                    continue _fun28944
                 }
             case 14:
                 var0 = 'bigint';
                 if (!(var0 === var1)) {
-                    _fun28943_ip = 107;
-                    continue _fun28943
+                    _fun28944_ip = 107;
+                    continue _fun28944
                 }
             case 22:
                 var0 = 0;
                 if (!(!(var2 < var0))) {
-                    _fun28943_ip = 60;
-                    continue _fun28943
+                    _fun28944_ip = 60;
+                    continue _fun28944
                 }
             case 28:
                 var4 = _closure1_slot0;
@@ -34,8 +34,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = undefined;
                 var1 = var4.bind(var3)(var1);
                 var1 = var1.bind(var3)(var2);
-                _fun28943_ip = 96;
-                continue _fun28943;
+                _fun28944_ip = 96;
+                continue _fun28944;
             case 60:
                 var5 = _closure1_slot0;
                 var4 = _closure1_slot1;
@@ -49,8 +49,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
             case 96:
                 var0 = 0;
                 if (!(var0 !== var1)) {
-                    _fun28943_ip = 105;
-                    continue _fun28943
+                    _fun28944_ip = 105;
+                    continue _fun28944
                 }
             case 102:
                 var0 = var1;

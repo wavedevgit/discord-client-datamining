@@ -42,7 +42,7 @@ public final class c implements n {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((Throwable) obj);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         public final void invoke(Throwable th2) {
@@ -65,7 +65,7 @@ public final class c implements n {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((Throwable) obj);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         public final void invoke(Throwable th2) {
@@ -98,10 +98,10 @@ public final class c implements n {
             CancellableContinuation cancellableContinuation = this.f25560d;
             Function1 function1 = this.f25562i;
             try {
-                Result.a aVar = Result.f33279e;
+                Result.a aVar = Result.f33295e;
                 b10 = Result.b(function1.invoke(Long.valueOf(j10)));
             } catch (Throwable th2) {
-                Result.a aVar2 = Result.f33279e;
+                Result.a aVar2 = Result.f33295e;
                 b10 = Result.b(kotlin.c.a(th2));
             }
             cancellableContinuation.resumeWith(b10);
@@ -118,7 +118,7 @@ public final class c implements n {
     public Object A0(Function1 function1, Continuation continuation) {
         g1.a aVar = this.f25555e;
         if (aVar == null) {
-            CoroutineContext.Element l10 = continuation.getContext().l(d.f33354h);
+            CoroutineContext.Element l10 = continuation.getContext().l(d.f33370h);
             if (l10 instanceof g1.a) {
                 aVar = (g1.a) l10;
             } else {

@@ -6,7 +6,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var _closure1_slot0 = var4;
     var _closure1_slot1 = var5;
     var0 = function() { // Original name: getAsyncContextStack, environment: var1
-        _fun8880: for (var _fun8880_ip = 0;;) switch (_fun8880_ip) {
+        _fun8881: for (var _fun8881_ip = 0;;) switch (_fun8881_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var4 = _closure1_slot1;
@@ -22,8 +22,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = var0.bind(var1)(var3);
                 var0 = var1.stack;
                 if (var0) {
-                    _fun8880_ip = 140;
-                    continue _fun8880
+                    _fun8881_ip = 140;
+                    continue _fun8881
                 }
             case 64:
                 var5 = _closure1_slot4;
@@ -131,7 +131,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = function() { // Environment: var1
         var3 = _closure1_slot3;
         var2 = function(arg0, arg1) { // Original name: AsyncContextStack, environment: var4
-            _fun8887: for (var _fun8887_ip = 0;;) switch (_fun8887_ip) {
+            _fun8888: for (var _fun8888_ip = 0;;) switch (_fun8888_ip) {
                 case 0:
                     var3 = arg0;
                     var2 = arg1;
@@ -141,8 +141,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = undefined;
                     var5 = var6.bind(var0)(var1, var5);
                     if (var3) {
-                        _fun8887_ip = 80;
-                        continue _fun8887
+                        _fun8888_ip = 80;
+                        continue _fun8888
                     }
                 case 34:
                     var6 = _closure1_slot0;
@@ -162,8 +162,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = var5 instanceof Object ? var5 : var6;
                 case 80:
                     if (var2) {
-                        _fun8887_ip = 129;
-                        continue _fun8887
+                        _fun8888_ip = 129;
+                        continue _fun8888
                     }
                 case 83:
                     var5 = _closure1_slot0;
@@ -196,7 +196,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1 = 'withScope';
         var0.key = var1;
         var1 = function(arg0) { // Original name: withScope, environment: var4
-            _fun8888: for (var _fun8888_ip = 0;;) switch (_fun8888_ip) {
+            _fun8889: for (var _fun8889_ip = 0;;) switch (_fun8889_ip) {
                 case 0:
                     var2 = this;
                     var4 = arg0;
@@ -218,15 +218,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = var3;
                     var0 = var4.bind(var5)(var0);
                     if (var0) {
-                        _fun8888_ip = 88;
-                        continue _fun8888
+                        _fun8889_ip = 88;
+                        continue _fun8889
                     }
                 case 73:
                     var0 = var2._popScope;
                     var0 = var0.bind(var2)();
                     var0 = var3;
-                    _fun8888_ip = 112;
-                    continue _fun8888;
+                    _fun8889_ip = 112;
+                    continue _fun8889;
                 case 88:
                     var5 = var3;
                     var4 = var5.then;
@@ -331,7 +331,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var5 = '_popScope';
         var0.key = var5;
         var4 = function() { // Original name: _popScope, environment: var4
-            _fun8896: for (var _fun8896_ip = 0;;) switch (_fun8896_ip) {
+            _fun8897: for (var _fun8897_ip = 0;;) switch (_fun8897_ip) {
                 case 0:
                     var1 = this;
                     var0 = var1._stack;
@@ -340,8 +340,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2 = var2 <= var0;
                     var0 = !var2;
                     if (var2) {
-                        _fun8896_ip = 49;
-                        continue _fun8896
+                        _fun8897_ip = 49;
+                        continue _fun8897
                     }
                 case 27:
                     var2 = var1._stack;

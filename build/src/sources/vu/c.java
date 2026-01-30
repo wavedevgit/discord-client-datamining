@@ -8,13 +8,13 @@ import vu.e;
 public final class c implements ku.b, e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final c f51961a = new c();
+    public static final c f51977a = new c();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static final class a extends Lambda implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f51962d = new a();
+        public static final a f51978d = new a();
 
         a() {
             super(2);
@@ -60,7 +60,7 @@ public final class c implements ku.b, e {
 
     @Override // ku.b
     public Object f(Object obj, Object obj2) {
-        return Boolean.valueOf(e(pv.a.c(obj), a.f51962d));
+        return Boolean.valueOf(e(pv.a.c(obj), a.f51978d));
     }
 
     @Override // lu.b

@@ -9,22 +9,22 @@ public class j extends hf.a {
     public static final Parcelable.Creator<j> CREATOR = new w();
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f51120d;
+    private final String f51136d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final String f51121e;
+    private final String f51137e;
 
     public j(String str, String str2) {
-        this.f51120d = gf.q.g(((String) gf.q.m(str, "Account identifier cannot be null")).trim(), "Account identifier cannot be empty");
-        this.f51121e = gf.q.f(str2);
+        this.f51136d = gf.q.g(((String) gf.q.m(str, "Account identifier cannot be null")).trim(), "Account identifier cannot be empty");
+        this.f51137e = gf.q.f(str2);
     }
 
     public String b() {
-        return this.f51120d;
+        return this.f51136d;
     }
 
     public String c() {
-        return this.f51121e;
+        return this.f51137e;
     }
 
     public boolean equals(Object obj) {
@@ -32,14 +32,14 @@ public class j extends hf.a {
             return false;
         }
         j jVar = (j) obj;
-        if (!gf.o.a(this.f51120d, jVar.f51120d) || !gf.o.a(this.f51121e, jVar.f51121e)) {
+        if (!gf.o.a(this.f51136d, jVar.f51136d) || !gf.o.a(this.f51137e, jVar.f51137e)) {
             return false;
         }
         return true;
     }
 
     public int hashCode() {
-        return gf.o.b(this.f51120d, this.f51121e);
+        return gf.o.b(this.f51136d, this.f51137e);
     }
 
     @Override // android.os.Parcelable

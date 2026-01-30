@@ -28,7 +28,7 @@ public abstract class g3 implements Parcelable {
             public static final Parcelable.Creator<a> CREATOR = new C0361a();
 
             /* renamed from: d  reason: collision with root package name */
-            private final com.withpersona.sdk2.inquiry.steps.ui.components.a f27788d;
+            private final com.withpersona.sdk2.inquiry.steps.ui.components.a f27804d;
 
             /* renamed from: hq.g3$b$a$a  reason: collision with other inner class name */
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -49,11 +49,11 @@ public abstract class g3 implements Parcelable {
 
             public a(com.withpersona.sdk2.inquiry.steps.ui.components.a createPersonaSheetComponent) {
                 Intrinsics.checkNotNullParameter(createPersonaSheetComponent, "createPersonaSheetComponent");
-                this.f27788d = createPersonaSheetComponent;
+                this.f27804d = createPersonaSheetComponent;
             }
 
             public final com.withpersona.sdk2.inquiry.steps.ui.components.a a() {
-                return this.f27788d;
+                return this.f27804d;
             }
 
             @Override // android.os.Parcelable
@@ -65,25 +65,25 @@ public abstract class g3 implements Parcelable {
                 if (this == obj) {
                     return true;
                 }
-                if ((obj instanceof a) && Intrinsics.areEqual(this.f27788d, ((a) obj).f27788d)) {
+                if ((obj instanceof a) && Intrinsics.areEqual(this.f27804d, ((a) obj).f27804d)) {
                     return true;
                 }
                 return false;
             }
 
             public int hashCode() {
-                return this.f27788d.hashCode();
+                return this.f27804d.hashCode();
             }
 
             public String toString() {
-                com.withpersona.sdk2.inquiry.steps.ui.components.a aVar = this.f27788d;
+                com.withpersona.sdk2.inquiry.steps.ui.components.a aVar = this.f27804d;
                 return "CreateReusablePersona(createPersonaSheetComponent=" + aVar + ")";
             }
 
             @Override // android.os.Parcelable
             public final void writeToParcel(Parcel dest, int i10) {
                 Intrinsics.checkNotNullParameter(dest, "dest");
-                dest.writeParcelable(this.f27788d, i10);
+                dest.writeParcelable(this.f27804d, i10);
             }
         }
 
@@ -94,10 +94,10 @@ public abstract class g3 implements Parcelable {
             public static final Parcelable.Creator<C0362b> CREATOR = new a();
 
             /* renamed from: d  reason: collision with root package name */
-            private final q5 f27789d;
+            private final q5 f27805d;
 
             /* renamed from: e  reason: collision with root package name */
-            private final Map f27790e;
+            private final Map f27806e;
 
             /* renamed from: hq.g3$b$b$a */
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -125,16 +125,16 @@ public abstract class g3 implements Parcelable {
             public C0362b(q5 verifyPersonaButtonComponent, Map componentParams) {
                 Intrinsics.checkNotNullParameter(verifyPersonaButtonComponent, "verifyPersonaButtonComponent");
                 Intrinsics.checkNotNullParameter(componentParams, "componentParams");
-                this.f27789d = verifyPersonaButtonComponent;
-                this.f27790e = componentParams;
+                this.f27805d = verifyPersonaButtonComponent;
+                this.f27806e = componentParams;
             }
 
             public final Map a() {
-                return this.f27790e;
+                return this.f27806e;
             }
 
             public final q5 b() {
-                return this.f27789d;
+                return this.f27805d;
             }
 
             @Override // android.os.Parcelable
@@ -150,27 +150,27 @@ public abstract class g3 implements Parcelable {
                     return false;
                 }
                 C0362b c0362b = (C0362b) obj;
-                if (Intrinsics.areEqual(this.f27789d, c0362b.f27789d) && Intrinsics.areEqual(this.f27790e, c0362b.f27790e)) {
+                if (Intrinsics.areEqual(this.f27805d, c0362b.f27805d) && Intrinsics.areEqual(this.f27806e, c0362b.f27806e)) {
                     return true;
                 }
                 return false;
             }
 
             public int hashCode() {
-                return (this.f27789d.hashCode() * 31) + this.f27790e.hashCode();
+                return (this.f27805d.hashCode() * 31) + this.f27806e.hashCode();
             }
 
             public String toString() {
-                q5 q5Var = this.f27789d;
-                Map map = this.f27790e;
+                q5 q5Var = this.f27805d;
+                Map map = this.f27806e;
                 return "VerifyReusablePersona(verifyPersonaButtonComponent=" + q5Var + ", componentParams=" + map + ")";
             }
 
             @Override // android.os.Parcelable
             public final void writeToParcel(Parcel dest, int i10) {
                 Intrinsics.checkNotNullParameter(dest, "dest");
-                dest.writeParcelable(this.f27789d, i10);
-                Map map = this.f27790e;
+                dest.writeParcelable(this.f27805d, i10);
+                Map map = this.f27806e;
                 dest.writeInt(map.size());
                 for (Map.Entry entry : map.entrySet()) {
                     dest.writeString((String) entry.getKey());
@@ -193,43 +193,43 @@ public abstract class g3 implements Parcelable {
         public static final Parcelable.Creator<a> CREATOR = new b();
 
         /* renamed from: d  reason: collision with root package name */
-        private final List f27771d;
+        private final List f27787d;
 
         /* renamed from: e  reason: collision with root package name */
-        private final String f27772e;
+        private final String f27788e;
 
         /* renamed from: i  reason: collision with root package name */
-        private final List f27773i;
+        private final List f27789i;
 
         /* renamed from: o  reason: collision with root package name */
-        private final StepStyles.UiStepStyle f27774o;
+        private final StepStyles.UiStepStyle f27790o;
 
         /* renamed from: p  reason: collision with root package name */
-        private final String f27775p;
+        private final String f27791p;
 
         /* renamed from: q  reason: collision with root package name */
-        private final c f27776q;
+        private final c f27792q;
 
         /* renamed from: r  reason: collision with root package name */
-        private final C0358a f27777r;
+        private final C0358a f27793r;
 
         /* renamed from: s  reason: collision with root package name */
-        private final b f27778s;
+        private final b f27794s;
 
         /* renamed from: t  reason: collision with root package name */
-        private final boolean f27779t;
+        private final boolean f27795t;
 
         /* renamed from: u  reason: collision with root package name */
-        private final boolean f27780u;
+        private final boolean f27796u;
 
         /* renamed from: v  reason: collision with root package name */
-        private final Map f27781v;
+        private final Map f27797v;
 
         /* renamed from: w  reason: collision with root package name */
-        private final k5 f27782w;
+        private final k5 f27798w;
 
         /* renamed from: x  reason: collision with root package name */
-        private final String f27783x;
+        private final String f27799x;
 
         /* renamed from: hq.g3$a$a  reason: collision with other inner class name */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -238,13 +238,13 @@ public abstract class g3 implements Parcelable {
             public static final Parcelable.Creator<C0358a> CREATOR = new C0359a();
 
             /* renamed from: d  reason: collision with root package name */
-            private final xp.h f27784d;
+            private final xp.h f27800d;
 
             /* renamed from: e  reason: collision with root package name */
-            private final int f27785e;
+            private final int f27801e;
 
             /* renamed from: i  reason: collision with root package name */
-            private final String f27786i;
+            private final String f27802i;
 
             /* renamed from: hq.g3$a$a$a  reason: collision with other inner class name */
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -265,21 +265,21 @@ public abstract class g3 implements Parcelable {
 
             public C0358a(xp.h component, int i10, String str) {
                 Intrinsics.checkNotNullParameter(component, "component");
-                this.f27784d = component;
-                this.f27785e = i10;
-                this.f27786i = str;
+                this.f27800d = component;
+                this.f27801e = i10;
+                this.f27802i = str;
             }
 
             public final xp.h a() {
-                return this.f27784d;
+                return this.f27800d;
             }
 
             public final int b() {
-                return this.f27785e;
+                return this.f27801e;
             }
 
             public final String c() {
-                return this.f27786i;
+                return this.f27802i;
             }
 
             @Override // android.os.Parcelable
@@ -295,7 +295,7 @@ public abstract class g3 implements Parcelable {
                     return false;
                 }
                 C0358a c0358a = (C0358a) obj;
-                if (Intrinsics.areEqual(this.f27784d, c0358a.f27784d) && this.f27785e == c0358a.f27785e && Intrinsics.areEqual(this.f27786i, c0358a.f27786i)) {
+                if (Intrinsics.areEqual(this.f27800d, c0358a.f27800d) && this.f27801e == c0358a.f27801e && Intrinsics.areEqual(this.f27802i, c0358a.f27802i)) {
                     return true;
                 }
                 return false;
@@ -303,8 +303,8 @@ public abstract class g3 implements Parcelable {
 
             public int hashCode() {
                 int hashCode;
-                int hashCode2 = ((this.f27784d.hashCode() * 31) + Integer.hashCode(this.f27785e)) * 31;
-                String str = this.f27786i;
+                int hashCode2 = ((this.f27800d.hashCode() * 31) + Integer.hashCode(this.f27801e)) * 31;
+                String str = this.f27802i;
                 if (str == null) {
                     hashCode = 0;
                 } else {
@@ -314,18 +314,18 @@ public abstract class g3 implements Parcelable {
             }
 
             public String toString() {
-                xp.h hVar = this.f27784d;
-                int i10 = this.f27785e;
-                String str = this.f27786i;
+                xp.h hVar = this.f27800d;
+                int i10 = this.f27801e;
+                String str = this.f27802i;
                 return "AutoSubmit(component=" + hVar + ", countdown=" + i10 + ", countdownText=" + str + ")";
             }
 
             @Override // android.os.Parcelable
             public final void writeToParcel(Parcel dest, int i10) {
                 Intrinsics.checkNotNullParameter(dest, "dest");
-                dest.writeParcelable(this.f27784d, i10);
-                dest.writeInt(this.f27785e);
-                dest.writeString(this.f27786i);
+                dest.writeParcelable(this.f27800d, i10);
+                dest.writeInt(this.f27801e);
+                dest.writeString(this.f27802i);
             }
         }
 
@@ -411,7 +411,7 @@ public abstract class g3 implements Parcelable {
             public static final Parcelable.Creator<c> CREATOR = new C0360a();
 
             /* renamed from: d  reason: collision with root package name */
-            private final GovernmentIdNfcScanComponent f27787d;
+            private final GovernmentIdNfcScanComponent f27803d;
 
             /* renamed from: hq.g3$a$c$a  reason: collision with other inner class name */
             /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
@@ -432,11 +432,11 @@ public abstract class g3 implements Parcelable {
 
             public c(GovernmentIdNfcScanComponent component) {
                 Intrinsics.checkNotNullParameter(component, "component");
-                this.f27787d = component;
+                this.f27803d = component;
             }
 
             public final GovernmentIdNfcScanComponent a() {
-                return this.f27787d;
+                return this.f27803d;
             }
 
             @Override // android.os.Parcelable
@@ -448,25 +448,25 @@ public abstract class g3 implements Parcelable {
                 if (this == obj) {
                     return true;
                 }
-                if ((obj instanceof c) && Intrinsics.areEqual(this.f27787d, ((c) obj).f27787d)) {
+                if ((obj instanceof c) && Intrinsics.areEqual(this.f27803d, ((c) obj).f27803d)) {
                     return true;
                 }
                 return false;
             }
 
             public int hashCode() {
-                return this.f27787d.hashCode();
+                return this.f27803d.hashCode();
             }
 
             public String toString() {
-                GovernmentIdNfcScanComponent governmentIdNfcScanComponent = this.f27787d;
+                GovernmentIdNfcScanComponent governmentIdNfcScanComponent = this.f27803d;
                 return "NfcScan(component=" + governmentIdNfcScanComponent + ")";
             }
 
             @Override // android.os.Parcelable
             public final void writeToParcel(Parcel dest, int i10) {
                 Intrinsics.checkNotNullParameter(dest, "dest");
-                dest.writeParcelable(this.f27787d, i10);
+                dest.writeParcelable(this.f27803d, i10);
             }
         }
 
@@ -488,65 +488,65 @@ public abstract class g3 implements Parcelable {
             k5 k5Var2;
             String str6;
             if ((i10 & 1) != 0) {
-                list = aVar.f27771d;
+                list = aVar.f27787d;
             }
             if ((i10 & 2) != 0) {
-                str4 = aVar.f27772e;
+                str4 = aVar.f27788e;
             } else {
                 str4 = str;
             }
             if ((i10 & 4) != 0) {
-                list3 = aVar.f27773i;
+                list3 = aVar.f27789i;
             } else {
                 list3 = list2;
             }
             if ((i10 & 8) != 0) {
-                uiStepStyle2 = aVar.f27774o;
+                uiStepStyle2 = aVar.f27790o;
             } else {
                 uiStepStyle2 = uiStepStyle;
             }
             if ((i10 & 16) != 0) {
-                str5 = aVar.f27775p;
+                str5 = aVar.f27791p;
             } else {
                 str5 = str2;
             }
             if ((i10 & 32) != 0) {
-                cVar2 = aVar.f27776q;
+                cVar2 = aVar.f27792q;
             } else {
                 cVar2 = cVar;
             }
             if ((i10 & 64) != 0) {
-                c0358a2 = aVar.f27777r;
+                c0358a2 = aVar.f27793r;
             } else {
                 c0358a2 = c0358a;
             }
             if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT) != 0) {
-                bVar2 = aVar.f27778s;
+                bVar2 = aVar.f27794s;
             } else {
                 bVar2 = bVar;
             }
             if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER) != 0) {
-                z12 = aVar.f27779t;
+                z12 = aVar.f27795t;
             } else {
                 z12 = z10;
             }
             if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING) != 0) {
-                z13 = aVar.f27780u;
+                z13 = aVar.f27796u;
             } else {
                 z13 = z11;
             }
             if ((i10 & IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET) != 0) {
-                map2 = aVar.f27781v;
+                map2 = aVar.f27797v;
             } else {
                 map2 = map;
             }
             if ((i10 & RecyclerView.ItemAnimator.FLAG_MOVED) != 0) {
-                k5Var2 = aVar.f27782w;
+                k5Var2 = aVar.f27798w;
             } else {
                 k5Var2 = k5Var;
             }
             if ((i10 & RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT) != 0) {
-                str6 = aVar.f27783x;
+                str6 = aVar.f27799x;
             } else {
                 str6 = str3;
             }
@@ -562,11 +562,11 @@ public abstract class g3 implements Parcelable {
         }
 
         public final C0358a c() {
-            return this.f27777r;
+            return this.f27793r;
         }
 
         public final List d() {
-            return this.f27773i;
+            return this.f27789i;
         }
 
         @Override // android.os.Parcelable
@@ -575,7 +575,7 @@ public abstract class g3 implements Parcelable {
         }
 
         public final Map e() {
-            return this.f27781v;
+            return this.f27797v;
         }
 
         public boolean equals(Object obj) {
@@ -586,26 +586,26 @@ public abstract class g3 implements Parcelable {
                 return false;
             }
             a aVar = (a) obj;
-            if (Intrinsics.areEqual(this.f27771d, aVar.f27771d) && Intrinsics.areEqual(this.f27772e, aVar.f27772e) && Intrinsics.areEqual(this.f27773i, aVar.f27773i) && Intrinsics.areEqual(this.f27774o, aVar.f27774o) && Intrinsics.areEqual(this.f27775p, aVar.f27775p) && Intrinsics.areEqual(this.f27776q, aVar.f27776q) && Intrinsics.areEqual(this.f27777r, aVar.f27777r) && Intrinsics.areEqual(this.f27778s, aVar.f27778s) && this.f27779t == aVar.f27779t && this.f27780u == aVar.f27780u && Intrinsics.areEqual(this.f27781v, aVar.f27781v) && Intrinsics.areEqual(this.f27782w, aVar.f27782w) && Intrinsics.areEqual(this.f27783x, aVar.f27783x)) {
+            if (Intrinsics.areEqual(this.f27787d, aVar.f27787d) && Intrinsics.areEqual(this.f27788e, aVar.f27788e) && Intrinsics.areEqual(this.f27789i, aVar.f27789i) && Intrinsics.areEqual(this.f27790o, aVar.f27790o) && Intrinsics.areEqual(this.f27791p, aVar.f27791p) && Intrinsics.areEqual(this.f27792q, aVar.f27792q) && Intrinsics.areEqual(this.f27793r, aVar.f27793r) && Intrinsics.areEqual(this.f27794s, aVar.f27794s) && this.f27795t == aVar.f27795t && this.f27796u == aVar.f27796u && Intrinsics.areEqual(this.f27797v, aVar.f27797v) && Intrinsics.areEqual(this.f27798w, aVar.f27798w) && Intrinsics.areEqual(this.f27799x, aVar.f27799x)) {
                 return true;
             }
             return false;
         }
 
         public final String f() {
-            return this.f27775p;
+            return this.f27791p;
         }
 
         public final boolean g() {
-            return this.f27779t;
+            return this.f27795t;
         }
 
         public final List getComponents() {
-            return this.f27771d;
+            return this.f27787d;
         }
 
         public final StepStyles.UiStepStyle getStyles() {
-            return this.f27774o;
+            return this.f27790o;
         }
 
         public int hashCode() {
@@ -615,8 +615,8 @@ public abstract class g3 implements Parcelable {
             int hashCode4;
             int hashCode5;
             int hashCode6;
-            int hashCode7 = ((((this.f27771d.hashCode() * 31) + this.f27772e.hashCode()) * 31) + this.f27773i.hashCode()) * 31;
-            StepStyles.UiStepStyle uiStepStyle = this.f27774o;
+            int hashCode7 = ((((this.f27787d.hashCode() * 31) + this.f27788e.hashCode()) * 31) + this.f27789i.hashCode()) * 31;
+            StepStyles.UiStepStyle uiStepStyle = this.f27790o;
             int i10 = 0;
             if (uiStepStyle == null) {
                 hashCode = 0;
@@ -624,123 +624,123 @@ public abstract class g3 implements Parcelable {
                 hashCode = uiStepStyle.hashCode();
             }
             int i11 = (hashCode7 + hashCode) * 31;
-            String str = this.f27775p;
+            String str = this.f27791p;
             if (str == null) {
                 hashCode2 = 0;
             } else {
                 hashCode2 = str.hashCode();
             }
             int i12 = (i11 + hashCode2) * 31;
-            c cVar = this.f27776q;
+            c cVar = this.f27792q;
             if (cVar == null) {
                 hashCode3 = 0;
             } else {
                 hashCode3 = cVar.hashCode();
             }
             int i13 = (i12 + hashCode3) * 31;
-            C0358a c0358a = this.f27777r;
+            C0358a c0358a = this.f27793r;
             if (c0358a == null) {
                 hashCode4 = 0;
             } else {
                 hashCode4 = c0358a.hashCode();
             }
             int i14 = (i13 + hashCode4) * 31;
-            b bVar = this.f27778s;
+            b bVar = this.f27794s;
             if (bVar == null) {
                 hashCode5 = 0;
             } else {
                 hashCode5 = bVar.hashCode();
             }
-            int hashCode8 = (((((i14 + hashCode5) * 31) + Boolean.hashCode(this.f27779t)) * 31) + Boolean.hashCode(this.f27780u)) * 31;
-            Map map = this.f27781v;
+            int hashCode8 = (((((i14 + hashCode5) * 31) + Boolean.hashCode(this.f27795t)) * 31) + Boolean.hashCode(this.f27796u)) * 31;
+            Map map = this.f27797v;
             if (map == null) {
                 hashCode6 = 0;
             } else {
                 hashCode6 = map.hashCode();
             }
             int i15 = (hashCode8 + hashCode6) * 31;
-            k5 k5Var = this.f27782w;
+            k5 k5Var = this.f27798w;
             if (k5Var != null) {
                 i10 = k5Var.hashCode();
             }
-            return ((i15 + i10) * 31) + this.f27783x.hashCode();
+            return ((i15 + i10) * 31) + this.f27799x.hashCode();
         }
 
         public final c i() {
-            return this.f27776q;
+            return this.f27792q;
         }
 
         public final b j() {
-            return this.f27778s;
+            return this.f27794s;
         }
 
         public final String k() {
-            return this.f27783x;
+            return this.f27799x;
         }
 
         public final String m() {
-            return this.f27772e;
+            return this.f27788e;
         }
 
         public final k5 n() {
-            return this.f27782w;
+            return this.f27798w;
         }
 
         public final boolean o() {
-            return this.f27780u;
+            return this.f27796u;
         }
 
         public String toString() {
-            List list = this.f27771d;
-            String str = this.f27772e;
-            List list2 = this.f27773i;
-            StepStyles.UiStepStyle uiStepStyle = this.f27774o;
-            String str2 = this.f27775p;
-            c cVar = this.f27776q;
-            C0358a c0358a = this.f27777r;
-            b bVar = this.f27778s;
-            boolean z10 = this.f27779t;
-            boolean z11 = this.f27780u;
-            Map map = this.f27781v;
-            k5 k5Var = this.f27782w;
-            String str3 = this.f27783x;
+            List list = this.f27787d;
+            String str = this.f27788e;
+            List list2 = this.f27789i;
+            StepStyles.UiStepStyle uiStepStyle = this.f27790o;
+            String str2 = this.f27791p;
+            c cVar = this.f27792q;
+            C0358a c0358a = this.f27793r;
+            b bVar = this.f27794s;
+            boolean z10 = this.f27795t;
+            boolean z11 = this.f27796u;
+            Map map = this.f27797v;
+            k5 k5Var = this.f27798w;
+            String str3 = this.f27799x;
             return "Displaying(components=" + list + ", stepName=" + str + ", componentErrors=" + list2 + ", styles=" + uiStepStyle + ", error=" + str2 + ", nfcScan=" + cVar + ", autoSubmit=" + c0358a + ", pendingAction=" + bVar + ", hasRequestedGpsPermissions=" + z10 + ", isRequestingGpsPermissions=" + z11 + ", componentParams=" + map + ", triggeringComponent=" + k5Var + ", requestPermissionKey=" + str3 + ")";
         }
 
         @Override // android.os.Parcelable
         public final void writeToParcel(Parcel dest, int i10) {
             Intrinsics.checkNotNullParameter(dest, "dest");
-            List<Parcelable> list = this.f27771d;
+            List<Parcelable> list = this.f27787d;
             dest.writeInt(list.size());
             for (Parcelable parcelable : list) {
                 dest.writeParcelable(parcelable, i10);
             }
-            dest.writeString(this.f27772e);
-            List<Parcelable> list2 = this.f27773i;
+            dest.writeString(this.f27788e);
+            List<Parcelable> list2 = this.f27789i;
             dest.writeInt(list2.size());
             for (Parcelable parcelable2 : list2) {
                 dest.writeParcelable(parcelable2, i10);
             }
-            dest.writeParcelable(this.f27774o, i10);
-            dest.writeString(this.f27775p);
-            c cVar = this.f27776q;
+            dest.writeParcelable(this.f27790o, i10);
+            dest.writeString(this.f27791p);
+            c cVar = this.f27792q;
             if (cVar == null) {
                 dest.writeInt(0);
             } else {
                 dest.writeInt(1);
                 cVar.writeToParcel(dest, i10);
             }
-            C0358a c0358a = this.f27777r;
+            C0358a c0358a = this.f27793r;
             if (c0358a == null) {
                 dest.writeInt(0);
             } else {
                 dest.writeInt(1);
                 c0358a.writeToParcel(dest, i10);
             }
-            dest.writeParcelable(this.f27778s, i10);
-            dest.writeInt(this.f27779t ? 1 : 0);
-            dest.writeInt(this.f27780u ? 1 : 0);
-            Map map = this.f27781v;
+            dest.writeParcelable(this.f27794s, i10);
+            dest.writeInt(this.f27795t ? 1 : 0);
+            dest.writeInt(this.f27796u ? 1 : 0);
+            Map map = this.f27797v;
             if (map == null) {
                 dest.writeInt(0);
             } else {
@@ -751,8 +751,8 @@ public abstract class g3 implements Parcelable {
                     dest.writeParcelable((Parcelable) entry.getValue(), i10);
                 }
             }
-            dest.writeParcelable(this.f27782w, i10);
-            dest.writeString(this.f27783x);
+            dest.writeParcelable(this.f27798w, i10);
+            dest.writeString(this.f27799x);
         }
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
@@ -762,19 +762,19 @@ public abstract class g3 implements Parcelable {
             Intrinsics.checkNotNullParameter(stepName, "stepName");
             Intrinsics.checkNotNullParameter(componentErrors, "componentErrors");
             Intrinsics.checkNotNullParameter(requestPermissionKey, "requestPermissionKey");
-            this.f27771d = components;
-            this.f27772e = stepName;
-            this.f27773i = componentErrors;
-            this.f27774o = uiStepStyle;
-            this.f27775p = str;
-            this.f27776q = cVar;
-            this.f27777r = c0358a;
-            this.f27778s = bVar;
-            this.f27779t = z10;
-            this.f27780u = z11;
-            this.f27781v = map;
-            this.f27782w = k5Var;
-            this.f27783x = requestPermissionKey;
+            this.f27787d = components;
+            this.f27788e = stepName;
+            this.f27789i = componentErrors;
+            this.f27790o = uiStepStyle;
+            this.f27791p = str;
+            this.f27792q = cVar;
+            this.f27793r = c0358a;
+            this.f27794s = bVar;
+            this.f27795t = z10;
+            this.f27796u = z11;
+            this.f27797v = map;
+            this.f27798w = k5Var;
+            this.f27799x = requestPermissionKey;
         }
     }
 }

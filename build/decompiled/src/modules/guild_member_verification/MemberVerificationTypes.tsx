@@ -3,14 +3,14 @@
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var2 = exports;
     var4 = function(arg0) { // Original name: isTermsFormField, environment: var3
-        _fun27709: for (var _fun27709_ip = 0;;) switch (_fun27709_ip) {
+        _fun27710: for (var _fun27710_ip = 0;;) switch (_fun27710_ip) {
             case 0:
                 var1 = arg0;
                 var0 = null;
                 var0 = var0 != var1;
                 if (!var0) {
-                    _fun27709_ip = 35;
-                    continue _fun27709
+                    _fun27710_ip = 35;
+                    continue _fun27710
                 }
             case 12:
                 var2 = var1.field_type;
@@ -85,14 +85,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.GuildJoinRequestApplicationStatuses = var5;
     var2.isTermsFormField = var4;
     var3 = function(arg0) { // Original name: hasNonTermsFormField, environment: var3
-        _fun27710: for (var _fun27710_ip = 0;;) switch (_fun27710_ip) {
+        _fun27711: for (var _fun27711_ip = 0;;) switch (_fun27711_ip) {
             case 0:
                 var3 = arg0;
                 var0 = null;
                 var0 = var0 != var3;
                 if (!var0) {
-                    _fun27710_ip = 30;
-                    continue _fun27710
+                    _fun27711_ip = 30;
+                    continue _fun27711
                 }
             case 12:
                 var2 = var3.some;

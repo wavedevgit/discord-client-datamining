@@ -8,22 +8,22 @@ public final class j implements Comparable {
     @NotNull
 
     /* renamed from: p  reason: collision with root package name */
-    public static final a f31094p = new a(null);
+    public static final a f31110p = new a(null);
 
     /* renamed from: q  reason: collision with root package name */
-    public static final j f31095q = k.a();
+    public static final j f31111q = k.a();
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f31096d;
+    private final int f31112d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final int f31097e;
+    private final int f31113e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final int f31098i;
+    private final int f31114i;
 
     /* renamed from: o  reason: collision with root package name */
-    private final int f31099o;
+    private final int f31115o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -36,10 +36,10 @@ public final class j implements Comparable {
     }
 
     public j(int i10, int i11, int i12) {
-        this.f31096d = i10;
-        this.f31097e = i11;
-        this.f31098i = i12;
-        this.f31099o = d(i10, i11, i12);
+        this.f31112d = i10;
+        this.f31113e = i11;
+        this.f31114i = i12;
+        this.f31115o = d(i10, i11, i12);
     }
 
     private final int d(int i10, int i11, int i12) {
@@ -53,7 +53,7 @@ public final class j implements Comparable {
     /* renamed from: a */
     public int compareTo(j other) {
         Intrinsics.checkNotNullParameter(other, "other");
-        return this.f31099o - other.f31099o;
+        return this.f31115o - other.f31115o;
     }
 
     public boolean equals(Object obj) {
@@ -66,23 +66,23 @@ public final class j implements Comparable {
         } else {
             jVar = null;
         }
-        if (jVar != null && this.f31099o == jVar.f31099o) {
+        if (jVar != null && this.f31115o == jVar.f31115o) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f31099o;
+        return this.f31115o;
     }
 
     public String toString() {
         StringBuilder sb2 = new StringBuilder();
-        sb2.append(this.f31096d);
+        sb2.append(this.f31112d);
         sb2.append('.');
-        sb2.append(this.f31097e);
+        sb2.append(this.f31113e);
         sb2.append('.');
-        sb2.append(this.f31098i);
+        sb2.append(this.f31114i);
         return sb2.toString();
     }
 

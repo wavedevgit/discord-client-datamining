@@ -45,14 +45,14 @@ public final class EmojiPickerRowViewManager extends SimpleViewManager<EmojiPick
     public static final Unit createViewInstance$lambda$2$lambda$0(EmojiPickerRowViewManager emojiPickerRowViewManager, ThemedReactContext themedReactContext, EmojiPickerRowView emojiPickerRowView, String emojiName) {
         Intrinsics.checkNotNullParameter(emojiName, "emojiName");
         emojiPickerRowViewManager.reactEvents.emitEvent(themedReactContext, emojiPickerRowView, new OnPressEmojiEvent(emojiName, (String) null, 2, (DefaultConstructorMarker) null));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit createViewInstance$lambda$2$lambda$1(EmojiPickerRowViewManager emojiPickerRowViewManager, ThemedReactContext themedReactContext, EmojiPickerRowView emojiPickerRowView, String emojiName) {
         Intrinsics.checkNotNullParameter(emojiName, "emojiName");
         emojiPickerRowViewManager.reactEvents.emitEvent(themedReactContext, emojiPickerRowView, new OnLongPressEmojiEvent(emojiName, (String) null, 2, (DefaultConstructorMarker) null));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // com.facebook.react.uimanager.BaseViewManager, com.facebook.react.uimanager.ViewManager

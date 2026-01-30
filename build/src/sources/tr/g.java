@@ -7,28 +7,28 @@ import kotlin.jvm.internal.Intrinsics;
 public final class g {
 
     /* renamed from: a  reason: collision with root package name */
-    private final File f49825a;
+    private final File f49841a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final List f49826b;
+    private final List f49842b;
 
     public g(File root, List segments) {
         Intrinsics.checkNotNullParameter(root, "root");
         Intrinsics.checkNotNullParameter(segments, "segments");
-        this.f49825a = root;
-        this.f49826b = segments;
+        this.f49841a = root;
+        this.f49842b = segments;
     }
 
     public final File a() {
-        return this.f49825a;
+        return this.f49841a;
     }
 
     public final List b() {
-        return this.f49826b;
+        return this.f49842b;
     }
 
     public final int c() {
-        return this.f49826b.size();
+        return this.f49842b.size();
     }
 
     public boolean equals(Object obj) {
@@ -39,17 +39,17 @@ public final class g {
             return false;
         }
         g gVar = (g) obj;
-        if (Intrinsics.areEqual(this.f49825a, gVar.f49825a) && Intrinsics.areEqual(this.f49826b, gVar.f49826b)) {
+        if (Intrinsics.areEqual(this.f49841a, gVar.f49841a) && Intrinsics.areEqual(this.f49842b, gVar.f49842b)) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return (this.f49825a.hashCode() * 31) + this.f49826b.hashCode();
+        return (this.f49841a.hashCode() * 31) + this.f49842b.hashCode();
     }
 
     public String toString() {
-        return "FilePathComponents(root=" + this.f49825a + ", segments=" + this.f49826b + ')';
+        return "FilePathComponents(root=" + this.f49841a + ", segments=" + this.f49842b + ')';
     }
 }

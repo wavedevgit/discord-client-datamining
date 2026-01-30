@@ -12,54 +12,54 @@ import com.facebook.react.bridge.ReactApplicationContext;
 public class f extends b {
 
     /* renamed from: j  reason: collision with root package name */
-    private final a f55788j;
+    private final a f55804j;
 
     /* renamed from: k  reason: collision with root package name */
-    private Network f55789k;
+    private Network f55805k;
 
     /* renamed from: l  reason: collision with root package name */
-    private NetworkCapabilities f55790l;
+    private NetworkCapabilities f55806l;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     private class a extends ConnectivityManager.NetworkCallback {
         @Override // android.net.ConnectivityManager.NetworkCallback
         public void onAvailable(Network network) {
-            f.this.f55789k = network;
+            f.this.f55805k = network;
             f.this.q(h.DEFAULT_SWIPE_ANIMATION_DURATION);
         }
 
         @Override // android.net.ConnectivityManager.NetworkCallback
         public void onCapabilitiesChanged(Network network, NetworkCapabilities networkCapabilities) {
-            f.this.f55789k = network;
-            f.this.f55790l = networkCapabilities;
+            f.this.f55805k = network;
+            f.this.f55806l = networkCapabilities;
             f.this.s();
         }
 
         @Override // android.net.ConnectivityManager.NetworkCallback
         public void onLinkPropertiesChanged(Network network, LinkProperties linkProperties) {
-            if (f.this.f55789k != null) {
-                f.this.f55789k = network;
+            if (f.this.f55805k != null) {
+                f.this.f55805k = network;
             }
             f.this.q(h.DEFAULT_SWIPE_ANIMATION_DURATION);
         }
 
         @Override // android.net.ConnectivityManager.NetworkCallback
         public void onLosing(Network network, int i10) {
-            f.this.f55789k = network;
+            f.this.f55805k = network;
             f.this.s();
         }
 
         @Override // android.net.ConnectivityManager.NetworkCallback
         public void onLost(Network network) {
-            f.this.f55789k = null;
-            f.this.f55790l = null;
+            f.this.f55805k = null;
+            f.this.f55806l = null;
             f.this.s();
         }
 
         @Override // android.net.ConnectivityManager.NetworkCallback
         public void onUnavailable() {
-            f.this.f55789k = null;
-            f.this.f55790l = null;
+            f.this.f55805k = null;
+            f.this.f55806l = null;
             f.this.s();
         }
 
@@ -69,9 +69,9 @@ public class f extends b {
 
     public f(ReactApplicationContext reactApplicationContext) {
         super(reactApplicationContext);
-        this.f55789k = null;
-        this.f55790l = null;
-        this.f55788j = new a();
+        this.f55805k = null;
+        this.f55806l = null;
+        this.f55804j = new a();
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -87,7 +87,7 @@ public class f extends b {
     /* JADX INFO: Access modifiers changed from: private */
     public /* synthetic */ void r() {
         try {
-            this.f55790l = c().getNetworkCapabilities(this.f55789k);
+            this.f55806l = c().getNetworkCapabilities(this.f55805k);
             s();
         } catch (SecurityException unused) {
         }
@@ -96,9 +96,9 @@ public class f extends b {
     @Override // zl.b
     public void g() {
         try {
-            this.f55789k = c().getActiveNetwork();
+            this.f55805k = c().getActiveNetwork();
             q(0);
-            c().registerDefaultNetworkCallback(this.f55788j);
+            c().registerDefaultNetworkCallback(this.f55804j);
         } catch (SecurityException unused) {
         }
     }
@@ -106,7 +106,7 @@ public class f extends b {
     @Override // zl.b
     public void j() {
         try {
-            c().unregisterNetworkCallback(this.f55788j);
+            c().unregisterNetworkCallback(this.f55804j);
         } catch (IllegalArgumentException | SecurityException unused) {
         }
     }
@@ -123,8 +123,8 @@ public class f extends b {
         /*
             r10 = this;
             am.b r0 = am.b.UNKNOWN
-            android.net.Network r1 = r10.f55789k
-            android.net.NetworkCapabilities r2 = r10.f55790l
+            android.net.Network r1 = r10.f55805k
+            android.net.NetworkCapabilities r2 = r10.f55806l
             r3 = 0
             r4 = 0
             if (r2 == 0) goto L9a

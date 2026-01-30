@@ -20,33 +20,6 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/activities/utils/embeddedActivityLocationUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Original name: getEmbeddedActivityLocationChannelId, environment: var1
-        _fun24486: for (var _fun24486_ip = 0;;) switch (_fun24486_ip) {
-            case 0:
-                var1 = arg0;
-                var0 = null;
-                if (!(var0 == var1)) {
-                    _fun24486_ip = 13;
-                    continue _fun24486
-                }
-            case 9:
-                var0 = undefined;
-                return var0;
-            case 13:
-                var0 = 'channel_id';
-                var2 = var0 in var1;
-                var0 = undefined;
-                if (!var2) {
-                    _fun24486_ip = 31;
-                    continue _fun24486
-                }
-            case 26:
-                var0 = var1.channel_id;
-            case 31:
-                return var0;
-        }
-    };
-    var2.getEmbeddedActivityLocationChannelId = var3;
-    var1 = function(arg0) { // Original name: getEmbeddedActivityLocationGuildId, environment: var1
         _fun24487: for (var _fun24487_ip = 0;;) switch (_fun24487_ip) {
             case 0:
                 var1 = arg0;
@@ -59,12 +32,39 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = undefined;
                 return var0;
             case 13:
-                var0 = 'guild_id';
+                var0 = 'channel_id';
                 var2 = var0 in var1;
                 var0 = undefined;
                 if (!var2) {
                     _fun24487_ip = 31;
                     continue _fun24487
+                }
+            case 26:
+                var0 = var1.channel_id;
+            case 31:
+                return var0;
+        }
+    };
+    var2.getEmbeddedActivityLocationChannelId = var3;
+    var1 = function(arg0) { // Original name: getEmbeddedActivityLocationGuildId, environment: var1
+        _fun24488: for (var _fun24488_ip = 0;;) switch (_fun24488_ip) {
+            case 0:
+                var1 = arg0;
+                var0 = null;
+                if (!(var0 == var1)) {
+                    _fun24488_ip = 13;
+                    continue _fun24488
+                }
+            case 9:
+                var0 = undefined;
+                return var0;
+            case 13:
+                var0 = 'guild_id';
+                var2 = var0 in var1;
+                var0 = undefined;
+                if (!var2) {
+                    _fun24488_ip = 31;
+                    continue _fun24488
                 }
             case 26:
                 var0 = var1.guild_id;

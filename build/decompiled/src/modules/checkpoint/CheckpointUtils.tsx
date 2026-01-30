@@ -43,7 +43,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = var5.bind(var6)(var4);
     var2.VALID_TIME_UNITS = var3;
     var3 = function(arg0) { // Original name: getVoiceDurationString, environment: var1
-        _fun56293: for (var _fun56293_ip = 0;;) switch (_fun56293_ip) {
+        _fun56337: for (var _fun56337_ip = 0;;) switch (_fun56337_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var5 = _closure1_slot2;
@@ -64,8 +64,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.bind(var2)();
                 var2 = null;
                 if (!(var2 != var7)) {
-                    _fun56293_ip = 240;
-                    continue _fun56293
+                    _fun56337_ip = 240;
+                    continue _fun56337
                 }
             case 87:
                 var2 = global;
@@ -79,8 +79,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.TimeUnits;
                 var2 = var2.HOURS;
                 if (!(var4 !== var2)) {
-                    _fun56293_ip = 189;
-                    continue _fun56293
+                    _fun56337_ip = 189;
+                    continue _fun56337
                 }
             case 138:
                 var4 = _closure1_slot0;
@@ -94,8 +94,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = {};
                 var2.minutes = var8;
                 var2 = var5.bind(var6)(var4, var2);
-                _fun56293_ip = 238;
-                continue _fun56293;
+                _fun56337_ip = 238;
+                continue _fun56337;
             case 189:
                 var5 = _closure1_slot0;
                 var6 = _closure1_slot2;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getVoiceDurationString = var3;
     var3 = function(arg0) { // Original name: getDurationAndUnit, environment: var1
-        _fun56294: for (var _fun56294_ip = 0;;) switch (_fun56294_ip) {
+        _fun56338: for (var _fun56338_ip = 0;;) switch (_fun56338_ip) {
             case 0:
                 var3 = _closure1_slot0;
                 var2 = _closure1_slot2;
@@ -150,8 +150,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var2 != var5;
                 var2 = 0;
                 if (!var6) {
-                    _fun56294_ip = 85;
-                    continue _fun56294
+                    _fun56338_ip = 85;
+                    continue _fun56338
                 }
             case 82:
                 var2 = var5;
@@ -164,61 +164,61 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getDurationAndUnit = var3;
     var3 = function(arg0) { // Original name: getCardAssetUrl, environment: var1
-        _fun56295: for (var _fun56295_ip = 0;;) switch (_fun56295_ip) {
+        _fun56339: for (var _fun56339_ip = 0;;) switch (_fun56339_ip) {
             case 0:
                 var1 = arg0;
                 var0 = 0;
                 if (!(var0 !== var1)) {
-                    _fun56295_ip = 326;
-                    continue _fun56295
+                    _fun56339_ip = 326;
+                    continue _fun56339
                 }
             case 12:
                 var0 = 1;
                 if (!(var0 !== var1)) {
-                    _fun56295_ip = 299;
-                    continue _fun56295
+                    _fun56339_ip = 299;
+                    continue _fun56339
                 }
             case 22:
                 var0 = 2;
                 if (!(var0 !== var1)) {
-                    _fun56295_ip = 272;
-                    continue _fun56295
+                    _fun56339_ip = 272;
+                    continue _fun56339
                 }
             case 32:
                 var0 = 3;
                 if (!(var0 !== var1)) {
-                    _fun56295_ip = 245;
-                    continue _fun56295
+                    _fun56339_ip = 245;
+                    continue _fun56339
                 }
             case 42:
                 var0 = 4;
                 if (!(var0 !== var1)) {
-                    _fun56295_ip = 218;
-                    continue _fun56295
+                    _fun56339_ip = 218;
+                    continue _fun56339
                 }
             case 52:
                 var0 = 5;
                 if (!(var0 !== var1)) {
-                    _fun56295_ip = 191;
-                    continue _fun56295
+                    _fun56339_ip = 191;
+                    continue _fun56339
                 }
             case 62:
                 var0 = 6;
                 if (!(var0 !== var1)) {
-                    _fun56295_ip = 164;
-                    continue _fun56295
+                    _fun56339_ip = 164;
+                    continue _fun56339
                 }
             case 69:
                 var0 = 7;
                 if (!(var0 !== var1)) {
-                    _fun56295_ip = 137;
-                    continue _fun56295
+                    _fun56339_ip = 137;
+                    continue _fun56339
                 }
             case 76:
                 var0 = 8;
                 if (!(var0 !== var1)) {
-                    _fun56295_ip = 110;
-                    continue _fun56295
+                    _fun56339_ip = 110;
+                    continue _fun56339
                 }
             case 83:
                 var2 = _closure1_slot1;
@@ -366,4 +366,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getCheckpointPowerBarUnits = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3486, 4181, 1234, 6807, 6808, 6809, 6810, 6811, 6812, 6813, 6814, 6815, 6816, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3488, 4187, 1234, 6810, 6811, 6812, 6813, 6814, 6815, 6816, 6817, 6818, 6819, 2]);

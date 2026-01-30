@@ -6,10 +6,10 @@ import jt.l0;
 class p0 implements jt.d0, Comparator {
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f40782d;
+    private final boolean f40798d;
 
     private p0(boolean z10) {
-        this.f40782d = z10;
+        this.f40798d = z10;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */

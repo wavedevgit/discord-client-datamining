@@ -5,7 +5,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 public final class r extends m {
 
     /* renamed from: o  reason: collision with root package name */
-    public static final a f27332o = new a(null);
+    public static final a f27348o = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {

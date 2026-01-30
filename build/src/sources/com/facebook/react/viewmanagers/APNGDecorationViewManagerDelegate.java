@@ -64,7 +64,7 @@ public class APNGDecorationViewManagerDelegate<T extends View, U extends BaseVie
             }
             APNGDecorationViewManagerInterface aPNGDecorationViewManagerInterface = (APNGDecorationViewManagerInterface) this.mViewManager;
             if (obj == null) {
-                booleanValue = false;
+                booleanValue = true;
             } else {
                 booleanValue = ((Boolean) obj).booleanValue();
             }

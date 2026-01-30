@@ -10,40 +10,40 @@ import java.util.logging.Logger;
 public final class j implements Executor {
 
     /* renamed from: q  reason: collision with root package name */
-    private static final Logger f48285q = Logger.getLogger(j.class.getName());
+    private static final Logger f48301q = Logger.getLogger(j.class.getName());
 
     /* renamed from: d  reason: collision with root package name */
-    private final Executor f48286d;
+    private final Executor f48302d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Deque f48287e = new ArrayDeque();
+    private final Deque f48303e = new ArrayDeque();
 
     /* renamed from: i  reason: collision with root package name */
-    private c f48288i = c.IDLE;
+    private c f48304i = c.IDLE;
 
     /* renamed from: o  reason: collision with root package name */
-    private long f48289o = 0;
+    private long f48305o = 0;
 
     /* renamed from: p  reason: collision with root package name */
-    private final b f48290p = new b(this, null);
+    private final b f48306p = new b(this, null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     class a implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Runnable f48291d;
+        final /* synthetic */ Runnable f48307d;
 
         a(Runnable runnable) {
-            this.f48291d = runnable;
+            this.f48307d = runnable;
         }
 
         @Override // java.lang.Runnable
         public void run() {
-            this.f48291d.run();
+            this.f48307d.run();
         }
 
         public String toString() {
-            return this.f48291d.toString();
+            return this.f48307d.toString();
         }
     }
 
@@ -51,7 +51,7 @@ public final class j implements Executor {
     private final class b implements Runnable {
 
         /* renamed from: d  reason: collision with root package name */
-        Runnable f48293d;
+        Runnable f48309d;
 
         private b() {
         }
@@ -63,13 +63,13 @@ public final class j implements Executor {
             r1 = r1 | java.lang.Thread.interrupted();
          */
         /* JADX WARN: Code restructure failed: missing block: B:24:0x0050, code lost:
-            r8.f48293d.run();
+            r8.f48309d.run();
          */
         /* JADX WARN: Code restructure failed: missing block: B:31:0x005c, code lost:
             r3 = move-exception;
          */
         /* JADX WARN: Code restructure failed: missing block: B:32:0x005d, code lost:
-            ri.j.f48285q.log(java.util.logging.Level.SEVERE, "Exception while executing runnable " + r8.f48293d, (java.lang.Throwable) r3);
+            ri.j.f48301q.log(java.util.logging.Level.SEVERE, "Exception while executing runnable " + r8.f48309d, (java.lang.Throwable) r3);
          */
         /* JADX WARN: Code restructure failed: missing block: B:48:?, code lost:
             return;
@@ -115,7 +115,7 @@ public final class j implements Executor {
                 java.util.Deque r3 = ri.j.a(r3)     // Catch: java.lang.Throwable -> L20
                 java.lang.Object r3 = r3.poll()     // Catch: java.lang.Throwable -> L20
                 java.lang.Runnable r3 = (java.lang.Runnable) r3     // Catch: java.lang.Throwable -> L20
-                r8.f48293d = r3     // Catch: java.lang.Throwable -> L20
+                r8.f48309d = r3     // Catch: java.lang.Throwable -> L20
                 if (r3 != 0) goto L49
                 ri.j r0 = ri.j.this     // Catch: java.lang.Throwable -> L20
                 ri.j$c r3 = ri.j.c.IDLE     // Catch: java.lang.Throwable -> L20
@@ -130,10 +130,10 @@ public final class j implements Executor {
                 boolean r2 = java.lang.Thread.interrupted()     // Catch: java.lang.Throwable -> L58
                 r1 = r1 | r2
                 r2 = 0
-                java.lang.Runnable r3 = r8.f48293d     // Catch: java.lang.Throwable -> L5a java.lang.RuntimeException -> L5c
+                java.lang.Runnable r3 = r8.f48309d     // Catch: java.lang.Throwable -> L5a java.lang.RuntimeException -> L5c
                 r3.run()     // Catch: java.lang.Throwable -> L5a java.lang.RuntimeException -> L5c
             L55:
-                r8.f48293d = r2     // Catch: java.lang.Throwable -> L58
+                r8.f48309d = r2     // Catch: java.lang.Throwable -> L58
                 goto L2
             L58:
                 r0 = move-exception
@@ -149,13 +149,13 @@ public final class j implements Executor {
                 r6.<init>()     // Catch: java.lang.Throwable -> L5a
                 java.lang.String r7 = "Exception while executing runnable "
                 r6.append(r7)     // Catch: java.lang.Throwable -> L5a
-                java.lang.Runnable r7 = r8.f48293d     // Catch: java.lang.Throwable -> L5a
+                java.lang.Runnable r7 = r8.f48309d     // Catch: java.lang.Throwable -> L5a
                 r6.append(r7)     // Catch: java.lang.Throwable -> L5a
                 java.lang.String r6 = r6.toString()     // Catch: java.lang.Throwable -> L5a
                 r4.log(r5, r6, r3)     // Catch: java.lang.Throwable -> L5a
                 goto L55
             L7a:
-                r8.f48293d = r2     // Catch: java.lang.Throwable -> L58
+                r8.f48309d = r2     // Catch: java.lang.Throwable -> L58
                 throw r0     // Catch: java.lang.Throwable -> L58
             L7d:
                 monitor-exit(r2)     // Catch: java.lang.Throwable -> L20
@@ -175,19 +175,19 @@ public final class j implements Executor {
             try {
                 a();
             } catch (Error e10) {
-                synchronized (j.this.f48287e) {
-                    j.this.f48288i = c.IDLE;
+                synchronized (j.this.f48303e) {
+                    j.this.f48304i = c.IDLE;
                     throw e10;
                 }
             }
         }
 
         public String toString() {
-            Runnable runnable = this.f48293d;
+            Runnable runnable = this.f48309d;
             if (runnable != null) {
                 return "SequentialExecutorWorker{running=" + runnable + "}";
             }
-            return "SequentialExecutorWorker{state=" + j.this.f48288i + "}";
+            return "SequentialExecutorWorker{state=" + j.this.f48304i + "}";
         }
 
         /* synthetic */ b(j jVar, a aVar) {
@@ -206,12 +206,12 @@ public final class j implements Executor {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public j(Executor executor) {
-        this.f48286d = (Executor) q.l(executor);
+        this.f48302d = (Executor) q.l(executor);
     }
 
     static /* synthetic */ long d(j jVar) {
-        long j10 = jVar.f48289o;
-        jVar.f48289o = 1 + j10;
+        long j10 = jVar.f48305o;
+        jVar.f48305o = 1 + j10;
         return j10;
     }
 
@@ -225,38 +225,38 @@ public final class j implements Executor {
         /*
             r7 = this;
             gf.q.l(r8)
-            java.util.Deque r0 = r7.f48287e
+            java.util.Deque r0 = r7.f48303e
             monitor-enter(r0)
-            ri.j$c r1 = r7.f48288i     // Catch: java.lang.Throwable -> L6d
+            ri.j$c r1 = r7.f48304i     // Catch: java.lang.Throwable -> L6d
             ri.j$c r2 = ri.j.c.RUNNING     // Catch: java.lang.Throwable -> L6d
             if (r1 == r2) goto L6f
             ri.j$c r2 = ri.j.c.QUEUED     // Catch: java.lang.Throwable -> L6d
             if (r1 != r2) goto L11
             goto L6f
         L11:
-            long r3 = r7.f48289o     // Catch: java.lang.Throwable -> L6d
+            long r3 = r7.f48305o     // Catch: java.lang.Throwable -> L6d
             ri.j$a r1 = new ri.j$a     // Catch: java.lang.Throwable -> L6d
             r1.<init>(r8)     // Catch: java.lang.Throwable -> L6d
-            java.util.Deque r8 = r7.f48287e     // Catch: java.lang.Throwable -> L6d
+            java.util.Deque r8 = r7.f48303e     // Catch: java.lang.Throwable -> L6d
             r8.add(r1)     // Catch: java.lang.Throwable -> L6d
             ri.j$c r8 = ri.j.c.QUEUING     // Catch: java.lang.Throwable -> L6d
-            r7.f48288i = r8     // Catch: java.lang.Throwable -> L6d
+            r7.f48304i = r8     // Catch: java.lang.Throwable -> L6d
             monitor-exit(r0)     // Catch: java.lang.Throwable -> L6d
-            java.util.concurrent.Executor r0 = r7.f48286d     // Catch: java.lang.Error -> L44 java.lang.RuntimeException -> L46
-            ri.j$b r5 = r7.f48290p     // Catch: java.lang.Error -> L44 java.lang.RuntimeException -> L46
+            java.util.concurrent.Executor r0 = r7.f48302d     // Catch: java.lang.Error -> L44 java.lang.RuntimeException -> L46
+            ri.j$b r5 = r7.f48306p     // Catch: java.lang.Error -> L44 java.lang.RuntimeException -> L46
             r0.execute(r5)     // Catch: java.lang.Error -> L44 java.lang.RuntimeException -> L46
-            ri.j$c r0 = r7.f48288i
+            ri.j$c r0 = r7.f48304i
             if (r0 == r8) goto L2e
             return
         L2e:
-            java.util.Deque r0 = r7.f48287e
+            java.util.Deque r0 = r7.f48303e
             monitor-enter(r0)
-            long r5 = r7.f48289o     // Catch: java.lang.Throwable -> L3e
+            long r5 = r7.f48305o     // Catch: java.lang.Throwable -> L3e
             int r1 = (r5 > r3 ? 1 : (r5 == r3 ? 0 : -1))
             if (r1 != 0) goto L40
-            ri.j$c r1 = r7.f48288i     // Catch: java.lang.Throwable -> L3e
+            ri.j$c r1 = r7.f48304i     // Catch: java.lang.Throwable -> L3e
             if (r1 != r8) goto L40
-            r7.f48288i = r2     // Catch: java.lang.Throwable -> L3e
+            r7.f48304i = r2     // Catch: java.lang.Throwable -> L3e
             goto L40
         L3e:
             r8 = move-exception
@@ -273,9 +273,9 @@ public final class j implements Executor {
         L46:
             r8 = move-exception
         L47:
-            java.util.Deque r2 = r7.f48287e
+            java.util.Deque r2 = r7.f48303e
             monitor-enter(r2)
-            ri.j$c r0 = r7.f48288i     // Catch: java.lang.Throwable -> L55
+            ri.j$c r0 = r7.f48304i     // Catch: java.lang.Throwable -> L55
             ri.j$c r3 = ri.j.c.IDLE     // Catch: java.lang.Throwable -> L55
             if (r0 == r3) goto L57
             ri.j$c r3 = ri.j.c.QUEUING     // Catch: java.lang.Throwable -> L55
@@ -285,7 +285,7 @@ public final class j implements Executor {
             r8 = move-exception
             goto L6b
         L57:
-            java.util.Deque r0 = r7.f48287e     // Catch: java.lang.Throwable -> L55
+            java.util.Deque r0 = r7.f48303e     // Catch: java.lang.Throwable -> L55
             boolean r0 = r0.removeLastOccurrence(r1)     // Catch: java.lang.Throwable -> L55
             if (r0 == 0) goto L61
             r0 = 1
@@ -307,7 +307,7 @@ public final class j implements Executor {
             r8 = move-exception
             goto L76
         L6f:
-            java.util.Deque r1 = r7.f48287e     // Catch: java.lang.Throwable -> L6d
+            java.util.Deque r1 = r7.f48303e     // Catch: java.lang.Throwable -> L6d
             r1.add(r8)     // Catch: java.lang.Throwable -> L6d
             monitor-exit(r0)     // Catch: java.lang.Throwable -> L6d
             return
@@ -319,6 +319,6 @@ public final class j implements Executor {
     }
 
     public String toString() {
-        return "SequentialExecutor@" + System.identityHashCode(this) + "{" + this.f48286d + "}";
+        return "SequentialExecutor@" + System.identityHashCode(this) + "{" + this.f48302d + "}";
     }
 }

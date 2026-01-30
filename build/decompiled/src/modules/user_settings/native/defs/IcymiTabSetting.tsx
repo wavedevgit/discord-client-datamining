@@ -62,7 +62,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.useValue = var8;
     var8 = function(arg0) { // Original name: onICYMISettingValueChange, environment: var7
-        _fun85324: for (var _fun85324_ip = 0;;) switch (_fun85324_ip) {
+        _fun85370: for (var _fun85370_ip = 0;;) switch (_fun85370_ip) {
             case 0:
                 var5 = arg0;
                 var4 = _closure1_slot1;
@@ -74,8 +74,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var8.itemInteracted;
                 var6 = 'show';
                 if (!var5) {
-                    _fun85324_ip = 45;
-                    continue _fun85324
+                    _fun85370_ip = 45;
+                    continue _fun85370
                 }
             case 41:
                 var6 = 'hide';
@@ -142,4 +142,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6965, 8825, 8822, 8828, 10964, 8939, 1234, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6968, 8829, 8826, 8832, 10970, 8943, 1234, 2]);

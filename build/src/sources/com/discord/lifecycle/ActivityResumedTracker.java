@@ -167,7 +167,7 @@ public final class ActivityResumedTracker {
                             ActivityResumedTracker.lastPausedAtElapsedRealtime = SystemClock.elapsedRealtime();
                             ActivityResumedTracker.resumedActivity = null;
                         }
-                        Unit unit = Unit.f33282a;
+                        Unit unit = Unit.f33298a;
                     } catch (Throwable th2) {
                         throw th2;
                     }
@@ -181,7 +181,7 @@ public final class ActivityResumedTracker {
                 obj = ActivityResumedTracker.lock;
                 synchronized (obj) {
                     ActivityResumedTracker.resumedActivity = new WeakReference(activity);
-                    Unit unit = Unit.f33282a;
+                    Unit unit = Unit.f33298a;
                 }
             }
 

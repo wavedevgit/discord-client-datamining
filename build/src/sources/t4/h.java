@@ -11,19 +11,19 @@ import t4.i;
 public final class h implements ku.b {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final h f49222a = new h();
+    public static final h f49238a = new h();
 
     private h() {
     }
 
     private final Object a(i iVar, Function0 function0, Function0 function02) {
-        if (Intrinsics.areEqual(iVar, i.b.f49224a)) {
+        if (Intrinsics.areEqual(iVar, i.b.f49240a)) {
             return function02.invoke();
         }
-        if (Intrinsics.areEqual(iVar, i.a.f49223a)) {
+        if (Intrinsics.areEqual(iVar, i.a.f49239a)) {
             return function0.invoke();
         }
-        if (Intrinsics.areEqual(iVar, i.c.f49225a)) {
+        if (Intrinsics.areEqual(iVar, i.c.f49241a)) {
             return null;
         }
         throw new p();
@@ -111,12 +111,12 @@ public final class h implements ku.b {
 
     private final i c(String str) {
         if (Intrinsics.areEqual(str, "desc")) {
-            return i.b.f49224a;
+            return i.b.f49240a;
         }
         if (Intrinsics.areEqual(str, "asc")) {
-            return i.a.f49223a;
+            return i.a.f49239a;
         }
-        return i.c.f49225a;
+        return i.c.f49241a;
     }
 
     @Override // ku.b
@@ -133,7 +133,7 @@ public final class h implements ku.b {
         if (list == null) {
             return null;
         }
-        h hVar = f49222a;
+        h hVar = f49238a;
         Object b10 = pv.c.b(c10);
         if (b10 instanceof String) {
             str = (String) b10;

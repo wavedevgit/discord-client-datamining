@@ -9,7 +9,7 @@ import tm.t;
 public final class e implements t {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final e f49698a = new e();
+    public static final e f49714a = new e();
 
     private e() {
     }

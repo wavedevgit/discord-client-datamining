@@ -9,7 +9,7 @@ import org.jetbrains.annotations.NotNull;
 public final class m extends hf.a {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f53321d = new a(null);
+    public static final a f53337d = new a(null);
     @NotNull
     public static final Parcelable.Creator<m> CREATOR = new n();
 

@@ -6,22 +6,22 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class w6 implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private int f30902d;
+    private int f30918d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f30903e;
+    private String f30919e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f30904i;
+    private String f30920i;
 
     /* renamed from: o  reason: collision with root package name */
-    private String f30905o;
+    private String f30921o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Long f30906p;
+    private Long f30922p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Map f30907q;
+    private Map f30923q;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -69,19 +69,19 @@ public final class w6 implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        w6Var.f30904i = e3Var.r1();
+                        w6Var.f30920i = e3Var.r1();
                         break;
                     case 1:
-                        w6Var.f30906p = e3Var.m1();
+                        w6Var.f30922p = e3Var.m1();
                         break;
                     case 2:
-                        w6Var.f30903e = e3Var.r1();
+                        w6Var.f30919e = e3Var.r1();
                         break;
                     case 3:
-                        w6Var.f30905o = e3Var.r1();
+                        w6Var.f30921o = e3Var.r1();
                         break;
                     case 4:
-                        w6Var.f30902d = e3Var.nextInt();
+                        w6Var.f30918d = e3Var.nextInt();
                         break;
                     default:
                         if (concurrentHashMap == null) {
@@ -105,67 +105,67 @@ public final class w6 implements w1 {
             return true;
         }
         if (obj != null && w6.class == obj.getClass()) {
-            return io.sentry.util.y.a(this.f30903e, ((w6) obj).f30903e);
+            return io.sentry.util.y.a(this.f30919e, ((w6) obj).f30919e);
         }
         return false;
     }
 
     public String f() {
-        return this.f30903e;
+        return this.f30919e;
     }
 
     public int g() {
-        return this.f30902d;
+        return this.f30918d;
     }
 
     public void h(String str) {
-        this.f30903e = str;
+        this.f30919e = str;
     }
 
     public int hashCode() {
-        return io.sentry.util.y.b(this.f30903e);
+        return io.sentry.util.y.b(this.f30919e);
     }
 
     public void i(String str) {
-        this.f30905o = str;
+        this.f30921o = str;
     }
 
     public void j(String str) {
-        this.f30904i = str;
+        this.f30920i = str;
     }
 
     public void k(Long l10) {
-        this.f30906p = l10;
+        this.f30922p = l10;
     }
 
     public void l(int i10) {
-        this.f30902d = i10;
+        this.f30918d = i10;
     }
 
     public void m(Map map) {
-        this.f30907q = map;
+        this.f30923q = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        f3Var.e("type").b(this.f30902d);
-        if (this.f30903e != null) {
-            f3Var.e("address").f(this.f30903e);
+        f3Var.e("type").b(this.f30918d);
+        if (this.f30919e != null) {
+            f3Var.e("address").f(this.f30919e);
         }
-        if (this.f30904i != null) {
-            f3Var.e("package_name").f(this.f30904i);
+        if (this.f30920i != null) {
+            f3Var.e("package_name").f(this.f30920i);
         }
-        if (this.f30905o != null) {
-            f3Var.e("class_name").f(this.f30905o);
+        if (this.f30921o != null) {
+            f3Var.e("class_name").f(this.f30921o);
         }
-        if (this.f30906p != null) {
-            f3Var.e("thread_id").i(this.f30906p);
+        if (this.f30922p != null) {
+            f3Var.e("thread_id").i(this.f30922p);
         }
-        Map map = this.f30907q;
+        Map map = this.f30923q;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f30907q.get(str);
+                Object obj = this.f30923q.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -174,11 +174,11 @@ public final class w6 implements w1 {
     }
 
     public w6(w6 w6Var) {
-        this.f30902d = w6Var.f30902d;
-        this.f30903e = w6Var.f30903e;
-        this.f30904i = w6Var.f30904i;
-        this.f30905o = w6Var.f30905o;
-        this.f30906p = w6Var.f30906p;
-        this.f30907q = io.sentry.util.c.b(w6Var.f30907q);
+        this.f30918d = w6Var.f30918d;
+        this.f30919e = w6Var.f30919e;
+        this.f30920i = w6Var.f30920i;
+        this.f30921o = w6Var.f30921o;
+        this.f30922p = w6Var.f30922p;
+        this.f30923q = io.sentry.util.c.b(w6Var.f30923q);
     }
 }

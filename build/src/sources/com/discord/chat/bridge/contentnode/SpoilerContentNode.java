@@ -26,7 +26,7 @@ public final class SpoilerContentNode extends ContentNode implements Spoilerable
     @NotNull
     public static final Companion Companion = new Companion(null);
     @NotNull
-    private static final Lazy[] $childSerializers = {ir.l.a(ir.o.f31103e, new Function0() { // from class: com.discord.chat.bridge.contentnode.r
+    private static final Lazy[] $childSerializers = {ir.l.a(ir.o.f31119e, new Function0() { // from class: com.discord.chat.bridge.contentnode.r
         @Override // kotlin.jvm.functions.Function0
         public final Object invoke() {
             KSerializer _childSerializers$_anonymous_;

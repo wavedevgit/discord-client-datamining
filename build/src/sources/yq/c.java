@@ -19,14 +19,14 @@ import tr.j;
 public abstract class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final String f54959a = File.separator;
+    private static final String f54975a = File.separator;
 
     private static final String a(Context context) {
         StringBuilder sb2 = new StringBuilder();
         File cacheDir = context.getCacheDir();
         Intrinsics.checkExpressionValueIsNotNull(cacheDir, "context.cacheDir");
         sb2.append(cacheDir.getPath());
-        String str = f54959a;
+        String str = f54975a;
         sb2.append(str);
         sb2.append("compressor");
         sb2.append(str);
@@ -139,7 +139,7 @@ public abstract class c {
 
     public static final String g(Bitmap.CompressFormat extension) {
         Intrinsics.checkParameterIsNotNull(extension, "$this$extension");
-        int i10 = b.f54958a[extension.ordinal()];
+        int i10 = b.f54974a[extension.ordinal()];
         if (i10 != 1) {
             if (i10 != 2) {
                 return "jpg";

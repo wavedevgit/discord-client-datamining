@@ -336,7 +336,7 @@ public final class d1 extends ReactViewGroup {
         if (d1Var.f19234t && (screenStackFragment = d1Var.getScreenStackFragment()) != null && (Z = screenStackFragment.Z()) != null) {
             Z.p0();
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private final void setSearchViewListeners(SearchView searchView) {

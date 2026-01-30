@@ -80,15 +80,15 @@ public final class q {
     }
 
     private static boolean A(String str) {
-        if (w0.f40282d.startsWith("SM-T230") && "OMX.MARVELL.VIDEO.HW.CODA7542DECODER".equals(str)) {
+        if (w0.f40298d.startsWith("SM-T230") && "OMX.MARVELL.VIDEO.HW.CODA7542DECODER".equals(str)) {
             return true;
         }
         return false;
     }
 
     private static boolean B(String str) {
-        if (w0.f40279a <= 22) {
-            String str2 = w0.f40282d;
+        if (w0.f40295a <= 22) {
+            String str2 = w0.f40298d;
             if ("ODROID-XU3".equals(str2) || "Nexus 10".equals(str2)) {
                 if ("OMX.Exynos.AVC.Decoder".equals(str) || "OMX.Exynos.AVC.Decoder.secure".equals(str)) {
                     return true;
@@ -101,9 +101,9 @@ public final class q {
     }
 
     private static boolean C() {
-        String str = w0.f40280b;
+        String str = w0.f40296b;
         if (!str.equals("sabrina") && !str.equals("boreal")) {
-            String str2 = w0.f40282d;
+            String str2 = w0.f40298d;
             if (!str2.startsWith("Lenovo TB-X605") && !str2.startsWith("Lenovo TB-X606") && !str2.startsWith("Lenovo TB-X616")) {
                 return false;
             }
@@ -114,7 +114,7 @@ public final class q {
 
     private static boolean D(String str, int i10) {
         if ("video/hevc".equals(str) && 2 == i10) {
-            String str2 = w0.f40280b;
+            String str2 = w0.f40296b;
             if ("sailfish".equals(str2) || "marlin".equals(str2)) {
                 return true;
             }
@@ -124,7 +124,7 @@ public final class q {
     }
 
     private static boolean E(String str) {
-        if ("OMX.MTK.VIDEO.DECODER.HEVC".equals(str) && "mcv5a".equals(w0.f40280b)) {
+        if ("OMX.MTK.VIDEO.DECODER.HEVC".equals(str) && "mcv5a".equals(w0.f40296b)) {
             return false;
         }
         return true;
@@ -179,7 +179,7 @@ public final class q {
 
     private static int b(String str, String str2, int i10) {
         int i11;
-        if (i10 <= 1 && ((w0.f40279a < 26 || i10 <= 0) && !"audio/mpeg".equals(str2) && !"audio/3gpp".equals(str2) && !"audio/amr-wb".equals(str2) && !"audio/mp4a-latm".equals(str2) && !"audio/vorbis".equals(str2) && !"audio/opus".equals(str2) && !"audio/raw".equals(str2) && !"audio/flac".equals(str2) && !"audio/g711-alaw".equals(str2) && !"audio/g711-mlaw".equals(str2) && !"audio/gsm".equals(str2))) {
+        if (i10 <= 1 && ((w0.f40295a < 26 || i10 <= 0) && !"audio/mpeg".equals(str2) && !"audio/3gpp".equals(str2) && !"audio/amr-wb".equals(str2) && !"audio/mp4a-latm".equals(str2) && !"audio/vorbis".equals(str2) && !"audio/opus".equals(str2) && !"audio/raw".equals(str2) && !"audio/flac".equals(str2) && !"audio/g711-alaw".equals(str2) && !"audio/g711-mlaw".equals(str2) && !"audio/gsm".equals(str2))) {
             if ("audio/ac3".equals(str2)) {
                 i11 = 6;
             } else if ("audio/eac3".equals(str2)) {
@@ -248,7 +248,7 @@ public final class q {
     }
 
     private static boolean i(MediaCodecInfo.CodecCapabilities codecCapabilities) {
-        if (w0.f40279a >= 19 && j(codecCapabilities)) {
+        if (w0.f40295a >= 19 && j(codecCapabilities)) {
             return true;
         }
         return false;
@@ -277,7 +277,7 @@ public final class q {
             return true;
         }
         MediaCodecInfo.CodecProfileLevel[] h10 = h();
-        if (w0.f40279a <= 23 && "video/x-vnd.on2.vp9".equals(this.f24984b) && h10.length == 0) {
+        if (w0.f40295a <= 23 && "video/x-vnd.on2.vp9".equals(this.f24984b) && h10.length == 0) {
             h10 = g(this.f24986d);
         }
         for (MediaCodecInfo.CodecProfileLevel codecProfileLevel : h10) {
@@ -297,7 +297,7 @@ public final class q {
     }
 
     private static boolean s(MediaCodecInfo.CodecCapabilities codecCapabilities) {
-        if (w0.f40279a >= 21 && t(codecCapabilities)) {
+        if (w0.f40295a >= 21 && t(codecCapabilities)) {
             return true;
         }
         return false;
@@ -308,7 +308,7 @@ public final class q {
     }
 
     private static boolean u(MediaCodecInfo.CodecCapabilities codecCapabilities) {
-        if (w0.f40279a >= 21 && v(codecCapabilities)) {
+        if (w0.f40295a >= 21 && v(codecCapabilities)) {
             return true;
         }
         return false;
@@ -319,11 +319,11 @@ public final class q {
     }
 
     private void x(String str) {
-        ne.y.b("MediaCodecInfo", "AssumedSupport [" + str + "] [" + this.f24983a + ", " + this.f24984b + "] [" + w0.f40283e + "]");
+        ne.y.b("MediaCodecInfo", "AssumedSupport [" + str + "] [" + this.f24983a + ", " + this.f24984b + "] [" + w0.f40299e + "]");
     }
 
     private void y(String str) {
-        ne.y.b("MediaCodecInfo", "NoSupport [" + str + "] [" + this.f24983a + ", " + this.f24984b + "] [" + w0.f40283e + "]");
+        ne.y.b("MediaCodecInfo", "NoSupport [" + str + "] [" + this.f24983a + ", " + this.f24984b + "] [" + w0.f40299e + "]");
     }
 
     private static boolean z(String str) {
@@ -474,7 +474,7 @@ public final class q {
             if (i13 <= 0 || (i12 = format.C) <= 0) {
                 return true;
             }
-            if (w0.f40279a >= 21) {
+            if (w0.f40295a >= 21) {
                 return w(i13, i12, format.D);
             }
             if (i13 * i12 <= y.L()) {
@@ -484,7 +484,7 @@ public final class q {
                 y("legacyFrameSize, " + format.B + "x" + format.C);
             }
             return z10;
-        } else if (w0.f40279a >= 21 && (((i10 = format.K) != -1 && !l(i10)) || ((i11 = format.J) != -1 && !k(i11)))) {
+        } else if (w0.f40295a >= 21 && (((i10 = format.K) != -1 && !l(i10)) || ((i11 = format.J) != -1 && !k(i11)))) {
             return false;
         } else {
             return true;
@@ -492,7 +492,7 @@ public final class q {
     }
 
     public boolean p() {
-        if (w0.f40279a >= 29 && "video/x-vnd.on2.vp9".equals(this.f24984b)) {
+        if (w0.f40295a >= 29 && "video/x-vnd.on2.vp9".equals(this.f24984b)) {
             for (MediaCodecInfo.CodecProfileLevel codecProfileLevel : h()) {
                 if (codecProfileLevel.profile == 16384) {
                     return true;
@@ -528,7 +528,7 @@ public final class q {
             y("sizeAndRate.vCaps");
             return false;
         }
-        if (w0.f40279a >= 29) {
+        if (w0.f40295a >= 29) {
             int a10 = a.a(videoCapabilities, i10, i11, d10);
             if (a10 == 2) {
                 return true;

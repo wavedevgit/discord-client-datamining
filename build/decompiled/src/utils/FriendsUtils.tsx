@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var8;
     var _closure1_slot2 = var7;
     var4 = function(arg0) { // Original name: validateDiscordTag, environment: var1
-        _fun64373: for (var _fun64373_ip = 0;;) switch (_fun64373_ip) {
+        _fun64417: for (var _fun64417_ip = 0;;) switch (_fun64417_ip) {
             case 0:
                 var11 = arg0;
                 var1 = _closure1_slot8;
@@ -18,16 +18,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9 = null;
                 var0 = null;
                 if (var1) {
-                    _fun64373_ip = 336;
-                    continue _fun64373
+                    _fun64417_ip = 336;
+                    continue _fun64417
                 }
             case 30:
                 var1 = var11.includes;
                 var3 = '#';
                 var1 = var1.bind(var11)(var3);
                 if (!var1) {
-                    _fun64373_ip = 69;
-                    continue _fun64373
+                    _fun64417_ip = 69;
+                    continue _fun64417
                 }
             case 47:
                 var4 = _closure1_slot7;
@@ -35,8 +35,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var4)(var11);
                 var0 = null;
                 if (var1) {
-                    _fun64373_ip = 336;
-                    continue _fun64373
+                    _fun64417_ip = 336;
+                    continue _fun64417
                 }
             case 69:
                 var1 = var11.split;
@@ -64,8 +64,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var12 = var9 != var10;
                 var9 = '';
                 if (!var12) {
-                    _fun64373_ip = 174;
-                    continue _fun64373
+                    _fun64417_ip = 174;
+                    continue _fun64417
                 }
             case 171:
                 var9 = var10;
@@ -108,77 +108,77 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot9 = var4;
     var3 = function(arg0, arg1) { // Original name: humanizeAbortCode, environment: var1
-        _fun64374: for (var _fun64374_ip = 0;;) switch (_fun64374_ip) {
+        _fun64418: for (var _fun64418_ip = 0;;) switch (_fun64418_ip) {
             case 0:
                 var2 = arg0;
                 var1 = _closure1_slot4;
                 var1 = var1.RELATIONSHIP_INCOMING_DISABLED;
                 if (!(var1 !== var2)) {
-                    _fun64374_ip = 536;
-                    continue _fun64374
+                    _fun64418_ip = 536;
+                    continue _fun64418
                 }
             case 23:
                 var1 = _closure1_slot4;
                 var1 = var1.TOO_MANY_FRIENDS;
                 if (!(var1 !== var2)) {
-                    _fun64374_ip = 475;
-                    continue _fun64374
+                    _fun64418_ip = 475;
+                    continue _fun64418
                 }
             case 40:
                 var1 = _closure1_slot4;
                 var1 = var1.RELATIONSHIP_ALREADY_FRIENDS;
                 if (!(var1 !== var2)) {
-                    _fun64374_ip = 414;
-                    continue _fun64374
+                    _fun64418_ip = 414;
+                    continue _fun64418
                 }
             case 57:
                 var1 = _closure1_slot4;
                 var1 = var1.USER_QUARANTINED;
                 if (!(var1 !== var2)) {
-                    _fun64374_ip = 355;
-                    continue _fun64374
+                    _fun64418_ip = 355;
+                    continue _fun64418
                 }
             case 74:
                 var1 = _closure1_slot4;
                 var1 = var1.USER_FRIEND_REQUEST_LIMITED_ACCESS;
                 if (!(var1 !== var2)) {
-                    _fun64374_ip = 355;
-                    continue _fun64374
+                    _fun64418_ip = 355;
+                    continue _fun64418
                 }
             case 91:
                 var1 = _closure1_slot4;
                 var1 = var1.TOO_MANY_BLOCKED_USERS;
                 if (!(var1 !== var2)) {
-                    _fun64374_ip = 294;
-                    continue _fun64374
+                    _fun64418_ip = 294;
+                    continue _fun64418
                 }
             case 108:
                 var1 = _closure1_slot4;
                 var1 = var1.TOO_MANY_PENDING_OUTGOING;
                 if (!(var1 !== var2)) {
-                    _fun64374_ip = 233;
-                    continue _fun64374
+                    _fun64418_ip = 233;
+                    continue _fun64418
                 }
             case 122:
                 var1 = _closure1_slot4;
                 var1 = var1.RELATIONSHIP_INCOMING_BLOCKED;
                 if (!(var1 !== var2)) {
-                    _fun64374_ip = 174;
-                    continue _fun64374
+                    _fun64418_ip = 174;
+                    continue _fun64418
                 }
             case 136:
                 var1 = _closure1_slot4;
                 var1 = var1.RELATIONSHIP_INVALID_SELF;
                 if (!(var1 !== var2)) {
-                    _fun64374_ip = 174;
-                    continue _fun64374
+                    _fun64418_ip = 174;
+                    continue _fun64418
                 }
             case 150:
                 var1 = _closure1_slot4;
                 var1 = var1.RELATIONSHIP_INVALUD_USER_BOT;
                 if (!(var1 !== var2)) {
-                    _fun64374_ip = 174;
-                    continue _fun64374
+                    _fun64418_ip = 174;
+                    continue _fun64418
                 }
             case 164:
                 var1 = _closure1_slot4;
@@ -339,7 +339,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.isValidDiscordTag = var4;
     var2.humanizeAbortCode = var3;
     var1 = function(arg0, arg1) { // Original name: humanizeAbortCodeForA11y, environment: var1
-        _fun64376: for (var _fun64376_ip = 0;;) switch (_fun64376_ip) {
+        _fun64420: for (var _fun64420_ip = 0;;) switch (_fun64420_ip) {
             case 0:
                 var3 = arg0;
                 var7 = arg1;
@@ -349,8 +349,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = _closure1_slot4;
                 var2 = var2.RELATIONSHIP_INCOMING_DISABLED;
                 if (!(var3 === var2)) {
-                    _fun64376_ip = 100;
-                    continue _fun64376
+                    _fun64420_ip = 100;
+                    continue _fun64420
                 }
             case 35:
                 var3 = _closure1_slot0;
@@ -383,4 +383,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.humanizeAbortCodeForA11y = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 660, 1234, 44, 795, 5854, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 660, 1234, 44, 795, 5857, 2]);

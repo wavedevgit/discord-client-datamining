@@ -20,16 +20,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b implements LifecycleEventListener {
 
     /* renamed from: o  reason: collision with root package name */
-    public static final a f50855o = new a(null);
+    public static final a f50871o = new a(null);
 
     /* renamed from: d  reason: collision with root package name */
-    private final ReactContext f50856d;
+    private final ReactContext f50872d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Function0 f50857e;
+    private final Function0 f50873e;
 
     /* renamed from: i  reason: collision with root package name */
-    private final C0671b f50858i;
+    private final C0671b f50874i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class a {
@@ -77,24 +77,24 @@ public final class b implements LifecycleEventListener {
             Intrinsics.checkNotNullParameter(intent, "intent");
             Parcelable parcelableExtra = intent.getParcelableExtra("newConfig");
             Intrinsics.checkNotNull(parcelableExtra);
-            b.f50855o.b(((Configuration) parcelableExtra).orientation, b.this.f50856d);
+            b.f50871o.b(((Configuration) parcelableExtra).orientation, b.this.f50872d);
         }
     }
 
     public b(ReactContext reactContext, Function0 onGetCurrentActivity) {
         Intrinsics.checkNotNullParameter(reactContext, "reactContext");
         Intrinsics.checkNotNullParameter(onGetCurrentActivity, "onGetCurrentActivity");
-        this.f50856d = reactContext;
-        this.f50857e = onGetCurrentActivity;
-        this.f50858i = new C0671b();
+        this.f50872d = reactContext;
+        this.f50873e = onGetCurrentActivity;
+        this.f50874i = new C0671b();
     }
 
     @Override // com.facebook.react.bridge.LifecycleEventListener
     public void onHostPause() {
-        Activity activity = (Activity) this.f50857e.invoke();
+        Activity activity = (Activity) this.f50873e.invoke();
         if (activity != null) {
             try {
-                activity.unregisterReceiver(this.f50858i);
+                activity.unregisterReceiver(this.f50874i);
                 return;
             } catch (IllegalArgumentException e10) {
                 p8.a.n(ReactConstants.TAG, "receiver already unregistered", e10);
@@ -106,13 +106,13 @@ public final class b implements LifecycleEventListener {
 
     @Override // com.facebook.react.bridge.LifecycleEventListener
     public void onHostResume() {
-        Activity activity = (Activity) this.f50857e.invoke();
+        Activity activity = (Activity) this.f50873e.invoke();
         if (activity != null) {
-            androidx.core.content.a.l(activity, this.f50858i, new IntentFilter("onConfigurationChanged"), 2);
+            androidx.core.content.a.l(activity, this.f50874i, new IntentFilter("onConfigurationChanged"), 2);
         } else {
             p8.a.m(ReactConstants.TAG, "no activity to register receiver");
         }
-        f50855o.b(this.f50856d.getResources().getConfiguration().orientation, this.f50856d);
+        f50871o.b(this.f50872d.getResources().getConfiguration().orientation, this.f50872d);
     }
 
     @Override // com.facebook.react.bridge.LifecycleEventListener

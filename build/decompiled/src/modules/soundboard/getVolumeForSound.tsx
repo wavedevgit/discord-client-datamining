@@ -27,13 +27,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/soundboard/getVolumeForSound.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Original name: getVolumeForSound, environment: var1
-        _fun98909: for (var _fun98909_ip = 0;;) switch (_fun98909_ip) {
+        _fun99163: for (var _fun99163_ip = 0;;) switch (_fun99163_ip) {
             case 0:
                 var4 = arguments[1];
                 var5 = undefined;
                 if (!(var4 === var5)) {
-                    _fun98909_ip = 81;
-                    continue _fun98909
+                    _fun99163_ip = 81;
+                    continue _fun99163
                 }
             case 9:
                 var1 = _closure1_slot0;
@@ -48,8 +48,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0 == var2;
                 var1 = undefined;
                 if (var3) {
-                    _fun98909_ip = 65;
-                    continue _fun98909
+                    _fun99163_ip = 65;
+                    continue _fun99163
                 }
             case 59:
                 var1 = var2.volume;
@@ -57,8 +57,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var0 != var1;
                 var0 = 100;
                 if (!var2) {
-                    _fun98909_ip = 78;
-                    continue _fun98909
+                    _fun99163_ip = 78;
+                    continue _fun99163
                 }
             case 75:
                 var0 = var1;
@@ -93,7 +93,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var3;
     var1 = function(arg0) { // Original name: getPerceptualSoundboardVolume, environment: var1
-        _fun98910: for (var _fun98910_ip = 0;;) switch (_fun98910_ip) {
+        _fun99164: for (var _fun99164_ip = 0;;) switch (_fun99164_ip) {
             case 0:
                 var4 = arg0;
                 var2 = _closure1_slot0;
@@ -108,8 +108,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 100;
                 var0 = var1;
                 if (!var5) {
-                    _fun98910_ip = 52;
-                    continue _fun98910
+                    _fun99164_ip = 52;
+                    continue _fun99164
                 }
             case 49:
                 var0 = var4;
@@ -121,4 +121,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getPerceptualSoundboardVolume = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3435, 3912, 1348, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3435, 3918, 1348, 2]);

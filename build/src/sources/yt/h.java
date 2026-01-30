@@ -8,20 +8,20 @@ import tt.k;
 public final class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Set f55044a = new LinkedHashSet();
+    private final Set f55060a = new LinkedHashSet();
 
     public final synchronized void a(k route) {
         Intrinsics.checkNotNullParameter(route, "route");
-        this.f55044a.remove(route);
+        this.f55060a.remove(route);
     }
 
     public final synchronized void b(k failedRoute) {
         Intrinsics.checkNotNullParameter(failedRoute, "failedRoute");
-        this.f55044a.add(failedRoute);
+        this.f55060a.add(failedRoute);
     }
 
     public final synchronized boolean c(k route) {
         Intrinsics.checkNotNullParameter(route, "route");
-        return this.f55044a.contains(route);
+        return this.f55060a.contains(route);
     }
 }

@@ -8,33 +8,33 @@ import x.w1;
 public final class h extends w1.h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final Rect f52886a;
+    private final Rect f52902a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final int f52887b;
+    private final int f52903b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final int f52888c;
+    private final int f52904c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final boolean f52889d;
+    private final boolean f52905d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Matrix f52890e;
+    private final Matrix f52906e;
 
     /* renamed from: f  reason: collision with root package name */
-    private final boolean f52891f;
+    private final boolean f52907f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public h(Rect rect, int i10, int i11, boolean z10, Matrix matrix, boolean z11) {
         if (rect != null) {
-            this.f52886a = rect;
-            this.f52887b = i10;
-            this.f52888c = i11;
-            this.f52889d = z10;
+            this.f52902a = rect;
+            this.f52903b = i10;
+            this.f52904c = i11;
+            this.f52905d = z10;
             if (matrix != null) {
-                this.f52890e = matrix;
-                this.f52891f = z11;
+                this.f52906e = matrix;
+                this.f52907f = z11;
                 return;
             }
             throw new NullPointerException("Null getSensorToBufferTransform");
@@ -44,27 +44,27 @@ public final class h extends w1.h {
 
     @Override // x.w1.h
     public Rect a() {
-        return this.f52886a;
+        return this.f52902a;
     }
 
     @Override // x.w1.h
     public int b() {
-        return this.f52887b;
+        return this.f52903b;
     }
 
     @Override // x.w1.h
     public Matrix c() {
-        return this.f52890e;
+        return this.f52906e;
     }
 
     @Override // x.w1.h
     public int d() {
-        return this.f52888c;
+        return this.f52904c;
     }
 
     @Override // x.w1.h
     public boolean e() {
-        return this.f52889d;
+        return this.f52905d;
     }
 
     public boolean equals(Object obj) {
@@ -73,7 +73,7 @@ public final class h extends w1.h {
         }
         if (obj instanceof w1.h) {
             w1.h hVar = (w1.h) obj;
-            if (this.f52886a.equals(hVar.a()) && this.f52887b == hVar.b() && this.f52888c == hVar.d() && this.f52889d == hVar.e() && this.f52890e.equals(hVar.c()) && this.f52891f == hVar.f()) {
+            if (this.f52902a.equals(hVar.a()) && this.f52903b == hVar.b() && this.f52904c == hVar.d() && this.f52905d == hVar.e() && this.f52906e.equals(hVar.c()) && this.f52907f == hVar.f()) {
                 return true;
             }
         }
@@ -82,26 +82,26 @@ public final class h extends w1.h {
 
     @Override // x.w1.h
     public boolean f() {
-        return this.f52891f;
+        return this.f52907f;
     }
 
     public int hashCode() {
         int i10;
-        int hashCode = (((((this.f52886a.hashCode() ^ 1000003) * 1000003) ^ this.f52887b) * 1000003) ^ this.f52888c) * 1000003;
+        int hashCode = (((((this.f52902a.hashCode() ^ 1000003) * 1000003) ^ this.f52903b) * 1000003) ^ this.f52904c) * 1000003;
         int i11 = 1237;
-        if (this.f52889d) {
+        if (this.f52905d) {
             i10 = 1231;
         } else {
             i10 = 1237;
         }
-        int hashCode2 = (((hashCode ^ i10) * 1000003) ^ this.f52890e.hashCode()) * 1000003;
-        if (this.f52891f) {
+        int hashCode2 = (((hashCode ^ i10) * 1000003) ^ this.f52906e.hashCode()) * 1000003;
+        if (this.f52907f) {
             i11 = 1231;
         }
         return hashCode2 ^ i11;
     }
 
     public String toString() {
-        return "TransformationInfo{getCropRect=" + this.f52886a + ", getRotationDegrees=" + this.f52887b + ", getTargetRotation=" + this.f52888c + ", hasCameraTransform=" + this.f52889d + ", getSensorToBufferTransform=" + this.f52890e + ", isMirroring=" + this.f52891f + "}";
+        return "TransformationInfo{getCropRect=" + this.f52902a + ", getRotationDegrees=" + this.f52903b + ", getTargetRotation=" + this.f52904c + ", hasCameraTransform=" + this.f52905d + ", getSensorToBufferTransform=" + this.f52906e + ", isMirroring=" + this.f52907f + "}";
     }
 }

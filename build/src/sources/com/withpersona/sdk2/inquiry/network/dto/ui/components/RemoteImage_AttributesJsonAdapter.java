@@ -135,7 +135,7 @@ public final class RemoteImage_AttributesJsonAdapter extends h {
         String str12 = str;
         Constructor<RemoteImage.Attributes> constructor = this.constructorRef;
         if (constructor == null) {
-            constructor = RemoteImage.Attributes.class.getDeclaredConstructor(String.class, RemoteImage.ContentType.class, String.class, String.class, String.class, RemoteImage.ContentType.class, JsonLogicBoolean.class, Integer.TYPE, c.f49081c);
+            constructor = RemoteImage.Attributes.class.getDeclaredConstructor(String.class, RemoteImage.ContentType.class, String.class, String.class, String.class, RemoteImage.ContentType.class, JsonLogicBoolean.class, Integer.TYPE, c.f49097c);
             this.constructorRef = constructor;
             Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
         }

@@ -9,7 +9,7 @@ import kotlin.reflect.jvm.internal.impl.types.KotlinType;
 final class d implements AnnotationDescriptor {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final d f34384a = new d();
+    public static final d f34400a = new d();
 
     private d() {
     }

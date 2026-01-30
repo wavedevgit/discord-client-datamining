@@ -5,14 +5,14 @@ import java.util.concurrent.Executor;
 final class h0 {
 
     /* renamed from: a  reason: collision with root package name */
-    final Executor f45993a;
+    final Executor f46009a;
 
     /* renamed from: b  reason: collision with root package name */
-    final Runnable f45994b;
+    final Runnable f46010b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ h0(Executor executor, Runnable runnable, g0 g0Var) {
-        this.f45993a = executor;
-        this.f45994b = runnable;
+        this.f46009a = executor;
+        this.f46010b = runnable;
     }
 }

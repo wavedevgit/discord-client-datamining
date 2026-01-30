@@ -3,10 +3,10 @@ package so;
 public final class n implements tq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final com.withpersona.sdk2.inquiry.internal.network.f f49127a;
+    private final com.withpersona.sdk2.inquiry.internal.network.f f49143a;
 
     public n(com.withpersona.sdk2.inquiry.internal.network.f fVar) {
-        this.f49127a = fVar;
+        this.f49143a = fVar;
     }
 
     public static n a(com.withpersona.sdk2.inquiry.internal.network.f fVar) {
@@ -20,6 +20,6 @@ public final class n implements tq.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public String get() {
-        return c(this.f49127a);
+        return c(this.f49143a);
     }
 }

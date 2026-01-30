@@ -25,107 +25,107 @@ public interface a0 {
     public static final Path P;
 
     /* renamed from: a  reason: collision with root package name */
-    public static final Integer f36846a = 1;
+    public static final Integer f36862a = 1;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final Integer f36847b = 2;
+    public static final Integer f36863b = 2;
 
     /* renamed from: c  reason: collision with root package name */
-    public static final Integer f36848c = 3;
+    public static final Integer f36864c = 3;
 
     /* renamed from: d  reason: collision with root package name */
-    public static final Integer f36849d = 4;
+    public static final Integer f36865d = 4;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final Integer f36850e = 5;
+    public static final Integer f36866e = 5;
 
     /* renamed from: f  reason: collision with root package name */
-    public static final PointF f36851f = new PointF();
+    public static final PointF f36867f = new PointF();
 
     /* renamed from: g  reason: collision with root package name */
-    public static final PointF f36852g = new PointF();
+    public static final PointF f36868g = new PointF();
 
     /* renamed from: h  reason: collision with root package name */
-    public static final Float f36853h;
+    public static final Float f36869h;
 
     /* renamed from: i  reason: collision with root package name */
-    public static final Float f36854i;
+    public static final Float f36870i;
 
     /* renamed from: j  reason: collision with root package name */
-    public static final Float f36855j;
+    public static final Float f36871j;
 
     /* renamed from: k  reason: collision with root package name */
-    public static final PointF f36856k;
+    public static final PointF f36872k;
 
     /* renamed from: l  reason: collision with root package name */
-    public static final PointF f36857l;
+    public static final PointF f36873l;
 
     /* renamed from: m  reason: collision with root package name */
-    public static final Float f36858m;
+    public static final Float f36874m;
 
     /* renamed from: n  reason: collision with root package name */
-    public static final PointF f36859n;
+    public static final PointF f36875n;
 
     /* renamed from: o  reason: collision with root package name */
-    public static final y5.d f36860o;
+    public static final y5.d f36876o;
 
     /* renamed from: p  reason: collision with root package name */
-    public static final Float f36861p;
+    public static final Float f36877p;
 
     /* renamed from: q  reason: collision with root package name */
-    public static final Float f36862q;
+    public static final Float f36878q;
 
     /* renamed from: r  reason: collision with root package name */
-    public static final Float f36863r;
+    public static final Float f36879r;
 
     /* renamed from: s  reason: collision with root package name */
-    public static final Float f36864s;
+    public static final Float f36880s;
 
     /* renamed from: t  reason: collision with root package name */
-    public static final Float f36865t;
+    public static final Float f36881t;
 
     /* renamed from: u  reason: collision with root package name */
-    public static final Float f36866u;
+    public static final Float f36882u;
 
     /* renamed from: v  reason: collision with root package name */
-    public static final Float f36867v;
+    public static final Float f36883v;
 
     /* renamed from: w  reason: collision with root package name */
-    public static final Float f36868w;
+    public static final Float f36884w;
 
     /* renamed from: x  reason: collision with root package name */
-    public static final Float f36869x;
+    public static final Float f36885x;
 
     /* renamed from: y  reason: collision with root package name */
-    public static final Float f36870y;
+    public static final Float f36886y;
 
     /* renamed from: z  reason: collision with root package name */
-    public static final Float f36871z;
+    public static final Float f36887z;
 
     static {
         Float valueOf = Float.valueOf(15.0f);
-        f36853h = valueOf;
+        f36869h = valueOf;
         Float valueOf2 = Float.valueOf(16.0f);
-        f36854i = valueOf2;
+        f36870i = valueOf2;
         Float valueOf3 = Float.valueOf(17.0f);
-        f36855j = valueOf3;
-        f36856k = new PointF();
-        f36857l = new PointF();
+        f36871j = valueOf3;
+        f36872k = new PointF();
+        f36873l = new PointF();
         Float valueOf4 = Float.valueOf(0.0f);
-        f36858m = valueOf4;
-        f36859n = new PointF();
-        f36860o = new y5.d();
-        f36861p = Float.valueOf(1.0f);
-        f36862q = valueOf4;
-        f36863r = valueOf4;
-        f36864s = Float.valueOf(2.0f);
-        f36865t = Float.valueOf(3.0f);
-        f36866u = Float.valueOf(4.0f);
-        f36867v = Float.valueOf(5.0f);
-        f36868w = Float.valueOf(6.0f);
-        f36869x = Float.valueOf(7.0f);
-        f36870y = Float.valueOf(8.0f);
-        f36871z = Float.valueOf(9.0f);
+        f36874m = valueOf4;
+        f36875n = new PointF();
+        f36876o = new y5.d();
+        f36877p = Float.valueOf(1.0f);
+        f36878q = valueOf4;
+        f36879r = valueOf4;
+        f36880s = Float.valueOf(2.0f);
+        f36881t = Float.valueOf(3.0f);
+        f36882u = Float.valueOf(4.0f);
+        f36883v = Float.valueOf(5.0f);
+        f36884w = Float.valueOf(6.0f);
+        f36885x = Float.valueOf(7.0f);
+        f36886y = Float.valueOf(8.0f);
+        f36887z = Float.valueOf(9.0f);
         A = Float.valueOf(10.0f);
         B = Float.valueOf(11.0f);
         C = Float.valueOf(12.0f);

@@ -11,18 +11,18 @@ import jp.n;
 public final class d implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final View f37418a;
+    private final View f37434a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final ProgressBar f37419b;
+    public final ProgressBar f37435b;
 
     private d(View view, ProgressBar progressBar) {
-        this.f37418a = view;
-        this.f37419b = progressBar;
+        this.f37434a = view;
+        this.f37435b = progressBar;
     }
 
     public static d a(View view) {
-        int i10 = m.f32337k;
+        int i10 = m.f32353k;
         ProgressBar progressBar = (ProgressBar) e4.a.a(view, i10);
         if (progressBar != null) {
             return new d(view, progressBar);
@@ -32,7 +32,7 @@ public final class d implements ViewBinding {
 
     public static d b(LayoutInflater layoutInflater, ViewGroup viewGroup) {
         if (viewGroup != null) {
-            layoutInflater.inflate(n.f32343d, viewGroup);
+            layoutInflater.inflate(n.f32359d, viewGroup);
             return a(viewGroup);
         }
         throw new NullPointerException("parent");
@@ -40,6 +40,6 @@ public final class d implements ViewBinding {
 
     @Override // androidx.viewbinding.ViewBinding
     public View getRoot() {
-        return this.f37418a;
+        return this.f37434a;
     }
 }

@@ -6,13 +6,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2 = exports;
     var8 = dependencyMap;
     var5 = function(arg0) { // Original name: canReportUser, environment: var1
-        _fun50448: for (var _fun50448_ip = 0;;) switch (_fun50448_ip) {
+        _fun50494: for (var _fun50494_ip = 0;;) switch (_fun50494_ip) {
             case 0:
                 var2 = arg0;
                 var0 = null;
                 if (!(var0 != var2)) {
-                    _fun50448_ip = 66;
-                    continue _fun50448
+                    _fun50494_ip = 66;
+                    continue _fun50494
                 }
             case 9:
                 var3 = var2.id;
@@ -21,15 +21,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var4)();
                 var0 = var0 != var1;
                 if (!var0) {
-                    _fun50448_ip = 64;
-                    continue _fun50448
+                    _fun50494_ip = 64;
+                    continue _fun50494
                 }
             case 37:
                 var1 = var1.id;
                 var1 = var1 !== var3;
                 if (!var1) {
-                    _fun50448_ip = 61;
-                    continue _fun50448
+                    _fun50494_ip = 61;
+                    continue _fun50494
                 }
             case 49:
                 var3 = var2.system;
@@ -46,14 +46,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot6 = var5;
     var4 = function(arg0) { // Original name: canReportMessage, environment: var1
-        _fun50449: for (var _fun50449_ip = 0;;) switch (_fun50449_ip) {
+        _fun50495: for (var _fun50495_ip = 0;;) switch (_fun50495_ip) {
             case 0:
                 var1 = arg0;
                 var0 = null;
                 var0 = var0 != var1;
                 if (!var0) {
-                    _fun50449_ip = 32;
-                    continue _fun50449
+                    _fun50495_ip = 32;
+                    continue _fun50495
                 }
             case 12:
                 var3 = _closure1_slot6;
@@ -66,7 +66,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot7 = var4;
     var3 = function(arg0) { // Original name: canReportAndDeleteInChannel, environment: var1
-        _fun50450: for (var _fun50450_ip = 0;;) switch (_fun50450_ip) {
+        _fun50496: for (var _fun50496_ip = 0;;) switch (_fun50496_ip) {
             case 0:
                 var7 = arg0;
                 var2 = _closure1_slot0;
@@ -74,24 +74,24 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var0.bind(var2)(var7);
                 var0 = null;
                 if (!(var0 != var4)) {
-                    _fun50450_ip = 151;
-                    continue _fun50450
+                    _fun50496_ip = 151;
+                    continue _fun50496
                 }
             case 29:
                 var3 = var4.type;
                 var2 = _closure1_slot4;
                 var2 = var2.DM;
                 if (!(var3 !== var2)) {
-                    _fun50450_ip = 147;
-                    continue _fun50450
+                    _fun50496_ip = 147;
+                    continue _fun50496
                 }
             case 48:
                 var3 = var4.type;
                 var2 = _closure1_slot4;
                 var2 = var2.GROUP_DM;
                 if (!(var3 !== var2)) {
-                    _fun50450_ip = 147;
-                    continue _fun50450
+                    _fun50496_ip = 147;
+                    continue _fun50496
                 }
             case 67:
                 var6 = _closure1_slot2;
@@ -102,8 +102,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2.channelId = var7;
                 var2 = var5.bind(var6)(var3, var2);
                 if (var2) {
-                    _fun50450_ip = 106;
-                    continue _fun50450
+                    _fun50496_ip = 106;
+                    continue _fun50496
                 }
             case 102:
                 var2 = false;
@@ -116,8 +116,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var2.bind(var3)(var1);
                 var0 = var0 != var2;
                 if (!var0) {
-                    _fun50450_ip = 145;
-                    continue _fun50450
+                    _fun50496_ip = 145;
+                    continue _fun50496
                 }
             case 138:
                 var1 = 50;
@@ -175,14 +175,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.canReportMessage = var4;
     var2.canReportAndDeleteInChannel = var3;
     var1 = function(arg0) { // Original name: canDeleteAndReportMessage, environment: var1
-        _fun50451: for (var _fun50451_ip = 0;;) switch (_fun50451_ip) {
+        _fun50497: for (var _fun50497_ip = 0;;) switch (_fun50497_ip) {
             case 0:
                 var2 = arg0;
                 var0 = null;
                 var0 = var0 != var2;
                 if (!var0) {
-                    _fun50451_ip = 26;
-                    continue _fun50451
+                    _fun50497_ip = 26;
+                    continue _fun50497
                 }
             case 12:
                 var3 = _closure1_slot7;
@@ -190,8 +190,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var3.bind(var1)(var2);
             case 26:
                 if (!var0) {
-                    _fun50451_ip = 53;
-                    continue _fun50451
+                    _fun50497_ip = 53;
+                    continue _fun50497
                 }
             case 29:
                 var3 = _closure1_slot8;

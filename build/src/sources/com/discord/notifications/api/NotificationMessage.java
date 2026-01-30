@@ -55,7 +55,7 @@ public final class NotificationMessage {
     }
 
     static {
-        o oVar = o.f31103e;
+        o oVar = o.f31119e;
         $childSerializers = new Lazy[]{l.a(oVar, new Function0() { // from class: p7.f
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {

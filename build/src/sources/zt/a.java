@@ -18,11 +18,11 @@ import okhttp3.ResponseBody;
 public final class a implements Interceptor {
 
     /* renamed from: a  reason: collision with root package name */
-    private final CookieJar f56106a;
+    private final CookieJar f56122a;
 
     public a(CookieJar cookieJar) {
         Intrinsics.checkNotNullParameter(cookieJar, "cookieJar");
-        this.f56106a = cookieJar;
+        this.f56122a = cookieJar;
     }
 
     private final String a(List list) {
@@ -79,7 +79,7 @@ public final class a implements Interceptor {
             k10.e("Accept-Encoding", "gzip");
             z10 = true;
         }
-        List loadForRequest = this.f56106a.loadForRequest(h10.n());
+        List loadForRequest = this.f56122a.loadForRequest(h10.n());
         if (!loadForRequest.isEmpty()) {
             k10.e("Cookie", a(loadForRequest));
         }
@@ -87,7 +87,7 @@ public final class a implements Interceptor {
             k10.e("User-Agent", "okhttp/4.12.0");
         }
         Response a10 = chain.a(k10.b());
-        e.f(this.f56106a, h10.n(), a10.E0());
+        e.f(this.f56122a, h10.n(), a10.E0());
         Response.a r10 = a10.M0().r(h10);
         if (z10 && StringsKt.A("gzip", Response.D0(a10, "Content-Encoding", null, 2, null), true) && e.b(a10) && (x10 = a10.x()) != null) {
             m mVar = new m(x10.source());

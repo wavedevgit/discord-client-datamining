@@ -6,41 +6,41 @@ import ef.a;
 public abstract class d {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a.g f49535a;
+    public static final a.g f49551a;
 
     /* renamed from: b  reason: collision with root package name */
-    public static final a.g f49536b;
+    public static final a.g f49552b;
 
     /* renamed from: c  reason: collision with root package name */
-    public static final a.AbstractC0290a f49537c;
+    public static final a.AbstractC0290a f49553c;
 
     /* renamed from: d  reason: collision with root package name */
-    static final a.AbstractC0290a f49538d;
+    static final a.AbstractC0290a f49554d;
 
     /* renamed from: e  reason: collision with root package name */
-    public static final Scope f49539e;
+    public static final Scope f49555e;
 
     /* renamed from: f  reason: collision with root package name */
-    public static final Scope f49540f;
+    public static final Scope f49556f;
 
     /* renamed from: g  reason: collision with root package name */
-    public static final ef.a f49541g;
+    public static final ef.a f49557g;
 
     /* renamed from: h  reason: collision with root package name */
-    public static final ef.a f49542h;
+    public static final ef.a f49558h;
 
     static {
         a.g gVar = new a.g();
-        f49535a = gVar;
+        f49551a = gVar;
         a.g gVar2 = new a.g();
-        f49536b = gVar2;
+        f49552b = gVar2;
         b bVar = new b();
-        f49537c = bVar;
+        f49553c = bVar;
         c cVar = new c();
-        f49538d = cVar;
-        f49539e = new Scope("profile");
-        f49540f = new Scope("email");
-        f49541g = new ef.a("SignIn.API", bVar, gVar);
-        f49542h = new ef.a("SignIn.INTERNAL_API", cVar, gVar2);
+        f49554d = cVar;
+        f49555e = new Scope("profile");
+        f49556f = new Scope("email");
+        f49557g = new ef.a("SignIn.API", bVar, gVar);
+        f49558h = new ef.a("SignIn.INTERNAL_API", cVar, gVar2);
     }
 }

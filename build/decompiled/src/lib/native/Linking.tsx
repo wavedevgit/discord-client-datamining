@@ -22,13 +22,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot2 = var1;
     var1 = {};
     var6 = function(arg0, arg1) { // Original name: openURL, environment: var3
-        _fun27026: for (var _fun27026_ip = 0;;) switch (_fun27026_ip) {
+        _fun27027: for (var _fun27027_ip = 0;;) switch (_fun27027_ip) {
             case 0:
                 var1 = arguments[2];
                 var0 = undefined;
                 if (!(var1 === var0)) {
-                    _fun27026_ip = 11;
-                    continue _fun27026
+                    _fun27027_ip = 11;
+                    continue _fun27027
                 }
             case 9:
                 var1 = true;

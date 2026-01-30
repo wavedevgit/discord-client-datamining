@@ -9,33 +9,33 @@ import java.io.Reader;
 class g extends Reader {
 
     /* renamed from: d  reason: collision with root package name */
-    private final PushbackInputStream f46216d;
+    private final PushbackInputStream f46232d;
 
     /* renamed from: e  reason: collision with root package name */
-    private BufferedReader f46217e = null;
+    private BufferedReader f46233e = null;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public g(InputStream inputStream) {
-        this.f46216d = new PushbackInputStream(inputStream, 3);
+        this.f46232d = new PushbackInputStream(inputStream, 3);
     }
 
     private void a() {
-        if (this.f46217e != null) {
+        if (this.f46233e != null) {
             return;
         }
         byte[] bArr = new byte[3];
-        int read = this.f46216d.read(bArr, 0, 3);
+        int read = this.f46232d.read(bArr, 0, 3);
         if ((read != 3 || bArr[0] != -17 || bArr[1] != -69 || bArr[2] != -65) && read > 0) {
-            this.f46216d.unread(bArr, 0, read);
+            this.f46232d.unread(bArr, 0, read);
         }
-        this.f46217e = new BufferedReader(new InputStreamReader(this.f46216d, "UTF-8"));
+        this.f46233e = new BufferedReader(new InputStreamReader(this.f46232d, "UTF-8"));
     }
 
     @Override // java.io.Reader, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        BufferedReader bufferedReader = this.f46217e;
+        BufferedReader bufferedReader = this.f46233e;
         if (bufferedReader == null) {
-            this.f46216d.close();
+            this.f46232d.close();
         } else {
             bufferedReader.close();
         }
@@ -43,18 +43,18 @@ class g extends Reader {
 
     public String h() {
         a();
-        return this.f46217e.readLine();
+        return this.f46233e.readLine();
     }
 
     @Override // java.io.Reader
     public int read(char[] cArr, int i10, int i11) {
         a();
-        return this.f46217e.read(cArr, i10, i11);
+        return this.f46233e.read(cArr, i10, i11);
     }
 
     @Override // java.io.Reader
     public boolean ready() {
         a();
-        return this.f46217e.ready();
+        return this.f46233e.ready();
     }
 }

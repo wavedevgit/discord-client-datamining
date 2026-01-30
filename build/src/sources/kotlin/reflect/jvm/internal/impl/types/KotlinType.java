@@ -13,7 +13,7 @@ import org.jetbrains.annotations.NotNull;
 public abstract class KotlinType implements Annotated, KotlinTypeMarker {
 
     /* renamed from: d  reason: collision with root package name */
-    private int f35854d;
+    private int f35870d;
 
     public /* synthetic */ KotlinType(DefaultConstructorMarker defaultConstructorMarker) {
         this();
@@ -59,12 +59,12 @@ public abstract class KotlinType implements Annotated, KotlinTypeMarker {
     public abstract MemberScope getMemberScope();
 
     public final int hashCode() {
-        int i10 = this.f35854d;
+        int i10 = this.f35870d;
         if (i10 != 0) {
             return i10;
         }
         int a10 = a();
-        this.f35854d = a10;
+        this.f35870d = a10;
         return a10;
     }
 

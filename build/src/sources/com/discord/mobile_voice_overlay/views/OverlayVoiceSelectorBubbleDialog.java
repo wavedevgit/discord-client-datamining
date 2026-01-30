@@ -84,7 +84,7 @@ public final class OverlayVoiceSelectorBubbleDialog extends OverlayDialog {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit adapter$lambda$0(OverlayVoiceSelectorBubbleDialog overlayVoiceSelectorBubbleDialog, ChannelId channelId) {
         overlayVoiceSelectorBubbleDialog.onChannelSelected.invoke(channelId);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private final void bindAssets() {
@@ -126,20 +126,20 @@ public final class OverlayVoiceSelectorBubbleDialog extends OverlayDialog {
             if (!isEmpty) {
                 this.adapter.setResults(mobileVoiceOverlayData.getChannelSelectorResults());
             }
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         return null;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onChannelSelected$lambda$2(ChannelId channelId) {
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onTextChanged$lambda$1(String it) {
         Intrinsics.checkNotNullParameter(it, "it");
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private final void onViewBound() {

@@ -3,6 +3,6 @@ package or;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
 public class d extends c {
     public static Object f() {
-        return a.f44613d;
+        return a.f44629d;
     }
 }

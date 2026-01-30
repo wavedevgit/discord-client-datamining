@@ -18,7 +18,7 @@ public final class v extends s3.b {
     @Override // s3.b
     public void a(x3.g db2) {
         Intrinsics.checkNotNullParameter(db2, "db");
-        if (this.f48697b >= 10) {
+        if (this.f48713b >= 10) {
             db2.h0("INSERT OR REPLACE INTO `Preference` (`key`, `long_value`) VALUES (@key, @long_value)", new Object[]{"reschedule_needed", 1});
         } else {
             this.f5757c.getSharedPreferences("androidx.work.util.preferences", 0).edit().putBoolean("reschedule_needed", true).apply();

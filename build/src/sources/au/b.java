@@ -430,7 +430,7 @@ public final class b implements zt.d {
     /* JADX INFO: Access modifiers changed from: private */
     public final void r(l lVar) {
         Timeout i10 = lVar.i();
-        lVar.j(Timeout.f44369e);
+        lVar.j(Timeout.f44385e);
         i10.a();
         i10.b();
     }
@@ -561,7 +561,7 @@ public final class b implements zt.d {
     @Override // zt.d
     public void f(Request request) {
         Intrinsics.checkNotNullParameter(request, "request");
-        i iVar = i.f56126a;
+        i iVar = i.f56142a;
         Proxy.Type type = c().A().b().type();
         Intrinsics.checkNotNullExpressionValue(type, "connection.route().proxy.type()");
         A(request.h(), iVar.a(request, type));
@@ -574,12 +574,12 @@ public final class b implements zt.d {
             throw new IllegalStateException(("state: " + this.f6935e).toString());
         }
         try {
-            k a10 = k.f56129d.a(this.f6936f.b());
-            Response.a k10 = new Response.a().p(a10.f56130a).g(a10.f56131b).m(a10.f56132c).k(this.f6936f.a());
-            if (z10 && a10.f56131b == 100) {
+            k a10 = k.f56145d.a(this.f6936f.b());
+            Response.a k10 = new Response.a().p(a10.f56146a).g(a10.f56147b).m(a10.f56148c).k(this.f6936f.a());
+            if (z10 && a10.f56147b == 100) {
                 return null;
             }
-            int i11 = a10.f56131b;
+            int i11 = a10.f56147b;
             if (i11 == 100) {
                 this.f6935e = 3;
                 return k10;

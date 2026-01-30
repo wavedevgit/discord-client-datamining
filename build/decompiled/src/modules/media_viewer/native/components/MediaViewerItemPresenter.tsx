@@ -53,7 +53,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/media_viewer/native/components/MediaViewerItemPresenter.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: MediaViewerItemPresenter, environment: var1
-        _fun76322: for (var _fun76322_ip = 0;;) switch (_fun76322_ip) {
+        _fun76366: for (var _fun76366_ip = 0;;) switch (_fun76366_ip) {
             case 0:
                 var1 = arg0;
                 var22 = var1.source;
@@ -123,8 +123,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var16.isArray;
                 var2 = var2.bind(var16)(var22);
                 if (var2) {
-                    _fun76322_ip = 406;
-                    continue _fun76322
+                    _fun76366_ip = 406;
+                    continue _fun76366
                 }
             case 295:
                 var16 = var7.push;
@@ -149,14 +149,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2.panGestureConfig = var10;
                 var2 = var9.bind(var3)(var2);
                 var2 = var16.bind(var7)(var2);
-                _fun76322_ip = 678;
-                continue _fun76322;
+                _fun76366_ip = 678;
+                continue _fun76366;
             case 406:
                 var21 = 1;
                 var18 = var1 <= var21;
                 if (!var18) {
-                    _fun76322_ip = 532;
-                    continue _fun76322
+                    _fun76366_ip = 532;
+                    continue _fun76366
                 }
             case 416:
                 var16 = var7.push;
@@ -186,8 +186,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var16.bind(var7)(var2);
             case 532:
                 if (!(var1 >= var21)) {
-                    _fun76322_ip = 678;
-                    continue _fun76322
+                    _fun76366_ip = 678;
+                    continue _fun76366
                 }
             case 539:
                 var2 = var7.push;
@@ -210,8 +210,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1.onError = var17;
                 var17 = 'auto';
                 if (!var18) {
-                    _fun76322_ip = 632;
-                    continue _fun76322
+                    _fun76366_ip = 632;
+                    continue _fun76366
                 }
             case 628:
                 var17 = 'none';
@@ -255,14 +255,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = var4.resizeMode;
                 var2 = 'cover';
                 if (!(var2 !== var13)) {
-                    _fun76322_ip = 831;
-                    continue _fun76322
+                    _fun76366_ip = 831;
+                    continue _fun76366
                 }
             case 796:
                 var2 = 1;
                 if (!(var1 > var9)) {
-                    _fun76322_ip = 806;
-                    continue _fun76322
+                    _fun76366_ip = 806;
+                    continue _fun76366
                 }
             case 803:
                 var2 = var1;
@@ -273,8 +273,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 _closure2_slot7 = var13;
                 var16 = var8;
                 var17 = var6;
-                _fun76322_ip = 905;
-                continue _fun76322;
+                _fun76366_ip = 905;
+                continue _fun76366;
             case 831:
                 var2 = var4.width;
                 _closure2_slot10 = var2;
@@ -468,4 +468,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 9696, 8798, 9695, 3677, 3863, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 9701, 8802, 9700, 3679, 3869, 2]);

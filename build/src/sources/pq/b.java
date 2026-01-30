@@ -5,61 +5,61 @@ import android.graphics.Bitmap;
 public class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private int f46142a;
+    private int f46158a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f46143b;
+    private int f46159b;
 
     /* renamed from: c  reason: collision with root package name */
-    private Bitmap.CompressFormat f46144c;
+    private Bitmap.CompressFormat f46160c;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f46145d;
+    private int f46161d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f46146e;
+    private String f46162e;
 
     /* renamed from: f  reason: collision with root package name */
-    private String f46147f;
+    private String f46163f;
 
     /* renamed from: g  reason: collision with root package name */
-    private c f46148g;
+    private c f46164g;
 
     public b(int i10, int i11, Bitmap.CompressFormat compressFormat, int i12, String str, String str2, c cVar) {
-        this.f46142a = i10;
-        this.f46143b = i11;
-        this.f46144c = compressFormat;
-        this.f46145d = i12;
-        this.f46146e = str;
-        this.f46147f = str2;
-        this.f46148g = cVar;
+        this.f46158a = i10;
+        this.f46159b = i11;
+        this.f46160c = compressFormat;
+        this.f46161d = i12;
+        this.f46162e = str;
+        this.f46163f = str2;
+        this.f46164g = cVar;
     }
 
     public Bitmap.CompressFormat a() {
-        return this.f46144c;
+        return this.f46160c;
     }
 
     public int b() {
-        return this.f46145d;
+        return this.f46161d;
     }
 
     public c c() {
-        return this.f46148g;
+        return this.f46164g;
     }
 
     public String d() {
-        return this.f46146e;
+        return this.f46162e;
     }
 
     public String e() {
-        return this.f46147f;
+        return this.f46163f;
     }
 
     public int f() {
-        return this.f46142a;
+        return this.f46158a;
     }
 
     public int g() {
-        return this.f46143b;
+        return this.f46159b;
     }
 }

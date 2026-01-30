@@ -93,14 +93,14 @@ class e {
     }
 
     private static void c(qc.c cVar, MediaCodec.CryptoInfo cryptoInfo) {
-        cryptoInfo.numSubSamples = cVar.f47068f;
-        cryptoInfo.numBytesOfClearData = e(cVar.f47066d, cryptoInfo.numBytesOfClearData);
-        cryptoInfo.numBytesOfEncryptedData = e(cVar.f47067e, cryptoInfo.numBytesOfEncryptedData);
-        cryptoInfo.key = (byte[]) ne.a.e(d(cVar.f47064b, cryptoInfo.key));
-        cryptoInfo.iv = (byte[]) ne.a.e(d(cVar.f47063a, cryptoInfo.iv));
-        cryptoInfo.mode = cVar.f47065c;
-        if (w0.f40279a >= 24) {
-            cryptoInfo.setPattern(new MediaCodec.CryptoInfo.Pattern(cVar.f47069g, cVar.f47070h));
+        cryptoInfo.numSubSamples = cVar.f47084f;
+        cryptoInfo.numBytesOfClearData = e(cVar.f47082d, cryptoInfo.numBytesOfClearData);
+        cryptoInfo.numBytesOfEncryptedData = e(cVar.f47083e, cryptoInfo.numBytesOfEncryptedData);
+        cryptoInfo.key = (byte[]) ne.a.e(d(cVar.f47080b, cryptoInfo.key));
+        cryptoInfo.iv = (byte[]) ne.a.e(d(cVar.f47079a, cryptoInfo.iv));
+        cryptoInfo.mode = cVar.f47081c;
+        if (w0.f40295a >= 24) {
+            cryptoInfo.setPattern(new MediaCodec.CryptoInfo.Pattern(cVar.f47085g, cVar.f47086h));
         }
     }
 

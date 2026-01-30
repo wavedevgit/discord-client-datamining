@@ -8,13 +8,13 @@ import java.util.Map;
 public final class m {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int[] f43969a = new int[4];
+    private final int[] f43985a = new int[4];
 
     /* renamed from: b  reason: collision with root package name */
-    private final StringBuilder f43970b = new StringBuilder();
+    private final StringBuilder f43986b = new StringBuilder();
 
     private int a(gk.a aVar, int[] iArr, StringBuilder sb2) {
-        int[] iArr2 = this.f43969a;
+        int[] iArr2 = this.f43985a;
         iArr2[0] = 0;
         iArr2[1] = 0;
         iArr2[2] = 0;
@@ -23,7 +23,7 @@ public final class m {
         int i10 = iArr[1];
         int i11 = 0;
         for (int i12 = 0; i12 < 2 && i10 < l10; i12++) {
-            int i13 = p.i(aVar, iArr2, i10, p.f43981h);
+            int i13 = p.i(aVar, iArr2, i10, p.f43997h);
             sb2.append((char) ((i13 % 10) + 48));
             for (int i14 : iArr2) {
                 i10 += i14;
@@ -55,7 +55,7 @@ public final class m {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Result b(int i10, gk.a aVar, int[] iArr) {
-        StringBuilder sb2 = this.f43970b;
+        StringBuilder sb2 = this.f43986b;
         sb2.setLength(0);
         int a10 = a(aVar, iArr, sb2);
         String sb3 = sb2.toString();

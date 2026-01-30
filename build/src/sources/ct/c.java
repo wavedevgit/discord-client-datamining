@@ -162,12 +162,12 @@ public abstract class c extends g1 implements bt.f {
         Intrinsics.checkNotNullParameter(descriptor, "descriptor");
         JsonElement p02 = p0();
         zs.k kind = descriptor.getKind();
-        if (!Intrinsics.areEqual(kind, l.b.f56103a) && !(kind instanceof zs.d)) {
-            if (Intrinsics.areEqual(kind, l.c.f56104a)) {
+        if (!Intrinsics.areEqual(kind, l.b.f56119a) && !(kind instanceof zs.d)) {
+            if (Intrinsics.areEqual(kind, l.c.f56120a)) {
                 Json d10 = d();
                 SerialDescriptor a10 = f1.a(descriptor.g(0), d10.a());
                 zs.k kind2 = a10.getKind();
-                if (!(kind2 instanceof zs.e) && !Intrinsics.areEqual(kind2, k.b.f56101a)) {
+                if (!(kind2 instanceof zs.e) && !Intrinsics.areEqual(kind2, k.b.f56117a)) {
                     if (d10.e().c()) {
                         Json d11 = d();
                         String h10 = descriptor.h();

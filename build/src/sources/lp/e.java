@@ -10,14 +10,14 @@ import jp.n;
 public final class e implements ViewBinding {
 
     /* renamed from: a  reason: collision with root package name */
-    private final ThemeableLottieAnimationView f37420a;
+    private final ThemeableLottieAnimationView f37436a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final ThemeableLottieAnimationView f37421b;
+    public final ThemeableLottieAnimationView f37437b;
 
     private e(ThemeableLottieAnimationView themeableLottieAnimationView, ThemeableLottieAnimationView themeableLottieAnimationView2) {
-        this.f37420a = themeableLottieAnimationView;
-        this.f37421b = themeableLottieAnimationView2;
+        this.f37436a = themeableLottieAnimationView;
+        this.f37437b = themeableLottieAnimationView2;
     }
 
     public static e a(View view) {
@@ -33,7 +33,7 @@ public final class e implements ViewBinding {
     }
 
     public static e d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
-        View inflate = layoutInflater.inflate(n.f32344e, viewGroup, false);
+        View inflate = layoutInflater.inflate(n.f32360e, viewGroup, false);
         if (z10) {
             viewGroup.addView(inflate);
         }
@@ -43,6 +43,6 @@ public final class e implements ViewBinding {
     @Override // androidx.viewbinding.ViewBinding
     /* renamed from: b */
     public ThemeableLottieAnimationView getRoot() {
-        return this.f37420a;
+        return this.f37436a;
     }
 }

@@ -37,7 +37,7 @@ public abstract class i {
             rect.offset(iArr[0], iArr[1]);
             return;
         }
-        jm.a.e(jm.a.f32237a, "View.copyBoundsInWindow", "Can not copy bounds as view is not attached to window", null, 4, null);
+        jm.a.e(jm.a.f32253a, "View.copyBoundsInWindow", "Can not copy bounds as view is not attached to window", null, 4, null);
     }
 
     public static final int[] b(View view) {

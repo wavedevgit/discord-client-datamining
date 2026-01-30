@@ -7,16 +7,16 @@ import kotlin.jvm.functions.Function0;
 public class e implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final LazyJavaAnnotationDescriptor f34254d;
+    private final LazyJavaAnnotationDescriptor f34270d;
 
     public e(LazyJavaAnnotationDescriptor lazyJavaAnnotationDescriptor) {
-        this.f34254d = lazyJavaAnnotationDescriptor;
+        this.f34270d = lazyJavaAnnotationDescriptor;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         Map d10;
-        d10 = LazyJavaAnnotationDescriptor.d(this.f34254d);
+        d10 = LazyJavaAnnotationDescriptor.d(this.f34270d);
         return d10;
     }
 }

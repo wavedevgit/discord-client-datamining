@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var5;
     var _closure1_slot1 = var6;
     var3 = function(arg0) { // Original name: getGoLiveDefaultMultiwatchExperimentConfig, environment: var1
-        _fun64298: for (var _fun64298_ip = 0;;) switch (_fun64298_ip) {
+        _fun64342: for (var _fun64342_ip = 0;;) switch (_fun64342_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.location;
@@ -29,16 +29,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var0.isInHoldout;
                 var1 = _closure1_slot3;
                 if (var0) {
-                    _fun64298_ip = 98;
-                    continue _fun64298
+                    _fun64342_ip = 98;
+                    continue _fun64342
                 }
             case 79:
                 var2 = var1.getConfig;
                 var0 = {};
                 var0.location = var3;
                 var0 = var2.bind(var1)(var0);
-                _fun64298_ip = 110;
-                continue _fun64298;
+                _fun64342_ip = 110;
+                continue _fun64342;
             case 98:
                 var1 = var1.definition;
                 var0 = var1.defaultConfig;
@@ -117,4 +117,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useGoLiveDefaultMultiwatchExperimentConfig = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1211, 1302, 3905, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1211, 1302, 3911, 566, 2]);

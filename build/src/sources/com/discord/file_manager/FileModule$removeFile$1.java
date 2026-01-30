@@ -60,20 +60,20 @@ final class FileModule$removeFile$1 extends k implements Function2<CoroutineScop
                 } catch (Exception e10) {
                     this.$promise.reject("err", "Cannot delete the file", e10);
                 }
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
             Promise promise = this.$promise;
             String str2 = this.$storageDir;
             hashMap2 = this.this$0.storageDirs;
             Set keySet = hashMap2.keySet();
             promise.reject("err", "Unknown storage directory " + str2 + ". Supported storage directories: " + keySet);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileModule$removeFile$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((FileModule$removeFile$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

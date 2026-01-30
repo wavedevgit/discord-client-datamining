@@ -94,13 +94,13 @@ public final class h {
             int hashCode = str.hashCode();
             if (hashCode != -2056856391) {
                 if (hashCode == -1711584601 && str.equals("SANDBOX")) {
-                    return mo.f.f39393e;
+                    return mo.f.f39409e;
                 }
             } else if (str.equals("PRODUCTION")) {
-                return mo.f.f39392d;
+                return mo.f.f39408d;
             }
         }
-        return mo.f.f39392d;
+        return mo.f.f39408d;
     }
 
     public final String g() {

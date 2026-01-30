@@ -16,16 +16,16 @@ import kotlin.jvm.internal.Intrinsics;
 public final class j {
 
     /* renamed from: d  reason: collision with root package name */
-    public static final a f39114d = new a(null);
+    public static final a f39130d = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final ReactApplicationContext f39115a;
+    private final ReactApplicationContext f39131a;
 
     /* renamed from: b  reason: collision with root package name */
-    private WindowInsetsControllerCompat f39116b;
+    private WindowInsetsControllerCompat f39132b;
 
     /* renamed from: c  reason: collision with root package name */
-    private WeakReference f39117c;
+    private WeakReference f39133c;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
@@ -39,25 +39,25 @@ public final class j {
 
     public j(ReactApplicationContext mReactContext) {
         Intrinsics.checkNotNullParameter(mReactContext, "mReactContext");
-        this.f39115a = mReactContext;
-        this.f39117c = new WeakReference(null);
+        this.f39131a = mReactContext;
+        this.f39133c = new WeakReference(null);
     }
 
     private final WindowInsetsControllerCompat f() {
         String str;
-        Activity currentActivity = this.f39115a.getCurrentActivity();
-        if (this.f39116b == null || !Intrinsics.areEqual(currentActivity, this.f39117c.get())) {
+        Activity currentActivity = this.f39131a.getCurrentActivity();
+        if (this.f39132b == null || !Intrinsics.areEqual(currentActivity, this.f39133c.get())) {
             if (currentActivity == null) {
-                jm.a aVar = jm.a.f32237a;
-                str = k.f39118a;
+                jm.a aVar = jm.a.f32253a;
+                str = k.f39134a;
                 jm.a.e(aVar, str, "StatusBarManagerCompatModule: can not get `WindowInsetsControllerCompat` because current activity is null.", null, 4, null);
-                return this.f39116b;
+                return this.f39132b;
             }
             Window window = currentActivity.getWindow();
-            this.f39117c = new WeakReference(currentActivity);
-            this.f39116b = new WindowInsetsControllerCompat(window, window.getDecorView());
+            this.f39133c = new WeakReference(currentActivity);
+            this.f39132b = new WindowInsetsControllerCompat(window, window.getDecorView());
         }
-        return this.f39116b;
+        return this.f39132b;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -113,9 +113,9 @@ public final class j {
     /* JADX INFO: Access modifiers changed from: private */
     public static final void o(j jVar, boolean z10) {
         om.c cVar;
-        View b10 = fm.f.b(jVar.f39115a);
+        View b10 = fm.f.b(jVar.f39131a);
         if (b10 != null) {
-            cVar = (om.c) b10.findViewWithTag(om.c.f44404w.a());
+            cVar = (om.c) b10.findViewWithTag(om.c.f44420w.a());
         } else {
             cVar = null;
         }
@@ -126,10 +126,10 @@ public final class j {
 
     public final void g(final int i10, final boolean z10) {
         String str;
-        final Activity currentActivity = this.f39115a.getCurrentActivity();
+        final Activity currentActivity = this.f39131a.getCurrentActivity();
         if (currentActivity == null) {
-            jm.a aVar = jm.a.f32237a;
-            str = k.f39118a;
+            jm.a aVar = jm.a.f32253a;
+            str = k.f39134a;
             jm.a.e(aVar, str, "StatusBarManagerCompatModule: Ignored status bar change, current activity is null.", null, 4, null);
             return;
         }

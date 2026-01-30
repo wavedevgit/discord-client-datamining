@@ -7,26 +7,26 @@ import kotlinx.coroutines.flow.FlowCollector;
 public final class n0 implements FlowCollector {
 
     /* renamed from: d  reason: collision with root package name */
-    private final FlowCollector f32583d;
+    private final FlowCollector f32599d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Function2 f32584e;
+    private final Function2 f32600e;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends kotlin.coroutines.jvm.internal.d {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f32585d;
+        Object f32601d;
 
         /* renamed from: e  reason: collision with root package name */
-        Object f32586e;
+        Object f32602e;
 
         /* renamed from: i  reason: collision with root package name */
-        /* synthetic */ Object f32587i;
+        /* synthetic */ Object f32603i;
 
         /* renamed from: p  reason: collision with root package name */
-        int f32589p;
+        int f32605p;
 
         a(Continuation continuation) {
             super(continuation);
@@ -34,15 +34,15 @@ public final class n0 implements FlowCollector {
 
         @Override // kotlin.coroutines.jvm.internal.a
         public final Object invokeSuspend(Object obj) {
-            this.f32587i = obj;
-            this.f32589p |= Integer.MIN_VALUE;
+            this.f32603i = obj;
+            this.f32605p |= Integer.MIN_VALUE;
             return n0.this.a(this);
         }
     }
 
     public n0(FlowCollector flowCollector, Function2 function2) {
-        this.f32583d = flowCollector;
-        this.f32584e = function2;
+        this.f32599d = flowCollector;
+        this.f32600e = function2;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:28:0x0076, code lost:
@@ -67,20 +67,20 @@ public final class n0 implements FlowCollector {
             if (r0 == 0) goto L13
             r0 = r7
             js.n0$a r0 = (js.n0.a) r0
-            int r1 = r0.f32589p
+            int r1 = r0.f32605p
             r2 = -2147483648(0xffffffff80000000, float:-0.0)
             r3 = r1 & r2
             if (r3 == 0) goto L13
             int r1 = r1 - r2
-            r0.f32589p = r1
+            r0.f32605p = r1
             goto L18
         L13:
             js.n0$a r0 = new js.n0$a
             r0.<init>(r7)
         L18:
-            java.lang.Object r7 = r0.f32587i
+            java.lang.Object r7 = r0.f32603i
             java.lang.Object r1 = or.b.f()
-            int r2 = r0.f32589p
+            int r2 = r0.f32605p
             r3 = 2
             r4 = 1
             if (r2 == 0) goto L42
@@ -94,9 +94,9 @@ public final class n0 implements FlowCollector {
             r7.<init>(r0)
             throw r7
         L34:
-            java.lang.Object r2 = r0.f32586e
+            java.lang.Object r2 = r0.f32602e
             ks.v r2 = (ks.v) r2
-            java.lang.Object r4 = r0.f32585d
+            java.lang.Object r4 = r0.f32601d
             js.n0 r4 = (js.n0) r4
             kotlin.c.b(r7)     // Catch: java.lang.Throwable -> L40
             goto L60
@@ -106,13 +106,13 @@ public final class n0 implements FlowCollector {
         L42:
             kotlin.c.b(r7)
             ks.v r2 = new ks.v
-            kotlinx.coroutines.flow.FlowCollector r7 = r6.f32583d
+            kotlinx.coroutines.flow.FlowCollector r7 = r6.f32599d
             kotlin.coroutines.CoroutineContext r5 = r0.getContext()
             r2.<init>(r7, r5)
-            kotlin.jvm.functions.Function2 r7 = r6.f32584e     // Catch: java.lang.Throwable -> L40
-            r0.f32585d = r6     // Catch: java.lang.Throwable -> L40
-            r0.f32586e = r2     // Catch: java.lang.Throwable -> L40
-            r0.f32589p = r4     // Catch: java.lang.Throwable -> L40
+            kotlin.jvm.functions.Function2 r7 = r6.f32600e     // Catch: java.lang.Throwable -> L40
+            r0.f32601d = r6     // Catch: java.lang.Throwable -> L40
+            r0.f32602e = r2     // Catch: java.lang.Throwable -> L40
+            r0.f32605p = r4     // Catch: java.lang.Throwable -> L40
             java.lang.Object r7 = r7.invoke(r2, r0)     // Catch: java.lang.Throwable -> L40
             if (r7 != r1) goto L5f
             goto L78
@@ -120,23 +120,23 @@ public final class n0 implements FlowCollector {
             r4 = r6
         L60:
             r2.releaseIntercepted()
-            kotlinx.coroutines.flow.FlowCollector r7 = r4.f32583d
+            kotlinx.coroutines.flow.FlowCollector r7 = r4.f32599d
             boolean r2 = r7 instanceof js.n0
             if (r2 == 0) goto L7c
             js.n0 r7 = (js.n0) r7
             r2 = 0
-            r0.f32585d = r2
-            r0.f32586e = r2
-            r0.f32589p = r3
+            r0.f32601d = r2
+            r0.f32602e = r2
+            r0.f32605p = r3
             java.lang.Object r7 = r7.a(r0)
             if (r7 != r1) goto L79
         L78:
             return r1
         L79:
-            kotlin.Unit r7 = kotlin.Unit.f33282a
+            kotlin.Unit r7 = kotlin.Unit.f33298a
             return r7
         L7c:
-            kotlin.Unit r7 = kotlin.Unit.f33282a
+            kotlin.Unit r7 = kotlin.Unit.f33298a
             return r7
         L7f:
             r2.releaseIntercepted()
@@ -147,6 +147,6 @@ public final class n0 implements FlowCollector {
 
     @Override // kotlinx.coroutines.flow.FlowCollector
     public Object emit(Object obj, Continuation continuation) {
-        return this.f32583d.emit(obj, continuation);
+        return this.f32599d.emit(obj, continuation);
     }
 }

@@ -11,50 +11,50 @@ import zb.u;
 public final class e extends u {
 
     /* renamed from: d  reason: collision with root package name */
-    private Provider f55472d;
+    private Provider f55488d;
 
     /* renamed from: e  reason: collision with root package name */
-    private Provider f55473e;
+    private Provider f55489e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Provider f55474i;
+    private Provider f55490i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Provider f55475o;
+    private Provider f55491o;
 
     /* renamed from: p  reason: collision with root package name */
-    private Provider f55476p;
+    private Provider f55492p;
 
     /* renamed from: q  reason: collision with root package name */
-    private Provider f55477q;
+    private Provider f55493q;
 
     /* renamed from: r  reason: collision with root package name */
-    private Provider f55478r;
+    private Provider f55494r;
 
     /* renamed from: s  reason: collision with root package name */
-    private Provider f55479s;
+    private Provider f55495s;
 
     /* renamed from: t  reason: collision with root package name */
-    private Provider f55480t;
+    private Provider f55496t;
 
     /* renamed from: u  reason: collision with root package name */
-    private Provider f55481u;
+    private Provider f55497u;
 
     /* renamed from: v  reason: collision with root package name */
-    private Provider f55482v;
+    private Provider f55498v;
 
     /* renamed from: w  reason: collision with root package name */
-    private Provider f55483w;
+    private Provider f55499w;
 
     /* renamed from: x  reason: collision with root package name */
-    private Provider f55484x;
+    private Provider f55500x;
 
     /* JADX INFO: Access modifiers changed from: private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
     public static final class b implements u.a {
 
         /* renamed from: a  reason: collision with root package name */
-        private Context f55485a;
+        private Context f55501a;
 
         private b() {
         }
@@ -62,14 +62,14 @@ public final class e extends u {
         @Override // zb.u.a
         /* renamed from: b */
         public b a(Context context) {
-            this.f55485a = (Context) bc.d.b(context);
+            this.f55501a = (Context) bc.d.b(context);
             return this;
         }
 
         @Override // zb.u.a
         public u build() {
-            bc.d.a(this.f55485a, Context.class);
-            return new e(this.f55485a);
+            bc.d.a(this.f55501a, Context.class);
+            return new e(this.f55501a);
         }
     }
 
@@ -78,41 +78,41 @@ public final class e extends u {
     }
 
     private void n(Context context) {
-        this.f55472d = bc.a.a(k.a());
+        this.f55488d = bc.a.a(k.a());
         bc.b a10 = bc.c.a(context);
-        this.f55473e = a10;
+        this.f55489e = a10;
         ac.j a11 = ac.j.a(a10, jc.c.a(), jc.d.a());
-        this.f55474i = a11;
-        this.f55475o = bc.a.a(ac.l.a(this.f55473e, a11));
-        this.f55476p = u0.a(this.f55473e, hc.g.a(), hc.i.a());
-        this.f55477q = bc.a.a(hc.h.a(this.f55473e));
-        this.f55478r = bc.a.a(n0.a(jc.c.a(), jc.d.a(), hc.j.a(), this.f55476p, this.f55477q));
+        this.f55490i = a11;
+        this.f55491o = bc.a.a(ac.l.a(this.f55489e, a11));
+        this.f55492p = u0.a(this.f55489e, hc.g.a(), hc.i.a());
+        this.f55493q = bc.a.a(hc.h.a(this.f55489e));
+        this.f55494r = bc.a.a(n0.a(jc.c.a(), jc.d.a(), hc.j.a(), this.f55492p, this.f55493q));
         fc.g b10 = fc.g.b(jc.c.a());
-        this.f55479s = b10;
-        fc.i a12 = fc.i.a(this.f55473e, this.f55478r, b10, jc.d.a());
-        this.f55480t = a12;
-        Provider provider = this.f55472d;
-        Provider provider2 = this.f55475o;
-        Provider provider3 = this.f55478r;
-        this.f55481u = fc.d.a(provider, provider2, a12, provider3, provider3);
-        Provider provider4 = this.f55473e;
-        Provider provider5 = this.f55475o;
-        Provider provider6 = this.f55478r;
-        this.f55482v = gc.s.a(provider4, provider5, provider6, this.f55480t, this.f55472d, provider6, jc.c.a(), jc.d.a(), this.f55478r);
-        Provider provider7 = this.f55472d;
-        Provider provider8 = this.f55478r;
-        this.f55483w = w.a(provider7, provider8, this.f55480t, provider8);
-        this.f55484x = bc.a.a(v.a(jc.c.a(), jc.d.a(), this.f55481u, this.f55482v, this.f55483w));
+        this.f55495s = b10;
+        fc.i a12 = fc.i.a(this.f55489e, this.f55494r, b10, jc.d.a());
+        this.f55496t = a12;
+        Provider provider = this.f55488d;
+        Provider provider2 = this.f55491o;
+        Provider provider3 = this.f55494r;
+        this.f55497u = fc.d.a(provider, provider2, a12, provider3, provider3);
+        Provider provider4 = this.f55489e;
+        Provider provider5 = this.f55491o;
+        Provider provider6 = this.f55494r;
+        this.f55498v = gc.s.a(provider4, provider5, provider6, this.f55496t, this.f55488d, provider6, jc.c.a(), jc.d.a(), this.f55494r);
+        Provider provider7 = this.f55488d;
+        Provider provider8 = this.f55494r;
+        this.f55499w = w.a(provider7, provider8, this.f55496t, provider8);
+        this.f55500x = bc.a.a(v.a(jc.c.a(), jc.d.a(), this.f55497u, this.f55498v, this.f55499w));
     }
 
     @Override // zb.u
     hc.d a() {
-        return (hc.d) this.f55478r.get();
+        return (hc.d) this.f55494r.get();
     }
 
     @Override // zb.u
     t h() {
-        return (t) this.f55484x.get();
+        return (t) this.f55500x.get();
     }
 
     private e(Context context) {

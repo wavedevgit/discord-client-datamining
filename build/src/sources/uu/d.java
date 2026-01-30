@@ -10,13 +10,13 @@ import uu.c;
 public final class d implements ku.b, c {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final d f50568a = new d();
+    public static final d f50584a = new d();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     static final class a extends Lambda implements Function1 {
 
         /* renamed from: d  reason: collision with root package name */
-        public static final a f50569d = new a();
+        public static final a f50585d = new a();
 
         a() {
             super(1);
@@ -39,6 +39,6 @@ public final class d implements ku.b, c {
 
     @Override // ku.b
     public Object f(Object obj, Object obj2) {
-        return a(obj, a.f50569d);
+        return a(obj, a.f50585d);
     }
 }

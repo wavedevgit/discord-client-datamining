@@ -67,7 +67,7 @@ public final class ViewModelInstance$getPropertyFlow$1$1 extends k implements Fu
                 Function3 function3 = this.$getter;
                 ViewModelInstance viewModelInstance = this.this$0;
                 String str = this.$propertyPath;
-                Result.a aVar = kotlin.Result.f33279e;
+                Result.a aVar = kotlin.Result.f33295e;
                 ViewModelInstanceHandle m197boximpl = ViewModelInstanceHandle.m197boximpl(viewModelInstance.m46getInstanceHandleVPLto4w$kotlin_release());
                 this.label = 1;
                 obj = function3.invoke(m197boximpl, str, this);
@@ -77,14 +77,14 @@ public final class ViewModelInstance$getPropertyFlow$1$1 extends k implements Fu
             }
             kotlin.Result.b(obj);
         } catch (Throwable th2) {
-            Result.a aVar2 = kotlin.Result.f33279e;
+            Result.a aVar2 = kotlin.Result.f33295e;
             kotlin.Result.b(c.a(th2));
         }
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(@NotNull FlowCollector flowCollector, Continuation<? super Unit> continuation) {
-        return ((ViewModelInstance$getPropertyFlow$1$1) create(flowCollector, continuation)).invokeSuspend(Unit.f33282a);
+        return ((ViewModelInstance$getPropertyFlow$1$1) create(flowCollector, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

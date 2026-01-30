@@ -131,13 +131,13 @@ public final class SpoilerView extends FrameLayout {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit configureObscureOverlay$lambda$6(Function1 function1) {
         function1.invoke(Boolean.TRUE);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit configureObscureOverlay$lambda$7(Function1 function1) {
         function1.invoke(Boolean.FALSE);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private final void configureSpoilerOverlay(SpoilerConfig spoilerConfig) {
@@ -165,7 +165,7 @@ public final class SpoilerView extends FrameLayout {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit configureSpoilerOverlay$lambda$5(SpoilerView spoilerView, View view) {
         spoilerView.toggleContentVisibility(true, view);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private final Function1<Boolean, Unit> onObscureToggleVisibilityClick(final View view, final Function1<? super Boolean, Unit> function1) {
@@ -183,7 +183,7 @@ public final class SpoilerView extends FrameLayout {
     public static final Unit onObscureToggleVisibilityClick$lambda$3(SpoilerView spoilerView, View view, Function1 function1, boolean z10) {
         spoilerView.toggleContentVisibility(z10, view);
         function1.invoke(Boolean.valueOf(z10));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private final Function1<Boolean, Unit> onObscureVerifyAgeClick(final Function1<? super Boolean, Unit> function1) {
@@ -200,7 +200,7 @@ public final class SpoilerView extends FrameLayout {
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit onObscureVerifyAgeClick$lambda$4(Function1 function1, boolean z10) {
         function1.invoke(Boolean.valueOf(z10));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     private final void resetOverlays() {
@@ -326,7 +326,7 @@ public final class SpoilerView extends FrameLayout {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33282a;
+                unit = Unit.f33298a;
                 return unit;
             }
         };
@@ -334,7 +334,7 @@ public final class SpoilerView extends FrameLayout {
             @Override // kotlin.jvm.functions.Function0
             public final Object invoke() {
                 Unit unit;
-                unit = Unit.f33282a;
+                unit = Unit.f33298a;
                 return unit;
             }
         };

@@ -11,7 +11,7 @@ import q.g4;
 public class h {
 
     /* renamed from: a  reason: collision with root package name */
-    private final CaptureSessionOnClosedNotCalledQuirk f49951a;
+    private final CaptureSessionOnClosedNotCalledQuirk f49967a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public interface a {
@@ -19,7 +19,7 @@ public class h {
     }
 
     public h(d2 d2Var) {
-        this.f49951a = (CaptureSessionOnClosedNotCalledQuirk) d2Var.b(CaptureSessionOnClosedNotCalledQuirk.class);
+        this.f49967a = (CaptureSessionOnClosedNotCalledQuirk) d2Var.b(CaptureSessionOnClosedNotCalledQuirk.class);
     }
 
     private void a(Set set) {
@@ -61,7 +61,7 @@ public class h {
     }
 
     public boolean d() {
-        if (this.f49951a != null) {
+        if (this.f49967a != null) {
             return true;
         }
         return false;

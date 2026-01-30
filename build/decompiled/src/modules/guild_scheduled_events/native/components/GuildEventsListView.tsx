@@ -71,7 +71,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var4 = 'modules/guild_scheduled_events/native/components/GuildEventsListView.tsx';
     var4 = var5.bind(var6)(var4);
     var3 = function(arg0) { // Original name: GuildEventsListView, environment: var3
-        _fun66913: for (var _fun66913_ip = 0;;) switch (_fun66913_ip) {
+        _fun66957: for (var _fun66957_ip = 0;;) switch (_fun66957_ip) {
             case 0:
                 var0 = arg0;
                 var6 = var0.events;
@@ -95,18 +95,18 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var6.length;
                 var1 = 0;
                 if (!(var1 !== var2)) {
-                    _fun66913_ip = 269;
-                    continue _fun66913
+                    _fun66957_ip = 269;
+                    continue _fun66957
                 }
             case 104:
                 if (var0) {
-                    _fun66913_ip = 113;
-                    continue _fun66913
+                    _fun66957_ip = 113;
+                    continue _fun66957
                 }
             case 107:
                 var2 = _closure1_slot4;
-                _fun66913_ip = 139;
-                continue _fun66913;
+                _fun66957_ip = 139;
+                continue _fun66957;
             case 113:
                 var1 = _closure1_slot0;
                 var10 = _closure1_slot2;
@@ -128,7 +128,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 };
                 var0.keyExtractor = var6;
                 var6 = function(arg0) { // Original name: renderItem, environment: var5
-                    _fun66915: for (var _fun66915_ip = 0;;) switch (_fun66915_ip) {
+                    _fun66959: for (var _fun66959_ip = 0;;) switch (_fun66959_ip) {
                         case 0:
                             var0 = arg0;
                             var6 = var0.item;
@@ -149,8 +149,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var4 = null;
                             var4 = var4 != var8;
                             if (!var4) {
-                                _fun66915_ip = 124;
-                                continue _fun66915
+                                _fun66959_ip = 124;
+                                continue _fun66959
                             }
                         case 77:
                             var8 = _closure1_slot1;
@@ -231,4 +231,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.styles = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 671, 1568, 4889, 8271, 8272, 21, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 671, 1568, 4895, 8274, 8275, 21, 2]);

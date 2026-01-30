@@ -1,344 +1,544 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var2 = global;
-    var5 = var2.Object;
-    var4 = var5.defineProperty;
+    var4 = require;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var5;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
     var3 = {};
-    var2 = true;
-    var3.value = var2;
-    var2 = '__esModule';
-    var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = function(arg0) { // Original name: productSk2Map, environment: var0
-        var0 = arg0;
-        var8 = var0.id;
-        var6 = var0.description;
-        var3 = var0.displayName;
-        var5 = var0.price;
-        var1 = var0.currency;
-        var2 = var0.displayPrice;
-        var0 = {};
-        var0.title = var3;
-        var3 = global;
-        var7 = var3.String;
-        var4 = undefined;
-        var7 = var7.bind(var4)(var8);
-        var0.productId = var7;
-        var0.description = var6;
-        var6 = 'iap';
-        var0.type = var6;
-        var3 = var3.String;
-        var3 = var3.bind(var4)(var5);
-        var0.price = var3;
-        var0.localizedPrice = var2;
-        var0.currency = var1;
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var6 = var5[var0];
+    var3 = metroImportDefault;
+    var0 = undefined;
+    var3 = var3.bind(var0)(var6);
+    var _closure1_slot2 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var4 = var3.Linking;
+    var _closure1_slot3 = var4;
+    var3 = var3.NativeModules;
+    var3 = var3.RNIapIos;
+    var _closure1_slot4 = var3;
+    var3 = function() { // Environment: var1
+        var3 = _closure1_slot2;
+        var2 = undefined;
+        var1 = function*() { // Environment: var0
+            var0 = function*() { // Original name: ?anon_0_, environment: var0
+                _fun58343: for (var _fun58343_ip = 0;;) switch (_fun58343_ip) {
+                    case 0:
+                        StartGenerator();
+                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
+                        if (var1) {
+                            _fun58343_ip = 55;
+                            continue _fun58343
+                        }
+                    case 7:
+                        var3 = _closure1_slot0;
+                        var2 = _closure1_slot1;
+                        var1 = 2;
+                        var2 = var2[var1];
+                        var1 = undefined;
+                        var2 = var3.bind(var1)(var2);
+                        var1 = var2.getIosModule;
+                        var2 = var1.bind(var2)();
+                        var1 = var2.getPendingTransactions;
+                        var1 = var1.bind(var2)();
+                        return var1;
+                    case 55:
+                        return var0;
+                }
+            };
+            return var0;
+        };
+        var1 = var3.bind(var2)(var1);
+        var _closure2_slot0 = var1;
+        var0 = function() { // Original name: getPendingPurchasesIOS, environment: var0
+            var0 = undefined;
+            var3 = _closure2_slot0;
+            var2 = var3.apply;
+            var0 = arguments;
+            var1 = var0;
+            var0 = this;
+            var0 = var2.bind(var3)(var0, var1);
+            return var0;
+        };
         return var0;
     };
-    var1.productSk2Map = var2;
-    var2 = function(arg0) { // Original name: subscriptionSk2Map, environment: var0
-        _fun58344: for (var _fun58344_ip = 0;;) switch (_fun58344_ip) {
-            case 0:
-                var0 = arg0;
-                var9 = var0.id;
-                var6 = var0.description;
-                var1 = var0.displayName;
-                var7 = var0.price;
-                var3 = var0.currency;
-                var5 = var0.displayPrice;
-                var2 = var0.subscription;
-                var0 = {};
-                var10 = _closure1_slot0;
-                var8 = _closure1_slot1;
-                var4 = 0;
-                var8 = var8[var4];
-                var4 = undefined;
-                var8 = var10.bind(var4)(var8);
-                var8 = var8.SubscriptionPlatform;
-                var8 = var8.ios;
-                var0.platform = var8;
-                var0.title = var1;
-                var1 = global;
-                var8 = var1.String;
-                var8 = var8.bind(var4)(var9);
-                var0.productId = var8;
-                var0.description = var6;
-                var6 = 'subs';
-                var0.type = var6;
-                var6 = var1.String;
-                var6 = var6.bind(var4)(var7);
-                var0.price = var6;
-                var0.localizedPrice = var5;
-                var0.currency = var3;
-                var3 = null;
-                var5 = var3 == var2;
-                var6 = undefined;
-                if (var5) {
-                    _fun58344_ip = 176;
-                    continue _fun58344
+    var6 = var3.bind(var0)();
+    var3 = function() { // Environment: var1
+        var3 = _closure1_slot2;
+        var2 = undefined;
+        var1 = function*(arg0) { // Environment: var0
+            var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
+                _fun58347: for (var _fun58347_ip = 0;;) switch (_fun58347_ip) {
+                    case 0:
+                        StartGenerator();
+                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
+                        if (var1) {
+                            _fun58347_ip = 113;
+                            continue _fun58347
+                        }
+                    case 7:
+                        var1 = arg0;
+                        var4 = var1.forceRefresh;
+                        var5 = _closure1_slot0;
+                        var3 = _closure1_slot1;
+                        var2 = 2;
+                        var3 = var3[var2];
+                        var2 = undefined;
+                        var3 = var5.bind(var2)(var3);
+                        var2 = var3.isIosStorekit2;
+                        var2 = var2.bind(var3)();
+                        if (var2) {
+                            _fun58347_ip = 85;
+                            continue _fun58347
+                        }
+                    case 54:
+                        var3 = _closure1_slot4;
+                        var2 = var3.requestReceipt;
+                        var1 = null;
+                        var1 = var1 != var4;
+                        if (!var1) {
+                            _fun58347_ip = 78;
+                            continue _fun58347
+                        }
+                    case 75:
+                        var1 = var4;
+                    case 78:
+                        var1 = var2.bind(var3)(var1);
+                        _fun58347_ip = 110;
+                        continue _fun58347;
+                    case 85:
+                        var2 = global;
+                        var4 = var2.Promise;
+                        var3 = var4.reject;
+                        var2 = 'Only available on Sk1';
+                        var1 = var3.bind(var4)(var2);
+                    case 110:
+                        return var1;
+                    case 113:
+                        return var0;
                 }
-            case 156:
-                var5 = var2.subscriptionPeriod;
-                var7 = var3 == var5;
-                var6 = undefined;
-                if (var7) {
-                    _fun58344_ip = 176;
-                    continue _fun58344
-                }
-            case 171:
-                var6 = var5.value;
-            case 176:
-                var1 = var1.HermesInternal;
-                var5 = var1.concat;
-                var1 = '';
-                var1 = var5.bind(var1)(var6);
-                var0.subscriptionPeriodNumberIOS = var1;
-                var5 = var3 == var2;
-                var1 = undefined;
-                if (var5) {
-                    _fun58344_ip = 243;
-                    continue _fun58344
-                }
-            case 212:
-                var5 = var2.subscriptionPeriod;
-                var6 = var3 == var5;
-                var1 = undefined;
-                if (var6) {
-                    _fun58344_ip = 243;
-                    continue _fun58344
-                }
-            case 227:
-                var6 = var5.unit;
-                var5 = var6.toUpperCase;
-                var1 = var5.bind(var6)();
-            case 243:
-                var0.subscriptionPeriodUnitIOS = var1;
-                var5 = var3 == var2;
-                var1 = undefined;
-                if (var5) {
-                    _fun58344_ip = 280;
-                    continue _fun58344
-                }
-            case 259:
-                var5 = var2.introductoryOffer;
-                var6 = var3 == var5;
-                var1 = undefined;
-                if (var6) {
-                    _fun58344_ip = 280;
-                    continue _fun58344
-                }
-            case 274:
-                var1 = var5.displayPrice;
-            case 280:
-                var0.introductoryPriceAsAmountIOS = var1;
-                var5 = var3 == var2;
-                var1 = undefined;
-                if (var5) {
-                    _fun58344_ip = 327;
-                    continue _fun58344
-                }
-            case 296:
-                var5 = var2.introductoryOffer;
-                var6 = var3 == var5;
-                var1 = undefined;
-                if (var6) {
-                    _fun58344_ip = 327;
-                    continue _fun58344
-                }
-            case 311:
-                var6 = var5.paymentMode;
-                var5 = var6.toUpperCase;
-                var1 = var5.bind(var6)();
-            case 327:
-                var0.introductoryPricePaymentModeIOS = var1;
-                var5 = var3 == var2;
-                var1 = undefined;
-                if (var5) {
-                    _fun58344_ip = 396;
-                    continue _fun58344
-                }
-            case 343:
-                var5 = var2.introductoryOffer;
-                var6 = var3 == var5;
-                var1 = undefined;
-                if (var6) {
-                    _fun58344_ip = 396;
-                    continue _fun58344
-                }
-            case 358:
-                var5 = var5.period;
-                var6 = var3 == var5;
-                var1 = undefined;
-                if (var6) {
-                    _fun58344_ip = 396;
-                    continue _fun58344
-                }
-            case 373:
-                var6 = var5.value;
-                var5 = var3 == var6;
-                var1 = undefined;
-                if (var5) {
-                    _fun58344_ip = 396;
-                    continue _fun58344
-                }
-            case 387:
-                var5 = var6.toString;
-                var1 = var5.bind(var6)();
-            case 396:
-                var0.introductoryPriceNumberOfPeriodsIOS = var1;
-                var5 = var3 == var2;
-                var1 = undefined;
-                if (var5) {
-                    _fun58344_ip = 448;
-                    continue _fun58344
-                }
-            case 412:
-                var2 = var2.introductoryOffer;
-                var5 = var3 == var2;
-                var1 = undefined;
-                if (var5) {
-                    _fun58344_ip = 448;
-                    continue _fun58344
-                }
-            case 427:
-                var2 = var2.period;
-                var3 = var3 == var2;
-                var1 = undefined;
-                if (var3) {
-                    _fun58344_ip = 448;
-                    continue _fun58344
-                }
-            case 442:
-                var1 = var2.unit;
-            case 448:
-                var0.introductoryPriceSubscriptionPeriodIOS = var1;
-                return var0;
-        }
+            };
+            return var0;
+        };
+        var1 = var3.bind(var2)(var1);
+        var _closure2_slot0 = var1;
+        var0 = function(arg0) { // Original name: getReceiptIOS, environment: var0
+            var0 = undefined;
+            var3 = _closure2_slot0;
+            var2 = var3.apply;
+            var0 = arguments;
+            var1 = var0;
+            var0 = this;
+            var0 = var2.bind(var3)(var0, var1);
+            return var0;
+        };
+        return var0;
     };
-    var1.subscriptionSk2Map = var2;
-    var2 = function(arg0) { // Original name: transactionSk2ToPurchaseMap, environment: var0
-        _fun58345: for (var _fun58345_ip = 0;;) switch (_fun58345_ip) {
-            case 0:
-                var11 = arg0;
-                var10 = undefined;
-                var2 = undefined;
-                var8 = undefined;
-                var4 = undefined;
-                var9 = undefined;
-                var1 = undefined;
-                var7 = undefined;
-                var3 = undefined;
-                var6 = undefined;
-                var5 = undefined;
-                var0 = undefined;
-                var8 = var11.id;
-                var4 = var11.originalPurchaseDate;
-                var9 = var11.productID;
-                var1 = var11.purchaseDate;
-                var7 = var11.purchasedQuantity;
-                var3 = var11.originalID;
-                var6 = var11.verificationResult;
-                var5 = var11.appAccountToken;
-                var0 = var11.jsonRepresentation;
-            case 92: // try_start_0
-                var11 = global;
-                var12 = var11.JSON;
-                var11 = var12.parse;
-                var0 = var11.bind(var12)(var0);
-                var2 = var0.transactionReason;
-            case 119: // try_end0
-                _fun58345_ip = 148;
-                continue _fun58345;
-            case 121: // catch_target0
-                CatchBlockStart(arg_register = 13);
-                var0 = global;
-                var12 = var0.console;
-                var11 = var12.log;
-                var0 = 'AppleSK2.ts react-native-iap: Error parsing jsonRepresentation';
-                var0 = var11.bind(var12)(var0, var13);
-            case 148:
-                var0 = {};
-                var0.productId = var9;
-                var9 = global;
-                var9 = var9.String;
-                var8 = var9.bind(var10)(var8);
-                var0.transactionId = var8;
-                var0.transactionDate = var1;
-                var1 = '';
-                var0.transactionReceipt = var1;
-                var0.purchaseToken = var1;
-                var0.quantityIOS = var7;
-                var0.originalTransactionDateIOS = var4;
-                var0.originalTransactionIdentifierIOS = var3;
-                var3 = var6;
-                var4 = null;
-                var7 = var4 != var3;
-                var3 = var1;
-                if (!var7) {
-                    _fun58345_ip = 227;
-                    continue _fun58345
+    var5 = var3.bind(var0)();
+    var3 = function() { // Environment: var1
+        var3 = _closure1_slot2;
+        var2 = undefined;
+        var1 = function*() { // Environment: var0
+            var0 = function*() { // Original name: ?anon_0_, environment: var0
+                _fun58351: for (var _fun58351_ip = 0;;) switch (_fun58351_ip) {
+                    case 0:
+                        StartGenerator();
+                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
+                        if (var1) {
+                            _fun58351_ip = 57;
+                            continue _fun58351
+                        }
+                    case 7:
+                        var3 = _closure1_slot0;
+                        var2 = _closure1_slot1;
+                        var1 = 2;
+                        var2 = var2[var1];
+                        var1 = undefined;
+                        var2 = var3.bind(var1)(var2);
+                        var1 = var2.getIosModule;
+                        var2 = var1.bind(var2)();
+                        var1 = var2.presentCodeRedemptionSheet;
+                        var1 = var1.bind(var2)();
+                        return var1;
+                    case 57:
+                        return var0;
                 }
-            case 224:
-                var3 = var6;
-            case 227:
-                var0.verificationResultIOS = var3;
-                var3 = var5;
-                var6 = var4 != var3;
-                var3 = var1;
-                if (!var6) {
-                    _fun58345_ip = 248;
-                    continue _fun58345
-                }
-            case 245:
-                var3 = var5;
-            case 248:
-                var0.appAccountToken = var3;
-                var3 = var2;
-                var3 = var4 != var3;
-                if (!var3) {
-                    _fun58345_ip = 266;
-                    continue _fun58345
-                }
-            case 263:
-                var1 = var2;
-            case 266:
-                var0.transactionReasonIOS = var1;
-                return var0;
-        }
+            };
+            return var0;
+        };
+        var1 = var3.bind(var2)(var1);
+        var _closure2_slot0 = var1;
+        var0 = function() { // Original name: presentCodeRedemptionSheetIOS, environment: var0
+            var0 = undefined;
+            var3 = _closure2_slot0;
+            var2 = var3.apply;
+            var0 = arguments;
+            var1 = var0;
+            var0 = this;
+            var0 = var2.bind(var3)(var0, var1);
+            return var0;
+        };
+        return var0;
     };
-    var1.transactionSk2ToPurchaseMap = var2;
-    var0 = function(arg0) { // Original name: offerSk2Map, environment: var0
-        _fun58346: for (var _fun58346_ip = 0;;) switch (_fun58346_ip) {
-            case 0:
-                var1 = arg0;
-                if (var1) {
-                    _fun58346_ip = 10;
-                    continue _fun58346
+    var4 = var3.bind(var0)();
+    var3 = function() { // Environment: var1
+        var3 = _closure1_slot2;
+        var2 = undefined;
+        var1 = function*(arg0, arg1) { // Environment: var0
+            var0 = function*(arg0, arg1) { // Original name: ?anon_0_, environment: var0
+                _fun58355: for (var _fun58355_ip = 0;;) switch (_fun58355_ip) {
+                    case 0:
+                        StartGenerator();
+                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
+                        if (var1) {
+                            _fun58355_ip = 183;
+                            continue _fun58355
+                        }
+                    case 10:
+                        var2 = global;
+                        var5 = var2.fetch;
+                        var4 = {};
+                        var1 = 'POST';
+                        var4.method = var1;
+                        var1 = {
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json'
+                        };
+                        var4.headers = var1;
+                        var6 = var2.JSON;
+                        var3 = var6.stringify;
+                        var1 = arg1;
+                        var1 = var3.bind(var6)(var1);
+                        var4.body = var1;
+                        var3 = undefined;
+                        var1 = arg0;
+                        var1 = var5.bind(var3)(var1, var4);
+                        SaveGenerator(address = 89);
+                    case 87:
+                        return var1;
+                    case 89:
+                        ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
+                        if (var3) {
+                            _fun58355_ip = 180;
+                            continue _fun58355
+                        }
+                    case 95:
+                        var3 = var1.ok;
+                        if (var3) {
+                            _fun58355_ip = 167;
+                            continue _fun58355
+                        }
+                    case 104:
+                        var5 = var2.Object;
+                        var4 = var5.assign;
+                        var6 = var2.Error;
+                        var8 = var1.statusText;
+                        var3 = var6.prototype;
+                        var3 = Object.create(var3, {
+                            constructor: {
+                                value: var6
+                            }
+                        });
+                        var9 = var3;
+                        var2 = new var9[var6](var8, var7);
+                        var3 = var2 instanceof Object ? var2 : var3;
+                        var2 = {};
+                        var6 = var1.status;
+                        var2.statusCode = var6;
+                        var2 = var4.bind(var5)(var3, var2);
+                        throw var2;
+                    case 167:
+                        var2 = var1.json;
+                        var2 = var2.bind(var1)();
+                        return var2;
+                    case 180:
+                        return var1;
+                    case 183:
+                        return var0;
                 }
-            case 6:
-                var0 = undefined;
-                return var0;
-            case 10:
-                var0 = {};
-                var2 = var1.identifier;
-                var0.offerID = var2;
-                var2 = var1.keyIdentifier;
-                var0.keyID = var2;
-                var2 = var1.nonce;
-                var0.nonce = var2;
-                var2 = var1.signature;
-                var0.signature = var2;
-                var2 = var1.timestamp;
-                var1 = var2.toString;
+            };
+            return var0;
+        };
+        var1 = var3.bind(var2)(var1);
+        var _closure2_slot0 = var1;
+        var0 = function(arg0, arg1) { // Original name: fetchJsonOrThrow, environment: var0
+            var0 = undefined;
+            var3 = _closure2_slot0;
+            var2 = var3.apply;
+            var0 = arguments;
+            var1 = var0;
+            var0 = this;
+            var0 = var2.bind(var3)(var0, var1);
+            return var0;
+        };
+        return var0;
+    };
+    var3 = var3.bind(var0)();
+    var _closure1_slot5 = var3;
+    var3 = function() { // Environment: var1
+        var3 = _closure1_slot2;
+        var2 = undefined;
+        var1 = function*(arg0) { // Environment: var0
+            var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
+                _fun58359: for (var _fun58359_ip = 0;;) switch (_fun58359_ip) {
+                    case 0:
+                        StartGenerator();
+                        var6 = arg0;
+                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 1);
+                        if (var1) {
+                            _fun58359_ip = 103;
+                            continue _fun58359
+                        }
+                    case 10:
+                        var3 = _closure1_slot5;
+                        var5 = undefined;
+                        var1 = 'https://buy.itunes.apple.com/verifyReceipt';
+                        var1 = var3.bind(var5)(var1, var6);
+                        SaveGenerator(address = 35);
+                    case 33:
+                        return var1;
+                    case 35:
+                        ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 3);
+                        if (var3) {
+                            _fun58359_ip = 100;
+                            continue _fun58359
+                        }
+                    case 41:
+                        var3 = var1;
+                        if (!var1) {
+                            _fun58359_ip = 94;
+                            continue _fun58359
+                        }
+                    case 47:
+                        var7 = var1.status;
+                        var4 = 21007;
+                        var3 = var1;
+                        if (!(var4 === var7)) {
+                            _fun58359_ip = 94;
+                            continue _fun58359
+                        }
+                    case 65:
+                        var4 = _closure1_slot5;
+                        var2 = 'https://sandbox.itunes.apple.com/verifyReceipt';
+                        var2 = var4.bind(var5)(var2, var6);
+                        SaveGenerator(address = 85);
+                    case 83:
+                        return var2;
+                    case 85:
+                        ResumeGenerator(result_out_reg = 2, return_bool_out_reg = 4);
+                        var3 = var2;
+                        if (var4) {
+                            _fun58359_ip = 97;
+                            continue _fun58359
+                        }
+                    case 94:
+                        return var3;
+                    case 97:
+                        return var2;
+                    case 100:
+                        return var1;
+                    case 103:
+                        return var0;
+                }
+            };
+            return var0;
+        };
+        var1 = var3.bind(var2)(var1);
+        var _closure2_slot0 = var1;
+        var0 = function(arg0) { // Original name: requestAgnosticReceiptValidationIos, environment: var0
+            var0 = undefined;
+            var3 = _closure2_slot0;
+            var2 = var3.apply;
+            var0 = arguments;
+            var1 = var0;
+            var0 = this;
+            var0 = var2.bind(var3)(var0, var1);
+            return var0;
+        };
+        return var0;
+    };
+    var3 = var3.bind(var0)();
+    var _closure1_slot6 = var3;
+    var3 = function() { // Environment: var1
+        var3 = _closure1_slot2;
+        var2 = undefined;
+        var1 = function*(arg0) { // Environment: var0
+            var0 = function*(arg0) { // Original name: ?anon_0_, environment: var0
+                _fun58363: for (var _fun58363_ip = 0;;) switch (_fun58363_ip) {
+                    case 0:
+                        StartGenerator();
+                        var1 = arg0;
+                        ResumeGenerator(result_out_reg = 0, return_bool_out_reg = 2);
+                        if (var2) {
+                            _fun58363_ip = 108;
+                            continue _fun58363
+                        }
+                    case 10:
+                        var3 = var1.receiptBody;
+                        var1 = var1.isTest;
+                        var2 = null;
+                        if (!(var2 != var1)) {
+                            _fun58363_ip = 78;
+                            continue _fun58363
+                        }
+                    case 32:
+                        var4 = 'https://buy.itunes.apple.com/verifyReceipt';
+                        if (!var1) {
+                            _fun58363_ip = 47;
+                            continue _fun58363
+                        }
+                    case 41:
+                        var4 = 'https://sandbox.itunes.apple.com/verifyReceipt';
+                    case 47:
+                        var2 = _closure1_slot5;
+                        var1 = undefined;
+                        var1 = var2.bind(var1)(var4, var3);
+                        SaveGenerator(address = 66);
+                    case 64:
+                        return var1;
+                    case 66:
+                        ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
+                        if (var2) {
+                            _fun58363_ip = 75;
+                            continue _fun58363
+                        }
+                    case 72:
+                        return var1;
+                    case 75:
+                        return var1;
+                    case 78:
+                        var2 = _closure1_slot6;
+                        var1 = undefined;
+                        var1 = var2.bind(var1)(var3);
+                        SaveGenerator(address = 96);
+                    case 94:
+                        return var1;
+                    case 96:
+                        ResumeGenerator(result_out_reg = 1, return_bool_out_reg = 2);
+                        if (var2) {
+                            _fun58363_ip = 105;
+                            continue _fun58363
+                        }
+                    case 102:
+                        return var1;
+                    case 105:
+                        return var1;
+                    case 108:
+                        return var0;
+                }
+            };
+            return var0;
+        };
+        var1 = var3.bind(var2)(var1);
+        var _closure2_slot0 = var1;
+        var0 = function(arg0) { // Original name: validateReceiptIos, environment: var0
+            var0 = undefined;
+            var3 = _closure2_slot0;
+            var2 = var3.apply;
+            var0 = arguments;
+            var1 = var0;
+            var0 = this;
+            var0 = var2.bind(var3)(var0, var1);
+            return var0;
+        };
+        return var0;
+    };
+    var3 = var3.bind(var0)();
+    var2.getPendingPurchasesIOS = var6;
+    var2.getReceiptIOS = var5;
+    var2.presentCodeRedemptionSheetIOS = var4;
+    var4 = function() { // Original name: getPromotedProductIOS, environment: var1
+        _fun58365: for (var _fun58365_ip = 0;;) switch (_fun58365_ip) {
+            case 0:
+                var3 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var1 = 2;
+                var2 = var2[var1];
+                var1 = undefined;
+                var2 = var3.bind(var1)(var2);
+                var1 = var2.isIosStorekit2;
                 var1 = var1.bind(var2)();
-                var0.timestamp = var1;
+                if (var1) {
+                    _fun58365_ip = 56;
+                    continue _fun58365
+                }
+            case 38:
+                var1 = _closure1_slot4;
+                var0 = var1.promotedProduct;
+                var0 = var0.bind(var1)();
+                _fun58365_ip = 81;
+                continue _fun58365;
+            case 56:
+                var1 = global;
+                var3 = var1.Promise;
+                var2 = var3.reject;
+                var1 = 'Only available on Sk1';
+                var0 = var2.bind(var3)(var1);
+            case 81:
                 return var0;
         }
     };
-    var1.offerSk2Map = var0;
-    var0 = undefined;
+    var2.getPromotedProductIOS = var4;
+    var4 = function() { // Original name: buyPromotedProductIOS, environment: var1
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 2;
+        var1 = var1[var0];
+        var0 = undefined;
+        var1 = var2.bind(var0)(var1);
+        var0 = var1.getIosModule;
+        var1 = var0.bind(var1)();
+        var0 = var1.buyPromotedProduct;
+        var0 = var0.bind(var1)();
+        return var0;
+    };
+    var2.buyPromotedProductIOS = var4;
+    var2.validateReceiptIos = var3;
+    var3 = function() { // Original name: clearTransactionIOS, environment: var1
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 2;
+        var1 = var1[var0];
+        var0 = undefined;
+        var1 = var2.bind(var0)(var1);
+        var0 = var1.getIosModule;
+        var1 = var0.bind(var1)();
+        var0 = var1.clearTransaction;
+        var0 = var0.bind(var1)();
+        return var0;
+    };
+    var2.clearTransactionIOS = var3;
+    var3 = function() { // Original name: clearProductsIOS, environment: var1
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 2;
+        var1 = var1[var0];
+        var0 = undefined;
+        var1 = var2.bind(var0)(var1);
+        var0 = var1.getIosModule;
+        var1 = var0.bind(var1)();
+        var0 = var1.clearProducts;
+        var0 = var0.bind(var1)();
+        return var0;
+    };
+    var2.clearProductsIOS = var3;
+    var1 = function() { // Original name: deepLinkToSubscriptionsIos, environment: var1
+        var2 = _closure1_slot3;
+        var1 = var2.openURL;
+        var0 = 'https://apps.apple.com/account/subscriptions';
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var2.deepLinkToSubscriptionsIos = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7103]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5, 27, 7107]);

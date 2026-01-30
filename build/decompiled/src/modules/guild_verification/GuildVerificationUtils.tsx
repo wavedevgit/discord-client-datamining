@@ -34,7 +34,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/guild_verification/GuildVerificationUtils.tsx';
     var3 = var4.bind(var5)(var3);
     var3 = function(arg0) { // Environment: var1
-        _fun93065: for (var _fun93065_ip = 0;;) switch (_fun93065_ip) {
+        _fun93302: for (var _fun93302_ip = 0;;) switch (_fun93302_ip) {
             case 0:
                 var3 = arg0;
                 var6 = var3.features;
@@ -42,8 +42,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var2 == var6;
                 var0 = undefined;
                 if (var4) {
-                    _fun93065_ip = 43;
-                    continue _fun93065
+                    _fun93302_ip = 43;
+                    continue _fun93302
                 }
             case 20:
                 var5 = var6.includes;
@@ -52,16 +52,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var5.bind(var6)(var4);
             case 43:
                 if (!var0) {
-                    _fun93065_ip = 87;
-                    continue _fun93065
+                    _fun93302_ip = 87;
+                    continue _fun93302
                 }
             case 46:
                 var4 = var3.features;
                 var2 = var2 == var4;
                 var1 = undefined;
                 if (var2) {
-                    _fun93065_ip = 84;
-                    continue _fun93065
+                    _fun93302_ip = 84;
+                    continue _fun93302
                 }
             case 61:
                 var3 = var4.includes;
@@ -76,7 +76,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.inviteGuildHasPendingMemberDisabledVerification = var3;
     var1 = function(arg0) { // Environment: var1
-        _fun93066: for (var _fun93066_ip = 0;;) switch (_fun93066_ip) {
+        _fun93303: for (var _fun93303_ip = 0;;) switch (_fun93303_ip) {
             case 0:
                 var4 = arg0;
                 var2 = _closure1_slot2;
@@ -84,8 +84,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.bind(var2)(var4);
                 var2 = null;
                 if (!(var2 != var1)) {
-                    _fun93066_ip = 71;
-                    continue _fun93066
+                    _fun93303_ip = 71;
+                    continue _fun93303
                 }
             case 27:
                 var2 = var1.applicationStatus;
@@ -98,8 +98,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.GuildJoinRequestApplicationStatuses;
                 var1 = var1.STARTED;
                 if (!(var2 === var1)) {
-                    _fun93066_ip = 106;
-                    continue _fun93066
+                    _fun93303_ip = 106;
+                    continue _fun93303
                 }
             case 71:
                 var5 = _closure1_slot0;
@@ -110,8 +110,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var5.bind(var1)(var2);
                 var1 = var2.openMemberVerificationModal;
                 var1 = var1.bind(var2)(var4);
-                _fun93066_ip = 152;
-                continue _fun93066;
+                _fun93303_ip = 152;
+                continue _fun93303;
             case 106:
                 var2 = _closure1_slot0;
                 var5 = _closure1_slot1;
@@ -130,4 +130,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.openVerificationModalOrTransitionToApplication = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3173, 660, 3175, 1220, 7403, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3173, 660, 3175, 1220, 7406, 2]);

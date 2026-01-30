@@ -5,7 +5,7 @@ import androidx.camera.core.internal.compat.quirk.LargeJpegImageQuirk;
 public class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final LargeJpegImageQuirk f27210a = (LargeJpegImageQuirk) androidx.camera.core.internal.compat.quirk.a.b(LargeJpegImageQuirk.class);
+    private final LargeJpegImageQuirk f27226a = (LargeJpegImageQuirk) androidx.camera.core.internal.compat.quirk.a.b(LargeJpegImageQuirk.class);
 
     public static int a(byte[] bArr) {
         byte b10;
@@ -32,7 +32,7 @@ public class c {
     }
 
     public int b(byte[] bArr) {
-        LargeJpegImageQuirk largeJpegImageQuirk = this.f27210a;
+        LargeJpegImageQuirk largeJpegImageQuirk = this.f27226a;
         if (largeJpegImageQuirk != null && largeJpegImageQuirk.g(bArr)) {
             int a10 = a(bArr);
             if (a10 != -1) {

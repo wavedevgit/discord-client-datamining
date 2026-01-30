@@ -274,9 +274,9 @@ public class JavaPropertyDescriptor extends PropertyDescriptorImpl implements Ja
         }
         javaPropertyDescriptor.initialize(propertyGetterDescriptorImpl, propertySetterDescriptorImpl, getBackingField(), getDelegateField());
         javaPropertyDescriptor.setSetterProjectedOut(isSetterProjectedOut());
-        Function0<NullableLazyValue<ConstantValue<?>>> function0 = this.f33860s;
+        Function0<NullableLazyValue<ConstantValue<?>>> function0 = this.f33876s;
         if (function0 != null) {
-            javaPropertyDescriptor.setCompileTimeInitializer(this.f33859r, function0);
+            javaPropertyDescriptor.setCompileTimeInitializer(this.f33875r, function0);
         }
         javaPropertyDescriptor.setOverriddenDescriptors(getOverriddenDescriptors());
         if (kotlinType != null) {

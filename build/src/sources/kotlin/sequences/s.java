@@ -12,15 +12,15 @@ public class s extends m {
     public static final class a implements Sequence {
 
         /* renamed from: a  reason: collision with root package name */
-        final /* synthetic */ Iterator f36175a;
+        final /* synthetic */ Iterator f36191a;
 
         public a(Iterator it) {
-            this.f36175a = it;
+            this.f36191a = it;
         }
 
         @Override // kotlin.sequences.Sequence
         public Iterator iterator() {
-            return this.f36175a;
+            return this.f36191a;
         }
     }
 
@@ -38,7 +38,7 @@ public class s extends m {
     }
 
     public static Sequence j() {
-        return e.f36148a;
+        return e.f36164a;
     }
 
     public static final Sequence k(Sequence sequence) {
@@ -99,7 +99,7 @@ public class s extends m {
     public static Sequence q(final Object obj, Function1 nextFunction) {
         Intrinsics.checkNotNullParameter(nextFunction, "nextFunction");
         if (obj == null) {
-            return e.f36148a;
+            return e.f36164a;
         }
         return new h(new Function0() { // from class: kotlin.sequences.n
             @Override // kotlin.jvm.functions.Function0

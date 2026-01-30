@@ -35,4 +35,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.snowballStem = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [13814, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [13840, 2]);

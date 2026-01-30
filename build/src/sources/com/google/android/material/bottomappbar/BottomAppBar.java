@@ -17,7 +17,7 @@ import yg.j;
 public abstract class BottomAppBar extends Toolbar implements CoordinatorLayout.b {
 
     /* renamed from: i0  reason: collision with root package name */
-    private static final int f15578i0 = j.f54510m;
+    private static final int f15578i0 = j.f54526m;
 
     /* renamed from: j0  reason: collision with root package name */
     private static final int f15579j0 = b.F;
@@ -100,10 +100,10 @@ public abstract class BottomAppBar extends Toolbar implements CoordinatorLayout.
                         floatingActionButton.setCompatElevation(0.0f);
                     }
                     if (floatingActionButton.getShowMotionSpec() == null) {
-                        floatingActionButton.setShowMotionSpecResource(yg.a.f54327b);
+                        floatingActionButton.setShowMotionSpecResource(yg.a.f54343b);
                     }
                     if (floatingActionButton.getHideMotionSpec() == null) {
-                        floatingActionButton.setHideMotionSpecResource(yg.a.f54326a);
+                        floatingActionButton.setHideMotionSpecResource(yg.a.f54342a);
                     }
                     BottomAppBar.W(bottomAppBar, floatingActionButton);
                 }

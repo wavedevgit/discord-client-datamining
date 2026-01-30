@@ -1,7 +1,7 @@
 // modules/spotify/SpotifyConstants.tsx
 // @ts-nocheck
 export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun49996: for (var _fun49996_ip = 0;;) switch (_fun49996_ip) {
+    _fun50042: for (var _fun50042_ip = 0;;) switch (_fun50042_ip) {
         case 0:
             var8 = require;
             var2 = exports;
@@ -99,13 +99,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var12 = var14.bind(var16)(var15, var12);
             var3.PLAYER_REPEAT = var12;
             var12 = function(arg0, arg1) { // Original name: WEB_OPEN, environment: var1
-                _fun49998: for (var _fun49998_ip = 0;;) switch (_fun49998_ip) {
+                _fun50044: for (var _fun50044_ip = 0;;) switch (_fun50044_ip) {
                     case 0:
                         var3 = arguments[2];
                         var2 = undefined;
                         if (!(var3 === var2)) {
-                            _fun49998_ip = 13;
-                            continue _fun49998
+                            _fun50044_ip = 13;
+                            continue _fun50044
                         }
                     case 9:
                         var3 = 'desktop';
@@ -130,13 +130,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var3.WEB_OPEN = var12;
             var12 = function(arg0) { // Original name: EMBED, environment: var1
-                _fun49999: for (var _fun49999_ip = 0;;) switch (_fun49999_ip) {
+                _fun50045: for (var _fun50045_ip = 0;;) switch (_fun50045_ip) {
                     case 0:
                         var2 = arguments[1];
                         var1 = undefined;
                         if (!(var2 === var1)) {
-                            _fun49999_ip = 13;
-                            continue _fun49999
+                            _fun50045_ip = 13;
+                            continue _fun50045
                         }
                     case 9:
                         var2 = 'desktop';
@@ -154,21 +154,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             };
             var3.EMBED = var12;
             var12 = function(arg0, arg1) { // Original name: PLAYER_OPEN, environment: var1
-                _fun50000: for (var _fun50000_ip = 0;;) switch (_fun50000_ip) {
+                _fun50046: for (var _fun50046_ip = 0;;) switch (_fun50046_ip) {
                     case 0:
                         var1 = arguments[2];
                         var7 = arguments[3];
                         var2 = undefined;
                         if (!(var1 === var2)) {
-                            _fun50000_ip = 14;
-                            continue _fun50000
+                            _fun50046_ip = 14;
+                            continue _fun50046
                         }
                     case 12:
                         var1 = true;
                     case 14:
                         if (!(var7 === var2)) {
-                            _fun50000_ip = 22;
-                            continue _fun50000
+                            _fun50046_ip = 22;
+                            continue _fun50046
                         }
                     case 18:
                         var7 = 'desktop';
@@ -183,8 +183,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var4 = '';
                         var3 = var4;
                         if (!var1) {
-                            _fun50000_ip = 74;
-                            continue _fun50000
+                            _fun50046_ip = 74;
+                            continue _fun50046
                         }
                     case 62:
                         var1 = _closure1_slot1;
@@ -230,8 +230,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var11 = 'https://itunes.apple.com/us/app/spotify-music/id324684580?mt=8';
             var12 = var11;
             if (!var13) {
-                _fun49996_ip = 559;
-                continue _fun49996
+                _fun50042_ip = 559;
+                continue _fun50042
             }
         case 553:
             var12 = 'https://play.google.com/store/apps/details?id=com.spotify.music&hl=en_US&gl=US';
@@ -251,14 +251,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.SPOTIFY_PARTY_PREFIX = var7;
             var2.SPOTIFY_PLATFORM_NAME = var6;
             var6 = function(arg0) { // Original name: isSpotifyParty, environment: var1
-                _fun50002: for (var _fun50002_ip = 0;;) switch (_fun50002_ip) {
+                _fun50048: for (var _fun50048_ip = 0;;) switch (_fun50048_ip) {
                     case 0:
                         var3 = arg0;
                         var0 = null;
                         var0 = var0 != var3;
                         if (!var0) {
-                            _fun50002_ip = 29;
-                            continue _fun50002
+                            _fun50048_ip = 29;
+                            continue _fun50048
                         }
                     case 12:
                         var2 = var3.startsWith;
@@ -275,50 +275,50 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.SPOTIFY_HOSTNAMES = var4;
             var2.SpotifyEndpoints = var3;
             var1 = function(arg0) { // Original name: getSpotifyResourceType, environment: var1
-                _fun50003: for (var _fun50003_ip = 0;;) switch (_fun50003_ip) {
+                _fun50049: for (var _fun50049_ip = 0;;) switch (_fun50049_ip) {
                     case 0:
                         var1 = arg0;
                         var2 = 'string';
                         var0 = typeof var1;
                         if (!(var2 === var0)) {
-                            _fun50003_ip = 166;
-                            continue _fun50003
+                            _fun50049_ip = 166;
+                            continue _fun50049
                         }
                     case 17:
                         var0 = 'track';
                         if (!(var0 !== var1)) {
-                            _fun50003_ip = 151;
-                            continue _fun50003
+                            _fun50049_ip = 151;
+                            continue _fun50049
                         }
                     case 28:
                         var0 = 'artist';
                         if (!(var0 !== var1)) {
-                            _fun50003_ip = 136;
-                            continue _fun50003
+                            _fun50049_ip = 136;
+                            continue _fun50049
                         }
                     case 36:
                         var0 = 'album';
                         if (!(var0 !== var1)) {
-                            _fun50003_ip = 121;
-                            continue _fun50003
+                            _fun50049_ip = 121;
+                            continue _fun50049
                         }
                     case 44:
                         var0 = 'playlist';
                         if (!(var0 !== var1)) {
-                            _fun50003_ip = 106;
-                            continue _fun50003
+                            _fun50049_ip = 106;
+                            continue _fun50049
                         }
                     case 54:
                         var0 = 'episode';
                         if (!(var0 !== var1)) {
-                            _fun50003_ip = 91;
-                            continue _fun50003
+                            _fun50049_ip = 91;
+                            continue _fun50049
                         }
                     case 64:
                         var0 = 'show';
                         if (!(var0 !== var1)) {
-                            _fun50003_ip = 76;
-                            continue _fun50003
+                            _fun50049_ip = 76;
+                            continue _fun50049
                         }
                     case 72:
                         var0 = null;
@@ -355,4 +355,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2.getSpotifyResourceType = var1;
             return var0;
     }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 4352, 478, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 4358, 478, 2]);

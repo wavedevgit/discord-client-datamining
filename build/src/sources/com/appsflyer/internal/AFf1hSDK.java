@@ -79,10 +79,10 @@ public final class AFf1hSDK {
         String monetizationNetwork = this.getRevenue.getMonetizationNetwork("com.appsflyer.rc.cache.max-age-fallback");
         if (monetizationNetwork != null) {
             try {
-                Result.a aVar = Result.f33279e;
+                Result.a aVar = Result.f33295e;
                 b10 = Result.b(Long.valueOf(Long.parseLong(monetizationNetwork)));
             } catch (Throwable th2) {
-                Result.a aVar2 = Result.f33279e;
+                Result.a aVar2 = Result.f33295e;
                 b10 = Result.b(kotlin.c.a(th2));
             }
             Throwable e10 = Result.e(b10);

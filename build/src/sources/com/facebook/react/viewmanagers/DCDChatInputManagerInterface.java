@@ -26,7 +26,7 @@ public interface DCDChatInputManagerInterface<T extends View> extends ViewManage
 
     void setMarkAsSpoilerTitle(T t10, String str);
 
-    void setMaxHeight(T t10, float f10);
+    void setMaxHeight(T t10, Float f10);
 
     void setPlaceholder(T t10, String str);
 
@@ -36,7 +36,7 @@ public interface DCDChatInputManagerInterface<T extends View> extends ViewManage
 
     void setSelectionColor(T t10, String str);
 
-    void setSetNoExtractUI(T t10, boolean z10);
+    void setSetNoExtractUI(T t10, Boolean bool);
 
     void setShouldShowCursor(T t10, boolean z10);
 

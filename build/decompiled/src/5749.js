@@ -1,33 +1,61 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun50996: for (var _fun50996_ip = 0;;) switch (_fun50996_ip) {
-        case 0:
-            var9 = require;
-            var8 = exports;
-            var7 = dependencyMap;
-            var0 = global;
-            var10 = var0.Object;
-            var2 = var10.defineProperty;
-            var1 = {};
-            var0 = true;
-            var1.value = var0;
-            var0 = '__esModule';
-            var0 = var2.bind(var10)(var8, var0, var1);
-            var2 = 0;
-            var1 = var7[var2];
-            var0 = undefined;
-            var5 = var9.bind(var0)(var1);
-            for (var1 in var5)
-                case 62: {
-                    case 71: var11 = var1;
-                    var10 = var7[var2];
-                    var10 = var9.bind(var0)(var10);
-                    var10 = var10[var11];
-                    var8[var11] = var10;
-                    _fun50996_ip = 62;
-                    continue _fun50996;
-                }
-        case 93:
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5750]);
+    var3 = metroImportDefault;
+    var5 = metroImportAll;
+    var2 = exports;
+    var4 = dependencyMap;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var1);
+    var0 = 0;
+    var1 = var4[var0];
+    var0 = undefined;
+    var1 = var3.bind(var0)(var1);
+    var2.createStackNavigator = var1;
+    var1 = 1;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.Header = var1;
+    var1 = 2;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.StackView = var1;
+    var1 = 3;
+    var1 = var4[var1];
+    var1 = var5.bind(var0)(var1);
+    var2.CardStyleInterpolators = var1;
+    var1 = 4;
+    var1 = var4[var1];
+    var1 = var5.bind(var0)(var1);
+    var2.HeaderStyleInterpolators = var1;
+    var1 = 5;
+    var1 = var4[var1];
+    var1 = var5.bind(var0)(var1);
+    var2.TransitionPresets = var1;
+    var1 = 6;
+    var1 = var4[var1];
+    var1 = var5.bind(var0)(var1);
+    var2.TransitionSpecs = var1;
+    var1 = 7;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.CardAnimationContext = var1;
+    var1 = 8;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.GestureHandlerRefContext = var1;
+    var1 = 9;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.useCardAnimation = var1;
+    var1 = 10;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.useGestureHandlerRef = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5750, 5780, 5751, 5799, 5779, 5801, 5802, 5797, 5754, 5807, 5808]);

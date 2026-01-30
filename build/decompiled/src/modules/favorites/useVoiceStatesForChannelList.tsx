@@ -59,13 +59,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var1 = new Array(1);
         var1[0] = var5;
         var0 = function() { // Environment: var0
-            _fun102288: for (var _fun102288_ip = 0;;) switch (_fun102288_ip) {
+            _fun102542: for (var _fun102542_ip = 0;;) switch (_fun102542_ip) {
                 case 0:
                     var3 = _closure2_slot0;
                     var2 = _closure1_slot5;
                     if (!(var3 === var2)) {
-                        _fun102288_ip = 100;
-                        continue _fun102288
+                        _fun102542_ip = 100;
+                        continue _fun102542
                     }
                 case 18:
                     var3 = _closure1_slot4;
@@ -81,15 +81,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var9 = var11.getChannel;
                             var12 = var9.bind(var11)(var10);
                             if (var3 == var12) {
-                                _fun102288_ip = 47;
-                                continue _fun102288
+                                _fun102542_ip = 47;
+                                continue _fun102542
                             }
                             case 77: var11 = _closure1_slot3;
                             var9 = var11.getVoiceStatesForChannel;
                             var9 = var9.bind(var11)(var12);
                             var2[var10] = var9;
-                            _fun102288_ip = 47;
-                            continue _fun102288;
+                            _fun102542_ip = 47;
+                            continue _fun102542;
                         }
                 case 98:
                     return var2;
@@ -106,4 +106,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 3483, 1375, 660, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 3485, 1375, 660, 566, 2]);

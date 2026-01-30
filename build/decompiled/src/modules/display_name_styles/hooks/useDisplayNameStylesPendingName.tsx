@@ -36,7 +36,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/display_name_styles/hooks/useDisplayNameStylesPendingName.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0, arg1) { // Original name: useDisplayNameStylesPendingName, environment: var1
-        _fun84772: for (var _fun84772_ip = 0;;) switch (_fun84772_ip) {
+        _fun84818: for (var _fun84818_ip = 0;;) switch (_fun84818_ip) {
             case 0:
                 var7 = arg0;
                 var8 = arg1;
@@ -54,8 +54,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var5 = var2 != var4;
                 var0 = '';
                 if (!var5) {
-                    _fun84772_ip = 68;
-                    continue _fun84772
+                    _fun84818_ip = 68;
+                    continue _fun84818
                 }
             case 65:
                 var0 = var4;
@@ -77,28 +77,28 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3[0] = var8;
                 var3[1] = var7;
                 var1 = function() { // Environment: var1
-                    _fun84773: for (var _fun84773_ip = 0;;) switch (_fun84773_ip) {
+                    _fun84819: for (var _fun84819_ip = 0;;) switch (_fun84819_ip) {
                         case 0:
                             var0 = _closure2_slot1;
                             var7 = null;
                             if (!(var7 == var0)) {
-                                _fun84773_ip = 38;
-                                continue _fun84773
+                                _fun84819_ip = 38;
+                                continue _fun84819
                             }
                         case 13:
                             var1 = _closure1_slot4;
                             var0 = var1.getPendingChanges;
                             var0 = var0.bind(var1)();
                             var0 = var0.pendingGlobalName;
-                            _fun84773_ip = 106;
-                            continue _fun84773;
+                            _fun84819_ip = 106;
+                            continue _fun84819;
                         case 38:
                             var3 = _closure1_slot3;
                             var1 = var3.getPendingNickname;
                             var1 = var1.bind(var3)();
                             if (!(var7 == var1)) {
-                                _fun84773_ip = 103;
-                                continue _fun84773
+                                _fun84819_ip = 103;
+                                continue _fun84819
                             }
                         case 61:
                             var5 = _closure1_slot5;
@@ -108,8 +108,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var7 = var7 == var2;
                             var2 = undefined;
                             if (var7) {
-                                _fun84773_ip = 97;
-                                continue _fun84773
+                                _fun84819_ip = 97;
+                                continue _fun84819
                             }
                         case 88:
                             var6 = _closure2_slot0;
@@ -125,15 +125,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var5.bind(var6)(var4, var1, var3);
                 var1 = var0;
                 if (!(var2 != var3)) {
-                    _fun84772_ip = 157;
-                    continue _fun84772
+                    _fun84818_ip = 157;
+                    continue _fun84818
                 }
             case 154:
                 var1 = var3;
             case 157:
                 if (!(var2 != var1)) {
-                    _fun84772_ip = 164;
-                    continue _fun84772
+                    _fun84818_ip = 164;
+                    continue _fun84818
                 }
             case 161:
                 var0 = var1;
@@ -143,4 +143,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.useDisplayNameStylesPendingName = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [5539, 5540, 1672, 3195, 566, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [5543, 5544, 1672, 3195, 566, 2]);

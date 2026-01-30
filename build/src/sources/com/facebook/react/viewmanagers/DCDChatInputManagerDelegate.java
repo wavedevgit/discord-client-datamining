@@ -119,12 +119,10 @@ public class DCDChatInputManagerDelegate<T extends View, U extends BaseViewManag
 
     @Override // com.facebook.react.uimanager.BaseViewManagerDelegate, com.facebook.react.uimanager.ViewManagerDelegate
     public void setProperty(T t10, String str, Object obj) {
-        float floatValue;
         str.getClass();
         boolean z10 = false;
         boolean z11 = false;
         int i10 = 0;
-        boolean z12 = false;
         char c10 = 65535;
         switch (str.hashCode()) {
             case -1710287051:
@@ -195,6 +193,12 @@ public class DCDChatInputManagerDelegate<T extends View, U extends BaseViewManag
                 break;
         }
         String str2 = null;
+        String str3 = null;
+        String str4 = null;
+        Float f10 = null;
+        String str5 = null;
+        Boolean bool = null;
+        String str6 = null;
         switch (c10) {
             case 0:
                 DCDChatInputManagerInterface dCDChatInputManagerInterface = (DCDChatInputManagerInterface) this.mViewManager;
@@ -206,9 +210,9 @@ public class DCDChatInputManagerDelegate<T extends View, U extends BaseViewManag
             case 1:
                 DCDChatInputManagerInterface dCDChatInputManagerInterface2 = (DCDChatInputManagerInterface) this.mViewManager;
                 if (obj != null) {
-                    str2 = (String) obj;
+                    str6 = (String) obj;
                 }
-                dCDChatInputManagerInterface2.setPlaceholderColor(t10, str2);
+                dCDChatInputManagerInterface2.setPlaceholderColor(t10, str6);
                 return;
             case 2:
                 DCDChatInputManagerInterface dCDChatInputManagerInterface3 = (DCDChatInputManagerInterface) this.mViewManager;
@@ -220,16 +224,16 @@ public class DCDChatInputManagerDelegate<T extends View, U extends BaseViewManag
             case 3:
                 DCDChatInputManagerInterface dCDChatInputManagerInterface4 = (DCDChatInputManagerInterface) this.mViewManager;
                 if (obj != null) {
-                    z12 = ((Boolean) obj).booleanValue();
+                    bool = (Boolean) obj;
                 }
-                dCDChatInputManagerInterface4.setSetNoExtractUI(t10, z12);
+                dCDChatInputManagerInterface4.setSetNoExtractUI(t10, bool);
                 return;
             case 4:
                 DCDChatInputManagerInterface dCDChatInputManagerInterface5 = (DCDChatInputManagerInterface) this.mViewManager;
                 if (obj != null) {
-                    str2 = (String) obj;
+                    str5 = (String) obj;
                 }
-                dCDChatInputManagerInterface5.setTextColor(t10, str2);
+                dCDChatInputManagerInterface5.setTextColor(t10, str5);
                 return;
             case 5:
                 DCDChatInputManagerInterface dCDChatInputManagerInterface6 = (DCDChatInputManagerInterface) this.mViewManager;
@@ -240,12 +244,10 @@ public class DCDChatInputManagerDelegate<T extends View, U extends BaseViewManag
                 return;
             case 6:
                 DCDChatInputManagerInterface dCDChatInputManagerInterface7 = (DCDChatInputManagerInterface) this.mViewManager;
-                if (obj == null) {
-                    floatValue = 0.0f;
-                } else {
-                    floatValue = ((Double) obj).floatValue();
+                if (obj != null) {
+                    f10 = Float.valueOf(((Double) obj).floatValue());
                 }
-                dCDChatInputManagerInterface7.setMaxHeight(t10, floatValue);
+                dCDChatInputManagerInterface7.setMaxHeight(t10, f10);
                 return;
             case 7:
                 ((DCDChatInputManagerInterface) this.mViewManager).setKeyboardType(t10, (String) obj);
@@ -253,9 +255,9 @@ public class DCDChatInputManagerDelegate<T extends View, U extends BaseViewManag
             case '\b':
                 DCDChatInputManagerInterface dCDChatInputManagerInterface8 = (DCDChatInputManagerInterface) this.mViewManager;
                 if (obj != null) {
-                    str2 = (String) obj;
+                    str4 = (String) obj;
                 }
-                dCDChatInputManagerInterface8.setPlaceholder(t10, str2);
+                dCDChatInputManagerInterface8.setPlaceholder(t10, str4);
                 return;
             case '\t':
                 DCDChatInputManagerInterface dCDChatInputManagerInterface9 = (DCDChatInputManagerInterface) this.mViewManager;
@@ -267,9 +269,9 @@ public class DCDChatInputManagerDelegate<T extends View, U extends BaseViewManag
             case '\n':
                 DCDChatInputManagerInterface dCDChatInputManagerInterface10 = (DCDChatInputManagerInterface) this.mViewManager;
                 if (obj != null) {
-                    str2 = (String) obj;
+                    str3 = (String) obj;
                 }
-                dCDChatInputManagerInterface10.setSelectionColor(t10, str2);
+                dCDChatInputManagerInterface10.setSelectionColor(t10, str3);
                 return;
             default:
                 super.kotlinCompat$setProperty(t10, str, obj);

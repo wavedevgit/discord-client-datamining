@@ -10,10 +10,10 @@ import java.net.HttpURLConnection;
 public class a implements d {
 
     /* renamed from: d  reason: collision with root package name */
-    private final HttpURLConnection f50068d;
+    private final HttpURLConnection f50084d;
 
     public a(HttpURLConnection httpURLConnection) {
-        this.f50068d = httpURLConnection;
+        this.f50084d = httpURLConnection;
     }
 
     private String a(HttpURLConnection httpURLConnection) {
@@ -49,7 +49,7 @@ public class a implements d {
             if (isSuccessful()) {
                 return null;
             }
-            return "Unable to fetch " + this.f50068d.getURL() + ". Failed with " + this.f50068d.getResponseCode() + ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE + a(this.f50068d);
+            return "Unable to fetch " + this.f50084d.getURL() + ". Failed with " + this.f50084d.getResponseCode() + ReactEditTextInputConnectionWrapper.NEWLINE_RAW_VALUE + a(this.f50084d);
         } catch (IOException e10) {
             x5.d.d("get error failed ", e10);
             return e10.getMessage();
@@ -58,13 +58,13 @@ public class a implements d {
 
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f50068d.disconnect();
+        this.f50084d.disconnect();
     }
 
     @Override // u5.d
     public boolean isSuccessful() {
         try {
-            if (this.f50068d.getResponseCode() / 100 != 2) {
+            if (this.f50084d.getResponseCode() / 100 != 2) {
                 return false;
             }
             return true;
@@ -75,11 +75,11 @@ public class a implements d {
 
     @Override // u5.d
     public String m0() {
-        return this.f50068d.getContentType();
+        return this.f50084d.getContentType();
     }
 
     @Override // u5.d
     public InputStream u0() {
-        return this.f50068d.getInputStream();
+        return this.f50084d.getInputStream();
     }
 }

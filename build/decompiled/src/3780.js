@@ -1,625 +1,317 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    _fun33922: for (var _fun33922_ip = 0;;) switch (_fun33922_ip) {
-        case 0:
-            var5 = global;
-            var7 = require;
-            var2 = exports;
-            var8 = dependencyMap;
-            var _closure1_slot0 = var5;
-            var _closure1_slot1 = var7;
-            var _closure1_slot2 = var8;
-            var13 = function(arg0, arg1) { // Original name: updatePropsOnReactJS, environment: var1
-                _fun33923: for (var _fun33923_ip = 0;;) switch (_fun33923_ip) {
-                    case 0:
+    var7 = require;
+    var2 = exports;
+    var6 = dependencyMap;
+    var _closure1_slot0 = var7;
+    var _closure1_slot1 = var6;
+    var4 = function() { // Original name: configureProps, environment: var1
+        _fun33924: for (var _fun33924_ip = 0;;) switch (_fun33924_ip) {
+            case 0:
+                var3 = _closure1_slot0;
+                var0 = _closure1_slot1;
+                var8 = 1;
+                var2 = var0[var8];
+                var0 = undefined;
+                var2 = var3.bind(var0)(var2);
+                var2 = var2.PropsAllowlists;
+                var7 = var2.NATIVE_THREAD_PROPS_WHITELIST;
+                for (var3 in var7)
+                    case 48: {
+                        case 57: var6 = var3;
+                        var10 = _closure1_slot0;
                         var2 = _closure1_slot1;
-                        var1 = _closure1_slot2;
-                        var0 = 4;
-                        var1 = var1[var0];
-                        var0 = undefined;
-                        var1 = var2.bind(var0)(var1);
-                        var3 = var1.ComponentRegistry;
-                        var2 = var3.getComponent;
-                        var1 = arg0;
-                        var3 = var2.bind(var3)(var1);
-                        if (!var3) {
-                            _fun33923_ip = 64;
-                            continue _fun33923
-                        }
-                    case 48:
-                        var2 = var3._updateReanimatedProps;
-                        var1 = arg1;
-                        var1 = var2.bind(var3)(var1);
-                    case 64:
-                        return var0;
-                }
-            };
-            var _closure1_slot8 = var13;
-            var6 = global;
-            var9 = var6.Object;
-            var4 = var9.defineProperty;
-            var3 = {};
-            var0 = true;
-            var3.value = var0;
-            var0 = '__esModule';
-            var0 = var4.bind(var9)(var2, var0, var3);
-            var10 = {};
-            var0 = 'function pnpm_updatePropsTs1(viewDescriptors,updates,isAnimatedProps){const{_updatePropsJS}=this.__closure;var _viewDescriptors$valu;(_viewDescriptors$valu=viewDescriptors.value)===null||_viewDescriptors$valu===void 0||_viewDescriptors$valu.forEach(function(viewDescriptor){const component=viewDescriptor.tag;_updatePropsJS(updates,component,isAnimatedProps);});}';
-            var10.code = var0;
-            var9 = {};
-            var0 = "function pnpm_updatePropsTs2(viewDescriptors,updates){const{processColorsInProps,processTransformOrigin}=this.__closure;viewDescriptors.value.forEach(function(viewDescriptor){var _global$lastUpdateByT;const prevState=(_global$lastUpdateByT=global.lastUpdateByTag[viewDescriptor.tag])!==null&&_global$lastUpdateByT!==void 0?_global$lastUpdateByT:{};global.lastUpdateByTag[viewDescriptor.tag]={...prevState,...updates};global.lastUpdateFrameTimeByTag[viewDescriptor.tag]=global.__frameTimestamp;});processColorsInProps(updates);if('transformOrigin'in updates){updates.transformOrigin=processTransformOrigin(updates.transformOrigin);}global.UpdatePropsManager.update(viewDescriptors,updates);}";
-            var9.code = var0;
-            var4 = 0;
-            var3 = var8[var4];
-            var0 = undefined;
-            var11 = var7.bind(var0)(var3);
-            var3 = var11.shouldBeUseWeb;
-            var3 = var3.bind(var11)();
-            if (var3) {
-                _fun33922_ip = 204;
-                continue _fun33922
-            }
-        case 117:
-            var3 = function(arg0, arg1) { // Original name: pnpm_updatePropsTs2, environment: var1
-                _fun33926: for (var _fun33926_ip = 0;;) switch (_fun33926_ip) {
-                    case 0:
-                        var4 = arg0;
-                        var3 = arg1;
-                        var _closure2_slot0 = var3;
-                        var2 = var4.value;
-                        var1 = var2.forEach;
-                        var0 = function(arg0) { // Environment: var0
-                            _fun33927: for (var _fun33927_ip = 0;;) switch (_fun33927_ip) {
-                                case 0:
-                                    var1 = arg0;
-                                    var2 = _closure1_slot0;
-                                    var3 = var2.lastUpdateByTag;
-                                    var2 = var1.tag;
-                                    var8 = var3[var2];
-                                    var2 = null;
-                                    if (!(var2 == var8)) {
-                                        _fun33927_ip = 33;
-                                        continue _fun33927
-                                    }
-                                case 31:
-                                    var8 = {};
-                                case 33:
-                                    var0 = _closure1_slot0;
-                                    var4 = var0.lastUpdateByTag;
-                                    var3 = var1.tag;
-                                    var2 = global;
-                                    var7 = var2.Object;
-                                    var6 = var7.assign;
-                                    var5 = _closure2_slot0;
-                                    var2 = {};
-                                    var2 = var6.bind(var7)(var2, var8, var5);
-                                    var4[var3] = var2;
-                                    var2 = var0.lastUpdateFrameTimeByTag;
-                                    var1 = var1.tag;
-                                    var0 = var0.__frameTimestamp;
-                                    var2[var1] = var0;
-                                    var0 = undefined;
-                                    return var0;
-                            }
-                        };
-                        var0 = var1.bind(var2)(var0);
-                        var5 = _closure1_slot1;
-                        var2 = _closure1_slot2;
-                        var0 = 2;
-                        var2 = var2[var0];
-                        var0 = undefined;
-                        var5 = var5.bind(var0)(var2);
-                        var2 = var5.processColorsInProps;
-                        var2 = var2.bind(var5)(var3);
-                        var2 = 'transformOrigin';
-                        var2 = var2 in var3;
+                        var2 = var2[var8];
+                        var2 = var10.bind(var0)(var2);
+                        var2 = var2.PropsAllowlists;
+                        var2 = var2.UI_THREAD_PROPS_WHITELIST;
+                        var2 = var6 in var2;
                         if (!var2) {
-                            _fun33926_ip = 122;
-                            continue _fun33926
-                        }
-                    case 79:
-                        var5 = _closure1_slot1;
-                        var6 = _closure1_slot2;
-                        var2 = 3;
-                        var2 = var6[var2];
-                        var6 = var5.bind(var0)(var2);
-                        var5 = var6.processTransformOrigin;
-                        var2 = var3.transformOrigin;
-                        var2 = var5.bind(var6)(var2);
-                        var3.transformOrigin = var2;
-                    case 122:
-                        var1 = _closure1_slot0;
-                        var2 = var1.UpdatePropsManager;
-                        var1 = var2.update;
-                        var1 = var1.bind(var2)(var4, var3);
-                        return var0;
-                }
-            };
-            var11 = {};
-            var12 = 2;
-            var12 = var8[var12];
-            var12 = var7.bind(var0)(var12);
-            var12 = var12.processColorsInProps;
-            var11.processColorsInProps = var12;
-            var12 = 3;
-            var12 = var8[var12];
-            var12 = var7.bind(var0)(var12);
-            var12 = var12.processTransformOrigin;
-            var11.processTransformOrigin = var12;
-            var3.__closure = var11;
-            var11 = 9641647469033.0;
-            var3.__workletHash = var11;
-            var3.__initData = var9;
-            var _closure1_slot3 = var3;
-            _fun33922_ip = 269;
-            continue _fun33922;
-        case 204:
-            var9 = function(arg0, arg1, arg2) { // Original name: pnpm_updatePropsTs1, environment: var1
-                _fun33924: for (var _fun33924_ip = 0;;) switch (_fun33924_ip) {
-                    case 0:
-                        var1 = arg1;
-                        var _closure2_slot0 = var1;
-                        var1 = arg2;
-                        var _closure2_slot1 = var1;
-                        var1 = arg0;
-                        var2 = var1.value;
-                        var1 = null;
-                        if (!(var1 != var2)) {
-                            _fun33924_ip = 45;
+                            _fun33924_ip = 48;
                             continue _fun33924
                         }
-                    case 30:
-                        var1 = var2.forEach;
-                        var0 = function(arg0) { // Environment: var0
-                            var0 = arg0;
-                            var5 = var0.tag;
-                            var2 = _closure1_slot1;
-                            var1 = _closure1_slot2;
-                            var0 = 1;
-                            var1 = var1[var0];
-                            var0 = undefined;
-                            var4 = var2.bind(var0)(var1);
-                            var3 = var4._updatePropsJS;
-                            var2 = _closure2_slot0;
-                            var1 = _closure2_slot1;
-                            var1 = var3.bind(var4)(var2, var5, var1);
-                            return var0;
-                        };
-                        var0 = var1.bind(var2)(var0);
-                    case 45:
-                        var0 = undefined;
-                        return var0;
-                }
-            };
-            var11 = {};
-            var12 = 1;
-            var12 = var8[var12];
-            var12 = var7.bind(var0)(var12);
-            var12 = var12._updatePropsJS;
-            var11._updatePropsJS = var12;
-            var9.__closure = var11;
-            var11 = 17381979125683.0;
-            var9.__workletHash = var11;
-            var9.__initData = var10;
-            _closure1_slot3 = var9;
-            var3 = var9;
-        case 269:
-            var10 = {};
-            var9 = "function pnpm_updatePropsTs3(){const{runOnJS,updatePropsOnReactJS}=this.__closure;const operations=[];const scheduledFrameIds={};function checkUpdate(tag){'worklet';const currentFrameTime=global.__frameTimestamp;const lastUpdateFrameTime=global.lastUpdateFrameTimeByTag[tag];if(!currentFrameTime||!lastUpdateFrameTime){return;}if(currentFrameTime-lastUpdateFrameTime>=20){runOnJS(updatePropsOnReactJS)(tag,global.lastUpdateByTag[tag]);global.lastUpdateByTag[tag]=undefined;return;}if(scheduledFrameIds[tag]){return;}scheduledFrameIds[tag]=requestAnimationFrame(function(){'worklet';scheduledFrameIds[tag]=undefined;checkUpdate(tag);});}return{update:function(viewDescriptors,updates){var _this=this;viewDescriptors.value.forEach(function(viewDescriptor){const tag=viewDescriptor.tag;operations.push({shadowNodeWrapper:viewDescriptor.shadowNodeWrapper,updates:updates,tag:tag});if(operations.length===1){queueMicrotask(_this.flush);}});},flush:function(){global._updatePropsFabric(operations);operations.forEach(function({tag:tag}){checkUpdate(tag);});operations.length=0;}};}";
-            var10.code = var9;
-            var9 = {};
-            var11 = "function checkUpdate_Pnpm_updatePropsTs4(tag){const checkUpdate_Pnpm_updatePropsTs4=this._recur;const{runOnJS,updatePropsOnReactJS,scheduledFrameIds}=this.__closure;const currentFrameTime=global.__frameTimestamp;const lastUpdateFrameTime=global.lastUpdateFrameTimeByTag[tag];if(!currentFrameTime||!lastUpdateFrameTime){return;}if(currentFrameTime-lastUpdateFrameTime>=20){runOnJS(updatePropsOnReactJS)(tag,global.lastUpdateByTag[tag]);global.lastUpdateByTag[tag]=undefined;return;}if(scheduledFrameIds[tag]){return;}scheduledFrameIds[tag]=requestAnimationFrame(function(){'worklet';scheduledFrameIds[tag]=undefined;checkUpdate_Pnpm_updatePropsTs4(tag);});}";
-            var9.code = var11;
-            var _closure1_slot4 = var9;
-            var9 = {};
-            var11 = 'function pnpm_updatePropsTs5(){const{scheduledFrameIds,tag,checkUpdate}=this.__closure;scheduledFrameIds[tag]=undefined;checkUpdate(tag);}';
-            var9.code = var11;
-            var _closure1_slot5 = var9;
-            var9 = {};
-            var11 = "function pnpm_updatePropsTs6(){const operations=[];return{update:function(viewDescriptors,updates){var _this=this;viewDescriptors.value.forEach(function(viewDescriptor){operations.push({tag:viewDescriptor.tag,name:viewDescriptor.name||'RCTView',updates:updates});if(operations.length===1){queueMicrotask(_this.flush);}});},flush:function(){global._updatePropsPaper(operations);operations.length=0;}};}";
-            var9.code = var11;
-            var11 = var8[var4];
-            var12 = var7.bind(var0)(var11);
-            var11 = var12.isFabric;
-            var11 = var11.bind(var12)();
-            if (var11) {
-                _fun33922_ip = 384;
-                continue _fun33922
-            }
-        case 347:
-            var11 = function() { // Original name: pnpm_updatePropsTs6, environment: var1
-                var0 = new Array(0);
-                var _closure2_slot0 = var0;
-                var0 = {};
-                var2 = function(arg0, arg1) { // Original name: update, environment: var1
-                    var1 = arg1;
-                    var _closure3_slot0 = var1;
-                    var1 = this;
-                    var _closure3_slot1 = var1;
-                    var1 = arg0;
-                    var2 = var1.value;
-                    var1 = var2.forEach;
-                    var0 = function(arg0) { // Environment: var0
-                        _fun33937: for (var _fun33937_ip = 0;;) switch (_fun33937_ip) {
-                            case 0:
-                                var0 = arg0;
-                                var4 = _closure2_slot0;
-                                var3 = var4.push;
-                                var2 = {};
-                                var5 = var0.tag;
-                                var2.tag = var5;
-                                var0 = var0.name;
-                                if (var0) {
-                                    _fun33937_ip = 40;
-                                    continue _fun33937
-                                }
-                            case 34:
-                                var0 = 'RCTView';
-                            case 40:
-                                var2.name = var0;
-                                var5 = _closure3_slot0;
-                                var2.updates = var5;
-                                var2 = var3.bind(var4)(var2);
-                                var1 = _closure2_slot0;
-                                var2 = var1.length;
-                                var1 = 1;
-                                if (!(var1 === var2)) {
-                                    _fun33937_ip = 102;
-                                    continue _fun33937
-                                }
-                            case 77:
-                                var1 = global;
-                                var2 = var1.queueMicrotask;
-                                var0 = _closure3_slot1;
-                                var1 = var0.flush;
-                                var0 = undefined;
-                                var0 = var2.bind(var0)(var1);
-                            case 102:
-                                var0 = undefined;
-                                return var0;
-                        }
-                    };
-                    var0 = var1.bind(var2)(var0);
-                    var0 = undefined;
-                    return var0;
-                };
-                var0.update = var2;
-                var1 = function() { // Original name: flush, environment: var1
-                    var2 = _closure1_slot0;
-                    var0 = var2._updatePropsPaper;
-                    var1 = _closure2_slot0;
-                    var0 = var0.bind(var2)(var1);
-                    var0 = 0;
-                    var1.length = var0;
-                    var0 = undefined;
-                    return var0;
-                };
-                var0.flush = var1;
+                        case 96: var3 = _closure1_slot0;
+                        var4 = _closure1_slot1;
+                        var2 = 2;
+                        var2 = var4[var2];
+                        var2 = var3.bind(var0)(var2);
+                        var4 = var2.ReanimatedError;
+                        var2 = global;
+                        var2 = var2.HermesInternal;
+                        var5 = var2.concat;
+                        var3 = 'Property `';
+                        var2 = '` was whitelisted both as UI and native prop. Please remove it from one of the lists.';
+                        var12 = var5.bind(var3)(var6, var2);
+                        var3 = var4.prototype;
+                        var3 = Object.create(var3, {
+                            constructor: {
+                                value: var4
+                            }
+                        });
+                        var13 = var3;
+                        var2 = new var13[var4](var12, var11);
+                        var2 = var2 instanceof Object ? var2 : var3;
+                        throw var2;
+                    }
+            case 175:
+                var7 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var2 = 3;
+                var2 = var1[var2];
+                var4 = var7.bind(var0)(var2);
+                var3 = var4.jsiConfigureProps;
+                var5 = global;
+                var9 = var5.Object;
+                var6 = var9.keys;
+                var2 = var1[var8];
+                var2 = var7.bind(var0)(var2);
+                var2 = var2.PropsAllowlists;
+                var2 = var2.UI_THREAD_PROPS_WHITELIST;
+                var2 = var6.bind(var9)(var2);
+                var6 = var5.Object;
+                var5 = var6.keys;
+                var1 = var1[var8];
+                var1 = var7.bind(var0)(var1);
+                var1 = var1.PropsAllowlists;
+                var1 = var1.NATIVE_THREAD_PROPS_WHITELIST;
+                var1 = var5.bind(var6)(var1);
+                var1 = var3.bind(var4)(var2, var1);
                 return var0;
-            };
-            var12 = {};
-            var11.__closure = var12;
-            var12 = 8150032191515.0;
-            var11.__workletHash = var12;
-            var11.__initData = var9;
-            _fun33922_ip = 448;
-            continue _fun33922;
-        case 384:
-            var9 = function() { // Original name: pnpm_updatePropsTs3, environment: var1
-                var0 = new Array(0);
-                var _closure2_slot1 = var0;
+        }
+    };
+    var _closure1_slot4 = var4;
+    var3 = function(arg0) { // Original name: addWhitelistedUIProps, environment: var1
+        _fun33925: for (var _fun33925_ip = 0;;) switch (_fun33925_ip) {
+            case 0:
+                var4 = global;
+                var8 = var4.Object;
+                var5 = var8.keys;
+                var6 = _closure1_slot0;
+                var7 = _closure1_slot1;
+                var2 = 1;
+                var3 = var7[var2];
+                var0 = undefined;
+                var3 = var6.bind(var0)(var3);
+                var3 = var3.PropsAllowlists;
+                var3 = var3.UI_THREAD_PROPS_WHITELIST;
+                var3 = var5.bind(var8)(var3);
+                var3 = var3.length;
+                var5 = var7[var2];
+                var5 = var6.bind(var0)(var5);
+                var8 = var5.PropsAllowlists;
+                var12 = var4.Object;
+                var11 = var12.assign;
+                var5 = var7[var2];
+                var5 = var6.bind(var0)(var5);
+                var5 = var5.PropsAllowlists;
+                var10 = var5.UI_THREAD_PROPS_WHITELIST;
+                var9 = {};
+                var5 = arg0;
+                var5 = var11.bind(var12)(var9, var10, var5);
+                var8.UI_THREAD_PROPS_WHITELIST = var5;
+                var5 = var4.Object;
+                var4 = var5.keys;
+                var2 = var7[var2];
+                var2 = var6.bind(var0)(var2);
+                var2 = var2.PropsAllowlists;
+                var2 = var2.UI_THREAD_PROPS_WHITELIST;
+                var2 = var4.bind(var5)(var2);
+                var2 = var2.length;
+                if (!(var3 !== var2)) {
+                    _fun33925_ip = 179;
+                    continue _fun33925
+                }
+            case 171:
+                var1 = _closure1_slot4;
+                var1 = var1.bind(var0)();
+            case 179:
+                return var0;
+        }
+    };
+    var _closure1_slot5 = var3;
+    var5 = global;
+    var10 = var5.Object;
+    var9 = var10.defineProperty;
+    var8 = {};
+    var0 = true;
+    var8.value = var0;
+    var0 = '__esModule';
+    var0 = var9.bind(var10)(var2, var0, var8);
+    var0 = 0;
+    var6 = var6[var0];
+    var0 = undefined;
+    var7 = var7.bind(var0)(var6);
+    var6 = var7.shouldBeUseWeb;
+    var6 = var6.bind(var7)();
+    var _closure1_slot2 = var6;
+    var5 = var5.Set;
+    var6 = var5.prototype;
+    var6 = Object.create(var6, {
+        constructor: {
+            value: var5
+        }
+    });
+    var14 = var6;
+    var5 = new var14[var5](var13);
+    var5 = var5 instanceof Object ? var5 : var6;
+    var _closure1_slot3 = var5;
+    var5 = var4.bind(var0)();
+    var2.configureProps = var4;
+    var4 = function(arg0) { // Original name: addWhitelistedNativeProps, environment: var1
+        _fun33926: for (var _fun33926_ip = 0;;) switch (_fun33926_ip) {
+            case 0:
+                var4 = global;
+                var8 = var4.Object;
+                var5 = var8.keys;
+                var6 = _closure1_slot0;
+                var7 = _closure1_slot1;
+                var2 = 1;
+                var3 = var7[var2];
+                var0 = undefined;
+                var3 = var6.bind(var0)(var3);
+                var3 = var3.PropsAllowlists;
+                var3 = var3.NATIVE_THREAD_PROPS_WHITELIST;
+                var3 = var5.bind(var8)(var3);
+                var3 = var3.length;
+                var5 = var7[var2];
+                var5 = var6.bind(var0)(var5);
+                var8 = var5.PropsAllowlists;
+                var12 = var4.Object;
+                var11 = var12.assign;
+                var5 = var7[var2];
+                var5 = var6.bind(var0)(var5);
+                var5 = var5.PropsAllowlists;
+                var10 = var5.NATIVE_THREAD_PROPS_WHITELIST;
+                var9 = {};
+                var5 = arg0;
+                var5 = var11.bind(var12)(var9, var10, var5);
+                var8.NATIVE_THREAD_PROPS_WHITELIST = var5;
+                var5 = var4.Object;
+                var4 = var5.keys;
+                var2 = var7[var2];
+                var2 = var6.bind(var0)(var2);
+                var2 = var2.PropsAllowlists;
+                var2 = var2.NATIVE_THREAD_PROPS_WHITELIST;
+                var2 = var4.bind(var5)(var2);
+                var2 = var2.length;
+                if (!(var3 !== var2)) {
+                    _fun33926_ip = 179;
+                    continue _fun33926
+                }
+            case 171:
+                var1 = _closure1_slot4;
+                var1 = var1.bind(var0)();
+            case 179:
+                return var0;
+        }
+    };
+    var2.addWhitelistedNativeProps = var4;
+    var2.addWhitelistedUIProps = var3;
+    var3 = function(arg0) { // Original name: configureReanimatedLogger, environment: var1
+        _fun33927: for (var _fun33927_ip = 0;;) switch (_fun33927_ip) {
+            case 0:
+                var2 = arg0;
+                var4 = _closure1_slot0;
+                var0 = _closure1_slot1;
+                var6 = 4;
+                var3 = var0[var6];
+                var0 = undefined;
+                var4 = var4.bind(var0)(var3);
+                var3 = var4.updateLoggerConfig;
+                var3 = var3.bind(var4)(var2);
+                var3 = _closure1_slot2;
+                if (var3) {
+                    _fun33927_ip = 97;
+                    continue _fun33927
+                }
+            case 46:
+                var5 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var3 = 3;
+                var3 = var1[var3];
+                var4 = var5.bind(var0)(var3);
+                var3 = var4.executeOnUIRuntimeSync;
+                var1 = var1[var6];
+                var1 = var5.bind(var0)(var1);
+                var1 = var1.updateLoggerConfig;
+                var1 = var3.bind(var4)(var1);
+                var1 = var1.bind(var0)(var2);
+            case 97:
+                return var0;
+        }
+    };
+    var2.configureReanimatedLogger = var3;
+    var1 = function(arg0) { // Original name: adaptViewConfig, environment: var1
+        _fun33928: for (var _fun33928_ip = 0;;) switch (_fun33928_ip) {
+            case 0:
+                var0 = arg0;
+                var2 = var0.uiViewClassName;
+                var6 = var0.validAttributes;
+                var4 = _closure1_slot3;
+                var3 = var4.has;
+                var3 = var3.bind(var4)(var2);
+                if (var3) {
+                    _fun33928_ip = 101;
+                    continue _fun33928
+                }
+            case 37:
                 var4 = {};
-                var _closure2_slot2 = var4;
-                var0 = function(arg0) { // Original name: checkUpdate, environment: var1
+                var _closure2_slot0 = var4;
+                var3 = global;
+                var5 = var3.Object;
+                var3 = var5.keys;
+                var5 = var3.bind(var5)(var6);
+                var3 = var5.forEach;
+                var1 = function(arg0) { // Environment: var1
                     _fun33929: for (var _fun33929_ip = 0;;) switch (_fun33929_ip) {
                         case 0:
-                            var2 = arg0;
-                            var _closure3_slot0 = var2;
-                            var3 = _closure1_slot0;
-                            var4 = var3.__frameTimestamp;
-                            var3 = var3.lastUpdateFrameTimeByTag;
-                            var3 = var3[var2];
-                            if (!var4) {
-                                _fun33929_ip = 145;
-                                continue _fun33929
-                            }
-                        case 35:
-                            if (!var3) {
-                                _fun33929_ip = 145;
-                                continue _fun33929
-                            }
-                        case 38:
-                            var4 = var4 - var3;
-                            var3 = 20;
-                            if (!(!(var4 >= var3))) {
-                                _fun33929_ip = 149;
-                                continue _fun33929
-                            }
-                        case 49:
-                            var3 = _closure2_slot2;
-                            var3 = var3[var2];
-                            if (var3) {
-                                _fun33929_ip = 145;
-                                continue _fun33929
-                            }
-                        case 63:
-                            var3 = _closure2_slot2;
-                            var4 = global;
-                            var5 = var4.requestAnimationFrame;
-                            var4 = function() { // Original name: pnpm_updatePropsTs5, environment: var0
-                                var3 = _closure2_slot2;
-                                var2 = _closure3_slot0;
-                                var0 = undefined;
-                                var3[var2] = var0;
-                                var1 = _closure2_slot0;
-                                var1 = var1.bind(var0)(var2);
-                                return var0;
-                            };
-                            var0 = {};
-                            var0.scheduledFrameIds = var3;
-                            var0.tag = var2;
-                            var6 = _closure2_slot0;
-                            var0.checkUpdate = var6;
-                            var4.__closure = var0;
-                            var0 = 7847593993789.0;
-                            var4.__workletHash = var0;
-                            var0 = _closure1_slot5;
-                            var4.__initData = var0;
+                            var3 = arg0;
+                            var4 = _closure1_slot0;
+                            var0 = _closure1_slot1;
+                            var5 = 1;
+                            var1 = var0[var5];
                             var0 = undefined;
-                            var0 = var5.bind(var0)(var4);
-                            var3[var2] = var0;
-                        case 145:
-                            var0 = undefined;
-                            return var0;
-                        case 149:
-                            var4 = _closure1_slot1;
-                            var3 = _closure1_slot2;
-                            var0 = 5;
-                            var3 = var3[var0];
-                            var0 = undefined;
-                            var5 = var4.bind(var0)(var3);
-                            var4 = var5.runOnJS;
-                            var3 = _closure1_slot8;
-                            var4 = var4.bind(var5)(var3);
-                            var1 = _closure1_slot0;
-                            var3 = var1.lastUpdateByTag;
-                            var3 = var3[var2];
-                            var3 = var4.bind(var0)(var2, var3);
-                            var1 = var1.lastUpdateByTag;
-                            var1[var2] = var0;
+                            var1 = var4.bind(var0)(var1);
+                            var1 = var1.PropsAllowlists;
+                            var1 = var1.NATIVE_THREAD_PROPS_WHITELIST;
+                            var1 = var3 in var1;
+                            if (var1) {
+                                _fun33929_ip = 80;
+                                continue _fun33929
+                            }
+                        case 47:
+                            var4 = _closure1_slot0;
+                            var2 = _closure1_slot1;
+                            var2 = var2[var5];
+                            var2 = var4.bind(var0)(var2);
+                            var2 = var2.PropsAllowlists;
+                            var2 = var2.UI_THREAD_PROPS_WHITELIST;
+                            var1 = var3 in var2;
+                        case 80:
+                            if (var1) {
+                                _fun33929_ip = 96;
+                                continue _fun33929
+                            }
+                        case 83:
+                            var2 = _closure2_slot0;
+                            var1 = true;
+                            var2[var3] = var1;
+                        case 96:
                             return var0;
                     }
                 };
-                var _closure2_slot0 = var0;
-                var3 = {};
-                var7 = _closure1_slot1;
-                var6 = _closure1_slot2;
-                var5 = 5;
-                var6 = var6[var5];
-                var5 = undefined;
-                var5 = var7.bind(var5)(var6);
-                var5 = var5.runOnJS;
-                var3.runOnJS = var5;
-                var5 = _closure1_slot8;
-                var3.updatePropsOnReactJS = var5;
-                var3.scheduledFrameIds = var4;
-                var0.__closure = var3;
-                var3 = 1753947436463.0;
-                var0.__workletHash = var3;
-                var2 = _closure1_slot4;
-                var0.__initData = var2;
-                var _closure2_slot3 = var0;
-                var0 = {};
-                var2 = function(arg0, arg1) { // Original name: update, environment: var1
-                    var1 = arg1;
-                    var _closure3_slot0 = var1;
-                    var1 = this;
-                    var _closure3_slot1 = var1;
-                    var1 = arg0;
-                    var2 = var1.value;
-                    var1 = var2.forEach;
-                    var0 = function(arg0) { // Environment: var0
-                        _fun33932: for (var _fun33932_ip = 0;;) switch (_fun33932_ip) {
-                            case 0:
-                                var0 = arg0;
-                                var4 = var0.tag;
-                                var1 = _closure2_slot1;
-                                var3 = var1.push;
-                                var2 = {};
-                                var0 = var0.shadowNodeWrapper;
-                                var2.shadowNodeWrapper = var0;
-                                var5 = _closure3_slot0;
-                                var2.updates = var5;
-                                var2.tag = var4;
-                                var2 = var3.bind(var1)(var2);
-                                var2 = var1.length;
-                                var1 = 1;
-                                if (!(var1 === var2)) {
-                                    _fun33932_ip = 91;
-                                    continue _fun33932
-                                }
-                            case 66:
-                                var1 = global;
-                                var2 = var1.queueMicrotask;
-                                var0 = _closure3_slot1;
-                                var1 = var0.flush;
-                                var0 = undefined;
-                                var0 = var2.bind(var0)(var1);
-                            case 91:
-                                var0 = undefined;
-                                return var0;
-                        }
-                    };
-                    var0 = var1.bind(var2)(var0);
-                    var0 = undefined;
-                    return var0;
-                };
-                var0.update = var2;
-                var1 = function() { // Original name: flush, environment: var1
-                    var2 = _closure1_slot0;
-                    var0 = var2._updatePropsFabric;
-                    var1 = _closure2_slot1;
-                    var0 = var0.bind(var2)(var1);
-                    var2 = var1.forEach;
-                    var0 = function(arg0) { // Environment: var0
-                        var0 = arg0;
-                        var2 = var0.tag;
-                        var1 = _closure2_slot3;
-                        var0 = undefined;
-                        var1 = var1.bind(var0)(var2);
-                        return var0;
-                    };
-                    var0 = var2.bind(var1)(var0);
-                    var0 = 0;
-                    var1.length = var0;
-                    var0 = undefined;
-                    return var0;
-                };
-                var0.flush = var1;
-                return var0;
-            };
-            var12 = {};
-            var14 = 5;
-            var14 = var8[var14];
-            var14 = var7.bind(var0)(var14);
-            var14 = var14.runOnJS;
-            var12.runOnJS = var14;
-            var12.updatePropsOnReactJS = var13;
-            var9.__closure = var12;
-            var12 = 7650186665575.0;
-            var9.__workletHash = var12;
-            var9.__initData = var10;
-            var11 = var9;
-        case 448:
-            var _closure1_slot6 = var11;
-            var9 = {};
-            var10 = 'function pnpm_updatePropsTs7(){const{createUpdatePropsManager}=this.__closure;global.UpdatePropsManager=createUpdatePropsManager();}';
-            var9.code = var10;
-            var4 = var8[var4];
-            var10 = var7.bind(var0)(var4);
-            var4 = var10.shouldBeUseWeb;
-            var4 = var4.bind(var10)();
-            if (var4) {
-                _fun33922_ip = 557;
-                continue _fun33922
-            }
-        case 486:
-            var4 = 5;
-            var4 = var8[var4];
-            var8 = var7.bind(var0)(var4);
-            var7 = var8.runOnUIImmediately;
-            var4 = function() { // Original name: pnpm_updatePropsTs7, environment: var1
-                var2 = _closure1_slot0;
-                var1 = _closure1_slot6;
+                var1 = var3.bind(var5)(var1);
+                var3 = _closure1_slot5;
+                var1 = undefined;
+                var1 = var3.bind(var1)(var4);
+                var1 = _closure1_slot3;
+                var0 = var1.add;
+                var0 = var0.bind(var1)(var2);
+            case 101:
                 var0 = undefined;
-                var1 = var1.bind(var0)();
-                var2.UpdatePropsManager = var1;
                 return var0;
-            };
-            var10 = {};
-            var10.createUpdatePropsManager = var11;
-            var4.__closure = var10;
-            var10 = 4015188324291.0;
-            var4.__workletHash = var10;
-            var4.__initData = var9;
-            var4 = var7.bind(var8)(var4);
-            var4 = var4.bind(var0)();
-            _fun33922_ip = 618;
-            continue _fun33922;
-        case 557:
-            var4 = function() { // Original name: maybeThrowError, environment: var1
-                _fun33939: for (var _fun33939_ip = 0;;) switch (_fun33939_ip) {
-                    case 0:
-                        var3 = _closure1_slot1;
-                        var2 = _closure1_slot2;
-                        var0 = 0;
-                        var2 = var2[var0];
-                        var0 = undefined;
-                        var3 = var3.bind(var0)(var2);
-                        var2 = var3.isJest;
-                        var2 = var2.bind(var3)();
-                        if (var2) {
-                            _fun33939_ip = 91;
-                            continue _fun33939
-                        }
-                    case 37:
-                        var2 = _closure1_slot1;
-                        var3 = _closure1_slot2;
-                        var1 = 6;
-                        var1 = var3[var1];
-                        var1 = var2.bind(var0)(var1);
-                        var3 = var1.ReanimatedError;
-                        var1 = var3.prototype;
-                        var2 = Object.create(var1, {
-                            constructor: {
-                                value: var3
-                            }
-                        });
-                        var4 = '`UpdatePropsManager` is not available on non-native platform.';
-                        var5 = var2;
-                        var1 = new var5[var3](var4, var3);
-                        var1 = var1 instanceof Object ? var1 : var2;
-                        throw var1;
-                    case 91:
-                        return var0;
-                }
-            };
-            var _closure1_slot7 = var4;
-            var8 = var6.Proxy;
-            var7 = {};
-            var7.get = var4;
-            var4 = function() { // Original name: set, environment: var1
-                var1 = _closure1_slot7;
-                var0 = undefined;
-                var0 = var1.bind(var0)();
-                var0 = false;
-                return var0;
-            };
-            var7.set = var4;
-            var4 = var8.prototype;
-            var6 = Object.create(var4, {
-                constructor: {
-                    value: var8
-                }
-            });
-            var17 = {};
-            var18 = var6;
-            var16 = var7;
-            var4 = new var18[var8](var17, var16, var15);
-            var4 = var4 instanceof Object ? var4 : var6;
-            var5.UpdatePropsManager = var4;
-        case 618:
-            var2.default = var3;
-            var1 = function(arg0, arg1, arg2, arg3) { // Original name: updatePropsJestWrapper, environment: var1
-                var3 = arg1;
-                var0 = arg2;
-                var4 = arg3;
-                var _closure2_slot0 = var3;
-                var2 = var4.forEach;
-                var1 = function(arg0) { // Environment: var1
-                    var2 = _closure2_slot0;
-                    var1 = arg0;
-                    var0 = undefined;
-                    var1 = var1.bind(var0)(var2);
-                    return var0;
-                };
-                var1 = var2.bind(var4)(var1);
-                var1 = var0.current;
-                var2 = global;
-                var5 = var2.Object;
-                var4 = var5.assign;
-                var0 = var0.current;
-                var2 = var0.value;
-                var0 = {};
-                var0 = var4.bind(var5)(var0, var2, var3);
-                var1.value = var0;
-                var2 = _closure1_slot3;
-                var0 = undefined;
-                var1 = arg0;
-                var1 = var2.bind(var0)(var1, var3);
-                return var0;
-            };
-            var2.updatePropsJestWrapper = var1;
-            return var0;
-    }
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3681, 3688, 3721, 3781, 3773, 3685, 3689]);
+        }
+    };
+    var2.adaptViewConfig = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3683, 3693, 3691, 3724, 3684]);

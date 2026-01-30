@@ -38,7 +38,7 @@ public final class MediaEngineModule$addConnectionCallbacks$1 extends kotlin.cor
         ReactEvents reactEvents;
         reactEvents = mediaEngineModule.reactEvents;
         reactEvents.emitModuleEvent(mediaEngineModule.getReactContext(), new UserSpeakingEvent(i10, str, i11, f10));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -47,7 +47,7 @@ public final class MediaEngineModule$addConnectionCallbacks$1 extends kotlin.cor
         try {
             reactEvents = mediaEngineModule.reactEvents;
             reactEvents.emitModuleEvent(mediaEngineModule.getReactContext(), new PingCallbackEvent(i10, i11, str, i12, i13));
-            return Unit.f33282a;
+            return Unit.f33298a;
         } catch (Exception e10) {
             CrashReporting crashReporting = CrashReporting.INSTANCE;
             String message = e10.getMessage();
@@ -61,7 +61,7 @@ public final class MediaEngineModule$addConnectionCallbacks$1 extends kotlin.cor
         ReactEvents reactEvents;
         reactEvents = mediaEngineModule.reactEvents;
         reactEvents.emitModuleEvent(mediaEngineModule.getReactContext(), new PingTimeoutCallbackEvent(i10, str, i11, i12, i13));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -69,7 +69,7 @@ public final class MediaEngineModule$addConnectionCallbacks$1 extends kotlin.cor
         ReactEvents reactEvents;
         reactEvents = mediaEngineModule.reactEvents;
         reactEvents.emitModuleEvent(mediaEngineModule.getReactContext(), new FirstFrameCallbackEvent(i10, str, j10, str2));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -77,7 +77,7 @@ public final class MediaEngineModule$addConnectionCallbacks$1 extends kotlin.cor
         ReactEvents reactEvents;
         reactEvents = mediaEngineModule.reactEvents;
         reactEvents.emitModuleEvent(mediaEngineModule.getReactContext(), new MlsFailureCallbackEvent(i10, str, str2));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -85,7 +85,7 @@ public final class MediaEngineModule$addConnectionCallbacks$1 extends kotlin.cor
         ReactEvents reactEvents;
         reactEvents = mediaEngineModule.reactEvents;
         reactEvents.emitModuleEvent(mediaEngineModule.getReactContext(), new SecureFramesStateUpdateCallbackEvent(i10, str));
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -179,11 +179,11 @@ public final class MediaEngineModule$addConnectionCallbacks$1 extends kotlin.cor
                 return invokeSuspend$lambda$5;
             }
         });
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$addConnectionCallbacks$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((MediaEngineModule$addConnectionCallbacks$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

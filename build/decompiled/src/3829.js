@@ -1,230 +1,56 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var1 = exports;
-    var2 = require;
-    var _closure1_slot0 = var2;
-    var2 = dependencyMap;
-    var _closure1_slot1 = var2;
-    var2 = global;
-    var5 = var2.Object;
-    var4 = var5.defineProperty;
-    var3 = {};
-    var2 = true;
-    var3.value = var2;
-    var2 = '__esModule';
-    var2 = var4.bind(var5)(var1, var2, var3);
-    var2 = {};
-    var3 = "function pnpm_useAnimatedScrollHandlerTs1(event){const{scrollHandlers,context}=this.__closure;const{onScroll:onScroll,onBeginDrag:onBeginDrag,onEndDrag:onEndDrag,onMomentumBegin:onMomentumBegin,onMomentumEnd:onMomentumEnd}=scrollHandlers;if(onScroll&&event.eventName.endsWith('onScroll')){onScroll(event,context);}else if(onBeginDrag&&event.eventName.endsWith('onScrollBeginDrag')){onBeginDrag(event,context);}else if(onEndDrag&&event.eventName.endsWith('onScrollEndDrag')){onEndDrag(event,context);}else if(onMomentumBegin&&event.eventName.endsWith('onMomentumScrollBegin')){onMomentumBegin(event,context);}else if(onMomentumEnd&&event.eventName.endsWith('onMomentumScrollEnd')){onMomentumEnd(event,context);}}";
-    var2.code = var3;
-    var _closure1_slot2 = var2;
-    var0 = function(arg0, arg1) { // Original name: useAnimatedScrollHandler, environment: var0
-        _fun34717: for (var _fun34717_ip = 0;;) switch (_fun34717_ip) {
-            case 0:
-                var3 = arg0;
-                var4 = 'function';
-                var1 = typeof var3;
-                var2 = var3;
-                if (!(var4 === var1)) {
-                    _fun34717_ip = 29;
-                    continue _fun34717
-                }
-            case 19:
-                var1 = {};
-                var1.onScroll = var3;
-                var2 = var1;
-            case 29:
-                var _closure2_slot0 = var2;
-                var3 = _closure1_slot0;
-                var4 = _closure1_slot1;
-                var1 = 0;
-                var1 = var4[var1];
-                var6 = undefined;
-                var4 = var3.bind(var6)(var1);
-                var3 = var4.useHandler;
-                var1 = arg1;
-                var1 = var3.bind(var4)(var2, var1);
-                var7 = var1.context;
-                var _closure2_slot1 = var7;
-                var4 = var1.doDependenciesDiffer;
-                var3 = ['onScroll'];
-                var1 = var2.onBeginDrag;
-                var8 = var2;
-                if (!(var6 !== var1)) {
-                    _fun34717_ip = 122;
-                    continue _fun34717
-                }
-            case 108:
-                var2 = var3.push;
-                var1 = 'onScrollBeginDrag';
-                var1 = var2.bind(var3)(var1);
-            case 122:
-                var1 = var8.onEndDrag;
-                if (!(var6 !== var1)) {
-                    _fun34717_ip = 146;
-                    continue _fun34717
-                }
-            case 132:
-                var2 = var3.push;
-                var1 = 'onScrollEndDrag';
-                var1 = var2.bind(var3)(var1);
-            case 146:
-                var1 = var8.onMomentumBegin;
-                if (!(var6 !== var1)) {
-                    _fun34717_ip = 170;
-                    continue _fun34717
-                }
-            case 156:
-                var2 = var3.push;
-                var1 = 'onMomentumScrollBegin';
-                var1 = var2.bind(var3)(var1);
-            case 170:
-                var1 = var8.onMomentumEnd;
-                if (!(var6 !== var1)) {
-                    _fun34717_ip = 194;
-                    continue _fun34717
-                }
-            case 180:
-                var2 = var3.push;
-                var1 = 'onMomentumScrollEnd';
-                var1 = var2.bind(var3)(var1);
-            case 194:
+    _fun34695: for (var _fun34695_ip = 0;;) switch (_fun34695_ip) {
+        case 0:
+            var4 = require;
+            var2 = exports;
+            var5 = dependencyMap;
+            var _closure1_slot0 = var4;
+            var _closure1_slot1 = var5;
+            var0 = global;
+            var7 = var0.Object;
+            var6 = var7.defineProperty;
+            var1 = {};
+            var0 = true;
+            var1.value = var0;
+            var0 = '__esModule';
+            var0 = var6.bind(var7)(var2, var0, var1);
+            var0 = 1;
+            var1 = var5[var0];
+            var0 = undefined;
+            var6 = var4.bind(var0)(var1);
+            var1 = var6.shouldBeUseWeb;
+            var1 = var1.bind(var6)();
+            if (var1) {
+                _fun34695_ip = 97;
+                continue _fun34695
+            }
+        case 78:
+            var1 = 0;
+            var1 = var5[var1];
+            var1 = var4.bind(var0)(var1);
+            var1 = var1.useAnimatedStyle;
+            _fun34695_ip = 102;
+            continue _fun34695;
+        case 97:
+            var1 = function(arg0, arg1, arg2) { // Original name: useAnimatedPropsJS, environment: var3
                 var2 = _closure1_slot0;
-                var9 = _closure1_slot1;
-                var1 = 1;
-                var1 = var9[var1];
-                var2 = var2.bind(var6)(var1);
-                var1 = var2.useEvent;
-                var0 = function(arg0) { // Original name: pnpm_useAnimatedScrollHandlerTs1, environment: var0
-                    _fun34718: for (var _fun34718_ip = 0;;) switch (_fun34718_ip) {
-                        case 0:
-                            var3 = arg0;
-                            var1 = _closure2_slot0;
-                            var2 = var1.onScroll;
-                            var1 = _closure2_slot0;
-                            var5 = var1.onBeginDrag;
-                            var1 = _closure2_slot0;
-                            var6 = var1.onEndDrag;
-                            var1 = _closure2_slot0;
-                            var7 = var1.onMomentumBegin;
-                            var1 = _closure2_slot0;
-                            var8 = var1.onMomentumEnd;
-                            if (!var2) {
-                                _fun34718_ip = 86;
-                                continue _fun34718
-                            }
-                        case 59:
-                            var9 = var3.eventName;
-                            var4 = var9.endsWith;
-                            var1 = 'onScroll';
-                            var1 = var4.bind(var9)(var1);
-                            if (var1) {
-                                _fun34718_ip = 256;
-                                continue _fun34718
-                            }
-                        case 86:
-                            if (!var5) {
-                                _fun34718_ip = 116;
-                                continue _fun34718
-                            }
-                        case 89:
-                            var9 = var3.eventName;
-                            var4 = var9.endsWith;
-                            var1 = 'onScrollBeginDrag';
-                            var1 = var4.bind(var9)(var1);
-                            if (var1) {
-                                _fun34718_ip = 242;
-                                continue _fun34718
-                            }
-                        case 116:
-                            if (!var6) {
-                                _fun34718_ip = 143;
-                                continue _fun34718
-                            }
-                        case 119:
-                            var9 = var3.eventName;
-                            var4 = var9.endsWith;
-                            var1 = 'onScrollEndDrag';
-                            var1 = var4.bind(var9)(var1);
-                            if (var1) {
-                                _fun34718_ip = 228;
-                                continue _fun34718
-                            }
-                        case 143:
-                            if (!var7) {
-                                _fun34718_ip = 170;
-                                continue _fun34718
-                            }
-                        case 146:
-                            var9 = var3.eventName;
-                            var4 = var9.endsWith;
-                            var1 = 'onMomentumScrollBegin';
-                            var1 = var4.bind(var9)(var1);
-                            if (var1) {
-                                _fun34718_ip = 214;
-                                continue _fun34718
-                            }
-                        case 170:
-                            var1 = var8;
-                            if (!var1) {
-                                _fun34718_ip = 197;
-                                continue _fun34718
-                            }
-                        case 176:
-                            var10 = var3.eventName;
-                            var9 = var10.endsWith;
-                            var4 = 'onMomentumScrollEnd';
-                            var1 = var9.bind(var10)(var4);
-                        case 197:
-                            if (!var1) {
-                                _fun34718_ip = 268;
-                                continue _fun34718
-                            }
-                        case 200:
-                            var4 = _closure2_slot1;
-                            var1 = undefined;
-                            var1 = var8.bind(var1)(var3, var4);
-                            _fun34718_ip = 268;
-                            continue _fun34718;
-                        case 214:
-                            var4 = _closure2_slot1;
-                            var1 = undefined;
-                            var1 = var7.bind(var1)(var3, var4);
-                            _fun34718_ip = 268;
-                            continue _fun34718;
-                        case 228:
-                            var4 = _closure2_slot1;
-                            var1 = undefined;
-                            var1 = var6.bind(var1)(var3, var4);
-                            _fun34718_ip = 268;
-                            continue _fun34718;
-                        case 242:
-                            var4 = _closure2_slot1;
-                            var1 = undefined;
-                            var1 = var5.bind(var1)(var3, var4);
-                            _fun34718_ip = 268;
-                            continue _fun34718;
-                        case 256:
-                            var1 = _closure2_slot1;
-                            var0 = undefined;
-                            var0 = var2.bind(var0)(var3, var1);
-                        case 268:
-                            var0 = undefined;
-                            return var0;
-                    }
-                };
-                var6 = {};
-                var6.scrollHandlers = var8;
-                var6.context = var7;
-                var0.__closure = var6;
-                var6 = 480432859268.0;
-                var0.__workletHash = var6;
-                var5 = _closure1_slot2;
-                var0.__initData = var5;
-                var0 = var1.bind(var2)(var0, var3, var4);
+                var1 = _closure1_slot1;
+                var0 = 0;
+                var1 = var1[var0];
+                var0 = undefined;
+                var5 = var2.bind(var0)(var1);
+                var4 = var5.useAnimatedStyle;
+                var9 = arg0;
+                var8 = arg1;
+                var7 = arg2;
+                var6 = true;
+                var10 = var5;
+                var0 = var10[var4](var9, var8, var7, var6, var5);
                 return var0;
-        }
-    };
-    var1.useAnimatedScrollHandler = var0;
-    var0 = undefined;
-    return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3819, 3821]);
+            };
+        case 102:
+            var2.useAnimatedProps = var1;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3830, 3683]);

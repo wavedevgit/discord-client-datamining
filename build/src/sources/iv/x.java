@@ -15,92 +15,92 @@ import okio.BufferedSink;
 public final class x {
 
     /* renamed from: l  reason: collision with root package name */
-    private static final char[] f31443l = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
+    private static final char[] f31459l = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
 
     /* renamed from: m  reason: collision with root package name */
-    private static final Pattern f31444m = Pattern.compile("(.*/)?(\\.|%2e|%2E){1,2}(/.*)?");
+    private static final Pattern f31460m = Pattern.compile("(.*/)?(\\.|%2e|%2E){1,2}(/.*)?");
 
     /* renamed from: a  reason: collision with root package name */
-    private final String f31445a;
+    private final String f31461a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final HttpUrl f31446b;
+    private final HttpUrl f31462b;
 
     /* renamed from: c  reason: collision with root package name */
-    private String f31447c;
+    private String f31463c;
 
     /* renamed from: d  reason: collision with root package name */
-    private HttpUrl.a f31448d;
+    private HttpUrl.a f31464d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Request.Builder f31449e = new Request.Builder();
+    private final Request.Builder f31465e = new Request.Builder();
 
     /* renamed from: f  reason: collision with root package name */
-    private final Headers.a f31450f;
+    private final Headers.a f31466f;
 
     /* renamed from: g  reason: collision with root package name */
-    private MediaType f31451g;
+    private MediaType f31467g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final boolean f31452h;
+    private final boolean f31468h;
 
     /* renamed from: i  reason: collision with root package name */
-    private MultipartBody.Builder f31453i;
+    private MultipartBody.Builder f31469i;
 
     /* renamed from: j  reason: collision with root package name */
-    private f.a f31454j;
+    private f.a f31470j;
 
     /* renamed from: k  reason: collision with root package name */
-    private RequestBody f31455k;
+    private RequestBody f31471k;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     private static class a extends RequestBody {
 
         /* renamed from: a  reason: collision with root package name */
-        private final RequestBody f31456a;
+        private final RequestBody f31472a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final MediaType f31457b;
+        private final MediaType f31473b;
 
         a(RequestBody requestBody, MediaType mediaType) {
-            this.f31456a = requestBody;
-            this.f31457b = mediaType;
+            this.f31472a = requestBody;
+            this.f31473b = mediaType;
         }
 
         @Override // okhttp3.RequestBody
         public long contentLength() {
-            return this.f31456a.contentLength();
+            return this.f31472a.contentLength();
         }
 
         @Override // okhttp3.RequestBody
         public MediaType contentType() {
-            return this.f31457b;
+            return this.f31473b;
         }
 
         @Override // okhttp3.RequestBody
         public void writeTo(BufferedSink bufferedSink) {
-            this.f31456a.writeTo(bufferedSink);
+            this.f31472a.writeTo(bufferedSink);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public x(String str, HttpUrl httpUrl, String str2, Headers headers, MediaType mediaType, boolean z10, boolean z11, boolean z12) {
-        this.f31445a = str;
-        this.f31446b = httpUrl;
-        this.f31447c = str2;
-        this.f31451g = mediaType;
-        this.f31452h = z10;
+        this.f31461a = str;
+        this.f31462b = httpUrl;
+        this.f31463c = str2;
+        this.f31467g = mediaType;
+        this.f31468h = z10;
         if (headers != null) {
-            this.f31450f = headers.g();
+            this.f31466f = headers.g();
         } else {
-            this.f31450f = new Headers.a();
+            this.f31466f = new Headers.a();
         }
         if (z11) {
-            this.f31454j = new f.a();
+            this.f31470j = new f.a();
         } else if (z12) {
             MultipartBody.Builder builder = new MultipartBody.Builder();
-            this.f31453i = builder;
-            builder.e(MultipartBody.f44081k);
+            this.f31469i = builder;
+            builder.e(MultipartBody.f44097k);
         }
     }
 
@@ -136,7 +136,7 @@ public final class x {
                     while (!buffer2.o1()) {
                         byte readByte = buffer2.readByte();
                         buffer.writeByte(37);
-                        char[] cArr = f31443l;
+                        char[] cArr = f31459l;
                         buffer.writeByte(cArr[((readByte & 255) >> 4) & 15]);
                         buffer.writeByte(cArr[readByte & 15]);
                     }
@@ -149,9 +149,9 @@ public final class x {
     /* JADX INFO: Access modifiers changed from: package-private */
     public void a(String str, String str2, boolean z10) {
         if (z10) {
-            this.f31454j.b(str, str2);
+            this.f31470j.b(str, str2);
         } else {
-            this.f31454j.a(str, str2);
+            this.f31470j.a(str, str2);
         }
     }
 
@@ -159,40 +159,40 @@ public final class x {
     public void b(String str, String str2, boolean z10) {
         if ("Content-Type".equalsIgnoreCase(str)) {
             try {
-                this.f31451g = MediaType.e(str2);
+                this.f31467g = MediaType.e(str2);
             } catch (IllegalArgumentException e10) {
                 throw new IllegalArgumentException("Malformed content type: " + str2, e10);
             }
         } else if (z10) {
-            this.f31450f.e(str, str2);
+            this.f31466f.e(str, str2);
         } else {
-            this.f31450f.a(str, str2);
+            this.f31466f.a(str, str2);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void c(Headers headers) {
-        this.f31450f.b(headers);
+        this.f31466f.b(headers);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void d(Headers headers, RequestBody requestBody) {
-        this.f31453i.b(headers, requestBody);
+        this.f31469i.b(headers, requestBody);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void e(MultipartBody.b bVar) {
-        this.f31453i.c(bVar);
+        this.f31469i.c(bVar);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void f(String str, String str2, boolean z10) {
-        if (this.f31447c != null) {
+        if (this.f31463c != null) {
             String i10 = i(str2, z10);
-            String str3 = this.f31447c;
+            String str3 = this.f31463c;
             String replace = str3.replace("{" + str + "}", i10);
-            if (!f31444m.matcher(replace).matches()) {
-                this.f31447c = replace;
+            if (!f31460m.matcher(replace).matches()) {
+                this.f31463c = replace;
                 return;
             }
             throw new IllegalArgumentException("@Path parameters shouldn't perform path traversal ('.' or '..'): " + str2);
@@ -202,72 +202,72 @@ public final class x {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void g(String str, String str2, boolean z10) {
-        String str3 = this.f31447c;
+        String str3 = this.f31463c;
         if (str3 != null) {
-            HttpUrl.a l10 = this.f31446b.l(str3);
-            this.f31448d = l10;
+            HttpUrl.a l10 = this.f31462b.l(str3);
+            this.f31464d = l10;
             if (l10 != null) {
-                this.f31447c = null;
+                this.f31463c = null;
             } else {
-                throw new IllegalArgumentException("Malformed URL. Base: " + this.f31446b + ", Relative: " + this.f31447c);
+                throw new IllegalArgumentException("Malformed URL. Base: " + this.f31462b + ", Relative: " + this.f31463c);
             }
         }
         if (z10) {
-            this.f31448d.a(str, str2);
+            this.f31464d.a(str, str2);
         } else {
-            this.f31448d.b(str, str2);
+            this.f31464d.b(str, str2);
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void h(Class cls, Object obj) {
-        this.f31449e.j(cls, obj);
+        this.f31465e.j(cls, obj);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public Request.Builder k() {
         HttpUrl r10;
-        HttpUrl.a aVar = this.f31448d;
+        HttpUrl.a aVar = this.f31464d;
         if (aVar != null) {
             r10 = aVar.c();
         } else {
-            r10 = this.f31446b.r(this.f31447c);
+            r10 = this.f31462b.r(this.f31463c);
             if (r10 == null) {
-                throw new IllegalArgumentException("Malformed URL. Base: " + this.f31446b + ", Relative: " + this.f31447c);
+                throw new IllegalArgumentException("Malformed URL. Base: " + this.f31462b + ", Relative: " + this.f31463c);
             }
         }
-        a aVar2 = this.f31455k;
+        a aVar2 = this.f31471k;
         if (aVar2 == null) {
-            f.a aVar3 = this.f31454j;
+            f.a aVar3 = this.f31470j;
             if (aVar3 != null) {
                 aVar2 = aVar3.c();
             } else {
-                MultipartBody.Builder builder = this.f31453i;
+                MultipartBody.Builder builder = this.f31469i;
                 if (builder != null) {
                     aVar2 = builder.d();
-                } else if (this.f31452h) {
+                } else if (this.f31468h) {
                     aVar2 = RequestBody.create((MediaType) null, new byte[0]);
                 }
             }
         }
-        MediaType mediaType = this.f31451g;
+        MediaType mediaType = this.f31467g;
         if (mediaType != null) {
             if (aVar2 != null) {
                 aVar2 = new a(aVar2, mediaType);
             } else {
-                this.f31450f.a("Content-Type", mediaType.toString());
+                this.f31466f.a("Content-Type", mediaType.toString());
             }
         }
-        return this.f31449e.m(r10).f(this.f31450f.f()).g(this.f31445a, aVar2);
+        return this.f31465e.m(r10).f(this.f31466f.f()).g(this.f31461a, aVar2);
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void l(RequestBody requestBody) {
-        this.f31455k = requestBody;
+        this.f31471k = requestBody;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public void m(Object obj) {
-        this.f31447c = obj.toString();
+        this.f31463c = obj.toString();
     }
 }

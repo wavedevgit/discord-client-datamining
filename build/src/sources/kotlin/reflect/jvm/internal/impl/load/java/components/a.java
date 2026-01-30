@@ -8,20 +8,20 @@ import kotlin.reflect.jvm.internal.impl.types.SimpleType;
 public class a implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final LazyJavaResolverContext f34095d;
+    private final LazyJavaResolverContext f34111d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final JavaAnnotationDescriptor f34096e;
+    private final JavaAnnotationDescriptor f34112e;
 
     public a(LazyJavaResolverContext lazyJavaResolverContext, JavaAnnotationDescriptor javaAnnotationDescriptor) {
-        this.f34095d = lazyJavaResolverContext;
-        this.f34096e = javaAnnotationDescriptor;
+        this.f34111d = lazyJavaResolverContext;
+        this.f34112e = javaAnnotationDescriptor;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         SimpleType c10;
-        c10 = JavaAnnotationDescriptor.c(this.f34095d, this.f34096e);
+        c10 = JavaAnnotationDescriptor.c(this.f34111d, this.f34112e);
         return c10;
     }
 }

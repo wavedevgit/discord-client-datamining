@@ -35,4 +35,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.openMemberVerificationModal = var3;
     var2.closeMemberVerificationModal = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [7404, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7407, 2]);

@@ -5,7 +5,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = dependencyMap;
     var _closure1_slot1 = var1;
     var1 = function() { // Original name: getPolyfill, environment: var0
-        _fun28884: for (var _fun28884_ip = 0;;) switch (_fun28884_ip) {
+        _fun28885: for (var _fun28885_ip = 0;;) switch (_fun28885_ip) {
             case 0:
                 var0 = global;
                 var0 = var0.Array;
@@ -19,8 +19,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var4.bind(var3)(var2);
                 var2 = var2.bind(var3)(var0);
                 if (var2) {
-                    _fun28884_ip = 70;
-                    continue _fun28884
+                    _fun28885_ip = 70;
+                    continue _fun28885
                 }
             case 50:
                 var2 = _closure1_slot0;

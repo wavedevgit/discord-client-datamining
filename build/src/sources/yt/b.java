@@ -16,26 +16,26 @@ import kotlin.jvm.internal.Intrinsics;
 public final class b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final List f54961a;
+    private final List f54977a;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f54962b;
+    private int f54978b;
 
     /* renamed from: c  reason: collision with root package name */
-    private boolean f54963c;
+    private boolean f54979c;
 
     /* renamed from: d  reason: collision with root package name */
-    private boolean f54964d;
+    private boolean f54980d;
 
     public b(List connectionSpecs) {
         Intrinsics.checkNotNullParameter(connectionSpecs, "connectionSpecs");
-        this.f54961a = connectionSpecs;
+        this.f54977a = connectionSpecs;
     }
 
     private final boolean c(SSLSocket sSLSocket) {
-        int size = this.f54961a.size();
-        for (int i10 = this.f54962b; i10 < size; i10++) {
-            if (((okhttp3.d) this.f54961a.get(i10)).e(sSLSocket)) {
+        int size = this.f54977a.size();
+        for (int i10 = this.f54978b; i10 < size; i10++) {
+            if (((okhttp3.d) this.f54977a.get(i10)).e(sSLSocket)) {
                 return true;
             }
         }
@@ -45,13 +45,13 @@ public final class b {
     public final okhttp3.d a(SSLSocket sslSocket) {
         okhttp3.d dVar;
         Intrinsics.checkNotNullParameter(sslSocket, "sslSocket");
-        int i10 = this.f54962b;
-        int size = this.f54961a.size();
+        int i10 = this.f54978b;
+        int size = this.f54977a.size();
         while (true) {
             if (i10 < size) {
-                dVar = (okhttp3.d) this.f54961a.get(i10);
+                dVar = (okhttp3.d) this.f54977a.get(i10);
                 if (dVar.e(sslSocket)) {
-                    this.f54962b = i10 + 1;
+                    this.f54978b = i10 + 1;
                     break;
                 }
                 i10++;
@@ -61,15 +61,15 @@ public final class b {
             }
         }
         if (dVar != null) {
-            this.f54963c = c(sslSocket);
-            dVar.c(sslSocket, this.f54964d);
+            this.f54979c = c(sslSocket);
+            dVar.c(sslSocket, this.f54980d);
             return dVar;
         }
         StringBuilder sb2 = new StringBuilder();
         sb2.append("Unable to find acceptable protocols. isFallback=");
-        sb2.append(this.f54964d);
+        sb2.append(this.f54980d);
         sb2.append(", modes=");
-        sb2.append(this.f54961a);
+        sb2.append(this.f54977a);
         sb2.append(", supported protocols=");
         String[] enabledProtocols = sslSocket.getEnabledProtocols();
         Intrinsics.checkNotNull(enabledProtocols);
@@ -81,8 +81,8 @@ public final class b {
 
     public final boolean b(IOException e10) {
         Intrinsics.checkNotNullParameter(e10, "e");
-        this.f54964d = true;
-        if (!this.f54963c || (e10 instanceof ProtocolException) || (e10 instanceof InterruptedIOException)) {
+        this.f54980d = true;
+        if (!this.f54979c || (e10 instanceof ProtocolException) || (e10 instanceof InterruptedIOException)) {
             return false;
         }
         if ((!(e10 instanceof SSLHandshakeException) || !(e10.getCause() instanceof CertificateException)) && !(e10 instanceof SSLPeerUnverifiedException) && (e10 instanceof SSLException)) {

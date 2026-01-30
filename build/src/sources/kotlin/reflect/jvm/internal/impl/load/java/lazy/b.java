@@ -8,20 +8,20 @@ import kotlin.reflect.jvm.internal.impl.load.java.JavaTypeQualifiersByElementTyp
 public class b implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final LazyJavaResolverContext f34158d;
+    private final LazyJavaResolverContext f34174d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Annotations f34159e;
+    private final Annotations f34175e;
 
     public b(LazyJavaResolverContext lazyJavaResolverContext, Annotations annotations) {
-        this.f34158d = lazyJavaResolverContext;
-        this.f34159e = annotations;
+        this.f34174d = lazyJavaResolverContext;
+        this.f34175e = annotations;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         JavaTypeQualifiersByElementType e10;
-        e10 = ContextKt.e(this.f34158d, this.f34159e);
+        e10 = ContextKt.e(this.f34174d, this.f34175e);
         return e10;
     }
 }

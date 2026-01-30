@@ -30,7 +30,7 @@ final class MediaEngineModule$connectionInstanceProcessMLSProposalsB64$1 extends
     /* JADX INFO: Access modifiers changed from: private */
     public static final Unit invokeSuspend$lambda$0(Callback callback, String str) {
         callback.invoke(str);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.coroutines.jvm.internal.a
@@ -68,11 +68,11 @@ final class MediaEngineModule$connectionInstanceProcessMLSProposalsB64$1 extends
                 return invokeSuspend$lambda$0;
             }
         });
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$connectionInstanceProcessMLSProposalsB64$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((MediaEngineModule$connectionInstanceProcessMLSProposalsB64$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

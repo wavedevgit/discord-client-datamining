@@ -7,15 +7,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var7;
     var3 = function(arg0) { // Original name: getSelectedSpecialNavigationPath, environment: var1
-        _fun91824: for (var _fun91824_ip = 0;;) switch (_fun91824_ip) {
+        _fun92061: for (var _fun92061_ip = 0;;) switch (_fun92061_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.pathname;
                 var1 = _closure1_slot2;
                 var1 = var1.FRIENDS;
                 if (!(var2 !== var1)) {
-                    _fun91824_ip = 30;
-                    continue _fun91824
+                    _fun92061_ip = 30;
+                    continue _fun92061
                 }
             case 26:
                 var1 = undefined;

@@ -8,7 +8,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var1 = var1.TypeError;
     var _closure1_slot2 = var1;
     var1 = function(arg0) { // Original name: iterateValue, environment: var0
-        _fun28876: for (var _fun28876_ip = 0;;) switch (_fun28876_ip) {
+        _fun28877: for (var _fun28877_ip = 0;;) switch (_fun28877_ip) {
             case 0:
                 var4 = undefined;
                 var5 = undefined;
@@ -20,8 +20,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = arg0;
                 var3 = var1.bind(var4)(var0);
                 if (var3) {
-                    _fun28876_ip = 69;
-                    continue _fun28876
+                    _fun28877_ip = 69;
+                    continue _fun28877
                 }
             case 37:
                 var6 = _closure1_slot2;
@@ -40,8 +40,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = arguments.length;
                 var1 = 1;
                 if (!(!(var0 > var1))) {
-                    _fun28876_ip = 103;
-                    continue _fun28876
+                    _fun28877_ip = 103;
+                    continue _fun28877
                 }
             case 79:
                 var6 = _closure1_slot0;
@@ -49,8 +49,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = var0[var1];
                 var0 = var6.bind(var4)(var0);
                 var0 = var0.bind(var4)(var3);
-                _fun28876_ip = 130;
-                continue _fun28876;
+                _fun28877_ip = 130;
+                continue _fun28877;
             case 103:
                 var6 = _closure1_slot0;
                 var2 = _closure1_slot1;

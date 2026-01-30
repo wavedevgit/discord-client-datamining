@@ -27,15 +27,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/applications/isSocialLayerApplication.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: isSocialLayerApplication, environment: var1
-        _fun82051: for (var _fun82051_ip = 0;;) switch (_fun82051_ip) {
+        _fun82097: for (var _fun82097_ip = 0;;) switch (_fun82097_ip) {
             case 0:
                 var3 = arg0;
                 var1 = var3.flags;
                 var0 = null;
                 var0 = var0 != var1;
                 if (!var0) {
-                    _fun82051_ip = 119;
-                    continue _fun82051
+                    _fun82097_ip = 119;
+                    continue _fun82097
                 }
             case 17:
                 var4 = _closure1_slot0;
@@ -50,8 +50,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var1.SOCIAL_LAYER_INTEGRATION_LIMITED;
                 var1 = var5.bind(var8)(var4, var1);
                 if (var1) {
-                    _fun82051_ip = 116;
-                    continue _fun82051
+                    _fun82097_ip = 116;
+                    continue _fun82097
                 }
             case 72:
                 var5 = _closure1_slot0;

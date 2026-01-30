@@ -10,14 +10,14 @@ import kotlin.ranges.d;
 public final class c {
 
     /* renamed from: a  reason: collision with root package name */
-    private final int f48856a;
+    private final int f48872a;
 
     public c(int i10) {
-        this.f48856a = i10;
+        this.f48872a = i10;
     }
 
     public final Map a(int i10, int i11, int i12) {
-        float c10 = d.c(d.i(d.d(i12, 1), this.f48856a) * b(i10), 0.0f);
+        float c10 = d.c(d.i(d.d(i12, 1), this.f48872a) * b(i10), 0.0f);
         float f10 = i11;
         float h10 = f10 / d.h(c10, f10);
         int i13 = 0;

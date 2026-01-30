@@ -25,14 +25,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/proxy_block/utils.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function(arg0) { // Original name: isBlockedByProxyErrorCode, environment: var1
-        _fun112756: for (var _fun112756_ip = 0;;) switch (_fun112756_ip) {
+        _fun113019: for (var _fun113019_ip = 0;;) switch (_fun113019_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.ok;
                 var0 = !var0;
                 if (!var0) {
-                    _fun112756_ip = 53;
-                    continue _fun112756
+                    _fun113019_ip = 53;
+                    continue _fun113019
                 }
             case 15:
                 var1 = var1.body;
@@ -40,8 +40,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var2 == var1;
                 var2 = undefined;
                 if (var3) {
-                    _fun112756_ip = 36;
-                    continue _fun112756
+                    _fun113019_ip = 36;
+                    continue _fun113019
                 }
             case 31:
                 var2 = var1.code;

@@ -31,27 +31,6 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.cleanupSessionDataForTransport = var2;
     var2 = function(arg0) { // Original name: getClientInfoForTransport, environment: var0
-        _fun9753: for (var _fun9753_ip = 0;;) switch (_fun9753_ip) {
-            case 0:
-                var2 = _closure1_slot0;
-                var1 = var2.get;
-                var0 = arg0;
-                var1 = var1.bind(var2)(var0);
-                var0 = null;
-                var2 = var0 == var1;
-                var0 = undefined;
-                if (var2) {
-                    _fun9753_ip = 37;
-                    continue _fun9753
-                }
-            case 31:
-                var0 = var1.clientInfo;
-            case 37:
-                return var0;
-        }
-    };
-    var1.getClientInfoForTransport = var2;
-    var2 = function(arg0) { // Original name: getProtocolVersionForTransport, environment: var0
         _fun9754: for (var _fun9754_ip = 0;;) switch (_fun9754_ip) {
             case 0:
                 var2 = _closure1_slot0;
@@ -64,6 +43,27 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 if (var2) {
                     _fun9754_ip = 37;
                     continue _fun9754
+                }
+            case 31:
+                var0 = var1.clientInfo;
+            case 37:
+                return var0;
+        }
+    };
+    var1.getClientInfoForTransport = var2;
+    var2 = function(arg0) { // Original name: getProtocolVersionForTransport, environment: var0
+        _fun9755: for (var _fun9755_ip = 0;;) switch (_fun9755_ip) {
+            case 0:
+                var2 = _closure1_slot0;
+                var1 = var2.get;
+                var0 = arg0;
+                var1 = var1.bind(var2)(var0);
+                var0 = null;
+                var2 = var0 == var1;
+                var0 = undefined;
+                if (var2) {
+                    _fun9755_ip = 37;
+                    continue _fun9755
                 }
             case 31:
                 var0 = var1.protocolVersion;
@@ -81,13 +81,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.getSessionDataForTransport = var2;
     var2 = function(arg0, arg1) { // Original name: storeSessionDataForTransport, environment: var0
-        _fun9756: for (var _fun9756_ip = 0;;) switch (_fun9756_ip) {
+        _fun9757: for (var _fun9757_ip = 0;;) switch (_fun9757_ip) {
             case 0:
                 var3 = arg0;
                 var0 = var3.sessionId;
                 if (!var0) {
-                    _fun9756_ip = 33;
-                    continue _fun9756
+                    _fun9757_ip = 33;
+                    continue _fun9757
                 }
             case 12:
                 var2 = _closure1_slot0;
@@ -101,21 +101,21 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     };
     var1.storeSessionDataForTransport = var2;
     var0 = function(arg0, arg1) { // Original name: updateSessionDataForTransport, environment: var0
-        _fun9757: for (var _fun9757_ip = 0;;) switch (_fun9757_ip) {
+        _fun9758: for (var _fun9758_ip = 0;;) switch (_fun9758_ip) {
             case 0:
                 var3 = arg0;
                 var0 = var3.sessionId;
                 if (!var0) {
-                    _fun9757_ip = 74;
-                    continue _fun9757
+                    _fun9758_ip = 74;
+                    continue _fun9758
                 }
             case 12:
                 var2 = _closure1_slot0;
                 var1 = var2.get;
                 var7 = var1.bind(var2)(var3);
                 if (var7) {
-                    _fun9757_ip = 34;
-                    continue _fun9757
+                    _fun9758_ip = 34;
+                    continue _fun9758
                 }
             case 32:
                 var7 = {};

@@ -6,30 +6,30 @@ import kotlin.jvm.internal.Intrinsics;
 public final class q extends f {
 
     /* renamed from: p  reason: collision with root package name */
-    private final RandomAccessFile f31291p;
+    private final RandomAccessFile f31307p;
 
     /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
     public q(boolean z10, RandomAccessFile randomAccessFile) {
         super(z10);
         Intrinsics.checkNotNullParameter(randomAccessFile, "randomAccessFile");
-        this.f31291p = randomAccessFile;
+        this.f31307p = randomAccessFile;
     }
 
     @Override // iu.f
     protected synchronized void B() {
-        this.f31291p.close();
+        this.f31307p.close();
     }
 
     @Override // iu.f
     protected synchronized int E(long j10, byte[] array, int i10, int i11) {
         Intrinsics.checkNotNullParameter(array, "array");
-        this.f31291p.seek(j10);
+        this.f31307p.seek(j10);
         int i12 = 0;
         while (true) {
             if (i12 >= i11) {
                 break;
             }
-            int read = this.f31291p.read(array, i10, i11 - i12);
+            int read = this.f31307p.read(array, i10, i11 - i12);
             if (read == -1) {
                 if (i12 == 0) {
                     return -1;
@@ -43,6 +43,6 @@ public final class q extends f {
 
     @Override // iu.f
     protected synchronized long F() {
-        return this.f31291p.length();
+        return this.f31307p.length();
     }
 }

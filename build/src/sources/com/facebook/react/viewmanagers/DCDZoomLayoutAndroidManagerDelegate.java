@@ -29,7 +29,7 @@ public class DCDZoomLayoutAndroidManagerDelegate<T extends View, U extends BaseV
     @Override // com.facebook.react.uimanager.BaseViewManagerDelegate, com.facebook.react.uimanager.ViewManagerDelegate
     public void setProperty(T t10, String str, Object obj) {
         str.getClass();
-        boolean z10 = false;
+        boolean z10 = true;
         char c10 = 65535;
         switch (str.hashCode()) {
             case -1853558344:
@@ -51,7 +51,7 @@ public class DCDZoomLayoutAndroidManagerDelegate<T extends View, U extends BaseV
                 }
                 break;
         }
-        float f10 = 0.0f;
+        Float f10 = null;
         switch (c10) {
             case 0:
                 DCDZoomLayoutAndroidManagerInterface dCDZoomLayoutAndroidManagerInterface = (DCDZoomLayoutAndroidManagerInterface) this.mViewManager;
@@ -63,14 +63,14 @@ public class DCDZoomLayoutAndroidManagerDelegate<T extends View, U extends BaseV
             case 1:
                 DCDZoomLayoutAndroidManagerInterface dCDZoomLayoutAndroidManagerInterface2 = (DCDZoomLayoutAndroidManagerInterface) this.mViewManager;
                 if (obj != null) {
-                    f10 = ((Double) obj).floatValue();
+                    f10 = Float.valueOf(((Double) obj).floatValue());
                 }
                 dCDZoomLayoutAndroidManagerInterface2.setMinimumZoomScale(t10, f10);
                 return;
             case 2:
                 DCDZoomLayoutAndroidManagerInterface dCDZoomLayoutAndroidManagerInterface3 = (DCDZoomLayoutAndroidManagerInterface) this.mViewManager;
                 if (obj != null) {
-                    f10 = ((Double) obj).floatValue();
+                    f10 = Float.valueOf(((Double) obj).floatValue());
                 }
                 dCDZoomLayoutAndroidManagerInterface3.setMaximumZoomScale(t10, f10);
                 return;

@@ -45,15 +45,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var2 = 'toDesktopStyles';
         var0.key = var2;
         var2 = function() { // Original name: value, environment: var1
-            _fun42004: for (var _fun42004_ip = 0;;) switch (_fun42004_ip) {
+            _fun42055: for (var _fun42055_ip = 0;;) switch (_fun42055_ip) {
                 case 0:
                     var0 = this;
                     var1 = {};
                     var2 = var0.desktopMaxHeight;
                     var3 = null;
                     if (!(var3 != var2)) {
-                        _fun42004_ip = 29;
-                        continue _fun42004
+                        _fun42055_ip = 29;
+                        continue _fun42055
                     }
                 case 17:
                     var2 = var0.desktopMaxHeight;
@@ -61,8 +61,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 case 29:
                     var2 = var0.backgroundStyle;
                     if (!(var3 != var2)) {
-                        _fun42004_ip = 51;
-                        continue _fun42004
+                        _fun42055_ip = 51;
+                        continue _fun42055
                     }
                 case 39:
                     var0 = var0.backgroundStyle;
@@ -77,8 +77,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var2 > var0;
                     var0 = undefined;
                     if (!var2) {
-                        _fun42004_ip = 88;
-                        continue _fun42004
+                        _fun42055_ip = 88;
+                        continue _fun42055
                     }
                 case 85:
                     var0 = var1;
@@ -93,15 +93,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'toMobileStyles';
         var0.key = var5;
         var5 = function() { // Original name: value, environment: var1
-            _fun42005: for (var _fun42005_ip = 0;;) switch (_fun42005_ip) {
+            _fun42056: for (var _fun42056_ip = 0;;) switch (_fun42056_ip) {
                 case 0:
                     var0 = this;
                     var1 = {};
                     var2 = var0.mobileMaxHeight;
                     var3 = null;
                     if (!(var3 != var2)) {
-                        _fun42005_ip = 29;
-                        continue _fun42005
+                        _fun42056_ip = 29;
+                        continue _fun42056
                     }
                 case 17:
                     var2 = var0.mobileMaxHeight;
@@ -109,8 +109,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 case 29:
                     var2 = var0.backgroundStyle;
                     if (!(var3 != var2)) {
-                        _fun42005_ip = 51;
-                        continue _fun42005
+                        _fun42056_ip = 51;
+                        continue _fun42056
                     }
                 case 39:
                     var0 = var0.backgroundStyle;
@@ -125,8 +125,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var2 = var2 > var0;
                     var0 = undefined;
                     if (!var2) {
-                        _fun42005_ip = 88;
-                        continue _fun42005
+                        _fun42056_ip = 88;
+                        continue _fun42056
                     }
                 case 85:
                     var0 = var1;

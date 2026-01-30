@@ -190,14 +190,14 @@ public enum da implements u1 {
     
 
     /* renamed from: d  reason: collision with root package name */
-    private final int f42944d;
+    private final int f42960d;
 
     da(int i10) {
-        this.f42944d = i10;
+        this.f42960d = i10;
     }
 
     @Override // og.u1
     public final int zza() {
-        return this.f42944d;
+        return this.f42960d;
     }
 }

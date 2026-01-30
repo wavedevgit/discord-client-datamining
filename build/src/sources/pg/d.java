@@ -7,48 +7,48 @@ import java.util.Map;
 final class d implements Iterator {
 
     /* renamed from: d  reason: collision with root package name */
-    final Iterator f45188d;
+    final Iterator f45204d;
 
     /* renamed from: e  reason: collision with root package name */
-    Collection f45189e;
+    Collection f45205e;
 
     /* renamed from: i  reason: collision with root package name */
-    final /* synthetic */ e f45190i;
+    final /* synthetic */ e f45206i;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public d(e eVar) {
-        this.f45190i = eVar;
-        this.f45188d = eVar.f45200i.entrySet().iterator();
+        this.f45206i = eVar;
+        this.f45204d = eVar.f45216i.entrySet().iterator();
     }
 
     @Override // java.util.Iterator
     public final boolean hasNext() {
-        return this.f45188d.hasNext();
+        return this.f45204d.hasNext();
     }
 
     @Override // java.util.Iterator
     public final /* bridge */ /* synthetic */ Object next() {
-        Map.Entry entry = (Map.Entry) this.f45188d.next();
-        this.f45189e = (Collection) entry.getValue();
+        Map.Entry entry = (Map.Entry) this.f45204d.next();
+        this.f45205e = (Collection) entry.getValue();
         Object key = entry.getKey();
-        return new i0(key, this.f45190i.f45201o.h(key, (Collection) entry.getValue()));
+        return new i0(key, this.f45206i.f45217o.h(key, (Collection) entry.getValue()));
     }
 
     @Override // java.util.Iterator
     public final void remove() {
         boolean z10;
         int i10;
-        if (this.f45189e != null) {
+        if (this.f45205e != null) {
             z10 = true;
         } else {
             z10 = false;
         }
         el.d(z10, "no calls to next() since the last call to remove()");
-        this.f45188d.remove();
-        m mVar = this.f45190i.f45201o;
-        i10 = mVar.f45567o;
-        mVar.f45567o = i10 - this.f45189e.size();
-        this.f45189e.clear();
-        this.f45189e = null;
+        this.f45204d.remove();
+        m mVar = this.f45206i.f45217o;
+        i10 = mVar.f45583o;
+        mVar.f45583o = i10 - this.f45205e.size();
+        this.f45205e.clear();
+        this.f45205e = null;
     }
 }

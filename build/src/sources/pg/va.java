@@ -5,7 +5,7 @@ import ui.c;
 final class va implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final va f45783a = new va();
+    static final va f45799a = new va();
 
     static {
         c.b a10 = ui.c.a("inferenceCommonLogEvent");

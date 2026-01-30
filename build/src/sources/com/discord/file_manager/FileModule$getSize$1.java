@@ -55,7 +55,7 @@ final class FileModule$getSize$1 extends k implements Function2<CoroutineScope, 
             String str = this.$uri;
             Promise promise = this.$promise;
             try {
-                Result.a aVar = Result.f33279e;
+                Result.a aVar = Result.f33295e;
                 reactApplicationContext = fileModule.getReactApplicationContext();
                 ParcelFileDescriptor openFileDescriptor = reactApplicationContext.getContentResolver().openFileDescriptor(Uri.parse(str), "r");
                 if (openFileDescriptor != null) {
@@ -65,18 +65,18 @@ final class FileModule$getSize$1 extends k implements Function2<CoroutineScope, 
                     j10 = 0;
                 }
             } catch (Throwable th2) {
-                Result.a aVar2 = Result.f33279e;
+                Result.a aVar2 = Result.f33295e;
                 b10 = Result.b(c.a(th2));
             }
             if (j10 >= 0) {
                 promise.resolve(kotlin.coroutines.jvm.internal.b.c(j10));
-                b10 = Result.b(Unit.f33282a);
+                b10 = Result.b(Unit.f33298a);
                 Promise promise2 = this.$promise;
                 Throwable e10 = Result.e(b10);
                 if (e10 != null) {
                     promise2.reject(e10);
                 }
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
             throw new IllegalArgumentException("Failed requirement.");
         }
@@ -85,6 +85,6 @@ final class FileModule$getSize$1 extends k implements Function2<CoroutineScope, 
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((FileModule$getSize$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((FileModule$getSize$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }

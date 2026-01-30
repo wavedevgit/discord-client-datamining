@@ -11,7 +11,7 @@ public abstract class p5 {
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(fontName, "fontName");
         String str = fontName + ".ttf";
-        c.a aVar = tp.c.f49780a;
+        c.a aVar = tp.c.f49796a;
         if (aVar.a().containsKey(str)) {
             typeface = (Typeface) aVar.a().get(str);
         } else {
@@ -19,14 +19,14 @@ public abstract class p5 {
             if (list != null && kotlin.collections.i.N(list, str)) {
                 typeface = Typeface.createFromAsset(context.getAssets(), "fonts/" + str);
             } else {
-                Integer g10 = jp.s.g(context, fontName, jp.t.f32376d);
+                Integer g10 = jp.s.g(context, fontName, jp.t.f32392d);
                 if (g10 != null) {
                     typeface = q1.j.i(context, g10.intValue());
                 }
                 typeface = null;
             }
         }
-        tp.c.f49780a.a().put(str, typeface);
+        tp.c.f49796a.a().put(str, typeface);
         return typeface;
     }
 }

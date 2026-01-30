@@ -16,7 +16,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var2 = 'info';
     var1.DEFAULT_BREADCRUMB_LEVEL = var2;
     var0 = function(arg0) { // Original name: breadcrumbFromObject, environment: var0
-        _fun10346: for (var _fun10346_ip = 0;;) switch (_fun10346_ip) {
+        _fun10347: for (var _fun10347_ip = 0;;) switch (_fun10347_ip) {
             case 0:
                 var1 = arg0;
                 var0 = {};
@@ -24,8 +24,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var3 = 'string';
                 var2 = typeof var2;
                 if (!(var3 === var2)) {
-                    _fun10346_ip = 32;
-                    continue _fun10346
+                    _fun10347_ip = 32;
+                    continue _fun10347
                 }
             case 21:
                 var2 = var1.type;
@@ -34,8 +34,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var1.level;
                 var2 = typeof var2;
                 if (!(var3 === var2)) {
-                    _fun10346_ip = 92;
-                    continue _fun10346
+                    _fun10347_ip = 92;
+                    continue _fun10347
                 }
             case 45:
                 var5 = _closure1_slot0;
@@ -52,8 +52,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var1.event_id;
                 var2 = typeof var2;
                 if (!(var3 === var2)) {
-                    _fun10346_ip = 117;
-                    continue _fun10346
+                    _fun10347_ip = 117;
+                    continue _fun10347
                 }
             case 105:
                 var2 = var1.event_id;
@@ -62,8 +62,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var1.category;
                 var2 = typeof var2;
                 if (!(var3 === var2)) {
-                    _fun10346_ip = 142;
-                    continue _fun10346
+                    _fun10347_ip = 142;
+                    continue _fun10347
                 }
             case 130:
                 var2 = var1.category;
@@ -72,8 +72,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var1.message;
                 var2 = typeof var2;
                 if (!(var3 === var2)) {
-                    _fun10346_ip = 165;
-                    continue _fun10346
+                    _fun10347_ip = 165;
+                    continue _fun10347
                 }
             case 154:
                 var2 = var1.message;
@@ -84,8 +84,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = typeof var2;
                 var2 = var4 === var2;
                 if (!var2) {
-                    _fun10346_ip = 195;
-                    continue _fun10346
+                    _fun10347_ip = 195;
+                    continue _fun10347
                 }
             case 184:
                 var5 = var1.data;
@@ -93,8 +93,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var4 !== var5;
             case 195:
                 if (!var2) {
-                    _fun10346_ip = 209;
-                    continue _fun10346
+                    _fun10347_ip = 209;
+                    continue _fun10347
                 }
             case 198:
                 var2 = var1.data;
@@ -103,8 +103,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = var1.timestamp;
                 var2 = typeof var2;
                 if (!(var3 === var2)) {
-                    _fun10346_ip = 279;
-                    continue _fun10346
+                    _fun10347_ip = 279;
+                    continue _fun10347
                 }
             case 222:
                 var2 = global;
@@ -118,8 +118,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var2 = undefined;
                 var2 = var3.bind(var2)(var1);
                 if (var2) {
-                    _fun10346_ip = 279;
-                    continue _fun10346
+                    _fun10347_ip = 279;
+                    continue _fun10347
                 }
             case 273:
                 var0.timestamp = var1;

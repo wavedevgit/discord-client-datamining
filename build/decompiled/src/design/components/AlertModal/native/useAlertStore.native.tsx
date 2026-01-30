@@ -41,7 +41,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var4 = var2.alerts;
         var3 = var4.forEach;
         var2 = function(arg0) { // Environment: var1
-            _fun37110: for (var _fun37110_ip = 0;;) switch (_fun37110_ip) {
+            _fun37161: for (var _fun37161_ip = 0;;) switch (_fun37161_ip) {
                 case 0:
                     var2 = arg0;
                     var1 = var2.onDismiss;
@@ -49,8 +49,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var1 = var0 == var1;
                     var0 = undefined;
                     if (var1) {
-                        _fun37110_ip = 30;
-                        continue _fun37110
+                        _fun37161_ip = 30;
+                        continue _fun37161
                     }
                 case 20:
                     var1 = var2.onDismiss;
@@ -91,7 +91,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var3 = var3.bind(var0)(var2);
         var2 = var3.batchUpdates;
         var1 = function() { // Environment: var1
-            _fun37113: for (var _fun37113_ip = 0;;) switch (_fun37113_ip) {
+            _fun37164: for (var _fun37164_ip = 0;;) switch (_fun37164_ip) {
                 case 0:
                     var3 = _closure1_slot2;
                     var2 = var3.getState;
@@ -109,16 +109,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var5 = null;
                     var2 = var5 == var3;
                     if (var2) {
-                        _fun37113_ip = 59;
-                        continue _fun37113
+                        _fun37164_ip = 59;
+                        continue _fun37164
                     }
                 case 49:
                     var4 = var3.onDismiss;
                     var2 = var5 == var4;
                 case 59:
                     if (var2) {
-                        _fun37113_ip = 72;
-                        continue _fun37113
+                        _fun37164_ip = 72;
+                        continue _fun37164
                     }
                 case 62:
                     var2 = var3.onDismiss;

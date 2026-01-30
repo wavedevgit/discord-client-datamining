@@ -64,8 +64,8 @@ public class n extends m {
 
     @Override // s.m, s.l, s.k, s.j.a
     public Object h() {
-        b2.e.a(this.f48670a instanceof OutputConfiguration);
-        return this.f48670a;
+        b2.e.a(this.f48686a instanceof OutputConfiguration);
+        return this.f48686a;
     }
 
     @Override // s.o

@@ -11,13 +11,13 @@ import ne.g0;
 public abstract class t {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final int[] f40063a = {1, 2, 2, 2, 2, 3, 3, 4, 4, 5, 6, 6, 6, 7, 8, 8};
+    private static final int[] f40079a = {1, 2, 2, 2, 2, 3, 3, 4, 4, 5, 6, 6, 6, 7, 8, 8};
 
     /* renamed from: b  reason: collision with root package name */
-    private static final int[] f40064b = {-1, 8000, 16000, 32000, -1, -1, 11025, 22050, 44100, -1, -1, 12000, 24000, 48000, -1, -1};
+    private static final int[] f40080b = {-1, 8000, 16000, 32000, -1, -1, 11025, 22050, 44100, -1, -1, 12000, 24000, 48000, -1, -1};
 
     /* renamed from: c  reason: collision with root package name */
-    private static final int[] f40065c = {64, 112, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT, 192, 224, IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER, 384, 448, IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING, DiscordVideoMediaSource.DEFAULT_WIDTH, 768, 896, IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET, 1152, 1280, 1536, 1920, RecyclerView.ItemAnimator.FLAG_MOVED, 2304, 2560, 2688, 2816, 2823, 2944, 3072, 3840, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT, 6144, 7680};
+    private static final int[] f40081c = {64, 112, IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT, 192, 224, IntBufferBatchMountItem.INSTRUCTION_UPDATE_EVENT_EMITTER, 384, 448, IntBufferBatchMountItem.INSTRUCTION_UPDATE_PADDING, DiscordVideoMediaSource.DEFAULT_WIDTH, 768, 896, IntBufferBatchMountItem.INSTRUCTION_UPDATE_OVERFLOW_INSET, 1152, 1280, 1536, 1920, RecyclerView.ItemAnimator.FLAG_MOVED, 2304, 2560, 2688, 2816, 2823, 2944, 3072, 3840, RecyclerView.ItemAnimator.FLAG_APPEARED_IN_PRE_LAYOUT, 6144, 7680};
 
     /* JADX WARN: Removed duplicated region for block: B:15:0x0060  */
     /* JADX WARN: Removed duplicated region for block: B:17:? A[RETURN, SYNTHETIC] */
@@ -210,10 +210,10 @@ public abstract class t {
         int i11;
         g0 b10 = b(bArr);
         b10.r(60);
-        int i12 = f40063a[b10.h(6)];
-        int i13 = f40064b[b10.h(4)];
+        int i12 = f40079a[b10.h(6)];
+        int i13 = f40080b[b10.h(4)];
         int h10 = b10.h(5);
-        int[] iArr = f40065c;
+        int[] iArr = f40081c;
         if (h10 >= iArr.length) {
             i10 = -1;
         } else {

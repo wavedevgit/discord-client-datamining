@@ -58,7 +58,7 @@ public class u extends RecyclerView.Adapter {
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter
     /* renamed from: d */
     public a onCreateViewHolder(ViewGroup viewGroup, int i10) {
-        return new a((TextView) LayoutInflater.from(viewGroup.getContext()).inflate(yg.h.f54470s, viewGroup, false));
+        return new a((TextView) LayoutInflater.from(viewGroup.getContext()).inflate(yg.h.f54486s, viewGroup, false));
     }
 
     @Override // androidx.recyclerview.widget.RecyclerView.Adapter

@@ -6,15 +6,15 @@ import kotlinx.coroutines.CoroutineScope;
 public final class e implements CoroutineScope {
 
     /* renamed from: d  reason: collision with root package name */
-    private final CoroutineContext f37438d;
+    private final CoroutineContext f37454d;
 
     public e(CoroutineContext coroutineContext) {
-        this.f37438d = coroutineContext;
+        this.f37454d = coroutineContext;
     }
 
     @Override // kotlinx.coroutines.CoroutineScope
     public CoroutineContext getCoroutineContext() {
-        return this.f37438d;
+        return this.f37454d;
     }
 
     public String toString() {

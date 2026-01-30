@@ -22,15 +22,15 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3 = var3.bind(var0)(var4);
     var _closure1_slot3 = var3;
     var3 = function(arg0, arg1) { // Original name: getRootStateForNavigate, environment: var1
-        _fun17544: for (var _fun17544_ip = 0;;) switch (_fun17544_ip) {
+        _fun17545: for (var _fun17545_ip = 0;;) switch (_fun17545_ip) {
             case 0:
                 var2 = arg0;
                 var0 = arg1;
                 var1 = var2.getParent;
                 var3 = var1.bind(var2)();
                 if (var3) {
-                    _fun17544_ip = 21;
-                    continue _fun17544
+                    _fun17545_ip = 21;
+                    continue _fun17545
                 }
             case 19:
                 return var0;
@@ -84,7 +84,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var1[0] = var5;
         var1[1] = var4;
         var0 = function(arg0, arg1) { // Environment: var0
-            _fun17546: for (var _fun17546_ip = 0;;) switch (_fun17546_ip) {
+            _fun17547: for (var _fun17547_ip = 0;;) switch (_fun17547_ip) {
                 case 0:
                     var9 = arg0;
                     var7 = arg1;
@@ -95,16 +95,16 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var1 = undefined;
                     var3 = undefined;
                     if (var2) {
-                        _fun17546_ip = 36;
-                        continue _fun17546
+                        _fun17547_ip = 36;
+                        continue _fun17547
                     }
                 case 31:
                     var3 = var4.enabled;
                 case 36:
                     var2 = false;
                     if (!(var2 === var3)) {
-                        _fun17546_ip = 44;
-                        continue _fun17546
+                        _fun17547_ip = 44;
+                        continue _fun17547
                     }
                 case 42:
                     return var1;
@@ -113,8 +113,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var6 = {};
                     var8 = 0;
                     if (var2) {
-                        _fun17546_ip = 88;
-                        continue _fun17546
+                        _fun17547_ip = 88;
+                        continue _fun17547
                     }
                 case 55:
                     var6.index = var8;
@@ -125,8 +125,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var2[0] = var3;
                     var6.routes = var2;
                     var3 = var6;
-                    _fun17546_ip = 133;
-                    continue _fun17546;
+                    _fun17547_ip = 133;
+                    continue _fun17547;
                 case 88:
                     var2 = _closure1_slot4;
                     var0 = _closure2_slot0;
@@ -140,14 +140,14 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = var2.bind(var1)(var0, var6);
                 case 133:
                     if (!(var5 != var4)) {
-                        _fun17546_ip = 146;
-                        continue _fun17546
+                        _fun17547_ip = 146;
+                        continue _fun17547
                     }
                 case 137:
                     var0 = var4.getPathFromState;
                     if (var0) {
-                        _fun17546_ip = 197;
-                        continue _fun17546
+                        _fun17547_ip = 197;
+                        continue _fun17547
                     }
                 case 146:
                     var2 = _closure1_slot0;
@@ -159,22 +159,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var7 = var5 == var4;
                     var0 = undefined;
                     if (var7) {
-                        _fun17546_ip = 189;
-                        continue _fun17546
+                        _fun17547_ip = 189;
+                        continue _fun17547
                     }
                 case 184:
                     var0 = var4.config;
                 case 189:
                     var0 = var2.bind(var6)(var3, var0);
-                    _fun17546_ip = 223;
-                    continue _fun17546;
+                    _fun17547_ip = 223;
+                    continue _fun17547;
                 case 197:
                     var2 = var4.getPathFromState;
                     var5 = var5 == var4;
                     var1 = undefined;
                     if (var5) {
-                        _fun17546_ip = 217;
-                        continue _fun17546
+                        _fun17547_ip = 217;
+                        continue _fun17547
                     }
                 case 212:
                     var1 = var4.config;

@@ -151,7 +151,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = 'modules/user_settings/native/design_system/UserSettingsDesignSystemBackdrop.tsx';
     var3 = var4.bind(var5)(var3);
     var1 = function() { // Original name: UserSettingsDesignSystemBackdrop, environment: var1
-        _fun88273: for (var _fun88273_ip = 0;;) switch (_fun88273_ip) {
+        _fun88509: for (var _fun88509_ip = 0;;) switch (_fun88509_ip) {
             case 0:
                 var12 = function() { // Original name: handleClose, environment: var0
                     var2 = _closure2_slot1;
@@ -189,7 +189,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var6.bind(var3)(var1);
                 var1 = var2.useAnimatedStyle;
                 var0 = function() { // Original name: n, environment: var0
-                    _fun88275: for (var _fun88275_ip = 0;;) switch (_fun88275_ip) {
+                    _fun88511: for (var _fun88511_ip = 0;;) switch (_fun88511_ip) {
                         case 0:
                             var0 = {};
                             var3 = _closure1_slot0;
@@ -202,8 +202,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                             var2 = _closure2_slot0;
                             var3 = 0;
                             if (!var2) {
-                                _fun88275_ip = 47;
-                                continue _fun88275
+                                _fun88511_ip = 47;
+                                continue _fun88511
                             }
                         case 44:
                             var3 = 1;
@@ -291,10 +291,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = new Array(2);
                 var4[0] = var6;
                 if (!var5) {
-                    _fun88273_ip = 652;
-                    continue _fun88273
+                    _fun88509_ip = 654;
+                    continue _fun88509
                 }
-            case 417:
+            case 419:
                 var8 = _closure1_slot6;
                 var17 = _closure1_slot0;
                 var19 = _closure1_slot1;
@@ -348,7 +348,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var9[1] = var10;
                 var6.children = var9;
                 var5 = var8.bind(var3)(var7, var6);
-            case 652:
+            case 654:
                 var4[1] = var5;
                 var0.children = var4;
                 var0 = var2.bind(var3)(var1, var0);
@@ -357,4 +357,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 4856, 4033, 3895, 4037, 3677, 4034, 4040, 4018, 4024, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 33, 1297, 4862, 4039, 3901, 4043, 3679, 4040, 4046, 4024, 4030, 2]);

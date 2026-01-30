@@ -10,33 +10,33 @@ import kotlinx.coroutines.b0;
 public abstract class h extends kotlinx.coroutines.a implements g {
 
     /* renamed from: o  reason: collision with root package name */
-    private final g f31188o;
+    private final g f31204o;
 
     public h(CoroutineContext coroutineContext, g gVar, boolean z10, boolean z11) {
         super(coroutineContext, z10, z11);
-        this.f31188o = gVar;
+        this.f31204o = gVar;
     }
 
     @Override // kotlinx.coroutines.b0
     public void I(Throwable th2) {
         CancellationException G0 = b0.G0(this, th2, null, 1, null);
-        this.f31188o.h(G0);
+        this.f31204o.h(G0);
         G(G0);
     }
 
     /* JADX INFO: Access modifiers changed from: protected */
     public final g Z0() {
-        return this.f31188o;
+        return this.f31204o;
     }
 
     @Override // is.w
     public void b(Function1 function1) {
-        this.f31188o.b(function1);
+        this.f31204o.b(function1);
     }
 
     @Override // is.w
     public Object e(Object obj) {
-        return this.f31188o.e(obj);
+        return this.f31204o.e(obj);
     }
 
     @Override // kotlinx.coroutines.b0, kotlinx.coroutines.Job, is.v
@@ -52,59 +52,59 @@ public abstract class h extends kotlinx.coroutines.a implements g {
 
     @Override // is.v
     public boolean i() {
-        return this.f31188o.i();
+        return this.f31204o.i();
     }
 
     @Override // is.v
     public i iterator() {
-        return this.f31188o.iterator();
+        return this.f31204o.iterator();
     }
 
     @Override // is.v
     public os.h j() {
-        return this.f31188o.j();
+        return this.f31204o.j();
     }
 
     @Override // is.v
     public os.h k() {
-        return this.f31188o.k();
+        return this.f31204o.k();
     }
 
     @Override // is.v
     public Object m() {
-        return this.f31188o.m();
+        return this.f31204o.m();
     }
 
     @Override // is.v
     public Object o(Continuation continuation) {
-        Object o10 = this.f31188o.o(continuation);
+        Object o10 = this.f31204o.o(continuation);
         or.b.f();
         return o10;
     }
 
     @Override // is.w
     public boolean offer(Object obj) {
-        return this.f31188o.offer(obj);
+        return this.f31204o.offer(obj);
     }
 
     @Override // is.v
     public Object r(Continuation continuation) {
-        return this.f31188o.r(continuation);
+        return this.f31204o.r(continuation);
     }
 
     @Override // is.w
     public boolean s(Throwable th2) {
-        return this.f31188o.s(th2);
+        return this.f31204o.s(th2);
     }
 
     @Override // is.w
     public Object u(Object obj, Continuation continuation) {
-        return this.f31188o.u(obj, continuation);
+        return this.f31204o.u(obj, continuation);
     }
 
     @Override // is.w
     public boolean v() {
-        return this.f31188o.v();
+        return this.f31204o.v();
     }
 
     public final g W0() {

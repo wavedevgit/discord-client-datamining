@@ -18,30 +18,30 @@ import r.n0;
 public class r0 implements n0.b {
 
     /* renamed from: a  reason: collision with root package name */
-    final CameraManager f47756a;
+    final CameraManager f47772a;
 
     /* renamed from: b  reason: collision with root package name */
-    final Object f47757b;
+    final Object f47773b;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        final Map f47758a = new HashMap();
+        final Map f47774a = new HashMap();
 
         /* renamed from: b  reason: collision with root package name */
-        final Handler f47759b;
+        final Handler f47775b;
 
         a(Handler handler) {
-            this.f47759b = handler;
+            this.f47775b = handler;
         }
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public r0(Context context, Object obj) {
-        this.f47756a = (CameraManager) context.getSystemService("camera");
-        this.f47757b = obj;
+        this.f47772a = (CameraManager) context.getSystemService("camera");
+        this.f47773b = obj;
     }
 
     /* JADX INFO: Access modifiers changed from: package-private */
@@ -53,14 +53,14 @@ public class r0 implements n0.b {
     public void a(Executor executor, CameraManager.AvailabilityCallback availabilityCallback) {
         n0.a aVar;
         if (executor != null) {
-            a aVar2 = (a) this.f47757b;
+            a aVar2 = (a) this.f47773b;
             if (availabilityCallback != null) {
-                synchronized (aVar2.f47758a) {
+                synchronized (aVar2.f47774a) {
                     try {
-                        aVar = (n0.a) aVar2.f47758a.get(availabilityCallback);
+                        aVar = (n0.a) aVar2.f47774a.get(availabilityCallback);
                         if (aVar == null) {
                             aVar = new n0.a(executor, availabilityCallback);
-                            aVar2.f47758a.put(availabilityCallback, aVar);
+                            aVar2.f47774a.put(availabilityCallback, aVar);
                         }
                     } finally {
                     }
@@ -68,7 +68,7 @@ public class r0 implements n0.b {
             } else {
                 aVar = null;
             }
-            this.f47756a.registerAvailabilityCallback(aVar, aVar2.f47759b);
+            this.f47772a.registerAvailabilityCallback(aVar, aVar2.f47775b);
             return;
         }
         throw new IllegalArgumentException("executor was null");
@@ -77,7 +77,7 @@ public class r0 implements n0.b {
     @Override // r.n0.b
     public CameraCharacteristics b(String str) {
         try {
-            return this.f47756a.getCameraCharacteristics(str);
+            return this.f47772a.getCameraCharacteristics(str);
         } catch (CameraAccessException e10) {
             throw f.e(e10);
         }
@@ -93,7 +93,7 @@ public class r0 implements n0.b {
         b2.e.g(executor);
         b2.e.g(stateCallback);
         try {
-            this.f47756a.openCamera(str, new b0.b(executor, stateCallback), ((a) this.f47757b).f47759b);
+            this.f47772a.openCamera(str, new b0.b(executor, stateCallback), ((a) this.f47773b).f47775b);
         } catch (CameraAccessException e10) {
             throw f.e(e10);
         }
@@ -102,7 +102,7 @@ public class r0 implements n0.b {
     @Override // r.n0.b
     public String[] e() {
         try {
-            return this.f47756a.getCameraIdList();
+            return this.f47772a.getCameraIdList();
         } catch (CameraAccessException e10) {
             throw f.e(e10);
         }
@@ -112,9 +112,9 @@ public class r0 implements n0.b {
     public void f(CameraManager.AvailabilityCallback availabilityCallback) {
         n0.a aVar;
         if (availabilityCallback != null) {
-            a aVar2 = (a) this.f47757b;
-            synchronized (aVar2.f47758a) {
-                aVar = (n0.a) aVar2.f47758a.remove(availabilityCallback);
+            a aVar2 = (a) this.f47773b;
+            synchronized (aVar2.f47774a) {
+                aVar = (n0.a) aVar2.f47774a.remove(availabilityCallback);
             }
         } else {
             aVar = null;
@@ -122,6 +122,6 @@ public class r0 implements n0.b {
         if (aVar != null) {
             aVar.d();
         }
-        this.f47756a.unregisterAvailabilityCallback(aVar);
+        this.f47772a.unregisterAvailabilityCallback(aVar);
     }
 }

@@ -8,39 +8,39 @@ import java.util.concurrent.ConcurrentHashMap;
 public abstract class p {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final p f36616a;
+    private static final p f36632a;
 
     /* renamed from: b  reason: collision with root package name */
-    private static final p f36617b;
+    private static final p f36633b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final p f36618c;
+    private static final p f36634c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final p f36619d;
+    private static final p f36635d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final Map f36620e;
+    private static final Map f36636e;
 
     /* renamed from: f  reason: collision with root package name */
-    private static final Map f36621f;
+    private static final Map f36637f;
 
     /* JADX INFO: Access modifiers changed from: package-private */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static /* synthetic */ class a {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ int[] f36622a;
+        static final /* synthetic */ int[] f36638a;
 
         static {
             int[] iArr = new int[k.values().length];
-            f36622a = iArr;
+            f36638a = iArr;
             try {
                 iArr[k.CARDINALS.ordinal()] = 1;
             } catch (NoSuchFieldError unused) {
             }
             try {
-                f36622a[k.ORDINALS.ordinal()] = 2;
+                f36638a[k.ORDINALS.ordinal()] = 2;
             } catch (NoSuchFieldError unused2) {
             }
         }
@@ -54,11 +54,11 @@ public abstract class p {
         @Override // kt.o
         public p a(Locale locale, k kVar) {
             boolean equals = locale.getLanguage().equals("en");
-            int i10 = a.f36622a[kVar.ordinal()];
+            int i10 = a.f36638a[kVar.ordinal()];
             if (i10 == 1) {
-                return equals ? p.f36616a : p.f36617b;
+                return equals ? p.f36632a : p.f36633b;
             } else if (i10 == 2) {
-                return equals ? p.f36618c : p.f36619d;
+                return equals ? p.f36634c : p.f36635d;
             } else {
                 throw new UnsupportedOperationException(kVar.name());
             }
@@ -73,18 +73,18 @@ public abstract class p {
     private static class c extends p {
 
         /* renamed from: g  reason: collision with root package name */
-        private final k f36623g;
+        private final k f36639g;
 
         /* renamed from: h  reason: collision with root package name */
-        private final boolean f36624h;
+        private final boolean f36640h;
 
         /* synthetic */ c(k kVar, boolean z10, a aVar) {
             this(kVar, z10);
         }
 
         private c(k kVar, boolean z10) {
-            this.f36623g = kVar;
-            this.f36624h = z10;
+            this.f36639g = kVar;
+            this.f36640h = z10;
         }
     }
 
@@ -92,7 +92,7 @@ public abstract class p {
     private static class d {
 
         /* renamed from: a  reason: collision with root package name */
-        private static final o f36625a;
+        private static final o f36641a;
 
         static {
             o oVar;
@@ -105,30 +105,30 @@ public abstract class p {
             if (oVar == null) {
                 oVar = new b(null);
             }
-            f36625a = oVar;
+            f36641a = oVar;
         }
     }
 
     static {
         k kVar = k.CARDINALS;
-        f36616a = new c(kVar, true, null);
-        f36617b = new c(kVar, false, null);
+        f36632a = new c(kVar, true, null);
+        f36633b = new c(kVar, false, null);
         k kVar2 = k.ORDINALS;
-        f36618c = new c(kVar2, true, null);
-        f36619d = new c(kVar2, false, null);
-        f36620e = new ConcurrentHashMap();
-        f36621f = new ConcurrentHashMap();
+        f36634c = new c(kVar2, true, null);
+        f36635d = new c(kVar2, false, null);
+        f36636e = new ConcurrentHashMap();
+        f36637f = new ConcurrentHashMap();
     }
 
     private static Map e(k kVar) {
-        int i10 = a.f36622a[kVar.ordinal()];
+        int i10 = a.f36638a[kVar.ordinal()];
         if (i10 != 1) {
             if (i10 == 2) {
-                return f36621f;
+                return f36637f;
             }
             throw new UnsupportedOperationException(kVar.name());
         }
-        return f36620e;
+        return f36636e;
     }
 
     public static p f(Locale locale, k kVar) {
@@ -143,7 +143,7 @@ public abstract class p {
             }
         }
         if (pVar == null) {
-            return d.f36625a.a(locale, kVar);
+            return d.f36641a.a(locale, kVar);
         }
         return pVar;
     }

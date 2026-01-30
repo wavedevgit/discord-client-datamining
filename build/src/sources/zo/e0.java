@@ -15,33 +15,33 @@ import kotlinx.coroutines.flow.FlowCollector;
 public final class e0 implements tm.o<b> {
 
     /* renamed from: b  reason: collision with root package name */
-    private final ActivityResultLauncher f55900b;
+    private final ActivityResultLauncher f55916b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final Context f55901c;
+    private final Context f55917c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final d0 f55902d;
+    private final d0 f55918d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final Context f55903a;
+        private final Context f55919a;
 
         /* renamed from: b  reason: collision with root package name */
-        private final ActivityResultLauncher f55904b;
+        private final ActivityResultLauncher f55920b;
 
         public a(Context context, ActivityResultLauncher requestPermissionsLauncher) {
             Intrinsics.checkNotNullParameter(context, "context");
             Intrinsics.checkNotNullParameter(requestPermissionsLauncher, "requestPermissionsLauncher");
-            this.f55903a = context;
-            this.f55904b = requestPermissionsLauncher;
+            this.f55919a = context;
+            this.f55920b = requestPermissionsLauncher;
         }
 
         public final e0 a(d0 permission) {
             Intrinsics.checkNotNullParameter(permission, "permission");
-            return new e0(this.f55904b, this.f55903a, permission);
+            return new e0(this.f55920b, this.f55919a, permission);
         }
     }
 
@@ -52,7 +52,7 @@ public final class e0 implements tm.o<b> {
         public static final class a extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final a f55905a = new a();
+            public static final a f55921a = new a();
 
             private a() {
                 super(null);
@@ -79,7 +79,7 @@ public final class e0 implements tm.o<b> {
         public static final class C0787b extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final C0787b f55906a = new C0787b();
+            public static final C0787b f55922a = new C0787b();
 
             private C0787b() {
                 super(null);
@@ -113,35 +113,35 @@ public final class e0 implements tm.o<b> {
     static final class c extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        int f55907d;
+        int f55923d;
 
         /* renamed from: e  reason: collision with root package name */
-        private /* synthetic */ Object f55908e;
+        private /* synthetic */ Object f55924e;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
         public static final class a implements FlowCollector {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ FlowCollector f55910d;
+            final /* synthetic */ FlowCollector f55926d;
 
             a(FlowCollector flowCollector) {
-                this.f55910d = flowCollector;
+                this.f55926d = flowCollector;
             }
 
             public final Object a(boolean z10, Continuation continuation) {
                 if (z10) {
-                    Object emit = this.f55910d.emit(b.C0787b.f55906a, continuation);
+                    Object emit = this.f55926d.emit(b.C0787b.f55922a, continuation);
                     if (emit == or.b.f()) {
                         return emit;
                     }
-                    return Unit.f33282a;
+                    return Unit.f33298a;
                 }
-                Object emit2 = this.f55910d.emit(b.a.f55905a, continuation);
+                Object emit2 = this.f55926d.emit(b.a.f55921a, continuation);
                 if (emit2 == or.b.f()) {
                     return emit2;
                 }
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
 
             @Override // kotlinx.coroutines.flow.FlowCollector
@@ -157,7 +157,7 @@ public final class e0 implements tm.o<b> {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             c cVar = new c(continuation);
-            cVar.f55908e = obj;
+            cVar.f55924e = obj;
             return cVar;
         }
 
@@ -176,7 +176,7 @@ public final class e0 implements tm.o<b> {
             /*
                 r6 = this;
                 java.lang.Object r0 = or.b.f()
-                int r1 = r6.f55907d
+                int r1 = r6.f55923d
                 r2 = 2
                 r3 = 1
                 if (r1 == 0) goto L1e
@@ -194,7 +194,7 @@ public final class e0 implements tm.o<b> {
                 goto L60
             L1e:
                 kotlin.c.b(r7)
-                java.lang.Object r7 = r6.f55908e
+                java.lang.Object r7 = r6.f55924e
                 kotlinx.coroutines.flow.FlowCollector r7 = (kotlinx.coroutines.flow.FlowCollector) r7
                 zo.e0 r1 = zo.e0.this
                 androidx.activity.result.ActivityResultLauncher r1 = zo.e0.d(r1)
@@ -214,13 +214,13 @@ public final class e0 implements tm.o<b> {
                 java.lang.Boolean r4 = kotlin.coroutines.jvm.internal.b.a(r3)
                 boolean r1 = kotlin.jvm.internal.Intrinsics.areEqual(r1, r4)
                 if (r1 == 0) goto L63
-                zo.e0$b$b r1 = zo.e0.b.C0787b.f55906a
-                r6.f55907d = r3
+                zo.e0$b$b r1 = zo.e0.b.C0787b.f55922a
+                r6.f55923d = r3
                 java.lang.Object r7 = r7.emit(r1, r6)
                 if (r7 != r0) goto L60
                 goto L88
             L60:
-                kotlin.Unit r7 = kotlin.Unit.f33282a
+                kotlin.Unit r7 = kotlin.Unit.f33298a
                 return r7
             L63:
                 zo.e0 r1 = zo.e0.this
@@ -233,7 +233,7 @@ public final class e0 implements tm.o<b> {
                 r1.<init>()
                 zo.e0$c$a r3 = new zo.e0$c$a
                 r3.<init>(r7)
-                r6.f55907d = r2
+                r6.f55923d = r2
                 java.lang.Object r7 = r1.collect(r3, r6)
                 if (r7 != r0) goto L89
             L88:
@@ -248,7 +248,7 @@ public final class e0 implements tm.o<b> {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((c) create(flowCollector, continuation)).invokeSuspend(Unit.f33282a);
+            return ((c) create(flowCollector, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -256,15 +256,15 @@ public final class e0 implements tm.o<b> {
         Intrinsics.checkNotNullParameter(requestPermissionsLauncher, "requestPermissionsLauncher");
         Intrinsics.checkNotNullParameter(context, "context");
         Intrinsics.checkNotNullParameter(permission, "permission");
-        this.f55900b = requestPermissionsLauncher;
-        this.f55901c = context;
-        this.f55902d = permission;
+        this.f55916b = requestPermissionsLauncher;
+        this.f55917c = context;
+        this.f55918d = permission;
     }
 
     @Override // tm.o
     public boolean a(tm.o otherWorker) {
         Intrinsics.checkNotNullParameter(otherWorker, "otherWorker");
-        if ((otherWorker instanceof e0) && ((e0) otherWorker).f55902d == this.f55902d) {
+        if ((otherWorker instanceof e0) && ((e0) otherWorker).f55918d == this.f55918d) {
             return true;
         }
         return false;

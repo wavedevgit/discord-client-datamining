@@ -7,22 +7,22 @@ import tr.j;
 public final class d implements a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final File f56061a;
+    private final File f56077a;
 
     public d(File destination) {
         Intrinsics.checkParameterIsNotNull(destination, "destination");
-        this.f56061a = destination;
+        this.f56077a = destination;
     }
 
     @Override // zq.a
     public boolean isSatisfied(File imageFile) {
         Intrinsics.checkParameterIsNotNull(imageFile, "imageFile");
-        return Intrinsics.areEqual(imageFile.getAbsolutePath(), this.f56061a.getAbsolutePath());
+        return Intrinsics.areEqual(imageFile.getAbsolutePath(), this.f56077a.getAbsolutePath());
     }
 
     @Override // zq.a
     public File satisfy(File imageFile) {
         Intrinsics.checkParameterIsNotNull(imageFile, "imageFile");
-        return j.q(imageFile, this.f56061a, true, 0, 4, null);
+        return j.q(imageFile, this.f56077a, true, 0, 4, null);
     }
 }

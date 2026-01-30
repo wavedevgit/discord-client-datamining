@@ -68,14 +68,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var5 = 'unschedule';
         var0.key = var5;
         var5 = function() { // Original name: value, environment: var4
-            _fun15735: for (var _fun15735_ip = 0;;) switch (_fun15735_ip) {
+            _fun15736: for (var _fun15736_ip = 0;;) switch (_fun15736_ip) {
                 case 0:
                     var1 = this;
                     var0 = var1.scheduled;
                     var0 = var0.bind(var1)();
                     if (!var0) {
-                        _fun15735_ip = 45;
-                        continue _fun15735
+                        _fun15736_ip = 45;
+                        continue _fun15736
                     }
                 case 16:
                     var0 = global;

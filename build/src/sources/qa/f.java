@@ -9,46 +9,46 @@ import sa.k;
 public class f {
 
     /* renamed from: g  reason: collision with root package name */
-    private boolean f47046g;
+    private boolean f47062g;
 
     /* renamed from: h  reason: collision with root package name */
-    private final r8.a f47047h;
+    private final r8.a f47063h;
 
     /* renamed from: c  reason: collision with root package name */
-    private int f47042c = 0;
+    private int f47058c = 0;
 
     /* renamed from: b  reason: collision with root package name */
-    private int f47041b = 0;
+    private int f47057b = 0;
 
     /* renamed from: d  reason: collision with root package name */
-    private int f47043d = 0;
+    private int f47059d = 0;
 
     /* renamed from: f  reason: collision with root package name */
-    private int f47045f = 0;
+    private int f47061f = 0;
 
     /* renamed from: e  reason: collision with root package name */
-    private int f47044e = 0;
+    private int f47060e = 0;
 
     /* renamed from: a  reason: collision with root package name */
-    private int f47040a = 0;
+    private int f47056a = 0;
 
     public f(r8.a aVar) {
-        this.f47047h = (r8.a) j.g(aVar);
+        this.f47063h = (r8.a) j.g(aVar);
     }
 
     private boolean a(InputStream inputStream) {
         int read;
-        int i10 = this.f47044e;
-        while (this.f47040a != 6 && (read = inputStream.read()) != -1) {
+        int i10 = this.f47060e;
+        while (this.f47056a != 6 && (read = inputStream.read()) != -1) {
             try {
-                int i11 = this.f47042c;
-                this.f47042c = i11 + 1;
-                if (this.f47046g) {
-                    this.f47040a = 6;
-                    this.f47046g = false;
+                int i11 = this.f47058c;
+                this.f47058c = i11 + 1;
+                if (this.f47062g) {
+                    this.f47056a = 6;
+                    this.f47062g = false;
                     return false;
                 }
-                int i12 = this.f47040a;
+                int i12 = this.f47056a;
                 if (i12 != 0) {
                     if (i12 != 1) {
                         if (i12 != 2) {
@@ -57,51 +57,51 @@ public class f {
                                     if (i12 != 5) {
                                         j.i(false);
                                     } else {
-                                        int i13 = ((this.f47041b << 8) + read) - 2;
+                                        int i13 = ((this.f47057b << 8) + read) - 2;
                                         w8.d.a(inputStream, i13);
-                                        this.f47042c += i13;
-                                        this.f47040a = 2;
+                                        this.f47058c += i13;
+                                        this.f47056a = 2;
                                     }
                                 } else {
-                                    this.f47040a = 5;
+                                    this.f47056a = 5;
                                 }
                             } else if (read == 255) {
-                                this.f47040a = 3;
+                                this.f47056a = 3;
                             } else if (read == 0) {
-                                this.f47040a = 2;
+                                this.f47056a = 2;
                             } else if (read == 217) {
-                                this.f47046g = true;
+                                this.f47062g = true;
                                 f(i11 - 1);
-                                this.f47040a = 2;
+                                this.f47056a = 2;
                             } else {
                                 if (read == 218) {
                                     f(i11 - 1);
                                 }
                                 if (b(read)) {
-                                    this.f47040a = 4;
+                                    this.f47056a = 4;
                                 } else {
-                                    this.f47040a = 2;
+                                    this.f47056a = 2;
                                 }
                             }
                         } else if (read == 255) {
-                            this.f47040a = 3;
+                            this.f47056a = 3;
                         }
                     } else if (read == 216) {
-                        this.f47040a = 2;
+                        this.f47056a = 2;
                     } else {
-                        this.f47040a = 6;
+                        this.f47056a = 6;
                     }
                 } else if (read == 255) {
-                    this.f47040a = 1;
+                    this.f47056a = 1;
                 } else {
-                    this.f47040a = 6;
+                    this.f47056a = 6;
                 }
-                this.f47041b = read;
+                this.f47057b = read;
             } catch (IOException e10) {
                 n.a(e10);
             }
         }
-        if (this.f47040a == 6 || this.f47044e == i10) {
+        if (this.f47056a == 6 || this.f47060e == i10) {
             return false;
         }
         return true;
@@ -118,33 +118,33 @@ public class f {
     }
 
     private void f(int i10) {
-        int i11 = this.f47043d;
+        int i11 = this.f47059d;
         if (i11 > 0) {
-            this.f47045f = i10;
+            this.f47061f = i10;
         }
-        this.f47043d = i11 + 1;
-        this.f47044e = i11;
+        this.f47059d = i11 + 1;
+        this.f47060e = i11;
     }
 
     public int c() {
-        return this.f47045f;
+        return this.f47061f;
     }
 
     public int d() {
-        return this.f47044e;
+        return this.f47060e;
     }
 
     public boolean e() {
-        return this.f47046g;
+        return this.f47062g;
     }
 
     public boolean g(k kVar) {
-        if (this.f47040a == 6 || kVar.C0() <= this.f47042c) {
+        if (this.f47056a == 6 || kVar.C0() <= this.f47058c) {
             return false;
         }
-        r8.g gVar = new r8.g(kVar.V(), (byte[]) this.f47047h.get(16384), this.f47047h);
+        r8.g gVar = new r8.g(kVar.V(), (byte[]) this.f47063h.get(16384), this.f47063h);
         try {
-            w8.d.a(gVar, this.f47042c);
+            w8.d.a(gVar, this.f47058c);
             return a(gVar);
         } catch (IOException e10) {
             n.a(e10);

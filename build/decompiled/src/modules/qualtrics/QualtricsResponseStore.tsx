@@ -61,7 +61,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var0.setResponse = var2;
         var2 = function(arg0) { // Original name: getSurveyResponses, environment: var1
-            _fun87045: for (var _fun87045_ip = 0;;) switch (_fun87045_ip) {
+            _fun87091: for (var _fun87091_ip = 0;;) switch (_fun87091_ip) {
                 case 0:
                     var1 = _closure2_slot1;
                     var0 = undefined;
@@ -71,8 +71,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var1[var0];
                     var1 = null;
                     if (!(var1 == var0)) {
-                        _fun87045_ip = 34;
-                        continue _fun87045
+                        _fun87091_ip = 34;
+                        continue _fun87091
                     }
                 case 32:
                     var0 = {};
@@ -116,7 +116,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
             var2 = _closure2_slot0;
             var0 = undefined;
             var1 = function(arg0) { // Environment: var1
-                _fun87049: for (var _fun87049_ip = 0;;) switch (_fun87049_ip) {
+                _fun87095: for (var _fun87095_ip = 0;;) switch (_fun87095_ip) {
                     case 0:
                         var4 = arg0;
                         var3 = var4.displayedQuestions;
@@ -124,8 +124,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                         var5 = var3[var1];
                         var1 = null;
                         if (!(var1 == var5)) {
-                            _fun87049_ip = 56;
-                            continue _fun87049
+                            _fun87095_ip = 56;
+                            continue _fun87095
                         }
                     case 28:
                         var1 = global;
@@ -179,7 +179,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         };
         var0.trackDisplayedQuestions = var2;
         var1 = function(arg0) { // Original name: getDisplayedQuestions, environment: var1
-            _fun87051: for (var _fun87051_ip = 0;;) switch (_fun87051_ip) {
+            _fun87097: for (var _fun87097_ip = 0;;) switch (_fun87097_ip) {
                 case 0:
                     var1 = _closure2_slot1;
                     var0 = undefined;
@@ -189,13 +189,13 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var3 = var1[var0];
                     var0 = null;
                     if (!(var0 == var3)) {
-                        _fun87051_ip = 38;
-                        continue _fun87051
+                        _fun87097_ip = 38;
+                        continue _fun87097
                     }
                 case 32:
                     var0 = new Array(0);
-                    _fun87051_ip = 56;
-                    continue _fun87051;
+                    _fun87097_ip = 56;
+                    continue _fun87097;
                 case 38:
                     var1 = global;
                     var2 = var1.Array;

@@ -5,10 +5,10 @@ import android.view.Window;
 public final class p implements tq.d {
 
     /* renamed from: a  reason: collision with root package name */
-    private final l f39513a;
+    private final l f39529a;
 
     public p(l lVar) {
-        this.f39513a = lVar;
+        this.f39529a = lVar;
     }
 
     public static p a(l lVar) {
@@ -22,6 +22,6 @@ public final class p implements tq.d {
     @Override // javax.inject.Provider
     /* renamed from: b */
     public Window get() {
-        return c(this.f39513a);
+        return c(this.f39529a);
     }
 }

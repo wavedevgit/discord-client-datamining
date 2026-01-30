@@ -1919,6 +1919,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3.BOOST_PROGRESS_BAR_MEMBER_COACHMARK = var1;
     var0 = 'BOOST_PROGRESS_BAR_MEMBER_COACHMARK';
     var3[var1] = var0;
+    var1 = 676;
+    var3.QUEST_HOME_ENTRYPOINT_TAKEOVER_BADGE = var1;
+    var0 = 'QUEST_HOME_ENTRYPOINT_TAKEOVER_BADGE';
+    var3[var1] = var0;
     var1 = {};
     var1.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE = var4;
     var0 = 'DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE';

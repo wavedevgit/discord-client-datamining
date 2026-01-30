@@ -17,13 +17,13 @@ import java.util.Map;
 public final class c implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Date f29857d;
+    private final Date f29873d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final List f29858e;
+    private final List f29874e;
 
     /* renamed from: i  reason: collision with root package name */
-    private Map f29859i;
+    private Map f29875i;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -71,27 +71,27 @@ public final class c implements w1 {
     }
 
     public c(Date date, List list) {
-        this.f29857d = date;
-        this.f29858e = list;
+        this.f29873d = date;
+        this.f29874e = list;
     }
 
     public List a() {
-        return this.f29858e;
+        return this.f29874e;
     }
 
     public void b(Map map) {
-        this.f29859i = map;
+        this.f29875i = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        f3Var.e("timestamp").f(k.h(this.f29857d));
-        f3Var.e("discarded_events").j(iLogger, this.f29858e);
-        Map map = this.f29859i;
+        f3Var.e("timestamp").f(k.h(this.f29873d));
+        f3Var.e("discarded_events").j(iLogger, this.f29874e);
+        Map map = this.f29875i;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f29859i.get(str));
+                f3Var.e(str).j(iLogger, this.f29875i.get(str));
             }
         }
         f3Var.y();

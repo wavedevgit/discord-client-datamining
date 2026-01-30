@@ -151,7 +151,7 @@ public abstract class RiveTextureView extends TextureView implements TextureView
     public RiveTextureView(@NotNull Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
         Intrinsics.checkNotNullParameter(context, "context");
-        this.activity$delegate = l.a(ir.o.f31104i, new Function0<Activity>() { // from class: app.rive.runtime.kotlin.RiveTextureView$activity$2
+        this.activity$delegate = l.a(ir.o.f31120i, new Function0<Activity>() { // from class: app.rive.runtime.kotlin.RiveTextureView$activity$2
             /* JADX INFO: Access modifiers changed from: package-private */
             {
                 super(0);

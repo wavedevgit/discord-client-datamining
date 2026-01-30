@@ -7,18 +7,18 @@ import kotlin.enums.EnumEntries;
 public final class OverrideRenderingPolicy {
 
     /* renamed from: d  reason: collision with root package name */
-    private static final /* synthetic */ OverrideRenderingPolicy[] f35339d;
+    private static final /* synthetic */ OverrideRenderingPolicy[] f35355d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final /* synthetic */ EnumEntries f35340e;
+    private static final /* synthetic */ EnumEntries f35356e;
     public static final OverrideRenderingPolicy RENDER_OVERRIDE = new OverrideRenderingPolicy("RENDER_OVERRIDE", 0);
     public static final OverrideRenderingPolicy RENDER_OPEN = new OverrideRenderingPolicy("RENDER_OPEN", 1);
     public static final OverrideRenderingPolicy RENDER_OPEN_OVERRIDE = new OverrideRenderingPolicy("RENDER_OPEN_OVERRIDE", 2);
 
     static {
         OverrideRenderingPolicy[] a10 = a();
-        f35339d = a10;
-        f35340e = pr.a.a(a10);
+        f35355d = a10;
+        f35356e = pr.a.a(a10);
     }
 
     private OverrideRenderingPolicy(String str, int i10) {
@@ -33,6 +33,6 @@ public final class OverrideRenderingPolicy {
     }
 
     public static OverrideRenderingPolicy[] values() {
-        return (OverrideRenderingPolicy[]) f35339d.clone();
+        return (OverrideRenderingPolicy[]) f35355d.clone();
     }
 }

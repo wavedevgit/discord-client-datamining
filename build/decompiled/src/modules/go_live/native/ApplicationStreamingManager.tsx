@@ -9,7 +9,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot1 = var6;
     var _closure1_slot2 = var5;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
-        _fun117996: for (var _fun117996_ip = 0;;) switch (_fun117996_ip) {
+        _fun118275: for (var _fun118275_ip = 0;;) switch (_fun118275_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -30,8 +30,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 72: // try_end0
-                _fun117996_ip = 76;
-                continue _fun117996;
+                _fun118275_ip = 76;
+                continue _fun118275;
             case 74: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 76:
@@ -115,7 +115,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var6.bind(var0)(var3);
     var1 = function(arg0) { // Environment: var1
         var3 = function() { // Original name: ApplicationStreamingManager, environment: var5
-            _fun118000: for (var _fun118000_ip = 0;;) switch (_fun118000_ip) {
+            _fun118279: for (var _fun118279_ip = 0;;) switch (_fun118279_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -129,16 +129,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot12;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun118000_ip = 69;
-                        continue _fun118000
+                        _fun118279_ip = 69;
+                        continue _fun118279
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun118000_ip = 105;
-                    continue _fun118000;
+                    _fun118279_ip = 105;
+                    continue _fun118279;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -214,14 +214,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'platformHandleStreamStart';
         var4.key = var6;
         var6 = function(arg0) { // Original name: value, environment: var5
-            _fun118005: for (var _fun118005_ip = 0;;) switch (_fun118005_ip) {
+            _fun118284: for (var _fun118284_ip = 0;;) switch (_fun118284_ip) {
                 case 0:
                     var0 = arg0;
                     var5 = var0.sourceId;
                     var0 = null;
                     if (!(var0 == var5)) {
-                        _fun118005_ip = 63;
-                        continue _fun118005
+                        _fun118284_ip = 63;
+                        continue _fun118284
                     }
                 case 15:
                     var2 = _closure1_slot11;
@@ -233,8 +233,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = ')';
                     var0 = var4.bind(var3)(var5, var0);
                     var0 = var1.bind(var2)(var0);
-                    _fun118005_ip = 169;
-                    continue _fun118005;
+                    _fun118284_ip = 169;
+                    continue _fun118284;
                 case 63:
                     var2 = _closure1_slot1;
                     var1 = _closure1_slot2;
@@ -299,4 +299,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 31, 3461, 3469, 33, 3, 3890, 14999, 1307, 8167, 15001, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 31, 3461, 3469, 33, 3, 3896, 15028, 1307, 8170, 15030, 2]);

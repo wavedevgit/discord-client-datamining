@@ -1,7 +1,7 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = function(arg0, arg1) { // Original name: arrayPush, environment: var0
-        _fun8402: for (var _fun8402_ip = 0;;) switch (_fun8402_ip) {
+        _fun8403: for (var _fun8403_ip = 0;;) switch (_fun8403_ip) {
             case 0:
                 var0 = arg0;
                 var4 = arg1;
@@ -10,8 +10,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = 0;
                 var5 = var1 < var3;
                 if (!var5) {
-                    _fun8402_ip = 44;
-                    continue _fun8402
+                    _fun8403_ip = 44;
+                    continue _fun8403
                 }
             case 25:
                 var6 = var2 + var1;
@@ -19,8 +19,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0[var6] = var5;
                 var1 = var1 + 1;
                 if (var1 < var3) {
-                    _fun8402_ip = 25;
-                    continue _fun8402
+                    _fun8403_ip = 25;
+                    continue _fun8403
                 }
             case 44:
                 return var0;

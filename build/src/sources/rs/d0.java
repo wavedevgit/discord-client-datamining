@@ -3,7 +3,7 @@ package rs;
 final class d0 extends ts.c0 {
 
     /* renamed from: e  reason: collision with root package name */
-    private final h0 f48478e;
+    private final h0 f48494e;
 
     /* JADX WARN: Illegal instructions before constructor call */
     /*
@@ -15,9 +15,9 @@ final class d0 extends ts.c0 {
             r4 = this;
             java.lang.String r0 = "padding"
             kotlin.jvm.internal.Intrinsics.checkNotNullParameter(r5, r0)
-            rs.i r0 = rs.i.f48504a
+            rs.i r0 = rs.i.f48520a
             ts.b0 r0 = r0.c()
-            rs.h0 r1 = rs.h0.f48500e
+            rs.h0 r1 = rs.h0.f48516e
             r2 = 2
             if (r5 != r1) goto L12
             r1 = r2
@@ -25,7 +25,7 @@ final class d0 extends ts.c0 {
         L12:
             r1 = 1
         L13:
-            rs.h0 r3 = rs.h0.f48501i
+            rs.h0 r3 = rs.h0.f48517i
             if (r5 != r3) goto L1c
             java.lang.Integer r2 = java.lang.Integer.valueOf(r2)
             goto L1d
@@ -33,20 +33,20 @@ final class d0 extends ts.c0 {
             r2 = 0
         L1d:
             r4.<init>(r0, r1, r2)
-            r4.f48478e = r5
+            r4.f48494e = r5
             return
         */
         throw new UnsupportedOperationException("Method not decompiled: rs.d0.<init>(rs.h0):void");
     }
 
     public boolean equals(Object obj) {
-        if ((obj instanceof d0) && this.f48478e == ((d0) obj).f48478e) {
+        if ((obj instanceof d0) && this.f48494e == ((d0) obj).f48494e) {
             return true;
         }
         return false;
     }
 
     public int hashCode() {
-        return this.f48478e.hashCode();
+        return this.f48494e.hashCode();
     }
 }

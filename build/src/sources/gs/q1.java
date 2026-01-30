@@ -6,14 +6,14 @@ import kotlinx.coroutines.Job;
 final class q1 extends z0 {
 
     /* renamed from: r  reason: collision with root package name */
-    private static final /* synthetic */ AtomicIntegerFieldUpdater f27174r = AtomicIntegerFieldUpdater.newUpdater(q1.class, "_state$volatile");
+    private static final /* synthetic */ AtomicIntegerFieldUpdater f27190r = AtomicIntegerFieldUpdater.newUpdater(q1.class, "_state$volatile");
     private volatile /* synthetic */ int _state$volatile;
 
     /* renamed from: p  reason: collision with root package name */
-    private final Thread f27175p = Thread.currentThread();
+    private final Thread f27191p = Thread.currentThread();
 
     /* renamed from: q  reason: collision with root package name */
-    private n0 f27176q;
+    private n0 f27192q;
 
     private final Void A(int i10) {
         throw new IllegalStateException(("Illegal state " + i10).toString());
@@ -23,8 +23,8 @@ final class q1 extends z0 {
         n0 o10;
         int i10;
         o10 = kotlinx.coroutines.a0.o(job, false, this, 1, null);
-        this.f27176q = o10;
-        AtomicIntegerFieldUpdater atomicIntegerFieldUpdater = f27174r;
+        this.f27192q = o10;
+        AtomicIntegerFieldUpdater atomicIntegerFieldUpdater = f27190r;
         do {
             i10 = atomicIntegerFieldUpdater.get(this);
             if (i10 != 0) {
@@ -34,7 +34,7 @@ final class q1 extends z0 {
                 }
                 return;
             }
-        } while (!f27174r.compareAndSet(this, i10, 0));
+        } while (!f27190r.compareAndSet(this, i10, 0));
     }
 
     @Override // gs.z0
@@ -45,7 +45,7 @@ final class q1 extends z0 {
     @Override // gs.z0
     public void w(Throwable th2) {
         int i10;
-        AtomicIntegerFieldUpdater atomicIntegerFieldUpdater = f27174r;
+        AtomicIntegerFieldUpdater atomicIntegerFieldUpdater = f27190r;
         do {
             i10 = atomicIntegerFieldUpdater.get(this);
             if (i10 != 0) {
@@ -55,13 +55,13 @@ final class q1 extends z0 {
                 }
                 return;
             }
-        } while (!f27174r.compareAndSet(this, i10, 2));
-        this.f27175p.interrupt();
-        f27174r.set(this, 3);
+        } while (!f27190r.compareAndSet(this, i10, 2));
+        this.f27191p.interrupt();
+        f27190r.set(this, 3);
     }
 
     public final void y() {
-        AtomicIntegerFieldUpdater atomicIntegerFieldUpdater = f27174r;
+        AtomicIntegerFieldUpdater atomicIntegerFieldUpdater = f27190r;
         while (true) {
             int i10 = atomicIntegerFieldUpdater.get(this);
             if (i10 != 0) {
@@ -74,8 +74,8 @@ final class q1 extends z0 {
                         throw new ir.h();
                     }
                 }
-            } else if (f27174r.compareAndSet(this, i10, 1)) {
-                n0 n0Var = this.f27176q;
+            } else if (f27190r.compareAndSet(this, i10, 1)) {
+                n0 n0Var = this.f27192q;
                 if (n0Var != null) {
                     n0Var.dispose();
                     return;

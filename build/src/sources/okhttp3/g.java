@@ -19,19 +19,19 @@ import kotlin.jvm.internal.Lambda;
 public final class g {
 
     /* renamed from: e  reason: collision with root package name */
-    public static final a f44328e = new a(null);
+    public static final a f44344e = new a(null);
 
     /* renamed from: a  reason: collision with root package name */
-    private final h f44329a;
+    private final h f44345a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final c f44330b;
+    private final c f44346b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final List f44331c;
+    private final List f44347c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final Lazy f44332d;
+    private final Lazy f44348d;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -41,17 +41,17 @@ public final class g {
         static final class C0540a extends Lambda implements Function0 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ List f44333d;
+            final /* synthetic */ List f44349d;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             C0540a(List list) {
                 super(0);
-                this.f44333d = list;
+                this.f44349d = list;
             }
 
             @Override // kotlin.jvm.functions.Function0
             public final List invoke() {
-                return this.f44333d;
+                return this.f44349d;
             }
         }
 
@@ -59,17 +59,17 @@ public final class g {
         static final class b extends Lambda implements Function0 {
 
             /* renamed from: d  reason: collision with root package name */
-            final /* synthetic */ List f44334d;
+            final /* synthetic */ List f44350d;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             b(List list) {
                 super(0);
-                this.f44334d = list;
+                this.f44350d = list;
             }
 
             @Override // kotlin.jvm.functions.Function0
             public final List invoke() {
-                return this.f44334d;
+                return this.f44350d;
             }
         }
 
@@ -96,11 +96,11 @@ public final class g {
                     areEqual = Intrinsics.areEqual(cipherSuite, "SSL_NULL_WITH_NULL_NULL");
                 }
                 if (!areEqual) {
-                    c b10 = c.f44235b.b(cipherSuite);
+                    c b10 = c.f44251b.b(cipherSuite);
                     String protocol = sSLSession.getProtocol();
                     if (protocol != null) {
                         if (!Intrinsics.areEqual("NONE", protocol)) {
-                            h a10 = h.f44336e.a(protocol);
+                            h a10 = h.f44352e.a(protocol);
                             try {
                                 l10 = c(sSLSession.getPeerCertificates());
                             } catch (SSLPeerUnverifiedException unused) {
@@ -133,18 +133,18 @@ public final class g {
     static final class b extends Lambda implements Function0 {
 
         /* renamed from: d  reason: collision with root package name */
-        final /* synthetic */ Function0 f44335d;
+        final /* synthetic */ Function0 f44351d;
 
         /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
         b(Function0 function0) {
             super(0);
-            this.f44335d = function0;
+            this.f44351d = function0;
         }
 
         @Override // kotlin.jvm.functions.Function0
         public final List invoke() {
             try {
-                return (List) this.f44335d.invoke();
+                return (List) this.f44351d.invoke();
             } catch (SSLPeerUnverifiedException unused) {
                 return CollectionsKt.l();
             }
@@ -156,10 +156,10 @@ public final class g {
         Intrinsics.checkNotNullParameter(cipherSuite, "cipherSuite");
         Intrinsics.checkNotNullParameter(localCertificates, "localCertificates");
         Intrinsics.checkNotNullParameter(peerCertificatesFn, "peerCertificatesFn");
-        this.f44329a = tlsVersion;
-        this.f44330b = cipherSuite;
-        this.f44331c = localCertificates;
-        this.f44332d = l.b(new b(peerCertificatesFn));
+        this.f44345a = tlsVersion;
+        this.f44346b = cipherSuite;
+        this.f44347c = localCertificates;
+        this.f44348d = l.b(new b(peerCertificatesFn));
     }
 
     private final String b(Certificate certificate) {
@@ -172,25 +172,25 @@ public final class g {
     }
 
     public final c a() {
-        return this.f44330b;
+        return this.f44346b;
     }
 
     public final List c() {
-        return this.f44331c;
+        return this.f44347c;
     }
 
     public final List d() {
-        return (List) this.f44332d.getValue();
+        return (List) this.f44348d.getValue();
     }
 
     public final h e() {
-        return this.f44329a;
+        return this.f44345a;
     }
 
     public boolean equals(Object obj) {
         if (obj instanceof g) {
             g gVar = (g) obj;
-            if (gVar.f44329a == this.f44329a && Intrinsics.areEqual(gVar.f44330b, this.f44330b) && Intrinsics.areEqual(gVar.d(), d()) && Intrinsics.areEqual(gVar.f44331c, this.f44331c)) {
+            if (gVar.f44345a == this.f44345a && Intrinsics.areEqual(gVar.f44346b, this.f44346b) && Intrinsics.areEqual(gVar.d(), d()) && Intrinsics.areEqual(gVar.f44347c, this.f44347c)) {
                 return true;
             }
             return false;
@@ -199,7 +199,7 @@ public final class g {
     }
 
     public int hashCode() {
-        return ((((((527 + this.f44329a.hashCode()) * 31) + this.f44330b.hashCode()) * 31) + d().hashCode()) * 31) + this.f44331c.hashCode();
+        return ((((((527 + this.f44345a.hashCode()) * 31) + this.f44346b.hashCode()) * 31) + d().hashCode()) * 31) + this.f44347c.hashCode();
     }
 
     public String toString() {
@@ -211,13 +211,13 @@ public final class g {
         String obj = arrayList.toString();
         StringBuilder sb2 = new StringBuilder();
         sb2.append("Handshake{tlsVersion=");
-        sb2.append(this.f44329a);
+        sb2.append(this.f44345a);
         sb2.append(" cipherSuite=");
-        sb2.append(this.f44330b);
+        sb2.append(this.f44346b);
         sb2.append(" peerCertificates=");
         sb2.append(obj);
         sb2.append(" localCertificates=");
-        List<Certificate> list = this.f44331c;
+        List<Certificate> list = this.f44347c;
         ArrayList arrayList2 = new ArrayList(CollectionsKt.w(list, 10));
         for (Certificate certificate2 : list) {
             arrayList2.add(b(certificate2));

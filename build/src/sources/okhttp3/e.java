@@ -11,10 +11,10 @@ import tt.j;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final b f44319a = new b(null);
+    public static final b f44335a = new b(null);
 
     /* renamed from: b  reason: collision with root package name */
-    public static final e f44320b = new a();
+    public static final e f44336b = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a extends e {

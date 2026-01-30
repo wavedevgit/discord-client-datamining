@@ -44,82 +44,82 @@ import wf.w;
 public abstract class k {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f42349a = new a(null);
+    public static final a f42365a = new a(null);
 
     /* renamed from: b  reason: collision with root package name */
-    private static final String f42350b = "clientDataJSON";
+    private static final String f42366b = "clientDataJSON";
 
     /* renamed from: c  reason: collision with root package name */
-    private static final String f42351c = "attestationObject";
+    private static final String f42367c = "attestationObject";
 
     /* renamed from: d  reason: collision with root package name */
-    private static final String f42352d = "authenticatorData";
+    private static final String f42368d = "authenticatorData";
 
     /* renamed from: e  reason: collision with root package name */
-    private static final String f42353e = "signature";
+    private static final String f42369e = "signature";
 
     /* renamed from: f  reason: collision with root package name */
-    private static final String f42354f = "userHandle";
+    private static final String f42370f = "userHandle";
 
     /* renamed from: g  reason: collision with root package name */
-    private static final String f42355g = "response";
+    private static final String f42371g = "response";
 
     /* renamed from: h  reason: collision with root package name */
-    private static final String f42356h = StackTraceHelper.ID_KEY;
+    private static final String f42372h = StackTraceHelper.ID_KEY;
 
     /* renamed from: i  reason: collision with root package name */
-    private static final String f42357i = "rawId";
+    private static final String f42373i = "rawId";
 
     /* renamed from: j  reason: collision with root package name */
-    private static final String f42358j = "type";
+    private static final String f42374j = "type";
 
     /* renamed from: k  reason: collision with root package name */
-    private static final String f42359k = "rpId";
+    private static final String f42375k = "rpId";
 
     /* renamed from: l  reason: collision with root package name */
-    private static final String f42360l = "challenge";
+    private static final String f42376l = "challenge";
 
     /* renamed from: m  reason: collision with root package name */
-    private static final String f42361m = AppsFlyerProperties.APP_ID;
+    private static final String f42377m = AppsFlyerProperties.APP_ID;
 
     /* renamed from: n  reason: collision with root package name */
-    private static final String f42362n = "thirdPartyPayment";
+    private static final String f42378n = "thirdPartyPayment";
 
     /* renamed from: o  reason: collision with root package name */
-    private static final String f42363o = "authenticatorSelection";
+    private static final String f42379o = "authenticatorSelection";
 
     /* renamed from: p  reason: collision with root package name */
-    private static final String f42364p = "requireResidentKey";
+    private static final String f42380p = "requireResidentKey";
 
     /* renamed from: q  reason: collision with root package name */
-    private static final String f42365q = "residentKey";
+    private static final String f42381q = "residentKey";
 
     /* renamed from: r  reason: collision with root package name */
-    private static final String f42366r = "authenticatorAttachment";
+    private static final String f42382r = "authenticatorAttachment";
 
     /* renamed from: s  reason: collision with root package name */
-    private static final String f42367s = "timeout";
+    private static final String f42383s = "timeout";
 
     /* renamed from: t  reason: collision with root package name */
-    private static final String f42368t = "excludeCredentials";
+    private static final String f42384t = "excludeCredentials";
 
     /* renamed from: u  reason: collision with root package name */
-    private static final String f42369u = "transports";
+    private static final String f42385u = "transports";
 
     /* renamed from: v  reason: collision with root package name */
-    private static final String f42370v = "rp";
+    private static final String f42386v = "rp";
 
     /* renamed from: w  reason: collision with root package name */
-    private static final String f42371w = StackTraceHelper.NAME_KEY;
+    private static final String f42387w = StackTraceHelper.NAME_KEY;
 
     /* renamed from: x  reason: collision with root package name */
-    private static final String f42372x = "icon";
+    private static final String f42388x = "icon";
 
     /* renamed from: y  reason: collision with root package name */
-    private static final String f42373y = "alg";
+    private static final String f42389y = "alg";
 
     /* renamed from: z  reason: collision with root package name */
-    private static final String f42374z = "user";
+    private static final String f42390z = "user";
     private static final String A = "displayName";
     private static final String B = "userVerificationMethod";
     private static final String C = "keyProtectionType";
@@ -168,19 +168,19 @@ public abstract class k {
         }
 
         public final String A() {
-            return k.f42367s;
+            return k.f42383s;
         }
 
         public final String B() {
-            return k.f42369u;
+            return k.f42385u;
         }
 
         public final String C() {
-            return k.f42358j;
+            return k.f42374j;
         }
 
         public final String D() {
-            return k.f42374z;
+            return k.f42390z;
         }
 
         public final LinkedHashMap E() {
@@ -488,11 +488,11 @@ public abstract class k {
         }
 
         public final String i() {
-            return k.f42373y;
+            return k.f42389y;
         }
 
         public final String j() {
-            return k.f42361m;
+            return k.f42377m;
         }
 
         public final String k() {
@@ -500,15 +500,15 @@ public abstract class k {
         }
 
         public final String l() {
-            return k.f42366r;
+            return k.f42382r;
         }
 
         public final String m() {
-            return k.f42363o;
+            return k.f42379o;
         }
 
         public final String n() {
-            return k.f42360l;
+            return k.f42376l;
         }
 
         public final String o() {
@@ -516,7 +516,7 @@ public abstract class k {
         }
 
         public final String p() {
-            return k.f42368t;
+            return k.f42384t;
         }
 
         public final String q() {
@@ -524,15 +524,15 @@ public abstract class k {
         }
 
         public final String r() {
-            return k.f42372x;
+            return k.f42388x;
         }
 
         public final String s() {
-            return k.f42356h;
+            return k.f42372h;
         }
 
         public final String t() {
-            return k.f42371w;
+            return k.f42387w;
         }
 
         public final String u() {
@@ -540,23 +540,23 @@ public abstract class k {
         }
 
         public final String v() {
-            return k.f42364p;
+            return k.f42380p;
         }
 
         public final String w() {
-            return k.f42365q;
+            return k.f42381q;
         }
 
         public final String x() {
-            return k.f42370v;
+            return k.f42386v;
         }
 
         public final String y() {
-            return k.f42359k;
+            return k.f42375k;
         }
 
         public final String z() {
-            return k.f42362n;
+            return k.f42378n;
         }
 
         private a() {
@@ -568,7 +568,7 @@ public abstract class k {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        public static final b f42375a = new b();
+        public static final b f42391a = new b();
 
         private b() {
         }

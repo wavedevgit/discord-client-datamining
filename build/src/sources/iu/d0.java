@@ -9,46 +9,46 @@ import okio.Timeout;
 public final class d0 implements Source {
 
     /* renamed from: d  reason: collision with root package name */
-    private final BufferedSource f31216d;
+    private final BufferedSource f31232d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final Buffer f31217e;
+    private final Buffer f31233e;
 
     /* renamed from: i  reason: collision with root package name */
-    private g0 f31218i;
+    private g0 f31234i;
 
     /* renamed from: o  reason: collision with root package name */
-    private int f31219o;
+    private int f31235o;
 
     /* renamed from: p  reason: collision with root package name */
-    private boolean f31220p;
+    private boolean f31236p;
 
     /* renamed from: q  reason: collision with root package name */
-    private long f31221q;
+    private long f31237q;
 
     public d0(BufferedSource upstream) {
         int i10;
         Intrinsics.checkNotNullParameter(upstream, "upstream");
-        this.f31216d = upstream;
+        this.f31232d = upstream;
         Buffer e10 = upstream.e();
-        this.f31217e = e10;
-        g0 g0Var = e10.f44352d;
-        this.f31218i = g0Var;
+        this.f31233e = e10;
+        g0 g0Var = e10.f44368d;
+        this.f31234i = g0Var;
         if (g0Var != null) {
-            i10 = g0Var.f31250b;
+            i10 = g0Var.f31266b;
         } else {
             i10 = -1;
         }
-        this.f31219o = i10;
+        this.f31235o = i10;
     }
 
     @Override // okio.Source, java.io.Closeable, java.lang.AutoCloseable
     public void close() {
-        this.f31220p = true;
+        this.f31236p = true;
     }
 
     /* JADX WARN: Code restructure failed: missing block: B:11:0x0020, code lost:
-        if (r3 == r4.f31250b) goto L14;
+        if (r3 == r4.f31266b) goto L14;
      */
     @Override // okio.Source
     /*
@@ -63,16 +63,16 @@ public final class d0 implements Source {
             r0 = 0
             int r2 = (r10 > r0 ? 1 : (r10 == r0 ? 0 : -1))
             if (r2 < 0) goto L74
-            boolean r3 = r8.f31220p
+            boolean r3 = r8.f31236p
             if (r3 != 0) goto L6c
-            iu.g0 r3 = r8.f31218i
+            iu.g0 r3 = r8.f31234i
             if (r3 == 0) goto L2b
-            okio.Buffer r4 = r8.f31217e
-            iu.g0 r4 = r4.f44352d
+            okio.Buffer r4 = r8.f31233e
+            iu.g0 r4 = r4.f44368d
             if (r3 != r4) goto L23
-            int r3 = r8.f31219o
+            int r3 = r8.f31235o
             kotlin.jvm.internal.Intrinsics.checkNotNull(r4)
-            int r4 = r4.f31250b
+            int r4 = r4.f31266b
             if (r3 != r4) goto L23
             goto L2b
         L23:
@@ -84,8 +84,8 @@ public final class d0 implements Source {
             if (r2 != 0) goto L2e
             return r0
         L2e:
-            okio.BufferedSource r0 = r8.f31216d
-            long r1 = r8.f31221q
+            okio.BufferedSource r0 = r8.f31232d
+            long r1 = r8.f31237q
             r3 = 1
             long r1 = r1 + r3
             boolean r0 = r0.B0(r1)
@@ -93,28 +93,28 @@ public final class d0 implements Source {
             r9 = -1
             return r9
         L3e:
-            iu.g0 r0 = r8.f31218i
+            iu.g0 r0 = r8.f31234i
             if (r0 != 0) goto L51
-            okio.Buffer r0 = r8.f31217e
-            iu.g0 r0 = r0.f44352d
+            okio.Buffer r0 = r8.f31233e
+            iu.g0 r0 = r0.f44368d
             if (r0 == 0) goto L51
-            r8.f31218i = r0
+            r8.f31234i = r0
             kotlin.jvm.internal.Intrinsics.checkNotNull(r0)
-            int r0 = r0.f31250b
-            r8.f31219o = r0
+            int r0 = r0.f31266b
+            r8.f31235o = r0
         L51:
-            okio.Buffer r0 = r8.f31217e
+            okio.Buffer r0 = r8.f31233e
             long r0 = r0.size()
-            long r2 = r8.f31221q
+            long r2 = r8.f31237q
             long r0 = r0 - r2
             long r6 = java.lang.Math.min(r10, r0)
-            okio.Buffer r2 = r8.f31217e
-            long r4 = r8.f31221q
+            okio.Buffer r2 = r8.f31233e
+            long r4 = r8.f31237q
             r3 = r9
             r2.N(r3, r4, r6)
-            long r9 = r8.f31221q
+            long r9 = r8.f31237q
             long r9 = r9 + r6
-            r8.f31221q = r9
+            r8.f31237q = r9
             return r6
         L6c:
             java.lang.IllegalStateException r9 = new java.lang.IllegalStateException
@@ -138,6 +138,6 @@ public final class d0 implements Source {
 
     @Override // okio.Source
     public Timeout timeout() {
-        return this.f31216d.timeout();
+        return this.f31232d.timeout();
     }
 }

@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var6;
     var _closure1_slot1 = var5;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var3
-        _fun62920: for (var _fun62920_ip = 0;;) switch (_fun62920_ip) {
+        _fun62964: for (var _fun62964_ip = 0;;) switch (_fun62964_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun62920_ip = 74;
-                continue _fun62920;
+                _fun62964_ip = 74;
+                continue _fun62964;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -138,7 +138,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var7 = var1.Store;
     var1 = function(arg0) { // Environment: var3
         var3 = function() { // Original name: FramesStoreClass, environment: var5
-            _fun62924: for (var _fun62924_ip = 0;;) switch (_fun62924_ip) {
+            _fun62968: for (var _fun62968_ip = 0;;) switch (_fun62968_ip) {
                 case 0:
                     var3 = this;
                     var2 = undefined;
@@ -152,16 +152,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = _closure1_slot14;
                     var0 = var0.bind(var2)();
                     if (var0) {
-                        _fun62924_ip = 69;
-                        continue _fun62924
+                        _fun62968_ip = 69;
+                        continue _fun62968
                     }
                 case 51:
                     var6 = var8.apply;
                     var4 = arguments;
                     var0 = var4;
                     var0 = var6.bind(var8)(var3, var0);
-                    _fun62924_ip = 105;
-                    continue _fun62924;
+                    _fun62968_ip = 105;
+                    continue _fun62968;
                 case 69:
                     var6 = global;
                     var7 = var6.Reflect;
@@ -196,15 +196,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'getFrameLayoutMode';
         var4.key = var6;
         var6 = function() { // Original name: value, environment: var5
-            _fun62926: for (var _fun62926_ip = 0;;) switch (_fun62926_ip) {
+            _fun62970: for (var _fun62970_ip = 0;;) switch (_fun62970_ip) {
                 case 0:
                     var1 = _closure1_slot9;
                     var0 = null;
                     var2 = var0 == var1;
                     var0 = undefined;
                     if (var2) {
-                        _fun62926_ip = 24;
-                        continue _fun62926
+                        _fun62970_ip = 24;
+                        continue _fun62970
                     }
                 case 18:
                     var0 = var1.layoutMode;
@@ -218,22 +218,22 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'getActivityPanelMode';
         var4.key = var6;
         var6 = function() { // Original name: value, environment: var5
-            _fun62927: for (var _fun62927_ip = 0;;) switch (_fun62927_ip) {
+            _fun62971: for (var _fun62971_ip = 0;;) switch (_fun62971_ip) {
                 case 0:
                     var3 = _closure1_slot9;
                     var2 = null;
                     var4 = var2 == var3;
                     var0 = undefined;
                     if (var4) {
-                        _fun62927_ip = 24;
-                        continue _fun62927
+                        _fun62971_ip = 24;
+                        continue _fun62971
                     }
                 case 18:
                     var0 = var3.activityPanelMode;
                 case 24:
                     if (!(var2 == var0)) {
-                        _fun62927_ip = 38;
-                        continue _fun62927
+                        _fun62971_ip = 38;
+                        continue _fun62971
                     }
                 case 28:
                     var1 = _closure1_slot8;
@@ -259,29 +259,29 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'isLaunchingFrame';
         var4.key = var6;
         var6 = function(arg0) { // Original name: value, environment: var5
-            _fun62929: for (var _fun62929_ip = 0;;) switch (_fun62929_ip) {
+            _fun62973: for (var _fun62973_ip = 0;;) switch (_fun62973_ip) {
                 case 0:
                     var4 = arg0;
                     var1 = null;
                     if (!(var1 == var4)) {
-                        _fun62929_ip = 29;
-                        continue _fun62929
+                        _fun62973_ip = 29;
+                        continue _fun62973
                     }
                 case 9:
                     var0 = _closure1_slot10;
                     var2 = var0.size;
                     var0 = 0;
                     var0 = var2 > var0;
-                    _fun62929_ip = 59;
-                    continue _fun62929;
+                    _fun62973_ip = 59;
+                    continue _fun62973;
                 case 29:
                     var3 = _closure1_slot10;
                     var2 = var3.get;
                     var2 = var2.bind(var3)(var4);
                     var1 = var1 != var2;
                     if (!var1) {
-                        _fun62929_ip = 56;
-                        continue _fun62929
+                        _fun62973_ip = 56;
+                        continue _fun62973
                     }
                 case 53:
                     var1 = var2;
@@ -321,7 +321,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
         var6 = 'getPipOrientationLockStateForApp';
         var4.key = var6;
         var5 = function(arg0) { // Original name: value, environment: var5
-            _fun62932: for (var _fun62932_ip = 0;;) switch (_fun62932_ip) {
+            _fun62976: for (var _fun62976_ip = 0;;) switch (_fun62976_ip) {
                 case 0:
                     var3 = arg0;
                     var2 = this;
@@ -330,8 +330,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                     var0 = var0.bind(var1)(var3);
                     var1 = null;
                     if (!(var1 == var0)) {
-                        _fun62932_ip = 40;
-                        continue _fun62932
+                        _fun62976_ip = 40;
+                        continue _fun62976
                     }
                 case 29:
                     var1 = var2.getOrientationLockStateForApp;
@@ -364,7 +364,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.FRAME_LAUNCH_START = var8;
     var8 = function(arg0) { // Original name: handleFrameLaunch, environment: var3
-        _fun62934: for (var _fun62934_ip = 0;;) switch (_fun62934_ip) {
+        _fun62978: for (var _fun62978_ip = 0;;) switch (_fun62978_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.applicationId;
@@ -378,15 +378,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var1.bind(var0)(var5);
                 var1 = null;
                 if (!(var1 == var4)) {
-                    _fun62934_ip = 66;
-                    continue _fun62934
+                    _fun62978_ip = 66;
+                    continue _fun62978
                 }
             case 50:
                 var6 = _closure1_slot10;
                 var1 = var6.delete;
                 var1 = var1.bind(var6)(var5);
-                _fun62934_ip = 151;
-                continue _fun62934;
+                _fun62978_ip = 151;
+                continue _fun62978;
             case 66:
                 var6 = _closure1_slot10;
                 var1 = var6.delete;
@@ -423,7 +423,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.FRAME_LAUNCH_FAIL = var8;
     var8 = function(arg0) { // Original name: handleFrameStop, environment: var3
-        _fun62936: for (var _fun62936_ip = 0;;) switch (_fun62936_ip) {
+        _fun62980: for (var _fun62980_ip = 0;;) switch (_fun62980_ip) {
             case 0:
                 var0 = arg0;
                 var4 = var0.applicationId;
@@ -433,15 +433,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = undefined;
                 var3 = undefined;
                 if (var6) {
-                    _fun62936_ip = 33;
-                    continue _fun62936
+                    _fun62980_ip = 33;
+                    continue _fun62980
                 }
             case 28:
                 var3 = var5.applicationId;
             case 33:
                 if (!(var3 === var4)) {
-                    _fun62936_ip = 41;
-                    continue _fun62936
+                    _fun62980_ip = 41;
+                    continue _fun62980
                 }
             case 37:
                 _closure1_slot9 = var1;
@@ -451,7 +451,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.FRAME_STOP = var8;
     var8 = function(arg0) { // Original name: handleFrameUpdateLayoutMode, environment: var3
-        _fun62937: for (var _fun62937_ip = 0;;) switch (_fun62937_ip) {
+        _fun62981: for (var _fun62981_ip = 0;;) switch (_fun62981_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.applicationId;
@@ -462,15 +462,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = undefined;
                 var1 = undefined;
                 if (var6) {
-                    _fun62937_ip = 39;
-                    continue _fun62937
+                    _fun62981_ip = 39;
+                    continue _fun62981
                 }
             case 34:
                 var1 = var5.applicationId;
             case 39:
                 if (!(var1 === var3)) {
-                    _fun62937_ip = 69;
-                    continue _fun62937
+                    _fun62981_ip = 69;
+                    continue _fun62981
                 }
             case 43:
                 var1 = {};
@@ -486,15 +486,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.FRAME_UPDATE_LAYOUT_MODE = var8;
     var8 = function(arg0) { // Original name: handleSetPanelMode, environment: var3
-        _fun62938: for (var _fun62938_ip = 0;;) switch (_fun62938_ip) {
+        _fun62982: for (var _fun62982_ip = 0;;) switch (_fun62982_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.activityPanelMode;
                 var2 = _closure1_slot9;
                 var0 = null;
                 if (!(var0 != var2)) {
-                    _fun62938_ip = 48;
-                    continue _fun62938
+                    _fun62982_ip = 48;
+                    continue _fun62982
                 }
             case 22:
                 var0 = {};
@@ -511,7 +511,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.FRAME_SET_PANEL_MODE = var8;
     var8 = function(arg0) { // Original name: handleOrientationLockState, environment: var3
-        _fun62939: for (var _fun62939_ip = 0;;) switch (_fun62939_ip) {
+        _fun62983: for (var _fun62983_ip = 0;;) switch (_fun62983_ip) {
             case 0:
                 var0 = arg0;
                 var2 = var0.applicationId;
@@ -519,36 +519,36 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var0.pictureInPictureLockState;
                 var0 = null;
                 if (!(var0 != var5)) {
-                    _fun62939_ip = 46;
-                    continue _fun62939
+                    _fun62983_ip = 46;
+                    continue _fun62983
                 }
             case 26:
                 var4 = _closure1_slot12;
                 var1 = var4.set;
                 var1 = var1.bind(var4)(var2, var5);
-                _fun62939_ip = 63;
-                continue _fun62939;
+                _fun62983_ip = 63;
+                continue _fun62983;
             case 46:
                 var4 = _closure1_slot12;
                 var1 = var4.delete;
                 var1 = var1.bind(var4)(var2);
             case 63:
                 if (!(var0 !== var3)) {
-                    _fun62939_ip = 93;
-                    continue _fun62939
+                    _fun62983_ip = 93;
+                    continue _fun62983
                 }
             case 67:
                 var0 = undefined;
                 if (!(var0 !== var3)) {
-                    _fun62939_ip = 110;
-                    continue _fun62939
+                    _fun62983_ip = 110;
+                    continue _fun62983
                 }
             case 73:
                 var1 = _closure1_slot13;
                 var0 = var1.set;
                 var0 = var0.bind(var1)(var2, var3);
-                _fun62939_ip = 110;
-                continue _fun62939;
+                _fun62983_ip = 110;
+                continue _fun62983;
             case 93:
                 var1 = _closure1_slot13;
                 var0 = var1.delete;
@@ -560,21 +560,21 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.FRAME_SET_ORIENTATION_LOCK_STATE = var8;
     var8 = function(arg0) { // Original name: handleSetProxyTicketRefreshing, environment: var3
-        _fun62940: for (var _fun62940_ip = 0;;) switch (_fun62940_ip) {
+        _fun62984: for (var _fun62984_ip = 0;;) switch (_fun62984_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.applicationId;
                 var0 = var0.refreshing;
                 var2 = _closure1_slot11;
                 if (var0) {
-                    _fun62940_ip = 36;
-                    continue _fun62940
+                    _fun62984_ip = 36;
+                    continue _fun62984
                 }
             case 24:
                 var0 = var2.delete;
                 var0 = var0.bind(var2)(var3);
-                _fun62940_ip = 49;
-                continue _fun62940;
+                _fun62984_ip = 49;
+                continue _fun62984;
             case 36:
                 var1 = var2.set;
                 var0 = true;
@@ -586,7 +586,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var1.FRAME_SET_PROXY_TICKET_REFRESHING = var8;
     var3 = function(arg0) { // Original name: handleUpdateProxyTicket, environment: var3
-        _fun62941: for (var _fun62941_ip = 0;;) switch (_fun62941_ip) {
+        _fun62985: for (var _fun62985_ip = 0;;) switch (_fun62985_ip) {
             case 0:
                 var0 = arg0;
                 var3 = var0.applicationId;
@@ -597,15 +597,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = undefined;
                 var1 = undefined;
                 if (var6) {
-                    _fun62941_ip = 39;
-                    continue _fun62941
+                    _fun62985_ip = 39;
+                    continue _fun62985
                 }
             case 34:
                 var1 = var5.applicationId;
             case 39:
                 if (!(var1 === var3)) {
-                    _fun62941_ip = 69;
-                    continue _fun62941
+                    _fun62985_ip = 69;
+                    continue _fun62985
                 }
             case 43:
                 var1 = {};
@@ -638,4 +638,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 7877, 7874, 7878, 566, 806, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 7880, 7877, 7881, 566, 806, 2]);

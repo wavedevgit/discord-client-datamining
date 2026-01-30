@@ -95,7 +95,7 @@ public abstract class c1 implements SerialDescriptor {
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor
     public zs.k getKind() {
-        return l.c.f56104a;
+        return l.c.f56120a;
     }
 
     @Override // kotlinx.serialization.descriptors.SerialDescriptor

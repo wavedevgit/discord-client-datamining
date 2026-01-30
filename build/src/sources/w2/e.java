@@ -12,7 +12,7 @@ import kotlin.jvm.internal.Intrinsics;
 public abstract class e {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final a f52040a = new a(null);
+    public static final a f52056a = new a(null);
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     public static final class a {
@@ -22,31 +22,31 @@ public abstract class e {
         static final class C0710a extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f52041d;
+            int f52057d;
 
             /* renamed from: e  reason: collision with root package name */
-            /* synthetic */ Object f52042e;
+            /* synthetic */ Object f52058e;
 
             /* renamed from: i  reason: collision with root package name */
-            final /* synthetic */ List f52043i;
+            final /* synthetic */ List f52059i;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             C0710a(List list, Continuation continuation) {
                 super(2, continuation);
-                this.f52043i = list;
+                this.f52059i = list;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                C0710a c0710a = new C0710a(this.f52043i, continuation);
-                c0710a.f52042e = obj;
+                C0710a c0710a = new C0710a(this.f52059i, continuation);
+                c0710a.f52058e = obj;
                 return c0710a;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 Object f10 = or.b.f();
-                int i10 = this.f52041d;
+                int i10 = this.f52057d;
                 if (i10 != 0) {
                     if (i10 == 1) {
                         kotlin.c.b(obj);
@@ -55,20 +55,20 @@ public abstract class e {
                     }
                 } else {
                     kotlin.c.b(obj);
-                    a aVar = e.f52040a;
-                    List list = this.f52043i;
-                    this.f52041d = 1;
-                    if (aVar.c(list, (i) this.f52042e, this) == f10) {
+                    a aVar = e.f52056a;
+                    List list = this.f52059i;
+                    this.f52057d = 1;
+                    if (aVar.c(list, (i) this.f52058e, this) == f10) {
                         return f10;
                     }
                 }
-                return Unit.f33282a;
+                return Unit.f33298a;
             }
 
             @Override // kotlin.jvm.functions.Function2
             /* renamed from: j */
             public final Object invoke(i iVar, Continuation continuation) {
-                return ((C0710a) create(iVar, continuation)).invokeSuspend(Unit.f33282a);
+                return ((C0710a) create(iVar, continuation)).invokeSuspend(Unit.f33298a);
             }
         }
 
@@ -77,16 +77,16 @@ public abstract class e {
         public static final class b extends kotlin.coroutines.jvm.internal.d {
 
             /* renamed from: d  reason: collision with root package name */
-            Object f52044d;
+            Object f52060d;
 
             /* renamed from: e  reason: collision with root package name */
-            Object f52045e;
+            Object f52061e;
 
             /* renamed from: i  reason: collision with root package name */
-            /* synthetic */ Object f52046i;
+            /* synthetic */ Object f52062i;
 
             /* renamed from: p  reason: collision with root package name */
-            int f52048p;
+            int f52064p;
 
             b(Continuation continuation) {
                 super(continuation);
@@ -94,8 +94,8 @@ public abstract class e {
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
-                this.f52046i = obj;
-                this.f52048p |= Integer.MIN_VALUE;
+                this.f52062i = obj;
+                this.f52064p |= Integer.MIN_VALUE;
                 return a.this.c(null, null, this);
             }
         }
@@ -105,25 +105,25 @@ public abstract class e {
         public static final class c extends kotlin.coroutines.jvm.internal.k implements Function2 {
 
             /* renamed from: d  reason: collision with root package name */
-            Object f52049d;
+            Object f52065d;
 
             /* renamed from: e  reason: collision with root package name */
-            Object f52050e;
+            Object f52066e;
 
             /* renamed from: i  reason: collision with root package name */
-            Object f52051i;
+            Object f52067i;
 
             /* renamed from: o  reason: collision with root package name */
-            int f52052o;
+            int f52068o;
 
             /* renamed from: p  reason: collision with root package name */
-            /* synthetic */ Object f52053p;
+            /* synthetic */ Object f52069p;
 
             /* renamed from: q  reason: collision with root package name */
-            final /* synthetic */ List f52054q;
+            final /* synthetic */ List f52070q;
 
             /* renamed from: r  reason: collision with root package name */
-            final /* synthetic */ List f52055r;
+            final /* synthetic */ List f52071r;
 
             /* JADX INFO: Access modifiers changed from: package-private */
             /* renamed from: w2.e$a$c$a  reason: collision with other inner class name */
@@ -131,7 +131,7 @@ public abstract class e {
             public static final class C0711a extends kotlin.coroutines.jvm.internal.k implements Function1 {
 
                 /* renamed from: d  reason: collision with root package name */
-                int f52056d;
+                int f52072d;
 
                 C0711a(d dVar, Continuation continuation) {
                     super(1, continuation);
@@ -145,36 +145,36 @@ public abstract class e {
                 @Override // kotlin.coroutines.jvm.internal.a
                 public final Object invokeSuspend(Object obj) {
                     or.b.f();
-                    int i10 = this.f52056d;
+                    int i10 = this.f52072d;
                     if (i10 != 0) {
                         if (i10 == 1) {
                             kotlin.c.b(obj);
-                            return Unit.f33282a;
+                            return Unit.f33298a;
                         }
                         throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                     }
                     kotlin.c.b(obj);
-                    this.f52056d = 1;
+                    this.f52072d = 1;
                     throw null;
                 }
 
                 @Override // kotlin.jvm.functions.Function1
                 public final Object invoke(Continuation continuation) {
-                    return ((C0711a) create(continuation)).invokeSuspend(Unit.f33282a);
+                    return ((C0711a) create(continuation)).invokeSuspend(Unit.f33298a);
                 }
             }
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             c(List list, List list2, Continuation continuation) {
                 super(2, continuation);
-                this.f52054q = list;
-                this.f52055r = list2;
+                this.f52070q = list;
+                this.f52071r = list2;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Object obj, Continuation continuation) {
-                c cVar = new c(this.f52054q, this.f52055r, continuation);
-                cVar.f52053p = obj;
+                c cVar = new c(this.f52070q, this.f52071r, continuation);
+                cVar.f52069p = obj;
                 return cVar;
             }
 
@@ -183,21 +183,21 @@ public abstract class e {
                 List list;
                 Iterator it;
                 or.b.f();
-                int i10 = this.f52052o;
+                int i10 = this.f52068o;
                 if (i10 != 0) {
                     if (i10 != 1) {
                         if (i10 == 2) {
-                            it = (Iterator) this.f52049d;
-                            list = (List) this.f52053p;
+                            it = (Iterator) this.f52065d;
+                            list = (List) this.f52069p;
                             kotlin.c.b(obj);
                         } else {
                             throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                         }
                     } else {
-                        Object obj2 = this.f52051i;
-                        android.support.v4.media.session.b.a(this.f52050e);
-                        Iterator it2 = (Iterator) this.f52049d;
-                        List list2 = (List) this.f52053p;
+                        Object obj2 = this.f52067i;
+                        android.support.v4.media.session.b.a(this.f52066e);
+                        Iterator it2 = (Iterator) this.f52065d;
+                        List list2 = (List) this.f52069p;
                         kotlin.c.b(obj);
                         if (!((Boolean) obj).booleanValue()) {
                             obj = obj2;
@@ -205,36 +205,36 @@ public abstract class e {
                             list = list2;
                         } else {
                             list2.add(new C0711a(null, null));
-                            this.f52053p = list2;
-                            this.f52049d = it2;
-                            this.f52050e = null;
-                            this.f52051i = null;
-                            this.f52052o = 2;
+                            this.f52069p = list2;
+                            this.f52065d = it2;
+                            this.f52066e = null;
+                            this.f52067i = null;
+                            this.f52068o = 2;
                             throw null;
                         }
                     }
                 } else {
                     kotlin.c.b(obj);
-                    obj = this.f52053p;
-                    list = this.f52055r;
-                    it = this.f52054q.iterator();
+                    obj = this.f52069p;
+                    list = this.f52071r;
+                    it = this.f52070q.iterator();
                 }
                 if (!it.hasNext()) {
                     return obj;
                 }
                 android.support.v4.media.session.b.a(it.next());
-                this.f52053p = list;
-                this.f52049d = it;
-                this.f52050e = null;
-                this.f52051i = obj;
-                this.f52052o = 1;
+                this.f52069p = list;
+                this.f52065d = it;
+                this.f52066e = null;
+                this.f52067i = obj;
+                this.f52068o = 1;
                 throw null;
             }
 
             @Override // kotlin.jvm.functions.Function2
             /* renamed from: j */
             public final Object invoke(Object obj, Continuation continuation) {
-                return ((c) create(obj, continuation)).invokeSuspend(Unit.f33282a);
+                return ((c) create(obj, continuation)).invokeSuspend(Unit.f33298a);
             }
         }
 
@@ -262,28 +262,28 @@ public abstract class e {
                 if (r0 == 0) goto L13
                 r0 = r9
                 w2.e$a$b r0 = (w2.e.a.b) r0
-                int r1 = r0.f52048p
+                int r1 = r0.f52064p
                 r2 = -2147483648(0xffffffff80000000, float:-0.0)
                 r3 = r1 & r2
                 if (r3 == 0) goto L13
                 int r1 = r1 - r2
-                r0.f52048p = r1
+                r0.f52064p = r1
                 goto L18
             L13:
                 w2.e$a$b r0 = new w2.e$a$b
                 r0.<init>(r9)
             L18:
-                java.lang.Object r9 = r0.f52046i
+                java.lang.Object r9 = r0.f52062i
                 java.lang.Object r1 = or.b.f()
-                int r2 = r0.f52048p
+                int r2 = r0.f52064p
                 r3 = 2
                 r4 = 1
                 if (r2 == 0) goto L46
                 if (r2 == r4) goto L3e
                 if (r2 != r3) goto L36
-                java.lang.Object r7 = r0.f52045e
+                java.lang.Object r7 = r0.f52061e
                 java.util.Iterator r7 = (java.util.Iterator) r7
-                java.lang.Object r8 = r0.f52044d
+                java.lang.Object r8 = r0.f52060d
                 kotlin.jvm.internal.Ref$ObjectRef r8 = (kotlin.jvm.internal.Ref.ObjectRef) r8
                 kotlin.c.b(r9)     // Catch: java.lang.Throwable -> L34
                 goto L6b
@@ -296,7 +296,7 @@ public abstract class e {
                 r7.<init>(r8)
                 throw r7
             L3e:
-                java.lang.Object r7 = r0.f52044d
+                java.lang.Object r7 = r0.f52060d
                 java.util.List r7 = (java.util.List) r7
                 kotlin.c.b(r9)
                 goto L60
@@ -307,8 +307,8 @@ public abstract class e {
                 w2.e$a$c r2 = new w2.e$a$c
                 r5 = 0
                 r2.<init>(r7, r9, r5)
-                r0.f52044d = r9
-                r0.f52048p = r4
+                r0.f52060d = r9
+                r0.f52064p = r4
                 java.lang.Object r7 = r8.a(r2, r0)
                 if (r7 != r1) goto L5f
                 goto L83
@@ -324,9 +324,9 @@ public abstract class e {
                 if (r9 == 0) goto L96
                 java.lang.Object r9 = r7.next()
                 kotlin.jvm.functions.Function1 r9 = (kotlin.jvm.functions.Function1) r9
-                r0.f52044d = r8     // Catch: java.lang.Throwable -> L34
-                r0.f52045e = r7     // Catch: java.lang.Throwable -> L34
-                r0.f52048p = r3     // Catch: java.lang.Throwable -> L34
+                r0.f52060d = r8     // Catch: java.lang.Throwable -> L34
+                r0.f52061e = r7     // Catch: java.lang.Throwable -> L34
+                r0.f52064p = r3     // Catch: java.lang.Throwable -> L34
                 java.lang.Object r9 = r9.invoke(r0)     // Catch: java.lang.Throwable -> L34
                 if (r9 != r1) goto L6b
             L83:
@@ -346,7 +346,7 @@ public abstract class e {
                 T r7 = r8.element
                 java.lang.Throwable r7 = (java.lang.Throwable) r7
                 if (r7 != 0) goto L9f
-                kotlin.Unit r7 = kotlin.Unit.f33282a
+                kotlin.Unit r7 = kotlin.Unit.f33298a
                 return r7
             L9f:
                 throw r7

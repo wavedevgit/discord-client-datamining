@@ -5,7 +5,7 @@ import ui.c;
 final class c7 implements ui.d {
 
     /* renamed from: a  reason: collision with root package name */
-    static final c7 f45181a = new c7();
+    static final c7 f45197a = new c7();
 
     static {
         c.b a10 = ui.c.a("landmarkMode");

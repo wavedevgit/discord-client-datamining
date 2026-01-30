@@ -23,6 +23,10 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var1.MOBILE_HOME_DOCK_AREA = var4;
     var0 = 'MOBILE_HOME_DOCK_AREA';
     var1[var4] = var0;
+    var4 = 3;
+    var1.QUEST_HOME_BANNER_DESKTOP = var4;
+    var0 = 'QUEST_HOME_BANNER_DESKTOP';
+    var1[var4] = var0;
     var0 = dependencyMap;
     var4 = var0[var3];
     var3 = require;

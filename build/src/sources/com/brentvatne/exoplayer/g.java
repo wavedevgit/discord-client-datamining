@@ -402,12 +402,12 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, e6
     }
 
     private int A0(w0 w0Var) {
-        if (w0Var.f47359d == 0) {
+        if (w0Var.f47375d == 0) {
             return -1;
         }
         String language = Locale.getDefault().getLanguage();
         String iSO3Language = Locale.getDefault().getISO3Language();
-        for (int i10 = 0; i10 < w0Var.f47359d; i10++) {
+        for (int i10 = 0; i10 < w0Var.f47375d; i10++) {
             String str = w0Var.b(i10).c(0).f12697i;
             if (str != null && (str.equals(language) || str.equals(iSO3Language))) {
                 return i10;
@@ -422,7 +422,7 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, e6
         int D0 = D0(3);
         if (m10 != null && D0 != -1) {
             w0 f10 = m10.f(D0);
-            for (int i10 = 0; i10 < f10.f47359d; i10++) {
+            for (int i10 = 0; i10 < f10.f47375d; i10++) {
                 Format c10 = f10.b(i10).c(0);
                 WritableMap createMap = Arguments.createMap();
                 createMap.putInt("index", i10);
@@ -450,9 +450,9 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, e6
         int D0 = D0(2);
         if (m10 != null && D0 != -1) {
             w0 f10 = m10.f(D0);
-            for (int i10 = 0; i10 < f10.f47359d; i10++) {
+            for (int i10 = 0; i10 < f10.f47375d; i10++) {
                 u0 b10 = f10.b(i10);
-                for (int i11 = 0; i11 < b10.f47343d; i11++) {
+                for (int i11 = 0; i11 < b10.f47359d; i11++) {
                     Format c10 = b10.c(i11);
                     WritableMap createMap = Arguments.createMap();
                     int i12 = c10.B;
@@ -821,7 +821,7 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, e6
         int D0 = D0(1);
         if (m10 != null && D0 != -1) {
             w0 f10 = m10.f(D0);
-            for (int i10 = 0; i10 < f10.f47359d; i10++) {
+            for (int i10 = 0; i10 < f10.f47375d; i10++) {
                 Format c10 = f10.b(i10).c(0);
                 WritableMap createMap = Arguments.createMap();
                 createMap.putInt("index", i10);
@@ -937,7 +937,7 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, e6
             }
             View decorView = currentActivity.getWindow().getDecorView();
             if (this.f9375z) {
-                if (ne.w0.f40279a >= 19) {
+                if (ne.w0.f40295a >= 19) {
                     i10 = 4102;
                 } else {
                     i10 = 6;
@@ -1089,7 +1089,7 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, e6
         }
         if (str.equals("language")) {
             A0 = 0;
-            while (A0 < f10.f47359d) {
+            while (A0 < f10.f47375d) {
                 String str2 = f10.b(A0).c(0).f12697i;
                 if (str2 != null && str2.equals(dynamic.asString())) {
                     break;
@@ -1099,7 +1099,7 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, e6
             A0 = -1;
         } else if (str.equals("title")) {
             A0 = 0;
-            while (A0 < f10.f47359d) {
+            while (A0 < f10.f47375d) {
                 String str3 = f10.b(A0).c(0).f12695d;
                 if (str3 != null && str3.equals(dynamic.asString())) {
                     break;
@@ -1108,18 +1108,18 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, e6
             }
             A0 = -1;
         } else if (str.equals("index")) {
-            if (dynamic.asInt() < f10.f47359d) {
+            if (dynamic.asInt() < f10.f47375d) {
                 A0 = dynamic.asInt();
             }
             A0 = -1;
         } else if (str.equals("resolution")) {
             int asInt = dynamic.asInt();
             int i11 = -1;
-            for (int i12 = 0; i12 < f10.f47359d; i12++) {
+            for (int i12 = 0; i12 < f10.f47375d; i12++) {
                 u0 b10 = f10.b(i12);
                 int i13 = 0;
                 while (true) {
-                    if (i13 >= b10.f47343d) {
+                    if (i13 >= b10.f47359d) {
                         break;
                     } else if (b10.c(i13).C == asInt) {
                         iArr[0] = i13;
@@ -1131,7 +1131,7 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, e6
                 }
             }
             A0 = i11;
-        } else if (D0 == 3 && ne.w0.f40279a > 18) {
+        } else if (D0 == 3 && ne.w0.f40295a > 18) {
             CaptioningManager captioningManager = (CaptioningManager) this.f9360m0.getSystemService("captioning");
             if (captioningManager != null && captioningManager.isEnabled()) {
                 A0 = A0(f10);
@@ -1143,10 +1143,10 @@ class g extends FrameLayout implements LifecycleEventListener, Player.b, e.a, e6
             }
             A0 = -1;
         }
-        if (A0 == -1 && i10 == 2 && f10.f47359d != 0) {
+        if (A0 == -1 && i10 == 2 && f10.f47375d != 0) {
             u0 b11 = f10.b(0);
-            iArr = new int[b11.f47343d];
-            for (int i14 = 0; i14 < b11.f47343d; i14++) {
+            iArr = new int[b11.f47359d];
+            for (int i14 = 0; i14 < b11.f47359d; i14++) {
                 iArr[i14] = i14;
             }
             A0 = 0;

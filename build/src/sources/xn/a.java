@@ -19,34 +19,34 @@ import vn.d;
 public final class a implements o<b> {
 
     /* renamed from: b  reason: collision with root package name */
-    private final String f53466b;
+    private final String f53482b;
 
     /* renamed from: c  reason: collision with root package name */
-    private final xn.b f53467c;
+    private final xn.b f53483c;
 
     /* renamed from: d  reason: collision with root package name */
-    private final String f53468d;
+    private final String f53484d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final d.b f53469e;
+    private final d.b f53485e;
 
     /* renamed from: xn.a$a  reason: collision with other inner class name */
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class C0741a {
 
         /* renamed from: a  reason: collision with root package name */
-        private final xn.b f53470a;
+        private final xn.b f53486a;
 
         public C0741a(xn.b service) {
             Intrinsics.checkNotNullParameter(service, "service");
-            this.f53470a = service;
+            this.f53486a = service;
         }
 
         public final a a(String sessionToken, String documentId, d.b remoteDocument) {
             Intrinsics.checkNotNullParameter(sessionToken, "sessionToken");
             Intrinsics.checkNotNullParameter(documentId, "documentId");
             Intrinsics.checkNotNullParameter(remoteDocument, "remoteDocument");
-            return new a(sessionToken, this.f53470a, documentId, remoteDocument, null);
+            return new a(sessionToken, this.f53486a, documentId, remoteDocument, null);
         }
     }
 
@@ -58,35 +58,35 @@ public final class a implements o<b> {
         public static final class C0742a extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            private final InternalErrorInfo f53471a;
+            private final InternalErrorInfo f53487a;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             public C0742a(InternalErrorInfo cause) {
                 super(null);
                 Intrinsics.checkNotNullParameter(cause, "cause");
-                this.f53471a = cause;
+                this.f53487a = cause;
             }
 
             public final InternalErrorInfo a() {
-                return this.f53471a;
+                return this.f53487a;
             }
 
             public boolean equals(Object obj) {
                 if (this == obj) {
                     return true;
                 }
-                if ((obj instanceof C0742a) && Intrinsics.areEqual(this.f53471a, ((C0742a) obj).f53471a)) {
+                if ((obj instanceof C0742a) && Intrinsics.areEqual(this.f53487a, ((C0742a) obj).f53487a)) {
                     return true;
                 }
                 return false;
             }
 
             public int hashCode() {
-                return this.f53471a.hashCode();
+                return this.f53487a.hashCode();
             }
 
             public String toString() {
-                InternalErrorInfo internalErrorInfo = this.f53471a;
+                InternalErrorInfo internalErrorInfo = this.f53487a;
                 return "Error(cause=" + internalErrorInfo + ")";
             }
         }
@@ -96,7 +96,7 @@ public final class a implements o<b> {
         public static final class C0743b extends b {
 
             /* renamed from: a  reason: collision with root package name */
-            public static final C0743b f53472a = new C0743b();
+            public static final C0743b f53488a = new C0743b();
 
             private C0743b() {
                 super(null);
@@ -115,13 +115,13 @@ public final class a implements o<b> {
     static final class c extends k implements Function2 {
 
         /* renamed from: d  reason: collision with root package name */
-        Object f53473d;
+        Object f53489d;
 
         /* renamed from: e  reason: collision with root package name */
-        int f53474e;
+        int f53490e;
 
         /* renamed from: i  reason: collision with root package name */
-        private /* synthetic */ Object f53475i;
+        private /* synthetic */ Object f53491i;
 
         /* JADX INFO: Access modifiers changed from: package-private */
         /* renamed from: xn.a$c$a  reason: collision with other inner class name */
@@ -129,26 +129,26 @@ public final class a implements o<b> {
         public static final class C0744a extends k implements Function1 {
 
             /* renamed from: d  reason: collision with root package name */
-            int f53477d;
+            int f53493d;
 
             /* renamed from: e  reason: collision with root package name */
-            final /* synthetic */ a f53478e;
+            final /* synthetic */ a f53494e;
 
             /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
             C0744a(a aVar, Continuation continuation) {
                 super(1, continuation);
-                this.f53478e = aVar;
+                this.f53494e = aVar;
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Continuation create(Continuation continuation) {
-                return new C0744a(this.f53478e, continuation);
+                return new C0744a(this.f53494e, continuation);
             }
 
             @Override // kotlin.coroutines.jvm.internal.a
             public final Object invokeSuspend(Object obj) {
                 Object f10 = or.b.f();
-                int i10 = this.f53477d;
+                int i10 = this.f53493d;
                 if (i10 != 0) {
                     if (i10 == 1) {
                         kotlin.c.b(obj);
@@ -157,10 +157,10 @@ public final class a implements o<b> {
                     throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
                 }
                 kotlin.c.b(obj);
-                xn.b bVar = this.f53478e.f53467c;
-                String str = this.f53478e.f53466b;
-                String b10 = this.f53478e.d().b();
-                this.f53477d = 1;
+                xn.b bVar = this.f53494e.f53483c;
+                String str = this.f53494e.f53482b;
+                String b10 = this.f53494e.d().b();
+                this.f53493d = 1;
                 Object d10 = bVar.d(str, b10, this);
                 if (d10 == f10) {
                     return f10;
@@ -170,7 +170,7 @@ public final class a implements o<b> {
 
             @Override // kotlin.jvm.functions.Function1
             public final Object invoke(Continuation continuation) {
-                return ((C0744a) create(continuation)).invokeSuspend(Unit.f33282a);
+                return ((C0744a) create(continuation)).invokeSuspend(Unit.f33298a);
             }
         }
 
@@ -181,7 +181,7 @@ public final class a implements o<b> {
         @Override // kotlin.coroutines.jvm.internal.a
         public final Continuation create(Object obj, Continuation continuation) {
             c cVar = new c(continuation);
-            cVar.f53475i = obj;
+            cVar.f53491i = obj;
             return cVar;
         }
 
@@ -198,7 +198,7 @@ public final class a implements o<b> {
             /*
                 r8 = this;
                 java.lang.Object r0 = or.b.f()
-                int r1 = r8.f53474e
+                int r1 = r8.f53490e
                 r2 = 0
                 r3 = 3
                 r4 = 2
@@ -207,7 +207,7 @@ public final class a implements o<b> {
                 if (r1 == r5) goto L2f
                 if (r1 == r4) goto L23
                 if (r1 != r3) goto L1b
-                java.lang.Object r0 = r8.f53475i
+                java.lang.Object r0 = r8.f53491i
                 com.withpersona.sdk2.inquiry.network.core.NetworkCallResult r0 = (com.withpersona.sdk2.inquiry.network.core.NetworkCallResult) r0
                 kotlin.c.b(r9)
                 goto L8f
@@ -217,26 +217,26 @@ public final class a implements o<b> {
                 r9.<init>(r0)
                 throw r9
             L23:
-                java.lang.Object r1 = r8.f53473d
+                java.lang.Object r1 = r8.f53489d
                 com.withpersona.sdk2.inquiry.network.core.NetworkCallResult r1 = (com.withpersona.sdk2.inquiry.network.core.NetworkCallResult) r1
-                java.lang.Object r4 = r8.f53475i
+                java.lang.Object r4 = r8.f53491i
                 kotlinx.coroutines.flow.FlowCollector r4 = (kotlinx.coroutines.flow.FlowCollector) r4
                 kotlin.c.b(r9)
                 goto L70
             L2f:
-                java.lang.Object r1 = r8.f53475i
+                java.lang.Object r1 = r8.f53491i
                 kotlinx.coroutines.flow.FlowCollector r1 = (kotlinx.coroutines.flow.FlowCollector) r1
                 kotlin.c.b(r9)
                 goto L53
             L37:
                 kotlin.c.b(r9)
-                java.lang.Object r9 = r8.f53475i
+                java.lang.Object r9 = r8.f53491i
                 kotlinx.coroutines.flow.FlowCollector r9 = (kotlinx.coroutines.flow.FlowCollector) r9
                 xn.a$c$a r1 = new xn.a$c$a
                 xn.a r6 = xn.a.this
                 r1.<init>(r6, r2)
-                r8.f53475i = r9
-                r8.f53474e = r5
+                r8.f53491i = r9
+                r8.f53490e = r5
                 java.lang.Object r1 = com.withpersona.sdk2.inquiry.network.core.NetworkUtilsKt.enqueueRetriableRequestWithRetry(r1, r8)
                 if (r1 != r0) goto L50
                 goto L8e
@@ -251,10 +251,10 @@ public final class a implements o<b> {
                 r5 = r9
                 com.withpersona.sdk2.inquiry.network.core.NetworkCallResult$Success r5 = (com.withpersona.sdk2.inquiry.network.core.NetworkCallResult.Success) r5
                 r5.getResponse()
-                xn.a$b$b r5 = xn.a.b.C0743b.f53472a
-                r8.f53475i = r1
-                r8.f53473d = r9
-                r8.f53474e = r4
+                xn.a$b$b r5 = xn.a.b.C0743b.f53488a
+                r8.f53491i = r1
+                r8.f53489d = r9
+                r8.f53490e = r4
                 java.lang.Object r4 = r1.emit(r5, r8)
                 if (r4 != r0) goto L6e
                 goto L8e
@@ -272,15 +272,15 @@ public final class a implements o<b> {
                 com.withpersona.sdk2.inquiry.network.core.InternalErrorInfo$NetworkErrorInfo r4 = r4.getNetworkErrorInfo()
                 xn.a$b$a r5 = new xn.a$b$a
                 r5.<init>(r4)
-                r8.f53475i = r9
-                r8.f53473d = r2
-                r8.f53474e = r3
+                r8.f53491i = r9
+                r8.f53489d = r2
+                r8.f53490e = r3
                 java.lang.Object r9 = r1.emit(r5, r8)
                 if (r9 != r0) goto L8f
             L8e:
                 return r0
             L8f:
-                kotlin.Unit r9 = kotlin.Unit.f33282a
+                kotlin.Unit r9 = kotlin.Unit.f33298a
                 return r9
             */
             throw new UnsupportedOperationException("Method not decompiled: xn.a.c.invokeSuspend(java.lang.Object):java.lang.Object");
@@ -288,7 +288,7 @@ public final class a implements o<b> {
 
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(FlowCollector flowCollector, Continuation continuation) {
-            return ((c) create(flowCollector, continuation)).invokeSuspend(Unit.f33282a);
+            return ((c) create(flowCollector, continuation)).invokeSuspend(Unit.f33298a);
         }
     }
 
@@ -301,7 +301,7 @@ public final class a implements o<b> {
         Intrinsics.checkNotNullParameter(otherWorker, "otherWorker");
         if (otherWorker instanceof a) {
             a aVar = (a) otherWorker;
-            if (Intrinsics.areEqual(this.f53466b, aVar.f53466b) && Intrinsics.areEqual(this.f53469e, aVar.f53469e)) {
+            if (Intrinsics.areEqual(this.f53482b, aVar.f53482b) && Intrinsics.areEqual(this.f53485e, aVar.f53485e)) {
                 return true;
             }
             return false;
@@ -310,7 +310,7 @@ public final class a implements o<b> {
     }
 
     public final d.b d() {
-        return this.f53469e;
+        return this.f53485e;
     }
 
     @Override // tm.o
@@ -319,9 +319,9 @@ public final class a implements o<b> {
     }
 
     private a(String str, xn.b bVar, String str2, d.b bVar2) {
-        this.f53466b = str;
-        this.f53467c = bVar;
-        this.f53468d = str2;
-        this.f53469e = bVar2;
+        this.f53482b = str;
+        this.f53483c = bVar;
+        this.f53484d = str2;
+        this.f53485e = bVar2;
     }
 }

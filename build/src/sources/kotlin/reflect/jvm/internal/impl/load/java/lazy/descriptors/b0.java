@@ -6,16 +6,16 @@ import kotlin.jvm.functions.Function0;
 public class b0 implements Function0 {
 
     /* renamed from: d  reason: collision with root package name */
-    private final LazyJavaScope f34249d;
+    private final LazyJavaScope f34265d;
 
     public b0(LazyJavaScope lazyJavaScope) {
-        this.f34249d = lazyJavaScope;
+        this.f34265d = lazyJavaScope;
     }
 
     @Override // kotlin.jvm.functions.Function0
     public Object invoke() {
         DeclaredMemberIndex y10;
-        y10 = LazyJavaScope.y(this.f34249d);
+        y10 = LazyJavaScope.y(this.f34265d);
         return y10;
     }
 }

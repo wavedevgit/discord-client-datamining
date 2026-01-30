@@ -337,7 +337,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot9 = var4;
     var4 = var7.memo;
     var3 = function(arg0) { // Original name: VisualEffectViewOverrideOverlay, environment: var3
-        _fun100360: for (var _fun100360_ip = 0;;) switch (_fun100360_ip) {
+        _fun100614: for (var _fun100614_ip = 0;;) switch (_fun100614_ip) {
             case 0:
                 var2 = _closure1_slot0;
                 var3 = _closure1_slot2;
@@ -359,8 +359,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = var3.bind(var6)(var2, var0);
                 var0 = null;
                 if (!var2) {
-                    _fun100360_ip = 100;
-                    continue _fun100360
+                    _fun100614_ip = 100;
+                    continue _fun100614
                 }
             case 62:
                 var3 = _closure1_slot6;
@@ -398,4 +398,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.default = var3;
     var2.useVisualEffectViewOverrideSharedStyles = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3958, 807, 33, 1297, 671, 3677, 4034, 4040, 5335, 13023, 13025, 13026, 9044, 4688, 566, 11210, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 3964, 807, 33, 1297, 671, 3679, 4040, 4046, 5339, 13048, 13050, 13051, 9048, 4694, 566, 11216, 2]);

@@ -13,10 +13,10 @@ import kotlinx.coroutines.Job;
 public final class l implements ListenableFuture {
 
     /* renamed from: d  reason: collision with root package name */
-    private final Job f32969d;
+    private final Job f32985d;
 
     /* renamed from: e  reason: collision with root package name */
-    private final androidx.work.impl.utils.futures.c f32970e;
+    private final androidx.work.impl.utils.futures.c f32986e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     static final class a extends Lambda implements Function1 {
@@ -27,18 +27,18 @@ public final class l implements ListenableFuture {
         @Override // kotlin.jvm.functions.Function1
         public /* bridge */ /* synthetic */ Object invoke(Object obj) {
             invoke((Throwable) obj);
-            return Unit.f33282a;
+            return Unit.f33298a;
         }
 
         public final void invoke(Throwable th2) {
             if (th2 == null) {
-                if (!l.this.f32970e.isDone()) {
+                if (!l.this.f32986e.isDone()) {
                     throw new IllegalArgumentException("Failed requirement.");
                 }
             } else if (th2 instanceof CancellationException) {
-                l.this.f32970e.cancel(true);
+                l.this.f32986e.cancel(true);
             } else {
-                androidx.work.impl.utils.futures.c cVar = l.this.f32970e;
+                androidx.work.impl.utils.futures.c cVar = l.this.f32986e;
                 Throwable cause = th2.getCause();
                 if (cause != null) {
                     th2 = cause;
@@ -51,43 +51,43 @@ public final class l implements ListenableFuture {
     public l(Job job, androidx.work.impl.utils.futures.c underlying) {
         Intrinsics.checkNotNullParameter(job, "job");
         Intrinsics.checkNotNullParameter(underlying, "underlying");
-        this.f32969d = job;
-        this.f32970e = underlying;
+        this.f32985d = job;
+        this.f32986e = underlying;
         job.C0(new a());
     }
 
     @Override // com.google.common.util.concurrent.ListenableFuture
     public void a(Runnable runnable, Executor executor) {
-        this.f32970e.a(runnable, executor);
+        this.f32986e.a(runnable, executor);
     }
 
     public final void c(Object obj) {
-        this.f32970e.p(obj);
+        this.f32986e.p(obj);
     }
 
     @Override // java.util.concurrent.Future
     public boolean cancel(boolean z10) {
-        return this.f32970e.cancel(z10);
+        return this.f32986e.cancel(z10);
     }
 
     @Override // java.util.concurrent.Future
     public Object get() {
-        return this.f32970e.get();
+        return this.f32986e.get();
     }
 
     @Override // java.util.concurrent.Future
     public boolean isCancelled() {
-        return this.f32970e.isCancelled();
+        return this.f32986e.isCancelled();
     }
 
     @Override // java.util.concurrent.Future
     public boolean isDone() {
-        return this.f32970e.isDone();
+        return this.f32986e.isDone();
     }
 
     @Override // java.util.concurrent.Future
     public Object get(long j10, TimeUnit timeUnit) {
-        return this.f32970e.get(j10, timeUnit);
+        return this.f32986e.get(j10, timeUnit);
     }
 
     /* JADX WARN: Illegal instructions before constructor call */

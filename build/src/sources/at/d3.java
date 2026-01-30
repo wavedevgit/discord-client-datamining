@@ -13,7 +13,7 @@ public final class d3 implements KSerializer {
     public static final d3 f6796b = new d3();
 
     /* renamed from: a  reason: collision with root package name */
-    private final /* synthetic */ o1 f6797a = new o1("kotlin.Unit", Unit.f33282a);
+    private final /* synthetic */ o1 f6797a = new o1("kotlin.Unit", Unit.f33298a);
 
     private d3() {
     }
@@ -34,7 +34,7 @@ public final class d3 implements KSerializer {
     @Override // kotlinx.serialization.DeserializationStrategy
     public /* bridge */ /* synthetic */ Object deserialize(Decoder decoder) {
         a(decoder);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlinx.serialization.KSerializer, xs.o, kotlinx.serialization.DeserializationStrategy

@@ -10,16 +10,16 @@ import q4.p;
 public class c implements b {
 
     /* renamed from: a  reason: collision with root package name */
-    private final p f48027a;
+    private final p f48043a;
 
     /* renamed from: b  reason: collision with root package name */
-    private final CoroutineDispatcher f48028b;
+    private final CoroutineDispatcher f48044b;
 
     /* renamed from: c  reason: collision with root package name */
-    final Handler f48029c = new Handler(Looper.getMainLooper());
+    final Handler f48045c = new Handler(Looper.getMainLooper());
 
     /* renamed from: d  reason: collision with root package name */
-    private final Executor f48030d = new a();
+    private final Executor f48046d = new a();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     class a implements Executor {
@@ -28,29 +28,29 @@ public class c implements b {
 
         @Override // java.util.concurrent.Executor
         public void execute(Runnable runnable) {
-            c.this.f48029c.post(runnable);
+            c.this.f48045c.post(runnable);
         }
     }
 
     public c(Executor executor) {
         p pVar = new p(executor);
-        this.f48027a = pVar;
-        this.f48028b = u0.b(pVar);
+        this.f48043a = pVar;
+        this.f48044b = u0.b(pVar);
     }
 
     @Override // r4.b
     public Executor a() {
-        return this.f48030d;
+        return this.f48046d;
     }
 
     @Override // r4.b
     public CoroutineDispatcher b() {
-        return this.f48028b;
+        return this.f48044b;
     }
 
     @Override // r4.b
     /* renamed from: e */
     public p c() {
-        return this.f48027a;
+        return this.f48043a;
     }
 }

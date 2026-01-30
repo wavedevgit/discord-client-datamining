@@ -32,7 +32,7 @@ public interface CoroutineContext {
             public static CoroutineContext c(Element element, b key) {
                 Intrinsics.checkNotNullParameter(key, "key");
                 if (Intrinsics.areEqual(element.getKey(), key)) {
-                    return e.f33356d;
+                    return e.f33372d;
                 }
                 return element;
             }
@@ -53,7 +53,7 @@ public interface CoroutineContext {
     public static final class a {
         public static CoroutineContext b(CoroutineContext coroutineContext, CoroutineContext context) {
             Intrinsics.checkNotNullParameter(context, "context");
-            if (context == e.f33356d) {
+            if (context == e.f33372d) {
                 return coroutineContext;
             }
             return (CoroutineContext) context.A1(coroutineContext, new Function2() { // from class: nr.c
@@ -71,11 +71,11 @@ public interface CoroutineContext {
             Intrinsics.checkNotNullParameter(acc, "acc");
             Intrinsics.checkNotNullParameter(element, "element");
             CoroutineContext x12 = acc.x1(element.getKey());
-            e eVar = e.f33356d;
+            e eVar = e.f33372d;
             if (x12 == eVar) {
                 return element;
             }
-            d.b bVar = d.f33354h;
+            d.b bVar = d.f33370h;
             d dVar = (d) x12.l(bVar);
             if (dVar == null) {
                 return new c(x12, element);

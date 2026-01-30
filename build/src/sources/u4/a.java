@@ -11,19 +11,19 @@ import java.util.concurrent.TimeUnit;
 final class a {
 
     /* renamed from: b  reason: collision with root package name */
-    private static final a f50033b = new a();
+    private static final a f50049b = new a();
 
     /* renamed from: c  reason: collision with root package name */
-    private static final int f50034c;
+    private static final int f50050c;
 
     /* renamed from: d  reason: collision with root package name */
-    static final int f50035d;
+    static final int f50051d;
 
     /* renamed from: e  reason: collision with root package name */
-    static final int f50036e;
+    static final int f50052e;
 
     /* renamed from: a  reason: collision with root package name */
-    private final Executor f50037a = new b();
+    private final Executor f50053a = new b();
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
     private static class b implements Executor {
@@ -38,9 +38,9 @@ final class a {
 
     static {
         int availableProcessors = Runtime.getRuntime().availableProcessors();
-        f50034c = availableProcessors;
-        f50035d = availableProcessors + 1;
-        f50036e = (availableProcessors * 2) + 1;
+        f50050c = availableProcessors;
+        f50051d = availableProcessors + 1;
+        f50052e = (availableProcessors * 2) + 1;
     }
 
     private a() {
@@ -51,12 +51,12 @@ final class a {
     }
 
     public static ExecutorService b() {
-        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(f50035d, f50036e, 1L, TimeUnit.SECONDS, new LinkedBlockingQueue());
+        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(f50051d, f50052e, 1L, TimeUnit.SECONDS, new LinkedBlockingQueue());
         a(threadPoolExecutor, true);
         return threadPoolExecutor;
     }
 
     public static Executor c() {
-        return f50033b.f50037a;
+        return f50049b.f50053a;
     }
 }

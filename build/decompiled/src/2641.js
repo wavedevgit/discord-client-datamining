@@ -20,22 +20,22 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         'other': 'P'
     };
     var4 = function(arg0) { // Original name: lastWeek, environment: var2
-        _fun22057: for (var _fun22057_ip = 0;;) switch (_fun22057_ip) {
+        _fun22058: for (var _fun22058_ip = 0;;) switch (_fun22058_ip) {
             case 0:
                 var1 = arg0;
                 var0 = var1.getUTCDay;
                 var2 = var0.bind(var1)();
                 var0 = 0;
                 if (!(var0 !== var2)) {
-                    _fun22057_ip = 32;
-                    continue _fun22057
+                    _fun22058_ip = 32;
+                    continue _fun22058
                 }
             case 19:
                 var1 = 'última';
                 var0 = 6;
                 if (!(var0 === var2)) {
-                    _fun22057_ip = 38;
-                    continue _fun22057
+                    _fun22058_ip = 38;
+                    continue _fun22058
                 }
             case 32:
                 var1 = 'último';
@@ -50,7 +50,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var3.lastWeek = var4;
     var _closure1_slot0 = var3;
     var2 = function(arg0, arg1, arg2, arg3) { // Original name: formatRelative, environment: var2
-        _fun22058: for (var _fun22058_ip = 0;;) switch (_fun22058_ip) {
+        _fun22059: for (var _fun22059_ip = 0;;) switch (_fun22059_ip) {
             case 0:
                 var1 = _closure1_slot0;
                 var0 = arg0;
@@ -59,8 +59,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = typeof var3;
                 var0 = var3;
                 if (!(var2 === var1)) {
-                    _fun22058_ip = 38;
-                    continue _fun22058
+                    _fun22059_ip = 38;
+                    continue _fun22059
                 }
             case 28:
                 var2 = undefined;

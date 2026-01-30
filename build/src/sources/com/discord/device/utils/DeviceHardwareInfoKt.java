@@ -78,7 +78,7 @@ public final class DeviceHardwareInfoKt {
                 if (j10 > j11) {
                     j11 = j10;
                 }
-                Unit unit = Unit.f33282a;
+                Unit unit = Unit.f33298a;
                 c.a(bufferedReader, null);
             } catch (Exception unused) {
             }

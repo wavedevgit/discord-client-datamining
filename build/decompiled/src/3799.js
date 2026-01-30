@@ -1,11 +1,11 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
-    var11 = require;
+    var13 = require;
     var4 = metroImportDefault;
     var2 = exports;
-    var12 = dependencyMap;
+    var14 = dependencyMap;
     var0 = function(arg0, arg1, arg2) { // Original name: _callSuper, environment: var1
-        _fun34317: for (var _fun34317_ip = 0;;) switch (_fun34317_ip) {
+        _fun34138: for (var _fun34138_ip = 0;;) switch (_fun34138_ip) {
             case 0:
                 var3 = arg0;
                 var5 = arg2;
@@ -14,24 +14,24 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var0 = arg1;
                 var8 = var1.bind(var2)(var0);
                 var1 = _closure1_slot3;
-                var0 = _closure1_slot15;
+                var0 = _closure1_slot17;
                 var0 = var0.bind(var2)();
                 if (var0) {
-                    _fun34317_ip = 51;
-                    continue _fun34317
+                    _fun34138_ip = 51;
+                    continue _fun34138
                 }
             case 38:
                 var0 = var8.apply;
                 var0 = var0.bind(var8)(var3, var5);
-                _fun34317_ip = 92;
-                continue _fun34317;
+                _fun34138_ip = 92;
+                continue _fun34138;
             case 51:
                 var6 = global;
                 var7 = var6.Reflect;
                 var6 = var7.construct;
                 if (var5) {
-                    _fun34317_ip = 71;
-                    continue _fun34317
+                    _fun34138_ip = 71;
+                    continue _fun34138
                 }
             case 67:
                 var5 = new Array(0);
@@ -45,9 +45,9 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 return var0;
         }
     };
-    var _closure1_slot14 = var0;
+    var _closure1_slot16 = var0;
     var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
-        _fun34318: for (var _fun34318_ip = 0;;) switch (_fun34318_ip) {
+        _fun34139: for (var _fun34139_ip = 0;;) switch (_fun34139_ip) {
             case 0:
             case 2: // try_start_0
                 var1 = global;
@@ -68,8 +68,8 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                 var1 = !var1;
                 var _closure2_slot0 = var1;
             case 70: // try_end0
-                _fun34318_ip = 74;
-                continue _fun34318;
+                _fun34139_ip = 74;
+                continue _fun34139;
             case 72: // catch_target0
                 CatchBlockStart(arg_register = 1);
             case 74:
@@ -79,13 +79,13 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var0 = !var0;
                     return var0;
                 };
-                _closure1_slot15 = var1;
+                _closure1_slot17 = var1;
                 var0 = undefined;
                 var0 = var1.bind(var0)();
                 return var0;
         }
     };
-    var _closure1_slot15 = var0;
+    var _closure1_slot17 = var0;
     var0 = global;
     var6 = var0.Object;
     var5 = var6.defineProperty;
@@ -95,41 +95,41 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
     var0 = '__esModule';
     var0 = var5.bind(var6)(var2, var0, var3);
     var0 = 0;
-    var3 = var12[var0];
+    var3 = var14[var0];
     var0 = undefined;
     var3 = var4.bind(var0)(var3);
     var _closure1_slot0 = var3;
     var3 = 1;
-    var3 = var12[var3];
+    var3 = var14[var3];
     var3 = var4.bind(var0)(var3);
     var _closure1_slot1 = var3;
     var3 = 2;
-    var3 = var12[var3];
+    var3 = var14[var3];
     var3 = var4.bind(var0)(var3);
     var _closure1_slot2 = var3;
     var3 = 3;
-    var3 = var12[var3];
+    var3 = var14[var3];
     var3 = var4.bind(var0)(var3);
     var _closure1_slot3 = var3;
     var3 = 4;
-    var3 = var12[var3];
+    var3 = var14[var3];
     var3 = var4.bind(var0)(var3);
     var _closure1_slot4 = var3;
     var3 = 5;
-    var3 = var12[var3];
+    var3 = var14[var3];
     var3 = var4.bind(var0)(var3);
     var _closure1_slot5 = var3;
     var3 = {};
-    var4 = 'function pnpm_SlideTs1(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{originX:delayFunction(delay,animation(values.targetOriginX,config))},initialValues:{originX:values.targetOriginX+values.windowWidth,...initialValues},callback:callback};}';
+    var4 = 'function pnpm_FadeTs1(){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{opacity:delayFunction(delay,animation(1,config))},initialValues:{opacity:0,...initialValues},callback:callback};}';
     var3.code = var4;
     var _closure1_slot6 = var3;
-    var10 = 6;
-    var3 = var12[var10];
-    var3 = var11.bind(var0)(var3);
+    var12 = 6;
+    var3 = var14[var12];
+    var3 = var13.bind(var0)(var3);
     var4 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
-        var4 = function() { // Original name: SlideInRight, environment: var1
-            _fun34322: for (var _fun34322_ip = 0;;) switch (_fun34322_ip) {
+        var4 = function() { // Original name: FadeIn, environment: var1
+            _fun34143: for (var _fun34143_ip = 0;;) switch (_fun34143_ip) {
                 case 0:
                     var5 = this;
                     var4 = undefined;
@@ -153,19 +153,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = 0;
                     var9 = var3 < var6;
                     if (!var9) {
-                        _fun34322_ip = 87;
-                        continue _fun34322
+                        _fun34143_ip = 87;
+                        continue _fun34143
                     }
                 case 72:
                     var9 = arguments[var3];
                     var7[var3] = var9;
                     var3 = var3 + 1;
                     if (var3 < var6) {
-                        _fun34322_ip = 72;
-                        continue _fun34322
+                        _fun34143_ip = 72;
+                        continue _fun34143
                     }
                 case 87:
-                    var3 = _closure1_slot14;
+                    var3 = _closure1_slot16;
                     var2 = _closure2_slot0;
                     var6 = new Array(0);
                     var0 = var6.concat;
@@ -190,42 +190,39 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var3 = 1;
                         var5 = var4[var3];
                         var _closure4_slot2 = var5;
-                        var4 = _closure3_slot0;
-                        var3 = var4.getDelay;
-                        var7 = var3.bind(var4)();
-                        var _closure4_slot3 = var7;
                         var3 = _closure3_slot0;
                         var3 = var3.callbackV;
-                        var _closure4_slot4 = var3;
-                        var2 = _closure3_slot0;
-                        var4 = var2.initialValues;
-                        var _closure4_slot5 = var4;
-                        var0 = function(arg0) { // Original name: pnpm_SlideTs1, environment: var0
-                            var2 = arg0;
+                        var _closure4_slot3 = var3;
+                        var4 = _closure3_slot0;
+                        var4 = var4.initialValues;
+                        var _closure4_slot4 = var4;
+                        var7 = _closure3_slot0;
+                        var2 = var7.getDelay;
+                        var7 = var2.bind(var7)();
+                        var _closure4_slot5 = var7;
+                        var0 = function() { // Original name: pnpm_FadeTs1, environment: var0
                             var0 = {};
-                            var3 = {};
-                            var7 = _closure4_slot0;
-                            var6 = _closure4_slot3;
-                            var9 = _closure4_slot1;
-                            var8 = var2.targetOriginX;
-                            var4 = _closure4_slot2;
-                            var5 = undefined;
-                            var4 = var9.bind(var5)(var8, var4);
-                            var4 = var7.bind(var5)(var6, var4);
-                            var3.originX = var4;
-                            var0.animations = var3;
-                            var3 = global;
-                            var5 = var3.Object;
+                            var2 = {};
+                            var6 = _closure4_slot0;
+                            var5 = _closure4_slot5;
+                            var8 = _closure4_slot1;
+                            var7 = _closure4_slot2;
+                            var4 = undefined;
+                            var3 = 1;
+                            var3 = var8.bind(var4)(var3, var7);
+                            var3 = var6.bind(var4)(var5, var3);
+                            var2.opacity = var3;
+                            var0.animations = var2;
+                            var2 = global;
+                            var5 = var2.Object;
                             var4 = var5.assign;
                             var3 = {};
-                            var6 = var2.targetOriginX;
-                            var2 = var2.windowWidth;
-                            var2 = var6 + var2;
-                            var3.originX = var2;
-                            var2 = _closure4_slot5;
+                            var2 = 0;
+                            var3.opacity = var2;
+                            var2 = _closure4_slot4;
                             var2 = var4.bind(var5)(var3, var2);
                             var0.initialValues = var2;
-                            var1 = _closure4_slot4;
+                            var1 = _closure4_slot3;
                             var0.callback = var1;
                             return var0;
                         };
@@ -237,7 +234,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2.initialValues = var4;
                         var2.callback = var3;
                         var0.__closure = var2;
-                        var2 = 10760418577189.0;
+                        var2 = 4187624806586.0;
                         var0.__workletHash = var2;
                         var1 = _closure1_slot6;
                         var0.__initData = var1;
@@ -276,19 +273,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var3)(var4, var0, var1);
         return var0;
     };
-    var9 = var3.bind(var0)(var4);
-    var3 = 'SlideInRight';
-    var9.presetName = var3;
+    var11 = var3.bind(var0)(var4);
+    var3 = 'FadeIn';
+    var11.presetName = var3;
     var3 = {};
-    var4 = 'function pnpm_SlideTs2(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{originX:delayFunction(delay,animation(values.targetOriginX,config))},initialValues:{originX:values.targetOriginX-values.windowWidth,...initialValues},callback:callback};}';
+    var4 = 'function pnpm_FadeTs2(){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{opacity:delayFunction(delay,animation(1,config)),transform:[{translateX:delayFunction(delay,animation(0,config))}]},initialValues:{opacity:0,transform:[{translateX:25}],...initialValues},callback:callback};}';
     var3.code = var4;
     var _closure1_slot7 = var3;
-    var3 = var12[var10];
-    var3 = var11.bind(var0)(var3);
+    var3 = var14[var12];
+    var3 = var13.bind(var0)(var3);
     var4 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
-        var4 = function() { // Original name: SlideInLeft, environment: var1
-            _fun34327: for (var _fun34327_ip = 0;;) switch (_fun34327_ip) {
+        var4 = function() { // Original name: FadeInRight, environment: var1
+            _fun34148: for (var _fun34148_ip = 0;;) switch (_fun34148_ip) {
                 case 0:
                     var5 = this;
                     var4 = undefined;
@@ -312,19 +309,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = 0;
                     var9 = var3 < var6;
                     if (!var9) {
-                        _fun34327_ip = 87;
-                        continue _fun34327
+                        _fun34148_ip = 87;
+                        continue _fun34148
                     }
                 case 72:
                     var9 = arguments[var3];
                     var7[var3] = var9;
                     var3 = var3 + 1;
                     if (var3 < var6) {
-                        _fun34327_ip = 72;
-                        continue _fun34327
+                        _fun34148_ip = 72;
+                        continue _fun34148
                     }
                 case 87:
-                    var3 = _closure1_slot14;
+                    var3 = _closure1_slot16;
                     var2 = _closure2_slot0;
                     var6 = new Array(0);
                     var0 = var6.concat;
@@ -349,42 +346,52 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var3 = 1;
                         var5 = var4[var3];
                         var _closure4_slot2 = var5;
-                        var4 = _closure3_slot0;
-                        var3 = var4.getDelay;
-                        var7 = var3.bind(var4)();
-                        var _closure4_slot3 = var7;
                         var3 = _closure3_slot0;
                         var3 = var3.callbackV;
-                        var _closure4_slot4 = var3;
-                        var2 = _closure3_slot0;
-                        var4 = var2.initialValues;
-                        var _closure4_slot5 = var4;
-                        var0 = function(arg0) { // Original name: pnpm_SlideTs2, environment: var0
-                            var2 = arg0;
+                        var _closure4_slot3 = var3;
+                        var4 = _closure3_slot0;
+                        var4 = var4.initialValues;
+                        var _closure4_slot4 = var4;
+                        var7 = _closure3_slot0;
+                        var2 = var7.getDelay;
+                        var7 = var2.bind(var7)();
+                        var _closure4_slot5 = var7;
+                        var0 = function() { // Original name: pnpm_FadeTs2, environment: var0
                             var0 = {};
                             var3 = {};
-                            var7 = _closure4_slot0;
-                            var6 = _closure4_slot3;
+                            var8 = _closure4_slot0;
+                            var7 = _closure4_slot5;
                             var9 = _closure4_slot1;
-                            var8 = var2.targetOriginX;
                             var4 = _closure4_slot2;
-                            var5 = undefined;
-                            var4 = var9.bind(var5)(var8, var4);
-                            var4 = var7.bind(var5)(var6, var4);
-                            var3.originX = var4;
+                            var6 = undefined;
+                            var2 = 1;
+                            var2 = var9.bind(var6)(var2, var4);
+                            var2 = var8.bind(var6)(var7, var2);
+                            var3.opacity = var2;
+                            var5 = {};
+                            var2 = 0;
+                            var4 = var9.bind(var6)(var2, var4);
+                            var4 = var8.bind(var6)(var7, var4);
+                            var5.translateX = var4;
+                            var4 = new Array(1);
+                            var4[0] = var5;
+                            var3.transform = var4;
                             var0.animations = var3;
                             var3 = global;
                             var5 = var3.Object;
                             var4 = var5.assign;
                             var3 = {};
-                            var6 = var2.targetOriginX;
-                            var2 = var2.windowWidth;
-                            var2 = var6 - var2;
-                            var3.originX = var2;
-                            var2 = _closure4_slot5;
+                            var3.opacity = var2;
+                            var6 = {};
+                            var2 = 25;
+                            var6.translateX = var2;
+                            var2 = new Array(1);
+                            var2[0] = var6;
+                            var3.transform = var2;
+                            var2 = _closure4_slot4;
                             var2 = var4.bind(var5)(var3, var2);
                             var0.initialValues = var2;
-                            var1 = _closure4_slot4;
+                            var1 = _closure4_slot3;
                             var0.callback = var1;
                             return var0;
                         };
@@ -396,7 +403,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2.initialValues = var4;
                         var2.callback = var3;
                         var0.__closure = var2;
-                        var2 = 2180499422144.0;
+                        var2 = 5328703857616.0;
                         var0.__workletHash = var2;
                         var1 = _closure1_slot7;
                         var0.__initData = var1;
@@ -435,19 +442,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var3)(var4, var0, var1);
         return var0;
     };
-    var8 = var3.bind(var0)(var4);
-    var3 = 'SlideInLeft';
-    var8.presetName = var3;
+    var10 = var3.bind(var0)(var4);
+    var3 = 'FadeInRight';
+    var10.presetName = var3;
     var3 = {};
-    var4 = 'function pnpm_SlideTs3(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{originX:delayFunction(delay,animation(Math.max(values.currentOriginX+values.windowWidth,values.windowWidth),config))},initialValues:{originX:values.currentOriginX,...initialValues},callback:callback};}';
+    var4 = 'function pnpm_FadeTs3(){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{opacity:delayFunction(delay,animation(1,config)),transform:[{translateX:delayFunction(delay,animation(0,config))}]},initialValues:{opacity:0,transform:[{translateX:-25}],...initialValues},callback:callback};}';
     var3.code = var4;
     var _closure1_slot8 = var3;
-    var3 = var12[var10];
-    var3 = var11.bind(var0)(var3);
+    var3 = var14[var12];
+    var3 = var13.bind(var0)(var3);
     var4 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
-        var4 = function() { // Original name: SlideOutRight, environment: var1
-            _fun34332: for (var _fun34332_ip = 0;;) switch (_fun34332_ip) {
+        var4 = function() { // Original name: FadeInLeft, environment: var1
+            _fun34153: for (var _fun34153_ip = 0;;) switch (_fun34153_ip) {
                 case 0:
                     var5 = this;
                     var4 = undefined;
@@ -471,19 +478,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = 0;
                     var9 = var3 < var6;
                     if (!var9) {
-                        _fun34332_ip = 87;
-                        continue _fun34332
+                        _fun34153_ip = 87;
+                        continue _fun34153
                     }
                 case 72:
                     var9 = arguments[var3];
                     var7[var3] = var9;
                     var3 = var3 + 1;
                     if (var3 < var6) {
-                        _fun34332_ip = 72;
-                        continue _fun34332
+                        _fun34153_ip = 72;
+                        continue _fun34153
                     }
                 case 87:
-                    var3 = _closure1_slot14;
+                    var3 = _closure1_slot16;
                     var2 = _closure2_slot0;
                     var6 = new Array(0);
                     var0 = var6.concat;
@@ -508,46 +515,52 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var3 = 1;
                         var5 = var4[var3];
                         var _closure4_slot2 = var5;
-                        var4 = _closure3_slot0;
-                        var3 = var4.getDelay;
-                        var7 = var3.bind(var4)();
-                        var _closure4_slot3 = var7;
                         var3 = _closure3_slot0;
                         var3 = var3.callbackV;
-                        var _closure4_slot4 = var3;
-                        var2 = _closure3_slot0;
-                        var4 = var2.initialValues;
-                        var _closure4_slot5 = var4;
-                        var0 = function(arg0) { // Original name: pnpm_SlideTs3, environment: var0
-                            var2 = arg0;
+                        var _closure4_slot3 = var3;
+                        var4 = _closure3_slot0;
+                        var4 = var4.initialValues;
+                        var _closure4_slot4 = var4;
+                        var7 = _closure3_slot0;
+                        var2 = var7.getDelay;
+                        var7 = var2.bind(var7)();
+                        var _closure4_slot5 = var7;
+                        var0 = function() { // Original name: pnpm_FadeTs3, environment: var0
                             var0 = {};
-                            var4 = {};
+                            var3 = {};
                             var8 = _closure4_slot0;
-                            var7 = _closure4_slot3;
-                            var10 = _closure4_slot1;
-                            var3 = global;
-                            var11 = var3.Math;
-                            var9 = var11.max;
-                            var6 = var2.currentOriginX;
-                            var5 = var2.windowWidth;
-                            var6 = var6 + var5;
-                            var5 = var2.windowWidth;
-                            var9 = var9.bind(var11)(var6, var5);
-                            var5 = _closure4_slot2;
+                            var7 = _closure4_slot5;
+                            var9 = _closure4_slot1;
+                            var4 = _closure4_slot2;
                             var6 = undefined;
-                            var5 = var10.bind(var6)(var9, var5);
-                            var5 = var8.bind(var6)(var7, var5);
-                            var4.originX = var5;
-                            var0.animations = var4;
+                            var2 = 1;
+                            var2 = var9.bind(var6)(var2, var4);
+                            var2 = var8.bind(var6)(var7, var2);
+                            var3.opacity = var2;
+                            var5 = {};
+                            var2 = 0;
+                            var4 = var9.bind(var6)(var2, var4);
+                            var4 = var8.bind(var6)(var7, var4);
+                            var5.translateX = var4;
+                            var4 = new Array(1);
+                            var4[0] = var5;
+                            var3.transform = var4;
+                            var0.animations = var3;
+                            var3 = global;
                             var5 = var3.Object;
                             var4 = var5.assign;
                             var3 = {};
-                            var2 = var2.currentOriginX;
-                            var3.originX = var2;
-                            var2 = _closure4_slot5;
+                            var3.opacity = var2;
+                            var6 = {};
+                            var2 = -25;
+                            var6.translateX = var2;
+                            var2 = new Array(1);
+                            var2[0] = var6;
+                            var3.transform = var2;
+                            var2 = _closure4_slot4;
                             var2 = var4.bind(var5)(var3, var2);
                             var0.initialValues = var2;
-                            var1 = _closure4_slot4;
+                            var1 = _closure4_slot3;
                             var0.callback = var1;
                             return var0;
                         };
@@ -559,7 +572,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2.initialValues = var4;
                         var2.callback = var3;
                         var0.__closure = var2;
-                        var2 = 12812296890492.0;
+                        var2 = 3876464806620.0;
                         var0.__workletHash = var2;
                         var1 = _closure1_slot8;
                         var0.__initData = var1;
@@ -598,19 +611,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var3)(var4, var0, var1);
         return var0;
     };
-    var7 = var3.bind(var0)(var4);
-    var3 = 'SlideOutRight';
-    var7.presetName = var3;
+    var9 = var3.bind(var0)(var4);
+    var3 = 'FadeInLeft';
+    var9.presetName = var3;
     var3 = {};
-    var4 = 'function pnpm_SlideTs4(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{originX:delayFunction(delay,animation(Math.min(values.currentOriginX-values.windowWidth,-values.windowWidth),config))},initialValues:{originX:values.currentOriginX,...initialValues},callback:callback};}';
+    var4 = 'function pnpm_FadeTs4(){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{opacity:delayFunction(delay,animation(1,config)),transform:[{translateY:delayFunction(delay,animation(0,config))}]},initialValues:{opacity:0,transform:[{translateY:-25}],...initialValues},callback:callback};}';
     var3.code = var4;
     var _closure1_slot9 = var3;
-    var3 = var12[var10];
-    var3 = var11.bind(var0)(var3);
+    var3 = var14[var12];
+    var3 = var13.bind(var0)(var3);
     var4 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
-        var4 = function() { // Original name: SlideOutLeft, environment: var1
-            _fun34337: for (var _fun34337_ip = 0;;) switch (_fun34337_ip) {
+        var4 = function() { // Original name: FadeInUp, environment: var1
+            _fun34158: for (var _fun34158_ip = 0;;) switch (_fun34158_ip) {
                 case 0:
                     var5 = this;
                     var4 = undefined;
@@ -634,19 +647,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = 0;
                     var9 = var3 < var6;
                     if (!var9) {
-                        _fun34337_ip = 87;
-                        continue _fun34337
+                        _fun34158_ip = 87;
+                        continue _fun34158
                     }
                 case 72:
                     var9 = arguments[var3];
                     var7[var3] = var9;
                     var3 = var3 + 1;
                     if (var3 < var6) {
-                        _fun34337_ip = 72;
-                        continue _fun34337
+                        _fun34158_ip = 72;
+                        continue _fun34158
                     }
                 case 87:
-                    var3 = _closure1_slot14;
+                    var3 = _closure1_slot16;
                     var2 = _closure2_slot0;
                     var6 = new Array(0);
                     var0 = var6.concat;
@@ -671,47 +684,52 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var3 = 1;
                         var5 = var4[var3];
                         var _closure4_slot2 = var5;
-                        var4 = _closure3_slot0;
-                        var3 = var4.getDelay;
-                        var7 = var3.bind(var4)();
-                        var _closure4_slot3 = var7;
                         var3 = _closure3_slot0;
                         var3 = var3.callbackV;
-                        var _closure4_slot4 = var3;
-                        var2 = _closure3_slot0;
-                        var4 = var2.initialValues;
-                        var _closure4_slot5 = var4;
-                        var0 = function(arg0) { // Original name: pnpm_SlideTs4, environment: var0
-                            var2 = arg0;
+                        var _closure4_slot3 = var3;
+                        var4 = _closure3_slot0;
+                        var4 = var4.initialValues;
+                        var _closure4_slot4 = var4;
+                        var7 = _closure3_slot0;
+                        var2 = var7.getDelay;
+                        var7 = var2.bind(var7)();
+                        var _closure4_slot5 = var7;
+                        var0 = function() { // Original name: pnpm_FadeTs4, environment: var0
                             var0 = {};
-                            var4 = {};
+                            var3 = {};
                             var8 = _closure4_slot0;
-                            var7 = _closure4_slot3;
-                            var10 = _closure4_slot1;
-                            var3 = global;
-                            var11 = var3.Math;
-                            var9 = var11.min;
-                            var6 = var2.currentOriginX;
-                            var5 = var2.windowWidth;
-                            var6 = var6 - var5;
-                            var5 = var2.windowWidth;
-                            var5 = -var5;
-                            var9 = var9.bind(var11)(var6, var5);
-                            var5 = _closure4_slot2;
+                            var7 = _closure4_slot5;
+                            var9 = _closure4_slot1;
+                            var4 = _closure4_slot2;
                             var6 = undefined;
-                            var5 = var10.bind(var6)(var9, var5);
-                            var5 = var8.bind(var6)(var7, var5);
-                            var4.originX = var5;
-                            var0.animations = var4;
+                            var2 = 1;
+                            var2 = var9.bind(var6)(var2, var4);
+                            var2 = var8.bind(var6)(var7, var2);
+                            var3.opacity = var2;
+                            var5 = {};
+                            var2 = 0;
+                            var4 = var9.bind(var6)(var2, var4);
+                            var4 = var8.bind(var6)(var7, var4);
+                            var5.translateY = var4;
+                            var4 = new Array(1);
+                            var4[0] = var5;
+                            var3.transform = var4;
+                            var0.animations = var3;
+                            var3 = global;
                             var5 = var3.Object;
                             var4 = var5.assign;
                             var3 = {};
-                            var2 = var2.currentOriginX;
-                            var3.originX = var2;
-                            var2 = _closure4_slot5;
+                            var3.opacity = var2;
+                            var6 = {};
+                            var2 = -25;
+                            var6.translateY = var2;
+                            var2 = new Array(1);
+                            var2[0] = var6;
+                            var3.transform = var2;
+                            var2 = _closure4_slot4;
                             var2 = var4.bind(var5)(var3, var2);
                             var0.initialValues = var2;
-                            var1 = _closure4_slot4;
+                            var1 = _closure4_slot3;
                             var0.callback = var1;
                             return var0;
                         };
@@ -723,7 +741,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2.initialValues = var4;
                         var2.callback = var3;
                         var0.__closure = var2;
-                        var2 = 6273927341006.0;
+                        var2 = 14652570092763.0;
                         var0.__workletHash = var2;
                         var1 = _closure1_slot9;
                         var0.__initData = var1;
@@ -762,19 +780,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var3)(var4, var0, var1);
         return var0;
     };
-    var6 = var3.bind(var0)(var4);
-    var3 = 'SlideOutLeft';
-    var6.presetName = var3;
+    var8 = var3.bind(var0)(var4);
+    var3 = 'FadeInUp';
+    var8.presetName = var3;
     var3 = {};
-    var4 = 'function pnpm_SlideTs5(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{originY:delayFunction(delay,animation(values.targetOriginY,config))},initialValues:{originY:-values.windowHeight,...initialValues},callback:callback};}';
+    var4 = 'function pnpm_FadeTs5(){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{opacity:delayFunction(delay,animation(1,config)),transform:[{translateY:delayFunction(delay,animation(0,config))}]},initialValues:{opacity:0,transform:[{translateY:25}],...initialValues},callback:callback};}';
     var3.code = var4;
     var _closure1_slot10 = var3;
-    var3 = var12[var10];
-    var3 = var11.bind(var0)(var3);
+    var3 = var14[var12];
+    var3 = var13.bind(var0)(var3);
     var4 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
-        var4 = function() { // Original name: SlideInUp, environment: var1
-            _fun34342: for (var _fun34342_ip = 0;;) switch (_fun34342_ip) {
+        var4 = function() { // Original name: FadeInDown, environment: var1
+            _fun34163: for (var _fun34163_ip = 0;;) switch (_fun34163_ip) {
                 case 0:
                     var5 = this;
                     var4 = undefined;
@@ -798,19 +816,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = 0;
                     var9 = var3 < var6;
                     if (!var9) {
-                        _fun34342_ip = 87;
-                        continue _fun34342
+                        _fun34163_ip = 87;
+                        continue _fun34163
                     }
                 case 72:
                     var9 = arguments[var3];
                     var7[var3] = var9;
                     var3 = var3 + 1;
                     if (var3 < var6) {
-                        _fun34342_ip = 72;
-                        continue _fun34342
+                        _fun34163_ip = 72;
+                        continue _fun34163
                     }
                 case 87:
-                    var3 = _closure1_slot14;
+                    var3 = _closure1_slot16;
                     var2 = _closure2_slot0;
                     var6 = new Array(0);
                     var0 = var6.concat;
@@ -835,41 +853,52 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var3 = 1;
                         var5 = var4[var3];
                         var _closure4_slot2 = var5;
-                        var4 = _closure3_slot0;
-                        var3 = var4.getDelay;
-                        var7 = var3.bind(var4)();
-                        var _closure4_slot3 = var7;
                         var3 = _closure3_slot0;
                         var3 = var3.callbackV;
-                        var _closure4_slot4 = var3;
-                        var2 = _closure3_slot0;
-                        var4 = var2.initialValues;
-                        var _closure4_slot5 = var4;
-                        var0 = function(arg0) { // Original name: pnpm_SlideTs5, environment: var0
-                            var2 = arg0;
+                        var _closure4_slot3 = var3;
+                        var4 = _closure3_slot0;
+                        var4 = var4.initialValues;
+                        var _closure4_slot4 = var4;
+                        var7 = _closure3_slot0;
+                        var2 = var7.getDelay;
+                        var7 = var2.bind(var7)();
+                        var _closure4_slot5 = var7;
+                        var0 = function() { // Original name: pnpm_FadeTs5, environment: var0
                             var0 = {};
                             var3 = {};
-                            var7 = _closure4_slot0;
-                            var6 = _closure4_slot3;
+                            var8 = _closure4_slot0;
+                            var7 = _closure4_slot5;
                             var9 = _closure4_slot1;
-                            var8 = var2.targetOriginY;
                             var4 = _closure4_slot2;
-                            var5 = undefined;
-                            var4 = var9.bind(var5)(var8, var4);
-                            var4 = var7.bind(var5)(var6, var4);
-                            var3.originY = var4;
+                            var6 = undefined;
+                            var2 = 1;
+                            var2 = var9.bind(var6)(var2, var4);
+                            var2 = var8.bind(var6)(var7, var2);
+                            var3.opacity = var2;
+                            var5 = {};
+                            var2 = 0;
+                            var4 = var9.bind(var6)(var2, var4);
+                            var4 = var8.bind(var6)(var7, var4);
+                            var5.translateY = var4;
+                            var4 = new Array(1);
+                            var4[0] = var5;
+                            var3.transform = var4;
                             var0.animations = var3;
                             var3 = global;
                             var5 = var3.Object;
                             var4 = var5.assign;
                             var3 = {};
-                            var2 = var2.windowHeight;
-                            var2 = -var2;
-                            var3.originY = var2;
-                            var2 = _closure4_slot5;
+                            var3.opacity = var2;
+                            var6 = {};
+                            var2 = 25;
+                            var6.translateY = var2;
+                            var2 = new Array(1);
+                            var2[0] = var6;
+                            var3.transform = var2;
+                            var2 = _closure4_slot4;
                             var2 = var4.bind(var5)(var3, var2);
                             var0.initialValues = var2;
-                            var1 = _closure4_slot4;
+                            var1 = _closure4_slot3;
                             var0.callback = var1;
                             return var0;
                         };
@@ -881,7 +910,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2.initialValues = var4;
                         var2.callback = var3;
                         var0.__closure = var2;
-                        var2 = 9846507393044.0;
+                        var2 = 3370389664855.0;
                         var0.__workletHash = var2;
                         var1 = _closure1_slot10;
                         var0.__initData = var1;
@@ -920,19 +949,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var3)(var4, var0, var1);
         return var0;
     };
-    var5 = var3.bind(var0)(var4);
-    var3 = 'SlideInUp';
-    var5.presetName = var3;
+    var7 = var3.bind(var0)(var4);
+    var3 = 'FadeInDown';
+    var7.presetName = var3;
     var3 = {};
-    var4 = 'function pnpm_SlideTs6(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{originY:delayFunction(delay,animation(values.targetOriginY,config))},initialValues:{originY:values.targetOriginY+values.windowHeight,...initialValues},callback:callback};}';
+    var4 = 'function pnpm_FadeTs6(){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{opacity:delayFunction(delay,animation(0,config))},initialValues:{opacity:1,...initialValues},callback:callback};}';
     var3.code = var4;
     var _closure1_slot11 = var3;
-    var3 = var12[var10];
-    var3 = var11.bind(var0)(var3);
+    var3 = var14[var12];
+    var3 = var13.bind(var0)(var3);
     var4 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
-        var4 = function() { // Original name: SlideInDown, environment: var1
-            _fun34347: for (var _fun34347_ip = 0;;) switch (_fun34347_ip) {
+        var4 = function() { // Original name: FadeOut, environment: var1
+            _fun34168: for (var _fun34168_ip = 0;;) switch (_fun34168_ip) {
                 case 0:
                     var5 = this;
                     var4 = undefined;
@@ -956,19 +985,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = 0;
                     var9 = var3 < var6;
                     if (!var9) {
-                        _fun34347_ip = 87;
-                        continue _fun34347
+                        _fun34168_ip = 87;
+                        continue _fun34168
                     }
                 case 72:
                     var9 = arguments[var3];
                     var7[var3] = var9;
                     var3 = var3 + 1;
                     if (var3 < var6) {
-                        _fun34347_ip = 72;
-                        continue _fun34347
+                        _fun34168_ip = 72;
+                        continue _fun34168
                     }
                 case 87:
-                    var3 = _closure1_slot14;
+                    var3 = _closure1_slot16;
                     var2 = _closure2_slot0;
                     var6 = new Array(0);
                     var0 = var6.concat;
@@ -993,42 +1022,39 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var3 = 1;
                         var5 = var4[var3];
                         var _closure4_slot2 = var5;
-                        var4 = _closure3_slot0;
-                        var3 = var4.getDelay;
-                        var7 = var3.bind(var4)();
-                        var _closure4_slot3 = var7;
                         var3 = _closure3_slot0;
                         var3 = var3.callbackV;
-                        var _closure4_slot4 = var3;
-                        var2 = _closure3_slot0;
-                        var4 = var2.initialValues;
-                        var _closure4_slot5 = var4;
-                        var0 = function(arg0) { // Original name: pnpm_SlideTs6, environment: var0
-                            var2 = arg0;
+                        var _closure4_slot3 = var3;
+                        var4 = _closure3_slot0;
+                        var4 = var4.initialValues;
+                        var _closure4_slot4 = var4;
+                        var7 = _closure3_slot0;
+                        var2 = var7.getDelay;
+                        var7 = var2.bind(var7)();
+                        var _closure4_slot5 = var7;
+                        var0 = function() { // Original name: pnpm_FadeTs6, environment: var0
                             var0 = {};
-                            var3 = {};
-                            var7 = _closure4_slot0;
-                            var6 = _closure4_slot3;
-                            var9 = _closure4_slot1;
-                            var8 = var2.targetOriginY;
-                            var4 = _closure4_slot2;
-                            var5 = undefined;
-                            var4 = var9.bind(var5)(var8, var4);
-                            var4 = var7.bind(var5)(var6, var4);
-                            var3.originY = var4;
-                            var0.animations = var3;
-                            var3 = global;
-                            var5 = var3.Object;
+                            var2 = {};
+                            var6 = _closure4_slot0;
+                            var5 = _closure4_slot5;
+                            var8 = _closure4_slot1;
+                            var7 = _closure4_slot2;
+                            var4 = undefined;
+                            var3 = 0;
+                            var3 = var8.bind(var4)(var3, var7);
+                            var3 = var6.bind(var4)(var5, var3);
+                            var2.opacity = var3;
+                            var0.animations = var2;
+                            var2 = global;
+                            var5 = var2.Object;
                             var4 = var5.assign;
                             var3 = {};
-                            var6 = var2.targetOriginY;
-                            var2 = var2.windowHeight;
-                            var2 = var6 + var2;
-                            var3.originY = var2;
-                            var2 = _closure4_slot5;
+                            var2 = 1;
+                            var3.opacity = var2;
+                            var2 = _closure4_slot4;
                             var2 = var4.bind(var5)(var3, var2);
                             var0.initialValues = var2;
-                            var1 = _closure4_slot4;
+                            var1 = _closure4_slot3;
                             var0.callback = var1;
                             return var0;
                         };
@@ -1040,7 +1066,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2.initialValues = var4;
                         var2.callback = var3;
                         var0.__closure = var2;
-                        var2 = 9348728185019.0;
+                        var2 = 12496093665501.0;
                         var0.__workletHash = var2;
                         var1 = _closure1_slot11;
                         var0.__initData = var1;
@@ -1079,19 +1105,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var3)(var4, var0, var1);
         return var0;
     };
-    var4 = var3.bind(var0)(var4);
-    var3 = 'SlideInDown';
-    var4.presetName = var3;
+    var6 = var3.bind(var0)(var4);
+    var3 = 'FadeOut';
+    var6.presetName = var3;
     var3 = {};
-    var13 = 'function pnpm_SlideTs7(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{originY:delayFunction(delay,animation(Math.min(values.currentOriginY-values.windowHeight,-values.windowHeight),config))},initialValues:{originY:values.currentOriginY,...initialValues},callback:callback};}';
-    var3.code = var13;
+    var4 = 'function pnpm_FadeTs7(){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{opacity:delayFunction(delay,animation(0,config)),transform:[{translateX:delayFunction(delay,animation(25,config))}]},initialValues:{opacity:1,transform:[{translateX:0}],...initialValues},callback:callback};}';
+    var3.code = var4;
     var _closure1_slot12 = var3;
-    var3 = var12[var10];
-    var3 = var11.bind(var0)(var3);
-    var13 = var3.ComplexAnimationBuilder;
+    var3 = var14[var12];
+    var3 = var13.bind(var0)(var3);
+    var4 = var3.ComplexAnimationBuilder;
     var3 = function(arg0) { // Environment: var1
-        var4 = function() { // Original name: SlideOutUp, environment: var1
-            _fun34352: for (var _fun34352_ip = 0;;) switch (_fun34352_ip) {
+        var4 = function() { // Original name: FadeOutRight, environment: var1
+            _fun34173: for (var _fun34173_ip = 0;;) switch (_fun34173_ip) {
                 case 0:
                     var5 = this;
                     var4 = undefined;
@@ -1115,19 +1141,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = 0;
                     var9 = var3 < var6;
                     if (!var9) {
-                        _fun34352_ip = 87;
-                        continue _fun34352
+                        _fun34173_ip = 87;
+                        continue _fun34173
                     }
                 case 72:
                     var9 = arguments[var3];
                     var7[var3] = var9;
                     var3 = var3 + 1;
                     if (var3 < var6) {
-                        _fun34352_ip = 72;
-                        continue _fun34352
+                        _fun34173_ip = 72;
+                        continue _fun34173
                     }
                 case 87:
-                    var3 = _closure1_slot14;
+                    var3 = _closure1_slot16;
                     var2 = _closure2_slot0;
                     var6 = new Array(0);
                     var0 = var6.concat;
@@ -1152,47 +1178,52 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var3 = 1;
                         var5 = var4[var3];
                         var _closure4_slot2 = var5;
-                        var4 = _closure3_slot0;
-                        var3 = var4.getDelay;
-                        var7 = var3.bind(var4)();
-                        var _closure4_slot3 = var7;
                         var3 = _closure3_slot0;
                         var3 = var3.callbackV;
-                        var _closure4_slot4 = var3;
-                        var2 = _closure3_slot0;
-                        var4 = var2.initialValues;
-                        var _closure4_slot5 = var4;
-                        var0 = function(arg0) { // Original name: pnpm_SlideTs7, environment: var0
-                            var2 = arg0;
+                        var _closure4_slot3 = var3;
+                        var4 = _closure3_slot0;
+                        var4 = var4.initialValues;
+                        var _closure4_slot4 = var4;
+                        var7 = _closure3_slot0;
+                        var2 = var7.getDelay;
+                        var7 = var2.bind(var7)();
+                        var _closure4_slot5 = var7;
+                        var0 = function() { // Original name: pnpm_FadeTs7, environment: var0
                             var0 = {};
-                            var4 = {};
+                            var3 = {};
                             var8 = _closure4_slot0;
-                            var7 = _closure4_slot3;
+                            var7 = _closure4_slot5;
                             var10 = _closure4_slot1;
-                            var3 = global;
-                            var11 = var3.Math;
-                            var9 = var11.min;
-                            var6 = var2.currentOriginY;
-                            var5 = var2.windowHeight;
-                            var6 = var6 - var5;
-                            var5 = var2.windowHeight;
-                            var5 = -var5;
-                            var9 = var9.bind(var11)(var6, var5);
-                            var5 = _closure4_slot2;
+                            var9 = _closure4_slot2;
                             var6 = undefined;
-                            var5 = var10.bind(var6)(var9, var5);
-                            var5 = var8.bind(var6)(var7, var5);
-                            var4.originY = var5;
-                            var0.animations = var4;
+                            var2 = 0;
+                            var4 = var10.bind(var6)(var2, var9);
+                            var4 = var8.bind(var6)(var7, var4);
+                            var3.opacity = var4;
+                            var5 = {};
+                            var4 = 25;
+                            var4 = var10.bind(var6)(var4, var9);
+                            var4 = var8.bind(var6)(var7, var4);
+                            var5.translateX = var4;
+                            var4 = new Array(1);
+                            var4[0] = var5;
+                            var3.transform = var4;
+                            var0.animations = var3;
+                            var3 = global;
                             var5 = var3.Object;
                             var4 = var5.assign;
                             var3 = {};
-                            var2 = var2.currentOriginY;
-                            var3.originY = var2;
-                            var2 = _closure4_slot5;
+                            var6 = 1;
+                            var3.opacity = var6;
+                            var6 = {};
+                            var6.translateX = var2;
+                            var2 = new Array(1);
+                            var2[0] = var6;
+                            var3.transform = var2;
+                            var2 = _closure4_slot4;
                             var2 = var4.bind(var5)(var3, var2);
                             var0.initialValues = var2;
-                            var1 = _closure4_slot4;
+                            var1 = _closure4_slot3;
                             var0.callback = var1;
                             return var0;
                         };
@@ -1204,7 +1235,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2.initialValues = var4;
                         var2.callback = var3;
                         var0.__closure = var2;
-                        var2 = 14850009730573.0;
+                        var2 = 8966511332149.0;
                         var0.__workletHash = var2;
                         var1 = _closure1_slot12;
                         var0.__initData = var1;
@@ -1243,19 +1274,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var3)(var4, var0, var1);
         return var0;
     };
-    var3 = var3.bind(var0)(var13);
-    var13 = 'SlideOutUp';
-    var3.presetName = var13;
-    var13 = {};
-    var14 = 'function pnpm_SlideTs8(values){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{originY:delayFunction(delay,animation(Math.max(values.currentOriginY+values.windowHeight,values.windowHeight),config))},initialValues:{originY:values.currentOriginY,...initialValues},callback:callback};}';
-    var13.code = var14;
-    var _closure1_slot13 = var13;
-    var10 = var12[var10];
-    var10 = var11.bind(var0)(var10);
-    var10 = var10.ComplexAnimationBuilder;
-    var1 = function(arg0) { // Environment: var1
-        var4 = function() { // Original name: SlideOutDown, environment: var1
-            _fun34357: for (var _fun34357_ip = 0;;) switch (_fun34357_ip) {
+    var5 = var3.bind(var0)(var4);
+    var3 = 'FadeOutRight';
+    var5.presetName = var3;
+    var3 = {};
+    var4 = 'function pnpm_FadeTs8(){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{opacity:delayFunction(delay,animation(0,config)),transform:[{translateX:delayFunction(delay,animation(-25,config))}]},initialValues:{opacity:1,transform:[{translateX:0}],...initialValues},callback:callback};}';
+    var3.code = var4;
+    var _closure1_slot13 = var3;
+    var3 = var14[var12];
+    var3 = var13.bind(var0)(var3);
+    var4 = var3.ComplexAnimationBuilder;
+    var3 = function(arg0) { // Environment: var1
+        var4 = function() { // Original name: FadeOutLeft, environment: var1
+            _fun34178: for (var _fun34178_ip = 0;;) switch (_fun34178_ip) {
                 case 0:
                     var5 = this;
                     var4 = undefined;
@@ -1279,19 +1310,19 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                     var3 = 0;
                     var9 = var3 < var6;
                     if (!var9) {
-                        _fun34357_ip = 87;
-                        continue _fun34357
+                        _fun34178_ip = 87;
+                        continue _fun34178
                     }
                 case 72:
                     var9 = arguments[var3];
                     var7[var3] = var9;
                     var3 = var3 + 1;
                     if (var3 < var6) {
-                        _fun34357_ip = 72;
-                        continue _fun34357
+                        _fun34178_ip = 72;
+                        continue _fun34178
                     }
                 case 87:
-                    var3 = _closure1_slot14;
+                    var3 = _closure1_slot16;
                     var2 = _closure2_slot0;
                     var6 = new Array(0);
                     var0 = var6.concat;
@@ -1316,46 +1347,52 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var3 = 1;
                         var5 = var4[var3];
                         var _closure4_slot2 = var5;
-                        var4 = _closure3_slot0;
-                        var3 = var4.getDelay;
-                        var7 = var3.bind(var4)();
-                        var _closure4_slot3 = var7;
                         var3 = _closure3_slot0;
                         var3 = var3.callbackV;
-                        var _closure4_slot4 = var3;
-                        var2 = _closure3_slot0;
-                        var4 = var2.initialValues;
-                        var _closure4_slot5 = var4;
-                        var0 = function(arg0) { // Original name: pnpm_SlideTs8, environment: var0
-                            var2 = arg0;
+                        var _closure4_slot3 = var3;
+                        var4 = _closure3_slot0;
+                        var4 = var4.initialValues;
+                        var _closure4_slot4 = var4;
+                        var7 = _closure3_slot0;
+                        var2 = var7.getDelay;
+                        var7 = var2.bind(var7)();
+                        var _closure4_slot5 = var7;
+                        var0 = function() { // Original name: pnpm_FadeTs8, environment: var0
                             var0 = {};
-                            var4 = {};
+                            var3 = {};
                             var8 = _closure4_slot0;
-                            var7 = _closure4_slot3;
+                            var7 = _closure4_slot5;
                             var10 = _closure4_slot1;
-                            var3 = global;
-                            var11 = var3.Math;
-                            var9 = var11.max;
-                            var6 = var2.currentOriginY;
-                            var5 = var2.windowHeight;
-                            var6 = var6 + var5;
-                            var5 = var2.windowHeight;
-                            var9 = var9.bind(var11)(var6, var5);
-                            var5 = _closure4_slot2;
+                            var9 = _closure4_slot2;
                             var6 = undefined;
-                            var5 = var10.bind(var6)(var9, var5);
-                            var5 = var8.bind(var6)(var7, var5);
-                            var4.originY = var5;
-                            var0.animations = var4;
+                            var2 = 0;
+                            var4 = var10.bind(var6)(var2, var9);
+                            var4 = var8.bind(var6)(var7, var4);
+                            var3.opacity = var4;
+                            var5 = {};
+                            var4 = -25;
+                            var4 = var10.bind(var6)(var4, var9);
+                            var4 = var8.bind(var6)(var7, var4);
+                            var5.translateX = var4;
+                            var4 = new Array(1);
+                            var4[0] = var5;
+                            var3.transform = var4;
+                            var0.animations = var3;
+                            var3 = global;
                             var5 = var3.Object;
                             var4 = var5.assign;
                             var3 = {};
-                            var2 = var2.currentOriginY;
-                            var3.originY = var2;
-                            var2 = _closure4_slot5;
+                            var6 = 1;
+                            var3.opacity = var6;
+                            var6 = {};
+                            var6.translateX = var2;
+                            var2 = new Array(1);
+                            var2[0] = var6;
+                            var3.transform = var2;
+                            var2 = _closure4_slot4;
                             var2 = var4.bind(var5)(var3, var2);
                             var0.initialValues = var2;
-                            var1 = _closure4_slot4;
+                            var1 = _closure4_slot3;
                             var0.callback = var1;
                             return var0;
                         };
@@ -1367,7 +1404,7 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
                         var2.initialValues = var4;
                         var2.callback = var3;
                         var0.__closure = var2;
-                        var2 = 14065812257143.0;
+                        var2 = 7570822684087.0;
                         var0.__workletHash = var2;
                         var1 = _closure1_slot13;
                         var0.__initData = var1;
@@ -1406,16 +1443,356 @@ module.exports = (function(global, require, metroImportDefault, metroImportAll, 
         var0 = var2.bind(var3)(var4, var0, var1);
         return var0;
     };
-    var1 = var1.bind(var0)(var10);
-    var10 = 'SlideOutDown';
-    var1.presetName = var10;
-    var2.SlideInRight = var9;
-    var2.SlideInLeft = var8;
-    var2.SlideOutRight = var7;
-    var2.SlideOutLeft = var6;
-    var2.SlideInUp = var5;
-    var2.SlideInDown = var4;
-    var2.SlideOutUp = var3;
-    var2.SlideOutDown = var1;
+    var4 = var3.bind(var0)(var4);
+    var3 = 'FadeOutLeft';
+    var4.presetName = var3;
+    var3 = {};
+    var15 = 'function pnpm_FadeTs9(){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{opacity:delayFunction(delay,animation(0,config)),transform:[{translateY:delayFunction(delay,animation(-25,config))}]},initialValues:{opacity:1,transform:[{translateY:0}],...initialValues},callback:callback};}';
+    var3.code = var15;
+    var _closure1_slot14 = var3;
+    var3 = var14[var12];
+    var3 = var13.bind(var0)(var3);
+    var15 = var3.ComplexAnimationBuilder;
+    var3 = function(arg0) { // Environment: var1
+        var4 = function() { // Original name: FadeOutUp, environment: var1
+            _fun34183: for (var _fun34183_ip = 0;;) switch (_fun34183_ip) {
+                case 0:
+                    var5 = this;
+                    var4 = undefined;
+                    var8 = undefined;
+                    var6 = _closure1_slot1;
+                    var3 = _closure2_slot0;
+                    var3 = var6.bind(var4)(var5, var3);
+                    var6 = arguments.length;
+                    var3 = global;
+                    var3 = var3.Array;
+                    var7 = var3.prototype;
+                    var7 = Object.create(var7, {
+                        constructor: {
+                            value: var3
+                        }
+                    });
+                    var13 = var7;
+                    var12 = var6;
+                    var3 = new var13[var3](var12, var11);
+                    var7 = var3 instanceof Object ? var3 : var7;
+                    var3 = 0;
+                    var9 = var3 < var6;
+                    if (!var9) {
+                        _fun34183_ip = 87;
+                        continue _fun34183
+                    }
+                case 72:
+                    var9 = arguments[var3];
+                    var7[var3] = var9;
+                    var3 = var3 + 1;
+                    if (var3 < var6) {
+                        _fun34183_ip = 72;
+                        continue _fun34183
+                    }
+                case 87:
+                    var3 = _closure1_slot16;
+                    var2 = _closure2_slot0;
+                    var6 = new Array(0);
+                    var0 = var6.concat;
+                    var0 = var0.bind(var6)(var7);
+                    var0 = var3.bind(var4)(var5, var2, var0);
+                    var _closure3_slot0 = var0;
+                    var1 = function() { // Environment: var1
+                        var3 = _closure3_slot0;
+                        var1 = var3.getDelayFunction;
+                        var8 = var1.bind(var3)();
+                        var _closure4_slot0 = var8;
+                        var3 = _closure3_slot0;
+                        var1 = var3.getAnimationAndConfig;
+                        var6 = var1.bind(var3)();
+                        var5 = _closure1_slot0;
+                        var4 = undefined;
+                        var3 = 2;
+                        var4 = var5.bind(var4)(var6, var3);
+                        var3 = 0;
+                        var6 = var4[var3];
+                        var _closure4_slot1 = var6;
+                        var3 = 1;
+                        var5 = var4[var3];
+                        var _closure4_slot2 = var5;
+                        var3 = _closure3_slot0;
+                        var3 = var3.callbackV;
+                        var _closure4_slot3 = var3;
+                        var4 = _closure3_slot0;
+                        var4 = var4.initialValues;
+                        var _closure4_slot4 = var4;
+                        var7 = _closure3_slot0;
+                        var2 = var7.getDelay;
+                        var7 = var2.bind(var7)();
+                        var _closure4_slot5 = var7;
+                        var0 = function() { // Original name: pnpm_FadeTs9, environment: var0
+                            var0 = {};
+                            var3 = {};
+                            var8 = _closure4_slot0;
+                            var7 = _closure4_slot5;
+                            var10 = _closure4_slot1;
+                            var9 = _closure4_slot2;
+                            var6 = undefined;
+                            var2 = 0;
+                            var4 = var10.bind(var6)(var2, var9);
+                            var4 = var8.bind(var6)(var7, var4);
+                            var3.opacity = var4;
+                            var5 = {};
+                            var4 = -25;
+                            var4 = var10.bind(var6)(var4, var9);
+                            var4 = var8.bind(var6)(var7, var4);
+                            var5.translateY = var4;
+                            var4 = new Array(1);
+                            var4[0] = var5;
+                            var3.transform = var4;
+                            var0.animations = var3;
+                            var3 = global;
+                            var5 = var3.Object;
+                            var4 = var5.assign;
+                            var3 = {};
+                            var6 = 1;
+                            var3.opacity = var6;
+                            var6 = {};
+                            var6.translateY = var2;
+                            var2 = new Array(1);
+                            var2[0] = var6;
+                            var3.transform = var2;
+                            var2 = _closure4_slot4;
+                            var2 = var4.bind(var5)(var3, var2);
+                            var0.initialValues = var2;
+                            var1 = _closure4_slot3;
+                            var0.callback = var1;
+                            return var0;
+                        };
+                        var2 = {};
+                        var2.delayFunction = var8;
+                        var2.delay = var7;
+                        var2.animation = var6;
+                        var2.config = var5;
+                        var2.initialValues = var4;
+                        var2.callback = var3;
+                        var0.__closure = var2;
+                        var2 = 7080775562358.0;
+                        var0.__workletHash = var2;
+                        var1 = _closure1_slot14;
+                        var0.__initData = var1;
+                        return var0;
+                    };
+                    var0.build = var1;
+                    return var0;
+            }
+        };
+        var _closure2_slot0 = var4;
+        var5 = _closure1_slot5;
+        var3 = undefined;
+        var2 = arg0;
+        var2 = var5.bind(var3)(var4, var2);
+        var2 = _closure1_slot2;
+        var0 = {};
+        var5 = 'createInstance';
+        var0.key = var5;
+        var1 = function() { // Original name: createInstance, environment: var1
+            var0 = _closure2_slot0;
+            var1 = var0.prototype;
+            var1 = Object.create(var1, {
+                constructor: {
+                    value: var0
+                }
+            });
+            var2 = var1;
+            var0 = new var2[var0](var1);
+            var0 = var0 instanceof Object ? var0 : var1;
+            return var0;
+        };
+        var0.value = var1;
+        var1 = new Array(1);
+        var1[0] = var0;
+        var0 = null;
+        var0 = var2.bind(var3)(var4, var0, var1);
+        return var0;
+    };
+    var3 = var3.bind(var0)(var15);
+    var15 = 'FadeOutUp';
+    var3.presetName = var15;
+    var15 = {};
+    var16 = 'function pnpm_FadeTs10(){const{delayFunction,delay,animation,config,initialValues,callback}=this.__closure;return{animations:{opacity:delayFunction(delay,animation(0,config)),transform:[{translateY:delayFunction(delay,animation(25,config))}]},initialValues:{opacity:1,transform:[{translateY:0}],...initialValues},callback:callback};}';
+    var15.code = var16;
+    var _closure1_slot15 = var15;
+    var12 = var14[var12];
+    var12 = var13.bind(var0)(var12);
+    var12 = var12.ComplexAnimationBuilder;
+    var1 = function(arg0) { // Environment: var1
+        var4 = function() { // Original name: FadeOutDown, environment: var1
+            _fun34188: for (var _fun34188_ip = 0;;) switch (_fun34188_ip) {
+                case 0:
+                    var5 = this;
+                    var4 = undefined;
+                    var8 = undefined;
+                    var6 = _closure1_slot1;
+                    var3 = _closure2_slot0;
+                    var3 = var6.bind(var4)(var5, var3);
+                    var6 = arguments.length;
+                    var3 = global;
+                    var3 = var3.Array;
+                    var7 = var3.prototype;
+                    var7 = Object.create(var7, {
+                        constructor: {
+                            value: var3
+                        }
+                    });
+                    var13 = var7;
+                    var12 = var6;
+                    var3 = new var13[var3](var12, var11);
+                    var7 = var3 instanceof Object ? var3 : var7;
+                    var3 = 0;
+                    var9 = var3 < var6;
+                    if (!var9) {
+                        _fun34188_ip = 87;
+                        continue _fun34188
+                    }
+                case 72:
+                    var9 = arguments[var3];
+                    var7[var3] = var9;
+                    var3 = var3 + 1;
+                    if (var3 < var6) {
+                        _fun34188_ip = 72;
+                        continue _fun34188
+                    }
+                case 87:
+                    var3 = _closure1_slot16;
+                    var2 = _closure2_slot0;
+                    var6 = new Array(0);
+                    var0 = var6.concat;
+                    var0 = var0.bind(var6)(var7);
+                    var0 = var3.bind(var4)(var5, var2, var0);
+                    var _closure3_slot0 = var0;
+                    var1 = function() { // Environment: var1
+                        var3 = _closure3_slot0;
+                        var1 = var3.getDelayFunction;
+                        var8 = var1.bind(var3)();
+                        var _closure4_slot0 = var8;
+                        var3 = _closure3_slot0;
+                        var1 = var3.getAnimationAndConfig;
+                        var6 = var1.bind(var3)();
+                        var5 = _closure1_slot0;
+                        var4 = undefined;
+                        var3 = 2;
+                        var4 = var5.bind(var4)(var6, var3);
+                        var3 = 0;
+                        var6 = var4[var3];
+                        var _closure4_slot1 = var6;
+                        var3 = 1;
+                        var5 = var4[var3];
+                        var _closure4_slot2 = var5;
+                        var3 = _closure3_slot0;
+                        var3 = var3.callbackV;
+                        var _closure4_slot3 = var3;
+                        var4 = _closure3_slot0;
+                        var4 = var4.initialValues;
+                        var _closure4_slot4 = var4;
+                        var7 = _closure3_slot0;
+                        var2 = var7.getDelay;
+                        var7 = var2.bind(var7)();
+                        var _closure4_slot5 = var7;
+                        var0 = function() { // Original name: pnpm_FadeTs10, environment: var0
+                            var0 = {};
+                            var3 = {};
+                            var8 = _closure4_slot0;
+                            var7 = _closure4_slot5;
+                            var10 = _closure4_slot1;
+                            var9 = _closure4_slot2;
+                            var6 = undefined;
+                            var2 = 0;
+                            var4 = var10.bind(var6)(var2, var9);
+                            var4 = var8.bind(var6)(var7, var4);
+                            var3.opacity = var4;
+                            var5 = {};
+                            var4 = 25;
+                            var4 = var10.bind(var6)(var4, var9);
+                            var4 = var8.bind(var6)(var7, var4);
+                            var5.translateY = var4;
+                            var4 = new Array(1);
+                            var4[0] = var5;
+                            var3.transform = var4;
+                            var0.animations = var3;
+                            var3 = global;
+                            var5 = var3.Object;
+                            var4 = var5.assign;
+                            var3 = {};
+                            var6 = 1;
+                            var3.opacity = var6;
+                            var6 = {};
+                            var6.translateY = var2;
+                            var2 = new Array(1);
+                            var2[0] = var6;
+                            var3.transform = var2;
+                            var2 = _closure4_slot4;
+                            var2 = var4.bind(var5)(var3, var2);
+                            var0.initialValues = var2;
+                            var1 = _closure4_slot3;
+                            var0.callback = var1;
+                            return var0;
+                        };
+                        var2 = {};
+                        var2.delayFunction = var8;
+                        var2.delay = var7;
+                        var2.animation = var6;
+                        var2.config = var5;
+                        var2.initialValues = var4;
+                        var2.callback = var3;
+                        var0.__closure = var2;
+                        var2 = 4897427935171.0;
+                        var0.__workletHash = var2;
+                        var1 = _closure1_slot15;
+                        var0.__initData = var1;
+                        return var0;
+                    };
+                    var0.build = var1;
+                    return var0;
+            }
+        };
+        var _closure2_slot0 = var4;
+        var5 = _closure1_slot5;
+        var3 = undefined;
+        var2 = arg0;
+        var2 = var5.bind(var3)(var4, var2);
+        var2 = _closure1_slot2;
+        var0 = {};
+        var5 = 'createInstance';
+        var0.key = var5;
+        var1 = function() { // Original name: createInstance, environment: var1
+            var0 = _closure2_slot0;
+            var1 = var0.prototype;
+            var1 = Object.create(var1, {
+                constructor: {
+                    value: var0
+                }
+            });
+            var2 = var1;
+            var0 = new var2[var0](var1);
+            var0 = var0 instanceof Object ? var0 : var1;
+            return var0;
+        };
+        var0.value = var1;
+        var1 = new Array(1);
+        var1[0] = var0;
+        var0 = null;
+        var0 = var2.bind(var3)(var4, var0, var1);
+        return var0;
+    };
+    var1 = var1.bind(var0)(var12);
+    var12 = 'FadeOutDown';
+    var1.presetName = var12;
+    var2.FadeIn = var11;
+    var2.FadeInRight = var10;
+    var2.FadeInLeft = var9;
+    var2.FadeInUp = var8;
+    var2.FadeInDown = var7;
+    var2.FadeOut = var6;
+    var2.FadeOutRight = var5;
+    var2.FadeOutLeft = var4;
+    var2.FadeOutUp = var3;
+    var2.FadeOutDown = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 6, 7, 15, 17, 18, 3748]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 6, 7, 15, 17, 18, 3750]);

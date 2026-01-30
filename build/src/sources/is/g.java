@@ -6,7 +6,7 @@ import ls.f0;
 public interface g extends w, v {
 
     /* renamed from: g  reason: collision with root package name */
-    public static final b f31185g = b.f31186a;
+    public static final b f31201g = b.f31202a;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class a {
@@ -19,16 +19,16 @@ public interface g extends w, v {
     public static final class b {
 
         /* renamed from: a  reason: collision with root package name */
-        static final /* synthetic */ b f31186a = new b();
+        static final /* synthetic */ b f31202a = new b();
 
         /* renamed from: b  reason: collision with root package name */
-        private static final int f31187b = f0.b("kotlinx.coroutines.channels.defaultBuffer", 64, 1, 2147483646);
+        private static final int f31203b = f0.b("kotlinx.coroutines.channels.defaultBuffer", 64, 1, 2147483646);
 
         private b() {
         }
 
         public final int a() {
-            return f31187b;
+            return f31203b;
         }
     }
 }

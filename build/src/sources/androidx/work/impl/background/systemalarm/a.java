@@ -29,7 +29,7 @@ public abstract class a {
         j E = workDatabase.E();
         i a10 = E.a(mVar);
         if (a10 != null) {
-            b(context, mVar, a10.f44885c);
+            b(context, mVar, a10.f44901c);
             m e10 = m.e();
             String str = f5530a;
             e10.a(str, "Removing SystemIdInfo for workSpecId (" + mVar + ")");
@@ -52,8 +52,8 @@ public abstract class a {
         j E = workDatabase.E();
         i a10 = E.a(mVar);
         if (a10 != null) {
-            b(context, mVar, a10.f44885c);
-            d(context, mVar, a10.f44885c, j10);
+            b(context, mVar, a10.f44901c);
+            d(context, mVar, a10.f44901c, j10);
             return;
         }
         int c10 = new h(workDatabase).c();

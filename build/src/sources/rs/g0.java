@@ -6,25 +6,25 @@ import kotlin.jvm.internal.MutablePropertyReference1Impl;
 final class g0 {
 
     /* renamed from: a  reason: collision with root package name */
-    public static final g0 f48489a = new g0();
+    public static final g0 f48505a = new g0();
 
     /* renamed from: b  reason: collision with root package name */
-    private static final c f48490b;
+    private static final c f48506b;
 
     /* renamed from: c  reason: collision with root package name */
-    private static final ts.b0 f48491c;
+    private static final ts.b0 f48507c;
 
     /* renamed from: d  reason: collision with root package name */
-    private static final ts.b0 f48492d;
+    private static final ts.b0 f48508d;
 
     /* renamed from: e  reason: collision with root package name */
-    private static final ts.b0 f48493e;
+    private static final ts.b0 f48509e;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
     public static final class c implements ts.m {
 
         /* renamed from: a  reason: collision with root package name */
-        private final ts.x f48496a = new ts.x(new MutablePropertyReference1Impl() { // from class: rs.g0.c.a
+        private final ts.x f48512a = new ts.x(new MutablePropertyReference1Impl() { // from class: rs.g0.c.a
             @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.KProperty1
             public Object get(Object obj) {
                 return ((n0) obj).isNegative();
@@ -42,7 +42,7 @@ final class g0 {
         @Override // ts.m
         /* renamed from: b */
         public ts.x isNegative() {
-            return this.f48496a;
+            return this.f48512a;
         }
 
         @Override // ts.m
@@ -83,8 +83,8 @@ final class g0 {
 
     static {
         c cVar = new c();
-        f48490b = cVar;
-        f48491c = new ts.b0(new ts.x(new MutablePropertyReference1Impl() { // from class: rs.g0.d
+        f48506b = cVar;
+        f48507c = new ts.b0(new ts.x(new MutablePropertyReference1Impl() { // from class: rs.g0.d
             @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.KProperty1
             public Object get(Object obj) {
                 return ((n0) obj).b();
@@ -95,7 +95,7 @@ final class g0 {
                 ((n0) obj).q((Integer) obj2);
             }
         }), 0, 18, null, 0, cVar, 8, null);
-        f48492d = new ts.b0(new ts.x(new MutablePropertyReference1Impl() { // from class: rs.g0.a
+        f48508d = new ts.b0(new ts.x(new MutablePropertyReference1Impl() { // from class: rs.g0.a
             @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.KProperty1
             public Object get(Object obj) {
                 return ((n0) obj).k();
@@ -106,7 +106,7 @@ final class g0 {
                 ((n0) obj).n((Integer) obj2);
             }
         }), 0, 59, null, 0, cVar, 8, null);
-        f48493e = new ts.b0(new ts.x(new MutablePropertyReference1Impl() { // from class: rs.g0.b
+        f48509e = new ts.b0(new ts.x(new MutablePropertyReference1Impl() { // from class: rs.g0.b
             @Override // kotlin.jvm.internal.MutablePropertyReference1Impl, kotlin.jvm.internal.MutablePropertyReference1, kotlin.reflect.KProperty1
             public Object get(Object obj) {
                 return ((n0) obj).w();
@@ -123,14 +123,14 @@ final class g0 {
     }
 
     public final ts.b0 a() {
-        return f48492d;
+        return f48508d;
     }
 
     public final ts.b0 b() {
-        return f48493e;
+        return f48509e;
     }
 
     public final ts.b0 c() {
-        return f48491c;
+        return f48507c;
     }
 }

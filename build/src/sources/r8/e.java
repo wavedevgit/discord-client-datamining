@@ -3,16 +3,16 @@ package r8;
 public class e implements d {
 
     /* renamed from: a  reason: collision with root package name */
-    private static e f48059a;
+    private static e f48075a;
 
     public static synchronized e b() {
         e eVar;
         synchronized (e.class) {
             try {
-                if (f48059a == null) {
-                    f48059a = new e();
+                if (f48075a == null) {
+                    f48075a = new e();
                 }
-                eVar = f48059a;
+                eVar = f48075a;
             } catch (Throwable th2) {
                 throw th2;
             }

@@ -10,7 +10,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public abstract class e0 {
 
     /* renamed from: a  reason: collision with root package name */
-    private static final Map f30803a = new ConcurrentHashMap();
+    private static final Map f30819a = new ConcurrentHashMap();
 
     public static List a(e7 e7Var) {
         ArrayList arrayList = new ArrayList();
@@ -44,26 +44,26 @@ public abstract class e0 {
 
     public static boolean b(List list, String str) {
         if (str != null && list != null && !list.isEmpty()) {
-            Map map = f30803a;
+            Map map = f30819a;
             if (map.containsKey(str)) {
                 return ((Boolean) map.get(str)).booleanValue();
             }
             Iterator it = list.iterator();
             while (it.hasNext()) {
                 if (((io.sentry.e0) it.next()).a().equalsIgnoreCase(str)) {
-                    f30803a.put(str, Boolean.TRUE);
+                    f30819a.put(str, Boolean.TRUE);
                     return true;
                 }
             }
             Iterator it2 = list.iterator();
             while (it2.hasNext()) {
                 if (((io.sentry.e0) it2.next()).b(str)) {
-                    f30803a.put(str, Boolean.TRUE);
+                    f30819a.put(str, Boolean.TRUE);
                     return true;
                 }
                 continue;
             }
-            f30803a.put(str, Boolean.FALSE);
+            f30819a.put(str, Boolean.FALSE);
         }
         return false;
     }

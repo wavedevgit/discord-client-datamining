@@ -1,20 +1,20 @@
 // null
 module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
     var1 = function(arg0, arg1) { // Original name: eq, environment: var0
-        _fun8301: for (var _fun8301_ip = 0;;) switch (_fun8301_ip) {
+        _fun8302: for (var _fun8302_ip = 0;;) switch (_fun8302_ip) {
             case 0:
                 var1 = arg0;
                 var2 = arg1;
                 var0 = var1 === var2;
                 if (var0) {
-                    _fun8301_ip = 27;
-                    continue _fun8301
+                    _fun8302_ip = 27;
+                    continue _fun8302
                 }
             case 13:
                 var1 = var1 != var1;
                 if (!var1) {
-                    _fun8301_ip = 24;
-                    continue _fun8301
+                    _fun8302_ip = 24;
+                    continue _fun8302
                 }
             case 20:
                 var1 = var2 != var2;

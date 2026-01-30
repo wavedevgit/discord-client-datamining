@@ -17,19 +17,19 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class a implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private List f30436d = new ArrayList();
+    private List f30452d = new ArrayList();
 
     /* renamed from: e  reason: collision with root package name */
-    private List f30437e = new ArrayList();
+    private List f30453e = new ArrayList();
 
     /* renamed from: i  reason: collision with root package name */
-    private List f30438i = new ArrayList();
+    private List f30454i = new ArrayList();
 
     /* renamed from: o  reason: collision with root package name */
-    private Map f30439o = new HashMap();
+    private Map f30455o = new HashMap();
 
     /* renamed from: p  reason: collision with root package name */
-    private Map f30440p;
+    private Map f30456p;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class b implements m1 {
@@ -75,7 +75,7 @@ public final class a implements w1 {
                         if (g22 == null) {
                             break;
                         } else {
-                            aVar.f30438i = g22;
+                            aVar.f30454i = g22;
                             break;
                         }
                     case 1:
@@ -83,7 +83,7 @@ public final class a implements w1 {
                         if (list == null) {
                             break;
                         } else {
-                            aVar.f30437e = list;
+                            aVar.f30453e = list;
                             break;
                         }
                     case 2:
@@ -91,7 +91,7 @@ public final class a implements w1 {
                         if (g23 == null) {
                             break;
                         } else {
-                            aVar.f30436d = g23;
+                            aVar.f30452d = g23;
                             break;
                         }
                     case 3:
@@ -99,7 +99,7 @@ public final class a implements w1 {
                         if (u12 == null) {
                             break;
                         } else {
-                            aVar.f30439o = u12;
+                            aVar.f30455o = u12;
                             break;
                         }
                     default:
@@ -142,20 +142,20 @@ public final class a implements w1 {
     }
 
     public void e(Map map) {
-        this.f30440p = map;
+        this.f30456p = map;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        f3Var.e("samples").j(iLogger, this.f30436d);
-        f3Var.e("stacks").j(iLogger, this.f30437e);
-        f3Var.e("frames").j(iLogger, this.f30438i);
-        f3Var.e("thread_metadata").j(iLogger, this.f30439o);
-        Map map = this.f30440p;
+        f3Var.e("samples").j(iLogger, this.f30452d);
+        f3Var.e("stacks").j(iLogger, this.f30453e);
+        f3Var.e("frames").j(iLogger, this.f30454i);
+        f3Var.e("thread_metadata").j(iLogger, this.f30455o);
+        Map map = this.f30456p;
         if (map != null) {
             for (String str : map.keySet()) {
-                f3Var.e(str).j(iLogger, this.f30440p.get(str));
+                f3Var.e(str).j(iLogger, this.f30456p.get(str));
             }
         }
         f3Var.y();

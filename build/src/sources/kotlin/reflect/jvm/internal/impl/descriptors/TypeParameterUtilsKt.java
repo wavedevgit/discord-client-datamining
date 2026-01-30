@@ -40,7 +40,7 @@ public final class TypeParameterUtilsKt {
         if (!classifierDescriptorWithTypeParameters.isInner() && !(classifierDescriptorWithTypeParameters.getContainingDeclaration() instanceof CallableDescriptor)) {
             return declaredTypeParameters;
         }
-        List Y = kotlin.sequences.k.Y(kotlin.sequences.k.L(kotlin.sequences.k.F(kotlin.sequences.k.W(DescriptorUtilsKt.getParents(classifierDescriptorWithTypeParameters), i.f33669d), j.f33872d), k.f33873d));
+        List Y = kotlin.sequences.k.Y(kotlin.sequences.k.L(kotlin.sequences.k.F(kotlin.sequences.k.W(DescriptorUtilsKt.getParents(classifierDescriptorWithTypeParameters), i.f33685d), j.f33888d), k.f33889d));
         Iterator it = DescriptorUtilsKt.getParents(classifierDescriptorWithTypeParameters).iterator();
         while (true) {
             list = null;

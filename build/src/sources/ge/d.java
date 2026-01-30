@@ -18,67 +18,67 @@ import zd.b;
 public final class d {
 
     /* renamed from: a  reason: collision with root package name */
-    public final String f26679a;
+    public final String f26695a;
 
     /* renamed from: b  reason: collision with root package name */
-    public final String f26680b;
+    public final String f26696b;
 
     /* renamed from: c  reason: collision with root package name */
-    public final boolean f26681c;
+    public final boolean f26697c;
 
     /* renamed from: d  reason: collision with root package name */
-    public final long f26682d;
+    public final long f26698d;
 
     /* renamed from: e  reason: collision with root package name */
-    public final long f26683e;
+    public final long f26699e;
 
     /* renamed from: f  reason: collision with root package name */
-    public final g f26684f;
+    public final g f26700f;
 
     /* renamed from: g  reason: collision with root package name */
-    private final String[] f26685g;
+    private final String[] f26701g;
 
     /* renamed from: h  reason: collision with root package name */
-    public final String f26686h;
+    public final String f26702h;
 
     /* renamed from: i  reason: collision with root package name */
-    public final String f26687i;
+    public final String f26703i;
 
     /* renamed from: j  reason: collision with root package name */
-    public final d f26688j;
+    public final d f26704j;
 
     /* renamed from: k  reason: collision with root package name */
-    private final HashMap f26689k;
+    private final HashMap f26705k;
 
     /* renamed from: l  reason: collision with root package name */
-    private final HashMap f26690l;
+    private final HashMap f26706l;
 
     /* renamed from: m  reason: collision with root package name */
-    private List f26691m;
+    private List f26707m;
 
     private d(String str, String str2, long j10, long j11, g gVar, String[] strArr, String str3, String str4, d dVar) {
         boolean z10;
-        this.f26679a = str;
-        this.f26680b = str2;
-        this.f26687i = str4;
-        this.f26684f = gVar;
-        this.f26685g = strArr;
+        this.f26695a = str;
+        this.f26696b = str2;
+        this.f26703i = str4;
+        this.f26700f = gVar;
+        this.f26701g = strArr;
         if (str2 != null) {
             z10 = true;
         } else {
             z10 = false;
         }
-        this.f26681c = z10;
-        this.f26682d = j10;
-        this.f26683e = j11;
-        this.f26686h = (String) ne.a.e(str3);
-        this.f26688j = dVar;
-        this.f26689k = new HashMap();
-        this.f26690l = new HashMap();
+        this.f26697c = z10;
+        this.f26698d = j10;
+        this.f26699e = j11;
+        this.f26702h = (String) ne.a.e(str3);
+        this.f26704j = dVar;
+        this.f26705k = new HashMap();
+        this.f26706l = new HashMap();
     }
 
     private void b(Map map, b.C0779b c0779b, int i10, int i11, int i12) {
-        g f10 = f.f(this.f26684f, this.f26685g, map);
+        g f10 = f.f(this.f26700f, this.f26701g, map);
         SpannableStringBuilder spannableStringBuilder = (SpannableStringBuilder) c0779b.e();
         if (spannableStringBuilder == null) {
             spannableStringBuilder = new SpannableStringBuilder();
@@ -86,8 +86,8 @@ public final class d {
         }
         SpannableStringBuilder spannableStringBuilder2 = spannableStringBuilder;
         if (f10 != null) {
-            f.a(spannableStringBuilder2, i10, i11, f10, this.f26688j, map, i12);
-            if ("p".equals(this.f26679a)) {
+            f.a(spannableStringBuilder2, i10, i11, f10, this.f26704j, map, i12);
+            if ("p".equals(this.f26695a)) {
                 if (f10.k() != Float.MAX_VALUE) {
                     c0779b.m((f10.k() * (-90.0f)) / 100.0f);
                 }
@@ -156,21 +156,21 @@ public final class d {
 
     private void i(TreeSet treeSet, boolean z10) {
         boolean z11;
-        boolean equals = "p".equals(this.f26679a);
-        boolean equals2 = "div".equals(this.f26679a);
-        if (z10 || equals || (equals2 && this.f26687i != null)) {
-            long j10 = this.f26682d;
+        boolean equals = "p".equals(this.f26695a);
+        boolean equals2 = "div".equals(this.f26695a);
+        if (z10 || equals || (equals2 && this.f26703i != null)) {
+            long j10 = this.f26698d;
             if (j10 != -9223372036854775807L) {
                 treeSet.add(Long.valueOf(j10));
             }
-            long j11 = this.f26683e;
+            long j11 = this.f26699e;
             if (j11 != -9223372036854775807L) {
                 treeSet.add(Long.valueOf(j11));
             }
         }
-        if (this.f26691m != null) {
-            for (int i10 = 0; i10 < this.f26691m.size(); i10++) {
-                d dVar = (d) this.f26691m.get(i10);
+        if (this.f26707m != null) {
+            for (int i10 = 0; i10 < this.f26707m.size(); i10++) {
+                d dVar = (d) this.f26707m.get(i10);
                 if (!z10 && !equals) {
                     z11 = false;
                 } else {
@@ -191,11 +191,11 @@ public final class d {
     }
 
     private void n(long j10, String str, List list) {
-        if (!"".equals(this.f26686h)) {
-            str = this.f26686h;
+        if (!"".equals(this.f26702h)) {
+            str = this.f26702h;
         }
-        if (m(j10) && "div".equals(this.f26679a) && this.f26687i != null) {
-            list.add(new Pair(str, this.f26687i));
+        if (m(j10) && "div".equals(this.f26695a) && this.f26703i != null) {
+            list.add(new Pair(str, this.f26703i));
             return;
         }
         for (int i10 = 0; i10 < g(); i10++) {
@@ -206,12 +206,12 @@ public final class d {
     private void o(long j10, Map map, Map map2, String str, Map map3) {
         String str2;
         if (m(j10)) {
-            if ("".equals(this.f26686h)) {
+            if ("".equals(this.f26702h)) {
                 str2 = str;
             } else {
-                str2 = this.f26686h;
+                str2 = this.f26702h;
             }
-            Iterator it = this.f26690l.entrySet().iterator();
+            Iterator it = this.f26706l.entrySet().iterator();
             while (true) {
                 int i10 = 0;
                 if (!it.hasNext()) {
@@ -219,12 +219,12 @@ public final class d {
                 }
                 Map.Entry entry = (Map.Entry) it.next();
                 String str3 = (String) entry.getKey();
-                if (this.f26689k.containsKey(str3)) {
-                    i10 = ((Integer) this.f26689k.get(str3)).intValue();
+                if (this.f26705k.containsKey(str3)) {
+                    i10 = ((Integer) this.f26705k.get(str3)).intValue();
                 }
                 int intValue = ((Integer) entry.getValue()).intValue();
                 if (i10 != intValue) {
-                    b(map, (b.C0779b) ne.a.e((b.C0779b) map3.get(str3)), i10, intValue, ((e) ne.a.e((e) map2.get(str2))).f26701j);
+                    b(map, (b.C0779b) ne.a.e((b.C0779b) map3.get(str3)), i10, intValue, ((e) ne.a.e((e) map2.get(str2))).f26717j);
                 }
             }
             for (int i11 = 0; i11 < g(); i11++) {
@@ -237,22 +237,22 @@ public final class d {
         boolean z11;
         Map map2;
         long j11;
-        this.f26689k.clear();
-        this.f26690l.clear();
-        if (!"metadata".equals(this.f26679a)) {
-            if (!"".equals(this.f26686h)) {
-                str = this.f26686h;
+        this.f26705k.clear();
+        this.f26706l.clear();
+        if (!"metadata".equals(this.f26695a)) {
+            if (!"".equals(this.f26702h)) {
+                str = this.f26702h;
             }
             String str2 = str;
-            if (this.f26681c && z10) {
-                k(str2, map).append((CharSequence) ne.a.e(this.f26680b));
-            } else if ("br".equals(this.f26679a) && z10) {
+            if (this.f26697c && z10) {
+                k(str2, map).append((CharSequence) ne.a.e(this.f26696b));
+            } else if ("br".equals(this.f26695a) && z10) {
                 k(str2, map).append('\n');
             } else if (m(j10)) {
                 for (Map.Entry entry : map.entrySet()) {
-                    this.f26689k.put((String) entry.getKey(), Integer.valueOf(((CharSequence) ne.a.e(((b.C0779b) entry.getValue()).e())).length()));
+                    this.f26705k.put((String) entry.getKey(), Integer.valueOf(((CharSequence) ne.a.e(((b.C0779b) entry.getValue()).e())).length()));
                 }
-                boolean equals = "p".equals(this.f26679a);
+                boolean equals = "p".equals(this.f26695a);
                 int i10 = 0;
                 while (i10 < g()) {
                     d f10 = f(i10);
@@ -275,21 +275,21 @@ public final class d {
                     f.c(k(str2, map3));
                 }
                 for (Map.Entry entry2 : map3.entrySet()) {
-                    this.f26690l.put((String) entry2.getKey(), Integer.valueOf(((CharSequence) ne.a.e(((b.C0779b) entry2.getValue()).e())).length()));
+                    this.f26706l.put((String) entry2.getKey(), Integer.valueOf(((CharSequence) ne.a.e(((b.C0779b) entry2.getValue()).e())).length()));
                 }
             }
         }
     }
 
     public void a(d dVar) {
-        if (this.f26691m == null) {
-            this.f26691m = new ArrayList();
+        if (this.f26707m == null) {
+            this.f26707m = new ArrayList();
         }
-        this.f26691m.add(dVar);
+        this.f26707m.add(dVar);
     }
 
     public d f(int i10) {
-        List list = this.f26691m;
+        List list = this.f26707m;
         if (list != null) {
             return (d) list.get(i10);
         }
@@ -297,7 +297,7 @@ public final class d {
     }
 
     public int g() {
-        List list = this.f26691m;
+        List list = this.f26707m;
         if (list == null) {
             return 0;
         }
@@ -306,10 +306,10 @@ public final class d {
 
     public List h(long j10, Map map, Map map2, Map map3) {
         List<Pair> arrayList = new ArrayList();
-        n(j10, this.f26686h, arrayList);
+        n(j10, this.f26702h, arrayList);
         TreeMap treeMap = new TreeMap();
-        p(j10, false, this.f26686h, treeMap);
-        o(j10, map, map2, this.f26686h, treeMap);
+        p(j10, false, this.f26702h, treeMap);
+        o(j10, map, map2, this.f26702h, treeMap);
         ArrayList arrayList2 = new ArrayList();
         for (Pair pair : arrayList) {
             String str = (String) map3.get(pair.second);
@@ -317,19 +317,19 @@ public final class d {
                 byte[] decode = Base64.decode(str, 0);
                 Bitmap decodeByteArray = BitmapFactory.decodeByteArray(decode, 0, decode.length);
                 e eVar = (e) ne.a.e((e) map2.get(pair.first));
-                arrayList2.add(new b.C0779b().f(decodeByteArray).k(eVar.f26693b).l(0).h(eVar.f26694c, 0).i(eVar.f26696e).n(eVar.f26697f).g(eVar.f26698g).r(eVar.f26701j).a());
+                arrayList2.add(new b.C0779b().f(decodeByteArray).k(eVar.f26709b).l(0).h(eVar.f26710c, 0).i(eVar.f26712e).n(eVar.f26713f).g(eVar.f26714g).r(eVar.f26717j).a());
             }
         }
         for (Map.Entry entry : treeMap.entrySet()) {
             e eVar2 = (e) ne.a.e((e) map2.get(entry.getKey()));
             b.C0779b c0779b = (b.C0779b) entry.getValue();
             e((SpannableStringBuilder) ne.a.e(c0779b.e()));
-            c0779b.h(eVar2.f26694c, eVar2.f26695d);
-            c0779b.i(eVar2.f26696e);
-            c0779b.k(eVar2.f26693b);
-            c0779b.n(eVar2.f26697f);
-            c0779b.q(eVar2.f26700i, eVar2.f26699h);
-            c0779b.r(eVar2.f26701j);
+            c0779b.h(eVar2.f26710c, eVar2.f26711d);
+            c0779b.i(eVar2.f26712e);
+            c0779b.k(eVar2.f26709b);
+            c0779b.n(eVar2.f26713f);
+            c0779b.q(eVar2.f26716i, eVar2.f26715h);
+            c0779b.r(eVar2.f26717j);
             arrayList2.add(c0779b.a());
         }
         return arrayList2;
@@ -349,15 +349,15 @@ public final class d {
     }
 
     public String[] l() {
-        return this.f26685g;
+        return this.f26701g;
     }
 
     public boolean m(long j10) {
-        long j11 = this.f26682d;
-        if (j11 != -9223372036854775807L || this.f26683e != -9223372036854775807L) {
-            if (j11 > j10 || this.f26683e != -9223372036854775807L) {
-                if (j11 != -9223372036854775807L || j10 >= this.f26683e) {
-                    if (j11 <= j10 && j10 < this.f26683e) {
+        long j11 = this.f26698d;
+        if (j11 != -9223372036854775807L || this.f26699e != -9223372036854775807L) {
+            if (j11 > j10 || this.f26699e != -9223372036854775807L) {
+                if (j11 != -9223372036854775807L || j10 >= this.f26699e) {
+                    if (j11 <= j10 && j10 < this.f26699e) {
                         return true;
                     }
                     return false;

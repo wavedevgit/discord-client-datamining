@@ -8,7 +8,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot0 = var7;
     var _closure1_slot1 = var8;
     var5 = function(arg0, arg1) { // Original name: sendVideoProgress, environment: var1
-        _fun47377: for (var _fun47377_ip = 0;;) switch (_fun47377_ip) {
+        _fun47424: for (var _fun47424_ip = 0;;) switch (_fun47424_ip) {
             case 0:
                 var1 = arg0;
                 var4 = _closure1_slot0;
@@ -20,8 +20,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var4.isQuestExpired;
                 var3 = var3.bind(var4)(var1);
                 if (var3) {
-                    _fun47377_ip = 69;
-                    continue _fun47377
+                    _fun47424_ip = 69;
+                    continue _fun47424
                 }
             case 42:
                 var6 = var1.userStatus;
@@ -29,8 +29,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var5 == var6;
                 var4 = undefined;
                 if (var7) {
-                    _fun47377_ip = 65;
-                    continue _fun47377
+                    _fun47424_ip = 65;
+                    continue _fun47424
                 }
             case 59:
                 var4 = var6.enrolledAt;
@@ -38,8 +38,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var5 == var4;
             case 69:
                 if (var3) {
-                    _fun47377_ip = 99;
-                    continue _fun47377
+                    _fun47424_ip = 99;
+                    continue _fun47424
                 }
             case 72:
                 var6 = var1.userStatus;
@@ -47,8 +47,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var7 = var5 == var6;
                 var4 = undefined;
                 if (var7) {
-                    _fun47377_ip = 95;
-                    continue _fun47377
+                    _fun47424_ip = 95;
+                    continue _fun47424
                 }
             case 89:
                 var4 = var6.completedAt;
@@ -56,8 +56,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var3 = var5 != var4;
             case 99:
                 if (var3) {
-                    _fun47377_ip = 142;
-                    continue _fun47377
+                    _fun47424_ip = 142;
+                    continue _fun47424
                 }
             case 102:
                 var3 = _closure1_slot0;
@@ -75,7 +75,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var _closure1_slot6 = var5;
     var4 = function(arg0, arg1) { // Original name: formatVideoProgressRatio, environment: var1
-        _fun47378: for (var _fun47378_ip = 0;;) switch (_fun47378_ip) {
+        _fun47425: for (var _fun47425_ip = 0;;) switch (_fun47425_ip) {
             case 0:
                 var6 = arg0;
                 var2 = arg1;
@@ -83,23 +83,23 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = var6 <= var3;
                 var0 = 0;
                 if (var1) {
-                    _fun47378_ip = 92;
-                    continue _fun47378
+                    _fun47425_ip = 92;
+                    continue _fun47425
                 }
             case 17:
                 var1 = var2 <= var3;
                 var0 = 0;
                 if (var1) {
-                    _fun47378_ip = 92;
-                    continue _fun47378
+                    _fun47425_ip = 92;
+                    continue _fun47425
                 }
             case 26:
                 var3 = var6 >= var2;
                 var5 = 1;
                 var1 = var5;
                 if (var3) {
-                    _fun47378_ip = 89;
-                    continue _fun47378
+                    _fun47425_ip = 89;
+                    continue _fun47425
                 }
             case 39:
                 var7 = global;
@@ -164,7 +164,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var6 = var7.bind(var8)(var6);
     var2.sendVideoProgress = var5;
     var5 = function(arg0) { // Original name: getVideoOrientation, environment: var1
-        _fun47380: for (var _fun47380_ip = 0;;) switch (_fun47380_ip) {
+        _fun47427: for (var _fun47427_ip = 0;;) switch (_fun47427_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.assets;
@@ -174,32 +174,32 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var1 = 'portrait';
                 var0 = var1;
                 if (var3) {
-                    _fun47380_ip = 87;
-                    continue _fun47380
+                    _fun47427_ip = 87;
+                    continue _fun47427
                 }
             case 33:
                 var3 = var2.width;
                 var3 = var4 == var3;
                 var0 = var1;
                 if (var3) {
-                    _fun47380_ip = 87;
-                    continue _fun47380
+                    _fun47427_ip = 87;
+                    continue _fun47427
                 }
             case 48:
                 var3 = var2.height;
                 var3 = var4 == var3;
                 var0 = var1;
                 if (var3) {
-                    _fun47380_ip = 87;
-                    continue _fun47380
+                    _fun47427_ip = 87;
+                    continue _fun47427
                 }
             case 63:
                 var3 = var2.width;
                 var2 = var2.height;
                 var2 = var3 > var2;
                 if (!var2) {
-                    _fun47380_ip = 84;
-                    continue _fun47380
+                    _fun47427_ip = 84;
+                    continue _fun47427
                 }
             case 80:
                 var1 = 'landscape';
@@ -211,14 +211,14 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getVideoOrientation = var5;
     var5 = function(arg0) { // Environment: var1
-        _fun47381: for (var _fun47381_ip = 0;;) switch (_fun47381_ip) {
+        _fun47428: for (var _fun47428_ip = 0;;) switch (_fun47428_ip) {
             case 0:
                 var7 = arg0;
                 var1 = var7.percentComplete;
                 var0 = 0;
                 if (!(!(var1 > var0))) {
-                    _fun47381_ip = 108;
-                    continue _fun47381
+                    _fun47428_ip = 108;
+                    continue _fun47428
                 }
             case 15:
                 var6 = _closure1_slot0;
@@ -241,8 +241,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var4.bind(var5)(var7);
                 var0.remainTime = var4;
                 var0 = var2.bind(var3)(var1, var0);
-                _fun47381_ip = 201;
-                continue _fun47381;
+                _fun47428_ip = 201;
+                continue _fun47428;
             case 108:
                 var8 = _closure1_slot0;
                 var9 = _closure1_slot1;
@@ -271,15 +271,15 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.getVideoQuestWatchCtaText = var5;
     var2.formatVideoProgressRatio = var4;
     var4 = function(arg0) { // Original name: getVideoQuestEndCardCtaText, environment: var1
-        _fun47382: for (var _fun47382_ip = 0;;) switch (_fun47382_ip) {
+        _fun47429: for (var _fun47429_ip = 0;;) switch (_fun47429_ip) {
             case 0:
                 var0 = arg0;
                 var0 = var0.ctaConfig;
                 var0 = var0.buttonLabel;
                 var1 = null;
                 if (!(var1 == var0)) {
-                    _fun47382_ip = 83;
-                    continue _fun47382
+                    _fun47429_ip = 83;
+                    continue _fun47429
                 }
             case 21:
                 var5 = _closure1_slot0;
@@ -301,7 +301,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.getVideoQuestEndCardCtaText = var4;
     var4 = function(arg0) { // Original name: handleVideoQuestModalClose, environment: var1
-        _fun47383: for (var _fun47383_ip = 0;;) switch (_fun47383_ip) {
+        _fun47430: for (var _fun47430_ip = 0;;) switch (_fun47430_ip) {
             case 0:
                 var0 = arg0;
                 var8 = var0.questId;
@@ -314,8 +314,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var14 = var0.bind(var1)(var8);
                 var2 = null;
                 if (!(var2 != var14)) {
-                    _fun47383_ip = 342;
-                    continue _fun47383
+                    _fun47430_ip = 342;
+                    continue _fun47430
                 }
             case 58:
                 var1 = _closure1_slot3;
@@ -323,16 +323,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var4 = var0.bind(var1)(var8);
                 var0 = var2 != var4;
                 if (!var0) {
-                    _fun47383_ip = 105;
-                    continue _fun47383
+                    _fun47430_ip = 105;
+                    continue _fun47430
                 }
             case 80:
                 var7 = var4.userStatus;
                 var9 = var2 == var7;
                 var1 = undefined;
                 if (var9) {
-                    _fun47383_ip = 101;
-                    continue _fun47383
+                    _fun47430_ip = 101;
+                    continue _fun47430
                 }
             case 95:
                 var1 = var7.enrolledAt;
@@ -340,16 +340,16 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2 != var1;
             case 105:
                 if (!var0) {
-                    _fun47383_ip = 133;
-                    continue _fun47383
+                    _fun47430_ip = 133;
+                    continue _fun47430
                 }
             case 108:
                 var7 = var4.userStatus;
                 var9 = var2 == var7;
                 var1 = undefined;
                 if (var9) {
-                    _fun47383_ip = 129;
-                    continue _fun47383
+                    _fun47430_ip = 129;
+                    continue _fun47430
                 }
             case 123:
                 var1 = var7.completedAt;
@@ -357,8 +357,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var0 = var2 == var1;
             case 133:
                 if (!var0) {
-                    _fun47383_ip = 154;
-                    continue _fun47383
+                    _fun47430_ip = 154;
+                    continue _fun47430
                 }
             case 136:
                 var2 = _closure1_slot6;
@@ -415,7 +415,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var2.handleVideoQuestModalClose = var4;
     var2.getVideoQuestModalKey = var3;
     var1 = function(arg0) { // Original name: isVideoQuestProgressing, environment: var1
-        _fun47384: for (var _fun47384_ip = 0;;) switch (_fun47384_ip) {
+        _fun47431: for (var _fun47431_ip = 0;;) switch (_fun47431_ip) {
             case 0:
                 var1 = arg0;
                 var2 = _closure1_slot0;
@@ -429,8 +429,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var2 = !var0;
                 var0 = !var2;
                 if (var2) {
-                    _fun47384_ip = 93;
-                    continue _fun47384
+                    _fun47431_ip = 93;
+                    continue _fun47431
                 }
             case 48:
                 var5 = _closure1_slot0;
@@ -449,4 +449,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     };
     var2.isVideoQuestProgressing = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [3583, 5182, 5183, 660, 5194, 5214, 1234, 5222, 5217, 3872, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3585, 5188, 5189, 660, 5200, 5220, 1234, 5228, 5223, 3878, 2]);

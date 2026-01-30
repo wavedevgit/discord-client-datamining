@@ -5,10 +5,10 @@ import zo.m;
 public final class o implements m.a {
 
     /* renamed from: a  reason: collision with root package name */
-    private final n f55993a;
+    private final n f56009a;
 
     o(n nVar) {
-        this.f55993a = nVar;
+        this.f56009a = nVar;
     }
 
     public static tq.h a(n nVar) {
@@ -17,6 +17,6 @@ public final class o implements m.a {
 
     @Override // zo.m.a
     public m create() {
-        return this.f55993a.b();
+        return this.f56009a.b();
     }
 }

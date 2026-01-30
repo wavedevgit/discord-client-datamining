@@ -12,16 +12,16 @@ import java.util.concurrent.ConcurrentHashMap;
 public final class z implements w1 {
 
     /* renamed from: d  reason: collision with root package name */
-    private String f30475d;
+    private String f30491d;
 
     /* renamed from: e  reason: collision with root package name */
-    private String f30476e;
+    private String f30492e;
 
     /* renamed from: i  reason: collision with root package name */
-    private String f30477i;
+    private String f30493i;
 
     /* renamed from: o  reason: collision with root package name */
-    private Map f30478o;
+    private Map f30494o;
 
     /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
     public static final class a implements m1 {
@@ -57,13 +57,13 @@ public final class z implements w1 {
                 }
                 switch (c10) {
                     case 0:
-                        zVar.f30477i = e3Var.r1();
+                        zVar.f30493i = e3Var.r1();
                         break;
                     case 1:
-                        zVar.f30475d = e3Var.r1();
+                        zVar.f30491d = e3Var.r1();
                         break;
                     case 2:
-                        zVar.f30476e = e3Var.r1();
+                        zVar.f30492e = e3Var.r1();
                         break;
                     default:
                         if (concurrentHashMap == null) {
@@ -83,41 +83,41 @@ public final class z implements w1 {
     }
 
     public String d() {
-        return this.f30475d;
+        return this.f30491d;
     }
 
     public String e() {
-        return this.f30476e;
+        return this.f30492e;
     }
 
     public void f(String str) {
-        this.f30475d = str;
+        this.f30491d = str;
     }
 
     public void g(Map map) {
-        this.f30478o = map;
+        this.f30494o = map;
     }
 
     public void h(String str) {
-        this.f30476e = str;
+        this.f30492e = str;
     }
 
     @Override // io.sentry.w1
     public void serialize(f3 f3Var, ILogger iLogger) {
         f3Var.r();
-        if (this.f30475d != null) {
-            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f30475d);
+        if (this.f30491d != null) {
+            f3Var.e(StackTraceHelper.NAME_KEY).f(this.f30491d);
         }
-        if (this.f30476e != null) {
-            f3Var.e("version").f(this.f30476e);
+        if (this.f30492e != null) {
+            f3Var.e("version").f(this.f30492e);
         }
-        if (this.f30477i != null) {
-            f3Var.e("raw_description").f(this.f30477i);
+        if (this.f30493i != null) {
+            f3Var.e("raw_description").f(this.f30493i);
         }
-        Map map = this.f30478o;
+        Map map = this.f30494o;
         if (map != null) {
             for (String str : map.keySet()) {
-                Object obj = this.f30478o.get(str);
+                Object obj = this.f30494o.get(str);
                 f3Var.e(str);
                 f3Var.j(iLogger, obj);
             }
@@ -127,9 +127,9 @@ public final class z implements w1 {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public z(z zVar) {
-        this.f30475d = zVar.f30475d;
-        this.f30476e = zVar.f30476e;
-        this.f30477i = zVar.f30477i;
-        this.f30478o = io.sentry.util.c.b(zVar.f30478o);
+        this.f30491d = zVar.f30491d;
+        this.f30492e = zVar.f30492e;
+        this.f30493i = zVar.f30493i;
+        this.f30494o = io.sentry.util.c.b(zVar.f30494o);
     }
 }

@@ -112,7 +112,7 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var _closure1_slot5 = var3;
     var3 = var6.memo;
     var1 = function(arg0) { // Original name: ChatPlaceholderRow, environment: var1
-        _fun91377: for (var _fun91377_ip = 0;;) switch (_fun91377_ip) {
+        _fun91614: for (var _fun91614_ip = 0;;) switch (_fun91614_ip) {
             case 0:
                 var0 = arg0;
                 var5 = var0.lines;
@@ -144,8 +144,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var13 = '';
                 var12 = '%';
                 if (!var6) {
-                    _fun91377_ip = 247;
-                    continue _fun91377
+                    _fun91614_ip = 247;
+                    continue _fun91614
                 }
             case 132:
                 var8 = _closure1_slot0;
@@ -174,8 +174,8 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
                 var6 = var8.bind(var7)(var6);
                 var1 = var1 + 1;
                 if (var1 < var5) {
-                    _fun91377_ip = 132;
-                    continue _fun91377
+                    _fun91614_ip = 132;
+                    continue _fun91614
                 }
             case 247:
                 var2 = _closure1_slot4;
@@ -225,4 +225,4 @@ export default (function(global, require, metroImportDefault, metroImportAll, mo
     var3 = var4.bind(var5)(var3);
     var2.default = var1;
     return var0;
-})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 5411, 5409, 1297, 671, 11827, 8914, 2]);
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 5415, 5413, 1297, 671, 11849, 8918, 2]);

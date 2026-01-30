@@ -49,11 +49,11 @@ final class MediaEngineModule$connectionInstanceSetMinimumOutputDelay$1 extends 
             }
         }
         this.this$0.getMediaEngine().connectionInstanceSetMinimumOutputDelay$media_engine_release((int) this.$connectionId, (int) this.$delay);
-        return Unit.f33282a;
+        return Unit.f33298a;
     }
 
     @Override // kotlin.jvm.functions.Function2
     public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
-        return ((MediaEngineModule$connectionInstanceSetMinimumOutputDelay$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33282a);
+        return ((MediaEngineModule$connectionInstanceSetMinimumOutputDelay$1) create(coroutineScope, continuation)).invokeSuspend(Unit.f33298a);
     }
 }
