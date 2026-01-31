@@ -38,13 +38,15 @@ final class j extends th.l0 {
     @Override // th.l0
     protected final void a() {
         th.k0 k0Var;
+        th.v0 v0Var;
         String str;
         Bundle h10;
         try {
+            v0Var = this.f16817r.f17095d;
             str = this.f16817r.f17092a;
             Bundle l10 = x.l(this.f16812e, this.f16813i, this.f16814o, this.f16815p);
             h10 = x.h();
-            ((th.b0) this.f16817r.f17095d.e()).x0(str, l10, h10, new t(this.f16817r, this.f16816q));
+            ((th.b0) v0Var.e()).x0(str, l10, h10, new t(this.f16817r, this.f16816q));
         } catch (RemoteException e10) {
             k0Var = x.f17090g;
             k0Var.c(e10, "notifyChunkTransferred", new Object[0]);
