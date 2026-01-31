@@ -51,7 +51,7 @@ export const deminify = (
         variable: /\br(\d+)\b/g,
         argument: /\ba(\d+)\b/g,
         functionName:
-            /function*? \((.*?)\) { \/\/ Original name: (.+?), environment: \w+$/g,
+            /function*?(\s+|)\((.*?)\) { \/\/ Original name: (.+?), environment: \w+$/g,
         // this will be used to detect depth
         functionOpen: /function\*? ?\((.*?)\) {/,
         functionClose: /^\s+};/,
