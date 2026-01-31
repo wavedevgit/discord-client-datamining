@@ -1,11 +1,11 @@
 /** chunk id: 645959, original params: e,i,t (module,exports,require) **/
 let n, l, s;
 t.d(i, {
-    A: () => b
+    A: () => T
 }), t(896048), t(321073);
 var a, u, r = t(989349),
-    d = t.n(r),
-    A = t(311907),
+    A = t.n(r),
+    d = t(311907),
     g = t(713402),
     f = t(73153),
     M = t(695870),
@@ -14,10 +14,10 @@ var a, u, r = t(989349),
     m = t(493507),
     N = t(95701),
     E = t(734057),
-    y = t(71393),
-    h = t(222823),
-    C = t(543465),
-    R = t(287809),
+    h = t(71393),
+    y = t(222823),
+    R = t(543465),
+    C = t(287809),
     p = t(661191);
 let v = new g.J(e => {
     let {
@@ -30,16 +30,16 @@ let v = new g.J(e => {
         lastMessageId: i,
         nudgeTimestamp: t
     } = e;
-    return null != t ? -t : -p.default.extractTimestamp(i)
+    return -Math.max(p.default.extractTimestamp(i), null != t ? t : 0)
 });
 
 function O(e) {
     let i = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : function(e) {
         var i, t;
-        let n = null != (i = null != (t = h.Ay.lastMessageId(e.id)) ? t : e.lastMessageId) ? i : e.id,
+        let n = null != (i = null != (t = y.Ay.lastMessageId(e.id)) ? t : e.lastMessageId) ? i : e.id,
             l = e.isMessageRequestTimestamp;
         if (null != l) {
-            let e = d()(l).valueOf(),
+            let e = A()(l).valueOf(),
                 i = p.default.fromTimestamp(e);
             return p.default.compare(n, i) > 0 ? n : i
         }
@@ -60,11 +60,11 @@ function U() {
     })
 }
 
-function D() {
+function S() {
     let e = E.A.getMutablePrivateChannels();
     for (let i in e) v.set(i, O(e[i]))
 }
-let S = (n = [], l = [], s = [], () => {
+let D = (n = [], l = [], s = [], () => {
     let e = v.values("FAVORITE"),
         i = v.values("DEFAULT");
     return (n !== e || l !== i) && (s = [], e.forEach(e => {
@@ -79,12 +79,12 @@ let S = (n = [], l = [], s = [], () => {
         return s.push(i)
     }), l = i), s
 });
-class L extends(a = A.Ay.Store) {
+class L extends(a = d.Ay.Store) {
     initialize() {
-        this.waitFor(E.A, y.A, o.A, h.Ay, c.A, C.Ay, R.default, m.A), this.syncWith([C.Ay, o.A, m.A], U)
+        this.waitFor(E.A, h.A, o.A, y.Ay, c.A, R.Ay, C.default, m.A), this.syncWith([R.Ay, o.A, m.A], U)
     }
     getPrivateChannelIds() {
-        return S()
+        return D()
     }
     getSortedChannels() {
         return [v.values("FAVORITE"), v.values("DEFAULT")]
@@ -105,12 +105,12 @@ class L extends(a = A.Ay.Store) {
     configurable: !0,
     writable: !0
 }) : L[u] = "PrivateChannelSortStore";
-let b = new L(f.h, {
+let T = new L(f.h, {
     CONNECTION_OPEN: U,
     CONNECTION_OPEN_SUPPLEMENTAL: U,
     OVERLAY_INITIALIZE: U,
-    CACHE_LOADED: D,
-    CACHE_LOADED_LAZY: D,
+    CACHE_LOADED: S,
+    CACHE_LOADED_LAZY: S,
     CHANNEL_UPDATES: function(e) {
         let {
             channels: i
